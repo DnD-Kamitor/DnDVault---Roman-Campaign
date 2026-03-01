@@ -102,55 +102,66 @@ Goal: Players can read Part 1 and feel fully immersed without needing the GM's s
 - [x] **Key Latin phrases** — commands, titles, places, common speech with pronunciation
 - [x] **Session 0 expansion** — setting-specific questions (Roman identity, gods, frontier, corruption, character hooks)
 
-### Milestone 3 — Session Development (Sessions 2–5)
-Goal: Every session chapter matches Chapter 1's quality using full Sclanders methodology.
+### Milestone 3 — Session Development (Sessions 2–5) ✅ COMPLETE
+- [x] Chapter 2: cold open, Three Clue Rule, OGAS refs, props, reactive world, Vercingetorix expanded
+- [x] Chapter 3: cold open, influenced-NPC mechanic, Thusnelda built, Mars divine presence, sacrifice table
+- [x] Chapter 4: cold open, Rome establishing description, Three Clue Rule, Brutus argument scene, Triumph countdown
+- [x] Chapter 5: continuity tracker, three trial options fully statted, Mars full stat block, consequence table, epilogue NPC table
 
-Each session needs: Strong Opening, Pressure Cooker design, scene-by-scene notes, OGAS per NPC, decision points with cascading consequences, props/handouts list.
-
-- [ ] **Chapter 2 audit** — Does it meet the checklist? Fill gaps.
-- [ ] **Chapter 3 audit** — Does it meet the checklist? Fill gaps.
-- [ ] **Chapter 4 audit** — Does it meet the checklist? Fill gaps.
-- [ ] **Chapter 5 audit** — Does it meet the checklist? Fill gaps.
-
-### Milestone 4 — NPC Expansion
+### Milestone 4 — NPC Expansion ✅ COMPLETE
 Goal: Any NPC can be improvised perfectly because their voice, knowledge, and agenda are fully documented.
 
-- [ ] **Relationship web** — Visual map of who knows what about whom (faction chart)
-- [ ] **Per-session NPC state table** — What each NPC knows, wants, and will do in each session
-- [ ] **Sample dialogue** — 3 characteristic lines per NPC showing their voice
-- [ ] **Reaction tables** — How each NPC responds to party's 3 most likely approaches
+- [x] **Relationship web** — ASCII faction chart showing who knows what about whom
+- [x] **Per-session NPC state table** — What each NPC knows, wants, and will do across all 5 sessions
+- [x] **Sample dialogue** — 3 characteristic lines per NPC showing their voice
+- [x] **Reaction tables** — How each NPC responds to party's 3 most likely approaches
 
 ### Milestone 5 — Location Design
 Goal: Every major location is described vividly enough to be run without prep.
 
-- [ ] **Fort Vindolanda** — Detailed room/area descriptions; key locations mapped with castra_layout.svg as base
-- [ ] **The Ruins Beneath** — 5-Room Dungeon structure (already started in Ch1, needs expansion)
-- [ ] **The Germanic Forest** — Encounter zones, tribal camp, sacred grove
-- [ ] **Rome (Session 3)** — At minimum: 3 key locations, social encounter frameworks
-- [ ] **The Sacred Grove** — Final set-piece location; environmental storytelling
+- [ ] **Fort Vindolanda** — Detailed room/area descriptions keyed to castra_layout.svg
+- [ ] **The Ruins Beneath** — Full 5-Room Dungeon structure
+- [ ] **The Germanic Forest** — Encounter zones, tribal camp, sacred grove detailed description
+- [ ] **Rome (Session 4)** — 3 key locations with sensory descriptions and social encounter frameworks
+- [ ] **The Sacred Grove** — Environmental storytelling, standing stone descriptions
 
-### Milestone 6 — Encounter Library
-Goal: The DM has a full toolkit of encounters ready to drop in.
+### Milestone 6 — Roman Tactics & D&D 5e Adaptation
+Goal: DM can run authentic Roman military tactics as D&D mechanics.
 
-- [ ] **Combat encounter stat blocks** — All unique enemies with tactics notes
-- [ ] **Social encounter frameworks** — Structured negotiation/persuasion encounters for key NPCs
-- [ ] **Skill challenges** — Investigation, wilderness travel, social infiltration
-- [ ] **Frontier encounter tables** — Random events for travel between locations
+- [ ] **Testudo formation** — Group action rules, cover bonuses, movement penalties
+- [ ] **Wedge / cuneus** — Breakthrough mechanic for breaking shield walls
+- [ ] **Flanking and envelopment** — Adapted flanking rules for Roman double-envelopment
+- [ ] **Siege mechanics** — Battering ram, ballista, scaling ladders as structured encounters
+- [ ] **Germanic counter-tactics** — Guerrilla ambush, forest fighting, Varus trap scenario
+- [ ] **Tactical reference card** — One-page DM reference for all Roman formations in play
 
-### Milestone 7 — Handouts & Props Pack
+### Milestone 7 — Bestiary: Creatures of Roman & Germanic Myth
+Goal: A set of original D&D 5e stat blocks for creatures native to this setting, with historical images.
+
+- [ ] **Strix** — Roman vampire-owl demon (undead, CR 3–5)
+- [ ] **Lemures** — Restless Roman dead, tormented souls (undead swarm, CR 1–2)
+- [ ] **Larvae** — Evil spirits of the dishonored dead (shadow-type, CR 4)
+- [ ] **Genius Loci** — Divine spirit of a place (construct-type, CR 6–8)
+- [ ] **Germanic Alp** — Nightmare spirit that rides sleeping victims (fiend, CR 3)
+- [ ] **Draugar** — Germanic undead warrior, stronger in cold water (undead, CR 5)
+- [ ] **Lindworm** — Serpentine Germanic dragon, no wings (dragon-type, CR 7–9)
+- [ ] **Nix** — Shapeshifting river spirit, lures travelers to drown (fey, CR 4)
+- [ ] **Images** — Historical illustrations for each creature from Wikimedia Commons
+
+### Milestone 8 — Handouts & Props Pack
 Goal: DM can hand players physical/visual aids at the right moment.
 
-- [ ] **Handout 1 (Ch1)** — Legate's orders in Latin (already designed, format for print)
-- [ ] **Handout 2 (Ch1)** — Gaulish rune inscription (already designed, format for print)
-- [ ] **Handout 3 (Ch1)** — Omen list (already designed, format for print)
-- [ ] **Player tracking sheet** — NPCs met, decisions made, corruption level, session notes
-- [ ] **DM quick-reference** — Single-page: all NPC OGASes, corruption rules, spear properties
-- [ ] **Campaign epilogues** — Written outcomes for each major ending path
+- [ ] **Handouts 1–3 (Ch1)** — Already written; format for print layout
+- [ ] **Handouts 4–5 (Ch2)** — Already written; format for print layout
+- [ ] **Handouts 6–7 (Ch3)** — Already written; format for print layout
+- [ ] **Handouts 8–9 (Ch4)** — Already written; format for print layout
+- [ ] **Handout 10–11 (Ch5)** — Already written; format for print layout
+- [ ] **Player tracking sheet** — NPCs met, decisions, corruption checkbox, session notes
+- [ ] **DM quick-reference** — Single page: all NPC OGASes, corruption rules, spear properties
 
-### Milestone 8 — Final Polish & Publish
-- [ ] Continuity audit: NPC actions in Sessions 3–5 reflect party choices in Sessions 1–2
-- [ ] Cross-reference: all NPC secrets consistent across gm_intro and session chapters
-- [ ] `quarto render --to pdf` produces a clean, printable document
+### Milestone 9 — Final Polish & Publish
+- [ ] Continuity audit: NPC actions consistent across all sessions
+- [ ] `quarto render --to pdf` produces a clean printable document
 - [ ] GitHub Pages deployment verified and live
 
 ---
