@@ -1,0 +1,227 @@
+# Roman Tactics in D&D 5e
+
+*GM's Workbook — DM eyes only*
+
+Roman military doctrine was the product of six centuries of refinement. It was not just about courage or strength — it was a system, and systems can be adapted to D&D mechanics. This chapter gives the DM rules for running authentic Roman formations and Germanic counter-tactics as structured play at the table.
+
+---
+
+## Design Principles
+
+These rules follow two constraints:
+
+1. **They must be runnable without slowing the table down.** Each mechanic fits within existing D&D action economy. No new action types needed.
+2. **They must reward tactical thinking.** Formations should feel powerful and have real counters. The party should be able to use them, face them, or break them.
+
+---
+
+## Roman Formations
+
+### Testudo (Tortoise)
+
+The *testudo* is the signature Roman defensive formation. Soldiers lock their *scuta* (tower shields) overhead and around the unit, creating an interlocking shell. It is almost impervious to missile fire and effective against light cavalry. It is slow and helpless against a disciplined charge at close quarters.
+
+**Forming the Testudo:**
+- Requires a minimum of 4 soldiers within 5 feet of each other
+- Costs a **bonus action** to enter formation on your turn
+- Formation persists until a member leaves the 5-foot cluster or uses their bonus action to exit
+
+**Testudo Benefits:**
+- **Three-quarters cover (+5 AC)** against all ranged attacks from outside the formation
+- **Immunity to non-magical area effects** that require Dexterity saving throws (arrow volleys, ballista scatter fire)
+- **Resistance to fire damage** from above (burning pitch, flaming arrows)
+- Members may use the **Help action** as a free bonus action (shouted commands keep the unit coordinated)
+
+**Testudo Penalties:**
+- **Speed reduced to 10 feet** (half speed for small units, quarter for large ones)
+- **Disadvantage on Strength saving throws** (the formation has no give — a push topples it)
+- **Melee attackers in base contact** with the formation ignore the cover bonus entirely (the shields face out, not down)
+- **Cannot use two-handed weapons** or ranged weapons while in formation
+
+**Breaking the Testudo:**
+Germanic warriors knew how to crack a testudo. Any of the following ends the formation instantly for that unit:
+- A Strength check DC 14 grapple used to yank a corner-man out of position
+- A creature of Large size or greater charging through (the shields break under the mass)
+- A thrown burning object landing in the center (soldiers drop shields instinctively — Dex save DC 12 or formation breaks)
+- Three or more members reduced below half HP in one round (morale cracks the discipline)
+
+**In Play — Enemy Testudo:**
+When NPC legionaries form testudo against the party's ranged attacks:
+
+> *The soldiers lock shields above their heads and along the sides. The formation becomes a metal-shelled creature, shuffling forward. Your arrows skip off the overlapping scuta like stones off a roof.*
+
+The party's options: use the breaks above, wait for them to come into melee, flank (testudo only covers the front 180°), or find fire.
+
+---
+
+### Cuneus (Wedge / Boar's Head)
+
+The *cuneus* is an offensive breakthrough formation — a wedge of heavy infantry designed to split an enemy line. The most experienced fighters go at the point; the formation widens behind them. It concentrates maximum pressure at a single point.
+
+**Forming the Cuneus:**
+- Minimum 3 soldiers in a triangular arrangement (1 at point, 2 behind, expanding)
+- Costs a **movement action** to arrange and lock step
+- Formation must move at least 20 feet in a straight line on the turn it's used
+
+**Cuneus Benefits:**
+- **The point fighter** has advantage on their first attack roll each turn (the momentum and coordination)
+- **Creatures directly in the path** of the charge must make a DC 13 Strength saving throw or be pushed back 10 feet and knocked prone (the formation's mass is the weapon)
+- **The formation cannot be flanked** from the front — the wedge faces all attacks from the point
+
+**Cuneus Penalties:**
+- **Both flanks are exposed** — attackers from the sides have advantage against the formation's rear members
+- **Cannot change direction** without spending a bonus action to reform (straight-line momentum only)
+- **If the point fighter falls**, the formation collapses: all members lose the benefits until a new point is established (bonus action)
+
+**In Play — Facing a Cuneus:**
+A charging wedge of Roman legionaries is a terrifying thing.
+
+> *The soldiers lock into a triangle, the biggest man at the point, and begin to move. Fast. Faster than you expected from men in full armor. They're not running — they're marching, but marching hard, and the weight of them is coming at you like a battering ram with legs.*
+
+The party's options: split and let it pass through (costly but safe), meet it head-on with their own heaviest fighter (requires beating the Strength save), break the point fighter before it reaches them, or attack the exposed flanks as it passes.
+
+---
+
+### Orbis (Circle)
+
+The *orbis* is the formation of last resort — a defensive ring used when a unit is surrounded, cut off, and trying to survive rather than win. It is psychologically devastating to be the soldiers inside it (they know what it means) and tactically effective in the short term.
+
+**Forming the Orbis:**
+- Any number of soldiers, arranged back-to-back in a ring
+- Costs a **bonus action** to form; no minimum size
+- All members must be within 10 feet of the group's center
+
+**Orbis Benefits:**
+- **No flanking** — the formation has no rear or side. All attackers count as frontal.
+- **Advantage on Wisdom saving throws** vs. fear effects (the formation itself is a psychological anchor — *we hold here*)
+- **Last Stand:** When a member of the orbis drops to 0 HP, all remaining members may immediately make one free melee attack against a creature within reach (the formation reacts as a unit)
+
+**Orbis Penalties:**
+- **Speed 0** — the formation cannot move while maintained
+- **No ranged attacks** from within unless the target is directly in front of a member
+- **Attrition** — the orbis wins by surviving, not advancing. Every round in orbis is a round not making progress.
+
+**In Play:**
+The party might find themselves using the orbis in the middle of the fort raid (Session 2) or at the river crossing (Session 3). When surrounded with no good exit, call it by name:
+
+> *"Orbis,"* Varro says. One word. The veterans snap into the ring formation, shields out, backs together. *"We hold here."*
+
+---
+
+### Acies Triplex (Triple Battle Line)
+
+The standard Roman battle line uses three waves: *hastati* (front, younger soldiers, take the initial impact), *principes* (second wave, experienced fighters who reinforce or relieve), *triarii* (rear, veterans with spears, the final reserve — the saying "it has come to the triarii" meant things were desperate).
+
+**In D&D 5e:** This translates to a structured relief system.
+
+**Acies Mechanic:**
+- The party designates their front-line fighters, second-line, and reserve (at least one character each)
+- **Front line:** Fights normally. When they drop below half HP, they may fall back as a **reaction** without provoking opportunity attacks — the second line steps up automatically.
+- **Second line:** Charges forward when front line falls back. They have **advantage on their first attack** (they've been watching the enemy's patterns).
+- **Reserve:** Enters last. Any character entering from reserve has advantage on all attacks and saving throws for their first full turn (fresh legs, fresh focus).
+
+**Cost:** Requires 10 minutes of prep time before combat to assign roles and explain the plan. Does nothing in ambushes or surprise rounds.
+
+---
+
+## Siege Mechanics
+
+### Battering Ram
+
+A battering ram is a log, usually iron-tipped, carried by 6–12 soldiers under a protective cover.
+
+**Ram Stats:**
+- **Crew:** 6 soldiers minimum (can use 4 at disadvantage)
+- **Speed:** 15 feet per round (crew dashes)
+- **AC:** 14 (the protective cover) | **HP:** 40
+- **Attack:** +6 to hit vs. a door or wall, 4d10 bludgeoning on a hit
+- **Average gate HP:** 30 (wooden palisade gate) — two solid hits break it
+
+**Stopping the Ram:**
+- Kill or rout the crew (survivors drop the ram)
+- Dump boiling water or fire on the crew: DC 14 Con save, 3d6 damage, crew must pass DC 12 Wisdom save or rout
+- Collapse the cover with siege weapons or fire: ram crew loses all cover, becomes easy targets
+- Block the path: large objects in the way require the crew to spend a round moving them
+
+### Ballista
+
+A ballista fires a large bolt with tremendous force and range.
+
+**Ballista Stats:**
+- **Crew:** 2 to operate, 1 to aim and fire
+- **Range:** 120/480 feet
+- **Attack:** +6 to hit, 4d8 piercing damage
+- **Special:** On a hit, the target must make DC 14 Strength save or be knocked prone; if the target is a vehicle or structure, it counts as 6d8 damage
+- **Rate:** Fires once every other round (requires reloading)
+
+**In Session 2:** The party can man the fort's ballistae during the raid. Make it feel powerful — a ballista bolt through a raider chieftain's shield changes the mood of the attacking force.
+
+### Scaling Ladders
+
+Ladders allow attackers to reach walls quickly but leave them extremely vulnerable during the climb.
+
+**Climbing the ladder:**
+- Costs full movement for that round
+- The climber is **restrained** (AC drops by 2, Dex save disadvantage) while on the ladder
+- Any hit while climbing forces a DC 12 Dexterity save or the climber falls (half the wall's height in damage, usually 2d6)
+- A ladder can be pushed back by 1 person making a DC 13 Athletics check as an action
+
+**Holding the walls:** For every defender actively pushing ladders, they can keep one ladder section clear for the round. If more ladders than defenders: overflow sections are breached.
+
+---
+
+## Germanic Counter-Tactics
+
+The Germanic tribes had been fighting Romans for two centuries by 175 AD. They knew exactly how to defeat the formations above.
+
+### Forest Ambush
+
+**The Varus Trap:** Lure a Roman column into dense forest, let it string out along a narrow track, then attack simultaneously at three points. The column cannot form up; discipline becomes a liability (soldiers can't see each other or coordinate).
+
+**Mechanics:**
+- Ambushers attack from the flanks simultaneously — all defenders are surprised
+- Defenders cannot use formation benefits (Testudo, Acies) in dense forest without a successful DC 14 Dexterity check to find enough space
+- If ambushed while marching in column: roll initiative normally, but defenders have disadvantage on initiative rolls for the first round
+
+**Countering:** Scouts moving 100 feet ahead reduce the ambush success chance. DC 15 Perception to detect the ambush before it springs.
+
+### Shield Wall (Schildwall)
+
+Germanic shield walls are different from Roman formations — looser, more aggressive at the edges, designed to lock and push rather than manoeuvre.
+
+**Schildwall:**
+- Minimum 4 warriors in a line, shields overlapping
+- Front fighters gain half cover (+2 AC) and **advantage on Strength saving throws** vs. being pushed or knocked prone
+- **Shieldbreaker Rule:** A Schildwall can be broken by a character who succeeds on a DC 15 Athletics check to wedge a weapon between shields — this costs an action but removes the shield benefit from two adjacent defenders for one round
+
+**Against a Roman Wedge:** A Schildwall meeting a Cuneus — the Schildwall fighters make DC 13 Strength saves against the charge, but the Schildwall counts as a solid object for the purpose of stopping the wedge's momentum (the wedge does not knock them prone on a successful save, only on a failed one).
+
+### Encirclement (Kesselschlacht)
+
+Germanic chieftains sometimes divided their forces to circle a Roman unit — sending light warriors to the flanks and rear while heavy fighters held the front.
+
+**Running Kesselschlacht:**
+- Requires the Germanic force to outnumber the Roman unit 2:1
+- Takes 3 rounds to complete the circle (during which the flanking forces are visible but not yet in position)
+- Once complete: the Roman unit is surrounded; testudo becomes orbis territory
+- The Kesselschlacht is broken if the party can eliminate the encircling forces' leader (Perception DC 14 to identify them in the confusion)
+
+---
+
+## Tactical Reference Card
+
+*For DM use at the table — print or keep open on a second screen*
+
+| Formation | Minimum | Benefit | Penalty | Hard counter |
+|---|---|---|---|---|
+| **Testudo** | 4 | ¾ cover vs. ranged, resist fire from above | Speed 10 ft, disadv. Strength saves | Melee contact, forced entry, fire inside |
+| **Cuneus** | 3 | Adv. on point's first attack, push + prone on path | Flanks exposed, can't turn | Split and let pass, kill the point |
+| **Orbis** | 2 | No flanking, adv. Wisdom saves, last stand reaction | Speed 0 | Sustained ranged fire, attrition |
+| **Acies Triplex** | 3 | Adv. on second-line first attack, reserve full-turn adv. | 10 min prep, useless in ambush | Ambush (removes prep benefit) |
+| **Schildwall** | 4 | Half cover, adv. Str saves vs. push/prone | Slow lateral movement | Shieldbreaker action, flanking |
+
+| Siege element | Key stat | Stops it |
+|---|---|---|
+| Battering ram | 4d10 vs. gate (avg 22 per hit) | Kill crew, fire, block path |
+| Ballista | 4d8 piercing, prone save DC 14 | Rush the crew (2 rounds exposure) |
+| Scaling ladder | Climber restrained, falls DC 12 | Push check DC 13, 1 defender per ladder |
