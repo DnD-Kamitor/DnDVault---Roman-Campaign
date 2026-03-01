@@ -24,6 +24,7 @@ book:
         - chapter3.qmd
         - chapter4.qmd
         - chapter5.qmd
+        - roman_tactics.qmd
         - appendix.qmd
 
 format:
