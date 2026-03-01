@@ -1,0 +1,146 @@
+# Reputation and Relationships
+
+In Rome, nothing happens in a vacuum. Every interaction is relational. Every favor has a memory. Every insult has a cost.
+
+This chapter describes the relationship system used in this campaign. It is not a score. It is not a number you track on a sheet. It is a set of living statements about how specific people and factions currently think of you, and what that means in practice.
+
+---
+
+## What Reputation Means in 175 AD
+
+In Rome, your reputation is the only thing that follows you into a room before you do. A frontier soldier is not judged by his opinions or his intentions; he is judged by what he has done, who vouches for him, and what others say about him when he is not present. The Latin word for this is *fama*: fame, reputation, the story that precedes you.
+
+*Fama* is not abstract. It has weight. A man with good *fama* with the Legate is listened to in briefings. A man with bad *fama* with the legionary *contubernium* eats alone. A man with no *fama* at all -- a stranger with no connections -- is treated with professional suspicion until he earns his place.
+
+Reputation in this campaign works the same way. It is not a metric. It is a relationship statement: a description of where you currently stand with a specific person or faction, expressed in the language of debt and favor that Rome actually used.
+
+The key terms:
+
+- **Debt (*debitum*):** You owe them something. They have not forgotten. This shapes how they treat you.
+- **Favor (*beneficium*):** They owe you something. They know it. This is currency you can spend.
+- **Obligation (*officium*):** The ongoing duty of your relationship. Every relationship has one; ignoring it costs you.
+- **Standing (*dignitas*):** Your overall position in their estimation. This takes time to build and can be destroyed quickly.
+
+---
+
+## How the System Works
+
+### The Party Base
+
+The party shares a single base relationship with every faction and NPC. This base reflects how the group as a whole is currently regarded. At the start of the campaign, the base statements for each relationship are provided below.
+
+The base statement shifts as the party takes significant actions: helping the Legate, defying the Tribune, honoring an NPC's customs, failing a promise. The DM tracks these shifts. When the base shifts, announce it plainly: "Your standing with Centurion Varro just moved from 'one of his soldiers' to 'someone he trusts'."
+
+### Individual Character Modifiers
+
+Individual characters can modify their personal standing with any NPC or faction above or below the party base. This happens through:
+
+- **Private conversations** the rest of the party did not witness
+- **Actions that align with that NPC's specific values** (Varro values protecting soldiers; Cassia values honesty about the spear)
+- **Shared background or experience** (a character from the same province as an NPC starts slightly warmer)
+- **Deliberate cultivation** of a relationship during downtime (the Network downtime activity from `professions.qmd`)
+
+Record individual modifiers as brief statements: "Varro trusts me more than the others, after the patrol" or "Thusnelda is warier of me than the rest -- she saw what I did with the spear."
+
+The modifier does not replace the base; it adds texture. If the party base with Corvinus is "tools he has not decided the value of" and you personally have saved his life, your individual relationship with Corvinus is ahead of the group's.
+
+### Debt and Favor Language
+
+Relationships are expressed as statements, not scores. Below are the standard statement templates. The DM will use this language when describing how NPCs treat the party.
+
+**Favor statements (they owe you, or think well of you):**
+- "You have done something for them they did not expect."
+- "They are watching you with genuine interest."
+- "They would speak well of you to someone who asked."
+- "They owe you something real and they know it."
+- "They consider you an ally. That word means something to them."
+
+**Neutral statements:**
+- "They have not decided yet."
+- "You are a variable they are managing."
+- "You are neither a problem nor a resource to them yet."
+- "They know you exist. Nothing more."
+
+**Debt statements (you owe them, or they think poorly of you):**
+- "You have taken something from them and not repaid it."
+- "They are watching you, but not with interest: with wariness."
+- "They consider you a problem they have not solved yet."
+- "They would not speak well of you to someone who asked."
+- "They consider you dangerous. They have not decided whether to act on that."
+
+---
+
+## Starting Relationships
+
+The following table shows the party's relationship with each major NPC and faction at the start of the campaign. These are not permanent. They are starting points.
+
+| NPC / Faction | Starting statement |
+|---|---|
+| **Legate Corvinus** | "You are his tools. He has not decided whether that makes you valuable or expendable." |
+| **Cassia Liviana** | "She has seen something in you. She has not decided whether to tell you what." |
+| **Centurion Varro** | "You are one of his soldiers. That means something to him." |
+| **Tribune Lucius** | "He does not know you yet. He is watching." |
+| **Vercingetorix** | "You are Romans. He is waiting to be proven wrong." |
+| **Thusnelda** | "She is afraid of what you are carrying. She has not decided if you are different from the Romans who brought it." |
+| **Senator Brutus** | "He does not know you exist. This is probably good." |
+| **Legio XIV** | "You are part of it. For now, that is enough." |
+| **Germanic Tribes (general)** | "You are the soldiers on the other side of the line. Nothing more yet." |
+| **Mars** | "He is aware of you. This is not the same as favor." |
+| **Jupiter** | "Neutral. He is watching the Emperor." |
+| **The Senate** | "You are frontier soldiers. The Senate does not know frontier soldiers exist." |
+
+---
+
+## How Favor Is Gained
+
+Favor is not purchased. It is earned by understanding what someone values and then demonstrating that you share that value, or at least respect it.
+
+The general principles:
+
+**Reciprocity.** Do something for someone before they ask. Romans understood the gift-economy implicitly: an unrequested gift creates an obligation more powerful than a demanded one. Help Varro with a problem before he brings it to you. Offer Cassia information she could have asked for. The unrequested gesture carries more weight than the demanded one.
+
+**Kept promises.** In Rome, a broken promise is not merely a social failure; it is a religious one. If you swear to do something and do not do it, you have offended the gods as well as the person you promised. Conversely, keeping a difficult promise -- especially when it cost you something -- builds *fides* (trustworthiness) faster than almost anything else.
+
+**Shared history.** Having survived something together changes a relationship. A soldier who stood beside Varro in a difficult fight has a claim on him that no amount of political maneuvering creates. A character who sat with Cassia during a night she was afraid builds something a tactical ally never builds.
+
+**Demonstrated excellence.** Romans respect competence. Solve a problem effectively in front of someone and they will remember it. The specifically Roman form of this is *virtus*: demonstrating excellence that reflects well on the person who sponsored or trusted you.
+
+**Respect for their customs and values.** Treating Thusnelda's ritual knowledge as worth learning rather than as primitive magic changes her starting position. Addressing Corvinus with correct military form rather than civilian informality costs nothing and reads as basic competence. Most NPCs have specific things they respect; show those things and you move.
+
+---
+
+## How Favor Is Spent
+
+Favor is currency. Spending it means making a request of someone who thinks well of you, or invoking a debt they owe you. What you can request depends on the depth of the relationship and what that person can actually provide.
+
+**What relationships can provide:**
+
+| Relationship depth | What you can ask for |
+|---|---|
+| "They would speak well of you" | An introduction; a good word with someone they know; a small piece of information |
+| "They owe you something real" | A significant favor: access, equipment, advance warning, protection |
+| "They consider you an ally" | Active cooperation; they act on your behalf without being asked; they share information you did not request |
+| "They are watching you with genuine interest" | Honest assessment; they tell you what they actually think, not what is safe to say |
+
+**The cost of spending favor:**
+
+Calling in a favor diminishes it. After you spend a significant debt, the relationship returns toward neutral. This is not ingratitude; it is the Roman understanding that a debt paid is resolved. The relationship continues; it simply does not have the same specific weight until new favor is built.
+
+Spending favor without sufficient standing to support the request -- asking for more than the relationship can bear -- is a social error that damages the relationship. If you ask Corvinus for something that would require him to trust you more than he currently does, his response is not anger but dismissal, which is worse.
+
+**Invoking an NPC's obligation** (asking them to do something their role or values require, even at cost to themselves) is different from spending favor. An NPC with strong *pietas* can sometimes be moved by an appeal to what their role requires, regardless of how they feel about you personally. Centurion Varro will protect a soldier under his command even if he dislikes that soldier, because that is what a centurion does. Recognizing and invoking this is a skill, not a manipulation.
+
+---
+
+## Reputation Across Sessions
+
+The party's relationships are not reset between sessions. They are the accumulating record of your history in this campaign.
+
+At the end of each session, take two minutes to update your relationship notes:
+
+- Which relationships moved? In which direction?
+- Which NPC did you do something notable for? What do they now think?
+- Did you spend any favor? Did you build any?
+- Is there a debt outstanding you have not addressed?
+
+The most important question: what does each major NPC now believe about you? Not what they know. What they *believe*. These are often different things, and the gap between them is where the most interesting scenes happen.
