@@ -1,0 +1,242 @@
+# Location Guide
+
+*GM reference. Every major location in the campaign, described in enough detail to run without additional prep. Read the relevant section before each session, not during.*
+
+---
+
+## Fort Vindolanda
+
+Fort Vindolanda is a standard auxiliary cohort fort (*castra*) on the Germanic frontier, garrisoned by roughly 800 soldiers at full strength. At the time of the campaign it runs below strength: perhaps 550 effectives, the rest on detachment, sick, or recently rotated out and not yet replaced.
+
+The fort follows the standard castra plan (see `castra_layout.svg` in player_guide.qmd). What the plan doesn't show is what these buildings feel and smell like when occupied.
+
+---
+
+### The Principia (Headquarters)
+
+**What it is:** The administrative and ceremonial heart of the fort. A large rectangular building at the fort's centre, facing the *via praetoria*. Inside: a colonnaded courtyard, the *aedes* (shrine room holding the legion's standards and the Emperor's image), the offices where the *librarii* write orders and ledgers, and the Legate's private meeting room.
+
+**Sensory details:** It smells of lamp oil, papyrus, and beeswax from the wax tablets. The floor is stone, swept daily. The aedes is kept dark except for one permanent oil lamp. Every soldier who passes the standards must give them a small nod — the instinct is trained in and requires no conscious thought.
+
+**What happens here:** Morning briefings, disciplinary hearings, the distribution of orders, private meetings between officers. Most soldiers enter the principia only under orders or under investigation.
+
+**For the campaign:** The Legate summons the party here in Scene 1. The encoded letter is somewhere in the Tribune's assigned office in Session 2. The *librarius* Decanus Festus works in the outer room and has been copying orders for three months — he knows more than he admits and resents anyone who assumes otherwise.
+
+---
+
+### The Praetorium (Legate's Residence)
+
+**What it is:** Adjacent to the principia, the commanding officer's personal quarters. Larger than it should be for a frontier posting: the Legate has made it comfortable at considerable personal expense. Mosaic floor in the entry hall. A private garden (overgrown in winter, maintained in summer). A dining room that seats twelve.
+
+**Sensory details:** Warmer than the rest of the fort. The Legate keeps two braziers lit at all times. It smells of cooking, good wine, and faintly of the cedar oil he uses to preserve his personal documents.
+
+**What happens here:** Private negotiations with the Tribune, Cassia's late-night meeting with the party if they go looking for her, the Legate's late-night correspondence with his patron in Rome.
+
+**Behind the closed door:** The Legate keeps a locked dispatch chest under his bed. It contains: three letters from his Roman patron (never destroy letters from men like this), a list of the soldiers he trusts personally with the annotation "loyal" or "loyal enough," and a copy of the excavation report that was never officially filed.
+
+---
+
+### The Valetudinarium (Hospital)
+
+**What it is:** A long rectangular building on the eastern side of the fort, organized around an internal courtyard. Twelve wards open onto the courtyard from both sides, each holding four to six beds. The *medicus* has a private surgery at the far end.
+
+**Sensory details:** Clean, by design -- the Romans understand infection empirically if not theoretically. It smells of honey (used in wound dressings), vinegar, and something organic that never quite goes away. The walls are plastered white. The lighting is better here than anywhere else in the fort.
+
+**What happens here:** The mad worker is brought here after Session 1. The *medicus* Gaius Petronius has examined him and has notes that the party can find with a DC 12 Investigation: "Subject unresponsive to pain stimulus during episode. No fever. Eyes track toward something unseen on the northeast wall. Unknown cause."
+
+**The medicus:** Gaius Petronius is 47, Alexandrian-born, and deeply interested in whatever just happened to this patient. He will ask the party uncomfortable questions in a gentle voice and take meticulous notes on the answers. He is not dangerous. He is an ally who asks for information in exchange for information.
+
+---
+
+### The Barracks
+
+**What they are:** Long buildings divided into *contubernia* -- pairs of rooms sharing a doorway, housing eight soldiers each. One room for equipment and storage, one for sleeping. The century's centurion has a slightly larger end room with a separate entrance.
+
+**Sensory details:** At night: snoring, the smell of eight men and their gear, leather, metal, occasionally smoke from someone with a small brazier. In the morning: controlled chaos as 80 men all need to be dressed, armed, and in formation within fifteen minutes. The centurion's morning voice carries all the way to the gate.
+
+**What happens here:** Rumors. The barracks is where everything the officers don't know gets processed, discussed, and inflated. After Session 1, the rumors are: the dogs were poisoned by someone in the fort; the excavation woke a Germanic god; the Legate knows something and is hiding it; and at least two soldiers have had the same dream.
+
+---
+
+### The Bathhouse (Balneum)
+
+**What it is:** Outside the main fort walls, adjacent to the east gate. Three rooms: cold (*frigidarium*), warm (*tepidarium*), hot (*caldarium*). Heated from below by a hypocaust furnace. Small by Roman standards but functional.
+
+**Sensory details:** Steam. The slap of wet feet on stone. Men talking in low voices about nothing -- the bathhouse is the one place in the fort where rank relaxes slightly. A soldier scraping oil off his skin with a *strigil* looks the same whether he's a legionary or a centurion.
+
+**What happens here:** Varro often takes the late-afternoon bath slot. This is the best time to catch him in a genuinely reflective mood -- the bathhouse strips the tactical caution out of people. The Augur Cassia uses the women's hour (the fort's bathhouse schedules a two-hour window for the small number of women in the civilian settlement) but occasionally extends past her allotted time when the visions are bad.
+
+---
+
+### The Excavation Site
+
+**What it is:** A shaft in the northeast corner of the fort, behind the granary, originally dug as a well extension. The work crew broke through into void space at 40 feet -- the upper edge of the Germanic temple structure below. The shaft is now 6 feet wide and shored with rough timber. The rope ladder is barely adequate.
+
+**Sensory details:** Looking down: darkness, cold air rising, the smell of disturbed earth and old metal. The darkness is absolute after 15 feet. Anyone who has spent time underground notes that this darkness feels different from a mine or a cellar: quieter in a way that has nothing to do with sound.
+
+**Guard status:** Two legionaries stationed at the shaft at all times after the first worker went mad. They are scared and working very hard not to show it. They will be relieved to hand responsibility to the party.
+
+---
+
+### The Ruins Beneath
+
+*The 5-Room Dungeon. See Chapter 1 for full encounter details. This section provides the physical reality of each space for running purposes.*
+
+**The Shaft (connective tissue):** 40 feet deep. Timber-shored. The rope ladder has seven rungs that are genuinely solid and three that are not -- DC 10 Dexterity save when descending, or drop 5 feet (1d6 falling damage) and attract attention below.
+
+**Room 1 -- Hall of Shields (Entry/Atmosphere):** 30 by 15 feet. Earth floor. 12-foot ceiling. Shelving running along both walls at 6-foot intervals, holding shields in organized arrangement. The arrangement is not random: the shields are organized by tribe, not by date. Someone grouped them intentionally.
+
+*Running note:* The party is safe here. Nothing attacks. The shields are immovable -- they're fixed to the wall by something that doesn't behave like normal fixings. Any attempt to take a shield triggers a temperature drop of 10 degrees and a sound like a distant horn. The shield will be in its place the next time the party enters this room, regardless of what they did with it.
+
+**Room 2 -- Chamber of Chains (Puzzle/Discovery):** 20 by 20 feet. 8-foot ceiling. Iron chains suspended from iron rings in the ceiling and walls. The ring anchors are set into the stone itself -- pre-Roman work, by the look of it. The chains are cold even accounting for the underground temperature.
+
+*The puzzle:* The chains connect to the vault's door mechanism. Two specific chains, pulled simultaneously, open the vault's stone door. DC 15 Investigation to figure this out, or players can simply push through (the door takes a DC 18 Strength check to force open, and it makes a sound like something large has been disturbed).
+
+*Running note:* The collars are sized for something 8 to 10 feet tall. Players who think about this too long are thinking correctly.
+
+**Room 3 -- The Vault (Climax):** Circular, 20-foot diameter, 15-foot domed ceiling. The altar at the center. The spear. Two Animated Armor guardians. See Chapter 1 for the full encounter.
+
+*Running note:* The vault's atmosphere is the thing. The leaf frozen mid-fall. The silence inside the five-foot dead zone around the spear. The runes. Let the players be in it before anything threatens them.
+
+**Hidden Room 4 -- The Archive (Reward):** Only discoverable with DC 17 Investigation in the vault, or if a character specifically examines the altar's base. A narrow gap behind the altar leads to a cavity 6 feet wide and 4 feet deep, sealed with packed earth. Inside:
+
+- A clay cylinder, sealed with wax, containing a rolled strip of hammered bronze with Germanic runic text. This is a primary-source account of the spear's origin: the name of the god's son it killed, the name of the tribe that sealed it, and a curse on anyone who disturbs it. The party can have this translated by Thusnelda in Session 3 -- the runes are Early Proto-Germanic, which only she can read.
+- Three amber discs, each carved with a single rune. These are *TIWAZ*, *HAGALAZ*, and *OTHALAN*: war, disruption, and ancestral land. Magical items worth 50 gp each to a scholar or collector. Each functions as a spell component for Divination spells cast involving the Germanic tradition.
+- A corroded iron key that fits nothing in the fort. It fits a lock in Thusnelda's grove.
+
+---
+
+## The Germanic Forest
+
+The Teutoburg Forest region: old-growth oak and beech, broken by streams and clearings, with a distinct sense of being older than the Roman roads that stop at its edge. The forest is not sentient. It is not malevolent. It is simply very, very old, and things that are old enough develop weight.
+
+---
+
+### Forest Encounter Zones
+
+**Zone 1 -- The Treeline (Day 1, morning):** The transition from Roman road to forest proper. The road ends at a waymarker that Roman engineers put up forty years ago. It reads "FINES ROMANI" -- the edge of Roman territory. Past it, the trees close in within fifty feet. The light changes. The sound changes. There is a specific moment, about one hundred feet into the tree cover, where the last echo of the fort's daily life disappears entirely.
+
+*Encounter probability:* Germanic watchers, DC 14 Perception to spot (they won't reveal themselves first if the party is with Vercingetorix). 4 tribal scouts, **Scout** stat block, CR 1/4.
+
+**Zone 2 -- The River Crossing (Day 1, afternoon):** Three hours into the forest, the Vitulans river. Spring-swollen, 60 to 90 feet wide depending on where they try to cross. A fallen oak spans the narrowest point (40 feet, 2 feet wide at the base, slippery). See Chapter 3 for the full crossing encounter if the Legate is pursuing.
+
+*Navigation:* DC 12 Survival to find the best crossing point. On a failure, they find a crossing that looks better and is worse -- 70-foot span, no fallen tree, DC 15 Athletics to swim.
+
+**Zone 3 -- The Deep Forest (Day 2, morning):** The forest changes here. The trees are older, some with trunks too wide for three men to span. Carved offering-posts appear every quarter-mile -- not threatening, but present. Wildlife avoids the path ahead of the party, which means the forest seems unusually quiet.
+
+*The spear response:* On Day 2, the spear begins actively orientating. If it's wrapped and carried flat, the carrier feels it tipping slightly in one direction throughout the morning. By noon, anyone within 10 feet of it can feel a faint warmth from the wrappings.
+
+**Zone 4 -- The Tribal Territory (Day 2, afternoon):** Vercingetorix's tribe operates in this zone. Thusnelda's scouts are here. Signs of recent habitation: a fire-circle used in the last week, cleared undergrowth, a cache of dried meat in a split oak (the party can take it -- it's better than their rations and Vercingetorix approves of soldiers who notice useful things).
+
+*Encounter:* Thusnelda's scouts find the party, not the other way around. See Chapter 3.
+
+---
+
+### Vercingetorix's Village
+
+A palisaded settlement of 80 people in a natural clearing beside a tributary of the Vitulans. The village is temporary in the Germanic sense: they've been here for perhaps 15 years, will move within another 10. The buildings are well-constructed longhouses, the central fire is maintained by a dedicated elder, and the village has the organized casualness of people who know exactly where everything is.
+
+**Key locations in the village:**
+
+*The longhouse of the chieftain:* Where Vercingetorix receives guests. Long and smoky, with a central hearth and benches along both walls hung with weapons, pelts, and amber. The ceiling is low. The fire always burns.
+
+*The healing-woman's house:* Separate, slightly outside the palisade to the east. Smells of smoke and something herbal and specific that resists identification. The healing-woman is not Thusnelda -- she tends the grove, which is an hour's walk from the village. The healing-woman is her apprentice, a 30-year-old named Skadi, who does not speak Latin but who watches the party with a scholar's eyes.
+
+*The weapon-store:* A locked longhouse (iron lock, iron key worn by the village's senior warrior). Inside: spears, shields, hunting bows, and one Roman-made gladius taken as a war trophy three campaigns ago. Vercingetorix is aware the party has noticed it and will not mention it. If they do: *"It was won fairly. I kept it."*
+
+---
+
+## The Sacred Grove
+
+One hour's walk from Vercingetorix's village, east through the deep forest. The path is not marked with Roman waymarkers. It is marked with carved rune-posts, one every hundred feet, which glow faintly at night with a light that has no heat.
+
+---
+
+### The Grove Itself
+
+A natural clearing, roughly 80 feet in diameter. The clearing has no fallen leaves despite the trees around it. The ground is grass -- short, dark green, slightly wrong for the season. Seven standing stones ring the central altar, each roughly nine feet tall and carved with spiraling runes that shift when observed indirectly.
+
+**The stones:**
+
+Each stone is a single carved pillar. They predate the surrounding trees, which grew up around them. The carvings cover every surface: not decorative, but dense with text in Early Proto-Germanic. No one alive can read them all, including Thusnelda. She was taught the critical sections and knows that the rest has been illegible since her teacher's time.
+
+The stones have individual names in Thusnelda's tradition. She doesn't share these unless specifically asked. If asked, she gives one: *"That one is 'the one that listens.' I was told not to speak to it directly."*
+
+**The altar:**
+
+A single granite block, waist height, 6 feet long and 4 feet wide. It has been used for ritual purposes for longer than Germanic tradition can document -- there is a layer of ash beneath the grass that predates the current grove-keeper tradition by at least a century. The surface is marked with the impressions of many offerings but is not stained.
+
+When the spear is placed on the altar, it fits as if the altar was made for it.
+
+**The lock:**
+
+In the base of the altar's northwest face, concealed by a carved rune, is a keyhole. This is the lock that fits the iron key from the archive below the fort. If opened, a stone drawer reveals: a folded bronze strip with the original sealing text -- the oath sworn at the time the spear was first sealed here. It is the same oath that must be spoken to unseal the spear's destruction. Thusnelda knows this oath by heart. The drawer also contains a small vial of what appears to be water but is always exactly body temperature. It has no effect the party can detect. It is not water. Thusnelda, if shown it, becomes very still for a moment and says: *"Put it back."*
+
+**The grove's behavior:**
+
+The grove does not communicate in words. It communicates in temperature and sound. Acceptance: the altar warms. Rejection: the altar stays cold. Completion: a sound, described differently by different witnesses -- wind in leaves, or a bell, or a voice almost but not quite formed into language. Every witness agrees on one thing: the sound comes from underneath the altar, not from above.
+
+---
+
+## Rome: Three Key Locations (Session 4)
+
+*Player-safe descriptions. Avoid DM-only information here -- this section can be shared or paraphrased at the table.*
+
+---
+
+### The Forum Romanum
+
+**What it is:** The beating heart of Rome. An open plaza surrounded by temples, the Senate House (*curia*), law courts (*basilicae*), and public monuments. Every political act of consequence happens either here or within shouting distance.
+
+**What it looks like at ground level:**
+
+> *The Forum is never empty. Even at the second watch of the night there are scribes hurrying between buildings, night-market traders packing their goods, and the particular type of man who walks important-looking routes in the dark. During the day it is organized chaos: advocates with clients in tow, merchants seeking legal redress, slaves running errands for houses too important to use a free man for the task.*
+>
+> *The smell: dust, torch smoke, the animal scent of crowds, and a faint metallic undertone from the Temple of Saturn that people who know the city recognize as the smell of money. The treasury of Rome sits under Saturn's marble feet.*
+
+**What the party can do here:**
+- Find a money-lender (4 here with stalls; they charge 12% per month; they know everyone)
+- Reach the Senate records office (DC 12 Persuasion + Tribune's credentials to get access)
+- Find a public announcement board where the Triumph's schedule is posted
+- Find the Temple of Saturn, where Senator Tullius meets his clients
+
+**Running note:** The Forum is visible from the Capitoline Hill, where the Triumph begins. On Triumph day, it is packed to impassability by mid-morning.
+
+---
+
+### The Subura
+
+**What it is:** Rome's most densely populated district, northeast of the Forum. Six-story *insulae* that block light from below, external wooden staircases that creak under weight, laundry strung between buildings that drip onto the street. The Subura is where 200,000 people live on top of each other.
+
+**What it looks like:**
+
+> *The light in the Subura reaches the street level for perhaps two hours at midday. The rest of the day is shadow and the smell of a hundred families cooking on braziers in rooms that were not designed to contain smoke.*
+>
+> *Noise here is constant and close: someone arguing three floors up, a child crying, a merchant repeating his prices in three languages, the sound of something large being moved on the floor above. The Subura has its own rhythm, distinct from the Forum's -- faster, more vertical, less performative.*
+
+**What the party can do here:**
+- Find the basement cult temple in Scene 2 (below a metalworker's shop, north quarter of the Subura)
+- Contact street informants (5 *denarii* buys reliable information, 2 buys guesswork)
+- Find lodging that asks no questions (1 *denarius* per night, share a room with strangers)
+- Move without being seen if careful (DC 13 Stealth; the Subura is good at not noticing)
+
+**Running note:** The criminal *collegia* that control the Subura's underground economy are not interested in soldiers. They're interested in business. As long as the party isn't disrupting business, they're invisible. If they start disrupting business: three large men appear and ask, politely, what the party wants to accomplish, and whether there's a way to accomplish it that doesn't involve their operation.
+
+---
+
+### The Palatine Hill (Approaches)
+
+**What it is:** The hill above the Forum where Rome's elite live and the Emperor's palace complex stands. The approaches are wide, formal, and watched at all times by palace staff and Praetorian detachments.
+
+**What it looks like:**
+
+> *The Palatine smells different from the rest of Rome: cedar, good cooking, and the particular scent of power, which is mostly money with an undertone of stone. The streets here are wide enough for two carriages to pass. The houses have actual gardens behind their walls, not just a few potted plants.*
+>
+> *The Praetorians at the approach checkpoints are not unfriendly. They are precise. They ask your name, your business, and who sent you. They have a list. If you're on the list, they wave you through without expression. If you're not, they tell you that clearly and without hostility, and they note your face.*
+
+**What the party can do here:**
+- Reach the Emperor's staff with proper credentials (Tribune's authority + Senator Tullius' letter)
+- Locate the Praetorian commander (DC 14 Persuasion to get a meeting; DC 17 to get him to act without waiting for orders)
+- Find the Praetorian intelligence office, where Brutus' threat assessment was filed three weeks ago and not acted on (DC 16 Investigation + proper access)
+
+**Running note:** The Emperor himself is visible during the Triumph from street level. Close approach to his chariot during the Triumph requires either Praetorian credentials, the right timing (Scene 3's controlled chaos), or simply running. The Praetorians are very good at their jobs but there are a lot of people between them and Marcus Aurelius on Triumph day.
