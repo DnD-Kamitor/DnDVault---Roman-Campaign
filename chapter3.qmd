@@ -78,6 +78,25 @@ I did not want to do this.
 
 ---
 
+## The Forest Journey: Two Days of Travel
+
+The journey from the fort to Thusnelda's scouts takes two full days. This is not empty time. The forest is not neutral territory.
+
+At the start of each travel day (or whenever pacing demands it), roll a d8 or choose from this table. Each event should take 10-15 minutes of table time -- no more.
+
+| d8 | Event |
+|---|---|
+| 1 | **The Spear Pulls North.** The cart carrying the spear slowly angles itself northward on flat ground. No one is steering it that way. DC 12 Arcana or Religion to understand it's tracking toward the sacred grove -- an instinct, not consciousness. |
+| 2 | **A Roman Scout.** A lone legionary from the fort spots the party from a ridge. He's young, clearly terrified, clearly under orders to follow. The party must decide: capture him, send him back with a warning, or ignore him and know he'll report their heading. |
+| 3 | **Germanic Watchers.** They've been visible in the treeline for an hour. Not hostile -- yet. If Vercingetorix is with the party, he raises a fist and they pull back. If not: DC 14 Persuasion using any Germanic phrase from the player guide, or they shadow the party all night. |
+| 4 | **The Spear Dreams.** The character carrying the highest corruption wakes screaming from a brief vision mid-march: they saw themselves standing over the entire party's bodies, holding the spear, and they were smiling. The character describes this to the table. Thusnelda, if present, listens. She says nothing. |
+| 5 | **A Shrine in the Trees.** A small Germanic offering-post -- carved wooden figures, dried herbs, a deer skull -- stands at a fork in the path. The left path goes into deep forest. The right path is the route. If the party disturbs the shrine: the deer skull's eye sockets glow briefly, and wildlife avoids the camp that night (advantage for the Legate's trackers). |
+| 6 | **Varro's Choice** *(if Varro is still with the party).* He stops at the treeline of a particular valley and looks across it for a long time. *"My grandfather's cohort marched through here. Forty years ago. None of them came back."* He doesn't explain. He keeps walking. |
+| 7 | **The Spear Goes Quiet.** For several hours, the spear's runes stop glowing and the pull disappears. The forest feels almost normal. Then, suddenly, it resumes -- stronger than before, as if it drew a breath. Characters with corruption 2+ must make a DC 11 Wisdom save or feel the urge to unwrap it and hold it, "just to check it's still there." |
+| 8 | **Rain.** A cold Germanic rain turns the paths to mud. Movement is halved. The Legate's tracking becomes easier (his dogs can still smell the spear; rain doesn't help with that). Any character without a cloak takes 1 level of exhaustion if the party doesn't shelter for 2 hours. |
+
+---
+
 ## Scene 0: Cold Open (5 minutes)
 
 **Start in media res — the camp is wrong.**
@@ -178,9 +197,30 @@ She will guide them. She asks nothing in return — this is her purpose.
 
 > *"The spear belongs to no one. Not the god who made it, not the tribe that used it, not the empire that found it. It belongs to the wound it keeps open. You must close the wound."*
 
-> *"Your friend there" — she looks at the influenced NPC — "has a thread in them. Cut it soon. The forest is not kind to loose threads."*
+> *"Your friend there" -- she looks at the influenced NPC -- "has a thread in them. Cut it soon. The forest is not kind to loose threads."*
 
 > *"Fear the grove's demand. Most people who come here for the ritual choose something that hurts a little. That is not enough. The grove will know."*
+
+**Additional sample dialogue for Thusnelda across the journey:**
+
+When a character asks her how she knows about the spear: *"My teacher's teacher sealed it. I have been waiting for it to surface since I was eleven years old. I am seventy-three. You are late."*
+
+When someone suggests there might be another way to destroy it: *"There is not. I have thought about this for sixty years. The grove is the only place where what was made in divine anger can be unmade. This is not an opinion."*
+
+When asked what happens to her after the ritual: *"I go back to the grove. I tend it. I wait to see what god pays attention next. I have been doing this my entire life. It is good work."*
+
+When pressed on whether the ritual always works: *"No. My teacher failed. I watched her fail. The sacrifice was wrong. I will not let that happen again. That is why I am telling you now, here, in the forest, before you are standing at the altar and making panicked decisions."*
+
+When someone tries to thank her: *"Do not thank me. Finish it. That is thanks enough."*
+
+**What Thusnelda will and will not say:**
+
+| She will say | She will not say |
+|---|---|
+| Exactly what the ritual requires | What the "right" sacrifice is for any specific character |
+| That the grove rejects insufficient sacrifices | Whether a sacrifice is "good enough" before it is offered |
+| That someone in the party is influenced | Who it is -- she knows, but sees this as the party's work to discover |
+| What the stakes of failure are | Whether she believes the party will succeed |
 
 ---
 
@@ -367,6 +407,40 @@ The DM should know each character's central motivation (from Session 0) and gent
 
 The sacrifice is permanent. Honor it.
 
-### Pacing Note: The Forest
+### DM Guidance: Reading the Grove's Response
+
+The grove does not communicate clearly. It communicates correctly. Here is how to signal acceptance or rejection:
+
+**If the sacrifice is genuine:** The altar stone warms perceptibly when the object or thing is offered. The runes on the standing stones shift slightly, as if something large turned its attention toward the altar. Thusnelda closes her eyes and exhales. She says nothing, but she opens them again looking less frightened.
+
+**If the sacrifice is insufficient:** The altar stays cold. The offered item (or words, for intangible sacrifices) simply sits there, unreceived. Nothing dramatic happens. The absence of response is the response. Thusnelda says, quietly: *"The grove is not satisfied. Try again. You have time. Use it."*
+
+**If the party offers nothing real at all:** After two attempts, the stones begin to cool and the grove's ambient light dims. The ritual is failing. Thusnelda: *"Something must be given or we leave here with the spear and come back when you are ready. There is no shame in it. But Mars will be closer next time."*
+
+**The thing she will not accept:** "I sacrifice my life in the future, if necessary." The grove is not interested in conditional sacrifice. The sacrifice must be now, irrevocable, freely given. If a player offers this: Thusnelda looks at them for a moment, then: *"That is not a sacrifice. That is a bet. The grove is not a wager."*
+
+### Post-Ritual NPC States
+
+After the spear is destroyed (or after a failed ritual), each NPC's position shifts. Use this for Session 4 handoff.
+
+| NPC | If ritual succeeded | If ritual failed |
+|---|---|---|
+| **Vercingetorix** | At peace, even visibly lighter. Begins planning the journey home. Will embrace the party's leader if they allow it -- a Germanic gesture of warrior-kin. | Devastated. Three generations of his family carried this wound. He will not say it, but his face says it. |
+| **Thusnelda** | Methodical. Begins collecting iron fragments immediately. Gives the party one sealed clay jar each: crushed sacred herbs, for safe passage in the forest. Then goes quiet. | She blames herself. She will say *"I will prepare the grove again. Come back when you are ready. I will be here."* She means it. |
+| **Cassia** *(if present)* | Collapses against a standing stone, weeping -- not from grief but from relief. Her visions stop for the first time in weeks. She asks if she can stay in the grove for one night alone. | More determined than devastated. *"The omens are still bad but the shape has changed. There is still a path. I need to think."* |
+| **Tribune Lucius** *(if present)* | Looks at the iron fragments for a long time. Then: *"My father was wrong about what this was. He thought it was a political tool. He didn't know what it was."* First honest thing he's said out loud. | Practical and brisk -- this is how he handles fear. *"We need to move. The Legate is still out there. Being stopped here with a failed ritual and a still-active cursed weapon is a poor position."* |
+| **The influenced NPC** | Whether they broke free or were pulled back during the ritual, they are quiet after. The thread is cut. They feel its absence like a missing tooth -- noticeable even when nothing is wrong. Let them narrate what the absence feels like. | If the ritual failed because of them: they are the most useful person in the group for finding a way to try again. They felt the spear's logic from the inside. They know how it thinks. |
+
+### The Influenced NPC: Roleplay Guidance for That Player
+
+At session start, when you pass the private note, also tell the player these three things to do during Scenes 1-3 -- nothing dramatic, nothing that breaks immersion, but things that will be recognisable in hindsight:
+
+1. **Scene 1 (cold open):** When the group discovers someone was standing by the spear at night, your character is the first to suggest it might have been a sleepwalking episode or stress response. Not defensively -- genuinely, helpfully. You're trying to explain it away for yourself as much as anyone.
+
+2. **Scene 2 (Thusnelda encounter):** When Thusnelda says *"your friend there has a thread in them"* and looks at you, your character breaks eye contact first and says something like *"She means the spear in general, doesn't she?"* -- redirecting. Again, not consciously, not maliciously. You simply cannot hold her gaze.
+
+3. **Scene 3 (river crossing):** During the most stressful moment of the crossing, your character is unnaturally calm. Not helpful-calm -- still-calm, the way a person is still when they are listening to something no one else can hear. If anyone asks, you have no explanation for it.
+
+These three moments should not be pointed out by the DM. They are for the player to plant and the other players to notice, or not, until the ritual makes it undeniable.
 
 This session should feel like the pressure never fully releases. The investigation of the cold open mystery, the river crossing, the grove itself — there's no safe moment until after the spear is destroyed. Push toward the grove. The forest is hostile to lingering.

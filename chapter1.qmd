@@ -1,6 +1,6 @@
 # Chapter 1: Blood and Omens
 
-**Applying Guy Sclanders' Methodology** *(Based on [The Complete Guide to Creating Epic Campaigns](https://books.google.com/books/about/The_Complete_Guide_to_Creating_Epic_Camp.html?id=0XFNvgEACAAJ) and [How to be a Great Game Master](https://www.greatgamemaster.com/dm/about-us/))*
+**Applying Guy Sclanders' Methodology**
 
 ## Session Overview
 
@@ -47,20 +47,24 @@ No one shall touch the weapon unless I permit it.)
 In nomine Senatus Populique Romani.
 ```
 
-**Handout 2: Gaulish Runes Translation**
+**Handout 2: The Vault Inscription**
 ```
-GAULISH/CELTIC INSCRIPTION:
-"Atir nertos, atir bitus, atir maros"
-(Father of strength, father of life, father of death)
+ELDER FUTHARK RUNES carved into the altar stone:
+(A DC 15 History or Religion check, or asking Thusnelda
+in Session 3, reveals the full meaning.)
 
-"Ro·bið·su in gaissos·mo dîvon-macon"
-(Here lies the spear, god-slayer)
+Runes visible: TIWAZ  HAGALAZ  NAUDHIZ  ISA  OTHALAN
+Translation:   War    Disruption  Need  Stillness  Ancestral land
 
-TRANSLATION:
-Here lies the God-Killer, the Spear of Broken Oaths,
+Below the rune row, in old Germanic script:
+
+"Here lies the God-Killer, the Spear of Broken Oaths,
 sealed by the blood of heroes. May it never taste sunlight again.
 Forged in vengeance. Quenched in divine blood.
-The son of Mars fell here. His father's wrath lingers still.
+The son of Mars fell here. His father's wrath lingers still."
+
+At the base of the altar, a single line scratched as if
+done in haste: "DO NOT WAKE WHAT SLEEPS HERE."
 ```
 
 **Handout 3: Omens Observed (Give to players as prop)**
@@ -131,18 +135,96 @@ The party is summoned to meet **Legate Marcus Aurelius Corvinus** in the princip
 
 The excavation site is a crude shaft dug through Roman stonework into older Germanic structures. The air grows cold as the party descends.
 
+**The Shaft:**
+
+> *The hole is perhaps six feet wide -- big enough for two men abreast if they don't mind touching. The Romans who dug it used short-handled picks; you can see the tool marks in the clay, getting more careful as they got deeper, as if the workers began to feel something wrong. A rope ladder, poorly anchored. Below: darkness, and a smell like old metal and earth that has been wet for a very long time.*
+
+The descent is 40 feet. Anyone carrying a torch will notice the flame leans downward in an unnatural draft. This is worth remarking on but has no mechanical effect: it simply feels wrong.
+
+---
+
+### Chamber 1: The Hall of Shields
+
+> *The ladder ends on a floor of packed earth and broken stone. The chamber is 30 feet long and perhaps 15 feet wide, and its walls are lined with shields.*
+>
+> *Dozens of them. Some are iron, some are hide over wood, some are so old the material has become indistinguishable from the earth it hangs on. They bear symbols: a wolf's head, a boar, a hand with three fingers raised, a coiling serpent. None of them are Roman.*
+>
+> *The shields are not mounted for display. They're arranged the way a soldier arranges his kit before battle. At attention.*
+>
+> *At the far end of the hall: a low stone arch, and beyond it, darkness.*
+
 **Exploration:**
-- Ancient Germanic temple dedicated to a forgotten war god
-- Walls covered in bronze age runes (DC 15 History or Religion to read)
-- Runes tell a story: *"Here lies the God-Killer, the Spear of Broken Oaths, sealed by the blood of heroes. May it never taste sunlight again."*
-- Three chambers:
-  1. **Hall of Shields** – Dozens of ancient shields line the walls, some bearing symbols of forgotten tribes
-  2. **Chamber of Chains** – Iron chains hang from ceiling, sized for something enormous
-  3. **The Vault** – Central chamber where the spear was found, now guarded by **animated armor** (2x) possessed by vengeful spirits
+
+- DC 13 History: The symbols belong to at least four distinct Germanic tribes, none of which coexisted in the same region. These shields were collected here, not stored by one people.
+- DC 15 History: The boar symbol is Marcomanni. The three-fingered hand is pre-Roman Cherusci. These tribes have been rivals for centuries. Someone gathered their war-gear in one place.
+- DC 14 Religion: This is a trophy hall, but not a Roman kind. In Germanic tradition, weapons and shields left in a sacred place belong to the war-god. This room is an offering.
+
+No combat here. The shields don't move. They watch.
+
+---
+
+### Chamber 2: The Chamber of Chains
+
+> *The second chamber is larger and lower. The ceiling presses down to perhaps eight feet -- enough to stand, not enough to forget it.*
+>
+> *Iron chains hang from iron rings set into the stone above. Not one or two chains: dozens, ranging from finger-width links to chains as thick as a man's forearm. Some end in collars. Some in hooks. Some simply end.*
+>
+> *The collars are sized for something that is not human. Something larger.*
+>
+> *On the far wall, scratched deeply into the stone with what must have been an enormous blade: a single rune. TIWAZ -- the war rune. Below it, in rough Latin, probably added by a Roman worker: "We turned back here." The workers who dug this far did not go further.*
+
+**Exploration:**
+
+- DC 12 Investigation: The chains are old -- centuries old -- but the iron hasn't rusted. Something in the air down here preserves them.
+- DC 14 Arcana: A faint divine aura clings to the chains. Whatever they held was something that required divine binding to contain.
+- DC 16 Religion: The TIWAZ rune above a binding site has one meaning in Germanic tradition: this was a sacrifice of restraint. Not a prison. A gift to the war-god. Whatever was chained here was given willingly -- by whatever was chained, or by the tribe that sealed it.
+
+The chains are still. No sound. No movement. If the party lingers more than 5 minutes, one chain at the far end sways once, slightly, with no air movement to explain it.
+
+---
+
+### Chamber 3: The Vault
+
+> *The vault is circular. Perhaps 20 feet across, with a domed ceiling that channels the sound of your own breathing back to you.*
+>
+> *In the center: a stone altar, waist-high, carved from a single piece of granite that looks as though it was placed here before the chamber was built around it.*
+>
+> *And on the altar: a spear.*
+>
+> *Eight feet long. Black iron. The runes on its surface glow a deep, slow red, like coals that will never quite die. It rests on two stone pegs and has rested there, by the look of it, for a very long time. The chains from the outer room would have reached this far.*
+>
+> *The air around the altar is still. Not calm -- still. As if everything within five feet of the spear has simply stopped participating in the world.*
+>
+> *You feel it looking at you.*
+
+**The Spear's Presence:**
+
+Before anyone touches it, every character with a Wisdom of 14+ feels a pull -- not physical, but directional, the way a man feels a fire when his back is to it. Something is paying attention.
+
+The 2 **Animated Armor** guarding the vault lurch into motion the moment the first character steps fully into the chamber. They don't attack immediately. They position themselves between the party and the altar.
+
+One of them speaks. Or rather: something speaks through it. The voice is wrong -- too many registers at once, like several people speaking the same word at slightly different times.
+
+> *"DO NOT TAKE THE SPEAR. THIS IS THE LAST WARNING THIS PLACE HAS TO GIVE."*
 
 **Combat Encounter:** 2 Animated Armor (CR 1 each)
-- The spirits scream: "DO NOT TAKE THE SPEAR!"
-- If defeated: They dissolve, whispering "You have doomed us all"
+
+- If the party backs out of the chamber: the armor follows only to the threshold, then stops. They can be avoided entirely if the party retreats, discusses, and re-enters with a plan. The armor attacks anyone who reaches for the spear.
+- If defeated: the spirits do not go quietly. As each suit collapses, a sound escapes it -- something between a scream and a sigh -- and the words are always some variant of: *"You have chosen this. Remember that you chose."*
+
+**After the combat: The First Touch**
+
+If a character reaches for the spear:
+
+> *It is colder than the air around it. The runes pulse once under your hand, and then -- for just a moment -- you are somewhere else.*
+>
+> *A battlefield. Dawn. Thousands of bodies. The spear in your hand, slick with a blood that isn't red.*
+>
+> *A voice that is not a voice: "You could end this. All of it. One campaign. One decision. No more dying. Yours."*
+>
+> *Then you are back in the vault, holding an iron spear, and your hand is shaking.*
+
+DC 14 Wisdom saving throw. On a failure: the character gains 1 level of corruption and is Shaken (cannot willingly release the spear until the start of their next turn). On a success: they resist, but the pull is real and they know it.
 
 ## Scene 3: The Spear
 
@@ -166,14 +248,38 @@ The **Spear of Mars** rests on a stone altar, surrounded by broken chains. It's 
 
 ## Scene 4: Return to the Surface
 
-As the party emerges, they find the fort in chaos:
-- The mad worker has escaped his bonds
-- He's killed three guards and is rampaging through the camp
-- He's screaming: "THE SPEAR CALLS FOR BLOOD!"
+As the party climbs out of the shaft, the night air hits them -- and then the shouting.
+
+**Read aloud:**
+
+> *You hear him before you see him.*
+>
+> *A sound that isn't quite screaming and isn't quite singing -- a high, rhythmic sound, the kind a voice makes when the person using it has stopped worrying about what anyone thinks.*
+>
+> *By the torchlight from the principia, you see him. One of the workers -- a big man, Gallic by the look of him, the kind of man you'd trust to move heavy stones. He's standing in the middle of the courtyard with a dead legionary's gladius in each hand. Three soldiers are already down around him. He's not looking at them. He's looking up.*
+>
+> *His eyes are rolled back. His lips are moving.*
+>
+> *"The spear calls -- the spear calls -- the spear calls for blood--"*
+>
+> *He turns his head, slowly. And he looks directly at whoever is carrying the spear.*
+>
+> *And he smiles.*
 
 **Combat Encounter:** Corrupted Worker (use **Berserker** stat block, CR 2)
-- If the party has the spear, he focuses on whoever carries it
-- Dies screaming: "Mars...demands...sacrifice..."
+
+He focuses exclusively on whoever carries the spear. If no one carries it, he attacks the closest party member and screams "WHERE IS IT -- GIVE IT TO ME -- IT'S MINE--"
+
+**Resolution options:**
+
+| How the party handles it | What happens |
+|---|---|
+| **Kill him** | He dies mid-charge. His last word is *"...Mars..."* Clear, sudden, sad. |
+| **Subdue him** (Athletics grapple, DC 13, then restrain) | He collapses weeping, then unconscious. He remembers nothing. Wakes the next day with no memory of the events since he touched the spear. |
+| **Move the spear away** (out of his line of sight, 60 feet) | He stops. Looks around, confused, like a man waking up. Falls to his knees. |
+| **He escapes into the night** | If the party doesn't prioritise stopping him, he runs for the gate screaming. He'll be found two days later in the forest, dead of exposure, still holding the stolen gladii. |
+
+Whatever happens, the fort's legionaries have seen enough. Quiet spreads through the courtyard as the crisis ends. Men look at the party, then at the wrapped spear, then look away.
 
 ## Conclusion
 
@@ -188,12 +294,39 @@ The Legate demands the spear. The Augur begs them to destroy it. Centurion Varro
 
 ## DM Notes
 
-### Roman Military Ranks (for reference)
-- **Legate** – Commander of the legion (like a general)
-- **Tribune** – Staff officer from Rome (aristocrat)
-- **Centurion** – Company commander (60-80 men)
-- **Optio** – Second-in-command to centurion
-- **Legionary** – Standard soldier
+### OGAS This Session
+
+**Legate Marcus Aurelius Corvinus**
+- **Objective:** Control the most powerful military artifact discovered in a generation
+- **Goal (this session):** Get the spear into his personal custody before Rome hears about it
+- **Agenda:** Use the party as deniable retrieval agents; keep the augur quiet; establish a cover story about "routine excavation findings"
+- **Secret:** He's already sent a private rider to his patron in Rome -- not the Senate, his personal patron. He's been planning this since the first day of the dig. The party is not the first group he's sent down there.
+
+**Augur Cassia Liviana**
+- **Objective:** Prevent a divine catastrophe she's been dreaming about for three weeks
+- **Goal (this session):** Stop the spear from being brought to the surface; failing that, ensure it's not given to Corvinus
+- **Agenda:** Appear cooperative with the Legate while feeding the party information that makes them question the mission
+- **Secret:** She's already performed an augury about the party specifically. The omens said they will be the ones who decide whether Rome burns. She doesn't know which way they'll decide.
+
+**Centurion Titus Varro**
+- **Objective:** Keep his soldiers alive and his unit functional in a situation that is rapidly making both difficult
+- **Goal (this session):** Find out what the spear actually is before his commanding officer does something catastrophically stupid with it
+- **Agenda:** Position his most loyal men between the Legate and the party; buy time; listen to everyone
+- **Secret:** He saw one of his men's faces when the worker went mad. The man -- young, good soldier -- looked at the corrupted worker and whispered "I understand him." Varro reassigned the man to gate duty and told no one. He's watching for signs.
+
+---
+
+### Refusal Contingency
+
+If the party refuses the Legate's mission:
+
+| Party action | Legate's response | Consequence |
+|---|---|---|
+| **Polite refusal** | He doubles the pay offer. If still refused, he assigns another unit and the party is confined to quarters while that unit goes down. The unit doesn't come back. | The party is then re-ordered to complete the mission. The stakes are now visible. |
+| **Citing the augur's warnings** | He has Cassia removed from the room. He's heard enough about omens. The party is given one hour to reconsider. | Cassia finds the party during that hour and pleads with them to go down and destroy the spear before anyone takes it. |
+| **Outright defiance** | He invokes military discipline. They're legionaries. Orders are orders. DC 18 Persuasion to make a case compelling enough that he backs down -- which requires evidence he doesn't have yet. | If they hold out: he sends them with a Centurion escort as "motivation." The Centurion is Varro, who privately tells the party: *"I'd go too if I were you. Better you go knowing what you're walking into than someone else go not knowing."* |
+
+---
 
 ### Corruption Mechanic
 Track corruption levels (0-5) for any character who touches or attunes to the spear:
