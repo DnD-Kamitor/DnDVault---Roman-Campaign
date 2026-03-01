@@ -162,3 +162,222 @@ This is the shape of the whole campaign. Use it to maintain dramatic coherence a
 - **Return it to Mars:** The god is satisfied. He grants the party his blessing and departs. The political crisis in Rome remains unresolved—they've solved the divine problem but not the human one. Ambiguous.
 
 Combinations and partial outcomes are valid. The key is that every NPC's OGAS resolves in a way that feels earned by their established character.
+
+---
+
+## NPC Relationship Web
+
+Who knows what about whom. Use this to run every character as a fully-informed actor in their own story.
+
+```
+                        SENATOR BRUTUS
+                       (Never Present)
+                      /       |        \
+              [owns]  /   [sent]  \  [made pacts with]
+                    /         |         \
+           LEGATE          TRIBUNE       GODS (off-screen)
+          CORVINUS          LUCIUS       Jupiter, Pluto, Bellona
+             |               |
+      [commands]        [suspects]
+             |               |
+          PARTY ———————————————
+             |        [reports to]
+      [trusts]              |
+             |           AUGUR
+          VARRO            CASSIA ——[daughter of]——> MARS
+             |               |
+      [respects]       [warns about]
+             |               |
+       VERCINGETORIX ————————
+       (ancestral claim to spear)
+```
+
+**Key knowledge asymmetries:**
+
+| NPC | Knows | Doesn't Know |
+|---|---|---|
+| Legate Corvinus | He owes Brutus money. Brutus wants the spear. | That Lucius is also Brutus' agent. That Cassia is Mars' daughter. |
+| Augur Cassia | She is Mars' daughter. The spear's true history. Brutus exists. | That Lucius is Brutus' son. What Brutus' full plan is. |
+| Centurion Varro | The Legate is compromised. The Tribune is hiding something. | Brutus, Cassia's heritage, or the divine dimension of the spear. |
+| Tribune Lucius | His mission from Brutus. That Brutus is his father. | That Cassia is Mars' daughter. Vercingetorix's dying secret. |
+| Vercingetorix | The spear's tribal history (three generations). Where the sacred grove is. | Brutus exists. That the Roman augur has divine blood. |
+| Senator Brutus | The spear's location. That Lucius is his tool. The replica spear ritual. | That Cassia can feel the spear's divine pull. That Vercingetorix is dying. |
+
+---
+
+## Per-Session NPC State Table
+
+What each NPC knows, wants, and is actively doing in each session — whether or not the party engages them.
+
+### Session 1
+
+| NPC | Where | Goal | Active Move |
+|---|---|---|---|
+| Legate Corvinus | Fort, principia | Secure the spear for personal glory | Ordering the party into the ruins; monitoring the Augur |
+| Augur Cassia | Fort shrine | Prevent the spear being claimed | Performing continuous augury; leaving warning signs |
+| Centurion Varro | Fort walls | Keep his soldiers alive | Quietly positioning trusted veterans near the excavation |
+| Tribune Lucius | 3 days away on the road | Reach the fort before the Legate does something irreversible | Riding hard with a Praetorian escort |
+| Vercingetorix | 5 miles north, tribal camp | Recover the spear | Watching the fort; waiting for Roman attention to be divided |
+| Senator Brutus | Rome, his villa | Ensure the spear never reaches Rome's politics | Writing orders to Lucius; unaware the party exists yet |
+
+### Session 2
+
+| NPC | Where | Goal | Active Move |
+|---|---|---|---|
+| Legate Corvinus | Fort, publicly humiliated | Recover command and the spear | Cooperating with Tribune publicly; plotting privately |
+| Augur Cassia | Fort shrine | Stop the Tribune taking the spear to Rome | Building a case against Lucius; trying to reach the party |
+| Centurion Varro | Fort, armed and waiting | Protect the party and his unit | Has 6 veterans positioned near spear storage; ready to intervene |
+| Tribune Lucius | Fort, establishing authority | Get spear destroyed without fingerprints on it | Manufacturing a justification to destroy the spear "in the field" |
+| Vercingetorix | 2 miles north | Exploit the Roman power struggle to reach the spear | Leading the raid; timing it to coincide with Tribune's arrival |
+| Senator Brutus | Rome | Receive confirmation from Lucius | Waiting; becoming impatient |
+
+### Session 3
+
+| NPC | Where | Goal | Active Move |
+|---|---|---|---|
+| Legate Corvinus | In pursuit (if alive) | Recover the spear; restore his reputation | Riding hard with 8 soldiers; willing to kill to recover it |
+| Augur Cassia | With party (if alive) | Get the spear to the grove | Navigating by augury; keeping the party moving |
+| Centurion Varro | Fort (if stayed) or with party | Survive; do the right thing | If with party: fighting for them; if at fort: covering their absence |
+| Tribune Lucius | With party or fled | Complete mission or escape | Genuinely torn; Cassia's presence is changing his calculations |
+| Vercingetorix | With party (if allied) | Destroy the spear at his people's sacred site | Navigating; protecting; carrying a secret about his health |
+| Thusnelda | Sacred grove | Perform the ritual correctly | Has prepared the altar; has been expecting them for three days |
+| Senator Brutus | Rome | Prepare the Triumph assassination | Finalising the replica spear ritual; briefing Marius Coda |
+
+### Session 4
+
+| NPC | Where | Goal | Active Move |
+|---|---|---|---|
+| Legate Corvinus | Rome (if alive) | File a legal complaint; recover reputation | Working Senate contacts; potentially useful to Brutus as a witness against the party |
+| Augur Cassia | Rome, Temple of Apollo | Warn Rome | Performing auguries; being ignored; trying to reach the Vestal Virgins |
+| Centurion Varro | Retired/Fort | Not here | Sends a message if alive: *"Whatever you're doing in Rome, finish it fast."* |
+| Tribune Lucius | Rome, covering tracks | Survive; distance himself from Brutus | Has already warned Brutus the party is coming (he regrets this) |
+| Vercingetorix | Outside Rome walls | Won't enter the city | Sends message: *"The god is angry. The city smells of his anger. Do it today."* |
+| Senator Brutus | Rome, his villa | Execute the Triumph assassination | Meeting with Marius Coda; finalising the ritual; managing the party as a variable |
+| Marius Coda | Rome, Subura district | Complete his patron's mission | Training; positioned for the Triumph route; absolutely loyal |
+
+### Session 5
+
+All surviving NPCs are absent from the divine arena — Mars' judgment is for the party alone. Their fates are resolved in the epilogue.
+
+---
+
+## NPC Voice Reference
+
+Three characteristic lines per NPC. Read these before every session they appear in.
+
+### Legate Marcus Aurelius Corvinus
+*Blunt. Commanding. Self-interested beneath Roman virtue performance.*
+
+> *"I don't need your opinion. I need your obedience. There's a difference."*
+
+> *"Rome doesn't run on philosophy. It runs on iron and men willing to use it. Are you willing?"*
+
+> *"I'll be honest with you because I respect competence: I need that artifact. Help me get it and I'll make sure the right people know your names."*
+
+### Augur Cassia Liviana
+*Quiet. Certain in ways that unsettle people. Speaks in fragments when the visions press.*
+
+> *"Three nights. The same dream. The spear standing upright in a field of blood, and every person I know kneeling around it. Dreams are not prophecy. But they are not nothing."*
+
+> *"You want me to tell you it will be alright. I can't. I can tell you what Mars wants, and you won't like it. Do you want me to tell you anyway?"*
+
+> *"I have known what I am since I was twelve. I have not decided what to do about it. That is still true."*
+
+### Centurion Titus Varro
+*Economy of words. Dark humour. Trust earned through action, not speech.*
+
+> *"Twenty years. You know what I've learned? The men who make speeches about Rome's greatness are always somewhere else when the bill comes due."*
+
+> *"I'm not telling you what to do. I'm telling you what I see. What you do with it is your problem."*
+
+> *"I've buried forty-seven men. Every one of them thought it wouldn't be them. Just saying."*
+
+### Tribune Lucius Valerius Maximus
+*Performs confidence. The performance gets thinner as the pressure rises.*
+
+> *"I appreciate the frontier aesthetic — truly, very authentic — but perhaps we could discuss this somewhere that doesn't smell of horses and anxiety?"*
+
+> *"My father always said the problem with idealism is that it requires other people to share it. He was usually right. I've stopped telling people that."*
+
+> *"I know you don't trust me. I don't blame you. I'm not sure I trust me either, at this point. But I'm telling you the truth right now. For whatever that's worth from someone like me."*
+
+### Vercingetorix the Red
+*Poetic. Unhurried. Measures people by what they do under pressure.*
+
+> *"Romans name everything they conquer. They think that is how they own it. They are wrong. You can name a river. The river doesn't care."*
+
+> *"I have been dying for two years. The sickness moves slowly. I move faster. That has been my advantage."*
+
+> *"Your kind and my kind have been killing each other for a hundred years. You are the first Romans I have met who asked me what I wanted before telling me what I would receive. That is... unusual."*
+
+### Senator Gaius Cassius Brutus
+*Statesman's cadence. Rhetorical questions. Completely sincere about everything, including the terrible parts.*
+
+> *"You've seen the frontier. You know what Rome looks like from the edge. Does it look like the Republic our ancestors bled for? Or does it look like one man's property, maintained by other men's fear?"*
+
+> *"I'm not asking you to do anything illegal. I'm asking you to think about what the law is for. And whether what we have now serves that purpose."*
+
+> *"History will understand. History always understands necessity. The people who live through necessity — they have a harder time. I accept that. So should you."*
+
+### Mars, God of War
+*Short. Final. Every word the weight of a weapon.*
+
+> *"MORTALS EXPLAIN THEMSELVES. A god listens once."*
+
+> *"I did not make war because I enjoy it. I made war because without it, what you call civilization does not exist. Remember that the next time you thank a god for peace."*
+
+> *"You surprised me. That happens rarely. I will remember it."*
+
+---
+
+## NPC Reaction Tables
+
+How each major NPC responds to the three most likely party approaches.
+
+### Legate Corvinus
+
+| Party approach | Response |
+|---|---|
+| **Obey and cooperate** | Respect, increased orders, occasional genuine gratitude. He's not cruel to useful people. |
+| **Question or push back** | Anger first, then calculation. *"Is this going to be a problem?"* Will find leverage. |
+| **Expose or threaten him** | Controlled fury. Looks for allies immediately. Will sacrifice anything to protect his position. |
+
+### Augur Cassia
+
+| Party approach | Response |
+|---|---|
+| **Trust her and ask questions** | Opens up completely. Tells them everything she knows, including things that scare her. |
+| **Skepticism / dismissal** | Patient. *"You don't have to believe me. The omens don't change because you don't believe them."* Keeps trying. |
+| **Threaten or pressure her** | Genuine sadness. Won't fight back. Will still try to complete her mission through other means. |
+
+### Centurion Varro
+
+| Party approach | Response |
+|---|---|
+| **Treat him as an equal, ask directly** | Straight answers. Everything he knows. Becomes a genuine ally. |
+| **Pull rank or give orders** | Polite compliance, zero cooperation. He's seen too many officers to be impressed by rank alone. |
+| **Ask him to betray the legion** | Won't. Hard line. Can be convinced to bend rules — never to break the fundamental oath. |
+
+### Tribune Lucius
+
+| Party approach | Response |
+|---|---|
+| **Expose his agenda with evidence** | Negotiates immediately. Offers what he has — access, testimony, knowledge. Coward beneath the performance. |
+| **Charm or persuade** | Responds well; the mask slips slightly. Wants to be liked. Wants to be *understood*. |
+| **Physical threat** | Capitulates fast. Then looks for the first exit. He will betray anyone to survive — but regret it afterward. |
+
+### Vercingetorix
+
+| Party approach | Response |
+|---|---|
+| **Acknowledge his people's claim on the spear** | Immediate respect. Shares everything: the grove location, the ritual, his grandfather's story. |
+| **Dismiss or ignore his claim** | Tests them physically — not violently, but through endurance challenges or blunt confrontation. *"Show me you're worth talking to."* |
+| **Attack first** | Fights until he respects them, then stops. Offers honorable single combat rather than continued battle. Never runs. |
+
+### Senator Brutus
+
+| Party approach | Response |
+|---|---|
+| **Engage his argument about Rome** | Genuinely engages. This is his favorite topic. He will be persuasive. He will almost be right. |
+| **Threaten him with legal action** | Completely unconcerned. He has done nothing illegal yet. *"Bring your evidence to the Senate. I look forward to the debate."* |
+| **Physical confrontation** | Does not fight personally. Calls guards immediately, then disappears. Never in the same room as violence he ordered. |
