@@ -1,31 +1,434 @@
-## Appendix: Quick Reference
+# Appendix: Handouts, Props, and Quick Reference
 
-### Key NPCs Quick Stats
-
-**Legate Marcus Corvinus**: Use **Knight** (CR 3)
-**Tribune Lucius**: Use **Noble** with +2 AC (CR 2)
-**Centurion Varro**: Use **Veteran** (CR 3)
-**Augur Cassia**: Use **Priest** (CR 2)
-**Vercingetorix**: Use **Gladiator** (CR 5)
-**Thusnelda (Druid)**: Use **Druid** (CR 2)
-**Senator Brutus**: Use **Priest** + magic armor (CR 3)
-
-### Corruption Track Reference
-
-**Level 0**: No corruption
-**Level 1**: Disturbing dreams
-**Level 2**: Disadvantage on Wisdom saves
-**Level 3**: DC 12 Wisdom save to retreat
-**Level 4**: DC 14 Wisdom save to avoid attacking allies
-**Level 5**: Fully corrupted, NPC
-
-### Spear of Mars Properties
-
-**+2 weapon**
-**Damage**: 1d8 piercing + 1d8 necrotic
-**Attunement Curse**: Disadvantage on Wisdom saves, increasing aggression
-**Destruction**: Can only be destroyed at the sacred grove via ritual
+*The DM-facing section. Everything in this appendix is designed to be printed, cut, and handed to players at the right moment. Each handout lists when to deploy it and what it reveals.*
 
 ---
 
-**Campaign Complete! May Mars smile upon your future games!**
+## Handout 1: Legate's Orders
+
+**When to give:** Session 1, Scene 1, when Corvinus summons the party.
+
+**How to present:** Written on a small strip of parchment or index card. The Latin is authentic; the English translation follows it. Most players will feel the weight of an official Roman military order even if they cannot read Latin.
+
+---
+
+> MANDATUM LEGATI MARCI AURELII CORVINI
+>
+> Ad milites electos:
+> Descendite in ruinas. Recuperate telum divinum.
+> Nemo tangat telum nisi ego permitto.
+>
+> *(To the chosen soldiers: Descend into the ruins. Recover the divine weapon. No one shall touch the weapon unless I permit it.)*
+>
+> In nomine Senatus Populique Romani.
+
+---
+
+**What it reveals:** The Legate has been informed about the spear. This is a military order, not a request. The final clause -- "unless I permit it" -- is revealing about his intentions.
+
+---
+
+## Handout 2: The Vault Inscription
+
+**When to give:** Session 1, when the party reaches the altar stone at the base of the shaft.
+
+**How to present:** Draw the runes on rough paper or a stone-colored card. The rune row should be visually clear; the inscription below it in a different, older-looking script. A DC 15 History or Religion check (or a conversation with Thusnelda in Session 3) reveals the inscription's full meaning.
+
+---
+
+> TIWAZ --- HAGALAZ --- NAUDHIZ --- ISA --- OTHALAN
+>
+> *War* --- *Disruption* --- *Need* --- *Stillness* --- *Ancestral Land*
+>
+> ---
+>
+> *Here lies the God-Killer, the Spear of Broken Oaths, sealed by the blood of heroes. May it never taste sunlight again.*
+>
+> *Forged in vengeance. Quenched in divine blood. The son of Mars fell here. His father's wrath lingers still.*
+>
+> ---
+>
+> *(Scratched at the base, as if done in haste:)*
+>
+> DO NOT WAKE WHAT SLEEPS HERE.
+
+---
+
+**What it reveals:** The spear is an artifact of violence against a divine lineage. It was deliberately sealed here. Someone wanted it found by no one.
+
+---
+
+## Handout 3: Omens Observed
+
+**When to give:** Session 1 pre-session or opening scene, as a physical prop that establishes the world's current state.
+
+**How to present:** An index card in the *haruspex*'s handwriting. Treat it as an official report; it has that register.
+
+---
+
+> AUSPICIA ADVERSA -- COHORTIS XIV LEGIO
+>
+> The following signs have been observed in the seven days preceding this report:
+>
+> - All camp dogs died at midnight on the third day. No visible cause.
+> - Sacrificial sheep presented black livers at both morning observations.
+> - Ravens observed flying reversed pattern over the *principia* on two occasions.
+> - Springs in the northeast sector run red (iron contamination suspected; source unknown).
+> - Night sentries report shadows without bodies moving along the east palisade.
+> - Legionaries on patrol report distant war-horns; no enemy force has been located.
+>
+> The augury is not favorable. I advise against major operations until expiation is performed.
+>
+> *Haruspex Gaius Paterculus, in the consulship of Rufus and Quintillus*
+
+---
+
+**What it reveals:** The professional religious officer of the fort has formally documented that something is wrong. This is not rumor; it is official record. The Legate has presumably seen this and proceeded anyway.
+
+---
+
+## Handout 4: The Tribune's Sealed Orders
+
+**When to give:** Session 2, when Tribune Lucius produces his credentials or when the party investigates his authority.
+
+**How to present:** Use a wax seal impression if possible (press a ring into clay or wax, let dry). The document is authentic: these are real senatorial orders.
+
+---
+
+> SENATUS POPULUSQUE ROMANUS
+>
+> By authority of the Senate and the consulship of Lucius Fulvius Rufus and Marcus Plautius Quintillus:
+>
+> Tribune Lucius Valerius Maximus is hereby empowered to act in the Senate's name in all matters pertaining to the artifact recovered at Fort Vindolanda.
+>
+> All military personnel are ordered to render full assistance. The Legate's command is suspended pending senatorial review.
+>
+> *In nomine Senatus Populique Romani*
+
+---
+
+**What it reveals:** This document is real and legally binding. The Tribune has legitimate authority that supersedes the Legate's command. The party faces a genuine conflict between their direct superior and the Senate.
+
+---
+
+## Handout 5: The Encoded Letter
+
+**When to give:** Session 2, when the party searches the Tribune's quarters (DC 14 Investigation to locate).
+
+**How to present:** Write the encoded version on aged paper (tea-stained, dried). Include a note on the back: "Caesar cipher, shift 3." Players can decode with DC 14 Intelligence, or with advantage if they have proficiency with Thieves' Tools or explicitly have cipher knowledge.
+
+---
+
+**Encoded (write this for players to decode):**
+
+> Cqn arcrxvpe expde: Aqr xqrjxbqe jcbq. Dkb jcbq xrrno Kbc. Dkb jcbq eba Kbe kbbi ecba kbi. Ebo jcbq. Ebo rea ebo. M.J.E.
+
+**Plaintext (what it says when decoded):**
+
+> *The artifact must not reach Rome. By any means necessary. Our mutual friend's ambitions depend on its permanent removal. You know what to do.*
+>
+> *-- G.C.B.*
+
+---
+
+**What it reveals:** Someone with the initials G.C.B. is directing the Tribune. The Tribune is not working for the Senate's legitimate interest; he is working for a private patron who wants the spear destroyed before it complicates something larger.
+
+---
+
+## Handout 6: Thusnelda's Map
+
+**When to give:** Session 3, when Thusnelda agrees to guide the party to the sacred grove.
+
+**How to present:** Hand-drawn, on rough paper or torn parchment. Never use clean geometric shapes. The lines should be organic, slightly uncertain. The smudge is deliberate.
+
+---
+
+*The map shows:*
+
+- Three rivers, drawn as irregular lines. The middle one has a river crossing marked with two parallel lines (a shallow ford).
+- A circle of seven standing stones, labeled with rune-shapes the party recognizes from the vault inscription.
+- A smudge where a fourth river would be -- deliberately ambiguous. The ink is heavier here, as if drawn over, then partially erased.
+- At the forest's heart: a crossed-spear warning symbol.
+- At the map's bottom edge, in Germanic script (the *haruspex* or a character with Goblin language proficiency can read it):
+
+> *Mannaz raidho wunjo* -- Man. Journey. Joy.
+>
+> *(Or: "The man who makes this journey finds what he seeks.")*
+
+---
+
+**What it reveals:** The grove is real and can be found. The fourth river is either a mistake, a missing feature, or something Thusnelda knows but did not mark. The warning at the forest's heart is not metaphorical.
+
+---
+
+## Handout 7: The Bloody Message
+
+**When to give:** Session 3, when the party finds the message carved into a tree at the edge of their camp.
+
+**How to present:** Write on paper soaked in strong tea and dried, with torn edges. The Latin inscription is deep and clear; the line below it is scratched shallowly, as if done with a fingernail.
+
+---
+
+> MARS VIDET OMNIA
+>
+> *(Mars sees all)*
+>
+> ---
+>
+> *I did not want to do this.*
+
+---
+
+**What it reveals:** Someone in the party -- a PC or NPC under corruption's influence -- carved this message without full awareness or against their will. The Latin is too clean and deliberate to be the second line; the second line was added separately, by a hand that was barely in control.
+
+---
+
+## Handout 8: Senator Brutus' Correspondence
+
+**When to give:** Session 4, in the Senate archive (DC 15 Investigation to locate the relevant file).
+
+**How to present:** An official-looking document with Brutus's seal, then the handwritten note in the margin in clearly different handwriting.
+
+---
+
+> PRIVATE CORRESPONDENCE -- SEAL OF G. CASSIUS BRUTUS
+>
+> *The frontier matter is resolved. Our man has instructions. The artifact will not complicate the Triumph as feared. I trust to your discretion in the matter of our witnesses -- loose threads are the enemy of all great projects.*
+>
+> *Regarding the Triumph itself: the arrangements are complete. The instrument is consecrated. What was broken will be made whole again in time for the procession.*
+>
+> *Roma semper resurget.*
+>
+> -- G.C.B.
+>
+> ---
+>
+> *[Note in margin, different handwriting:]*
+>
+> *Witnesses = the party.*
+
+---
+
+**What it reveals:** Brutus considers the party loose threads to be eliminated before the Triumph. "The instrument is consecrated" refers to the spear; he has it and has done something to it. "What was broken will be made whole" is either about the spear or about his political plans.
+
+---
+
+## Handout 9: The Triumph Programme
+
+**When to give:** Session 4, available publicly in Rome -- any character in the city can obtain one from a crier or posted announcement.
+
+**How to present:** Printed on clean paper in a formal typeface, like a public announcement. The scrawled informant's note at the bottom is added in different handwriting.
+
+---
+
+> TRIUMPH OF IMPERATOR MARCUS AURELIUS
+>
+> Honoring Victories on the Germanic Frontier
+>
+> THE KALENDS OF THE MONTH OF OCTOBER
+>
+> **PROCESSIONAL ORDER:**
+>
+> *Dawn:* Sacrifice at the Temple of Jupiter Optimus Maximus
+>
+> *First hour:* Senate in formal procession, Capitoline to Forum
+>
+> *Second hour:* Military prisoners displayed -- Germanic chieftains
+>
+> *Third hour:* The Emperor's chariot, via Sacra to the Forum
+>
+> *Fourth hour:* Games, Circus Maximus -- open to all citizens
+>
+> *All citizens of Rome are invited to honor the Emperor's victory over the Germanic barbarians.*
+
+---
+
+*[Scrawled note from an informant at the bottom edge, in cramped handwriting:]*
+
+> *Brutus' villa: unusual traffic last night. Four men, dark cloaks, carrying something long, wrapped.*
+
+---
+
+**What it reveals:** The Triumph is a public event with a precise schedule. The informant's note places the spear at Brutus's villa the night before. The party has a timeline: they must act before the procession reaches the Forum.
+
+---
+
+## Handout 10: The Mark of Mars
+
+**When to give:** Session 5, at the very end, after the final confrontation. Give one card to each player.
+
+**How to present:** A small card per player, simply formatted. This is a keepsake as much as a game mechanic.
+
+---
+
+> THE MARK OF MARS
+>
+> *This character has stood before a god of war and lived.*
+>
+> ---
+>
+> For the remainder of their days:
+>
+> - Advantage on Intimidation checks. Other soldiers see something in them they cannot name.
+> - Once per long rest: ask the DM "What does Mars want from this situation?" and receive an honest answer.
+>
+> In exchange: Mars may call on them. Once. At his choosing.
+
+---
+
+---
+
+## Handout 11: Arena Weapon Cards
+
+**When to give:** Session 5, Scene 2. Place them face-down on the table. Flip each face-up when the party can examine them. Players can claim a weapon as a bonus action.
+
+**How to present:** One card per weapon. Index cards work well.
+
+---
+
+**GLADIUS OF ACHILLES**
+
+*Taken from a hero who chose glory over survival.*
+
++2 weapon. Advantage on attack rolls.
+
+Cost: Vulnerability to piercing damage (the price of arrogance).
+
+---
+
+**SHIELD OF HORATIUS**
+
+*Carried at the Tiber bridge by a man who held alone.*
+
++3 AC. As a reaction: impose disadvantage on one attack per round.
+
+Cost: Cannot be used with a two-handed weapon.
+
+---
+
+**SPEAR OF LEONIDAS**
+
+*Three hundred held. None survived. The spear remembers.*
+
+Reach 10 ft. +1d10 damage if you have not moved this turn.
+
+Cost: At 0 HP, you stabilize automatically once per combat. (The price: Mars notices your will to survive and tests it.)
+
+---
+
+---
+
+## Player Tracking Sheet
+
+*Copy one per player. Designed to be filled in by hand during play.*
+
+---
+
+**Character name:** _________________________ **Session:** _______
+
+**Current corruption stage (circle):** 0 -- 1 -- 2 -- 3 -- 4 -- 5
+
+**Divine standing:** Favored / Neutral / Cursed (circle one) **God:** _________________
+
+**NPCs met this session:**
+
+| Name | Role | Last known status |
+|---|---|---|
+| | | |
+| | | |
+| | | |
+| | | |
+
+**Key decision made this session:**
+
+_____________________________________________________________
+
+_____________________________________________________________
+
+**One thing your character now knows that they didn't before:**
+
+_____________________________________________________________
+
+**Corruption delta this session:** +___ / -___
+
+**Fatum (your fate statement, from Session 0):**
+
+_____________________________________________________________
+
+**Is it closer to being tested? Y / N -- Notes:**
+
+_____________________________________________________________
+
+---
+
+## DM Quick Reference: Single Page
+
+*Everything you need to run a session without flipping chapters.*
+
+---
+
+### NPC OGAS Summary
+
+| NPC | Objective | Goal | Agenda | Secret |
+|---|---|---|---|---|
+| **Corvinus** | Consulship | Possess the spear | Use it for Senate favor | Brutus owns his gambling debts |
+| **Cassia** | Prevent divine catastrophe | Destroy the spear | Guide the party without forcing them | She is Mars' daughter -- can feel the spear |
+| **Varro** | Protect his soldiers | Keep the party alive | Quietly arm trusted men near the spear | Knows more about Corvinus's debts than he lets on |
+| **Tribune Lucius** | Complete Brutus's commission | Destroy the spear | Look legitimate while doing it | He's afraid of what the spear is |
+| **Vercingetorix** | Protect his tribe | Reclaim the sacred grove | Ally with the party against Corvinus | Thusnelda is his sister -- he sent her to the fort deliberately |
+| **Brutus** | Overthrow Marcus Aurelius | Consecrate the spear for his ritual | Eliminate witnesses (the party) | The Triumph is his assassination attempt |
+| **Thusnelda** | Seal the spear permanently | Return it to the grove | Help the party reach the grove | Carries the sealing rite in her memory -- she is the key |
+
+---
+
+### Corruption Rules Summary
+
+| Stage | Name | Mechanical effect |
+|---|---|---|
+| 0 | Unmarked | None |
+| 1 | Touched | Disturbing dreams; no mechanical penalty |
+| 2 | Marked | Disadvantage on Wisdom saves |
+| 3 | Stained | DC 12 Wisdom save to retreat from combat |
+| 4 | Claimed | DC 14 Wisdom save to avoid attacking the nearest creature when below half HP |
+| 5 | Consumed | Fully corrupted; becomes a Mars-driven NPC |
+
+**Gaining corruption:** Direct contact with the spear (1 stage), failing a Wisdom save when the spear's influence is active (1 stage), sleeping with the spear nearby for three nights without Lemuria observance (1 stage).
+
+**Losing corruption:** Full Lemuria observance before a rest (possible -1 stage, DC 14 Wisdom check), completing the grove ritual (reduces to 0), divine intervention (DM discretion).
+
+---
+
+### Spear of Mars Properties
+
+**+2 weapon** | 1d8 piercing + 1d8 necrotic damage
+
+**Attunement curse:** Attuning the spear begins corruption at Stage 1. Each dawn while attuned: DC 12 Wisdom save or gain 1 stage.
+
+**Corruption aura:** Any creature that touches the spear without attunement makes a DC 10 Wisdom save or is Frightened of Mars for 1 minute.
+
+**Destruction:** Cannot be destroyed by mortal means. Can only be permanently sealed at the sacred grove via the Germanic ritual (Thusnelda knows the rite).
+
+---
+
+### Three Clue Rule Checklist
+
+Before each session, confirm each key revelation has at least three paths to discovery:
+
+- Session 1: The spear is corrupting --- Omens (Handout 3) + Cassia's warning + Thusnelda's fear
+- Session 2: Tribune works for Brutus --- Encoded letter (Handout 5) + Tribune's behavior under pressure + Cassia's reading
+- Session 3: Brutus plans assassination --- Bloody message (Handout 7) + informant in Rome + archive records
+- Session 4: Spear is at Brutus's villa --- Informant note (Handout 9) + Tribune's testimony + Cassia's vision
+- Session 5: Sealing requires sacrifice --- Thusnelda's ritual + grove inscription + Mars's direct communication
+
+---
+
+### Session Structure Checklist
+
+Each session should include:
+
+- [ ] A strong opening (in-medias-res or immediate tension)
+- [ ] One scene that advances the main plot
+- [ ] One scene that develops at least one NPC relationship
+- [ ] One scene that tests at least one character's Fatum
+- [ ] A cliffhanger, revelation, or irreversible choice at the close
+- [ ] Corruption check opportunity (contact, temptation, or prevention)

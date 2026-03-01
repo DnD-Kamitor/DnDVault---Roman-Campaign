@@ -2,15 +2,19 @@
 
 When your character attempts to recall information during play, your GM will call for an ability check. The difficulty reflects how specialized or obscure the knowledge is. This chapter tells you what your character actually knows at each level of that check.
 
-**How to use this chapter:** Before the campaign begins, read the DC 13 entries for every category. Those represent baseline knowledge any Roman soldier or educated provincial would carry without thinking. The DC 15 and DC 17 entries are available to you too, but read them as what your character *could* recall under pressure, with effort, if they were trained in that area.
+**How to use this chapter:** Each category has three layers. The first layer is always visible: read it now, before the campaign, as baseline knowledge your character carries without effort. The collapsible sections below it open when you succeed on the listed check at the table.
 
-The collapsible sections below are arranged by check difficulty. Click to expand each tier.
+Read the open text for every category before Session 1. It is not secret: it is what your character simply knows. The collapsed sections represent what you might recall under pressure, given training or experience in that area.
+
+*The collapsible sections below are arranged by check difficulty. Click to expand each tier.*
 
 ---
 
 ## Roman Military Lore
 
 *Ability check: Intelligence (History)*
+
+The Roman legion is the most effective military force in the world and you are part of it. You know this not from pride but from the daily experience of what the machine around you can do. You know the chain of command by reflex, the fort layout by muscle memory, and the names of the major Germanic defeats by the way veterans go quiet when someone brings them up. Three things every soldier knows without being taught: the Teutoburg Forest cost Rome three legions and the Emperor's sleep for the rest of his life; the Marcomanni have been pressing the Danube since before you enlisted; and the *aquila* -- the legion's eagle standard -- is never, under any circumstances, surrendered.
 
 <details>
 <summary><strong>DC 13 — What any soldier knows</strong></summary>
@@ -61,6 +65,8 @@ The *decimation* penalty (executing one in ten soldiers after a unit fails): off
 
 *Ability check: Intelligence (History) or Wisdom (Insight)*
 
+The gods are real and they are paying attention. You have known this since childhood. Roman religion is not primarily about belief; it is about maintenance. The relationship between mortals and gods is *do ut des*: I give so that you give. You make offerings, keep your vows, observe the correct festivals, and in return the gods hold up their end. When you sacrifice at the camp altar each morning, you are not performing a ritual for comfort; you are doing the practical work of keeping divine favor active. The Capitoline Triad -- Jupiter, Juno, and Minerva -- are the official gods of Rome. Mars is the god your unit actually prays to before combat. You never swear a false oath to Jupiter. The last soldier who did that in front of witnesses was found dead the following morning, and not one person in the century was surprised.
+
 <details>
 <summary><strong>DC 13 — What any Roman knows</strong></summary>
 
@@ -106,6 +112,8 @@ Technical augury: the flight of birds is evaluated based on direction (right/lef
 
 *Ability check: Intelligence (Religion)*
 
+You are a soldier serving on the Germanic frontier in the month of April. Mars is your patron god in the most literal professional sense. His month is March; his festival, the *Quinquatria*, was five weeks ago; your weapons were blessed in his name at the last *Armilustrium*. You do not worship Mars the way a civilian worships their household gods -- you serve under him the way you serve under a commanding officer. He is present in the impact of a pilum, in the discipline of formation, in the specific relief of still being alive after a hard day. The frontier soldiers who dismiss religion still observe the *Quinquatria*. They would not explain why. They simply do.
+
 <details>
 <summary><strong>DC 13 — What any Roman soldier knows</strong></summary>
 
@@ -148,6 +156,8 @@ The theological debate among educated Romans about whether the gods are genuinel
 ## Germanic Tribes
 
 *Ability check: Intelligence (History) or Wisdom (Insight)*
+
+You are stationed on the Germanic frontier. You have opinions about the people on the other side of the palisade. Most of your opinions are wrong in ways that are useful to know. The Romans who die soonest on the frontier are the ones who assumed the Germans were just Romans without roads. They are not. They have their own logic, their own honor system, their own relationship with their gods -- and some of them know more about your fort's patrol schedule than your centurion does. The Teutoburg Forest disaster (9 AD, 160 years ago) cost Rome three legions. Soldiers still tell the story. The lesson is not that Germans are terrifying; the lesson is that a Roman who stops paying attention is already dead.
 
 <details>
 <summary><strong>DC 13 — What any frontier soldier knows</strong></summary>
@@ -196,6 +206,8 @@ Germanic runes are not merely writing; they are understood as having inherent po
 
 *Ability check: Intelligence (History) or Wisdom (Survival)*
 
+The frontier is not where Rome ends. It is where you are. You know the *Limes* the way you know the calluses on your palms: in exhaustive, functional detail. You know which watchtower has the loose bottom step, which section of road floods in spring, which stretch of forest smells different because the trees are wrong -- too dense, too dark, no birdsong. The traders who cross legally bring grain, amber, furs, and information. The ones who cross without authorization bring problems. A soldier who crosses without orders brings a court martial and, if he is unlucky, a cross. The line between here and there is not philosophical. It is a ditch, a palisade, and a watchfire, and everything beyond it is actively trying to read your patrol schedule.
+
 <details>
 <summary><strong>DC 13 — What any soldier posted to the frontier knows</strong></summary>
 
@@ -238,6 +250,8 @@ The relationship between Roman frontier policy and the internal politics of Germ
 ## Roman Law and Politics
 
 *Ability check: Intelligence (History)*
+
+You know less about the Senate than you think you do, and more than a civilian would. You know that the Emperor holds his power through the army, the Senate, and the grace of the gods, roughly in that order. You know that a Triumph is real -- you may have witnessed one -- and that the right to hold one is a formal declaration tied to specific military achievements, not an automatic grant. You know what treason means in practical terms: you said something wrong in front of someone who remembered it. The law exists, it is real, and it applies to soldiers as well as senators. What you do not know, and should not pretend to know, is what goes on inside the Curia on any given afternoon. The Senate is not your world. It affects your world. That is a meaningful distinction.
 
 <details>
 <summary><strong>DC 13 — What any Roman citizen or educated provincial knows</strong></summary>
@@ -282,6 +296,8 @@ The historical precedent for senatorial condemnation: the Senate can pass a *dam
 
 *Ability check: Intelligence (Nature) or Wisdom (Medicine)*
 
+You have watched the *medicus* work. If you have served long enough, you have held someone still while he worked. You know what a wound going bad looks like -- the smell is the first sign, before the discoloration and before the fever -- and you know that the difference between a man who survives a stomach wound and one who does not is partly luck and partly how fast the *medicus* gets there. Soldiers share practical knowledge: yarrow stops bleeding, willow bark reduces fever, the white mushrooms by the creek are fine and the red ones will kill you by morning. None of this is medicine. It is the minimum. Actual medicine is what the *medicus* does, and you watch him do it and you remember, because on a bad day you may need to do it yourself.
+
 <details>
 <summary><strong>DC 13 — What any soldier who has served near a field hospital knows</strong></summary>
 
@@ -325,6 +341,8 @@ The pharmacological distinction between *venena bona* (good poisons, i.e., medic
 
 *Ability check: Wisdom (Insight) or Intelligence (Religion)*
 
+Every Roman soldier watches three things without being taught to: where lightning falls relative to the camp, which direction the wolf ran when it crossed your path, and whether the sacred fire at the altar was burning or out at first light. These are not superstitions. They are data points. The gods communicate through the physical world, and they always have. The question is whether you are paying attention. A crow on your left when you leave the gate is not nothing. Whether it matters depends on what you are about to do and how seriously you take the relationship. Most soldiers pay enough attention to notice, then make a judgment call. The ones who ignore the signs entirely tend to become cautionary examples.
+
 <details>
 <summary><strong>DC 13 — What any Roman who takes religion seriously knows</strong></summary>
 
@@ -365,5 +383,93 @@ The official Roman position that all the old augural signs are real and meaningf
 The category of *monstra* (omens so severe they require immediate action): a Roman army that experiences a significant *monstrum* in the field (a statue of the standards weeping, a sacred fire going out spontaneously, the sacrifice failing in specific dramatic ways) is obligated to halt operations and perform full expiation. A commander who overrides this faces significant opposition from both soldiers and officers. The religious obligation is real even for those who are privately skeptical, because the soldiers believe and their effectiveness depends on proper observance.
 
 The distinction between unfavorable omens that advise delay versus those that advise abandonment: not all bad omens mean "do not proceed." Some mean "proceed differently" or "proceed with additional precaution." Reading this distinction requires both training and contextual judgment. A wise augur does not simply say "bad omen, stop everything"; they interpret the specific form of the sign against the specific action proposed.
+
+</details>
+
+---
+
+## The Antonine Plague
+
+*Ability check: Intelligence (Medicine) or Wisdom (Insight)*
+
+You have lived with the plague for a decade. Not personally -- you are still alive -- but it has been present. The Antonine Plague arrived from the east in 166 AD, carried back by Lucius Verus's army after the Parthian campaign. It has moved through the empire in waves since then, and each wave strikes differently: different cities, different legions, different seasons. You know soldiers who died of it. You know centuries that were reduced to skeleton crews before replacements arrived. You do not know its cause -- no one does -- and you do not know whether the man coughing in the tent next to you has it or has a cold. That uncertainty is part of daily life on the frontier in 175 AD.
+
+<details>
+<summary><strong>DC 13 — What any soldier in the army knows</strong></summary>
+
+The plague arrived from the east ten years ago and has not left. It moves in waves: a bad season, then quiet, then another outbreak somewhere else. No one understands why it strikes some garrisons hard and passes others without significant casualties.
+
+Recognizable symptoms: high fever for several days, thirst, diarrhea, inflamed throat, then pustules or a rash appearing on the skin. The rash distinguishes this disease from ordinary fever. Most soldiers who see the rash understand what it means.
+
+Fatality rate: variable. In badly struck units, one soldier in four does not survive. In mild outbreaks, most recover in two to three weeks. Age and previous health seem to matter; soldiers who are already malnourished or wounded are more vulnerable.
+
+"Plague-touched" as a social term: a soldier who survived the plague carries a visible survivor's mark in some cases (scarring from the pustules) and an invisible social mark. Other soldiers are instinctively wary. This is not irrational; a survivor may be immune, or may still carry something. The social dynamics shift in a quarantined unit.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — What a unit commander or medical orderly learns managing an outbreak</strong></summary>
+
+Army procedure when an outbreak is confirmed: the affected soldiers are separated from the healthy as quickly as possible. Their clothing and bedding are burned. Their food and water supply is replaced and not shared with the wider unit. Movement of the quarantined sub-unit is restricted. These procedures reduce spread significantly, though they were developed through observation rather than understanding of why they work.
+
+Some units have been harder hit than others. The pattern suggests density (crowded barracks suffer more), water source (units sharing water with sick animals or downstream from affected settlements fare worse), and morale (units with low morale and poor nutrition appear more vulnerable). None of these connections are officially documented; they are observed by experienced commanders.
+
+The administrative problem: a unit at 60% strength is not deployable for sustained operations. The army has responded with emergency recruitment, with accelerated promotion of survivors (who appear immune), and with creative reorganization of depleted units. A century of 50 men is not a century, but it functions if its centurion is competent.
+
+The economic problem: the plague has reduced the agricultural labor force in affected provinces significantly, driving grain prices up and creating supply chain difficulties for the frontier legions. A soldier paying attention to supply problems is observing a downstream effect of the plague.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — What a physician, senior administrator, or deeply informed observer knows</strong></summary>
+
+Galen of Pergamum, the most accomplished physician in the Roman world, was present in Rome during the initial outbreak in 166 AD. He fled the city, returned when summoned by Marcus Aurelius, and has written descriptions of the disease that are now the closest thing to an official medical account. His descriptions match the symptoms recognizable to anyone who has seen the plague. His treatment protocols -- rest, limited diet, maintaining fluid intake -- represent the best medicine available. He does not know the cause.
+
+The theological debate: three competing explanations circulate among educated Romans. First, the plague is a punishment from Apollo for the Roman sack of his temple at Seleucia (on the Parthian campaign); this is the official position implied by the expiation rites performed. Second, it is simply a natural phenomenon of unknown cause, a position taken by Stoic philosophers who accept it as part of the natural order. Third, various minority religious groups (including some Christian communities) connect it to their own theological frameworks. All three positions coexist in the same garrison.
+
+The scale, which soldiers rarely hear stated plainly: the Antonine Plague may have killed five million people across the empire over its first decade. It has reduced the total population of some regions by 10-15%. The army has lost significant fighting strength, which is partly why Marcus Aurelius has had to recruit from unusual sources (including freed slaves and Germanic foederati). The plague is a significant reason why the Danube frontier has been under pressure; fewer soldiers to hold it.
+
+</details>
+
+---
+
+## Roman Engineering
+
+*Ability check: Intelligence (History) or Strength (Athletics)*
+
+You build things. That is not a metaphor. A Roman soldier is a soldier second and a laborer first: your unit has dug more miles of ditch, laid more feet of road, raised more timber walls, and filled more sandbags than any civilian contractor in the province. You know the *castra* -- the marching camp -- in your hands: the precise angle of the stakes, the depth of the ditch, the orientation (gate always faces east when terrain allows). You have helped build at least two bridges and you have opinions about the ones that were done wrong. The army builds because it must move, and it builds well because Rome requires that things last. A soldier who cannot swing a pick and handle a saw is a soldier who slows the column.
+
+<details>
+<summary><strong>DC 13 — What any legionary knows from daily service</strong></summary>
+
+The marching camp (*castra*): a full cohort can construct a standard marching camp in four to six hours on decent ground. The shape is a playing-card rectangle with rounded corners; one gate on each side; a ditch outside the palisade wall; internal layout standardized so any soldier can find the command tent, the latrines, and the hospital in the dark. Every legionary carries two stakes (*pila muralia*) as standard kit. They go into the palisade when camp is made.
+
+Roads: the Roman road goes straight unless a straight line is impossible. Foundation first (large stones), then gravel fill, then the hard surface (*via strata*, from which our word "street"). A road built correctly drains to the sides and lasts a century. A road built badly floods and collapses within a decade. Legionaries build the foundation; specialist engineers design the routing. Most roads are crowned (highest in the center) to encourage drainage.
+
+Bridge construction: the Roman timber trestle bridge can be assembled across a river of moderate width in one to three days by a prepared legion with the right materials pre-cut. The permanent stone bridge requires more time and resources but lasts indefinitely. A soldier who has helped build a bridge understands timber-frame joinery well enough to identify structural weaknesses in enemy fortifications.
+
+Standard tools carried by a legion: picks, shovels, axes, saws, measuring cords, plumb bobs, and levels. The century's equipment cart carries heavier tools. An engineer officer (*architectus*) directs major construction.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — What a Faber, construction specialist, or multi-year veteran knows</strong></summary>
+
+Identifying structural weakness in a wall: the mortar joint pattern matters. A wall built with regular horizontal courses is stronger than one with random joints; a wall with vertical joints running all the way up is a weak wall. The base of a wall is the point of maximum stress under attack; a wall with a thickened base (*talus*) resists undermining better than one without. A soldier with this knowledge can look at an enemy fortification and identify the best point to concentrate pressure.
+
+Aqueduct gradient: water flows because of slope, not force. An aqueduct that runs at too steep an angle loses water to splash and erosion; one that runs too flat stagnates. The correct gradient is subtle, approximately one foot of drop per mile, maintained over the entire length. The survey required to achieve this is precise and technically demanding. Aqueducts represent some of the most sophisticated engineering in the Roman world, and frontier soldiers know that their water supply depends on them holding.
+
+Fortification against specific threats: a palisade wall holds well against infantry assault and arrows but is vulnerable to fire. A stone wall resists fire and direct assault but requires significantly longer to build. An earthen rampart with a palisade on top combines reasonable speed with reasonable durability; it is the standard for permanent frontier installations. The ditch in front of the wall matters as much as the wall itself; a ditch two feet deep with sharpened stakes (*lilia*) at the bottom stops a charge.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — What an engineer officer, siege specialist, or architectus knows</strong></summary>
+
+Siege machinery: the three primary Roman siege engines are the *ballista* (tension-powered bolt-thrower, accurate to 400 yards, requires a crew of two to operate and ten to transport), the *onager* (torsion-powered stone-thrower, shorter range, devastating against fortifications, crew of five), and the *scorpion* (smaller bolt-thrower, crew of two, used for direct-fire anti-personnel work). Each requires specialist knowledge to assemble, calibrate, and maintain. The bolts and stones are ammunition that must be pre-positioned.
+
+Undermining a wall: dig beneath the foundation, support the tunnel with timber props, pack the tunnel with combustible material, then fire it. The collapse of the supports brings down the wall section above. Counter-measures include digging a counter-tunnel to detect the approach (the vibrations are audible), and building the wall's base wider and deeper to make undermining impractical. A character with engineering knowledge and appropriate tools can attempt to undermine a wall in 24-72 hours depending on wall thickness and soil conditions.
+
+The *testudo* used in siege: the tortoise formation (shields raised overhead to create a shell) is not only a defensive formation -- it is a work platform. Soldiers in *testudo* can approach walls under missile fire, and the locked-shield roof provides enough protection to allow the front ranks to work on a gate or wall section with tools. Breaking the *testudo* requires either a heavy object dropped from above or disciplined flanking fire that forces the shields to separate. An officer who understands this can defend against it or exploit it.
 
 </details>

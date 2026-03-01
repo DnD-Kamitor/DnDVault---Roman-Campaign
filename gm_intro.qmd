@@ -381,3 +381,137 @@ How each major NPC responds to the three most likely party approaches.
 | **Engage his argument about Rome** | Genuinely engages. This is his favorite topic. He will be persuasive. He will almost be right. |
 | **Threaten him with legal action** | Completely unconcerned. He has done nothing illegal yet. *"Bring your evidence to the Senate. I look forward to the debate."* |
 | **Physical confrontation** | Does not fight personally. Calls guards immediately, then disappears. Never in the same room as violence he ordered. |
+
+---
+
+## Lex Arcana: Adapted Systems for This Campaign
+
+*Lex Arcana* is an Italian tabletop RPG set in an alternate Rome where the empire never fell. Its investigative framework and virtue mechanics are more suited to Roman play than standard D&D structures. The four systems below are adapted from *Lex Arcana* and integrated into this campaign. Read this section before Session 0; the systems become relevant from Session 1 onward.
+
+---
+
+### The *Exploratores Extraordinarii*: Party Authority Structure
+
+In *Lex Arcana*, the party operates as members of the *Cohors Auxiliaria Arcana*, imperial investigators with authority crossing provincial lines. This campaign uses a functionally identical structure.
+
+After Session 1, Corvinus formalizes the party's designation as *Exploratores Extraordinarii* (special investigators). He does this for his own reasons: it gives him deniability if their actions cause political problems, and it gives them enough authority to act without constant supervision. This is standard practice for a commander who needs things done but does not want to know exactly how they were done.
+
+**What this authority grants:**
+
+- The right to investigate without explaining themselves to local commanders below the rank of legate
+- Access to temple records and military archives that are normally closed to line soldiers
+- The right to detain persons of interest for questioning (not indefinitely; Roman law applies)
+- Official status that makes it illegal for most people to obstruct them
+
+**What this authority costs:**
+
+- They are accountable directly to the Senate if their actions are questioned (which Brutus exploits in Session 4)
+- Any significant failure is documented and attributed to them, not to Corvinus
+- They cannot claim ignorance: if they knew something was wrong and did nothing, they are liable
+
+**In play:** Introduce this designation formally at the start of Session 2. Corvinus hands them a sealed document. He does not explain its full implications. The players should discover the complications of the designation over time, not all at once.
+
+---
+
+### Roman Virtues as Character Mechanics
+
+*Lex Arcana* uses seven Roman virtues as personality mechanics. This campaign adapts the same system.
+
+**The seven virtues:**
+
+| Virtue | Latin | What it means in play |
+|---|---|---|
+| *Virtus* | courage and excellence | Standing your ground when retreat is tactically safer; setting the standard in formation |
+| *Pietas* | duty to gods, family, Rome | Observing religious obligations; protecting civilians; not abandoning your unit |
+| *Fides* | loyalty and trustworthiness | Keeping your word; not betraying sources or allies; honoring oaths |
+| *Iustitia* | justice and fairness | Applying Roman law correctly; not punishing the innocent; proportionate response |
+| *Clementia* | mercy and restraint | Accepting surrender; not executing prisoners without cause; restraint in victory |
+| *Frugalitas* | discipline and simplicity | Not seeking personal enrichment from official actions; controlling appetites; resourcefulness |
+| *Dignitas* | dignity and reputation | Maintaining your honor in public; not behaving in ways that shame your rank or unit |
+
+**How the mechanic works:**
+
+At Session 0, each player declares their character's primary virtue: the one they aspire to most and the one they struggle with most (these can be the same). This declaration is for the DM's records. The players do not need to publicize it.
+
+**Advantage trigger:** Once per session, when a character acts clearly in accordance with their declared primary virtue at significant personal cost, they gain advantage on one ability check, attack roll, or saving throw of their choice within the next ten minutes of in-game time. The player declares this before rolling. The DM has final say on whether the action qualifies.
+
+**Atonement mechanic:** When a character acts clearly against their declared primary virtue in a significant moment (betrays an oath while claiming *Fides*, shows cowardice under circumstances their character should have held the line, etc.), they take -2 to the relevant ability modifier's checks until they perform a public or significant act of atonement. What constitutes atonement depends on the virtue violated and the circumstances.
+
+**DM guidance:** Do not track these mechanically on a spreadsheet. Track them in your session notes. The goal is not to catch players out; it is to create moments where the virtues are tested in ways that feel earned. Signal to players when a virtue moment is approaching, not through narration of the mechanic, but through the situation itself.
+
+---
+
+### Augury as Structured Mini-Game
+
+*Lex Arcana* has a detailed augury system. This adaptation gives the *haruspex* or any character with Religion proficiency a structured way to seek divine guidance.
+
+**When to use:** Once per session. The augury takes 30 minutes of in-game time (a real cost in time-pressured situations). It requires a sacrifice: at minimum, grain and wine; for more reliable results, an animal.
+
+**How it works:**
+
+1. The character declares the specific question. The question must be about a future action: "will this approach succeed," not "what is the enemy doing right now."
+2. Roll Religion (or Intelligence with Religion proficiency). The DC depends on the question's specificity.
+3. The DM answers using the tier table below:
+
+| Roll | What the DM reveals |
+|---|---|
+| DC 13 success | *Auspicia secunda* (favorable signs) or *auspicia adversa* (unfavorable signs): a single-word directional indicator |
+| DC 15 success | *Auspicia clara* (clear signs): what category of obstacle the character should prepare for, without specific detail |
+| DC 17 success | *Auspicia perfecta* (perfect signs): one specific thing that will make the difference between success and failure |
+| Failure | *Auspicia turbata* (troubled signs): the omens are unclear; augury cannot be attempted again until the next session |
+
+**Design note:** The DM should answer honestly within the tier structure. This is not a trap mechanic; it is a resource. A DC 17 result that says "the locked door" is a specific, actionable answer that rewards the player's investment without giving them the entire solution.
+
+**Multiple auguries:** If multiple party members attempt augury on the same question in the same session, only the highest roll counts. The gods are not asked twice.
+
+---
+
+### Fatum: Destiny as Campaign Mechanic
+
+*Lex Arcana* gives each character a *Fatum* (fate statement) at campaign start. This campaign uses the same system.
+
+**At Session 0:** Each player writes a one-sentence fate statement for their character. The sentence must be:
+
+- First-person
+- A prediction about the character's future, not a goal ("I will die in service of something greater than myself," not "I want to become a centurion")
+- Something that could be true or false at campaign end
+- Something the character would believe about themselves
+
+Examples:
+- "I will make a choice that the histories remember."
+- "I will never let another soldier die because I hesitated."
+- "I will see Rome from the inside before I die."
+- "I will choose my family over my duty when it comes to it."
+
+**The DM's responsibility:** Read every Fatum before Session 1 and identify one moment in Sessions 2 through 5 where each character's Fatum is tested. Do not announce this to the player. Simply create the situation; the player will recognize it.
+
+**At Session 5 epilogue:** Each player reads their Fatum aloud. The table collectively decides: did this character fulfill their Fatum, fulfill it in a way they did not expect, betray it, or fail to reach the moment of testing?
+
+- Fulfilled: the character earns a named legacy (recorded in the epilogue narrative)
+- Fulfilled unexpectedly: the character earns the legacy plus one final narrative moment to describe how they discovered what their Fatum actually meant
+- Betrayed: the character's epilogue narrative acknowledges the betrayal; this is not punishment, it is story
+- Untested: the character did not reach their moment; the epilogue is open-ended
+
+**Design note:** The Fatum system works because it gives players authorship over their character's arc without giving them authorship over the plot. The campaign determines what happens; the Fatum determines what it means to each character. These are different things and both are valuable.
+
+---
+
+### Investigation Structure: Three Phases
+
+*Lex Arcana* formalizes investigation into three phases. Add these phase markers to your mental map of Sessions 2, 3, and 4 (the investigation-heavy sessions).
+
+**Phase 1: *Investigatio*** (gather evidence)
+
+The party is finding clues, interviewing witnesses, and observing the situation. In this phase: all investigation-related checks (Investigation, Perception, Insight against NPCs, History to contextualize evidence) are made at normal difficulty. The party cannot effectively take *Actio* until they have at least two confirmed pieces of evidence.
+
+**Phase 2: *Deliberatio*** (analyze and form a theory)
+
+The party steps back from gathering and begins interpreting. This is represented by a short rest or an explicit in-character discussion. During *Deliberatio*, one party member may make a DC 13 Intelligence (Investigation) check to identify which piece of evidence is most significant (the DM confirms or corrects the assessment). The party should exit *Deliberatio* with a working theory about what is happening and who is responsible.
+
+**Phase 3: *Actio*** (act on the theory)
+
+The party acts on their theory. In this phase: if their theory is substantially correct, all ability checks against the primary antagonist or obstacle have a -2 to DC (they know what they're dealing with). If their theory is substantially wrong, the DM introduces one complication that the correct theory would have prepared them to handle.
+
+**Skipping phases:** A party can attempt *Actio* before completing *Investigatio* or *Deliberatio*. When they do, add +3 to all relevant DCs and the DM does not correct their theory before the phase begins. This rule rewards patience without making impatience impossible.
+
+**DM note:** You do not need to announce these phase names to the players. Simply structure each investigation session so that the natural rhythm of play moves through gathering, analysis, and action. The phase markers are a planning tool for you, not a visible mechanic for the table.
