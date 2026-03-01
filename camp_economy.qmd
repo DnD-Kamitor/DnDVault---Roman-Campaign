@@ -1,0 +1,383 @@
+# The Living Camp Economy
+
+*GM's Workbook — Fort Vindolanda*
+
+Fort Vindolanda is not a location the party visits once and leaves behind. It is their base, their home, and in Sessions 1-2 their entire operational world. It should feel alive: its personnel change, its supplies fluctuate, its mood shifts with events.
+
+This chapter provides a structured economy for the fort. Six named traders offer goods and services. Each can upgrade based on what the party brings back from the field. The party's standing with each trader is tracked separately and gates access to their most valuable resources. This connects directly to the reputation system in `reputation.qmd`: reaching "they consider you an ally" with Valeria means she will tell you things a healer tells no one.
+
+---
+
+## The Camp as a Living System
+
+The static supply list approach treats the fort as a shop: players ask what is available, the DM names prices, transactions happen. This works for a one-session stop. It does not work for a base the party will spend two sessions inside.
+
+The living camp approach treats the fort as a community: each trader has a name, a personality, a specific thing they care about, and a personal inventory that changes. The party's actions shape what becomes available. A player who builds a relationship with the blacksmith gets better weapons; a player who ignores the blacksmith gets standard kit.
+
+**Three principles:**
+
+1. **What you bring back matters.** Raw materials from the forest unlock services. Amber, iron ore, medicinal herbs, rune carvings -- each item the party retrieves changes what a trader can offer.
+
+2. **Reputation gates access.** Every trader has a threshold: professional dealings versus genuine trust. Below the threshold they are helpful. Above it they are useful in ways that are not on any official ledger.
+
+3. **The camp level rises.** As the party resolves problems, brings back resources, and demonstrates competence, the fort's overall capability increases. Camp Level 1 is standard military supply. Camp Level 3 reflects a fort functioning at genuine operational excellence.
+
+---
+
+## The Six Camp Traders
+
+### Quartus (Quartermaster)
+
+**Name:** Lucius Aemilius Quartus
+**Role:** Official supply officer, Legio XIV. Responsible for rations, standard equipment, requisition paperwork.
+**Appearance:** A thick-set man of forty with the cautious eyes of someone who has been accused of stealing once and will spend the rest of his life ensuring it never happens again.
+
+**Personality:** Quartus is scrupulously honest by institutional terror. He does not steal from the supply wagons; he does not falsify the ledgers; he does not take bribes from camp merchants. This makes him unusual and, in certain circles, suspicious. He is efficient, humorless, and capable of genuine warmth toward soldiers who treat his work with the respect it deserves.
+
+**What he will say when the party first meets him:** "The official inventory is posted on the board outside. Everything on it, I have. Everything not on it, I do not have and cannot get. If you need something not on the board, speak to the Legate. That is the process."
+
+#### Camp Level 1 Inventory (Session 1 start)
+
+| Item | Available | Cost |
+|---|---|---|
+| *Pilum* (javelin) | Yes, standard issue | 2 *denarii* each, or requisition |
+| *Gladius* (short sword) | Yes, basic grade | 10 *denarii*, or requisition |
+| *Scutum* (infantry shield) | Yes, worn | 8 *denarii*, or requisition |
+| *Lorica segmentata* (plate armour) | Yes, 4 sets available | 40 *denarii*, or officer requisition |
+| *Caliga* (military boots) | Yes | 3 *denarii* |
+| Rations (7 days) | Yes | 2 *denarii* |
+| Rope (50 ft) | Yes | 1 *denarius* |
+| Torch (10) | Yes | 1 *as* each |
+| Medical bandages | Limited (8 sets) | 1 *denarius* per set |
+
+**Note on requisition:** Standard equipment can be requisitioned rather than purchased if the character has a valid military reason. Requisition requires paperwork and is at Corvinus's discretion for large items.
+
+#### Barrier Three: Trusted Access
+
+When the party's standing with Quartus reaches "they owe you something real" or better:
+
+- **Advance warning of supply convoys:** Quartus will tell the party when the next convoy is due, what it carries, and whether anything they requested has been flagged by the senior supply officer in Carnuntum.
+- **Emergency reserves:** A locked storeroom contains 2 sets of officer-grade weapons (+1 quality), 20 days of preserved rations, and a small chest of campaign silver (200 *denarii*). Quartus will access this only for characters he genuinely trusts and only when he judges the situation warrants it.
+- **The real ledger:** The official ledger is accurate. A second document, stored in Quartus's personal quarters, records what the Legate has requisitioned off-book for personal use, including several items of value that were flagged from the ruins excavation. This is not something Quartus volunteers; it is something he will show someone he trusts when he judges the moment has come.
+
+**What triggers Quartus's trust:** Competence in military matters (he respects soldiers who know their equipment); treating his paperwork as a real constraint rather than an obstacle to bypass; bringing back materials that he can officially log and report to the senior supply chain.
+
+---
+
+### Rufus (Blacksmith)
+
+**Name:** Marcus Aurelius Rufus (the coincidence of his first two names with the Emperor's is a source of endless low-level jokes he no longer reacts to)
+**Role:** *Faber ferrarius*, the fort's primary metalworker.
+**Appearance:** A tall, thin man whose hands are twice the size they should be for his frame, scarred from the forge in ways that suggest a history predating his army service.
+
+**Personality:** Rufus came to the legion from civilian craft work in Noricum and has been the fort's blacksmith for nine years. He does not talk much. He makes assessments and states them: this blade is fine; this shield boss will fail; this armour has been repaired wrong and will open at the seam. He is right frequently enough that people have stopped arguing with him.
+
+**What he will say when the party first meets him:** "Show me what you're carrying. I'll tell you whether it needs work."
+
+#### Camp Level 1 Inventory (Sessions 1-2 start)
+
+| Service | Available | Cost |
+|---|---|---|
+| Weapon repair (basic) | Yes | 1 *denarius* per item |
+| Armour repair (basic) | Yes | 3 *denarii* per item |
+| Sharpening | Yes | 5 *asses* per weapon |
+| Arrow/bolt production | Yes, slow (10/day) | 2 *asses* each |
+| Custom weapon modification | No -- not enough quality iron | Unavailable at Level 1 |
+
+#### Camp Level 2 Additions (triggered -- see below)
+
+- Custom grip wrapping (advantage on checks to avoid disarming, 8 hours work): 5 *denarii*
+- Blade weighting for balance (reroll one attack roll per day, take second result): 10 *denarii*
+- Emergency armour fabrication (new piece in 2 days): available if iron ore has been supplied
+
+#### Barrier Three: Trusted Access
+
+When the party's standing with Rufus reaches "they consider you an ally":
+
+- **Germanic iron work:** If the party has brought back iron ore or rune-carved iron items from the forest, Rufus will use Germanic metalworking techniques he does not advertise. These produce weapons with unusual properties: a blade forged with Rufus's interpretation of *tiwaz* (his own understanding, unverified) that the wielder instinctively trusts in difficult moments. Mechanically: once per long rest, a character can treat a failed attack roll as a miss without spending any resource (the blade "finds a line" that was not there).
+- **The origin of his knowledge:** Rufus spent three years trading in Germanic territory before enlisting. He knows more about their metalwork, their religious practices, and their forest settlements than any other Roman in the fort. He will not say this to the party unprompted. He will say it, carefully, to someone he trusts.
+
+**Upgrade trigger for custom work:** The party brings back either iron ore (one load upgrades the camp to Level 2 for metalwork purposes) or an unusually crafted Germanic weapon Rufus can learn from.
+
+---
+
+### Valeria (Medicus)
+
+**Name:** Valeria Severa
+**Role:** The fort's senior medical officer. Unusual for being a woman in a military posting; explains the situation to no one and works with the professional detachment of someone who has had every possible argument about her presence and found all of them uninteresting.
+**Appearance:** Mid-thirties. Dark circles that are not fatigue but concentration. Hands that move with the precision of a person who has been working at small scale for years.
+
+**Personality:** Valeria is not unkind. She is efficient. She has eight beds, three medical orderlies, and a fort of 400 men, and anything that is not immediately relevant to keeping those men functional is noise. She responds well to people who bring her actual information and badly to people who perform being worried without contributing anything useful.
+
+**What she will say when the party first meets her:** "Are you injured or are you here for something else? If you're injured, sit down. If you're here for something else, come back when I'm not busy."
+
+#### Camp Level 1 Inventory (Session 1 start)
+
+| Item/Service | Available | Cost |
+|---|---|---|
+| Healing herbs (basic, +1d4 HP once per rest) | Yes, 6 doses | 2 *denarii* per dose |
+| Wound care (stabilize dying creature, no action) | Yes, service | 5 *denarii* |
+| Fever treatment | Yes | 3 *denarii* |
+| Antitoxin (crude, disadvantage on poison saves reduced to normal) | 2 available | 8 *denarii* each |
+| Surgical assistance | Yes, for wounds that prevent normal healing | Negotiated |
+| Poison identification | No -- insufficient reference texts | Unavailable Level 1 |
+
+#### Camp Level 2 Additions (triggered by medicinal herb supply)
+
+- Willow bark tincture (reduce exhaustion 1 level, 1 use/rest): 4 *denarii*
+- Henbane sedative (humanoid sedation for surgery or interrogation, non-lethal): 15 *denarii*, requires legitimate medical context
+- Basic poison identification: DC 13 Medicine check + Valeria's consult; she can identify common poisons from the knowledge.qmd list
+
+#### Barrier Three: Trusted Access
+
+When the party's standing with Valeria reaches "they owe you something real" or better:
+
+- **Honest assessment of corruption:** Valeria has been watching the corruption mechanic manifest in soldiers who spent time near the ruins before the party arrived. She does not have a theological explanation. She has a clinical one: specific physical symptoms (disturbed sleep patterns, reactive pupils, elevated resting temperature, unusual appetite changes) that she tracks without reporting them upward because she does not know what she would report. She will share this observation, privately, with someone she trusts. This gives the party an early warning system: Valeria can tell them whether a character's corruption is advancing before the mechanical effects fully manifest.
+- **The DC 17 medicine content:** She knows the specific plant-poison information from knowledge.qmd (wolfsbane, hemlock thresholds) as practical information, not scholarship. She will share it with a character she trusts who has a legitimate medical reason to know.
+
+**What triggers Valeria's trust:** Treating her time as valuable; bringing back medicinal herbs from the forest without being asked; asking intelligent questions about the injuries she is treating rather than just requesting supplies.
+
+**Upgrade trigger:** Any bundle of medicinal herbs from the Germanic forest expands her herb stock to Camp Level 2 for medicine purposes.
+
+---
+
+### Haruspex Paterculus (Diviner)
+
+**Name:** Gaius Paterculus
+**Role:** Official *haruspex* of Legio XIV. Author of Handout 3 (the formal omen report).
+**Appearance:** A man of fifty who looks seventy. The omen report in his handwriting is the work of someone who has not slept well in two weeks.
+
+**Personality:** Paterculus is genuinely frightened and genuinely professional about it. He has been a *haruspex* for thirty years. He has seen bad omens before. He has never seen omens this sustained and this consistent. He performs the rituals correctly every morning because the rituals are all he has, and they are not working.
+
+He responds with gratitude to anyone who takes the religious situation seriously. He responds with exhausted dismissal to anyone who treats the omens as decoration or bureaucratic ritual.
+
+**What he will say when the party first meets him:** "The morning sacrifice failed again. I have filed the report. I have performed the *piaculum*. I do not know what else I can do, and I suspect you should be asking that question too."
+
+#### Camp Level 1 Services (Session 1 start)
+
+| Service | Available | Cost |
+|---|---|---|
+| Daily *Augury* (1 per session; honest answer on one yes/no question) | Yes | Requires proper ritual participation (30 min), no *denarii* cost |
+| *Haruspicina* (interpret sacrifice entrails; partial DC 13 Religion result) | Yes | 1 hour + sacrifice animal (2 *denarii*) |
+| Ritual blessing (weapon blessing from the *Quinquatria* ritual, 24-hr +1 on first attack after invoking Mars) | Yes | 30 min, proper prayer required |
+| Identification of omen type (*auspicium*, *prodigium*, or *monstrum*) | Yes | Free; he considers this professionally obligatory |
+
+**Augury in play:** When the party uses the Augury service, Paterculus rolls a DC 13/15/17 Religion check (hidden from players). On DC 13: "will this action lead toward success or failure?" (one word: *felix* or *infaustus*). On DC 15: "what is the nature of the obstacle?" (a one-sentence description of the category of problem, not the specific solution). On DC 17: "what specific thing will make the difference?" (a concrete actionable answer). On failure: *auspicia turbata* -- the signs contradict each other; no answer, Augury unavailable until next session.
+
+#### Camp Level 2 Additions
+
+- **Second Augury per session** (triggered by the party bringing a rune-carved object for Paterculus's interpretation): he can now attempt a second Augury with DC +2 (the campaign's divine attention is intensifying; readings are more costly)
+
+#### Barrier Three: Trusted Access
+
+When the party's standing with Paterculus reaches "they owe you something real" or better:
+
+- **Campaign-specific omen interpretation:** He will tell the party what the omens specifically predict about Mars, the spear, and the divine situation, as far as he has been able to read it. This is fragmented and frightening, but it is the most direct DM foreshadowing tool available. Use it when the party needs a push.
+- **The *Quinquatria* weapon text:** The full ritual blessing text that can be used in the grove scene. Paterculus knows it by heart; he will share it only with someone he trusts is not going to misuse it.
+
+**What triggers Paterculus's trust:** Taking the omen situation seriously; attending the morning ritual voluntarily; asking him what he thinks (not what the augury says, but what *he* thinks) and listening to the answer.
+
+---
+
+### Cato (Tavern Operator)
+
+**Name:** Titus Flavius Cato
+**Role:** Operates the *taberna* at the fort's east gate. Officially: licensed wine and food vendor. Practically: the fort's information exchange.
+**Appearance:** A compact man of indeterminate age (he claims forty; he looks older; he may be younger) with the professional friendliness of a man who has survived by never having a visible opinion about anything.
+
+**Personality:** Cato knows everything that happens in and around the fort and a surprising amount of what happens in the first five miles beyond it. He does not volunteer this knowledge. He weighs it against what he knows about the person asking and decides how much to share based on calculations that are never visible.
+
+He is not neutral. He has loyalties; they are just not institutional. He will not betray a customer who has been spending at his bar for three years to a stranger who arrived this morning, regardless of what the stranger represents.
+
+**What he will say when the party first meets him:** "The good wine is behind the board -- officer price, I'm afraid. The local is right here. Tastes like it was made from boots, but after the third cup you won't notice. What'll it be?"
+
+#### Camp Level 1 Inventory (Session 1 start)
+
+| Item | Available | Cost |
+|---|---|---|
+| Local wine (bad) | Plentiful | 1 *as* per cup |
+| Officer-grade wine (decent) | Limited (6 bottles) | 8 *asses* per cup |
+| Bread, cheese, cured meat (daily) | Yes | 2 *asses* |
+| Camp gossip (who hates who, what the centurions are arguing about) | Free with purchase | Buys a round |
+| Information from outside the fort | Not without trust | See Barrier Three |
+
+#### Camp Level 2 Additions
+
+- Eastern spices (status symbol; +1 to Persuasion when used as a gift to a Germanic chieftain): 15 *denarii* per small package, occasional supply
+- Alexandrian glass (luxury item, trade value): 25 *denarii*, rare
+- Better wine selection (expands to two officer-grade options)
+
+#### Barrier Three: Trusted Access
+
+When the party's standing with Cato reaches "they consider you an ally":
+
+- **Intelligence from the forest:** Cato has a network of contacts -- Germanic traders, traveling merchants, discharged soldiers doing casual labor -- who pass through his bar. He knows which Germanic villages have been abandoned recently. He knows that a specific Marcomanni war-band moved east two weeks ago, which is unusual. He knows a Roman courier was robbed three days north of the fort and the body has not been found. None of this is organized intelligence; it is overheard conversation and pattern recognition. But it is accurate.
+- **Germanic trader contacts:** Cato can arrange a meeting with a specific Germanic trader who does not normally come to the fort. This is useful for information, for certain goods (amber, rune objects), and for sending messages beyond the frontier without official channels.
+- **Passage notes:** Cato can produce documentation -- forged or legitimately obtained -- that allows the party to move through the civilian settlements outside the fort without official military authorization. Useful for Sessions 2-3.
+
+**What triggers Cato's trust:** Buying drinks rather than asking questions; coming back more than once; showing that you understand the difference between the official reality of the fort and the actual reality; not asking him to do something that puts him at legal risk before he has decided you are worth that risk.
+
+---
+
+### Sigrun (Germanic Trader)
+
+**Name:** Sigrun Irsdottir
+**Role:** Germanic trader from a Suebi village three days north. Appears at the fort's trade gate three days per week (or less, depending on conditions).
+**Appearance:** A woman of around thirty-five in Germanic dress, carrying herself with the particular confidence of someone who crosses a military frontier regularly and knows exactly how much she is worth to both sides.
+
+**Personality:** Sigrun is a professional. She has a specific set of things she will sell, a specific set of things she will buy, and no interest in any conversation that does not lead to either. She has been making this trading run for seven years. She knows the fort better than most of the soldiers posted here.
+
+She speaks *sermo castrensis* (military Latin) fluently, with a Germanic accent she does not try to conceal. She will not speak Germanic with Romans because she knows what they do with that: they assume everything she says is being evaluated.
+
+**What she will say when the party first meets her:** "Amber, furs, dried meat, three rune carvings, a bundle of forest herbs. I need oil, salt, and two quality iron knives. Is there anything else, or should I go to the board?"
+
+#### Camp Level 1 Inventory (Session 1 start)
+
+| Item | Available | Cost |
+|---|---|---|
+| Baltic amber (trade quality) | 2-4 pieces per visit | 8 *denarii* each (trade value 12+ in Rome) |
+| Forest herbs (medicinal, unidentified) | 1-3 bundles per visit | 4 *denarii* per bundle |
+| Rune carvings (decorative, possibly more) | 1-2 per visit | 5 *denarii* each |
+| Dried meat, smoked fish (food quality) | Yes | 2 *denarii* per day's ration |
+| Fur (winter quality) | 1-2 per visit | 10-20 *denarii* depending on quality |
+| Germanic rune translation | No -- not for standard trade | See Barrier Three |
+| Information about the forest beyond the palisade | No -- not for standard trade | See Barrier Three |
+
+#### Camp Level 2 Additions
+
+Sigrun appears more frequently (4-5 days per week) and her inventory expands:
+- Amber discs with inscribed runes (magical component quality): 15 *denarii* each
+- Map corrections for the forest (3-day radius): available for trade
+- Germanic healing herb identification (she names what she is selling)
+
+#### Barrier Three: Trusted Access
+
+When the party's standing with Sigrun reaches "they owe you something real" or better:
+
+- **Forest intelligence:** Sigrun knows where the sacred grove is. She will not say this directly. She will say it obliquely if she has decided the party is not going to do something destructive with the information. What she knows: the route, the markers (three specific trees that have been blazed at shoulder height in a pattern that looks like weather damage), the nearest Germanic settlement that has a relationship with the grove, and why Romans who have gone looking have not returned.
+- **Germanic ritual knowledge:** She knows the basic structure of the grove ritual, not the specific words. She knows what will and will not work. She knows that the *volva* Thusnelda is real, where she operates, and that she will not speak to Romans who arrive with soldiers.
+- **Translation:** Sigrun will translate any Germanic text or rune carving the party brings her, for Barrier Three characters. She reads Elder Futhark. She will not translate freely; she will ask what it is for and evaluate the answer.
+
+**What triggers Sigrun's trust:** Paying fairly and without complaint; not treating her as a source of free intelligence; doing something that demonstrates the party is not simply Roman soldiers who want something from her but people with some understanding of what the Germanic world actually is.
+
+**Upgrade trigger for Sigrun's frequency:** Bringing amber discs from the forest increases her interest and frequency of visits. Each amber disc offered to her moves the relationship statement one position toward "they owe you something real."
+
+---
+
+## Camp Level System
+
+### What Camp Level Means
+
+Camp Level represents the fort's overall operational capability: the quality and availability of goods and services, the morale and cooperation of the traders, and the party's demonstrated capability as factors in the fort's survival.
+
+Camp Level is not a single thing. It is a state that affects all traders simultaneously. When the camp upgrades, announce it: "Word has moved through the fort. Rufus has new iron to work with. Valeria's herb stores expanded. Cato's been cheerful since the convoy arrived."
+
+### Camp Level 1 (Campaign Start)
+
+Standard military supply. The fort is adequately provisioned but not well. The traders are professional but guarded. The party is new and unproven.
+
+*All traders at starting inventory as described above.*
+
+### Camp Level 2 (First Upgrade)
+
+Triggered by **any one** of the following:
+
+- The party brings back raw materials from the Germanic forest (any combination: amber discs, iron ore, medicinal herbs, rune-carved objects)
+- A supply caravan arrives at the fort (random event, or triggered by party action resolving the convoy delay hook)
+- The party resolves a specific camp problem that the DM has flagged (identifying the source of the omen events; assisting Valeria with a sick century; recovering a stolen supply item)
+- The party reaches Level 5 in character advancement (the camp's resources keep pace with demonstrated capability)
+
+**Effects of Camp Level 2:**
+- Rufus can do custom weapon work (new service unlocked)
+- Valeria's herb stock expands; she can now attempt basic poison identification
+- Sigrun begins appearing more frequently with expanded inventory
+- Cato's stock includes items from further afield (eastern spices, Alexandrian glass)
+- Paterculus can interpret rune carvings the party brings him
+
+### Camp Level 3 (Second Upgrade)
+
+Triggered by **any one** of the following:
+
+- The party brings back something significant from the Germanic forest (the sacred grove amber discs; a negotiated peace with Vercingetorix's tribe; Thusnelda's explicit cooperation)
+- A major supply caravan with senatorial goods arrives (connected to Tribune Lucius's arrival in Session 2)
+- The party reaches Level 7 in character advancement
+
+**Effects of Camp Level 3:**
+- All traders have their full expanded inventories
+- Paterculus can attempt a second Augury per session
+- Quartus offers access to military-grade equipment normally reserved for officers (officer-requisition items now available to the party without the normal authorization)
+- Sigrun's trust threshold is lowered by one step (she has seen enough of the party to move faster)
+
+---
+
+## Raw Materials as Story Currency
+
+Items the party retrieves from the Germanic forest unlock specific upgrades and relationship opportunities. This list covers the most significant materials.
+
+### Amber Discs
+
+Found in the hidden archive and the sacred grove area (see `locations.qmd`). Each disc has a small rune inscription that Paterculus can partially read.
+
+**Effects:**
+- Trade value: 50 *denarii* each if sold in Rome; 15 *denarii* in the fort economy (Sigrun's price)
+- Offered to Sigrun: moves her relationship statement one position toward "they owe you something real"
+- Offered to Paterculus: he can interpret the rune inscription; unlocks the second Augury for that session
+- Offered to Rufus: he recognizes the amber as high-quality forge-flux material; contributes to Camp Level 2 metalwork upgrade
+
+### Medicinal Herb Bundle
+
+Found in the Germanic forest during travel scenes. Identified by Survival DC 12 or by asking Sigrun.
+
+**Effects:**
+- Expands Valeria's herb stock for one session (she gains one additional dose of healing herbs)
+- Valeria shares one piece of DC 15 medicine knowledge for free (from knowledge.qmd, the medicus tier)
+- Contributes to Camp Level 2 trigger (one bundle = one step toward trigger)
+
+### Iron Ore (Load)
+
+Found in the rocky outcroppings east of the sacred grove. Requires Athletics DC 14 to extract a meaningful quantity (counts as heavy load).
+
+**Effects:**
+- Rufus upgrades one weapon to +1 quality for free (one load = one weapon)
+- Contributes to Camp Level 2 metalwork trigger
+- Rufus's relationship statement advances one position
+
+### Germanic Rune Carving
+
+Trade goods from Sigrun, or found on standing stones and artifacts in the forest.
+
+**Effects:**
+- Paterculus can identify the religious significance (free DC 15 Religion result for that session)
+- Sigrun will translate any Germanic text the party has for the rest of that session (she is now engaged by the fact that someone brought her something interesting)
+- If the rune carving is unusual or from a sacred site, Paterculus's relationship statement advances one position
+
+---
+
+## Supply Caravan Events
+
+A wagon train from Carnuntum arrives every four to six weeks with grain, replacement weapons, payroll, and whatever the quartermaster managed to requisition. The party can interact with, intercept, or influence these convoys.
+
+Roll a d6 at the start of each session, or choose:
+
+| d6 | Event |
+|---|---|
+| 1 | **The convoy is overdue.** It should have arrived four days ago. Three possible causes: ambush (roll d3: 1 = Germanic raiders, 2 = Tribune's Praetorians, 3 = delayed by road collapse). One cause is true; the party can investigate. |
+| 2 | **The convoy arrives, short.** Two-thirds of the expected grain. The quartermaster notes that someone in Carnuntum requisitioned part of the shipment for "special purposes." Corvinus does not say who; Quartus's second ledger has the answer. |
+| 3 | **The convoy arrives, with a passenger.** A civilian physician, a retired legionary with business at the fort, or a senatorial courier with sealed orders. Determine which based on what the campaign needs. |
+| 4 | **The convoy arrives complete.** Camp Level 2 trigger fires. All traders have expanded stock for one session. Morale is noticeably better. |
+| 5 | **The convoy arrives with luxury goods.** A case of decent wine, eastern spices, a package for the Legate. Cato intercepts a bottle. Cato's stock expands. |
+| 6 | **The convoy is stopped at the river crossing.** The ford is flooded (spring) or contested (Germanic activity). The party can escort it through or watch the Legate send someone else to try. |
+
+**Player agency with the convoy:** The party can request specific items from the next convoy through Quartus (requires DC 14 Persuasion or a direct Legate order). Items can be flagged by the party as priority, which increases the chance of arrival but also increases the chance that someone in the supply chain notices the request and asks questions.
+
+---
+
+## DM Notes: Running the Economy
+
+**Don't announce the system.** The traders have names and personalities. Players will figure out the upgrade system by interacting with it. The moment of "wait, what we brought back last session affected what Rufus can do this session" is satisfying precisely because it was not telegraphed.
+
+**Let relationships develop unevenly.** One player will gravitate toward Cato; another will build standing with Valeria. That is correct behavior. The party will have different access to different parts of the fort's information network, which is both realistic and dramatically useful.
+
+**Use traders as session hooks.** Paterculus can deliver the omen information that opens Session 1. Sigrun's unusual absence from the trade gate can signal something wrong in the forest before Session 2. Cato's information about unusual activity at the river can open the forest travel scene in Session 3. The traders are not just vendors; they are the fort's eyes.
+
+**Upgrade Camp Level at dramatically useful moments.** The rules give triggers; you choose the timing. If Camp Level 2 would make Session 2 more interesting by giving the party resources they need, trigger it. If keeping the party at Camp Level 1 creates productive scarcity during Session 1, hold it. The system is a tool.

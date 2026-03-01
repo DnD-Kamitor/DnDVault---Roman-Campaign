@@ -523,7 +523,44 @@ Goal: A printable, fillable D&D 5e character sheet adapted for this campaign, re
 - [ ] **Second page: Session tracker** — One section per session (5 total): decisions made, NPCs met, corruption delta (+/-), divine standing change, one memorable moment. This replaces the `journal.qmd` session pages as a more compact alternative.
 - [ ] **Build and render test** — Confirm `quarto render character_sheet.qmd --to pdf` produces a clean, printable output with all fields correctly positioned; test with both pdflatex and xelatex engines
 
+### Milestone 35 — Three-Barrier Knowledge + Living Camp Economy ✅ COMPLETE
+Goal: The knowledge system gains a third barrier (character-creation stat/skill gating before DC checks). Fort Vindolanda becomes a living economy with named traders who upgrade based on player actions and reputation.
 
+**Files:**
+- `reputation.qmd` (new, Player's Workbook, after `professions.qmd`)
+- `camp_economy.qmd` (new, GM's Workbook, after `locations.qmd`)
+- `knowledge.qmd` (modified: Barrier One blocks in all 10 categories)
+- `appendix.qmd` (modified: relationship tracking table in DM Quick Reference)
+- `_quarto.yml` (modified: both new files inserted)
+
+**Barrier One blocks (knowledge.qmd):**
+- [x] Roman Military Lore: History proficiency + Athletics + STR 14
+- [x] Roman Religion: Religion proficiency + WIS 14
+- [x] Mars (campaign-specific): Religion proficiency + Soldier background
+- [x] Germanic Tribes: Survival proficiency + Insight proficiency
+- [x] The Frontier: Survival proficiency + Perception proficiency
+- [x] Roman Law and Politics: History proficiency + Noble background
+- [x] Poisons, Medicine: Medicine proficiency + Herbalist Kit
+- [x] Reading Divine Signs: Religion proficiency + WIS 14
+- [x] The Antonine Plague: Medicine proficiency + CON 14
+- [x] Roman Engineering: Athletics proficiency + Artisan's Tools
+
+**reputation.qmd sections:**
+- [x] What reputation means in 175 AD (relational, not scored)
+- [x] How the system works: shared party base + individual character modifiers
+- [x] Starting relationship statements for all 12 factions/NPCs
+- [x] How favor is gained (general principles)
+- [x] How favor is spent (what relationships provide; calling in a debt)
+
+**camp_economy.qmd sections:**
+- [x] The camp as living system (not static supply list)
+- [x] Six camp traders: Quartus, Rufus, Valeria, Paterculus, Cato, Sigrun
+- [x] Camp Level system (1-3): triggers, effects, DM tracking
+- [x] Raw materials as story currency (amber, herbs, iron ore, rune carvings)
+- [x] Supply caravan events table
+
+**appendix.qmd:**
+- [x] Relationship Starting States table added after NPC OGAS Summary
 
 ---
 

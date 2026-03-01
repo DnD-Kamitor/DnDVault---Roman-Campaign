@@ -381,6 +381,29 @@ _____________________________________________________________
 
 ---
 
+### Relationship Starting States
+
+*Party base at campaign start. Track individual character modifiers in the blank column as play develops. Use the debt/favor language from `reputation.qmd` to record changes.*
+
+| NPC / Faction | Starting statement | Individual modifier (fill during play) |
+|---|---|---|
+| **Legate Corvinus** | "You are his tools. He has not decided whether that makes you valuable or expendable." | |
+| **Cassia Liviana** | "She has seen something in you. She has not decided whether to tell you what." | |
+| **Centurion Varro** | "You are one of his soldiers. That means something to him." | |
+| **Tribune Lucius** | "He does not know you yet. He is watching." | |
+| **Vercingetorix** | "You are Romans. He is waiting to be proven wrong." | |
+| **Thusnelda** | "She is afraid of what you are carrying. She has not decided if you are different from the Romans who brought it." | |
+| **Senator Brutus** | "He does not know you exist. This is probably good." | |
+| **Legio XIV** | "You are part of it. For now, that is enough." | |
+| **Germanic Tribes (general)** | "You are the soldiers on the other side of the line. Nothing more yet." | |
+| **Mars** | "He is aware of you. This is not the same as favor." | |
+| **Jupiter** | "Neutral. He is watching the Emperor." | |
+| **The Senate** | "You are frontier soldiers. The Senate does not know frontier soldiers exist." | |
+
+*Camp trader relationships: tracked separately in `camp_economy.qmd`. Starting state for all six traders: "Professional. They do not know you yet."*
+
+---
+
 ### Corruption Rules Summary
 
 | Stage | Name | Mechanical effect |
