@@ -86,20 +86,21 @@ Sessions must escalate:
 
 ## Milestone Plan
 
-### Milestone 1 — Visual Foundation ✅ IN PROGRESS
+### Milestone 1 — Visual Foundation ✅ COMPLETE
 - [x] Download and verify 10 historical images
 - [x] Create CLAUDE.md
-- [ ] Embed maps in player_intro.qmd (Roman Empire, Limes, Germanic tribes)
-- [ ] Embed images in player_guide.qmd (castra layout, Vindolanda, Saalburg, legionaries)
+- [x] Embed maps in player_intro.qmd (Roman Empire, Limes, Germanic tribes)
+- [x] Embed images in player_guide.qmd (castra layout, Vindolanda, Saalburg, legionaries)
+- [x] Fix GitHub Pages .nojekyll issue (Jekyll was eating all non-index HTML files)
 
-### Milestone 2 — Player's Workbook: World Depth
+### Milestone 2 — Player's Workbook: World Depth ✅ COMPLETE
 Goal: Players can read Part 1 and feel fully immersed without needing the GM's sections.
 
-- [ ] **Roman daily life** — food, money (denarii/sestertii), calendar, timekeeping
-- [ ] **Roman Pantheon** — player-facing profiles for the 12 major gods (personality, what they want from mortals, how to worship)
-- [ ] **Equipment list** — Roman weapons and armor with D&D stat translations
-- [ ] **Key Latin phrases** — terms players will encounter in-session (legionary commands, omens, titles)
-- [ ] **Session 0 expansion** — setting-specific questions beyond the generic ones
+- [x] **Roman daily life** — food, money (denarii/sestertii), calendar, timekeeping
+- [x] **Roman Pantheon** — player-facing profiles for the 12 major gods + Mithras + Fortuna
+- [x] **Equipment list** — Roman weapons and armor with D&D stat translations
+- [x] **Key Latin phrases** — commands, titles, places, common speech with pronunciation
+- [x] **Session 0 expansion** — setting-specific questions (Roman identity, gods, frontier, corruption, character hooks)
 
 ### Milestone 3 — Session Development (Sessions 2–5)
 Goal: Every session chapter matches Chapter 1's quality using full Sclanders methodology.
