@@ -16,6 +16,9 @@ book:
         - player_intro.qmd
         - session0.qmd
         - player_guide.qmd
+        - player_tome.qmd
+        - knowledge.qmd
+        - professions.qmd
         - roman_tactics.qmd
         - bestiary.qmd
     - part: "GM's Workbook"
