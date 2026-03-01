@@ -280,6 +280,60 @@ You will hear Latin terms during sessions. You don't need to memorize these — 
 
 ---
 
+## Languages of the Roman World
+
+Every D&D language maps to a real language spoken in the Roman Empire of 175 AD. When you choose a language proficiency during character creation, you are choosing which of these you know.
+
+### The Translation Table
+
+| D&D Language | Real-World Language | Who speaks it | Where it matters |
+|---|---|---|---|
+| **Common** | Latin | All Roman citizens, soldiers, officials, merchants | Everywhere within the Empire; the language of command and law |
+| **Elvish** | Greek | Educated Romans, eastern provincials, philosophers, physicians | Temple archives, scholarly texts, diplomatic correspondence; essential in Rome's educated circles |
+| **Goblin** | Germanic (Gothic/Suebian dialect) | Germanic tribes beyond the Rhine and Danube | The entire frontier; every diplomatic encounter in Sessions 2-3; understanding the enemy |
+| **Dwarvish** | Celtic (Gallic, Brittonic) | Gallic and British auxiliary soldiers, traders from the northwest provinces | Auxiliary units, western frontier, speaking in private around Roman officers |
+| **Halfling** | Aramaic / Syriac | Eastern traders, Syrian merchants, Nabataean caravans | Trade negotiations, eastern cities, the Subura's merchant quarter |
+| **Gnomish** | Egyptian (Demotic) | Egyptian priests, Alexandrian scholars, Nile delta communities | Temple cults of Isis and Osiris (present on the frontier), academic texts, certain medical traditions |
+| **Draconic** | Persian / Parthian | Parthian nobles, diplomatic hostages, eastern border soldiers | Rare and valuable; the language of Rome's greatest rival; marks you as someone with unusual connections |
+| **Primordial** | Hebrew / Aramaic sacred register | Jewish communities, certain eastern religious traditions | Encountered in Judaea, in the Diaspora communities throughout the Empire, in certain mystery cults |
+| **Sylvan** | Thracian / Illyrian | Soldiers from the Balkans, certain Danube frontier auxiliaries | Specific units; fading as the second generation becomes more Latin |
+| **Druidic** | Druidic (Celtic sacred language) | The last Celtic druids in hidden groves in Gaul and Britain | Extremely rare; forbidden by Rome; encountered in Session 3 if the party meets certain Germanic ritual practitioners |
+| **Thieves' Cant** | Thieves' Cant | Criminal networks throughout the Empire | The Subura, criminal *collegia*, black markets; the universal language of people who operate outside the law |
+| **Infernal** | Punic (Carthaginian) | Certain North African communities with Carthaginian heritage | Rare; carries a specific weight given Rome's history with Carthage |
+
+### Languages by Province Background
+
+Your province of origin determines which languages you grew up speaking, separate from any class or background proficiency.
+
+| Province | Native language (free) | Common second language | Notes |
+|---|---|---|---|
+| **Italia** | Latin (Common) | Greek (Elvish) | Every educated Italian knows Greek; it is the mark of good breeding |
+| **Hispania** | Latin (Common) | Celtic Iberian (treat as Dwarvish) | The old Iberian languages are fading but present in rural areas |
+| **Gallia** | Latin (Common) | Gaulish/Celtic (Dwarvish) | Many Gauls are bilingual; the older generation still think in Gaulish |
+| **Britannia** | Latin (Common) | Brittonic (Dwarvish) | The frontier wall posts are a language mix; Germanic useful here too |
+| **Syria/Judaea** | Greek (Elvish) | Aramaic (Halfling) | Latin is the third language here, not the first |
+| **Egypt** | Greek (Elvish) | Egyptian Demotic (Gnomish) | Alexandrian education means Greek; the villages speak Demotic |
+| **Pannonia/Moesia** | Latin (Common) | Germanic (Goblin) | Danube frontier soldiers often pick up Germanic from the federates |
+| **Dacia** | Latin (Common) | Dacian (treat as Dwarvish) | Recently conquered; Latin is new here and sometimes resented |
+
+### Languages in Play
+
+**When it matters at the table:**
+
+Germanic-speaking NPCs in Sessions 2-3 will not speak Latin to the party unless trust has been established. A character with Germanic (Goblin) can speak directly; others must work through Vercingetorix or use gestures and demonstration.
+
+The vault inscription beneath the fort (Chapter 1) is in Early Proto-Germanic. Only Thusnelda (Session 3) can translate it fully. A character with Germanic proficiency recognizes individual runes but not the archaic grammar.
+
+The encoded letter in Session 2 uses a Caesar cipher of Latin. Any Latin speaker can decode it with DC 14 Intelligence, or with advantage if they have an Intelligence score of 16+.
+
+Greek texts in Rome's temple archives (Session 4) require Elvish (Greek) to read without assistance. The Temple of Apollo maintains a translator, but he charges and remembers who asked what.
+
+**Learning a new language during the campaign:**
+
+The Train downtime activity (see `professions.qmd`) covers language learning. Require 3 sessions of active training with a willing teacher (Vercingetorix can teach Germanic; a street contact in Rome can teach Greek; the *librarius* at any fort can teach Latin). After 3 sessions: the character gains the language at basic conversational level. Full proficiency requires 10 sessions.
+
+---
+
 ## The Corruption Mechanic
 
 There is something in this campaign that can corrupt characters who interact with it. **Your characters don't know what this is yet.** But you as a player should understand how the mechanic works so you can make informed choices when it comes up.

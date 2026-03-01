@@ -223,3 +223,98 @@ Germanic chieftains sometimes divided their forces to circle a Roman unit; sendi
 | Battering ram | 4d10 vs. gate (avg 22 per hit) | Kill crew, fire, block path |
 | Ballista | 4d8 piercing, prone save DC 14 | Rush the crew (2 rounds exposure) |
 | Scaling ladder | Climber restrained, falls DC 12 | Push check DC 13, 1 defender per ladder |
+
+---
+
+## The Legion and the Magical World
+
+The Roman army has been operating in a world where divine intervention is real, magical creatures exist, and some men can do things that cannot be explained by strength or training. The legion has had 700 years to develop responses. Those responses exist. They are bureaucratic, practical, and embedded in doctrine the way everything in the legion is embedded in doctrine: through the *acta diurna*, the daily gazette, and through the informal knowledge that passes from veteran to new recruit over a fire at the third watch.
+
+---
+
+### Official Roman Magical Doctrine
+
+The Roman army officially acknowledges three categories of magical phenomena:
+
+**Res Divinae** (*divine interventions*): Direct acts of the gods, including verified omens, battlefield portents, miraculous weather, and the visible presence of divine power. These are handled by the *haruspex* and by official augury. A commander who ignores a confirmed *Res Divina* is violating both military and religious law.
+
+***Magia Licita*** (*licit magic*): Sanctioned magical practice: *haruspicy*, augury, temple rites, legitimate healing, and the blessing of standards and weapons. These are performed by official religious practitioners. A soldier who employs a *haruspex* for battlefield divination is following correct procedure.
+
+***Magia Illicita*** (*forbidden magic*): Necromancy, spirit-binding, foreign curse-magic, and any magic that operates outside official Roman religious framework. The penalty for a soldier practicing *Magia Illicita* is death. The penalty is not negotiable and has been applied to officers as well as legionaries.
+
+**In play:** This framework means that encountering magic through official channels (the *haruspex*, an augur, a temple) is handled differently from encountering magic outside those channels (a character who casts spells from a non-Roman tradition, a Germanic *volva*, an obviously necromantic artifact). The party's actions within this framework have social and legal consequences, not just narrative ones.
+
+---
+
+### The *Haruspex* in the Field
+
+Every cohort on active campaign is assigned a *haruspex* (entrails-reader), who is simultaneously an official religious practitioner, an intelligence analyst, and a morale officer. The *haruspex* reads the sacrificial animal's organs before major operations, interprets battlefield omens in real time, and identifies when a situation has moved from the mundane to the divine.
+
+**D&D mechanics for the haruspex NPC role:**
+
+| Ability | Mechanic |
+|---|---|
+| **Entrails reading (Augury)** | 1/day, before a major decision; DM gives a two-word response (weal/woe/both/neither). This cannot be a bluff: the *haruspex* is officially bound to report accurately. |
+| **Creature identification** | Bonus action + DC 13 History check to identify a creature from the Bestiary and recall its official classification and doctrine response |
+| **Blessed Standard** | Once per short rest, the *haruspex* can invoke the cohort's standard to grant all soldiers within 30 feet advantage on their next saving throw against a fear effect or spell |
+| **Death consequence** | If the *haruspex* dies in the field, every soldier in the unit must make a DC 12 Wisdom saving throw or be Frightened for one round; the unit cannot benefit from Blessed Standard for the remainder of the session |
+
+---
+
+### Anti-Magical Formation Doctrine
+
+The legion developed specific responses to specific threats. These are not written in any single document; they are transmitted through experience and informal training. A soldier who has served on the frontier long enough knows them.
+
+**Against flying creatures:**
+
+*Ballista* crews train elevation tables for moving aerial targets. A prepared *ballista* crew can attack a creature in flight as a ranged attack (1d10+4 piercing, range 120/480 feet) without disadvantage if they have had at least one round to observe the creature's flight pattern. Without that preparation, aerial attacks have disadvantage.
+
+Pilum volleys can be angled upward, though the range drops to 30 feet maximum and targets in the air have half cover unless directly overhead. Three soldiers can coordinate a focused pilum volley at a single aerial target as a combined action: each makes an attack roll with disadvantage, but if two or more hit, the target must succeed on a DC 14 Strength saving throw or have its fly speed halved until the end of its next turn.
+
+The *testudo* variant for overhead threats: a unit in testudo formation is immune to attacks from directly above unless the attacker has a reach of 10 feet or greater. The standard testudo sequence (corner-bracing first, then overhead lock) takes one additional bonus action to complete but provides this additional protection.
+
+**Against undead:**
+
+The sacred fire maintained at the camp altar counts as magical fire for damage purposes when used in combat: a torch lit directly from the altar fire deals an additional 1d4 radiant damage to undead creatures for 10 minutes after lighting. Soldiers who know this maintain the altar fires.
+
+The *aquila* (legion eagle standard) carried within 30 feet of undead creatures grants all soldiers in range advantage on saving throws against fear effects and against the special abilities of undead creatures (paralysis, dread, etc.). The *aquila* must be actively carried (not merely present); if its bearer is incapacitated, the benefit ends immediately.
+
+Any soldier who has served 10 or more years on the frontier has advantage on Wisdom saving throws against the Frightened condition when the source is undead. This is not courage; it is simply that they have seen enough that their instincts have been recalibrated.
+
+**Against illusion:**
+
+Any soldier who has served 10 or more years on the frontier (or any player character who grew up on or near a frontier province) has advantage on Wisdom saving throws against illusion spells and effects. The explanation is practical: the forest at night does things to your eyes and ears, and the soldiers who survive long enough to become veterans are the ones who learned not to trust everything they perceive.
+
+Against an active illusion in the field: a soldier can use their action to shout "it's not there" to a visible ally who is affected by the illusion; the ally may immediately make a new saving throw against the effect with advantage.
+
+---
+
+### Creature Classification in Roman Military Records
+
+The legion maintains a classification system for non-human creatures encountered in the field, recorded in the unit's *acta diurna* and passed down through the centurionate. The classifications below reflect official doctrine (what the army calls them and how it handles them):
+
+| Creature | Roman classification | Official doctrine response |
+|---|---|---|
+| Lemures, Larvae | *Umbrae* (shades) | *Haruspex* handles primary response; fire and the Lemuria rite suppress; do not engage in formation |
+| Genius Loci | *Numen Loci* (place-spirit) | Negotiation first; offering of wine and grain; formal acknowledgment; combat is a last resort and provokes divine attention |
+| Strix | *Monstrum* | Designated hunting detail; fire arrows; do not let it land among wounded; destroy the roost |
+| Alp | *Pestilentia Nocturna* (night plague) | Protective rites for at-risk personnel; iron at the threshold; salt; do not engage in darkness |
+| Draugar | *Barbari Mortui* (barbarian dead) | Fire; fire; fire. Stand-off engagement only. No close formation against these. |
+| Lindworm | *Belua Magna* (great beast) | Multi-cohort protocol; dedicated *ballista* positioning; *haruspex* performs propitiatory sacrifice before engagement; do not engage without command authorization |
+
+---
+
+### The *Spolia Opima* for Magical Kills
+
+*Spolia Opima* is Rome's highest individual military honor: the arms stripped from an enemy commander killed in personal single combat. The *Spolia Opima* has been awarded only three times in Roman history; it is the rarest decoration in existence.
+
+The legion has adapted a lesser version of this honor for kills against classified creatures. A soldier who kills a creature of CR 5 or higher from the Bestiary in single combat (no formation assistance, a clear one-on-one engagement confirmed by witnesses) earns:
+
+- A commendation recorded in the cohort's *acta diurna* (permanent)
+- The title *Bestiae Victor* (beast-slayer), used in official dispatches and address
+- A bonus of 50 *denarii* paid from the legion's special contingency fund
+- The creature's primary trophy (a tooth, a claw, a scale) mounted on a small plaque and added to the unit's shrine
+
+Three confirmed kills under this standard earn permanent advantage on Intimidation checks against mundane soldiers, who have heard the stories.
+
+**Note for DM:** Each session chapter has a brief note on which creatures qualify for this honor and which encounters are structured as single-combat opportunities if the players pursue them.

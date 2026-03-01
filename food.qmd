@@ -1,0 +1,114 @@
+# Food, Drink, and Field Rations
+
+*What you eat, what you drink, and what it costs you.*
+
+A Roman soldier eats to function. The army has thought carefully about this: the daily ration is designed for a man who marches 20 miles and fights at the end of it. It is not designed to be pleasant. Pleasure in food is a civilian luxury that the frontier strips away within the first month, replacing it with the specific satisfaction of being adequately fed rather than not. Know your rations. Know what improves them. Know what happens when they run out.
+
+---
+
+## The Daily Ration
+
+| Item | Daily quantity | Prepared as | Cost per day |
+|---|---|---|---|
+| *Frumentum* (wheat grain) | 800g | Ground to flour, baked as flat bread or boiled as *puls* (porridge) | Deducted from pay |
+| Olive oil | 60ml | Cooking and preservation | Deducted from pay |
+| Salt (*sal*) | 20g | Seasoning and preservation | Deducted from pay (hence "salary") |
+| *Posca* | As needed | Vinegar diluted in water; drink on march and with meals | Deducted from pay |
+| Supplemental (issued irregularly) | Variable | Dried legumes, salt fish, hard cheese, dried figs | Issued free when available |
+
+*Posca* is the defining drink of Roman military service. It is sharp, thin, and slightly sour, somewhere between bad wine and good vinegar, and it is with you every day of your posting. Soldiers do not love it. They drink it because it keeps them alive in conditions where plain water would eventually kill them: the acid suppresses bacterial growth, the dilution makes it hydrating rather than intoxicating, and the routine of it is itself stabilizing. Ask a veteran what *posca* tastes like and he will say "like the army." He will not be wrong. After three months, you stop noticing the taste. After a year, you reach for it before you reach for anything else, even when better options are available. This is not preference. It is conditioning. The army knows what it is doing.
+
+---
+
+## Food Quality Tiers
+
+Food quality has mechanical effects throughout the campaign. The tiers below apply any time supply becomes a question: in the forest, as prisoners, after a late convoy, or in Rome where the problem is access rather than quantity.
+
+**Starvation rations.** Less than 400g grain equivalent per day; nothing else. Mechanical: 1 level of exhaustion per 24 hours unless a DC 13 Constitution save is made. This tier applies in any session where the party is cut off from supply, including deep forest travel, prisoner transport, or a fort that has run through its emergency reserves.
+
+**Field rations.** The daily baseline above. Mechanical: no effect. This is the neutral state. Most of the campaign runs here.
+
+**Good rations.** The baseline plus adequate supplemental: meat, fresh vegetables, proper wine. Mechanical: characters remove 1 level of exhaustion per long rest, stacking with the base recovery. Good rations are available in Rome, at a well-supplied fort, or on any day after the convoy arrived recently and the quartermaster is in a reasonable mood.
+
+**Feast.** Full Roman dinner (*cena*): multiple courses, quality wine, social context. Mechanical: advantage on all Charisma checks for 8 hours after the meal. This represents the social lubrication and goodwill of shared food. A senator's dinner counts as a feast. The Emperor's Triumph banquet, if attended, counts as a feast.
+
+---
+
+## What the Frontier Provides
+
+The official ration is not the only food available. The frontier rewards soldiers who know how to supplement.
+
+### Hunting
+
+Elk, boar, rabbit, and waterfowl are present in the Germanic forest. A character with Survival proficiency can attempt a DC 12 Survival check to provide fresh meat for the party (4 to 6 servings) during a full day of travel. On a failure: no meat that day. On a natural 20 or higher: they also find something the *medicus* wants, either medicinal herbs or an unusual creature part worth 5d to the right buyer.
+
+### Foraging
+
+Wild garlic (*allium*), mushrooms (the edible ones), berries (seasonal from late spring through autumn), and nettles (edible and available year-round) grow throughout the region. DC 14 Survival or Nature check to gather enough to supplement one day's rations for 4 people. Nettles boiled with salt are not good. They are better than nothing.
+
+### Germanic traders
+
+*Cervisia* (barley beer), smoked fish, dried venison, honey, hazelnuts, and dried berries are all available when the party is near a Germanic settlement or trading post. Germanic honey is notably excellent: Romans who taste it pay above market without hesitation, and Germanic traders know this. It makes a useful trade good in both directions.
+
+### Supplement effect
+
+Any day the party has fresh meat from hunting or adequate foraged supplements, they count as "Good rations" even if the underlying ration is "Field rations." One good addition to the pot changes what the day costs a body.
+
+---
+
+## Drink
+
+### *Posca*
+
+Vinegar diluted in water. The soldier's daily drink; always available; not intoxicating; keeps you alive; tastes accordingly. Any character with 6 or more months of military service instinctively reaches for it first when thirsty. See the section above for why.
+
+### *Cervisia*
+
+Germanic barley beer, available from traders and throughout Germanic settlements. It is stronger than it looks, and Germanic traders are aware that Roman soldiers underestimate it. Three cups: disadvantage on Wisdom saving throws for 1 hour. The soldiers know this and drink it anyway, because the frontier is cold and the evenings are long and nobody is pretending otherwise. Cost: 2 sestertii per cup from traders.
+
+### *Mulsum*
+
+Honey wine: sweet, strong, and distinctly Roman. An officer's drink, used at festivals and in formal dining. One cup per hour before intoxication risk applies (same effect as *cervisia* above). Cost: 4 sestertii per cup when available, which at Fort Vindolanda means when the convoy arrived recently.
+
+### Acetum (*posca*-wine)
+
+The step up from standard *posca*: the base vinegar-water mixture combined with a small amount of actual wine to soften it. The everyday drink of anyone who can afford the minimal upgrade. Available at the fort tavern. Cost: 1 sestertius per cup. This is the drink that tells you the session is happening at a fort and not in a ditch.
+
+### Water
+
+Drink from tested sources only. The frontier has parasites you cannot see and do not want to meet. A character who drinks unboiled river water without checking must make a DC 11 Constitution save; on failure: 1 level of exhaustion sets in over the following 24 hours as illness takes hold. A DC 13 Medicine or Survival check identifies safe sources before drinking. Thusnelda can tell you which streams her tribe uses. This is worth asking.
+
+---
+
+## Equipment for Eating
+
+A soldier carries the tools to prepare his ration. Without them, he still has the ration; he just cannot use it properly.
+
+| Item | Weight | Cost | Effect if missing |
+|---|---|---|---|
+| *Patera* (bronze mess bowl) | 0.5 kg | 3 sestertii | Cannot eat hot food efficiently; -1 to morale recovery |
+| *Urceus* (water jug, 1 litre) | 0.5 kg full | Issued | Cannot carry *posca*; Constitution checks more difficult on hot marches |
+| Personal knife | 0.2 kg | Issued | Cannot prepare food; disadvantage on foraging checks |
+| Millstone fragment (shared; 1 per 8-man unit) | 3 kg (shared) | Issued | Cannot grind grain; must eat grain as unground pottage (counts as starvation rations) |
+| Tinderbox | 0.1 kg | 1 sestertius | Cannot start fire; cannot cook; field rations unavailable and party must eat raw |
+| Mess bag (oilcloth) | 0.2 kg | 2 sestertii | Food exposed to weather; provisions last 50% as long |
+
+Track what you are carrying. The tinderbox is the item soldiers lose most often and regret losing most badly. One wet night without fire converts field rations to effectively nothing.
+
+---
+
+## Rationing as Story
+
+Food is not only mechanics. The three scenarios below are moments where what you eat (and whether you eat) tells you something about where you are and what that place is asking of you.
+
+### Scenario 1: The late convoy (Session 1)
+
+The convoy is overdue. The fort has 10 days of rations at current strength. The Legate has not announced this. The soldiers know anyway: ration portions are down, the supplemental issue has stopped, and the quartermaster has stopped answering questions. What does the party do with this information? What does it tell them about the Legate's priorities? Who benefits from the soldiers not knowing the exact numbers, and how long does that advantage hold?
+
+### Scenario 2: The forest (Session 3)
+
+Two days in the forest with Germanic allies. The party eats what Vercingetorix's tribe provides: smoked venison, flat bread made from rye, water from a stream Thusnelda says is safe. The food is genuinely good. This creates a question that is not in any rulebook: what does it mean to eat well, as a guest, with people you were trained to see as enemies? The food is the same. The context is entirely different. Your character notices this, or they do not. Either answer is a character choice.
+
+### Scenario 3: Rome (Session 4)
+
+A senator invites the party to dinner. The food is extraordinary: seven courses, spiced wine, dishes sourced from six provinces. The senator watches how they eat. He is not watching for table manners in the narrow sense; he is watching for evidence of who these people are and whether they are worth investing in, or whether they are simply useful tools that can be put down when the job is done. How your character eats, what they say about the food, and whether they treat the meal as pleasure or performance tells the senator more than any answer to a direct question. Eat accordingly.

@@ -17,14 +17,23 @@ book:
         - session0.qmd
         - player_guide.qmd
         - player_tome.qmd
+        - calendar.qmd
         - knowledge.qmd
         - professions.qmd
+        - peoples.qmd
+        - corruption.qmd
         - roman_tactics.qmd
+        - supplies.qmd
+        - food.qmd
+        - rome_guide.qmd
+        - journal.qmd
+        - atmosphere.qmd
         - bestiary.qmd
     - part: "GM's Workbook"
       chapters:
         - gm_intro.qmd
         - germanic_tribes.qmd
+        - locations.qmd
         - chapter1.qmd
         - chapter2.qmd
         - chapter3.qmd

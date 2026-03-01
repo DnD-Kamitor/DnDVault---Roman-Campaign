@@ -1,0 +1,84 @@
+# Supplies, Equipment, and the Fort Economy
+
+The Roman world is not a fantasy marketplace where everything is available everywhere at a fixed price. What you can buy depends on where you are, who controls the supply chain, and how recently the convoy arrived. Fort Vindolanda on the Germanic frontier is far from the workshops of Rome and the warehouses of the Rhine. Some things are plentiful here. Others are unavailable at any price.
+
+---
+
+## The Price Index
+
+Prices vary dramatically by region. Use this table as a guide.
+
+| Item | Rome (denarii) | Fort Vindolanda (denarii) | Germanic Forest (denarii) | Notes |
+|---|---|---|---|---|
+| Iron *gladius* (standard issue) | 15 | 20 | 50 or unavailable | Cheaper in Rome near the smiths |
+| *Lorica segmentata* (segmented armor) | 40 | 60 | Not available | Repair possible anywhere with iron |
+| Leather armor | 10 | 12 | 8 | Germanic craftsmen make decent hide armor |
+| Shield (legionary *scutum*) | 8 | 10 | Not available | Germanic round shields: 5 denarii |
+| *Pilum* (heavy javelin) | 3 | 4 | Not available | Camp smiths can produce crude versions for 6d |
+| Olive oil (1 amphora) | 8 | 18 | Not available | Essential for cooking, cleaning, lighting |
+| Wine (1 amphora, common) | 5 | 14 | Not available | Officers' wine: 20-30d per amphora at Vindolanda |
+| Wheat (1 month's ration) | 3 | 5 | Foraged only | Barley available from Germanic traders: 3d |
+| Papyrus (10 sheets) | 1 | 4 | Not available | Use wax tablets instead: 2d, reusable |
+| Wax tablet | 1 | 2 | Not available | Standard writing tool at the fort |
+| Healing herbs (basic kit) | 2 | 3 | 1 if you know what to look for | Germanic healers sell superior herbs: 4d |
+| Torch (10) | 1 | 1 | Not available commercially | Can make crude torches from pine resin: free |
+| Rope (50 feet) | 2 | 3 | 5 | Hemp rope; Germanic fiber rope also available |
+| Horse (riding) | 200 | 300 | Not for sale | Germanic ponies: 100d, more agile in forest |
+| Mule (pack) | 40 | 55 | Not available | The fort has 12; the quartermaster guards them |
+| Silk cloth (1 yard) | 30 | Not available at price | Not available | From Parthia via Alexandria; vanishingly rare |
+| Amber (raw, 1 lb) | 25 in Rome | 8 | 3 from the right Germanic trader | Common in the north; rare in Rome; trade good |
+| Eastern spices (mixed, 1 oz) | 5 | 20 | Not available | Gift for a Germanic chieftain; status marker |
+| Alexandrian glass cup | 15 | Not available | Not available | A luxury that announces wealth |
+| Silver *denarius* change | 1 | 1 | 4 sestertii for 1 denarius (bad rate) | Germanic traders prefer amber and goods to coin |
+
+---
+
+## Fort Vindolanda's Current Stock
+
+The quartermaster's inventory at campaign start. How much you can learn about it depends on how you ask.
+
+### What anyone can see (no check)
+
+The gate, the granary from outside, the weapon racks in the training yard. The fort is adequately supplied but not generously. The granary doors are closed. The weapon racks hold standard-issue equipment.
+
+### DC 10: casual conversation with a soldier or clerk
+
+Three weeks of grain at full strength. Standard weapon issue: adequate. Medical supplies: the *medicus* says adequate, which soldiers interpret as not-quite-adequate. The horses are short by four. The wine ration is suspended pending the next convoy.
+
+### DC 14: the official ledger with persuasion or access
+
+Precise numbers: 890 kg grain in store (21 days at full strength, 30 at current 550 effectives); 12 complete sets of *lorica segmentata* plus 8 in repair; 43 gladii issued, 7 in the armorer; medical kit adequate for field surgery but low on poppy extract, which the *medicus* has been requesting for three months; one ballista operational, one awaiting a replacement torsion cable that is six weeks overdue.
+
+### DC 17: the officer-reserve store (locked; requires Sleight of Hand or Deception)
+
+The Legate's private reserve: 4 amphorae of Falernian wine, 2 lbs eastern spice, 1 lb amber jewelry (trade goods or bribes), 300 denarii in a locked box, and one item wrapped in oilcloth that is clearly a weapon and is clearly not standard issue. The quartermaster does not discuss this store.
+
+---
+
+## The Supply Cycle
+
+A wagon train rolls in from Mogontiacum or the nearest major supply depot every four to six weeks. It carries grain, oil, replacement equipment, medical supplies, wine for the officers, and whatever personal goods soldiers ordered through official channels. Its arrival turns the fort briefly festive. Its absence turns the fort quietly hostile. Soldiers track the days between convoys the way civilians track the weather: constantly, without acknowledging they are doing it, with accurate and private alarm when the count goes wrong.
+
+The convoy is not just logistics. It carries letters from home, replacement personnel, news from Rome, and the small status goods that tell a man whether Rome still remembers he exists. When it is late, what suffers first is morale, not supply. The grain might hold another two weeks. The sense that the Empire is paying attention does not.
+
+| Session | Convoy situation | What the party can do |
+|---|---|---|
+| S1 | The convoy is 2 weeks late; excavation tools were in the shipment | Investigate delay (DC 13 Investigation: Legate held the order pending the excavation); or proceed without proper equipment (harder check on certain dungeon actions) |
+| S2 | The Tribune commandeers 30% of the arriving convoy for his Praetorians | Party can intercept the order (DC 15 Persuasion with evidence against the Tribune) or accept the shortage |
+| S3 | No convoy reaches the forest party | The party relies on Vercingetorix's tribe for food; this creates an obligation the DM can use |
+| S4 | Rome has everything; access is the problem, not supply | Social currency replaces material currency; what you can get depends on who you know |
+| S5 | The divine arena provides nothing | Mars offers the arena weapons (Handout 11); everything else the party carries is what they brought |
+
+---
+
+## Exotic Goods as Story Currency
+
+Not everything you carry is equipment. Some items function as social tools: they communicate things about you that words cannot. On the frontier, the right gift in the right moment opens doors that money and rank cannot.
+
+**Amber.** Cheap on the frontier, valuable in Rome. A gift of raw amber tells a Roman senator that you have been to the edge of the world and come back. It costs you 8 denarii at Vindolanda. In Rome, the same piece commands 25 or more. Bring some south when you go.
+
+**Eastern spices.** Expensive everywhere, but especially on the frontier where the supply chain is long and uncertain. Giving spices to a Germanic chieftain sends two messages at once: you have access to goods from the far end of the world, and you consider the chieftain worth that access. Both messages matter. Price on the frontier: 20 denarii per ounce. Value as a political tool: considerably higher.
+
+**Alexandrian glass.** A single cup as a gift to a senator says something coin cannot: "I know people who can source this." The senator knows the logistics required to get Alexandrian glass to a frontier fort. It costs 15 denarii in Rome (and nothing here, because it is simply unavailable). The social weight it carries is disproportionate to its price.
+
+**A letter sealed with genuine senatorial wax.** Worth more than any material goods in most social situations. It is not a bribe; it is evidence. It says that someone in the Senate knows your name and took the trouble to write it down. Carry it carefully. Do not use it on a problem you can solve another way.
