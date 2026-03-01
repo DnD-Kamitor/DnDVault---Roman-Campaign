@@ -16,6 +16,8 @@ book:
         - player_intro.qmd
         - session0.qmd
         - player_guide.qmd
+        - roman_tactics.qmd
+        - bestiary.qmd
     - part: "GM's Workbook"
       chapters:
         - gm_intro.qmd
@@ -24,8 +26,6 @@ book:
         - chapter3.qmd
         - chapter4.qmd
         - chapter5.qmd
-        - roman_tactics.qmd
-        - bestiary.qmd
         - appendix.qmd
 
 format:
