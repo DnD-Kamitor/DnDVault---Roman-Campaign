@@ -1,158 +1,372 @@
 # Chapter 3: Through the Dark Forest
 
+**Applying Guy Sclanders' Methodology**
+
 ## Session Overview
 
-The party must journey through the Teutoburg Forest—either fleeing Rome or on a secret mission to destroy the spear. They face natural dangers, Germanic tribes, and the spear's corrupting influence.
+The party travels through the Teutoburg Forest toward the sacred grove where the spear can be destroyed. The forest is ancient, hostile, and alive with old power. The spear whispers louder here. Someone in their group is no longer entirely themselves.
 
 **Level:** 5 → Advance to 6 at session end
-**Key Goal:** Reach the sacred grove where the spear can be destroyed
+**Duration:** 3–4 hours
+**Key Goal:** Reach the sacred grove; navigate the spear's growing influence on the party
+**Theme:** Fate vs. Free Will (the spear's pull vs. the choice to destroy it)
 
-## Opening: The Choice is Made
+### Guy Sclanders' Principles Applied
 
-Based on Session 2's ending, the party now has a clear goal:
-- **If allied with Tribune:** Secret mission to destroy the spear at an ancient grove
-- **If fugitives:** Hunted by Rome, seeking refuge with Vercingetorix
-- **If holding spear:** Fighting its corrupting whispers every day
+**Pressure Cooker:** The party is hunted (by Rome, or at least by the Legate), carrying a corrupting artifact, in enemy territory, and someone among them may be under the spear's influence. Every hour counts.
+
+**Sacrifice Principle:** The grove demands something real. This isn't solved by clever play — it costs something.
+
+**Three Clue Rule:** Three ways to identify which NPC is being influenced by the spear before they act.
+
+---
+
+## Pre-Session Preparation
+
+### Tracking Session 2 Outcomes
+
+Before writing any prep notes, confirm:
+
+| Question | Answer affects |
+|---|---|
+| Is Tribune Lucius alive and with the party? | His role in the journey and the grove ritual |
+| Did the party make an alliance with Vercingetorix? | Navigation, tribal encounters, Thusnelda access |
+| Is Augur Cassia with the party? | Ritual knowledge, the sacrifice choice |
+| What is the Legate's status? | Whether they're being actively pursued |
+| What is each character's corruption level? | Scene 1 intensity, grove ritual stakes |
+
+### Props & Handouts
+
+**Handout 6: The Forest Trail (Thusnelda's Map)**
+*Draw this by hand on rough paper — never use clean geometric shapes*
+```
+[A crude hand-drawn map showing:]
+- Three rivers (the middle one with a crossing marked)
+- A circle of seven stones (labeled in Germanic runes)
+- A smudge where a fourth river would be (deliberately ambiguous)
+- A warning symbol — crossed spears — at the forest's heart
+[At the bottom, in Germanic: "Mannaz raidho wunjo" = Man, Journey, Joy. Or: "The man who makes this journey finds what he seeks."]
+```
+
+**Handout 7: The Bloody Message**
+*Write on paper soaked in tea then dried, torn at edges*
+```
+[Found carved into a tree at camp, deep cuts made in darkness]
+
+MARS VIDET OMNIA
+(Mars sees all)
+
+[Below it, scratched as if made with a fingernail rather than a knife]
+
+I did not want to do this.
+```
+
+**Physical Props:**
+- A dark stone (obsidian or black pebble) to represent the spear's pull — pass it to whichever player is carrying the spear
+- Keep a second set of character sheets with corruption levels updated
+- Prepare a folded note to pass to the "influenced NPC" player privately at the start of Scene 1 (see DM Notes)
+
+### Reactive World Setup
+
+| NPC | Status This Session | What They're Doing |
+|---|---|---|
+| Legate Corvinus | Pursuing with 8 legionaries if he survived Session 2 | Motivated by the need to recover the spear before his disgrace becomes permanent |
+| Tribune Lucius *(if alive, with party)* | Covering his uncertainty with competence | Genuinely doesn't know if he's doing the right thing; is watching Cassia |
+| Augur Cassia *(if with party)* | Barely holding it together; the forest's old power speaks to her divine heritage | Increasingly certain the sacrifice must be her; hasn't told anyone |
+| Vercingetorix *(if allied)* | Navigating them through his people's territory | Keeping a war-band of six warriors nearby as protection; not mentioning it |
+| Thusnelda (new NPC) | Waiting at her grove, expecting them | She performed an augury three days ago. She knew they were coming. |
+
+---
+
+## Scene 0: Cold Open (5 minutes)
+
+**Start in media res — the camp is wrong.**
+
+They've been traveling for two days. They're camped in a clearing that should feel safe. It doesn't.
 
 **Read aloud:**
-> The forest swallows you whole. Ancient oaks rise like cathedral columns, their canopy so thick that even at midday, twilight reigns. The Romans call this the Dark Forest—the place where legions disappear. Your guide (Tribune/Vercingetorix/Augur) moves carefully, watching the shadows. Behind you, somewhere in the green gloom, pursuers gather.
 
-## Scene 1: The Haunted Grove
+> *You wake before dawn. The forest is completely silent.*
+>
+> *Not quiet — silent. No birds. No insects. No wind in the branches. The kind of silence that has weight.*
+>
+> *The spear is glowing.*
+>
+> *A faint red light pulses from its wrappings like a heartbeat. Around the cart carrying it — the dead zone. Everything within five feet of it is still. A leaf is frozen mid-fall between the spear and the ground.*
+>
+> *One of your companions is standing beside it. They've been there for some time. They aren't moving.*
+>
+> *On a nearby tree, carved deep into the bark, words in Latin:*
+>
+> **MARS VIDET OMNIA**
 
-The party camps in a grove that feels wrong—too quiet, too still.
+**DM Direction:** The companion standing by the spear is the NPC the party trusts most — or whichever party member drew the short straw privately (see DM Notes). They don't remember getting up. When questioned, they're genuinely confused and frightened. They didn't do it consciously. Not yet.
 
-**That night:**
-- Anyone attuned to the spear has vivid nightmares (Wisdom save DC 15 or gain exhaustion)
-- Visions of ancient battles, blood-soaked altars, screaming gods
-- The spear whispers: "You could end this. Take me to Rome. Rule the world."
+Don't resolve this. Just put it in the air. Cut to Scene 1 immediately.
 
-**Corruption Check:**
-- Anyone who touched the spear must make a Wisdom save (DC 14)
-- Failure: Corruption level increases by 1
-- At corruption level 3+, they begin arguing for keeping the spear
+---
 
-**Morning Discovery:**
-- Three legionaries are found dead, throats cut
-- No tracks, no signs of struggle
-- One has carved into a tree: "MARS SEES ALL"
+## Scene 1: Something is Wrong
 
-**Investigation (DC 14 Survival):**
-- The killer is among the party's NPCs
-- One of them (your choice) is possessed by Mars' influence through the spear
-- They'll try to kill whoever plans to destroy it
+Three dead birds lie near the camp perimeter. Then the party finds the handout — Handout 7, carved into a tree. One of their NPCs made it. They don't know they did.
 
-## Scene 2: The Germanic Ambush
+### Identifying the Influenced Character
 
-Germanic scouts have tracked the party. Depending on their relationship with Vercingetorix:
+The spear's influence is gradual. One NPC in the party is being slowly possessed — not controlled, but *pulled*. The DM should pass a folded note to that player at session start (see DM Notes for the note's contents). The player knows; the other characters don't.
 
-**If Allied with Vercingetorix:**
-- His scouts find them, offer safe passage
-- But they demand a toll: information about Roman troop movements
-- Moral dilemma: betray Rome or fight your allies?
+**Three ways to identify the influenced NPC before they act:**
 
-**If Not Allied:**
-- Ambush by 12 **Tribal Warriors** + 2 **Scouts** (CR 1/2 each)
-- Combat in dense forest (difficult terrain, limited visibility)
-- Can be ended via diplomacy if they drop weapons and negotiate
+**Clue 1: The Physical Signs**
+DC 13 Perception or Medicine:
+- Their eyes have a faint red tinge in direct light
+- They've been rubbing the same spot on their arm repeatedly (where they touched the spear in Session 1)
+- They're sleeping with their face turned toward where the spear is stored, even if the spear moved
 
-**Key NPC:** **Thusnelda**, a Germanic druid
-- She knows of the spear: "The God-Killer walks again"
-- Offers to guide them to the sacred grove where it can be unmade
-- Warns: "The grove demands a sacrifice—blood for blood, life for death"
+**Clue 2: Their Behaviour**
+DC 14 Insight during conversation:
+- They advocate for keeping the spear more strongly than before, but can't articulate why
+- They become visibly agitated when someone else touches or moves the spear
+- When asked directly *"Are you alright?"*, there's a micro-pause before they answer
+
+**Clue 3: The Spear Reacts**
+If the party examines the spear's wrappings or attempts to read its aura (Arcana DC 13 or Religion DC 14):
+- The spear "leans" — physically tilts — in the influenced NPC's direction
+- Anyone sensitive to divine energy (Clerics, Paladins) can feel the connection
+- Cassia, if present, sees the influence immediately: *"There's a thread between that person and the spear. I missed it. I'm sorry, I missed it."*
+
+### What the Influenced NPC Does if Undetected
+
+At Scene 4 (the grove), the influenced NPC attempts to stop the ritual — not violently at first, but with increasingly urgent arguments. If not caught, they attempt to take the spear and run at the ritual's climax. They can be brought back with a successful DC 15 Wisdom saving throw from the party (as a group action — holding them, calling to them, breaking the connection through sheer human contact). If the party succeeds, the NPC is devastated by what they nearly did.
+
+---
+
+## Scene 2: Thusnelda's Scouts
+
+Germanic scouts find the party. What happens next depends on Session 2.
+
+**If allied with Vercingetorix:**
+
+> *Four figures appear in the trees. Forest-dark clothes, no armor. One raises a hand — not a weapon.*
+>
+> *Vercingetorix says, quietly: "My people. We are safe here."*
+
+The scouts offer to take the party to **Thusnelda**, a druid who tends the sacred grove. They know what the party is carrying. They've been expecting them.
+
+*Toll: Information about Roman troop movements along the southern Limes. Moral weight: Sharing this is technically treason. It's also practically necessary.*
+
+**If not allied:**
+
+Ambush — 12 **Tribal Warriors**, 2 **Scouts** (CR 1/2 each) in the tree line. The forest negates Roman tactics: no formations, difficult terrain, low visibility.
+
+Can be ended diplomatically — drop weapons, use Persuasion DC 14 with any Germanic phrase from the player guide, or demonstrate they're trying to destroy the spear (the scouts recognize it and stop). Vercingetorix appears if combat goes 3+ rounds regardless — he's been following.
+
+**Thusnelda** — arriving with the scouts or separately:
+
+A small, ancient-looking Germanic woman. She carries an oak staff carved with spiraling runes. She smells of pine smoke and something metallic. She looks at the spear and then at the party with the calm gaze of someone who has spent decades looking at hard things.
+
+> *"God-Killer. Still breathing. I had hoped you would destroy it by now. I see you have not."*
+
+She knows:
+- Where the grove is (one full day's travel, through the river)
+- That the grove demands a willing sacrifice — not a death, but a loss of something real
+- That the ritual will alert Mars. He will come. That cannot be avoided.
+- That the party will succeed or fail based on what they're willing to give up, not on their fighting ability
+
+She will guide them. She asks nothing in return — this is her purpose.
+
+**Thusnelda speaks like a woman with no time for anything except the truth:**
+
+> *"The spear belongs to no one. Not the god who made it, not the tribe that used it, not the empire that found it. It belongs to the wound it keeps open. You must close the wound."*
+
+> *"Your friend there" — she looks at the influenced NPC — "has a thread in them. Cut it soon. The forest is not kind to loose threads."*
+
+> *"Fear the grove's demand. Most people who come here for the ritual choose something that hurts a little. That is not enough. The grove will know."*
+
+---
 
 ## Scene 3: The River Crossing
 
-The party must cross a swollen river to reach the sacred grove.
+The sacred grove is on the far side of the Vitulans river — currently swollen with spring melt. The crossing is hard under normal circumstances. It's harder with pursuers.
 
-**Challenges:**
-- River is 100 feet wide, fast-flowing (DC 14 Athletics to swim)
-- Fallen tree serves as a bridge (DC 12 Acrobatics to cross safely)
-- Rope can be strung across with teamwork
+**The river:** 90 feet wide. Fast-moving (DC 13 Athletics to swim). A fallen oak spans the narrowest point, slippery (DC 11 Acrobatics to cross without falling). Rope can be strung across (DC 10 Athletics as a group action) to help everyone.
 
-**Complication: The Hunters Arrive**
+**The pursuers arrive:**
 
-As they cross, Roman pursuers catch up:
-- 8 **Legionaries** (use **Guard** stat blocks)
-- 1 **Centurion** (use **Knight** stat block, CR 3)
-- Led by the Legate if he survived Session 2
+If the Legate is pursuing: his advance force catches up exactly when the party is mid-crossing.
+- 8 **Legionaries** (use Guard stat blocks)
+- 1 **Centurion** (use Knight stat block, CR 3)
+- The Legate himself if he's still in the picture: use Veteran stat block
 
-**Set-piece Combat:**
-- Half the party on each side of the river
-- Ranged attacks across the water
-- Melee on the bridge
-- Environmental hazards: fast current, slippery logs
+**The split-party set piece:**
+- Half the party is on the far bank, half still crossing or on the near bank
+- Ranged combat across the water (half cover for anyone behind the banks)
+- Melee on the fallen log (anyone knocked off: DC 13 Athletics to avoid being swept 20 feet downstream)
+- The river is impassable to heavy armor (Strength save DC 14 for anyone in metal armor who falls in)
 
-**Moral Choice:**
-- The Romans are just following orders
-- Killing them makes the party murderers in Rome's eyes
-- Can they find a way to stop them without bloodshed?
+**The moral choice:**
+The legionaries are just following orders. They've committed no crime. They have families and years of service ahead of them.
+- Killing them is technically murder by Roman law
+- Letting them cross means a fight the party might not win
+- Destroying the log severs pursuit but means whoever's still on the near bank is cut off
+
+*Varro (if present) will not fight his own men. He'll stand at the bank and let the party cross, then step aside. The legionary centurion will recognize him, hesitate, and that hesitation might be all the time needed.*
+
+---
 
 ## Scene 4: The Sacred Grove
 
-Deep in the forest lies an ancient Germanic holy site—older than Rome, older than memory.
+A day past the river. The forest thins. Then it opens.
 
 **Read aloud:**
-> You emerge into a clearing unlike any in the forest. Seven standing stones ring a granite altar, each carved with spiraling runes that seem to shift in the firelight. The air thrums with power—old power, wild power. The spear pulses in response, eager and hungry. Thusnelda the druid kneels at the altar: "Here was where the God-Killer was forged. Here it must be unmade."
 
-**The Ritual Requirements:**
+> *Seven standing stones ring a granite altar. Each stone is twice your height and carved with spiraling runes that don't hold still when you look at them directly — they seem to shift, rearranging themselves, as if the stone itself is thinking.*
+>
+> *The air is different here. Heavier. Older. The spear pulses in long, slow throbs now, like a heart slowing toward sleep.*
+>
+> *Thusnelda kneels at the altar. She doesn't speak immediately. Then:*
+>
+> *"Leave nothing at the door. What you carry in, you carry to the altar. All of it. The weapon, the doubts, and whatever part of you this journey has taken."*
 
-Thusnelda explains:
-1. The spear must be placed on the altar
-2. Blood of a warrior must anoint it (1d6 damage, voluntary)
-3. A sacrifice must be made—something precious given willingly
-4. The party must speak the words: "We unmake what was made in darkness"
+### The Ritual Requirements
 
-**The Sacrifice:**
-- Can be a magic item
-- Can be a memory (lose proficiency in a skill)
-- Can be an NPC ally who volunteers
-- **Or** someone can take the corruption upon themselves (instant corruption level 5)
+Thusnelda lays out what is needed:
+
+1. The spear must be placed on the altar, unwrapped, bare iron on stone
+2. Blood from a warrior must anoint it — voluntary, 1d6 damage, cannot be healed until after the ritual
+3. The group must speak in unison: *"We unmake what was made in darkness."* (in Latin or Germanic — both work)
+4. A sacrifice must be offered willingly — something of genuine value, given without coercion
+
+**The sacrifice must be real:**
+
+| Offer | What it means | The grove's response |
+|---|---|---|
+| A valuable magic item | Loss of power | Acceptable |
+| A proficiency | Permanently lose one skill proficiency | Acceptable |
+| A memory | Choose one important memory — it's gone | Acceptable — grove returns a dream in its place |
+| A year of life | Lifespan shortened | Acceptable |
+| Cassia volunteers herself | Death, willingly | More than acceptable — Thusnelda tries to stop her |
+| Something with no real cost | Any item worth less than the character cares about | *The altar goes cold. Nothing happens. The grove knows.* |
+
+**The influenced NPC's crisis moment:**
+
+As the ritual begins, the influenced NPC feels the connection intensify. This is the moment they either break free or break.
+
+If detected and supported: the party can help them resist with a group Wisdom check (DC 14). Success means they participate in the ritual and their corruption is cleared by the grove's power. Failure means they physically grab for the spear mid-ritual — not maliciously, but driven. They can be stopped without combat (Athletics grapple DC 12, or someone calling their name three times). If stopped this way, they collapse, weeping, with no memory of the last hour.
+
+---
 
 ## Scene 5: Mars Intervenes
 
-As the ritual begins, **Mars himself manifests**—not physically, but as a divine presence.
+The ritual begins. The spear lights up. And Mars arrives.
 
-**Encounter: Avatar of Mars**
-- Use **Fire Elemental** stat block (CR 5) but reskin as divine wrath
-- Appears as a towering figure of flame and fury
-- Speaks: "THE SPEAR IS MINE! YOU DARE DESTROY WHAT I CREATED?"
+Not physically. As a presence — a pressure in the air that makes the stones vibrate and causes every shadow to point toward the altar regardless of the light source. Then his voice, from everywhere and nowhere:
 
-**Combat Options:**
-1. **Fight:** Destroy the avatar (hard battle)
-2. **Complete the Ritual:** Hold it off while one person finishes the ritual (skill challenge)
-3. **Bargain:** Offer Mars something else in exchange (what could a god want?)
+**Read aloud:**
 
-**Skill Challenge: Complete the Ritual**
-- 4 successes before 3 failures
-- Each round, one person makes a check while others defend:
-  - Religion DC 15 (speak the words of unmaking)
-  - Arcana DC 15 (channel the grove's ancient magic)
-  - Athletics DC 13 (hold the spear steady)
-  - Insight DC 14 (resist the spear's influence)
+> *"MORTALS."*
+>
+> *The word is not a sound. It moves through you like a wave, like a bell struck inside your chest.*
+>
+> *"YOU DARE UNMAKE WHAT A GOD FORGED."*
+>
+> *The standing stones crack. Not shattering — cracking, like old bones, like the grove itself is bracing for something.*
+>
+> *Thusnelda doesn't move. Her voice is steady:*
+>
+> *"Finish the ritual. Do not look up. Whatever you see, do not look up."*
+
+### Three Ways to Complete the Ritual
+
+**Option A: Combat — hold the grove against divine wrath**
+
+Mars manifests as divine wrath through the stones themselves:
+- Animated Standing Stones: 3 **Stone Golems** (CR 10) but with 120 HP each — they're avatars of Mars' anger, not the full thing
+- While some party members fight, one holds the ritual (see Skill Challenge below)
+- Destroying the golems doesn't end the ritual — it just buys time
+
+**Option B: Skill Challenge — complete the ritual under pressure**
+
+4 successes before 3 failures. Each round, one person holds the ritual while others defend:
+- **Religion DC 14** — speak the words of unmaking with genuine conviction
+- **Arcana DC 15** — channel the grove's ancient power, not fighting it
+- **Athletics DC 12** — hold the spear steady as it fights back
+- **Insight DC 14** — resist the spear's final promise (*"They'll abandon you. Take me and they won't have to."*)
+
+Failures mean the ritual stumbles, and Mars' pressure increases: each failure adds one animated stone.
+
+**Option C: Bargain — offer Mars something before the ritual begins**
+
+If the party steps back from the altar and speaks to Mars directly (Persuasion DC 17 or Religion DC 16):
+> *"Great Mars, the spear was being used to corrupt and destroy men in your name. We destroy it not to defy you, but because what it was doing dishonored what you stand for."*
+
+A long silence. Then:
+> *"...CONTINUE. I WILL NOT MAKE IT EASY. BUT I WILL NOT STOP IT."*
+
+This gives advantage on all Skill Challenge rolls.
+
+---
 
 ## Conclusion
 
-**If they destroy the spear:**
-- It shatters with a scream that echoes across the spiritual realm
-- Mars' avatar dissipates, roaring: "YOU HAVE MADE AN ENEMY OF WAR ITSELF!"
-- The corruption fades from anyone affected
-- Thusnelda: "You have done what heroes of old could not. But Mars does not forget."
+**If the spear is destroyed:**
 
-**If they fail or keep it:**
-- Mars claims the spear—or whoever holds it
-- They must flee with a god's wrath upon them
+> *The iron shatters — not with a bang, but with a sound like an exhalation. Like something finally resting.*
+>
+> *The runes on the standing stones go dark. The air clears. Somewhere far away, in a direction that isn't quite north, you hear a sound that might be a god, furious, far off.*
+>
+> *The influenced NPC's eyes clear. They look at their hands. They look at the grove. They say nothing for a long time.*
+>
+> *Thusnelda sweeps iron fragments from the altar into a clay pot and seals it with beeswax. "I will bury these in seven places," she says. "It will take time. Go before he finds his voice again."*
+
+Any corruption below level 5 is reduced by 1. Level 5 characters remain affected — the ritual was about the spear, not about them.
+
+**If the ritual fails or is interrupted:**
+
+The spear remains intact. Mars' presence intensifies and will not leave until the ritual is completed or the spear leaves the grove. They must flee into the forest with a partially-completed ritual, a god's attention, and a cursed weapon they came to destroy. Session 4 begins in a worse position.
 
 **Advance to Level 6**
 
+---
+
 ## DM Notes
 
-### Guy Sclanders' "Sacrifice Principle"
-Victory should cost something meaningful. Players should feel they've earned the win through sacrifice, not just dice rolls. The ritual's sacrifice requirement embodies this perfectly.
+### OGAS This Session
 
-### Branching Paths
-This session has multiple valid outcomes based on player choices:
-- Path A: Spear destroyed, Mars angry, party must deal with consequences
-- Path B: Spear kept, corruption spreads, different finale ahead
-- Path C: Bargain struck with Mars, new alliance formed
+**Vercingetorix the Red** *(if present)*
+- **Objective:** Protect his people
+- **Goal (this session):** Ensure the spear is destroyed at the grove — this is his people's three-generation wound
+- **Agenda:** Guide, protect, and keep the party moving toward the grove even when they want to stop
+- **Secret:** He is dying. This is his final campaign. He hasn't told anyone because it would change how they treat him, and he doesn't want that.
 
-Track which path they take for Session 4's opening.
+**Thusnelda** *(new NPC)*
+- **Objective:** Maintain the grove's power and fulfill her duty as its keeper
+- **Goal (this session):** Get the party through the ritual correctly
+- **Agenda:** Be completely honest about what the ritual requires, even when that honesty is painful
+- **Secret:** She performed this ritual once before, fifty years ago, with Vercingetorix's grandfather. It failed because the sacrifice was unwilling. She has carried that failure since.
+
+**Mars (divine presence)**
+- **Objective:** Reclaim his dignity and have his weapon back
+- **Goal (this session):** Stop the ritual
+- **Agenda:** Apply pressure through the influenced NPC, through the grove itself, through the confrontation at the end
+- **Secret:** He's been watching this party since Session 1. He respects what he's seen. He won't admit this.
+
+### The Influenced NPC — Private Note
+
+At session start, pass the influenced player this folded note:
+*"You woke last night and stood beside the spear for two hours. You don't remember doing this. The spear feels warm when you're near it. It has been making an argument, quietly, that makes a certain kind of sense: the power in this weapon could protect the people you care about. You haven't told anyone. You're not sure you're wrong."*
+
+This player should roleplay subtle changes — nothing dramatic until the ritual. The revelation should feel earned, not shocking.
+
+### The Sacrifice — What Works
+
+The grove is a mirror. It reflects what a character actually values versus what they claim to value. If a player tries to sacrifice something they don't care about, Thusnelda will know immediately:
+
+> *"That is not a sacrifice. That is a fee. The grove is not a toll booth."*
+
+The DM should know each character's central motivation (from Session 0) and gently push toward a sacrifice that actually costs something in that direction. A warrior who lives for glory might lose their greatest battle memory. A soldier who dreams of retirement might lose a year of life. A cleric who values divine connection might lose one prepared spell slot permanently.
+
+The sacrifice is permanent. Honor it.
+
+### Pacing Note: The Forest
+
+This session should feel like the pressure never fully releases. The investigation of the cold open mystery, the river crossing, the grove itself — there's no safe moment until after the spear is destroyed. Push toward the grove. The forest is hostile to lingering.

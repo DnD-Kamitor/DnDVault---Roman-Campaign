@@ -1,150 +1,323 @@
 # Chapter 4: Return to Rome
 
+**Applying Guy Sclanders' Methodology**
+
 ## Session Overview
 
-The party returns to Rome as either heroes or fugitives. They must navigate the political intrigue of the Senate, discover who truly wanted the spear, and prepare for the final confrontation.
+The party enters Rome — as heroes, fugitives, or something in between. Senator Brutus has been operating in the shadows since Session 1. He's visible now. They have less than 24 hours before the Emperor's Triumph turns the streets of Rome into the perfect cover for an assassination.
 
 **Level:** 6 → Advance to 7 at session end
-**Key Goal:** Uncover the conspiracy and choose a side
+**Duration:** 3–4 hours
+**Key Goal:** Identify and stop Brutus' plan before the Triumph
+**Theme:** Duty vs. Ambition — Brutus crystallises this. He is what happens when ambition replaces duty.
 
-## Opening: The Eternal City
+### Guy Sclanders' Principles Applied
 
-**If spear was destroyed:**
-> Rome rises before you like a marble dream. The Capitoline Hill gleams white in the sun, the Senate House stands proud, and the Colosseum roars with distant crowds. But beneath the beauty, you sense rot. The gods are angry. Mars most of all.
+**Never Present Villain, Now Revealed:** Brutus has been the force behind every problem since Session 1. This session he steps forward. Everything the party suspected is true. He's also genuinely compelling — he might even be right about Rome's corruption.
 
-**If spear still exists:**
-> Rome beckons like a serpent's smile. Somewhere in those marble halls, someone is searching for the spear you carry. Someone powerful. Someone willing to kill for it. The city that once felt like home now feels like a trap.
+**Three Clue Rule:** Three independent paths to understanding Brutus' full plan before the Triumph.
 
-## Scene 1: Audience with the Senate
+**Escalation:** Personal → Fort → Regional → **Imperial**. Rome itself is the stakes now.
 
-The party is summoned before a secret Senate committee in a private chamber.
+---
 
-**Present:**
-- **Senator Gaius Cassius Brutus** (the primary villain)
-- **Senator Marcus Tullius** (an ally)
-- **Vestal Virgin Cornelia** (neutral observer)
-- **Tribune Lucius** (if alive)
+## Pre-Session Preparation
 
-**Senator Brutus' Proposal:**
+### Tracking Sessions 1–3
 
-He's smooth, charming, and utterly ruthless:
-- Congratulates them on dealing with the "frontier incident"
-- Reveals he was behind the Tribune's orders
-- Offers them wealth, land, citizenship for their families
-- **In exchange:** They must retrieve the spear (if destroyed) or give it to him (if it exists)
+| Question | Session 4 implication |
+|---|---|
+| Was the spear destroyed? | Brutus' cult is attempting to reconstitute it (Scene 3). If the spear exists, he wants it now. |
+| Is Tribune Lucius alive? | He can provide direct Senate access and knows Brutus personally. Major asset. |
+| Is Cassia alive? | She can perform augury in Rome, giving divine intelligence. |
+| What is Vercingetorix's status? | He won't come to Rome, but if alive and allied, he provides a message in Scene 1. |
+| Did the Legate survive? | He may have already reported to the Senate — the party's reputation in Rome depends on this. |
 
-**His True Plan (DC 16 Insight to sense):**
-- He plans to use the spear to assassinate the Emperor during the upcoming Triumph
-- Install himself as dictator "to restore the Republic"
-- Believes Mars will bless this if enough blood is spilled
+### The City of Rome, 175 AD
 
-**Senator Tullius' Warning:**
-- Pulls them aside afterward
-- "Brutus is mad. He dreams of being Romulus reborn."
-- Offers to help stop Brutus if they'll testify against him
+Before describing anything else, establish what Rome feels like:
+
+> *Fourteen hills. A million people. The smell of it hits before you see it — bread, smoke, animal waste, incense, and the Tiber, always the Tiber, copper-green and cold. The sound is constant: carts banned in daytime traffic means the night never fully sleeps, and the day is voices, hammering, animals, arguments, vendors, soldiers, priests.*
+>
+> *The Capitoline Hill gleams white above everything. The Senate House. The Temple of Jupiter. The Forum below it, Rome's beating heart.*
+>
+> *Everything here has a price. Information, access, safety, testimony. The question is who's paying for what.*
+
+Players should feel that Rome is simultaneously magnificent and dangerous. It is the most powerful city in the world and also a place where people disappear.
+
+### Props & Handouts
+
+**Handout 8: Senator Brutus' Correspondence (archive copy)**
+```
+Found in Senate financial records (DC 15 Investigation):
+
+PRIVATE CORRESPONDENCE — SEAL OF G. CASSIUS BRUTUS
+
+"The frontier matter is resolved. Our man has instructions.
+The artifact will not complicate the Triumph as feared.
+I trust to your discretion in the matter of our witnesses —
+loose threads are the enemy of all great projects.
+
+Regarding the Triumph itself: the arrangements are complete.
+The instrument is consecrated. What was broken will be made
+whole again in time for the procession.
+
+Roma semper resurget."
+        — G.C.B.
+
+[Note in margin, different handwriting: "Witnesses = the party."]
+```
+
+**Handout 9: The Triumph Programme (public propaganda)**
+```
+TRIUMPH OF IMPERATOR MARCUS AURELIUS
+Honoring victories on the Germanic frontier
+THE KALENDS OF THE MONTH OF MARS
+
+PROCESSIONAL ORDER:
+Dawn: Sacrifice at the Temple of Jupiter Optimus Maximus
+First hour: Senate in formal procession, Capitoline to Forum
+Second hour: Military prisoners displayed (Germanic chieftains)
+Third hour: The Emperor's chariot, via Sacra
+Fourth hour: Games, Circus Maximus — open to all citizens
+
+[Scrawled note from an informant at the bottom:]
+"Brutus' villa: unusual traffic last night. Four men in dark
+cloaks. Carrying something long. Wrapped."
+```
+
+**Physical Props:**
+- A small map of Rome's seven hills (easily drawn on a napkin)
+- A coin (real or prop Roman coin if available) to pass to the party as Brutus' "gift"
+
+### Reactive World Setup
+
+| NPC | Status | What they're doing in Rome |
+|---|---|---|
+| Senator Brutus | Moving fast — the Triumph is tomorrow | Finalising the assassination plan; has the replica spear; believes himself Rome's last hope |
+| Tribune Lucius *(if alive)* | In Rome but in a difficult position | Can get the party Senate access but is personally implicated in everything; looking for an exit |
+| Augur Cassia *(if alive)* | Has performed three auguries since the grove | Receiving visions of blood at the Emperor's triumph — she's been trying to warn someone, but no one in Rome will receive her |
+| Legate Corvinus *(if alive)* | Filed a report blaming the party | Working through legal channels to recover his reputation; might cooperate if offered a way to save face |
+| Vercingetorix *(if alive)* | Outside the city walls | Won't enter Rome. Sends a message: *"The god is angry. The city smells of his anger. Whatever you do, do it today."* |
+
+---
+
+## Scene 0: Cold Open (5 minutes)
+
+**Start in media res — something is already wrong.**
+
+The party arrives at Rome's outskirts on the Appian Way. They're met on the road before they reach the gates.
+
+**Read aloud:**
+
+> *The Appian Way. Lined with tombs, the way Roman roads always are — the dead watching you enter the city.*
+>
+> *Your escort from the last post, a single rider named Gaius who joined you two days ago, is lying face-down in the road twenty feet ahead. His horse grazes nearby, unbothered.*
+>
+> *He's not dead. Just unconscious, with a careful bruise at the base of his skull. Tucked under his arm: a note, sealed in plain wax. No sigil.*
+
+**The note (no envelope, just folded paper):**
+
+*"Leave the matter of the spear alone and live. The Triumph is not your business. The men who started this are prepared to finish it. You are not prepared for what finishing it will cost."*
+
+*No signature.*
+
+**DM Direction:** Don't let this stop them. It should make them move faster. Someone in Rome knows exactly when and how they arrived. The city already has eyes on them.
+
+---
+
+## Scene 1: Entering Rome
+
+The party needs allies, intelligence, and somewhere safe to operate from in the next 24 hours. Three options immediately available:
+
+**Senator Marcus Tullius** — the Brutus opposition
+
+A moderate Senator, genuinely alarmed by what's happening. He can be found at the Temple of Saturn, where he regularly meets clients.
+
+> *He's a tired man in his sixties. He looks at the party the way a man looks at his last hope.*
+>
+> *"I know why you're here. Brutus has been building to this for three years. He believes the Republic is salvageable if enough blood is spilled in the right places. He's wrong about the blood. He may not be wrong about Rome."*
+
+He offers: Senate access, a safe house, and a private route to the Triumph. In exchange: testimony against Brutus before a Senate committee after the Triumph.
+
+**Tribune Lucius** *(if alive)*
+
+He's been in Rome for two days. He looks like a man who hasn't slept.
+
+> *"I tried to stop this quietly. That option is gone. Brutus knows you're coming — he has people at every gate."*
+
+He can provide: direct access to the Senate archives (Handout 8), knowledge of Brutus' villa location, and personal testimony. He wants: immunity from prosecution, which Senator Tullius can provide if the party negotiates.
+
+**Augur Cassia** *(if alive)*
+
+She came to Rome ahead of the party. She's been at the Temple of Apollo for two days, trying to get anyone to listen.
+
+> *"Nobody will hear me. I'm a frontier augur. I have no standing here. But I've performed three auguries since the grove, and they all show the same thing: blood on the processional route. An Emperor who doesn't reach the Colosseum."*
+
+She can provide: divine intelligence on the timeline (Mars' involvement is accelerating), and access to the Temple network (priests who owe her favors).
+
+---
+
+## Three Clue Rule: Understanding Brutus' Full Plan
+
+The party needs to discover: that Brutus has a replica spear, that it's been ritually consecrated, and that the assassination is planned at the moment the Emperor's chariot passes beneath the Arch of Titus (where the crowd is thickest and Praetorian spacing is widest).
+
+**Clue 1: The Senate Archives** (Tribune's access)
+DC 15 Investigation, 1 hour:
+- Find Handout 8 — Brutus' correspondence
+- Cross-reference with Tribune's knowledge: "the instrument is consecrated" = the replica spear
+- "Made whole again" = they've completed a ritual to give the replica partial power
+
+**Clue 2: The Cult Temple** (following Brutus' agents)
+DC 14 Stealth, or a hired street informant (5 *denarii*):
+- Brutus' agents have been moving through the Subura at night
+- They lead to a basement below a metalworker's shop: a makeshift temple to Mars, blood-soaked stones, a replica spear on an altar
+- The cult members, if captured (4 **Cult Fanatics** CR 2), reveal: the assassination happens during the third hour of the Triumph, at the Arch of Titus
+
+**Clue 3: Cassia's Augury**
+If Cassia performs augury at the Temple of Apollo (1 hour, costs a vial of holy water):
+- Vision: A man in a Senator's toga, raising a spear in a crowd. The Emperor's face. An arch. Then blood.
+- She can identify the arch from the vision — it's distinctive. It's the Arch of Titus.
+- She cannot see the attacker's face. But she knows it's not Brutus himself — *"He would never do his own killing."*
+
+---
 
 ## Scene 2: The City of Shadows
 
-The party has 24 hours before the Emperor's Triumph. They can investigate:
+While gathering intelligence, the party navigates Rome itself. Use any of these optional scenes to fill time and deepen the setting:
 
-**Option A: Follow Brutus' Agents**
-- DC 14 Stealth to tail them through Rome
-- Discover an underground temple to Mars
-- Cultists preparing a ritual to resurrect the spear
-- Combat: 6 **Cult Fanatics** (CR 2 each)
+**Option A: Confronting Brutus Directly**
 
-**Option B: Gather Evidence**
-- DC 15 Investigation in the Senate archives
-- Find records of Brutus embezzling military funds
-- His correspondences mention "the God-Killer returns"
-- Can use this to turn other Senators against him
+He receives them at his villa — and he was expecting this.
 
-**Option C: Seek Divine Aid**
-- Visit the Temple of Jupiter
-- The High Priest performs augury (costs 100 gp)
-- Jupiter speaks through omens: "The scales must balance. Blood for blood. Ambition for humility."
-- Cryptic but helpful: suggests Mars can be appeased with a worthy sacrifice
+> *The atrium is magnificent. Marble floors. A bronze statue of Cincinnatus. He pours wine himself — a gesture of calculated equality.*
+>
+> *"Sit. You've earned a conversation."*
 
-**Option D: Confront Brutus Directly**
-- Dramatic scene in his villa
-- He monologues about Rome's corruption
-- "The Republic died with Caesar. I will resurrect it."
-- Can convince him to stand down (DC 18 Persuasion) or goad him into revealing plans
+Brutus is the most dangerous person in this session, and the danger isn't his stat block — it's his argument. He genuinely believes he's saving Rome:
 
-## Scene 3: The Underground Temple
+> *"The Emperor is a philosopher playing at general. The legions are loyal to their generals, not to a man who quotes Marcus Aurelius while Rome rots from the Senate outward. I have watched corruption eat this city for thirty years. Thirty years. Someone has to hold the knife."*
 
-Following clues leads to Brutus' secret temple beneath Rome.
+He's compelling. He might be right about the problem. He is catastrophically wrong about the solution. DC 16 Insight to catch the thing he won't say: he doesn't believe Rome will be better after. He just needs something to have mattered.
 
-**Read aloud:**
-> Beneath the city, deeper than the sewers, you find it—a cavern carved into living rock. The walls run red with ochre paint made to look like blood. An altar of black stone dominates the center, and upon it... a spear. Not the original—a replica, but one infused with dark ritual magic. Around it, cultists chant in Latin: "Mars Ultor! Mars Ultor! Avenge us!"
+He will not back down from the plan. He will offer them the chance to not be in the way:
+> *"Walk away. Go back to your frontier. This is above you."*
 
-**Encounter:**
-- **Senator Brutus** (use **Priest** stat block but with +2 AC from magic armor)
-- 4 **Cult Fanatics**
-- 1 **Gladiator** (his personal bodyguard)
+**Option B: Following the Evidence**
 
-**The Ritual:**
+Investigating the basement cult temple: the ritual space is active. Someone has been performing nightly rites. The replica spear is *almost* as dangerous as the original — not cursed, but attuned to Mars' anger. Anyone touching it must make a DC 14 Wisdom save or feel the pull of divine wrath (not corruption, but rage — disadvantage on Charisma checks for an hour).
 
-If the party disrupted it in time:
-- Brutus rages: "You've doomed Rome! The gods demand blood!"
-- He attacks with the replica spear (functions as +1 magic spear, but not cursed)
+4 **Cult Fanatics** (CR 2) and 1 **Gladiator** (the bodyguard, CR 5) if they arrive when cult members are present.
 
-If they're too late:
-- Brutus completes the ritual
-- Mars partially possesses him (**Brutus transforms: HP doubled, +4 to hit, attacks twice per turn**)
-- "I AM THE HAND OF MARS! I WILL PURGE ROME IN FIRE AND BLOOD!"
+**Option C: Seeking Divine Aid**
 
-## Scene 4: The Emperor's Triumph
+Temple of Jupiter, High Priest:
+- Augury costs 100 *denarii* or a worthy gift (DC 14 Persuasion to negotiate)
+- Jupiter's response through omens: *"The scales must balance. Blood for blood. Ambition for humility. The god of war watches what you do next."*
+- Less specific than Cassia, but confirming: Mars is observing. His response to how this ends will define Session 5.
 
-The climax occurs during the public Triumph—the Emperor's victory parade.
+**Option D: The Legate's Complication**
 
-**Setting:** The streets of Rome, thousands of citizens watching
+If the Legate survived and filed a report, the Praetorian Guard is looking for the party. A squad of 6 Praetorians (use Veteran stat blocks) attempts to detain them for questioning at some point during Scene 2. This can be:
+- Avoided with a DC 15 Stealth or 14 Persuasion (official authority from Senator Tullius helps)
+- Turned: The Praetorian commander (DC 17 Persuasion with evidence) can be convinced that the greater threat is Brutus, not the party
 
-**If Brutus escaped:**
-- He makes his move during the parade
-- Attempts to kill the Emperor with the spear/replica
-- Party must stop him publicly
-- Chase scene through crowds (skill challenge)
+---
 
-**If Brutus was captured:**
-- His remaining agents make the attempt
-- Party must identify the assassin among the crowd
-- DC 16 Perception each round (3 rounds before the Emperor is in danger)
+## Scene 3: The Triumph
 
-**Public Combat:**
-- Fighting in front of Rome
-- Civilians scream and flee (difficult terrain)
-- Praetorian Guards join the fight
-- Every action is witnessed—reputation consequences
+Dawn of the Triumph. Rome is packed — a million people in the streets for the Emperor's parade.
+
+**The Triumph's structure** (this is the countdown clock):
+
+| Time | Event | Party opportunity |
+|---|---|---|
+| Dawn | Sacrifice at Jupiter's temple | Last chance to reach Jupiter's priest for divine aid |
+| First hour | Senate procession | Find and track Brutus in the crowd |
+| Second hour | Germanic prisoners displayed | Vercingetorix's kin are in chains — does that change anything? |
+| Third hour | **Emperor's chariot, Arch of Titus** | **The assassination attempt** |
+| Fourth hour | Games begin | If they failed: chaos; if they succeeded: the aftermath |
+
+**The Arch of Titus:** A bottleneck in the processional route. The crowd is thickest here. Praetorian spacing is widest because of the press of bodies. This is where Brutus' agent is positioned.
+
+**Brutus' agent:** Not Brutus himself — he's in the Senate procession, establishing his alibi. His agent is a gladiator named **Marius Coda** — a man Brutus freed from slavery who believes in his patron completely. He carries the replica spear under a citizen's cloak.
+
+*Marius Coda: Use **Gladiator** stat block (CR 5), no armor (hidden), +4 initiative from training. He's not evil. He's loyal.*
+
+**Finding Marius in the crowd:**
+- DC 15 Perception each round to spot the concealed weapon profile in the crowd
+- DC 13 Insight on anyone behaving oddly near the route
+- Cassia's augury vision, if gathered earlier, gives the precise location: south side of the Arch, second arch from the left
+
+**The public fight:**
+Every action is witnessed by thousands of citizens. The Praetorians will intervene after 3 rounds — as enemies of everyone until the situation is clear. The party can:
+- Identify themselves and their authority (DC 14 Persuasion, faster with Tribune's credentials)
+- Hold the Praetorians off while dealing with Marius
+- Stop Marius non-lethally (grapple/manacle) — which creates a living witness against Brutus
+
+**If Brutus is exposed publicly** (party presents evidence to the Praetorian commander in the moment):
+The Praetorians arrest Brutus during the Triumph itself. The most dramatic possible ending — and publicly devastating for Brutus, who valued his reputation above everything.
+
+**If Brutus escapes:**
+He's gone within the hour — he has a ship waiting. He's now a fugitive with resources, a plan that almost worked, and a score to settle. Seeds for a sequel.
+
+---
 
 ## Conclusion
 
-**Victory Outcomes:**
-
-**If they saved the Emperor:**
-- Honored as heroes
-- Granted Roman citizenship and land
-- But: Mars is still angry about the spear
-
-**If they exposed the conspiracy:**
-- Senate is purged of conspirators
-- They're celebrated but also feared
-- "Those who topple Senators can topple anyone"
-
-**If Brutus escaped:**
-- He's now a fugitive with dangerous knowledge
-- Sets up potential sequel
-- Mars' cult grows in the shadows
-
 **Advance to Level 7**
+
+Whatever happened with the Triumph, one thing is now certain: Mars has been watching everything that occurred in Rome. The spear, the ritual, the assassination attempt, the party's choices — he has been attentive. Session 5 begins with his response.
+
+### Outcome Table
+
+| What happened | Session 5 opening position |
+|---|---|
+| Emperor saved, Brutus arrested | Party are public heroes — but Mars' anger arrives at the height of their celebration |
+| Emperor saved, Brutus fled | Party succeed but the threat isn't eliminated — and Mars doesn't care about human politics |
+| Emperor wounded | Political chaos; party blamed first, then exonerated; Mars arrives into a fractured Rome |
+| Brutus' plan partially succeeded | The party's standing in Rome is complicated; they face Mars from a weaker position |
+
+---
 
 ## DM Notes
 
-### Senator Brutus as Villain
-Using Guy Sclanders' villain archetypes, Brutus is a "Never Present" villain until this session. The party has been fighting his plans, not him directly. Now he's revealed—and he's not just evil, he's a **tragic antagonist** who genuinely believes he's saving Rome.
+### OGAS This Session
 
-### Moral Complexity
-Players might sympathize with Brutus' goals (ending corruption, restoring the Republic) even if they disagree with his methods. This creates dramatic tension—classic Sclanders storytelling.
+**Senator Gaius Cassius Brutus**
+- **Objective:** "Restore the Republic" — overthrow the Emperor and install himself as First Citizen
+- **Goal (this session):** Execute the assassination during the Triumph; manage the party
+- **Agenda:** Charm the party first; offer them what they want; only resort to force if necessary
+- **Secret:** He's already promised Mars' power to three other gods if they support his coup. Jupiter, Pluto, Bellona — all have been approached. He doesn't know if any of them accepted.
 
-### Setting Up the Finale
-Whatever outcome, Session 5 will deal with Mars' wrath. The god of war doesn't forgive, and the party has made an enemy of divinity itself.
+**Tribune Lucius Valerius Maximus** *(if alive)*
+- **Objective:** Earn respect as a "real Roman"
+- **Goal (this session):** Survive, be useful, and come out of this with something left
+- **Agenda:** Help the party stop Brutus — not because it's right, but because it's the only path that doesn't end with his own trial
+- **Secret:** He told Brutus the party was coming. Two days ago. He regrets it. He's trying to make it right.
+
+### Brutus: Playing the Villain Correctly
+
+Brutus is the most important antagonist in the campaign and must be played with full complexity. The mistake would be to make him a sneering villain who loves evil. He doesn't. He loves Rome. He has watched Rome's Senate decay for thirty years and he believes, sincerely, that the current Emperor — however personally virtuous — represents the end of everything that made Rome Rome.
+
+He is wrong. His method is catastrophically wrong. But he is not lying when he says he wants to save Rome. That's what makes him genuinely threatening and genuinely tragic.
+
+When the party confronts him, let him make his argument. Let them feel the pull of it. Then make them choose to stop him anyway.
+
+That choice — stopping a man who might be right — is peak Sclanders design.
+
+### Three Clue Rule Summary
+
+| | Clue 1 | Clue 2 | Clue 3 |
+|---|---|---|---|
+| **Information needed** | Archive + Tribune knowledge | Cult temple investigation | Cassia's augury |
+| **What it reveals** | The plan exists, spear is consecrated | Location and timing (Arch of Titus, third hour) | Confirmation and that Brutus isn't the triggerman |
+| **How found** | Active investigation | Stealth / informant | Divine magic |
+
+Party needs only one to act. All three gives them a significant advantage.
+
+### The Stakes of Witnesses
+
+The party has been creating witnesses and evidence since Session 1. Every NPC they kept alive, every clue they gathered — it all feeds into whether they can stop Brutus legally or are forced into direct action. A party with Lucius alive, Cassia present, and the cult temple evidence can bring Brutus down through Rome's institutions. A party with none of those things has to fight their way through the Triumph.
+
+Both are valid. Both are satisfying. Track what they have.
