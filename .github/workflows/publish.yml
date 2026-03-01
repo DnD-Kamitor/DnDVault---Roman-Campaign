@@ -22,6 +22,9 @@ jobs:
       - name: Render book
         run: quarto render --to html
 
+      - name: Disable Jekyll processing
+        run: touch _book/.nojekyll
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
