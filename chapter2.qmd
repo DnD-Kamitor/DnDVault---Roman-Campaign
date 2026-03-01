@@ -105,6 +105,37 @@ The morning BEFORE the Tribune arrives. Dawn watch. One of the fort's gate sentr
 
 ---
 
+## The Sextus Murder: A Three Clue Rule Mystery
+
+The dead sentry is not a dropped thread. It's the first evidence of Brutus' reach -- he has a sleeper agent inside the fort. The agent (Decanus Quintus Flavius, a 12-year veteran who owes his family's debts to a man connected to Brutus) killed Sextus when Sextus caught him tampering with the spear's storage chains the night before. He then carved "ROMA CADIT" as misdirection -- making it look like a Germanic or dissident act -- and left the fort with the Tribune's entourage, hiding in plain sight.
+
+The party doesn't need to solve this in Session 2. But the clues are here.
+
+**Clue 1: The Wound**
+
+DC 13 Medicine on the body:
+
+- The cut is precise. One stroke, left-to-right, from behind. Sextus had no defensive wounds.
+- Someone who knew exactly where to stand and how to move. This is trained work, not rage.
+- The blade angle indicates a right-handed attacker shorter than Sextus -- and Sextus was short.
+
+**Clue 2: The Boot Print**
+
+DC 14 Investigation near the carving:
+
+- One clear boot print in the mud below the carved message. Legionary-issue hobnail, size small, but the wear pattern is unusual: the inside heel is heavily worn, indicating a man who turns his foot slightly when he walks.
+- If the party has a chance to observe the Tribune's entourage before they leave: Decanus Quintus walks exactly like this. DC 15 Perception to notice it while watching the departure.
+
+**Clue 3: Varro Knows Something**
+
+If the party asks Varro directly about Sextus:
+
+> *"Sextus had the north gate rotation memorized to the hour. Anyone who wanted to know when he'd be alone had three options: bribe him -- which didn't work, I knew him -- watch the rotation board -- which is in the principia -- or ask someone who knew the schedule. There are forty men who know that schedule."*
+
+If the party asks whether anyone left with the Tribune: *"One man asked for transfer papers this morning. Fast. I've been trying to remember his name. Quintus something. Twelve-year man. Quiet."* This is as far as Varro goes -- he doesn't have proof, just a feeling.
+
+---
+
 ## Scene 1: The Tribune Arrives
 
 **Tribune Lucius Valerius Maximus** enters the fort like he owns it. Young — too young for how polished he is. Rings on every finger. A cloak trimmed with purple. Six Praetorian Guards at his back, sitting their horses like statues of iron.
@@ -318,9 +349,56 @@ He will not volunteer this information to Romans who disrespect him. He will tel
 
 > *"Your fort smells of fear. My camp smells of wood smoke. Fear is the worse smell."*
 
+### Vercingetorix: What He Knows
+
+Vercingetorix carries three generations of knowledge about the spear. He will not volunteer this. He shares it in pieces, based on how much the party earns his respect. Use this table as a guide:
+
+| Trust level | What he shares |
+|---|---|
+| **None** (fought him, ignored him) | Nothing. He says: *"Romans do not earn knowledge. They take it. I will not give you this."* |
+| **Low** (treated him as an enemy but stopped fighting) | *"The spear has a name in my language. It means 'the thing that should not exist.' My grandfather helped seal it. He did not think Romans would find it."* |
+| **Medium** (talked to him, acknowledged his people's claim) | The above, plus: *"It cannot be destroyed by Roman hands alone. There is a place. A grove. One day's march into the Teutoburg Forest, past the Vitulans river. My people know the way. You do not."* |
+| **High** (openly respected his people, treated him as an equal) | All of the above, plus: *"The grove requires a willing sacrifice. Not blood. Something real. My grandfather's ritual failed because the Roman soldier who volunteered chose something he did not actually care about. The grove knew."* This is the core ritual mechanic for Session 3, given early. |
+| **Complete trust** (proved by action) | *"I am dying. I have perhaps a year. This is my last campaign. I chose this one because of the spear. If your party destroys it, my people's three-generation wound closes. That is enough for me."* This unlocks Vercingetorix as a full ally for Sessions 3 and 4 -- he will go to the grove himself. |
+
+### Vercingetorix Extended Dialogue
+
+Beyond the battle scene, he speaks like this across the session:
+
+When offered food: *"I eat what my men eat. You may sit with us if you wish. It is not insult to eat plainly."*
+
+When the Tribune dismisses him: *"That man's father bought his rank. I can tell by how he holds his shoulders. A man who earned his place does not carry himself like borrowed furniture."*
+
+When asked why he raided the fort tonight specifically: *"The god-killer woke. I felt it from my camp. So did every warrior with a spirit-sense in three tribes. You brought it to the surface. It announced itself."*
+
+When someone asks if he fears Rome: *"No. I have met Romans who were worth fearing. You might be among them. I have not decided."*
+
+### Varro Contingency
+
+If Varro is killed during the raid:
+
+The party loses their most reliable ally inside the fort and the primary witness who can speak to the Tribune's suspicious behaviour. Adjust as follows:
+
+- The Tribune's false accusation in Scene 4 is significantly harder to refute (Varro was the one who would have contradicted him). Add +3 to the Persuasion DC for any negotiation option in Scene 4.
+- Cassia takes on some of Varro's role: she can verify the Tribune's inaction during the raid (she was watching from the shrine).
+- Three legionaries who served under Varro for more than five years will step forward to defend the party without orders, citing Varro's standing orders: *"He told us: if something happens to him, trust the party. His words."* This gives the party a moment of loyalty they didn't expect.
+- Varro's personal effects are looted from his quarters by the Tribune's men within the hour. Inside his locked dispatch box (DC 14 to pick): a letter to his wife and a brief note to the party: *"If you're reading this without me, the Tribune moved faster than I expected. Don't trust the Legate either. Trust yourselves. -- V"*
+
+### Session 2 to Session 3 Transition
+
+Whatever ends Session 2, Session 3 begins from a specific position. Confirm which ending applies and use the matching opening.
+
+| Session 2 ending | Session 3 opening |
+|---|---|
+| **Tribune exposed, arrested** | Party is free but politically exposed. The Legate is temporarily back in command and not grateful. Session 3 begins with them leaving the fort under their own terms -- but Rome now knows their names. |
+| **Party fought the Praetorians** | They're fugitives. Session 3 begins 12 hours later, in the forest. They left fast with what they could carry. Vercingetorix found them at the treeline. |
+| **Negotiated a deal with the Tribune** | Uneasy alliance. Session 3 begins with the Tribune traveling with the party -- unwillingly, but cooperating. He's useful and he knows it and he's not happy about it. |
+| **Fled with Vercingetorix** | Session 3 begins in his camp, two miles north. They're Roman soldiers in a Germanic war camp. They're safe only because he said so. |
+| **Surrendered (party gave up the spear)** | Session 3 begins with them as prisoners being escorted to Rome by Praetorian Guard. The spear is in a sealed crate on a wagon ahead of them. The road to Rome takes six days. |
+
 ### Pacing
 
-This session runs hot from the start — the dead sentry, the Tribune's authority disruption, and the raid should feel like one continuous cascade with no breathing room. That's the pressure cooker. The decision at the end is the first moment of genuine stillness. Use it.
+This session runs hot from the start -- the dead sentry, the Tribune's authority disruption, and the raid should feel like one continuous cascade with no breathing room. That's the pressure cooker. The decision at the end is the first moment of genuine stillness. Use it.
 
 ### Corruption Tracking
 
