@@ -1,0 +1,258 @@
+# Professions and Downtime
+
+Your character has a life between missions. They have skills, contacts, and daily routines that existed before the campaign began and continue during the time between sessions. This chapter defines what those routines look like in Roman terms, what your character can accomplish during downtime, and how the systems of Roman professional life affect play.
+
+---
+
+## Roman Professions
+
+Your profession is not your D&D class, though the two may overlap. Your profession is what your character *does* in the Roman world: their trade, their training, their social position. It is the answer to the question every Roman would ask of a new acquaintance: *"Quid agis?"* What do you do?
+
+Each profession below includes:
+
+- **What you do:** Your daily work and social role
+- **Skill uses:** Which D&D skills you use regularly
+- **Downtime activity:** What you can accomplish between sessions
+- **Campaign hooks:** How your profession connects to the story
+
+---
+
+### Legionary (*Miles*)
+
+**What you do:** You are the backbone of the Roman army. You build roads, construct forts, stand watches, train daily, and fight when ordered to fight. Your life is structured, repetitive, and occasionally violent. You carry roughly 40 kilograms of equipment on the march and build a fortified camp every night. You are the reason Rome has an empire.
+
+**Skill uses:** Athletics, Perception, Survival, tool proficiency (construction tools)
+
+**Downtime activity:** A legionary in camp can spend downtime time on **training drills**, gaining advantage on the first attack roll of the next session (one use per long rest between sessions). Alternatively, they can take on **fatigue duty** (construction, maintenance, supply runs) to earn 2 *denarii* per day above standard pay.
+
+**Campaign hooks:** You have access to the unit's equipment store, the duty roster (who is where and when), and the informal network of information that flows between soldiers. You know which centurions drink, which optiones can be reasoned with, and which gate guards are reliable. These are assets.
+
+---
+
+### Medical Orderly and Field Surgeon (*Medicus*)
+
+**What you do:** You keep soldiers alive after the legion's work has nearly killed them. You clean wounds with wine and vinegar, extract arrows and javelin heads, apply poultices, set broken bones, and make difficult calls about amputation. You have seen what human bodies look like when they have been done wrong by iron and you have chosen to work against that.
+
+**Skill uses:** Medicine, Nature (herbalism), Investigation, Persuasion (bedside manner)
+
+**Downtime activity:** Between sessions, a *medicus* can **treat the wounded**: any character who received damage in the last session recovers an additional Hit Die worth of HP before the next session. They can also **prepare medications** during downtime, creating up to three doses of field medicine worth of potions equivalent to *potions of healing* (but made from available herbs, not magical in nature).
+
+**Special:** A *medicus* who achieves DC 15 Medicine during an investigation can determine the cause of death precisely, including distinguishing between wound types, poison categories, and natural causes. This is a significant intelligence tool.
+
+**Campaign hooks:** The fort's hospital receives intelligence from wounded soldiers before anyone else does. A *medicus* knows who was hurt, where, and sometimes how. They also handle the bodies of those who do not survive, which means they can examine evidence that has been ruled out by everyone else.
+
+---
+
+### Divination Specialist (*Haruspex* or *Augur*)
+
+**What you do:** You read the will of the gods in the entrails of sacrificial animals, the flight of birds, the behavior of sacred chickens, and the patterns of lightning. You are not a priest in the Greek sense; you are a technical specialist, the way a physician is a technical specialist. Your skill is not faith; it is practiced observation and the knowledge of what those observations mean.
+
+**Skill uses:** Religion, Insight, Nature (for bird and animal behavior), Arcana (when divine magic is directly involved)
+
+**Downtime activity:** A *haruspex* or *augur* can perform a **formal divination** between sessions. This takes one hour and a sacrifice worth at least 5 *denarii*. Roll Wisdom (Religion) DC 13: on a success, you receive a true if ambiguous answer about one question you frame before the divination. The GM decides the form. On a failure, the signs are unclear. On a 20, the answer is unusually specific.
+
+**Special:** You know the omen system (see the Knowledge chapter). When an omen occurs in play, you can make a Wisdom (Religion) check (DC 12) to identify its type and significance before others do. This frequently changes the party's tactical options.
+
+**Campaign hooks:** The *haruspex* is one of the first to notice when divine attention is being paid to specific people or places. Mars's growing involvement in the campaign's events is detectable through abnormal augury results starting in Chapter 2. A *haruspex* in the party becomes a living sensor for divine activity.
+
+---
+
+### Administrative Officer and Scribe (*Librarius* or *Scriba*)
+
+**What you do:** You manage the paper river that flows through every Roman institution. Orders, pay records, supply requisitions, troop rosters, correspondence, legal documents. You have probably read more documents than anyone else in the fort, including the Legate. You know, with precision, where resources go and where they do not.
+
+**Skill uses:** History, Investigation, Persuasion, tool proficiency (writing supplies, forgery kit)
+
+**Downtime activity:** Between sessions, a *librarius* can **access archives**: spend one day with access to a relevant record system (fort records, Senate archives in Rome, provincial administration) and make an Investigation check. DC 10 yields routine information. DC 14 yields something specific and useful. DC 18 yields something that was meant to be hidden.
+
+**Special:** You can **forge documents** using the forgery kit. The DC for others to detect the forgery is equal to 8 plus your proficiency bonus plus your Intelligence modifier. Official documents: letters of transit, military orders, identity documents, requisition forms. These have obvious utility.
+
+**Campaign hooks:** The administrative corruption that underlies Brutus's conspiracy is visible in the financial records if someone knows what to look for. A *librarius* who examines the fort's supply records (Chapter 1) or the Senate's financial archives (Chapter 4) with Investigation DC 14 finds the first concrete evidence of interference.
+
+---
+
+### Blacksmith and Military Engineer (*Faber*)
+
+**What you do:** You forge the tools of Roman military power: blades, arrowheads, siege components, and the structural ironwork that holds fortifications together. A Roman legion contains its own engineering capacity; a *faber* is part of that capacity. You can build a bridge, repair a ballista, or forge a new sword in the field, given sufficient time and materials.
+
+**Skill uses:** Athletics, tool proficiency (smith's tools, carpenter's tools), Investigation (for examining structures and equipment)
+
+**Downtime activity:** A *faber* can **craft or repair equipment** between sessions. Standard repair of damaged equipment is automatic and free. Crafting a new weapon or armor piece takes time proportional to value (1 day per 5 gp of the item's value) and costs half the item's market value in materials. A *faber* who crafts their own weapon can add their proficiency bonus to damage rolls with that weapon once per short rest.
+
+**Special:** When examining a structure, mechanism, or piece of equipment, a *faber* can make an Investigation check (DC 12) to identify weaknesses, quality of construction, likely failure points, and whether something has been tampered with.
+
+**Campaign hooks:** The ballista in Chapter 2, the gates that need to hold, the replica spear in Chapter 4: all of these have a technical dimension that a *faber* can assess. A *faber* examining the replica spear (Chapter 4) can identify that it is a replica and provide evidence to that effect.
+
+---
+
+### Merchant and Trader (*Mercator*)
+
+**What you do:** You move goods, money, and information between places. You have contacts in multiple cities and provinces; you know what things are worth and where they are worth more. On the Germanic frontier, you are one of the few Romans who regularly crosses the boundary in both directions, which makes you simultaneously useful and suspect to both sides.
+
+**Skill uses:** Persuasion, Deception, Insight, History (trade routes and market knowledge)
+
+**Downtime activity:** A *mercator* can **trade** during downtime. In any location with a market (fort *vicus*, provincial town, Rome), they can buy at 90% of market value and sell at 110%, effectively making 20% profit on any goods they move. This requires capital investment but provides steady income. Alternatively, they can **work the network**: spend one day making contacts and gathering information in a new location, gaining advantage on the first Persuasion or Investigation check made there.
+
+**Special:** A *mercator* knows the black market. In any significant location, they can find a black market contact with a DC 13 Persuasion check. This contact can source illegal or restricted goods, take restricted goods off your hands, and provide information that official channels do not carry, at a price premium.
+
+**Campaign hooks:** The trading networks that feed the Germanic frontier also carry information and sometimes people. Brutus's agents are moving through the trading networks (Chapter 2). A *mercator* in the party is positioned to notice unusual patterns: goods moving the wrong direction, people traveling under cover of trade, money flowing where it should not.
+
+---
+
+### Former Gladiator (*Gladiator*)
+
+**What you do:** You survived the arena. That is not a small thing. You know how to fight in front of a crowd, which means you know how to read a crowd, manage fear, and perform violence as a legible act rather than pure chaos. You also have a particular relationship with the Roman public that no other profession creates: people recognize you, or they recognize what you were.
+
+**Skill uses:** Athletics, Acrobatics, Intimidation, Performance (crowd management and theatrical combat)
+
+**Downtime activity:** A former gladiator can **take exhibition fights** between sessions. This earns 10 *denarii* per fight won, with each win adding to local reputation. Three consecutive wins in a location grants Advantage on Persuasion and Intimidation checks in that location for the rest of the campaign. Alternatively, they can **train others** in gladiatorial techniques, providing one other party member with Advantage on their next Intimidation check.
+
+**Special:** You are recognized. In Rome and major cities, there is a DC 12 chance per significant social interaction that someone recognizes your arena name or face. This cuts both ways: recognition opens doors (fans, former sponsors) but also closes others (people who bet against you, people who owe money to your former owner, people who simply do not think a gladiator belongs in the room).
+
+**Campaign hooks:** Marius Coda, the assassin in Chapter 4, is a gladiator freed by Brutus. A former gladiator in the party has a natural angle on him, can read his training, his likely tactics, and perhaps his history in the arena. They may have crossed paths before.
+
+---
+
+### Priest or Temple Keeper (*Sacerdos*)
+
+**What you do:** You maintain the relationship between the human and divine worlds in an official capacity. You perform rites, manage temple property, officiate at public sacrifices, and serve as a legible point of contact between worshippers and the god they are approaching. You are not a wandering holy person; you are an institutional figure with specific duties, specific authority, and specific networks.
+
+**Skill uses:** Religion, History, Medicine (some priests maintain healing practices), Persuasion
+
+**Downtime activity:** A *sacerdos* can **perform public rites** between sessions, earning social credit with the local community and maintaining divine relationships. This does not earn money directly but generates a **favor token**: one significant favor from the temple network in any city with a temple of your deity (access to archives, a safe place to stay, an introduction to a senior priest, information from the temple's informant network).
+
+**Special:** You have legitimate access to temples, including their archives, healing facilities, and network of contacts. In Rome specifically, the temple networks are significant intelligence sources; priests hear confessions, witness vows, and receive petitioners from all levels of society.
+
+**Campaign hooks:** The temples in Rome (Temple of Jupiter, Temple of Apollo) are involved in Chapters 3 and 4. A *sacerdos* has natural access to senior priests who otherwise require significant social navigation. Augur Cassia's connection to the Temple of Apollo is more accessible to another religious practitioner.
+
+---
+
+### Scout and Intelligence Agent (*Explorator*)
+
+**What you do:** You travel ahead of the main body, alone or in small groups, to gather information the legions need before they move. You know how to be invisible in terrain that kills other people. You speak at least one language other than Latin. You have been across the frontier and come back, which puts you in a small category of Romans with direct knowledge of what the Germanic world looks like from the inside.
+
+**Skill uses:** Stealth, Perception, Survival, tools (cartography, if available), one or more Germanic languages
+
+**Downtime activity:** An *explorator* can **conduct reconnaissance** between sessions. Choose a location the party will be visiting or an NPC they will be interacting with. Make a Stealth/Perception combined check (DC 12 for basic, DC 15 for detailed). On success, you provide the party with one of the following before the session begins: the layout of a location (which changes environmental challenge DCs by -2), information about a specific NPC's current state and location, or advance warning of an ambush that the party can avoid or prepare for.
+
+**Special:** Fluency in at least one Germanic language is part of the *explorator* role. This creates a significant intelligence advantage in Chapters 2 and 3, where information locked behind the language barrier is otherwise inaccessible. Translating for the party with a Germanic contact removes the social distance that would otherwise require a DC 14 Persuasion check to cross.
+
+**Campaign hooks:** The forest ambush in Chapter 2, the approach to Vercingetorix's territory in Chapter 3, and the Roman intelligence network in Chapter 4 all involve information that an *explorator* can access through professional channels that other party members cannot.
+
+---
+
+## Downtime Activities
+
+Between sessions, time passes in the world. The campaign covers several months; characters have time between the major events. The activities below are available to any character regardless of profession, though some professions have specific advantages in certain activities.
+
+---
+
+### Earning a Living
+
+The Roman economy provides income for skilled workers. A character who spends downtime on their profession earns income based on the labor market:
+
+| Profession tier | Daily earnings |
+|---|---|
+| Unskilled labor | 1 *as* (1/16 *denarius*) |
+| Common skilled trade (*faber*, *medicus* assistant) | 1--3 *sestertii* per day |
+| Specialist professional (*medicus*, *haruspex*, *scriba*) | 1 *denarius* per day |
+| Senior specialist or officer | 2--5 *denarii* per day |
+| *Mercator* (trading, with capital) | Variable; 20% margin on goods moved |
+
+Standard legionary pay is roughly 1 *denarius* per day (net, after deductions). Characters who earn significantly more than this have resources that can be invested in contacts, equipment, and favors.
+
+---
+
+### Crafting
+
+A character with the appropriate tool proficiency can craft items during downtime. The crafting rate is one day per 5 *denarii* of the item's market value, with materials costing half the market value.
+
+Items available for crafting in a frontier fort context: weapons and armor (with smith's tools), medical preparations (with herbalism kit, produces *healing potions* at market cost halved), siege equipment components (with carpenter's and smith's tools), documents (with writing supplies, requires either legitimate authorization or a forgery attempt).
+
+A *faber* halves crafting time. A *medicus* with herbalism kit can produce one dose of *healing potion* per three days of downtime at 25 *denarii* material cost.
+
+---
+
+### Research and Investigation
+
+Access to information requires time, access, and usually money. The type of research determines what is available and at what cost.
+
+| Research location | What is accessible | Cost | Time |
+|---|---|---|---|
+| Fort records (*librarium*) | Supply records, troop rosters, orders, correspondence (last six months) | Free (if authorized) | 4 hours |
+| Provincial administrative archives | Tax records, property ownership, legal judgments, merchant licenses | 5 *denarii* or authorization | 1 day |
+| Temple archives | Religious records, vow registrations, historical documents, some political correspondence | Favor with the temple or 10 *denarii* | 1 day |
+| Senate financial records (Rome only) | Contract awards, official payments, senatorial correspondence | DC 15 authorization or Tribune's access | 2 days |
+| Black market informant | Whatever the informant knows, which may not be reliable | 5--50 *denarii* depending on sensitivity | 1 hour |
+
+A character making a research roll (Investigation or History, DC 10--18 depending on what they are looking for) finds what is there to be found. A character who does not make the roll either does not find it or misinterprets what they find.
+
+---
+
+### Religious Observance
+
+A character who spends at least one day in genuine religious practice (visiting a temple, making a significant offering, fulfilling a vow, or performing a complete rite for their deity) gains the **divine attention** status until the end of the next session: they have advantage on one saving throw of their choice per session, declared before rolling. This represents the practical benefit of maintained divine relationships.
+
+The offering must be proportionate to the request. A small libation at a roadside shrine maintains existing relationships. A valuable sacrifice (an animal, a significant monetary donation, something personally meaningful) creates new ones.
+
+A character with an outstanding unfulfilled vow (*votum*) does not benefit from this activity until the vow is fulfilled or formally renegotiated.
+
+---
+
+### Training
+
+A character who spends downtime on focused training may, over the course of the campaign, expand their capabilities. The rates are long; the campaign provides time skips between sessions.
+
+- **Language:** 250 downtime days to reach conversational fluency in a new language (write it in your notes; the GM will track time skips between sessions)
+- **Skill proficiency:** 250 downtime days to gain proficiency in a skill your character lacks
+- **Tool proficiency:** 250 downtime days for a simple tool; 500 for a complex one
+- **Weapon proficiency:** 125 downtime days for a single weapon type
+
+These are the official rates. Characters who have expert instruction or access to unusual resources may be able to reduce these by up to half.
+
+---
+
+### Building a Network (*Amicitia*)
+
+A character can spend downtime investing in relationships. This is not bribery (which is also available, see below); it is the legitimate Roman practice of building social capital through genuine relationship maintenance.
+
+**Spending one week in a location** building relationships: make a Charisma (Persuasion) check. DC 12: you establish a useful contact (someone who will help you in ways proportionate to the relationship). DC 16: you establish a genuine *amicus* (someone who will take personal risk on your behalf). DC 20: you establish a patron relationship (someone of significantly higher status who will advocate for you publicly).
+
+Contacts are tracked by name and what they can do. The campaign rewards maintaining them. An NPC who helped you in Chapter 2 and was genuinely treated well will remember it in Chapter 4.
+
+---
+
+### Recovery from Corruption
+
+Characters with corruption level 1 or higher can attempt to reduce their corruption through specific downtime activities. Corruption does not reduce automatically; it requires active work.
+
+| Corruption level | Recovery method | Time required | Roll required |
+|---|---|---|---|
+| 1 (Noticed) | Genuine rest away from violence; no combat for the entire downtime period | 7 days | None; automatic |
+| 2 (Touched) | Extended religious retreat with a significant offering to a god opposing Mars | 14 days | DC 13 Wisdom saving throw |
+| 3 (Marked) | Full purification rite performed by a trained priest; confession of specific violent acts | 21 days | DC 15 Wisdom saving throw |
+| 4 (Claimed) | Pilgrimage to a major temple with public vow of changed conduct; witnessed by at least three people who know the character | 30 days | DC 17 Wisdom saving throw |
+| 5 (Vessel) | Resolved through the campaign's endgame; downtime recovery is not available at this level | -- | -- |
+
+Corruption recovery is not available if the character engaged in combat during the recovery period, regardless of provocation.
+
+---
+
+## The Collegium System
+
+Roman guilds (*collegia*, singular *collegium*) organized almost every professional trade. They provided mutual aid, organized funerals for members who could not afford them, maintained shared worship of the guild's patron deity, and created professional solidarity. They also served as social clubs, political organizations (in the late Republic, somewhat illegally), and, in some cases, fronts for organized criminal activity.
+
+**Legitimate collegia** relevant to the campaign:
+
+- *Collegium Fabrum*: blacksmiths and engineers. Highly respectable; politically connected; useful for equipment and structural expertise.
+- *Collegium Medicorum*: physicians and medical practitioners. Access to medicines, contacts among medical officers across the province, shared knowledge base.
+- *Collegium Mercatorum*: merchants organized by trade good type or trade route. Significant financial resources; information networks that span the Empire.
+- Temple organizations: technically religious rather than professional, but functionally similar. Access to temple resources, political protection from religious authority, connections across cities wherever the deity has a temple.
+
+**Illegal or grey-area collegia** relevant to the campaign:
+
+Senator Brutus's cult operation in Rome (Chapter 4) is organized as an unofficial religious *collegium* dedicated to Mars. This is not automatically illegal; private religious associations existed throughout Roman history. It becomes illegal through what it does rather than what it is.
+
+**Joining a collegium:** Pay the initiation fee (typically 5--25 *denarii* depending on the collegium's status), demonstrate professional credentials, and be sponsored by a current member. Benefits activate immediately: access to shared resources, the collegium's network, and the social identity of membership.
+
+**Benefits at the table:** A collegium member who enters a new city can spend one hour finding the local chapter of their collegium. The local members will provide: a safe place to sleep, information about the city relevant to their profession, introductions to local members who may have useful knowledge, and access to collegium resources (tools, supplies, a loan in emergencies).
