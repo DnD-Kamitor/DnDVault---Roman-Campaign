@@ -41,6 +41,14 @@ images/            ← All local image assets (downloaded from Wikimedia Commons
 | `legionaries.jpg` | Roman legionaries on the march | CC BY-SA 3.0 |
 | `lorica_segmentata.jpg` | Roman armour, Antonine period | CC BY-SA 3.0 |
 | `hadrians_wall_map.svg` | Hadrian's Wall map with Vindolanda | CC BY-SA 3.0 |
+| `strix_owl.jpg` | Athenian tetradrachm owl coin, 454–404 BC | CC BY-SA 4.0 |
+| `lemures_fresco.jpg` | Pompeii Lares and Serpents fresco | CC BY 2.0 |
+| `genius_loci.jpg` | Pompeii lararium serpent painting | Public domain |
+| `alp_nightmare.jpg` | Fuseli, *The Nightmare*, 1781 | Public domain |
+| `draugar.jpg` | Norse draugr illustration, Kim Diaz Holm | CC BY 4.0 |
+| `lindworm.png` | Nidhogg Norse serpent | Public domain |
+| `nix_nokken.jpg` | Kittelsen, *Nøkken*, 1887–92 | Public domain |
+| `lar_bronze.jpg` | Bronze statuette of a Lar, Metropolitan Museum | CC0 |
 
 Attribution format for CC images: `*Image: [Author], Wikimedia Commons, [License].*`
 
@@ -125,30 +133,110 @@ Goal: Every major location is described vividly enough to be run without prep.
 - [ ] **Rome (Session 4)** — 3 key locations with sensory descriptions and social encounter frameworks
 - [ ] **The Sacred Grove** — Environmental storytelling, standing stone descriptions
 
-### Milestone 6 — Roman Tactics & D&D 5e Adaptation
+### Milestone 6 — Roman Tactics & D&D 5e Adaptation ✅ COMPLETE
 Goal: DM can run authentic Roman military tactics as D&D mechanics.
 
-- [ ] **Testudo formation** — Group action rules, cover bonuses, movement penalties
-- [ ] **Wedge / cuneus** — Breakthrough mechanic for breaking shield walls
-- [ ] **Flanking and envelopment** — Adapted flanking rules for Roman double-envelopment
-- [ ] **Siege mechanics** — Battering ram, ballista, scaling ladders as structured encounters
-- [ ] **Germanic counter-tactics** — Guerrilla ambush, forest fighting, Varus trap scenario
-- [ ] **Tactical reference card** — One-page DM reference for all Roman formations in play
+- [x] **Testudo formation** — Group action rules, cover bonuses, movement penalties
+- [x] **Wedge / cuneus** — Breakthrough mechanic for breaking shield walls
+- [x] **Flanking and envelopment** — Adapted flanking rules for Roman double-envelopment
+- [x] **Siege mechanics** — Battering ram, ballista, scaling ladders as structured encounters
+- [x] **Germanic counter-tactics** — Guerrilla ambush, forest fighting, Varus trap scenario
+- [x] **Tactical reference card** — One-page DM reference for all Roman formations in play
 
-### Milestone 7 — Bestiary: Creatures of Roman & Germanic Myth
+### Milestone 7 — Bestiary: Creatures of Roman & Germanic Myth ✅ COMPLETE
 Goal: A set of original D&D 5e stat blocks for creatures native to this setting, with historical images.
 
-- [ ] **Strix** — Roman vampire-owl demon (undead, CR 3–5)
-- [ ] **Lemures** — Restless Roman dead, tormented souls (undead swarm, CR 1–2)
-- [ ] **Larvae** — Evil spirits of the dishonored dead (shadow-type, CR 4)
-- [ ] **Genius Loci** — Divine spirit of a place (construct-type, CR 6–8)
-- [ ] **Germanic Alp** — Nightmare spirit that rides sleeping victims (fiend, CR 3)
-- [ ] **Draugar** — Germanic undead warrior, stronger in cold water (undead, CR 5)
-- [ ] **Lindworm** — Serpentine Germanic dragon, no wings (dragon-type, CR 7–9)
-- [ ] **Nix** — Shapeshifting river spirit, lures travelers to drown (fey, CR 4)
-- [ ] **Images** — Historical illustrations for each creature from Wikimedia Commons
+- [x] **Strix** (CR 3) — Roman vampire-owl; Blood Drain, Flyby, Ill Omen
+- [x] **Lemur** (CR 1/2) — Restless Roman dead; Dishonored Rest (reforms unless properly buried)
+- [x] **Larvae** (CR 4) — Malevolent dead wearing the faces of the party's victims
+- [x] **Genius Loci** (CR 4) — Territorial spirit of a place; propitiation mechanic
+- [x] **Alp** (CR 3) — Nightmare spirit; Sleep Paralysis, Mist Form, iron weakness
+- [x] **Draugar** (CR 5) — Barrow undead; Undead Fortitude, Grave Stench, Swelling Rage
+- [x] **Lindworm** (CR 8) — Wingless serpentine dragon; Poison Breath, Serpentine Body
+- [x] **Nix** (CR 4) — Shapeshifting river spirit; Drowning Song, Unearthly Beauty
+- [x] **Images** — 8 historical illustrations from Wikimedia Commons, all verified HTTP 200
+- [x] **Propitiation table** — Which creatures can be bargained with and how
 
-### Milestone 8 — Handouts & Props Pack
+### Milestone 8 — Player Assistance Tome
+Goal: A dedicated, deeply immersive player-facing resource that goes beyond the player_guide — a companion that helps players *become* their Roman character before session 1.
+
+**File:** `player_tome.qmd` (added to Player's Workbook in `_quarto.yml`)
+
+- [ ] **Who Were You Before?** — Backstory framework: life events that make sense for a soldier on the Germanic frontier in 175 AD. Where were you born (province tables), what was your path to the legion, what do you owe and to whom?
+- [ ] **How to Talk Like a Roman** — Speech patterns, honorifics, how Romans address superiors vs. inferiors vs. equals. Class-based language registers. Swearing (actual Latin). How a soldier would describe the gods, the empire, death, honor.
+- [ ] **How to Think Like a Roman** — Roman worldview: fate vs. free will, duty (pietas), the significance of omens, what it means to be Roman vs. barbarian, how they understand death and the afterlife. The things your character would find *obvious* that a modern player might miss.
+- [ ] **Immersion Tools** — Practical roleplaying aids: how to react to a bad omen, how to address a senator, what you do when a soldier dies, the ritual of eating together, the significance of salt. "Instinctive Roman reactions" table.
+- [ ] **The Corruption Mechanic — Player Version** — How corruption *feels* at each level, not just what it does mechanically. Written from the character's perspective: what changes in how you see the world? Journal prompts for each stage.
+- [ ] **Playing the Gods** — How to engage with the Roman pantheon in play. What a soldier prays for, how you make an offering, what it means when a prayer is answered, how to roleplay genuine Roman religious belief rather than D&D-generic clerics.
+- [ ] **Roman Relationships** — The *amicitia* system (friendship as political currency), patron-client bonds, the cohort as family. How your character's loyalty works and who they would die for.
+- [ ] **Suggested Bonds, Ideals, Flaws** — 6 of each, all campaign-specific, all tied to the Roman frontier setting. Not generic — specific to *this* campaign's themes.
+
+### Milestone 9 — Character Knowledge Tiers
+Goal: When players make History, Religion, or Nature checks, give them layered, collapsible information at DC 13/15/17. Rewards investigation without spoiling players who roll low.
+
+**File:** `knowledge.qmd` (added to Player's Workbook in `_quarto.yml`)
+
+Design rule: Each entry has **three tiers** using Quarto's `<details>`/`<summary>` collapsible HTML blocks.
+- **DC 13 (General knowledge)** — Visible to all; what any educated Roman soldier knows
+- **DC 15 (Trained knowledge)** — Collapsed by default; what an officer, priest, or scholar knows
+- **DC 17 (Specialist knowledge)** — Collapsed by default; what a specialist, initiate, or expert knows
+
+Categories:
+- [ ] **Roman Military Lore** — Legionary structure, famous battles, frontier history, the Varus disaster, current Emperor's campaigns
+- [ ] **Roman Religion** — The gods' domains and relationships, how augury works, the Lemuria festival, how sacrifice functions
+- [ ] **The Gods (campaign-specific)** — Mars specifically: his history, his moods, what pleases and displeases him
+- [ ] **Germanic Tribes** — Who the Marcomanni/Quadi/Cherusci are, famous leaders, Teutoburg Forest, how Germanic religion differs from Roman
+- [ ] **The Frontier** — The Limes, how the legions hold the line, what lies beyond the Rhine/Danube, what traders report
+- [ ] **Roman Law & Politics** — The Senate, the Emperor's power, how a Triumph works, how treason is prosecuted
+- [ ] **Poisons & Medicine** — What a field medic knows (DC 13), what a physician knows (DC 15), what an assassin knows (DC 17)
+- [ ] **Divine Signs & Omens** — How Romans read the world for divine messages; what a bad omen looks like in practice
+
+### Milestone 10 — Professions & Downtime Activities
+Goal: Characters have lives between sessions. Professions give them something to *do* and *know* in downtime that connects to the Roman world.
+
+**File:** `professions.qmd` (added to Player's Workbook in `_quarto.yml`)
+
+Each profession has: **Description** (what this person does in the Roman world), **Skill Uses** (which skills this profession uses regularly), **Downtime Activity** (what they can do between sessions), and **Campaign Hooks** (how this profession connects to the story).
+
+Roman professions:
+- [ ] **Legionary** — The standard soldier; training, weapon maintenance, fort construction
+- [ ] **Optio / Decanus** — NCO roles; leadership, intelligence gathering, unit command
+- [ ] **Medicus** — Field surgeon; herbalism, anatomy, trauma care, poisons
+- [ ] **Haruspex / Augur** — Divination specialist; reading entrails, bird signs, lightning, omens
+- [ ] **Scribe / Librarius** — Administrative officer; forgery, intelligence, legal knowledge
+- [ ] **Faber** — Blacksmith/engineer; weapon crafting, siege equipment, fort repair
+- [ ] **Mercator** — Merchant/trader; contacts, smuggling, languages, supply networks
+- [ ] **Gladiator (former)** — Arena fighter; combat techniques, underworld contacts, fame
+- [ ] **Sacerdos** — Priest/temple keeper; divine knowledge, access to temple networks, ritual
+- [ ] **Explorator** — Scout/spy; tracking, languages, knowledge of Germanic territory
+
+Downtime activities:
+- [ ] **Earn Living** — Standard: 1d4 × profession modifier sp/day; higher professions earn more
+- [ ] **Craft Item** — Roman-specific crafting (armor repair, weapon forging, potion brewing)
+- [ ] **Research** — Senate archives, temple libraries, questioning informants (costs *denarii*)
+- [ ] **Religious Observance** — Make offerings, complete a vow, gain divine favor (+1 on relevant rolls next session)
+- [ ] **Train** — Increase a skill or learn a language (requires 250 days per rank — time skips between sessions)
+- [ ] **Network** — Build *amicitia* contacts (costs social currency; opens doors later)
+- [ ] **Recover** — Corruption recovery (requires specific conditions by corruption level)
+- [ ] **The Collegium System** — Roman guilds: joining, dues, what membership provides, illegal collegia
+
+### Milestone 11 — Germanic Tribes & Magic
+Goal: The Germanic world feels as fully realized as the Roman one. Players and DMs understand who these people are, what they believe, and why they fight.
+
+**File:** `germanic_tribes.qmd` (added to GM's Workbook; a player-safe summary also added to `player_guide.qmd`)
+
+**Images:** Source from Wikimedia Commons — archaeological finds, tribal territory maps, runic inscriptions, reconstructed Germanic village, bog finds (Tollund Man type), amber artifacts.
+
+- [ ] **The Tribes of the Campaign** — Marcomanni, Quadi, Cherusci, and Suebi: territory, leadership structure, relationship with Rome (ally/neutral/enemy), what they want
+- [ ] **How Germanic Society Works** — The *comitatus* (war-band loyalty), the *Thing* (assembly), *wergild* (blood price), gift-giving as political currency — how Roman players should expect them to behave
+- [ ] **Germanic Religion** — The gods of the frontier tribes (Wotan/Odin as war-god, Donar/Thor as protector, Nerthus as earth goddess); how they differ from Roman religion; what sacred sites look like
+- [ ] **Tribal Shamanism (D&D mechanics)** — The *volva* (seeress/shaman) and her powers in D&D terms; seiðr as a magic tradition; rune-craft; sacrificial magic; how to build a Germanic spellcaster NPC
+- [ ] **The Runes** — Elder Futhark as a living tradition: what the runes are, how they're used in divination and carving, what each major rune means for the campaign. As handouts: carved stone runes the party can find
+- [ ] **Sacred Sites** — Bog sacrifices, sacred groves, the World Tree cosmology; how the party might encounter and interact with Germanic sacred places
+- [ ] **Vercingetorix's Tribe (Campaign-specific)** — Detailed breakdown: village layout, named members, the tribe's relationship with Mars, what they know about the spear, why they help or oppose the party
+- [ ] **Germanic Magic Items** — Rune-carved weapons (mechanical bonuses tied to specific runes), sacred amber amulets, the volva's staff, cursed bog-iron
+
+### Milestone 12 — Handouts & Props Pack
 Goal: DM can hand players physical/visual aids at the right moment.
 
 - [ ] **Handouts 1–3 (Ch1)** — Already written; format for print layout
@@ -159,7 +247,7 @@ Goal: DM can hand players physical/visual aids at the right moment.
 - [ ] **Player tracking sheet** — NPCs met, decisions, corruption checkbox, session notes
 - [ ] **DM quick-reference** — Single page: all NPC OGASes, corruption rules, spear properties
 
-### Milestone 9 — Final Polish & Publish
+### Milestone 13 — Final Polish & Publish
 - [ ] Continuity audit: NPC actions consistent across all sessions
 - [ ] `quarto render --to pdf` produces a clean printable document
 - [ ] GitHub Pages deployment verified and live
@@ -169,9 +257,15 @@ Goal: DM can hand players physical/visual aids at the right moment.
 ## Conventions
 
 ### Writing Tone
-- **Player sections** — Present tense, "you" voice, no spoilers. Treat the reader as a capable adult who wants enough information to make interesting characters.
-- **GM sections** — Direct and practical. Short sentences. No hedging. Trust the DM to improvise; give them the raw material, not a script.
-- **Read-aloud text** — Block quote format (`>`). Slow, atmospheric. Short paragraphs. Specific sensory details. End on a decision or question, never a statement.
+- **Player sections:** Present tense, "you" voice, no spoilers. Treat the reader as a capable adult who wants enough information to make interesting characters.
+- **GM sections:** Direct and practical. Short sentences. No hedging. Trust the DM to improvise; give them the raw material, not a script.
+- **Read-aloud text:** Block quote format (`>`). Slow, atmospheric. Short paragraphs. Specific sensory details. End on a decision or question, never a statement.
+
+### Style Rules
+- **No em dashes (—).** Use a colon, semicolon, or comma instead. For parenthetical phrases, use parentheses.
+- **No AI attribution.** Do not reference AI tools in any content file. CLAUDE.md is internal; nothing from it appears in the rendered book.
+- **Latin in italics.** All Latin words and phrases in prose are italicised on first use per page.
+- **Active voice.** Passive constructions slow down practical reference writing.
 
 ### Images
 - Store all images in `images/` directory
