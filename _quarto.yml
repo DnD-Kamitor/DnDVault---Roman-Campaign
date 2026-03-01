@@ -11,13 +11,20 @@ book:
   repo-actions: [issue]
   chapters:
     - index.qmd
-    - session0.qmd
-    - chapter1.qmd
-    - chapter2.qmd
-    - chapter3.qmd
-    - chapter4.qmd
-    - chapter5.qmd
-    - appendix.qmd
+    - part: "Player's Workbook"
+      chapters:
+        - player_intro.qmd
+        - session0.qmd
+        - player_guide.qmd
+    - part: "GM's Workbook"
+      chapters:
+        - gm_intro.qmd
+        - chapter1.qmd
+        - chapter2.qmd
+        - chapter3.qmd
+        - chapter4.qmd
+        - chapter5.qmd
+        - appendix.qmd
 
 format:
   html:
