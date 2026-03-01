@@ -414,6 +414,32 @@ Goal: The knowledge chapter currently goes straight to ability checks. Add a lay
 - [ ] **Two new categories** — Add: (1) *The Antonine Plague* (what soldiers know about the ongoing epidemic, how it affects troop strength, what "plague touched" means socially); (2) *Roman Engineering* (what any legionary knows about building roads, camps, bridges, and siege equipment; connects to Faber profession)
 - [ ] **Visual design pass** — Add a brief instructional note at the top of the chapter explaining how to use it: "Read the open section without rolling. Expand the sections below when you make the listed check."
 
+## Milestone 26 - Populate the world with many races translated to the tribes.
+
+- [ ] take the races of the Dungeons and dragons world, and intergrate them into this world, Who are the egyptians, the greeks, the iberians, gauls, germanic, kelts, and all the tribes in between.
+- [ ] Also the former conquered regions of the roman world have different races in between them that have been intergrated into the roman world.
+
+
+## Milestone 27 - Intergration of the roman republic
+- [ ] The races available are only those that have already been intergrated inside of the roman empire; So the former terrotories have races, those are availble as starting characters others are not.
+- [ ] Each race has a status in the empire and this can have a impact on character creation, as they cannot rise maybe beyond certain ranks and this can have impact on their political status or why they joined in the first place
+
+## Milestone 28 - Regional development and available materials
+- [ ] The roman world is way more localized than the current world, there will be certain things available, and certain things very unavaible, some higher in price some things lowerer in price.
+- [ ] Their might be supplycarts or missions coming to the nearby regions or the camp that bring in new supplies and new equipment and more exotic items. 
+- [ ] The camp has limited supplies that they have to deal with how much does the camp have in stock ( this is hidden by skill barriers)
+
+## Milestone 29 - Food and drink 
+- [ ] Add a player chapter on food and drink that they have access to, I want the campaign to also be heavy on equipment and rationing to gain more immersion. 
+
+## Milestone 30 - Adoption to Magical world 
+- [ ] The roman empire and legion that you have created has little against magic and magical beasts intergrated into their tactics and strategies, update the entire system to be more in line with this. 
+
+## Milestone 31 - Lex Arcana  
+- [ ] Take lessons from the LEX anrcana game and intergrate them into the system.
+
+
+
 ---
 
 ## Conventions
