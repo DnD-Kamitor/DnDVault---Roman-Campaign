@@ -1,128 +1,327 @@
 # Chapter 2: The Tribune's Gambit
 
+**Applying Guy Sclanders' Methodology**
+
 ## Session Overview
-A Tribune arrives from Rome with secret orders regarding the spear. Meanwhile, Germanic raiders attack the fort, and the party must defend it while uncovering the Tribune's true agenda.
+
+A Tribune arrives from Rome with sealed Senate orders regarding the spear. That night, Germanic raiders attack in force — with suspicious timing. The party must defend the fort, expose the Tribune's real agenda, and decide what to do with a man who might be right for all the wrong reasons.
 
 **Level:** 4 → Advance to 5 at session end
-**Key Goal:** Defend the fort and discover the Tribune's mission
+**Duration:** 3–4 hours
+**Key Goal:** Discover who the Tribune really serves — and whether to trust him
+**Theme:** Loyalty vs. Survival (first test)
 
-## Opening Scene: The Tribune Arrives
+### Guy Sclanders' Principles Applied
 
-Three days after the spear's discovery, a Tribune arrives from Rome with an elite escort of Praetorian Guards. He's young, polished, and dangerously intelligent.
+**Pressure Cooker:** Tribune's authority creates a new power dynamic before the party has recovered from Session 1. The raid removes the option to think carefully.
+
+**OGAS Integration:** Tribune, Legate, Vercingetorix, and Varro all have clear competing goals this session.
+
+**Three Clue Rule:** Three independent paths to discovering Tribune Lucius is working for Brutus. Party only needs to find one.
+
+---
+
+## Pre-Session Preparation
+
+### Props & Handouts
+
+**Handout 4: The Tribune's Sealed Orders (Official)**
+```
+SENATUS POPULUSQUE ROMANUS
+
+By authority of the Senate and the consulship of Titus
+Quintius Crispinus:
+
+Tribune Lucius Valerius Maximus is hereby empowered to
+act in the Senate's name in all matters pertaining to
+the artifact recovered at Fort Vindolanda.
+
+All military personnel are ordered to render full
+assistance. The Legate's command is suspended pending
+senatorial review.
+
+In nomine Senatus Populique Romani
+(Let the party read this — it is real and official)
+```
+
+**Handout 5: The Encoded Letter (found in Tribune's quarters)**
+```
+[Write on paper using a simple Caesar cipher — shift each
+letter 3 positions back. Players can decode with DC 14
+Intelligence, or a character with thieves' tools / Cipher
+proficiency gets advantage]
+
+Plaintext:
+"The artifact must not reach Rome. By any means
+necessary. Our mutual friend's ambitions depend on
+its permanent removal. You know what to do.
+                                    — G.C.B."
+```
+
+**Physical Props:**
+- A wax seal stamp (improvised: press a ring into clay) for the official orders
+- A red-cloaked figure miniature to represent the Tribune
+- Update the red d6 corruption dice if any characters gained corruption in Session 1
+
+### Reactive World Setup
+
+Before the session begins, confirm what happened in Session 1 and update NPC positions:
+
+| NPC | Their State at Session 2 Start | Active Agenda |
+|---|---|---|
+| Legate Corvinus | Furious. Humiliated by the Tribune's arrival. Publicly compliant. | Plotting to get the spear back into his possession before Rome takes it |
+| Augur Cassia | Has had three new visions since the spear was retrieved. Barely sleeping. | Watching the Tribune obsessively — she senses something wrong with his aura |
+| Centurion Varro | Quietly arming and positioning his most trusted men near the spear. | Protecting the party whether they want it or not |
+| Tribune Lucius | Just arrived. Performing confidence he doesn't feel. | Complete his mission from Brutus; get the spear destroyed without his fingerprints on it |
+| Vercingetorix | Camped two miles north with 80 warriors. Scouts watching the fort. | Waiting for an opportunity; knows the Romans are distracted |
+
+---
+
+## Scene 0: Cold Open (5 minutes)
+
+**Start in media res — the moment before everything gets worse.**
+
+The morning BEFORE the Tribune arrives. Dawn watch. One of the fort's gate sentries has been found dead — throat cut, no struggle, no tracks. Carved into the wooden palisade beside him, deep and deliberate:
+
+**ROMA CADIT.** *(Rome falls.)*
+
+**Read aloud (slowly):**
+
+> *Dawn. Someone is shaking you awake before the trumpet sounds.*
+>
+> *Outside, a cluster of soldiers stands at the north gate. At their feet, Sextus — the sentry you spoke to last night, the one with the bad knee who always complained about the cold — lies with his throat open and his eyes still surprised. No tracks. No blood trail. No explanation.*
+>
+> *Centurion Varro crouches beside the body. He looks up at you. His voice is very quiet:*
+>
+> *"This was done by someone who knew his patrol route. Someone inside the walls."*
+>
+> *He points to the carving in the wood.*
+>
+> *Before anyone can speak, a trumpet call from the far side of the fort: three long notes, the signal for visitors on the road.*
+>
+> *Through the south gate, riders in gleaming armor approach.*
+
+**DM Direction:** Don't let them investigate the sentry's death now. The world has immediately moved on. They're holding an unsolved murder in their hands while an entirely new crisis walks through the gate.
+
+---
+
+## Scene 1: The Tribune Arrives
+
+**Tribune Lucius Valerius Maximus** enters the fort like he owns it. Young — too young for how polished he is. Rings on every finger. A cloak trimmed with purple. Six Praetorian Guards at his back, sitting their horses like statues of iron.
+
+He surveys the fort the way a merchant surveys damaged goods.
 
 **Read aloud:**
-> The gates open to admit a small column of riders in gleaming armor. At their head rides a man too clean for the frontier—purple-trimmed toga, oiled hair, rings on every finger. He surveys the fort like a merchant appraising damaged goods. Behind him, six Praetorians sit their horses like statues of iron and menace.
 
-**Tribune Lucius Valerius Maximus** introduces himself with imperial authority:
-- He carries sealed orders from the Senate
+> "Fort Vindolanda." He says the name as if tasting something mildly unpleasant. "Smaller than I expected. And considerably less tidy."
+>
+> He dismounts without waiting for assistance, hands his reins to a Praetorian, and strides toward the principia without being escorted. The Praetorians fall in around him like a moving wall.
+>
+> "I'll need the artifact secured in my quarters by the second hour. I'll need the Legate removed from command by the third. And I'll need whoever is responsible for this" — he gestures at the fort in general — "to explain to me why it took three days for Rome to hear about a divine weapon being unearthed on my frontier."
+>
+> He stops and looks at the party directly for the first time.
+>
+> "You must be the ones who retrieved it. Good. You're promoted. You work for me now."
+
+**Tribune's Official Orders:**
+- He carries sealed Senate orders (Handout 4 — real and legitimate)
 - The spear is to be delivered to Rome immediately
 - The Legate is relieved of command pending investigation
-- The party is promoted to "Special Envoys of the Senate" (higher authority than the Legate)
-- They will escort the Tribune and the spear to Rome
+- The party is designated "Special Envoys of the Senate" — higher authority than the Legate within this fort
 
-**Complications:**
-- The Legate is furious but powerless
-- The Augur warns this is exactly what Mars wants—the spear in Rome
-- Centurion Varro quietly tells the party: "That Tribune is lying about something"
+**Immediate NPC Reactions:**
+- **Legate Corvinus**: Controlled fury. Accepts the orders publicly, seething privately. He will be a problem later.
+- **Augur Cassia**: Visible distress. Whispers to the party at the first opportunity: *"The omens around this man are confused. I cannot see his purpose clearly."*
+- **Centurion Varro** (quietly, to the party, when Tribune is out of earshot): *"I've seen ambitious men from Rome before. That one is afraid of something. Afraid men do stupid things."*
 
-## Scene 1: Investigation & Tensions
+---
 
-The party has time to investigate before departure. Options:
+## Three Clue Rule: Discovering the Tribune's True Agenda
 
-**Talk to the Augur (Cassia Liviana):**
-- She's had visions: the spear in Rome, the Capitoline Hill running with blood
-- She reveals the spear's true history: it was used by a mortal hero to kill a minor god (Mars' son)
-- Mars cursed it so that whoever wields it will be consumed by war
-- The Tribune knows this—he plans to use it to assassinate someone in Rome
+The party needs to learn that Lucius is working for Senator Brutus and his goal is to prevent the spear reaching Rome (not to retrieve it). Three independent paths — finding any one is enough.
 
-**Talk to Centurion Varro:**
-- He's served 20 years and knows political games
-- "That Tribune didn't come here for the spear—he came here to disappear the spear"
-- He suspects the Tribune plans to fake an attack and blame the party
-- Offers to help if things go wrong
+**Clue 1: The Encoded Letter**
+- Search Tribune's quarters (DC 16 Investigation, or pick the lock DC 14)
+- Find a locked dispatch box — inside, the letter (Handout 5)
+- Decoded, it names Senator "G.C.B." ordering the artifact's "permanent removal"
+- Cassia can identify the cipher pattern if shown it (she's seen similar Senate correspondence)
 
-**Search the Tribune's Quarters (DC 16 Investigation):**
-- Find a letter (encoded, DC 14 Intelligence to decipher)
-- The letter is from a Senator ordering the Tribune to "ensure the artifact never reaches Rome"
-- The Tribune is supposed to destroy it—or those carrying it
+**Clue 2: The Tribune's Behaviour**
+- Watch him carefully during the raid (Scene 2) — DC 14 Perception or Insight
+- The Tribune and his Praetorians take *no action* during the assault. They withdraw to the principia and secure it — not the walls, not the gate. They're protecting the spear room, not the fort.
+- Afterward: Tribune pushes to accelerate departure, citing "raider intelligence." Why the rush?
+- Varro: *"Defenders defend the people. They defended the artifact. Ask yourself why."*
 
-## Scene 2: The Raid
+**Clue 3: Varro's Network**
+- If the party asks Varro directly about the Tribune (no check needed):
+- *"I did some asking around. That Tribune was posted to the financial investigation commission six months ago — investigating military supply embezzlement. Guess who was embezzling? Start with which Senators have frontier contracts."*
+- With DC 13 History: "G.C.B." points to Gaius Cassius Brutus — known for his 'Republic' rhetoric and enormous wealth
 
-That night, Germanic raiders attack the fort in force. This is coordinated with the Tribune's arrival (suspicious timing).
+---
 
-**Battle Map:** Fort under siege
-- 20+ raiders (use **Tribal Warrior** stat blocks in waves)
-- 2 **Berserkers** (CR 2 each)
-- 1 **Germanic Chieftain** - **Vercingetorix the Red** (use **Gladiator** stat block, CR 5)
+## Scene 2: Investigation Window
 
-**Combat Phases:**
+The party has several hours before departure. The fort is tense; every soldier knows something political has happened.
 
-**Phase 1: The Walls (2 rounds)**
-- Raiders swarm the palisade with ladders
-- Party can man ballistae (2d10 piercing, DC 12 Dex to aim)
-- Archers provide supporting fire
+**Talking to the Augur:**
+Cassia is in the shrine, surrounded by omen tablets, looking exhausted.
+> *"Three days ago I dreamed of the spear in Rome. The Capitoline ran with blood. There were cheering crowds."*
 
-**Phase 2: Breach (3 rounds)**
-- Raiders break through the gate with a battering ram
-- Melee combat in the fort courtyard
-- Centurion Varro fights alongside the party
+She reveals the spear's true history if the party hasn't already learned it: it was used by a mortal hero to kill a minor divine being — one of Mars' demigod sons. Mars cursed it: whoever wields it with ambition will be consumed by war.
 
-**Phase 3: The Headquarters (2 rounds)**
-- Vercingetorix and berserkers push toward where the spear is kept
-- The Tribune and his Praetorians mysteriously don't help
-- Climactic battle to defend the principia
+*"The Tribune knows this. He isn't taking it to Rome — he's making sure it never arrives. Someone in Rome fears what it can do in the right hands. Or the wrong ones."*
 
-## Scene 3: The Truth Revealed
+**Talking to Centurion Varro:**
+> *"Twenty years. I've served twenty years. You know what I've learned? The men who sail into a fort from Rome and relieve the commanding officer — they're not solving problems. They're managing them. For someone else."*
 
-After the battle, as the party catches their breath:
+He's positioned six of his veterans near the spear's storage room. Quietly. He doesn't explain, but if the party asks: *"Because if that Tribune tries to move it tonight without telling anyone, I want to know about it immediately."*
 
-**The Tribune's Move:**
-- He accuses the party of being traitors who let the raiders in
-- Claims they were trying to steal the spear
-- Orders his Praetorians to arrest them
-- The Legate, humiliated and angry, supports this
+**Confronting the Tribune:**
+He's charming and deflects with practiced skill. DC 16 Insight to sense he's performing more than he's saying. If pushed hard (Persuasion DC 17 or evidence in hand), he drops the act slightly:
+> *"Let's say, hypothetically, that some artifacts are more dangerous in Rome than outside it. Let's say someone with the ear of half the Senate has a plan for this particular artifact that does not end well for anyone living. Let's say I was sent here to prevent that, not to enable it."*
 
-**Centurion Varro's Intervention:**
-- He steps forward: "The Tribune is the traitor!"
-- Reveals what he saw: the Tribune signaling the raiders from the walls
-- The Praetorians hesitate—they respect Varro as a veteran
+He will not name Brutus unless the party produces the decoded letter.
 
-**Decision Point:**
-The party must choose:
-1. **Fight** – Combat with Tribune + 6 Praetorians (deadly)
-2. **Diplomacy** – Convince the Praetorians (DC 16 Persuasion with evidence)
-3. **Flee** – Escape with the spear into the Germanic forest
-4. **Surrender** – Give up the spear to see what happens
+---
 
-## Conclusion Options
+## Scene 3: The Raid
 
-**If they expose the Tribune:**
-- He confesses under pressure: he was ordered to ensure the spear never reached Rome
-- A powerful Senator fears what it could do in the wrong hands
-- He offers them a deal: help him destroy it, and they'll all walk away free
-- The Augur supports destroying it
+*That night.* The timing is not a coincidence.
 
-**If they flee:**
-- They're now fugitives from Rome with a cursed spear
-- Vercingetorix intercepts them in the forest
-- He offers alliance: "My enemy's enemy is my friend"
+Germanic raiders attack in force — and Vercingetorix the Red is leading them.
 
-**If they fight:**
-- Chaotic battle, possible deaths
-- They must flee afterward
-- Now hunted by both Rome and the Germanic tribes
+**Read aloud (alarm horns sounding):**
+
+> *The first arrow takes a sentry off the wall before the alarm horn sounds.*
+>
+> *Then the drums start — Germanic war drums, deep and rhythmic, surrounding the fort on three sides. Torchlight beyond the palisade: dozens of torches, maybe hundreds.*
+>
+> *Centurion Varro's voice cuts through the confusion: "WALLS! ALL SOLDIERS TO THE WALLS! Where in Pluto's name are those Praetorians?"*
+>
+> *The Praetorians are nowhere near the walls. Through the principia window, you can see torchlight — they're inside, around the spear.*
+
+### Encounter Structure
+
+**Phase 1: The Walls** *(2 rounds)*
+Raiders swarm with ladders and grappling hooks. The party can:
+- Man the walls: melee attacks as ladders are pushed back (Athletics DC 12)
+- Use the ballista: 2d10 piercing, requires 2 people, DC 12 Dex to aim
+- Direct the legionary response: DC 13 Persuasion/Intimidation to keep frightened soldiers at their posts
+
+*12 **Tribal Warriors** (waves, not all at once), 2 **Berserkers** on the ladders*
+
+**Phase 2: The Breach** *(3 rounds)*
+Raiders use a battering ram on the west gate. The wood holds for 3 rounds before giving. The party can:
+- Defend the gate itself: massive melee fight at the chokepoint
+- Find another way to stop the ram (fire, dropping stones, cutting the rope)
+- Rally a counter-charge with Varro's veterans
+
+*Centurion Varro fights alongside the party — use **Veteran** stat block. He's worth three normal soldiers.*
+
+**Phase 3: Vercingetorix** *(arrival at breach)*
+
+When the gate falls, a giant of a man steps through — red-haired, iron-armed, wearing a Germanic chieftain's torc and carrying a war spear that could skewer two men. He surveys the chaos with calm eyes.
+
+**Read aloud:**
+
+> *He doesn't charge. He walks.*
+>
+> *The fighting parts around him. Legionaries step back. He moves like a man who has walked through battlefields his entire life, which he has.*
+>
+> *He looks at the principia. Then he looks at you.*
+>
+> *In accented but clear Latin: "The God-Killer is here. I can feel it from here. I came for the God-Killer. I did not come for you."*
+
+**Vercingetorix (use Gladiator stat block, CR 5)** — but he doesn't attack the party unless attacked first. He wants to reach the spear. His agenda: the spear killed his grandfather three generations ago. It is a sacred wound in his people's history.
+
+**Decision Point during the fight:** How do they handle Vercingetorix?
+- **Fight him directly** — very hard at level 4, winnable but costly
+- **Let him reach the spear** — Cassia is horrified; the Legate uses this as evidence of treason
+- **Talk to him** — DC 15 Persuasion: *"Tell me why it matters to your people and I'll listen"* — he stops fighting. This costs the party a round but opens a future alliance.
+
+---
+
+## Scene 4: The Tribune's Move
+
+After the raid. Soldiers tend wounds. The gates are being repaired. Three raiders were captured.
+
+The Tribune appears, immaculate as ever, with his Praetorians.
+
+**Read aloud:**
+
+> *"Well," he says, looking at the carnage. "That was unfortunate."*
+>
+> *He turns to the Praetorians: "Arrest them."*
+>
+> *One of his guards moves to flank the party. The Tribune's voice is flat, businesslike:*
+>
+> *"These soldiers conspired with the raiders. They signaled the attack timing from the walls. I have witnesses."*
+>
+> *From the far side of the courtyard, the Legate steps forward. His expression is unreadable.*
+>
+> *"I concur with the Tribune's assessment," he says.*
+>
+> *Centurion Varro takes a slow step to stand beside the party. His hand moves to his gladius. "Do you," he says.*
+
+**Decision Point — the confrontation:**
+
+| Option | How | Consequence |
+|---|---|---|
+| **Expose the Tribune** | Produce the decoded letter or Clue 2/3 evidence | Praetorians hesitate; Varro intervenes; Tribune trapped. Rolls to next session politically complicated. |
+| **Fight** | Combat: Tribune + 6 Praetorians (CR 2 each) | Extremely dangerous. Victory means they're fugitives from Rome. |
+| **Negotiate** | DC 16 Persuasion with at least one clue in hand | Tribune offers private deal: *"Help me destroy the spear my way and I'll make this go away."* |
+| **Flee with Vercingetorix** | He's still in the fort or just outside — if the party treated him respectfully | He offers forest refuge: *"My enemy's enemy."* They're now fugitives but with a powerful Germanic ally. |
+| **Surrender** | Give the spear to the Tribune | He thanks them politely. They're confined to quarters. Session 3 starts as prisoners being transported to Rome. |
+
+---
+
+## Conclusion
 
 **Advance to Level 5**
 
+Whatever happens, the party now knows three things: the Tribune is working for someone powerful in Rome, Vercingetorix has a legitimate grievance against the spear, and at least one of the people they've been trusting is not fully what they seem.
+
+Seed for Session 3: wherever they end up, they're moving — deeper into the forest, or toward Rome, or as prisoners. The world is no longer containable within Fort Vindolanda.
+
+---
+
 ## DM Notes
 
-### Vercingetorix the Red (Germanic Chieftain)
-- **Motivation:** He's not evil—he's defending his homeland from Roman expansion
-- Can become an unlikely ally if the party treats him with respect
-- Has his own history with the spear: it killed his grandfather
+### OGAS This Session
 
-### The Tribune's Secret
-Lucius Valerius is caught between loyalty to Rome and orders from a corrupt Senator. He's not wholly evil—he genuinely believes destroying the spear is best for Rome. This creates moral complexity.
+**Tribune Lucius Valerius Maximus**
+- **Objective:** Earn his father Brutus' respect by completing this mission
+- **Goal (this session):** Get possession of the spear and arrange its destruction without leaving evidence of Senate involvement
+- **Agenda:** Use legal authority to isolate the party, then manufacture a crisis that justifies destroying the spear
+- **Secret:** He's not convinced destroying it is right. Cassia's arguments are getting through. He's doubting the mission.
+
+**Vercingetorix the Red**
+- **Objective:** Protect his people from Roman expansion
+- **Goal (this session):** Reach the spear and either destroy it or take it back to his tribe's custody
+- **Agenda:** Attack the fort while Roman authority is disrupted by the Tribune's arrival — the timing is deliberate
+- **Secret:** He's been watching this fort for weeks. He knows more about the spear's history than any Roman.
+
+### Vercingetorix: The Reluctant Alliance
+
+If the party treats him with respect during the battle, he becomes the most important NPC of Sessions 3–4. He knows:
+- Where the sacred grove is (a day's travel into the Teutoburg Forest)
+- That the spear cannot be destroyed anywhere except there
+- That the ritual requires a willing sacrifice — his grandfather tried and failed because the sacrifice was unwilling
+
+He will not volunteer this information to Romans who disrespect him. He will tell them everything if they acknowledge his people's claim on this history.
+
+**How he speaks:** Economical. Poetic when moved. Never afraid. Occasional dry humor that surprises people.
+
+> *"Romans name everything they find. That is how they believe they own it."*
+
+> *"I have been dying from a sickness for two years. I fight anyway. Your spear will not frighten me."*
+
+> *"Your fort smells of fear. My camp smells of wood smoke. Fear is the worse smell."*
 
 ### Pacing
-This session should feel tense and chaotic. The raid happens fast, and the party must make quick decisions with incomplete information—classic Guy Sclanders "pressure cooker" design.
+
+This session runs hot from the start — the dead sentry, the Tribune's authority disruption, and the raid should feel like one continuous cascade with no breathing room. That's the pressure cooker. The decision at the end is the first moment of genuine stillness. Use it.
+
+### Corruption Tracking
+
+If any character attuned to or touched the spear in Session 1, they get dreams again. Before Scene 3, the player with the highest corruption level describes their dream to the table — the spear shows them the fort burning, their comrades dead, and themselves standing over the ruins holding it. They wake covered in sweat. Don't make this mechanical yet; just make it felt.
