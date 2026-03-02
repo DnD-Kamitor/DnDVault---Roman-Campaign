@@ -1,0 +1,701 @@
+/*-- scss:defaults --*/
+
+// ============================================================
+// THE SHADOW OF MARS — CUSTOM QUARTO THEME
+// Palette: Roman imperial. Warm ink, aged parchment, crimson
+// and gold. Dark mode flips to lamp-lit stone and gold leaf.
+// ============================================================
+
+// --- Google Fonts ---
+// Cinzel: cut from Roman monumental inscriptions (headings)
+// EB Garamond: classical book typeface (body)
+// Loaded via @import in scss:rules below
+
+// --- Colour palette (light mode) ---
+$parchment:        #F8F4EE;
+$parchment-mid:    #EDE7DA;
+$parchment-dark:   #E0D8C8;
+$ink-dark:         #1C1008;
+$ink-mid:          #3A2510;
+$crimson:          #6B1515;
+$crimson-bright:   #8B2020;
+$gold:             #B8861E;
+$gold-light:       #D4A84B;
+$bronze:           #8B6914;
+$stone:            #6B6560;
+$border-warm:      #C8B89A;
+
+// --- Colour palette (dark mode, applied via CSS vars in rules) ---
+$dark-bg:          #15100A;
+$dark-bg-mid:      #1E1610;
+$dark-bg-light:    #2A1E14;
+$dark-text:        #E8DCC8;
+$dark-text-mid:    #C8BAA2;
+$dark-heading:     #D4A84B;
+$dark-link:        #E8854A;
+$dark-crimson:     #A63228;
+$dark-border:      #4A3C2A;
+$dark-code-bg:     #1A130A;
+
+// --- Bootstrap / Quarto variable overrides (light mode) ---
+$body-bg:              $parchment;
+$body-color:           $ink-dark;
+$link-color:           $crimson;
+$link-hover-color:     $crimson-bright;
+
+$headings-font-family: 'Cinzel', 'Trajan Pro', 'Times New Roman', serif;
+$headings-color:       $crimson;
+$headings-font-weight: 600;
+
+$font-family-base:     'EB Garamond', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+$font-size-base:       1.05rem;
+$line-height-base:     1.75;
+
+$font-family-monospace: 'Courier Prime', 'Courier New', Courier, monospace;
+
+$code-bg:              $parchment-mid;
+$code-color:           $ink-mid;
+
+$border-color:         $border-warm;
+$border-radius:        2px;
+$border-radius-sm:     1px;
+$border-radius-lg:     3px;
+
+// Bootstrap primary (used by buttons, badges, etc.)
+$primary:              $crimson;
+$secondary:            $stone;
+$info:                 $bronze;
+
+// Navbar
+$navbar-bg:            $ink-dark;
+$navbar-fg:            #E8DCC8;
+$navbar-hl:            $gold-light;
+
+// Sidebar (Quarto book navigation)
+$sidebar-bg:           #F0EBE1;
+$sidebar-fg:           $ink-mid;
+$sidebar-border-color: $border-warm;
+$sidebar-hl-color:     $crimson;
+
+// TOC
+$toc-color:            $stone;
+$toc-active-color:     $crimson;
+
+// Table
+$table-border-color:   $border-warm;
+
+
+/*-- scss:rules --*/
+
+// ============================================================
+// FONT IMPORT
+// ============================================================
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Courier+Prime&display=swap');
+
+
+// ============================================================
+// DARK MODE OVERRIDES
+// Applied when Quarto sets data-bs-theme="dark" on <html>
+// ============================================================
+[data-bs-theme="dark"] {
+  --bs-body-bg:         #{$dark-bg};
+  --bs-body-color:      #{$dark-text};
+  --bs-link-color:      #{$dark-link};
+  --bs-link-hover-color: #{$gold-light};
+  --bs-border-color:    #{$dark-border};
+  --bs-code-bg:         #{$dark-code-bg};
+  --bs-code-color:      #{$dark-text-mid};
+
+  // Sidebar
+  .sidebar {
+    background-color: #{$dark-bg-mid} !important;
+    border-right-color: #{$dark-border} !important;
+  }
+  .sidebar-item a {
+    color: #{$dark-text-mid};
+  }
+  .sidebar-item a:hover,
+  .sidebar-item a.active {
+    color: #{$dark-heading};
+  }
+  .sidebar-section .sidebar-item-text {
+    color: #{$dark-heading};
+  }
+
+  // TOC
+  #TOC a {
+    color: #{$dark-text-mid};
+  }
+  #TOC a:hover,
+  #TOC a.active {
+    color: #{$gold-light};
+  }
+
+  // Headings
+  h1, h2, h3, h4, h5, h6 {
+    color: #{$dark-heading};
+  }
+
+  // Blockquotes (read-aloud text)
+  blockquote {
+    border-left-color: #{$dark-crimson};
+    background-color: rgba(42, 30, 20, 0.6);
+    color: #{$dark-text};
+  }
+
+  // Details / collapsibles
+  details {
+    background-color: rgba(42, 30, 20, 0.4);
+    border-color: #{$dark-border};
+  }
+  details summary {
+    color: #{$dark-heading};
+  }
+  details[open] {
+    border-color: #{$dark-crimson};
+  }
+
+  // Tables
+  table thead th {
+    background-color: #{$dark-bg-light};
+    color: #{$dark-heading};
+    border-bottom-color: #{$dark-crimson};
+  }
+  table tbody tr:nth-child(even) {
+    background-color: rgba(30, 22, 16, 0.5);
+  }
+  table tbody tr:hover {
+    background-color: rgba(74, 60, 42, 0.3);
+  }
+
+  // Horizontal rule
+  hr {
+    border-color: #{$dark-border};
+  }
+
+  // Code blocks
+  pre {
+    background-color: #{$dark-code-bg};
+    border-color: #{$dark-border};
+  }
+}
+
+
+// ============================================================
+// TYPOGRAPHY
+// ============================================================
+
+body {
+  font-feature-settings: "liga" 1, "kern" 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Chapter / section headings
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid $gold;
+}
+
+h2 {
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid $border-warm;
+  color: $crimson;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: $crimson;
+}
+
+h4, h5, h6 {
+  font-weight: 600;
+  color: $bronze;
+}
+
+// Drop the first paragraph margin after a heading
+h1 + p,
+h2 + p,
+h3 + p {
+  margin-top: 0.5rem;
+}
+
+// Lead paragraph emphasis
+p:first-of-type {
+  // Not universally applied — let natural flow work
+}
+
+// Italic and strong
+strong {
+  color: $ink-dark;
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+
+// ============================================================
+// READ-ALOUD BLOCKQUOTES
+// ============================================================
+// These are the DM's in-media-res opening passages.
+// Give them a scroll-like left border and warm inset.
+
+blockquote {
+  border-left: 4px solid $crimson;
+  background-color: rgba(200, 184, 154, 0.18);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 2px 2px 0;
+  font-style: italic;
+  font-size: 1.08em;
+  line-height: 1.8;
+  color: $ink-mid;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+// ============================================================
+// DETAILS / SUMMARY COLLAPSIBLES
+// (Knowledge DC tiers, corruption stages, etc.)
+// ============================================================
+
+details {
+  border: 1px solid $border-warm;
+  border-left: 4px solid $gold;
+  border-radius: 2px;
+  padding: 0;
+  margin: 1rem 0;
+  background-color: rgba(200, 184, 154, 0.1);
+  transition: border-color 0.2s ease;
+
+  summary {
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $crimson;
+    padding: 0.65rem 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    user-select: none;
+
+    &::before {
+      content: '▶';
+      font-size: 0.65rem;
+      color: $gold;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      color: $crimson-bright;
+      background-color: rgba(200, 184, 154, 0.15);
+    }
+
+    // Remove default marker
+    &::-webkit-details-marker { display: none; }
+  }
+
+  &[open] {
+    border-left-color: $crimson;
+
+    summary::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  // Content area inside open details
+  &[open] > *:not(summary) {
+    padding: 0.75rem 1rem 1rem 1rem;
+  }
+
+  // Nested paragraphs inside details
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+// ============================================================
+// TABLES
+// ============================================================
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.97em;
+  border: 1px solid $border-warm;
+  border-radius: 2px;
+  overflow: hidden;
+
+  thead th {
+    background-color: $crimson;
+    color: #F0E8D8;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    font-size: 0.88rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.6rem 0.85rem;
+    border-bottom: 2px solid darken($crimson, 10%);
+    text-align: left;
+  }
+
+  tbody td {
+    padding: 0.5rem 0.85rem;
+    border-bottom: 1px solid $parchment-dark;
+    vertical-align: top;
+    line-height: 1.6;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: rgba(200, 184, 154, 0.12);
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  tbody tr:hover {
+    background-color: rgba(200, 184, 154, 0.25);
+  }
+}
+
+
+// ============================================================
+// HORIZONTAL RULES
+// ============================================================
+// Style the --- dividers to look like stone inscription lines
+
+hr {
+  border: none;
+  border-top: 1px solid $border-warm;
+  margin: 2rem auto;
+  position: relative;
+
+  &::before {
+    content: '✦';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $parchment;
+    color: $gold;
+    padding: 0 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+}
+
+
+// ============================================================
+// NAVIGATION & SIDEBAR
+// ============================================================
+
+// Book title in the sidebar
+.sidebar-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $crimson !important;
+  font-size: 1rem;
+}
+
+// Part labels (Player's Workbook / GM's Workbook)
+.sidebar-item-section-title,
+.sidebar-section > .sidebar-item-text {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $gold !important;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid $border-warm;
+}
+
+// Chapter links in sidebar
+.sidebar-item a {
+  font-size: 0.9rem;
+  color: $ink-mid;
+  border-radius: 2px;
+  padding: 0.15rem 0.4rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar-item a:hover {
+  color: $crimson;
+  background-color: rgba(107, 21, 21, 0.06);
+  text-decoration: none;
+}
+
+.sidebar-item a.active {
+  color: $crimson;
+  font-weight: 600;
+  background-color: rgba(107, 21, 21, 0.1);
+}
+
+// Navbar (top bar)
+.navbar {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid $gold;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+// TOC (right side table of contents)
+#TOC {
+  font-size: 0.88rem;
+  border-left: 2px solid $border-warm;
+  padding-left: 0.75rem;
+
+  .toc-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $gold;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: $stone;
+    text-decoration: none;
+    display: block;
+    padding: 0.1rem 0;
+    line-height: 1.4;
+    transition: color 0.15s;
+
+    &:hover {
+      color: $crimson;
+    }
+
+    &.active {
+      color: $crimson;
+      font-weight: 600;
+      border-left: 2px solid $crimson;
+      margin-left: -0.76rem;
+      padding-left: 0.6rem;
+    }
+  }
+}
+
+
+// ============================================================
+// CODE BLOCKS
+// ============================================================
+
+code {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.88em;
+  background-color: $parchment-mid;
+  border: 1px solid $parchment-dark;
+  border-radius: 2px;
+  padding: 0.1em 0.35em;
+  color: $ink-mid;
+}
+
+pre {
+  background-color: $parchment-mid;
+  border: 1px solid $border-warm;
+  border-left: 4px solid $bronze;
+  border-radius: 2px;
+  padding: 1rem;
+  overflow-x: auto;
+
+  code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.9em;
+  }
+}
+
+
+// ============================================================
+// CALLOUT BLOCKS (Quarto callouts)
+// ============================================================
+
+.callout {
+  border-radius: 2px;
+  border-left-width: 4px;
+  font-size: 0.97em;
+}
+
+.callout-tip {
+  border-left-color: $gold;
+  background-color: rgba(184, 134, 30, 0.08);
+
+  .callout-title {
+    color: $bronze;
+    font-family: 'Cinzel', serif;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}
+
+.callout-note {
+  border-left-color: $crimson;
+  background-color: rgba(107, 21, 21, 0.06);
+
+  .callout-title {
+    color: $crimson;
+    font-family: 'Cinzel', serif;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}
+
+.callout-warning {
+  border-left-color: $bronze;
+  background-color: rgba(139, 105, 20, 0.08);
+
+  .callout-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}
+
+
+// ============================================================
+// FIGURES AND CAPTIONS
+// ============================================================
+
+figure {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.88em;
+  color: $stone;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+img {
+  border-radius: 2px;
+  border: 1px solid $border-warm;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+// ============================================================
+// STAT BLOCKS & GAME MECHANICS SECTIONS
+// Anything under a "### Creature Name (CR X)" heading
+// gets visual separation via the strong tag prefix pattern
+// ============================================================
+
+// Bold labels at start of a paragraph (e.g. **Objective:**)
+p > strong:first-child {
+  color: $crimson;
+}
+
+// Strong in table cells
+td > strong:first-child {
+  color: $ink-dark;
+}
+
+
+// ============================================================
+// PAGE-LEVEL LAYOUT
+// ============================================================
+
+// Main content column — slightly constrained for readability
+.quarto-container {
+  max-width: 1400px;
+}
+
+// Content area comfortable reading width
+.page-columns .column-body {
+  max-width: 720px;
+}
+
+// Chapter intro: first paragraph slightly larger
+.chapter > p:first-of-type {
+  font-size: 1.12em;
+  line-height: 1.85;
+  color: $ink-mid;
+}
+
+// Section separator decoration
+h2::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: $gold;
+  margin-top: 0.3rem;
+}
+
+
+// ============================================================
+// PRINT STYLES
+// ============================================================
+
+@media print {
+  body {
+    font-size: 11pt;
+    color: #000;
+    background: #fff;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  blockquote {
+    border-left-color: #666;
+    background: #f5f5f5;
+  }
+
+  .sidebar,
+  #TOC,
+  .navbar,
+  .quarto-title-banner {
+    display: none !important;
+  }
+
+  details[open] > *:not(summary) {
+    display: block !important;
+  }
+
+  details summary::before {
+    display: none;
+  }
+}
