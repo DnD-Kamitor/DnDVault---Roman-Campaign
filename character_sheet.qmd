@@ -1,0 +1,435 @@
+---
+title: "Tabula Legionis"
+subtitle: "Shadow of Mars Character Sheet"
+format:
+  pdf:
+    pdf-engine: xelatex
+    geometry: "letterpaper,margin=0.5in"
+    toc: false
+    number-sections: false
+  html:
+    theme: default
+    css: _character_sheet.scss
+    toc: false
+    number-sections: false
+    page-layout: full
+fontsize: 11pt
+header-includes:
+  - |
+    \usepackage{tikz}
+    \usepackage{tcolorbox}
+    \usepackage{tabularx}
+    \usepackage{array}
+    \usepackage{multicol}
+    \usepackage{eso-pic}
+    \usepackage{fontspec}
+    \usepackage{xcolor}
+    \usepackage{enumitem}
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt}
+    \definecolor{RomanParchment}{HTML}{F7F1E2}
+    \definecolor{RomanGold}{HTML}{C28B36}
+    \definecolor{RomanRed}{HTML}{731C24}
+    \definecolor{RomanInk}{HTML}{2F1B14}
+    \definecolor{RomanStone}{HTML}{8B7D6B}
+    \color{RomanInk}
+    \setmainfont{TeX Gyre Pagella}
+    \setsansfont{TeX Gyre Heros}
+    \newfontfamily\Inscription{TeX Gyre Termes}
+    \renewcommand{\familydefault}{\rmdefault}
+    \tcbuselibrary{skins,breakable}
+    \tcbset{
+      enhanced,
+      boxrule=0.8pt,
+      colback=RomanParchment!70!white,
+      colframe=RomanGold,
+      coltitle=RomanRed,
+      arc=2pt,
+      left=5pt,
+      right=5pt,
+      top=4pt,
+      bottom=4pt,
+      fonttitle=\Inscription\bfseries,
+      title filled
+    }
+    \newcommand{\FieldLine}{\rule{0pt}{1.1em}\hrulefill}
+    \newcommand{\WideLines}{\rule{\textwidth}{0.4pt}\\[0.25cm]\rule{\textwidth}{0.4pt}}
+    \newcommand{\SmallLines}{\rule{\textwidth}{0.35pt}\\[0.2cm]\rule{\textwidth}{0.35pt}}
+    \newcommand{\RomanCheckbox}{\tikz[baseline=-0.5ex]\draw[RomanGold!85,line width=0.7pt] (0,0) rectangle (0.25,0.25);}
+    \newcommand{\CorSlot}[1]{\begin{minipage}{1.05cm}\centering\RomanCheckbox\\[-2pt]{\scriptsize #1}\end{minipage}}
+    \newcommand{\CorruptionTrack}{%
+      \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}*{6}{c}}
+        \CorSlot{0} & \CorSlot{1} & \CorSlot{2} & \CorSlot{3} & \CorSlot{4} & \CorSlot{5} \\
+      \end{tabular*}}
+    \newcommand{\AbilityCard}[2]{%
+      \fbox{\begin{minipage}[t]{0.13\textwidth}\centering\textbf{#1}\\[-2pt]\scriptsize(#2)\\[0.3cm]\textsc{Score}\\[-2pt]\rule{0.9\linewidth}{0.45pt}\\[0.35cm]\textsc{Mod}\\[-2pt]\rule{0.9\linewidth}{0.45pt}\end{minipage}}}
+    \newcommand{\SkillLine}[2]{\RomanCheckbox\ \textbf{#1} (\textit{#2})\hspace{0.2cm}\rule{1cm}{0.35pt}}
+    \newcommand{\SaveLine}[1]{\textbf{#1}\hfill\rule{1.4cm}{0.35pt}}
+    \newcommand{\SessionLines}{\rule{\textwidth}{0.35pt}\\[0.18cm]\rule{\textwidth}{0.35pt}}
+    \newcommand{\RomanEagle}{%
+      \begin{tikzpicture}[scale=0.5]
+        \fill[RomanGold!40] (-4,0) -- (-6,1.2) -- (-5,2.8) -- (-2.2,1.6) -- (-2.2,3) -- (-0.8,3.8) -- (0,4.2) -- (0.8,3.8) -- (2.2,3) -- (2.2,1.6) -- (5,2.8) -- (6,1.2) -- (4,0) -- (2,-0.6) -- (2,-2.4) -- (1.2,-3.6) -- (0,-2.8) -- (-1.2,-3.6) -- (-2,-2.4) -- (-2,-0.6) -- cycle;
+        \draw[RomanGold!65,line width=0.8pt] (-4,0) -- (-6,1.2) -- (-5,2.8) -- (-2.2,1.6);
+        \draw[RomanGold!65,line width=0.8pt] (4,0) -- (6,1.2) -- (5,2.8) -- (2.2,1.6);
+        \node[font=\Inscription\Large,color=RomanRed!60] at (0,-4.2) {SPQR};
+      \end{tikzpicture}}
+    \newcommand{\SessionBox}[1]{%
+      \begin{tcolorbox}[title={Sessio #1}]
+        \footnotesize
+        \textbf{Dies (Intra mundum / Realis)}\\[2pt]
+        \rule{0.45\textwidth}{0.35pt}\ /\ \rule{0.45\textwidth}{0.35pt}\\[0.25cm]
+        \textbf{Initium (Opening Situation)}\\[2pt]\SessionLines\\[0.2cm]
+        \textbf{Decisio et Causa}\\[2pt]\SessionLines\\[0.2cm]
+        \textbf{NPCs Occurrerunt}\\[2pt]\SessionLines\\[0.2cm]
+        \textbf{Corruptio $\Delta$ / Finis}\hfill\rule{0.45\textwidth}{0.35pt}\\[0.25cm]
+        \textbf{Divina Mutatio}\hfill\rule{0.45\textwidth}{0.35pt}\\[0.25cm]
+        \textbf{Memorabile Momentum}\\[2pt]\SessionLines
+      \end{tcolorbox}}
+    \AddToShipoutPictureBG*{%
+      \begin{tikzpicture}[remember picture,overlay]
+        \fill[RomanParchment!90] (current page.north west) rectangle (current page.south east);
+        \draw[RomanStone,line width=1.1pt] ([xshift=12pt,yshift=-12pt]current page.north west) rectangle ([xshift=-12pt,yshift=12pt]current page.south east);
+        \draw[RomanStone!70,line width=0.7pt] ([xshift=18pt,yshift=-18pt]current page.north west) rectangle ([xshift=-18pt,yshift=18pt]current page.south east);
+        \node at (current page.center) [opacity=0.05] {\RomanEagle};
+      \end{tikzpicture}}
+    \pagestyle{empty}
+---
+
+::: {.content-visible when-format="pdf"}
+
+```{=latex}
+\begin{center}
+  {\Inscription\Large TABVLA LEGIONIS}\\[2pt]
+  {\small Character dossier for The Shadow of Mars}
+\end{center}
+
+\begin{tcolorbox}[title={Identitas Legionaria}]
+  \begin{tabularx}{\textwidth}{@{}>{\bfseries}lX >{\bfseries}lX@{}}
+    Nomen (Name) & \FieldLine & Provincia Originis (Province of Origin) & \FieldLine \\
+    Populus / Species (People / Race) & \FieldLine & Status Civicus (Legal Standing) & \FieldLine \\
+    Legio et Gradus (Legion \& Rank) & \FieldLine & Contubernium (Tent Squad) & \FieldLine \\
+    Aetas (Age) & \FieldLine & Linguae (Languages) & \FieldLine \\
+  \end{tabularx}
+  \vspace{0.2cm}
+  \textbf{Origo Vitae (Background)}\\[2pt]\WideLines
+\end{tcolorbox}
+
+\begin{minipage}[t]{0.49\textwidth}
+  \begin{tcolorbox}[title={Virtutes Corporis (Attributes)}]
+    \centering
+    \AbilityCard{Fortitudo}{STR}\hspace{0.15cm}\AbilityCard{Dexteritas}{DEX}\hspace{0.15cm}\AbilityCard{Constitutio}{CON}\\[0.3cm]
+    \AbilityCard{Intellectus}{INT}\hspace{0.15cm}\AbilityCard{Sapientia}{WIS}\hspace{0.15cm}\AbilityCard{Charisma}{CHA}
+  \end{tcolorbox}
+
+  \begin{tcolorbox}[title={Salvationes et Artes}]
+    \textbf{Saving Throws}\\[2pt]
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+      \SaveLine{Fortitudo} & \SaveLine{Sapientia} \\
+      \SaveLine{Dexteritas} & \SaveLine{Intellectus} \\
+      \SaveLine{Constitutio} & \SaveLine{Charisma} \\
+    \end{tabularx}
+    \vspace{0.2cm}
+    \textbf{Peritiae (Skills)}\\[4pt]
+    \begin{tabularx}{\textwidth}{@{}X X@{}}
+      \SkillLine{Acrobatica}{Acrobatics} & \SkillLine{Arcanum}{Arcana} \\
+      \SkillLine{Athletica}{Athletics} & \SkillLine{Bestiaria}{Animal Handling} \\
+      \SkillLine{Deceptio}{Deception} & \SkillLine{Historia}{History} \\
+      \SkillLine{Perspectio}{Insight} & \SkillLine{Intimidatio}{Intimidation} \\
+      \SkillLine{Investigationes}{Investigation} & \SkillLine{Medicina}{Medicine} \\
+      \SkillLine{Natura}{Nature} & \SkillLine{Perceptio}{Perception} \\
+      \SkillLine{Performantia}{Performance} & \SkillLine{Persuasio}{Persuasion} \\
+      \SkillLine{Religio}{Religion} & \SkillLine{Furtum Manus}{Sleight of Hand} \\
+      \SkillLine{Occultatio}{Stealth} & \SkillLine{Superstitio}{Survival} \\
+    \end{tabularx}
+  \end{tcolorbox}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+  \begin{tcolorbox}[title={Parametri Belli (Combat Stats)}]
+    \begin{tabularx}{\textwidth}{@{}>{\bfseries}l>{\raggedleft\arraybackslash}X@{}}
+      Classes Armorum (AC) & \rule{0.5\linewidth}{0.4pt} \\
+      Initium (Initiative) & \rule{0.5\linewidth}{0.4pt} \\
+      Velocitas (Speed) & \rule{0.5\linewidth}{0.4pt} \\
+      Bonus Peritiae (Proficiency) & \rule{0.5\linewidth}{0.4pt} \\
+      Passiva Perceptio & \rule{0.5\linewidth}{0.4pt} \\
+      Sensus (Darkvision etc.) & \rule{0.5\linewidth}{0.4pt} \\
+    \end{tabularx}
+  \end{tcolorbox}
+
+  \begin{tcolorbox}[title={Salus et Res}]
+    \begin{tabularx}{\textwidth}{@{}>{\bfseries}l>{\raggedleft\arraybackslash}X@{}}
+      Vitae Maximae (Max HP) & \rule{0.5\linewidth}{0.4pt} \\
+      Vitae Praesentes (Current HP) & \rule{0.5\linewidth}{0.4pt} \\
+      Temporae Vitae (Temp HP) & \rule{0.5\linewidth}{0.4pt} \\
+      Dices Vitae (Hit Dice) & \rule{0.5\linewidth}{0.4pt} \\
+      Mortis Salvae (Death Saves) & \rule{0.5\linewidth}{0.4pt} \\
+      Fatigatio (Exhaustion) & \rule{0.5\linewidth}{0.4pt} \\
+    \end{tabularx}
+    \vspace{0.2cm}
+    \textbf{Notae Sanitatis}\\[2pt]\SmallLines
+  \end{tcolorbox}
+
+  \begin{tcolorbox}[title={Arma et Tactica}]
+    \begin{tabularx}{\textwidth}{@{}>{\bfseries}l>{\bfseries}cX@{}}
+      Telum (Attack) & Bonus & Damnum / Nota \\
+      \hline
+      & & \\
+      & & \\
+      & & \\
+    \end{tabularx}
+    \vspace{0.2cm}
+    \textbf{Res et Stipendium (Gear \& Pay)}\\[2pt]\SmallLines
+  \end{tcolorbox}
+
+  \begin{tcolorbox}[title={Divina et Corruptio}]
+    \textbf{Gradus Corruptionis}\\[4pt]
+    \CorruptionTrack
+    \vspace{0.4cm}
+    \textbf{Divina Statio (Divine Standing):}\quad Favored\ \RomanCheckbox\quad Neutral\ \RomanCheckbox\quad Cursed\ \RomanCheckbox\quad Deus: \rule{0.25\textwidth}{0.35pt}
+    \vspace{0.3cm}
+    \textbf{Fatum (Fate Statement)}\\[2pt]\rule{\textwidth}{0.4pt}
+    \vspace{0.2cm}
+    \textbf{Vota et Omina (Oaths \& Omens)}\\[2pt]\SmallLines
+  \end{tcolorbox}
+\end{minipage}
+
+\newpage
+
+\begin{center}
+  {\Inscription\Large CHRONICON SESSIONVM}
+\end{center}
+
+\setlength{\columnsep}{14pt}
+\begin{multicols}{2}
+  \SessionBox{I}
+  \SessionBox{II}
+  \SessionBox{III}
+  \SessionBox{IV}
+  \SessionBox{V}
+\end{multicols}
+```
+:::
+
+::: {.content-visible when-format="html"}
+
+<div class="sheet">
+  <section class="page front">
+    <div class="page-border">
+      <header class="title-block">
+        <p class="eyebrow">Legio XIV Gemina</p>
+        <h1>Tabula Legionis</h1>
+        <p class="subtitle">Character dossier for The Shadow of Mars</p>
+      </header>
+      <section class="identity-block">
+        <div class="field-pair">
+          <label>Nomen (Name)</label>
+          <div class="line"></div>
+        </div>
+        <div class="field-pair">
+          <label>Provincia Originis (Province of Origin)</label>
+          <div class="line"></div>
+        </div>
+        <div class="field-pair">
+          <label>Populus / Species (People / Race)</label>
+          <div class="line"></div>
+        </div>
+        <div class="field-pair">
+          <label>Status Civicus (Legal Standing)</label>
+          <div class="line"></div>
+        </div>
+        <div class="field-pair">
+          <label>Legio et Gradus (Legion &amp; Rank)</label>
+          <div class="line"></div>
+        </div>
+        <div class="field-pair">
+          <label>Contubernium (Tent Squad)</label>
+          <div class="line"></div>
+        </div>
+        <div class="field-pair">
+          <label>Aetas (Age)</label>
+          <div class="line"></div>
+        </div>
+        <div class="field-pair">
+          <label>Linguae (Languages)</label>
+          <div class="line"></div>
+        </div>
+        <div class="field-area">
+          <label>Origo Vitae (Background)</label>
+          <div class="multi-line"></div>
+        </div>
+      </section>
+      <div class="columns">
+        <section class="column">
+          <h2>Virtutes Corporis</h2>
+          <div class="ability-grid">
+            <div class="ability-card"><span class="label">Fortitudo</span><span class="abbr">STR</span><div class="line score"></div><div class="line mod"></div></div>
+            <div class="ability-card"><span class="label">Dexteritas</span><span class="abbr">DEX</span><div class="line score"></div><div class="line mod"></div></div>
+            <div class="ability-card"><span class="label">Constitutio</span><span class="abbr">CON</span><div class="line score"></div><div class="line mod"></div></div>
+            <div class="ability-card"><span class="label">Intellectus</span><span class="abbr">INT</span><div class="line score"></div><div class="line mod"></div></div>
+            <div class="ability-card"><span class="label">Sapientia</span><span class="abbr">WIS</span><div class="line score"></div><div class="line mod"></div></div>
+            <div class="ability-card"><span class="label">Charisma</span><span class="abbr">CHA</span><div class="line score"></div><div class="line mod"></div></div>
+          </div>
+          <div class="saves">
+            <h3>Salvationes</h3>
+            <div class="save-list">
+              <div><span>Fortitudo</span><div class="mini-line"></div></div>
+              <div><span>Dexteritas</span><div class="mini-line"></div></div>
+              <div><span>Constitutio</span><div class="mini-line"></div></div>
+              <div><span>Intellectus</span><div class="mini-line"></div></div>
+              <div><span>Sapientia</span><div class="mini-line"></div></div>
+              <div><span>Charisma</span><div class="mini-line"></div></div>
+            </div>
+          </div>
+          <div class="skills">
+            <h3>Peritiae</h3>
+            <ul class="skill-list">
+              <li><span class="checkbox"></span><span>Acrobatica</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Bestiaria</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Arcanum</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Athletica</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Deceptio</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Historia</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Perspectio</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Intimidatio</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Investigationes</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Medicina</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Natura</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Perceptio</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Performantia</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Persuasio</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Religio</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Furtum Manus</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Occultatio</span><span class="blank"></span></li>
+              <li><span class="checkbox"></span><span>Superstitio</span><span class="blank"></span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="column">
+          <h2>Parametri Belli</h2>
+          <div class="stat-grid">
+            <div><label>Classes Armorum (AC)</label><div class="line"></div></div>
+            <div><label>Initium (Initiative)</label><div class="line"></div></div>
+            <div><label>Velocitas (Speed)</label><div class="line"></div></div>
+            <div><label>Bonus Peritiae</label><div class="line"></div></div>
+            <div><label>Passiva Perceptio</label><div class="line"></div></div>
+            <div><label>Sensus</label><div class="line"></div></div>
+          </div>
+          <h2>Salus et Res</h2>
+          <div class="stat-grid">
+            <div><label>Vitae Maximae</label><div class="line"></div></div>
+            <div><label>Vitae Praesentes</label><div class="line"></div></div>
+            <div><label>Temporae Vitae</label><div class="line"></div></div>
+            <div><label>Dices Vitae</label><div class="line"></div></div>
+            <div><label>Mortis Salvae</label><div class="line"></div></div>
+            <div><label>Fatigatio</label><div class="line"></div></div>
+          </div>
+          <div class="notes">
+            <label>Notae Sanitatis</label>
+            <div class="multi-line"></div>
+          </div>
+          <h2>Arma et Tactica</h2>
+          <table class="attack-table">
+            <thead><tr><th>Telum</th><th>Bonus</th><th>Damnum / Nota</th></tr></thead>
+            <tbody>
+              <tr><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td></tr>
+              <tr><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>
+          <div class="notes">
+            <label>Res et Stipendium</label>
+            <div class="multi-line"></div>
+          </div>
+          <h2>Divina et Corruptio</h2>
+          <div class="corruption">
+            <div class="corruption-track">
+              <div class="slot"><span class="box"></span><span>0</span></div>
+              <div class="slot"><span class="box"></span><span>1</span></div>
+              <div class="slot"><span class="box"></span><span>2</span></div>
+              <div class="slot"><span class="box"></span><span>3</span></div>
+              <div class="slot"><span class="box"></span><span>4</span></div>
+              <div class="slot"><span class="box"></span><span>5</span></div>
+            </div>
+            <div class="divine-row">
+              <label>Divina Statio</label>
+              <span>Favored</span><span class="circle"></span>
+              <span>Neutral</span><span class="circle"></span>
+              <span>Cursed</span><span class="circle"></span>
+              <span>Deus</span><div class="line"></div>
+            </div>
+            <div class="notes">
+              <label>Fatum</label>
+              <div class="line"></div>
+            </div>
+            <div class="notes">
+              <label>Vota et Omina</label>
+              <div class="multi-line"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+  <section class="page back">
+    <div class="page-border">
+      <header class="title-block">
+        <p class="eyebrow">Contubernium Chronicle</p>
+        <h1>Chronicon Sessionum</h1>
+        <p class="subtitle">Track each session's turning points.</p>
+      </header>
+      <div class="session-grid">
+        <article class="session-card" data-session="I">
+          <h2>Session I</h2>
+          <div class="field-pair"><label>Dies (Intra mundum / Realis)</label><div class="dual-line"><span></span><span></span></div></div>
+          <div class="field-area"><label>Initium</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>Decisio et Causa</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>NPCs Occurrerunt</label><div class="multi-line"></div></div>
+          <div class="field-pair"><label>Corruptio Δ / Finis</label><div class="line"></div></div>
+          <div class="field-pair"><label>Divina Mutatio</label><div class="line"></div></div>
+          <div class="field-area"><label>Memorabile Momentum</label><div class="multi-line"></div></div>
+        </article>
+        <article class="session-card" data-session="II">
+          <h2>Session II</h2>
+          <div class="field-pair"><label>Dies (Intra mundum / Realis)</label><div class="dual-line"><span></span><span></span></div></div>
+          <div class="field-area"><label>Initium</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>Decisio et Causa</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>NPCs Occurrerunt</label><div class="multi-line"></div></div>
+          <div class="field-pair"><label>Corruptio Δ / Finis</label><div class="line"></div></div>
+          <div class="field-pair"><label>Divina Mutatio</label><div class="line"></div></div>
+          <div class="field-area"><label>Memorabile Momentum</label><div class="multi-line"></div></div>
+        </article>
+        <article class="session-card" data-session="III">
+          <h2>Session III</h2>
+          <div class="field-pair"><label>Dies (Intra mundum / Realis)</label><div class="dual-line"><span></span><span></span></div></div>
+          <div class="field-area"><label>Initium</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>Decisio et Causa</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>NPCs Occurrerunt</label><div class="multi-line"></div></div>
+          <div class="field-pair"><label>Corruptio Δ / Finis</label><div class="line"></div></div>
+          <div class="field-pair"><label>Divina Mutatio</label><div class="line"></div></div>
+          <div class="field-area"><label>Memorabile Momentum</label><div class="multi-line"></div></div>
+        </article>
+        <article class="session-card" data-session="IV">
+          <h2>Session IV</h2>
+          <div class="field-pair"><label>Dies (Intra mundum / Realis)</label><div class="dual-line"><span></span><span></span></div></div>
+          <div class="field-area"><label>Initium</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>Decisio et Causa</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>NPCs Occurrerunt</label><div class="multi-line"></div></div>
+          <div class="field-pair"><label>Corruptio Δ / Finis</label><div class="line"></div></div>
+          <div class="field-pair"><label>Divina Mutatio</label><div class="line"></div></div>
+          <div class="field-area"><label>Memorabile Momentum</label><div class="multi-line"></div></div>
+        </article>
+        <article class="session-card" data-session="V">
+          <h2>Session V</h2>
+          <div class="field-pair"><label>Dies (Intra mundum / Realis)</label><div class="dual-line"><span></span><span></span></div></div>
+          <div class="field-area"><label>Initium</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>Decisio et Causa</label><div class="multi-line"></div></div>
+          <div class="field-area"><label>NPCs Occurrerunt</label><div class="multi-line"></div></div>
+          <div class="field-pair"><label>Corruptio Δ / Finis</label><div class="line"></div></div>
+          <div class="field-pair"><label>Divina Mutatio</label><div class="line"></div></div>
+          <div class="field-area"><label>Memorabile Momentum</label><div class="multi-line"></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+:::

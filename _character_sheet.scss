@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:wght@400;500;600&family=Roboto+Mono:wght@400&display=swap');
+
+$parchment: #f6f0e4;
+$ink: #2f1b14;
+$gold: #c28b36;
+$red: #731c24;
+$stone: #8b7d6b;
+$shadow: rgba(47, 27, 20, 0.12);
+
+body {
+  font-family: 'EB Garamond', 'Palatino Linotype', serif;
+  background: repeating-linear-gradient(135deg, rgba(242, 236, 224, 0.7) 0, rgba(242, 236, 224, 0.7) 40px, rgba(247, 241, 226, 0.9) 40px, rgba(247, 241, 226, 0.9) 80px);
+  color: $ink;
+  padding: 2rem;
+}
+
+.sheet {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.page {
+  background: $parchment;
+  box-shadow: 0 20px 40px $shadow;
+  border: 1px solid rgba($stone, 0.5);
+  position: relative;
+}
+
+.page-border {
+  position: relative;
+  padding: 2rem;
+  border: 8px double rgba($stone, 0.6);
+  min-height: 200px;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.5), transparent 65%);
+
+  &::after {
+    content: 'SPQR';
+    font-family: 'Cinzel', serif;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    color: rgba($gold, 0.08);
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -30%);
+    pointer-events: none;
+  }
+}
+
+.title-block {
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  .eyebrow {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba($ink, 0.7);
+    margin: 0;
+  }
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.25em;
+    font-size: 1.5rem;
+    margin: 0.2rem 0;
+    color: $red;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    color: rgba($ink, 0.75);
+    margin: 0;
+  }
+}
+
+.identity-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.9rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.field-pair,
+.field-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field-pair label,
+.field-area label,
+.notes label {
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: rgba($ink, 0.75);
+}
+
+.line {
+  border-bottom: 1px solid rgba($ink, 0.5);
+  min-height: 1.65rem;
+}
+
+.multi-line {
+  border: 1px dashed rgba($ink, 0.35);
+  min-height: 3.2rem;
+}
+
+.dual-line {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.35rem;
+
+  span {
+    border-bottom: 1px solid rgba($ink, 0.5);
+    min-height: 1.5rem;
+  }
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.column h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  color: $red;
+  border-bottom: 1px solid rgba($gold, 0.7);
+  padding-bottom: 0.2rem;
+  margin-top: 0;
+}
+
+.ability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.ability-card {
+  border: 1px solid rgba($gold, 0.8);
+  border-radius: 4px;
+  padding: 0.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+
+  .label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    display: block;
+  }
+
+  .abbr {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: rgba($ink, 0.6);
+  }
+
+  .line {
+    margin-top: 0.3rem;
+    border-bottom: 1px solid rgba($ink, 0.6);
+    min-height: 1.25rem;
+  }
+
+  .line.mod {
+    margin-top: 0.4rem;
+  }
+}
+
+.saves {
+  margin-bottom: 1rem;
+}
+
+.save-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.35rem 0.8rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+  }
+
+  span {
+    font-size: 0.85rem;
+  }
+
+  .mini-line {
+    flex: 0 0 60px;
+    border-bottom: 1px solid rgba($ink, 0.5);
+    min-height: 1.2rem;
+  }
+}
+
+.skills {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 0.8rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+  }
+
+  .checkbox {
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 1px solid rgba($ink, 0.6);
+  }
+
+  .blank {
+    flex: 1;
+    border-bottom: 1px dotted rgba($ink, 0.4);
+    min-height: 1rem;
+  }
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 0.9rem;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 0.8rem;
+    color: rgba($ink, 0.75);
+  }
+}
+
+.attack-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+
+  th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.7rem;
+    border-bottom: 1px solid rgba($ink, 0.4);
+    text-align: left;
+    padding-bottom: 0.3rem;
+  }
+
+  td {
+    border-bottom: 1px dotted rgba($ink, 0.25);
+    height: 1.6rem;
+  }
+}
+
+.notes {
+  margin-bottom: 1rem;
+}
+
+.corruption-track {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+
+  .slot {
+    text-align: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    .box {
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid rgba($gold, 0.9);
+      margin: 0 auto 0.2rem;
+    }
+  }
+}
+
+.divine-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+  align-items: center;
+  font-size: 0.85rem;
+
+  .circle {
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 1px solid rgba($ink, 0.6);
+    border-radius: 50%;
+  }
+
+  .line {
+    flex: 1;
+    min-width: 120px;
+  }
+}
+
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.session-card {
+  border: 1px solid rgba($stone, 0.5);
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font-family: 'Cinzel', serif;
+    color: $red;
+    letter-spacing: 0.15em;
+    font-size: 0.9rem;
+  }
+}
+
+.session-card .field-pair,
+.session-card .field-area {
+  margin-bottom: 0.5rem;
+}
+
+.session-card .multi-line {
+  min-height: 2.6rem;
+}
+
+.session-card .dual-line {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.session-card::after {
+  content: attr(data-session);
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  color: rgba($ink, 0.3);
+}
+
+@media print {
+  body {
+    background: $parchment;
+    padding: 0;
+  }
+
+  .page {
+    box-shadow: none;
+    border: none;
+  }
+
+  .page-border::after {
+    opacity: 0.12;
+  }
+}
