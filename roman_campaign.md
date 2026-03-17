@@ -250,20 +250,19 @@ No one shall touch the weapon unless I permit it.)
 In nomine Senatus Populique Romani.
 ```
 
-**Handout 2: Gaulish Runes Translation**
+**Handout 2: Elder Futhark Inscription**
 ```
-GAULISH/CELTIC INSCRIPTION:
-"Atir nertos, atir bitus, atir maros"
-(Father of strength, father of life, father of death)
+ELDER FUTHARK RUNES carved into the altar stone:
+TIWAZ  HAGALAZ  NAUDHIZ  ISA  OTHALAN
 
-"Ro·bið·su in gaissos·mo dîvon-macon"
-(Here lies the spear, god-slayer)
+Below the rune row, in an older Germanic script:
 
-TRANSLATION:
-Here lies the God-Killer, the Spear of Broken Oaths,
+"Here lies the God-Killer, the Spear of Broken Oaths,
 sealed by the blood of heroes. May it never taste sunlight again.
 Forged in vengeance. Quenched in divine blood.
-The son of Mars fell here. His father's wrath lingers still.
+The son of Mars fell here. His father's wrath lingers still."
+
+Scratched separately at the base: "Do not wake what sleeps here."
 ```
 
 **Handout 3: Omens Observed (Give to players as prop)**
