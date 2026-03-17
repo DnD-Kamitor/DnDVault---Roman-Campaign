@@ -8,7 +8,7 @@
 
 Fort Vindolanda is a standard auxiliary cohort fort (*castra*) on the Germanic frontier, garrisoned by roughly 800 soldiers at full strength. At the time of the campaign it runs below strength: perhaps 550 effectives, the rest on detachment, sick, or recently rotated out and not yet replaced.
 
-The fort follows the standard castra plan (see `castra_layout.svg` in player_guide.qmd). What the plan doesn't show is what these buildings feel and smell like when occupied.
+The fort follows the standard castra plan (see `castra_layout.svg` in player_guide.qmd). What the plan doesn't show is what these buildings feel and smell like when occupied. Use that map as the key: the sections below correspond to the labeled buildings so you can point to the diagram while you describe the scene.
 
 ---
 
@@ -82,27 +82,113 @@ The fort follows the standard castra plan (see `castra_layout.svg` in player_gui
 
 *The 5-Room Dungeon. See Chapter 1 for full encounter details. This section provides the physical reality of each space for running purposes.*
 
-**The Shaft (connective tissue):** 40 feet deep. Timber-shored. The rope ladder has seven rungs that are genuinely solid and three that are not -- DC 10 Dexterity save when descending, or drop 5 feet (1d6 falling damage) and attract attention below.
+**Room 0 -- The Shaft (Descent):** 40 feet deep, timber-shored. The rope ladder has seven rungs that are genuinely solid and three that are not. DC 10 Dexterity save when descending; failure drops a character 5 feet (1d6 bludgeoning) and sends a dull reverberation through the chamber below. The sound changes subtly as the party descends from fort-air to ancient-air.
 
-**Room 1 -- Hall of Shields (Entry/Atmosphere):** 30 by 15 feet. Earth floor. 12-foot ceiling. Shelving running along both walls at 6-foot intervals, holding shields in organized arrangement. The arrangement is not random: the shields are organized by tribe, not by date. Someone grouped them intentionally.
+> *Read aloud:* *The rope ladder sways as soon as the second pair of boots touches it. Cold air pours up out of the dark like water from a cracked cistern. Forty feet down you can just make out the pale suggestion of carved stone and the curve of a doorway that does not look Roman at all.*
 
-*Running note:* The party is safe here. Nothing attacks. The shields are immovable -- they're fixed to the wall by something that doesn't behave like normal fixings. Any attempt to take a shield triggers a temperature drop of 10 degrees and a sound like a distant horn. The shield will be in its place the next time the party enters this room, regardless of what they did with it.
+**Room 1 -- Hall of Shields (Entry/Atmosphere):** 30 by 15 feet. Earth floor. 12-foot ceiling. Shelving along both walls at 6-foot intervals, holding shields in disciplined rows. They are organized by tribe, not by date, and the arrangement feels fresh, as if someone tended it yesterday.
 
-**Room 2 -- Chamber of Chains (Puzzle/Discovery):** 20 by 20 feet. 8-foot ceiling. Iron chains suspended from iron rings in the ceiling and walls. The ring anchors are set into the stone itself -- pre-Roman work, by the look of it. The chains are cold even accounting for the underground temperature.
+> *Read aloud:* *Dozens of painted shields stare back at you from either wall, their bosses catching the torchlight in brief flashes. The air smells of old leather and cold iron. Nothing moves, yet the sensation of being inspected is immediate and physical.*
 
-*The puzzle:* The chains connect to the vault's door mechanism. Two specific chains, pulled simultaneously, open the vault's stone door. DC 15 Investigation to figure this out, or players can simply push through (the door takes a DC 18 Strength check to force open, and it makes a sound like something large has been disturbed).
+*Running note:* Safe room. Shields are immovable. Attempting to pry one loose drops the temperature and produces a horn-blast only the PCs hear. When they return later, every shield is back in place regardless of what they did.
 
-*Running note:* The collars are sized for something 8 to 10 feet tall. Players who think about this too long are thinking correctly.
+**Room 2 -- Chamber of Chains (Puzzle/Discovery):** 20 by 20 feet. 8-foot ceiling. Iron chains suspended from iron rings set directly into stone. The metal is far colder than it should be.
 
-**Room 3 -- The Vault (Climax):** Circular, 20-foot diameter, 15-foot domed ceiling. The altar at the center. The spear. Two Animated Armor guardians. See Chapter 1 for the full encounter.
+> *Read aloud:* *Chains hang from the ceiling like a frozen curtain, each link rimed with moisture that never drips. The walls are cut stone that predates the Empire. Somewhere beyond the curtain you can hear stone grinding slowly against stone, as if the room were breathing.*
 
-*Running note:* The vault's atmosphere is the thing. The leaf frozen mid-fall. The silence inside the five-foot dead zone around the spear. The runes. Let the players be in it before anything threatens them.
+*Puzzle:* Two specific chains, pulled simultaneously, open the vault door. DC 15 Investigation or DC 15 Intelligence (Arcana/Religion) after examining the runes etched into the links. Forcing the door requires DC 18 Strength check with loud consequences (wandering undead from Chapter 1 arrive).
 
-**Hidden Room 4 -- The Archive (Reward):** Only discoverable with DC 17 Investigation in the vault, or if a character specifically examines the altar's base. A narrow gap behind the altar leads to a cavity 6 feet wide and 4 feet deep, sealed with packed earth. Inside:
+*Running note:* The manacles fit creatures 8-10 feet tall. Let that implication sit.
+
+**Room 3 -- Gallery of Echoes (Setback/Threat):** A narrow, curved hallway connecting the Chamber of Chains to the vault. Width 5 feet, length 25 feet. The walls are polished obsidian-like stone that reflects torchlight imperfectly.
+
+> *Read aloud:* *As you press forward the hallway narrows until shield and wall scrape together. Every sound you make rebounds immediately, doubled. Somewhere ahead a whisper answers your own breathing a half-second late.*
+
+Mechanics: While a character moves here, whispers describe their worst memory. Wisdom save DC 13 to avoid disadvantage on Perception for 1 hour. On a failed save by 5 or more, the whispers rip a secret loose: the GM passes a note revealing what memory the hall just took. This is the cost of crossing too quickly. A Detect Magic reveals an old Abjuration layer designed to unsettle invaders; dispelling the effect for one hour requires DC 15 Intelligence (Arcana) or a *dispel magic*.
+
+**Room 4 -- The Vault (Climax):** Circular, 20-foot diameter, 15-foot domed ceiling. The altar stands at the center; the spear rests atop it; two Animated Armor guardians flank the altar. See Chapter 1 for full encounter guidance.
+
+> *Read aloud:* *The vaulted chamber opens without warning. The air is perfectly still. A single leaf hangs motionless in the middle of the room, suspended above a polished stone altar. On the altar rests a spear that buzzes at the edge of hearing. The space within five feet of the weapon is silent in a way that makes your skin prickle.*
+
+*Running note:* Let the party experience the silence before combat. The dead zone swallows sound. Spellcasting inside the five-foot zone requires a DC 12 concentration check from the caster even if they are not maintaining a spell; the air itself resists voice.
+
+**Room 5 -- The Archive (Reward/Aftermath):** Only discoverable with DC 17 Investigation in the vault, or by inspecting the altar's base. A narrow gap reveals a cavity 6 feet wide and 4 feet deep sealed with packed earth. Inside:
 
 - A clay cylinder, sealed with wax, containing a rolled strip of hammered bronze with Germanic runic text. This is a primary-source account of the spear's origin: the name of the god's son it killed, the name of the tribe that sealed it, and a curse on anyone who disturbs it. The party can have this translated by Thusnelda in Session 3 -- the runes are Early Proto-Germanic, which only she can read.
 - Three amber discs, each carved with a single rune. These are *TIWAZ*, *HAGALAZ*, and *OTHALAN*: war, disruption, and ancestral land. Magical items worth 50 gp each to a scholar or collector. Each functions as a spell component for Divination spells cast involving the Germanic tradition.
 - A corroded iron key that fits nothing in the fort. It fits a lock in Thusnelda's grove.
+
+*Running note:* Treat the archive as the fifth room in the 5-Room structure: the hero's reward. It can also serve as leverage if the party wants to convince Vercingetorix they actually understand the spear's origin.
+
+---
+
+### Gates and Walls (A on map)
+
+**What they are:** Four stone-and-earth ramparts with timber parapets, each anchored by a gatehouse. The *porta praetoria* faces the main road; the *porta decumana* faces the forest. Corner towers carry signal braziers.
+
+**Sensory details:** Wet timber, oiled leather from the gate mechanisms, the constant scrape of boots on the parapet walk. At night the walls smell of pitch and cold iron.
+
+**What happens here:** Watch rotations change every four hours. The first barking dog was stationed here before it died; the surviving handlers refuse to remove the collar from its peg. The Chapter 1 Opening runs along the *via praetoria* between these gates, so be ready to describe the stone underfoot and the echo of alarms.
+
+---
+
+### Granaries (Horrea, B on map)
+
+**What they are:** Raised stone warehouses along the northern wall. Thick walls, ventilated floors, heavy bronze locks.
+
+**Sensory details:** Dry grain and dust. In winter the granaries are warmer than the courtyard. Rats are present but controlled; the cats belonging to the vicus sleep on the rafters.
+
+**Campaign use:** The excavation shaft is hidden behind the eastern horreum. The quartermaster keeps the reserve pay chest here (double-locked). During Session 2, Brutus' sleeper agent leaves a coded message carved into the underside of a grain bin here (add DC 14 Investigation if the party searches for clues about Sextus' death).
+
+---
+
+### Workshops and Armoury (Fabrica, C on map)
+
+**What it is:** The industrial block: forge, armour repair, leatherworking, carpentry. Smoke vents through a clay chimney. Constant hammering.
+
+**Sensory details:** Iron scale on the floor, blackened rafters, the metallic tang of worked bronze. The forge runs almost constantly in campaign weeks 1-3 because the Legate ordered extra pilum heads in anticipation of trouble.
+
+**Campaign use:** Corrupted spear fragments (if the party fractures it) can be temporarily stored here while awaiting secure transport. The *faber* Decimus has notes about material fatigue in the excavation support timbers (DC 12 Investigation), foreshadowing later collapses if ignored.
+
+---
+
+### Drill Yard and Parade Ground (D on map)
+
+**What it is:** Open packed-earth rectangle south of the principia. Marked with whitewashed stones for cohort formations.
+
+**Sensory details:** Dust, sweat, the metallic snap of *pilum* launches, the steady beat of the training drum. Even off-duty soldiers cut across the parade ground at angles dictated by drill habits.
+
+**Campaign use:** Scene 0 of Session 1 can open here: read aloud the cadence of marching boots and the Legate's command voice rolling across stone. Any time pressure montage should include the parade ground filling with troops while the party is called elsewhere.
+
+---
+
+### Stables and Animal Pens (E on map)
+
+**What they are:** Timber structures along the west wall holding the fort's limited cavalry mounts, draft animals, and messenger pigeons.
+
+**Sensory details:** Hay, manure, the sound of hooves on plank flooring, the rattle of harness. Warm compared to the yard in winter.
+
+**Campaign use:** Cassia uses the loft to eavesdrop on Praetorian conversations in Session 2. The messenger pigeons have been deliberately unsettled since the excavation: DC 13 Animal Handling to calm them long enough to send an urgent message.
+
+---
+
+### The Vicus (Civilian Settlement)
+
+**What it is:** Cluster of wooden buildings just outside the south gate: traders, families, the *thermopolium*, the prostitute quarter, and the small temple Cassia maintains for the soldiers' private offerings.
+
+**Sensory details:** Cooking oil, spilled wine, laughter that is both relief and exhaustion. The vicus feels like color after the stone interior of the fort.
+
+**Campaign use:** Rumor tables originate here. The Germanic trader Arric lives in the third house on the left; he sells information for favors rather than coin. During Session 2's investigation, the sleeper agent buys passage through the vicus at midnight (DC 15 Insight to link his nervous behavior to the later murder scene).
+
+---
+
+### Perimeter Walk and Towers
+
+**What it is:** The walkway atop the walls, connecting corner towers and gatehouse roofs. Torches every 40 feet. The towers carry spare javelins, pitch pots, and a bronze warning bell each.
+
+**Sensory details:** Wind. Always wind. At dawn the parapets are rimed with frost. At night the only sounds are boots and the muted river beyond the walls.
+
+**Campaign use:** Perfect vantage for night scenes: the mad worker's dash to the gate, the Legate looking over the forest during Session 1 consequence scenes, the Tribune's Praetorians sneaking messages via signal flashes in Session 2.
 
 ---
 
@@ -132,6 +218,34 @@ The Teutoburg Forest region: old-growth oak and beech, broken by streams and cle
 
 ---
 
+### Forest Weather and Omens
+
+Frontier soldiers learn to read the forest the way sailors read the sea. Each day, roll or choose one condition to color every scene. Use it when describing the air, the mud on boots, or the smell clinging to cloaks.
+
+| d6 | Condition | Signs | Effect |
+|---|---|---|---|
+| 1 | Low fog | Mist waist-high, breath condenses even at noon | Perception relying on sight suffers disadvantage beyond 30 feet |
+| 2 | Drumming rain | Broad leaves hiss, armor straps swell with water | Ranged weapon attacks beyond normal range take disadvantage |
+| 3 | Glitter frost | Branches encased in thin ice, every step snaps twigs | Stealth checks are 2 points harder unless characters wrap feet in cloth |
+| 4 | Electric stillness | Hair rises on arms, no insects audible | Next thunderclap arrives within an hour: lightning strikes any elevated metal |
+| 5 | Carrying wind | Voices travel far, distant horns sound nearer than they are | Germanic scouts hear the party from twice the normal distance |
+| 6 | Resin heat | Sunlight pours through breaks in the canopy, sap smell strong | Fatigue sets in quickly: the first forced march check of the day is at disadvantage |
+
+### Travel Hazards Table
+
+Add one of these beats during a march segment to remind players that the forest is alive. They are not random encounters; they are tone setters that can become scenes if the party engages.
+
+| d8 | Hazard | Cue | What it means |
+|---|---|---|---|
+| 1 | Wind-felled oak | Fresh break, sap still wet | Recent storm; crossing becomes difficult terrain unless cleared |
+| 2 | Hanging charms | Bones and amber hung with gut strings | Thusnelda's people marked a boundary; Persuasion DC 13 to pass without offense |
+| 3 | Silent animal trail | Hoofprints stop abruptly in churned mud | Something large hunts nearby; advantage on Survival to track or avoid |
+| 4 | Old Roman standard | Fragment of an eagle standard nailed to a tree | Evidence of the Legate's earlier expeditions; Investigation DC 12 reveals dates |
+| 5 | Boggy hollow | Peat smell, ground quivers underfoot | Movement halved for 60 feet; failing DC 12 Acrobatics means boot lost to mud |
+| 6 | Watchful raven | Bird follows the party for an hour | If acknowledged respectfully, the next Perception check has advantage; if ignored, Germanic scouts gain advantage on their next check |
+| 7 | Blood-slick stones | Thin smear crossing the path | Remains of a sacrifice; Religion DC 14 spots runes requesting secrecy |
+| 8 | Whispering pines | Trees creak in human cadence when wind blows | Wisdom save DC 12 or characters imagine voices from home, imposing disadvantage on the next Insight check |
+
 ### Vercingetorix's Village
 
 A palisaded settlement of 80 people in a natural clearing beside a tributary of the Vitulans. The village is temporary in the Germanic sense: they've been here for perhaps 15 years, will move within another 10. The buildings are well-constructed longhouses, the central fire is maintained by a dedicated elder, and the village has the organized casualness of people who know exactly where everything is.
@@ -143,6 +257,16 @@ A palisaded settlement of 80 people in a natural clearing beside a tributary of 
 *The healing-woman's house:* Separate, slightly outside the palisade to the east. Smells of smoke and something herbal and specific that resists identification. The healing-woman is not Thusnelda -- she tends the grove, which is an hour's walk from the village. The healing-woman is her apprentice, a 30-year-old named Skadi, who does not speak Latin but who watches the party with a scholar's eyes.
 
 *The weapon-store:* A locked longhouse (iron lock, iron key worn by the village's senior warrior). Inside: spears, shields, hunting bows, and one Roman-made gladius taken as a war trophy three campaigns ago. Vercingetorix is aware the party has noticed it and will not mention it. If they do: *"It was won fairly. I kept it."*
+
+**Village rhythm:** Dawn is silent except for the water carriers; no one speaks until the first smoke rises. Midday is loud with training drills in the clearing – adolescents practicing spear thrusts against a hanging log. Evening hums with layered sound: hand drums, work songs in half-Latin from traders, the low chanting of the grove-keepers out past the palisade. Use the rhythm to telegraph time jumps when the party lingers.
+
+**Faces the party keeps meeting:**
+
+- **Skadi, apprentice healer.** Quiet, observes Roman posture. Sample line: *"You carry yourselves like men waiting to be told what to feel."*
+- **Arnulf, the fire-keeper.** Laughs with his whole body, resents Corvinus but likes Varro. Sample line: *"Romans eat like wolves: fast, suspicious, grateful afterward."*
+- **Edda, veteran spear-mother.** Looks the party in the eye, counts scars. Sample line: *"Leave your boots by the door. The ground remembers who disrespects it."*
+
+Each offers a different entry point into alliance: Skadi trades knowledge for medical supplies, Arnulf wants news from the Limes, Edda demands proof of humility before sharing tribal history. Track which NPCs the party impresses; it matters when Vercingetorix polls his people in Chapter 3.
 
 ---
 
@@ -175,6 +299,36 @@ In the base of the altar's northwest face, concealed by a carved rune, is a keyh
 **The grove's behavior:**
 
 The grove does not communicate in words. It communicates in temperature and sound. Acceptance: the altar warms. Rejection: the altar stays cold. Completion: a sound, described differently by different witnesses -- wind in leaves, or a bell, or a voice almost but not quite formed into language. Every witness agrees on one thing: the sound comes from underneath the altar, not from above.
+
+### Approaching the Grove
+
+The hour-long walk from the village to the grove is its own scene. Layer the following signs as the party approaches:
+
+1. **Birdfall:** A raven drops a feather directly in front of the path. Thusnelda reads it as permission; Romans may read it as an omen of death. Religion DC 12 to interpret correctly.
+2. **Pulse in the soil:** Every few steps the ground trembles lightly, as if something vast is breathing below. Characters attuned to the spear feel the tremor mirrored in their grip.
+3. **Color shift:** Greens desaturate the closer they get, replaced by ash-gray bark and black moss that stains fingertips.
+4. **Sound gutter:** All ambient noise fades five minutes before the grove. Even armor creaks feel muffled. Call for Wisdom saves (DC 11) to avoid narrating their own thoughts aloud to fill the silence; failure gives Germanic NPCs leverage during the ritual.
+
+### Standing Stone Reactions
+
+Each stone is a witness. When a character touches a stone, roll a d6 or choose an effect.
+
+| d6 | Stone response | Effect |
+|---|---|---|
+| 1 | Stone warms | Grants advantage on the next Religion check made within the grove |
+| 2 | Rune shifts to match the character's native script | Reveals one line of the oath required to complete the ritual |
+| 3 | Moss blackens under the character's hand | That character gains 1 corruption unless they withdraw immediately |
+| 4 | Tiny sparks flicker along the carving | The grove demands an offering: 1 Hit Die or a treasured possession |
+| 5 | Whisper in Proto-Germanic | Only characters who learned the language understand it: *"Do you claim what you will not pay for?"* |
+| 6 | Cold fog spills from the base | The grove is displeased; all Persuasion checks with Thusnelda suffer disadvantage until an offering is made |
+
+### Ritual Consequences
+
+After the ritual begins, the grove remembers what each character brought to it. Track three states to inform later chapters:
+
+- **Satisfied grove:** The altar accepted the offer, the stones glowed, the ground warmed. Result: Thusnelda gains a +2 circumstance bonus to social checks with Roman authorities because the grove's blessing shields her.
+- **Balanced grove:** Offerings were adequate, no additional signs. Result: No immediate boon or penalty.
+- **Angered grove:** Someone lied or withheld. Signs: cold altar, standing stones weep sap, wind tears through the clearing. Result: All corruption checks in Chapter 4 start at disadvantage until the players perform a cleansing rite in Rome.
 
 ---
 
