@@ -48,7 +48,16 @@ This repo already captures a huge amount of campaign content. The remaining gaps
   3. Spot-check player vs. GM tone per CLAUDE.md guidelines.
 - **Definition of Done:** Build passes cleanly; README documents how to replicate.
 
-### 6. Stretch: Automation & Worker Tasks
+### 6. Knowledge System Expansion & Maintenance
+- **Goal:** Keep `knowledge.qmd` aligned with the three-barrier design so players unlock lore via character builds and skill checks.
+- **Actions:**
+  1. Audit all existing categories to ensure Barrier One requirements (proficiencies/attributes/backgrounds) remain consistent with Milestone 35.
+  2. Identify additional lore categories needed (e.g., specific NPC factions, magic doctrine, supply chain lore) and define Barrier One + DC 13/15/17 tiers for each.
+  3. Coordinate with character creation guidance so recommended proficiencies map cleanly onto knowledge barriers.
+  4. Document how GMs should adjudicate Barrier One in Session 0 (what to do if a player lacks the listed proficiency but narratively should know the fact).
+- **Definition of Done:** `knowledge.qmd` covers all critical topics with baseline + collapsible tiers; README (or Session 0 notes) references the knowledge system so players understand how to engage it.
+
+### 7. Stretch: Automation & Worker Tasks
 - **Goal:** Provide instructions for GitHub Actions (if “workers” hook is desired).
 - **Actions:**
   1. Draft CI task list (lint, spellcheck, render) for `.github/workflows/` if/when requested.
