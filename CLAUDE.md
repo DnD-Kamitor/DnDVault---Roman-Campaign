@@ -280,18 +280,17 @@ Goal: Players can close their eyes and *be* at Vindolanda. They describe their s
 - [ ] **Entertainment and social life** — Dice games (*tesserae*), gambling debts, gossip, who is popular and who is hated in the barracks, how men deal with boredom between campaigns; the role of the fort tavern (*taberna*) and bathhouse (*balneum*)
 - [ ] **Death on the frontier** — What happens when a soldier dies: how the body is prepared, who writes to the family, what the unit does collectively; funeral rites for Romans vs. what a soldier buried on the frontier gets; the emotional reality of watching your tent-mate buried far from home
 
-### Milestone 16 — The City of Rome: Player Guide ✅ COMPLETE
-Goal: When the party arrives in Rome for Sessions 3-4, players have enough grounding to roleplay the culture shock and social complexity without the GM needing to explain the city constantly.
+### Milestone 16 — Fort Vindolanda: Player Guide ✅ COMPLETE
+Goal: Because the campaign never leaves Vindolanda and its immediate surroundings, players need a visceral, practical guide to the fort: how it looks, how it runs, and how to survive the siege.
 
-**File:** `rome_guide.qmd` (added to Player's Workbook before Session 3)
+**File:** `vindolanda_guide.qmd` (Player's Workbook, before Session 3)
 
-- [ ] **First impressions** — What a frontier soldier notices first about Rome: the smell, the noise, the crowds, the height of the *insulae* (apartment blocks), the beggars, the wealth on display in the same street as utter poverty
-- [ ] **The shape of the city** — The 14 Augustan regions; which matter for the campaign: the Forum Romanum (political heart), the Palatine (imperial power), the Subura (criminal underworld), the Aventine (plebeian neighborhoods, foreign temples), the Tiber docks (commerce and danger)
-- [ ] **Social rules in Rome** — Who a frontier soldier can actually talk to; how patronage works in the city vs. the frontier; how to get an audience with a senator; what happens if you insult the wrong person; the danger of political informers (*delatores*)
-- [ ] **Prices and money in the city** — Costs for lodging, food, bribes, lawyers, a private bath; what a soldier's pay actually buys in Rome vs. on the frontier; who gets robbed and how
-- [ ] **Key locations (player-safe)** — The Forum (where to find legal help, public notices, moneylenders), the Palatine Hill approaches (where to petition the Emperor's staff), a named tavern in the Subura (where information flows freely but so do knives), the relevant temple districts
-- [ ] **Navigating Roman social climbing** — Patronage dinners (*cena*): what to wear, what to say, what not to say; how to secure a letter of introduction; what favors are currency; how a frontier soldier makes himself useful to a senator without becoming a pawn
-- [ ] **Dangers unique to Rome** — The night watch (*vigiles*): corrupt, dangerous; criminal *collegia* (gangs) with territorial boundaries players should not cross unknowingly; political informers who report private conversations to the imperial intelligence network; the social danger of being seen with the wrong person
+- [ ] **First impressions** — Rain, stone, watchtower smoke, and trumpet calls that define daily life inside the fort walls.
+- [ ] **The fort's layout** — *Principia*, *praetorium*, barracks, *fabrica*, *vicus*, bathhouse, sacred spaces, and the hidden stair under the headquarters.
+- [ ] **Social rules at the fort** — Chain of command, the quartermaster's ledger, watch passwords, the vicus compact, and how oaths function when Mars is watching.
+- [ ] **Prices and supply realities** — What food, bribes, or favors cost inside the walls now that the fort is cut off; how to trade reputation instead of coin.
+- [ ] **Key locations** — North gate, watchtower loft, granary, bath furnace room, vicus shrine, hidden stair; what each offers players in play.
+- [ ] **Dangers unique to Vindolanda** — Siege exhaustion, saboteurs, weather, vicus patrols, and the ruins beneath.
 
 ### Milestone 17 — Campaign Journal & Decision Tracker ✅ COMPLETE
 Goal: Players have a structured, beautiful one-page tool for each session that helps them track their own story arc, their relationships, and their corruption state.
@@ -373,29 +372,28 @@ Goal: The two-day forest journey feels like a journey, not a teleport to the nex
 - [ ] **Post-ritual NPC states** — A table showing where each NPC stands emotionally and practically after the spear is destroyed (or after failure); needed for Session 4 handoff
 - [ ] **Influenced NPC roleplay expansion** — The private note is good; add 3 specific things the influenced player should do or say during Scenes 1-3 that feel natural but are later recognisable in hindsight
 
-### Milestone 24 — Chapter 4: Return to Rome (Improvement Pass)
-Goal: The Triumph is the campaign's most cinematic set piece. It needs sensory density. Marius Coda deserves to be more than a stat block.
+### Milestone 24 — Chapter 4: The God's Demand (Improvement Pass)
+Goal: Vindolanda's siege and the ritual escort feel like a pressure cooker. Mars' demand is clear, the sabotage plot is concrete, and every faction's OGAS shows in play.
 
 **File:** `chapter4.qmd`
 
-- [ ] **The Triumph read-aloud** — A full paragraph of sensory description: the sound of ten thousand voices, the smell of sacrifice smoke and crushed flowers, what the processional looks like from street level; this is missing entirely before Scene 3 begins
-- [ ] **Marius Coda expanded** — His personal history (freed slave, devoted to Brutus, genuinely believes the Emperor must die for Rome); 2 sample dialogue lines; a non-lethal capture path and what happens if he's taken alive (he becomes a witness against Brutus)
-- [ ] **The Emperor encounter** — What happens if the party reaches Marcus Aurelius directly during or after the Triumph? A short scene with his voice and his reaction to being told a Senator tried to kill him
-- [ ] **Post-Triumph outcome scenes** — 2-sentence read-aloud for each major outcome (saved Emperor / wounded Emperor / Brutus arrested / Brutus escaped); currently the aftermath is handled only in a table, no narration
-- [ ] **Brutus extended sample dialogue** — 3 more characteristic lines beyond the main scene; his voice needs to be consistent across the full confrontation
-- [ ] **Scene 2 pacing guidance** — Which optional scenes to run, in what order, and how to read the table; currently 4 options with no DM guidance on selection
+- [ ] **Siege read-aloud** — Opening text that captures smoke, rain, trumpets, and Mars' bell (done). Ensure each crisis has mechanics (breach, granary, shrine) with clear stakes.
+- [ ] **Council stakes** — Flesh out the politics inside the *principia*: what Corvinus, Lucius, Varro, Cassia, and Vercingetorix each want from the escort.
+- [ ] **Procession prep table** — Concrete options the party can take before descending (scout stair, calm vicus, call favors) with consequences for failure.
+- [ ] **Tunnel scenes** — Three distinct hazards that escalate tension and foreshadow Mars' arrival.
+- [ ] **Antechamber demand** — Clarify the requirement for three kneeling witnesses and how that affects Session 5.
 
 ### Milestone 25 — Chapter 5: The Wrath of Mars (Improvement Pass)
-Goal: Option C (the argument) gets the depth it deserves. Corruption level 5 is fully mechanised. Every ending has its own emotional beat.
+Goal: Option C (the argument) gets the depth it deserves. Corruption level 5 is fully mechanised. Every ending has its own emotional beat set atop the fort's parade ground.
 
 **File:** `chapter5.qmd`
 
-- [ ] **Corruption level 5 in the arena** — Currently mentioned but undefined; write out exactly what Mars does with a level-5 corrupted character: they fight for Mars in Option A (as an avatar, not themselves), they are the voice Mars uses to tempt the party in Option C, they can be reclaimed at the cost of The Chosen being two characters instead of one
-- [ ] **Option C expanded** — 3 specific arguments that move Mars (with example phrasing), 3 that anger him; the failure recovery path (DC 14 demonstration check after a failed DC 17); what Mars looks like when he is actually persuaded vs. when he's humoring them
-- [ ] **Post-trial narration** — Distinct read-aloud for the resolution of Option A (champion falls) and Option B (Mars calls it at 150 HP); currently these trail into Scene 3 without their own emotional beat
-- [ ] **Mars up close** — When he rises from the throne in Scene 3, a proper physical description read-aloud; "immense" is insufficient for the campaign's climactic god
-- [ ] **Call to War mechanic** — How the DM practically runs "Mars will call on them once"; a table of possible calls with their nature and what happens if a Chosen refuses
-- [ ] **Epilogue NPC prompts** — 2 specific player questions per NPC (not just where-are-they-now but what-do-you-ask-them-and-what-do-they-say); makes the epilogue feel like a final conversation, not a debrief
+- [ ] **Corruption level 5 in the arena** — Define how Mars manipulates a corrupted PC in each option and how redemption works.
+- [ ] **Option C expanded** — Three arguments that move Mars, three that anger him, plus the failure recovery path (demonstration DC 14) and visual cues that show when he is persuaded.
+- [ ] **Post-trial narration** — Distinct read-alouds for Option A (champion falls) and Option B (Mars calls the fight at 150 HP).
+- [ ] **Mars up close** — Provide the read-aloud for when he rises from the throne and walks across the black sand.
+- [ ] **Call to War mechanic** — Table of future calls and what happens if the Chosen refuse.
+- [ ] **Epilogue NPC prompts** — Two example questions or answers per major NPC to make the epilogue conversational instead of a list.
 
 ### Milestone 20 — Expanded "What Your Character Knows" (knowledge.qmd Overhaul) ✅ COMPLETE
 Goal: The knowledge chapter currently goes straight to ability checks. Add a layer of baseline knowledge visible to every player before the collapsible DC sections. Every entry should have three layers: (1) common knowledge no roll needed, (2) DC 13/15 trained knowledge, (3) DC 17 specialist knowledge.

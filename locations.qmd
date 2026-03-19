@@ -332,65 +332,57 @@ After the ritual begins, the grove remembers what each character brought to it. 
 
 ---
 
-## Rome: Three Key Locations (Session 4)
+## Vindolanda Under Siege (Session 4)
 
-*Player-safe descriptions. Avoid DM-only information here -- this section can be shared or paraphrased at the table.*
-
----
-
-### The Forum Romanum
-
-**What it is:** The beating heart of Rome. An open plaza surrounded by temples, the Senate House (*curia*), law courts (*basilicae*), and public monuments. Every political act of consequence happens either here or within shouting distance.
-
-**What it looks like at ground level:**
-
-> *The Forum is never empty. Even at the second watch of the night there are scribes hurrying between buildings, night-market traders packing their goods, and the particular type of man who walks important-looking routes in the dark. During the day it is organized chaos: advocates with clients in tow, merchants seeking legal redress, slaves running errands for houses too important to use a free man for the task.*
->
-> *The smell: dust, torch smoke, the animal scent of crowds, and a faint metallic undertone from the Temple of Saturn that people who know the city recognize as the smell of money. The treasury of Rome sits under Saturn's marble feet.*
-
-**What the party can do here:**
-- Find a money-lender (4 here with stalls; they charge 12% per month; they know everyone)
-- Reach the Senate records office (DC 12 Persuasion + Tribune's credentials to get access)
-- Find a public announcement board where the Triumph's schedule is posted
-- Find the Temple of Saturn, where Senator Tullius meets his clients
-
-**Running note:** The Forum is visible from the Capitoline Hill, where the Triumph begins. On Triumph day, it is packed to impassability by mid-morning.
+*Player-safe descriptions. Use these to show the fort's state as the siege tightens and Mars begins to bleed through reality.*
 
 ---
 
-### The Subura
+### The *Principia* and Hidden Stair
 
-**What it is:** Rome's most densely populated district, northeast of the Forum. Six-story *insulae* that block light from below, external wooden staircases that creak under weight, laundry strung between buildings that drip onto the street. The Subura is where 200,000 people live on top of each other.
+**What it is:** The headquarters block and spiritual heart of the fort. Beneath the flagstones lies the sealed stair to the ruins.
 
-**What it looks like:**
+**What it looks like during the siege:**
 
-> *The light in the Subura reaches the street level for perhaps two hours at midday. The rest of the day is shadow and the smell of a hundred families cooking on braziers in rooms that were not designed to contain smoke.*
->
-> *Noise here is constant and close: someone arguing three floors up, a child crying, a merchant repeating his prices in three languages, the sound of something large being moved on the floor above. The Subura has its own rhythm, distinct from the Forum's -- faster, more vertical, less performative.*
+> *Smoke stains the painted ceiling. Sandbags fill the doorway where messenger boys once waited quietly. The air smells of ink, wet leather, and the metallic tang of the spear even when it is wrapped. When the hidden stair opens, the sound is not stone grinding on stone but a shudder that ripples through every officer present.*
 
 **What the party can do here:**
-- Find the basement cult temple in Scene 2 (below a metalworker's shop, north quarter of the Subura)
-- Contact street informants (5 *denarii* buys reliable information, 2 buys guesswork)
-- Find lodging that asks no questions (1 *denarius* per night, share a room with strangers)
-- Move without being seen if careful (DC 13 Stealth; the Subura is good at not noticing)
+- Convene the war council (Scene 1)
+- Detect sabotage or eavesdroppers (DC 14 Insight)
+- Trace the stair's wards; Cassia can show where Mars' power leaks through
 
-**Running note:** The criminal *collegia* that control the Subura's underground economy are not interested in soldiers. They're interested in business. As long as the party isn't disrupting business, they're invisible. If they start disrupting business: three large men appear and ask, politely, what the party wants to accomplish, and whether there's a way to accomplish it that doesn't involve their operation.
+**Running note:** Each promise made in the *principia* carries the weight of the legion's standards. Record who swore what before descending.
 
 ---
 
-### The Palatine Hill (Approaches)
+### The Vicus and Bathhouse
 
-**What it is:** The hill above the Forum where Rome's elite live and the Emperor's palace complex stands. The approaches are wide, formal, and watched at all times by palace staff and Praetorian detachments.
+**What it is:** The civilian settlement and the fort's social release valve. Traders, families, and unofficial taverns all clustered along the east road.
 
-**What it looks like:**
+**What it looks like during the siege:**
 
-> *The Palatine smells different from the rest of Rome: cedar, good cooking, and the particular scent of power, which is mostly money with an undertone of stone. The streets here are wide enough for two carriages to pass. The houses have actual gardens behind their walls, not just a few potted plants.*
->
-> *The Praetorians at the approach checkpoints are not unfriendly. They are precise. They ask your name, your business, and who sent you. They have a list. If you're on the list, they wave you through without expression. If you're not, they tell you that clearly and without hostility, and they note your face.*
+> *Shutters stay closed unless soldiers knock with the watchword. The bath furnace belches smoke because there is no time to clean the flues. Children sweep rainwater away from thresholds while their parents barter for salt and rumors. At night the entire vicus gathers at the shrine of Mercury, lighting candles for soldiers who might not return.*
 
 **What the party can do here:**
-- Reach the Emperor's staff with proper credentials (Tribune's authority + Senator Tullius' letter)
-- Locate the Praetorian commander (DC 14 Persuasion to get a meeting; DC 17 to get him to act without waiting for orders)
-- Find the Praetorian intelligence office, where Brutus' threat assessment was filed three weeks ago and not acted on (DC 16 Investigation + proper access)
+- Secure civilian cooperation before the procession (Scene 2)
+- Gather intelligence on saboteurs (DC 13 Persuasion; the vicus knows who sneaks near the granary)
+- Offer protection or requisition supplies, but every demand shifts reputation per `camp_economy.qmd`
 
-**Running note:** The Emperor himself is visible during the Triumph from street level. Close approach to his chariot during the Triumph requires either Praetorian credentials, the right timing (Scene 3's controlled chaos), or simply running. The Praetorians are very good at their jobs but there are a lot of people between them and Marcus Aurelius on Triumph day.
+**Running note:** If the vicus feels abandoned, the escort faces unrest as civilians try to flee through the same tunnels the party needs.
+
+---
+
+### The Gates and Ditches
+
+**What they are:** The north gate faces the forest and siege engines; the south gate faces the vicus and Vercingetorix's camp. The ditch system is the fort's lungs.
+
+**What they look like during the siege:**
+
+> *North gate: a wagon body lashed over shattered timbers, mud up to the knee, and a battering ram scar that never quite dries. South gate: truce flags whipping in the wind, Germanic envoys waiting under watchful pila, and the sour smell of rainwater trapped in the ditch.*
+
+**What the party can do here:**
+- Stage diversions with Vercingetorix's warriors (Scene 2)
+- Detect raven couriers trying to enter (DC 14 Perception)
+- Position trusted soldiers to seal the gate once the escort departs
+
+**Running note:** Every time the party leaves the walls unmanned to handle another crisis, morale drops. Track gate integrity in the Continuity Audit; if it fails, the procession faces waves of enemies underground.

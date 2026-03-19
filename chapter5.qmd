@@ -4,446 +4,226 @@
 
 ## Session Overview
 
-Mars arrives. The god of war has been watching every choice the party made across five sessions. Now he demands satisfaction — not as a villain, but as a force of nature that operates on divine logic. The final session is a reckoning: with a god, with Rome, and with who these characters have become.
+At dawn the day after the spear descended, Vindolanda stops breathing. The rain halts mid fall, the Germanic siege lines freeze, and the parade ground transforms into black sand under a sky the color of wet iron. Mars steps through the veil above the fort and demands judgment. The final session resolves every promise, betrayal, corruption roll, and sacrifice made across the campaign. The fort is the stage. The god is the audience. The players determine whether Rome earns another sunrise.
 
-**Level:** 7 (final level)
-**Duration:** 3–4 hours
-**Key Goal:** Survive Mars' judgment; determine the shape of the ending
-**Theme:** All five themes converge: Duty, Ambition, Fate, Loyalty, Divine Intervention
+**Level:** 7 (final level)  
+**Duration:** 3–4 hours  
+**Key Goal:** Survive Mars' judgment and define the future of Vindolanda (and Rome by extension)  
+**Theme:** Duty, ambition, fate, loyalty, and divine intervention converge in one arena.
 
 ### Guy Sclanders' Principles Applied
 
-**All Threads Resolve:** Every major NPC choice, every piece of evidence gathered, every corruption level, every sacrifice — it all feeds into this session. The ending the party gets is the one they built.
-
-**Meaningful Sacrifice:** Mars does not ask for nothing. The question is what each character is willing to give, and what giving it means.
-
-**Player Agency Through Consequences:** There is no "correct" ending. Each outcome is a direct product of what the party chose to value across five sessions.
+- **Strong Opening:** The fort itself becomes the divine arena before anyone can act. Everyone witnesses the arrival.
+- **Pressure Cooker:** Mars offers three trials, each with consequences for NPCs watching above the sand. The cohort, the vicus, and Vercingetorix's warriors all hold their breath while a god questions their champions.
+- **Meaningful Choices:** Fight, debate, or sacrifice. No option is safe. Each choice keys off previous player actions.
+- **Three Clue Rule:** Clues from Session 4's procession have already foreshadowed what Mars wants: kneeling witnesses, honest sacrifices, and the spear reaching his altar.
 
 ---
 
 ## Pre-Session Preparation
 
-### Continuity Tracker
-
-Run through this before any prep. The session changes based on everything that came before.
+### Continuity Tracker (Update before play)
 
 | Session | Choice | Session 5 effect |
 |---|---|---|
-| S1 | Spear given to Legate | Mars is angrier — the spear was used for mortal ambition |
-| S1 | Spear destroyed | Mars is angrier — his property was destroyed without his permission |
-| S1 | Spear retained by party | Mars respects the caution; the trial is slightly less severe |
-| S2 | Vercingetorix allied | He sends a message: "Face the god honestly. He respects honesty." |
-| S2 | Tribune alive and cooperative | His testimony helped stop Brutus — Mars notes that duty was served |
-| S3 | Sacrifice at the grove was real | Mars acknowledges the offering; reduces his opening wrath |
-| S3 | Sacrifice was token | Mars is contemptuous; harder initial checks |
-| S3 | Someone at corruption 5 | They are present in the arena — but not as themselves. Mars uses them. |
-| S4 | Emperor saved | Mars is marginally impressed (protecting a warrior-emperor has value) |
-| S4 | Brutus stopped permanently | Mars notes this — ambition checked by duty |
-| S4 | Brutus escaped | Mars considers this unfinished business; longer epilogue required |
+| S1 | Who touched the spear first | That character hears Mars' voice louder than others during the trial. |
+| S2 | Vercingetorix allied or not | If allied, his warriors circle the arena and lend morale (advantage on first roll). If not, the Germanic warband prepares to strike if Mars is displeased. |
+| S3 | Sacrifice sincerity | Genuine sacrifice grants advantage on Option C; token sacrifice imposes disadvantage on Mars' first check. |
+| S3 | Influenced NPC survival | If the corrupted worker lived, he appears among the witnesses and begs the party to speak honestly. |
+| S4 | Who knelt in the antechamber | Those three individuals glow faintly on the sand; Mars expects them to speak first if the argument option is chosen. |
+| S4 | Corvinus or Lucius betrayals | If Corvinus tried to seize the spear, his soldiers arrive hostile and may interrupt the arena if Mars is displeased. If Lucius sabotaged, Mars begins angrier (DCs +2). |
+| Any | Corruption level 5 PC exists | Mars uses them as his mouthpiece unless redeemed. See DM Notes. |
 
 ### Props & Handouts
 
-**Handout 10: Mars' Brand (give to each player at Session 5 end)**
-```
-[A small card per player, hand-drawn or printed]
+- **Handout 10: The Mark of Mars** — unchanged, distributed at session end.
+- **Handout 11: Arena Weapon cards** — place face down on the table when Scene 2 begins.
+- **Physical detail:** Dust blackened from charcoal to sprinkle on the map or battlemat to show the parade ground turning to sand.
 
-THE MARK OF MARS
+### Fort Snapshot at Dawn
 
-[Draw a stylized spear and wolf — Mars' symbols]
+> *Dawn breaks silver. Then the clouds split. The rain stops mid-drop. Every man on the wall blinks and lowers his bow because the arrows of the Germanic archers have frozen in the air. Cassia gasps. The parade ground ripples like water. Sand, black as coal, pushes up through the flagstones, covering everything. The cohort murmurs a single word: "Mars."*
 
-This character bears the god's attention. They have stood
-before a god of war and lived. For the rest of their days:
-
-  • Advantage on Intimidation checks
-  • Other soldiers recognize something in them they cannot name
-  • Once per long rest: ask the DM "What does Mars want
-    from this situation?" and receive an honest answer.
-
-In exchange: Mars may call on them. Once. At his choosing.
-```
-
-**Physical Props:**
-- A black d20 set aside — "Mars' die." Roll it openly for his attack rolls. Let the players see.
-- Prepare the arena weapons as index cards (see Scene 2)
-
-**Handout 11: Arena Weapon Cards**
-*Print or write each on a separate card, place them face-down on the table.*
-```
-GLADIUS OF ACHILLES
-Taken from a hero who chose glory over survival.
-+2 weapon. Advantage on attack rolls.
-Vulnerability to piercing damage (the price of arrogance).
-
-SHIELD OF HORATIUS
-Carried at the Tiber bridge by a man who held alone.
-+3 AC. Reaction: impose disadvantage on one attack per round.
-Cannot be used with a two-handed weapon.
-
-SPEAR OF LEONIDAS
-Three hundred held. None survived. The spear remembers.
-Reach 10 ft. +1d10 damage if you haven't moved this turn.
-At 0 HP: you stabilize automatically once per combat.
-```
+Freeze time for every NPC except the party and whichever allies they designated to witness the ritual (Cassia, Varro, Vercingetorix, Lucius, Corvinus, civilians). These figures stand at the edge of the sand like statues, able to observe but not interfere.
 
 ---
 
-## Scene 0: Cold Open (5 minutes)
+## Scene 0: Cold Open — The Silence Before Judgment
 
-**Three days after the Triumph.** Whatever the outcome in Rome, the city is still buzzing — the aftermath of either the foiled assassination or its partial success, celebrations or investigations in the Senate.
+**Read aloud:**
 
-**Read aloud (slow, deliberate):**
+> *The air tastes of brass. Wind grazes your face without moving your cloak. Every sound in the fort muffles except your heartbeat. In the center of the parade ground the sand funnels upward into a throne carved from weapons that have never touched rust. Upon it sits a figure the height of the fort wall, armored in plates that drink light. His eyes resemble cooling lava. He speaks your name without sound and the syllables shake loose dust from the barracks beams.*
 
-> *Noon.*
->
-> *The sky turns red.*
->
-> *Not the red of sunset — that slow warm bleeding at the horizon. This is blood red, from zenith to rim, everywhere at once, as if someone poured a cup of Mars' wine across the entire dome of heaven.*
->
-> *The Tiber, in full view from the city's hills, reverses direction. You can see it from where you stand. The current simply... turns.*
->
-> *A statue of Mars in the Forum — marble, twelve feet tall, serene for two hundred years — begins to weep. The tears run red down its face and pool in the Forum's stones.*
->
-> *Every dog in Rome howls. All of them. At once. Then silence.*
->
-> *The augurs don't need to deliberate.*
->
-> *That night, you all dream the same dream.*
+> *"MORTALS. I WATCHED. I ARRIVED. NOW YOU ANSWER."*
 
-**The Dream:**
-
-> *A vast arena. Black sand. A sky the color of a wound.*
->
-> *On a throne built from ten thousand weapons — swords, spears, shields, all the iron humanity has ever bent toward violence — sits a figure in armor that doesn't reflect light so much as absorb it.*
->
-> *When he speaks, the sound isn't sound. It moves through the ground, through your bones:*
->
-> **"YOU. MORTALS WHO MADE THEMSELVES MY CONCERN. I HAVE WATCHED YOU ACROSS FIVE SEASONS OF DEATH AND CHOICE. NOW YOU ANSWER TO ME. COME."**
->
-> *You wake in the arena.*
+The party appears at the center of the sand, unarmed except for whatever they carried into the ritual. Arena weapons hang along the perimeter, embedded in air like museum pieces.
 
 ---
 
-## Scene 1: The Arena
+## Scene 1: Mars Specifies the Trial
 
-The party materialises standing on the black sand. No transition, no blur — they were asleep and now they are here.
+Mars does not monologue. He assesses.
 
-**The Arena:**
-- Circular, 200 feet across
-- Black sand that absorbs sound (no echoes)
-- Walls lined with the weapons of fallen heroes — ancient, from civilizations Rome never knew
-- The arena weapons (Handout 11 cards) are visible on the walls — the party can see them from where they stand
-- No exits except through Mars' judgment
+**Mars' first words after calling them by name:**
 
-**Mars' Presence:**
+> *"You broke a covenant and mended another. You brought my spear home without my leave. Tell me why I should not salt this fort with your bones."*
 
-He doesn't rush. He sits. He looks at them the way a general looks at a battlefield — assessing, calculating. When he finally speaks, his voice is not loud. It fills the space because the space has no room for anything else.
+He offers three paths mid-sentence:
 
-> *"I know every choice you made. I know the ones you made in the dark, when no one was watching. I know the ones you almost made.*
->
-> *"The spear is gone. My property. My son's legacy. Gone because you decided it was yours to unmake.*
->
-> *"So. Here is what I offer: prove to me it was worth it. Prove that the mortals who destroyed a god's weapon had the right."*
+1. **Option A — Champion Trial:** One mortal stands as representative in single combat against a divine champion.
+2. **Option B — Trial of Blades:** The entire party faces Mars himself until he is satisfied.
+3. **Option C — Trial of Voice:** The party convinces Mars through argument and memory that destroying/entombing the spear honored him.
 
-**Mars' Challenge:**
-
-He lays out options without preference. He is genuinely testing, not performing.
-
-> *"One of you, in single combat against a champion of my choosing. Or all of you, against me. Or" — a pause, something that might be interest — "you speak. Tell me why you did what you did. Make me believe you."*
-
-**Option A: Single Champion** — Mars summons a Divine Champion
-**Option B: Full party vs. Mars himself**
-**Option C: Argument — the hardest option that costs the least blood**
+Mars states all three without preference. He will accept any. He expects a quick decision. If the party hesitates longer than a minute of table time he chooses Option B.
 
 ---
 
-## Scene 2: The Trial
+## Scene 2: The Trials
 
-### Option A — Champion Combat
+### Option A — Champion of the Arena
 
-Mars summons a **Divine Champion**: a perfect warrior drawn from the Pool of the Heroic Dead. Not a monster — a person, with a face, who fights with complete discipline.
+Mars gestures to the sand. A warrior forms from ashes: armor older than Rome, scars that radiate light, eyes closed until he inhales for the first time in centuries.
 
-> *From the sand rises a soldier. Roman armor. But the armor is too old — pre-Republic Roman, iron-age craftsmanship. The face is calm.*
->
-> *Mars: "Petronius. The first man to hold a bridge over the Tiber. He died so Rome could survive. Let's see if you deserve what he bought."*
+> *"This is Fausta Luperci," Mars says. "She held the line at the Frozen Rhine when your Empire would not. She died alone. She serves today."*
 
-**Divine Champion:**
-- HP: 140 | AC: 18 | Speed: 30 ft
-- **Multiattack:** Three attacks with spear (+9 to hit, 1d8+5 piercing + 1d8 radiant)
-- **Divine Resilience:** Resistance to all non-radiant, non-magical damage
-- **War God's Patience:** If the champion is reduced to 50 HP or less, Mars calls "Enough" — the champion stands down regardless. Endurance matters as much as winning.
-- **Legendary: Repost (1/round):** When missed with a melee attack, makes one attack as a reaction
+**Divine Champion (Fausta Luperci)**
 
-**Arena Weapons** (flip the Handout 11 cards face-up): Any character can retrieve an arena weapon as a **bonus action** on their turn. Each weapon has a cost. Make sure both the power and the cost are clear before they choose.
+- HP 145 | AC 18 | Speed 35 ft
+- **Multiattack:** Three spear attacks (+9 to hit, 1d8+5 piercing plus 1d6 radiant)
+- **Frozen Advance:** Difficult terrain does not slow her. When she moves within 5 feet of a creature, DC 15 Con save or reduce speed by 10 until end of next turn.
+- **Legendary Defiance (1/round):** When she drops below 50 HP she gains 20 temp HP and auto-succeeds one saving throw. Mars calls "Enough" after 10 rounds or when she is reduced to 0 HP.
 
-**Victory Condition:** Reduce the champion to 0 HP — **OR** survive 10 rounds. Mars respects endurance as much as victory.
+**Arena Weapon Cards:** As soon as combat begins flip Handout 11 face-up. Any PC can grab one as a bonus action. Emphasize the costs.
 
----
+**Victory:** Reducing Fausta to 0 HP or surviving 10 rounds. Mars cares about endurance. The witnesses at the edge cheer silently; their expressions freeze a half second behind reality, reminding the players this is outside time.
 
-### Option B — Full Party vs. Mars
+**Post-combat read-aloud:**
 
-This is the harder path. Mars does not hold back, but he is also genuinely testing — he won't end them quickly. He wants to see what they're made of.
+> *Fausta kneels, presses her spear butt to the sand, and nods at the party. Mars inclines his head a fraction. The sand drinks her form. The arena falls quiet enough to hear your own pulse.*
 
-**Mars, God of War:**
-- HP: 300 | AC: 20 | Speed: 40 ft
-- **Legendary Resistance (3/day):** If he fails a saving throw, he succeeds instead
-- **Multiattack:** Four attacks with the God-Forged Blade (+12 to hit, 2d8+7 slashing + 1d8 fire)
-- **Divine Smite (Recharge 5-6):** 30-foot radius, DC 18 Con save, 8d8 fire damage (half on success)
-- **War Cry (Recharge 4-6):** DC 16 Wisdom save, Frightened condition until end of next turn
+### Option B — Trial of Blades (Full Party vs. Mars)
 
-**Legendary Actions (3/turn, end of other characters' turns):**
-- **Strike (1 action):** One weapon attack
-- **Summon Fallen (2 actions):** Four Shadows of the Heroic Dead appear (use Specter stats, CR 1 each)
-- **God's Eye (1 action):** Mars sees through all illusion and invisibility until his next turn
+If chosen, Mars rises. The sky above Vindolanda fractures into burning lines. The Germanic warbands clutch their heads on the frozen walls.
 
-**The Tactical Reality:** Mars at full power is beyond what a level 7 party can defeat through damage alone. The arena weapons help significantly. And Mars has a weakness: he respects *tactics* used against him. A party that uses clever positioning, the arena features, or unexpected approaches (including talking mid-combat) can gain advantage on attack rolls for one round as Mars pauses to appreciate the play.
+Use the stat block from the previous version with these contextual tweaks:
 
-**Victory Condition:** Reduce Mars to 150 HP. At that point he stops — not defeated, but satisfied. *"Enough. You fight as well as I hoped."*
+- Mars draws a weapon forged from every Roman *pilum* he ever blessed. Same stats: HP 300, AC 20, four attacks, Divine Smite, War Cry, Legendary Actions (Strike, Summon Fallen, God's Eye).
+- **Environmental effect:** Each round a random barracks building phases into the arena as a terrain feature. Use them for cover or as hazards (burning roof beams, collapsed walls). Clever use grants advantage for one round as Mars appreciates the tactic.
 
----
+**Victory Condition:** Reduce Mars to 150 HP or demonstrate a tactic that forces him to concede (pinned weapon, blinding him with furnace ash, etc.). Once satisfied he says "Enough" and lowers his blade.
 
-### Option C — The Argument
+**Post-combat read-aloud:**
 
-The hardest option in terms of nerve. But potentially the most powerful ending.
+> *Mars halts mid swing. He does not pant. He simply stops, looks at the weapon in his hand, looks at you, and nods as if to himself. "Enough." The weapon dissolves. He stands helmetless, and for a moment he resembles an exhausted general after campaign season.*
 
-A character steps forward and speaks directly to Mars. No weapons. No posturing.
+### Option C — Trial of Voice (Argument)
 
-**What Mars actually wants to hear** (not told to the players, but what moves him):
+The party steps forward. Mars sits. The witnesses remain frozen but every heartbeat in the fort listens.
 
-The key is understanding what Mars values. He does not value peace. He does not value mercy as a principle. He does not care about politics. He cares about: honor, courage, discipline, and the acknowledgment that war has a purpose beyond destruction. He despises waste -- the idea that people died for ambition instead of for something real.
+The key arguments that move Mars remain:
 
-The three arguments that genuinely move him:
+1. **Honor argument:** The spear dishonored him by sowing madness (cite corrupted worker, Cassia's visions, Varro's men).
+2. **Discipline argument:** Destroying or sealing it preserved the disciplined war Mars demands (reference sacrifices, escort kneeling).
+3. **War vs. murder argument:** They chose war's harsh honor over easy cruelty (examples: sparing Vercingetorix, saving civilians during siege, capturing traitors instead of executing).
 
-1. *"The spear was dishonoring your name."* The corruption it caused was not war -- it was rot. It turned men against their tent-brothers, made soldiers murder each other in the dark. That is not what Mars stands for. Destroying it was an act of respect, not defiance. **Evidence that helps:** describing the corrupted worker, the influenced NPC's suffering, Brutus' plan to use divine power for an assassination.
+Arguments that anger him: "it was too dangerous," "we had no choice," "Rome needed this."
 
-2. *"We destroyed it not to defy you but because we understood what you actually represent."* Mars is the god of disciplined, honorable conflict. The spear had become a tool of ignoble violence. Destroying it was protecting his domain. **Evidence that helps:** the sacrifice at the grove (especially if it was genuine), any moment where the party chose duty over survival.
+**Mechanics:**
 
-3. *"We know the difference between war and murder."* This is the most specific and the most powerful. It requires the speaker to name an act of the campaign where the party made a harder, more honorable choice when an easier, crueler one was available. **Evidence that helps:** treating Vercingetorix with respect, protecting the legionaries at the river crossing rather than killing them, attempting to capture Marius Coda rather than simply cutting him down.
+- Base DC 19 Persuasion (or Performance) check.
+- Advantage if grove sacrifice was genuine or if kneeling volunteers speak first.
+- +3 bonus if Vercingetorix is allied and his rune message is invoked (TIWAZ + WUNJO = honorable war brings joy).
+- Disadvantage if Lucius sabotaged or if Corvinus tried to seize credit and was not rebuked.
 
-**Arguments that anger him:**
+**Failure states:**
 
-- *"The spear was too dangerous for anyone to have."* This is not a moral argument; it is a practical one. Mars does not care about practicality. He cares about principle.
-- *"We had no choice."* You always have a choice. Mortals who tell Mars they had no choice are telling him they're not worth talking to.
-- *"We were trying to protect Rome."* Mars is not a Roman god. He is older than Rome. He does not care what Rome's interests are.
+- Roll 1–5: Mars laughs and forces Option B; the party has disadvantage in round 1.
+- Roll 6–16: He demands proof in blood or scar; each PC must reveal a scar and narrate the cost. Success reduces DC to 14, failure moves to combat.
 
-**The Roll:**
+**Success read-aloud:**
 
-- DC 19 Persuasion -- or DC 17 if the party invokes specific evidence from the above (the corruption it caused, Brutus' plan, the possessed NPC's suffering)
-- Add the sacrifice made at the grove: if it was genuine, advantage on this roll
-- Add Vercingetorix's message (if alive and allied): he provided the exact words that move Mars -- using them gives a +3 bonus
-- **Critical failure (roll 1-5):** Mars laughs. Not cruel laughter -- contemptuous. *"WORDS. Mortals and their words."* Combat begins. Disadvantage on all rolls in round 1 because the party has burned the moment of stillness.
-- **Failure (6-16):** *"Try harder."* One more chance at DC 14, but now they must demonstrate rather than speak. Show a scar. Invoke the name of someone who died. Describe exactly what the spear's corruption looked like, specifically, in a person's face. Mars is watching for whether they flinch.
-- **Success (17+):** Mars is quiet for a long moment. Then: *"...You are not wrong."* The silence before those words is the most important moment in the session. Let it sit.
-- **Critical success (natural 20):** *"...You are not wrong. And you knew you weren't wrong before you came here, which is rarer."* The Chosen mechanic is offered to two characters instead of one.
+> *Mars is silent long enough to hear the rain begin to fall again outside time. When he finally speaks, the single syllable feels like pausing the world. "...You are not wrong."*
 
----
-
-## Post-Trial Narration
-
-After Option A or Option B concludes, before Mars rises, give the table a moment of stillness. This read-aloud is for the transition:
-
-**After Option A (champion combat):**
-
-> *The Divine Champion does not fall dramatically. He simply stops. His weapon lowers. He looks at you -- really looks at you, not with the assessing calm of combat but with something older, something like recognition.*
->
-> *Then he is gone. Not dissolved, not defeated -- simply elsewhere, back to wherever heroes wait between moments of use.*
->
-> *The arena is quiet. The black sand settles. Your breath comes hard.*
->
-> *From the throne, a sound: not quite approval, not quite satisfaction, but something in the register of a man watching a thing go better than he expected.*
->
-> *Mars stands.*
-
-**After Option B (full party vs. Mars):**
-
-> *At 150 HP remaining, he stops mid-swing.*
->
-> *He looks at the weapon in his hand. Then at you. Then back at the weapon.*
->
-> *The pause is five seconds. At the table of a god, five seconds is long enough to mean something.*
->
-> *"Enough," he says. Not as a command. As a verdict.*
->
-> *The God-Forged Blade disappears. He reaches up and removes the helmet -- not a gesture you expected, not from him -- and for a moment he simply looks like a very large, very tired being who has been doing this since before your civilization had a word for war.*
->
-> *"Enough," he says again, and this time it sounds like he means something more than the combat.*
->
-> *He stands.*
+**Critical success:** Two PCs may accept the title of Chosen later (see Consequences).
 
 ---
 
 ## Scene 3: The Price of Standing Before a God
 
-**After combat or after the argument succeeds:**
+Regardless of option, Mars approaches. Describe him up close with the updated read-aloud (use text from previous version, but now mention fort background).
 
-Mars rises from his throne. Up close he is not monstrous -- he is *immense*. Not just in height but in presence, in weight, in the sense that he has existed since the first time a person picked up a rock and raised it in anger.
+> *He steps off the throne. Up close he smells of hot iron and cedar smoke. Behind him the fort flickers like a painting held in uncertain hands. Every soldier on the walls stands frozen mid cheer or mid prayer. Mars' gaze passes over them and returns to you. "You have proven yourselves. I am not appeased, but I am satisfied."*
 
-**Read aloud -- Mars up close:**
+He then lays out the consequences.
 
-> *He stands. He is taller than you would have guessed from a distance. The armor he wears does not reflect light: it absorbs it, the way old iron absorbs heat, slowly and completely.*
->
-> *His face is not a god's face in the way you imagined. It is a general's face. Lined. Watchful. The face of someone who has been in the room when decisions are made and has never once pretended those decisions are clean.*
->
-> *He looks at each of you in turn. Not with warmth and not with hostility. With the specific attentiveness of someone who is deciding how to remember you.*
->
-> *When he speaks, his voice is quieter than it was from the throne. It is still not quite a sound. It moves through the arena floor, through your bones, but gently. The way a bell sounds after you've walked out of the room where it rang.*
+### Consequence Menu (choose those that fit)
 
-He looks at each of them individually. Then:
+- **Mark of Mars:** Handout 10, as written.
+- **The Chosen:** One (or two on crit success) PCs become Chosen. Detail benefits and obligations. Mention Call to War (see DM notes).
+- **The Debt:** If they bargained, Mars announces one future favor owed. "When I call, you will come. Refuse and the mark burns." Choose a hook for later games.
+- **The Transformation:** Offer to any player wanting a noble exit; they become a guardian spirit of the arena beneath Vindolanda. The fort earns a permanent blessing (advantage on morale checks) while they remain.
+- **Prophecy:** Mars informs them that Vindolanda will be a pilgrimage site for a century. He hints that Rome will fall from within in three generations.
 
-> *"You have proven yourselves. Few mortals have stood in this arena and left standing. Fewer still have faced a god and spoken honestly.*
->
-> *"I am not appeased. I will not lie to you — my weapon is gone and I am not appeased. But I am..." — the word seems unfamiliar in his mouth — "...satisfied. You have the quality I value. The others who touched that spear did not.*
->
-> *"So. You live. But you leave here changed. Everything leaves this arena changed."*
-
-### The Consequences — Choose 2 or 3 Based on Campaign Arc
-
-Lay these out honestly. Each is a real thing that will follow these characters for the rest of their lives.
-
-**The Mark of War** *(Handout 10 — give to all players)*
-Every character bears Mars' brand — a faint red scar that glows in moonlight or when violence is imminent. They have advantage on Intimidation checks. Other soldiers recognize something in them they cannot name and give ground. Once per long rest: they may ask the DM "What does Mars want here?" and receive an honest answer.
-*In exchange: Mars may call on them once. At his choosing.*
-
-**The Chosen** *(one character, by group vote or natural story fit)*
-One character becomes Mars' Chosen — not a servant, but a champion. They gain: resistance to fire and poison, one extra attack per turn on their first attack action. They must: answer one call to war per year, somewhere, for someone who has no army. Mars will tell them when and where. They don't get to choose the cause — only whether to answer.
-
-**The Debt** *(for a party that bargained rather than fought)*
-Mars accepted their argument. He does not give things for free. He will call in one favor at a time of his choosing — not within the next year, but sometime. The nature of the favor is unspecified. He will not ask them to do something dishonorable. He will ask them to do something hard.
-
-**The Transformation** *(only if a player chooses this)*
-A character offers to stay. To become a guardian of Mars' arena — not enslaved, but devoted. They leave the mortal world. They gain something that cannot be quantified in game terms: a place at the table of divine affairs, and the knowledge that they ended their story on their own terms.
-This is a noble sacrifice ending. The player narrates their last moment.
-
-**The Prophecy** *(for groups that want a sequel hook)*
-> *"One last thing. In three generations, this city will burn from within. Not by barbarian hands — from its own weight, its own rot. The seeds are already planted. I tell you this not because I want it stopped. I tell you because I want to see if your children's children have the same quality you do."*
+Afterwards the black sand recedes. Time resumes. The cohorts collapse to their knees as reality snaps back.
 
 ---
 
-## Scene 4: Return to Rome
+## Scene 4: Return to Vindolanda
 
-The party wakes in the Temple of Mars in Rome. Dawn light through the columns. They're lying on the stone floor, each bearing the brand, each carrying the weight of what happened.
+The party never left. They wake or stand where they were on the parade ground. Witness NPCs rush forward. Describe:
 
-The temple is empty except for one priest — an old man who has been tending this temple for forty years. He looks at the brands on their arms and says nothing for a long moment.
+> *Cassia touches the glowing mark on her arm and whispers, "He listened." Varro exhales for the first time in hours. The Germanic horns outside the ditch sound a single long note and then go silent. Vindolanda still stands.*
 
-Then: *"I've been waiting for something like this. I didn't know what I was waiting for."*
-
-He gives them water. That's all.
+Allow each player a short epilogue speech describing the next hour: speeches to the cohort, promises to the vicus, treatment of prisoners.
 
 ---
 
-## Scene 5: Epilogue — Where Are They Now?
+## Scene 5: Epilogue — One Year Later
 
-Go around the table. Each player answers for their character: one year later.
+Run the epilogue similar to the previous version but grounded at the fort. Prompt each player: Where are you a year later? How often does the mark glow? What rumors follow you? Then provide NPC updates with the new context:
 
-**DM prompts:**
-- Where are you?
-- What are you doing?
-- Has Mars' mark changed how people treat you?
-- What do you remember most clearly from this campaign?
-- What do you dream about?
-
-**Then:** Each player asks the DM about one other character -- an NPC they cared about. The DM answers honestly.
-
-Use these as prompts: the DM describes the NPC's current state, then invites the player to ask one follow-up question, which the DM answers in character (as if the NPC is speaking directly).
-
-| NPC | One-year-later state | Sample follow-up answer |
+| NPC | One-year-later state | Sample DM prompt |
 |---|---|---|
-| **Legate Corvinus** | Disgraced or dead, depending on Session 2. If alive: civilian, Campania, farming grapes, drinking too much of them. The man who had a god's weapon pass through his hands and couldn't hold it. | If asked what he regrets: *"I thought I was playing a game I understood. I was not."* |
-| **Augur Cassia** | Left the legion's service. She runs a small shrine on the Danube frontier, training augurs who wash out of the official colleges -- the ones who see too much to ignore. She has stopped trying to explain what she is. | If asked whether the omens have gotten quieter: *"No. But I have gotten better at knowing which ones matter."* |
-| **Centurion Titus Varro** | Retired. Has the farmland in Umbria he mentioned once and never again. Writes occasional letters to the party. They're always short. The last one said: *"Harvest good. No one tried to kill me this month. Recommend it."* | If asked whether he thinks about the campaign: *"Every morning. It's why I water the vines myself. Something to do with my hands that doesn't end in blood."* |
-| **Tribune Lucius** | In prison (if betrayed by his own Senate testimony), exonerated (if Brutus' fall protected him), or quietly fled to his family estates in Sicily and stays there. If free: changed. Quieter. Less ring-wearing. | If asked what changed him: *"Finding out my father was wrong. I'd spent my entire life assuming he was right. The architecture of that assumption takes a while to clear."* |
-| **Vercingetorix** | Dead within the year -- his illness progressed as he said it would. His funeral pyre was visible from the Roman watchtowers on the Limes. His people sent the party a brief message: two Elder Futhark runes scratched on a piece of birchbark. TIWAZ and WUNJO -- war and joy. | If asked what the runes mean together: *"He said, at the end, that a good death was a joy. He got one."* (This is from Thusnelda, who sends a separate note.) |
-| **Senator Brutus** | Dead (executed), in exile (stripped of property and citizenship), or at large (fled east with resources and a plan). If at large: a rumor surfaces from Alexandria -- a man matching his description has been seen at the temple of Bellona, meeting with men who wear the symbols of Mars. | If asked what he would say to the party if they met again: *"Something like: 'You were right and I was not wrong.' He would mean both halves."* |
-| **Thusnelda** | At the grove. The iron fragments are all buried. She is training a successor -- a young Germanic woman the party may have glimpsed during the ritual. She does not expect to live more than five years. She is at peace about this. | If asked whether the grove is different now: *"It is quieter. The wound is closed. Quiet is what you get when something has finished being in pain."* |
+| **Legate Corvinus** | Either stripped of command or promoted to a provincial desk job. His letter to the party: "Rome thanks you. I hope you believe it more than I do." | Ask: Does he ever visit Vindolanda again? |
+| **Augur Cassia** | Oversees a new shrine at Vindolanda that now draws pilgrims. She secretly trains a successor chosen from the vicus. | Ask: Does she still dream of Mars or is the fort quiet? |
+| **Centurion Varro** | Retires to his promised farm, but returns each Armilustrium to stand at the fort gates with his old unit. | Ask: Does he carry Mars' scar openly? |
+| **Tribune Lucius** | Either imprisoned, reassigned, or serving as liaison to the Senate for the fort. He is subdued, humbled, and maybe useful. | Ask: Does he still receive letters from Brutus? |
+| **Vercingetorix** | Likely dead within the year; his tribe maintains truce with the fort. They carve a rune stone honoring the party on the north road. | Ask: What message does Thusnelda send? |
+| **Senator Brutus** | If alive, still plotting from afar. If dead, his cult splinters and tries to steal the spear's ashes. | Ask: What rumor reaches the fort about him? |
+| **Thusnelda** | Guards the grove; sends occasional gifts (amber, runes). She knows Mars visited and respects the party for surviving. | Ask: Does she invite them back? |
 
-**Final DM narration:**
+Close with final narration similar to previous version but referencing the fort:
 
-> *The shadow of Mars is long. What you did in those five sessions echoes across the Empire — in the Senate, in the barracks, in a Germanic forest that is slowly reclaiming the ground where a sacred grove once stood.*
->
-> *Some call you heroes. Some call you fools. Some call you god-marked and cross the street to avoid you.*
->
-> *Mars himself calls you interesting. In the divine realm, that is far more dangerous than being forgotten.*
->
-> *Your story is over. Legends never are.*
+> *Vindolanda breathes. Stories of the god who descended upon its parade ground travel faster than any courier. Some soldiers sign up just to see the scar in the sand. Some never speak of it at all. Mars calls you interesting. History calls you necessary.*
 
 ---
 
 ## DM Notes
 
-### OGAS This Session
+### Corruption Level 5 Guidance
 
-**Mars, God of War**
-- **Objective:** Reclaim his honor and understand what these mortals are
-- **Goal (this session):** Test them — genuinely, not as performance
-- **Agenda:** Present options; respond authentically to whatever they choose; be harder on them if the grove sacrifice was token
-- **Secret:** He was going to let the spear remain corrupted and eventually destroy whoever held it — he'd written it off. These mortals forced him to pay attention to something he'd given up on. He's grateful. He will never say this.
+- **In combat options:** As before, corruption 5 characters struggle. During Option A they must succeed on DC 16 Wisdom saves each round to act freely. Three successes reduce corruption to 4.
+- **During Option B:** Mars targets them preferentially until the party calls them back by name three times, recreating the Session 3 mechanic.
+- **During Option C:** Mars uses them as his mouthpiece, asking "What do you want?" Their honest answer modifies the Persuasion DC (truthful self-awareness = no penalty; selfish answer = -5 penalty).
+- **After the session:** They cannot shed corruption without performing a selfless deed unseen by any authority within one year.
 
-### Corruption Level 5 in the Arena
+### Call to War Mechanic
 
-A character at corruption level 5 enters the arena no longer entirely themselves. The spear's influence has taken root deep enough that Mars can perceive the connection. He uses this.
+For any Chosen character:
 
-**In Option A (champion combat):** The level-5 character does not fight with the party. At the start of the combat, Mars gestures at them and says: *"That one stays still."* The character is held -- not magically paralyzed, but the divine command is a weight they must push against. DC 16 Wisdom save at the start of each turn to act freely; on a failure they can only take the Dodge action. Mars is testing whether the corruption has consumed them completely, or whether they can push back. If they succeed on 3 saving throws across the combat: the connection weakens. Their corruption reduces to 4 at the end of the session.
+| Timeframe | Sign | What Mars asks | Consequence of refusal |
+|---|---|---|---|
+| 1–2 years later | Dreams of a burning watchtower | Defend a beleaguered cohort without expecting pay | Mark sears, lose benefits until quest completed |
+| 3–4 years later | Hearing distant trumpets during storms | Lead civilians through hostile territory | A plague of nightmares afflicts the Chosen's allies |
+| 5+ years later | Seeing wolves with ember eyes | Avenge a dishonored legionary standard | Mars withdraws his favor permanently |
 
-**In Option B (full party vs. Mars):** The level-5 character gains a different problem: Mars' attacks target them with advantage. Not out of cruelty -- he is pulling at the corruption, seeing if he can use them as leverage. Mid-combat, he speaks to them directly: *"You wanted what the spear offered. Part of you still does. That part is mine to use."* This is the moment for that character to choose: fight their own corruption on top of the combat, or acknowledge it aloud to the party. If they acknowledge it: the party can use the "called to them three times" mechanic from Session 3 to break the connection mid-combat, giving that character immunity to Mars' targeting for the rest of the fight.
+### Epilogue NPC Prompts
 
-**In Option C (the argument):** The level-5 character is the voice Mars uses to test the speaker. At the moment of the DC roll, Mars says: *"Before you answer -- your companion. What do they want?"* and turns his full attention to the corrupted character. If that character says what the corruption wants (the spear's power, glory, victory), the Persuasion check gains a -5 penalty. If that character says what they themselves actually want -- which might be the same thing, or might not -- Mars accepts the answer and the check proceeds normally. This is the corrupted character's redemption moment.
+When players ask about NPCs, answer in character. Example answers:
 
-**After the trial:** A level-5 character cannot have their corruption reduced by the Mark of War alone. They need to explicitly choose The Transformation or accept The Debt, with the debt being specifically: they must do something selfless, at personal cost, within the next year, witnessed by no one important. Mars will know.
+- **Cassia:** *"The omens are still loud. I am better at telling which ones are mine and which belong to gods."*
+- **Varro:** *"I water the vines myself. Keeps my hands busy. Keeps memories quiet."*
+- **Lucius:** *"My father is silent. I am learning what that means."*
+- **Thusnelda:** *"The grove is quiet. Quiet is what you get when a wound has closed."*
 
-### The Call to War: Practical Mechanics for The Chosen
-
-The Chosen receives Mars' brand and, eventually, a call. This is meant to be a future-game hook, but the DM should give the player enough information to know what it means.
-
-**How Mars calls:** The Chosen begins to dream of a specific location -- not a vision with context, but a pull, like the spear's pull but without the corruption. They know a direction and, over several days, increasingly specific details: a terrain type, a smell, weather. It resolves into a location within a week.
-
-**When:** Mars calls once. Not within the first year -- he respects their need to recover. Sometime between one and five years after the campaign. The DM should decide this based on what story feels right.
-
-| Type of call | What Mars needs | What refusing costs |
-|---|---|---|
-| **The unwinnable battle** | The Chosen to stand and hold while others escape; they will survive but barely | The location is lost; a community is destroyed; Mars' attention moves to someone less worthy |
-| **The judgment** | The Chosen to arbitrate a conflict between two parties who will accept no other arbiter | If refused: war breaks out. Mars marks it in his accounting. |
-| **The escort** | Protect one person on a journey through territory where the Chosen is the only one who can keep them alive | If refused: the person dies. Mars notes that the Chosen chose comfort over duty. |
-| **The last stand** | This one is simple: Mars needs a warrior in a specific place, doing a specific thing, knowing they will not come back | This call is never made lightly. Mars asks it only of a Chosen who spent their time since the campaign living up to what the arena showed him. |
-
-The Chosen does not have to accept. Mars does not punish refusal with divine retribution. He simply notes it. And the next time someone asks "What does Mars want from this situation?" -- the honest answer is more complicated.
-
-### Reading the Party's Ending
-
-The right ending is the one that matches what the party built across five sessions. Guide the epilogue toward the tone that fits:
-
-| Party arc | Tone of ending |
-|---|---|
-| Loyal Romans, saved the Emperor, cooperated with Senate | **Heroic** — public honors, genuine sense of duty fulfilled |
-| Pragmatists who made hard choices, lost people, finished the job | **Earned** — quiet satisfaction, no parade, they know what it cost |
-| Lost party members, sacrificed much, barely survived | **Bittersweet** — they saved something but it took everything |
-| Defied Rome at every turn, went their own way | **Legendary** — they're outside the system now; marked by a god; free and untethered |
-
-### Closing the Campaign
-
-After the epilogue: thank the players. Name one thing each character did that made the campaign better. Ask what surprised them. Ask what they'll remember.
-
-This is part of the session. It matters.
-
-**Sequel Hooks** *(if desired)*
-- Mars' prophecy: three generations, Rome burns from within
-- Brutus' cult, if he escaped: growing in Alexandria and Antioch
-- Other gods took notice. Minerva in particular found the argument the party made to Mars interesting.
-- Vercingetorix's tribe: leaderless, but they remember the Romans who helped destroy the God-Killer. Something might grow from that.
-- The iron fragments of the spear, buried in seven places by Thusnelda. Six of them are still there.
-
-### Guy Sclanders' Principles: Final Accounting
-
-**OGAS:** Every NPC's Objective, Goal, Agenda, and Secret resolved across the campaign in a way consistent with their character.
-
-**Strong Openings:** All five sessions began in media res, with a crisis already in motion.
-
-**Pressure Cooker:** Each session escalated the stakes. Personal → Fort → Regional → Imperial → Divine.
-
-**Meaningful Choices:** No session had a "right" answer. Every decision fed the next one.
-
-**Three Clue Rule:** Every mystery had three independent paths. The party didn't need all three.
-
-**Sacrifice Principle:** From the grove ritual to the arena's price, victory cost something real.
-
-**Reactive World:** Every NPC pursued their OGAS whether or not the party engaged them. Varro armed his men. Cassia traveled to Rome. Brutus built toward the Triumph. Vercingetorix watched the fort for weeks. The world moved.
-
-**Player Agency Through Consequences:** Multiple valid endings. No single correct path. The campaign ends with the ending they built.
+Record all promises for future campaigns. Mars remembers. So does the fort.

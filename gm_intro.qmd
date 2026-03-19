@@ -88,8 +88,8 @@ The party plays as members of a military unit stationed at a remote frontier for
 ### Senator Gaius Cassius Brutus
 
 **Objective:** "Restore the Republic" (overthrow the Emperor, install himself as First Citizen)
-**Goal:** Acquire the Spear of Mars to assassinate the Emperor during his Triumph
-**Agenda:** Manipulate everyone as pawns; eliminate witnesses once spear is secured
+**Goal:** Prevent Mars from being appeased so the frontier collapses and Rome begs for his leadership
+**Agenda:** Manipulate everyone as pawns; eliminate witnesses once the spear is contained or destroyed
 **Secret:** He's already made pacts with three other gods (Jupiter, Pluto, Bellona) promising them Mars' power if they support his coup
 
 **Personality:** Charismatic sociopath, genuinely believes he's Rome's savior
@@ -141,25 +141,25 @@ This is the shape of the whole campaign. Use it to maintain dramatic coherence a
 |---|---|---|---|
 | **1** | Blood and Omens | Do they obey orders or heed the augur? | Personal → Fort-level stakes |
 | **2** | The Chieftain's Price | Can they trust the enemy? | Fort → Regional stakes |
-| **3** | Shadows in Rome | Who is really pulling strings? | Regional → Imperial stakes |
-| **4** | The God's Demand | What does Mars actually want? | Imperial → Divine stakes |
-| **5** | The Triumph of Mars | What kind of Rome do they want to live in? | Everything comes due |
+| **3** | Shadows Over Vindolanda | Can the fort hold when Rome cannot help? | Regional → Imperial stakes |
+| **4** | The God's Demand | What sacrifice will satisfy Mars when he descends upon Vindolanda? | Imperial → Divine stakes |
+| **5** | The Wrath of Mars | Who speaks for Rome when a god demands judgment at the fort? | Divine → Aftermath |
 
 **Session 1 – Blood and Omens:** The party retrieves the Spear of Mars from ruins beneath the fort. First contact with corruption. The Legate wants it; the Augur wants it destroyed. First choice with no clean answer.
 
 **Session 2 – The Chieftain's Price:** Vercingetorix approaches with information about the spear's origin. Tribal and Roman interests collide. The Tribune arrives from Rome with a hidden agenda. The party discovers the spear has already spread its influence beyond the fort.
 
-**Session 3 – Shadows in Rome:** A journey (physical or through information) reveals Senator Brutus as the true power behind events. The Legate's debt becomes known. The party must choose sides in a factional conflict that dwarfs anything they've dealt with so far.
+**Session 3 – Shadows Over Vindolanda:** Brutus' agents trigger a siege that cuts Vindolanda off from the world. Germanic warbands surround the fort while sleeper cells sabotage it from within. The party must hold the walls, expose the traitor, and decide whether the spear is a weapon, a bargaining chip, or a liability when the Empire cannot send aid.
 
-**Session 4 – The God's Demand:** Mars manifests directly. He demands the party prove their worth and make a choice about the spear that cannot be undone. Corruption consequences come to a head. An NPC ally may be lost here.
+**Session 4 – The God's Demand:** The siege breaks the boundary between mortal and divine. Mars manifests in the fort's shrine, demanding the spear be carried into the ruins beneath Vindolanda for a ritual judgment. The party must escort it through burning battlements, negotiate between Legate, Tribune, and Vercingetorix, and offer a sacrifice that will either save or doom the garrison.
 
-**Session 5 – The Triumph of Mars:** The climax forces a final decision about the spear and about Rome's future. Senator Brutus makes his move. The party's choices across all previous sessions determine what endings are available to them. Three major outcomes are possible: the spear is destroyed, claimed by a mortal, or returned to Mars.
+**Session 5 – The Wrath of Mars:** The parade ground becomes a divine arena suspended above the fort. Senator Brutus channels his conspiracy through distant cultists, the Legate and Tribune make their final plays, and Mars insists on an answer. The party's choices decide whether Vindolanda becomes a martyrdom, a holy site, or the first stone in rebuilding Rome's future. Three major outcomes remain: the spear is destroyed, claimed by a mortal, or returned to Mars—but now the fate of the fort is entwined with that decision.
 
 **The three endings:**
 
 - **Destroy the spear:** Mars is appeased but loses his weapon. Rome is safe for now. The party earns honor but no tangible reward. Bittersweet.
 - **Claim the spear:** One character becomes extraordinarily powerful and extraordinarily corrupted. This likely ends with that character as an antagonist or tragic sacrifice. Dramatic.
-- **Return it to Mars:** The god is satisfied. He grants the party his blessing and departs. The political crisis in Rome remains unresolved—they've solved the divine problem but not the human one. Ambiguous.
+- **Return it to Mars:** The god is satisfied. He grants the party his blessing and departs. Brutus' conspiracy continues elsewhere—the divine crisis is solved, but the political one now sits outside the fort. Ambiguous.
 
 Combinations and partial outcomes are valid. The key is that every NPC's OGAS resolves in a way that feels earned by their established character.
 
@@ -235,25 +235,23 @@ What each NPC knows, wants, and is actively doing in each session — whether or
 
 | NPC | Where | Goal | Active Move |
 |---|---|---|---|
-| Legate Corvinus | In pursuit (if alive) | Recover the spear; restore his reputation | Riding hard with 8 soldiers; willing to kill to recover it |
-| Augur Cassia | With party (if alive) | Get the spear to the grove | Navigating by augury; keeping the party moving |
-| Centurion Varro | Fort (if stayed) or with party | Survive; do the right thing | If with party: fighting for them; if at fort: covering their absence |
-| Tribune Lucius | With party or fled | Complete mission or escape | Genuinely torn; Cassia's presence is changing his calculations |
-| Vercingetorix | With party (if allied) | Destroy the spear at his people's sacred site | Navigating; protecting; carrying a secret about his health |
-| Thusnelda | Sacred grove | Perform the ritual correctly | Has prepared the altar; has been expecting them for three days |
-| Senator Brutus | Rome | Prepare the Triumph assassination | Finalising the replica spear ritual; briefing Marius Coda |
+| Legate Corvinus | Principia war room | Use the siege to seize the spear openly | Reassigns loyal cohorts to "protect" the artifact; orders ration lockdown |
+| Augur Cassia | Fort shrine | Keep the spear hidden and the omens quiet | Conducts hourly auguries, warns the party a traitor opened the gates |
+| Centurion Varro | Outer walls | Keep Vindolanda alive through siege | Rotates exhausted watch shifts, uncovers missing armor from the armory |
+| Tribune Lucius | Quartermaster vault | Destroy the spear without being blamed | Forges evacuation orders, tries to move the spear under cover of night |
+| Vercingetorix | Outside palisade under white flag | Ensure the Romans honor the grove ritual | Sends messengers through tunnels offering aid if the spear is released to him |
+| Senator Brutus | Rome (never present) | Make sure the spear dies with Vindolanda | Activates sleeper agents (including Sextus' killer); sends orders via raven |
 
 ### Session 4
 
 | NPC | Where | Goal | Active Move |
 |---|---|---|---|
-| Legate Corvinus | Rome (if alive) | File a legal complaint; recover reputation | Working Senate contacts; potentially useful to Brutus as a witness against the party |
-| Augur Cassia | Rome, Temple of Apollo | Warn Rome | Performing auguries; being ignored; trying to reach the Vestal Virgins |
-| Centurion Varro | Retired/Fort | Not here | Sends a message if alive: *"Whatever you're doing in Rome, finish it fast."* |
-| Tribune Lucius | Rome, covering tracks | Survive; distance himself from Brutus | Has already warned Brutus the party is coming (he regrets this) |
-| Vercingetorix | Outside Rome walls | Won't enter the city | Sends message: *"The god is angry. The city smells of his anger. Do it today."* |
-| Senator Brutus | Rome, his villa | Execute the Triumph assassination | Meeting with Marius Coda; finalising the ritual; managing the party as a variable |
-| Marius Coda | Rome, Subura district | Complete his patron's mission | Training; positioned for the Triumph route; absolutely loyal |
+| Legate Corvinus | Parade ground command post | Reclaim authority by controlling the ritual escort | Arms loyalists, prepares to arrest anyone moving the spear without him |
+| Augur Cassia | Shrine and tunnels | Lead the godward procession safely | Bargains with Mars' manifestations; channels divine fire away from civilians |
+| Centurion Varro | Escort detail | Keep the party alive through the underfort ruins | Assigns shield wall rotations inside tunnels; ready to kill mutineers |
+| Tribune Lucius | Command tower | Save himself by aligning with whoever survives | Offers to "guide" the party, but plants Brutus' sigils near the ritual site |
+| Vercingetorix | Under-castra approach | Secure space for Thusnelda's rite | Stations warriors at choke points to keep Romans honest |
+| Senator Brutus | Remote cult circle in Rome | Hijack the ritual through sympathetic magic | Orders Marius Coda to spill blood at the same time the party descends |
 
 ### Session 5
 
