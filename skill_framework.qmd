@@ -1,0 +1,174 @@
+# Skill Interaction Framework
+
+*GM's Workbook — Design Reference*
+
+Every skill check in this campaign is designed according to the principles below. Read this once before Session 1. Return to it when a player tries something unexpected and you need to know how to handle it without improvising against the grain of the system.
+
+---
+
+## The Seven Principles
+
+### 1. No Dead Ends
+
+Every failed check opens a different door, not a wall. "Nothing happens" is the worst possible outcome of a skill check: it removes player agency, wastes table time, and teaches players that trying things is unrewarding.
+
+**In practice:** When a player fails a Persuasion check with Quartus, they do not get nothing. They get the official process: slower, auditable, and now visible to Corvinus. That is a consequence, not a wall. The information is still accessible; it just costs something different to reach.
+
+Write failure states before you write success states. If you cannot describe what failure opens, the check should not exist.
+
+---
+
+### 2. Wrong Tool, Different Door
+
+The wrong skill does not fail: it succeeds into a different situation. Intimidating Valeria does not terrify her; it makes her clinical to the point of being useless, treating the party like difficult patients rather than colleagues. They got something, just not what they wanted.
+
+**In practice:** Every significant social interaction should have at least two skill approaches mapped. Persuasion gets one result. Insight gets a different result (understanding the NPC's real position rather than changing it). Deception gets a third (short-term compliance, long-term wariness). All three are successes. The quality of the success differs.
+
+Document these per NPC in the relevant chapters.
+
+---
+
+### 3. Cascade Design
+
+Succeeding at an early check reveals the existence of a harder, more rewarding check. Players who invest in a relationship should discover new things to unlock, not just the same things more easily.
+
+**In practice:** Reaching Ally tier with Rufus does not give you a better blacksmith. It gives you a different resource entirely: his Germanic knowledge, which opens a separate DC 14 History check that identifies the metalwork he describes. Each tier reveals that the next tier exists and is worth reaching.
+
+Never let a maximum success feel like a ceiling. There is always something beyond it.
+
+---
+
+### 4. Signature Skills
+
+Every major NPC and trader has one non-Persuasion skill that bypasses the normal tier structure when the character has it. This rewards investment at Session 0: a character who built their Medicus around Medicine proficiency gets instant standing with Valeria that another character would take three sessions to earn.
+
+**In practice:** The signature skill is listed per NPC in the relevant reference. It typically functions as an auto-advance of one tier (no roll required) or as a significant DC reduction (-4 or better). A character can only benefit from their signature skill once per NPC; after that, the relationship is set.
+
+---
+
+### 5. Investment Checks
+
+Some checks cost a resource in addition to the roll: time, coin, reputation, a specific item, or an action. Spending the resource is the signal that the character is serious. The roll determines how well it goes.
+
+**In practice:** Paterculus gives better augury to someone who sits through the full ceremony (30 minutes, skips a downtime action) than to someone who asks for a quick reading. The time investment signals sincerity; the roll determines whether Mars is listening. Document investment options per NPC alongside standard checks.
+
+---
+
+### 6. Temporal Gates
+
+Certain checks are only available at specific moments. Miss the moment, miss the check permanently. These create urgency and make information feel like a real resource that can be lost.
+
+**In practice:** Tribune Lucius is uncertain about his mission exactly once: during Scene 3 of Session 2, when his instructions from Brutus conflict with what he has seen the party do. A DC 14 Insight check during that scene reveals his hesitation. After Scene 3, the window closes. If the party never interacted with him closely enough to notice, that information is gone.
+
+Document temporal gates explicitly: what session, what scene, what the check reveals, and what it costs to miss it.
+
+---
+
+### 7. Tier Memory
+
+The relationship system remembers. A check that fails at DC 15 is not automatically available next session. Re-approach conditions must be earned: something has to happen that gives the character standing to try again.
+
+**In practice:** If a player tries to deceive Varro and he catches it, Varro's internal state shifts to "watchful." The next Persuasion check with him is at +3 DC permanently, and the DC 13 approach that might have worked is now DC 16. Recovery requires demonstrating military competence in front of him (a specific action, not another roll). Document re-approach conditions per NPC.
+
+---
+
+## How to Use This System at the Table
+
+**Before each session:** Read the per-session NPC states in `gm_intro.qmd` and `camp_economy.qmd`. Know where each NPC's relationship tier currently sits for each party member. Note any temporal gates that open or close this session.
+
+**During play:** When a player attempts a skill check against an NPC, ask yourself four questions:
+
+1. *Is this a signature skill moment?* If yes, auto-advance and describe the NPC noticing the competence.
+2. *Is there an investment option?* If the player is spending something, that signals engagement; reward it.
+3. *What tier is this NPC at for this character?* Adjust DC by the relationship modifier.
+4. *What does failure open?* Know this before you call for the roll.
+
+**When players try unexpected approaches:** Most creative approaches map to one of the principles above. If they do something clever and unexpected, lean on "wrong tool, different door": they get a result that is genuinely useful, just not the one they expected. If you are unsure what that result is, buy 10 seconds by having the NPC pause before responding.
+
+---
+
+## Relationship DC Modifiers (Quick Reference)
+
+*Full table in `reputation.qmd`. This is the DM table version.*
+
+| Relationship Statement | DC Modifier | Special Access |
+|---|---|---|
+| "They do not know you" | No modifier | Baseline service only |
+| "Professional dealings, nothing more" | No modifier | Standard service; nothing off-ledger |
+| "They owe you something small" | -2 | One non-standard piece of information or service |
+| "They consider you an ally" | -4 | Access to the NPC's real usefulness; things not on any ledger |
+| "They owe you something real" | -6 | One automatic success per session (DM chooses which); cascade unlocks available |
+
+---
+
+## Signature Skills by NPC
+
+| NPC | Signature Skill | Effect |
+|---|---|---|
+| **Corvinus** | History DC 14 (his career) | He notices you know his record; gives advantage on one Persuasion per session but makes him wary |
+| **Cassia** | Religion DC 13 | Full information access; she speaks without filtering to someone who understands the gods |
+| **Varro** | Athletics DC 12 *or* military tool proficiency | Auto-advance to Trusted tier; he evaluates by capability, not words |
+| **Tribune Lucius** | Insight DC 15 (session 2 only) | Reveals his moment of doubt; opens negotiation option that otherwise does not exist |
+| **Vercingetorix** | Germanic language proficiency | Auto-advance; also unlocks two additional dialogue options in Session 2 |
+| **Quartus** | Military supply knowledge (History DC 12 about logistics) | He treats you as a peer; gains advantage on checks to access off-ledger information |
+| **Rufus** | Smith's tools proficiency *or* Athletics DC 12 | He evaluates by how you handle equipment; auto-advances to Trusted |
+| **Valeria** | Medicine DC 13 | Peer-to-peer respect; instant Trusted tier access and she shares her symptom documentation |
+| **Paterculus** | Religion DC 12 with genuine question | He responds to people who actually want to understand; Trusted tier for the session |
+| **Cato** | Insight DC 13 *or* Performance DC 11 | He chooses to talk; the barrier drops because you found the story he wanted to tell |
+| **Sigrun** | Germanic language proficiency *or* Survival DC 14 | She knows you are not a city person; immediate advance past the first tier |
+
+---
+
+## Temporal Gates Master Table
+
+| Check | Available | What it reveals | Cost of missing it |
+|---|---|---|---|
+| Corvinus's real agenda | Session 1 only, before Tribune arrives | He is gambling-debt controlled; this changes every future interaction with him | You negotiate with Corvinus without knowing his actual constraints |
+| Tribune Lucius's doubt | Session 2, Scene 3 only, DC 14 Insight | He has been given a script he is not fully committed to; negotiation path opens | You cannot negotiate with Lucius; only confront or avoid |
+| Mad worker's behavior pattern | Session 1, Scene 2-3 only, DC 13 Insight | He has been showing pre-attack signs for hours; preparation is possible | Scene 4 encounter is a surprise |
+| River crossing boot print | Session 3, river crossing scene, DC 11 Perception (watching bank not river), 1 round only | Legate's advance scouts were here an hour ago | Party does not know they are being tracked |
+| Vercingetorix's dying admission | Session 3 only, after grove ritual | He has known where Brutus's plan leads and chose not to tell the party; explains why | The Session 4 betrayal revelation lands without context |
+| Cassia's true identity | Sessions 3-4, after party does something genuine in her presence | She is Mars' daughter and can feel the spear; changes every divine interaction | You interpret her warnings without understanding their source |
+| Patrol boot print | Session 3, river scene, 1 round only | Corvinus has scouts ahead of the party | Party walks into the ambush blind |
+| Cato's Lucius connection | Session 2-3 only, before Cato chooses a side | Lucius approached him; Cato has not answered; the party can influence his decision | Cato chooses without party input; may default to safer option |
+
+---
+
+## Failure States Reference
+
+*What failed checks open rather than close.*
+
+| NPC | Failed approach | What it opens |
+|---|---|---|
+| Quartus (Persuasion fails) | Official channels: slower, auditable, Corvinus may notice the request | Paperwork trail that becomes evidence in Session 3 if Corvinus investigates |
+| Quartus (bribery attempt) | Permanent wariness; all future DCs +2; he files a mental note | The second ledger becomes unreachable except through trust |
+| Rufus (Persuasion without work to show) | Minimum service, no guarantee, no conversation | A mechanical result with no relationship advancement; neutral |
+| Valeria (rushed or demanding) | Clinical mode: she treats you like a difficult patient | Limited information, standard prices, no access to documentation |
+| Valeria (Intimidation) | Sends for Corvinus; will not treat the character again that session | Medical lockout; must find field medicine or healing spells |
+| Paterculus (dismissive of omens) | Public augury only: DC 13 result maximum, no personal interpretation | Accurate but incomplete; misses the context he would give someone he trusted |
+| Cato (direct demand without relationship) | Surface gossip only; he charges the premium price for the lesser information | Accurate but shallow; he is not lying, he is rationing |
+| Cato (authority invoked) | Professionally sealed; perfect service, nothing useful | A good meal and a polite conversation that goes nowhere |
+| Sigrun (authority or demand) | She leaves; relationship resets to baseline | Does not return until a trusted character makes contact |
+| Varro (Deception, caught) | Permanent watchfulness; all future DCs +3; recovery requires action not roll | A changed relationship that can only be repaired by demonstrating competence |
+| Corvinus (Persuasion, strong failure) | He files it as insubordination; formal military consequence pending | A threat hanging over the party that Brutus or Lucius can activate |
+
+---
+
+## Investment Check Options
+
+*Spending a resource earns mechanical advantage. Each investment option is available once per NPC per campaign.*
+
+| NPC | Investment | Mechanical effect |
+|---|---|---|
+| Quartus | 1 hour helping with inventory count | Advantage on next Persuasion check; he remembers who helped without being asked |
+| Quartus | Bring him an item from the ruins not on the official manifest | He shows you the second ledger voluntarily (no check required) |
+| Rufus | Bring iron ore from the forest | Auto-advance to Trusted; one weapon upgraded to +1 for free |
+| Rufus | Offer to work the bellows for an hour (Strength-based work) | Advantage on all skill checks with him for the session; he talks while working |
+| Valeria | Assist with a procedure without being asked (hold the patient, hand implements) | Advantage on all future Medicine checks when she is present; she shares one documentation page |
+| Valeria | Deliver medicinal herbs from the forest (any bundle) | Trusted tier access for the session; she names the plants for you |
+| Paterculus | Attend the full morning ceremony without being asked (30 min) | Trusted tier access for the session; he speaks without filtering |
+| Paterculus | Bring a rune carving for him to interpret | Second augury available this session (DC +2); he is engaged |
+| Cato | Buy a round for the off-watch soldiers at his bar | Advantage on Persuasion with him for the evening; normal rules next session |
+| Cato | Come back three sessions in a row without asking for anything | Relationship advances to "they consider you an ally" automatically |
+| Sigrun | Trade any forest-sourced material at below-market price without being asked | Relationship advances one step; she knows you understand the forest has value |
+| Sigrun | Offer amber at cost to Paterculus in her presence (letting her see you value it properly) | She volunteers that she can identify rune inscriptions; cascade unlock triggered |

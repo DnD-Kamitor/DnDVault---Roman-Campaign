@@ -567,11 +567,11 @@ Goal: The six camp traders receive the same depth as the seven main NPCs: OGAS, 
 
 **File:** `camp_economy.qmd` (additions to existing traders section)
 
-- [ ] **Trader OGAS tables** — Objective / Goal / Agenda / Secret for all six traders (Quartus, Rufus, Valeria, Paterculus, Cato, Sigrun), matching the main NPC format in `gm_intro.qmd`
-- [ ] **Per-session trader state table** — Where each trader is, what they know, what they are doing across Sessions 1-5; mirrors the main NPC state table in `gm_intro.qmd`
-- [ ] **Trader voice reference** — 3 characteristic lines per trader showing their voice in different situations (not just the opening line); follows the format in `gm_intro.qmd`
-- [ ] **Trader reaction tables** — How each trader responds to the party's 3 most likely approaches (direct ask, barter/bribe, authority/threat); mirrors the main NPC reaction tables
-- [ ] **Siege behavior** — Specific DM notes on what each trader does when the siege begins in Session 4: who panics, who helps, who disappears, who reveals something they have been hiding
+- [x] **Trader OGAS tables** — Objective / Goal / Agenda / Secret for all six traders (Quartus, Rufus, Valeria, Paterculus, Cato, Sigrun), hidden in collapsible `<details>` blocks
+- [x] **Per-session trader state table** — Where each trader is, what they know, what they are doing across Sessions 1-5
+- [x] **Trader voice reference** — 3 characteristic lines per trader showing their voice in different situations (not just the opening line)
+- [x] **Trader reaction tables** — How each trader responds to the party's 3 most likely approaches
+- [x] **Siege behavior** — Specific DM notes on what each trader does when the siege begins in Sessions 3-4
 
 ### Milestone 38 — Unified Skill Interaction Framework (Book-Wide)
 Goal: Every skill-based interaction across the entire book uses a coherent, interesting DC design. Not uniform — each NPC and location has its own personality expressed through which skills matter and what failure opens. Design principle: **no dead ends, different tools open different doors, cascade unlocks reward investment, partial success is always more interesting than binary pass/fail**.

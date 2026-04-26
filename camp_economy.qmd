@@ -573,6 +573,154 @@ How each trader responds to the three most likely party approaches.
 
 ---
 
+## Trader Skill DC Reference
+
+Detailed DC tables for all six traders using the seven-principle framework from `skill_framework.qmd`. Each trader has four tiers, a signature skill, failure states, cascade unlocks, and investment options.
+
+### Quartus: DC Table
+
+| Tier | How to reach it | What becomes available |
+|---|---|---|
+| **Stranger** | Default | Standard ledger items; official prices; no deviation from the board |
+| **Acquaintance** (DC 12 Persuasion) | One positive interaction; treating his process as real, not as an obstacle | Will mention discrepancies he has noticed without being asked; will flag an unusual requisition "as a matter of professional courtesy" |
+| **Trusted** (DC 15 Persuasion, or: History DC 12 about military supply logistics) | Multiple professional interactions; signature skill auto-advance | Will tell the party when the next convoy is due and what it carries; mentions Corvinus's requisitions in neutral language; gives advance warning of anything that will affect supply |
+| **Ally** (DC 18, or: bring him something from the ruins that should be on the manifest but is not) | Investment check, or sustained relationship reaching this tier naturally | Shows the second ledger; gives access to emergency reserves without authorization; will testify about Corvinus's off-book activity if asked |
+
+**Signature skill:** History DC 12 regarding military supply logistics. A character who knows how supply chains work is speaking Quartus's language. This auto-advances to Trusted regardless of prior relationship.
+
+**Failure states:**
+- *Persuasion fails below DC 12:* Official channels only. He is not unfriendly; he is inflexible. The request goes through the Legate's desk, which creates an auditable record Corvinus may notice.
+- *Bribery attempt, any DC:* Permanent wariness. All future DCs with Quartus increase by 2. The second ledger becomes unreachable except through a major investment.
+- *Intimidation attempt:* He sends for Corvinus immediately. The party has one round to reconsider.
+
+**Cascade unlock:** Reaching Ally tier reveals the second ledger, which requires DC 16 Investigation to extract specific useful information (what Corvinus took, when, and what it was flagged as).
+
+**Investment options:**
+- Spend 1 hour helping with inventory (before Session 2 only): advantage on the next Persuasion check.
+- Bring him an unlogged item from the ruins: he shows you the second ledger without any roll.
+
+---
+
+### Rufus: DC Table
+
+| Tier | How to reach it | What becomes available |
+|---|---|---|
+| **Stranger** | Default | Repair, sharpening, arrow production; standard prices; no opinions |
+| **Acquaintance** (DC 12 Persuasion, or: bring any crafted material from the forest) | One interaction where you showed competence or brought something useful | Advice on equipment quality without being asked; he mentions when something is about to fail |
+| **Trusted** (DC 15 Persuasion, or: smith's tools proficiency, or: Athletics DC 12 while helping at the forge) | Signature skill auto-advance; or investment in the forge | Custom work available (grip wrapping, blade weighting); mentions that he knows more about Germanic ironwork than he says |
+| **Ally** (DC 18, or: bring iron ore from the forest) | Iron ore investment, or sustained relationship | Reveals Germanic metalworking knowledge; describes specific sites and techniques; the blade forged with *tiwaz* interpretation (see original trader section) |
+
+**Signature skill:** Smith's tools proficiency OR Athletics DC 12 (helping at the forge). He evaluates people by how they handle physical work and equipment. Sitting down and talking is not the way to advance with Rufus.
+
+**Failure states:**
+- *Persuasion fails:* Minimum service; no guarantees given; no conversation. Not hostile. Neutral and final.
+- *Insight to read him fails:* He says less than he otherwise would. He has noticed the attempt and found it presumptuous.
+- *Flattery:* He stops listening. No DC required; flattery triggers this automatically.
+
+**Cascade unlock:** Ally tier reveals Germanic knowledge, which then requires DC 14 History to place the metalwork he describes in its correct tribal and geographic context (this identifies the tribe that made a specific item the party found).
+
+**Investment options:**
+- Bring iron ore from the forest: auto-advance to Trusted; one weapon upgraded to +1 for free; no roll required.
+- Work the bellows for an hour (Strength-based, no roll): advantage on all checks with him for the session; he talks while he works.
+
+---
+
+### Valeria: DC Table
+
+| Tier | How to reach it | What becomes available |
+|---|---|---|
+| **Stranger** | Default | Standard medical supplies; wound care; fever treatment; basic antitoxin |
+| **Acquaintance** (DC 12 Persuasion, or: bring any medicinal herb bundle from the forest) | One session where the party treated her time as valuable or brought something useful | Will share one piece of DC 15 medicine knowledge freely when the party brings herbs; will mention she has noticed unusual patient patterns |
+| **Trusted** (DC 15 Persuasion, or: Medicine DC 13) | Peer-to-peer competence (signature skill) or sustained respectful interaction | Shares the symptom cluster documentation for the workers; gives honest assessment of a character's corruption progression if asked directly |
+| **Ally** (DC 18, or: assist with a procedure without being asked) | Investment; or three sessions of consistent respectful interaction | Full clinical picture of corruption progression; the specific DC 17 poison knowledge from `knowledge.qmd` shared as practical information; her honest assessment before Session 5 of what she thinks will happen |
+
+**Signature skill:** Medicine DC 13. A character who demonstrates actual medical knowledge earns instant Trusted tier access. She speaks peer-to-peer with someone who understands anatomy and trauma.
+
+**Failure states:**
+- *Rushing her or being demanding:* Clinical mode. She treats you as a difficult patient: correct and limited. No information beyond what she is required to provide.
+- *Intimidation:* She sends for Corvinus. She will not treat the character again that session. This is a hard lockout.
+- *Flattery about her gender or unusual position:* She ends the conversation. Not angry; done.
+
+**Cascade unlock:** Ally tier gives access to the symptom cluster documentation, which requires DC 13 Medicine to interpret correctly (understanding the progression pattern, not just the symptoms).
+
+**Investment options:**
+- Deliver medicinal herbs from the forest: Trusted tier access for the session; she names the plants.
+- Assist with a procedure without being asked (hold patient, hand implements): advantage on all future Medicine checks in her presence; she gives you one documentation page.
+
+---
+
+### Paterculus: DC Table
+
+| Tier | How to reach it | What becomes available |
+|---|---|---|
+| **Stranger** | Default | Standard augury (DC 13/15/17 tiers); omen identification; ritual blessing |
+| **Acquaintance** (DC 12 Persuasion, or: attend the morning ceremony voluntarily) | One investment or one conversation that takes his work seriously | He explains what the omen patterns mean without being asked; he names the precedent he is afraid of |
+| **Trusted** (DC 15 Persuasion, or: Religion DC 12 with a genuine question) | Signature skill or investment; one session of consistent engagement | Full omen reading without filtering; his personal interpretation of the divine situation, not just the official reading; the *Quinquatria* weapon text |
+| **Ally** (DC 18, or: sustained relationship across three sessions) | Three sessions of engaged interaction | His written summary of every omen from the campaign start; campaign-specific Mars interpretation; the warning about what the morning sacrifice failure specifically predicts |
+
+**Signature skill:** Religion DC 12 with a genuine question (not "what does the augury say" but "what do you think"). A character who asks what he thinks rather than what the gods say reaches Trusted tier for that session automatically.
+
+**Failure states:**
+- *Dismissing or downplaying omens:* He gives only public augury (DC 13 maximum); no personal interpretation for the rest of the session. Not angry; finished.
+- *Asking for quick reading without ceremony:* Result is accurate but shallow; he does not interpret, only reports. The DC 17 result becomes unavailable.
+- *Treating augury as a tactical resource rather than religious rite:* He performs it correctly and says nothing else. He has noted that you do not understand what you are doing with it.
+
+**Cascade unlock:** Ally tier gives his full written document, which requires DC 15 Religion to understand the implications of the pattern (specifically: what the twelve failed sacrifices mean about Mars's current intention versus his displayed behavior).
+
+**Investment options:**
+- Attend the full morning ceremony (30 minutes, costs a downtime action): Trusted tier for the session.
+- Bring a rune carving for him to interpret: second augury available this session (DC +2 for him).
+
+---
+
+### Cato: DC Table
+
+| Tier | How to reach it | What becomes available |
+|---|---|---|
+| **Stranger** | Default | Local wine; food; camp gossip at public-board level |
+| **Acquaintance** (DC 12 Persuasion, or: buy drinks regularly across two sessions) | Presence over time; pattern-recognition interaction | He adds context to events ("that courier was nervous; couriers are not nervous"); mentions that he notices things without saying what |
+| **Trusted** (DC 15 Persuasion, or: Insight DC 13 to find the story he wants to tell; or: return visits without asking questions for two sessions) | Signature skill or sustained presence | Tells the party what he has actually seen that they missed; mentions Lucius's approach if he has decided the party is worth the risk; Germanic trader contact names |
+| **Ally** (DC 18, or: three consecutive sessions without asking for anything) | Investment through presence; or one session where the party clearly chose his side over Lucius | Full intelligence network; passage notes; the specific Lucius contact information regardless of decision state; he will actively help during the siege |
+
+**Signature skill:** Insight DC 13 to identify the story he wants to tell tonight, OR Performance DC 11 to be the kind of person worth telling it to. Both work. Both feel different: Insight is reading him; Performance is being worth his time.
+
+**Failure states:**
+- *Direct demand for information, first session:* Surface gossip at public-board level. Professionally friendly, completely sealed. He charges the premium rate.
+- *Invoking Roman authority:* "I'm a licensed trader." Perfect service. Nothing useful. He does not break character and he does not yield anything.
+- *Asking about Lucius before trust is established:* "I don't know what you're referring to." True if he has not yet received the approach; false (and he knows you know it) if he has. He is now watching you differently.
+
+**Cascade unlock:** Ally tier reveals Lucius's contact attempt (or confirms Cato chose the party). This then requires DC 12 Insight to determine which parts of Cato's account are fully accurate versus shaped by self-interest.
+
+**Investment options:**
+- Buy a round for the off-watch soldiers: advantage on Persuasion for the evening.
+- Return for three sessions without asking for anything: relationship advances to "they consider you an ally" automatically. This is the only automatic advance that does not require a roll or a material investment.
+
+---
+
+### Sigrun: DC Table
+
+| Tier | How to reach it | What becomes available |
+|---|---|---|
+| **Stranger** | Default | Amber, forest herbs (unidentified), rune carvings (decorative), dried meat, fur |
+| **Acquaintance** (DC 12 Persuasion, or: trade at her prices for two consecutive sessions without negotiating down) | Fair and consistent dealing | She names the herbs she is selling; she mentions if she has seen something unusual near the trade route; she comes back more reliably |
+| **Trusted** (DC 15 Persuasion, or: Germanic language proficiency, or: Survival DC 14) | Signature skill; or three sessions of fair dealing; or returning a forest item she would value | Forest route markers; nearest settlement with grove access; she confirms Thusnelda is real; she mentions that Romans who searched for the grove alone did not return |
+| **Ally** (DC 18, or: offer a forest-sourced material at below-market rate without being prompted) | Investment; or sustained relationship with demonstrated respect for Germanic context | Grove route in detail; Thusnelda's communication conditions (she will not speak to Romans who arrive with soldiers); Elder Futhark translation for any text the party brings; siege intelligence (warbands are not unified) |
+
+**Signature skill:** Germanic language proficiency auto-advances past the Stranger tier immediately. Also, Survival DC 14 (demonstrating you are not a city soldier) achieves the same effect. She is specifically measuring whether you understand what the forest is.
+
+**Failure states:**
+- *Direct request for forest intelligence, first meeting:* "I trade goods." Clean end to conversation. She moves to the next transaction.
+- *Authority or demand:* She gathers her goods and leaves. Relationship resets to baseline. A trusted party member can attempt DC 16 Persuasion to prevent this (one attempt only, before she reaches the gate).
+- *Haggling her prices down:* She accepts the trade and does not come back for one session. No statement; just absence.
+
+**Cascade unlock:** Ally tier gives the grove route and Thusnelda's contact conditions, which then require a separate DC 15 Persuasion check in the forest to actually make contact (Thusnelda evaluates the party independently of Sigrun's endorsement).
+
+**Investment options:**
+- Trade any forest-sourced material at below-market price unprompted: relationship advances one step; she knows you understand the material has real value.
+- Offer amber to Paterculus in her presence: she volunteers rune translation capability; cascade triggered.
+
+---
+
 ## Siege Behavior
 
 What each trader does when the siege begins in Sessions 3-4.

@@ -513,3 +513,203 @@ The party acts on their theory. In this phase: if their theory is substantially 
 **Skipping phases:** A party can attempt *Actio* before completing *Investigatio* or *Deliberatio*. When they do, add +3 to all relevant DCs and the DM does not correct their theory before the phase begins. This rule rewards patience without making impatience impossible.
 
 **DM note:** You do not need to announce these phase names to the players. Simply structure each investigation session so that the natural rhythm of play moves through gathering, analysis, and action. The phase markers are a planning tool for you, not a visible mechanic for the table.
+
+---
+
+## Main NPC Skill DC Framework
+
+Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design principles behind these tables. Each entry documents: primary approach, signature skill, wrong-approach consequence, temporal gates, and partial success at three levels.
+
+---
+
+### Corvinus: Skill DC Table
+
+**Primary approach:** Persuasion (appeals to ambition or military necessity)
+
+| DC | What you get | What it feels like |
+|---|---|---|
+| Fail | Formal compliance; the order stands; no additional information | He has heard you and decided you are manageable |
+| DC 12 | He listens longer; adjusts the order slightly; does not explain why | A small concession, wrapped in authority |
+| DC 15 | Reveals his actual concern (the debt to Brutus, obliquely); adjusts to accommodate the party's need | He has decided you are useful enough to be partly honest with |
+| DC 18 | Full disclosure of his constraints; will work with the party rather than command them, within this session | He has decided you are an ally, which is dangerous and temporary |
+
+**Signature skill:** History DC 14 (knowing his career record). He notices when someone has done the research. This gives advantage on all Persuasion checks with him for the session; it also makes him wary that you are a political player, which reduces his trust by one tier after the session ends.
+
+**Wrong approach:**
+- *Intimidation:* Controlled fury. Looks for allies immediately to use against the party. Future Persuasion checks +3 DC.
+- *Deception, if caught:* Treats the party as a security risk. Assigns surveillance. Future Insight checks against them with +4.
+- *Appealing to ethics or fairness:* He visibly loses interest. "Rome was not built on fairness." No mechanical penalty; zero progress.
+
+**Temporal gate:** Corvinus's real agenda (the debt) is accessible Session 1 only, before Tribune Lucius arrives and changes the political landscape. After Session 2 begins, he goes into full political mode and will not be partially honest about anything.
+
+**Partial success text:**
+- *5 below DC:* He restates his position more firmly. You have given him information about what you want; he will use it.
+- *Exactly at DC:* He gives you what you asked for, nothing additional. The concession is real; the relationship has not warmed.
+- *5 above DC:* He gives you what you asked for plus one piece of information you did not know to request — his actual calculation behind the decision.
+
+---
+
+### Cassia: Skill DC Table
+
+**Primary approach:** Trust signals (honest engagement, no agenda apparent)
+
+| DC | What you get | What it feels like |
+|---|---|---|
+| Fail | Public augury reading only; careful, filtered language | She is performing her role correctly |
+| DC 12 | Personal interpretation added to the public reading; she stops filtering | She has decided you can handle what she actually thinks |
+| DC 15 | Full information access; she names her fears directly; shares the two things she has not said to anyone | She has decided you need to know this more than she needs to protect herself |
+| DC 18 (or: Religion DC 13) | She tells you what she is; what the spear feels like to her; what Mars wants from her specifically | She has stopped performing entirely |
+
+**Signature skill:** Religion DC 13. A character who speaks the language of the gods removes all filtering. She speaks without hedging to someone who understands the divine.
+
+**Wrong approach:**
+- *Skepticism or dismissal:* Patient. She keeps trying. No mechanical penalty; no additional information beyond what she volunteered.
+- *Intimidation or pressure:* Genuine sadness. She will not fight back. She will still try to complete her mission, now without the party.
+- *Deception (claiming false divine knowledge):* She knows immediately. "That is not true. Why are you saying it?" Relationship resets to Stranger tier; she will not be deceived a second time.
+
+**Temporal gate:** Her true identity as Mars' daughter is accessible Sessions 3-4 only, after the party has done something genuine in her presence (not just talked to her; acted in a way that showed what they value). Before that moment, she has not decided to trust them enough.
+
+**Partial success text:**
+- *5 below DC:* She gives you the filtered version of the truth: accurate, incomplete.
+- *Exactly at DC:* She gives you the truth she is comfortable sharing.
+- *5 above DC:* She gives you the truth and the feeling behind it: what it costs her to know what she knows.
+
+---
+
+### Varro: Skill DC Table
+
+**Primary approach:** Directness (no rank performance, no flattery, ask plainly)
+
+| DC | What you get | What it feels like |
+|---|---|---|
+| Fail | Polite compliance; he does what is ordered; nothing extra | He has decided to work with you at minimum viable engagement |
+| DC 12 | He tells you what he sees; no interpretation added | He has decided you can handle the unfiltered situation |
+| DC 15 | His assessment of every NPC in the scene; what he would do if he were running it | He has decided you are worth preparing correctly |
+| DC 18 | What he knows about Corvinus's compromise; what he has been protecting the party from without saying so | He has decided you are people he trusts |
+
+**Signature skill:** Athletics DC 12 OR any military tool proficiency. He evaluates people by capability. A character who demonstrates practical military competence (in his presence, not just on a sheet) auto-advances to Trusted. No Persuasion check needed.
+
+**Wrong approach:**
+- *Pulling rank or giving orders:* Polite compliance, zero cooperation. He has seen too many officers. Persuasion checks with him for the rest of the session are at +3 DC.
+- *Deception, if caught:* DC 11 passive Insight catches it. Permanent wariness: all future DCs with Varro increase by 3. Recovery requires demonstrated military competence (specific action, not another roll).
+- *Flattery or appeals to his career:* He stops talking. Polite, final. The conversation has ended.
+- *Asking him to betray the legion:* Hard refusal. He will bend rules (cover for a necessary action, look the other way once). He will not break the oath. This line is permanent and does not shift regardless of relationship tier.
+
+**Temporal gate:** His knowledge of what Corvinus has been hiding is accessible only after Session 2, when he has decided the party is trustworthy. He does not volunteer it; he waits for someone to ask the right question. The right question is "what do you know about Corvinus that you haven't reported."
+
+**Partial success text:**
+- *5 below DC:* He gives you the facts without his assessment.
+- *Exactly at DC:* Facts plus his assessment of the immediate situation.
+- *5 above DC:* Assessment plus what he would do and why — his full tactical thinking, offered as a peer.
+
+---
+
+### Tribune Lucius: Skill DC Table
+
+**Primary approach:** Variable (he responds differently to different approaches; reading him first is valuable)
+
+| DC | What you get | What it feels like |
+|---|---|---|
+| Fail | Smooth deflection; official position restated; performance maintained | He has categorized you as manageable |
+| DC 12 (Persuasion) | He acknowledges the subtext; does not admit anything; adjusts his position slightly | The performance has a small crack |
+| DC 15 (Persuasion or Insight) | He drops the performance for one sentence; says something true; immediately recovers | You have reached him briefly |
+| DC 18 (or: expose evidence of his mission) | He negotiates immediately; offers what he has; becomes a collaborator out of self-interest | He has calculated that you are more useful as an ally than as an obstacle |
+
+**Signature skill:** Insight DC 15, but only in Session 2 Scene 3 (temporal gate). This is the moment he is most uncertain about his mission; this check reveals the hesitation and opens the negotiation path that would not otherwise exist.
+
+**Wrong approach:**
+- *Charm without substance:* He responds well, the mask slips slightly. But charm without leverage yields nothing actionable. He will be pleasant and useless.
+- *Physical threat:* He capitulates immediately. Then looks for the exit. He will betray the party the first opportunity he safely can. Use only if you want short-term compliance and long-term instability.
+- *Appealing to his Roman virtue:* He is moved, briefly. Then remembers his mission. Then becomes more defensive than before because you have touched something genuine and he cannot afford to follow it. Net result: harder to reach.
+
+**Temporal gate:** His moment of doubt is Session 2, Scene 3 only. Before that scene: his performance is intact. After that scene: he has decided and is no longer uncertain. The DC 15 Insight check during that window reveals the opening; if missed, negotiation is replaced by confrontation as the only productive option.
+
+**Partial success text:**
+- *5 below DC:* He tells you what he wants you to think.
+- *Exactly at DC:* He tells you something true, wrapped in enough performance that you have to work to identify which part it is.
+- *5 above DC:* He tells you something true, drops the wrapping, and then immediately wishes he had not. He is more useful and more dangerous now.
+
+---
+
+### Vercingetorix: Skill DC Table
+
+**Primary approach:** Acknowledgment (recognizing his people's claim and position before asking for anything)
+
+| DC | What you get | What it feels like |
+|---|---|---|
+| Fail | A test: he asks the party to demonstrate something before continuing | He has decided they need to earn the conversation |
+| DC 12 | He acknowledges the party as worth speaking to; shares surface information about the spear | He has decided to start |
+| DC 15 | Full sharing: the grove location, the ritual structure, his grandfather's history with the spear | He has decided to help |
+| DC 18 (or: acknowledge his dying; or: Germanic language proficiency) | His dying admission: he knew what Brutus's plan would mean and chose not to tell anyone; his reasons | He has decided to be honest even about the uncomfortable parts |
+
+**Signature skill:** Germanic language proficiency auto-advances past the first tier with no roll. Additionally: demonstrating that you spared someone during the raid (any Germanic prisoner or wounded combatant) advances the relationship by one tier automatically.
+
+**Wrong approach:**
+- *Dismiss his claim:* He tests them. Not violently; through a direct challenge that requires physical or social demonstration. If they meet the challenge: continues. If not: the conversation does not progress this session.
+- *Persuade without doing anything first:* DC 18 and yields nothing useful even on success. You cannot talk your way past him; you have to act.
+- *Attack first:* He fights until he respects them. He will offer honorable single combat rather than continued battle. He never runs. If defeated honorably: the relationship advances to Trusted automatically. If defeated dishonorably (multiple attackers, ranged, ambush): he is a permanent enemy.
+- *Promise something Roman on behalf of the Senate:* He listens. His expression does not change. He has heard Rome's promises before.
+
+**Temporal gate:** His dying admission (the Session 3 moment) is only available after the grove ritual, when he has seen whether the party made the genuine sacrifice the grove requires. Before that: he will not say it because he does not yet know whether they deserve to hear it.
+
+**Partial success text:**
+- *5 below DC:* He tests you. The information remains behind the test.
+- *Exactly at DC:* He gives you what you acknowledged. No more.
+- *5 above DC:* He gives you the information and one thing you did not know to ask: a specific route, a specific warning, a specific name.
+
+---
+
+### Senator Brutus: Skill DC Table
+
+*Note: Brutus is never directly encountered before Session 5. Skill interactions with him are indirect: gathering information about him, interpreting his messages, anticipating his moves.*
+
+**Primary approach:** Investigation and History (he leaves evidence; reading it correctly is the skill)
+
+| DC | What you get | What it feels like |
+|---|---|---|
+| DC 12 (Investigation, any Brutus evidence) | His nominal political position; that he is connected to the frontier situation | Confirmed: he exists and is involved |
+| DC 15 (History, or Investigation of specific Brutus materials) | His actual political goal: restoring the Republic; his method: using divine instability to create a leadership crisis | Understanding his logic, which is internally consistent and not stupid |
+| DC 17 (History + prior evidence assembled) | That he has made pacts with other gods; that his Plan B exists regardless of what the party does in Sessions 1-4; the specific thing he cannot survive politically | Complete picture: what he is, what he wants, and where he is vulnerable |
+
+**Signature skill:** History DC 17 to correctly identify his full political position from evidence alone, without any direct interaction. This is the highest difficulty in the main NPC framework; it requires prior evidence-gathering and multiple session investment.
+
+**Wrong approach:**
+- *Confronting him via legal channels:* He is completely unconcerned. He has done nothing illegal. He is genuinely looking forward to the debate.
+- *Physical threat or confrontation:* He is never in the same room as violence he ordered. His guards are immediately present. He disappears. He will not be caught this way.
+- *Attempting to negotiate with him (if contact is made):* He engages genuinely and is persuasive and almost right. He will not be moved from his course by argument; he has already had every argument. What changes him is evidence that his plan is failing, not that it is wrong.
+
+**Temporal gate:** The full picture of his divine pacts (the DC 17 result) is only accessible in Session 4 or later, when enough of his Plan B has been executed to leave evidence. Earlier investigation yields DC 12 or DC 15 results at best.
+
+**Partial success text:**
+- *5 below any DC:* You have confirmed he exists and is connected. His method and goal remain opaque.
+- *Exactly at DC:* You have what the DC describes. He has given you a problem without its solution.
+- *5 above DC:* You have what the DC describes and the one specific thing you can do about it — the vulnerability he does not know you have found.
+
+---
+
+### Mars: Skill DC Table
+
+*Note: Mars is encountered directly only in Sessions 4-5. Skill interactions before that are through intermediaries (Cassia, Paterculus, the augury system). The tables below apply to direct interaction.*
+
+**Primary approach:** Demonstration (words without deeds mean nothing to Mars)
+
+| DC | What you get | What it feels like |
+|---|---|---|
+| Fail | He gives one more trial. He does not accept failure as an answer; he accepts it as the first attempt. | He has seen this before |
+| DC 14 (Persuasion backed by a prior deed) | He pauses. He is listening. He does not yield; he waits. | He has decided you are worth the pause |
+| DC 17 (Persuasion backed by sacrifice) | He adjusts his demand; the trial terms change; the outcome range expands | He has acknowledged your argument |
+| DC 20 (Persuasion backed by both deed and sacrifice; or: Option C three-argument success) | He concedes one thing he would not have otherwise; explains his position in a way he would not explain to most mortals | He has decided you are worth the explanation |
+
+**Signature skill:** Demonstrating *Virtus* (the virtue mechanic) during his presence auto-advances by one tier. There is no roll. He notices courage because courage is his domain. A character who holds their ground when retreat would be safe, in his presence, without flinching, is already speaking his language.
+
+**Wrong approach:**
+- *Arguments without deeds:* He listens once. Then gives the trial. "Mortals explain themselves. A god listens once."
+- *Deception:* He knows. He does not punish it; he simply does not engage. The trial remains. The option that deception was meant to bypass is now unavailable.
+- *Appeals to Roman virtue (without demonstrated virtue):* "You invoke the words. Invoke the deeds."
+
+**Temporal gate:** Mars is persuadable only in the window after the three kneeling witnesses and before the final trial begins. Outside that window: the trial proceeds on its original terms. The party has one conversation.
+
+**Partial success text:**
+- *5 below DC:* He gives another trial. This is not punishment; it is his version of "try again."
+- *Exactly at DC:* He adjusts. The outcome range shifts by one option in the party's favor.
+- *5 above DC:* He explains something he does not explain to most people. Not mercy; understanding. He has decided they have earned it.
