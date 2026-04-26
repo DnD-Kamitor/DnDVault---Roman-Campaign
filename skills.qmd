@@ -1,0 +1,373 @@
+# Skills in the Roman World
+
+*What you know, and what you can do with it.*
+
+In Rome, knowing something and knowing someone are different currencies, and the wiser soldiers know you need both. A legionary who has studied Mithraic theology can name the seven grades of initiation without a second thought; but to learn what the local *sacerdos* hides in the locked chest behind the altar, they still need to earn the priest's trust. Knowledge opens doors. Relationships unlock the rooms behind them.
+
+This is how skills work in this campaign. Your bonus reflects what your character carries in their head and in their hands: the accumulated knowledge of their province, their training, their years of service. When you roll, you are discovering what you can extract from a situation or a person given what you already know. A high Religion bonus means you approach a frontier altar knowing the correct address form for Mars Ultor, the difference between a valid omen and a spurious one, and which sacrifice he finds offensive. That knowledge is yours before you roll anything.
+
+What the knowledge does not automatically give you is standing. A Greek physician with Religion +6 and no relationship with Paterculus still has to earn Paterculus's confidence before the old augur will share what he has been quietly suppressing in his official reports. The physician's knowledge tells them which questions to ask. Their relationship with Paterculus determines whether he answers them.
+
+Keep both currencies in mind as you build your character. A character with broad skill bonuses and no invested relationships will know what questions to ask and hit walls when they ask them. A character with deep relationships and modest bonuses will be trusted by the right people and occasionally miss the significance of what those people tell them. The most effective characters, and the most interesting ones at this table, build both.
+
+---
+
+## The 18 PHB Skills in Roman Context
+
+### Acrobatics *(Dexterity)*
+
+On the frontier, *acrobatics* is not a performance art: it is the difference between crossing a timber bridge under arrow fire and falling into a German river. Legionaries drill footwork. Gladiators (former and current) drill everything. At Vindolanda, Acrobatics comes up in: moving through siege rubble, escaping a collapsed tunnel section, the antechamber descent sequence in Chapter 4, and any moment the terrain stops being flat.
+
+**Roman note:** A character with gladiatorial training (Gladiator background or the Gladiator profession from `professions.qmd`) treats Acrobatics as an additional signature skill for any physical skill combination involving movement.
+
+**Knowledge-chain example:** An Acrobatics check (DC 14) while descending the hidden stair beneath the *principia* tells you that the construction style is older than the Roman fortification above: the steps are cut at a Germanic depth, not a Roman one. This reveals that the ruins predate the fort. To learn *why*, you need a History or Religion roll; to learn from someone who knows the full story, you need Cassia's trust.
+
+---
+
+### Animal Handling *(Wisdom)*
+
+Romans maintain cavalry, mule trains, war dogs, and message birds. The frontier adds hunting dogs, oxen for siege equipment, and occasional Germanic livestock taken as forage. Animal Handling governs all of these, but it also matters when something *divine* is using an animal: ravens that arrange themselves incorrectly, a horse that will not approach the northeast corner of the fort, dogs that fall silent at the third watch.
+
+**Roman note:** A character proficient in Animal Handling automatically notices unusual animal behavior (no roll required) and may make a DC 13 Wisdom (Animal Handling) check to interpret whether the behavior is fear-based, territory-based, or something else. This distinction matters in Chapters 1, 3, and 4, where the raven colony and spring-keeper lizards provide environmental information.
+
+**Knowledge-chain example:** You notice the raven colony has moved from the east tower to the *principia* roof (no roll; you are proficient). A DC 13 Animal Handling check tells you they relocated three days ago and have been facing north, which is not normal roosting behavior. To know what that means theologically, you need Religion; to learn that Cassia has been watching the same ravens, you need Insight and an open conversation with her.
+
+---
+
+### Arcana *(Intelligence)*
+
+In Rome, what D&D calls *arcana* is divided into three categories: *res divinae* (things that belong to the gods and are sanctioned), *magia licita* (permitted craft knowledge: alchemy, astronomy, divination through official channels), and *magia illicita* (forbidden, associated with foreign cults and individual power). A character with high Arcana knows this taxonomy and knows how Roman authorities will classify anything magical they discover.
+
+**Roman note:** Arcana checks in this campaign substitute for the standard D&D Arcana when identifying magical items with Roman or Germanic religious origin. An Arcana check (DC 15) identifies which divine domain a magical effect belongs to; DC 17 distinguishes which *specific god* is the source. This matters when the spear's influence begins manifesting: knowing that an effect is Martial versus simply Magical changes what the party can do about it. See `knowledge.qmd` for DC tier content.
+
+**Knowledge-chain example:** You identify the spear's aura as belonging to a war-aspect divine domain (DC 13 Arcana). A DC 16 Arcana check narrows it: this is not just martial, it is specifically the *liminal* aspect of a war-god, associated with the space between civilization and the wild. To learn what that means for the specific entity involved, you need Religion; to learn what Cassia knows about it, you need her trust.
+
+---
+
+### Athletics *(Strength)*
+
+The Roman legionary's core skill. The *exercitatio* (morning drill) at every Roman fort includes a run in full armor, weapon practice, and construction work. A legionary who cannot perform heavy labor is a liability. Athletics governs climbing the fort wall, hauling siege equipment, swimming the Rhine in armor (not recommended), and holding a formation position when someone is trying very hard to push you out of it.
+
+**Roman note:** Athletics is the second skill in the Testudo combination (see Skill Combinations below). A character proficient in Athletics may use it in place of a Strength saving throw when a formation is being broken, representing trained unit discipline rather than raw individual strength.
+
+**Knowledge-chain example:** You haul a stone block during fort repair (Athletics DC 11). The block has tool-marks on the underside that do not match Roman construction technique: the cuts are older and go down rather than across. A DC 14 History check identifies the technique as pre-Germanic; DC 17 identifies it as belonging to a people who were using this ground before the tribes arrived. To understand the religious significance of those marks, you need Religion or Cassia.
+
+---
+
+### Deception *(Charisma)*
+
+Lying in Rome is a structured art. Rhetoric, the foundation of Roman education, includes techniques for misleading an audience while maintaining deniability. A well-trained Roman liar does not lie; they emphasize, omit, and redirect. A character with high Deception is not necessarily dishonest; they are trained to manage what other people believe.
+
+**Roman note:** Deception used on an NPC who succeeds on an opposing Insight check does not simply fail: the NPC notes the attempt and adjusts their behavior. Every NPC in the campaign tracks deception attempts and responds to them over subsequent sessions. See `skill_framework.qmd` for per-NPC deception consequences.
+
+**Knowledge-chain example:** You tell Corvinus that you found nothing in the ruins (Deception DC vs. his Insight +3). If he believes you: the mission continues. If he does not: his Insight result tells him you are concealing *something*; he does not know what. This shifts his agenda from "monitor the party" to "investigate the party." The deception created a different situation, not a wall.
+
+---
+
+### History *(Intelligence)*
+
+Roman education for any soldier above the rank of *miles* includes Roman history as a practical matter: understanding why the Teutoburg disaster happened is part of frontier officer training. For characters from non-Roman backgrounds, History represents the oral traditions and remembered lore of their own people. A Germanic *foederatus* with History proficiency does not know Roman Senate procedure; they know the lineage of the Cherusci war-chiefs, the terms of the Rhine crossing treaties, and why the sacred grove at the bend of the Lippe has been empty for thirty years.
+
+**Roman note:** History checks cross-reference with the DC tier system in `knowledge.qmd`. DC 17 History on Roman Military Lore opens a separate check: a DC 14 Investigation in the ruins that yields twice the normal information from a scene (see Skill Combinations: History and Investigation below).
+
+**Knowledge-chain example:** You recognize the Hall of Shields (DC 13 History): shields from three different tribal groups are here, which means this was a site of inter-tribal significance, not just a single clan's shrine. DC 15 tells you the shield types span at least 80 years of deposition; this is not a battle trophy collection, it is a long-term votive practice. To understand the religious meaning, you need Religion or Vercingetorix's knowledge.
+
+---
+
+### Insight *(Wisdom)*
+
+Insight in Rome is *prudentia*: the practical wisdom that tells you what a person actually wants versus what they are saying. It is the skill of reading *pietas* (duty), debt, and fear in another person's behavior. Roman social life runs on implicit communication; an officer who cannot read the room does not stay an officer long.
+
+**Roman note:** Insight is the second skill in the tag-team interrogation combination. It is also the skill that opens temporal gates: the Tribune's doubt in Session 2 (Scene 3), Cassia's true identity in Sessions 3-4, and Corvinus's real agenda in Session 1 all require Insight at the right moment. See `skill_framework.qmd` Temporal Gates table.
+
+**Knowledge-chain example:** You read Corvinus during the initial briefing (Insight DC 13). He is not confident; there is something behind his orders that he did not choose. DC 15 reads it more precisely: he is afraid of someone, not something. The fear is personal, not tactical. To find out who, you need a DC 14 History check on his career record, Quartus's knowledge of fort finances, or the direct temporal-gate check in Session 1, Scene 1.
+
+---
+
+### Intimidation *(Charisma)*
+
+Roman military culture respects force applied correctly and despises force applied carelessly. An officer who intimidates subordinates effectively is a disciplinarian; one who intimidates peers is a bully; one who intimidates superiors is either very brave or about to be reassigned to the worst posting available. Intimidation's social consequences in this setting depend heavily on who the target is and what their relationship to the intimidating character's rank is.
+
+**Roman note:** Intimidation that succeeds on an NPC below the character's rank produces compliance and resentment. On an NPC of equal rank, it produces temporary compliance and long-term wariness. On an NPC above the character's rank, failed Intimidation is insubordination and has formal military consequences. Intimidation that succeeds on a Germanic NPC produces a different response than on a Roman one: Germanic honor culture reads open intimidation as a strength statement, which has its own social dynamics. Discuss with the DM before attempting.
+
+**Knowledge-chain example:** You use Intimidation on a junior legionary who was near the northeast corner when the excavation started (DC 12). He tells you what he saw: a light from the ground that was not a lamp. He is afraid and wants to forget it. DC 14 Insight on his body language tells you he is telling the truth. To learn whether what he saw is a *genius loci* manifestation or something else, you need Religion or Arcana.
+
+---
+
+### Investigation *(Intelligence)*
+
+Roman engineering culture produces investigators: people trained to find the flaw in a wall, the break in a supply chain, the inconsistency in a report. Military intelligence (*exploratores*) used Investigation as their primary operational skill. Characters with Investigation proficiency can reconstruct events from physical evidence at a crime scene, a ruin, or a battlefield.
+
+**Roman note:** Investigation doubles its information yield when combined with a successful DC 17 History check (see Skill Combinations). In the ruins, this combination can reconstruct the sequence of events in a chamber rather than just identifying its current state.
+
+**Knowledge-chain example:** You examine the broken altar in the Chamber of Chains (Investigation DC 13). The altar was destroyed from the inside: the stone cracked outward, not inward. Something was contained here and broke free. DC 15 Investigation (combined with DC 13 History) reveals the containment method: this was a binding ritual, not a shrine, and the binding held for a very long time before it failed. To learn when it failed and why, you need DC 17 History or Cassia's knowledge.
+
+---
+
+### Medicine *(Wisdom)*
+
+The Roman military medical system was the most advanced in the ancient world. *Medici* (field surgeons) were immunis-ranked soldiers exempt from regular duty specifically to maintain casualty capacity. Medicine in this campaign covers wound treatment, disease management, poison identification, and the slow work of keeping soldiers alive after combat. It also governs recognition of corruption's physical symptoms, which present differently from natural illness.
+
+**Roman note:** Medicine combined with DC 15 Religion enables ritual healing (see Skill Combinations). A character proficient in Medicine automatically recognizes corruption symptoms at Stage 1-2 in another character; DC 13 Medicine identifies Stage 3-4 symptoms in someone trying to hide them.
+
+**Knowledge-chain example:** You treat a soldier's wounds after the excavation accident (Medicine DC 11). The wound pattern is inconsistent with a collapse: the lacerations are directed, not random. DC 14 Medicine tells you something was moving in that direction when it struck him. To identify what made the wounds, you need either to examine the chamber directly or to compare with Valeria's documentation of previous similar injuries.
+
+---
+
+### Nature *(Wisdom)*
+
+Roman soldiers learn enough Nature to survive on campaign: forage identification, weather reading, animal behavior, terrain hazards. On the Germanic frontier, this knowledge extends to forest navigation, bog safety, local wildlife patterns, and the plants that Valeria needs for her medical kit. A character with high Nature is also more likely to notice when the natural world is behaving unnaturally, which matters more in this campaign than it does at most D&D tables.
+
+**Roman note:** Nature checks in the forest zones (Chapter 3) use a matrix format; see `locations.qmd` for the full DC menu. Nature proficiency also opens two specific cascade unlocks: identification of wolfsbane's corruption-suppressing properties (DC 17 Nature with DC 15 Medicine) and recognition of the spring-keeper lizards' disappearance as a corruption warning system (DC 15 Nature in the northeast corner of the fort).
+
+**Knowledge-chain example:** You identify the bog-light moths emerging from the northeast (DC 13 Nature: these are native to the bog region). DC 15 Nature tells you they have arrived three weeks early. DC 17 Nature or Religion interprets correctly: early arrival means the bog received or rejected an offering recently. To learn which and what the offering was, you need either to visit the bog or to find someone who was there.
+
+---
+
+### Perception *(Wisdom)*
+
+A Roman sentry's primary skill. The third watch changes, the gate password, the sound of movement in the wrong corridor: Perception is how the party learns about threats before those threats become choices made for them. In a fort under pressure, Perception rolls govern information about the siege, the sabotage plot, and the NPC movements that the party has not yet connected to each other.
+
+**Roman note:** Perception paired with Stealth creates the silent patrol mechanic (see Skill Combinations). Perception also governs the raven behavior table: a character with Perception proficiency who watches the ravens for a full scene (no roll required) notices when their behavior changes; what the change means requires Nature or Religion.
+
+**Knowledge-chain example:** You are on watch at the north gate (Perception DC 11 passive). Something moved at the edge of the torchlight. DC 13 Perception tells you it was a person; DC 15 tells you the person was moving with deliberate quiet, not panicking. To know who it was and where they went, you need to follow (Stealth vs. Perception) or to find the physical trace (Investigation DC 14 on the ground the next morning).
+
+---
+
+### Performance *(Charisma)*
+
+The Roman military has a performance culture: the triumph, the *acclamatio* (soldiers' ritual praise for a general), formal oratory at assembly. Characters with Performance are comfortable in front of crowds, can project voice and authority, and know how to frame a message for an audience. On the frontier, this extends to the informal performances of camp life: telling a story well at the *taberna* so the right people overhear the right things.
+
+**Roman note:** Performance can substitute for Persuasion in one specific context per session: when the character is addressing a group rather than an individual, Performance gives them the crowd's attention and sets the terms of the conversation. This is not a persuasion roll; it is a framing roll. The Persuasion roll to change minds comes after.
+
+**Knowledge-chain example:** You perform the traditional acclamation at assembly to support Centurion Varro's position (Performance DC 12). The crowd responds; Varro notices you understand the form correctly. This creates a Trusted-tier opening with Varro (his signature skill auto-advance, see `skill_framework.qmd`) without requiring a separate Athletics demonstration. The crowd's response also shifts the assembly's mood: a follow-up Persuasion by any party member gets advantage for the rest of the scene.
+
+---
+
+### Persuasion *(Charisma)*
+
+Roman rhetoric, at its finest, is the art of making the listener feel that your conclusion was their idea. Latin has more formal honorific registers than English, and using the correct one signals respect for the social framework the listener operates within. Persuasion in this campaign is rarely a single roll: it is the final step in a chain that started with knowing something, noticing something, and building enough standing to be heard.
+
+**Roman note:** Persuasion is most effective when preceded by a successful Insight check (which reveals what the target actually wants) and/or a successful History check (which tells you their relevant context). Without either, Persuasion works on the surface level only; the NPC complies in the moment, nothing changes underneath. With both, Persuasion can shift a relationship tier permanently.
+
+**Knowledge-chain example:** You want Corvinus to authorize access to the ruins. Persuasion alone (DC 16): he says yes and has you watched. Insight first (DC 13, reveals his fear of his creditor): Persuasion DC drops to 12 and he is grateful rather than suspicious. History first (DC 14, his career in the Marcomannic campaigns): he reads you as a peer, DC drops to 13. Both: DC 10, and he volunteers information he was not going to share.
+
+---
+
+### Religion *(Wisdom)*
+
+Every Roman soldier has a working relationship with at least four gods: Mars (their professional patron), the Capitoline Triad (Jupiter, Juno, Minerva; the official state religion), the *genius* of the Emperor (required ritual acknowledgment), and whatever personal patron their family maintained. Religion proficiency means understanding these relationships at a functional level: how to pray, how to sacrifice correctly, what constitutes a valid omen, and what happens when these protocols are violated.
+
+**Roman note:** Religion is the primary skill for reading the divine content of this campaign. The DC 13/15/17 tier system in `knowledge.qmd` applies fully to Religion: DC 13 reveals standard cult information, DC 15 reveals frontier cult variations (Mars Ultor vs. Mars Gradivus, for example), and DC 17 reveals the dangerous knowledge: what the specific prayer language of a binding vow to Mars entails, and why some priests believe the spear should not coexist with other divine weapons. See `knowledge.qmd` for full tier content.
+
+**Knowledge-chain example:** You recognize the inscription in the vault as a dedication, not a curse (DC 13 Religion). DC 15 identifies the specific aspect of Mars being invoked: this is a frontier-cult dedication to Mars Ultor, the Avenger, not the standard civic form. DC 17 reveals that the dedication formula includes a binding clause: the object is not just offered to Mars, it is under Mars' direct protection, and removing it without the correct counter-ritual constitutes a formal divine offense. To understand what that counter-ritual requires, you need Cassia or the document in the temple archive (DC 14 Investigation to find the document).
+
+---
+
+### Sleight of Hand *(Dexterity)*
+
+The legionary's informal economy runs on petty theft, small favors, and the careful management of who sees what. Sleight of Hand governs pickpocketing, palming objects, and the visible-hand-empty gestures of anyone who has ever worked a black market or a gambling table. At Vindolanda, it matters in the vicus, the *taberna*, and any scene where the party needs something off the official manifest.
+
+**Roman note:** Sleight of Hand in an official context (stealing from the quartermaster's supply, palming an officer's seal) requires a DC 2 higher than normal because Roman fort logistics are audited: things go missing on paper as well as in fact, and a paper trail is harder to make disappear than the object. A successful Sleight of Hand can be reversed by a later Investigation check by the NPC's administration staff.
+
+**Knowledge-chain example:** You palm Corvinus's personal seal from his desk while he is reading your report (Sleight of Hand DC 15). You now have access to anything that seal can authorize. A DC 13 Investigation the next morning tells Corvinus's *librarius* that the seal was moved; they report this to Corvinus. Unless you used it and returned it before dawn (DC 12 Sleight of Hand, separate check), the theft becomes a military crime that will come up at the worst possible moment.
+
+---
+
+### Stealth *(Dexterity)*
+
+Roman military doctrine officially has no use for individual stealth: legions advance with trumpets, standards, and synchronized footfall that can be heard across a valley. The *exploratores* (scouts) are the exception: light troops who operate in advance of the column and who are not consulted when legionary officers talk about proper Roman soldiering. Characters with Stealth proficiency either have *exploratores* training, a background that required quiet movement, or a personal relationship with the shadows that the legion does not officially sanction.
+
+**Roman note:** Stealth paired with Perception creates the silent patrol mechanic (see Skill Combinations). In the ruins, Stealth governs the party's ability to move without alerting whatever is in the Chamber of Chains on a fresh investigation; DC 14 against the passive Perception of the undead that stir when the spear's influence is active.
+
+**Knowledge-chain example:** You shadow Varro after he leaves the evening briefing without explanation (Stealth DC 13 vs. his Perception +3). He goes to the northeast wall and stares at it for several minutes. DC 14 Insight (without revealing yourself) reads his body language: he is not suspicious, he is remembering something. To learn what, you need to either ask him directly or investigate the northeast corner on your own.
+
+---
+
+### Survival *(Wisdom)*
+
+The Germanic frontier is actively hostile. The *silva Hercynia* (the Hercynian forest) is not a game park: it is a space where Roman military doctrine does not apply, where the trails are designed to mislead, and where the trees close overhead quickly enough that a century of soldiers can vanish in an afternoon. Survival governs navigation, foraging, shelter, and the reading of signs in a landscape that has been used by the same people for generations and which those people have not made easy to read.
+
+**Roman note:** Survival DC in the Germanic forest is 1 higher than standard (DC 11 for basic navigation, DC 14 for tracking, DC 16 for reading territorial markings). A character with Germanic language proficiency lowers all Survival DCs in the forest by 2: knowing the language means knowing the landscape concepts that go with it, including place names that encode terrain information.
+
+**Knowledge-chain example:** You track the Tribune's party through the forest (Survival DC 13 for the main trail). DC 15 Survival tells you they were moving in too much of a hurry: they were being pursued or they were afraid of being followed. DC 17 Survival tells you a fourth set of prints joined them at the river crossing; the fourth person was moving from the Germanic side, not the Roman side, and was not in a hurry. To identify who the fourth person was, you need Investigation or Vercingetorix's knowledge.
+
+---
+
+## Skill Combinations
+
+Some situations reward two or more characters using different skills together. These are not standard D&D group checks: each character rolls separately, and the combination produces an effect that neither could produce alone. All combinations require at least one participant to succeed on their individual check; what changes is the quality of the result when more than one succeed.
+
+---
+
+### Athletics and Testudo (3+ characters)
+
+The Testudo formation (fully detailed in `roman_tactics.qmd`) becomes more effective when the characters holding it are actively working together as a trained unit rather than simply standing close.
+
+**Mechanic:** If 3 or more characters each succeed on a DC 12 Athletics check as part of entering Testudo formation, the formation gains the following additional benefit for that round:
+
+- The cover bonus increases from three-quarters (+5 AC) to full cover (attackers must target another creature or use area effects)
+- One character inside the formation may use their action to treat a wounded ally inside the formation (Medicine DC 10 to restore 1d4 HP; DC 14 to restore 1d8 HP)
+
+**Action type:** Bonus action (same as forming the Testudo, no additional action cost)
+
+**Failure state:** If fewer than 3 characters succeed, the standard Testudo rules apply with no enhancement. The formation does not collapse; it simply holds the standard benefit.
+
+**Counter:** The enhanced Testudo applies the standard breaking conditions from `roman_tactics.qmd`. A creature with Athletics +5 or higher who grapples a corner-man makes the DC 14 check at advantage against the enhanced formation (trained defenders, but a trained attacker knows where to pull).
+
+---
+
+### Perception and Stealth (paired opposite check)
+
+Two characters, one watching and one moving, create a silent patrol: one reads the space ahead while the other clears it. This is a coordinated reconnaissance technique used by *exploratores* pairs on the frontier.
+
+**Mechanic:** The watching character makes a Perception check (DC 11 baseline). The moving character makes a Stealth check against any passive Perception in the space. If both succeed: the patrol learns everything in the space, including creatures and objects, without triggering any reaction-based alerts or ambushes set for louder movement. If only Perception succeeds: the watcher spots the threat but cannot warn the mover in time (half information, potential surprise on the mover). If only Stealth succeeds: the mover passes through undetected but does not know what they passed through.
+
+**Action type:** One full round of movement; the watcher cannot move this round.
+
+**In play:** This combination is most valuable in the ruins (Chapter 1), the forest (Chapter 3), and the tunnel approach in Chapter 4. In the ruins, the DC for creatures that have stirred due to the spear's influence is 14, not 11.
+
+---
+
+### Persuasion and Insight (tag-team interrogation)
+
+One character reads the target while another speaks to them. The reader's observations can guide the speaker's approach in real time.
+
+**Mechanic:** The Insight character (Player A) rolls first, DC 13. On a success, they read the target's emotional state and primary concern, and communicate this to the Persuasion character (Player B) with a word or gesture. Player B's Persuasion check gains advantage on the roll, and the target's effective DC is reduced by 2. On a failure, Player A reads nothing useful; Player B rolls normally. On a failure by 5 or more, Player A misreads the target; Player B's Persuasion DC increases by 2 (they are arguing for the wrong thing).
+
+**Action type:** Both characters must be in the same social scene; the Insight roll is a bonus action on Player A's turn; the Persuasion roll is Player B's action on their turn.
+
+**In play:** Particularly effective with Paterculus (who responds to genuine curiosity), Cato (who responds to correct social framing), and Tribune Lucius in Session 2, Scene 3 (where the temporal gate depends on reading him correctly before attempting to persuade him).
+
+---
+
+### Religion and Medicine (ritual healing)
+
+A character with theological knowledge and a character with medical knowledge can combine their understanding of the body and the divine in a healing rite that exceeds standard field medicine.
+
+**Mechanic:** The Religion character (Player A) performs a brief rite invoking the target's patron deity or Mars (if no patron is known) and succeeds on a DC 15 Religion check. The Medicine character (Player B) then tends the wound and succeeds on a DC 14 Medicine check. If both succeed: the healing restores the target's normal HD result plus 1d6 additional HP, representing the combined effect of correct technique and divine favor. If only Religion succeeds: the patient gains advantage on their next death saving throw or stabilization check. If only Medicine succeeds: normal healing result with no additional benefit.
+
+**Action type:** 10 minutes. Cannot be performed in active combat. Suitable for a short rest.
+
+**Failure state:** If both fail, the attempt counts as a standard Medicine check at disadvantage (the incorrectly invoked rite made the patient anxious rather than calmed). The slot is not wasted; it is simply less effective.
+
+**In play:** This combination matters in the siege phase (Chapter 4), where the party may be rationing magical healing and the Medicine-Religion pair can stretch their resources. It does not require spell slots.
+
+---
+
+### History and Investigation (forensic reconstruction)
+
+A character who knows the historical context of a site and a character who reads physical evidence can together reconstruct a scene with double the information yield of either approach alone.
+
+**Mechanic:** The History character (Player A) must have a DC 17 History result *already on record* from a previous scene or check in this location (this is a cascade unlock, not a new roll). The Investigation character (Player B) makes an Investigation check (DC 13 baseline). On a success: they extract both the standard investigation result and the historical layer beneath it: not just what is here, but what was here before, and what the transition between those two states looked like. The DM provides two distinct pieces of information instead of one.
+
+**Action type:** 10 minutes minimum (the History character is orienting the Investigation character to what to look for). Interruptible.
+
+**Failure state:** If Investigation fails, the History context is still available but the physical evidence does not yield its second layer. The History character can attempt to reconstruct the gap theoretically (a second DC 15 History check, without advantage) if they believe something was missed.
+
+**In play:** The primary use is in the ruins (Hall of Shields, Chamber of Chains) where the physical evidence and the historical context are separated by approximately 80 years. The combination is also available in Session 3 at the sacred grove and in Session 4 in the antechamber.
+
+---
+
+### Additional Roman Combinations
+
+The following combinations emerge naturally from the Roman setting and are available when circumstances match.
+
+**Survival and Nature (forest tracking, extended):** If both characters succeed (Survival DC 13, Nature DC 12), they track *and* identify the ecosystem significance of what they are tracking: not just that someone passed here, but what the animals did when they passed, whether the vegetation was disturbed before or after the rain, and whether the person knew they were leaving a trail. Combined result: one additional piece of information about the tracked party's emotional state or urgency.
+
+**Stealth and Deception (planted information):** One character moves the object or leaves the message without being seen (Stealth DC 14); the other ensures that the person who finds it reaches the intended conclusion (Deception DC 13, made *in advance*, not in reaction). Both must succeed for the planted information to be found by the right person *and* interpreted the way the party intends. Failure on Deception means it is found by the right person but they are suspicious rather than convinced. Failure on Stealth means it is found too soon, by the wrong person.
+
+**Performance and Intimidation (crowd pressure):** One character addresses a crowd or group with Performance (DC 12) to establish authority and attention; the other then issues a specific demand with Intimidation (DC 11, reduced from standard because the crowd is already primed). Combined: the target must comply or publicly refuse, which has its own social cost. Cannot be used on NPCs of higher military rank than the intimidating character without formal consequences.
+
+---
+
+## Starting Skill Bonuses by Cultural Origin
+
+These are flat bonuses added to your skill modifier at character creation. They stack with your proficiency bonus and ability modifier: they do not replace them, and they are not capped. Record them directly on your character sheet alongside your other skill totals.
+
+These bonuses represent what your cultural background has already given you before the campaign starts: not just training, but the inherited fluency of people who have been doing something for generations. A Greek-origin character has been surrounded by rhetoric, mathematics, and philosophy since childhood. They carry that fluency whether or not they formally trained in it.
+
+| Cultural Origin (D&D Race) | Skill Bonuses | Cultural Note |
+|---|---|---|
+| **Human: Italian Roman** | History +2, Persuasion +2, Intimidation +1 | The cultural center of the Empire; you carry its assumptions as instincts. Roman law and rhetoric are in your bones before you learn to read them formally. |
+| **Human: Gallic Provincial** | Athletics +2, Animal Handling +2, Survival +1 | Two centuries Roman, but the older knowledge persists: horsemanship, the land, the body's capacity. Your great-grandparents were cavalry. The skill did not disappear. |
+| **Human: Hispanic Provincial** | Persuasion +1, History +1, Athletics +2, Survival +1 | Oldest Roman provincial stock outside Italy. You are fluent in the Imperial system *and* in the hard country that produced Trajan. Balanced, practical, underestimated. |
+| **Human: Syrian/Levantine** | Medicine +2, Persuasion +2, Insight +1 | Physicians, merchants, advocates: the eastern provinces trained their people for human systems. You read people as naturally as you read documents. |
+| **Human: Pannonian** | Athletics +2, Survival +2, Animal Handling +1 | Frontier people, recently recruited. The Balkans' terrain is demanding and its people are shaped by it. You are tough and adaptable in ways that matter more here than rank does. |
+| **Elf (Greek/Hellenized)** | Arcana +3, History +2, Persuasion +2 | Greece built the philosophical infrastructure that Rome runs on. You carry that tradition as facility: arcane theory, historical argument, the rhetoric that Rome uses while crediting its own professors for it. |
+| **Dwarf (Germanic/Dacian)** | Athletics +2, Survival +2, Nature +2 | The mountain peoples of the frontier know their terrain the way Romans know their roads. Craft, endurance, and landscape intelligence come before formal training. |
+| **Halfling (Phoenician/Nabataean)** | Deception +2, Insight +2, Persuasion +1, Sleight of Hand +1 | A thousand years of trade routes taught the Phoenician families to read people and rooms faster than anyone else at the table. Underestimation is a professional advantage. |
+| **Gnome (Egyptian/Alexandrian)** | Arcana +2, History +2, Medicine +2 | The Library, the temples, the Nile's agricultural mathematics: Egypt's knowledge tradition is older than Rome and wider than most Romans understand. You carry specific, deep knowledge that surprises people who assumed you were simply foreign. |
+| **Half-Elf (Greco-Roman)** | History +1, Persuasion +2, Insight +2, Arcana +1 | Two cultural frameworks, both partially internalized. You know when to shift registers and what each audience expects. The performance is exhausting; the results are real. |
+| **Half-Orc (Germanic Foederati)** | Athletics +3, Intimidation +2, Survival +1 | Your fighting tradition predates Rome by centuries and was not improved upon by contact. The physical capability is real; so is the social weight that follows it into every room. |
+| **Tiefling (Carthaginian-heritage)** | Religion +2, Deception +2, History +1 | Three centuries of suppressed tradition produce people who know how to carry something privately, how to read official religious systems from outside, and how to maintain a history that no conqueror has archived. |
+| **Dragonborn (Parthian/Persian)** | Arcana +2, History +2, Intimidation +2 | The other empire's cultural weight. You carry Parthian military doctrine, Persian philosophical tradition, and a bearing that makes Roman officers slightly uneasy in ways they cannot explain. |
+| **Aasimar (Roman Noble)** | Religion +3, Persuasion +2, History +1 | Divine bloodlines in Rome produce people who understand the gods at a level that formal training cannot replicate. The religion is not academic for you; the divine is a family relationship, and you grew up knowing which family members to call on. |
+
+---
+
+## The Knowledge Interaction System
+
+*How skills chain at the table: from what you know, to what you discover, to what you can do with it.*
+
+### Tier One: What You Already Know
+
+Before any roll, your skill bonus tells you what your character simply knows. This is the baseline knowledge that a Roman soldier with your background carries as common sense. No check required; the DM tells you this when it is relevant.
+
+If your total skill modifier (bonus plus modifier) is +3 or higher in a skill, you have expertise-equivalent familiarity in that skill's Roman context: you recognize things without having to think about them, you know the forms and protocols, and you are not confused by standard situations.
+
+This matters most for: Religion (knowing correct sacrifice forms without a roll), History (recognizing political and military situations without a roll), and Insight (knowing when someone is using the correct social register vs. lying about their status).
+
+### Tier Two: What You Can Figure Out (DC 13-15)
+
+A DC 13-15 check tells you something you did not walk in knowing: a specific detail, an implication, a non-obvious connection between things you already understood separately. This is the roll that generates new information in a scene.
+
+At DC 13: You extract the relevant fact. You know what happened.
+
+At DC 15: You extract the implication. You know what it means.
+
+The DC 13/15 tiers are documented in detail in `knowledge.qmd`. Each category there has a three-layer structure: common knowledge (no roll), DC 13-15 (trained), DC 17 (specialist). Refer to that chapter for the specific content behind each tier.
+
+### Tier Three: Specialist Knowledge (DC 17+)
+
+DC 17 and above produces what the campaign calls dangerous knowledge: the specific facts that change what the party can do, not just what they understand. The three cross-reference unlocks below are the most important:
+
+**Military DC 17 unlocks a ruins check:** A character who reaches DC 17 on Roman Military Lore (the specific content is in `knowledge.qmd`) gains a +4 bonus to Investigation checks in the ruins beneath the fort. They know what Roman and pre-Roman military sites were built to contain, and they are looking for the right things.
+
+**Germanic Tribes DC 15 unlocks a Vercingetorix approach:** A character who reaches DC 15 on Germanic Tribes can approach Vercingetorix using the correct social form for a request to a man of his status. This skips the first tier of his relationship structure and begins the conversation at Acquaintance rather than Stranger.
+
+**Divine Signs DC 17 unlocks a Session 4 augury:** A character who reaches DC 17 on Reading Divine Signs (in `knowledge.qmd`) can perform the correct augury form when the ravens behave unusually before the Chapter 4 siege opening. The augury's result is not random; it reveals a specific piece of information about the siege's first critical moment that the party can act on before it arrives.
+
+### Chaining: Knowledge to Relationship to Action
+
+Most of what the party wants from this campaign is not information. It is outcomes: Corvinus authorizes access, Vercingetorix reveals the ritual, Cassia tells the truth about the spear. Information is a prerequisite for those outcomes, but it is not sufficient. The chain runs:
+
+**Knowledge roll** (what you know about the situation): sets the DC and frames the conversation.
+
+**Relationship tier** (how much this person trusts you): modifies the DC, sometimes dramatically. See `reputation.qmd` for the full modifier table.
+
+**Persuasion, Insight, or Deception roll** (what you do with the conversation): produces the actual outcome.
+
+A character who skips to the final roll without the first two is rolling at base DC against an NPC whose full position they do not understand. A character who builds the chain gets DC reductions, advantage, and outcomes that feel earned because they were.
+
+**Example:** You want Paterculus to perform an unofficial augury about the spear (not in his official duties, carries personal risk for him).
+
+Step one: Religion check (DC 13) to know the correct way to frame a request for divination to an augur of his rank and what it implies about your theological understanding. Success: you use the correct form. DC modifier on the next step: -2.
+
+Step two: You have been attending his morning ceremonies (Investment check: three sessions in a row earns Trusted tier; see `skill_framework.qmd`). DC modifier: -4 cumulative.
+
+Step three: Persuasion check. Base DC for this request is 16. With both modifiers: DC 10. With both modifiers and advantage from the Persuasion-Insight combination (your partner read him correctly): near-automatic.
+
+Result: Paterculus performs the augury. He also tells you that he has been filing the relevant *prodigia* as ordinary bad omens, which he has not told anyone. This is a cascade unlock that would not have been available at DC 16 with no modifiers.
+
+The chain takes more setup than a single roll. It also gives results that a single roll cannot.
+
+### When Combinations Apply
+
+Skill combinations (detailed in the Skill Combinations section) apply within the knowledge chain at the following points:
+
+- **Before the Persuasion roll:** Insight-Persuasion combination reduces the final DC and applies advantage.
+- **As part of the knowledge roll:** History-Investigation combination doubles information at the DC 17 unlock tier.
+- **As a parallel system:** Religion-Medicine ritual healing and Athletics-Testudo operate independently of the social chain; they are their own complete mechanics.
+
+Cross-reference `skill_framework.qmd` for the full per-NPC skill chain documentation, including which NPCs respond to which approaches at which tiers, and what the failure states open for each.

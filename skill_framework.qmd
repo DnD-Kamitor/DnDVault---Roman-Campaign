@@ -172,3 +172,128 @@ The relationship system remembers. A check that fails at DC 15 is not automatica
 | Cato | Come back three sessions in a row without asking for anything | Relationship advances to "they consider you an ally" automatically |
 | Sigrun | Trade any forest-sourced material at below-market price without being asked | Relationship advances one step; she knows you understand the forest has value |
 | Sigrun | Offer amber at cost to Paterculus in her presence (letting her see you value it properly) | She volunteers that she can identify rune inscriptions; cascade unlock triggered |
+
+---
+
+## Skill Combination Rules (GM Reference)
+
+The player-facing descriptions are in `skills.qmd`. This section gives you the mechanics you need to adjudicate combinations quickly and consistently at the table.
+
+**General rule:** Combinations require both participants to be in the same scene. Each rolls separately. The combination produces an outcome that neither character could reach alone; it does not simply double the chance of success. If only one succeeds, the combination produces a degraded but non-zero result. If both fail, each character's failure state applies individually.
+
+### Athletics and Testudo (3+ characters)
+
+*Prerequisite:* At least 3 characters each succeed on DC 12 Athletics as part of entering Testudo (bonus action; same action economy as forming Testudo).
+
+*Full combination:* Cover increases to full cover; one interior character may use their action to perform DC 10 Medicine (1d4 HP) or DC 14 Medicine (1d8 HP) on an ally inside the formation.
+
+*Partial (1-2 succeed on Athletics):* Standard Testudo rules, no enhancement.
+
+*Breaking:* Standard Testudo break conditions from `roman_tactics.qmd` apply. An attacker with Athletics +5 or higher has advantage on the DC 14 grapple check against the corner-man of an enhanced formation.
+
+*DM note:* Track which characters declared Athletics. If the party habitually uses this combination, a prepared Germanic opponent may specifically target the weakest Athletics character in the formation on subsequent rounds.
+
+### Perception and Stealth (paired patrol)
+
+*Prerequisite:* Watcher succeeds on Perception (DC 11 baseline, DC 14 in ruins when spear influence is active). Mover succeeds on Stealth vs. passive Perception of targets in the space.
+
+*Full combination:* Party learns all creatures and objects in the space without triggering any reaction-based alerts or prepared ambushes targeting movement noise.
+
+*Partial (Perception only):* Watcher spots the threat; mover does not know in time. Half information yield; mover may be surprised if a threat acts.
+
+*Partial (Stealth only):* Mover passes undetected; does not know what they passed through. Zero information from the pass.
+
+*Both fail:* Standard exploration rules; no combination benefit; watcher's failed Perception roll alerts creatures who make Perception checks against the party's noise.
+
+*DM note:* The watcher cannot move on the round they are watching. This is a real cost in session 4 where speed matters. If the party tries to designate the same character as both watcher and mover, that is not possible: watching requires stillness.
+
+### Persuasion and Insight (tag-team interrogation)
+
+*Prerequisite:* Players A and B must both be in the scene. Insight is the bonus action on Player A's turn; Persuasion is the action on Player B's turn (same round or immediately following).
+
+*Full combination (Insight succeeds):* Player B gains advantage on Persuasion roll; target's effective DC is reduced by 2.
+
+*Partial (Insight fails by 4 or less):* Player A reads nothing useful. Player B rolls Persuasion without advantage but at normal DC.
+
+*Failure (Insight fails by 5 or more):* Player A misreads the target. Player B's Persuasion DC increases by 2.
+
+*DM note:* The misread failure is important. Do not fudge it. If Player A guesses wrong and Player B argues for the wrong thing, the NPC becomes defensive: they feel the conversation is not about them. This is not a wall; it creates a different scene. The NPC closes off the direct approach but opens a question: "Why do you think I care about that?"
+
+### Religion and Medicine (ritual healing)
+
+*Prerequisite:* 10 minutes; not in active combat. DC 15 Religion then DC 14 Medicine in that order.
+
+*Full combination:* Normal HD recovery result plus 1d6 additional HP. Does not cost spell slots.
+
+*Partial (Religion only):* Target gains advantage on next death save or stabilization check.
+
+*Partial (Medicine only):* Normal healing, no bonus. The Religion attempt that failed does not penalize Medicine.
+
+*Both fail:* Medicine check at disadvantage. The incorrectly invoked rite created anxiety rather than calm.
+
+*DM note:* This combination is specifically designed for the siege phase (Chapter 4) where magical healing may be rationed and long rests are unavailable. If the party discovers it during Session 1-2 and develops the habit, they will use it exactly when they need it most. That is the intended design. Do not nerf it.
+
+### History and Investigation (forensic reconstruction)
+
+*Prerequisite:* History DC 17 must be already recorded from a previous check in this location. This is a cascade unlock: the DC 17 check reveals the existence of the deeper investigation layer, not the layer itself. Investigation DC 13 then extracts it.
+
+*Full combination:* DM provides two distinct pieces of information from the scene instead of one: the current physical state and the historical transition that produced it.
+
+*Partial (Investigation fails):* History context is available but the physical evidence does not yield its second layer. The History character may attempt DC 15 History (no advantage) to reconstruct the gap theoretically.
+
+*DM note:* Prepare the "second layer" for each ruins chamber before the session. The Hall of Shields second layer: the shields were placed here over 80 years by multiple tribal groups; they are votive offerings, not trophies. The Chamber of Chains second layer: the binding was designed for something specific that had previously escaped a different containment; this was not the first attempt. The Vault second layer: the dedication formula was written by someone who knew both Roman and Germanic ritual forms, meaning the builder had access to both traditions simultaneously.
+
+### Survival and Nature (extended forest tracking)
+
+*Prerequisite:* Survival DC 13, Nature DC 12, both in the same tracking scene.
+
+*Full combination:* Standard tracking result plus one piece of information about the tracked party's emotional state or urgency, derived from animal and vegetation response to their passage.
+
+*Partial (one succeeds):* Standard result from the succeeding skill only.
+
+*DM note:* The emotional state information is not a guess: it is readable from how quickly vegetation was disturbed and what animals did after the group passed. A fleeing group leaves a different mark on a forest than a group moving deliberately. Use this to give players information they cannot use to confront the tracked party directly but can use to prepare for what they will find.
+
+### Stealth and Deception (planted information)
+
+*Prerequisite:* Stealth DC 14 (placing); Deception DC 13 (framing, made in advance).
+
+*Full combination:* Object is found by the intended person and interpreted as the party intends.
+
+*Partial (Deception fails):* Object found by intended person; they are suspicious rather than convinced. They investigate the frame rather than accepting it.
+
+*Partial (Stealth fails):* Object found too soon, by the wrong person.
+
+*DM note:* The Deception check represents the party setting up the *context* for how the object will be found and what it will look like. This requires them to know enough about the target to predict their behavior. If the party tries to plant information on a character they have not interacted with, call for a DC 12 Insight check first to see if their prediction of the target's behavior is even plausible.
+
+### Performance and Intimidation (crowd pressure)
+
+*Prerequisite:* A group or crowd scene; DC 12 Performance then DC 11 Intimidation.
+
+*Full combination:* Target must comply publicly or publicly refuse. A public refusal has its own social cost in the scene: it isolates the target from the crowd's approval.
+
+*Partial (Performance only):* Crowd attention and framing established; follow-up Persuasion by any party member gains advantage for the rest of the scene.
+
+*DM note:* This combination does not work on NPCs of higher military rank than the intimidating character without formal military consequences. Corvinus in Session 1 is immune to this approach. Varro is not immune but will remember it and evaluate whether he respects the judgment that deployed it. Use that as a Tier Memory note.
+
+---
+
+## The Knowledge-Chain System: GM Adjudication
+
+Players build toward outcomes through chains of rolls. Your job at the table is to know where each player is in the chain and what the next link costs.
+
+### High bonus vs. good roll
+
+Both paths work. A character with Religion +8 who does not roll may still have baseline Tier One knowledge (the no-roll layer). A character with Religion +1 who rolls a natural 20 extracts Tier Three information through luck and effort. Both are valid. Do not penalize the high-bonus character for not rolling: they know things without rolling. Do not penalize the lucky roller: they worked for it. The difference shows up in relationship tiers: the high-bonus character is recognized as knowledgeable by NPCs who can read competence (Paterculus, Cassia, Valeria). The lucky roller extracted the information but the NPC does not know they have it.
+
+### Starting bonuses at the table
+
+Cultural starting bonuses (documented in `skills.qmd` and `peoples.qmd`) affect the no-roll baseline: a character with Arcana +3 from their Greek background has the Tier One Arcana knowledge already, without a check. Treat this as automatic at the table. When that character then rolls for Tier Two information, their high total reflects genuine expertise rather than luck. Do not call for a roll when the character's total already clears DC 13 without rolling: they simply know it.
+
+### When the chain breaks
+
+If a player attempts the final persuasion step without building the earlier chain links, run the interaction at base DC with no modifiers. Do not explain what they missed: let the NPC's response reveal that the conversation did not land the way they expected. The NPC is not hostile; they are simply unmoved. "He listened. He nodded. He thanked you for the information. He did nothing with it." That is the signal that the chain has more steps. The player will figure out what they missed.
+
+### When players bypass the chain
+
+Some players will try to shortcut the chain with high Persuasion alone. This is not wrong. It is just a different tool that opens a different door (Principle 2). A DC-beating Persuasion without prior Insight or History produces surface compliance: the NPC does what is asked in the moment. Nothing changes underneath. The NPC does not reveal their real position, their real information, or their real agenda. The party got a result; they did not get the scene. Let that be the outcome and let the players decide whether they want the deeper version.
+
