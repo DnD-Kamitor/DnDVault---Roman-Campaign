@@ -695,6 +695,129 @@ Goal: The campaign currently scratches the surface on religion and historical co
 
 - [x] **What a Roman soldier knows about local spirits** — A single page in player_tome.qmd (not gated by barriers) covering: how a Roman soldier relates to the *genius loci* of an unfamiliar place (you acknowledge it, you make a small offering, you ask permission); what the standard signs of a hostile spirit versus a neutral one are; why Germanic peoples are considered better at identifying local spirits (they have been here longer); and a brief guide to the three animal behaviors that a frontier soldier learns to watch: raven behavior near the tree line, unusual silence in the forest, and why dogs that stop barking at night are not a good sign.
 
+### Milestone 41 — Knowledge Gate Audit: Enforce All DC Barriers
+Goal: Nothing in knowledge.qmd (or any player-facing file) should be readable without a DC check or explicit "what every soldier knows" preamble. Every DC-gated entry must be inside a `<details>`/`<summary>` collapsible block. This audit sweeps the entire player-facing book.
+
+**Files:** `knowledge.qmd`, `player_guide.qmd`, `player_tome.qmd`, `peoples.qmd`, `corruption.qmd`, `vindolanda_guide.qmd`
+
+- [ ] **Audit knowledge.qmd** — Every DC 13/15/17 block must be inside `<details>`. Any DC-gated fact appearing in the open preamble without a roll context must be moved behind a toggle or into the "what every soldier knows" baseline paragraph
+- [ ] **Audit player_guide.qmd** — Check for spoiler-adjacent content (corruption detail, divine mechanics) that requires a check rather than free reading
+- [ ] **Audit player_tome.qmd** — Frontier nature section: any specific mechanical information (wolfsbane doses, raven behavior table) must be gated; flavour and instinct knowledge stays open
+- [ ] **Audit vindolanda_guide.qmd** — Location descriptions fine; skill DCs and tunnel routes should be gated for GM only (move to locations.qmd if needed)
+- [ ] **Audit peoples.qmd and corruption.qmd** — Check for any cross-file leakage where DM context bled into player text
+- [ ] **Fix: live link check** — Verify the knowledge.html page in the deployed site matches the corrected file after audit
+
+---
+
+### Milestone 42 — Toggle Voice Rewrite: DM-Facing Content in DM Voice
+Goal: All collapsible DM sections currently read like encyclopedia entries or AI output. Rewrite them so they read like a DM writing notes to themselves: direct, specific, confident. First-person where appropriate ("Here is what I do when..."), not third-person clinical.
+
+**Files:** `camp_economy.qmd` (trader OGAS), `gm_intro.qmd` (NPC DC tables), `locations.qmd` (skill check menus), `knowledge.qmd` (deep sections), `chapter1.qmd`–`chapter5.qmd` (DM Notes)
+
+- [ ] **camp_economy.qmd OGAS blocks** — Rewrite all 6 trader OGAS sections in DM voice: "Quartus wants X. He will do Y if Z. His secret: he knows about..." not "Objective: Maintain supply integrity"
+- [ ] **gm_intro.qmd NPC DC tables** — Partial success text and temporal gate descriptions should sound like DM coaching, not rules text: "If they hit this, give them the information straight; do not make them ask twice"
+- [ ] **locations.qmd skill menus** — Discovery text should feel like a DM reminder, not a lookup table: "They will find the slow-burn candle. When they do, let the silence sit for a moment before you describe it"
+- [ ] **chapter1-5.qmd DM Notes** — Audit each Skill Audit section; remove any clinical phrasing; replace with the voice of a prepared DM who has thought about what this moment should feel like
+- [ ] **knowledge.qmd deep sections** — The DC 17 payoff text in particular should feel earned: write as if the DM is handing the player something valuable, not filing a report
+
+---
+
+### Milestone 43 — Cross-Session Integration Notes: Move to GM Book
+Goal: Any text that says "characters who unlocked X in session 2 can now do Y" belongs in the GM's Workbook, not in player-facing knowledge tiers. Audit and relocate.
+
+**Files:** `knowledge.qmd` (cross-reference section), `chapter1.qmd`–`chapter5.qmd` (cascade unlock notes), `skill_framework.qmd` (temporal gate table)
+
+- [ ] **Audit knowledge.qmd cross-references** — The three "Cross-Reference Skill Unlocks" entries must be in gm_intro.qmd or the relevant chapter, not in the player-facing knowledge file; replace with a DM-only note in the skill_framework
+- [ ] **Audit chapter cascade unlocks** — Ensure all cascade text (e.g., "Flavus appears in Session 4 if DC 17 hit in Session 2") is inside `<details>` DM blocks, not in open session text
+- [ ] **Create cross-session integration table in gm_intro.qmd** — A single master table: Session → DC achieved → Session N+X payoff; DM can see the full chain at a glance
+- [ ] **Audit skill_framework.qmd temporal gates table** — Verify all entries are DM-facing; none should contain player-visible reward descriptions in open text
+
+---
+
+### Milestone 44 — Merge Duplicate Origin Chapters
+Goal: `player_guide.qmd` contains province-of-origin and character background material. `peoples.qmd` covers the same territory via the D&D race lens. These overlap badly. Merge into a single authoritative chapter.
+
+**Files:** `player_guide.qmd`, `peoples.qmd`, `_quarto.yml`
+
+- [ ] **Audit both files** — List every section in each; mark which sections are genuinely unique vs. duplicated or redundant
+- [ ] **Decide canonical home** — `peoples.qmd` covers race + legal status + background hooks; `player_guide.qmd` covers daily life + equipment + corruption intro; keep the division there
+- [ ] **Move province/origin tables** — Any province-of-origin content in `player_guide.qmd` (where are you from, what did you do before the legion) moves into `peoples.qmd` as a third section after race and legal status
+- [ ] **Remove/redirect duplicates** — Delete the duplicate sections from whichever file loses them; add a one-line cross-reference: "See Peoples of the Empire for province origin tables"
+- [ ] **Update `_quarto.yml` order** — `peoples.qmd` should appear immediately after `player_guide.qmd` in the chapter list; verify the order makes narrative sense
+
+---
+
+### Milestone 45 — Session 0 Questions Audit: Preserve, Deduplicate, Clarify
+Goal: The player session0.qmd and GM gm_session0.qmd both contain character questions. No question should appear twice. No question should be deleted unless it is genuinely identical to another. Every surviving question should be in the right file.
+
+**Files:** `session0.qmd`, `gm_session0.qmd`
+
+- [ ] **Full question inventory** — List every question in both files with file and section labels
+- [ ] **Mark genuinely doubled questions** — Questions that ask the same thing in slightly different words count as one; pick the better phrasing and keep it
+- [ ] **Assign each unique question to the right file** — Questions about the character's inner life, history, and bonds: `session0.qmd`. Questions about player consent, arc appetite, breaking points, and sacrifice threshold: `gm_session0.qmd`
+- [ ] **Do not delete** — Unless two questions are word-for-word identical, the DM note says keep them; move rather than delete
+- [ ] **Final check** — After redistribution, both files should feel complete on their own; a player reading `session0.qmd` should not need `gm_session0.qmd`, and vice versa
+
+---
+
+### Milestone 46 — Player Tome Reorganization: Three Sections
+Goal: The player-facing material is currently scattered across multiple files with no clear structure. Reorganize the player's workbook into three named sections so players know where to look.
+
+**Section 1 — The World** (who you are, where you come from, the history around you): `player_guide.qmd`, `peoples.qmd`, `session0.qmd`, `calendar.qmd`, `knowledge.qmd`
+**Section 2 — The Camp** (everything about Vindolanda and frontier life): `player_tome.qmd`, `vindolanda_guide.qmd`, `professions.qmd`, `supplies.qmd`, `food.qmd`, `roman_tactics.qmd`, `bestiary.qmd`
+**Section 3 — The Campaign** (mechanics that matter during and after play): `corruption.qmd`, `reputation.qmd`, `journal.qmd`, `atmosphere.qmd`
+
+- [ ] **Update `_quarto.yml`** — Reorganize chapter order to match the three-section structure; add section divider pages or titles
+- [ ] **Create section landing pages** — A short intro paragraph at the start of each section explaining what it contains and when to read it; these can be the first few lines of the first file in each section
+- [ ] **Audit cross-references** — After reordering, check that any "see chapter X" references still point to the right place
+- [ ] **player_tome.qmd internal reorganization** — The tome itself covers immersion, language, thinking, senses, and corruption; internally tag or header-label which sub-section belongs to which book section so they can be split if needed later
+
+---
+
+### Milestone 47 — Expanded Roman Weapons and Ammunition
+Goal: The weapons section currently has basic D&D stats. Roman weapons had real tactical variety -- slings with different ammunition for different ranges, heavy vs. light pilum, arrow types (bodkin, broadhead, fire), melee weapon subtypes. Add all of these with D&D mechanics.
+
+**File:** New section in `roman_tactics.qmd` (Player's Workbook); summary table in `player_guide.qmd` equipment section
+
+- [ ] **Ranged weapons expansion** — *Funda* (sling): lead shot (DC 13 Con save on hit, short range), stone (cheap, longer range, less penetration), clay incendiary (sets objects alight); range bands with different stat profiles for each ammunition type
+- [ ] **The pilum** — Heavy *pilum* (thrown 30/60, piercing, on hit: target's shield unusable until repaired, DC 14 Athletics to retrieve); light *pilum* (thrown 20/40, acts as javelin but +1d4 on first attack vs. unshielded); *plumbata* (weighted dart, thrown 30/60, ignores half cover)
+- [ ] **Arrow types** — Bodkin (ignores leather armor's damage reduction), broadhead (extra 1d4 bleed on a crit), fire arrow (requires bonus action to light, 1d4 fire additional, only vs. flammable targets), *arcuballista* bolt (crossbow bolt, heavy, -10 ft range but +2 damage)
+- [ ] **Melee weapon subtypes** — *Gladius* (Roman short sword: advantage on attacks in tight formation); *spatha* (longer cavalry sword: +5 ft reach, disadvantage in formation); *pugio* (dagger: counts as finesse, advantage on grapple damage); *hasta* (infantry spear: reach, brace action); *dolabra* (military pick: ignores stone cover, double damage to structures)
+- [ ] **Ammunition weight and supply** — Each ammunition type has a weight per 20-unit bundle and a Vindolanda current-stock count; sling stones are free (collected locally); lead shot requires the Quartermaster; pilum are one-use per encounter unless the character spends a bonus action to retrieve
+- [ ] **Tactics integration** — Cross-reference roman_tactics.qmd formation entries: pilum throw before melee is a formation opener; slings on the wall during the siege; arrow types per session encounter
+
+---
+
+### Milestone 48 — Bestiary Tactical Expansion
+Goal: Every creature in `bestiary.qmd` currently differs mainly by HP and attack stats. Give each creature a distinct tactical identity grounded in how that creature type actually behaves: ambush patterns, territory defense, pack behavior, reaction to light/fire/sound. CR increases where the tactics justify it.
+
+**File:** `bestiary.qmd`
+
+- [ ] **Strix (CR 3 → CR 4)** — Add: hunts by sound not sight (Blindsight 60 ft); attacks from above and retreats to tree line (never stays in melee more than 1 round); specifically targets spellcasters or those carrying light; *Ill Omen* activates only when it has taken no damage yet (it watches before striking)
+- [ ] **Lemur (CR 1/2 → CR 1)** — Add: gathers in clusters near unburied bodies; when one is destroyed, all others within 30 ft make a Wisdom save (DC 12) or scatter for 1 round; *Dishonored Rest* now triggers only on the third destruction of the same Lemur (it reforms twice before the rite is needed); they do not attack living creatures unless those creatures disturb a grave
+- [ ] **Larvae (CR 4 → CR 5)** — Add: chooses a face from someone the target has wronged (DM picks; player must identify the face or take disadvantage on saves); the face changes each round if the Larvae is below half HP (it is cycling through options, looking for a reaction); it retreats through solid surfaces if reduced below 20 HP
+- [ ] **Genius Loci (CR 4, unchanged)** — Add: does not initiate combat; can only act if its site is desecrated; its first action is always *Compel Respect* (DC 14 Wisdom or creature must make an offering before it can attack the spirit); it communicates through environment (temperature, water behavior, animal response) before resorting to direct action
+- [ ] **Alp (CR 3 → CR 4)** — Add: targets only sleeping creatures initially; if the target wakes, the Alp shifts to Mist Form immediately; it returns the following night unless iron is placed at the threshold; *Sleep Paralysis* now has a save DC of 14 and lasts until the target takes damage or an ally spends an action to wake them; the Alp makes no sound and has advantage on Stealth checks in darkness
+- [ ] **Draugar (CR 5 → CR 6)** — Add: territorial; does not pursue more than 100 ft from its barrow; *Swelling Rage* now triggers at 60 HP (not bloodied), meaning it becomes dangerous earlier; it throws grave goods as improvised weapons (1d8) before closing to melee; the smell of fresh-turned earth calms it for 1 round (DC 12 Nature to know this)
+- [ ] **Lindworm (CR 8 → CR 10)** — Add: guards a specific water source; never found more than 1 mile from its lair; *Serpentine Body* can now be used to encircle terrain features (a tree, a boulder) granting it cover on one side; it uses *Poison Breath* only when 3+ creatures are in a 15-ft cone; it retreats into water when below 50 HP and must be followed into its lair to finish the encounter
+- [ ] **Nix (CR 4 → CR 5)** — Add: always begins in a non-threatening form (lost traveler, beautiful stranger); *Unearthly Beauty* saves against its true form are at disadvantage if the target has interacted with its disguise for more than 10 minutes; *Drowning Song* now works at range (60 ft, underwater or near water only) and targets the character who has the most unresolved emotional stake in the current session (DM judgment)
+- [ ] **Tactical summary card** — One-page table: creature name, ambush trigger, retreat condition, terrain preference, one counter-tactic that works
+
+---
+
+### Milestone 49 — Upgradable Camp and Legionary Companions
+Goal: Fort Vindolanda should be improvable by player action, and soldiers should be recruitable as field companions for specific missions (like going into the Teutoburg forest). Both systems need full mechanics, not just flavor.
+
+**Files:** `camp_economy.qmd` (camp upgrade system), new section in `roman_tactics.qmd` (legionary companion rules), `locations.qmd` (location unlocks per camp level)
+
+- [ ] **Camp upgrade tiers (expand existing Camp Level 1-3 system)** — Tier 1 (default): basic fort, standard trader stock, no wall ballista. Tier 2 (unlocked by party actions): reinforced north gate, one ballista operational, Quartus has heavy equipment access, Valeria has a proper surgery (not just a field kit). Tier 3 (late campaign): siege-ready, Rufus runs weapon upgrades, Sigrun has a permanent stall, the shrine is formally dedicated (bonus to all Religion checks inside the fort)
+- [ ] **Upgrade triggers** — Specific player actions (not just gold) that advance camp level: completing a supply mission, repairing the gate after Session 4's breach, formally dedicating the spring Genius Loci, negotiating a truce with Vercingetorix's tribe; each trigger is session-anchored so it cannot be rushed
+- [ ] **Camp upgrade effects on existing mechanics** — Supply stock, trader tier access, DC modifiers inside the fort, morale pool; these should all shift as the camp upgrades
+- [ ] **Legionary companions: recruitment** — How to recruit a specific soldier: the character must have a Trusted+ relationship with Varro (or equivalent NCO), and the soldier must have been named (cascade unlock from Session 2's DC 17 wall hold); unnamed soldiers are available as generic "legionary" stat blocks; named soldiers have individual stat blocks and personality
+- [ ] **Legionary companion stat blocks** — Flavus (named from Session 2 cascade): Fighter 3, loyal to the party, has a specific skill (Athletics, Perception, or Intimidation based on DM's Session 2 events); generic legionary: Fighter 2, follows orders, morale check DC 14 when things go very wrong
+- [ ] **Companion field rules** — How many soldiers can be taken: one named + two generic per party member; they follow orders but have their own initiative; they will not do things that violate their oath (Roman military law applies); if a companion dies, Varro's relationship with the party drops one tier
+- [ ] **Teutoburg Forest scenario hook** — A specific optional encounter in Session 3 or as a side mission: take three legionaries into the forest to find the site of Varus' disaster; each forest event from the d8 table has a variant for when soldiers are present (they panic at the wrong things and are brave about the wrong things)
+
 ---
 
 ## Conventions
