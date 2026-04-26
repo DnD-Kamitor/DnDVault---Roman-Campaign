@@ -206,6 +206,141 @@ Germanic chieftains sometimes divided their forces to circle a Roman unit; sendi
 
 ---
 
+## Roman Weapons and Ammunition
+
+The Roman army did not equip every soldier the same way. The legionary's *gladius* and *pilum* are the most famous, but a frontier posting like Vindolanda draws on auxiliary units, local craftsmen, and whatever the last supply convoy brought. What you carry determines what you can do in formation. The mechanics below extend the standard D&D 5e weapon list with Roman-specific options, ammunition types, and tactical notes tied to the session encounters in this campaign.
+
+---
+
+### Ranged Weapons
+
+#### *Funda* (Sling)
+
+The sling is a staff-sling or hand-sling used by auxiliary *funditores*. Deceptively simple, it fires three distinct ammunition types at different ranges, each with a different purpose. A trained *funditor* can fire one shot per round without needing to load as a separate action unless noted. The sling itself is a Simple weapon, costs 2 gp, weighs 1/4 lb.
+
+**Using a sling in close formation:** Attacks with a sling while in a formation where allies are within 5 feet are made at disadvantage. The weapon needs swing room.
+
+**Ammunition types:**
+
+*Glandes* (lead shot): Range 30/60 ft. 1d6 bludgeoning. On a hit, the target makes a DC 13 Constitution saving throw or its speed is reduced by 10 feet until the end of its next turn (impact shock: dense lead at high velocity disrupts muscle control even through armor). Cost: 5 cp per 20. Weight: 3 lb per 20.
+
+Stone: Range 40/80 ft. 1d4 bludgeoning. No secondary effect. Collected from the fort ditch or local riverbed; no Quartermaster required. Slightly less punch than lead, but effectively unlimited at any posting with a water source. Weight: 4 lb per 20.
+
+Clay incendiary: Range 20/40 ft. 1d4 bludgeoning + 1d4 fire. Sets flammable objects alight on a hit (unattended objects catch fire; creatures wearing flammable materials make a DC 11 Dexterity saving throw or their clothing ignites, dealing 1d4 fire damage at the start of each of their turns until extinguished). Requires a bonus action to load (the clay shell must be handled carefully). Cost: 1 sp per 10. Weight: 2 lb per 10.
+
+---
+
+#### Arrow Types
+
+Standard arrows are already in the PHB. The following variants are available from the Vindolanda quartermaster and replace standard arrows on a one-for-one cost basis.
+
+Bodkin arrow: Standard range. On a hit against a target wearing non-metal armor (leather, hide, or padded), the attack ignores that armor's AC bonus entirely (the bodkin head punches through). Cost: 5 sp per 20. Weight: 2 lb per 20.
+
+Broadhead arrow: Standard range. On a critical hit, the target takes an additional 1d4 piercing damage at the start of its next turn as the wound continues to open. Cost: 6 sp per 20. Weight: 2 lb per 20.
+
+Fire arrow: Standard range, but requires a bonus action to light from a torch or tinder before firing. Adds 1d4 fire damage, but only against flammable targets: wooden structures, oil-soaked surfaces, dry vegetation, or siege equipment. Against armored targets or in rain, the fire damage does not apply (the flame extinguishes on impact). Cost: 1 sp per 10 (includes pitch-soaked wrapping). Weight: 1 lb per 10.
+
+---
+
+#### *Arcuballista* Bolt (Heavy Crossbow Bolt, Reinforced)
+
+Used by the heavier crossbow variants deployed on fort walls and siege positions. Requires a Heavy Crossbow. Range is reduced by 10 feet on both bands compared to a standard bolt (so 90/350 ft for a standard heavy crossbow), but the bolt deals +2 damage and ignores the AC bonus granted by shields: the weight and construction defeats the bracing an opponent relies on. Cost: 2 sp per 10. Weight: 3 lb per 10.
+
+---
+
+### Thrown Weapons
+
+#### Heavy *Pilum*
+
+The heavy *pilum* is the standard Roman throwing spear, designed specifically to defeat shields and deny return fire. The shank below the iron head is intentionally soft: it bends on penetrating a shield, making removal impossible and the shield unusable until repaired.
+
+Heavy *pilum*: Martial weapon. Thrown (30/60 ft). 1d8 piercing. On a hit, the target's shield is unusable until repaired (1 hour of work with appropriate tools). The pilum cannot be thrown back by the target. Retrieving a heavy pilum from the battlefield requires a DC 14 Athletics check as a bonus action after combat ends (most are bent beyond use). Cost: 5 sp. Weight: 4 lb.
+
+#### Light *Pilum*
+
+The lighter variant is used for closer engagements and by auxiliary units. It does not bend on impact, which means it can be retrieved and reused, but it also means it can be thrown back.
+
+Light *pilum*: Martial weapon. Thrown (20/40 ft). 1d6 piercing. Deals +1d4 piercing damage on the first attack in any combat against a target that is not currently carrying a shield (the lighter head reaches the body more directly without shield deflection). Can be retrieved freely after combat. Cost: 3 sp. Weight: 2 lb.
+
+#### *Plumbata* (Weighted Dart)
+
+A short, lead-weighted dart carried clipped to the inside of the shield. Soldiers carry up to 5 plumbatae without using any additional carry space (they ride the shield). Quick to throw, intended as a final volley before melee engagement.
+
+*Plumbata*: Simple weapon. Thrown (30/60 ft). 1d4 piercing. Ignores half cover: the weight carries it past low obstacles. A soldier can carry up to 5 plumbatae clipped to a *scutum* or *clipeus* without affecting equipment load. Cost: 1 sp per 5. Weight: 1/2 lb each.
+
+---
+
+### Melee Weapons
+
+#### *Gladius* (Roman Short Sword)
+
+The legionary's primary sidearm. Short enough to use in tight formation, double-edged for cutting, and pointed for thrusting into gaps in armor. Its design rewards the press of bodies rather than fighting it.
+
+*Gladius*: Martial weapon. 1d6 piercing or slashing, finesse. Formation bonus: when attacking while at least one ally is within 5 feet of you and within 5 feet of your target, you gain +1 to attack rolls (the close quarters that would hamper a longer weapon instead create pressure and alignment). Cost: 10 gp. Weight: 3 lb.
+
+#### *Spatha* (Cavalry Sword)
+
+The longer sword favored by cavalry and Germanic auxiliary units. Requires space to swing effectively.
+
+*Spatha*: Martial weapon. 1d8 slashing. Reach property applies only when mounted (10 ft from horseback); reach is 5 ft on foot. Disadvantage on attack rolls when used in tight formation (within 5 feet of two or more allies). Cost: 15 gp. Weight: 4 lb.
+
+#### *Pugio* (Military Dagger)
+
+Standard issue alongside the *gladius*. Used as a backup weapon, a tool, and in close-quarters situations where the gladius cannot be drawn. The short blade provides advantage when the fight goes to grappling.
+
+*Pugio*: Simple weapon. 1d4 piercing, finesse, light, thrown (20/60 ft). You have advantage on attack rolls made while grappling or while grappled. Cost: 5 gp. Weight: 1 lb.
+
+#### *Hasta* (Infantry Spear)
+
+The thrusting spear of the heavy infantry, used from behind a shield wall and set against cavalry charges. Longer than the *gladius* but slower to bring to bear in a clinch.
+
+*Hasta*: Martial weapon. 1d8 piercing, reach, two-handed. Brace: if you have not moved during your turn, you can set the *hasta* against an incoming charge. Any creature that moves into your reach during that round triggers an opportunity attack from you; this opportunity attack deals double damage on a hit. Cost: 2 gp. Weight: 6 lb.
+
+#### *Dolabra* (Military Pick/Axe)
+
+The legionary's combination entrenching tool and battlefield weapon. Every soldier carries one. In combat it functions as a pick; against structures and fieldworks, it is devastating.
+
+*Dolabra*: Martial weapon. 1d8 piercing, two-handed. Against stone walls, wooden structures, earthwork fortifications, or constructed barriers: the *dolabra* deals double damage. A creature using stone cover (a low wall, a battlement, a fortified corner) does not benefit from that cover against a *dolabra* attack: the pick can dislodge the cover itself with a successful hit (the cover is destroyed on a second hit). Cost: 3 gp. Weight: 5 lb.
+
+---
+
+### Ammunition Weight and Supply at Vindolanda
+
+The fort's supply is finite and tracked. Quartermaster access requires Reputation: Acquaintance or higher with Quartus, or an officer's written order.
+
+| Ammunition type | Weight per 20 | Vindolanda stock | Quartermaster required? |
+|---|---|---|---|
+| Stone | 4 lb | Unlimited (ditch) | No |
+| Lead shot (*glandes*) | 3 lb | 200 | Yes |
+| Clay incendiary | 2 lb | 40 | Yes (Rufus makes these; see camp_economy.qmd) |
+| Bodkin arrows | 2 lb | 300 | Yes |
+| Broadhead arrows | 2 lb | 150 | Yes |
+| Fire arrows | 1 lb | 60 | Yes (limited; count your shots) |
+| Heavy *pilum* | 4 lb each | 80 | Yes |
+| Light *pilum* | 2 lb each | 120 | Yes |
+| *Plumbatae* | 1/2 lb each | 200 (issued standard) | No |
+| *Arcuballista* bolts | 3 lb per 10 | 100 | Yes |
+
+**Camp Level effect:** At Camp Level 2, Rufus's workshop can produce 10 additional clay incendiaries and 20 additional fire arrows per session downtime period. At Camp Level 3, lead shot production begins (10 per session). See `camp_economy.qmd`.
+
+---
+
+### Tactics Integration
+
+These weapons do not exist in isolation. They slot into the formations above and the specific encounters across the five sessions.
+
+**Pilum volley before melee:** The standard Roman opening move. One volley of heavy *pilum* at 30 feet disrupts the enemy shield wall (shields become unusable; the enemy's AC bonus evaporates) and then the formation closes to *gladius* range within that same round using the remaining movement. When running this as a DM, give NPC legionaries this opener automatically in any engagement where they have initiative.
+
+**Slings on the wall:** During the Session 4 siege, stone ammunition is effectively unlimited; the soldiers collect it from the fort ditch and the surrounding ground. Lead shot requires Quartermaster access and Camp Level 2 or higher. Assign a sling-equipped NPC to the walls in the siege encounter if the party has upgraded the camp.
+
+**Fire arrows in the forest:** In the Session 3 forest travel, fire arrows can be used against the dry-vegetation Terrain Ignition option in the forest travel events table (see `chapter3.qmd`). In the Session 4 siege, fire arrows are the primary tool against the siege equipment the attackers are using to approach the gate; they cannot be used once rain begins (the siege weather escalation, Scene 3).
+
+**Clay incendiaries in the tunnel:** The tunnel scenes in Session 4 are narrow enclosed spaces. Clay incendiaries cannot be used in the tunnel without endangering the party (the fire damage applies to all flammable materials in a 5-foot radius, including the wooden support beams). Outside the tunnel, in the antechamber, they work normally.
+
+**Dolabra and the collapsed passage:** The blocked section in the Session 4 tunnel is a constructed stone collapse, not a natural fall. A character with the *dolabra* can clear enough of the passage to squeeze through with a DC 15 Athletics check (2 rounds of work). Without the *dolabra*, the check is DC 18 and takes 5 rounds. The *dolabra's* structure-damage double damage rule applies to each working round: the DM can frame partial success as clearing enough to pass at the cost of time.
+
+---
+
 ## Tactical Reference Card
 
 *Print or keep open on a second screen during play.*
