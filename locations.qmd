@@ -528,3 +528,188 @@ Per-location exploration DC tables using the three-tier system from `skill_frame
 | 12 | Insight | The agent is not trying to steal the spear; he is trying to get the party to break the ward Cassia placed on it |
 | 14 | Arcana | The ward will hold against one more attempt to breach it before it fails; the agent knows this |
 | 16 | Religion | The agent's approach pattern avoids the specific rune Paterculus drew on the threshold; he knows what it does and is working around it |
+
+---
+
+## The Magical Ecosystem Around Vindolanda
+
+*GM reference. The natural world around the fort is not neutral. It is informed by three thousand years of human worship, two divine presences (Mars through the spear, the spring Genius Loci through its water), and a landscape that remembers what happened here before Rome arrived. The creatures, plants, and sacred sites below are not random encounter tables. They are a layered information system the party can learn to read.*
+
+---
+
+### The Vindolanda Spring: Genius Loci
+
+Beneath the northeast corner of the *principia*, under a flagstone that does not quite sit flush, a spring has run cold and clear since before the first stone was cut. Roman engineers sealed it when they built the headquarters building. They left a small grate, covered it with a bronze plate engraved with a serpent, and officially recorded the spring as "controlled drainage."
+
+The spring is not drainage. It is the Genius Loci of this site, the spirit that inhabited this ground before the Romans named it, before the Brigantes used it as a seasonal crossing point, before anyone left a name at all.
+
+**What the spring is:** A living presence. Patient, old, not hostile but not welcoming. It has watched every occupant of this site come and go. It is not impressed by Rome. It is not impressed by anything. It has been here longer than the Empire and expects to be here longer still.
+
+**What the spring does:** Three things, all of them subtle:
+
+1. The water runs cold even in summer. Anyone who drinks directly from the grate (requires removing the bronze plate, DC 12 Strength) gains advantage on saving throws against the spear's corruption influence for the next 48 hours. The water tastes like cold iron and deep earth. It is not pleasant.
+2. The spring answers questions, once. Only once per character, ever. The question must be spoken aloud into the grate after removing the plate. The answer comes in the sensation of the water changing temperature -- warmer for "the danger is close," colder for "the danger has passed," a brief pulse of both alternating for "the danger is coming from inside." The spring does not elaborate.
+3. The spring suppresses supernatural effects within 30 feet. Lemures cannot form within that radius. The spear's red glow dims when carried near the grate. This is why the spear's previous keepers sealed it here: they discovered the suppression effect through trial and error over years.
+
+<details>
+<summary>**Spring: Skill Discovery Sequence** *(GM reference)*</summary>
+
+The spring's properties are discovered in tiers. No single check reveals everything.
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 11 | Perception | The flagstone in the northeast corner of the *principia* sits fractionally higher than its neighbors; the gap along one edge allows a faint smell of cold water and stone |
+| 13 | History | Roman fort engineering always routes drainage to the south gate; a spring under the headquarters is irregular enough to suggest something was built around it rather than through it |
+| 14 | Investigation (5 min) | Removing the plate reveals a bronze grate with a serpent design; the serpent is not Roman -- it predates Roman iconography for this region by centuries; DC 15 Religion identifies it as a Brigantian votive style |
+| 15 | Religion | The spring is a Genius Loci. DC 17 Religion narrows this: the Genius Loci has received offerings consistently for an estimated 400+ years; the mineral deposits around the grate include amber dust, which Romans do not use for votive offerings but Brigantians do |
+| 16 | Arcana (full examination, 10 minutes) | The suppression field extends 30 feet. Magical effects tested against it: spear glow dims, *Lemures* cannot coalesce, and a DC 11 Perception check while standing in the radius reveals that the spear's low hum goes silent |
+| 17 | Nature or Religion | The spring answers once per character; the questioner must speak directly into the grate with one specific question about safety or threat; the temperature response is described above; the DM must decide the answer based on the current session's actual situation |
+| 19 | Insight (only after the spring has answered) | The spring has been asked a question before, recently. Within the past month. Someone else found the grate. The mineral residue around the edge shows a handprint in dried sediment: too small for a legionary, too large for a child. Cassia. She has not mentioned this. |
+
+**The temporal gate:** The spring's answer is a single-use event per character. Once used, the character cannot learn anything new from the spring regardless of future checks. The suppression effect persists whether or not any character discovers it; the party does not need to "activate" it.
+
+**If the bronze plate is removed and not replaced:** The spring's suppression field expands to 60 feet but the water begins rising. By the end of the session, the *principia* floor will have two inches of standing water unless someone replaces the plate or creates a diversion channel (DC 14 Athletics, tools required). The Genius Loci is not threatening anyone; it simply flows where it flows.
+
+</details>
+
+---
+
+### The Raven Colony
+
+Forty to sixty ravens roost in the pines east of the fort's outer ditch. They have been here as long as anyone can remember. The fort's soldiers feed them scraps from the gate; in return the ravens make noise when strangers approach the east road, which has proven militarily useful enough that no one has ever ordered them killed.
+
+What the soldiers do not know: the ravens are not a colony. They are one distributed intelligence, a collective that formed around the spring's Genius Loci three generations ago when the spring was first sealed. They are not supernatural creatures. They are ravens. But they are very old ravens, and very attentive ones, and they have learned to encode information in their behavior.
+
+**What the ravens encode:**
+
+| Raven behavior | Meaning |
+|---|---|
+| Roosting silently, all facing east | Nothing unusual; the spirit is quiet |
+| Three birds walking counterclockwise around the gate | Someone has disturbed the sealed spring grate within the past 24 hours |
+| Sudden mass flight northeast | The spear has been moved within the fort; they track its red glow from a distance |
+| One bird sitting on the principia roof, not moving | The Genius Loci is aware of something under the ground moving toward the fort |
+| Calling in groups of three, short-long-short | A new person in the fort is carrying something with a supernatural charge (rune item, corrupted object, divine mark) |
+| Complete silence, all birds present | Mars' presence is near. This happens in Session 4 and again in Session 5. Every soldier recognizes this silence. None of them can explain how they know what it means. |
+
+<details>
+<summary>**Raven Network: Session-by-Session State** *(GM reference)*</summary>
+
+The ravens' behavior across the campaign tracks divine state. DM notes per session:
+
+**Session 1:** Ravens are normal. After the party enters the vault, check: do they exit with the spear? If yes, three birds land on the east gatepost and do not move until dawn. DC 13 Nature to notice the specificity of this; DC 15 Nature to connect it to the spear.
+
+**Session 2:** After the Tribune's night raid, ravens engage the short-long-short calling pattern near whichever NPC is carrying Brutus' correspondence. DC 13 Perception (automatic if the party is outside at dawn) to hear it; DC 15 Insight to connect the pattern to a specific person in the fort rather than just "something."
+
+**Session 3 (forest journey):** No ravens in the deep forest. Ravens are a low-land and edge-habitat bird; their absence in the forest interior is normal. However, at the sacred grove: two ravens are present, sitting on the standing stones. They did not follow the party. DC 15 Religion: ravens are associated with Germanic divine messengers (*Huginn* and *Muninn* are Wotan's, but the concept exists across northern traditions). They are watching the ritual. If the sacrifice is genuine, they leave when it completes. If the sacrifice is token, they stay and watch the party exit, then fly back toward Vindolanda.
+
+**Session 4 (siege):** Ravens are silent throughout the session. Every soldier in the fort comments on this. The silence begins at the same moment as Mars' bell rings. DC 11 Perception to notice the silence actively; no check required to hear NPCs comment on it. This is the behavioral tell the party can cross-reference with the table above.
+
+**Session 5 (divine arena):** When Mars descends, every raven in the colony is visible on the ditch-side trees, perfectly still, all facing the parade ground. They are not afraid. They are watching. When the trial ends and Mars withdraws, they fly together in a single mass east, into the forest, and do not return until two days later. The fort is quieter during those two days in a way no one can quite name.
+
+**Cascade unlock:** A player who correctly reads raven behavior twice in the same session earns a one-time benefit: the ravens bring them something. Not a magic item. An object: a small piece of amber, a shred of cloth that smells like Brutus' raven messenger, a finger-bone from the vault. The DM chooses based on what information the party most needs. The ravens drop it at the character's feet. A DC 11 Perception check to notice the drop; a DC 15 Nature or Religion to understand it was intentional rather than coincidence.
+
+</details>
+
+---
+
+### Spring-Keeper Lizards
+
+*Lacerta agilis*, the sand lizard, is common along the Limes. At Vindolanda specifically, the population in the northeast corner of the fort -- near the spring grate -- exhibits unusual behavior.
+
+They bask in sun like ordinary lizards. They eat insects like ordinary lizards. But they never leave the 30-foot radius of the spring. Not one. In five years of observation by the current garrison, not one has been found dead outside that radius. Not one has been successfully moved outside it; placed anywhere else in the fort, they navigate back within hours.
+
+They are not magical. They are not familiars. They are lizards that have lived near a supernaturally active spring for so many generations that the spring's field has become their habitat in some way no Roman naturalist has fully explained.
+
+**What they signal:**
+
+| Lizard behavior | What it indicates |
+|---|---|
+| Basking on the spring grate plate | The Genius Loci is at rest; no active threat in its awareness |
+| Clustered at the edge of the 30-foot radius, all facing outward | Something supernatural has entered the fort and is moving toward them; the suppression field is active and they are at its boundary |
+| None visible anywhere | The spear's influence is strong enough to have driven them underground; this happens in Sessions 3-4 as the spear's corruption pulse intensifies |
+| Three or more visible after a night they were absent | The suppression effect reasserted; whoever was affecting it has moved or been resolved |
+
+<details>
+<summary>**Lizard discovery DCs** *(GM reference)*</summary>
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 10 | Perception | There are a lot of lizards in this one corner of the fort |
+| 13 | Nature | They do not leave the area; you have watched for an hour and none has crossed beyond a specific invisible boundary |
+| 15 | Nature (full day of observation) | The boundary is exactly 30 feet from the spring grate; the lizards know where it is without testing it; they treat it as a wall |
+| 17 | Arcana or Religion | The boundary corresponds to a known radius effect from mature *Genius Loci* suppression fields; this is in the classical literature but rarely discussed because most *Genius Loci* are propitiated through temples, not encountered directly |
+
+</details>
+
+---
+
+### Bog-Light Moths
+
+One kilometer northeast of the fort, the ground turns soft. Reeds, cotton-grass, black water between tussocks: a genuine bog, not seasonal flooding but permanent marsh that has been here since the last glaciation.
+
+At night, pale moths drift above the bog's surface. They are bioluminescent in a way that Roman natural philosophers have never satisfactorily explained. The light is cold blue-white. It does not flicker. It moves against the wind. It is beautiful in a way that makes soldiers who see it uncomfortable in ways they cannot articulate.
+
+The moths encode nothing deliberately. They are moths. But the bog below them contains: three complete Roman skeletons from a prior garrison, two of them with their weapons intact, one of them holding a bronze plate inscribed with a partial prayer to the spring Genius Loci. Also: a Germanic bog deposit, ritual in nature, left approximately 200 years before the fort was built. Also: a second, smaller spring-eye, connected to the same aquifer as the fort's spring, never sealed, never propitiated, very old and very specific in what it wants.
+
+<details>
+<summary>**The Bog: Discovery and Encounter Structure** *(GM reference)*</summary>
+
+**Getting there:** The bog is accessible by leaving the fort's north postern gate and following the ditch northeast for approximately 20 minutes. It is not patrolled. The ground gets unreliable 100 meters before the bog proper: DC 13 Survival to notice the change and move carefully; failure means 1d4 rounds of movement at half speed through sucking mud.
+
+**The skeletons:**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 11 | Investigation | Three skeletons visible at low water (late summer only; DC 13 Perception to notice the water level is low enough to look) |
+| 13 | History | The weapons are legionary issue, Trajanic-era (early 2nd century); these men predate the current garrison by 50+ years |
+| 14 | Medicine | Cause of death for two: blunt force to the skull from behind. One: drowning, hands bound. They were put here deliberately. |
+| 16 | Religion | One figure holds a bronze plate. DC 11 Strength to retrieve it from the mud without destroying it. DC 14 Religion to read the inscription: a partial propitiation formula for the spring Genius Loci, stopping mid-sentence. Someone began it and did not finish. |
+| 17 | Religion (completed inscription + DC 16 Religion) | The unfinished propitiation suggests the speaker was interrupted. The formula, if completed, would have formally acknowledged the Genius Loci's claim to the site and asked for its protection. It was never finished. This is why the spring has never been formally allied to the fort -- only tolerated, not acknowledged. Completing the formula (DC 15 Religion, 30 minutes, at the spring grate) would change the relationship from "tolerated" to "allied": the suppression radius expands to 60 feet, the spring's answer becomes available twice per character, and the Genius Loci becomes aware of the party as individuals rather than as "current occupants." |
+
+**The unsaved spring-eye:**
+
+In the center of the bog, recognizable by a slow upwelling of darker water (DC 14 Perception to spot from 20 meters): a second connection to the aquifer. It has no grate. It has no seal. It has received offerings continuously for 200 years from no one anyone can identify -- the offerings are current, replaced regularly, always the same: a sprig of bog rosemary, a piece of amber, and a small flat stone with a single rune scratched on it.
+
+The rune changes. DC 15 Religion: it is a different rune each time, rotating through the Elder Futhark in sequence, currently on *LAGUZ* (water, flow, the unconscious). DC 17 Religion: the sequence has been proceeding for approximately 40 years and will reach *SOWILO* (sun, victory, clarity) in approximately six more months. Someone is performing a slow ritual whose conclusion date is approximately the time of the campaign's final session.
+
+The DM decides who is making the offerings. Options: Thusnelda's periodic visits before the campaign (she has never told anyone); the spring's own Genius Loci, through means the DM does not need to explain; a third party the campaign has not introduced. The point is not the answer. The point is that something has been happening here for forty years and the party can find the evidence.
+
+**The moths:** They are moths. They do not attack, do not speak, do not have mechanical effects. If a player asks what happens if they catch one: it is warm to the touch (unexpected; insects are not warm), does not struggle, and goes still in their hand. Its light pulses twice and then dims. It is dead. It was not afraid. It simply stopped. DC 15 Arcana: the bioluminescence is caused by the same aquifer mineral content that makes the spring's water taste like iron -- they have evolved in contact with the field for so long it is part of their biology now. They are not dangerous. They are not useful. They are the bog's way of being visible.
+
+</details>
+
+---
+
+### The Frontier Flora: Mechanical Reference
+
+*This section consolidates the plant knowledge from knowledge.qmd into a location-keyed format for quick DM reference. Cross-reference knowledge.qmd "Sacred Flora of the Frontier" for player-discovery tiers.*
+
+| Plant | Where found | Primary mechanical use | Session relevance |
+|---|---|---|---|
+| **Wolfsbane (*Aconitum*)** | North ditch edge, dark soil | Corruption suppression preparation (DC 15 Medicine) | Sessions 3-5: spear's influence peaks |
+| **Bog rosemary (*Andromeda*)** | Bog northeast of fort | Alp protection compound; also one of the bog offering components | Sessions 1-2: Alp encounters most likely |
+| **Sacred mistletoe** | Oak at the sacred grove (Session 3) | Substitute for grove ritual if the grove is inaccessible | Session 4-5: grove burned or sealed |
+| **Elder (*Sambucus*)** | Forest edge, 500m north | One question for the wood's spirit; breaks enchantment sleep | Sessions 2-3: forest encounters |
+| **Marsh orchid** | Bog margin | Mithraic indicator; healing poultice DC 15 Medicine | Session 2: Mithraic connection |
+
+**Foraging DCs (field conditions):**
+
+| Condition | DC modifier |
+|---|---|
+| Summer, unhurried | Baseline (as knowledge.qmd) |
+| Autumn (Sessions 4-5 timeframe) | +2 (many plants past peak) |
+| Under siege conditions | +4 (no time to forage safely; requires a downtime action) |
+| With Nature proficiency + Herbalist Kit | -3 |
+| With Valeria's guidance (Trading at Trusted+ tier) | -2 additional |
+
+---
+
+### Encounter Seeds: Magical Ecology in Play
+
+*Three ready-to-run moments that bring the ecosystem into active play rather than background texture.*
+
+**The Drained Ravens (usable Session 1 or 2):** At dawn, every raven in the colony is sitting on the east gatepost, motionless. They do not move when approached. DC 11 Nature: ravens do not behave this way. DC 13 Nature: they are alive, not stunned; their eyes track movement; they are watching something specific. DC 15 Perception (follow their gaze): they are all looking at the same window of the *principia*, the one closest to the spring grate. Something happened there during the night. DC 13 Investigation (check the floor inside): fresh water on the flagstones, spreading from the northeast corner. The bronze plate has been moved.
+
+**The Offered Bone (usable Session 2 or 3):** A raven drops a finger-bone at the feet of whichever party member has the highest current corruption score. DC 11 Perception to notice the drop. DC 13 Medicine: human, adult, old (50+ years), no fracture pattern consistent with violence. DC 15 Religion: the bone has been worn smooth from handling; it was kept for a long time before being left here. DC 17 History: the style of wear is consistent with Roman funeral practice; someone kept this as a memorial for years before placing it here. It smells faintly of the spring.
+
+**The Moth at Midnight (usable Session 3 or 4, fort at night):** One moth, separated from the bog colony by at least a kilometer, drifts through an open window into the barracks. Its cold blue light illuminates the room for a moment before it settles on the wall near whoever is standing watch. It stays for one hour, then dies. DC 13 Nature: this species does not leave the bog; they are habitat-bound. DC 15 Arcana: the light pulses in a specific pattern during the hour: the same rhythm as a human heartbeat slowing toward sleep, except it is doing this while the character is wide awake and watching it. DC 17 Arcana: the pattern matches the spring's suppression field cycle; the moth has drifted into the fort because the field expanded briefly -- something near the spring was disrupted, pushing the field outward, and carried the moth with it on the aquifer-charged air.
