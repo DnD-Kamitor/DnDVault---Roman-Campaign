@@ -140,11 +140,11 @@ Goal: Any NPC can be improvised perfectly because their voice, knowledge, and ag
 ### Milestone 5 — Location Design ✅ COMPLETE
 Goal: Every major location is described vividly enough to be run without prep.
 
-- [ ] **Fort Vindolanda** — Detailed room/area descriptions keyed to castra_layout.svg
-- [ ] **The Ruins Beneath** — Full 5-Room Dungeon structure
-- [ ] **The Germanic Forest** — Encounter zones, tribal camp, sacred grove detailed description
-- [ ] **Rome (Session 4)** — 3 key locations with sensory descriptions and social encounter frameworks
-- [ ] **The Sacred Grove** — Environmental storytelling, standing stone descriptions
+- [x] **Fort Vindolanda** — Detailed room/area descriptions keyed to castra_layout.svg
+- [x] **The Ruins Beneath** — Full 5-Room Dungeon structure
+- [x] **The Germanic Forest** — Encounter zones, tribal camp, sacred grove detailed description
+- [x] **Vindolanda Under Siege (Session 4)** — Arc redesigned to stay at fort; siege locations, tunnel scenes, antechamber fully detailed in locations.qmd
+- [x] **The Sacred Grove** — Environmental storytelling, standing stone descriptions
 
 ### Milestone 6 — Roman Tactics & D&D 5e Adaptation ✅ COMPLETE
 Goal: DM can run authentic Roman military tactics as D&D mechanics.
@@ -236,16 +236,16 @@ Goal: The Germanic world feels as fully realized as the Roman one.
 ### Milestone 12 — Handouts & Props Pack ✅ COMPLETE
 Goal: DM can hand players physical/visual aids at the right moment.
 
-- [ ] **Handouts 1-3 (Ch1)** — Already written; format for print layout
-- [ ] **Handouts 4-5 (Ch2)** — Already written; format for print layout
-- [ ] **Handouts 6-7 (Ch3)** — Already written; format for print layout
-- [ ] **Handouts 8-9 (Ch4)** — Already written; format for print layout
-- [ ] **Handout 10-11 (Ch5)** — Already written; format for print layout
-- [ ] **Player tracking sheet** — NPCs met, decisions, corruption checkbox, session notes
-- [ ] **DM quick-reference** — Single page: all NPC OGASes, corruption rules, spear properties
+- [x] **Handouts 1-3 (Ch1)** — Print-ready in appendix.qmd with handout-card CSS blocks
+- [x] **Handouts 4-5 (Ch2)** — Print-ready in appendix.qmd with handout-card CSS blocks
+- [x] **Handouts 6-7 (Ch3)** — Print-ready in appendix.qmd with handout-card CSS blocks
+- [x] **Handouts 8-9 (Ch4)** — Print-ready in appendix.qmd with handout-card CSS blocks
+- [x] **Handout 10-11 (Ch5)** — Print-ready in appendix.qmd with handout-card CSS blocks
+- [x] **Player tracking sheet** — NPCs met, decisions, corruption checkbox, session notes
+- [x] **DM quick-reference** — Single page: all NPC OGASes, corruption rules, spear properties
 
 ### Milestone 13 — Final Polish & Publish ✅ COMPLETE
-- [ ] Continuity audit: NPC actions consistent across all sessions
+- [x] Continuity audit: NPC actions consistent across all sessions
 - [ ] `quarto render --to pdf` produces a clean printable document
 - [ ] GitHub Pages deployment verified and live
 
@@ -260,266 +260,255 @@ Goal: Players understand Roman time. Sessions reference the calendar naturally, 
 
 **File:** New section in `player_guide.qmd` OR standalone `calendar.qmd` (decide at build time based on length)
 
-- [ ] **Roman calendar mechanics** — How to give a date: Kalends, Nones, Ides; AUC dating vs. consul-year dating; how soldiers would actually say "it is the third day before the Ides of July"
-- [ ] **The campaign window (April-October 175 AD)** — Which festivals fall within the five sessions; how the DM can anchor events to real festival dates
-- [ ] **Mars-specific festivals** — *Quinquatria* (March 19-23): Mars' main festival, games and weapon-blessing; *Armilustrium* (October 19): purification of weapons, end of the military season; *Tubilustrium* (March 23): trumpet purification, start of campaign season
-- [ ] **Other relevant festivals** — *Lemuria* (May 9, 11, 13): appeasing the restless dead (connects to Lemur creature entry); *Parentalia* (February 13-21): ancestor veneration; *Saturnalia* (December): what soldiers on the frontier do when it comes
-- [ ] **Festival gameplay mechanics** — What a character gains from observing a festival properly; what bad things happen if a sacred day is desecrated; how the DM uses festival timing as a story clock
-- [ ] **The Roman day** — How they divide daylight into hours, what the watches of the night are called, what soldiers say when they mean "dawn" or "midnight"
-- [ ] **Historical events timeline (150-180 AD)** — A one-page player-safe timeline: Marcomannic Wars, the Antonine Plague, Marcus Aurelius' accession, the Danube campaigns; what common soldiers know vs. what is rumor
+- [x] **Roman calendar mechanics** — How to give a date: Kalends, Nones, Ides; AUC dating vs. consul-year dating; how soldiers would actually say "it is the third day before the Ides of July"
+- [x] **The campaign window (April-October 175 AD)** — Which festivals fall within the five sessions; how the DM can anchor events to real festival dates
+- [x] **Mars-specific festivals** — *Quinquatria* (March 19-23): Mars' main festival, games and weapon-blessing; *Armilustrium* (October 19): purification of weapons, end of the military season; *Tubilustrium* (March 23): trumpet purification, start of campaign season
+- [x] **Other relevant festivals** — *Lemuria* (May 9, 11, 13): appeasing the restless dead (connects to Lemur creature entry); *Parentalia* (February 13-21): ancestor veneration; *Saturnalia* (December): what soldiers on the frontier do when it comes
+- [x] **Festival gameplay mechanics** — What a character gains from observing a festival properly; what bad things happen if a sacred day is desecrated; how the DM uses festival timing as a story clock
+- [x] **The Roman day** — How they divide daylight into hours, what the watches of the night are called, what soldiers say when they mean "dawn" or "midnight"
+- [x] **Historical events timeline (150-180 AD)** — A one-page player-safe timeline: Marcomannic Wars, the Antonine Plague, Marcus Aurelius' accession, the Danube campaigns; what common soldiers know vs. what is rumor
 
 ### Milestone 15 — Life at the Frontier: Sensory Atlas ✅ COMPLETE
 Goal: Players can close their eyes and *be* at Vindolanda. They describe their surroundings without GM prompting because they know what the place smells like, sounds like, and costs.
 
 **File:** New section added to `player_tome.qmd`
 
-- [ ] **A day in the life** — Hour-by-hour schedule of a legionary at a Germanic frontier fort: before-dawn watch, morning *exercitatio*, midday rations, afternoon duties, evening at the *thermopolium*, night watch; what each part of the day feels like physically
-- [ ] **Food and drink** — What soldiers actually eat: *bucellatum* (hard tack), *posca* (vinegar-water), *puls* (porridge), salt fish, olives, local game; what constitutes a good day's food vs. a bad one; what men complain about; what they pay for luxuries from traders
-- [ ] **The senses of Vindolanda** — Specific sensory details: smell of the latrines, the sound of the gate changing at the third watch, the weight of armour in summer heat, the cold of a Germanic January, the noise of a contubernium (8-man tent unit) at dinner
-- [ ] **Weather and seasons on the frontier** — How Germanic climate differs from Italy, Spain, or Egypt (wherever the character is from); what winter on the Danube does to morale; what rain means for a march; what it means when the river freezes
-- [ ] **Entertainment and social life** — Dice games (*tesserae*), gambling debts, gossip, who is popular and who is hated in the barracks, how men deal with boredom between campaigns; the role of the fort tavern (*taberna*) and bathhouse (*balneum*)
-- [ ] **Death on the frontier** — What happens when a soldier dies: how the body is prepared, who writes to the family, what the unit does collectively; funeral rites for Romans vs. what a soldier buried on the frontier gets; the emotional reality of watching your tent-mate buried far from home
+- [x] **A day in the life** — Hour-by-hour schedule of a legionary at a Germanic frontier fort: before-dawn watch, morning *exercitatio*, midday rations, afternoon duties, evening at the *thermopolium*, night watch; what each part of the day feels like physically
+- [x] **Food and drink** — What soldiers actually eat: *bucellatum* (hard tack), *posca* (vinegar-water), *puls* (porridge), salt fish, olives, local game; what constitutes a good day's food vs. a bad one; what men complain about; what they pay for luxuries from traders
+- [x] **The senses of Vindolanda** — Specific sensory details: smell of the latrines, the sound of the gate changing at the third watch, the weight of armour in summer heat, the cold of a Germanic January, the noise of a contubernium (8-man tent unit) at dinner
+- [x] **Weather and seasons on the frontier** — Embedded in the sensory atlas and food/drink sections of player_tome.qmd
+- [x] **Entertainment and social life** — Dice games (*tesserae*), gambling debts, gossip, who is popular and who is hated in the barracks, how men deal with boredom between campaigns; the role of the fort tavern (*taberna*) and bathhouse (*balneum*)
+- [x] **Death on the frontier** — What happens when a soldier dies: how the body is prepared, who writes to the family, what the unit does collectively; funeral rites for Romans vs. what a soldier buried on the frontier gets; the emotional reality of watching your tent-mate buried far from home
 
 ### Milestone 16 — Fort Vindolanda: Player Guide ✅ COMPLETE
 Goal: Because the campaign never leaves Vindolanda and its immediate surroundings, players need a visceral, practical guide to the fort: how it looks, how it runs, and how to survive the siege.
 
 **File:** `vindolanda_guide.qmd` (Player's Workbook, before Session 3)
 
-- [ ] **First impressions** — Rain, stone, watchtower smoke, and trumpet calls that define daily life inside the fort walls.
-- [ ] **The fort's layout** — *Principia*, *praetorium*, barracks, *fabrica*, *vicus*, bathhouse, sacred spaces, and the hidden stair under the headquarters.
-- [ ] **Social rules at the fort** — Chain of command, the quartermaster's ledger, watch passwords, the vicus compact, and how oaths function when Mars is watching.
-- [ ] **Prices and supply realities** — What food, bribes, or favors cost inside the walls now that the fort is cut off; how to trade reputation instead of coin.
-- [ ] **Key locations** — North gate, watchtower loft, granary, bath furnace room, vicus shrine, hidden stair; what each offers players in play.
-- [ ] **Dangers unique to Vindolanda** — Siege exhaustion, saboteurs, weather, vicus patrols, and the ruins beneath.
+- [x] **First impressions** — Rain, stone, watchtower smoke, and trumpet calls that define daily life inside the fort walls.
+- [x] **The fort's layout** — *Principia*, *praetorium*, barracks, *fabrica*, *vicus*, bathhouse, sacred spaces, and the hidden stair under the headquarters.
+- [x] **Social rules at the fort** — Chain of command, the quartermaster's ledger, watch passwords, the vicus compact, and how oaths function when Mars is watching.
+- [x] **Prices and supply realities** — What food, bribes, or favors cost inside the walls now that the fort is cut off; how to trade reputation instead of coin.
+- [x] **Key locations** — North gate, watchtower loft, granary, bath furnace room, vicus shrine, hidden stair; what each offers players in play.
+- [x] **Dangers unique to Vindolanda** — Siege exhaustion, saboteurs, weather, vicus patrols, and the ruins beneath.
 
 ### Milestone 17 — Campaign Journal & Decision Tracker ✅ COMPLETE
 Goal: Players have a structured, beautiful one-page tool for each session that helps them track their own story arc, their relationships, and their corruption state.
 
 **File:** `journal.qmd` (added to Player's Workbook, positioned last)
 
-- [ ] **Session journal template (x5)** — One structured page per session: date (in-world and real), opening situation, decisions made (with space for "what I chose" and "why"), NPCs encountered, corruption level at end, divine standing (favored/neutral/cursed by which god), one sentence about where my character ends the session emotionally
-- [ ] **Relationship web** — A blank diagram with NPC names pre-filled (major NPCs only); players mark trust level and what they owe each NPC or are owed
-- [ ] **Corruption tracker** — Levels 0-5 laid out visually with experiential descriptions from `player_tome.qmd`; a checkbox per level; space to note what triggered the change
-- [ ] **The Open Questions list** — Space for players to note things they do not understand yet, clues they have not followed up, and mysteries they want to pursue; this prevents "we forgot about that" between sessions
-- [ ] **End-of-campaign reflection** — One page of prompts for each character after Session 5: what did your character become? What do they regret? What did they protect? What did they lose? What do they believe now that they did not believe at the start?
-- [ ] **Print-ready formatting** — The journal is designed to be printed, folded, and used physically at the table; minimal color use; space for handwriting
+- [x] **Session journal template (x5)** — One structured page per session: date (in-world and real), opening situation, decisions made (with space for "what I chose" and "why"), NPCs encountered, corruption level at end, divine standing (favored/neutral/cursed by which god), one sentence about where my character ends the session emotionally
+- [x] **Relationship web** — A blank diagram with NPC names pre-filled (major NPCs only); players mark trust level and what they owe each NPC or are owed
+- [x] **Corruption tracker** — Levels 0-5 laid out visually with experiential descriptions from `player_tome.qmd`; a checkbox per level; space to note what triggered the change
+- [x] **The Open Questions list** — Space for players to note things they do not understand yet, clues they have not followed up, and mysteries they want to pursue; this prevents "we forgot about that" between sessions
+- [x] **End-of-campaign reflection** — One page of prompts for each character after Session 5: what did your character become? What do they regret? What did they protect? What did they lose? What do they believe now that they did not believe at the start?
+- [x] **Print-ready formatting** — The journal is designed to be printed, folded, and used physically at the table; minimal color use; space for handwriting
 
 ### Milestone 18 — Expanded Corruption System (Player-Facing) ✅ COMPLETE
 Goal: Corruption is the campaign's central mechanical spine. It deserves a full player-facing chapter, not just a brief mention in player_guide.qmd.
 
 **File:** New dedicated `corruption.qmd` (Player's Workbook), replacing the brief corruption section currently in player_guide.qmd
 
-- [ ] **What corruption is (player version)** — Written entirely from the character's perspective, no mechanical language in the opening; what it feels like to want something too much, to serve a god who is not entirely good, to notice the world bending toward you
-- [ ] **The six stages in depth** — Each stage (0-5) gets a full page: the physical signs (what others notice), the psychological shift (what the character now finds normal that once horrified them), the mechanical effect (what changes in D&D terms), and a journal prompt to roleplay the transition
-- [ ] **Corruption and the gods** — How each major god responds to a character's corruption level; which gods become interested at higher levels; what it means that Mars *wants* players to corrupt
-- [ ] **Resisting corruption** — What works, what does not, what is too late; the difference between characters who resist together vs. those who resist alone; how the party's collective corruption level shifts the campaign's ending
-- [ ] **Corruption as story, not punishment** — A direct address to players: corruption is a story tool, not a failure state; the most interesting session 5 choices come from characters who are corrupted but still trying; how to play a level-4 corrupted character at the table without being disruptive
-- [ ] **Corruption recovery rules** — Specific, concrete conditions for reducing corruption at each level; which professions or downtime activities help; what gods can help and what they ask in return; the hard cap (level 5 is permanent without divine intervention)
+- [x] **What corruption is (player version)** — Written entirely from the character's perspective, no mechanical language in the opening; what it feels like to want something too much, to serve a god who is not entirely good, to notice the world bending toward you
+- [x] **The six stages in depth** — Each stage (0-5) gets a full page: the physical signs (what others notice), the psychological shift (what the character now finds normal that once horrified them), the mechanical effect (what changes in D&D terms), and a journal prompt to roleplay the transition
+- [x] **Corruption and the gods** — How each major god responds to a character's corruption level; which gods become interested at higher levels; what it means that Mars *wants* players to corrupt
+- [x] **Resisting corruption** — What works, what does not, what is too late; the difference between characters who resist together vs. those who resist alone; how the party's collective corruption level shifts the campaign's ending
+- [x] **Corruption as story, not punishment** — A direct address to players: corruption is a story tool, not a failure state; the most interesting session 5 choices come from characters who are corrupted but still trying; how to play a level-4 corrupted character at the table without being disruptive
+- [x] **Corruption recovery rules** — Specific, concrete conditions for reducing corruption at each level; which professions or downtime activities help; what gods can help and what they ask in return; the hard cap (level 5 is permanent without divine intervention)
 
 ### Milestone 19 — Languages of the Roman World (D&D Translation) ✅ COMPLETE
 Goal: Every language a character might speak maps cleanly to a D&D 5e language. Players pick languages from the character creation tables in the PHB and know exactly what that means at this table.
 
 **File:** New section added to `player_guide.qmd` (under Character Creation) or `session0.qmd` (under Before You Build)
 
-- [ ] **The translation table** — A clear two-column table: Real-World Language → D&D Equivalent, with a note on who speaks it and where it matters in the campaign
-  - *Latin* → Common (the imperial tongue; all soldiers, citizens, traders; the language of law and command)
-  - *Greek* → Elvish (language of philosophy, medicine, magic, and the educated elite; doctors, priests, scholars)
-  - *Germanic (Gothic/Suebian/Cherusci dialect)* → Goblin (pragmatic, guttural, underestimated by Romans; key for frontier diplomacy)
-  - *Celtic (Gallic, Brittonic)* → Dwarvish (ancient, earthy, territorial; spoken by auxiliaries from Gaul and Britannia)
-  - *Aramaic / Syriac* → Halfling (trade language of the eastern frontier and merchant networks)
-  - *Egyptian (Demotic)* → Gnomish (arcane and priestly; spoken near temple cults and by initiates of Isis)
-  - *Hebrew* → Primordial (sacred, old, carried by communities who predate Rome)
-  - *Persian / Parthian* → Draconic (the language of the empire's greatest rival; rare, valued, dangerous to know)
-  - *Thracian / Illyrian* → Sylvan (spoken by auxiliaries from the Balkans; wild, regional, fading)
-  - *Druidic* → Druidic (unchanged; spoken by the last practitioners of Celtic sacred tradition in hidden groves)
-  - *Thieves' Cant* → Thieves' Cant (unchanged; the universal language of criminal networks, from Rome's Subura to the Rhine traders)
-- [ ] **Language tiers by background** — Which languages a soldier from each province realistically knows; which cost a language slot vs. which are free from background; a note that Greek is the campaign's "second language of power" and worth taking
-- [ ] **Languages in play** — When it matters: German-speaking NPCs who will not speak Latin until trust is earned; Greek texts in the temple archives; a Latin document the party finds in Germanic territory that raises questions; what happens when no one speaks a language
-- [ ] **Learning a new language** — Which downtime activity covers it; how many sessions it realistically takes; which NPCs can teach which languages (connects to Professions chapter)
-- [ ] **Secret and sacred languages** — Runic (can be learned as a scholar language, different from casting with runes); the priestly language of the Druids (connects to Milestone 11 Germanic content); what the volva's ritual speech sounds like to someone who does not know it
+- [x] **The translation table** — A clear two-column table: Real-World Language → D&D Equivalent, with a note on who speaks it and where it matters in the campaign (in player_guide.qmd)
+- [x] **Language tiers by background** — Which languages a soldier from each province realistically knows; which cost a language slot vs. which are free from background; a note that Greek is the campaign's "second language of power" and worth taking
+- [x] **Languages in play** — When it matters: German-speaking NPCs who will not speak Latin until trust is earned; Greek texts in the temple archives; a Latin document the party finds in Germanic territory that raises questions; what happens when no one speaks a language
+- [x] **Learning a new language** — Which downtime activity covers it; how many sessions it realistically takes; which NPCs can teach which languages (connects to Professions chapter)
+- [x] **Secret and sacred languages** — Runic (can be learned as a scholar language, different from casting with runes); the priestly language of the Druids (connects to Milestone 11 Germanic content); what the volva's ritual speech sounds like to someone who does not know it
 
 ### Milestone 21 — Chapter 1: Blood and Omens (Improvement Pass)
 Goal: Every scene in Chapter 1 is runnable without the DM reading anything twice. The ruins feel ancient and hostile, not like a list of features.
 
 **File:** `chapter1.qmd`
 
-- [ ] **Underground chamber read-alouds** — Full atmospheric read-aloud text for all three chambers (Hall of Shields, Chamber of Chains, The Vault); currently bare bullet lists with no sensory language
-- [ ] **The Spear reveal** — A dedicated read-aloud moment when the party first sees the spear on its altar; the current text has no such moment
-- [ ] **NPC OGAS table** — Corvinus, Cassia, and Varro each need Objective / Goal / Agenda / Secret (like chapters 2-5); currently missing entirely from Chapter 1
-- [ ] **Fix: Germanic runes** — Handout 2 calls the inscription "Gaulish/Celtic"; this is inconsistent with germanic_tribes.qmd which uses Elder Futhark for all in-world runic content; change to Germanic with an Elder Futhark reference
-- [ ] **Scene 4 expansion** — The mad worker encounter is two bullet points; add read-aloud for his appearance, dialogue lines, and a resolution table (subdue, kill, or the worker breaks free and flees into the night)
-- [ ] **Refusal contingency table** — What if the party refuses the Legate's mission? Currently nothing; add a small decision table with 3 outcomes and consequences
+- [x] **Underground chamber read-alouds** — Full atmospheric read-aloud text for all three chambers (Hall of Shields, Chamber of Chains, The Vault); currently bare bullet lists with no sensory language
+- [x] **The Spear reveal** — A dedicated read-aloud moment when the party first sees the spear on its altar; the current text has no such moment
+- [x] **NPC OGAS table** — Corvinus, Cassia, and Varro each need Objective / Goal / Agenda / Secret (like chapters 2-5); currently missing entirely from Chapter 1
+- [x] **Fix: Germanic runes** — Handout 2 calls the inscription "Gaulish/Celtic"; this is inconsistent with germanic_tribes.qmd which uses Elder Futhark for all in-world runic content; change to Germanic with an Elder Futhark reference
+- [x] **Scene 4 expansion** — The mad worker encounter is two bullet points; add read-aloud for his appearance, dialogue lines, and a resolution table (subdue, kill, or the worker breaks free and flees into the night)
+- [x] **Refusal contingency table** — What if the party refuses the Legate's mission? Currently nothing; add a small decision table with 3 outcomes and consequences
 
 ### Milestone 22 — Chapter 2: The Tribune's Gambit (Improvement Pass)
 Goal: The dead sentry becomes a resolved mystery, not a dropped thread. Vercingetorix gets the depth he deserves. All five session endings have explicit Session 3 seeds.
 
 **File:** `chapter2.qmd`
 
-- [ ] **Resolve the Sextus murder** — Who killed the sentry? Currently introduced and forgotten; add a Three Clue Rule mini-mystery (answer: Brutus' sleeper agent in the fort, who also carved "ROMA CADIT" and then left with the Tribune's party)
-- [ ] **Vercingetorix knowledge table** — What he specifically knows about the spear's history, where the sacred grove is, and what the destruction ritual requires; DM notes say he "knows more than any Roman" but never list what he knows
-- [ ] **Expanded Vercingetorix dialogue** — 3 more sample lines beyond the battle scene; he needs a distinct voice across the whole session
-- [ ] **Session 2 → Session 3 transition table** — Five distinct Session 2 endings (exposed Tribune / fought Praetorians / negotiated / fled with Vercingetorix / surrendered), each with an explicit Session 3 opening position
-- [ ] **Varro contingency** — What happens to the party's position if Varro dies during the raid? He's load-bearing for the session's resolution; need a fallback
+- [x] **Resolve the Sextus murder** — Who killed the sentry? Currently introduced and forgotten; add a Three Clue Rule mini-mystery (answer: Brutus' sleeper agent in the fort, who also carved "ROMA CADIT" and then left with the Tribune's party)
+- [x] **Vercingetorix knowledge table** — What he specifically knows about the spear's history, where the sacred grove is, and what the destruction ritual requires; DM notes say he "knows more than any Roman" but never list what he knows
+- [x] **Expanded Vercingetorix dialogue** — 3 more sample lines beyond the battle scene; he needs a distinct voice across the whole session
+- [x] **Session 2 → Session 3 transition table** — Five distinct Session 2 endings (exposed Tribune / fought Praetorians / negotiated / fled with Vercingetorix / surrendered), each with an explicit Session 3 opening position
+- [x] **Varro contingency** — What happens to the party's position if Varro dies during the raid? He's load-bearing for the session's resolution; need a fallback
 
 ### Milestone 23 — Chapter 3: Through the Dark Forest (Improvement Pass)
 Goal: The two-day forest journey feels like a journey, not a teleport to the next scene. The sacrifice mechanic has enough DM guidance to land every time.
 
 **File:** `chapter3.qmd`
 
-- [ ] **Forest travel events table** — A d8 table of events during the two-day journey (omens, encounters, spear manifestations, NPC moments); currently the forest travel has no mechanical content between leaving the fort and arriving at Thusnelda's scouts
-- [ ] **Thusnelda expanded** — 4 more sample lines and a "what she will and will not say" table; she is the most important new NPC in the session and needs more voice
-- [ ] **Sacrifice mechanic DM guidance** — "The grove knows" is correct but needs clearer DM instruction: what signs indicate the grove accepted or rejected the sacrifice? How does Thusnelda react to each offer? What if no one is willing to offer anything real?
-- [ ] **Post-ritual NPC states** — A table showing where each NPC stands emotionally and practically after the spear is destroyed (or after failure); needed for Session 4 handoff
-- [ ] **Influenced NPC roleplay expansion** — The private note is good; add 3 specific things the influenced player should do or say during Scenes 1-3 that feel natural but are later recognisable in hindsight
+- [x] **Forest travel events table** — A d8 table of events during the two-day journey (omens, encounters, spear manifestations, NPC moments); currently the forest travel has no mechanical content between leaving the fort and arriving at Thusnelda's scouts
+- [x] **Thusnelda expanded** — 4 more sample lines and a "what she will and will not say" table; she is the most important new NPC in the session and needs more voice
+- [x] **Sacrifice mechanic DM guidance** — "The grove knows" is correct but needs clearer DM instruction: what signs indicate the grove accepted or rejected the sacrifice? How does Thusnelda react to each offer? What if no one is willing to offer anything real?
+- [x] **Post-ritual NPC states** — A table showing where each NPC stands emotionally and practically after the spear is destroyed (or after failure); needed for Session 4 handoff
+- [x] **Influenced NPC roleplay expansion** — The private note is good; add 3 specific things the influenced player should do or say during Scenes 1-3 that feel natural but are later recognisable in hindsight
 
 ### Milestone 24 — Chapter 4: The God's Demand (Improvement Pass)
 Goal: Vindolanda's siege and the ritual escort feel like a pressure cooker. Mars' demand is clear, the sabotage plot is concrete, and every faction's OGAS shows in play.
 
 **File:** `chapter4.qmd`
 
-- [ ] **Siege read-aloud** — Opening text that captures smoke, rain, trumpets, and Mars' bell (done). Ensure each crisis has mechanics (breach, granary, shrine) with clear stakes.
-- [ ] **Council stakes** — Flesh out the politics inside the *principia*: what Corvinus, Lucius, Varro, Cassia, and Vercingetorix each want from the escort.
-- [ ] **Procession prep table** — Concrete options the party can take before descending (scout stair, calm vicus, call favors) with consequences for failure.
-- [ ] **Tunnel scenes** — Three distinct hazards that escalate tension and foreshadow Mars' arrival.
-- [ ] **Antechamber demand** — Clarify the requirement for three kneeling witnesses and how that affects Session 5.
+- [x] **Siege read-aloud** — Opening text that captures smoke, rain, trumpets, and Mars' bell (done). Ensure each crisis has mechanics (breach, granary, shrine) with clear stakes.
+- [x] **Council stakes** — Flesh out the politics inside the *principia*: what Corvinus, Lucius, Varro, Cassia, and Vercingetorix each want from the escort.
+- [x] **Procession prep table** — Concrete options the party can take before descending (scout stair, calm vicus, call favors) with consequences for failure.
+- [x] **Tunnel scenes** — Three distinct hazards that escalate tension and foreshadow Mars' arrival.
+- [x] **Antechamber demand** — Clarify the requirement for three kneeling witnesses and how that affects Session 5.
 
 ### Milestone 25 — Chapter 5: The Wrath of Mars (Improvement Pass)
 Goal: Option C (the argument) gets the depth it deserves. Corruption level 5 is fully mechanised. Every ending has its own emotional beat set atop the fort's parade ground.
 
 **File:** `chapter5.qmd`
 
-- [ ] **Corruption level 5 in the arena** — Define how Mars manipulates a corrupted PC in each option and how redemption works.
-- [ ] **Option C expanded** — Three arguments that move Mars, three that anger him, plus the failure recovery path (demonstration DC 14) and visual cues that show when he is persuaded.
-- [ ] **Post-trial narration** — Distinct read-alouds for Option A (champion falls) and Option B (Mars calls the fight at 150 HP).
-- [ ] **Mars up close** — Provide the read-aloud for when he rises from the throne and walks across the black sand.
-- [ ] **Call to War mechanic** — Table of future calls and what happens if the Chosen refuse.
-- [ ] **Epilogue NPC prompts** — Two example questions or answers per major NPC to make the epilogue conversational instead of a list.
+- [x] **Corruption level 5 in the arena** — Define how Mars manipulates a corrupted PC in each option and how redemption works.
+- [x] **Option C expanded** — Three arguments that move Mars, three that anger him, plus the failure recovery path (demonstration DC 14) and visual cues that show when he is persuaded.
+- [x] **Post-trial narration** — Distinct read-alouds for Option A (champion falls) and Option B (Mars calls the fight at 150 HP).
+- [x] **Mars up close** — Provide the read-aloud for when he rises from the throne and walks across the black sand.
+- [x] **Call to War mechanic** — Table of future calls and what happens if the Chosen refuse.
+- [x] **Epilogue NPC prompts** — Two example questions or answers per major NPC to make the epilogue conversational instead of a list.
 
 ### Milestone 20 — Expanded "What Your Character Knows" (knowledge.qmd Overhaul) ✅ COMPLETE
 Goal: The knowledge chapter currently goes straight to ability checks. Add a layer of baseline knowledge visible to every player before the collapsible DC sections. Every entry should have three layers: (1) common knowledge no roll needed, (2) DC 13/15 trained knowledge, (3) DC 17 specialist knowledge.
 
 **File:** `knowledge.qmd` (overhaul of existing file)
 
-- [ ] **Add "What every soldier knows" preamble to each category** — A short paragraph (3-5 sentences) of baseline facts that require no roll; what any Roman on the frontier in 175 AD simply knows as common knowledge; visible without expanding any collapsible section
-- [ ] **Roman Military Lore** — Add general knowledge preamble: the five campaign legions, why Teutoburg is still talked about 160 years later, what soldiers say about the Marcomanni; then DC 13/15/17 tiers below
-- [ ] **Roman Religion** — Add general knowledge preamble: the Capitoline Triad, why you must never swear a false oath to Jupiter, how sacrifice actually works at a fort altar; then DC tiers
-- [ ] **The Gods (campaign-specific)** — Add general knowledge preamble: what every soldier knows about Mars before the campaign starts; what Mars' cult at the frontier is like vs. in Rome; then DC tiers
-- [ ] **Germanic Tribes** — Add general knowledge preamble: what Roman soldiers say about the Germans (mostly wrong, some right), the Teutoburg disaster as cautionary tale, what the Marcomanni want; then DC tiers
-- [ ] **The Frontier** — Add general knowledge preamble: what the Limes looks like day to day, what traders bring across, what happens to soldiers who cross without orders; then DC tiers
-- [ ] **Roman Law & Politics** — Add general knowledge preamble: what a legionary actually knows about the Senate and the Emperor (less than he thinks), how a Triumph is declared, what treason means; then DC tiers
-- [ ] **Poisons & Medicine** — Add general knowledge preamble: what soldiers know about field injuries, wound fever, and the basic herbal kit; then DC tiers for more dangerous knowledge
-- [ ] **Divine Signs & Omens** — Add general knowledge preamble: the three signs every Roman soldier watches for, what to do when lightning strikes near camp, why a crow on the left is worse than a crow on the right; then DC tiers
-- [ ] **Two new categories** — Add: (1) *The Antonine Plague* (what soldiers know about the ongoing epidemic, how it affects troop strength, what "plague touched" means socially); (2) *Roman Engineering* (what any legionary knows about building roads, camps, bridges, and siege equipment; connects to Faber profession)
-- [ ] **Visual design pass** — Add a brief instructional note at the top of the chapter explaining how to use it: "Read the open section without rolling. Expand the sections below when you make the listed check."
+- [x] **Add "What every soldier knows" preamble to each category** — A short paragraph (3-5 sentences) of baseline facts that require no roll; what any Roman on the frontier in 175 AD simply knows as common knowledge; visible without expanding any collapsible section
+- [x] **Roman Military Lore** — Add general knowledge preamble: the five campaign legions, why Teutoburg is still talked about 160 years later, what soldiers say about the Marcomanni; then DC 13/15/17 tiers below
+- [x] **Roman Religion** — Add general knowledge preamble: the Capitoline Triad, why you must never swear a false oath to Jupiter, how sacrifice actually works at a fort altar; then DC tiers
+- [x] **The Gods (campaign-specific)** — Add general knowledge preamble: what every soldier knows about Mars before the campaign starts; what Mars' cult at the frontier is like vs. in Rome; then DC tiers
+- [x] **Germanic Tribes** — Add general knowledge preamble: what Roman soldiers say about the Germans (mostly wrong, some right), the Teutoburg disaster as cautionary tale, what the Marcomanni want; then DC tiers
+- [x] **The Frontier** — Add general knowledge preamble: what the Limes looks like day to day, what traders bring across, what happens to soldiers who cross without orders; then DC tiers
+- [x] **Roman Law & Politics** — Add general knowledge preamble: what a legionary actually knows about the Senate and the Emperor (less than he thinks), how a Triumph is declared, what treason means; then DC tiers
+- [x] **Poisons & Medicine** — Add general knowledge preamble: what soldiers know about field injuries, wound fever, and the basic herbal kit; then DC tiers for more dangerous knowledge
+- [x] **Divine Signs & Omens** — Add general knowledge preamble: the three signs every Roman soldier watches for, what to do when lightning strikes near camp, why a crow on the left is worse than a crow on the right; then DC tiers
+- [x] **Two new categories** — Added: (1) *The Antonine Plague*; (2) *Roman Engineering* (both with preamble + DC tiers, in knowledge.qmd)
+- [x] **Visual design pass** — Instructional note added at top of knowledge.qmd explaining the three-layer system
 
 ### Milestone 26 — The Peoples of the Empire: D&D Races as Roman World Cultures ✅ COMPLETE
 Goal: Every D&D 5e race maps to a specific real-world culture within or adjacent to the Roman Empire in 175 AD. Players pick a race and immediately understand who that people are, where they come from, and how Rome sees them.
 
 **File:** `peoples.qmd` (Player's Workbook, after `player_guide.qmd`)
 
-- [ ] **Human** — Default for most Roman citizens and fully integrated provincials; subraces by province: Italian (patrician flavour, high social standing), Hispanian (pragmatic frontier stock), Gallic (Romanized Celt, earned loyalty), Pannonian (Danube-born, practically bilingual), Syrian/Judaean (educated, cosmopolitan, eastern religious complexity)
-- [ ] **Elf** — Greeks and Hellenized Easterners; ancient, philosophical, long cultural memory; Greece is a province now but retains enormous cultural prestige; High Elves = Athenian intellectual class; Wood Elves = rural Greek hill communities and Anatolian interior peoples; how Greeks are perceived by Romans (admired and condescended to simultaneously)
-- [ ] **Dwarf** — Germanic and Dacian mountain peoples; clan-based, forge-and-mine culture, honor through craft and kinship; Mountain Dwarves = Dacians (recently conquered, mining tradition, grudge-bearing); Hill Dwarves = Germanics partially integrated along the Limes (traders, smiths, federates); relationship with Rome: wary respect
-- [ ] **Halfling** — Phoenician, Syrian, and Nabataean traders; adaptable, mercantile, present everywhere trade flows; lightfoot = Phoenician coastal traders; stout = inland Syrian merchant families; the people who know everyone, owe favors to everyone, and are underestimated by everyone; their relationship to the Roman economy
-- [ ] **Gnome** — Egyptians and Alexandrians; inventors, scholars, priests of ancient mystery cults, keepers of knowledge Rome has not yet deciphered; forest gnomes = rural Nile delta peoples with ancient agricultural magic; rock gnomes = Alexandrian scholars and engineers; the Library of Alexandria as a gnomish institution
-- [ ] **Half-Elf** — Peoples of mixed Roman/Greek heritage; the Romanized upper class of Greek provinces; soldiers born on the frontier between cultures; also: Dacian nobles who were granted citizenship and Roman education; characters who belong fully to neither world
-- [ ] **Half-Orc** — Germanic warriors and mercenaries: the *foederati* who fight for Rome while remaining definitively not Roman; powerful, direct, operating on a different honor code; some are full federates with formal alliance treaties, some are captured warriors granted service in exchange for freedom; how Roman soldiers regard them (useful and frightening)
-- [ ] **Tiefling** — Peoples from Carthage's former territories (North Africa, Spain) who carry the cultural inheritance of Baal worship and sacrifice; Rome destroyed Carthage but its traditions persisted underground; also: worshippers of chthonic gods from the eastern mystery cults; their infernal heritage represents the divine bargains their ancestors made with gods Rome considers dangerous
-- [ ] **Dragonborn** — Parthians and Persians; Rome's great eastern rival; proud, ancient civilization, draconic cultural mythology; rare in the western Empire but not unknown; former Parthian nobles who came west after diplomatic exchanges or as hostages; how Rome views them: impressive, dangerous, not to be trusted with anything strategic
-- [ ] **Aasimar** — Roman noble families claiming divine descent (*gens Julia* from Venus, etc.); also: children of oracular priests or vestal virgins with genuine divine heritage; their celestial nature is interpreted through Roman religion as *numen* (divine presence); Radiant Soul = families with active divine connection; Fallen = those whose divine patron has withdrawn favor
-- [ ] **For each race:** Standard D&D stat block plus: (1) how Rome legally classifies this people, (2) what language they speak natively vs. what they've learned, (3) what military roles are open vs. closed to them, (4) 2 sample character hooks specific to their cultural position
+- [x] **Human** — All provincial subraces documented in peoples.qmd
+- [x] **Elf** — Greeks and Hellenized Easterners fully documented
+- [x] **Dwarf** — Germanic and Dacian mountain peoples fully documented
+- [x] **Halfling** — Phoenician, Syrian, and Nabataean traders fully documented
+- [x] **Gnome** — Egyptians and Alexandrians fully documented
+- [x] **Half-Elf** — Peoples of mixed Roman/Greek heritage fully documented
+- [x] **Half-Orc** — Germanic *foederati* warriors fully documented
+- [x] **Tiefling** — Carthaginian-heritage peoples fully documented
+- [x] **Dragonborn** — Parthians and Persians fully documented
+- [x] **Aasimar** — Roman noble families claiming divine descent fully documented
+- [x] **For each race:** Legal classification, native language, military roles, and 2 character hooks included
 
 ### Milestone 27 — Legal Status and Social Standing in the Empire ✅ COMPLETE
 Goal: A character's race and origin determines their legal and social standing in Rome. This is not a punishment mechanic: it is the texture of the world. Some doors are open; others require keys; a few are locked for good reasons that the campaign can challenge.
 
 **File:** Section added to `peoples.qmd` (building on Milestone 26)
 
-- [ ] **The five legal categories** — *Cives Romani* (full citizens: Italian humans, Aasimar of noble families, some Half-Elves of the educated class); *Latini* (Latin rights, partial citizenship: provincials two generations from citizenship, Half-Orcs with federate status); *Peregrini* (free non-citizens: most provincial races, Elves, Dwarves, Halflings not formally allied); *Liberti* (freedmen: any race born into slavery and legally freed; they carry the freedman stigma regardless of wealth); *Dediticii* (surrendered peoples with no Roman legal standing: Tieflings of Carthaginian descent, Dragonborn in some regions)
-- [ ] **Rank ceilings by status** — Citizens can hold any rank; Latini can reach centurion but rarely tribune; Peregrini earn citizenship after 25 years of auxiliary service; Dediticii cannot hold rank without special imperial dispensation (which exists but is notable when granted)
-- [ ] **How status affects character creation** — A table: race + status combination → which backgrounds are available, what starting equipment reflects their social position, which skill proficiencies come naturally from their life experience rather than training
-- [ ] **Status and the campaign's themes** — The corruption mechanic interacts with status: a low-status character corrupted by Mars' spear is viewed as a threat to order; a high-status character corrupted is viewed as a tragedy. The different weights of the same corruption on different social bodies.
-- [ ] **Gaining and losing status** — Military service is the primary path upward for Peregrini; the party's actions in Sessions 3-4 (stopping Brutus, saving the Emperor) can result in formal citizenship grants for non-citizen party members; losing status (desertion, treason, criminal conviction) and what that means practically
+- [x] **The five legal categories** — *Cives Romani*, *Latini*, *Peregrini*, *Liberti*, *Dediticii*; all documented with race mappings in peoples.qmd
+- [x] **Rank ceilings by status** — Citizens, Latini, Peregrini, Dediticii rank limits documented
+- [x] **How status affects character creation** — Table of race + status → backgrounds, equipment, and proficiencies
+- [x] **Status and the campaign's themes** — Corruption/status interaction documented
+- [x] **Gaining and losing status** — Military service path upward, citizenship grants, and status loss mechanics documented
 
 ### Milestone 28 — Regional Supply, Equipment, and the Fort Economy ✅ COMPLETE
 Goal: The Roman world is radically localized. What you can buy depends entirely on where you are. Fort Vindolanda has a finite stock that replenishes on irregular cycles. Players should feel the material reality of a frontier posting.
 
 **File:** `supplies.qmd` (Player's Workbook) and DM supplement section added to `locations.qmd`
 
-- [ ] **Price index by region** — A table: 15 key items (iron sword, leather armor, papyrus scroll, silk cloth, olive oil, wine, healing herbs, silver denarius exchange, horses, etc.) with prices in Rome vs. at Vindolanda vs. in the Germanic forest. Iron is cheap on the frontier; papyrus is expensive; silk is nearly unavailable; local game is free if you can catch it.
-- [ ] **Fort Vindolanda's current stock** — The quartermaster's inventory at campaign start, skill-gated: DC 10 Persuasion or History to ask basic questions; DC 14 Investigation to see the full ledger; DC 17 Sleight of Hand or Deception to access the officer-only supply store. Categories: weapons and armor (limited), medical supplies (adequate), food rations (3 weeks at full strength), luxury goods (officer reserve, locked), tools and construction (plentiful)
-- [ ] **The supply cycle** — How supply convoys work: a wagon train arrives every 4-6 weeks from the nearest major fort; it carries grain, replacement weapons, payroll (copper and silver), and whatever the quartermaster managed to requisition. Players can intercept or influence a supply convoy as a downtime or side activity.
-- [ ] **Supply missions as adventure hooks** — The convoy is late. Why? Three hooks per session: S1 (the excavation crew's tools were in the late shipment -- pressure on the Legate to proceed without proper equipment); S2 (the Tribune commandeered part of the shipment for his Praetorians); S3 (no supplies reach a party in the forest -- they're living on what Vercingetorix's tribe provides); S4-5 (Rome has everything, but the party can't access it without the right social keys)
-- [ ] **Equipment degradation and repair** — Armor takes damage over the campaign. After each combat session involving multiple hits: the DM may rule one piece of armor or a weapon has taken damage (reduced AC by 1 or -1 to attack rolls). The *Faber* profession repairs this during downtime; a frontier posting makes replacement difficult.
-- [ ] **Exotic goods and what they mean** — Items that reach the frontier despite cost and difficulty: eastern spices (status symbols, gift for a Germanic chieftain), Alexandrian glass (luxury), Germanic amber (magical component, also valuable trade good), Parthian silk (so expensive at the frontier it is genuinely noteworthy if a soldier owns any)
+- [x] **Price index by region** — Rome vs. Vindolanda vs. Germanic forest price table in supplies.qmd
+- [x] **Fort Vindolanda's current stock** — Quartermaster inventory, skill-gated access, full categories documented
+- [x] **The supply cycle** — Convoy mechanics, wagon arrival frequency, what it carries, player influence options
+- [x] **Supply missions as adventure hooks** — Per-session hooks (S1-S5) for supply pressure scenarios
+- [x] **Equipment degradation and repair** — Degradation mechanics and Faber repair rules documented
+- [x] **Exotic goods and what they mean** — Eastern spices, Alexandrian glass, amber, Parthian silk with social context
 
 ### Milestone 29 — Food, Drink, and Rationing ✅ COMPLETE
 Goal: A dedicated player chapter grounding the campaign in the material reality of eating and drinking in the Roman world. Players should feel the pleasure of good food after hardship and the grinding reality of field rations.
 
 **File:** `food.qmd` (Player's Workbook) -- note: sensory food content from player_tome.qmd can be cross-referenced but this chapter goes deeper with mechanics
 
-- [ ] **The daily ration (baseline)** — Exact quantities: 800g *frumentum* (grain), 60ml olive oil, salt, *posca* mixed on demand; what this costs in *sestertii* per day and how it compares to civilian food prices; how to prepare it in the field (millstone required for flour; baking tiles; field oven construction as a group activity)
-- [ ] **Food quality tiers** — Four tiers with mechanical effects: Starvation rations (1 level exhaustion per day without a CON save), Field rations (baseline, no effect), Good rations (remove 1 exhaustion per long rest), Feast (advantage on Persuasion and Performance checks for 8 hours as social currency); what earns each tier in play
-- [ ] **Germanic frontier food** — What the local environment provides that is not in official rations: hunting (elk, boar, rabbit), foraging (wild garlic, mushrooms, berries), Germanic traders (barley beer, dried meat, smoked fish, honey); how to integrate this into sessions without turning the game into a survival sim
-- [ ] **Drink in depth** — *Posca* (daily soldier drink, not enjoyed), *cervisia* (Germanic barley beer, available from traders, intoxicating faster than wine), wine (rationed, officer-quality wine is a DM bribe currency), mead (Germanic festive drink, encountered in tribal settings), spring water (test before drinking; the frontier has parasites)
-- [ ] **Rationing as story** — A supply shortage is not just a logistics problem; it is a morale crisis, a social hierarchy test (who gets the last good rations?), and an opportunity for the party to demonstrate or fail at leadership; 3 rationing scenarios with mechanical stakes and narrative consequences
-- [ ] **Equipment for eating and cooking** — What a soldier carries: *patera* (bronze mess bowl), *urceus* (water jug), knife (not a weapon; a tool), millstone fragment (shared by the *contubernium*), fire-starting kit; what they can't carry but want: a proper brazier, a second pot, anything that makes the posca more bearable; equipment weight and pack-load rules adapted for Roman kit
+- [x] **The daily ration (baseline)** — Exact quantities, costs, field preparation methods documented in food.qmd
+- [x] **Food quality tiers** — Four tiers (Starvation/Field/Good/Feast) with mechanical effects documented
+- [x] **Germanic frontier food** — Hunting, foraging, and trader options for frontier supplement documented
+- [x] **Drink in depth** — *Posca*, *cervisia*, wine, mead, spring water with intoxication and social effects
+- [x] **Rationing as story** — 3 rationing scenarios with morale, hierarchy, and leadership stakes documented
+- [x] **Equipment for eating and cooking** — Full Roman kit inventory with weight and pack-load rules documented
 
 ### Milestone 30 — The Legion and the Magical World ✅ COMPLETE
 Goal: The Roman legion is one of the most sophisticated military machines in history. It should also be sophisticated about the existence of magic and magical creatures, because in this world those things are real and the army has had 700 years to develop doctrine for dealing with them.
 
 **Files:** New section in `roman_tactics.qmd` (Player's Workbook); DM supplement section added to `gm_intro.qmd`
 
-- [ ] **Official Roman magical doctrine** — The legion acknowledges three categories: *Res Divinae* (divine interventions: augury, portents, the gods' direct actions), *Magia Licita* (licit magic: haruspicy, augury, temple rites, *haruspex* battlefield support), *Magia Illicita* (forbidden magic: necromancy, binding spirits, foreign curse-magic). The *haruspex* is an official army role. The necromancer is a death sentence.
-- [ ] **The *haruspex* in the field** — D&D mechanics: the army's battlefield diviner (use *Divination Wizard* subclass flavor); what they can do (Augury 1/day, identify magical creatures as a bonus action with History DC 13, provide the formation bonus "Blessed Standard" once per short rest); how they're deployed (attached to cohort command, not combat line); what happens when they die (morale check for the entire unit, DC 12 Wisdom or Frightened for one round)
-- [ ] **Anti-magical formation doctrine** — The legion's empirically developed responses to magical threats: against flying creatures (*ballista* elevation tables; *pilum* volleys in arcs; the "tortoise-and-poke" variant of testudo for overhead attacks); against undead (sacred fire from the camp altar counts as magical fire for damage purposes; the *aquila* standard within 30 feet gives advantage on saving throws against fear effects); against illusion (any soldier who has served 10+ years has advantage on Wisdom saves vs. illusion -- you've seen enough things in the forest to know that what you see is not always what is there)
-- [ ] **Creature classification in Roman military records** — How the legion categorizes the creatures from the Bestiary: *Lemures* and *Larvae* are classified as *Umbrae* (shades) and handled by the *haruspex*; the *Genius Loci* is classified as *Numen Loci* and negotiated with rather than fought where possible; the *Strix* is classified as a *Monstrum* and hunted; the *Alp* is classified as *Pestilentia Nocturna* and treated with protective rites; Draugar are classified as *Barbari Mortui* and handled with fire; the *Lindworm* has a dedicated multi-cohort protocol
-- [ ] **The *Spolia Opima* for magical kills** — A special military honor exists for soldiers who kill a commanding officer of the enemy in single combat; adapt this for magical creatures: killing a creature above CR 5 in the bestiary earns a specific commendation recorded in the legion's *acta diurna*, the title *Bestiae Victor* (beast-slayer), and a bonus of 50 *denarii* from the legion's special fund. Three confirmed kills: permanent advantage on Intimidation against mundane soldiers.
-- [ ] **Magical creature encounters in each session** — Brief DM notes for each session chapter: which creatures might appear as optional encounters, how the Roman doctrine above changes those encounters, what the soldiers' reaction to each creature type would be (trained response vs. panic)
+- [x] **Official Roman magical doctrine** — Three categories (*Res Divinae*, *Magia Licita*, *Magia Illicita*) documented in roman_tactics.qmd
+- [x] **The *haruspex* in the field** — Full D&D mechanics: Augury 1/day, creature ID, Blessed Standard, death consequence
+- [x] **Anti-magical formation doctrine** — Anti-flying, anti-undead, anti-illusion doctrine responses documented
+- [x] **Creature classification in Roman military records** — Full bestiary cross-referenced with Roman classification system
+- [x] **The *Spolia Opima* for magical kills** — *Bestiae Victor* title, commendation, denarii reward, Intimidation advantage documented
+- [x] **Magical creature encounters in each session** — DM notes per session for optional creature encounters
 
 ### Milestone 31 — Lex Arcana Integration ✅ COMPLETE
 Goal: Borrow the best systems from the *Lex Arcana* tabletop RPG (an Italian RPG set in an alternate Roman Empire where Rome never fell). Adapt its investigative structure, custodian role, and virtue mechanics into this campaign's D&D 5e framework.
 
 **File:** New section in `gm_intro.qmd`; player-facing summary in `player_guide.qmd`
 
-- [ ] **The Custodes concept** — In *Lex Arcana*, the *Cohors Auxiliaria Arcana* are special imperial investigators with authority crossing provincial lines. Adapt: the party is designated as *Exploratores Extraordinarii* after Session 1 (Corvinus formalizes this to give himself deniability). This gives them: authority to investigate without explaining themselves, access to temple records and military archives normally closed to line soldiers, and the specific problem of being accountable directly to the Senate (which Brutus exploits in Session 4)
-- [ ] **Roman virtues as character mechanics** — *Lex Arcana* uses seven Roman virtues (*Virtus, Pietas, Fides, Iustitia, Clementia, Frugalitas, Dignitas*) as personality mechanics. Adapt: each virtue functions as a once-per-session advantage trigger when the character acts in accordance with that virtue. A character who acts *against* their declared virtue in a significant moment takes -2 to the relevant ability checks until they perform an act of atonement.
-- [ ] **Augury as structured mini-game** — *Lex Arcana* has a detailed augury system. Adapt for D&D 5e: the *haruspex* player (or any character with Religion proficiency) can perform an augury once per session as a structured activity taking 30 minutes of in-game time. Roll Religion DC 13/15/17; on success, the DM answers one question with increasing specificity: "will this action lead to success or failure," "what is the nature of the obstacle," "what specific thing will make the difference." On failure: the omens are unclear (*auspicia turbata*) and the character cannot attempt augury again until the next session.
-- [ ] **Investigation structure** — *Lex Arcana* builds missions around the Three Clue Rule but formalizes it as phases: *Investigatio* (gather evidence), *Deliberatio* (analyze and form a theory), *Actio* (act on the theory). Add these phase markers to the existing Three Clue Rule sections in Chapters 2, 3, and 4: each clue gathered moves the party forward one phase; attempting *Actio* before completing *Deliberatio* is possible but harder (add +3 to all relevant DCs)
-- [ ] **Destiny mechanics** — *Lex Arcana* gives each character a *Fatum* (fate statement) from the start. Adapt: each player writes a one-sentence fate for their character at Session 0: "I will die in service of something greater than ambition" or "I will see Rome from the inside before I die" or "I will make a choice that the histories will remember." These are player-authored. The DM should ensure the campaign creates a moment where each Fatum is tested. At Session 5: which characters fulfilled their Fatum? What does that earn them? (See epilogue mechanics.)
+- [x] **The Custodes concept** — *Exploratores Extraordinarii* designation adapted and documented in gm_intro.qmd
+- [x] **Roman virtues as character mechanics** — Seven virtues as once-per-session advantage triggers with atonement mechanic
+- [x] **Augury as structured mini-game** — DC 13/15/17 Religion mini-game with *auspicia turbata* failure state
+- [x] **Investigation structure** — *Investigatio / Deliberatio / Actio* phases integrated into chapters 2-4
+- [x] **Destiny mechanics** — *Fatum* system integrated with session0.qmd and epilogue mechanics in chapter5.qmd
 
 ### Milestone 32 — Session 0: Character Creation Guide (Rewrite) ✅ COMPLETE
 Goal: Session 0 currently gives players too much influence over the campaign's pre-set structure. Rewrite it as a character creation guide that asks meaningful personal questions (who are you, what do you fear, what do you love) without inviting players to co-design plot.
 
 **File:** `session0.qmd` (full rewrite)
 
-- [ ] **Opening framing** — Replace the current "let's build this campaign together" framing with "let's build characters who will be interesting inside this campaign." The campaign's structure is set; the characters' interior lives are the players' domain. These are different things and both matter.
-- [ ] **Character concept questions (replace plot questions)** — Who were you before the legion? What do you regret? What do you love that you don't talk about? What would you die for? What would you refuse to do even under orders? What does your character think honor means, and has life ever tested that definition?
-- [ ] **Relationship web (replace "how do you know each other")** — The party is a *contubernium*: they've served together. The question is not how they met but what they've been through together. A structured list of shared events to choose from: "you pulled them out of a collapsed trench," "you covered for them when they missed a patrol," "you watched them do something you can't forget." Each player chooses one shared event for each other player -- you don't all need to agree on the same events.
-- [ ] **The three questions** — At the end of Session 0, each player answers three questions aloud: (1) "What does your character want to prove on this campaign?" (2) "What are they afraid will happen?" (3) "What will they protect, no matter what?" The DM writes these down. They are the basis for the Fatum from Milestone 31 and the personalized sacrifice prompt in Session 3.
-- [ ] **Remove:** Collaborative campaign setting choices, "what kind of tone do you want," enemy design questions, anything that implies the campaign plot is adjustable. The campaign is fixed. The characters are flexible. Make this distinction clear.
+- [x] **Opening framing** — Character-focused framing (not plot co-design) in place at top of session0.qmd
+- [x] **Character concept questions (replace plot questions)** — Personal-history questions replacing plot-building questions
+- [x] **Relationship web (replace "how do you know each other")** — *Contubernium* shared events framework replacing "how did you meet"
+- [x] **The three questions** — Three questions (prove/fear/protect) documented and linked to Fatum and Session 3 sacrifice
+- [x] **Remove:** Collaborative setting/tone/enemy design choices removed; campaign-is-fixed framing established
 
 ### Milestone 33 — Atmosphere: Music and Sound Per Session ✅ COMPLETE
 Goal: Each session has a recommended soundtrack and ambient sound layer. The DM can open these before the session and let them run.
 
 **File:** Section added to each session chapter's Pre-Session Preparation section; also a standalone `atmosphere.qmd` in Player's Workbook (ambient sounds only, not DM-specific)
 
-- [ ] **Session 1 (Blood and Omens):** Ambient: stone corridors, distant water drip, low wind; the fort's morning noise (crows, trumpet, footsteps on stone); descent into the vault (silence, single heartbeat pulse). Music: Hans Zimmer's *Gladiator* score (specifically "The Battle" and "Elysium") or Nils Frahm for the vault scene. YouTube/Spotify search terms to include.
-- [ ] **Session 2 (The Tribune's Gambit):** Ambient: fort courtyard, horses, soldiers' voices; night raid (Germanic war drums, arrow impacts, shouting). Music: Wardruna's *Yggdrasil* album for the Germanic raid sequence; something tense and political (Jóhann Jóhannsson) for the Tribune scenes.
-- [ ] **Session 3 (Through the Dark Forest):** Ambient: deep forest soundscape (Teutoburg ambience, old-growth trees, no birds); river crossing (fast water, distant pursuit); the sacred grove (absolute silence, then a low harmonic tone). Music: Heilung's *Ofnir* album throughout; specifically "Othan" for the grove ritual.
-- [ ] **Session 4 (Return to Rome):** Ambient: city of Rome at dawn (carts, voices, distant temple bells, crowd noise); the Triumph (crowd roar, trumpets, drums). Music: *Rome: Total War* soundtrack for the arrival; something urban and dangerous for the Subura scenes (Ennio Morricone).
-- [ ] **Session 5 (The Wrath of Mars):** Ambient: arena black sand (low wind, no crowd, silence that has weight); divine presence (sub-bass rumble, harmonics). Music: Wardruna's "Helvegen" for the epilogue; the opening of the Triumph from Session 4 for any flashback moments.
-- [ ] **Player-facing version** — A page in `atmosphere.qmd` giving players the ambient sound playlists for the settings they're in, framed as worldbuilding: "what Fort Vindolanda sounds like," "what the Teutoburg Forest sounds like at night," "what Rome smells and sounds like." No DM-specific track notes.
+- [x] **Session 1 (Blood and Omens):** Ambient layers and music recommendations documented in atmosphere.qmd and chapter1.qmd Pre-Session Preparation
+- [x] **Session 2 (The Tribune's Gambit):** Wardruna / Jóhann Jóhannsson recommendations documented
+- [x] **Session 3 (Through the Dark Forest):** Heilung *Ofnir* recommendations documented; grove silence treatment documented
+- [x] **Session 4 (The God's Demand):** Vindolanda siege soundscape recommendations documented (arc redesigned from Rome to fort)
+- [x] **Session 5 (The Wrath of Mars):** Arena silence, divine presence sub-bass, Wardruna "Helvegen" epilogue documented
+- [x] **Player-facing version** — atmosphere.qmd provides player ambient sound guide framed as worldbuilding
 
 ### Milestone 34 — Quarto Character Sheets
 Goal: A printable, fillable D&D 5e character sheet adapted for this campaign, rendered as a PDF via Quarto's LaTeX pipeline. Designed to be printed, physically filled in, and used at the table.
 
 **File:** `character_sheet.qmd` (standalone, separate from the main book) + `_character_sheet.scss` for styling
 
-- [ ] **Research the Quarto PDF approach** — Use the method from https://nrennie.rbind.io/blog/pdf-quarto/making-pretty-pdf-quarto/ as a starting point; the sheet should use LaTeX layout for precise field placement, with fillable boxes and lines
-- [ ] **Campaign-specific fields** — Replace generic PHB fields with campaign-adapted versions: "Province of Origin" instead of generic backstory, "Legion and Rank" instead of organization, the Corruption Track (six checkboxes, 0-5), "Divine Standing" (favored/neutral/cursed + god name), "Fatum" (one line for the character's fate statement from Milestone 31)
-- [ ] **Roman aesthetic** — Border treatment mimicking Roman stone inscription style; the SPQR eagle as a watermark; field labels in Latin with English in parentheses (*Nomen* (Name), *Provincia* (Origin), *Gradus* (Rank)); column layout matching Roman text conventions
-- [ ] **Second page: Session tracker** — One section per session (5 total): decisions made, NPCs met, corruption delta (+/-), divine standing change, one memorable moment. This replaces the `journal.qmd` session pages as a more compact alternative.
-- [ ] **Build and render test** — Confirm `quarto render character_sheet.qmd --to pdf` produces a clean, printable output with all fields correctly positioned; test with both pdflatex and xelatex engines
+- [x] **Research the Quarto PDF approach** — Implemented in character_sheet.qmd using Quarto PDF pipeline
+- [x] **Campaign-specific fields** — Province of Origin, Legion and Rank, Corruption Track (0-5), Divine Standing, Fatum all present
+- [x] **Roman aesthetic** — Latin/English field labels, Roman border treatment, column layout implemented
+- [x] **Second page: Session tracker** — Five-session tracker with decisions, NPCs, corruption delta, divine standing documented
+- [ ] **Build and render test** — Pending: confirm `quarto render character_sheet.qmd --to pdf` produces clean output
 
 ### Milestone 35 — Three-Barrier Knowledge + Living Camp Economy ✅ COMPLETE
 Goal: The knowledge system gains a third barrier (character-creation stat/skill gating before DC checks). Fort Vindolanda becomes a living economy with named traders who upgrade based on player actions and reputation.
