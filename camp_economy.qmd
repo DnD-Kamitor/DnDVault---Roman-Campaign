@@ -381,3 +381,222 @@ Roll a d6 at the start of each session, or choose:
 **Use traders as session hooks.** Paterculus can deliver the omen information that opens Session 1. Sigrun's unusual absence from the trade gate can signal something wrong in the forest before Session 2. Cato's information about unusual activity at the river can open the forest travel scene in Session 3. The traders are not just vendors; they are the fort's eyes.
 
 **Upgrade Camp Level at dramatically useful moments.** The rules give triggers; you choose the timing. If Camp Level 2 would make Session 2 more interesting by giving the party resources they need, trigger it. If keeping the party at Camp Level 1 creates productive scarcity during Session 1, hold it. The system is a tool.
+
+---
+
+## Trader OGAS Reference
+
+Each camp trader has objectives, goals, agendas, and secrets that drive their behavior. Like main NPCs, they pursue these whether or not the party engages them.
+
+<details>
+<summary>**Quartus: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Survive this posting with his record unimpeachable and his honor intact |
+| **Goal** | Keep the official ledger accurate and every requisition documented |
+| **Agenda** | Uses correct process as both professional standard and personal armor; refers everything to paperwork to avoid being blamed for decisions above his rank |
+| **Secret** | A second document in his quarters records everything Corvinus has requisitioned off-book from the ruins excavation; Quartus has not destroyed it because he does not steal, and falsifying records by omission is still falsification |
+
+</details>
+
+<details>
+<summary>**Rufus: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Do exceptional work and be left alone to do it |
+| **Goal** | Keep the forge running and every soldier properly equipped |
+| **Agenda** | Assesses everything clinically before speaking; will not say something is fine if it is not |
+| **Secret** | Spent three years trading in Germanic territory before enlisting; knows their metalworking traditions, religious sites, and settlement patterns better than any Roman in the fort; has never volunteered this because the army would immediately classify him as an intelligence asset and he prefers being a smith |
+
+</details>
+
+<details>
+<summary>**Valeria: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Maintain the fort's medical capacity and keep her own records accurate |
+| **Goal** | Document what is happening to the soldiers medically, even when she cannot explain it |
+| **Agenda** | Efficient and unsentimental; treats everyone the same; will not waste time on people who perform concern without contributing information |
+| **Secret** | Has documented twelve soldiers with identical symptom clusters (disturbed sleep, reactive pupils, elevated resting temperature, unusual appetite changes) following time near the ruins; she does not know what she is seeing, has not reported it upward because she cannot name it, and is frightened that she is watching something no medicine can address |
+
+</details>
+
+<details>
+<summary>**Paterculus: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Understand what the divine situation actually is before it becomes unmanageable |
+| **Goal** | Perform his religious duties correctly and continue filing accurate omen reports |
+| **Agenda** | Takes every supernatural manifestation seriously; tries to document before interpreting; asks more questions than he answers |
+| **Secret** | The morning sacrifice has failed twelve consecutive times. An unbroken failure streak of this length has, in his thirty years of practice, one precedent: a provincial temple the night before a divine manifestation destroyed it. He has not reported this upward because he does not know what he would say, and he is afraid of what saying it would mean |
+
+</details>
+
+<details>
+<summary>**Cato: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Maintain his position, his information network, and his neutrality for as long as neutrality is viable |
+| **Goal** | Know what is about to happen before it happens to him |
+| **Agenda** | Weighs everything before sharing; never acts against the dominant power until he has identified who the dominant power is going to be; sells information at a price calibrated to how much he trusts the buyer |
+| **Secret** | Tribune Lucius has approached him through an intermediary asking for information on the party's movements and intentions. Cato has neither agreed nor refused. He is waiting to see whether the party becomes worth protecting more than Lucius's offer is worth taking |
+
+</details>
+
+<details>
+<summary>**Sigrun: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Maintain her trading route and her village's access to both sides of the frontier without bringing Roman military attention home |
+| **Goal** | Keep the terms of trade fair and continue operating |
+| **Agenda** | Evaluates every interaction for whether it could compromise her village; will disengage completely if she senses Roman intelligence interest in her contacts |
+| **Secret** | Her village has a relationship with the sacred grove. She has met Thusnelda. She was told, three weeks ago, to stay away from the fort if Roman soldiers began moving with purpose into the forest. She does not yet know whether that threshold has been crossed |
+
+</details>
+
+---
+
+## Per-Session Trader State
+
+What each trader knows, wants, and is doing across the five sessions. Read the column for your current session before it begins.
+
+| Trader | Session 1 | Session 2 | Session 3 | Session 4 | Session 5 |
+|---|---|---|---|---|---|
+| **Quartus** | Efficient and watchful; noting that the excavation requisitions are unusual; quietly preparing a second copy of his ledger | Alarmed by the convoy delays; has flagged Lucius's equipment requisitions; nervous about what Corvinus knows | Under pressure from Corvinus to surrender any unofficial documents; scared but has not complied | Running emergency rationing; holding the locked reserves for someone he trusts; open to party access if relationship warrants | Either evacuated civilians or held the east storeroom; if the party protected him, gives them complete access to everything |
+| **Rufus** | Professional and cool; will tell the party honestly if their weapons are substandard | Examines any Germanic weapons recovered from the raid; becomes noticeably more engaged if party brings materials | Forge running at capacity repairing siege damage; sleeping in shifts; will work through the night for the party if relationship is established | Exhausted; has started forging improvised weapons for civilians; tells no one about his Germanic knowledge unless fully trusted | Either helping brace the principia doors or gone; if present, offers the party the best weapons he has left |
+| **Valeria** | Treating construction injuries; quietly documenting the symptom cluster; will mention it obliquely if directly asked | Treating raid casualties; overwhelmed; will ask party for medicinal herbs if she knows they can get them | Reduced patient load with party in the field; watching the symptom cluster worsen in the workers who remain | Working 20-hour days; triage only; will share corruption observations with trusted party for the first time | Has a full clinical picture of corruption progression; will give it to the party if they ask; it is the most useful single document for Session 5 preparation |
+| **Paterculus** | Frightened and professional; the omens are already bad and he knows it; reaches out to the party if they show any religious awareness | More frightened; the raid omens are specifically different from the excavation omens in ways that scare him; has sent a message to Carnuntum temple, no reply | Has received one reply from Carnuntum (it does not help); performing ritual every dawn alone; will give the party his full reading if trusted | The divine situation is fully manifest; his role shifts from diviner to witness; he knows what is happening and will say it clearly to someone ready to hear | Has prepared a written summary of every omen from the campaign; hands it to the party if trusted; it reads as a timeline of the corruption event |
+| **Cato** | Watching; has noticed the party as a new variable; serving drinks and listening | Has received Lucius's approach; has not decided; will give the party an opening to build trust that will determine his choice | Not at the bar if party is in the forest; if party returns, his decision point has passed: he has chosen a side based on what he saw before they left | Bar is a civilian shelter; has made the decision not to charge people sheltering there; this has cost him Lucius's goodwill permanently; will tell the party about Lucius's contact | Either evacuated with civilians or dead; if alive, knows exactly what happened and who did what; will say it freely now that there is nothing left to protect |
+| **Sigrun** | Professional and cautious; watching for signs of unusual Roman activity near the tree line | Knows something happened in the forest from other sources; cautious at the gate; will not discuss forest routes without trust established | Not at the trade gate during forest sessions; if party encounters her during travel, she is moving away from the fort deliberately and will not say why | Does not come to the fort during the siege; unreachable by normal means; can be contacted through Cato's Germanic trader network if that relationship exists | If the party finds a way to reach her: the Germanic warbands besieging the fort are not working together; she knows which two chiefs could be split from the siege with the right approach |
+
+---
+
+## Trader Voice Reference
+
+Three characteristic lines per trader. Different from their opening lines above: these show their range across the campaign.
+
+### Quartus
+
+1. *When the party tries to bypass his process:* "I understand the situation is urgent. The form is on the left board. It takes five minutes. I'll be here when you're done."
+2. *When someone treats him with genuine respect:* "You're the third person to ask me that today. You're the only one who waited for the answer."
+3. *During the siege, quietly, if trusted:* "There's a box in the back I wasn't supposed to keep. I kept it. I think you're going to need what's in it."
+
+### Rufus
+
+1. *Examining a weapon the party brings him:* "This was made by someone who cared. Then it was maintained by someone who didn't. I can fix the second part."
+2. *When asked about Germanic metalwork (before trust):* "I know what I know from the work. You want a historian, talk to Paterculus."
+3. *If trusted, much later:* "The rune on this is *tiwaz*. I've seen it before. Not in Rome."
+
+### Valeria
+
+1. *When someone tries to rush her:* "Sit. You have a fever, two lacerations, and you haven't slept. You're not going anywhere for four hours. Argue and I add two more."
+2. *When someone brings her useful information unprompted:* "You noticed that. Most people don't notice that." *(She does not elaborate. She writes it down.)*
+3. *If trusted, Session 4, quietly:* "I've been watching him. The changes aren't random. There's a sequence. I think it starts before the symptoms show."
+
+### Paterculus
+
+1. *When someone dismisses the omens:* "I have been a *haruspex* for thirty years. I have read bad signs before. I have never read signs like this."
+2. *When performing the morning ritual alone:* *(He does not look up.)* "The fire died again. Come back tomorrow. Or don't. I will be here either way."
+3. *If trusted, with complete honesty:* "I think something is coming that the rituals were not designed to stop. I think I am the only person at this fort who understands what that means. I am not sure understanding it helps."
+
+### Cato
+
+1. *When someone asks him a question directly:* "That's a question with a price. Not a coin price -- I'm not that crude. A price. You understand the difference?"
+2. *When the party has spent enough time at his bar to matter:* "You've been coming here for a while. People who come here that often are either comfortable or they want something. Which is it for you?"
+3. *During the siege, with civilians sheltering in the bar:* "I'm not charging them. Don't ask me to explain it. Some things you do because they're right and the economics don't enter into it."
+
+### Sigrun
+
+1. *When someone tries to use Roman authority with her:* "I trade here because I choose to. If you'd like to change that, I'll leave now and come back when someone reasonable is working the gate."
+2. *When the party trades fairly and without commentary:* "Same time next week." *(She means it as a compliment.)*
+3. *If trusted and the grove comes up:* "I know what you're looking for. I'm not going to tell you I don't. I'm going to ask you one question first, and the answer determines what I say next."
+
+---
+
+## Trader Reaction Tables
+
+How each trader responds to the three most likely party approaches.
+
+### Quartus
+
+| Party approach | Quartus's response |
+|---|---|
+| **Demand special access without justification** | "That is not how this works. If you have a military need, file a requisition. If it's urgent, see the Legate." He is not hostile; he is procedurally inflexible. |
+| **Work through proper channels, accept the process** | He is noticeably warmer. He will mention things that are not technically on the ledger -- "the board is current as of this morning, but if you're asking about rope stock specifically, I believe we have more than it shows." |
+| **Attempt to bribe or pressure** | "I'm going to assume that didn't happen. Do you need something from the official inventory?" He files it away. It costs the party one full relationship step with him permanently. |
+
+### Rufus
+
+| Party approach | Rufus's response |
+|---|---|
+| **Ask for specific weapon work** | Assesses the weapon silently, states what he can and cannot do, gives a time and cost estimate. No upselling. No conversation unless the work requires it. |
+| **Bring him materials from the forest** | He examines them carefully. If the material is useful, he nods: "I can do something with this." The relationship advances automatically. No social check required -- the material speaks for itself. |
+| **Try to leverage his Germanic knowledge** | Before trust: "I know what I know from the work." After trust: one piece of specific information, offered without being asked for in exchange. He does not transact in this knowledge; he shares it when he judges the moment right. |
+
+### Valeria
+
+| Party approach | Valeria's response |
+|---|---|
+| **Ask for medical supplies** | Efficient and accurate. Tells them exactly what she has, what it costs, and what she needs in return if her stock is low. Does not moralize about why they were hurt. |
+| **Bring her medicinal herbs from the forest, identified or not** | Immediately interested. Sets aside whatever she was doing. "Where did you find this?" She shares one piece of DC 15 medicine knowledge freely in exchange. |
+| **Ask about the corruption symptoms** | Before trust: "Soldiers show a range of stress responses in unusual operational circumstances." After trust: she opens the documentation. It is detailed and frightening and she does not look away from it. |
+
+### Paterculus
+
+| Party approach | Paterculus's response |
+|---|---|
+| **Ask for an augury** | Proceeds immediately and correctly. Does not rush. Gives the result accurately at whatever DC his roll achieves. If the result is *auspicia turbata*, says so and explains what that means. |
+| **Ask what he personally thinks (not what the augury says)** | Stops. Considers for a moment. Then answers honestly, which is the only approach that advances the relationship. "I think the situation is beyond what the official rites were designed to address." |
+| **Dismiss or downplay the omens** | Exhausted, not angry. "I have filed every report. I have performed every *piaculum*. You are welcome to your assessment." He does not argue. He also does not share anything further with that person for the rest of the session. |
+
+### Cato
+
+| Party approach | Cato's response |
+|---|---|
+| **Ask for information directly without building relationship** | Professionally friendly, gives surface-level camp gossip (the kind on the public board), and steers the conversation toward what they're drinking. Nothing useful until relationship is established. |
+| **Buy drinks regularly and wait** | Over two or three visits: Cato starts adding context. "That courier who came through Tuesday -- he was nervous. Couriers aren't nervous. I noticed." The relationship advances through presence, not through asking. |
+| **Invoke Roman authority or status to demand information** | "I'm a licensed trader. I sell wine and food. I don't have any information. Will that be the local or the officer's selection?" He is perfectly pleasant and perfectly sealed. |
+
+### Sigrun
+
+| Party approach | Sigrun's response |
+|---|---|
+| **Ask for forest intelligence directly, first meeting** | "I trade goods. What you're asking for isn't a good." She is not rude. She ends the conversation cleanly and moves to the next transaction. |
+| **Trade fairly, at her prices, without negotiating down** | She notices. She does not comment. She comes back next week. Over several sessions, this builds enough trust to reach "they have shown me basic respect." |
+| **Use Roman authority or demand cooperation** | She gathers her remaining goods, nods to the gate guard she knows by name, and leaves. She will return only after the party demonstrates a different approach. A character who has already built trust with her can attempt DC 16 Persuasion to prevent this before it happens; otherwise the relationship resets to baseline. |
+
+---
+
+## Siege Behavior
+
+What each trader does when the siege begins in Sessions 3-4.
+
+### Quartus (Siege)
+
+Moves to the locked storeroom and sets up a field distribution point. Issues rations by count, marks every issue in the ledger. Under extraordinary pressure from Corvinus to produce resources the storeroom does not contain; handles this by showing the Legate the exact inventory numbers and asking for written orders to override them. Privately, opens the locked reserve to the party if they are trusted. Will not evacuate until the last possible moment; his records are not electronic and he will not leave without them.
+
+### Rufus (Siege)
+
+Runs the forge continuously. Sleeps in two-hour shifts on a cot beside the anvil. Produces improvised polearms for civilians who cannot hold a *gladius*. Stops talking almost entirely; every exchange is functional. If the party brings him a damaged weapon during the siege, he fixes it before anything else -- combat-damaged equipment takes precedence over new work. If he trusts the party fully: pulls out a specific Germanic iron-work piece he has been keeping under the workbench, "in case something like this happened."
+
+### Valeria (Siege)
+
+The infirmary becomes a triage station. She works with what she has, which is not enough. If the party has been building supply with her (medicinal herbs, earlier materials), this is the session where it pays off: her expanded stock lets her stabilize people who would otherwise die. She does not ask for help; she accepts it without comment when it is offered. If trusted: "The corruption progression in your soldiers is accelerating under stress. I have a model for what comes next. You should hear it."
+
+### Paterculus (Siege)
+
+Continues the morning ritual every dawn, alone, in the shrine. No longer files omen reports because there is no one to file them to. Instead, begins writing everything down in a personal document in case he does not survive. Will share this document with the party if trusted. During the siege he becomes, paradoxically, calmer: the situation has finally matched the size of what the omens were predicting. He knows how to function inside catastrophe. He does not know how to function inside anticipation of catastrophe.
+
+### Cato (Siege)
+
+The *taberna* becomes a civilian shelter. Cato stops charging. He feeds people from his own stock, keeps the fire burning, and organizes who goes where with the practiced efficiency of someone who has run a logistical operation for years. His information network collapses during the siege (his contacts cannot reach him) but everything he had before the siege is available to the party in full. If Tribune Lucius's contact came to him again during the siege, Cato turned him away publicly, in front of witnesses. This is the moment he chose.
+
+### Sigrun (Siege)
+
+Does not come to the fort during the siege. She knows what is happening (Germanic trading networks move information quickly). If the party has a way to contact her -- through Cato's network before it collapsed, or through a Ranger's forest contact, or because they established a direct meeting point during an earlier session -- she has one piece of information worth the effort: the Germanic warbands are not unified. Two chieftains are there because Vercingetorix's situation drew them. One is there only because the other two are. Split one and the siege becomes manageable. She knows which one and what they would accept.
