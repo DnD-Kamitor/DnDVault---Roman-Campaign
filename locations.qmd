@@ -386,3 +386,145 @@ After the ritual begins, the grove remembers what each character brought to it. 
 - Position trusted soldiers to seal the gate once the escort departs
 
 **Running note:** Every time the party leaves the walls unmanned to handle another crisis, morale drops. Track gate integrity in the Continuity Audit; if it fails, the procession faces waves of enemies underground.
+
+---
+
+## Location Skill Check Menus
+
+Per-location exploration DC tables using the three-tier system from `skill_framework.qmd`: surface (DC 12, any competent soldier), deep (DC 16, trained specialist), hidden (DC 20 or background gate). Investigation finds physical evidence. History finds historical significance. Religion finds sacred significance. Nature finds environmental significance. All four can be applied to any location but yield different information. Time cost: deep checks require 10 full minutes; hidden checks require the full rest of the scene.
+
+---
+
+### The Principia: Skill Check Menu
+
+**Surface checks (DC 12):**
+- *Investigation:* Finds the coded message in the Tribune's assigned office; identifies the ledger as falsified in one column.
+- *Insight:* Reads the mood of the *librarius* Festus as "resentful of something specific" and "covering for someone."
+- *Perception:* Notices a second oil lamp in the aedes that does not match the others; it was placed within the last week.
+
+**Deep checks (DC 16, 10 minutes):**
+- *Investigation:* Finds a second set of wax-impression records beneath the official ledger; reveals that three requisitions in the last month were marked "for the excavation" but delivered to the Praetorium.
+- *History:* Identifies that the principia's standards include a retired cohort number that should not be on active display; asks the question of why someone reinstated it.
+- *Arcana:* Detects a faint residue of Divination magic on the aedes lamp -- someone has used it as a focus for remote scrying within the last 48 hours.
+
+**Hidden checks (DC 20 or *Exploratores Extraordinarii* status):**
+- *Investigation + Soldier background:* Finds the gap in the floor flagstones that leads to the hidden stair. The gap exists in the official fort plan but was sealed and is not on the current version.
+- *History DC 20:* Identifies the hidden stair's architectural style as pre-Roman, possibly Gallic, which predates the fort itself -- something was here before Rome arrived.
+
+**Skill substitution:** A character with the Librarius profession can access the deep Investigation result at DC 12 (they know which records to look for). A character with the Scribe profession can interpret the wax-impression records without a further check.
+
+**Re-approach condition:** If the party was denied access by Corvinus, they cannot attempt the hidden check until they have the *Exploratores Extraordinarii* designation (Session 2 onward) or until Corvinus is distracted by a crisis.
+
+---
+
+### The Ruins Beneath: Skill Check Menu
+
+**Hall of Shields (Room 1):**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | History | The shields represent tribes in a geographic pattern: east-to-west arrangement suggests the collection was organized by someone who knew the frontier terrain |
+| 16 | History | Two shield designs belong to tribes that were rivals; they should not be in the same collection unless the collector had authority over both |
+| 20 | History (or Soldier background + DC 16) | One shield pattern matches a Roman auxiliary cohort reported annihilated at Teutoburg; it should not exist here |
+| 12 | Investigation | The shields are dusted regularly; someone has been maintaining this room within the last month |
+| 16 | Religion | The arrangement is not decorative; it is a ward pattern. The shields are positioned to keep something in, not to display victory |
+| 20 | Arcana | The ward is degrading; the shield arrangement is losing coherence; whatever it was containing has been pressing against it from inside |
+
+**Chamber of Chains (Room 2):**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | Investigation | The chains are not restraints; the connection points are wrong for holding captives. They are suspension points for something hung from above |
+| 15 | Investigation (or: Arcana DC 13) | The two operative chains; opens the vault door |
+| 16 | Religion | The rune on each chain link is *ALGIZ* (protection); these chains were designed to contain the divine, not the mundane |
+| 20 | Religion + prior knowledge of Elder Futhark | One chain has a variant rune that was scratched out and replaced; the original rune was *SOWILO* (the sun); someone changed the purpose of this ward deliberately |
+
+**The Vault (Room 4):**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | Arcana | The silence zone around the spear is not a natural effect; it is a suppression ward placed on the spear itself, not the room |
+| 16 | Arcana | The suppression ward was placed by someone after the spear was deposited; the room's original magic is different and older |
+| 12 | Religion | The altar is dedicated to no specific deity; it is a generic offering point designed to accept any dedication |
+| 17 | Religion (or Haruspex/Sacerdos background) | The altar accepts dedications but does not transfer them; whatever was offered here stayed here; the altar has been accumulating offerings for centuries |
+| 17 | Investigation (timed: 10 minutes in the vault) | The archive entrance (Room 5); requires either this check or a DC 17 passive Perception when the guardian constructs are defeated |
+
+**Time cost note:** The silence zone makes concentration-based spells cost a DC 12 concentration check per round. Each round spent in concentration counts toward the 10-minute deep check requirement.
+
+---
+
+### The Germanic Forest: Skill Check Menu
+
+**The River Crossing (Day 1):**
+
+| DC | Skill | What it reveals | Time window |
+|---|---|---|---|
+| 11 | Perception (watching the bank, not the river) | A boot print in the bank mud: military sandal, size 10, made within the last two hours, heading north | **1 round only** (rain washes it) |
+| 12 | Survival | Best crossing point: DC 15 swim vs. DC 12 Athletics on the log | Available the full scene |
+| 14 | Investigation | The log bridge was placed deliberately; someone wedged it across the gap; it did not fall | Available the full scene |
+| 16 | Nature | The upstream bank shows signs of a large camp from within the last week; cooking fires, latrine trenches; 30+ people | Available if party searches upstream |
+
+**Deep Forest, Day 2:**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | Survival | Offering-posts: these mark the boundary of Vercingetorix's tribal territory; crossing without acknowledgment is an insult |
+| 14 | Nature | The specific herbs growing at the path's edge; three are medicinal (Valeria wants these); one is used in Germanic ritual preparation |
+| 16 | Religion | The carved pattern on the offering-posts is not purely decorative; it is a directional indicator pointing toward the grove; a character who succeeds here has the grove's location narrowed to a 90-degree arc |
+| 20 | Religion + Germanic language proficiency | The offering-post text is a warning about the grove's current state: the ward that sealed the spear has been weakening since the Romans disturbed the ruins |
+
+**Skill substitution:** An *Explorator* (scout profession) can attempt the DC 12 Survival check as a DC 8. A character with Germanic language proficiency reduces all Religion DCs in the forest by 2 (understanding the text gives context to the symbols).
+
+---
+
+### The Sacred Grove: Skill Check Menu
+
+**Approaching the grove (the hour walk):**
+
+| DC | Skill | What it reveals | Notes |
+|---|---|---|---|
+| 12 | Perception | The rune-posts glow at night; more important: they stop glowing if a character who carries the spear passes; the grove can feel it | Available only at night |
+| 13 | Insight | Thusnelda's tension is not ceremony; she is genuinely frightened of what the grove might say today | Available watching her during the walk |
+| 15 | Religion | The path itself is a ritual preparation; walking it changes attunement to divine forces; any divine spell cast in the grove gains +2 to spell save DC | |
+
+**In the grove:**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | Religion | The standing stone arrangement is the same pattern as the shield arrangement in Room 1 of the ruins; someone was here and took notes, or both were designed by the same hand |
+| 14 | Investigation | The altar has a keyhole in its northwest face, concealed by a carved rune |
+| 16 | Arcana | The amber discs from the archive are resonating with the standing stones; they were made here, or for here |
+| 17 | Religion | The stones are not witnesses; they are a lock. The ritual doesn't just destroy the spear; it uses the grove as a key to close something that has been partially open since the Romans dug the shaft |
+| 20 | Religion + Elder Futhark proficiency | The illegible sections of the standing stone text are not damaged; they are in a script that preceded Elder Futhark; translating one requires a long rest and a successful DC 17 Intelligence check; each translated section reveals one additional ritual option that Thusnelda does not know |
+
+**Time cost:** Any check at DC 16 or higher in the grove requires the character to remain still for the full 10 minutes. Movement during this check causes Wisdom save DC 13 or the check is interrupted. The grove does not like impatience.
+
+---
+
+### Fort Vindolanda Under Siege: Skill Check Menu
+
+**The Principia during the siege:**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | Investigation | Three sandbag positions are not load-bearing; they were placed to create a covered approach to the aedes; someone planned to move the spear through them unobserved |
+| 14 | Insight | Corvinus has already given orders about the spear's disposition; he has a plan that he has not shared |
+| 16 | Investigation (10 minutes) | Brutus' raven message, partially burned in a brazier; legible with DC 12 Investigation after recovery: it is orders to burn the granary and kill Cassia |
+| 19 | Perception | A wax impression on the unused desk shows a partial signet seal: Brutus's house crest, in a session where the party has already identified Brutus as involved |
+
+**The Granary (fire scene):**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 11 | Investigation | The fire started from inside the locked building; the lock was not forced |
+| 14 | Investigation | A specific piece of hemp rope used to carry the fire-starting material has a distinctive Germanic-style braid; the same braid is on Brutus's sleeper agent's belt if the party encounters him later |
+| 15 | Survival | The fire can be controlled with Create Water or by backburning a small section; DC 15 Survival to execute the backburn safely without spreading it |
+| 17 | Investigation | The fire was timed; marks on the floor show where a slow-burning candle was positioned to ignite the tinder an hour after the agent left |
+
+**The Shrine (desecration scene):**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | Insight | The agent is not trying to steal the spear; he is trying to get the party to break the ward Cassia placed on it |
+| 14 | Arcana | The ward will hold against one more attempt to breach it before it fails; the agent knows this |
+| 16 | Religion | The agent's approach pattern avoids the specific rune Paterculus drew on the threshold; he knows what it does and is working around it |

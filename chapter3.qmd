@@ -444,3 +444,48 @@ At session start, when you pass the private note, also tell the player these thr
 These three moments should not be pointed out by the DM. They are for the player to plant and the other players to notice, or not, until the ritual makes it undeniable.
 
 This session should feel like the pressure never fully releases. The investigation of the cold open mystery, the river crossing, the grove itself — there's no safe moment until after the spear is destroyed. Push toward the grove. The forest is hostile to lingering.
+
+
+---
+
+### Skill Audit: Session 3
+
+**Forest travel event skill checks (existing d8 table):**
+
+Each d8 event should use a different skill family so no single character dominates the travel. Confirm this when running:
+
+| Event | Primary skill | Secondary (different approach) |
+|---|---|---|
+| Wind-felled oak | Athletics DC 12 to clear or climb | Survival DC 10 to find a safe path around |
+| Hanging charms | Persuasion DC 13 to pass without offense | Religion DC 11 to understand the boundary's intent and perform a basic acknowledgment rite instead |
+| Silent animal trail | Survival DC 12 to track | Nature DC 14 to identify what specifically is hunting (wolf vs. something else) |
+| Old Roman standard | Investigation DC 12 to read dates | History DC 14 to know which expedition this is from and what happened to it |
+| Boggy hollow | Acrobatics DC 12 | Nature DC 10 to identify firm ground by plant type; this route avoids the roll |
+| Watchful raven | Insight DC 12 to interpret correctly (omen, not threat) | Animal Handling DC 10 to acknowledge it; counts as respectful |
+| Blood-slick stones | Religion DC 14 to read runes | Investigation DC 12 to date the sacrifice (within the last 24 hours) |
+| Whispering pines | Wisdom save DC 12 | Performance DC 12 to "give" the whispers a response that satisfies them (costs 1 round but removes the disadvantage) |
+
+**Temporal gate: river crossing boot print:**
+
+Available only when the party first crosses the Vitulans river. One round window, then rain erases it.
+
+- *DC 11 Perception (watching the bank specifically, not the river):* A military sandal print, size 10, made within the last two hours, heading north.
+- *What it opens:* The party knows Corvinus has scouts ahead of them. This changes their approach to the grove (they can send a decoy or move off the main path). Without this, they arrive at the grove with Corvinus's scouts already watching.
+- *Miss the check:* The boot print washes away at the end of the crossing scene. The scouts appear as a surprise in Zone 4.
+
+**Partial success: Thusnelda trust (the first meeting):**
+
+Currently the Thusnelda encounter moves to alliance through narrative. Add DC structure for the key moment when she decides whether to lead the party to the grove:
+
+- *DC 14 Persuasion (backed by any positive act: sparing a Germanic prisoner, bringing a gift, having Vercingetorix vouch):* She leads them. Standard result.
+- *DC 18 (or: Germanic language proficiency, or: DC 15 Religion to speak her ritual language directly):* She leads them AND volunteers the third piece of grove knowledge the party did not know to ask for (the lock in the altar's face, and what it opens).
+- *Fail:* She says *"Tomorrow."* She will lead them tomorrow. The party camps in the forest for one night. One additional forest event from the d8 table occurs overnight. The window does not close; it costs time.
+
+**Cascade unlock: Vercingetorix's dying admission:**
+
+Available only after the ritual succeeds (or meaningfully fails), when the party has demonstrated what they actually value. If the party made a genuine sacrifice in the grove:
+
+- DC 14 Insight to notice Vercingetorix is holding something back after the ritual.
+- If the player asks directly: he will tell them.
+- The admission: he knew three months ago that Brutus's agents were in contact with two of the warband chieftains surrounding Vindolanda. He did not tell the party because he was not yet sure the party was worth trusting with information that would get them killed. Now he is sure.
+- *What it opens:* In Session 4, the party can split the siege by targeting the specific chieftains Brutus bought. Sigrun has additional detail if they find her.

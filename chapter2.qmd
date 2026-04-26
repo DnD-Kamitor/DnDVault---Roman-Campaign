@@ -403,3 +403,39 @@ This session runs hot from the start -- the dead sentry, the Tribune's authority
 ### Corruption Tracking
 
 If any character attuned to or touched the spear in Session 1, they get dreams again. Before Scene 3, the player with the highest corruption level describes their dream to the table — the spear shows them the fort burning, their comrades dead, and themselves standing over the ruins holding it. They wake covered in sweat. Don't make this mechanical yet; just make it felt.
+
+---
+
+### Skill Audit: Session 2
+
+**Partial success reframes for existing checks:**
+
+*DC 13 Medicine (Sextus murder, body):*
+- 5 below: The wound is a stab, short blade, from behind. Nothing more.
+- Exact: The weapon was a Roman legionary dagger; the angle is consistent with someone shorter than average, or someone kneeling; the blow was practiced, not panicked.
+- 5 above: He had already drawn his own blade when struck; he had time to react but did not. He knew the attacker or was watching something else.
+
+*DC 14 Investigation (ROMA CADIT carving):*
+- 5 below: Latin, recent, carved in the last 12 hours.
+- Exact: The hand is practiced but writing in panic; the letters are rushed and the tool marks show the writer was listening for something while carving.
+- 5 above: The tool marks match a specific type of military chisel; the Faber Decimus owns three of them and has logged all three as present; one returned this morning with a chipped edge.
+
+*DC 16 Insight (Tribune performance):*
+- 5 below: He is performing; you cannot tell what lies beneath the performance.
+- Exact: He is performing more than he is saying; underneath is something closer to anxiety than confidence.
+- 5 above: The performance is scripted; he has been told what to say and in what order; he hesitates before the fourth and seventh statements because those are the ones furthest from what he actually thinks.
+
+**Temporal gate: Tribune's doubt (Scene 3 only):**
+
+This check exists only during Scene 3, when the Tribune delivers his false accusation against the party. DC 14 Insight, one attempt per player, one round to call it:
+
+- *On success:* He hesitates before the phrase "enemies of Rome." The hesitation lasts one half-second. His eyes move to Varro (or Varro's absence) before continuing. He has been given a script and is not fully committed to it.
+- *What it opens:* The negotiation option in Scene 4. Without this read, negotiation DC is 17. With it, DC is 14. The player can invoke the hesitation as leverage: *"You paused. You know this isn't true."*
+- *Miss the window:* Scene 3 ends when the Tribune completes the accusation and leaves. The check is no longer available. Negotiation is still possible but harder.
+
+**Cascade unlock: soldier at the wall (Scene 2 battle):**
+
+The DC 13 Persuasion/Intimidation to hold soldiers at their posts now has an upgrade path:
+
+- *DC 13 exact:* Soldiers hold. Standard result.
+- *DC 17:* Soldiers hold AND the specific soldier who was about to break (his name is Flavus, 19 years old, first posting) becomes a named ally for the procession scene in Session 4. He remembers who held the wall for him. Note his name in your session record.

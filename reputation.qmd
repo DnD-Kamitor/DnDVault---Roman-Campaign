@@ -144,3 +144,80 @@ At the end of each session, take two minutes to update your relationship notes:
 - Is there a debt outstanding you have not addressed?
 
 The most important question: what does each major NPC now believe about you? Not what they know. What they *believe*. These are often different things, and the gap between them is where the most interesting scenes happen.
+
+---
+
+## DC Modifier Reference Table
+
+*GM reference. Print this alongside the session notes.*
+
+Relationship statement language maps directly to numerical DC modifiers for all skill checks with that NPC. These modifiers stack with signature skill bonuses from `skill_framework.qmd`.
+
+| Relationship Statement | DC Modifier | Special Access |
+|---|---|---|
+| "They do not know you" | No modifier | Baseline service only; no off-ledger access |
+| "You are a variable they are managing" | No modifier | Standard service; professional dealings |
+| "They would speak well of you to someone who asked" | -2 | One non-standard piece of information or assistance per session |
+| "They owe you something real and they know it" | -4 | Access to the NPC's genuine usefulness; things not on the official ledger |
+| "They consider you an ally" | -6 | One automatic success per session (DM chooses which); all cascade unlocks available |
+
+**Applying modifiers:** If the party base is "they owe you something real" (-4) and an individual character has a personal modifier from a private interaction (+2 toward ally), that character's effective modifier is -5 (halfway between the tiers). Use judgment; the modifiers are a guide, not a formula.
+
+---
+
+## Calling in Debts: Mechanical Rules
+
+**Standard favor (one smooth success):** Calling in a favor from an NPC who owes you something small or real grants automatic success on the next single check with that NPC. No roll required. The request must be within what the relationship can reasonably support (Quartus gives you the supply information you asked for; he does not forge the Legate's orders).
+
+**Major debt (one automatic success + tier advance):** Calling in a major debt -- "they owe you something real" tier or above -- grants automatic success AND advances the relationship permanently to the next tier. The debt is paid; the relationship is strengthened by the payment. This is the Roman model: debts paid with grace build *fides*, not neutrality.
+
+**Each NPC's debt limit:**
+
+Some NPCs will honor multiple debts; others will honor exactly one before calculation overrides obligation. The limit reflects character, not mechanics.
+
+| NPC | Debt limit | Why |
+|---|---|---|
+| **Corvinus** | One debt maximum | His political calculation overrides obligation after one; he does not stay in debt to people he has already used |
+| **Cassia** | Unlimited | *Fides* is her core virtue; she honors debts across sessions without limit |
+| **Varro** | Unlimited within military context; one outside it | He will protect soldiers infinitely; he will not break military law, once |
+| **Tribune Lucius** | Two debts maximum | Each one he honors costs him politically; three would threaten his mission |
+| **Vercingetorix** | One per session | He honors debts within the session; he does not carry them forward as obligation (Germanic exchange model) |
+| **Thusnelda** | One debt per ritual | She operates in ritual cycles; a debt from outside a ritual context does not carry into the next one |
+| **Quartus** | Unlimited if within process; zero outside it | He will do anything the system allows; he will not go outside the system for anyone |
+| **Cato** | One per side | He has picked a side; he will honor debts to that side indefinitely and to the other side not at all |
+| **Sigrun** | Two per season | She travels; debts accumulated when she was here may not be cashable when she returns |
+
+---
+
+## Reputation Damage Rules
+
+When the party fails badly, breaks trust, or uses the wrong approach repeatedly, relationships fall. Document specific damage thresholds here so the DM applies them consistently.
+
+**Standard damage: relationship drops one tier statement.**
+
+| Triggering action | Who is affected | Recovery condition |
+|---|---|---|
+| Corvinus publicly defied without evidence | Party base with Corvinus | DC 18 Persuasion backed by demonstrated results; or a success that makes him look good publicly |
+| Varro catches a party member in a deliberate lie | Individual's relationship with Varro | Demonstrated military competence in front of him (specific action, not a roll); costs a full downtime action |
+| Valeria is rushed, threatened, or dismissed | Individual's relationship with Valeria | Bringing her medicinal herbs from the forest unprompted; this is the only recovery path |
+| Cato is asked to do something illegal before trust is established | Individual's relationship with Cato | Three consecutive visits without asking for anything; the pattern resets |
+| Sigrun is dealt with unfairly or haggled below her stated price | Individual's relationship with Sigrun | Trading at her price for two consecutive visits; she does not forgive quickly but she does forgive |
+| Vercingetorix is dismissed, challenged without respect, or ambushed | Party base with Germanic faction | Completing the grove ritual; no shortcut |
+| Paterculus's omen reports are publicly doubted | Individual's relationship with Paterculus | Attending the full morning ceremony voluntarily for two consecutive sessions |
+
+**Critical damage: relationship drops two tiers.**
+
+These actions represent genuine betrayals, not just failed rolls.
+
+| Triggering action | Who is affected | Recovery condition |
+|---|---|---|
+| Tribune exposed without sufficient evidence (he denies it successfully) | Party base with Legio XIV and Senate | Cannot be recovered before Session 4; the political damage is real |
+| Party promises something to Mars and does not deliver | Party base with Mars | Session 5 trial difficulty increases; no other recovery path |
+| Cato is asked for information that gets his contact killed or arrested | Individual's relationship with Cato; also Cato leaves the campaign | Permanent; Cato leaves if his network is destroyed |
+| Thusnelda is deceived during the ritual | Party base with Germanic tribes | Cannot be recovered in this campaign; Thusnelda does not trust broken ritual promises |
+
+**What "dropped relationship" looks like in play:**
+
+The DM does not announce "your relationship with Varro dropped." The NPC's behavior changes. Varro's responses become shorter. He stops volunteering information. He answers questions accurately and says nothing else. The party should notice the change before they understand the cause. Only if they ask directly -- "have we done something to offend you?" -- does Varro tell them what happened.
+
+This is how reputation damage worked in Rome: the cold shoulder before the formal censure. Observe it; it is more devastating than a mechanical penalty.
