@@ -174,11 +174,104 @@ Mechanics: While a character moves here, whispers describe their worst memory. W
 
 ### The Vicus (Civilian Settlement)
 
-**What it is:** Cluster of wooden buildings just outside the south gate: traders, families, the *thermopolium*, the prostitute quarter, and the small temple Cassia maintains for the soldiers' private offerings.
+The *vicus* is the civilian settlement pressed against Vindolanda's east gate: approximately 200 people, none of them soldiers, all of them essential. Traders, families, discharged veterans, craftsmen, the fort's informal mail relay, and at least two individuals who know more about this frontier than any officer inside the walls. The vicus is not chaos beside order; it is the other half of the fort's life, the part that does not wear armor.
 
-**Sensory details:** Cooking oil, spilled wine, laughter that is both relief and exhaustion. The vicus feels like color after the stone interior of the fort.
+**Approach from the east gate:** Leaving through the east gate, a soldier passes the bathhouse first (the steam smell hits before the building comes into view), then the open drain channel that marks the vicus boundary, then the first permanent structures: a leatherworker's workshop on the left, a farrier's lean-to on the right, the smell of hot iron and hoof. The road widens slightly here, unpaved, worn into permanent ruts by cart traffic. Sixty feet further, the *taberna* faces the road directly. Its sign is a painted wine amphorae that has weathered past any identifiable color. The sign does not need to be legible; everyone knows where it is.
 
-**Campaign use:** Rumor tables originate here. The Germanic trader Arric lives in the third house on the left; he sells information for favors rather than coin. During Session 2's investigation, the sleeper agent buys passage through the vicus at midnight (DC 15 Insight to link his nervous behavior to the later murder scene).
+**Sensory details:** Smoke from a dozen different hearths. Cooked onions, leather, manure from the farrier's yard, bread from the *taberna* kitchen. Children underfoot until dusk. Dogs that are nobody's dog but everyone's problem. The sound of a hammer from the workshop row, the sound of arguing over something trivial, the sound of a woman singing in a language that is not Latin and not Germanic but something older from further south. After a day inside the fort's stone walls, the vicus smells like humanity rather than military efficiency. Soldiers describe it as a relief. Officers describe it as a liability. Both are right.
+
+**How the vicus differs from the fort:** Inside the walls, every relationship is vertical: rank determines everything. In the vicus, rank matters less than whether you pay your debts, treat the traders fairly, and do not cause trouble the civilians have to absorb. A centurion who beats his tab has no more standing here than a new recruit who pays on time. The *taberna* operator Brennus makes no distinction. The mail relay widow Lucilla makes no distinction. The Gallic craftsman Aldric has outlasted five garrison rotations and makes no distinctions at all.
+
+---
+
+#### Physical Layout of the Vicus
+
+The *vicus* runs along the east road and branches into two short side streets. Total footprint: roughly 200 by 150 feet of buildings, yards, and open market space. Approximately 40 structures, ranging from the *taberna* (the largest, two stories) to single-room workshops.
+
+**The *taberna* (tavern and inn):** Faces the main road, impossible to miss. Ground floor: a long common room with four tables, a bar counter of rough timber, a clay hearth for cooking, and a side room Brennus uses as his office (he calls it his office; it contains a stool, a box of receipts, and a locked chest). Upper floor: four rooms for rent, currently occupied by a retired surgeon, two traveling merchants, and one person whose business Brennus has not asked about. The kitchen runs from before dawn until the fire goes out.
+
+**The workshop row:** Eight structures along the south side of the main street. The leatherworker (Aldric the Gaul occupies the largest) is closest to the gate. Next: a farrier's yard with a small covered forge. Then a ropemaker, a carpenter who also builds coffins ("everyone needs one eventually"), a woman who sews sail-cloth-weight repairs for tents and wagon covers, and at the far end, a stall selling cheap bronze pins, clasps, and rings that look exactly like jewelry from anywhere in the Empire but originated three days north in a Germanic village nobody has officially visited.
+
+**The vicus shrine:** A small square building at the junction of the main street and the south side-lane. Dedicated to *Fortuna* by the plaque above the door, dedicated to something older and unnamed by the altar stone inside, which predates the plaque by at least 200 years. The current priest is a Gallic freedman in his sixties named Sacrovir, who performs Roman rites correctly and leaves a small offering to the older spirit every third night. He does not discuss this second practice. When soldiers ask what the older altar is for, he says: "The place."
+
+**The bathhouse annex:** Adjacent to the fort's bathhouse, sharing the hypocaust furnace. Two additional rooms for civilian use during the hours when the military schedule does not fill the main building. The annex has its own entrance, used by vicus women, civilian merchants, and occasionally officers who do not want to be seen at the same time as their soldiers.
+
+**The trader stalls:** Six permanent stalls along the main road, occupied by the same vendors year-round. Four rotating seasonal stalls appear between April and October: a pottery seller from the south, a cloth merchant, an amber dealer from the coast, and a spice trader whose route the fort's intelligence officer has been trying to document without success for two years.
+
+**The mail relay house:** Lucilla's house on the north side-lane, third building from the east gate. Distinguished from other houses by two things: a small iron hook by the door where soldiers leave messages (wrapped in cloth, no envelopes, nobody asks what is inside), and Lucilla herself, who is usually visible through the front window, writing. Her handwriting is better than the fort's official scribes. Her contact network extends to Carnuntum, Eboracum, and three civilian settlements between here and the Danube. She charges two *asses* per letter delivered and has not lost one in fifteen years.
+
+---
+
+#### Key Locations: Skill Check Menus
+
+**The *taberna* (DC 12/15/18):**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | Persuasion or Insight | Brennus knows which soldiers are in debt and to whom; he will name one for the price of a round bought for the bar |
+| 12 | Perception | The locked chest under the bar counter is not a cash box; it has a false bottom visible from below (DC 14 Investigation to confirm) |
+| 15 | Persuasion (established relationship, or buying a full evening's round) | Brennus shares that he owes a specific Germanic trader a substantial favor from before the siege; the trader is one of Sigrun's contacts; this connection has a name and a use |
+| 15 | Insight | Reading the room correctly identifies which soldier at the bar has been coming specifically to watch the east gate, not to drink; DC 13 Stealth to observe him without triggering his awareness |
+| 18 | Persuasion + Brennus at Ally tier | Brennus reveals the false-bottom contents: a half-finished letter addressed to a name in Carnuntum that the party will recognize if they have read the dispatch chest in the Legate's quarters; the letter concerns the spear |
+
+**The vicus shrine (DC 11/14/17):**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 11 | Religion | The older altar stone has votive marks in a style that predates Rome in this region by centuries; this is the same style as the carvings in Room 1 of the ruins below the fort |
+| 14 | Religion | The spirit associated with the older altar is a *locus genius* distinct from the fort's spring Genius Loci; it is the spirit of the road junction, older than the vicus, older than the fort; it watches movement rather than place |
+| 14 | Investigation | Three fresh offerings on the older altar: a copper coin with the image rubbed off, a small carved bone, and a sprig of something from the bog; the offerings were left within the last 24 hours and are not Roman in style |
+| 17 | Religion + successful propitiation of the older spirit (offering something personal, not purchased) | The road junction spirit has observed everything that has moved past this point for two centuries; the priest can ask it one question about a specific person who passed through the vicus recently; the answer comes as a brief vision of that person's face and direction of travel; Sacrovir facilitates this, once per session, if the relationship with him has reached Acquaintance or above |
+
+**The workshop row (DC 12/15):**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | Persuasion or Athletics (helping with physical work) | Aldric the Gaul can repair civilian equipment that the fort's *fabrica* will not touch (personal items, non-military gear, things the quartermaster has not catalogued); his prices are fair and his timeline is accurate |
+| 12 | History | A character who examines Aldric's work recognizes techniques in his leatherwork and metal repairs that do not match Roman guild training; some of it matches Germanic craft patterns; DC 14 History to identify the specific regional origin (Suebi, not Marcomanni) |
+| 15 | Persuasion (Aldric at Acquaintance or above) | Aldric has repaired something for Brutus's sleeper agent in the last week; he describes it without understanding its significance: a specific type of belt fitting used to conceal a message cylinder; the party, with DC 13 Investigation, can identify this as the same cylinder type described in knowledge.qmd's omen section |
+| 15 | Investigation (farrier's forge specifically) | The farrier's forge shows signs of non-horseshoe metalwork within the last 48 hours: shaped iron pieces, not tools; DC 16 Smith's Tools proficiency to identify what they were cast for (bracket fittings for a specific type of raven-messenger cage, the kind that can be opened from inside) |
+
+**The mail relay house (DC 12/15/18):**
+
+| DC | Skill | What it reveals |
+|---|---|---|
+| 12 | Persuasion or Insight (Lucilla at any tier) | Lucilla can send a message to any settlement on her network within 48 hours for 2 *asses*; she does not ask the content; she does not read messages; she is correct about both of these things |
+| 15 | Persuasion (Lucilla at Trusted or above) | She can send a message specifically designed to avoid official military interception: no courier stops at checkpoints, no record in the transit log; this costs a favor, not coin |
+| 15 | History or Investigation (examining the hook by the door) | The hook holds five messages currently; DC 15 Investigation without touching them identifies two as written on military-grade papyrus, not civilian stock; someone inside the fort is using the civilian relay |
+| 18 | Persuasion (Lucilla at Ally tier) + previous relationship | She will name the two soldiers who used the hook with military papyrus; one is an ordinary debt letter; one is addressed to a name in Rome that the party will recognize as Brutus's household |
+
+---
+
+#### Vicus Under Siege (Session 4)
+
+When the Germanic warband tightens around Vindolanda in Session 4, the vicus is caught between the fort's walls and the siege line. The east gate can no longer be opened freely. The *vicus* is effectively cut off.
+
+**What civilians do by default (if the party does not intervene):** They shelter in the *taberna* and the shrine, drawing shutters, rationing Brennus's food stores, and waiting. This is passive but not stupid: the vicus has survived three prior garrison crises by being too small and too civilian to be worth attacking. The default outcome is that the vicus survives the siege intact but contributes nothing to the fort's defense and consumes resources if the party brings them inside the walls.
+
+**Three options the party can direct:**
+
+**Option 1: Shelter inside the fort walls.** The party opens the east gate under cover and brings the vicus civilians inside before the siege line closes completely. This requires DC 13 Athletics (moving quickly while managing panicked civilians) and costs one gate-opening opportunity that may be needed later. If successful: the vicus's civilian skills become available inside the walls (Lucilla's relay, Aldric's repair work, Brennus's cooking keeps morale stable); Brennus contributes his private food stores to the fort's rations; civilian morale inside the fort starts at neutral rather than frightened. Risk: 200 additional mouths on the already-strained ration supply; if the fort falls, all 200 are inside when it does.
+
+**Option 2: Civilian flight north road.** The party organizes a civilian column to exit through the north postern gate (less watched by the warband) and move north along the road to the next way-station. This requires DC 14 Persuasion to convince Brennus (he does not want to abandon his *taberna*), DC 12 Stealth for the column to move without drawing warband attention, and DC 13 Survival for the group to navigate the north road correctly in poor weather. If successful: the vicus is safe; the party loses access to all four vicus characters for the remainder of Session 4; Brennus's food stores are abandoned. Risk: if the column is intercepted, the party cannot protect them and run the fort simultaneously.
+
+**Option 3: Civilian delegation to the Germanic warband.** The vicus civilians send three people, led by Lucilla (her idea; she speaks basic Germanic from fifteen years on the frontier), to negotiate non-combatant status with the warband's outer commanders. This requires DC 15 Persuasion for Lucilla to secure the chieftain's recognition that the vicus is civilian. If she succeeds: the siege line officially excludes the vicus; the east gate can be used once per session by a party member in civilian clothing without military challenge; the vicus becomes a neutral channel. DC 18 to also negotiate active intelligence from warband movement patterns. Risk: Brutus's sleeper agents inside the fort hear about the negotiation and move to sabotage it (DC 14 Insight to spot the agent before he acts).
+
+**DM default if the party does not engage this choice by Scene 1:** The civilians shelter in the *taberna* and shrine (Option 1's passive version: they stay in place, do not enter the fort, do not try to flee, eat Brennus's food, and pray). The party loses access to Lucilla's relay during the siege but Aldric can still be reached through the east gate (one trip per scene, DC 12 Stealth to make it look like a supply run).
+
+**Running note for the siege vicus:** Every time the party visits the vicus during the siege, describe the same three details: shutters closed, shrine candles visible through a crack in the door, and children's voices audible but not visible. These three details communicate "alive but scared" without narration overhead. If any of the three disappears, the DM is signaling something has changed.
+
+---
+
+#### The Vicus as Adventure Space
+
+Three things the party can do in the vicus that are impossible inside the fort:
+
+**1. Access the informal black market.** Brennus's locked chest (false bottom) connects to a supply chain of goods that bypass the quartermaster's manifest. Currently in stock: two doses of *henbane* sedative (not available from Valeria without medical context; here, 20 *denarii* each, no questions); one set of Germanic civilian clothing in a Roman soldier's size (useful for crossing the east gate unidentified during the siege); three bottles of wine that the Legate ordered specifically and that were never officially delivered to the *praetorium* (blackmail potential if the party can identify the requisition record; Aldric has it in his receipts box as collateral for a debt). Accessing the black market requires reaching Brennus at Trusted tier or paying 50 *denarii* as a one-time "access fee" that he refunds if the relationship develops. Risk: one item in the false-bottom chest is flagged in a manifest Brutus's sleeper agent is looking for; finding it puts the party in the middle of a supply-chain dispute between the sleeper agent and Brennus's Germanic contact.
+
+**2. Send unofficial messages that bypass the military mail system.** Lucilla's relay operates entirely outside the official courier network. Messages sent through her: do not appear in the fort's dispatch log; reach Carnuntum in 36 hours rather than the military courier's 72-hour minimum; can be addressed to individuals the military courier would not carry mail for (discharged soldiers, civilian contacts, names outside the official registry). Cost: 2 *asses* per letter standard; 1 favor per letter for the secure route. The practical uses: send word ahead to Carnuntum before the party leaves the fort in Session 3; contact Brutus's household directly (the address is available at DC 18 in the relay house); send a letter under false identity to draw out a contact who will not respond to official requests. Lucilla's one constraint: she will not carry a message she believes will get the recipient killed. She is correct about when a message carries that risk about 80 percent of the time.
+
+**3. Get information no officer would give them.** The vicus sees everything the fort's chain of command does not: which officers visit which traders after dark, what the wagons carry that does not match the manifest, what the off-duty soldiers say when they think the centurion is not listening, and which Germanic faces have been appearing near the east gate more frequently than trade would explain. Specific pieces of information currently in the vicus information network (see `camp_economy.qmd` for the full network description): who is currently in debt to whom among the lower officers; that the west workshop fire in Session 1 was started from inside, not outside; that Tribune Lucius met with someone in the *taberna*'s upper room the night before Sextus died; and that the person Lucilla's relay received a message for two weeks ago, in a cipher she has seen once before, matches the name in the dispatch chest in the Legate's quarters.
 
 ---
 

@@ -264,6 +264,208 @@ When the party's standing with Sigrun reaches "they owe you something real" or b
 
 ---
 
+---
+
+## The Vicus Characters
+
+The six camp traders work inside the fort's walls. The four people below work in the *vicus* outside. They operate under different rules: no rank, no requisition paperwork, no chain of command. They have survived multiple garrison rotations by being useful to everyone and beholden to no one. They are the party's best assets for information, unofficial movement, and leverage that the fort's institutional structures cannot provide.
+
+See `locations.qmd` for the physical layout of the *vicus* and its key locations. This section covers the people who run it.
+
+---
+
+### Brennus (Taberna Operator)
+
+**Name:** Brennus (no family name given; he had one, he says, but left it in Lugdunum)
+**Role:** Operates the *taberna* facing the east gate. Food, drink, rooms to let, and a locked chest with a false bottom.
+**Appearance:** A broad man in his late forties, heavy-shouldered, with the permanent half-smile of someone who has heard every possible human story and found most of them entertaining. His hands are large enough to palm two cups at once. His eyes are not as comfortable as his face suggests.
+
+**Personality:** Brennus is everyone's friend and no one's confidant until he decides otherwise. He survived his posting here by understanding exactly one principle: the person who knows everyone's debt is never in debt himself. He does not collect debts for money. He collects them because knowing what people owe makes them predictable, and predictable people do not burn your *taberna* down.
+
+He has a specific problem at the time of the campaign: he owes a significant favor to a Germanic trader who supplied him with goods during a supply drought two years ago, goods that were not on any manifest and that got the fort through a bad winter. The trader has not called the favor yet. Brennus knows it is coming. He does not know what form it will take. This makes him unusually receptive to people who might help him resolve the situation before it resolves itself.
+
+**Speech pattern:** Direct, unhurried, and specific. He never says "people" when he can say "Centurion Flavius" and he never says "someone told me" when he can say "Rufus said this at the third cup, before his mood changed." He trades in specifics because specifics are worth more.
+
+**Sample voice lines:**
+
+1. *On first meeting, serving a drink:* "You're the ones the Legate sent into the ruins. You were in there a long time. People noticed. What'll it be -- the local or the officer's?"
+2. *When someone tries to pump him for information without offering anything:* "I'm going to save us both time. I have information. You want information. That's a transaction. You haven't told me what you're offering yet. Take your time."
+3. *If he trusts the party and the siege is starting:* "The Germanic trader I owe. His name is Wulfric. He trades through Sigrun's network. If you can get word to him that I paid the debt in service to the fort, he'll count it. I need that before this gets worse."
+
+<details>
+<summary>**Brennus: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Keep the *taberna* standing, his network intact, and his debt to Wulfric resolved before the trader calls it |
+| **Goal** | Maintain neutral standing with every faction in the fort so that whoever wins any given conflict still wants his bar open |
+| **Agenda** | Collects specific information about every regular customer's debts, loyalties, and vulnerabilities; uses this as insurance rather than leverage, but the distinction is thin |
+| **Secret** | The locked chest's false bottom contains a half-written letter to a contact in Carnuntum identifying Brutus's sleeper agent by name; Brennus figured it out three weeks ago when the agent overpaid for a room in a way that suggested someone else was covering his expenses; Brennus has not finished the letter because he has not decided what to do with it |
+
+</details>
+
+**Information network connection:** Brennus is the hub of the *vicus* network. Everything that happens in the *taberna* eventually reaches him: who sits with whom, who pays in a hurry, who orders a second cup instead of leaving when the watch changes. He shares this information in exchange for help with the Wulfric debt or at the Trusted tier threshold.
+
+**Vicus under siege behavior:** Keeps the *taberna* open as a civilian shelter from the first night of the siege. Does not charge the civilians sheltering there. Contributes his private food stores to the fort's communal supply if the party specifically asks and has reached Acquaintance or above. Sends runners to Lucilla every morning to confirm she is still in the relay house.
+
+---
+
+### Lucilla (Mail Relay Widow)
+
+**Name:** Lucilla Petronilla
+**Role:** Operates the unofficial mail relay from her house on the north side-lane. Former soldier's wife; her husband died of the Antonine Plague eleven years ago. She stayed.
+**Appearance:** A woman in her mid-fifties with excellent posture and ink-stained fingers. She wears her hair pinned back practically. She looks like someone who has been doing important work for a long time and does not need anyone to tell her it is important.
+
+**Personality:** Lucilla is precise and transactional in the best sense: clear about what she offers, clear about what she expects, and genuinely reliable. She has been running messages for fifteen years because she is good at it and because it gives her something that official channels do not give her: the ability to decide what gets through and what does not, without being subject to any officer's discretion.
+
+She has her own intelligence picture of the frontier, assembled from fifteen years of reading the covers of messages (she does not open them, but the covers are informative), observing who sends to whom, and listening to what the couriers say when they drop off and pick up. She does not volunteer this picture. She will share portions of it, once, in exchange for the party carrying a letter for her.
+
+Her price is always the same, for everyone: you carry a letter for her in return. The letter may be to anywhere on her network. The party does not need to know what it contains. She will confirm it is not dangerous to the recipient. That is her one guarantee.
+
+**Speech pattern:** Measured, economical, occasionally precise to the point of bluntness. She does not hedge. When she says "I can get this to Carnuntum in 36 hours," she means it. When she says "I don't know," she means that too.
+
+**Sample voice lines:**
+
+1. *On first meeting, when someone asks about sending a message:* "Two *asses* per letter, 36 hours to Carnuntum, longer if the road is watched. Payment when I accept the letter, not on delivery. Do you have a letter?"
+2. *When someone asks what she knows about fort events:* "I relay messages. I don't read them. I do notice things. What specific thing are you asking about?"
+3. *If the party has been using her relay and she trusts them, before the siege:* "There's a letter I need delivered to a name in Eboracum. Not through any official route. If you can do that when this is over, I'll tell you who the second military-papyrus sender was, and why the address they used is interesting."
+
+<details>
+<summary>**Lucilla: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Maintain the relay network through whatever comes, including the siege; the network is her purpose and she treats its preservation as her primary responsibility |
+| **Goal** | Get a specific letter to Eboracum without it passing through the official courier system; this letter names Brutus's primary Carnuntum contact and is the result of fifteen years of mail-pattern observation |
+| **Agenda** | Evaluates every party interaction against whether it helps or threatens the relay; will share information in exchange for carrying duties; will not take sides officially but has already chosen a side in practice |
+| **Secret** | She knows which messages went to Brutus's household from inside the fort; she has the addresses memorized and can name the specific officers who used her relay for correspondence they did not want in the military record; she has been holding this information for the right moment, which she believes is now |
+
+</details>
+
+**Information network connection:** Lucilla knows who communicates with whom outside official channels. She connects the *vicus* network to settlements beyond the frontier and to Roman cities the fort's official couriers reach on a two-week delay. At Trusted tier, she tells the party that one of the military-papyrus senders from the hook was using a cipher she has seen only once before, in a message sent from Carnuntum six months before the Tribune's arrival.
+
+**Vicus under siege behavior:** Does not leave the relay house. Continues operating the hook during the siege because message flow does not stop when the gate does; she uses the farrier's window on the south side as a secondary drop point. Sends Brennus a daily note confirming she is operational. If the party secures her safety specifically, she gives them access to her full records of the military-papyrus correspondence, including the address on the letter she has been keeping as leverage.
+
+---
+
+### Titus (The Half-Roman Boy)
+
+**Name:** Titus (the soldiers call him Titus; his Germanic name is Dagaz, meaning "day," which his mother gave him; he answers to both)
+**Role:** No official role. He is fourteen, half-Roman (father was a legionary, killed in a skirmish four years ago), half-Germanic (mother is from Vercingetorix's extended tribal network, currently living in the *vicus*). He knows every tunnel, gap, loose board, and drainage channel in and around the fort.
+**Appearance:** Tall for his age, with a Germanic build and Roman dark eyes. He moves like someone who has been getting into places he is not supposed to be in for years: quickly, quietly, and with good situational awareness. He wears a mix of Germanic and Roman-style clothing that fits neither category exactly.
+
+**Personality:** Titus is sharp, cautious, and not easily impressed. He has been watching Roman soldiers and Germanic warriors all his life and has formed clear opinions about both: neither group knows as much as it thinks it does, and both underestimate him consistently. He finds this useful.
+
+He is not a thief and not a spy for any faction. He moves through the fort and the *vicus* because he has always moved through them, because nobody pays attention to a boy doing what boys do, and because he is curious in a way that has never been entirely safe and that he has never been able to stop. His loyalty is not available for purchase. It is available for earning, which is a different thing and takes longer.
+
+**Speech pattern:** Economical. He does not explain himself unless asked. When he does explain, he is specific and accurate. He uses whichever language is most precise for the point he is making, switching between Latin and Germanic mid-sentence without noticing.
+
+**Sample voice lines:**
+
+1. *On being approached by the party for the first time:* "I know who you are. You went into the hole under the granary. What was in it?" *(He waits. The information exchange is already underway in his mind.)*
+2. *When someone tries to bribe him:* "I don't need money. I need to know if what you're doing is going to make things here worse. Tell me honestly and I'll help. Don't and I won't."
+3. *During the siege, if the party has earned his trust, appearing at a critical moment:* "There's a way under the north ditch that the warband hasn't found. It comes out behind the old latrine mound. I've been using it since I was ten. Do you want me to show you or not?"
+
+<details>
+<summary>**Titus: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Understand what is happening with the spear and the ruins, because whatever it is will determine whether the *vicus* survives and whether his mother's family is in danger from the Germanic forces outside |
+| **Goal** | Find out whether the party is making things better or worse, and position himself to help whichever outcome protects the people he is responsible for |
+| **Agenda** | Does not commit until he has made his evaluation; runs what amount to informal reconnaissance missions on every faction in the fort without anyone's authorization; knows things he should not know from a fourteen-year-old with no official standing |
+| **Secret** | His mother has been receiving messages from Vercingetorix's tribe through the south ditch gap Titus uses; he has been carrying them without knowing their content; the messages stopped three days before the siege began, which means someone on the Germanic side knew the siege was coming |
+
+</details>
+
+**Information network connection:** Titus knows the physical routes and gaps in the fort's surveillance; he does not have an adult social network but he has an intimate knowledge of where people go when they think they are not being observed. At Trusted tier, he tells the party about the message route through the south ditch and what the silence of the last three days implies. At Ally tier: he guides the party through the drainage tunnel under the north ditch during the siege -- the route that avoids the warband's watch entirely.
+
+**Vicus under siege behavior:** Stays in the *vicus* with his mother initially. After the first night, if the party has earned his trust, appears at whatever location is most useful and provides the physical route information they most need. Will not leave the vicus civilians without telling someone where they are going. If the party tries to send him away for safety, he ignores this.
+
+---
+
+### Aldric (The Gallic Craftsman)
+
+**Name:** Aldric of Avaricum (the name of his birth-city; he has not been back in twenty-three years)
+**Role:** Leatherworker and general repair craftsman. Has been at Vindolanda longer than any current soldier: through five garrison rotations, two commander changes, one partial fort reconstruction, and one plague year. He repaired the saddle of a man who died at Teutoburg's aftermath and the boots of a man who helped build this fort's first wall.
+**Appearance:** A Gaul in his mid-sixties, with hands that look like two old tools and a face that has given up expressing opinions it does not have to express. Gray-bearded, brown-eyed, unhurried. He works with the consistent efficiency of someone who stopped being in a rush approximately twenty years ago and found it improved the quality of everything.
+
+**Personality:** Aldric does not take sides. He has watched too many sides come and go. He does not volunteer information. He has watched too many people punished for volunteering information at the wrong moment. He does not leave. He has nowhere he would rather be, and he is honest about this without sentimentality: this is where he is; this is what he does; there is no mystery to it.
+
+He will answer one direct question per session if asked correctly. "Correctly" means: asked clearly, without preamble, by someone who has treated him as a professional rather than a source, and who will accept a direct answer including "I don't know" or "I won't say." He does not offer follow-up. He does not offer context unless specifically asked for context. He answers the question and returns to his work.
+
+He knows where bodies are buried. This is not a metaphor. He has repaired the equipment of men who died violently, including men whose deaths were not officially recorded as violent. He repaired the belt fitting on the sleeper agent's message cylinder. He recognized the cylinder type. He said nothing at the time because nobody asked him.
+
+**Speech pattern:** Plain, flat, and specific. No pleasantries. No hedging. Maximum two sentences per answer unless a longer answer is genuinely required. When he does not want to answer, he simply continues working and does not look up.
+
+**Sample voice lines:**
+
+1. *When approached for repair work:* "What's broken?" *(He looks at the item.)*  "Two days. Three *denarii*."
+2. *When someone tries to ask him what he knows about the fort without asking a specific question:* *(He looks up once.)* "That's not a question."
+3. *When asked one direct question at a session where the relationship is at Acquaintance or above:* "The man with the cylinder belt fitting. He came back the next morning and paid me extra not to mention it. I'm mentioning it because you asked."
+
+<details>
+<summary>**Aldric: OGAS** *(click to expand)*</summary>
+
+| | |
+|---|---|
+| **Objective** | Continue working at his trade through whatever comes; has no ambition beyond the quality of his repairs and the security of his workshop |
+| **Goal** | Not be made to take a side, participate in a conflict, or leave the *vicus* under any circumstances |
+| **Agenda** | Answers direct questions once per session from people who treat him respectfully; observes everything and records it in a set of personal notebooks he has been keeping for twenty years, written in a Gaulish dialect few people in this region can read |
+| **Secret** | The notebooks document twenty-three years of observation at this frontier post: garrison rotations, supply irregularities, officer behavior, vicus activity, things that happened that were not recorded in any official document; he has not decided who, if anyone, the notebooks are for, but he has not destroyed them either |
+
+</details>
+
+**Information network connection:** Aldric is not part of the *vicus* information network in an active sense; he does not talk to people, share what he knows, or work with other vicus characters to cross-reference events. He is a single-source archive: everything he has observed for twenty-three years is in his notebooks, and one question per session unlocks one entry from that archive. At Ally tier (which requires sustained respectful interaction across three sessions), he will allow the party to read one specific notebook in full. The DM determines which one based on what the party most needs.
+
+**Vicus under siege behavior:** Does not change. He continues working through the siege, repairs equipment for civilians and soldiers alike without distinction, and does not shelter in the *taberna* because he does not leave his workshop overnight as a matter of habit. If the east gate becomes unusable, he is simply unreachable until the situation changes. He does not consider this a problem.
+
+---
+
+## The Vicus Information Network
+
+The *vicus* knows things the fort does not. This section establishes what those things are at the start of the campaign, how information moves between the four vicus characters, and where the network's limits are.
+
+### What the Vicus Knows (Campaign Start)
+
+Six specific pieces of information currently held in the vicus network, not known inside the fort's walls:
+
+1. **Which soldiers are in debt and to whom:** Brennus's ledger tracks 23 active debts among officers and soldiers who drink at the *taberna*. Three of these debts are to non-Roman lenders (two to Brennus's Germanic contact, one to a merchant whose origin nobody has documented). These debts make the soldiers involved predictable in ways their officers do not account for.
+
+2. **The west workshop fire was set from inside:** The fire that damaged the west workshops before the campaign's start was investigated by Corvinus's men and ruled an accident. Brennus's *taberna* heard otherwise: a civilian cart-hand saw someone leave the west workshop at the second watch with a lantern and no cargo. He told Brennus. Brennus has not told anyone else because nobody asked.
+
+3. **Tribune Lucius met someone in the *taberna*'s upper room:** Two nights before Sextus died, Tribune Lucius used the upper room of the *taberna* for a meeting. The other person arrived hooded, stayed for one hour, and left separately. Brennus saw them both but does not know who the second person was. He knows the hooded visitor paid in Carnuntum-minted coin.
+
+4. **A message in cipher came through Lucilla's relay:** Fourteen days before the Tribune's arrival, a message arrived at Lucilla's hook addressed to a name she did not recognize; it was written in a cipher she has encountered once before, in a letter from Carnuntum six months prior. The two messages used the same cipher convention. She relayed it, as contracted. She remembers the address because the name was unusual: *Agrippa Felix*, which is not a military name but a freedman's name, and freedmen with that name pattern tend to work in senatorial households.
+
+5. **The farrier's forge produced cage fittings:** Aldric noticed. The farrier is not in the vicus information network (he is not a regular *taberna* attendee), but Aldric's workshop is adjacent to the forge, and Aldric noticed the unusual metalwork. He has not told anyone because nobody asked. One direct question unlocks this.
+
+6. **The Germanic faces near the east gate are not random:** Sigrun is not the only Germanic person appearing at the east gate regularly. Three others have been appearing at intervals: always different people, always brief, always on the days that the gate guard rotation changes. The vicus assumes this is ordinary trading reconnaissance. Titus does not. He has been watching them.
+
+### How Information Moves
+
+**Brennus to the network:** He collects passively from the *taberna*'s traffic, then shares selectively with Lucilla (they have a working relationship built on the fact that she sends him business and he sends her senders). He does not share with Aldric (Aldric does not talk) or with Titus (Titus is a child, in his formal assessment, though he has quietly noticed that the child's information tends to be accurate).
+
+**Lucilla to the network:** She knows what Brennus shares with her. She knows what her own mail observation generates. She does not share with Aldric or Titus except in crisis situations where withholding information would cost lives.
+
+**Titus to the network:** He shares with nobody except people he has decided to trust (which may include the party before it includes any adult in the *vicus*). He watches Brennus's *taberna* from outside. He watches the gate. He watches everything.
+
+**Aldric to the network:** He does not participate. He answers direct questions. That is the limit of his network involvement.
+
+**The *taberna* as hub:** Almost everything passes through Brennus eventually because almost everyone passes through the *taberna*. The party's fastest access to the full network is through Brennus at Trusted tier: he can introduce them to Lucilla as reliable, which advances her relationship statement by one step automatically; he can tell them Titus's name and where to find him; he will not vouch for Aldric because Aldric does not need vouching for.
+
+### What the Vicus Does NOT Know
+
+Set these limits clearly so the DM knows when to say no without making it feel arbitrary:
+
+- **The vicus does not know what is in the ruins below the fort.** They know something was found. They know the soldiers who worked the excavation came back changed. They do not know the spear exists, what it does, or what the ritual in the vault involved. This is the fort's one genuine secret from the *vicus*.
+- **The vicus does not know who specifically is Brutus's sleeper agent.** Brennus suspects a general category (someone who overpaid for lodging); he does not know the name. The agent has been careful about which civilian spaces he uses.
+- **The vicus does not know what Vercingetorix's tribe specifically wants.** They know the Germanic siege force includes people from multiple tribes. They know the tribes are not all aligned. They do not know the internal politics. Titus knows more than the others because of his mother's messages, but the messages stopped three days before the siege.
+- **The vicus does not know where the sacred grove is.** Sigrun knows; she does not share this with the *vicus*.
+- **The vicus does not have information about events inside the *principia* or the Legate's private quarters** unless someone inside chose to tell them. Lucilla knows some of what goes out; she does not know what is discussed before it becomes a letter.
+
+---
+
 ## Camp Level System
 
 ### What Camp Level Means
