@@ -549,6 +549,52 @@ Goal: The knowledge system gains a third barrier (character-creation stat/skill 
 **appendix.qmd:**
 - [x] Relationship Starting States table added after NPC OGAS Summary
 
+### Milestone 36 — GM Session 0 Guide
+Goal: DM has a practical working document for running Session 0: what to ask, what to collect, what each answer maps to mechanically. Companion to the player-facing `session0.qmd`.
+
+**File:** `gm_session0.qmd` (GM's Workbook, first chapter)
+
+- [x] **Consent and boundaries section** — Corruption consent per player (compelled actions, stage 5 fate); violence/horror content check; record per player
+- [x] **Aloud questions with DM annotations** — 9 table-wide questions, each with "listen for" notes mapping to specific mechanical payoffs
+- [x] **Private questions** — 4 one-on-one questions: sacrifice threshold, trust map, arc appetite, breaking point
+- [x] **Mechanical collection** — Fatum card format and rules; sacrifice seed card; corruption profile card (3 notes per player)
+- [x] **Red flags guide** — How to handle: refuses to answer, anti-corruption character, session-ending line matches campaign pressure point, Germanic character variant
+- [x] **Pre-Session 1 checklist** — Fatum mapping to S4-5 moments; sacrifice seed ordering for S3; influenced NPC selection; divine standing setup; personalized opening moment per character
+- [x] **Quick reference page** — All questions at a glance for printing
+
+### Milestone 37 — Camp NPC Full Treatment
+Goal: The six camp traders receive the same depth as the seven main NPCs: OGAS, per-session state, voice reference, reaction tables, and siege behavior. The camp becomes a fully runnable social system, not just a shop list.
+
+**File:** `camp_economy.qmd` (additions to existing traders section)
+
+- [ ] **Trader OGAS tables** — Objective / Goal / Agenda / Secret for all six traders (Quartus, Rufus, Valeria, Paterculus, Cato, Sigrun), matching the main NPC format in `gm_intro.qmd`
+- [ ] **Per-session trader state table** — Where each trader is, what they know, what they are doing across Sessions 1-5; mirrors the main NPC state table in `gm_intro.qmd`
+- [ ] **Trader voice reference** — 3 characteristic lines per trader showing their voice in different situations (not just the opening line); follows the format in `gm_intro.qmd`
+- [ ] **Trader reaction tables** — How each trader responds to the party's 3 most likely approaches (direct ask, barter/bribe, authority/threat); mirrors the main NPC reaction tables
+- [ ] **Siege behavior** — Specific DM notes on what each trader does when the siege begins in Session 4: who panics, who helps, who disappears, who reveals something they have been hiding
+
+### Milestone 38 — Unified Skill Interaction Framework
+Goal: Every social and skill-based interaction in the fort uses a consistent DC system. Players know what to roll; DMs know what it means. Currently each trader has ad-hoc DCs or no DCs. The reputation system and the trader trust system need to be connected to actual roll mechanics.
+
+**File:** New section added to `camp_economy.qmd`; short summary box added to `reputation.qmd`
+
+- [ ] **Interaction tier DCs** — Standardize four interaction tiers across all traders: Stranger (no check, baseline service), Acquaintance (DC 12 Persuasion or appropriate skill), Trusted (DC 15, requires prior positive history), Ally (DC 18 or automatic after meaningful shared experience); each tier maps to the existing relationship statement language in `reputation.qmd`
+- [ ] **Skill substitutions** — For each trader, list which non-Persuasion skill can substitute: Rufus (Athletics or tool proficiency demonstration), Valeria (Medicine check to show competence), Paterculus (Religion or History relating to omens), Cato (Insight to find the right angle, Performance to tell a story), Quartus (Proficiency with any military tool or supply knowledge), Sigrun (Germanic language or Survival showing forest knowledge)
+- [ ] **What failure means** — DC failure does not mean no access; it means the wrong kind of access (Quartus becomes formal and routes everything through official channels; Cato overcharges; Sigrun sells to someone else first). No roll should result in a dead end.
+- [ ] **Reputation modifier integration** — Table: how each reputation statement modifier translates into a numerical DC bonus or automatic tier upgrade; connects reputation language to actual mechanic
+- [ ] **Camp-wide skill challenges** — Two structured skill challenges for siege scenarios (Session 4): "Hold the Gate" (Athletics/Persuasion/Intimidation/Medicine to prevent panic and hold position) and "Provision the Escort" (Investigation/Persuasion/Survival to gather what the party needs before descending)
+
+### Milestone 39 — The Vicus: Civilian Settlement
+Goal: The civilian settlement outside the fort walls has named characters, its own information network, and its own stakes in the siege. Currently the vicus is mentioned but has no people.
+
+**File:** New section added to `locations.qmd` and `camp_economy.qmd`
+
+- [ ] **Vicus layout** — Physical description: where it sits relative to the fort gate, what buildings it contains (taberna, workshop row, the shrine, the bathhouse annex, the trader stalls), how many civilians live there (approximately 200)
+- [ ] **Named vicus characters** — 4 named civilians, each with a brief OGAS and one distinctive thing: (1) the *taberna* operator who owes a favor to a Germanic trader, (2) a former soldier's wife who runs the informal mail relay, (3) a young local boy (half-Roman, half-Germanic) who knows every tunnel and weak point in the outer wall, (4) a Gallic craftsman who repairs civilian equipment and has been here longer than any current soldier
+- [ ] **The vicus information network** — What the vicus knows that the fort does not: which soldiers are in debt, which officers have civilian relationships, what comes through the trade gate that is not on the manifest, whether the Germanic raiders have been seen near the settlement recently
+- [ ] **Vicus under siege** — What happens to the civilian settlement when the fort is besieged in Session 4: do they shelter inside, try to flee, send a delegation, or become a liability? Specific DM guidance per outcome
+- [ ] **Vicus as adventure space** — Three specific things players can do in the vicus that they cannot do inside the fort: access the black market, send unofficial messages, get information that no officer would give them
+
 ---
 
 ## Conventions

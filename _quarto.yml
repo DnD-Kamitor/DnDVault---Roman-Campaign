@@ -33,6 +33,7 @@ book:
     - part: "GM's Workbook"
       chapters:
         - gm_intro.qmd
+        - gm_session0.qmd
         - germanic_tribes.qmd
         - locations.qmd
         - camp_economy.qmd
