@@ -11,26 +11,30 @@ book:
   repo-actions: [issue]
   chapters:
     - index.qmd
-    - part: "Player's Workbook"
+    - player_intro.qmd
+    - part: "Part I: The World"
       chapters:
-        - player_intro.qmd
-        - session0.qmd
         - player_guide.qmd
         - skills.qmd
         - peoples.qmd
-        - player_tome.qmd
+        - session0.qmd
         - calendar.qmd
         - knowledge.qmd
+    - part: "Part II: The Camp"
+      chapters:
+        - player_tome.qmd
+        - vindolanda_guide.qmd
         - professions.qmd
-        - reputation.qmd
-        - corruption.qmd
-        - roman_tactics.qmd
         - supplies.qmd
         - food.qmd
-        - vindolanda_guide.qmd
+        - roman_tactics.qmd
+        - bestiary.qmd
+    - part: "Part III: The Campaign"
+      chapters:
+        - corruption.qmd
+        - reputation.qmd
         - journal.qmd
         - atmosphere.qmd
-        - bestiary.qmd
     - part: "GM's Workbook"
       chapters:
         - gm_intro.qmd
