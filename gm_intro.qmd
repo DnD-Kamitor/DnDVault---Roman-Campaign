@@ -540,12 +540,12 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Deception, if caught:* Treats the party as a security risk. Assigns surveillance. Future Insight checks against them with +4.
 - *Appealing to ethics or fairness:* He visibly loses interest. "Rome was not built on fairness." No mechanical penalty; zero progress.
 
-**Temporal gate:** Corvinus's real agenda (the debt) is accessible Session 1 only, before Tribune Lucius arrives and changes the political landscape. After Session 2 begins, he goes into full political mode and will not be partially honest about anything.
+**Temporal gate:** Corvinus's real agenda -- the debt to Brutus -- is only visible in Session 1, before Tribune Lucius arrives and changes everything. Once Lucius walks through the gate, Corvinus locks down completely. He goes into full political mode and will not be partially honest about anything for the rest of the campaign. The window is short. If the party uses it: they get the most useful intelligence in the first session. If they miss it: the debt becomes something they piece together from other sources later.
 
 **Partial success text:**
-- *5 below DC:* He restates his position more firmly. You have given him information about what you want; he will use it.
-- *Exactly at DC:* He gives you what you asked for, nothing additional. The concession is real; the relationship has not warmed.
-- *5 above DC:* He gives you what you asked for plus one piece of information you did not know to request — his actual calculation behind the decision.
+- *5 below DC:* He restates his position more firmly. He got what he wanted out of the exchange: information about what you want. Watch him use it.
+- *Exactly at DC:* He gives you the concession. Nothing extra. The relationship has not warmed; he is just not fighting you on this specific thing.
+- *5 above DC:* He gives you the concession and one thing you did not know to ask for: why he made the calculation he made. That is the interesting part. Give it freely.
 
 ---
 
@@ -567,12 +567,12 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Intimidation or pressure:* Genuine sadness. She will not fight back. She will still try to complete her mission, now without the party.
 - *Deception (claiming false divine knowledge):* She knows immediately. "That is not true. Why are you saying it?" Relationship resets to Stranger tier; she will not be deceived a second time.
 
-**Temporal gate:** Her true identity as Mars' daughter is accessible Sessions 3-4 only, after the party has done something genuine in her presence (not just talked to her; acted in a way that showed what they value). Before that moment, she has not decided to trust them enough.
+**Temporal gate:** Cassia's true identity as Mars' daughter only becomes available in Sessions 3-4, and only after the party has done something genuine in her presence. Talking is not enough: she needs to see what they do under pressure. Before that moment she simply has not decided to trust them with it. The window does not close permanently: it opens when they earn it, and not before. Do not force this. Wait for the moment that earns it.
 
 **Partial success text:**
-- *5 below DC:* She gives you the filtered version of the truth: accurate, incomplete.
-- *Exactly at DC:* She gives you the truth she is comfortable sharing.
-- *5 above DC:* She gives you the truth and the feeling behind it: what it costs her to know what she knows.
+- *5 below DC:* She gives you the filtered version. It is accurate. It is also incomplete. Do not flag the incompleteness; let them notice it.
+- *Exactly at DC:* She gives you the truth she is comfortable sharing. That is real trust. Treat it as such.
+- *5 above DC:* She gives you the truth and the cost of knowing it. What it feels like to carry what she carries. That is the moment the table goes quiet. Let it.
 
 ---
 
@@ -595,12 +595,12 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Flattery or appeals to his career:* He stops talking. Polite, final. The conversation has ended.
 - *Asking him to betray the legion:* Hard refusal. He will bend rules (cover for a necessary action, look the other way once). He will not break the oath. This line is permanent and does not shift regardless of relationship tier.
 
-**Temporal gate:** His knowledge of what Corvinus has been hiding is accessible only after Session 2, when he has decided the party is trustworthy. He does not volunteer it; he waits for someone to ask the right question. The right question is "what do you know about Corvinus that you haven't reported."
+**Temporal gate:** Varro's knowledge of what Corvinus has been hiding only becomes available after Session 2, once he has decided the party is worth trusting with it. He does not volunteer it: he waits for someone to ask the right question. The right question is "what do you know about Corvinus that you haven't reported." The window does not close on its own: he is simply waiting for someone to ask correctly. If nobody asks, the information sits there and the party navigates Session 3 without it. That is a real cost.
 
 **Partial success text:**
-- *5 below DC:* He gives you the facts without his assessment.
-- *Exactly at DC:* Facts plus his assessment of the immediate situation.
-- *5 above DC:* Assessment plus what he would do and why — his full tactical thinking, offered as a peer.
+- *5 below DC:* Facts only. No interpretation. He is giving you the raw material and waiting to see what you do with it.
+- *Exactly at DC:* Facts plus his read of the immediate situation. This is Varro being useful.
+- *5 above DC:* His full tactical thinking, offered peer-to-peer. What he would do and why. This is what it sounds like when Varro actually trusts someone.
 
 ---
 
@@ -622,12 +622,12 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Physical threat:* He capitulates immediately. Then looks for the exit. He will betray the party the first opportunity he safely can. Use only if you want short-term compliance and long-term instability.
 - *Appealing to his Roman virtue:* He is moved, briefly. Then remembers his mission. Then becomes more defensive than before because you have touched something genuine and he cannot afford to follow it. Net result: harder to reach.
 
-**Temporal gate:** His moment of doubt is Session 2, Scene 3 only. Before that scene: his performance is intact. After that scene: he has decided and is no longer uncertain. The DC 15 Insight check during that window reveals the opening; if missed, negotiation is replaced by confrontation as the only productive option.
+**Temporal gate:** Lucius's moment of genuine doubt is Scene 3 of Session 2 only. Before that: his performance is fully intact, there is nothing to read. After that scene ends: he has made his decision and locked it down. The DC 15 Insight check exists only inside that window. Miss it and negotiation becomes confrontation as the only path forward. The window closes because he chose -- not because time ran out. He closes it himself. That distinction matters: if the party catches him in time, they are catching a man in the act of choosing.
 
 **Partial success text:**
-- *5 below DC:* He tells you what he wants you to think.
-- *Exactly at DC:* He tells you something true, wrapped in enough performance that you have to work to identify which part it is.
-- *5 above DC:* He tells you something true, drops the wrapping, and then immediately wishes he had not. He is more useful and more dangerous now.
+- *5 below DC:* He tells you what he wants you to think. Fluid, professional. Nothing useful.
+- *Exactly at DC:* Something true arrives, wrapped in enough performance that finding it takes work. The players feel like they are doing archaeology. That is correct.
+- *5 above DC:* He tells you something true, drops the performance around it, and immediately regrets it. He is more honest now and also more dangerous. Do not soften either half of that.
 
 ---
 
@@ -650,12 +650,12 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Attack first:* He fights until he respects them. He will offer honorable single combat rather than continued battle. He never runs. If defeated honorably: the relationship advances to Trusted automatically. If defeated dishonorably (multiple attackers, ranged, ambush): he is a permanent enemy.
 - *Promise something Roman on behalf of the Senate:* He listens. His expression does not change. He has heard Rome's promises before.
 
-**Temporal gate:** His dying admission (the Session 3 moment) is only available after the grove ritual, when he has seen whether the party made the genuine sacrifice the grove requires. Before that: he will not say it because he does not yet know whether they deserve to hear it.
+**Temporal gate:** Vercingetorix's dying admission only becomes available after the grove ritual, when he has seen what the party actually did when the cost was real. Before that he does not know whether they deserve to hear it. This is not withholding: it is honest. He will not give that trust to people who have not demonstrated they can handle it. The ritual is the test. If they pass it -- genuine sacrifice, not a token -- he has his answer. The window does not close; it opens.
 
 **Partial success text:**
-- *5 below DC:* He tests you. The information remains behind the test.
-- *Exactly at DC:* He gives you what you acknowledged. No more.
-- *5 above DC:* He gives you the information and one thing you did not know to ask: a specific route, a specific warning, a specific name.
+- *5 below DC:* He tests you. The information is behind the test, waiting. Let the test be real.
+- *Exactly at DC:* He gives you what you acknowledged. Exactly that. He is precise.
+- *5 above DC:* He gives you the information and one thing you did not know to ask for: a route, a warning, a name. This is Vercingetorix being generous. It does not happen often. Notice it.
 
 ---
 
@@ -678,12 +678,12 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Physical threat or confrontation:* He is never in the same room as violence he ordered. His guards are immediately present. He disappears. He will not be caught this way.
 - *Attempting to negotiate with him (if contact is made):* He engages genuinely and is persuasive and almost right. He will not be moved from his course by argument; he has already had every argument. What changes him is evidence that his plan is failing, not that it is wrong.
 
-**Temporal gate:** The full picture of his divine pacts (the DC 17 result) is only accessible in Session 4 or later, when enough of his Plan B has been executed to leave evidence. Earlier investigation yields DC 12 or DC 15 results at best.
+**Temporal gate:** The DC 17 result about Brutus's divine pacts is not available before Session 4. Not because the information is hidden: because Plan B has not been executed yet. There is no evidence to find. Earlier sessions yield DC 12 and DC 15 results at best, and that is the honest limit of what the evidence supports. When Session 4 begins and the sleeper agents start moving, the picture completes. If the party investigates then, the evidence is there. The window does not close: it opens when the events create the trail.
 
 **Partial success text:**
-- *5 below any DC:* You have confirmed he exists and is connected. His method and goal remain opaque.
-- *Exactly at DC:* You have what the DC describes. He has given you a problem without its solution.
-- *5 above DC:* You have what the DC describes and the one specific thing you can do about it — the vulnerability he does not know you have found.
+- *5 below any DC:* He exists. He is connected. That is all you can confirm. It is not nothing; it is a thread.
+- *Exactly at DC:* You have what the DC describes, clearly. He has handed you a problem without its solution. That is the right feeling.
+- *5 above DC:* You have the picture and the one specific thing you can do about it: the vulnerability he does not know you found. Deliver this quietly. It should land.
 
 ---
 
@@ -707,9 +707,9 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Deception:* He knows. He does not punish it; he simply does not engage. The trial remains. The option that deception was meant to bypass is now unavailable.
 - *Appeals to Roman virtue (without demonstrated virtue):* "You invoke the words. Invoke the deeds."
 
-**Temporal gate:** Mars is persuadable only in the window after the three kneeling witnesses and before the final trial begins. Outside that window: the trial proceeds on its original terms. The party has one conversation.
+**Temporal gate:** Mars is persuadable only in the window after the three kneeling witnesses kneel and before the final trial begins. That window is one conversation. Outside it: the trial proceeds on its original terms and arguments do not move him. The reason is simple: he opens to genuine preparation and closes to delay. If they used the procession to prepare -- kneeling witnesses, actual sacrifice, clear intent -- the window is real. If they treated the procession as a formality, the window never opened.
 
 **Partial success text:**
-- *5 below DC:* He gives another trial. This is not punishment; it is his version of "try again."
-- *Exactly at DC:* He adjusts. The outcome range shifts by one option in the party's favor.
-- *5 above DC:* He explains something he does not explain to most people. Not mercy; understanding. He has decided they have earned it.
+- *5 below DC:* He gives another trial. This is not punishment: this is how he says "try again." Do not frame it as failure at the table.
+- *Exactly at DC:* He adjusts. The outcome range shifts by one option in the party's favor. That is a real concession from a god. Name it.
+- *5 above DC:* He explains something he does not explain to most people. Not mercy: understanding. He has decided they have earned it. Take a breath before you describe this. It matters.

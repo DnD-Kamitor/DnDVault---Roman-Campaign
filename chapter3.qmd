@@ -450,42 +450,42 @@ This session should feel like the pressure never fully releases. The investigati
 
 ### Skill Audit: Session 3
 
-**Forest travel event skill checks (existing d8 table):**
+**Forest travel: spread skill demands across the table.**
 
-Each d8 event should use a different skill family so no single character dominates the travel. Confirm this when running:
+The travel events should each call on a different character's strength. Check this before you run. Nobody should dominate the forest crossing. The table below shows the right approach and a backup approach for each event: both should work, both should feel like genuine options.
 
-| Event | Primary skill | Secondary (different approach) |
+| Event | Primary skill | Alternative (different door, not failed door) |
 |---|---|---|
 | Wind-felled oak | Athletics DC 12 to clear or climb | Survival DC 10 to find a safe path around |
-| Hanging charms | Persuasion DC 13 to pass without offense | Religion DC 11 to understand the boundary's intent and perform a basic acknowledgment rite instead |
-| Silent animal trail | Survival DC 12 to track | Nature DC 14 to identify what specifically is hunting (wolf vs. something else) |
-| Old Roman standard | Investigation DC 12 to read dates | History DC 14 to know which expedition this is from and what happened to it |
-| Boggy hollow | Acrobatics DC 12 | Nature DC 10 to identify firm ground by plant type; this route avoids the roll |
-| Watchful raven | Insight DC 12 to interpret correctly (omen, not threat) | Animal Handling DC 10 to acknowledge it; counts as respectful |
-| Blood-slick stones | Religion DC 14 to read runes | Investigation DC 12 to date the sacrifice (within the last 24 hours) |
-| Whispering pines | Wisdom save DC 12 | Performance DC 12 to "give" the whispers a response that satisfies them (costs 1 round but removes the disadvantage) |
+| Hanging charms | Persuasion DC 13 to pass without offense | Religion DC 11: understand the boundary and perform a basic acknowledgment rite -- no social check required, just knowledge |
+| Silent animal trail | Survival DC 12 to track | Nature DC 14 to identify the specific hunter; wolf signs vs. something else changes the response |
+| Old Roman standard | Investigation DC 12 to read dates | History DC 14 to name the expedition and what happened to it; this one lands harder |
+| Boggy hollow | Acrobatics DC 12 | Nature DC 10 to read the plants and identify firm ground; this route avoids the roll entirely |
+| Watchful raven | Insight DC 12 to read it correctly (omen, not threat) | Animal Handling DC 10 to acknowledge it respectfully; the raven leaves satisfied |
+| Blood-slick stones | Religion DC 14 to read runes | Investigation DC 12 to date the sacrifice; within 24 hours changes everything |
+| Whispering pines | Wisdom save DC 12 | Performance DC 12 to give the whispers a response that satisfies them; costs one round but removes the disadvantage |
 
 **Temporal gate: river crossing boot print:**
 
-Available only when the party first crosses the Vitulans river. One round window, then rain erases it.
+One round. DC 11 Perception, and only if someone is watching the bank rather than the river.
 
-- *DC 11 Perception (watching the bank specifically, not the river):* A military sandal print, size 10, made within the last two hours, heading north.
-- *What it opens:* The party knows Corvinus has scouts ahead of them. This changes their approach to the grove (they can send a decoy or move off the main path). Without this, they arrive at the grove with Corvinus's scouts already watching.
-- *Miss the check:* The boot print washes away at the end of the crossing scene. The scouts appear as a surprise in Zone 4.
+- *On success:* Military sandal, size 10, made within the last two hours, heading north. Corvinus has scouts ahead of them.
+- *What it opens:* They can send a decoy, move off the main path, or prepare for scouts at the grove. Without this read, Corvinus's scouts are already watching when they arrive. One check, one round. Make it count.
+- *Why the window closes:* Rain washes it. The crossing scene ends, the rain intensifies, the print is gone. Not because the game decided to close the door -- because that is what rain does to boot prints in mud.
 
-**Partial success: Thusnelda trust (the first meeting):**
+**Thusnelda trust: the first meeting.**
 
-Currently the Thusnelda encounter moves to alliance through narrative. Add DC structure for the key moment when she decides whether to lead the party to the grove:
+Do not move this entirely through narrative. The key moment is when she decides whether to lead them to the grove. Give it a DC.
 
-- *DC 14 Persuasion (backed by any positive act: sparing a Germanic prisoner, bringing a gift, having Vercingetorix vouch):* She leads them. Standard result.
-- *DC 18 (or: Germanic language proficiency, or: DC 15 Religion to speak her ritual language directly):* She leads them AND volunteers the third piece of grove knowledge the party did not know to ask for (the lock in the altar's face, and what it opens).
-- *Fail:* She says *"Tomorrow."* She will lead them tomorrow. The party camps in the forest for one night. One additional forest event from the d8 table occurs overnight. The window does not close; it costs time.
+- *DC 14 Persuasion, backed by something genuine (sparing a prisoner, a gift, Vercingetorix vouching):* She leads them.
+- *DC 18, or Germanic language proficiency, or DC 15 Religion to speak her ritual language:* She leads them AND volunteers the piece of grove knowledge they did not know to ask for: the lock in the altar's northwest face, and what it opens.
+- *Fail:* She says "Tomorrow." That is not a refusal. The party camps in the forest for one night. One additional forest event occurs overnight. The window does not close: it costs time. That is the right consequence.
 
-**Cascade unlock: Vercingetorix's dying admission:**
+**Cascade unlock: Vercingetorix's dying admission.**
 
-Available only after the ritual succeeds (or meaningfully fails), when the party has demonstrated what they actually value. If the party made a genuine sacrifice in the grove:
+This only becomes available after the ritual, when the party has shown what they are made of. A genuine sacrifice opens it; a token sacrifice does not. That is not a punishment: it is Vercingetorix applying the same standard he applies to everyone.
 
-- DC 14 Insight to notice Vercingetorix is holding something back after the ritual.
-- If the player asks directly: he will tell them.
-- The admission: he knew three months ago that Brutus's agents were in contact with two of the warband chieftains surrounding Vindolanda. He did not tell the party because he was not yet sure the party was worth trusting with information that would get them killed. Now he is sure.
-- *What it opens:* In Session 4, the party can split the siege by targeting the specific chieftains Brutus bought. Sigrun has additional detail if they find her.
+- DC 14 Insight after the ritual to notice he is holding something back.
+- If a player asks directly: he tells them.
+- The admission: he knew three months ago that Brutus's agents were in contact with two of the warband chieftains surrounding Vindolanda. He did not say anything because he was not sure the party was worth trusting with information that would get them killed. Now he is sure.
+- What it opens in Session 4: the party can split the siege by targeting those specific chieftains. Sigrun knows more if they can reach her. Write this in your Session 4 notes now.
