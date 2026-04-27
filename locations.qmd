@@ -285,6 +285,32 @@ Three things the party can do in the vicus that are impossible inside the fort:
 
 ---
 
+---
+
+## Camp Level Location Unlocks
+
+As Camp Level rises (see `camp_economy.qmd`), the physical state of key fort locations changes. This table gives the DM a quick reference for what each location looks, feels, and functions like at each level. Use it when describing a location the party revisits after an upgrade, or when adjudicating what resources are available at a given point in the campaign.
+
+| Location | Level 1 | Level 2 | Level 3 |
+|---|---|---|---|
+| **North Gate** | Patched; functional; no ballista crew; standard gate AC (17) | Reinforced with new timber; one ballista operational; +1d10 piercing damage in any siege round the party controls the wall | Two ballistae operational; covered approach eliminated; attackers take opportunity attacks from the wall before reaching the gate |
+| **Valeria's Corner** | Field kit in a barracks corner; standard Medicine DC; standard hit dice recovery | Surgery properly outfitted; +2 to all Medicine checks made here; max hit dice result on short rest inside | Field hospital; Valeria can stabilize any downed character as a reaction once per session; no action cost to the party |
+| **Shrine** | Informal; Paterculus tends it alongside other duties; standard Religion DC | Formally tended by rotational lay-priest; Religion checks inside the fort reduced by 2 DC | Dedicated; Mars ritual DCs reduced by 3; Cassia's augury DC drops by 2; the altar has been active every morning for three sessions |
+| **Quartus' Office** | Standard ledger items only; requisitions require officer authorization | Heavy equipment access (siege weapons, plate components, bulk rations) with standard requisition | Full military supply chain including pilum stockpile and *arcuballista* bolts; party no longer requires officer authorization for heavy equipment |
+| **Rufus' Workshop** | Maintenance, sharpening, and arrow production only; custom work unavailable | Weapon upgrades available: +1 property to one weapon per downtime; costs raw materials (not purchasable) | Masterwork upgrades: permanent +1 to one weapon or piece of armor per session; the forge runs through the night if needed |
+| **Granary** | Standard construction; fire spreads on the first successful arson roll | Fire-resistant treatment on interior walls; arsonist requires two successful rolls to start an uncontrolled fire | Fully protected; fire requires three consecutive failed defensive rounds to spread; the granary stores are the last thing the fort loses |
+
+**DM notes on running the table:**
+
+Each location upgrade is a physical change the party can see. Do not just tell them "the surgery is upgraded." Describe Valeria carrying a second chest into a space that now has walls. Describe the ballista crew drilling on the north wall at dawn. Describe the granary's new clay-plastered walls when the party passes through.
+
+If the party triggers the Level 2 upgrade mid-session, apply the effects at the start of the next scene. If they trigger Level 3 during the siege, the DM decides whether the effects apply immediately (if the trigger was dramatic enough to warrant it) or at the next session.
+
+**Cross-reference:** `camp_economy.qmd` contains the full upgrade trigger list, morale pool mechanics, and trader-level effects. This table covers only the physical location changes.
+
+---
+
+
 ## The Germanic Forest
 
 The Teutoburg Forest region: old-growth oak and beech, broken by streams and clearings, with a distinct sense of being older than the Roman roads that stop at its edge. The forest is not sentient. It is not malevolent. It is simply very, very old, and things that are old enough develop weight.

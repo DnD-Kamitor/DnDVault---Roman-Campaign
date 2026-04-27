@@ -453,3 +453,134 @@ The legion has adapted a lesser version of this honor for kills against classifi
 Three confirmed kills under this standard earn permanent advantage on Intimidation checks against mundane soldiers, who have heard the stories.
 
 **Note for DM:** Each session chapter has a brief note on which creatures qualify for this honor and which encounters are structured as single-combat opportunities if the players pursue them.
+
+---
+
+## Taking Soldiers Into the Field
+
+The party is not operating alone. Fort Vindolanda has trained soldiers. The question is whether those soldiers can be deployed beyond the walls, and under what conditions.
+
+This section gives the DM and players a concrete system for recruiting legionaries as field companions, managing them during play, and handling the consequences when things go wrong. It is not a summoning mechanic. It is an employment relationship with an institution that has rules.
+
+---
+
+### Recruitment
+
+**Authorization requirement:** The party needs Trusted-tier or better relationship with Varro (the fort's senior centurion) before any soldier deployment outside the walls is approved. If Varro is dead, the current senior NCO substitutes, but the relationship must be re-established with that person from scratch. There is no workaround: soldiers on this frontier do not take orders from unauthorized personnel, regardless of what those personnel can offer.
+
+**Named soldiers:** Flavus (see stat block below) becomes individually recruitable after the Session 2 skill cascade: DC 17 at the wall position identifies him by name and establishes a direct bond. Once named, he can be recruited for any session with Varro's authorization and a direct ask. He will say yes. He will not explain why he says yes. He will be there when the party is ready to move.
+
+**Generic soldiers:** Available for deployment in groups of up to 3 per party member. Varro approves deployment by session, not by mission. If the party misused soldiers in the previous session, he will want an explanation before approving the next deployment.
+
+**Requesting deployment (in-play):** Find Varro before the session's main action begins. He will ask one question: "Where are you going and what for?" Answer honestly or at disadvantage for social checks with him for the rest of the session. A DC 13 Persuasion check is required unless the party has Allied-tier relationship with him, in which case he approves without a roll.
+
+---
+
+### Flavus
+
+*Named legionary. Session 2 cascade unlock.*
+
+**Fighter 3** | HP 28 | AC 16 (chain mail, shield)
+
+| STR | DEX | CON | INT | WIS | CHA |
+|---|---|---|---|---|---|
+| 16 (+3) | 12 (+1) | 14 (+2) | 10 | 13 (+1) | 9 (-1) |
+
+**Skills:** Athletics +5, Perception +3, Intimidation +1
+
+**Actions:**
+- *Gladius:* Melee weapon attack. +5 to hit, reach 5 ft, one target. 1d6+3 piercing.
+- *Heavy Pilum (thrown):* Ranged weapon attack. +5 to hit, range 30/60 ft, one target. 1d8+3 piercing. On a hit, the target's shield is unusable until repaired. Cannot be thrown back by the target.
+- *Second Wind (1/short rest):* As a bonus action, regain 1d10+3 hit points.
+
+**Personality:** Flavus speaks only when he has something worth saying. He follows orders without complaint. He will not abandon a downed ally under any circumstances, including orders to leave them. If the party tries to order him to leave a fallen comrade, he will look at the party once and return to the body. This is not insubordination. It is the one line he has drawn.
+
+**Loyalty:** Flavus does not make morale checks. The only condition that breaks his resolve is the party causing allied casualties through reckless action in a way he cannot interpret as necessary. If that happens once: he says nothing and finishes the mission. If it happens twice in the same campaign: he requests reassignment through Varro. This is not a hostile act. He will still speak to the party. He simply will not go back into the forest with them.
+
+**Voice lines:**
+1. *Before a difficult breach:* "We go when you say go. Don't change your mind once we're moving."
+2. *When asked if he's afraid:* "Not of them." *(He does not complete the sentence.)*
+3. *After the mission, if casualties were avoided:* "Good." *(He cleans his gladius. That is the debrief.)*
+
+---
+
+### Generic Legionary
+
+*Standard deployed soldier. Available in groups per the recruitment rules above.*
+
+**Fighter 2** | HP 19 | AC 16 (chain mail, shield)
+
+| STR | DEX | CON | INT | WIS | CHA |
+|---|---|---|---|---|---|
+| 14 (+2) | 11 | 13 (+1) | 10 | 11 | 10 |
+
+**Skills:** Athletics +4
+
+**Actions:**
+- *Gladius:* Melee weapon attack. +4 to hit, reach 5 ft, one target. 1d6+2 piercing.
+- *Heavy Pilum (thrown):* Ranged weapon attack. +4 to hit, range 30/60 ft, one target. 1d8+2 piercing. On a hit, the target's shield is unusable until repaired.
+
+**Morale check DC 14 Wisdom required when:**
+- An ally drops to 0 HP within 10 feet of the soldier
+- The party retreats without orders
+- A supernatural creature appears with no warning and no officer gives immediate instructions
+
+**On a failed morale check:** The soldier freezes for 1 round. They defend themselves (AC and saving throws function normally) but will not advance, attack, or follow movement orders until the start of their next turn. A successful DC 12 Charisma (Intimidation or Persuasion) check from a party member as a bonus action breaks the freeze immediately.
+
+**On a successful morale check:** The soldier functions normally. After passing three morale checks in a single session, they gain advantage on all future morale checks for the rest of the campaign. Some soldiers discover what they are made of.
+
+---
+
+### Field Rules
+
+**Maximum deployment:** 1 named companion and 2 generic soldiers per party member. A party of four can field Flavus plus up to 8 generic soldiers. Varro will not approve more than this regardless of circumstances.
+
+**Initiative:** Companions roll their own initiative and act on their own turn. They are not player-controlled; the DM runs them with the goal of supporting the party's stated plan, not substituting for it. If the party has not stated a plan, companions hold their position until ordered.
+
+**Legal limits:** Companions will not violate Roman military law regardless of orders. Specifically: they will not attack civilians who have not attacked first; they will not abandon the unit's standard in the field; they will not follow orders given by a character under obvious supernatural compulsion (corruption level 4 or higher creates visible signs; a soldier with 5+ years of frontier service can recognize them). A party member who attempts to order a violation may attempt DC 16 Persuasion; failure locks out that soldier's cooperation for the session.
+
+**Upkeep:** Each companion consumes 1 ration per day from the fort's supply. Quartus tracks this. If the party deploys soldiers without arranging rations through him, he notes the discrepancy; the third undocumented deployment costs the party 1 relationship step with him permanently.
+
+---
+
+### Consequences
+
+**Named companion death:** If Flavus dies in the field, Varro drops one relationship tier permanently. He does not blame the party in words. He does not need to. He was the one who approved the deployment.
+
+**Heavy generic casualties:** If more than half the generic soldiers deployed in a single session die, Varro requires a direct conversation before approving any future deployment. No Persuasion check is needed; the conversation is required. He will listen. He will ask one question. The answer determines whether he approves the next request.
+
+**Returning wounded:** If the party returns with wounded soldiers and brings them directly to Valeria before doing anything else, Varro notes this without comment. It counts as a positive relationship action for him regardless of how the mission went.
+
+---
+
+### The Teutoburg Forest Scenario: "The Last March"
+
+*Optional side mission, available Session 3 or as a standalone.*
+
+Varro mentions, once, that three legionaries who survived the post-Teutoburg punitive campaigns left their unit's standards at a grove site three days north. They were never recovered. A soldier who finds them and brings them back would be doing something that matters. He does not offer this as an order. He offers it as a thing that exists.
+
+**Setup:** The party takes 3 legionaries into the forest to find the site of Varus' disaster. Flavus, if available and trusted, is the right choice for this. He will go without being asked a second time.
+
+The site is real. It is burned, overgrown, and unremarkable. There are no bodies; the crows and the forest took those 165 years ago. There are three broken staff-shafts in the ground, stripped of their eagles and wrapping, jutting from the soil at the angles they fell.
+
+**The journey there (use the forest travel events table from `chapter3.qmd` with soldier variants):**
+
+| d8 Event | Soldier reaction | Effect |
+|---|---|---|
+| 1-2 (omens) | Soldiers dismiss it loudly and with certainty. They are wrong. | +1 corruption pressure for any character within earshot |
+| 3-4 (natural hazard) | Soldiers help without being asked: clearing debris, bracing the crossing, passing the load. | DC of the hazard reduced by 2 |
+| 5-6 (spear manifestation) | Soldiers cannot see it. They see the party's reactions to something invisible. DC 12 Wisdom morale check. | On failure: soldier freezes for 1 round and will not discuss what they saw afterward |
+| 7-8 (NPC moment) | Soldiers witness it and ask a question the party cannot answer cleanly: "What are we doing here, exactly?" | The party must answer honestly or lose 1 morale point |
+
+**At the grove site:**
+
+The soldiers look at the broken staff-shafts. The oldest among them -- the one who has been here longest -- kneels and touches the nearest one. He says nothing for a moment. Then: "Fifteen thousand men."
+
+He picks up the shaft. It crumbles slightly. He holds what remains of it.
+
+The party may find the site significant. The soldiers find it gone. The contrast is the encounter. There is nothing to fight. There is nothing to resolve. There is only the question of what it means to stand in a place where fifteen thousand men died for reasons that were not their fault, and carry one broken piece of it home.
+
+**Return to the fort:** Varro receives the three broken shafts without ceremony. He puts them in the shrine. He looks at the party: "Good."
+
+That is all he says. It is enough.
+
