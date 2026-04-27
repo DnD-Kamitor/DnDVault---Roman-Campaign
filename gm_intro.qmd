@@ -713,3 +713,35 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *5 below DC:* He gives another trial. This is not punishment: this is how he says "try again." Do not frame it as failure at the table.
 - *Exactly at DC:* He adjusts. The outcome range shifts by one option in the party's favor. That is a real concession from a god. Name it.
 - *5 above DC:* He explains something he does not explain to most people. Not mercy: understanding. He has decided they have earned it. Take a breath before you describe this. It matters.
+
+---
+
+## Cross-Session Integration: Cascade Unlock Master Table
+
+Track these across sessions. A player who hit DC 17 in Session 2 has earned what Flavus brings in Session 4. Do not let that payoff disappear.
+
+At the start of each session, check the "Session achieved" column. Any entry from a previous session that was hit: note it in your session record before play begins. The unlocks do not announce themselves. You deliver them at the right moment.
+
+| Session achieved | DC required | Skill | What it unlocks | When it activates |
+|---|---|---|---|---|
+| Session 1 | DC 17 History (Hall of Shields) | Intelligence (History) | Investigation DC 15 to identify Legion XVII markings on ruins armor; opens the question of who brought equipment that should not exist here | Any time party examines ruins equipment in Sessions 1-3 |
+| Session 1 | DC 14 Insight (Corvinus, before Tribune arrives) | Wisdom (Insight) | Corvinus's fear is visible beneath his ambition; every future negotiation with him can reference the debt he is managing; gives context for his Session 3-4 behavior | Sessions 2-4 whenever Corvinus is a negotiation target |
+| Session 1 | DC 13 History (Hall of Shields, 5-above) | Intelligence (History) | The tribal arrangement implies a single authority over all four groups; Session 3 answers it; players who hit this can make the connection themselves when Thusnelda explains the grove | Session 3, grove arrival |
+| Session 2 | DC 17 Leadership (wall defense, "Flavus named") | Wisdom (Insight) or Charisma (Persuasion during battle) | Flavus, 19 years old, first posting: he appears in Session 4 as an escort volunteer without being recruited. Write his name in your session record now. | Session 4, procession preparation scene |
+| Session 2 | DC 14 Insight (Tribune Lucius, Scene 3 only) | Wisdom (Insight) | Negotiation DC with Lucius in Scene 4 drops from 17 to 14; player can invoke the hesitation directly: "You paused. You know this is not true." | Session 2, Scene 4 only; closes at end of Scene 3 |
+| Session 2 | DC 15 Germanic Tribes (knowledge check) | Intelligence (History) | First Persuasion check with Vercingetorix is DC 12 instead of DC 15; character knows not to offer Roman status and knows the correct opening move | Sessions 2-3 whenever Vercingetorix is a social target |
+| Session 3 | DC 14 Insight (Vercingetorix, after grove ritual) | Wisdom (Insight) | He reveals that Brutus's agents contacted two warband chieftains surrounding Vindolanda; Sigrun knows which chieftains; party can split the siege in Session 4 | Session 4, siege preparation; opens targeting of specific chieftains |
+| Session 3 | DC 17 Divine Signs (knowledge check, pre-campaign) | Wisdom (Religion) | Paterculus's Session 4 omen document is interpretable at DC 13 Religion instead of DC 17; party understands Mars is arriving on schedule, not destroying on impulse | Session 4, when Paterculus shares written omen document |
+| Session 4 | DC 13 Insight (spear weight shift on Elder Stair) | Wisdom (Insight) | Advantage on first Persuasion check with Mars in the antechamber if player mentions the spear's direction; Mars finds it interesting that they were paying attention to what the divine object was doing | Session 5, Option C first argument only |
+| Session 5 | DC 13 Insight (Mars' first look, opening moment) | Wisdom (Insight) | The character Mars looks at first has advantage on the first Option C argument if they open with the grove sacrifice; the look closes when Mars speaks | Session 5, Option C; window closes when Mars addresses the party |
+| Session 5 | DC 12 Insight (Varro holding back, epilogue) | Wisdom (Insight) | Varro says the one thing he has been holding back across five sessions; one sentence written before Session 5 based on the actual campaign; give it to the player who paid attention to Varro | Session 5 epilogue only; requires Varro alive and present |
+
+### How to Use This Table
+
+Before Session 1: skim all entries and note which depend on Session 0 choices (language proficiencies, backgrounds).
+
+Before each session: check the "Session achieved" column for every entry from prior sessions. Mark which ones the party actually hit. Those are active.
+
+During play: deliver unlocks at the listed activation moment. Do not announce them as rewards. Just play the world as if those things are true, because they are.
+
+If the party missed a check: the unlock does not activate. The alternative path is documented in the relevant chapter's Skill Audit section. No dead ends: different tool, different door.
