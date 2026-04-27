@@ -147,9 +147,8 @@ The most important question: what does each major NPC now believe about you? Not
 
 ---
 
-## DC Modifier Reference Table
-
-*GM reference. Print this alongside the session notes.*
+<details>
+<summary>**GM Reference: DC Modifier Table** *(click to expand)*</summary>
 
 Relationship statement language maps directly to numerical DC modifiers for all skill checks with that NPC. These modifiers stack with signature skill bonuses from `skill_framework.qmd`.
 
@@ -163,9 +162,12 @@ Relationship statement language maps directly to numerical DC modifiers for all 
 
 **Applying modifiers:** If the party base is "they owe you something real" (-4) and an individual character has a personal modifier from a private interaction (+2 toward ally), that character's effective modifier is -5 (halfway between the tiers). Use judgment; the modifiers are a guide, not a formula.
 
+</details>
+
 ---
 
-## Calling in Debts: Mechanical Rules
+<details>
+<summary>**GM Reference: Calling in Debts — Mechanical Rules** *(click to expand)*</summary>
 
 **Standard favor (one smooth success):** Calling in a favor from an NPC who owes you something small or real grants automatic success on the next single check with that NPC. No roll required. The request must be within what the relationship can reasonably support (Quartus gives you the supply information you asked for; he does not forge the Legate's orders).
 
@@ -187,9 +189,12 @@ Some NPCs will honor multiple debts; others will honor exactly one before calcul
 | **Cato** | One per side | He has picked a side; he will honor debts to that side indefinitely and to the other side not at all |
 | **Sigrun** | Two per season | She travels; debts accumulated when she was here may not be cashable when she returns |
 
+</details>
+
 ---
 
-## Reputation Damage Rules
+<details>
+<summary>**GM Reference: Reputation Damage Rules** *(click to expand)*</summary>
 
 When the party fails badly, breaks trust, or uses the wrong approach repeatedly, relationships fall. Document specific damage thresholds here so the DM applies them consistently.
 
@@ -221,3 +226,5 @@ These actions represent genuine betrayals, not just failed rolls.
 The DM does not announce "your relationship with Varro dropped." The NPC's behavior changes. Varro's responses become shorter. He stops volunteering information. He answers questions accurately and says nothing else. The party should notice the change before they understand the cause. Only if they ask directly -- "have we done something to offend you?" -- does Varro tell them what happened.
 
 This is how reputation damage worked in Rome: the cold shoulder before the formal censure. Observe it; it is more devastating than a mechanical penalty.
+
+</details>

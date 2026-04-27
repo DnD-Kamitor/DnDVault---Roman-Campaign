@@ -162,7 +162,12 @@ He responds with gratitude to anyone who takes the religious situation seriously
 | Ritual blessing (weapon blessing from the *Quinquatria* ritual, 24-hr +1 on first attack after invoking Mars) | Yes | 30 min, proper prayer required |
 | Identification of omen type (*auspicium*, *prodigium*, or *monstrum*) | Yes | Free; he considers this professionally obligatory |
 
-**Augury in play:** When the party uses the Augury service, Paterculus rolls a DC 13/15/17 Religion check (hidden from players). On DC 13: "will this action lead toward success or failure?" (one word: *felix* or *infaustus*). On DC 15: "what is the nature of the obstacle?" (a one-sentence description of the category of problem, not the specific solution). On DC 17: "what specific thing will make the difference?" (a concrete actionable answer). On failure: *auspicia turbata* -- the signs contradict each other; no answer, Augury unavailable until next session.
+<details>
+<summary>**GM Reference: Augury in Play** *(click to expand)*</summary>
+
+When the party uses the Augury service, Paterculus rolls a DC 13/15/17 Religion check (hidden from players). On DC 13: "will this action lead toward success or failure?" (one word: *felix* or *infaustus*). On DC 15: "what is the nature of the obstacle?" (a one-sentence description of the category of problem, not the specific solution). On DC 17: "what specific thing will make the difference?" (a concrete actionable answer). On failure: *auspicia turbata* -- the signs contradict each other; no answer, Augury unavailable until next session.
+
+</details>
 
 #### Camp Level 2 Additions
 
@@ -819,6 +824,9 @@ How each trader responds to the three most likely party approaches.
 
 ## Trader Skill DC Reference
 
+<details>
+<summary>**GM Reference: Full DC Tables for All Six Traders** *(click to expand)*</summary>
+
 Detailed DC tables for all six traders using the seven-principle framework from `skill_framework.qmd`. Each trader has four tiers, a signature skill, failure states, cascade unlocks, and investment options.
 
 ### Quartus: DC Table
@@ -962,6 +970,8 @@ Detailed DC tables for all six traders using the seven-principle framework from 
 **Investment options:**
 - Trade any forest-sourced material at below-market price unprompted: relationship advances one step; she knows you understand the material has real value.
 - Offer amber to Paterculus in her presence: she volunteers rune translation capability; cascade triggered.
+
+</details>
 
 ---
 
