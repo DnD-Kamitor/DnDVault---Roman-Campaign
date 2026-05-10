@@ -15,8 +15,8 @@ book:
     - part: "Part I: The World"
       chapters:
         - player_guide.qmd
-        - skills.qmd
         - peoples.qmd
+        - skills.qmd
         - session0.qmd
         - calendar.qmd
         - knowledge.qmd
