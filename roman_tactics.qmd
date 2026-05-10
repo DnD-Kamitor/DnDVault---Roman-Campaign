@@ -230,6 +230,12 @@ Stone: Range 40/80 ft. 1d4 bludgeoning. No secondary effect. Collected from the 
 
 Clay incendiary: Range 20/40 ft. 1d4 bludgeoning + 1d4 fire. Sets flammable objects alight on a hit (unattended objects catch fire; creatures wearing flammable materials make a DC 11 Dexterity saving throw or their clothing ignites, dealing 1d4 fire damage at the start of each of their turns until extinguished). Requires a bonus action to load (the clay shell must be handled carefully). Cost: 1 sp per 10. Weight: 2 lb per 10.
 
+*Glandes cum foramine* (whistling glandes): Range 30/60 ft. 1d6 bludgeoning. Clay and lead shot with 4-5mm holes that produce a sustained shriek in flight -- Burnswark Hill excavations confirmed these were in use in the 2nd century AD. On a miss by 4 or fewer (the shot passes close without connecting), the target must succeed on a DC 12 Wisdom saving throw or have disadvantage on its next attack roll. Against mounts and animals: the DC rises to 14 (animal nerves respond more sharply to the pitch). Cost: 8 cp per 20. Weight: 3 lb per 20.
+
+*Glandes inscriptae* (inscribed lead): Range 30/60 ft. 1d6 bludgeoning. Shot cast with messages: *FVLGVR* (lightning), the recipient's name, or cruder Roman commentary. Same stats as standard *glandes* on a hit. Before combat, if the enemy can see these being prepared and loaded (Perception DC 12), they make a DC 10 Wisdom saving throw; on a failure, they begin with disadvantage on their first attack roll (the psychological weight of seeing your name on the incoming shot). One-time morale effect per engagement. Cost: 6 cp per 20. Weight: 3 lb per 20.
+
+Terracotta shot (unfired clay): Range 35/70 ft. 1d4 bludgeoning. Lighter than lead and carries slightly further; less dense on impact. Can be made in the field: 1 hour of work with available clay and a simple mold produces 20 shot. Purchased stock is inconsistent because soldiers requisition the molds for other purposes. Cost: 3 cp per 20 when purchased; free to craft. Weight: 2 lb per 20.
+
 ---
 
 #### Arrow Types
@@ -241,6 +247,12 @@ Bodkin arrow: Standard range. On a hit against a target wearing non-metal armor 
 Broadhead arrow: Standard range. On a critical hit, the target takes an additional 1d4 piercing damage at the start of its next turn as the wound continues to open. Cost: 6 sp per 20. Weight: 2 lb per 20.
 
 Fire arrow: Standard range, but requires a bonus action to light from a torch or tinder before firing. Adds 1d4 fire damage, but only against flammable targets: wooden structures, oil-soaked surfaces, dry vegetation, or siege equipment. Against armored targets or in rain, the fire damage does not apply (the flame extinguishes on impact). Cost: 1 sp per 10 (includes pitch-soaked wrapping). Weight: 1 lb per 10.
+
+Trilobate arrow (three-bladed head): Standard range. Against targets wearing non-plate armor (leather, hide, scale, or chainmail), the attack ignores the armor's Dexterity modifier contribution to AC: the three blades cut around the articulation points that flexible armor relies on. On a critical hit, the target makes a DC 13 Constitution saving throw; on a failure, it suffers one level of exhaustion from blood loss (three wound channels simultaneously). Cost: 8 sp per 20. Weight: 2 lb per 20.
+
+Barbed arrow: Standard range. Standard damage on a hit. When the arrow is removed without medical attention, the barbs tear the wound open: removal deals an additional 1d4 piercing damage unless the remover succeeds on a DC 15 Medicine check or magical healing is applied to the wound first. A target who leaves a barbed arrow embedded takes 1 piercing damage at the start of each of their turns until it is removed. Cost: 7 sp per 20. Weight: 2 lb per 20.
+
+*Scythicon* (poison arrow, Scythian-style composite toxin): Standard range. On a hit, the target takes normal piercing damage and must succeed on a DC 14 Constitution saving throw. On a failed save: 2d6 poison damage immediately and 1d6 poison damage at the start of their next turn. On a success: half the immediate poison damage only, no ongoing effect. Rarity: not standard Vindolanda stock. Available through Sigrun's network, black market sources in the *vicus*, or captured tribal stores. A *medicus* who handles the arrows can identify the specific compound and antidote window with a DC 16 Medicine check. Cost: 1 gp per arrow when available. Weight: 1 lb per 10.
 
 ---
 
@@ -269,6 +281,22 @@ Light *pilum*: Martial weapon. Thrown (20/40 ft). 1d6 piercing. Deals +1d4 pierc
 A short, lead-weighted dart carried clipped to the inside of the shield. Soldiers carry up to 5 plumbatae without using any additional carry space (they ride the shield). Quick to throw, intended as a final volley before melee engagement.
 
 *Plumbata*: Simple weapon. Thrown (30/60 ft). 1d4 piercing. Ignores half cover: the weight carries it past low obstacles. A soldier can carry up to 5 plumbatae clipped to a *scutum* or *clipeus* without affecting equipment load. Cost: 1 sp per 5. Weight: 1/2 lb each.
+
+---
+
+#### *Verutum* (Auxiliary Javelin)
+
+A short, light throwing spear used by auxiliary infantry when pilum supply is restricted or cost is a factor. The shaft is thinner than a pilum and the head is not designed to bend on impact. This means it can be recovered and thrown again -- and it means the enemy can do the same. Auxiliaries who use it know to target enemies who will not have time to throw it back.
+
+*Verutum*: Simple weapon. Thrown (20/40 ft). 1d6 piercing. Retrievable after combat without a check (the head does not embed deeply). When thrown against a creature in *testudo* formation from the front arc, the attack automatically fails: the light tip does not penetrate the shield overlap. Cost: 1 sp. Weight: 1 lb.
+
+---
+
+#### *Lancea* (Cavalry Javelin)
+
+Longer than a *verutum*, shorter than a *contus*, designed for use from horseback. The rider's height and the horse's momentum carry the throw further than a dismounted soldier can manage. On foot, the length creates liability in close quarters, but it still outranges a *verutum* and hits harder. Cavalry auxiliaries typically carry two: one for the throw, one for the follow-up if the charge does not resolve the engagement.
+
+*Lancea*: Martial weapon. Thrown (25/50 ft mounted; 20/40 ft on foot). 1d8 piercing. When thrown from horseback after moving at least 20 feet this turn: +1d4 piercing damage (mounted momentum carries through). When used as a melee weapon while mounted: reach 10 ft. Disadvantage on attack rolls against targets within 5 ft when on foot (the length prevents effective close-in use). Cost: 3 gp. Weight: 4 lb.
 
 ---
 
@@ -306,6 +334,22 @@ Every legionary carries one. In the morning it digs the camp ditch; in the after
 
 ---
 
+#### *Contus/Kontos* (Heavy Cavalry Lance)
+
+The heavy lance of Roman cataphract cavalry and Parthian-style heavy horse. Two hands, two legs, and a horse's mass behind the strike. Without a horse it is a 12-foot pole too long to maneuver and too heavy to swing effectively. With a horse at full charge, it is the single most violent personal impact a single soldier can deliver. Dismounted troopers who pick one up in a fight tend to drop it within the first round and draw something shorter.
+
+*Contus*: Martial weapon. Two-handed, requires mount. Reach 10 ft (mounted only; 5 ft on foot). 1d12 piercing. Charge strike: when the attack follows moving at least 20 feet in a straight line this turn while mounted, it deals double damage on a hit. Dismounted consequence: if the rider is unmounted while carrying the *contus*, all attacks and Dexterity saving throws have disadvantage until the weapon is dropped. Dropping safely costs a full action; dropping instantly as a free action requires a DC 12 Dexterity saving throw to avoid tripping on the shaft. Cost: 25 gp. Weight: 15 lb.
+
+---
+
+#### *Falx* (Dacian Curved Blade)
+
+Captured from Dacian enemies or found in tribal mercenary stores. A single-edged sickle-sword designed to hook over and around shields, reaching the arm or neck behind whatever defense the opponent has raised. The Romans formally banned its use in gladiatorial combat after it caused too many incapacitating injuries in the early empire's arena shows. Finding one in Roman-controlled territory raises immediate questions about where it came from.
+
+*Falx*: Martial weapon. Two-handed. 1d10 slashing. Bypasses shields: the blade ignores the AC bonus granted by any shield (the curve goes around it; interposing the shield is not effective against the angle of the cut). Formation disadvantage: disadvantage on attack rolls while in any Roman formation -- the wide arc requires space that formations are designed to deny. Legal risk: carrying a *falx* without an officer's written authorization in Roman military territory is a summary offense. Any soldier or officer who sees one is legally required to report it; a DC 14 Persuasion check is needed to convince them otherwise. Cost: 15 gp (black market); 0 gp (captured). Weight: 7 lb.
+
+---
+
 ### Ammunition Weight and Supply at Vindolanda
 
 The fort's supply is finite and tracked. Quartermaster access requires Reputation: Acquaintance or higher with Quartus, or an officer's written order.
@@ -322,6 +366,14 @@ The fort's supply is finite and tracked. Quartermaster access requires Reputatio
 | Light *pilum* | 2 lb each | 120 | Yes |
 | *Plumbatae* | 1/2 lb each | 200 (issued standard) | No |
 | *Arcuballista* bolts | 3 lb per 10 | 100 | Yes |
+| Whistling glandes (*cum foramine*) | 3 lb per 20 | 80 | Yes |
+| Inscribed lead (*inscriptae*) | 3 lb per 20 | 60 | Yes |
+| Terracotta shot | 2 lb per 20 | Craftable (1 hr) | No |
+| Trilobate arrows | 2 lb per 20 | 80 | Yes |
+| Barbed arrows | 2 lb per 20 | 100 | Yes |
+| *Scythicon* poison arrows | 1 lb per 10 | 0 (not stocked) | Black market only |
+| *Verutum* | 1 lb each | 200 | Yes |
+| *Lancea* | 4 lb each | 40 | Yes |
 
 **Camp Level effect:** At Camp Level 2, Rufus's workshop can produce 10 additional clay incendiaries and 20 additional fire arrows per session downtime period. At Camp Level 3, lead shot production begins (10 per session). See `camp_economy.qmd`.
 
@@ -340,6 +392,40 @@ These weapons do not exist in isolation. They slot into the formations above and
 **Clay incendiaries in the tunnel:** The tunnel scenes in Session 4 are narrow enclosed spaces. Clay incendiaries cannot be used in the tunnel without endangering the party (the fire damage applies to all flammable materials in a 5-foot radius, including the wooden support beams). Outside the tunnel, in the antechamber, they work normally.
 
 **Dolabra and the collapsed passage:** The blocked section in the Session 4 tunnel is a constructed stone collapse, not a natural fall. A character with the *dolabra* can clear enough of the passage to squeeze through with a DC 15 Athletics check (2 rounds of work). Without the *dolabra*, the check is DC 18 and takes 5 rounds. The *dolabra's* structure-damage double damage rule applies to each working round: the DM can frame partial success as clearing enough to pass at the cost of time.
+
+---
+
+### Siege Weapons
+
+These are crew weapons. They require positioning, time, and trained operators. A single soldier does not operate them; a crew does, and the crew's competence matters as much as the weapon's design. The party can operate Vindolanda's siege weapons from the walls in Sessions 3-4, or encounter them aimed at the fort from the Germanic force.
+
+---
+
+#### *Scorpio* (Torsion Bolt-Thrower)
+
+The lighter Roman artillery piece, small enough to be carried by four soldiers and mounted on a wall parapet, a cart, or a tower platform. Fast to aim, faster to reload than a full ballista, and accurate enough to target individual combatants rather than formations. Legionaries call it *the scorpion* for the way it bites at distance without announcement.
+
+*Scorpio*: Crew 2. Range 120/480 ft. Attack +6 to hit. Damage: 2d8 piercing. A trained crew (both members proficient with siege weapons) can reload and fire in the same round as separate actions. Without proficiency, loading costs a full action and firing costs another round. On a hit, the target makes a DC 12 Strength saving throw or is pushed 10 feet. Can be repositioned by 4 soldiers spending their full action. Weight: 400 lb.
+
+**Vindolanda:** 2 *scorpiones* operational at Camp Level 1. A third is assembled from parts in Rufus's workshop at Camp Level 2 (3 downtime days).
+
+---
+
+#### *Onager* (Torsion Catapult)
+
+Named for the wild ass, for the vicious kick it delivers when the arm releases. Throws large stones or incendiary bundles in an arc over walls and at angle. Devastating against structures, rooftops, and packed formations that cannot scatter. Useless against individual moving targets in the open -- the arc is predictable; a soldier who has seen one fired knows to step left. Inside a fort during a siege, a single *onager* stone through a barracks roof changes the stakes of the session immediately.
+
+*Onager*: Crew 4. Range 200/800 ft (minimum 60 ft; cannot target within 60 feet). The crew makes a group DC 13 Dexterity check using proficiency if trained. On success: 5d8 bludgeoning damage in a 10 ft radius at the target point; creatures in the area make a DC 14 Dexterity saving throw for half. Near-miss (total 10-12): 5d8 damage at a randomly adjacent 10 ft square (DM rolls 1d8 for direction). Against structures: full damage, no save. Takes 3 full rounds to reload. Weight: 1,800 lb (cannot be repositioned during combat).
+
+**Vindolanda:** The *onager* is non-functional at Camp Level 1 -- the torsion rope is frayed and replacement is not Rufus's current priority. He can repair it with appropriate materials at Camp Level 2 (one downtime action). At Camp Level 3, the crew is drilled and the group DC drops to 11.
+
+---
+
+#### *Polybolos* (Repeating Ballista)
+
+Not standard issue. The screw-feed bolt magazine that reloads automatically with each draw of the arm requires a craftsman who understands it -- typically Greek-speaking engineers from Alexandria or Antioch. Vindolanda does not have one unless the party arranges transport. Encountering one in the field aimed at the fort means someone with serious resources and connections equipped the attackers with captured technology, which raises questions worth pursuing.
+
+*Polybolos*: Crew 2 (at least one crew member requires proficiency in Artisan's Tools or equivalent engineering background). Range 120/480 ft. Attack +5 to hit. Damage: 4d8 piercing per bolt. Rate: fires twice per round; the second shot is at disadvantage (the magazine feed is fast but inconsistent under combat stress). Jam: when the second shot misses with a die result of 1-5, the magazine jams; clearing it requires a DC 15 Artisan's Tools check as a full action. Weight: 600 lb.
 
 ---
 
@@ -374,6 +460,14 @@ A single-edged blade longer than a knife and shorter than a sword, used after th
 Not standard issue for every warrior, but carried by specialists in the second rank who throw in the last seconds before the charge connects. The *francisca* tumbles unpredictably in flight -- deliberately so. A tumbling axe is difficult to track and deflect even with a shield raised. It is thrown at ten to twenty feet, not forty; its role is disruption of the front rank right as the charge reaches them. The tradeoff is that it announces its presence before it arrives. A Roman soldier who sees a *francisca* thrower raising their arm has one action to react.
 
 *Francisca*: Martial weapon. Thrown (15/30 ft). 1d6 slashing. On a miss by 4 or fewer (the axe tumbles past without connecting), the target must succeed on a DC 12 Wisdom saving throw or have disadvantage on its next attack roll (the near-miss is deeply distracting). Retrievable after combat unless embedded in a surface. A character can carry up to 3 *franciscae* without additional encumbrance (they are small enough to clip to a belt). Cost: 6 gp. Weight: 3 lb each.
+
+---
+
+### *Angon* (Barbed Throwing Spear)
+
+Frankish and Rhenish warriors carry this alongside the *framea*, but it serves a different purpose. Where the *framea* is a clean throw-or-thrust choice, the *angon* is a harassment weapon: the barbed head is designed to catch in a shield or a body and stay there, and the heavy shaft makes it impossible to ignore. A shield with an *angon* through it becomes a liability rather than a defense. Warriors sometimes step on the embedded shaft to drag the shield down while closing to *seax* range -- the exact movement that the Roman testudo training teaches soldiers to resist, and that individual fighters in open ground usually do not.
+
+*Angon*: Martial weapon. Thrown (20/40 ft). 1d8 piercing. On a hit against a shield-bearing target: the target makes a DC 14 Strength saving throw. On a failure, the *angon* catches on the shield; the shield's AC bonus is halved (rounded down) until the shaft is removed as an action. On a hit against a target without a shield: the barbs catch in body or armor; removing the *angon* deals 1d6 additional piercing damage unless a DC 13 Medicine check is made or magical healing is applied first. Cost: 8 gp. Weight: 5 lb.
 
 ---
 
@@ -436,6 +530,191 @@ Not magical. Twenty years old, notched in places a blacksmith has told him to re
 ### The Spear of Mars
 
 Documented in `chapter1.qmd`. The spear is the campaign's central object and is treated there in full. Its connection to Vercingetorix's *framea* and to Cassia's knife is noted above; the spear reacts to both in the vault scene if the DM chooses to use the environmental detail.
+
+---
+
+## Armor and Equipment
+
+Roman soldiers are not interchangeable. The *lorica segmentata* of the legionary, the chainmail of the auxiliary, the linen breastplate of an officer who knows his history -- these are tactical profiles, not aesthetic choices. Each combination of armor, helmet, cloak, and boots creates a different fighter with different strengths and different vulnerabilities.
+
+Equipment uses slots. Each character has seven: **body, helmet, arms, gloves, cloak, boots, belt.** Total encumbrance follows standard D&D 5e rules (Strength score × 15 lb). Carrying more than half your encumbrance limit gives disadvantage on Stealth checks and reduces speed by 10 feet.
+
+---
+
+### Body Armor
+
+#### *Lorica Segmentata* (Segmented Plate)
+
+The overlapping iron plates that define the legionary's silhouette. Lighter than it looks and faster to don than full plate -- the segments allow the body to move. Against a downward sword stroke or an arrow, the overlap distributes the impact across multiple plates. Against a blade finding the gap between segments or a thrust into the armpit: the segments fail completely. Every armorer knows where the gaps are.
+
+*Lorica Segmentata*: Heavy armor. AC 17. Strength 13 required. Disadvantage on Stealth checks (the plates click in motion). Disadvantage on Athletics (Swimming) checks; in fast-moving water, a failed Athletics check means sinking. Takes 10 minutes to don fully; 5 minutes to doff. Cost: 200 gp. Weight: 20 lb.
+
+**Tradeoff:** Best AC of any body armor here. Worst in water and for concealment. Frontier engagements reward it; river crossings and night infiltration punish it.
+
+---
+
+#### *Lorica Hamata* (Chainmail)
+
+Standard armor of auxiliary forces and many frontier legionaries who have traded their *segmentata* for weight reduction. Rings of iron linked into a flexible sheet. It absorbs slashing well; a cut across chainmail spreads its force. Against a bodkin point or a thrust with serious momentum: the rings deform and the point finds its way through.
+
+*Lorica Hamata*: Medium armor. AC 14 + Dexterity modifier (maximum +2). Strength 12 required. Disadvantage on Stealth checks. Fire damage from area effects (burning pitch, flaming arrow volleys against a formation) reduced by 2. No disadvantage on swimming Athletics checks: the rings flex and do not trap air. Cost: 75 gp. Weight: 22 lb.
+
+**Tradeoff:** Less peak AC than *segmentata*, more flexible, better in water. Fire resistance is situationally significant in Sessions 3 and 4.
+
+---
+
+#### *Lorica Squamata* (Scale Armor)
+
+Overlapping bronze or iron scales sewn onto a backing. The scales face downward like a fish, deflecting downward cuts well. A thrust from below -- upward into the armpit, or upward under the hem -- finds the scales lifting rather than resisting. An enemy who understands scale armor fights differently against it.
+
+*Lorica Squamata*: Medium armor. AC 14 + Dexterity modifier (maximum +2). No Stealth disadvantage (the scales flex quietly when the backing is maintained). Against piercing attacks targeting the wearer from below or inside the angle of the scales (DM judgment: close-in grapple thrusts, underarm attacks): the attack ignores the armor's AC contribution entirely. Cost: 50 gp. Weight: 20 lb.
+
+**Tradeoff:** No Stealth penalty is the unique advantage over *hamata*. The vulnerability to specific thrust angles is the cost; skilled melee opponents who know how to fight will find it.
+
+---
+
+#### *Linothorax* (Layered Linen)
+
+Greek in origin, carried into Roman service by officers and auxiliaries who value mobility. Dozens of layers of linen glued together into a stiff shell, sometimes reinforced with bronze shoulder guards. It defeats glancing blows; it is poor against direct heavy force. An officer who appears in *linothorax* at a frontier posting will be asked questions about it.
+
+*Linothorax*: Light armor. AC 12 + Dexterity modifier (maximum +3). No Stealth disadvantage. Disadvantage on Strength saving throws against fire effects (linen burns; if the armor takes fire damage, it makes a DC 12 Dexterity saving throw or ignites, dealing 1d4 fire damage per turn until extinguished). Cost: 40 gp. Weight: 8 lb.
+
+**Tradeoff:** Lightest and lowest AC. Fire vulnerability is specific but significant in Session 3 (forest) and Session 4 (siege).
+
+---
+
+### Helmets
+
+Wearing a helmet provides its listed benefit. Not wearing one is a choice with consequences.
+
+#### *Galea Coolus* (Standard Iron Helmet)
+
+Issue equipment for auxiliaries and many frontier legionaries. Deep cheek guards, a rear neck flange, a simple brow guard. Not beautiful. Functional. The dent from a previous fight that the armorer did not fully hammer out is a common feature.
+
+*Galea Coolus*: Helmet slot. +1 AC. Advantage on saving throws against effects that target the mind through sound or fear resonance (the helmet's enclosure creates psychological distance; this is a folk belief with tactical expression). Disadvantage on Perception checks relying on hearing (the cheek guards muffle sound). Cost: 10 gp. Weight: 5 lb.
+
+---
+
+#### *Galea Attica* (Open-Face Helmet, Greek Style)
+
+Broader skull protection than the *Coolus*, open at the face, with a pronounced brow ridge. Officers and educated soldiers sometimes carry these as status markers. The open face means better Perception, better intimidation at close range, and less protection at the face.
+
+*Galea Attica*: Helmet slot. +1 AC. No disadvantage on Perception checks (the face is open). On a critical hit against this helmet's wearer targeting the head (DM judgment), the attack deals an additional 1d4 damage (the open face is the gap). Cost: 15 gp. Weight: 4 lb.
+
+**Tradeoff:** Same AC as *Coolus*, no Perception penalty, specifically vulnerable to aimed head attacks.
+
+---
+
+#### Centurion's *Galea* (Transverse Horsehair Crest)
+
+A standard iron helmet with a transverse horsehair crest mounted across the crown. The crest marks a centurion or senior officer: visible at range and in combat confusion, letting soldiers find their officer when things are going wrong. It also makes the wearer visually distinctive at significant range.
+
+*Centurion's Galea*: Helmet slot. +1 AC. Advantage on Persuasion and Intimidation checks with Roman soldiers who can see the crest. Disadvantage on Stealth checks while wearing it (visible at long range). Restricted: wearing a centurion's crest without holding the rank is a disciplinary offense in Roman military law. Cost: 25 gp. Weight: 6 lb.
+
+---
+
+#### *Spangenhelm* (Germanic/Auxiliary Riveted Helmet)
+
+A riveted iron helmet with a distinct framed construction, common among Germanic auxiliaries and border troops. Deeper cheek protection than Roman designs, often with a mail neck curtain (*aventail*) attached on frontier variants.
+
+*Spangenhelm*: Helmet slot. +1 AC. +1 additional AC against bludgeoning attacks targeting the head specifically (the reinforced construction absorbs hammer and club strikes better than Roman designs). With *aventail* attached: +1 AC against attacks targeting the neck (purchased separately, costs 8 gp additional, adds 2 lb). Cost: 12 gp base. Weight: 5 lb.
+
+---
+
+### Arms and Gloves
+
+#### Standard Leather Gauntlets
+
+Thick leather covering the hand and wrist. Common among cavalry and auxiliaries who need hand protection without restricting wrist movement.
+
+Standard leather gauntlets: Gloves slot. +1 AC against attacks targeting the hand or wrist (DM judgment). Disadvantage on Sleight of Hand checks and checks requiring fine manipulation (the leather restricts dexterity). Cost: 2 gp. Weight: 1 lb per pair.
+
+---
+
+#### *Manica* (Articulated Arm Guard)
+
+A segmented iron arm guard covering wrist to shoulder on the weapon arm, originally developed for arena fighters who needed to protect their sword arm without a shield. Frontier soldiers who carry one have usually made a deliberate choice about how they want to fight. Cannot be worn on the same arm as a shield.
+
+*Manica*: Arms slot (weapon arm only). +2 AC against attacks specifically targeting the weapon arm (DM judgment; relevant most often in one-on-one duels and called shots). Cannot be worn on the same arm as a shield. Disadvantage on ranged weapon attacks with that arm (the segments restrict full draw). Cost: 20 gp. Weight: 3 lb.
+
+---
+
+### Cloaks and Capes
+
+Cloaks are not armor. They are presence, concealment, and protection against the frontier's weather. A character without a cloak at Vindolanda will notice this before the first session ends.
+
+#### *Sagum* (Military Wool Cloak)
+
+Standard issue. Heavy wool, usually undyed or dark reddish-brown depending on the unit's supply region. Doubles as a blanket; can be improvised as a stretcher. In rain, it retains warmth even when wet -- which matters on the northern frontier more than anywhere else in the empire.
+
+*Sagum*: Cloak slot. No AC bonus. Advantage on Constitution saving throws against cold weather and cold environmental damage. In dim light or darkness, the dark wool provides advantage on Stealth checks against visual detection. Two characters with *sagums* can carry an unconscious ally as an improvised stretcher without needing dedicated equipment. Cost: 5 gp. Weight: 4 lb.
+
+---
+
+#### *Paludamentum* (Commander's Scarlet Cloak)
+
+The cloak of generals and senior officers, worn over armor in formal military contexts. Scarlet wool, expensive dye, and a clasp that signals rank before the face is visible. Wearers are expected to be worth speaking to; among soldiers, this expectation is reliable.
+
+*Paludamentum*: Cloak slot. No AC bonus. Advantage on Persuasion and Intimidation checks with Roman soldiers and civilians who recognize Roman military rank. Disadvantage on Stealth checks in all conditions (the scarlet is the visual equivalent of an announcement). In active combat, the cloak marks the wearer as the highest-value target in sight. Cost: 35 gp. Weight: 3 lb.
+
+---
+
+#### *Birrus* (Hooded Traveling Cloak)
+
+Provincial in origin, adopted into Roman military use for cold-weather postings. Wool with a deep hood. Popular at Vindolanda because Vindolanda is cold and wet in a way that Rome never prepared anyone for. The pulled hood changes a silhouette.
+
+*Birrus*: Cloak slot. No AC bonus. Advantage on Constitution saving throws against cold weather and rain-based environmental effects. Hood up: disadvantage on Perception checks relying on peripheral vision; +2 to Stealth checks in crowded civilian settings (harder to identify specifically); Perception checks by others to identify the wearer by face are at disadvantage. Cost: 8 gp. Weight: 5 lb.
+
+---
+
+### Boots
+
+#### *Caligae* (Hobnailed Military Boot)
+
+Not a boot in the modern sense: a thick-soled sandal with a full lattice of leather straps securing it to the foot and ankle, studded on the sole with iron hobnails. The hobnails grip stone, mud, and grass. They also announce the approach of Roman soldiers on hard floors at considerable range.
+
+*Caligae*: Boots slot. Advantage on Athletics checks to maintain footing on wet, muddy, slippery, or uneven terrain. While grappling a prone creature: bonus action stomp dealing 1d4 bludgeoning. Disadvantage on Stealth checks on stone or hard-packed floors (the hobnails click with each step -- every soldier knows this and plans accordingly). Cost: 5 gp. Weight: 2 lb per pair.
+
+---
+
+#### Standard Military Boots
+
+Enclosed leather boots used by cavalry, some auxiliaries, and officers in colder climates. Less grip than *caligae* on natural terrain; more warmth; quieter on hard floors.
+
+Standard military boots: Boots slot. In cold weather (near or below freezing): advantage on Constitution saving throws against cold environmental effects (the enclosed boot retains warmth that *caligae* cannot). No Stealth disadvantage. Cost: 8 gp. Weight: 3 lb per pair.
+
+---
+
+### The Belt (*Cingulum Militare*)
+
+Every Roman soldier wears one. It is not optional; it is the mark of service itself. A soldier stripped of their belt in front of their unit has been formally shamed -- the act is called *degradatio* and follows the person through Roman military records. Surrendering the belt voluntarily is the formal act of discharge or surrender.
+
+*Cingulum Militare*: Belt slot. Carries up to 3 one-handed weapons or 5 utility items (rope, rations, vials, torch, signal tokens) attached to its loops and tabs without counting toward encumbrance. The apron of leather strips (*pteruges*) usually attached can conceal a *pugio* from casual inspection (DC 13 Perception to notice the weight).
+
+**Social mechanic:** Any soldier who can see another's *cingulum* can read the campaign ribbons, unit markers, and wear on it. A DC 12 History check lets a character deduce the approximate unit, years of service, and one major campaign of the belt's owner from the decorations and damage. Most Roman soldiers read this automatically; it is visible information in plain sight. Cost: 5 gp. Weight: 2 lb.
+
+---
+
+### Equipment Summary
+
+| Slot | Item | AC | Weight | Key tradeoff |
+|---|---|---|---|---|
+| Body | *Lorica Segmentata* | 17 (heavy) | 20 lb | Stealth disadv., swim disadv. |
+| Body | *Lorica Hamata* | 14+Dex (med) | 22 lb | Stealth disadv., fire resist |
+| Body | *Lorica Squamata* | 14+Dex (med) | 20 lb | No Stealth disadv.; thrust gap below |
+| Body | *Linothorax* | 12+Dex (light) | 8 lb | Fire vulnerability |
+| Helmet | *Galea Coolus* | +1 | 5 lb | Hearing disadv. |
+| Helmet | *Galea Attica* | +1 | 4 lb | Open-face crit vulnerability |
+| Helmet | Centurion's *Galea* | +1 | 6 lb | Stealth disadv., rank required |
+| Helmet | *Spangenhelm* | +1 (+1 blunt) | 5 lb | Germanic origin, questioned |
+| Arms | Leather gauntlets | +1 (called) | 1 lb | Fine manipulation disadv. |
+| Arms | *Manica* | +2 (weapon arm) | 3 lb | No shield same arm, ranged disadv. |
+| Cloak | *Sagum* | -- | 4 lb | Cold resist, Stealth in darkness |
+| Cloak | *Paludamentum* | -- | 3 lb | Social adv., Stealth disadv. |
+| Cloak | *Birrus* | -- | 5 lb | Cold/rain resist, Perception disadv. (hood) |
+| Boots | *Caligae* | -- | 2 lb | Grip adv., Stealth disadv. on stone |
+| Boots | Military boots | -- | 3 lb | Cold resist, quiet |
+| Belt | *Cingulum Militare* | -- | 2 lb | 3 weapons or 5 items free encumbrance |
 
 ---
 

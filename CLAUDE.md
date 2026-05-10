@@ -179,6 +179,8 @@ All content below is live in the book. No further action required.
 | 53 | Expanded Roman Weapons and Ammunition (renumber of 47) — confirmed live in roman_tactics.qmd |
 | 54 | Bestiary Tactical Expansion (renumber of 48) — confirmed live in bestiary.qmd |
 | 55 | Upgradable Camp and Legionary Companions (renumber of 49) — role-gated triggers, vacancy degradation |
+| 56 | Germanic Weapons + Magical Weapons — framea, seax, francisca, angon, three NPC weapons with story properties |
+| 57 | Comprehensive Weapons and Equipment Expansion — new sling ammo (whistling, inscribed, terracotta), arrow types (trilobate, barbed, scythicon), verutum, lancea, contus, falx, siege weapons (scorpio, onager, polybolos), full armor and equipment slot system (body/helmet/arms/gloves/cloak/boots/belt) |
 
 ---
 
