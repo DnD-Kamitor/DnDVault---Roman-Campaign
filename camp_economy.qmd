@@ -553,6 +553,25 @@ The fort is siege-ready. Every system is at operational excellence. The party is
 
 ---
 
+### Role-Gated Upgrade Triggers
+
+Some upgrades require the relevant role to be filled by a living PC or NPC. If the role is vacant when the trigger is attempted, the trigger fails: the institution cannot maintain itself without the people who run it.
+
+| Upgrade | Requires |
+|---------|---------|
+| Ballista installation (Level 2) | *Faber* living and at the fort when the installation is done |
+| Surgery upgrade to Level 2 | Cassia (*medicus*) alive and at Trusted tier or higher |
+| Shrine formal dedication (Level 3) | *Sacerdos* or *Flamen Martialis* living and performing the rite |
+| Heavy equipment access (Level 3, Quartus) | *Optio* alive and willing to sign the officer authorization |
+
+**Role vacancy as degradation:** If two or more roles are simultaneously vacant (neither PC nor NPC holding them), the camp functions at Level 1 regardless of prior upgrade status. The institution cannot sustain the Level 2 or Level 3 state without the people who run its functions. Roles filled by NPCs who are sick, imprisoned, or otherwise non-functional count as vacant for this purpose.
+
+The DM tracks vacancy status. Announce degradation the same way as an upgrade: through a named trader's voice. Valeria's surgery is back to a corner and a kit. The ballista has no crew assigned. The shrine is untended for the first time in the campaign.
+
+**Companion recruitment via roles:** The *optio* role player can authorize legionary companion deployment without requiring the standard Varro Trusted+ relationship: their role carries the necessary officer authorization. The *explorator* role player, if the party has reached Trusted tier with Vercingetorix's tribe, can recruit one Germanic scout as a non-legionary companion for any session in the forest. Germanic scouts follow different rules: they will not enter the ruins under any circumstances, they provide advantage on all Perception checks in the forest, and they use the generic legionary stat block with Survival +5 substituted for Athletics +3.
+
+---
+
 ### Morale Pool
 
 The morale pool is a shared resource. It starts at the level's maximum and decreases when things go badly. It does not recover between scenes in the same session; it recovers to maximum between sessions if no catastrophic event ended the previous session.

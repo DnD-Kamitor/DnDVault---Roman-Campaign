@@ -1068,28 +1068,17 @@ Goal: All player-facing and GM-facing text that currently treats the party as a 
 
 ---
 
-### Milestone 53 — Expanded Roman Weapons and Ammunition (Planned)
+### Milestone 53 — Expanded Roman Weapons and Ammunition ✅ COMPLETE
 *(Previously noted as Milestone 47 in planning; renumbered to reflect new sequencing)*
 
-Goal: The weapons section has basic D&D stats. Roman weapons had real tactical variety. Add all subtypes with D&D mechanics and integrate them with the role system (the *custos armorum* knows all of this; the *faber* can make all of this).
-
-**Files:** `roman_tactics.qmd` (main), `player_guide.qmd` (equipment summary table), `roles.qmd` (cross-references for Custos Armorum and Faber knowledge checks)
-
-- [ ] **Sling (*funda*) and ammunition** — Lead shot (DC 13 Con save on hit or stunned 1 round, short range 30/60); stone (cheap, longer range 40/80, no special effect); clay incendiary (sets flammable objects alight on hit, one-use, 20/40); different ammunition requires different preparation time and different *custos armorum* stock levels
-- [ ] **The pilum family** — Heavy *pilum* (thrown 30/60, piercing; on hit: target's shield requires DC 14 Athletics or it becomes unusable until repaired; the pilum bends on impact to prevent retrieval); light *pilum* (thrown 20/40, acts as javelin but +1d4 on first attack vs. unshielded target); *plumbata* (weighted dart thrown by hand, 30/60, ignores half cover)
-- [ ] **Arrow types** — Bodkin (ignores leather armor's damage reduction); broadhead (extra 1d4 bleed damage on a critical hit, persists 1 round); fire arrow (bonus action to light, adds 1d4 fire damage, only ignites flammable targets); *arcuballista* bolt (heavy crossbow bolt, -10 ft range bands, +2 damage over standard bolt)
-- [ ] **Melee weapon subtypes** — *Gladius* (short sword: advantage on attack rolls when in tight formation with at least one ally adjacent); *spatha* (cavalry long sword: +5 ft reach, disadvantage in formation); *pugio* (military dagger: finesse, advantage on attack rolls against grappled targets); *hasta* (infantry spear: reach, can set against charge for double damage); *dolabra* (military pick: ignores stone cover, double damage to structures and fortifications)
-- [ ] **Ammunition supply and weight** — Each type: weight per 20-unit bundle, current Vindolanda stock, resupply route; sling stones are free (collected locally, unlimited in theory); lead shot requires the *custos armorum*; pilum are one-use per encounter unless character spends a bonus action on retrieval after the encounter
-- [ ] **Tactics integration** — Cross-reference formation entries: pilum throw before melee is a formation opener mechanic; slings on the wall during Session 4's siege; which arrow type works against which creature in the bestiary
+All tasks completed in a prior session as part of `roman_tactics.qmd`. Full weapon system live: sling with three ammunition types (lead shot DC 13 Con save, stone unlimited, clay incendiary), heavy/light pilum and plumbata, five melee subtypes (gladius, spatha, pugio, hasta, dolabra), arcuballista bolt, full Vindolanda stock table, and tactics integration cross-referencing formation entries and session encounters.
 
 ---
 
-### Milestone 54 — Bestiary Tactical Expansion (Planned)
+### Milestone 54 — Bestiary Tactical Expansion ✅ COMPLETE
 *(Previously noted as Milestone 48)*
 
-Goal: Every creature currently differs mainly by HP and attack stats. Give each a distinct tactical identity grounded in real animal behavior: ambush patterns, territory defense, pack behavior, reaction to light/fire/sound. CR increases where the tactics justify it.
-
-*(All task items from the previous Milestone 48 entry carry forward unchanged; see the Milestone 48 entry above for the full task list. This renumbering reflects that M51 and M52 were inserted before it.)*
+All creatures updated with full tactical identities in bestiary.qmd. CR increases applied (Strix CR 4, Lemur CR 1, Larvae CR 5, Alp CR 4, Draugar CR 6, Lindworm CR 10, Nix CR 5). Tactical summary card present. All unique behaviors confirmed live: Strix Blindsight/Light Seeker/Ill Omen trigger, Lemur Dishonored Rest (reforms twice), Larvae Cycling Faces + Threshold Reset, Genius Loci Compel Respect first action, Alp Mist Form as reaction, Draugar Earth Memory + 100ft territorial limit, Lindworm 50 HP water retreat, Nix Disguised Approach + Chosen Target + Unearthly Beauty disadvantage at 10min mark.
 
 ---
 
