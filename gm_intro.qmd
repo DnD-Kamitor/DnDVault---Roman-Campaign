@@ -928,3 +928,35 @@ When an NPC role-holder dies or leaves, say it directly to the players. Do not a
 The emotional reality is played, not skipped. If the party was close to Libo (because you ran him as a peer and let them get close), the moment has weight without you adding narration about how sad it is. The absence does the work.
 
 A player character can step into a vacant role if they meet the prerequisites and if the circumstances allow the transition. A siege is not the right moment to process paperwork; the morning after the siege is. When a PC takes over a role, they inherit the NPC's contacts, tools, and outstanding complications. This includes everything the NPC was managing that they did not finish.
+
+---
+
+## Player Character Variants
+
+Some characters arrive at Session 0 with backgrounds that interact with the campaign's core systems in specific ways. This section is DM-facing: the player sees the flavor in `peoples.qmd`; the mechanics below are yours to deploy when they become relevant.
+
+---
+
+### The Shadow-Cursed Spartan (*Shadar-kai*)
+
+Three systems interact with this origin. Run all three; they reinforce each other.
+
+**The Mars/Ares tension.** When this character is within 30 feet of the Spear of Mars for the first time (Session 1, the vault), describe a sensation of recognition that is not warm. The spear categorizes what it feels in them as Ares-blood, not Mars-blood. Roman doctrine treats these as equivalent. The gods do not. Cassia is present or nearby; she notices. She does not comment immediately. She files it. When you need a private conversation between Cassia and this character (ideally Session 3, when there is space for it), this is what she has been holding.
+
+Mechanical expression in Sessions 4-5, when the party is in Mars's direct divine presence: this character makes Wisdom saving throws against divine awe at disadvantage (the divine presence is Mars, and the blood knows the difference). They also have advantage on Charisma checks when dealing with Mars directly (Ares-blood speaks to war-gods in a register those gods recognize). Both effects are active. Do not choose between them.
+
+**Corruption divergence.** The standard corruption track assumes a mortal soul being progressively claimed by a divine force. This character's soul carries a prior claim from Hades' compact, which interferes with Mars's corruption. When they would gain a corruption level from a divine source (the spear, the grove, Mars's direct attention), they first make a DC 13 Charisma saving throw. On a success: the new corruption does not take hold (Hades' prior claim deflects it). On a failure: they gain the corruption level normally, and gain one shadow-curse manifestation from the list below. On a natural 1: they gain two corruption levels.
+
+Shadow-curse manifestations (choose based on what fits the scene):
+
+- Their shadow acts independently for one scene, moving slightly out of sync with the body. Perception DC 12 for anyone in the room to notice.
+- They go briefly translucent in direct sunlight: DC 13 Constitution saving throw or 1d4 necrotic damage as the light finds less of them to touch.
+- For one session, they cannot benefit from the Help action or flanking bonuses (the shadow is not fully anchored to the material plane).
+
+**The fading mechanic.** If the character goes a full session without experiencing a moment of intense sensation (combat damage exceeding 10 HP, a significant emotional scene, a moment where they describe feeling something strongly), apply a minor fade at the session's end: disadvantage on Perception checks at the start of the next session until something resets it. This resets immediately upon any intense moment. The intent is not punishment; it is pressure that creates roleplay opportunities. When it resets, note it briefly: "The world comes back into focus."
+
+Three moments across the campaign have specific effects on this mechanic:
+
+- **Session 1, first combat damage:** Something in the blood recognizes this world. Advantage on all Perception checks for the rest of that session.
+- **Session 4, grove encounter:** The shadow at the tree line reaches toward them specifically (add this to your grove staging). Full reset of the fading mechanic, plus they hear a phrase in a language they should not know: Laconian Greek, but older. You choose whether they understand it. Either way, it is not hostile.
+- **Session 4, Libo's death (if they witness it):** The fading mechanic is suspended for the rest of the campaign. They have felt enough. The compact has been satisfied on its own terms. Note this on your session tracker; it changes what the fading mechanic costs them in Sessions 4 and 5.
