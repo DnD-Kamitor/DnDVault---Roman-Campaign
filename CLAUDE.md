@@ -645,11 +645,11 @@ Goal: The civilian settlement outside the fort walls has named characters, its o
 
 **File:** New section added to `locations.qmd` and `camp_economy.qmd`
 
-- [ ] **Vicus layout** — Physical description: where it sits relative to the fort gate, what buildings it contains (taberna, workshop row, the shrine, the bathhouse annex, the trader stalls), how many civilians live there (approximately 200)
-- [ ] **Named vicus characters** — 4 named civilians, each with a brief OGAS and one distinctive thing: (1) the *taberna* operator who owes a favor to a Germanic trader, (2) a former soldier's wife who runs the informal mail relay, (3) a young local boy (half-Roman, half-Germanic) who knows every tunnel and weak point in the outer wall, (4) a Gallic craftsman who repairs civilian equipment and has been here longer than any current soldier
-- [ ] **The vicus information network** — What the vicus knows that the fort does not: which soldiers are in debt, which officers have civilian relationships, what comes through the trade gate that is not on the manifest, whether the Germanic raiders have been seen near the settlement recently
-- [ ] **Vicus under siege** — What happens to the civilian settlement when the fort is besieged in Session 4: do they shelter inside, try to flee, send a delegation, or become a liability? Specific DM guidance per outcome
-- [ ] **Vicus as adventure space** — Three specific things players can do in the vicus that they cannot do inside the fort: access the black market, send unofficial messages, get information that no officer would give them
+- [x] **Vicus layout** — Physical description: where it sits relative to the fort gate, what buildings it contains (taberna, workshop row, the shrine, the bathhouse annex, the trader stalls), how many civilians live there (approximately 200)
+- [x] **Named vicus characters** — 4 named civilians, each with a brief OGAS and one distinctive thing: (1) the *taberna* operator who owes a favor to a Germanic trader, (2) a former soldier's wife who runs the informal mail relay, (3) a young local boy (half-Roman, half-Germanic) who knows every tunnel and weak point in the outer wall, (4) a Gallic craftsman who repairs civilian equipment and has been here longer than any current soldier
+- [x] **The vicus information network** — What the vicus knows that the fort does not: which soldiers are in debt, which officers have civilian relationships, what comes through the trade gate that is not on the manifest, whether the Germanic raiders have been seen near the settlement recently
+- [x] **Vicus under siege** — What happens to the civilian settlement when the fort is besieged in Session 4: do they shelter inside, try to flee, send a delegation, or become a liability? Specific DM guidance per outcome
+- [x] **Vicus as adventure space** — Three specific things players can do in the vicus that they cannot do inside the fort: access the black market, send unofficial messages, get information that no officer would give them
 
 ### Milestone 40 — Deep Religion, Deep History, and the Magical World Around Vindolanda
 Goal: The campaign currently scratches the surface on religion and historical context around Vindolanda and gives beasts and flora only passing mentions. This milestone goes deep: layered religion (Roman and Germanic) hidden behind knowledge barriers, historical depth that rewards curious players, and a fully realized magical ecosystem of animals, plants, and spirits in and around the camp. Everything is hidden by collapsible barriers to keep it out of the way until needed.
@@ -700,11 +700,11 @@ Goal: Nothing in knowledge.qmd (or any player-facing file) should be readable wi
 
 **Files:** `knowledge.qmd`, `player_guide.qmd`, `player_tome.qmd`, `peoples.qmd`, `corruption.qmd`, `vindolanda_guide.qmd`
 
-- [ ] **Audit knowledge.qmd** — Every DC 13/15/17 block must be inside `<details>`. Any DC-gated fact appearing in the open preamble without a roll context must be moved behind a toggle or into the "what every soldier knows" baseline paragraph
-- [ ] **Audit player_guide.qmd** — Check for spoiler-adjacent content (corruption detail, divine mechanics) that requires a check rather than free reading
-- [ ] **Audit player_tome.qmd** — Frontier nature section: any specific mechanical information (wolfsbane doses, raven behavior table) must be gated; flavour and instinct knowledge stays open
-- [ ] **Audit vindolanda_guide.qmd** — Location descriptions fine; skill DCs and tunnel routes should be gated for GM only (move to locations.qmd if needed)
-- [ ] **Audit peoples.qmd and corruption.qmd** — Check for any cross-file leakage where DM context bled into player text
+- [x] **Audit knowledge.qmd** — Every DC 13/15/17 block must be inside `<details>`. Any DC-gated fact appearing in the open preamble without a roll context must be moved behind a toggle or into the "what every soldier knows" baseline paragraph
+- [x] **Audit player_guide.qmd** — Check for spoiler-adjacent content (corruption detail, divine mechanics) that requires a check rather than free reading
+- [x] **Audit player_tome.qmd** — Frontier nature section: any specific mechanical information (wolfsbane doses, raven behavior table) must be gated; flavour and instinct knowledge stays open
+- [x] **Audit vindolanda_guide.qmd** — Location descriptions fine; skill DCs and tunnel routes should be gated for GM only (move to locations.qmd if needed)
+- [x] **Audit peoples.qmd and corruption.qmd** — Check for any cross-file leakage where DM context bled into player text
 - [ ] **Fix: live link check** — Verify the knowledge.html page in the deployed site matches the corrected file after audit
 
 ---
@@ -714,11 +714,11 @@ Goal: All collapsible DM sections currently read like encyclopedia entries or AI
 
 **Files:** `camp_economy.qmd` (trader OGAS), `gm_intro.qmd` (NPC DC tables), `locations.qmd` (skill check menus), `knowledge.qmd` (deep sections), `chapter1.qmd`–`chapter5.qmd` (DM Notes)
 
-- [ ] **camp_economy.qmd OGAS blocks** — Rewrite all 6 trader OGAS sections in DM voice: "Quartus wants X. He will do Y if Z. His secret: he knows about..." not "Objective: Maintain supply integrity"
-- [ ] **gm_intro.qmd NPC DC tables** — Partial success text and temporal gate descriptions should sound like DM coaching, not rules text: "If they hit this, give them the information straight; do not make them ask twice"
-- [ ] **locations.qmd skill menus** — Discovery text should feel like a DM reminder, not a lookup table: "They will find the slow-burn candle. When they do, let the silence sit for a moment before you describe it"
-- [ ] **chapter1-5.qmd DM Notes** — Audit each Skill Audit section; remove any clinical phrasing; replace with the voice of a prepared DM who has thought about what this moment should feel like
-- [ ] **knowledge.qmd deep sections** — The DC 17 payoff text in particular should feel earned: write as if the DM is handing the player something valuable, not filing a report
+- [x] **camp_economy.qmd OGAS blocks** — Rewrite all 6 trader OGAS sections in DM voice: "Quartus wants X. He will do Y if Z. His secret: he knows about..." not "Objective: Maintain supply integrity"
+- [x] **gm_intro.qmd NPC DC tables** — Partial success text and temporal gate descriptions should sound like DM coaching, not rules text: "If they hit this, give them the information straight; do not make them ask twice"
+- [x] **locations.qmd skill menus** — Discovery text should feel like a DM reminder, not a lookup table: "They will find the slow-burn candle. When they do, let the silence sit for a moment before you describe it"
+- [x] **chapter1-5.qmd DM Notes** — Audit each Skill Audit section; remove any clinical phrasing; replace with the voice of a prepared DM who has thought about what this moment should feel like
+- [x] **knowledge.qmd deep sections** — The DC 17 payoff text in particular should feel earned: write as if the DM is handing the player something valuable, not filing a report
 
 ---
 
@@ -727,10 +727,10 @@ Goal: Any text that says "characters who unlocked X in session 2 can now do Y" b
 
 **Files:** `knowledge.qmd` (cross-reference section), `chapter1.qmd`–`chapter5.qmd` (cascade unlock notes), `skill_framework.qmd` (temporal gate table)
 
-- [ ] **Audit knowledge.qmd cross-references** — The three "Cross-Reference Skill Unlocks" entries must be in gm_intro.qmd or the relevant chapter, not in the player-facing knowledge file; replace with a DM-only note in the skill_framework
-- [ ] **Audit chapter cascade unlocks** — Ensure all cascade text (e.g., "Flavus appears in Session 4 if DC 17 hit in Session 2") is inside `<details>` DM blocks, not in open session text
-- [ ] **Create cross-session integration table in gm_intro.qmd** — A single master table: Session → DC achieved → Session N+X payoff; DM can see the full chain at a glance
-- [ ] **Audit skill_framework.qmd temporal gates table** — Verify all entries are DM-facing; none should contain player-visible reward descriptions in open text
+- [x] **Audit knowledge.qmd cross-references** — The three "Cross-Reference Skill Unlocks" entries must be in gm_intro.qmd or the relevant chapter, not in the player-facing knowledge file; replace with a DM-only note in the skill_framework
+- [x] **Audit chapter cascade unlocks** — Ensure all cascade text (e.g., "Flavus appears in Session 4 if DC 17 hit in Session 2") is inside `<details>` DM blocks, not in open session text
+- [x] **Create cross-session integration table in gm_intro.qmd** — A single master table: Session → DC achieved → Session N+X payoff; DM can see the full chain at a glance
+- [x] **Audit skill_framework.qmd temporal gates table** — Verify all entries are DM-facing; none should contain player-visible reward descriptions in open text
 
 ---
 
