@@ -743,3 +743,165 @@ Before each session: check the "Session achieved" column for every entry from pr
 During play: deliver unlocks at the listed activation moment. Do not announce them as rewards. Just play the world as if those things are true, because they are.
 
 If the party missed a check: the unlock does not activate. The alternative path is documented in the relevant chapter's Skill Audit section. No dead ends: different tool, different door.
+
+---
+
+## The Unit: NPC Role Holders
+
+Every role in the *vexillatio extraordinaria* is filled at campaign start: either by a player character (selected at Session 0) or by an NPC. The NPC holders are not shopkeepers. They are colleagues. They attend the same briefings, eat at the same table, and have opinions about the party's decisions that they will share without being asked.
+
+Run them as if they were other players at the table. They remember things. They have bad days. They want things from the party and will ask for those things directly. When they die, play the moment: do not summarize it.
+
+### Master Role Holder Table
+
+Use this table before each session to check which roles are PC-held and which are NPC-held. Update it when roles change hands or become vacant.
+
+| Role | Default NPC | Vacancy likely | Trigger |
+|------|-------------|---------------|---------|
+| *Optio* | Varro | Session 4 | Siege breach defense; high risk |
+| *Tesserarius* | Decanus Arvina | Session 3 | Departs with Tribune; deliberate farewell sabotage |
+| *Aquilifer* | Gaius Metellus | Session 1 (already dead) | Found dead at ruins entrance; opening scene |
+| *Signifer* | Publius Afer | Session 2 | Tribune's financial scandal; arrested or flees |
+| *Cornicen* | Libo | Session 4 | Siege arrow casualty; horn falls in the mud |
+| *Medicus* | Cassia | Session 3 or 5 | Sacrifice seed or Session 5 choice |
+| *Haruspex* | Paterculus | Session 4 | Siege; will not leave the shrine |
+| *Faber* | Rufus (trader) | Survives unless targeted | No scheduled vacancy |
+| *Librarius* | Nerva | Session 2 | Forgery arrest; Tribune's exit |
+| *Explorator* | Flavus (if unlocked) | Session 5 optional | Returns from forest mission |
+| *Frumentarius* | Decius Turbo | Session 3 | Revealed; party decides what to do with him |
+| *Sacerdos* | Paterculus (doubles) | Session 4 | Same as *Haruspex* vacancy |
+| *Flamen Martialis* | Vacant at start | Session 3 (PC can fill) | Available after grove ritual |
+| *Capsarius* | Aemilia | Survives unless targeted | No scheduled vacancy |
+| *Custos Armorum* | Brutianus | Session 3 | Bribed; flees with Tribune |
+
+### NPC Peer Behavior
+
+For each NPC role-holder, the following structure gives you what you need to run them as a peer rather than a prop.
+
+<details>
+<summary><strong>Varro (*Optio*)</strong></summary>
+
+**What he talks about unprompted:** The unit's discipline, which soldiers are slipping and why, what Corvinus said at this morning's briefing and whether it makes sense to him. He thinks out loud about command decisions, not to complain but to process them.
+
+**What he wants from the party:** Backup when he makes a call the soldiers do not like. He will not ask directly; he will mention the situation and wait to see who offers.
+
+**What he does if ignored for a full session:** He runs the unit anyway. He makes the drill happen, the watch assignments happen, the casualty paperwork happen. He notes that the party was occupied elsewhere. He will reference this later, without reproach, in a way that shows he noticed.
+
+**What he notices about the role PC:** If someone holds the *Optio* role, Varro treats them as a peer in command and is genuinely interested in how they handle the soldiers. He will disagree with them when he thinks they are wrong. He will back them publicly when they are right even if he had doubts.
+
+**Voice:** Short sentences. Active. He does not explain his reasoning unless asked. "The east postern is down a guard. Who do you want me to pull?" not "I was thinking that we might want to consider some options regarding the current staffing situation."
+
+</details>
+
+<details>
+<summary><strong>Cassia (*Medicus*)</strong></summary>
+
+**What she talks about unprompted:** Her patients. Not by name (medical confidence is real and she observes it) but in general: "I have someone in sick bay who is not improving the way they should" or "the fever pattern changed this morning." She processes her work through speech.
+
+**What she wants from the party:** Someone who will tell her what they know about the ruins and what they found there. She has been watching the corruption symptoms. She needs information to understand what she is treating. She will ask once, clearly, and not press if refused. She will not forget.
+
+**What she does if ignored:** She keeps treating patients. She makes notes in her medical log that become significant in Session 4 if the party ever asks to see them.
+
+**What she notices about the role PC:** If someone holds the *Medicus* role, she trains them thoroughly and treats them as a professional. She will share the locked document about field poisons with them at Trusted tier. She will tell them about the corruption symptoms at Ally tier.
+
+**Voice:** Precise and clinical about bodies, warmer about people. She uses Latin medical terms without apology and translates them without condescension. "The wound is suppurating: infected. We have three days before I have to make a decision about the arm."
+
+</details>
+
+<details>
+<summary><strong>Paterculus (*Haruspex* and *Sacerdos*)</strong></summary>
+
+**What he talks about unprompted:** Omens, but not in the way a superstitious person talks about them: technically, like a professional reviewing data. "The liver reading this morning was ambiguous in the lower left lobe. That configuration corresponds to leadership uncertainty. I am not telling you what to do with that; I am telling you what the reading said."
+
+**What he wants from the party:** Someone to tell him what is actually happening in the ruins, because the omen pattern he is seeing does not match anything in his reference texts and he is not comfortable with that. He will not admit the discomfort directly, but the frequency with which he brings up the omens reveals it.
+
+**What he does if ignored:** He observes the festival calendar, maintains the shrine, and files what he files. He does not escalate unprompted. He does escalate when something forces his hand, which happens in Session 4.
+
+**What he notices about the role PC:** If someone holds the *Haruspex* role, he is collegial but watchful. He wants to know if they have been trained correctly. He will ask test questions about the *libri haruspicini* in the first session. If they know the answers, the relationship becomes genuine professional respect quickly.
+
+**Voice:** Measured. Never alarmed in his phrasing even when alarmed in fact. "The signs continue to be unusual" is how he describes the gods preparing to eat the fort.
+
+</details>
+
+<details>
+<summary><strong>Arvina (*Tesserarius*)</strong></summary>
+
+**What he talks about unprompted:** The watch log and its anomalies. He has noticed the same three irregular soldiers that the *Tesserarius* role entry describes. He brings these up carefully, testing whether anyone is interested in taking the information seriously.
+
+**What he wants from the party:** Someone to investigate the watch irregularities with him rather than filing a report that will disappear into the legate's desk. He is not sure who to trust and is waiting to see who asks the right questions.
+
+**What he does if ignored:** He continues maintaining the watch schedule and filing the log. He makes a decision about the irregular soldiers that he will carry into Session 3, when it has consequences.
+
+**What he notices about the role PC:** If someone holds the *Tesserarius* role, he hands over clean documentation on day one and gives them one warning: "The east postern at the second watch. Look at it yourself before you believe what the log says."
+
+**Voice:** Efficient and slightly tired. He has been doing this long enough that he no longer explains things that seem obvious to him. He sometimes forgets that they are not obvious to others.
+
+</details>
+
+<details>
+<summary><strong>Decius Turbo (*Frumentarius*)</strong></summary>
+
+*Note: Turbo holds this role if no PC is a frumentarius. He is present but not introduced until Session 2. His introduction is triggered by a party action that crosses into his intelligence remit.*
+
+**What he talks about unprompted:** Supply logistics, convoy schedules, grain storage. He is pleasant, competent, and professionally interested in everything. He asks questions that seem like small talk and are not.
+
+**What he wants from the party:** To understand what they know and what they are going to do with it. He is not hostile. He is calibrating.
+
+**What he does if ignored:** He files his reports and waits. He will not volunteer information. He will not block the party directly. He will be exactly as helpful as his orders require him to be, which is less helpful than it looks.
+
+**What he notices about the role PC:** If a PC is the *frumentarius*, Turbo does not exist as an NPC: the PC is Rome's intelligence asset in this unit. The DM should have a private conversation with the *frumentarius* PC about this before Session 1.
+
+**Voice:** Friendly and precise. He remembers details about people and references them in ways that make conversation feel personal. This is professional behavior, not warmth, but it is indistinguishable from warmth until it becomes important.
+
+</details>
+
+<details>
+<summary><strong>Aemilia (*Capsarius*)</strong></summary>
+
+**What she talks about unprompted:** What she is running out of and what she needs more of. She thinks in supply terms: "I have bandage linen for approximately two significant engagements. After that we are improvising." She also talks about individual soldiers by their injuries, not their names: "the man with the arrow shoulder" is someone she is tracking closely.
+
+**What she wants from the party:** Valeria's herbal stock, specifically the items that Valeria does not sell to soldiers directly. Aemilia knows the herb trader's actual inventory is larger than what she shows military buyers. She cannot prove this but she knows it. A party member who can negotiate with Valeria as a peer (not as a customer) is useful to her.
+
+**What she does if ignored:** She treats whoever needs treating and keeps her log current. She is the least politically involved of the NPC role-holders and the most reliably present.
+
+**Voice:** Practical to the point of seeming blunt. Not cold: she makes eye contact and means what she says. She just does not spend words she does not have.
+
+</details>
+
+<details>
+<summary><strong>Brutianus (*Custos Armorum*, Sessions 1-3 only)</strong></summary>
+
+**What he talks about unprompted:** Weapons condition, ammunition levels, the quality of the last iron shipment. He is competent and appears conscientious. He is also bribed.
+
+**What he wants from the party:** For them to not look at the condemned stock too carefully. He will find reasons to redirect attention away from it. These reasons are usually legitimate enough that they do not stand out.
+
+**What he does if the party examines the condemned stock:** He accounts for the discrepancy with a plausible explanation (disposal is behind schedule; the numbers were entered wrong; he was going to file a supplementary report). The explanation is smooth because he has rehearsed it. DC 15 Insight to notice it is too smooth.
+
+**Voice:** Helpful, slightly eager. He wants to be seen as doing his job well. He is doing his job well, except for the one thing he is not.
+
+*He leaves in Session 3. His departure and the armory discrepancy become apparent within the same session. Do not make the connection explicit for the party: let them make it.*
+
+</details>
+
+<details>
+<summary><strong>New NPCs: Publius Afer, Libo, Nerva, Metellus</strong></summary>
+
+These NPCs are present from Session 1 but are secondary until their departure or death creates a vacancy. Brief notes for each:
+
+**Publius Afer (*Signifer*):** Quiet, meticulous, clearly uncomfortable about something. He handles the ledger with care and the departures with too much precision. He knows about the debt leverage situation in the ledger. He is not responsible for it; he is afraid of it. In Session 2, the Tribune's financial scheme puts him in an impossible position and he chooses the path of least consequence, which is wrong. His departure is not heroic.
+
+**Libo (*Cornicen*):** The most straightforwardly likeable NPC in the unit. He plays dice badly and knows it, drills the signals vocabulary with anyone who will let him, and has a superstition about ravens that turns out to be correct. He dies in Session 4 doing exactly his job. The horn falls but the signal he sent landed.
+
+**Nerva (*Librarius*):** Precise and privately resentful that his skills are being used on frontier paperwork instead of something in Rome that matters. He is the most politically aware of the secondary NPCs: he knows about Brutus's network from the documentation he processes, not from intelligence. He is not loyal to Brutus; he is loyal to whoever he thinks will win. In Session 2, the Tribune presents a version of winning that looks more convincing than anything Corvinus has offered. This is why he ends up in the wrong place.
+
+**Gaius Metellus (*Aquilifer*):** Dead before Session 1 begins. You know three things about him: he was competent (the legate personally selected him), he found something in the ruins (his hands had soil on them when they found the body), and the wound that killed him was not from the front. Let the party learn these things through investigation if they look. Do not hand them over.
+
+</details>
+
+### When a Role Becomes Vacant
+
+When an NPC role-holder dies or leaves, say it directly to the players. Do not abstract it. "Libo is dead. The *cornicen* role is unfilled." Then state the mechanical consequence from the role entry in *Unit Roles*. Then move on.
+
+The emotional reality is played, not skipped. If the party was close to Libo (because you ran him as a peer and let them get close), the moment has weight without you adding narration about how sad it is. The absence does the work.
+
+A player character can step into a vacant role if they meet the prerequisites and if the circumstances allow the transition. A siege is not the right moment to process paperwork; the morning after the siege is. When a PC takes over a role, they inherit the NPC's contacts, tools, and outstanding complications. This includes everything the NPC was managing that they did not finish.

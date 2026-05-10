@@ -1,0 +1,709 @@
+# Unit Roles: The *Vexillatio Extraordinaria*
+
+You were not assigned to this unit. You were summoned.
+
+Legate Corvinus sent for you individually, one at a time, for different stated reasons. The letter that reached you was brief and gave no explanation. When you arrived at the anteroom outside his office, you found others already waiting: people you may recognize by face or reputation, people whose skills are nothing like your own. You were not told why you were gathered. You were told to wait.
+
+What Corvinus assembled is not a standard *contubernium*, the eight-man tent unit that forms the basic cell of Roman military life. It is a *vexillatio extraordinaria*: a special detachment, pulled together outside the normal chain of assignment, for a purpose that has not been officially stated. The official paperwork calls it a construction oversight team. The paperwork is wrong.
+
+Each member of this unit holds a *role*: a formal military or religious position with defined duties, specific pay, and access that other soldiers do not have. These roles existed before you arrived and will need to be filled whether or not you fill them. Some were already occupied by others when Corvinus decided he needed this particular combination of people.
+
+---
+
+## How Roles Work
+
+**Select one role at Session 0.** The role must match your character's qualifications: citizenship status, ability scores, and skill proficiencies as listed. No two characters can hold the same role. If you do not select a role, Corvinus assigns you the closest match to your skill set: this is a military unit, not an optional structure.
+
+**Your role defines your access.** Each role gives you routine access to people, places, and information that other characters cannot reach without your help. This is not a power advantage: it is a texture advantage. Your *librarius* can read incoming dispatches; your *tesserarius* knows who is on watch and when the patrol gaps fall. These things matter.
+
+**Your role comes with duties.** Between sessions, your character has performed their role's duties. This shapes what they know at the start of the next session and what resources they have access to. Neglecting duties without explanation has social consequences inside the unit.
+
+**NPCs hold every role you do not.** The unit functions whether or not every PC holds a specialist position. Named soldiers fill the gaps and perform their jobs independently. They are colleagues, not shopkeepers: they attend the same briefings, eat at the same table, and have opinions about the party's decisions that they will share unprompted. When they die, their role becomes vacant and the unit feels the absence mechanically and personally.
+
+---
+
+## Pay Grades
+
+Roman military pay in 175 AD comes in three official tiers:
+
+| Grade | Latin | Annual pay | Who holds it |
+|-------|-------|-----------|-------------|
+| Standard | *Miles gregarius* | 300 denarii | Basic legionary; no specialist role |
+| One-and-a-half | *Sesquiplicarius* | 450 denarii | Mid-tier specialists |
+| Double | *Duplicarius* | 600 denarii | Senior specialists and officers |
+
+All pay is reduced by approximately one-third through mandatory deductions for food, equipment maintenance, and the burial fund (*collegium funeraticium*). A soldier earning 300 denarii takes home roughly 200 per year.
+
+Religious stipends (temple fund contributions) are paid separately and are not subject to military deductions.
+
+---
+
+## Military Command Roles
+
+### Optio (*Second-in-Command*)
+
+**Pay:** *Duplicarius*, 600 denarii/year (take-home approximately 400)
+
+**Prerequisites:** Citizen preferred; *Latini* with ten or more years of service may qualify. CHA 13 or STR 14. Proficiency in Athletics or Persuasion. Appointed by the centurion, confirmed by the legate. An existing *optio* must endorse you.
+
+**Why this role exists:** A centurion commands eighty men and is regularly away from the unit on orders, in conference, or in combat. The *optio* keeps the century functioning in his absence: drilling, briefing, accounting for the dead, and making the hundred small decisions that keep a military unit from becoming a rabble. The *optio* is also responsible for the unit's discipline in ways the centurion does not want formally recorded.
+
+**Duties between sessions:** Morning briefings, patrol schedule maintenance, casualty reports, drilling the unit, reviewing the watch log from the previous night.
+
+**Mechanic:** Once per session, reroll one initiative (yours or an ally's, declared before or after the roll). As a bonus action, issue an order: one ally within 60 feet moves up to their speed without expending their reaction.
+
+<details>
+<summary><strong>DC 13 — Chain of command and who reports to whom</strong></summary>
+
+The chain runs: *miles* (legionary) to the *decanus* (tent-leader) to the *optio* to the centurion to the *tribunus* to the legate. Each link has defined authority and defined limits. An *optio* who gives orders that contradict the centurion's is insubordinate; an *optio* who fails to pass information up the chain is negligent. You know the difference, and you know which officers in this fort are currently walking the line between the two.
+
+The legate's staff includes a *cornicularius* (senior administrative officer), a *beneficiarius* (special assignment soldier), and a rotating set of tribunes. The fort currently has one acting tribune following the reassignment of the previous occupant.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Political appointments vs. soldiers</strong></summary>
+
+Not every officer in the Roman army earned the position. Tribune appointments in particular are often political: young men from senatorial families completing their military service before returning to Rome. Some of them are capable. Many of them are not. You can tell the difference within the first week of working with them, and you know which tribune this fort recently had was not there because of his military record.
+
+The centurion system is more reliable: centurions generally rise through the ranks. But "generally" is not "always," and a centurion who owes his appointment to a patron in Rome is a different animal from one who earned it in the field.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — Who is reporting to whom outside the chain</strong></summary>
+
+Every large Roman military establishment has secondary information flows that bypass the official chain of command. The *frumentarii* (grain officers) are the most formal of these, but they are not the only channel. Several officers in this fort are filing information to Rome through routes that do not pass through Corvinus's desk. You do not know which ones or what they are saying. But you know the pattern: when the legate is surprised by an order that should have required his input, someone else's information got there first.
+
+If you spend a session paying attention to which soldiers have private conversations with the dispatch rider rather than submitting written reports, you will narrow the list.
+
+</details>
+
+---
+
+### Tesserarius (*Watch Officer*)
+
+**Pay:** *Sesquiplicarius*, 450 denarii/year (take-home approximately 300)
+
+**Prerequisites:** Any legal status. INT 12. Proficiency in Perception. Clean disciplinary record (no recorded infractions). Appointed by the centurion.
+
+**Why this role exists:** The *tessera* is the daily watchword: a small clay tablet passed hand to hand from the legate's office to every watch post before sundown. If an enemy knows the password, they can walk through the gate. The *tesserarius* is personally responsible for ensuring the word travels securely and that every sentry receives it. They also maintain the watch rotation so that the same soldier is never on the same post two nights running: predictable guards are bribeable guards.
+
+**Duties between sessions:** Assign night watch rotations, deliver the *tessera* each morning, record who was on which post, note any irregularities in the watch log.
+
+**Mechanic:** You always know the current day's password and the complete patrol schedule. You can create a false password (DC 14 Deception, detected on DC 15 Investigation by anyone who has seen the real one). You know which posts are currently manned and by whom.
+
+<details>
+<summary><strong>DC 13 — Official patrol schedule and gate assignments</strong></summary>
+
+The fort operates four watches through the night, each approximately three hours. The north gate is guarded in pairs; the east and west posterns are single-sentry positions with a roving check every two hours. The principia (headquarters building) has its own guard independent of the wall rotation.
+
+The password changes daily. The rotation for who receives it first follows seniority by post: the north gate gets it before the east postern. This is standard procedure and anyone who knows the schedule knows the order.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Gaps in the patrol pattern</strong></summary>
+
+No patrol schedule is perfectly enforced. The east postern's roving check runs long when Decanus Arvina is on duty: he stops at the grain store to talk to the night worker. The northwest corner of the outer wall has a blind spot between the third and fourth watch that the wall layout creates structurally. These gaps are in your log. They exist in every fort and every experienced soldier knows they exist.
+
+The relevant question is not whether the gaps exist but whether anyone has been using them deliberately.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — Compromised guards and outside contacts</strong></summary>
+
+Three soldiers on the current rotation have behavior patterns that require explanation. One is always asleep at his post but never formally reported: someone is covering for him. One has been at the east postern specifically on the three nights in the past month when the civilian settlement outside the walls reported unusual sounds. One submitted a watch log for a night when you can confirm he was not actually at his assigned position.
+
+None of this is in the official record. You noted it in a separate document. The question is what to do with it.
+
+</details>
+
+---
+
+### Aquilifer (*Eagle Standard Bearer*)
+
+**Pay:** *Duplicarius*, 600 denarii/year (take-home approximately 400); plus ceremonial honorarium from the legion's festival fund (50 denarii/year)
+
+**Prerequisites:** Roman citizen (*Cives Romani*) only. Free-born, not a freedman. STR 15. Proficiency in Athletics. Minimum five years of service. Recommended by the centurion and personally confirmed by the legate. A loyalty examination is administered before the appointment is finalized.
+
+**Note:** This role is vacant when the campaign begins. Aquilifer Gaius Metellus was found dead near the ruins entrance. The eagle is currently secured in the *principia* under double guard. Corvinus has not announced Metellus's replacement.
+
+**Why this role exists:** The *aquila* is not a symbol. It is the legion's legal identity, its honor made physical, the object whose loss constitutes the destruction of the unit in Roman law. Three eagles were lost at Teutoburg. Their numbers were retired. The *aquilifer* carries the weight of this history every time he lifts it. He does not put it down in the field. He does not surrender it. He dies first.
+
+**Duties between sessions:** Guard the eagle at all times when it is not secured in the *principia*. Lead the standard in formal ceremony. Perform the unit's religious rites at the fort shrine.
+
+**Mechanic:** While you carry the eagle, all allies within 30 feet have advantage on saving throws against fear effects. If the eagle falls (you drop it or die while carrying it), all allies within 60 feet make a DC 16 Wisdom saving throw or become frightened for one minute. Once per session, invoking the eagle before a combat grants all allies a free bonus action on their first turn.
+
+<details>
+<summary><strong>DC 13 — This legion's history and battle honors</strong></summary>
+
+The eagle has been with this legion for generations. Its current casing dates to a repair done after a Dacian campaign forty years ago: a silversmith in Carnuntum did the work, and his mark is still on the base. Every *aquilifer* since then has known that mark by touch in the dark.
+
+The battle honors attached to the eagle's shaft include campaigns in Britannia, two Dacian wars, and the eastern frontier under Trajan. The most recent honor is a scroll of commendation from Marcus Aurelius for service on the Danube, three years past.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Lost eagles and the men responsible</strong></summary>
+
+Three legions' eagles were lost at Teutoburg: XVII, XVIII, XIX. Their numbers were never reused. Two of the three eagles were eventually recovered under Augustus and Germanicus, through intelligence operations and punitive campaigns that lasted decades.
+
+The third was never found. Some historians believe it was ritually destroyed by the Germanic tribes. Others believe it still exists somewhere in the forest east of the Rhine. Soldiers in frontier postings do not discuss this possibility out loud.
+
+An *aquilifer* who loses the eagle does not survive the event as a practical matter. This is not a rule; it is an understanding. The role has a built-in exit condition.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — The blessing spoken over the eagle</strong></summary>
+
+The formal dedication spoken over the eagle during installation is a legally binding oath under Roman military law. It constitutes a contract between the bearer and Jupiter Optimus Maximus, witnessed by the legion. Breaking it is not a disciplinary infraction: it is a religious offense that carries specific divine consequence.
+
+You know the text. You know why Metellus was found dead without it having been spoken over him (he was not the formal bearer; he had temporary custody while the role was vacant). You also know that the eagle in the vault below the fort is not a military standard. It is something older, and the blessing that governs it is a different text entirely.
+
+</details>
+
+---
+
+### Signifer (*Standard Bearer and Unit Banker*)
+
+**Pay:** *Sesquiplicarius*, 450 denarii/year (take-home approximately 300)
+
+**Prerequisites:** Any citizen or *Latini* status. INT 13. Must be literate in Latin. Proficiency in History or Persuasion. Appointed by the centurion.
+
+**Why this role exists:** The *signifer* carries the unit's *signum* (the sub-unit standard, distinct from the eagle) as a battlefield rallying point. He also serves as the unit's banker: soldiers deposit their savings with the *signifer* because he cannot run. He carries the standard. The standard stays. Therefore, so does the money. It is a practical arrangement built on a reasonable assumption about human behavior under fire.
+
+**Duties between sessions:** Carry the *signum* in formation. Maintain the death benefits ledger. Record savings deposits and withdrawals. File the monthly financial return to the legate's office.
+
+**Mechanic:** Access to the unit savings fund (currently 100 gp at campaign start). Drawing on the fund requires DC 14 Persuasion (a majority of the unit votes to authorize it) or DC 18 Deception (forging the ledger, detected on DC 16 Investigation by anyone who checks). The fund grows when the party completes supply missions or recovers assets.
+
+<details>
+<summary><strong>DC 13 — Who has savings deposited and how much</strong></summary>
+
+Twelve soldiers in this unit have active savings accounts with the *signifer*. The amounts range from a few dozen denarii (new recruits who have not had time to save) to over 200 denarii (veterans who have been on the frontier for multiple tours and have nowhere else to put it).
+
+The death benefits ledger lists the named beneficiary for each soldier: mostly family members in home provinces, occasionally a colleague in the unit. You know who benefits from whom dying.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Which soldiers are in debt</strong></summary>
+
+Seven soldiers in the current rotation have debts that exceed their savings deposits. Two of these are gambling debts, which is illegal under military law but universally practiced. Three are supply debts to the quartermaster that have been rolling over without resolution. Two are debts to individuals outside the fort: the civilian settlement has a moneylender who charges rates that are technically extortionate.
+
+Soldiers with unresolvable debts are vulnerable to pressure. This is not speculation; it is a documented pattern in Roman military history and in this fort specifically.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — Debts used as leverage</strong></summary>
+
+One of the debts currently held against a soldier in this unit connects directly to a name that appears in Brutus's correspondence network. The moneylender in the civilian settlement is not operating independently. The debt was extended deliberately, to a specific soldier, at a time that correlates with the Tribune's visit to this fort. You can document this if you spend a session reviewing the ledger against the visit records.
+
+The soldier in question does not know who owns his debt.
+
+</details>
+
+---
+
+### Cornicen (*Horn Blower and Signal Officer*)
+
+**Pay:** *Sesquiplicarius*, 450 denarii/year (take-home approximately 300)
+
+**Prerequisites:** Any legal status. CON 13. Proficiency in Performance or a musical instrument. Must pass a practical signals examination administered by the existing *cornicen*. Appointed by the centurion.
+
+**Why this role exists:** In a battle, voice commands travel approximately fifteen feet before the noise of combat swallows them. The *cornis* (curved bronze horn) carries across a formation and can be heard over the clatter of shields and the shouting of ten thousand men. Every tactical call, every formation change, every retreat, every charge is transmitted by horn. A unit whose *cornicen* is dead is a unit that fights deaf.
+
+**Duties between sessions:** Sound the morning *classicum* (reveille), signal the watch changes, maintain the horn in working condition, drill the signals vocabulary with the unit monthly.
+
+**Mechanic:** As a bonus action in combat, signal a formation change: all allies within 60 feet who can hear you shift into or out of formation without expending movement or their reaction. Once per session, signal a false retreat (DC 15 Performance, opposed by enemy commander's Insight) to draw enemies out of position; on success, the enemy unit moves toward the apparent retreat for one round.
+
+<details>
+<summary><strong>DC 13 — Roman signal vocabulary</strong></summary>
+
+The standard signal set includes: advance, halt, wheel left, wheel right, form testudo, break testudo, double time, retreat to standard, retreat to fort, officers to the command position, and three emergency signals (fire, breach, ambush). Each is a distinct horn pattern. You know all of them by reflex: you can sound them in the dark, while running, while someone is trying to kill you.
+
+You also know the signals used by this specific legion, which differ in three patterns from the textbook version. Fort Vindolanda uses a variant for the night watch change that no other unit uses. Anyone who responds correctly to that variant has served here.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Germanic tribal signals</strong></summary>
+
+The Germanic tribes do not use horns the way Rome does. They use a different instrument entirely: the *carnyx*, an upright bronze horn shaped like an animal head. Its sound is distinctive and carries differently from the *cornis*. You have heard it twice in the last year, both times before an engagement.
+
+The Marcomanni use specific drum patterns as command signals in forest fighting. You have documented four of them from patrols and ambushes. You cannot interpret all of them, but you can identify when the pattern changes, which tells you when their command intent changes.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — Counterfeiting Roman signals to break formations</strong></summary>
+
+The standard Roman signal set is not secret. Every auxiliary unit that has operated alongside the legions for more than a year knows it. An enemy who has fought Romans long enough can reproduce the signals well enough to confuse a unit that is not expecting deception.
+
+You know how this is done and what it requires: a *carnyx* player with Roman signal training, or a captured Roman *cornicen* playing under coercion, or a recording device (wax tablet with notation) from captured documents. You also know the three specific signals that, if counterfeited, would cause the most chaos in this fort's defensive formation: the retreat to fort, the all-clear at the gate, and the signals officer casualty alert. If an enemy wanted to breach Vindolanda through signal confusion, those three would be the sequence.
+
+</details>
+
+---
+
+## Specialist Roles (*Immunes*)
+
+Soldiers designated *immunes* are exempt from the fatigue duties that fill most of a legionary's day: construction, latrine maintenance, wood-cutting, and the various labor assignments that keep a fort functional. The exemption exists because their specialized work is considered more valuable than another pair of hands on a shovel. *Immunes* are not exempt from combat.
+
+---
+
+### Medicus (*Field Surgeon*)
+
+**Pay:** *Duplicarius*, 600 denarii/year (take-home approximately 400)
+
+**Prerequisites:** Any legal status. WIS 13. Proficiency in Medicine. Greek medical training is preferred and will be asked about; a character without it may still qualify if they can demonstrate practical competency. Appointed by the *praefectus castrorum* (camp prefect), not the centurion.
+
+**Why this role exists:** The Roman army is the first military force in history to systematically invest in keeping its soldiers alive after they are wounded. A *medicus* is worth several soldiers in force multiplication terms: every wound successfully treated is a soldier returned to the line within weeks rather than lost permanently. The math is practical, not compassionate.
+
+**Duties between sessions:** Morning sick parade (examine all soldiers reporting ill), wound dressing after any combat, epidemic monitoring, quarantine decisions.
+
+**Mechanic:** You can stabilize a dying creature using Medicine (no action cost, just the check, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + WIS modifier HP. You can identify poison, disease, or unusual wound cause with DC 13 Medicine and no additional resources.
+
+<details>
+<summary><strong>DC 13 — Field injuries and current patient status</strong></summary>
+
+Three soldiers are currently on the sick list: one with a festering arrow wound from a patrol engagement two weeks ago, one with fever of unknown origin, one with a broken wrist from a training accident. The fever case concerns you. Fever with this onset pattern is either ordinary illness or early-stage Antonine Plague. You are watching it.
+
+You can tell the difference between a blade wound and a wound made to look like a blade wound. You can tell the difference between a man who fell and a man who was pushed. These are useful distinctions.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Poison identification, antidotes, and plague differential</strong></summary>
+
+The Antonine Plague presents with fever, skin eruptions, and diarrhea in a specific sequence. Ordinary camp fever presents similarly but the sequence differs. You can distinguish them with Medicine DC 15 and three days of observation. The plague is fatal in roughly one-third of cases in civilian populations and somewhat lower in military ones, possibly due to better nutrition.
+
+You know seven poisons that can be prepared from plants available within a two-day journey of this fort. You know their symptoms, their timing, and their antidotes where antidotes exist. You know which of them would be undetectable in a wine-and-water mixture at standard dilution ratios. This knowledge is kept in a locked document for obvious reasons.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — What the spear's influence does to human bodies</strong></summary>
+
+*Access to this information requires Cassia's trust at Ally tier. Without it, this check cannot be made regardless of the result.*
+
+The corruption symptoms you have been seeing in patients near the excavation site are not disease. They match no known pathology. The progression follows a pattern that corresponds to the stages documented in the player-facing corruption chapter, and you have been tracking it in your medical log since the second week of the dig. You have not reported it officially because the category it would fall into is *magia illicita* and reporting it would bring consequences you cannot yet predict.
+
+There is a treatment that slows the physical symptoms. It does not reverse the underlying condition. You will explain this to anyone who earns your confidence and asks the right question.
+
+</details>
+
+---
+
+### Haruspex (*Divination Specialist*)
+
+**Pay:** *Duplicarius*, 600 denarii/year (take-home approximately 400); plus temple stipend from the fort shrine, 100 denarii/year
+
+**Prerequisites:** Roman citizen preferred; other statuses require additional endorsement. WIS 14. Proficiency in Religion. Must be approved by the *collegium haruspicum*, the professional divination guild based in Rome: a character with this role has already passed their guild examination (DC 16 Religion, treated as a past event in the character's history). Appointed by the legate.
+
+**Why this role exists:** Before any significant Roman military action, the omens must be read. This is not superstition: it is law. A commander who launches an engagement against the advice of his *haruspex* and then loses has committed a legal offense as well as a military one. The *haruspex* is the unit's legal protection against being blamed for what the gods already knew was going to go wrong.
+
+**Duties between sessions:** Read the morning omens before any significant planned action. Perform animal sacrifice at all required festivals. File *prodigia* reports for any unusual events that constitute official omens.
+
+**Mechanic:** Cast *Augury* once per day without a spell slot. Before a session's main conflict, perform a pre-session divination by rolling 1d20 and giving the DM the result (they use it to calibrate one encounter that session, without telling you which one or how). Once per session, declare an action *nefastus* (ritually forbidden today): all party members gain advantage on the first saving throw of the session, and the DM removes one of their encounter options for that session.
+
+<details>
+<summary><strong>DC 13 — Standard divination signs and their interpretations</strong></summary>
+
+The formal *haruspicy* system examines six organs in sequence: liver, gallbladder, lungs, heart, spleen, and the fatty membrane surrounding the intestines. Each organ corresponds to a sphere of concern (military outcome, divine favor, leadership decisions, personal fortune, supply and logistics, and the unexpected). An experienced *haruspex* can read all six in the time it takes a centurion to brief his unit.
+
+Bird augury is a separate discipline. The relevant species, their flight patterns, and what each direction of movement indicates are covered in the *libri augurales*, which you have read and partially memorized.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — The *libri haruspicini* and what they cover</strong></summary>
+
+The *libri haruspicini* are the professional reference texts for divination practice. They cover not just the standard interpretations but the edge cases: what it means when the liver is missing a lobe, what to do when the sacrificial animal refuses to die cleanly, what the specific coloration patterns in the gallbladder indicate versus what the standard texts say they indicate.
+
+The *extispicy* procedure for a major military decision takes approximately forty minutes and requires a specific sequence of prayers that predate the standard Roman ritual calendar by several centuries. The oldest stratum of the prayer language is not classical Latin; it is something older, closer to Etruscan. You know this but it is not the kind of thing you mention in public.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — Official *prodigia* and what Paterculus has been hiding</strong></summary>
+
+A *prodigium* is a specific category of omen: an event so far outside the natural order that it constitutes an official divine communication requiring a Senate response. There are twelve defined categories in Roman military law. You know all twelve. You have identified at least three events in this fort over the past month that meet the threshold.
+
+Paterculus, this fort's *haruspex*, has been filing them as ordinary bad omens. You cannot tell from outside whether this is incompetence or deliberate suppression. But you know that officially declaring even one *prodigium* would initiate a Senate inquiry process that would bring investigators to Vindolanda within weeks. Whatever Paterculus is protecting by not filing them, it matters enough to him to take that risk with his guild standing.
+
+</details>
+
+---
+
+### Faber (*Military Engineer and Smith*)
+
+**Pay:** *Sesquiplicarius*, 450 denarii/year (take-home approximately 300)
+
+**Prerequisites:** Any legal status. STR 13. Proficiency with Smith's Tools or Mason's Tools. Demonstrated practical competency (a test is administered). Appointed by the *praefectus fabrum* (chief engineer).
+
+**Why this role exists:** A Roman legion builds as much as it fights. The *fabrica* (engineering workshop) maintains weapons, repairs fortifications, constructs siege equipment, and keeps the mechanical systems of a fort functional. A frontier posting that cannot repair its own walls is not a frontier posting; it is a liability waiting to be exploited. The *faber* is the reason the walls stay up.
+
+**Duties between sessions:** Weapons maintenance inspections, fort structural repair as needed, siege equipment maintenance, supervision of working parties on construction assignments.
+
+**Mechanic:** Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses: DC 13 Investigation reveals a weak point in a wall, door, or structure. Once per session, improvise a piece of equipment (battering ram, caltrop field, burning pitch container) from available materials with a DC 14 Smith's Tools or Mason's Tools check.
+
+<details>
+<summary><strong>DC 13 — Current fort condition and weak sections</strong></summary>
+
+The north wall is in the best condition. The south wall has a section that was repaired poorly two years ago: the mortar is wrong for the local stone and is cracking along the joint lines. The east postern gate has a hinge assembly that will fail under sustained assault; it has been on the repair list for three months and keeps being deprioritized because it requires imported iron fittings.
+
+The *fabrica* currently has enough raw iron stock for standard maintenance for approximately four months. Specialty work (siege components, heavy fittings) requires either a supply shipment or improvisation from available materials.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Specific repairs, timelines, and materials required</strong></summary>
+
+The south wall section can be restored in three days of continuous work with eight laborers and the current mortar stock. The east postern hinge requires one piece of cast iron approximately thirty centimeters in diameter; the nearest reliable source is the *fabrica* at the regional supply depot two days' march away, or a sufficiently skilled *faber* with raw iron and a day's work.
+
+If the fort comes under siege before the east postern is repaired, that gate will fail in the first sustained assault. You have documented this in writing. The document is on Corvinus's desk. It has been there for six weeks.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — The northeast foundation</strong></summary>
+
+The northeast corner of the fort has an engineering problem that is not in any document and that you discovered during routine inspection four months ago. The foundation in that section sits above a spring: not a major water source, but enough water movement at depth to cause slow subsidence. The northeast barracks floor has been settling at a rate of approximately two centimeters per year for at least the past decade, based on the stress marks in the interior walls.
+
+Under siege conditions, with the vibration of artillery and the weight of reinforced positions on the wall above, that corner section would require emergency shoring within the first two days. Without it, the wall will hold but the barracks below it will not. You know how to shore it. You have not yet had the materials or the authorization to do so.
+
+</details>
+
+---
+
+### Librarius (*Administrative Scribe and Intelligence Clerk*)
+
+**Pay:** *Duplicarius*, 600 denarii/year (take-home approximately 400)
+
+**Prerequisites:** Must be literate in Latin. Citizen preferred; other statuses require a literacy examination. INT 14. Proficiency in History or Calligrapher's Supplies. Appointed by the *cornicularius* (senior scribe at the legate's office).
+
+**Why this role exists:** The Roman military runs on paper. Pay records, supply manifests, troop rosters, incoming orders, outgoing dispatches, casualty lists, maintenance reports, legal proceedings. None of this manages itself. A unit without a *librarius* eventually ceases to exist in the administrative sense, which has practical consequences: unpaid soldiers are unreliable soldiers, and a unit that is not on the official roster does not receive supplies.
+
+**Duties between sessions:** Draft unit dispatches, maintain the official roster, copy and file incoming orders, maintain the pay ledger, submit the monthly return to the legate's office.
+
+**Mechanic:** Forge military documents (DC 14 Forgery, detected on DC 15 Investigation by anyone who examines them). Access incoming dispatch copies as a matter of routine: you know what Rome officially knows about this fort, including what has and has not been reported. Produce legally binding Latin documents on request.
+
+<details>
+<summary><strong>DC 13 — What Rome's official record shows</strong></summary>
+
+The official dispatch record for this fort, current as of the last courier departure, contains: standard strength returns (unit composition and fitness for duty), supply status, construction progress on the northern watchtower extension, and a brief notation about the archaeological discovery near the northeast barracks that describes it as "Roman-era cultural material of possible historical interest, examination ongoing."
+
+That description was approved by Corvinus personally before transmission. It is technically accurate. It does not mention the spear, the depth of the excavation, the casualties, or the nature of the material recovered.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Gaps between the official record and what you have seen</strong></summary>
+
+Three things that you know about this fort are not in any document that has left it. Two of them were omitted by Corvinus's direct instruction. One was omitted because the *librarius* who drafted that particular report had already been transferred before the relevant events occurred, and no one thought to file a supplementary return.
+
+The gap between the official record and the observed reality of this post is not unusual: frontier commanders routinely filter what Rome receives. What is unusual is the specific things that are missing. The omissions suggest Corvinus is not just managing the information flow; he is managing it in a particular direction, and that direction has a shape you are beginning to recognize.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — The sealed dispatch and what it implies</strong></summary>
+
+A sealed document arrived at this fort three weeks ago addressed to Corvinus personally, from an office in Rome that corresponds to Brutus's administrative position in the Senate's frontier oversight committee. Corvinus has not opened it. It sits on his desk under a paperweight. You have handled it twice in the course of your duties: it is heavier than a single sheet and thinner than a full report. It is the right weight for a set of specific instructions.
+
+A dispatch from Brutus arriving before the excavation yielded its primary finding means Brutus had prior intelligence about this site. The question is where he got it, and whether Corvinus knew the dispatch was coming before it arrived.
+
+</details>
+
+---
+
+### Explorator (*Scout and Frontier Intelligence Officer*)
+
+**Pay:** *Duplicarius*, 600 denarii/year (take-home approximately 400)
+
+**Prerequisites:** Any legal status. DEX 13. Proficiency in Stealth. Proficiency in Perception. Typically recruited from provincial auxiliaries familiar with the local terrain; Germanic-heritage soldiers are common in this role on the frontier. Appointed by the legate's intelligence officer.
+
+**Note:** This role is only available at campaign start if the party achieved DC 17 in the Session 2 wall-hold encounter (unlocking the named soldier Flavus). If that check was not made, the *explorator* role is vacant and becomes available to a PC from Session 3 onward.
+
+**Why this role exists:** A fort that cannot see beyond its walls is a fort that reacts rather than acts. The *exploratores* run two-to-three day patrols beyond the perimeter, maintain contact with the network of border informants (traders, local allies, and individuals whose motivations are complex), and provide the early warning that distinguishes a prepared defense from a massacre.
+
+**Duties between sessions:** Reconnaissance patrols beyond the perimeter, track reporting on Germanic movement, informant contact maintenance.
+
+**Mechanic:** Move at full speed without penalty in forest or wilderness terrain. Advantage on Perception checks in wilderness. Identify tracks and determine creature count, approximate size, and timing (DC 12 Survival, no tools required). Once per session, call on a border informant for one piece of local intelligence (DM provides, 1d4 hours wait time).
+
+<details>
+<summary><strong>DC 13 — Current Germanic movement patterns</strong></summary>
+
+Three groups have been moving in the region in the past two weeks. One is a trade party moving along the recognized eastern route: approximately forty people, mixed goods, no weapons visible on the outriders. One is a hunting group of twelve that has been in the same area for four days, which is two days longer than the local game patterns justify. One is a party of unknown size whose tracks you found but lost at the river crossing two days ago.
+
+The hunting group concerns you. Men who stay in one area longer than the hunting warrants are usually watching something. What they are watching at that location is the road that leads to this fort.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Vercingetorix's tribe: location and approach</strong></summary>
+
+The tribe associated with Vercingetorix has a winter settlement approximately four hours' march northeast, in the valley that the Germanic tracks you have been following consistently avoid. You have been watching the approach to that settlement for the past three months and have identified the sentinel positions and the patrol intervals. There is a route that bypasses the outermost sentinel ring entirely. You know it because you used it on the last reconnaissance.
+
+Whether you share this information, and with whom, is your own judgment call. Vercingetorix is not formally an enemy and not formally an ally.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — What Thusnelda's scouts have been watching</strong></summary>
+
+You have been watching Vercingetorix's tribe. His tribe's scouts have been watching you watching them. That is normal frontier intelligence behavior. What is not normal is where their secondary surveillance has been directed.
+
+For the past month, Thusnelda's scouts have maintained a position with line-of-sight to the northeast corner of this fort: specifically to the excavation site. They have been counting. Personnel, materials in, materials out. They know more about the progress of the excavation than most soldiers inside the fort do. You do not know what they intend to do with that information, but you know that whatever is in those ruins is as significant to them as it is to Corvinus. And unlike Corvinus, they appear to have expected it.
+
+</details>
+
+---
+
+### Frumentarius (*Supply Officer / Imperial Intelligence Agent*)
+
+**Pay:** *Duplicarius*, 600 denarii/year from the legion; additional classified allowance from the *Princeps Peregrinorum* (the head of imperial intelligence in Rome), amount undisclosed.
+
+**Prerequisites:** Roman citizen only. INT 13. Proficiency in Deception. Proficiency in Insight. Not appointed by Corvinus. Selected by the *Princeps Peregrinorum* and seconded to this posting. Corvinus did not choose this person and cannot formally remove them from the unit.
+
+**Why this role exists:** The *frumentarii* began as grain supply officers. They traveled along supply routes, monitored logistics, and ensured that the army's food moved correctly. Over time, they became something more: the empire's internal intelligence service. They still manage supply manifests. They also monitor loyalty, identify dissent, track unusual patterns of behavior in military units, and file reports to Rome that the local commander does not see before they are sent.
+
+**Duties between sessions (official):** Manage grain supply manifests, oversee convoy scheduling, coordinate with the quartermaster on supply levels.
+
+**Duties between sessions (actual):** Monitor the unit and fort for loyalty issues. File encrypted reports to Rome via the intelligence courier network, separate from the standard dispatch system.
+
+**Mechanic:** Request information from the *frumentarii* network across the empire (DM provides after 1d4 days, encrypted courier round-trip). Use a coded communication system that cannot be traced to the unit by normal Investigation. Once per session, make a DC 13 Insight check against any named NPC to determine whether they are filing independent reports to Rome outside the official dispatch system.
+
+<details>
+<summary><strong>DM: Show this section to the Frumentarius player privately at Session 0</strong></summary>
+
+*This content is for the Frumentarius player only. Other players know this character handles supply. They do not know the rest.*
+
+Your actual orders, received before you arrived at this posting, are as follows: monitor the excavation near the northeast barracks, document what is found, and report directly to Rome on the legate's handling of the discovery. You were in position before Corvinus knew what was in the ground.
+
+You know that a sealed dispatch from Brutus's office arrived three weeks ago and that Corvinus has not opened it. You filed a report about this. You have not received a response, which means either Rome is processing it or someone is intercepting your courier.
+
+You know one other thing that you have not yet reported: the sealed dispatch arrived two days before the excavation reached the vault. Brutus knew what was there before Corvinus found it. Your standing orders do not cover this scenario, which means you are currently operating on your own judgment.
+
+The question you face is not whether to keep filing reports. The question is who those reports are actually serving.
+
+</details>
+
+<details>
+<summary><strong>DC 13 — Supply manifest discrepancies</strong></summary>
+
+The official supply manifests for this fort show standard consumption rates for a garrison of this size. The actual consumption rates, based on your independent tracking, differ in two categories: *posca* (vinegar-water, the standard soldier's drink) consumption is slightly low, suggesting either underreporting or a secondary supply source; iron stock consumption is slightly high, suggesting either more repair work than documented or materials leaving the fort without being signed out.
+
+Small discrepancies can be noise. These have been consistent for six weeks, which means they are structural.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Soldiers reporting to Brutus's network</strong></summary>
+
+You have identified two soldiers in this fort who are using the civilian mail network rather than the military dispatch system for at least some of their correspondence. Both have family in Rome. One of the letters you intercepted (legally, as part of your intelligence remit) was addressed to a name that appears in your reference files for Brutus's patronage network.
+
+What you do not know is whether these soldiers are active agents or simply people who owe Brutus a favor and were asked to relay information once. The distinction matters for how you handle them.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — The dispatch arrived before the discovery</strong></summary>
+
+This is documented. The sealed dispatch from Brutus's office arrived on the third day of the excavation. The vault was not breached until the seventh day. The timing means Brutus had prior intelligence: either a previous visit to this site, access to survey records that predate the current dig, or a source inside the fort who reported the discovery at an earlier stage than the official record reflects.
+
+If Brutus knew what was in the ground before Corvinus did, the entire chain of events that followed requires reinterpretation. You have not reported this conclusion yet. Reporting it changes everything, including your own position in what happens next.
+
+</details>
+
+---
+
+## Religious Roles
+
+### Sacerdos (*Fort Priest and Shrine Keeper*)
+
+**Pay:** Basic military rate, 300 denarii/year; plus temple stipend from the fort shrine fund, 200 denarii/year additional
+
+**Prerequisites:** Any legal status. WIS 13. Proficiency in Religion. Appointed by the legate on the recommendation of the existing priest. Must demonstrate knowledge of the complete ritual calendar through a practical examination.
+
+**Why this role exists:** The gods are real in this world and the Roman army knows it. A fort that observes the festivals properly, maintains the shrine, and ensures the dead are buried correctly is a fort whose divine standing is managed. The *sacerdos* is the administrative specialist who keeps that relationship with the divine world functioning, the same way the *medicus* keeps the relationship between soldiers and physical health functioning.
+
+**Duties between sessions:** Maintain the fort shrine, lead daily observances, preside at funerals and last rites, certify that festival requirements have been met for official records.
+
+**Mechanic:** Allies who observe your morning rites before a session (player acknowledgment that their character participated) gain +1 to death saving throws for that session. You can perform last rites that prevent a dead NPC from rising as a Lemur (*Dishonored Rest* risk removed). Once per session, ask for a divine sign and receive a yes/no answer (DM determines based on current divine standing).
+
+<details>
+<summary><strong>DC 13 — Ritual calendar for a frontier posting</strong></summary>
+
+A frontier fort observes a modified calendar: the major festivals are maintained (you cannot practically observe every Roman religious obligation in the field), while local variations accommodate the frontier context. The festivals most relevant to this posting are the *Armilustrium* (October 19, purification of weapons before campaign season ends), the *Quinquatria* (March 19-23, Mars's main festival), and the *Lemuria* (May 9, 11, 13, for the restless dead).
+
+You know which festivals were missed by this fort in the past year and what the expected divine consequence of each missed festival is. The *Lemuria* was observed but improperly: the correct formula was used but at the wrong time of night, which means the rite is in question.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Signs of active divine presence vs. ordinary omen</strong></summary>
+
+There is a difference between a bad omen (a raven on the left, a sneeze before a speech) and a sign of active divine attention (repeated, patterned, escalating). The bad omen category is large and most of it is noise. Active divine attention is rare and specific.
+
+This fort is currently receiving active divine attention. The signs have been present for approximately six weeks, correlating with the start of the excavation. You know the specific signs and you know they do not match Mars's standard operating pattern: this is not the clean intervention of a war god. It is something older and more complicated.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — Who has been making non-standard offerings at the shrine</strong></summary>
+
+The fort shrine accepts offerings through the official channel: you receive them, record them, and place them at the correct altar. You also know when offerings are placed at the shrine that did not come through you.
+
+Two sets of offerings in the past month were not filed through the official channel. One was placed at Mars's altar: the offering type matches the frontier cult of Mars Ultor rather than the standard ritual, and the placement is slightly wrong in a way that suggests the person knows the form but not the tradition. The other was placed directly at the base of the shrine wall rather than at any altar, which is neither Roman nor Germanic practice. You do not know what tradition it belongs to. You kept it for examination. It is in a sealed box in your quarters.
+
+</details>
+
+---
+
+### Flamen Martialis (*Priest of Mars*)
+
+**Pay:** No military pay (this is a civilian religious office, technically); temple stipend from Rome, 500 denarii/year; additionally supported by the legate's personal patronage.
+
+**Prerequisites:** Roman citizen only. Free-born, not a freedman. WIS 15. Proficiency in Religion. Must genuinely worship Mars: not merely acknowledge him as part of the Roman pantheon, but hold him as a personal patron deity. This is examined through the appointment process and is not a formality.
+
+**Note:** This role is vacant at campaign start and cannot be filled until after Session 2, when the necessary ritual knowledge becomes accessible through the grove encounter. Corvinus is aware the role is vacant. He has not advertised this fact because the reason the previous *Flamen Martialis* left this post is not information he wants circulating.
+
+**Why this role exists:** The frontier cult of Mars is not the civic cult practiced in Rome. It is older, more demanding, and specific to liminal spaces: the borders between Roman order and the uncontrolled world outside. A *Flamen Martialis* on the frontier is not decorative. He is the ritual specialist for the relationship between this garrison and its patron god, and he conducts rites that have direct military consequence if done correctly and direct military consequence if done incorrectly.
+
+**Duties:** Perform Mars-specific rites (distinct from general Roman religion). Maintain any sacred weapons or objects associated with Mars. Pronounce the *devotio* if circumstances require it.
+
+**Mechanic:** Once per session, invoke Mars directly for +1d6 damage on one weapon attack or +1d6 on one saving throw (Mars notices: this adds 1 to the collective corruption track). You can perform the *devotio* as a special action (see Session 5 mechanics). Mars tells you directly, without a check, when he is actively present in a scene: the DM notifies this player privately.
+
+<details>
+<summary><strong>DC 13 — Mars's two faces</strong></summary>
+
+In Rome, Mars is the civic war god: the god of disciplined military force, of justified conflict, of the legal instrument of Roman power. He is clean, formal, and documented. His festivals are scheduled. His priests are administrators.
+
+On the frontier, Mars is something else. The soldiers here call him Mars Ultor, the Avenger: not the god of Rome's power but the god of the space where Rome's power runs out. He is the god of the last shield wall, the god of the man who knows he is going to die and decides what to do about it. The frontier cult is older than the civic one and significantly less comfortable.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — The frontier cult of Mars Ultor</strong></summary>
+
+The frontier cult practices a set of rites that are not in the official Roman religious calendar. They are passed between *Flamines* directly, without being written down: this is deliberate. The prayer language for the binding war-vow is different from the standard Mars prayer. It is not archaic Latin; it is something older.
+
+A soldier who makes a proper war-vow to Mars Ultor is making a contract, not a prayer. The god has been known to hold the parties to it. You know two soldiers at this fort who made war-vows to Mars Ultor at the start of the current campaign. One of them is dead. The other has been behaving in a way that suggests he believes the vow is still active.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — The *ancilia* and the three weapons</strong></summary>
+
+The *ancilia* are twelve sacred shields kept in Rome, said to have fallen from heaven as a divine gift during the reign of Numa. This is the official account. The *Flamen Martialis* tradition holds a different account, passed without being written: the shields were not the only objects that fell. There were three weapons. The shields were kept because they were identifiable and manageable. The weapons were distributed because they were not safe in one place.
+
+The spear in the vault below this fort is one of the three. The other two are accounted for in separate locations that you know. What you also know, and what the previous *Flamen Martialis* apparently discovered, is that circumstances have brought information about all three to the attention of people who are not qualified to act on it. This is why Mars is paying attention to this fort specifically, and why the *devotio* option exists in Session 5.
+
+</details>
+
+---
+
+## Support Roles
+
+### Capsarius (*Field Medic and Medical Orderly*)
+
+**Pay:** *Sesquiplicarius*, 450 denarii/year (take-home approximately 300)
+
+**Prerequisites:** Any legal status. CON 12. Proficiency in Medicine or proficiency with an Herbalist Kit. Must be trained by the unit's *medicus* (requires the *medicus*'s approval). Appointed by the *praefectus castrorum*.
+
+**Why this role exists:** The *medicus* handles surgery, diagnosis, and complex cases. The *capsarius* handles everything that needs to happen before the *medicus* arrives: cleaning wounds, applying pressure, administering available medications, and deciding which of the three men bleeding on the ground goes first. The *capsa* (the cylindrical leather case that gives the role its name) contains the immediate treatment supplies: bandages, vinegar, basic medications. The *capsarius* carries it into the field.
+
+**Duties between sessions:** Carry the medical kit in the field, perform immediate wound care, assist in surgery, maintain the medical supply inventory.
+
+**Mechanic:** Stabilize a dying creature as a bonus action (not a full action). Administer a potion to an unconscious ally as a bonus action. If no *medicus* is present in the party, you function as a basic field medic (Medicus mechanic at -1d6 on the healing roll).
+
+<details>
+<summary><strong>DC 13 — Standard wound care and triage decisions</strong></summary>
+
+The immediate priority after a combat engagement is not the most badly wounded: it is the most salvageable. A soldier who has lost too much blood before you reached him is not a triage priority; a soldier who has a manageable wound and shock is. You make this calculation in seconds, because you have made it before, and you know the specific signs.
+
+You carry: linen bandage strips, vinegar solution, pitch for sealing deep wounds, a bronze probe for locating embedded metal, and three doses of *theriac* (an all-purpose compound medication whose actual efficacy is disputed but whose psychological value is not). The *capsa* weighs approximately four kilograms fully stocked.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Medicinal plants within reach of the fort</strong></summary>
+
+Within a half-day's walking distance from Vindolanda, the following plants are available: yarrow (wound staunching), willow bark (fever reduction), wormwood (digestive problems), elder flower (respiratory complaints, mildly), and bog rosemary in the wetland area three hours northeast. Standard herbalism knowledge covers the first four. The fifth is less commonly known.
+
+Bog rosemary (*Andromeda polifolia*) is native to the bog region and requires specific preparation. Correctly dried and brewed, it produces something worth knowing about, but the preparation is not in the standard herbalism texts.
+
+</details>
+
+<details>
+<summary><strong>DC 16 Medicine + Herbalist Kit — Bog rosemary preparation</strong></summary>
+
+Bog rosemary tea, prepared from dried leaves using a cold-steep method rather than boiling (boiling destroys the relevant compound), provides advantage on saving throws against the Alp's Sleep Paralysis for eight hours per dose. This is not in any Roman medical text. You discovered it by accident while treating a soldier who had been showing symptoms consistent with repeated nightmare-type attacks and gave him the tea as a sleep aid.
+
+The *medicus* does not know this yet. Valeria, the herb trader in the civilian settlement, does not know this yet. The information is worth something to both of them, and they will respond differently to receiving it.
+
+</details>
+
+---
+
+### Custos Armorum (*Weapons Keeper and Armory Officer*)
+
+**Pay:** *Sesquiplicarius*, 450 denarii/year (take-home approximately 300)
+
+**Prerequisites:** Any legal status with a clean disciplinary record. STR 12. Proficiency with Smith's Tools or Leatherworker's Tools. Literate enough to maintain inventory (INT 10 minimum). Appointed by the centurion; a background check by the *frumentarius* is standard procedure.
+
+**Note:** The current *custos armorum*, Brutianus, is present at campaign start but will be absent by Session 3. His departure creates a vacancy and exposes a pattern of unauthorized armory access that will require investigation.
+
+**Why this role exists:** Eighty soldiers, each with a full kit. Weapons that are not maintained fail. Weapons that are not accounted for disappear. Ammunition that is not tracked runs out at the worst possible moment. The *custos armorum* is the person who stands between "fully equipped fighting unit" and "armed rabble with varying standards." They are also the person who knows, with precision, when something has been taken that should not have been.
+
+**Duties between sessions:** Daily weapons inspection, armory inventory, issue and return of all weapons from the locked armory, ammunition accounting.
+
+**Mechanic:** Hold a key to the armory (normally locked to non-officers). Know the complete current weapons and ammunition inventory. Identify a weapon's quality and condition by inspection (DC 11, no proficiency required). Once per session, locate a specific weapon type within the fort's supply chain in one hour (barring siege conditions).
+
+<details>
+<summary><strong>DC 12 — Current armory contents</strong></summary>
+
+Current armory stock: sixty-four *gladii* in service condition, eight awaiting repair, four condemned; thirty-two *pila* (heavy), eighteen in service condition; forty-one *pila* (light), thirty in service condition; three *scorpiones* (light bolt-throwers) with twelve bolts each; approximately four hundred sling stones (loose weight, not precision ammunition); eighty sets of lorica segmentata, twelve requiring repair; twenty-two *scuta* in service condition, six awaiting repair.
+
+Lead sling shot: fourteen pouches of twenty, held by the quartermaster, requires signed requisition.
+
+</details>
+
+<details>
+<summary><strong>DC 15 — Substandard and tampered weapons</strong></summary>
+
+Three weapons in the current issue are below standard in ways that are not obvious on casual inspection. One *gladius* has a blade that has been resharpened to the point that the edge geometry is wrong: it will hold an edge poorly and chip under hard use. Two *pila* have shafts that have been slightly thinned near the join, which will cause them to break on impact instead of bending. Normal wear can produce this; deliberate modification produces this more consistently.
+
+You have pulled these from service. You have not yet determined whether the substandard condition is accidental or deliberate.
+
+</details>
+
+<details>
+<summary><strong>DC 17 — Unauthorized removals and the excavation connection</strong></summary>
+
+Someone has been removing *pilum* heads from the armory. Not complete *pila*: specifically the iron heads, removed from condemned shafts that were awaiting disposal. The heads are small, heavy, and easily concealed. The armory log does not show these removals because they were made from condemned stock, which is tracked differently.
+
+The pattern of removals correlates precisely with the nights when the northeast barracks excavation access point was unsealed. Not approximately: precisely. Every night the excavation ran after dark, iron was removed from the condemned stock. You have the log. The conclusion is available to anyone willing to draw it.
+
+What the iron was used for in the ruins below is not something you can determine from armory records. But the consistent timing means it was not accidental removal. Someone needed iron near the excavation site on specific nights, and they did not want it on the official record.
+
+</details>
+
+---
+
+## Role Vacancies
+
+When a role is not filled by a player character, an NPC holds it. When that NPC leaves or dies, the role becomes vacant. Vacancies have specific mechanical consequences documented in each role entry above.
+
+The DM tracks role status. At the start of each session, the DM notes which roles are currently filled by PCs and which by NPCs. When a role becomes vacant mid-session (an NPC dies), the DM announces it directly: the mechanical consequence takes effect immediately, and the NPC's death is played, not summarized.
+
+Player characters can take over a vacant role if they meet the prerequisites and if the situation allows for the transition (a siege is not the moment to process paperwork). When a PC takes over a role, the previous NPC's equipment, contacts, and outstanding issues transfer to them. This includes any complications the NPC was managing.
+
+Some roles require specific conditions to become available to PCs that are not simply vacancy: the *Flamen Martialis* role requires ritual knowledge that is not accessible until Session 3. The *explorator* role (if vacant at start) becomes available to a PC from Session 3 onward when Flavus can be named and recruited if the party builds the appropriate relationship.
+
+The goal is a unit that functions continuously, with or without the party filling every position. The party's choices about which roles they hold and which they leave to NPCs shape which NPCs they are closest to and which NPC deaths hit hardest.

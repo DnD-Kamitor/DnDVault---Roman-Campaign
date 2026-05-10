@@ -820,6 +820,291 @@ Goal: Fort Vindolanda should be improvable by player action, and soldiers should
 
 ---
 
+### Milestone 51 — The Role System: *Vexillatio Extraordinaria*
+Goal: Every player selects a military role at Session 0. Each role has historical prerequisites (citizenship, literacy, guild approval), a pay grade, duties between sessions, and DC-gated knowledge checks behind toggles. NPCs hold all roles too; if an NPC dies, the role becomes vacant and can be inherited. The camp feels like a living institution, not a backdrop.
+
+**Design concept:** The party is a *vexillatio extraordinaria* (special detachment), not a regular *contubernium*. Legate Corvinus assembled one specialist per critical function after the excavation produced results he could not explain and could not officially report. Cover story: construction site oversight. Actual mission: investigate the ruins, contain whatever is down there, keep it off the dispatch rolls. The *frumentarius* in the unit is already filing reports Corvinus has not approved.
+
+**New file:** `roles.qmd` (Player's Workbook, Section 2 — The Camp, after `professions.qmd`)
+**Also modify:** `session0.qmd` (role selection step), `gm_session0.qmd` (DM role assignment notes), `gm_intro.qmd` (NPC role holders, vacancy tracking table), `_quarto.yml` (insert roles.qmd)
+
+#### The 15 Roles
+
+Each role entry in `roles.qmd` must contain:
+- Latin title + English translation
+- Pay grade (denarii/year) and what is deducted
+- Prerequisites: citizenship tier, literacy, stat minimums, proficiency requirements, guild/collegium approval where applicable
+- Why this role exists (1 paragraph: practical military reason, not flavor)
+- Duties between sessions (what the character does during downtime by default)
+- Special mechanical benefit (unique to this role, usable in-session)
+- DC-gated knowledge checks behind `<details>` toggles (DC 13/15/17, same three-tier system as knowledge.qmd)
+- Default NPC holder if no PC takes the role
+- What happens if the role is vacant (mechanical consequence)
+
+**Military Command Roles:**
+
+1. *Optio* (Unit second-in-command)
+   - Pay: *Duplicarius*, 600 den/year
+   - Prerequisites: Citizen preferred (*Latini* with 10+ years service may qualify); CHA 13 or STR 14; Athletics or Persuasion proficiency; appointed by centurion, approved by legate; not available if no existing Optio endorses you
+   - Duties: morning briefings, patrol scheduling, casualty reports, drilling the unit
+   - Mechanic: once/session, reroll one initiative (yours or an ally's, before or after the roll); can issue an order as a bonus action (one ally within 60 ft moves up to their speed without using their reaction)
+   - Knowledge: chain of command and who reports to whom (DC 13); which officers are political appointments vs. soldiers (DC 15); which officers are reporting to Brutus's network and what they have sent (DC 17)
+   - Default NPC: Varro (already named)
+   - Vacancy consequence: no one can reroll initiative; morale checks for the unit are DC 16 instead of DC 14
+
+2. *Tesserarius* (Watch officer, keeper of the daily password)
+   - Pay: *Sesquiplicarius*, 450 den/year
+   - Prerequisites: Any legal status; INT 12; Perception proficiency; appointed by centurion; must have clean disciplinary record
+   - Duties: assign night watch rotations, deliver the *tessera* (password token) each morning, record who is and is not where they should be
+   - Mechanic: always knows current day's password and patrol schedule; can create a false password (DC 14 Deception check, detected on DC 15 Investigation); knows which guards are currently on duty at which post
+   - Knowledge: official patrol schedule and gate assignments (DC 13); gaps in the patrol pattern and when the wall is weakest (DC 15); which guards have been bribed, are asleep, or are Brutus's informants (DC 17)
+   - Default NPC: Decanus Arvina (new NPC; leaves with the Tribune in Session 3, creating a vacancy)
+   - Vacancy consequence: passwords are distributed to all officers (security failure); party loses advance warning of any infiltration
+
+3. *Aquilifer* (Eagle standard bearer, most honored military role)
+   - Pay: *Duplicarius*, 600 den/year
+   - Prerequisites: Roman citizen (*Cives Romani*) only, no exceptions; STR 15; Athletics proficiency; free-born (not freedman); minimum 5 years service; recommended by the centurion and approved by the legate; must pass the loyalty examination
+   - Duties: guard the eagle at all times (it does not leave the *principia* except in formation); lead the standard in formal ceremony; perform unit religious rites at the shrine
+   - Mechanic: while you carry the eagle, all allies within 30 ft have advantage on saving throws against fear effects; if the eagle falls (you drop it or die while carrying it), all allies within 60 ft make DC 16 Wisdom save or be frightened for 1 minute; once/session, invoking the eagle before a combat grants the unit a free bonus action on their first turn
+   - Knowledge: this legion's history and battle honors (DC 13); where other legions' eagles have been lost and what happened to the men responsible (DC 15); the specific blessing spoken over the eagle that constitutes a binding military oath in Roman law, and why the eagle in the vault below is not a standard eagle (DC 17)
+   - Default NPC: Aquilifer Gaius Metellus (new NPC; found dead near the ruins entrance in Session 1, creating an immediate vacancy at the start of play)
+   - Vacancy consequence: no unit-wide fear immunity; morale saves are DC 16 across all sessions until the role is filled; the eagle must be guarded by a rotation of two soldiers at all times
+
+4. *Signifer* (Unit standard bearer and unofficial banker)
+   - Pay: *Sesquiplicarius*, 450 den/year
+   - Prerequisites: Any citizen or *Latini* status; INT 13; must be literate in Latin; History or Persuasion proficiency; appointed by centurion
+   - Duties: carry the unit *signum* (not the eagle) in formation; maintain the death benefits ledger; manage the unit savings deposits (soldiers entrust their savings to the signifer because he cannot run)
+   - Mechanic: access to the unit savings fund (100 gp collectively at campaign start); can draw on it with DC 14 Persuasion (unit majority vote) or DC 18 Deception (forging the ledger, detected on DC 16 Investigation); the savings fund grows if the party completes supply missions
+   - Knowledge: who has savings deposited and how much (DC 13); which soldiers are in debt and to whom (DC 15); which debts are owed to people who would use them as leverage (including which debts connect to Brutus's network) (DC 17)
+   - Default NPC: Signifer Publius Afer (new NPC; implicated in the Tribune's financial scheme in Session 2 and transferred out or arrested)
+   - Vacancy consequence: unit savings fund frozen (no access without Legate's personal order); death benefits unpaid until a new signifer is appointed
+
+5. *Cornicen* (Horn blower, battlefield signal officer)
+   - Pay: *Sesquiplicarius*, 450 den/year
+   - Prerequisites: Any legal status; CON 13; Performance proficiency or Musician's instrument tool; must pass practical signals test administered by the existing *cornicen*; appointed by centurion
+   - Duties: sound morning *classicum* (reveille), signal formations in drill, sound the watch changes
+   - Mechanic: can signal a formation change as a bonus action in combat (all allies within 60 ft who can hear shift into or out of formation without using their movement or reaction); can signal a false retreat (DC 15 Performance, opposed by enemy commander's Insight) to draw enemies out of position
+   - Knowledge: the full Roman signal vocabulary and what each call means (DC 13); signals used by the Germanic tribes and what they indicate (DC 15); how to counterfeit a Roman military signal convincingly enough to cause a unit to break formation (DC 17)
+   - Default NPC: Cornicen Libo (new NPC; siege casualty in Session 4)
+   - Vacancy consequence: formation changes in combat require a standard action instead of bonus action; the morning watch change must be handled by voice (Perception DC 15 to hear across the fort)
+
+**Specialist (*Immunes*) Roles:**
+
+6. *Medicus* (Field surgeon, exempt from all fatigue duties)
+   - Pay: *Duplicarius*, 600 den/year
+   - Prerequisites: Any legal status; WIS 13; Medicine proficiency; Greek training preferred (character may have Healer's Kit as part of background); appointed by the *praefectus castrorum* (camp prefect), not the centurion
+   - Duties: morning sick parade (examine all soldiers reporting ill), wound dressing after any combat, epidemic monitoring and quarantine decisions
+   - Mechanic: can stabilize a dying creature with Medicine check (no action cost, just the check); once/day, spend 10 minutes and a healer's kit use to heal 2d6 + WIS modifier HP; can identify poison, disease, or unusual wound cause with DC 13 Medicine
+   - Knowledge: field injuries, wound fever timelines, and which soldiers are currently unfit for duty (DC 13); poison identification, antidote preparation, and symptoms of the Antonine Plague vs. other fever (DC 15); Cassia's full knowledge of what the spear's influence does to human bodies at the cellular level, plus the one treatment that works (DC 17, requires Cassia's trust at Ally tier first)
+   - Default NPC: Cassia (already named, already developed)
+   - Vacancy consequence: no healing between sessions without downtime activity; wound infections become a real mechanical risk (Constitution save DC 12 after each session without medical care)
+
+7. *Haruspex* (Divination specialist, reads omens and entrails)
+   - Pay: *Duplicarius*, 600 den/year; plus temple stipend from the fort shrine (100 den/year additional)
+   - Prerequisites: Roman citizen preferred; WIS 14; Religion proficiency; must be approved by the *collegium haruspicum* (professional divination guild based in Rome); examination required (DC 16 Religion check representing training); appointed by the legate
+   - Duties: read omens before any significant military action (legally required; a commander who ignores a *haruspex*'s warning loses legal protection if the action fails); perform animal sacrifice at festivals; file *prodigia* reports (unusual omens requiring state response)
+   - Mechanic: can cast *Augury* once/day without a spell slot; when performing entrail-reading before a session's main conflict, roll 1d20 secretly and give the DM the result (they use it to calibrate one encounter that session); can declare an action *nefastus* (ritually forbidden today), which gives the whole party advantage on the first saving throw of that session but removes one of the DM's encounter options
+   - Knowledge: standard divination signs and their accepted interpretations (DC 13); the *libri haruspicini* (the books of divination): what the specific organs predict, full *extispicy* procedure (DC 15); the specific category of omen called *prodigium* (twelve signs in Roman military law requiring Senate response), and that Paterculus has been filing them as ordinary bad omens because he knows an official *prodigium* declaration would bring a Senate investigation to Vindolanda (DC 17)
+   - Default NPC: Paterculus (already named, already developed)
+   - Vacancy consequence: *Augury* unavailable; the legate cannot legally authorize a major engagement (session-level consequence: attacking without *haruspex* approval causes disadvantage on all saves for the first combat of that session)
+
+8. *Faber* (Military engineer and smith, exempt from fatigue duties)
+   - Pay: *Sesquiplicarius*, 450 den/year
+   - Prerequisites: Any legal status; STR 13; Smith's Tools or Mason's Tools proficiency; demonstrated skill (practical test); appointed by the *praefectus fabrum* (chief engineer)
+   - Duties: weapon maintenance inspections, fort structural repair, siege equipment construction and maintenance, supervise working parties
+   - Mechanic: can craft or repair mundane weapons and armor at half cost with access to a forge; can assess structural weaknesses (DC 13 Investigation reveals weak points in wall, door, or structure); once/session, can improvise a piece of siege equipment (battering ram, caltrops, burning pitch) from available materials with a DC 14 Artisan's Tools check
+   - Knowledge: current condition of the fort's walls and which sections are weakest (DC 13); what specific repairs would take what time and materials (DC 15); that the northeast foundation has been undermined by the spring below it and will not hold weight during a siege without emergency shoring (DC 17)
+   - Default NPC: Faber Rufus (already named as camp trader; his OGAS in camp_economy.qmd covers his dual role)
+   - Vacancy consequence: weapon repair costs double; fort structural issues worsen each session without intervention
+
+9. *Librarius* (Administrative scribe and intelligence clerk)
+   - Pay: *Duplicarius*, 600 den/year
+   - Prerequisites: Must be literate in Latin; citizen preferred; INT 14; History proficiency or Calligrapher's Supplies; appointed by the *cornicularius* (senior scribe at the legate's office)
+   - Duties: draft unit dispatches and orders, maintain the official roster, copy and file all incoming orders, maintain the pay ledger
+   - Mechanic: can forge military documents (DC 14 Forgery check, detected on DC 15 Investigation); has access to the supply manifests and incoming dispatch copies (knows what Rome officially knows about Vindolanda); can read and produce official Latin documents that are legally binding
+   - Knowledge: what is officially in the fort's dispatch records (what Rome knows and does not know) (DC 13); gaps between the official record and what the party has seen (specific things Corvinus has not reported, DC 15); the existence and contents of a sealed dispatch from Brutus's office that arrived three weeks ago and has not been opened by Corvinus (DC 17)
+   - Default NPC: Librarius Nerva (new NPC; implicated in the Tribune's document forgery in Session 2, arrested or transferred)
+   - Vacancy consequence: the unit's official paperwork falls to Corvinus's staff; the party loses access to incoming dispatch copies
+
+10. *Explorator* (Scout and frontier intelligence officer)
+    - Pay: *Duplicarius*, 600 den/year
+    - Prerequisites: Any legal status; DEX 13; Stealth proficiency; Perception proficiency; typically recruited from provincial auxiliaries who know the local terrain; appointed by the legate's intelligence officer
+    - Duties: reconnaissance beyond the fort perimeter (2-3 day patrols), tracking, reporting on Germanic movement, maintaining contact with border informants
+    - Mechanic: can move at full speed without penalty in forest or wilderness terrain; advantage on Perception checks in wilderness; can identify tracks and determine how many creatures passed, their size, and approximately when (DC 12 Survival, no tool required); once/session, can call on a border informant for one piece of local intelligence (DM provides, 1d4 hours wait)
+    - Knowledge: current Germanic movement patterns near Vindolanda and where the raiding parties are staging (DC 13); Vercingetorix's tribe's exact location and the route to avoid their sentinels (DC 15); where Thusnelda's scouts have been active in the past month and what they were watching (the answer: they were watching the ruins excavation) (DC 17)
+    - Default NPC: Flavus (named in Session 2 cascade unlock; only available if party hit DC 17 in Session 2; otherwise the explorator role is vacant from the start)
+    - Vacancy consequence: Germanic movement reports are 2 sessions out of date; the Session 3 forest journey begins with disadvantage on the first two forest event rolls
+
+11. *Frumentarius* (Supply officer, officially; imperial intelligence agent, actually)
+    - Pay: *Duplicarius*, 600 den/year from the legion; additional classified allowance from the *Princeps Peregrinorum* in Rome (the head of imperial intelligence)
+    - Prerequisites: Roman citizen only; INT 13; Deception proficiency; Insight proficiency; selected by the *Princeps Peregrinorum* in Rome, not the local legate (this is a secondment, not a promotion); Corvinus did not choose this person and cannot remove them
+    - Duties: officially manages grain supply manifests and convoy scheduling. Actually: monitors loyalty throughout the fort, identifies dissent, files secret reports to Rome on the legate's decisions, and watches for exactly the kind of unusual activity currently happening at the ruins
+    - Mechanic: can request information from the *frumentarii* network across the empire (DM provides after 1d4 days); has a coded communication system that cannot be traced to the unit; once/session, can make a DC 13 Insight check against any named NPC to learn whether they are filing reports to Rome (this check reveals Paterculus is not; it reveals Corvinus does not know what has been reported in his name)
+    - **This role is partially hidden:** The player knows they are a *frumentarius*. Other PCs know this person handles supply. The DM knows the full picture. The role entry in roles.qmd is marked as a covert specialist with a separate `<details>` block for the DM covering what this player's reports mean for Sessions 3-5.
+    - Knowledge: what is in the official grain manifests and where the discrepancies are (DC 13); which soldiers have been reporting to Brutus's network and what they have said (DC 15); that the sealed dispatch from Brutus arrived before the excavation began, meaning Brutus knew about the site before Corvinus found it (DC 17)
+    - Default NPC: The current *frumentarius* is an NPC named Decius Turbo (new NPC; present but not introduced until Session 2 when his role becomes relevant)
+    - Vacancy consequence: Rome's intelligence feed from Vindolanda goes dark; this causes Brutus to send the Tribune earlier than planned (accelerates Session 2 timeline by one in-world week)
+
+**Religious Roles:**
+
+12. *Sacerdos* (Fort priest and shrine keeper)
+    - Pay: Military pay at basic rate (300 den/year) plus temple stipend from the shrine (200 den/year additional)
+    - Prerequisites: Any legal status; WIS 13; Religion proficiency; appointed by the legate on recommendation of the existing priest; must demonstrate knowledge of the full ritual calendar
+    - Duties: maintain the fort shrine, lead daily observances, preside at funerals, certify that festival observances have been completed for official records
+    - Mechanic: allies who observe your morning rites before a session (in-fiction acknowledgment) gain +1 to death saving throws for that session; can perform a last rites ritual that prevents a dead NPC from rising as a Lemur (removes the *Dishonored Rest* risk); once/session, can ask for a divine sign and receive a yes/no answer (DM decides based on current divine standing)
+    - Knowledge: the full Roman religious calendar and which festivals apply to a frontier fort (DC 13); what the specific signs of active divine presence look like versus ordinary omen interpretation (DC 15); that the fort shrine has been receiving offerings from someone other than the official religious personnel, and the offering pattern matches neither Roman nor Germanic tradition (DC 17)
+    - Default NPC: Paterculus (doubles as *haruspex*; if both roles are vacant, the fort's religious life collapses with morale consequences)
+    - Vacancy consequence: no last rites performed for dead soldiers; morale saves are DC 15 instead of DC 14; Lemur risk for any soldier who dies during the siege
+
+13. *Flamen Martialis* (Priest of Mars, campaign-critical role)
+    - Pay: No military pay (the role is technically a civilian religious office); temple stipend from Rome (500 den/year) plus the legate's personal patronage
+    - Prerequisites: Roman citizen only; free-born, not freedman; WIS 15; Religion proficiency; must worship Mars (not merely acknowledge him); extremely rare appointment, usually held at the legion level not the fort level; **this role is vacant at campaign start** and can only be filled after Session 2 when the party has sufficient access to the ritual knowledge
+    - Duties: perform Mars-specific rites (not general Roman religion but the specialized frontier cult of Mars Ultor); maintain any sacred weapons or objects associated with Mars; pronounce the *devotio* (the self-sacrifice vow that invokes Mars's personal intervention)
+    - Mechanic: once/session, invoke Mars directly for +1d6 damage on one weapon attack or one saving throw (Mars notices; this adds 1 to the party's collective corruption track); can perform the *devotio* as a special action (see Session 5 mechanics in chapter5.qmd); has instinctive knowledge of when Mars is actively present (no check required; the DM tells this player privately)
+    - Knowledge: Mars's two faces (civic war-god and frontier avenger) and why they feel like different gods (DC 13); the frontier cult of Mars Ultor: what soldiers actually believe he wants, the specific prayer language that constitutes a binding war-vow (DC 15); the *ancilia* tradition (twelve sacred shields said to have fallen from heaven), why some priests believe the spear in the vault is one of three divine weapons that should not coexist in one place, and what happens to a *Flamen Martialis* whose god takes notice of them (DC 17)
+    - Default NPC: Vacant; if a PC fills this role after Session 2, Mars takes specific note of that character in Session 4
+    - Vacancy consequence: no *devotio* option in Session 5 (closes one of Option C's three arguments); Mars does not send specific signals to the party (they must read omens like everyone else)
+
+**Support Roles:**
+
+14. *Capsarius* (Field medic and medical orderly, under *Medicus*)
+    - Pay: *Sesquiplicarius*, 450 den/year
+    - Prerequisites: Any legal status; CON 12; Medicine proficiency or Herbalist Kit; trained by the *medicus* (requires Medicus's approval); appointed by the camp prefect
+    - Duties: carry the *capsa* (medical supply case) in the field, perform immediate wound care before the *medicus* arrives, assist in surgery, maintain medical supply inventory
+    - Mechanic: can stabilize a dying creature as a bonus action (not a full action); if no *Medicus* is present in the party, functions as basic field medic with Medicus mechanic at -1d6 healing; can administer a potion as a bonus action instead of an action
+    - Knowledge: standard wound care and which injuries require the *medicus* vs. which can be handled in the field (DC 13); which plants near Vindolanda have medicinal uses (DC 15; cross-references the flora section of locations.qmd); that bog rosemary tea provides advantage against the Alp's Sleep Paralysis, which Valeria does not yet know and which the party can trade to her for Ally tier access (DC 16 Medicine + Herbalist Kit)
+    - Default NPC: Capsarius Aemilia (new NPC; female, unusual but not unprecedented; daughter of a military family; present throughout; not a siege casualty unless the DM chooses)
+    - Vacancy consequence: stabilizing costs a full action; potions cannot be administered to unconscious allies without a standard action
+
+15. *Custos Armorum* (Weapons keeper and armory officer)
+    - Pay: *Sesquiplicarius*, 450 den/year
+    - Prerequisites: Any legal status with clean disciplinary record; STR 12; Smith's Tools or Leatherworker's Tools; must be literate enough to maintain inventory (INT 10 minimum); appointed by the centurion; background investigation by the *frumentarius*
+    - Duties: daily weapons inspection, armory inventory, issue and return of weapons from the locked armory, ammunition accounting
+    - Mechanic: has a key to the armory (normally locked to non-officers); knows current stock of all weapons and ammunition types; can identify a weapon's quality and condition by inspection (DC 11 check, no proficiency needed); once/session, can locate a specific weapon type within the fort's supply chain in 1 hour (barring siege conditions)
+    - Knowledge: what weapons and ammunition the fort currently holds, including the expanded Roman weapons from Milestone 47 (DC 12, very accessible); which weapons are substandard, damaged, or have been substituted (DC 15); that someone has been removing pilum heads from the armory without signing them out, and the removal pattern matches the nights when the ruins access point was unsealed (DC 17)
+    - Default NPC: Custos Armorum Brutianus (new NPC; has been bribed; leaves with the Tribune's party in Session 3, creating a vacancy and exposing the weapon theft)
+    - Vacancy consequence: armory access requires Corvinus's personal authorization; the weapon theft is not discovered until Session 4 when inventory is taken during siege preparation
+
+#### NPC Role Holders: Master Table (for gm_intro.qmd)
+
+This table goes in `gm_intro.qmd` as a DM reference, hidden in a `<details>` block:
+
+| Role | Default NPC | Session vacancy likely | Vacancy trigger |
+|------|-------------|----------------------|-----------------|
+| Optio | Varro | S4 (high siege risk) | Dies in breach defense; party must decide who leads |
+| Tesserarius | Decanus Arvina | S3 | Leaves with Tribune; deliberate sabotage of farewell |
+| Aquilifer | Gaius Metellus | S1 | Found dead at ruins entrance; opening mystery |
+| Signifer | Publius Afer | S2 | Tribune's financial scandal; arrested or flees |
+| Cornicen | Libo | S4 | Siege arrow casualty; horn falls in the mud |
+| Medicus | Cassia | S3 or S5 | Sacrifice seed or Session 5 choice |
+| Haruspex | Paterculus | S4 | Siege; he will not leave the shrine |
+| Faber | Rufus (trader) | — | Survives unless specifically targeted |
+| Librarius | Nerva | S2 | Forgery arrest; Tribune's exit |
+| Explorator | Flavus (if unlocked) | S5 | Optional; returns from forest mission |
+| Frumentarius | Decius Turbo | S3 | Revealed; players decide what to do with him |
+| Sacerdos | Paterculus (doubles) | S4 | Same as Haruspex vacancy |
+| Flamen Martialis | Vacant | S3 (PC can fill) | Available after grove ritual |
+| Capsarius | Aemilia | — | Survives unless specifically targeted |
+| Custos Armorum | Brutianus | S3 | Bribed; flees with Tribune |
+
+#### Role Selection at Session 0
+
+Add to `session0.qmd` (player-facing) and `gm_session0.qmd` (DM annotations):
+
+- After character creation, each player selects a role from the 15 available
+- Prerequisites must be met (stat, citizenship, proficiency)
+- No two players can hold the same role (first come, first served at the table)
+- If no player takes a role, the default NPC holds it and the table notes their name
+- The Aquilifer role is specifically mentioned as vacant from the first scene (Gaius Metellus is dead)
+- The Flamen Martialis role is specifically mentioned as not yet available (players can ask why; the answer is Session 2 content)
+- The Frumentarius player gets a private card from the DM after session 0 explaining their actual mission
+
+#### NPC Role-Holders as Peer Characters
+
+Every NPC who holds a role is a peer, not a shopkeeper. They eat at the same table, attend the same briefings, go on the same patrols. Design principle: **a player who has not taken a role should not notice the absence, because the NPC fills it convincingly.** A player who has taken a role should feel the NPC as a colleague who has opinions about how they do the job.
+
+**What peer behavior means in practice:**
+- NPC role-holders attend every scene the PCs attend (they are part of the unit, not waiting in a shop)
+- They have opinions on the party's decisions and will say so, privately or publicly
+- They make their own choices when the party is not watching (Varro drills the unit at dawn whether or not anyone asks him to; Aemilia treats wounds whether or not anyone brings patients to her)
+- They ask the party for things: Paterculus needs someone to assist with the festival rite; Flavus wants to know what the explorator-PC found on the north road; Arvina (tesserarius) wants help with a soldier who has been falsifying the watch log
+- Their deaths carry weight because the party knew them as colleagues: Libo falling from the wall is not "the cornicen NPC died" but "Libo, who was arguing with you about the watch schedule three sessions ago, is dead"
+
+**Peer NPC behavior table (for gm_intro.qmd):** Each NPC role-holder has a "peer behavior" entry alongside their OGAS:
+- What they talk about with the party unprompted (their daily concerns, complaints, professional opinions)
+- What they need from the party (a specific request they make once per session if approached)
+- What they will do if ignored for a full session (they act on their own; this advances their OGAS whether or not the party engaged)
+- What they notice about each PC based on that PC's role (Varro watches the *optio* PC's leadership style and has an opinion; Paterculus watches the *haruspex* PC's omen interpretation and agrees or disagrees)
+
+**The "other player" feeling** is achieved by:
+1. NPC role-holders speak in the first person, directly to PCs, not to the room
+2. They remember things: "You told me last session you suspected Arvina. Were you right?"
+3. They have bad days: the DM can have Cassia be short-tempered after a patient died, or have Flavus be distracted because his scouting report was ignored
+4. They die like players: no off-screen death unless the story demands it; their final moments are played, not summarized
+
+**Handoff when a role is vacant:** When an NPC role-holder dies or leaves, the DM says it directly to the players: "Libo is dead. The *cornicen* role is unfilled. Here is what that means mechanically. Here is what Libo's absence feels like in the unit." The role mechanics kick in immediately. The emotional reality is played, not skipped.
+
+#### Build sequence for Milestone 51:
+- [x] Create `roles.qmd` with all 15 role entries
+- [x] Add role selection section to `session0.qmd`; update contubernium framing to vexillatio extraordinaria
+- [ ] Add DM role annotation section to `gm_session0.qmd`
+- [x] Add NPC Role Holders master table and peer NPC behavior section to `gm_intro.qmd`
+- [x] Update `_quarto.yml` to insert `roles.qmd` in Section 2 after `professions.qmd`
+- [ ] Cross-reference existing NPC entries in `camp_economy.qmd` to note role assignments
+
+---
+
+### Milestone 52 — Contubernium Reframe: The Assembled Unit
+Goal: All player-facing and GM-facing text that currently treats the party as a standard *contubernium* (8-man tent unit) is updated to reflect the *vexillatio extraordinaria* concept. Players understand they were individually recruited, not assigned together. The historical 8-man structure is preserved as world context; the party's special status is distinct.
+
+**Files:** `player_guide.qmd`, `player_tome.qmd`, `session0.qmd`, `gm_intro.qmd`, `gm_session0.qmd`
+
+- [ ] **Standard contubernium** — Keep the 8-man historical description in `player_tome.qmd` as world context (what a normal tent unit looks like, how they live together); do not remove or retcon this
+- [ ] **The party's actual status** — Add a section in `player_guide.qmd` explaining the *vexillatio extraordinaria* concept: individually summoned to the Legate's office, each for a different reason; no one told them about the others; they meet in an anteroom outside Corvinus's office on the morning of Session 1
+- [ ] **Why Corvinus assembled this unit** — In `gm_intro.qmd`, a DM-only section: Corvinus's reasoning for each pick (what he needed from each specialist, what he does not yet know about the *frumentarius* in his own unit, why he gave them the construction oversight cover)
+- [ ] **The unit has no name** — Player-facing note: the unit has no formal designation yet; naming it is an optional in-session moment during Session 1; suggest the DM leave space for it but do not script it
+- [ ] **Session 0 update** — Replace "how do you know each other" framing with "you do not, yet"; the session 0 questions ask who you are individually, not how the group formed; group formation is a Session 1 story beat
+- [ ] **The cover story** — In `gm_session0.qmd`, DM note: each PC was given a different cover reason for the summons; the *frumentarius* was told they are reviewing supply manifests; the *medicus* was told there is a worker injured in the excavation; the *explorator* was told there is a tracking assignment beyond the north gate; none of these are true; Corvinus tells them the truth in the cold open of Session 1
+
+---
+
+### Milestone 53 — Expanded Roman Weapons and Ammunition (Planned)
+*(Previously noted as Milestone 47 in planning; renumbered to reflect new sequencing)*
+
+Goal: The weapons section has basic D&D stats. Roman weapons had real tactical variety. Add all subtypes with D&D mechanics and integrate them with the role system (the *custos armorum* knows all of this; the *faber* can make all of this).
+
+**Files:** `roman_tactics.qmd` (main), `player_guide.qmd` (equipment summary table), `roles.qmd` (cross-references for Custos Armorum and Faber knowledge checks)
+
+- [ ] **Sling (*funda*) and ammunition** — Lead shot (DC 13 Con save on hit or stunned 1 round, short range 30/60); stone (cheap, longer range 40/80, no special effect); clay incendiary (sets flammable objects alight on hit, one-use, 20/40); different ammunition requires different preparation time and different *custos armorum* stock levels
+- [ ] **The pilum family** — Heavy *pilum* (thrown 30/60, piercing; on hit: target's shield requires DC 14 Athletics or it becomes unusable until repaired; the pilum bends on impact to prevent retrieval); light *pilum* (thrown 20/40, acts as javelin but +1d4 on first attack vs. unshielded target); *plumbata* (weighted dart thrown by hand, 30/60, ignores half cover)
+- [ ] **Arrow types** — Bodkin (ignores leather armor's damage reduction); broadhead (extra 1d4 bleed damage on a critical hit, persists 1 round); fire arrow (bonus action to light, adds 1d4 fire damage, only ignites flammable targets); *arcuballista* bolt (heavy crossbow bolt, -10 ft range bands, +2 damage over standard bolt)
+- [ ] **Melee weapon subtypes** — *Gladius* (short sword: advantage on attack rolls when in tight formation with at least one ally adjacent); *spatha* (cavalry long sword: +5 ft reach, disadvantage in formation); *pugio* (military dagger: finesse, advantage on attack rolls against grappled targets); *hasta* (infantry spear: reach, can set against charge for double damage); *dolabra* (military pick: ignores stone cover, double damage to structures and fortifications)
+- [ ] **Ammunition supply and weight** — Each type: weight per 20-unit bundle, current Vindolanda stock, resupply route; sling stones are free (collected locally, unlimited in theory); lead shot requires the *custos armorum*; pilum are one-use per encounter unless character spends a bonus action on retrieval after the encounter
+- [ ] **Tactics integration** — Cross-reference formation entries: pilum throw before melee is a formation opener mechanic; slings on the wall during Session 4's siege; which arrow type works against which creature in the bestiary
+
+---
+
+### Milestone 54 — Bestiary Tactical Expansion (Planned)
+*(Previously noted as Milestone 48)*
+
+Goal: Every creature currently differs mainly by HP and attack stats. Give each a distinct tactical identity grounded in real animal behavior: ambush patterns, territory defense, pack behavior, reaction to light/fire/sound. CR increases where the tactics justify it.
+
+*(All task items from the previous Milestone 48 entry carry forward unchanged; see the Milestone 48 entry above for the full task list. This renumbering reflects that M51 and M52 were inserted before it.)*
+
+---
+
+### Milestone 55 — Upgradable Camp and Legionary Companions (Planned)
+*(Previously noted as Milestone 49)*
+
+*(All task items from the previous Milestone 49 entry carry forward unchanged; this renumbering reflects the new sequencing. The role system from M51 integrates directly: camp upgrade triggers should now include role-specific actions, e.g., the *faber* completing the gate repair counts as a camp upgrade trigger independent of gold spent.)*
+
+Additional integration tasks for M55 beyond the original M49 scope:
+- [ ] **Role-gated upgrade triggers** — Specific upgrade triggers require the relevant role to be filled: the ballista installation requires a living *faber*; the shrine dedication requires a living *sacerdos*; the surgery upgrade requires Cassia at Trusted tier
+- [ ] **Role vacancy as camp degradation** — If two or more roles are vacant simultaneously, camp functions at Level 1 regardless of previous upgrades (the institution cannot maintain itself without staff)
+- [ ] **Companion recruitment via roles** — The *optio* role player can recruit companions as an in-role action (not just via relationship tier); the *explorator* can recruit Germanic scouts as non-legionary companions if Vercingetorix's tribe is at Trusted+
+
+---
+
 ## Conventions
 
 ### Writing Tone
