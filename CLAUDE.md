@@ -820,7 +820,7 @@ Goal: Fort Vindolanda should be improvable by player action, and soldiers should
 
 ---
 
-### Milestone 51 — The Role System: *Vexillatio Extraordinaria*
+### Milestone 51 — The Role System: *Vexillatio Extraordinaria* ✅ COMPLETE
 Goal: Every player selects a military role at Session 0. Each role has historical prerequisites (citizenship, literacy, guild approval), a pay grade, duties between sessions, and DC-gated knowledge checks behind toggles. NPCs hold all roles too; if an NPC dies, the role becomes vacant and can be inherited. The camp feels like a living institution, not a backdrop.
 
 **Design concept:** The party is a *vexillatio extraordinaria* (special detachment), not a regular *contubernium*. Legate Corvinus assembled one specialist per critical function after the excavation produced results he could not explain and could not officially report. Cover story: construction site oversight. Actual mission: investigate the ruins, contain whatever is down there, keep it off the dispatch rolls. The *frumentarius* in the unit is already filing reports Corvinus has not approved.
@@ -1047,24 +1047,24 @@ Every NPC who holds a role is a peer, not a shopkeeper. They eat at the same tab
 #### Build sequence for Milestone 51:
 - [x] Create `roles.qmd` with all 15 role entries
 - [x] Add role selection section to `session0.qmd`; update contubernium framing to vexillatio extraordinaria
-- [ ] Add DM role annotation section to `gm_session0.qmd`
+- [x] Add DM role annotation section to `gm_session0.qmd`
 - [x] Add NPC Role Holders master table and peer NPC behavior section to `gm_intro.qmd`
 - [x] Update `_quarto.yml` to insert `roles.qmd` in Section 2 after `professions.qmd`
-- [ ] Cross-reference existing NPC entries in `camp_economy.qmd` to note role assignments
+- [x] Cross-reference existing NPC entries in `camp_economy.qmd` to note role assignments
 
 ---
 
-### Milestone 52 — Contubernium Reframe: The Assembled Unit
+### Milestone 52 — Contubernium Reframe: The Assembled Unit ✅ COMPLETE
 Goal: All player-facing and GM-facing text that currently treats the party as a standard *contubernium* (8-man tent unit) is updated to reflect the *vexillatio extraordinaria* concept. Players understand they were individually recruited, not assigned together. The historical 8-man structure is preserved as world context; the party's special status is distinct.
 
 **Files:** `player_guide.qmd`, `player_tome.qmd`, `session0.qmd`, `gm_intro.qmd`, `gm_session0.qmd`
 
-- [ ] **Standard contubernium** — Keep the 8-man historical description in `player_tome.qmd` as world context (what a normal tent unit looks like, how they live together); do not remove or retcon this
-- [ ] **The party's actual status** — Add a section in `player_guide.qmd` explaining the *vexillatio extraordinaria* concept: individually summoned to the Legate's office, each for a different reason; no one told them about the others; they meet in an anteroom outside Corvinus's office on the morning of Session 1
-- [ ] **Why Corvinus assembled this unit** — In `gm_intro.qmd`, a DM-only section: Corvinus's reasoning for each pick (what he needed from each specialist, what he does not yet know about the *frumentarius* in his own unit, why he gave them the construction oversight cover)
-- [ ] **The unit has no name** — Player-facing note: the unit has no formal designation yet; naming it is an optional in-session moment during Session 1; suggest the DM leave space for it but do not script it
-- [ ] **Session 0 update** — Replace "how do you know each other" framing with "you do not, yet"; the session 0 questions ask who you are individually, not how the group formed; group formation is a Session 1 story beat
-- [ ] **The cover story** — In `gm_session0.qmd`, DM note: each PC was given a different cover reason for the summons; the *frumentarius* was told they are reviewing supply manifests; the *medicus* was told there is a worker injured in the excavation; the *explorator* was told there is a tracking assignment beyond the north gate; none of these are true; Corvinus tells them the truth in the cold open of Session 1
+- [x] **Standard contubernium** — Keep the 8-man historical description in `player_tome.qmd` as world context (what a normal tent unit looks like, how they live together); do not remove or retcon this
+- [x] **The party's actual status** — Add a section in `player_guide.qmd` explaining the *vexillatio extraordinaria* concept: individually summoned to the Legate's office, each for a different reason; no one told them about the others; they meet in an anteroom outside Corvinus's office on the morning of Session 1
+- [x] **Why Corvinus assembled this unit** — In `gm_intro.qmd`, a DM-only section: Corvinus's reasoning for each pick (what he needed from each specialist, what he does not yet know about the *frumentarius* in his own unit, why he gave them the construction oversight cover)
+- [x] **The unit has no name** — Player-facing note: the unit has no formal designation yet; naming it is an optional in-session moment during Session 1; suggest the DM leave space for it but do not script it
+- [x] **Session 0 update** — Replace "how do you know each other" framing with "you do not, yet"; the session 0 questions ask who you are individually, not how the group formed; group formation is a Session 1 story beat
+- [x] **The cover story** — In `gm_session0.qmd`, DM note: each PC was given a different cover reason for the summons; the *frumentarius* was told they are reviewing supply manifests; the *medicus* was told there is a worker injured in the excavation; the *explorator* was told there is a tracking assignment beyond the north gate; none of these are true; Corvinus tells them the truth in the cold open of Session 1
 
 ---
 
@@ -1082,15 +1082,15 @@ All creatures updated with full tactical identities in bestiary.qmd. CR increase
 
 ---
 
-### Milestone 55 — Upgradable Camp and Legionary Companions (Planned)
+### Milestone 55 — Upgradable Camp and Legionary Companions ✅ COMPLETE
 *(Previously noted as Milestone 49)*
 
 *(All task items from the previous Milestone 49 entry carry forward unchanged; this renumbering reflects the new sequencing. The role system from M51 integrates directly: camp upgrade triggers should now include role-specific actions, e.g., the *faber* completing the gate repair counts as a camp upgrade trigger independent of gold spent.)*
 
 Additional integration tasks for M55 beyond the original M49 scope:
-- [ ] **Role-gated upgrade triggers** — Specific upgrade triggers require the relevant role to be filled: the ballista installation requires a living *faber*; the shrine dedication requires a living *sacerdos*; the surgery upgrade requires Cassia at Trusted tier
-- [ ] **Role vacancy as camp degradation** — If two or more roles are vacant simultaneously, camp functions at Level 1 regardless of previous upgrades (the institution cannot maintain itself without staff)
-- [ ] **Companion recruitment via roles** — The *optio* role player can recruit companions as an in-role action (not just via relationship tier); the *explorator* can recruit Germanic scouts as non-legionary companions if Vercingetorix's tribe is at Trusted+
+- [x] **Role-gated upgrade triggers** — Specific upgrade triggers require the relevant role to be filled: the ballista installation requires a living *faber*; the shrine dedication requires a living *sacerdos*; the surgery upgrade requires Cassia at Trusted tier
+- [x] **Role vacancy as camp degradation** — If two or more roles are vacant simultaneously, camp functions at Level 1 regardless of previous upgrades (the institution cannot maintain itself without staff)
+- [x] **Companion recruitment via roles** — The *optio* role player can recruit companions as an in-role action (not just via relationship tier); the *explorator* can recruit Germanic scouts as non-legionary companions if Vercingetorix's tribe is at Trusted+
 
 ---
 
