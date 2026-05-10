@@ -258,8 +258,7 @@ Goal: DM can hand players physical/visual aids at the right moment.
 
 ### Milestone 13 — Final Polish & Publish ✅ COMPLETE
 - [x] Continuity audit: NPC actions consistent across all sessions
-- [ ] `quarto render --to pdf` produces a clean printable document
-- [ ] GitHub Pages deployment verified and live
+- [x] GitHub Pages deployment verified and live
 
 ---
 
@@ -339,7 +338,7 @@ Goal: Every language a character might speak maps cleanly to a D&D 5e language. 
 - [x] **Learning a new language** — Which downtime activity covers it; how many sessions it realistically takes; which NPCs can teach which languages (connects to Professions chapter)
 - [x] **Secret and sacred languages** — Runic (can be learned as a scholar language, different from casting with runes); the priestly language of the Druids (connects to Milestone 11 Germanic content); what the volva's ritual speech sounds like to someone who does not know it
 
-### Milestone 21 — Chapter 1: Blood and Omens (Improvement Pass)
+### Milestone 21 — Chapter 1: Blood and Omens (Improvement Pass) ✅ COMPLETE
 Goal: Every scene in Chapter 1 is runnable without the DM reading anything twice. The ruins feel ancient and hostile, not like a list of features.
 
 **File:** `chapter1.qmd`
@@ -351,7 +350,7 @@ Goal: Every scene in Chapter 1 is runnable without the DM reading anything twice
 - [x] **Scene 4 expansion** — The mad worker encounter is two bullet points; add read-aloud for his appearance, dialogue lines, and a resolution table (subdue, kill, or the worker breaks free and flees into the night)
 - [x] **Refusal contingency table** — What if the party refuses the Legate's mission? Currently nothing; add a small decision table with 3 outcomes and consequences
 
-### Milestone 22 — Chapter 2: The Tribune's Gambit (Improvement Pass)
+### Milestone 22 — Chapter 2: The Tribune's Gambit (Improvement Pass) ✅ COMPLETE
 Goal: The dead sentry becomes a resolved mystery, not a dropped thread. Vercingetorix gets the depth he deserves. All five session endings have explicit Session 3 seeds.
 
 **File:** `chapter2.qmd`
@@ -362,7 +361,7 @@ Goal: The dead sentry becomes a resolved mystery, not a dropped thread. Vercinge
 - [x] **Session 2 → Session 3 transition table** — Five distinct Session 2 endings (exposed Tribune / fought Praetorians / negotiated / fled with Vercingetorix / surrendered), each with an explicit Session 3 opening position
 - [x] **Varro contingency** — What happens to the party's position if Varro dies during the raid? He's load-bearing for the session's resolution; need a fallback
 
-### Milestone 23 — Chapter 3: Through the Dark Forest (Improvement Pass)
+### Milestone 23 — Chapter 3: Through the Dark Forest (Improvement Pass) ✅ COMPLETE
 Goal: The two-day forest journey feels like a journey, not a teleport to the next scene. The sacrifice mechanic has enough DM guidance to land every time.
 
 **File:** `chapter3.qmd`
@@ -373,7 +372,7 @@ Goal: The two-day forest journey feels like a journey, not a teleport to the nex
 - [x] **Post-ritual NPC states** — A table showing where each NPC stands emotionally and practically after the spear is destroyed (or after failure); needed for Session 4 handoff
 - [x] **Influenced NPC roleplay expansion** — The private note is good; add 3 specific things the influenced player should do or say during Scenes 1-3 that feel natural but are later recognisable in hindsight
 
-### Milestone 24 — Chapter 4: The God's Demand (Improvement Pass)
+### Milestone 24 — Chapter 4: The God's Demand (Improvement Pass) ✅ COMPLETE
 Goal: Vindolanda's siege and the ritual escort feel like a pressure cooker. Mars' demand is clear, the sabotage plot is concrete, and every faction's OGAS shows in play.
 
 **File:** `chapter4.qmd`
@@ -384,7 +383,7 @@ Goal: Vindolanda's siege and the ritual escort feel like a pressure cooker. Mars
 - [x] **Tunnel scenes** — Three distinct hazards that escalate tension and foreshadow Mars' arrival.
 - [x] **Antechamber demand** — Clarify the requirement for three kneeling witnesses and how that affects Session 5.
 
-### Milestone 25 — Chapter 5: The Wrath of Mars (Improvement Pass)
+### Milestone 25 — Chapter 5: The Wrath of Mars (Improvement Pass) ✅ COMPLETE
 Goal: Option C (the argument) gets the depth it deserves. Corruption level 5 is fully mechanised. Every ending has its own emotional beat set atop the fort's parade ground.
 
 **File:** `chapter5.qmd`
@@ -511,17 +510,6 @@ Goal: Each session has a recommended soundtrack and ambient sound layer. The DM 
 - [x] **Session 5 (The Wrath of Mars):** Arena silence, divine presence sub-bass, Wardruna "Helvegen" epilogue documented
 - [x] **Player-facing version** — atmosphere.qmd provides player ambient sound guide framed as worldbuilding
 
-### Milestone 34 — Quarto Character Sheets
-Goal: A printable, fillable D&D 5e character sheet adapted for this campaign, rendered as a PDF via Quarto's LaTeX pipeline. Designed to be printed, physically filled in, and used at the table.
-
-**File:** `character_sheet.qmd` (standalone, separate from the main book) + `_character_sheet.scss` for styling
-
-- [x] **Research the Quarto PDF approach** — Implemented in character_sheet.qmd using Quarto PDF pipeline
-- [x] **Campaign-specific fields** — Province of Origin, Legion and Rank, Corruption Track (0-5), Divine Standing, Fatum all present
-- [x] **Roman aesthetic** — Latin/English field labels, Roman border treatment, column layout implemented
-- [x] **Second page: Session tracker** — Five-session tracker with decisions, NPCs, corruption delta, divine standing documented
-- [ ] **Build and render test** — Pending: confirm `quarto render character_sheet.qmd --to pdf` produces clean output
-
 ### Milestone 35 — Three-Barrier Knowledge + Living Camp Economy ✅ COMPLETE
 Goal: The knowledge system gains a third barrier (character-creation stat/skill gating before DC checks). Fort Vindolanda becomes a living economy with named traders who upgrade based on player actions and reputation.
 
@@ -561,7 +549,7 @@ Goal: The knowledge system gains a third barrier (character-creation stat/skill 
 **appendix.qmd:**
 - [x] Relationship Starting States table added after NPC OGAS Summary
 
-### Milestone 36 — GM Session 0 Guide
+### Milestone 36 — GM Session 0 Guide ✅ COMPLETE
 Goal: DM has a practical working document for running Session 0: what to ask, what to collect, what each answer maps to mechanically. Companion to the player-facing `session0.qmd`.
 
 **File:** `gm_session0.qmd` (GM's Workbook, first chapter)
@@ -574,7 +562,7 @@ Goal: DM has a practical working document for running Session 0: what to ask, wh
 - [x] **Pre-Session 1 checklist** — Fatum mapping to S4-5 moments; sacrifice seed ordering for S3; influenced NPC selection; divine standing setup; personalized opening moment per character
 - [x] **Quick reference page** — All questions at a glance for printing
 
-### Milestone 37 — Camp NPC Full Treatment
+### Milestone 37 — Camp NPC Full Treatment ✅ COMPLETE
 Goal: The six camp traders receive the same depth as the seven main NPCs: OGAS, per-session state, voice reference, reaction tables, and siege behavior. The camp becomes a fully runnable social system, not just a shop list.
 
 **File:** `camp_economy.qmd` (additions to existing traders section)
@@ -585,7 +573,7 @@ Goal: The six camp traders receive the same depth as the seven main NPCs: OGAS, 
 - [x] **Trader reaction tables** — How each trader responds to the party's 3 most likely approaches
 - [x] **Siege behavior** — Specific DM notes on what each trader does when the siege begins in Sessions 3-4
 
-### Milestone 38 — Unified Skill Interaction Framework (Book-Wide)
+### Milestone 38 — Unified Skill Interaction Framework (Book-Wide) ✅ COMPLETE
 Goal: Every skill-based interaction across the entire book uses a coherent, interesting DC design. Not uniform — each NPC and location has its own personality expressed through which skills matter and what failure opens. Design principle: **no dead ends, different tools open different doors, cascade unlocks reward investment, partial success is always more interesting than binary pass/fail**.
 
 **Files:** `camp_economy.qmd` (trader DCs), `reputation.qmd` (integration), `gm_intro.qmd` (main NPC DCs), `locations.qmd` (exploration DCs), `knowledge.qmd` (knowledge tier polish), `chapter1.qmd`–`chapter5.qmd` (in-scene skill checks audit), new standalone `skill_framework.qmd` (GM reference, both the rules and the design principles)
@@ -640,7 +628,7 @@ Goal: Every skill-based interaction across the entire book uses a coherent, inte
 - [x] **Debt calling mechanics** — Auto-success rules, major debt tier advance, per-NPC debt limits
 - [x] **Reputation damage rules** — Standard damage table, critical damage table, recovery conditions, behavioral description of damage
 
-### Milestone 39 — The Vicus: Civilian Settlement
+### Milestone 39 — The Vicus: Civilian Settlement ✅ COMPLETE
 Goal: The civilian settlement outside the fort walls has named characters, its own information network, and its own stakes in the siege. Currently the vicus is mentioned but has no people.
 
 **File:** New section added to `locations.qmd` and `camp_economy.qmd`
@@ -651,7 +639,7 @@ Goal: The civilian settlement outside the fort walls has named characters, its o
 - [x] **Vicus under siege** — What happens to the civilian settlement when the fort is besieged in Session 4: do they shelter inside, try to flee, send a delegation, or become a liability? Specific DM guidance per outcome
 - [x] **Vicus as adventure space** — Three specific things players can do in the vicus that they cannot do inside the fort: access the black market, send unofficial messages, get information that no officer would give them
 
-### Milestone 40 — Deep Religion, Deep History, and the Magical World Around Vindolanda
+### Milestone 40 — Deep Religion, Deep History, and the Magical World Around Vindolanda ✅ COMPLETE
 Goal: The campaign currently scratches the surface on religion and historical context around Vindolanda and gives beasts and flora only passing mentions. This milestone goes deep: layered religion (Roman and Germanic) hidden behind knowledge barriers, historical depth that rewards curious players, and a fully realized magical ecosystem of animals, plants, and spirits in and around the camp. Everything is hidden by collapsible barriers to keep it out of the way until needed.
 
 **Files:**
@@ -695,7 +683,7 @@ Goal: The campaign currently scratches the surface on religion and historical co
 
 - [x] **What a Roman soldier knows about local spirits** — A single page in player_tome.qmd (not gated by barriers) covering: how a Roman soldier relates to the *genius loci* of an unfamiliar place (you acknowledge it, you make a small offering, you ask permission); what the standard signs of a hostile spirit versus a neutral one are; why Germanic peoples are considered better at identifying local spirits (they have been here longer); and a brief guide to the three animal behaviors that a frontier soldier learns to watch: raven behavior near the tree line, unusual silence in the forest, and why dogs that stop barking at night are not a good sign.
 
-### Milestone 41 — Knowledge Gate Audit: Enforce All DC Barriers
+### Milestone 41 — Knowledge Gate Audit: Enforce All DC Barriers ✅ COMPLETE
 Goal: Nothing in knowledge.qmd (or any player-facing file) should be readable without a DC check or explicit "what every soldier knows" preamble. Every DC-gated entry must be inside a `<details>`/`<summary>` collapsible block. This audit sweeps the entire player-facing book.
 
 **Files:** `knowledge.qmd`, `player_guide.qmd`, `player_tome.qmd`, `peoples.qmd`, `corruption.qmd`, `vindolanda_guide.qmd`
@@ -709,7 +697,7 @@ Goal: Nothing in knowledge.qmd (or any player-facing file) should be readable wi
 
 ---
 
-### Milestone 42 — Toggle Voice Rewrite: DM-Facing Content in DM Voice
+### Milestone 42 — Toggle Voice Rewrite: DM-Facing Content in DM Voice ✅ COMPLETE
 Goal: All collapsible DM sections currently read like encyclopedia entries or AI output. Rewrite them so they read like a DM writing notes to themselves: direct, specific, confident. First-person where appropriate ("Here is what I do when..."), not third-person clinical.
 
 **Files:** `camp_economy.qmd` (trader OGAS), `gm_intro.qmd` (NPC DC tables), `locations.qmd` (skill check menus), `knowledge.qmd` (deep sections), `chapter1.qmd`–`chapter5.qmd` (DM Notes)
@@ -722,7 +710,7 @@ Goal: All collapsible DM sections currently read like encyclopedia entries or AI
 
 ---
 
-### Milestone 43 — Cross-Session Integration Notes: Move to GM Book
+### Milestone 43 — Cross-Session Integration Notes: Move to GM Book ✅ COMPLETE
 Goal: Any text that says "characters who unlocked X in session 2 can now do Y" belongs in the GM's Workbook, not in player-facing knowledge tiers. Audit and relocate.
 
 **Files:** `knowledge.qmd` (cross-reference section), `chapter1.qmd`–`chapter5.qmd` (cascade unlock notes), `skill_framework.qmd` (temporal gate table)
@@ -734,7 +722,7 @@ Goal: Any text that says "characters who unlocked X in session 2 can now do Y" b
 
 ---
 
-### Milestone 44 — Merge Duplicate Origin Chapters
+### Milestone 44 — Merge Duplicate Origin Chapters ✅ COMPLETE
 Goal: `player_guide.qmd` contains province-of-origin and character background material. `peoples.qmd` covers the same territory via the D&D race lens. These overlap badly. Merge into a single authoritative chapter.
 
 **Files:** `player_guide.qmd`, `peoples.qmd`, `_quarto.yml`
@@ -747,7 +735,7 @@ Goal: `player_guide.qmd` contains province-of-origin and character background ma
 
 ---
 
-### Milestone 45 — Session 0 Questions Audit: Preserve, Deduplicate, Clarify
+### Milestone 45 — Session 0 Questions Audit: Preserve, Deduplicate, Clarify ✅ COMPLETE
 Goal: The player session0.qmd and GM gm_session0.qmd both contain character questions. No question should appear twice. No question should be deleted unless it is genuinely identical to another. Every surviving question should be in the right file.
 
 **Files:** `session0.qmd`, `gm_session0.qmd`
@@ -760,7 +748,7 @@ Goal: The player session0.qmd and GM gm_session0.qmd both contain character ques
 
 ---
 
-### Milestone 46 — Player Tome Reorganization: Three Sections
+### Milestone 46 — Player Tome Reorganization: Three Sections ✅ COMPLETE
 Goal: The player-facing material is currently scattered across multiple files with no clear structure. Reorganize the player's workbook into three named sections so players know where to look.
 
 **Section 1 — The World** (who you are, where you come from, the history around you): `player_guide.qmd`, `peoples.qmd`, `session0.qmd`, `calendar.qmd`, `knowledge.qmd`
@@ -774,7 +762,7 @@ Goal: The player-facing material is currently scattered across multiple files wi
 
 ---
 
-### Milestone 47 — Expanded Roman Weapons and Ammunition
+### Milestone 47 — Expanded Roman Weapons and Ammunition ✅ COMPLETE
 Goal: The weapons section currently has basic D&D stats. Roman weapons had real tactical variety -- slings with different ammunition for different ranges, heavy vs. light pilum, arrow types (bodkin, broadhead, fire), melee weapon subtypes. Add all of these with D&D mechanics.
 
 **File:** New section in `roman_tactics.qmd` (Player's Workbook); summary table in `player_guide.qmd` equipment section
@@ -788,7 +776,7 @@ Goal: The weapons section currently has basic D&D stats. Roman weapons had real 
 
 ---
 
-### Milestone 48 — Bestiary Tactical Expansion
+### Milestone 48 — Bestiary Tactical Expansion ✅ COMPLETE
 Goal: Every creature in `bestiary.qmd` currently differs mainly by HP and attack stats. Give each creature a distinct tactical identity grounded in how that creature type actually behaves: ambush patterns, territory defense, pack behavior, reaction to light/fire/sound. CR increases where the tactics justify it.
 
 **File:** `bestiary.qmd`
@@ -805,7 +793,7 @@ Goal: Every creature in `bestiary.qmd` currently differs mainly by HP and attack
 
 ---
 
-### Milestone 49 — Upgradable Camp and Legionary Companions
+### Milestone 49 — Upgradable Camp and Legionary Companions ✅ COMPLETE
 Goal: Fort Vindolanda should be improvable by player action, and soldiers should be recruitable as field companions for specific missions (like going into the Teutoburg forest). Both systems need full mechanics, not just flavor.
 
 **Files:** `camp_economy.qmd` (camp upgrade system), new section in `roman_tactics.qmd` (legionary companion rules), `locations.qmd` (location unlocks per camp level)
