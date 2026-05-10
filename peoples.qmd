@@ -248,6 +248,101 @@ If no such moment occurs before the session ends, you begin the next session wit
 
 Three moments across the campaign reset this automatically and carry additional effects that the GM handles. You will know when they happen.
 
+**The shadow stages:**
+
+The compact is not static. It deepens when you fade and recedes when you feel. The stages below are sealed until you reach them: open one only when your GM tells you your shadow has moved. Each stage changes what others see, what you can do, and what you are becoming.
+
+<details>
+<summary><strong>Stage 0: Marked (starting stage)</strong></summary>
+
+You are here. Your shadow extends slightly further than the light warrants, and in certain angles of light you are paler than you should be, but nothing in your presence is alarming to anyone who does not know what to look for. Cassia would notice, given time. No one else will, yet.
+
+**What you find normal:** The dark is comfortable. You move through it more naturally than others, and this has been true long enough that you have stopped remarking on it.
+
+**What others notice:** Nothing specific. A quality of stillness, perhaps. An officer who has been watching you for a while might describe you as "self-contained" without being able to say more precisely what they mean.
+
+**Krypteia's Step:** 30 feet. Once per short rest. Standard incorporeal window until start of your next turn.
+
+**How it changes:** Two consecutive sessions without a fading reset, or two shadow-curse manifestations, moves you to Stage 1.
+
+</details>
+
+<details>
+<summary><strong>Stage 1: Fading</strong></summary>
+
+Something has shifted. The connection between you and the material world has become something you must actively maintain rather than something you simply have. The fading disadvantage is now persistent between sessions unless you reset it. The shadow moves when you do not, sometimes: a slight lag, a direction it leans that is not yours.
+
+**What you find normal:** Sensation has become something you notice consciously, because the absence of it is now something you can feel. You have started cataloguing what keeps you here.
+
+**What others notice:** DC 14 Perception to catch it: a moment where the shadow did something your body did not. Cassia notices without a check, given line of sight. Vercingetorix, if he has had his first private conversation with you, will have already marked this.
+
+**Krypteia's Step:** 30 feet. Once per short rest. After you re-solidify, you may spend a bonus action to anchor yourself early if needed (you do not have to wait for the start of your turn).
+
+**Recovery:** Three consecutive sessions with the fading mechanic successfully reset each time drops you back to Stage 0. Tell your GM when you hit the third consecutive reset.
+
+**How it deepens:** Two more sessions without a reset, or a third shadow-curse manifestation, moves you to Stage 2.
+
+</details>
+
+<details>
+<summary><strong>Stage 2: Thinning</strong></summary>
+
+The thinning is visible now to anyone paying attention. In direct bright light you are slightly difficult to look at directly: not frightening, not monstrous, but wrong in a way that defies description. The shadow is doing things on its own, and you are aware of this even when you cannot see it. Sensation that used to anchor you now only slows the drift.
+
+**What you find normal:** You have stopped thinking about what you look like in mirrors. You have also started noticing the seams between shadow and light as though they were doors.
+
+**What others notice:** DC 12 Perception to notice the translucency in bright light. In dim light, automatic for anyone who looks at you carefully. Romans who notice make a DC 10 Wisdom saving throw; on a failure, they are unsettled without knowing why and apply disadvantage to their own Persuasion checks toward you. Cassia does not need a check. Vercingetorix at this stage, if present, will tell you quietly that you are closer to the grove than to the fort.
+
+**Mechanical:** Disadvantage on Charisma checks with Roman officials in formal settings (your physical presence is subtly wrong to institutional Roman eyes). In direct sunlight: disadvantage on attack rolls (the light finds less of you to stand behind).
+
+**Krypteia's Step:** 40 feet. Twice per short rest. The second use in the same short rest period is made at disadvantage on any attack roll during the subsequent incorporeal window.
+
+**Recovery:** The grove ritual, or two of the three campaign-specific reset moments, drops you to Stage 1. Sensation alone is no longer sufficient.
+
+**How it deepens:** A failed corruption divergence save while at Stage 2 or higher, or persistent isolation across Sessions 3-4, moves you to Stage 3.
+
+</details>
+
+<details>
+<summary><strong>Stage 3: Translucent</strong></summary>
+
+You are here in the way that a reflection in water is here: present, specific, and not solid in the way things need to be solid to be trusted. The physical world still holds you, but it holds you the way a net holds water. You have capabilities now that you did not have before, and they are not comfortable to enumerate. Something is preparing you for a transition it assumes is coming.
+
+**What you find normal:** The distinction between the space a body occupies and the space a shadow occupies has become academic. You experience both. You are not yet certain which one is the primary one.
+
+**What others notice:** Automatic in bright light: anyone who looks at you directly sees the translucency. NPCs make a DC 12 Wisdom saving throw when they first see it; on a failure, they will not stand within 5 feet of you without orders requiring them to. On a success, they file it under "frontier strange" and carry on, which is its own kind of unsettling.
+
+**Mechanical:** Vulnerability to radiant damage (the divine light reads you as partially already belonging somewhere else). Disadvantage on Persuasion checks with anyone who can see the translucency. Advantage on Stealth checks in dim light or darkness (there is less of you to detect).
+
+**New capability:** Once per long rest, you can spend 10 minutes in stillness to become fully incorporeal for up to 1 hour: you move through solid objects, physical attacks cannot target you, you cannot interact with the physical world in ways that require mass. You can end this early as a bonus action. While incorporeal, you cannot use Krypteia's Step.
+
+**Krypteia's Step:** 40 feet. Twice per short rest. Can now be triggered as a reaction when you are targeted by an attack (before the roll resolves), once per short rest.
+
+**Recovery:** Only through the grove ritual or Hades' direct intercession. Sensation and reset moments cannot reduce Stage 3 alone; they can prevent it from deepening.
+
+**How it deepens:** Reaching Stage 3 and failing the death saving throw described in the Death Ruling section moves you to Stage 4.
+
+</details>
+
+<details>
+<summary><strong>Stage 4: Shadow-Claimed</strong></summary>
+
+The compact has called in what was owed. You are present in the material world as an act of will, not as a fact of physics. Others do not pass through you; the world still registers your mass; but the registration is provisional. You exist here on terms that Hades is in the process of renegotiating, and the negotiation is not going in your favor without intervention.
+
+**What you find normal:** The grove phrase you heard in Session 4 makes sense now. It was not a threat. It was an arrival notice.
+
+**What others notice:** Your physical presence is visibly incomplete. You leave no footprints on soft ground. Torchlight passes through your hands at the edges. Anyone who looks at you knows something is wrong, though they may not have the vocabulary for what they are seeing. Cassia, if she is alive, will not look directly at you. She will tell the party what needs to happen.
+
+**Mechanical:** Vulnerability to radiant damage (double damage). Advantage on all Stealth checks. Cannot be healed by mundane medicine. Magical healing works at disadvantage. Hades begins sending you direct communications through the shadow: your GM will determine what these say and when. You cannot always choose not to receive them.
+
+**Krypteia's Step:** 50 feet. Twice per short rest. As a reaction when targeted. Additionally: as a movement option, you can spend half your movement to step partially into the shadow world and re-emerge anywhere within 15 feet of your current position that you could normally reach by walking (no action required, once per turn).
+
+**Sustainability:** This stage is not sustainable without resolution. Without the grove ritual or direct divine intervention, you fully cross over within 1d4 sessions: you become an NPC in Hades' domain. The party has that many sessions to act. Your GM knows the count.
+
+**Recovery:** The grove ritual, performed with genuine sacrifice, drops you to Stage 3. From Stage 3 the ordinary recovery paths apply. There is no faster route. The compact honored its terms; matching it requires something real.
+
+</details>
+
 ---
 
 ## Legal Status in the Empire

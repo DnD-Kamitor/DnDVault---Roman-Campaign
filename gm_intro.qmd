@@ -955,6 +955,21 @@ Shadow-curse manifestations (choose based on what fits the scene):
 - They go briefly translucent in direct sunlight: DC 13 Constitution saving throw or 1d4 necrotic damage as the light finds less of them to touch.
 - For one session, they cannot benefit from the Help action or flanking bonuses (the shadow is not fully anchored to the material plane).
 
+**Shadow stage tracking.** Maintain a separate tracker for this character alongside the corruption tracker. Stages run 0-4. Starting stage: 0. Announce stage changes immediately and directly: "Your shadow has moved. Open Stage [N]." Do not delay this for dramatic effect; the collapsible text IS the dramatic effect.
+
+Worsening triggers:
+- Two consecutive sessions without a fading reset: +1 stage (mark the first miss session; the second miss triggers the move)
+- Three accumulated shadow-curse manifestations (from the corruption divergence section above): +1 stage
+- Both conditions in the same session: +1 stage, not +2; stage progression has a ceiling of one per session
+
+Lessening triggers:
+- Stages 1-2: three consecutive sessions with the fading mechanic successfully reset each time: -1 stage
+- Stage 2+: the grove ritual (Session 4 or as a side mission): -1 stage
+- Stage 3+: sensation alone cannot reduce stage; requires ritual or divine intercession
+- Stage 4: grove ritual drops to Stage 3; from Stage 3 normal recovery applies
+
+Important: corruption divergence and shadow stage are linked but not the same. A character can have high corruption and low shadow stage (if they have been living intensely while being claimed by Mars) or low corruption and high shadow stage (if they have avoided divine contact but neglected sensation). These combinations produce different story shapes; both are valid and worth pursuing.
+
 **The fading mechanic.** If the character goes a full session without experiencing a moment of intense sensation (combat damage exceeding 10 HP, a significant emotional scene, a moment where they describe feeling something strongly), apply a minor fade at the session's end: disadvantage on Perception checks at the start of the next session until something resets it. This resets immediately upon any intense moment. The intent is not punishment; it is pressure that creates roleplay opportunities. When it resets, note it briefly: "The world comes back into focus."
 
 Three moments across the campaign have specific effects on this mechanic:
