@@ -216,9 +216,11 @@ The Roman army did not equip every soldier the same way. The legionary's *gladiu
 
 #### *Funda* (Sling)
 
-The sling is a staff-sling or hand-sling used by auxiliary *funditores*. Deceptively simple, it fires three distinct ammunition types at different ranges, each with a different purpose. A trained *funditor* can fire one shot per round without needing to load as a separate action unless noted. The sling itself is a Simple weapon, costs 2 gp, weighs 1/4 lb.
+The Balearic *funditores* who taught this weapon to the Roman army could outrange a composite archer. Lead shot does not whistle like an arrow; it arrives without announcement. What it does to muscle tissue under armor is more damage than the die suggests -- the number represents what matters in play, not what the medic sees afterward. The tradeoff is space: a sling needs a full arm rotation, and in a tight press it becomes useless before it becomes dangerous.
 
-**Using a sling in close formation:** Attacks with a sling while in a formation where allies are within 5 feet are made at disadvantage. The weapon needs swing room.
+The sling itself is a Simple weapon, costs 2 gp, weighs 1/4 lb. A trained *funditor* fires one shot per round without a separate load action unless noted.
+
+**Using a sling in close formation:** Attacks while allies are within 5 feet are made at disadvantage. The weapon needs swing room. A *funditor* who is engaged in melee (attacked this round) must succeed on a DC 12 Dexterity saving throw before each shot or the shot is wasted (the swing is disrupted). Switching ammunition types costs a bonus action.
 
 **Ammunition types:**
 
@@ -252,15 +254,15 @@ Used by the heavier crossbow variants deployed on fort walls and siege positions
 
 #### Heavy *Pilum*
 
-The heavy *pilum* is the standard Roman throwing spear, designed specifically to defeat shields and deny return fire. The shank below the iron head is intentionally soft: it bends on penetrating a shield, making removal impossible and the shield unusable until repaired.
+The heavy *pilum* hitting a shield makes a specific sound: a flat crack, then a grinding drag as the soft iron shank bends under its own weight. Then silence while the man holding the shield realizes it is now pulling his arm toward the ground. The Romans designed for that silence -- the moment between the volley and the charge where the enemy line is disordered and cannot raise shields to meet what is coming. The tradeoff is that a heavy pilum usually dies on the first throw: most bent shanks cannot be recovered.
 
-Heavy *pilum*: Martial weapon. Thrown (30/60 ft). 1d8 piercing. On a hit, the target's shield is unusable until repaired (1 hour of work with appropriate tools). The pilum cannot be thrown back by the target. Retrieving a heavy pilum from the battlefield requires a DC 14 Athletics check as a bonus action after combat ends (most are bent beyond use). Cost: 5 sp. Weight: 4 lb.
+Heavy *pilum*: Martial weapon. Thrown (30/60 ft). 1d8 piercing. On a hit, the target's shield is unusable until repaired (1 hour of work with appropriate tools). The pilum cannot be thrown back by the target. Retrieving a heavy pilum after combat requires a DC 14 Athletics check as a bonus action; on a failure, the shank is bent beyond use. Cost: 5 sp. Weight: 4 lb.
 
 #### Light *Pilum*
 
-The lighter variant is used for closer engagements and by auxiliary units. It does not bend on impact, which means it can be retrieved and reused, but it also means it can be thrown back.
+Lighter, shorter, and built for auxiliary units and closer engagements. It does not bend on impact, which means it can be retrieved and reused -- but it also means the enemy can pick it up and return the favor. A light pilum thrown at an unshielded target finds the body more directly; against someone with a shield up, the lighter head deflects more readily than its heavy counterpart.
 
-Light *pilum*: Martial weapon. Thrown (20/40 ft). 1d6 piercing. Deals +1d4 piercing damage on the first attack in any combat against a target that is not currently carrying a shield (the lighter head reaches the body more directly without shield deflection). Can be retrieved freely after combat. Cost: 3 sp. Weight: 2 lb.
+Light *pilum*: Martial weapon. Thrown (20/40 ft). 1d6 piercing. Deals +1d4 piercing damage on the first attack in any combat against a target not currently carrying a shield. Can be retrieved freely after combat. A target who picks up a light pilum thrown at them can throw it back as a bonus action on their next turn. Cost: 3 sp. Weight: 2 lb.
 
 #### *Plumbata* (Weighted Dart)
 
@@ -274,33 +276,33 @@ A short, lead-weighted dart carried clipped to the inside of the shield. Soldier
 
 #### *Gladius* (Roman Short Sword)
 
-The legionary's primary sidearm. Short enough to use in tight formation, double-edged for cutting, and pointed for thrusting into gaps in armor. Its design rewards the press of bodies rather than fighting it.
+The legionary's primary sidearm. Short enough to use in tight formation, double-edged for cutting, and pointed for thrusting into gaps in armor. Its design rewards the press of bodies rather than fighting it. Against an armored opponent you feel it catch at the links, then find the gap the armorsmith did not think about. After twenty years, the pommel fits the hand the way nothing else does; veterans who muster out sometimes carry the blade for decades afterward.
 
 *Gladius*: Martial weapon. 1d6 piercing or slashing, finesse. Formation bonus: when attacking while at least one ally is within 5 feet of you and within 5 feet of your target, you gain +1 to attack rolls (the close quarters that would hamper a longer weapon instead create pressure and alignment). Cost: 10 gp. Weight: 3 lb.
 
 #### *Spatha* (Cavalry Sword)
 
-The longer sword favored by cavalry and Germanic auxiliary units. Requires space to swing effectively.
+The longer sword of cavalry and Germanic auxiliary units. Nearly two feet longer than the *gladius*, built for mounted riders who need reach past a horse's neck. Germanic warriors use it with big sweeping cuts at range -- the opposite of legionary training. Foot soldiers who carry one into a close press of bodies tend to regret the length before the fight is over.
 
 *Spatha*: Martial weapon. 1d8 slashing. Reach property applies only when mounted (10 ft from horseback); reach is 5 ft on foot. Disadvantage on attack rolls when used in tight formation (within 5 feet of two or more allies). Cost: 15 gp. Weight: 4 lb.
 
 #### *Pugio* (Military Dagger)
 
-Standard issue alongside the *gladius*. Used as a backup weapon, a tool, and in close-quarters situations where the gladius cannot be drawn. The short blade provides advantage when the fight goes to grappling.
+Standard issue alongside the *gladius*. Most soldiers use it as a tool for twenty years and never draw it in anger. When they do draw it, the other person is already too close for anything else to matter. The narrow blade finds angles between ribs that a *gladius* cannot reach. It is the weapon of the last moment, and every Roman soldier knows exactly where it sits.
 
 *Pugio*: Simple weapon. 1d4 piercing, finesse, light, thrown (20/60 ft). You have advantage on attack rolls made while grappling or while grappled. Cost: 5 gp. Weight: 1 lb.
 
 #### *Hasta* (Infantry Spear)
 
-The thrusting spear of the heavy infantry, used from behind a shield wall and set against cavalry charges. Longer than the *gladius* but slower to bring to bear in a clinch.
+The thrusting spear that predates the *gladius* in Roman service, still carried by frontier auxiliary units without full legionary supply chains. Set braced against a cavalry charge it is a wall; unbraced in close quarters it becomes a liability -- too long to maneuver, too heavy to shed fast enough. The brace discipline separates veteran *hastati* from soldiers who simply carry a spear.
 
-*Hasta*: Martial weapon. 1d8 piercing, reach, two-handed. Brace: if you have not moved during your turn, you can set the *hasta* against an incoming charge. Any creature that moves into your reach during that round triggers an opportunity attack from you; this opportunity attack deals double damage on a hit. Cost: 2 gp. Weight: 6 lb.
+*Hasta*: Martial weapon. 1d8 piercing, reach, two-handed. Brace: if you have not moved during your turn, you can set the *hasta* against an incoming charge. Any creature that moves into your reach during that round triggers an opportunity attack from you; this opportunity attack deals double damage on a hit. Transition penalty: if you were braced at the start of your turn, you cannot move and attack in the same turn (the spear must be physically unset; doing so costs your full movement). Cost: 2 gp. Weight: 6 lb.
 
 #### *Dolabra* (Military Pick/Axe)
 
-The legionary's combination entrenching tool and battlefield weapon. Every soldier carries one. In combat it functions as a pick; against structures and fieldworks, it is devastating.
+Every legionary carries one. In the morning it digs the camp ditch; in the afternoon it clears the road; at night, against an enemy scaling the palisade, it removes whatever they are holding onto. The pick end opens gaps in wooden fortifications that battering rams would take minutes to create. It is the most honest weapon in the army: it does not pretend to be only one thing.
 
-*Dolabra*: Martial weapon. 1d8 piercing, two-handed. Against stone walls, wooden structures, earthwork fortifications, or constructed barriers: the *dolabra* deals double damage. A creature using stone cover (a low wall, a battlement, a fortified corner) does not benefit from that cover against a *dolabra* attack: the pick can dislodge the cover itself with a successful hit (the cover is destroyed on a second hit). Cost: 3 gp. Weight: 5 lb.
+*Dolabra*: Martial weapon. 1d8 piercing, two-handed. Against stone walls, wooden structures, earthwork fortifications, or constructed barriers: the *dolabra* deals double damage. A creature using stone cover (a low wall, a battlement, a fortified corner) does not benefit from that cover against a *dolabra* attack: the pick can dislodge the cover itself with a successful hit (the cover is destroyed on a second hit). Against unarmored or lightly armored creatures in the open (no cover, no structure): attacks are made at disadvantage (the pick is heavy and the swing arc is wide; a mobile opponent can step inside it). Cost: 3 gp. Weight: 5 lb.
 
 ---
 
@@ -338,6 +340,102 @@ These weapons do not exist in isolation. They slot into the formations above and
 **Clay incendiaries in the tunnel:** The tunnel scenes in Session 4 are narrow enclosed spaces. Clay incendiaries cannot be used in the tunnel without endangering the party (the fire damage applies to all flammable materials in a 5-foot radius, including the wooden support beams). Outside the tunnel, in the antechamber, they work normally.
 
 **Dolabra and the collapsed passage:** The blocked section in the Session 4 tunnel is a constructed stone collapse, not a natural fall. A character with the *dolabra* can clear enough of the passage to squeeze through with a DC 15 Athletics check (2 rounds of work). Without the *dolabra*, the check is DC 18 and takes 5 rounds. The *dolabra's* structure-damage double damage rule applies to each working round: the DM can frame partial success as clearing enough to pass at the cost of time.
+
+---
+
+---
+
+## Germanic Weapons
+
+The warriors attacking Vindolanda in Sessions 3 and 4 carry a different weapons tradition. Germanic equipment is lighter, faster, and built for the opening shock of a charge rather than the sustained press the testudo is designed to survive. A party that understands how these weapons work together can predict the charge pattern before it arrives; a party that does not will learn it the hard way against the north gate.
+
+These weapons are available to players who capture them in the field, trade for them through Sigrun, or play Germanic-heritage characters.
+
+---
+
+### *Framea* (Germanic Spear-Javelin)
+
+Tacitus writes that the *framea* is "their only or chief weapon" -- iron-tipped, narrow-headed, and deceptively versatile. It is lighter than the Roman *hasta* and shorter than a cavalry lance. The danger is that it does both jobs: it throws and thrusts, and a Germanic warrior chooses which function based on what they see. At forty feet they throw; at ten feet they do not. Roman commanders who understand this know to deny the gap -- force contact before the *framea* leaves the hand, or stand beyond its range until the volley is spent. The tradeoff for the Germanic warrior is that once thrown, they are in melee without a ranged weapon; once held, they have surrendered the disruption advantage.
+
+*Framea*: Martial weapon. Versatile (1d6 one-handed / 1d8 two-handed), piercing. Thrown (20/60 ft); retrievable after combat (the head is not designed to bend). Charge bonus: if the wielder moves at least 20 feet toward the target before making a melee attack with the *framea* this turn, that attack deals +1d4 piercing damage (the momentum of the charge carries through the thrust). Cost: 2 gp. Weight: 4 lb.
+
+---
+
+### *Seax* (Germanic Fighting Blade)
+
+A single-edged blade longer than a knife and shorter than a sword, used after the initial *framea* throw when two people are too close for spearwork. It cuts differently from the *gladius*: long drawing cuts that follow the momentum of the arm, not short thrusts that oppose it. Germanic warriors who use the *seax* as their primary weapon tend to keep moving -- the blade's geometry rewards the fighter who stays in motion and punishes the one who plants their feet.
+
+*Seax*: Martial weapon. 1d6 slashing, finesse, light. Momentum cut: if you moved at least 10 feet before your first attack in the Attack action this turn, that first attack deals +1d4 slashing damage. If you did not move (or are standing still, braced, or in formation), the weapon functions as a standard finesse 1d6 weapon with no bonus. Cost: 5 gp. Weight: 2 lb.
+
+---
+
+### *Francisca* (Throwing Axe)
+
+Not standard issue for every warrior, but carried by specialists in the second rank who throw in the last seconds before the charge connects. The *francisca* tumbles unpredictably in flight -- deliberately so. A tumbling axe is difficult to track and deflect even with a shield raised. It is thrown at ten to twenty feet, not forty; its role is disruption of the front rank right as the charge reaches them. The tradeoff is that it announces its presence before it arrives. A Roman soldier who sees a *francisca* thrower raising their arm has one action to react.
+
+*Francisca*: Martial weapon. Thrown (15/30 ft). 1d6 slashing. On a miss by 4 or fewer (the axe tumbles past without connecting), the target must succeed on a DC 12 Wisdom saving throw or have disadvantage on its next attack roll (the near-miss is deeply distracting). Retrievable after combat unless embedded in a surface. A character can carry up to 3 *franciscae* without additional encumbrance (they are small enough to clip to a belt). Cost: 6 gp. Weight: 3 lb each.
+
+---
+
+### Germanic Round Shield (*Parma*)
+
+Lighter than the Roman *scutum*, smaller in circumference, and built for individual mobility rather than formation locking. Germanic warriors are not trained for testudo; their shield is a personal deflection tool, not an interlocking wall piece. What it loses in formation use it gains in freedom: no weapon penalties, usable with two-handed weapons by strapping rather than gripping when not actively blocking, and fast enough to shield-bash without breaking stride.
+
+*Parma* (Germanic round shield): +2 AC (standard shield bonus). Does not impose disadvantage on attack rolls with any weapon type -- the strap grip frees the weapon arm. Cannot contribute to testudo or any Roman formation requiring shield locking; allies attempting testudo with a *parma*-bearer in the formation do not receive the formation's cover bonus (it does not interlock). Shield bash: bonus action, 1d4 bludgeoning; target makes a DC 12 Strength saving throw or is pushed 5 feet. Cost: 7 gp. Weight: 6 lb.
+
+---
+
+### The Germanic Charge: How It Works Together
+
+The Marcomanni and Cherusci assault pattern has three beats. Understanding the beats lets the party place soldiers where they will matter.
+
+**Beat one (40-60 ft out):** *Framea* volley. Warriors in the first rank throw as they close. At this range, the *scutum* wall absorbs most of it -- but gaps in the wall do not. The pilum counter-volley at 30 feet neutralizes most *framea* before they can be thrown: shields become unusable and the charge loses its cover.
+
+**Beat two (10-20 ft out):** *Francisca* from the second rank, thrown over the heads of the first. The testudo negates this entirely (3/4 cover means the near-miss distraction check applies at disadvantage). Without testudo, front-rank soldiers make the DC 12 Wisdom save or attack with disadvantage right as the charge connects.
+
+**Beat three (contact):** First rank in with *seax* and remaining *framea* in melee grip. They move constantly -- circling, retreating, re-engaging -- which is why the *gladius*'s formation bonus becomes critical here. The charge pattern is designed for open-field fighting; inside the fort walls, in narrow streets and doorways, it fails. Germanic warriors in confined spaces lose the movement bonus for both *framea* and *seax*, and cannot throw *franciscae* safely. Funneling them through the north gate and into the fort street grid neutralizes beat three almost completely.
+
+---
+
+## Notable and Magical Weapons
+
+Three key NPCs carry weapons with specific properties. These are not shop items. They exist as story objects that move through the campaign and can change hands.
+
+---
+
+### Vercingetorix's *Framea* -- *Spes Tribuum* ("Hope of the Tribes")
+
+The *framea* Vercingetorix carries is three generations old. The ash haft has been replaced twice; the iron tip has not. The rune carved into the socket is *Tiwaz*, the rune of Tyr, the one-handed justice god -- the mark of a vow sworn at cost. Vercingetorix's grandfather carried it at the grove when the spear was sealed; it was present at the moment the spear was bound and has retained something of that contact.
+
+**Properties:** +1 to attack and damage rolls. When attacking a creature that has demonstrated cowardice (fled combat, betrayed an ally, broken an oath) within the last hour, the *framea* deals an additional 1d6 radiant damage (Mars' justice, in its Germanic form). Within 30 feet of the Spear of Mars, the rune on the socket glows faintly and warm -- this glow is visible to anyone who looks at the weapon directly.
+
+**In play:** Vercingetorix never offers this weapon. If he dies, it remains with his body and must be claimed. If a PC picks it up, they immediately know it has weight beyond its mass -- it pulls slightly toward the *principia*, toward the spear below. The glow is the first confirmation that the weapons are connected.
+
+---
+
+### Cassia's Augur Knife -- *Clavis Caeli* ("Key of Heaven")
+
+Bronze, not iron. Every Roman augur carries one; Cassia's is older than the fort and came from her mother, who received it from someone she will not name. Bronze is Mars' metal in the older tradition -- before iron came to dominate the field, before the smith-gods were separated from the war-gods. Against corrupted creatures, it does not behave like a standard blade.
+
+**Properties:** Against a creature with any level of corruption (DM judgment), a hit with this knife prevents magical healing until the target succeeds on a DC 14 Constitution saving throw at the start of its next turn (the bronze opens something spiritual, not just physical). In the presence of Mars (Sessions 4-5), the blade is warm to the touch and the wielder has advantage on Insight checks to read divine intent. On a natural 20 against a corrupted target, the target's corruption level is immediately visible to Cassia -- she sees it as a color around the wound.
+
+**In play:** Cassia does not fight with this knife. She uses it for augury, sacrifice, and self-defense of last resort. If she is incapacitated and a PC takes the knife to defend her, the knife functions for that PC but without the Insight advantage (it responds to Cassia specifically, not to proximity). If Cassia dies, the knife goes cold and loses the anti-healing property until it is carried by someone who has genuinely mourned her.
+
+---
+
+### Varro's *Gladius* -- *Veteranus*
+
+Not magical. Twenty years old, notched in places a blacksmith has told him to replace and he has not. The pommel is worn smooth where the thumb rests. The blade is two inches shorter than standard from resharpening. The soldiers who have served under Varro for more than two years recognize it on sight. That recognition is the weapon's property.
+
+**Property (reputation, not magic):** When Varro draws *Veteranus* in view of soldiers who have served with him (within 30 feet, line of sight), one named NPC soldier of the DM's choice immediately recovers from the Frightened condition. This works once per combat encounter. A PC who inherits the blade after Varro's death retains this property only if Varro reached Ally tier with that PC before his death -- the blade works for someone Varro chose to trust, not for someone who simply picked it up.
+
+**In play:** The name *Veteranus* is not official. The soldiers call it that, quietly, when Varro is not in earshot. He knows. He has not corrected it for twelve years.
+
+---
+
+### The Spear of Mars
+
+Documented in `chapter1.qmd`. The spear is the campaign's central object and is treated there in full. Its connection to Vercingetorix's *framea* and to Cassia's knife is noted above; the spear reacts to both in the vault scene if the DM chooses to use the environmental detail.
 
 ---
 
