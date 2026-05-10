@@ -739,11 +739,11 @@ Goal: `player_guide.qmd` contains province-of-origin and character background ma
 
 **Files:** `player_guide.qmd`, `peoples.qmd`, `_quarto.yml`
 
-- [ ] **Audit both files** — List every section in each; mark which sections are genuinely unique vs. duplicated or redundant
-- [ ] **Decide canonical home** — `peoples.qmd` covers race + legal status + background hooks; `player_guide.qmd` covers daily life + equipment + corruption intro; keep the division there
-- [ ] **Move province/origin tables** — Any province-of-origin content in `player_guide.qmd` (where are you from, what did you do before the legion) moves into `peoples.qmd` as a third section after race and legal status
-- [ ] **Remove/redirect duplicates** — Delete the duplicate sections from whichever file loses them; add a one-line cross-reference: "See Peoples of the Empire for province origin tables"
-- [ ] **Update `_quarto.yml` order** — `peoples.qmd` should appear immediately after `player_guide.qmd` in the chapter list; verify the order makes narrative sense
+- [x] **Audit both files** — List every section in each; mark which sections are genuinely unique vs. duplicated or redundant
+- [x] **Decide canonical home** — `peoples.qmd` covers race + legal status + background hooks; `player_guide.qmd` covers daily life + equipment + corruption intro; keep the division there
+- [x] **Move province/origin tables** — Any province-of-origin content in `player_guide.qmd` (where are you from, what did you do before the legion) moves into `peoples.qmd` as a third section after race and legal status
+- [x] **Remove/redirect duplicates** — Delete the duplicate sections from whichever file loses them; add a one-line cross-reference: "See Peoples of the Empire for province origin tables"
+- [x] **Update `_quarto.yml` order** — `peoples.qmd` should appear immediately after `player_guide.qmd` in the chapter list; verify the order makes narrative sense
 
 ---
 
@@ -752,11 +752,11 @@ Goal: The player session0.qmd and GM gm_session0.qmd both contain character ques
 
 **Files:** `session0.qmd`, `gm_session0.qmd`
 
-- [ ] **Full question inventory** — List every question in both files with file and section labels
-- [ ] **Mark genuinely doubled questions** — Questions that ask the same thing in slightly different words count as one; pick the better phrasing and keep it
-- [ ] **Assign each unique question to the right file** — Questions about the character's inner life, history, and bonds: `session0.qmd`. Questions about player consent, arc appetite, breaking points, and sacrifice threshold: `gm_session0.qmd`
-- [ ] **Do not delete** — Unless two questions are word-for-word identical, the DM note says keep them; move rather than delete
-- [ ] **Final check** — After redistribution, both files should feel complete on their own; a player reading `session0.qmd` should not need `gm_session0.qmd`, and vice versa
+- [x] **Full question inventory** — List every question in both files with file and section labels
+- [x] **Mark genuinely doubled questions** — Questions that ask the same thing in slightly different words count as one; pick the better phrasing and keep it
+- [x] **Assign each unique question to the right file** — Questions about the character's inner life, history, and bonds: `session0.qmd`. Questions about player consent, arc appetite, breaking points, and sacrifice threshold: `gm_session0.qmd`
+- [x] **Do not delete** — Unless two questions are word-for-word identical, the DM note says keep them; move rather than delete
+- [x] **Final check** — After redistribution, both files should feel complete on their own; a player reading `session0.qmd` should not need `gm_session0.qmd`, and vice versa
 
 ---
 
