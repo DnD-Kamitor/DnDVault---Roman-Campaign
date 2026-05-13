@@ -52,15 +52,43 @@ As players choose roles, note them on a tracking sheet. This is your master reco
 For each role, note:
 - Which player holds it (or "NPC: [name]" if no player took it)
 - Whether prerequisites are met (flag any edge cases to resolve after Session 0)
+- The player's legal status (this affects role eligibility and campaign arc)
 - The starting mechanic (write it on a card for the player to keep)
+- Whether a Senior Advancement trigger is already in progress (unlikely at Session 0, but note if a player's backstory implies it)
 
 **Special cases to handle immediately:**
 
-The *Aquilifer* role: Tell the players that Gaius Metellus held this position and is dead. The role is vacant. A player can take it, which means their character inherits the ongoing investigation of Metellus's death. A player who does not take it means the eagle sits in the *principia* under double guard with no assigned bearer, which is mechanically and ritually significant.
+The *Aquilifer* role: Tell the players that Gaius Metellus held this position and is dead. The role is vacant. A player can take it, which means their character inherits the ongoing investigation of Metellus's death. A player who does not take it means the eagle sits in the *principia* under double guard with no assigned bearer, which is mechanically and ritually significant. Note: requires *Cives Romani* status; if no player meets this, the eagle remains without a bearer for at least the first session.
 
-The *Flamen Martialis* role: Tell players it is not yet available. Do not explain why unless asked directly; if asked, say Corvinus has not announced a vacancy yet. The reason becomes available in Session 2.
+The *Flamen Martialis* role: Tell players it is not yet available. Do not explain why unless asked directly; if asked, say Corvinus has not announced a vacancy yet. The reason becomes available in Session 2. Note: also requires *Cives Romani* status.
 
 The *Frumentarius* role: If a player takes this role, speak to them privately after the group session ends. Give them the private frumentarius information from the roles.qmd DM block. This is their actual mission. The rest of the table knows their character handles supply.
+
+### Citizenship Tracking
+
+Build a master legal status record at Session 0. You need every player's starting status because:
+- It determines which roles are available to them
+- It determines the citizenship arc you can offer them in Sessions 3 and 4
+- It determines which social mechanics apply when they deal with Roman officials
+
+**Record for each player:** Legal status, commendationes earned (starts at 0 for everyone), and whether the player indicated citizenship is a goal for their character.
+
+**Commendatio events to watch for in play:**
+1. Role Senior Advancement completed: +1 commendatio for that player
+2. Named NPC saved from death in meaningful circumstances: +1 (DM judgment; not routine combat, but a moment that would appear in a dispatch)
+3. Intelligence action that directly protects Roman territory: +1
+4. Fulfilled *votum* to a Roman deity, completed and reported to a registered priest: +1
+5. Player formally named in an official dispatch to Rome: +1 (use sparingly; one per player per campaign is reasonable)
+
+**Status elevation events:**
+
+Session 3 opportunity: After the regional operation is resolved, Corvinus can formally petition for status elevation for qualifying characters (three commendationes + his signature). This is his legitimate power: he cannot grant citizenship, but he can advance *peregrini* to *Latini* and can submit a citizenship petition for *Latini* to the appropriate administrative channel. Present this as a scene where Corvinus calls each qualifying character in and offers to sign the paperwork. He will not offer it to characters who have not earned the commendationes.
+
+Session 4 opportunity: The imperial involvement in Session 4 creates the possibility of direct elevation. A character who has been formally petitioned (Latini status established or petition in process) and who performs significant service in Session 4 may receive a direct imperial recommendation. This is the fast track to *Cives Romani* status and should feel like an extraordinary event, because it is. Not every character will receive it; the ones who do have been consistently building toward it since Session 0.
+
+Session 5 resolution: The campaign's legal closure includes the possibility of full citizenship grants for qualifying characters. This is the campaign's formal recognition of what these soldiers did. For players who have been actively building their commendatio track, this lands as earned. For players who have not, it can still happen through the plot's logic, but it will feel more like luck than consequence.
+
+Do not promise citizenship at Session 0. Mention that the path exists, that formal commendationes open doors, and that the campaign will put characters in situations where extraordinary service becomes possible. The rest follows from play.
 
 ### The Cover Stories
 

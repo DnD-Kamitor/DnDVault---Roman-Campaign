@@ -718,6 +718,58 @@ Every Roman soldier wears one. It is not optional; it is the mark of service its
 
 ---
 
+## Carrying Loads
+
+Roman soldiers carry everything they own into the field. No supply wagons follow a reconnaissance patrol. No porters accompany a unit ordered to move fast. The question of what to bring is not abstract: it is the difference between arriving ready to fight and arriving exhausted before first contact.
+
+### The Three Tiers
+
+**Fighting load**: the equipment worn and carried in active combat. Food and camping gear go to the rear; only armor, weapons, and mission-specific equipment come forward. The kit weights listed in each role's Starting Equipment section represent the fighting load.
+
+**Marching load** (*sarcina*): everything carried on a sustained march: food, cooking equipment, tools, and personal gear on top of the fighting kit. Roman legionaries carried approximately 30-40 kg on the march, earning the nickname "Marius's mules." In game terms, this is the character's full inventory during overland travel to a new position.
+
+**Stored kit**: personal property that stays in the soldier's quarters at the fort. Ceremonial items, spare clothing, valuables, and equipment not needed for current operations. It does not count against carry weight.
+
+### Weight Thresholds
+
+Standard encumbrance: Strength score × 15 lb = maximum carry weight. Carrying more than half this limit gives disadvantage on Stealth checks and reduces speed by 10 feet.
+
+| Strength | Maximum carry | Comfortable limit |
+|---|---|---|
+| 8 | 120 lb | 60 lb |
+| 10 | 150 lb | 75 lb |
+| 12 | 180 lb | 90 lb |
+| 13 | 195 lb | 97 lb |
+| 14 | 210 lb | 105 lb |
+| 15 | 225 lb | 112 lb |
+| 16 | 240 lb | 120 lb |
+| 18 | 270 lb | 135 lb |
+| 20 | 300 lb | 150 lb |
+
+### Example Fighting Loads by Build
+
+| Build | Armor weight | Weapons and kit | Fighting load | Comfortable limit | Remaining |
+|---|---|---|---|---|---|
+| Fighter STR 16, Aquilifer | *Segmentata* 20 + manica 3 + eagle 15 | Gladius 3, helm 6, belt 2, cloak 4, boots 2 | 55 lb | 120 lb | 65 lb |
+| Ranger STR 14, Explorator | *Squamata* 20 + mil. boots 3 | Gladius 3, pugio 1, 2 verutum 2, helm 4, belt 2, sagum 4 | 39 lb | 105 lb | 66 lb |
+| Rogue STR 10, Frumentarius | *Linothorax* 8 + mil. boots 3 | Gladius 3, pugio 1, helm 5, belt 2, birrus 5 | 27 lb | 75 lb | 48 lb |
+| Wizard STR 8, Librarius | None | Pugio 1, helm 4, belt 2, satchel 3, birrus 5, mil. boots 3 | 18 lb | 60 lb | 42 lb |
+| Barbarian STR 18, Faber (unarmored) | None | Gladius 3, dolabra 5, manica 3, gauntlets 1, helm 5, belt 2, sagum 4, caligae 2 | 25 lb | 135 lb | 110 lb |
+
+### Load Management in Play
+
+Characters exceeding their comfortable limit take the encumbrance penalties until they offload the excess. There is no mechanical requirement to carry food, camping gear, or signal supplies in the fighting load; these are marching load items. The penalties apply to the total weight the character is physically carrying at the moment of the check.
+
+Roles that carry a standard or instrument must count that weight on missions beyond the fort:
+
+- Aquilifer: eagle adds ~15 lb to fighting load when carried
+- Signifer: *signum* adds ~8 lb to fighting load when carried
+- Cornicen: *cornu* adds ~6 lb to fighting load (carried on shoulder strap; both hands required when actively signaling)
+
+Supply requirements for extended operations are in `supplies.qmd`. Individual characters are responsible for their share of the unit's collective supply weight; the GM tracks this between sessions for operations longer than one day.
+
+---
+
 ## Tactical Reference Card
 
 *Print or keep open on a second screen during play.*

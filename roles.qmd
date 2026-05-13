@@ -38,6 +38,75 @@ Religious stipends (temple fund contributions) are paid separately and are not s
 
 ---
 
+## Role Advancement
+
+Roles are not static appointments. They have internal rank, and rank within a role has mechanical consequences. Three tiers apply to every role in the unit.
+
+**Probationer** (*tiro*): Newly assigned, unproven in the role's specific demands. Until you complete your first significant role-related task in the field: the once-per-session special mechanic is unavailable; pay is at the grade below the role's listed rate; some contacts and access are not yet established.
+
+*Who starts here:* Any player who takes over a vacant role during play rather than at Session 0. NPCs recently assigned. Characters who have been demoted.
+
+**Standard**: Fully functioning role holder. Full pay, full mechanics, full access as listed. All player characters begin at Standard tier at Session 0.
+
+**Senior** (*senior miles*): Recognized expert, demonstrably effective under field conditions. Requires a specific achievement for each role; the trigger and bonus are listed in each role's entry. Senior tier adds one enhanced mechanic and a 50 denarii per year seniority bonus within the pay grade (DM discretion). Advancement happens immediately when the trigger is fulfilled, acknowledged at the end of the scene.
+
+**Demotion**: Neglecting role duties for two consecutive sessions without a documented in-world reason (injury, reassignment, explicit orders) triggers demotion to Probationer. The DM announces this at the start of the third session. Recovery to Standard requires completing one significant role-related task the following session.
+
+---
+
+## Class and Equipment
+
+The kit listed in each role's Starting Equipment section is what the Roman army issues. Whether you can use it effectively depends on your class's proficiencies. This section maps D&D class armor tiers to the four armor types in the campaign and notes thematic class fits for each role.
+
+### Armor Tiers and Class Access
+
+| Armor issued | Can use as-is | Substitute if lacking proficiency |
+|---|---|---|
+| *Lorica Segmentata* (heavy) | Fighter, Paladin, Cleric (War/Forge) | *Lorica Hamata* (medium) |
+| *Lorica Hamata* or *Squamata* (medium) | Ranger, most Clerics, Artificer, Druid\* | *Linothorax* (light) |
+| *Linothorax* (light) | Rogue, Bard, Warlock, Sorcerer | No substitute needed |
+| No armor | Wizard, Monk (Unarmored Defense), Barbarian (Unarmored Defense) | Decline issued armor; use class AC calculation |
+
+\*Druids will not wear metal armor by tradition. *Lorica Hamata* and *Lorica Squamata* are both iron. A druid substitutes *Linothorax* without penalty from the legion: the army's concern is functional combat readiness, not the material of the armor.
+
+**Shields:** Issued to several roles as standard kit. Available to Fighter, Paladin, Ranger, Cleric, Druid, and Artificer. Characters without shield proficiency may carry an issued *scutum* but cannot use it for AC in combat.
+
+**Barbarian Unarmored Defense:** The legion's requirement is functional combat readiness, not that the soldier wears a specific material. A Barbarian who declines armor and can demonstrate readiness is meeting the standard. The issued armor goes to the quartermaster. How other soldiers react to a colleague who fights unarmored and survives is a character moment worth playing.
+
+**Monk kit:** Monks using Unarmored Defense decline all armor, which is inventoried with the quartermaster. The Roman army produces confusion and occasionally awe in response to a soldier who moves the way a trained Monk moves: this is not a disciplinary issue.
+
+**Spellcasting equipment:** The army does not issue arcane foci or holy symbols. A spellcasting character provides their own:
+
+- *Clerics and Paladins:* a small bronze amulet or reliquary of the patron deity, worn under the armor or on the belt
+- *Druids:* a carved wooden focus or natural object, personal property
+- *Wizards:* an arcane focus integrated into a personal item (carved bone stylus, engraved ring) carried in the document satchel for Librarius characters
+- *Warlocks:* focus as personal item; form varies by patron type
+- *Bards:* the *cornu* itself functions as a musical instrument focus for Cornicen players; any bard in another role carries a small personal instrument
+
+### Thematic Class Fits
+
+Any class can hold any role that meets its prerequisites. These notes highlight where class abilities and role functions align most naturally.
+
+| Role | Strong fits | Why |
+|---|---|---|
+| Optio | Fighter, Paladin | Command and Aura features support formation leadership; heavy armor viable |
+| Tesserarius | Ranger, Rogue | Perception required; Stealth synergy with night watch movement |
+| Aquilifer | Fighter, Paladin | Heavy armor proficiency and Strength-focused builds match the physical demands |
+| Signifer | Wizard, Cleric | INT 13 required; administrative duties suit high-INT builds; Cleric with banker role produces an interesting character |
+| Cornicen | Bard | Performance required; Bardic Inspiration is narratively perfect for the formation signal mechanic; CON build |
+| Medicus | Cleric, Artificer | WIS 13, Medicine; healing mechanics add to the role's own |
+| Haruspex | Cleric, Wizard | WIS 14, Religion; *Augury* is on the Cleric spell list already |
+| Faber | Artificer, Fighter | Tool proficiency required; Artificer's crafting abilities multiply the workshop mechanic |
+| Librarius | Wizard, Rogue (Arcane Trickster) | INT 14; Forgery Kit; Intelligence-based builds get the most from dispatch access |
+| Explorator | Ranger, Rogue | DEX 13; Natural Explorer directly applies; Cunning Action for patrol extractions |
+| Frumentarius | Rogue | Deception + Insight; Uncanny Dodge for the contacts this role attracts |
+| Sacerdos | Cleric, Druid | WIS 13, Religion; spell list gives the divine sign and last rites mechanics additional depth |
+| Flamen Martialis | Paladin, Cleric (War) | WIS 15, genuine devotion required; divine smite and channel divinity both fit |
+| Capsarius | Druid, Cleric (Life) | CON 12, Medicine; Life Cleric healing multiplier is very strong with field medic mechanic |
+| Custos Armorum | Fighter, Artificer | STR 12; broad martial proficiency and tool access fit naturally |
+
+---
+
 ## Military Command Roles
 
 ### Optio (*Second-in-Command*)
@@ -51,6 +120,26 @@ Religious stipends (temple fund contributions) are paid separately and are not s
 **Duties between sessions:** Morning briefings, patrol schedule maintenance, casualty reports, drilling the unit, reviewing the watch log from the previous night.
 
 **Mechanic:** Once per session, reroll one initiative (yours or an ally's, declared before or after the roll). As a bonus action, issue an order: one ally within 60 feet moves up to their speed without expending their reaction.
+
+**Senior Advancement:** Earned by successfully leading the unit through a crisis in the centurion's absence, where the optio's command decision determined the outcome. *Senior bonus:* The once-per-session initiative reroll applies to all allies simultaneously; the bonus action order becomes a free reaction, costing no action.
+
+**Starting Equipment**
+
+The optio commands from the rear of the formation: pushing stragglers forward, enforcing the line, and keeping the unit coherent when the centurion is engaged at the front. The distinctive equipment is the *hastile optioni* (the knobbed staff) rather than a *pilum*: it is the visible mark of the optio's authority and is used as much to prod soldiers back into position as to strike an enemy.
+
+- **Body:** *Lorica Hamata* (AC 14 + Dexterity modifier, max +2, 22 lb). The optio moves through the ranks: forward to reinforce the front, backward to pull stragglers into line. Chainmail flexes where segmented plate would catch and slow. Senior rank warrants more than light armor; this is the natural middle.
+- **Helmet:** *Galea Coolus* with back-to-front crest (AC +1, 5 lb). The optio's crest runs longitudinally like a standard soldier's, but in a distinct color or height: a mark of office that stops well short of claiming the centurion's transverse crest.
+- **Shield:** *Scutum* (+2 AC, 6 lb). Carried in deployment; stored when conducting briefings and administrative duties.
+- **Arms:** Leather gauntlets (1 lb). Standard for any officer who handles written records and formation reports.
+- **Cloak:** *Sagum* (4 lb).
+- **Boots:** *Caligae* (2 lb).
+- **Belt:** *Cingulum Militare* with decorative bronze fittings (2 lb). The quality of the fittings is the first visible indicator of the optio's rank; a soldier who looks carefully at the belt reads the role immediately.
+- **Weapons:** *Gladius* (3 lb) + *Pugio* (1 lb). Both worn at all times.
+- **Distinctive:** *Hastile optioni*, wooden staff with bronze knob (3 lb). Carried instead of a *pilum* in formation. Functions as a club (1d4 bludgeoning) if used as a weapon, but the primary purpose is authority and enforcement. Every soldier who sees the knobbed staff knows what it means and who is carrying it.
+
+**Weight total:** 49 lb. At CHA 13 or STR 14, carrying capacity is at least 195 lb; well within comfortable range.
+
+**Not issued:** No *pilum* (the staff replaces it in formation). No two-handed weapon. The optio is a command role, not a spearhead; their kit reflects the management of the line, not the assault on it.
 
 <details>
 <summary><strong>DC 13 — Chain of command and who reports to whom</strong></summary>
@@ -92,6 +181,24 @@ If you spend a session paying attention to which soldiers have private conversat
 **Duties between sessions:** Assign night watch rotations, deliver the *tessera* each morning, record who was on which post, note any irregularities in the watch log.
 
 **Mechanic:** You always know the current day's password and the complete patrol schedule. You can create a false password (DC 14 Deception, detected on DC 15 Investigation by anyone who has seen the real one). You know which posts are currently manned and by whom.
+
+**Senior Advancement:** Earned by identifying and documenting a compromised guard or deliberate infiltration: catching someone using a patrol gap intentionally, not by accident. *Senior bonus:* The false password DC increases from 14 to 17; once per session, declare retroactively that a patrol gap was covered, turning one ambush or infiltration attempt into a forewarned situation.
+
+**Starting Equipment**
+
+The tesserarius moves through the fort at night: checking posts, delivering the password, reading what the sentries are doing without announcing themselves at distance. The kit is lighter and quieter than a front-line soldier's, optimized for movement in confined spaces and in the dark.
+
+- **Body:** *Lorica Squamata* (AC 14 + Dexterity modifier, max +2, 20 lb). Scale armor generates no Stealth disadvantage: a watch officer checking posts at the third hour of the night cannot afford to rattle at each step.
+- **Helmet:** *Galea Attica*, open face (AC +1, 4 lb). The tesserarius needs to hear the post they are checking before they arrive at it. Closed cheek guards muffle the ambient sounds that indicate whether something is wrong.
+- **Shield:** *Scutum* (+2 AC, 6 lb). Carried in alert conditions; left at the duty station during routine night checks. Moving through the fort's narrow internal passages with a large oval shield creates more problems than it solves.
+- **Cloak:** *Sagum*, dark wool (4 lb). Advantage on Stealth checks in dim light is directly useful for a role that moves between lit checkpoints and unlit wall sections.
+- **Boots:** *Caligae* (2 lb). The hobnails create noise on stone floors; experienced tesserarii walk on the balls of their feet during sensitive checks.
+- **Belt:** *Cingulum Militare* with wax tablet and stylus attached (2 lb + 1 lb). The tablet for recording watch irregularities is on-person at all times during duty hours.
+- **Weapon:** *Gladius* (3 lb). The tesserarius's work is not usually combat. A single blade on the hip is the correct issue for a duty officer moving through a secured fort.
+
+**Weight total:** 43 lb. Light enough to move through the fort without generating sound that carries ahead.
+
+**Not issued:** No *pilum* (range engagement inside a fort is not the watch officer's role). No heavy armor. The tesserarius is not the first line; they are the person who ensures the first line is where it should be.
 
 <details>
 <summary><strong>DC 13 — Official patrol schedule and gate assignments</strong></summary>
@@ -136,6 +243,28 @@ None of this is in the official record. You noted it in a separate document. The
 
 **Mechanic:** While you carry the eagle, all allies within 30 feet have advantage on saving throws against fear effects. If the eagle falls (you drop it or die while carrying it), all allies within 60 feet make a DC 16 Wisdom saving throw or become frightened for one minute. Once per session, invoking the eagle before a combat grants all allies a free bonus action on their first turn.
 
+**Senior Advancement:** Earned by recovering the eagle after it falls in combat: the DC 16 Wisdom save succeeds, the eagle is reclaimed, and the bearer continues carrying it in the same session. *Senior bonus:* The fear-immunity aura expands from 30 ft to 60 ft; the pre-combat eagle invocation now grants all allies advantage on their first attack roll in addition to the free bonus action.
+
+**Starting Equipment**
+
+The aquilifer's kit is shaped by one constraint: one hand holds the eagle, always. In the field, both hands are not available for fighting. This eliminates shields and two-handed weapons from the role permanently. The compensation is that the most visible soldier in the unit wears the best armor the legion issues.
+
+- **Body:** *Lorica Segmentata* (AC 17, 20 lb). Issued standard. The aquilifer must survive long enough to be worth watching.
+- **Helmet:** *Galea* with transverse crest (AC +1, 6 lb). The crest marks the bearer at distance and in ceremony. By custom, a bear or wolf pelt is draped over the helmet and falls to the shoulders: this is traditional identification, not an additional mechanical slot.
+- **Arms:** *Manica* on weapon arm (AC +2 against weapon-arm attacks, 3 lb). No shield is possible; the manica compensates for the unprotected sword side.
+- **Cloak:** *Sagum* (4 lb). The eagle does not get put down for weather.
+- **Boots:** *Caligae* (2 lb).
+- **Belt:** *Cingulum Militare* with brass fittings (2 lb). Rank marking; required for ceremonial duties. Double-pay grade fittings are standard.
+- **Weapon:** *Gladius* (1d6 piercing or slashing, finesse, 3 lb). The only weapon compatible with this role in formation: drawn right-handed while the eagle occupies the left.
+
+**Weight total:** 40 lb. Carrying capacity at STR 15: 225 lb (half-capacity threshold: 112 lb). The strength prerequisite exists for holding the *aquila* aloft for hours under march conditions, not for managing the kit.
+
+**Not issued:** No shield; no two-handed weapon; no ranged weapon (the stance required for archery or sling use is incompatible with standard-bearing in any formation). These are not restrictions placed on the soldier: they are the logical consequence of what the role requires.
+
+**Class substitution:** *Lorica Segmentata* requires heavy armor proficiency (Fighter, Paladin, War/Forge Cleric). Without it, the legion issues *Lorica Hamata* instead: same visual weight, slightly less protection, no proficiency required. The STR 15 prerequisite still applies: the eagle's weight demands it regardless of armor choice.
+
+**Note on the eagle:** The *aquila* is not personal equipment. It belongs to the legion. Its weight (approximately 15 lb for the gilded bronze assembly) is the bearer's burden in the field. When secured in the *principia*, it is guarded under separate protocol and is not the aquilifer's responsibility to stand watch over personally.
+
 <details>
 <summary><strong>DC 13 — This legion's history and battle honors</strong></summary>
 
@@ -179,6 +308,26 @@ You know the text. You know why Metellus was found dead without it having been s
 
 **Mechanic:** Access to the unit savings fund (currently 100 gp at campaign start). Drawing on the fund requires DC 14 Persuasion (a majority of the unit votes to authorize it) or DC 18 Deception (forging the ledger, detected on DC 16 Investigation by anyone who checks). The fund grows when the party completes supply missions or recovers assets.
 
+**Senior Advancement:** Earned by identifying and documenting financial leverage used against a soldier in the unit: locating the debt connection described in the DC 17 knowledge gate and establishing it in writing. *Senior bonus:* The unit fund grows by 25 gp at the start of each session; the DC to authorize fund withdrawal drops from 14 to 11 (the unit trusts the signifer's judgment without extended debate).
+
+**Starting Equipment**
+
+The signifer carries the *signum* in one arm in the field: a pole standard topped with discs and decorations that rally the unit's sub-element. The arm holding the standard cannot simultaneously hold a shield, so the role trades one protection for another. The kit also reflects the banking duties: the signifer carries administrative tools that most soldiers never touch.
+
+- **Body:** *Lorica Hamata* (AC 14 + Dexterity modifier, max +2, 22 lb). Chainmail over segmented plate: the signifer adjusts position constantly, staying visible to the unit while managing the standard's weight and angle, and the flexibility of linked rings suits this better than rigid plates.
+- **Helmet:** *Galea Coolus* with animal pelt (AC +1, 5 lb). Wolf or bear pelt draped over the helmet and shoulders is the traditional mark of the signifer: it identifies the bearer in smoke, dust, and close combat. The *galea coolus* underneath provides standard protection.
+- **Arms:** Leather gauntlets (1 lb). The banking duties require writing; light gauntlets protect the hands without preventing fine work with a stylus on wax.
+- **Cloak:** *Sagum* (4 lb).
+- **Boots:** *Caligae* (2 lb).
+- **Belt:** *Cingulum Militare* with banker's satchel (2 lb belt + 1 lb satchel). The satchel attaches to the belt's rear loops and carries the ledger, wax tablets, and stylus. It does not interfere with weapon access and does not occupy an equipment slot.
+- **Weapon:** *Gladius* (1d6, 3 lb). Drawn right-handed; the *signum* occupies the left arm in formation.
+
+**Weight total:** 40 lb. The role has no strength prerequisite; this kit falls well within the comfortable range for typical builds.
+
+**Not issued:** No shield (the standard occupies the arm position a shield would require). No two-handed weapon. The banker's kit is not combat equipment but must accompany the signifer between sessions for duty purposes.
+
+**Note on the signum:** The *signum* belongs to the unit sub-element, not the signifer personally. Its weight (approximately 8 lb) is carried in the field. Between operations, the signifer is responsible for its safe storage or posting.
+
 <details>
 <summary><strong>DC 13 — Who has savings deposited and how much</strong></summary>
 
@@ -219,6 +368,25 @@ The soldier in question does not know who owns his debt.
 **Duties between sessions:** Sound the morning *classicum* (reveille), signal the watch changes, maintain the horn in working condition, drill the signals vocabulary with the unit monthly.
 
 **Mechanic:** As a bonus action in combat, signal a formation change: all allies within 60 feet who can hear you shift into or out of formation without expending movement or their reaction. Once per session, signal a false retreat (DC 15 Performance, opposed by enemy commander's Insight) to draw enemies out of position; on success, the enemy unit moves toward the apparent retreat for one round.
+
+**Senior Advancement:** Earned by executing the false retreat signal successfully in a real engagement, where the enemy commander responds and the outcome of the engagement changes as a result. *Senior bonus:* The false retreat is no longer once per session: it can be attempted any time the DC 15 Performance check is available; the formation change signal now affects allies within 90 ft instead of 60 ft.
+
+**Starting Equipment**
+
+The cornicen's job requires breath, volume, and sustained physical output. The kit is lighter than any front-line role: heavy plate constricts the diaphragm and degrades the wind capacity the role depends on. The cornicen is not expected to anchor a shield wall; they are expected to stay mobile, stay visible, and stay audible through an engagement from first contact to withdrawal.
+
+- **Body:** *Lorica Squamata* (AC 14 + Dexterity modifier, max +2, 20 lb). Scale armor provides solid protection without the breathing restriction of segmented plates. The absence of Stealth disadvantage is incidental but useful: a soldier who cannot be quiet when sounding a horn can still move quietly between signals.
+- **Helmet:** *Galea Attica*, open-face style (AC +1, 4 lb). The open face is not optional: the cornicen must place the horn to their mouth without removing the helmet, and closed cheek guards muffle the signal at the jawline. No *galea coolus* variant is issued for this role.
+- **Cloak:** *Sagum* (4 lb). Standard issue; the cornicen sounds reveille outdoors at dawn regardless of weather.
+- **Boots:** *Caligae* (2 lb).
+- **Belt:** *Cingulum Militare* (2 lb).
+- **Weapon:** *Gladius* (1d6, 3 lb). Carried on the right hip; drawn normally when not actively signaling. The cornicen fights as a standard soldier when the signal work is done.
+
+**Weight total:** 35 lb. The lightest standard kit in the unit. This is deliberate.
+
+**Not issued:** No helmet with extended cheek guards (blocks the mouthpiece). No heavy armor. No shield as standard: the *cornu* is carried over the shoulder on a leather strap between signals and requires both hands during active use, which makes a shield a management problem rather than an outright impossibility. A player who wants to carry a shield does so at the cost of time to transition between shield position and horn position; in a fast-moving engagement, this is a real tradeoff.
+
+**Note on the cornu:** The *cornu* belongs to the fort's supply. Its weight (approximately 6 lb for the curved bronze instrument) is carried on a shoulder strap. Active signaling requires both hands on the horn; during that time, the gladius is sheathed.
 
 <details>
 <summary><strong>DC 13 — Roman signal vocabulary</strong></summary>
@@ -267,6 +435,24 @@ Soldiers designated *immunes* are exempt from the fatigue duties that fill most 
 
 **Mechanic:** You can stabilize a dying creature using Medicine (no action cost, just the check, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + WIS modifier HP. You can identify poison, disease, or unusual wound cause with DC 13 Medicine and no additional resources.
 
+**Senior Advancement:** Earned by correctly identifying and beginning treatment for a non-standard case: the plague differential, the spear corruption symptoms, or a documented poisoning instance. The identification must be specific and acted upon, not simply noted. *Senior bonus:* The daily healing roll increases to 3d6 + Wisdom modifier; once per session, stabilize one dying creature as a free action (no check, no action cost, no healer's kit required).
+
+**Starting Equipment**
+
+The medicus does not fight if a better option exists, but they are fully authorized to defend themselves and their patients. The kit prioritizes medical capability over combat weight: the medicus is worth more alive and treating wounds than dead with a heavy shield.
+
+- **Body:** *Lorica Hamata* (AC 14 + Dexterity modifier, max +2, 22 lb). Intermediate protection that does not restrict the fine motor work surgery requires: reaching into a wound demands full arm extension without plate articulation interfering. The chainmail flexes where the *segmentata*'s plates would catch.
+- **Helmet:** *Galea Attica*, open face (AC +1, 4 lb). Full verbal access to the patient and clear visual range in the close angles of a surgery tent. The open face also reduces disorientation when working at an awkward angle over a casualty.
+- **Arms:** None standard. Fine manipulation requires bare hands or thin cloth; gauntlets are worn only in cold weather and removed before any medical procedure.
+- **Cloak:** *Sagum* (4 lb).
+- **Boots:** Standard military boots (3 lb). *Caligae* are too loud on the stone floors of the *valetudinarium* (the hospital building); enclosed boots allow quiet movement between patients.
+- **Belt:** *Cingulum Militare* (2 lb) with field medical satchel attached (3 lb). The satchel carries linen bandages, vinegar solution, bronze probes, pitch, and three doses of *theriac*. This is the immediate-response kit for field work; the full medical stores are in the *valetudinarium*.
+- **Weapon:** *Pugio* (1 lb). A medicus who needs to fight has something very wrong with the situation. The *pugio* is present as a last resort; the *gladius* is not standard issue for this role because its length is awkward when working in tight spaces around casualties.
+
+**Weight total:** 40 lb. Designed for a high-Wisdom character who is unlikely to have the highest Strength in the unit.
+
+**Not issued:** No shield (prevents the free arm movement required for most medical procedures). No *pilum*. No heavy armor. The absence of heavier equipment is not a statement about courage; it is a practical decision about what will be useful in the situations this role encounters.
+
 <details>
 <summary><strong>DC 13 — Field injuries and current patient status</strong></summary>
 
@@ -310,6 +496,24 @@ There is a treatment that slows the physical symptoms. It does not reverse the u
 
 **Mechanic:** Cast *Augury* once per day without a spell slot. Before a session's main conflict, perform a pre-session divination by rolling 1d20 and giving the DM the result (they use it to calibrate one encounter that session, without telling you which one or how). Once per session, declare an action *nefastus* (ritually forbidden today): all party members gain advantage on the first saving throw of the session, and the DM removes one of their encounter options for that session.
 
+**Senior Advancement:** Earned when a divination prediction comes true in a session in a way that demonstrably protected the party: the reading was specific, it was acted on, and the outcome confirms it. *Senior bonus:* The *nefastus* declaration removes two encounter options instead of one; *Augury* can be cast twice per day.
+
+**Starting Equipment**
+
+The haruspex is a religious specialist and an officer of the divination guild, not a combat role. The kit reflects this: ceremonial in character, administratively complete, built for a role that is present at military operations but not expected to anchor a shield wall.
+
+- **Body:** *Linothorax* (AC 12 + Dexterity modifier, max +3, 8 lb). Linen armor is the traditional haruspex choice: it is the armor worn in the oldest Roman priestly tradition and provides protection without claiming the identity of a fighting legionary. Most haruspices keep the *linothorax* clean and undyed; going into ceremony in segmented plate sends a message the role should not be sending.
+- **Helmet:** None standard. A *galea* is available from supply on request, but the divination ceremony requires an uncovered head for the formal prayers: most haruspices leave the helmet behind and accept the tradeoff.
+- **Cloak:** *Paludamentum*, white or undyed (3 lb). Worn during ceremonies only: the visually distinct cloak marks the officiating priest and is specified by the guild rites. In routine fort movement, the *sagum* is worn instead.
+- **Cloak (routine):** *Sagum* (4 lb). Daily wear; the *paludamentum* is reserved for official observances and formal divination sessions.
+- **Boots:** Standard military boots (3 lb). The divination ceremony involves standing at a fixed outdoor position for extended periods; *caligae* are appropriate for marching and combat, not for ceremonial standing.
+- **Belt:** *Cingulum Militare*, plain bronze fittings (2 lb) with priestly satchel: the *libri haruspicini* reference tablets, incense, and the small ritual case.
+- **Weapon:** *Pugio* (1 lb). The sacrificial knife and the haruspex's personal weapon are the same blade, kept clean and sharp to a standard well above military requirement. Carried at the right hip.
+
+**Weight total:** 21 lb (ceremonial kit with *paludamentum*). The lightest non-Flamen kit in the unit.
+
+**Not issued:** No shield; no *gladius*; no *pilum*; no thrown weapons; no heavy armor. A haruspex who needs to fight has already failed at their primary function, which is to tell the commander whether to fight, and when, and under what conditions.
+
 <details>
 <summary><strong>DC 13 — Standard divination signs and their interpretations</strong></summary>
 
@@ -351,6 +555,25 @@ Paterculus, this fort's *haruspex*, has been filing them as ordinary bad omens. 
 
 **Mechanic:** Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses: DC 13 Investigation reveals a weak point in a wall, door, or structure. Once per session, improvise a piece of equipment (battering ram, caltrop field, burning pitch container) from available materials with a DC 14 Smith's Tools or Mason's Tools check.
 
+**Senior Advancement:** Earned by improvising a critical piece of equipment that changes the outcome of a high-stakes encounter: the once-per-session improvise mechanic used at a pivotal moment, not a convenience. *Senior bonus:* Equipment improvisation no longer requires a check: automatic success; structural weakness assessment DC drops from 13 to 10.
+
+**Starting Equipment**
+
+The faber works with their hands: hammering, cutting, lifting, and assembling. The kit must protect without preventing full arm range of motion, and it must accommodate the tools that are always present alongside the weapons.
+
+- **Body:** *Lorica Hamata* (AC 14 + Dexterity modifier, max +2, 22 lb). Chainmail is forge-tested, and the faber knows exactly how it performs under heat, impact, and stress. Segmented plate is problematic at the forge: the plate edges catch sparks and the joints fill with metal dust. Chainmail takes the same conditions and emerges functional.
+- **Helmet:** *Galea Coolus* (AC +1, 5 lb). Full cheek guard protection matters when flying metal fragments are an occupational hazard. The hearing disadvantage is acceptable for someone who works near the hammer-noise of the *fabrica* regardless.
+- **Shield:** *Scutum* (+2 AC, 6 lb). Carried when deployed. In the *fabrica* itself, the shield is racked at the door: it would interfere with both hands being used at the forge.
+- **Arms:** *Manica* on weapon arm (AC +2 against weapon-arm attacks, 3 lb). The faber's weapon arm moves constantly in work, and blows from tools, collapsing materials, and mishandled metal are part of the role. The *manica* protects against both occupational injury and combat.
+- **Cloak:** *Sagum* (4 lb). Work cloak, not ceremony cloak; it acquires soot and metal dust as a matter of course.
+- **Boots:** *Caligae* (2 lb).
+- **Belt:** *Cingulum Militare* with tool loops (2 lb). A hammer and chisel hang from the tool loops during work; in combat, the tools are left at the site and the belt functions as standard military equipment.
+- **Weapons:** *Gladius* (3 lb) + *Dolabra* (5 lb). The *dolabra* is both an entrenching tool and a weapon; the faber's is kept in better condition than the average legionary's because it is used constantly. It deals double damage against structures and fortifications.
+
+**Weight total:** 52 lb. At STR 13, carrying capacity is 195 lb; well within comfortable range.
+
+**Not issued:** No *linothorax* (a fire hazard in forge work). No *paludamentum* (same reason: fabric near open flame is a liability). The faber's work environment means any item that catches sparks easily is an accident waiting to happen.
+
 <details>
 <summary><strong>DC 13 — Current fort condition and weak sections</strong></summary>
 
@@ -391,6 +614,24 @@ Under siege conditions, with the vibration of artillery and the weight of reinfo
 **Duties between sessions:** Draft unit dispatches, maintain the official roster, copy and file incoming orders, maintain the pay ledger, submit the monthly return to the legate's office.
 
 **Mechanic:** Forge military documents (DC 14 Forgery, detected on DC 15 Investigation by anyone who examines them). Access incoming dispatch copies as a matter of routine: you know what Rome officially knows about this fort, including what has and has not been reported. Produce legally binding Latin documents on request.
+
+**Senior Advancement:** Earned by using forged documents to meaningfully alter a significant plot event: not routine deception, but a document that changes an outcome the DM had set in motion. *Senior bonus:* The forgery DC drops from 14 to 11; once per session, access a specific piece of intelligence from Rome that arrived outside the standard dispatch system (DM provides one piece of information the official record does not contain).
+
+**Starting Equipment**
+
+The librarius spends most of their working time at a desk, but they are still a soldier and present at operations. The kit reflects someone who moves between the legate's office and the unit's positions, who handles documents in all weather, and who occasionally needs to observe things without attracting attention.
+
+- **Body:** *Lorica Squamata* (AC 14 + Dexterity modifier, max +2, 20 lb). Scale armor is flexible, quiet, and appropriate for a soldier who moves between the principia and field positions. The absence of Stealth disadvantage is useful for a role that sometimes needs to observe or overhear things without being noticed.
+- **Helmet:** *Galea Attica*, open face (AC +1, 4 lb). The librarius reads in dim conditions and writes with precision; full cheek guards create visual restriction that makes close document work harder.
+- **Arms:** Leather gauntlets (1 lb). The writing kit requires clean, protected hands during transit between buildings in rain or cold.
+- **Cloak:** *Birrus* (5 lb). The hood protects documents being carried in wet weather; the Stealth bonus in crowded civilian settings is useful for a role that moves through the *vicus* as part of supply and dispatch work. The hood-down option is standard in military contexts.
+- **Boots:** Standard military boots (3 lb). Administrative duties require frequent movement across stone floors; *caligae* create unnecessary noise in an office environment and attract attention during sensitive work.
+- **Belt:** *Cingulum Militare* (2 lb) with document satchel (3 lb). The satchel carries current dispatch copies, blank wax tablets, stylus, and ink. It is waterproofed with rendered fat applied to the leather outer surface.
+- **Weapons:** *Gladius* (3 lb) + *Pugio* (1 lb). Standard legionary sidearms worn at all times.
+
+**Weight total:** 43 lb. Standard for an INT 14 character with typical Strength.
+
+**Not issued:** No shield (document work requires free hands; a large oval shield becomes a liability when moving through doorways carrying materials). No heavy armor. No *pilum*. The librarius's protection against threats is primarily information: knowing what is coming before it arrives.
 
 <details>
 <summary><strong>DC 13 — What Rome's official record shows</strong></summary>
@@ -435,6 +676,24 @@ A dispatch from Brutus arriving before the excavation yielded its primary findin
 
 **Mechanic:** Move at full speed without penalty in forest or wilderness terrain. Advantage on Perception checks in wilderness. Identify tracks and determine creature count, approximate size, and timing (DC 12 Survival, no tools required). Once per session, call on a border informant for one piece of local intelligence (DM provides, 1d4 hours wait time).
 
+**Senior Advancement:** Earned by locating a target (person or group) that had gone cold: tracking mechanic succeeds after a failed initial attempt, and the contact or trail is found. *Senior bonus:* Border informant contact is immediate (no 1d4 hour wait); Survival advantage applies in any terrain, not only wilderness.
+
+**Starting Equipment**
+
+The explorator operates beyond the fort perimeter, often alone or in pairs, for two to three days at a time. Every pound of kit is a calculation against speed and endurance. The explorator trades armor weight and shield coverage for the mobility that keeps them alive when they cannot fight their way out.
+
+- **Body:** *Lorica Squamata* (AC 14 + Dexterity modifier, max +2, 20 lb). Minimum viable protection for the role's threat environment. Reconnaissance work sometimes becomes combat at short range with no warning; the explorator needs real armor, not nothing. Scale armor provides this without the weight and noise of heavier plate.
+- **Helmet:** *Galea Attica*, open face (AC +1, 4 lb). Peripheral vision and hearing are primary survival tools for a scout. Closed cheek guards degrade both. A scout who cannot hear movement in forest terrain before it becomes contact is a scout in the wrong job.
+- **Arms:** None standard. Gauntlets reduce sensitivity for climbing, rope work, and reading tracks in earth: the fine distinction between fresh and old disturbance in soil requires bare fingertips.
+- **Cloak:** *Sagum*, dark wool (4 lb). Advantage on Stealth checks in dim light is directly relevant: the explorator moves primarily at dawn and dusk to reduce silhouette exposure. The wool also provides weather resistance for overnight patrol stays.
+- **Boots:** Standard military boots (3 lb). This is the only role issued standard military boots rather than *caligae* as default. The quartermaster's rationale is documented: hobnails on hard-packed earth or stone produce sound that carries at night and in forest, and the boot's track pattern identifies the wearer as Roman to any experienced tracker.
+- **Belt:** *Cingulum Militare* (2 lb) with field pack: three days of rations, fire starter, spare bowstring, cord, and one smoke signal token. Total pack weight: 2 lb.
+- **Weapons:** *Gladius* (3 lb) + *Pugio* (1 lb). Two light *verutum* (1 lb each) carried instead of *pila* for patrol work: lighter, retrievable, and less likely to embed in a way that requires standing over the body.
+
+**Weight total:** 41 lb. At DEX 13 and typical Strength, well within comfortable carry for multi-day movement.
+
+**Not issued:** No shield (impossible to move quietly through dense vegetation with a large oval shield; it also catches branches and announces position). No *pilum* (a patrol soldier cannot afford to throw their only polearm and leave it in an enemy who then retreats). No heavy armor. No *birrus* (the hood reduces peripheral vision in forest terrain, where the threats come from the sides and behind).
+
 <details>
 <summary><strong>DC 13 — Current Germanic movement patterns</strong></summary>
 
@@ -477,6 +736,24 @@ For the past month, Thusnelda's scouts have maintained a position with line-of-s
 **Duties between sessions (actual):** Monitor the unit and fort for loyalty issues. File encrypted reports to Rome via the intelligence courier network, separate from the standard dispatch system.
 
 **Mechanic:** Request information from the *frumentarii* network across the empire (DM provides after 1d4 days, encrypted courier round-trip). Use a coded communication system that cannot be traced to the unit by normal Investigation. Once per session, make a DC 13 Insight check against any named NPC to determine whether they are filing independent reports to Rome outside the official dispatch system.
+
+**Senior Advancement:** Earned by correctly identifying and documenting a double agent or compromised soldier, with the connection to Brutus's network established in the record and verifiable. *Senior bonus:* The NPC outside-reporting Insight check drops from DC 13 to DC 10; once per session, network information arrives in one round (the contact is already in position, no courier delay).
+
+**Starting Equipment**
+
+The frumentarius's cover is a supply officer. The kit must look like a supply officer's kit while permitting the role's actual function. It is the most deliberately unremarkable issue in the unit: nothing that distinguishes, nothing that signals anything beyond a competent mid-tier specialist doing administrative work.
+
+- **Body:** *Lorica Hamata* (AC 14 + Dexterity modifier, max +2, 22 lb). Chainmail is the most common armor on the frontier garrison and the least memorable. Wearing the same thing as forty other soldiers is the point.
+- **Helmet:** *Galea Coolus* (AC +1, 5 lb). Standard issue, unmodified, undistinguished.
+- **Shield:** *Scutum* (+2 AC, 6 lb). Carried on duty. When conducting intelligence work in civilian areas, the shield stays at the fort: a soldier carrying a full *scutum* while visiting the *vicus* is unusual and noticed.
+- **Cloak:** *Sagum* or *birrus*, selected based on context (4 or 5 lb). The *birrus* hood-up in a civilian setting is normal civilian behavior. The *sagum* in military context is standard. Both are available; the frumentarius chooses based on what they need to blend into.
+- **Boots:** *Caligae* (2 lb). Standard legionary boot; no exception here.
+- **Belt:** *Cingulum Militare* (2 lb) with supply manifest case (1 lb). The coded communication materials are embedded in the supply manifest case; they appear to be routine administrative tools to anyone who does not know the cipher.
+- **Weapons:** *Gladius* (3 lb) + *Pugio* (1 lb). Standard. No modifications, nothing distinctive.
+
+**Weight total:** 41-42 lb depending on cloak selection. Unremarkable in both directions.
+
+**Not issued:** Nothing unusual. Deliberately. The frumentarius's kit is specifically designed to produce no observations.
 
 <details>
 <summary><strong>DM: Show this section to the Frumentarius player privately at Session 0</strong></summary>
@@ -536,6 +813,24 @@ If Brutus knew what was in the ground before Corvinus did, the entire chain of e
 
 **Mechanic:** Allies who observe your morning rites before a session (player acknowledgment that their character participated) gain +1 to death saving throws for that session. You can perform last rites that prevent a dead NPC from rising as a Lemur (*Dishonored Rest* risk removed). Once per session, ask for a divine sign and receive a yes/no answer (DM determines based on current divine standing).
 
+**Senior Advancement:** Earned by preventing a Lemur from rising under genuinely difficult conditions: lack of proper materials, active opposition, or time pressure that would normally make the rite impossible. *Senior bonus:* The death saving throw bonus increases from +1 to +2; the divine sign can be requested twice per session.
+
+**Starting Equipment**
+
+The sacerdos is both a shrine keeper and a soldier. The kit is split between ceremonial requirements and combat readiness, with the expectation that ceremony is the daily reality and combat is the contingency.
+
+- **Body:** *Lorica Squamata* (AC 14 + Dexterity modifier, max +2, 20 lb). Scale armor is used in several priestly military traditions: the overlapping scales carry a visual echo of the augural tradition, and the absence of Stealth disadvantage suits a role that moves through the fort and *vicus* at odd hours for observances.
+- **Helmet:** *Galea Coolus* (AC +1, 5 lb). Standard issue; not worn during active ceremony (the head must be uncovered for most Roman rites) but available for combat conditions.
+- **Cloak (ceremony):** *Paludamentum*, white or undyed (3 lb). Worn during official observances only: the visually distinct cloak marks the officiating priest and is specified by the formal rite.
+- **Cloak (routine):** *Sagum* (4 lb). Daily wear; the *paludamentum* is reserved for ceremony. Both are in the sacerdos's kit.
+- **Boots:** Standard military boots (3 lb). The shrine floor is swept stone; *caligae* leave marks and their click is inappropriate during the quiet portions of the morning rite.
+- **Belt:** *Cingulum Militare* (2 lb) with priestly kit attached: incense pouch, small bronze knife for sacrificial work, two small clay offering vessels.
+- **Weapon:** *Pugio* (1 lb). The sacrificial knife and the defensive blade are the same instrument, kept clean and dedicated. Carried at the right hip.
+
+**Weight total:** 39 lb (routine kit with *sagum*). The *paludamentum* replaces the *sagum* during ceremonies without changing the total weight.
+
+**Not issued:** No shield; no *gladius*; no *pilum*; no heavy armor. The sacerdos can requisition standard soldier kit from the armory if placed in combat conditions, but the default issue reflects the primary function of the role. A sacerdos in full *segmentata* conducting a burial rite is sending the wrong message to both the living and the dead.
+
 <details>
 <summary><strong>DC 13 — Ritual calendar for a frontier posting</strong></summary>
 
@@ -578,6 +873,23 @@ Two sets of offerings in the past month were not filed through the official chan
 **Duties:** Perform Mars-specific rites (distinct from general Roman religion). Maintain any sacred weapons or objects associated with Mars. Pronounce the *devotio* if circumstances require it.
 
 **Mechanic:** Once per session, invoke Mars directly for +1d6 damage on one weapon attack or +1d6 on one saving throw (Mars notices: this adds 1 to the collective corruption track). You can perform the *devotio* as a special action (see Session 5 mechanics). Mars tells you directly, without a check, when he is actively present in a scene: the DM notifies this player privately.
+
+**Senior Advancement:** Earned by completing a full *devotio* war-vow to Mars Ultor: the vow made before a witness, the promised act fulfilled under opposition, and the fulfillment reported to a priest who records it. *Senior bonus:* The +1d6 invocation no longer adds to the collective corruption track; Mars communicates more clearly when present (DM provides one short sentence of intent rather than a presence notification alone).
+
+**Starting Equipment**
+
+The Flamen Martialis is technically a civilian religious appointment. They receive no military-issue kit. What they wear is personal property, purchased or provided through the legate's patronage, and it reflects the frontier cult of Mars Ultor rather than the civic legionary tradition.
+
+- **Body:** *Linothorax*, dyed red (AC 12 + Dexterity modifier, max +3, 8 lb). Red linen is the Mars cult vestment color, and the *linothorax* is the oldest Roman legionary armor tradition: worn before the iron age of Roman warfare, associated with Mars as a deity of boundaries and blood. It burns, which is a known limitation that wearers in this cult have accepted for generations as part of the bargain.
+- **Helmet:** None during ceremony. In active combat, any available helmet may be used; there is no assigned military issue. The Flamen can request a *galea* from supply; most choose not to, on the same logic as the *haruspex*.
+- **Cloak:** *Paludamentum*, deep red (3 lb). Not a rank claim: in the frontier Mars cult, the red commander's cloak is the officiating *Flamen*'s vestment during ceremony and is permitted in combat under cult doctrine.
+- **Boots:** Standard military boots (3 lb). Personal purchase, not military issue; a frontier *Flamen* wears what they can maintain.
+- **Belt:** Personal, not military-issue. A belt is worn for weapon carriage but its decoration and fittings are the priest's own choices.
+- **Weapon:** *Hasta* (1d8 piercing, reach, two-handed, 6 lb). The *hasta* is the sacred weapon of Mars: the oldest *ancile* ceremonies involve the spear, not the sword, and the DC 17 knowledge gate explains why carrying one matters specifically to this role. It is both weapon and symbol; the Flamen Martialis does not carry a standard gladius.
+
+**Weight total:** 20 lb. The frontier cult doctrine frames this deliberate lightness as a statement: the Flamen Martialis is protected by Mars, not by iron. Whether that is comforting depends on how well the campaign is going.
+
+**Not issued:** No military-issue armor; no shield; no standard legionary weapons. The entire kit is personal property, and the deliberate rejection of standard military protection is a theological position, not an oversight.
 
 <details>
 <summary><strong>DC 13 — Mars's two faces</strong></summary>
@@ -622,6 +934,25 @@ The spear in the vault below this fort is one of the three. The other two are ac
 
 **Mechanic:** Stabilize a dying creature as a bonus action (not a full action). Administer a potion to an unconscious ally as a bonus action. If no *medicus* is present in the party, you function as a basic field medic (Medicus mechanic at -1d6 on the healing roll).
 
+**Senior Advancement:** Earned by stabilizing three or more dying creatures in a single session under active combat conditions: sustained field medicine, not a safe rear position. *Senior bonus:* Stabilizing a dying creature becomes a free action (no cost, not even a bonus action); when functioning as the sole medic, the field medic roll is at full Medicus power with no penalty.
+
+**Starting Equipment**
+
+The capsarius runs toward casualties while the rest of the unit is still fighting. Speed and free hands matter more than any other consideration. The *capsa* (medical cylinder) is always carried; the combat kit is subordinate to it.
+
+- **Body:** *Linothorax* (AC 12 + Dexterity modifier, max +3, 8 lb). The lightest viable armor: the capsarius needs to close distance to a casualty quickly, work over them without body armor interfering with arm position, then move to the next. Heavier armor makes all three slower. A capsarius armored enough to survive a direct hit but too slow to reach the casualty in time has failed.
+- **Helmet:** *Galea Attica*, open face (AC +1, 4 lb). Hearing the field clearly is a survival tool: the capsarius is often working behind the main line, locating the most salvageable casualties partly by the sounds they make.
+- **Arms:** None standard. Fine manipulation for wound care requires bare hands or thin cloth; gauntlets are worn only in cold weather.
+- **Cloak:** *Sagum* (4 lb). Doubled over, the heavy wool functions as a stretcher for moving a single casualty with a second person's help: a use that has saved more lives than its weather resistance.
+- **Boots:** *Caligae* (2 lb). Speed on natural terrain is essential; the grip advantage on wet ground is the directly relevant property for a soldier running across a field after rain.
+- **Belt:** *Cingulum Militare* (2 lb).
+- **Weapon:** *Gladius* (3 lb). A single sidearm; the capsarius does not fight if they can avoid it.
+- **Distinctive:** The *capsa* (4 lb, fully stocked). The leather cylinder carried on the back or over one shoulder contains the immediate care supplies: linen bandage strips, vinegar solution, pitch for deep wounds, a bronze probe, and three doses of *theriac*. This is the role-defining piece of equipment. A soldier who has been hit and sees the *capsa* knows help is coming.
+
+**Weight total:** 28 lb. The second-lightest combat-viable kit in the unit.
+
+**Not issued:** No shield (prevents the rapid position changes required when working over a casualty). No *pilum*. No heavy armor. The capsarius's protection is speed and the battlefield convention that killing the medic first is bad practice. Roman armies generally observe this. Germanic tribes are less consistent.
+
 <details>
 <summary><strong>DC 13 — Standard wound care and triage decisions</strong></summary>
 
@@ -665,6 +996,27 @@ The *medicus* does not know this yet. Valeria, the herb trader in the civilian s
 
 **Mechanic:** Hold a key to the armory (normally locked to non-officers). Know the complete current weapons and ammunition inventory. Identify a weapon's quality and condition by inspection (DC 11, no proficiency required). Once per session, locate a specific weapon type within the fort's supply chain in one hour (barring siege conditions).
 
+**Senior Advancement:** Earned by identifying the source of the unauthorized armory removals and establishing the connection in a documented record (the Brutianus subplot, or its equivalent if Brutianus has already departed). *Senior bonus:* Weapon identification drops from DC 11 to DC 8; once per session, produce a specific weapon type from a personal contingency cache held outside the official inventory (a reserve maintained for exactly this kind of situation).
+
+**Starting Equipment**
+
+The custos armorum manages the armory and has access to the best-maintained equipment available to anyone in the fort. A weapons keeper who goes into combat in substandard gear is a standing joke in every garrison, and it does not happen.
+
+- **Body:** *Lorica Segmentata* (AC 17, 20 lb). The custos armorum maintains the segmented plate for eighty soldiers; they know exactly how good it is when it is maintained correctly because they are the one maintaining it. Their own kit is the reference standard.
+- **Helmet:** *Galea Coolus* (AC +1, 5 lb). Standard issue, in exemplary condition for the same reason.
+- **Shield:** *Scutum* (+2 AC, 6 lb). In exemplary condition. The custos armorum's shield is the visual demonstration of what a properly maintained *scutum* looks like.
+- **Arms:** Leather gauntlets (1 lb). Required for smithwork: bare hands on a file leave skin behind, and bare hands on heated metal are not survivable.
+- **Cloak:** *Sagum* (4 lb).
+- **Boots:** *Caligae* (2 lb).
+- **Belt:** *Cingulum Militare* (2 lb) with armory key on a separate cord. The key is not an equipment slot item; it is the most important piece of equipment for the role, and it is always on the person of the custos armorum, not left at a station.
+- **Weapons:** *Gladius* (3 lb) + *Pugio* (1 lb). Both in exceptional condition, maintained by the person responsible for all the weapons in the unit. It would be embarrassing otherwise.
+
+**Weight total:** 46 lb. At STR 12, carrying capacity is 180 lb; well within comfortable range.
+
+**Not issued:** No *pilum* as standard assignment. The custos armorum issues them to others; their own combat role is fort defense, not field engagement. No unusual weapons, despite having access to all of them: maintaining a reliable inventory requires that the record not have unexplained gaps, and the weapons keeper taking things from their own stock for personal use is the scenario they are specifically employed to prevent.
+
+**Class substitution:** *Lorica Segmentata* requires heavy armor proficiency (Fighter, Paladin, War/Forge Cleric). Without it, substitute *Lorica Hamata*. The irony of a weapons keeper in substandard armor is noted in-world; a Ranger or Rogue custos armorum explains this with their preferred combat style, and the explanation is accepted.
+
 <details>
 <summary><strong>DC 12 — Current armory contents</strong></summary>
 
@@ -696,14 +1048,48 @@ What the iron was used for in the ruins below is not something you can determine
 
 ---
 
-## Role Vacancies
+## Role Vacancies and the Camp as Living Entity
 
-When a role is not filled by a player character, an NPC holds it. When that NPC leaves or dies, the role becomes vacant. Vacancies have specific mechanical consequences documented in each role entry above.
+The *vexillatio extraordinaria* is a functioning military unit. Every role in it is filled, by a player character or by a named NPC, at all times. The camp does not stop functioning because the party is not watching; the morning *classicum* is sounded whether or not the players are present for it, the sick parade runs whether or not they attend, the watch rotations are set, the accounts are kept. The unit is not a backdrop. It is a world with its own momentum.
 
-The DM tracks role status. At the start of each session, the DM notes which roles are currently filled by PCs and which by NPCs. When a role becomes vacant mid-session (an NPC dies), the DM announces it directly: the mechanical consequence takes effect immediately, and the NPC's death is played, not summarized.
+When a player character fills a role, they gain the access, contacts, and mechanical benefits described in that role's entry. When an NPC fills it, the unit functions without that character advantage but the role's duties are still performed. When a role goes vacant, the unit notices immediately and the consequences accrue.
 
-Player characters can take over a vacant role if they meet the prerequisites and if the situation allows for the transition (a siege is not the moment to process paperwork). When a PC takes over a role, the previous NPC's equipment, contacts, and outstanding issues transfer to them. This includes any complications the NPC was managing.
+### Vacancy Rules
+
+**Immediate vacancy**: When a role becomes vacant mid-session (an NPC dies, is incapacitated, or is transferred), the DM announces it directly at the moment it happens. The NPC's departure is played as a scene, not summarized. The mechanical consequence listed in the table below takes effect immediately.
+
+**Persistent vacancy**: Each session that begins with a role unfilled counts as one vacancy session for that role. After three vacancy sessions, the secondary consequence in the table below triggers.
+
+**Taking over a vacant role**: A PC can assume a vacant role if they meet the prerequisites and if the situation allows for the transition. Administrative roles can transfer in a brief scene; combat roles may require the DM to determine timing (taking over as Aquilifer in the middle of a siege has different requirements than doing so in a quiet week). When a PC takes over, the previous NPC's equipment, contacts, and outstanding issues transfer to them, including any complications the NPC was managing.
+
+**Entering at Probationer**: A PC who assumes a vacant role during play enters at Probationer tier, not Standard. They complete the Probationer requirement before accessing the full role mechanics.
+
+### Vacancy Consequence Table
+
+| Role | Immediate consequence (vacancy starts) | After 3 vacancy sessions |
+|---|---|---|
+| Optio | Orders require explanation; unit will not follow commands automatically without a DC 12 Persuasion check by whoever is leading | Morale saves at disadvantage for the entire unit |
+| Tesserarius | DM secretly rolls 1d6 at session start; on 1-3, an infiltration attempt is in progress during the session | Patrol pattern completely compromised; enemy units gain surprise on the next engagement |
+| Aquilifer | Eagle secured in *principia*; no field use, no fear-immunity aura, no eagle invocation | Unit morale collapses at the first death: all allies make DC 14 Wisdom saving throws or become frightened |
+| Signifer | Unit fund frozen; no withdrawals; no new deposits; death benefits unprocessed | One soldier with a pending beneficiary dies: the beneficiary receives nothing, producing an unresolved grievance |
+| Cornicen | Formation changes cost a full action (not a bonus action) to coordinate; no false retreat | Morning *classicum* errors accumulate; 1 in 6 chance each session of a timing failure that wakes the wrong watch |
+| Medicus | No routine sick parade; DM secretly rolls: on 1-2 on 1d6, one NPC develops a serious condition | Antonine Plague screening stops; the DM introduces a plague exposure event with no medical response available |
+| Haruspex | No legal augury before significant actions; actions taken without omens are formally vulnerable | A missed festival produces a divine consequence at DM discretion: the gods are not pleased and the record shows it |
+| Faber | Fort maintenance runs by untrained labor; east postern hinge failure accelerated by one session | The substandard south wall section begins active cracking; siege vulnerability increases |
+| Librarius | Dispatches unfiled; pay delayed; supply requests require DC 15 Charisma check with fort administration | Rome's records show unit as "status unknown"; supply convoy is delayed one session |
+| Explorator | No reconnaissance beyond perimeter; party operates blind; DM provides no voluntary intelligence | A patrol that would have been identified and interdicted reaches its target undiscovered |
+| Frumentarius | Supply manifest discrepancies unmonitored; encrypted courier route unused | Rome has no current intelligence from this post; a decision is made in Rome without accurate information from Vindolanda |
+| Sacerdos | Morning rites unobserved; no +1 to death saves for the unit | A festival passes without observance; DM selects the specific divine consequence at the session following the miss |
+| Flamen Martialis | Frontier cult Mars connection unmanaged; collective corruption track gains +1 at start of next session | Mars' attention becomes direct and unmediated; all corruption saves in subsequent sessions have their DC increased by 2 |
+| Capsarius | No field medical kit in combat; bonus-action stabilize unavailable; each unconscious PC makes DC 13 Constitution save or gains one exhaustion level | No immediate-care capability in the field; the first PC death in an engagement is final unless the medicus is personally present |
+| Custos Armorum | Armory unmonitored; DM secretly rolls: on 1-3 on 1d6 each session, an NPC removes something | A significant armory item disappears without trace; the unit discovers the deficit at the worst possible moment |
+
+### The Unit as Character
+
+The party's choices about which roles they hold and which they leave to NPCs shape which NPCs they are closest to and which deaths hit hardest. An NPC who has held a role for multiple sessions without incident and who then dies in a combat the party could have prevented is a different kind of loss than a stranger's death. The role system is the mechanism that creates that connection.
+
+When the party looks around the table and sees that three roles are currently vacant, that is not a game-management problem to be solved: it is the story telling you where the pressure is. A unit down an optio, a medicus, and a capsarius is a unit that moves cautiously, fights hard, and has no good options when someone takes a wound. That is exactly the kind of situation the campaign was designed to put the party in.
 
 Some roles require specific conditions to become available to PCs that are not simply vacancy: the *Flamen Martialis* role requires ritual knowledge that is not accessible until Session 3. The *explorator* role (if vacant at start) becomes available to a PC from Session 3 onward when Flavus can be named and recruited if the party builds the appropriate relationship.
 
-The goal is a unit that functions continuously, with or without the party filling every position. The party's choices about which roles they hold and which they leave to NPCs shape which NPCs they are closest to and which NPC deaths hit hardest.
+A full unit is not the default state. It is something to be maintained.

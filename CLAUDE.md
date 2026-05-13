@@ -181,6 +181,10 @@ All content below is live in the book. No further action required.
 | 55 | Upgradable Camp and Legionary Companions (renumber of 49) — role-gated triggers, vacancy degradation |
 | 56 | Germanic Weapons + Magical Weapons — framea, seax, francisca, angon, three NPC weapons with story properties |
 | 57 | Comprehensive Weapons and Equipment Expansion — new sling ammo (whistling, inscribed, terracotta), arrow types (trilobate, barbed, scythicon), verutum, lancea, contus, falx, siege weapons (scorpio, onager, polybolos), full armor and equipment slot system (body/helmet/arms/gloves/cloak/boots/belt) |
+| 58 | Shadar-kai Spartan Shadow-Cursed Origin — racial traits, five bidirectional shadow stages, Vercingetorix reaction, corruption divergence sidebar, death ruling, Session 0 private questions, chapter 4 staging |
+| 59 | Starting Level and Character Advancement — Level 3 start, milestone rationale, full arc table L3-7, role/level decoupling (player_guide.qmd) |
+| 60 | Role-Based Starting Equipment Packages — all 15 roles with full kit, weight totals, class substitutions, carrying loads system, three-tier role advancement (Standard/Senior), vacancy consequence table, camp-as-living-entity framework |
+| 61 | Citizenship Progression as Campaign Goal — commendationes system, active status elevation track, in-play status costs, Session 3/4/5 elevation events (peoples.qmd, session0.qmd, gm_session0.qmd) |
 
 ---
 
