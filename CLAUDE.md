@@ -187,6 +187,7 @@ All content below is live in the book. No further action required.
 | 61 | Citizenship Progression as Campaign Goal — commendationes system, active status elevation track, in-play status costs, Session 3/4/5 elevation events (peoples.qmd, session0.qmd, gm_session0.qmd) |
 | 63 | Missing Weapons and Shields — arcus compositus, arcuballista-as-weapon, net (rete), vitis, fustis; scutum/clipeus/pavise full stat blocks with bash rules; master weapon reference table; shield rows in equipment summary (roman_tactics.qmd) |
 | 64a | Vindolanda Equipment Catalog — full camp inventory with availability codes (In Stock/Limited/Order/Crafted/Black Market/Unavailable) for weapons, shields, armor, ammunition, tools, consumables, medical, animals, services; Camp Level 2-3 availability changes; price index expanded (supplies.qmd); scutum weight corrected to 10 lb across roles.qmd |
+| 64b | Character-Sheet-Ready Starting Kits — Universal Soldier Kit (17 lb base issue for all roles), starting denarii by pay grade (65/50/35 d; special cases for Haruspex/Flamen/Sacerdos), tool kits (Healer's Kit, Forgery Kit, Calligrapher's Supplies, Herbalist Kit, Disguise Kit, Navigator's Tools, Smith's/Mason's Tools) added to all 15 roles; weight totals updated to Role kit / Full kit format (roles.qmd) |
 
 ---
 
