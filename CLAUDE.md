@@ -185,6 +185,7 @@ All content below is live in the book. No further action required.
 | 59 | Starting Level and Character Advancement — Level 3 start, milestone rationale, full arc table L3-7, role/level decoupling (player_guide.qmd) |
 | 60 | Role-Based Starting Equipment Packages — all 15 roles with full kit, weight totals, class substitutions, carrying loads system, three-tier role advancement (Standard/Senior), vacancy consequence table, camp-as-living-entity framework |
 | 61 | Citizenship Progression as Campaign Goal — commendationes system, active status elevation track, in-play status costs, Session 3/4/5 elevation events (peoples.qmd, session0.qmd, gm_session0.qmd) |
+| 63 | Missing Weapons and Shields — arcus compositus, arcuballista-as-weapon, net (rete), vitis, fustis; scutum/clipeus/pavise full stat blocks with bash rules; master weapon reference table; shield rows in equipment summary (roman_tactics.qmd) |
 
 ---
 

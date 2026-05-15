@@ -262,6 +262,26 @@ Used by the heavier crossbow variants deployed on fort walls and siege positions
 
 ---
 
+#### *Arcus Compositus* (Roman Composite Bow)
+
+The auxiliary cavalry bow: shorter than any infantry longbow, built from laminated layers of horn, sinew, and wood glued under tension and bent into a recurved profile. The design compresses the draw into a shorter arc that works from horseback without the rider's elbow fouling the string on the draw. Eastern auxiliary cohorts (*numeri*) assigned to frontier postings like Vindolanda bring their own; finding one in a Roman armory usually means it arrived with a transferred unit and was never returned. On foot it performs as well as a longbow at shorter range; from horseback it performs as nothing else does.
+
+*Arcus Compositus*: Martial weapon. Range 80/320 ft. 1d8 piercing. Ammunition (standard or variant arrows). Two-handed. Mounted: no disadvantage on attack rolls while mounted and moving (the short draw arc accommodates horseback use). Proficiency: characters proficient with the shortbow or longbow transfer that proficiency with one hour of practice (the draw technique differs but the principles align). Cost: 35 gp. Weight: 2 lb.
+
+**Vindolanda stock:** None standard. Available through eastern auxiliary units passing through, from traders in the *vicus* on DC 15 Investigation, or through Sigrun's network at Camp Level 2 or higher.
+
+---
+
+#### *Arcuballista* (Heavy Crossbow, Military Variant)
+
+The crossbow deployed on fort walls and in siege positions: mounted on a stock, drawn by a hand-crank or foot mechanism, and loaded with the heavier reinforced bolt that a standard infantry crossbow cannot fire. A soldier who has trained on Vindolanda's wall positions knows the *arcuballista* as the weapon that punches through material no man-portable bow reaches. Taking one into the field instead of a bow is a specific choice about what you expect to encounter. It weighs as much as a *dolabra* and loads slower than any bow. What it fires does not stop until it has gone through the first thing in its path.
+
+*Arcuballista*: Martial weapon. Range 90/360 ft (10 ft reduced from standard; the heavier bolt trades range for penetration). 1d10 piercing. Ammunition: *arcuballista* bolts (see ammunition section; standard crossbow bolts may substitute at -1 damage). Loading: 1 action to load; cannot fire again until reloaded. Heavy, two-handed. Against shield-bearing targets: on a hit, the bolt ignores the AC bonus from any shield that is not a siege pavise (the bolt weight defeats the bracing). Cost: 50 gp. Weight: 18 lb.
+
+**Vindolanda stock:** Two wall-mounted units operational at Camp Level 1; a third assembled from workshop parts at Camp Level 2. Hand-carried variants are not standard issue: a PC who wants one as personal equipment has sourced it deliberately, and its presence attracts professional interest from anyone who knows what it costs to transport.
+
+---
+
 ### Thrown Weapons
 
 #### Heavy *Pilum*
@@ -347,6 +367,34 @@ The heavy lance of Roman cataphract cavalry and Parthian-style heavy horse. Two 
 Captured from Dacian enemies or found in tribal mercenary stores. A single-edged sickle-sword designed to hook over and around shields, reaching the arm or neck behind whatever defense the opponent has raised. The Romans formally banned its use in gladiatorial combat after it caused too many incapacitating injuries in the early empire's arena shows. Finding one in Roman-controlled territory raises immediate questions about where it came from.
 
 *Falx*: Martial weapon. Two-handed. 1d10 slashing. Bypasses shields: the blade ignores the AC bonus granted by any shield (the curve goes around it; interposing the shield is not effective against the angle of the cut). Formation disadvantage: disadvantage on attack rolls while in any Roman formation -- the wide arc requires space that formations are designed to deny. Legal risk: carrying a *falx* without an officer's written authorization in Roman military territory is a summary offense. Any soldier or officer who sees one is legally required to report it; a DC 14 Persuasion check is needed to convince them otherwise. Cost: 15 gp (black market); 0 gp (captured). Weight: 7 lb.
+
+---
+
+#### Net (*Rete*)
+
+Used by auxiliary soldiers with gladiatorial training and by anyone whose orders call for capture rather than killing. The net does not cut: it tangles and grounds, and it requires a follow-up weapon to be lethal. Gladiatorial schools teach the *rete* as the *retiarius* combat tradition, but auxiliary fighters adapted it to field use against specific targets: wounded cavalry, prisoners whose information matters more than their death, creatures whose strength becomes manageable when their arms are bound. Against a shield wall it produces embarrassment. Against an isolated target who has not been watching the throwing hand, it settles the situation before the fight properly begins.
+
+*Rete*: Simple weapon. Thrown (5/15 ft). No damage on a hit. On a hit, the target is restrained (escape: DC 10 + thrower's Strength modifier as an action). Against Large or larger creatures: DC is 10 flat (the net material is insufficient for the mass). Against a target in *lorica segmentata*: the plate edges create leverage, giving the restrained target advantage on the escape check. A restrained creature with advantage on the check that succeeds escapes automatically. The net is destroyed if it takes 5 or more slashing damage while a creature is inside it. Re-folding for a second throw: 2 rounds; carrying a second net (3 lb each) bypasses this. Cost: 1 gp. Weight: 3 lb.
+
+**Note:** The *rete* is not standard-issue legionary kit. A PC who carries one sourced it deliberately or has gladiatorial training in their history. Its presence in a soldier's kit raises questions that should be answered before a commanding officer asks them.
+
+---
+
+#### *Vitis* (Centurion's Vine Staff)
+
+A length of vine wood, gnarled and dense, traditionally cut from a single vine in the Italian manner. Every centurion carries one. It corrects soldiers who are late, slow, loud, or otherwise in need of adjustment. It points at positions on a map. It blocks a sword when there is no better option. It is not a weapon the way a *gladius* is a weapon: it is authority made physical, and every soldier who has served a day in the Roman army recognizes what it means when the person holding it raises it.
+
+*Vitis*: Simple weapon. 1d6 bludgeoning. Light. Authority property: when a character carrying the *vitis* issues a verbal order to a Roman soldier within 30 feet (bonus action), that soldier must comply or make a DC 13 Wisdom saving throw; on a failure, they comply automatically; on a success, they freeze for one round and will not advance or attack (they may still defend themselves). The authority property does not function against non-Roman soldiers or anyone who has identified the bearer as not a centurion. Carrying a *vitis* without centurion rank is a disciplinary offense: any soldier who identifies the bearer as a non-centurion is legally required to report it; a DC 14 Persuasion check can delay the report for one scene, not prevent it. Cost: 2 sp. Weight: 2 lb.
+
+**Note on the Optio:** The Optio's *hastile optioni* (knobbed staff) functions identically mechanically but is visually distinct. An Optio seen carrying a *vitis* will be asked directly who gave it to them.
+
+---
+
+#### *Fustis* (Wooden Club)
+
+A length of hardwood without shaping, edge, or ceremony. Carried by engineers, supply workers, and soldiers who have had their main weapons confiscated as a disciplinary measure. Used to break things that need breaking, to brace structures under load, and occasionally to settle a question before a more precise instrument can be drawn. No one trains specifically with the *fustis*; anyone who has been in the field for more than a week has improvised one from whatever was nearby.
+
+*Fustis*: Simple weapon. 1d4 bludgeoning. Versatile (1d6 two-handed). Against prone targets: 1d6 bludgeoning (1d8 two-handed) regardless of weapon proficiency (hitting a prone opponent with a stick requires no special training). Improvised: a character with access to timber or forest material can produce a functional *fustis* in one minute. Cost: 1 cp. Weight: 3 lb.
 
 ---
 
@@ -621,6 +669,40 @@ A riveted iron helmet with a distinct framed construction, common among Germanic
 
 ---
 
+### Shields
+
+Shields are carried, not slotted. They require one hand; a character holding a shield cannot also wield a two-handed weapon or make off-hand attacks. Drawing a shield costs a bonus action; dropping it is free. Any character proficient with shields may make a **shield bash** as a bonus action: a melee attack against a target within 5 feet using Strength, with the damage and secondary effect listed per shield. The *scutum* and *clipeus* can contribute to Roman formations (testudo, cuneus, orbis, acies triplex). The *parma* (Germanic round shield, detailed in the Germanic Weapons section) cannot.
+
+---
+
+#### *Scutum* (Legionary Tower Shield)
+
+The large curved rectangular shield is recognizable at a thousand paces: layered plywood with leather facing, an iron boss at the center, iron trim at the edges. It covers from chin to knee. The curvature is not decorative: it deflects glancing blows and channels thrust forces around the bearer's body. The weight is the cost. A soldier who picks up a *scutum* for the first time and holds it at guard angle for two minutes learns something about Roman physical training that no written account conveys. Soldiers who have been carrying it for years do not notice the weight anymore. That is also something no account conveys.
+
+*Scutum*: +2 AC. One hand required. Formation: the *scutum* is the only shield that contributes to testudo; its curved edges interlock with adjacent shields (round shields do not interlock). Shield bash: +Strength modifier to hit, 1d6 bludgeoning; the target makes a DC 13 Strength saving throw or is pushed 5 feet and knocked prone (the full mass of the shield behind the strike). Terrain: moving through any gap narrower than 3 feet while carrying a *scutum* requires a DC 12 Dexterity check; on a failure, the bearer loses grip for one round (no AC bonus until re-gripped as a bonus action) or the shield lodges (DM discretion). Cost: 10 gp. Weight: 10 lb.
+
+**Mounted:** Using a *scutum* while mounted imposes disadvantage on all attack rolls. Cavalry are issued the *clipeus* instead.
+
+---
+
+#### *Clipeus* (Auxiliary Round Shield)
+
+The smaller shield issued to cavalry, auxiliary infantry, and soldiers in terrain where the *scutum*'s size creates liability. Light enough to carry at a run; small enough to move through confined spaces without adjustment. The tradeoff is coverage: a *clipeus* protects less of the body, and an opponent who understands the geometry fights the edges. Cavalry are issued the *clipeus* as standard because a *scutum* on horseback creates wind resistance and handling problems that exceed what the added protection justifies.
+
+*Clipeus*: +1 AC. One hand required. No terrain restriction (fits through standard doorways and forest undergrowth without adjustment). Formation: contributes to acies triplex and orbis, not testudo (the round edge does not interlock). Shield bash: +Strength modifier to hit, 1d4 bludgeoning; the target makes a DC 11 Strength saving throw or is pushed 5 feet (not knocked prone). Mounted: no penalties from horseback; a *scutum* imposes disadvantage on attacks while mounted. Cost: 7 gp. Weight: 6 lb.
+
+---
+
+#### Siege Pavise (Wall Shield, Crew-Portable)
+
+A large rectangular shield planted vertically to protect a stationary crew: archers on the wall, engineers working exposed positions, or soldiers holding a gap without fortification behind them. It is not carried in the hand during movement; it is planted and serves as static cover. The pavise does not protect its carrier while they are moving it.
+
+Siege Pavise: Provides three-quarter cover (+5 AC, +3 on Dexterity saving throws) to all creatures directly behind it within 5 feet. One hand to carry; two soldiers to plant quickly (30 seconds), one soldier to plant alone (1 full minute). A soldier completing the plant takes no other actions that round. Knockdown: if the pavise takes 20 or more damage in a single hit, it falls and must be replanted. Cost: 5 gp. Weight: 30 lb.
+
+**Session 4 use:** Pavises appear on both sides of the siege: defenders use them to hold exposed wall sections; attackers advance behind them toward the gate. A *dolabra* strike at the carrier (not the pavise itself) can disrupt the approach; a pilum volley into the pavise at close range forces a knockdown check.
+
+---
+
 ### Arms and Gloves
 
 #### Standard Leather Gauntlets
@@ -715,6 +797,62 @@ Every Roman soldier wears one. It is not optional; it is the mark of service its
 | Boots | *Caligae* | -- | 2 lb | Grip adv., Stealth disadv. on stone |
 | Boots | Military boots | -- | 3 lb | Cold resist, quiet |
 | Belt | *Cingulum Militare* | -- | 2 lb | 3 weapons or 5 items free encumbrance |
+| Shield | *Clipeus* | +1 AC | 6 lb | No terrain penalty; mounted-safe |
+| Shield | *Parma* (Germanic) | +2 AC | 6 lb | No formation use; free weapon arm |
+| Shield | *Scutum* | +2 AC | 10 lb | Testudo-capable; terrain restriction |
+| Shield | Siege Pavise | +5 AC (3/4 cover) | 30 lb | Crew-planted; static cover only |
+
+---
+
+### Weapon Reference Table
+
+*All weapons in this campaign, alphabetical by category. Damage column shows base die only; see each entry for full properties, special rules, and tradeoffs.*
+
+**Melee**
+
+| Weapon | Class | Damage | Properties | Weight | Cost |
+|---|---|---|---|---|---|
+| *Contus/Kontos* | Martial | 1d12 piercing | Two-handed, mounted only, charge strike (double damage) | 15 lb | 25 gp |
+| *Dolabra* | Martial | 1d8 piercing | Two-handed, double vs. structures | 5 lb | 3 gp |
+| *Falx* | Martial | 1d10 slashing | Two-handed, bypasses shields, legal risk | 7 lb | 15 gp |
+| *Framea* | Martial | 1d6/1d8 piercing | Versatile, thrown (20/60 ft), charge bonus | 4 lb | 2 gp |
+| *Fustis* | Simple | 1d4 bludgeoning | Versatile (1d6), improvised | 3 lb | 1 cp |
+| *Gladius* | Martial | 1d6 piercing/slashing | Finesse, formation bonus (+1 attack with ally in 5 ft) | 3 lb | 10 gp |
+| *Hasta* | Martial | 1d8 piercing | Reach, two-handed, brace (double damage on charge OA) | 6 lb | 2 gp |
+| *Pugio* | Simple | 1d4 piercing | Finesse, light, thrown (20/60 ft), adv. while grappling | 1 lb | 5 gp |
+| *Seax* | Martial | 1d6 slashing | Finesse, light, momentum cut (+1d4 after moving 10 ft) | 2 lb | 5 gp |
+| *Spatha* | Martial | 1d8 slashing | Reach 10 ft (mounted only); disadv. in tight formation | 4 lb | 15 gp |
+| *Vitis* | Simple | 1d6 bludgeoning | Light, authority property (Roman soldiers only) | 2 lb | 2 sp |
+
+**Thrown**
+
+| Weapon | Class | Damage | Range | Properties | Weight | Cost |
+|---|---|---|---|---|---|---|
+| *Angon* | Martial | 1d8 piercing | 20/40 ft | Barbed: catch on shield or body | 5 lb | 8 gp |
+| *Francisca* | Martial | 1d6 slashing | 15/30 ft | Near-miss Wisdom save DC 12 | 3 lb | 6 gp |
+| Heavy *Pilum* | Martial | 1d8 piercing | 30/60 ft | Shield destroyed on hit; does not bend back | 4 lb | 5 sp |
+| *Lancea* | Martial | 1d8 piercing | 20/40 ft (25/50 mounted) | +1d4 from horseback after 20 ft move | 4 lb | 3 gp |
+| Light *Pilum* | Martial | 1d6 piercing | 20/40 ft | +1d4 vs. unshielded; returnable by target | 2 lb | 3 sp |
+| Net (*Rete*) | Simple | -- | 5/15 ft | Restrained on hit; escape DC 10 + Str mod | 3 lb | 1 gp |
+| *Plumbata* | Simple | 1d4 piercing | 30/60 ft | Ignores half cover; clips to *scutum* | 0.5 lb | 1 sp/5 |
+| *Verutum* | Simple | 1d6 piercing | 20/40 ft | Retrievable; fails vs. testudo front | 1 lb | 1 sp |
+
+**Ranged**
+
+| Weapon | Class | Damage | Range | Properties | Weight | Cost |
+|---|---|---|---|---|---|---|
+| *Arcuballista* | Martial | 1d10 piercing | 90/360 ft | Heavy, two-handed, loading; ignores non-pavise shields | 18 lb | 50 gp |
+| *Arcus Compositus* | Martial | 1d8 piercing | 80/320 ft | Two-handed; no mounted penalty | 2 lb | 35 gp |
+| Sling (*Funda*) | Simple | by ammo | by ammo | See ammunition table for ammo-specific stats | 0.25 lb | 2 gp |
+
+**Shields**
+
+| Shield | AC bonus | Bash damage | Bash secondary | Weight | Cost |
+|---|---|---|---|---|---|
+| *Clipeus* | +1 | 1d4 bludgeoning | DC 11 Str save or push 5 ft | 6 lb | 7 gp |
+| *Parma* (Germanic) | +2 | 1d4 bludgeoning | DC 12 Str save or push 5 ft | 6 lb | 7 gp |
+| *Scutum* | +2 | 1d6 bludgeoning | DC 13 Str save or push 5 ft + prone | 10 lb | 10 gp |
+| Siege Pavise | +5 (3/4 cover, static) | -- | -- | 30 lb | 5 gp |
 
 ---
 
