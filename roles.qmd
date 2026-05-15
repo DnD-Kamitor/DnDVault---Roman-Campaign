@@ -196,7 +196,7 @@ Centurion pay is *triplicarius*: three times standard wages, take-home approxima
 </details>
 
 <details>
-<summary><strong>DC 13 — Chain of command and who reports to whom</strong></summary>
+<summary><strong>History DC 13 (passive) — Chain of command and who reports to whom</strong></summary>
 
 The chain runs: *miles* (legionary) to the *decanus* (tent-leader) to the *optio* to the centurion to the *tribunus* to the legate. Each link has defined authority and defined limits. An *optio* who gives orders that contradict the centurion's is insubordinate; an *optio* who fails to pass information up the chain is negligent. You know the difference, and you know which officers in this fort are currently walking the line between the two.
 
@@ -205,7 +205,7 @@ The legate's staff includes a *cornicularius* (senior administrative officer), a
 </details>
 
 <details>
-<summary><strong>DC 15 — Political appointments vs. soldiers</strong></summary>
+<summary><strong>History DC 15 (passive) — Political appointments vs. soldiers</strong></summary>
 
 Not every officer in the Roman army earned the position. Tribune appointments in particular are often political: young men from senatorial families completing their military service before returning to Rome. Some of them are capable. Many of them are not. You can tell the difference within the first week of working with them, and you know which tribune this fort recently had was not there because of his military record.
 
@@ -214,7 +214,7 @@ The centurion system is more reliable: centurions generally rise through the ran
 </details>
 
 <details>
-<summary><strong>DC 17 — Who is reporting to whom outside the chain</strong></summary>
+<summary><strong>Insight DC 17 (active: watch who speaks privately with the dispatch rider over one session) — Who is reporting to whom outside the chain</strong></summary>
 
 Every large Roman military establishment has secondary information flows that bypass the official chain of command. The *frumentarii* (grain officers) are the most formal of these, but they are not the only channel. Several officers in this fort are filing information to Rome through routes that do not pass through Corvinus's desk. You do not know which ones or what they are saying. But you know the pattern: when the legate is surprised by an order that should have required his input, someone else's information got there first.
 
@@ -281,7 +281,7 @@ The tesserarius position gives you a specific asset that most soldiers lack: a d
 </details>
 
 <details>
-<summary><strong>DC 13 — Official patrol schedule and gate assignments</strong></summary>
+<summary><strong>Role access (no check) — Official patrol schedule and gate assignments</strong></summary>
 
 The fort operates four watches through the night, each approximately three hours. The north gate is guarded in pairs; the east and west posterns are single-sentry positions with a roving check every two hours. The principia (headquarters building) has its own guard independent of the wall rotation.
 
@@ -290,7 +290,7 @@ The password changes daily. The rotation for who receives it first follows senio
 </details>
 
 <details>
-<summary><strong>DC 15 — Gaps in the patrol pattern</strong></summary>
+<summary><strong>Perception DC 15 (passive: accumulated from your nightly rounds) — Gaps in the patrol pattern</strong></summary>
 
 No patrol schedule is perfectly enforced. The east postern's roving check runs long when Decanus Arvina is on duty: he stops at the grain store to talk to the night worker. The northwest corner of the outer wall has a blind spot between the third and fourth watch that the wall layout creates structurally. These gaps are in your log. They exist in every fort and every experienced soldier knows they exist.
 
@@ -299,7 +299,7 @@ The relevant question is not whether the gaps exist but whether anyone has been 
 </details>
 
 <details>
-<summary><strong>DC 17 — Compromised guards and outside contacts</strong></summary>
+<summary><strong>Investigation DC 17 (active: spend a session reviewing your watch log for anomalies) — Compromised guards and outside contacts</strong></summary>
 
 Three soldiers on the current rotation have behavior patterns that require explanation. One is always asleep at his post but never formally reported: someone is covering for him. One has been at the east postern specifically on the three nights in the past month when the civilian settlement outside the walls reported unusual sounds. One submitted a watch log for a night when you can confirm he was not actually at his assigned position.
 
@@ -374,7 +374,7 @@ The soldiers around you know your name. This is not universal. Most soldiers in 
 </details>
 
 <details>
-<summary><strong>DC 13 — This legion's history and battle honors</strong></summary>
+<summary><strong>History DC 13 (passive) — This legion's history and battle honors</strong></summary>
 
 The eagle has been with this legion for generations. Its current casing dates to a repair done after a Dacian campaign forty years ago: a silversmith in Carnuntum did the work, and his mark is still on the base. Every *aquilifer* since then has known that mark by touch in the dark.
 
@@ -383,7 +383,7 @@ The battle honors attached to the eagle's shaft include campaigns in Britannia, 
 </details>
 
 <details>
-<summary><strong>DC 15 — Lost eagles and the men responsible</strong></summary>
+<summary><strong>History DC 15 (passive) — Lost eagles and the men responsible</strong></summary>
 
 Three legions' eagles were lost at Teutoburg: XVII, XVIII, XIX. Their numbers were never reused. Two of the three eagles were eventually recovered under Augustus and Germanicus, through intelligence operations and punitive campaigns that lasted decades.
 
@@ -394,7 +394,7 @@ An *aquilifer* who loses the eagle does not survive the event as a practical mat
 </details>
 
 <details>
-<summary><strong>DC 17 — The blessing spoken over the eagle</strong></summary>
+<summary><strong>Religion DC 17 (passive: transmitted at appointment; you know it if Religion +7 or better) — The blessing spoken over the eagle</strong></summary>
 
 The formal dedication spoken over the eagle during installation is a legally binding oath under Roman military law. It constitutes a contract between the bearer and Jupiter Optimus Maximus, witnessed by the legion. Breaking it is not a disciplinary infraction: it is a religious offense that carries specific divine consequence.
 
@@ -466,7 +466,7 @@ Advancement from signifer goes in two directions. The combat track leads to opti
 </details>
 
 <details>
-<summary><strong>DC 13 — Who has savings deposited and how much</strong></summary>
+<summary><strong>Role access (no check) — Who has savings deposited and how much</strong></summary>
 
 Twelve soldiers in this unit have active savings accounts with the *signifer*. The amounts range from a few dozen denarii (new recruits who have not had time to save) to over 200 denarii (veterans who have been on the frontier for multiple tours and have nowhere else to put it).
 
@@ -475,7 +475,7 @@ The death benefits ledger lists the named beneficiary for each soldier: mostly f
 </details>
 
 <details>
-<summary><strong>DC 15 — Which soldiers are in debt</strong></summary>
+<summary><strong>Investigation DC 15 (passive: reading patterns in the ledger over several pay cycles) — Which soldiers are in debt</strong></summary>
 
 Seven soldiers in the current rotation have debts that exceed their savings deposits. Two of these are gambling debts, which is illegal under military law but universally practiced. Three are supply debts to the quartermaster that have been rolling over without resolution. Two are debts to individuals outside the fort: the civilian settlement has a moneylender who charges rates that are technically extortionate.
 
@@ -484,7 +484,7 @@ Soldiers with unresolvable debts are vulnerable to pressure. This is not specula
 </details>
 
 <details>
-<summary><strong>DC 17 — Debts used as leverage</strong></summary>
+<summary><strong>Investigation DC 17 (active: cross-reference the ledger against the visitor log from the past month) — Debts used as leverage</strong></summary>
 
 One of the debts currently held against a soldier in this unit connects directly to a name that appears in Brutus's correspondence network. The moneylender in the civilian settlement is not operating independently. The debt was extended deliberately, to a specific soldier, at a time that correlates with the Tribune's visit to this fort. You can document this if you spend a session reviewing the ledger against the visit records.
 
@@ -554,7 +554,7 @@ Advancement within the signals system moves toward the *tubicen*, who plays the 
 </details>
 
 <details>
-<summary><strong>DC 13 — Roman signal vocabulary</strong></summary>
+<summary><strong>Role proficiency (no check) — Roman signal vocabulary</strong></summary>
 
 The standard signal set includes: advance, halt, wheel left, wheel right, form testudo, break testudo, double time, retreat to standard, retreat to fort, officers to the command position, and three emergency signals (fire, breach, ambush). Each is a distinct horn pattern. You know all of them by reflex: you can sound them in the dark, while running, while someone is trying to kill you.
 
@@ -563,7 +563,7 @@ You also know the signals used by this specific legion, which differ in three pa
 </details>
 
 <details>
-<summary><strong>DC 15 — Germanic tribal signals</strong></summary>
+<summary><strong>Perception DC 15 (passive: pattern recognized from prior engagements; you know it if Perception +5 or better) — Germanic tribal signals</strong></summary>
 
 The Germanic tribes do not use horns the way Rome does. They use a different instrument entirely: the *carnyx*, an upright bronze horn shaped like an animal head. Its sound is distinctive and carries differently from the *cornis*. You have heard it twice in the last year, both times before an engagement.
 
@@ -572,7 +572,7 @@ The Marcomanni use specific drum patterns as command signals in forest fighting.
 </details>
 
 <details>
-<summary><strong>DC 17 — Counterfeiting Roman signals to break formations</strong></summary>
+<summary><strong>History DC 17 (passive) — Counterfeiting Roman signals to break formations</strong></summary>
 
 The standard Roman signal set is not secret. Every auxiliary unit that has operated alongside the legions for more than a year knows it. An enemy who has fought Romans long enough can reproduce the signals well enough to confuse a unit that is not expecting deception.
 
@@ -648,7 +648,7 @@ Advancement in the medical track moves toward *archiatros* (chief physician) at 
 </details>
 
 <details>
-<summary><strong>DC 13 — Field injuries and current patient status</strong></summary>
+<summary><strong>Medicine DC 13 (automatic: your sick parade gives you this each morning) — Field injuries and current patient status</strong></summary>
 
 Three soldiers are currently on the sick list: one with a festering arrow wound from a patrol engagement two weeks ago, one with fever of unknown origin, one with a broken wrist from a training accident. The fever case concerns you. Fever with this onset pattern is either ordinary illness or early-stage Antonine Plague. You are watching it.
 
@@ -657,7 +657,7 @@ You can tell the difference between a blade wound and a wound made to look like 
 </details>
 
 <details>
-<summary><strong>DC 15 — Poison identification, antidotes, and plague differential</strong></summary>
+<summary><strong>Medicine DC 15 (passive: if Medicine +5 or better, you know this without a roll) — Poison identification, antidotes, and plague differential</strong></summary>
 
 The Antonine Plague presents with fever, skin eruptions, and diarrhea in a specific sequence. Ordinary camp fever presents similarly but the sequence differs. You can distinguish them with Medicine DC 15 and three days of observation. The plague is fatal in roughly one-third of cases in civilian populations and somewhat lower in military ones, possibly due to better nutrition.
 
@@ -666,7 +666,7 @@ You know seven poisons that can be prepared from plants available within a two-d
 </details>
 
 <details>
-<summary><strong>DC 17 — What the spear's influence does to human bodies</strong></summary>
+<summary><strong>Medicine DC 17 (active: requires Cassia at Ally tier first; then roll Medicine while examining affected patients) — What the spear's influence does to human bodies</strong></summary>
 
 *Access to this information requires Cassia's trust at Ally tier. Without it, this check cannot be made regardless of the result.*
 
@@ -738,7 +738,7 @@ Advancement within the guild runs toward senior guild positions in Rome, where t
 </details>
 
 <details>
-<summary><strong>DC 13 — Standard divination signs and their interpretations</strong></summary>
+<summary><strong>Religion DC 13 (passive) — Standard divination signs and their interpretations</strong></summary>
 
 The formal *haruspicy* system examines six organs in sequence: liver, gallbladder, lungs, heart, spleen, and the fatty membrane surrounding the intestines. Each organ corresponds to a sphere of concern (military outcome, divine favor, leadership decisions, personal fortune, supply and logistics, and the unexpected). An experienced *haruspex* can read all six in the time it takes a centurion to brief his unit.
 
@@ -747,7 +747,7 @@ Bird augury is a separate discipline. The relevant species, their flight pattern
 </details>
 
 <details>
-<summary><strong>DC 15 — The *libri haruspicini* and what they cover</strong></summary>
+<summary><strong>Religion DC 15 (passive) — The *libri haruspicini* and what they cover</strong></summary>
 
 The *libri haruspicini* are the professional reference texts for divination practice. They cover not just the standard interpretations but the edge cases: what it means when the liver is missing a lobe, what to do when the sacrificial animal refuses to die cleanly, what the specific coloration patterns in the gallbladder indicate versus what the standard texts say they indicate.
 
@@ -756,7 +756,7 @@ The *extispicy* procedure for a major military decision takes approximately fort
 </details>
 
 <details>
-<summary><strong>DC 17 — Official *prodigia* and what Paterculus has been hiding</strong></summary>
+<summary><strong>Investigation DC 17 (active: compare your omen log against Paterculus's officially filed reports) — Official *prodigia* and what Paterculus has been hiding</strong></summary>
 
 A *prodigium* is a specific category of omen: an event so far outside the natural order that it constitutes an official divine communication requiring a Senate response. There are twelve defined categories in Roman military law. You know all twelve. You have identified at least three events in this fort over the past month that meet the threshold.
 
@@ -827,7 +827,7 @@ Advancement moves through *architectus militaris* (military architect, managing 
 </details>
 
 <details>
-<summary><strong>DC 13 — Current fort condition and weak sections</strong></summary>
+<summary><strong>Investigation DC 13 (automatic: your daily inspection round surfaces this) — Current fort condition and weak sections</strong></summary>
 
 The north wall is in the best condition. The south wall has a section that was repaired poorly two years ago: the mortar is wrong for the local stone and is cracking along the joint lines. The east postern gate has a hinge assembly that will fail under sustained assault; it has been on the repair list for three months and keeps being deprioritized because it requires imported iron fittings.
 
@@ -836,7 +836,7 @@ The *fabrica* currently has enough raw iron stock for standard maintenance for a
 </details>
 
 <details>
-<summary><strong>DC 15 — Specific repairs, timelines, and materials required</strong></summary>
+<summary><strong>Investigation DC 15 (active: hands-on structural assessment of a specific wall section or fitting) — Specific repairs, timelines, and materials required</strong></summary>
 
 The south wall section can be restored in three days of continuous work with eight laborers and the current mortar stock. The east postern hinge requires one piece of cast iron approximately thirty centimeters in diameter; the nearest reliable source is the *fabrica* at the regional supply depot two days' march away, or a sufficiently skilled *faber* with raw iron and a day's work.
 
@@ -845,7 +845,7 @@ If the fort comes under siege before the east postern is repaired, that gate wil
 </details>
 
 <details>
-<summary><strong>DC 17 — The northeast foundation</strong></summary>
+<summary><strong>Investigation DC 17 (active: close inspection of the northeast corner specifically, noting floor stress marks) — The northeast foundation</strong></summary>
 
 The northeast corner of the fort has an engineering problem that is not in any document and that you discovered during routine inspection four months ago. The foundation in that section sits above a spring: not a major water source, but enough water movement at depth to cause slow subsidence. The northeast barracks floor has been settling at a rate of approximately two centimeters per year for at least the past decade, based on the stress marks in the interior walls.
 
@@ -915,7 +915,7 @@ The starting denarii for this role reflect the higher pay grade, but the real va
 </details>
 
 <details>
-<summary><strong>DC 13 — What Rome's official record shows</strong></summary>
+<summary><strong>Role access (no check) — What Rome's official record shows</strong></summary>
 
 The official dispatch record for this fort, current as of the last courier departure, contains: standard strength returns (unit composition and fitness for duty), supply status, construction progress on the northern watchtower extension, and a brief notation about the archaeological discovery near the northeast barracks that describes it as "Roman-era cultural material of possible historical interest, examination ongoing."
 
@@ -924,7 +924,7 @@ That description was approved by Corvinus personally before transmission. It is 
 </details>
 
 <details>
-<summary><strong>DC 15 — Gaps between the official record and what you have seen</strong></summary>
+<summary><strong>Investigation DC 15 (passive: emerges from reading dispatches over several weeks; if Investigation +5 or better you see this pattern) — Gaps between the official record and what you have seen</strong></summary>
 
 Three things that you know about this fort are not in any document that has left it. Two of them were omitted by Corvinus's direct instruction. One was omitted because the *librarius* who drafted that particular report had already been transferred before the relevant events occurred, and no one thought to file a supplementary return.
 
@@ -933,7 +933,7 @@ The gap between the official record and the observed reality of this post is not
 </details>
 
 <details>
-<summary><strong>DC 17 — The sealed dispatch and what it implies</strong></summary>
+<summary><strong>Investigation DC 17 (active: handle and note the weight of the sealed dispatch, then connect it to the excavation timeline) — The sealed dispatch and what it implies</strong></summary>
 
 A sealed document arrived at this fort three weeks ago addressed to Corvinus personally, from an office in Rome that corresponds to Brutus's administrative position in the Senate's frontier oversight committee. Corvinus has not opened it. It sits on his desk under a paperweight. You have handled it twice in the course of your duties: it is heavier than a single sheet and thinner than a full report. It is the right weight for a set of specific instructions.
 
@@ -1005,7 +1005,7 @@ Advancement to *speculatores* (the elite military intelligence force, triple wag
 </details>
 
 <details>
-<summary><strong>DC 13 — Current Germanic movement patterns</strong></summary>
+<summary><strong>Survival DC 13 (automatic: your most recent patrol report covers this) — Current Germanic movement patterns</strong></summary>
 
 Three groups have been moving in the region in the past two weeks. One is a trade party moving along the recognized eastern route: approximately forty people, mixed goods, no weapons visible on the outriders. One is a hunting group of twelve that has been in the same area for four days, which is two days longer than the local game patterns justify. One is a party of unknown size whose tracks you found but lost at the river crossing two days ago.
 
@@ -1014,7 +1014,7 @@ The hunting group concerns you. Men who stay in one area longer than the hunting
 </details>
 
 <details>
-<summary><strong>DC 15 — Vercingetorix's tribe: location and approach</strong></summary>
+<summary><strong>Survival DC 15 (active: three months of targeted reconnaissance to confirm the bypass route) — Vercingetorix's tribe: location and approach</strong></summary>
 
 The tribe associated with Vercingetorix has a winter settlement approximately four hours' march northeast, in the valley that the Germanic tracks you have been following consistently avoid. You have been watching the approach to that settlement for the past three months and have identified the sentinel positions and the patrol intervals. There is a route that bypasses the outermost sentinel ring entirely. You know it because you used it on the last reconnaissance.
 
@@ -1023,7 +1023,7 @@ Whether you share this information, and with whom, is your own judgment call. Ve
 </details>
 
 <details>
-<summary><strong>DC 17 — What Thusnelda's scouts have been watching</strong></summary>
+<summary><strong>Perception DC 17 (active: detect counter-surveillance during a patrol near the northeast wall area) — What Thusnelda's scouts have been watching</strong></summary>
 
 You have been watching Vercingetorix's tribe. His tribe's scouts have been watching you watching them. That is normal frontier intelligence behavior. What is not normal is where their secondary surveillance has been directed.
 
@@ -1110,7 +1110,7 @@ The question you face is not whether to keep filing reports. The question is who
 </details>
 
 <details>
-<summary><strong>DC 13 — Supply manifest discrepancies</strong></summary>
+<summary><strong>Investigation DC 13 (passive: emerges from comparing your personal tracking against official manifests over six weeks) — Supply manifest discrepancies</strong></summary>
 
 The official supply manifests for this fort show standard consumption rates for a garrison of this size. The actual consumption rates, based on your independent tracking, differ in two categories: *posca* (vinegar-water, the standard soldier's drink) consumption is slightly low, suggesting either underreporting or a secondary supply source; iron stock consumption is slightly high, suggesting either more repair work than documented or materials leaving the fort without being signed out.
 
@@ -1119,7 +1119,7 @@ Small discrepancies can be noise. These have been consistent for six weeks, whic
 </details>
 
 <details>
-<summary><strong>DC 15 — Soldiers reporting to Brutus's network</strong></summary>
+<summary><strong>Investigation DC 15 (active: intercept and examine civilian mail over two or more sessions) — Soldiers reporting to Brutus's network</strong></summary>
 
 You have identified two soldiers in this fort who are using the civilian mail network rather than the military dispatch system for at least some of their correspondence. Both have family in Rome. One of the letters you intercepted (legally, as part of your intelligence remit) was addressed to a name that appears in your reference files for Brutus's patronage network.
 
@@ -1128,7 +1128,7 @@ What you do not know is whether these soldiers are active agents or simply peopl
 </details>
 
 <details>
-<summary><strong>DC 17 — The dispatch arrived before the discovery</strong></summary>
+<summary><strong>Investigation DC 17 (active: cross-reference dispatch arrival dates in your records against the excavation breach timeline) — The dispatch arrived before the discovery</strong></summary>
 
 This is documented. The sealed dispatch from Brutus's office arrived on the third day of the excavation. The vault was not breached until the seventh day. The timing means Brutus had prior intelligence: either a previous visit to this site, access to survey records that predate the current dig, or a source inside the fort who reported the discovery at an earlier stage than the official record reflects.
 
@@ -1199,7 +1199,7 @@ Advancement follows two paths. The military path leads to larger religious respo
 </details>
 
 <details>
-<summary><strong>DC 13 — Ritual calendar for a frontier posting</strong></summary>
+<summary><strong>Religion DC 13 (passive) — Ritual calendar for a frontier posting</strong></summary>
 
 A frontier fort observes a modified calendar: the major festivals are maintained (you cannot practically observe every Roman religious obligation in the field), while local variations accommodate the frontier context. The festivals most relevant to this posting are the *Armilustrium* (October 19, purification of weapons before campaign season ends), the *Quinquatria* (March 19-23, Mars's main festival), and the *Lemuria* (May 9, 11, 13, for the restless dead).
 
@@ -1208,7 +1208,7 @@ You know which festivals were missed by this fort in the past year and what the 
 </details>
 
 <details>
-<summary><strong>DC 15 — Signs of active divine presence vs. ordinary omen</strong></summary>
+<summary><strong>Religion DC 15 (passive: if Religion +5 or better, you recognize the pattern without a roll) — Signs of active divine presence vs. ordinary omen</strong></summary>
 
 There is a difference between a bad omen (a raven on the left, a sneeze before a speech) and a sign of active divine attention (repeated, patterned, escalating). The bad omen category is large and most of it is noise. Active divine attention is rare and specific.
 
@@ -1217,7 +1217,7 @@ This fort is currently receiving active divine attention. The signs have been pr
 </details>
 
 <details>
-<summary><strong>DC 17 — Who has been making non-standard offerings at the shrine</strong></summary>
+<summary><strong>Investigation DC 17 (active: examine the shrine carefully after noticing an offering placed outside normal channels) — Who has been making non-standard offerings at the shrine</strong></summary>
 
 The fort shrine accepts offerings through the official channel: you receive them, record them, and place them at the correct altar. You also know when offerings are placed at the shrine that did not come through you.
 
@@ -1287,7 +1287,7 @@ There is no formal advancement track. You serve here until the posting ends, unt
 </details>
 
 <details>
-<summary><strong>DC 13 — Mars's two faces</strong></summary>
+<summary><strong>Religion DC 13 (passive) — Mars's two faces</strong></summary>
 
 In Rome, Mars is the civic war god: the god of disciplined military force, of justified conflict, of the legal instrument of Roman power. He is clean, formal, and documented. His festivals are scheduled. His priests are administrators.
 
@@ -1296,7 +1296,7 @@ On the frontier, Mars is something else. The soldiers here call him Mars Ultor, 
 </details>
 
 <details>
-<summary><strong>DC 15 — The frontier cult of Mars Ultor</strong></summary>
+<summary><strong>Religion DC 15 (passive: transmitted during appointment preparation; you know this if Religion +5 or better) — The frontier cult of Mars Ultor</strong></summary>
 
 The frontier cult practices a set of rites that are not in the official Roman religious calendar. They are passed between *Flamines* directly, without being written down: this is deliberate. The prayer language for the binding war-vow is different from the standard Mars prayer. It is not archaic Latin; it is something older.
 
@@ -1305,7 +1305,7 @@ A soldier who makes a proper war-vow to Mars Ultor is making a contract, not a p
 </details>
 
 <details>
-<summary><strong>DC 17 — The *ancilia* and the three weapons</strong></summary>
+<summary><strong>Religion DC 17 (passive: transmitted through the Flamen lineage, never written down; you know it if Religion +7 or better) — The *ancilia* and the three weapons</strong></summary>
 
 The *ancilia* are twelve sacred shields kept in Rome, said to have fallen from heaven as a divine gift during the reign of Numa. This is the official account. The *Flamen Martialis* tradition holds a different account, passed without being written: the shields were not the only objects that fell. There were three weapons. The shields were kept because they were identifiable and manageable. The weapons were distributed because they were not safe in one place.
 
@@ -1378,7 +1378,7 @@ Advancement from capsarius to medicus is a formal track. The medicus evaluates y
 </details>
 
 <details>
-<summary><strong>DC 13 — Standard wound care and triage decisions</strong></summary>
+<summary><strong>Medicine DC 13 (passive: if Medicine +3 or better, you know this from your training) — Standard wound care and triage decisions</strong></summary>
 
 The immediate priority after a combat engagement is not the most badly wounded: it is the most salvageable. A soldier who has lost too much blood before you reached him is not a triage priority; a soldier who has a manageable wound and shock is. You make this calculation in seconds, because you have made it before, and you know the specific signs.
 
@@ -1387,7 +1387,7 @@ You carry: linen bandage strips, vinegar solution, pitch for sealing deep wounds
 </details>
 
 <details>
-<summary><strong>DC 15 — Medicinal plants within reach of the fort</strong></summary>
+<summary><strong>Nature DC 15 (passive: if Nature +5 or better; Herbalist Kit proficiency also qualifies) — Medicinal plants within reach of the fort</strong></summary>
 
 Within a half-day's walking distance from Vindolanda, the following plants are available: yarrow (wound staunching), willow bark (fever reduction), wormwood (digestive problems), elder flower (respiratory complaints, mildly), and bog rosemary in the wetland area three hours northeast. Standard herbalism knowledge covers the first four. The fifth is less commonly known.
 
@@ -1396,7 +1396,7 @@ Bog rosemary (*Andromeda polifolia*) is native to the bog region and requires sp
 </details>
 
 <details>
-<summary><strong>DC 16 Medicine + Herbalist Kit — Bog rosemary preparation</strong></summary>
+<summary><strong>Medicine DC 16 + Herbalist Kit (active: discovered by treating a specific patient and observing the effect; requires both proficiencies) — Bog rosemary preparation</strong></summary>
 
 Bog rosemary tea, prepared from dried leaves using a cold-steep method rather than boiling (boiling destroys the relevant compound), provides advantage on saving throws against the Alp's Sleep Paralysis for eight hours per dose. This is not in any Roman medical text. You discovered it by accident while treating a soldier who had been showing symptoms consistent with repeated nightmare-type attacks and gave him the tea as a sleep aid.
 
@@ -1471,7 +1471,7 @@ Advancement moves through the logistics track toward *praefectus armorum* (weapo
 </details>
 
 <details>
-<summary><strong>DC 12 — Current armory contents</strong></summary>
+<summary><strong>Role access (no check) — Current armory contents</strong></summary>
 
 Current armory stock: sixty-four *gladii* in service condition, eight awaiting repair, four condemned; thirty-two *pila* (heavy), eighteen in service condition; forty-one *pila* (light), thirty in service condition; three *scorpiones* (light bolt-throwers) with twelve bolts each; approximately four hundred sling stones (loose weight, not precision ammunition); eighty sets of lorica segmentata, twelve requiring repair; twenty-two *scuta* in service condition, six awaiting repair.
 
@@ -1480,7 +1480,7 @@ Lead sling shot: fourteen pouches of twenty, held by the quartermaster, requires
 </details>
 
 <details>
-<summary><strong>DC 15 — Substandard and tampered weapons</strong></summary>
+<summary><strong>Investigation DC 15 (active: close physical inspection of individual weapons in the current service cycle) — Substandard and tampered weapons</strong></summary>
 
 Three weapons in the current issue are below standard in ways that are not obvious on casual inspection. One *gladius* has a blade that has been resharpened to the point that the edge geometry is wrong: it will hold an edge poorly and chip under hard use. Two *pila* have shafts that have been slightly thinned near the join, which will cause them to break on impact instead of bending. Normal wear can produce this; deliberate modification produces this more consistently.
 
@@ -1489,7 +1489,7 @@ You have pulled these from service. You have not yet determined whether the subs
 </details>
 
 <details>
-<summary><strong>DC 17 — Unauthorized removals and the excavation connection</strong></summary>
+<summary><strong>Investigation DC 17 (active: cross-reference your condemned stock removal log against the excavation night schedule) — Unauthorized removals and the excavation connection</strong></summary>
 
 Someone has been removing *pilum* heads from the armory. Not complete *pila*: specifically the iron heads, removed from condemned shafts that were awaiting disposal. The heads are small, heavy, and easily concealed. The armory log does not show these removals because they were made from condemned stock, which is tracked differently.
 
