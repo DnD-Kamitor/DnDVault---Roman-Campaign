@@ -172,6 +172,30 @@ The optio commands from the rear of the formation: pushing stragglers forward, e
 **Not issued:** No *pilum* (the staff replaces it in formation). No two-handed weapon. The optio is a command role, not a spearhead; their kit reflects the management of the line, not the assault on it.
 
 <details>
+<summary><strong>The Optio's Daily Reality</strong></summary>
+
+The centurion commands; the optio keeps things running. In practice this means you are the person the centurion does not want to deal with personally: the soldier who is drunk before noon, the latrine roster that has not been updated in a week, the debt between two tentmates that is about to become a fight. None of this goes in the official record. You handle it, you file a note in your own log, and the centurion hears about it only if it escalates past what you can contain.
+
+The knobbed staff is not ceremonial. You use it. In formation, men who drift from the line feel the end of the staff between their shoulders before they hear your voice. The staff is a statement about your relationship with the men you manage: close enough to reach them, far enough back to see the whole line. A centurion leads from the front; an optio manages from the rear. This distinction matters and both roles know it.
+
+Between engagements you are primarily a bureaucrat. Morning briefings, casualty reports, equipment inspections, watch log review. The centurion arrives to the briefing and you have already done the work. If you have done it well, the centurion says nothing and that means the day is going correctly. If you have done it badly, the centurion says nothing in front of the men and says everything in private. You learn quickly to tell the difference between the two silences.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Authority, and the Advancement Track</strong></summary>
+
+The optio's authority to physically discipline soldiers without formal trial is called *coercitio*. In Roman military law this power flows from commissioned rank, which technically requires citizen or Latini standing. A citizen soldier who is struck by a non-citizen optio has grounds to protest, not to a sympathy audience, but to the legal mechanism that Roman military law provides. In practice, the centurion would back the optio; in principle, the record exists. This is why the role specification says citizen preferred: it is not tradition, it is the difference between authority that holds and authority that can be challenged.
+
+Your path to centurion is the most clearly defined advancement track in the legion. The sequence is miles to *immunis* (skilled specialist) to optio to centurion, when a position opens. Positions open when centurions die, retire, or are transferred. In peacetime, on a stable frontier, you might serve as optio for ten years before a centurionate opens. In a campaign year, three positions might open in a month. The frontier posting is not comfortable but it is productive for advancement.
+
+What accelerates the path is a letter. A recommendation from the legate, the provincial governor, or any senator with a military connection can move your name ahead of others who have been waiting longer. Corvinus writes recommendations selectively: soldiers who have performed under pressure, in front of witnesses, in ways that do not require him to explain the circumstances. Understanding what kind of performance earns a letter from Corvinus is part of understanding what kind of officer he is.
+
+Centurion pay is *triplicarius*: three times standard wages, take-home approximately 600 denarii per year after deductions. Beyond pay, a centurion owns a private quarters in the barracks, employs an orderly from unit ranks without having to ask permission, and has the right of *fustigatio*: formal beating of soldiers for disciplinary offenses, recorded and reported, not the informal coercitio you exercise now. The distinction between the two is the paperwork.
+
+</details>
+
+<details>
 <summary><strong>DC 13 — Chain of command and who reports to whom</strong></summary>
 
 The chain runs: *miles* (legionary) to the *decanus* (tent-leader) to the *optio* to the centurion to the *tribunus* to the legate. Each link has defined authority and defined limits. An *optio* who gives orders that contradict the centurion's is insubordinate; an *optio* who fails to pass information up the chain is negligent. You know the difference, and you know which officers in this fort are currently walking the line between the two.
@@ -231,6 +255,30 @@ The tesserarius moves through the fort at night: checking posts, delivering the 
 **Role kit weight:** 47 lb | **Full kit with universal issue:** 64 lb. Light enough to move through the fort without generating sound that carries ahead.
 
 **Not issued:** No *pilum* (range engagement inside a fort is not the watch officer's role). No heavy armor. The tesserarius is not the first line; they are the person who ensures the first line is where it should be.
+
+<details>
+<summary><strong>The Tesserarius's Daily Reality</strong></summary>
+
+The tessera travels from the legate's office to you each evening before sundown. You carry it in person to every guard post in sequence, receiving a verbal acknowledgment from each sentry that the word has been received. You do not write the password down. You do not send it by messenger. You carry it yourself, every night, regardless of weather, regardless of your other duties that day, regardless of how many hours you have already been awake.
+
+This is not formality. The password is the single point of failure in the fort's nighttime security. If it leaks between you and a guard post, men die. The personal delivery is the chain of custody. Your presence at each post also means you are the only officer with a complete physical picture of the watch at the moment it was established: who was actually standing at which post, how alert they were, whether there was anything irregular in the gate approaches. This information lives in your watch log, not in any official report.
+
+The watch log is the most important document you maintain and the one most likely to matter after the fact. When something goes wrong at night, the first question is always: who was where, and who says so. You say so, in writing, with the time noted. Soldiers know this. It makes them slightly more careful when you are watching, and slightly less careful when they think you are not. Part of your job is ensuring they never know for certain which is which.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Authority, and the Advancement Track</strong></summary>
+
+There is no citizenship requirement for this role, which creates a recurring tension. The tesserarius exercises authority over citizen soldiers in the middle of the night, in the dark, at guard posts where no officer is present to co-sign the interaction. A citizen soldier who disputes a tesserarius's authority at a guard post is technically on reasonable legal ground: the tesserarius's power is delegated, not inherent, and delegation from a citizen officer to a non-citizen officer is legally thin.
+
+In practice this tension is managed by reputation, by the watch log, and by the centurion's explicit backing. A centurion who publicly supports the tesserarius's authority makes challenges functionally impossible without direct insubordination. A centurion who is ambiguous about it, even privately, creates a vulnerability that a resentful soldier will eventually find. You know within the first week whether your centurion is giving you real authority or the appearance of it.
+
+Your natural advancement is to optio: you have the administrative skills, the disciplinary awareness, and the detailed knowledge of the unit's patterns. What you may need to acquire is the physical presence to command in daylight and in formation, which is different from the quiet authority of a night duty officer. An optio who cannot hold a briefing commands nothing; you work in a domain where silence and precision matter. The transition requires practice in a different mode.
+
+The tesserarius position gives you a specific asset that most soldiers lack: a detailed written record of who was on duty, when, and in what condition across the entire period of your service. This record is transferable as evidence of reliability. Officers reviewing candidates for promotion can read what you actually produced, not just what someone said about you.
+
+</details>
 
 <details>
 <summary><strong>DC 13 — Official patrol schedule and gate assignments</strong></summary>
@@ -300,6 +348,32 @@ The aquilifer's kit is shaped by one constraint: one hand holds the eagle, alway
 **Note on the eagle:** The *aquila* is not personal equipment. It belongs to the legion. Its weight (approximately 15 lb for the gilded bronze assembly) is the bearer's burden in the field. When secured in the *principia*, it is guarded under separate protocol and is not the aquilifer's responsibility to stand watch over personally.
 
 <details>
+<summary><strong>The Aquilifer's Daily Reality</strong></summary>
+
+You carry the legal identity of the legion. This is not a description of weight or symbol: under Roman military law, the *aquila* is the instrument that constitutes the unit as a legal entity. When the legion enters into contracts, pays soldiers, receives supplies, and sends dispatches, it does so as an institutional actor, and the institutional actor is the eagle. You are the person who makes the legal institution physically present in the world.
+
+In the field this manifests practically: you stand at a fixed position during battle, one that is carefully chosen to be visible to the maximum number of allied soldiers and minimally exposed to enemy contact. You do not advance with the assault; you do not retreat with the rearguard. You hold the center, and the unit fights around you, partly because of your safety and partly because you are the visible reference point they navigate by. When the smoke and dust of an engagement strips away every other landmark, soldiers find their position relative to where the eagle is.
+
+Between engagements the eagle is secured in a locked chamber beneath the *principia*, under guard that rotates on the standard watch schedule but is supplemented by a second guard specifically assigned to the chamber door. You hold the key to the outer chamber; the legate holds the key to the inner shrine. Both keys are required to move the eagle for non-ceremonial purposes. You attend every formal ceremony where the eagle is present. You participate in the religious rites that accompany the eagle's movement. You do not leave the fort without accounting for the eagle's secure storage.
+
+The animal pelt worn over your helmet is not decorative. It identifies you at distance as the person who must not be killed first: an enemy who kills the aquilifer and captures the eagle before the unit can recover it has destroyed the legion in Roman law. Germanic tribes know this. The pelt also places you in a specific visual category alongside the signifer: you are both marking yourselves as targets precisely because the units around you know that protecting those targets matters.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Responsibility, and the Weight of the Role</strong></summary>
+
+Citizenship is absolute for this role, and the reason is not tradition. The *aquilifer* is required to give a formal oath (*sacramentum*) specifically tied to the eagle at the time of appointment. This oath is a legally binding contract under Roman law, between the bearer and Jupiter Optimus Maximus, witnessed by the legion. A non-citizen cannot enter this legal contract in the same form. Attempting to create a workaround, such as having a citizen witness swear on the non-citizen bearer's behalf, produces an oath that the Roman legal system does not recognize as binding. The entire institutional function of the eagle rests on the oath being valid.
+
+Beyond citizenship, the appointment requires a personal financial bond. The legate holds guarantees, either land deeds, family pledges, or deposited coin, against the eagle's loss or theft. If you die and the eagle is captured, the bond is not called: you fulfilled your obligation. If you surrender the eagle or allow it to be taken without fighting to the death, the bond is called and your named beneficiaries are liable. You know this when you accept the appointment. Everyone knows this. It is why the appointment comes with the highest respect in the unit and the highest personal risk.
+
+There is no formal advancement track from aquilifer to a more senior role. The position is effectively a career endpoint for many who hold it: you serve until you retire or die, and upon retirement you receive an enhanced discharge grant reflecting the unusual nature of what you held. Some aquilifers transfer to signifer roles in larger units, leveraging their ceremonial experience and administrative visibility. A very small number, those who survived engagements where the eagle was threatened and recovered, receive direct recommendations to Rome and appointments to the imperial guard or the temple priesthoods.
+
+The soldiers around you know your name. This is not universal. Most soldiers in a garrison of 1,000 are unknown to their colleagues beyond their immediate *contubernium*. You are known because you were at the ceremony when the oath was sworn, and everyone present heard your name said aloud before the assembled unit. That name is now attached to the eagle, and every soldier who was there carries both.
+
+</details>
+
+<details>
 <summary><strong>DC 13 — This legion's history and battle honors</strong></summary>
 
 The eagle has been with this legion for generations. Its current casing dates to a repair done after a Dacian campaign forty years ago: a silversmith in Carnuntum did the work, and his mark is still on the base. Every *aquilifer* since then has known that mark by touch in the dark.
@@ -366,6 +440,32 @@ The signifer carries the *signum* in one arm in the field: a pole standard toppe
 **Note on the signum:** The *signum* belongs to the unit sub-element, not the signifer personally. Its weight (approximately 8 lb) is carried in the field. Between operations, the signifer is responsible for its safe storage or posting.
 
 <details>
+<summary><strong>The Signifer's Daily Reality</strong></summary>
+
+You are the unit's banker before you are its standard bearer. The *signum* is the visible function; the ledger is the real one. Every soldier in the unit who is not a fool has savings deposited with you, because you cannot run. A soldier who keeps his savings in his bunk risks losing them to theft, fire, or death; a soldier who deposits them with you has the legal protection of the military savings system and the practical protection of your inability to retreat while carrying the standard.
+
+The ledger records two things: savings balances and death benefits. The death benefits are the more sensitive document. Every soldier names a beneficiary when they deposit; the death benefits ledger is a list of who gets what if each soldier dies. You know, therefore, who would profit from each man's death. This information is not shared. It lives in the locked satchel and goes nowhere. Soldiers who have unusual financial arrangements, large deposits or complex beneficiary structures, you know, and you do not discuss them.
+
+Between sessions the ledger is a living document. Pay arrives from the legate's office quarterly; deductions for food, equipment maintenance, and the burial fund (*collegium funeraticium*) are taken first. What remains is recorded and available for deposit or withdrawal on the soldier's request. A soldier who wants funds for a specific purchase approaches you privately; a soldier who wants to view their balance can do so on request. Withdrawals above a threshold require you to note the purpose, not as regulation but as professional habit: a soldier who cleans out their savings before a dangerous assignment is telling you something.
+
+The banking role creates a dynamic with the unit that the standard-bearing role does not. The signum means you are known; the ledger means you are needed. Soldiers who dislike you cannot afford to make it obvious, because you hold something they want access to. Soldiers who trust you talk to you about financial pressure long before they talk to anyone else. You are, functionally, the first person to know when a soldier is in trouble.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Legal Functions, and the Advancement Track</strong></summary>
+
+The banking function of this role has real legal implications. A Roman citizen's savings deposit with a military signifer is subject to the provisions of Roman contract law: the signifer is a de facto agent of the deposit, and disputes go to Roman courts. A non-citizen soldier's deposit is legally protected under military custom rather than Roman law, which is weaker protection. This distinction rarely matters in practice but creates complexity in the event of disputed claims.
+
+The death benefits are governed by Roman law of succession. A citizen's will (*testamentum*) is legally binding if properly witnessed and filed. The signifer's role in filing the death benefits is part of this process: you provide the ledger entry as documentation of the soldier's stated wishes, and the military legal officer uses it to process the estate. A non-citizen soldier's death benefits operate under military custom, not Roman succession law, which means the beneficiary receives what the army decides they should receive rather than what the law mandates.
+
+Literacy is a prerequisite for this role not because of the ledger entries themselves, which are a simple format, but because the quarterly financial returns to the legate's office require the ability to draft documents in proper Latin that will be reviewed by the cornicularius. A document that is not in correct form is returned, which delays pay for the entire unit. This creates strong social pressure on the signifer to maintain a professional standard of Latin writing regardless of their background.
+
+Advancement from signifer goes in two directions. The combat track leads to optio if the physical and command qualifications develop: the signifer has been performing leadership-adjacent functions and the administrative skill transfers. The administrative track leads to *cornicularius* (the legate's senior scribe), where the banking experience and document handling are directly applicable. The cornicularius position is the most senior administrative post available to an enlisted soldier, carries its own pay grade, and provides access to the legate's correspondence that even senior officers do not have.
+
+</details>
+
+<details>
 <summary><strong>DC 13 — Who has savings deposited and how much</strong></summary>
 
 Twelve soldiers in this unit have active savings accounts with the *signifer*. The amounts range from a few dozen denarii (new recruits who have not had time to save) to over 200 denarii (veterans who have been on the frontier for multiple tours and have nowhere else to put it).
@@ -426,6 +526,32 @@ The cornicen's job requires breath, volume, and sustained physical output. The k
 **Not issued:** No helmet with extended cheek guards (blocks the mouthpiece). No heavy armor. No shield as standard: the *cornu* is carried over the shoulder on a leather strap between signals and requires both hands during active use, which makes a shield a management problem rather than an outright impossibility. A player who wants to carry a shield does so at the cost of time to transition between shield position and horn position; in a fast-moving engagement, this is a real tradeoff.
 
 **Note on the cornu:** The *cornu* belongs to the fort's supply. Its weight (approximately 6 lb for the curved bronze instrument) is carried on a shoulder strap. Active signaling requires both hands on the horn; during that time, the gladius is sheathed.
+
+<details>
+<summary><strong>The Cornicen's Daily Reality</strong></summary>
+
+You wake before the unit and go to sleep after it. The morning *classicum* (reveille) is sounded at first light: this is your alarm, your roster, your daily commitment that does not bend for weather, illness, or a night in which you slept two hours. The unit's day begins with your horn. If the horn is late, the watch commander notes it, the centurion notes it, and the day begins in a state of mild fault that everyone can read in your face. There is no good explanation for a late *classicum* that does not raise a question about what you were doing instead.
+
+Practice is not optional and not private. The signals must be precise: a slight error in the retreat signal during a battle produces soldiers moving the wrong direction, which produces casualties. You practice daily, at a volume that the fort has learned to hear without reacting. New soldiers flinch the first week; veterans sleep through it. The hour of practice is part of the rhythm of the posting, and its absence is more alarming than its presence.
+
+The physical demands are genuine. Sounding the *cornu* requires sustained diaphragm control that is closer to endurance exercise than music. A cornicen who sounds signals continuously for three hours during an engagement has used their body. The afternoon after a battle in which you were active is a recovery day, even if no one says so formally. Your lungs know. The centurion knows. The unofficial acknowledgment is that you are not assigned the most physically demanding fatigue duties on those days, which is the Roman military's version of recognizing that you have already contributed.
+
+Between formal signals, you are present at command briefings, not as a participant but as the person who will transmit the outcome. When the centurion says "advance at the third signal," you need to have been in the room where the plan was made. You know the plans before most of the unit does, because the signals are the plan made audible.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Guild Craft, and the Advancement Track</strong></summary>
+
+There is no citizenship requirement for this role, and the reasoning is practical: signal skill is a trained craft, and craftsmen are recruited for craft, not legal status. Non-citizen cornicenes served throughout the Roman auxiliary system and occasionally transferred to legionary units. The instrument is the qualification.
+
+What the role does require is a formal practical examination administered by an existing cornicen: you must demonstrate every standard signal pattern, including the three that vary by posting, at combat volume, without error, under observation. This examination cannot be faked. The existing cornicen has been sounding these patterns for years and will hear a mistake in the second note of the third pattern. The examination is not hostile, but it is real.
+
+The social position of the cornicen within the unit is specific: you are the person who sounds the beginning and end of everything. You announce the watch change, the meal call, the assembly, the emergency, and the retreat. This means every soldier in the fort hears your voice, in the form of the horn, multiple times daily. Your personal anonymity is low even if you are not a command figure: every soldier knows the sound of your instrument before they know your name.
+
+Advancement within the signals system moves toward the *tubicen*, who plays the straight military trumpet (*tuba*) and serves directly under the command staff rather than the centurion. The *tuba* has higher status, higher pay, and is heard at the command level rather than the unit level. The transition requires retraining: the embouchure and technique differ between instruments. Cornicenes who want to stay in signals work typically seek transfer to a larger unit where the cornicen's platform is more prominent. Cornicenes who want to exit the signals track have the administrative literacy and unit knowledge to transfer to tesserarius or clerking roles.
+
+</details>
 
 <details>
 <summary><strong>DC 13 — Roman signal vocabulary</strong></summary>
@@ -496,6 +622,32 @@ The medicus does not fight if a better option exists, but they are fully authori
 **Not issued:** No shield (prevents the free arm movement required for most medical procedures). No *pilum*. No heavy armor. The absence of heavier equipment is not a statement about courage; it is a practical decision about what will be useful in the situations this role encounters.
 
 <details>
+<summary><strong>The Medicus's Daily Reality</strong></summary>
+
+The sick parade runs every morning regardless of what happened the night before. Soldiers who report ill are examined in order of arrival; soldiers who are genuinely sick are admitted to the *valetudinarium* (the hospital building); soldiers who are sick but functional are given work assignments appropriate to their condition; soldiers who are performing illness to avoid duty are documented and returned to their centurion with a note. You make this assessment quickly, because there are usually fifteen men in the line and the centurion wants them back. The assessment has to be right: a soldier you clear who collapses during training creates a worse outcome than a soldier you excuse who was avoiding a work party.
+
+Surgery is the role's most visible function and least frequent demand. Most of what you do is wound care, fever management, digestive complaints from water quality, parasites, fractures from training accidents, and the slow cumulative damage of military life on bodies that have been marching, lifting, and fighting since their teens. A medicus on a stable frontier posting sees perhaps one major surgical case per month; in a campaign year, one per week. Between major cases, you are an administrator of human health at a population scale: tracking who is ill, what they have, whether it is spreading, and whether the pattern of illness says anything about conditions in the fort (a cluster of fever cases near the south wall water supply is a different problem from a cluster near the east barracks).
+
+The *valetudinarium* is your domain. You control admission and discharge; you allocate the limited beds; you decide whether a fever case is ordinary illness or requires quarantine. These are not administrative decisions. They are decisions about whether the fort is able to field its full strength, and the centurion needs to know the honest answer, not the comfortable one. A medicus who gives the centurion false strength reports is not being kind; they are creating a tactical liability.
+
+You also know things you are not supposed to share. What happens in the *valetudinarium* stays there: the soldier who wept through wound treatment, the officer whose injury was not from the engagement he described, the pattern of symptoms you have seen before in situations you have been told to leave alone. Professional discretion is not a courtesy. It is the reason soldiers tell you the truth.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Professional Ethics, and the Advancement Track</strong></summary>
+
+No citizenship is required, and the reason is historical: Greek medicine was better than Roman, and Greek physicians were not Roman citizens. The most skilled surgeons in the empire were typically Greek-educated, often Greek-born, and practicing under a professional ethics framework derived from Hippocratic tradition rather than Roman custom. The Roman army employed them on skill terms because the alternative was worse military medicine. This produced a recurring social anomaly: a non-citizen *medicus* whose professional judgment had formal authority over the health decisions of citizen soldiers, including officers.
+
+This authority has limits but they are clearer than most assume. A medicus can refuse treatment for a condition that lies outside their competence without penalty. A medicus can refuse to certify a soldier as fit for duty when they are not, even if a centurion requests it, and this refusal is protected by military regulation. A medicus can quarantine a soldier over the soldier's objection and over the centurion's preference if there is medical grounds for it. These are not unlimited powers but they are real ones, and they are among the few protections in the Roman military system for a non-citizen professional's judgment against a citizen officer's convenience.
+
+The professional guild dimension creates a second axis of authority. Your training was endorsed by a medical tradition that predates your military service and will outlast it. That tradition has standards: you do not perform procedures you are not trained for; you do not certify false medical conditions for coin; you do not provide information from the sick bay to political actors. Violations of these standards are a matter for the guild as well as the military, and guild censure can follow you out of military service into any subsequent civilian medical practice.
+
+Advancement in the medical track moves toward *archiatros* (chief physician) at the provincial level: managing the medical facilities of multiple forts rather than one. Beyond that, a very few outstanding physicians were recruited to Rome itself, serving the households of senators and eventually the imperial court. Marcus Aurelius maintained Greek physicians at the center of his court, paid at senatorial rates, for the practical reason that their skill was worth the status anomaly. The path from frontier *medicus* to imperial physician is long, but it is a known path, and it has been walked.
+
+</details>
+
+<details>
 <summary><strong>DC 13 — Field injuries and current patient status</strong></summary>
 
 Three soldiers are currently on the sick list: one with a festering arrow wound from a patrol engagement two weeks ago, one with fever of unknown origin, one with a broken wrist from a training accident. The fever case concerns you. Fever with this onset pattern is either ordinary illness or early-stage Antonine Plague. You are watching it.
@@ -558,6 +710,32 @@ The haruspex is a religious specialist and an officer of the divination guild, n
 **Role kit weight:** 23 lb | **Full kit with universal issue:** 40 lb. The lightest non-Flamen kit in the unit.
 
 **Not issued:** No shield; no *gladius*; no *pilum*; no thrown weapons; no heavy armor. A haruspex who needs to fight has already failed at their primary function, which is to tell the commander whether to fight, and when, and under what conditions.
+
+<details>
+<summary><strong>The Haruspex's Daily Reality</strong></summary>
+
+The morning divination takes place before any significant planned action, which means before briefings, before supply convoys depart, before patrols are dispatched. You are consulted the way a staff officer consults weather conditions: practically, as part of decision-making, not as a ritual formality. When the centurion asks "what do the signs say about today's patrol route?" they are asking for a professional assessment that will factor into operational planning. Giving a vague answer or a comfortable answer is professionally negligent in the same way a surgeon who gives a false diagnosis is negligent.
+
+The sacrifice is the primary formal method. An animal (typically a sheep or, for major decisions, an ox) is sacrificed and the organs examined in a fixed sequence: liver, gallbladder, lungs, heart, spleen, and the fatty membrane surrounding the intestines. Each organ corresponds to a domain of concern. The reading takes approximately forty minutes. The result is recorded in writing, filed with your omen log, and given verbally to the commanding officer. You are legally protected if the commander acts on your reading and the outcome is bad; you are legally exposed if you file a false reading.
+
+Bird augury is a faster method for less critical decisions: the direction, species, and flight pattern of birds observed at a specific time and place produces a reading that requires no sacrifice and can be done in the field. The tradeoff is that bird augury is more subjective and more contested: two haruspices can read the same flight differently. Your readings are your professional reputation, and professional reputation in this guild travels faster than dispatches.
+
+Between formal readings you keep an omen log: a daily record of unusual events, prodigia (events so outside the natural order they constitute official divine communications), and the results of all formal divinations. This log is filed quarterly with the legate's office and reviewed by the provincial religious authorities. What you write in it and what you omit shapes the official divine history of this fort.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, the Guild, and the Advancement Track</strong></summary>
+
+The *collegium haruspicum* is one of the oldest professional guilds in Roman practice. Its membership requirements are the guild's own, not the army's: citizenship is preferred, literacy in the technical texts is required, and the formal examination administered by guild members is the gateway. The examination covers the standard divination systems, the edge cases in the *libri haruspicini* (the reference texts), and the religious law governing what constitutes a *prodigium* requiring Senate notification. A candidate who cannot distinguish between a bad omen and an official *prodigium* is not qualified to file omen logs with Roman legal standing.
+
+The guild's semi-independence from Roman civic religion creates a useful professional buffer. A haruspex who declares an action *nefastus* (ritually forbidden) is invoking guild authority as well as personal judgment. A commander who overrides this declaration must do so in writing, which creates a document stating that the commander proceeded against divine advice. Roman commanders are not superstitious as a group, but they are legally conscious: that document can be used against them if the subsequent action fails. This is not a trivial protection for the haruspex or a trivial constraint on the commander.
+
+The temple stipend (100 denarii per year from the fort shrine fund) is separate from military pay and is subject to guild governance rather than military deduction. You are, financially, a dual employee: the legion pays you for your military function and the temple fund pays you for your priestly function. These occasionally have different demands. Resolving conflicts between military orders and guild obligations is a recurring feature of the role that you learn to navigate before you leave your first posting.
+
+Advancement within the guild runs toward senior guild positions in Rome, where the most complex divinations, Senate consultations, and imperial readings are performed. Military posting is typically early-career work: you accumulate field experience, establish your professional credibility through documented predictions, and build the omen log that constitutes your portfolio. Guild members who move to Rome bring their logs with them; the quality of the predictions, the accuracy of the readings, and the honesty of the documentation (particularly recording the occasions when you were wrong) is what senior guild members evaluate. A haruspex who only recorded successful predictions is understood to have falsified the record.
+
+</details>
 
 <details>
 <summary><strong>DC 13 — Standard divination signs and their interpretations</strong></summary>
@@ -623,6 +801,32 @@ The faber works with their hands: hammering, cutting, lifting, and assembling. T
 **Not issued:** No *linothorax* (a fire hazard in forge work). No *paludamentum* (same reason: fabric near open flame is a liability). The faber's work environment means any item that catches sparks easily is an accident waiting to happen.
 
 <details>
+<summary><strong>The Faber's Daily Reality</strong></summary>
+
+Every day begins with an inspection round. You walk the fort's perimeter, noting what has changed since yesterday: new cracks in the mortar, hinge wear on the gate fittings, evidence that the south wall's problem section has shifted further. You file a mental tally and a written note when the change is significant enough to warrant it. Most days the tally is identical to the previous day. Some days you find something that needs to move up the repair priority list. Occasionally you find something that needs to move up today.
+
+The *fabrica* is your operational base. It contains the forge, the woodworking benches, the stone-cutting equipment, and the stores of raw material that determine what repairs are possible without a supply convoy. You manage the material inventory as well as the maintenance schedule: when iron stock runs low, you file a requisition; when it runs very low, you begin deciding which repairs to defer. These decisions have consequences that are not immediately visible. The east postern hinge that gets deferred twice is not a crisis today; it is a crisis during the first sustained assault on that gate.
+
+The working parties assigned to you are soldiers pulled from the standard duty roster. They are not engineers. They have varying skill, varying willingness, and varying ability to understand why a particular repair requires doing in a specific sequence. You supervise directly: you do not hand off work that requires precision and come back to approve it. This creates a genuine constraint on how much can be done in parallel, because your personal presence is the quality control mechanism.
+
+Siege equipment is a separate discipline from maintenance. Building a *scorpio* (light bolt-thrower) or an *onager* (catapult) from raw materials is not the same skill as repairing a fort wall, though the tool knowledge overlaps. You have training in both; what you have in fort maintenance is years of experience reading a specific structure. What you have in siege work is theoretical knowledge and whatever you managed to practice before this posting.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Craft Authority, and the Advancement Track</strong></summary>
+
+No citizenship is required. The engineering skill is the criterion, and the Roman army recruited capable engineers from across the empire without regard to legal status. Non-citizen fabri served throughout the frontier garrisons, and the practical reality was that skill made formal legal status secondary in daily operations. A faber who can correctly calculate the load-bearing capacity of a wall repair is more valuable than a citizen faber who cannot.
+
+The ceiling, however, is real. The *praefectus fabrum* (chief engineer) is an officer-level appointment that requires citizenship. A non-citizen faber who advances to the practical top of the engineering hierarchy will have a citizen officer placed formally above them whose actual engineering knowledge is inferior. How this is managed depends entirely on the character of the people involved: a citizen praefectus who acknowledges the situation and trusts their faber's judgment creates a functional arrangement; one who does not creates a dangerous one where good engineering advice is filtered through someone unable to evaluate it.
+
+Your output is the most physically visible thing in the unit. The soldiers sleep behind walls you maintain; their weapons are kept in condition by your inspections; the siege equipment they rely on was built in your workshop. This visibility creates a particular form of unit reputation: soldiers do not know your name the way they know the aquilifer's, but they know when something breaks that should not have broken, and they know whose responsibility the maintenance was. A faber whose walls hold under assault has a reputation that follows them; a faber whose gate fails during a siege has a different kind of reputation.
+
+Advancement moves through *architectus militaris* (military architect, managing construction projects rather than hands-on execution) toward *praefectus fabrum* for citizens, or toward prestigious secondment for non-citizens: being assigned to a major imperial building project, a harbor construction, or the military road network. The most skilled frontier fabri were sometimes recalled to Rome for specific projects and did not return to frontier postings: the road networks that connected the empire were built by the same men who built its frontier walls, and the empire knew which ones could be trusted to do it correctly.
+
+</details>
+
+<details>
 <summary><strong>DC 13 — Current fort condition and weak sections</strong></summary>
 
 The north wall is in the best condition. The south wall has a section that was repaired poorly two years ago: the mortar is wrong for the local stone and is cracking along the joint lines. The east postern gate has a hinge assembly that will fail under sustained assault; it has been on the repair list for three months and keeps being deprioritized because it requires imported iron fittings.
@@ -683,6 +887,32 @@ The librarius spends most of their working time at a desk, but they are still a 
 **Role kit weight:** 53 lb | **Full kit with universal issue:** 70 lb. Standard for an INT 14 character with typical Strength.
 
 **Not issued:** No shield (document work requires free hands; a large oval shield becomes a liability when moving through doorways carrying materials). No heavy armor. No *pilum*. The librarius's protection against threats is primarily information: knowing what is coming before it arrives.
+
+<details>
+<summary><strong>The Librarius's Daily Reality</strong></summary>
+
+You draft, copy, file, and transmit. The monthly strength return (a count of every soldier in the unit by status: fit for duty, sick, on assignment, dead) goes to the legate's office and from there to Rome. The supply manifest records every item issued from the quartermaster. The pay ledger tracks what each soldier is owed, what deductions apply, and what was actually paid. The incoming dispatch log records every official communication received, when it arrived, and who was notified. Every document that leaves this fort under an official seal passes through your hands.
+
+The volume is significant and the accuracy is non-negotiable. A strength return that overstates the unit's combat effectiveness looks good to Rome until Rome sends orders that rely on those numbers. A pay ledger error that underpays a soldier creates a grievance; one that overpays creates a different problem when the audit catches it. The quartermaster's supply manifest and the actual inventory must align when the supply inspector visits; a discrepancy requires explanation, and "the librarius made an error" is an explanation that ends a career. You file correctly because filing incorrectly is worse than the effort to get it right.
+
+What makes the role extraordinary is what passes through your hands that is not in the filing system. Incoming dispatches are read before they are delivered: you make the copy that goes to the archive and then carry the original to the legate. In the time between reading and delivery you know what it says. You know what Rome is asking about. You know what the legate does not know yet. You know which questions have been asked and which answers are being prepared. This access is not a privilege that was explained to you: it is a structural consequence of your function, and your ability to use it depends entirely on your judgment about what to do with it.
+
+The forgery capability is not a separate function. It is the same skill applied differently: the same hand, the same knowledge of official document formats, the same access to seals and parchment. A librarius who can produce a legitimate official document can produce an indistinguishable fraudulent one. The Roman military knows this and employs librarii anyway, because the alternative is a document system maintained by people who lack the skill to do it correctly. The implicit compact is that you do not use the skill against the institution that pays you.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Document Authority, and the Advancement Track</strong></summary>
+
+Latin literacy and the ability to draft legally correct Roman documents create a de facto citizenship preference, because the Roman legal document system was designed around Roman legal categories. A non-citizen librarius filing documents that reference Roman law requires a citizen co-signer for those documents to have full legal force. In practice, senior administrative officers provided this co-signature routinely, and the non-citizen librarius operated independently, but the formal requirement existed.
+
+The more significant citizenship dimension is access. The intelligence you accumulate by handling dispatches is sensitive: what Rome knows, what Rome does not know, what is being concealed from Rome. This information in the hands of a non-citizen who has a network of contacts outside Rome is a different risk category from the same information in a citizen's hands. The Roman state understood this distinction, which is why the *cornicularius* (the senior position this role leads to) was almost always a citizen, and why the intelligence-adjacent elements of the librarius function were more carefully watched in non-citizens.
+
+Advancement follows two tracks. The administrative track leads to *cornicularius* at the legate's office: the person who manages all correspondence flowing to and from the legate, maintains the official archive, and provides continuity of institutional knowledge when the legate changes. The cornicularius is effectively the fort's permanent administrative memory, outlasting individual commanders. The intelligence track is harder to describe formally: librarii who demonstrate the judgment to handle sensitive information without exploiting it attract the attention of people in Rome who need exactly that quality. Some librarii find themselves seconded to positions that are described vaguely but that involve document work at a considerably higher level of sensitivity than the frontier posting they left.
+
+The starting denarii for this role reflect the higher pay grade, but the real value of the position is different: it is information, and information is a resource that does not appear in any financial ledger but compounds across time the same way savings compound.
+
+</details>
 
 <details>
 <summary><strong>DC 13 — What Rome's official record shows</strong></summary>
@@ -749,6 +979,32 @@ The explorator operates beyond the fort perimeter, often alone or in pairs, for 
 **Not issued:** No shield (impossible to move quietly through dense vegetation with a large oval shield; it also catches branches and announces position). No *pilum* (a patrol soldier cannot afford to throw their only polearm and leave it in an enemy who then retreats). No heavy armor. No *birrus* (the hood reduces peripheral vision in forest terrain, where the threats come from the sides and behind).
 
 <details>
+<summary><strong>The Explorator's Daily Reality</strong></summary>
+
+Most of your working hours happen outside the fort. Two-to-three day patrols are the standard assignment: you leave before dawn, move to a designated observation area, spend two days watching movement patterns, tracking activity, and maintaining contact with whatever informants operate in that zone, and return through the gate at a time calculated to avoid the watch rotation that you know creates a blind spot between the third and fourth hour. You file a verbal report within the hour of return and a written summary the following morning.
+
+The patrol is not the work; the network is. The trails you follow and the observations you make are only as valuable as the context you carry from previous contacts. An explorator who arrives at a tribal settlement without established relationships sees a village. An explorator who has spent three years building trust with specific individuals at that settlement sees a village where two families are absent who were present last month, where the supply storage building has a new lock, and where the elder's second daughter is no longer in residence. That information requires relationships. Relationships require reliability: you appear when you say you will appear, you deliver what you promise to deliver, and you do not bring soldiers with you when you said you were coming alone.
+
+Your informants are not paid agents in the formal sense. They are people who have reasons to maintain contact with you that are not primarily financial: traders who benefit from stable frontier conditions, Germanic individuals with complicated relationships to their own tribal authority, people who want something from Rome that they believe you can help them access. Understanding what each informant wants, whether they are giving you accurate information or what they believe you want to hear, and when a contact has been turned or compromised requires more continuous attention than the patrols themselves.
+
+The fort does not fully understand what you do. Officers who have never been outside the walls understand patrol as a military function (go to location, observe, return). The intelligence dimension, the relationship cultivation, the multi-year investment in specific human contacts, is largely invisible from the inside. You are useful in ways that are difficult to demonstrate in the regular format of military reporting.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Cover, and the Advancement Track</strong></summary>
+
+No citizenship requirement is one of the deliberate features of this role. An explorator who looks, sounds, and moves like the population they are gathering intelligence from is operationally more valuable than one who is visibly identifiable as Roman. Germanic-heritage soldiers from frontier provinces were preferred for this specific reason: they could move through Germanic settlements without immediate identification as Roman military personnel, which extended the range and depth of possible contact.
+
+The practical consequence of the no-citizenship requirement is that non-citizen explratores could accumulate service records and relationship networks on the frontier that were not matched by anything in their formal legal status. A non-citizen explorator who had spent ten years building tribal contacts had something the Roman army could not replace quickly, which created a form of leverage that formal citizens in administrative roles rarely had. The army knew what you were worth; the question was whether it would acknowledge it in formal terms.
+
+Honorable discharge from frontier service normally produced citizenship for a non-citizen soldier. For an explorator, this could happen through the standard 25-year service path, or through the commendationes system if specific valuable intelligence contributions were recognized by name. A named recommendation from the legate, confirming that the explorator's intelligence had materially contributed to a military outcome, would be filed with the provincial governor and could be used to petition for accelerated citizenship. The petition had to be approved by Rome, which took time and was not guaranteed, but it was a realistic path for someone with the right service record.
+
+Advancement to *speculatores* (the elite military intelligence force, triple wages, direct imperial authority) was the prestigious track. The *speculatores* answered to the emperor through the *Princeps Peregrinorum* and were assigned to operations that the regular frontier intelligence system was not built to handle. Transfer required a security examination, a formal recommendation, and demonstrated field intelligence success that was specific and verifiable, not vague claims about general service. The examination was conducted by people from Rome who had never been to the frontier and who evaluated candidates against criteria developed by people who had also never been to the frontier. Navigating this gap was part of the challenge.
+
+</details>
+
+<details>
 <summary><strong>DC 13 — Current Germanic movement patterns</strong></summary>
 
 Three groups have been moving in the region in the past two weeks. One is a trade party moving along the recognized eastern route: approximately forty people, mixed goods, no weapons visible on the outriders. One is a hunting group of twelve that has been in the same area for four days, which is two days longer than the local game patterns justify. One is a party of unknown size whose tracks you found but lost at the river crossing two days ago.
@@ -811,6 +1067,32 @@ The frumentarius's cover is a supply officer. The kit must look like a supply of
 **Role kit weight:** 44-45 lb depending on cloak | **Full kit with universal issue:** 61-62 lb. Unremarkable in both directions.
 
 **Not issued:** Nothing unusual. Deliberately. The frumentarius's kit is specifically designed to produce no observations.
+
+<details>
+<summary><strong>The Frumentarius's Daily Reality</strong></summary>
+
+Your official function is supply oversight: you manage the grain manifests, coordinate convoy scheduling, and liaise with the quartermaster on stock levels. This is real work and it is done correctly, because a frumentarius whose cover is a supply officer who does not actually manage supply is a frumentarius who has failed at the most basic element of their function. The supply manifests are always up to date. The convoys leave on schedule. The quartermaster knows you by sight and by the efficiency with which your paperwork arrives.
+
+The intelligence work happens in the margins of the supply function. The routes you travel to coordinate convoys pass through the civilian settlement, the local villages, and the supply depot two days' march away. At each location you observe: who is in correspondence with whom, whose behavior has changed, whose financial situation has shifted, what soldiers are doing with their off-hours that they do not report. None of this requires special action. It requires attention, which you maintain continuously, and the discipline to note only what is significant rather than everything you observe.
+
+Your reports to Rome travel separately from the official military dispatch. You have a courier contact, a specific individual who appears as a commercial traveler, who collects your sealed messages on an irregular schedule designed to avoid pattern recognition. The messages are encrypted using a cipher you were given at the start of your posting. If the courier fails to appear for three consecutive scheduled contacts, you have a contingency route that involves a commercial contact in the civilian settlement. You have never needed the contingency. You check for it anyway.
+
+The social environment you operate in is one where everyone around you is aware, at some level, that you have a secondary function. Soldiers do not discuss this openly and do not accuse you directly, but they are careful in ways that the presence of ordinary supply officers does not produce. This awareness makes your work both easier and harder: easier because overt suspicious behavior is suppressed; harder because the people you most need to observe have adjusted their behavior around your presence. The genuinely compromised soldier has had months to learn how to act normal around you. What you are looking for is the thing that normal people do not think to conceal because it has not occurred to them that it matters.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Imperial Authority, and the Advancement Track</strong></summary>
+
+Citizenship is required, and the reason is the nature of what you report. Your dispatches go to the *Princeps Peregrinorum*, the head of imperial intelligence, and are accessible to the emperor's household. A non-citizen filing intelligence reports about Roman military officers to the imperial court is a legally anomalous actor in the system: their testimony has a different weight in any subsequent proceeding, their appointment could be challenged, and their exposure, if discovered, leaves them without the legal protections that a citizen intelligence officer would have. The citizenship requirement is self-protection as much as institutional standard.
+
+The classified allowance (beyond your military pay, source and amount undisclosed) is a practical acknowledgment that intelligence work has costs that official military budgets do not cover: bribes, gifts to informants, civilian cover expenses, and the maintenance of a lifestyle that is neither conspicuously poor nor conspicuously wealthy. The allowance is paid through a mechanism that does not appear in any document the centurion or legate can access. It represents a financial relationship with Rome that is independent of your military chain of command.
+
+This independence is the most legally complicated element of your position. Corvinus did not appoint you and cannot formally remove you. He outranks you in the military hierarchy; he does not control you in the intelligence hierarchy. How this tension is managed depends on whether the legate is aware of it and whether he has chosen to acknowledge it. A legate who pretends the frumentarii do not have independent authority is easier to work around; one who directly confronts the dual-authority structure creates complications that require guidance from Rome to resolve.
+
+Advancement within the intelligence system is opaque by design. Recognition comes as expanded authority or improved posting rather than formal promotion: a frumentarius who successfully documents a significant loyalty issue may find their next posting is more sensitive, their travel range expanded, their courier contact more responsive. The most successful frumentarii eventually work from Rome, analyzing intelligence rather than collecting it, coordinating field agents rather than being one. This is described as a comfortable outcome. Whether it is depends on what drew you to the role in the first place.
+
+</details>
 
 <details>
 <summary><strong>DM: Show this section to the Frumentarius player privately at Session 0</strong></summary>
@@ -891,6 +1173,32 @@ The sacerdos is both a shrine keeper and a soldier. The kit is split between cer
 **Not issued:** No shield; no *gladius*; no *pilum*; no heavy armor. The sacerdos can requisition standard soldier kit from the armory if placed in combat conditions, but the default issue reflects the primary function of the role. A sacerdos in full *segmentata* conducting a burial rite is sending the wrong message to both the living and the dead.
 
 <details>
+<summary><strong>The Sacerdos's Daily Reality</strong></summary>
+
+The morning rite is brief: ten minutes at the shrine before the day's duties begin, with any soldier who chooses to attend. You do not require attendance; you do not record who comes. The rite observes the correct form, addresses the relevant deities for the day of the week and position in the festival calendar, and closes. Soldiers who attend regularly do so because they find it useful, not because you have made it compulsory. The ones who attend in silence every morning without fail are worth knowing.
+
+The festival calendar is your administrative framework. You know six months in advance which days require full sacrifice, which require formal observance, and which require only a note in the omen log confirming observance was performed. Supply requests for sacrificial animals go through the quartermaster two weeks ahead of need. If the quartermaster fails to provide, you document the failure, improvise where possible, and flag the omission in your log. Missed festivals have consequences that may not be immediate but are real: you know which ones matter most and which ones the gods are likely to forgive.
+
+Burials are the role's most personally demanding function. When a soldier dies you perform the last rites: the specific prayers that ensure the dead do not become *lemures* (restless spirits that harm the living). These prayers have a correct form and a correct timing; performed incorrectly or out of time, the burial is in question. On a stable frontier, you have time to do this correctly. In a campaign, you may be performing last rites under fire, in the dark, on a schedule that does not match the requirements. You know what to do when the conditions are wrong, because they are sometimes wrong, and the alternative to improvising correctly is not performing the rite at all.
+
+The shrine also serves as a point of social contact that no other role occupies. Soldiers who have questions about divine matters, private prayers they do not want to speak aloud, or situations they cannot bring to the centurion or the medicus come to the shrine and find you there. You listen. You do not carry what is said there to other roles. This is not stated policy; it is understood, and the understanding is what makes people willing to come.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Religious Authority, and the Advancement Track</strong></summary>
+
+No citizenship is technically required, but in practice the documentation functions of this role create a strong preference. The formal festival observance records carry Roman legal standing: a fort that has documented all required observances is legally protected against claims of religious negligence; a fort whose records have gaps is exposed. The sacerdos who maintains these records needs enough familiarity with Roman legal document standards to produce records that will hold up to inspection. Non-citizens can do this with training; it is simply less natural.
+
+The significant citizenship consideration is *prodigia* reporting. If a *prodigium* (an event so outside the natural order it requires Senate notification) occurs, the sacerdos files the initial report. This report is a legal document with Roman legal standing. It initiates a process that involves the Senate and potentially the emperor. A non-citizen filing such a report has it received by Rome but its legal weight is slightly different from a citizen's filing. Whether this matters depends on whether anyone wants to contest the filing.
+
+The intersection with the citizenship campaign goal is direct. A sacerdos who performs their religious duties correctly, files clean records, and reports accurately is building a documented service record that is directly useful for a commendatio application. The legate's endorsement of a soldier for citizenship elevation is more likely if there is a clean paper trail of professional conduct, and the sacerdos's work is, by definition, heavily documented.
+
+Advancement follows two paths. The military path leads to larger religious responsibilities: a provincial capital has more complex religious administration than a frontier fort, more festivals, more shrines, more political sensitivity. The civilian path, upon discharge, leads to the priestly colleges in Rome or provincial centers: a soldier-priest with documented military religious service and a clean omen log is a credible candidate for civilian priestly appointments that draw on the same skills. The military service is not a detour from a religious career; it is a credential for one.
+
+</details>
+
+<details>
 <summary><strong>DC 13 — Ritual calendar for a frontier posting</strong></summary>
 
 A frontier fort observes a modified calendar: the major festivals are maintained (you cannot practically observe every Roman religious obligation in the field), while local variations accommodate the frontier context. The festivals most relevant to this posting are the *Armilustrium* (October 19, purification of weapons before campaign season ends), the *Quinquatria* (March 19-23, Mars's main festival), and the *Lemuria* (May 9, 11, 13, for the restless dead).
@@ -951,6 +1259,32 @@ The Flamen Martialis is technically a civilian religious appointment. They recei
 **Role kit weight:** 20 lb | **Full kit with universal issue:** 37 lb. The frontier cult doctrine frames this deliberate lightness as a statement: the Flamen Martialis is protected by Mars, not by iron. Whether that is comforting depends on how well the campaign is going.
 
 **Not issued:** No military-issue armor; no shield; no standard legionary weapons. The entire kit is personal property, and the deliberate rejection of standard military protection is a theological position, not an oversight.
+
+<details>
+<summary><strong>The Flamen Martialis's Daily Reality</strong></summary>
+
+Your appointment is technically civilian. The Roman army does not pay you; the legate's personal patronage does, channeled through the temple fund that Corvinus controls and maintains separately from military finances. You are present at this fort because the frontier cult of Mars Ultor requires a *Flamen* at a posting with active divine attention, and this posting has had active divine attention for some time. The previous *Flamen* left. You are not told exactly why, and the way no one discusses it tells you that the answer is available if you ask the right questions in the right sequence.
+
+The frontier Mars cult observes rites that are not in the official Roman religious calendar and that the sacerdos does not perform. The distinction matters: the sacerdos maintains Rome's official divine relationship with the garrison; you maintain a different relationship, older and more specific, between the men who fight at this particular edge of the world and the god who claims sovereignty over it. These functions do not conflict. They address different divine categories. The sacerdos handles the administrative religion; you handle the religion that does not have an administrative form.
+
+The *hasta* (the spear) is both your weapon and your principal ritual instrument. The oldest Mars rites involve the spear before the sword, and the *ancilia* ceremonies, in their most primitive form, are about weapons rather than armor. You know the formal sequence of the rites. You know which parts of the sequence have been lost and which survive in forms that are slightly corrupted from the original. What you hold together in your practice is a transmission of something that has no written text because the writing down of it was itself considered a ritual error.
+
+You feel Mars. This is not metaphor and it is not described in your class abilities. It is a specific awareness of divine attention, distinct from ordinary religious feeling, that you have had since your initial consecration. When Mars is present in a scene, you know it differently from how a priest knows that their god is present: it is more like a physical orientation, a directional sense of where the divine attention is focused. The DM tells you when this occurs. You do not tell the party how you know.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, the Frontier Cult, and the Nature of This Role</strong></summary>
+
+Free-born citizen, no exception. The frontier cult of Mars Ultor is theologically explicit about this: the Flamen represents Rome's interest in the liminal space, and Rome's interest requires Rome's legal person. A non-citizen Flamen Martialis would be representing something else, perhaps something older and less controlled, and the frontier cult doctrine considers this dangerous in specific terms that the DC 17 gate explains.
+
+The legal isolation of your position creates a specific vulnerability. You have no formal military rank, which means the rights that military rank provides, including the legal protections of *provocatio* (appeal to the emperor against a death sentence), apply to you in your civilian capacity but not through military channels. A military officer who wants to move against you formally cannot use military law to do so; they must use civilian law, which requires bringing the case to a civilian magistrate. In practice, on a frontier posting far from civilian courts, this distinction is theoretical. The protection is Corvinus's personal patronage, which is real protection until it is not.
+
+The commendationes system applies to you in a modified form. You cannot be elevated through military channels since you hold no military rank. But the legate can write a character endorsement that is filed with the provincial governor and used in civilian contexts, and the documentation of genuine divine service, correctly performed and recorded, is taken seriously by the priestly colleges in Rome when considering appointments. A Flamen Martialis who has served at a frontier posting where Mars was demonstrably present is a candidate for positions that require documented experience with the divine in a military context.
+
+There is no formal advancement track. You serve here until the posting ends, until the cult's requirements change, or until you choose to leave. What happens after is entirely determined by what you did and how it is documented. The frontier cult has no Rome-based hierarchy that recognizes you; the official flamines of Mars in Rome practice a different cult and will be politely skeptical of your credentials. The reputation that matters is among the soldiers who were at this fort and who will carry what they saw with them when they leave.
+
+</details>
 
 <details>
 <summary><strong>DC 13 — Mars's two faces</strong></summary>
@@ -1018,6 +1352,32 @@ The capsarius runs toward casualties while the rest of the unit is still fightin
 **Not issued:** No shield (prevents the rapid position changes required when working over a casualty). No *pilum*. No heavy armor. The capsarius's protection is speed and the battlefield convention that killing the medic first is bad practice. Roman armies generally observe this. Germanic tribes are less consistent.
 
 <details>
+<summary><strong>The Capsarius's Daily Reality</strong></summary>
+
+You run toward the casualty while the fighting is still happening. This is the entire role, expressed in one sentence. Every other element of what you do, the morning medical inventory, the bandage stocks, the study under the medicus, the herbalism, is preparation for the moment when someone goes down in a place where the medicus cannot reach them yet and you can.
+
+The *capsa* is always on your body during operations. Its weight (approximately four kilograms fully stocked) is part of your normal physical experience. You know when a bandage roll was used and not replaced because the weight is wrong. You check it before every patrol and after every engagement, because an empty capsa in the field is not a problem you discover at the moment you need it.
+
+Triage is the cognitive skill that separates competent capsarii from excellent ones. After an engagement, there are typically more casualties than you can treat simultaneously, which means you make decisions in real time about who receives attention first. The calculus is not kindness: it is survivability and urgency. A soldier with a severe wound who has already lost too much blood before you reach them is not your first priority; a soldier with a serious but manageable wound who is losing blood now is. The medicus taught you how to make this assessment quickly. You have practiced it in training. In the field, you make it faster, because the time you spend thinking is time the manageable wound is becoming the severe one.
+
+The unit knows you differently from how it knows the medicus. The medicus is the authority; you are the first responder. Soldiers who have been treated by you in the field carry that experience differently from soldiers who have been treated in the *valetudinarium*: they know what your hands feel like when they are trying to save someone's life. This creates a specific bond that the role's other functions do not produce. Some soldiers will approach you before they approach the medicus, not for medical reasons but because the trust established in a field situation is more personal than anything that happens in the hospital.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, the Medic Compact, and the Advancement Track</strong></summary>
+
+No citizenship requirement. The role demands physical courage and medical competence; legal status adds nothing to either. Non-citizen capsarii served throughout the frontier forces, and the implicit battlefield compact, that you do not kill the medic and the medic treats everyone who needs treating without regard to faction, extended across the frontier in practice if not in Roman military law.
+
+The battlefield compact is real but informal. Roman soldiers generally did not target Germanic medics and Germanic forces generally did not target Roman capsarii, not because of any written agreement but because both sides had learned that the alternative produced worse outcomes for both. This convention held imperfectly: Germanic forces were less consistent than Roman ones in observing it, particularly in raids and ambushes where the compact's social enforcement mechanism (other soldiers' reputation for observing it) broke down. You know this. It changes how you move during an engagement.
+
+You are subordinate to the medicus in medical authority: they set protocol, determine treatment standards, and approve your practices. This is not a social hierarchy; it is a professional one, and it functions because the medicus is more trained, not because they outrank you. A capsarius who has found a treatment the medicus has not encountered brings it to the medicus rather than implementing it independently. The bog rosemary discovery is the correct example: you found it, it works, and the right next step is telling the medicus, not administering it broadly without their knowledge.
+
+Advancement from capsarius to medicus is a formal track. The medicus evaluates your practical competence through observation; you study the texts they assign and ask questions they can evaluate. When they judge you ready, they endorse you for the formal medical examination, administered by a senior medical officer at the provincial level. The examination covers surgical technique, pharmacology, triage, and plague differential. Passing it means a pay grade increase and a change in title. What does not change immediately is the relationship with the unit, which takes time to rebuild on new terms.
+
+</details>
+
+<details>
 <summary><strong>DC 13 — Standard wound care and triage decisions</strong></summary>
 
 The immediate priority after a combat engagement is not the most badly wounded: it is the most salvageable. A soldier who has lost too much blood before you reached him is not a triage priority; a soldier who has a manageable wound and shock is. You make this calculation in seconds, because you have made it before, and you know the specific signs.
@@ -1083,6 +1443,32 @@ The custos armorum manages the armory and has access to the best-maintained equi
 **Not issued:** No *pilum* as standard assignment. The custos armorum issues them to others; their own combat role is fort defense, not field engagement. No unusual weapons, despite having access to all of them: maintaining a reliable inventory requires that the record not have unexplained gaps, and the weapons keeper taking things from their own stock for personal use is the scenario they are specifically employed to prevent.
 
 **Class substitution:** *Lorica Segmentata* requires heavy armor proficiency (Fighter, Paladin, War/Forge Cleric). Without it, substitute *Lorica Hamata*. The irony of a weapons keeper in substandard armor is noted in-world; a Ranger or Rogue custos armorum explains this with their preferred combat style, and the explanation is accepted.
+
+<details>
+<summary><strong>The Custos Armorum's Daily Reality</strong></summary>
+
+Every weapon in the fort is your responsibility. This is not a figure of speech. When a gladius is issued, you sign the issue record; when it is returned, you sign the return record and inspect the condition. When a *pilum* comes back bent past the point of repair, you condemn it, record the condemnation, and move it to the condemned stock pile. When a soldier reports that their lorica segmentata has a damaged plate, you assess, decide whether it requires the faber or can be handled in the armory, and create the maintenance record. At any point, if the camp prefect wants to know the exact state of the unit's weapons and armor, you can tell them, accurately, within a margin that requires an hour of cross-checking the logs.
+
+The armory key is the most important physical object in your possession. It is on your person at all times you are not sleeping; while sleeping, it is on a cord around your neck or within arm's reach. The armory contains weapons. Weapons in the wrong hands during the night are a specific category of catastrophe that Roman military security is designed to prevent, and the single physical safeguard against it is the key and the person who holds it. You do not lend it. You do not leave it at a duty station. If you are incapacitated, the protocol for accessing the armory without the key involves the centurion, the optio, and a formal record of emergency access. You know the protocol.
+
+The inspection discipline is the role's daily texture. Eighty sets of lorica segmentata, sixty-four gladii in service condition, twenty-two scuta ready for deployment. Each piece of equipment has a standard. The standard is not cosmetic: a sword that looks sharp but has wrong edge geometry will chip under hard use; a shield that looks solid but has a crack in the boss layer will fail under a direct blow. You know the difference. The soldiers often do not, which is why the inspection exists.
+
+The condemned stock is a specific management problem. Condemned weapons are weapons that have been pulled from service but not yet disposed of: broken shafts, blades past useful resharpening, plates that have failed past repair. Condemned stock that sits in the armory for too long becomes a storage problem and, more seriously, a temptation: iron is valuable, and condemned pilum heads are small and heavy and easy to move without being noticed. You track condemned stock with the same attention you track service stock, for exactly this reason.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, Accountability, and the Advancement Track</strong></summary>
+
+No citizenship is formally required, but the background check by the frumentarius is standard and it is not cursory. The armory is the fort's weapons reserve; its security is a direct function of the fort's ability to defend itself. A custos armorum whose loyalty is uncertain, whose external contacts are unaccounted for, or whose financial situation is irregular is a risk that the frumentarius will document and the centurion will act on. The check is conducted the same way for citizens and non-citizens, but the threshold for "uncertain" is somewhat lower for non-citizens in practice.
+
+The irony of full access producing the most careful record-keeping is structural. A custos armorum who wanted to profit from armory access could do so. The temptation exists and is not small: weapons are valuable, and there is a black market in military-grade iron throughout the frontier. But every removal leaves a trace in the log, and a log that does not balance is an automatic investigation. The role's culture consequently selects for meticulous people who understand that their integrity is demonstrated through the quality of the record, not through their statements about their own honesty.
+
+Citizens and non-citizens in this role face the same accountability mechanism: the log. What the log shows is independent of legal status. A citizen custos armorum with a clean log and a non-citizen with a clean log are treated identically by the inspection process. This makes the role somewhat more meritocratic than most, within the narrow domain of what the log measures.
+
+Advancement moves through the logistics track toward *praefectus armorum* (weapons depot commander) at the provincial level, overseeing multiple armories rather than one. The most skilled custos armorum were sometimes recruited to the imperial *fabricae* (arms factories), traveling between facilities and conducting quality inspections of production. This was a prestigious civilian appointment that paid better than frontier military service and used exactly the same skills. Upon discharge from military service, the documented record of armory management was also useful for civilian roles as a merchant's goods-keeper, warehouse manager, or estate administrator, where the ability to maintain accurate inventory records under accountability was directly valued.
+
+</details>
 
 <details>
 <summary><strong>DC 12 — Current armory contents</strong></summary>
