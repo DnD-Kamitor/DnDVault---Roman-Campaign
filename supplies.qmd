@@ -13,8 +13,12 @@ Prices vary dramatically by region. Use this table as a guide.
 | Iron *gladius* (standard issue) | 15 | 20 | 50 or unavailable | Cheaper in Rome near the smiths |
 | *Lorica segmentata* (segmented armor) | 40 | 60 | Not available | Repair possible anywhere with iron |
 | Leather armor | 10 | 12 | 8 | Germanic craftsmen make decent hide armor |
-| Shield (legionary *scutum*) | 8 | 10 | Not available | Germanic round shields: 5 denarii |
+| Shield (*scutum*, tower) | 8 | 10 | Not available | Germanic round shields (*parma*): 5 d |
+| Shield (*clipeus*, round) | 5 | 7 | 5 | Cavalry issue; also sold by Germanic traders |
+| Siege Pavise | 4 | 5 | Not available | Rufus can build one from timber in 2 hours |
 | *Pilum* (heavy javelin) | 3 | 4 | Not available | Camp smiths can produce crude versions for 6d |
+| *Arcus Compositus* (composite bow) | 30 | 60 | Not available | Eastern auxiliary surplus; rare at Vindolanda |
+| *Arcuballista* (hand crossbow, military) | — | Crafted only | Not available | Rufus assembles at Camp Level 2 |
 | Olive oil (1 amphora) | 8 | 18 | Not available | Essential for cooking, cleaning, lighting |
 | Wine (1 amphora, common) | 5 | 14 | Not available | Officers' wine: 20-30d per amphora at Vindolanda |
 | Wheat (1 month's ration) | 3 | 5 | Foraged only | Barley available from Germanic traders: 3d |
@@ -77,6 +81,285 @@ The convoy is not just logistics. It carries letters from home, replacement pers
 | S3 | No convoy reaches the forest party | The party relies on Vercingetorix's tribe for food; this creates an obligation the DM can use |
 | S4 | Rome has everything; access is the problem, not supply | Social currency replaces material currency; what you can get depends on who you know |
 | S5 | The divine arena provides nothing | Mars offers the arena weapons (Handout 11); everything else the party carries is what they brought |
+
+---
+
+## Vindolanda Equipment Catalog
+
+*Everything available at Fort Vindolanda, organized by category. Prices in denarii. Availability reflects campaign start (Session 1); Camp Level upgrades shift some items as noted.*
+
+### Availability Key
+
+| Code | Meaning |
+|---|---|
+| **In stock** | Available now from the relevant source. No wait time. |
+| **Limited** | Available but tracked; quantity listed. Restocked only by convoy or party action. |
+| **Order** | Must wait for next convoy (4-6 weeks) or arrange special sourcing. |
+| **Crafted** | Rufus can make it given materials and time. |
+| **Black market** | Not official stock. Sigrun, *vicus* contacts, or captured goods only. |
+| **Unavailable** | Not at Vindolanda currently at any price. |
+
+Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` for upgrade effects.
+
+---
+
+### Weapons
+
+#### Melee Weapons
+
+| Weapon | Price (d) | Availability | Notes |
+|---|---|---|---|
+| *Gladius*, standard | 20 | In stock | Armory or purchase; basic grade |
+| *Gladius*, quality (Rufus-made) | 30 | Limited (4) | Better edge retention; Rufus's personal work |
+| *Pugio* (military dagger) | 10 | In stock | Standard issue; can be requisitioned |
+| *Spatha* (cavalry sword) | 25 | Limited (8) | Cavalry auxiliary issue; 8 in stock |
+| *Hasta* (infantry spear) | 4 | In stock | Auxiliary supply; 20+ in armory |
+| *Dolabra* (military pick) | 6 | In stock | Required equipment; every legionary should carry one |
+| *Vitis* (vine staff) | 1 | Crafted | Rufus cuts to order; centurion rank required to carry |
+| *Fustis* (wooden club) | Free | Crafted | Any timber; woodpile at the *fabrica* |
+| *Contus/Kontos* (heavy lance) | 45 | Order | Heavy cavalry weapon; none in current stock |
+| *Falx* (Dacian blade) | 15 | Black market | Illegal without written authorization |
+| Net (*Rete*) | 2 | Order | Not standard issue; gladiatorial supply via Carnuntum |
+| *Framea* (Germanic spear-javelin) | 4 | Black market | Sigrun trades these; captured stock |
+| *Seax* (Germanic blade) | 8 | Black market | Captured or traded; no official source |
+
+#### Thrown Weapons
+
+| Weapon | Price (d) | Availability | Notes |
+|---|---|---|---|
+| Heavy *Pilum* | 4 | Limited (80) | Armory; Quartermaster sign-out |
+| Light *Pilum* | 3 | Limited (120) | Armory; Quartermaster sign-out |
+| *Plumbata* × 5 | 1 | In stock (200) | Standard; no sign-out required |
+| *Verutum* | 1 | Limited (200) | Armory; Quartermaster sign-out |
+| *Lancea* (cavalry javelin) | 5 | Limited (40) | Cavalry issue; armory sign-out |
+| *Francisca* (throwing axe) × 3 | 10 | Black market | Captured Germanic stock; irregular supply |
+| *Angon* (barbed spear) | 12 | Black market | Scarce; usually field-captured |
+
+#### Ranged Weapons
+
+| Weapon | Price (d) | Availability | Notes |
+|---|---|---|---|
+| Sling (*Funda*) | 3 | In stock (10) | Simple braided leather; soldiers improvise their own |
+| Shortbow | 25 | Order | Not common on this frontier; any bowyer on convoy route |
+| *Arcus Compositus* (composite bow) | 60 | Black market | Eastern auxiliary surplus; Sigrun can source at Camp Level 2 |
+| *Arcuballista*, wall-mounted | Fort asset | In stock (2) | Operational on the walls; not personal equipment |
+| *Arcuballista*, hand-carried | Materials + 10 d | Crafted (Camp L2) | Rufus assembles from ordered parts; takes 3 days |
+
+---
+
+### Shields
+
+| Shield | Price (d) | Availability | Notes |
+|---|---|---|---|
+| *Scutum* (legionary tower shield) | 10 | In stock (22) | 22 serviceable; 6 awaiting repair |
+| *Clipeus* (auxiliary round shield) | 7 | Limited (15) | Cavalry issue; 15 in stock |
+| *Parma* (Germanic round shield) | 5 | Black market | Captured or traded; not official issue |
+| Siege Pavise | 5 | Crafted | Rufus builds from timber in 2 hours; no parts order required |
+
+---
+
+### Armor
+
+#### Body Armor
+
+| Armor | Price (d) | Availability | Notes |
+|---|---|---|---|
+| *Lorica Segmentata* | 60 | Limited (12) | 12 complete sets; 8 in repair. Officer requisition required |
+| *Lorica Hamata* (chainmail) | 30 | In stock | Most common auxiliary armor; 30+ sets in various condition |
+| *Lorica Squamata* (scale) | 20 | Limited (15) | 15 sets; favored by watch officers and cavalry |
+| *Linothorax* (layered linen) | 15 | Order | Not standard legionary issue; officers and tradition-keepers |
+| Hide/leather armor | 12 | In stock | Produced locally; Germanic craftsmen also sell |
+
+#### Helmets
+
+| Helmet | Price (d) | Availability | Notes |
+|---|---|---|---|
+| *Galea Coolus* (standard iron) | 10 | In stock (80+) | Most common helmet at the fort |
+| *Galea Attica* (open-face) | 15 | Limited (20) | 20 in stock; officers and cavalry preferred |
+| Centurion's *Galea* (transverse crest) | 25 | Limited (5) | Rank confirmation from Corvinus required |
+| *Spangenhelm* (Germanic riveted) | 12 | Limited (10) | Germanic-heritage auxiliaries; 10 in stock |
+| *Aventail* (mail neck curtain) | 8 | Order | Attaches to *Spangenhelm*; Rhine workshops, 4-week lead |
+
+#### Arms, Gloves, and Protection
+
+| Item | Price (d) | Availability | Notes |
+|---|---|---|---|
+| Leather gauntlets (standard) | 2 | In stock | Cavalry and engineer standard issue |
+| *Manica* (articulated arm guard) | 20 | Crafted | Rufus makes these; 2-day lead time, requires iron stock |
+
+#### Cloaks
+
+| Cloak | Price (d) | Availability | Notes |
+|---|---|---|---|
+| *Sagum* (military wool) | 5 | In stock | Standard issue; dark red or undyed |
+| *Birrus* (hooded traveling cloak) | 8 | In stock | Locally made; universal at Vindolanda |
+| *Paludamentum* (scarlet command cloak) | 35 | Limited (3) | Officers' stores; rank verification required |
+
+#### Boots and Belt
+
+| Item | Price (d) | Availability | Notes |
+|---|---|---|---|
+| *Caligae* (hobnailed military sandal) | 5 | In stock | Standard issue |
+| Military boots (enclosed leather) | 8 | In stock | Officers, cavalry, cold-weather standard |
+| *Cingulum Militare*, standard | 5 | In stock | Standard issue; bronze fittings |
+| *Cingulum*, officer grade | 15 | Limited (8) | Brass and silver fittings; marks seniority |
+
+---
+
+### Ammunition
+
+Full availability tracking in `roman_tactics.qmd`. Summary at Vindolanda, Session 1 start:
+
+| Ammunition | Price | In stock | Quartermaster required? |
+|---|---|---|---|
+| Stone (sling) | Free | Unlimited | No |
+| *Glandes* (lead shot) × 20 | 1 d | 200 | Yes |
+| Whistling glandes × 20 | 1.5 d | 80 | Yes |
+| Inscribed lead × 20 | 1 d | 60 | Yes |
+| Terracotta shot × 20 | 1 d | Craftable (1 hr) | No |
+| Clay incendiary × 10 | 2 d | 40 | Yes |
+| Standard arrows × 20 | 1 d | 400+ | Yes |
+| Bodkin arrows × 20 | 5 d | 300 | Yes |
+| Broadhead arrows × 20 | 6 d | 150 | Yes |
+| Fire arrows × 10 | 2 d | 60 | Yes |
+| Trilobate arrows × 20 | 8 d | 80 | Yes |
+| Barbed arrows × 20 | 7 d | 100 | Yes |
+| *Scythicon* poison arrows × 10 | 20 d | 0 (black market) | Sigrun only |
+| *Arcuballista* bolts × 10 | 2 d | 100 | Yes |
+| Heavy *pilum* (each) | 4 d | 80 | Yes |
+| Light *pilum* (each) | 3 d | 120 | Yes |
+| *Plumbata* × 5 | 1 d | 200 | No |
+| *Verutum* (each) | 1 d | 200 | Yes |
+| *Lancea* (each) | 5 d | 40 | Yes |
+
+---
+
+### Tools and Kits
+
+| Item | Price (d) | Availability | Notes |
+|---|---|---|---|
+| Smith's Tools | 20 | In stock | *Fabrica* has spare sets; Rufus controls access |
+| Mason's Tools | 15 | In stock | Standard construction kit; *fabrica* stores |
+| Carpenter's Tools | 12 | In stock | Available without officer approval |
+| Leatherworker's Tools | 10 | In stock | Common; cobbler and saddler supply |
+| Healer's Kit (10 uses) | 5 | Limited (8) | *Medicus* controls stock |
+| Herbalist Kit | 8 | Limited (3) | *Medicus* stock; Valeria in *vicus* can also supply |
+| Calligrapher's Supplies | 8 | In stock | *Librarius* stores |
+| Forgery Kit | 20 | Black market | Not official stock; *vicus* contacts or Sigrun |
+| Cartographer's Tools | 15 | Order | Not standard issue; special order from Carnuntum |
+| Tinker's Tools | 12 | In stock | Mechanical repair; *fabrica* standard |
+| Alchemist's Supplies | 25 | Order | Not stocked; Valeria has partial kit at Camp Level 2 |
+| Thieves' Tools | 15 | Black market | Not official; *vicus* or Sigrun |
+
+---
+
+### Field Consumables
+
+| Item | Price | Availability | Notes |
+|---|---|---|---|
+| Rations, standard (1 day) | 2 s (sesterces) | In stock | Granary; Quartus issues without paperwork |
+| Rations, preserved (1 day) | 1 d | Limited | Hard tack and salt pork; patrols beyond 3 days |
+| Waterskin | 2 d | In stock | Standard issue |
+| Torch × 10 | 1 d | In stock | Pine pitch; plentiful |
+| Lantern (hooded) | 8 d | Limited (10) | Officers and watch standard |
+| Oil, lantern (1 pint) | 1 d | In stock | Tracked |
+| Rope, hemp (50 ft) | 3 d | In stock | Standard issue |
+| Rope, silk (50 ft) | 25 d | Order | From Alexandria via Rhine; 6-week lead |
+| Grappling hook | 5 d | In stock | Iron; standard engineering kit |
+| Wax tablet | 2 d | In stock | Standard writing tool |
+| Stylus (bronze) | 1 d | In stock | Standard |
+| Papyrus (10 sheets) | 4 d | Limited | Fragile in wet conditions |
+| Ink (1 vial) | 2 d | Limited | Carbon ink; lasts 30 days open |
+| Bedroll (military wool) | 3 d | In stock | Standard issue |
+| Mess kit (bowl, cup, utensil) | 2 d | In stock | Standard issue |
+| Tinder box (flint and steel) | 2 d | In stock | Standard kit |
+| Crowbar | 3 d | In stock | *Fabrica* standard |
+| Iron spikes × 10 | 1 d | In stock | Engineering and climbing |
+| Pitons × 10 | 1 d | In stock | Standard |
+| Small chest (locked) | 8 d | Limited (4) | Quartermaster stores |
+| Lock (standard) | 5 d | In stock | Rufus makes these |
+| Lock (good) | 12 d | Crafted | Rufus, 1 day; better mechanisms require imported parts |
+| Manacles | 4 d | In stock | Standard military restraint equipment |
+| Signal whistle (bronze) | 2 d | In stock | Watch standard |
+| Mirror (polished bronze) | 5 d | In stock | Signal use and personal kit |
+
+---
+
+### Medical Supplies
+
+| Item | Price (d) | Availability | Notes |
+|---|---|---|---|
+| Bandages (10 strips) | 1 | In stock | Linen; Valeria sells additional |
+| Vinegar solution (1 pint) | 1 | In stock | Wound cleaning; plentiful |
+| Pitch, wound-sealing (1 oz) | 1 | In stock | Pine pitch |
+| Bronze probe (medical) | 3 | Limited (5) | Fragment removal; *medicus* controls |
+| *Theriac* (1 dose) | 5 | Limited (6) | All-purpose compound; *medicus* controls |
+| Poppy extract (1 dose) | 8 | Unavailable | The *medicus* has been requesting this for 3 months |
+| Willow bark (10 doses) | 2 | In stock | Fever reduction; Valeria's specialty |
+| Yarrow (bundle, 10 uses) | 1 | In stock | Wound staunching; found near the fort |
+| Wormwood tincture (5 doses) | 3 | In stock | Digestive complaints |
+| Healing herbs, basic kit | 3 | In stock | Mixed common supply |
+| Superior herbs (Germanic kit) | 4 | Black market | Valeria can source with Acquaintance+ reputation |
+| Antitoxin (1 dose) | 10 | Limited (4) | *Medicus* controls; 4 doses in stock |
+
+---
+
+### Animals and Transport
+
+| Item | Price (d) | Availability | Notes |
+|---|---|---|---|
+| Riding horse | 300 | Limited | Fort is 4 short of complement; Quartus will not sell fort horses |
+| Germanic pony | 100 | Black market | More agile in forest; Sigrun can arrange |
+| War horse (cavalry-trained) | 500 | Order | 8-week lead from Rhine stables |
+| Pack mule | 55 | Limited | Fort has 12; officer authorization required to purchase |
+| Ox | 40 | Unavailable | None currently at Vindolanda |
+| Cart (two-wheel) | 30 | Crafted | Rufus, 3 days with timber |
+| Wagon (four-wheel) | 80 | Order | Must arrive with next supply convoy |
+| Military saddle | 25 | In stock | 8 in stores |
+| Saddlebag | 8 | In stock | Standard |
+| Feed, horse (1 day) | 1 | In stock | Oats and hay; tracked |
+
+---
+
+### Camp Services
+
+Services are arranged through the relevant NPC. Prices are per job and negotiable based on relationship standing.
+
+| Service | Provider | Cost | Notes |
+|---|---|---|---|
+| Weapon repair, minor | Rufus | 1 d | Resharpening, edge work; 1 hour |
+| Weapon repair, major | Rufus | 3-5 d | Blade replacement or significant rework; 1-2 days |
+| Armor repair, minor | Rufus | 2 d | Re-linking rings, patching plates; 2 hours |
+| Armor repair, major | Rufus | 8-15 d | Full section replacement; 3-5 days |
+| Custom weapon or tool | Rufus | Materials + 5 d/day | Requires raw iron and specific materials |
+| Siege equipment assembly | Rufus | Materials + labor | Pavise (Camp L1); scorpio component (L2); onager repair (L2) |
+| Field surgery, basic | Valeria | 2 d | Wound cleaning and closure |
+| Field surgery, complex | Valeria | 8-20 d | Fragment removal, suturing, bone work |
+| Herbal preparation, custom | Valeria | 1-5 d | Based on ingredient complexity and relationship tier |
+| Augury (battlefield) | Paterculus | Religious donation | Once per day; required by military law before major actions |
+| Fort shrine rites | Sacerdos NPC | Donation (1+ d) | Festival observance, last rites, divine petitions |
+| Document drafting | Librarius | 2 d | Contracts, letters, official requests |
+| Letter to Rome (official courier) | Librarius + dispatch | 5 d | 4-week round-trip via official courier chain |
+| Scouting intelligence | Explorator | Information exchange | Not paid in coin; the explorator trades knowledge for knowledge |
+
+---
+
+### Camp Level Availability Changes
+
+**Camp Level 2** (unlocked by party actions in Sessions 1-2):
+- Rufus produces 10 additional clay incendiaries and 20 fire arrows per session rest
+- Hand-carried *arcuballista* assembly becomes available (Crafted, 3 days + parts)
+- Siege pavise production is automatic: no lead time, just materials
+- *Theriac* restocked to 12 doses (Valeria's supply network reaches a contact)
+- Poppy extract shifts from Unavailable to Order (4-6 week wait)
+- *Arcus Compositus* becomes Limited (1) via Sigrun at standard price
+
+**Camp Level 3** (unlocked by party actions in Sessions 3-4):
+- Lead shot production: 10 *glandes* per session rest from Rufus's forge
+- *Lorica Segmentata* repair backlog clears; 4 additional complete sets available
+- Superior Germanic herb kit shifts from Black market to In stock (via Valeria)
+- Quality weapon production: Rufus makes one quality weapon per session rest
+- All Limited ammunition restocked to listed quantities per session rest
 
 ---
 
