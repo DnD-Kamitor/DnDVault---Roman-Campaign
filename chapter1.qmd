@@ -155,9 +155,11 @@ The descent is 40 feet. Anyone carrying a torch will notice the flame leans down
 
 **Exploration:**
 
-- DC 13 History: The symbols belong to at least four distinct Germanic tribes, none of which coexisted in the same region. These shields were collected here, not stored by one people.
-- DC 15 History: The boar symbol is Marcomanni. The three-fingered hand is pre-Roman Cherusci. These tribes have been rivals for centuries. Someone gathered their war-gear in one place.
-- DC 14 Religion: This is a trophy hall, but not a Roman kind. In Germanic tradition, weapons and shields left in a sacred place belong to the war-god. This room is an offering.
+- History DC 13 (passive): The symbols belong to at least four distinct Germanic tribes, none of which coexisted in the same region. These shields were collected here, not stored by one people.
+- History DC 15 (passive): The boar symbol is Marcomanni. The three-fingered hand is pre-Roman Cherusci. These tribes have been rivals for centuries. Someone gathered their war-gear in one place.
+- Religion DC 14 (passive): This is a trophy hall, but not a Roman kind. In Germanic tradition, weapons and shields left in a sacred place belong to the war-god. This room is an offering.
+- Perception DC 11 (passive): The torch flame leans consistently toward the far archway. A draft from below pulls it -- directional, not random, and stronger as you move deeper.
+- Nature DC 12 (passive): The underground smell is wrong for dry stone. Cold, organic, faintly mineral. Bog water seeping through limestone. This floor has not been reliably dry for a long time.
 
 No combat here. The shields don't move. They watch.
 
@@ -175,9 +177,10 @@ No combat here. The shields don't move. They watch.
 
 **Exploration:**
 
-- DC 12 Investigation: The chains are old -- centuries old -- but the iron hasn't rusted. Something in the air down here preserves them.
-- DC 14 Arcana: A faint divine aura clings to the chains. Whatever they held was something that required divine binding to contain.
-- DC 16 Religion: The TIWAZ rune above a binding site has one meaning in Germanic tradition: this was a sacrifice of restraint. Not a prison. A gift to the war-god. Whatever was chained here was given willingly -- by whatever was chained, or by the tribe that sealed it.
+- Investigation DC 12 (active: examining the chains or collars closely): The chains are old -- centuries old -- but the iron hasn't rusted. Something in the air down here preserves them.
+- Arcana DC 14 (passive): A faint divine aura clings to the chains. Whatever they held was something that required divine binding to contain.
+- Religion DC 16 (passive): The TIWAZ rune above a binding site has one meaning in Germanic tradition: this was a sacrifice of restraint. Not a prison. A gift to the war-god. Whatever was chained here was given willingly -- by whatever was chained, or by the tribe that sealed it.
+- Acrobatics DC 11 (active: threading between the hanging chains without touching any): The chains hang in two ranks through the center of the passage. Brushing one sets it ringing -- a sound that carries far longer in this chamber than physics should allow.
 
 The chains are still. No sound. No movement. If the party lingers more than 5 minutes, one chain at the far end sways once, slightly, with no air movement to explain it.
 
@@ -283,6 +286,8 @@ He focuses exclusively on whoever carries the spear. If no one carries it, he at
 | **Deny line of sight** | Hide or move the spear 60 feet away, or cast magical darkness between him and the weapon. | He freezes mid step, confused, then sobs as he realises his hands are covered in blood. He becomes a terrified witness who can describe the spear's whispers. |
 | **He breaks free** | If the party stalls or he slips a grapple (roll each round), he sprints toward the gate with DC 14 Athletics to catch him. | He vanishes into the night. Two days later the scouts find him dead of exposure with both gladii snapped. The Legate blames the party for letting the madness spread. |
 
+**Commanding voice (Intimidation DC 13, active: before initiative):** A character with military rank can shout a direct order at the worker before grappling. On success, he freezes for one round (speed 0, no actions). This does not calm him -- it interrupts him. After one round he resumes at full violence. But one free round of control, without spending an action, gives the party a positioning advantage they would not otherwise have.
+
 Whatever happens, the fort's legionaries have seen enough. Quiet spreads through the courtyard as the crisis ends. Men look at the party, then at the wrapped spear, then look away.
 
 ## Conclusion
@@ -362,40 +367,85 @@ Record each *commendatio* earned. Three total earns a character eligibility for 
 
 **How to run these checks at the table:**
 
-*DC 13 History (Hall of Shields):*
+*Perception DC 11 (passive -- character with +1 or better Perception notices without rolling):*
+
+The torch leans toward the far archway. Every character who could notice this does notice it. You don't need to ask. The question is whether anyone comments on it before the shields occupy their attention. If they ask about it later: the draft was already pulling from below when they arrived.
+
+*Nature DC 12 (passive -- character with +2 or better Nature):*
+
+The smell. Underground stone smells mineral and cold. This does not: it is organic, faintly watery. Bog water seeping through limestone. Give this player the information directly -- no preamble. The floor has not been dry for a long time. There is water below them somewhere. This pays off in Session 4 when the tunnel gas is identified as marsh gas rather than volcanic fumes.
+
+*History DC 13 (passive -- character with +3 or better History simply knows this):*
 - Land 5 below: They notice four distinct styles. Give them the observation: the work is different on each wall. Nothing more yet.
 - Exact: Four tribes, none of which coexisted in the same region. Let that sit. The interesting question is now in the air: why are they together?
 - 5 above: Four tribes plus the geographic arrangement tells the story: someone had authority over all of them. Plant that question now; Session 3 answers it.
 
-*DC 14 Religion (Hall of Shields):*
+*History DC 15 (passive -- character with +5 or better History):*
+
+This is the same check at a higher bar. A character who gets this without rolling names the tribes (Marcomanni, Cherusci). These were not small regional groups. Someone who commanded offerings from both was operating at a scale that would have alarmed Rome. The political weight of those names changes how the party thinks about who originally sealed this chamber.
+
+*Religion DC 14 (passive -- character with +4 or better Religion):*
 - Land 5 below: This room feels sacred. The character cannot say why. That is enough.
 - Exact: Germanic trophy tradition -- this room is an offering to the war-god. The shields were brought here deliberately.
 - 5 above: Offering rooms in this tradition are actively maintained. Someone has been here recently. This is not a historical site. It is a working one. Let that breathe before you move on.
 
-*DC 16 Religion (Chamber of Chains):*
+*Investigation DC 12 (active: examining the chains or collars closely in the Chamber of Chains):*
+
+This requires stopping and looking deliberately. The player states they're inspecting the chains. On success: centuries old, no rust. Something in the air here preserves metal that should have corroded. On 5 above: the collar sizes are wrong for any animal they know. These held something upright and considerably larger than a horse.
+
+*Arcana DC 14 (passive -- character with +4 or better Arcana):*
+
+Divine residue does not fade like spell energy -- it settles into stone. A character who passes this without rolling understands immediately that the chains were not the real binding. The chains were a material expression of something older. Whatever held the entity here was not mechanical.
+
+*Acrobatics DC 11 (active: threading between the hanging chains without touching any):*
+
+The player states they want to pass without contact. On success: silent passage. On failure: one chain rings, and the sound carries further than the chamber's size should allow. Note whether the party reacts to the sound. Whatever carries further in this direction also carries further in the other direction.
+
+*Religion DC 16 (passive -- character with +6 or better Religion):*
 - Land 5 below: TIWAZ connects to war and sacrifice. That is the surface.
 - Exact: Sacrifice of restraint -- the chained entity gave itself willingly. The chains are not a prison.
 - 5 above: The chains are still active. Whatever was bound here is not fully gone. And the party just brought the spear into the room. Do not announce this mechanically. Describe it: one chain swings, just slightly, toward the wrapped spear.
 
-**Temporal gate: worker behavior (Scene 2, before Scene 4):**
+*Stealth DC 13 (active: group descent through the shaft as quietly as possible):*
 
-This check only exists if someone watches the excavation workers while they are at work in Scene 2. If nobody looks: Scene 4 is a full surprise and that is appropriate.
+If the party chooses to descend carefully and quietly, run a group Stealth check. Success means the Animated Armor in the Vault does not activate until the party crosses the threshold of Chamber 3 -- they have one round to observe before it moves. Failure means a sound carries and the armor is already positioned near the archway when they arrive.
 
-- *DC 13 Insight, while watching the workers:* The Gallic stone-hauler has been showing pre-attack signs for an hour. Unusually focused, muttering, hands on his tools between hauls. He is not being worked hard. He is working himself.
+*Intimidation DC 13 (active: centurion-voice command at the frenzied worker, before initiative):*
+
+A character with military rank shouts a direct order. On success: the worker freezes for one round (speed 0, no actions). Not calm -- interrupted. After one round he resumes with full violence. On failure: he advances regardless. The attempt cost nothing but one round of surprise, which is not a failure in the way that matters.
+
+*Athletics DC 13 (active: grappling the frenzied worker with legionary assistance):*
+
+Contested roll: Athletics vs. his Strength (+3). Two legionaries assisting reduces the effective DC to 13. A miss by 4 or less means the grapple holds but one helper took a hit in the process.
+
+*Medicine DC 12 / Sleight of Hand DC 12 (active: binding the subdued worker):*
+
+After a successful grapple, one character must secure him while others hold. Medicine: bind a wound point that serves as restraint; this lets Cassia question him about visions when he wakes. Sleight of Hand: tie the knots efficiently while he is still fighting; he escapes only on DC 16 Strength, not DC 12. Either works. The difference is what you get afterward.
+
+*Athletics DC 14 (active: catching the worker if he slips free and runs):*
+
+If the grapple fails or he breaks loose, he sprints for the gate. DC 14 Athletics to catch him, or a ranged attack at disadvantage -- he is moving fast. Failure means he reaches the gate. The consequences are in the resolution table above.
+
+**Temporal gate: worker behavior (Scene 2 only, before Scene 4):**
+
+This check only exists if someone watches the excavation workers while they are at work during Scene 2. If nobody looks: Scene 4 is a full surprise, and that is appropriate.
+
+- *Insight DC 13 (active: watching the workers during Scene 2, window closes when Scene 4 begins):* The Gallic stone-hauler has been showing pre-attack signs for an hour. Unusually focused, muttering, hands on his tools between hauls. He is not being worked hard. He is working himself.
 - *On success:* The party has a full action before initiative when he breaks. They were paying attention. Reward that.
 - *Miss the check or miss the window:* Scene 4 is a surprise. Standard rules. Do not feel bad about it.
 
 **Corvinus refusal: partial success structure:**
 
 Do not make this binary. The DC 18 for outright defiance is correct, but give it texture:
-- *5 below DC 18:* He sends a Centurion escort as "motivation." The Centurion is Varro, who quietly tells the party: "I'd go if I were you. Better you go knowing what you're walking into."
-- *DC 18 exact:* He backs down. Gives them 24 hours. They have the night.
-- *5 above DC 18:* He backs down and, unexpectedly, respects them for it. Assigns them as lead investigative unit with Varro as their direct liaison, not their guard. Corvinus does not show this respect openly, but the assignment shows it.
+
+- *Persuasion DC 18 (active: arguing directly with Corvinus to refuse the mission):*
+- 5 below DC 18: He sends a Centurion escort as "motivation." The Centurion is Varro, who quietly tells the party: "I'd go if I were you. Better you go knowing what you're walking into."
+- DC 18 exact: He backs down. Gives them 24 hours. They have the night.
+- 5 above DC 18: He backs down and, unexpectedly, respects them for it. Assigns them as lead investigative unit with Varro as their direct liaison, not their guard. Corvinus does not show this respect openly, but the assignment shows it.
 
 **Corvinus temporal gate (Session 1 only):**
 
-Any time during Scene 1, before the party agrees to the mission. DC 14 Insight. One attempt.
+Any time during Scene 1, before the party agrees to the mission. One attempt.
 
-What the check reveals: Corvinus is afraid of something specific, not just ambitious. The signs of ambition are there -- forward posture, controlled voice -- but underneath them he looks at the staircase twice in two minutes. He is managing the party while managing the expected arrival of someone he owes. On 5-above: the player understands this is not about the spear's power. It is about what the spear represents to a man with a debt.
-
-Why the window closes: once Tribune Lucius arrives, Corvinus goes into full political mode. His body language changes. The fear goes underground where it does not show. The tell disappears. The party has Session 1 only.
+- *Insight DC 14 (active: watching Corvinus during Scene 1, window closes when Tribune Lucius arrives):* Corvinus is afraid of something specific, not just ambitious. The signs of ambition are there -- forward posture, controlled voice -- but underneath them he looks at the staircase twice in two minutes. He is managing the party while managing the expected arrival of someone he owes. On 5-above: the player understands this is not about the spear's power. It is about what the spear represents to a man with a debt.
+- Why the window closes: once Tribune Lucius arrives, Corvinus goes into full political mode. His body language changes. The fear goes underground where it does not show. The tell disappears. The party has Session 1 only.

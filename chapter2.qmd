@@ -113,7 +113,7 @@ The party doesn't need to solve this in Session 2. But the clues are here.
 
 **Clue 1: The Wound**
 
-DC 13 Medicine on the body:
+Medicine DC 13 (active: examining the body):
 
 - The cut is precise. One stroke, left-to-right, from behind. Sextus had no defensive wounds.
 - Someone who knew exactly where to stand and how to move. This is trained work, not rage.
@@ -121,10 +121,11 @@ DC 13 Medicine on the body:
 
 **Clue 2: The Boot Print**
 
-DC 14 Investigation near the carving:
+Investigation DC 14 (active: examining the ground near the carving) or Survival DC 12 (active: reading the ground first before looking at the message):
 
-- One clear boot print in the mud below the carved message. Legionary-issue hobnail, size small, but the wear pattern is unusual: the inside heel is heavily worn, indicating a man who turns his foot slightly when he walks.
-- If the party has a chance to observe the Tribune's entourage before they leave: Decanus Quintus walks exactly like this. DC 15 Perception to notice it while watching the departure.
+- Investigation: One clear boot print in the mud below the carved message. Legionary-issue hobnail, size small, but the wear pattern is unusual: the inside heel is heavily worn, indicating a man who turns his foot slightly when he walks.
+- Survival alternative: The character reads the approach path first -- the carver came from inside the fort, not from the gate, and left toward the stables. The boot print is confirmation, not the starting point.
+- If the party has a chance to observe the Tribune's entourage before they leave: Decanus Quintus walks exactly like this. Perception DC 15 (active: watching the departure specifically) to notice it.
 
 **Clue 3: Varro Knows Something**
 
@@ -164,6 +165,8 @@ He surveys the fort the way a merchant surveys damaged goods.
 - **Legate Corvinus**: Controlled fury. Accepts the orders publicly, seething privately. He will be a problem later.
 - **Augur Cassia**: Visible distress. Whispers to the party at the first opportunity: *"The omens around this man are confused. I cannot see his purpose clearly."*
 - **Centurion Varro** (quietly, to the party, when Tribune is out of earshot): *"I've seen ambitious men from Rome before. That one is afraid of something. Afraid men do stupid things."*
+- Religion DC 13 (passive: noticing something off during the Tribune's formal invocations to the Senate's divine mandate): He skips the traditional ward gesture used when swearing on official authority before witnesses. A character with Religion DC 13 passive notices the omission. He either does not know the form, or he chose not to perform it. Neither option says anything good.
+- Arcana DC 13 (passive: examining the ROMA CADIT carving shortly after it is found): The letter strokes are angular and deliberate -- the same runic carving technique used on the spear. Whoever made this had exposure to Germanic inscriptional practice, not Roman. A Roman carving a Latin message would use rounded, cursive strokes. These are not.
 
 ---
 
@@ -172,21 +175,21 @@ He surveys the fort the way a merchant surveys damaged goods.
 The party needs to learn that Lucius is working for Senator Brutus and his goal is to prevent the spear reaching Rome (not to retrieve it). Three independent paths — finding any one is enough.
 
 **Clue 1: The Encoded Letter**
-- Search Tribune's quarters (DC 16 Investigation, or pick the lock DC 14 Thieves' Tools)
-- Find a locked dispatch box — inside, the letter (Handout 5)
+- Access Tribune's quarters: Stealth DC 13 (active: slipping past the Praetorian guard) or Deception DC 14 (active: claiming authorization for a security inventory -- if convincing, the guard gives them 10 minutes unattended)
+- Inside: Investigation DC 16 (active: searching the room thoroughly) or Thieves' Tools DC 14 (active: picking the lock on the dispatch box directly)
 - Decoded, it names Senator "G.C.B." ordering the artifact's "permanent removal"
 - Cassia can identify the cipher pattern if shown it (she's seen similar Senate correspondence)
 
 **Clue 2: The Tribune's Behaviour**
-- Watch him carefully during the raid (Scene 2) — DC 14 Perception or Insight
-- The Tribune and his Praetorians take *no action* during the assault. They withdraw to the principia and secure it — not the walls, not the gate. They're protecting the spear room, not the fort.
+- Watch him carefully during the raid (Scene 2): Perception DC 14 (active: specifically watching the Tribune's movements during the alarm) or Insight DC 14 (active: reading his body language when the horns sound)
+- The Tribune and his Praetorians take *no action* during the assault. They withdraw to the principia and secure it -- not the walls, not the gate. They're protecting the spear room, not the fort.
 - Afterward: Tribune pushes to accelerate departure, citing "raider intelligence." Why the rush?
 - Varro: *"Defenders defend the people. They defended the artifact. Ask yourself why."*
 
 **Clue 3: Varro's Network**
 - If the party asks Varro directly about the Tribune (no check needed):
-- *"I did some asking around. That Tribune was posted to the financial investigation commission six months ago — investigating military supply embezzlement. Guess who was embezzling? Start with which Senators have frontier contracts."*
-- With DC 13 History: "G.C.B." points to Gaius Cassius Brutus — known for his 'Republic' rhetoric and enormous wealth
+- *"I did some asking around. That Tribune was posted to the financial investigation commission six months ago -- investigating military supply embezzlement. Guess who was embezzling? Start with which Senators have frontier contracts."*
+- History DC 13 (passive): "G.C.B." points to Gaius Cassius Brutus -- known for his 'Republic' rhetoric and enormous wealth
 
 ---
 
@@ -208,7 +211,7 @@ She reveals the spear's true history if the party hasn't already learned it: it 
 He's positioned six of his veterans near the spear's storage room. Quietly. He doesn't explain, but if the party asks: *"Because if that Tribune tries to move it tonight without telling anyone, I want to know about it immediately."*
 
 **Confronting the Tribune:**
-He's charming and deflects with practiced skill. DC 16 Insight to sense he's performing more than he's saying. If pushed hard (Persuasion DC 17 or evidence in hand), he drops the act slightly:
+He's charming and deflects with practiced skill. Insight DC 16 (active: reading him during a sustained conversation) to sense he's performing more than he's saying. If pushed hard (Persuasion DC 17, active: pressing directly and refusing to accept deflection, or evidence in hand), he drops the act slightly:
 > *"Let's say, hypothetically, that some artifacts are more dangerous in Rome than outside it. Let's say someone with the ear of half the Senate has a plan for this particular artifact that does not end well for anyone living. Let's say I was sent here to prevent that, not to enable it."*
 
 He will not name Brutus unless the party produces the decoded letter.
@@ -235,9 +238,10 @@ Germanic raiders attack in force — and Vercingetorix the Red is leading them.
 
 **Phase 1: The Walls** *(2 rounds)*
 Raiders swarm with ladders and grappling hooks. The party can:
-- Man the walls: melee attacks as ladders are pushed back (Athletics DC 12)
-- Use the ballista: 2d10 piercing, requires 2 people, DC 12 Dexterity to aim
-- Direct the legionary response: DC 13 Persuasion/Intimidation to keep frightened soldiers at their posts
+- Man the walls: melee attacks as ladders are pushed back (Athletics DC 12, active: pushing back a ladder with two or more men on it)
+- Use the ballista: 2d10 piercing, requires 2 people, Dexterity DC 12 (active: aiming under pressure); Acrobatics DC 11 (active: reaching the ballista quickly via a non-standard route when the normal path is blocked)
+- Direct the legionary response: Persuasion DC 13 or Intimidation DC 13 (active: holding frightened soldiers at their posts); Performance DC 13 (active: delivering a battle speech rather than an order -- soldiers respond to emotion, not just authority, same DC, different character type)
+- Nature DC 11 (passive: noticing before the raid that the night birds near the treeline went silent two hours before the attack): A coordinated advance through undergrowth silences birds consistently. The raid was staged from far back and moved slowly into position. This was planned, not opportunistic. A character with Nature DC 11 passive who mentions being on watch during those hours knew something was wrong before the horn sounded.
 
 *12 **Tribal Warriors** (waves, not all at once), 2 **Berserkers** on the ladders*
 
@@ -429,35 +433,83 @@ If any character attuned to or touched the spear in Session 1, they get dreams a
 
 **How to run these checks at the table:**
 
-*DC 13 Medicine (Sextus murder, body):*
+*Nature DC 11 (passive -- character with +1 or better Nature, if on night watch before the raid):*
+
+The birds near the treeline went silent two hours before the attack. A coordinated force moving slowly through undergrowth does this consistently. Give the player the observation directly: something large and organized was moving into position well before the raid began. This was not a response to the Tribune's arrival -- it was planned in advance.
+
+*Religion DC 13 (passive -- character with +3 or better Religion, during the Tribune's formal arrival speech):*
+
+He skips the traditional ward gesture. A character with this passive knows the invocation he uses requires the gesture to be complete; without it the oath is technically unsworn. He either does not know the form, or he chose not to bind himself. Neither answer is reassuring.
+
+*Arcana DC 13 (passive -- character with +3 or better Arcana, examining the ROMA CADIT carving):*
+
+The letter strokes are angular and deliberate -- the same runic carving technique used on the spear. Roman cursive uses rounded forms. These strokes are not Roman. Whoever made this had exposure to Germanic inscriptional practice. That is not a standard skill for a Roman sleeper agent. Someone taught him.
+
+*Medicine DC 13 (active: examining Sextus' body):*
 - Land 5 below: Short blade, from behind. One stroke. That is all they can say.
 - Exact: The weapon was a Roman legionary dagger. The angle is consistent with someone shorter, or someone kneeling. This was practiced, not panicked.
 - 5 above: He had already drawn his own blade. He had time to react and did not. He knew the attacker, or something he was watching mattered more. Give the player this observation and let them hold it.
 
-*DC 14 Investigation (ROMA CADIT carving):*
+*Survival DC 12 (active: reading the ground around the carving before looking at the message):*
+
+The approach path is readable in the mud: the carver came from inside the fort, not from the gate, and left toward the stables. The boot print is confirmation of what Survival already told them. Running both checks (Survival then Investigation) gives the complete picture: where they came from, where they went, and what they look like when they walk.
+
+*Investigation DC 14 (active: examining the ROMA CADIT carving closely):*
 - Land 5 below: Latin, recent, last 12 hours.
 - Exact: Practiced hand, written fast, listening for something while carving. Not a message for the party. A cover.
 - 5 above: The tool marks match a specific military chisel type. The Faber Decimus has three. One came back this morning with a chipped edge. Write "chipped edge" in your notes: this pays off when they look at Decimus.
 
-*DC 16 Insight (Tribune performance):*
+*Stealth DC 13 (active: approaching Tribune's quarters past the Praetorian guard) or Deception DC 14 (active: claiming authorization for a security inventory):*
+
+Two different routes into the room. Stealth: get past the guard without being seen -- success means undetected entry, failure means a confrontation and the guard reports it to the Tribune within the hour. Deception: claim official authority -- success buys 10 minutes unattended in the room; failure means the guard is now watching them specifically for the rest of the session.
+
+*Investigation DC 16 (active: searching Tribune's quarters thoroughly) or Thieves' Tools DC 14 (active: picking the lock on the dispatch box):*
+
+Investigation finds the box through a careful search; Thieves' Tools opens it directly. A character can attempt both. Finding the box without opening it is still a clue -- the box exists, it is locked, and the Tribune locked it.
+
+*Perception DC 14 / Insight DC 14 (active: watching the Tribune specifically during the raid alarm):*
+
+Both skills reach the same information by different paths. Perception notices the physical fact -- he moves toward the principia, not the walls, and his Praetorians follow without being ordered to. Insight reads his face during the alarm: not fear of raiders, something else. Something like relief that an event has begun on schedule. Either check gives Clue 2.
+
+*History DC 13 (passive -- character with +3 or better History):*
+
+"G.C.B." is enough for a character with Roman political history. Gaius Cassius Brutus is documented: Republican rhetoric, frontier contracts, known for funding causes that weaken the Emperor's frontier authority. A character who passes this knows why destroying a divine weapon found on the frontier serves Brutus' interests -- it removes something the Emperor could use.
+
+*Insight DC 16 (active: reading the Tribune during a sustained conversation):*
 - Land 5 below: He is performing. You can see that much. What is underneath it: not visible yet.
 - Exact: Anxiety, not confidence. The performance is good but it is covering something.
 - 5 above: He is reading from a script. He has been told what to say. He hesitates before the fourth and seventh statements -- the ones furthest from what he actually believes. Give the player those two specific moments by name.
 
+*Persuasion DC 17 (active: pressing the Tribune directly with evidence in hand):*
+
+He drops the act -- slightly. Not because he trusts the party, but because maintaining the performance under direct confrontation with evidence costs him more than a partial admission. The partial admission is still a tactical retreat, not an honest moment. Watch for the difference.
+
+*Athletics DC 12 (active: pushing back a scaling ladder with raiders on it):*
+
+Two characters pushing the same ladder halve the effective resistance. A miss by 3 or less means the ladder holds but slips -- they have one more round before it locks in place.
+
+*Acrobatics DC 11 (active: reaching the ballista platform via a non-standard route when the main approach is blocked):*
+
+During a wall defense, standard routes clog fast. A character who opts for the fast route instead of the clear route rolls Acrobatics. Success: they reach the ballista one round faster. Failure: they reach it, but spent a bonus action recovering their footing.
+
+*Performance DC 13 (active: delivering a battle speech before the wall holds or breaks):*
+
+Same DC as Persuasion and Intimidation for the wall defense. Different approach: soldiers respond to emotion here as much as authority. A character who performs rather than orders gets a different reaction -- the soldiers don't obey because they have to; they hold because they want to. That distinction matters if the wall takes damage and the same check needs to be repeated.
+
 **Temporal gate: Tribune's doubt (Scene 3 only):**
 
-One round. One check per player. DC 14 Insight. This check only exists while the Tribune is delivering his false accusation in Scene 3.
+One round. One check per player. This check only exists while the Tribune is delivering his false accusation in Scene 3.
 
-- *On success:* He hesitates before "enemies of Rome." Half a second. His eyes move to Varro (or Varro's absence) before he continues. He has been given lines and is not fully committed to them.
+- *Insight DC 14 (active: watching his face during the accusation, window closes when he finishes speaking):* He hesitates before "enemies of Rome." Half a second. His eyes move to Varro (or Varro's absence) before he continues. He has been given lines and is not fully committed to them.
 - *What it opens:* Negotiation DC in Scene 4 drops from 17 to 14. The player can invoke the hesitation directly: "You paused. You know this isn't true."
-- *Why the window closes when it does:* Once he finishes the accusation and leaves, he has committed. The doubt sealed over the moment he completed the speech. He cannot go back and he will not. Catching him before he finishes is catching him before the choice became a fact.
+- *Why the window closes:* Once he finishes the accusation and leaves, he has committed. The doubt sealed over the moment he completed the speech. Catching him before he finishes is catching him before the choice became a fact.
 
 <details>
 <summary>**Cascade unlock: soldier at the wall (Scene 2 battle)** *(DM only)*</summary>
 
-This check has an upgrade path. Run it both ways (Persuasion or Intimidation, same DC):
+This check has an upgrade path. Run it both ways (Persuasion, Intimidation, or Performance, same DC):
 
-- *DC 13 Persuasion/Intimidation exact:* Soldiers hold. That is the job done.
-- *DC 17 Persuasion/Intimidation:* Soldiers hold AND note a name: Flavus, 19 years old, first posting, the one who was about to break. He remembers who held the wall for him. Write his name in your session record now. He appears in Session 4 as an escort volunteer. He does not need to be recruited: he recruits himself.
+- *DC 13 exact:* Soldiers hold. That is the job done.
+- *DC 17 (any of the three social skills):* Soldiers hold AND note a name: Flavus, 19 years old, first posting, the one who was about to break. He remembers who held the wall for him. Write his name in your session record now. He appears in Session 4 as an escort volunteer. He does not need to be recruited: he recruits himself.
 
 </details>

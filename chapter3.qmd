@@ -136,20 +136,21 @@ The spear's influence is gradual. One NPC in the party is being slowly possessed
 **Three ways to identify the influenced NPC before they act:**
 
 **Clue 1: The Physical Signs**
-DC 13 Perception or Medicine:
+Perception DC 13 (passive, during travel) or Medicine DC 13 (active: a deliberate physical examination):
 - Their eyes have a faint red tinge in direct light
 - They've been rubbing the same spot on their arm repeatedly (where they touched the spear in Session 1)
 - They're sleeping with their face turned toward where the spear is stored, even if the spear moved
+- Medicine specifically: a character who asks to check their pulse or temperature finds a slight fever and dilated pupils that do not match the light level. These are not illness signs. They are arousal signs, the same physiological state as pre-combat readiness -- but the person is calm.
 
 **Clue 2: Their Behaviour**
-DC 14 Insight during conversation:
+Insight DC 14 (active: watching them during a specific conversation about the spear or the journey):
 - They advocate for keeping the spear more strongly than before, but can't articulate why
 - They become visibly agitated when someone else touches or moves the spear
 - When asked directly *"Are you alright?"*, there's a micro-pause before they answer
 
 **Clue 3: The Spear Reacts**
-If the party examines the spear's wrappings or attempts to read its aura (Arcana DC 13 or Religion DC 14):
-- The spear "leans" — physically tilts — in the influenced NPC's direction
+If the party examines the spear's wrappings or attempts to read its aura: Arcana DC 13 (passive) or Religion DC 14 (passive):
+- The spear "leans" -- physically tilts -- in the influenced NPC's direction
 - Anyone sensitive to divine energy (Clerics, Paladins) can feel the connection
 - Cassia, if present, sees the influence immediately: *"There's a thread between that person and the spear. I missed it. I'm sorry, I missed it."*
 
@@ -228,7 +229,7 @@ When someone tries to thank her: *"Do not thank me. Finish it. That is thanks en
 
 The sacred grove is on the far side of the Vitulans river — currently swollen with spring melt. The crossing is hard under normal circumstances. It's harder with pursuers.
 
-**The river:** 90 feet wide. Fast-moving (DC 13 Athletics to swim). A fallen oak spans the narrowest point, slippery (DC 11 Acrobatics to cross without falling). Rope can be strung across (DC 10 Athletics as a group action) to help everyone.
+**The river:** 90 feet wide. Fast-moving (Athletics DC 13, active: swimming across). A fallen oak spans the narrowest point, slippery (Acrobatics DC 11, active: crossing without falling). Rope can be strung across (Athletics DC 10, active: group action) to help everyone.
 
 **The pursuers arrive:**
 
@@ -248,6 +249,8 @@ The legionaries are just following orders. They've committed no crime. They have
 - Killing them is technically murder by Roman law
 - Letting them cross means a fight the party might not win
 - Destroying the log severs pursuit but means whoever's still on the near bank is cut off
+- Intimidation DC 14 (active: a centurion-rank character ordering the legionaries to stand down across the water before combat begins): Not guaranteed, but worth the attempt. On success, the centurion opposite hesitates -- long enough for the party to cross and deny the ford. On failure, the order is refused and combat begins with that centurion specifically targeting the character who gave it. On 5-above the DC, the centurion signals his men to hold. He will not cross without new orders. He does not want this fight either.
+- Deception DC 15 (active: claiming the mission is sanctioned and the Legate's pursuit is unauthorized): This requires something tangible -- a document, a seal, or a name the centurion would recognize. Without it, the DC rises to 18. With it, he wavers -- and Varro, if present, can speak one sentence that makes it land or fall apart.
 
 *Varro (if present) will not fight his own men. He'll stand at the bank and let the party cross, then step aside. The legionary centurion will recognize him, hesitate, and that hesitation might be all the time needed.*
 
@@ -327,16 +330,17 @@ Mars manifests as divine wrath through the stones themselves:
 **Option B: Skill Challenge — complete the ritual under pressure**
 
 4 successes before 3 failures. Each round, one person holds the ritual while others defend:
-- **Religion DC 14** — speak the words of unmaking with genuine conviction
-- **Arcana DC 15** — channel the grove's ancient power, not fighting it
-- **Athletics DC 12** — hold the spear steady as it fights back
-- **Insight DC 14** — resist the spear's final promise (*"They'll abandon you. Take me and they won't have to."*)
+- **Religion DC 14 (active: speaking the words of unmaking with genuine conviction)**
+- **Arcana DC 15 (active: channeling the grove's ancient power, not fighting it)**
+- **Athletics DC 12 (active: holding the spear steady as it fights back)**
+- **Insight DC 14 (active: resisting the spear's final promise)** -- *"They'll abandon you. Take me and they won't have to."*
+- **Stealth DC 13 (active: repositioning behind the standing stones before an animated golem pivots)**: Not a ritual contribution -- this is a defense move. On success, the golem wastes a movement action turning to face the new position. That round, the ritual holder has advantage on their check because the pressure source is briefly displaced.
 
 Failures mean the ritual stumbles, and Mars' pressure increases: each failure adds one animated stone.
 
-**Option C: Bargain — offer Mars something before the ritual begins**
+**Option C: Bargain -- offer Mars something before the ritual begins**
 
-If the party steps back from the altar and speaks to Mars directly (Persuasion DC 17 or Religion DC 16):
+If the party steps back from the altar and speaks to Mars directly (Persuasion DC 17 or Religion DC 16, active: addressing him directly and naming what the spear has done in his name):
 > *"Great Mars, the spear was being used to corrupt and destroy men in your name. We destroy it not to defy you, but because what it was doing dishonored what you stand for."*
 
 A long silence. Then:
@@ -481,34 +485,62 @@ This session should feel like the pressure never fully releases. The investigati
 
 **Forest travel: spread skill demands across the table.**
 
-The travel events should each call on a different character's strength. Check this before you run. Nobody should dominate the forest crossing. The table below shows the right approach and a backup approach for each event: both should work, both should feel like genuine options.
+The travel events should each call on a different character's strength. Check this before you run. Nobody should dominate the forest crossing. The table below shows the primary approach, a backup approach (different door, not failed door), and where applicable a third approach using skills that might otherwise have nothing to do in this session.
 
-| Event | Primary skill | Alternative (different door, not failed door) |
-|---|---|---|
-| Wind-felled oak | Athletics DC 12 to clear or climb | Survival DC 10 to find a safe path around |
-| Hanging charms | Persuasion DC 13 to pass without offense | Religion DC 11: understand the boundary and perform a basic acknowledgment rite -- no social check required, just knowledge |
-| Silent animal trail | Survival DC 12 to track | Nature DC 14 to identify the specific hunter; wolf signs vs. something else changes the response |
-| Old Roman standard | Investigation DC 12 to read dates | History DC 14 to name the expedition and what happened to it; this one lands harder |
-| Boggy hollow | Acrobatics DC 12 | Nature DC 10 to read the plants and identify firm ground; this route avoids the roll entirely |
-| Watchful raven | Insight DC 12 to read it correctly (omen, not threat) | Animal Handling DC 10 to acknowledge it respectfully; the raven leaves satisfied |
-| Blood-slick stones | Religion DC 14 to read runes | Investigation DC 12 to date the sacrifice; within 24 hours changes everything |
-| Whispering pines | Wisdom save DC 12 | Performance DC 12 to give the whispers a response that satisfies them; costs one round but removes the disadvantage |
+| Event | Primary skill | Alternative | Third option |
+|---|---|---|---|
+| Wind-felled oak | Athletics DC 12 (active: clearing or climbing the obstacle) | Survival DC 10 (active: finding a safe path around) | Stealth DC 12 (active: if the party wants to pass without announcing themselves to whoever felled it -- a fallen oak on a travel path is sometimes deliberate) |
+| Hanging charms | Persuasion DC 13 (active: passing without giving offense) | Religion DC 11 (passive: understand the boundary and perform a basic acknowledgment rite -- no social check, just knowledge) | -- |
+| Silent animal trail | Survival DC 12 (active: tracking by sign) | Nature DC 14 (active: identifying the specific predator -- wolf signs vs. something else changes the response entirely) | -- |
+| Old Roman standard | Investigation DC 12 (active: reading dates and unit markings) | History DC 14 (passive: naming the expedition and what happened to it; this lands harder when they know the story) | -- |
+| Boggy hollow | Acrobatics DC 12 (active: crossing without sinking) | Nature DC 10 (active: reading the plants and identifying firm ground; avoids the roll entirely) | Medicine DC 11 (passive: recognizing bog fever risk from the water type; warns against resting here, which costs time but prevents the exhaustion check) |
+| Watchful raven | Insight DC 12 (active: reading it correctly -- omen, not threat) | Animal Handling DC 10 (active: acknowledging it respectfully; the raven leaves satisfied) | -- |
+| Blood-slick stones | Religion DC 14 (passive: reading the runes) | Investigation DC 12 (active: dating the sacrifice; within 24 hours changes everything) | Sleight of Hand DC 12 (active: pocketing a rune-carved offering stone without the group noticing -- optional, morally complicated) |
+| Whispering pines | Wisdom save DC 12 | Performance DC 12 (active: giving the whispers a response that satisfies them; costs one round but removes the disadvantage) | Deception DC 13 (active: convincing yourself the whispers are wind, not a real voice; a successful self-deception suppresses the Wisdom save but prevents any meaningful information from the pines) |
+| Germanic patrol (if added) | Persuasion DC 14 (active: speaking any Germanic phrase from the player guide) | Intimidation DC 13 (active: a show of force before weapons are drawn; they don't want this fight either) | Deception DC 15 (active: claiming to be friendly traders; requires something tangible to sell the claim) |
+
+*Note: the Germanic patrol is not on the d8 table above but can be substituted for any roll of 3 if Vercingetorix is not with the party.*
+
+**Medicine DC 13 (active: examining the influenced NPC when Clue 1 appears):**
+
+A character with Medicine proficiency who examines them physically -- checks their pulse, looks at their eyes, feels their skin temperature -- finds elevated heart rate, dilated pupils inconsistent with the light level, and a slight fever. These are not illness markers. They are arousal markers: the body in pre-combat readiness, with the mind still calm. The character examining them knows that combination from battlefield experience. Something is priming them. The body knows before the mind does.
+
+**Stealth DC 13 (active: approaching a Germanic patrol or shrine without being detected):**
+
+Before any social encounter in the forest, the party can choose to observe first. Stealth as a group check (weakest roller determines success) lets them see the patrol or shrine before being seen. Success gives them one round of assessment before engagement. On a critical success (5 above DC), they observe long enough to determine intent -- whether the patrol is searching, resting, or actively tracking.
+
+**Deception DC 14 (active: passing as non-Roman travelers during an unexpected Germanic encounter):**
+
+Requires either non-Roman equipment (no lorica segmentata visible, Germanic cloaks) or a convincing story. A character with a Germanic background or Vercingetorix vouching reduces this to DC 10. A character in full legionary kit attempting this without cover has DC 18 and disadvantage.
+
+**Intimidation DC 14 (active: at the river crossing, ordering the pursuing legionaries to stand down):**
+
+As described in the crossing scene. On 5 above the DC: the opposing centurion signals his men to hold and does not cross.
 
 **Temporal gate: river crossing boot print:**
 
-One round. DC 11 Perception, and only if someone is watching the bank rather than the river.
+One round. Only if someone is watching the bank rather than the river.
 
-- *On success:* Military sandal, size 10, made within the last two hours, heading north. Corvinus has scouts ahead of them.
+- *Perception DC 11 (active: watching the near bank specifically while others watch the water):* Military sandal, size 10, made within the last two hours, heading north. Corvinus has scouts ahead of them.
 - *What it opens:* They can send a decoy, move off the main path, or prepare for scouts at the grove. Without this read, Corvinus's scouts are already watching when they arrive. One check, one round. Make it count.
-- *Why the window closes:* Rain washes it. The crossing scene ends, the rain intensifies, the print is gone. Not because the game decided to close the door -- because that is what rain does to boot prints in mud.
+- *Why the window closes:* Rain washes it. The crossing scene ends, the rain intensifies, the print is gone. That is what rain does to boot prints in mud.
 
 **Thusnelda trust: the first meeting.**
 
 Do not move this entirely through narrative. The key moment is when she decides whether to lead them to the grove. Give it a DC.
 
-- *DC 14 Persuasion, backed by something genuine (sparing a prisoner, a gift, Vercingetorix vouching):* She leads them.
-- *DC 18 Persuasion, or Germanic language proficiency, or DC 15 Religion to speak her ritual language:* She leads them AND volunteers the piece of grove knowledge they did not know to ask for: the lock in the altar's northwest face, and what it opens.
+- *Persuasion DC 14 (active: backed by something genuine -- sparing a prisoner, a gift, Vercingetorix vouching):* She leads them.
+- *Persuasion DC 18 (active), or Germanic language proficiency, or Religion DC 15 (active: speaking her ritual language):* She leads them AND volunteers the piece of grove knowledge they did not know to ask for: the lock in the altar's northwest face, and what it opens.
 - *Fail:* She says "Tomorrow." That is not a refusal. The party camps in the forest for one night. One additional forest event occurs overnight. The window does not close: it costs time. That is the right consequence.
+
+**Ritual skill challenge (Option B):**
+
+Annotated for ease of reference:
+
+- *Religion DC 14 (active: speaking the words of unmaking with genuine conviction):* Fail by 4 or less -- the words come out but without power. The grove receives them as intent, not invocation. Not a wasted round, but not a success. Try differently next time.
+- *Arcana DC 15 (active: channeling the grove's ancient power rather than overriding it):* The hardest check because it requires surrendering the reflex to control the magic. A character who has taken arcane damage (from the spear) this session has advantage.
+- *Athletics DC 12 (active: holding the spear steady as it fights back):* The spear weighs what it weighs until the ritual begins. After, it pulls. This check is simply whether a character is strong enough to keep it on the altar.
+- *Insight DC 14 (active: resisting the spear's final promise):* The promise is specific to the character holding the spear. The DM should know what it will offer each character from Session 0 material. The promise is not generic fear -- it is the thing the character most wants, offered at the worst possible moment.
 
 <details>
 <summary>**Cascade unlock: Vercingetorix's dying admission** *(DM only)*</summary>

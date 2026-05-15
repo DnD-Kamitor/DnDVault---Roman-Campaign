@@ -58,6 +58,14 @@ Freeze time for every NPC except the party and whichever allies they designated 
 
 The party appears at the center of the sand, unarmed except for whatever they carried into the ritual. Arena weapons hang along the perimeter, embedded in air like museum pieces.
 
+**Reading the arena before Mars speaks (these checks close when he addresses the party):**
+- Perception DC 13 (active: scanning the perimeter specifically): Spots the arena weapons before Mars announces them. One round of planning before options are presented.
+- Survival DC 12 (active: reading the arena as terrain): Cover positions, structural notes on the phasing buildings (they materialize solid, not ethereal -- they block movement and line of sight), and the safest approach to the throne. A character who reads this first has advantage on the first positioning decision of any combat.
+- Religion DC 13 (passive): The arena layout mirrors the Armilustrium -- the autumn purification of arms ceremony. The black sand circle, the witness positions, the weapons embedded for display. Mars is performing a judgment ritual in the form Rome should recognize. A character with Religion DC 13 understands what form this is taking and can use the correct liturgical frame in their response.
+- Nature DC 12 (passive): The black sand is not geological. It behaves like volcanic ash but has no heat, no mineral signature, no source. Nature DC 12 passive identifies it as having no natural origin. It came with the god.
+- Arcana DC 14 (passive): The time-freeze around witnesses is not a spell. It is divine stasis -- the god stepping slightly outside the flow of time to conduct judgment within it. The witnesses are not frozen because they are unimportant. They are frozen because they are witnesses. Mars intends this to be on record.
+- Sleight of Hand DC 14 (active: concealing a small weapon on your person before entering the arena): On success, you carry one hidden weapon into the trial. Mars may or may not notice; if used in Option B, narrate it honestly. He will comment either way.
+
 ---
 
 ## Scene 1: Mars Specifies the Trial
@@ -95,6 +103,16 @@ Mars gestures to the sand. A warrior forms from ashes: armor older than Rome, sc
 
 **Arena Weapon Cards:** As soon as combat begins flip Handout 11 face-up. Any PC can grab one as a bonus action. Emphasize the costs.
 
+**Before combat, one preparation round (if the party moved quickly before Mars set terms):**
+- Investigation DC 14 (active: examining the arena weapons along the perimeter before grabbing one): Each weapon has a visible cost. Investigation lets a character find the one best suited to their approach -- or identify which weapon has the most dangerous cost for their build.
+- History DC 14 (passive -- Fausta Luperci): The Battle of the Frozen Rhine is in military history. A character with History DC 14 passive knows this engagement was real and knows she was real. Mars has called a specific honored dead, not a construct. She held a line. Alone. She died. This is that person. Knowing this changes how the party fights her: she respects endurance and discipline. She does not respect tricks.
+
+**During the trial:**
+- Medicine DC 12 (active: bonus action, using Healer's Kit or Medicine proficiency between rounds): Stabilizes a downed ally without a spell slot. Standard battle triage, same as always. Mars does not intervene in medicine.
+- Acrobatics DC 13 (active: dodging Fausta's Frozen Advance by using terrain before she closes): On success, advantage on the Constitution save that round. On failure, the save proceeds normally -- the attempt did not make things worse.
+- Intimidation DC 15 (active: a show of fearlessness rather than an attack action in Option B): Replace one attack action. On success, Mars pauses, says "...Interesting," and the character gains advantage on their next attack or saving throw. He respects *virtus* demonstrated in this form. On failure, he does not pause. The round cost an attack.
+- Athletics DC 13 (active: grappling Fausta to reduce her movement): Contested Athletics vs. her Strength (+5). On success, her speed drops to 0 until the start of your next turn. Her Frozen Advance cannot trigger if she cannot move.
+
 **Victory:** Reducing Fausta to 0 HP or surviving 10 rounds. Mars cares about endurance. The witnesses at the edge cheer silently; their expressions freeze a half second behind reality, reminding the players this is outside time.
 
 **Post-combat read-aloud:**
@@ -109,6 +127,8 @@ Use the stat block from the previous version with these contextual tweaks:
 
 - Mars draws a weapon forged from every Roman *pilum* he ever blessed. Same stats: HP 300, AC 20, four attacks, Divine Smite, War Cry, Legendary Actions (Strike, Summon Fallen, God's Eye).
 - **Environmental effect:** Each round a random barracks building phases into the arena as a terrain feature. Use them for cover or as hazards (burning roof beams, collapsed walls). Clever use grants advantage for one round as Mars appreciates the tactic.
+- Stealth DC 15 (active: repositioning behind a phasing building while Mars' attention is on another character): On success, Mars pivots to that new position next round but wastes a movement action doing so. On failure, he pivots immediately and that character becomes his priority target. A god is hard to hide from. But harder is not impossible.
+- Animal Handling DC 12 (passive, if Cassia or her crow familiar is present at the arena edge): If Cassia's crow is circling one specific witness, Animal Handling DC 12 passive identifies this as attention circling rather than fear circling. The crow is pointing at someone. Who it is pointing at is the person Mars first looked at in the opening moment -- the one who made the genuine grove sacrifice. Mars has been watching that person since Session 3. Tell the player.
 
 **Victory Condition:** Reduce Mars to 150 HP or demonstrate a tactic that forces him to concede (pinned weapon, blinding him with furnace ash, etc.). Once satisfied he says "Enough" and lowers his blade.
 
@@ -130,10 +150,13 @@ Arguments that anger him: "it was too dangerous," "we had no choice," "Rome need
 
 **Mechanics:**
 
-- Base DC 19 Persuasion (or Performance) check.
+- Base Persuasion DC 19 or Performance DC 19 (active: making the argument to a god who has been watching since Session 1).
 - Advantage if grove sacrifice was genuine or if kneeling volunteers speak first.
 - +3 bonus if Vercingetorix is allied and his rune message is invoked (TIWAZ + WUNJO = honorable war brings joy).
 - Disadvantage if Lucius sabotaged or if Corvinus tried to seize credit and was not rebuked.
+- Insight DC 15 (active: reading Mars' reaction between argument points): His expression does not change. But his posture does, slightly -- he leans a degree toward arguments that interest him and away from ones that don't. A character with this check can identify which of the three valid arguments is landing before committing fully to one.
+- Deception DC 16 (active: presenting a partial truth as the whole truth in Option C): Mars does not miss lies but he does assess them. On a failure, he names it: "That is not what you believe. Say what you believe." The trial continues but the DC rises by 2. On a success, he accepts the framing -- and that character must maintain it in subsequent arguments. Changing the framing mid-argument cancels the success.
+- History DC 14 (passive, during Option C -- the honor argument): A character who invokes the Armilustrium connection (from Religion DC 13 in the opening) and pairs it with specific historical precedents for divine restraint in Roman military tradition has a structured argument Mars recognizes. This does not replace the Persuasion check, but it adds +2 to the roll if both checks were made (Religion DC 13 and History DC 14).
 
 **Failure states:**
 
@@ -262,22 +285,49 @@ Record all promises for future campaigns. Mars remembers. So does the fort.
 
 ### Skill Audit: Session 5
 
-**Temporal gate: Mars' first look (the opening moment).**
+**Opening scene checks (window closes when Mars speaks):**
 
-One round only. Before the party reacts to his arrival. DC 13 Insight.
+All of these close the moment Mars addresses the party. Run them in the first 30 seconds of the scene if the players are actively looking around.
 
-- *On success:* Mars looks at one specific character first. The one who made the genuine grove sacrifice. His expression is not what he gives the others: it is not warmth, but it is recognition. He has known since the moment it happened.
+- *Perception DC 13 (active: scanning the arena perimeter):* Spots the arena weapons before Mars announces them. The player has one round of planning.
+- *Survival DC 12 (active: reading the arena as terrain):* Cover positions, phasing building behavior (they materialize solid), approach routes. Advantage on first positioning decision in any combat.
+- *Religion DC 13 (passive -- character with +3 or better Religion):* Recognizes the Armilustrium form. Mars is conducting a judgment ritual in a shape Rome understands. That is a choice, not an accident. A character who recognizes this can open Option C with that frame and gain +2 to their first Persuasion roll if they also succeed History DC 14 below.
+- *Nature DC 12 (passive -- character with +2 or better Nature):* The black sand has no natural origin. No heat, no mineral signature. It came with the god. This is not a place that will respond to environmental manipulation; it will respond to what Mars decides.
+- *Arcana DC 14 (passive -- character with +4 or better Arcana):* Divine stasis, not a spell. The witnesses are frozen because they are witnesses. Mars intends this record. This information matters for Option C: invoking the witnesses as the reason the argument must be made honestly is an argument he finds structurally correct.
+- *Sleight of Hand DC 14 (active: concealing a small weapon before entering):* On success, one hidden weapon carried in. Mars may notice; if the weapon is used in Option B, narrate it honestly. He will comment.
+
+**Temporal gate: Mars' first look.**
+
+One round only. Before the party reacts to his arrival.
+
+- *Insight DC 13 (active: watching his eyes before he speaks, window closes when he addresses the party):* Mars looks at one specific character first -- the one who made the genuine grove sacrifice. His expression is not what he gives the others: not warmth, but recognition. He has known since the moment it happened.
 - *What it opens:* That character has advantage on the first Option C argument if they open with the grove sacrifice. Mars respects that they were watching what he was watching.
-- *Why the window closes when Mars speaks:* The moment he addresses the party, the god is performing judgment. The private look is over. After that everyone gets the same read: impassive, god-sized, waiting. You cannot retrieve the recognition once the public face goes on.
+- *Why the window closes:* The moment he addresses the party, the god is performing judgment. The private look is over. You cannot retrieve the recognition once the public face goes on.
 
-**Option C partial success structure (Persuasion or Performance).**
+**Option A combat checks (Champion Trial):**
 
-Run all three valid arguments with texture, not just pass/fail:
+- *History DC 14 (passive -- character with +4 or better History, hearing Fausta's name):* The Battle of the Frozen Rhine is in military records. This was real. She was real. Knowing this changes how you fight: she respects endurance and discipline, not tricks. Feints have no effect; she has seen them.
+- *Investigation DC 14 (active: examining arena weapons before grabbing one):* Find the weapon best suited to your approach, or identify which weapon has the most dangerous cost for your character's build. One round of assessment, taken before combat begins or as an action if combat has started.
+- *Acrobatics DC 13 (active: dodging Fausta's Frozen Advance using terrain):* Advantage on the Constitution save that round.
+- *Athletics DC 13 (active: grappling Fausta to reduce her movement):* Contested vs. her Strength (+5). Success drops her speed to 0 until start of your next turn. Her Frozen Advance cannot trigger.
+- *Medicine DC 12 (active: bonus action triage using Healer's Kit or proficiency):* Stabilizes a downed ally without a spell slot. Mars does not intervene in medicine.
 
-*An argument that lands:*
-- 5 below DC 19: He listens. He does not move. He says: "Say it again, differently." DC drops to 17 for the second attempt. That is a gift. Take it.
-- DC 19 exact: He adjusts one term of the trial. The outcome range expands by one option. Name the expansion specifically.
-- DC 24: He concedes and explains why. One sentence. Use the Session 0 character material: he references something specific about that character that nobody told him. He has been watching since Session 1. Let that land.
+**Option B combat checks (Full Party vs. Mars):**
+
+- *Stealth DC 15 (active: repositioning behind a phasing building while Mars focuses on another character):* On success, he wastes a movement action pivoting to your new position. On failure, he pivots immediately and you become his priority.
+- *Intimidation DC 15 (active: a show of fearlessness as a replacement for one attack action):* On success, Mars pauses, says "...Interesting," and you gain advantage on your next attack or saving throw. He respects *virtus* in this form. On failure, the round costs an attack but not more.
+- *Athletics DC 13 (active: combat maneuvering, grappling, or terrain use):* Standard combat application. Mars' stat block lists his Strength; contested checks are available.
+- *Animal Handling DC 12 (passive, if Cassia or her crow familiar is present):* The crow circling one witness is not fear behavior -- it is attention behavior. It is pointing at the person Mars first looked at. That person made the genuine sacrifice. The crow has been watching them since Session 3.
+
+**Option C checks (Trial of Voice):**
+
+- *Insight DC 15 (active: reading Mars' reactions between argument points):* His expression does not change. His posture does -- a degree toward arguments that interest him, away from those that don't. A character with this check can identify which of the three valid arguments is landing before committing fully.
+- *Persuasion DC 19 or Performance DC 19 (active: making the argument):*
+  - 5 below DC 19: He listens. He does not move. He says: "Say it again, differently." DC drops to 17 for the second attempt. That is a gift. Take it.
+  - DC 19 exact: He adjusts one term of the trial. The outcome range expands by one option. Name the expansion specifically.
+  - DC 24: He concedes and explains why. One sentence. Use the Session 0 character material: he references something specific about that character that nobody told him. He has been watching since Session 1. Let that land.
+- *History DC 14 (passive, during the honor argument):* Pairs with Religion DC 13 from the opening. If both checks were made, the character has a structured argument Mars recognizes as formally correct -- not just emotionally true. +2 to the Persuasion roll.
+- *Deception DC 16 (active: presenting a partial truth as the full truth):* On failure, he names it: "That is not what you believe. Say what you believe." DC rises by 2. On success, he accepts the framing -- and that character must maintain it. Changing it mid-argument cancels the success.
 
 *An argument that angers him:*
 - 5 below the anger threshold: "Try again. That was wrong." The trial continues. He is not done with them.
@@ -290,14 +340,12 @@ If Option C collapses -- not "angered him" bad, but "genuinely nobody can make a
 
 Any character with the Virtus virtue can invoke it here. They do not argue. They demonstrate. They step into the fighting circle that has been implied since Mars arrived, stand without a weapon, and wait.
 
-- DC 14 Wisdom save to hold still without flinching.
-- Success: Mars stops. He looks at them for a long moment. Then: "That. That is what I asked for." Trial terms reset to neutral. Option C is available again.
-- Failure: They flinch. Mars says nothing. The trial continues at normal parameters. Do not punish the attempt in narration: they tried. That is something.
+- *Wisdom save DC 14 (active: holding still without flinching):* Success: Mars stops. He looks at them for a long moment. Then: "That. That is what I asked for." Trial terms reset to neutral. Option C is available again. Failure: They flinch. Mars says nothing. The trial continues at normal parameters. Do not punish the attempt in narration: they tried. That is something.
 
 **The last Varro check.**
 
 If Varro is alive and present at the epilogue, and the party asks him directly what he thinks of what happened:
 
-- DC 12 Insight to know he is holding something back.
+- *Insight DC 12 (active: reading Varro during the epilogue):* Know he is holding something back.
 - If asked: he says it. One sentence. Write it before Session 5 based on what actually happened in the campaign. The structure is: "I didn't expect you to [specific action]. That surprised me. I'm hard to surprise."
 - This is not a mechanical reward. It is the last character moment of the campaign. Give it to the player who paid attention to Varro across five sessions. They earned it.
