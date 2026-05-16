@@ -149,7 +149,35 @@ Special cases: the *Haruspex* begins with 75 denarii (temple stipend front-loade
 
 **Mechanic:** Once per session, reroll one initiative (yours or an ally's, declared before or after the roll). As a bonus action, issue an order: one ally within 60 feet moves up to their speed without expending their reaction.
 
-**Senior Advancement:** Earned by successfully leading the unit through a crisis in the centurion's absence, where the optio's command decision determined the outcome. *Senior bonus:* The once-per-session initiative reroll applies to all allies simultaneously; the bonus action order becomes a free reaction, costing no action.
+### Advancement
+
+**Standard** (0 commendationes): Once per session, reroll one initiative (yours or an ally's). As a bonus action, issue an order moving one ally within 60 feet up to their speed.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Ductor* — Leader of men
+
+**Perk 1: *Impetus Ductoris*** — Once per short rest, when you give a verbal command to an ally who can hear you, they may immediately move up to half their speed as a reaction. This movement does not provoke opportunity attacks.
+
+#### Branch B: *Scrutator* — Investigator and disciplinarian
+
+**Perk 1: *Nota Suspectorum*** — You have advantage on Wisdom (Insight) checks to detect deception or gauge loyalty. When you spend at least 10 minutes interrogating a subject, the DM must tell you if the subject is actively lying, though not what the truth is.
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Auctoritas*
+
+**Perk 2: *Auctoritas*** — Your command presence is recognized by all ranks. Allied NPCs under your direct command have advantage on Wisdom saving throws against fear effects. Officers who outrank you must make a DC 14 Charisma saving throw to publicly countermand your orders in front of common soldiers; on a failure, they appear indecisive and lose one step of attitude among the soldiers present.
+
+#### Branch B (continued): *Retes Disciplinae*
+
+**Perk 2: *Retes Disciplinae*** — *(Latinus+)*
+You maintain a quiet network of informants within the unit. Once per session, you may learn the current location and general activity of any named soldier or camp NPC without making a check: the information is accurate to within the last 2 hours.
+*Requires Latini status: disciplinary authority over Roman-born soldiers is restricted to those with legal standing.*
 
 **Starting Equipment**
 
@@ -170,6 +198,25 @@ The optio commands from the rear of the formation: pushing stragglers forward, e
 **Role kit weight:** 54 lb | **Full kit with universal issue:** 71 lb. At CHA 13 or STR 14, carrying capacity is at least 195 lb; well within comfortable range.
 
 **Not issued:** No *pilum* (the staff replaces it in formation). No two-handed weapon. The optio is a command role, not a spearhead; their kit reflects the management of the line, not the assault on it.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Hamata* and *Scutum* with: arcane focus (rod or wand), component pouch, spellbook (Wizard only), padded armor or mage armor (Sorcerer/Warlock). Retain *Gladius*, *Pugio*, *Hastile optioni*, helmet, cloak, boots, belt, and wax tablet.
+
+**Cleric / Druid:** Replace *Scutum* with holy symbol (shield-mounted counts if proficient). Retain *Lorica Hamata* if class allows medium armor; replace with scale mail if not. Retain *Gladius* and *Pugio*; a Druid replaces the *Gladius* with a mace or staff.
+
+**Bard:** Replace *Lorica Hamata* with leather armor. Retain *Gladius* and *Pugio*; replace *Scutum* with a hand crossbow. Add a small personal instrument (horn or mandolin). Retain *Hastile optioni* as a club.
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** Replace *Lorica Hamata* with studded leather. Retain *Gladius* and *Pugio*; replace *Scutum* with a hand crossbow and shortsword.
+
+**Monk:** Replace *Lorica Hamata* and *Scutum* with clothing (Monk's Unarmored Defense applies). Replace *Gladius* with shortsword or two handaxes. Add 10 darts. Retain *Hastile optioni* as a Monk weapon (club).
+
+**Fighter / Barbarian:** No substitution required. Retain full kit.
+
+</details>
 
 <details>
 <summary><strong>The Optio's Daily Reality</strong></summary>
@@ -196,7 +243,7 @@ Centurion pay is *triplicarius*: three times standard wages, take-home approxima
 </details>
 
 <details>
-<summary><strong>History DC 13 (passive) — Chain of command and who reports to whom</strong></summary>
+<summary><strong>History +3 — Chain of command and who reports to whom</strong></summary>
 
 The chain runs: *miles* (legionary) to the *decanus* (tent-leader) to the *optio* to the centurion to the *tribunus* to the legate. Each link has defined authority and defined limits. An *optio* who gives orders that contradict the centurion's is insubordinate; an *optio* who fails to pass information up the chain is negligent. You know the difference, and you know which officers in this fort are currently walking the line between the two.
 
@@ -205,7 +252,7 @@ The legate's staff includes a *cornicularius* (senior administrative officer), a
 </details>
 
 <details>
-<summary><strong>History DC 15 (passive) — Political appointments vs. soldiers</strong></summary>
+<summary><strong>History +5 — Political appointments vs. soldiers</strong></summary>
 
 Not every officer in the Roman army earned the position. Tribune appointments in particular are often political: young men from senatorial families completing their military service before returning to Rome. Some of them are capable. Many of them are not. You can tell the difference within the first week of working with them, and you know which tribune this fort recently had was not there because of his military record.
 
@@ -214,7 +261,7 @@ The centurion system is more reliable: centurions generally rise through the ran
 </details>
 
 <details>
-<summary><strong>Insight DC 17 (active: watch who speaks privately with the dispatch rider over one session) — Who is reporting to whom outside the chain</strong></summary>
+<summary><strong>DC 17 Wisdom (Insight) — Who is reporting to whom outside the chain</strong></summary>
 
 Every large Roman military establishment has secondary information flows that bypass the official chain of command. The *frumentarii* (grain officers) are the most formal of these, but they are not the only channel. Several officers in this fort are filing information to Rome through routes that do not pass through Corvinus's desk. You do not know which ones or what they are saying. But you know the pattern: when the legate is surprised by an order that should have required his input, someone else's information got there first.
 
@@ -236,7 +283,33 @@ If you spend a session paying attention to which soldiers have private conversat
 
 **Mechanic:** You always know the current day's password and the complete patrol schedule. You can create a false password (DC 14 Deception, detected on DC 15 Investigation by anyone who has seen the real one). You know which posts are currently manned and by whom.
 
-**Senior Advancement:** Earned by identifying and documenting a compromised guard or deliberate infiltration: catching someone using a patrol gap intentionally, not by accident. *Senior bonus:* The false password DC increases from 14 to 17; once per session, declare retroactively that a patrol gap was covered, turning one ambush or infiltration attempt into a forewarned situation.
+### Advancement
+
+**Standard** (0 commendationes): Know the current day's password and full patrol schedule. Create a false password (DC 14 Deception). Know which posts are manned and by whom at all times.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Vigilator* — Watchmaster
+
+**Perk 1: *Custodia Perfecta*** — You have advantage on Wisdom (Perception) checks while on guard duty or watching a fixed point. Allied characters you are directly supervising cannot be surprised while you are conscious and not incapacitated.
+
+#### Branch B: *Infiltrator* — Counterintelligence operative
+
+**Perk 1: *Lapsus Clandestinus*** — You have advantage on Dexterity (Stealth) checks to move through occupied civilian spaces (markets, taverns, crowds). When you follow a target for more than 1 hour without being detected, you automatically learn their next planned meeting or destination.
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Patres Stationis*
+
+**Perk 2: *Patres Stationis*** — You have trained a reliable watch rotation. Once per long rest, you may designate up to two allied NPCs as your watch. While they are on duty under your direction, you and the rest of the contubernium gain the benefits of a short rest during what would otherwise be a guard shift.
+
+#### Branch B (continued): *Persona Falsa*
+
+**Perk 2: *Persona Falsa*** — You have built a civilian cover identity registered with the Frumentarius network. Once per session, you may invoke this identity to pass as a non-military person. Any NPC not already suspicious of you must succeed on a DC 15 Wisdom (Insight) check to see through the cover.
 
 **Starting Equipment**
 
@@ -255,6 +328,25 @@ The tesserarius moves through the fort at night: checking posts, delivering the 
 **Role kit weight:** 47 lb | **Full kit with universal issue:** 64 lb. Light enough to move through the fort without generating sound that carries ahead.
 
 **Not issued:** No *pilum* (range engagement inside a fort is not the watch officer's role). No heavy armor. The tesserarius is not the first line; they are the person who ensures the first line is where it should be.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Squamata* with padded armor or mage armor. Replace *Scutum* with arcane focus (rod or wand) and component pouch. Add spellbook (Wizard only). Retain *Gladius*, helmet, cloak, boots, and belt with wax tablet.
+
+**Cleric / Druid:** Retain *Lorica Squamata* if class allows medium armor; replace with *Linothorax* if not. Replace *Scutum* with holy symbol (worn on cord or belt); a Druid replaces the *Gladius* with a mace or wooden staff.
+
+**Bard:** Replace *Lorica Squamata* with leather armor. Retain *Gladius*; replace *Scutum* with a hand crossbow. Add a small personal instrument (horn or mandolin).
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** No substitution required. The Tesserarius's standard kit is already well suited to Rogue builds. Retain full kit.
+
+**Monk:** Replace *Lorica Squamata* and *Scutum* with clothing (Monk's Unarmored Defense applies). Replace *Gladius* with shortsword or two handaxes. Add 10 darts.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit.
+
+</details>
 
 <details>
 <summary><strong>The Tesserarius's Daily Reality</strong></summary>
@@ -281,7 +373,7 @@ The tesserarius position gives you a specific asset that most soldiers lack: a d
 </details>
 
 <details>
-<summary><strong>Role access (no check) — Official patrol schedule and gate assignments</strong></summary>
+<summary><strong>Tesserarius — Official patrol schedule and gate assignments</strong></summary>
 
 The fort operates four watches through the night, each approximately three hours. The north gate is guarded in pairs; the east and west posterns are single-sentry positions with a roving check every two hours. The principia (headquarters building) has its own guard independent of the wall rotation.
 
@@ -290,7 +382,7 @@ The password changes daily. The rotation for who receives it first follows senio
 </details>
 
 <details>
-<summary><strong>Perception DC 15 (passive: accumulated from your nightly rounds) — Gaps in the patrol pattern</strong></summary>
+<summary><strong>Perception +5 — Gaps in the patrol pattern</strong></summary>
 
 No patrol schedule is perfectly enforced. The east postern's roving check runs long when Decanus Arvina is on duty: he stops at the grain store to talk to the night worker. The northwest corner of the outer wall has a blind spot between the third and fourth watch that the wall layout creates structurally. These gaps are in your log. They exist in every fort and every experienced soldier knows they exist.
 
@@ -299,7 +391,7 @@ The relevant question is not whether the gaps exist but whether anyone has been 
 </details>
 
 <details>
-<summary><strong>Investigation DC 17 (active: spend a session reviewing your watch log for anomalies) — Compromised guards and outside contacts</strong></summary>
+<summary><strong>DC 17 Intelligence (Investigation) — Compromised guards and outside contacts</strong></summary>
 
 Three soldiers on the current rotation have behavior patterns that require explanation. One is always asleep at his post but never formally reported: someone is covering for him. One has been at the east postern specifically on the three nights in the past month when the civilian settlement outside the walls reported unusual sounds. One submitted a watch log for a night when you can confirm he was not actually at his assigned position.
 
@@ -323,7 +415,37 @@ None of this is in the official record. You noted it in a separate document. The
 
 **Mechanic:** While you carry the eagle, all allies within 30 feet have advantage on saving throws against fear effects. If the eagle falls (you drop it or die while carrying it), all allies within 60 feet make a DC 16 Wisdom saving throw or become frightened for one minute. Once per session, invoking the eagle before a combat grants all allies a free bonus action on their first turn.
 
-**Senior Advancement:** Earned by recovering the eagle after it falls in combat: the DC 16 Wisdom save succeeds, the eagle is reclaimed, and the bearer continues carrying it in the same session. *Senior bonus:* The fear-immunity aura expands from 30 ft to 60 ft; the pre-combat eagle invocation now grants all allies advantage on their first attack roll in addition to the free bonus action.
+### Advancement
+
+**Standard** (0 commendationes): While carrying the eagle, allies within 30 feet have advantage on fear saving throws. Once per session, invoke the eagle before combat to grant allies a free bonus action on their first turn.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Bellator* — Warrior-bearer
+
+**Perk 1: *Aquila Vincit*** — While you carry the *aquila*, allied soldiers within 30 feet have advantage on saving throws against being frightened. As a bonus action, you may issue a battle cry, granting allies within 30 feet advantage on their next attack roll before the end of their next turn.
+
+#### Branch B: *Custos Aquilae* — Sacred guardian of the eagle
+
+**Perk 1: *Memoria Sacra*** — You have learned the rites of the *aquila*'s sacred maintenance. When you perform a 10-minute ritual prayer at the start of a day, roll a d6. On a 4 or higher, Mars grants a boon: all allies within 60 feet gain +1 to attack rolls until your next long rest. This ritual cannot be performed if the unit has an unresolved corruption penalty.
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Fortitudo Legionis*
+
+**Perk 2: *Fortitudo Legionis*** — *(Civis)*
+When you are reduced to 0 hit points while carrying the *aquila*, you may choose to remain conscious with 1 hit point. This feature recharges after a long rest. If the *aquila* falls to the ground, all allies within 60 feet must make a DC 13 Wisdom saving throw or become frightened until the start of their next turn.
+*Requires full citizenship: the right to die for the aquila is a legal and religious privilege of Roman citizens.*
+
+#### Branch B (continued): *Nexus Aquilae*
+
+**Perk 2: *Nexus Aquilae*** — *(Civis + Religion proficiency)*
+You are a living conduit between the unit and Mars. Once per long rest, when an ally within 60 feet would be reduced to 0 hit points, you may use your reaction to redirect that damage to the *aquila* instead. The *aquila* is treated as an object with AC 18 and 20 hit points for this purpose. If the *aquila* reaches 0 hit points, it is desecrated: a major narrative consequence.
+*Requires citizenship and religious training: this rite is reserved for those bound to Rome by law and to Mars by vocation.*
 
 **Starting Equipment**
 
@@ -346,6 +468,25 @@ The aquilifer's kit is shaped by one constraint: one hand holds the eagle, alway
 **Class substitution:** *Lorica Segmentata* requires heavy armor proficiency (Fighter, Paladin, War/Forge Cleric). Without it, the legion issues *Lorica Hamata* instead: same visual weight, slightly less protection, no proficiency required. The STR 15 prerequisite still applies: the eagle's weight demands it regardless of armor choice.
 
 **Note on the eagle:** The *aquila* is not personal equipment. It belongs to the legion. Its weight (approximately 15 lb for the gilded bronze assembly) is the bearer's burden in the field. When secured in the *principia*, it is guarded under separate protocol and is not the aquilifer's responsibility to stand watch over personally.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** The Aquilifer's STR 15 prerequisite and the one-hand eagle requirement make this role a poor fit for arcane casters in combat, but the appointment is possible. Replace *Lorica Segmentata* with mage armor or padded armor. Retain *Gladius* if proficient; otherwise replace with a dagger or arcane focus. Retain helmet, cloak, boots, and belt. The *aquila* always occupies one hand.
+
+**Cleric / Druid:** Replace *Lorica Segmentata* with scale mail if class does not allow heavy armor. Retain *Gladius* (Druid: replace with mace). Holy symbol worn under armor or on the belt; does not conflict with eagle-bearing.
+
+**Bard:** Replace *Lorica Segmentata* with leather armor. Retain *Gladius* if proficient; otherwise replace with a shortsword. The eagle occupies one hand, leaving the other for a one-handed weapon only.
+
+**Paladin / Ranger:** No substitution required. Retain full kit. Paladin is the natural fit: STR 15, heavy armor, one hand free for the eagle.
+
+**Rogue:** Replace *Lorica Segmentata* with studded leather. Retain *Gladius* (used as a finesse weapon one-handed; the eagle occupies the other hand).
+
+**Monk:** The STR 15 prerequisite and the Aquilifer's combat demands are unusual for a Monk. Replace *Lorica Segmentata* with clothing (Unarmored Defense applies). The *aquila* occupies one hand; the other is free for Monk weapon strikes. Add 10 darts.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit.
+
+</details>
 
 <details>
 <summary><strong>The Aquilifer's Daily Reality</strong></summary>
@@ -374,7 +515,7 @@ The soldiers around you know your name. This is not universal. Most soldiers in 
 </details>
 
 <details>
-<summary><strong>History DC 13 (passive) — This legion's history and battle honors</strong></summary>
+<summary><strong>History +3 — This legion's history and battle honors</strong></summary>
 
 The eagle has been with this legion for generations. Its current casing dates to a repair done after a Dacian campaign forty years ago: a silversmith in Carnuntum did the work, and his mark is still on the base. Every *aquilifer* since then has known that mark by touch in the dark.
 
@@ -383,7 +524,7 @@ The battle honors attached to the eagle's shaft include campaigns in Britannia, 
 </details>
 
 <details>
-<summary><strong>History DC 15 (passive) — Lost eagles and the men responsible</strong></summary>
+<summary><strong>History +5 — Lost eagles and the men responsible</strong></summary>
 
 Three legions' eagles were lost at Teutoburg: XVII, XVIII, XIX. Their numbers were never reused. Two of the three eagles were eventually recovered under Augustus and Germanicus, through intelligence operations and punitive campaigns that lasted decades.
 
@@ -394,7 +535,7 @@ An *aquilifer* who loses the eagle does not survive the event as a practical mat
 </details>
 
 <details>
-<summary><strong>Religion DC 17 (passive: transmitted at appointment; you know it if Religion +7 or better) — The blessing spoken over the eagle</strong></summary>
+<summary><strong>Religion +7 — The blessing spoken over the eagle</strong></summary>
 
 The formal dedication spoken over the eagle during installation is a legally binding oath under Roman military law. It constitutes a contract between the bearer and Jupiter Optimus Maximus, witnessed by the legion. Breaking it is not a disciplinary infraction: it is a religious offense that carries specific divine consequence.
 
@@ -416,7 +557,33 @@ You know the text. You know why Metellus was found dead without it having been s
 
 **Mechanic:** Access to the unit savings fund (currently 100 gp at campaign start). Drawing on the fund requires DC 14 Persuasion (a majority of the unit votes to authorize it) or DC 18 Deception (forging the ledger, detected on DC 16 Investigation by anyone who checks). The fund grows when the party completes supply missions or recovers assets.
 
-**Senior Advancement:** Earned by identifying and documenting financial leverage used against a soldier in the unit: locating the debt connection described in the DC 17 knowledge gate and establishing it in writing. *Senior bonus:* The unit fund grows by 25 gp at the start of each session; the DC to authorize fund withdrawal drops from 14 to 11 (the unit trusts the signifer's judgment without extended debate).
+### Advancement
+
+**Standard** (0 commendationes): Access to the unit savings fund (100 gp at campaign start). Authorize withdrawals via DC 14 Persuasion or detect forgery via DC 16 Investigation.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Auctor* — Financial guardian
+
+**Perk 1: *Peculium Augetur*** — You have direct access to the unit's savings account. Once per session, you may draw up to 15 gold pieces from the unit's collective fund (tracked as a shared resource). You gain advantage on Charisma (Persuasion) checks with merchants and bankers when citing official legion accounts.
+
+#### Branch B: *Cerberus* — Debt enforcer
+
+**Perk 1: *Nexus Debitorum*** — You know precisely who owes what to whom across the camp and *vicus*. Once per session, you may reveal that a named NPC owes the unit a formal debt (the DM must make this debt real and plot-relevant going forward). NPCs who owe you money have disadvantage on Charisma checks made against you.
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Creditum Imperiale*
+
+**Perk 2: *Creditum Imperiale*** — Your reputation as an honest *signifer* opens doors in Roman financial networks. You can secure credit of up to 50 gold pieces from any Roman merchant or banker without collateral, repayable within 30 days. Military NPCs treat you as one rank higher for social interaction purposes when financial matters are in play.
+
+#### Branch B (continued): *Retes Pecuniae*
+
+**Perk 2: *Retes Pecuniae*** — You have become the informal banker of the region. You learn automatically when any named NPC in or near the camp receives or spends a significant sum (20 gp or more). Once per session, you may intercept, freeze, or redirect one such payment, with narrative consequences determined by the DM.
 
 **Starting Equipment**
 
@@ -438,6 +605,25 @@ The signifer carries the *signum* in one arm in the field: a pole standard toppe
 **Not issued:** No shield (the standard occupies the arm position a shield would require). No two-handed weapon. The banker's kit is not combat equipment but must accompany the signifer between sessions for duty purposes.
 
 **Note on the signum:** The *signum* belongs to the unit sub-element, not the signifer personally. Its weight (approximately 8 lb) is carried in the field. Between operations, the signifer is responsible for its safe storage or posting.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Hamata* with padded armor or mage armor. Add arcane focus (rod, wand, or for Wizard: carved bone stylus integrated into the document satchel), component pouch, and spellbook (Wizard only). The *signum* occupies one hand; the other holds the arcane focus when casting. Retain cloak, boots, belt with banker's satchel, and Calligrapher's Supplies.
+
+**Cleric / Druid:** Retain *Lorica Hamata* if class allows medium armor. Holy symbol worn on cord or belt; shield-mounting is not possible since the *signum* occupies that arm. Druid replaces *Gladius* with a mace or wooden staff.
+
+**Bard:** Replace *Lorica Hamata* with leather armor. The *cornu* or small instrument is a natural fit for a Bard *signifer*. Retain *Gladius*. Add a small personal instrument (mandolin or horn).
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** Replace *Lorica Hamata* with studded leather. Retain *Gladius*. The absence of a shield is already standard for this role and suits Rogue combat style.
+
+**Monk:** Replace *Lorica Hamata* with clothing (Monk's Unarmored Defense applies). Replace *Gladius* with shortsword or two handaxes. Add 10 darts. The *signum* functions as a Monk quarterstaff equivalent when used as a weapon.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit.
+
+</details>
 
 <details>
 <summary><strong>The Signifer's Daily Reality</strong></summary>
@@ -466,7 +652,7 @@ Advancement from signifer goes in two directions. The combat track leads to opti
 </details>
 
 <details>
-<summary><strong>Role access (no check) — Who has savings deposited and how much</strong></summary>
+<summary><strong>Signifer — Who has savings deposited and how much</strong></summary>
 
 Twelve soldiers in this unit have active savings accounts with the *signifer*. The amounts range from a few dozen denarii (new recruits who have not had time to save) to over 200 denarii (veterans who have been on the frontier for multiple tours and have nowhere else to put it).
 
@@ -475,7 +661,7 @@ The death benefits ledger lists the named beneficiary for each soldier: mostly f
 </details>
 
 <details>
-<summary><strong>Investigation DC 15 (passive: reading patterns in the ledger over several pay cycles) — Which soldiers are in debt</strong></summary>
+<summary><strong>Investigation +5 — Which soldiers are in debt</strong></summary>
 
 Seven soldiers in the current rotation have debts that exceed their savings deposits. Two of these are gambling debts, which is illegal under military law but universally practiced. Three are supply debts to the quartermaster that have been rolling over without resolution. Two are debts to individuals outside the fort: the civilian settlement has a moneylender who charges rates that are technically extortionate.
 
@@ -484,7 +670,7 @@ Soldiers with unresolvable debts are vulnerable to pressure. This is not specula
 </details>
 
 <details>
-<summary><strong>Investigation DC 17 (active: cross-reference the ledger against the visitor log from the past month) — Debts used as leverage</strong></summary>
+<summary><strong>DC 17 Intelligence (Investigation) — Debts used as leverage</strong></summary>
 
 One of the debts currently held against a soldier in this unit connects directly to a name that appears in Brutus's correspondence network. The moneylender in the civilian settlement is not operating independently. The debt was extended deliberately, to a specific soldier, at a time that correlates with the Tribune's visit to this fort. You can document this if you spend a session reviewing the ledger against the visit records.
 
@@ -506,7 +692,35 @@ The soldier in question does not know who owns his debt.
 
 **Mechanic:** As a bonus action in combat, signal a formation change: all allies within 60 feet who can hear you shift into or out of formation without expending movement or their reaction. Once per session, signal a false retreat (DC 15 Performance, opposed by enemy commander's Insight) to draw enemies out of position; on success, the enemy unit moves toward the apparent retreat for one round.
 
-**Senior Advancement:** Earned by executing the false retreat signal successfully in a real engagement, where the enemy commander responds and the outcome of the engagement changes as a result. *Senior bonus:* The false retreat is no longer once per session: it can be attempted any time the DC 15 Performance check is available; the formation change signal now affects allies within 90 ft instead of 60 ft.
+### Advancement
+
+**Standard** (0 commendationes): As a bonus action, signal a formation change for all allies within 60 feet. Once per session, sound a false retreat (DC 15 Performance vs. enemy Insight).
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Tubicen* — Signal master
+
+**Perk 1: *Signale Perturbans*** — As an action, you may sound a false or contradictory tactical signal. All enemies within 60 feet who can hear it must succeed on a DC 13 Wisdom saving throw or spend their next action following the false signal rather than their intended action.
+
+#### Branch B: *Praeceptor* — Teacher and cultural bridge
+
+**Perk 1: *Vox Concordiae*** — *(requires Performance proficiency)*
+Your music creates genuine morale improvement. During a short rest, you may perform to allow allies who can hear you to spend one fewer Hit Die while gaining the same healing. Alternatively, your performance can reduce one unit member's exhaustion level by 1 (once per long rest).
+*Requires Performance proficiency: the diplomatic power of music demands formal training.*
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Maeander Hostium*
+
+**Perk 2: *Maeander Hostium*** — After observing a coordinated group of enemies for 1 minute, you can predict their next tactical movement. The DM must describe their intended formation shift, retreat trigger, or next coordinated action before it occurs. This works once per encounter.
+
+#### Branch B (continued): *Lingua Barbarorum*
+
+**Perk 2: *Lingua Barbarorum*** — You have used music as a bridge across the cultural divide. You learn one barbarian language of your choice (Germanic, Celtic, or Dacian). Allied Germanic NPCs have their initial attitude improved by one step toward you. You can attempt to communicate through music with creatures that share no language with you, using a Performance check contested by the creature's Insight.
 
 **Starting Equipment**
 
@@ -526,6 +740,25 @@ The cornicen's job requires breath, volume, and sustained physical output. The k
 **Not issued:** No helmet with extended cheek guards (blocks the mouthpiece). No heavy armor. No shield as standard: the *cornu* is carried over the shoulder on a leather strap between signals and requires both hands during active use, which makes a shield a management problem rather than an outright impossibility. A player who wants to carry a shield does so at the cost of time to transition between shield position and horn position; in a fast-moving engagement, this is a real tradeoff.
 
 **Note on the cornu:** The *cornu* belongs to the fort's supply. Its weight (approximately 6 lb for the curved bronze instrument) is carried on a shoulder strap. Active signaling requires both hands on the horn; during that time, the gladius is sheathed.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Squamata* with padded armor or mage armor. Add arcane focus and component pouch. The *cornu* itself can serve as a spellcasting focus for Bard; for Wizard/Sorcerer/Warlock, a secondary focus (rod or wand) is required alongside the horn. Retain *Gladius*, helmet, cloak, boots, and belt.
+
+**Cleric / Druid:** Retain *Lorica Squamata* if class allows medium armor; replace with *Linothorax* if not. Holy symbol worn on cord; the *cornu* and holy symbol do not conflict. Druid replaces *Gladius* with a mace or wooden staff.
+
+**Bard:** No substitution required. The *cornu* itself functions as a musical instrument focus for Bardic Inspiration. This is the natural fit for the role. Retain full kit.
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** No substitution required. The Cornicen's light kit suits Rogue builds. Retain full kit.
+
+**Monk:** Replace *Lorica Squamata* with clothing (Monk's Unarmored Defense applies). Replace *Gladius* with shortsword or two handaxes. Add 10 darts. The *cornu* is carried on shoulder strap as usual and does not conflict with Monk combat.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit.
+
+</details>
 
 <details>
 <summary><strong>The Cornicen's Daily Reality</strong></summary>
@@ -554,7 +787,7 @@ Advancement within the signals system moves toward the *tubicen*, who plays the 
 </details>
 
 <details>
-<summary><strong>Role proficiency (no check) — Roman signal vocabulary</strong></summary>
+<summary><strong>Cornicen — Roman signal vocabulary</strong></summary>
 
 The standard signal set includes: advance, halt, wheel left, wheel right, form testudo, break testudo, double time, retreat to standard, retreat to fort, officers to the command position, and three emergency signals (fire, breach, ambush). Each is a distinct horn pattern. You know all of them by reflex: you can sound them in the dark, while running, while someone is trying to kill you.
 
@@ -563,7 +796,7 @@ You also know the signals used by this specific legion, which differ in three pa
 </details>
 
 <details>
-<summary><strong>Perception DC 15 (passive: pattern recognized from prior engagements; you know it if Perception +5 or better) — Germanic tribal signals</strong></summary>
+<summary><strong>Perception +5 — Germanic tribal signals</strong></summary>
 
 The Germanic tribes do not use horns the way Rome does. They use a different instrument entirely: the *carnyx*, an upright bronze horn shaped like an animal head. Its sound is distinctive and carries differently from the *cornis*. You have heard it twice in the last year, both times before an engagement.
 
@@ -572,7 +805,7 @@ The Marcomanni use specific drum patterns as command signals in forest fighting.
 </details>
 
 <details>
-<summary><strong>History DC 17 (passive) — Counterfeiting Roman signals to break formations</strong></summary>
+<summary><strong>History +7 — Counterfeiting Roman signals to break formations</strong></summary>
 
 The standard Roman signal set is not secret. Every auxiliary unit that has operated alongside the legions for more than a year knows it. An enemy who has fought Romans long enough can reproduce the signals well enough to confuse a unit that is not expecting deception.
 
@@ -600,7 +833,33 @@ Soldiers designated *immunes* are exempt from the fatigue duties that fill most 
 
 **Mechanic:** You can stabilize a dying creature using Medicine (no action cost, just the check, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + WIS modifier HP. You can identify poison, disease, or unusual wound cause with DC 13 Medicine and no additional resources.
 
-**Senior Advancement:** Earned by correctly identifying and beginning treatment for a non-standard case: the plague differential, the spear corruption symptoms, or a documented poisoning instance. The identification must be specific and acted upon, not simply noted. *Senior bonus:* The daily healing roll increases to 3d6 + Wisdom modifier; once per session, stabilize one dying creature as a free action (no check, no action cost, no healer's kit required).
+### Advancement
+
+**Standard** (0 commendationes): Stabilize a dying creature with Medicine (no action cost, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + Wisdom modifier HP. Identify poison, disease, or wound cause at DC 13.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Archiater* — Field surgeon
+
+**Perk 1: *Periculum Superatur*** — When you stabilize a dying creature using Medicine, they regain 1 hit point rather than remaining at 0. When you spend a healer's kit charge to restore hit points, the target regains the maximum result for that die (no roll; treat as average plus Constitution modifier).
+
+#### Branch B: *Toxicologus* — Poison and disease specialist
+
+**Perk 1: *Venena Nota*** — You have advantage on Intelligence (Medicine) checks to identify poisons, diseases, and drugs. When you examine a poisoned creature, you automatically learn the poison's name and its effects: though not necessarily its source.
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Chirurgia Magistra*
+
+**Perk 2: *Chirurgia Magistra*** — Once per long rest, you may perform emergency surgery on a willing creature during a short rest. The target regains hit points as if they had spent all their Hit Dice (roll them all, add Constitution modifier per die), but they must complete a long rest before benefiting from this feature again.
+
+#### Branch B (continued): *Antidotum Perfectum*
+
+**Perk 2: *Antidotum Perfectum*** — During a short rest, you may prepare an antidote to any poison you have previously identified. This antidote cures the poison without requiring a saving throw and grants the target advantage on Constitution saving throws against that specific poison for 24 hours. You may have one antidote prepared at a time.
 
 **Starting Equipment**
 
@@ -620,6 +879,25 @@ The medicus does not fight if a better option exists, but they are fully authori
 **Role kit weight:** 43 lb | **Full kit with universal issue:** 60 lb. Designed for a high-Wisdom character who is unlikely to have the highest Strength in the unit.
 
 **Not issued:** No shield (prevents the free arm movement required for most medical procedures). No *pilum*. No heavy armor. The absence of heavier equipment is not a statement about courage; it is a practical decision about what will be useful in the situations this role encounters.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Hamata* with padded armor or mage armor. Add arcane focus and component pouch. A Wizard *medicus* carries the spellbook in the document satchel alongside medical reference texts: a natural integration. Retain *Pugio*, helmet, cloak, boots, belt with medical satchel, and Healer's Kit.
+
+**Cleric / Druid:** No substitution required for Cleric (medium armor allowed). Holy symbol worn under armor or on belt. A Life Cleric is the natural fit and the healing multiplier stacks excellently with the role's daily healing mechanic. Druid: replace *Lorica Hamata* with scale mail and *Pugio* with a mace or wooden staff.
+
+**Bard:** Replace *Lorica Hamata* with leather armor. Retain *Pugio*. Add a small personal instrument (horn or mandolin). Bardic Inspiration complements the Medicus's stabilization and field healing role.
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** Replace *Lorica Hamata* with studded leather. Retain *Pugio*. The Medicus's light combat role suits Rogue builds.
+
+**Monk:** Replace *Lorica Hamata* with clothing (Monk's Unarmored Defense applies). Replace *Pugio* with shortsword or two handaxes. Add 10 darts. Retain Healer's Kit and medical satchel.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit.
+
+</details>
 
 <details>
 <summary><strong>The Medicus's Daily Reality</strong></summary>
@@ -648,7 +926,7 @@ Advancement in the medical track moves toward *archiatros* (chief physician) at 
 </details>
 
 <details>
-<summary><strong>Medicine DC 13 (automatic: your sick parade gives you this each morning) — Field injuries and current patient status</strong></summary>
+<summary><strong>Medicine +3 — Field injuries and current patient status</strong></summary>
 
 Three soldiers are currently on the sick list: one with a festering arrow wound from a patrol engagement two weeks ago, one with fever of unknown origin, one with a broken wrist from a training accident. The fever case concerns you. Fever with this onset pattern is either ordinary illness or early-stage Antonine Plague. You are watching it.
 
@@ -657,7 +935,7 @@ You can tell the difference between a blade wound and a wound made to look like 
 </details>
 
 <details>
-<summary><strong>Medicine DC 15 (passive: if Medicine +5 or better, you know this without a roll) — Poison identification, antidotes, and plague differential</strong></summary>
+<summary><strong>Medicine +5 — Poison identification, antidotes, and plague differential</strong></summary>
 
 The Antonine Plague presents with fever, skin eruptions, and diarrhea in a specific sequence. Ordinary camp fever presents similarly but the sequence differs. You can distinguish them with Medicine DC 15 and three days of observation. The plague is fatal in roughly one-third of cases in civilian populations and somewhat lower in military ones, possibly due to better nutrition.
 
@@ -666,7 +944,7 @@ You know seven poisons that can be prepared from plants available within a two-d
 </details>
 
 <details>
-<summary><strong>Medicine DC 17 (active: requires Cassia at Ally tier first; then roll Medicine while examining affected patients) — What the spear's influence does to human bodies</strong></summary>
+<summary><strong>DC 17 Wisdom (Medicine) — What the spear's influence does to human bodies</strong></summary>
 
 *Access to this information requires Cassia's trust at Ally tier. Without it, this check cannot be made regardless of the result.*
 
@@ -690,7 +968,37 @@ There is a treatment that slows the physical symptoms. It does not reverse the u
 
 **Mechanic:** Cast *Augury* once per day without a spell slot. Before a session's main conflict, perform a pre-session divination by rolling 1d20 and giving the DM the result (they use it to calibrate one encounter that session, without telling you which one or how). Once per session, declare an action *nefastus* (ritually forbidden today): all party members gain advantage on the first saving throw of the session, and the DM removes one of their encounter options for that session.
 
-**Senior Advancement:** Earned when a divination prediction comes true in a session in a way that demonstrably protected the party: the reading was specific, it was acted on, and the outcome confirms it. *Senior bonus:* The *nefastus* declaration removes two encounter options instead of one; *Augury* can be cast twice per day.
+### Advancement
+
+**Standard** (0 commendationes): Cast *Augury* once per day without a spell slot. Pre-session divination roll calibrates one encounter. Once per session, declare an action *nefastus* for party advantage on the first saving throw of the session.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Augur Publicus* — Official Roman diviner
+
+**Perk 1: *Prodigium Declaratum*** — Once per session, you may formally declare that an omen is favorable or unfavorable for a specific planned action. If favorable: allies gain advantage on their first attack roll or ability check in the relevant encounter. If unfavorable: the DM must introduce at least one additional warning or complication before any consequence arrives.
+
+#### Branch B: *Mystes* — Mystery tradition initiate
+
+**Perk 1: *Ritus Antiquus*** — *(locked: Soldier background only)*
+You have been initiated into pre-Roman ritual practices that survived in the military's folk religion. You may perform a 1-hour ceremony to commune with local spirits. The DM reveals one hidden fact about the current location: an environmental truth, a historical event, or a spiritual significance: not a secret about a specific NPC.
+*Locked to Soldier background: knowledge of the old rites survives among long-service soldiers, not civilians.*
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Auspicia Maxima*
+
+**Perk 2: *Auspicia Maxima*** — *(Civis)*
+Your auguries carry legal force. Military commanders must delay major operations by at least one day if you formally declare the omens adverse, following Roman religious law. This grants the party one additional planning scene before any time-pressured encounter.
+*Requires full citizenship: the legal authority to halt military action on religious grounds belongs only to Roman citizens under the* lex auguralis.
+
+#### Branch B (continued): *Theologia Vetusta*
+
+**Perk 2: *Theologia Vetusta*** — You have reconciled Roman official religion with older local traditions, creating a personal theology recognized by neither but respected by both. You may speak with local spirits as if using the *speak with dead* spell (once per long rest), but the spirits are *genii loci* tied to the land, not the dead. Answers concern the land and its history, not specific individuals.
 
 **Starting Equipment**
 
@@ -710,6 +1018,25 @@ The haruspex is a religious specialist and an officer of the divination guild, n
 **Role kit weight:** 23 lb | **Full kit with universal issue:** 40 lb. The lightest non-Flamen kit in the unit.
 
 **Not issued:** No shield; no *gladius*; no *pilum*; no thrown weapons; no heavy armor. A haruspex who needs to fight has already failed at their primary function, which is to tell the commander whether to fight, and when, and under what conditions.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** No substitution to the armor required (*Linothorax* is already light). Add arcane focus and component pouch. The Wizard's arcane focus integrates naturally into the priestly satchel (carved bone stylus, engraved ring). Spellbook carried in the priestly satchel alongside the *libri haruspicini* tablets. Retain *Pugio*, cloak, boots, belt, and ritual supplies.
+
+**Cleric / Druid:** No armor substitution required. Holy symbol worn on cord alongside the ritual satchel; the priestly kit and holy symbol do not conflict. A Cleric *haruspex* with the Augury spell on their list doubles the role's divination capacity with no mechanical conflict. Druid: replace *Pugio* with a wooden staff or mace.
+
+**Bard:** No substitution required. The Haruspex's light kit suits Bard builds. Bardic Inspiration complements the pre-session divination role. Add a small personal instrument.
+
+**Paladin / Ranger:** No substitution required. Retain full kit. The *Pugio* is the only weapon; Paladin substitutes may wish to add a longsword as personal property.
+
+**Rogue:** No substitution required. The Haruspex's light kit and intelligence-gathering function suit Rogue builds naturally.
+
+**Monk:** Replace *Pugio* with shortsword or handaxe. The Haruspex wears no heavy armor already; Monk's Unarmored Defense applies by declining *Linothorax*. Add 10 darts. Retain all priestly and ritual supplies.
+
+**Fighter / Barbarian:** No armor substitution required (*Linothorax* is the minimum viable option for the role). A Fighter or Barbarian Haruspex is an unusual combination; the role's function remains unchanged.
+
+</details>
 
 <details>
 <summary><strong>The Haruspex's Daily Reality</strong></summary>
@@ -778,7 +1105,33 @@ Paterculus, this fort's *haruspex*, has been filing them as ordinary bad omens. 
 
 **Mechanic:** Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses: DC 13 Investigation reveals a weak point in a wall, door, or structure. Once per session, improvise a piece of equipment (battering ram, caltrop field, burning pitch container) from available materials with a DC 14 Smith's Tools or Mason's Tools check.
 
-**Senior Advancement:** Earned by improvising a critical piece of equipment that changes the outcome of a high-stakes encounter: the once-per-session improvise mechanic used at a pivotal moment, not a convenience. *Senior bonus:* Equipment improvisation no longer requires a check: automatic success; structural weakness assessment DC drops from 13 to 10.
+### Advancement
+
+**Standard** (0 commendationes): Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses at DC 13 Investigation. Once per session, improvise a piece of equipment from available materials (DC 14 Smith's or Mason's Tools).
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Architectus* — Field engineer
+
+**Perk 1: *Machina Belli*** — You can build or repair a siege engine (*ballista*, *scorpio*, *onager*) in half the listed construction time and at 75% of the listed cost. When you operate a siege engine you personally helped build or maintain, you add your proficiency bonus to damage rolls.
+
+#### Branch B: *Demolitor* — Demolitions and siege-breaking
+
+**Perk 1: *Calx Viva*** — You have learned to weaponize quicklime, pitch, and fire. During a short rest, you may prepare one incendiary device. When thrown (range 20/60), it covers a 10-foot-radius area: creatures in the area must succeed on a DC 14 Dexterity saving throw or take 2d6 fire damage; the area becomes difficult terrain for 1 minute.
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Castrametatio Perfecta*
+
+**Perk 2: *Castrametatio Perfecta*** — During a long rest in the field, you may direct the unit to construct basic field fortifications: palisade stakes, a ditch, and a firing platform. These grant allies inside +2 to AC against ranged attacks and advantage on Wisdom (Perception) checks until the fortifications are dismantled.
+
+#### Branch B (continued): *Destructor Murorum*
+
+**Perk 2: *Destructor Murorum*** — After studying a wall, fortification, or structure for 1 minute, you can identify its exact structural weakness. Siege checks targeting structures you have assessed are made with advantage, and the DM must tell you the minimum force (or exact placement) needed to bring down a specific section.
 
 **Starting Equipment**
 
@@ -799,6 +1152,25 @@ The faber works with their hands: hammering, cutting, lifting, and assembling. T
 **Role kit weight:** 56 lb | **Full kit with universal issue:** 73 lb (tools at fabrica, not field-carried). At STR 13, carrying capacity is 195 lb; well within comfortable range.
 
 **Not issued:** No *linothorax* (a fire hazard in forge work). No *paludamentum* (same reason: fabric near open flame is a liability). The faber's work environment means any item that catches sparks easily is an accident waiting to happen.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Hamata*, *Scutum*, and *Manica* with padded armor or mage armor. Add arcane focus and component pouch. Retain *Gladius*, *Dolabra*, helmet, cloak, boots, belt with tool loops, and tool kit access. An Artificer *faber* is the natural fit: the Artificer's crafting mechanics multiply the workshop and improvisation features directly.
+
+**Cleric / Druid:** Retain *Lorica Hamata* if class allows medium armor. Holy symbol worn on cord or belt. Druid: replace *Lorica Hamata* with scale mail and *Gladius* with a mace. Retain *Dolabra* (it is a tool as much as a weapon).
+
+**Bard:** Replace *Lorica Hamata* with leather armor. Retain *Gladius*; replace *Scutum* with a hand crossbow. Add a small personal instrument. Retain *Dolabra*, *Manica*, and tool kits.
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** Replace *Lorica Hamata* with studded leather. Retain *Gladius* and *Dolabra*; replace *Scutum* with a hand crossbow. Retain *Manica* and tool kits.
+
+**Monk:** Replace *Lorica Hamata*, *Scutum*, and *Manica* with clothing (Monk's Unarmored Defense applies). The *Dolabra* is a Monk weapon (treat as a handaxe). Add 10 darts. Retain tool kits.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit. This is the natural fit.
+
+</details>
 
 <details>
 <summary><strong>The Faber's Daily Reality</strong></summary>
@@ -867,7 +1239,39 @@ Under siege conditions, with the vibration of artillery and the weight of reinfo
 
 **Mechanic:** Forge military documents (DC 14 Forgery, detected on DC 15 Investigation by anyone who examines them). Access incoming dispatch copies as a matter of routine: you know what Rome officially knows about this fort, including what has and has not been reported. Produce legally binding Latin documents on request.
 
-**Senior Advancement:** Earned by using forged documents to meaningfully alter a significant plot event: not routine deception, but a document that changes an outcome the DM had set in motion. *Senior bonus:* The forgery DC drops from 14 to 11; once per session, access a specific piece of intelligence from Rome that arrived outside the standard dispatch system (DM provides one piece of information the official record does not contain).
+### Advancement
+
+**Standard** (0 commendationes): Forge military documents (DC 14, detected on DC 15). Routine access to incoming dispatch copies. Produce legally binding Latin documents on request.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Cornicularius* — Senior administrator
+
+**Perk 1: *Archivum Legionis*** — You have memorized legion administrative procedure. You can produce authentic-looking military documentation (orders, travel passes, census entries, duty rosters) in 10 minutes. The DC to detect your forgeries is equal to your Intelligence (Forgery Kit or Calligrapher's Tools) check result. You have advantage on Intelligence (History) checks related to Roman law and administration.
+
+#### Branch B: *Agens in Rebus* — Imperial intelligence operative
+
+**Perk 1: *Persona Non Grata*** — *(locked: Outlander background only)*
+You know how to erase administrative traces. Once per session, you may remove a named NPC (or yourself) from one official record: travel papers, census rolls, duty roster, or tribunal record. The erasure is detectable on a DC 16 Intelligence (Investigation) check.
+*Locked to Outlander background: only those who have lived outside Roman record-keeping understand how to unmake it.*
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Auctoritas Scriba*
+
+**Perk 2: *Auctoritas Scriba*** — *(Latinus+)*
+Your administrative authority is recognized formally. Once per session, you may invoke administrative procedure to delay any official action (arrest, requisition, formal investigation) by 24 hours, citing pending paperwork, missing authorizations, or required review. The delay is procedurally legitimate and cannot be overridden without a scene.
+*Requires Latini status: administrative authority to obstruct official action requires recognized legal standing.*
+
+#### Branch B (continued): *Rete Secretorum*
+
+**Perk 2: *Rete Secretorum*** — *(locked: Paladin class only)*
+You have assembled a network of verified, trustworthy informants across the Limes, and the Paladin's divine sense makes you a reliable node in the network. Once per session, you may send an encrypted message and receive a reply within 24 hours from any named fort within 100 miles of your location.
+*Locked to Paladin class: divine sense provides the verification system that makes the network's communications secure.*
 
 **Starting Equipment**
 
@@ -887,6 +1291,25 @@ The librarius spends most of their working time at a desk, but they are still a 
 **Role kit weight:** 53 lb | **Full kit with universal issue:** 70 lb. Standard for an INT 14 character with typical Strength.
 
 **Not issued:** No shield (document work requires free hands; a large oval shield becomes a liability when moving through doorways carrying materials). No heavy armor. No *pilum*. The librarius's protection against threats is primarily information: knowing what is coming before it arrives.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Squamata* with padded armor or mage armor. The arcane focus integrates naturally as a personal item in the document satchel (carved bone stylus, engraved ring). Spellbook carried in the document satchel (Wizard). Retain *Gladius*, *Pugio*, helmet, cloak, boots, belt, Calligrapher's Supplies, and Forgery Kit.
+
+**Cleric / Druid:** Retain *Lorica Squamata* if class allows medium armor. Holy symbol worn on cord or tucked into the document satchel: a librarius keeps personal items unobtrusive. Druid: replace *Gladius* with a wooden staff or mace; replace *Lorica Squamata* with scale mail.
+
+**Bard:** No substitution required. The Arcane Trickster Rogue and Bard are both noted as strong fits for this role. Retain full kit. Add a small personal instrument if desired.
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** No substitution required. The Librarius is identified as a strong Rogue fit. Retain full kit.
+
+**Monk:** Replace *Lorica Squamata* with clothing (Monk's Unarmored Defense applies). Replace *Gladius* with shortsword or two handaxes. Add 10 darts. Retain *Pugio*, document satchel, Calligrapher's Supplies, and Forgery Kit.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit.
+
+</details>
 
 <details>
 <summary><strong>The Librarius's Daily Reality</strong></summary>
@@ -957,7 +1380,35 @@ A dispatch from Brutus arriving before the excavation yielded its primary findin
 
 **Mechanic:** Move at full speed without penalty in forest or wilderness terrain. Advantage on Perception checks in wilderness. Identify tracks and determine creature count, approximate size, and timing (DC 12 Survival, no tools required). Once per session, call on a border informant for one piece of local intelligence (DM provides, 1d4 hours wait time).
 
-**Senior Advancement:** Earned by locating a target (person or group) that had gone cold: tracking mechanic succeeds after a failed initial attempt, and the contact or trail is found. *Senior bonus:* Border informant contact is immediate (no 1d4 hour wait); Survival advantage applies in any terrain, not only wilderness.
+### Advancement
+
+**Standard** (0 commendationes): Move at full speed without penalty in forest or wilderness. Advantage on Perception in wilderness. Track creatures (DC 12 Survival). Once per session, call on a border informant for local intelligence (1d4 hour wait).
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Speculare* — Scout-specialist
+
+**Perk 1: *Vestigia Legere*** — You can track creatures across any terrain type without penalty. When you spend at least 10 minutes examining a location, you can reconstruct a precise account of events that occurred there within the last 24 hours: who was present, what they did, and in what order.
+
+#### Branch B: *Reticularius* — Contact network handler
+
+**Perk 1: *Amici in Tenebris*** — *(requires Charisma 12 or higher)*
+You have cultivated a web of civilian informants: farmers, traders, and shepherds who report to you. Once per session, you may contact a local informant who can provide current information about enemy movements, strangers, or unusual events within a 30-mile radius.
+*Requires Charisma 12: this network is built on personal trust, not rank or pay.*
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Silva Nota*
+
+**Perk 2: *Silva Nota*** — You have mapped the surrounding wilderness in systematic detail. The party cannot be surprised when traveling through terrain you have previously scouted (within the current campaign region). Once per long rest, you may declare that you know a hidden route: the party avoids one random encounter and arrives 2 hours earlier than expected.
+
+#### Branch B (continued): *Larva*
+
+**Perk 2: *Larva*** — You have built a cover identity in the local civilian population, known under a false name and trade. NPCs do not connect you to the legion unless they have seen you in uniform or been told otherwise. You can move through civilian areas without triggering military-related wariness in NPCs, and hostile forces tracking the unit do not count you as a military target in civilian disguise.
 
 **Starting Equipment**
 
@@ -977,6 +1428,25 @@ The explorator operates beyond the fort perimeter, often alone or in pairs, for 
 **Role kit weight:** 43 lb | **Full kit with universal issue:** 60 lb. At DEX 13 and typical Strength, well within comfortable carry for multi-day movement.
 
 **Not issued:** No shield (impossible to move quietly through dense vegetation with a large oval shield; it also catches branches and announces position). No *pilum* (a patrol soldier cannot afford to throw their only polearm and leave it in an enemy who then retreats). No heavy armor. No *birrus* (the hood reduces peripheral vision in forest terrain, where the threats come from the sides and behind).
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Squamata* with padded armor or mage armor. Add arcane focus and component pouch. The Explorator's light kit and Stealth-optimized gear translate cleanly; the absence of shield and heavy armor is already standard. Retain *Gladius*, *Pugio*, *Verutum*, helmet, cloak, boots, belt, and Navigator's Tools.
+
+**Cleric / Druid:** Retain *Lorica Squamata* if class allows medium armor; replace with *Linothorax* if not. A Druid Explorator in wildshape is exceptionally effective at wilderness reconnaissance. Replace *Gladius* with a mace or wooden staff. Retain *Verutum* as thrown weapons.
+
+**Bard:** No substitution required. The Explorator's light kit suits Bard builds. Retain full kit. Add a small personal instrument.
+
+**Paladin / Ranger:** No substitution required. Retain full kit. Ranger is the natural fit: Natural Explorer directly applies, *Verutum* as thrown weapons, DEX-based combat style supported.
+
+**Rogue:** No substitution required. The Explorator is identified as a strong Rogue fit. Retain full kit. Cunning Action for patrol extractions is directly relevant.
+
+**Monk:** Replace *Lorica Squamata* with clothing (Monk's Unarmored Defense applies). Replace *Gladius* with shortsword or two handaxes. The *Verutum* (light thrown weapons) remain as Monk weapons. Add 10 darts. Retain Navigator's Tools.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit.
+
+</details>
 
 <details>
 <summary><strong>The Explorator's Daily Reality</strong></summary>
@@ -1047,7 +1517,39 @@ For the past month, Thusnelda's scouts have maintained a position with line-of-s
 
 **Mechanic:** Request information from the *frumentarii* network across the empire (DM provides after 1d4 days, encrypted courier round-trip). Use a coded communication system that cannot be traced to the unit by normal Investigation. Once per session, make a DC 13 Insight check against any named NPC to determine whether they are filing independent reports to Rome outside the official dispatch system.
 
-**Senior Advancement:** Earned by correctly identifying and documenting a double agent or compromised soldier, with the connection to Brutus's network established in the record and verifiable. *Senior bonus:* The NPC outside-reporting Insight check drops from DC 13 to DC 10; once per session, network information arrives in one round (the contact is already in position, no courier delay).
+### Advancement
+
+**Standard** (0 commendationes): Request information from the *frumentarii* network (1d4 day delay). Coded communication untraceable by normal Investigation. Once per session, DC 13 Insight to detect NPCs filing independent reports to Rome.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Annonarius* — Supply officer
+
+**Perk 1: *Cursus Annonae*** — You have mastered legion supply chain procedure. Once per session, you may requisition one item from the legion's stores (worth up to 25 gp) without payment, citing operational necessity. A commanding officer must make a DC 14 Charisma (Persuasion) check to formally deny the requisition; on a failure, the denial creates a paper record that reflects poorly on the officer.
+
+#### Branch B: *Senior Frumentarius* — Intelligence officer
+
+**Perk 1: *Suspecti Inversi*** — *(Civis)*
+You have turned an enemy informant. Once per session, you may reveal that a named NPC is secretly working for you. The DM makes this real retroactively, but the informant's information may be outdated, incomplete, or colored by their original loyalties.
+*Requires full citizenship: Frumentarii intelligence operations above supply cover require citizen authorization under the emperor's direct mandate.*
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Praefectus Annonae*
+
+**Perk 2: *Praefectus Annonae*** — *(Civis)*
+Your supply authority is formally recognized. You may redirect supplies between units without approval. Once per session, you may transfer one supply category (food, arrows, healing kits, repair materials) from another unit's allocation to yours, with no check required. The transfer creates an official record that the DM tracks as a narrative consequence.
+*Requires full citizenship: formal authority over inter-unit supply distribution is restricted to citizens under the annona regulations.*
+
+#### Branch B (continued): *Speculator Principis*
+
+**Perk 2: *Speculator Principis*** — *(Civis + Deception proficiency)*
+You have direct access to Frumentarius command structure. Once per session, you may submit an official report triggering an investigation into any named NPC. The investigation begins within 3 days. NPCs who know or suspect your Frumentarius affiliation have disadvantage on Charisma checks made against you.
+*Requires citizenship and Deception training: operating at this level demands both legal standing and the ability to lie convincingly to superiors.*
 
 **Starting Equipment**
 
@@ -1067,6 +1569,25 @@ The frumentarius's cover is a supply officer. The kit must look like a supply of
 **Role kit weight:** 44-45 lb depending on cloak | **Full kit with universal issue:** 61-62 lb. Unremarkable in both directions.
 
 **Not issued:** Nothing unusual. Deliberately. The frumentarius's kit is specifically designed to produce no observations.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Hamata* with padded armor or mage armor. The Frumentarius's cover is a supply officer; an arcane focus (rod or wand) passes as an administrative tool. Spellbook carried in the supply manifest case (Wizard). Component pouch worn under cloak. Retain *Gladius*, *Pugio*, helmet, cloak, boots, belt with manifest case, and Disguise Kit.
+
+**Cleric / Druid:** Retain *Lorica Hamata* if class allows medium armor. Holy symbol worn concealed under armor: the Frumentarius avoids advertising religious affiliation as a matter of operational habit. Druid: replace *Lorica Hamata* with scale mail and *Gladius* with a mace.
+
+**Bard:** No substitution required. The light kit and social skill focus suit Bard builds naturally. The musical instrument is a personal item kept concealed (not the Cornicen's *cornu*: something smaller and less military-looking). Retain full kit.
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** No substitution required. The Frumentarius is identified as the strongest Rogue fit in the unit. Deception, Insight, and Uncanny Dodge all apply directly. Retain full kit.
+
+**Monk:** Replace *Lorica Hamata* with clothing (Monk's Unarmored Defense applies). Replace *Gladius* with shortsword or two handaxes. Add 10 darts. Retain *Pugio*, cloak, boots, belt with manifest case, and Disguise Kit.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit.
+
+</details>
 
 <details>
 <summary><strong>The Frumentarius's Daily Reality</strong></summary>
@@ -1152,7 +1673,37 @@ If Brutus knew what was in the ground before Corvinus did, the entire chain of e
 
 **Mechanic:** Allies who observe your morning rites before a session (player acknowledgment that their character participated) gain +1 to death saving throws for that session. You can perform last rites that prevent a dead NPC from rising as a Lemur (*Dishonored Rest* risk removed). Once per session, ask for a divine sign and receive a yes/no answer (DM determines based on current divine standing).
 
-**Senior Advancement:** Earned by preventing a Lemur from rising under genuinely difficult conditions: lack of proper materials, active opposition, or time pressure that would normally make the rite impossible. *Senior bonus:* The death saving throw bonus increases from +1 to +2; the divine sign can be requested twice per session.
+### Advancement
+
+**Standard** (0 commendationes): Allies who observe morning rites gain +1 to death saving throws for the session. Last rites prevent NPC undead rising. Once per session, request a divine sign (yes/no answer).
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Pontifex* — Official military priest
+
+**Perk 1: *Benedictio Militum*** — During a short rest, you may lead a formal prayer to the tutelary deity of your choice. Allies who participate gain temporary hit points equal to your Wisdom modifier plus your proficiency bonus. Each ally may only benefit from this once per long rest.
+
+#### Branch B: *Confessor* — Spiritual counselor
+
+**Perk 1: *Confessio Tacita*** — Soldiers and camp residents trust you with things they would not tell anyone else. Once per session, a named NPC who interacts with you for 10 minutes or more will share one piece of information they would not normally reveal: not necessarily their deepest secret, but something genuine and useful. This works only on willing NPCs not currently under duress.
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Prodigium Imperativum*
+
+**Perk 2: *Prodigium Imperativum*** — *(Civis)*
+Your priestly authority can compel action on religious grounds. Once per session, you may declare a religious emergency (*prodigium*) requiring immediate attention. This declaration overrides non-military orders for up to 24 hours and grants the party access to restricted areas or personnel on religious grounds, with no check required.
+*Requires full citizenship: the authority to invoke prodigium with legal force belongs only to citizens eligible for the collegium of Roman priests.*
+
+#### Branch B (continued): *Sanctuarium*
+
+**Perk 2: *Sanctuarium*** — *(locked: City Watch or Soldier background only)*
+You may formally declare a space sacred. Any combat within a declared sanctuary requires all participants to make a DC 14 Wisdom saving throw or have disadvantage on attack rolls until the start of their next turn. The space does not prevent violence, but violation carries immediate social and legal consequences the DM must honor.
+*Locked to law-enforcement backgrounds: only those who know what sanctuary means under Roman law know how to invoke it with force.*
 
 **Starting Equipment**
 
@@ -1171,6 +1722,25 @@ The sacerdos is both a shrine keeper and a soldier. The kit is split between cer
 **Role kit weight:** 40 lb | **Full kit with universal issue:** 57 lb. The *paludamentum* replaces the *sagum* during ceremonies without changing the total weight.
 
 **Not issued:** No shield; no *gladius*; no *pilum*; no heavy armor. The sacerdos can requisition standard soldier kit from the armory if placed in combat conditions, but the default issue reflects the primary function of the role. A sacerdos in full *segmentata* conducting a burial rite is sending the wrong message to both the living and the dead.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** No armor substitution required (*Lorica Squamata* is medium; arcane casters without proficiency replace it with padded armor or mage armor). Add arcane focus and component pouch. A Wizard's spellbook integrates naturally with the priestly reference texts in the belt kit. Retain *Pugio*, ceremonial and daily cloak, boots, and priestly kit.
+
+**Cleric / Druid:** No substitution required. This is the natural fit for the role. Cleric holy symbol worn on cord or mounted on a belt item; a shield-mounted symbol is not standard issue but can be requested. A Life Cleric or Nature Cleric Sacerdos makes excellent use of the morning rites mechanic. Druid: replace *Pugio* with a wooden staff or mace.
+
+**Bard:** No armor substitution required (*Lorica Squamata* is medium; Bard replaces with leather armor). Retain *Pugio*. A small personal instrument complements the morning rites and counseling functions. Bardic Inspiration suits the Confessor branch.
+
+**Paladin / Ranger:** No substitution required. Retain full kit. A Paladin *sacerdos* whose holy symbol also functions as a divine focus has no mechanical gaps.
+
+**Rogue:** Replace *Lorica Squamata* with studded leather. Retain *Pugio*. The Sacerdos's access to personal confidences and fort social networks suits Rogue information-gathering.
+
+**Monk:** Replace *Lorica Squamata* with clothing (Monk's Unarmored Defense applies). Replace *Pugio* with shortsword or handaxe. Add 10 darts. Retain all priestly kit items.
+
+**Fighter / Barbarian:** No armor substitution required if proficiency allows (*Lorica Squamata* is medium; Barbarian without medium proficiency replaces with clothing). Retain *Pugio*.
+
+</details>
 
 <details>
 <summary><strong>The Sacerdos's Daily Reality</strong></summary>
@@ -1241,7 +1811,41 @@ Two sets of offerings in the past month were not filed through the official chan
 
 **Mechanic:** Once per session, invoke Mars directly for +1d6 damage on one weapon attack or +1d6 on one saving throw (Mars notices: this adds 1 to the collective corruption track). You can perform the *devotio* as a special action (see Session 5 mechanics). Mars tells you directly, without a check, when he is actively present in a scene: the DM notifies this player privately.
 
-**Senior Advancement:** Earned by completing a full *devotio* war-vow to Mars Ultor: the vow made before a witness, the promised act fulfilled under opposition, and the fulfillment reported to a priest who records it. *Senior bonus:* The +1d6 invocation no longer adds to the collective corruption track; Mars communicates more clearly when present (DM provides one short sentence of intent rather than a presence notification alone).
+### Advancement
+
+**Standard** (0 commendationes): Once per session, invoke Mars for +1d6 damage or saving throw (adds 1 to collective corruption). Perform *devotio* as a special action. Mars notifies you privately when he is actively present.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Bellator Dei* — Divine warrior
+
+**Perk 1: *Devotio Maior*** — *(Civis + freeborn status only)*
+You have sworn the greater *devotio*, consecrating your kills to Mars. Once per long rest, when you reduce an enemy to 0 hit points, you may consecrate the kill. Until the end of your next turn, you add your proficiency bonus to all damage rolls. Using this feature increases your Corruption by 1.
+*Requires full citizenship and freeborn status: the devotio is a Roman legal-religious act that requires free Roman ancestry to be valid in the eyes of Mars.*
+
+#### Branch B: *Mysteriarch* — Mystery rite leader
+
+**Perk 1: *Tria Arma*** — *(locked: requires genuine Mars worship: not available to those whose primary allegiance is to another deity)*
+You have received the three sacred weapons of Mars in ritual vision. Once per short rest, when you make a weapon attack with a spear, javelin, or sword, you may call on Mars to guide the strike. The attack is made with advantage. If it hits, it deals maximum damage dice (do not roll; treat each die as its maximum value).
+*Locked to Mars worshippers: the Tria Arma is a martial vision given only to those who have sworn primary allegiance to Mars.*
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Hasta Sacra*
+
+**Perk 2: *Hasta Sacra*** — *(locked: Charlatan background excluded)*
+You carry a weapon consecrated in the original ceremony of the Flamen Dialis rite. This weapon counts as magical for overcoming damage resistances. Once per long rest, when you hit with this weapon, the target must make a DC 14 Constitution saving throw or become frightened of Mars himself (not you) for 1 minute.
+*Excluded from Charlatan background: the consecration ceremony requires genuine devotion; the rite fails for those whose faith is performance.*
+
+#### Branch B (continued): *Fax Martis*
+
+**Perk 2: *Fax Martis*** — *(locked: requires freeborn Roman ancestry: not available to freed slaves or those of non-Roman parentage)*
+Once per long rest, as an action, you invoke the Torch of Mars. For 1 minute, a 10-foot-radius area around you sheds bright light. Undead within this light have disadvantage on all attack rolls. Allied soldiers within the light who are below half their hit point maximum regain 1d6 hit points at the start of each of their turns.
+*Locked to freeborn Romans: Mars grants his torch only to those whose blood belongs to Rome by birth and law.*
 
 **Starting Equipment**
 
@@ -1259,6 +1863,25 @@ The Flamen Martialis is technically a civilian religious appointment. They recei
 **Role kit weight:** 20 lb | **Full kit with universal issue:** 37 lb. The frontier cult doctrine frames this deliberate lightness as a statement: the Flamen Martialis is protected by Mars, not by iron. Whether that is comforting depends on how well the campaign is going.
 
 **Not issued:** No military-issue armor; no shield; no standard legionary weapons. The entire kit is personal property, and the deliberate rejection of standard military protection is a theological position, not an oversight.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** The Flamen Martialis's WIS 15 prerequisite and genuine Mars worship requirement make arcane casters unusual in this role. If taken: retain *Linothorax* (already light). Add arcane focus and component pouch. The *hasta* remains as the sacred weapon regardless of class: it is ritual equipment, not optional. Retain all other personal kit items.
+
+**Cleric / Druid:** This is the natural fit (Cleric of War or Nature). Retain *Linothorax* and *Hasta*. Holy symbol worn openly as personal property: the Flamen's kit is civilian religious property, not military issue. A War Cleric's Channel Divinity pairs directly with the role's Mars invocation mechanic. Druid: the *Hasta* is a spear and is a valid Druid weapon.
+
+**Bard:** Retain *Linothorax*. The *Hasta* (reach weapon, two-handed) may be replaced with a spear (one-handed, 1d6) if the player prefers a one-handed weapon for Bard combat style. The sacred weapon requirement is the spear type, not the exact *hasta* form. Add a small personal instrument.
+
+**Paladin / Ranger:** No substitution required. The *Hasta* is a valid weapon for both. A Paladin of devotion to Mars is an excellent thematic and mechanical fit.
+
+**Rogue:** Retain *Linothorax*. The *Hasta* (two-handed reach weapon) does not suit Rogue combat style: replace with a spear (one-handed, 1d6) used with Sneak Attack if the target is adjacent to an ally. The sacred requirement is fulfilled by a consecrated spear of any form.
+
+**Monk:** Replace *Linothorax* with clothing (Monk's Unarmored Defense applies). The *Hasta* is a valid Monk weapon (spear). Add 10 darts. The Monk's physical discipline and Mars's warrior ideal have thematic resonance.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit. A Barbarian Flamen Martialis whose rage is consecrated to Mars is a powerful thematic construct.
+
+</details>
 
 <details>
 <summary><strong>The Flamen Martialis's Daily Reality</strong></summary>
@@ -1329,7 +1952,35 @@ The spear in the vault below this fort is one of the three. The other two are ac
 
 **Mechanic:** Stabilize a dying creature as a bonus action (not a full action). Administer a potion to an unconscious ally as a bonus action. If no *medicus* is present in the party, you function as a basic field medic (Medicus mechanic at -1d6 on the healing roll).
 
-**Senior Advancement:** Earned by stabilizing three or more dying creatures in a single session under active combat conditions: sustained field medicine, not a safe rear position. *Senior bonus:* Stabilizing a dying creature becomes a free action (no cost, not even a bonus action); when functioning as the sole medic, the field medic roll is at full Medicus power with no penalty.
+### Advancement
+
+**Standard** (0 commendationes): Stabilize a dying creature as a bonus action. Administer a potion to an unconscious ally as a bonus action. Function as a basic field medic when no *medicus* is present (Medicus healing at -1d6).
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Ambulans* — Combat medic
+
+**Perk 1: *Celeritas Medici*** — When you use your action to administer healing (including a healing spell, healer's kit, or Medicus feature), you may move up to half your speed before or after the action without provoking opportunity attacks. You can drag an unconscious creature up to your full speed as part of this movement.
+
+#### Branch B: *Herbalista* — Field herbalist
+
+**Perk 1: *Pharmacopoeia Militaris*** — *(locked: Urban backgrounds only: Criminal, Charlatan, Guild Artisan, Noble, Urchin)*
+During a long rest in any settled area (camp, *vicus*, town), you may restock your healer's kit to full charges without paying, sourcing from local herbalists and markets. In the field, you can identify medicinal plants with a DC 10 Intelligence (Nature) check and create 1d4 healer's kit charges worth of healing supplies per long rest.
+*Locked to Urban backgrounds: knowledge of where to find and barter for medicinal components requires familiarity with markets and apothecary networks.*
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Triage Perfecta*
+
+**Perk 2: *Triage Perfecta*** — Once per encounter, when you treat a downed ally as a bonus action, you choose the outcome: you may either stabilize them normally, or restore them to 1 hit point and allow them to act on their next turn (rather than waiting a full round to regain consciousness after stabilization).
+
+#### Branch B (continued): *Andromeda Secretum*
+
+**Perk 2: *Andromeda Secretum*** — You have developed a compound with no Roman name, its recipe taught by a Germanic captive healer. Once per long rest, you may administer it to a willing creature. For the next 24 hours, the target does not need to eat or sleep, gains advantage on Constitution saving throws, and cannot be affected by natural disease. The compound is mildly addictive. The DM tracks the narrative consequences of extended use.
 
 **Starting Equipment**
 
@@ -1350,6 +2001,25 @@ The capsarius runs toward casualties while the rest of the unit is still fightin
 **Role kit weight:** 31 lb | **Full kit with universal issue:** 48 lb. The second-lightest combat-viable kit in the unit.
 
 **Not issued:** No shield (prevents the rapid position changes required when working over a casualty). No *pilum*. No heavy armor. The capsarius's protection is speed and the battlefield convention that killing the medic first is bad practice. Roman armies generally observe this. Germanic tribes are less consistent.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Linothorax* with padded armor or mage armor (no change for classes that already use mage armor). Add arcane focus and component pouch. The *capsa* remains as the role-defining item and is carried alongside the arcane focus. Retain *Gladius*, helmet, cloak, boots, belt, *capsa*, Healer's Kit, and Herbalist Kit.
+
+**Cleric / Druid:** No substitution required. A Life Cleric Capsarius is extraordinarily effective: the healing multiplier stacks with field medicine. Holy symbol worn on cord or belt, clear of the *capsa* straps. Druid: replace *Linothorax* with scale mail and *Gladius* with a mace or wooden staff.
+
+**Bard:** No armor substitution required (*Linothorax* is light; Bard can use it). Retain *Gladius*. Bardic Inspiration and the stabilization mechanic both function as bonus actions, creating meaningful action economy decisions. Add a small personal instrument.
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** No substitution required. The Capsarius's light kit, bonus action stabilization, and mobility suit Rogue builds. Retain full kit.
+
+**Monk:** Replace *Linothorax* with clothing (Monk's Unarmored Defense applies). Replace *Gladius* with shortsword or two handaxes. Add 10 darts. The *capsa* is carried on the back as usual. Retain Healer's Kit and Herbalist Kit.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit. The Capsarius's CON 12 prerequisite and mobility-focused kit suit Barbarian builds; declining armor for Unarmored Defense is accepted by the legion.
+
+</details>
 
 <details>
 <summary><strong>The Capsarius's Daily Reality</strong></summary>
@@ -1420,7 +2090,37 @@ The *medicus* does not know this yet. Valeria, the herb trader in the civilian s
 
 **Mechanic:** Hold a key to the armory (normally locked to non-officers). Know the complete current weapons and ammunition inventory. Identify a weapon's quality and condition by inspection (DC 11, no proficiency required). Once per session, locate a specific weapon type within the fort's supply chain in one hour (barring siege conditions).
 
-**Senior Advancement:** Earned by identifying the source of the unauthorized armory removals and establishing the connection in a documented record (the Brutianus subplot, or its equivalent if Brutianus has already departed). *Senior bonus:* Weapon identification drops from DC 11 to DC 8; once per session, produce a specific weapon type from a personal contingency cache held outside the official inventory (a reserve maintained for exactly this kind of situation).
+### Advancement
+
+**Standard** (0 commendationes): Hold the armory key. Know the complete weapons and ammunition inventory. Identify weapon quality and condition (DC 11). Once per session, locate a specific weapon type within one hour.
+
+---
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Praefectus Armorum* — Armory master
+
+**Perk 1: *Visio Armorum*** — You can identify any weapon or piece of armor by sight alone. You know its exact condition, estimated remaining durability, and whether it has been modified, damaged, or sabotaged. Any weapon or armor that you personally maintain grants +1 to its associated roll (attack roll or AC) while in good condition.
+
+#### Branch B: *Mercator* — Black market dealer
+
+**Perk 1: *Furtivus Commercium*** — *(locked: Soldier or City Watch background: military family only)*
+You have established contacts in the military black market. You can acquire any mundane item (including controlled or otherwise restricted goods) in any settlement, at 150% of standard cost, within 1d4 days. You are never asked where you obtained the goods.
+*Locked to military backgrounds: knowledge of which supply officers to bribe, and how, is insider knowledge from service.*
+
+---
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Inventarium Perfectum*
+
+**Perk 2: *Inventarium Perfectum*** — Your armory records are exact. Any weapon theft, unauthorized modification, or equipment sabotage affecting items under your oversight is automatically detected by you within 24 hours. Once per session, you may loan a named item from armory stores (worth up to 50 gp) to the party: an item that "fell off the manifest" and carries no official record of transfer.
+
+#### Branch B (continued): *Res Obscurae*
+
+**Perk 2: *Res Obscurae*** — *(locked: Paladin class only)*
+You have handled enough military contraband, cursed weapons, and spiritually charged items that you have developed an instinct for what is wrong about an object. When you handle an item for 1 minute, you learn whether it is magical, cursed, or spiritually significant: though not what it does or how to use it.
+*Locked to Paladin class: the Paladin's divine sense underlies this ability; it is not experience alone but sensitivity to the divine.*
 
 **Starting Equipment**
 
@@ -1443,6 +2143,25 @@ The custos armorum manages the armory and has access to the best-maintained equi
 **Not issued:** No *pilum* as standard assignment. The custos armorum issues them to others; their own combat role is fort defense, not field engagement. No unusual weapons, despite having access to all of them: maintaining a reliable inventory requires that the record not have unexplained gaps, and the weapons keeper taking things from their own stock for personal use is the scenario they are specifically employed to prevent.
 
 **Class substitution:** *Lorica Segmentata* requires heavy armor proficiency (Fighter, Paladin, War/Forge Cleric). Without it, substitute *Lorica Hamata*. The irony of a weapons keeper in substandard armor is noted in-world; a Ranger or Rogue custos armorum explains this with their preferred combat style, and the explanation is accepted.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Wizard / Sorcerer / Warlock:** Replace *Lorica Segmentata* with padded armor or mage armor. Replace *Scutum* with arcane focus (rod or wand) and component pouch. Add spellbook (Wizard only). Retain *Gladius*, *Pugio*, helmet, cloak, boots, belt with armory key, and tool kit access.
+
+**Cleric / Druid:** Replace *Lorica Segmentata* with scale mail if class does not allow heavy armor. Retain *Scutum* if proficient. Holy symbol worn on cord or belt. Druid: replace *Lorica Segmentata* with scale mail, *Scutum* with a wooden shield if proficient, and *Gladius* with a mace.
+
+**Bard:** Replace *Lorica Segmentata* with leather armor. Retain *Gladius* and *Pugio*; replace *Scutum* with a hand crossbow. Add a small personal instrument. The Custos Armorum Bard is unusual but the role's wide weapons access and tool proficiency suit it.
+
+**Paladin / Ranger:** No substitution required. Retain full kit.
+
+**Rogue:** Replace *Lorica Segmentata* with studded leather. Retain *Gladius* and *Pugio*; replace *Scutum* with a hand crossbow. The Rogue custos armorum explains the armor choice through combat style (noted as accepted in-world).
+
+**Monk:** Replace *Lorica Segmentata*, *Scutum*, and gauntlets with clothing (Monk's Unarmored Defense applies). Replace *Gladius* with shortsword or two handaxes. Add 10 darts. Retain *Pugio*, belt with armory key, and tool kit access.
+
+**Fighter / Barbarian:** No substitution required. Retain full kit. Fighter and Artificer are the natural fits for this role.
+
+</details>
 
 <details>
 <summary><strong>The Custos Armorum's Daily Reality</strong></summary>
