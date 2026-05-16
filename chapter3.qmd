@@ -95,6 +95,25 @@ At the start of each travel day (or whenever pacing demands it), roll a d8 or ch
 | 7 | **The Spear Goes Quiet.** For several hours, the spear's runes stop glowing and the pull disappears. The forest feels almost normal. Then, suddenly, it resumes -- stronger than before, as if it drew a breath. Characters with corruption 2+ must make a DC 11 Wisdom save or feel the urge to unwrap it and hold it, "just to check it's still there." |
 | 8 | **Rain.** A cold Germanic rain turns the paths to mud. Movement is halved. The Legate's tracking becomes easier (his dogs can still smell the spear; rain doesn't help with that). Any character without a cloak takes 1 level of exhaustion if the party doesn't shelter for 2 hours. |
 
+### Maps for This Session
+
+Maps are in `Maptool/maps/campaign/S3_Through_the_Dark_Forest/`. This is the largest pack (27 maps). Session 3 is mostly travel and encounter — you will not use every map. Select 5–7 before play based on which encounters you intend to run.
+
+| Scene | Map file(s) | Use |
+|---|---|---|
+| Forest path travel | `ForestPath3`, `ForestPath4`, `ForestPathVol5`, `WindingForestPath` | Progress through the forest; patrol avoidance; atmosphere |
+| Forest encounter sites | `ForestEncounter`, `ForestEncounter2`, `ForestEncounter3` | Ambush, animal encounter, Germanic scout contact |
+| High ground / vantage point | `HGForest` | Tactical observation; the party spots pursuit |
+| Dense wilderness | `ForestWildernessVol4`, `ForestWildernessVol8` | Off-trail navigation; creature territory |
+| Terrain hazard | `ForestSinkhole` | Skill challenge; the path collapses |
+| River crossings | `RiverCrossing`, `RiverCrossingVol2`, `RiverCrossing3` | Contested ford; Legate's pursuit cuts off the route |
+| Forest bridge | `ForestBridgeCrossing` | Defensible choke point; last-stand option |
+| Forest rivers and confluence | `ForestRiver`, `ForestRiverConfluence` | Navigation challenge; Thusnelda's territory marker |
+| Swamp approach | `Swamp`, `Swamp2`, `Swamp3`, `SwampBridges`, `SwampPath` | The bog leading to Thusnelda; corruption pressure |
+| Pre-Roman ruins | `ForestRuins`, `LabyrinthRuins` | Rune discovery; the old structure |
+| Cave entrance (optional) | `ForestCaveEntrance` | Shelter scene; underground shortcut |
+| Bandit fortification / Germanic camp | `ForestBanditFort`, `ForestGate` | Thusnelda's outer perimeter; the gate test |
+
 ---
 
 ## Scene 0: Cold Open (5 minutes)

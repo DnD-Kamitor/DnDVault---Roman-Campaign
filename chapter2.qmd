@@ -75,6 +75,24 @@ Before the session begins, confirm what happened in Session 1 and update NPC pos
 | Tribune Lucius | Just arrived. Performing confidence he doesn't feel. | Complete his mission from Brutus; get the spear destroyed without his fingerprints on it |
 | Vercingetorix | Camped two miles north with 80 warriors. Scouts watching the fort. | Waiting for an opportunity; knows the Romans are distracted |
 
+### Maps for This Session
+
+Maps are in `Maptool/maps/campaign/S2_Chieftains_Price/` after running `build_campaign_maps.sh`.
+
+| Scene | Map file(s) | Use |
+|---|---|---|
+| Fort departure | `CastleWall`, `BridgeCheckpoint` | Re-use from Session 1; the gate the party exits |
+| Road travel / ambush sites | `RockyRoad`, `MountainPass` | Frontier road encounters; rocky terrain fights |
+| Crossroads choice point | `Crossroads` | The scene where the party chooses which route to take |
+| Roadside Germanic altar | `AltarByTheRoad` | Vercingetorix's offering site; treaty or first contact |
+| Abandoned Germanic village | `AbandonedVillage`, `AbandonedVillageVol2` | Scouting territory; signs of recent evacuation |
+| Chieftain's riverside settlement | `RiversideVillage` | The *Thing* negotiation; the chieftain's seat |
+| Farm encounter | `SmallFarm` | Civilian contact; supply acquisition or ambush |
+| Forest path / scout contact | `ForestPath`, `ForestPath2` | Vercingetorix's test; patrol ambush |
+| Bandit camp | `ForestBanditCamp` | Optional combat; Vercingetorix demonstrating power |
+
+Fort reference images are also copied here for any fort scenes if the party returns mid-session.
+
 ---
 
 ## Scene 0: Cold Open (5 minutes)

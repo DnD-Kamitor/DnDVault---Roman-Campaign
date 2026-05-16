@@ -66,6 +66,23 @@ Use all three clues to make sure the players understand what Mars wants before t
 - **Handout 8 (Revised):** Brutus' raven message intercepted in the watchtower. Replace the Triumph note with explicit orders to burn the granary and kill Cassia.
 - **Handout 9 (New Purpose):** The fort-wide order of battle for the siege day: trumpet codes, watch assignments, ration counts. Print for players to plan their escort.
 
+### Maps for This Session
+
+Maps are in `Maptool/maps/campaign/S4_The_Gods_Demand/`. Session 4 splits between the fort under siege and the sacred grove.
+
+| Scene | Map file(s) | Use |
+|---|---|---|
+| Fort siege fighting | `CastleWall`, `BridgeCheckpoint` | Re-use from Session 1; wall fighting, gate breach |
+| Underground escape tunnels | `CaveTunnelsVol3`, `DungeonVol2` | The route out beneath the fort |
+| Forest ritual site approach | `ForestRitualSite`, `ForestWorshippingSite` | Approach to the grove; Germanic sacred ground |
+| Druid circle (outer grove) | `DruidCircle` | The outer ring; the first test |
+| Sacred tree (heart of grove) | `SacredTree` | The grove's center; the sacrifice decision |
+| Grove spirit manifestation | `DryadGrove` | If the grove spirit becomes active; optional combat |
+| Inner shrine | `NatureGoddessTemple` | The choice point — where Mars speaks |
+| Island approach (alternate) | `IslandRuins` | Alternative ritual site if the party takes the water route |
+
+Fort reference images are in this session folder for any fort scenes.
+
 ---
 
 ## Scene 0: Cold Open — The Bell and the Breach

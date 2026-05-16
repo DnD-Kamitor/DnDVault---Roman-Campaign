@@ -46,6 +46,19 @@ At dawn the day after the spear descended, Vindolanda stops breathing. The rain 
 
 Freeze time for every NPC except the party and whichever allies they designated to witness the ritual (Cassia, Varro, Vercingetorix, Lucius, Corvinus, civilians). These figures stand at the edge of the sand like statues, able to observe but not interfere.
 
+### Maps for This Session
+
+Maps are in `Maptool/maps/campaign/S5_The_Wrath_of_Mars/`. Session 5 is the divine confrontation — maps should feel isolated and vast.
+
+| Scene | Map file(s) | Use |
+|---|---|---|
+| Fort exterior under Mars' influence | `DarkTempleEntrance` | The transformed parade ground; the moment time stops |
+| Mars' judgment arena (Scene 2) | `DarkTempleInterior` | Use if players need a grid for the arena; otherwise narrate the sand transformation |
+| Underworld framing / retreat below | `CathedralCatacombs`, `AncientTombs` | If the party retreats below the fort; underworld atmosphere |
+| The altar (Options B and C) | `AncientAltar` | Mars at the altar; the spear's final moment |
+| Sacred grove resolution (Options A and C) | `NatureGoddessTemple`, `IslandRuins` | Returning to the grove; the binding released |
+| Labyrinth ruins (Option B) | `LabyrinthRuins` | If the party attempts to destroy the spear in the ruins |
+
 ---
 
 ## Scene 0: Cold Open — The Silence Before Judgment
