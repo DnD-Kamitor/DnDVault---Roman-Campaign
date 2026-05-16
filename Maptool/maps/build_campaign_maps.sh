@@ -5,6 +5,7 @@ BASE=/home/chris/Documents/NextCloud/Github/DnDVault---Roman-Campaign/Maptool
 DG="$BASE/maps/dicegrimorium"
 TOKENS="$BASE/tokens/npcs"
 DEST="$BASE/maps/campaign"
+FORT_IMGS="$BASE/../images"   # saalburg_plan, castra_layout, vindolanda_aerial
 
 # Copy one map (find the non-promo image in a dicegrimorium folder)
 copy_map() {
@@ -54,6 +55,12 @@ copy_map CavernPit            "$S"
 copy_map RandomDungeon        "$S"
 copy_map DungeonVol2          "$S"
 
+cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/saalburg_plan.jpg"
+cp "$FORT_IMGS/saalburg_fort.jpg"    "$S/saalburg_fort.jpg"
+cp "$FORT_IMGS/castra_layout.svg"    "$S/castra_layout.svg"
+cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/vindolanda_aerial.jpg"
+echo "   + fort reference images (saalburg_plan, castra_layout, vindolanda_aerial, saalburg_fort)"
+
 copy_token corvinus_token.html  "$S"
 copy_token cassia_token.html    "$S"
 copy_token varro_token.html     "$S"
@@ -75,6 +82,12 @@ copy_map AbandonedVillageVol2 "$S"
 copy_map RiversideVillage     "$S"
 copy_map SmallFarm            "$S"
 copy_map ForestBanditCamp     "$S"
+
+cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/saalburg_plan.jpg"
+cp "$FORT_IMGS/saalburg_fort.jpg"    "$S/saalburg_fort.jpg"
+cp "$FORT_IMGS/castra_layout.svg"    "$S/castra_layout.svg"
+cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/vindolanda_aerial.jpg"
+echo "   + fort reference images"
 
 copy_token corvinus_token.html     "$S"
 copy_token cassia_token.html       "$S"
@@ -136,6 +149,12 @@ copy_map SacredTree           "$S"
 copy_map DryadGrove           "$S"
 copy_map NatureGoddessTemple  "$S"
 copy_map IslandRuins          "$S"
+
+cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/saalburg_plan.jpg"
+cp "$FORT_IMGS/saalburg_fort.jpg"    "$S/saalburg_fort.jpg"
+cp "$FORT_IMGS/castra_layout.svg"    "$S/castra_layout.svg"
+cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/vindolanda_aerial.jpg"
+echo "   + fort reference images"
 
 copy_token cassia_token.html       "$S"
 copy_token varro_token.html        "$S"
