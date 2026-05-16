@@ -90,6 +90,12 @@ cp "$HUM/Tribal Warrior.rptok"  "$F/Sigrun_Trader.rptok"            && echo "   
 cp "$HUM/Tribal Warrior.rptok"  "$F/Arnulf_Firekeeper.rptok"        && echo "   + token: Arnulf_Firekeeper"
 cp "$HUM/Tribal Warrior.rptok"  "$F/Edda_SpearMother.rptok"         && echo "   + token: Edda_SpearMother"
 cp "$HUM/Acolyte.rptok"         "$F/Skadi_Healer.rptok"             && echo "   + token: Skadi_Healer"
+# Generic Roman troops (rank and file, available every session)
+cp "$HUM/Bandit.rptok"          "$F/Legionary_Milites.rptok"        && echo "   + token: Legionary_Milites"
+cp "$HUM/Bandit Captain.rptok"  "$F/Optio_NCO.rptok"                && echo "   + token: Optio_NCO"
+# Cult of Mars enemies (S4-5)
+cp "$HUM/Cultist.rptok"         "$F/Cult_Mars_Initiate.rptok"       && echo "   + token: Cult_Mars_Initiate"
+cp "$HUM/Cult Fanatic.rptok"    "$F/Cult_Mars_Fanatic.rptok"        && echo "   + token: Cult_Mars_Fanatic"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -140,12 +146,18 @@ copy_token Brennus_Taberna.rptok     "$S"
 copy_token Lucilla_Postwoman.rptok   "$S"
 copy_token Frumentarius_Agent.rptok  "$S"
 copy_token Legionary_Guard.rptok     "$S"
+copy_token Legionary_Milites.rptok   "$S"
+copy_token Optio_NCO.rptok           "$S"
 copy_token Vicus_Civilian.rptok      "$S"
 
 # Creature tokens for S1 encounters
 CON="$BASE/dnd5eTokens/construct"
+UND="$BASE/dnd5eTokens/undead"
 cp "$CON/Animated Armor.rptok"  "$S/Creature_AnimatedArmor.rptok"  && echo "   + token: Animated Armor (x2 in vault)"
 cp "$HUM/Berserker.rptok"       "$S/Creature_CorruptedWorker.rptok" && echo "   + token: Corrupted Worker (Berserker)"
+cp "$UND/Skeleton.rptok"        "$S/Creature_Skeleton.rptok"        && echo "   + token: Skeleton"
+cp "$UND/Ghoul.rptok"           "$S/Creature_Ghoul.rptok"           && echo "   + token: Ghoul"
+cp "$UND/Shadow.rptok"          "$S/Creature_Shadow.rptok"          && echo "   + token: Shadow"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -183,9 +195,17 @@ copy_token Brennus_Taberna.rptok      "$S"
 copy_token Lucilla_Postwoman.rptok    "$S"
 copy_token Frumentarius_Agent.rptok   "$S"
 copy_token Legionary_Guard.rptok      "$S"
+copy_token Legionary_Milites.rptok    "$S"
+copy_token Optio_NCO.rptok            "$S"
 copy_token Explorator_Scout.rptok     "$S"
 copy_token Titus_HalfGermanic.rptok   "$S"
 copy_token Vicus_Civilian.rptok       "$S"
+
+# Creature tokens for S2 encounters
+BST="$BASE/dnd5eTokens/beast"
+cp "$HUM/Bandit.rptok"          "$S/Enemy_RoadBandit.rptok"         && echo "   + token: Road Bandit"
+cp "$BST/Wolf.rptok"            "$S/Creature_Wolf.rptok"            && echo "   + token: Wolf"
+cp "$BST/Boar.rptok"            "$S/Creature_Boar.rptok"            && echo "   + token: Boar"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -233,6 +253,17 @@ copy_token Edda_SpearMother.rptok        "$S"
 copy_token Skadi_Healer.rptok            "$S"
 copy_token Aldric_Observer.rptok         "$S"
 
+# Creature tokens for S3 encounters — Germanic forest
+BST="$BASE/dnd5eTokens/beast"
+UND="$BASE/dnd5eTokens/undead"
+cp "$BST/Wolf.rptok"            "$S/Creature_Wolf.rptok"            && echo "   + token: Wolf"
+cp "$BST/Dire Wolf.rptok"       "$S/Creature_DireWolf.rptok"        && echo "   + token: Dire Wolf"
+cp "$BST/Brown Bear.rptok"      "$S/Creature_Bear.rptok"            && echo "   + token: Brown Bear"
+cp "$BST/Giant Spider.rptok"    "$S/Creature_GiantSpider.rptok"     && echo "   + token: Giant Spider"
+cp "$UND/Haugbui.rptok"         "$S/Creature_Haugbui.rptok"         && echo "   + token: Haugbui (Norse revenant)"
+cp "$UND/Myling.rptok"          "$S/Creature_Myling.rptok"          && echo "   + token: Myling (Nordic ghost)"
+cp "$UND/Vættir.rptok"          "$S/Creature_Vaettir.rptok"         && echo "   + token: Vættir (Norse spirit)"
+
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
 echo "=== Session 4: The God's Demand ==="
@@ -270,6 +301,17 @@ copy_token Edda_SpearMother.rptok        "$S"
 copy_token Skadi_Healer.rptok            "$S"
 copy_token Aldric_Observer.rptok         "$S"
 copy_token Legionary_Guard.rptok         "$S"
+copy_token Legionary_Milites.rptok       "$S"
+copy_token Optio_NCO.rptok               "$S"
+copy_token Cult_Mars_Initiate.rptok      "$S"
+copy_token Cult_Mars_Fanatic.rptok       "$S"
+
+# Creature tokens for S4 encounters — sacred grove and siege
+UND="$BASE/dnd5eTokens/undead"
+FEY="$BASE/dnd5eTokens/fey"
+cp "$UND/Wight.rptok"           "$S/Creature_Wight.rptok"           && echo "   + token: Wight (corrupted warrior)"
+cp "$UND/Will-o'-Wisp.rptok"    "$S/Creature_WillOWisp.rptok"       && echo "   + token: Will-o-Wisp"
+cp "$FEY/Dryad.rptok"           "$S/Creature_Dryad.rptok"           && echo "   + token: Dryad (grove spirit)"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -300,6 +342,18 @@ copy_token Edda_SpearMother.rptok        "$S"
 copy_token Skadi_Healer.rptok            "$S"
 copy_token Aldric_Observer.rptok         "$S"
 copy_token Legionary_Guard.rptok         "$S"
+copy_token Legionary_Milites.rptok       "$S"
+copy_token Optio_NCO.rptok               "$S"
+copy_token Cult_Mars_Initiate.rptok      "$S"
+copy_token Cult_Mars_Fanatic.rptok       "$S"
+
+# Creature tokens for S5 encounters — final vault confrontation
+UND="$BASE/dnd5eTokens/undead"
+cp "$UND/Wraith.rptok"          "$S/Creature_Wraith.rptok"          && echo "   + token: Wraith"
+cp "$UND/Wight.rptok"           "$S/Creature_Wight.rptok"           && echo "   + token: Wight"
+cp "$UND/Shadow.rptok"          "$S/Creature_Shadow.rptok"          && echo "   + token: Shadow"
+cp "$UND/Specter.rptok"         "$S/Creature_Specter.rptok"         && echo "   + token: Specter"
+cp "$UND/Zombie.rptok"          "$S/Creature_Zombie.rptok"          && echo "   + token: Zombie (corrupted legionary)"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
