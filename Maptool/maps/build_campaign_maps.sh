@@ -40,10 +40,19 @@ echo "=== Fort Vindolanda (permanent camp folder) ==="
 F="$DEST/Fort_Vindolanda"
 mkdir -p "$F"
 
-# Best available fort maps from local Maptool/maps/
-MAPS_DIR="$BASE/maps"
-[[ -f "$MAPS_DIR/Germanic Camp-45x50-grid.jpg" ]] && cp "$MAPS_DIR/Germanic Camp-45x50-grid.jpg" "$F/FortVindolanda_Camp_45x50.jpg" && echo "   + camp map"
-[[ -f "$MAPS_DIR/testmap.jpg" ]] && cp "$MAPS_DIR/testmap.jpg" "$F/FortVindolanda_Courtyard.jpg" && echo "   + courtyard map"
+# Fort zone battlemaps — assembled from downloaded Dice Grimorium maps
+# Each map covers a specific zone inside or around the fort
+copy_map CityGates          "$F"   # South gate / fort entrance with towers and road
+copy_map CityStreets        "$F"   # Via principalis — main street between buildings
+copy_map CastleWall         "$F"   # Rampart / wall walk — wall defense scenes
+copy_map NatureGoddessTemple "$F"  # Principia (HQ) — cross-shaped stone building with courtyard
+copy_map GoldVaults         "$F"   # Horrea / treasury — vaulted stone corridor with side bays
+copy_map AbandonedVillageVol2 "$F" # Barracks block — stone-walled rooms with visible interiors
+copy_map AbandonedVillage   "$F"   # Vicus (civilian quarter) — settlement overview
+copy_map RiversideVillage   "$F"   # Vicus alternative — riverside civilian buildings
+copy_map BridgeCheckpoint   "$F"   # Road approach / bridge to the fort
+copy_map DarkTempleEntrance "$F"   # Vault entrance — sealed stair beneath principia
+copy_map DarkTempleInterior "$F"   # Vault interior — spear chamber, altar
 
 # Fort reference images
 cp "$FORT_IMGS/saalburg_plan.jpg"     "$F/saalburg_plan.jpg"     2>/dev/null && echo "   + saalburg_plan"

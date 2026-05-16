@@ -99,7 +99,20 @@ Maps are in `Maptool/maps/campaign/S1_Blood_and_Omens/` after running `Maptool/m
 - `saalburg_fort.jpg` — exterior photo of the reconstructed fort
 - `castra_layout.svg`, `vindolanda_aerial.jpg` — schematic and aerial view
 
-**Note: no playable fort interior battlemap is in this pack.** For principia audience scenes and barracks fights, run theater-of-mind or scale `castra_layout.svg` as a backdrop in MapTool (grid ≈ 70px = 5ft; rooms are proportional but not gridded for play).
+**Fort Vindolanda zone maps** are in `Maptool/maps/campaign/Fort_Vindolanda/` and are available for all sessions. Each covers a specific area of the fort:
+
+| Fort zone | File | Use |
+|---|---|---|
+| South gate / entrance | `City-Gates-Gridded-22x33-MapPublic.jpg` | Gate tower scenes, arrival, Tribune's entrance |
+| Via principalis (main street) | `CityStreetsPublic.jpg` | Street fighting, chases, formations |
+| Rampart / wall walk | `CastleWallPublicJPG.jpg` | Wall defense, sentry duty, siege |
+| Principia (HQ building) | `NatureGoddessTemplePublic.jpg` | Legate's audience, spear handover, council scenes |
+| Horrea / treasury vault | `GoldVaultsPublic.jpg` | Granary, pay chest room, storage level |
+| Barracks / contubernium rooms | `Abandoned-Village-Vol2-Gridded-22x33-MapPublic.jpg` | Barracks interiors, contubernium planning scenes |
+| Vicus (civilian quarter) | `AbandonedVillagePublic.jpg`, `RiversideVillagePublic.jpg` | Trader district, tavern, civilian encounters |
+| Road approach / bridge | `BridgeCheckpointPublic.jpg` | Fort approach, arrival from road |
+| Vault entrance (under principia) | `DarkTempleEntrancePublic.jpg` | The sealed stair, the descent |
+| Vault interior / altar chamber | `DarkTempleInteriorPublic.jpg` | The spear chamber, the altar, corruption trigger |
 
 ---
 
