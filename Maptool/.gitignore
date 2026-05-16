@@ -18,5 +18,9 @@ addons/Lib_SpellLibrary/
 # Token images (large binary pack — already in dnd5eTokens/)
 dnd5eTokens/
 
+# Downloaded map packs (large binary assets — re-download via maps/download_maps.sh)
+maps/dicegrimorium/
+maps/rptools/
+
 # Leftover installer scripts
 installscriptmap.sh
