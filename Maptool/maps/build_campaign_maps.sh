@@ -17,7 +17,7 @@ copy_map() {
     fname="$(basename "$img")"
     cp "$img" "$dest_dir/$fname"
     echo "   + $1 → $fname"
-  done < <(find "$folder" -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.webp" \) ! -iname "*promo*" -print0)
+  done < <(find "$folder" -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.webp" \) ! -iname "*promo*" ! -name "._*" -print0)
 }
 
 # Copy a named NPC token (.rptok) from the Fort_Vindolanda folder
@@ -33,6 +33,11 @@ copy_token() {
 }
 
 mkdir -p "$DEST"
+
+# Clean and rebuild all session folders so stale files never accumulate
+for d in "$DEST"/S*; do
+  [[ -d "$d" ]] && rm -rf "$d"
+done
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -79,12 +84,18 @@ echo "=== Session 1: Blood and Omens ==="
 S="$DEST/S1_Blood_and_Omens"
 mkdir -p "$S"
 
-copy_map CastleWall           "$S"
-copy_map BridgeCheckpoint     "$S"
+# Fort zone maps (scenes 0-1 happen inside the fort)
+copy_map CityGates            "$S"   # Fort south gate — Tribune's arrival, party departure
+copy_map CityStreets          "$S"   # Via principalis — Legate summons party
+copy_map NatureGoddessTemple  "$S"   # Principia — Legate's audience chamber
+copy_map CastleWall           "$S"   # Rampart — sentry scenes, exterior
+
+# Underground vault (scenes 2-5)
+copy_map BridgeCheckpoint     "$S"   # Road/ditch approach to vault entrance
 copy_map DungeonEntrance      "$S"
 copy_map ForestDungeonEntrance "$S"
 copy_map LargeCave            "$S"
-copy_map AncientAltar         "$S"
+copy_map AncientAltar         "$S"   # Spear chamber — key scene
 copy_map CaveTunnelsVol2      "$S"
 copy_map CaveTunnelsVol3      "$S"
 copy_map AncientTombs         "$S"
@@ -94,18 +105,26 @@ copy_map CathedralCatacombs   "$S"
 copy_map CavernPit            "$S"
 copy_map RandomDungeon        "$S"
 copy_map DungeonVol2          "$S"
+copy_map DarkTempleEntrance   "$S"   # Sealed stair entrance
+copy_map DarkTempleInterior   "$S"   # Vault interior / altar chamber
 
 cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/saalburg_plan.jpg"
-cp "$FORT_IMGS/saalburg_fort.jpg"    "$S/saalburg_fort.jpg"
-cp "$FORT_IMGS/castra_layout.svg"    "$S/castra_layout.svg"
+cp "$FORT_IMGS/saalburg_fort.jpg"     "$S/saalburg_fort.jpg"
+cp "$FORT_IMGS/castra_layout.svg"     "$S/castra_layout.svg"
 cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/vindolanda_aerial.jpg"
-echo "   + fort reference images (saalburg_plan, castra_layout, vindolanda_aerial, saalburg_fort)"
+echo "   + fort reference images"
 
+# NPC tokens
 copy_token Corvinus_Legate.rptok     "$S"
 copy_token Cassia_Augur.rptok        "$S"
 copy_token Varro_Centurion.rptok     "$S"
 copy_token Legionary_Guard.rptok     "$S"
 copy_token Vicus_Civilian.rptok      "$S"
+
+# Creature tokens for S1 encounters
+CON="$BASE/dnd5eTokens/construct"
+cp "$CON/Animated Armor.rptok"  "$S/Creature_AnimatedArmor.rptok"  && echo "   + token: Animated Armor (x2 in vault)"
+cp "$HUM/Berserker.rptok"       "$S/Creature_CorruptedWorker.rptok" && echo "   + token: Corrupted Worker (Berserker)"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
