@@ -46,6 +46,19 @@ chapter4.qmd        ← Session 4: The God's Demand
 chapter5.qmd        ← Session 5: The Wrath of Mars
 appendix.qmd        ← Quick reference, stat blocks, handouts 1-11
 images/             ← All local image assets (downloaded from Wikimedia Commons)
+handouts/           ← Rendered HTML handouts (one per appendix handout, print-ready)
+gm_tools/           ← GM session reference cards (one per session, browser-tab format)
+audio/              ← Ambient audio guide HTML page (audio/index.html)
+Maptool/            ← MapTool VTT standalone install (see Milestone 67)
+  setup.sh          ← Run once to extract, configure, and download addons
+  maptool.sh        ← Launch MapTool (data stays in Maptool/data/)
+  tokentool.sh      ← Launch TokenTool
+  campaigns/5e/     ← Campaign .cmpgn files
+  addons/           ← .rptok library tokens and .mtlib add-ons
+  macros/           ← MTScript macro source files (.mts)
+  tokens/npcs/      ← NPC token portrait HTML previews
+  maps/             ← Map images for MapTool backgrounds
+  data/             ← MapTool runtime data (gitignored; created on first launch)
 ```
 
 ### Image Assets (all verified HTTP 200, Wikimedia Commons)
@@ -185,11 +198,47 @@ All content below is live in the book. No further action required.
 | 59 | Starting Level and Character Advancement — Level 3 start, milestone rationale, full arc table L3-7, role/level decoupling (player_guide.qmd) |
 | 60 | Role-Based Starting Equipment Packages — all 15 roles with full kit, weight totals, class substitutions, carrying loads system, three-tier role advancement (Standard/Senior), vacancy consequence table, camp-as-living-entity framework |
 | 61 | Citizenship Progression as Campaign Goal — commendationes system, active status elevation track, in-play status costs, Session 3/4/5 elevation events (peoples.qmd, session0.qmd, gm_session0.qmd) |
-| 63 | Missing Weapons and Shields — arcus compositus, arcuballista-as-weapon, net (rete), vitis, fustis; scutum/clipeus/pavise full stat blocks with bash rules; master weapon reference table; shield rows in equipment summary (roman_tactics.qmd) |
-| 64a | Vindolanda Equipment Catalog — full camp inventory with availability codes (In Stock/Limited/Order/Crafted/Black Market/Unavailable) for weapons, shields, armor, ammunition, tools, consumables, medical, animals, services; Camp Level 2-3 availability changes; price index expanded (supplies.qmd); scutum weight corrected to 10 lb across roles.qmd |
-| 64b | Character-Sheet-Ready Starting Kits — Universal Soldier Kit (17 lb base issue for all roles), starting denarii by pay grade (65/50/35 d; special cases for Haruspex/Flamen/Sacerdos), tool kits (Healer's Kit, Forgery Kit, Calligrapher's Supplies, Herbalist Kit, Disguise Kit, Navigator's Tools, Smith's/Mason's Tools) added to all 15 roles; weight totals updated to Role kit / Full kit format (roles.qmd) |
-| 65 | Role Background Depth + Skill Check Audit (roles.qmd) — daily reality and citizenship/advancement collapsibles for all 15 roles; all 45 knowledge collapsible headers annotated with skill name, passive/automatic/active classification, and inline trigger |
-| 66 | Chapter Skill Audit (chapters 1-5) — all DC checks annotated with skill name and passive/active classification; missing skills added across all five chapters: Perception, Nature, Acrobatics, Stealth, Intimidation, Deception (ch.1); Stealth, Deception, Arcana, Religion, Survival, Acrobatics, Performance, Nature (ch.2); Medicine, Stealth, Deception, Intimidation in travel events and river crossing (ch.3); History, Arcana, Nature, Medicine, Stealth, Acrobatics, Animal Handling, Deception (ch.4); Perception, Survival, Religion, Nature, Arcana, Sleight of Hand, History, Investigation, Stealth, Intimidation, Deception, Animal Handling, Acrobatics, Athletics, Medicine (ch.5) |
+| 67 | MapTool Standalone Setup — MapTool 1.18.6 + TokenTool extracted from .deb into Maptool/ subfolder, both with bundled JREs. MapTool.cfg patched so MAPTOOL_DATADIR points to Maptool/data/ (all state stays local). Launchers: Maptool/maptool.sh, Maptool/tokentool.sh. Addons in Maptool/addons/ (Lib_SpellLibrary 2014+2025, Lib_MonsterMaker, Lib_Date_Time.mtlib). D&D 5e campaigns in Maptool/campaigns/5e/ (Meleks Simple 5e, Automated 5e SRD, demo). dnd5eTokens/ organized by creature type. Maps in Maptool/maps/ (5 campaign-relevant images). Setup script: Maptool/setup.sh (idempotent, re-run after git clone). |
+| 68 | Conflict Resolution Protocol — Established that Nextcloud creates conflicted copies when sync detects diverging edits. Correct fix: verify conflicted copies match HEAD (they always will after a commit), then git restore the rolled-back working-tree files and delete the conflicted copies. Never merge: the conflicted copy IS the committed version. |
+
+---
+
+## Active Work Tracks
+
+These are scoped and tested items ready to build out fully. Each has a proof-of-concept file already created.
+
+### Track A: Rendered Handouts
+**What:** Convert all 11 handouts from appendix.qmd into standalone HTML files with period-appropriate visual styling. Printable and shareable via MapTool's image handout feature.
+**POC:** `handouts/handout_01_legates_orders.html` — wax tablet CSS, Cinzel font, Latin + translation, print-ready. Verify it renders before extending to all 11.
+**To build:** One file per handout. Naming: `handout_NN_slug.html`. Style guide: wax tablet (dark red) for military orders; stone inscription (grey/off-white) for the Vault inscription (Handout 2); aged papyrus (warm tan) for letters and scrolls (Handouts 5, 7, 8); blood-on-stone for Handout 10 (Mark of Mars). Each file self-contained (no external dependencies except Google Fonts CDN, with fallbacks).
+**Source:** appendix.qmd — all 11 handouts with `{.handout-card}` divs. When-to-give and how-to-present metadata is in `{.handout-meta}` divs; do not include that in the printed output.
+
+### Track B: GM Session Reference Cards
+**What:** One condensed HTML reference card per session (5 total). Designed to be open in a browser tab during play: OGAS table, scene flow, DC cheat sheet, contingency tables, three-clue status.
+**POC:** `gm_tools/session01_reference.html` — two-column layout, colour-coded by check type (passive/active/key), full OGAS and refusal contingency for Session 1. Verify formatting before extending.
+**To build:** Sessions 2-5. Source: chapter2.qmd through chapter5.qmd, specifically the `## DM Notes`, `### OGAS This Session`, `### Skill Audit` sections, and the `## Pre-Session Preparation` props list. Each card should fit one browser viewport without scrolling (print at 80% zoom for single A4 page).
+**Key sections per card:** Scene flow (numbered), OGAS table (NPC/goal/secret), DC reference table (room/DC/skill/type/what they learn), contingency boxes (warn-coloured), corruption/vacancy/commendationes state at session start.
+
+### Track C: MapTool Corruption + Mechanics Macros
+**What:** MTScript macros for the campaign's custom mechanics, importable into MapTool via the Campaign macro panel.
+**POC:** `Maptool/macros/corruption_tracker.mts` — full MTScript for a token-attached corruption tracker. Frame dialog with pip display, stage name, mechanical effect text, increase/decrease/reset buttons. Uses token property `CorruptionLevel` (Number, default 0). Requires companion macros `corruption_increase`, `corruption_decrease`, `corruption_reset` on the Campaign panel (each is 2-3 lines: get property, modify, set property).
+**To build next:**
+- `corruption_increase.mts` / `corruption_decrease.mts` / `corruption_reset.mts` — the button targets
+- `commendationes_tracker.mts` — same pattern, tracks commendationes count per token (property: CommendationesCount), shows current count and citizenship tier (Peregrinus/Latinus/Civis) thresholds
+- `role_display.mts` — campaign-level frame showing the 15 vexillatio roles, who holds each (by token name), and vacancy state (red if unfilled)
+- `roman_calendar.mts` — frame showing current campaign date in Roman format (Kalends/Nones/Ides + month + year AUC), advance-day button
+**MapTool property setup (add to Campaign Properties > Token Properties):** `CorruptionLevel` (Number, default 0), `CommendationesCount` (Number, default 0), `UnitRole` (String, default ""), `CitizenshipStatus` (String, default "Peregrinus").
+
+### Track D: NPC Token Pack
+**What:** Visual token portraits for the campaign's named NPCs, formatted for MapTool import (200×200 PNG with circular frame).
+**POC:** `Maptool/tokens/npcs/corvinus_token.html` — CSS-only portrait (helmet silhouette, gold/red token frame), NPC stat block overlay, small 50×50 map-scale preview. Screenshot the `.token` div at 200×200 to get the import-ready PNG.
+**To build:** One HTML file per major NPC, plus a batch export method. Named NPCs needing tokens: Corvinus (Sessions 1-2), Cassia Liviana (1-5), Centurion Varro (1-4), Senator Brutus (shadow presence 1-4, physical 4-5), Vercingetorix (2-5), Thusnelda (3), the Legate's rider/messenger (background), Germanic chieftain contacts. Token frame colours: gold = ally/neutral, red = antagonist, grey = unknown allegiance. Stat block data lives in gm_intro.qmd and the chapter DM Notes sections.
+**Longer-term:** Script a Python/bash export using `chromium --headless --screenshot` to render the HTML tokens to PNG automatically.
+
+### Track E: Ambient Audio Page
+**What:** Single HTML page (`audio/index.html`) open in a browser tab during play. Collapsible per-session sections with track suggestions, YouTube search links, and scene-cue annotations.
+**POC:** `audio/index.html` — all 5 sessions covered with track name, artist, scene use annotation, and YouTube search link buttons. Session 1 open by default; others collapsed. Dark Roman styling.
+**To build:** The POC is feature-complete for the base use case. Enhancement options: (1) add actual embedded YouTube iframes once the GM identifies preferred uploads (search links are intentionally generic so they degrade gracefully if a specific upload disappears); (2) add a "Now Playing" indicator with JS localStorage so the tab remembers which session is active across browser restarts; (3) add non-YouTube fallback links (Spotify, Bandcamp) for Wardruna and Heilung who have official presences there.
 
 ---
 

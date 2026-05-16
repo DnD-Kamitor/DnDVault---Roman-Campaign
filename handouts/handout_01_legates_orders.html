@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handout 1: Legate's Orders</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1a0e06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .tablet {
+    width: 480px;
+    background: #3d1a0a;
+    border-radius: 8px;
+    padding: 48px 52px;
+    box-shadow:
+      inset 0 2px 8px rgba(0,0,0,0.6),
+      inset 0 -2px 6px rgba(255,140,60,0.1),
+      0 8px 32px rgba(0,0,0,0.8),
+      0 0 0 2px #5c2810,
+      0 0 0 5px #2a0c04,
+      0 0 0 7px #5c2810;
+    position: relative;
+  }
+
+  /* wax surface texture */
+  .tablet::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.04) 2px,
+      rgba(0,0,0,0.04) 4px
+    );
+    pointer-events: none;
+    border-radius: 4px;
+  }
+
+  .heading {
+    font-family: 'Cinzel', 'Trajan Pro', serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #c87832;
+    text-align: center;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #8b4010, transparent);
+    margin: 16px 0;
+  }
+
+  .latin {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #e8c090;
+    line-height: 2;
+    text-align: left;
+  }
+
+  .translation {
+    font-family: 'IM Fell English', 'Palatino Linotype', Georgia, serif;
+    font-size: 12.5px;
+    font-style: italic;
+    color: #a06030;
+    line-height: 1.8;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed #5c2810;
+  }
+
+  .seal-line {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    color: #8b4010;
+    text-align: center;
+    margin-top: 24px;
+    text-transform: uppercase;
+  }
+
+  .meta {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    color: #5c3018;
+    text-align: center;
+    margin-top: 32px;
+    padding-top: 12px;
+    border-top: 1px solid #3a1808;
+    font-style: italic;
+  }
+
+  @media print {
+    body { background: white; }
+    .tablet {
+      box-shadow: none;
+      border: 3px solid #5c2810;
+      width: 100%;
+      max-width: 480px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="tablet">
+  <div class="heading">Mandatum Legati Marci Aurelii Corvini</div>
+  <div class="divider"></div>
+  <div class="latin">
+    Ad milites electos:<br><br>
+    Descendite in ruinas.<br>
+    Recuperate telum divinum.<br>
+    Nemo tangat telum nisi ego permitto.
+  </div>
+  <div class="translation">
+    To the chosen soldiers:<br>
+    Descend into the ruins.<br>
+    Recover the divine weapon.<br>
+    No one shall touch the weapon unless I permit it.
+  </div>
+  <div class="divider"></div>
+  <div class="seal-line">In Nomine Senatus Populique Romani</div>
+  <div class="meta">Session 1 · Scene 1 · Give when Corvinus summons the party</div>
+</div>
+</body>
+</html>

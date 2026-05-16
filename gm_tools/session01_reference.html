@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Session 1 GM Reference — Blood and Omens</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 11px;
+    background: #f4f0e8;
+    color: #1a1208;
+    padding: 16px;
+  }
+  h1 {
+    font-size: 15px; font-weight: 800; letter-spacing: 0.05em;
+    color: #7a1a00; border-bottom: 2px solid #7a1a00;
+    padding-bottom: 4px; margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+    color: #7a1a00; text-transform: uppercase;
+    border-bottom: 1px solid #c8a060; margin: 10px 0 5px;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .col {}
+  .box {
+    background: white; border: 1px solid #c8a060;
+    border-left: 3px solid #7a1a00;
+    padding: 8px; margin-bottom: 8px; border-radius: 2px;
+  }
+  .box.warn { border-left-color: #c05000; background: #fff8f0; }
+  .box.secret { border-left-color: #404040; background: #f8f8f0; }
+  table { width: 100%; border-collapse: collapse; }
+  th { background: #7a1a00; color: white; padding: 3px 6px; font-size: 9.5px; text-align: left; }
+  td { padding: 2px 6px; border-bottom: 1px solid #e8d8b0; vertical-align: top; }
+  tr:nth-child(even) td { background: #fdf8ee; }
+  .dc { font-weight: 700; color: #7a1a00; white-space: nowrap; }
+  .npc-name { font-weight: 700; }
+  .secret-text { font-style: italic; color: #404040; }
+  .scene-list { list-style: none; counter-reset: scenes; }
+  .scene-list li { counter-increment: scenes; padding: 2px 0 2px 20px; position: relative; }
+  .scene-list li::before {
+    content: counter(scenes);
+    position: absolute; left: 0;
+    background: #7a1a00; color: white;
+    width: 14px; height: 14px; border-radius: 50%;
+    font-size: 9px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .tag {
+    display: inline-block; padding: 1px 5px; border-radius: 2px;
+    font-size: 9px; font-weight: 700; margin-right: 2px;
+  }
+  .tag-passive { background: #d0e8d0; color: #1a4a1a; }
+  .tag-active { background: #d0d8e8; color: #1a1a4a; }
+  .tag-key { background: #ffe0c0; color: #7a3000; }
+  @media print {
+    body { padding: 8px; font-size: 10px; }
+    .box { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<h1>Session 1: Blood and Omens — GM Reference</h1>
+
+<div class="grid">
+<div class="col">
+
+  <h2>Scene Flow</h2>
+  <div class="box">
+    <ol class="scene-list">
+      <li><b>Cold Open</b> — Gaius Metellus is already dead. Corvinus summons the party. Give Handout 1.</li>
+      <li><b>Meeting the Legate</b> — He wants the spear. Cassia is present; she warns. Varro watches.</li>
+      <li><b>Descent into the Ruins</b> — Hall of Shields → Chamber of Chains → The Vault.</li>
+      <li><b>The Spear</b> — Who touches it? First corruption check.</li>
+      <li><b>Return + Worker Frenzy</b> — Gallic worker goes berserk. Aquilifer vacancy matters here.</li>
+    </ol>
+  </div>
+
+  <h2>OGAS</h2>
+  <table>
+    <tr><th>NPC</th><th>Session Goal</th><th>Secret</th></tr>
+    <tr>
+      <td class="npc-name">Corvinus</td>
+      <td>Secure spear before Rome hears of it</td>
+      <td class="secret-text">Rider already sent to Roman patron</td>
+    </tr>
+    <tr>
+      <td class="npc-name">Cassia</td>
+      <td>Keep spear underground or away from Corvinus</td>
+      <td class="secret-text">Her augury says the party decides if Rome burns</td>
+    </tr>
+    <tr>
+      <td class="npc-name">Varro</td>
+      <td>Stall, listen, keep soldiers alive</td>
+      <td class="secret-text">A legionary whispered "I understand him" during the frenzy — reassigned, told no one</td>
+    </tr>
+  </table>
+
+  <h2>Refusal Contingency</h2>
+  <div class="box warn">
+    <b>Polite refusal:</b> Corvinus doubles pay → sends another unit → they don't come back → party re-ordered.<br><br>
+    <b>Cite Cassia's warning:</b> He removes her from room. Cassia finds them in the hour given.<br><br>
+    <b>Outright defiance:</b> DC 18 Persuasion to make him back down. Fail: Varro escorts them with <em>"I'd go if I were you."</em>
+  </div>
+
+</div>
+<div class="col">
+
+  <h2>DC Reference</h2>
+  <table>
+    <tr><th>Room</th><th>DC</th><th>Skill</th><th>Type</th><th>What they learn</th></tr>
+    <tr>
+      <td>Hall of Shields</td>
+      <td class="dc">11</td>
+      <td>Perception</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Torch flame leans toward far archway — draft from below</td>
+    </tr>
+    <tr>
+      <td>Hall of Shields</td>
+      <td class="dc">12</td>
+      <td>Nature</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Smell is wrong — bog water seeping through limestone</td>
+    </tr>
+    <tr>
+      <td>Hall of Shields</td>
+      <td class="dc">13</td>
+      <td>History</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Symbols = 4 rival tribes. Collected, not stored. Someone gathered war-gear here.</td>
+    </tr>
+    <tr>
+      <td>Hall of Shields</td>
+      <td class="dc">14</td>
+      <td>Religion</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Trophy hall, Germanic style. Weapons in sacred place = offering to war-god.</td>
+    </tr>
+    <tr>
+      <td>Hall of Shields</td>
+      <td class="dc">15</td>
+      <td>History</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Boar = Marcomanni. Three-fingered hand = Cherusci. Century-old rivals. Whoever commanded both had imperial-scale reach.</td>
+    </tr>
+    <tr>
+      <td>Chamber of Chains</td>
+      <td class="dc">11</td>
+      <td>Acrobatics</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Pass between chains silently. Failure = one chain rings; sound carries further than it should.</td>
+    </tr>
+    <tr>
+      <td>Chamber of Chains</td>
+      <td class="dc">12</td>
+      <td>Investigation</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Chains centuries old, no rust. Collar sizes wrong for any animal.</td>
+    </tr>
+    <tr>
+      <td>Chamber of Chains</td>
+      <td class="dc">14</td>
+      <td>Arcana</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Divine residue. Chains weren't the real binding — material expression of something older.</td>
+    </tr>
+    <tr>
+      <td>Chamber of Chains</td>
+      <td class="dc">16</td>
+      <td>Religion</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>TIWAZ = sacrifice of restraint. Whatever was chained here gave itself willingly.</td>
+    </tr>
+    <tr>
+      <td>The Vault</td>
+      <td class="dc">13</td>
+      <td>Stealth</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Group check for quiet descent. Success: 1 free observe round. Fail: Animated Armor already positioned.</td>
+    </tr>
+    <tr>
+      <td>Worker Frenzy</td>
+      <td class="dc">13</td>
+      <td>Intimidation</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Military rank command. Success: worker freezes 1 round (not calm — interrupted). Free positioning advantage.</td>
+    </tr>
+    <tr>
+      <td>Worker Frenzy</td>
+      <td class="dc">13</td>
+      <td>Insight</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Worker showed pre-attack signs for an hour. Not overworked — working himself.</td>
+    </tr>
+  </table>
+
+  <h2>Aquilifer Vacancy</h2>
+  <div class="box warn">
+    Gaius Metellus dead. Key locked in <em>principia</em>. Until role filled:
+    morale checks in Scene 4 at <b>Disadvantage</b>. Failed morale = soldier flees, does not return.
+    If player holds Aquilifer: eagle underground in Ch.3 triggers bonus Religion DC 14 check.
+  </div>
+
+  <h2>Corruption — Session 1</h2>
+  <div class="box secret">
+    <span class="tag tag-key">First touch or attune only</span>
+    Character who touches the spear → Level 1 Corruption.
+    <em>Level 1 effect: disturbing visions of conquest; DC 10 Wisdom save each dawn.</em>
+    Track per-character. Levels carry forward into Session 2.
+  </div>
+
+  <h2>Three Clue Rule Check</h2>
+  <div class="box">
+    <b>Spear is corrupting:</b> Handout 3 (Omens) · Cassia's warning · Thusnelda's fear<br>
+    <b>Tribe origin of vault:</b> Hall of Shields DCs · Handout 2 runes · Cassia's research notes (Session 2)
+  </div>
+
+</div>
+</div>
+</body>
+</html>

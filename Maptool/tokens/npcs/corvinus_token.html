@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Token: Legate Corvinus</title>
+<style>
+  /* NPC Token Preview — screenshot and import as a MapTool token image.
+     Print or screenshot the .token div for use in MapTool.
+     Recommended export: 200x200px PNG. */
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 32px;
+    padding: 40px;
+  }
+
+  /* ── Token image (200×200, suitable for MapTool import) ── */
+  .token {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 40% 35%, #8b1a00, #3a0800 70%);
+    border: 4px solid #c87832;
+    box-shadow:
+      0 0 0 3px #7a1a00,
+      0 0 0 6px #c87832,
+      0 0 0 9px #5a1200,
+      0 8px 24px rgba(0,0,0,0.8);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  /* Simplified portrait shape using CSS */
+  .token .portrait {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Helmet silhouette */
+  .helm {
+    width: 80px;
+    height: 90px;
+    background: linear-gradient(160deg, #d4a040 0%, #8b5a10 40%, #4a2800 100%);
+    border-radius: 50% 50% 30% 30% / 60% 60% 40% 40%;
+    position: relative;
+    margin-top: -10px;
+  }
+  .helm::before {
+    /* crest */
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 30px;
+    background: #8b1a00;
+    border-radius: 6px 6px 0 0;
+  }
+  .helm::after {
+    /* face guard suggestion */
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 20px;
+    background: linear-gradient(180deg, #8b5a10, #4a2800);
+    border-radius: 0 0 24px 24px;
+  }
+
+  /* Name badge beneath token */
+  .badge {
+    background: #1a0800;
+    border: 1px solid #c87832;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #c8a060;
+    font-family: 'Palatino Linotype', Palatino, Georgia, serif;
+    max-width: 340px;
+  }
+  .badge .title {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: #c87832;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .badge .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #e8c070;
+    margin-bottom: 8px;
+  }
+  .badge hr { border-color: #5a2800; margin: 6px 0; }
+  .badge .stat { font-size: 11px; color: #a07840; line-height: 1.7; }
+  .badge .secret {
+    font-size: 10.5px; font-style: italic; color: #6a4020;
+    border-top: 1px dashed #3a1800; margin-top: 6px; padding-top: 6px;
+  }
+
+  /* Small token variant (50px — how it looks on the map) */
+  .token-sm {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 35%, #8b1a00, #3a0800 70%);
+    border: 2px solid #c87832;
+    box-shadow: 0 0 0 1px #7a1a00, 0 0 0 2px #c87832;
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .token-sm .helm {
+    width: 22px; height: 26px;
+    border-radius: 50% 50% 30% 30% / 60% 60% 40% 40%;
+    background: linear-gradient(160deg, #d4a040 0%, #8b5a10 40%, #4a2800 100%);
+    margin-top: -3px;
+  }
+  .token-sm .helm::before {
+    width: 4px; height: 9px; top: -6px;
+  }
+  .token-sm .helm::after {
+    width: 14px; height: 6px; bottom: -3px;
+  }
+
+  .label { color: #5a4020; font-size: 10px; font-family: monospace; text-align: center; }
+</style>
+</head>
+<body>
+
+  <div class="label">200×200 — import as MapTool token portrait</div>
+  <div class="token">
+    <div class="portrait">
+      <div class="helm"></div>
+    </div>
+  </div>
+
+  <div class="badge">
+    <div class="title">Blunt Force Nemesis · Sessions 1–2</div>
+    <div class="name">Legate Marcus Aurelius Corvinus</div>
+    <hr>
+    <div class="stat">
+      <b>HP:</b> 78 &nbsp;·&nbsp; <b>AC:</b> 18 (plate) &nbsp;·&nbsp; <b>CR:</b> 5<br>
+      <b>STR</b> 18 &nbsp;·&nbsp; <b>DEX</b> 12 &nbsp;·&nbsp; <b>CON</b> 16<br>
+      <b>INT</b> 14 &nbsp;·&nbsp; <b>WIS</b> 10 &nbsp;·&nbsp; <b>CHA</b> 16<br>
+      <b>Save bonuses:</b> +6 Str, +5 Con, +4 Cha<br>
+      <b>Skills:</b> Intimidation +6, History +4, Insight +2
+    </div>
+    <div class="secret">
+      Secret: Already dispatched a private rider to Rome before the party was briefed.
+      The party is not the first team he sent below.
+    </div>
+  </div>
+
+  <div class="label">50×50 — map scale</div>
+  <div class="token-sm">
+    <div class="helm"></div>
+  </div>
+
+</body>
+</html>

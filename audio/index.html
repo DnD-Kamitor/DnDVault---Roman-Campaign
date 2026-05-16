@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shadow of Mars — Ambient Audio Guide</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0e0c08;
+    --card: #1a1610;
+    --border: #3a2e18;
+    --gold: #c8a050;
+    --red: #8b1500;
+    --dim: #6a5830;
+    --text: #c0a870;
+    --accent: #e8c070;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Palatino Linotype', Palatino, Georgia, serif;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 32px 20px;
+  }
+  h1 {
+    font-size: 22px; color: var(--accent);
+    letter-spacing: 0.08em; text-align: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 12px; margin-bottom: 8px;
+  }
+  .subtitle {
+    text-align: center; font-size: 12px; color: var(--dim);
+    margin-bottom: 28px; font-style: italic;
+  }
+  .session {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--red);
+    border-radius: 4px;
+    margin-bottom: 18px;
+    overflow: hidden;
+  }
+  .session-header {
+    background: #14100a;
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  .session-header:hover { background: #1e1812; }
+  .session-num {
+    font-size: 10px; letter-spacing: 0.15em;
+    color: var(--red); text-transform: uppercase; font-weight: 700;
+  }
+  .session-title { font-size: 15px; color: var(--accent); font-weight: 700; }
+  .session-subtitle { font-size: 11px; color: var(--dim); font-style: italic; }
+  .session-body { padding: 14px; display: none; }
+  .session.open .session-body { display: block; }
+  .cue-group { margin-bottom: 14px; }
+  .cue-label {
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--gold); font-weight: 700; margin-bottom: 6px;
+    border-bottom: 1px solid var(--border); padding-bottom: 3px;
+  }
+  .track-row {
+    display: flex; align-items: flex-start;
+    gap: 10px; padding: 6px 0;
+    border-bottom: 1px solid #1e1a12;
+  }
+  .track-row:last-child { border-bottom: none; }
+  .play-btn {
+    display: inline-block; width: 24px; height: 24px; line-height: 24px;
+    text-align: center; background: var(--red); color: var(--gold);
+    border-radius: 50%; font-size: 10px; flex-shrink: 0;
+    text-decoration: none; cursor: pointer;
+  }
+  .track-info { flex: 1; }
+  .track-name { font-size: 12px; color: var(--accent); font-weight: 700; }
+  .track-artist { font-size: 11px; color: var(--dim); }
+  .track-use { font-size: 11px; color: var(--text); font-style: italic; margin-top: 1px; }
+  .search-btn {
+    font-size: 10px; color: var(--dim); text-decoration: none;
+    border: 1px solid var(--border); padding: 2px 6px; border-radius: 2px;
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .search-btn:hover { color: var(--gold); border-color: var(--gold); }
+  .ambient-note {
+    font-size: 11px; color: var(--dim); font-style: italic;
+    background: #100e08; border-left: 3px solid var(--border);
+    padding: 7px 10px; margin-top: 10px; border-radius: 2px;
+  }
+  .toggle { font-size: 11px; color: var(--dim); }
+</style>
+</head>
+<body>
+
+<h1>Shadow of Mars</h1>
+<div class="subtitle">Ambient Audio Guide — one tab per session · keep open during play</div>
+
+<!-- SESSION 1 -->
+<div class="session open" id="s1">
+  <div class="session-header" onclick="toggle('s1')">
+    <div>
+      <div class="session-num">Session 1</div>
+      <div class="session-title">Blood and Omens</div>
+      <div class="session-subtitle">The descent into the ruins, the discovery of the spear</div>
+    </div>
+    <div class="toggle">▲</div>
+  </div>
+  <div class="session-body">
+    <div class="cue-group">
+      <div class="cue-label">Opening — Fort Vindolanda at dawn</div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Hans+Zimmer+Gladiator+main+theme" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Gladiator — Main Theme</div>
+          <div class="track-artist">Hans Zimmer</div>
+          <div class="track-use">Scene 0–1: Corvinus summons the party. Commands that feel like they end a life.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Hans+Zimmer+Gladiator+main+theme" target="_blank">Search YouTube</a>
+      </div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Gladiator+Elysium+Hans+Zimmer" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Elysium</div>
+          <div class="track-artist">Hans Zimmer</div>
+          <div class="track-use">Scene 1: Cassia's warning. Quiet dread, not action.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Gladiator+Elysium+Hans+Zimmer" target="_blank">Search YouTube</a>
+      </div>
+    </div>
+    <div class="cue-group">
+      <div class="cue-label">Descent — Hall of Shields and Chamber of Chains</div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Wardruna+Algir+i+byrjun" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Algir - i byrjun</div>
+          <div class="track-artist">Wardruna</div>
+          <div class="track-use">The descent into the shaft. Ancient, Germanic, other. The shields should feel wrong to Roman eyes.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Wardruna+Algir+i+byrjun" target="_blank">Search YouTube</a>
+      </div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Wardruna+Tyr" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Tyr</div>
+          <div class="track-artist">Wardruna</div>
+          <div class="track-use">Chamber of Chains. The TIWAZ rune. A war-god's silence.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Wardruna+Tyr" target="_blank">Search YouTube</a>
+      </div>
+    </div>
+    <div class="cue-group">
+      <div class="cue-label">The Spear and Worker Frenzy</div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Hans+Zimmer+Gladiator+The+Battle" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">The Battle / Now We Are Free</div>
+          <div class="track-artist">Hans Zimmer</div>
+          <div class="track-use">Scene 3–4: Combat with the Animated Armor, worker frenzy. Keep it controlled.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Hans+Zimmer+Gladiator+The+Battle" target="_blank">Search YouTube</a>
+      </div>
+    </div>
+    <div class="ambient-note">
+      Between scenes: let it go quiet. Silence in the ruins is its own sound cue. Start music late rather than early.
+    </div>
+  </div>
+</div>
+
+<!-- SESSION 2 -->
+<div class="session" id="s2">
+  <div class="session-header" onclick="toggle('s2')">
+    <div>
+      <div class="session-num">Session 2</div>
+      <div class="session-title">The Chieftain's Price</div>
+      <div class="session-subtitle">The Tribune arrives; the Sextus murder; the raid</div>
+    </div>
+    <div class="toggle">▼</div>
+  </div>
+  <div class="session-body">
+    <div class="cue-group">
+      <div class="cue-label">Political scenes — Tribune's arrival and investigation</div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Johann+Johannsson+Arrival+Heptapod+B" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Heptapod B</div>
+          <div class="track-artist">Jóhann Jóhannsson</div>
+          <div class="track-use">Investigation window. Strange dread. Something in the fort that shouldn't be there.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Johann+Johannsson+Arrival+Heptapod+B" target="_blank">Search YouTube</a>
+      </div>
+    </div>
+    <div class="cue-group">
+      <div class="cue-label">Germanic contact — The Raid</div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Wardruna+Yggdrasil+album" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Yggdrasil (album)</div>
+          <div class="track-artist">Wardruna</div>
+          <div class="track-use">The raid scene and contact with Vercingetorix's tribe. Run it as ambient, not battle music.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Wardruna+Yggdrasil+album" target="_blank">Search YouTube</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SESSION 3 -->
+<div class="session" id="s3">
+  <div class="session-header" onclick="toggle('s3')">
+    <div>
+      <div class="session-num">Session 3</div>
+      <div class="session-title">Through the Dark Forest</div>
+      <div class="session-subtitle">The forest journey; Thusnelda's grove; the sacrifice</div>
+    </div>
+    <div class="toggle">▼</div>
+  </div>
+  <div class="session-body">
+    <div class="cue-group">
+      <div class="cue-label">Forest and ritual</div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Heilung+Ofnir+Othan" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Othan</div>
+          <div class="track-artist">Heilung, Ofnir</div>
+          <div class="track-use">The sacred grove. Thusnelda's ritual. Ancient, ritual, genuinely other. Do not cut this short.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Heilung+Ofnir+Othan" target="_blank">Search YouTube</a>
+      </div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Heilung+Lifa+Krigsgaldr" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Krigsgaldr</div>
+          <div class="track-artist">Heilung, Lifa</div>
+          <div class="track-use">The d8 forest event encounters. Unsettling but not aggressive.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Heilung+Lifa+Krigsgaldr" target="_blank">Search YouTube</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SESSION 4 -->
+<div class="session" id="s4">
+  <div class="session-header" onclick="toggle('s4')">
+    <div>
+      <div class="session-num">Session 4</div>
+      <div class="session-title">The God's Demand</div>
+      <div class="session-subtitle">The siege; the council; Mars speaks</div>
+    </div>
+    <div class="toggle">▼</div>
+  </div>
+  <div class="session-body">
+    <div class="cue-group">
+      <div class="cue-label">Siege and arrival</div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Rome+Total+War+main+theme+soundtrack" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Main Theme</div>
+          <div class="track-artist">Rome: Total War OST</div>
+          <div class="track-use">The siege opening. Monumental. The army has arrived and this is no longer a frontier incident.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Rome+Total+War+main+theme+soundtrack" target="_blank">Search YouTube</a>
+      </div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Ennio+Morricone+suspense+danger" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">The Ecstasy of Gold / suspense tracks</div>
+          <div class="track-artist">Ennio Morricone</div>
+          <div class="track-use">Council deliberations, tunnel scenes, the antechamber. Dangerous quiet.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Ennio+Morricone+The+Good+Bad+Ugly" target="_blank">Search YouTube</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SESSION 5 -->
+<div class="session" id="s5">
+  <div class="session-header" onclick="toggle('s5')">
+    <div>
+      <div class="session-num">Session 5</div>
+      <div class="session-title">The Wrath of Mars</div>
+      <div class="session-subtitle">Trials of Mars; resolution; epilogue</div>
+    </div>
+    <div class="toggle">▼</div>
+  </div>
+  <div class="session-body">
+    <div class="cue-group">
+      <div class="cue-label">Trials and divine confrontation</div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Hans+Zimmer+Gladiator+Now+We+Are+Free" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Now We Are Free</div>
+          <div class="track-artist">Hans Zimmer / Lisa Gerrard</div>
+          <div class="track-use">Option C: Trial of Voice. The argument before a god. Quiet, impossible weight.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Hans+Zimmer+Gladiator+Now+We+Are+Free" target="_blank">Search YouTube</a>
+      </div>
+    </div>
+    <div class="cue-group">
+      <div class="cue-label">Epilogue — One Year Later</div>
+      <div class="track-row">
+        <a class="play-btn" href="https://www.youtube.com/results?search_query=Wardruna+Helvegen" target="_blank">▶</a>
+        <div class="track-info">
+          <div class="track-name">Helvegen</div>
+          <div class="track-artist">Wardruna</div>
+          <div class="track-use">The epilogue narration. One year on. Whatever they became. Let it breathe.</div>
+        </div>
+        <a class="search-btn" href="https://www.youtube.com/results?search_query=Wardruna+Helvegen" target="_blank">Search YouTube</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggle(id) {
+  const el = document.getElementById(id);
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.session').forEach(s => {
+    s.classList.remove('open');
+    s.querySelector('.toggle').textContent = '▼';
+  });
+  if (!isOpen) {
+    el.classList.add('open');
+    el.querySelector('.toggle').textContent = '▲';
+  }
+}
+</script>
+</body>
+</html>

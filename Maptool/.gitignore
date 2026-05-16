@@ -1,0 +1,22 @@
+# Extracted application binaries — recreated by setup.sh
+app/
+
+# MapTool runtime data (preferences, cache, autosaves, imported resources)
+data/
+
+# Original .deb installers (large; re-download if needed)
+*.deb
+
+# Zip archives (token pack, source zips)
+dnd5eTokens.zip
+addons/builtin-source/
+
+# Nested git repos (cloned addon libraries — too large to track here)
+addons/Lib_MonsterMaker/
+addons/Lib_SpellLibrary/
+
+# Token images (large binary pack — already in dnd5eTokens/)
+dnd5eTokens/
+
+# Leftover installer scripts
+installscriptmap.sh
