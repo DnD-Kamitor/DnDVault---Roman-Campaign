@@ -3,7 +3,7 @@ set -euo pipefail
 
 BASE=/home/chris/Documents/NextCloud/Github/DnDVault---Roman-Campaign/Maptool
 DG="$BASE/maps/dicegrimorium"
-TOKENS="$BASE/tokens/npcs"
+FORT_TOKENS="$BASE/maps/campaign/Fort_Vindolanda"
 DEST="$BASE/maps/campaign"
 FORT_IMGS="$BASE/../images"   # saalburg_plan, castra_layout, vindolanda_aerial
 
@@ -12,7 +12,6 @@ copy_map() {
   local folder="$DG/$1"
   local dest_dir="$2"
   if [[ ! -d "$folder" ]]; then echo " [miss] $1"; return; fi
-  # Find the actual map image — exclude anything with "promo" or "Promo" in name
   while IFS= read -r -d '' img; do
     local fname
     fname="$(basename "$img")"
@@ -21,17 +20,49 @@ copy_map() {
   done < <(find "$folder" -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.webp" \) ! -iname "*promo*" -print0)
 }
 
-# Copy a token HTML file
+# Copy a named NPC token (.rptok) from the Fort_Vindolanda folder
 copy_token() {
-  local src="$TOKENS/$1"
+  local src="$FORT_TOKENS/$1"
   local dest_dir="$2"
   if [[ -f "$src" ]]; then
     cp "$src" "$dest_dir/$(basename "$src")"
     echo "   + token: $1"
+  else
+    echo " [miss] token: $1"
   fi
 }
 
 mkdir -p "$DEST"
+
+# ─────────────────────────────────────────────────────────────────────────────
+echo ""
+echo "=== Fort Vindolanda (permanent camp folder) ==="
+F="$DEST/Fort_Vindolanda"
+mkdir -p "$F"
+
+# Best available fort maps from local Maptool/maps/
+MAPS_DIR="$BASE/maps"
+[[ -f "$MAPS_DIR/Germanic Camp-45x50-grid.jpg" ]] && cp "$MAPS_DIR/Germanic Camp-45x50-grid.jpg" "$F/FortVindolanda_Camp_45x50.jpg" && echo "   + camp map"
+[[ -f "$MAPS_DIR/testmap.jpg" ]] && cp "$MAPS_DIR/testmap.jpg" "$F/FortVindolanda_Courtyard.jpg" && echo "   + courtyard map"
+
+# Fort reference images
+cp "$FORT_IMGS/saalburg_plan.jpg"     "$F/saalburg_plan.jpg"     2>/dev/null && echo "   + saalburg_plan"
+cp "$FORT_IMGS/saalburg_fort.jpg"     "$F/saalburg_fort.jpg"     2>/dev/null && echo "   + saalburg_fort"
+cp "$FORT_IMGS/castra_layout.svg"     "$F/castra_layout.svg"     2>/dev/null && echo "   + castra_layout"
+cp "$FORT_IMGS/vindolanda_aerial.jpg" "$F/vindolanda_aerial.jpg" 2>/dev/null && echo "   + vindolanda_aerial"
+
+# All NPC tokens — copy from dnd5eTokens source, not from self
+HUM="$BASE/dnd5eTokens/humanoid"
+cp "$HUM/Knight.rptok"       "$F/Corvinus_Legate.rptok"       && echo "   + token: Corvinus_Legate"
+cp "$HUM/Priest.rptok"       "$F/Cassia_Augur.rptok"          && echo "   + token: Cassia_Augur"
+cp "$HUM/Veteran.rptok"      "$F/Varro_Centurion.rptok"       && echo "   + token: Varro_Centurion"
+cp "$HUM/Noble.rptok"        "$F/Brutus_Senator.rptok"        && echo "   + token: Brutus_Senator"
+cp "$HUM/Berserker.rptok"    "$F/Vercingetorix_Chieftain.rptok" && echo "   + token: Vercingetorix_Chieftain"
+cp "$HUM/Druid.rptok"        "$F/Thusnelda_Volva.rptok"       && echo "   + token: Thusnelda_Volva"
+cp "$HUM/Guard.rptok"        "$F/Legionary_Guard.rptok"       && echo "   + token: Legionary_Guard"
+cp "$HUM/Scout.rptok"        "$F/Explorator_Scout.rptok"      && echo "   + token: Explorator_Scout"
+cp "$HUM/Commoner.rptok"     "$F/Vicus_Civilian.rptok"        && echo "   + token: Vicus_Civilian"
+cp "$HUM/Spy.rptok"          "$F/Frumentarius_Agent.rptok"    && echo "   + token: Frumentarius_Agent"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -61,9 +92,11 @@ cp "$FORT_IMGS/castra_layout.svg"    "$S/castra_layout.svg"
 cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/vindolanda_aerial.jpg"
 echo "   + fort reference images (saalburg_plan, castra_layout, vindolanda_aerial, saalburg_fort)"
 
-copy_token corvinus_token.html  "$S"
-copy_token cassia_token.html    "$S"
-copy_token varro_token.html     "$S"
+copy_token Corvinus_Legate.rptok     "$S"
+copy_token Cassia_Augur.rptok        "$S"
+copy_token Varro_Centurion.rptok     "$S"
+copy_token Legionary_Guard.rptok     "$S"
+copy_token Vicus_Civilian.rptok      "$S"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -89,10 +122,13 @@ cp "$FORT_IMGS/castra_layout.svg"    "$S/castra_layout.svg"
 cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/vindolanda_aerial.jpg"
 echo "   + fort reference images"
 
-copy_token corvinus_token.html     "$S"
-copy_token cassia_token.html       "$S"
-copy_token varro_token.html        "$S"
-copy_token vercingetorix_token.html "$S"
+copy_token Corvinus_Legate.rptok      "$S"
+copy_token Cassia_Augur.rptok         "$S"
+copy_token Varro_Centurion.rptok      "$S"
+copy_token Vercingetorix_Chieftain.rptok "$S"
+copy_token Legionary_Guard.rptok      "$S"
+copy_token Explorator_Scout.rptok     "$S"
+copy_token Vicus_Civilian.rptok       "$S"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -128,9 +164,10 @@ copy_map ForestRuins          "$S"
 copy_map LabyrinthRuins       "$S"
 copy_map ForestCaveEntrance   "$S"
 
-copy_token varro_token.html        "$S"
-copy_token vercingetorix_token.html "$S"
-copy_token thusnelda_token.html    "$S"
+copy_token Varro_Centurion.rptok         "$S"
+copy_token Vercingetorix_Chieftain.rptok "$S"
+copy_token Thusnelda_Volva.rptok         "$S"
+copy_token Explorator_Scout.rptok        "$S"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -156,10 +193,11 @@ cp "$FORT_IMGS/castra_layout.svg"    "$S/castra_layout.svg"
 cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/vindolanda_aerial.jpg"
 echo "   + fort reference images"
 
-copy_token cassia_token.html       "$S"
-copy_token varro_token.html        "$S"
-copy_token vercingetorix_token.html "$S"
-copy_token brutus_token.html       "$S"
+copy_token Cassia_Augur.rptok            "$S"
+copy_token Varro_Centurion.rptok         "$S"
+copy_token Vercingetorix_Chieftain.rptok "$S"
+copy_token Brutus_Senator.rptok          "$S"
+copy_token Legionary_Guard.rptok         "$S"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
@@ -176,12 +214,13 @@ copy_map LabyrinthRuins       "$S"
 copy_map AncientAltar         "$S"
 copy_map NatureGoddessTemple  "$S"
 
-copy_token corvinus_token.html     "$S"
-copy_token cassia_token.html       "$S"
-copy_token varro_token.html        "$S"
-copy_token vercingetorix_token.html "$S"
-copy_token brutus_token.html       "$S"
-copy_token thusnelda_token.html    "$S"
+copy_token Corvinus_Legate.rptok         "$S"
+copy_token Cassia_Augur.rptok            "$S"
+copy_token Varro_Centurion.rptok         "$S"
+copy_token Vercingetorix_Chieftain.rptok "$S"
+copy_token Brutus_Senator.rptok          "$S"
+copy_token Thusnelda_Volva.rptok         "$S"
+copy_token Legionary_Guard.rptok         "$S"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""
