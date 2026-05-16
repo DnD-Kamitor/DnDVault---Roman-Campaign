@@ -75,6 +75,34 @@ done in haste: "DO NOT WAKE WHAT SLEEPS HERE."
 - Sentries report shadows moving without bodies
 - Legionaries hear distant war-horns (no enemy visible)
 
+---
+
+### Maps for This Session
+
+Maps are in `Maptool/maps/campaign/S1_Blood_and_Omens/` after running `Maptool/maps/build_campaign_maps.sh`. In MapTool: File → Add Resource to Library → Local Directory tab, then drag any image from the panel into the map background slot.
+
+| Scene | Map file(s) | Use |
+|---|---|---|
+| Fort gate / exterior encounter | `CastleWall` | Palisade wall, rampart, any exterior fight or chase |
+| Gate checkpoint / Tribune's arrival | `BridgeCheckpoint` | Guard post scene, the Tribune riding in |
+| Stair down from the principia | `DungeonEntrance`, `ForestDungeonEntrance` | The sealed entrance in the principia basement |
+| First underground cavern | `LargeCave`, `CavernPit` | Open cave directly below the stair |
+| Winding passages | `CaveTunnelsVol2`, `CaveTunnelsVol3` | Branching tunnels; patrol ambush, torchlight atmosphere |
+| Tomb chambers | `AncientTombs`, `FloodedCave`, `GoldVaults` | Mid-vault rooms with environmental hazards |
+| Catacombs approach | `CathedralCatacombs` | Narrowing corridors leading to the altar |
+| The altar chamber | `AncientAltar` | Spear discovery; corruption trigger point |
+| Optional exploration | `RandomDungeon`, `DungeonVol2` | Filler chambers, trap rooms |
+
+**Fort reference images** (player handouts, not battlemaps):
+
+- `saalburg_plan.jpg` — archaeological floor plan of the Saalburg fort showing labelled rooms; good for player orientation at the table
+- `saalburg_fort.jpg` — exterior photo of the reconstructed fort
+- `castra_layout.svg`, `vindolanda_aerial.jpg` — schematic and aerial view
+
+**Note: no playable fort interior battlemap is in this pack.** For principia audience scenes and barracks fights, run theater-of-mind or scale `castra_layout.svg` as a backdrop in MapTool (grid ≈ 70px = 5ft; rooms are proportional but not gridded for play).
+
+---
+
 ## Scene 0: Cold Open (5 minutes)
 **Purpose:** Hook players immediately with visceral horror (Guy Sclanders: "Strong Opening")
 
