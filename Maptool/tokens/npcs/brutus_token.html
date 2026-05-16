@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Token: Senator Brutus</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 32px;
+    padding: 40px;
+  }
+
+  /* Grey frame = unknown allegiance */
+  .token {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 43% 36%, #2a1a3a, #080010 70%);
+    border: 4px solid #888090;
+    box-shadow:
+      0 0 0 3px #504858,
+      0 0 0 6px #888090,
+      0 0 0 9px #383040,
+      0 8px 24px rgba(0,0,0,0.8);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .token .portrait {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Patrician head — civilian, older, calculating */
+  .head {
+    width: 60px;
+    height: 72px;
+    background: linear-gradient(160deg, #d8c8b8 0%, #b0a090 40%, #706050 100%);
+    border-radius: 46% 46% 40% 40% / 52% 52% 48% 48%;
+    position: relative;
+    margin-top: -6px;
+  }
+
+  /* Laurel wreath or toga fold at the shoulder — toga drape */
+  .head::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 28px;
+    background: linear-gradient(180deg, #6a306a 0%, #4a1060 60%, rgba(40,0,50,0.3) 100%);
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+  }
+
+  /* Thin laurel band on head */
+  .head::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 10px;
+    background: linear-gradient(90deg, rgba(180,160,40,0), #a09020 30%, #c8b032 50%, #a09020 70%, rgba(180,160,40,0));
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+
+  .badge {
+    background: #0a080e;
+    border: 1px solid #888090;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #a898b0;
+    font-family: 'Palatino Linotype', Palatino, Georgia, serif;
+    max-width: 340px;
+  }
+  .badge .title { font-size: 11px; letter-spacing: 0.15em; color: #888090; text-transform: uppercase; margin-bottom: 4px; }
+  .badge .name  { font-size: 18px; font-weight: 700; color: #c8c0d8; margin-bottom: 8px; }
+  .badge hr     { border-color: #2a2030; margin: 6px 0; }
+  .badge .stat  { font-size: 11px; color: #787088; line-height: 1.7; }
+  .badge .secret { font-size: 10.5px; font-style: italic; color: #403848; border-top: 1px dashed #201828; margin-top: 6px; padding-top: 6px; }
+
+  .token-sm {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 43% 36%, #2a1a3a, #080010 70%);
+    border: 2px solid #888090;
+    box-shadow: 0 0 0 1px #504858, 0 0 0 2px #888090;
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .token-sm .head {
+    width: 17px; height: 20px;
+    border-radius: 46% 46% 40% 40% / 52% 52% 48% 48%;
+    background: linear-gradient(160deg, #d8c8b8, #706050);
+    margin-top: -2px;
+  }
+  .token-sm .head::before {
+    bottom: -6px; left: 50%; transform: translateX(-50%);
+    width: 22px; height: 8px; z-index: -1;
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(180deg, #6a306a, rgba(40,0,50,0.3));
+  }
+
+  .label { color: #302830; font-size: 10px; font-family: monospace; text-align: center; }
+</style>
+</head>
+<body>
+
+  <div class="label">200×200 — import as MapTool token portrait</div>
+  <div class="token">
+    <div class="portrait">
+      <div class="head"></div>
+    </div>
+  </div>
+
+  <div class="badge">
+    <div class="title">Unknown Allegiance · Never Present · Sessions 1–4 / Physical 4–5</div>
+    <div class="name">Senator Marcus Brutus</div>
+    <hr>
+    <div class="stat">
+      <b>HP:</b> 52 &nbsp;·&nbsp; <b>AC:</b> 11 (fine clothes) &nbsp;·&nbsp; <b>CR:</b> 4<br>
+      <b>STR</b> 10 &nbsp;·&nbsp; <b>DEX</b> 12 &nbsp;·&nbsp; <b>CON</b> 14<br>
+      <b>INT</b> 18 &nbsp;·&nbsp; <b>WIS</b> 14 &nbsp;·&nbsp; <b>CHA</b> 18<br>
+      <b>Save bonuses:</b> +4 Int, +4 Cha<br>
+      <b>Skills:</b> Deception +7, Persuasion +7, History +7, Insight +5<br>
+      <b>Resources:</b> Agent network, forged orders, blackmail files
+    </div>
+    <div class="secret">
+      Secret: Corvinus is his creature. The party is not — they are a variable
+      he has not yet calculated. He becomes physically present at the sacred grove
+      once the spear's power is confirmed.
+    </div>
+  </div>
+
+  <div class="label">50×50 — map scale</div>
+  <div class="token-sm">
+    <div class="head"></div>
+  </div>
+
+</body>
+</html>

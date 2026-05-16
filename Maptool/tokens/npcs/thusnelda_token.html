@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Token: Thusnelda</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 32px;
+    padding: 40px;
+  }
+
+  /* Grey-blue frame = unknown allegiance / ancient power */
+  .token {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 44% 36%, #0a1028, #020208 70%);
+    border: 4px solid #7080a8;
+    box-shadow:
+      0 0 0 3px #384060,
+      0 0 0 6px #7080a8,
+      0 0 0 9px #202840,
+      0 8px 24px rgba(0,0,0,0.9);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .token .portrait {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hooded, hunched figure */
+  .seeress {
+    width: 60px;
+    height: 88px;
+    position: relative;
+    margin-top: 4px;
+  }
+
+  /* Hood — large, enveloping */
+  .seeress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 52px;
+    background: linear-gradient(170deg, #3a3a50 0%, #1a1a30 50%, #080818 100%);
+    border-radius: 50% 50% 30% 30% / 58% 58% 42% 42%;
+  }
+
+  /* Face — barely visible in shadow */
+  .seeress-face {
+    width: 32px;
+    height: 36px;
+    background: linear-gradient(160deg, #a89888 0%, #786858 50%, #382818 100%);
+    border-radius: 44% 44% 38% 38% / 52% 52% 48% 48%;
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+  }
+
+  /* Rune-staff hint below figure */
+  .seeress::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 44px;
+    background: linear-gradient(180deg, #b0a080, #504030);
+    border-radius: 2px;
+    box-shadow: 0 -8px 0 0 #808060, 8px -20px 0 -1px #606040, -8px -20px 0 -1px #606040;
+  }
+
+  .badge {
+    background: #050810;
+    border: 1px solid #7080a8;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #8898c0;
+    font-family: 'Palatino Linotype', Palatino, Georgia, serif;
+    max-width: 340px;
+  }
+  .badge .title { font-size: 11px; letter-spacing: 0.15em; color: #7080a8; text-transform: uppercase; margin-bottom: 4px; }
+  .badge .name  { font-size: 18px; font-weight: 700; color: #b0c0e0; margin-bottom: 8px; }
+  .badge hr     { border-color: #181828; margin: 6px 0; }
+  .badge .stat  { font-size: 11px; color: #505870; line-height: 1.7; }
+  .badge .secret { font-size: 10.5px; font-style: italic; color: #2c3040; border-top: 1px dashed #101820; margin-top: 6px; padding-top: 6px; }
+
+  .token-sm {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 44% 36%, #0a1028, #020208 70%);
+    border: 2px solid #7080a8;
+    box-shadow: 0 0 0 1px #384060, 0 0 0 2px #7080a8;
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .token-sm .seeress {
+    width: 16px; height: 24px;
+    margin-top: 1px;
+  }
+  .token-sm .seeress::before {
+    top: 0; left: 50%; transform: translateX(-50%);
+    width: 16px; height: 14px;
+    border-radius: 50% 50% 30% 30% / 58% 58% 42% 42%;
+    background: linear-gradient(170deg, #3a3a50, #080818);
+  }
+  .token-sm .seeress::after {
+    bottom: 0; left: 50%; transform: translateX(-50%);
+    width: 2px; height: 12px;
+    border-radius: 1px;
+    background: linear-gradient(180deg, #b0a080, #504030);
+    box-shadow: none;
+  }
+  .token-sm .seeress-face {
+    width: 9px; height: 10px;
+    top: 4px; opacity: 0.6;
+  }
+
+  .label { color: #181828; font-size: 10px; font-family: monospace; text-align: center; }
+</style>
+</head>
+<body>
+
+  <div class="label">200×200 — import as MapTool token portrait</div>
+  <div class="token">
+    <div class="portrait">
+      <div class="seeress">
+        <div class="seeress-face"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="badge">
+    <div class="title">Unknown Allegiance · Völva · Session 3</div>
+    <div class="name">Thusnelda</div>
+    <hr>
+    <div class="stat">
+      <b>HP:</b> 45 &nbsp;·&nbsp; <b>AC:</b> 12 (barkskin) &nbsp;·&nbsp; <b>CR:</b> 3<br>
+      <b>STR</b> 8 &nbsp;·&nbsp; <b>DEX</b> 12 &nbsp;·&nbsp; <b>CON</b> 14<br>
+      <b>INT</b> 14 &nbsp;·&nbsp; <b>WIS</b> 20 &nbsp;·&nbsp; <b>CHA</b> 16<br>
+      <b>Save bonuses:</b> +5 Wis, +4 Cha<br>
+      <b>Skills:</b> Nature +4, Insight +8, Arcana +4, Religion +4<br>
+      <b>Spells:</b> Rune-casting, divination, Speak with Animals, Entangle
+    </div>
+    <div class="secret">
+      Secret: She knows the spear's origin. She knows what Mars actually wants —
+      not a champion, but a door. The forest has been holding something out
+      for two hundred years.
+    </div>
+  </div>
+
+  <div class="label">50×50 — map scale</div>
+  <div class="token-sm">
+    <div class="seeress">
+      <div class="seeress-face"></div>
+    </div>
+  </div>
+
+</body>
+</html>

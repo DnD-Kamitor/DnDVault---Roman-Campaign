@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Token: Vercingetorix</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 32px;
+    padding: 40px;
+  }
+
+  /* Gold-green frame = ally/neutral, Germanic earth tones */
+  .token {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 42% 40%, #1a2a08, #080800 70%);
+    border: 4px solid #8aaa22;
+    box-shadow:
+      0 0 0 3px #4a6a08,
+      0 0 0 6px #8aaa22,
+      0 0 0 9px #2a4a00,
+      0 8px 24px rgba(0,0,0,0.8);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .token .portrait {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Germanic warrior — wide, shaggy, wild hair */
+  .warrior {
+    width: 72px;
+    height: 80px;
+    background: linear-gradient(160deg, #c8a870 0%, #8a6830 50%, #4a3010 100%);
+    border-radius: 46% 46% 34% 34% / 54% 54% 46% 46%;
+    position: relative;
+    margin-top: -4px;
+  }
+
+  /* Long wild hair — wide pseudo-element behind head */
+  .warrior::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 76px;
+    background: linear-gradient(160deg, #5a3808 0%, #3a2000 50%, #1a0800 100%);
+    border-radius: 46% 46% 44% 44% / 50% 50% 50% 50%;
+    z-index: -1;
+    /* Jagged edge suggestion via box-shadow */
+    box-shadow:
+      -12px -4px 0 -4px #3a2000,
+      12px -4px 0 -4px #3a2000,
+      -16px 8px 0 -6px #2a1800,
+      16px 8px 0 -6px #2a1800;
+  }
+
+  /* Iron torc around neck */
+  .warrior::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 52px;
+    height: 14px;
+    background: transparent;
+    border: 3px solid #707870;
+    border-radius: 50%;
+    border-top-color: transparent;
+  }
+
+  .badge {
+    background: #080c00;
+    border: 1px solid #8aaa22;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #a0c050;
+    font-family: 'Palatino Linotype', Palatino, Georgia, serif;
+    max-width: 340px;
+  }
+  .badge .title { font-size: 11px; letter-spacing: 0.15em; color: #8aaa22; text-transform: uppercase; margin-bottom: 4px; }
+  .badge .name  { font-size: 18px; font-weight: 700; color: #c8d880; margin-bottom: 8px; }
+  .badge hr     { border-color: #283a00; margin: 6px 0; }
+  .badge .stat  { font-size: 11px; color: #708030; line-height: 1.7; }
+  .badge .secret { font-size: 10.5px; font-style: italic; color: #384018; border-top: 1px dashed #182000; margin-top: 6px; padding-top: 6px; }
+
+  .token-sm {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 42% 40%, #1a2a08, #080800 70%);
+    border: 2px solid #8aaa22;
+    box-shadow: 0 0 0 1px #4a6a08, 0 0 0 2px #8aaa22;
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .token-sm .warrior {
+    width: 20px; height: 22px;
+    border-radius: 46% 46% 34% 34% / 54% 54% 46% 46%;
+    background: linear-gradient(160deg, #c8a870, #4a3010);
+    margin-top: -1px;
+  }
+  .token-sm .warrior::before {
+    top: -3px; left: 50%; transform: translateX(-50%);
+    width: 28px; height: 22px; z-index: -1;
+    border-radius: 46% 46% 44% 44% / 50% 50% 50% 50%;
+    background: linear-gradient(160deg, #5a3808, #1a0800);
+  }
+  .token-sm .warrior::after {
+    bottom: -4px; left: 50%; transform: translateX(-50%);
+    width: 16px; height: 4px;
+    border: 1px solid #707870; border-top-color: transparent;
+  }
+
+  .label { color: #203000; font-size: 10px; font-family: monospace; text-align: center; }
+</style>
+</head>
+<body>
+
+  <div class="label">200×200 — import as MapTool token portrait</div>
+  <div class="token">
+    <div class="portrait">
+      <div class="warrior"></div>
+    </div>
+  </div>
+
+  <div class="badge">
+    <div class="title">Ally / Neutral · Germanic War Chief · Sessions 2–5</div>
+    <div class="name">Vercingetorix</div>
+    <hr>
+    <div class="stat">
+      <b>HP:</b> 72 &nbsp;·&nbsp; <b>AC:</b> 14 (hide, Unarmored) &nbsp;·&nbsp; <b>CR:</b> 4<br>
+      <b>STR</b> 20 &nbsp;·&nbsp; <b>DEX</b> 14 &nbsp;·&nbsp; <b>CON</b> 18<br>
+      <b>INT</b> 12 &nbsp;·&nbsp; <b>WIS</b> 12 &nbsp;·&nbsp; <b>CHA</b> 14<br>
+      <b>Save bonuses:</b> +7 Str, +6 Con<br>
+      <b>Skills:</b> Athletics +7, Intimidation +4, Survival +3<br>
+      <b>Traits:</b> Reckless Attack, Danger Sense, shadow-curse whispers
+    </div>
+    <div class="secret">
+      Secret: The corruption speaks to him differently than it does to Romans.
+      He has heard the spear's voice before. He is afraid of what he recognises.
+    </div>
+  </div>
+
+  <div class="label">50×50 — map scale</div>
+  <div class="token-sm">
+    <div class="warrior"></div>
+  </div>
+
+</body>
+</html>
