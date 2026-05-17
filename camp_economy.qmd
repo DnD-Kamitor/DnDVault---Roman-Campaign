@@ -6,7 +6,6 @@ Fort Vindolanda is not a location the party visits once and leaves behind. It is
 
 This chapter provides a structured economy for the fort. Six named traders offer goods and services. Each can upgrade based on what the party brings back from the field. The party's standing with each trader is tracked separately and gates access to their most valuable resources. This connects directly to the reputation system in `reputation.qmd`: reaching "they consider you an ally" with Valeria means she will tell you things a healer tells no one.
 
----
 
 ## The Camp as a Living System
 
@@ -22,7 +21,6 @@ The living camp approach treats the fort as a community: each trader has a name,
 
 3. **The camp level rises.** As the party resolves problems, brings back resources, and demonstrates competence, the fort's overall capability increases. Camp Level 1 is standard military supply. Camp Level 3 reflects a fort functioning at genuine operational excellence.
 
----
 
 ## The Six Camp Traders
 
@@ -62,7 +60,6 @@ When the party's standing with Quartus reaches "they owe you something real" or 
 
 **What triggers Quartus's trust:** Competence in military matters (he respects soldiers who know their equipment); treating his paperwork as a real constraint rather than an obstacle to bypass; bringing back materials that he can officially log and report to the senior supply chain.
 
----
 
 ### Rufus (Blacksmith)
 
@@ -100,7 +97,6 @@ When the party's standing with Rufus reaches "they consider you an ally":
 
 **Upgrade trigger for custom work:** The party brings back either iron ore (one load upgrades the camp to Level 2 for metalwork purposes) or an unusually crafted Germanic weapon Rufus can learn from.
 
----
 
 ### Valeria (Medicus)
 
@@ -141,7 +137,6 @@ When the party's standing with Valeria reaches "they owe you something real" or 
 
 **Upgrade trigger:** Any bundle of medicinal herbs from the Germanic forest expands her herb stock to Camp Level 2 for medicine purposes.
 
----
 
 ### Haruspex Paterculus (Diviner)
 
@@ -185,7 +180,6 @@ When the party's standing with Paterculus reaches "they owe you something real" 
 
 **What triggers Paterculus's trust:** Taking the omen situation seriously; attending the morning ritual voluntarily; asking him what he thinks (not what the augury says, but what *he* thinks) and listening to the answer.
 
----
 
 ### Cato (Tavern Operator)
 
@@ -225,7 +219,6 @@ When the party's standing with Cato reaches "they consider you an ally":
 
 **What triggers Cato's trust:** Buying drinks rather than asking questions; coming back more than once; showing that you understand the difference between the official reality of the fort and the actual reality; not asking him to do something that puts him at legal risk before he has decided you are worth that risk.
 
----
 
 ### Sigrun (Germanic Trader)
 
@@ -270,9 +263,7 @@ When the party's standing with Sigrun reaches "they owe you something real" or b
 
 **Upgrade trigger for Sigrun's frequency:** Bringing amber discs from the forest increases her interest and frequency of visits. Each amber disc offered to her moves the relationship statement one position toward "they owe you something real."
 
----
 
----
 
 ## The Vicus Characters
 
@@ -280,7 +271,6 @@ The six camp traders work inside the fort's walls. The four people below work in
 
 See `locations.qmd` for the physical layout of the *vicus* and its key locations. This section covers the people who run it.
 
----
 
 ### Brennus (Taberna Operator)
 
@@ -315,7 +305,6 @@ His secret: three weeks ago a man overpaid for a room. Brennus noticed -- overpa
 
 **Vicus under siege behavior:** Keeps the *taberna* open as a civilian shelter from the first night of the siege. Does not charge the civilians sheltering there. Contributes his private food stores to the fort's communal supply if the party specifically asks and has reached Acquaintance or above. Sends runners to Lucilla every morning to confirm she is still in the relay house.
 
----
 
 ### Lucilla (Mail Relay Widow)
 
@@ -352,7 +341,6 @@ Her secret: she knows exactly which fort officers used her relay for corresponde
 
 **Vicus under siege behavior:** Does not leave the relay house. Continues operating the hook during the siege because message flow does not stop when the gate does; she uses the farrier's window on the south side as a secondary drop point. Sends Brennus a daily note confirming she is operational. If the party secures her safety specifically, she gives them access to her full records of the military-papyrus correspondence, including the address on the letter she has been keeping as leverage.
 
----
 
 ### Titus (The Half-Roman Boy)
 
@@ -387,7 +375,6 @@ His secret, and it is a significant one: his mother has been receiving messages 
 
 **Vicus under siege behavior:** Stays in the *vicus* with his mother initially. After the first night, if the party has earned his trust, appears at whatever location is most useful and provides the physical route information they most need. Will not leave the vicus civilians without telling someone where they are going. If the party tries to send him away for safety, he ignores this.
 
----
 
 ### Aldric (The Gallic Craftsman)
 
@@ -424,7 +411,6 @@ His secret is the notebooks. Twenty-three years of observation in a Gaulish dial
 
 **Vicus under siege behavior:** Does not change. He continues working through the siege, repairs equipment for civilians and soldiers alike without distinction, and does not shelter in the *taberna* because he does not leave his workshop overnight as a matter of habit. If the east gate becomes unusable, he is simply unreachable until the situation changes. He does not consider this a problem.
 
----
 
 ## The Vicus Information Network
 
@@ -468,7 +454,6 @@ Set these limits clearly so the DM knows when to say no without making it feel a
 - **The vicus does not know where the sacred grove is.** Sigrun knows; she does not share this with the *vicus*.
 - **The vicus does not have information about events inside the *principia* or the Legate's private quarters** unless someone inside chose to tell them. Lucilla knows some of what goes out; she does not know what is discussed before it becomes a letter.
 
----
 
 ## Camp Level System
 
@@ -480,7 +465,6 @@ Camp Level is not a single thing. It is a state that affects all traders, all lo
 
 Camp Level cannot be rushed by spending money or spending downtime. It requires demonstrated action in the world. The triggers below are session-anchored: they are things the party does that the fort notices and responds to. Two triggers are required per upgrade so that a single lucky event cannot skip levels.
 
----
 
 ### Camp Level 1 (Campaign Start, Sessions 1-2)
 
@@ -501,7 +485,6 @@ The fort is adequately provisioned but not well. The traders are professional bu
 
 *All traders at starting inventory as described above.*
 
----
 
 ### Camp Level 2 (First Upgrade)
 
@@ -527,7 +510,6 @@ The fort is operating above minimum. The traders have what they need to do real 
 - Social checks inside the fort: -1 DC to all checks (people trust the party's judgment)
 - Siege damage output: +1d10 from ballista on controlled walls
 
----
 
 ### Camp Level 3 (Second Upgrade, Available Session 3+)
 
@@ -554,7 +536,6 @@ The fort is siege-ready. Every system is at operational excellence. The party is
 - Social checks inside the fort: -2 DC to all checks
 - Siege damage output: +2d10 from ballistae; covered approach eliminated (attackers take opportunity attacks from the wall before reaching the gate)
 
----
 
 ### Role-Gated Upgrade Triggers
 
@@ -573,7 +554,6 @@ The DM tracks vacancy status. Announce degradation the same way as an upgrade: t
 
 **Companion recruitment via roles:** The *optio* role player can authorize legionary companion deployment without requiring the standard Varro Trusted+ relationship: their role carries the necessary officer authorization. The *explorator* role player, if the party has reached Trusted tier with Vercingetorix's tribe, can recruit one Germanic scout as a non-legionary companion for any session in the forest. Germanic scouts follow different rules: they will not enter the ruins under any circumstances, they provide advantage on all Perception checks in the forest, and they use the generic legionary stat block with Survival +5 substituted for Athletics +3.
 
----
 
 ### Morale Pool
 
@@ -585,7 +565,6 @@ The morale pool is a shared resource. It starts at the level's maximum and decre
 
 **Restoring morale:** The pool restores 1 point (up to maximum) when the party completes a crisis without casualties; when a named NPC publicly endorses the party's leadership; or when the party performs a successful ritual at the shrine.
 
----
 
 ### Upgrade Announcement
 
@@ -597,7 +576,6 @@ When a Camp Level upgrade triggers, describe it from the inside, not as a system
 
 Use a trader's voice to deliver the upgrade. The system is invisible; the people who benefit from it are not.
 
----
 
 ## Raw Materials as Story Currency
 
@@ -640,7 +618,6 @@ Trade goods from Sigrun, or found on standing stones and artifacts in the forest
 - Sigrun will translate any Germanic text the party has for the rest of that session (she is now engaged by the fact that someone brought her something interesting)
 - If the rune carving is unusual or from a sacred site, Paterculus's relationship statement advances one position
 
----
 
 ## Supply Caravan Events
 
@@ -659,7 +636,6 @@ Roll a d6 at the start of each session, or choose:
 
 **Player agency with the convoy:** The party can request specific items from the next convoy through Quartus (requires DC 14 Persuasion or a direct Legate order). Items can be flagged by the party as priority, which increases the chance of arrival but also increases the chance that someone in the supply chain notices the request and asks questions.
 
----
 
 ## DM Notes: Running the Economy
 
@@ -671,7 +647,6 @@ Roll a d6 at the start of each session, or choose:
 
 **Upgrade Camp Level at dramatically useful moments.** The rules give triggers; you choose the timing. If Camp Level 2 would make Session 2 more interesting by giving the party resources they need, trigger it. If keeping the party at Camp Level 1 creates productive scarcity during Session 1, hold it. The system is a tool.
 
----
 
 ## Trader OGAS Reference
 
@@ -731,7 +706,6 @@ Her secret changes the shape of the whole campaign: her village has a relationsh
 
 </details>
 
----
 
 ## Per-Session Trader State
 
@@ -746,7 +720,6 @@ What each trader knows, wants, and is doing across the five sessions. Read the c
 | **Cato** | Watching; has noticed the party as a new variable; serving drinks and listening | Has received Lucius's approach; has not decided; will give the party an opening to build trust that will determine his choice | Not at the bar if party is in the forest; if party returns, his decision point has passed: he has chosen a side based on what he saw before they left | Bar is a civilian shelter; has made the decision not to charge people sheltering there; this has cost him Lucius's goodwill permanently; will tell the party about Lucius's contact | Either evacuated with civilians or dead; if alive, knows exactly what happened and who did what; will say it freely now that there is nothing left to protect |
 | **Sigrun** | Professional and cautious; watching for signs of unusual Roman activity near the tree line | Knows something happened in the forest from other sources; cautious at the gate; will not discuss forest routes without trust established | Not at the trade gate during forest sessions; if party encounters her during travel, she is moving away from the fort deliberately and will not say why | Does not come to the fort during the siege; unreachable by normal means; can be contacted through Cato's Germanic trader network if that relationship exists | If the party finds a way to reach her: the Germanic warbands besieging the fort are not working together; she knows which two chiefs could be split from the siege with the right approach |
 
----
 
 ## Trader Voice Reference
 
@@ -788,7 +761,6 @@ Three characteristic lines per trader. Different from their opening lines above:
 2. *When the party trades fairly and without commentary:* "Same time next week." *(She means it as a compliment.)*
 3. *If trusted and the grove comes up:* "I know what you're looking for. I'm not going to tell you I don't. I'm going to ask you one question first, and the answer determines what I say next."
 
----
 
 ## Trader Reaction Tables
 
@@ -842,7 +814,6 @@ How each trader responds to the three most likely party approaches.
 | **Trade fairly, at her prices, without negotiating down** | She notices. She does not comment. She comes back next week. Over several sessions, this builds enough trust to reach "they have shown me basic respect." |
 | **Use Roman authority or demand cooperation** | She gathers her remaining goods, nods to the gate guard she knows by name, and leaves. She will return only after the party demonstrates a different approach. A character who has already built trust with her can attempt DC 16 Persuasion to prevent this before it happens; otherwise the relationship resets to baseline. |
 
----
 
 ## Trader Skill DC Reference
 
@@ -873,7 +844,6 @@ Detailed DC tables for all six traders using the seven-principle framework from 
 - Spend 1 hour helping with inventory (before Session 2 only): advantage on the next Persuasion check.
 - Bring him an unlogged item from the ruins: he shows you the second ledger without any roll.
 
----
 
 ### Rufus: DC Table
 
@@ -897,7 +867,6 @@ Detailed DC tables for all six traders using the seven-principle framework from 
 - Bring iron ore from the forest: auto-advance to Trusted; one weapon upgraded to +1 for free; no roll required.
 - Work the bellows for an hour (Strength-based, no roll): advantage on all checks with him for the session; he talks while he works.
 
----
 
 ### Valeria: DC Table
 
@@ -921,7 +890,6 @@ Detailed DC tables for all six traders using the seven-principle framework from 
 - Deliver medicinal herbs from the forest: Trusted tier access for the session; she names the plants.
 - Assist with a procedure without being asked (hold patient, hand implements): advantage on all future Medicine checks in her presence; she gives you one documentation page.
 
----
 
 ### Paterculus: DC Table
 
@@ -945,7 +913,6 @@ Detailed DC tables for all six traders using the seven-principle framework from 
 - Attend the full morning ceremony (30 minutes, costs a downtime action): Trusted tier for the session.
 - Bring a rune carving for him to interpret: second augury available this session (DC +2 for him).
 
----
 
 ### Cato: DC Table
 
@@ -969,7 +936,6 @@ Detailed DC tables for all six traders using the seven-principle framework from 
 - Buy a round for the off-watch soldiers: advantage on Persuasion for the evening.
 - Return for three sessions without asking for anything: relationship advances to "they consider you an ally" automatically. This is the only automatic advance that does not require a roll or a material investment.
 
----
 
 ### Sigrun: DC Table
 
@@ -995,7 +961,6 @@ Detailed DC tables for all six traders using the seven-principle framework from 
 
 </details>
 
----
 
 ## Siege Behavior
 

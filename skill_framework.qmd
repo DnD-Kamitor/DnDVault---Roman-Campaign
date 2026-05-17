@@ -4,7 +4,6 @@
 
 Every skill check in this campaign is designed according to the principles below. Read this once before Session 1. Return to it when a player tries something unexpected and you need to know how to handle it without improvising against the grain of the system.
 
----
 
 ## The Seven Principles
 
@@ -16,7 +15,6 @@ Every failed check opens a different door, not a wall. "Nothing happens" is the 
 
 Write failure states before you write success states. If you cannot describe what failure opens, the check should not exist.
 
----
 
 ### 2. Wrong Tool, Different Door
 
@@ -26,7 +24,6 @@ The wrong skill does not fail: it succeeds into a different situation. Intimidat
 
 Document these per NPC in the relevant chapters.
 
----
 
 ### 3. Cascade Design
 
@@ -36,7 +33,6 @@ Succeeding at an early check reveals the existence of a harder, more rewarding c
 
 Never let a maximum success feel like a ceiling. There is always something beyond it.
 
----
 
 ### 4. Signature Skills
 
@@ -44,7 +40,6 @@ Every major NPC and trader has one non-Persuasion skill that bypasses the normal
 
 **In practice:** The signature skill is listed per NPC in the relevant reference. It typically functions as an auto-advance of one tier (no roll required) or as a significant DC reduction (-4 or better). A character can only benefit from their signature skill once per NPC; after that, the relationship is set.
 
----
 
 ### 5. Investment Checks
 
@@ -52,7 +47,6 @@ Some checks cost a resource in addition to the roll: time, coin, reputation, a s
 
 **In practice:** Paterculus gives better augury to someone who sits through the full ceremony (30 minutes, skips a downtime action) than to someone who asks for a quick reading. The time investment signals sincerity; the roll determines whether Mars is listening. Document investment options per NPC alongside standard checks.
 
----
 
 ### 6. Temporal Gates
 
@@ -62,7 +56,6 @@ Certain checks are only available at specific moments. Miss the moment, miss the
 
 Document temporal gates explicitly: what session, what scene, what the check reveals, and what it costs to miss it.
 
----
 
 ### 7. Tier Memory
 
@@ -70,7 +63,6 @@ The relationship system remembers. A check that fails at DC 15 is not automatica
 
 **In practice:** If a player tries to deceive Varro and he catches it, Varro's internal state shifts to "watchful." The next Persuasion check with him is at +3 DC permanently, and the DC 13 approach that might have worked is now DC 16. Recovery requires demonstrating military competence in front of him (a specific action, not another roll). Document re-approach conditions per NPC.
 
----
 
 ## How to Use This System at the Table
 
@@ -85,7 +77,6 @@ The relationship system remembers. A check that fails at DC 15 is not automatica
 
 **When players try unexpected approaches:** Most creative approaches map to one of the principles above. If they do something clever and unexpected, lean on "wrong tool, different door": they get a result that is genuinely useful, just not the one they expected. If you are unsure what that result is, buy 10 seconds by having the NPC pause before responding.
 
----
 
 ## Relationship DC Modifiers (Quick Reference)
 
@@ -99,7 +90,6 @@ The relationship system remembers. A check that fails at DC 15 is not automatica
 | "They consider you an ally" | -4 | Access to the NPC's real usefulness; things not on any ledger |
 | "They owe you something real" | -6 | One automatic success per session (DM chooses which); cascade unlocks available |
 
----
 
 ## Signature Skills by NPC
 
@@ -117,7 +107,6 @@ The relationship system remembers. A check that fails at DC 15 is not automatica
 | **Cato** | Insight DC 13 *or* Performance DC 11 | He chooses to talk; the barrier drops because you found the story he wanted to tell |
 | **Sigrun** | Germanic language proficiency *or* Survival DC 14 | She knows you are not a city person; immediate advance past the first tier |
 
----
 
 ## Temporal Gates Master Table
 
@@ -132,7 +121,6 @@ The relationship system remembers. A check that fails at DC 15 is not automatica
 | Patrol boot print | Session 3, river scene, 1 round only | Corvinus has scouts ahead of the party | Party walks into the ambush blind |
 | Cato's Lucius connection | Session 2-3 only, before Cato chooses a side | Lucius approached him; Cato has not answered; the party can influence his decision | Cato chooses without party input; may default to safer option |
 
----
 
 ## Failure States Reference
 
@@ -152,7 +140,6 @@ The relationship system remembers. A check that fails at DC 15 is not automatica
 | Varro (Deception, caught) | Permanent watchfulness; all future DCs +3; recovery requires action not roll | A changed relationship that can only be repaired by demonstrating competence |
 | Corvinus (Persuasion, strong failure) | He files it as insubordination; formal military consequence pending | A threat hanging over the party that Brutus or Lucius can activate |
 
----
 
 ## Investment Check Options
 
@@ -173,7 +160,6 @@ The relationship system remembers. A check that fails at DC 15 is not automatica
 | Sigrun | Trade any forest-sourced material at below-market price without being asked | Relationship advances one step; she knows you understand the forest has value |
 | Sigrun | Offer amber at cost to Paterculus in her presence (letting her see you value it properly) | She volunteers that she can identify rune inscriptions; cascade unlock triggered |
 
----
 
 ## Skill Combination Rules (GM Reference)
 
@@ -275,7 +261,6 @@ The player-facing descriptions are in `skills.qmd`. This section gives you the m
 
 *DM note:* This combination does not work on NPCs of higher military rank than the intimidating character without formal military consequences. Corvinus in Session 1 is immune to this approach. Varro is not immune but will remember it and evaluate whether he respects the judgment that deployed it. Use that as a Tier Memory note.
 
----
 
 ## The Knowledge-Chain System: GM Adjudication
 

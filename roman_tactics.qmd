@@ -2,7 +2,6 @@
 
 Roman military doctrine was the product of six centuries of refinement. It was not just about courage or strength; it was a system, and systems can be adapted to D&D mechanics. This chapter gives rules for running authentic Roman formations and Germanic counter-tactics as structured play at the table.
 
----
 
 ## Design Principles
 
@@ -11,7 +10,6 @@ These rules follow two constraints:
 1. **They must be runnable without slowing the table down.** Each mechanic fits within existing D&D action economy. No new action types needed.
 2. **They must reward tactical thinking.** Formations should feel powerful and have real counters. The party should be able to use them, face them, or break them.
 
----
 
 ## Roman Formations
 
@@ -50,7 +48,6 @@ When NPC legionaries form testudo against the party's ranged attacks:
 
 The party's options: use the breaks above, wait for them to come into melee, flank (testudo only covers the front 180°), or find fire.
 
----
 
 ### Cuneus (Wedge / Boar's Head)
 
@@ -78,7 +75,6 @@ A charging wedge of Roman legionaries is a terrifying thing.
 
 The party's options: split and let it pass through (costly but safe), meet it head-on with their own heaviest fighter (requires beating the Strength save), break the point fighter before it reaches them, or attack the exposed flanks as it passes.
 
----
 
 ### Orbis (Circle)
 
@@ -104,7 +100,6 @@ The party might find themselves using the orbis in the middle of the fort raid (
 
 > *"Orbis,"* Varro says. One word. The veterans snap into the ring formation, shields out, backs together. *"We hold here."*
 
----
 
 ### Acies Triplex (Triple Battle Line)
 
@@ -120,7 +115,6 @@ The standard Roman battle line uses three waves: *hastati* (front, younger soldi
 
 **Cost:** Requires 10 minutes of prep time before combat to assign roles and explain the plan. Does nothing in ambushes or surprise rounds.
 
----
 
 ## Siege Mechanics
 
@@ -166,7 +160,6 @@ Ladders allow attackers to reach walls quickly but leave them extremely vulnerab
 
 **Holding the walls:** For every defender actively pushing ladders, they can keep one ladder section clear for the round. If more ladders than defenders: overflow sections are breached.
 
----
 
 ## Germanic Counter-Tactics
 
@@ -204,13 +197,11 @@ Germanic chieftains sometimes divided their forces to circle a Roman unit; sendi
 - Once complete: the Roman unit is surrounded; testudo becomes orbis territory
 - The Kesselschlacht is broken if the party can eliminate the encircling forces' leader (Perception DC 14 to identify them in the confusion)
 
----
 
 ## Roman Weapons and Ammunition
 
 The Roman army did not equip every soldier the same way. The legionary's *gladius* and *pilum* are the most famous, but a frontier posting like Vindolanda draws on auxiliary units, local craftsmen, and whatever the last supply convoy brought. What you carry determines what you can do in formation. The mechanics below extend the standard D&D 5e weapon list with Roman-specific options, ammunition types, and tactical notes tied to the session encounters in this campaign.
 
----
 
 ### Ranged Weapons
 
@@ -236,7 +227,6 @@ Clay incendiary: Range 20/40 ft. 1d4 bludgeoning + 1d4 fire. Sets flammable obje
 
 Terracotta shot (unfired clay): Range 35/70 ft. 1d4 bludgeoning. Lighter than lead and carries slightly further; less dense on impact. Can be made in the field: 1 hour of work with available clay and a simple mold produces 20 shot. Purchased stock is inconsistent because soldiers requisition the molds for other purposes. Cost: 3 cp per 20 when purchased; free to craft. Weight: 2 lb per 20.
 
----
 
 #### Arrow Types
 
@@ -254,13 +244,11 @@ Barbed arrow: Standard range. Standard damage on a hit. When the arrow is remove
 
 *Scythicon* (poison arrow, Scythian-style composite toxin): Standard range. On a hit, the target takes normal piercing damage and must succeed on a DC 14 Constitution saving throw. On a failed save: 2d6 poison damage immediately and 1d6 poison damage at the start of their next turn. On a success: half the immediate poison damage only, no ongoing effect. Rarity: not standard Vindolanda stock. Available through Sigrun's network, black market sources in the *vicus*, or captured tribal stores. A *medicus* who handles the arrows can identify the specific compound and antidote window with a DC 16 Medicine check. Cost: 1 gp per arrow when available. Weight: 1 lb per 10.
 
----
 
 #### *Arcuballista* Bolt (Heavy Crossbow Bolt, Reinforced)
 
 Used by the heavier crossbow variants deployed on fort walls and siege positions. Requires a Heavy Crossbow. Range is reduced by 10 feet on both bands compared to a standard bolt (so 90/350 ft for a standard heavy crossbow), but the bolt deals +2 damage and ignores the AC bonus granted by shields: the weight and construction defeats the bracing an opponent relies on. Cost: 2 sp per 10. Weight: 3 lb per 10.
 
----
 
 #### *Arcus Compositus* (Roman Composite Bow)
 
@@ -270,7 +258,6 @@ The auxiliary cavalry bow: shorter than any infantry longbow, built from laminat
 
 **Vindolanda stock:** None standard. Available through eastern auxiliary units passing through, from traders in the *vicus* on DC 15 Investigation, or through Sigrun's network at Camp Level 2 or higher.
 
----
 
 #### *Arcuballista* (Heavy Crossbow, Military Variant)
 
@@ -280,7 +267,6 @@ The crossbow deployed on fort walls and in siege positions: mounted on a stock, 
 
 **Vindolanda stock:** Two wall-mounted units operational at Camp Level 1; a third assembled from workshop parts at Camp Level 2. Hand-carried variants are not standard issue: a PC who wants one as personal equipment has sourced it deliberately, and its presence attracts professional interest from anyone who knows what it costs to transport.
 
----
 
 ### Thrown Weapons
 
@@ -302,7 +288,6 @@ A short, lead-weighted dart carried clipped to the inside of the shield. Soldier
 
 *Plumbata*: Simple weapon. Thrown (30/60 ft). 1d4 piercing. Ignores half cover: the weight carries it past low obstacles. A soldier can carry up to 5 plumbatae clipped to a *scutum* or *clipeus* without affecting equipment load. Cost: 1 sp per 5. Weight: 1/2 lb each.
 
----
 
 #### *Verutum* (Auxiliary Javelin)
 
@@ -310,7 +295,6 @@ A short, light throwing spear used by auxiliary infantry when pilum supply is re
 
 *Verutum*: Simple weapon. Thrown (20/40 ft). 1d6 piercing. Retrievable after combat without a check (the head does not embed deeply). When thrown against a creature in *testudo* formation from the front arc, the attack automatically fails: the light tip does not penetrate the shield overlap. Cost: 1 sp. Weight: 1 lb.
 
----
 
 #### *Lancea* (Cavalry Javelin)
 
@@ -318,7 +302,6 @@ Longer than a *verutum*, shorter than a *contus*, designed for use from horsebac
 
 *Lancea*: Martial weapon. Thrown (25/50 ft mounted; 20/40 ft on foot). 1d8 piercing. When thrown from horseback after moving at least 20 feet this turn: +1d4 piercing damage (mounted momentum carries through). When used as a melee weapon while mounted: reach 10 ft. Disadvantage on attack rolls against targets within 5 ft when on foot (the length prevents effective close-in use). Cost: 3 gp. Weight: 4 lb.
 
----
 
 ### Melee Weapons
 
@@ -352,7 +335,6 @@ Every legionary carries one. In the morning it digs the camp ditch; in the after
 
 *Dolabra*: Martial weapon. 1d8 piercing, two-handed. Against stone walls, wooden structures, earthwork fortifications, or constructed barriers: the *dolabra* deals double damage. A creature using stone cover (a low wall, a battlement, a fortified corner) does not benefit from that cover against a *dolabra* attack: the pick can dislodge the cover itself with a successful hit (the cover is destroyed on a second hit). Against unarmored or lightly armored creatures in the open (no cover, no structure): attacks are made at disadvantage (the pick is heavy and the swing arc is wide; a mobile opponent can step inside it). Cost: 3 gp. Weight: 5 lb.
 
----
 
 #### *Contus/Kontos* (Heavy Cavalry Lance)
 
@@ -360,7 +342,6 @@ The heavy lance of Roman cataphract cavalry and Parthian-style heavy horse. Two 
 
 *Contus*: Martial weapon. Two-handed, requires mount. Reach 10 ft (mounted only; 5 ft on foot). 1d12 piercing. Charge strike: when the attack follows moving at least 20 feet in a straight line this turn while mounted, it deals double damage on a hit. Dismounted consequence: if the rider is unmounted while carrying the *contus*, all attacks and Dexterity saving throws have disadvantage until the weapon is dropped. Dropping safely costs a full action; dropping instantly as a free action requires a DC 12 Dexterity saving throw to avoid tripping on the shaft. Cost: 25 gp. Weight: 15 lb.
 
----
 
 #### *Falx* (Dacian Curved Blade)
 
@@ -368,7 +349,6 @@ Captured from Dacian enemies or found in tribal mercenary stores. A single-edged
 
 *Falx*: Martial weapon. Two-handed. 1d10 slashing. Bypasses shields: the blade ignores the AC bonus granted by any shield (the curve goes around it; interposing the shield is not effective against the angle of the cut). Formation disadvantage: disadvantage on attack rolls while in any Roman formation -- the wide arc requires space that formations are designed to deny. Legal risk: carrying a *falx* without an officer's written authorization in Roman military territory is a summary offense. Any soldier or officer who sees one is legally required to report it; a DC 14 Persuasion check is needed to convince them otherwise. Cost: 15 gp (black market); 0 gp (captured). Weight: 7 lb.
 
----
 
 #### Net (*Rete*)
 
@@ -378,7 +358,6 @@ Used by auxiliary soldiers with gladiatorial training and by anyone whose orders
 
 **Note:** The *rete* is not standard-issue legionary kit. A PC who carries one sourced it deliberately or has gladiatorial training in their history. Its presence in a soldier's kit raises questions that should be answered before a commanding officer asks them.
 
----
 
 #### *Vitis* (Centurion's Vine Staff)
 
@@ -388,7 +367,6 @@ A length of vine wood, gnarled and dense, traditionally cut from a single vine i
 
 **Note on the Optio:** The Optio's *hastile optioni* (knobbed staff) functions identically mechanically but is visually distinct. An Optio seen carrying a *vitis* will be asked directly who gave it to them.
 
----
 
 #### *Fustis* (Wooden Club)
 
@@ -396,7 +374,6 @@ A length of hardwood without shaping, edge, or ceremony. Carried by engineers, s
 
 *Fustis*: Simple weapon. 1d4 bludgeoning. Versatile (1d6 two-handed). Against prone targets: 1d6 bludgeoning (1d8 two-handed) regardless of weapon proficiency (hitting a prone opponent with a stick requires no special training). Improvised: a character with access to timber or forest material can produce a functional *fustis* in one minute. Cost: 1 cp. Weight: 3 lb.
 
----
 
 ### Ammunition Weight and Supply at Vindolanda
 
@@ -425,7 +402,6 @@ The fort's supply is finite and tracked. Quartermaster access requires Reputatio
 
 **Camp Level effect:** At Camp Level 2, Rufus's workshop can produce 10 additional clay incendiaries and 20 additional fire arrows per session downtime period. At Camp Level 3, lead shot production begins (10 per session). See `camp_economy.qmd`.
 
----
 
 ### Tactics Integration
 
@@ -441,13 +417,11 @@ These weapons do not exist in isolation. They slot into the formations above and
 
 **Dolabra and the collapsed passage:** The blocked section in the Session 4 tunnel is a constructed stone collapse, not a natural fall. A character with the *dolabra* can clear enough of the passage to squeeze through with a DC 15 Athletics check (2 rounds of work). Without the *dolabra*, the check is DC 18 and takes 5 rounds. The *dolabra's* structure-damage double damage rule applies to each working round: the DM can frame partial success as clearing enough to pass at the cost of time.
 
----
 
 ### Siege Weapons
 
 These are crew weapons. They require positioning, time, and trained operators. A single soldier does not operate them; a crew does, and the crew's competence matters as much as the weapon's design. The party can operate Vindolanda's siege weapons from the walls in Sessions 3-4, or encounter them aimed at the fort from the Germanic force.
 
----
 
 #### *Scorpio* (Torsion Bolt-Thrower)
 
@@ -457,7 +431,6 @@ The lighter Roman artillery piece, small enough to be carried by four soldiers a
 
 **Vindolanda:** 2 *scorpiones* operational at Camp Level 1. A third is assembled from parts in Rufus's workshop at Camp Level 2 (3 downtime days).
 
----
 
 #### *Onager* (Torsion Catapult)
 
@@ -467,7 +440,6 @@ Named for the wild ass, for the vicious kick it delivers when the arm releases. 
 
 **Vindolanda:** The *onager* is non-functional at Camp Level 1 -- the torsion rope is frayed and replacement is not Rufus's current priority. He can repair it with appropriate materials at Camp Level 2 (one downtime action). At Camp Level 3, the crew is drilled and the group DC drops to 11.
 
----
 
 #### *Polybolos* (Repeating Ballista)
 
@@ -475,9 +447,7 @@ Not standard issue. The screw-feed bolt magazine that reloads automatically with
 
 *Polybolos*: Crew 2 (at least one crew member requires proficiency in Artisan's Tools or equivalent engineering background). Range 120/480 ft. Attack +5 to hit. Damage: 4d8 piercing per bolt. Rate: fires twice per round; the second shot is at disadvantage (the magazine feed is fast but inconsistent under combat stress). Jam: when the second shot misses with a die result of 1-5, the magazine jams; clearing it requires a DC 15 Artisan's Tools check as a full action. Weight: 600 lb.
 
----
 
----
 
 ## Germanic Weapons
 
@@ -485,7 +455,6 @@ The warriors attacking Vindolanda in Sessions 3 and 4 carry a different weapons 
 
 These weapons are available to players who capture them in the field, trade for them through Sigrun, or play Germanic-heritage characters.
 
----
 
 ### *Framea* (Germanic Spear-Javelin)
 
@@ -493,7 +462,6 @@ Tacitus writes that the *framea* is "their only or chief weapon" -- iron-tipped,
 
 *Framea*: Martial weapon. Versatile (1d6 one-handed / 1d8 two-handed), piercing. Thrown (20/60 ft); retrievable after combat (the head is not designed to bend). Charge bonus: if the wielder moves at least 20 feet toward the target before making a melee attack with the *framea* this turn, that attack deals +1d4 piercing damage (the momentum of the charge carries through the thrust). Cost: 2 gp. Weight: 4 lb.
 
----
 
 ### *Seax* (Germanic Fighting Blade)
 
@@ -501,7 +469,6 @@ A single-edged blade longer than a knife and shorter than a sword, used after th
 
 *Seax*: Martial weapon. 1d6 slashing, finesse, light. Momentum cut: if you moved at least 10 feet before your first attack in the Attack action this turn, that first attack deals +1d4 slashing damage. If you did not move (or are standing still, braced, or in formation), the weapon functions as a standard finesse 1d6 weapon with no bonus. Cost: 5 gp. Weight: 2 lb.
 
----
 
 ### *Francisca* (Throwing Axe)
 
@@ -509,7 +476,6 @@ Not standard issue for every warrior, but carried by specialists in the second r
 
 *Francisca*: Martial weapon. Thrown (15/30 ft). 1d6 slashing. On a miss by 4 or fewer (the axe tumbles past without connecting), the target must succeed on a DC 12 Wisdom saving throw or have disadvantage on its next attack roll (the near-miss is deeply distracting). Retrievable after combat unless embedded in a surface. A character can carry up to 3 *franciscae* without additional encumbrance (they are small enough to clip to a belt). Cost: 6 gp. Weight: 3 lb each.
 
----
 
 ### *Angon* (Barbed Throwing Spear)
 
@@ -517,7 +483,6 @@ Frankish and Rhenish warriors carry this alongside the *framea*, but it serves a
 
 *Angon*: Martial weapon. Thrown (20/40 ft). 1d8 piercing. On a hit against a shield-bearing target: the target makes a DC 14 Strength saving throw. On a failure, the *angon* catches on the shield; the shield's AC bonus is halved (rounded down) until the shaft is removed as an action. On a hit against a target without a shield: the barbs catch in body or armor; removing the *angon* deals 1d6 additional piercing damage unless a DC 13 Medicine check is made or magical healing is applied first. Cost: 8 gp. Weight: 5 lb.
 
----
 
 ### Germanic Round Shield (*Parma*)
 
@@ -525,7 +490,6 @@ Lighter than the Roman *scutum*, smaller in circumference, and built for individ
 
 *Parma* (Germanic round shield): +2 AC (standard shield bonus). Does not impose disadvantage on attack rolls with any weapon type -- the strap grip frees the weapon arm. Cannot contribute to testudo or any Roman formation requiring shield locking; allies attempting testudo with a *parma*-bearer in the formation do not receive the formation's cover bonus (it does not interlock). Shield bash: bonus action, 1d4 bludgeoning; target makes a DC 12 Strength saving throw or is pushed 5 feet. Cost: 7 gp. Weight: 6 lb.
 
----
 
 ### The Germanic Charge: How It Works Together
 
@@ -537,13 +501,11 @@ The Marcomanni and Cherusci assault pattern has three beats. Understanding the b
 
 **Beat three (contact):** First rank in with *seax* and remaining *framea* in melee grip. They move constantly -- circling, retreating, re-engaging -- which is why the *gladius*'s formation bonus becomes critical here. The charge pattern is designed for open-field fighting; inside the fort walls, in narrow streets and doorways, it fails. Germanic warriors in confined spaces lose the movement bonus for both *framea* and *seax*, and cannot throw *franciscae* safely. Funneling them through the north gate and into the fort street grid neutralizes beat three almost completely.
 
----
 
 ## Notable and Magical Weapons
 
 Three key NPCs carry weapons with specific properties. These are not shop items. They exist as story objects that move through the campaign and can change hands.
 
----
 
 ### Vercingetorix's *Framea* -- *Spes Tribuum* ("Hope of the Tribes")
 
@@ -553,7 +515,6 @@ The *framea* Vercingetorix carries is three generations old. The ash haft has be
 
 **In play:** Vercingetorix never offers this weapon. If he dies, it remains with his body and must be claimed. If a PC picks it up, they immediately know it has weight beyond its mass -- it pulls slightly toward the *principia*, toward the spear below. The glow is the first confirmation that the weapons are connected.
 
----
 
 ### Cassia's Augur Knife -- *Clavis Caeli* ("Key of Heaven")
 
@@ -563,7 +524,6 @@ Bronze, not iron. Every Roman augur carries one; Cassia's is older than the fort
 
 **In play:** Cassia does not fight with this knife. She uses it for augury, sacrifice, and self-defense of last resort. If she is incapacitated and a PC takes the knife to defend her, the knife functions for that PC but without the Insight advantage (it responds to Cassia specifically, not to proximity). If Cassia dies, the knife goes cold and loses the anti-healing property until it is carried by someone who has genuinely mourned her.
 
----
 
 ### Varro's *Gladius* -- *Veteranus*
 
@@ -573,13 +533,11 @@ Not magical. Twenty years old, notched in places a blacksmith has told him to re
 
 **In play:** The name *Veteranus* is not official. The soldiers call it that, quietly, when Varro is not in earshot. He knows. He has not corrected it for twelve years.
 
----
 
 ### The Spear of Mars
 
 Documented in `chapter1.qmd`. The spear is the campaign's central object and is treated there in full. Its connection to Vercingetorix's *framea* and to Cassia's knife is noted above; the spear reacts to both in the vault scene if the DM chooses to use the environmental detail.
 
----
 
 ## Armor and Equipment
 
@@ -587,7 +545,6 @@ Roman soldiers are not interchangeable. The *lorica segmentata* of the legionary
 
 Equipment uses slots. Each character has seven: **body, helmet, arms, gloves, cloak, boots, belt.** Total encumbrance follows standard D&D 5e rules (Strength score × 15 lb). Carrying more than half your encumbrance limit gives disadvantage on Stealth checks and reduces speed by 10 feet.
 
----
 
 ### Body Armor
 
@@ -599,7 +556,6 @@ The overlapping iron plates that define the legionary's silhouette. Lighter than
 
 **Tradeoff:** Best AC of any body armor here. Worst in water and for concealment. Frontier engagements reward it; river crossings and night infiltration punish it.
 
----
 
 #### *Lorica Hamata* (Chainmail)
 
@@ -609,7 +565,6 @@ Standard armor of auxiliary forces and many frontier legionaries who have traded
 
 **Tradeoff:** Less peak AC than *segmentata*, more flexible, better in water. Fire resistance is situationally significant in Sessions 3 and 4.
 
----
 
 #### *Lorica Squamata* (Scale Armor)
 
@@ -619,7 +574,6 @@ Overlapping bronze or iron scales sewn onto a backing. The scales face downward 
 
 **Tradeoff:** No Stealth penalty is the unique advantage over *hamata*. The vulnerability to specific thrust angles is the cost; skilled melee opponents who know how to fight will find it.
 
----
 
 #### *Linothorax* (Layered Linen)
 
@@ -629,7 +583,6 @@ Greek in origin, carried into Roman service by officers and auxiliaries who valu
 
 **Tradeoff:** Lightest and lowest AC. Fire vulnerability is specific but significant in Session 3 (forest) and Session 4 (siege).
 
----
 
 ### Helmets
 
@@ -641,7 +594,6 @@ Issue equipment for auxiliaries and many frontier legionaries. Deep cheek guards
 
 *Galea Coolus*: Helmet slot. +1 AC. Advantage on saving throws against effects that target the mind through sound or fear resonance (the helmet's enclosure creates psychological distance; this is a folk belief with tactical expression). Disadvantage on Perception checks relying on hearing (the cheek guards muffle sound). Cost: 10 gp. Weight: 5 lb.
 
----
 
 #### *Galea Attica* (Open-Face Helmet, Greek Style)
 
@@ -651,7 +603,6 @@ Broader skull protection than the *Coolus*, open at the face, with a pronounced 
 
 **Tradeoff:** Same AC as *Coolus*, no Perception penalty, specifically vulnerable to aimed head attacks.
 
----
 
 #### Centurion's *Galea* (Transverse Horsehair Crest)
 
@@ -659,7 +610,6 @@ A standard iron helmet with a transverse horsehair crest mounted across the crow
 
 *Centurion's Galea*: Helmet slot. +1 AC. Advantage on Persuasion and Intimidation checks with Roman soldiers who can see the crest. Disadvantage on Stealth checks while wearing it (visible at long range). Restricted: wearing a centurion's crest without holding the rank is a disciplinary offense in Roman military law. Cost: 25 gp. Weight: 6 lb.
 
----
 
 #### *Spangenhelm* (Germanic/Auxiliary Riveted Helmet)
 
@@ -667,13 +617,11 @@ A riveted iron helmet with a distinct framed construction, common among Germanic
 
 *Spangenhelm*: Helmet slot. +1 AC. +1 additional AC against bludgeoning attacks targeting the head specifically (the reinforced construction absorbs hammer and club strikes better than Roman designs). With *aventail* attached: +1 AC against attacks targeting the neck (purchased separately, costs 8 gp additional, adds 2 lb). Cost: 12 gp base. Weight: 5 lb.
 
----
 
 ### Shields
 
 Shields are carried, not slotted. They require one hand; a character holding a shield cannot also wield a two-handed weapon or make off-hand attacks. Drawing a shield costs a bonus action; dropping it is free. Any character proficient with shields may make a **shield bash** as a bonus action: a melee attack against a target within 5 feet using Strength, with the damage and secondary effect listed per shield. The *scutum* and *clipeus* can contribute to Roman formations (testudo, cuneus, orbis, acies triplex). The *parma* (Germanic round shield, detailed in the Germanic Weapons section) cannot.
 
----
 
 #### *Scutum* (Legionary Tower Shield)
 
@@ -683,7 +631,6 @@ The large curved rectangular shield is recognizable at a thousand paces: layered
 
 **Mounted:** Using a *scutum* while mounted imposes disadvantage on all attack rolls. Cavalry are issued the *clipeus* instead.
 
----
 
 #### *Clipeus* (Auxiliary Round Shield)
 
@@ -691,7 +638,6 @@ The smaller shield issued to cavalry, auxiliary infantry, and soldiers in terrai
 
 *Clipeus*: +1 AC. One hand required. No terrain restriction (fits through standard doorways and forest undergrowth without adjustment). Formation: contributes to acies triplex and orbis, not testudo (the round edge does not interlock). Shield bash: +Strength modifier to hit, 1d4 bludgeoning; the target makes a DC 11 Strength saving throw or is pushed 5 feet (not knocked prone). Mounted: no penalties from horseback; a *scutum* imposes disadvantage on attacks while mounted. Cost: 7 gp. Weight: 6 lb.
 
----
 
 #### Siege Pavise (Wall Shield, Crew-Portable)
 
@@ -701,7 +647,6 @@ Siege Pavise: Provides three-quarter cover (+5 AC, +3 on Dexterity saving throws
 
 **Session 4 use:** Pavises appear on both sides of the siege: defenders use them to hold exposed wall sections; attackers advance behind them toward the gate. A *dolabra* strike at the carrier (not the pavise itself) can disrupt the approach; a pilum volley into the pavise at close range forces a knockdown check.
 
----
 
 ### Arms and Gloves
 
@@ -711,7 +656,6 @@ Thick leather covering the hand and wrist. Common among cavalry and auxiliaries 
 
 Standard leather gauntlets: Gloves slot. +1 AC against attacks targeting the hand or wrist (DM judgment). Disadvantage on Sleight of Hand checks and checks requiring fine manipulation (the leather restricts dexterity). Cost: 2 gp. Weight: 1 lb per pair.
 
----
 
 #### *Manica* (Articulated Arm Guard)
 
@@ -719,7 +663,6 @@ A segmented iron arm guard covering wrist to shoulder on the weapon arm, origina
 
 *Manica*: Arms slot (weapon arm only). +2 AC against attacks specifically targeting the weapon arm (DM judgment; relevant most often in one-on-one duels and called shots). Cannot be worn on the same arm as a shield. Disadvantage on ranged weapon attacks with that arm (the segments restrict full draw). Cost: 20 gp. Weight: 3 lb.
 
----
 
 ### Cloaks and Capes
 
@@ -731,7 +674,6 @@ Standard issue. Heavy wool, usually undyed or dark reddish-brown depending on th
 
 *Sagum*: Cloak slot. No AC bonus. Advantage on Constitution saving throws against cold weather and cold environmental damage. In dim light or darkness, the dark wool provides advantage on Stealth checks against visual detection. Two characters with *sagums* can carry an unconscious ally as an improvised stretcher without needing dedicated equipment. Cost: 5 gp. Weight: 4 lb.
 
----
 
 #### *Paludamentum* (Commander's Scarlet Cloak)
 
@@ -739,7 +681,6 @@ The cloak of generals and senior officers, worn over armor in formal military co
 
 *Paludamentum*: Cloak slot. No AC bonus. Advantage on Persuasion and Intimidation checks with Roman soldiers and civilians who recognize Roman military rank. Disadvantage on Stealth checks in all conditions (the scarlet is the visual equivalent of an announcement). In active combat, the cloak marks the wearer as the highest-value target in sight. Cost: 35 gp. Weight: 3 lb.
 
----
 
 #### *Birrus* (Hooded Traveling Cloak)
 
@@ -747,7 +688,6 @@ Provincial in origin, adopted into Roman military use for cold-weather postings.
 
 *Birrus*: Cloak slot. No AC bonus. Advantage on Constitution saving throws against cold weather and rain-based environmental effects. Hood up: disadvantage on Perception checks relying on peripheral vision; +2 to Stealth checks in crowded civilian settings (harder to identify specifically); Perception checks by others to identify the wearer by face are at disadvantage. Cost: 8 gp. Weight: 5 lb.
 
----
 
 ### Boots
 
@@ -757,7 +697,6 @@ Not a boot in the modern sense: a thick-soled sandal with a full lattice of leat
 
 *Caligae*: Boots slot. Advantage on Athletics checks to maintain footing on wet, muddy, slippery, or uneven terrain. While grappling a prone creature: bonus action stomp dealing 1d4 bludgeoning. Disadvantage on Stealth checks on stone or hard-packed floors (the hobnails click with each step -- every soldier knows this and plans accordingly). Cost: 5 gp. Weight: 2 lb per pair.
 
----
 
 #### Standard Military Boots
 
@@ -765,7 +704,6 @@ Enclosed leather boots used by cavalry, some auxiliaries, and officers in colder
 
 Standard military boots: Boots slot. In cold weather (near or below freezing): advantage on Constitution saving throws against cold environmental effects (the enclosed boot retains warmth that *caligae* cannot). No Stealth disadvantage. Cost: 8 gp. Weight: 3 lb per pair.
 
----
 
 ### The Belt (*Cingulum Militare*)
 
@@ -775,7 +713,6 @@ Every Roman soldier wears one. It is not optional; it is the mark of service its
 
 **Social mechanic:** Any soldier who can see another's *cingulum* can read the campaign ribbons, unit markers, and wear on it. A DC 12 History check lets a character deduce the approximate unit, years of service, and one major campaign of the belt's owner from the decorations and damage. Most Roman soldiers read this automatically; it is visible information in plain sight. Cost: 5 gp. Weight: 2 lb.
 
----
 
 ### Equipment Summary
 
@@ -802,7 +739,6 @@ Every Roman soldier wears one. It is not optional; it is the mark of service its
 | Shield | *Scutum* | +2 AC | 10 lb | Testudo-capable; terrain restriction |
 | Shield | Siege Pavise | +5 AC (3/4 cover) | 30 lb | Crew-planted; static cover only |
 
----
 
 ### Weapon Reference Table
 
@@ -854,7 +790,6 @@ Every Roman soldier wears one. It is not optional; it is the mark of service its
 | *Scutum* | +2 | 1d6 bludgeoning | DC 13 Str save or push 5 ft + prone | 10 lb | 10 gp |
 | Siege Pavise | +5 (3/4 cover, static) | -- | -- | 30 lb | 5 gp |
 
----
 
 ## Carrying Loads
 
@@ -906,7 +841,6 @@ Roles that carry a standard or instrument must count that weight on missions bey
 
 Supply requirements for extended operations are in `supplies.qmd`. Individual characters are responsible for their share of the unit's collective supply weight; the GM tracks this between sessions for operations longer than one day.
 
----
 
 ## Tactical Reference Card
 
@@ -926,13 +860,11 @@ Supply requirements for extended operations are in `supplies.qmd`. Individual ch
 | Ballista | 4d8 piercing, prone save DC 14 | Rush the crew (2 rounds exposure) |
 | Scaling ladder | Climber restrained, falls DC 12 | Push check DC 13, 1 defender per ladder |
 
----
 
 ## The Legion and the Magical World
 
 The Roman army has been operating in a world where divine intervention is real, magical creatures exist, and some men can do things that cannot be explained by strength or training. The legion has had 700 years to develop responses. Those responses exist. They are bureaucratic, practical, and embedded in doctrine the way everything in the legion is embedded in doctrine: through the *acta diurna*, the daily gazette, and through the informal knowledge that passes from veteran to new recruit over a fire at the third watch.
 
----
 
 ### Official Roman Magical Doctrine
 
@@ -946,7 +878,6 @@ The Roman army officially acknowledges three categories of magical phenomena:
 
 **In play:** This framework means that encountering magic through official channels (the *haruspex*, an augur, a temple) is handled differently from encountering magic outside those channels (a character who casts spells from a non-Roman tradition, a Germanic *volva*, an obviously necromantic artifact). The party's actions within this framework have social and legal consequences, not just narrative ones.
 
----
 
 ### The *Haruspex* in the Field
 
@@ -961,7 +892,6 @@ Every cohort on active campaign is assigned a *haruspex* (entrails-reader), who 
 | **Blessed Standard** | Once per short rest, the *haruspex* can invoke the cohort's standard to grant all soldiers within 30 feet advantage on their next saving throw against a fear effect or spell |
 | **Death consequence** | If the *haruspex* dies in the field, every soldier in the unit must make a DC 12 Wisdom saving throw or be Frightened for one round; the unit cannot benefit from Blessed Standard for the remainder of the session |
 
----
 
 ### Anti-Magical Formation Doctrine
 
@@ -989,7 +919,6 @@ Any soldier who has served 10 or more years on the frontier (or any player chara
 
 Against an active illusion in the field: a soldier can use their action to shout "it's not there" to a visible ally who is affected by the illusion; the ally may immediately make a new saving throw against the effect with advantage.
 
----
 
 ### Creature Classification in Roman Military Records
 
@@ -1004,7 +933,6 @@ The legion maintains a classification system for non-human creatures encountered
 | Draugar | *Barbari Mortui* (barbarian dead) | Fire; fire; fire. Stand-off engagement only. No close formation against these. |
 | Lindworm | *Belua Magna* (great beast) | Multi-cohort protocol; dedicated *ballista* positioning; *haruspex* performs propitiatory sacrifice before engagement; do not engage without command authorization |
 
----
 
 ### The *Spolia Opima* for Magical Kills
 
@@ -1021,7 +949,6 @@ Three confirmed kills under this standard earn permanent advantage on Intimidati
 
 **Note for DM:** Each session chapter has a brief note on which creatures qualify for this honor and which encounters are structured as single-combat opportunities if the players pursue them.
 
----
 
 ## Taking Soldiers Into the Field
 
@@ -1029,7 +956,6 @@ The party is not operating alone. Fort Vindolanda has trained soldiers. The ques
 
 This section gives the DM and players a concrete system for recruiting legionaries as field companions, managing them during play, and handling the consequences when things go wrong. It is not a summoning mechanic. It is an employment relationship with an institution that has rules.
 
----
 
 ### Recruitment
 
@@ -1041,7 +967,6 @@ This section gives the DM and players a concrete system for recruiting legionari
 
 **Requesting deployment (in-play):** Find Varro before the session's main action begins. He will ask one question: "Where are you going and what for?" Answer honestly or at disadvantage for social checks with him for the rest of the session. A DC 13 Persuasion check is required unless the party has Allied-tier relationship with him, in which case he approves without a roll.
 
----
 
 ### Flavus
 
@@ -1069,7 +994,6 @@ This section gives the DM and players a concrete system for recruiting legionari
 2. *When asked if he's afraid:* "Not of them." *(He does not complete the sentence.)*
 3. *After the mission, if casualties were avoided:* "Good." *(He cleans his gladius. That is the debrief.)*
 
----
 
 ### Generic Legionary
 
@@ -1096,7 +1020,6 @@ This section gives the DM and players a concrete system for recruiting legionari
 
 **On a successful morale check:** The soldier functions normally. After passing three morale checks in a single session, they gain advantage on all future morale checks for the rest of the campaign. Some soldiers discover what they are made of.
 
----
 
 ### Field Rules
 
@@ -1108,7 +1031,6 @@ This section gives the DM and players a concrete system for recruiting legionari
 
 **Upkeep:** Each companion consumes 1 ration per day from the fort's supply. Quartus tracks this. If the party deploys soldiers without arranging rations through him, he notes the discrepancy; the third undocumented deployment costs the party 1 relationship step with him permanently.
 
----
 
 ### Consequences
 
@@ -1118,7 +1040,6 @@ This section gives the DM and players a concrete system for recruiting legionari
 
 **Returning wounded:** If the party returns with wounded soldiers and brings them directly to Valeria before doing anything else, Varro notes this without comment. It counts as a positive relationship action for him regardless of how the mission went.
 
----
 
 ### The Teutoburg Forest Scenario: "The Last March"
 

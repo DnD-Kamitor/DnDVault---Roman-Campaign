@@ -1,4 +1,3 @@
----
 title: "Tabula Legionis"
 subtitle: "Shadow of Mars Character Sheet"
 format:
@@ -93,7 +92,6 @@ header-includes:
         \node at (current page.center) [opacity=0.05] {\RomanEagle};
       \end{tikzpicture}}
     \pagestyle{empty}
----
 
 ::: {.content-visible when-format="pdf"}
 

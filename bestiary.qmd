@@ -4,7 +4,6 @@ The world of 175 AD is not purely historical. It is a world where the gods are r
 
 Each entry includes the creature's historical origins, how it functions in the campaign, and tactical notes for the DM. These are not interchangeable monsters that differ only in hit points. Each creature fights the way its real-world analogue behaves: with specific triggers, retreat conditions, preferred terrain, and exploitable weaknesses. Know those, and the encounter has shape. Ignore them, and you have a dice-rolling session.
 
----
 
 ## Roman Creatures
 
@@ -18,13 +17,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **In the Campaign:** A strix nest near a military fort explains the unaccountable deaths of sentries (see Chapter 2 hooks). A cult of Mars might keep striges as consecrated hunters, releasing them against enemies. A single strix following the party could be a divine message from Mars, or simply a predator drawn to blood.
 
----
 
 ::: {.callout-note appearance="minimal"}
 **STRIX**
 *Small fiend, chaotic evil*
 
----
 
 **Armor Class** 13 (natural armor) | **Hit Points** 58 (13d6 + 13) | **Speed** 10 ft., fly 60 ft.
 
@@ -37,7 +34,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Languages** --
 **Challenge** 4 (1,100 XP) | **Proficiency Bonus** +2
 
----
 
 **Blood Scent.** The strix can detect blood within 60 feet. It has advantage on Perception checks against any creature that is bleeding.
 
@@ -51,7 +47,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Sunlight Sensitivity.** In sunlight, the strix has disadvantage on attack rolls and Wisdom (Perception) checks relying on sight.
 
----
 
 ***ACTIONS***
 
@@ -63,13 +58,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Blood Drain (Recharge 5--6).** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d6 + 4) piercing damage and the strix attaches to the target. While attached, the strix deals 7 (1d6 + 4) necrotic damage at the start of each of its turns. A creature can use its action to pull the strix free (DC 13 Strength check).
 
----
 
 ***BONUS ACTIONS***
 
 **Strike and Withdraw.** Immediately after making a melee attack, the strix can move up to its full fly speed without provoking opportunity attacks. It uses this every round unless cornered. It will not stay in melee range between turns.
 
----
 
 ***DM NOTES***
 
@@ -80,7 +73,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Adventure hooks:** Soldiers finding drained corpses; a captured strix that can be coerced into tracking another creature by smell; a strix nesting in the fort's grain stores, drawn by the smell of slaughtered animals.
 :::
 
----
 
 ### Lemur
 
@@ -94,13 +86,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **In the Campaign:** The dead of the frontier battles don't always stay dead. Unburied soldiers, Germanic warriors slain without proper rites, massacre victims from Chapter 1: all are potential lemures. A wise party learns to bury their dead properly. A party that doesn't may find old friends among the midnight visitors.
 
----
 
 ::: {.callout-note appearance="minimal"}
 **LEMUR**
 *Small undead, chaotic neutral*
 
----
 
 **Armor Class** 12 | **Hit Points** 32 (7d6 + 7) | **Speed** 0 ft., fly 30 ft. (hover)
 
@@ -115,7 +105,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Languages** Understands the languages it knew in life; cannot speak
 **Challenge** 1 (200 XP) | **Proficiency Bonus** +2
 
----
 
 **Incorporeal Movement.** The lemur can move through creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.
 
@@ -129,13 +118,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Lemuria Compulsion.** During the three nights of Lemuria (historically May, but the GM may move this), lemures cannot willingly remain more than 30 feet from a living creature.
 
----
 
 ***ACTIONS***
 
 **Draining Touch.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 5 (1d6 + 2) psychic damage. The target must succeed on a DC 12 Constitution saving throw or gain one level of exhaustion (maximum 1 from this ability, recovered on a long rest).
 
----
 
 ***DM NOTES***
 
@@ -146,7 +133,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Adventure hooks:** The party must bury fallen enemies (not just allies) to prevent a haunting; a lemur wearing the face of someone the party killed by accident; a fort commander demanding the party deal with the apparitions his men are seeing on the walls at night.
 :::
 
----
 
 ### Larvae
 
@@ -158,13 +144,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **In the Campaign:** A larva might be a senator's assassinated predecessor, seeking revenge. A disgraced soldier executed without trial. A Germanic shaman killed by treachery. They remember the faces of those who wronged them, and they look for those faces in the living.
 
----
 
 ::: {.callout-note appearance="minimal"}
 **LARVAE**
 *Medium undead, chaotic evil*
 
----
 
 **Armor Class** 14 | **Hit Points** 91 (14d8 + 28) | **Speed** 0 ft., fly 40 ft. (hover)
 
@@ -180,7 +164,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Languages** The languages it knew in life
 **Challenge** 5 (1,800 XP) | **Proficiency Bonus** +3
 
----
 
 **Incorporeal Movement.** The larvae can move through creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.
 
@@ -192,7 +175,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Threshold Reset.** When reduced below 20 HP, the larvae passes through the nearest solid surface (wall, floor, ceiling) using Incorporeal Movement and does not return until the start of its next turn. It does not flee the area: it resets. It re-enters combat on its next turn, face restored to its opening choice.
 
----
 
 ***ACTIONS***
 
@@ -202,7 +184,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Horrific Visage (Recharge 5--6).** Each non-undead creature within 60 feet that can see the larvae must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. A target can repeat the save at the end of each of its turns. On a success, the target is immune to this larvae's Horrific Visage for 24 hours.
 
----
 
 ***DM NOTES***
 
@@ -213,7 +194,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Adventure hooks:** A larvae wearing the face of a tribune the party exposed (but who was then executed); a larvae haunting the Senate chambers in Rome, wearing the mask of Brutus' predecessor; a larvae who can only be laid to rest if the truth of its murder is spoken aloud before witnesses.
 :::
 
----
 
 ### Genius Loci
 
@@ -227,13 +207,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **In the Campaign:** The sacred grove in Chapter 3 is home to a genius loci: the spirit of that specific forest. It is not evil. It is not good. It is territorial. The party's approach to the grove, their behavior within it, and their offering at the altar all affect how the genius loci responds. The spear of Mars has been degrading the genius loci's power, which is why Mars' influence is spreading.
 
----
 
 ::: {.callout-note appearance="minimal"}
 **GENIUS LOCI**
 *Large elemental, true neutral*
 
----
 
 **Armor Class** 15 (natural armor) | **Hit Points** 78 (12d10 + 12) | **Speed** 30 ft., swim 30 ft.*
 
@@ -250,7 +228,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Languages** Understands all languages spoken in its territory; communicates through environmental signs
 **Challenge** 4 (1,100 XP) | **Proficiency Bonus** +2
 
----
 
 **Place Bound.** The genius loci cannot move more than 1 mile from the place it is bound to. If forced beyond this distance, it loses all traits and actions until it returns.
 
@@ -264,7 +241,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Propitiation.** A creature that presents a suitable offering (worth 10 gp or more, or a living animal sacrifice) and succeeds on a DC 12 Religion check earns the genius loci's blessing: advantage on all checks and saves made within the territory for 24 hours.
 
----
 
 ***ACTIONS***
 
@@ -276,13 +252,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Territorial Curse (Recharge 5--6).** All trespassers within 30 feet must succeed on a DC 14 Wisdom saving throw or take 22 (4d10) psychic damage and have disadvantage on all checks made within the territory for 24 hours. On a success: half damage, no disadvantage.
 
----
 
 ***REACTIONS***
 
 **Guardian's Shield.** When a creature the genius loci has blessed would take damage, it can reduce that damage by 9 (2d8).
 
----
 
 ***DM NOTES***
 
@@ -291,7 +265,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Campaign use:** Chapter 3's sacred grove. The grove's genius loci is weakened by the corrupted spear and will not attack the party unprovoked: it wants help. If the party performs proper rites (the skill challenge), the genius loci becomes an ally rather than an obstacle.
 :::
 
----
 
 ## Germanic Creatures
 
@@ -307,13 +280,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **In the Campaign:** Germanic scouts use alps as weapons, releasing them into Roman camps to exhaust soldiers before a battle. A Roman camp with an alp problem will show signs: soldiers afraid to sleep, hollow-eyed, with unexplained bruising. The party might be hired to find it, or might simply start losing sleep themselves.
 
----
 
 ::: {.callout-note appearance="minimal"}
 **ALP**
 *Small fey, chaotic evil*
 
----
 
 **Armor Class** 14 (natural armor) | **Hit Points** 65 (10d6 + 30) | **Speed** 30 ft.
 
@@ -328,7 +299,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Languages** Common; the language of any sleeping creature it observes for 1 minute
 **Challenge** 4 (1,100 XP) | **Proficiency Bonus** +2
 
----
 
 **Shapechanger.** The alp can use its action to polymorph into a Small or Medium humanoid, a bat, a cat, or back into its true form. Its statistics are the same in each form. Equipment it wears or carries doesn't transform.
 
@@ -342,7 +312,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Returning Threat.** If the alp is driven off without being destroyed, it returns the following night unless cold iron is placed at every threshold of the sleeping space (every door and window). A space with one unprotected threshold is treated as open. The alp notices gaps and uses them.
 
----
 
 ***ACTIONS***
 
@@ -354,7 +323,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Nightmare (1/Day).** The alp enters the dream of a sleeping creature within 5 feet and twists it. The target must succeed on a DC 14 Wisdom saving throw when it wakes or take 14 (4d6) psychic damage and gain no benefit from the rest.
 
----
 
 ***DM NOTES***
 
@@ -365,7 +333,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Iron weakness:** The alp cannot enter a space containing iron (including a closed iron lock on a door) without succeeding on a DC 13 Wisdom saving throw. This is why frontier soldiers sometimes sleep with an iron nail in their palm.
 :::
 
----
 
 ### Draugar
 
@@ -379,13 +346,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **In the Campaign:** The Germanic frontier has many old burial mounds. Disturbing them, even accidentally during a march, risks waking what's inside. A draugar might also be raised deliberately by a Germanic shaman to guard a sacred site.
 
----
 
 ::: {.callout-note appearance="minimal"}
 **DRAUGAR**
 *Medium undead, chaotic evil*
 
----
 
 **Armor Class** 14 (natural armor) | **Hit Points** 119 (14d8 + 56) | **Speed** 30 ft.
 
@@ -401,7 +366,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Languages** The languages it knew in life
 **Challenge** 6 (2,300 XP) | **Proficiency Bonus** +3
 
----
 
 **Grave Stench.** Each creature that starts its turn within 5 feet of the draugar must succeed on a DC 13 Constitution saving throw or be poisoned until the start of its next turn.
 
@@ -417,7 +381,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Earth Memory.** The smell of fresh-turned earth (DC 12 Nature check to know this) causes the draugar to hesitate for 1 round: it stops moving, tilts its head, and does not attack. It is remembering burial. A character who knows this can use an action to scatter a handful of fresh earth to buy one round of inaction.
 
----
 
 ***ACTIONS***
 
@@ -427,7 +390,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Crushing Grip (Recharge 5--6).** The draugar grabs a creature within 5 feet (escape DC 16). At the start of each of the draugar's turns, a grabbed creature takes 18 (4d8) bludgeoning damage and must succeed on a DC 15 Strength saving throw or fall prone.
 
----
 
 ***DM NOTES***
 
@@ -438,7 +400,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Ending the threat:** A draugar is permanently destroyed only if its burial mound is purified (religious ceremony, DC 15 Religion check) or its remains burned and the ash scattered. Killing it in combat delays the problem by a week.
 :::
 
----
 
 ### Lindworm
 
@@ -450,13 +411,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **In the Campaign:** A lindworm is a Session 3 or 4 encounter at the extreme end: appropriate if the party has survived everything else and you want a true test before the final session. It might be protecting the sacred grove, drawn there by Mars' energy, or simply a creature from deep in the Hercynian that followed the sound of war.
 
----
 
 ::: {.callout-note appearance="minimal"}
 **LINDWORM**
 *Huge dragon, chaotic evil*
 
----
 
 **Armor Class** 17 (natural armor) | **Hit Points** 207 (18d12 + 90) | **Speed** 40 ft., swim 60 ft., burrow 20 ft.
 
@@ -472,7 +431,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Languages** --
 **Challenge** 10 (5,900 XP) | **Proficiency Bonus** +4
 
----
 
 **Water Lair.** The lindworm guards a specific water source (a river bend, a deep pool, a subterranean lake) and is never found more than 1 mile from it. Pulling it away from water requires something it wants more than the water: a large, warm prey animal, or a threat to its immediate nest site.
 
@@ -484,7 +442,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Legendary Resistance (2/Day).** If the lindworm fails a saving throw, it can choose to succeed instead.
 
----
 
 ***ACTIONS***
 
@@ -496,7 +453,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Poison Breath (Recharge 5--6).** The lindworm exhales poisonous gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or take 42 (12d6) poison damage and be blinded and poisoned for 1 minute. On a success: half damage, no condition.
 
----
 
 ***DM NOTES***
 
@@ -507,7 +463,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Encounter design:** A lindworm alone is a deadly encounter for a level 7--8 party. Pair it with terrain hazards rather than additional monsters. Let it be a boss, not part of a mob.
 :::
 
----
 
 ### Nix
 
@@ -521,13 +476,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **In the Campaign:** The Rhine is the party's boundary between Roman territory and the Germanic lands (Chapters 2--3). A nix in the river can slow a crossing, pick off isolated soldiers, or serve as an information source: it has been watching the river for centuries and knows who crosses it and when. Vercingetorix's tribe has a relationship with the local nix; they know its name, and they've paid for that knowledge.
 
----
 
 ::: {.callout-note appearance="minimal"}
 **NIX**
 *Medium fey, neutral evil*
 
----
 
 **Armor Class** 13 (natural armor) | **Hit Points** 91 (14d8 + 28) | **Speed** 30 ft., swim 60 ft.
 
@@ -540,7 +493,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Languages** Aquan, Common, Sylvan
 **Challenge** 5 (1,800 XP) | **Proficiency Bonus** +3
 
----
 
 **Amphibious.** The nix can breathe both air and water.
 
@@ -554,7 +506,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Chosen Target.** Before the session begins, the DM selects the character the nix will target with its Drowning Song. The selection is based on which character carries the most unresolved emotional stake in the current session: the one who has the most to lose, the most to grieve, or the most to want. A nix that targets randomly is just a monster. A nix that targets correctly is a mirror.
 
----
 
 ***ACTIONS***
 
@@ -566,13 +517,11 @@ Each entry includes the creature's historical origins, how it functions in the c
 
 **Horrific Revelation (1/Day).** When the nix's disguise is broken or when it chooses to reveal its true form, every creature within 30 feet that has seen the disguise for longer than 1 minute must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. This represents the specific horror of realizing that the thing you trusted was never what you thought.
 
----
 
 ***REACTIONS***
 
 **River Drag.** When a creature enters the water within 30 feet of the nix, it can use its reaction to make a grapple attempt against that creature (+5 to hit). A grappled creature begins drowning immediately.
 
----
 
 ***DM NOTES***
 
@@ -583,7 +532,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 **Propitiation:** A nix can be bargained with. If offered a gift worth 25 gp or more (thrown into the river), it will allow safe crossing for one hour. If offered the name of its intended victim instead (a named enemy the party wants dead), it may agree to hunt that person instead. The nix keeps its agreements exactly once.
 :::
 
----
 
 ## Bestiary Quick Reference
 
@@ -598,7 +546,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 | **Lindworm** | 10 | Dragon | Rivers, deep forest | Boss encounter; retreats to water at 50 HP |
 | **Nix** | 5 | Fey | Rivers, lakes | Disguise approach; chosen target; river drag |
 
----
 
 ## Tactical Summary Card
 
@@ -613,7 +560,6 @@ Each entry includes the creature's historical origins, how it functions in the c
 | **Lindworm** | 10 | Any warm creature within 60 ft of its water source | Retreats into water below 50 HP; must be followed | River bends, deep forest pools, lair approaches | Fire and high ground; deny the water retreat |
 | **Nix** | 5 | Disguise broken, or it decides to reveal | Retreats fully into water if engaged away from the bank | River crossings, lake shores, fords | Know its name before crossing; tie down the Chosen Target |
 
----
 
 ### Propitiation Table
 

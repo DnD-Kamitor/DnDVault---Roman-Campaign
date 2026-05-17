@@ -2,7 +2,6 @@
 
 The Roman world is not a fantasy marketplace where everything is available everywhere at a fixed price. What you can buy depends on where you are, who controls the supply chain, and how recently the convoy arrived. Fort Vindolanda on the Germanic frontier is far from the workshops of Rome and the warehouses of the Rhine. Some things are plentiful here. Others are unavailable at any price.
 
----
 
 ## The Price Index
 
@@ -35,7 +34,6 @@ Prices vary dramatically by region. Use this table as a guide.
 | Alexandrian glass cup | 15 | Not available | Not available | A luxury that announces wealth |
 | Silver *denarius* change | 1 | 1 | 4 sestertii for 1 denarius (bad rate) | Germanic traders prefer amber and goods to coin |
 
----
 
 ## Fort Vindolanda's Current Stock
 
@@ -66,7 +64,6 @@ The Legate's private reserve: 4 amphorae of Falernian wine, 2 lbs eastern spice,
 
 </details>
 
----
 
 ## The Supply Cycle
 
@@ -82,7 +79,6 @@ The convoy is not just logistics. It carries letters from home, replacement pers
 | S4 | Rome has everything; access is the problem, not supply | Social currency replaces material currency; what you can get depends on who you know |
 | S5 | The divine arena provides nothing | Mars offers the arena weapons (Handout 11); everything else the party carries is what they brought |
 
----
 
 ## Vindolanda Equipment Catalog
 
@@ -101,7 +97,6 @@ The convoy is not just logistics. It carries letters from home, replacement pers
 
 Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` for upgrade effects.
 
----
 
 ### Weapons
 
@@ -245,7 +240,6 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 *Action:* Attack action (ranged, 80/320 ft). *Effect:* 1d10 piercing, two-handed, loading property (requires a Bonus Action to reload between shots). Counts as a heavy crossbow for feat and proficiency purposes. *Uses:* 10 bolts per kit issued. *When:* Camp Level 2 only. Session 3 onward if Rufus assembles it before the party departs.
 :::
 
----
 
 ### Shields
 
@@ -276,7 +270,6 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 *Action:* 1 minute to set up (plant it in the ground). *Effect:* Provides three-quarters cover (+5 AC, +5 Dexterity saving throws) to one Medium or smaller creature behind it. Cannot be carried and used simultaneously. Rufus makes one per 2 hours from fort timber at no materials cost (he uses construction scraps). *Skill synergy:* A character with mason's or carpenter's tools proficiency can set up the pavise in 30 seconds instead of 1 minute. *When:* Session 4 (siege defense; the pavise is the reason ranged players survive the arrow storm in Scene 3 of Chapter 4).
 :::
 
----
 
 ### Armor
 
@@ -416,7 +409,6 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 *Effect:* As the standard belt. Additionally: grants advantage on Charisma checks to establish your Roman status in civilian or Germanic social scenes. A man wearing silver and brass belt fittings on the frontier is read as someone with standing. *When:* Sessions 1, 2, 4 (social scenes with Corvinus, Cassia, the Tribune).
 :::
 
----
 
 ### Ammunition
 
@@ -478,7 +470,6 @@ Full damage and range statistics are in `roman_tactics.qmd`. This section covers
 **Arcuballista bolts** (x10) — 2 d/10, sign-out required. 1d10 piercing (wall-mounted) or 1d8 piercing (hand-carried). No special properties; heavy construction punches through light cover. Requires the correct arcuballista type (wall bolts do not fit the hand-carried model and vice versa).
 :::
 
----
 
 ### Tools and Kits
 
@@ -537,7 +528,6 @@ Full damage and range statistics are in `roman_tactics.qmd`. This section covers
 *Action:* 1 hour to produce a basic compound. *Effect:* With proficiency and Session 1 availability (Order only; Valeria has partial kit at Camp Level 2): produce *Greek fire* substitute (2d4 fire in a 5-foot splash, DC 12 Dexterity save for half, requires 1 hour and materials worth 5 d); produce a basic antitoxin substitute (1 dose, as per medical supplies listing); or identify an unknown substance (DC 14 Intelligence check, advantage with the tools). *When:* Camp Level 2 onward; Session 4 siege (the Greek fire is a significant advantage in Chapter 4's assault repulsion).
 :::
 
----
 
 ### Field Consumables
 
@@ -633,7 +623,6 @@ Full damage and range statistics are in `roman_tactics.qmd`. This section covers
 *Action:* 1 action to angle. *Effect:* Signal use: reflect sunlight up to 1 mile on a clear day; any creature in the reflected beam's arc must make DC 13 Perception check to notice the signal (the DM determines whether the intended recipient sees it based on position). Used to look around a corner: grants visual observation of an adjacent area without exposing yourself; the viewer has disadvantage on Perception checks through the mirror (-2 to passive Perception as well) but is not directly visible. *When:* Session 1 vault (checking a corridor before entering), Sessions 4-5 (signaling the fort from outside the siege perimeter).
 :::
 
----
 
 ### Medical Supplies
 
@@ -696,7 +685,6 @@ Full damage and range statistics are in `roman_tactics.qmd`. This section covers
 *Action:* 1 action (drink yourself) or 1 action (administer to an adjacent creature). *Effect:* Restores 2d4 + 2 HP. Compare to using a Bonus Action with a healing spell: a *healing potion* costs your full Action, which is the key tradeoff decision in combat. The healing word from a Bard or Cleric costs a Bonus Action for 1d4 + modifier HP; the potion costs an Action for 2d4+2 HP. Use the potion when your spellcaster has already used their Bonus Action, or when the healer is down. Valeria can prepare 1 per long rest at Camp Level 1 (cost: 25 d in materials, 1 hour preparation). *When:* All sessions; the most important item the party will debate not carrying.
 :::
 
----
 
 ### Animals and Transport
 
@@ -713,7 +701,6 @@ Full damage and range statistics are in `roman_tactics.qmd`. This section covers
 | Saddlebag | 8 | In stock | Standard |
 | Feed, horse (1 day) | 1 | In stock | Oats and hay; tracked |
 
----
 
 ### Camp Services
 
@@ -736,7 +723,6 @@ Services are arranged through the relevant NPC. Prices are per job and negotiabl
 | Letter to Rome (official courier) | Librarius + dispatch | 5 d | 4-week round-trip via official courier chain |
 | Scouting intelligence | Explorator | Information exchange | Not paid in coin; the explorator trades knowledge for knowledge |
 
----
 
 ### Camp Level Availability Changes
 
@@ -755,7 +741,6 @@ Services are arranged through the relevant NPC. Prices are per job and negotiabl
 - Quality weapon production: Rufus makes one quality weapon per session rest
 - All Limited ammunition restocked to listed quantities per session rest
 
----
 
 ## Exotic Goods as Story Currency
 

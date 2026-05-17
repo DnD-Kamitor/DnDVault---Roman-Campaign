@@ -58,7 +58,6 @@ Here is what he was actually thinking when he wrote each summons letter:
 
 </details>
 
----
 
 ### Augur Cassia Liviana
 
@@ -70,7 +69,6 @@ Her secret is the most significant thing in the campaign: she is Mars's daughter
 
 *Session role: Information source and moral anchor, Sessions 1-5.*
 
----
 
 ### Centurion Titus Varro
 
@@ -82,7 +80,6 @@ His secret is not comfortable: he knows Corvinus is compromised. He has known fo
 
 *Session role: Reliable ally and reality check, Sessions 1-5.*
 
----
 
 ### Tribune Lucius Valerius Maximus
 
@@ -94,7 +91,6 @@ He will betray anyone to survive. This is fear, not sociopathy. He regrets it af
 
 *Session role: Never Present Villain's agent, Sessions 2-4.*
 
----
 
 ### Vercingetorix the Red
 
@@ -108,7 +104,6 @@ His dying admission -- that he knew Brutus had contacted two warband chieftains 
 
 *Session role: Reluctant ally and living history, Sessions 2-5.*
 
----
 
 ### Senator Gaius Cassius Brutus
 
@@ -120,7 +115,6 @@ The party does not meet him until Session 5. Everything they learn before then c
 
 *Session role: Never Present Villain, Sessions 1-4; present Session 5.*
 
----
 
 ### Mars, God of War
 
@@ -186,7 +180,6 @@ This is the shape of the whole campaign. Use it to maintain dramatic coherence a
 
 Combinations and partial outcomes are valid. The key is that every NPC's OGAS resolves in a way that feels earned by their established character.
 
----
 
 ## NPC Relationship Web
 
@@ -226,7 +219,6 @@ Who knows what about whom. Use this to run every character as a fully-informed a
 | Vercingetorix | The spear's tribal history (three generations). Where the sacred grove is. | Brutus exists. That the Roman augur has divine blood. |
 | Senator Brutus | The spear's location. That Lucius is his tool. The replica spear ritual. | That Cassia can feel the spear's divine pull. That Vercingetorix is dying. |
 
----
 
 ## Per-Session NPC State Table
 
@@ -280,7 +272,6 @@ What each NPC knows, wants, and is actively doing in each session — whether or
 
 All surviving NPCs are absent from the divine arena — Mars' judgment is for the party alone. Their fates are resolved in the epilogue.
 
----
 
 ## NPC Voice Reference
 
@@ -349,7 +340,6 @@ Three characteristic lines per NPC. Read these before every session they appear 
 
 > *"You surprised me. That happens rarely. I will remember it."*
 
----
 
 ## NPC Reaction Tables
 
@@ -403,13 +393,11 @@ How each major NPC responds to the three most likely party approaches.
 | **Threaten him with legal action** | Completely unconcerned. He has done nothing illegal yet. *"Bring your evidence to the Senate. I look forward to the debate."* |
 | **Physical confrontation** | Does not fight personally. Calls guards immediately, then disappears. Never in the same room as violence he ordered. |
 
----
 
 ## Lex Arcana: Adapted Systems for This Campaign
 
 *Lex Arcana* is an Italian tabletop RPG set in an alternate Rome where the empire never fell. Its investigative framework and virtue mechanics are more suited to Roman play than standard D&D structures. The four systems below are adapted from *Lex Arcana* and integrated into this campaign. Read this section before Session 0; the systems become relevant from Session 1 onward.
 
----
 
 ### The *Exploratores Extraordinarii*: Party Authority Structure
 
@@ -432,7 +420,6 @@ After Session 1, Corvinus formalizes the party's designation as *Exploratores Ex
 
 **In play:** Introduce this designation formally at the start of Session 2. Corvinus hands them a sealed document. He does not explain its full implications. The players should discover the complications of the designation over time, not all at once.
 
----
 
 ### Roman Virtues as Character Mechanics
 
@@ -460,7 +447,6 @@ At Session 0, each player declares their character's primary virtue: the one the
 
 **DM guidance:** Do not track these mechanically on a spreadsheet. Track them in your session notes. The goal is not to catch players out; it is to create moments where the virtues are tested in ways that feel earned. Signal to players when a virtue moment is approaching, not through narration of the mechanic, but through the situation itself.
 
----
 
 ### Augury as Structured Mini-Game
 
@@ -485,7 +471,6 @@ At Session 0, each player declares their character's primary virtue: the one the
 
 **Multiple auguries:** If multiple party members attempt augury on the same question in the same session, only the highest roll counts. The gods are not asked twice.
 
----
 
 ### Fatum: Destiny as Campaign Mechanic
 
@@ -515,7 +500,6 @@ Examples:
 
 **Design note:** The Fatum system works because it gives players authorship over their character's arc without giving them authorship over the plot. The campaign determines what happens; the Fatum determines what it means to each character. These are different things and both are valuable.
 
----
 
 ### Investigation Structure: Three Phases
 
@@ -537,13 +521,11 @@ The party acts on their theory. In this phase: if their theory is substantially 
 
 **DM note:** You do not need to announce these phase names to the players. Simply structure each investigation session so that the natural rhythm of play moves through gathering, analysis, and action. The phase markers are a planning tool for you, not a visible mechanic for the table.
 
----
 
 ## Main NPC Skill DC Framework
 
 Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design principles behind these tables. Each entry documents: primary approach, signature skill, wrong-approach consequence, temporal gates, and partial success at three levels.
 
----
 
 ### Corvinus: Skill DC Table
 
@@ -570,7 +552,6 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Exactly at DC:* He gives you the concession. Nothing extra. The relationship has not warmed; he is just not fighting you on this specific thing.
 - *5 above DC:* He gives you the concession and one thing you did not know to ask for: why he made the calculation he made. That is the interesting part. Give it freely.
 
----
 
 ### Cassia: Skill DC Table
 
@@ -597,7 +578,6 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Exactly at DC:* She gives you the truth she is comfortable sharing. That is real trust. Treat it as such.
 - *5 above DC:* She gives you the truth and the cost of knowing it. What it feels like to carry what she carries. That is the moment the table goes quiet. Let it.
 
----
 
 ### Varro: Skill DC Table
 
@@ -625,7 +605,6 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Exactly at DC:* Facts plus his read of the immediate situation. This is Varro being useful.
 - *5 above DC:* His full tactical thinking, offered peer-to-peer. What he would do and why. This is what it sounds like when Varro actually trusts someone.
 
----
 
 ### Tribune Lucius: Skill DC Table
 
@@ -652,7 +631,6 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Exactly at DC:* Something true arrives, wrapped in enough performance that finding it takes work. The players feel like they are doing archaeology. That is correct.
 - *5 above DC:* He tells you something true, drops the performance around it, and immediately regrets it. He is more honest now and also more dangerous. Do not soften either half of that.
 
----
 
 ### Vercingetorix: Skill DC Table
 
@@ -680,7 +658,6 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Exactly at DC:* He gives you what you acknowledged. Exactly that. He is precise.
 - *5 above DC:* He gives you the information and one thing you did not know to ask for: a route, a warning, a name. This is Vercingetorix being generous. It does not happen often. Notice it.
 
----
 
 ### Senator Brutus: Skill DC Table
 
@@ -708,7 +685,6 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Exactly at DC:* You have what the DC describes, clearly. He has handed you a problem without its solution. That is the right feeling.
 - *5 above DC:* You have the picture and the one specific thing you can do about it: the vulnerability he does not know you found. Deliver this quietly. It should land.
 
----
 
 ### Mars: Skill DC Table
 
@@ -737,7 +713,6 @@ Full DC tables for all seven main NPCs. See `skill_framework.qmd` for the design
 - *Exactly at DC:* He adjusts. The outcome range shifts by one option in the party's favor. That is a real concession from a god. Name it.
 - *5 above DC:* He explains something he does not explain to most people. Not mercy: understanding. He has decided they have earned it. Take a breath before you describe this. It matters.
 
----
 
 ## Cross-Session Integration: Cascade Unlock Master Table
 
@@ -769,7 +744,6 @@ During play: deliver unlocks at the listed activation moment. Do not announce th
 
 If the party missed a check: the unlock does not activate. The alternative path is documented in the relevant chapter's Skill Audit section. No dead ends: different tool, different door.
 
----
 
 ## The Unit: NPC Role Holders
 
@@ -931,13 +905,11 @@ The emotional reality is played, not skipped. If the party was close to Libo (be
 
 A player character can step into a vacant role if they meet the prerequisites and if the circumstances allow the transition. A siege is not the right moment to process paperwork; the morning after the siege is. When a PC takes over a role, they inherit the NPC's contacts, tools, and outstanding complications. This includes everything the NPC was managing that they did not finish.
 
----
 
 ## Player Character Variants
 
 Some characters arrive at Session 0 with backgrounds that interact with the campaign's core systems in specific ways. This section is DM-facing: the player sees the flavor in `peoples.qmd`; the mechanics below are yours to deploy when they become relevant.
 
----
 
 ### The Shadow-Cursed Spartan (*Shadar-kai*)
 
