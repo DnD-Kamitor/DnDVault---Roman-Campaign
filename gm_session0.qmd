@@ -8,13 +8,12 @@
 
 | Part | Content | Time |
 |---|---|---|
-| Part 1 | Consent and boundaries | 10-15 min |
-| Part 2 | Questions aloud (table-wide) | 60-90 min |
-| Part 3 | Private questions (one-on-one) | 20-30 min |
-| Part 4 | Mechanical collection + card writing | 15 min |
+| Part 1 | Questions aloud (table-wide) | 60-90 min |
+| Part 2 | Private questions (one-on-one) | 20-30 min |
+| Part 3 | Mechanical collection + card writing | 15 min |
 | Prologue | Day of Arrival (4 scenes) | 90-120 min |
 
-The Prologue can run immediately after Part 4 if the table has energy, or at the start of the next meeting. Either is correct. The Prologue ends where Session 1 begins: the morning after the shared dream.
+The Prologue can run immediately after Part 3 if the table has energy, or at the start of the next meeting. Either is correct. The Prologue ends where Session 1 begins: the morning after the shared dream.
 
 
 ## What You Need to Walk Away With
@@ -39,7 +38,7 @@ Tell the players this, plainly, before any questions:
 
 > "I'm going to ask you some questions. Some are for you to answer aloud; those help the group understand each other's characters. Some I'll ask you to write down privately and hand to me. Everything you tell me will come up in play -- not as a gotcha, but as a moment the campaign was built to give you. The more honest your answers, the better those moments will be."
 
-Then explain the corruption mechanic's table-level consent questions (see the Consent section below) before anything else.
+Then move straight into the questions below.
 
 
 ## The Assembled Unit: What to Establish Before Questions Begin
@@ -123,24 +122,7 @@ Suggested cover stories by role:
 Write each character's cover story on a small card. **Distribute cover story cards after roles are confirmed and before the Prologue begins.** Players need their cover story before Scene 1 of the Prologue (they arrive at the fort with a stated reason). They do not compare notes with each other at this stage.
 
 
-## Part 1: Consent and Boundaries
-
-*Ask these before any character questions. They are not optional.*
-
-Ask each player, privately or as a group based on your table's comfort level:
-
-**Corruption consent:**
-- "Are you comfortable with your character having disadvantage on specific rolls as a result of corruption?"
-- "Are you comfortable with your character being temporarily compelled toward an action by an external force -- something you don't want to do, but the character feels pulled toward?"
-- "If your character reaches stage 5 corruption and becomes an NPC, what would you prefer: roll a new character, take over a surviving NPC, or step back from the campaign?"
-
-**Violence and themes:**
-- "This campaign includes body horror (corrupted workers, animated remains), divine pressure, and moments where soldiers are ordered to do things they find wrong. Are there specific depictions you want me to handle differently or skip?"
-
-**Note:** Record the corruption consent answers per player. Stage 4 (compelled attack on ally) requires that player's prior consent; do not use it against a player who said no.
-
-
-## Part 2: Questions to Ask Aloud (Table-Wide)
+## Part 1: Questions to Ask Aloud (Table-Wide)
 
 *Ask these with everyone present. The answers help players build relationships and give you visible hooks.*
 
@@ -178,7 +160,7 @@ Listen for: the line. Every pressure cooker scene in this campaign exists to app
 
 Listen for: the Fatum seed. Most players have an instinct for their character's arc before they articulate it. "I expect to die for something" is a Fatum. "I expect to be betrayed by Rome" is a Fatum. "I expect to prove myself and go home" is a Fatum that the campaign will test specifically.
 
-*DM note: After the table discussion, you will formalize this into a written Fatum (see Part 4).*
+*DM note: After the table discussion, you will formalize this into a written Fatum (see Part 3).*
 
 
 ### The Gods
@@ -216,7 +198,7 @@ Listen for: the driving want. "Promotion" is thin; "promotion so my family has a
 
 ### The Three Questions
 
-*These are the same questions printed at the end of `session0.qmd`. Ask them aloud at the table after the character-building discussion. Collect the answers on index cards (see Part 4: Fatum Card).*
+*These are the same questions printed at the end of `session0.qmd`. Ask them aloud at the table after the character-building discussion. Collect the answers on index cards (see Part 3: Fatum Card).*
 
 **"What does your character want to prove on this campaign?"**
 
@@ -246,7 +228,7 @@ Listen for: the gap between stated values and lived experience. A character who 
 *DM note: Characters with a tested, imperfect honor definition are more vulnerable to stages 2-3 corruption. They have already learned that lines can move.*
 
 
-## Part 3: Questions to Ask Privately
+## Part 2: Questions to Ask Privately
 
 *These are one-on-one, written note, or quiet aside. Other players do not need to hear these.*
 
@@ -289,13 +271,13 @@ This is the fading mechanic's emotional root. The answer tells you what kind of 
 *Record: the specific memory image, and the sensation category.*
 
 
-## Part 4: The Mechanical Collection
+## Part 3: The Mechanical Collection
 
 *At the end of Session 0, collect these in writing. Index cards work. Keep them.*
 
 ### Fatum Card
 
-The Three Questions (Part 2) produce table conversation. The Fatum Card is a separate step: after the Three Questions discussion ends, each player synthesizes their three answers into a single "I will --" sentence and writes it on one index card. One card per player. This is the card you keep. The Three Questions cards (if players wrote them) are for the players; the Fatum Card is for you.
+The Three Questions (Part 1) produce table conversation. The Fatum Card is a separate step: after the Three Questions discussion ends, each player synthesizes their three answers into a single "I will --" sentence and writes it on one index card. One card per player. This is the card you keep. The Three Questions cards (if players wrote them) are for the players; the Fatum Card is for you.
 
 **The sentence answers:** "What is this character's fate?"
 
@@ -340,10 +322,10 @@ For each player, note three things:
 
 2. **What they would say to justify a small compromise.** This is the internal logic of stages 2-3. "Just this once." "The ends justify this." "I'm doing it to protect--" Fill in the blank from the table questions.
 
-3. **Who they would hurt last.** The stage 4 compelled attack hits hardest when it is aimed at the trust relationship you recorded in Part 3. If consent allows, this is the target.
+3. **Who they would hurt last.** The stage 4 compelled attack hits hardest when it is aimed at the trust relationship you recorded in Part 2. This is the target.
 
 
-## Part 5: Red Flags and How to Handle Them
+## Part 4: Red Flags and How to Handle Them
 
 *Things to watch for during Session 0 that require a quiet conversation before Session 1.*
 
@@ -363,7 +345,7 @@ Fully supported (see Dwarf or Half-Orc in `peoples.qmd`). Adjust their Germanic 
 This person has found the core of their character. The campaign will test it directly. Note it. Build toward it. Do not waste it on a minor scene.
 
 
-## Part 6: After Session 0, Before Session 1
+## Part 5: After Session 0, Before Session 1
 
 Do this before the first session:
 
@@ -371,7 +353,7 @@ Do this before the first session:
 
 **Review the sacrifice seeds.** Identify which character's sacrifice will hit hardest in the grove scene. This player should be the last to offer in Session 3, so the emotional weight lands at the ritual's climax.
 
-**Select the influenced NPC.** Using the trust map from Part 3, choose which player will receive the private note at the start of Session 3. Pick someone whose corruption will be recognizable in hindsight, not immediately obvious. Review the three roleplay cues in `chapter3.qmd` DM Notes: confirm the player can execute them naturalistically before the session.
+**Select the influenced NPC.** Using the trust map from Part 2, choose which player will receive the private note at the start of Session 3. Pick someone whose corruption will be recognizable in hindsight, not immediately obvious. Review the three roleplay cues in `chapter3.qmd` DM Notes: confirm the player can execute them naturalistically before the session.
 
 **Check the divine standing setup.** Every character should start with a named divine standing: favored, neutral, or watched. Default is neutral for all gods. If a character made a vow during Session 0, they start favored by that god and watched by Mars (Mars watches everyone who comes near the spear). Update the tracking sheet in `appendix.qmd`.
 
