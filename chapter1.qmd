@@ -168,6 +168,12 @@ The party is summoned to meet **Legate Marcus Aurelius Corvinus** in the princip
 - **Centurion Varro** suggests destroying it immediately
 - The Legate overrules them both—Rome must possess this weapon
 
+**Tribune Lucius Aurelius arrives mid-briefing.** He enters the principia without knocking, carrying a sealed dispatch satchel with an imperial crest. He is late twenties, composed, and makes no apology for interrupting. He hands Corvinus a sealed letter, waits while Corvinus reads it, and then takes a chair at the edge of the room without being invited to sit. He does not introduce himself to the party. He watches.
+
+If the party asks who he is: Corvinus introduces him flatly as "Tribune Lucius Aurelius, attached to the Legate's office by order of Rome." Lucius nods but says nothing. He is there to observe the retrieval, not facilitate it. His presence visibly tightens Corvinus's posture: the Legate was already under pressure, but Lucius's arrival means someone in Rome is watching closely enough to send a representative. Cassia's expression when Lucius enters is worth noting: she has seen him before, and she does not look surprised.
+
+Lucius remains in the fort during the party's descent. He will be present at the Conclusion scene.
+
 **Decision Point:** Will the party obey orders or heed the augur's warning?
 
 ## Scene 2: Descent into the Ruins
@@ -487,6 +493,7 @@ The regularity of the offerings suggests someone keeping a schedule. A human hab
 
 </details>
 
+**DM: who has been feeding this place.** The offering cycle (fresh grain, recent coins, maintained bodies) stopped approximately two years ago. The person responsible was Titus Sempronius Caecilius, Cassia's predecessor as fort augur. He died of a fever in AD 173 and his death broke a generational chain: someone in the augur's role has maintained this vault since at least the early Antonine period, likely longer. Titus knew the full terms of the bargain sealed here. Cassia inherited his papers but not his understanding of why the offering cycle mattered. His death is why the offering cycle is disrupted and why the vault's contained state has degraded. Cassia knows more than she has said. This is a Session 2 thread: what exactly did Titus's papers contain, and why hasn't Cassia mentioned them?
 
 ### The Binding Chamber
 
@@ -515,13 +522,15 @@ One chain is visually different: it runs from the ceiling through a ring sunk in
 
 Investigation DC 14 (active: studying the chain arrangement as a system rather than as individual chains): On success, the chains are arranged in a deliberate pattern radiating from the central floor ring. They read as a mechanism. The central chain is the key. The order in which the outer chains were last touched (visible in the oxidation patterns on the links) tells you the sequence: three outer chains, handled in a specific order, then the central chain pulled.
 
+**DM: the correct chain sequence.** Three outer chains radiate from the central ring: one runs to the east wall (most corroded, handled most recently), one to the north wall (medium oxidation), one to the west wall (lightest oxidation, handled longest ago). The oxidation pattern is a time record, read in reverse: whoever last operated this pulled west first (oldest, least corroded), north second, east last, then the master chain. The mnemonic: *oldest chain first, newest chain last, then the centre.* If a character succeeds on the Investigation check, tell them which chain is most weathered and which is least. The order follows naturally from there.
+
 If a character pulls the central chain without the sequence: DC 13 Strength saving throw or be restrained for 1 minute. The restrained character can break free with DC 16 Athletics or be cut free with a bladed weapon (10 slashing damage to the chain). No damage -- just restraint, wasted time, and noise.
 
 If a character follows the sequence and pulls the central chain:
 
 > *The chain does not fight back. It comes free of the floor ring with the clean sound of a mechanism that has been waiting to be operated correctly. In the wall to your right, a section of stone swings inward on a hidden iron pivot. Cold air and the smell of old cedar wood.*
 
-The hidden alcove contains: a clay oil lamp (still full, Roman manufacture) and a scroll wrapped in oilskin.
+The hidden alcove contains: a clay oil lamp (still full, Roman manufacture) and a scroll wrapped in oilskin. The lamp was most recently filled within the past two years: the oil is fresh, the wick trimmed. Someone has been tending this space until recently. This is the same person who maintained the chain mechanism and the offering cycle in the Bone Chamber (see ritual feeder note below). Their visits stopped approximately two years ago, which corresponds to the death of Cassia's predecessor as augur, Titus Sempronius Caecilius, who died of a fever in AD 173. Cassia inherited his papers but not his full knowledge of the vault.
 
 The scroll is barely legible. DC 15 Intelligence to read the damaged text: fragments of Latin describe "the terms of the binding." The Germanic tribes agreed to seal the vault for three Roman generations; the Romans agreed never to dig within fifty feet of the *principia's* eastern wall. The agreement was broken by the current excavation. The binding was void the moment the first shovel hit that ground.
 
@@ -587,6 +596,8 @@ The floor is a runic sequence lock. The safe path through exists and is consiste
 - The bone token (from either the hidden alcove or the preserved warrior's throat): OTHALAN is the last rune in every row. If the party ends each row on an OTHALAN rune, they take no damage. This works even without the shield-order clue.
 - Religion DC 14 (passive, while looking at the floor): The pattern has a liturgical logic: it reads like a prayer sequence. The safe path is the path of the ritual, not the path of least resistance. Characters with Religion +4 or higher automatically know which runes complete each row correctly. Give this to the player directly.
 
+**DM: the explicit safe path answer.** The safe rune in every row is OTHALAN. This is the contract rune, the rune the bone token shows, and the rune Mars's presence occupies in Germanic liturgical practice. Two independent confirmations: (1) the bone token (from either the hidden alcove or the preserved warrior's throat) shows OTHALAN directly; (2) the shield order from the Shield Hall maps each tribe to a rune, and the last position in every sequence is Mars/OTHALAN: Marcomanni carries TIWAZ, Cherusci carries HAGALAZ, Suebi carries ISA, and the final shield in every row bears OTHALAN. A character who noted the shield order and one who found the bone token have arrived at the same answer by different routes. If neither route was used, the Explorator role passive reveals the connection on request.
+
 **For parties who ignore the puzzle or fail all checks:**
 
 They can walk through and take 1d8 lightning damage per wrong rune. There are approximately 8 rows. A failed attempt on each deals an average of 4.5 damage per row, for 36 total if every row is failed. Survivable but costly. The puzzle is not a wall; it is a cost.
@@ -622,7 +633,7 @@ As the party enters fully, the guardian rises from behind the altar:
 >
 > *He is armored in Germanic plate that has not rusted. His eyes are the color of old ice. He looks at the spear, then at you, then at the spear again.*
 >
-> *When he speaks, it is in a language three of you do not understand, and one of you -- the one with the highest Wisdom -- does, though you have never learned it:*
+> *When he speaks, it is in a language three of you do not understand (pre-Roman Belgic Germanic, a dialect with no living native speakers -- the character with the highest Wisdom understands it without knowing why), and one of you -- the one with the highest Wisdom -- does, though you have never learned it:*
 >
 > *"The bargain was broken. Not by you. But by your kind. I am still bound. You are not."*
 
@@ -700,26 +711,6 @@ If a character reaches for the spear:
 
 DC 14 Wisdom saving throw. On a failure: the character gains 1 level of corruption and is Shaken (cannot willingly release the spear until the start of their next turn). On a success: they resist, but the pull is real and they know it.
 
-## Scene 3: The Spear
-
-The **Spear of Mars** rests on a stone altar, surrounded by broken chains. It is eight feet long, made of black iron, covered in glowing red runes.
-
-**Mechanics:**
-- Anyone who touches it must make a DC 14 Wisdom saving throw
-- **Failure:** Visions of glory and conquest flood their mind. They gain 1 level of corruption (track this)
-- **Success:** They resist but feel its pull
-
-**Properties (if attuned):**
-- +2 magic weapon
-- Deals an extra 1d8 necrotic damage
-- Disadvantage on Wisdom saving throws
-- User becomes increasingly aggressive and paranoid
-
-**Roleplaying:** The spear whispers promises:
-- "You could be a hero"
-- "Rome will kneel before you"
-- "Your enemies will break like wheat"
-
 ## Scene 4: Return to the Surface
 
 As the party climbs out of the shaft, the night air hits them and then the shouting.
@@ -728,13 +719,15 @@ As the party climbs out of the shaft, the night air hits them and then the shout
 
 > *You hear him before you see him.*
 >
-> *Not a scream, not a song. A rising chant that rides the wind like sparks from a brazier. When you crest the shaft you see him framed by the principia's torchlight: a Gallic stone-hauler, shoulders like pillars, standing over three fallen legionaries.*
+> *Not a scream, not a song. A rising chant that rides the wind like sparks from a brazier. When you crest the shaft you see him framed by the principia's torchlight: a Gallic stone-hauler, shoulders like pillars, standing over three fallen legionaries. You know his name from the work gangs: Marius Coda, a reliable man until today.*
 >
 > *Each fist grips a gladius slick with fresh blood. He is barefoot on the flagstones, toes flexing, eyes rolled back until only the whites show. Breath pours out of him in clouds despite the summer night.*
 >
 > *"The spear calls, the spear drinks, the spear wants a champion." He does not shout the words. He lets them fall like lit coals.*
 >
 > *His head turns as though a wire hauls it. He looks to the party member holding the spear. His smile is wide enough to hurt.*
+
+**The three fallen legionaries:** Two are dead (Gaius Pullus, throat wound; Marcus Dexter, blunt trauma to the skull). One is alive: Aelius Rufus, a young signifer from the third contubernium, lying face-down with a shallow gash across his back. DC 12 Medicine (active: checking him before or during combat, costs an action or bonus action): he is breathing and can be stabilized. On a failure he is dying and needs a second check at the start of the next round. If stabilized, Aelius Rufus survives and appears in Session 2 as someone who owes the party his life and remembers what Marius said just before the killing started.
 
 **What he mutters between attacks:**
 - *"Do you feel it laughing?"*
@@ -754,7 +747,7 @@ The Berserker focuses exclusively on whoever carries the spear. If no one carrie
 - They are not immediate combatants. Do not make them attack unless the party directly threatens them.
 - If the Berserker is killed, the Cultists gain advantage on saving throws to resist the spear's aura for the next 24 hours: his death breaks the hold the spear had on them temporarily.
 - If the party subdues rather than kills the Berserker, the Cultists snap out of their trance when he is restrained and become terrified witnesses.
-- They are the first evidence that the spear's corruption spreads through proximity, not just touch. Note their names for Session 2.
+- They are the first evidence that the spear's corruption spreads through proximity, not just touch. Their names: **Titus Flavinus** (near the shaft, blade drawn but not raised) and **Gnaeus Peregrinus** (at the edge of the courtyard, hands clasped, eyes fixed on the shaft opening). Both appear in Session 2 as witnesses with fragmented memories of what they experienced.
 
 **Resolution options:**
 
@@ -769,14 +762,42 @@ The Berserker focuses exclusively on whoever carries the spear. If no one carrie
 
 Whatever happens, the fort's legionaries have seen enough. Quiet spreads through the courtyard as the crisis ends. Men look at the party, then at the wrapped spear, then look away.
 
-## Conclusion
+## Scene 5: The Reckoning
 
-The Legate demands the spear. The Augur begs them to destroy it. Centurion Varro looks to the party for guidance.
+The courtyard settles. The body of Marius Coda is on the flagstones or bound in a corner, depending on the party's choice. Fort legionaries have gathered at a distance, saying nothing, watching. Then the principia door opens.
 
-**Key Questions:**
-- Do they give the spear to the Legate?
-- Do they try to destroy it?
-- Does anyone attune to it?
+> *Corvinus does not run. A Legate does not run. He walks, and Tribune Lucius Aurelius walks two steps behind him, hands clasped behind his back, expression attentive.*
+>
+> *Corvinus looks at the spear. His eyes stay there for a moment too long. Then he looks at you.*
+>
+> *"You found it. Good. Give it to me and your bonus pay is doubled. Tonight."*
+
+**Corvinus's opening stance:** He is calm and authoritative. He does not acknowledge the bodies on the ground beyond a quick glance. He does not ask what happened. He already knows, or he suspects, and he has decided it does not matter. He wants the spear. His posture shows appetite before it shows relief.
+
+**Tribune Lucius during this scene:** Lucius does not speak first. He watches the party's faces, then the spear, then the party again. If asked directly for his opinion, he says: "This is the Legate's command to give." He does not support Corvinus. He does not contradict him. He is noting everything for a report that will reach Rome before the week is out.
+
+**Cassia Liviana's arrival:** She appears at the edge of the courtyard during the confrontation, not from the principia. She came a different way. She is out of breath. If she reaches the party before Corvinus gets the spear: she says, quietly, to whoever is nearest: *"Do not give it to him. He will use it. I have seen what that means."* If Corvinus sees her, he tells her flatly to return to the shrine. She does not move.
+
+**Resolution branches:**
+
+| Party choice | Corvinus's response | Tribune Lucius's note | Consequence |
+|---|---|---|---|
+| **Give the spear to Corvinus** | He takes it without touching it with his bare hands (he has a leather satchel ready). He thanks the party correctly, no warmth. He leaves. | Lucius watches Corvinus leave with the spear, then looks at the party one more time. Says nothing. Leaves. | The spear is in the Legate's custody entering Session 2. Cassia is in tears. This is the worst outcome for the campaign's divine stakes but a perfectly valid choice. |
+| **Refuse, offer to hold it themselves** | He escalates: "You are soldiers under my command. This is a direct order." DC 16 Persuasion to argue that the spear is too dangerous for untrained custody. On success: grudging arrangement; the party keeps it under his seal, locked in a designated location. On failure: he invokes rank and takes it anyway unless Varro intervenes. | Lucius takes a note. He is filing something. | The party retains custody. Cassia is cautiously hopeful. Varro will back the party privately; he cannot oppose Corvinus openly. |
+| **Refuse outright** | He invokes military discipline. DC 18 Persuasion, no Charisma substitute. If they cannot make the case: he calls the two Praetorians at his door. Violence is possible but inadvisable. | If it comes to force: Lucius steps in and says, quietly, "Legate. Not tonight." This is the one moment where Lucius acts. It is not sympathy for the party. It is the Senate's agent preventing a scene that would require an embarrassing report. | The standoff ends inconclusively. Corvinus orders the party confined to barracks pending review. Varro lets them out in an hour and says nothing about it. |
+| **Destroy or hide the spear** | If they destroyed it in the vault: Corvinus does not believe them. He sends soldiers down to check. They find the altar, the Wight's remains, and no spear. Corvinus is cold and furious. | Lucius is still watching. | The spear's physical form may be destroyed. Its divine presence is not. Something follows the party out of the vault that is harder to track than an iron shaft. This pays off in Session 4. |
+
+**Cassia's private word (if the party created any opportunity to speak with her alone before session end):**
+
+> *"The bargain was broken the moment your Legate put a shovel in that ground. You didn't break it. You walked into the middle of someone else's debt. Whatever you chose tonight -- give it, keep it, lose it -- Mars noticed. A god's attention is not a comfortable thing to have."*
+
+**Centurion Varro's closing (always, regardless of outcome):**
+
+He finds the party privately, after Corvinus is out of earshot. He has a wax tablet with nothing written on it, which he holds as if it says something important.
+
+> *"I'm going to need your account of what happened down there. The real one, not the version Corvinus gets. Take tonight. Write nothing down. Come find me in the morning."*
+
+He does not say what he suspects. He does not tell them what he will do with the information. But the way he looks at the spear (or the space where the spear was) makes it clear: Varro has been thinking about this longer than tonight.
 
 **Advance to Level 4**
 
@@ -809,6 +830,24 @@ Track corruption levels (0-5) for any character who touches or attunes to the sp
 - **Level 3:** Must succeed DC 12 Wisdom save to retreat from combat
 - **Level 4:** Must succeed DC 14 Wisdom save to avoid attacking allies when bloodied
 - **Level 5:** Fully corrupted, becomes NPC under DM control
+
+### Spear of Mars: Attunement Properties
+
+The spear is an artifact, not a magic weapon in the standard sense. Attunement requires a short rest holding it. It will not refuse: it does not resist the carrier. That is the danger.
+
+**While attuned:**
+- +2 bonus to attack and damage rolls (functions as a +2 magic weapon)
+- On a hit, deals an extra 1d8 necrotic damage as the god's hunger bleeds through
+- Disadvantage on all Wisdom saving throws (the spear's attention is always partly on the carrier)
+- The carrier becomes increasingly aggressive and paranoid over sessions, following the corruption track
+
+**The spear whispers (use sparingly, one per scene the attuned carrier is stressed):**
+- *"You could be a hero. A real one. Not what they made you."*
+- *"Rome will kneel before you if you let it."*
+- *"Your enemies will break like wheat if you stop holding back."*
+- *"Give it to no one. No one deserves it but you."*
+
+The whispers are not instructions. They are the carrier's own desires reflected back, amplified. A character who would never want conquest hears something specific to their private ambitions. Match the whisper to the player's character concept.
 
 ### Aquilifer Vacancy: Active From Scene 1
 
@@ -884,7 +923,7 @@ The player states they want to pass without contact. On success: silent passage.
 
 *Stealth DC 13 (active: group descent through the shaft as quietly as possible):*
 
-If the party chooses to descend carefully and quietly, run a group Stealth check. Success means the Animated Armor in the Vault does not activate until the party crosses the threshold of Chamber 3 -- they have one round to observe before it moves. Failure means a sound carries and the armor is already positioned near the archway when they arrive.
+If the party chooses to descend carefully and quietly, run a group Stealth check. Success means the Wight in the Altar Chamber does not detect the party until they cross the altar threshold: the two Shadows hold position, and the party has one round to observe the guardian's stance before it moves. Failure means sound carries through the Runic Corridor (even if they navigated it correctly) and the Wight is already standing when they arrive, with the Shadows flanking the entrance archway. They do not attack immediately either way -- the exit condition still applies -- but a failed Stealth removes the party's ability to assess the room before being assessed.
 
 *Intimidation DC 13 (active: centurion-voice command at the frenzied worker, before initiative):*
 
