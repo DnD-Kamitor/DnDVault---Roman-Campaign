@@ -23,6 +23,9 @@ The Roman legion is the most effective military force in the world and you are p
 - **History proficiency** — The three retired legion numbers (XVII, XVIII, XIX) and why they were never reused; the watchtower fire-signal code for your sector of the frontier.
 - **Athletics proficiency** — Formation timing by instinct -- you know when the line is about to break before it breaks; you can read a march's pace and know how many miles remain before the unit's legs give out.
 - **Strength 14+** — The weight of a full kit and how it distributes across the body after six hours; you can read a soldier's conditioning from across a courtyard by the way he moves under load.
+- **Optio role** — You command century-by-century coordination. You know what the centurion is about to order before he orders it because you have felt the line's condition. You read the temperature of discipline: when the right flank is getting tired (their spacing loosens first), when the left flank is holding too hard (the shields begin to tremble), when fear is spreading (it travels along the front line like ripples on water). A century without an optio is a century that dies when pressure increases, because there is no one to feel the line and adjust before the breaking point arrives.
+- **Tesserarius role** — You run the watch rotations and you know something no one else tracks: the mathematical point of maximum danger. A soldier who has been awake for 18 hours straight is no longer useful in formation. A relief that is late by 30 minutes can cost you a century. You know which months have the most attempted Germanic crossings: always when there is a new watch cycle and the timing is temporarily off. A commander who understands rotation schedules can predict Germanic attack windows, because the tribes have been watching the same patterns for eighteen months.
+- **Aquilifer role** — The eagle standard coordinates the legion in ways that voice commands cannot. When the legion moves, the eagle moves, and every soldier watches it from peripheral vision without thinking about it. A commanding officer gives an order but the eagle's position tells soldiers what he actually means. The eagle's movement language: a 45-degree shift means hold here despite pressure; a full retreat means full retreat, not a consolidation. The eagle speaks when officers cannot be heard in battle noise. When you carry it, you are speaking Mars's command language.
 
 <details>
 <summary><strong>DC 13 Intelligence (History) — Recalling standard legion structure, chain of command, and pay</strong></summary>
@@ -67,6 +70,20 @@ Germanic tribes have learned to use Roman formation rigidity as a weapon. Lure t
 
 </details>
 
+<details>
+<summary><strong>DC 14 Athletics (Optio only — active: observing soldiers in formation before or during combat) — Reading the line before it breaks</strong></summary>
+
+The century holds together until it does not, and the transition is measurable. Shield spacing closes by one foot when fear starts spreading. Breathing patterns change at the precise moment morale transitions from *can hold* to *cannot hold*. In combat, you can call out the moment when relief is needed with 90% accuracy before the line breaks. Use this: give the Optio player the information before the break occurs, and let them decide whether to act on it.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Intelligence (History) (Tesserarius only — active: analyzing the current watch rotation schedule) — The dawn vulnerability window</strong></summary>
+
+The Germanic tribes have been watching this fort's watch rotation for eighteen months. Your relief changes are timed and your patrols are predictable. There is a 40-minute window each dawn when the northeast section is at skeleton crew: the overnight watch has not been fully relieved and the day watch has not fully formed up. The tribes will attack during that window. A watch officer who understands this can break the pattern before the tribes are ready. This check can only be made if the character has had access to the duty roster.
+
+</details>
+
 ---
 
 ## Roman Religion
@@ -79,6 +96,8 @@ The gods are real and they are paying attention. You have known this since child
 
 - **Religion proficiency** — All twelve major gods by name and specific jurisdiction; which festivals require active observance versus passive acknowledgment; what constitutes a valid vow and what breaks one.
 - **Wisdom 14+** — You have noticed when the gods are paying attention. You know the difference between a bad omen and ambient misfortune. The feeling is physical: a change in pressure, a wrongness in the air. You may not be able to explain it but you have never been wrong when you have felt it.
+- **Sacerdos role** — The theological difference between state religion and private vows matters at the table. State sacrifices are formal, documented, and legally binding on the unit. Private vows are personal, undocumented, and binding on the soldier's soul alone. A soldier who has made a private vow to Mars in exchange for victory is a soldier who will not retreat under any circumstances, because retreat violates his vow. Tracking which soldiers have active private vows tells you which soldiers are most dangerous to use as a rearguard and most reliable as a first line. The Sacerdos is the only person soldiers tell about private vows.
+- **Signifer role** — Treason charges include automatic confiscation of the accused's property and redistribution to accusers and the treasury. This creates financial incentives for false accusations in Rome's legal system. A soldier who knows this understands that making an accusation against a wealthy officer is not just a legal act: it is a financial opportunity. The Signifer manages unit savings and knows exactly how much each officer's confiscated estate would be worth. This knowledge is dangerous. Use it carefully.
 
 <details>
 <summary><strong>DC 13 Intelligence (History) — Recalling the Roman pantheon, do ut des practice, and augury basics</strong></summary>
@@ -119,6 +138,13 @@ Technical augury: the *ex tripudiis* method (sacred chickens presented with grai
 
 </details>
 
+<details>
+<summary><strong>DC 14 Intelligence (History) (Signifer only — active: evaluating the financial motive behind any accusation or counter-accusation in a political dispute) — The confiscation calculus</strong></summary>
+
+Property confiscation from a convicted officer flows first to the treasury, then to accusers by a formula set in the Sullan proscription laws. A Signifer who knows the accused officer's financial standing can calculate whether an accusation is politically or financially motivated. On success: identify the financial motive clearly. On failure: you know the motive exists but cannot determine its size.
+
+</details>
+
 ---
 
 ## Mars: Campaign-Specific Knowledge
@@ -131,6 +157,9 @@ You are a soldier serving on the Germanic frontier in the month of April. Mars i
 
 - **Religion proficiency** — The exact words of the *Quinquatria* weapon blessing; the correct form of address when speaking to Mars before combat; the difference between Mars *Gradivus* (the marching god, god of disciplined war) and Mars *Ultor* (the avenger, the punitive aspect).
 - **Soldier background** — What Mars's favor feels like inside a formation. You have fought in his name enough times to recognize when the ground changes under your feet; when the air thickens before a charge; when you know with certainty that the line will hold. Whether this is divine favor or battle-calm, you do not analyze it. You use it.
+- **Flamen Martialis role** — Mars on the frontier is not one god. He is three aspects: *Mars Protector* (of the fort's boundaries), *Mars Awakener* (of the warrior's clarity before battle), and *Mars Judge* (of whether a death was honorable or shameful). A soldier who prays to all three is not being redundant: he is acknowledging that Mars watches the same act differently depending on whether it is defensive, offensive, or conclusive. You perform all three rites before major operations. Most soldiers do not know there are three.
+- **Aquilifer role** — The eagle standard is Mars's material anchor point at Fort Vindolanda. When you carry it, you carry the god's attention concentrated into one object. This is not metaphor. Soldiers can feel it. The eagle is why men hold formation when they would otherwise break. The eagle is why a unit with no commanding officer can still function. The eagle is what Mars looks at when he judges whether the soldiers deserve his favor. The spear currently sealed in the vault is a second anchor point, older than the eagle, and they cannot coexist in the same space without one dominating the other.
+- **Haruspex role** — You read signs from Mars differently than from other gods. Jupiter speaks through patterns and omens. Mars speaks through blood and violence: the way a wound bleeds, the direction a spear falls, what animals refuse to eat or approach. The most accurate augury for Mars is to observe what he does *after* a violence, not what precedes it. A corpse tells you what Mars decided about that death. When the camp dogs all died the same night, that was Mars's verdict on what was sealed below. He was not cursing the camp. He was issuing a ruling.
 
 <details>
 <summary><strong>DC 13 Intelligence (Religion) — Recalling Mars's symbols, sacred month, and relationship to Rome's founding</strong></summary>
@@ -166,6 +195,20 @@ There is a spear kept in the *Regia* in Rome -- the old royal house near the For
 The spear you are looking at right now is not the one in Rome. What that means about this one -- who made it, what it was for, what it is owed -- is exactly the question you do not yet have the information to answer.
 
 In older Roman religion, before the Republic, Mars protected fields as well as armies. The *ambarvalia* (the processional rite where farmers walked their field boundaries invoking Mars) survives as a trace of this. The older Mars did not distinguish between the violence of war and the violence of agriculture: clearing land, protecting borders, driving off disease. The frontier version of Mars, the one soldiers pray to out here where civilization ends, is closer to the original than the civic version in Rome. Out here, he is not a concept. He is a presence on the tree line.
+
+</details>
+
+<details>
+<summary><strong>DC 13 Intelligence (Religion) (active: examining the relationship between the vault excavation and the subsequent omens) — What the omens are reporting</strong></summary>
+
+The frontier boundaries are Mars's domain. The fort's east gate, the forest boundary, and any water that flows into the fort are his sacred points. The current excavation under the *principia* violated the east gate boundary without propitiation. The dogs died not as a curse but as a signal: the boundary violation has been registered. The omens (black livers, reversed birds, shadows without bodies) are not warnings of things to come. They are reports of what has already been broken. Understanding this changes what the party should do: the correct response is not to undo the excavation but to perform the propitiation that the excavation skipped.
+
+</details>
+
+<details>
+<summary><strong>DC 16 Intelligence (Religion) (Flamen Martialis only — active: examining the spear in the altar chamber) — The contract terms</strong></summary>
+
+The spear carries divine attention that will recruit whoever claims it, whether they consent or not. Taking the spear without the correct propitiation is not theft. It is accepting a contract with Mars that you did not read first. The contract terms are: use me in battle and I will make you formidable; become formidable and you will begin to need me; need me and you will never be able to set me down. A Flamen Martialis who understands this before the party takes the spear can potentially negotiate the terms. The window closes when the spear is first lifted from the altar.
 
 </details>
 
@@ -335,6 +378,8 @@ You have watched the *medicus* work. If you have served long enough, you have he
 
 - **Medicine proficiency** — Wound fever signs before they become obvious to non-specialists (the smell change, the specific quality of elevated skin temperature, the eye response); the field hospital triage hierarchy (dying vs. treatable vs. walking wounded) and what each category actually means in resource allocation terms.
 - **Herbalist's Kit proficiency** — Yarrow, willow bark, and hemlock by sight, smell, and texture in the field; the difference between a foraging kit assembled for cooking and a kit assembled for medical or other purposes; which plants in this region are dangerous regardless of quantity.
+- **Capsarius role** — You make the triage decision under fire, which means you have made peace with something most soldiers have not: the correct choice is not always the most morally satisfying one. A soldier with a survivable wound who has stopped fighting costs the battle more than a soldier with an unsurvivable wound who keeps fighting until he cannot. You prioritize the wounded by their ability to return to action, not by the severity of their suffering. This is doctrine. It is also the thing that combat medics do not discuss in peacetime, because peacetime medicine runs differently. The Capsarius's triage decision is always correct; the difficulty is explaining it afterward.
+- **Medicus role** — Plague wounds behave differently than normal wounds during plague season. The specific fever pattern before rash appearance is a 24-72 hour window during which infected soldiers are already contagious but show no visible signs. A Medicus who knows what to look for in that window can identify plague exposure before the unit is compromised. The early signs: a specific pattern of sweat-timing (heavy sweating in mid-afternoon rather than during exertion), a slight yellowing at the corners of the eyes, and an unusual craving for cold water. None of these individually indicate plague. All three together, in an otherwise healthy-appearing soldier, indicate the early window.
 
 <details>
 <summary><strong>DC 13 Wisdom (Medicine) — Recalling field hospital procedure, common medicines, wound infection signs, and poisoning recognition</strong></summary>
@@ -373,6 +418,20 @@ The law that governs this: the *Lex Cornelia de sicariis et veneficis*. Possessi
 
 </details>
 
+<details>
+<summary><strong>DC 15 Wisdom (Medicine) (Medicus only — active: examining any soldier who has been near the vault excavation for more than four hours) — Vault exposure versus corruption onset</strong></summary>
+
+The vault's environment affects the body in specific ways that mimic early-stage plague symptoms. The cold damp air creates the sweat pattern; the organic smell creates the eye yellowing; the low-light extended period creates the water craving. A Medicus who examines vault workers can distinguish between vault-exposure symptoms and early plague. This is important in Session 1: after the spear is retrieved, several soldiers near the vault will show symptoms. The Medicus can determine whether this is environmental (vault exposure) or divine (corruption beginning). The distinction changes the treatment protocol.
+
+</details>
+
+<details>
+<summary><strong>DC 13 Wisdom (Medicine) (Capsarius only — active: treating any wound in the northeast barracks near the spring) — The spring's coagulant property</strong></summary>
+
+Wounds in this specific location heal faster than expected. Not dramatically: roughly 20% faster than standard tissue repair. The Capsarius notices this because they track healing progress and it is measurably off. The cause is the spring water's mineral content, which has a mild coagulant property. This is a practical advantage: patients in this wing of the barracks can return to duty one day sooner than standard recovery. The Capsarius is the only one who will notice this without someone pointing it out, because they are the only person who tracks healing rates.
+
+</details>
+
 ---
 
 ## Reading Divine Signs
@@ -385,6 +444,7 @@ Every Roman soldier watches three things without being taught to: where lightnin
 
 - **Religion proficiency** — The augury bird system by reflex (right is favorable, left is not; eagles favorable, owls ambiguous, ravens unfavorable; wolf direction relative to the camp); the three basic categories of *haruspicina* that any observer picks up from watching enough sacrifices.
 - **Wisdom 14+** — You notice sign-patterns that others let pass as coincidence. You know when a day feels wrong before anything has happened -- a quality of light, a stillness, the behavior of animals. You have learned to pay attention to this. You have not always been right but you have been right often enough.
+- **Haruspex role** — You read signs under pressure differently than you read them in calm. The fear response sharpens some perceptions and dulls others: under pressure, you see more blood detail and less environmental detail, because your body is primed for immediate danger. You have learned to compensate by deliberately slowing your breathing and looking away from the most obvious sign to see what is in your peripheral vision. A Haruspex who uses this technique can read omens correctly in combat or crisis conditions that would compromise a less-trained diviner. The technique requires one full round of deliberate calm before reading: a round where you do nothing else.
 
 <details>
 <summary><strong>DC 13 Intelligence (Religion) — Recalling omen categories, bird signs, and the logic of divine communication</strong></summary>
@@ -629,6 +689,9 @@ Roman soldiers on the frontier encounter Germanic religion as a practical realit
 
 - **Survival proficiency + Insight proficiency** — Pattern recognition about when Germanic behavior is religiously motivated versus tactically motivated; the specific signs that a Germanic warrior has taken a death-vow (they are not seeking to survive the engagement).
 - **History proficiency** — The basic Germanic divine hierarchy as Romans understand it: the one-eyed wandering god (Wotan), the thunder god (Donar), the earth goddess who is carried in a cart during her seasons.
+- **Explorator role** — You have tracked Germanic peoples beyond the frontier and you know what a *völva* looks like in the field. She does not move like a warrior (with readiness) or a trader (with attention to goods). She moves with territorial awareness, as if the land itself reports to her. Where she stops, a tribe has made a decision. Where she camps, a tribe is about to change direction. A column moving with a *völva* has been prophesied into motion. Following her movement tells you the tribe's theological state: has she blessed the raid? Then the raid will happen. Has she refused to accompany it? Then it will not, regardless of what the warrior-council decided.
+- **Librarius role** — Germanic rune-writing is not decoration and not written language in the Roman sense. Each rune is simultaneously a sound, a letter, a concept, and an act of invocation. When you see a rune carved, you are seeing something that was called into being by being written. The difference between a rune written in haste and a rune written with ceremony is the difference between a mark on stone and an oath sworn to the land. The OTHALAN rune in the vault's hidden alcove and flooded gallery was carved with ceremony: it is not a label, it is a signature on a contract.
+- **Haruspex role** — Germanic divination works, but differently than Roman augury. The tribes watch silence, blood patterns in snow, the direction a dying animal turns its head. Their methods appear unreliable to Romans because they trust the land to speak directly without ritual mediation. A Haruspex who has studied Germanic methods can interpret Germanic signs, but it requires surrendering the Roman framework. Germanic divination is a conversation; Roman augury is a formal procedure. Neither is more accurate. They are reading the same divine presence through different instruments.
 
 <details>
 <summary><strong>DC 13 Wisdom (Insight) — Recognizing Germanic religious behavior: battle frenzy, sacred grove danger, and the völva's authority</strong></summary>
@@ -660,6 +723,20 @@ The standing stones in the grove are not decoration. They are a long-term *seið
 The spear and the grove are connected by the original sealing oath. This is the specific thing Thusnelda insists on: not that the spear must be destroyed, but that it must be *released correctly*. The divine attention the spear carries does not dissipate if you simply break the physical object. It attaches to whoever broke it. They become Mars's agent without consent. The grove provides the context in which the spear can be returned to its owner without residual effect. That is what the ritual is for.
 
 *Seiðr* is specifically a women's art in the dominant Germanic tradition. The social cost for a man who performs it is significant and categorized differently than simple stigma -- it is understood as a blurring of social category rather than a moral violation. This context explains aspects of Thusnelda's authority that Roman soldiers find confusing. She is not a priestess, not a chief, not a wife. She is something that does not map onto Roman social categories, which means trying to treat her like any of those things is a mistake.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Wisdom (Insight) (Explorator only — active: observing the völva's position relative to a tribal column) — Reading the tribe's true intention</strong></summary>
+
+The *völva*'s camp position relative to the army tells you what she has decided. If she camps at the front with the warriors: she has blessed the operation. If she camps behind the main column: she is a neutral observer. If she camps behind the supply train: she disapproves but will not openly defect. If she refuses to camp with the column at all: she is actively opposed. Following her is following the tribe's true intention beneath what the warriors say they are planning.
+
+</details>
+
+<details>
+<summary><strong>DC 16 Intelligence (History) (Librarius only — active: examining any rune carving and comparing it to known Germanic inscription styles) — Personal mark versus binding oath</strong></summary>
+
+The difference between a personal rune-mark and a binding oath-rune is in the geometry. A personal mark is carved swift and shallow; it is a signature. A binding oath is carved deliberately, deeply, often with pauses between strokes where the carver stopped to think or pray. The OTHALAN rune in the vault is the signature of someone making a binding oath on ancestral land. It is not a property marker. It is a legal seal, and in Germanic law, the land itself is a party to it.
 
 </details>
 
@@ -728,6 +805,9 @@ The Romans have been at this location for forty years. The Germanic tribes have 
 
 - **History proficiency** — The official founding of this fort; its role in the frontier defense network; the names of the previous commanding officers (a wooden plaque in the principia lists them).
 - **Soldier background + Investigation proficiency** — Construction oddities that the engineers never documented: a drainage channel that routes around a section of ground rather than through it; a gate position that does not optimize sight-lines; a corner tower that is two feet thicker than the other three.
+- **Faber role** — You can read construction intent in tool marks. The vault entrance passage shows tool marks that become more careful as they went deeper: the workers were responding to something that made them cautious. The Binding Chamber's chains show regular maintenance marks (re-tensioning, cleaning, minor repairs) over centuries. Someone understood metallurgy well enough to keep these chains functional for three hundred years. That is not passive preservation: that is active upkeep, performed on a schedule, requiring specific knowledge of iron preservation under underground moisture conditions. The Faber who reads these marks understands that the vault has been maintained, not abandoned.
+- **Frumentarius role** — The supply route that crosses near Vindolanda has been there for two hundred years. Its longevity is not Roman planning: it follows a pre-Roman Germanic trade route that the Romans found already in use when they arrived. The tribes near Vindolanda have been coming to this area for generations before the fort existed. The fort was built on a sacred crossroads that the tribes used for trade and offerings. Vindolanda is not an imposition on empty land. It is a Roman administration placed over an existing Germanic sacred and commercial site. This explains why the tribes have not destroyed the fort in eighteen years: the fort is on their holy ground. They want Romans to leave, but they do not want the site damaged.
+- **Custos Armorum role** — You know how artifacts behave when they carry divine aura, because you have catalogued enough military equipment to recognize when something stored near a divine object degrades differently. The spear currently sealed in the vault will corrupt standard weapons kept in the same room. Iron rusts faster near it; leather cracks; wood warps. This is not metaphor: it is a practical storage problem. If the party brings the spear above ground, it cannot be stored in the armory without degrading everything around it. The Custos Armorum is the only person who will notice this immediately and know what it means for long-term storage.
 
 <details>
 <summary><strong>DC 13 Intelligence (Investigation) — Noticing construction anomalies: the pre-Roman structure, the spring's true sealing reason, and the weakened palisade section</strong></summary>
@@ -761,5 +841,19 @@ The alignment tells you what they valued: the midwinter sunrise shines through t
 The stone cap the Roman engineers placed over the spring sits on top of an older, better-fitted cap in a different stone type. Someone sealed this spring before Rome arrived. The Romans sealed it again without knowing it had already been sealed. Whatever they sealed, they had reasons.
 
 A character who performs the acknowledgment rite for the *genius loci* and specifically asks what is sealed beneath -- DC 16 Religion, requiring this DC 17 History check to know what to ask -- receives one answer: *"Not for long."*
+
+</details>
+
+<details>
+<summary><strong>DC 15 Intelligence (Investigation) (Faber only — active: examining the vault entrance passage construction) — Where the workers became afraid</strong></summary>
+
+The tool marks on the walls show the engineers' confidence decreasing as they went deeper. The upper section (Roman construction) is cut with standard military precision. The lower section (Germanic and pre-Roman construction) has been worked more carefully, with cuts made in shorter strokes and repositioned more often. The workers were responding to something. They found the pre-Roman structure and became cautious. The exact point where the caution begins is approximately forty feet down, before the T-junction. Something at that depth changed how they worked.
+
+</details>
+
+<details>
+<summary><strong>DC 14 Intelligence (History) (Frumentarius only — active: evaluating the strategic value of the current posting) — Why the peace is fragile</strong></summary>
+
+Vindolanda sits on a pre-Roman trade crossroads. The tribes use three routes that converge here: the northern coastal route, the inland hill-pass route, and the valley river route. Controlling Vindolanda means controlling all three. Any tribe that wanted to consolidate economic power in this region would need to either own or destroy Vindolanda. The current peace (eighteen years without a major assault) is not Roman military superiority. It is an economic standoff: the tribes need the trading crossroads functional, and a destroyed fort would be replaced with a more heavily defended one. This peace is conditional and fragile. It ends when a tribe decides the crossroads is worth the cost of a full siege.
 
 </details>
