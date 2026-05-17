@@ -5,3 +5,7 @@ character_sheet.pdf
 
 **/*.quarto_ipynb
 Books/
+
+# Large reference campaign files (local only — too big for GitHub)
+Maptool/campaigns/5e/Simple_5e_LMOP_v2.1.0.cmpgn
+Maptool/campaigns/5e/demo5e.cmpgn
