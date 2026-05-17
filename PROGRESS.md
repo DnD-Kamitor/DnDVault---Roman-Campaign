@@ -31,6 +31,7 @@ Last updated after each completed task. Check here to see current status.
 
 ### Other queued tasks
 
+- [ ] **Regional history for modern audience** — Section (player_tome.qmd or new file) explaining what does NOT exist yet in 175 AD for players who think in modern geography: Venice (founded ~421 AD), Paris as a major city, the Rhine as a national border, etc. Framed as "what your character's world looks like" — what cities are there, what are the major routes, what do the frontiers mean. Triggered by player needing context for their Carthaginian/North African background.
 - [ ] **Em-dash sweep** — Pre-existing prose em-dashes in content written before this session (not the structural `**Bold** —` gate format, which is kept)
 - [ ] **Task D** (roman_tactics.qmd) — Pilum bending mechanics sidebar, coronae section, auxiliaries entry
 - [ ] **Task E** (bestiary.qmd) — Lemures entry with Roman context, May festival mechanics, bean ritual
