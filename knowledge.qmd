@@ -86,6 +86,87 @@ The Germanic tribes have been watching this fort's watch rotation for eighteen m
 
 ---
 
+## Life on the March
+
+*Ability checks: Wisdom (Survival), Strength (Athletics), Wisdom (Animal Handling)*
+
+A march is not travel. It is a sustained physical system that either holds together or does not, and the difference between a unit that arrives ready and one that arrives degraded is entirely in the management of the bodies carrying the load. You know this the way you know how to breathe: it is not knowledge you recall, it is knowledge you inhabit. The pack on your back is 80 lbs of kit, food, and tools. You have carried it for six hours and you will carry it for six more. How you feel in the seventh hour depends entirely on what you did in the third.
+
+**What you know without a check:**
+
+- **Survival proficiency** — Water sources by terrain type; the two-hour warning sign of incoming weather on the frontier (cloud formation over the hills before the pressure drop); which animals indicate safe foraging ground and which mean stay away; how far a column can march before horses need water (every four hours of march) versus men (every six hours under moderate load).
+- **Athletics proficiency** — How long a soldier can run in full kit before becoming combat-ineffective (roughly 400 yards at combat pace); the maximum load a soldier can carry for 20 miles without degrading performance the next day (standard kit is 80 lbs, hard limit is 110 lbs before injury accumulates); how to identify a man whose legs are about to fail before he falls out of formation.
+- **Animal Handling proficiency** — The signs of a horse about to throw its rider; how to calm a pack animal spooked by combat noise; the difference between a horse that is tired and a horse that is injured in a way that will worsen with continued movement.
+- **Constitution 14+** — You know your own physical limits exactly: how much cold you can absorb before your hands stop working reliably, how many hours without sleep before your threat assessment becomes unreliable, the exact moment when you shift from tired to dangerous to yourself and others. You use this to manage your margin in the field, and you can read the same limits in the soldiers around you.
+
+<details>
+<summary><strong>DC 13 Wisdom (Survival) — Locating water, food, and shelter on the Germanic frontier in spring</strong></summary>
+
+The frontier north of the Wall in April is early spring: ice in the mornings, mud by midday, cold nights. Water is abundant but contaminated at low points where animals and human settlement concentrate; clear running water on higher ground is safest. Foraging: young nettles (edible, nutritious), wood sorrel, early ramp (wild garlic), all identifiable. Dangerous: white-topped plants in damp ground (hemlock family); red berries in clusters before leaves open.
+
+Shelter: Germanic longhouses in cleared areas may be abandoned rather than empty; they are warm but occupied territory. A shallow depression on the south side of a large boulder will be degrees warmer than the surrounding ground overnight. A spruce grove with dense canopy is warmer and drier than open forest at the same elevation.
+
+Speed of assessment: a soldier with Survival proficiency can evaluate a campsite for water access, shelter quality, and defensive sightlines in under five minutes. Without proficiency, the same assessment takes 30 minutes and misses roughly half the relevant factors.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Wisdom (Survival) — Reading terrain for tactical advantage: where ambushes are laid, where a column is most vulnerable</strong></summary>
+
+Germanic tribes prefer to attack at river crossings (ground is channeled, retreat is limited, footing is uncertain), at forest choke-points where roads narrow between treelines (the kill zone is pre-set), and at the bottom of descents where momentum carries a column into a prepared position before it can react. Flat, open terrain at noon carries almost no ambush risk. Dawn or dusk at any choke-point carries high risk.
+
+You can read a road ahead for ambush probability from 300 yards if visibility is clear. The indicators: no bird activity in the tree line (birds don't flush if something has been still there long enough), broken vegetation at knee height on both sides of the road (someone moved through recently), a natural feature on one or both sides that would provide cover for a waiting warband.
+
+The specific ambush position to avoid: the curve where a forest track bends and the following section cannot be seen until you round the bend. Germanic warriors favor the concave side of a bend in exactly the way Roman soldiers are trained to watch the convex side. They know what Roman doctrine teaches.
+
+</details>
+
+<details>
+<summary><strong>DC 17 Wisdom (Survival) — Tracking a specific warband by their sign: composition, intent, and direction</strong></summary>
+
+A warband leaves specific traces that tell you their composition and intent. Heavy boot pressure on the leading edge of each print: warriors at pace, not foragers. Disturbed bark on left-hand trees (a Germanic directional custom: left-side marks indicate territory entry, right-side marks indicate exit): this group was inbound, not returning. No fire sites visible along the route: either fast movement or they knew you would find this path.
+
+A warband that moves without fire for two days is operating under one of two conditions: a *völva* has told them no fire (theological instruction, meaning a specific mission is in progress), or they are in a hurry and afraid of being located. Both mean they have a specific target. The composition tells you more: a group with one light print pattern among heavier ones has a scout element integrated with the main body. A group with uniform print depth has sent its scouts ahead separately, which means the scouts will be at the target before you arrive.
+
+The useful calculation: how old is the trail? Compressed vegetation re-lifts at predictable rates in this climate; a trail in mud shows weather erosion after six to eight hours of rain. If you can estimate when they passed, you can estimate where they are now.
+
+</details>
+
+<details>
+<summary><strong>DC 14 Strength (Athletics) — Arriving combat-ready after a forced march</strong></summary>
+
+A standard military march covers 20 Roman miles in five hours. A forced march covers 30 miles in the same time but costs: arrive with legs compromised, first ten minutes of combat performance degraded (disadvantage on Strength (Athletics) checks for the opening engagement), recovery time roughly 30 minutes of rest.
+
+A soldier who manages the transition can arrive ready: walk the last mile rather than run it; eat the remaining rations at the 25-mile mark rather than at the end; arrive with ten minutes of controlled breathing before contact. This is not common knowledge. Most soldiers run when told to run and fight when told to fight. The ones who arrive ready have learned the management through hard experience.
+
+Mechanical note for the GM: a character with Athletics proficiency who declares forced march management as their action for the last mile of travel arrives without the disadvantage penalty. Characters without proficiency who declare it succeed on DC 14 Athletics or arrive degraded regardless.
+
+</details>
+
+<details>
+<summary><strong>DC 16 Strength (Athletics) — Exceptional physical feats under field conditions: scaling walls, forcing doors, carrying a downed soldier</strong></summary>
+
+Scaling a standard Roman fort wall (15 feet, smooth stone) without equipment: DC 18 Athletics. With a rope thrown from inside: DC 12. A damaged section with exposed stonework: DC 14. Fort walls are designed to be unscalable from outside and climbable from inside in emergency; if you know where the interior hand-holds are carved into the stone on the interior face, inside-to-outside is possible at DC 13. This interior knowledge requires having served at this specific fort for at least one season.
+
+Carrying a downed soldier in full kit: 200 lbs or more with equipment. Counts as heavily loaded. You can carry them 30 feet per round at half movement speed. Athletics DC 12 to maintain for more than 5 rounds; DC 16 to run with them. On a failed check you drop to a walk; you do not drop the person.
+
+Forcing a standard Roman gate under fire: the gate is designed to resist, not to be impenetrable. The weak point is the bar mechanism, not the planks. A character who knows this targets the bar housing rather than the door face, reducing the DC from 20 to 16.
+
+</details>
+
+<details>
+<summary><strong>DC 13 Wisdom (Animal Handling) — Managing military horses and pack animals in stressful conditions</strong></summary>
+
+Roman military horses are trained to tolerate battle noise, but specific triggers still cause problems: the smell of blood in quantity (not a few drops, but a freshly slaughtered animal or an active battlefield); sudden darkness after bright light; the specific sound of Germanic war-horns, which have a different timbre from Roman instruments and which the horses have not been systematically conditioned against.
+
+Managing a spooked horse under fire: DC 13 Animal Handling, with disadvantage if you are also in combat. Success: the horse settles in one round and can be used normally. Failure: the horse bolts. DC 15 Athletics to stay mounted. On a failed Athletics check you are dismounted and the horse runs; it will stop within 300 feet if the initial panic stimulus is no longer present.
+
+Pack mule versus warhorse response: mules are more stubborn and harder to spook initially, but once spooked they are significantly harder to calm than horses. A mule that has decided to stop stops. A mule that has decided to bolt bolts and does not respond to reins. Experienced handlers know not to apply sudden pressure to a mule that is on the edge; redirect rather than restrain.
+
+</details>
+
+---
+
 ## Roman Religion
 
 *Ability check: Intelligence (History) or Wisdom (Insight)*
@@ -363,6 +444,71 @@ Legal procedure for treason charges: accusation, formal arrest, Senate trial (fo
 The mechanism for bringing a senator down through Roman law is available but requires specific pieces: evidence presentable in a formal proceeding, at least one credible witness willing to testify publicly, and access to either the Senate itself or the Emperor's direct judicial authority. A Praetorian arrest without prior senatorial consent is constitutionally irregular and creates political risk for whoever orders it. This is not impossible; it is just complicated enough that Brutus has calculated nobody will attempt it while he controls the narrative.
 
 If the party reaches Session 5 with evidence, a witness, and some form of imperial access -- they have a path that does not require killing him. Whether they want to take it is a different question.
+
+</details>
+
+---
+
+## Roman Military Authority
+
+*Ability checks: Charisma (Intimidation), Charisma (Persuasion), Charisma (Performance)*
+
+Command is a physical act before it is a social one. The centurion's voice that carries 200 yards across a battlefield without shouting is not a gift. It is a technique, built over years of standing in front of men and being responsible for whether they live or die. You know which end of authority you occupy. You know how to give an order that will be followed and how to give one that will be quietly ignored. You also know that rank alone does not produce obedience on the frontier: the soldiers here have seen enough to know the difference between an officer who knows what he is doing and one who does not. They follow the former. The latter they protect from their own incompetence, which is not the same thing.
+
+**What you know without a check:**
+
+- **Intimidation proficiency** — The specific display behaviors that Roman military authority uses: the parade-ground voice that carries without shouting; the body language of a soldier who has given the last warning; the difference between Germanic warriors who are testing your resolve (they respond to escalation) and those who are committed to contact (escalation makes it worse, not better).
+- **Persuasion proficiency** — The social hierarchy of the frontier and who can authorize what: what a decurion can authorize, what requires a centurion, what requires the Legate; how to frame a request to avoid triggering rank-protectionism; which NPCs in the fort respond to military formality and which respond to direct personal appeal.
+- **Performance proficiency** — Military ceremony functions as battlefield Intimidation at scale. The *testudo* formation is not only a tactic; it is a performance. A unit that moves with military precision has advantage on group Intimidation checks against opponents who understand what they are seeing. Germanic warriors specifically recognize Roman formation discipline, and some will break before contact if it is displayed correctly and consistently.
+
+<details>
+<summary><strong>DC 13 Charisma (Intimidation) — Establishing military authority over undisciplined elements in a crisis</strong></summary>
+
+Roman military rank is a physical fact: uniform, bearing, and command voice create authority that most people inside the Roman system respond to without thinking, even if you are a lower rank than the person you are commanding. The technique has three components: give the order without hesitation, use specific actionable language ("Move to the wall," not "We should probably consider moving"), and do not acknowledge resistance verbally. Resistance that is acknowledged has been given legitimacy it did not have before.
+
+DC thresholds: DC 13 Charisma (Intimidation) to override civilian resistance in a crisis. DC 15 to override a soldier of equal rank who has a conflicting order. DC 17 to override a superior who has already given a conflicting order and is present. The last option succeeds or fails publicly; there is no quiet version of overriding a superior's order in front of witnesses.
+
+Failure consequence: the person does not comply, and they now know you tried and failed. Subsequent attempts in the same encounter increase in DC by 2.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Charisma (Persuasion) — Extracting information from an NPC who is afraid to speak</strong></summary>
+
+A person who has information and is afraid to give it is afraid of a specific consequence. Identifying the consequence and offering relief from it changes the calculation. The method: ask one question whose answer you already know (to establish that you are informed, not ignorant), then ask the question you actually want answered. People give more to the second question because they believe it is a small increment from what you already know. They are managing a disclosure they assume is already partially made.
+
+On success: the NPC gives you accurate information but may omit details they assume you already have. Ask follow-up questions about what was not said; silence around a topic tells you as much as speech.
+
+The error to avoid: starting with the question you actually want. That tells the NPC exactly where your ignorance is, which gives them control over what they reveal. Start from the perimeter and move inward.
+
+</details>
+
+<details>
+<summary><strong>DC 17 Charisma (Persuasion) — Negotiating with a tribal leader who has no reason to cooperate and every reason to distrust you</strong></summary>
+
+A Germanic chief's authority rests on his ability to appear strong and perceptive to his followers. Anything you say to him that he must visibly consider is a gift to his authority; anything that makes him look surprised or unsure is a cost to it. The correct approach: give him something he can present to his followers as evidence that Romans treat him as worth talking to. This means using his title correctly, acknowledging his specific victories rather than making generic compliments, and making your request in terms of his interest rather than yours.
+
+The specific thing that does not work: appealing to Roman law or Roman authority in a context where he has no obligation to respect either. He knows he has no obligation. Stating it gives you nothing and confirms that you are operating from a framework he has already rejected.
+
+What does work: offering something he can demonstrate to his council. Information he does not have, a Roman product he cannot otherwise access, a favor that will be visible to the people who evaluate his leadership. A chief who gains something tangible from talking to you has a reason to talk to you again. DC 17 Charisma (Persuasion); on success, you establish a basis for continued communication. On failure, you have told him more about your situation than he has told you about his.
+
+</details>
+
+<details>
+<summary><strong>DC 14 Charisma (Performance) — Using military ceremony to change the emotional state of a frightened group</strong></summary>
+
+Military ceremony has a specific effect on soldiers who are frightened: it replaces individual fear with collective identity. A party member who performs a recognizable ritual during a crisis (raising a standard, calling formation, beginning the morning salute) can use DC 14 Charisma (Performance) to shift a panicked group to frightened and a frightened group to alert and functional.
+
+This works because ceremony addresses the social and psychological function of collective action, not its religious function. A god does not need to be listening for it to work. The soldiers do need to be watching.
+
+Conditions required: at least one recognizable military symbol must be present (a standard, a weapon held formally, a specific uniform element). The performance must be initiated by someone who appears to be in command. The group must share the ceremonial reference: Roman soldiers respond to Roman ceremony; Germanic allies respond to their own forms. A Roman ceremony performed in front of Germanic warriors has no mechanical effect.
+
+</details>
+
+<details>
+<summary><strong>DC 13 Charisma (Intimidation) (Optio only — active: addressing soldiers who are refusing an order under fire) — The specific words</strong></summary>
+
+There is a specific form of address that Roman military doctrine provides for soldiers who have stopped under fire. It is not a threat. It is a reminder: "You are soldiers of Rome. Rome is watching what you do here." The power is not in the words; it is in the fact that soldiers who hear it are reminded that this moment will be reported, that someone will say what they did or did not do, and that the accounting happens in Rome, not in this forest. A soldier's reputation follows him. The Optio who uses this knows it works not because of discipline but because of pride. DC 13 Intimidation; on success, the refusing soldiers return to the line for this encounter. On failure, they hold their position but do not advance.
 
 </details>
 
@@ -855,5 +1001,82 @@ The tool marks on the walls show the engineers' confidence decreasing as they we
 <summary><strong>DC 14 Intelligence (History) (Frumentarius only — active: evaluating the strategic value of the current posting) — Why the peace is fragile</strong></summary>
 
 Vindolanda sits on a pre-Roman trade crossroads. The tribes use three routes that converge here: the northern coastal route, the inland hill-pass route, and the valley river route. Controlling Vindolanda means controlling all three. Any tribe that wanted to consolidate economic power in this region would need to either own or destroy Vindolanda. The current peace (eighteen years without a major assault) is not Roman military superiority. It is an economic standoff: the tribes need the trading crossroads functional, and a destroyed fort would be replaced with a more heavily defended one. This peace is conditional and fragile. It ends when a tribe decides the crossroads is worth the cost of a full siege.
+
+</details>
+
+---
+
+## Moving Through the Frontier
+
+*Ability checks: Dexterity (Stealth), Wisdom (Perception), Dexterity (Acrobatics)*
+
+Moving quietly on the frontier is a different skill from moving quietly on a Roman street. The surface changes every few yards: stone, mud, leaf litter, standing water, packed clay. The light is different under the trees. The ambient noise that masks your movement is not a crowd or a market: it is the forest itself, which has its own baseline you have to learn before you can hide inside it. A soldier who can move silently through Germanic forest at night is genuinely rare, and the ones who can all agree that the first thing you learn is that the forest notices you before you notice it.
+
+**What you know without a check:**
+
+- **Stealth proficiency** — The three conditions that make stealth possible (surface dampens sound, your silhouette is against a dark background, wind carries your scent away from the position you are approaching) and the three that make it impossible regardless of your skill (dry leaf litter thicker than two inches, full moonlight in open ground, moving upwind of a position with dogs or trained sentries).
+- **Perception proficiency** — The difference between a sound that belongs to a forest and one that does not; what a tripwire looks like in partial light; how to read the behavior of forest animals as early warning (birds flush from a specific area: something large moved there within 60 seconds; deer facing the same direction without feeding: something is approaching from that heading).
+- **Acrobatics proficiency** — How to fall from height without taking full damage: land with knees bent, roll immediately into the direction of the fall, distribute the impact across shoulder and hip. On falls up to 30 feet, DC 15 Acrobatics reduces damage to 1d6 per 10 feet instead of the standard 1d6 per 10 feet on a failed check (this reflects the reduction from controlled fall vs. uncontrolled). On falls over 30 feet, the DC becomes 18 and success reduces damage by half.
+- **Dexterity 14+** — You read spatial geometry without thinking about it. You know where you are in a room in darkness, which exits are where, what the nearest cover is from any position. You have never been surprised by a door.
+
+<details>
+<summary><strong>DC 13 Dexterity (Stealth) — Moving through the vault without alerting the guardians ahead</strong></summary>
+
+The vault has specific acoustic properties: the stone carries footfall sound further than open ground would, but the ambient seepage noise (water moving through limestone) creates a baseline that partially masks movement at normal pace. Moving at half pace (15 feet per round) keeps you at or below the ambient noise baseline; DC 13 Stealth with advantage because the water noise provides cover. Moving at full pace: DC 15 with no advantage from the water noise. Running in the vault automatically generates noise detectable by anything within 60 feet, regardless of your Stealth modifier.
+
+Relevant vault sections: the Flooded Gallery benefits from the most water noise (advantage on Stealth even at full pace). The Runic Corridor is dry and acoustically clear; disadvantage on Stealth at full pace. The Binding Chamber has an irregular echo that makes direction difficult to determine; guardians in the Binding Chamber cannot pinpoint a moving creature's location precisely, which gives moving characters advantage on Stealth checks even on failure, delaying guardian response by one round.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Dexterity (Stealth) — Setting up an ambush position on Germanic terrain: how to be invisible when a patrol passes</strong></summary>
+
+Germanic patrols look to the left more than the right when entering unfamiliar terrain (a cultural habit related to how they mark territory: threats are marked left-side as you enter, right-side as you leave). They look upward almost never. Height advantage of six feet or more above eye level creates near-invisibility for a stationary figure because Germanic scouting technique is ground-oriented.
+
+A figure against a dark background with no movement is effectively invisible to Germanic scouts at ranges over 30 feet in daylight. At night, 15 feet. The ambush position to take: elevated, behind the patrol's left side, still. The ambush position to avoid: ground level, frontal, against light, or any position that requires you to move after the patrol has entered detection range.
+
+DC 15 to set up correctly before the patrol arrives. Once set, no further Stealth check is required unless you move. If you move after the patrol is within 30 feet: DC 18, no cover benefits.
+
+</details>
+
+<details>
+<summary><strong>DC 17 Dexterity (Stealth) — Moving through an occupied Germanic camp without being detected</strong></summary>
+
+An occupied camp has layered detection: active sentries (the threat you know about), dogs (the threat you cannot avoid by skill alone), and sleeping warriors who are light sleepers by training and instinct. Avoiding sentries is a Stealth check. Avoiding dogs is an Animal Handling check (DC 14 to move through a camp without triggering the dogs, using slow movement and downwind approach) or a Survival check (DC 15 to identify and use a dead-smell zone where the wind creates a sensory gap in the dogs' coverage). Avoiding sleeping warriors who are light sleepers requires Stealth DC 17 to pass within 10 feet.
+
+The actionable intelligence: a camp has dead spots. The area downwind of the latrine trench is avoided by sentries who do not want to smell it; this is the quietest approach route. The horse line creates enough ambient noise (shifting, breath, occasional movement) to mask a person moving alongside it. The fire's far side is in the sentry's bright-adapted blind spot: anyone who has been staring at a fire for 20 minutes cannot see past it into the dark.
+
+</details>
+
+<details>
+<summary><strong>DC 14 Wisdom (Perception) — Night watch: detecting movement and distinguishing threat from ambient noise</strong></summary>
+
+Frontier watch conditions: one-third moon or less gives you 30 feet of clear visibility in open ground; two-thirds moon gives you 60 feet; full moon on open ground gives you 120 feet. In forest, halve everything. Rain reduces all ranges by 50%. Fog reduces to 10 feet regardless of moonlight.
+
+Distinguishing threat from ambient at night: still your own breathing first, then listen. The forest has a sound baseline that you learn after two nights on watch here specifically. Anything that breaks the baseline within your range is a threat until confirmed otherwise. DC 14 Wisdom (Perception); success gives you a direction and rough distance (accurate to within 30 feet). Failure: you hear something but cannot localize it accurately.
+
+The error most soldiers make is moving toward the sound. Stay still and wait for the second movement. The first movement tells you something is there. The second movement tells you where it is going. Moving toward the first sound puts you in the path of the second movement without knowing where that is.
+
+</details>
+
+<details>
+<summary><strong>DC 16 Wisdom (Perception) — Reading a battle scene after the fact: what happened here and how long ago</strong></summary>
+
+A battle site contains a readable sequence of events if you know what to look for. Blood pooling tells you where men fell and whether they were moved afterward. Weapon discards tell you which side broke (the side that ran drops more weapons). The direction of disturbance in the vegetation tells you which way the engagement moved.
+
+Time since the event: blood darkens from red to brown to black over six to twelve hours in this climate. Disturbed earth re-settles within 24 hours unless there has been rain. Weapon metal begins to rust visibly at the wound edge within 48 hours in damp conditions. Flies are present within 2 hours; carrion birds within 6 hours; large scavengers within 24 hours.
+
+What DC 16 specifically tells you: the sequence (who attacked, who retreated, where the decisive moment was), the approximate number of combatants on each side (from disturbance area and blood distribution), and a time window of 4-hour accuracy for when it happened. This check can be made on any battle site encountered during the campaign, including the scenes in Chapter 3.
+
+</details>
+
+<details>
+<summary><strong>DC 13 Dexterity (Acrobatics) — Maintaining footing and combat effectiveness in difficult terrain</strong></summary>
+
+The Germanic frontier presents specific terrain problems that Roman formation combat does not prepare you for: mud that grabs boots mid-step and pulls them sideways, root systems at ankle height in forest understory, river-crossing stones that are slick with algae, and the specific challenge of fighting on a slope where one side always has the physical advantage.
+
+Managing difficult terrain without the Acrobatics check: movement costs double, and any melee attack made while moving through difficult terrain has a 1-in-6 chance of requiring a DC 10 Dexterity save to avoid falling prone (this applies to both sides of the engagement). With a DC 13 Acrobatics check as a bonus action, you move through difficult terrain at normal cost until the terrain type changes. This is not a permanent advantage; you are actively managing your footing, which means you cannot take reactions until your next turn.
+
+Specific applications in this campaign: the vault's Flooded Gallery (standing water over an irregular stone floor, difficult terrain throughout), the forest floor in Chapter 3 (root systems, fallen timber, leaf-covered holes), and river crossings in Chapter 3's eastern approach.
 
 </details>

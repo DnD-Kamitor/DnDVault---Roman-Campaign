@@ -10,6 +10,31 @@ You feel Vindolanda before you see it. The ground vibrates with marching drills,
 
 The fort speaks in signals: two trumpet calls at dawn (changing of the watch), a bell from the *principia* when the Legate summons officers, whispered passwords at each gate, the roar of the kiln when clay tiles bake dry. Pay attention to those sounds. They tell you where the trouble is before anyone sends a runner.
 
+**What you learn about the fort's rhythms without a check:**
+
+- **Perception proficiency** — You have catalogued the normal soundscape within your first two days: smith-work peaks before midday, the granary guard changes at first and third watch, the bath furnace sounds like a low roar when officers are using it and falls quieter during enlisted hours.
+- **Survival proficiency** — The ditch retains water badly on the north side; footing there is treacherous after rain, especially at night. The slope into the ditch runs at roughly 45 degrees. Anyone rushing the north wall in wet weather will slow down before they climb.
+- **History proficiency** — The standard *castra* layout means you know which direction every building is before you walk the fort. *Principia* at center, granaries flanking, barracks in rows, gates on the cardinal compass points. Nothing here surprises you.
+- **Wisdom 14+** — Something feels older than the fort. The stone beneath the parade ground is a different colour than the walls above it, and the mortar in the *principia* foundation is a different composition from the walls. Someone built something here before the Romans did.
+
+<details>
+<summary><strong>DC 12 Wisdom (Perception) — Listening to the gate signals and trumpet patterns for a full watch</strong></summary>
+
+Two short blasts at dawn: the watch changes. One long blast: the Legate has issued an order requiring assembly. Three short blasts in sequence: enemy contact reported within sight of the walls. Silence where sound should be (no guard call from the north tower after the second hour) means the guard has been replaced or is incapacitated. You know this pattern by the end of your first night here.
+
+The north gate bell sounds differently from the south — the north bell has a crack in the iron that gives it a flat note. If you hear the flat bell at night, the north postern is active.
+
+</details>
+
+<details>
+<summary><strong>DC 14 Wisdom (Survival) — Assessing the water supply during the first week at the fort</strong></summary>
+
+The fort has two water sources: a deep well in the central courtyard (clean, reliable) and a spring-fed channel that runs beneath the north section of the *principia* (cold, slightly metallic in taste). The channel smells faintly of iron now. Soldiers who drink from it regularly have been reporting vivid dreams. Nobody has ordered them to stop. The well water is fine. The channel water is not being formally restricted, which means either Quartus does not know about the problem or he does not want you to know.
+
+Water discipline in winter: a soldier who sweats through a march and then stops moving in cold air loses heat faster than the cold alone would cause. Keep moving or get dry. The baths are the warmest safe place in the fort for a soldier who has been drenched.
+
+</details>
+
 ---
 
 ## The Shape of the Fort
@@ -24,29 +49,194 @@ Vindolanda follows the standard *castra* blueprint but every block is crowded wi
 
 The headquarters dominates the center of the fort. It houses the Legate's audience chamber, the shrine to the standards, the pay chest, and the vault where the spear now rests. Officers' offices open onto the central courtyard. Soldiers do not enter unless summoned. Messengers report at the courtyard's edge, salute the standards, then wait until the *cornicularius* (chief clerk) acknowledges them.
 
+**What you learn about the *principia* without a check:**
+
+- **History proficiency** — The standard *principia* layout: outer courtyard, covered hall, shrine to the standards at the rear, offices to either side. The shrine room is locked from the outside after last watch. The pay chest is bolted to the floor.
+- **Perception proficiency** — Two guards rotate at the courtyard entrance. They change every two hours, not every four like the wall guards. Someone with authority set them on a shorter rotation. That is unusual and recent.
+
+<details>
+<summary><strong>DC 13 Intelligence (Investigation) — Examining the *principia* courtyard during an authorized visit</strong></summary>
+
+The flagstone in the northeast corner of the courtyard has no moss on its joins. Every other stone here has a year's worth of growth in the cracks. That one was reset recently: within the last few months. The stone is also slightly lower than its neighbors, as if the substrate beneath it settled after it was relaid. There is nothing beneath it that officially exists.
+
+The *cornicularius* keeps two ledgers. One is on his desk and open to anyone. The other is locked in the left office drawer and has a wax seal you do not recognize on the binding cord.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Wisdom (Insight) — Watching how officers interact with Corvinus in the audience chamber</strong></summary>
+
+Corvinus listens to every report with his hands flat on the table and does not look at the officer speaking. He looks at the door. He has done this in every observed audience: he is waiting for someone to arrive unannounced. The officers have adapted to this: they give their reports faster than regulations require, because they have learned that his full attention is reserved for something that has not happened yet.
+
+Tribune Lucius does the opposite: he makes sustained eye contact and smiles. Soldiers who have reported to both men say Lucius remembers details and Corvinus forgets faces. One of them is listening. The other is performing listening.
+
+</details>
+
 **The *praetorium***
 
 The Legate's residence and staff complex sits just east of the *principia*. Marble floors, heated rooms, private bath. Inside: Legate Corvinus, his scribes, personal guard, and storage for anything he does not trust to the quartermaster. Tribune Lucius has been given the adjoining suite; the tension between their staffs radiates through the hallway.
+
+**What you learn about the *praetorium* without a check:**
+
+- **Persuasion proficiency** — The personal guard rotation is four men, and the same four faces appear at every hour. They have not rotated in days. Either Corvinus trusts no one else near him, or the guard pool has been depleted.
+- **Insight proficiency** — The tension between Corvinus's staff and Lucius's staff is audible in how they greet each other: formal titles at maximum volume in the hallway, no greetings when no one senior is watching.
+
+<details>
+<summary><strong>DC 14 Charisma (Persuasion) — Striking up conversation with a scribe or runner from the *praetorium* staff</strong></summary>
+
+Corvinus's scribes are afraid of him, but not in the way soldiers are afraid of officers. It is a specific, personal fear: they do not know what he wants and they are afraid of being the one who guesses wrong. He has not briefed them on the current situation. They are writing dispatches they have not been told the purpose of and they know better than to ask.
+
+Lucius's staff is the opposite: chatty, confident, and pointedly unhelpful. They will tell you Lucius is "managing a difficult command situation" with an expression that makes clear they believe Corvinus is the problem. None of them look frightened. Some of them look like they are waiting for something.
+
+</details>
 
 **Barracks of the *contubernia***
 
 Eight soldiers per room, timber bunks, shared hearth. Your contubernium cooks together, drills together, and takes punishment together. Each barracks block has its own rain trough and weapon rack. The north row houses the veterans Varro trusts. The south row is where the new recruits and troublemakers end up.
 
+**What you learn about the barracks without a check:**
+
+- **Athletics proficiency** — The fastest route from the south barracks to the north gate on foot, in full kit, takes about ninety seconds at a run. The route through the central street is faster than the perimeter route but passes the *principia* guard post, where you will be challenged. The perimeter route is slower but unobstructed.
+- **Survival proficiency** — The shared hearth in each room is the social center. Who tends the fire and who lets it die tells you more about the room's internal hierarchy than any rank insignia. Rooms where the fire goes out are rooms with discipline problems.
+
+<details>
+<summary><strong>DC 13 Dexterity (Stealth) — Moving through the barracks at night without waking anyone</strong></summary>
+
+The timber floor in the north barracks creaks at three points: two feet inside the door, level with the third bunk on the left, and at the base of the ladder to the roof loft. The south barracks floor is quieter because it is newer timber, but the door latch rattles on the right side and will wake anyone who is a light sleeper. The men in the south row are new recruits. New recruits are light sleepers. Moving through the north barracks at night without waking the veterans is the better option if you have business you would rather not explain.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Intelligence (Investigation) — Examining the north and south barracks for signs of recent activity</strong></summary>
+
+Three bunks in the north row have been slept in by someone other than their assigned occupant within the last week: the straw shows two distinct patterns of compression. Either those soldiers have been trading sleeping spots (uncommon but not unusual) or someone has been using those rooms who is not on the duty roster. The weapons racks in those rooms are also showing scuff marks at the base: something heavier than a javelin was leaned against them recently.
+
+The south barracks has a loose floor plank near the east wall. Under it: a small clay-sealed jar that smells of lamp oil. The jar is clean on the outside, recently placed.
+
+</details>
+
 **Workshops and the *fabrica***
 
 The west quadrant stinks of charcoal and hot iron. The *faber* corps keeps weapons sharp, armor riveted, siege hooks ready. This is where you barter for replacement kit, where rumors from the supply caravans arrive first, and where the Legate's most loyal artisans watch for anyone touching the spear.
+
+**What you learn about the *fabrica* without a check:**
+
+- **Athletics proficiency** — The west quadrant has a loading bay with a wide double door facing the interior street. It is wide enough for a cart. The door is barred from the inside during off hours but the bar can be lifted from outside with a blade inserted through the gap at knee height.
+- **History proficiency** — The *faber* corps outranks ordinary soldiers in one important respect: they are *immunes*, exempt from the normal fatigue duties that consume ordinary soldiers' time. Rufus and his smiths owe no one wall watch. This makes them the most rested and least surveilled workers in the fort.
+
+<details>
+<summary><strong>DC 13 Intelligence (Investigation) — Examining the current state of the workshop's production logs and material stock</strong></summary>
+
+The *fabrica* has been producing more iron hooks and fewer arrowheads than the supply request from the wall garrison would suggest. Hooks are used to pull scaling ladders off walls during a siege. Arrowheads are used to stop people from getting close enough to use ladders. Someone has been prioritizing anti-assault hardware over anti-approach hardware. That is either the Legate's call or Rufus acting on orders he received privately.
+
+The charcoal supply is adequate for another three weeks at current production rates. After that, the smiths stop. No replacement charcoal shipment is logged in the quartermaster's ledger.
+
+</details>
+
+<details>
+<summary><strong>DC 14 Charisma (Persuasion) — Spending time with Rufus and his smiths over multiple working sessions</strong></summary>
+
+Rufus talks while he works. This is well known and exploitable. What he will tell you if you give him an hour and genuine interest in the craft: the spear was brought to him three weeks before it was officially discovered. He was asked to examine the metal and say nothing. He said nothing. The metal is not Roman and not Germanic. He has never seen anything like it. He does not want to discuss it further but he will not deny it if you ask him directly.
+
+His smiths defer to him on everything except one subject: one of the younger smiths, Calvus, has been meeting someone outside the south gate at night. Rufus knows and has said nothing. He does not know who Calvus is meeting.
+
+</details>
 
 **The *vicus***
 
 A civilian village sprawls outside the east gate: traders, families, unofficial taverns, the camp brothel, and the *thermopolium* (canteen) where you can buy hot food instead of eating the ration. The vicus is the social release valve. It is also where spies, tribal scouts, and deserters listen for careless words. Never discuss the spear in the vicus. Assume every conversation there is reported.
 
+**What you learn about the *vicus* without a check:**
+
+- **Insight proficiency** — The traders here have been doing this for years. They know which soldiers overspend when they are frightened and which ones go quiet. In the last two weeks, spending has gone up and talking has gone down. The traders have noticed.
+- **Persuasion proficiency** — Brennus at the taverna extends credit to soldiers he trusts and refuses credit to soldiers he does not. Who he refuses tells you more than who he accepts: he has cut off three soldiers this week who had never had problems before. Something about them changed.
+
+<details>
+<summary><strong>DC 13 Wisdom (Insight) — Spending an evening in Brennus's taverna and watching who talks to whom</strong></summary>
+
+Two men have come in every third night, sat at the back table, ordered wine they barely touch, and left when a specific off-duty soldier arrived. They are not soldiers: their hands are too clean for labor but too roughened for scribing. They pay in *denarii* rather than *sestertii*, which means they are drawing coin from somewhere other than military pay. The off-duty soldier is from the south barracks. His name is Plinius. He does not look pleased to see them.
+
+Lucilla, the postwoman, drinks alone at the end of the bar. She listens. If you want to know which mail packets from Rome have been opened and resealed, she knows and she can be convinced to tell you, but she sets the price and it is never coin.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Charisma (Persuasion) — Cultivating Brennus as a source over several visits</strong></summary>
+
+Brennus will not tell you anything that puts his business at risk, but he will tell you things that protect his customers, and he has decided you qualify. Three things he has noticed: someone has been buying large quantities of lamp oil in small individual purchases, always through different traders; a Germanic-speaking woman in a Roman cloak visited the vicus twice and asked about the schedule for mail deliveries; and a request came to Brennus himself, from an unnamed soldier, for a private room without windows for a meeting that needed to stay private. He declined and wants you to know he declined.
+
+</details>
+
 **Bathhouse and *balneum***
 
 South of the fort sits the bath complex: frigidarium, tepidarium, caldarium, furnace room, and the social heart of the garrison. Pay two *sestertii* to use it if you are off duty. Officers have private hours before dawn; enlisted men use it after second watch. Gossip moves as fast here as steam.
 
+**What you learn about the bathhouse without a check:**
+
+- **Medicine proficiency** — The baths double as triage space during a siege. The *caldarium* (hot room) can warm a hypothermic soldier. The *frigidarium* pool can be used to clean wounds if the valetudinarium is overcrowded. Cassia has used both for this and the staff know where her supplies are kept.
+- **Perception proficiency** — The ventilation gap above the furnace room runs along the base of the officers' section. Sounds carry through it. You do not need to be in the furnace room to hear what is said during officers' hours: you need to be in the maintenance crawl space beneath the floor grate, which opens from outside the south wall.
+
+<details>
+<summary><strong>DC 13 Charisma (Persuasion) — Talking with the bath furnace servitor, Glaucus, during his shift</strong></summary>
+
+Glaucus has been tending this furnace for eleven years. He is a freedman, technically, but he has nowhere else to go and the bath is warm. He will tell you anything you want to know about the officers' conversations if you bring him food that is better than ration barley. He specifically wants dried figs. There are none currently in the fort's stores, but the traders in the vicus sometimes receive them in supply caravans.
+
+What he has heard recently that he will share for a single decent meal: Corvinus and Lucius argued in the officers' section three nights ago. The argument ended with Lucius saying "then I will act without your authorization" and Corvinus saying nothing in response. Glaucus does not know what they were arguing about. He knows Corvinus went quiet because Corvinus is always loud.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Dexterity (Stealth) — Accessing the maintenance crawl space during officers' hours without being detected</strong></summary>
+
+The maintenance crawl beneath the *caldarium* floor grate is accessed from a low door in the south wall, outside the bath perimeter. It requires a DC 13 Dexterity check to move through quietly (the gravel floor shifts). Once inside, you can hear the officers' section clearly enough to understand conversation. The risk: the furnace servitor checks the crawl space every two hours to clear ash buildup. His schedule is predictable. You have a ninety-minute window after each check.
+
+</details>
+
+**The *valetudinarium***
+
+The field hospital sits in the east quadrant, a long low building with a central corridor and rooms opening to either side. Cassia Liviana runs it with two trained orderlies and the fort's only proper surgical kit. Entry without injury or authorization is technically prohibited, but Cassia will see anyone who asks politely and does not waste her time.
+
+**What you learn about the *valetudinarium* without a check:**
+
+- **Medicine proficiency** — Cassia's stock is uneven. She has sufficient *acetum* (vinegar for wound cleaning), *linum* (linen) for bandaging, and *opium* extract for pain management. She is out of *theriac* (the broad-spectrum antidote), has only two doses of *mandragora* (surgical sedative) remaining, and has not received a resupply of collyrium (eye treatment) in six weeks. Several soldiers with eye injuries from sparks in the *fabrica* are managing without it.
+- **Insight proficiency** — Cassia keeps two patient rooms permanently cleared of personal effects. She is not optimistic about the siege's outcome in terms of casualties, and she has pre-positioned space. She has not told anyone this.
+
+<details>
+<summary><strong>DC 13 Wisdom (Medicine) — Spending time in the *valetudinarium* as a helper or patient and observing Cassia's methods</strong></summary>
+
+Cassia uses a diagnostic system she does not teach to the orderlies: she categorizes wounds by what she calls their "character" before she decides how to treat them. Two wounds of identical appearance on different soldiers will receive different treatments if she judges the character differently. Her success rate is high enough that no officer questions this. She has described the system to no one in official writing. If you earn her trust over multiple interactions, she will explain what she means by character. The short version: some wounds are already healing when they arrive. Others are not. The difference is visible if you know what you are looking for.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Intelligence (Investigation) — Examining the *valetudinarium*'s patient records and Cassia's private notes</strong></summary>
+
+Cassia maintains two sets of notes. The official record is a standard injury log: date, name, wound type, treatment, outcome. The private notes, kept in a locked cedar box in her personal room at the end of the corridor, record something else: she has been tracking which soldiers experience the vivid dreams associated with the north spring water, cross-referenced with corruption stage and duty assignment. She has a hypothesis. She has not shared it. The box can be opened with a DC 16 Dexterity (thieves' tools) check or with her permission, which she will grant if she believes you are affected by the same pattern she is tracking.
+
+</details>
+
 **Sacred spaces**
 
 The fort shrine holds *lares* and household gods, tended by Cassia. A grove of twisted pines inside the walls shelters the Germanic standing stones recovered during construction; no one cuts them. Under the *principia* lies the sealed stair that leads to the ruins beneath—the path Mars now demands you take.
+
+**What you learn about the fort's sacred spaces without a check:**
+
+- **Religion proficiency** — Cassia tends the shrine at dawn and dusk without fail. She is always alone for the dusk observance. This is deliberate: the dusk rite is the one where she reads the omens for the following day, and she does not want witnesses when the omens are bad.
+- **History proficiency** — The Germanic standing stones in the pine grove were not moved during construction: the fort was built around them. Standard Roman engineering practice would have removed or destroyed them. Someone senior gave the order to preserve them and nobody recorded why.
+
+<details>
+<summary><strong>DC 14 Intelligence (Religion) — Examining the standing stones in the pine grove and comparing them to known Germanic inscription traditions</strong></summary>
+
+The carvings on these stones are not Germanic. The style is older: pre-migration-period, possibly from a culture that occupied this ground before the tribes currently in the region. The runes resemble Elder Futhark but several symbols do not correspond to any runic alphabet you know. One stone has a carving of a serpent eating its own tail that predates any Germanic art tradition by at least three centuries. These stones are not a Germanic shrine. They are something older that the Germanic tribes also chose not to disturb.
+
+</details>
+
+<details>
+<summary><strong>DC 16 Wisdom (Insight) — Observing Cassia's dusk rite at the shrine over several evenings</strong></summary>
+
+On the third evening of observation, Cassia does something that is not part of any standard shrine rite: she presses both hands flat against the floor of the shrine room rather than making the customary gesture toward the household gods. She holds this for a full minute. Her eyes are open. She is not praying upward. She is listening downward. Whatever she hears (or does not hear) determines whether she looks relieved or afraid when she stands. Twice you have seen her leave looking afraid.
+
+</details>
 
 ---
 
@@ -56,13 +246,62 @@ The fort shrine holds *lares* and household gods, tended by Cassia. A grove of t
 
 The Legate commands the garrison. The Tribune has senatorial authority but no soldiers of his own. The Centurions run everything that matters day to day. If you want the fort to function, you keep the Centurions on your side. Orders travel Legate → Primus Pilus → Centurions → Optios → you. When those links fracture (as they are now), you must decide which link you obey.
 
+**What you learn about who actually holds power without a check:**
+
+- **History proficiency** — Senatorial authority (which Lucius has) is political power in Rome. Military authority (which Corvinus has) is operational power in the field. In a frontier fort, military authority dominates. But senatorial authority can override in a legal dispute or when Rome's direct interests are at stake. Lucius knows this and Corvinus knows Lucius knows it.
+- **Insight proficiency** — Varro runs the Centurions and the Centurions run the fort. Corvinus gives orders; Varro decides how to implement them. The gap between those two things is where you have room to operate.
+
+<details>
+<summary><strong>DC 13 Wisdom (Insight) — Observing Varro in his interactions with both Corvinus and the Centurions over several days</strong></summary>
+
+Varro translates. Not language: intent. When Corvinus orders something that Varro knows will damage morale, Varro implements the letter of the order in a way that softens the effect. When Corvinus orders something that Varro agrees with, the order moves through the chain of command at twice the normal speed. Corvinus appears not to notice this. Varro is running a parallel command structure and it is working exactly as well as the official one.
+
+The practical implication: if you want something done, tell Varro why it matters. If you want something stopped, tell Varro why it is a problem. Do not go to Corvinus first on anything operational.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Charisma (Persuasion) — Building a working relationship with Varro over multiple sessions of drill or shared work</strong></summary>
+
+Varro will tell you one thing he will not say in front of Corvinus: the Centurions have discussed what to do if Corvinus issues an order that is tactically suicidal. They have a protocol. It involves the Primus Pilus invoking a clause of the *lex militaris* that allows senior centurions to relieve a commander who has lost the confidence of his officers. They have not used it. They are close. Varro is the one holding the line. He needs a reason to keep holding it, and that reason has to come from someone not in the chain of command.
+
+</details>
+
 **The Quartermaster's Ledger**
 
 The quartermaster controls food, weapons, and favors. His ledger lists every item issued. To pull supplies without paperwork, you either bribe him, bring Varro's written authorization, or prove the walls are about to fall. A false requisition is flogging. A true requisition that exposes a shortage starts an investigation, which may be exactly what you want.
 
+**What you learn about Quartus and the supply chain without a check:**
+
+- **History proficiency** — A quartermaster who has been in the role for more than five years has more information about the fort's actual state than any officer. Quartus has been here for seven. He knows where every shortfall is and has been quietly patching them before they become crises.
+- **Persuasion proficiency** — Quartus does not take coin bribes. He operates on a favor economy. He trades information about supply states for guaranteed labor, information about personnel, or promises of political cover if his inventory discrepancies are ever formally audited.
+
+<details>
+<summary><strong>DC 14 Intelligence (Investigation) — Comparing the official supply ledger against the physical stock in the horrea</strong></summary>
+
+The ledger records 900 modii of grain in stock. The granary holds approximately 700. The discrepancy of 200 modii has been there for at least six weeks, based on the date of the last full inventory notation. Either 200 modii were removed without being logged, or they were never delivered despite being logged as received. The second option implies someone in the supply chain was paid for a delivery they did not make.
+
+The weapon stock shows the reverse problem: more javelins on the racks than the ledger records. Javelins are heavy to move in quantity. Someone brought them in without paperwork.
+
+</details>
+
 **Watches and Passwords**
 
 Four watches divide the day. Passwords change nightly and are written on cedar slips that burn cleanly. Forget the password and you stand outside the gate until the Centurion relieves you. Share the password with someone outside your contubernium and you will be flogged, unless Varro or the party steps in.
+
+**What you learn about the watch system without a check:**
+
+- **Perception proficiency** — The north and south gates have mandatory challenge-response at all hours. The east gate (toward the *vicus*) challenges only after dark. Between the second and third watch, the challenge at the east gate is performed by a single guard rather than the regulation two. That gap is consistent and has been for weeks.
+- **Athletics proficiency** — During an alert, soldiers are expected to reach their assigned wall section within three minutes of the signal. The barracks-to-north-wall run takes ninety seconds. The barracks-to-east-wall run takes two minutes. The south section takes three minutes from the north barracks and is reliably undermanned in the first minutes of any alert.
+
+<details>
+<summary><strong>DC 14 Dexterity (Stealth) — Observing the watch rotation from a concealed position over a full night</strong></summary>
+
+The northeast corner of the wall walk has a blind spot: the watchtower brazier on the north throws light forward and left, leaving a 20-foot section of the northeast wall in shadow. A guard walking the north section faces forward into the lit zone; their eyes do not adjust fast enough to see anything in that shadow behind them. The shadow section lasts from second watch through fourth watch, when the brazier burns lowest. It is wide enough for two people to stand without being visible from the walkway or the courtyard below.
+
+The south gate guard change at third watch takes six minutes. During those six minutes, only one man is on the south gate: the arriving guard, before the departing guard has finished logging out. That six-minute window repeats every night at the same time.
+
+</details>
 
 **The Vicus Compact**
 
@@ -98,21 +337,94 @@ Money matters less than reputation now that the fort is cut off. Trade favors, p
 
 Faces the forest and the enemy. Night patrols check this gate every thirty minutes. The gatehouse has a murder hole over the approach and a hidden well beneath the floor that now reeks of iron—the spear affects the water. Standing watch here guarantees you see every envoy and emissary first.
 
+**What you learn about the north gate without a check:**
+
+- **Perception proficiency** — The murder hole above the gate approach is blocked by a timber frame that has warped. It cannot be opened fully from above: a soldier trying to drop projectiles through it can only cover the left half of the approach. Any envoy who knows this will position themselves on the right.
+- **Survival proficiency** — The well beneath the gatehouse floor tastes of iron now. Iron in water is not unusual in this region. Iron that arrives in water that did not previously taste of it is a different matter. The taste appeared within the last six weeks. Boiling does not remove it.
+
+<details>
+<summary><strong>DC 13 Intelligence (Investigation) — Examining the murder hole mechanism and the well shaft</strong></summary>
+
+The warped timber frame can be fixed with two hours of carpenter work and a straight replacement beam. The materials are available in the *fabrica*. No one has ordered it repaired. Either no one has noticed or the report went into Corvinus's desk and was not acted on. Either possibility is worth noting.
+
+The well shaft descends about fifteen feet to the water table. The iron smell is strongest in the morning before any water has been drawn. The shaft walls have a faint reddish discolouration that starts at about ten feet down and is absent above that point. Whatever is producing the iron taste is coming from below the discolouration line.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Strength (Athletics) — Assessing the wall above the north gate for scaling and defensive positions</strong></summary>
+
+The north gate rampart is the highest point of the wall walk at this gate: an additional three feet of parapet was added when the gate was reconstructed. This means it is also the hardest section to assault from outside. However, the interior ladder to the rampart is positioned behind the gate, not beside it. In an alert, soldiers going to the rampart have to pass through the gate interior, which is also the most congested point during an emergency. The design assumes the gate is held by defenders, not contested.
+
+A soldier stationed on the north rampart during an attack has clear sightlines to the forest edge, 300 feet out. They will see anything moving across the field before the gate guards below do.
+
+</details>
+
 **The Watchtower Loft**
 
 Highest point in Vindolanda. Cassia uses it for star readings. Varro uses it to track torches moving in the forest. Bring a cloak. The wind is merciless, but the vantage lets you spot infiltrators scaling the ditch before anyone else.
 
+**What you learn about the watchtower without a check:**
+
+- **Perception proficiency** — From the tower, you can count individual torches in the treeline at night out to roughly half a mile. More than four torches moving in formation signals a scouting party. Torches in fixed positions across a wide front signal a preparation line. No torches at all in a treeline that had them the night before signals something important moved without wanting to be tracked.
+- **Acrobatics proficiency** — The ladder to the loft is solid but the final hatch opens outward rather than inward. In high wind, opening it requires both hands, which means whoever goes up last must hold the hatch with their body weight while someone else climbs through. Alone and in full kit, it is a DC 12 Strength check to hold the hatch open long enough to pull yourself through.
+
+<details>
+<summary><strong>DC 13 Wisdom (Perception) — Spending a full night on tower watch, tracking torchlight patterns in the forest</strong></summary>
+
+Over the course of a single night, you see: two fixed torch positions at the forest edge, consistent from second through fourth watch; one moving torch that makes a circuit of approximately 400 feet, repeating the same route at irregular intervals; and, at the hour before dawn, a brief series of three light flashes from inside the treeline that correspond to no signal code in your training. The pattern of the fixed torches matches a boundary marker, not an attack position. Whatever is in the forest is waiting, not advancing.
+
+</details>
+
 **The Granary**
 
-Raised floor, locked doors, guarded day and night. Grain is rationed tighter than pay. Corruption stage checks often happen here: characters tempted to steal food make saves. The floor feels unusually solid in places -- the engineers over-built something here.
+Raised floor, locked doors, guarded day and night. Grain is rationed tighter than pay. Corruption stage checks often happen here: characters tempted to steal food make saves. The floor feels unusually solid in places — the engineers over-built something here.
+
+**What you learn about the granary without a check:**
+
+- **Athletics proficiency** — The granary is the only building in the fort with a foundation that extends below the frost line. The floor is raised on stone pillars to allow air circulation beneath the grain. The space between the pillars is accessible from outside through a ventilation grate on the north face, wide enough for someone slight to enter. Not wide enough for someone in full kit.
+- **Investigation proficiency** — The guards at the granary doors rotate on the half-hour, faster than any other post. This is Quartus's schedule, not the regulation one. He set the rotation himself three weeks ago and did not explain why.
+
+<details>
+<summary><strong>DC 14 Intelligence (Investigation) — Examining the granary floor structure and the pillar foundations</strong></summary>
+
+Two of the stone pillars supporting the granary floor are not original to the building's construction. They are the same stone but their placement is irregular compared to the grid the others follow, and their mortar is a slightly different colour: older. They were here before the granary was built and the granary was built around them. They are load-bearing something below the floor, not just the floor above. The engineers who built the granary either did not notice or were specifically told to build around them.
+
+The 200-modii shortfall in the ledger corresponds to the section of the granary closest to those two pillars. It is not that the grain was stolen. It is that the measurement there is consistently wrong, as if someone is taking readings from the wrong depth.
+
+</details>
 
 **The Bath Furnace Room**
 
-Hottest place in camp. The furnace servitor hears every whispered conversation from both men's and officers' hours; he has ears in both worlds. It's also where someone trying to destroy evidence might dump it. Keep an eye on who lingers.
+Hottest place in camp. The furnace servitor hears every whispered conversation from both men's and officers' hours; he has ears in both worlds. It is also where someone trying to destroy evidence might dump it. Keep an eye on who lingers.
+
+**What you learn about the furnace room without a check:**
+
+- **Perception proficiency** — The furnace burns wood fed from a stack outside the bath perimeter. The ash pile beside the furnace is cleared every two days. The current ash pile has fragments of cedar wood in it: not a fuel wood in this region. Cedar is what the password slips are written on.
+- **Investigation proficiency** — The temperature inside the furnace room makes legible documents unreadable within about five minutes if placed near the intake. It makes them ash within fifteen. Evidence brought here late at night is evidence that will not exist by morning.
+
+<details>
+<summary><strong>DC 14 Wisdom (Perception) — Examining the ash pile and the furnace intake after soldiers' hours</strong></summary>
+
+In the current ash pile you find: three cedar fragments (password slip material, as noted), a small disc of bronze wax seal that survived the fire, and a fragment of papyrus edge with two legible letters: "...us" in standard Roman script. The seal, when compared against known signet patterns, matches the family crest used by a minor senatorial family from the Adriatic coast. You know this crest because it appears on the dispatch wax of Tribune Lucius's official correspondence. The fragment is not from a military document: the papyrus grade is finer than military issue.
+
+</details>
 
 **The Vicus Shrine of Mercury**
 
 A small altar near the market square, maintained by traders. Leaving offerings here keeps supply caravans favorable and convinces the civilians you care about their gods, not just your own. Cassia visits weekly to listen to gossip without her augur robes.
+
+**What you learn about the shrine without a check:**
+
+- **Religion proficiency** — Mercury governs travelers, merchants, and messages. An offering here before a journey or a difficult negotiation is appropriate and noticed by the traders. Neglecting it is also noticed. A soldier who maintains the compact between the military and the civilian shrines is a soldier the vicus will shelter in return.
+- **History proficiency** — Shrines in the *vicus* are also informal message drops. Traders leave word of caravan delays, route changes, and dangerous road conditions in small clay tablets cached in the shrine's offering box. This practice predates the current fort by decades.
+
+<details>
+<summary><strong>DC 13 Intelligence (Investigation) — Examining the shrine's offering box and the recent votive deposits</strong></summary>
+
+The offering box currently contains: seven small coins, two clay tablets with trade notations (one records a caravan delay on the south road, expected three days late; one records a price query from a trader you do not recognize), a folded scrap of papyrus that is not a trade notation, and a small lump of beeswax pressed with a thumbprint rather than a seal. The folded papyrus reads, in careful Latin with a Germanic spelling pattern: "The ones you wait for will not come by the road." No signature. The paper is fresh: placed within the last two days.
+
+</details>
 
 **The Hidden Stair**
 
@@ -126,13 +438,55 @@ Under the *principia* flagstones, behind a fitted stone no one admits exists. Co
 
 Wind, rain, and endless watches grind the cohort down. Without relief, tempers snap. Track exhaustion levels alongside corruption. Offer scenes where characters can spend a ration of good food or a favor to remove exhaustion for an ally.
 
+**What you learn about treating exhaustion without a check:**
+
+- **Medicine proficiency** — A soldier at Exhaustion Level 2 (disadvantage on ability checks) can recover to Level 1 with six hours of uninterrupted rest and a full ration. A soldier at Level 3 (speed halved) needs eight hours and a full ration plus access to warmth. The baths or the *caldarium* substitute for warmth when the barracks hearths are low. Cassia's kit includes a tonic of dried herbs that accelerates recovery: she has eleven doses remaining and is rationing them. Ask her before the siege, not during.
+
+<details>
+<summary><strong>DC 14 Wisdom (Medicine) — Assessing the current state of the fort's garrison for exhaustion</strong></summary>
+
+A walk through the barracks during off-duty hours shows: roughly a third of the enlisted men are at Exhaustion Level 1 or higher. Signs: slow speech, difficulty tracking conversation, slower reaction to loud sounds than expected. Two soldiers in the south barracks are at Level 2: they are functional but will not be effective in a sustained engagement. No one in the current rotation is at Level 3, but if the watch schedule does not change, Level 3 cases will appear within five days. Cassia knows this and has flagged it in writing to Corvinus. He has not responded.
+
+</details>
+
 **Saboteurs**
 
 Brutus' sleeper agents have been in the fort for months. They set fires in the workshops, poison wells, and whisper to soldiers that the spear promises glory to anyone who frees it. Keep suspicion scenes tense but solvable: three clues per agent, following the Three Clue Rule.
 
+**What you learn about detecting sabotage without a check:**
+
+- **Perception proficiency** — You know what normal smells like in this fort. Lamp oil in a building that should not have lamp oil. Smoke from somewhere that has no hearth. A sound in the wrong place at the wrong hour. Trust your instincts: they are trained.
+- **Investigation proficiency** — Saboteurs in a military environment follow patterns because they are improvising under pressure. A fire in the *fabrica* draws attention there. While that attention is occupied, something else happens somewhere else. Two incidents close together are almost never coincidence.
+
+<details>
+<summary><strong>DC 15 Wisdom (Insight) — Watching a specific suspect soldier over three or more days</strong></summary>
+
+A saboteur under cover in a military unit will show three consistent behaviors: they seek private conversations in non-private spaces (whispering in the courtyard rather than entering a room), they are consistently present at information chokepoints without having a stated reason to be there, and their personal routine has one anomaly they cannot fully explain. The anomaly is the tell. Everyone can account for their time most of the time. The moment that does not fit is the moment worth examining.
+
+</details>
+
+<details>
+<summary><strong>DC 17 Charisma (Deception) — Constructing a false rumor about the spear and seeding it in the vicus to observe which soldiers report it upward</strong></summary>
+
+A saboteur's job is to relay information back to their handler. If you introduce false information into the rumor network and track who acts on it, you can identify who is connected to the network. This requires: planting a specific, unusual, verifiable-sounding false detail (e.g., the spear responds to Germanic speech); doing so in a location where three or fewer people hear it; and then monitoring who mentions it, in what form, to whom. Anyone who reports the false detail verbatim — rather than as a rumor — was listening carefully enough to be transcribing, not gossiping. This check is contested by the saboteur's Insight: tie goes to the saboteur.
+
+</details>
+
 **Weather**
 
 Rain turns the parade ground into a swamp. Snow makes ladders useless but freezes fingers to shields. Visibility drops to nothing during storms. Use weather as both obstacle and omen; Cassia reads lightning as Mars' punctuation.
+
+**What you learn about the frontier weather without a check:**
+
+- **Survival proficiency** — The prevailing wind at Vindolanda comes from the north-northwest. It brings rain and cold from the highlands. A wind shift to the southeast means a clear period is coming: two to four days before the next system arrives. A wind shift to pure north, with a temperature drop, means snow within twelve hours. You have learned to read this in your first week.
+- **Nature proficiency** — The bog to the north of the fort does not freeze solid even in winter. The ice crust over it looks load-bearing and is not. Germanic raiders know this and use the bog to funnel Roman pursuit into places where they have the advantage. Do not chase anyone north into terrain you have not personally walked.
+
+<details>
+<summary><strong>DC 14 Wisdom (Survival) — Reading the weather signs at dusk over three consecutive evenings</strong></summary>
+
+The current weather pattern: two days of clear cold, then rain, cycling. The next clear period ends tomorrow evening. The rain that follows will be heavy enough to flood the ditch on the north side, reducing it from an obstacle to a trough of standing water. The flood lasts approximately six hours. In those six hours, the north ditch provides no defensive value. This window repeats predictably every four to five days based on the pattern of the last three weeks. Anyone planning to approach the fort from the north knows this cycle or has learned it from watching.
+
+</details>
 
 **The Vicus at Night**
 

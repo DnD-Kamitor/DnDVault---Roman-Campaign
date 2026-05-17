@@ -123,6 +123,50 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 | *Framea* (Germanic spear-javelin) | 4 | Black market | Sigrun trades these; captured stock |
 | *Seax* (Germanic blade) | 8 | Black market | Captured or traded; no official source |
 
+::: {.callout-note appearance="minimal" collapse="true"}
+## Melee weapon mechanics
+
+**Gladius** (*gladius hispaniensis*)
+
+*Action:* Attack action. *Effect:* 1d6 piercing, finesse, light. The standard-grade armory gladius is a mundane weapon with no special properties. Rufus's quality gladius (+30 d) has superior edge retention: ignore the first failed maintenance roll per session (see equipment degradation rules in this file). *Skill synergy:* Athletics (grapple follow-through), Intimidation (drawing the blade as a social gesture carries weight at DC 12). *When:* Every session; the gladius is the weapon you are buried with.
+
+**Pugio** (*pugio*)
+
+*Action:* Attack action or can be drawn as a Bonus Action if you have the Dual Wielder feat. *Effect:* 1d4 piercing, finesse, light. Can be used for Sleight of Hand tasks that require a blade (cutting rope, prying a seal) without the -5 penalty that improvising with a gladius would impose. *Uses:* Unrestricted. *When:* Sessions 1, 3, 4 (vault, forest, and close-quarters scenes).
+
+**Spatha** (*spatha*)
+
+*Action:* Attack action. *Effect:* 1d6 slashing, versatile (1d8 two-handed), reach advantage on opportunity attacks when mounted. While mounted, you do not have disadvantage on melee attack rolls against unmounted targets of Medium size or smaller. *When:* Session 2 (road) and Session 5 (if cavalry-role players use mounts).
+
+**Hasta** (*hasta*)
+
+*Action:* Attack action. *Effect:* 1d6 piercing, reach, thrown (20/60). Unlike the pilum, the hasta is a reusable weapon: retrieve from a downed enemy or the ground as a free object interaction. *When:* Sessions 1-3; the hasta is the fallback when you've spent your pila.
+
+**Dolabra** (*dolabra*)
+
+*Action:* Attack action (improvised weapon: 1d6 bludgeoning, heavy) OR Tool use (no action cost while not in combat). *Effect:* As a tool: grants advantage on Athletics checks to break down a door or wall section with timber framing. Used in the vault or forest it counts as a digging tool for the degradation rules. *Skill synergy:* Athletics (demolition), Survival (digging field fortifications). *When:* Session 1 vault (breaching sealed doors), Session 3 forest (making camp).
+
+**Contus/Kontos** (*contus*)
+
+*Action:* Attack action. *Effect:* 1d12 piercing, reach, heavy, two-handed. Requires a mount or a brace position (costs your movement) to use without disadvantage while on foot. Not in current stock; Order only. *When:* Session 5 (open field confrontation).
+
+**Falx** (*falx*)
+
+*Action:* Attack action. *Effect:* 1d10 slashing, heavy, two-handed. Ignores the AC bonus granted by shields (the curved blade hooks over the shield rim). Carrying a falx without written Legate authorization is an offense: if seen by any Roman military NPC (DC 11 Perception to notice), expect a Persuasion DC 16 challenge or detainment. *When:* Sessions 3-5 (Germanic forest and siege chapters, where carrying it draws less Roman scrutiny).
+
+**Net** (*rete*)
+
+*Action:* Attack action (thrown, 5/15 ft). *Effect:* On hit (contested Athletics vs. target's Strength or Dexterity), the target is restrained until it uses an action to make DC 12 Strength check to escape, or until cut free. A net has no effect on creatures that are Huge or larger, or creatures that are formless. *Uses:* 1 net per attack; must retrieve or replace. *When:* Sessions 1, 4 (vault creature control; sacred grove).
+
+**Framea** (*framea*)
+
+*Action:* Attack action OR thrown (20/60 ft). *Effect:* 1d6 piercing, versatile (1d8), thrown. The framea is shorter than a Roman hasta and lighter: no disadvantage on attack rolls in confined spaces of 5-foot width (vault corridors, forest undergrowth). If you spend your entire movement to close with a target (no movement remaining), you may throw the framea as a Bonus Action with -2 to hit. Sourced black market only; carrying one is noted by Roman officers (Insight DC 13 to conceal your discomfort when questioned). *When:* Session 1 vault (the preserved warrior's framea in the Flooded Gallery is a free pickup), Sessions 3-4.
+
+**Seax** (*seax*)
+
+*Action:* Attack action. *Effect:* 1d6 slashing, finesse, light. When you reduce a creature to 0 HP with a seax, you may make a free Intimidation check against one creature that can see you (DC 10 + creature CR). *When:* Sessions 3-5 (Germanic context; the seax reads differently than the pugio to Germanic NPCs, granting +2 to Charisma checks with Germanic characters who see it).
+:::
+
 #### Thrown Weapons
 
 | Weapon | Price (d) | Availability | Notes |
@@ -135,6 +179,38 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 | *Francisca* (throwing axe) × 3 | 10 | Black market | Captured Germanic stock; irregular supply |
 | *Angon* (barbed spear) | 12 | Black market | Scarce; usually field-captured |
 
+::: {.callout-note appearance="minimal" collapse="true"}
+## Thrown weapon mechanics
+
+**Heavy Pilum** (*pilum grave*)
+
+*Action:* Attack action (thrown, 30/60 ft). *Effect:* 1d10 piercing on hit. On hit, the target's shield bonus to AC is reduced by 2 until the start of its next turn (the heavy pilum is designed to embed in shields and drag them down). If the target fails a DC 13 Strength saving throw, its shield is also made unwieldy for 1 round (no shield AC bonus). After throwing, the pilum is bent and cannot be re-thrown without a smith's repair (Rufus, 1 d per pilum). *Uses:* Each pilum is single-use. Sign out from Quartus. *Skill synergy:* Athletics (the heavy pilum counts as a thrown weapon for catching bonuses if you have the Tavern Brawler feat). *When:* Sessions 2, 4, 5 (open formations, siege defense, arena).
+
+**Light Pilum** (*pilum leve*)
+
+*Action:* Attack action (thrown, 40/80 ft). *Effect:* 1d6 piercing on hit. Same shield-crippling property as the heavy pilum. Lighter; no disadvantage when throwing while wearing non-heavy armor. After throwing, it bends and is non-reusable. *When:* Same as heavy pilum; the light version is the patrol-standard choice (lower carry weight).
+
+**Plumbata** (*plumbata* x5)
+
+*Action:* Attack action (thrown, 30/60 ft). *Effect:* 1d4 piercing. No sign-out required. Thrown in a high arc: can target creatures in half-cover (the dart drops over the shield rim). A creature with a shield and no roof overhead has no AC bonus against plumbata. Carry up to 5 darts in the standard belt quiver. *Uses:* Recoverable after combat (DC 10 Perception to find all 5; on a fail, recover 1d4). *When:* Sessions 1, 2, 4, 5.
+
+**Verutum** (*verutum*)
+
+*Action:* Attack action (thrown, 20/40 ft). *Effect:* 1d6 piercing, light. Small enough to draw and throw as part of an off-hand attack without the Two-Weapon Fighting style (treat as a light weapon for the Bonus Action throw). Recoverable like a dart. *When:* Sessions 1-3; the verutum is the close-quarters throwing option in the vault corridors (the pilum is too long to wind up).
+
+**Lancea** (*lancea*)
+
+*Action:* Attack action (thrown, 20/60 ft) or melee (1d6 piercing, versatile). *Effect:* 1d8 piercing thrown. Cavalry issue: while mounted, throw without disadvantage regardless of relative target elevation. The head is not designed to bend; recoverable after combat (same as verutum). *When:* Session 2 (mounted road section), Session 5.
+
+**Francisca** (*francisca* x3)
+
+*Action:* Attack action (thrown, 10/30 ft). *Effect:* 1d6 slashing. After the francisca misses or hits, it bounces unpredictably: the target and each creature within 5 feet of where it lands must make a DC 10 Dexterity saving throw or take 1d4 slashing (the tumbling axe). This secondary effect happens even on a miss. Black market only. *Uses:* 3 per purchase; recoverable but distinctive (any Roman officer who sees a francisca in your kit will ask questions). *When:* Sessions 3-4 (Germanic territory, where the weapon fits the scene).
+
+**Angon** (*angon*)
+
+*Action:* Attack action (thrown, 20/40 ft). *Effect:* 1d8 piercing. If the angon hits, it embeds like the heavy pilum but with a barbed head: the target is also grappled by the shaft until it uses an action to make DC 14 Strength check (the barb resists removal). You may use your Bonus Action to yank the embedded shaft: the grappled creature is pulled 5 feet toward you. Scarce; field-capture only. *When:* Sessions 3-5.
+:::
+
 #### Ranged Weapons
 
 | Weapon | Price (d) | Availability | Notes |
@@ -144,6 +220,30 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 | *Arcus Compositus* (composite bow) | 60 | Black market | Eastern auxiliary surplus; Sigrun can source at Camp Level 2 |
 | *Arcuballista*, wall-mounted | Fort asset | In stock (2) | Operational on the walls; not personal equipment |
 | *Arcuballista*, hand-carried | Materials + 10 d | Crafted (Camp L2) | Rufus assembles from ordered parts; takes 3 days |
+
+::: {.callout-note appearance="minimal" collapse="true"}
+## Ranged weapon mechanics
+
+**Sling** (*funda*)
+
+*Action:* Attack action (ranged, 30/120 ft). *Effect:* Damage and rider effects depend on ammunition (see Ammunition section below). Loading the sling requires both hands and a free action; you cannot use a shield while slinging. *Skill synergy:* A sling improvised from rope and a stone (no kit) uses DC 12 Sleight of Hand to fashion in 1 minute; it has the same statistics. *When:* Sessions 1, 3, 4 (vault entrance and distance harassment in the forest and grove; the sling carries where a bow would catch on trees).
+
+**Shortbow**
+
+*Action:* Attack action (ranged, 80/320 ft). *Effect:* 1d6 piercing, two-handed. Standard D&D shortbow. Unremarkable mechanically; included for players who want a bow and are not Eastern auxiliary background. Order only. *When:* Session 2 onward.
+
+**Arcus Compositus** (*arcus compositus*, composite bow)
+
+*Action:* Attack action (ranged, 100/400 ft). *Effect:* 1d8 piercing, two-handed. You may add your Strength modifier to the damage roll if positive (the Eastern composite stave is drawn with more power than a simple bow). A creature at short range (within 30 ft) takes +2 damage from the composite bow's superior draw weight. Black market or Camp Level 2 only. *When:* Sessions 2, 5 (open engagement range; this is the sniper's weapon at Vindolanda).
+
+**Arcuballista, wall-mounted** (*arcuballista*)
+
+*Action:* Requires a two-person crew (one loads, one aims); total 1 full Action to load and fire. *Effect:* 1d12 piercing, range 120/480 ft, ignores half and three-quarters cover (the heavy bolt punches through). Fort asset only; cannot be carried. *Uses:* Requires Quartermaster-issued bolts. *Skill synergy:* A character with proficiency in siege weapons (Engineer role) reduces the crew requirement to one person and the load-fire action to a single Action. *When:* Session 4 siege defense. The two operational wall arcuballistae are named "Corvus" and "Pia" by the garrison.
+
+**Arcuballista, hand-carried** (*arcuballista manualis*)
+
+*Action:* Attack action (ranged, 80/320 ft). *Effect:* 1d10 piercing, two-handed, loading property (requires a Bonus Action to reload between shots). Counts as a heavy crossbow for feat and proficiency purposes. *Uses:* 10 bolts per kit issued. *When:* Camp Level 2 only. Session 3 onward if Rufus assembles it before the party departs.
+:::
 
 ---
 
@@ -155,6 +255,26 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 | *Clipeus* (auxiliary round shield) | 7 | Limited (15) | Cavalry issue; 15 in stock |
 | *Parma* (Germanic round shield) | 5 | Black market | Captured or traded; not official issue |
 | Siege Pavise | 5 | Crafted | Rufus builds from timber in 2 hours; no parts order required |
+
+::: {.callout-note appearance="minimal" collapse="true"}
+## Shield mechanics
+
+**Scutum** (*scutum*, legionary tower shield)
+
+*Action:* No action to equip (part of kit). *Effect:* +2 AC while equipped. While you are within 5 feet of at least two other characters also carrying a *scutum*, you gain +1 additional AC (testudo adjacency bonus). **Shield bash:** As a Bonus Action, you may attempt a shield bash against a creature within 5 feet: make an Athletics check contested by the target's Athletics or Acrobatics. On success, the target is pushed 5 feet or knocked prone (your choice). *Uses:* Unrestricted while equipped. *When:* Sessions 4, 5 (siege defense and the divine arena; the testudo formation is pivotal in Chapter 4).
+
+**Clipeus** (*clipeus*, auxiliary round shield)
+
+*Action:* No action to equip. *Effect:* +2 AC while equipped. Lighter than the scutum: does not impose disadvantage on Stealth checks. No testudo adjacency bonus. Compatible with one-handed ranged weapons (you may sling or throw with the clipeus equipped at -1 to attack rolls). *When:* Sessions 2-3 (patrol and forest where moving quietly matters more than a formation).
+
+**Parma** (*parma*, Germanic round shield)
+
+*Action:* No action to equip. *Effect:* +1 AC (lighter, smaller). No Stealth penalty. When a Germanic NPC (Vercingetorix, Thusnelda, tribal warriors) sees you carrying a *parma*, they treat you as one reputation step more sympathetic (black market only, so this is the shield you arrive in the forest with if you planned ahead). *When:* Session 3 (Germanic forest chapters).
+
+**Siege Pavise**
+
+*Action:* 1 minute to set up (plant it in the ground). *Effect:* Provides three-quarters cover (+5 AC, +5 Dexterity saving throws) to one Medium or smaller creature behind it. Cannot be carried and used simultaneously. Rufus makes one per 2 hours from fort timber at no materials cost (he uses construction scraps). *Skill synergy:* A character with mason's or carpenter's tools proficiency can set up the pavise in 30 seconds instead of 1 minute. *When:* Session 4 (siege defense; the pavise is the reason ranged players survive the arrow storm in Scene 3 of Chapter 4).
+:::
 
 ---
 
@@ -170,6 +290,30 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 | *Linothorax* (layered linen) | 15 | Order | Not standard legionary issue; officers and tradition-keepers |
 | Hide/leather armor | 12 | In stock | Produced locally; Germanic craftsmen also sell |
 
+::: {.callout-note appearance="minimal" collapse="true"}
+## Body armor mechanics
+
+**Lorica Segmentata** (*lorica segmentata*)
+
+*Action:* 10 minutes to don (requires an assistant; 5 minutes alone). *Effect:* AC 17. Weight: 35 lbs (heavy armor). Imposes disadvantage on Stealth checks. Imposes -10 ft speed penalty on characters with Strength 13 or lower. Repair: requires smith's tools proficiency and 1 hour per damaged section; a character without proficiency can attempt DC 14 Dexterity check (failure means the repair holds but creaks, imposing disadvantage on Stealth for 24 hours until Rufus checks it). *Restriction:* Officer requisition required. *When:* Sessions 1, 2, 4, 5 (fort duty and siege; in the forest in Session 3 the weight and noise are serious liabilities).
+
+**Lorica Hamata** (*lorica hamata*, chainmail)
+
+*Action:* 5 minutes to don. *Effect:* AC 15. Weight: 28 lbs (heavy armor). Same Stealth disadvantage as all heavy armor. More flexible than the segmentata: no speed penalty for any Strength score, and can be repaired with basic leatherworking tools (patch rings with wire) in 30 minutes without a tool proficiency check for minor damage. *When:* All sessions; the workhorse armor.
+
+**Lorica Squamata** (*lorica squamata*, scale)
+
+*Action:* 5 minutes to don. *Effect:* AC 14 (medium armor). Weight: 22 lbs. No Stealth disadvantage. Resistance to the first point of piercing damage from arrows per attack (the overlapping scales deflect glancing arrow hits: reduce piercing damage from ranged weapon attacks by 1, minimum 1). *When:* Sessions 2, 4, 5 (watch officers and cavalry; good for mounted characters who face arrow fire).
+
+**Linothorax** (*linothorax*, layered linen)
+
+*Action:* 5 minutes to don. *Effect:* AC 13 + Dexterity modifier (max +2) (medium armor). Weight: 12 lbs. No Stealth disadvantage. No speed penalty. Damaged by water immersion: 4 hours submerged or heavy rain without oilskin covering reduces AC to 12 until dried and re-pressed (4 hours, no tools required). Order only. *When:* Sessions 3, 4 (the forest and river crossing favor lighter armor).
+
+**Hide/Leather armor**
+
+*Action:* 5 minutes to don. *Effect:* AC 11 + Dexterity modifier (light armor). Weight: 13 lbs. No Stealth disadvantage. No restrictions. When a Germanic NPC sees you wearing Germanic-style hide armor (not Roman leather), they treat you as one step less threatening for initial social checks. *When:* All sessions; the only armor that does not provoke comment in the Germanic settlements.
+:::
+
 #### Helmets
 
 | Helmet | Price (d) | Availability | Notes |
@@ -180,12 +324,44 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 | *Spangenhelm* (Germanic riveted) | 12 | Limited (10) | Germanic-heritage auxiliaries; 10 in stock |
 | *Aventail* (mail neck curtain) | 8 | Order | Attaches to *Spangenhelm*; Rhine workshops, 4-week lead |
 
+::: {.callout-note appearance="minimal" collapse="true"}
+## Helmet mechanics
+
+**Galea Coolus** (*galea Coolus*, standard iron)
+
+*Effect:* Reduces critical hit damage: when you are struck by a critical hit to the head (any critical hit while you are prone or grappled counts as a head hit), reduce the bonus damage dice by one die (e.g., 2d6 becomes 1d6 bonus dice). *When:* All sessions. The one piece of equipment you cannot plausibly leave at the fort.
+
+**Galea Attica** (*galea Attica*, open-face)
+
+*Effect:* Same crit reduction as the Coolus. Additional benefit: no Perception penalty when making Wisdom (Perception) checks based on hearing (the open-face design does not muffle sound the way cheek-guards do). Preferred by officers who need to give orders clearly. *When:* All sessions, especially social-heavy early encounters in Sessions 1-2.
+
+**Centurion's Galea** (transverse crest)
+
+*Effect:* Same as Galea Attica. While wearing this helmet, any Roman soldier who can see you treats your Charisma (Intimidation) checks as having a +3 bonus (rank insignia does what words cannot). Any check to impersonate an officer of lower rank is made at advantage. *Restriction:* Corvinus must confirm the rank grant. *When:* Sessions 1-4 (social encounters with the garrison, command authority scenes).
+
+**Spangenhelm** (*spangenhelm*, Germanic riveted)
+
+*Effect:* Same crit reduction as the Coolus. Accepts an *aventail* attachment (mail neck curtain, 8 d, Order): when the aventail is attached, you have resistance to the first 2 slashing damage from any attack that hits your neck or throat (DM adjudicates flavourfully; mechanically, reduce slashing damage by 2 once per turn). When a Germanic NPC sees you wearing a *spangenhelm*, you are treated as one familiarity step less foreign (reduces the base Persuasion DC by 1 with tribal NPCs). *When:* Sessions 3-5.
+:::
+
 #### Arms, Gloves, and Protection
 
 | Item | Price (d) | Availability | Notes |
 |---|---|---|---|
 | Leather gauntlets (standard) | 2 | In stock | Cavalry and engineer standard issue |
 | *Manica* (articulated arm guard) | 20 | Crafted | Rufus makes these; 2-day lead time, requires iron stock |
+
+::: {.callout-note appearance="minimal" collapse="true"}
+## Arms and glove mechanics
+
+**Leather gauntlets**
+
+*Effect:* +1 AC against unarmed strikes and natural weapon attacks (bite, claws, slam) that hit your hands. Grants advantage on Strength (Athletics) checks made to maintain a grapple when the target is attempting to escape by biting or scratching your hands. Required for archery in cold conditions: without gloves, ranged attack rolls in freezing weather (Sessions 2-3 in winter) have disadvantage.
+
+**Manica** (*manica*, articulated arm guard)
+
+*Effect:* +1 AC (stacks with body armor, occupies the arms slot). Reduces the damage of the first disarm attempt per combat by 2 (the iron splints absorb the impact). Weighs 8 lbs: carrying the manica plus *lorica segmentata* imposes an additional -5 ft speed penalty. Rufus makes to order, 2-day lead time. *When:* Session 4, 5 (siege tunnel fighting and the divine arena; the manica is the tunnel fighter's choice).
+:::
 
 #### Cloaks
 
@@ -195,6 +371,22 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 | *Birrus* (hooded traveling cloak) | 8 | In stock | Locally made; universal at Vindolanda |
 | *Paludamentum* (scarlet command cloak) | 35 | Limited (3) | Officers' stores; rank verification required |
 
+::: {.callout-note appearance="minimal" collapse="true"}
+## Cloak mechanics
+
+**Sagum** (*sagum*, military wool)
+
+*Effect:* Grants advantage on Constitution saving throws against the Extreme Cold condition (temperature below -10°C, which applies during the Sessions 2-3 winter march). Weighs 4 lbs. In heavy rain, provides 4 hours of protection before becoming waterlogged (disadvantage on Stealth checks once waterlogged; 2 hours to dry by fire). *When:* Sessions 2, 3 (the northern winter; the forest night camp in Chapter 3 will test this).
+
+**Birrus** (*birrus*, hooded traveling cloak)
+
+*Effect:* As *sagum* for cold protection. Additionally: the hood grants advantage on Stealth checks in dim light or darkness when standing still (the silhouette breaks up against foliage). *When:* All sessions outdoors; universally practical.
+
+**Paludamentum** (*paludamentum*, scarlet command cloak)
+
+*Effect:* While wearing this cloak, you have advantage on Charisma (Persuasion and Intimidation) checks against Roman military personnel of lower rank (centurion and below). You have disadvantage on Stealth checks (the scarlet is the point). Any Roman who sees you wearing this will treat you as an officer until given strong reason to doubt it: start social checks with Roman NPCs at the "known officer" disposition tier rather than "stranger." *Restriction:* Officers' stores; rank verification required. *When:* Sessions 1, 2, 4 (high command interactions; actively counterproductive in Sessions 3 and 5).
+:::
+
 #### Boots and Belt
 
 | Item | Price (d) | Availability | Notes |
@@ -203,6 +395,26 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 | Military boots (enclosed leather) | 8 | In stock | Officers, cavalry, cold-weather standard |
 | *Cingulum Militare*, standard | 5 | In stock | Standard issue; bronze fittings |
 | *Cingulum*, officer grade | 15 | Limited (8) | Brass and silver fittings; marks seniority |
+
+::: {.callout-note appearance="minimal" collapse="true"}
+## Boot and belt mechanics
+
+**Caligae** (*caligae*, hobnailed military sandal)
+
+*Effect:* Grants +2 to the Athletics check to maintain footing on packed-earth or stone surfaces when shoved or knocked. On grass, mud, or loose ground: the hobnails are a liability. Stealth checks in stone corridors (the vault in Session 1, fort interiors) have disadvantage (the hobnails ring on stone). The sound is a known military sound: it may alert sentries. *Skill synergy:* When used to stomp on a prone enemy as part of a grapple (Athletics, DM discretion), deal 1d4 piercing bonus damage. *When:* Session 1 vault (the noise is a real consideration in the silent chambers).
+
+**Military boots (enclosed leather)**
+
+*Effect:* No Stealth disadvantage on stone. Grants the same footing bonus as caligae on soft ground (mud, grass, loose soil). Costs 8 d (3 more than caligae). No hobnail noise. *When:* Sessions 3-5 (forest and infiltration scenes; the boots are the quiet choice).
+
+**Cingulum Militare** (*cingulum militare*, military belt)
+
+*Effect:* The standard belt is load-bearing equipment. Carries up to 5 lbs of kit at no encumbrance cost beyond its own weight. The hanging *pteruges* (leather strips) provide +1 AC against area-of-effect attacks that catch you from below (a floor trap's upward blast, for instance). *Social effect:* Any Roman who sees you without a *cingulum* treats you as a civilian or a soldier out of uniform. The belt is the most visible rank marker below armor. *When:* All sessions.
+
+**Cingulum, officer grade**
+
+*Effect:* As the standard belt. Additionally: grants advantage on Charisma checks to establish your Roman status in civilian or Germanic social scenes. A man wearing silver and brass belt fittings on the frontier is read as someone with standing. *When:* Sessions 1, 2, 4 (social scenes with Corvinus, Cassia, the Tribune).
+:::
 
 ---
 
@@ -232,6 +444,40 @@ Full availability tracking in `roman_tactics.qmd`. Summary at Vindolanda, Sessio
 | *Verutum* (each) | 1 d | 200 | Yes |
 | *Lancea* (each) | 5 d | 40 | Yes |
 
+::: {.callout-note appearance="minimal" collapse="true"}
+## Ammunition mechanics
+
+Full damage and range statistics are in `roman_tactics.qmd`. This section covers the in-play decision: why carry this instead of the standard type?
+
+**Stone (sling)** — Free, unlimited. 1d4 bludgeoning. No Quartermaster sign-out. The floor option: use when you have nothing else or need to be subtle about your supply draw.
+
+**Glandes** (*glandes*, lead shot x20) — 1 d/20, sign-out required. 1d6 bludgeoning. The standard combat choice over stone: better mass, tighter grouping. Against unarmored or lightly armored targets, lead shot is the go-to.
+
+**Whistling glandes** (*glandes stridentes* x20) — 1.5 d/20, sign-out required. 1d6 bludgeoning. The drilled shot produces a shriek during flight. On hit, the target must make a DC 11 Wisdom saving throw or be frightened of you until the end of their next turn (the sound is disorienting at close range). *When:* Sessions 3-4 (Germanic forest; the whistling is psychologically effective against enemy morale; also effective against animals in Session 2).
+
+**Inscribed lead** (*glandes inscriptae* x20) — 1 d/20, sign-out required. 1d6 bludgeoning. Carries a message scratched into the lead (usually a taunt or a legion motto). No mechanical difference from standard glandes, but when a fallen enemy carries your inscribed shot, it becomes an intelligence tool: Investigation DC 12 to find the shot, which identifies the unit that fired it. Relevant for the disinformation subplot in Session 2. *When:* Sessions 2, 4.
+
+**Terracotta shot** (*glandes argilaceae* x20) — 1 d/20, craftable (no sign-out). 1d4 bludgeoning. Fragmenting: on hit, the shot shatters. Each creature within 5 feet of the target (not the target itself) makes a DC 10 Dexterity save or takes 1 piercing damage. Less damaging than lead but the fragmentation catches groups. *When:* Sessions 4, 5 (tight formations).
+
+**Clay incendiary** (*glandes incendiariae* x10) — 2 d/10, sign-out required. 1d4 fire on hit; the incendiary material ignites on impact. A flammable surface (timber, thatch, cloth) struck by clay incendiary catches fire (DC 12 Dexterity action to smother it before it spreads). *When:* Session 4 siege defense (the gate timbers, enemy ladders, the granary threat subplot).
+
+**Standard arrows** (x20) — 1 d/20, sign-out required. 1d6 piercing. No special properties. Sign-out from Quartermaster.
+
+**Bodkin arrows** (*sagitta aculeata* x20) — 5 d/20, sign-out required. 1d6 piercing. Ignores the AC bonus from non-tower shields (+1 or +2 AC from round shields and parma is negated). The narrow point punches through ring or scale armor links: against targets in *lorica hamata* or *lorica squamata*, count their armor as providing 1 less AC. *When:* Sessions 4, 5 (armored opponents in the siege and the arena).
+
+**Broadhead arrows** (x20) — 6 d/20, sign-out required. 1d8 piercing. On a hit, the target must make a DC 12 Constitution saving throw or suffer 1d4 additional bleeding damage at the start of each of its turns until it uses an action to make a DC 12 Medicine check (or is stabilized). Only one bleeding wound can be active at a time. *When:* Sessions 3, 5 (forest hunting and the divine arena; the bleed matters against high-HP enemies).
+
+**Fire arrows** (*sagitta ignita* x10) — 2 d/10, sign-out required. 1d4 fire damage on hit. Sets flammable targets alight. Requires a lit torch or fire source to use: no free action to light; it costs an object interaction. *When:* Session 4 siege (assault repulsion, gate ignition contingency).
+
+**Trilobate arrows** (*sagitta trilobata* x20) — 8 d/20, sign-out required. 1d6 piercing + 2. The three-wing head causes wounds that resist closing: creatures hit by trilobate arrows cannot benefit from the short rest Hit Dice healing bonus until they receive a DC 12 Medicine check from a healer. *When:* Sessions 3-5 (expert-level tactical choice against regenerating or tough enemies).
+
+**Barbed arrows** (*sagitta hamata* x20) — 7 d/20, sign-out required. 1d6 piercing. If the target does not have the barbed arrow removed before their next turn, they take 1d4 additional piercing damage at the start of that turn as they move. Removal costs the target (or an adjacent creature) a Bonus Action and a DC 12 Medicine check; failure deals 1d4 piercing to the target. *When:* Sessions 3-5.
+
+**Scythicon poison arrows** (*sagitta scythica* x10) — 20 d/10, Sigrun only. 1d6 piercing + the target makes a DC 14 Constitution saving throw or is poisoned for 1 hour. A creature that fails by 5 or more is also paralyzed for 1 minute. Only Sigrun stocks these, and she will not sell them to a character below Acquaintance+ reputation with her. Carrying these without justification is a legal risk if searched by Roman officers (Persuasion DC 16 to explain the possession). *When:* Sessions 3-5 (assassination subplot, specific creature encounters).
+
+**Arcuballista bolts** (x10) — 2 d/10, sign-out required. 1d10 piercing (wall-mounted) or 1d8 piercing (hand-carried). No special properties; heavy construction punches through light cover. Requires the correct arcuballista type (wall bolts do not fit the hand-carried model and vice versa).
+:::
+
 ---
 
 ### Tools and Kits
@@ -250,6 +496,46 @@ Full availability tracking in `roman_tactics.qmd`. Summary at Vindolanda, Sessio
 | Tinker's Tools | 12 | In stock | Mechanical repair; *fabrica* standard |
 | Alchemist's Supplies | 25 | Order | Not stocked; Valeria has partial kit at Camp Level 2 |
 | Thieves' Tools | 15 | Black market | Not official; *vicus* or Sigrun |
+
+::: {.callout-note appearance="minimal" collapse="true"}
+## Tool and kit mechanics
+
+**Smith's Tools** (*ferramenta fabri*)
+
+*Effect:* Required for weapon and armor repair. With proficiency: repair a minor weapon (edge resharpening, hilt retightening) in 30 minutes, no check. Repair a major weapon (bent blade, cracked hilt) with DC 14 Strength check, 2 hours, and 1 d in materials. Repair a minor armor section (lorica segmentata plate bent or unclipped, ring mail with broken links) in 1 hour, no check. Without proficiency: all repair tasks require a DC 14 Dexterity check; failure means the item is usable but has disadvantage on its next significant impact. *Skill synergy:* Investigation (examining a weapon or lock for tampering, DC 11). *When:* Sessions 1-5 (equipment degrades; the smith's tools keep it functional).
+
+**Mason's Tools** (*instrumenta muraria*)
+
+*Effect:* With proficiency: assess structural stability of a wall, floor, or ceiling in 1 minute (DC 13 Investigation, advantage with the tools). Breach a standard stone or mortar joint in 10 minutes per foot of depth (no check if time is available; DC 14 Strength check if rushed to 3 minutes). Identify intentional construction versus natural formation (DC 11 Investigation). *When:* Session 1 vault (the branching construction is partly Roman, partly older; tools let you distinguish). Session 4 tunnel (structural hazard assessment).
+
+**Carpenter's Tools** (*instrumenta lignaria*)
+
+*Effect:* With proficiency: build a field barricade (provides half cover for 2 Medium creatures) in 1 hour from available timber. Repair a broken door, wagon wheel, or shield rim in 30 minutes. Identify the age and origin of timber construction (DC 12 History or Investigation with the tools). Rufus will share his set for approved projects; no Quartermaster sign-out required. *When:* Sessions 1, 3, 4 (building defenses, repairing the cart in Session 3, fortification work in Session 4).
+
+**Healer's Kit** (*armamentarium medici*, 10 uses)
+
+*Action:* 1 Action (stabilize) or 1 Action (field dressing). *Effect:* Spend 1 use to stabilize a dying creature without requiring a Medicine check (automatic success on death saving throw stabilization). Spend 1 use and make a DC 10 Wisdom (Medicine) check: on success, a stable creature (0 HP but not dying) regains 1 HP. Spend 2 uses and make a DC 14 Wisdom (Medicine) check: on success, remove the Poisoned condition or reduce one level of exhaustion. *Uses:* 10 uses per kit. The *medicus* controls stock: 8 kits at campaign start. Valeria in the *vicus* can resupply from Session 1 onward at the listed price. *Skill synergy:* Medicine proficiency lets you attempt the 2-use exhaustion reduction without proficiency check penalty (without proficiency, the DC rises to 16). *When:* All sessions; carry one. Always.
+
+**Herbalist Kit**
+
+*Action:* 10 minutes to prepare a specific remedy (requires appropriate herbs). *Effect:* Prepared remedy counts as 1 dose of *willow bark*, *yarrow*, *theriac*, or a custom preparation depending on available herbs. The preparation DC varies by compound: willow bark tea (DC 8), yarrow poultice (DC 8), basic theriac substitute (DC 14). *Uses:* Kit lasts for 5 preparations before exhausting supplies; refill from Valeria or field gathering. Field gathering in the forest (Session 3) requires DC 13 Survival check to identify appropriate plants; DC 15 to find enough for 3 doses. *When:* Sessions 2-5; especially Session 3 where Valeria's supply is inaccessible.
+
+**Forgery Kit**
+
+*Action:* 1 hour per page of forgery. *Effect:* Produce a forged document (order, letter, requisition). The quality of the forgery determines the DC to detect it: rushed forgery (30 minutes) DC 12 Investigation to spot; careful forgery (1 hour, advantage on the Deception check) DC 16 to spot; expert forgery (2+ hours, with calligrapher's supplies as well) DC 20 to spot. The fort *librarius* knows the correct seal patterns; the forgery kit alone is insufficient to replicate the Legate's seal without a wax impression first. *When:* Sessions 1-4 (the Tribune plot, the supply requisition system, the contract documents from the vault).
+
+**Thieves' Tools**
+
+*Action:* 1 Action (with proficiency) or 2 Actions (without, improvising). *Effect:* Attempt to pick a lock. DCs in this campaign: standard fort lock (DC 12), good fort lock (DC 16), Legate's reserve chest (DC 18), vault chain puzzle lock (DC 20). Without proficiency, add +5 to all DCs. *Uses:* Kit lasts indefinitely unless a pick breaks (roll 1d20 when failing by 5 or more: on a 1, lose one pick). *Skill synergy:* Investigation (examining a lock mechanism before attempting it, DC 10: grants advantage on the pick attempt if successful). *When:* Session 1 (vault chain lock), Session 2 (Tribune's locked documents), Sessions 3-4 (various locked containers).
+
+**Cartographer's Tools**
+
+*Action:* 10 minutes to sketch a room or area from memory. *Effect:* Produce a functional map of a visited area. DM uses the map to determine information-sharing with the party in future sessions. A character with cartography proficiency who maps the vault in Session 1 reduces the Investigation DC for finding connections between chambers in Session 4 by 3. *When:* Session 1 (vault branching layout), Session 3 (forest route for return), Session 4 (fort approaches for siege defense).
+
+**Alchemist's Supplies**
+
+*Action:* 1 hour to produce a basic compound. *Effect:* With proficiency and Session 1 availability (Order only; Valeria has partial kit at Camp Level 2): produce *Greek fire* substitute (2d4 fire in a 5-foot splash, DC 12 Dexterity save for half, requires 1 hour and materials worth 5 d); produce a basic antitoxin substitute (1 dose, as per medical supplies listing); or identify an unknown substance (DC 14 Intelligence check, advantage with the tools). *When:* Camp Level 2 onward; Session 4 siege (the Greek fire is a significant advantage in Chapter 4's assault repulsion).
+:::
 
 ---
 
@@ -283,6 +569,70 @@ Full availability tracking in `roman_tactics.qmd`. Summary at Vindolanda, Sessio
 | Signal whistle (bronze) | 2 d | In stock | Watch standard |
 | Mirror (polished bronze) | 5 d | In stock | Signal use and personal kit |
 
+::: {.callout-note appearance="minimal" collapse="true"}
+## Field consumable mechanics
+
+**Rations, standard (1 day)** (*cibaria*)
+
+*Effect:* One day's ration satisfies the food requirement for 1 day (PHB: a character requires 1 lb of food per day; failure to eat for a day adds one exhaustion level after the first missed day, with a DC 15 Constitution save to avoid it). The fort standard ration is *posca* (sour wine vinegar diluted in water), hardtack bread, salt pork or dried fish, and lentils. *When:* Relevant from Session 2 onward (the first extended patrol). In Session 3, the party depends on Vercingetorix's tribe; refusing the tribal food has social consequences that no carried ration can resolve.
+
+**Rations, preserved (1 day)** (*cibaria dura*)
+
+*Effect:* As standard rations for the food requirement. Additionally: requires no preparation and does not spoil for 30 days in any climate. Characters who subsist on preserved rations for more than 3 consecutive days make a DC 12 Constitution saving throw on the fourth day: on a failure, they gain the Sapped condition (disadvantage on one type of saving throw chosen by the DM, until they eat a hot meal). *When:* Sessions 3-4 (extended patrol, siege; the long march to the forest and back).
+
+**Waterskin**
+
+*Effect:* Holds 4 pints of water (satisfies 1 day's hydration requirement). PHB dehydration: a character requires 1 gallon of water per day (half in mild conditions). Failure to drink for a day: DC 15 Constitution save or gain one exhaustion level. A full waterskin provides half a day's requirement; carry two for full coverage on a march day. *When:* Sessions 2, 3 (the winter road and the forest; reliable water sources exist but are not always accessible when you need them).
+
+**Torch** (x10)
+
+*Action:* 1 bonus action to light (with tinder box available) or 1 action (improvised). *Effect:* Sheds bright light in a 20-foot radius and dim light for an additional 20 feet. Lasts 1 hour. In bright-lit areas, renders Darkvision effectively useless for creatures adapted to darkness (not a player concern; relevant for Shadow encounters in Session 1). A character holding a torch has disadvantage on Stealth checks in darkness. *When:* Session 1 vault (the vault has no light source; the torch is how you see and how you alert the Shadows). Session 3 night camp (fire signals location; players choose between warmth and concealment).
+
+**Lantern, hooded** (*laterna*)
+
+*Action:* 1 bonus action to open or close the hood (controlling the light). *Effect:* When open: bright light in a 30-foot radius, dim light for an additional 30 feet. Lasts 6 hours on 1 pint of oil. When hooded: no light emission. The hooded lantern can be opened as a Bonus Action to suddenly illuminate an area: creatures who cannot see in darkness and are in the newly lit area are not considered hidden (any attempt to hide using the darkness is immediately negated). *Uses:* 1 pint of oil per 6 hours. *Skill synergy:* Investigation checks in a lantern's bright light have advantage compared to torch-lit conditions (the focused beam can be directed). *When:* Session 1 vault (the lantern is strictly better than the torch here: you control when and where you emit light). Limited: 10 in stock for officers and watch; party may need Persuasion to borrow one.
+
+**Oil, lantern (1 pint)**
+
+*Action:* As a thrown improvised weapon: 1 action, range 20 ft. On hit: the target takes no immediate damage but is coated in oil. A coated target that takes fire damage in the next minute takes an additional 1d4 fire damage and must succeed on a DC 10 Dexterity saving throw or catch fire (1d6 fire damage per turn until it uses an action to extinguish). A flask of burning oil (thrown and hit with a torch nearby): 1d4 fire damage in a 5-foot splash. *When:* Session 4 siege (throw oil onto the gate timbers before fire arrows; this combination is the basic siege incendiary sequence).
+
+**Rope, hemp (50 ft)**
+
+*Effect:* Climbing with a rope reduces the Athletics DC by 5 (a DC 15 climb becomes DC 10 with a secured rope). A rope secured at the top converts a vertical surface to horizontal movement cost (climb at half speed, no check required). Can be used to bind a creature: Athletics check vs. the target's Athletics or Acrobatics to tie; once tied, the target cannot free itself without a DC 12 Strength check per attempt. The rope itself has AC 11 and 10 HP; cutting it requires a slashing weapon. *When:* Session 1 vault (the Flooded Gallery has a section requiring Athletics to navigate; the rope turns a risky check into a routine one). Session 3 (river crossing, tree descent).
+
+**Rope, silk (50 ft)**
+
+*Effect:* As hemp rope. Additionally: advantage on checks to tie knots (silk holds a knot tighter). Weighs half as much as hemp rope (2 lbs vs. 4 lbs). DC to cut: 12 (silk is tougher than it looks). Order only, 6-week lead. *When:* Session 4-5 for players who plan ahead in Sessions 1-2.
+
+**Grappling hook**
+
+*Action:* 1 Action to throw and attempt to set. *Effect:* Thrown 60 feet (Dexterity or Athletics check DC 12 to set securely; on failure, the hook does not hold and you may try again next turn). Once set, the attached rope allows climbing at full speed without a check. Can be set silently with a DC 14 Dexterity (Sleight of Hand) check; otherwise the metal-on-stone sound requires DC 13 Perception to hear within 60 feet. *Skill synergy:* A character with Thieves' Tools proficiency uses the fine-motor technique from lock-picking to set the hook: makes the silent-set check at advantage. *When:* Session 1 vault (the flooded gallery has a upper ledge; the grappling hook bypasses 60 feet of swimming), Session 3 (crossing the Rhenus-adjacent river).
+
+**Crowbar** (*vectis*)
+
+*Action:* 1 action to apply. *Effect:* Grants advantage on Strength (Athletics) checks to force open a door, break a lock hasp, pry apart fitted stonework, or lift a portcullis from the ground. Can be used to brace a door shut: the door's DC to force from the other side increases by 5 for the duration it is braced (requires you to remain at the door). *When:* Session 1 vault (the sealed chamber entrance is the obvious application; the branching design has at least two doors that a crowbar bypasses more cleanly than a lockpick). Session 4 (breaching siege barriers from inside).
+
+**Iron spikes** (x10) and **Pitons** (x10)
+
+*Action:* 1 minute per spike to drive into stone or timber (no check). *Effect:* Driven spike: creates a secure anchor point for rope or equipment. A door braced with two iron spikes on the inside requires a DC 18 Strength check to force open (cumulative: the first spike sets DC 15, the second raises it to 18). Pitons driven into a rock face allow climbing at full speed with no check (the pitons provide handholds). *When:* Session 1 vault (spiking doors behind the party is the standard delving safety protocol), Sessions 3-4 (climbing and fortification).
+
+**Tinder box** (*igniarium*)
+
+*Action:* 1 action to light something with available fuel (tinder, oil, dry wood). *Effect:* Lights a torch, lantern wick, or other prepared fuel source without penalty. In adverse conditions (rain, wind): DC 12 Dexterity check to light anything. Without a tinder box: starting a fire requires 10 minutes and a DC 15 Survival check, DC 12 with dry materials. *When:* All sessions; a character without a tinder box who needs fire quickly is in trouble.
+
+**Caltrops** (*tribuli*) — not in the main table but referenced in the melee section
+
+*Action:* 1 action to scatter in a 5-foot square. *Effect:* Creatures moving through the affected square must make a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. A creature that fails this save reduces its walking speed by 10 feet until it regains at least 1 HP. *When:* Session 1 vault (the party can seed caltrops in a corridor before retreating through it), Session 3 (perimeter defense at the forest camp).
+
+**Signal whistle (bronze)** (*fistula*)
+
+*Action:* 1 bonus action. *Effect:* Audible to 600 feet in normal conditions (DC 10 Perception to hear at range). The Roman military uses standardized whistle patterns; a character with soldier background or Military Rank feature knows 4 patterns (advance, halt, retreat, alert). Using the correct pattern with a military whistle triggers the appropriate response from Roman soldiers within range without a Charisma check. *When:* Session 4 siege defense (coordinating the garrison's response to the assault without exposing yourself to arrow fire).
+
+**Mirror, polished bronze** (*speculum*)
+
+*Action:* 1 action to angle. *Effect:* Signal use: reflect sunlight up to 1 mile on a clear day; any creature in the reflected beam's arc must make DC 13 Perception check to notice the signal (the DM determines whether the intended recipient sees it based on position). Used to look around a corner: grants visual observation of an adjacent area without exposing yourself; the viewer has disadvantage on Perception checks through the mirror (-2 to passive Perception as well) but is not directly visible. *When:* Session 1 vault (checking a corridor before entering), Sessions 4-5 (signaling the fort from outside the siege perimeter).
+:::
+
 ---
 
 ### Medical Supplies
@@ -301,6 +651,50 @@ Full availability tracking in `roman_tactics.qmd`. Summary at Vindolanda, Sessio
 | Healing herbs, basic kit | 3 | In stock | Mixed common supply |
 | Superior herbs (Germanic kit) | 4 | Black market | Valeria can source with Acquaintance+ reputation |
 | Antitoxin (1 dose) | 10 | Limited (4) | *Medicus* controls; 4 doses in stock |
+
+::: {.callout-note appearance="minimal" collapse="true"}
+## Medical supply mechanics
+
+**Bandages** (*fasciae*, 10 strips)
+
+*Action:* 1 action. *Effect:* Spend 1 strip to bind a wound. A bandaged wound stops bleeding (ends any ongoing bleeding effect immediately). Applying bandages to a stable creature (0 HP, not dying) allows that creature to spend a Hit Die as if during a short rest without requiring actual rest. *Uses:* 10 strips per purchase; each strip is single-use. *Skill synergy:* Medicine proficiency lets you apply bandages without an action cost (treat as part of the Attack action if you are not attacking). *When:* All sessions; especially Session 1 vault and Session 3 (remote from the *medicus*).
+
+**Vinegar solution** (*acetum*, 1 pint)
+
+*Action:* 1 action to apply to a wound. *Effect:* Prevents infection. A wound cleaned with vinegar within 1 minute of being inflicted does not trigger the infection mechanic (optional rule: wounds in the vault or forest have a 10% chance of infection per long rest without cleaning, imposing one level of exhaustion). *Uses:* 1 pint cleanses up to 3 major wounds or 6 minor ones. *When:* Session 1 vault (the undead strike wounds have a higher infection DC than normal injuries: DC 13 instead of DC 10), Session 3.
+
+**Theriac** (*theriac*, 1 dose)
+
+*Action:* 1 action (self or adjacent creature). *Effect:* Advantage on the next Constitution saving throw made to resist poison or disease effects within 1 hour of consumption. Additionally: ends the Poisoned condition if currently active. *Uses:* 6 doses at campaign start (*medicus* controls stock). *When:* Sessions 2-4 (the road bandits in Session 2 may use poisoned blades; the bog territory in Session 3 has disease vectors; Session 4 siege may involve contaminated water).
+
+**Poppy extract** (*opium*, 1 dose)
+
+*Action:* 1 action. *Effect:* Unconscious creature can now receive complex surgery (required for Valeria's complex field surgery service). A conscious creature that takes 1 dose: advantage on death saving throws for 1 hour, but is Incapacitated (can only move and take Bonus Actions). Currently unavailable: the *medicus* has been requesting this for 3 months. If the party can source it (Investigation DC 14 to find a *vicus* black market contact; Persuasion DC 16), Valeria can perform surgery she currently cannot. *When:* Sessions 2-4 (the complex surgery mechanic matters most after the ambush in Session 2 and the tunnel fighting in Session 4).
+
+**Willow bark** (*cortex salicis*, 10 doses)
+
+*Action:* 5 minutes to brew as a tea; 1 action to administer. *Effect:* Reduces fever and inflammation. A creature suffering from the Sickened condition (high temperature, disadvantage on ability checks) that takes willow bark tea makes a DC 10 Constitution saving throw; on success, the condition ends. One dose also reduces one level of the Exhausted condition acquired through disease (not through physical overexertion). *Uses:* 10 doses per purchase. Valeria's specialty: she can brew a stronger preparation (2 doses combined, DC 9 Constitution save instead of DC 10) for characters with Acquaintance+ reputation. *When:* Session 3 (the bog water in the Germanic forest is brackish; crossing it without filtering has a 20% chance of mild fever).
+
+**Yarrow** (*Achillea millefolium*, 10 uses)
+
+*Action:* 1 bonus action to pack into a wound. *Effect:* Staunches bleeding immediately (ends the Bleeding condition). Additionally: a creature that receives yarrow treatment at 0 HP (dying but not unconscious, if applicable to the campaign's rules) makes death saving throw throws at advantage for the next 1 minute. Found in the fields near the fort: a character with Survival or Medicine proficiency can gather 10 uses in 30 minutes with a DC 10 Survival check. *When:* All sessions; the most field-accessible medical supply in the campaign.
+
+**Antitoxin** (*antidotum*, 1 dose)
+
+*Action:* 1 action. *Effect:* The creature that drinks antitoxin gains advantage on saving throws against poison for 1 hour and immediately ends any poison effect currently affecting it. *Uses:* 4 doses at campaign start (*medicus* controls stock). *When:* Sessions 2-4 (the *scythicon* poison arrows from Sigrun's stock are DC 14 Constitution; the *francisca* secondary effect can include poisoned tips in Session 3; the sacred grove in Session 4 has nightshade and henbane environmental poison DCs of 12).
+
+**Superior herbs** (*herbae germanicae*, Germanic kit)
+
+*Action:* 10 minutes to prepare. *Effect:* The Germanic kit contains herbs unavailable from Roman supply. A character with Medicine or Herbalism proficiency who uses this kit can: (1) prepare a paralytic poultice (DC 12 Medicine; on success, a willing or unconscious target is stabilized without losing any HP for the next 8 hours); (2) brew a pain-suppression draught (creature ignores the speed penalty from one level of exhaustion for 4 hours); (3) treat a corruption wound (creatures with Corruption Level 2 or lower who receive treatment with this kit make their next corruption saving throw at advantage). Black market only; Valeria can source with Acquaintance+. *When:* Sessions 3-5 (the kit becomes critical in the forest and for corruption management in the endgame).
+
+**Healing herbs, basic kit** (*herbae medicales*)
+
+*Action:* 10 minutes to prepare a poultice or tea. *Effect:* A character with Medicine proficiency who uses this kit can restore 1d4 HP to a stable creature (0 HP, conscious or unconscious) as a field dressing. Without proficiency: the character can attempt DC 12 Wisdom check; on success, same effect. On failure, the herbs do nothing (they are not wasted but the preparation was ineffective). *Uses:* 5 preparations per kit before herbs are exhausted. *When:* Sessions 1-3 (the vault, the road, and the forest where Valeria is not present).
+
+**Healing potion** (*potio sanationis*) — not in the main tables, but obtainable via Valeria and Sigrun
+
+*Action:* 1 action (drink yourself) or 1 action (administer to an adjacent creature). *Effect:* Restores 2d4 + 2 HP. Compare to using a Bonus Action with a healing spell: a *healing potion* costs your full Action, which is the key tradeoff decision in combat. The healing word from a Bard or Cleric costs a Bonus Action for 1d4 + modifier HP; the potion costs an Action for 2d4+2 HP. Use the potion when your spellcaster has already used their Bonus Action, or when the healer is down. Valeria can prepare 1 per long rest at Camp Level 1 (cost: 25 d in materials, 1 hour preparation). *When:* All sessions; the most important item the party will debate not carrying.
+:::
 
 ---
 
