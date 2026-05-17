@@ -80,17 +80,10 @@ done in haste: "DO NOT WAKE WHAT SLEEPS HERE."
 
 Maps are in `Maptool/maps/campaign/S1_Blood_and_Omens/` after running `Maptool/maps/build_campaign_maps.sh`. In MapTool: File → Add Resource to Library → Local Directory tab, then drag any image from the panel into the map background slot.
 
-| Scene | Map file(s) | Use |
+| Scene | Map file | Use |
 |---|---|---|
-| Fort gate / exterior encounter | `CastleWall` | Palisade wall, rampart, any exterior fight or chase |
-| Gate checkpoint / Tribune's arrival | `BridgeCheckpoint` | Guard post scene, the Tribune riding in |
-| Stair down from the principia | `DungeonEntrance`, `ForestDungeonEntrance` | The sealed entrance in the principia basement |
-| First underground cavern | `LargeCave`, `CavernPit` | Open cave directly below the stair |
-| Winding passages | `CaveTunnelsVol2`, `CaveTunnelsVol3` | Branching tunnels; patrol ambush, torchlight atmosphere |
-| Tomb chambers | `AncientTombs`, `FloodedCave`, `GoldVaults` | Mid-vault rooms with environmental hazards |
-| Catacombs approach | `CathedralCatacombs` | Narrowing corridors leading to the altar |
-| The altar chamber | `AncientAltar` | Spear discovery; corruption trigger point |
-| Optional exploration | `RandomDungeon`, `DungeonVol2` | Filler chambers, trap rooms |
+| All vault rooms (Scenes 2-4) | `DungeonVol2Public.jpg` | Stone tile dungeon with central circular altar; reuse for every vault room, reposition tokens between scenes |
+| Scene 4 exterior (above shaft) | Use Fort_Vindolanda folder | Marius Coda and cultists are above ground; use whichever fort exterior map fits |
 
 **Fort reference images** (player handouts, not battlemaps):
 

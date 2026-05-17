@@ -74,6 +74,7 @@ cp "$HUM/Acolyte.rptok"         "$F/Paterculus_AugurAssist.rptok"   && echo "   
 cp "$HUM/Veteran.rptok"         "$F/Varro_Centurion.rptok"          && echo "   + token: Varro_Centurion"
 cp "$HUM/Noble.rptok"           "$F/Brutus_Senator.rptok"           && echo "   + token: Brutus_Senator"
 cp "$HUM/Berserker.rptok"       "$F/Vercingetorix_Chieftain.rptok"  && echo "   + token: Vercingetorix_Chieftain"
+cp "$HUM/Berserker.rptok"       "$F/MariusCoda_Laborer.rptok"       && echo "   + token: MariusCoda_Laborer (S0 prologue, Brennus tavern)"
 cp "$HUM/Druid.rptok"           "$F/Thusnelda_Volva.rptok"          && echo "   + token: Thusnelda_Volva"
 cp "$HUM/Guard.rptok"           "$F/Legionary_Guard.rptok"          && echo "   + token: Legionary_Guard"
 cp "$HUM/Scout.rptok"           "$F/Explorator_Scout.rptok"         && echo "   + token: Explorator_Scout"
@@ -103,29 +104,10 @@ echo "=== Session 1: Blood and Omens ==="
 S="$DEST/S1_Blood_and_Omens"
 mkdir -p "$S"
 
-# Fort zone maps (scenes 0-1 happen inside the fort)
-copy_map CityGates            "$S"   # Fort south gate — Tribune's arrival, party departure
-copy_map CityStreets          "$S"   # Via principalis — Legate summons party
-copy_map NatureGoddessTemple  "$S"   # Principia — Legate's audience chamber
-copy_map CastleWall           "$S"   # Rampart — sentry scenes, exterior
+# Fort scenes (0-1) use Fort_Vindolanda folder — no duplicate copies here
 
-# Underground vault (scenes 2-5)
-copy_map BridgeCheckpoint     "$S"   # Road/ditch approach to vault entrance
-copy_map DungeonEntrance      "$S"
-copy_map ForestDungeonEntrance "$S"
-copy_map LargeCave            "$S"
-copy_map AncientAltar         "$S"   # Spear chamber — key scene
-copy_map CaveTunnelsVol2      "$S"
-copy_map CaveTunnelsVol3      "$S"
-copy_map AncientTombs         "$S"
-copy_map GoldVaults           "$S"
-copy_map FloodedCave          "$S"
-copy_map CathedralCatacombs   "$S"
-copy_map CavernPit            "$S"
-copy_map RandomDungeon        "$S"
-copy_map DungeonVol2          "$S"
-copy_map DarkTempleEntrance   "$S"   # Sealed stair entrance
-copy_map DarkTempleInterior   "$S"   # Vault interior / altar chamber
+# Underground vault — single map used for all vault rooms
+copy_map DungeonVol2          "$S"   # All vault rooms: stone dungeon with central altar circle
 
 cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/saalburg_plan.jpg"
 cp "$FORT_IMGS/saalburg_fort.jpg"     "$S/saalburg_fort.jpg"
@@ -151,13 +133,16 @@ copy_token Optio_NCO.rptok           "$S"
 copy_token Vicus_Civilian.rptok      "$S"
 
 # Creature tokens for S1 encounters
-CON="$BASE/dnd5eTokens/construct"
 UND="$BASE/dnd5eTokens/undead"
-cp "$CON/Animated Armor.rptok"  "$S/Creature_AnimatedArmor.rptok"  && echo "   + token: Animated Armor (x2 in vault)"
-cp "$HUM/Berserker.rptok"       "$S/Creature_CorruptedWorker.rptok" && echo "   + token: Corrupted Worker (Berserker)"
+cp "$UND/Wight.rptok"           "$S/Creature_Wight.rptok"           && echo "   + token: Wight (vault guardian, Altar Chamber)"
+cp "$UND/Shadow.rptok"          "$S/Creature_Shadow.rptok"          && echo "   + token: Shadow (x4 Flooded Gallery, x2 Altar Chamber)"
+cp "$UND/Ghoul.rptok"           "$S/Creature_Ghoul.rptok"           && echo "   + token: Ghoul (x2 Bone Chamber)"
+cp "$UND/Ghast.rptok"           "$S/Creature_Ghast.rptok"           && echo "   + token: Ghast (x1 Bone Chamber)"
 cp "$UND/Skeleton.rptok"        "$S/Creature_Skeleton.rptok"        && echo "   + token: Skeleton"
-cp "$UND/Ghoul.rptok"           "$S/Creature_Ghoul.rptok"           && echo "   + token: Ghoul"
-cp "$UND/Shadow.rptok"          "$S/Creature_Shadow.rptok"          && echo "   + token: Shadow"
+cp "$HUM/Berserker.rptok"       "$S/MariusCoda_Berserker.rptok"     && echo "   + token: Marius Coda (Berserker, Scene 4)"
+cp "$HUM/Cultist.rptok"         "$S/TitusFlavinus_Cultist.rptok"    && echo "   + token: Titus Flavinus (Cultist, Scene 4)"
+cp "$HUM/Cultist.rptok"         "$S/GnaeusPeregrinus_Cultist.rptok" && echo "   + token: Gnaeus Peregrinus (Cultist, Scene 4)"
+cp "$HUM/Guard.rptok"           "$S/AeliusRufus_Soldier.rptok"      && echo "   + token: Aelius Rufus (dying legionary, Scene 4)"
 
 # ─────────────────────────────────────────────────────────────────────────────
 echo ""

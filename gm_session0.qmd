@@ -378,6 +378,18 @@ Do this before the first session:
 **Write one personalized opening moment per character for Session 1.** Not a long scene: one image. The player who loves something private sees a reminder of it in the principia. The player who distrusts Germanic people is assigned to work alongside an auxiliary soldier. The player who prays privately to Fortuna finds a coin with her face down. Small. Noticed. Yours to give.
 
 
+### Maps for This Session
+
+Session 0 uses the `Fort_Vindolanda` folder — run `Maptool/maps/build_campaign_maps.sh` once if you have not already.
+
+| Scene | Map | Notes |
+|---|---|---|
+| Scene 0: Road arrival | `BridgeCheckpointPublic.jpg` | Party's approach to the fort; optional (can run theater-of-the-mind) |
+| Scenes 1-5: All fort locations | Fort_Vindolanda folder | Use whichever zone map fits: gate, barracks, vicus, shrine |
+
+Session 0 is nearly all roleplay. No combat maps needed. The fort reference images (`saalburg_plan.jpg`, `castra_layout.svg`) are useful to have open during the fort walk so you can point to specific buildings.
+
+
 ## The Prologue: Day of Arrival
 
 *Run this after Session 0 ends and the players have made their characters. It takes 1.5 to 2 hours. It is not a tutorial. It is the day before Session 1: what normal looks like at Fort Vindolanda before normal breaks.*
