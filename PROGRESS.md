@@ -17,7 +17,7 @@ Last updated after each completed task. Check here to see current status.
 ## Done this session (continued)
 
 - [x] **Milestone 81** — knowledge.qmd: 60 passive gates converted to `<details>` collapsibles; intro text updated. vindolanda_guide.qmd: 41 passive gates converted. All .qmd files: zero remaining open passive gate bullets.
-- [x] **Milestone 82** — MapTool monster attack macros (Session 1): shadow_attacks.mts, ghoul_attacks.mts, ghast_attacks.mts, wight_attacks.mts, berserker_attacks.mts, cultist_attacks.mts, skeleton_attacks.mts. Each opens an HTML dialog with live dice rolls and campaign-specific behaviour notes. Import via Campaign Macros panel; select token then click macro button.
+- [x] **Milestone 82** — MapTool monster attack macros (all sessions): 31 MTScript files covering every creature in S1-5. Each opens an HTML dialog with live dice rolls, campaign-specific DM notes, and tactical callouts. Custom bestiary creatures (Alp, Draugar, Genius Loci, Larvae, Strix, Lemur, Nix) included. S5 includes Fausta Luperci (Option A) and Mars himself (Option B, victory at 150 HP). README updated with full session tables.
 - [x] **Encounter scaling (5 players)** — chapter1.qmd updated: Flooded Gallery 3→4 Shadows (Easy→Medium), XP text updated from four-player to five-player throughout. Bone Chamber (Hard 1,700 XP) and Altar Chamber (near-Deadly 1,800 XP) already appropriate for 5 players. Difficulty table in macros/monsters/README.md.
 
 ---
