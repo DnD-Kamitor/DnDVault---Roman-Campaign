@@ -153,7 +153,11 @@ Maps are in `Maptool/maps/campaign/S1_Blood_and_Omens/` after running `Maptool/m
 
 ## Scene 1: Meeting the Legate
 
-The party is summoned to meet **Legate Marcus Aurelius Corvinus** in the principia. He's a hard man in his forties, scarred and ambitious.
+> *The principia is lit with more oil lamps than it needs. Maps are unrolled across the central table and weighted at the corners with the kind of objects that happen to be nearby: a gladius pommel, a wax tablet, a clay inkpot. The air is thick with incense, but under it something else -- something organic and wrong, like the smell that comes up from a well when the water has gone bad.*
+>
+> *Three people are already in the room. Legate Corvinus stands at the head of the table, both hands flat on the map, eyes bloodshot and specific. Augur Cassia Liviana sits to his left, a piece of cloth held loosely in her hands: it is dark at the center. Centurion Varro stands near the door, one hand resting on his gladius grip, looking like a man who is waiting for something to go wrong and has been waiting for several hours.*
+>
+> *None of them speak when the party enters. Corvinus looks at each of you in turn, the way a man counts his tools before a job.*
 
 **Legate's Briefing:**
 - Three days ago, a work crew digging a new well discovered ancient ruins beneath the fort
@@ -163,10 +167,11 @@ The party is summoned to meet **Legate Marcus Aurelius Corvinus** in the princip
 - One worker touched the spear and went mad, killing two companions before being subdued
 - The Legate wants the party to go down into the ruins, secure the artifact, and bring it to him
 
-**Complications:**
-- **Augur Cassia Liviana** interrupts, warning that the omens forbid disturbing the spear
-- **Centurion Varro** suggests destroying it immediately
-- The Legate overrules them both—Rome must possess this weapon
+When Corvinus formally assigns the mission, he sets a wax tablet on the edge of the table without picking it up again. It is the written order. Give **Handout 1** now.
+
+**How to run Cassia in this scene:** She does not interrupt Corvinus or oppose him directly -- she cannot win that fight and she knows it. She speaks once, quietly, toward the party rather than toward him: *"The augury was clear. What is sealed below is sealed for a reason. If you go down, go knowing that."* Then she stops. Corvinus does not respond to this because it was not addressed to him. Cassia is planting doubt in the party, not staging a confrontation. Her expression when she speaks is not fear: it is the face of someone who has already made their own decision and is watching the party make theirs.
+
+**How to run Varro in this scene:** He does not suggest destroying the spear. That would require knowing what it is, which is exactly his problem. His contribution is skepticism about the timeline: *"We don't know what sealed it or who is on the other side of that seal. Sending men down without understanding what they're walking into is how we lose the men."* Corvinus overrules him without anger: "Noted. Dismissed." Varro does not leave. He stays near the door, which Corvinus does not press.
 
 **Tribune Lucius Aurelius arrives mid-briefing.** He enters the principia without knocking, carrying a sealed dispatch satchel with an imperial crest. He is late twenties, composed, and makes no apology for interrupting. He hands Corvinus a sealed letter, waits while Corvinus reads it, and then takes a chair at the edge of the room without being invited to sit. He does not introduce himself to the party. He watches.
 
@@ -179,6 +184,8 @@ Lucius remains in the fort during the party's descent. He will be present at the
 ## Scene 2: Descent into the Ruins
 
 The excavation site is a crude shaft dug through Roman stonework into older Germanic structures. The air grows cold as the party descends.
+
+Corvinus's aide meets the party at the excavation shaft before they descend. He hands over a canvas satchel without comment: four torches, a tinderbox, and a coil of twine knotted at ten-foot intervals for measuring passage length. He does not wish them luck.
 
 ### The Shaft
 
@@ -322,6 +329,8 @@ The arrangement is too systematic for Germanic tribal practice. Tribes do not ca
 </details>
 
 The shields are hung in a specific order by tribe symbol. A character who notes this arrangement and succeeds on DC 13 Intelligence can use it later in the Runic Corridor.
+
+**DM: the rune mapping encoded in the shield order.** The arrangement runs from the entrance to the archway, with Mars's wolf at the highest point above the far arch. Reading the order gives the Runic Corridor's safe row sequence: Marcomanni/boar corresponds to TIWAZ; Cherusci/three-fingered hand corresponds to HAGALAZ; Suebi/serpent corresponds to ISA; the mixed smaller offerings correspond to NAUDHIZ; Mars/wolf at the top corresponds to OTHALAN. A character who succeeds on DC 13 Intelligence and describes noting the order carries this information forward. Tell them: "The arrangement is deliberate. The shields are catalogued, and the order has structure." They do not know the rune correspondence yet -- that connection happens when they see the Runic Corridor floor.
 
 No combat here. The shields don't move. They watch.
 
@@ -522,7 +531,7 @@ One chain is visually different: it runs from the ceiling through a ring sunk in
 
 Investigation DC 14 (active: studying the chain arrangement as a system rather than as individual chains): On success, the chains are arranged in a deliberate pattern radiating from the central floor ring. They read as a mechanism. The central chain is the key. The order in which the outer chains were last touched (visible in the oxidation patterns on the links) tells you the sequence: three outer chains, handled in a specific order, then the central chain pulled.
 
-**DM: the correct chain sequence.** Three outer chains radiate from the central ring: one runs to the east wall (most corroded, handled most recently), one to the north wall (medium oxidation), one to the west wall (lightest oxidation, handled longest ago). The oxidation pattern is a time record, read in reverse: whoever last operated this pulled west first (oldest, least corroded), north second, east last, then the master chain. The mnemonic: *oldest chain first, newest chain last, then the centre.* If a character succeeds on the Investigation check, tell them which chain is most weathered and which is least. The order follows naturally from there.
+**DM: the correct chain sequence.** Three outer chains radiate from the central ring. Orient the room as the party enters from either branch: the left wall (as you face toward the Runic Corridor) holds the chain with the lightest oxidation, handled longest ago. The far wall (toward the Runic Corridor, opposite your entrance) holds the chain with medium oxidation. The right wall holds the most corroded chain, handled most recently. The oxidation pattern is a time record, read in reverse: whoever last operated this pulled the left chain first (oldest), the far chain second, the right chain last, then the master chain. The mnemonic: *oldest chain first, newest chain last, then the centre.* If a character succeeds on the Investigation check, tell them which chain is most weathered and which is least. The order follows naturally from there.
 
 If a character pulls the central chain without the sequence: DC 13 Strength saving throw or be restrained for 1 minute. The restrained character can break free with DC 16 Athletics or be cut free with a bladed weapon (10 slashing damage to the chain). No damage -- just restraint, wasted time, and noise.
 
@@ -588,6 +597,8 @@ A 30-foot corridor connecting the Binding Chamber to the Altar Chamber.
 
 **The puzzle:**
 
+The corridor is 30 feet long. The floor is divided into eight rows, each approximately 3-4 feet wide running wall to wall. Each row contains five runes arranged side by side across the full width of the corridor -- a character stepping through must choose which of the five runes in each row to place their foot on. The glowing runes are carved deep enough to be distinct underfoot; there is no ambiguity about which rune a step lands on. Characters moving single file through the corridor make their choices independently: a safe step for one person is safe for all.
+
 The floor is a runic sequence lock. The safe path through exists and is consistent: only specific runes in a specific order do not trigger. Wrong runes deal 1d8 lightning damage and make a sound that carries to the altar chamber, giving the altar guardians one round of preparation.
 
 **Finding the safe path (three independent routes):**
@@ -612,6 +623,8 @@ They can walk through and take 1d8 lightning damage per wrong rune. There are ap
 > *Upon the altar rests a spear eight feet long, forged of iron so black it seems to swallow light. Runes coil along its haft, glowing a slow ember-red. Two stone pegs cradle it, unchanged for centuries, and the chains from the previous chamber lie slack around the base as though they gave up trying to hold it.*
 >
 > *Within five feet of the altar the air stops moving. Sweat does not fall. Dust does not drift. The silence looks back at you.*
+
+Give **Handout 2** (Vault Inscription) as the party steps inside the threshold. The inscription is carved into the altar stone's face and visible from the entrance once torchlight reaches it. Players can read it while the spear's presence registers.
 
 **Spear Reveal Read-Aloud (use when the party crosses the threshold):**
 
@@ -655,9 +668,9 @@ As the party enters fully, the guardian rises from behind the altar:
 </details>
 
 <details>
-<summary><strong>DC 14 Wisdom (Insight) (active: attempting to communicate with the Wight before or during combat) — What the Wight will accept</strong></summary>
+<summary><strong>DC 14 Persuasion or Wisdom (Insight) (active: attempting to communicate with the Wight before or during combat) — What the Wight will accept</strong></summary>
 
-One attempt, before or during combat. Showing the contract scroll grants advantage on this check. On success: the Wight pauses. He does not release the party or lower his weapon. But he speaks: "The one who ordered this. His debt is greater than yours. But you carry it now." This is not forgiveness. It is a transfer of responsibility. The party is carrying the Legate's debt to the war-god. That debt will come due, and it will come due to whoever holds the spear when Mars decides to collect it.
+One attempt, before or during combat. The player chooses their approach: Persuasion (explaining the situation verbally, in any language) or Wisdom (Insight) (reading what the Wight needs to hear and conveying it by gesture or action). Both cover the same action at the same DC. Showing the contract scroll from the Binding Chamber grants advantage on either check. On success: the Wight pauses. He does not release the party or lower his weapon. But he speaks: "The one who ordered this. His debt is greater than yours. But you carry it now." This is not forgiveness. It is a transfer of responsibility. The party is carrying the Legate's debt to the war-god. That debt will come due, and it will come due to whoever holds the spear when Mars decides to collect it.
 
 </details>
 
@@ -685,7 +698,7 @@ The spear faces toward Rome, toward the vault entrance, toward whoever enters. T
 - The Shadows (CR 1/2) flank and harass, using Pass Through to avoid opportunity attacks and cycling their Strength Drain. They follow the Wight's tactical positioning.
 - **Exit condition:** If the party is willing to leave the spear and back out, the Wight allows it. The combat is not obligatory: it is the result of insisting on taking the spear.
 
-**Persuasion attempt:** If the party explains (in any language, or by gestures) that they did not break the bargain voluntarily and that their Legate ordered this, the Wight pauses on a DC 14 Persuasion check. Showing the contract scroll from the Binding Chamber grants advantage on this check. On success: he does not let them take the spear, but he gives them one more piece of information before combat resumes:
+**Communication attempt (DC 14 Persuasion or Wisdom (Insight), player's choice):** If the party explains (in any language, or by gestures) that they did not break the bargain voluntarily and that their Legate ordered this, the Wight pauses on this check. Showing the contract scroll from the Binding Chamber grants advantage on either approach. On success: he does not let them take the spear, but he gives them one more piece of information before combat resumes:
 
 > *"The one who ordered this. His debt is greater than yours. But you carry it now."*
 
@@ -776,7 +789,7 @@ The courtyard settles. The body of Marius Coda is on the flagstones or bound in 
 
 **Tribune Lucius during this scene:** Lucius does not speak first. He watches the party's faces, then the spear, then the party again. If asked directly for his opinion, he says: "This is the Legate's command to give." He does not support Corvinus. He does not contradict him. He is noting everything for a report that will reach Rome before the week is out.
 
-**Cassia Liviana's arrival:** She appears at the edge of the courtyard during the confrontation, not from the principia. She came a different way. She is out of breath. If she reaches the party before Corvinus gets the spear: she says, quietly, to whoever is nearest: *"Do not give it to him. He will use it. I have seen what that means."* If Corvinus sees her, he tells her flatly to return to the shrine. She does not move.
+**Cassia Liviana's arrival:** The confrontation plays out in the principia's interior courtyard, adjacent to the excavation shaft -- the party has just emerged from below and Corvinus has come out to meet them there. Cassia approaches from the principia's east side entrance, the one that faces the bathhouse rather than the main gate, as if she had been waiting at a distance where she could see the shaft but Corvinus could not see her. She comes around the corner at a near-run and is out of breath. If she reaches the party before Corvinus gets the spear: she says, quietly, to whoever is nearest: *"Do not give it to him. He will use it. I have seen what that means."* If Corvinus sees her, he tells her flatly to return to the shrine. She does not move.
 
 **Resolution branches:**
 
@@ -799,7 +812,11 @@ He finds the party privately, after Corvinus is out of earshot. He has a wax tab
 
 He does not say what he suspects. He does not tell them what he will do with the information. But the way he looks at the spear (or the space where the spear was) makes it clear: Varro has been thinking about this longer than tonight.
 
-**Advance to Level 4**
+**Level 4.**
+
+The characters are not the same people who walked into that shaft. They have survived contact with a god's anchor point, run two encounters at Hard and near-Deadly difficulty while depleted, and made a consequential choice under direct pressure from a superior officer. The level is not a reward. It is what that costs and what it leaves behind.
+
+Varro marks it. He finds the party after Corvinus and Lucius are gone. He looks at each of them once. Then: "Whatever you saw down there -- you're still here. That's the thing that matters tonight." He means it, and it is also the most he will say about it. The morning brings a new briefing.
 
 ## DM Notes
 
@@ -984,6 +1001,6 @@ On 5 above DC: the character can see the sequence without any additional check. 
 
 Any character with Religion +4 or higher automatically perceives the prayer structure in the rune layout. They know the safe path. Give this to the player directly without preamble: "The layout is a prayer. You know which runes complete each row correctly." They walk the corridor without damage. Do not make them roll -- the modifier is the check.
 
-*Persuasion DC 14 (active: explaining to the Wight that the party did not break the bargain voluntarily):*
+*Persuasion or Wisdom (Insight) DC 14 (active: communicating with the Wight before or during combat, player's choice of approach):*
 
-One attempt, before or during combat. On success: the Wight pauses. He does not release them, but he gives them information they would not otherwise get. On failure: combat proceeds. The attempt was not wrong -- it simply did not work. The Wight is not persuaded by regret. Showing the contract scroll from the Binding Chamber grants advantage on this check if the party found it.
+One attempt. Showing the contract scroll grants advantage on either approach. On success: the Wight pauses and gives them one more piece of information. On failure: combat proceeds. The attempt was not wrong -- it simply did not work. The Wight is not persuaded by regret. He responds to evidence (the scroll) and to demonstrated understanding (showing you know whose bargain was broken and how). See the Altar Chamber collapsible for the full success text.

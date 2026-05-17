@@ -4,6 +4,18 @@
 
 *Session 0 has one job: collect the information that makes Sessions 1-5 personal. Everything below maps to a specific mechanical moment in the campaign. If you skip a question, you will improvise that moment blind. The questions are short. The payoff is not.*
 
+**Session 0 timing overview** (plan for a 4-5 hour meeting, or split into two sessions):
+
+| Part | Content | Time |
+|---|---|---|
+| Part 1 | Consent and boundaries | 10-15 min |
+| Part 2 | Questions aloud (table-wide) | 60-90 min |
+| Part 3 | Private questions (one-on-one) | 20-30 min |
+| Part 4 | Mechanical collection + card writing | 15 min |
+| Prologue | Day of Arrival (4 scenes) | 90-120 min |
+
+The Prologue can run immediately after Part 4 if the table has energy, or at the start of the next meeting. Either is correct. The Prologue ends where Session 1 begins: the morning after the shared dream.
+
 
 ## What You Need to Walk Away With
 
@@ -108,7 +120,7 @@ Suggested cover stories by role:
 - *Capsarius*: "Medical kit restock at the construction site; routine assignment."
 - *Custos Armorum*: "Equipment requisition for the construction team; verification required."
 
-Write each character's cover story on a small card and give it to the player during the session. They do not compare notes with each other at this stage.
+Write each character's cover story on a small card. **Distribute cover story cards after roles are confirmed and before the Prologue begins.** Players need their cover story before Scene 1 of the Prologue (they arrive at the fort with a stated reason). They do not compare notes with each other at this stage.
 
 
 ## Part 1: Consent and Boundaries
@@ -283,7 +295,7 @@ This is the fading mechanic's emotional root. The answer tells you what kind of 
 
 ### Fatum Card
 
-Each player writes one sentence on a card and gives it to you.
+The Three Questions (Part 2) produce table conversation. The Fatum Card is a separate step: after the Three Questions discussion ends, each player synthesizes their three answers into a single "I will --" sentence and writes it on one index card. One card per player. This is the card you keep. The Three Questions cards (if players wrote them) are for the players; the Fatum Card is for you.
 
 **The sentence answers:** "What is this character's fate?"
 
@@ -415,16 +427,20 @@ He issues each character:
 
 *Insight DC 12 (active, watching Quartus process the paperwork):* He stamps without reading. Supply officers read what they stamp. He already knew the details before the papers arrived.
 
-*Perception DC 10 (passive):* The assignment board behind him has three entries crossed out with a single red mark. The marks look recent, within the last week. No names: just the red marks and a date column.
+*Perception DC 10 (passive):* The assignment board behind him has three entries with a single red mark through them. The marks look recent, within the last week. No names: just the red marks and a date column.
+
+*Investigation DC 12 (active: reading the board before Quartus closes it):* The three crossed entries are workers from the northeast construction crew: the four-man team sent into the basement access two days before the party arrived. One entry is two men assigned together on the same shift. Quartus crossed them out when they did not report back. He knows what the marks mean. He will not discuss it: "Administrative. Nothing to do with you." If pressed after he closes the board, the best a player can do is confirm the marks were there. The content is gone.
 
 *Investigation DC 13 (active, asking about the red-marked entries):* Quartus closes the board before you finish your sentence. "Administrative. Nothing to do with you."
 
 *Persuasion DC 11 (active, asking Quartus about anything beyond procedure):* He will answer one question honestly before shutting down. He will not discuss the Legate. He will discuss: the fort's supply situation (short on salt pork, a wagon three days late from the south), the last work crew (the well-diggers in the northeast), or the medical bay (more traffic than usual this week, he does not say how much more).
 
 
+When the party finishes with Quartus, he points them toward the east barracks and turns back to his records without further comment. End Scene 1 there.
+
 ### Scene 2: The Fort Walk
 
-Centurion Varro meets the party at the barracks and walks them through the fort. He does this for all new transfers. The tour is functional: here is the *principia*, here is the *via principalis*, here is the bathhouse schedule, here is where you eat, here is what the horn calls mean. He is professional, efficient, and watchful.
+When the party reaches the east barracks to claim their assigned bunks, Centurion Varro is already there, arms crossed, watching them arrive. He has been told to expect exactly this group. He does not explain how he knew. He begins the fort walk immediately. He does this for all new transfers. The tour is functional: here is the *principia*, here is the *via principalis*, here is the bathhouse schedule, here is where you eat, here is what the horn calls mean. He is professional, efficient, and watchful.
 
 **Running Varro:**
 
@@ -439,6 +455,8 @@ Give players agency. They can follow Varro's route, split up and explore on thei
 **The *Principia* (Headquarters building):**
 
 Cassia Liviana, the fort's official augur, is normally visible at the east entrance steps at this time of day. She is absent. Her aide says she is "occupied with preparations." He will not say what preparations.
+
+*Persuasion DC 13 (active: pressing the aide past the official answer):* He glances toward the principia interior before answering. Cassia is in the basement archive reviewing old construction records for the northeast section of the fort. He does not know why. This is true: she is cross-referencing something about the excavation site with the fort's oldest administrative documents, and she does not want Corvinus to know she is doing it.
 
 *Investigation DC 11 (active, looking at the principia steps):* Fresh scrape marks in the stone near the eastern door: pale, clean marks from something heavy moved recently, within the last day.
 
@@ -461,6 +479,12 @@ He mentions, without drama: "Had to re-forge four blades in the last two days. M
 The horses are nervous. All of them. Sustained, not reactive: not spooked by a noise, but carrying a constant edge. The stablehand is sixteen years old and does not know what to do with what he is seeing.
 
 *Nature DC 10 (passive):* This is how horses react to a persistent predator nearby, not a one-time disturbance. Whatever they sense has been present for days.
+
+**The *Armamentarium* (Armory):**
+
+The *custos armorum* is re-edging gladii. Four blades are queued on the bench beside him. He is clearly annoyed. If anyone asks why: "Men have been bending them in their sleep. Just bending them. Not fighting. Not dropping them. Bending." He does not know how. He does not find it supernatural: he finds it an equipment failure with no explanation, which is worse. The blade he is currently working on has been bent at a 20-degree angle along its midpoint, the kind of bend that requires sustained deliberate force.
+
+*Strength DC 13 (passive, handling one of the bent blades):* This bend could not have been made by accident. It required a firm two-handed grip and sustained pressure. Someone applied this force deliberately, in their sleep, according to the soldier who was assigned the blade. That soldier is currently in the medical bay.
 
 **Varro's tells throughout the tour:**
 
@@ -491,9 +515,11 @@ What he says if given room: the supply wagon is three days late; a Germanic trad
 
 A legionary named Sextus, posted to the north tower, sits in the corner and drinks methodically. He has not spoken since the dogs died. He will not discuss it if approached.
 
-A Gallic laborer from the road crew sits at the back table, very drunk. He was part of the excavation team. If approached carefully (*Persuasion DC 12*): he was one of the men who dug up the vault access beneath the *principia*. He describes what they found not as a ruin but as "a room that was waiting." He becomes frightened mid-description and will not continue.
+A Gallic stone-hauler named **Marius Coda** sits at the back table, very drunk. He was part of the excavation team that broke into the vault access beneath the *principia*. He touched nothing inside. He was near the open access for three hours while the others worked. That was enough. He has not slept well in two days.
 
-Do not press this encounter. Let it end inconclusively. The players will remember it.
+If approached carefully (*Persuasion DC 12*): he describes what they found not as a ruin but as "a room that was waiting." He says the air tasted different down there, like copper before a thunderstorm. He starts to describe something he saw on the wall and becomes frightened mid-sentence. He will not continue. He drinks instead.
+
+Do not press this encounter. Let it end inconclusively. The players will remember it. **DM note:** This is the same man who appears as the Berserker in Session 1 Scene 4. When the party crests the shaft and sees him, let the players recognize him. Do not announce it. See if they make the connection themselves.
 
 
 ### Scene 4: The First Night
@@ -514,9 +540,11 @@ End the prologue with this scene. Run it when the players indicate they are sett
 >
 > Morning comes without further incident.
 
-This shared dream is the same dream that opens Session 1's cold open: *"Three nights ago. You dream."* Do not connect them explicitly tonight. Let it sit. The players will make the connection when Session 1 begins.
+This dream is the first contact: a formless presence, something that breathes but has no name. The Chapter 1 cold open is a different and escalated version of the same contact: ankle-deep blood, the spear visible, the voice saying "MEUM." These are not the same dream. They are the same god finding its word. Night 0 (the Prologue): presence without language. Night 3 (Session 1 cold open): the god has reached far enough to speak. Do not connect them explicitly tonight. Let the players make the connection when Session 1 begins.
 
-That connection is the prologue's whole purpose: the ordinary evening followed by the first wrong thing in the dark, so that when the cold open drops them into day three of a crisis, they know what normal felt like before it broke.
+That connection is the Prologue's whole purpose: the ordinary evening followed by the first wrong thing in the dark, so that when the cold open drops them into day three of a crisis, they know what normal felt like before it broke.
+
+**Closing the Prologue:** When morning arrives without further incident, end the scene. Tell the players: "Session 0 is complete. The night you just spent is the night before Session 1 opens. Next session starts the morning after this one." Do not explain the dream. If they ask questions, say: "Tomorrow." Then stop.
 
 
 ## Reference: Questions at a Glance
