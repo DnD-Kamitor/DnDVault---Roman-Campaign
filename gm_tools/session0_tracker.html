@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Session 0 — Player Tracker</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; background: #f4f0e8; color: #1a1208; }
+
+/* ── TOOLBAR ── */
+.page-header {
+  background: #7a1a00; color: white; padding: 10px 16px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+}
+.page-header h1 { font-size: 14px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.page-header .sub { font-size: 10px; opacity: 0.75; margin-top: 2px; }
+.toolbar { display: flex; gap: 8px; align-items: center; }
+.toolbar button {
+  background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+  color: white; padding: 4px 10px; cursor: pointer; border-radius: 2px; font-size: 11px;
+}
+.toolbar button:hover { background: rgba(255,255,255,0.25); }
+.toolbar button.danger { background: rgba(200,0,0,0.25); }
+#save-indicator { font-size: 10px; opacity: 0.7; margin-right: 6px; }
+#save-indicator.saved { color: #a0ffb0; }
+#save-indicator.unsaved { color: #ffcc80; }
+
+/* ── TABS ── */
+.tabs {
+  display: flex; background: #4a0e00; padding: 0 16px; gap: 2px;
+  border-bottom: 2px solid #7a1a00;
+}
+.tab-btn {
+  padding: 7px 14px; cursor: pointer; font-size: 11px; font-weight: 600;
+  background: transparent; border: none; color: rgba(255,255,255,0.6);
+  border-bottom: 3px solid transparent; letter-spacing: 0.04em;
+  white-space: nowrap; transition: color 0.15s;
+}
+.tab-btn:hover { color: rgba(255,255,255,0.9); }
+.tab-btn.active { color: white; border-bottom-color: #e8b060; }
+.tab-btn.summary { margin-left: auto; color: #e8b060; }
+.tab-btn.summary.active { border-bottom-color: #e8b060; color: white; }
+
+/* ── PLAYER SECTION ── */
+.player-section { display: none; padding: 14px 16px; max-width: 900px; }
+.player-section.visible { display: block; }
+.summary-view { display: none; padding: 14px 16px; }
+.summary-view.visible { display: block; }
+
+/* ── SUMMARY CARD ── */
+.header-card {
+  background: white; border: 1px solid #c8a060; border-left: 4px solid #7a1a00;
+  padding: 10px 12px; margin-bottom: 12px; border-radius: 2px;
+}
+.header-card .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 6px; }
+.header-card .row:last-child { margin-bottom: 0; }
+.field-group { display: flex; align-items: center; gap: 5px; }
+.field-group label { font-size: 10px; font-weight: 700; color: #7a1a00; text-transform: uppercase; white-space: nowrap; }
+.field-group input, .field-group select {
+  border: 1px solid #c8a060; padding: 3px 6px; font-size: 11px;
+  background: #fffdf8; border-radius: 1px; color: #1a1208;
+}
+.field-group input.wide { width: 160px; }
+.field-group input.med { width: 110px; }
+.field-group input.short { width: 60px; }
+.field-group select { padding: 3px 4px; }
+
+/* ── SECTIONS ── */
+.section {
+  background: white; border: 1px solid #c8a060; border-left: 3px solid #7a1a00;
+  padding: 10px 12px; margin-bottom: 10px; border-radius: 2px;
+}
+.section.private { border-left-color: #404040; background: #f8f8f0; }
+.section.cards { border-left-color: #c05000; background: #fff8f0; }
+.section.tracking { border-left-color: #285020; background: #f8fff5; }
+.section h2 {
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+  color: #7a1a00; border-bottom: 1px solid #e8d0a0; padding-bottom: 4px; margin-bottom: 8px;
+}
+.section.private h2 { color: #404040; border-bottom-color: #c0c0a0; }
+.section.cards h2 { color: #c05000; }
+.section.tracking h2 { color: #285020; }
+
+/* ── QUESTION ROWS ── */
+.q-row { margin-bottom: 8px; }
+.q-row label {
+  display: block; font-size: 10.5px; font-weight: 700; color: #3a1000;
+  margin-bottom: 2px;
+}
+.q-row .hint {
+  font-size: 9.5px; color: #806040; font-style: italic; margin-bottom: 3px;
+}
+.q-row textarea {
+  width: 100%; border: 1px solid #c8a060; padding: 5px 7px;
+  font-size: 11px; background: #fffdf8; resize: vertical; border-radius: 1px;
+  font-family: inherit; color: #1a1208; line-height: 1.5;
+}
+.q-row textarea:focus { outline: none; border-color: #7a1a00; background: #fffef5; }
+.q-row textarea.sm { height: 46px; }
+.q-row textarea.md { height: 66px; }
+.q-row textarea.lg { height: 88px; }
+.q-row textarea.xl { height: 110px; }
+
+/* two-column layout for some sections */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+/* ── CONNECTIONS ── */
+.connections-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.connection-item { border: 1px solid #ddd8c0; padding: 7px; border-radius: 2px; background: #fdfaf2; }
+.connection-item label { font-size: 10px; font-weight: 700; color: #3a1000; display: block; margin-bottom: 3px; }
+.connection-item .inline { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; }
+.connection-item .inline label { margin-bottom: 0; }
+.connection-item select { font-size: 10px; padding: 2px 4px; border: 1px solid #c8a060; background: #fffdf8; }
+.connection-item textarea { width: 100%; font-size: 10px; height: 40px; border: 1px solid #c8a060; padding: 3px 5px; background: #fffdf8; resize: vertical; font-family: inherit; border-radius: 1px; }
+
+/* ── INLINE FIELDS ── */
+.inline-fields { display: flex; gap: 14px; flex-wrap: wrap; }
+.inline-fields .q-row { flex: 1; min-width: 200px; }
+
+/* ── CARDS SECTION ── */
+.card-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.card-item { border: 1px solid #e8c080; padding: 8px; background: #fffdf0; border-radius: 2px; }
+.card-item label { font-size: 10px; font-weight: 700; color: #c05000; display: block; margin-bottom: 3px; }
+.card-item .prompt { font-size: 10px; color: #806040; font-style: italic; margin-bottom: 4px; }
+.card-item textarea { width: 100%; border: 1px solid #e8c080; padding: 4px 6px; font-size: 11px; background: white; resize: vertical; height: 55px; border-radius: 1px; font-family: inherit; }
+
+/* ── TRACKING ── */
+.track-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.track-row label { font-size: 10px; font-weight: 700; color: #285020; }
+.track-row input[type="number"] { width: 50px; border: 1px solid #80b070; padding: 3px 5px; font-size: 12px; text-align: center; background: #f8fff5; border-radius: 1px; }
+.track-row select { font-size: 11px; padding: 3px 5px; border: 1px solid #80b070; background: #f8fff5; }
+.track-row input[type="text"] { width: 160px; border: 1px solid #80b070; padding: 3px 5px; font-size: 11px; background: #f8fff5; border-radius: 1px; }
+
+/* ── SUMMARY TABLE ── */
+.summary-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.summary-table th { background: #7a1a00; color: white; padding: 5px 8px; text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+.summary-table td { padding: 5px 8px; border-bottom: 1px solid #e8d0a0; vertical-align: top; }
+.summary-table tr:nth-child(even) td { background: #fdf8ee; }
+.summary-title { font-size: 14px; font-weight: 800; color: #7a1a00; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 2px solid #7a1a00; padding-bottom: 6px; margin-bottom: 12px; }
+
+/* ── PRINT ── */
+@media print {
+  .page-header, .tabs, .toolbar { display: none !important; }
+  body { background: white; font-size: 11px; }
+  .player-section { display: block !important; padding: 10px; page-break-after: always; max-width: 100%; }
+  .summary-view { display: none !important; }
+  .section { break-inside: avoid; }
+  textarea { border: 1px solid #999 !important; background: white !important; min-height: 30px; }
+  input, select { border: 1px solid #999 !important; background: white !important; }
+  .header-card { border: 1px solid #888 !important; }
+  h2, label { color: #000 !important; }
+  .page-header-print { display: block; font-size: 10px; color: #666; margin-bottom: 6px; }
+}
+@media screen {
+  .page-header-print { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <div>
+    <h1>Shadow of Mars — Session 0 Player Tracker</h1>
+    <div class="sub">DM-only working document. Auto-saves in this browser.</div>
+  </div>
+  <div class="toolbar">
+    <span id="save-indicator" class="saved">Saved</span>
+    <button onclick="exportData()">Export Text</button>
+    <button onclick="window.print()">Print / PDF</button>
+    <button class="danger" onclick="clearData()">Clear All</button>
+  </div>
+</div>
+
+<div class="tabs" id="tabs">
+  <!-- Tabs generated by JS -->
+</div>
+
+<div id="main-content">
+  <!-- Player sections generated by JS -->
+  <div id="summary-view" class="summary-view">
+    <div class="summary-title">Campaign Summary — All Players</div>
+    <table class="summary-table" id="summary-table">
+      <thead>
+        <tr>
+          <th>Player</th><th>Character</th><th>Role</th><th>Status</th><th>Comm.</th><th>Corr.</th>
+          <th>Fatum</th><th>Sacrifice Seed</th><th>Line (Will Not Do)</th>
+        </tr>
+      </thead>
+      <tbody id="summary-body"></tbody>
+    </table>
+    <div style="margin-top:16px">
+      <div class="summary-title" style="font-size:12px">Cover Stories Assigned</div>
+      <table class="summary-table">
+        <thead><tr><th>Player</th><th>Character</th><th>Role</th><th>Cover Story Given</th></tr></thead>
+        <tbody id="cover-summary-body"></tbody>
+      </table>
+    </div>
+    <div style="margin-top:16px">
+      <div class="summary-title" style="font-size:12px">Divine Standing at Campaign Start</div>
+      <table class="summary-table">
+        <thead><tr><th>Player</th><th>Character</th><th>God They Pray To</th><th>God They Avoid</th><th>Divine Witness?</th></tr></thead>
+        <tbody id="divine-summary-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+const ROLES = [
+  "— select —","Optio","Tesserarius","Aquilifer","Signifer","Cornicen",
+  "Medicus","Haruspex","Faber","Librarius","Explorator",
+  "Frumentarius","Sacerdos","Flamen Martialis","Capsarius","Custos Armorum"
+];
+const STATUSES = ["Peregrinus","Latinus","Civis Romani"];
+const CORRUPT_LEVELS = ["0","1 — Noticed","2 — Touched","3 — Marked","4 — Claimed","5 — Vessel"];
+const N_PLAYERS = 6;
+
+// Data store
+let data = {};
+let saveTimer = null;
+
+function initData() {
+  for (let i = 0; i < N_PLAYERS; i++) {
+    data[i] = data[i] || {};
+  }
+}
+
+function loadData() {
+  try {
+    const stored = localStorage.getItem('session0_tracker_v2');
+    if (stored) data = JSON.parse(stored);
+  } catch(e) {}
+  initData();
+}
+
+function saveData() {
+  try {
+    localStorage.setItem('session0_tracker_v2', JSON.stringify(data));
+    setIndicator('saved');
+  } catch(e) {}
+}
+
+function setIndicator(state) {
+  const el = document.getElementById('save-indicator');
+  el.textContent = state === 'saved' ? 'Saved' : 'Unsaved changes';
+  el.className = state === 'saved' ? 'saved' : 'unsaved';
+}
+
+function schedulesSave() {
+  setIndicator('unsaved');
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(saveData, 800);
+}
+
+function get(p, field) { return (data[p] && data[p][field]) || ''; }
+function set(p, field, val) { data[p] = data[p] || {}; data[p][field] = val; schedulesSave(); }
+function getPlayerLabel(i) {
+  const pn = get(i,'playerName');
+  const cn = get(i,'charName');
+  if (pn && cn) return pn + ' / ' + cn;
+  if (pn) return pn;
+  return 'Player ' + (i+1);
+}
+
+// ── BUILD UI ──
+function buildUI() {
+  buildTabs();
+  for (let i = 0; i < N_PLAYERS; i++) buildPlayerSection(i);
+}
+
+function buildTabs() {
+  const tabs = document.getElementById('tabs');
+  for (let i = 0; i < N_PLAYERS; i++) {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn' + (i === 0 ? ' active' : '');
+    btn.id = 'tab-' + i;
+    btn.textContent = getPlayerLabel(i);
+    btn.onclick = () => showTab(i);
+    tabs.appendChild(btn);
+  }
+  const sum = document.createElement('button');
+  sum.className = 'tab-btn summary';
+  sum.id = 'tab-summary';
+  sum.textContent = 'Summary';
+  sum.onclick = () => showTab('summary');
+  tabs.appendChild(sum);
+}
+
+function showTab(idx) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.player-section').forEach(s => s.classList.remove('visible'));
+  document.getElementById('summary-view').classList.remove('visible');
+  if (idx === 'summary') {
+    document.getElementById('tab-summary').classList.add('active');
+    buildSummary();
+    document.getElementById('summary-view').classList.add('visible');
+  } else {
+    document.getElementById('tab-' + idx).classList.add('active');
+    document.getElementById('player-' + idx).classList.add('visible');
+  }
+}
+
+function refreshTabLabels() {
+  for (let i = 0; i < N_PLAYERS; i++) {
+    const tab = document.getElementById('tab-' + i);
+    if (tab) tab.textContent = getPlayerLabel(i);
+  }
+}
+
+// ── HELPERS ──
+function textarea(p, field, rows, placeholder) {
+  const h = {sm:46,md:66,lg:88,xl:110}[rows] || 66;
+  const ta = document.createElement('textarea');
+  ta.style.height = h + 'px';
+  ta.style.width = '100%';
+  ta.className = 'q-textarea';
+  ta.placeholder = placeholder || '';
+  ta.value = get(p, field);
+  ta.oninput = () => { set(p, field, ta.value); };
+  return ta;
+}
+
+function textinput(p, field, cssClass, placeholder) {
+  const inp = document.createElement('input');
+  inp.type = 'text';
+  inp.className = cssClass || '';
+  inp.placeholder = placeholder || '';
+  inp.value = get(p, field);
+  inp.oninput = () => {
+    set(p, field, inp.value);
+    if (field === 'playerName' || field === 'charName') refreshTabLabels();
+  };
+  return inp;
+}
+
+function selectEl(p, field, options) {
+  const sel = document.createElement('select');
+  options.forEach(opt => {
+    const o = document.createElement('option');
+    o.value = opt; o.textContent = opt;
+    if (get(p, field) === opt) o.selected = true;
+    sel.appendChild(o);
+  });
+  sel.onchange = () => set(p, field, sel.value);
+  return sel;
+}
+
+function qrow(label, hint, el) {
+  const div = document.createElement('div');
+  div.className = 'q-row';
+  const lbl = document.createElement('label');
+  lbl.textContent = label;
+  div.appendChild(lbl);
+  if (hint) {
+    const h = document.createElement('div');
+    h.className = 'hint';
+    h.textContent = hint;
+    div.appendChild(h);
+  }
+  div.appendChild(el);
+  return div;
+}
+
+function section(title, cssClass) {
+  const div = document.createElement('div');
+  div.className = 'section' + (cssClass ? ' ' + cssClass : '');
+  const h2 = document.createElement('h2');
+  h2.textContent = title;
+  div.appendChild(h2);
+  return div;
+}
+
+// ── BUILD PLAYER SECTION ──
+function buildPlayerSection(p) {
+  const container = document.getElementById('main-content');
+  const div = document.createElement('div');
+  div.className = 'player-section' + (p === 0 ? ' visible' : '');
+  div.id = 'player-' + p;
+
+  // Print header
+  const ph = document.createElement('div');
+  ph.className = 'page-header-print';
+  ph.textContent = 'Shadow of Mars — Session 0 Player Tracker — Player ' + (p+1);
+  div.appendChild(ph);
+
+  // ── HEADER CARD ──
+  const hcard = document.createElement('div');
+  hcard.className = 'header-card';
+
+  const row1 = document.createElement('div');
+  row1.className = 'row';
+  const fg = (lbl, el) => {
+    const g = document.createElement('div');
+    g.className = 'field-group';
+    const l = document.createElement('label');
+    l.textContent = lbl;
+    g.appendChild(l);
+    g.appendChild(el);
+    return g;
+  };
+  row1.appendChild(fg('Player:', textinput(p,'playerName','wide','Name at table')));
+  row1.appendChild(fg('Character:', textinput(p,'charName','wide','Character name')));
+  row1.appendChild(fg('Class / Background:', textinput(p,'classBackground','med','')));
+  hcard.appendChild(row1);
+
+  const row2 = document.createElement('div');
+  row2.className = 'row';
+  row2.appendChild(fg('Role:', selectEl(p,'role',ROLES)));
+  row2.appendChild(fg('Legal Status:', selectEl(p,'legalStatus',STATUSES)));
+  row2.appendChild(fg('Citizenship goal?', selectEl(p,'citizenGoal',['Unknown','Yes','No'])));
+  row2.appendChild(fg('Comm.:', textinput(p,'commendationes','short','0')));
+  row2.appendChild(fg('Corruption:', selectEl(p,'corruption',CORRUPT_LEVELS)));
+  hcard.appendChild(row2);
+  div.appendChild(hcard);
+
+  // ── COVER STORY ──
+  const covSec = section('Cover Story (give to player, keep private)');
+  covSec.appendChild(qrow(
+    'Cover story assigned:',
+    'Select based on role. Write exactly what the character was told in their summons letter.',
+    textarea(p,'coverStory','sm','e.g. "Watch schedule audit; the legate wants it examined."')
+  ));
+  div.appendChild(covSec);
+
+  // ── BACKGROUND ──
+  const bgSec = section('Background (Aloud Questions)');
+  const bgTwo = document.createElement('div');
+  bgTwo.className = 'two-col';
+  bgTwo.appendChild(qrow('Province and family (texture, not just name):',
+    'City or farmland? Poor/comfortable? What did family do? Following that path or cutting away?',
+    textarea(p,'background','md','Where they come from...')));
+  bgTwo.appendChild(qrow('Before the oath:',
+    'What were they doing when they enlisted? Voluntary, or alternatives ran out? Running toward or away?',
+    textarea(p,'beforeOath','md','What they were doing...')));
+  bgSec.appendChild(bgTwo);
+  div.appendChild(bgSec);
+
+  // ── INNER LIFE ──
+  const innerSec = section('Inner Life (Aloud Questions)');
+  const i1 = document.createElement('div');
+  i1.className = 'two-col';
+  i1.appendChild(qrow('What they regret (small and unresolved):',
+    'The one at 3am. Not a crime — a relationship, a word unsaid, a chance missed.',
+    textarea(p,'regret','md','')));
+  i1.appendChild(qrow('What they love that they don\'t talk about:',
+    'Feeds the spear\'s whisper mechanic. What does it offer them?',
+    textarea(p,'privateLife','md','')));
+  innerSec.appendChild(i1);
+  const i2 = document.createElement('div');
+  i2.className = 'two-col';
+  i2.appendChild(qrow('What they would die for (specific):',
+    '"Rome" too large. "My unit" closer. "The person in the next tent" is the answer.',
+    textarea(p,'dieFor','sm','')));
+  i2.appendChild(qrow('What they would refuse to do, even under orders:',
+    'This is the line. Know it before you push toward it in Sessions 2-4.',
+    textarea(p,'refuseLine','sm','')));
+  innerSec.appendChild(i2);
+  innerSec.appendChild(qrow('What honor means to them — and has life already tested that definition?',
+    'The gap between stated and lived is the corruption entry point.',
+    textarea(p,'honor','sm','')));
+  div.appendChild(innerSec);
+
+  // ── THE GODS ──
+  const godSec = section('The Gods (Aloud Questions)');
+  const g1 = document.createElement('div');
+  g1.className = 'two-col';
+  g1.appendChild(qrow('Which god do they actually pray to (privately, when no one watches)?',
+    'Private faith ≠ official religion. Determines divine standing and corruption register.',
+    textarea(p,'godPray','sm','')));
+  g1.appendChild(qrow('Which god do they fear or actively avoid? Why?',
+    'Divine wounds. Shapes the emotional register of corruption scenes.',
+    textarea(p,'godAvoid','sm','')));
+  godSec.appendChild(g1);
+  const g2 = document.createElement('div');
+  g2.className = 'two-col';
+  g2.appendChild(qrow('Have they personally witnessed something they believe was divine?',
+    'Prior contact = different response when Mars arrives in Session 5.',
+    textarea(p,'divineWitness','sm','')));
+  g2.appendChild(qrow('How do they feel about omens and augury?',
+    null,
+    selectEl(p,'auguryStance',['— select —','Trusts augury fully','Follows it but uncertain','Conflicted','Dismisses it'])));
+  godSec.appendChild(g2);
+  div.appendChild(godSec);
+
+  // ── THE FRONTIER ──
+  const frontSec = section('The Frontier (Aloud Questions)');
+  const f1 = document.createElement('div');
+  f1.className = 'two-col';
+  f1.appendChild(qrow('How long posted to the frontier? First remote posting?',
+    null,
+    textarea(p,'frontierTime','sm','')));
+  f1.appendChild(qrow('Personal contact with Germanic tribespeople? As what?',
+    null,
+    textarea(p,'germanicContact','sm','')));
+  frontSec.appendChild(f1);
+  const f2 = document.createElement('div');
+  f2.className = 'two-col';
+  f2.appendChild(qrow('Languages spoken (Latin, Germanic dialects, other)?',
+    null,
+    textarea(p,'languages','sm','')));
+  f2.appendChild(qrow('What are they trying to get out of this posting (real answer)?',
+    'Promotion? Distance from something? Self-proof? This is what corruption offers them.',
+    textarea(p,'postingGoal','sm','')));
+  frontSec.appendChild(f2);
+  frontSec.appendChild(qrow('How do they see the people on the other side of the frontier line (personal, not political)?',
+    'Directly determines Vercingetorix encounter potential in Session 2.',
+    textarea(p,'germanicView','sm','')));
+  div.appendChild(frontSec);
+
+  // ── UNIT CONNECTIONS ──
+  const connSec = section('Unit Connections (what they know of each other)');
+  const connGrid = document.createElement('div');
+  connGrid.className = 'connections-grid';
+  for (let j = 0; j < 5; j++) {
+    const other = j < p ? j : j + 1;
+    const ci = document.createElement('div');
+    ci.className = 'connection-item';
+    const lbl = document.createElement('label');
+    lbl.textContent = 'Re: Player ' + (other + 1);
+    ci.appendChild(lbl);
+    const inl = document.createElement('div');
+    inl.className = 'inline';
+    const knownLbl = document.createElement('label');
+    knownLbl.textContent = 'Relation:';
+    inl.appendChild(knownLbl);
+    inl.appendChild(selectEl(p,'conn_'+other,['Unknown (strangers)','Acquaintance','Known from service']));
+    ci.appendChild(inl);
+    const ta2 = document.createElement('textarea');
+    ta2.placeholder = 'Shared event or first-impression note...';
+    ta2.value = get(p, 'conn_event_'+other);
+    ta2.oninput = () => set(p, 'conn_event_'+other, ta2.value);
+    ci.appendChild(ta2);
+    connGrid.appendChild(ci);
+  }
+  connSec.appendChild(connGrid);
+  div.appendChild(connSec);
+
+  // ── THREE QUESTIONS (aloud) ──
+  const tqSec = section('The Three Questions (Aloud — write on index cards)');
+  tqSec.appendChild(qrow('1. What does your character want to prove on this campaign?',
+    'Not "survive." Something specific. Maps directly to the Fatum.',
+    textarea(p,'q1prove','sm','')));
+  tqSec.appendChild(qrow('2. What are they afraid will happen (not a monster — about themselves, or who they\'re becoming)?',
+    'Stage 3 corruption manifests as exactly this fear.',
+    textarea(p,'q2fear','sm','')));
+  tqSec.appendChild(qrow('3. What will they protect, no matter what?',
+    'If same as sacrifice seed → Session 3 grove will be the campaign\'s emotional peak.',
+    textarea(p,'q3protect','sm','')));
+  div.appendChild(tqSec);
+
+  // ── CARDS COLLECTED ──
+  const cardSec = section('Cards Collected (written by player, given to DM)', 'cards');
+  const cardPair = document.createElement('div');
+  cardPair.className = 'card-pair';
+  const fc = document.createElement('div');
+  fc.className = 'card-item';
+  const fclbl = document.createElement('label');
+  fclbl.textContent = 'Fatum Card ("I will —")';
+  const fcp = document.createElement('div');
+  fcp.className = 'prompt';
+  fcp.textContent = 'One sentence. First person present tense. Specific enough to test.';
+  const fcta = document.createElement('textarea');
+  fcta.placeholder = '"I will discover whether Rome deserves the loyalty I have given it."';
+  fcta.value = get(p,'fatum');
+  fcta.oninput = () => set(p,'fatum',fcta.value);
+  fc.appendChild(fclbl); fc.appendChild(fcp); fc.appendChild(fcta);
+  const sc = document.createElement('div');
+  sc.className = 'card-item';
+  const sclbl = document.createElement('label');
+  sclbl.textContent = 'Sacrifice Seed Card (what they\'d give up last)';
+  const scp = document.createElement('div');
+  scp.className = 'prompt';
+  scp.textContent = 'Not a magic item. A memory, relationship, belief, or part of themselves.';
+  const scta = document.createElement('textarea');
+  scta.placeholder = '"My certainty that I am not the kind of person who does terrible things"';
+  scta.value = get(p,'sacrificeSeed');
+  scta.oninput = () => set(p,'sacrificeSeed',scta.value);
+  sc.appendChild(sclbl); sc.appendChild(scp); sc.appendChild(scta);
+  cardPair.appendChild(fc);
+  cardPair.appendChild(sc);
+  cardSec.appendChild(cardPair);
+  div.appendChild(cardSec);
+
+  // ── CORRUPTION PROFILE ──
+  const corrSec = section('Corruption Profile (DM fills in)');
+  corrSec.appendChild(qrow('What does Stage 1-2 corruption look like for this character specifically?',
+    'Not generic "disturbing dreams." The specific version tied to what they love.',
+    textarea(p,'corrStage12','md','')));
+  const cp2 = document.createElement('div');
+  cp2.className = 'two-col';
+  cp2.appendChild(qrow('What would they say to justify a small compromise?',
+    '"Just this once." "The ends justify—" Fill from table answers.',
+    textarea(p,'corrJustify','sm','')));
+  cp2.appendChild(qrow('Who would they hurt last? (Stage 4 compelled attack target)',
+    'Only use if consent was given. Use the trust relationship from private questions.',
+    textarea(p,'corrTarget','sm','')));
+  corrSec.appendChild(cp2);
+  div.appendChild(corrSec);
+
+  // ── GM PRIVATE NOTES ──
+  const privSec = section('GM Private Questions (asked one-on-one)', 'private');
+  privSec.appendChild(qrow('If they could have what they want most, what price would they not pay?',
+    'The sacrifice threshold. What costs nothing / what costs something / what is impossible.',
+    textarea(p,'sacrificeThreshold','md','')));
+  const pr2 = document.createElement('div');
+  pr2.className = 'two-col';
+  pr2.appendChild(qrow('Party member they trust completely:',
+    'This is the worst choice for influenced NPC — most devastating.',
+    textarea(p,'trustCompletely','sm','')));
+  pr2.appendChild(qrow('Party member they are unsure about:',
+    'Best choice for influenced NPC — suspicion feels natural, not jarring.',
+    textarea(p,'trustUnsure','sm','')));
+  privSec.appendChild(pr2);
+  const pr3 = document.createElement('div');
+  pr3.className = 'two-col';
+  pr3.appendChild(qrow('Arc appetite — do they want a dark ending?',
+    null,
+    selectEl(p,'arcAppetite',['— not discussed —','Wants dark arc / tragedy','Wants earned survival','Open / undecided'])));
+  pr3.appendChild(qrow('What would make them walk away from the mission?',
+    null,
+    textarea(p,'breakingPoint','sm','')));
+  privSec.appendChild(pr3);
+  const shadowCheck = get(p,'isShadowCursed') === 'yes';
+  const scRow = document.createElement('div');
+  scRow.style.cssText = 'margin-top:8px;display:flex;align-items:center;gap:6px;';
+  const scCb = document.createElement('input');
+  scCb.type = 'checkbox';
+  scCb.checked = get(p,'isShadowCursed') === 'yes';
+  scCb.onchange = () => { set(p,'isShadowCursed', scCb.checked ? 'yes' : ''); shadowFields.style.display = scCb.checked ? 'block' : 'none'; };
+  const scLbl = document.createElement('label');
+  scLbl.textContent = 'Shadow-cursed character (Shadar-kai or similar)';
+  scLbl.style.cssText = 'font-size:10px;font-weight:700;color:#404040;';
+  scRow.appendChild(scCb); scRow.appendChild(scLbl);
+  privSec.appendChild(scRow);
+  const shadowFields = document.createElement('div');
+  shadowFields.style.display = get(p,'isShadowCursed') === 'yes' ? 'block' : 'none';
+  shadowFields.style.marginTop = '6px';
+  const sf2 = document.createElement('div');
+  sf2.className = 'two-col';
+  sf2.appendChild(qrow('When did they first realize the shadow was not only theirs?',
+    'Specific memory. Will appear in the vault (S1) and grove moment (S4).',
+    textarea(p,'shadowMemory','sm','')));
+  sf2.appendChild(qrow('What was the last thing that made them feel fully present?',
+    'The fading mechanic\'s emotional root. What type of sensation resets their presence?',
+    textarea(p,'shadowPresence','sm','')));
+  shadowFields.appendChild(sf2);
+  privSec.appendChild(shadowFields);
+  div.appendChild(privSec);
+
+  // ── CAMPAIGN TRACKING ──
+  const trackSec = section('Campaign Tracking (updated each session)', 'tracking');
+  const trackRow = document.createElement('div');
+  trackRow.className = 'track-row';
+  const addTrack = (lbl, field, type, opts) => {
+    const l = document.createElement('label');
+    l.textContent = lbl;
+    trackRow.appendChild(l);
+    if (type === 'select') {
+      const s = selectEl(p, field, opts);
+      trackRow.appendChild(s);
+    } else {
+      const inp = document.createElement('input');
+      inp.type = type;
+      if (type === 'number') { inp.min = 0; inp.max = 20; }
+      inp.value = get(p, field) || (type === 'number' ? '0' : '');
+      inp.oninput = () => set(p, field, inp.value);
+      if (type === 'text') inp.style.width = '160px';
+      trackRow.appendChild(inp);
+    }
+  };
+  addTrack('Commendationes:', 'commendationes2', 'number');
+  addTrack('Corruption level:', 'corruptionLevel', 'select', CORRUPT_LEVELS);
+  addTrack('Legal status (current):', 'currentStatus', 'select', STATUSES);
+  addTrack('Citizenship petition filed?', 'petitionFiled', 'select', ['No','Pending — Latinus petition','Pending — Civis petition','Granted']);
+  trackSec.appendChild(trackRow);
+  trackSec.appendChild(document.createElement('br'));
+  trackSec.appendChild(qrow('Session notes / evolving character state:',
+    null,
+    textarea(p,'sessionNotes','lg','')));
+  div.appendChild(trackSec);
+
+  container.insertBefore(div, document.getElementById('summary-view'));
+}
+
+// ── BUILD SUMMARY ──
+function buildSummary() {
+  const tbody = document.getElementById('summary-body');
+  tbody.innerHTML = '';
+  const cb = document.getElementById('cover-summary-body');
+  cb.innerHTML = '';
+  const db = document.getElementById('divine-summary-body');
+  db.innerHTML = '';
+
+  for (let i = 0; i < N_PLAYERS; i++) {
+    const tr = document.createElement('tr');
+    const cells = [
+      get(i,'playerName') || ('Player '+(i+1)),
+      get(i,'charName') || '—',
+      get(i,'role') || '—',
+      get(i,'currentStatus') || get(i,'legalStatus') || '—',
+      get(i,'commendationes2') || get(i,'commendationes') || '0',
+      get(i,'corruptionLevel') || get(i,'corruption') || '0',
+      get(i,'fatum') || '—',
+      get(i,'sacrificeSeed') || '—',
+      get(i,'refuseLine') || '—',
+    ];
+    cells.forEach(c => {
+      const td = document.createElement('td');
+      td.textContent = c.length > 60 ? c.substring(0,57)+'...' : c;
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+
+    const ctr = document.createElement('tr');
+    [get(i,'playerName')||('Player '+(i+1)), get(i,'charName')||'—', get(i,'role')||'—', get(i,'coverStory')||'—'].forEach(c => {
+      const td = document.createElement('td');
+      td.textContent = c;
+      ctr.appendChild(td);
+    });
+    cb.appendChild(ctr);
+
+    const dtr = document.createElement('tr');
+    [get(i,'playerName')||('Player '+(i+1)), get(i,'charName')||'—', get(i,'godPray')||'—', get(i,'godAvoid')||'—', get(i,'divineWitness')||'—'].forEach(c => {
+      const td = document.createElement('td');
+      td.textContent = c.length > 50 ? c.substring(0,47)+'...' : c;
+      dtr.appendChild(td);
+    });
+    db.appendChild(dtr);
+  }
+}
+
+// ── EXPORT ──
+function exportData() {
+  let out = 'SHADOW OF MARS — SESSION 0 PLAYER TRACKER\n';
+  out += 'Exported: ' + new Date().toLocaleString() + '\n';
+  out += '='.repeat(60) + '\n\n';
+  for (let i = 0; i < N_PLAYERS; i++) {
+    out += 'PLAYER ' + (i+1) + ': ' + (get(i,'playerName')||'—') + ' / ' + (get(i,'charName')||'—') + '\n';
+    out += '-'.repeat(40) + '\n';
+    const fields = [
+      ['Role', 'role'], ['Legal Status', 'legalStatus'], ['Citizen Goal', 'citizenGoal'],
+      ['Cover Story', 'coverStory'], ['Province/Family', 'background'], ['Before Oath', 'beforeOath'],
+      ['Regret', 'regret'], ['Private Love', 'privateLife'], ['Die For', 'dieFor'],
+      ['Will Refuse', 'refuseLine'], ['Honor', 'honor'], ['God Prays To', 'godPray'],
+      ['God Avoids', 'godAvoid'], ['Divine Witness', 'divineWitness'], ['Frontier Time', 'frontierTime'],
+      ['Germanic Contact', 'germanicContact'], ['Languages', 'languages'], ['Germanic View', 'germanicView'],
+      ['Posting Goal', 'postingGoal'], ['Q1 Prove', 'q1prove'], ['Q2 Fear', 'q2fear'],
+      ['Q3 Protect', 'q3protect'], ['Fatum', 'fatum'], ['Sacrifice Seed', 'sacrificeSeed'],
+      ['Corruption 1-2', 'corrStage12'], ['Corr Justify', 'corrJustify'], ['Corr Target', 'corrTarget'],
+      ['Sacrifice Threshold', 'sacrificeThreshold'], ['Trusts', 'trustCompletely'],
+      ['Unsure About', 'trustUnsure'], ['Arc Appetite', 'arcAppetite'], ['Breaking Point', 'breakingPoint'],
+      ['Session Notes', 'sessionNotes']
+    ];
+    fields.forEach(([label, field]) => {
+      const v = get(i, field);
+      if (v) out += label + ': ' + v + '\n';
+    });
+    out += '\n';
+  }
+  const blob = new Blob([out], {type:'text/plain'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'session0_tracker_' + new Date().toISOString().slice(0,10) + '.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function clearData() {
+  if (!confirm('Clear ALL player data? This cannot be undone.')) return;
+  localStorage.removeItem('session0_tracker_v2');
+  data = {};
+  initData();
+  location.reload();
+}
+
+// ── INIT ──
+loadData();
+buildUI();
+</script>
+</body>
+</html>

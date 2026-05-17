@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Session 0 — Player Cards</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Georgia', serif; background: #f0e8d0; color: #1a1208; }
+
+.page-info {
+  background: #7a1a00; color: white; padding: 8px 16px;
+  font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.page-info button {
+  background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4);
+  color: white; padding: 3px 10px; cursor: pointer; font-size: 11px; border-radius: 2px;
+}
+.instructions {
+  font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; color: #604020;
+  padding: 8px 16px; background: #f8f0d8; border-bottom: 1px solid #c8a060;
+}
+
+/* Card grid — 2 columns × 3 rows per page */
+.card-sheet {
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.sheet-title {
+  grid-column: 1 / -1;
+  font-family: 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em; color: #7a1a00;
+  border-bottom: 2px solid #7a1a00; padding-bottom: 4px; margin-bottom: 2px;
+}
+
+/* Individual card */
+.card {
+  border: 2px solid #8b5c0a;
+  border-radius: 4px;
+  background: #fdf8ec;
+  padding: 12px 14px;
+  min-height: 160px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card.fatum { border-color: #7a1a00; background: #fff8f2; }
+.card.sacrifice { border-color: #285020; background: #f2fff4; }
+.card.cover { border-color: #1a3070; background: #f2f6ff; }
+.card.corruption { border-color: #404040; background: #f8f8f4; }
+
+.card-label {
+  font-family: 'Segoe UI', Arial, sans-serif; font-size: 8.5px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 3px;
+}
+.card.fatum .card-label { color: #7a1a00; }
+.card.sacrifice .card-label { color: #285020; }
+.card.cover .card-label { color: #1a3070; }
+.card.corruption .card-label { color: #404040; }
+
+.card-campaign {
+  font-size: 7.5px; font-style: italic; color: #806040;
+  margin-bottom: 8px; letter-spacing: 0.04em;
+}
+.card-player {
+  font-family: 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 700;
+  color: #1a1208; border-bottom: 1px solid #c8a060; padding-bottom: 3px; margin-bottom: 6px;
+  min-height: 18px;
+}
+.card-prompt {
+  font-size: 10px; font-style: italic; color: #605030; margin-bottom: 6px; line-height: 1.4;
+}
+.card-prompt strong { font-style: normal; font-size: 11px; color: #1a1208; }
+.write-lines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.write-line {
+  border-bottom: 1px solid #c8a060;
+  height: 18px;
+  width: 100%;
+}
+.card-corner {
+  position: absolute; bottom: 8px; right: 10px;
+  font-size: 7px; color: #c0a060; font-style: italic;
+}
+
+/* Cover story card has a text field */
+.card-field {
+  font-family: 'Segoe UI', Arial, sans-serif; font-size: 10px;
+  border: none; border-bottom: 1px solid #8899cc;
+  background: transparent; width: 100%; margin-bottom: 5px;
+  color: #1a1208; outline: none;
+}
+.card-field::placeholder { color: #9090b0; }
+.cover-label { font-size: 8.5px; font-weight: 700; color: #1a3070; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 5px; margin-bottom: 2px; display: block; font-family: 'Segoe UI', Arial, sans-serif; }
+.corruption-sub { font-family: 'Segoe UI', Arial, sans-serif; font-size: 8.5px; font-weight: 700; color: #606040; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; margin-bottom: 2px; }
+.corruption-lines { display: flex; flex-direction: column; gap: 4px; }
+
+@media print {
+  .page-info, .instructions { display: none; }
+  body { background: white; }
+  .card-sheet { padding: 8px; max-width: 100%; }
+  .card { border-color: #000 !important; background: white !important; }
+  .card-label, .card-prompt, .write-line, .card-campaign { color: black !important; }
+  .write-line { border-bottom-color: #999 !important; }
+  .card-player { border-bottom-color: #999 !important; }
+  a { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="page-info">
+  <span><strong>Session 0 Player Cards</strong> — Print and cut. Fatum + Sacrifice cards go to players. Cover story + Corruption cards are DM-only.</span>
+  <button onclick="window.print()">Print / PDF</button>
+</div>
+<div class="instructions">
+  Print this page and cut along the card borders. <strong>Fatum cards</strong> (red border): one per player, filled in and returned to you.
+  <strong>Sacrifice cards</strong> (green border): same — player fills in and gives to you. Do not show them again until Session 3.
+  <strong>Cover story cards</strong> (blue border): fill in, give to each player individually — they don't compare notes.
+  <strong>Corruption profile cards</strong> (grey border): DM-only. Fill in privately after Session 0.
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     SHEET 1: FATUM CARDS (6 cards, one per player)
+═══════════════════════════════════════════════ -->
+<div class="card-sheet">
+  <div class="sheet-title">Fatum Cards — Player fills in and gives to DM. Not shown again until Session 5.</div>
+
+  <!-- Generate 6 fatum cards -->
+  <div class="card fatum" id="fc1">
+    <div class="card-label">Fatum</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" data-id="fc1-player" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">Fill in the blank. First person. Present tense. Specific enough to test.<br><strong>"I will —"</strong></div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Keep this card. Give it to your DM.</div>
+  </div>
+
+  <div class="card fatum" id="fc2">
+    <div class="card-label">Fatum</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">Fill in the blank. First person. Present tense. Specific enough to test.<br><strong>"I will —"</strong></div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Keep this card. Give it to your DM.</div>
+  </div>
+
+  <div class="card fatum" id="fc3">
+    <div class="card-label">Fatum</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">Fill in the blank. First person. Present tense. Specific enough to test.<br><strong>"I will —"</strong></div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Keep this card. Give it to your DM.</div>
+  </div>
+
+  <div class="card fatum" id="fc4">
+    <div class="card-label">Fatum</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">Fill in the blank. First person. Present tense. Specific enough to test.<br><strong>"I will —"</strong></div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Keep this card. Give it to your DM.</div>
+  </div>
+
+  <div class="card fatum" id="fc5">
+    <div class="card-label">Fatum</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">Fill in the blank. First person. Present tense. Specific enough to test.<br><strong>"I will —"</strong></div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Keep this card. Give it to your DM.</div>
+  </div>
+
+  <div class="card fatum" id="fc6">
+    <div class="card-label">Fatum</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">Fill in the blank. First person. Present tense. Specific enough to test.<br><strong>"I will —"</strong></div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Keep this card. Give it to your DM.</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     SHEET 2: SACRIFICE SEED CARDS (6 cards)
+═══════════════════════════════════════════════════════ -->
+<div class="card-sheet">
+  <div class="sheet-title">Sacrifice Seed Cards — Player fills in and gives to DM. Not shown again until Session 3 grove ritual.</div>
+
+  <div class="card sacrifice">
+    <div class="card-label">Sacrifice Seed</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">The thing your character would give up <em>last</em>.<br>Not a magic item. Not a stat. Something with personal weight: a memory, a relationship, a belief, a part of themselves.</div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Give this to your DM. Do not show anyone else.</div>
+  </div>
+
+  <div class="card sacrifice">
+    <div class="card-label">Sacrifice Seed</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">The thing your character would give up <em>last</em>.<br>Not a magic item. Not a stat. Something with personal weight: a memory, a relationship, a belief, a part of themselves.</div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Give this to your DM. Do not show anyone else.</div>
+  </div>
+
+  <div class="card sacrifice">
+    <div class="card-label">Sacrifice Seed</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">The thing your character would give up <em>last</em>.<br>Not a magic item. Not a stat. Something with personal weight: a memory, a relationship, a belief, a part of themselves.</div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Give this to your DM. Do not show anyone else.</div>
+  </div>
+
+  <div class="card sacrifice">
+    <div class="card-label">Sacrifice Seed</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">The thing your character would give up <em>last</em>.<br>Not a magic item. Not a stat. Something with personal weight: a memory, a relationship, a belief, a part of themselves.</div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Give this to your DM. Do not show anyone else.</div>
+  </div>
+
+  <div class="card sacrifice">
+    <div class="card-label">Sacrifice Seed</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">The thing your character would give up <em>last</em>.<br>Not a magic item. Not a stat. Something with personal weight: a memory, a relationship, a belief, a part of themselves.</div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Give this to your DM. Do not show anyone else.</div>
+  </div>
+
+  <div class="card sacrifice">
+    <div class="card-label">Sacrifice Seed</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Player name / Character name"></div>
+    <div class="card-prompt">The thing your character would give up <em>last</em>.<br>Not a magic item. Not a stat. Something with personal weight: a memory, a relationship, a belief, a part of themselves.</div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div class="card-corner">Give this to your DM. Do not show anyone else.</div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SHEET 3: COVER STORY CARDS (6 cards — DM fills, gives to player)
+════════════════════════════════════════════════════════ -->
+<div class="card-sheet">
+  <div class="sheet-title">Cover Story Cards — DM fills in before Session 0. Give one to each player privately. Players do not compare cards.</div>
+
+  <div class="card cover">
+    <div class="card-label">Summons — Confidential</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <span class="cover-label">Your stated reason for the summons:</span>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <span class="cover-label">Report to:</span>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#3050a0">For your character only.</div>
+  </div>
+
+  <div class="card cover">
+    <div class="card-label">Summons — Confidential</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <span class="cover-label">Your stated reason for the summons:</span>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <span class="cover-label">Report to:</span>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#3050a0">For your character only.</div>
+  </div>
+
+  <div class="card cover">
+    <div class="card-label">Summons — Confidential</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <span class="cover-label">Your stated reason for the summons:</span>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <span class="cover-label">Report to:</span>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#3050a0">For your character only.</div>
+  </div>
+
+  <div class="card cover">
+    <div class="card-label">Summons — Confidential</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <span class="cover-label">Your stated reason for the summons:</span>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <span class="cover-label">Report to:</span>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#3050a0">For your character only.</div>
+  </div>
+
+  <div class="card cover">
+    <div class="card-label">Summons — Confidential</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <span class="cover-label">Your stated reason for the summons:</span>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <span class="cover-label">Report to:</span>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#3050a0">For your character only.</div>
+  </div>
+
+  <div class="card cover">
+    <div class="card-label">Summons — Confidential</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <span class="cover-label">Your stated reason for the summons:</span>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <span class="cover-label">Report to:</span>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#3050a0">For your character only.</div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════
+     SHEET 4: CORRUPTION PROFILE CARDS (6 cards — DM only, private)
+════════════════════════════════════════════════════════════ -->
+<div class="card-sheet">
+  <div class="sheet-title">Corruption Profile Cards — DM only. Fill in after Session 0 private conversations. Never show to players.</div>
+
+  <div class="card corruption">
+    <div class="card-label">Corruption Profile — DM Only</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <div class="corruption-sub">Stage 1-2 looks like:</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="corruption-sub">Their internal justification:</div>
+    <div class="write-line"></div>
+    <div class="corruption-sub">Stage 4 target (if consent given):</div>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#606040">DM only. Do not show player.</div>
+  </div>
+
+  <div class="card corruption">
+    <div class="card-label">Corruption Profile — DM Only</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <div class="corruption-sub">Stage 1-2 looks like:</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="corruption-sub">Their internal justification:</div>
+    <div class="write-line"></div>
+    <div class="corruption-sub">Stage 4 target (if consent given):</div>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#606040">DM only. Do not show player.</div>
+  </div>
+
+  <div class="card corruption">
+    <div class="card-label">Corruption Profile — DM Only</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <div class="corruption-sub">Stage 1-2 looks like:</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="corruption-sub">Their internal justification:</div>
+    <div class="write-line"></div>
+    <div class="corruption-sub">Stage 4 target (if consent given):</div>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#606040">DM only. Do not show player.</div>
+  </div>
+
+  <div class="card corruption">
+    <div class="card-label">Corruption Profile — DM Only</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <div class="corruption-sub">Stage 1-2 looks like:</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="corruption-sub">Their internal justification:</div>
+    <div class="write-line"></div>
+    <div class="corruption-sub">Stage 4 target (if consent given):</div>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#606040">DM only. Do not show player.</div>
+  </div>
+
+  <div class="card corruption">
+    <div class="card-label">Corruption Profile — DM Only</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <div class="corruption-sub">Stage 1-2 looks like:</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="corruption-sub">Their internal justification:</div>
+    <div class="write-line"></div>
+    <div class="corruption-sub">Stage 4 target (if consent given):</div>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#606040">DM only. Do not show player.</div>
+  </div>
+
+  <div class="card corruption">
+    <div class="card-label">Corruption Profile — DM Only</div>
+    <div class="card-campaign">Shadow of Mars — 175 AD</div>
+    <div class="card-player" contenteditable="true" placeholder="Character name"></div>
+    <div class="corruption-sub">Stage 1-2 looks like:</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div class="corruption-sub">Their internal justification:</div>
+    <div class="write-line"></div>
+    <div class="corruption-sub">Stage 4 target (if consent given):</div>
+    <div class="write-line"></div>
+    <div class="card-corner" style="color:#606040">DM only. Do not show player.</div>
+  </div>
+</div>
+
+</body>
+</html>
