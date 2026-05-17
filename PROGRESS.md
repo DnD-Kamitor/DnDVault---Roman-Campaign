@@ -14,15 +14,13 @@ Last updated after each completed task. Check here to see current status.
 
 ---
 
-## In progress
+## Done this session (continued)
 
-- [ ] **knowledge.qmd toggle fix** — Proficiency/stat/role passive gates are open (visible to all players). Must wrap each `**X proficiency** — ...` / `**Stat N+** — ...` / `**X role** — ...` bullet in `<details>` collapsibles. Affects: knowledge.qmd (confirmed), potentially vindolanda_guide.qmd and other files.
+- [x] **Milestone 81** — knowledge.qmd: 60 passive gates converted to `<details>` collapsibles; intro text updated. vindolanda_guide.qmd: 41 passive gates converted. All .qmd files: zero remaining open passive gate bullets.
 
 ---
 
 ## Queued (in order)
-
-- [ ] **Scan for same toggle issue** in vindolanda_guide.qmd, roles.qmd, roman_tactics.qmd
 - [ ] **Em-dash sweep** — Pre-existing prose em-dashes in content written before this session (not the structural `**Bold** —` gate format, which is kept)
 - [ ] **Task D** (roman_tactics.qmd) — Pilum bending mechanics sidebar, coronae section, auxiliaries entry
 - [ ] **Task E** (bestiary.qmd) — Lemures entry with Roman context, May festival mechanics, bean ritual
