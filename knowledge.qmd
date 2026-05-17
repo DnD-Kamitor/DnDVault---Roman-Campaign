@@ -2,13 +2,13 @@
 
 When your character attempts to recall information during play, your GM will call for an ability check. The difficulty reflects how specialized or obscure the knowledge is. This chapter tells you what your character actually knows at each level of that check.
 
-**How to use this chapter:** Each category has three layers. The first layer is always visible: read it now, before the campaign, as baseline knowledge your character carries without effort. The collapsible sections below it open when you succeed on the listed check at the table.
+**How to use this chapter:** Each category has three layers. Read the open text under each section heading now, before the campaign: it is baseline knowledge your character carries without effort.
 
-Read the open text for every category before Session 1. It is not secret: it is what your character simply knows. The collapsed sections represent what you might recall under pressure, given training or experience in that area.
+The collapsibles below it are either *trait-gated* (open them only if your character has that proficiency, stat score, or role) or *check-gated* (open them when you succeed on the listed DC at the table). Do not read collapsibles for traits or checks your character does not have.
 
 **What changes at each tier:** DC 13 gives you *facts*: the kind of thing a trained professional knows. DC 15 gives you *implications*: what those facts mean, what questions they raise, what a thoughtful person does with them. DC 17 gives you *dangerous knowledge*: what someone equipped with this information could do with it, and why most people are not told. These are three different kinds of knowing, not just three amounts of the same thing.
 
-*The collapsible sections below are arranged by check difficulty. Click to expand each tier.*
+*Trait gates (proficiency / stat / role) appear under "What you know without a check." Check gates (DC 13–17) follow below each section.*
 
 
 ## Roman Military Lore
@@ -19,12 +19,47 @@ The Roman legion is the most effective military force in the world and you are p
 
 **What you know without a check:**
 
-- **History proficiency** — The three retired legion numbers (XVII, XVIII, XIX) and why they were never reused; the watchtower fire-signal code for your sector of the frontier.
-- **Athletics proficiency** — Formation timing by instinct -- you know when the line is about to break before it breaks; you can read a march's pace and know how many miles remain before the unit's legs give out.
-- **Strength 14+** — The weight of a full kit and how it distributes across the body after six hours; you can read a soldier's conditioning from across a courtyard by the way he moves under load.
-- **Optio role** — You command century-by-century coordination. You know what the centurion is about to order before he orders it because you have felt the line's condition. You read the temperature of discipline: when the right flank is getting tired (their spacing loosens first), when the left flank is holding too hard (the shields begin to tremble), when fear is spreading (it travels along the front line like ripples on water). A century without an optio is a century that dies when pressure increases, because there is no one to feel the line and adjust before the breaking point arrives.
-- **Tesserarius role** — You run the watch rotations and you know something no one else tracks: the mathematical point of maximum danger. A soldier who has been awake for 18 hours straight is no longer useful in formation. A relief that is late by 30 minutes can cost you a century. You know which months have the most attempted Germanic crossings: always when there is a new watch cycle and the timing is temporarily off. A commander who understands rotation schedules can predict Germanic attack windows, because the tribes have been watching the same patterns for eighteen months.
-- **Aquilifer role** — The eagle standard coordinates the legion in ways that voice commands cannot. When the legion moves, the eagle moves, and every soldier watches it from peripheral vision without thinking about it. A commanding officer gives an order but the eagle's position tells soldiers what he actually means. The eagle's movement language: a 45-degree shift means hold here despite pressure; a full retreat means full retreat, not a consolidation. The eagle speaks when officers cannot be heard in battle noise. When you carry it, you are speaking Mars's command language.
+<details>
+<summary><strong>History proficiency</strong></summary>
+
+The three retired legion numbers (XVII, XVIII, XIX) and why they were never reused; the watchtower fire-signal code for your sector of the frontier.
+
+</details>
+
+<details>
+<summary><strong>Athletics proficiency</strong></summary>
+
+Formation timing by instinct -- you know when the line is about to break before it breaks; you can read a march's pace and know how many miles remain before the unit's legs give out.
+
+</details>
+
+<details>
+<summary><strong>Strength 14+</strong></summary>
+
+The weight of a full kit and how it distributes across the body after six hours; you can read a soldier's conditioning from across a courtyard by the way he moves under load.
+
+</details>
+
+<details>
+<summary><strong>Optio role</strong></summary>
+
+You command century-by-century coordination. You know what the centurion is about to order before he orders it because you have felt the line's condition. You read the temperature of discipline: when the right flank is getting tired (their spacing loosens first), when the left flank is holding too hard (the shields begin to tremble), when fear is spreading (it travels along the front line like ripples on water). A century without an optio is a century that dies when pressure increases, because there is no one to feel the line and adjust before the breaking point arrives.
+
+</details>
+
+<details>
+<summary><strong>Tesserarius role</strong></summary>
+
+You run the watch rotations and you know something no one else tracks: the mathematical point of maximum danger. A soldier who has been awake for 18 hours straight is no longer useful in formation. A relief that is late by 30 minutes can cost you a century. You know which months have the most attempted Germanic crossings: always when there is a new watch cycle and the timing is temporarily off. A commander who understands rotation schedules can predict Germanic attack windows, because the tribes have been watching the same patterns for eighteen months.
+
+</details>
+
+<details>
+<summary><strong>Aquilifer role</strong></summary>
+
+The eagle standard coordinates the legion in ways that voice commands cannot. When the legion moves, the eagle moves, and every soldier watches it from peripheral vision without thinking about it. A commanding officer gives an order but the eagle's position tells soldiers what he actually means. The eagle's movement language: a 45-degree shift means hold here despite pressure; a full retreat means full retreat, not a consolidation. The eagle speaks when officers cannot be heard in battle noise. When you carry it, you are speaking Mars's command language.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (History) — Recalling standard legion structure, chain of command, and pay</strong></summary>
@@ -118,10 +153,33 @@ A march is not travel. It is a sustained physical system that either holds toget
 
 **What you know without a check:**
 
-- **Survival proficiency** — Water sources by terrain type; the two-hour warning sign of incoming weather on the frontier (cloud formation over the hills before the pressure drop); which animals indicate safe foraging ground and which mean stay away; how far a column can march before horses need water (every four hours of march) versus men (every six hours under moderate load).
-- **Athletics proficiency** — How long a soldier can run in full kit before becoming combat-ineffective (roughly 400 yards at combat pace); the maximum load a soldier can carry for 20 miles without degrading performance the next day (standard kit is 80 lbs, hard limit is 110 lbs before injury accumulates); how to identify a man whose legs are about to fail before he falls out of formation.
-- **Animal Handling proficiency** — The signs of a horse about to throw its rider; how to calm a pack animal spooked by combat noise; the difference between a horse that is tired and a horse that is injured in a way that will worsen with continued movement.
-- **Constitution 14+** — You know your own physical limits exactly: how much cold you can absorb before your hands stop working reliably, how many hours without sleep before your threat assessment becomes unreliable, the exact moment when you shift from tired to dangerous to yourself and others. You use this to manage your margin in the field, and you can read the same limits in the soldiers around you.
+<details>
+<summary><strong>Survival proficiency</strong></summary>
+
+Water sources by terrain type; the two-hour warning sign of incoming weather on the frontier (cloud formation over the hills before the pressure drop); which animals indicate safe foraging ground and which mean stay away; how far a column can march before horses need water (every four hours of march) versus men (every six hours under moderate load).
+
+</details>
+
+<details>
+<summary><strong>Athletics proficiency</strong></summary>
+
+How long a soldier can run in full kit before becoming combat-ineffective (roughly 400 yards at combat pace); the maximum load a soldier can carry for 20 miles without degrading performance the next day (standard kit is 80 lbs, hard limit is 110 lbs before injury accumulates); how to identify a man whose legs are about to fail before he falls out of formation.
+
+</details>
+
+<details>
+<summary><strong>Animal Handling proficiency</strong></summary>
+
+The signs of a horse about to throw its rider; how to calm a pack animal spooked by combat noise; the difference between a horse that is tired and a horse that is injured in a way that will worsen with continued movement.
+
+</details>
+
+<details>
+<summary><strong>Constitution 14+</strong></summary>
+
+You know your own physical limits exactly: how much cold you can absorb before your hands stop working reliably, how many hours without sleep before your threat assessment becomes unreliable, the exact moment when you shift from tired to dangerous to yourself and others. You use this to manage your margin in the field, and you can read the same limits in the soldiers around you.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Wisdom (Survival) — Locating water, food, and shelter on the Germanic frontier in spring</strong></summary>
@@ -198,10 +256,33 @@ The gods are real and they are paying attention. You have known this since child
 
 **What you know without a check:**
 
-- **Religion proficiency** — All twelve major gods by name and specific jurisdiction; which festivals require active observance versus passive acknowledgment; what constitutes a valid vow and what breaks one.
-- **Wisdom 14+** — You have noticed when the gods are paying attention. You know the difference between a bad omen and ambient misfortune. The feeling is physical: a change in pressure, a wrongness in the air. You may not be able to explain it but you have never been wrong when you have felt it.
-- **Sacerdos role** — The theological difference between state religion and private vows matters at the table. State sacrifices are formal, documented, and legally binding on the unit. Private vows are personal, undocumented, and binding on the soldier's soul alone. A soldier who has made a private vow to Mars in exchange for victory is a soldier who will not retreat under any circumstances, because retreat violates his vow. Tracking which soldiers have active private vows tells you which soldiers are most dangerous to use as a rearguard and most reliable as a first line. The Sacerdos is the only person soldiers tell about private vows.
-- **Signifer role** — Treason charges include automatic confiscation of the accused's property and redistribution to accusers and the treasury. This creates financial incentives for false accusations in Rome's legal system. A soldier who knows this understands that making an accusation against a wealthy officer is not just a legal act: it is a financial opportunity. The Signifer manages unit savings and knows exactly how much each officer's confiscated estate would be worth. This knowledge is dangerous. Use it carefully.
+<details>
+<summary><strong>Religion proficiency</strong></summary>
+
+All twelve major gods by name and specific jurisdiction; which festivals require active observance versus passive acknowledgment; what constitutes a valid vow and what breaks one.
+
+</details>
+
+<details>
+<summary><strong>Wisdom 14+</strong></summary>
+
+You have noticed when the gods are paying attention. You know the difference between a bad omen and ambient misfortune. The feeling is physical: a change in pressure, a wrongness in the air. You may not be able to explain it but you have never been wrong when you have felt it.
+
+</details>
+
+<details>
+<summary><strong>Sacerdos role</strong></summary>
+
+The theological difference between state religion and private vows matters at the table. State sacrifices are formal, documented, and legally binding on the unit. Private vows are personal, undocumented, and binding on the soldier's soul alone. A soldier who has made a private vow to Mars in exchange for victory is a soldier who will not retreat under any circumstances, because retreat violates his vow. Tracking which soldiers have active private vows tells you which soldiers are most dangerous to use as a rearguard and most reliable as a first line. The Sacerdos is the only person soldiers tell about private vows.
+
+</details>
+
+<details>
+<summary><strong>Signifer role</strong></summary>
+
+Treason charges include automatic confiscation of the accused's property and redistribution to accusers and the treasury. This creates financial incentives for false accusations in Rome's legal system. A soldier who knows this understands that making an accusation against a wealthy officer is not just a legal act: it is a financial opportunity. The Signifer manages unit savings and knows exactly how much each officer's confiscated estate would be worth. This knowledge is dangerous. Use it carefully.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (History) — Recalling the Roman pantheon, do ut des practice, and augury basics</strong></summary>
@@ -258,11 +339,40 @@ You are a soldier serving on the Germanic frontier in the month of April. Mars i
 
 **What you know without a check:**
 
-- **Religion proficiency** — The exact words of the *Quinquatria* weapon blessing; the correct form of address when speaking to Mars before combat; the difference between Mars *Gradivus* (the marching god, god of disciplined war) and Mars *Ultor* (the avenger, the punitive aspect).
-- **Soldier background** — What Mars's favor feels like inside a formation. You have fought in his name enough times to recognize when the ground changes under your feet; when the air thickens before a charge; when you know with certainty that the line will hold. Whether this is divine favor or battle-calm, you do not analyze it. You use it.
-- **Flamen Martialis role** — Mars on the frontier is not one god. He is three aspects: *Mars Protector* (of the fort's boundaries), *Mars Awakener* (of the warrior's clarity before battle), and *Mars Judge* (of whether a death was honorable or shameful). A soldier who prays to all three is not being redundant: he is acknowledging that Mars watches the same act differently depending on whether it is defensive, offensive, or conclusive. You perform all three rites before major operations. Most soldiers do not know there are three.
-- **Aquilifer role** — The eagle standard is Mars's material anchor point at Fort Vindolanda. When you carry it, you carry the god's attention concentrated into one object. This is not metaphor. Soldiers can feel it. The eagle is why men hold formation when they would otherwise break. The eagle is why a unit with no commanding officer can still function. The eagle is what Mars looks at when he judges whether the soldiers deserve his favor. The spear currently sealed in the vault is a second anchor point, older than the eagle, and they cannot coexist in the same space without one dominating the other.
-- **Haruspex role** — You read signs from Mars differently than from other gods. Jupiter speaks through patterns and omens. Mars speaks through blood and violence: the way a wound bleeds, the direction a spear falls, what animals refuse to eat or approach. The most accurate augury for Mars is to observe what he does *after* a violence, not what precedes it. A corpse tells you what Mars decided about that death. When the camp dogs all died the same night, that was Mars's verdict on what was sealed below. He was not cursing the camp. He was issuing a ruling.
+<details>
+<summary><strong>Religion proficiency</strong></summary>
+
+The exact words of the *Quinquatria* weapon blessing; the correct form of address when speaking to Mars before combat; the difference between Mars *Gradivus* (the marching god, god of disciplined war) and Mars *Ultor* (the avenger, the punitive aspect).
+
+</details>
+
+<details>
+<summary><strong>Soldier background</strong></summary>
+
+What Mars's favor feels like inside a formation. You have fought in his name enough times to recognize when the ground changes under your feet; when the air thickens before a charge; when you know with certainty that the line will hold. Whether this is divine favor or battle-calm, you do not analyze it. You use it.
+
+</details>
+
+<details>
+<summary><strong>Flamen Martialis role</strong></summary>
+
+Mars on the frontier is not one god. He is three aspects: *Mars Protector* (of the fort's boundaries), *Mars Awakener* (of the warrior's clarity before battle), and *Mars Judge* (of whether a death was honorable or shameful). A soldier who prays to all three is not being redundant: he is acknowledging that Mars watches the same act differently depending on whether it is defensive, offensive, or conclusive. You perform all three rites before major operations. Most soldiers do not know there are three.
+
+</details>
+
+<details>
+<summary><strong>Aquilifer role</strong></summary>
+
+The eagle standard is Mars's material anchor point at Fort Vindolanda. When you carry it, you carry the god's attention concentrated into one object. This is not metaphor. Soldiers can feel it. The eagle is why men hold formation when they would otherwise break. The eagle is why a unit with no commanding officer can still function. The eagle is what Mars looks at when he judges whether the soldiers deserve his favor. The spear currently sealed in the vault is a second anchor point, older than the eagle, and they cannot coexist in the same space without one dominating the other.
+
+</details>
+
+<details>
+<summary><strong>Haruspex role</strong></summary>
+
+You read signs from Mars differently than from other gods. Jupiter speaks through patterns and omens. Mars speaks through blood and violence: the way a wound bleeds, the direction a spear falls, what animals refuse to eat or approach. The most accurate augury for Mars is to observe what he does *after* a violence, not what precedes it. A corpse tells you what Mars decided about that death. When the camp dogs all died the same night, that was Mars's verdict on what was sealed below. He was not cursing the camp. He was issuing a ruling.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (Religion) — Recalling Mars's symbols, sacred month, and relationship to Rome's founding</strong></summary>
@@ -324,8 +434,19 @@ You are stationed on the Germanic frontier. You have opinions about the people o
 
 **What you know without a check:**
 
-- **Survival proficiency** — You can identify Germanic camp sign from Roman sign at 100 yards by smell and sound; you know which forest sounds are wrong (too quiet, the wrong birds, the specific silence before an ambush); you know which months raids increase and which months the forest goes quiet.
-- **Insight proficiency** — You read Germanic emotional register. You know the difference between a warrior who is afraid and one who is ready. You know what it looks like when a chief's authority over his men is slipping. You have been lied to by Germanics before and you know what that looks like too.
+<details>
+<summary><strong>Survival proficiency</strong></summary>
+
+You can identify Germanic camp sign from Roman sign at 100 yards by smell and sound; you know which forest sounds are wrong (too quiet, the wrong birds, the specific silence before an ambush); you know which months raids increase and which months the forest goes quiet.
+
+</details>
+
+<details>
+<summary><strong>Insight proficiency</strong></summary>
+
+You read Germanic emotional register. You know the difference between a warrior who is afraid and one who is ready. You know what it looks like when a chief's authority over his men is slipping. You have been lied to by Germanics before and you know what that looks like too.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (History) — Recalling Germanic tribal fragmentation, fighting style, and the chief-gift economy</strong></summary>
@@ -377,8 +498,19 @@ The frontier is not where Rome ends. It is where you are. You know the *Limes* t
 
 **What you know without a check:**
 
-- **Survival proficiency** — The monthly pattern of raid activity in your sector; how to read your sector's fire-signal system without thinking about it; what a ford looks like at 400 yards in low visibility; the tree-line anomalies that precede an ambush at three of the most common approach points.
-- **Perception proficiency** — You notice what does not belong. A track that goes in without coming out. A tree blazed in a pattern that is not Roman military marking. Smoke from the wrong direction. You cannot always say what it means but you always notice it.
+<details>
+<summary><strong>Survival proficiency</strong></summary>
+
+The monthly pattern of raid activity in your sector; how to read your sector's fire-signal system without thinking about it; what a ford looks like at 400 yards in low visibility; the tree-line anomalies that precede an ambush at three of the most common approach points.
+
+</details>
+
+<details>
+<summary><strong>Perception proficiency</strong></summary>
+
+You notice what does not belong. A track that goes in without coming out. A tree blazed in a pattern that is not Roman military marking. Smoke from the wrong direction. You cannot always say what it means but you always notice it.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (History) or Wisdom (Survival) — Recalling the Limes system, raid response doctrine, and fire-signal codes</strong></summary>
@@ -426,8 +558,19 @@ You know less about the Senate than you think you do, and more than a civilian w
 
 **What you know without a check:**
 
-- **History proficiency** — The current consuls by name (Lucius Fulvius Rufus and Marcus Plautius Quintillus, in the year of the campaign); what *damnatio memoriae* is and the last major figure it was applied to; the basic structure of a senatorial trial.
-- **Noble background** — The Senate's current principal factions and their positions on the frontier war; Senator Brutus's public reputation as a conservative reformer and his documented opposition to the Emperor's Danube expansion policy; which senatorial families have frontier interests and which consider it an expensive distraction.
+<details>
+<summary><strong>History proficiency</strong></summary>
+
+The current consuls by name (Lucius Fulvius Rufus and Marcus Plautius Quintillus, in the year of the campaign); what *damnatio memoriae* is and the last major figure it was applied to; the basic structure of a senatorial trial.
+
+</details>
+
+<details>
+<summary><strong>Noble background</strong></summary>
+
+The Senate's current principal factions and their positions on the frontier war; Senator Brutus's public reputation as a conservative reformer and his documented opposition to the Emperor's Danube expansion policy; which senatorial families have frontier interests and which consider it an expensive distraction.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (History) — Recalling Roman government structure, the Emperor's authority, and treason law</strong></summary>
@@ -475,9 +618,26 @@ Command is a physical act before it is a social one. The centurion's voice that 
 
 **What you know without a check:**
 
-- **Intimidation proficiency** — The specific display behaviors that Roman military authority uses: the parade-ground voice that carries without shouting; the body language of a soldier who has given the last warning; the difference between Germanic warriors who are testing your resolve (they respond to escalation) and those who are committed to contact (escalation makes it worse, not better).
-- **Persuasion proficiency** — The social hierarchy of the frontier and who can authorize what: what a decurion can authorize, what requires a centurion, what requires the Legate; how to frame a request to avoid triggering rank-protectionism; which NPCs in the fort respond to military formality and which respond to direct personal appeal.
-- **Performance proficiency** — Military ceremony functions as battlefield Intimidation at scale. The *testudo* formation is not only a tactic; it is a performance. A unit that moves with military precision has advantage on group Intimidation checks against opponents who understand what they are seeing. Germanic warriors specifically recognize Roman formation discipline, and some will break before contact if it is displayed correctly and consistently.
+<details>
+<summary><strong>Intimidation proficiency</strong></summary>
+
+The specific display behaviors that Roman military authority uses: the parade-ground voice that carries without shouting; the body language of a soldier who has given the last warning; the difference between Germanic warriors who are testing your resolve (they respond to escalation) and those who are committed to contact (escalation makes it worse, not better).
+
+</details>
+
+<details>
+<summary><strong>Persuasion proficiency</strong></summary>
+
+The social hierarchy of the frontier and who can authorize what: what a decurion can authorize, what requires a centurion, what requires the Legate; how to frame a request to avoid triggering rank-protectionism; which NPCs in the fort respond to military formality and which respond to direct personal appeal.
+
+</details>
+
+<details>
+<summary><strong>Performance proficiency</strong></summary>
+
+Military ceremony functions as battlefield Intimidation at scale. The *testudo* formation is not only a tactic; it is a performance. A unit that moves with military precision has advantage on group Intimidation checks against opponents who understand what they are seeing. Germanic warriors specifically recognize Roman formation discipline, and some will break before contact if it is displayed correctly and consistently.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Charisma (Intimidation) — Establishing military authority over undisciplined elements in a crisis</strong></summary>
@@ -539,10 +699,33 @@ You have watched the *medicus* work. If you have served long enough, you have he
 
 **What you know without a check:**
 
-- **Medicine proficiency** — Wound fever signs before they become obvious to non-specialists (the smell change, the specific quality of elevated skin temperature, the eye response); the field hospital triage hierarchy (dying vs. treatable vs. walking wounded) and what each category actually means in resource allocation terms.
-- **Herbalist's Kit proficiency** — Yarrow, willow bark, and hemlock by sight, smell, and texture in the field; the difference between a foraging kit assembled for cooking and a kit assembled for medical or other purposes; which plants in this region are dangerous regardless of quantity.
-- **Capsarius role** — You make the triage decision under fire, which means you have made peace with something most soldiers have not: the correct choice is not always the most morally satisfying one. A soldier with a survivable wound who has stopped fighting costs the battle more than a soldier with an unsurvivable wound who keeps fighting until he cannot. You prioritize the wounded by their ability to return to action, not by the severity of their suffering. This is doctrine. It is also the thing that combat medics do not discuss in peacetime, because peacetime medicine runs differently. The Capsarius's triage decision is always correct; the difficulty is explaining it afterward.
-- **Medicus role** — Plague wounds behave differently than normal wounds during plague season. The specific fever pattern before rash appearance is a 24-72 hour window during which infected soldiers are already contagious but show no visible signs. A Medicus who knows what to look for in that window can identify plague exposure before the unit is compromised. The early signs: a specific pattern of sweat-timing (heavy sweating in mid-afternoon rather than during exertion), a slight yellowing at the corners of the eyes, and an unusual craving for cold water. None of these individually indicate plague. All three together, in an otherwise healthy-appearing soldier, indicate the early window.
+<details>
+<summary><strong>Medicine proficiency</strong></summary>
+
+Wound fever signs before they become obvious to non-specialists (the smell change, the specific quality of elevated skin temperature, the eye response); the field hospital triage hierarchy (dying vs. treatable vs. walking wounded) and what each category actually means in resource allocation terms.
+
+</details>
+
+<details>
+<summary><strong>Herbalist's Kit proficiency</strong></summary>
+
+Yarrow, willow bark, and hemlock by sight, smell, and texture in the field; the difference between a foraging kit assembled for cooking and a kit assembled for medical or other purposes; which plants in this region are dangerous regardless of quantity.
+
+</details>
+
+<details>
+<summary><strong>Capsarius role</strong></summary>
+
+You make the triage decision under fire, which means you have made peace with something most soldiers have not: the correct choice is not always the most morally satisfying one. A soldier with a survivable wound who has stopped fighting costs the battle more than a soldier with an unsurvivable wound who keeps fighting until he cannot. You prioritize the wounded by their ability to return to action, not by the severity of their suffering. This is doctrine. It is also the thing that combat medics do not discuss in peacetime, because peacetime medicine runs differently. The Capsarius's triage decision is always correct; the difficulty is explaining it afterward.
+
+</details>
+
+<details>
+<summary><strong>Medicus role</strong></summary>
+
+Plague wounds behave differently than normal wounds during plague season. The specific fever pattern before rash appearance is a 24-72 hour window during which infected soldiers are already contagious but show no visible signs. A Medicus who knows what to look for in that window can identify plague exposure before the unit is compromised. The early signs: a specific pattern of sweat-timing (heavy sweating in mid-afternoon rather than during exertion), a slight yellowing at the corners of the eyes, and an unusual craving for cold water. None of these individually indicate plague. All three together, in an otherwise healthy-appearing soldier, indicate the early window.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Wisdom (Medicine) — Recalling field hospital procedure, common medicines, wound infection signs, and poisoning recognition</strong></summary>
@@ -604,9 +787,26 @@ Every Roman soldier watches three things without being taught to: where lightnin
 
 **What you know without a check:**
 
-- **Religion proficiency** — The augury bird system by reflex (right is favorable, left is not; eagles favorable, owls ambiguous, ravens unfavorable; wolf direction relative to the camp); the three basic categories of *haruspicina* that any observer picks up from watching enough sacrifices.
-- **Wisdom 14+** — You notice sign-patterns that others let pass as coincidence. You know when a day feels wrong before anything has happened -- a quality of light, a stillness, the behavior of animals. You have learned to pay attention to this. You have not always been right but you have been right often enough.
-- **Haruspex role** — You read signs under pressure differently than you read them in calm. The fear response sharpens some perceptions and dulls others: under pressure, you see more blood detail and less environmental detail, because your body is primed for immediate danger. You have learned to compensate by deliberately slowing your breathing and looking away from the most obvious sign to see what is in your peripheral vision. A Haruspex who uses this technique can read omens correctly in combat or crisis conditions that would compromise a less-trained diviner. The technique requires one full round of deliberate calm before reading: a round where you do nothing else.
+<details>
+<summary><strong>Religion proficiency</strong></summary>
+
+The augury bird system by reflex (right is favorable, left is not; eagles favorable, owls ambiguous, ravens unfavorable; wolf direction relative to the camp); the three basic categories of *haruspicina* that any observer picks up from watching enough sacrifices.
+
+</details>
+
+<details>
+<summary><strong>Wisdom 14+</strong></summary>
+
+You notice sign-patterns that others let pass as coincidence. You know when a day feels wrong before anything has happened -- a quality of light, a stillness, the behavior of animals. You have learned to pay attention to this. You have not always been right but you have been right often enough.
+
+</details>
+
+<details>
+<summary><strong>Haruspex role</strong></summary>
+
+You read signs under pressure differently than you read them in calm. The fear response sharpens some perceptions and dulls others: under pressure, you see more blood detail and less environmental detail, because your body is primed for immediate danger. You have learned to compensate by deliberately slowing your breathing and looking away from the most obvious sign to see what is in your peripheral vision. A Haruspex who uses this technique can read omens correctly in combat or crisis conditions that would compromise a less-trained diviner. The technique requires one full round of deliberate calm before reading: a round where you do nothing else.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (Religion) — Recalling omen categories, bird signs, and the logic of divine communication</strong></summary>
@@ -679,8 +879,19 @@ You have lived with the plague for a decade. Not personally -- you are still ali
 
 **What you know without a check:**
 
-- **Medicine proficiency** — The characteristic rash that distinguishes the plague from ordinary fever, which becomes visible by day three; the quarantine procedure your unit uses and why it works (separated quarters, burned clothing and bedding, separate water and food); the survivor's social mark and what "plague-touched" means in your unit.
-- **Constitution 14+** — You read collective health before symptoms appear. You know what a sick man looks like before he knows himself -- the slight alteration in energy, the eyes, the way a century that has something moving through it sounds different at morning assembly. You have used this knowledge before.
+<details>
+<summary><strong>Medicine proficiency</strong></summary>
+
+The characteristic rash that distinguishes the plague from ordinary fever, which becomes visible by day three; the quarantine procedure your unit uses and why it works (separated quarters, burned clothing and bedding, separate water and food); the survivor's social mark and what "plague-touched" means in your unit.
+
+</details>
+
+<details>
+<summary><strong>Constitution 14+</strong></summary>
+
+You read collective health before symptoms appear. You know what a sick man looks like before he knows himself -- the slight alteration in energy, the eyes, the way a century that has something moving through it sounds different at morning assembly. You have used this knowledge before.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Wisdom (Medicine) — Recalling plague symptoms, fatality rates, and the survivor's social mark</strong></summary>
@@ -728,7 +939,12 @@ You build things. That is not a metaphor. A Roman soldier is a soldier second an
 
 **What you know without a check:**
 
-- **Athletics proficiency** — Camp construction by muscle memory: you can raise a standard marching camp in the dark if the ground is right; you can estimate a wall's load-bearing capacity by physical intuition from years of building and watching things that were built wrong fail; you know immediately if a fortification has structural problems.
+<details>
+<summary><strong>Athletics proficiency</strong></summary>
+
+Camp construction by muscle memory: you can raise a standard marching camp in the dark if the ground is right; you can estimate a wall's load-bearing capacity by physical intuition from years of building and watching things that were built wrong fail; you know immediately if a fortification has structural problems.
+
+</details>
 - **Artisan's Tools (any construction trade)** — The precision requirements of Roman surveying and what happens when they are ignored; you can identify a road or wall built correctly (one that will last a century) versus one built to look correct (one that will fail in five years); the specific errors that indicate either incompetence or deliberate sabotage.
 
 <details>
@@ -775,8 +991,19 @@ Mars on the frontier is not the civic deity of the Roman games. Out here, he is 
 
 **What you know without a check:**
 
-- **Religion proficiency + Soldier background** — The specific prayers said before battle; the names of Mars' attendant aspects (Mars Ultor the Avenger, Mars Gradivus the Striding, Mars Silvanus the Forest); what a failed sacrifice means versus an ambiguous one.
-- **Religion proficiency alone** — Standard Mars cult obligations; festival dates; what constitutes a valid vow to Mars (specific, named, time-bounded) versus an invalid one (vague, conditional, bargaining).
+<details>
+<summary><strong>Religion proficiency + Soldier background</strong></summary>
+
+The specific prayers said before battle; the names of Mars' attendant aspects (Mars Ultor the Avenger, Mars Gradivus the Striding, Mars Silvanus the Forest); what a failed sacrifice means versus an ambiguous one.
+
+</details>
+
+<details>
+<summary><strong>Religion proficiency alone</strong></summary>
+
+Standard Mars cult obligations; festival dates; what constitutes a valid vow to Mars (specific, named, time-bounded) versus an invalid one (vague, conditional, bargaining).
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (Religion) — Recalling Mars Ultor frontier cult: simple altar, standing prayer, and the dual-nature spear tradition</strong></summary>
@@ -815,7 +1042,12 @@ A minority scholarly tradition adds a thirteenth: hidden because its existence i
 
 Along Hadrian's Wall, the soldiers worship a local god called Belatucadrus ("the Rightful Luminous One") — and have equated him with Mars. His shrines stand at the western forts of the Wall.
 
-- **Military Lore proficiency** — You know Belatucadrus as a common soldier's name for Mars in Britain. His shrine at Luguvalium on the western Wall is visited by legionaries before long marches north.
+<details>
+<summary><strong>Military Lore proficiency</strong></summary>
+
+You know Belatucadrus as a common soldier's name for Mars in Britain. His shrine at Luguvalium on the western Wall is visited by legionaries before long marches north.
+
+</details>
 
 <details>
 <summary><strong>DC 15 Intelligence (Religion) — Examining a Belatucadrus shrine or asking a local priest</strong></summary>
@@ -840,8 +1072,19 @@ The land under Vindolanda is old. Older than the Germanic settlement that left t
 
 **What you know without a check:**
 
-- **Religion proficiency** — The basic propitiation formula for a *genius loci*; how to identify that a place has an active spirit (temperature irregularities, specific plant patterns, animal behavior at the site boundary); why you do not build directly over a sacred spring without asking first.
-- **Wisdom 14+** — You have felt the difference between a place that is ordinary and a place that is watching. This place is watching.
+<details>
+<summary><strong>Religion proficiency</strong></summary>
+
+The basic propitiation formula for a *genius loci*; how to identify that a place has an active spirit (temperature irregularities, specific plant patterns, animal behavior at the site boundary); why you do not build directly over a sacred spring without asking first.
+
+</details>
+
+<details>
+<summary><strong>Wisdom 14+</strong></summary>
+
+You have felt the difference between a place that is ordinary and a place that is watching. This place is watching.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (Investigation) — Noticing fort anomalies: the sealed spring, warm water seepage, and the northeast barracks pattern</strong></summary>
@@ -885,11 +1128,40 @@ Roman soldiers on the frontier encounter Germanic religion as a practical realit
 
 **What you know without a check:**
 
-- **Survival proficiency + Insight proficiency** — Pattern recognition about when Germanic behavior is religiously motivated versus tactically motivated; the specific signs that a Germanic warrior has taken a death-vow (they are not seeking to survive the engagement).
-- **History proficiency** — The basic Germanic divine hierarchy as Romans understand it: the one-eyed wandering god (Wotan), the thunder god (Donar), the earth goddess who is carried in a cart during her seasons.
-- **Explorator role** — You have tracked Germanic peoples beyond the frontier and you know what a *völva* looks like in the field. She does not move like a warrior (with readiness) or a trader (with attention to goods). She moves with territorial awareness, as if the land itself reports to her. Where she stops, a tribe has made a decision. Where she camps, a tribe is about to change direction. A column moving with a *völva* has been prophesied into motion. Following her movement tells you the tribe's theological state: has she blessed the raid? Then the raid will happen. Has she refused to accompany it? Then it will not, regardless of what the warrior-council decided.
-- **Librarius role** — Germanic rune-writing is not decoration and not written language in the Roman sense. Each rune is simultaneously a sound, a letter, a concept, and an act of invocation. When you see a rune carved, you are seeing something that was called into being by being written. The difference between a rune written in haste and a rune written with ceremony is the difference between a mark on stone and an oath sworn to the land. The OTHALAN rune in the vault's hidden alcove and flooded gallery was carved with ceremony: it is not a label, it is a signature on a contract.
-- **Haruspex role** — Germanic divination works, but differently than Roman augury. The tribes watch silence, blood patterns in snow, the direction a dying animal turns its head. Their methods appear unreliable to Romans because they trust the land to speak directly without ritual mediation. A Haruspex who has studied Germanic methods can interpret Germanic signs, but it requires surrendering the Roman framework. Germanic divination is a conversation; Roman augury is a formal procedure. Neither is more accurate. They are reading the same divine presence through different instruments.
+<details>
+<summary><strong>Survival proficiency + Insight proficiency</strong></summary>
+
+Pattern recognition about when Germanic behavior is religiously motivated versus tactically motivated; the specific signs that a Germanic warrior has taken a death-vow (they are not seeking to survive the engagement).
+
+</details>
+
+<details>
+<summary><strong>History proficiency</strong></summary>
+
+The basic Germanic divine hierarchy as Romans understand it: the one-eyed wandering god (Wotan), the thunder god (Donar), the earth goddess who is carried in a cart during her seasons.
+
+</details>
+
+<details>
+<summary><strong>Explorator role</strong></summary>
+
+You have tracked Germanic peoples beyond the frontier and you know what a *völva* looks like in the field. She does not move like a warrior (with readiness) or a trader (with attention to goods). She moves with territorial awareness, as if the land itself reports to her. Where she stops, a tribe has made a decision. Where she camps, a tribe is about to change direction. A column moving with a *völva* has been prophesied into motion. Following her movement tells you the tribe's theological state: has she blessed the raid? Then the raid will happen. Has she refused to accompany it? Then it will not, regardless of what the warrior-council decided.
+
+</details>
+
+<details>
+<summary><strong>Librarius role</strong></summary>
+
+Germanic rune-writing is not decoration and not written language in the Roman sense. Each rune is simultaneously a sound, a letter, a concept, and an act of invocation. When you see a rune carved, you are seeing something that was called into being by being written. The difference between a rune written in haste and a rune written with ceremony is the difference between a mark on stone and an oath sworn to the land. The OTHALAN rune in the vault's hidden alcove and flooded gallery was carved with ceremony: it is not a label, it is a signature on a contract.
+
+</details>
+
+<details>
+<summary><strong>Haruspex role</strong></summary>
+
+Germanic divination works, but differently than Roman augury. The tribes watch silence, blood patterns in snow, the direction a dying animal turns its head. Their methods appear unreliable to Romans because they trust the land to speak directly without ritual mediation. A Haruspex who has studied Germanic methods can interpret Germanic signs, but it requires surrendering the Roman framework. Germanic divination is a conversation; Roman augury is a formal procedure. Neither is more accurate. They are reading the same divine presence through different instruments.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Wisdom (Insight) — Recognizing Germanic religious behavior: battle frenzy, sacred grove danger, and the völva's authority</strong></summary>
@@ -947,9 +1219,26 @@ The plants around Vindolanda are not decoration. Soldiers from the Mediterranean
 
 **What you know without a check:**
 
-- **Survival proficiency** — Which plants near the camp are edible, which are poisonous, and which to avoid in unknown territory.
-- **Herbalist Kit proficiency** — The basic medicinal plants of the frontier and their uses; which can be identified by sight versus which require laboratory analysis.
-- **Medicine proficiency** — The symptoms associated with plant poisoning versus other causes; which plants Valeria routinely uses and what she is out of.
+<details>
+<summary><strong>Survival proficiency</strong></summary>
+
+Which plants near the camp are edible, which are poisonous, and which to avoid in unknown territory.
+
+</details>
+
+<details>
+<summary><strong>Herbalist Kit proficiency</strong></summary>
+
+The basic medicinal plants of the frontier and their uses; which can be identified by sight versus which require laboratory analysis.
+
+</details>
+
+<details>
+<summary><strong>Medicine proficiency</strong></summary>
+
+The symptoms associated with plant poisoning versus other causes; which plants Valeria routinely uses and what she is out of.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (Nature) — Identifying wolfsbane, bog rosemary, elder, and sacred mistletoe by sight</strong></summary>
@@ -999,11 +1288,40 @@ The Romans have been at this location for forty years. The Germanic tribes have 
 
 **What you know without a check:**
 
-- **History proficiency** — The official founding of this fort; its role in the frontier defense network; the names of the previous commanding officers (a wooden plaque in the principia lists them).
-- **Soldier background + Investigation proficiency** — Construction oddities that the engineers never documented: a drainage channel that routes around a section of ground rather than through it; a gate position that does not optimize sight-lines; a corner tower that is two feet thicker than the other three.
-- **Faber role** — You can read construction intent in tool marks. The vault entrance passage shows tool marks that become more careful as they went deeper: the workers were responding to something that made them cautious. The Binding Chamber's chains show regular maintenance marks (re-tensioning, cleaning, minor repairs) over centuries. Someone understood metallurgy well enough to keep these chains functional for three hundred years. That is not passive preservation: that is active upkeep, performed on a schedule, requiring specific knowledge of iron preservation under underground moisture conditions. The Faber who reads these marks understands that the vault has been maintained, not abandoned.
-- **Frumentarius role** — The supply route that crosses near Vindolanda has been there for two hundred years. Its longevity is not Roman planning: it follows a pre-Roman Germanic trade route that the Romans found already in use when they arrived. The tribes near Vindolanda have been coming to this area for generations before the fort existed. The fort was built on a sacred crossroads that the tribes used for trade and offerings. Vindolanda is not an imposition on empty land. It is a Roman administration placed over an existing Germanic sacred and commercial site. This explains why the tribes have not destroyed the fort in eighteen years: the fort is on their holy ground. They want Romans to leave, but they do not want the site damaged.
-- **Custos Armorum role** — You know how artifacts behave when they carry divine aura, because you have catalogued enough military equipment to recognize when something stored near a divine object degrades differently. The spear currently sealed in the vault will corrupt standard weapons kept in the same room. Iron rusts faster near it; leather cracks; wood warps. This is not metaphor: it is a practical storage problem. If the party brings the spear above ground, it cannot be stored in the armory without degrading everything around it. The Custos Armorum is the only person who will notice this immediately and know what it means for long-term storage.
+<details>
+<summary><strong>History proficiency</strong></summary>
+
+The official founding of this fort; its role in the frontier defense network; the names of the previous commanding officers (a wooden plaque in the principia lists them).
+
+</details>
+
+<details>
+<summary><strong>Soldier background + Investigation proficiency</strong></summary>
+
+Construction oddities that the engineers never documented: a drainage channel that routes around a section of ground rather than through it; a gate position that does not optimize sight-lines; a corner tower that is two feet thicker than the other three.
+
+</details>
+
+<details>
+<summary><strong>Faber role</strong></summary>
+
+You can read construction intent in tool marks. The vault entrance passage shows tool marks that become more careful as they went deeper: the workers were responding to something that made them cautious. The Binding Chamber's chains show regular maintenance marks (re-tensioning, cleaning, minor repairs) over centuries. Someone understood metallurgy well enough to keep these chains functional for three hundred years. That is not passive preservation: that is active upkeep, performed on a schedule, requiring specific knowledge of iron preservation under underground moisture conditions. The Faber who reads these marks understands that the vault has been maintained, not abandoned.
+
+</details>
+
+<details>
+<summary><strong>Frumentarius role</strong></summary>
+
+The supply route that crosses near Vindolanda has been there for two hundred years. Its longevity is not Roman planning: it follows a pre-Roman Germanic trade route that the Romans found already in use when they arrived. The tribes near Vindolanda have been coming to this area for generations before the fort existed. The fort was built on a sacred crossroads that the tribes used for trade and offerings. Vindolanda is not an imposition on empty land. It is a Roman administration placed over an existing Germanic sacred and commercial site. This explains why the tribes have not destroyed the fort in eighteen years: the fort is on their holy ground. They want Romans to leave, but they do not want the site damaged.
+
+</details>
+
+<details>
+<summary><strong>Custos Armorum role</strong></summary>
+
+You know how artifacts behave when they carry divine aura, because you have catalogued enough military equipment to recognize when something stored near a divine object degrades differently. The spear currently sealed in the vault will corrupt standard weapons kept in the same room. Iron rusts faster near it; leather cracks; wood warps. This is not metaphor: it is a practical storage problem. If the party brings the spear above ground, it cannot be stored in the armory without degrading everything around it. The Custos Armorum is the only person who will notice this immediately and know what it means for long-term storage.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Intelligence (Investigation) — Noticing construction anomalies: the pre-Roman structure, the spring's true sealing reason, and the weakened palisade section</strong></summary>
@@ -1063,10 +1381,33 @@ Moving quietly on the frontier is a different skill from moving quietly on a Rom
 
 **What you know without a check:**
 
-- **Stealth proficiency** — The three conditions that make stealth possible (surface dampens sound, your silhouette is against a dark background, wind carries your scent away from the position you are approaching) and the three that make it impossible regardless of your skill (dry leaf litter thicker than two inches, full moonlight in open ground, moving upwind of a position with dogs or trained sentries).
-- **Perception proficiency** — The difference between a sound that belongs to a forest and one that does not; what a tripwire looks like in partial light; how to read the behavior of forest animals as early warning (birds flush from a specific area: something large moved there within 60 seconds; deer facing the same direction without feeding: something is approaching from that heading).
-- **Acrobatics proficiency** — How to fall from height without taking full damage: land with knees bent, roll immediately into the direction of the fall, distribute the impact across shoulder and hip. On falls up to 30 feet, DC 15 Acrobatics reduces damage to 1d6 per 10 feet instead of the standard 1d6 per 10 feet on a failed check (this reflects the reduction from controlled fall vs. uncontrolled). On falls over 30 feet, the DC becomes 18 and success reduces damage by half.
-- **Dexterity 14+** — You read spatial geometry without thinking about it. You know where you are in a room in darkness, which exits are where, what the nearest cover is from any position. You have never been surprised by a door.
+<details>
+<summary><strong>Stealth proficiency</strong></summary>
+
+The three conditions that make stealth possible (surface dampens sound, your silhouette is against a dark background, wind carries your scent away from the position you are approaching) and the three that make it impossible regardless of your skill (dry leaf litter thicker than two inches, full moonlight in open ground, moving upwind of a position with dogs or trained sentries).
+
+</details>
+
+<details>
+<summary><strong>Perception proficiency</strong></summary>
+
+The difference between a sound that belongs to a forest and one that does not; what a tripwire looks like in partial light; how to read the behavior of forest animals as early warning (birds flush from a specific area: something large moved there within 60 seconds; deer facing the same direction without feeding: something is approaching from that heading).
+
+</details>
+
+<details>
+<summary><strong>Acrobatics proficiency</strong></summary>
+
+How to fall from height without taking full damage: land with knees bent, roll immediately into the direction of the fall, distribute the impact across shoulder and hip. On falls up to 30 feet, DC 15 Acrobatics reduces damage to 1d6 per 10 feet instead of the standard 1d6 per 10 feet on a failed check (this reflects the reduction from controlled fall vs. uncontrolled). On falls over 30 feet, the DC becomes 18 and success reduces damage by half.
+
+</details>
+
+<details>
+<summary><strong>Dexterity 14+</strong></summary>
+
+You read spatial geometry without thinking about it. You know where you are in a room in darkness, which exits are where, what the nearest cover is from any position. You have never been surprised by a door.
+
+</details>
 
 <details>
 <summary><strong>DC 13 Dexterity (Stealth) — Moving through the vault without alerting the guardians ahead</strong></summary>
