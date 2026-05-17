@@ -129,6 +129,35 @@ Every soldier in the *vexillatio extraordinaria*, regardless of role, receives t
 Special cases: the *Haruspex* begins with 75 denarii (temple stipend front-loaded at posting start). The *Flamen Martialis* begins with 60 denarii (advance from the legate's personal patronage). The *Sacerdos* begins with 60 denarii (military rate plus shrine fund combined).
 
 
+## Equipment at a Glance
+
+All 15 roles listed with their issued armor, shield, weapons, and starting pay. Full detail (weight, class substitutions, kit rationale) is in each role's entry below.
+
+| Role | Armor | AC | Shield | Weapons | Distinctive | Pay |
+|---|---|---|---|---|---|---|
+| **Optio** | Lorica Hamata | 14+Dex/+2 | Scutum | Gladius, Pugio | Hastile optioni (knobbed staff) | 65d |
+| **Tesserarius** | Lorica Squamata | 14+Dex/+2 | Scutum | Gladius | Wax tablet on belt | 50d |
+| **Aquilifer** | Lorica Segmentata | 17 | None | Gladius | Aquila eagle standard, Manica | 65d |
+| **Signifer** | Lorica Hamata | 14+Dex/+2 | None | Gladius | Signum standard, banker's satchel | 50d |
+| **Cornicen** | Lorica Squamata | 14+Dex/+2 | None | Gladius | Cornu (bronze horn) | 50d |
+| **Medicus** | Lorica Hamata | 14+Dex/+2 | None | Pugio | Medical satchel, Healer's Kit | 65d |
+| **Haruspex** | Linothorax | 12+Dex/+3 | None | Pugio | Bronze liver model, ritual kit | 75d |
+| **Faber** | Lorica Hamata | 14+Dex/+2 | Scutum | Gladius, Dolabra | Tools kit | 50d |
+| **Librarius** | Lorica Squamata | 14+Dex/+2 | None | Gladius, Pugio | Codex, cipher seal | 65d |
+| **Explorator** | Lorica Squamata | 14+Dex/+2 | None | Gladius, Pugio, Verutum ×2 | Scout kit, signal mirror | 65d |
+| **Frumentarius** | Lorica Hamata | 14+Dex/+2 | Scutum | Gladius, Pugio | Cipher seal (concealed) | 65d |
+| **Sacerdos** | Lorica Squamata | 14+Dex/+2 | None | Pugio | Priestly kit, incense, white paludamentum | 60d |
+| **Flamen Martialis** | Linothorax (red) | 12+Dex/+3 | None | Hasta (sacred spear) | Red paludamentum | 60d |
+| **Capsarius** | Linothorax | 12+Dex/+3 | None | Gladius, Pugio | Capsa (medical cylinder on back) | 50d |
+| **Custos Armorum** | Lorica Segmentata | 17 | Scutum | Gladius, Pugio | Armory keys, quality tools | 50d |
+
+**Roles with no shield:** Aquilifer, Signifer, Cornicen, Medicus, Haruspex, Librarius, Explorator, Sacerdos, Flamen Martialis, Capsarius — the standard occupies both hands, the role requires constant arm freedom, or theological tradition forbids it.
+
+**Heaviest armor (AC 17):** Aquilifer, Custos Armorum — both require STR 15.
+
+**Lightest armor (AC 12+Dex/+3):** Haruspex, Flamen Martialis, Capsarius — all three prioritize mobility and fine-motor access over protection.
+
+
 ## Military Command Roles
 
 ### Optio (*Second-in-Command*)
