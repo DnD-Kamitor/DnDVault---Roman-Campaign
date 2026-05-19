@@ -1470,3 +1470,64 @@ Managing difficult terrain without the Acrobatics check: movement costs double, 
 Specific applications in this campaign: the vault's Flooded Gallery (standing water over an irregular stone floor, difficult terrain throughout), the forest floor in Chapter 3 (root systems, fallen timber, leaf-covered holes), and river crossings in Chapter 3's eastern approach.
 
 </details>
+
+
+## Soldier Knowledge: What the Body Knows
+
+*Ability checks: Strength (Athletics), Wisdom (Survival), Wisdom (Perception), Constitution saving throws*
+
+Some knowledge is not in books. A historian can read about formation collapse; a veteran knows it from the sound of the men next to them. These knowledge gates use physical and experiential checks. A character with high Intelligence and no martial history cannot access this tier simply by rolling well on History — the information comes from pattern recognition built over years in the field. INT-based characters can reach the same conclusions through inference and observation, but the gates are different.
+
+**What you know without a check:**
+
+- A line that is losing starts to sound different before it breaks: the shouting changes pitch, the footwork tightens, men start looking sideways at each other instead of forward at the enemy. You cannot quantify this. You have heard it.
+- Equipment tells you about its owner: a well-maintained blade with a worn grip was carried by someone who used it. A clean blade with a fresh edge is new issue or ornamental. A blade with deliberate nicks in the flat belongs to someone who knows how to foul an opponent's parry.
+- Animals on the frontier know things before you do. A warhorse that will not move forward despite commands has detected something ahead. A dog that falls silent in a camp where it was barking has a reason. You have learned to check rather than override.
+
+<details>
+<summary><strong>DC 12 Strength (Athletics) — Reading a fortification by how it was built</strong></summary>
+
+Military engineering leaves fingerprints. The spacing of the postholes tells you whether the palisade was built under time pressure (wider, faster) or properly (close, regular). A rampart with uneven compression in the soil was built by men who did not know what they were doing or were in a hurry. A gate that was hung off-center will swing unevenly, and an uneven gate is a gate that opens slower.
+
+What DC 12 specifically tells you: the weakest approach to a structure (the section built fastest or by the least experienced crew), whether a specific barrier can be broken through by direct physical force (and roughly how many hits that would take), and whether a collapsed section was structurally compromised before it fell or failed under load without prior damage.
+
+This check applies to: the vault's sealed doors in Chapter 1, the fort wall section in Chapter 4, and any improvised fortification the party constructs or encounters during the campaign.
+
+</details>
+
+<details>
+<summary><strong>DC 13 Wisdom (Survival) — Knowing when an ambush has been laid before you enter it</strong></summary>
+
+An ambush site has a specific texture. Broken vegetation at the wrong height (not boot level, but crouching-shoulder level where men pushed branches aside). Disturbed ground behind concealment positions rather than in front of them. Animal absence in a corridor that should have wildlife: birds do not go quiet for no reason.
+
+The tell that most people miss: whoever laid the ambush chose the site for a reason, and that reason is usually the feature that makes it a good ambush site. The choke point is visible. The elevated ground on one side is obvious. The feature that the ambushers are using is the same feature that would make you think twice before entering. Your hesitation is the correct response to the right evidence.
+
+What DC 13 specifically tells you: whether an ambush or waiting position has been established in the next 60 feet of terrain (the smell, the silence, the disturbed ground), roughly how many people are waiting, and which side of the approach they have favored. You do not learn specifics — you learn that someone is there before they want you to know.
+
+This check applies to: the road encounter in Chapter 2, the forest approach in Chapter 3, and the vicus street scenes in Chapter 4. The Explorator can make this check as a bonus action rather than an action.
+
+</details>
+
+<details>
+<summary><strong>DC 14 Wisdom (Perception) — Hearing a formation about to break</strong></summary>
+
+This is not a skill you can read about. A historian can tell you that formations break under certain conditions. A soldier who has been in a breaking line knows the sound of it happening fifteen seconds before the line gives: the collective exhale, the shift from forward-facing to sideways-checking, the specific pitch change in shouting when men begin to think about the exit rather than the enemy.
+
+What DC 14 specifically tells you: whether a hostile group of six or more is about to rout (will break before the end of the next round if nothing changes), which individual in a group is the anchor holding the others in (if that individual drops, the others follow within one round), and whether a unit is fighting with confidence or fighting because it has not yet found the exit.
+
+This information is actionable in specific ways: targeting the anchor, making a visible display that tips wavering individuals, or simply holding a beat longer than the enemy can. A character who passes this check gets one free piece of tactical information that bypasses the normal information hierarchy — you know something the enemy does not know you know.
+
+This check applies whenever a combat involves 6 or more hostile humanoids. NPCs with martial backgrounds (Corvinus, Vercingetorix, Varro) can also give this read, but they will not share it freely.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Constitution — Holding ground against divine pressure</strong></summary>
+
+Some things are answered with the body, not the mind. When Mars makes his presence felt directly — in Chapter 4's divine arena and in Chapter 5's final scene — the question is not whether you understand what is happening. The question is whether you are still standing when it is over.
+
+A character who passes DC 15 Constitution (this is a saving throw, not a skill check) holds their ground against the first wave of divine presence without visible effect. A character who fails is not harmed — they are simply seen to flinch, and Mars notices who flinched. A character with high Intelligence may comprehend perfectly what is happening and still flinch. Comprehension is not endurance.
+
+This saving throw applies in Chapter 4 (the ritual chamber, when the corruption threshold is crossed) and Chapter 5 (the moment Mars first addresses the party directly). It does not grant armor against divine power. It determines how you are perceived by the god in those moments, which affects the options available to you in the encounter's resolution. Barbarians raging at the moment of the check have advantage on this saving throw.
+
+</details>
