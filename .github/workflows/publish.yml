@@ -19,6 +19,9 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Build generated tables
+        run: python3 scripts/build_tables.py
+
       - name: Render book
         run: quarto render --to html
 
