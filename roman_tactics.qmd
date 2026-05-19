@@ -861,6 +861,70 @@ Supply requirements for extended operations are in `supplies.qmd`. Individual ch
 | Scaling ladder | Climber restrained, falls DC 12 | Push check DC 13, 1 defender per ladder |
 
 
+## Read the Fight
+
+*An optional action for soldiers who think before they strike.*
+
+Roman military training teaches that a soldier who understands the enemy before the first blow lands wins fights that pure strength cannot. **Read the Fight** is an optional action that translates that training into a mechanical benefit.
+
+### How It Works
+
+Use your **action** on your turn to study one enemy you can see within 60 feet. Make a Wisdom (Perception) or Intelligence (Investigation) check — your choice.
+
+| Enemy type | DC |
+|---|---|
+| Common soldier, beast, basic undead | 13 |
+| Veteran fighter, named NPC, CR 4-6 creature | 15 |
+| Elite adversary, CR 7+ creature, divine being | 17 |
+
+**On success** — you learn one piece of tactical information. Choose one:
+
+- **Weak point**: One attack against this target before the start of your next turn can be made with advantage (by you or an ally you tell).
+- **Next action**: The DM tells you what this creature will do on its next turn, if it is following a readable pattern. (Not guaranteed: an unpredictable creature says "you can't tell.")
+- **Armor read**: The true AC and one damage type the creature resists, is immune to, or is vulnerable to.
+- **Will to fight**: Whether this creature will break, bargain, or die fighting. For humanoids, this tells you which social approach (Intimidation/Persuasion/Deception) will land.
+
+**On a success by 5 or more** — choose two options from the list.
+
+**On failure** — you learn nothing, and your action is spent.
+
+### Class Notes
+
+**Fighter (Action Surge):** You can Read the Fight and still attack in the same turn using Action Surge, when you need tactical read before committing your second wind.
+
+**Barbarian (Rage):** While raging, Read the Fight is available as a **bonus action** instead of an action, but only the *Weak point* option is available. Rage narrows focus; it does not eliminate it.
+
+**Ranger:** Favored Enemy gives advantage on Wisdom (Perception) or Intelligence (Investigation) checks against favored enemy types. This applies to Read the Fight.
+
+**Rogue:** Cunning Action cannot be used for Read the Fight. Read the Fight requires sustained focus, not the quick-scan Cunning Action represents.
+
+### When to Use It
+
+Read the Fight is most useful when:
+- You face an enemy you have never fought before
+- An ally is about to make a high-stakes attack
+- You need to know whether a wounded enemy will flee (and whether to let them)
+- A named adversary is doing something unexpected
+
+It is not useful when:
+- You already know everything relevant about the target
+- Initiative has not been called (use Investigation or Perception outside combat instead)
+- You face a swarm or a mindless creature with no readable pattern
+
+### Notes for the DM
+
+Run this honestly. If the party's Fighter uses an action to study an opponent, give them a real answer -- the weak point should translate to genuine advantage on the next attack, the will-to-fight read should inform how the NPC acts when bloodied. A Read the Fight result that turns out to be useless because you forgot to apply it is worse than not having the check at all.
+
+**Tactical reference:**
+
+| Check | DC | Benefit |
+|---|---|---|
+| Read the Fight (common) | 13 | 1 choice from list |
+| Read the Fight (veteran) | 15 | 1 choice from list |
+| Read the Fight (elite) | 17 | 1 choice from list |
+| Read the Fight (+5 over DC) | Any | 2 choices from list |
+
+
 ## The Legion and the Magical World
 
 The Roman army has been operating in a world where divine intervention is real, magical creatures exist, and some men can do things that cannot be explained by strength or training. The legion has had 700 years to develop responses. Those responses exist. They are bureaucratic, practical, and embedded in doctrine the way everything in the legion is embedded in doctrine: through the *acta diurna*, the daily gazette, and through the informal knowledge that passes from veteran to new recruit over a fire at the third watch.

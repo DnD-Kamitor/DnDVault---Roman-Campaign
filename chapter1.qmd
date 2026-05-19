@@ -974,6 +974,10 @@ The player states they want to pass without contact. On success: silent passage.
 
 If the party chooses to descend carefully and quietly, run a group Stealth check. Success means the Wight in the Altar Chamber does not detect the party until they cross the altar threshold: the two Shadows hold position, and the party has one round to observe the guardian's stance before it moves. Failure means sound carries through the Runic Corridor (even if they navigated it correctly) and the Wight is already standing when they arrive, with the Shadows flanking the entrance archway. They do not attack immediately either way -- the exit condition still applies -- but a failed Stealth removes the party's ability to assess the room before being assessed.
 
+*Read the Fight (action — see roman_tactics.qmd):*
+
+The Wight is DC 17 (elite adversary). On success, the most useful choice is "Will to fight": he will stop fighting if the party retreats from the spear. The exit condition exists whether or not they Read the Fight, but knowing it before combat begins saves the party from burning resources to discover it through damage. The Berserker (Marius Coda) is DC 13. Most useful choice for him: "Weak point" (his left side, same as the Perception DC 11 check above) or "Will to fight" (he fights to reach the spear; removing the spear from his line of sight ends the compulsion on a successful action).
+
 *Intimidation DC 13 (active: centurion-voice command at the frenzied worker, before initiative):*
 
 A character with military rank shouts a direct order. On success: the worker freezes for one round (speed 0, no actions). Not calm -- interrupted. After one round he resumes with full violence. On failure: he advances regardless. The attempt cost nothing but one round of surprise, which is not a failure in the way that matters.
