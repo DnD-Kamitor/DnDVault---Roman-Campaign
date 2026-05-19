@@ -174,34 +174,6 @@ All 16 roles listed with their issued armor, shield, weapons, and starting pay. 
 
 **Mechanic:** Once per session, reroll one initiative (yours or an ally's, declared before or after the roll). As a bonus action, issue an order: one ally within 60 feet moves up to their speed without expending their reaction.
 
-### Advancement
-
-**Standard** (0 commendationes): Once per session, reroll one initiative (yours or an ally's). As a bonus action, issue an order moving one ally within 60 feet up to their speed.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Ductor* — Leader of men
-
-**Perk 1: *Impetus Ductoris*** — Once per short rest, when you give a verbal command to an ally who can hear you, they may immediately move up to half their speed as a reaction. This movement does not provoke opportunity attacks.
-
-#### Branch B: *Scrutator* — Investigator and disciplinarian
-
-**Perk 1: *Nota Suspectorum*** — You have advantage on Wisdom (Insight) checks to detect deception or gauge loyalty. When you spend at least 10 minutes interrogating a subject, the DM must tell you if the subject is actively lying, though not what the truth is.
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Auctoritas*
-
-**Perk 2: *Auctoritas*** — Your command presence is recognized by all ranks. Allied NPCs under your direct command have advantage on Wisdom saving throws against fear effects. Officers who outrank you must make a DC 14 Charisma saving throw to publicly countermand your orders in front of common soldiers; on a failure, they appear indecisive and lose one step of attitude among the soldiers present.
-
-#### Branch B (continued): *Retes Disciplinae*
-
-**Perk 2: *Retes Disciplinae*** — *(Latinus+)*
-You maintain a quiet network of informants within the unit. Once per session, you may learn the current location and general activity of any named soldier or camp NPC without making a check: the information is accurate to within the last 2 hours.
-*Requires Latini status: disciplinary authority over Roman-born soldiers is restricted to those with legal standing.*
-
 **Starting Equipment**
 
 The optio commands from the rear of the formation: pushing stragglers forward, enforcing the line, and keeping the unit coherent when the centurion is engaged at the front. The distinctive equipment is the *hastile optioni* (the knobbed staff) rather than a *pilum*: it is the visible mark of the optio's authority and is used as much to prod soldiers back into position as to strike an enemy.
@@ -221,6 +193,41 @@ The optio commands from the rear of the formation: pushing stragglers forward, e
 **Role kit weight:** 54 lb | **Full kit with universal issue:** 71 lb. At CHA 13 or STR 14, carrying capacity is at least 195 lb; well within comfortable range.
 
 **Not issued:** No *pilum* (the staff replaces it in formation). No two-handed weapon. The optio is a command role, not a spearhead; their kit reflects the management of the line, not the assault on it.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Once per session, reroll one initiative (yours or an ally's). As a bonus action, issue an order moving one ally within 60 feet up to their speed.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Ductor* — Leader of men</strong></summary>
+
+
+**Perk 1: *Impetus Ductoris*** — Once per short rest, when you give a verbal command to an ally who can hear you, they may immediately move up to half their speed as a reaction. This movement does not provoke opportunity attacks.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Auctoritas*** — Your command presence is recognized by all ranks. Allied NPCs under your direct command have advantage on Wisdom saving throws against fear effects. Officers who outrank you must make a DC 14 Charisma saving throw to publicly countermand your orders in front of common soldiers; on a failure, they appear indecisive and lose one step of attitude among the soldiers present.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Scrutator* — Investigator and disciplinarian</strong></summary>
+
+
+**Perk 1: *Nota Suspectorum*** — You have advantage on Wisdom (Insight) checks to detect deception or gauge loyalty. When you spend at least 10 minutes interrogating a subject, the DM must tell you if the subject is actively lying, though not what the truth is.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Retes Disciplinae*** — *(Latinus+)*
+You maintain a quiet network of informants within the unit. Once per session, you may learn the current location and general activity of any named soldier or camp NPC without making a check: the information is accurate to within the last 2 hours.
+*Requires Latini status: disciplinary authority over Roman-born soldiers is restricted to those with legal standing.*
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -305,32 +312,6 @@ If you spend a session paying attention to which soldiers have private conversat
 
 **Mechanic:** You always know the current day's password and the complete patrol schedule. You can create a false password (DC 14 Deception, detected on DC 15 Investigation by anyone who has seen the real one). You know which posts are currently manned and by whom.
 
-### Advancement
-
-**Standard** (0 commendationes): Know the current day's password and full patrol schedule. Create a false password (DC 14 Deception). Know which posts are manned and by whom at all times.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Vigilator* — Watchmaster
-
-**Perk 1: *Custodia Perfecta*** — You have advantage on Wisdom (Perception) checks while on guard duty or watching a fixed point. Allied characters you are directly supervising cannot be surprised while you are conscious and not incapacitated.
-
-#### Branch B: *Infiltrator* — Counterintelligence operative
-
-**Perk 1: *Lapsus Clandestinus*** — You have advantage on Dexterity (Stealth) checks to move through occupied civilian spaces (markets, taverns, crowds). When you follow a target for more than 1 hour without being detected, you automatically learn their next planned meeting or destination.
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Patres Stationis*
-
-**Perk 2: *Patres Stationis*** — You have trained a reliable watch rotation. Once per long rest, you may designate up to two allied NPCs as your watch. While they are on duty under your direction, you and the rest of the contubernium gain the benefits of a short rest during what would otherwise be a guard shift.
-
-#### Branch B (continued): *Persona Falsa*
-
-**Perk 2: *Persona Falsa*** — You have built a civilian cover identity registered with the Frumentarius network. Once per session, you may invoke this identity to pass as a non-military person. Any NPC not already suspicious of you must succeed on a DC 15 Wisdom (Insight) check to see through the cover.
-
 **Starting Equipment**
 
 The tesserarius moves through the fort at night: checking posts, delivering the password, reading what the sentries are doing without announcing themselves at distance. The kit is lighter and quieter than a front-line soldier's, optimized for movement in confined spaces and in the dark.
@@ -348,6 +329,39 @@ The tesserarius moves through the fort at night: checking posts, delivering the 
 **Role kit weight:** 47 lb | **Full kit with universal issue:** 64 lb. Light enough to move through the fort without generating sound that carries ahead.
 
 **Not issued:** No *pilum* (range engagement inside a fort is not the watch officer's role). No heavy armor. The tesserarius is not the first line; they are the person who ensures the first line is where it should be.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Know the current day's password and full patrol schedule. Create a false password (DC 14 Deception). Know which posts are manned and by whom at all times.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Vigilator* — Watchmaster</strong></summary>
+
+
+**Perk 1: *Custodia Perfecta*** — You have advantage on Wisdom (Perception) checks while on guard duty or watching a fixed point. Allied characters you are directly supervising cannot be surprised while you are conscious and not incapacitated.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Patres Stationis*** — You have trained a reliable watch rotation. Once per long rest, you may designate up to two allied NPCs as your watch. While they are on duty under your direction, you and the rest of the contubernium gain the benefits of a short rest during what would otherwise be a guard shift.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Infiltrator* — Counterintelligence operative</strong></summary>
+
+
+**Perk 1: *Lapsus Clandestinus*** — You have advantage on Dexterity (Stealth) checks to move through occupied civilian spaces (markets, taverns, crowds). When you follow a target for more than 1 hour without being detected, you automatically learn their next planned meeting or destination.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Persona Falsa*** — You have built a civilian cover identity registered with the Frumentarius network. Once per session, you may invoke this identity to pass as a non-military person. Any NPC not already suspicious of you must succeed on a DC 15 Wisdom (Insight) check to see through the cover.
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -434,36 +448,6 @@ None of this is in the official record. You noted it in a separate document. The
 
 **Mechanic:** While you carry the eagle, all allies within 30 feet have advantage on saving throws against fear effects. If the eagle falls (you drop it or die while carrying it), all allies within 60 feet make a DC 16 Wisdom saving throw or become frightened for one minute. Once per session, invoking the eagle before a combat grants all allies a free bonus action on their first turn.
 
-### Advancement
-
-**Standard** (0 commendationes): While carrying the eagle, allies within 30 feet have advantage on fear saving throws. Once per session, invoke the eagle before combat to grant allies a free bonus action on their first turn.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Bellator* — Warrior-bearer
-
-**Perk 1: *Aquila Vincit*** — While you carry the *aquila*, allied soldiers within 30 feet have advantage on saving throws against being frightened. As a bonus action, you may issue a battle cry, granting allies within 30 feet advantage on their next attack roll before the end of their next turn.
-
-#### Branch B: *Custos Aquilae* — Sacred guardian of the eagle
-
-**Perk 1: *Memoria Sacra*** — You have learned the rites of the *aquila*'s sacred maintenance. When you perform a 10-minute ritual prayer at the start of a day, roll a d6. On a 4 or higher, Mars grants a boon: all allies within 60 feet gain +1 to attack rolls until your next long rest. This ritual cannot be performed if the unit has an unresolved corruption penalty.
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Fortitudo Legionis*
-
-**Perk 2: *Fortitudo Legionis*** — *(Civis)*
-When you are reduced to 0 hit points while carrying the *aquila*, you may choose to remain conscious with 1 hit point. This feature recharges after a long rest. If the *aquila* falls to the ground, all allies within 60 feet must make a DC 13 Wisdom saving throw or become frightened until the start of their next turn.
-*Requires full citizenship: the right to die for the aquila is a legal and religious privilege of Roman citizens.*
-
-#### Branch B (continued): *Nexus Aquilae*
-
-**Perk 2: *Nexus Aquilae*** — *(Civis + Religion proficiency)*
-You are a living conduit between the unit and Mars. Once per long rest, when an ally within 60 feet would be reduced to 0 hit points, you may use your reaction to redirect that damage to the *aquila* instead. The *aquila* is treated as an object with AC 18 and 20 hit points for this purpose. If the *aquila* reaches 0 hit points, it is desecrated: a major narrative consequence.
-*Requires citizenship and religious training: this rite is reserved for those bound to Rome by law and to Mars by vocation.*
-
 **Starting Equipment**
 
 The aquilifer's kit is shaped by one constraint: one hand holds the eagle, always. In the field, both hands are not available for fighting. This eliminates shields and two-handed weapons from the role permanently. The compensation is that the most visible soldier in the unit wears the best armor the legion issues.
@@ -485,6 +469,43 @@ The aquilifer's kit is shaped by one constraint: one hand holds the eagle, alway
 **Class substitution:** *Lorica Segmentata* requires heavy armor proficiency (Fighter, Paladin, War/Forge Cleric). Without it, the legion issues *Lorica Hamata* instead: same visual weight, slightly less protection, no proficiency required. The STR 15 prerequisite still applies: the eagle's weight demands it regardless of armor choice.
 
 **Note on the eagle:** The *aquila* is not personal equipment. It belongs to the legion. Its weight (approximately 15 lb for the gilded bronze assembly) is the bearer's burden in the field. When secured in the *principia*, it is guarded under separate protocol and is not the aquilifer's responsibility to stand watch over personally.
+
+
+### Advancement
+
+**Standard** (0 commendationes): While carrying the eagle, allies within 30 feet have advantage on fear saving throws. Once per session, invoke the eagle before combat to grant allies a free bonus action on their first turn.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Bellator* — Warrior-bearer</strong></summary>
+
+
+**Perk 1: *Aquila Vincit*** — While you carry the *aquila*, allied soldiers within 30 feet have advantage on saving throws against being frightened. As a bonus action, you may issue a battle cry, granting allies within 30 feet advantage on their next attack roll before the end of their next turn.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Fortitudo Legionis*** — *(Civis)*
+When you are reduced to 0 hit points while carrying the *aquila*, you may choose to remain conscious with 1 hit point. This feature recharges after a long rest. If the *aquila* falls to the ground, all allies within 60 feet must make a DC 13 Wisdom saving throw or become frightened until the start of their next turn.
+*Requires full citizenship: the right to die for the aquila is a legal and religious privilege of Roman citizens.*
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Custos Aquilae* — Sacred guardian of the eagle</strong></summary>
+
+
+**Perk 1: *Memoria Sacra*** — You have learned the rites of the *aquila*'s sacred maintenance. When you perform a 10-minute ritual prayer at the start of a day, roll a d6. On a 4 or higher, Mars grants a boon: all allies within 60 feet gain +1 to attack rolls until your next long rest. This ritual cannot be performed if the unit has an unresolved corruption penalty.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Nexus Aquilae*** — *(Civis + Religion proficiency)*
+You are a living conduit between the unit and Mars. Once per long rest, when an ally within 60 feet would be reduced to 0 hit points, you may use your reaction to redirect that damage to the *aquila* instead. The *aquila* is treated as an object with AC 18 and 20 hit points for this purpose. If the *aquila* reaches 0 hit points, it is desecrated: a major narrative consequence.
+*Requires citizenship and religious training: this rite is reserved for those bound to Rome by law and to Mars by vocation.*
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -573,32 +594,6 @@ You know the text. You know why Metellus was found dead without it having been s
 
 **Mechanic:** Access to the unit savings fund (currently 100 gp at campaign start). Drawing on the fund requires DC 14 Persuasion (a majority of the unit votes to authorize it) or DC 18 Deception (forging the ledger, detected on DC 16 Investigation by anyone who checks). The fund grows when the party completes supply missions or recovers assets.
 
-### Advancement
-
-**Standard** (0 commendationes): Access to the unit savings fund (100 gp at campaign start). Authorize withdrawals via DC 14 Persuasion or detect forgery via DC 16 Investigation.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Auctor* — Financial guardian
-
-**Perk 1: *Peculium Augetur*** — You have direct access to the unit's savings account. Once per session, you may draw up to 15 gold pieces from the unit's collective fund (tracked as a shared resource). You gain advantage on Charisma (Persuasion) checks with merchants and bankers when citing official legion accounts.
-
-#### Branch B: *Cerberus* — Debt enforcer
-
-**Perk 1: *Nexus Debitorum*** — You know precisely who owes what to whom across the camp and *vicus*. Once per session, you may reveal that a named NPC owes the unit a formal debt (the DM must make this debt real and plot-relevant going forward). NPCs who owe you money have disadvantage on Charisma checks made against you.
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Creditum Imperiale*
-
-**Perk 2: *Creditum Imperiale*** — Your reputation as an honest *signifer* opens doors in Roman financial networks. You can secure credit of up to 50 gold pieces from any Roman merchant or banker without collateral, repayable within 30 days. Military NPCs treat you as one rank higher for social interaction purposes when financial matters are in play.
-
-#### Branch B (continued): *Retes Pecuniae*
-
-**Perk 2: *Retes Pecuniae*** — You have become the informal banker of the region. You learn automatically when any named NPC in or near the camp receives or spends a significant sum (20 gp or more). Once per session, you may intercept, freeze, or redirect one such payment, with narrative consequences determined by the DM.
-
 **Starting Equipment**
 
 The signifer carries the *signum* in one arm in the field: a pole standard topped with discs and decorations that rally the unit's sub-element. The arm holding the standard cannot simultaneously hold a shield, so the role trades one protection for another. The kit also reflects the banking duties: the signifer carries administrative tools that most soldiers never touch.
@@ -619,6 +614,39 @@ The signifer carries the *signum* in one arm in the field: a pole standard toppe
 **Not issued:** No shield (the standard occupies the arm position a shield would require). No two-handed weapon. The banker's kit is not combat equipment but must accompany the signifer between sessions for duty purposes.
 
 **Note on the signum:** The *signum* belongs to the unit sub-element, not the signifer personally. Its weight (approximately 8 lb) is carried in the field. Between operations, the signifer is responsible for its safe storage or posting.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Access to the unit savings fund (100 gp at campaign start). Authorize withdrawals via DC 14 Persuasion or detect forgery via DC 16 Investigation.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Auctor* — Financial guardian</strong></summary>
+
+
+**Perk 1: *Peculium Augetur*** — You have direct access to the unit's savings account. Once per session, you may draw up to 15 gold pieces from the unit's collective fund (tracked as a shared resource). You gain advantage on Charisma (Persuasion) checks with merchants and bankers when citing official legion accounts.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Creditum Imperiale*** — Your reputation as an honest *signifer* opens doors in Roman financial networks. You can secure credit of up to 50 gold pieces from any Roman merchant or banker without collateral, repayable within 30 days. Military NPCs treat you as one rank higher for social interaction purposes when financial matters are in play.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Cerberus* — Debt enforcer</strong></summary>
+
+
+**Perk 1: *Nexus Debitorum*** — You know precisely who owes what to whom across the camp and *vicus*. Once per session, you may reveal that a named NPC owes the unit a formal debt (the DM must make this debt real and plot-relevant going forward). NPCs who owe you money have disadvantage on Charisma checks made against you.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Retes Pecuniae*** — You have become the informal banker of the region. You learn automatically when any named NPC in or near the camp receives or spends a significant sum (20 gp or more). Once per session, you may intercept, freeze, or redirect one such payment, with narrative consequences determined by the DM.
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -705,34 +733,6 @@ The soldier in question does not know who owns his debt.
 
 **Mechanic:** As a bonus action in combat, signal a formation change: all allies within 60 feet who can hear you shift into or out of formation without expending movement or their reaction. Once per session, signal a false retreat (DC 15 Performance, opposed by enemy commander's Insight) to draw enemies out of position; on success, the enemy unit moves toward the apparent retreat for one round.
 
-### Advancement
-
-**Standard** (0 commendationes): As a bonus action, signal a formation change for all allies within 60 feet. Once per session, sound a false retreat (DC 15 Performance vs. enemy Insight).
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Tubicen* — Signal master
-
-**Perk 1: *Signale Perturbans*** — As an action, you may sound a false or contradictory tactical signal. All enemies within 60 feet who can hear it must succeed on a DC 13 Wisdom saving throw or spend their next action following the false signal rather than their intended action.
-
-#### Branch B: *Praeceptor* — Teacher and cultural bridge
-
-**Perk 1: *Vox Concordiae*** — *(requires Performance proficiency)*
-Your music creates genuine morale improvement. During a short rest, you may perform to allow allies who can hear you to spend one fewer Hit Die while gaining the same healing. Alternatively, your performance can reduce one unit member's exhaustion level by 1 (once per long rest).
-*Requires Performance proficiency: the diplomatic power of music demands formal training.*
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Maeander Hostium*
-
-**Perk 2: *Maeander Hostium*** — After observing a coordinated group of enemies for 1 minute, you can predict their next tactical movement. The DM must describe their intended formation shift, retreat trigger, or next coordinated action before it occurs. This works once per encounter.
-
-#### Branch B (continued): *Lingua Barbarorum*
-
-**Perk 2: *Lingua Barbarorum*** — You have used music as a bridge across the cultural divide. You learn one barbarian language of your choice (Germanic, Celtic, or Dacian). Allied Germanic NPCs have their initial attitude improved by one step toward you. You can attempt to communicate through music with creatures that share no language with you, using a Performance check contested by the creature's Insight.
-
 **Starting Equipment**
 
 The cornicen's job requires breath, volume, and sustained physical output. The kit is lighter than any front-line role: heavy plate constricts the diaphragm and degrades the wind capacity the role depends on. The cornicen is not expected to anchor a shield wall; they are expected to stay mobile, stay visible, and stay audible through an engagement from first contact to withdrawal.
@@ -751,6 +751,41 @@ The cornicen's job requires breath, volume, and sustained physical output. The k
 **Not issued:** No helmet with extended cheek guards (blocks the mouthpiece). No heavy armor. No shield as standard: the *cornu* is carried over the shoulder on a leather strap between signals and requires both hands during active use, which makes a shield a management problem rather than an outright impossibility. A player who wants to carry a shield does so at the cost of time to transition between shield position and horn position; in a fast-moving engagement, this is a real tradeoff.
 
 **Note on the cornu:** The *cornu* belongs to the fort's supply. Its weight (approximately 6 lb for the curved bronze instrument) is carried on a shoulder strap. Active signaling requires both hands on the horn; during that time, the gladius is sheathed.
+
+
+### Advancement
+
+**Standard** (0 commendationes): As a bonus action, signal a formation change for all allies within 60 feet. Once per session, sound a false retreat (DC 15 Performance vs. enemy Insight).
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Tubicen* — Signal master</strong></summary>
+
+
+**Perk 1: *Signale Perturbans*** — As an action, you may sound a false or contradictory tactical signal. All enemies within 60 feet who can hear it must succeed on a DC 13 Wisdom saving throw or spend their next action following the false signal rather than their intended action.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Maeander Hostium*** — After observing a coordinated group of enemies for 1 minute, you can predict their next tactical movement. The DM must describe their intended formation shift, retreat trigger, or next coordinated action before it occurs. This works once per encounter.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Praeceptor* — Teacher and cultural bridge</strong></summary>
+
+
+**Perk 1: *Vox Concordiae*** — *(requires Performance proficiency)*
+Your music creates genuine morale improvement. During a short rest, you may perform to allow allies who can hear you to spend one fewer Hit Die while gaining the same healing. Alternatively, your performance can reduce one unit member's exhaustion level by 1 (once per long rest).
+*Requires Performance proficiency: the diplomatic power of music demands formal training.*
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Lingua Barbarorum*** — You have used music as a bridge across the cultural divide. You learn one barbarian language of your choice (Germanic, Celtic, or Dacian). Allied Germanic NPCs have their initial attitude improved by one step toward you. You can attempt to communicate through music with creatures that share no language with you, using a Performance check contested by the creature's Insight.
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -842,32 +877,6 @@ Soldiers designated *immunes* are exempt from the fatigue duties that fill most 
 
 **Mechanic:** You can stabilize a dying creature using Medicine (no action cost, just the check, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + WIS modifier HP. You can identify poison, disease, or unusual wound cause with DC 13 Medicine and no additional resources.
 
-### Advancement
-
-**Standard** (0 commendationes): Stabilize a dying creature with Medicine (no action cost, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + Wisdom modifier HP. Identify poison, disease, or wound cause at DC 13.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Archiater* — Field surgeon
-
-**Perk 1: *Periculum Superatur*** — When you stabilize a dying creature using Medicine, they regain 1 hit point rather than remaining at 0. When you spend a healer's kit charge to restore hit points, the target regains the maximum result for that die (no roll; treat as average plus Constitution modifier).
-
-#### Branch B: *Toxicologus* — Poison and disease specialist
-
-**Perk 1: *Venena Nota*** — You have advantage on Intelligence (Medicine) checks to identify poisons, diseases, and drugs. When you examine a poisoned creature, you automatically learn the poison's name and its effects: though not necessarily its source.
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Chirurgia Magistra*
-
-**Perk 2: *Chirurgia Magistra*** — Once per long rest, you may perform emergency surgery on a willing creature during a short rest. The target regains hit points as if they had spent all their Hit Dice (roll them all, add Constitution modifier per die), but they must complete a long rest before benefiting from this feature again.
-
-#### Branch B (continued): *Antidotum Perfectum*
-
-**Perk 2: *Antidotum Perfectum*** — During a short rest, you may prepare an antidote to any poison you have previously identified. This antidote cures the poison without requiring a saving throw and grants the target advantage on Constitution saving throws against that specific poison for 24 hours. You may have one antidote prepared at a time.
-
 **Starting Equipment**
 
 The medicus does not fight if a better option exists, but they are fully authorized to defend themselves and their patients. The kit prioritizes medical capability over combat weight: the medicus is worth more alive and treating wounds than dead with a heavy shield.
@@ -886,6 +895,39 @@ The medicus does not fight if a better option exists, but they are fully authori
 **Role kit weight:** 43 lb | **Full kit with universal issue:** 60 lb. Designed for a high-Wisdom character who is unlikely to have the highest Strength in the unit.
 
 **Not issued:** No shield (prevents the free arm movement required for most medical procedures). No *pilum*. No heavy armor. The absence of heavier equipment is not a statement about courage; it is a practical decision about what will be useful in the situations this role encounters.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Stabilize a dying creature with Medicine (no action cost, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + Wisdom modifier HP. Identify poison, disease, or wound cause at DC 13.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Archiater* — Field surgeon</strong></summary>
+
+
+**Perk 1: *Periculum Superatur*** — When you stabilize a dying creature using Medicine, they regain 1 hit point rather than remaining at 0. When you spend a healer's kit charge to restore hit points, the target regains the maximum result for that die (no roll; treat as average plus Constitution modifier).
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Chirurgia Magistra*** — Once per long rest, you may perform emergency surgery on a willing creature during a short rest. The target regains hit points as if they had spent all their Hit Dice (roll them all, add Constitution modifier per die), but they must complete a long rest before benefiting from this feature again.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Toxicologus* — Poison and disease specialist</strong></summary>
+
+
+**Perk 1: *Venena Nota*** — You have advantage on Intelligence (Medicine) checks to identify poisons, diseases, and drugs. When you examine a poisoned creature, you automatically learn the poison's name and its effects: though not necessarily its source.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Antidotum Perfectum*** — During a short rest, you may prepare an antidote to any poison you have previously identified. This antidote cures the poison without requiring a saving throw and grants the target advantage on Constitution saving throws against that specific poison for 24 hours. You may have one antidote prepared at a time.
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -974,36 +1016,6 @@ There is a treatment that slows the physical symptoms. It does not reverse the u
 
 **Mechanic:** Cast *Augury* once per day without a spell slot. Before a session's main conflict, perform a pre-session divination by rolling 1d20 and giving the DM the result (they use it to calibrate one encounter that session, without telling you which one or how). Once per session, declare an action *nefastus* (ritually forbidden today): all party members gain advantage on the first saving throw of the session, and the DM removes one of their encounter options for that session.
 
-### Advancement
-
-**Standard** (0 commendationes): Cast *Augury* once per day without a spell slot. Pre-session divination roll calibrates one encounter. Once per session, declare an action *nefastus* for party advantage on the first saving throw of the session.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Augur Publicus* — Official Roman diviner
-
-**Perk 1: *Prodigium Declaratum*** — Once per session, you may formally declare that an omen is favorable or unfavorable for a specific planned action. If favorable: allies gain advantage on their first attack roll or ability check in the relevant encounter. If unfavorable: the DM must introduce at least one additional warning or complication before any consequence arrives.
-
-#### Branch B: *Mystes* — Mystery tradition initiate
-
-**Perk 1: *Ritus Antiquus*** — *(locked: Soldier background only)*
-You have been initiated into pre-Roman ritual practices that survived in the military's folk religion. You may perform a 1-hour ceremony to commune with local spirits. The DM reveals one hidden fact about the current location: an environmental truth, a historical event, or a spiritual significance: not a secret about a specific NPC.
-*Locked to Soldier background: knowledge of the old rites survives among long-service soldiers, not civilians.*
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Auspicia Maxima*
-
-**Perk 2: *Auspicia Maxima*** — *(Civis)*
-Your auguries carry legal force. Military commanders must delay major operations by at least one day if you formally declare the omens adverse, following Roman religious law. This grants the party one additional planning scene before any time-pressured encounter.
-*Requires full citizenship: the legal authority to halt military action on religious grounds belongs only to Roman citizens under the* lex auguralis.
-
-#### Branch B (continued): *Theologia Vetusta*
-
-**Perk 2: *Theologia Vetusta*** — You have reconciled Roman official religion with older local traditions, creating a personal theology recognized by neither but respected by both. You may speak with local spirits as if using the *speak with dead* spell (once per long rest), but the spirits are *genii loci* tied to the land, not the dead. Answers concern the land and its history, not specific individuals.
-
 **Starting Equipment**
 
 The haruspex is a religious specialist and an officer of the divination guild, not a combat role. The kit reflects this: ceremonial in character, administratively complete, built for a role that is present at military operations but not expected to anchor a shield wall.
@@ -1022,6 +1034,43 @@ The haruspex is a religious specialist and an officer of the divination guild, n
 **Role kit weight:** 23 lb | **Full kit with universal issue:** 40 lb. The lightest non-Flamen kit in the unit.
 
 **Not issued:** No shield; no *gladius*; no *pilum*; no thrown weapons; no heavy armor. A haruspex who needs to fight has already failed at their primary function, which is to tell the commander whether to fight, and when, and under what conditions.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Cast *Augury* once per day without a spell slot. Pre-session divination roll calibrates one encounter. Once per session, declare an action *nefastus* for party advantage on the first saving throw of the session.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Augur Publicus* — Official Roman diviner</strong></summary>
+
+
+**Perk 1: *Prodigium Declaratum*** — Once per session, you may formally declare that an omen is favorable or unfavorable for a specific planned action. If favorable: allies gain advantage on their first attack roll or ability check in the relevant encounter. If unfavorable: the DM must introduce at least one additional warning or complication before any consequence arrives.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Auspicia Maxima*** — *(Civis)*
+Your auguries carry legal force. Military commanders must delay major operations by at least one day if you formally declare the omens adverse, following Roman religious law. This grants the party one additional planning scene before any time-pressured encounter.
+*Requires full citizenship: the legal authority to halt military action on religious grounds belongs only to Roman citizens under the* lex auguralis.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Mystes* — Mystery tradition initiate</strong></summary>
+
+
+**Perk 1: *Ritus Antiquus*** — *(locked: Soldier background only)*
+You have been initiated into pre-Roman ritual practices that survived in the military's folk religion. You may perform a 1-hour ceremony to commune with local spirits. The DM reveals one hidden fact about the current location: an environmental truth, a historical event, or a spiritual significance: not a secret about a specific NPC.
+*Locked to Soldier background: knowledge of the old rites survives among long-service soldiers, not civilians.*
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Theologia Vetusta*** — You have reconciled Roman official religion with older local traditions, creating a personal theology recognized by neither but respected by both. You may speak with local spirits as if using the *speak with dead* spell (once per long rest), but the spirits are *genii loci* tied to the land, not the dead. Answers concern the land and its history, not specific individuals.
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -1108,32 +1157,6 @@ Paterculus, this fort's *haruspex*, has been filing them as ordinary bad omens. 
 
 **Mechanic:** Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses: DC 13 Investigation reveals a weak point in a wall, door, or structure. Once per session, improvise a piece of equipment (battering ram, caltrop field, burning pitch container) from available materials with a DC 14 Smith's Tools or Mason's Tools check.
 
-### Advancement
-
-**Standard** (0 commendationes): Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses at DC 13 Investigation. Once per session, improvise a piece of equipment from available materials (DC 14 Smith's or Mason's Tools).
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Architectus* — Field engineer
-
-**Perk 1: *Machina Belli*** — You can build or repair a siege engine (*ballista*, *scorpio*, *onager*) in half the listed construction time and at 75% of the listed cost. When you operate a siege engine you personally helped build or maintain, you add your proficiency bonus to damage rolls.
-
-#### Branch B: *Demolitor* — Demolitions and siege-breaking
-
-**Perk 1: *Calx Viva*** — You have learned to weaponize quicklime, pitch, and fire. During a short rest, you may prepare one incendiary device. When thrown (range 20/60), it covers a 10-foot-radius area: creatures in the area must succeed on a DC 14 Dexterity saving throw or take 2d6 fire damage; the area becomes difficult terrain for 1 minute.
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Castrametatio Perfecta*
-
-**Perk 2: *Castrametatio Perfecta*** — During a long rest in the field, you may direct the unit to construct basic field fortifications: palisade stakes, a ditch, and a firing platform. These grant allies inside +2 to AC against ranged attacks and advantage on Wisdom (Perception) checks until the fortifications are dismantled.
-
-#### Branch B (continued): *Destructor Murorum*
-
-**Perk 2: *Destructor Murorum*** — After studying a wall, fortification, or structure for 1 minute, you can identify its exact structural weakness. Siege checks targeting structures you have assessed are made with advantage, and the DM must tell you the minimum force (or exact placement) needed to bring down a specific section.
-
 **Starting Equipment**
 
 The faber works with their hands: hammering, cutting, lifting, and assembling. The kit must protect without preventing full arm range of motion, and it must accommodate the tools that are always present alongside the weapons.
@@ -1153,6 +1176,39 @@ The faber works with their hands: hammering, cutting, lifting, and assembling. T
 **Role kit weight:** 56 lb | **Full kit with universal issue:** 73 lb (tools at fabrica, not field-carried). At STR 13, carrying capacity is 195 lb; well within comfortable range.
 
 **Not issued:** No *linothorax* (a fire hazard in forge work). No *paludamentum* (same reason: fabric near open flame is a liability). The faber's work environment means any item that catches sparks easily is an accident waiting to happen.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses at DC 13 Investigation. Once per session, improvise a piece of equipment from available materials (DC 14 Smith's or Mason's Tools).
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Architectus* — Field engineer</strong></summary>
+
+
+**Perk 1: *Machina Belli*** — You can build or repair a siege engine (*ballista*, *scorpio*, *onager*) in half the listed construction time and at 75% of the listed cost. When you operate a siege engine you personally helped build or maintain, you add your proficiency bonus to damage rolls.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Castrametatio Perfecta*** — During a long rest in the field, you may direct the unit to construct basic field fortifications: palisade stakes, a ditch, and a firing platform. These grant allies inside +2 to AC against ranged attacks and advantage on Wisdom (Perception) checks until the fortifications are dismantled.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Demolitor* — Demolitions and siege-breaking</strong></summary>
+
+
+**Perk 1: *Calx Viva*** — You have learned to weaponize quicklime, pitch, and fire. During a short rest, you may prepare one incendiary device. When thrown (range 20/60), it covers a 10-foot-radius area: creatures in the area must succeed on a DC 14 Dexterity saving throw or take 2d6 fire damage; the area becomes difficult terrain for 1 minute.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Destructor Murorum*** — After studying a wall, fortification, or structure for 1 minute, you can identify its exact structural weakness. Siege checks targeting structures you have assessed are made with advantage, and the DM must tell you the minimum force (or exact placement) needed to bring down a specific section.
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -1239,38 +1295,6 @@ Under siege conditions, with the vibration of artillery and the weight of reinfo
 
 **Mechanic:** Forge military documents (DC 14 Forgery, detected on DC 15 Investigation by anyone who examines them). Access incoming dispatch copies as a matter of routine: you know what Rome officially knows about this fort, including what has and has not been reported. Produce legally binding Latin documents on request.
 
-### Advancement
-
-**Standard** (0 commendationes): Forge military documents (DC 14, detected on DC 15). Routine access to incoming dispatch copies. Produce legally binding Latin documents on request.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Cornicularius* — Senior administrator
-
-**Perk 1: *Archivum Legionis*** — You have memorized legion administrative procedure. You can produce authentic-looking military documentation (orders, travel passes, census entries, duty rosters) in 10 minutes. The DC to detect your forgeries is equal to your Intelligence (Forgery Kit or Calligrapher's Tools) check result. You have advantage on Intelligence (History) checks related to Roman law and administration.
-
-#### Branch B: *Agens in Rebus* — Imperial intelligence operative
-
-**Perk 1: *Persona Non Grata*** — *(locked: Outlander background only)*
-You know how to erase administrative traces. Once per session, you may remove a named NPC (or yourself) from one official record: travel papers, census rolls, duty roster, or tribunal record. The erasure is detectable on a DC 16 Intelligence (Investigation) check.
-*Locked to Outlander background: only those who have lived outside Roman record-keeping understand how to unmake it.*
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Auctoritas Scriba*
-
-**Perk 2: *Auctoritas Scriba*** — *(Latinus+)*
-Your administrative authority is recognized formally. Once per session, you may invoke administrative procedure to delay any official action (arrest, requisition, formal investigation) by 24 hours, citing pending paperwork, missing authorizations, or required review. The delay is procedurally legitimate and cannot be overridden without a scene.
-*Requires Latini status: administrative authority to obstruct official action requires recognized legal standing.*
-
-#### Branch B (continued): *Rete Secretorum*
-
-**Perk 2: *Rete Secretorum*** — *(locked: Paladin class only)*
-You have assembled a network of verified, trustworthy informants across the Limes, and the Paladin's divine sense makes you a reliable node in the network. Once per session, you may send an encrypted message and receive a reply within 24 hours from any named fort within 100 miles of your location.
-*Locked to Paladin class: divine sense provides the verification system that makes the network's communications secure.*
-
 **Starting Equipment**
 
 The librarius spends most of their working time at a desk, but they are still a soldier and present at operations. The kit reflects someone who moves between the legate's office and the unit's positions, who handles documents in all weather, and who occasionally needs to observe things without attracting attention.
@@ -1289,6 +1313,45 @@ The librarius spends most of their working time at a desk, but they are still a 
 **Role kit weight:** 53 lb | **Full kit with universal issue:** 70 lb. Standard for an INT 14 character with typical Strength.
 
 **Not issued:** No shield (document work requires free hands; a large oval shield becomes a liability when moving through doorways carrying materials). No heavy armor. No *pilum*. The librarius's protection against threats is primarily information: knowing what is coming before it arrives.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Forge military documents (DC 14, detected on DC 15). Routine access to incoming dispatch copies. Produce legally binding Latin documents on request.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Cornicularius* — Senior administrator</strong></summary>
+
+
+**Perk 1: *Archivum Legionis*** — You have memorized legion administrative procedure. You can produce authentic-looking military documentation (orders, travel passes, census entries, duty rosters) in 10 minutes. The DC to detect your forgeries is equal to your Intelligence (Forgery Kit or Calligrapher's Tools) check result. You have advantage on Intelligence (History) checks related to Roman law and administration.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Auctoritas Scriba*** — *(Latinus+)*
+Your administrative authority is recognized formally. Once per session, you may invoke administrative procedure to delay any official action (arrest, requisition, formal investigation) by 24 hours, citing pending paperwork, missing authorizations, or required review. The delay is procedurally legitimate and cannot be overridden without a scene.
+*Requires Latini status: administrative authority to obstruct official action requires recognized legal standing.*
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Agens in Rebus* — Imperial intelligence operative</strong></summary>
+
+
+**Perk 1: *Persona Non Grata*** — *(locked: Outlander background only)*
+You know how to erase administrative traces. Once per session, you may remove a named NPC (or yourself) from one official record: travel papers, census rolls, duty roster, or tribunal record. The erasure is detectable on a DC 16 Intelligence (Investigation) check.
+*Locked to Outlander background: only those who have lived outside Roman record-keeping understand how to unmake it.*
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Rete Secretorum*** — *(locked: Paladin class only)*
+You have assembled a network of verified, trustworthy informants across the Limes, and the Paladin's divine sense makes you a reliable node in the network. Once per session, you may send an encrypted message and receive a reply within 24 hours from any named fort within 100 miles of your location.
+*Locked to Paladin class: divine sense provides the verification system that makes the network's communications secure.*
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -1377,34 +1440,6 @@ A dispatch from Brutus arriving before the excavation yielded its primary findin
 
 **Mechanic:** Move at full speed without penalty in forest or wilderness terrain. Advantage on Perception checks in wilderness. Identify tracks and determine creature count, approximate size, and timing (DC 12 Survival, no tools required). Once per session, call on a border informant for one piece of local intelligence (DM provides, 1d4 hours wait time).
 
-### Advancement
-
-**Standard** (0 commendationes): Move at full speed without penalty in forest or wilderness. Advantage on Perception in wilderness. Track creatures (DC 12 Survival). Once per session, call on a border informant for local intelligence (1d4 hour wait).
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Speculare* — Scout-specialist
-
-**Perk 1: *Vestigia Legere*** — You can track creatures across any terrain type without penalty. When you spend at least 10 minutes examining a location, you can reconstruct a precise account of events that occurred there within the last 24 hours: who was present, what they did, and in what order.
-
-#### Branch B: *Reticularius* — Contact network handler
-
-**Perk 1: *Amici in Tenebris*** — *(requires Charisma 12 or higher)*
-You have cultivated a web of civilian informants: farmers, traders, and shepherds who report to you. Once per session, you may contact a local informant who can provide current information about enemy movements, strangers, or unusual events within a 30-mile radius.
-*Requires Charisma 12: this network is built on personal trust, not rank or pay.*
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Silva Nota*
-
-**Perk 2: *Silva Nota*** — You have mapped the surrounding wilderness in systematic detail. The party cannot be surprised when traveling through terrain you have previously scouted (within the current campaign region). Once per long rest, you may declare that you know a hidden route: the party avoids one random encounter and arrives 2 hours earlier than expected.
-
-#### Branch B (continued): *Larva*
-
-**Perk 2: *Larva*** — You have built a cover identity in the local civilian population, known under a false name and trade. NPCs do not connect you to the legion unless they have seen you in uniform or been told otherwise. You can move through civilian areas without triggering military-related wariness in NPCs, and hostile forces tracking the unit do not count you as a military target in civilian disguise.
-
 **Starting Equipment**
 
 The explorator operates beyond the fort perimeter, often alone or in pairs, for two to three days at a time. Every pound of kit is a calculation against speed and endurance. The explorator trades armor weight and shield coverage for the mobility that keeps them alive when they cannot fight their way out.
@@ -1423,6 +1458,41 @@ The explorator operates beyond the fort perimeter, often alone or in pairs, for 
 **Role kit weight:** 43 lb | **Full kit with universal issue:** 60 lb. At DEX 13 and typical Strength, well within comfortable carry for multi-day movement.
 
 **Not issued:** No shield (impossible to move quietly through dense vegetation with a large oval shield; it also catches branches and announces position). No *pilum* (a patrol soldier cannot afford to throw their only polearm and leave it in an enemy who then retreats). No heavy armor. No *birrus* (the hood reduces peripheral vision in forest terrain, where the threats come from the sides and behind).
+
+
+### Advancement
+
+**Standard** (0 commendationes): Move at full speed without penalty in forest or wilderness. Advantage on Perception in wilderness. Track creatures (DC 12 Survival). Once per session, call on a border informant for local intelligence (1d4 hour wait).
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Speculare* — Scout-specialist</strong></summary>
+
+
+**Perk 1: *Vestigia Legere*** — You can track creatures across any terrain type without penalty. When you spend at least 10 minutes examining a location, you can reconstruct a precise account of events that occurred there within the last 24 hours: who was present, what they did, and in what order.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Silva Nota*** — You have mapped the surrounding wilderness in systematic detail. The party cannot be surprised when traveling through terrain you have previously scouted (within the current campaign region). Once per long rest, you may declare that you know a hidden route: the party avoids one random encounter and arrives 2 hours earlier than expected.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Reticularius* — Contact network handler</strong></summary>
+
+
+**Perk 1: *Amici in Tenebris*** — *(requires Charisma 12 or higher)*
+You have cultivated a web of civilian informants: farmers, traders, and shepherds who report to you. Once per session, you may contact a local informant who can provide current information about enemy movements, strangers, or unusual events within a 30-mile radius.
+*Requires Charisma 12: this network is built on personal trust, not rank or pay.*
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Larva*** — You have built a cover identity in the local civilian population, known under a false name and trade. NPCs do not connect you to the legion unless they have seen you in uniform or been told otherwise. You can move through civilian areas without triggering military-related wariness in NPCs, and hostile forces tracking the unit do not count you as a military target in civilian disguise.
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -1511,38 +1581,6 @@ For the past month, Thusnelda's scouts have maintained a position with line-of-s
 
 **Mechanic:** Request information from the *frumentarii* network across the empire (DM provides after 1d4 days, encrypted courier round-trip). Use a coded communication system that cannot be traced to the unit by normal Investigation. Once per session, make a DC 13 Insight check against any named NPC to determine whether they are filing independent reports to Rome outside the official dispatch system.
 
-### Advancement
-
-**Standard** (0 commendationes): Request information from the *frumentarii* network (1d4 day delay). Coded communication untraceable by normal Investigation. Once per session, DC 13 Insight to detect NPCs filing independent reports to Rome.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Annonarius* — Supply officer
-
-**Perk 1: *Cursus Annonae*** — You have mastered legion supply chain procedure. Once per session, you may requisition one item from the legion's stores (worth up to 25 gp) without payment, citing operational necessity. A commanding officer must make a DC 14 Charisma (Persuasion) check to formally deny the requisition; on a failure, the denial creates a paper record that reflects poorly on the officer.
-
-#### Branch B: *Senior Frumentarius* — Intelligence officer
-
-**Perk 1: *Suspecti Inversi*** — *(Civis)*
-You have turned an enemy informant. Once per session, you may reveal that a named NPC is secretly working for you. The DM makes this real retroactively, but the informant's information may be outdated, incomplete, or colored by their original loyalties.
-*Requires full citizenship: Frumentarii intelligence operations above supply cover require citizen authorization under the emperor's direct mandate.*
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Praefectus Annonae*
-
-**Perk 2: *Praefectus Annonae*** — *(Civis)*
-Your supply authority is formally recognized. You may redirect supplies between units without approval. Once per session, you may transfer one supply category (food, arrows, healing kits, repair materials) from another unit's allocation to yours, with no check required. The transfer creates an official record that the DM tracks as a narrative consequence.
-*Requires full citizenship: formal authority over inter-unit supply distribution is restricted to citizens under the annona regulations.*
-
-#### Branch B (continued): *Speculator Principis*
-
-**Perk 2: *Speculator Principis*** — *(Civis + Deception proficiency)*
-You have direct access to Frumentarius command structure. Once per session, you may submit an official report triggering an investigation into any named NPC. The investigation begins within 3 days. NPCs who know or suspect your Frumentarius affiliation have disadvantage on Charisma checks made against you.
-*Requires citizenship and Deception training: operating at this level demands both legal standing and the ability to lie convincingly to superiors.*
-
 **Starting Equipment**
 
 The frumentarius's cover is a supply officer. The kit must look like a supply officer's kit while permitting the role's actual function. It is the most deliberately unremarkable issue in the unit: nothing that distinguishes, nothing that signals anything beyond a competent mid-tier specialist doing administrative work.
@@ -1561,6 +1599,45 @@ The frumentarius's cover is a supply officer. The kit must look like a supply of
 **Role kit weight:** 44-45 lb depending on cloak | **Full kit with universal issue:** 61-62 lb. Unremarkable in both directions.
 
 **Not issued:** Nothing unusual. Deliberately. The frumentarius's kit is specifically designed to produce no observations.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Request information from the *frumentarii* network (1d4 day delay). Coded communication untraceable by normal Investigation. Once per session, DC 13 Insight to detect NPCs filing independent reports to Rome.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Annonarius* — Supply officer</strong></summary>
+
+
+**Perk 1: *Cursus Annonae*** — You have mastered legion supply chain procedure. Once per session, you may requisition one item from the legion's stores (worth up to 25 gp) without payment, citing operational necessity. A commanding officer must make a DC 14 Charisma (Persuasion) check to formally deny the requisition; on a failure, the denial creates a paper record that reflects poorly on the officer.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Praefectus Annonae*** — *(Civis)*
+Your supply authority is formally recognized. You may redirect supplies between units without approval. Once per session, you may transfer one supply category (food, arrows, healing kits, repair materials) from another unit's allocation to yours, with no check required. The transfer creates an official record that the DM tracks as a narrative consequence.
+*Requires full citizenship: formal authority over inter-unit supply distribution is restricted to citizens under the annona regulations.*
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Senior Frumentarius* — Intelligence officer</strong></summary>
+
+
+**Perk 1: *Suspecti Inversi*** — *(Civis)*
+You have turned an enemy informant. Once per session, you may reveal that a named NPC is secretly working for you. The DM makes this real retroactively, but the informant's information may be outdated, incomplete, or colored by their original loyalties.
+*Requires full citizenship: Frumentarii intelligence operations above supply cover require citizen authorization under the emperor's direct mandate.*
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Speculator Principis*** — *(Civis + Deception proficiency)*
+You have direct access to Frumentarius command structure. Once per session, you may submit an official report triggering an investigation into any named NPC. The investigation begins within 3 days. NPCs who know or suspect your Frumentarius affiliation have disadvantage on Charisma checks made against you.
+*Requires citizenship and Deception training: operating at this level demands both legal standing and the ability to lie convincingly to superiors.*
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -1664,36 +1741,6 @@ If Brutus knew what was in the ground before Corvinus did, the entire chain of e
 
 **Mechanic:** Allies who observe your morning rites before a session (player acknowledgment that their character participated) gain +1 to death saving throws for that session. You can perform last rites that prevent a dead NPC from rising as a Lemur (*Dishonored Rest* risk removed). Once per session, ask for a divine sign and receive a yes/no answer (DM determines based on current divine standing).
 
-### Advancement
-
-**Standard** (0 commendationes): Allies who observe morning rites gain +1 to death saving throws for the session. Last rites prevent NPC undead rising. Once per session, request a divine sign (yes/no answer).
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Pontifex* — Official military priest
-
-**Perk 1: *Benedictio Militum*** — During a short rest, you may lead a formal prayer to the tutelary deity of your choice. Allies who participate gain temporary hit points equal to your Wisdom modifier plus your proficiency bonus. Each ally may only benefit from this once per long rest.
-
-#### Branch B: *Confessor* — Spiritual counselor
-
-**Perk 1: *Confessio Tacita*** — Soldiers and camp residents trust you with things they would not tell anyone else. Once per session, a named NPC who interacts with you for 10 minutes or more will share one piece of information they would not normally reveal: not necessarily their deepest secret, but something genuine and useful. This works only on willing NPCs not currently under duress.
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Prodigium Imperativum*
-
-**Perk 2: *Prodigium Imperativum*** — *(Civis)*
-Your priestly authority can compel action on religious grounds. Once per session, you may declare a religious emergency (*prodigium*) requiring immediate attention. This declaration overrides non-military orders for up to 24 hours and grants the party access to restricted areas or personnel on religious grounds, with no check required.
-*Requires full citizenship: the authority to invoke prodigium with legal force belongs only to citizens eligible for the collegium of Roman priests.*
-
-#### Branch B (continued): *Sanctuarium*
-
-**Perk 2: *Sanctuarium*** — *(locked: City Watch or Soldier background only)*
-You may formally declare a space sacred. Any combat within a declared sanctuary requires all participants to make a DC 14 Wisdom saving throw or have disadvantage on attack rolls until the start of their next turn. The space does not prevent violence, but violation carries immediate social and legal consequences the DM must honor.
-*Locked to law-enforcement backgrounds: only those who know what sanctuary means under Roman law know how to invoke it with force.*
-
 **Starting Equipment**
 
 The sacerdos is both a shrine keeper and a soldier. The kit is split between ceremonial requirements and combat readiness, with the expectation that ceremony is the daily reality and combat is the contingency.
@@ -1711,6 +1758,43 @@ The sacerdos is both a shrine keeper and a soldier. The kit is split between cer
 **Role kit weight:** 40 lb | **Full kit with universal issue:** 57 lb. The *paludamentum* replaces the *sagum* during ceremonies without changing the total weight.
 
 **Not issued:** No shield; no *gladius*; no *pilum*; no heavy armor. The sacerdos can requisition standard soldier kit from the armory if placed in combat conditions, but the default issue reflects the primary function of the role. A sacerdos in full *segmentata* conducting a burial rite is sending the wrong message to both the living and the dead.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Allies who observe morning rites gain +1 to death saving throws for the session. Last rites prevent NPC undead rising. Once per session, request a divine sign (yes/no answer).
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Pontifex* — Official military priest</strong></summary>
+
+
+**Perk 1: *Benedictio Militum*** — During a short rest, you may lead a formal prayer to the tutelary deity of your choice. Allies who participate gain temporary hit points equal to your Wisdom modifier plus your proficiency bonus. Each ally may only benefit from this once per long rest.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Prodigium Imperativum*** — *(Civis)*
+Your priestly authority can compel action on religious grounds. Once per session, you may declare a religious emergency (*prodigium*) requiring immediate attention. This declaration overrides non-military orders for up to 24 hours and grants the party access to restricted areas or personnel on religious grounds, with no check required.
+*Requires full citizenship: the authority to invoke prodigium with legal force belongs only to citizens eligible for the collegium of Roman priests.*
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Confessor* — Spiritual counselor</strong></summary>
+
+
+**Perk 1: *Confessio Tacita*** — Soldiers and camp residents trust you with things they would not tell anyone else. Once per session, a named NPC who interacts with you for 10 minutes or more will share one piece of information they would not normally reveal: not necessarily their deepest secret, but something genuine and useful. This works only on willing NPCs not currently under duress.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Sanctuarium*** — *(locked: City Watch or Soldier background only)*
+You may formally declare a space sacred. Any combat within a declared sanctuary requires all participants to make a DC 14 Wisdom saving throw or have disadvantage on attack rolls until the start of their next turn. The space does not prevent violence, but violation carries immediate social and legal consequences the DM must honor.
+*Locked to law-enforcement backgrounds: only those who know what sanctuary means under Roman law know how to invoke it with force.*
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -1799,40 +1883,6 @@ Two sets of offerings in the past month were not filed through the official chan
 
 **Mechanic:** Once per session, invoke Mars directly for +1d6 damage on one weapon attack or +1d6 on one saving throw (Mars notices: this adds 1 to the collective corruption track). You can perform the *devotio* as a special action (see Session 5 mechanics). Mars tells you directly, without a check, when he is actively present in a scene: the DM notifies this player privately.
 
-### Advancement
-
-**Standard** (0 commendationes): Once per session, invoke Mars for +1d6 damage or saving throw (adds 1 to collective corruption). Perform *devotio* as a special action. Mars notifies you privately when he is actively present.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Bellator Dei* — Divine warrior
-
-**Perk 1: *Devotio Maior*** — *(Civis + freeborn status only)*
-You have sworn the greater *devotio*, consecrating your kills to Mars. Once per long rest, when you reduce an enemy to 0 hit points, you may consecrate the kill. Until the end of your next turn, you add your proficiency bonus to all damage rolls. Using this feature increases your Corruption by 1.
-*Requires full citizenship and freeborn status: the devotio is a Roman legal-religious act that requires free Roman ancestry to be valid in the eyes of Mars.*
-
-#### Branch B: *Mysteriarch* — Mystery rite leader
-
-**Perk 1: *Tria Arma*** — *(locked: requires genuine Mars worship: not available to those whose primary allegiance is to another deity)*
-You have received the three sacred weapons of Mars in ritual vision. Once per short rest, when you make a weapon attack with a spear, javelin, or sword, you may call on Mars to guide the strike. The attack is made with advantage. If it hits, it deals maximum damage dice (do not roll; treat each die as its maximum value).
-*Locked to Mars worshippers: the Tria Arma is a martial vision given only to those who have sworn primary allegiance to Mars.*
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Hasta Sacra*
-
-**Perk 2: *Hasta Sacra*** — *(locked: Charlatan background excluded)*
-You carry a weapon consecrated in the original ceremony of the Flamen Dialis rite. This weapon counts as magical for overcoming damage resistances. Once per long rest, when you hit with this weapon, the target must make a DC 14 Constitution saving throw or become frightened of Mars himself (not you) for 1 minute.
-*Excluded from Charlatan background: the consecration ceremony requires genuine devotion; the rite fails for those whose faith is performance.*
-
-#### Branch B (continued): *Fax Martis*
-
-**Perk 2: *Fax Martis*** — *(locked: requires freeborn Roman ancestry: not available to freed slaves or those of non-Roman parentage)*
-Once per long rest, as an action, you invoke the Torch of Mars. For 1 minute, a 10-foot-radius area around you sheds bright light. Undead within this light have disadvantage on all attack rolls. Allied soldiers within the light who are below half their hit point maximum regain 1d6 hit points at the start of each of their turns.
-*Locked to freeborn Romans: Mars grants his torch only to those whose blood belongs to Rome by birth and law.*
-
 **Starting Equipment**
 
 The Flamen Martialis is technically a civilian religious appointment. They receive no military-issue kit. What they wear is personal property, purchased or provided through the legate's patronage, and it reflects the frontier cult of Mars Ultor rather than the civic legionary tradition.
@@ -1849,6 +1899,47 @@ The Flamen Martialis is technically a civilian religious appointment. They recei
 **Role kit weight:** 20 lb | **Full kit with universal issue:** 37 lb. The frontier cult doctrine frames this deliberate lightness as a statement: the Flamen Martialis is protected by Mars, not by iron. Whether that is comforting depends on how well the campaign is going.
 
 **Not issued:** No military-issue armor; no shield; no standard legionary weapons. The entire kit is personal property, and the deliberate rejection of standard military protection is a theological position, not an oversight.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Once per session, invoke Mars for +1d6 damage or saving throw (adds 1 to collective corruption). Perform *devotio* as a special action. Mars notifies you privately when he is actively present.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Bellator Dei* — Divine warrior</strong></summary>
+
+
+**Perk 1: *Devotio Maior*** — *(Civis + freeborn status only)*
+You have sworn the greater *devotio*, consecrating your kills to Mars. Once per long rest, when you reduce an enemy to 0 hit points, you may consecrate the kill. Until the end of your next turn, you add your proficiency bonus to all damage rolls. Using this feature increases your Corruption by 1.
+*Requires full citizenship and freeborn status: the devotio is a Roman legal-religious act that requires free Roman ancestry to be valid in the eyes of Mars.*
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Hasta Sacra*** — *(locked: Charlatan background excluded)*
+You carry a weapon consecrated in the original ceremony of the Flamen Dialis rite. This weapon counts as magical for overcoming damage resistances. Once per long rest, when you hit with this weapon, the target must make a DC 14 Constitution saving throw or become frightened of Mars himself (not you) for 1 minute.
+*Excluded from Charlatan background: the consecration ceremony requires genuine devotion; the rite fails for those whose faith is performance.*
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Mysteriarch* — Mystery rite leader</strong></summary>
+
+
+**Perk 1: *Tria Arma*** — *(locked: requires genuine Mars worship: not available to those whose primary allegiance is to another deity)*
+You have received the three sacred weapons of Mars in ritual vision. Once per short rest, when you make a weapon attack with a spear, javelin, or sword, you may call on Mars to guide the strike. The attack is made with advantage. If it hits, it deals maximum damage dice (do not roll; treat each die as its maximum value).
+*Locked to Mars worshippers: the Tria Arma is a martial vision given only to those who have sworn primary allegiance to Mars.*
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Fax Martis*** — *(locked: requires freeborn Roman ancestry: not available to freed slaves or those of non-Roman parentage)*
+Once per long rest, as an action, you invoke the Torch of Mars. For 1 minute, a 10-foot-radius area around you sheds bright light. Undead within this light have disadvantage on all attack rolls. Allied soldiers within the light who are below half their hit point maximum regain 1d6 hit points at the start of each of their turns.
+*Locked to freeborn Romans: Mars grants his torch only to those whose blood belongs to Rome by birth and law.*
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -1937,34 +2028,6 @@ The spear in the vault below this fort is one of the three. The other two are ac
 
 **Mechanic:** Stabilize a dying creature as a bonus action (not a full action). Administer a potion to an unconscious ally as a bonus action. If no *medicus* is present in the party, you function as a basic field medic (Medicus mechanic at -1d6 on the healing roll).
 
-### Advancement
-
-**Standard** (0 commendationes): Stabilize a dying creature as a bonus action. Administer a potion to an unconscious ally as a bonus action. Function as a basic field medic when no *medicus* is present (Medicus healing at -1d6).
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Ambulans* — Combat medic
-
-**Perk 1: *Celeritas Medici*** — When you use your action to administer healing (including a healing spell, healer's kit, or Medicus feature), you may move up to half your speed before or after the action without provoking opportunity attacks. You can drag an unconscious creature up to your full speed as part of this movement.
-
-#### Branch B: *Herbalista* — Field herbalist
-
-**Perk 1: *Pharmacopoeia Militaris*** — *(locked: Urban backgrounds only: Criminal, Charlatan, Guild Artisan, Noble, Urchin)*
-During a long rest in any settled area (camp, *vicus*, town), you may restock your healer's kit to full charges without paying, sourcing from local herbalists and markets. In the field, you can identify medicinal plants with a DC 10 Intelligence (Nature) check and create 1d4 healer's kit charges worth of healing supplies per long rest.
-*Locked to Urban backgrounds: knowledge of where to find and barter for medicinal components requires familiarity with markets and apothecary networks.*
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Triage Perfecta*
-
-**Perk 2: *Triage Perfecta*** — Once per encounter, when you treat a downed ally as a bonus action, you choose the outcome: you may either stabilize them normally, or restore them to 1 hit point and allow them to act on their next turn (rather than waiting a full round to regain consciousness after stabilization).
-
-#### Branch B (continued): *Andromeda Secretum*
-
-**Perk 2: *Andromeda Secretum*** — You have developed a compound with no Roman name, its recipe taught by a Germanic captive healer. Once per long rest, you may administer it to a willing creature. For the next 24 hours, the target does not need to eat or sleep, gains advantage on Constitution saving throws, and cannot be affected by natural disease. The compound is mildly addictive. The DM tracks the narrative consequences of extended use.
-
 **Starting Equipment**
 
 The capsarius runs toward casualties while the rest of the unit is still fighting. Speed and free hands matter more than any other consideration. The *capsa* (medical cylinder) is always carried; the combat kit is subordinate to it.
@@ -1984,6 +2047,41 @@ The capsarius runs toward casualties while the rest of the unit is still fightin
 **Role kit weight:** 31 lb | **Full kit with universal issue:** 48 lb. The second-lightest combat-viable kit in the unit.
 
 **Not issued:** No shield (prevents the rapid position changes required when working over a casualty). No *pilum*. No heavy armor. The capsarius's protection is speed and the battlefield convention that killing the medic first is bad practice. Roman armies generally observe this. Germanic tribes are less consistent.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Stabilize a dying creature as a bonus action. Administer a potion to an unconscious ally as a bonus action. Function as a basic field medic when no *medicus* is present (Medicus healing at -1d6).
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Ambulans* — Combat medic</strong></summary>
+
+
+**Perk 1: *Celeritas Medici*** — When you use your action to administer healing (including a healing spell, healer's kit, or Medicus feature), you may move up to half your speed before or after the action without provoking opportunity attacks. You can drag an unconscious creature up to your full speed as part of this movement.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Triage Perfecta*** — Once per encounter, when you treat a downed ally as a bonus action, you choose the outcome: you may either stabilize them normally, or restore them to 1 hit point and allow them to act on their next turn (rather than waiting a full round to regain consciousness after stabilization).
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Herbalista* — Field herbalist</strong></summary>
+
+
+**Perk 1: *Pharmacopoeia Militaris*** — *(locked: Urban backgrounds only: Criminal, Charlatan, Guild Artisan, Noble, Urchin)*
+During a long rest in any settled area (camp, *vicus*, town), you may restock your healer's kit to full charges without paying, sourcing from local herbalists and markets. In the field, you can identify medicinal plants with a DC 10 Intelligence (Nature) check and create 1d4 healer's kit charges worth of healing supplies per long rest.
+*Locked to Urban backgrounds: knowledge of where to find and barter for medicinal components requires familiarity with markets and apothecary networks.*
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Andromeda Secretum*** — You have developed a compound with no Roman name, its recipe taught by a Germanic captive healer. Once per long rest, you may administer it to a willing creature. For the next 24 hours, the target does not need to eat or sleep, gains advantage on Constitution saving throws, and cannot be affected by natural disease. The compound is mildly addictive. The DM tracks the narrative consequences of extended use.
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -2072,36 +2170,6 @@ The *medicus* does not know this yet. Valeria, the herb trader in the civilian s
 
 **Mechanic:** Hold a key to the armory (normally locked to non-officers). Know the complete current weapons and ammunition inventory. Identify a weapon's quality and condition by inspection (DC 11, no proficiency required). Once per session, locate a specific weapon type within the fort's supply chain in one hour (barring siege conditions).
 
-### Advancement
-
-**Standard** (0 commendationes): Hold the armory key. Know the complete weapons and ammunition inventory. Identify weapon quality and condition (DC 11). Once per session, locate a specific weapon type within one hour.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Praefectus Armorum* — Armory master
-
-**Perk 1: *Visio Armorum*** — You can identify any weapon or piece of armor by sight alone. You know its exact condition, estimated remaining durability, and whether it has been modified, damaged, or sabotaged. Any weapon or armor that you personally maintain grants +1 to its associated roll (attack roll or AC) while in good condition.
-
-#### Branch B: *Mercator* — Black market dealer
-
-**Perk 1: *Furtivus Commercium*** — *(locked: Soldier or City Watch background: military family only)*
-You have established contacts in the military black market. You can acquire any mundane item (including controlled or otherwise restricted goods) in any settlement, at 150% of standard cost, within 1d4 days. You are never asked where you obtained the goods.
-*Locked to military backgrounds: knowledge of which supply officers to bribe, and how, is insider knowledge from service.*
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Inventarium Perfectum*
-
-**Perk 2: *Inventarium Perfectum*** — Your armory records are exact. Any weapon theft, unauthorized modification, or equipment sabotage affecting items under your oversight is automatically detected by you within 24 hours. Once per session, you may loan a named item from armory stores (worth up to 50 gp) to the party: an item that "fell off the manifest" and carries no official record of transfer.
-
-#### Branch B (continued): *Res Obscurae*
-
-**Perk 2: *Res Obscurae*** — *(locked: Paladin class only)*
-You have handled enough military contraband, cursed weapons, and spiritually charged items that you have developed an instinct for what is wrong about an object. When you handle an item for 1 minute, you learn whether it is magical, cursed, or spiritually significant: though not what it does or how to use it.
-*Locked to Paladin class: the Paladin's divine sense underlies this ability; it is not experience alone but sensitivity to the divine.*
-
 **Starting Equipment**
 
 The custos armorum manages the armory and has access to the best-maintained equipment available to anyone in the fort. A weapons keeper who goes into combat in substandard gear is a standing joke in every garrison, and it does not happen.
@@ -2123,6 +2191,43 @@ The custos armorum manages the armory and has access to the best-maintained equi
 **Not issued:** No *pilum* as standard assignment. The custos armorum issues them to others; their own combat role is fort defense, not field engagement. No unusual weapons, despite having access to all of them: maintaining a reliable inventory requires that the record not have unexplained gaps, and the weapons keeper taking things from their own stock for personal use is the scenario they are specifically employed to prevent.
 
 **Class substitution:** *Lorica Segmentata* requires heavy armor proficiency (Fighter, Paladin, War/Forge Cleric). Without it, substitute *Lorica Hamata*. The irony of a weapons keeper in substandard armor is noted in-world; a Ranger or Rogue custos armorum explains this with their preferred combat style, and the explanation is accepted.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Hold the armory key. Know the complete weapons and ammunition inventory. Identify weapon quality and condition (DC 11). Once per session, locate a specific weapon type within one hour.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Praefectus Armorum* — Armory master</strong></summary>
+
+
+**Perk 1: *Visio Armorum*** — You can identify any weapon or piece of armor by sight alone. You know its exact condition, estimated remaining durability, and whether it has been modified, damaged, or sabotaged. Any weapon or armor that you personally maintain grants +1 to its associated roll (attack roll or AC) while in good condition.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Inventarium Perfectum*** — Your armory records are exact. Any weapon theft, unauthorized modification, or equipment sabotage affecting items under your oversight is automatically detected by you within 24 hours. Once per session, you may loan a named item from armory stores (worth up to 50 gp) to the party: an item that "fell off the manifest" and carries no official record of transfer.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Mercator* — Black market dealer</strong></summary>
+
+
+**Perk 1: *Furtivus Commercium*** — *(locked: Soldier or City Watch background: military family only)*
+You have established contacts in the military black market. You can acquire any mundane item (including controlled or otherwise restricted goods) in any settlement, at 150% of standard cost, within 1d4 days. You are never asked where you obtained the goods.
+*Locked to military backgrounds: knowledge of which supply officers to bribe, and how, is insider knowledge from service.*
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Res Obscurae*** — *(locked: Paladin class only)*
+You have handled enough military contraband, cursed weapons, and spiritually charged items that you have developed an instinct for what is wrong about an object. When you handle an item for 1 minute, you learn whether it is magical, cursed, or spiritually significant: though not what it does or how to use it.
+*Locked to Paladin class: the Paladin's divine sense underlies this ability; it is not experience alone but sensitivity to the divine.*
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
@@ -2223,52 +2328,6 @@ The *vexillatio extraordinaria* has one position of this type. It exists because
 
 **Mechanic:** When you enter Rage, each ally within 15 feet who can see or hear you gains advantage on their next attack roll before the start of your next turn. The battle-cry effect is real: the surge is audible and visible, and the soldiers around you respond to it before they have time to think. Once per session, you may issue a formal personal challenge (*provocatio*) to a single creature within 60 feet. The target must either accept single combat (stepping forward to engage you alone for the next minute, or until one combatant drops) or make a DC 14 Wisdom saving throw; on a failure it has disadvantage on attack rolls against creatures other than you until the challenge is resolved or one minute passes. Creatures that understand no language still respond to the *provocatio*: the challenge is physical and loud and leaves no ambiguity about what you want. Additionally, your *foedus* gives you limited legal latitude: once per session you may refuse a direct order from any officer below centurion rank without formal penalty. Produce the document; the officer backs down or takes it to the centurion, which creates a scene. The scene is a mechanic: it is information about who in the unit respects the *foedus* and who resents it.
 
-### Advancement
-
-**Standard** (0 commendationes): Battle-cry advantage aura on Rage entry (15 ft, allies who see or hear you). Once per session, *provocatio* (DC 14 Wisdom save or disadvantage against non-challenger targets for 1 minute). Once per session, invoke the *foedus* to refuse an order from a sub-centurion officer without formal penalty.
-
-
-**Veteranus** (3 commendationes): Choose one branch.
-
-#### Branch A: *Gladiator* — Arena-trained fighter
-
-You have arena history. Not necessarily as a slave — the majority of gladiators in the mid-second century were free volunteers who found the pay and the structure preferable to other options. What you have is training under conditions that distilled every combat decision down to what worked and what got you killed, with a crowd watching to see which.
-
-Choose a fighting style. The style is permanent once chosen and reflects the identity you built in the arena.
-
-**Murmillo** *(heavy, shield-forward, shield-breaker)*: You gain proficiency with the *scutum* if you do not have it, and you can treat the *scutum* as a light object for the purposes of shield bash. When fighting with a one-handed weapon and shield, once per turn you may add 1d4 bludgeoning damage to a hit as a free shield bash (no bonus action cost).
-
-**Thraex** *(mobile, curved blade, reading the opponent)*: Requires DEX 13. When you move at least 10 feet before making a melee attack this turn, that attack deals +1d6 slashing damage. Enemies do not gain opportunity attacks against you when you disengage as a bonus action — you learned the exits and you use them on your terms.
-
-**Dimachaerus** *(two weapons, no shield, maximum attack rate)*: When fighting with two weapons, you may add your Strength or Dexterity modifier to your off-hand attack's damage roll (removing the standard penalty that prevents this). Additionally, once per turn when you land a hit with your main-hand weapon, you may make your off-hand attack without spending your bonus action. Your bonus action is free for other uses that turn.
-
-**Retiarius** *(net-and-trident, lightest armor, control fighter)*: Requires DEX 13. The *retiarius* fights almost naked by arena standards: you may not wear heavy armor while this style is active — medium armor maximum. When you throw the *rete* (net), you may make one additional weapon attack as part of the same attack action. Your attacks deal +1d6 piercing damage against restrained targets. When a restrained creature attempts to escape, you may use your reaction to make one melee attack against them.
-
-**Secutor** *(pursuit fighter, net-counter, relentless pressure)*: The *secutor* was built as the direct counter to the *retiarius* — smooth helmet that a net cannot snag, large shield, relentless forward movement. You cannot be restrained by mundane nets or entangling effects (smooth equipment, practiced shrug). When a creature moves away from you, you may use your reaction to move up to your speed toward them; this movement does not provoke opportunity attacks. When you move at least 10 feet toward a creature and then hit it, that attack deals +1d4 damage.
-
-**Hoplomachus** *(spear and buckler, reach control, counter-charge)*: Requires a reach weapon in your main hand. When wielding a reach weapon, you may make one opportunity attack when a creature *enters* your reach as well as when they leave it (standard rules). On a hit with your reach weapon, the target must succeed on a DC 12 Strength saving throw or be pushed 5 feet away from you. Once per turn, if you have not moved this turn, you may brace: the next creature that enters your reach makes that saving throw at disadvantage.
-
-**Provocator** *(heavy armor, challenger, absorber)*: The *provocator* was the heaviest-armored gladiator and the one most visibly designed to invite punishment and survive it. When wearing medium or heavy armor with a shield equipped, your AC improves by 1 (the full coverage leaves no obvious gap). When a creature attacks you and misses, you may use your reaction to make one melee attack against them. At the start of each of your turns while Raging, you gain temporary hit points equal to your Constitution modifier.
-
-**Perk 1 (all styles): *Spectaculum*** — Your combat style has been honed in front of crowds under stakes that were not theoretical. You have advantage on Intimidation checks made in combat or immediately after a combat encounter. NPCs who witnessed you fight treat their initial social interaction with you as one step more favorable than their base disposition.
-
-#### Branch B: *Pugil Extraordinarius* — Unit champion
-
-**Perk 1: *Murus Carnis* ("Wall of Flesh")** — When an ally within 5 feet would be reduced to 0 hit points by a melee attack, you may use your reaction to step into the blow. The damage is redirected to you. If you are currently Raging, the redirected damage costs at most half your remaining hit points — the rage absorbs what would otherwise kill you. This ability cannot be used if you are incapacitated.
-
-
-**Specialis** (7 commendationes): Perk 2 on your chosen branch.
-
-#### Branch A (continued): *Victor*
-
-**Perk 2: *Victor*** — Your reputation precedes you. Once per session, you may name a creature and declare it your quarry. Against your quarry: your attacks score a critical hit on a 19 or 20; your quarry cannot benefit from the Dodge action against your attacks; when your quarry drops to 0 hit points, each ally who witnessed the fight may immediately make one attack as a reaction. The kill carries them forward.
-
-#### Branch B (continued): *Caput Exercitus*
-
-**Perk 2: *Caput Exercitus* ("Head of the Army")** — *(locked: STR 18 required)*
-While you are conscious and visible to allies: they automatically succeed on morale saves against fear effects of CR 5 or lower. Once per long rest, when the unit fails a morale check or would rout, your presence reverses the outcome — no roll required. Allies who have seen you save them remember it; social interactions with those allies treat you as two ranks higher for the duration of the campaign.
-*Locked to STR 18: this authority is physical. It comes from what soldiers have watched you survive, not from anything you said.*
-
 **Starting Equipment**
 
 The *foederatus* does not come from the Roman equipment system. Their kit reflects where they came from, not where they arrived. Corvinus's office issues the minimum required to mark you as attached to the unit. Everything else you carry is yours.
@@ -2294,6 +2353,59 @@ The *foederatus* does not come from the Roman equipment system. Their kit reflec
 **Role kit weight (Kit B, with issued armor):** 46 lb (*lorica squamata* 20, helmet 5, cloak 4, boots 2, belt 2, *bipennis* 7, two *franciscae* 6) | **Without armor (Unarmored Defense):** 26 lb | **Full kit with universal issue and issued armor:** approximately 60 lb. At STR 15, carrying capacity is 225 lb; all configurations are comfortable.
 
 **Not issued:** No *pilum* — formation weapons are issued to soldiers who hold a position in the Roman line. No *lorica segmentata*. No staff of rank. You are not part of the formation; you are what happens when the formation needs something it cannot do.
+
+
+### Advancement
+
+**Standard** (0 commendationes): Battle-cry advantage aura on Rage entry (15 ft, allies who see or hear you). Once per session, *provocatio* (DC 14 Wisdom save or disadvantage against non-challenger targets for 1 minute). Once per session, invoke the *foedus* to refuse an order from a sub-centurion officer without formal penalty.
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+<details>
+<summary><strong>Branch A: *Gladiator* — Arena-trained fighter</strong></summary>
+
+
+You have arena history. Not necessarily as a slave — the majority of gladiators in the mid-second century were free volunteers who found the pay and the structure preferable to other options. What you have is training under conditions that distilled every combat decision down to what worked and what got you killed, with a crowd watching to see which.
+
+Choose a fighting style. The style is permanent once chosen and reflects the identity you built in the arena.
+
+**Murmillo** *(heavy, shield-forward, shield-breaker)*: You gain proficiency with the *scutum* if you do not have it, and you can treat the *scutum* as a light object for the purposes of shield bash. When fighting with a one-handed weapon and shield, once per turn you may add 1d4 bludgeoning damage to a hit as a free shield bash (no bonus action cost).
+
+**Thraex** *(mobile, curved blade, reading the opponent)*: Requires DEX 13. When you move at least 10 feet before making a melee attack this turn, that attack deals +1d6 slashing damage. Enemies do not gain opportunity attacks against you when you disengage as a bonus action — you learned the exits and you use them on your terms.
+
+**Dimachaerus** *(two weapons, no shield, maximum attack rate)*: When fighting with two weapons, you may add your Strength or Dexterity modifier to your off-hand attack's damage roll (removing the standard penalty that prevents this). Additionally, once per turn when you land a hit with your main-hand weapon, you may make your off-hand attack without spending your bonus action. Your bonus action is free for other uses that turn.
+
+**Retiarius** *(net-and-trident, lightest armor, control fighter)*: Requires DEX 13. The *retiarius* fights almost naked by arena standards: you may not wear heavy armor while this style is active — medium armor maximum. When you throw the *rete* (net), you may make one additional weapon attack as part of the same attack action. Your attacks deal +1d6 piercing damage against restrained targets. When a restrained creature attempts to escape, you may use your reaction to make one melee attack against them.
+
+**Secutor** *(pursuit fighter, net-counter, relentless pressure)*: The *secutor* was built as the direct counter to the *retiarius* — smooth helmet that a net cannot snag, large shield, relentless forward movement. You cannot be restrained by mundane nets or entangling effects (smooth equipment, practiced shrug). When a creature moves away from you, you may use your reaction to move up to your speed toward them; this movement does not provoke opportunity attacks. When you move at least 10 feet toward a creature and then hit it, that attack deals +1d4 damage.
+
+**Hoplomachus** *(spear and buckler, reach control, counter-charge)*: Requires a reach weapon in your main hand. When wielding a reach weapon, you may make one opportunity attack when a creature *enters* your reach as well as when they leave it (standard rules). On a hit with your reach weapon, the target must succeed on a DC 12 Strength saving throw or be pushed 5 feet away from you. Once per turn, if you have not moved this turn, you may brace: the next creature that enters your reach makes that saving throw at disadvantage.
+
+**Provocator** *(heavy armor, challenger, absorber)*: The *provocator* was the heaviest-armored gladiator and the one most visibly designed to invite punishment and survive it. When wearing medium or heavy armor with a shield equipped, your AC improves by 1 (the full coverage leaves no obvious gap). When a creature attacks you and misses, you may use your reaction to make one melee attack against them. At the start of each of your turns while Raging, you gain temporary hit points equal to your Constitution modifier.
+
+**Perk 1 (all styles): *Spectaculum*** — Your combat style has been honed in front of crowds under stakes that were not theoretical. You have advantage on Intimidation checks made in combat or immediately after a combat encounter. NPCs who witnessed you fight treat their initial social interaction with you as one step more favorable than their base disposition.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Victor*** — Your reputation precedes you. Once per session, you may name a creature and declare it your quarry. Against your quarry: your attacks score a critical hit on a 19 or 20; your quarry cannot benefit from the Dodge action against your attacks; when your quarry drops to 0 hit points, each ally who witnessed the fight may immediately make one attack as a reaction. The kill carries them forward.
+
+</details>
+
+<details>
+<summary><strong>Branch B: *Pugil Extraordinarius* — Unit champion</strong></summary>
+
+
+**Perk 1: *Murus Carnis* ("Wall of Flesh")** — When an ally within 5 feet would be reduced to 0 hit points by a melee attack, you may use your reaction to step into the blow. The damage is redirected to you. If you are currently Raging, the redirected damage costs at most half your remaining hit points — the rage absorbs what would otherwise kill you. This ability cannot be used if you are incapacitated.
+
+**Specialis** (7 commendationes):
+
+
+**Perk 2: *Caput Exercitus* ("Head of the Army")** — *(locked: STR 18 required)*
+While you are conscious and visible to allies: they automatically succeed on morale saves against fear effects of CR 5 or lower. Once per long rest, when the unit fails a morale check or would rout, your presence reverses the outcome — no roll required. Allies who have seen you save them remember it; social interactions with those allies treat you as two ranks higher for the duration of the campaign.
+*Locked to STR 18: this authority is physical. It comes from what soldiers have watched you survive, not from anything you said.*
+
+</details>
 
 <details>
 <summary><strong>Class equipment substitutions</strong></summary>
