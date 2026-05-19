@@ -131,11 +131,11 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 
 **Spatha** (*spatha*)
 
-*Action:* Attack action. *Effect:* 1d6 slashing, versatile (1d8 two-handed), reach advantage on opportunity attacks when mounted. While mounted, you do not have disadvantage on melee attack rolls against unmounted targets of Medium size or smaller. *When:* Session 2 (road) and Session 5 (if cavalry-role players use mounts).
+*Action:* Attack action. *Effect:* 1d8 slashing. While mounted, reach extends to 10 ft and you deal +1d8 on the first attack after moving 10+ ft on horseback. Disadvantage on attack rolls while within 5 ft of two or more allies (the long blade is a liability in tight formation). *When:* Session 2 (road) and Session 5 (if cavalry-role players use mounts).
 
 **Hasta** (*hasta*)
 
-*Action:* Attack action. *Effect:* 1d6 piercing, reach, thrown (20/60). Unlike the pilum, the hasta is a reusable weapon: retrieve from a downed enemy or the ground as a free object interaction. *When:* Sessions 1-3; the hasta is the fallback when you've spent your pila.
+*Action:* Attack action. *Effect:* 1d8 piercing, reach (10 ft), two-handed. Not thrown. Brace: if you have not moved this turn, you may set vs. a charge; any creature that moves into your reach triggers an opportunity attack that deals double damage. Cannot move and attack in the same turn while braced. *When:* Sessions 1-3; the hasta is the fallback when you've spent your pila.
 
 **Dolabra** (*dolabra*)
 
@@ -263,7 +263,7 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 
 **Parma** (*parma*, Germanic round shield)
 
-*Action:* No action to equip. *Effect:* +1 AC (lighter, smaller). No Stealth penalty. When a Germanic NPC (Vercingetorix, Thusnelda, tribal warriors) sees you carrying a *parma*, they treat you as one reputation step more sympathetic (black market only, so this is the shield you arrive in the forest with if you planned ahead). *When:* Session 3 (Germanic forest chapters).
+*Action:* No action to equip. *Effect:* +2 AC. No Stealth penalty. When a Germanic NPC (Vercingetorix, Thusnelda, tribal warriors) sees you carrying a *parma*, they treat you as one reputation step more sympathetic (black market only, so this is the shield you arrive in the forest with if you planned ahead). *When:* Session 3 (Germanic forest chapters).
 
 **Siege Pavise**
 
@@ -288,11 +288,11 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 
 **Lorica Segmentata** (*lorica segmentata*)
 
-*Action:* 10 minutes to don (requires an assistant; 5 minutes alone). *Effect:* AC 17. Weight: 35 lbs (heavy armor). Imposes disadvantage on Stealth checks. Imposes -10 ft speed penalty on characters with Strength 13 or lower. Repair: requires smith's tools proficiency and 1 hour per damaged section; a character without proficiency can attempt DC 14 Dexterity check (failure means the repair holds but creaks, imposing disadvantage on Stealth for 24 hours until Rufus checks it). *Restriction:* Officer requisition required. *When:* Sessions 1, 2, 4, 5 (fort duty and siege; in the forest in Session 3 the weight and noise are serious liabilities).
+*Action:* 10 minutes to don (requires an assistant; 5 minutes alone). *Effect:* AC 17. Weight: 20 lbs (heavy armor). Imposes disadvantage on Stealth checks. Requires Strength 13 or higher. Swim disadvantage. Repair: requires smith's tools proficiency and 1 hour per damaged section; a character without proficiency can attempt DC 14 Dexterity check (failure means the repair holds but creaks, imposing disadvantage on Stealth for 24 hours until Rufus checks it). *Restriction:* Officer requisition required. *When:* Sessions 1, 2, 4, 5 (fort duty and siege; in the forest in Session 3 the weight and noise are serious liabilities).
 
 **Lorica Hamata** (*lorica hamata*, chainmail)
 
-*Action:* 5 minutes to don. *Effect:* AC 15. Weight: 28 lbs (heavy armor). Same Stealth disadvantage as all heavy armor. More flexible than the segmentata: no speed penalty for any Strength score, and can be repaired with basic leatherworking tools (patch rings with wire) in 30 minutes without a tool proficiency check for minor damage. *When:* All sessions; the workhorse armor.
+*Action:* 5 minutes to don. *Effect:* AC 14 + Dex modifier (max +2) (medium armor). Weight: 22 lbs. Stealth disadvantage. No minimum Strength requirement. Fire damage from area effects reduced by 2 (rings absorb heat). No swimming disadvantage (rings flex). Repaired with leatherworking tools in 30 minutes; no tool proficiency check required for minor damage. *When:* All sessions; the workhorse armor.
 
 **Lorica Squamata** (*lorica squamata*, scale)
 
@@ -300,7 +300,7 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 
 **Linothorax** (*linothorax*, layered linen)
 
-*Action:* 5 minutes to don. *Effect:* AC 13 + Dexterity modifier (max +2) (medium armor). Weight: 12 lbs. No Stealth disadvantage. No speed penalty. Damaged by water immersion: 4 hours submerged or heavy rain without oilskin covering reduces AC to 12 until dried and re-pressed (4 hours, no tools required). Order only. *When:* Sessions 3, 4 (the forest and river crossing favor lighter armor).
+*Action:* 5 minutes to don. *Effect:* AC 12 + Dexterity modifier (max +3) (light armor). Weight: 8 lbs. No Stealth disadvantage. No speed penalty. Fire vulnerability: on taking fire damage, DC 12 Dex save or armor ignites (1d4 fire per turn until extinguished). Damaged by water immersion: prolonged exposure reduces AC to 12 until dried (4 hours). Order only. *When:* Sessions 3, 4 (the forest and river crossing favor lighter armor).
 
 **Hide/Leather armor**
 

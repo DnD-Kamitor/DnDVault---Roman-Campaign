@@ -100,6 +100,7 @@ Any class can hold any role that meets its prerequisites. These notes highlight 
 | Flamen Martialis | Paladin, Cleric (War) | WIS 15, genuine devotion required; divine smite and channel divinity both fit |
 | Capsarius | Druid, Cleric (Life) | CON 12, Medicine; Life Cleric healing multiplier is very strong with field medic mechanic |
 | Custos Armorum | Fighter, Artificer | STR 12; broad martial proficiency and tool access fit naturally |
+| Foederatus | Barbarian, Fighter | STR 15; Rage directly powers the role mechanic; the most natural Barbarian home in the system |
 
 
 ## Universal Soldier Kit
@@ -131,7 +132,7 @@ Special cases: the *Haruspex* begins with 75 denarii (temple stipend front-loade
 
 ## Equipment at a Glance
 
-All 15 roles listed with their issued armor, shield, weapons, and starting pay. Full detail (weight, class substitutions, kit rationale) is in each role's entry below.
+All 16 roles listed with their issued armor, shield, weapons, and starting pay. Full detail (weight, class substitutions, kit rationale) is in each role's entry below.
 
 | Role | Armor | AC | Shield | Weapons | Distinctive | Pay |
 |---|---|---|---|---|---|---|
@@ -150,6 +151,7 @@ All 15 roles listed with their issued armor, shield, weapons, and starting pay. 
 | **Flamen Martialis** | Linothorax (red) | 12+Dex/+3 | None | Hasta (sacred spear) | Red paludamentum | 60d |
 | **Capsarius** | Linothorax | 12+Dex/+3 | None | Gladius, Pugio | Capsa (medical cylinder on back) | 50d |
 | **Custos Armorum** | Lorica Segmentata | 17 | Scutum | Gladius, Pugio | Armory keys, quality tools | 50d |
+| **Foederatus** | Lorica Squamata or none | 14+Dex/+2 or Unarmored | Personal | Bipennis, Francisca ×2–3, Framea, or Dolabra (choose kit) | Personal combat charter (*foedus*) | 60d |
 
 **Roles with no shield:** Aquilifer, Signifer, Cornicen, Medicus, Haruspex, Librarius, Explorator, Sacerdos, Flamen Martialis, Capsarius — the standard occupies both hands, the role requires constant arm freedom, or theological tradition forbids it.
 
@@ -2197,6 +2199,192 @@ What the iron was used for in the ruins below is not something you can determine
 </details>
 
 
+## Allied Forces
+
+Rome does not win its wars alone. Never has. The frontier is full of people who fight well and who are not Roman citizens, and the army has always found ways to use them. The *foederatus* is the oldest and most straightforward: a warrior bound to the legion by a personal treaty rather than a formal enlistment, fighting for agreed compensation under the authority of a specific commander.
+
+The *vexillatio extraordinaria* has one position of this type. It exists because some tasks require someone who is not subject to all the constraints of Roman military discipline, who can bring their own weapon and their own combat style, and who can be pointed at something and trusted to hit it hard. Corvinus recruited for this slot directly, outside the standard process.
+
+---
+
+### Foederatus (*Allied Warrior / Treaty Fighter*)
+
+**Pay:** *Sesquiplicarius*, 450 denarii/year (take-home approximately 300, minus rations and kit maintenance at a reduced rate reflecting the non-standard nature of the appointment)
+
+**Prerequisites:** Peregrinus or below — Roman citizenship disqualifies this role. A citizen fights as a legionary or auxiliary, not as a treaty ally; the distinction is legal and cannot be papered over. STR 15. Proficiency with martial weapons. Barbarian class or a background clearly indicating warrior-culture heritage (DM discretion for the latter). Recruited personally by the legate from outside the standard system.
+
+**Note:** You carry a *foedus*: a personal combat charter, one page, in Latin, signed by Corvinus and sealed with his office ring. It states that you fight under his authority on terms agreed separately from standard legionary service. You are attached to the unit; you are not enrolled in it. The document expires when Corvinus's command expires, which means it expires when he does. You know this.
+
+**NPC holder:** If no PC takes this role, it is held by Brennos, a Gaulish veteran fighter who spent eight years in arena circuits before a contract with the 20th Valeria Victrix brought him north. He is competent, unglamorous, and will be killed at the start of Session 2 if no PC fills the role beforehand — his death is the inciting event that makes the vacancy visible to Corvinus and creates the opening for the party to nominate a replacement.
+
+**Why this role exists:** There are things a trained legionary cannot do in a formed unit. A legionary is a line tool: expensive to train, expensive to replace, and most effective when used the way the training manual says to use them. What Corvinus needs for this particular unit is someone who can move to the front of a situation, hit it harder than the situation expects, and not stop. The Roman army has used allied warriors for this since before the Republic and is not embarrassed about it. The *foederatus* is not a legionary. Rome knows this and so do you.
+
+**Duties between sessions:** Maintain personal combat readiness; weapons in working order; available for any assignment that requires a direct physical answer. No administrative duties. No watch rotation unless you choose to volunteer. Optional role in prisoner handling and informal interrogation where a legionary's involvement would create a legal record that someone does not want to exist.
+
+**Mechanic:** When you enter Rage, each ally within 15 feet who can see or hear you gains advantage on their next attack roll before the start of your next turn. The battle-cry effect is real: the surge is audible and visible, and the soldiers around you respond to it before they have time to think. Once per session, you may issue a formal personal challenge (*provocatio*) to a single creature within 60 feet. The target must either accept single combat (stepping forward to engage you alone for the next minute, or until one combatant drops) or make a DC 14 Wisdom saving throw; on a failure it has disadvantage on attack rolls against creatures other than you until the challenge is resolved or one minute passes. Creatures that understand no language still respond to the *provocatio*: the challenge is physical and loud and leaves no ambiguity about what you want. Additionally, your *foedus* gives you limited legal latitude: once per session you may refuse a direct order from any officer below centurion rank without formal penalty. Produce the document; the officer backs down or takes it to the centurion, which creates a scene. The scene is a mechanic: it is information about who in the unit respects the *foedus* and who resents it.
+
+### Advancement
+
+**Standard** (0 commendationes): Battle-cry advantage aura on Rage entry (15 ft, allies who see or hear you). Once per session, *provocatio* (DC 14 Wisdom save or disadvantage against non-challenger targets for 1 minute). Once per session, invoke the *foedus* to refuse an order from a sub-centurion officer without formal penalty.
+
+
+**Veteranus** (3 commendationes): Choose one branch.
+
+#### Branch A: *Gladiator* — Arena-trained fighter
+
+You have arena history. Not necessarily as a slave — the majority of gladiators in the mid-second century were free volunteers who found the pay and the structure preferable to other options. What you have is training under conditions that distilled every combat decision down to what worked and what got you killed, with a crowd watching to see which.
+
+Choose a fighting style. The style is permanent once chosen and reflects the identity you built in the arena.
+
+**Murmillo** *(heavy, shield-forward, shield-breaker)*: You gain proficiency with the *scutum* if you do not have it, and you can treat the *scutum* as a light object for the purposes of shield bash. When fighting with a one-handed weapon and shield, once per turn you may add 1d4 bludgeoning damage to a hit as a free shield bash (no bonus action cost).
+
+**Thraex** *(mobile, curved blade, reading the opponent)*: Requires DEX 13. When you move at least 10 feet before making a melee attack this turn, that attack deals +1d6 slashing damage. Enemies do not gain opportunity attacks against you when you disengage as a bonus action — you learned the exits and you use them on your terms.
+
+**Dimachaerus** *(two weapons, no shield, maximum attack rate)*: When fighting with two weapons, you may add your Strength or Dexterity modifier to your off-hand attack's damage roll (removing the standard penalty that prevents this). Additionally, once per turn when you land a hit with your main-hand weapon, you may make your off-hand attack without spending your bonus action. Your bonus action is free for other uses that turn.
+
+**Perk 1 (all styles): *Spectaculum*** — Your combat style has been honed in front of crowds under stakes that were not theoretical. You have advantage on Intimidation checks made in combat or immediately after a combat encounter. NPCs who witnessed you fight treat their initial social interaction with you as one step more favorable than their base disposition.
+
+#### Branch B: *Pugil Extraordinarius* — Unit champion
+
+**Perk 1: *Murus Carnis* ("Wall of Flesh")** — When an ally within 5 feet would be reduced to 0 hit points by a melee attack, you may use your reaction to step into the blow. The damage is redirected to you. If you are currently Raging, the redirected damage costs at most half your remaining hit points — the rage absorbs what would otherwise kill you. This ability cannot be used if you are incapacitated.
+
+
+**Specialis** (7 commendationes): Perk 2 on your chosen branch.
+
+#### Branch A (continued): *Victor*
+
+**Perk 2: *Victor*** — Your reputation precedes you. Once per session, you may name a creature and declare it your quarry. Against your quarry: your attacks score a critical hit on a 19 or 20; your quarry cannot benefit from the Dodge action against your attacks; when your quarry drops to 0 hit points, each ally who witnessed the fight may immediately make one attack as a reaction. The kill carries them forward.
+
+#### Branch B (continued): *Caput Exercitus*
+
+**Perk 2: *Caput Exercitus* ("Head of the Army")** — *(locked: STR 18 required)*
+While you are conscious and visible to allies: they automatically succeed on morale saves against fear effects of CR 5 or lower. Once per long rest, when the unit fails a morale check or would rout, your presence reverses the outcome — no roll required. Allies who have seen you save them remember it; social interactions with those allies treat you as two ranks higher for the duration of the campaign.
+*Locked to STR 18: this authority is physical. It comes from what soldiers have watched you survive, not from anything you said.*
+
+**Starting Equipment**
+
+The *foederatus* does not come from the Roman equipment system. Their kit reflects where they came from, not where they arrived. Corvinus's office issues the minimum required to mark you as attached to the unit. Everything else you carry is yours.
+
+**Starting denarii:** 60 d
+
+- **Body:** *Lorica Squamata* (AC 14 + Dex modifier, max +2, 20 lb) — issued, formal, optional. If your Unarmored Defense gives you better AC than scale armor, the quartermaster takes the armor back and both of you sign a record noting it was offered and declined. This happens more often than the records suggest.
+- **Helmet:** *Galea Coolus* (AC +1, 5 lb) — issued. Most *foederati* on the frontier wear it; it does not require them to be Roman to function.
+- **Arms:** Nothing issued. You bring your own.
+- **Cloak:** *Sagum*, rough undyed wool (4 lb). The only issued item that marks you as unit-attached without stating your legal status. Soldiers will read it and understand what you are.
+- **Boots:** *Caligae*, standard (2 lb).
+- **Belt:** *Cingulum Militare* (2 lb), undecorated. No rank markings. You are not ranked in the Roman sense.
+- **Weapons — choose one primary kit at Session 0:**
+
+*Kit A — Germanic Warrior:* Three *franciscae* (throwing axes, 1d6 slashing each, thrown 15/30 ft, near-miss distraction effect, 3 lb each), one *framea* (versatile: 1d6 one-handed / 1d8 two-handed, piercing, thrown 20/60 ft, +1d4 on charge, 4 lb), one *seax* (1d6 slashing, finesse, 2 lb). A personal *parma* (Germanic round shield, AC +1, 6 lb) if carried from background — not issued by Rome.
+
+*Kit B — Shock Fighter:* One *bipennis* (double-headed battle axe, personal property, not issued: Martial weapon, 1d12 slashing, heavy, two-handed, 7 lb; no coin value — it came with you and you are not selling it), two *franciscae* (3 lb each). This is the great weapon option. The *bipennis* is not in the Roman arsenal, which is why you still have it.
+
+*Kit C — Brawler:* One *dolabra* (1d8 piercing, two-handed, double damage vs. structures and stone, 5 lb) + one *gladius* (1d6 piercing or slashing, finesse, 3 lb). Appropriate for a character who came through a work gang, mine labor, or frontier construction before this posting.
+
+**Note on the *falx*:** A *foederatus* carrying a *falx* (1d10 slashing, two-handed, bypasses shields — see roman_tactics.qmd) is operating under their combat charter. The legal risk property does not apply to this role: Corvinus's written authorization is the counter-argument, and every soldier who sees it knows it exists. Other soldiers will still look at the blade. That is their right.
+
+**Role kit weight (Kit B, with issued armor):** 46 lb (*lorica squamata* 20, helmet 5, cloak 4, boots 2, belt 2, *bipennis* 7, two *franciscae* 6) | **Without armor (Unarmored Defense):** 26 lb | **Full kit with universal issue and issued armor:** approximately 60 lb. At STR 15, carrying capacity is 225 lb; all configurations are comfortable.
+
+**Not issued:** No *pilum* — formation weapons are issued to soldiers who hold a position in the Roman line. No *lorica segmentata*. No staff of rank. You are not part of the formation; you are what happens when the formation needs something it cannot do.
+
+<details>
+<summary><strong>Class equipment substitutions</strong></summary>
+
+**Barbarian:** No substitution required. Unarmored Defense replaces issued *lorica squamata* if the AC calculation favors it; the issued armor goes to the quartermaster with a signed note. Any weapon kit above is usable without modification.
+
+**Fighter:** No substitution required. Retain full kit. A Fighter in this role came through mercenary work, arena service, or simply refused to enlist and found a commander willing to hire them on different terms.
+
+**Ranger:** Retain full kit unchanged for a melee-style build. For an archery build, replace *franciscae* with longbow and twenty arrows. The frontier instincts that make a Ranger effective apply to this role without friction.
+
+**Rogue:** Replace *lorica squamata* with studded leather. Kit C (*dolabra* + *gladius*) suits a Rogue whose background ran through labor, debt, or criminal circuits rather than the arena.
+
+**Paladin:** No substitution required. A Paladin *foederatus* operates under a divine calling that Rome neither endorses nor disputes — the practical effect of the calling is what matters to Corvinus, not its theological basis. Retain full kit.
+
+**Druid:** Replace issued armor with *linothorax* or no armor. Replace metal-hafted weapons with wooden staff or handaxe where the Druid restriction applies. Kit A with *framea* is the closest natural fit for a Druid who fights from heritage and obligation rather than arena history.
+
+**Wizard / Sorcerer / Warlock:** Replace all issued armor with robes or mage armor. Replace the physical weapon kit with arcane focus and dagger. A *foederatus* designation covers individuals Corvinus recruited for raw capability in any form, not only physical fighting. A war-sorcerer from beyond the frontier who treats every engagement as a personal contest between their power and whatever they are pointed at is exactly the kind of soldier this role was built to accommodate. The kit looks nothing like the options above; the role mechanics (*provocatio*, battle-cry on equivalent of "Rage" entry) adapt to ranged magical combat without modification — a sorcerer who announces their quarry and makes the air crackle is issuing the same challenge.
+
+</details>
+
+<details>
+<summary><strong>The Foederatus's Daily Reality</strong></summary>
+
+You are not a legionary. The Romans do not let you forget this — not through hostility in most cases, but through the constant small signals of a culture that has a slot for everything and put you in a slot labeled "useful, not ours." You eat at a different table in the sense that the roster has a different heading for your name. You stand at the end of the formation line in a position that is not quite where anyone else stands. When orders come down from the legate's office, yours come through Corvinus personally, not through the chain.
+
+What you have in exchange is latitude. You are not subject to all Roman military discipline in the same way a legionary is. The vine staff — the centurion's right to physically discipline soldiers without trial — does not legally extend to you in the same form. You can dispute some orders and contest others. The *foedus* specifies what you are required to do. Most of what it says is: fight well, do not steal from the unit, do not cause a legal incident that requires official documentation. The rest is between you and Corvinus.
+
+The other soldiers have formed opinions. Those opinions fall into one of two categories: respect, if they have seen you work; wariness, if they have not yet. A non-Roman warrior in a Roman unit carries the weight of every story Rome tells about the people beyond the frontier, and those stories run in both directions. You are either the reason the frontier holds or the reason Rome needs the wall. Which story applies to you is what you are here to demonstrate.
+
+The *provocatio* is not only a game mechanic. Issuing a personal challenge in Roman military culture is a recognized act. On the frontier it has a specific register: a soldier who calls out a named enemy before the engagement is doing something that the men around them will remember, discuss, and repeat. They will remember who answered the challenge and who did not. This kind of memory matters here.
+
+</details>
+
+<details>
+<summary><strong>Wild Magic Rage: The Roman Interpretation</strong></summary>
+
+*(DM-facing: use this section if the player's Barbarian subclass is Wild Magic)*
+
+Romans have a framework for what is happening when the Wild Magic surge fires. The framework is not correct in the arcane sense. It is, however, internally consistent and it shapes how every NPC in the unit responds to it.
+
+A Wild Magic Barbarian whose surges produce visible, unexplained effects reads, in the Roman worldview, as a vehicle for Mars. The battlefield frenzy is recognized: Roman soldiers have seen what happens when the god of war decides to move through someone directly. The uncontrolled escalation, the chromatic discharge, the magical aftermath — these are not the kind of thing a soldier produces through training. Something is acting through this person. Mars does not require the vessel's permission; the vessel is useful because of the god's attention, not despite it.
+
+This can be received as an asset or as a problem depending on the observer and the outcome.
+
+The *haruspex* will want to examine you after any visible surge. The examination is not hostile; it is procedural. They are reading the event for what the omens say happened — whether the surge represents divine favor (the unit benefited), a warning (the effect was ambiguous), or a rebuke (an ally was harmed or the situation worsened). The haruspex will ask specific questions: what were you thinking at the moment of onset, what did you feel in the seconds before, was there a sound or a smell that preceded it. They are building an interpretive record.
+
+The *Flamen Martialis*, if present, has a different read: the surge is Mars making a direct statement through a vessel Mars chose. The *Flamen*'s role is to interpret the message, not evaluate the vessel. A Wild Magic Barbarian attached to a unit with an active *Flamen Martialis* has an informal advisor for every surge that produces a significant effect. The advice will be theological. It will sometimes be useful.
+
+The other soldiers: most treat visible surges the way Roman soldiers have always treated things they cannot explain — a combination of personal distance, renewed attention to luck omens, and pragmatic tracking of outcomes. The soldier who was standing next to you when you surged and survived an encounter they expected to lose is now tracking whether survival correlates with proximity. The soldier who was standing next to you when the surge went sideways has drawn their own conclusion. Both of them are watching for the pattern, and neither of them is wrong to do so.
+
+</details>
+
+<details>
+<summary><strong>Citizenship, the *Foedus*, and the Advancement Track</strong></summary>
+
+The *foedus* is a bilateral agreement. You provide combat service; Corvinus provides pay, attached status, and the legal protection of fighting under Roman authority rather than as an individual actor in a legal grey area. You are not a citizen, not an enrolled auxiliary, not a mercenary in the informal sense. You are a treaty fighter, which has specific meaning in Roman law and specific consequences when someone tries to touch you through that law.
+
+The commendationes system applies to this role on the same terms as every other role. A *foederatus* who accumulates commendationes through demonstrated service has the standard path to citizenship elevation available. The *foedus* provides an additional mechanism: at each contract renewal (annually, or when Corvinus's command changes hands), a formal performance recommendation can be filed with the provincial governor. This recommendation carries slightly less institutional weight than a standard commendatio because it runs through a different administrative channel — but it is real, and it can be the foundation of a citizenship petition.
+
+A *foederatus* who earns citizenship has done something the frontier military communities will discuss for a long time. It is not unprecedented — Rome has been granting citizenship to allied warriors since the Social War — but it is notable enough that the story of how it happened matters to everyone who hears it. A citizen-from-service carries a credibility in frontier circles that a citizen-from-birth simply does not have.
+
+The question of whether to cross that line — to become Roman, legally and permanently — is a story question. The role system can accommodate both outcomes. A *foederatus* who remains a *foederatus* until the campaign ends is not failing to advance; they are making a choice about identity that the campaign is designed to put in front of them.
+
+</details>
+
+<details>
+<summary><strong>DC 13 Intelligence (History) — What foederati are and what Rome thinks of them</strong></summary>
+
+*Foederati* (singular: *foederatus*) are non-Roman allied warriors fighting under a personal treaty (*foedus*) rather than standard military enlistment. The distinction is legal: a *foederatus* does not swear the *sacramentum* (the military oath binding a soldier to the eagle), is not subject to the full weight of Roman military law, and is paid under a separate contract rather than from the standard military treasury.
+
+The Roman army has used allied warriors since before the Republic. Germanic cavalry *foederati* served under Caesar. At the time of this campaign (175 AD), a significant fraction of Rome's effective fighting strength on the northern frontier is non-citizen troops — auxiliary cohorts, allied cavalry, and treaty fighters. The empire cannot hold the frontier with citizens alone and has not been able to for a century.
+
+Most frontier soldiers have served alongside non-Romans long enough to have formed their opinions based on the specific person in front of them rather than their legal category. The *foederatus* who pulled someone out of a bad situation at the Milvian road outpost is a known quantity in that unit. Their legal status is a record-keeping matter, not a description of what they are.
+
+</details>
+
+<details>
+<summary><strong>DC 15 Wisdom (Insight) — Active: comparing what you were told against what this unit actually is</strong></summary>
+
+The unit configuration does not match a construction oversight posting. You have worked for enough different commanders to read a brief by what it omits. A construction team needs engineers, surveyors, a supply officer, and labor. This unit has a surgeon, a haruspex, a signalman, and a priest of Mars. It also has you — and you were not recruited for construction work. Corvinus told you there would be fighting. He did not say where.
+
+What Corvinus assembled is not a workforce. It is a problem-solving unit for a specific problem, staffed exactly as that problem requires and documented as something else. The gap between what the official paperwork says and what the people in the room can actually do is a gap you have seen before: it is how a commander protects himself from accountability for whatever he is about to ask them to do.
+
+You are not alarmed by this. You agreed to be pointed at something and trusted to handle it; the paperwork is Corvinus's concern. But you are aware that the contract you signed covers a narrower set of actions than what may actually be required, and if the situation exceeds those terms, the negotiation is between you and Corvinus personally — with no institutional backing on either side.
+
+</details>
+
+<details>
+<summary><strong>DC 17 Intelligence (Investigation) — Active: reading the specific legal structure of your foedus against what you have been asked to do since arrival</strong></summary>
+
+The *foedus* Corvinus gave you has an unusual clause on the third line. Most combat charters specify the theater of operations — a province, a road corridor, a named engagement. Yours does not. It specifies the unit: *vexillatio extraordinaria* under the authority of Legate Corvinus. Wherever the unit goes, the charter covers it.
+
+That is not standard drafting. A standard charter limits your liability geographically. This one limits it institutionally. If what happens on this posting goes wrong in a way that reaches a magistrate, the official record shows you were under orders from a named legate. That is a better legal position than most *foederati* get. It is also a better legal position than Corvinus would give you unless he expected you to do something that needs the cover.
+
+You have been in enough mercenary contracts to know what deniability looks like on paper. This is deniability drafted by someone who knows Roman law. Whatever Corvinus brought you here for, it is not the kind of thing he wants officially attributed to the legion. The *foedus* is protection for both of you, but the clause that protects you most also protects him from having to acknowledge what he asked you to do. You signed it anyway. The fight sounded interesting and the pay was right. But you know what you signed.
+
+</details>
+
+
 ## Role Vacancies and the Camp as Living Entity
 
 The *vexillatio extraordinaria* is a functioning military unit. Every role in it is filled, by a player character or by a named NPC, at all times. The camp does not stop functioning because the party is not watching; the morning *classicum* is sounded whether or not the players are present for it, the sick parade runs whether or not they attend, the watch rotations are set, the accounts are kept. The unit is not a backdrop. It is a world with its own momentum.
@@ -2232,6 +2420,7 @@ When a player character fills a role, they gain the access, contacts, and mechan
 | Flamen Martialis | Frontier cult Mars connection unmanaged; collective corruption track gains +1 at start of next session | Mars' attention becomes direct and unmediated; all corruption saves in subsequent sessions have their DC increased by 2 |
 | Capsarius | No field medical kit in combat; bonus-action stabilize unavailable; each unconscious PC makes DC 13 Constitution save or gains one exhaustion level | No immediate-care capability in the field; the first PC death in an engagement is final unless the medicus is personally present |
 | Custos Armorum | Armory unmonitored; DM secretly rolls: on 1-3 on 1d6 each session, an NPC removes something | A significant armory item disappears without trace; the unit discovers the deficit at the worst possible moment |
+| Foederatus | No shock-combat capability; hard encounters requiring a front-line breaker do not resolve cleanly; unit morale in high-casualty engagements drops by 1 step | The unit enters Session 4 without a front-line anchor for the Binding Chamber breach; the Wight encounter uses the degraded outcome (no *provocatio* available, no battle-cry to rally the line) |
 
 ### The Unit as Character
 
