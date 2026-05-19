@@ -60,15 +60,20 @@ HELMET_HEADS  = ["*Latin*", "English", "AC bonus", "Wt (lb)", "Cost (d)", "Cultu
 GEAR_COLS     = ["name_latin", "name_english", "slot", "weight_lb", "cost_d", "culture", "availability"]
 GEAR_HEADS    = ["*Latin*", "English", "Slot", "Wt (lb)", "Cost (d)", "Culture", "Avail."]
 
-melee   = [r for r in equip if r["category"] == "melee"]
-thrown  = [r for r in equip if r["category"] == "thrown"]
-ranged  = [r for r in equip if r["category"] == "ranged"]
-siege   = [r for r in equip if r["category"] == "siege"]
-ammo    = [r for r in equip if r["category"] == "ammo"]
-armor   = [r for r in equip if r["category"] == "body_armor"]
-shields = [r for r in equip if r["category"] == "shield"]
-helmets = [r for r in equip if r["category"] == "helmet"]
-gear    = [r for r in equip if r["category"] == "gear" and r.get("slot") != "helmet"]
+melee      = [r for r in equip if r["category"] == "melee"]
+thrown     = [r for r in equip if r["category"] == "thrown"]
+ranged     = [r for r in equip if r["category"] == "ranged"]
+siege      = [r for r in equip if r["category"] == "siege"]
+ammo       = [r for r in equip if r["category"] == "ammo"]
+armor      = [r for r in equip if r["category"] == "body_armor"]
+shields    = [r for r in equip if r["category"] == "shield"]
+helmets    = [r for r in equip if r["category"] == "helmet"]
+gear       = [r for r in equip if r["category"] == "gear" and r.get("slot") != "helmet"]
+commission = [r for r in equip if r["availability"] == "commission"]
+vicus      = [r for r in equip if r["availability"] == "vicus"]
+
+MARKET_COLS  = ["name_latin", "name_english", "cost_d", "special"]
+MARKET_HEADS = ["*Latin*", "English", "Cost (d)", "Mechanics"]
 
 write("ref_weapons_melee.md",   pipe_table(melee,           MELEE_COLS,   MELEE_HEADS))
 write("ref_weapons_thrown.md",  pipe_table(thrown,          RANGED_COLS,  RANGED_HEADS))
@@ -78,5 +83,7 @@ write("ref_armor.md",           pipe_table(armor,           ARMOR_COLS,   ARMOR_
 write("ref_shields.md",         pipe_table(shields,         SHIELD_COLS,  SHIELD_HEADS))
 write("ref_helmets.md",         pipe_table(helmets,         HELMET_COLS,  HELMET_HEADS))
 write("ref_gear.md",            pipe_table(gear,            GEAR_COLS,    GEAR_HEADS))
+write("ref_commission.md",      pipe_table(commission,      MARKET_COLS,  MARKET_HEADS))
+write("ref_vicus.md",           pipe_table(vicus,           MARKET_COLS,  MARKET_HEADS))
 
 print(f"Done — {len(list(OUT_DIR.glob('*.md')))} files in _generated/")
