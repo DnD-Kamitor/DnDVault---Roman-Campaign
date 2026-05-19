@@ -186,6 +186,8 @@ Corvinus's aide meets the party at the excavation shaft before they descend. He 
 
 The descent is 40 feet. Anyone carrying a torch will notice the flame leans downward in an unnatural draft. This is worth remarking on but has no mechanical effect: it simply feels wrong.
 
+Survival DC 11 (active: pausing at the shaft head and reading the rising air before descending): The draft is not random. It pulses slowly in and out, the way air moves through a space with more than one chamber. A frontier soldier or tracker who has entered collapsed structures or defensive tunnel works recognizes the pattern: the space below has at least two rooms with different pressure, and the seal on the deeper chamber was recently broken. The air carries a single smell that deepens below the cold mineral note: cedar. Dry storage. Something sealed deliberately, not collapsed.
+
 At the bottom of the ladder, before the passage begins, scratched into the clay wall at knee height where a man crouching would see it:
 
 > *Seven scratches in a vertical line. Then one diagonal line through all seven. A Roman numeral countdown to zero. Beside it, a single word in Latin: NOLITE.*
@@ -282,6 +284,7 @@ LEFT BRANCH   RIGHT BRANCH
 - Religion DC 14 (passive): This is a trophy hall, but not a Roman kind. In Germanic tradition, weapons and shields left in a sacred place belong to the war-god. This room is an offering.
 - Perception DC 11 (passive): The torch flame leans consistently toward the far archway. A draft from below pulls it -- directional, not random, and stronger as you move deeper.
 - Nature DC 12 (passive): The underground smell is wrong for dry stone. Cold, organic, faintly mineral. Bog water seeping through limestone. This floor has not been reliably dry for a long time.
+- Athletics DC 12 (active: lifting one shield from the wall to assess its combat state): The shield is lighter than it should be. The rim has been cut and the grip broken deliberately -- from the inside, through the straps. Not battle damage: a deliberate act with a blade, performed before the shield was hung. At least a quarter of the shields share this: intact faces, ruined grips. These were not spoils of war. A warrior who disables their own shield before offering it is not surrendering a trophy. They are ensuring these weapons cannot be turned against anyone.
 
 <details>
 <summary><strong>What you know about the shields</strong></summary>
@@ -394,6 +397,7 @@ No combat in this branch until the Binding Chamber.
 
 **Navigating the flooded section:**
 
+- Survival DC 12 (active: reading the waterline before entering): The water's surface shows a faint directional drift, a slow circulation driven by a seep from the eastern wall. The shallow path follows the eastern side: hugging the right wall drops the maximum depth from chest to shoulder. Characters who follow this route have advantage on the Athletics DC 11 stealth check.
 - Athletics DC 11 (active: wading through carefully without making noise): success means silent passage; failure means splashing that echoes.
 - Four **Shadows** lurk in the water. They are not aggressive by default: they are drawn to light and sound. Characters carrying torches draw them. Characters who extinguish light sources and move quietly (Stealth DC 14 group check) can pass without triggering combat.
 - If combat is triggered: Shadows (CR 1/2, 4 of them). They have advantage on attack rolls in dim light. The flooded gallery is dim light at best with torches. This fight is genuinely dangerous at Level 3: wading through knee-to-chest-deep water costs half movement, and Shadows drain Strength on a hit.
@@ -404,6 +408,8 @@ No combat in this branch until the Binding Chamber.
 At the far wall, propped against the stone half-submerged, is a Germanic warrior's body: preserved in the peat water for centuries. He is armored. He is not undead. He is simply preserved.
 
 Investigation DC 12 (active: examining the body): He was not killed by violence. He sat down, crossed his arms, and died deliberately. His equipment is intact. A *framea* (Germanic spear, full stats in roman_tactics.qmd) lies across his lap. A bone token hangs at his throat -- carved with OTHALAN, the same rune as the one in the hidden alcove.
+
+Perception DC 12 (active: reading the combat wear on the warrior's equipment before touching anything): The *framea* blade shows re-tempering marks: the edge was resharpened at least twice, the metalwork consistent with someone who used it regularly and maintained it carefully. His forearm wrappings carry impact-absorption wear from repeated heavy parrying against edged weapons. His foot posture -- preserved in death -- is weight on the back foot: controlled retreat and counter, not aggressive advance. This warrior fought, repeatedly, at close range against opponents using cutting weapons. He came to this posting at the height of his capability, not the end of it. Whatever brought him here was a choice, not a retreat.
 
 If a character takes the *framea*: it functions as a normal spear, but it is clearly Germanic craftsmanship. History DC 13 identifies it as pre-Roman Germanic work. Cassia will want to see it in Session 2.
 
@@ -475,6 +481,8 @@ The ghouls are beneath the rubble, dormant. They activate when the party is full
 
 Investigation DC 12 (active: searching beneath the stone benches): a clay vessel intact, containing carbonized grain and a small iron coin struck with a face that is clearly Mars but pre-Roman in style -- older than the empire. This is a ritual offering. The offering was being maintained actively until very recently. Someone has been feeding this place.
 
+Perception DC 11 (active: examining the chamber walls after combat): Three sections of the far wall show impact damage distinct from the cave-in rubble on the east side: deliberate strike marks at the height of a swinging weapon, clustered at the center, made by something fighting backward while retreating. The pattern is defensive, not predatory. Whatever created those marks was being pushed toward the far wall and striking out to maintain the center of the room. The marks predate the current expedition by decades. Something already fought here, badly, and won only by staying in the middle.
+
 <details>
 <summary><strong>What you know about the ritual offering</strong></summary>
 
@@ -513,6 +521,7 @@ Both branches converge here. This is the old Chamber of Chains, kept exactly as 
 
 - Investigation DC 12 (active: examining the chains or collars closely): The chains are old -- centuries old -- but the iron hasn't rusted. Something in the air down here preserves them.
 - Arcana DC 14 (passive): A faint divine aura clings to the chains. Whatever they held was something that required divine binding to contain.
+- Athletics DC 12 (active: physically testing chain tension by applying steady load): One chain at the center resists differently from the others. It does not hang slack: it carries steady tension from below the floor ring, the way a rope attached to a buried anchor feels when the anchor is pulling in a different direction. Not movement, constant resistance. The force is not mechanical -- no counterweight produces this pattern -- but it is real and it is straining. This chain is restraining something that is, right now, pulling against it.
 - Religion DC 16 (passive): The TIWAZ rune above a binding site has one meaning in Germanic tradition: this was a sacrifice of restraint. Not a prison. A gift to the war-god. Whatever was chained here was given willingly.
 - Acrobatics DC 11 (active: threading between the hanging chains without touching any): The chains hang in two ranks through the center of the passage. Brushing one sets it ringing -- a sound that carries far longer in this chamber than physics should allow.
 
@@ -747,6 +756,8 @@ The two Cultists are legionaries stationed near the excavation. They were expose
 
 The phrase: *"Mars aversus est. Mars aversus est."*
 
+Perception DC 11 (active: reading his fighting stance before initiative is called): The worker's weight is on his front foot and both gladii are held at mid-height with grips too tight for controlled fighting. He is fully committed to attack with no guard on his left side. A character who reads this and calls it out grants advantage on the first attack roll made against his left side (the attacker's right as they face him).
+
 The Berserker focuses exclusively on whoever carries the spear. If no one carries it, he attacks the closest party member and screams "WHERE IS IT -- GIVE IT TO ME -- IT'S MINE--"
 
 **The Cultists in this scene:**
@@ -891,6 +902,34 @@ Record each *commendatio* earned. Three total earns a character eligibility for 
 ### Skill Audit: Session 1
 
 **How to run these checks at the table:**
+
+*Survival DC 11 (active: reading the air draft at the shaft head):*
+
+A tracker or soldier who has entered defensive tunnels or collapsed structures reads this without being asked. Pulse pattern means two chambers with different pressure. Cedar smell means deliberate sealed storage, not collapse. If a player states this before descending: reward them with exactly that read. Do not ask for the roll first -- let them describe the action, then confirm success.
+
+*Athletics DC 12 (active: Shield Hall -- lifting a shield to test its combat state):*
+
+The player picks up a shield and handles it. On success: the grip has been cut from the inside. At least a quarter of the shields share this. Do not explain why. Let the player sit with the observation: these were decommissioned before they were offered. A warrior who breaks their own weapon before giving it away is not surrendering a trophy.
+
+*Survival DC 12 (active: Flooded Gallery -- reading the waterline before entering):*
+
+State the result directly: eastern wall is shallower. Characters who follow that path have advantage on the stealth Athletics check. Don't make this a mystery. A player who says "I check the water before wading" has done the smart thing. Reward it.
+
+*Perception DC 12 (active: preserved warrior -- reading combat wear before touching the body):*
+
+Let this run alongside Investigation. A player who says "I examine his equipment" should get both if they succeed on either: Investigation gives cause of death; Perception gives fighting history. The re-tempering marks and the foot posture are details that change how a soldier reads the room. He was not a sacrifice. He was a veteran who made a choice.
+
+*Athletics DC 12 (active: Binding Chamber -- testing chain tension by applying steady load):*
+
+This one only triggers if a player physically pushes or pulls on a chain. On success: one chain resists differently. Steady tension from below. The force is not mechanical. The chain is actively restraining something right now. Do not tell them what. Tell them the force is real and it is pulling downward and slightly toward the far passage.
+
+*Perception DC 11 (active: reading the Bone Chamber walls after combat):*
+
+A player who looks at the walls (not the benches) after the fight finds the impact marks. High on the far wall, weapon-strike height, clustered at center. Something defensive fought here long ago. Did not lose. Did not leave. This is ambient texture, but it lands differently on a fighter than on a historian. Let the martial characters have the room.
+
+*Perception DC 11 (active: reading the Berserker's stance before initiative):*
+
+A player who says they watch him before engaging. On success: front-heavy, no left guard. Call it out at the table: any character who targets his left side this round has advantage on the first attack. This rewards paying attention over just rolling initiative. The advantage is one round only -- he adapts.
 
 *Perception DC 11 (passive -- character with +1 or better Perception notices without rolling):*
 
