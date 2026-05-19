@@ -174,7 +174,9 @@ All 16 roles listed with their issued armor, shield, weapons, and starting pay. 
 
 **Mechanic:** Once per session, reroll one initiative (yours or an ally's, declared before or after the roll). As a bonus action, issue an order: one ally within 60 feet moves up to their speed without expending their reaction.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The optio commands from the rear of the formation: pushing stragglers forward, enforcing the line, and keeping the unit coherent when the centurion is engaged at the front. The distinctive equipment is the *hastile optioni* (the knobbed staff) rather than a *pilum*: it is the visible mark of the optio's authority and is used as much to prod soldiers back into position as to strike an enemy.
 
@@ -194,6 +196,8 @@ The optio commands from the rear of the formation: pushing stragglers forward, e
 
 **Not issued:** No *pilum* (the staff replaces it in formation). No two-handed weapon. The optio is a command role, not a spearhead; their kit reflects the management of the line, not the assault on it.
 
+
+</details>
 
 ### Advancement
 
@@ -312,7 +316,9 @@ If you spend a session paying attention to which soldiers have private conversat
 
 **Mechanic:** You always know the current day's password and the complete patrol schedule. You can create a false password (DC 14 Deception, detected on DC 15 Investigation by anyone who has seen the real one). You know which posts are currently manned and by whom.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The tesserarius moves through the fort at night: checking posts, delivering the password, reading what the sentries are doing without announcing themselves at distance. The kit is lighter and quieter than a front-line soldier's, optimized for movement in confined spaces and in the dark.
 
@@ -330,6 +336,8 @@ The tesserarius moves through the fort at night: checking posts, delivering the 
 
 **Not issued:** No *pilum* (range engagement inside a fort is not the watch officer's role). No heavy armor. The tesserarius is not the first line; they are the person who ensures the first line is where it should be.
 
+
+</details>
 
 ### Advancement
 
@@ -448,7 +456,9 @@ None of this is in the official record. You noted it in a separate document. The
 
 **Mechanic:** While you carry the eagle, all allies within 30 feet have advantage on saving throws against fear effects. If the eagle falls (you drop it or die while carrying it), all allies within 60 feet make a DC 16 Wisdom saving throw or become frightened for one minute. Once per session, invoking the eagle before a combat grants all allies a free bonus action on their first turn.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The aquilifer's kit is shaped by one constraint: one hand holds the eagle, always. In the field, both hands are not available for fighting. This eliminates shields and two-handed weapons from the role permanently. The compensation is that the most visible soldier in the unit wears the best armor the legion issues.
 
@@ -470,6 +480,8 @@ The aquilifer's kit is shaped by one constraint: one hand holds the eagle, alway
 
 **Note on the eagle:** The *aquila* is not personal equipment. It belongs to the legion. Its weight (approximately 15 lb for the gilded bronze assembly) is the bearer's burden in the field. When secured in the *principia*, it is guarded under separate protocol and is not the aquilifer's responsibility to stand watch over personally.
 
+
+</details>
 
 ### Advancement
 
@@ -594,7 +606,9 @@ You know the text. You know why Metellus was found dead without it having been s
 
 **Mechanic:** Access to the unit savings fund (currently 100 gp at campaign start). Drawing on the fund requires DC 14 Persuasion (a majority of the unit votes to authorize it) or DC 18 Deception (forging the ledger, detected on DC 16 Investigation by anyone who checks). The fund grows when the party completes supply missions or recovers assets.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The signifer carries the *signum* in one arm in the field: a pole standard topped with discs and decorations that rally the unit's sub-element. The arm holding the standard cannot simultaneously hold a shield, so the role trades one protection for another. The kit also reflects the banking duties: the signifer carries administrative tools that most soldiers never touch.
 
@@ -615,6 +629,8 @@ The signifer carries the *signum* in one arm in the field: a pole standard toppe
 
 **Note on the signum:** The *signum* belongs to the unit sub-element, not the signifer personally. Its weight (approximately 8 lb) is carried in the field. Between operations, the signifer is responsible for its safe storage or posting.
 
+
+</details>
 
 ### Advancement
 
@@ -733,7 +749,9 @@ The soldier in question does not know who owns his debt.
 
 **Mechanic:** As a bonus action in combat, signal a formation change: all allies within 60 feet who can hear you shift into or out of formation without expending movement or their reaction. Once per session, signal a false retreat (DC 15 Performance, opposed by enemy commander's Insight) to draw enemies out of position; on success, the enemy unit moves toward the apparent retreat for one round.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The cornicen's job requires breath, volume, and sustained physical output. The kit is lighter than any front-line role: heavy plate constricts the diaphragm and degrades the wind capacity the role depends on. The cornicen is not expected to anchor a shield wall; they are expected to stay mobile, stay visible, and stay audible through an engagement from first contact to withdrawal.
 
@@ -752,6 +770,8 @@ The cornicen's job requires breath, volume, and sustained physical output. The k
 
 **Note on the cornu:** The *cornu* belongs to the fort's supply. Its weight (approximately 6 lb for the curved bronze instrument) is carried on a shoulder strap. Active signaling requires both hands on the horn; during that time, the gladius is sheathed.
 
+
+</details>
 
 ### Advancement
 
@@ -877,7 +897,9 @@ Soldiers designated *immunes* are exempt from the fatigue duties that fill most 
 
 **Mechanic:** You can stabilize a dying creature using Medicine (no action cost, just the check, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + WIS modifier HP. You can identify poison, disease, or unusual wound cause with DC 13 Medicine and no additional resources.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The medicus does not fight if a better option exists, but they are fully authorized to defend themselves and their patients. The kit prioritizes medical capability over combat weight: the medicus is worth more alive and treating wounds than dead with a heavy shield.
 
@@ -896,6 +918,8 @@ The medicus does not fight if a better option exists, but they are fully authori
 
 **Not issued:** No shield (prevents the free arm movement required for most medical procedures). No *pilum*. No heavy armor. The absence of heavier equipment is not a statement about courage; it is a practical decision about what will be useful in the situations this role encounters.
 
+
+</details>
 
 ### Advancement
 
@@ -1016,7 +1040,9 @@ There is a treatment that slows the physical symptoms. It does not reverse the u
 
 **Mechanic:** Cast *Augury* once per day without a spell slot. Before a session's main conflict, perform a pre-session divination by rolling 1d20 and giving the DM the result (they use it to calibrate one encounter that session, without telling you which one or how). Once per session, declare an action *nefastus* (ritually forbidden today): all party members gain advantage on the first saving throw of the session, and the DM removes one of their encounter options for that session.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The haruspex is a religious specialist and an officer of the divination guild, not a combat role. The kit reflects this: ceremonial in character, administratively complete, built for a role that is present at military operations but not expected to anchor a shield wall.
 
@@ -1035,6 +1061,8 @@ The haruspex is a religious specialist and an officer of the divination guild, n
 
 **Not issued:** No shield; no *gladius*; no *pilum*; no thrown weapons; no heavy armor. A haruspex who needs to fight has already failed at their primary function, which is to tell the commander whether to fight, and when, and under what conditions.
 
+
+</details>
 
 ### Advancement
 
@@ -1157,7 +1185,9 @@ Paterculus, this fort's *haruspex*, has been filing them as ordinary bad omens. 
 
 **Mechanic:** Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses: DC 13 Investigation reveals a weak point in a wall, door, or structure. Once per session, improvise a piece of equipment (battering ram, caltrop field, burning pitch container) from available materials with a DC 14 Smith's Tools or Mason's Tools check.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The faber works with their hands: hammering, cutting, lifting, and assembling. The kit must protect without preventing full arm range of motion, and it must accommodate the tools that are always present alongside the weapons.
 
@@ -1177,6 +1207,8 @@ The faber works with their hands: hammering, cutting, lifting, and assembling. T
 
 **Not issued:** No *linothorax* (a fire hazard in forge work). No *paludamentum* (same reason: fabric near open flame is a liability). The faber's work environment means any item that catches sparks easily is an accident waiting to happen.
 
+
+</details>
 
 ### Advancement
 
@@ -1295,7 +1327,9 @@ Under siege conditions, with the vibration of artillery and the weight of reinfo
 
 **Mechanic:** Forge military documents (DC 14 Forgery, detected on DC 15 Investigation by anyone who examines them). Access incoming dispatch copies as a matter of routine: you know what Rome officially knows about this fort, including what has and has not been reported. Produce legally binding Latin documents on request.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The librarius spends most of their working time at a desk, but they are still a soldier and present at operations. The kit reflects someone who moves between the legate's office and the unit's positions, who handles documents in all weather, and who occasionally needs to observe things without attracting attention.
 
@@ -1314,6 +1348,8 @@ The librarius spends most of their working time at a desk, but they are still a 
 
 **Not issued:** No shield (document work requires free hands; a large oval shield becomes a liability when moving through doorways carrying materials). No heavy armor. No *pilum*. The librarius's protection against threats is primarily information: knowing what is coming before it arrives.
 
+
+</details>
 
 ### Advancement
 
@@ -1440,7 +1476,9 @@ A dispatch from Brutus arriving before the excavation yielded its primary findin
 
 **Mechanic:** Move at full speed without penalty in forest or wilderness terrain. Advantage on Perception checks in wilderness. Identify tracks and determine creature count, approximate size, and timing (DC 12 Survival, no tools required). Once per session, call on a border informant for one piece of local intelligence (DM provides, 1d4 hours wait time).
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The explorator operates beyond the fort perimeter, often alone or in pairs, for two to three days at a time. Every pound of kit is a calculation against speed and endurance. The explorator trades armor weight and shield coverage for the mobility that keeps them alive when they cannot fight their way out.
 
@@ -1459,6 +1497,8 @@ The explorator operates beyond the fort perimeter, often alone or in pairs, for 
 
 **Not issued:** No shield (impossible to move quietly through dense vegetation with a large oval shield; it also catches branches and announces position). No *pilum* (a patrol soldier cannot afford to throw their only polearm and leave it in an enemy who then retreats). No heavy armor. No *birrus* (the hood reduces peripheral vision in forest terrain, where the threats come from the sides and behind).
 
+
+</details>
 
 ### Advancement
 
@@ -1581,7 +1621,9 @@ For the past month, Thusnelda's scouts have maintained a position with line-of-s
 
 **Mechanic:** Request information from the *frumentarii* network across the empire (DM provides after 1d4 days, encrypted courier round-trip). Use a coded communication system that cannot be traced to the unit by normal Investigation. Once per session, make a DC 13 Insight check against any named NPC to determine whether they are filing independent reports to Rome outside the official dispatch system.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The frumentarius's cover is a supply officer. The kit must look like a supply officer's kit while permitting the role's actual function. It is the most deliberately unremarkable issue in the unit: nothing that distinguishes, nothing that signals anything beyond a competent mid-tier specialist doing administrative work.
 
@@ -1600,6 +1642,8 @@ The frumentarius's cover is a supply officer. The kit must look like a supply of
 
 **Not issued:** Nothing unusual. Deliberately. The frumentarius's kit is specifically designed to produce no observations.
 
+
+</details>
 
 ### Advancement
 
@@ -1741,7 +1785,9 @@ If Brutus knew what was in the ground before Corvinus did, the entire chain of e
 
 **Mechanic:** Allies who observe your morning rites before a session (player acknowledgment that their character participated) gain +1 to death saving throws for that session. You can perform last rites that prevent a dead NPC from rising as a Lemur (*Dishonored Rest* risk removed). Once per session, ask for a divine sign and receive a yes/no answer (DM determines based on current divine standing).
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The sacerdos is both a shrine keeper and a soldier. The kit is split between ceremonial requirements and combat readiness, with the expectation that ceremony is the daily reality and combat is the contingency.
 
@@ -1759,6 +1805,8 @@ The sacerdos is both a shrine keeper and a soldier. The kit is split between cer
 
 **Not issued:** No shield; no *gladius*; no *pilum*; no heavy armor. The sacerdos can requisition standard soldier kit from the armory if placed in combat conditions, but the default issue reflects the primary function of the role. A sacerdos in full *segmentata* conducting a burial rite is sending the wrong message to both the living and the dead.
 
+
+</details>
 
 ### Advancement
 
@@ -1883,7 +1931,9 @@ Two sets of offerings in the past month were not filed through the official chan
 
 **Mechanic:** Once per session, invoke Mars directly for +1d6 damage on one weapon attack or +1d6 on one saving throw (Mars notices: this adds 1 to the collective corruption track). You can perform the *devotio* as a special action (see Session 5 mechanics). Mars tells you directly, without a check, when he is actively present in a scene: the DM notifies this player privately.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The Flamen Martialis is technically a civilian religious appointment. They receive no military-issue kit. What they wear is personal property, purchased or provided through the legate's patronage, and it reflects the frontier cult of Mars Ultor rather than the civic legionary tradition.
 
@@ -1900,6 +1950,8 @@ The Flamen Martialis is technically a civilian religious appointment. They recei
 
 **Not issued:** No military-issue armor; no shield; no standard legionary weapons. The entire kit is personal property, and the deliberate rejection of standard military protection is a theological position, not an oversight.
 
+
+</details>
 
 ### Advancement
 
@@ -2028,7 +2080,9 @@ The spear in the vault below this fort is one of the three. The other two are ac
 
 **Mechanic:** Stabilize a dying creature as a bonus action (not a full action). Administer a potion to an unconscious ally as a bonus action. If no *medicus* is present in the party, you function as a basic field medic (Medicus mechanic at -1d6 on the healing roll).
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The capsarius runs toward casualties while the rest of the unit is still fighting. Speed and free hands matter more than any other consideration. The *capsa* (medical cylinder) is always carried; the combat kit is subordinate to it.
 
@@ -2048,6 +2102,8 @@ The capsarius runs toward casualties while the rest of the unit is still fightin
 
 **Not issued:** No shield (prevents the rapid position changes required when working over a casualty). No *pilum*. No heavy armor. The capsarius's protection is speed and the battlefield convention that killing the medic first is bad practice. Roman armies generally observe this. Germanic tribes are less consistent.
 
+
+</details>
 
 ### Advancement
 
@@ -2170,7 +2226,9 @@ The *medicus* does not know this yet. Valeria, the herb trader in the civilian s
 
 **Mechanic:** Hold a key to the armory (normally locked to non-officers). Know the complete current weapons and ammunition inventory. Identify a weapon's quality and condition by inspection (DC 11, no proficiency required). Once per session, locate a specific weapon type within the fort's supply chain in one hour (barring siege conditions).
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The custos armorum manages the armory and has access to the best-maintained equipment available to anyone in the fort. A weapons keeper who goes into combat in substandard gear is a standing joke in every garrison, and it does not happen.
 
@@ -2192,6 +2250,8 @@ The custos armorum manages the armory and has access to the best-maintained equi
 
 **Class substitution:** *Lorica Segmentata* requires heavy armor proficiency (Fighter, Paladin, War/Forge Cleric). Without it, substitute *Lorica Hamata*. The irony of a weapons keeper in substandard armor is noted in-world; a Ranger or Rogue custos armorum explains this with their preferred combat style, and the explanation is accepted.
 
+
+</details>
 
 ### Advancement
 
@@ -2328,7 +2388,9 @@ The *vexillatio extraordinaria* has one position of this type. It exists because
 
 **Mechanic:** When you enter Rage, each ally within 15 feet who can see or hear you gains advantage on their next attack roll before the start of your next turn. The battle-cry effect is real: the surge is audible and visible, and the soldiers around you respond to it before they have time to think. Once per session, you may issue a formal personal challenge (*provocatio*) to a single creature within 60 feet. The target must either accept single combat (stepping forward to engage you alone for the next minute, or until one combatant drops) or make a DC 14 Wisdom saving throw; on a failure it has disadvantage on attack rolls against creatures other than you until the challenge is resolved or one minute passes. Creatures that understand no language still respond to the *provocatio*: the challenge is physical and loud and leaves no ambiguity about what you want. Additionally, your *foedus* gives you limited legal latitude: once per session you may refuse a direct order from any officer below centurion rank without formal penalty. Produce the document; the officer backs down or takes it to the centurion, which creates a scene. The scene is a mechanic: it is information about who in the unit respects the *foedus* and who resents it.
 
-**Starting Equipment**
+<details>
+<summary><strong>Starting Equipment</strong></summary>
+
 
 The *foederatus* does not come from the Roman equipment system. Their kit reflects where they came from, not where they arrived. Corvinus's office issues the minimum required to mark you as attached to the unit. Everything else you carry is yours.
 
@@ -2354,6 +2416,8 @@ The *foederatus* does not come from the Roman equipment system. Their kit reflec
 
 **Not issued:** No *pilum* — formation weapons are issued to soldiers who hold a position in the Roman line. No *lorica segmentata*. No staff of rank. You are not part of the formation; you are what happens when the formation needs something it cannot do.
 
+
+</details>
 
 ### Advancement
 
