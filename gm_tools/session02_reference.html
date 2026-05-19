@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Session 2: The Tribune's Gambit — GM Reference</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 11px;
+    background: #f4f0e8;
+    color: #1a1208;
+    padding: 16px;
+  }
+  h1 {
+    font-size: 15px; font-weight: 800; letter-spacing: 0.05em;
+    color: #7a1a00; border-bottom: 2px solid #7a1a00;
+    padding-bottom: 4px; margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+    color: #7a1a00; text-transform: uppercase;
+    border-bottom: 1px solid #c8a060; margin: 10px 0 5px;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .col {}
+  .box {
+    background: white; border: 1px solid #c8a060;
+    border-left: 3px solid #7a1a00;
+    padding: 8px; margin-bottom: 8px; border-radius: 2px;
+  }
+  .box.warn { border-left-color: #c05000; background: #fff8f0; }
+  .box.secret { border-left-color: #404040; background: #f8f8f0; }
+  table { width: 100%; border-collapse: collapse; }
+  th { background: #7a1a00; color: white; padding: 3px 6px; font-size: 9.5px; text-align: left; }
+  td { padding: 2px 6px; border-bottom: 1px solid #e8d8b0; vertical-align: top; }
+  tr:nth-child(even) td { background: #fdf8ee; }
+  .dc { font-weight: 700; color: #7a1a00; white-space: nowrap; }
+  .npc-name { font-weight: 700; }
+  .secret-text { font-style: italic; color: #404040; }
+  .scene-list { list-style: none; counter-reset: scenes; }
+  .scene-list li { counter-increment: scenes; padding: 2px 0 2px 20px; position: relative; }
+  .scene-list li::before {
+    content: counter(scenes);
+    position: absolute; left: 0;
+    background: #7a1a00; color: white;
+    width: 14px; height: 14px; border-radius: 50%;
+    font-size: 9px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .tag {
+    display: inline-block; padding: 1px 5px; border-radius: 2px;
+    font-size: 9px; font-weight: 700; margin-right: 2px;
+  }
+  .tag-passive { background: #d0e8d0; color: #1a4a1a; }
+  .tag-active { background: #d0d8e8; color: #1a1a4a; }
+  .tag-key { background: #ffe0c0; color: #7a3000; }
+  @media print {
+    body { padding: 8px; font-size: 10px; }
+    .box { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<h1>Session 2: The Tribune's Gambit — GM Reference</h1>
+
+<div class="grid">
+<div class="col">
+
+  <h2>Scene Flow</h2>
+  <div class="box">
+    <ol class="scene-list">
+      <li><b>Cold Open</b> — Sentry Sextus found dead, throat cut, "ROMA CADIT" carved. Trumpet announces Tribune's arrival before investigation can begin.</li>
+      <li><b>Tribune Arrives (Scene 1)</b> — Lucius Valerius Maximus takes command via sealed Senate orders. Legate suspended; party "promoted" to Senate envoys.</li>
+      <li><b>Investigation Window (Scene 2)</b> — Several hours before departure. Party pursues Sextus murder, Tribune's true agenda, Cassia + Varro intelligence.</li>
+      <li><b>The Raid (Scene 3)</b> — That night, Vercingetorix leads Germanic assault on three sides. Praetorians protect the spear, not the walls.</li>
+      <li><b>Tribune's Move (Scene 4)</b> — After the raid: Tribune falsely accuses party of treason. Varro steps up. Decision point: expose, fight, negotiate, intimidate, or flee.</li>
+    </ol>
+  </div>
+
+  <h2>OGAS</h2>
+  <table>
+    <tr><th>NPC</th><th>Session Goal</th><th>Secret</th></tr>
+    <tr>
+      <td class="npc-name">Tribune Lucius</td>
+      <td>Get the spear destroyed without leaving Senate fingerprints</td>
+      <td class="secret-text">Not convinced destroying it is right; Cassia's arguments are getting through</td>
+    </tr>
+    <tr>
+      <td class="npc-name">Vercingetorix</td>
+      <td>Reach the spear — destroy it or return it to tribal custody</td>
+      <td class="secret-text">Watching this fort for weeks; knows more about the spear's history than any Roman</td>
+    </tr>
+    <tr>
+      <td class="npc-name">Legate Corvinus</td>
+      <td>Recover the spear before Rome takes it</td>
+      <td class="secret-text">Plotting privately; publicly compliant to Tribune</td>
+    </tr>
+    <tr>
+      <td class="npc-name">Centurion Varro</td>
+      <td>Protect the party whether they want it or not</td>
+      <td class="secret-text">Has posted six veterans near the spear storage; hasn't said why</td>
+    </tr>
+    <tr>
+      <td class="npc-name">Augur Cassia</td>
+      <td>Warn the party; senses something wrong with the Tribune's aura</td>
+      <td class="secret-text">Has had three new visions since the spear was retrieved; barely sleeping</td>
+    </tr>
+  </table>
+
+  <h2>Three Clue Rule: Tribune's True Agenda</h2>
+  <div class="box">
+    <b>Clue 1 — The Encoded Letter:</b> Stealth DC 13 or Deception DC 14 (Tribune's quarters) + Investigation DC 16 or Thieves' Tools DC 14 (dispatch box). Letter names "G.C.B." — Gaius Cassius Brutus — ordering "permanent removal."<br><br>
+    <b>Clue 2 — His Behaviour During the Raid:</b> Perception DC 14 or Insight DC 14 (watching Tribune specifically during alarm). Praetorians protect the spear, not the walls. Tribune pushes to accelerate departure after.<br><br>
+    <b>Clue 3 — Varro's Network:</b> Ask Varro directly (no check). "That Tribune was on the supply embezzlement commission six months ago. Guess who was embezzling." History DC 13 (passive) identifies "G.C.B." = Gaius Cassius Brutus.
+  </div>
+
+  <h2>Three Clue Rule: Sextus Murder</h2>
+  <div class="box">
+    <b>Clue 1 — The Wound:</b> Perception DC 11 (active: reading the body — he didn't turn; he knew his killer). Medicine DC 13 (active: one stroke, left-to-right, right-handed attacker shorter than Sextus).<br><br>
+    <b>Clue 2 — Boot Print:</b> Survival DC 12 (active: approach path came from inside fort, left toward stables). Investigation DC 14 (active: inside-heel wear pattern). Perception DC 15 (watching departure) to match Quintus Flavius' walk.<br><br>
+    <b>Clue 3 — Varro:</b> "Forty men knew that schedule." + "One man asked for transfer papers this morning. Fast. Quintus something. Twelve-year man." Does not pursue without proof.
+  </div>
+
+  <h2>Scene 4: Confrontation Options</h2>
+  <div class="box warn">
+    <b>Expose:</b> Produce decoded letter or evidence. Praetorians hesitate; Varro intervenes; Tribune trapped.<br>
+    <b>Fight:</b> Tribune + 6 Praetorians (CR 2 each). Win = fugitives from Rome.<br>
+    <b>Negotiate:</b> DC 16 Persuasion with clue in hand. Tribune offers private deal: "Help me destroy it my way and this goes away."<br>
+    <b>Intimidate:</b> DC 15 Intimidation (controlled demonstration of what the party has survived, stated calmly). Success: Praetorian hand-signal changes from "arrest" to "hold." Same deal offered from weaker position. 5 above DC: Praetorians disengage entirely.<br>
+    <b>Flee with Vercingetorix:</b> If treated with respect. Forest refuge; party becomes fugitives with Germanic ally.<br>
+    <b>Surrender spear:</b> Party confined to quarters. Session 3 starts as prisoners being transported to Rome.
+  </div>
+
+  <h2>Vercingetorix Trust Ladder</h2>
+  <div class="box secret">
+    <b>Persuasion DC 14</b> (acknowledge Germanic claim) = Low trust: "The spear has a name — 'the thing that should not exist.'"<br>
+    <b>Intimidation DC 14</b> (martial competence show, not threat) = Medium trust: Location of the grove, one day into Teutoburg Forest.<br>
+    <b>Persuasion DC 14 + treating as equal</b> = High trust: Grove requires a willing sacrifice; grandfather failed because sacrifice was unwilling.<br>
+    <b>Proved by action</b> = Complete trust: "I am dying. This is my last campaign. That is enough for me." Unlocks full ally Sessions 3–4.<br><br>
+    <b>Paths to earn respect:</b> Persuasion DC 14, Intimidation DC 14 (audacia), Insight DC 13 (reading assessment not surface conversation).
+  </div>
+
+</div>
+<div class="col">
+
+  <h2>DC Reference</h2>
+  <table>
+    <tr><th>Scene / Location</th><th>DC</th><th>Skill</th><th>Type</th><th>What they learn / what happens</th></tr>
+    <tr>
+      <td>Cold Open — Sextus' body</td>
+      <td class="dc">11</td>
+      <td>Perception</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Sextus facing the wall he watched; didn't turn toward the threat. He knew his killer.</td>
+    </tr>
+    <tr>
+      <td>Cold Open — Sextus' body</td>
+      <td class="dc">13</td>
+      <td>Medicine</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>One stroke, left-to-right. Right-handed attacker shorter than Sextus. No defensive wounds. Trained work.</td>
+    </tr>
+    <tr>
+      <td>Cold Open — ROMA CADIT carving</td>
+      <td class="dc">12</td>
+      <td>Survival</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Carver came from inside the fort, not the gate; left toward stables.</td>
+    </tr>
+    <tr>
+      <td>Cold Open — ROMA CADIT carving</td>
+      <td class="dc">14</td>
+      <td>Investigation</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Practiced hand, written fast, listening while carving. Military chisel wear. "Chipped edge" note.</td>
+    </tr>
+    <tr>
+      <td>Cold Open — ROMA CADIT carving</td>
+      <td class="dc">13</td>
+      <td>Arcana</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Angular runic carving technique — same as the spear. Not Roman cursive. Germanic inscriptional practice.</td>
+    </tr>
+    <tr>
+      <td>Tribune's arrival — departure watch</td>
+      <td class="dc">15</td>
+      <td>Perception</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Quintus Flavius walks with inside-heel wear pattern — matches the boot print. Left with Tribune's entourage.</td>
+    </tr>
+    <tr>
+      <td>Tribune — arrival formation</td>
+      <td class="dc">12</td>
+      <td>Perception</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Praetorian formation is strike-ready, not ceremonial. Hands on hilts. Tribune brought soldiers expecting to use them.</td>
+    </tr>
+    <tr>
+      <td>Tribune — formal invocations</td>
+      <td class="dc">13</td>
+      <td>Religion</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>He skips the traditional ward gesture. The oath is technically unsworn. He either doesn't know the form or chose not to bind himself.</td>
+    </tr>
+    <tr>
+      <td>Tribune's quarters — enter</td>
+      <td class="dc">13</td>
+      <td>Stealth</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Fail = confrontation; guard reports to Tribune within the hour.</td>
+    </tr>
+    <tr>
+      <td>Tribune's quarters — enter</td>
+      <td class="dc">14</td>
+      <td>Deception</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>"Security inventory." Success = 10 min unattended. Fail = guard watches party rest of session.</td>
+    </tr>
+    <tr>
+      <td>Tribune's quarters — dispatch box</td>
+      <td class="dc">16</td>
+      <td>Investigation</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Finds the locked dispatch box. Letter names "G.C.B." ordering artifact's "permanent removal."</td>
+    </tr>
+    <tr>
+      <td>Tribune's quarters — dispatch box</td>
+      <td class="dc">14</td>
+      <td>Thieves' Tools</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Opens the box directly. Same letter. Can attempt both: finding without opening is still a clue.</td>
+    </tr>
+    <tr>
+      <td>Tribune — sustained conversation</td>
+      <td class="dc">16</td>
+      <td>Insight</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Anxiety, not confidence. Performance covers something. 5 above: he reads from a script; hesitates before statements 4 and 7.</td>
+    </tr>
+    <tr>
+      <td>Tribune — confrontation with evidence</td>
+      <td class="dc">17</td>
+      <td>Persuasion</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Drops act slightly: "Hypothetically, some artifacts are more dangerous in Rome than outside it... I was sent to prevent that, not enable it."</td>
+    </tr>
+    <tr>
+      <td>Tribune — accusation (Scene 4 only)</td>
+      <td class="dc">14</td>
+      <td>Insight</td>
+      <td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td>
+      <td>He hesitates before "enemies of Rome." Eyes move to Varro. Not committed. Invoking this drops Scene 4 Persuasion DC from 17 to 14.</td>
+    </tr>
+    <tr>
+      <td>History — "G.C.B."</td>
+      <td class="dc">13</td>
+      <td>History</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Gaius Cassius Brutus. Republican rhetoric, frontier contracts. Destroying a divine weapon removes something the Emperor could use.</td>
+    </tr>
+    <tr>
+      <td>Scene 3 — Raid: before alarm</td>
+      <td class="dc">11</td>
+      <td>Nature</td>
+      <td><span class="tag tag-passive">passive</span></td>
+      <td>Birds near treeline silent 2 hours before attack. Coordinated advance. Planned in advance, not a response to Tribune's arrival.</td>
+    </tr>
+    <tr>
+      <td>Scene 3 — Raid: drum pattern</td>
+      <td class="dc">12</td>
+      <td>Survival</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Synchronized from three fixed positions. Staged from treeline for hours. Not a raid — a demonstration.</td>
+    </tr>
+    <tr>
+      <td>Scene 3 — Wall: ladder defense</td>
+      <td class="dc">12</td>
+      <td>Athletics</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Push back a scaling ladder. Two characters halve resistance. Miss by 3 or less: holds one more round.</td>
+    </tr>
+    <tr>
+      <td>Scene 3 — Wall: ballista route</td>
+      <td class="dc">11</td>
+      <td>Acrobatics</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Non-standard route. Success: reach ballista one round faster. Fail: reach it but spend bonus action recovering footing.</td>
+    </tr>
+    <tr>
+      <td>Scene 3 — Wall: hold soldiers</td>
+      <td class="dc">13</td>
+      <td>Persuasion / Intimidation / Performance</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Rally frightened soldiers at posts. DC 17: soldiers hold AND Flavus (19, first posting) names himself. Appears in Session 4 as escort volunteer.</td>
+    </tr>
+    <tr>
+      <td>Vercingetorix — battle approach</td>
+      <td class="dc">15</td>
+      <td>Persuasion</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>"Tell me why it matters to your people and I'll listen" — he stops fighting. Opens future alliance.</td>
+    </tr>
+    <tr>
+      <td>Vercingetorix — earning respect</td>
+      <td class="dc">14</td>
+      <td>Persuasion</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Acknowledging legitimate Germanic claim on the spear's history. Standard path to Low trust.</td>
+    </tr>
+    <tr>
+      <td>Vercingetorix — earning respect</td>
+      <td class="dc">14</td>
+      <td>Intimidation</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>Show of martial competence (fought him, chose not to kill). Jumps immediately to Medium trust.</td>
+    </tr>
+    <tr>
+      <td>Vercingetorix — reading him</td>
+      <td class="dc">13</td>
+      <td>Insight</td>
+      <td><span class="tag tag-active">active</span></td>
+      <td>He's assessing, not negotiating. Respond to the assessment rather than surface conversation. Jumps one trust level on first success.</td>
+    </tr>
+  </table>
+
+  <h2>Vacancy / State at Session Start</h2>
+  <div class="box warn">
+    <b>Aquilifer (Gaius Metellus) still vacant</b> from Session 1. Morale checks at Disadvantage until filled. The murder of Sextus is a morale pressure for any role with perimeter/patrol duties.
+    <br><br>
+    <b>Corruption carry-over:</b> Any character who touched the spear in Session 1 has dreams again. Before Scene 3, the player with the highest corruption level describes their dream to the table: the fort burning, comrades dead, themselves holding the spear. Don't make it mechanical yet. Make it felt.
+  </div>
+
+  <h2>Corruption — Session 2</h2>
+  <div class="box secret">
+    No new corruption events this session unless a character voluntarily touches or attunes to the spear. <span class="tag tag-key">Watch</span> for any player choosing to interact with the spear during the investigation window.
+    <br><br>
+    <b>Frumentarius trigger:</b> If the party identifies Quintus Flavius (the sleeper agent) and captures him or produces definitive proof to Varro, award Senior Frumentarius status immediately. If Flavius escapes identified but uncaptured, he surfaces in Session 4 as a potential contact to turn.
+  </div>
+
+  <h2>Commendationes This Session</h2>
+  <div class="box">
+    <b>1:</b> Coordinating fort defense during the raid with demonstrable leadership (rallying soldiers, holding a sector). Corvinus awards grudgingly.<br>
+    <b>2:</b> Exposing the Tribune's false accusation through physical evidence (decoded letter, boot print, Clue 3) — not argument alone. One <em>commendatio</em> to the character producing the decisive piece.<br>
+    <b>3:</b> Reaching Complete Trust with Vercingetorix. Not a standard <em>commendatio</em> — but he sends a runner to Corvinus establishing the party's word is good with his people.
+  </div>
+
+</div>
+</div>
+</body>
+</html>
