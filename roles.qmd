@@ -199,7 +199,7 @@ The optio commands from the rear of the formation: pushing stragglers forward, e
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Once per session, reroll one initiative (yours or an ally's). As a bonus action, issue an order moving one ally within 60 feet up to their speed.
 
@@ -328,6 +328,7 @@ The tesserarius moves through the fort at night: checking posts, delivering the 
 - **Helmet:** *Galea Attica*, open face (AC +1, 4 lb). The tesserarius needs to hear the post they are checking before they arrive at it. Closed cheek guards muffle the ambient sounds that indicate whether something is wrong.
 - **Shield:** *Scutum* (+2 AC, 10 lb). Carried in alert conditions; left at the duty station during routine night checks. Moving through the fort's narrow internal passages with a large oval shield creates more problems than it solves.
 - **Cloak:** *Sagum*, dark wool (4 lb). Advantage on Stealth checks in dim light is directly useful for a role that moves between lit checkpoints and unlit wall sections.
+- **Arms:** Padded leather finger-guards (0.5 lb). Night watch requires handling wax tablets, gate keys, and latch-pins in darkness and cold; the padded leather tips protect against numb-finger errors without reducing the tactile sensitivity needed to feel whether a door has been tampered with. When making a check by touch in dim light or darkness to determine if a lock, seal, or latch has been manipulated, you have advantage.
 - **Boots:** *Caligae* (2 lb). The hobnails create noise on stone floors; experienced tesserarii walk on the balls of their feet during sensitive checks.
 - **Belt:** *Cingulum Militare* with wax tablet and stylus attached (3 lb). The tablet for recording watch irregularities is on-person at all times during duty hours.
 - **Weapon:** *Gladius* (3 lb). The tesserarius's work is not usually combat. A single blade on the hip is the correct issue for a duty officer moving through a secured fort.
@@ -339,7 +340,7 @@ The tesserarius moves through the fort at night: checking posts, delivering the 
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Know the current day's password and full patrol schedule. Create a false password (DC 14 Deception). Know which posts are manned and by whom at all times.
 
@@ -483,7 +484,7 @@ The aquilifer's kit is shaped by one constraint: one hand holds the eagle, alway
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): While carrying the eagle, allies within 30 feet have advantage on fear saving throws. Once per session, invoke the eagle before combat to grant allies a free bonus action on their first turn.
 
@@ -632,7 +633,7 @@ The signifer carries the *signum* in one arm in the field: a pole standard toppe
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Access to the unit savings fund (100 gp at campaign start). Authorize withdrawals via DC 14 Persuasion or detect forgery via DC 16 Investigation.
 
@@ -760,6 +761,7 @@ The cornicen's job requires breath, volume, and sustained physical output. The k
 - **Body:** *Lorica Squamata* (AC 14 + Dexterity modifier, max +2, 20 lb). Scale armor provides solid protection without the breathing restriction of segmented plates. The absence of Stealth disadvantage is incidental but useful: a soldier who cannot be quiet when sounding a horn can still move quietly between signals.
 - **Helmet:** *Galea Attica*, open-face style (AC +1, 4 lb). The open face is not optional: the cornicen must place the horn to their mouth without removing the helmet, and closed cheek guards muffle the signal at the jawline. No *galea coolus* variant is issued for this role.
 - **Cloak:** *Sagum* (4 lb). Standard issue; the cornicen sounds reveille outdoors at dawn regardless of weather.
+- **Arms:** Padded wrist straps, wrapped linen (1 lb). The *cornu* is a heavy bronze instrument that must be held raised and extended for the duration of a signal: the sustained load on the wrist joint, repeated across years of daily use, produces a specific repetitive-strain injury that ends careers more reliably than enemy action. The straps brace the tendons through the range of motion the instrument requires. Once per long rest, when you would suffer one level of exhaustion from sustained exertion or environmental exposure, you ignore it.
 - **Boots:** *Caligae* (2 lb).
 - **Belt:** *Cingulum Militare* with horn maintenance kit (2 lb). The maintenance kit contains rosin, soft cloth, and a mouthpiece spare: the *cornu* must function in all weather conditions.
 - **Weapon:** *Gladius* (1d6, 3 lb). Carried on the right hip; drawn normally when not actively signaling. The cornicen fights as a standard soldier when the signal work is done.
@@ -773,7 +775,7 @@ The cornicen's job requires breath, volume, and sustained physical output. The k
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): As a bonus action, signal a formation change for all allies within 60 feet. Once per session, sound a false retreat (DC 15 Performance vs. enemy Insight).
 
@@ -907,7 +909,7 @@ The medicus does not fight if a better option exists, but they are fully authori
 
 - **Body:** *Lorica Hamata* (AC 14 + Dexterity modifier, max +2, 22 lb). Intermediate protection that does not restrict the fine motor work surgery requires: reaching into a wound demands full arm extension without plate articulation interfering. The chainmail flexes where the *segmentata*'s plates would catch.
 - **Helmet:** *Galea Attica*, open face (AC +1, 4 lb). Full verbal access to the patient and clear visual range in the close angles of a surgery tent. The open face also reduces disorientation when working at an awkward angle over a casualty.
-- **Arms:** None standard. Fine manipulation requires bare hands or thin cloth; gauntlets are worn only in cold weather and removed before any medical procedure.
+- **Arms:** Wrist-bound tourniquet cord (0 lb, always on-person) and thin wool liner gloves for cold-weather work only (0.5 lb, stored). The tourniquet cord is a flat braided leather loop pre-tied to the left wrist: it can be applied to any limb wound as a bonus action, stopping arterial bleeding without requiring a Medicine check or using the Healer's Kit. It is the one piece of equipment that has saved more soldiers than the medical training. The liner gloves are for working outdoors in sub-zero conditions and are removed before any surgery: gauntlets in a wound cavity produce outcomes the guild does not teach you to fix.
 - **Cloak:** *Sagum* (4 lb).
 - **Boots:** Standard military boots (3 lb). *Caligae* are too loud on the stone floors of the *valetudinarium* (the hospital building); enclosed boots allow quiet movement between patients.
 - **Belt:** *Cingulum Militare* (2 lb) with field medical satchel attached (3 lb). The satchel carries linen bandages, vinegar solution, bronze probes, pitch, and three doses of *theriac*. This is the immediate-response kit for field work; the full medical stores are in the *valetudinarium*.
@@ -921,7 +923,7 @@ The medicus does not fight if a better option exists, but they are fully authori
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Stabilize a dying creature with Medicine (no action cost, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + Wisdom modifier HP. Identify poison, disease, or wound cause at DC 13.
 
@@ -1052,6 +1054,7 @@ The haruspex is a religious specialist and an officer of the divination guild, n
 - **Helmet:** None standard. A *galea* is available from supply on request, but the divination ceremony requires an uncovered head for the formal prayers: most haruspices leave the helmet behind and accept the tradeoff.
 - **Cloak:** *Paludamentum*, white or undyed (3 lb). Worn during ceremonies only: the visually distinct cloak marks the officiating priest and is specified by the guild rites. In routine fort movement, the *sagum* is worn instead.
 - **Cloak (routine):** *Sagum* (4 lb). Daily wear; the *paludamentum* is reserved for official observances and formal divination sessions.
+- **Arms:** White linen divination gloves (0.5 lb). The *extispicy* guild specifies that the haruspex must handle the sacrificial organs with covered hands: this separates the reader's personal contamination from the animal's reading. Worn exclusively during the ceremony and stored in the priestly satchel afterward; visibly clean linen is part of what makes the omen credible to observers. When performing the full prescribed *extispicy* with a prepared sacrifice, you have advantage on the Religion check to determine whether the omen is genuine, ambiguous, or a deliberate falsification.
 - **Boots:** Standard military boots (3 lb). The divination ceremony involves standing at a fixed outdoor position for extended periods; *caligae* are appropriate for marching and combat, not for ceremonial standing.
 - **Belt:** *Cingulum Militare*, plain bronze fittings (2 lb) with priestly satchel (2 lb). The satchel carries the *libri haruspicini* reference tablets, incense (5 sticks), and the small ritual case containing a bronze liver model.
 - **Weapon:** *Pugio* (1 lb). The sacrificial knife and the haruspex's personal weapon are the same blade, kept clean and sharp to a standard well above military requirement. Carried at the right hip.
@@ -1064,7 +1067,7 @@ The haruspex is a religious specialist and an officer of the divination guild, n
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Cast *Augury* once per day without a spell slot. Pre-session divination roll calibrates one encounter. Once per session, declare an action *nefastus* for party advantage on the first saving throw of the session.
 
@@ -1210,7 +1213,7 @@ The faber works with their hands: hammering, cutting, lifting, and assembling. T
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses at DC 13 Investigation. Once per session, improvise a piece of equipment from available materials (DC 14 Smith's or Mason's Tools).
 
@@ -1351,7 +1354,7 @@ The librarius spends most of their working time at a desk, but they are still a 
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Forge military documents (DC 14, detected on DC 15). Routine access to incoming dispatch copies. Produce legally binding Latin documents on request.
 
@@ -1486,7 +1489,7 @@ The explorator operates beyond the fort perimeter, often alone or in pairs, for 
 
 - **Body:** *Lorica Squamata* (AC 14 + Dexterity modifier, max +2, 20 lb). Minimum viable protection for the role's threat environment. Reconnaissance work sometimes becomes combat at short range with no warning; the explorator needs real armor, not nothing. Scale armor provides this without the weight and noise of heavier plate.
 - **Helmet:** *Galea Attica*, open face (AC +1, 4 lb). Peripheral vision and hearing are primary survival tools for a scout. Closed cheek guards degrade both. A scout who cannot hear movement in forest terrain before it becomes contact is a scout in the wrong job.
-- **Arms:** None standard. Gauntlets reduce sensitivity for climbing, rope work, and reading tracks in earth: the fine distinction between fresh and old disturbance in soil requires bare fingertips.
+- **Arms:** Fingerless leather palm-guards (0.5 lb), personally purchased; not issued. They protect the heel of the hand during rope descent and climbing without covering the fingertips. Most exploratores buy them after their first bad rope burn rather than before. When making Athletics checks to climb or descend by rope, you have advantage. Reading tracks, testing soil temperature, and distinguishing fresh from old disturbance in earth all still require bare fingers: this is why every explorator cuts the tips.
 - **Cloak:** *Sagum*, dark wool (4 lb). Advantage on Stealth checks in dim light is directly relevant: the explorator moves primarily at dawn and dusk to reduce silhouette exposure. The wool also provides weather resistance for overnight patrol stays.
 - **Boots:** Standard military boots (3 lb). This is the only role issued standard military boots rather than *caligae* as default. The quartermaster's rationale is documented: hobnails on hard-packed earth or stone produce sound that carries at night and in forest, and the boot's track pattern identifies the wearer as Roman to any experienced tracker.
 - **Belt:** *Cingulum Militare* (2 lb) with field pack (2 lb): fire starter, spare bowstring, cord, and one smoke signal token. Rations are from the universal kit.
@@ -1500,7 +1503,7 @@ The explorator operates beyond the fort perimeter, often alone or in pairs, for 
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Move at full speed without penalty in forest or wilderness. Advantage on Perception in wilderness. Track creatures (DC 12 Survival). Once per session, call on a border informant for local intelligence (1d4 hour wait).
 
@@ -1633,6 +1636,7 @@ The frumentarius's cover is a supply officer. The kit must look like a supply of
 - **Helmet:** *Galea Coolus* (AC +1, 5 lb). Standard issue, unmodified, undistinguished.
 - **Shield:** *Scutum* (+2 AC, 10 lb). Carried on duty. When conducting intelligence work in civilian areas, the shield stays at the fort: a soldier carrying a full *scutum* while visiting the *vicus* is unusual and noticed.
 - **Cloak:** *Sagum* or *birrus*, selected based on context (4 or 5 lb). The *birrus* hood-up in a civilian setting is normal civilian behavior. The *sagum* in military context is standard. Both are available; the frumentarius chooses based on what they need to blend into.
+- **Arms:** Civilian work gloves, rough undyed wool (1 lb). Deliberately indistinguishable from what any laborer, trader, or frontier farmer wears. No military markings; no insignia; no rank. When conducting intelligence work in the *vicus* or civilian settlements out of uniform, they make your hands look like someone else's. Worn off-duty or when working cover; stored when in uniform. A soldier who sees you wearing these while in military kit and asks about it has already noticed more than they should.
 - **Boots:** *Caligae* (2 lb). Standard legionary boot; no exception here.
 - **Belt:** *Cingulum Militare* (2 lb) with supply manifest case (1 lb). The coded communication materials are embedded in the supply manifest case; they appear to be routine administrative tools to anyone who does not know the cipher.
 - **Weapons:** *Gladius* (3 lb) + *Pugio* (1 lb). Standard. No modifications, nothing distinctive.
@@ -1645,7 +1649,7 @@ The frumentarius's cover is a supply officer. The kit must look like a supply of
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Request information from the *frumentarii* network (1d4 day delay). Coded communication untraceable by normal Investigation. Once per session, DC 13 Insight to detect NPCs filing independent reports to Rome.
 
@@ -1797,6 +1801,7 @@ The sacerdos is both a shrine keeper and a soldier. The kit is split between cer
 - **Helmet:** *Galea Coolus* (AC +1, 5 lb). Standard issue; not worn during active ceremony (the head must be uncovered for most Roman rites) but available for combat conditions.
 - **Cloak (ceremony):** *Paludamentum*, white or undyed (3 lb). Worn during official observances only: the visually distinct cloak marks the officiating priest and is specified by the formal rite.
 - **Cloak (routine):** *Sagum* (4 lb). Daily wear; the *paludamentum* is reserved for ceremony. Both are in the sacerdos's kit.
+- **Arms:** White linen ritual gloves (0.5 lb). Roman rite specifies that offerings, sacred vessels, and the shrine's consecrated objects must not be touched with bare skin by the officiating priest. Without them, a ceremony is technically invalid and must be repeated: this is not theological pedantry, it is the legal basis on which the rite produces its effect. Worn during morning observance and formal sacrifice; stored in the priestly kit otherwise. When officiating a Roman military rite correctly (Religion DC 12), you have advantage on the check.
 - **Boots:** Standard military boots (3 lb). The shrine floor is swept stone; *caligae* leave marks and their click is inappropriate during the quiet portions of the morning rite.
 - **Belt:** *Cingulum Militare* (2 lb) with priestly kit attached (2 lb): incense pouch (5 sticks), small bronze sacrificial knife, two small clay offering vessels, and a wax tablet for recording the daily omen log.
 - **Weapon:** *Pugio* (1 lb). The sacrificial knife and the defensive blade are the same instrument, kept clean and dedicated. Carried at the right hip.
@@ -1808,7 +1813,7 @@ The sacerdos is both a shrine keeper and a soldier. The kit is split between cer
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Allies who observe morning rites gain +1 to death saving throws for the session. Last rites prevent NPC undead rising. Once per session, request a divine sign (yes/no answer).
 
@@ -1942,6 +1947,7 @@ The Flamen Martialis is technically a civilian religious appointment. They recei
 - **Body:** *Linothorax*, dyed red (AC 12 + Dexterity modifier, max +3, 8 lb). Red linen is the Mars cult vestment color, and the *linothorax* is the oldest Roman legionary armor tradition: worn before the iron age of Roman warfare, associated with Mars as a deity of boundaries and blood. It burns, which is a known limitation that wearers in this cult have accepted for generations as part of the bargain.
 - **Helmet:** None during ceremony. In active combat, any available helmet may be used; there is no assigned military issue. The Flamen can request a *galea* from supply; most choose not to, on the same logic as the *haruspex*.
 - **Cloak:** *Paludamentum*, deep red (3 lb). Not a rank claim: in the frontier Mars cult, the red commander's cloak is the officiating *Flamen*'s vestment during ceremony and is permitted in combat under cult doctrine.
+- **Arms:** Iron dedication bands, *armillae Martis* (2 lb). Forged iron arm-rings worn on both forearms, dedicated to Mars at the moment of formal induction into the Flaminate. Not armor; not weapons. Iron rather than bronze because Mars is a god of iron and of the things iron does. When the arm-rings are visible — in combat, in ceremony, in any encounter where a person can see your forearms — soldiers who have made offerings to Mars this campaign treat their initial interaction with you as one step more favorable. Cult initiates recognize the rings immediately and do not need to be told what they mean. The rings leave faint pressure marks on the forearms from extended wear; experienced observers who know the Flaminate can read those marks even when the rings are not visible.
 - **Boots:** Standard military boots (3 lb). Personal purchase, not military issue; a frontier *Flamen* wears what they can maintain.
 - **Belt:** Personal, not military-issue. A belt is worn for weapon carriage but its decoration and fittings are the priest's own choices.
 - **Weapon:** *Hasta* (1d8 piercing, reach, two-handed, 6 lb). The *hasta* is the sacred weapon of Mars: the oldest *ancile* ceremonies involve the spear, not the sword, and the DC 17 knowledge gate explains why carrying one matters specifically to this role. It is both weapon and symbol; the Flamen Martialis does not carry a standard gladius.
@@ -1953,7 +1959,7 @@ The Flamen Martialis is technically a civilian religious appointment. They recei
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Once per session, invoke Mars for +1d6 damage or saving throw (adds 1 to collective corruption). Perform *devotio* as a special action. Mars notifies you privately when he is actively present.
 
@@ -2090,10 +2096,10 @@ The capsarius runs toward casualties while the rest of the unit is still fightin
 
 - **Body:** *Linothorax* (AC 12 + Dexterity modifier, max +3, 8 lb). The lightest viable armor: the capsarius needs to close distance to a casualty quickly, work over them without body armor interfering with arm position, then move to the next. Heavier armor makes all three slower. A capsarius armored enough to survive a direct hit but too slow to reach the casualty in time has failed.
 - **Helmet:** *Galea Attica*, open face (AC +1, 4 lb). Hearing the field clearly is a survival tool: the capsarius is often working behind the main line, locating the most salvageable casualties partly by the sounds they make.
-- **Arms:** None standard. Fine manipulation for wound care requires bare hands or thin cloth; gauntlets are worn only in cold weather.
+- **Arms:** Linen forearm wraps (0.5 lb). Kept in the *capsa* and tied on before working in contaminated conditions: infected wounds, disease cases, bog water casualties. They take thirty seconds to put on and thirty seconds to burn after. They do nothing for combat. They have kept more capsarii alive than any armor the role could theoretically carry. When treating a casualty with an active infection or contagion, you have advantage on the Medicine check to avoid contracting it yourself.
 - **Cloak:** *Sagum* (4 lb). Doubled over, the heavy wool functions as a stretcher for moving a single casualty with a second person's help: a use that has saved more lives than its weather resistance.
 - **Boots:** *Caligae* (2 lb). Speed on natural terrain is essential; the grip advantage on wet ground is the directly relevant property for a soldier running across a field after rain.
-- **Belt:** *Cingulum Militare* (2 lb).
+- **Belt:** *Cingulum Militare* (2 lb) with tourniquet braid and bone needle roll attached (0.5 lb). The tourniquet braid is a flat leather loop pre-tied to the belt: applied as a bonus action to any limb wound to halt arterial bleeding without a Medicine check. The bone needle roll holds three suture needles threaded with waxed linen; it enables field closure on a wound that a bandage alone cannot seal.
 - **Weapon:** *Gladius* (3 lb). A single sidearm; the capsarius does not fight if they can avoid it.
 - **Distinctive:** The *capsa* (4 lb, fully stocked). The leather cylinder carried on the back or over one shoulder contains the immediate care supplies: linen bandage strips, vinegar solution, pitch for deep wounds, a bronze probe, and three doses of *theriac*. This is the role-defining piece of equipment. A soldier who has been hit and sees the *capsa* knows help is coming.
 - **Medical kit:** Healer's Kit (3 uses, included in capsa above) + Herbalist Kit (dried plant stock, mortar, pestle; 3 lb). The herbalist kit is separate from the capsa and carried on the belt or in a small pouch. It enables the bog rosemary preparation and other plant-based treatments that the capsa alone does not cover.
@@ -2105,7 +2111,7 @@ The capsarius runs toward casualties while the rest of the unit is still fightin
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Stabilize a dying creature as a bonus action. Administer a potion to an unconscious ally as a bonus action. Function as a basic field medic when no *medicus* is present (Medicus healing at -1d6).
 
@@ -2253,7 +2259,7 @@ The custos armorum manages the armory and has access to the best-maintained equi
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Hold the armory key. Know the complete weapons and ammunition inventory. Identify weapon quality and condition (DC 11). Once per session, locate a specific weapon type within one hour.
 
@@ -2398,7 +2404,7 @@ The *foederatus* does not come from the Roman equipment system. Their kit reflec
 
 - **Body:** *Lorica Squamata* (AC 14 + Dex modifier, max +2, 20 lb) — issued, formal, optional. If your Unarmored Defense gives you better AC than scale armor, the quartermaster takes the armor back and both of you sign a record noting it was offered and declined. This happens more often than the records suggest.
 - **Helmet:** *Galea Coolus* (AC +1, 5 lb) — issued. Most *foederati* on the frontier wear it; it does not require them to be Roman to function.
-- **Arms:** Nothing issued. You bring your own.
+- **Arms:** Nothing issued by Rome. Most *foederati* from Germanic or Gallic backgrounds arrive with personal bracers or wrist wraps made in their home tradition (1–2 lb, no AC bonus): leather cord-wrapped, carved bone plates, or hammered iron rings depending on origin. These are private property; the quartermaster does not record them. Kit A characters often carry wrist wraps that double as grip insurance on the *framea* shaft. Kit B characters with the *bipennis* benefit from forearm leather that absorbs handle-vibration on heavy strikes. Kit C characters typically carry nothing — the *dolabra* requires wrist freedom, not protection. Whatever you bring, it will be the first thing the unit's soldiers notice about your kit, and they will draw conclusions from it.
 - **Cloak:** *Sagum*, rough undyed wool (4 lb). The only issued item that marks you as unit-attached without stating your legal status. Soldiers will read it and understand what you are.
 - **Boots:** *Caligae*, standard (2 lb).
 - **Belt:** *Cingulum Militare* (2 lb), undecorated. No rank markings. You are not ranked in the Roman sense.
@@ -2419,7 +2425,7 @@ The *foederatus* does not come from the Roman equipment system. Their kit reflec
 
 </details>
 
-### Advancement
+**Advancement**
 
 **Standard** (0 commendationes): Battle-cry advantage aura on Rage entry (15 ft, allies who see or hear you). Once per session, *provocatio* (DC 14 Wisdom save or disadvantage against non-challenger targets for 1 minute). Once per session, invoke the *foedus* to refuse an order from a sub-centurion officer without formal penalty.
 
