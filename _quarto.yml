@@ -1,6 +1,7 @@
 project:
   type: book
   output-dir: _book
+  pre-render: python3 scripts/build_tables.py
 
 book:
   title: "The Shadow of Mars"

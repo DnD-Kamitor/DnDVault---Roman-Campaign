@@ -102,21 +102,7 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 
 #### Melee Weapons
 
-| Weapon | Price (d) | Availability | Notes |
-|---|---|---|---|
-| *Gladius*, standard | 20 | In stock | Armory or purchase; basic grade |
-| *Gladius*, quality (Rufus-made) | 30 | Limited (4) | Better edge retention; Rufus's personal work |
-| *Pugio* (military dagger) | 10 | In stock | Standard issue; can be requisitioned |
-| *Spatha* (cavalry sword) | 25 | Limited (8) | Cavalry auxiliary issue; 8 in stock |
-| *Hasta* (infantry spear) | 4 | In stock | Auxiliary supply; 20+ in armory |
-| *Dolabra* (military pick) | 6 | In stock | Required equipment; every legionary should carry one |
-| *Vitis* (vine staff) | 1 | Crafted | Rufus cuts to order; centurion rank required to carry |
-| *Fustis* (wooden club) | Free | Crafted | Any timber; woodpile at the *fabrica* |
-| *Contus/Kontos* (heavy lance) | 45 | Order | Heavy cavalry weapon; none in current stock |
-| *Falx* (Dacian blade) | 15 | Black market | Illegal without written authorization |
-| Net (*Rete*) | 2 | Order | Not standard issue; gladiatorial supply via Carnuntum |
-| *Framea* (Germanic spear-javelin) | 4 | Black market | Sigrun trades these; captured stock |
-| *Seax* (Germanic blade) | 8 | Black market | Captured or traded; no official source |
+{{< include _generated/ref_weapons_melee.md >}}
 
 ::: {.callout-note appearance="minimal" collapse="true"}
 ## Melee weapon mechanics
@@ -243,12 +229,7 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 
 ### Shields
 
-| Shield | Price (d) | Availability | Notes |
-|---|---|---|---|
-| *Scutum* (legionary tower shield) | 10 | In stock (22) | 22 serviceable; 6 awaiting repair |
-| *Clipeus* (auxiliary round shield) | 7 | Limited (15) | Cavalry issue; 15 in stock |
-| *Parma* (Germanic round shield) | 5 | Black market | Captured or traded; not official issue |
-| Siege Pavise | 5 | Crafted | Rufus builds from timber in 2 hours; no parts order required |
+{{< include _generated/ref_shields.md >}}
 
 ::: {.callout-note appearance="minimal" collapse="true"}
 ## Shield mechanics
@@ -275,13 +256,7 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 
 #### Body Armor
 
-| Armor | Price (d) | Availability | Notes |
-|---|---|---|---|
-| *Lorica Segmentata* | 60 | Limited (12) | 12 complete sets; 8 in repair. Officer requisition required |
-| *Lorica Hamata* (chainmail) | 30 | In stock | Most common auxiliary armor; 30+ sets in various condition |
-| *Lorica Squamata* (scale) | 20 | Limited (15) | 15 sets; favored by watch officers and cavalry |
-| *Linothorax* (layered linen) | 15 | Order | Not standard legionary issue; officers and tradition-keepers |
-| Hide/leather armor | 12 | In stock | Produced locally; Germanic craftsmen also sell |
+{{< include _generated/ref_armor.md >}}
 
 ::: {.callout-note appearance="minimal" collapse="true"}
 ## Body armor mechanics
@@ -309,13 +284,7 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 
 #### Helmets
 
-| Helmet | Price (d) | Availability | Notes |
-|---|---|---|---|
-| *Galea Coolus* (standard iron) | 10 | In stock (80+) | Most common helmet at the fort |
-| *Galea Attica* (open-face) | 15 | Limited (20) | 20 in stock; officers and cavalry preferred |
-| Centurion's *Galea* (transverse crest) | 25 | Limited (5) | Rank confirmation from Corvinus required |
-| *Spangenhelm* (Germanic riveted) | 12 | Limited (10) | Germanic-heritage auxiliaries; 10 in stock |
-| *Aventail* (mail neck curtain) | 8 | Order | Attaches to *Spangenhelm*; Rhine workshops, 4-week lead |
+{{< include _generated/ref_helmets.md >}}
 
 ::: {.callout-note appearance="minimal" collapse="true"}
 ## Helmet mechanics
