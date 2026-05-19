@@ -2429,11 +2429,56 @@ The *foederatus* does not come from the Roman equipment system. Their kit reflec
 
 **Standard** (0 commendationes): Battle-cry advantage aura on Rage entry (15 ft, allies who see or hear you). Once per session, *provocatio* (DC 14 Wisdom save or disadvantage against non-challenger targets for 1 minute). Once per session, invoke the *foedus* to refuse an order from a sub-centurion officer without formal penalty.
 
+**Regional Warrior Tradition** — choose one at Session 0. This choice is permanent. It reflects where you learned to fight before Rome, gives you a passive combat ability that is always active, and shapes how every NPC in the campaign reads you from the first session onward.
+
+<details>
+<summary><strong>Germanic — *Furor Teutonicus*</strong></summary>
+
+The Roman military has a phrase for what you do when you Rage. It is not a compliment and it is not an insult. It is a tactical classification used in the training manuals, and the soldiers at Vindolanda know it on sight.
+
+**Combat:** While Raging, you are immune to the frightened condition. When you enter Rage, each enemy within 30 feet that can see or hear you must succeed on a DC 12 Wisdom saving throw or be unable to take the Disengage action until the start of your next turn — the surge holds them in place the way a hunting scream holds prey.
+
+**Narrative:** Soldiers who have served on the Rhine frontier recognize *furor teutonicus* immediately. Their response is specific: they move out of your path, not because of you personally, but because they know what they are looking at and they have been trained to respect its direction. At Vindolanda, you are legible in a way other *foederati* may not be — but legible cuts both ways. Officers treat you with tactical respect. Common soldiers maintain personal distance until you have given them a reason to close it. You have advantage on Intimidation checks when your Germanic origin is known and relevant, and advantage on Survival checks to navigate or track in forest and river terrain.
+
+</details>
+
+<details>
+<summary><strong>Gallic — *Virtus Gallica*</strong></summary>
+
+Your people have been fighting Romans for three hundred years. Some of them are Romans now. You are here to decide which category you fall into, and you have not finished deciding.
+
+**Combat:** When you hit a creature with a melee attack on your turn, you may use your bonus action to shove them up to 5 feet in any direction without an ability check. When fighting with a weapon in each hand, you add your Strength modifier to the off-hand attack's damage roll.
+
+**Narrative:** Gallic warriors occupy an uncomfortable middle position in the Roman frontier imagination: almost legible, never quite trusted, occasionally respected with the specific warmth reserved for capable enemies who came around. Roman soldiers sometimes recognize the guard and the footwork from their own training without knowing where it came from. Officers who know their military history have considered opinions about Gallic *foederati*. You have advantage on History checks relating to Gaul, the northern Roman road network, and the supply infrastructure of Belgica and Lugdunensis. Gallic NPCs in civilian settlements treat their first interaction with you as one step more favorable than their base disposition.
+
+</details>
+
+<details>
+<summary><strong>Caledonian — *Reiv*</strong></summary>
+
+You are from beyond the Wall. Rome does not hold your lands. You are here because you chose to be, and every soldier in this fort understands the distinction whether or not they say so.
+
+**Combat:** While in natural terrain (forest, marsh, hills, rocky ground), you cannot be surprised. You leave no tracks in natural terrain unless you choose to. When you attack with advantage while in natural terrain, the attack deals +1d6 damage.
+
+**Narrative:** The garrison at Vindolanda has a specific relationship with what lies to the north: they know it holds, they know what it costs, and they know the people who have held it for generations look nothing like what Rome expected. A Caledonian *foederatus* is the idea made present and standing in the mess hall. Soldiers who have served on the northern wall-posts look at you with recalibration: you chose to be here, which tells them something about capability and nothing reassuring about intent. You have advantage on Survival and Perception checks in highland or moorland terrain. The Selgovi, Votadini, and Novanti have distinct relationships with different Caledonian groups; the DM determines their initial NPC attitude based on your specific origin.
+
+</details>
+
+<details>
+<summary><strong>Dacian — *Draco*</strong></summary>
+
+The Dacian wars ended less than seventy years ago. The column of Trajan stands in Rome with the campaigns carved in stone. Your people are on that column. Rome is still working out what to do with the implication.
+
+**Combat:** You are proficient with the falx (see roman_tactics.qmd). The falx bypasses the AC bonus provided by shields. When you hit a shielded creature with any two-handed weapon, they must succeed on a DC 12 Strength saving throw or their shield arm is driven wide — they lose the shield's AC bonus until the start of their next turn.
+
+**Narrative:** Roman soldiers who know their military history have complicated opinions about Dacia, and almost all of them are honest. The wars were expensive and long; the victory was real; the aftermath involves people like you standing inside Roman units and making everyone recalculate. Veterans who served in the Dacian campaigns have a specific first-meeting reaction: measuring, not hostile. They know your people's capability firsthand, and they consider that a basis for respect rather than for distance. You have advantage on History checks relating to the Dacian campaigns and the Danube frontier. Roman soldiers from legions that served under Trajan treat initial interactions with you as frank rather than deferential.
+
+</details>
+
 **Veteranus** (3 commendationes): Choose one branch.
 
 <details>
 <summary><strong>Branch A: *Gladiator* — Arena-trained fighter</strong></summary>
-
 
 You have arena history. Not necessarily as a slave — the majority of gladiators in the mid-second century were free volunteers who found the pay and the structure preferable to other options. What you have is training under conditions that distilled every combat decision down to what worked and what got you killed, with a crowd watching to see which.
 
@@ -2453,27 +2498,36 @@ Choose a fighting style. The style is permanent once chosen and reflects the ide
 
 **Provocator** *(heavy armor, challenger, absorber)*: The *provocator* was the heaviest-armored gladiator and the one most visibly designed to invite punishment and survive it. When wearing medium or heavy armor with a shield equipped, your AC improves by 1 (the full coverage leaves no obvious gap). When a creature attacks you and misses, you may use your reaction to make one melee attack against them. At the start of each of your turns while Raging, you gain temporary hit points equal to your Constitution modifier.
 
-**Perk 1 (all styles): *Spectaculum*** — Your combat style has been honed in front of crowds under stakes that were not theoretical. You have advantage on Intimidation checks made in combat or immediately after a combat encounter. NPCs who witnessed you fight treat their initial social interaction with you as one step more favorable than their base disposition.
+**Perk 1 (all styles): *Spectaculum*** — Your combat style was honed in front of crowds under stakes that were not theoretical. You have advantage on Intimidation checks made in combat or immediately after a combat encounter. NPCs who witnessed you fight treat their initial social interaction with you as one step more favorable than their base disposition.
 
 **Specialis** (7 commendationes):
-
 
 **Perk 2: *Victor*** — Your reputation precedes you. Once per session, you may name a creature and declare it your quarry. Against your quarry: your attacks score a critical hit on a 19 or 20; your quarry cannot benefit from the Dodge action against your attacks; when your quarry drops to 0 hit points, each ally who witnessed the fight may immediately make one attack as a reaction. The kill carries them forward.
 
 </details>
 
 <details>
-<summary><strong>Branch B: *Pugil Extraordinarius* — Unit champion</strong></summary>
+<summary><strong>Branch B: *Vir Bellicosus* — Tribal Champion</strong></summary>
 
+You did not earn your standing in an arena with Roman rules and Roman exits. You earned it through the trials, the raids, and the communal judgments your people use to determine who leads and who follows. The Roman army did not make you a fighter. You arrived as one, and the soldiers around you are gradually working out what that means.
 
-**Perk 1: *Murus Carnis* ("Wall of Flesh")** — When an ally within 5 feet would be reduced to 0 hit points by a melee attack, you may use your reaction to step into the blow. The damage is redirected to you. If you are currently Raging, the redirected damage costs at most half your remaining hit points — the rage absorbs what would otherwise kill you. This ability cannot be used if you are incapacitated.
+Choose a warrior tradition at this tier. The tradition is not the same as your regional origin — it is the combat philosophy you built from that origin. A Germanic warrior might take the Endurance path; a Gallic warrior might take the Shield-Breaker path. Origin shapes where you started; tradition shapes what you built.
+
+**The Shield-Breaker** *(heavy assault, gap-closer, line-cracker)*: Your weapon opens the way before the line sets. When you make your first melee attack on your turn against a creature carrying a shield, you ignore the shield's AC bonus on that attack. On a hit, the target must succeed on a DC 13 Strength saving throw or their shield arm is driven wide — they lose the shield's AC bonus until the start of their next turn. Once per turn when you hit a creature with a melee weapon, you may immediately push them up to 10 feet in any direction; this movement does not trigger opportunity attacks from your allies.
+
+**The Reiver** *(hit-and-run, terrain exploitation, first-blood specialist)*: You hit hard and you are somewhere else before the counterattack arrives. When you move at least 20 feet before attacking on your turn, the attack deals +1d8 damage and you do not provoke opportunity attacks from that target until the start of your next turn. Once per turn, even while Raging, you may take the Hide action as a bonus action while in natural terrain (forest, marsh, hills, rocky ground).
+
+**The Shock-Charger** *(straight assault, fear, forward momentum)*: You open engagements and the unit rides the wake. When you move toward a creature in a straight line of at least 15 feet and attack them on the same turn, the attack deals +1d10 damage and the target must succeed on a DC 14 Strength saving throw or be knocked prone. Once per turn when you drop a creature to 0 hit points while Raging, you may immediately move up to half your speed toward another creature as a free action; this movement does not provoke opportunity attacks.
+
+**The Endurance Fighter** *(absorb and outlast, Pannonian tradition)*: You were trained to be the last one standing, not the first one to score. While Raging, at the start of each of your turns you gain temporary hit points equal to your Constitution modifier + your proficiency bonus (each turn's total replaces the last rather than stacking). Once per long rest, when you are reduced to 0 hit points while Raging, you may make a DC 15 Constitution saving throw; on a success, you drop to 1 hit point instead and your Rage does not end.
+
+**The Falx-Master** *(overhead assault, anti-armor, guard-breaking)*: The falx was designed to pull shields down and cut through from above. You are proficient with the falx if you are not already. When you hit a creature with a two-handed weapon, they must succeed on a DC 13 Strength saving throw or have disadvantage on attack rolls until the start of your next turn — their guard has been broken and they know it. Once per turn when you score a critical hit with a two-handed weapon, you may immediately make one additional attack as part of the same action.
+
+**Perk 1 (all traditions): *Sicut Pater Meus* ("As My Father Did")** — You fight in the way your people fight, and every soldier within sight can read it clearly as something real. When you use Reckless Attack, each ally within 30 feet who can see you may add 1d4 to their next attack roll before the end of your next turn. You are not protecting them. You are showing them what full commitment looks like.
 
 **Specialis** (7 commendationes):
 
-
-**Perk 2: *Caput Exercitus* ("Head of the Army")** — *(locked: STR 18 required)*
-While you are conscious and visible to allies: they automatically succeed on morale saves against fear effects of CR 5 or lower. Once per long rest, when the unit fails a morale check or would rout, your presence reverses the outcome — no roll required. Allies who have seen you save them remember it; social interactions with those allies treat you as two ranks higher for the duration of the campaign.
-*Locked to STR 18: this authority is physical. It comes from what soldiers have watched you survive, not from anything you said.*
+**Perk 2: *Dux Barbarus* ("Warlord")** — You have crossed from individual fighter to war-leader in the eyes of everyone who has watched you work. While Raging, once per turn as a bonus action you may issue a *war-call*: one ally within 60 feet who can hear you may immediately move up to their speed and make one weapon attack as a reaction, without provoking opportunity attacks from this movement. This is not an order in the Roman sense. It is the sound a war-leader makes at the moment of personal commitment, and the soldiers who have fought beside you know the sound and what follows it. The DM notes which allies responded and which did not. That information is about who in this unit would follow you into something worse than what they are standing in now.
 
 </details>
 
