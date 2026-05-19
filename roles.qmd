@@ -2328,6 +2328,25 @@ The *provocatio* is not only a game mechanic. Issuing a personal challenge in Ro
 </details>
 
 <details>
+<summary><strong>The Barbarian in This Campaign</strong></summary>
+
+*(Player-facing: read this if your class is Barbarian)*
+
+The Roman army has a word for what happens when a warrior stops calculating and starts operating on something older than thought. The word is *furor*. It is not an insult. It is a military category: recognized as a legitimate battlefield state with predictable tactical value, and Roman commanders have been using warriors capable of it since before the Republic.
+
+What this means for you: the Romans in this unit will not be frightened by your Rage. They will be watching for it to do what it does, and they will position themselves accordingly. A soldier who fights next to you for three sessions knows where to stand when you go in. The question is not whether your *furor* is real. The question is whether you can be relied upon to direct it at something useful.
+
+**Reckless Attack** is called *audacia* in Roman military writing: the willingness to absorb punishment in exchange for certainty of contact. Roman officers do not tell soldiers to stop doing this. They tell soldiers to do it at the right moment. An *optio* who sees you attack recklessly and win will note it as courage. An *optio* who sees you attack recklessly and cause a breach in the line will pull you aside after the engagement. The standard is outcomes, not method.
+
+**Weapon choice is a public statement.** A soldier's weapon is visible in formation, during inspections, and in the tavern. Carrying a *bipennis* says: "I am not from here, I fight in my own way, and I am good enough at it that they let me." A soldier who has watched you use it and is still alive because of it does not question the choice. A soldier who has never seen you use it is forming a theory. Your weapon's reputation precedes you into rooms you have not yet entered.
+
+**What you know that other classes do not.** A Barbarian who has fought in twenty engagements knows how a shield wall sounds when it is about to break: the pitch of the shouting changes, the footwork changes, there is a collective exhale before the line gives. A historian can read about this. You have heard it. The campaign uses Athletics, Survival, and Perception gates for this kind of experiential knowledge, not Intelligence checks. When you see a check you cannot make well, ask whether there is a physical version of the same question. Often there is, and often you answer it better than anyone else at the table.
+
+**Fast Movement** (10 feet extra speed while not in heavy armor) is a tactical asset in a unit that moves in formation. You arrive first. You are at the breach before the formation has committed. The unit may not have a formal word for what you are doing, but every soldier at the table understands what it means when you are already there.
+
+</details>
+
+<details>
 <summary><strong>Wild Magic Rage: The Roman Interpretation</strong></summary>
 
 *(DM-facing: use this section if the player's Barbarian subclass is Wild Magic)*
@@ -2343,6 +2362,26 @@ The *haruspex* will want to examine you after any visible surge. The examination
 The *Flamen Martialis*, if present, has a different read: the surge is Mars making a direct statement through a vessel Mars chose. The *Flamen*'s role is to interpret the message, not evaluate the vessel. A Wild Magic Barbarian attached to a unit with an active *Flamen Martialis* has an informal advisor for every surge that produces a significant effect. The advice will be theological. It will sometimes be useful.
 
 The other soldiers: most treat visible surges the way Roman soldiers have always treated things they cannot explain — a combination of personal distance, renewed attention to luck omens, and pragmatic tracking of outcomes. The soldier who was standing next to you when you surged and survived an encounter they expected to lose is now tracking whether survival correlates with proximity. The soldier who was standing next to you when the surge went sideways has drawn their own conclusion. Both of them are watching for the pattern, and neither of them is wrong to do so.
+
+</details>
+
+<details>
+<summary><strong>Roman Wild Magic Surge Table — d8 (DM-facing)</strong></summary>
+
+*(Replaces the standard Wild Magic Barbarian surge table for this campaign. Roll when the class feature would normally trigger a surge.)*
+
+| d8 | Effect |
+|---|---|
+| 1 | **The breath of Mars.** The air smells of iron and old blood. Each enemy within 30 feet must succeed on a DC 13 Wisdom saving throw or become frightened of you until the end of your next turn. The haruspex reads this as direct divine contact: the omen is favorable if enemies fled, ambiguous if they held. |
+| 2 | **The ghost standard.** A spectral legionary eagle erupts from your position and advances 30 feet in the direction you face. Each ally in its path gains advantage on their next attack roll before the start of your next turn. The standard vanishes at the far end or at the start of your next turn, whichever comes first. |
+| 3 | **Cold fire.** Your weapons glow with pale, heatless light for the rest of this Rage. Your attacks deal an additional 1d4 radiant damage. The fire gives off no heat and casts no useful light. Each soldier who witnesses it must succeed on a DC 12 Wisdom saving throw or suffer disadvantage on Insight checks against you for 1 hour. The Flamen Martialis does not save. |
+| 4 | **The ground answers.** The earth shakes in a 10-foot radius around you. Each creature other than you in the area must succeed on a DC 14 Dexterity saving throw or fall prone. |
+| 5 | **Mars moves you.** You vanish and reappear in an unoccupied space you can see within 30 feet (no action cost). If you reappear adjacent to an enemy, that enemy must succeed on a DC 13 Wisdom saving throw or be surprised until the end of their next turn. |
+| 6 | **The god takes his toll.** A wave of necrotic force blasts outward. Each creature within 10 feet other than you takes 2d6 necrotic damage (DC 13 Constitution saving throw, half on success). You regain hit points equal to half the total necrotic damage dealt. |
+| 7 | **The silent step.** For 1 minute, your movement makes no sound and leaves no tracks. Perception checks to detect your movement by hearing or tracking are at disadvantage. The effect ends when your Rage ends. The men who witness this do not know what to make of it. The haruspex files a note. |
+| 8 | **Overflow.** Roll twice and apply both results. If either roll is also 8, the surge overloads the vessel: your Rage ends immediately and you take 1d6 psychic damage. The haruspex will want a full account. |
+
+Each result is, in Roman theological terms, interpretable as direct divine action. The haruspex maintains a written record of all surges and their outcomes. Corvinus has access to that record.
 
 </details>
 
