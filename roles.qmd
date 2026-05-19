@@ -2434,11 +2434,13 @@ The *foederatus* does not come from the Roman equipment system. Their kit reflec
 <details>
 <summary><strong>Germanic — *Furor Teutonicus*</strong></summary>
 
-The Roman military has a phrase for what you do when you Rage. It is not a compliment and it is not an insult. It is a tactical classification used in the training manuals, and the soldiers at Vindolanda know it on sight.
+The Roman military has a phrase for what you do when you Rage. It is not a compliment and it is not an insult. It is a tactical classification used in the training manuals, and soldiers who have served on the Rhine frontier know it on sight.
 
-**Combat:** While Raging, you are immune to the frightened condition. When you enter Rage, each enemy within 30 feet that can see or hear you must succeed on a DC 12 Wisdom saving throw or be unable to take the Disengage action until the start of your next turn — the surge holds them in place the way a hunting scream holds prey.
+*This tradition covers the forest and plains tribes of the Rhine interior and the northern reaches: Chatti, Chamavi, Cherusci, Suebi, and the Marcomanni. The Franks as a named confederation do not yet exist in 175 AD — the Rhine-delta peoples with the cavalry and river-crossing tradition are covered under the Batavian entry below.*
 
-**Narrative:** Soldiers who have served on the Rhine frontier recognize *furor teutonicus* immediately. Their response is specific: they move out of your path, not because of you personally, but because they know what they are looking at and they have been trained to respect its direction. At Vindolanda, you are legible in a way other *foederati* may not be — but legible cuts both ways. Officers treat you with tactical respect. Common soldiers maintain personal distance until you have given them a reason to close it. You have advantage on Intimidation checks when your Germanic origin is known and relevant, and advantage on Survival checks to navigate or track in forest and river terrain.
+**Combat:** While Raging, you are immune to the frightened condition. When you enter Rage, each enemy within 30 feet that can see or hear you must succeed on a DC 12 Wisdom saving throw or lose the ability to take the Disengage action until the start of your next turn. The Disengage action is what lets a creature move away without triggering opportunity attacks — failing this save means they cannot retreat safely. Any movement they make away from you this turn provokes your opportunity attack. The surge holds them in place the way a hunting scream holds prey.
+
+**Narrative:** Soldiers who have served on the Rhine recognize *furor teutonicus* immediately. Their response is specific: they move out of your path, not because of you personally, but because they know what they are looking at and they have been trained to respect its direction. Officers treat you with tactical respect. Common soldiers maintain personal distance until you have given them a reason to close it. You have advantage on Intimidation checks when your Germanic origin is known and relevant, and advantage on Survival checks to navigate or track in forest and river terrain.
 
 </details>
 
@@ -2449,29 +2451,51 @@ Your people have been fighting Romans for three hundred years. Some of them are 
 
 **Combat:** When you hit a creature with a melee attack on your turn, you may use your bonus action to shove them up to 5 feet in any direction without an ability check. When fighting with a weapon in each hand, you add your Strength modifier to the off-hand attack's damage roll.
 
-**Narrative:** Gallic warriors occupy an uncomfortable middle position in the Roman frontier imagination: almost legible, never quite trusted, occasionally respected with the specific warmth reserved for capable enemies who came around. Roman soldiers sometimes recognize the guard and the footwork from their own training without knowing where it came from. Officers who know their military history have considered opinions about Gallic *foederati*. You have advantage on History checks relating to Gaul, the northern Roman road network, and the supply infrastructure of Belgica and Lugdunensis. Gallic NPCs in civilian settlements treat their first interaction with you as one step more favorable than their base disposition.
+**Narrative:** Gallic warriors occupy an uncomfortable middle position in the Roman frontier imagination: almost legible, never quite trusted, occasionally respected with the specific warmth reserved for capable enemies who eventually came around. Roman soldiers sometimes recognize the guard and the footwork from their own training without knowing where it originally came from. Officers who know their military history have considered opinions about Gallic *foederati*. You have advantage on History checks relating to Gaul, the northern Roman road network, and the supply infrastructure of Belgica and Lugdunensis. Gallic NPCs in civilian settlements treat their first interaction with you as one step more favorable than their base disposition.
 
 </details>
 
 <details>
 <summary><strong>Caledonian — *Reiv*</strong></summary>
 
-You are from beyond the Wall. Rome does not hold your lands. You are here because you chose to be, and every soldier in this fort understands the distinction whether or not they say so.
+Your people cost Rome 50,000 casualties through ambush and attrition without ever fighting a pitched battle Rome could force. What Romans fear about the north is not the strength of the charge — it is the silence before it and the nothing left after.
 
-**Combat:** While in natural terrain (forest, marsh, hills, rocky ground), you cannot be surprised. You leave no tracks in natural terrain unless you choose to. When you attack with advantage while in natural terrain, the attack deals +1d6 damage.
+**Combat:** When you take the Disengage action, you may make one melee weapon attack as part of the same action before or after moving — strike-and-fade is one sequence. When you enter Rage while not currently in combat (you entered willingly, not reactively), each enemy within 30 feet that can see or hear you must succeed on a DC 13 Wisdom saving throw or have disadvantage on their first attack roll this round. The war-scream is a recognized psychological instrument; it is not incidental. You cannot be surprised while in natural terrain (forest, hills, moorland, marsh).
 
-**Narrative:** The garrison at Vindolanda has a specific relationship with what lies to the north: they know it holds, they know what it costs, and they know the people who have held it for generations look nothing like what Rome expected. A Caledonian *foederatus* is the idea made present and standing in the mess hall. Soldiers who have served on the northern wall-posts look at you with recalibration: you chose to be here, which tells them something about capability and nothing reassuring about intent. You have advantage on Survival and Perception checks in highland or moorland terrain. The Selgovi, Votadini, and Novanti have distinct relationships with different Caledonian groups; the DM determines their initial NPC attitude based on your specific origin.
+**Narrative:** The soldiers at Vindolanda have heard about the Caledonians from veterans on the northern posts. The stories are specific: not about how hard they hit but about where they were not, and then were. Roman punitive expeditions — Agricola's campaigns, the brief Antonine advance — all ended the same way: Rome built things and eventually withdrew. You chose to come through the Wall. Every soldier who understands what that means treats the fact with specific seriousness. Those who do not understand it yet will catch up. You have advantage on Survival and Perception checks in highland and moorland terrain. The Selgovi, Votadini, and Novanti have distinct relationships with different Caledonian groups; the DM determines initial NPC attitude based on your specific tribal origin.
 
 </details>
 
 <details>
 <summary><strong>Dacian — *Draco*</strong></summary>
 
-The Dacian wars ended less than seventy years ago. The column of Trajan stands in Rome with the campaigns carved in stone. Your people are on that column. Rome is still working out what to do with the implication.
+You are from a kingdom that no longer exists. Trajan's column in Rome shows the conquest in stone — the battles, the prisoners, the king's suicide on the last day. Your people are on that column. What survived the absorption is what you carry: the techniques, the weapons, and the particular weight of knowing exactly what the machine you are now inside did to the people you come from.
 
-**Combat:** You are proficient with the falx (see roman_tactics.qmd). The falx bypasses the AC bonus provided by shields. When you hit a shielded creature with any two-handed weapon, they must succeed on a DC 12 Strength saving throw or their shield arm is driven wide — they lose the shield's AC bonus until the start of their next turn.
+**Combat:** You are proficient with the falx (see roman_tactics.qmd). The falx bypasses the AC bonus provided by shields. When you hit a shielded creature with any two-handed weapon, they must succeed on a DC 12 Strength saving throw or their shield arm is driven wide — they lose the shield's AC bonus until the start of their next turn. This technique was so effective that Trajan mandated new armor after the first Dacian war. The soldiers you are fighting now are wearing the answer to your ancestors' weapon.
 
-**Narrative:** Roman soldiers who know their military history have complicated opinions about Dacia, and almost all of them are honest. The wars were expensive and long; the victory was real; the aftermath involves people like you standing inside Roman units and making everyone recalculate. Veterans who served in the Dacian campaigns have a specific first-meeting reaction: measuring, not hostile. They know your people's capability firsthand, and they consider that a basis for respect rather than for distance. You have advantage on History checks relating to the Dacian campaigns and the Danube frontier. Roman soldiers from legions that served under Trajan treat initial interactions with you as frank rather than deferential.
+**Narrative:** The falx forced Rome to redesign its armor twice. Veterans who served in the Dacian campaigns know this and look at you with measuring respect: they are deciding whether the person in front of them is the same quality as the warriors who made that necessary. The honest ones will tell you this directly. A Dacian fighting inside the machine that broke Dacia is a complicated statement, and not everyone in the unit has the vocabulary for it. Some will ask about it. Most will not. You have advantage on History checks relating to the Dacian campaigns and the Danube frontier.
+
+</details>
+
+<details>
+<summary><strong>Sarmatian — *Cataphractos*</strong></summary>
+
+Marcus Aurelius sent 5,500 Sarmatian cavalry to Britain in 175 AD as part of the Iazyges peace settlement — you may be among the most recently arrived. You are being posted to the Wall in groups. You are not Roman, not Germanic, not British. The garrison at Vindolanda is still working out which category covers what you are.
+
+**Combat:** Your formation training was built around receiving the charge and redirecting its momentum. When a creature moves at least 15 feet toward you on its turn before attacking you, you may use your reaction to brace: the attack's damage is halved and the attacker must succeed on a DC 13 Strength saving throw or be pushed 5 feet away and stopped. While you have not moved this turn, attacks you make with reach weapons or two-handed weapons deal +1d6 damage — the stationary stance is a platform, and you know how to use it.
+
+**Narrative:** Roman soldiers know Sarmatian heavy cavalry from soldiers who served on the Danube: scale armor like a fish, the *draco* battle-standard that screams in wind during a charge, steppe tactics unlike anything in the Roman training manuals. Most of the Vindolanda garrison has not seen one in person before you arrived. Officers who served on the Danube frontier treat their first interaction with you as frank professional respect — they know what Sarmatian cavalry can do and they are deciding whether you personally are that quality. Everyone else is curious in the way soldiers are curious about things that might kill them. You have advantage on Animal Handling checks with horses and on Survival checks in open grassland or steppe terrain.
+
+</details>
+
+<details>
+<summary><strong>Batavian — *Transvector*</strong></summary>
+
+Your people have been Rome's most capable auxiliary cavalry for over a century. The river-crossing techniques, the swimming in full armor, the combat dismount — these are not things Batavians learned from Rome. Rome learned them from Batavians and then recruited the people who knew them.
+
+**Combat:** You move through water at full speed without Athletics checks or movement penalty, regardless of depth or current. When you move through water before attacking on your turn, the attack deals +1d6 damage — you break from a medium the enemy did not expect anyone to cross cleanly. You are proficient in Athletics if you are not already; if you already have proficiency in Athletics, you add double your proficiency bonus to Athletics checks involving swimming, climbing, or crossing difficult terrain.
+
+**Narrative:** The Batavian revolt — when your people briefly broke from Rome under Civilis in 69 AD — is officially a closed matter. In practice, Roman officers keep it somewhere in their assessment alongside every other story of a capable ally who chose their own direction once. The professional relationship remains genuine and well-established. Batavian auxiliaries have served on the British frontier long enough that soldiers at Vindolanda either served with them or know soldiers who did. First interactions from veterans who served alongside Batavian units are warm familiarity rather than assessment. You have advantage on History checks relating to Rhine frontier campaigns and river-crossing operations, and on Survival checks to assess or navigate any body of water.
 
 </details>
 
