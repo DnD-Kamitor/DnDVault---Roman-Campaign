@@ -335,12 +335,18 @@ Not physically. As a presence — a pressure in the air that makes the stones vi
 
 ### Three Ways to Complete the Ritual
 
-**Option A: Combat — hold the grove against divine wrath**
+**Option A: Defensive Hold (not a winnable fight at Level 5)**
+
+::: {.dm-note}
+The standing stones are avatars of Mars' anger, not killable enemies. The party's goal is to hold them off long enough for the ritual to complete (4 successes on the Option B Skill Challenge below). Options A and B run simultaneously: some party members engage the golems while one holds the ritual. Track golem engagement: each party member actively fighting a golem keeps it occupied for 2 rounds before it pivots to the ritual holder. The golems fade automatically when the ritual completes. Do not run Option A as a combat that needs to be won.
+
+The cover positions behind the north and south stones (spotted with Survival DC 11 before the ritual begins) displace each golem's movement by one full round when used.
+:::
 
 Mars manifests as divine wrath through the stones themselves:
-- Animated Standing Stones: 3 **Stone Golems** (CR 10) but with 120 HP each — they're avatars of Mars' anger, not the full thing
-- While some party members fight, one holds the ritual (see Skill Challenge below)
-- Destroying the golems doesn't end the ritual — it just buys time
+- Animated Standing Stones: 3 **Stone Golems** (CR 10) but with 120 HP each — avatars of Mars' anger, not killable enemies at this level
+- While some party members hold the golems back, one holds the ritual (see Option B below)
+- The golems fade when the ritual completes; destroying them early buys time but is not required
 
 **Option B: Skill Challenge — complete the ritual under pressure**
 
@@ -384,6 +390,21 @@ The spear remains intact. Mars' presence intensifies and will not leave until th
 
 **Advance to Level 6**
 
+::: {.dm-note}
+**Session 3 → Session 4 transition: both outcomes**
+
+**If the ritual succeeded (spear destroyed):** Session 4 is not about the spear -- it is already gone. It is about Brutus' siege, which he launched in response to intelligence that the party was attempting to destroy his leverage. Mars was satisfied by the grove ritual but is not yet fully appeased -- he still expects formal acknowledgment at the altar where the spear was originally found. Session 4's underground sequence becomes: escort Thusnelda's sealed clay jar (the iron fragments, seven shards) to the vault's altar as a formal return. Mars accepts this. The antechamber ritual in Session 4 Scene 4 uses "the remains of the spear" rather than the whole weapon. All other mechanics hold -- Mars cares that they came, not the form of the offering.
+
+**If the ritual failed (spear intact):** The party carries the whole spear into Session 4. This is the harder path: higher corruption pressure, no goodwill from Mars, Brutus' siege arrives while they are already in a weakened position.
+
+Add this to the Session 4 opening tracking table:
+
+| Question | Session 4 implication |
+|---|---|
+| Was the Session 3 ritual successful? | Yes: party carries spear fragments in Thusnelda's clay jar. No: party carries the whole spear. The antechamber scenes work the same either way. |
+:::
+
+
 ### Citizenship Elevation: Session 3 Window
 
 After the spear is destroyed and the party returns to Corvinus' reach (whether at the fort, in the field, or through a messenger he sends), Corvinus does something unexpected. He files papers.
@@ -401,6 +422,11 @@ What it means by legal status tier:
 Corvinus does not do this out of generosity. He does it because the party has performed tasks that would be politically expensive for him to explain if they remained unthanked. He is a pragmatist. The elevation papers are institutional cover for him as much as they are reward for the party.
 
 This window closes at Session 4 if the papers are not signed and returned. Corvinus' circumstances change, and the political calculus shifts.
+
+::: {.dm-note}
+**If the ritual failed:** Corvinus cannot file citizenship papers while the party is still in the field with a cursed spear and a siege beginning. The Session 3 citizenship window defers to the end of Session 4. The papers arrive during Session 4's conclusion scene rather than as a separate inter-session moment. The eligibility criteria are unchanged; only the timing shifts.
+:::
+
 
 
 ## DM Notes
@@ -424,6 +450,12 @@ This window closes at Session 4 if the papers are not signed and returned. Corvi
 - **Goal (this session):** Stop the ritual
 - **Agenda:** Apply pressure through the influenced NPC, through the grove itself, through the confrontation at the end
 - **Secret:** He's been watching this party since Session 1. He respects what he's seen. He won't admit this.
+
+**Senator Gaius Cassius Brutus (off-screen, never present this session)**
+- **Objective:** Same as Session 2 -- prevent the spear from reaching Rome or being publicly resolved
+- **Goal this session:** Launch Vindolanda's siege through allied chieftains while the party is in the forest; let the fort fall before the party returns
+- **Agenda:** Two specific chieftains in the warband confederation owe Brutus money and old favors. They are the siege's actual organizers. Vercingetorix does not know this -- if he did, it would reframe his whole understanding of the siege. Sigrun (the Germanic trader in the vicus) knows one name if the party reaches her before leaving for the forest.
+- **Secret:** Does not know about the grove ritual. His intelligence ends at the treeline. He is acting on incomplete information -- if he knew the party was attempting to destroy the spear entirely, he would not have launched the siege; he would have waited for a more controllable outcome.
 
 ### The Influenced NPC — Private Note
 

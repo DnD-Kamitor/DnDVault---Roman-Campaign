@@ -25,7 +25,8 @@ Vindolanda has endured six days of siege without relief. Germanic warbands hamme
 
 | Question | Session 4 implication |
 |---|---|
-| Who currently holds the spear? | That character becomes the focus of every NPC interaction. Mars speaks through them during Scene 3. |
+| Was the Session 3 ritual successful? | Yes: party carries spear fragments in Thusnelda's sealed clay jar. No: party carries the whole spear. The antechamber ritual works the same either way -- Mars cares that they came, not the form of the offering. See the S3→S4 transition note in chapter3.qmd. |
+| Who currently holds the spear (or the jar)? | That character becomes the focus of every NPC interaction. Mars speaks through them during Scene 3. |
 | Is Tribune Lucius alive? | He still serves Brutus but now needs the party. If dead, replace his role with the Quartermaster (more stubborn). |
 | Did Varro survive Session 3? | If yes he commands the escort. If no the party must appoint another Centurion and morale suffers (all soldiers take -1 to Wisdom saves this session). |
 | Is Augur Cassia alive? | She is the only person who can interpret Mars' omens accurately. Without her, the DM uses harsher omens and fewer answers. |
@@ -61,8 +62,43 @@ Use all three clues to make sure the players understand what Mars wants before t
 
 ## Props and Handouts
 
-- **Handout 8 (Revised):** Brutus' raven message intercepted in the watchtower. Replace the Triumph note with explicit orders to burn the granary and kill Cassia.
-- **Handout 9 (New Purpose):** The fort-wide order of battle for the siege day: trumpet codes, watch assignments, ration counts. Print for players to plan their escort.
+**Handout 8 — Brutus' Intercepted Raven Message**
+
+Give to players when the party recovers torn papyrus fragments from the watchtower hearth ash (Scene 1 or Scene 2, depending on when the watchtower is searched).
+
+> [Torn papyrus, re-assembled from ash]
+>
+> ...granary before dawn. Leave nothing they can use.
+> Cassia must not reach the vault. She knows the form.
+> Complete this before the god wakes and our window closes.
+> If the fort falls, burn what you cannot carry.
+> Rome will not mourn a frontier garrison. It will thank you.
+>
+> — G.C.B.
+
+::: {.dm-note}
+The partial text is deliberate. The players fill in the missing orders through inference. "Cassia must not reach the vault. She knows the form" -- the word "form" is the key. Cassia knows the ritual form for returning the spear. Brutus does not want the vault closed; he wants it open and exploitable.
+:::
+
+**Handout 9 — Fort Vindolanda Order of Battle (Siege Day)**
+
+Give during Scene 2 planning. Players use this to decide who is where and where the escort route runs.
+
+> FORT VINDOLANDA -- DAY 6 OF SIEGE
+> Order of Battle and Duty Roster
+>
+> North Wall: Optio Gaius Felix + 8 men
+> South Gate: Centurion Varro + 4 veterans
+> West Wall (breached section): Auxiliary detail, 6 men
+> Principia: Legate's bodyguard, 4 Praetorians
+> Shrine and adjacent: Augur Cassia (do not reassign)
+>
+> Rations: 3 days at full distribution / 5 days at half
+> Water: Cistern at 60% -- do not use south well (contaminated)
+> Signal code: 1 long = fire, 2 short = breach, 3 long = all to walls
+>
+> Supply tunnel exit (DO NOT DISTRIBUTE): south ditch,
+> third post east of the water gate. Varro only.
 
 ### Maps for This Session
 
@@ -76,7 +112,7 @@ Maps are in `Maptool/maps/campaign/S4_The_Gods_Demand/`. Session 4 splits betwee
 | Druid circle (outer grove) | `DruidCircle` | The outer ring; the first test |
 | Sacred tree (heart of grove) | `SacredTree` | The grove's center; the sacrifice decision |
 | Grove spirit manifestation | `DryadGrove` | If the grove spirit becomes active; optional combat |
-| Inner shrine | `NatureGoddessTemple` | The choice point — where Mars speaks |
+| Inner shrine | `NatureGoddessTemple` | The choice point — where Mars speaks (same map as the Principia in Fort_Vindolanda; the DM is not looking for two different files here — stone, vaulted, still, it works for both) |
 | Island approach (alternate) | `IslandRuins` | Alternative ritual site if the party takes the water route |
 
 Fort reference images are in this session folder for any fort scenes.
@@ -158,6 +194,10 @@ The character can follow (moving toward the grove and Vercingetorix's camp), pul
 
 
 ## Scene 3: The Procession Below
+
+::: {.dm-note}
+**Route and vault callback:** The Sunken Armory → Choking Hall → Elder Stair route is a separate access path to the same Altar Chamber the party reached in Session 1. This is the old Roman water tunnel mapped by Vercingetorix's envoy, not the excavation shaft the party descended in Session 1. They arrive from a different direction, but the chamber is unmistakable: the same granite altar, the same chain anchors in the floor, the Wight's remains if the party left them. This is the intended callback -- the campaign begins and ends in the same circle of stone.
+:::
 
 **Read aloud when the stair opens:**
 

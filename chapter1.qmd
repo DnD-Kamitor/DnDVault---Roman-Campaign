@@ -67,13 +67,15 @@ At the base of the altar, a single line scratched as if
 done in haste: "DO NOT WAKE WHAT SLEEPS HERE."
 ```
 
-**Handout 3: Omens Observed (Give to players as prop)**
+**Handout 3: Omens Observed**
 - All camp dogs died at midnight (no visible cause)
 - Sacrificial sheep had black livers (sign of divine curse)
 - Ravens fly backwards over the principia
 - Springs run red with iron-tainted water
 - Sentries report shadows moving without bodies
 - Legionaries hear distant war-horns (no enemy visible)
+
+*Trigger: Give Handout 3 during Scene 0, after the dream sequence and before the principia scene — when Corvinus mentions "we lost four men and the dogs are dead." It is a physical prop the players keep; they can add their own observations to it during the session.*
 
 
 ### Maps for This Session
@@ -82,8 +84,12 @@ Maps are in `Maptool/maps/campaign/S1_Blood_and_Omens/` after running `Maptool/m
 
 | Scene | Map file | Use |
 |---|---|---|
-| All vault rooms (Scenes 2-4) | `DungeonVol2Public.jpg` | Stone tile dungeon with central circular altar; reuse for every vault room, reposition tokens between scenes |
+| Descent / shaft head (Scene 2 opening) | `DarkTempleEntrancePublic.jpg` | Sealed stair beneath the principia; use for the moment before the party descends |
+| Branching vault rooms (Shield Hall, Flooded Gallery, Bone Chamber, Binding Chamber, Runic Corridor) | `DungeonVol2Public.jpg` | Stone tile dungeon with central altar circle; reuse across the branch rooms, reposition tokens between scenes |
+| Altar Chamber (Scene 3 climax) | `DarkTempleInteriorPublic.jpg` | Vault interior, spear on altar, Wight guardian |
 | Scene 4 exterior (above shaft) | Use Fort_Vindolanda folder | Marius Coda and cultists are above ground; use whichever fort exterior map fits |
+
+**Vault branching note:** The T-junction and two branches (Shield Hall vs. Flooded Gallery) play best as theater of the mind. Use DungeonVol2 for any scene that benefits from a grid: the Bone Chamber fight and the Binding Chamber chain puzzle are the two most useful. Sketch the T-junction on a scrap of paper for the table at the start of Scene 2 and ask players to point which branch they take first.
 
 **Fort reference images** (player handouts, not battlemaps):
 
@@ -144,6 +150,8 @@ Maps are in `Maptool/maps/campaign/S1_Blood_and_Omens/` after running `Maptool/m
 
 **Pressure Cooker Element:** Players don't control the situation yet—they're already deep in crisis
 
+**DM note:** Scene 0 is a 30-second visceral hook — the dream flash and a single glimpse of the principia. Scene 1 below is the actual running of the meeting, with all the NPC mechanics, full read-aloud, and the Tribune's arrival. Do not run both as separate scenes. Use Scene 0 to set the tone, then proceed directly into Scene 1.
+
 ## Scene 1: Meeting the Legate
 
 > *The principia is lit with more oil lamps than it needs. Maps are unrolled across the central table and weighted at the corners with the kind of objects that happen to be nearby: a gladius pommel, a wax tablet, a clay inkpot. The air is thick with incense, but under it something else -- something organic and wrong, like the smell that comes up from a well when the water has gone bad.*
@@ -168,7 +176,7 @@ When Corvinus formally assigns the mission, he sets a wax tablet on the edge of 
 
 **Tribune Lucius Aurelius arrives mid-briefing.** He enters the principia without knocking, carrying a sealed dispatch satchel with an imperial crest. He is late twenties, composed, and makes no apology for interrupting. He hands Corvinus a sealed letter, waits while Corvinus reads it, and then takes a chair at the edge of the room without being invited to sit. He does not introduce himself to the party. He watches.
 
-If the party asks who he is: Corvinus introduces him flatly as "Tribune Lucius Aurelius, attached to the Legate's office by order of Rome." Lucius nods but says nothing. He is there to observe the retrieval, not facilitate it. His presence visibly tightens Corvinus's posture: the Legate was already under pressure, but Lucius's arrival means someone in Rome is watching closely enough to send a representative. Cassia's expression when Lucius enters is worth noting: she has seen him before, and she does not look surprised.
+If the party asks who he is: Corvinus introduces him flatly as "Tribune Lucius Valerius Maximus, attached to the Legate's office by order of Rome." Lucius nods but says nothing. He is there to observe the retrieval, not facilitate it. His presence visibly tightens Corvinus's posture: the Legate was already under pressure, but Lucius's arrival means someone in Rome is watching closely enough to send a representative. Cassia's expression when Lucius enters is worth noting: she has seen him before, and she does not look surprised.
 
 Lucius remains in the fort during the party's descent. He will be present at the Conclusion scene.
 
@@ -726,6 +734,8 @@ If a character reaches for the spear:
 
 DC 14 Wisdom saving throw. On a failure: the character gains 1 level of corruption and is Shaken (cannot willingly release the spear until the start of their next turn). On a success: they resist, but the pull is real and they know it.
 
+**Attunement note:** Touching the spear is not attunement. Attunement requires a short rest while holding it (standard rules) — the spear will not resist, which is the danger. A character who attunes applies the properties in the DM Notes "Spear of Mars: Attunement Properties" section. The Wisdom save disadvantage from attunement stacks with the corruption track penalties; they are separate systems.
+
 ## Scene 4: Return to the Surface
 
 As the party climbs out of the shaft, the night air hits them and then the shouting.
@@ -829,7 +839,7 @@ Varro marks it. He finds the party after Corvinus and Lucius are gone. He looks 
 | NPC | Objective | Goal (Session) | Agenda | Secret |
 |---|---|---|---|---|
 | **Legate Marcus Aurelius Corvinus** | Control the most powerful military artifact unearthed in a generation. | Secure the spear in his personal custody before Rome or the Senate learns of it. | Use the party as deniable retrievers, silence the augur, craft a "routine excavation" cover story. | Already dispatched a private rider to his patron in Rome; the party is not the first team he sent down. |
-| **Augur Cassia Liviana** | Prevent the divine catastrophe that has haunted her dreams. | Keep the spear below ground or, failing that, keep it out of Corvinus' hands. | Seem cooperative while feeding the party doubts and secret guidance. | Performed an augury about the party and knows they decide whether Rome burns, but not how. |
+| **Augur Cassia Liviana** | Prevent the divine catastrophe that has haunted her dreams. | Keep the spear below ground or, failing that, keep it out of Corvinus' hands. | Cooperate publicly with Corvinus in the principia; create private doubt in the party whenever Corvinus cannot see her. In Scene 5, when she has run out of options, she drops the cooperative performance entirely and acts openly. She has accepted the risk. | Performed an augury about the party and knows they decide whether Rome burns, but not how. |
 | **Centurion Titus Varro** | Keep his cohort alive and functional as command unravels. | Learn what the spear truly is before the Legate deploys it disastrously. | Place loyal soldiers between Corvinus and the party, stall for time, listen to every faction. | Heard a young legionary whisper "I understand him" during the worker's frenzy; reassigned him and told no one. |
 
 

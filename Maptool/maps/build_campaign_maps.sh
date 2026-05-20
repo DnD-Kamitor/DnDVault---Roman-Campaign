@@ -106,8 +106,10 @@ mkdir -p "$S"
 
 # Fort scenes (0-1) use Fort_Vindolanda folder — no duplicate copies here
 
-# Underground vault — single map used for all vault rooms
-copy_map DungeonVol2          "$S"   # All vault rooms: stone dungeon with central altar circle
+# Underground vault — three maps for three distinct spaces
+copy_map DarkTempleEntrance   "$S"   # Shaft head / sealed stair — the descent moment
+copy_map DungeonVol2          "$S"   # Branch rooms: stone dungeon with central altar circle
+copy_map DarkTempleInterior   "$S"   # Altar Chamber climax — spear on altar, Wight guardian
 
 cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/saalburg_plan.jpg"
 cp "$FORT_IMGS/saalburg_fort.jpg"     "$S/saalburg_fort.jpg"

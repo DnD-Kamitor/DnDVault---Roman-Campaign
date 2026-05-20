@@ -28,7 +28,8 @@ At dawn the day after the spear descended, Vindolanda stops breathing. The rain 
 | S1 | Who touched the spear first | That character hears Mars' voice louder than others during the trial. |
 | S2 | Vercingetorix allied or not | If allied, his warriors circle the arena and lend morale (advantage on first roll). If not, the Germanic warband prepares to strike if Mars is displeased. |
 | S3 | Sacrifice sincerity | Genuine sacrifice grants advantage on Option C; token sacrifice imposes disadvantage on Mars' first check. |
-| S3 | Influenced NPC survival | If the corrupted worker lived, he appears among the witnesses and begs the party to speak honestly. |
+| S1 | Marius Coda: subdued (not killed) | He appears at the arena edge among the witnesses. He does not fight. He watches. If the party makes the honor argument in Option C, he speaks one sentence unprompted: *"It was the spear talking. Not me. I remember now."* Mars hears this. |
+| S3 | Session 3 influenced NPC: survived | They stand with the party on the sand, corruption cleared. Mars looks at them and says nothing -- which is the most unnerving thing he does all session. |
 | S4 | Who knelt in the antechamber | Those three individuals glow faintly on the sand; Mars expects them to speak first if the argument option is chosen. |
 | S4 | Corvinus or Lucius betrayals | If Corvinus tried to seize the spear, his soldiers arrive hostile and may interrupt the arena if Mars is displeased. If Lucius sabotaged, Mars begins angrier (DCs +2). |
 | Any | Corruption level 5 PC exists | Mars uses them as his mouthpiece unless redeemed. See DM Notes. |
@@ -51,12 +52,13 @@ Maps are in `Maptool/maps/campaign/S5_The_Wrath_of_Mars/`. Session 5 is the divi
 
 | Scene | Map file(s) | Use |
 |---|---|---|
-| Fort exterior under Mars' influence | `DarkTempleEntrance` | The transformed parade ground; the moment time stops |
-| Mars' judgment arena (Scene 2) | `DarkTempleInterior` | Use if players need a grid for the arena; otherwise narrate the sand transformation |
-| Underworld framing / retreat below | `CathedralCatacombs`, `AncientTombs` | If the party retreats below the fort; underworld atmosphere |
-| The altar (Options B and C) | `AncientAltar` | Mars at the altar; the spear's final moment |
-| Sacred grove resolution (Options A and C) | `NatureGoddessTemple`, `IslandRuins` | Returning to the grove; the binding released |
-| Labyrinth ruins (Option B) | `LabyrinthRuins` | If the party attempts to destroy the spear in the ruins |
+| Parade ground transformation (cold open) | `CityStreets` or `BridgeCheckpoint` | Open fort exterior; reposition as the central parade ground. DarkTempleEntrance is an interior staircase — do not use it here. |
+| Mars' judgment arena (Scene 2 options) | `AncientAltar` | The black sand circle around his throne. Use only if players need a grid; otherwise narrate the transformation. |
+| Combat during Option A or B | `AncientAltar` | Grid if needed for Fausta or Mars fight |
+| Retreat below the fort | `CathedralCatacombs`, `AncientTombs` | If the party retreats underground |
+| Option B/C altar resolution | `DarkTempleInterior` | If the party descends to the vault altar as part of resolution — the underground chamber from Sessions 1 and 4 |
+| Sacred grove epilogue | `NatureGoddessTemple`, `IslandRuins` | Epilogue scenes only, not trial scenes |
+| Labyrinth ruins | `LabyrinthRuins` | If the party attempts to destroy the spear in the ruins |
 
 
 ## Scene 0: Cold Open — The Silence Before Judgment
@@ -110,7 +112,17 @@ Mars gestures to the sand. A warrior forms from ashes: armor older than Rome, sc
 - **Frozen Advance:** Difficult terrain does not slow her. When she moves within 5 feet of a creature, DC 15 Constitution saving throw or reduce speed by 10 until end of next turn.
 - **Legendary Defiance (1/round):** When she drops below 50 HP she gains 20 temp HP and auto-succeeds one saving throw. Mars calls "Enough" after 10 rounds or when she is reduced to 0 HP.
 
-**Arena Weapon Cards:** As soon as combat begins flip Handout 11 face-up. Any PC can grab one as a bonus action. Emphasize the costs.
+**Arena Weapon Cards (Handout 11):** As soon as combat begins flip Handout 11 face-up. Any PC can grab one as a bonus action. Emphasize the costs.
+
+Five weapons are arrayed along the sand's edge. Each has a visible cost etched on the blade or haft.
+
+| Card | Weapon | Attack / Damage | Special Property | Cost |
+|---|---|---|---|---|
+| 1 | Gladius of Distinction | +2 to attack and damage rolls | *Sacred edge:* add 2d6 radiant on hit | Each attack also deals 1d6 radiant to the wielder (the god's attention burns the unworthy) |
+| 2 | Pilum of the Unbroken Line | Range 60/120 ft, 2d8+4 piercing | *Formation throw:* on a hit, DC 15 Str save or restrained until end of target's next turn | The thrower cannot move the round they use it |
+| 3 | Scutum of Endurance | +3 AC (held, not worn) | *Last stand:* once per fight, drop to 1 HP instead of 0 | Disadvantage on attack rolls while carrying it |
+| 4 | Spear of the Veteran | Versatile (1d6/1d8), reach 10 ft | *Disciplined strike:* if the wielder did not move this turn, +2d6 damage | The wielder must end their turn where they started if they use the bonus damage |
+| 5 | War-God's Seax | Finesse, 1d6+3 piercing | *Precision:* ignore target's AC bonus from armor (not shields) | On a miss, the seax deals 1d4 piercing to the wielder's hand |
 
 **Before combat, one preparation round (if the party moved quickly before Mars set terms):**
 - Investigation DC 14 (active: examining the arena weapons along the perimeter before grabbing one): Each weapon has a visible cost. Investigation lets a character find the one best suited to their approach -- or identify which weapon has the most dangerous cost for their build.
@@ -132,9 +144,38 @@ Mars gestures to the sand. A warrior forms from ashes: armor older than Rome, sc
 
 If chosen, Mars rises. The sky above Vindolanda fractures into burning lines. The Germanic warbands clutch their heads on the frozen walls.
 
-Use the stat block from the previous version with these contextual tweaks:
+**Mars, God of War (Divine Presence)**
+*Gargantuan celestial, lawful neutral*
 
-- Mars draws a weapon forged from every Roman *pilum* he ever blessed. Same stats: HP 300, AC 20, four attacks, Divine Smite, War Cry, Legendary Actions (Strike, Summon Fallen, God's Eye).
+AC 20 (divine armor) | HP 300 | Speed 40 ft, fly 60 ft
+
+| STR | DEX | CON | INT | WIS | CHA |
+|---|---|---|---|---|---|
+| 26 (+8) | 16 (+3) | 24 (+7) | 18 (+4) | 22 (+6) | 22 (+6) |
+
+Saves: Str +14, Dex +9, Con +13, Wis +12
+Skills: Athletics +14, Perception +12
+Damage Immunities: poison, psychic; bludgeoning/piercing/slashing from non-magical weapons
+Condition Immunities: charmed, exhaustion, frightened, paralyzed
+
+**Divine Awareness:** Mars cannot be surprised and is aware of all creatures within 120 ft.
+
+**Actions (Multiattack: 4 attacks)**
+
+- *God's Pilum:* Ranged spell attack, +12 to hit, range 120 ft, 4d8+8 piercing + 3d6 fire.
+- *War Blade:* Melee weapon attack, +14 to hit, reach 10 ft, 3d10+8 slashing + 2d6 radiant.
+- *Divine Smite (1/round):* On a hit, add 6d8 radiant damage. Target must succeed DC 18 Con save or be Stunned until end of next turn.
+- *War Cry (Recharge 5-6):* Each creature of Mars' choice within 60 ft makes a DC 18 Wisdom save or is Frightened for 1 minute (save at end of each turn).
+
+**Legendary Actions (3/round, at end of another creature's turn)**
+
+- *Strike:* One War Blade attack.
+- *Summon Fallen (costs 2):* A Wight or Shadow appears at a point Mars designates within 60 ft. Max 3 summoned at once.
+- *God's Eye (costs 3):* Mars reads one creature's deepest intention (no save). He states it aloud. If true, that creature is Frightened for 1 round.
+
+**Victory Condition:** Reduce to 150 HP, or demonstrate *virtus* that satisfies him (DM judgment). He calls "Enough" and lowers his weapon.
+
+Mars draws a weapon forged from every Roman *pilum* he ever blessed.
 - **Environmental effect:** Each round a random barracks building phases into the arena as a terrain feature. Use them for cover or as hazards (burning roof beams, collapsed walls). Clever use grants advantage for one round as Mars appreciates the tactic.
 - Stealth DC 15 (active: repositioning behind a phasing building while Mars' attention is on another character): On success, Mars pivots to that new position next round but wastes a movement action doing so. On failure, he pivots immediately and that character becomes his priority target. A god is hard to hide from. But harder is not impossible.
 - Animal Handling DC 12 (passive, if Cassia or her crow familiar is present at the arena edge): If Cassia's crow is circling one specific witness, Animal Handling DC 12 passive identifies this as attention circling rather than fear circling. The crow is pointing at someone. Who it is pointing at is the person Mars first looked at in the opening moment -- the one who made the genuine grove sacrifice. Mars has been watching that person since Session 3. Tell the player.

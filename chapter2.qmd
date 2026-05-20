@@ -73,6 +73,12 @@ Before the session begins, confirm what happened in Session 1 and update NPC pos
 | Centurion Varro | Quietly arming and positioning his most trusted men near the spear. | Protecting the party whether they want it or not |
 | Tribune Lucius | Just arrived. Performing confidence he doesn't feel. | Complete his mission from Brutus; get the spear destroyed without his fingerprints on it |
 | Vercingetorix | Camped two miles north with 80 warriors. Scouts watching the fort. | Waiting for an opportunity; knows the Romans are distracted |
+| Aelius Rufus *(if stabilized in S1)* | Recovering in medicus quarters, bandaged but mobile. | Find whoever saved his life. He wants to tell them what Marius said just before the killing started: *"Give it to me and I will keep you safe"* -- spoken while looking directly at whoever held the spear. That specificity is information Cassia does not have yet. |
+
+::: {.dm-note}
+**Aelius Rufus scene hook:** If the party visits the medicus quarters during Scene 2's investigation window, Aelius Rufus is there. No check required -- he recognizes them and will talk. He does not know why the spear spoke to one person specifically. He only knows that it did. That detail can seed Cassia's Session 2 observation track if the party passes it to her.
+:::
+
 
 ### Maps for This Session
 
@@ -123,6 +129,8 @@ The morning BEFORE the Tribune arrives. Dawn watch. One of the fort's gate sentr
 ## The Sextus Murder: A Three Clue Rule Mystery
 
 The dead sentry is not a dropped thread. It's the first evidence of Brutus' reach -- he has a sleeper agent inside the fort. The agent (Decanus Quintus Flavius, a 12-year veteran who owes his family's debts to a man connected to Brutus) killed Sextus when Sextus caught him tampering with the spear's storage chains the night before. He then carved "ROMA CADIT" as misdirection -- making it look like a Germanic or dissident act -- and left the fort with the Tribune's entourage, hiding in plain sight.
+
+**Timeline note:** Quintus Flavius was pre-arranged by Brutus to join the Tribune's escort weeks in advance as a "local liaison" -- the paperwork was prepared before the Tribune's arrival and delivered with the sealed orders. The Tribune may not know who Quintus actually is. Quintus killed Sextus that specific morning because he knew it was his last opportunity before the Tribune's departure began the following day. The timing was his. The cover was Brutus'.
 
 The party doesn't need to solve this in Session 2. But the clues are here.
 
@@ -345,6 +353,12 @@ Seed for Session 3: wherever they end up, they're moving — deeper into the for
 - **Agenda:** Use legal authority to isolate the party, then manufacture a crisis that justifies destroying the spear
 - **Secret:** He's not convinced destroying it is right. Cassia's arguments are getting through. He's doubting the mission.
 
+**Senator Gaius Cassius Brutus (off-screen, never present)**
+- **Objective:** Prevent the spear from reaching Rome where it passes beyond his control
+- **Goal this session:** Get the Tribune to secure or destroy the spear; maintain deniability
+- **Agenda:** Directs through Lucius. Has pre-positioned Quintus Flavius as an insurance agent. If the Tribune's approach fails, the fort's destruction is an acceptable outcome.
+- **Secret:** Has a secondary ritual prepared -- a private ceremony under different auspices -- in case the Tribune fails entirely. He does not need the fort to survive; he only needs the spear to disappear.
+
 **Vercingetorix the Red**
 - **Objective:** Protect his people from Roman expansion
 - **Goal (this session):** Reach the spear and either destroy it or take it back to his tribe's custody
@@ -385,6 +399,10 @@ Vercingetorix carries three generations of knowledge about the spear. He will no
 | **Medium** (talked to him, acknowledged his people's claim) | The above, plus: *"It cannot be destroyed by Roman hands alone. There is a place. A grove. One day's march into the Teutoburg Forest, past the Vitulans river. My people know the way. You do not."* |
 | **High** (openly respected his people, treated him as an equal) | All of the above, plus: *"The grove requires a willing sacrifice. Not blood. Something real. My grandfather's ritual failed because the Roman soldier who volunteered chose something he did not actually care about. The grove knew."* This is the core ritual mechanic for Session 3, given early. |
 | **Complete trust** (proved by action) | *"I am dying. I have perhaps a year. This is my last campaign. I chose this one because of the spear. If your party destroys it, my people's three-generation wound closes. That is enough for me."* This unlocks Vercingetorix as a full ally for Sessions 3 and 4 -- he will go to the grove himself. |
+
+**If the party kills Vercingetorix in Session 2:** His lieutenant (use the same trust track, same knowledge -- the lieutenant carries everything Vercingetorix knew, but the personal history is absent). The Complete Trust entry costs one additional exchange to unlock because the party killed their chief. That is the consequence, not a brick wall. Use Arnulf from the NPC token set, same Gladiator stat block.
+
+**Dying condition detail (DM only):** Vercingetorix is dying from a slow wasting illness -- almost certainly a Roman-introduced fever disease he contracted during trading contact with frontier settlements. His tribe's healers have no remedy. He knows what it is; he has watched it take others. He does not tell the party unless they reach Complete Trust because it changes how they treat him, and he does not want that. In Session 4 "dying faster" means the siege stress is accelerating the wasting. By Session 5's epilogue he has perhaps three months.
 
 ### Vercingetorix Extended Dialogue
 
@@ -494,6 +512,11 @@ Both skills reach the same information by different paths. Perception notices th
 *History DC 13 (passive -- character with +3 or better History):*
 
 "G.C.B." is enough for a character with Roman political history. Gaius Cassius Brutus is documented: Republican rhetoric, frontier contracts, known for funding causes that weaken the Emperor's frontier authority. A character who passes this knows why destroying a divine weapon found on the frontier serves Brutus' interests -- it removes something the Emperor could use.
+
+::: {.dm-note}
+**DM note -- the compound name:** Players with classical history knowledge will notice that "Gaius Cassius Brutus" combines two of the most famous Republican assassins: Gaius Cassius Longinus and Marcus Junius Brutus. They are right to notice it. Brutus chose this cognomen deliberately -- he is not descended from either figure. He adopted the compound name as a political statement, aligning himself with the tradition of senatorial checks on military power. If players ask about it, confirm their suspicion: this is his manifesto written in his name. He sees himself as heir to that tradition, not a murderer, but a corrector of tyrants.
+:::
+
 
 *Insight DC 16 (active: reading the Tribune during a sustained conversation):*
 - Land 5 below: He is performing. You can see that much. What is underneath it: not visible yet.
