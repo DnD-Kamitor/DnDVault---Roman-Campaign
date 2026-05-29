@@ -1,0 +1,46 @@
+{
+  "name": "Julia Jana",
+  "player": "Julia",
+  "race": "Aasimar (Radiant Soul)",
+  "class": "Cleric",
+  "subclass": "Twilight",
+  "level": 3,
+  "background": "Noble",
+  "role": "Optio",
+
+  "ability_scores": {
+    "STR": 16,
+    "DEX": 10,
+    "CON": 14,
+    "INT": 8,
+    "WIS": 16,
+    "CHA": 10
+  },
+
+  "hp_max": 24,
+
+  "skill_proficiencies": ["History", "Insight", "Persuasion", "Religion"],
+  "expertise": [],
+  "skill_overrides": {
+    "Religion": 4,
+    "Persuasion": 4
+  },
+
+  "saving_throw_proficiencies": ["WIS", "CHA"],
+
+  "spellcasting_ability": "WIS",
+
+  "languages": ["Common (Latin)", "Greek (Elvish)", "Germanic (Goblin)", "Sacred Language of the Janus Cult"],
+
+  "citizenship": "Civis",
+
+  "corruption_level": 0,
+  "commendationes": 0,
+
+  "portrait_file": "Juliana.jpeg",
+  "portrait_color": "#4a3a9e",
+
+  "ac_override": 21,
+
+  "notes": "Alignment LN. Gens Jana — lineage to god Janus. Aasimar: resistance radiant+necrotic, healing hands (1x LR 2d4), light bearer, 3 extra radiant dmg + fly 1 min (BA). Spellcasting WIS, Spell DC 13, Spell Atk +5. Cantrips: guidance, light, spare the dying, toll the dead. L1: bless, faerie fire (always prep), guiding bolt, healing word, sleep (always prep). L2: aid, moonbeam (always prep), see invisibility (always prep), silence. Feats: Adv WIS Insight vs deception/loyalty (10+ min interrogation, DM lies shown as NPC lies). Once/session reroll INT. BA move ally 60ft without reaction. Adv visual stealth in dim/dark. 3 servants: Primus, Secondus, Tertius."
+}

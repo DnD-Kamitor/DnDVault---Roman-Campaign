@@ -8,17 +8,20 @@ Usage:
 
 Output: Maptool/tokens/players/<CharacterName>.rptok
 
-Properties included per token:
-  HP / MaxHP / TempHP / AC / Speed / Initiative / Level / Class / Race /
-  Background / ProfBonus / STR-CHA scores + mods / all saving throws /
-  all 18 skill bonuses / Passive Perception|Investigation|Insight /
-  SpellcastingAbility / SpellSaveDC / SpellAttackBonus /
-  UnitRole / CorruptionLevel / CommendationesCount / CitizenshipStatus /
-  Armor / Languages / Notes
+Portrait lookup (in order):
+  1. "portrait_file" field in JSON (filename relative to players/)
+  2. Auto-detect: any .jpg/.jpeg/.png in players/ whose stem contains character first name
+  3. Fallback: solid-color square from "portrait_color" field
+
+Properties per token: HP/MaxHP/TempHP/AC/Speed/Initiative/Level/Class/Subclass/Race/
+Background/ProfBonus / STR-CHA scores+mods / all saving throws / all 18 skill bonuses /
+Passive Perception|Investigation|Insight / SpellcastingAbility/SpellSaveDC/SpellAttackBonus /
+UnitRole/CorruptionLevel/CommendationesCount/CitizenshipStatus / Armor/Languages/Notes
 """
 
 import base64
 import hashlib
+import io
 import json
 import struct
 import sys
@@ -27,11 +30,17 @@ import zipfile
 import zlib
 from pathlib import Path
 
-REPO_ROOT  = Path(__file__).parent.parent
+try:
+    from PIL import Image as PILImage
+    HAS_PIL = True
+except ImportError:
+    HAS_PIL = False
+
+REPO_ROOT   = Path(__file__).parent.parent
 PLAYERS_DIR = REPO_ROOT / "players"
 OUTPUT_DIR  = REPO_ROOT / "Maptool" / "tokens" / "players"
 
-# ── Role armor table (from roles.qmd lines 137-154) ─────────────────────────
+# ── Role armor table (roles.qmd lines 137-154) ───────────────────────────────
 
 ROLE_ARMOR = {
     "Optio":            {"armor": "Lorica Hamata",       "base_ac": 14, "dex_cap": 2, "shield": True,  "flat": False},
@@ -87,38 +96,76 @@ def calc_ac(cs):
     return ac + (2 if armor["shield"] else 0)
 
 def calc_skills(cs):
-    pb = prof_bonus(cs["level"])
-    profs = set(cs.get("skill_proficiencies", []))
+    pb       = prof_bonus(cs["level"])
+    profs    = set(cs.get("skill_proficiencies", []))
     expertise = set(cs.get("expertise", []))
-    scores = cs["ability_scores"]
-    result = {}
+    overrides = cs.get("skill_overrides", {})
+    scores   = cs["ability_scores"]
+    result   = {}
     for skill, ability in SKILL_ABILITY.items():
-        base = ability_mod(scores[ability])
-        if skill in expertise:
-            result[skill] = base + pb * 2
+        if skill in overrides:
+            result[skill] = overrides[skill]
+        elif skill in expertise:
+            result[skill] = ability_mod(scores[ability]) + pb * 2
         elif skill in profs:
-            result[skill] = base + pb
+            result[skill] = ability_mod(scores[ability]) + pb
         else:
-            result[skill] = base
+            result[skill] = ability_mod(scores[ability])
     return result
 
 def calc_saves(cs):
-    pb = prof_bonus(cs["level"])
+    pb         = prof_bonus(cs["level"])
     save_profs = set(cs.get("saving_throw_proficiencies", []))
-    scores = cs["ability_scores"]
+    scores     = cs["ability_scores"]
     return {ab: ability_mod(scores[ab]) + (pb if ab in save_profs else 0) for ab in ABILITIES}
 
 
-# ── Minimal PNG (stdlib only) ─────────────────────────────────────────────────
+# ── Portrait image loading ────────────────────────────────────────────────────
+
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".webp"}
+
+def _pil_to_png(img, size=200):
+    img = img.convert("RGBA")
+    w, h = img.size
+    side = min(w, h)
+    img  = img.crop(((w - side) // 2, (h - side) // 2,
+                     (w + side) // 2, (h + side) // 2))
+    img  = img.resize((size, size), PILImage.LANCZOS)
+    buf  = io.BytesIO()
+    img.save(buf, format="PNG")
+    return buf.getvalue()
+
+def load_portrait(cs):
+    """Return PNG bytes for character portrait, or None if no image found."""
+    if not HAS_PIL:
+        return None
+
+    # 1. Explicit portrait_file field
+    portrait_file = cs.get("portrait_file", "").strip()
+    if portrait_file:
+        path = PLAYERS_DIR / portrait_file
+        if path.exists():
+            return _pil_to_png(PILImage.open(path))
+
+    # 2. Auto-detect by first name
+    first_name = cs["name"].split()[0].lower()
+    for f in sorted(PLAYERS_DIR.iterdir()):
+        if f.suffix.lower() in IMAGE_EXTS and first_name in f.stem.lower():
+            return _pil_to_png(PILImage.open(f))
+
+    return None
+
+
+# ── Minimal PNG fallback (stdlib only) ───────────────────────────────────────
 
 def _chunk(tag, data):
     tag_b = tag.encode() if isinstance(tag, str) else tag
-    crc = struct.pack(">I", zlib.crc32(tag_b + data) & 0xFFFFFFFF)
+    crc   = struct.pack(">I", zlib.crc32(tag_b + data) & 0xFFFFFFFF)
     return struct.pack(">I", len(data)) + tag_b + data + crc
 
-def make_png(r, g, b, size=100):
+def make_color_png(r, g, b, size=200):
     ihdr = _chunk("IHDR", struct.pack(">IIBBBBB", size, size, 8, 2, 0, 0, 0))
-    raw = b"".join(b"\x00" + bytes([r, g, b] * size) for _ in range(size))
+    raw  = b"".join(b"\x00" + bytes([r, g, b] * size) for _ in range(size))
     idat = _chunk("IDAT", zlib.compress(raw))
     iend = _chunk("IEND", b"")
     return b"\x89PNG\r\n\x1a\n" + ihdr + idat + iend
@@ -131,7 +178,7 @@ def new_baguid():
     return base64.b64encode(uuid.uuid4().bytes).decode()
 
 
-# ── .rptok XML builders ───────────────────────────────────────────────────────
+# ── .rptok XML builder ────────────────────────────────────────────────────────
 
 def _prop(key, value):
     return (
@@ -146,12 +193,12 @@ def _prop(key, value):
     )
 
 def build_content_xml(cs, image_md5):
-    scores = cs["ability_scores"]
-    level  = cs["level"]
-    pb     = prof_bonus(level)
-    skills = calc_skills(cs)
-    saves  = calc_saves(cs)
-    ac     = calc_ac(cs)
+    scores  = cs["ability_scores"]
+    level   = cs["level"]
+    pb      = prof_bonus(level)
+    skills  = calc_skills(cs)
+    saves   = calc_saves(cs)
+    ac      = calc_ac(cs)
 
     props = {}
     props["HP"]         = cs["hp_max"]
@@ -168,9 +215,9 @@ def build_content_xml(cs, image_md5):
     props["ProfBonus"]  = pb
 
     for ab in ABILITIES:
-        props[ab]            = scores[ab]
-        props[f"{ab}Mod"]    = ability_mod(scores[ab])
-        props[f"{ab}Save"]   = saves[ab]
+        props[ab]          = scores[ab]
+        props[f"{ab}Mod"]  = ability_mod(scores[ab])
+        props[f"{ab}Save"] = saves[ab]
 
     for skill, val in skills.items():
         props[skill.replace(" ", "")] = val
@@ -179,7 +226,7 @@ def build_content_xml(cs, image_md5):
     props["PassiveInvestigation"] = 10 + skills["Investigation"]
     props["PassiveInsight"]       = 10 + skills["Insight"]
 
-    spell_ab = cs.get("spellcasting_ability", "")
+    spell_ab  = cs.get("spellcasting_ability", "")
     spell_mod = ability_mod(scores.get(spell_ab, 10)) if spell_ab else 0
     props["SpellcastingAbility"] = spell_ab
     props["SpellSaveDC"]         = (8 + pb + spell_mod) if spell_ab else 0
@@ -189,7 +236,7 @@ def build_content_xml(cs, image_md5):
     props["CorruptionLevel"]     = cs.get("corruption_level", 0)
     props["CommendationesCount"] = cs.get("commendationes", 0)
     props["CitizenshipStatus"]   = cs.get("citizenship", "Peregrinus")
-    props["Armor"]               = ROLE_ARMOR.get(cs.get("role", ""), {}).get("armor", "None")
+    props["Armor"]               = ROLE_ARMOR.get(cs.get("role", ""), {}).get("armor", "See notes")
     props["Languages"]           = ", ".join(cs.get("languages", []))
     props["Notes"]               = cs.get("notes", "")
 
@@ -264,10 +311,25 @@ def generate_token(sheet_path, output_dir):
     with open(sheet_path) as f:
         cs = json.load(f)
 
-    r, g, b = hex_to_rgb(cs.get("portrait_color", "#8B0000"))
-    png      = make_png(r, g, b, 100)
-    thumb    = make_png(r, g, b, 50)
-    md5      = hashlib.md5(png).hexdigest()
+    # Portrait: real image or color fallback
+    png = load_portrait(cs)
+    if png is None:
+        r, g, b = hex_to_rgb(cs.get("portrait_color", "#8B0000"))
+        png = make_color_png(r, g, b, 200)
+        portrait_src = "color"
+    else:
+        portrait_src = cs.get("portrait_file") or "auto-detected"
+
+    # Thumbnail: always a resized version
+    if HAS_PIL:
+        img   = PILImage.open(io.BytesIO(png))
+        thumb = _pil_to_png(img, 50)
+    else:
+        thumb = png
+
+    md5  = hashlib.md5(png).hexdigest()
+    ac   = calc_ac(cs)
+    role = cs.get("role") or "unassigned"
 
     content_xml    = build_content_xml(cs, md5)
     properties_xml = build_properties_xml()
@@ -283,7 +345,7 @@ def generate_token(sheet_path, output_dir):
         zf.writestr("thumbnail", thumb)
         zf.writestr("thumbnail_large", png)
 
-    print(f"  {cs['name']} ({cs.get('role','?')}, L{cs['level']}, AC {calc_ac(cs)}) → {out_path.name}")
+    print(f"  {cs['name']:<28} {cs.get('race','?'):<30} {cs.get('class','?'):<12} L{cs['level']} AC{ac:<4} role={role}  portrait={portrait_src}")
     return out_path
 
 
@@ -293,7 +355,11 @@ def main():
     if len(sys.argv) > 1:
         sheets = [Path(p) for p in sys.argv[1:]]
     else:
-        sheets = sorted(p for p in PLAYERS_DIR.glob("*.json") if p.name != "template.json")
+        sheets = sorted(
+            p for p in PLAYERS_DIR.glob("*.json")
+            if p.name not in ("template.json",)
+            and not p.name.startswith("_")
+        )
 
     if not sheets:
         print(f"No character sheets found in {PLAYERS_DIR}")

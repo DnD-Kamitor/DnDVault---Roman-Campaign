@@ -1,0 +1,45 @@
+{
+  "_note": "Character sheet pending. Stats are placeholder — update when player submits sheet.",
+
+  "name": "Iris",
+  "player": "Iris",
+  "race": "",
+  "class": "",
+  "subclass": "",
+  "level": 3,
+  "background": "",
+  "role": "",
+
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 10,
+    "CON": 10,
+    "INT": 10,
+    "WIS": 10,
+    "CHA": 10
+  },
+
+  "hp_max": 0,
+
+  "skill_proficiencies": [],
+  "expertise": [],
+  "skill_overrides": {},
+
+  "saving_throw_proficiencies": [],
+
+  "spellcasting_ability": "",
+
+  "languages": [],
+
+  "citizenship": "Peregrinus",
+
+  "corruption_level": 0,
+  "commendationes": 0,
+
+  "portrait_file": "iris.png",
+  "portrait_color": "#7a3a9e",
+
+  "ac_override": null,
+
+  "notes": "Sheet pending."
+}
