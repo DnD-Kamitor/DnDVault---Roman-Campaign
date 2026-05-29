@@ -1,35 +1,33 @@
 {
-  "_note": "Character sheet pending. Stats are placeholder — update when player submits sheet.",
-
   "name": "Iris",
-  "player": "Iris",
-  "race": "",
-  "class": "",
-  "subclass": "",
+  "player": "Gyto",
+  "race": "Shadar-kai",
+  "class": "Druid",
+  "subclass": "Circle of Stars",
   "level": 3,
-  "background": "",
+  "background": "Haunted One",
   "role": "",
 
   "ability_scores": {
-    "STR": 10,
-    "DEX": 10,
-    "CON": 10,
+    "STR": 8,
+    "DEX": 17,
+    "CON": 14,
     "INT": 10,
-    "WIS": 10,
-    "CHA": 10
+    "WIS": 16,
+    "CHA": 8
   },
 
-  "hp_max": 0,
+  "hp_max": 24,
 
-  "skill_proficiencies": [],
+  "skill_proficiencies": ["Insight", "Perception", "Stealth", "Survival"],
   "expertise": [],
   "skill_overrides": {},
 
-  "saving_throw_proficiencies": [],
+  "saving_throw_proficiencies": ["INT", "WIS"],
 
-  "spellcasting_ability": "",
+  "spellcasting_ability": "WIS",
 
-  "languages": [],
+  "languages": ["Celestial", "Common", "Druidic", "Elvish", "Infernal"],
 
   "citizenship": "Peregrinus",
 
@@ -39,7 +37,7 @@
   "portrait_file": "iris.png",
   "portrait_color": "#7a3a9e",
 
-  "ac_override": null,
+  "ac_override": 17,
 
-  "notes": "Sheet pending."
+  "notes": "Alignment unknown. Shadar-kai: Darkvision 60ft, Necrotic Resistance, Immunity magical sleep, Fey Ancestry (adv saves vs charmed / adv to avoid+end charmed), Keen Senses (Perception prof), Trance (long rest in 4h). Blessing of Raven Queen: BA teleport 30ft to unoccupied space seen 2x/LR; on teleport gain resistance all damage until next turn start. Creature type Humanoid+Elf. Druid: Wild Shape 2/SR (2nd CR 1/4 no fly/swim; 4th CR 1/2; 8th CR 1). Spellcasting WIS DC13 Atk+5. Star Map: Guiding Bolt always prepared+free cast (2/LR). Starry Form (BA Wild Shape use): Archer (BA ranged +5 1d8+3 radiant 60ft), Chalice (cast healing spell → creature 30ft regains 1d8+3), Dragon (INT/WIS check or concentration save roll 9or lower treat as 10). Resistances: Necrotic. Immunities: magical sleep. Equipment: Galea Attica, Lorica Squamata, Dagger+Longbow, Druidic Focus. Passive Perception 15, Passive Insight 15."
 }
