@@ -387,11 +387,22 @@ def generate_token(sheet_path, output_dir):
     ac    = calc_ac(cs)
     role  = cs.get("role") or "unassigned"
 
+    asset_name = cs["name"].replace(" ", "_").lower()
+    asset_xml = (
+        f"<net.rptools.maptool.model.Asset>\n"
+        f"  <id>\n    <id>{md5}</id>\n  </id>\n"
+        f"  <name>{asset_name}</name>\n"
+        f"  <extension>png</extension>\n"
+        f"  <type>image</type>\n"
+        f"  <image/>\n"
+        f"</net.rptools.maptool.model.Asset>"
+    )
+
     with zipfile.ZipFile(output_dir / f"{cs['name'].replace(' ','_')}.rptok",
                          "w", zipfile.ZIP_DEFLATED) as zf:
         zf.writestr("content.xml", build_content_xml(cs, md5))
         zf.writestr("properties.xml", build_properties_xml())
-        zf.writestr(f"assets/{md5}", png)
+        zf.writestr(f"assets/{md5}", asset_xml)
         zf.writestr(f"assets/{md5}.png", png)
         zf.writestr("thumbnail", thumb)
         zf.writestr("thumbnail_large", png)
