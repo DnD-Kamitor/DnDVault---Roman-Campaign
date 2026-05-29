@@ -341,7 +341,6 @@ def build_content_xml(cs, image_md5):
   <isFlippedX>false</isFlippedX>
   <isFlippedY>false</isFlippedY>
   <isFlippedIso>false</isFlippedIso>
-  <charsheetImage/><portraitImage/>
   <hasSight>true</hasSight>
   <sightType>Normal Vision</sightType>
   <hasFog>false</hasFog>
