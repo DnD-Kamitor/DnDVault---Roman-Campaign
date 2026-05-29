@@ -1,0 +1,52 @@
+{
+  "_instructions": "Copy this file to players/YourCharacterName.json and fill it in. Remove this _instructions field.",
+
+  "name": "Marcus Aemilius",
+  "player": "Alice",
+  "race": "Human",
+  "class": "Fighter",
+  "subclass": "Battle Master",
+  "level": 3,
+  "background": "Soldier",
+  "role": "Optio",
+
+  "ability_scores": {
+    "STR": 16,
+    "DEX": 12,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 8
+  },
+
+  "hp_max": 28,
+
+  "skill_proficiencies": [
+    "Athletics",
+    "Intimidation",
+    "History",
+    "Perception"
+  ],
+
+  "expertise": [],
+
+  "saving_throw_proficiencies": ["STR", "CON"],
+
+  "spellcasting_ability": "",
+
+  "languages": [
+    "Latin",
+    "Common"
+  ],
+
+  "citizenship": "Peregrinus",
+
+  "corruption_level": 0,
+  "commendationes": 0,
+
+  "portrait_color": "#8B0000",
+
+  "ac_override": null,
+
+  "notes": ""
+}
