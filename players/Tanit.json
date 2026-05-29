@@ -19,10 +19,11 @@
 
   "hp_max": 23,
 
-  "skill_proficiencies": ["Sleight of Hand", "History", "Deception", "Persuasion"],
+  "skill_proficiencies": ["Sleight of Hand", "History", "Deception", "Performance", "Persuasion"],
   "expertise": ["Deception", "Persuasion"],
   "skill_overrides": {
-    "History": 6
+    "History": 6,
+    "Religion": 4
   },
 
   "saving_throw_proficiencies": ["DEX", "CHA"],

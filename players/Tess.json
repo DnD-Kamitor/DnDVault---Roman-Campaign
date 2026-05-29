@@ -39,7 +39,7 @@
 
   "ac_override": 11,
 
-  "_ac_note": "AC 11 is base. In play: Arcane Armor (Guardian model) applies — update when armor is crafted.",
+  "_ac_note": "AC 11 = unarmored base from sheet. As Faber her role kit is Lorica Hamata+Scutum. Once she crafts Arcane Armor from that kit: AC 17 (14+DEX1+shield2). Update ac_override to 17 after session 1.",
 
   "background_story": "Comes from a city that was attacked while unprepared. Cannot leave broken equipment alone — compulsively repairs buckles, shafts, rivets in camp. Not efficiency: anxiety wearing the mask of productivity. Cannot stop because stopping means thinking about what she could not fix in time.",
 
