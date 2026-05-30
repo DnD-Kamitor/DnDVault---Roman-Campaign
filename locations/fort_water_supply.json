@@ -1,0 +1,8 @@
+{
+  "name": "North Gate Well (Water Supply)",
+  "location_type": "fort",
+  "player_description": "The fort's primary well is set into the northwest corner of the interior. A winch system, a rope, a wooden bucket. Cold water comes up from about thirty feet down. A second well near the east granary is the backup supply. The garrison drinks here and fills cooking vessels here every morning.",
+  "gm_notes": "In Session 4 (Siege Day Order document): 'Water: contaminated at north gate well (boil)'. The contamination is not accidental — it is sabotage. DC 14 Investigation: the contamination is recent (within 24 hours) and concentrated near the well mouth, not throughout the water table — someone poured something in. DC 15 Medicine: the substance used is identifiable as a concentrated brine of spoiled organic matter — not poison, but enough to cause illness if consumed without boiling. Valeria knows the correct boiling procedure. Party Medicus can identify this automatically. Practical impact: if the party catches this before Session 4, they can mitigate the ration crisis; if not, the garrison's combat effectiveness drops by session end.",
+  "token_color": "#4a6a8a",
+  "session": 2
+}

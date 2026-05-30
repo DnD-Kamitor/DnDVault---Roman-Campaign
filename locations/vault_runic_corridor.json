@@ -1,0 +1,8 @@
+{
+  "name": "Vault: Runic Corridor",
+  "location_type": "vault",
+  "player_description": "A narrow corridor, perhaps forty feet long. The floor is covered in carved symbols — a continuous pattern of runes that runs the full length and width of the passage. There is no way to cross without stepping on them. The ceiling is low. The walls are close. The runes glow faintly when you enter.",
+  "gm_notes": "FLOOR PUZZLE — between Binding Chamber and Altar Chamber. The runes are a ward sequence. Correct path: step only on TIWAZ runes (the war symbol — the upward arrow). Three paths to identify them: (1) Religion DC 12 to identify TIWAZ specifically. (2) Shield-order clue from Shield Hall: the shields on the walls in that room have TIWAZ carved on their faces — the shapes match floor symbols. (3) History DC 14: Rune sequences used in Germanic warding always anchor on TIWAZ as the structural rune. Wrong step: 2d6 lightning damage, DC 13 DEX save for half. The corridor has 8 stepping points. A character who identifies TIWAZ can move at half speed safely. Running through: 4 random stepping points, DC 10 DEX save each. Creative solutions (floating, climbing the walls): possible with Athletics DC 14 per character. Party member already at 0 HP who is dragged through: automatic fail on all saves — this is the dungeon's final filter.",
+  "token_color": "#1a1a2e",
+  "session": 1
+}

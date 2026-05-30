@@ -1,0 +1,8 @@
+{
+  "name": "Vault: Bone Chamber",
+  "location_type": "vault",
+  "player_description": "The passage opens into a chamber that was once used for storage. Wooden shelves have collapsed into rot. What remains on the floor is not the shelves. The smell is old and specific. Two shapes crouch in the far corner. A third stands upright.",
+  "gm_notes": "RIGHT BRANCH — after Flooded Gallery. ENCOUNTER: 2 Ghouls + 1 Ghast (Hard, ~1700 adjusted XP for 5 Level 3 players). Ghast has Stench aura: DC 10 CON save each turn or Poisoned while in 5ft. Ghoul Paralysis on hit: DC 10 CON save or Paralyzed 1 min (repeat save end of each turn). Tactical note: the Ghast directs the Ghouls — eliminate it first to break coordination. The Ghouls will not retreat; the Ghast will if below 10 HP and an exit is available. If a paralyzed PC is dragged away by a Ghoul, the other Ghouls feed — this is not a cinematic beat, it is the actual threat. Loot if searched: one Ghoul wears a legionary ring (Metellus's). DC 13 Perception to notice it. This is evidence the excavation team died here, not in an accident.",
+  "token_color": "#2d4a1a",
+  "session": 1
+}

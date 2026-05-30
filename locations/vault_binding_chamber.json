@@ -1,0 +1,8 @@
+{
+  "name": "Vault: Binding Chamber",
+  "location_type": "vault",
+  "player_description": "Both passages converge here. In the center of the floor: a circular depression, perhaps three feet across, with four iron chains anchored in the stone at the cardinal points. The chains are old. The lock mechanism at their center is not. Someone replaced the original binding with a chain puzzle lock that looks Roman but uses a sequence of symbols you have not seen in the fort.",
+  "gm_notes": "CONVERGENCE POINT — both left (Shield Hall) and right (Flooded Gallery/Bone Chamber) branches meet here. CHAIN PUZZLE: the lock requires the symbols in the correct sequence. Three clue paths: (1) Shield Hall hidden alcove wax tablet has partial sequence. (2) Flooded Gallery Germanic warrior's framea has runes matching partial sequence. (3) Religion DC 14: the sequence is the TIWAZ-HAGALAZ-NAUDHIZ-ISA-OTHALAN binding order from Handout 2. With all three clues: automatic success. With two: DC 12 Investigation. With one: DC 15. With none: DC 18. Failed attempt: one random chain snaps, releasing a pressure wave — all creatures in 10ft make DC 12 STR save or take 1d6 bludgeoning and fall prone. The lock is not protecting something; it is containing something. When it opens, the air pressure changes noticeably.",
+  "token_color": "#1a1a2e",
+  "session": 1
+}

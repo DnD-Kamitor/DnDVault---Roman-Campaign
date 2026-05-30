@@ -1,0 +1,8 @@
+{
+  "name": "Latrina (Latrines)",
+  "location_type": "fort",
+  "player_description": "The fort latrine runs along the northeast wall. A long stone bench with holes over a channel of running water. No privacy, no partition. You share this with whoever else is on the same watch schedule. Romans consider communal latrine use unremarkable. The sponge-on-a-stick for cleaning is shared. So is everything overheard here.",
+  "gm_notes": "Best free intelligence location in the fort. Soldiers talk candidly here precisely because they are not in a professional context. DC 10 Perception (passive, anyone who visits): overhear one ambient rumor about fort morale or recent events. DC 12 Perception: a specific conversation between two off-duty soldiers about something that concerns them. Sessions 1-2 ambient rumor table: (1) Vault deaths were not an accident — Sextus's cousin was in the original excavation team. (2) Tribune's Praetorians have been seen near the south granary after dark. (3) Paterculus filed a fourth adverse omen report and Corvinus told him to stop filing. (4) Someone tried to bribe the gate guard last night; guard did not report it upward.",
+  "token_color": "#4a4a4a",
+  "session": 1
+}
