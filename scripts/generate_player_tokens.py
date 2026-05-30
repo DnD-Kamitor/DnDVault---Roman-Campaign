@@ -132,6 +132,10 @@ def calc_ac(cs):
     return armor["base_ac"] + min(dex, armor["dex_cap"]) + (2 if armor["shield"] else 0)
 
 def calc_skills(cs):
+    """Return skill proficiency FLAGS (0/1/2) matching the standard macro formula:
+    1d20 + AbilityMod + (Proficiency * SkillFlag)
+    0 = not proficient, 1 = proficient, 2 = expertise.
+    skill_overrides supply total bonuses; we back-convert to the closest flag."""
     pb        = prof_bonus(cs["level"])
     profs     = set(cs.get("skill_proficiencies", []))
     expertise = set(cs.get("expertise", []))
@@ -140,20 +144,22 @@ def calc_skills(cs):
     result    = {}
     for skill, ability in SKILL_ABILITY.items():
         if skill in overrides:
-            result[skill] = overrides[skill]
+            amod = ability_mod(scores[ability])
+            flag = (overrides[skill] - amod) // pb if pb else 0
+            result[skill] = max(0, flag)
         elif skill in expertise:
-            result[skill] = ability_mod(scores[ability]) + pb * 2
+            result[skill] = 2
         elif skill in profs:
-            result[skill] = ability_mod(scores[ability]) + pb
+            result[skill] = 1
         else:
-            result[skill] = ability_mod(scores[ability])
+            result[skill] = 0
     return result
 
 def calc_saves(cs):
-    pb         = prof_bonus(cs["level"])
+    """Return saving throw proficiency FLAGS (0 or 1) matching the standard macro formula:
+    1d20 + AbilityMod + (Proficiency * SaveFlag)"""
     save_profs = set(cs.get("saving_throw_proficiencies", []))
-    scores     = cs["ability_scores"]
-    return {ab: ability_mod(scores[ab]) + (pb if ab in save_profs else 0) for ab in ABILITIES}
+    return {ab: (1 if ab in save_profs else 0) for ab in ABILITIES}
 
 
 # ── Portrait loading ──────────────────────────────────────────────────────────
@@ -212,7 +218,7 @@ def _xe(s):
     return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 def _macro_entry(idx, label, group, color, command, fontcolor="black",
-                 fontsize="1.15em", minwidth="100px", sortby=""):
+                 fontsize="1.25em", minwidth="100px", sortby=""):
     return (
         f"  <entry>\n"
         f"    <int>{idx}</int>\n"
@@ -424,10 +430,13 @@ def build_content_xml(cs, image_md5):
     for skill, val in skills.items():
         props[SKILL_PROP[skill]] = val
 
-    # ── Passive checks ────────────────────────────────────────────────────────
-    props["PassivePerception"]    = 10 + skills["Perception"]
-    props["PassiveInsight"]       = 10 + skills["Insight"]
-    props["PassiveInvestigation"] = 10 + skills["Investigation"]
+    # ── Passive checks (10 + ability_mod + proficiency * flag) ──────────────────
+    def _passive(skill_name):
+        ability = SKILL_ABILITY[skill_name]
+        return 10 + ability_mod(scores[ability]) + pb * skills[skill_name]
+    props["PassivePerception"]    = _passive("Perception")
+    props["PassiveInsight"]       = _passive("Insight")
+    props["PassiveInvestigation"] = _passive("Investigation")
 
     # ── Spellcasting ──────────────────────────────────────────────────────────
     props["SpellcastingAbility"]  = spell_ab
