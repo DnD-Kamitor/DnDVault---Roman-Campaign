@@ -253,75 +253,156 @@ def _macro_entry(idx, label, group, color, command, fontcolor="black",
         f"  </entry>"
     )
 
-def _attack_cmd(atk, spell_mod_prop="0"):
-    """Return MTScript command string for one attack entry, or None to skip."""
+def _bcast(char_color, content_expr):
+    """Wrap MTScript content_expr in a colored broadcast() call."""
+    return (
+        f'[h: _msg = "* <span style=\'color:{char_color}\'>" + {content_expr} + "</span>"]'
+        f'[broadcast(_msg)]'
+    )
+
+def _roll_box(label_var, total_var, tip_var):
+    """MTScript fragment: highlighted box showing total with tooltip showing breakdown."""
+    # Outputs: <span style='background-color:#efefef' title='TIP'>TOTAL</span>
+    return (
+        f'"<b>{label_var}</b>: <span style=\'background-color:#efefef\' title=\'" + {tip_var} + "\'>" + {total_var} + "</span>"'
+    )
+
+def _attack_cmd(atk, spell_mod_prop="0", char_color="#333333"):
+    """Return MTScript command string for one attack entry, or None to skip.
+
+    Uses broadcast() + styled HTML to match Meleks framework visual style:
+    - Outer colored span uses the character's portrait_color
+    - Roll results appear in a gray box (#efefef background)
+    - Hover tooltip shows full breakdown (same pattern as Sheet skill check macros)
+    """
     atype  = atk.get("type", "melee")
     weapon = atk.get("weapon", "weapon")
     note   = atk.get("note", "")
-    note_part = f"<br><i style='color:gray'>({note})</i>" if note else ""
+    note_html = f"<br><i style='opacity:0.75;font-size:0.9em;'>{note}</i>" if note else ""
+
+    if atype == "damage":
+        return None   # merged into melee/ranged button
 
     if atype in ("melee", "ranged"):
-        # Resolve atk_props — substitute SpellAttackBonus with inline formula
+        # Resolve atk_props — substitute SpellAttackBonus with formula vars
+        raw_props = atk.get("atk_props", ["Proficiency"])
         resolved = []
-        for p in atk.get("atk_props", ["Proficiency"]):
+        for p in raw_props:
             if p == "SpellAttackBonus":
-                resolved.append(f"Proficiency + {spell_mod_prop}")
+                resolved.extend(["Proficiency", spell_mod_prop])
             else:
                 resolved.append(p)
-        atk_expr = " + ".join(resolved)
+
+        n           = len(resolved)
+        prop_labels = "+".join(resolved)                                     # "DexMod+Proficiency"
+        prop_decls  = "".join(f"[h: _p{i}={p}]" for i, p in enumerate(resolved))
+        prop_sum    = "+".join(f"_p{i}" for i in range(n))
+        tip_vals    = '+"+"+ '.join(f"_p{i}" for i in range(n))             # runtime val concat
 
         dice   = atk.get("damage_dice", "1d4")
         dmgmod = atk.get("damage_mod", "")
         if dmgmod == "SpellAttackBonus":
             dmgmod = spell_mod_prop
         dmgtyp = atk.get("damage_type", "damage")
-        dmg_expr = f"{dice} + {dmgmod}" if dmgmod else dice
 
-        # [h: critRoll] captures d20 for crit check; [e:] shows full breakdown inline
-        # e.g. "« critRoll+DexMod+Proficiency = 14+3+2 = 19 »"
-        return (
-            f"[h: critRoll = 1d20]"
-            f"/me [r, if(critRoll == 20): \"<b style='color:red'>CRITICALLY HITS</b> with\"; \"attacks with\"] "
-            f"{weapon}"
-            f"[r, if(critRoll == 1): \" but rolled a <b style='color:red'>NATURAL 1!</b>\"; \"!\"]<br>"
-            f"ATK: [e: critRoll + {atk_expr}] | DMG: [e: {dmg_expr}] {dmgtyp}"
-            f"{note_part}"
+        if dmgmod:
+            dmg_decls = f"[h: _dd={dice}][h: _dm={dmgmod}][h: _dt=_dd+_dm]"
+            dmg_tip   = f'"({dice}+{dmgmod}): "+_dd+"+"+_dm+"="+_dt'
+            dmg_total = "_dt"
+        else:
+            dmg_decls = f"[h: _dd={dice}][h: _dt=_dd]"
+            dmg_tip   = f'"{dice}: "+_dd'
+            dmg_total = "_dt"
+
+        atk_tip = f'"(1d20+{prop_labels}): "+_d20+"+"+{tip_vals}+"="+_atkTotal'
+
+        atk_box = _roll_box("ATK", "_atkTotal", "_atkTip")
+        dmg_box = _roll_box("DMG", dmg_total, "_dmgTip")
+
+        content = (
+            f'"<b>" + token.name + "</b>" + _critHtml + " attacks with {weapon}!<br>"'
+            f' + {atk_box}'
+            f' + " &nbsp;|&nbsp; "'
+            f' + {dmg_box}'
+            f' + " {dmgtyp}{note_html}"'
         )
 
-    elif atype == "damage":
-        # Merged into the melee/ranged macro above — skip separate button
-        return None
+        lines = [
+            "[h: _d20=1d20]",
+            prop_decls,
+            f"[h: _atkBonus={prop_sum}]",
+            f"[h: _atkTotal=_d20+_atkBonus]",
+            dmg_decls,
+            "[h: _crit=if(_d20==20,1,0)][h: _fumble=if(_d20==1,1,0)]",
+            f'[h: _critHtml=if(_crit," <b style=\'color:red\'>CRITICAL HIT!</b>",if(_fumble," <b style=\'color:red\'>FUMBLE!</b>",""))]',
+            f"[h: _atkTip={atk_tip}]",
+            f"[h: _dmgTip={dmg_tip}]",
+            _bcast(char_color, content),
+        ]
+        return "".join(lines)
 
     elif atype == "save":
-        dc_expr  = f"8 + Proficiency + {spell_mod_prop}"
         save_ab  = atk.get("save_ability", "WIS")
         dice     = atk.get("damage_dice", "1d4")
         dmgtyp   = atk.get("damage_type", "damage")
         on_fail  = atk.get("on_fail", "")
-        fail_part = f"<br><i>On fail: {on_fail}</i>" if on_fail else ""
-        return (
-            f"/me uses {weapon}!<br>"
-            f"DC [e: {dc_expr}] {save_ab} save or takes [e: {dice}] {dmgtyp} damage.{fail_part}{note_part}"
+        fail_html = f"<br><i>On fail: {on_fail}</i>" if on_fail else ""
+
+        dc_tip  = f'"(8+Proficiency+{spell_mod_prop}): 8+"+Proficiency+"+"+{spell_mod_prop}+"="+_dc'
+        dmg_tip = f'"{dice}: "+_dd'
+        dc_box  = _roll_box("DC", "_dc", "_dcTip")
+        dmg_box = _roll_box("DMG", "_dd", "_dmgTip")
+
+        content = (
+            f'"<b>" + token.name + "</b> uses {weapon}!<br>"'
+            f' + {dc_box}'
+            f' + " {save_ab} save or takes "'
+            f' + {dmg_box}'
+            f' + " {dmgtyp} damage.{fail_html}{note_html}"'
         )
+
+        lines = [
+            f"[h: _dc=8+Proficiency+{spell_mod_prop}]",
+            f"[h: _dd={dice}]",
+            f"[h: _dcTip={dc_tip}]",
+            f"[h: _dmgTip={dmg_tip}]",
+            _bcast(char_color, content),
+        ]
+        return "".join(lines)
 
     elif atype == "heal":
         dice   = atk.get("damage_dice", "1d4")
         dmgmod = atk.get("damage_mod", spell_mod_prop)
         if dmgmod == "SpellAttackBonus":
             dmgmod = spell_mod_prop
-        heal_expr = f"{dice} + {dmgmod}" if dmgmod else dice
-        return (
-            f"/me uses {weapon}!<br>"
-            f"Target regains [e: {heal_expr}] HP.{note_part}"
+        if dmgmod:
+            heal_decls = f"[h: _hd={dice}][h: _hm={dmgmod}][h: _ht=_hd+_hm]"
+            heal_tip   = f'"({dice}+{dmgmod}): "+_hd+"+"+_hm+"="+_ht'
+        else:
+            heal_decls = f"[h: _hd={dice}][h: _ht=_hd]"
+            heal_tip   = f'"{dice}: "+_hd'
+        heal_box = _roll_box("Heals", "_ht", "_healTip")
+
+        content = (
+            f'"<b>" + token.name + "</b> uses {weapon}!<br>"'
+            f' + {heal_box}'
+            f' + " HP.{note_html}"'
         )
+        lines = [heal_decls, f"[h: _healTip={heal_tip}]", _bcast(char_color, content)]
+        return "".join(lines)
 
     elif atype == "utility":
         dice = atk.get("damage_dice", "")
         if dice:
-            return f"/me uses {weapon}!<br>Roll: [e: {dice}].{note_part}"
-        return f"/me uses {weapon}!{note_part}"
+            roll_box = _roll_box("Roll", "_roll", "_tip")
+            content  = f'"<b>" + token.name + "</b> uses {weapon}!<br>" + {roll_box} + "{note_html}"'
+            lines    = [f"[h: _roll={dice}]", f'[h: _tip="{dice}: "+_roll]', _bcast(char_color, content)]
+            return "".join(lines)
+        content = f'"<b>" + token.name + "</b> uses {weapon}!{note_html}"'
+        return _bcast(char_color, content)
 
-    return f"/me uses {weapon}!{note_part}"
+    content = f'"<b>" + token.name + "</b> uses {weapon}!"'
+    return _bcast(char_color, content)
 
 def build_macros_xml(cs):
     # Standard macros from extracted Standard Token
@@ -336,15 +417,16 @@ def build_macros_xml(cs):
     else:
         standard_entries = ""
 
-    # Resolve spell modifier property name from spellcasting_ability
+    # Resolve spell modifier property name and character colour
     spell_ab       = cs.get("spellcasting_ability", "")
     spell_mod_prop = ABILITY_MOD.get(spell_ab, "0") if spell_ab else "0"
+    char_color     = cs.get("portrait_color", "#333333")
 
     # Character-specific attack macros (index 100+), skipping "damage" type
     attack_entries = []
     idx = 100
     for atk in cs.get("attacks", []):
-        cmd = _attack_cmd(atk, spell_mod_prop)
+        cmd = _attack_cmd(atk, spell_mod_prop, char_color)
         if cmd is None:
             continue
         color = atk.get("color", "default")
