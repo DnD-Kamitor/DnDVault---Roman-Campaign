@@ -54,6 +54,17 @@
       "damage_mod": "IntMod",
       "damage_type": "thunder",
       "color": "#a0d0ff"
+    },
+    {
+      "label": "Magic Stone",
+      "type": "melee",
+      "weapon": "Magic Stone",
+      "atk_props": ["SpellAttackBonus"],
+      "damage_dice": "1d6",
+      "damage_mod": "IntMod",
+      "damage_type": "bludgeoning",
+      "color": "#a0a0a0",
+      "note": "Ranged spell attack. Range 60ft. Duration 1 min. Thrown or launched from sling."
     }
   ],
 

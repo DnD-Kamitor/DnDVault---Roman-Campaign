@@ -247,43 +247,79 @@ def _macro_entry(idx, label, group, color, command, fontcolor="black",
         f"  </entry>"
     )
 
-def _attack_cmd(atk):
+def _attack_cmd(atk, spell_mod_prop="0"):
+    """Return MTScript command string for one attack entry, or None to skip."""
     atype  = atk.get("type", "melee")
     weapon = atk.get("weapon", "weapon")
-    if atype == "melee":
-        atk_expr = " + ".join(atk.get("atk_props", ["Proficiency"]))
+    note   = atk.get("note", "")
+    note_part = f"<br><i style='color:gray'>({note})</i>" if note else ""
+
+    if atype in ("melee", "ranged"):
+        # Resolve atk_props — substitute SpellAttackBonus with inline formula
+        resolved = []
+        for p in atk.get("atk_props", ["Proficiency"]):
+            if p == "SpellAttackBonus":
+                resolved.append(f"Proficiency + {spell_mod_prop}")
+            else:
+                resolved.append(p)
+        atk_expr = " + ".join(resolved)
+
+        dice   = atk.get("damage_dice", "1d4")
+        dmgmod = atk.get("damage_mod", "")
+        if dmgmod == "SpellAttackBonus":
+            dmgmod = spell_mod_prop
+        dmgtyp = atk.get("damage_type", "damage")
+        dmg_expr = f"{dice} + {dmgmod}" if dmgmod else dice
+
         return (
             f"/me [h:roll = 1d20]"
             f"[r, if(roll == 20): \"<b style='color:red'>CRITICALLY HITS</b> with\"; \"attacks with\"] "
             f"{weapon}"
             f"[r, if(roll == 1): \" but rolled a <b style='color:red'>NATURAL 1!</b>\"; \"!\"] "
-            f"(ATK: [t: roll + {atk_expr}])"
+            f"(ATK: [t: roll + {atk_expr}] | DMG: [t: {dmg_expr}] {dmgtyp})"
+            f"{note_part}"
         )
+
     elif atype == "damage":
-        dice   = atk.get("damage_dice", "1d4")
-        dmgmod = atk.get("damage_mod", "")
-        dmgtyp = atk.get("damage_type", "damage")
-        expr   = f"{dice} + {dmgmod}" if dmgmod else dice
-        return f"/me deals [t: {expr}] {dmgtyp} damage with {weapon}!"
+        # Merged into the melee/ranged macro above — skip separate button
+        return None
+
     elif atype == "save":
-        dc_prop = atk.get("dc_prop", "SpellSaveDC")
-        save_ab = atk.get("save_ability", "WIS")
-        dice    = atk.get("damage_dice", "1d4")
-        dmgtyp  = atk.get("damage_type", "damage")
-        on_fail = atk.get("on_fail", "")
-        fail_note = f" On a failed save: {on_fail}." if on_fail else ""
+        dc_expr  = f"8 + Proficiency + {spell_mod_prop}"
+        save_ab  = atk.get("save_ability", "WIS")
+        dice     = atk.get("damage_dice", "1d4")
+        dmgtyp   = atk.get("damage_type", "damage")
+        on_fail  = atk.get("on_fail", "")
+        fail_part = f"<br><i>On fail: {on_fail}</i>" if on_fail else ""
         return (
             f"/me uses {weapon}! "
-            f"Target makes DC [r: {dc_prop}] {save_ab} save "
-            f"or takes [t: {dice}] {dmgtyp} damage.{fail_note}"
+            f"Target makes DC [r: {dc_expr}] {save_ab} save "
+            f"or takes [t: {dice}] {dmgtyp} damage.{fail_part}{note_part}"
         )
-    return f"/me uses {weapon}!"
+
+    elif atype == "heal":
+        dice   = atk.get("damage_dice", "1d4")
+        dmgmod = atk.get("damage_mod", spell_mod_prop)
+        if dmgmod == "SpellAttackBonus":
+            dmgmod = spell_mod_prop
+        heal_expr = f"{dice} + {dmgmod}" if dmgmod else dice
+        return (
+            f"/me uses {weapon}! "
+            f"Target regains [t: {heal_expr}] HP.{note_part}"
+        )
+
+    elif atype == "utility":
+        dice = atk.get("damage_dice", "")
+        if dice:
+            return f"/me uses {weapon}! Roll: [t: {dice}].{note_part}"
+        return f"/me uses {weapon}!{note_part}"
+
+    return f"/me uses {weapon}!{note_part}"
 
 def build_macros_xml(cs):
     # Standard macros from extracted Standard Token
     if MACROS_XML.exists():
         raw = MACROS_XML.read_text()
-        # strip outer element tags, keep inner entries
         inner = raw.strip()
         if inner.startswith("<macroPropertiesMap>"):
             inner = inner[len("<macroPropertiesMap>"):]
@@ -293,15 +329,23 @@ def build_macros_xml(cs):
     else:
         standard_entries = ""
 
-    # Character-specific attack macros (index 100+)
+    # Resolve spell modifier property name from spellcasting_ability
+    spell_ab       = cs.get("spellcasting_ability", "")
+    spell_mod_prop = ABILITY_MOD.get(spell_ab, "0") if spell_ab else "0"
+
+    # Character-specific attack macros (index 100+), skipping "damage" type
     attack_entries = []
-    for i, atk in enumerate(cs.get("attacks", []), start=100):
-        cmd   = _attack_cmd(atk)
+    idx = 100
+    for atk in cs.get("attacks", []):
+        cmd = _attack_cmd(atk, spell_mod_prop)
+        if cmd is None:
+            continue
         color = atk.get("color", "default")
-        label = atk.get("label", f"Attack {i}")
+        label = atk.get("label", f"Attack {idx}")
         attack_entries.append(
-            _macro_entry(i, label, "Combat", color, cmd, sortby="3.0")
+            _macro_entry(idx, label, "Combat", color, cmd, sortby="3.0")
         )
+        idx += 1
 
     parts = [standard_entries] + attack_entries
     body  = "\n".join(p for p in parts if p)

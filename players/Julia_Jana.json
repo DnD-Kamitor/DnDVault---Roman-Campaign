@@ -78,6 +78,42 @@
       "damage_type": "radiant",
       "color": "#ffffa0",
       "note": "Range 120ft. On hit: next attack vs target has advantage."
+    },
+    {
+      "label": "Healing Word",
+      "type": "heal",
+      "weapon": "Healing Word",
+      "damage_dice": "1d4",
+      "damage_mod": "WisMod",
+      "color": "#80ff80",
+      "note": "BA, 60ft range, verbal only. +1d4 per slot above 1st."
+    },
+    {
+      "label": "Moonbeam",
+      "type": "save",
+      "weapon": "Moonbeam",
+      "save_ability": "CON",
+      "dc_prop": "SpellSaveDC",
+      "damage_dice": "2d10",
+      "damage_type": "radiant",
+      "color": "#ffffa0",
+      "note": "Con save or half. 5ft cylinder, 40ft tall, 60ft range. Concentration 1min. Repeat save when enters or starts turn in beam."
+    },
+    {
+      "label": "Faerie Fire",
+      "type": "utility",
+      "weapon": "Faerie Fire",
+      "damage_dice": "",
+      "color": "#a0ffa0",
+      "note": "DEX save or outlined in light. Attacks vs outlined creatures have advantage. 20ft cube, 60ft range. Concentration 1min."
+    },
+    {
+      "label": "Sleep",
+      "type": "utility",
+      "weapon": "Sleep",
+      "damage_dice": "5d8",
+      "color": "#c0c0ff",
+      "note": "Affects creatures by HP (lowest first). 90ft range. 1min. +2d8 per slot above 1st."
     }
   ],
 
