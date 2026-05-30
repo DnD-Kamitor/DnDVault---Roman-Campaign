@@ -103,14 +103,12 @@ def _chunk(tag, data):
     crc   = struct.pack(">I", zlib.crc32(tag_b + data) & 0xFFFFFFFF)
     return struct.pack(">I", len(data)) + tag_b + data + crc
 
-def make_color_png(r, g, b, size=200):
-    ihdr = _chunk("IHDR", struct.pack(">IIBBBBB", size, size, 8, 2, 0, 0, 0))
-    raw  = b"".join(b"\x00" + bytes([r, g, b] * size) for _ in range(size))
-    return b"\x89PNG\r\n\x1a\n" + ihdr + _chunk("IDAT", zlib.compress(raw)) + _chunk("IEND", b"")
-
 def hex_to_rgb(h):
     h = h.lstrip("#")
     return int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+
+def _darken(r, g, b, factor=0.5):
+    return int(r * factor), int(g * factor), int(b * factor)
 
 def _pil_to_png(img, size=200):
     img  = img.convert("RGBA")
@@ -122,6 +120,85 @@ def _pil_to_png(img, size=200):
         img  = img.crop(((w-side)//2, (h-side)//2, (w+side)//2, (h+side)//2))
     img  = img.resize((size, size), PILImage.LANCZOS)
     buf  = io.BytesIO()
+    img.save(buf, format="PNG")
+    return buf.getvalue()
+
+# Font paths to try in order
+BOLD_FONTS = [
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/usr/share/fonts/truetype/open-sans/OpenSans-Bold.ttf",
+    "/usr/share/fonts/fonts-go/Go-Bold.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+]
+
+def _load_font(size):
+    if not HAS_PIL:
+        return None
+    from PIL import ImageFont
+    for path in BOLD_FONTS:
+        try:
+            return ImageFont.truetype(path, size)
+        except Exception:
+            pass
+    return ImageFont.load_default()
+
+def make_initial_portrait(name, color_hex, size=200):
+    """Styled token portrait: gradient background + large initials. Falls back to flat color if PIL unavailable."""
+    if not HAS_PIL:
+        r, g, b = hex_to_rgb(color_hex)
+        from scripts.generate_npc_tokens import _chunk
+        ihdr = _chunk("IHDR", struct.pack(">IIBBBBB", size, size, 8, 2, 0, 0, 0))
+        raw  = b"".join(b"\x00" + bytes([r, g, b] * size) for _ in range(size))
+        return b"\x89PNG\r\n\x1a\n" + ihdr + _chunk("IDAT", zlib.compress(raw)) + _chunk("IEND", b"")
+
+    from PIL import ImageDraw, ImageFilter, ImageFont
+
+    r, g, b   = hex_to_rgb(color_hex)
+    dr, dg, db = _darken(r, g, b, 0.35)
+
+    # Build initials from name (skip articles/prefixes)
+    skip = {"the", "a", "an", "of", "von", "de", "van"}
+    words = [w for w in name.split() if w.lower() not in skip]
+    if len(words) == 0:
+        initials = "?"
+    elif len(words) == 1:
+        initials = words[0][:2].upper()
+    else:
+        initials = (words[0][0] + words[-1][0]).upper()
+
+    img  = PILImage.new("RGBA", (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+
+    # Radial gradient background: bright center → dark edge
+    for i in range(size // 2, -1, -1):
+        t  = i / (size / 2)                       # 1 at center, 0 at edge
+        cr = int(r * t + dr * (1 - t))
+        cg = int(g * t + dg * (1 - t))
+        cb = int(b * t + db * (1 - t))
+        margin = size // 2 - i
+        draw.ellipse([margin, margin, size - margin, size - margin], fill=(cr, cg, cb, 255))
+
+    # Thin bright ring border
+    br = min(255, r + 60)
+    bg = min(255, g + 60)
+    bb = min(255, b + 60)
+    draw.ellipse([2, 2, size - 3, size - 3], outline=(br, bg, bb, 200), width=3)
+    draw.ellipse([6, 6, size - 7, size - 7], outline=(br, bg, bb, 80), width=1)
+
+    # Initials text — large, centred, white with dark shadow
+    font_size = size // 3 if len(initials) <= 2 else size // 4
+    font = _load_font(font_size)
+    bbox = draw.textbbox((0, 0), initials, font=font)
+    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    tx = (size - tw) // 2 - bbox[0]
+    ty = (size - th) // 2 - bbox[1]
+
+    # Shadow
+    draw.text((tx + 3, ty + 3), initials, font=font, fill=(0, 0, 0, 130))
+    # Main text
+    draw.text((tx, ty), initials, font=font, fill=(255, 255, 255, 255))
+
+    buf = io.BytesIO()
     img.save(buf, format="PNG")
     return buf.getvalue()
 
@@ -139,7 +216,9 @@ def load_portrait(npc):
         path = NPCS_DIR / pf
         if path.exists():
             return _pil_to_png(PILImage.open(path))
-    return None
+    # Always generate styled initial portrait as fallback
+    color = npc.get("token_color", "#4a4a4a")
+    return make_initial_portrait(npc["name"], color)
 
 
 # ── XML helpers ───────────────────────────────────────────────────────────────
@@ -435,15 +514,9 @@ def generate_token(sheet_path):
     is_named = bool(npc.get("objective") or npc.get("goal") or npc.get("agenda"))
     output_dir = OUTPUT_NAMED if is_named else OUTPUT_CREATURE
 
-    # Generate portrait PNG
+    # Generate portrait PNG (always styled initials unless portrait_file provided)
     png = load_portrait(npc)
-    portrait_src = "file"
-    if png is None:
-        color_hex = npc.get("token_color", "#4a4a4a")
-        r, g, b   = hex_to_rgb(color_hex)
-        img_size  = 200 if is_named else 100
-        png       = make_color_png(r, g, b, img_size)
-        portrait_src = "color"
+    portrait_src = "file" if npc.get("portrait_file", "").strip() else "initials"
 
     thumb = _pil_to_png(PILImage.open(io.BytesIO(png)), 50) if HAS_PIL else png
     md5   = hashlib.md5(png).hexdigest()

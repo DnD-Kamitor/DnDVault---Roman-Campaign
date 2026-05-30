@@ -7,7 +7,6 @@
   "level": 3,
   "background": "Charlatan",
   "role": "Cornicen",
-
   "ability_scores": {
     "STR": 8,
     "DEX": 16,
@@ -16,33 +15,46 @@
     "WIS": 14,
     "CHA": 16
   },
-
   "hp_max": 23,
-
-  "skill_proficiencies": ["Sleight of Hand", "History", "Deception", "Performance", "Persuasion"],
-  "expertise": ["Deception", "Persuasion"],
+  "skill_proficiencies": [
+    "Sleight of Hand",
+    "History",
+    "Deception",
+    "Performance",
+    "Persuasion"
+  ],
+  "expertise": [
+    "Deception",
+    "Persuasion"
+  ],
   "skill_overrides": {
     "History": 6,
     "Religion": 4
   },
-
-  "saving_throw_proficiencies": ["DEX", "CHA"],
-
+  "saving_throw_proficiencies": [
+    "DEX",
+    "CHA"
+  ],
   "spellcasting_ability": "CHA",
-
-  "languages": ["Latin (Common)", "Punic (Phoenician)", "Greek", "Infernal"],
-
+  "languages": [
+    "Latin (Common)",
+    "Punic (Phoenician)",
+    "Greek",
+    "Infernal"
+  ],
   "citizenship": "Peregrinus",
-
   "corruption_level": 0,
   "commendationes": 0,
-
+  "gold": 15,
   "attacks": [
     {
       "label": "Pugio ATK",
       "type": "melee",
       "weapon": "Pugio (Dagger)",
-      "atk_props": ["DexMod", "Proficiency"],
+      "atk_props": [
+        "DexMod",
+        "Proficiency"
+      ],
       "damage_dice": "1d4",
       "damage_mod": "DexMod",
       "damage_type": "piercing",
@@ -133,7 +145,6 @@
       "note": "WIS DC13 or follows reasonable suggestion. Concentration 8hr. L2."
     }
   ],
-
   "counters": [
     {
       "name": "Bardic Inspiration",
@@ -143,13 +154,9 @@
       "reset": "Long Rest"
     }
   ],
-
   "portrait_file": "Tanit Bint Abdmelquart.jpeg",
   "portrait_color": "#c47a1e",
-
   "ac_override": 15,
-
-  "background_story": "Carthaginian heritage. Family is in the Tyrian purple dye trade — the most valuable commodity in the ancient world, a Phoenician monopoly. Carries the memory of a civilization Rome destroyed. Her name is Carthaginian. Her family still profits from the Roman empire that erased her people's history. Survival vs identity is her engine.",
-
+  "background_story": "Carthaginian heritage. Family is in the Tyrian purple dye trade \u2014 the most valuable commodity in the ancient world, a Phoenician monopoly. Carries the memory of a civilization Rome destroyed. Her name is Carthaginian. Her family still profits from the Roman empire that erased her people's history. Survival vs identity is her engine.",
   "notes": "Alignment True Neutral. Charlatan background: proficiency Disguise kit, Forgery kit. Bard: Bardic Inspiration d8 (3/LR), Jack of All Trades, Song of Rest. College of Eloquence: Silver Tongue (Persuasion+Deception treat d20 roll 9 or lower as 10), Unsettling Words (BA: expend Bardic Inspiration die, target subtracts roll from next save before your next turn). Weapons: Dagger (Pugio) +5 / 1d4+3, Vicious Mockery (cantrip) 1d4 psychic DC 14. Personality: listens more than speaks; Knowledge is the only authority that cannot be revoked; carries a history Rome tried to erase. Passive Perception 14."
 }

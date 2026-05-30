@@ -481,6 +481,7 @@ def build_content_xml(cs, image_md5):
     props["CommendationesCount"] = cs.get("commendationes", 0)
     props["CitizenshipStatus"]   = cs.get("citizenship", "Peregrinus")
     props["Armor"]               = ROLE_ARMOR.get(cs.get("role",""), {}).get("armor", "")
+    props["Gold"]                = cs.get("gold", 0)
     props["Languages"]           = ", ".join(cs.get("languages", []))
     props["Backstory"]           = cs.get("background_story", "")
     props["Description"]         = cs.get("notes", "")

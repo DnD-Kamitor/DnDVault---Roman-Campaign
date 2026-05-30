@@ -7,7 +7,6 @@
   "level": 3,
   "background": "Noble",
   "role": "Optio",
-
   "ability_scores": {
     "STR": 16,
     "DEX": 10,
@@ -16,46 +15,75 @@
     "WIS": 16,
     "CHA": 10
   },
-
   "hp_max": 24,
-
-  "skill_proficiencies": ["History", "Insight", "Persuasion", "Religion"],
+  "skill_proficiencies": [
+    "History",
+    "Insight",
+    "Persuasion",
+    "Religion"
+  ],
   "expertise": [],
   "skill_overrides": {
     "Religion": 4,
     "Persuasion": 4
   },
-
-  "saving_throw_proficiencies": ["WIS", "CHA"],
-
+  "saving_throw_proficiencies": [
+    "WIS",
+    "CHA"
+  ],
   "spellcasting_ability": "WIS",
-
-  "languages": ["Common (Latin)", "Greek (Elvish)", "Germanic (Goblin)", "Sacred Language of the Janus Cult"],
-
+  "languages": [
+    "Common (Latin)",
+    "Greek (Elvish)",
+    "Germanic (Goblin)",
+    "Sacred Language of the Janus Cult"
+  ],
   "citizenship": "Civis",
-
   "corruption_level": 0,
   "commendationes": 0,
-
+  "gold": 65,
   "attacks": [
     {
-      "label": "Mace ATK",
+      "label": "Hastile Optio",
       "type": "melee",
-      "weapon": "Mace",
-      "atk_props": ["StrMod", "Proficiency"],
-      "damage_dice": "1d6",
+      "weapon": "Hastile Optioni (staff)",
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
+      "damage_dice": "1d4",
       "damage_mod": "StrMod",
       "damage_type": "bludgeoning",
-      "color": "#c0c0c0"
+      "color": "#c0c0c0",
+      "note": "Knobbed staff, mark of the Optio. Can be used as quarterstaff (1d6 versatile 1d8)."
     },
     {
-      "label": "Mace DMG",
-      "type": "damage",
-      "weapon": "Mace",
-      "damage_dice": "1d6",
+      "label": "Gladius ATK",
+      "type": "melee",
+      "weapon": "Gladius (longsword)",
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
+      "damage_dice": "1d8",
       "damage_mod": "StrMod",
-      "damage_type": "bludgeoning",
-      "color": "#c0c0c0"
+      "damage_type": "slashing",
+      "color": "#c0c0c0",
+      "note": "Versatile (1d10). Standard legionary sword."
+    },
+    {
+      "label": "Pugio ATK",
+      "type": "melee",
+      "weapon": "Pugio (dagger)",
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
+      "damage_dice": "1d4",
+      "damage_mod": "StrMod",
+      "damage_type": "piercing",
+      "color": "#c0c0c0",
+      "note": "Finesse, light, thrown 20/60ft."
     },
     {
       "label": "Toll the Dead",
@@ -72,7 +100,9 @@
       "label": "Guiding Bolt",
       "type": "melee",
       "weapon": "Guiding Bolt",
-      "atk_props": ["SpellAttackBonus"],
+      "atk_props": [
+        "SpellAttackBonus"
+      ],
       "damage_dice": "4d6",
       "damage_mod": "",
       "damage_type": "radiant",
@@ -155,9 +185,76 @@
       "damage_dice": "",
       "color": "#ffffff",
       "note": "BA. Grow wings, fly speed = walk speed, 1min. First attack each turn deals +3 radiant. 1/LR."
+    },
+    {
+      "label": "Heavy Pilum",
+      "type": "ranged",
+      "weapon": "Pilum Grave (heavy javelin)",
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
+      "damage_dice": "1d8",
+      "damage_mod": "StrMod",
+      "damage_type": "piercing",
+      "color": "#c08040",
+      "note": "Thrown 30/60ft. On hit: target shield unusable until repaired (1hr). Single-use per pilum (bends on impact). Retrieve DC14 Athletics."
+    },
+    {
+      "label": "Light Pilum",
+      "type": "ranged",
+      "weapon": "Pilum Leve (light javelin)",
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
+      "damage_dice": "1d6",
+      "damage_mod": "StrMod",
+      "damage_type": "piercing",
+      "color": "#c08040",
+      "note": "Thrown 20/40ft. +1d4 piercing vs unshielded target. Retrievable. Enemy can throw it back as BA."
+    },
+    {
+      "label": "Guidance",
+      "type": "utility",
+      "weapon": "Guidance (cantrip)",
+      "damage_dice": "1d4",
+      "color": "#a0d0ff",
+      "note": "Touch. Concentration 1min. Target adds this roll to one ability check of their choice."
+    },
+    {
+      "label": "Light",
+      "type": "utility",
+      "weapon": "Light (cantrip)",
+      "damage_dice": "",
+      "color": "#ffffa0",
+      "note": "Touch. 1hr. Object sheds bright light 20ft, dim light 20ft further. Hostile creature: DEX save to avoid."
+    },
+    {
+      "label": "Spare the Dying",
+      "type": "utility",
+      "weapon": "Spare the Dying (cantrip)",
+      "damage_dice": "",
+      "color": "#80ff80",
+      "note": "Touch. Stabilizes a creature at 0 HP. No action cost variant (TCoE: can target within 15ft as BA if you have the feat)."
+    },
+    {
+      "label": "See Invisibility",
+      "type": "utility",
+      "weapon": "See Invisibility",
+      "damage_dice": "",
+      "color": "#d0d0ff",
+      "note": "Self. 1hr. See invisible creatures and objects. See into Ethereal Plane. L2."
+    },
+    {
+      "label": "Silence",
+      "type": "utility",
+      "weapon": "Silence",
+      "damage_dice": "",
+      "color": "#9090c0",
+      "note": "Range 120ft. 10min. 20ft radius sphere. No sound. Immunity to thunder. Verbal components impossible inside. Concentration. L2."
     }
   ],
-
   "counters": [
     {
       "name": "Channel Divinity",
@@ -181,13 +278,9 @@
       "reset": "Long Rest"
     }
   ],
-
   "portrait_file": "Juliana.jpeg",
   "portrait_color": "#4a3a9e",
-
   "ac_override": 21,
-
-  "background_story": "Roman noble, Gens Jana, lineage to god Janus. Father is Senator Gaius Janus. Last of the Jana name. One campaign then back to Rome for political career — first female quaestor, then senator. Twilight domain chosen because Janus governs transitions and thresholds; twilight is a threshold. Three servants (Primus, Secondus, Tertius) hired by father.",
-
-  "notes": "Alignment LN. Gens Jana — lineage to god Janus. Aasimar: resistance radiant+necrotic, healing hands (1x LR 2d4), light bearer, 3 extra radiant dmg + fly 1 min (BA). Spellcasting WIS, Spell DC 13, Spell Atk +5. Cantrips: guidance, light, spare the dying, toll the dead. L1: bless, faerie fire (always prep), guiding bolt, healing word, sleep (always prep). L2: aid, moonbeam (always prep), see invisibility (always prep), silence. Feats: Adv WIS Insight vs deception/loyalty (10+ min interrogation, DM lies shown as NPC lies). Once/session reroll INT. BA move ally 60ft without reaction. Adv visual stealth in dim/dark. 3 servants: Primus, Secondus, Tertius."
+  "background_story": "Roman noble, Gens Jana, lineage to god Janus. Father is Senator Gaius Janus. Last of the Jana name. One campaign then back to Rome for political career \u2014 first female quaestor, then senator. Twilight domain chosen because Janus governs transitions and thresholds; twilight is a threshold. Three servants (Primus, Secondus, Tertius) hired by father.",
+  "notes": "Alignment LN. Gens Jana \u2014 lineage to god Janus. Aasimar: resistance radiant+necrotic, healing hands (1x LR 2d4), light bearer, 3 extra radiant dmg + fly 1 min (BA). Spellcasting WIS, Spell DC 13, Spell Atk +5. Cantrips: guidance, light, spare the dying, toll the dead. L1: bless, faerie fire (always prep), guiding bolt, healing word, sleep (always prep). L2: aid, moonbeam (always prep), see invisibility (always prep), silence. Feats: Adv WIS Insight vs deception/loyalty (10+ min interrogation, DM lies shown as NPC lies). Once/session reroll INT. BA move ally 60ft without reaction. Adv visual stealth in dim/dark. 3 servants: Primus, Secondus, Tertius."
 }

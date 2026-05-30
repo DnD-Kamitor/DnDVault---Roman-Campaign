@@ -7,7 +7,6 @@
   "level": 3,
   "background": "Sage",
   "role": "Custos Armorum",
-
   "ability_scores": {
     "STR": 14,
     "DEX": 12,
@@ -16,30 +15,39 @@
     "WIS": 10,
     "CHA": 8
   },
-
   "hp_max": 24,
-
-  "skill_proficiencies": ["Arcana", "Athletics", "History", "Investigation"],
+  "skill_proficiencies": [
+    "Arcana",
+    "Athletics",
+    "History",
+    "Investigation"
+  ],
   "expertise": [],
   "skill_overrides": {},
-
-  "saving_throw_proficiencies": ["CON", "INT"],
-
+  "saving_throw_proficiencies": [
+    "CON",
+    "INT"
+  ],
   "spellcasting_ability": "INT",
-
-  "languages": ["Common", "Deep Speech", "Draconic", "Gnomish"],
-
+  "languages": [
+    "Common",
+    "Deep Speech",
+    "Draconic",
+    "Gnomish"
+  ],
   "citizenship": "Peregrinus",
-
   "corruption_level": 0,
   "commendationes": 0,
-
+  "gold": 15,
   "attacks": [
     {
       "label": "Thunder Gauntlets ATK",
       "type": "melee",
       "weapon": "Thunder Gauntlets",
-      "atk_props": ["IntMod", "Proficiency"],
+      "atk_props": [
+        "IntMod",
+        "Proficiency"
+      ],
       "damage_dice": "1d8",
       "damage_mod": "IntMod",
       "damage_type": "thunder",
@@ -59,7 +67,9 @@
       "label": "Magic Stone",
       "type": "melee",
       "weapon": "Magic Stone",
-      "atk_props": ["SpellAttackBonus"],
+      "atk_props": [
+        "SpellAttackBonus"
+      ],
       "damage_dice": "1d6",
       "damage_mod": "IntMod",
       "damage_type": "bludgeoning",
@@ -70,7 +80,10 @@
       "label": "Thunder Gauntlets (STR)",
       "type": "melee",
       "weapon": "Thunder Gauntlets (STR mode)",
-      "atk_props": ["StrMod", "Proficiency"],
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
       "damage_dice": "1d8",
       "damage_mod": "StrMod",
       "damage_type": "thunder",
@@ -89,7 +102,9 @@
       "label": "Shocking Grasp",
       "type": "melee",
       "weapon": "Shocking Grasp",
-      "atk_props": ["SpellAttackBonus"],
+      "atk_props": [
+        "SpellAttackBonus"
+      ],
       "damage_dice": "1d8",
       "damage_mod": "",
       "damage_type": "lightning",
@@ -125,7 +140,6 @@
       "note": "Touch. L1. +1d8 per slot above 1st."
     }
   ],
-
   "counters": [
     {
       "name": "Infuse Item",
@@ -142,15 +156,10 @@
       "reset": "Long Rest"
     }
   ],
-
   "portrait_file": "Rivia Calida Mendera.jpeg",
   "portrait_color": "#3a7a3a",
-
   "ac_override": 11,
-
   "_ac_note": "AC 11 = unarmored base from sheet. As Faber her role kit is Lorica Hamata+Scutum. Once she crafts Arcane Armor from that kit: AC 17 (14+DEX1+shield2). Update ac_override to 17 after session 1.",
-
-  "background_story": "Comes from a city that was attacked while unprepared. Cannot leave broken equipment alone — compulsively repairs buckles, shafts, rivets in camp. Not efficiency: anxiety wearing the mask of productivity. Cannot stop because stopping means thinking about what she could not fix in time.",
-
+  "background_story": "Comes from a city that was attacked while unprepared. Cannot leave broken equipment alone \u2014 compulsively repairs buckles, shafts, rivets in camp. Not efficiency: anxiety wearing the mask of productivity. Cannot stop because stopping means thinking about what she could not fix in time.",
   "notes": "Artificer Armorer (Guardian). Spellcasting INT, Spell DC 13, Spell Atk +5. Rock Gnome: Darkvision 60ft, Gnome Cunning (adv INT/WIS/CHA saves vs magic), Tinker. Infuse Item: 2 infusions/LR on up to 2 objects. Magical Tinkering 3/Other. Guardian Armor: Thunder Gauntlets +5/1d8+3 thunder, Thunder Gauntlets STR +4/1d8+2 thunder, Guardian Defensive Field +2 temp HP/Bonus Action. Proficiencies: Heavy+Light+Medium armor, Shields, Firearms, Simple weapons, Leatherworker+Smith+Thieves+Tinker tools. Passive Investigation 15."
 }
