@@ -37,6 +37,74 @@
   "corruption_level": 0,
   "commendationes": 0,
 
+  "attacks": [
+    {
+      "label": "Mace ATK",
+      "type": "melee",
+      "weapon": "Mace",
+      "atk_props": ["StrMod", "Proficiency"],
+      "damage_dice": "1d6",
+      "damage_mod": "StrMod",
+      "damage_type": "bludgeoning",
+      "color": "#c0c0c0"
+    },
+    {
+      "label": "Mace DMG",
+      "type": "damage",
+      "weapon": "Mace",
+      "damage_dice": "1d6",
+      "damage_mod": "StrMod",
+      "damage_type": "bludgeoning",
+      "color": "#c0c0c0"
+    },
+    {
+      "label": "Toll the Dead",
+      "type": "save",
+      "weapon": "Toll the Dead",
+      "save_ability": "WIS",
+      "dc_prop": "SpellSaveDC",
+      "damage_dice": "1d8",
+      "damage_type": "necrotic",
+      "color": "#d0a0ff",
+      "on_fail": "1d12 necrotic instead if target is missing any HP"
+    },
+    {
+      "label": "Guiding Bolt",
+      "type": "melee",
+      "weapon": "Guiding Bolt",
+      "atk_props": ["SpellAttackBonus"],
+      "damage_dice": "4d6",
+      "damage_mod": "",
+      "damage_type": "radiant",
+      "color": "#ffffa0",
+      "note": "Range 120ft. On hit: next attack vs target has advantage."
+    }
+  ],
+
+  "counters": [
+    {
+      "name": "Channel Divinity",
+      "category": "Cleric",
+      "value": 1,
+      "max": 1,
+      "reset": "Short Rest"
+    },
+    {
+      "name": "Healing Hands",
+      "category": "Aasimar",
+      "value": 1,
+      "max": 1,
+      "reset": "Long Rest"
+    },
+    {
+      "name": "Radiant Soul",
+      "category": "Aasimar",
+      "value": 1,
+      "max": 1,
+      "reset": "Long Rest"
+    }
+  ],
+
   "portrait_file": "Juliana.jpeg",
   "portrait_color": "#4a3a9e",
 

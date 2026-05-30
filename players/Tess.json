@@ -34,6 +34,46 @@
   "corruption_level": 0,
   "commendationes": 0,
 
+  "attacks": [
+    {
+      "label": "Thunder Gauntlets ATK",
+      "type": "melee",
+      "weapon": "Thunder Gauntlets",
+      "atk_props": ["IntMod", "Proficiency"],
+      "damage_dice": "1d8",
+      "damage_mod": "IntMod",
+      "damage_type": "thunder",
+      "color": "#a0d0ff",
+      "note": "Guardian Armor. Target disadvantage on attacks not targeting you until your next turn."
+    },
+    {
+      "label": "Thunder Gauntlets DMG",
+      "type": "damage",
+      "weapon": "Thunder Gauntlets",
+      "damage_dice": "1d8",
+      "damage_mod": "IntMod",
+      "damage_type": "thunder",
+      "color": "#a0d0ff"
+    }
+  ],
+
+  "counters": [
+    {
+      "name": "Infuse Item",
+      "category": "Artificer",
+      "value": 2,
+      "max": 2,
+      "reset": "Long Rest"
+    },
+    {
+      "name": "Magical Tinkering",
+      "category": "Artificer",
+      "value": 3,
+      "max": 3,
+      "reset": "Long Rest"
+    }
+  ],
+
   "portrait_file": "Rivia Calida Mendera.jpeg",
   "portrait_color": "#3a7a3a",
 
