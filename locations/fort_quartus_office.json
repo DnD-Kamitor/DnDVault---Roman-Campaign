@@ -1,0 +1,8 @@
+{
+  "name": "Quartus's Supply Office",
+  "location_type": "fort",
+  "player_description": "A timber-framed room attached to the principia's rear. Stacked with wooden crates, clay-sealed amphorae, and a wall of shelves holding labeled sacks and sealed boxes. Behind the main counter: a large writing table with three active ledgers and an inkwell that has never been allowed to run dry. Quartus is almost always here.",
+  "gm_notes": "Camp Level 1: standard issue only, officer authorization required for anything above basic kit. Camp Level 2: heavy equipment available, bulk rations, siege components accessible with standard requisition. Camp Level 3: full supply chain, party no longer needs officer authorization for heavy equipment, pilum stockpile available, arcuballista bolts. The real ledger: stored in Quartus's personal quarters, not here. Records what the Legate has requisitioned off-book. He will show it only at Trusted+ relationship when he judges the moment has come. DC 13 Persuasion: he will tell the party what the next supply convoy carries and when it arrives. DC 15: he confirms the off-book requisitions exist. DC 17 + Trusted: he shows the ledger.",
+  "token_color": "#5c4a2a",
+  "session": 1
+}

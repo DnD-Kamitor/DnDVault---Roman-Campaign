@@ -1,0 +1,8 @@
+{
+  "name": "Fabrica (Rufus's Workshop)",
+  "location_type": "fort",
+  "player_description": "The workshop fills the southeast corner of the fort. The forge runs from before dawn. Racks of repaired equipment line the walls. Tools hang in precise order on pegs — Rufus knows immediately if anything has been moved. The floor is iron filings and ash. He is almost always at the anvil.",
+  "gm_notes": "Camp Level 1: maintenance, sharpening, arrow production only. Custom work unavailable. Camp Level 2: weapon upgrades available — +1 property to one weapon per downtime, requires raw materials (not purchasable at Camp Level 1). Camp Level 3: masterwork upgrades, permanent +1 to one weapon or armor per session, forge runs through the night if needed. Rufus's assessment: he will inspect any weapon or armor the party brings and state exactly what is wrong with it. He is right. If a weapon has been tampered with (e.g. a pilum whose shaft has been weakened to fail mid-throw), he will identify this as a matter of professional observation, not suspicion. The sabotage question comes up in Session 1 if the party thinks to ask.",
+  "token_color": "#5c3a1e",
+  "session": 1
+}

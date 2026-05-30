@@ -1,0 +1,8 @@
+{
+  "name": "Campus (Drill Ground)",
+  "location_type": "fort",
+  "player_description": "The open space between the barracks and the south wall. Worn flat by ten years of training. At dawn and in the late afternoon the garrison drills here: formation practice, weapons sparring, marching. During the day it is mostly empty. At night it is the quietest place in the fort.",
+  "gm_notes": "Training opportunities: DC 12 Athletics check after one session of drilling with the garrison = advantage on one STR (Athletics) check during the next session (once per campaign). Social opportunity: training alongside regular soldiers raises Reputation with the garrison. DC 11 to be noticed as competent by a sergeant. DC 14 to be invited to the veterans' evening sparring group (opens Varro as a deeper information source). Session 1 night: the drill ground is where Corvinus meets Lucius privately after dark, away from the principia's windows. DC 15 Stealth to observe without being noticed.",
+  "token_color": "#4a4a3a",
+  "session": 1
+}

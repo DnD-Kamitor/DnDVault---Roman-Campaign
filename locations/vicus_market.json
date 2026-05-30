@@ -1,0 +1,8 @@
+{
+  "name": "Vicus Market Stalls",
+  "location_type": "vicus",
+  "player_description": "Six permanent stalls along the main vicus road. Bronze pins, clasps, rings. Dried food. Rope and canvas. A seller of secondhand military equipment (provenance unclear). At the end of the row: Sigrun's trade stall, which sells items not on any military supply list.",
+  "gm_notes": "Sigrun's stall is the intelligence node. DC 13 Persuasion: she trades goods. DC 15 Persuasion + genuine offer (tribal herbs, favour to her family, proof of good faith): she names the two chieftains Brutus's agents contacted before the siege. DC 17: she identifies which one is wavering and can be turned, and what he wants. She knows the siege is coming before it starts. She chose to stay. The secondhand equipment seller: DC 14 Investigation — two of the items have unit markings that do not match anything currently stationed at Vindolanda. The markings are from a unit that was here four years ago. DC 16 History: that unit had a significant number of casualties in a patrol incident that was never officially explained.",
+  "token_color": "#6b4c2a",
+  "session": 1
+}

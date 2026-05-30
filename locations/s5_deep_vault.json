@@ -1,0 +1,8 @@
+{
+  "name": "The Deep Vault — Threshold of Mars",
+  "location_type": "dungeon",
+  "player_description": "Below the altar chamber. A stair that was not visible before. The air below is not cold — it is the absence of temperature. The runes on the walls here are not carved. They are burned. Whatever made them was on this side of the wall.",
+  "gm_notes": "Session 5 final area. The spear's origin point. The binding that was placed here three generations ago is broken. Mars is present here — not symbolically, actually. The encounter has multiple possible outcomes: (1) destroy the spear — requires the three contract tokens, the binding scroll read correctly, and a genuine sacrifice (DC 17 Religion; Cassia can substitute at cost to herself); (2) bind Mars again — requires tribal knowledge (Vercingetorix or Edda), divine connection (Haruspex/Sacerdos/Flamen Martialis role active), and the spear intact (DC 19 Religion + sacrifice); (3) refuse — Mars enters the world. The corruption track determines which players have divine influence in this room: Corruption 0-1 = they can act. Corruption 4-5 = Mars speaks through them first before they can choose. All threads resolve here: divine (the spear), political (Brutus's plan requires the spear intact), personal (what did each character come here for).",
+  "token_color": "#8B0000",
+  "session": 5
+}

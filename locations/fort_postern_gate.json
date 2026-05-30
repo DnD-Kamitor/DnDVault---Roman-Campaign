@@ -1,0 +1,8 @@
+{
+  "name": "East Postern Gate",
+  "location_type": "fort",
+  "player_description": "A narrow gate in the east wall — single door, single guard post. Used for supply deliveries and civilian access during the day. After dark it is locked with a deadbolt that requires a specific key. The hinges have been oiled recently.",
+  "gm_notes": "Secondary exit. Relevant in multiple sessions: Session 1 — the frumentarius uses this gate for night observations. Session 3 — Atto knows a drainage channel that exits near here (DC 16 with Atto to access). Session 4 — the postern is the civilian evacuation route (Option 1/2 from locations.qmd siege section). If the siege line closes completely, this gate becomes unusable. The recently oiled hinges: DC 12 Perception to notice. DC 14 Investigation: the oil is fresh, applied within 48 hours. Someone planned a quiet exit. The key is held by the Tesserarius and the Legate. One party member can obtain a wax impression of the key with DC 14 Sleight of Hand during a routine inspection.",
+  "token_color": "#4a4a4a",
+  "session": 1
+}

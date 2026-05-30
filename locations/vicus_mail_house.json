@@ -1,0 +1,8 @@
+{
+  "name": "Lucilla's Mail Relay",
+  "location_type": "vicus",
+  "player_description": "Third building from the east gate on the north side-lane. Identified by a small iron hook beside the door where soldiers leave messages wrapped in cloth. Through the front window, Lucilla is usually visible, writing. Her handwriting is better than the fort's official scribes.",
+  "gm_notes": "DC 12 Persuasion (any tier): Lucilla sends a message to any network settlement within 48 hours for 2 asses. She does not ask content. She does not read messages. She is correct about both. DC 15 Persuasion (Trusted+): secure route — no courier checkpoint stops, no transit log record. Costs a favour. DC 18 Persuasion (Ally tier + prior relationship): she names the two soldiers who used the iron hook with military papyrus. One is a debt letter. One is addressed to Brutus's household in Rome. She says this looking at the hook rather than the party. She does not explain the implications. She knows the party has them. Network reaches Carnuntum (36 hours vs military 72), Eboracum, three civilian settlements. She has not lost a letter in fifteen years.",
+  "token_color": "#4a4a5c",
+  "session": 1
+}

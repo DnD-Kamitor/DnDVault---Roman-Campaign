@@ -1,0 +1,8 @@
+{
+  "name": "Stables",
+  "location_type": "fort",
+  "player_description": "The stables run along the north interior wall. Horse smell and straw. About thirty horses: command mounts, a few courier horses, and pack animals for the supply wagons. A slave groom works from before dawn. Most of the garrison does not have regular access to a mount.",
+  "gm_notes": "DC 12 Perception: one of the courier horses was used recently — it is still slightly heated, water bucket freshly refilled. DC 14 Investigation: the horse's hooves show road mud from the direction of the vicus, not the drill ground. Someone used it without logging it. In Session 2: the party may need mounts for the road. Accessing them requires Quartus authorization or Corvinus order. In Session 4 siege: the horses become a resource question — they consume rations, they can be used for a breakout attempt, they can be slaughtered as emergency rations. The groom will not let the party near command mounts without explicit written authorization.",
+  "token_color": "#5c3a1e",
+  "session": 1
+}

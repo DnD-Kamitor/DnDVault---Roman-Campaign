@@ -1,0 +1,8 @@
+{
+  "name": "South Wall — Siege Position",
+  "location_type": "fort",
+  "player_description": "The south wall is the closest point of the fort to the warband's main camp. From the parapet you can see their fires at night. During the day the tree line moves. Not branches — people.",
+  "gm_notes": "Session 4 siege. The main assault vector. The warband concentrates here because the south gate is the widest entry point. Tactical information: the assault will come on the third night if the party has not broken the siege by then. Each session scene the party can take one preparation action for the south wall: fortify (barricade reduces assault speed by 1 round), archers (Sagittarius role: +2d6 damage on first wave), hot oil (engineering Faber role: DC 12 forced retreat on first wave), rally (Optio/Tribune: morale +2 for all defenders). Aquila on the wall: if the Aquilifer role is filled, the Aquila standard visible from the south wall adds +1 to all defender attack rolls and removes the Shaken condition from morale failures.",
+  "token_color": "#8B1A1A",
+  "session": 4
+}

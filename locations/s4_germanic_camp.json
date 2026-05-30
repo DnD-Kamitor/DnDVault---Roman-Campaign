@@ -1,0 +1,8 @@
+{
+  "name": "Germanic Warband Camp",
+  "location_type": "wilderness",
+  "player_description": "The warband camp is three hundred yards south of the fort, in the cleared ground between the forest edge and the vicus. Three hundred warriors. Fires at night, movement during the day. They are not attacking yet. They are waiting for something.",
+  "gm_notes": "Session 4. The warband is waiting for Brutus's signal — his sleeper agents inside the fort are supposed to open a gate. If the party exposes the sleeper agents before the signal, the warband loses its inside contact and the siege becomes a straightforward military standoff (winnable by the fort). If the signal goes out, the gate opens and the assault begins that night. Two warband chieftains: Sigrun named them in Session 3 (if party reached DC 15 with her). One is Brutus's bought man. One is not — he is here because Vercingetorix's absence from tribal leadership created a power vacuum and this chieftain filled it. The wavering chieftain: DC 15 Persuasion to meet under parley flag; DC 17 to convince him the bought chieftain is selling him out to Rome after the fort falls. If he withdraws: the siege collapses without a battle.",
+  "token_color": "#5c3a2a",
+  "session": 4
+}

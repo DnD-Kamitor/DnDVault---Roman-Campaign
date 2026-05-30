@@ -1,0 +1,8 @@
+{
+  "name": "Balneum (Bathhouse)",
+  "location_type": "fort",
+  "player_description": "The fort bathhouse runs on a hypocaust heating system — a floor raised on brick pillars with hot air circulated underneath. Three rooms: cold plunge, warm room, hot room. After a march or a vault descent, this is where soldiers talk, because the steam makes it difficult to see who is listening.",
+  "gm_notes": "Social information node. Soldiers are most candid here — off duty, no armor, no rank visible. DC 11 Perception (passive while bathing): overhear a conversation between two guards about something unusual on the south wall last night. DC 13 Insight (joining a conversation): a veteran soldier is more troubled about the vault deaths than the official account explains. DC 15 Persuasion (private conversation, soldier at Acquaintance): the soldier was on watch the night Metellus died. He did not see an accident. He saw Metellus go in, heard something, and then nothing. He filed the report Capsarius gave him. He has not slept well since.",
+  "token_color": "#4a6a8a",
+  "session": 1
+}

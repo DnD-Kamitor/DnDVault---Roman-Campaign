@@ -1,0 +1,8 @@
+{
+  "name": "Sacellum (Standards Room)",
+  "location_type": "fort",
+  "player_description": "The innermost room of the principia, at the far end of the central hall. The unit standards are housed here. The Aquila eagle standard of the legion is in a locked case — the case is visibly newer than the stand it sits on. The room smells of incense and old wood. A small altar faces the standards.",
+  "gm_notes": "Restricted access. Only officers and designated standard-bearers enter. The Aquila case: DC 12 Perception — the lock on the case is the same model as the one on the vault door, and it was installed recently. DC 14 History: the previous Aquilifer Metellus died in the excavation. An Aquila without its bearer is considered a profound ill omen — soldiers who know this are quietly worried. DC 16 Religion: the altar's last offering was not a standard military ritual. Someone performed a private binding or warding rite here within the last week. The incense residue is not Roman. In Session 4: if the party can rally the garrison, bringing the Aquila out of the sacellum and onto the wall is a morale action — DC 14 Persuasion to get Corvinus or Varro to authorize it, automatic success if the Aquilifer role is filled.",
+  "token_color": "#8B6914",
+  "session": 1
+}

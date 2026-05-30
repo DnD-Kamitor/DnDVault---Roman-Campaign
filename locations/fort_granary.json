@@ -1,0 +1,8 @@
+{
+  "name": "Horreum (Granary)",
+  "location_type": "fort",
+  "player_description": "Two long granary buildings raised on low pillars to keep the floor dry and vermin out. The smell of grain and sawdust. Ventilation slits run along the walls. A soldier with a tablet stands at the entrance logging every sack that moves. The fort's survival depends on what is in these buildings.",
+  "gm_notes": "Camp Level system: rations here determine the fort's endurance during the Session 4 siege. Current stores: 60 days at full garrison, 90 days at reduced ration. DC 12 Investigation: one section of the south granary has been accessed recently without a corresponding entry in the log. DC 14: the missing weight matches approximately 20 days of reduced ration for 10 men -- someone is building a private store. DC 16 Investigation + Quartus at Trusted: the requisition trail leads to a name in the fort that the party will recognize. In Session 4: the granary is a strategic target. If the siege drags beyond 30 days, the party will need to make hard decisions about rationing. Quartus tracks every grain weight. He will notice discrepancies before the party asks.",
+  "token_color": "#6b4c2a",
+  "session": 1
+}

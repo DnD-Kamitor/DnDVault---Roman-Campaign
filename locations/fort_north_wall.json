@@ -1,0 +1,8 @@
+{
+  "name": "North Wall Parapet",
+  "location_type": "fort",
+  "player_description": "The walkway along the north wall, accessible from internal stairs at each corner tower. The view faces open country and the road north. Wind here constantly. In the morning before the garrison wakes up it is completely quiet except for the guard change.",
+  "gm_notes": "Private conversation space. The north wall is the least-observed place in the fort for discussions that cannot happen in the barracks or principia. Varro sometimes comes here before dawn. If the party needs to speak to him privately about Corvinus, this is where he will meet them. In Session 4 siege: the north wall is NOT the primary attack vector (the warband concentrates south and east) — making it the safest fallback position and the last evacuation route if the fort falls. The arcuballista crew drills here at Camp Level 3.",
+  "token_color": "#4a4a4a",
+  "session": 1
+}

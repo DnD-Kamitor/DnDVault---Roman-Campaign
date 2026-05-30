@@ -1,0 +1,8 @@
+{
+  "name": "Watchtower (South)",
+  "location_type": "fort",
+  "player_description": "The south tower gives a clear line of sight over the vicus and down the road for about half a mile. Two guards on rotation. The view at night, with the vicus lamps below and the dark road beyond, is one of the better views on the frontier. Soldiers assigned to tower watch tend to think too much.",
+  "gm_notes": "Observation point. DC 13 Perception from the tower: spot activity in the vicus after dark that would not be visible from ground level. DC 15: identify a specific figure moving between the vicus and the treeline to the south after the second watch. This figure appears three times before Session 3 begins. It is not a trader. In Session 4 siege: the tower is a priority target for the warband. If it falls, the south wall's flanking coverage drops and the gate becomes vulnerable. One party member defending the tower = the south approach costs the warband two additional rounds to force.",
+  "token_color": "#4a4a4a",
+  "session": 1
+}

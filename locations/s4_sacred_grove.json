@@ -1,0 +1,8 @@
+{
+  "name": "Sacred Grove",
+  "location_type": "wilderness",
+  "player_description": "A circular clearing in old forest. In the center, a stone that is not natural to this region — brought here. Offerings around the base: old ones, recent ones, very recent ones. The trees at the clearing edge have their roots exposed and intertwined above the ground. There is no wind here regardless of what the weather is doing outside.",
+  "gm_notes": "Session 4. The ritual site. The grove does not belong to the tribe -- it belongs to the forest. The tribe is its current keeper (Vercingetorix tells the shadow-cursed character this privately before the procession). Propitiation mechanics: DC 15 Religion + genuine sacrifice = Genius Loci withdraws and the ritual can proceed. DC 17 Religion: the stone at the center is a binding stone, not an offering stone. Something was bound here. The binding is incomplete. What is bound is leaking. Mars DCs reduced by 3 at Camp Level 3 shrine, applicable here by analogy if party has maintained the shrine. Three approach conditions: with Vercingetorix (he speaks first, ritual proceeds), without him but with tribal guide (DC 16 Religion to begin correctly), without any guide (DC 18 Religion, grove hostile).",
+  "token_color": "#1a3a1a",
+  "session": 4
+}

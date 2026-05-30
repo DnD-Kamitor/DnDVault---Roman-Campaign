@@ -1,0 +1,8 @@
+{
+  "name": "Rhine River Crossing",
+  "location_type": "wilderness",
+  "player_description": "The ford is knee-deep in summer and chest-deep after rain. The current is faster than it looks. The far bank is Germanic territory. There is no bridge. There has never been a bridge here — the Romans built one upstream and the locals destroyed it twice.",
+  "gm_notes": "Session 2. The Nix is bound to this stretch of water. It starts disguised as a traveler stranded on the far bank, calling for help crossing. DC 13 Insight: something is wrong with how the figure moves. DC 15 Nature: the water around the ford is unnaturally still in one spot — that is where the Nix is anchored. River Bound ability: within 1 mile of the river, the Nix has advantage on all checks/saves and regains 10 HP/turn while submerged. Combat in the water: STR DC 12 or Disadvantage on attacks (current). Three crossing strategies: ford directly (combat in water), find the upstream bridge ruins (safe but adds 2 hours), distract the Nix onto the bank (removes its River Bound advantage). Cold water: DC 10 CON or Exhaustion 1 on entry.",
+  "token_color": "#1a3a4a",
+  "session": 2
+}
