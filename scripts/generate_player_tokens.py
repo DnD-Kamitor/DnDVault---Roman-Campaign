@@ -212,7 +212,7 @@ def _xe(s):
     return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 def _macro_entry(idx, label, group, color, command, fontcolor="black",
-                 fontsize="1.10em", minwidth="100px", sortby=""):
+                 fontsize="1.15em", minwidth="100px", sortby=""):
     return (
         f"  <entry>\n"
         f"    <int>{idx}</int>\n"
@@ -271,12 +271,14 @@ def _attack_cmd(atk, spell_mod_prop="0"):
         dmgtyp = atk.get("damage_type", "damage")
         dmg_expr = f"{dice} + {dmgmod}" if dmgmod else dice
 
+        # [h: critRoll] captures d20 for crit check; [e:] shows full breakdown inline
+        # e.g. "« critRoll+DexMod+Proficiency = 14+3+2 = 19 »"
         return (
-            f"/me [h:roll = 1d20]"
-            f"[r, if(roll == 20): \"<b style='color:red'>CRITICALLY HITS</b> with\"; \"attacks with\"] "
+            f"[h: critRoll = 1d20]"
+            f"/me [r, if(critRoll == 20): \"<b style='color:red'>CRITICALLY HITS</b> with\"; \"attacks with\"] "
             f"{weapon}"
-            f"[r, if(roll == 1): \" but rolled a <b style='color:red'>NATURAL 1!</b>\"; \"!\"] "
-            f"(ATK: [t: roll + {atk_expr}] | DMG: [t: {dmg_expr}] {dmgtyp})"
+            f"[r, if(critRoll == 1): \" but rolled a <b style='color:red'>NATURAL 1!</b>\"; \"!\"]<br>"
+            f"ATK: [e: critRoll + {atk_expr}] | DMG: [e: {dmg_expr}] {dmgtyp}"
             f"{note_part}"
         )
 
@@ -292,9 +294,8 @@ def _attack_cmd(atk, spell_mod_prop="0"):
         on_fail  = atk.get("on_fail", "")
         fail_part = f"<br><i>On fail: {on_fail}</i>" if on_fail else ""
         return (
-            f"/me uses {weapon}! "
-            f"Target makes DC [r: {dc_expr}] {save_ab} save "
-            f"or takes [t: {dice}] {dmgtyp} damage.{fail_part}{note_part}"
+            f"/me uses {weapon}!<br>"
+            f"DC [e: {dc_expr}] {save_ab} save or takes [e: {dice}] {dmgtyp} damage.{fail_part}{note_part}"
         )
 
     elif atype == "heal":
@@ -304,14 +305,14 @@ def _attack_cmd(atk, spell_mod_prop="0"):
             dmgmod = spell_mod_prop
         heal_expr = f"{dice} + {dmgmod}" if dmgmod else dice
         return (
-            f"/me uses {weapon}! "
-            f"Target regains [t: {heal_expr}] HP.{note_part}"
+            f"/me uses {weapon}!<br>"
+            f"Target regains [e: {heal_expr}] HP.{note_part}"
         )
 
     elif atype == "utility":
         dice = atk.get("damage_dice", "")
         if dice:
-            return f"/me uses {weapon}! Roll: [t: {dice}].{note_part}"
+            return f"/me uses {weapon}!<br>Roll: [e: {dice}].{note_part}"
         return f"/me uses {weapon}!{note_part}"
 
     return f"/me uses {weapon}!{note_part}"
