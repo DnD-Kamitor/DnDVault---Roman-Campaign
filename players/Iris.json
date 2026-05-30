@@ -103,10 +103,10 @@
       "weapon": "Primal Savagery",
       "atk_props": ["SpellAttackBonus"],
       "damage_dice": "1d10",
-      "damage_mod": "WisMod",
+      "damage_mod": "",
       "damage_type": "acid",
       "color": "#40c040",
-      "note": "Melee spell attack. S component only."
+      "note": "Cantrip. Melee spell attack. S component only. No damage modifier."
     },
     {
       "label": "Produce Flame",
