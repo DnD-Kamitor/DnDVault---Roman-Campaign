@@ -23,14 +23,8 @@
     "Performance",
     "Persuasion"
   ],
-  "expertise": [
-    "Deception",
-    "Persuasion"
-  ],
-  "skill_overrides": {
-    "History": 6,
-    "Religion": 4
-  },
+  "expertise": [],
+  "skill_overrides": {},
   "saving_throw_proficiencies": [
     "DEX",
     "CHA"

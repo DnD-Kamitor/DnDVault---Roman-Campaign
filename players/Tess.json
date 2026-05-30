@@ -99,17 +99,17 @@
       "note": "Gain this many temp HP. Guardian armor. No per-rest limit."
     },
     {
-      "label": "Shocking Grasp",
+      "label": "Booming Blade",
       "type": "melee",
-      "weapon": "Shocking Grasp",
+      "weapon": "Booming Blade (Gauntlets)",
       "atk_props": [
         "SpellAttackBonus"
       ],
       "damage_dice": "1d8",
-      "damage_mod": "",
-      "damage_type": "lightning",
+      "damage_mod": "IntMod",
+      "damage_type": "thunder",
       "color": "#c0c0ff",
-      "note": "Cantrip. Target cannot take reactions until its next turn. Advantage if target wears metal armor."
+      "note": "Cantrip. If target willingly moves before your next turn: +1d8 thunder damage."
     },
     {
       "label": "Magic Missile",
