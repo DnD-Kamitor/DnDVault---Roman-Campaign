@@ -440,22 +440,25 @@ def build_content_xml(cs, image_md5):
   <sizeMap/>
   <snapToGrid>true</snapToGrid>
   <isVisible>true</isVisible>
-  <isVisibleOnlyToOwner>false</isVisibleOnlyToOwner>
-  <vblAlpha>0</vblAlpha>
+  <visibleOnlyToOwner>false</visibleOnlyToOwner>
+  <vblColorSensitivity>-1</vblColorSensitivity>
   <alwaysVisibleTolerance>2</alwaysVisibleTolerance>
   <isAlwaysVisible>false</isAlwaysVisible>
   <name>{cs["name"]}</name>
-  <ownerType>0</ownerType>
+  <ownerList/>
+  <ownerType>1</ownerType>
   <tokenShape>CIRCLE</tokenShape>
   <tokenType>PC</tokenType>
   <layer>TOKEN</layer>
   <propertyType>Basic</propertyType>
+  <tokenOpacity>1.0</tokenOpacity>
   <isFlippedX>false</isFlippedX>
   <isFlippedY>false</isFlippedY>
   <isFlippedIso>false</isFlippedIso>
+  <uniqueLightSources class="linked-hash-map"/>
+  <lightSourceList/>
   <hasSight>true</hasSight>
   <sightType>{sight_type}</sightType>
-  <hasFog>false</hasFog>
   <propertyMapCI>
     <store>
 {entries}
