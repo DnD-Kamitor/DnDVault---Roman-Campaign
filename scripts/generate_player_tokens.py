@@ -261,8 +261,8 @@ def _macro_entry(idx, label, group, color, command, fontcolor="black",
 def _bcast(char_color, content_expr):
     """Wrap MTScript content_expr in a colored broadcast() call."""
     return (
-        f'[h: _msg = "* <span style=\'color:{char_color}\'>" + {content_expr} + "</span>"]'
-        f'[broadcast(_msg)]'
+        f'[h: vMsg = "* <span style=\'color:{char_color}\'>" + {content_expr} + "</span>"]'
+        f'[broadcast(vMsg)]'
     )
 
 def _roll_box(label_var, total_var, tip_var):
@@ -300,9 +300,9 @@ def _attack_cmd(atk, spell_mod_prop="0", char_color="#333333"):
 
         n           = len(resolved)
         prop_labels = "+".join(resolved)                                     # "DexMod+Proficiency"
-        prop_decls  = "".join(f"[h: _p{i}={p}]" for i, p in enumerate(resolved))
-        prop_sum    = "+".join(f"_p{i}" for i in range(n))
-        tip_vals    = '+"+"+ '.join(f"_p{i}" for i in range(n))             # runtime val concat
+        prop_decls  = "".join(f"[h: vP{i}={p}]" for i, p in enumerate(resolved))
+        prop_sum    = "+".join(f"vP{i}" for i in range(n))
+        tip_vals    = '+"+"+ '.join(f"vP{i}" for i in range(n))             # runtime val concat
 
         dice   = atk.get("damage_dice", "1d4")
         dmgmod = atk.get("damage_mod", "")
@@ -311,21 +311,21 @@ def _attack_cmd(atk, spell_mod_prop="0", char_color="#333333"):
         dmgtyp = atk.get("damage_type", "damage")
 
         if dmgmod:
-            dmg_decls = f"[h: _dd={dice}][h: _dm={dmgmod}][h: _dt=_dd+_dm]"
-            dmg_tip   = f'"({dice}+{dmgmod}): "+_dd+"+"+_dm+"="+_dt'
-            dmg_total = "_dt"
+            dmg_decls = f"[h: vDD={dice}][h: vDM={dmgmod}][h: vDT=vDD+vDM]"
+            dmg_tip   = f'"({dice}+{dmgmod}): "+vDD+"+"+vDM+"="+vDT'
+            dmg_total = "vDT"
         else:
-            dmg_decls = f"[h: _dd={dice}][h: _dt=_dd]"
-            dmg_tip   = f'"{dice}: "+_dd'
-            dmg_total = "_dt"
+            dmg_decls = f"[h: vDD={dice}][h: vDT=vDD]"
+            dmg_tip   = f'"{dice}: "+vDD'
+            dmg_total = "vDT"
 
-        atk_tip = f'"(1d20+{prop_labels}): "+_d20+"+"+{tip_vals}+"="+_atkTotal'
+        atk_tip = f'"(1d20+{prop_labels}): "+vD20+"+"+{tip_vals}+"="+vAtkTotal'
 
-        atk_box = _roll_box("ATK", "_atkTotal", "_atkTip")
-        dmg_box = _roll_box("DMG", dmg_total, "_dmgTip")
+        atk_box = _roll_box("ATK", "vAtkTotal", "vAtkTip")
+        dmg_box = _roll_box("DMG", dmg_total, "vDmgTip")
 
         content = (
-            f'"<b>" + token.name + "</b>" + _critHtml + " attacks with {weapon}!<br>"'
+            f'"<b>" + token.name + "</b>" + vCritHtml + " attacks with {weapon}!<br>"'
             f' + {atk_box}'
             f' + " &nbsp;|&nbsp; "'
             f' + {dmg_box}'
@@ -333,15 +333,15 @@ def _attack_cmd(atk, spell_mod_prop="0", char_color="#333333"):
         )
 
         lines = [
-            "[h: _d20=1d20]",
+            "[h: vD20=1d20]",
             prop_decls,
-            f"[h: _atkBonus={prop_sum}]",
-            f"[h: _atkTotal=_d20+_atkBonus]",
+            f"[h: vAtkBonus={prop_sum}]",
+            f"[h: vAtkTotal=vD20+vAtkBonus]",
             dmg_decls,
-            "[h: _crit=if(_d20==20,1,0)][h: _fumble=if(_d20==1,1,0)]",
-            f'[h: _critHtml=if(_crit," <b style=\'color:red\'>CRITICAL HIT!</b>",if(_fumble," <b style=\'color:red\'>FUMBLE!</b>",""))]',
-            f"[h: _atkTip={atk_tip}]",
-            f"[h: _dmgTip={dmg_tip}]",
+            "[h: vCrit=if(vD20==20,1,0)][h: vFumble=if(vD20==1,1,0)]",
+            f'[h: vCritHtml=if(vCrit," <b style=\'color:red\'>CRITICAL HIT!</b>",if(vFumble," <b style=\'color:red\'>FUMBLE!</b>",""))]',
+            f"[h: vAtkTip={atk_tip}]",
+            f"[h: vDmgTip={dmg_tip}]",
             _bcast(char_color, content),
         ]
         return "".join(lines)
@@ -353,10 +353,10 @@ def _attack_cmd(atk, spell_mod_prop="0", char_color="#333333"):
         on_fail  = atk.get("on_fail", "")
         fail_html = f"<br><i>On fail: {on_fail}</i>" if on_fail else ""
 
-        dc_tip  = f'"(8+Proficiency+{spell_mod_prop}): 8+"+Proficiency+"+"+{spell_mod_prop}+"="+_dc'
-        dmg_tip = f'"{dice}: "+_dd'
-        dc_box  = _roll_box("DC", "_dc", "_dcTip")
-        dmg_box = _roll_box("DMG", "_dd", "_dmgTip")
+        dc_tip  = f'"(8+Proficiency+{spell_mod_prop}): 8+"+Proficiency+"+"+{spell_mod_prop}+"="+vDC'
+        dmg_tip = f'"{dice}: "+vDD'
+        dc_box  = _roll_box("DC", "vDC", "vDCTip")
+        dmg_box = _roll_box("DMG", "vDD", "vDmgTip")
 
         content = (
             f'"<b>" + token.name + "</b> uses {weapon}!<br>"'
@@ -367,10 +367,10 @@ def _attack_cmd(atk, spell_mod_prop="0", char_color="#333333"):
         )
 
         lines = [
-            f"[h: _dc=8+Proficiency+{spell_mod_prop}]",
-            f"[h: _dd={dice}]",
-            f"[h: _dcTip={dc_tip}]",
-            f"[h: _dmgTip={dmg_tip}]",
+            f"[h: vDC=8+Proficiency+{spell_mod_prop}]",
+            f"[h: vDD={dice}]",
+            f"[h: vDCTip={dc_tip}]",
+            f"[h: vDmgTip={dmg_tip}]",
             _bcast(char_color, content),
         ]
         return "".join(lines)
@@ -381,27 +381,27 @@ def _attack_cmd(atk, spell_mod_prop="0", char_color="#333333"):
         if dmgmod == "SpellAttackBonus":
             dmgmod = spell_mod_prop
         if dmgmod:
-            heal_decls = f"[h: _hd={dice}][h: _hm={dmgmod}][h: _ht=_hd+_hm]"
-            heal_tip   = f'"({dice}+{dmgmod}): "+_hd+"+"+_hm+"="+_ht'
+            heal_decls = f"[h: vHD={dice}][h: vHM={dmgmod}][h: vHT=vHD+vHM]"
+            heal_tip   = f'"({dice}+{dmgmod}): "+vHD+"+"+vHM+"="+vHT'
         else:
-            heal_decls = f"[h: _hd={dice}][h: _ht=_hd]"
-            heal_tip   = f'"{dice}: "+_hd'
-        heal_box = _roll_box("Heals", "_ht", "_healTip")
+            heal_decls = f"[h: vHD={dice}][h: vHT=vHD]"
+            heal_tip   = f'"{dice}: "+vHD'
+        heal_box = _roll_box("Heals", "vHT", "vHealTip")
 
         content = (
             f'"<b>" + token.name + "</b> uses {weapon}!<br>"'
             f' + {heal_box}'
             f' + " HP.{note_html}"'
         )
-        lines = [heal_decls, f"[h: _healTip={heal_tip}]", _bcast(char_color, content)]
+        lines = [heal_decls, f"[h: vHealTip={heal_tip}]", _bcast(char_color, content)]
         return "".join(lines)
 
     elif atype == "utility":
         dice = atk.get("damage_dice", "")
         if dice:
-            roll_box = _roll_box("Roll", "_roll", "_tip")
+            roll_box = _roll_box("Roll", "vRoll", "vTip")
             content  = f'"<b>" + token.name + "</b> uses {weapon}!<br>" + {roll_box} + "{note_html}"'
-            lines    = [f"[h: _roll={dice}]", f'[h: _tip="{dice}: "+_roll]', _bcast(char_color, content)]
+            lines    = [f"[h: vRoll={dice}]", f'[h: vTip="{dice}: "+vRoll]', _bcast(char_color, content)]
             return "".join(lines)
         content = f'"<b>" + token.name + "</b> uses {weapon}!{note_html}"'
         return _bcast(char_color, content)
