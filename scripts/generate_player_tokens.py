@@ -414,8 +414,9 @@ def build_content_xml(cs, image_md5):
     counters = cs.get("counters", [])
     props["CustomCounters"] = json.dumps(counters) if counters else ""
 
-    entries   = "\n".join(_prop(k, v) for k, v in props.items())
+    entries    = "\n".join(_prop(k, v) for k, v in props.items())
     macros_xml = build_macros_xml(cs)
+    sight_type = "Darkvision 120" if "darkvision" in cs.get("notes", "").lower() else "Normal"
 
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <net.rptools.maptool.model.Token>
@@ -453,7 +454,7 @@ def build_content_xml(cs, image_md5):
   <isFlippedY>false</isFlippedY>
   <isFlippedIso>false</isFlippedIso>
   <hasSight>true</hasSight>
-  <sightType>Normal Vision</sightType>
+  <sightType>{sight_type}</sightType>
   <hasFog>false</hasFog>
   <propertyMapCI>
     <store>
