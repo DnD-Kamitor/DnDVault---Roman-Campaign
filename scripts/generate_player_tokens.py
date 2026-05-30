@@ -169,8 +169,13 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".webp"}
 def _pil_to_png(img, size=200):
     img  = img.convert("RGBA")
     w, h = img.size
-    side = min(w, h)
-    img  = img.crop(((w-side)//2, (h-side)//2, (w+side)//2, (h+side)//2))
+    if h > w:
+        # Portrait orientation: crop top square — face/head sits in upper portion
+        img = img.crop((0, 0, w, w))
+    else:
+        # Landscape or square: center crop
+        side = min(w, h)
+        img  = img.crop(((w-side)//2, (h-side)//2, (w+side)//2, (h+side)//2))
     img  = img.resize((size, size), PILImage.LANCZOS)
     buf  = io.BytesIO()
     img.save(buf, format="PNG")
