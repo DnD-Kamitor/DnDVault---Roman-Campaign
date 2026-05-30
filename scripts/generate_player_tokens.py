@@ -17,6 +17,7 @@ import json
 import struct
 import sys
 import uuid
+import xml.etree.ElementTree as ET
 import zipfile
 import zlib
 from pathlib import Path
@@ -27,9 +28,11 @@ try:
 except ImportError:
     HAS_PIL = False
 
-REPO_ROOT   = Path(__file__).parent.parent
-PLAYERS_DIR = REPO_ROOT / "players"
-OUTPUT_DIR  = REPO_ROOT / "Maptool" / "tokens" / "players"
+REPO_ROOT    = Path(__file__).parent.parent
+SCRIPTS_DIR  = Path(__file__).parent
+PLAYERS_DIR  = REPO_ROOT / "players"
+OUTPUT_DIR   = REPO_ROOT / "Maptool" / "tokens" / "players"
+MACROS_XML   = SCRIPTS_DIR / "standard_token_macros.xml"
 
 # ── Role armor (roles.qmd 137-154) ───────────────────────────────────────────
 
@@ -202,6 +205,109 @@ def new_baguid():
     return base64.b64encode(uuid.uuid4().bytes).decode()
 
 
+# ── Macro builder ─────────────────────────────────────────────────────────────
+
+def _xe(s):
+    """XML-escape a string for embedding in element text."""
+    return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def _macro_entry(idx, label, group, color, command, fontcolor="black",
+                 fontsize="1.10em", minwidth="100px", sortby=""):
+    return (
+        f"  <entry>\n"
+        f"    <int>{idx}</int>\n"
+        f"    <net.rptools.maptool.model.MacroButtonProperties>\n"
+        f"      <macroUUID>{uuid.uuid4()}</macroUUID>\n"
+        f"      <saveLocation>Token</saveLocation>\n"
+        f"      <index>{idx}</index>\n"
+        f"      <colorKey>{color}</colorKey>\n"
+        f"      <hotKey>None</hotKey>\n"
+        f"      <command>{_xe(command)}</command>\n"
+        f"      <label>{_xe(label)}</label>\n"
+        f"      <group>{group}</group>\n"
+        f"      <sortby>{sortby}</sortby>\n"
+        f"      <autoExecute>true</autoExecute>\n"
+        f"      <includeLabel>false</includeLabel>\n"
+        f"      <applyToTokens>false</applyToTokens>\n"
+        f"      <fontColorKey>{fontcolor}</fontColorKey>\n"
+        f"      <fontSize>{fontsize}</fontSize>\n"
+        f"      <minWidth>{minwidth}</minWidth>\n"
+        f"      <maxWidth/>\n"
+        f"      <allowPlayerEdits>true</allowPlayerEdits>\n"
+        f"      <toolTip/>\n"
+        f"      <displayHotKey>true</displayHotKey>\n"
+        f"      <commonMacro>false</commonMacro>\n"
+        f"      <compareGroup>true</compareGroup>\n"
+        f"      <compareSortPrefix>true</compareSortPrefix>\n"
+        f"      <compareCommand>true</compareCommand>\n"
+        f"      <compareIncludeLabel>true</compareIncludeLabel>\n"
+        f"      <compareAutoExecute>true</compareAutoExecute>\n"
+        f"      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>\n"
+        f"    </net.rptools.maptool.model.MacroButtonProperties>\n"
+        f"  </entry>"
+    )
+
+def _attack_cmd(atk):
+    atype  = atk.get("type", "melee")
+    weapon = atk.get("weapon", "weapon")
+    if atype == "melee":
+        atk_expr = " + ".join(atk.get("atk_props", ["Proficiency"]))
+        return (
+            f"/me [h:roll = 1d20]"
+            f"[r, if(roll == 20): \"<b style='color:red'>CRITICALLY HITS</b> with\"; \"attacks with\"] "
+            f"{weapon}"
+            f"[r, if(roll == 1): \" but rolled a <b style='color:red'>NATURAL 1!</b>\"; \"!\"] "
+            f"(ATK: [t: roll + {atk_expr}])"
+        )
+    elif atype == "damage":
+        dice   = atk.get("damage_dice", "1d4")
+        dmgmod = atk.get("damage_mod", "")
+        dmgtyp = atk.get("damage_type", "damage")
+        expr   = f"{dice} + {dmgmod}" if dmgmod else dice
+        return f"/me deals [t: {expr}] {dmgtyp} damage with {weapon}!"
+    elif atype == "save":
+        dc_prop = atk.get("dc_prop", "SpellSaveDC")
+        save_ab = atk.get("save_ability", "WIS")
+        dice    = atk.get("damage_dice", "1d4")
+        dmgtyp  = atk.get("damage_type", "damage")
+        on_fail = atk.get("on_fail", "")
+        fail_note = f" On a failed save: {on_fail}." if on_fail else ""
+        return (
+            f"/me uses {weapon}! "
+            f"Target makes DC [r: {dc_prop}] {save_ab} save "
+            f"or takes [t: {dice}] {dmgtyp} damage.{fail_note}"
+        )
+    return f"/me uses {weapon}!"
+
+def build_macros_xml(cs):
+    # Standard macros from extracted Standard Token
+    if MACROS_XML.exists():
+        raw = MACROS_XML.read_text()
+        # strip outer element tags, keep inner entries
+        inner = raw.strip()
+        if inner.startswith("<macroPropertiesMap>"):
+            inner = inner[len("<macroPropertiesMap>"):]
+        if inner.endswith("</macroPropertiesMap>"):
+            inner = inner[:-len("</macroPropertiesMap>")]
+        standard_entries = inner.strip()
+    else:
+        standard_entries = ""
+
+    # Character-specific attack macros (index 100+)
+    attack_entries = []
+    for i, atk in enumerate(cs.get("attacks", []), start=100):
+        cmd   = _attack_cmd(atk)
+        color = atk.get("color", "default")
+        label = atk.get("label", f"Attack {i}")
+        attack_entries.append(
+            _macro_entry(i, label, "Combat", color, cmd, sortby="3.0")
+        )
+
+    parts = [standard_entries] + attack_entries
+    body  = "\n".join(p for p in parts if p)
+    return f"<macroPropertiesMap>\n{body}\n</macroPropertiesMap>"
+
+
 # ── XML builder ───────────────────────────────────────────────────────────────
 
 def _prop(key, value):
@@ -304,7 +410,12 @@ def build_content_xml(cs, image_md5):
     props["Description"]         = cs.get("notes", "")
     props["Senses"]              = "Darkvision 60 ft." if "darkvision" in cs.get("notes","").lower() else ""
 
-    entries = "\n".join(_prop(k, v) for k, v in props.items())
+    # CustomCounters — JSON array consumed by the Sheet macro's counter display
+    counters = cs.get("counters", [])
+    props["CustomCounters"] = json.dumps(counters) if counters else ""
+
+    entries   = "\n".join(_prop(k, v) for k, v in props.items())
+    macros_xml = build_macros_xml(cs)
 
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <net.rptools.maptool.model.Token>
@@ -350,7 +461,7 @@ def build_content_xml(cs, image_md5):
     </store>
   </propertyMapCI>
   <state/>
-  <macroPropertiesMap/>
+  {macros_xml}
   <speechMap/>
 </net.rptools.maptool.model.Token>"""
 

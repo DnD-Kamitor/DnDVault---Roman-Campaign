@@ -37,6 +37,50 @@
   "corruption_level": 0,
   "commendationes": 0,
 
+  "attacks": [
+    {
+      "label": "Pugio ATK",
+      "type": "melee",
+      "weapon": "Pugio (Dagger)",
+      "atk_props": ["DexMod", "Proficiency"],
+      "damage_dice": "1d4",
+      "damage_mod": "DexMod",
+      "damage_type": "piercing",
+      "color": "#c0c0c0",
+      "note": "Finesse, Light, Thrown 20/60"
+    },
+    {
+      "label": "Pugio DMG",
+      "type": "damage",
+      "weapon": "Pugio (Dagger)",
+      "damage_dice": "1d4",
+      "damage_mod": "DexMod",
+      "damage_type": "piercing",
+      "color": "#c0c0c0"
+    },
+    {
+      "label": "Vicious Mockery",
+      "type": "save",
+      "weapon": "Vicious Mockery",
+      "save_ability": "WIS",
+      "dc_prop": "SpellSaveDC",
+      "damage_dice": "1d4",
+      "damage_type": "psychic",
+      "color": "#d0a0ff",
+      "on_fail": "disadvantage on next attack roll before end of your next turn"
+    }
+  ],
+
+  "counters": [
+    {
+      "name": "Bardic Inspiration",
+      "category": "Bard",
+      "value": 3,
+      "max": 3,
+      "reset": "Long Rest"
+    }
+  ],
+
   "portrait_file": "Tanit Bint Abdmelquart.jpeg",
   "portrait_color": "#c47a1e",
 

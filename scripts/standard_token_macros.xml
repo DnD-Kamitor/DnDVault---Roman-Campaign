@@ -1,0 +1,2661 @@
+<macroPropertiesMap>
+  <entry>
+    <int>1</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>721044ce-d2de-44f8-9eab-4b3ce4f0a006</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>1</index>
+      <colorKey>blue</colorKey>
+      <hotKey>None</hotKey>
+      <command>[h: addToInitiative()]
+/me rolls initiative: [t: token.init = 1d20 + Initiative].
+[h: sortInitiative()]</command>
+      <label>&lt;b&gt;Roll Initiative&lt;/b&gt;</label>
+      <group>Combat</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>white</fontColorKey>
+      <fontSize>1.25em</fontSize>
+      <minWidth>183px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>&lt;html&gt;&lt;body style="width:200px;"&gt;Rolls your initiative and adds you to the Intiative panel. To open the Initiative panel,  from the menu select Window &gt; Initiative.
+&lt;/body&gt;&lt;/html&gt;</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>6</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>2642975f-67dd-4071-883b-abddaa79af60</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>6</index>
+      <colorKey>purple</colorKey>
+      <hotKey>None</hotKey>
+      <command>[h, if(getInitiativeToken() == currentToken()), code: 
+{ 
+	[message = add(token.name, " ends ", PronounPossessive, " turn.")] 
+	[broadcast(message)] 
+	[nextInitiative()]
+}; 
+{
+	[message = add("&lt;i style='color:gray;'&gt;It is not ", token.name, "'s turn!&lt;/i&gt;")]
+	[broadcast(message, getPlayerName(), "gm")]
+};]
+</command>
+      <label>&lt;b&gt;End Turn&lt;/b&gt;</label>
+      <group>Combat</group>
+      <sortby>999.2</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>white</fontColorKey>
+      <fontSize>1.15em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip />
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>8</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>ae2e81a3-6d27-4dfb-ad86-1b2d571accd9</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>8</index>
+      <colorKey>#a0e0a0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me rolls a Dexterity saving throw: [t: 1d20 + DexMod + (Proficiency * DexSave)]</command>
+      <label>DEX</label>
+      <group>Saving Throws</group>
+      <sortby>2</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>25px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(DexSave == 0): "Untrained "][r, if(DexSave == 1): "Proficient "][r, if(DexSave == 2): "Expert "][r, if(DexSave * Proficiency + DexMod &gt;= 0): "+"][r: DexSave * Proficiency + DexMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>9</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>3e6eeb4a-3625-4ea0-8c79-dbb56285a538</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>9</index>
+      <colorKey>#e0a0a0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me rolls a Strength saving throw: [t: 1d20 + StrMod + (Proficiency * StrSave)]</command>
+      <label>STR</label>
+      <group>Saving Throws</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>25px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(StrSave == 0): "Untrained "][r, if(StrSave == 1): "Proficient "][r, if(StrSave == 2): "Expert "][r, if(StrSave * Proficiency + StrMod &gt;= 0): "+"][r: StrSave * Proficiency + StrMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>10</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>9baf2c10-08fb-41dd-8168-6bc5efb5738c</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>10</index>
+      <colorKey>#a0a0e0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me rolls a Constitution saving throw: [t: 1d20 + ConMod + (Proficiency * ConSave)]</command>
+      <label>CON</label>
+      <group>Saving Throws</group>
+      <sortby>3</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>25px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(ConSave == 0): "Untrained "][r, if(ConSave == 1): "Proficient "][r, if(ConSave == 2): "Expert "][r, if(ConSave * Proficiency + ConMod &gt;= 0): "+"][r: ConSave * Proficiency + ConMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>11</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>5e8874bc-406a-45c4-a44a-d6fcf6977bb8</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>11</index>
+      <colorKey>#9adada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me rolls an Intelligence saving throw: [t: 1d20 + IntMod + (Proficiency * IntSave)]</command>
+      <label>INT</label>
+      <group>Saving Throws</group>
+      <sortby>4</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>25px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(IntSave == 0): "Untrained "][r, if(IntSave == 1): "Proficient "][r, if(IntSave == 2): "Expert "][r, if(IntSave * Proficiency + IntMod &gt;= 0): "+"][r: IntSave * Proficiency + IntMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>12</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>b24ebf65-0f45-4d75-ab01-76212353849e</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>12</index>
+      <colorKey>#da9ada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me rolls a Wisdom saving throw: [t: 1d20 + WisMod + (Proficiency * WisSave)]</command>
+      <label>WIS</label>
+      <group>Saving Throws</group>
+      <sortby>5</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>25px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(WisSave == 0): "Untrained "][r, if(WisSave == 1): "Proficient "][r, if(WisSave == 2): "Expert "][r, if(WisSave * Proficiency + WisMod &gt;= 0): "+"][r: WisSave * Proficiency + WisMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>13</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>f79f1cab-2f54-4e94-b5da-38712b93f118</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>13</index>
+      <colorKey>#dada9a</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me rolls a Charisma saving throw: [t: 1d20 + ChaMod + (Proficiency * ChaSave)]</command>
+      <label>CHA</label>
+      <group>Saving Throws</group>
+      <sortby>6</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>25px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(ChaSave == 0): "Untrained "][r, if(ChaSave == 1): "Proficient "][r, if(ChaSave == 2): "Expert "][r, if(ChaSave * Proficiency + ChaMod &gt;= 0): "+"][r: ChaSave * Proficiency + ChaMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>14</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>eb3c9748-532f-42bf-94e3-47af8c91f926</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>14</index>
+      <colorKey>#a0e0a0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts an Acrobatics check! ([t: 1d20 + DexMod + (Proficiency * Acrobatics)])</command>
+      <label>Acrobatics</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Acrobatics == 0): "Untrained "][r, if(Acrobatics == 1): "Proficient "][r, if(Acrobatics == 2): "Expert "][r, if(Acrobatics * Proficiency + DexMod &gt;= 0): "+"][r: Acrobatics * Proficiency + DexMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>15</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>6c991878-def3-496a-8c4c-a4e36e648215</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>15</index>
+      <colorKey>#e0a0a0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts an Athletics check! ([t: 1d20 + StrMod + (Proficiency * Athletics)])
+</command>
+      <label>Athletics</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Athletics == 0): "Untrained "][r, if(Athletics == 1): "Proficient "][r, if(Athletics == 2): "Expert "][r, if(Athletics * Proficiency + StrMod &gt;= 0): "+"][r: Athletics * Proficiency + StrMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>16</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>ff43cdb3-8c5b-462d-a9ab-e2f2613e251c</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>16</index>
+      <colorKey>#da9ada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts an Animal Handling check! ([t: 1d20 + WisMod + (Proficiency * AnimalHandling)])
+</command>
+      <label>Animal Handling</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(AnimalHandling == 0): "Untrained "][r, if(AnimalHandling == 1): "Proficient "][r, if(AnimalHandling == 2): "Expert "][r, if(AnimalHandling * Proficiency + WisMod &gt;= 0): "+"][r: AnimalHandling * Proficiency + WisMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>17</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>ecff0a5e-fca3-4917-bb84-9df5c5b1c643</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>17</index>
+      <colorKey>#9adada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts an Arcana check! ([t: 1d20 + IntMod + (Proficiency * Arcana)])
+</command>
+      <label>Arcana</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Arcana == 0): "Untrained "][r, if(Arcana == 1): "Proficient "][r, if(Arcana == 2): "Expert "][r, if(Arcana * Proficiency + IntMod &gt;= 0): "+"][r: Arcana * Proficiency + IntMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>18</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>682ae3de-f500-407e-9856-348f4ba121a5</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>18</index>
+      <colorKey>#9adada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a History check! ([t: 1d20 + IntMod + (Proficiency * History)])
+</command>
+      <label>History</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(History == 0): "Untrained "][r, if(History == 1): "Proficient "][r, if(History == 2): "Expert "][r, if(History * Proficiency + IntMod &gt;= 0): "+"][r: History * Proficiency + IntMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>19</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>20eeb1f7-8595-4678-bb8a-d9b7005651cc</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>19</index>
+      <colorKey>#dada9a</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Deception check! ([t: 1d20 + ChaMod + (Proficiency * Deception)])</command>
+      <label>Deception</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Deception == 0): "Untrained "][r, if(Deception == 1): "Proficient "][r, if(Deception == 2): "Expert "][r, if(Deception * Proficiency + ChaMod &gt;= 0): "+"][r: Deception * Proficiency + ChaMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>20</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>c45067cf-713d-467c-89ae-43d42b7d933b</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>20</index>
+      <colorKey>#da9ada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts an Insight check! ([t: 1d20 + WisMod + (Proficiency * Insight)])
+</command>
+      <label>Insight</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Insight == 0): "Untrained "][r, if(Insight == 1): "Proficient "][r, if(Insight == 2): "Expert "][r, if(Insight * Proficiency + WisMod &gt;= 0): "+"][r: Insight * Proficiency + WisMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>21</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>8896d568-04b4-4878-ae4c-5429c184aff5</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>21</index>
+      <colorKey>#dada9a</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts an Intimidation check! ([t: 1d20 + ChaMod + (Proficiency * Intimidation)])
+</command>
+      <label>Intimidation</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Intimidation == 0): "Untrained "][r, if(Intimidation == 1): "Proficient "][r, if(Intimidation == 2): "Expert "][r, if(Intimidation * Proficiency + ChaMod &gt;= 0): "+"][r: Intimidation * Proficiency + ChaMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>22</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>dc8b5f00-9579-49b6-af94-6b8fb2ac6db4</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>22</index>
+      <colorKey>#9adada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts an Investigation check! ([t: 1d20 + IntMod + (Proficiency * Investigation)])
+</command>
+      <label>Investigation</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Investigation == 0): "Untrained "][r, if(Investigation == 1): "Proficient "][r, if(Investigation == 2): "Expert "][r, if(Investigation * Proficiency + IntMod &gt;= 0): "+"][r: Investigation * Proficiency + IntMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>23</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>2eb4e655-d8d5-4aa3-a206-026de1b9eeeb</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>23</index>
+      <colorKey>#da9ada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Medicine check! ([t: 1d20 + WisMod + (Proficiency * Medicine)])
+</command>
+      <label>Medicine</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Medicine == 0): "Untrained "][r, if(Medicine == 1): "Proficient "][r, if(Medicine == 2): "Expert "][r, if(Medicine * Proficiency + WisMod &gt;= 0): "+"][r: Medicine * Proficiency + WisMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>24</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>8af45428-3e73-4c57-860c-44b084e7aae4</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>24</index>
+      <colorKey>#9adada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Nature check! ([t: 1d20 + IntMod + (Proficiency * Nature)])
+</command>
+      <label>Nature</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Nature == 0): "Untrained "][r, if(Nature == 1): "Proficient "][r, if(Nature == 2): "Expert "][r, if(Nature * Proficiency + IntMod &gt;= 0): "+"][r: Nature * Proficiency + IntMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>25</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>483c09fd-a94b-429e-b8e3-859d57e92ef3</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>25</index>
+      <colorKey>#da9ada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Perception check! ([t: 1d20 + WisMod + (Proficiency * Perception)])
+</command>
+      <label>Perception</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Perception == 0): "Untrained "][r, if(Perception == 1): "Proficient "][r, if(Perception == 2): "Expert "][r, if(Perception * Proficiency + WisMod &gt;= 0): "+"][r: Perception * Proficiency + WisMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>26</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>5ffde3df-913f-42a5-b792-3616ab7dde1b</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>26</index>
+      <colorKey>#dada9a</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Performance check! ([t: 1d20 + ChaMod + (Proficiency * Performance)])
+</command>
+      <label>Performance</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Performance == 0): "Untrained "][r, if(Performance == 1): "Proficient "][r, if(Performance == 2): "Expert "][r, if(Performance * Proficiency + ChaMod &gt;= 0): "+"][r: Performance * Proficiency + ChaMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>27</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>375836f4-fb45-4993-b11f-525dba7d70f5</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>27</index>
+      <colorKey>#9adada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Religion check! ([t: 1d20 + IntMod + (Proficiency * Religion)])
+</command>
+      <label>Religion</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Religion == 0): "Untrained "][r, if(Religion == 1): "Proficient "][r, if(Religion == 2): "Expert "][r, if(Religion * Proficiency + IntMod &gt;= 0): "+"][r: Religion * Proficiency + IntMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>28</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>e29cbec0-71be-4879-9930-58e21937df60</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>28</index>
+      <colorKey>#a0e0a0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Sleight of Hand
+ check! ([t: 1d20 + DexMod + (Proficiency * SleightOfHand
+)])
+</command>
+      <label>Sleight of Hand</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(SleightofHand == 0): "Untrained "][r, if(SleightofHand == 1): "Proficient "][r, if(SleightofHand == 2): "Expert "][r, if(SleightofHand * Proficiency + DexMod &gt;= 0): "+"][r: SleightofHand * Proficiency + DexMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>29</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>54cb3b45-d122-4e8f-a11b-faa2aa107f6c</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>29</index>
+      <colorKey>#a0e0a0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Stealth
+ check! ([t: 1d20 + DexMod + (Proficiency * Stealth
+)])
+</command>
+      <label>Stealth</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Stealth == 0): "Untrained "][r, if(Stealth == 1): "Proficient "][r, if(Stealth == 2): "Expert "][r, if(Stealth * Proficiency + DexMod &gt;= 0): "+"][r: Stealth * Proficiency + DexMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>30</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>59a4a365-0ef8-4e40-90e0-097e20763b85</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>30</index>
+      <colorKey>#da9ada</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Survival check! ([t: 1d20 + WisMod + (Proficiency * Survival)])
+</command>
+      <label>Survival</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Survival == 0): "Untrained "][r, if(Survival == 1): "Proficient "][r, if(Survival == 2): "Expert "][r, if(Survival * Proficiency + WisMod &gt;= 0): "+"][r: Survival * Proficiency + WisMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>31</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>041891e8-4b66-4cfb-90f5-4d9aa86f0282</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>31</index>
+      <colorKey>#dada9a</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts a Persuasion check! ([t: 1d20 + ChaMod + (Proficiency * Persuasion)])
+</command>
+      <label>Persuasion</label>
+      <group>Skill Checks</group>
+      <sortby />
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>[r, if(Persuasion == 0): "Untrained "][r, if(Persuasion == 1): "Proficient "][r, if(Persuasion == 2): "Expert "][r, if(Persuasion * Proficiency + ChaMod &gt;= 0): "+"][r: Persuasion * Proficiency + ChaMod]</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>52</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>61abe46b-b37b-4f1e-9da2-fdbe40463f05</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>52</index>
+      <colorKey>#fbd050</colorKey>
+      <hotKey>None</hotKey>
+      <command>[h: initToken = getInitiativeToken()]
+[h: thisToken = currentToken()]
+[h, if(initToken == thisToken), code: { 
+	[if(ReadyAction == ""), code: {
+		[input("trigger|enemies come in range|What trigger will you react to?|TEXT",
+	"action|I use my attack action|What action will you take?|TEXT")]
+		[ActionDescription = "When " + trigger + ", " + action]
+		[ReadyAction = ActionDescription]
+		[message = add(token.name, 
+						" has readied an action: &lt;i&gt;", 
+						ReadyAction, 
+						"&lt;/i&gt;")] 
+		[broadcast(message)] 
+		[setInitiativeHold(1)]
+	};
+	{
+		[message = add(token.name, 
+						" unreadies their action. (&lt;i&gt;", 
+						ReadyAction, 
+						"&lt;/i&gt;)")] 
+		[broadcast(message)] 
+		[setInitiativeHold(0)]
+		[ReadyAction = ""]
+	};]
+};
+{
+	[if(getInitiativeHold() == 1), code: {
+		[message = add(token.name, 
+						" triggers their readied action! (&lt;i&gt;", 
+						ReadyAction, 
+						"&lt;/i&gt;)")] 
+		[broadcast(message)] 
+		[setInitiativeHold(0)]
+		[ReadyAction = ""]
+	};
+	{
+		[message = add("&lt;i style='color:gray;'&gt;",
+						token.name,
+						" clears any readied action.&lt;/i&gt;")]
+		[broadcast(message, getPlayerName())]
+		[ReadyAction = ""]
+	};]
+};]</command>
+      <label>Ready Action</label>
+      <group>Combat</group>
+      <sortby>999.1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.15em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip />
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>53</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>7e6b0dac-664b-485e-9177-ed9f2d7baba3</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>53</index>
+      <colorKey>white</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me uses the Dash action to move twice [r: PronounPossessive] speed this round.</command>
+      <label>Dash</label>
+      <group>Combat</group>
+      <sortby>1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.00em</fontSize>
+      <minWidth>54px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Move your current speed again this turn.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>54</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>c02d392c-d53b-4014-97c7-3bece6811a0c</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>54</index>
+      <colorKey>white</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me uses the Disengage action to move without provoking opportunity attacks for the rest of [r: PronounPossessive] turn.</command>
+      <label>Disengage</label>
+      <group>Combat</group>
+      <sortby>1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.00em</fontSize>
+      <minWidth>55px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Move without provoking opportunity attacks this turn.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>55</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>007a9772-2d41-4c56-862f-ab3c75aecbbc</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>55</index>
+      <colorKey>white</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me
+[if(state.Dodging == 1), CODE:
+{
+     [h:state.Dodging=0]
+     is no longer dodging.
+};
+{
+     [h:state.Dodging=1]
+uses Dodge:
+&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;• Attackers [r: token.name] is aware of have disadvantage on their attacks against [r: PronounObjective].
+&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;• [r: upper(PronounSubjective, 1)] gets advantage on Dexterity saving throws. 
+&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;• This benefit is lost if [r: token.name] is incapacitated or [r: PronounPossessive] speed is dropped to 0.
+}]
+</command>
+      <label>Dodge</label>
+      <group>Combat</group>
+      <sortby>1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.00em</fontSize>
+      <minWidth>54px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Impose disadvantage on attackers this turn.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>56</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>d4182959-416f-4825-a6a6-544521e928c4</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>56</index>
+      <colorKey>white</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me Uses Help to give a friendly creature advantage on an ability check or first attack roll against a foe within 5 feet of {PronounObjective}.</command>
+      <label>Help</label>
+      <group>Combat</group>
+      <sortby>1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.00em</fontSize>
+      <minWidth>32px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Grant advantage to another character.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>57</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>12a54762-ba44-4327-93d4-24e57c949202</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>57</index>
+      <colorKey>white</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me attempts to Hide (Stealth roll: &lt;b&gt;[t: 1d20 + DexMod + (Proficiency * Stealth)]&lt;/b&gt;):
+&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;• You can’t hide from a creature that can see you.
+&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;• Creatures with a passive perception at or above your stealth result see you.
+&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;• Other creatures must roll Wisdom (Perception) against your stealth result to see you.</command>
+      <label>Hide</label>
+      <group>Combat</group>
+      <sortby>1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.00em</fontSize>
+      <minWidth>32px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Use stealth to try and hide.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>58</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>56dd5910-17ff-4fe0-87b7-5c41c9807405</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>58</index>
+      <colorKey>white</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me uses the 'Use an Object' action:
+&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;• When an object requires your action for its use, you take the Use an Object action. 
+&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;• This action is also useful when you want to interact with more than one object on your turn.
+
+</command>
+      <label>Use Object</label>
+      <group>Combat</group>
+      <sortby>1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.00em</fontSize>
+      <minWidth>54px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Use an object which requires an action.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>59</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>77b08493-36e8-4266-9323-bdd1ff6d06f6</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>59</index>
+      <colorKey>white</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me uses the Search action. (GM will ask you to roll Perception or Investigation)</command>
+      <label>Search</label>
+      <group>Combat</group>
+      <sortby>1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.00em</fontSize>
+      <minWidth>36px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Devote your attention to finding something.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>60</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>2efd9048-2935-48a1-a151-c787966be9c7</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>60</index>
+      <colorKey>#ffa0a0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/self 
+[h: vStatus = input("vDamage|0|How much damage to take?|TEXT|WIDTH=4")]
+[h: abort(vStatus)]
+[h, if(vDamage &lt; 0): vDamage = 0]
+[h: abort(vDamage)]
+
+&lt;!-- Instant Death Check. Sends an alert to the GM only in case they want to rule differently. --&gt;
+[h, if(vDamage &gt; eMaxHP + eHP): vGMMsg = "&lt;em style='color:red'&gt;&lt;strong&gt;GM ALERT:&lt;/strong&gt; " + token.name + " has instantly died from " + vDamage + " damage, which puts them at "+ (eHP - vDamage) + "/" + eMaxHP + ".&lt;/em&gt;"; vGMMsg = ""]
+
+&lt;!-- Damage reduction logic --&gt;
+[h, if(TempHP == ""): TempHP = 0]
+[h: TempHP = TempHP - vDamage]
+[h, if(TempHP &lt; 0): HP = HP + TempHP]
+[h, if(TempHP &lt; 0): TempHP = 0]
+[h, if(HP &lt; 0): HP = 0]
+
+&lt;!-- Damage Messages --&gt;
+[h: vDamageMsg = "* &lt;span style='color:green;'&gt;" + token.name + " has taken damage"]
+[h, if(state.Stable == 1), code: {
+	[state.Stable = 0]
+	[vDamageMsg = vDamageMsg + " and is no longer stable.&lt;/span&gt;"]
+};{
+	[vDamageMsg = vDamageMsg + ".&lt;/span&gt;"]
+}]
+[h: broadcast(vDamageMsg)]
+[h, if(HP == 0), code: {
+	[broadcast("* &lt;span style='font-weight: bold; color:red'&gt;" + token.name +" has been reduced to 0 HP and is Dying!&lt;/strong&gt;&lt;/span&gt;")]
+	[state.Dying = 1]
+};{}]
+
+[h, if(TempHP &gt; 0): vTempHPMsg = "(+" + TempHP + ")"; vTempHPMsg = ""]
+{token.name}&amp;#39;s updated HP: [r: HP + vTempHPMsg + "/" + eMaxHP] (took {vDamage})
+[h, if( vGMMsg != ""): broadcast(vGMMsg, "gm")]
+
+[h: "&lt;!-- Perform bar logic. --&gt;"]
+[h, if(HP &lt; eMaxHP): setBarVisible("Health (Approximate)", 0)]
+[h, if(HP &lt; eMaxHP): setBar("Health", eHP / eMaxHP); setBarVisible("Health", 0)]
+
+[h: "&lt;!-- Reload Character Sheet if present. --&gt;"]
+[h, if(isFrameVisible(token.name + " - Character Sheet") &amp;&amp; hasMacro("Sheet")), code: {
+	[macro("Sheet@this"):""]
+};{}]</command>
+      <label>&lt;b&gt;Take Damage&lt;/b&gt;</label>
+      <group>Adventuring</group>
+      <sortby>2.1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>&lt;html&gt;&lt;body style="width:200px;"&gt;Click to enter an amount of damage to take up to your remaining TempHP + HP.
+&lt;/body&gt;&lt;/html&gt;</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>61</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>1b62f3a7-61af-4851-8296-24f57e6303dd</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>61</index>
+      <colorKey>#a0ffa0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/self 
+[h: vStatus = input("vHealing|0|How much damage to heal?|TEXT")]
+[h: abort(vStatus)]
+[h, if(vHealing &lt; 0): vHealing = 0]
+[h, if(vHealing + HP &gt; eMaxHP): vHealing = eMaxHP - HP]
+[h: abort(vHealing)]
+
+[h: "&lt;!-- Clear death-related states --&gt;"]
+[h: DeathFails = ""]
+[h: DeathSuccesses = ""]
+[h: state.Dead = 0]
+[h: state.Dying = 0]
+[h: state.Stable = 0]
+
+[h: broadcast("&lt;span style='color:green;'&gt;* " + token.name + " looks better.&lt;/span&gt;")]
+[h: HP = vHealing + HP]
+[h: vTHP = "/"]
+[h, if(TempHP &gt; 0): vTHP = "(+" + TempHP + ")/"]
+{token.name}'s updated HP: [r: HP + vTHP + eMaxHP] (healed {vHealing})
+
+[h: "&lt;!-- Perform bar logic. --&gt;"]
+[h, if(HP &lt; eMaxHP): setBarVisible("Health (Approximate)", 0)]
+[h, if(HP &lt; eMaxHP): setBar("Health", eHP / eMaxHP); setBarVisible("Health", 0)]
+
+[h: "&lt;!-- Reload Character Sheet if present. --&gt;"]
+[h, if(isFrameVisible(token.name + " - Character Sheet") &amp;&amp; hasMacro("Sheet")), code: {
+	[macro("Sheet@this"):""]
+};{}]</command>
+      <label>&lt;b&gt;Heal Damage&lt;/b&gt;</label>
+      <group>Adventuring</group>
+      <sortby>2.2</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>&lt;html&gt;&lt;body style="width:200px;"&gt;Click to enter an amount to heal up to your effective HP maximum. This also clears the Stable or Dying conditions from your token.
+&lt;/body&gt;&lt;/html&gt;</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>62</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>221f444b-0f6f-42ca-af35-e942eca59ba4</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>62</index>
+      <colorKey>maroon</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me 
+[h: "&lt;!-- Make sure the character is actually dying. --&gt;"]
+[h, if(HP &gt; 0 || state.Stable == 1), code: {
+	[vErrorMsgA = if(HP &gt; 0, "You aren't at 0 HP,", "You are &lt;b&gt;Stable&lt;/b&gt;.")]
+	[vErrorMsgB = if(HP &gt; 0, "set your HP to 0", "remove the &lt;b&gt;Stable&lt;/b&gt; condition")]
+	[vInput = input("header | &lt;html&gt;&lt;h2 align='center'&gt;You aren't dying!&lt;/h2&gt;&lt;p align=center&gt;" + vErrorMsgA + "&lt;/p&gt;&lt;br&gt;&lt;hr&gt;&lt;p&gt;- Hit 'OK' to " + vErrorMsgB + " and continue.&lt;br&gt;- Hit 'Cancel' to leave your HP as it is.&lt;/p&gt;&lt;/html&gt; | | LABEL | SPAN=TRUE")]
+	[abort(vInput)]
+	[HP = 0]
+}]
+
+[h: "&lt;!-- Ensure the 'Dying' state is set and roll a save. --&gt;"]
+[h: state.Stable = 0]
+[h: state.Dying = 1]
+[h: vSaveRoll = 1d20]
+
+[h: "&lt;!-- Check if the character passed the roll. --&gt;"]
+[r, if(vSaveRoll &lt; 10), code: {
+	[h, if(vSaveRoll &gt; 1): DeathFails = DeathFails + 1; DeathFails = DeathFails + 2]
+	[h, if(DeathFails &gt; 3): DeathFails = 3]
+	[r: "&lt;b style='color:red'&gt;" + if(vSaveRoll == 1, "CRITICALLY ", "") + "FAILS&lt;/b&gt; a death save (" + vSaveRoll + "). That's " + DeathFails + " of 3..."]
+	[if(DeathFails &gt;= 3): broadcast("&lt;i style='color:red'&gt;&lt;b&gt;GM ALERT&lt;/b&gt;: " + token.name + " has technically died...&lt;/i&gt;", "gm")]	
+};
+{
+	[r, if(vSaveRoll &gt;= 10 &amp;&amp; vSaveRoll &lt; 20), code: {
+		[h: "&lt;!-- On a non-critical success, add a Death Success. --&gt;"]
+		[h: DeathSuccesses = DeathSuccesses + 1]
+		[r: "&lt;b style='color:blue'&gt;PASSES&lt;/b&gt; a death save (" + vSaveRoll + "). That's " + DeathSuccesses + " of 3 needed to stabilize... "]		
+	};
+	{
+		[h: "&lt;!-- On a critical success, give award 1hp! --&gt;"]
+		[r: "&lt;b style='color:blue'&gt;CRITICALLY PASSES&lt;/b&gt; a death save (" + vSaveRoll + "), instantly regaining 1 hit point!"]
+		[h: DeathFails = ""]
+		[h: DeathSuccesses = ""]
+		[h: state.Dead = 0]
+		[h: state.Dying = 0]		
+		[h: HP = HP + 1]
+	}]
+}]
+
+[r, if(number(DeathSuccesses) &gt;= 3), code: { 
+	[r: token.name + " has stabilized!"]
+	[h: DeathFails = ""]
+	[h: DeathSuccesses = ""]
+	[h: state.Dead = 0]
+	[h: state.Dying = 0]
+	[h, if(HP == 0): state.Stable = 1]
+}]
+
+[h: "&lt;!-- Perform bar logic. --&gt;"]
+[h, if(HP &lt; eMaxHP): setBarVisible("Health (Approximate)", 0)]
+[h, if(HP &lt; eMaxHP): setBar("Health", eHP / eMaxHP); setBarVisible("Health", 0)]
+
+[h: "&lt;!-- Reload Character Sheet if present. --&gt;"]
+[h, if(isFrameVisible(token.name + " - Character Sheet") &amp;&amp; hasMacro("Sheet")), code: {
+	[macro("Sheet@this"):""]
+};{}]</command>
+      <label>&lt;b&gt;Death Save&lt;/b&gt;</label>
+      <group>Saving Throws</group>
+      <sortby>8</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>white</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>79px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip />
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>63</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>ad60d330-39ec-41bd-b309-6ad099068c42</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>63</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/self 
+&lt;!-- Let player choose HD to spend. --&gt;
+[h, code: {
+	[THP = "/"]
+	[RestHD4 = 0]
+	[RestHD6 = 0]
+	[RestHD8 = 0]
+	[RestHD10 = 0]	
+	[RestHD12 = 0]
+	[RestHD20 = 0]
+	[if(TempHP &gt; 0): THP = "(+" + TempHP + "thp)/"]
+	[HDInputString = "header| " + 
+		HP + THP + eMaxHP + "hp | Spend HD on this rest? |LABEL|"]	
+	[if( HD4 &gt; 0 ): HDInputString = HDInputString + "## RestHD4 | " + 
+		0 + " | HD4 (" + (HD4 - UsedHD4) + " left)|TEXT|WIDTH=3"]
+	[if( HD6 &gt; 0 ): HDInputString = HDInputString + "## RestHD6 | " + 
+		0 + " | HD6 (" + (HD6 - UsedHD6) + " left)|TEXT|WIDTH=3"]
+	[if( HD8 &gt; 0 ): HDInputString = HDInputString + "## RestHD8 | " + 
+		0 + " | HD8 (" + (HD8 - UsedHD8) + " left)|TEXT|WIDTH=3"]
+	[if( HD10 &gt; 0 ): HDInputString = HDInputString + "## RestHD10 | " + 
+		0 + " | HD10 (" + (HD10 - UsedHD10) + " left)|TEXT|WIDTH=3"]
+	[if( HD12 &gt; 0 ): HDInputString = HDInputString + "## RestHD12 | " + 
+		0 + " | HD12 (" + (HD12 - UsedHD12) + " left)|TEXT|WIDTH=3"]
+	[if( HD20 &gt; 0 ): HDInputString = HDInputString + "## RestHD20 | " + 
+		0 + " | HD20 (" + (HD20 - UsedHD20) + " left)|TEXT|WIDTH=3"]
+}]
+[h, if(HP &lt; eMaxHP): abort(input( HDInputString ))]
+[h: broadcast("&lt;span style='color:green;'&gt;* " + token.name + " takes a short rest.&lt;/span&gt;")]
+[h: usingHD = RestHD4 + RestHD6 + RestHD8 + RestHD10 + RestHD12 + RestHD20]
+
+&lt;!-- Recover HP based on used HD. --&gt;
+[r, if(usingHD &gt; 0), code: {
+	[h: RestHP = 0]
+	[h: restMsg = ""]
+	[h: HitDieTypes = "4, 6, 8, 10, 12, 20"]
+	[h, foreach(ThisDie, HitDieTypes), code: {
+		[h: RestHD = eval("RestHD" + ThisDie)]
+		[h: UsedHD = getProperty("UsedHD" + ThisDie)]
+		[h: TotalHD = getProperty("HD" + ThisDie)]
+		[h: AddCon = ""]
+		[h, if(RestHD &gt; TotalHD - UsedHD): RestHD = TotalHD - UsedHD]
+		[h, if(RestHD &gt; 0 &amp;&amp; ConMod &gt; 0): AddCon = "&amp;#43;" + ConMod * RestHD;""]
+		[h, if(RestHD &gt; 0 &amp;&amp; ConMod &lt; 0): AddCon = "&amp;#8722;" + string(-1 * ConMod * RestHD);""]
+		[h, if(RestHD &gt; 0): dieCode = RestHD + "d" + ThisDie + AddCon]
+		[h, if(RestHD &gt; 0): ThisRestHP = roll(RestHD, ThisDie) + ConMod * RestHD; ThisRestHP = 0]
+		[h, if(RestHD &gt; 0): ThisRoll = "&lt;/b&gt; &lt;span style='color:#999999'&gt;" + string(getrolled()) + "&lt;/span&gt;"]
+		[h, if(RestHD &gt; 0): restMsg = restMsg + "Recovering " + dieCode + " this short rest: &lt;b&gt;" + ThisRestHP + ThisRoll + "&lt;br&gt;"]
+		[h:RestHP = RestHP + ThisRestHP]
+		[h:setProperty("UsedHD" + ThisDie, UsedHD + RestHD)]
+	}]
+	[r: restMsg]
+	[h, if(RestHP + HP &gt; eMaxHP): RestHP = eMaxHP - HP]
+	[h, if(RestHP &gt; 0): broadcast("&lt;span style='color:green;'&gt;* " + token.name + " looks better.&lt;/span&gt;")]
+	[h: HP = HP + RestHP]
+	[h: thp = "/"]
+	[h, if(TempHP &gt; 0): thp = "(+" + TempHP + ")/"]
+	{token.name}&amp;#8217;s updated HP: [r: HP + thp + eMaxHP] (recovered {RestHP})
+};{}]
+
+[h: "&lt;!-- Restore counters which reset on a Short Rest. --&gt;"]
+[r, for(vIndex, 0, json.length(CustomCounters)), if( json.type(CustomCounters) == "ARRAY" &amp;&amp; json.length(CustomCounters) &gt; 0), code: {
+	[h: vCounter = json.get(CustomCounters, vIndex)]
+	[h: vCounterType = json.get(vCounter, "reset")]
+	[r, if(listContains("Short Rest", vCounterType) &gt; 0), code: {
+		[h: vCounterMax = json.get(vCounter, "max")]
+		[h: vCounterValue = json.get(vCounter, "value")]		
+		[h: vCounter = json.set(vCounter, "value", vCounterMax)]
+		[h, if(vCounterValue &lt; vCounterMax): CustomCounters = json.set(CustomCounters, vIndex, vCounter)]
+		[r, if(vCounterValue &lt; vCounterMax): json.get(vCounter, "category") + " : " + json.get(vCounter, "name") + " Recovered!"]
+	};{}]	
+};{}]
+
+[h: "&lt;!-- Perform bar logic. --&gt;"]
+[h, if(HP &lt; eMaxHP): setBar("Health", eHP / eMaxHP); setBarVisible("Health", 0)]
+
+
+[h: "&lt;!-- Reload Character Sheet if present. --&gt;"]
+[h, if(isFrameVisible(token.name + " - Character Sheet") &amp;&amp; hasMacro("Sheet")), code: {
+	[macro("Sheet@TOKEN"):""]
+};{}]</command>
+      <label>Short Rest</label>
+      <group>Adventuring</group>
+      <sortby>3.1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>55px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>&lt;html&gt;&lt;body style="width:200px;"&gt;&lt;u&gt;Short Rest&lt;/u&gt; is a 1 hour or longer period of downtime after which you may spend one or more Hit Dice at the end of a short rest, up to your level. 
+&lt;hr&gt;
+• For each Hit Die spent, roll the die and adds your Constitution modifier to it. The character regains Hit Points equal to the total. 
+&lt;br&gt;• You may decide to spend an additional Hit Die after each roll.&lt;/body&gt;&lt;/html&gt;</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>64</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>b63fca02-f313-4909-a881-b2ff84ab5f0a</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>64</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/self 
+[h: broadcast("&lt;span style='color:green;'&gt;* " + token.name + " takes a long rest.&lt;/span&gt;")]
+
+&lt;!-- Recover all HP and remove TempHP. --&gt;
+[h:TempHP = 0]
+[h:TempMaxHP = 0]
+[h:Healing = eMaxHP - HP]
+[h:HP = eMaxHP]
+[r, if(Healing &gt; 0): token.name + " recovered &lt;b&gt;" + Healing + "&lt;/b&gt; hit points."]
+
+&lt;!-- Recover HD. Always recover highest HD first. --&gt;
+[h:recoveredHD = floor(CharLevel / 2)]
+[h, if(recoveredHD &lt; 1): recoveredHD = 1]
+[r, if(HitDieUsed &gt; 0), code: {
+	{token.name} recovers missing HD: ( 
+	[h: numHD = 0]
+	[h, while(recoveredHD &gt; 0 &amp;&amp; UsedHD20 &gt; 0), code: { 
+		[h: UsedHD20 = UsedHD20 - 1]
+		[h: recoveredHD = recoveredHD - 1]
+		[h: numHD = numHD + 1]
+	}]
+	[r, if(numHD &gt; 0): numHD + "d20 "]
+	[h: numHD = 0]
+	[h, while(recoveredHD &gt; 0 &amp;&amp; UsedHD12 &gt; 0), code: { 
+		[h: UsedHD12 = UsedHD12 - 1]
+		[h: recoveredHD = recoveredHD - 1]
+		[h: numHD = numHD + 1]
+	}]
+	[r, if(numHD &gt; 0): numHD + "d12 "]
+	[h: numHD = 0]
+	[h, while(recoveredHD &gt; 0 &amp;&amp; UsedHD10 &gt; 0), code: 
+	{ 
+		[h: UsedHD10 = UsedHD10 - 1]
+		[h: recoveredHD = recoveredHD - 1]
+		[h: numHD = numHD + 1]
+	}]
+	[r, if(numHD &gt; 0): numHD + "d10 "]
+	[h: numHD = 0]
+	[h, while(recoveredHD &gt; 0 &amp;&amp; UsedHD8 &gt; 0), code: { 
+		[h: UsedHD8 = UsedHD8 - 1]
+		[h: recoveredHD = recoveredHD - 1]
+		[h: numHD = numHD + 1]
+	}]
+	[r, if(numHD &gt; 0): numHD + "d8 "]
+	[h: numHD = 0]
+	[h, while(recoveredHD &gt; 0 &amp;&amp; UsedHD6 != 0), code: { 
+		[h: UsedHD6 = UsedHD6 - 1]
+		[h: recoveredHD = recoveredHD - 1]	
+		[h: numHD = numHD + 1]
+	}]
+	[r, if(numHD &gt; 0): numHD + "d6 "]
+	[h: numHD = 0]
+	[h, while(recoveredHD &gt; 0 &amp;&amp; UsedHD4 != 0), code: { 
+		[h: UsedHD4 = UsedHD4 - 1]
+		[h: recoveredHD = recoveredHD - 1]
+		[h: numHD = numHD + 1]
+	}]
+	[if(numHD &gt; 0): numHD + "d4 "]
+	)
+	[h: numHD = 0]
+};{
+	You have no missing HD to recover.
+}]
+
+[h: "&lt;!-- Restore counters which reset on a Short or Long Rest. --&gt;"]
+[r, for(vIndex, 0, json.length(CustomCounters)), if( json.type(CustomCounters) == "ARRAY" &amp;&amp; json.length(CustomCounters) &gt; 0), code: {
+	[h: vCounter = json.get(CustomCounters, vIndex)]
+	[h: vCounterType = json.get(vCounter, "reset")]
+	[r, if(listContains("Long Rest, Short Rest", vCounterType) &gt; 0), code: {
+		[h: vCounterMax = json.get(vCounter, "max")]
+		[h: vCounterValue = json.get(vCounter, "value")]		
+		[h: vCounter = json.set(vCounter, "value", vCounterMax)]
+		[h, if(vCounterValue &lt; vCounterMax): CustomCounters = json.set(CustomCounters, vIndex, vCounter)]
+		[r, if(vCounterValue &lt; vCounterMax): "&lt;br&gt;" + json.get(vCounter, "category") + " : " + json.get(vCounter, "name") + " Recovered!"]
+	};{}]	
+};{}]
+
+[h: "&lt;!-- Perform bar logic. --&gt;"]
+[h, if(HP &lt; eMaxHP): setBar("Health", eHP / eMaxHP); setBarVisible("Health", 0)]
+
+[h: "&lt;!-- Reload Character Sheet if present. --&gt;"]
+[h, if(isFrameVisible(token.name + " - Character Sheet") &amp;&amp; hasMacro("Sheet")), code: {
+	[macro("Sheet@TOKEN"):""]
+};{}]</command>
+      <label>Long Rest</label>
+      <group>Adventuring</group>
+      <sortby>3.2</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>55px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>&lt;html&gt;&lt;body style="width:200px;"&gt;&lt;u&gt;Long Rest&lt;/u&gt;: Eight hour period of rest which restores all HP and some Hit Die.
+&lt;hr&gt;• Restores a number of spent hit dice up to half your character level rounded down. (minimum 1)
+&lt;br&gt;• Note: You can only benefit from long rest if you start it with at least 1 HP and only once per 24-hour period.&lt;/body&gt;&lt;/html&gt;</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>68</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>e7912f6b-c17e-4cc1-8fad-5d0f0a98cf51</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>68</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/tbl D4</command>
+      <label>d4</label>
+      <group>Adventuring</group>
+      <sortby>1.1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>0.95em</fontSize>
+      <minWidth />
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Roll 1d4 in chat.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>69</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>80f112ca-cd4b-4e00-934a-b637096cdb00</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>69</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/tbl D6</command>
+      <label>d6</label>
+      <group>Adventuring</group>
+      <sortby>1.1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>0.95em</fontSize>
+      <minWidth />
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Roll 1d6 in chat.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>70</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>5124f067-d8f8-4d7b-956d-03e5532b9793</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>70</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/tbl D8</command>
+      <label>d8</label>
+      <group>Adventuring</group>
+      <sortby>1.1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>0.95em</fontSize>
+      <minWidth />
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Roll 1d8 in chat.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>71</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>77c7fba5-3f35-4375-882f-474178c3201d</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>71</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/tbl D10</command>
+      <label>d10</label>
+      <group>Adventuring</group>
+      <sortby>1.1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>0.95em</fontSize>
+      <minWidth />
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Roll 1d10 in chat.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>72</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>e4cdc5b7-e8a8-41b7-8d2d-9797b1bf6a57</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>72</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>[h, if(currentToken() != ""): vName = getName(); vName = getPlayerName()]
+[h: broadcast("Table 1D100 (" + vName + '): 
+&lt;img src="' + tableImage("D10") + '" width=80&gt;
+&lt;img src="' + tableImage("D10") + '" width=80&gt;')]</command>
+      <label>d100</label>
+      <group>Adventuring</group>
+      <sortby>1.5</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>0.95em</fontSize>
+      <minWidth />
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>&lt;html&gt;
+Roll 2d10 in chat. 
+&lt;br&gt;On a 1d100, '00' means 100.
+&lt;/html&gt;</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>73</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>0193ebfa-c733-4dfb-88f1-f9a41c5225ea</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>73</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/tbl D12</command>
+      <label>d12</label>
+      <group>Adventuring</group>
+      <sortby>1.2</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>0.95em</fontSize>
+      <minWidth />
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Roll 1d12 in chat.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>74</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>af0f38e6-e93b-4872-b90d-cccf9f059b02</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>74</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/tbl D20
+</command>
+      <label>d20</label>
+      <group>Adventuring</group>
+      <sortby>1.3</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>0.95em</fontSize>
+      <minWidth />
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Roll 1d20 in chat.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>75</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>833214c0-73c3-41d6-a434-5a83e0c1c969</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>75</index>
+      <colorKey>#f0f0a0</colorKey>
+      <hotKey>None</hotKey>
+      <command>[h, if(currentToken() != ""): vName = getName(); vName = getPlayerName()]
+[h: broadcast("Table 2D20 (" + vName + '): 
+&lt;img src="' + tableImage("D20") + '" width=65&gt;
+&lt;img src="' + tableImage("D20") + '" width=65&gt;')]</command>
+      <label>2d20</label>
+      <group>Adventuring</group>
+      <sortby>1.4</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>0.95em</fontSize>
+      <minWidth />
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>&lt;html&gt;Roll 2d20 in chat.
+&lt;br&gt;Good for Advantage/Disadvantage.
+&lt;/html&gt;</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>76</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>24dd5ed2-5c41-43b1-bc16-b21578d9fa1c</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>76</index>
+      <colorKey>#dfffff</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me 
+[r, if(state.AFK == 0), code: {
+	[h: state.AFK = 1]
+	([r: getPlayerName()]) has gone AFK.
+
+};{
+	[h: state.AFK = 0]
+	([r: getPlayerName()]) is back from AFK.
+
+}]
+
+</command>
+      <label>♪</label>
+      <group>Adventuring</group>
+      <sortby>3.5</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>8px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Toggle Away From Keyboard / AFK</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>78</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>3ac9fbb5-c88d-4fbd-8023-7317850b578b</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>78</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me [h:roll = 1d20][r, if(roll == 20): "&lt;b style='color:red'&gt;CRITICALLY HITS&lt;/b&gt; with"; "makes"] an unarmed strike[r, if(roll == 1): " but rolled a &lt;b style='color:red'&gt;NATURAL 1!&lt;/b&gt;"; "!"] ([t: roll + Proficiency + StrMod])</command>
+      <label>Unarmed ATK</label>
+      <group>Combat</group>
+      <sortby>2.0</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>true</allowPlayerEdits>
+      <toolTip />
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>79</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>d01e980c-83b0-42b1-9a8d-def4fab859ac</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>79</index>
+      <colorKey>default</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me deals [t: 1 + StrMod] bludgeoning damage with {PronounPossessive} unarmed strike!
+
+</command>
+      <label>Unarmed DMG</label>
+      <group>Combat</group>
+      <sortby>2.1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>default</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>86.5px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>true</allowPlayerEdits>
+      <toolTip />
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>80</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>52cf94f1-5a7d-496d-b830-2646cbc76747</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>80</index>
+      <colorKey>#a0a0e0</colorKey>
+      <hotKey>None</hotKey>
+      <command>/me
+[h: "&lt;!-- If not concentrating, let player set concentration. --&gt;"]
+[h, if(state.Concentrating == 0), code: {
+	[vInput = input( "header | &lt;html&gt;&lt;h2 style='width:150px;text-align:center;'&gt;You're not&lt;br&gt;concentrating.&lt;/h2&gt;&lt;br&gt;&lt;hr&gt; | | LABEL | SPAN=TRUE",
+	"header | Enter what to concentrate on: || LABEL | SPAN=TRUE",
+	"Concentration | " + if(length(Concentration) &gt; 0, Concentration, PronounPossessive + " spell") + 
+		" || TEXT | SPAN=TRUE WIDTH=24", 
+	"vDoRoll | 1 | Immediately roll saving throw | CHECK |")]
+	[abort(vInput)]
+	[state.Concentrating = 1]
+};{ 
+	[vDoRoll = 1] 
+}]
+
+[h, if(vDoRoll), code: {
+	[abort(input("vDamage|0|Enter damage to save against|TEXT|WIDTH=4", "vAutoFail | 0 | Check to stop concentrating | CHECK"))]
+	[if(vAutoFail), code:{
+		[vGrammarHelper = " on "]
+		[if(Concentration == ""): vGrammarHelper = ""]
+		[vMsg = "stops concentrating" + vGrammarHelper + Concentration + "."]
+		[state.Concentrating = 0]
+		[resetProperty("Concentration")]
+	};{}]
+};{
+	[vGrammarHelper = " on "]
+	[if(Concentration == ""): vGrammarHelper = ""]
+	[vMsg = "is concentrating" + vGrammarHelper + Concentration + "."]
+	[vAutoFail = 0]
+}]
+
+[h, if(vDoRoll &amp;&amp; !vAutoFail), code: {
+	[h, if(vDamage &lt; 0): vDamage = 0]
+	[vSaveDC = floor(vDamage / 2)]
+	[if(vSaveDC &lt; 11): vSaveDC = 10]
+	[vSaveRoll = 1d20]
+	[vSaveTotal = vSaveRoll + ConMod + (ConSave * Proficiency)]
+	[vSaveToolTip = "(&lt;span style='background-color:#efefef' " + 
+		"title='1d20 + ConMod + (ConSave * Proficiency) = " +
+		vSaveRoll + " + " + ConMod + " + " + ConSave + " * " + Proficiency + " = " +
+		vSaveTotal + "'&gt;" + vSaveTotal + " vs DC " + vSaveDC + "&lt;/span&gt;)"]
+	[vGrammarHelper = " on "]
+	[if(Concentration == ""): vGrammarHelper = ""]
+	[if(vSaveTotal &gt;= vSaveDC), code: {
+		[vMsg = " &lt;b&gt;maintains concentration&lt;/b&gt;" + 
+			vGrammarHelper + Concentration + ". " + vSaveToolTip]
+	};{
+		[vMsg = "&lt;b style='color:red;'&gt;" + " loses concentration&lt;/b&gt;" + 
+		vGrammarHelper + Concentration + "! " + 
+			vSaveToolTip]
+		[state.Concentrating = 0]
+		[resetProperty("Concentration")]
+	}]
+};{}]
+
+[r: vMsg]</command>
+      <label>Concentration</label>
+      <group>Saving Throws</group>
+      <sortby>3.1</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.10em</fontSize>
+      <minWidth>79px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>Set, check, or remove Concentration.</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+  <entry>
+    <int>81</int>
+    <net.rptools.maptool.model.MacroButtonProperties>
+      <macroUUID>81373119-1799-46f0-9b5d-424a3bb33a26</macroUUID>
+      <saveLocation>Token</saveLocation>
+      <index>81</index>
+      <colorKey>#a0ffff</colorKey>
+      <hotKey>None</hotKey>
+      <command>[h, if(0), code: {"
+&lt;!--This is an ADVANCED Macro. 
+
+	Introduced in 2.0
+	Updated in 2.2.1
+	
+	This macro creates a custom frame to display an 
+	HTML character sheet for the token it is run on.
+	
+	It uses FOR loops within an HTML table-based template 
+	to generate a simple character sheet. Since this macro 
+	is self-contained, it uses in-line CSS styling.
+
+	This Macro is quite configurable. 
+		* To widen the overall sheet, try setting 
+		  vExtraWidth to 10, 20, 30, or higher. The sheet
+		* To set the default sheet to hide the image, set
+		  vShowImage to 0.
+		* Customize! Try the advanced controls to tweak the
+		  look and spacing of the character sheet.
+		* Make it your own! For instance, to make the attributes
+		  horizontal, make a table above the Main Sheet Table
+		  and move the Attributes for loop inside of it. Then
+		  move the &lt;tr&gt; and &lt;/tr&gt; from inside the for loop to 
+		  outside of it so the cells render in a row instead
+		  of a column.
+		  
+	This macro makes use of a very basic JSON argument system 
+	so it can be refreshed with different options. The
+	only use of this system is to be able to refresh
+	the sheet with or without the token image. 
+	
+	Have fun! --&gt;"}]
+
+[h, code: {
+	["&lt;!-- Default Options. Overrides for these are also saved on your token. --&gt;"]
+	[vShowImage = 1]
+	[vDarkMode = 0]
+	[vLargeFont = 0]
+	[vExtraWidth = 0]
+
+	["&lt;!-- Default Colors --&gt;"]
+	[vSheetColor = "#faefe0"]
+	[vHeaderTextColor = "#700000"]
+	[vBorderColor = "#af7070"]
+	[vBoxHeaderTextColor = "black"]
+	[vBoxHeaderBackgroundColor = "#E0E0E0"]
+	[vBoxColor = "white"]
+	[vBoxTextColor = "black"]
+	[vAlternatingRowColor = "#EFEFFF"]
+
+	["&lt;!-- Advanced Options --&gt;"]
+	[vDebugBorder = 0]
+	[vBodyFontSize = "inherit"]
+	[vBoxPadding = 0]
+	[vInnerBoxPadding = 2]
+	[vMainColumnGutter = 4]
+	[vHeaderColumnGutter = 2]
+	[vMiniColumnGutter = 2]
+	[vAttBoxWidth = 50]
+	[vLargeFontSizeEM = 2]
+	[vBoxMarginBottom = 4]
+	
+	[vOptionLinkStyle = 'font-size:.8em; color:#009060;']
+	[vOptionLinkStyleWarn = 'font-size:.8em; color:#a00090;']
+	[vOptionLinkStyleAlert = 'font-size:.8em; color:#ff0000;']
+}]
+
+[h: "&lt;!-- Declare default arguments --&gt;"]
+[h: vTweak = 0]
+[h: vConfigure = 0]
+[h: vCounters = 0]
+[h: vOptions = 0]
+[h: vRollType = ""]
+
+[h: "&lt;!-- Get Preferences and accept any option-override arguments --&gt;"]
+[h, if(hasProperty("Simple5eData")), code: {
+	[vSheetPrefs = json.get(getProperty("Simple5eData"), "SheetPrefs")]
+	[json.toVars(vSheetPrefs, "v")]
+};{
+	[vSheetPrefs = "{}"]
+}]
+
+[h: json.toVars(macro.args, "v")]
+
+[h: "&lt;!-- Perform any special functions that preclude reloading the sheet. --&gt;"]
+[h, if(vRollType == "SkillCheck"), code: { 
+	[vAttMod = vAtt + "Mod"]
+	[vSkillProf = ""]
+	[foreach(vWord, vSkill, "", " "): vSkillProf = vSkillProf + upper(vWord, 1)]
+	[vAorAn = if(listContains("A, E, I, O, U", upper(substring(vSkill, 0, 1))), "an ", "a ")]
+	[vRoll = 1d20]
+	[vRollBonus = vAttMod + " + (Proficiency * " + vSkillProf + ")"]
+	[vTooltip = "1d20 + " + vRollBonus + " = " + 
+		vRoll + " + " + getProperty(vAttMod) + " + " + Proficiency + " * " + getProperty(vSkillProf)]
+	[vRollresult = vRoll + getProperty(vAttMod) + (Proficiency * getProperty(vSkillProf))]
+	[vMsg = "* &lt;span style='color:green'&gt;" + 
+			token.name + " attempts " + vAorAn + vSkill + " check! (" +
+			"&lt;span style='background-color:#efefef' title='" + 	vToolTip + "'&gt;" +
+			vRollResult +	
+			"&lt;/span&gt;)&lt;/span&gt;"]
+	[broadcast(vMsg)]
+	[abort(0)]
+};{}]
+
+[h, if(vRollType == "Save"), code: { 
+	[json.toVars(macro.args, "v")]
+	[vAtt = substring(vAttribute, 0, 3)]
+	[vAttMod = vAtt + "Mod"]
+	[vAttSave = vAtt + "Save"]	
+	[vAorAn = if(vAtt == "Int", "an ", "a ")]
+	[vRoll = 1d20]
+	[vRollBonus = vAttMod + " + (Proficiency * " + vAttSave + ")"]
+	[vTooltip = "1d20 + " + vRollBonus + " = " + 
+		vRoll + " + " + getProperty(vAttMod) + " + " + Proficiency + " * " + getProperty(vAttSave)]
+	[vRollresult = vRoll + getProperty(vAttMod) + (Proficiency * getProperty(vAttSave))]
+	[vMsg = "* &lt;span style='color:green'&gt;" + 
+			token.name + " rolls " + vAorAn + vAttribute + " saving throw: " +
+			"&lt;span style='background-color:#efefef' title='" + 	vToolTip + "'&gt;" +
+			vRollResult +	
+			"&lt;/span&gt;&lt;/span&gt;"]
+	[broadcast(vMsg)]
+	[abort(0)]	
+};{}]
+
+[h, if(vRollType == "AbilityCheck"), code: { 
+	[json.toVars(macro.args, "v")]
+	[vAtt = substring(vAttribute, 0, 3)]
+	[vAttMod = vAtt + "Mod"]	
+	[vAorAn = if(vAtt == "Int", "an ", "a ")]
+	[vRoll = 1d20]
+	[vRollBonus = vAttMod]
+	[vTooltip = "1d20 + " + vRollBonus + " = " + vRoll + " + " + getProperty(vAttMod)]
+	[vRollresult = vRoll + getProperty(vAttMod)]
+	[vMsg = "* &lt;span style='color:green'&gt;" + 
+			token.name + " attempts " + vAorAn + vAttribute + " check! (" +
+			"&lt;span style='background-color:#efefef' title='" + 	vToolTip + "'&gt;" +
+			vRollResult +	
+			"&lt;/span&gt;)&lt;/span&gt;"]
+	[broadcast(vMsg)]
+	[abort(0)]
+};{}]
+
+[h: "&lt;!-- Perform Counter Adjustment --&gt;"]
+[h, if(vRollType == "AdjustCounter"), code: { 
+	&lt;!-- Grab Counter Info --&gt;
+	[vCounter = json.get(json.path.read(CustomCounters, '.[?(@.name == "' + vCounterName + '")]'), 0)]
+	[vCounterValue = json.get(vCounter, "value")]
+	[vCounterMax = json.get(vCounter, "max")]
+	[vNewCounterValue = vCounterValue + vCounterAdjustment]
+
+	[if(vNewCounterValue &lt; 0): vNewcounterValue = 0]
+
+	[if(isNumber(vCounterMax)), code: {
+		[if(vNewCounterValue &gt; vCounterMax): vNewCounterValue = vCounterMax]		
+	};{}]
+	
+	&lt;!-- Adjust the counter. --&gt;				
+	[vCounterIndex = json.indexOf(CustomCounters, vCounter)]
+	[vUpdatedCounter = json.set(vCounter, "value", vNewCounterValue)]
+	[CustomCounters = json.set(CustomCounters, vCounterIndex, vUpdatedCounter)]
+};{}]
+
+[h: "&lt;!-- Continue to calculate sheet properties and build character sheet. --&gt;"]
+[h, code: {
+	[vNewSheetPrefs = json.set(vSheetPrefs,
+		"DarkMode", vDarkMode,
+		"LargeFont", vLargeFont,
+		"ShowImage", vShowImage,
+		"ExtraWidth", vExtraWidth,
+		"Options", vOptions)]
+	[vUpdatedData = json.set(getProperty("Simple5eData"), "SheetPrefs", vNewSheetPrefs)]
+	[setProperty("Simple5eData", vUpdatedData)]		
+}]
+
+[h, if(vLargeFont), code: {
+	["&lt;!-- Large Font Config --&gt;"]
+	[vBodyFontSize = "12px"]
+	[vExtraWidth = vExtraWidth ]
+};{}]
+
+[h, if(vDarkMode), code: {
+	["&lt;!-- Dark Mode Colors --&gt;"]
+	[vSheetColor = "#3a2f20"]
+	[vHeaderTextColor = "#f0efc0"]
+	[vBorderColor = "#af7070"]
+	[vBoxHeaderTextColor = "#f0efc0"]
+	[vBoxHeaderBackgroundColor = "#5a3f30"]
+	[vBoxColor = "#101010"]
+	[vBoxTextColor = "#efefef"]
+	[vAlternatingRowColor = "#302010"]
+	[vOptionLinkStyle = 'font-size:.8em; color:silver;']
+	[vOptionLinkStyleWarn = 'font-size:.8em; color:orange;']
+	[vOptionLinkStyleAlert = 'font-size:.8em; color:orange;']	
+}]
+
+[h, code:{
+	[h: "&lt;!-- Calculated - Change at your own risk --&gt;"]
+	[vBoxWidth = if(vShowImage == 0, 140 + vExtraWidth, 160 + vExtraWidth)]
+	[vPlainLinkStyle = "color:" + vBoxTextColor + ";text-decoration:inherit;"]
+	[vPlainLinkClass = "plainlink"]
+
+	[vBoxWidthThird = string(math.ceil(vBoxWidth / 3))]
+	[vBoxWidthThird = number(substring(vBoxWidthThird, 0,length(vBoxWidthThird)-2))] 
+	[vSheetWidth = 2 * vBoxWidth + vAttBoxWidth]
+	[vFrameWidth = vSheetWidth + 135]	
+}]
+
+[h: vAttColors = "Str=FABABA; Dex=BAFABA; Con=BABAFA; Int=AFEFEF; Wis=EFAFEF; Cha=EFEFAF"]
+[h: vAttTagTextColors = "Str=D07070; Dex=70D070; Con=7070D0; Int=50B0B0; Wis=B050B0; Cha=B0B050"]
+[h: vAttHeaderTextColors = "Str=603030; Dex=306030; Con=303060; Int=205050; Wis=502050; Cha=505020"]
+
+[h: "&lt;!-- Logic Data - Change at your own risk --&gt;"]
+[h: vAttributes = "Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"]
+[h: vSkills = "Acrobatics=Dex; Animal Handling=Wis; Arcana=Int; Athletics=Str; Deception=Cha; History=Int; Insight=Wis; Intimidation=Cha; Investigation=Int; Medicine=Wis; Nature=Int; Perception=Wis; Performance=Cha; Persuasion=Cha; Religion=Int; Sleight of Hand=Dex; Stealth=Dex; Survival=Wis"]
+
+[h: "&lt;-- Configure Links --&gt;"]
+[h: vThisMacro = getMacroName() + "@" + 
+	if(listGet(getMacroLocation(), 0, ":") == "Token", "TOKEN", getMacroLocation())]
+[h, code: {
+	
+	[vOptionButtonStyle = "font-size:10px;color:white;text-decoration:none;"]
+
+	[vImageToggleButton = "&lt;a href='" + macroLinkText( vThisMacro, "none", json.set("{}", "ShowImage", !vShowImage), currentToken()) + "' style='" + vOptionButtonStyle + "'&gt;" + "Toggle&lt;br&gt;Image&lt;/a&gt;"]
+
+	[vFontToggleButton = "&lt;a href='" + macroLinkText( vThisMacro, "none", json.set("{}", "LargeFont", !vLargeFont), currentToken()) + "' style='" + vOptionButtonStyle + "'&gt;" + "Toggle&lt;br&gt;Font&lt;/a&gt;"]
+
+	[vDarkModeButton = "&lt;a href='" + 
+	macroLinkText( vThisMacro, "none", json.set("{}", "DarkMode", !vDarkMode), currentToken())+ "' style='" + vOptionButtonStyle + "'&gt;Toggle&lt;br&gt;Dark Mode&lt;/a&gt;"]
+	
+	[vTweakButton = "&lt;a href='" + 
+	macroLinkText( vThisMacro, "none", json.set("{}", "Tweak", 1), currentToken())+ "' style='" + vOptionButtonStyle + "'&gt;Tweak&lt;br&gt;Token&lt;/a&gt;"]
+
+	[vCountersButton = "&lt;a href='" + 
+	macroLinkText( vThisMacro, "none", json.set("{}", "Counters", 1), currentToken())+ "' style='" + vOptionButtonStyle + "'&gt;Custom&lt;br&gt;Counters&lt;/a&gt;"]
+
+	[vConfigureButton = "&lt;a href='" + 
+	macroLinkText( vThisMacro, "none", json.set("{}", "Configure", 1), currentToken())+ "' style='" + vOptionButtonStyle + "'&gt;Config&lt;br&gt;Token&lt;/a&gt;"]
+
+	[vOptionsButton = "&lt;a href='" + 
+	macroLinkText( vThisMacro, "none", json.set("{}", "Options", !vOptions), currentToken())+ "' style='" + vOptionButtonStyle + "'&gt;Close&lt;br&gt;Options&lt;/a&gt;"]
+
+	[vRefreshLink = "&lt;a href='" + 
+	macroLinkText( vThisMacro, "none", "", currentToken()) + "' style='" + vOptionLinkStyle + "'&gt;Reload&lt;/a&gt;"]
+
+	[vTweakLink = "&lt;a href='" + 
+	macroLinkText( vThisMacro, "none", json.set("{}", "Tweak", 1), currentToken())+ "' style='" + vOptionLinkStyleWarn + "'&gt;Tweak&lt;/a&gt;"]
+
+	[vOptionsLink = "&lt;a href='" + 
+	macroLinkText( vThisMacro, "none", json.set("{}", "Options", !vOptions), currentToken())+ "' style='" + vOptionLinkStyleAlert + "'&gt;Options&lt;/a&gt;"]
+}]
+
+[h, if(vTweak), code: {
+&lt;!-- This serves as an example of how to call a macro from another Macro Panel.
+     panel from a token. To edit 'Tweak Token', a GM must edit it from there. --&gt;
+	[h, macro("Tweak Token@GM"):""]
+};{}]
+
+[h, if(vCounters), code: {
+&lt;!-- This serves as an example of how to call a macro from another Macro Panel.
+     panel from a token. To edit 'Custom Counters', a GM must edit it from there. --&gt;
+	[h, macro("Custom Counters@GM"):""]
+};{}]
+
+[h, if(vConfigure), code: {
+&lt;!-- This serves as an example of how to call a macro from another Macro Panel.
+     panel from a token. To edit 'Configure Token', a GM must edit it from there. --&gt;
+	[h, macro("Configure Token@GM"):""]
+};{}]
+
+[frame(token.name + " - Character Sheet", "temporary=0;width=" + vFrameWidth + ";height=600;tabtitle=Sheet"): {
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+[h, code: {"
+&lt;!-- This sheet mainly inline styles, but here is one 
+way to include &lt;style&gt; definitions without a second macro. 
+
+The key are the curly braces that are printed manually so 
+they don't interfere with the macro parser. --&gt;"}]
+
+.plainlink [r: "{"]
+	color: [r: vBoxTextColor];
+	text-decoration: none;
+[r: "}"] 
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body style="padding:8px 0 0 8px; background-color:[r: vSheetColor]; color:[r: vBoxTextColor]; font-size:[r: vBodyFontSize];"&gt;
+
+&lt;!-- Options --&gt;
+[r, if(vOptions), code: {
+&lt;table cellspacing=4 cellpadding=2 style="width:100%;margin-bottom:8px;padding-bottom:4px;border-bottom: 1px solid [r: vBorderColor];"&gt;
+&lt;tr&gt;
+[h: vOptionsCellAttributes =
+	'style="background-color:#203060;border:1px solid gray;text-align:center;"']
+	&lt;td [r: vOptionsCellAttributes]&gt;
+		[r: vImageToggleButton]  
+	&lt;/td&gt;
+	&lt;td [r: vOptionsCellAttributes]&gt;
+		[r: vFontToggleButton]
+	&lt;/td&gt;
+	&lt;td [r: vOptionsCellAttributes]&gt;
+		[r: vDarkModeButton]
+	&lt;/td&gt;	
+	&lt;td [r: vOptionsCellAttributes]&gt;
+		[r: vTweakButton]
+	&lt;/td&gt;		
+	&lt;td [r: vOptionsCellAttributes]&gt;
+		[r: vCountersButton]
+	&lt;/td&gt;	
+	&lt;td [r: vOptionsCellAttributes]&gt;
+		[r: vConfigureButton]
+	&lt;/td&gt;	
+	&lt;td style="font-weight:bold;background-color:green;text-align:center;"&gt;
+		[r: vOptionsButton]
+	&lt;/td&gt;		
+&lt;/tr&gt;
+&lt;/table&gt;
+};{}]
+
+&lt;!-- Sheet Header Table --&gt;
+&lt;table border=[r:vDebugBorder] style="width:[r: vSheetWidth]px; margin-bottom:8px;padding-bottom:4px;border-bottom: 1px solid [r: vBorderColor];" cellspacing=0 cellpadding=0 valign=top&gt;
+	&lt;tr&gt;
+		[r, if(vShowImage == 1), code: {
+		&lt;td style="width:[r: 50 + (vExtraWidth/4)]px;padding:0;margin-right:2px;"&gt;
+			&lt;img src="[r: getTokenImage(70)]"&gt;
+		&lt;/td&gt; };{}]
+		&lt;td style="color: [r: vHeaderTextColor]"&gt;
+			&lt;div style="font-size: 14px; font-weight: bold; margin:0;"&gt;[r: token.name]&lt;/div&gt;
+			&lt;i&gt;Level [r: CharLevel]&lt;br&gt;
+			[r, if(hasProperty("TrueRace")): if(!isNumber(TrueRace), Race, "")] 
+			[r, if(hasProperty("TrueClass")): if(!isNumber(TrueClass), Class, "")]&lt;/i&gt;&lt;br&gt;
+			[r: vRefreshLink] [r: vTweakLink] [r: vOptionsLink]
+		&lt;/td&gt;
+		&lt;td align="right"&gt;&lt;table&gt;&lt;tr&gt;
+			&lt;!-- Death Saves --&gt;
+			[h, if(state.Dying == 1 || HP + state.Stable == 0): 
+				vDying = 1;
+				vDying = 0]
+			[r, if(!vDying): "&lt;!-- Do not display when not dying! "]
+			&lt;td style="margin-right: [r: vHeaderColumnGutter]px; width: 85px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor];  padding: [r: vBoxPadding]px; text-align:center;"&gt;
+				&lt;div style="margin:0; padding: 0; background-color: #303030; color: white;"&gt;
+					Death Saves&lt;/div&gt;
+				&lt;table cellspacing=1 cellpadding=1 style="margin-top:3px;"&gt;&lt;tr&gt;
+					&lt;td style="color:green;font-weight:bold;"&gt;Saves&lt;/td&gt;
+					&lt;td&gt;
+						[h: vDeathSuccesses = DeathSuccesses]
+						[h, if(isNumber(vDeathSuccesses) == 0): vDeathSuccesses = 0]
+						[r, if(number(vDeathSuccesses) &gt;= 1), code: {
+							&lt;b color="green"&gt;&amp;#x2713;
+							[r, if(vDeathSuccesses &gt;= 2): 
+								if(vDeathSuccesses &gt; 2,	" &amp;#x2713; &amp;#x2713;&lt;/b&gt;",
+													" &amp;#x2713;&lt;/b&gt; &amp;#9675;");
+								"&lt;/b&gt; &amp;#9675; &amp;#9675;"]
+						};{
+							&amp;#9675; &amp;#9675; &amp;#9675;
+						}]
+					&lt;/td&gt;
+				&lt;/tr&gt;&lt;tr&gt;
+					&lt;td style="color:red;font-weight:bold"&gt;Fails&lt;/td&gt;
+					&lt;td&gt;
+						[h: vDeathFails = DeathFails]
+						[h, if(isNumber(vDeathFails) == 0): vDeathFails = 0]
+						[r, if(number(vDeathFails) &gt;= 1), code: {
+							&lt;b color="red"&gt;&amp;#x2717;
+							[r, if(vDeathFails &gt;= 2): 
+								if(vDeathFails &gt; 2,	" &amp;#x2717; &amp;#x2717;&lt;/b&gt;",
+													" &amp;#x2717;&lt;/b&gt; &amp;#9675;");
+								"&lt;/b&gt; &amp;#9675; &amp;#9675;"]
+						};{
+							&amp;#9675; &amp;#9675; &amp;#9675;
+						}]
+					&lt;/td&gt;
+				&lt;/tr&gt;&lt;/table&gt;				
+			&lt;/td&gt;			
+			[r, if(!vDying): "--&gt;"]
+			&lt;!-- HP --&gt;
+			&lt;td style="margin-right: [r: vHeaderColumnGutter]px; width: 75px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor];  padding: [r: vBoxPadding]px; text-align:center;"&gt;
+				&lt;div style="margin:0; padding: 0; background-color: #A00020; color: white;"&gt;
+					HP&lt;/div&gt;
+				&lt;b style="font-size:2em"&gt;[r: HP]/[r: eMaxHP]&lt;/b&gt;&lt;br&gt;
+				&lt;span style="color:green"&gt;[r, if(TempHP &gt; 0): " +" + TempHP + " Temp HP"; "&amp;nbsp;"]&lt;/span&gt;
+			&lt;/td&gt;
+			&lt;!-- HD --&gt;
+			&lt;td style="width: 60px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor];  padding: [r: vBoxPadding]px; text-align:center;"&gt;
+				&lt;div style="margin:0; padding: 0; background-color: #004050; color: white;"&gt;
+					HD&lt;/div&gt;
+				[h: vTotalHD = HD4 + HD6 + HD8 + HD10 + HD12 + HD20]
+				[h: vUsedHD = UsedHD4 + UsedHD6 + UsedHD8 + UsedHD10 + UsedHD12 + UsedHD20]			
+				[h: vHDList = "4, 6, 8, 10, 12, 20"]
+				&lt;b style="font-size:2em"&gt;[r: vTotalHD - vUsedHD]/[r: vTotalHD]&lt;/b&gt;&lt;br&gt;
+				&lt;span style="color:gray;"&gt;
+					[r, foreach(vHD, vHDList, " "), code: {
+						
+						[h: vThisHD = number(getProperty("HD" + vHD))]
+						[h: vThisUsedHD = number(getProperty("UsedHD" + vHD))]
+						[h: vThisLeftHD = vThisHD - vThisUsedHD]
+						[r: if(vThisLeftHD &gt; 0, vThisLeftHD + "d" + vHD, "")]
+					}]
+					[r, if(vTotalHD - vUsedHD == 0): "&lt;b style='color:red'&gt;No HD Left!&lt;/b&gt;"]
+				&lt;/span&gt;
+			&lt;/td&gt;		
+		&lt;/tr&gt;&lt;/table&gt;			
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;!-- Main Sheet Table --&gt;
+&lt;table border=[r:vDebugBorder] style="width:[r: vSheetWidth]px;padding:0;" cellspacing=0 cellpadding=0 valign=top&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;table style="margin-right: [r: vMainColumnGutter]px; width:[r: vAttBoxWidth]px;"&gt;
+	&lt;!-- Attributes --&gt;
+	[r, foreach(vAttribute, vAttributes, ""), code: {
+		[h: vAtt = substring(vAttribute, 0, 3)]
+		[h: vMod = number(getProperty(vAtt+"Mod"))]	
+		&lt;tr&gt;
+			&lt;td style="margin-bottom: [r: (vBoxMarginBottom + 30) / 5]px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor]; ; padding: [r: vBoxPadding]px; padding-bottom: [r: vBoxPadding + vInnerBoxPadding]px; text-align:center;"&gt;
+				&lt;div style="margin: 0; padding: 0; background-color:#[r: getStrProp(vAttColors, vAtt, vBoxHeaderBackgroundColor)]; color: #[r: getStrProp(vAttHeaderTextColors, vAtt, vBoxHeaderTextColor)]"&gt;
+					[r: vAtt]&lt;/div&gt;
+				[h: vAttributeMacroURL = macroLinkText( vThisMacro, "none", json.set("{}", "RollType", "AbilityCheck", "Attribute", vAttribute), currentToken())]
+				&lt;a href="[r: vAttributeMacroURL]" class="[r: vPlainLinkClass]"&gt;&lt;b style="font-size:[r: vLargeFontSizeEM]em"&gt;[r, if(vMod &gt; 0):"+";""][r: vMod]&lt;/b&gt;&lt;br&gt;
+				[r: getProperty(vAttribute)]&lt;/a&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	}]
+&lt;/table&gt;&lt;/td&gt;
+
+&lt;!-- Saves &amp; Skills --&gt;
+&lt;td align="right" style="width:[r: vBoxWidth]px;margin:0;padding:0"&gt;&lt;table style="margin-right: [r: vMainColumnGutter]px; " cellspacing=0 cellpadding=0&gt;
+&lt;tr&gt;
+&lt;td style="width:[r: vBoxWidth]px; margin-bottom: [r: vBoxMarginBottom]px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor];  padding: [r: vBoxPadding]px; text-align:left;"&gt;
+	&lt;div style="margin:0; padding: 0; background-color: [r: vBoxHeaderBackgroundColor]; color: [r: vBoxHeaderTextColor]; text-align: center;"&gt;Saves&lt;/div&gt;
+	&lt;table cellspacing=0 cellpadding=0 style="padding:0 [r: vInnerBoxPadding]px [r: vInnerBoxPadding]px"&gt;
+		&lt;!-- Saving Throws --&gt;
+		[r, foreach(vAttribute, vAttributes, ""), code: {
+			[h: vAtt = substring(vAttribute, 0, 3)]
+			[h: vMod = number(getProperty(vAtt+"Mod"))]
+			[h: vSave = number(getProperty(vAtt+"Save"))]
+			[h: vSaveBonus = vSave * Proficiency + vMod]
+			[h: vSaveMacroURL = macroLinkText( vThisMacro, "none", json.set("{}", "RollType", "Save", "Attribute", vAttribute), currentToken())]
+			&lt;tr&gt;
+				&lt;td&gt;[r, if(vSave): if(vSave == 1, "&amp;#9679;", "&amp;#9673;") ; "&amp;#9675;"]&amp;nbsp;&lt;/td&gt;
+				&lt;td style="border-bottom: 1px solid [r: vBorderColor]; width: 25px; text-align:center;margin: 0 4px 0 2px;"&gt;
+					[r, if(vSaveBonus &gt; 0): "+"; ""][r: vSaveBonus]&lt;/td&gt;									
+				&lt;td&gt;&lt;a href="[r: vSaveMacroURL]" class="[r: vPlainLinkClass]"&gt;
+					[r: vAttribute]
+				&lt;/a&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+		}]
+	&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td style="width:[r: vBoxWidth]px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor];  padding: [r: vBoxPadding]px; text-align:left;"&gt;
+	&lt;div style="margin:0; padding: 0; background-color: [r: vBoxHeaderBackgroundColor]; color: [r: vBoxHeaderTextColor]; text-align:center;"&gt;Skills&lt;/div&gt;
+	&lt;table cellspacing=0 cellpadding=0 style="padding:0 [r: vInnerBoxPadding]px [r: vInnerBoxPadding]px"&gt;
+		&lt;!-- Skills --&gt;	
+		[r, foreach(vSkillEntry, vSkills, "", ";"), code: {
+			[h: vSkillEntry = stringToList(vSkillEntry, "=")]
+			[h: vSkillName = listGet(vSkillEntry, 0)]
+			[h: vSkillPropName = replace(vSkillName, " ", "")]
+			[h: vAtt = listGet(vSkillEntry, 1)]
+			[h: vMod = number(getProperty(vAtt+"Mod"))]
+			[h: vSkill = number(getProperty(vSkillPropName))]
+			[h: vSkillBonus = vSkill * Proficiency + vMod]
+			[h: vSkillMacroURL = macroLinkText( vThisMacro, "none", json.set("{}", "RollType", "SkillCheck", "Skill", vSkillName, "Att", vAtt), currentToken())]
+			&lt;tr&gt;
+				&lt;td&gt;[r, if(vSkill): if(vSkill == 1, "&amp;#9679;", "&amp;#9673;") ; "&amp;#9675;"]&amp;nbsp;&lt;/td&gt;
+				&lt;td style="border-bottom: 1px solid [r: vBorderColor]; width: 25px; text-align:center;margin: 0 4px 0 2px;"&gt;
+					[r, if(vSkillBonus &gt; 0): "+"; ""][r: vSkillBonus]&lt;/td&gt;
+				&lt;td&gt;&lt;a href="[r: vSkillMacroURL]" class="[r: vPlainLinkClass]"&gt;[r: vSkillName]&lt;/a&gt;
+				&lt;span style="color:#[r: getStrProp(vAttTagTextColors, vAtt, 'a0a0a0')]; font-size: .9em; font-style: italic;"&gt;
+					[r: vAtt]&lt;/span&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+		}]
+	&lt;/table&gt;
+&lt;/td&gt;
+	&lt;/tr&gt;	
+&lt;/table&gt;&lt;/td&gt;
+
+&lt;!-- AC &amp; The Rest --&gt;
+&lt;td style="width:[r: vBoxWidth]px;"&gt;&lt;table&gt;
+&lt;tr&gt;
+&lt;td style="padding:0"&gt;
+	&lt;table cellspacing=0 cellpadding=0&gt;&lt;tr&gt;
+		&lt;!-- AC --&gt;
+		&lt;td style="margin-right: [r: vMiniColumnGutter]px; width: [r: vBoxWidthThird]px; margin-bottom: [r: vBoxMarginBottom]px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor];  padding: [r: vBoxPadding]px; text-align:center;"&gt;
+			&lt;div style="margin:0; padding: 0; background-color:  #805040; color: white;"&gt;
+				AC&lt;/div&gt;
+			&lt;b style="font-size:2em"&gt;[r: AC]&lt;/b&gt;
+		&lt;/td&gt;
+		&lt;!-- Init --&gt;
+		&lt;td style="margin-right: [r: vMiniColumnGutter]px; width: [r: vBoxWidthThird]px; margin-bottom: [r: vBoxMarginBottom]px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor];  padding: [r: vBoxPadding]px; text-align:center;"&gt;
+			&lt;div style="margin:0; padding: 0; background-color: #208020; color: white;"&gt;
+				Init&lt;/div&gt;
+			&lt;b style="font-size:2em"&gt;[r, if(Initiative &gt; 0): "+"][r: Initiative]&lt;/b&gt;
+		&lt;/td&gt;
+		&lt;!-- Speed --&gt;
+		&lt;td style="width: [r: vBoxWidthThird]px; margin-bottom: [r: vBoxMarginBottom]px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor];  padding: [r: vBoxPadding]px; text-align:center;"&gt;
+			&lt;div style="margin:0; padding: 0; background-color: #202080; color: white;"&gt;
+				Speed&lt;/div&gt;
+			&lt;b style="font-size:2em"&gt;[r: Speed]&lt;/b&gt;
+		&lt;/td&gt;			
+	&lt;/tr&gt;&lt;/table&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;!-- Inspiration --&gt;
+&lt;td style="width:[r: vBoxWidth]px;margin-bottom: [r: vBoxMarginBottom]px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor]; "&gt;
+	&lt;table cellspacing=0 cellpadding=0&gt;
+		&lt;tr&gt;&lt;td style="width:25px;border-right:1px solid [r: vBorderColor]; padding: 3px;text-align:center; "&gt;
+			[r, if(state.Inspiration == 1): "&amp;#10004;"; "&amp;nbsp;"]
+		&lt;/td&gt;&lt;td style="padding: 3px 8px;text-align:left;"&gt;
+			Inspiration
+		&lt;/td&gt;&lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;
+&lt;!-- Proficiency --&gt;
+&lt;td style="width:[r: vBoxWidth]px;margin-bottom: [r: vBoxMarginBottom]px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor]; "&gt;
+	&lt;table cellspacing=0 cellpadding=0&gt;
+		&lt;tr&gt;&lt;td style="width:25px;border-right:1px solid [r: vBorderColor]; padding: 3px;text-align:center; "&gt;
+			[r, if(Proficiency &gt; 0): "+"; ""][r: Proficiency]
+		&lt;/td&gt;&lt;td style="padding: 3px 8px;text-align:left;"&gt;
+			Proficiency Bonus
+		&lt;/td&gt;&lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- Custom Counters --&gt;
+[h: vCustomCounters = getProperty("CustomCounters")]
+[h, if(json.type(vCustomCounters) == "ARRAY"): vCounterCategories = json.sort(json.unique(json.path.read(vCustomCounters, ".category"))); vCounterCategories = ""] 
+[r, foreach(vCounterCategoryName, vCounterCategories, ""), code: {
+&lt;tr&gt;
+	&lt;td style="width:[r: vBoxWidth]px; border: 1px solid [r: vBorderColor]; background-color:[r: vBoxColor];  padding: [r: vBoxPadding]px; text-align:left; margin-bottom: [r: vBoxMarginBottom]px;"&gt;
+		&lt;div style="margin:0; padding: 0; background-color: [r: vBoxHeaderBackgroundColor]; color: [r: vBoxHeaderTextColor]; text-align: center;"&gt;
+		[r: vCounterCategoryName]&lt;/div&gt;				
+		[h: vCounterCategory =  json.sort(json.path.read(
+			vCustomCounters, 
+			".[?(@.category == '" + vCounterCategoryName + "')]"
+		), "a", "name")]
+		&lt;table cellspacing=0 cellpadding=0 style="width:100%; padding:0 [r: vInnerBoxPadding]px [r: vInnerBoxPadding]px;"&gt;
+			[r, foreach(vCounter, vCounterCategory, ""): 
+				"&lt;tr style='" + 
+					if(math.mod(json.indexOf(vCounterCategory, vCounter), 2) == 1,
+						"background-color: " + vAlternatingRowColor + ";", "") +
+					"'&gt;&lt;td&gt;" +
+					json.get(vCounter, "name") +
+				"&lt;/td&gt;&lt;td align=right style='color:gray'&gt;" + 	
+				"&lt;a href='" + 
+				macroLinkText( vThisMacro, "none", 
+					json.set("{}", 
+						"RollType", "AdjustCounter", 
+						"CounterName", json.get(vCounter, "name"), 
+						"CounterAdjustment", 1), currentToken()) + 
+				"' class='" + vPlainLinkClass + "'&gt;&lt;span title='Add 1'&gt;+&lt;/span&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;" + 
+				"&lt;a href='" + 
+				macroLinkText( vThisMacro, "none", 
+					json.set("{}", 
+						"RollType", "AdjustCounter", 
+						"CounterName", json.get(vCounter, "name"), 
+						"CounterAdjustment", -1), currentToken()) + 
+				"' class='" + vPlainLinkClass + "'&gt;&lt;span title='Subtract 1'&gt;-&lt;/span&gt;&lt;/a&gt; " +
+				if(number(length(json.get(vCounter, "reset"))) &gt; 0,					
+					"&lt;span title='Resets on " + 
+						json.get(vCounter, "reset") +
+					"'&gt;" + 
+					substring(json.get(vCounter, "reset"), 
+						0, 
+						if(number(length(json.get(vCounter, "reset"))) &gt; 0, 1, 0)) +
+					"&lt;/span&gt;","") +										
+				"&lt;/td&gt;&lt;td align=right&gt;" + 
+					json.get(vCounter, "value") +
+					if(json.contains(vCounter, "max") == 1, " / " + json.get(vCounter, "max"), "") +
+				"&lt;/td&gt;&lt;/tr&gt;"]
+		&lt;/table&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+}]
+&lt;/table&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/body&gt;
+}]</command>
+      <label>Sheet</label>
+      <group>Adventuring</group>
+      <sortby>3.2</sortby>
+      <autoExecute>true</autoExecute>
+      <includeLabel>false</includeLabel>
+      <applyToTokens>false</applyToTokens>
+      <fontColorKey>black</fontColorKey>
+      <fontSize>1.05em</fontSize>
+      <minWidth>36px</minWidth>
+      <maxWidth />
+      <allowPlayerEdits>false</allowPlayerEdits>
+      <toolTip>&lt;html&gt;&lt;body style="width:200px;"&gt;
+Click to open your character sheet. 
+&lt;hr&gt;The sheet refreshes when you use your damage, rest, and death save macros. You can also refresh the sheet by hitting this button, or clicking 'reload' on the sheet itself.
+&lt;/body&gt;&lt;/html&gt;</toolTip>
+      <displayHotKey>true</displayHotKey>
+      <commonMacro>false</commonMacro>
+      <compareGroup>true</compareGroup>
+      <compareSortPrefix>true</compareSortPrefix>
+      <compareCommand>true</compareCommand>
+      <compareIncludeLabel>true</compareIncludeLabel>
+      <compareAutoExecute>true</compareAutoExecute>
+      <compareApplyToSelectedTokens>true</compareApplyToSelectedTokens>
+    </net.rptools.maptool.model.MacroButtonProperties>
+  </entry>
+</macroPropertiesMap>
+                
