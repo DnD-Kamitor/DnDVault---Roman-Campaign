@@ -1,0 +1,8 @@
+{
+  "name": "Vault Entrance",
+  "location_type": "vault",
+  "player_description": "A low stone arch set into the hillside behind the principia. The stonework is older than the fort -- much older. Someone added an iron door recently, and recently is a relative term: the hinges are rusted but the padlock is new. The air that comes from inside is cold and smells of copper and old smoke.",
+  "gm_notes": "The vault is a pre-Roman ritual structure repurposed as a storage space. Corvinus had it locked when the excavation team died. DC 12 History: the stonework style is Germanic, pre-Roman conquest -- at least 200 years old. DC 15: the stonework matches descriptions of ritual enclosures used for divine binding ceremonies. DC 17: there are runes carved into the arch frame, partially obscured by the iron door frame installation. The runes are a ward -- they were broken when the iron door was installed.",
+  "token_color": "#1a1a2e",
+  "session": 1
+}

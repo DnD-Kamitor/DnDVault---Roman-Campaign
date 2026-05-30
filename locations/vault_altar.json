@@ -1,0 +1,8 @@
+{
+  "name": "Vault Altar Chamber",
+  "location_type": "vault",
+  "player_description": "The passage ends in a circular chamber. In the center, on a stone altar, rests a spear. It is not decorated and not ornate. It is old in a way that has nothing to do with its physical age. The air around it is absolutely still. A figure stands between you and the altar.",
+  "gm_notes": "The Wight. He does not attack immediately -- he is waiting. He speaks if the party tries to take the spear. DC 14 Persuasion with contract scroll (advantage) may pause combat -- see chapter1.qmd Scene 3. The spear: whoever touches it with bare skin makes a DC 14 CON save or gains Corruption Level 1. This is not announced. It happens. Two Shadows flank the Wight. Exit condition: Wight stands down if presented with all three contract tokens AND the binding scroll is read aloud correctly (DC 12 Religion). Combat is NOT the intended resolution.",
+  "token_color": "#8B0000",
+  "session": 1
+}

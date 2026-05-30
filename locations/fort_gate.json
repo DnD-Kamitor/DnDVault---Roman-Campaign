@@ -1,0 +1,8 @@
+{
+  "name": "Fort Main Gate",
+  "location_type": "fort",
+  "player_description": "The porta praetoria -- two towers, a wooden gate reinforced with iron, a narrow killing ground between inner and outer doors. The watch changes every four hours. Guards check entry passes during the day; after dark, the password is required.",
+  "gm_notes": "DC 13 Perception: the gate is understaffed tonight -- one guard post is empty. DC 15 Insight: the remaining guard looks nervous, not tired. Someone is expected. Relevant in Session 1 before Lucius arrives.",
+  "token_color": "#5c3a1e",
+  "session": 1
+}

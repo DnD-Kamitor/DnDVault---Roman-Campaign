@@ -1,0 +1,8 @@
+{
+  "name": "Fort Principia",
+  "location_type": "fort",
+  "player_description": "The principia stands at the heart of the fort -- a rectangular courtyard building with a covered colonnade. Administrative offices line the sides. At the far end, the sacellum holds the unit standards and the legion's pay chest. This is where orders originate and where the official record of everything is kept.",
+  "gm_notes": "DC 13 Perception: the sacellum has been opened recently -- the lock is freshly oiled. DC 15 Investigation: the record ledgers show a discrepancy between logged manpower and actual headcount. The frumentarius will notice this automatically if they make a Passive Investigation 14+.",
+  "token_color": "#5c3a1e",
+  "session": 1
+}

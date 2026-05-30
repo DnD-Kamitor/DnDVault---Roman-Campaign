@@ -1,0 +1,8 @@
+{
+  "name": "Vault Shield Hall",
+  "location_type": "vault",
+  "player_description": "The left passage opens into a hall lined with shield-shapes carved in relief along the walls. Roman shields mixed with older Germanic patterns. At the far end, a stone plinth stands empty. Dust outlines show something rested here recently.",
+  "gm_notes": "Hidden alcove: DC 14 Investigation or DC 12 Perception (passive if moving slowly) -- a loose stone in the east wall. Behind it: a wax tablet with a warning in Germanic, a carved OTHALAN rune token, and a partial copy of the binding contract. Three-clue rule: this is clue 1 of 3 for the contract's existence. DC 13 History: the shield carvings mix Roman and Germanic iconography in a way that suggests the space was used by both cultures before the Romans arrived.",
+  "token_color": "#1a1a2e",
+  "session": 1
+}

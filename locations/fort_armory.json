@@ -1,0 +1,8 @@
+{
+  "name": "Fort Armory",
+  "location_type": "fort",
+  "player_description": "The armory is locked and guarded. Rufus the smith holds the keys -- as does the Custos Armorum. Equipment is issued here, repaired here, and inventoried daily. Nothing leaves without a signature.",
+  "gm_notes": "DC 13 Perception: one rack of pila has been disturbed and re-racked out of order -- someone counted them, or removed one. DC 14 Investigation: the inventory log has a corrected entry from three nights ago -- two scuta were logged as 'damaged and removed' but there is no corresponding damage report. DC 15: the correction was made in a different hand than the original entry.",
+  "token_color": "#5c4a2a",
+  "session": 1
+}

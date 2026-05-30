@@ -1,0 +1,8 @@
+{
+  "name": "Fort Praetorium",
+  "location_type": "fort",
+  "player_description": "The praetorium is larger than it needs to be. A proper Roman house has been built inside the fort: atrium, triclinium, private baths. Corvinus lives here. You have not been inside.",
+  "gm_notes": "Restricted access. DC 15 Persuasion to get a private audience with Corvinus. DC 17 Stealth to enter without an invitation. Inside: his private papers are in a locked chest (DC 14 Thieves' Tools). The papers reference 'the arrangement' and 'the senator's patience' without naming either. A DC 15 History check identifies the handwriting style as that of a professional courier, not Corvinus.",
+  "token_color": "#8B1A1A",
+  "session": 1
+}

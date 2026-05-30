@@ -1,0 +1,8 @@
+{
+  "name": "Vicus",
+  "location_type": "settlement",
+  "player_description": "Outside the fort's south gate, the vicus has grown up around the military presence like a vine around a stake. Workshops, cookshops, small temples, and a bathhouse crowd the road. The people here are not soldiers but they live by soldiers: smiths, merchants, scribes, washerwomen, herbalists, and traders who have followed the army from somewhere else.",
+  "gm_notes": "Information network: the vicus knows everything the fort does -- usually faster. Brennus the innkeeper is the hub. DC 12 Persuasion + buying a round = access to current rumor tier. DC 14: specific rumor about a named NPC. DC 16: the rumor that has not circulated yet. Sigrun the trader in the vicus market is a contact for Vercingetorix -- she is passing information in both directions.",
+  "token_color": "#6b4c2a",
+  "session": 1
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Fort Barracks",
+  "location_type": "fort",
+  "player_description": "Long timber buildings arranged in rows. Eight men to a room -- contubernium quarters. The smell of leather oil, sweat, and bread. Soldiers sleep, argue, gamble, and clean their equipment. This is where most of the fort lives.",
+  "gm_notes": "DC 12 Perception (passive): someone has been in a different contubernium's room. DC 13 Investigation: a loose board under one bunk hides a sealed letter with no addressee. DC 15 Arcana: the wax seal has a faint magical imprint -- it has been read and resealed once.",
+  "token_color": "#4a4a4a",
+  "session": 1
+}
