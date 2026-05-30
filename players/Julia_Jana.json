@@ -114,6 +114,47 @@
       "damage_dice": "5d8",
       "color": "#c0c0ff",
       "note": "Affects creatures by HP (lowest first). 90ft range. 1min. +2d8 per slot above 1st."
+    },
+    {
+      "label": "Healing Hands",
+      "type": "heal",
+      "weapon": "Healing Hands (Aasimar)",
+      "damage_dice": "2d4",
+      "damage_mod": "",
+      "color": "#80ff80",
+      "note": "1/LR. Touch."
+    },
+    {
+      "label": "Twilight Sanctuary",
+      "type": "utility",
+      "weapon": "Channel Divinity: Twilight Sanctuary",
+      "damage_dice": "1d6",
+      "color": "#9090ff",
+      "note": "CD. 30ft aura 1min (conc). Allies ending turn in aura: choose this+WisMod temp HP OR end charmed/frightened."
+    },
+    {
+      "label": "Bless",
+      "type": "utility",
+      "weapon": "Bless",
+      "damage_dice": "1d4",
+      "color": "#ffffa0",
+      "note": "Conc 1min. Up to 3 willing creatures add this die to attack rolls and saving throws. L1."
+    },
+    {
+      "label": "Aid",
+      "type": "utility",
+      "weapon": "Aid",
+      "damage_dice": "",
+      "color": "#80ff80",
+      "note": "3 creatures gain +5 max and current HP for 8hr. L2. +5 per slot above 2nd."
+    },
+    {
+      "label": "Radiant Soul",
+      "type": "utility",
+      "weapon": "Radiant Soul (Aasimar)",
+      "damage_dice": "",
+      "color": "#ffffff",
+      "note": "BA. Grow wings, fly speed = walk speed, 1min. First attack each turn deals +3 radiant. 1/LR."
     }
   ],
 

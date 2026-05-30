@@ -107,6 +107,70 @@
       "damage_type": "acid",
       "color": "#40c040",
       "note": "Melee spell attack. S component only."
+    },
+    {
+      "label": "Produce Flame",
+      "type": "ranged",
+      "weapon": "Produce Flame",
+      "atk_props": ["SpellAttackBonus"],
+      "damage_dice": "1d8",
+      "damage_mod": "",
+      "damage_type": "fire",
+      "color": "#ff8020",
+      "note": "Cantrip. Range 30ft. Or hold for light (10ft bright / 10ft dim)."
+    },
+    {
+      "label": "Guidance",
+      "type": "utility",
+      "weapon": "Guidance",
+      "damage_dice": "1d4",
+      "color": "#80c080",
+      "note": "Cantrip. Touch, conc 1min. Target adds this roll to one ability check before spell ends."
+    },
+    {
+      "label": "Starry Chalice",
+      "type": "heal",
+      "weapon": "Starry Form (Chalice)",
+      "damage_dice": "1d8",
+      "damage_mod": "WisMod",
+      "color": "#c0a0ff",
+      "note": "Requires Chalice form active. When casting a healing spell, one creature within 30ft regains this HP."
+    },
+    {
+      "label": "Healing Word",
+      "type": "heal",
+      "weapon": "Healing Word",
+      "damage_dice": "1d4",
+      "damage_mod": "WisMod",
+      "color": "#80ff80",
+      "note": "BA, 60ft, verbal only. +1d4 per slot above 1st."
+    },
+    {
+      "label": "Thunderwave",
+      "type": "save",
+      "weapon": "Thunderwave",
+      "save_ability": "CON",
+      "damage_dice": "2d8",
+      "damage_type": "thunder",
+      "color": "#ffffa0",
+      "on_fail": "pushed 10ft on fail; half damage on success",
+      "note": "15ft cube from self. L1. +1d8 per slot above 1st."
+    },
+    {
+      "label": "Entangle",
+      "type": "utility",
+      "weapon": "Entangle",
+      "damage_dice": "",
+      "color": "#408040",
+      "note": "STR DC13 save or restrained while plants persist. 20ft square, 90ft range. Conc 1min. L1."
+    },
+    {
+      "label": "Faerie Fire",
+      "type": "utility",
+      "weapon": "Faerie Fire",
+      "damage_dice": "",
+      "color": "#a0ffa0",
+      "note": "DEX DC13 save or outlined in light. Attacks vs outlined have advantage. 20ft cube, 60ft. Conc 1min. L1."
     }
   ],
 

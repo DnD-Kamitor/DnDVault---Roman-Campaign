@@ -65,6 +65,64 @@
       "damage_type": "bludgeoning",
       "color": "#a0a0a0",
       "note": "Ranged spell attack. Range 60ft. Duration 1 min. Thrown or launched from sling."
+    },
+    {
+      "label": "Thunder Gauntlets (STR)",
+      "type": "melee",
+      "weapon": "Thunder Gauntlets (STR mode)",
+      "atk_props": ["StrMod", "Proficiency"],
+      "damage_dice": "1d8",
+      "damage_mod": "StrMod",
+      "damage_type": "thunder",
+      "color": "#80b0ff",
+      "note": "STR variant. Target disadvantage on attacks not targeting you until your next turn."
+    },
+    {
+      "label": "Defensive Field",
+      "type": "utility",
+      "weapon": "Defensive Field (BA)",
+      "damage_dice": "Proficiency",
+      "color": "#a0d0ff",
+      "note": "Gain this many temp HP. Guardian armor. No per-rest limit."
+    },
+    {
+      "label": "Shocking Grasp",
+      "type": "melee",
+      "weapon": "Shocking Grasp",
+      "atk_props": ["SpellAttackBonus"],
+      "damage_dice": "1d8",
+      "damage_mod": "",
+      "damage_type": "lightning",
+      "color": "#c0c0ff",
+      "note": "Cantrip. Target cannot take reactions until its next turn. Advantage if target wears metal armor."
+    },
+    {
+      "label": "Magic Missile",
+      "type": "utility",
+      "weapon": "Magic Missile",
+      "damage_dice": "3d4+3",
+      "color": "#c0c0ff",
+      "note": "Always prepared (Armorer). Auto-hit. 3 darts 1d4+1 each, targetable separately. 120ft. L1. +1 dart per slot above 1st."
+    },
+    {
+      "label": "Thunderwave",
+      "type": "save",
+      "weapon": "Thunderwave",
+      "save_ability": "CON",
+      "damage_dice": "2d8",
+      "damage_type": "thunder",
+      "color": "#ffffa0",
+      "on_fail": "pushed 10ft on fail; half damage on success",
+      "note": "Always prepared (Armorer). 15ft cube from self. L1. +1d8 per slot above 2nd."
+    },
+    {
+      "label": "Cure Wounds",
+      "type": "heal",
+      "weapon": "Cure Wounds",
+      "damage_dice": "1d8",
+      "damage_mod": "IntMod",
+      "color": "#80ff80",
+      "note": "Touch. L1. +1d8 per slot above 1st."
     }
   ],
 

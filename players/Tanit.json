@@ -68,6 +68,69 @@
       "damage_type": "psychic",
       "color": "#d0a0ff",
       "on_fail": "disadvantage on next attack roll before end of your next turn"
+    },
+    {
+      "label": "Dissonant Whispers",
+      "type": "save",
+      "weapon": "Dissonant Whispers",
+      "save_ability": "WIS",
+      "damage_dice": "3d6",
+      "damage_type": "psychic",
+      "color": "#d0a0ff",
+      "on_fail": "half on success; on fail must use reaction to move away",
+      "note": "Range 60ft. L1. +1d6 per slot above 1st."
+    },
+    {
+      "label": "Shatter",
+      "type": "save",
+      "weapon": "Shatter",
+      "save_ability": "CON",
+      "damage_dice": "3d8",
+      "damage_type": "thunder",
+      "color": "#ffffa0",
+      "on_fail": "half on success; 10ft radius sphere; inorganic creatures disadvantage on save",
+      "note": "Range 60ft. L2. +1d8 per slot above 2nd."
+    },
+    {
+      "label": "Healing Word",
+      "type": "heal",
+      "weapon": "Healing Word",
+      "damage_dice": "1d4",
+      "damage_mod": "ChaMod",
+      "color": "#80ff80",
+      "note": "BA, 60ft, verbal only. +1d4 per slot above 1st."
+    },
+    {
+      "label": "Bardic Inspiration",
+      "type": "utility",
+      "weapon": "Bardic Inspiration (d8)",
+      "damage_dice": "1d8",
+      "color": "#ffd080",
+      "note": "BA. Target within 60ft adds this roll to one attack, check, or save within 10min."
+    },
+    {
+      "label": "Unsettling Words",
+      "type": "utility",
+      "weapon": "Unsettling Words",
+      "damage_dice": "1d8",
+      "color": "#ffd080",
+      "note": "BA. Expend BI die. Target subtracts this roll from next saving throw before your next turn."
+    },
+    {
+      "label": "Charm Person",
+      "type": "utility",
+      "weapon": "Charm Person",
+      "damage_dice": "",
+      "color": "#d0c0ff",
+      "note": "WIS DC13 or charmed 1hr. Advantage on save if in combat. Breaks on damage. L1."
+    },
+    {
+      "label": "Suggestion",
+      "type": "utility",
+      "weapon": "Suggestion",
+      "damage_dice": "",
+      "color": "#d0c0ff",
+      "note": "WIS DC13 or follows reasonable suggestion. Concentration 8hr. L2."
     }
   ],
 
