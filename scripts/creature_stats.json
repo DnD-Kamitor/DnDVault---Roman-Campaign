@@ -1,0 +1,703 @@
+{
+  "Wolf": {
+    "hp": 11, "ac": 13, "speed": "40 ft.",
+    "str": 12, "dex": 15, "con": 12, "int": 3, "wis": 12, "cha": 6,
+    "saves": {},
+    "skills": {"Perception": 3, "Stealth": 4},
+    "cr": "1/4",
+    "attacks": [
+      {"label": "Bite", "atk": 4, "reach": "5 ft.", "dice": "2d4+2", "type": "piercing",
+       "note": "DC 11 STR save or knocked prone."}
+    ],
+    "traits": ["Pack Tactics: advantage on attacks when an ally is adjacent to target."],
+    "notes": "CR 1/4. Pack Tactics. Knock prone on hit (DC 11 STR)."
+  },
+  "Dire_Wolf": {
+    "hp": 37, "ac": 14, "speed": "50 ft.",
+    "str": 17, "dex": 15, "con": 15, "int": 3, "wis": 12, "cha": 7,
+    "saves": {},
+    "skills": {"Perception": 3, "Stealth": 4},
+    "cr": "1",
+    "attacks": [
+      {"label": "Bite", "atk": 5, "reach": "5 ft.", "dice": "2d6+3", "type": "piercing",
+       "note": "DC 13 STR save or knocked prone."}
+    ],
+    "traits": ["Pack Tactics: advantage on attacks when an ally is adjacent to target."],
+    "notes": "CR 1. Pack Tactics. Knock prone on hit (DC 13 STR)."
+  },
+  "Boar": {
+    "hp": 11, "ac": 11, "speed": "40 ft.",
+    "str": 13, "dex": 11, "con": 12, "int": 2, "wis": 9, "cha": 5,
+    "saves": {},
+    "skills": {},
+    "cr": "1/4",
+    "attacks": [
+      {"label": "Tusk", "atk": 3, "reach": "5 ft.", "dice": "1d6+1", "type": "slashing",
+       "note": "If the boar moved 20+ ft. before attacking: DC 11 STR save or knocked prone."}
+    ],
+    "traits": ["Charge: if moved 20+ ft. in a straight line, target must save or be knocked prone.",
+               "Relentless (1/day): drop to 1 HP instead of 0 (if damage would reduce to 0)."],
+    "notes": "CR 1/4. Charge + Relentless."
+  },
+  "Brown_Bear": {
+    "hp": 34, "ac": 11, "speed": "40 ft., climb 30 ft.",
+    "str": 19, "dex": 10, "con": 16, "int": 2, "wis": 13, "cha": 7,
+    "saves": {},
+    "skills": {"Perception": 3},
+    "cr": "1",
+    "attacks": [
+      {"label": "Bite", "atk": 6, "reach": "5 ft.", "dice": "1d8+4", "type": "piercing", "note": ""},
+      {"label": "Claws", "atk": 6, "reach": "5 ft.", "dice": "2d6+4", "type": "slashing", "note": ""}
+    ],
+    "traits": ["Multiattack: one Bite and one Claws per turn."],
+    "notes": "CR 1. Multiattack (Bite + Claws)."
+  },
+  "Giant_Spider": {
+    "hp": 26, "ac": 14, "speed": "30 ft., climb 30 ft.",
+    "str": 14, "dex": 16, "con": 12, "int": 2, "wis": 11, "cha": 4,
+    "saves": {},
+    "skills": {"Perception": 4, "Stealth": 7},
+    "cr": "1",
+    "attacks": [
+      {"label": "Bite", "atk": 5, "reach": "5 ft.", "dice": "1d8+3", "type": "piercing",
+       "note": "Target must make DC 11 CON save or take 2d8 poison damage (half on success)."}
+    ],
+    "traits": ["Spider Climb: can climb difficult surfaces including ceilings.",
+               "Web Sense: knows the location of any creature in contact with its webs.",
+               "Web (Recharge 5-6): DC 12 DEX save or restrained. Escape DC 12 STR."],
+    "notes": "CR 1. Poisonous bite. Web attack (Recharge 5-6)."
+  },
+  "Skeleton": {
+    "hp": 13, "ac": 13, "speed": "30 ft.",
+    "str": 10, "dex": 14, "con": 15, "int": 6, "wis": 8, "cha": 5,
+    "saves": {},
+    "skills": {},
+    "cr": "1/4",
+    "immunities": "Poison, exhaustion, poisoned condition",
+    "vulnerabilities": "Bludgeoning",
+    "attacks": [
+      {"label": "Shortsword", "atk": 4, "reach": "5 ft.", "dice": "1d6+2", "type": "piercing", "note": ""},
+      {"label": "Shortbow", "atk": 4, "reach": "80/320 ft.", "dice": "1d6+2", "type": "piercing", "note": ""}
+    ],
+    "traits": [],
+    "notes": "CR 1/4. Vulnerable to bludgeoning. Immune to poison."
+  },
+  "Zombie": {
+    "hp": 22, "ac": 8, "speed": "20 ft.",
+    "str": 13, "dex": 6, "con": 16, "int": 3, "wis": 6, "cha": 5,
+    "saves": {"WIS": 0},
+    "skills": {},
+    "cr": "1/4",
+    "immunities": "Poison, poisoned condition",
+    "attacks": [
+      {"label": "Slam", "atk": 3, "reach": "5 ft.", "dice": "1d6+1", "type": "bludgeoning", "note": ""}
+    ],
+    "traits": ["Undead Fortitude: when reduced to 0 HP, DC 5+damage CON save to drop to 1 HP instead."],
+    "notes": "CR 1/4. Undead Fortitude. Slow (20 ft. speed)."
+  },
+  "Ghoul": {
+    "hp": 22, "ac": 12, "speed": "30 ft.",
+    "str": 13, "dex": 15, "con": 10, "int": 7, "wis": 10, "cha": 6,
+    "saves": {},
+    "skills": {},
+    "cr": "1",
+    "immunities": "Poison, charmed, exhaustion, poisoned condition",
+    "attacks": [
+      {"label": "Bite", "atk": 2, "reach": "5 ft.", "dice": "2d6+2", "type": "piercing", "note": ""},
+      {"label": "Claws", "atk": 4, "reach": "5 ft.", "dice": "2d4+2", "type": "slashing",
+       "note": "DC 10 CON save or paralysed until end of next turn (elves immune)."}
+    ],
+    "traits": ["Multiattack: one Bite and one Claws per turn."],
+    "notes": "CR 1. Paralysing claws (DC 10 CON). Elves immune to paralysis."
+  },
+  "Ghast": {
+    "hp": 36, "ac": 13, "speed": "30 ft.",
+    "str": 16, "dex": 17, "con": 10, "int": 11, "wis": 10, "cha": 8,
+    "saves": {},
+    "skills": {},
+    "cr": "2",
+    "immunities": "Poison, poisoned condition",
+    "resistances": "Necrotic",
+    "attacks": [
+      {"label": "Bite", "atk": 5, "reach": "5 ft.", "dice": "2d8+3", "type": "piercing", "note": ""},
+      {"label": "Claws", "atk": 5, "reach": "5 ft.", "dice": "2d6+3", "type": "slashing",
+       "note": "DC 10 CON save or paralysed until end of next turn."}
+    ],
+    "traits": ["Multiattack: one Bite and one Claws per turn.",
+               "Stench: creatures within 5 ft. must DC 10 CON save or poisoned until start of next turn."],
+    "notes": "CR 2. Stench aura. Paralysing claws (DC 10 CON)."
+  },
+  "Shadow": {
+    "hp": 16, "ac": 12, "speed": "40 ft.",
+    "str": 6, "dex": 14, "con": 13, "int": 6, "wis": 10, "cha": 8,
+    "saves": {},
+    "skills": {"Stealth": 4},
+    "cr": "1/2",
+    "vulnerabilities": "Radiant",
+    "immunities": "Cold, necrotic, poison; frightened, exhaustion, grappled, paralysed, petrified, poisoned, prone, restrained",
+    "resistances": "Acid, fire, lightning, thunder; bludgeoning/piercing/slashing from non-magical weapons",
+    "attacks": [
+      {"label": "Strength Drain", "atk": 4, "reach": "5 ft.", "dice": "2d6+2", "type": "necrotic",
+       "note": "Target's STR score reduced by the damage dealt. If STR reaches 0, target dies. Reduction lasts until short/long rest."}
+    ],
+    "traits": ["Amorphous: can move through any gap at least 1 inch wide.",
+               "Shadow Stealth: can Hide as a bonus action in dim light or darkness.",
+               "Sunlight Weakness: disadvantage on attacks, checks, and saves in sunlight."],
+    "notes": "CR 1/2. Strength Drain — kills at STR 0. Sunlight weakness."
+  },
+  "Wraith": {
+    "hp": 67, "ac": 13, "speed": "0 ft., fly 60 ft. (hover)",
+    "str": 6, "dex": 16, "con": 16, "int": 12, "wis": 14, "cha": 15,
+    "saves": {},
+    "skills": {},
+    "cr": "5",
+    "vulnerabilities": "Radiant",
+    "immunities": "Cold, necrotic, poison; charmed, exhaustion, grappled, paralysed, petrified, poisoned, prone, restrained",
+    "resistances": "Acid, fire, lightning, thunder; bludgeoning/piercing/slashing from non-magical weapons",
+    "attacks": [
+      {"label": "Life Drain", "atk": 6, "reach": "5 ft.", "dice": "4d8+3", "type": "necrotic",
+       "note": "DC 14 CON save or max HP reduced by damage dealt. Reduction lasts until long rest. Dies if max HP reaches 0."},
+      {"label": "Create Specter", "atk": 0, "reach": "touch", "dice": "0", "type": "utility",
+       "note": "Raises a slain humanoid (within last minute) as a specter. Max 7 specters under control."}
+    ],
+    "traits": ["Incorporeal: can move through creatures and objects (takes 5 force damage if ends turn inside).",
+               "Sunlight Sensitivity: disadvantage on attacks in sunlight."],
+    "notes": "CR 5. Life Drain reduces max HP. Can create Specters from slain humanoids."
+  },
+  "Specter": {
+    "hp": 22, "ac": 12, "speed": "0 ft., fly 50 ft. (hover)",
+    "str": 1, "dex": 14, "con": 11, "int": 10, "wis": 10, "cha": 11,
+    "saves": {},
+    "skills": {},
+    "cr": "1",
+    "vulnerabilities": "Radiant",
+    "immunities": "Cold, necrotic, poison; charmed, exhaustion, grappled, paralysed, petrified, poisoned, prone, restrained",
+    "resistances": "Acid, fire, lightning, thunder; bludgeoning/piercing/slashing from non-magical weapons",
+    "attacks": [
+      {"label": "Life Drain", "atk": 4, "reach": "5 ft.", "dice": "3d6", "type": "necrotic",
+       "note": "DC 10 CON save or max HP reduced by damage dealt. Reduction lasts until long rest."}
+    ],
+    "traits": ["Incorporeal: can move through creatures and objects.",
+               "Sunlight Sensitivity: disadvantage on attacks in sunlight."],
+    "notes": "CR 1. Life Drain reduces max HP."
+  },
+  "Wight": {
+    "hp": 45, "ac": 14, "speed": "30 ft.",
+    "str": 15, "dex": 14, "con": 16, "int": 10, "wis": 13, "cha": 15,
+    "saves": {},
+    "skills": {"Perception": 3, "Stealth": 4},
+    "cr": "3",
+    "immunities": "Poison, necrotic, poisoned, exhaustion",
+    "resistances": "Bludgeoning/piercing/slashing from non-magical weapons",
+    "attacks": [
+      {"label": "Longsword", "atk": 4, "reach": "5 ft.", "dice": "1d8+2", "type": "slashing", "note": "(1d10+2 two-handed)"},
+      {"label": "Longbow", "atk": 4, "reach": "150/600 ft.", "dice": "1d8+2", "type": "piercing", "note": ""},
+      {"label": "Life Drain", "atk": 4, "reach": "5 ft.", "dice": "1d6+2", "type": "necrotic",
+       "note": "DC 13 CON save or max HP reduced by damage. Humanoid killed by this rises as a zombie."}
+    ],
+    "traits": ["Multiattack: two Longsword attacks or two Longbow attacks per turn.",
+               "Life Drain: necrotic attack reduces target's max HP."],
+    "notes": "CR 3. Life Drain. Slain humanoids rise as zombies."
+  },
+  "Will-o-Wisp": {
+    "hp": 22, "ac": 19, "speed": "0 ft., fly 50 ft. (hover)",
+    "str": 1, "dex": 28, "con": 10, "int": 13, "wis": 14, "cha": 11,
+    "saves": {},
+    "skills": {},
+    "cr": "2",
+    "immunities": "Lightning, poison; charmed, exhaustion, grappled, paralysed, petrified, poisoned, prone, restrained, unconscious",
+    "resistances": "Acid, cold, fire, necrotic, thunder; bludgeoning/piercing/slashing from non-magical weapons",
+    "attacks": [
+      {"label": "Shock", "atk": 4, "reach": "5 ft.", "dice": "2d8", "type": "lightning", "note": ""}
+    ],
+    "traits": ["Consume Life: if creature within 5 ft. drops to 0 HP, regains 10d8 HP (bonus action).",
+               "Ephemeral: cannot wear or carry anything.",
+               "Incorporeal: can move through creatures and objects.",
+               "Variable Illumination: shed 5-20 ft. bright light (bonus action to change).",
+               "Invisible (bonus action): until attacks or uses Consume Life."],
+    "notes": "CR 2. AC 19. Consume Life on nearby deaths. Can go invisible."
+  },
+  "Dryad": {
+    "hp": 22, "ac": 11, "speed": "30 ft.",
+    "str": 10, "dex": 12, "con": 11, "int": 14, "wis": 15, "cha": 18,
+    "saves": {},
+    "skills": {"Perception": 4, "Stealth": 5},
+    "cr": "1",
+    "attacks": [
+      {"label": "Club", "atk": 2, "reach": "5 ft.", "dice": "1d4", "type": "bludgeoning", "note": ""},
+      {"label": "Fey Charm", "atk": 0, "reach": "30 ft.", "dice": "0", "type": "utility",
+       "note": "DC 14 WIS save or charmed for 24 hrs. Repeats save if harmed. Counts as friendly to the dryad."}
+    ],
+    "traits": ["Innate Spellcasting (CHA DC 14): Druidcraft (at will), Entangle (3/day), Goodberry (3/day), Shillelagh (3/day), Barkskin (1/day), Pass Without Trace (1/day), Shapechange (1/day), Speak With Plants (1/day).",
+               "Tree Stride: once per turn, can enter a tree and exit another tree within 60 ft."],
+    "notes": "CR 1. Fey Charm (DC 14 WIS). Spellcasting CHA. Tree Stride."
+  },
+  "Berserker": {
+    "hp": 67, "ac": 13, "speed": "30 ft.",
+    "str": 16, "dex": 12, "con": 17, "int": 9, "wis": 11, "cha": 9,
+    "saves": {},
+    "skills": {},
+    "cr": "2",
+    "attacks": [
+      {"label": "Greataxe", "atk": 5, "reach": "5 ft.", "dice": "1d12+3", "type": "slashing", "note": ""}
+    ],
+    "traits": ["Reckless Attack: can give all attacks this turn advantage, but attacks against it also have advantage until start of next turn."],
+    "notes": "CR 2. Reckless Attack. High HP (67)."
+  },
+  "Bandit": {
+    "hp": 11, "ac": 12, "speed": "30 ft.",
+    "str": 11, "dex": 12, "con": 12, "int": 10, "wis": 10, "cha": 10,
+    "saves": {},
+    "skills": {},
+    "cr": "1/8",
+    "attacks": [
+      {"label": "Scimitar", "atk": 3, "reach": "5 ft.", "dice": "1d6+1", "type": "slashing", "note": ""},
+      {"label": "Crossbow", "atk": 3, "reach": "80/320 ft.", "dice": "1d6+1", "type": "piercing", "note": ""}
+    ],
+    "traits": [],
+    "notes": "CR 1/8."
+  },
+  "Bandit_Captain": {
+    "hp": 65, "ac": 15, "speed": "30 ft.",
+    "str": 15, "dex": 16, "con": 14, "int": 14, "wis": 11, "cha": 14,
+    "saves": {"STR": 4, "DEX": 5, "WIS": 2},
+    "skills": {"Athletics": 4, "Deception": 4},
+    "cr": "2",
+    "attacks": [
+      {"label": "Scimitar", "atk": 5, "reach": "5 ft.", "dice": "1d6+3", "type": "slashing", "note": ""},
+      {"label": "Dagger", "atk": 5, "reach": "5 ft. or 20/60 ft.", "dice": "1d4+3", "type": "piercing", "note": ""}
+    ],
+    "traits": ["Multiattack: two Scimitar attacks and one Dagger attack per turn."],
+    "notes": "CR 2. Multiattack (2 scimitar + 1 dagger)."
+  },
+  "Guard": {
+    "hp": 11, "ac": 16, "speed": "30 ft.",
+    "str": 13, "dex": 12, "con": 12, "int": 10, "wis": 11, "cha": 10,
+    "saves": {},
+    "skills": {"Perception": 2},
+    "cr": "1/8",
+    "attacks": [
+      {"label": "Spear", "atk": 3, "reach": "5 ft. or 20/60 ft.", "dice": "1d6+1", "type": "piercing", "note": "(1d8+1 two-handed)"}
+    ],
+    "traits": [],
+    "notes": "CR 1/8. Chain mail + shield."
+  },
+  "Tribal_Warrior": {
+    "hp": 11, "ac": 12, "speed": "30 ft.",
+    "str": 13, "dex": 11, "con": 12, "int": 8, "wis": 11, "cha": 8,
+    "saves": {},
+    "skills": {},
+    "cr": "1/8",
+    "attacks": [
+      {"label": "Greatclub", "atk": 3, "reach": "5 ft.", "dice": "1d8+1", "type": "bludgeoning", "note": ""}
+    ],
+    "traits": ["Pack Tactics: advantage on attacks when an ally is adjacent to target."],
+    "notes": "CR 1/8. Pack Tactics."
+  },
+  "Scout": {
+    "hp": 16, "ac": 13, "speed": "30 ft.",
+    "str": 11, "dex": 14, "con": 12, "int": 11, "wis": 13, "cha": 11,
+    "saves": {},
+    "skills": {"Nature": 4, "Perception": 5, "Stealth": 6, "Survival": 5},
+    "cr": "1/2",
+    "attacks": [
+      {"label": "Shortsword", "atk": 4, "reach": "5 ft.", "dice": "1d6+2", "type": "piercing", "note": ""},
+      {"label": "Longbow", "atk": 4, "reach": "150/600 ft.", "dice": "1d8+2", "type": "piercing", "note": ""}
+    ],
+    "traits": ["Multiattack: two Shortsword or two Longbow attacks per turn.",
+               "Keen Hearing and Sight: advantage on Perception checks."],
+    "notes": "CR 1/2. Keen senses. Multiattack."
+  },
+  "Cultist_of_Mars": {
+    "hp": 9, "ac": 12, "speed": "30 ft.",
+    "str": 11, "dex": 12, "con": 10, "int": 10, "wis": 11, "cha": 10,
+    "saves": {},
+    "skills": {"Deception": 2, "Religion": 2},
+    "cr": "1/8",
+    "attacks": [
+      {"label": "Scimitar", "atk": 3, "reach": "5 ft.", "dice": "1d6+1", "type": "slashing", "note": ""}
+    ],
+    "traits": ["Dark Devotion: advantage on saves vs. charmed and frightened."],
+    "notes": "CR 1/8. Dark Devotion (adv. vs. charmed/frightened)."
+  },
+  "Cult_Mars_Fanatic": {
+    "hp": 33, "ac": 13, "speed": "30 ft.",
+    "str": 11, "dex": 14, "con": 12, "int": 10, "wis": 13, "cha": 14,
+    "saves": {},
+    "skills": {"Deception": 4, "Persuasion": 4, "Religion": 4},
+    "cr": "2",
+    "attacks": [
+      {"label": "Multiattack (Dagger x2)", "atk": 4, "reach": "5 ft. or 20/60 ft.", "dice": "1d4+2", "type": "piercing", "note": "Two dagger attacks per turn."}
+    ],
+    "traits": ["Dark Devotion: advantage on saves vs. charmed and frightened.",
+               "Spellcasting (WIS DC 12): Command (2/day), Inflict Wounds (2/day)."],
+    "notes": "CR 2. Spellcaster. Dark Devotion."
+  },
+  "Praetorian_Guard": {
+    "hp": 58, "ac": 18, "speed": "30 ft.",
+    "str": 16, "dex": 13, "con": 14, "int": 10, "wis": 12, "cha": 10,
+    "saves": {"STR": 5, "CON": 4},
+    "skills": {"Athletics": 5, "Perception": 3},
+    "cr": "3",
+    "attacks": [
+      {"label": "Gladius", "atk": 5, "reach": "5 ft.", "dice": "1d8+3", "type": "slashing", "note": ""},
+      {"label": "Pilum", "atk": 5, "reach": "30/120 ft.", "dice": "1d6+3", "type": "piercing", "note": ""}
+    ],
+    "traits": ["Multiattack: two Gladius attacks or two Pilum attacks per turn.",
+               "Shield Wall: while adjacent to an ally with a shield, AC +1 and Dex saves +1 (included in stat block)."],
+    "notes": "CR 3. Elite Roman guard. Multiattack."
+  },
+  "Legionary_(Milites)": {
+    "hp": 11, "ac": 16, "speed": "30 ft.",
+    "str": 13, "dex": 12, "con": 12, "int": 10, "wis": 11, "cha": 10,
+    "saves": {},
+    "skills": {"Perception": 1},
+    "cr": "1/8",
+    "attacks": [
+      {"label": "Gladius", "atk": 3, "reach": "5 ft.", "dice": "1d6+1", "type": "slashing", "note": ""},
+      {"label": "Pilum", "atk": 3, "reach": "30/120 ft.", "dice": "1d4+1", "type": "piercing", "note": ""}
+    ],
+    "traits": [],
+    "notes": "CR 1/8. Standard Roman soldier."
+  },
+  "Draugar": {
+    "hp": 52, "ac": 14, "speed": "30 ft.",
+    "str": 19, "dex": 9, "con": 18, "int": 5, "wis": 10, "cha": 5,
+    "saves": {"WIS": 2},
+    "skills": {},
+    "cr": "3",
+    "immunities": "Cold, poison; exhaustion, poisoned, charmed, frightened",
+    "resistances": "Necrotic; bludgeoning/piercing/slashing from non-magical weapons",
+    "attacks": [
+      {"label": "Greataxe", "atk": 6, "reach": "5 ft.", "dice": "1d12+4", "type": "slashing", "note": ""},
+      {"label": "Crushing Grip", "atk": 6, "reach": "5 ft.", "dice": "2d8+4", "type": "bludgeoning",
+       "note": "Target is grappled (escape DC 14). While grappled: DC 13 CON save or stunned until end of its next turn."}
+    ],
+    "traits": ["Multiattack: one Greataxe and one Crushing Grip per turn.",
+               "Undead Resilience: immune to frightened and charmed.",
+               "Ghostly Return (1/day): if destroyed, returns at next sunset unless its burial mound is consecrated."],
+    "notes": "CR 3 (custom). Norse revenant. Stunning grip. Returns unless burial mound consecrated."
+  },
+  "Haugbui": {
+    "hp": 32, "ac": 12, "speed": "30 ft.",
+    "str": 16, "dex": 10, "con": 14, "int": 6, "wis": 12, "cha": 5,
+    "saves": {},
+    "skills": {},
+    "cr": "2",
+    "immunities": "Cold, poison; poisoned, exhaustion",
+    "resistances": "Necrotic",
+    "attacks": [
+      {"label": "Slam", "atk": 5, "reach": "5 ft.", "dice": "2d6+3", "type": "bludgeoning", "note": ""},
+      {"label": "Grave Mist (Recharge 5-6)", "atk": 0, "reach": "20 ft. cone", "dice": "3d8", "type": "necrotic",
+       "note": "DC 12 CON save for half. Living creatures also aged 1d4 years on a failed save."}
+    ],
+    "traits": ["Mound Bound: can only leave its burial mound at night; forced back at sunrise.",
+               "Treasure Sense: knows the location of valuables buried within 1 mile."],
+    "notes": "CR 2 (custom). Mound-bound. Grave Mist ages targets. Returns to mound at sunrise."
+  },
+  "Alp": {
+    "hp": 27, "ac": 13, "speed": "30 ft., fly 60 ft.",
+    "str": 8, "dex": 16, "con": 12, "int": 12, "wis": 14, "cha": 16,
+    "saves": {"WIS": 4},
+    "skills": {"Perception": 4, "Stealth": 5},
+    "cr": "2",
+    "resistances": "Bludgeoning/piercing/slashing from non-silvered weapons",
+    "attacks": [
+      {"label": "Claw", "atk": 5, "reach": "5 ft.", "dice": "1d6+3", "type": "slashing", "note": ""},
+      {"label": "Nightmare Crush", "atk": 0, "reach": "touch", "dice": "2d6", "type": "psychic",
+       "note": "DC 13 WIS save or target falls into nightmare sleep. Paralysed, takes 2d6 psychic damage at start of each turn. Awakens if takes damage or ally spends action to rouse them."}
+    ],
+    "traits": ["Shapechanger: can polymorph into a small animal or back. Stats unchanged.",
+               "Nightmare Entry: while target is sleeping, can enter dreams. Nightmare Crush used without breaking stealth.",
+               "Sunlight Sensitivity: disadvantage on attack rolls in direct sunlight."],
+    "notes": "CR 2 (custom). Germanic nightmare spirit. Nightmare Crush paralysis. Shapechanger. Sunlight weakness."
+  },
+  "Nix": {
+    "hp": 32, "ac": 13, "speed": "30 ft., swim 50 ft.",
+    "str": 12, "dex": 16, "con": 14, "int": 13, "wis": 12, "cha": 18,
+    "saves": {"CHA": 6},
+    "skills": {"Deception": 6, "Perception": 3, "Performance": 6, "Stealth": 5},
+    "cr": "2",
+    "resistances": "Cold; bludgeoning/piercing/slashing from non-silvered weapons",
+    "attacks": [
+      {"label": "Claws", "atk": 5, "reach": "5 ft.", "dice": "1d6+3", "type": "slashing", "note": ""},
+      {"label": "Water Lure", "atk": 0, "reach": "30 ft.", "dice": "0", "type": "utility",
+       "note": "DC 14 WIS save or charmed and compelled toward the nearest body of water. Repeats save when harmed."}
+    ],
+    "traits": ["Amphibious: breathes air and water.",
+               "Shapechanger: can take humanoid form (usually alluring youth). Stats unchanged.",
+               "Water Lure: lures victims toward water where they risk drowning.",
+               "Iron Weakness: takes 2d6 extra damage from cold iron weapons."],
+    "notes": "CR 2 (custom). Norse water spirit. Lures victims to drown. Shapechanger. Cold iron weakness."
+  },
+  "Myling": {
+    "hp": 13, "ac": 11, "speed": "0 ft., fly 40 ft. (hover)",
+    "str": 7, "dex": 13, "con": 10, "int": 7, "wis": 10, "cha": 14,
+    "saves": {},
+    "skills": {"Stealth": 3},
+    "cr": "1/2",
+    "immunities": "Cold, poison; poisoned, exhaustion, grappled",
+    "resistances": "Bludgeoning/piercing/slashing from non-magical weapons",
+    "attacks": [
+      {"label": "Bone Chill Touch", "atk": 3, "reach": "5 ft.", "dice": "1d8", "type": "cold",
+       "note": "DC 11 CON save or speed reduced by 10 ft. until end of next turn."},
+      {"label": "Wail of the Lost (Recharge 5-6)", "atk": 0, "reach": "30 ft. radius", "dice": "3d6", "type": "psychic",
+       "note": "DC 12 WIS save for half. On fail: frightened until end of next turn."}
+    ],
+    "traits": ["Incorporeal: can move through creatures and objects.",
+               "Tragic Compulsion: compelled to find its place of birth or death; will not leave the area."],
+    "notes": "CR 1/2 (custom). Nordic child ghost. Wail causes fear. Cannot leave its haunting ground."
+  },
+  "Vaettir": {
+    "hp": 19, "ac": 12, "speed": "0 ft., fly 40 ft. (hover)",
+    "str": 6, "dex": 15, "con": 12, "int": 8, "wis": 10, "cha": 10,
+    "saves": {},
+    "skills": {"Stealth": 4},
+    "cr": "1/4",
+    "immunities": "Poison; poisoned, exhaustion",
+    "resistances": "Bludgeoning/piercing/slashing from non-magical weapons",
+    "attacks": [
+      {"label": "Spirit Touch", "atk": 4, "reach": "5 ft.", "dice": "1d6", "type": "necrotic",
+       "note": "DC 11 WIS save or frightened until end of next turn."}
+    ],
+    "traits": ["Threshold Guardian: attacks with advantage on any creature that crosses a threshold (doorway, bridge, boundary) it guards.",
+               "Land Bond: bound to a specific location. If it dies here, reforms in 1d4 days unless the land is consecrated."],
+    "notes": "CR 1/4 (custom). Norse nature spirit turned malevolent. Guards thresholds. Reforms unless land consecrated."
+  },
+  "Larvae": {
+    "hp": 9, "ac": 9, "speed": "20 ft.",
+    "str": 9, "dex": 9, "con": 10, "int": 6, "wis": 10, "cha": 3,
+    "saves": {},
+    "skills": {},
+    "cr": "0",
+    "immunities": "Poison; poisoned, exhaustion",
+    "attacks": [
+      {"label": "Bite", "atk": 1, "reach": "5 ft.", "dice": "1d4", "type": "piercing",
+       "note": "Target must DC 11 CON save or contract Larvae Pestilence (disadvantage on CON saves for 24 hrs)."}
+    ],
+    "traits": ["Swarm Frenzy: when 3+ larvae are within 5 ft. of a target, their attacks deal +1d4 necrotic damage.",
+               "Roman Lore: larvae are the restless dead who died violently or without proper burial rites. Appeasement rituals (DC 13 Religion) drive them off."],
+    "notes": "CR 0 (custom). Roman restless dead. Diseasing bite. Rituals drive them off."
+  },
+  "Genius_Loci": {
+    "hp": 44, "ac": 13, "speed": "0 ft. (fixed to location)",
+    "str": 6, "dex": 16, "con": 14, "int": 14, "wis": 18, "cha": 14,
+    "saves": {"WIS": 6, "CHA": 4},
+    "skills": {"History": 6, "Perception": 6},
+    "cr": "3",
+    "immunities": "Poison; poisoned, exhaustion, grappled, restrained",
+    "resistances": "Psychic; bludgeoning/piercing/slashing from non-magical weapons",
+    "attacks": [
+      {"label": "Psychic Presence", "atk": 6, "reach": "30 ft.", "dice": "2d8+3", "type": "psychic",
+       "note": "DC 14 WIS save for half. On fail: target also has disadvantage on INT, WIS, CHA checks until end of next turn."},
+      {"label": "Binding Gaze (Recharge 5-6)", "atk": 0, "reach": "60 ft.", "dice": "0", "type": "utility",
+       "note": "One creature must DC 15 WIS save or be paralysed for 1 minute. Repeats save at end of each turn."}
+    ],
+    "traits": ["Incorporeal (fixed): cannot be moved or grappled; occupies its bonded location.",
+               "Sense Intentions: knows the intention (hostile/neutral/friendly) of any creature within 30 ft.",
+               "Propitiation: a DC 13 Religion check with an offering (wine, blood, grain) ends hostility and grants a blessing (+1d4 to one ability check within 24 hrs)."],
+    "notes": "CR 3 (custom). Roman place spirit. Paralysing gaze. Propitiation ritual ends hostility."
+  },
+  "Strix": {
+    "hp": 10, "ac": 11, "speed": "10 ft., fly 40 ft.",
+    "str": 4, "dex": 13, "con": 10, "int": 2, "wis": 12, "cha": 5,
+    "saves": {},
+    "skills": {"Perception": 3, "Stealth": 3},
+    "cr": "1/4",
+    "attacks": [
+      {"label": "Blood Drain", "atk": 3, "reach": "5 ft.", "dice": "1d4+1", "type": "piercing",
+       "note": "Target's max HP reduced by damage dealt until they complete a long rest."},
+      {"label": "Screech (Recharge 5-6)", "atk": 0, "reach": "20 ft. radius", "dice": "0", "type": "utility",
+       "note": "DC 12 CON save or stunned until end of next turn. All creatures within range (including allies)."}
+    ],
+    "traits": ["Keen Hearing and Smell: advantage on Perception checks using those senses.",
+               "Pack Tactics: advantage on attacks if an ally is adjacent to target.",
+               "Roman Omen: Romans treat this creature as a dire omen (DC 13 Religion to recognise)."],
+    "notes": "CR 1/4 (custom). Roman blood-drinking owl spirit. Blood Drain reduces max HP. Screech stuns."
+  },
+  "Grunwald_(Foederatus)": {
+    "hp": 67, "ac": 13, "speed": "30 ft.",
+    "str": 17, "dex": 12, "con": 17, "int": 10, "wis": 12, "cha": 10,
+    "saves": {},
+    "skills": {"Athletics": 5, "Perception": 3, "Survival": 3},
+    "cr": "2",
+    "attacks": [
+      {"label": "Framea (Spear)", "atk": 5, "reach": "5 ft. or 20/60 ft.", "dice": "1d6+3", "type": "piercing", "note": ""},
+      {"label": "Seax (Knife)", "atk": 5, "reach": "5 ft.", "dice": "1d4+3", "type": "piercing", "note": ""}
+    ],
+    "traits": ["Reckless Attack: can give all attacks this turn advantage, but attacks against it also have advantage.",
+               "Germanic Fighter: proficient with framea, seax, and francisca."],
+    "notes": "CR 2. Allied Germanic warrior. Reckless Attack. Treats Romans as cautious allies."
+  },
+  "Flavius_Martis_(Flamen_Martialis)": {
+    "hp": 27, "ac": 13, "speed": "30 ft.",
+    "str": 10, "dex": 13, "con": 12, "int": 14, "wis": 17, "cha": 14,
+    "saves": {"WIS": 5, "CHA": 4},
+    "skills": {"History": 4, "Insight": 5, "Persuasion": 4, "Religion": 6},
+    "cr": "2",
+    "attacks": [
+      {"label": "Sacred Flame", "atk": 0, "reach": "60 ft.", "dice": "2d8", "type": "radiant",
+       "note": "DC 14 DEX save for half. No cover benefit."},
+      {"label": "Guiding Bolt", "atk": 5, "reach": "120 ft.", "dice": "4d6", "type": "radiant",
+       "note": "Next attack roll vs. this target has advantage."}
+    ],
+    "traits": ["Spellcasting (WIS DC 13, +5 to hit): Thaumaturgy (at will), Guidance (at will), Sacred Flame (at will), Bless (2/day), Healing Word (2/day), Guiding Bolt (2/day), Spirit Guardians (1/day).",
+               "War Priest (3/day): after attacking, make one weapon attack as a bonus action."],
+    "notes": "CR 2. Priest of Mars. Spellcasting WIS. Spirit Guardians, Bless, healing."
+  },
+  "Brennus": {
+    "hp": 27, "ac": 12, "speed": "30 ft.",
+    "str": 14, "dex": 12, "con": 14, "int": 12, "wis": 14, "cha": 16,
+    "saves": {},
+    "skills": {"Deception": 5, "Insight": 4, "Perception": 4, "Persuasion": 5},
+    "cr": "1",
+    "attacks": [
+      {"label": "Club", "atk": 4, "reach": "5 ft.", "dice": "1d4+2", "type": "bludgeoning", "note": ""},
+      {"label": "Thrown Bottle", "atk": 4, "reach": "20/60 ft.", "dice": "1d4", "type": "bludgeoning", "note": ""}
+    ],
+    "traits": ["Information Network: has advantage on Insight checks to detect lies; once per day can 'know' a rumour about any NPC in the fort or vicus.",
+               "Tavern Keeper: friendly NPCs within 10 ft. have advantage on Persuasion checks when Brennus is present."],
+    "notes": "CR 1. Germanic tavern keeper. Information network. Friendly but self-interested."
+  },
+  "Quartus": {
+    "hp": 32, "ac": 12, "speed": "30 ft.",
+    "str": 14, "dex": 12, "con": 13, "int": 14, "wis": 12, "cha": 10,
+    "saves": {},
+    "skills": {"Investigation": 4, "Persuasion": 2, "Sleight of Hand": 3},
+    "cr": "1",
+    "attacks": [
+      {"label": "Club", "atk": 4, "reach": "5 ft.", "dice": "1d4+2", "type": "bludgeoning", "note": ""},
+      {"label": "Dagger", "atk": 3, "reach": "5 ft.", "dice": "1d4+1", "type": "piercing", "note": ""}
+    ],
+    "traits": ["Supply Master: can requisition or deny any mundane item within the camp (no roll required, but may demand favours).",
+               "Ledger Memory: advantage on all checks related to prices, inventories, and supply records."],
+    "notes": "CR 1. Quartermaster. Controls camp supplies. Favours economy."
+  },
+  "Rufus_the_Smith": {
+    "hp": 52, "ac": 12, "speed": "30 ft.",
+    "str": 18, "dex": 10, "con": 16, "int": 10, "wis": 12, "cha": 10,
+    "saves": {},
+    "skills": {"Athletics": 6},
+    "cr": "2",
+    "attacks": [
+      {"label": "Smith's Hammer", "atk": 6, "reach": "5 ft.", "dice": "1d8+4", "type": "bludgeoning", "note": ""},
+      {"label": "Tongs (Grapple)", "atk": 6, "reach": "5 ft.", "dice": "1d4+4", "type": "bludgeoning",
+       "note": "Target is also grappled (escape DC 14)."}
+    ],
+    "traits": ["Master Smith: can repair any mundane weapon or armour given 1 hour and raw materials.",
+               "Arena Past: once per turn, when hit by a melee attack, can halve the damage (reaction)."],
+    "notes": "CR 2. Former gladiator, now smith. Powerful melee. Halve damage reaction."
+  },
+  "Paterculus": {
+    "hp": 16, "ac": 11, "speed": "30 ft.",
+    "str": 9, "dex": 12, "con": 12, "int": 12, "wis": 14, "cha": 11,
+    "saves": {},
+    "skills": {"History": 3, "Medicine": 4, "Religion": 3},
+    "cr": "1/4",
+    "attacks": [
+      {"label": "Sacred Flame", "atk": 0, "reach": "60 ft.", "dice": "1d8", "type": "radiant", "note": "DC 12 DEX save for half."},
+      {"label": "Mace", "atk": 1, "reach": "5 ft.", "dice": "1d6-1", "type": "bludgeoning", "note": ""}
+    ],
+    "traits": ["Spellcasting (WIS DC 12): Sacred Flame (at will), Guidance (at will), Healing Word (2/day).",
+               "Augur's Eye: advantage on Religion checks related to Roman omens and divination."],
+    "notes": "CR 1/4. Augur's assistant. Minor spellcasting. Omen expertise."
+  },
+  "Aemilia_Secunda_(Frumentarius)": {
+    "hp": 27, "ac": 13, "speed": "30 ft.",
+    "str": 10, "dex": 16, "con": 12, "int": 14, "wis": 13, "cha": 15,
+    "saves": {"DEX": 5, "INT": 4},
+    "skills": {"Deception": 6, "Insight": 5, "Investigation": 4, "Perception": 5, "Stealth": 5},
+    "cr": "1",
+    "attacks": [
+      {"label": "Dagger", "atk": 5, "reach": "5 ft. or 20/60 ft.", "dice": "1d4+3", "type": "piercing", "note": ""},
+      {"label": "Hand Crossbow", "atk": 5, "reach": "30/120 ft.", "dice": "1d6+3", "type": "piercing", "note": ""}
+    ],
+    "traits": ["Cunning Action: can Dash, Disengage, or Hide as a bonus action.",
+               "Evasion: when making a DEX save for half damage, takes no damage on success and half on failure.",
+               "Imperial Intelligence: can send coded messages to Rome once per week."],
+    "notes": "CR 1. Frumentarius agent. Cunning Action. Evasion. Imperial spy network."
+  },
+  "Marcus_Sextius_(Tesserarius)": {
+    "hp": 32, "ac": 15, "speed": "30 ft.",
+    "str": 14, "dex": 12, "con": 14, "int": 12, "wis": 13, "cha": 12,
+    "saves": {"STR": 4, "CON": 4},
+    "skills": {"Athletics": 4, "Perception": 3},
+    "cr": "1",
+    "attacks": [
+      {"label": "Gladius", "atk": 4, "reach": "5 ft.", "dice": "1d6+2", "type": "slashing", "note": ""},
+      {"label": "Pilum", "atk": 3, "reach": "30/120 ft.", "dice": "1d4+2", "type": "piercing", "note": ""}
+    ],
+    "traits": ["Watchword Authority: can issue the day's watchword; any soldier who hears it must make DC 12 WIS save or feel compelled to answer truthfully about their duties.",
+               "NCO Discipline: allies within 10 ft. have advantage on saves vs. frightened."],
+    "notes": "CR 1. Watch NCO. Issues watchwords. Rally vs. fear."
+  },
+  "Lucius_Calvus_(Signifer)": {
+    "hp": 26, "ac": 15, "speed": "30 ft.",
+    "str": 14, "dex": 11, "con": 13, "int": 10, "wis": 12, "cha": 13,
+    "saves": {},
+    "skills": {"Athletics": 4, "History": 2, "Perception": 3},
+    "cr": "1",
+    "attacks": [
+      {"label": "Gladius", "atk": 4, "reach": "5 ft.", "dice": "1d6+2", "type": "slashing", "note": ""},
+      {"label": "Standard Strike (Reach)", "atk": 4, "reach": "10 ft.", "dice": "1d6+2", "type": "bludgeoning",
+       "note": "Uses the signum (standard) as a weapon."}
+    ],
+    "traits": ["Rally the Legion (1/day): all friendly creatures within 30 ft. gain advantage on their next attack roll.",
+               "Pay Master: controls soldiers' wages; can withhold or grant pay as leverage."],
+    "notes": "CR 1. Standard-bearer. Rally ability 1/day. Controls pay."
+  },
+  "Publius_Arma_(Custos_Armorum)": {
+    "hp": 22, "ac": 14, "speed": "30 ft.",
+    "str": 13, "dex": 14, "con": 12, "int": 13, "wis": 11, "cha": 10,
+    "saves": {},
+    "skills": {"Athletics": 3, "Investigation": 3},
+    "cr": "1/2",
+    "attacks": [
+      {"label": "Shortsword", "atk": 4, "reach": "5 ft.", "dice": "1d6+2", "type": "piercing", "note": ""},
+      {"label": "Crossbow", "atk": 4, "reach": "80/320 ft.", "dice": "1d8+2", "type": "piercing", "note": ""}
+    ],
+    "traits": ["Armory Access: can issue or refuse weapons and armour from the armory (one per session as leverage).",
+               "Equipment Expert: advantage on checks to identify, repair, or evaluate weapons/armour."],
+    "notes": "CR 1/2. Weapons master. Controls armory access."
+  },
+  "Quintus_Caelius_(Librarius)": {
+    "hp": 9, "ac": 11, "speed": "30 ft.",
+    "str": 8, "dex": 12, "con": 10, "int": 16, "wis": 13, "cha": 12,
+    "saves": {"INT": 5, "WIS": 3},
+    "skills": {"History": 5, "Investigation": 5, "Persuasion": 3},
+    "cr": "1/8",
+    "attacks": [
+      {"label": "Dagger", "atk": 3, "reach": "5 ft.", "dice": "1d4+1", "type": "piercing", "note": ""}
+    ],
+    "traits": ["Scribe's Memory: can recall any document he has read with perfect accuracy.",
+               "Records Keeper: access to all fort payrolls, letters, and supply manifests. Forging his seal is DC 18."],
+    "notes": "CR 1/8. Fort scribe. Perfect recall. Controls official records."
+  },
+  "Titus_Vindex_(Capsarius)": {
+    "hp": 22, "ac": 11, "speed": "30 ft.",
+    "str": 10, "dex": 12, "con": 12, "int": 14, "wis": 16, "cha": 12,
+    "saves": {"WIS": 5},
+    "skills": {"Medicine": 7, "Nature": 4},
+    "cr": "1/2",
+    "attacks": [
+      {"label": "Scalpel", "atk": 3, "reach": "5 ft.", "dice": "1d4+1", "type": "slashing", "note": ""},
+      {"label": "Field Bandage (action)", "atk": 0, "reach": "touch", "dice": "1d6+3", "type": "healing",
+       "note": "Stabilise a dying creature or restore 1d6+3 HP to a creature at 0 HP. Uses medical supplies."}
+    ],
+    "traits": ["Combat Medic: stabilising a dying creature is a bonus action (not an action).",
+               "Herb Lore: can identify and apply herbs for natural cures. Advantage on Medicine and Nature checks in Roman frontier terrain."],
+    "notes": "CR 1/2. Field medic. Bonus action stabilise. Herb expertise."
+  },
+  "Aquilifer_(Vacant_Metellus_Dead)": {
+    "hp": 0, "ac": 18, "speed": "0 ft.",
+    "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0,
+    "saves": {},
+    "skills": {},
+    "cr": "0",
+    "attacks": [],
+    "traits": ["This token represents the vacant Aquilifer role. Metellus, the former bearer, is dead.",
+               "The Aquila (eagle standard) is missing — whoever finds and returns it gains 2 commendationes.",
+               "Any PC who assumes this role gains: Inspiring Presence (allies within 30 ft. +1 to attack rolls while standard is visible)."],
+    "notes": "VACANT. Metellus died in Session 1. The Aquila is missing. Reclaiming it is a campaign objective."
+  }
+}
