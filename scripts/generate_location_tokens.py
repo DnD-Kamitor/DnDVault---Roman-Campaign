@@ -227,15 +227,30 @@ def generate_token(sheet_path):
 
 
 def main():
+    global OUTPUT_DIR
+
+    args = sys.argv[1:]
+    # --output-dir <path> overrides OUTPUT_DIR
+    if "--output-dir" in args:
+        idx = args.index("--output-dir")
+        OUTPUT_DIR = Path(args[idx + 1])
+        args = args[:idx] + args[idx + 2:]
+    # --input-dir <path> overrides LOCS_DIR
+    input_dir = LOCS_DIR
+    if "--input-dir" in args:
+        idx = args.index("--input-dir")
+        input_dir = Path(args[idx + 1])
+        args = args[:idx] + args[idx + 2:]
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    if len(sys.argv) > 1:
-        sheets = [Path(p) for p in sys.argv[1:]]
+    if args:
+        sheets = [Path(p) for p in args]
     else:
-        sheets = sorted(p for p in LOCS_DIR.glob("*.json")
+        sheets = sorted(p for p in input_dir.glob("*.json")
                         if not p.name.startswith("_"))
     if not sheets:
-        print(f"No location files found in {LOCS_DIR}")
+        print(f"No location files found in {input_dir}")
         return
 
     print(f"Generating location tokens -> {OUTPUT_DIR}")

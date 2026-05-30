@@ -1,0 +1,8 @@
+{
+  "name": "Player Tracking Sheet",
+  "location_type": "handout",
+  "player_description": "Character name: _______________ Session: ___\n\nCorruption stage: 0 / 1 / 2 / 3 / 4 / 5\nDivine standing: Favored / Neutral / Cursed\nGod: _______________\n\nNPCs met this session:\nName | Role / Faction | Status or Debt\n\nKey decision + why:\n\nOne thing learned:\n\nCorruption change: + ___ / - ___\n\nFatum: _______________\nIs it closer to being tested? Yes / No",
+  "gm_notes": "Print one per player per session. Works as insert inside journal or character sheet. The 'Fatum' field is the most important — players who track how their personal arc is progressing will feel the campaign's shape. Remind players to fill this in while the session is fresh, not a week later.",
+  "token_color": "#4a4a5c",
+  "session": 0
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Handout 9: Siege Day Order of Battle",
+  "location_type": "handout",
+  "player_description": "FORT VINDOLANDA — SIEGE DAY ORDERS\nIssued by Centurion Varro, verified by Cassia.\n\nTRUMPET CODES\n- Two short: fire in the vicus\n- Long + short: gate breach\n- Six rapid: shrine summons (Mars's demand)\n\nWATCH ROTATIONS\n- North wall: Contubernia I-III (veterans)\n- South gate: Auxiliaries under Optio Felicitus\n- Workshop cordon: Faber squad, on alert for saboteurs\n\nESCORT ROUTE\nPrincipia → Hidden stair → Sunken armory → Choking hall → Elder stair\n\nRESOURCE STATUS\n- Grain: 9 days if rations hold, 6 if granary burns\n- Water: contaminated at north gate well (boil)\n- Civilians sheltered in vicus shrine (Mercury)\n\nNOTES\n- Three volunteers must kneel when the stair opens. Cassia requires witnesses.\n- Vercingetorix's runners offer diversion at south ditch at dusk.\n- Tribune Lucius requests to accompany escort (motive unclear).",
+  "gm_notes": "WHEN: Session 4, Scene 2, when the party plans the spear procession.\nHOW: Folded sheet with diagrammatic fort layout. Bold ink for trumpet codes.\nWHAT IT REVEALS: The fort is on knife-edge logistics. Grain is the countdown. Every trumpet signal is a real event. The escort route is known to only a few — if there is a leak, the party can deduce who knew by who was positioned along the route. Tribune Lucius requesting escort access is the Session 4 red flag. Resource tracking: if the granary burned in Session 3 (Handout 8 not intercepted), change '9 days' to '6 days' and '6 if granary burns' to '3 days (already burning).'",
+  "token_color": "#5c3a1e",
+  "session": 4
+}
