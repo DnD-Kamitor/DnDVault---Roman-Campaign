@@ -277,38 +277,145 @@ def _macro_entry(idx, label, group, color, command):
     )
 
 
+def _load_creature_stats():
+    """Load scripts/creature_stats.json if it exists."""
+    p = SCRIPTS_DIR / "creature_stats.json"
+    if p.exists():
+        return json.load(open(p))
+    return {}
+
+CREATURE_STATS = _load_creature_stats()
+
+
+def _npc_attack_cmd(atk, ac, hp, traits):
+    """Generate /me [e:] attack macro — works in untrusted token context."""
+    label    = atk.get("label", "Attack")
+    bonus    = atk.get("atk", 2)
+    dice     = atk.get("dice", "1d6")
+    dmg_type = atk.get("type", "damage")
+    note     = atk.get("note", "")
+    reach    = atk.get("reach", "5 ft.")
+    sign     = "+" if bonus >= 0 else ""
+
+    # Split dice into base + modifier for crit doubling (e.g. "1d12+3" → "1d12", "+3")
+    parts = dice.replace(" ", "")
+    if "+" in parts:
+        base_dice, mod_str = parts.rsplit("+", 1)
+        crit_dice = f"({base_dice})+({base_dice})+{mod_str}"
+    elif "-" in parts and not parts.startswith("-"):
+        base_dice, mod_str = parts.rsplit("-", 1)
+        crit_dice = f"({base_dice})+({base_dice})-{mod_str}"
+    else:
+        base_dice = parts
+        crit_dice = f"({base_dice})+({base_dice})"
+
+    trait_text = "  ".join(traits) if traits else ""
+
+    cmd = (
+        f"[h: atkRoll = 1d20]\n"
+        f"[h: isCrit = (atkRoll == 20)]\n"
+        f"/me [r, if(isCrit == 1): \"<b style='color:#e74c3c'>CRITICAL HIT</b> with\"; \"attacks with\"] "
+        f"<b>{label}</b> ({reach}) &mdash; "
+        f"roll: <b>[r: atkRoll {sign}{bonus}]</b> vs AC {ac} "
+        f"[if(isCrit == 1): \"| <b>CRIT dmg: [e: {crit_dice}]</b> {dmg_type}\"; "
+        f"\"| dmg: <b>[e: {dice}]</b> {dmg_type}\"]"
+    )
+    if note:
+        cmd += f"\n[r: \" &mdash; {note}\"]"
+    if trait_text:
+        cmd += f"\n[r: \"<i>{trait_text}</i>\"]"
+    return cmd
+
+
+def _stats_key(npc_name):
+    """Try to match an NPC name to a creature_stats.json key."""
+    # Direct match after normalising spaces/dashes
+    key = npc_name.replace(" ", "_").replace("-", "_")
+    if key in CREATURE_STATS:
+        return key
+    # Partial: first word
+    first = npc_name.split()[0]
+    for k in CREATURE_STATS:
+        if k.startswith(first):
+            return k
+    return None
+
+
 def build_npc_macros_xml(npc):
     """Build macroPropertiesMap for an NPC token.
 
-    Includes:
-    - Standard token macros (Roll Initiative, End Turn, etc.) from standard_token_macros.xml
-    - Attack macro from Maptool/macros/monsters/{macro_file} if present
+    Attack macros use /me [e:] format — no dialog(), works in untrusted context.
+    Data source: scripts/creature_stats.json (preferred) or NPC JSON ability scores.
     """
-    # Load standard macros
+    # Standard macros (Roll Initiative, End Turn, etc.)
+    standard_entries = ""
     if MACROS_XML.exists():
-        raw   = MACROS_XML.read_text()
-        inner = raw.strip()
+        raw   = MACROS_XML.read_text().strip()
+        inner = raw
         if inner.startswith("<macroPropertiesMap>"):
             inner = inner[len("<macroPropertiesMap>"):]
         if inner.endswith("</macroPropertiesMap>"):
             inner = inner[:-len("</macroPropertiesMap>")]
         standard_entries = inner.strip()
+
+    attack_entries = []
+    idx = 100
+
+    # Look up structured attack data
+    stats_key = _stats_key(npc["name"])
+    stats = CREATURE_STATS.get(stats_key, {}) if stats_key else {}
+    attacks = stats.get("attacks", [])
+    traits  = stats.get("traits", [])
+    ac  = npc.get("ac", stats.get("ac", "?"))
+    hp  = npc.get("hp", stats.get("hp", "?"))
+
+    if attacks:
+        for atk in attacks:
+            cmd   = _npc_attack_cmd(atk, ac, hp, traits if atk == attacks[-1] else [])
+            label = atk.get("label", "Attack")
+            attack_entries.append(_macro_entry(idx, label, "Combat", "red", cmd))
+            idx  += 1
     else:
-        standard_entries = ""
+        # Fallback: generate generic attack from ability scores
+        scores = npc.get("ability_scores", {})
+        str_mod = (scores.get("STR", 10) - 10) // 2
+        dex_mod = (scores.get("DEX", 10) - 10) // 2
+        cr_str  = str(npc.get("cr", "1"))
+        pb = 2 if "/" in cr_str or float(cr_str.replace("/","")) < 5 else 3
+        atk_bonus = max(str_mod, dex_mod) + pb
+        sign = "+" if atk_bonus >= 0 else ""
+        mod_val = max(str_mod, dex_mod)
+        generic_atk = {
+            "label": "Weapon Attack",
+            "atk": atk_bonus,
+            "reach": "5 ft.",
+            "dice": f"1d8{'+' if mod_val >= 0 else ''}{mod_val}",
+            "type": "damage",
+            "note": npc.get("notes", "")[:80]
+        }
+        cmd = _npc_attack_cmd(generic_atk, ac, hp, traits)
+        attack_entries.append(_macro_entry(idx, "Attack", "Combat", "red", cmd))
+        idx += 1
 
-    # Load attack macro file if specified
-    macro_file = npc.get("macro_file", "").strip()
-    attack_entry = ""
-    if macro_file:
-        macro_path = MACROS_DIR / macro_file
-        if macro_path.exists():
-            mts_content = macro_path.read_text()
-            label = "Attack"
-            attack_entry = _macro_entry(100, label, "Combat", "red", mts_content)
-        else:
-            print(f"    WARNING: macro file not found: {macro_path}")
+    # Info macro: stats summary
+    cr   = npc.get("cr", "?")
+    spd  = npc.get("speed", stats.get("speed", "30 ft."))
+    res  = npc.get("resistances", "")
+    imm  = npc.get("immunities", "")
+    sens = npc.get("senses", "")
+    info_lines = [f"AC {ac} | HP {hp} | Speed {spd} | CR {cr}"]
+    if res:  info_lines.append(f"Resistances: {res}")
+    if imm:  info_lines.append(f"Immunities: {imm}")
+    if sens: info_lines.append(f"Senses: {sens}")
+    for t in traits:
+        info_lines.append(t)
+    gm_notes = npc.get("gm_notes", "")
+    if gm_notes:
+        info_lines.append(f"GM: {gm_notes[:120]}")
+    info_cmd = "/me [r: \"" + " | ".join(info_lines[:3]) + "\"]"
+    attack_entries.append(_macro_entry(idx, "Stats", "Info", "blue", info_cmd))
 
-    parts = [standard_entries, attack_entry]
+    parts = [standard_entries] + attack_entries
     body  = "\n".join(p for p in parts if p)
     return f"<macroPropertiesMap>\n{body}\n</macroPropertiesMap>"
 
