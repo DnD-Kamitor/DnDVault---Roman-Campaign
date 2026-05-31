@@ -121,10 +121,16 @@ def make_content_xml(name: str, img_md5: str, layer: str, token_type: str,
 </net.rptools.maptool.model.Token>"""
 
 
-PROPERTIES_XML = """<?xml version="1.0" encoding="UTF-8"?>
-<net.rptools.maptool.model.TokenProperty_-PropertyList>
-  <version>1</version>
-</net.rptools.maptool.model.TokenProperty_-PropertyList>"""
+PROPERTIES_XML = """<map>
+  <entry>
+    <string>version</string>
+    <string>1.18.6</string>
+  </entry>
+  <entry>
+    <string>herolab</string>
+    <boolean>false</boolean>
+  </entry>
+</map>"""
 
 
 def write_rptok(slug: str, img_data: bytes, layer: str, token_type: str,
