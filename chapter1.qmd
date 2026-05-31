@@ -174,7 +174,7 @@ When Corvinus formally assigns the mission, he sets a wax tablet on the edge of 
 
 **How to run Varro in this scene:** He does not suggest destroying the spear. That would require knowing what it is, which is exactly his problem. His contribution is skepticism about the timeline: *"We don't know what sealed it or who is on the other side of that seal. Sending men down without understanding what they're walking into is how we lose the men."* Corvinus overrules him without anger: "Noted. Dismissed." Varro does not leave. He stays near the door, which Corvinus does not press.
 
-**Tribune Lucius Aurelius arrives mid-briefing.** He enters the principia without knocking, carrying a sealed dispatch satchel with an imperial crest. He is late twenties, composed, and makes no apology for interrupting. He hands Corvinus a sealed letter, waits while Corvinus reads it, and then takes a chair at the edge of the room without being invited to sit. He does not introduce himself to the party. He watches.
+**Tribune Lucius Valerius Maximus arrives mid-briefing.** He enters the principia without knocking, carrying a sealed dispatch satchel with an imperial crest. He is late twenties, composed, and makes no apology for interrupting. He hands Corvinus a sealed letter, waits while Corvinus reads it, and then takes a chair at the edge of the room without being invited to sit. He does not introduce himself to the party. He watches.
 
 If the party asks who he is: Corvinus introduces him flatly as "Tribune Lucius Valerius Maximus, attached to the Legate's office by order of Rome." Lucius nods but says nothing. He is there to observe the retrieval, not facilitate it. His presence visibly tightens Corvinus's posture: the Legate was already under pressure, but Lucius's arrival means someone in Rome is watching closely enough to send a representative. Cassia's expression when Lucius enters is worth noting: she has seen him before, and she does not look surprised.
 
@@ -334,7 +334,7 @@ The arrangement is too systematic for Germanic tribal practice. Tribes do not ca
 
 The shields are hung in a specific order by tribe symbol. A character who notes this arrangement and succeeds on DC 13 Intelligence can use it later in the Runic Corridor.
 
-**DM: the rune mapping encoded in the shield order.** The arrangement runs from the entrance to the archway, with Mars's wolf at the highest point above the far arch. Reading the order gives the Runic Corridor's safe row sequence: Marcomanni/boar corresponds to TIWAZ; Cherusci/three-fingered hand corresponds to HAGALAZ; Suebi/serpent corresponds to ISA; the mixed smaller offerings correspond to NAUDHIZ; Mars/wolf at the top corresponds to OTHALAN. A character who succeeds on DC 13 Intelligence and describes noting the order carries this information forward. Tell them: "The arrangement is deliberate. The shields are catalogued, and the order has structure." They do not know the rune correspondence yet -- that connection happens when they see the Runic Corridor floor.
+**DM: the rune mapping encoded in the shield order.** The arrangement runs from the entrance to the archway, with Mars's wolf at the highest point above the far arch. The hierarchy reads: Marcomanni/boar is TIWAZ; Cherusci/three-fingered hand is HAGALAZ; Suebi/serpent is ISA; the mixed offerings are NAUDHIZ; Mars/wolf at the apex is OTHALAN. The hierarchy tells you which rune is most significant: OTHALAN, Mars's own symbol, sits highest. In the Runic Corridor, the safe step in every row is the OTHALAN rune — the one that belongs to Mars. The shield order explains *why* OTHALAN is always safe: it is the dominant symbol, the one all offerings ultimately answer to. A character who succeeds on DC 13 Intelligence and describes noting the arrangement carries this forward. Tell them: "The shields are arranged by significance, with Mars's wolf above all of them." They will recognise OTHALAN in the corridor and understand it immediately.
 
 No combat here. The shields don't move. They watch.
 
@@ -473,6 +473,8 @@ Beyond the flooded gallery the passage opens into a wider chamber with a collaps
 > *Three stone benches line the far wall, each bearing the remains of what was once equipment: corroded, age-rotted, unidentifiable as anything specific. The chamber smells more strongly of organic decay than anywhere else in the vault.*
 
 **Encounter: 2 Ghouls (CR 1 each) + 1 Ghast (CR 2)**
+
+**4-player adjustment:** This encounter is Deadly for 4 players at Level 3 with depleted resources. If running with 4 players: either remove the Ghast (2 Ghouls only, Hard difficulty) or keep the Ghast but activate only 1 Ghoul until the party bloodied (staggered entry). The exit condition is always available: retreating through the flooded gallery is a legitimate play; the Shadows do not re-engage fleeing characters.
 
 The ghouls are beneath the rubble, dormant. They activate when the party is fully in the chamber, not when they first enter the archway. Give the party one round of looking around before the rubble shifts. The Ghast emerges last, from behind the stone benches where it has been pressed against the wall for centuries.
 
@@ -660,6 +662,8 @@ As the party enters fully, the guardian rises from behind the altar:
 >
 > *"The bargain was broken. Not by you. But by your kind. I am still bound. You are not."*
 
+*(DM: if multiple characters are tied for highest Wisdom, give the understanding to all tied characters -- it is thematically appropriate for both a Twilight Cleric and a Shadar-kai to hear a three-hundred-year-old guardian.)*
+
 <details>
 <summary><strong>What you know about the Wight and the spear</strong></summary>
 
@@ -699,6 +703,8 @@ The spear faces toward Rome, toward the vault entrance, toward whoever enters. T
 </details>
 
 **Combat Encounter: 1 Wight (CR 3) + 2 Shadows (CR 1/2 each)**
+
+**4-player adjustment:** This encounter is Deadly for 4 depleted players. If running with 4 players: start with only 1 Shadow visible; the second emerges from the wall only if the party ignores the exit condition and presses the attack. The exit condition (back away from the spear — Wight holds, Shadows stop) is the intended resolution for a depleted party. Do not force combat.
 
 **XP:** 700 + 100 + 100 = 900, multiplied by 2 for three creatures = 1,800 adjusted XP for a five-player party. This exceeds the Hard threshold and approaches Deadly (2,000 XP). At Level 3, with depleted resources from the vault, this is the designed climax.
 
