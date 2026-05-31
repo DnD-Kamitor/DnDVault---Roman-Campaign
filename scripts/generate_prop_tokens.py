@@ -138,12 +138,21 @@ def write_rptok(slug: str, img_data: bytes, layer: str, token_type: str,
     content = make_content_xml(slug, img_md5, layer, token_type, notes, gm_notes)
     thumb_sm = make_thumb(img_data, (50, 50))
     thumb_lg = make_thumb(img_data, (200, 200))
+    asset_xml = (
+        f"<net.rptools.maptool.model.Asset>\n"
+        f"  <id>\n    <id>{img_md5}</id>\n  </id>\n"
+        f"  <name>{slug.lower()}</name>\n"
+        f"  <extension>png</extension>\n"
+        f"  <type>image</type>\n"
+        f"  <image/>\n"
+        f"</net.rptools.maptool.model.Asset>"
+    )
 
     out = OUT_DIR / f"{slug}.rptok"
     with zipfile.ZipFile(out, 'w', compression=zipfile.ZIP_DEFLATED) as z:
         z.writestr("content.xml",           content.encode("utf-8"))
         z.writestr("properties.xml",        PROPERTIES_XML.encode("utf-8"))
-        z.writestr(f"assets/{img_md5}",     img_data)
+        z.writestr(f"assets/{img_md5}",     asset_xml.encode("utf-8"))
         z.writestr(f"assets/{img_md5}.png", img_data)
         z.writestr("thumbnail",             thumb_sm)
         z.writestr("thumbnail_large",       thumb_lg)
