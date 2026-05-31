@@ -63,15 +63,18 @@ def load_png(path: Path) -> bytes:
 
 def make_content_xml(name: str, img_md5: str, layer: str, token_type: str,
                      notes: str, gm_notes: str, width=200, height=200) -> str:
-    # Unique stable GUID based on name
     import base64, hashlib
-    guid_bytes = hashlib.md5(name.encode()).digest()
-    guid_b64 = base64.b64encode(guid_bytes).decode()
+    # Stable token GUID derived from name
+    id_bytes  = hashlib.md5(name.encode()).digest()
+    id_b64    = base64.b64encode(id_bytes).decode()
+    # Stable exposedAreaGUID derived from name + "ea" — must be non-zero
+    ea_bytes  = hashlib.md5((name + "ea").encode()).digest()
+    ea_b64    = base64.b64encode(ea_bytes).decode()
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <net.rptools.maptool.model.Token>
-  <id><baGUID>{guid_b64}</baGUID></id>
+  <id><baGUID>{id_b64}</baGUID></id>
   <beingImpersonated>false</beingImpersonated>
-  <exposedAreaGUID><baGUID>AAAAAAAAAAAAAAAAAAAAAA==</baGUID></exposedAreaGUID>
+  <exposedAreaGUID><baGUID>{ea_b64}</baGUID></exposedAreaGUID>
   <imageAssetMap>
     <entry>
       <null/>
@@ -111,13 +114,9 @@ def make_content_xml(name: str, img_md5: str, layer: str, token_type: str,
   <gmNotes>{gm_notes}</gmNotes>
   <gmNotesType>text/plain</gmNotesType>
   <propertyMapCI><store/></propertyMapCI>
+  <state/>
   <macroPropertiesMap/>
   <speechMap/>
-  <matchedAssets/>
-  <exposedArea><curves/></exposedArea>
-  <hasImageTable>false</hasImageTable>
-  <flipImage>false</flipImage>
-  <drawTopology>false</drawTopology>
 </net.rptools.maptool.model.Token>"""
 
 
