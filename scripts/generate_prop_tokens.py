@@ -202,7 +202,7 @@ def main():
 
     write_rptok(
         "Chains_Binding_Chamber",
-        load_png(TORSTAN / "Items/Miscellaneous set dressing/Manacles.png"),
+        load_png(TORSTAN / "Items/Miscellaneous set dressing/ChainPlatform.png"),
         layer="OBJECT", token_type="NPC",
         notes="Chains hanging from stone in ranks — wrist-thin to neck-wide. All sway slightly despite still air. TIWAZ carved above. 'We turned back here.'",
         gm_notes="Chain puzzle: pull oldest (left wall) → far wall → newest (right wall) → center grip. Wrong = DC 13 Str save or restrained 1 min. Correct = stone panel opens: oil lamp (filled 2yr ago) + contract scroll (DC 15 Int to read). Arcana DC 14: divine aura. Athletics DC 12: center chain has live tension — something still pulling.",
@@ -218,7 +218,7 @@ def main():
 
     write_rptok(
         "Bone_Token_OTHALAN",
-        load_png(TORSTAN / "Items/Chests and barrels/SmallChest.png"),
+        load_png(TORSTAN / "Items/Miscellaneous set dressing/Bones.png"),
         layer="OBJECT", token_type="NPC",
         notes="A carved bone token bearing the OTHALAN rune (ancestral land). Part of a matched pair — one half of a formal contract between Rome and the Germanic tribes sealed beneath this fort.",
         gm_notes="Found in hidden alcove (left branch) OR on preserved warrior's throat (right branch). Grants advantage on Runic Corridor if player states they use it as a guide — OTHALAN is the safe step in every row. Religion DC 14: formal contract marker, two parties hold matching tokens.",
@@ -226,7 +226,7 @@ def main():
 
     write_rptok(
         "Contract_Scroll",
-        load_png(TORSTAN / "Items/Chests and barrels/Chest.png"),
+        load_png(TORSTAN / "Items/Rugs curtains and tapestries/RolledTapestry.png"),
         layer="OBJECT", token_type="NPC",
         notes="A scroll in oilskin. Barely legible — Latin and Germanic parallel texts. Fragments describe terms of a binding: the tribes sealed the vault for three Roman generations; Rome agreed never to dig within 50 feet of the principia's eastern wall.",
         gm_notes="DC 15 Int to read damaged text. Grants ADVANTAGE on Wight persuasion check (DC 14). Proves Corvinus broke the bargain, not the party. Evidence for Scene 5 confrontation.",
@@ -234,7 +234,7 @@ def main():
 
     write_rptok(
         "Clay_Vessel_Offering",
-        load_png(TORSTAN / "Items/Chests and barrels/TreasureUrn.png"),
+        load_png(TORSTAN / "Lightsources/OilBowl.png"),
         layer="OBJECT", token_type="NPC",
         notes="A clay vessel found beneath stone benches in the Bone Chamber. Contains carbonized grain and an iron coin struck with a pre-Roman image of Mars.",
         gm_notes="DC 12 Inv to find. Offering maintained until ~2yr ago (Titus died AD 173). Haruspex: grain + coin = two aspects of Mars, calendar-precise maintenance. Session 2 thread: who was maintaining this?",
@@ -250,7 +250,7 @@ def main():
 
     write_rptok(
         "Oil_Lamp_Binding_Chamber",
-        load_png(TORSTAN / "Lightsources/Lantern,Lit.png"),
+        load_png(TORSTAN / "Lightsources/OilBowl,Lit,Small.png"),
         layer="OBJECT", token_type="NPC",
         notes="A clay oil lamp, Roman manufacture. Still full. The wick is trimmed.",
         gm_notes="Found in hidden panel behind chain mechanism. Oil filled within past 2 years. Same person who maintained offering cycle (Titus Sempronius Caecilius, died AD 173). This was his last visit.",
