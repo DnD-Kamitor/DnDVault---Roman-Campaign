@@ -312,18 +312,17 @@ def _npc_attack_cmd(atk, ac, hp, traits):
     trait_text = "  ".join(traits) if traits else ""
 
     cmd = (
-        f"[h: atkRoll = 1d20]\n"
-        f"[h: isCrit = (atkRoll == 20)]\n"
-        f"/me [r, if(isCrit == 1): \"<b style='color:#e74c3c'>CRITICAL HIT</b> with\"; \"attacks with\"] "
-        f"<b>{label}</b> ({reach}) &mdash; "
-        f"roll: <b>[r: atkRoll {sign}{bonus}]</b> vs AC {ac} "
-        f"[if(isCrit == 1): \"| <b>CRIT dmg: [e: {crit_dice}]</b> {dmg_type}\"; "
-        f"\"| dmg: <b>[e: {dice}]</b> {dmg_type}\"]"
+        f"[h: critRoll = 1d20]"
+        f"/me [r, if(critRoll == 20): \"<b style='color:#e74c3c'>CRITICAL HIT</b> with\"; \"attacks with\"] "
+        f"<b>{label}</b> ({reach})"
+        f"[r, if(critRoll == 1): \" but rolled a <b style='color:red'>NATURAL 1!</b>\"; \"!\"]"
+        f"<br>ATK: [e: critRoll {sign}{bonus}] | "
+        f"[r, if(critRoll == 20): \"CRIT dmg: [e: {crit_dice}] {dmg_type}\"; \"dmg: [e: {dice}] {dmg_type}\"]"
     )
     if note:
-        cmd += f"\n[r: \" &mdash; {note}\"]"
+        cmd += f"<br><i style='color:gray'>{note}</i>"
     if trait_text:
-        cmd += f"\n[r: \"<i>{trait_text}</i>\"]"
+        cmd += f"<br><i style='color:gray'>{trait_text}</i>"
     return cmd
 
 
