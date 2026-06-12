@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Token Assignment — Shadow of Mars</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; color: #ccc; font-family: sans-serif; font-size: 13px; padding: 24px; }
+  h1 { color: #c87832; font-size: 20px; margin-bottom: 6px; }
+  .subtitle { color: #666; margin-bottom: 24px; font-size: 12px; }
+  h2 { color: #e8c090; font-size: 14px; margin: 28px 0 8px; border-bottom: 1px solid #333; padding-bottom: 4px; letter-spacing: 0.1em; text-transform: uppercase; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
+  th { background: #1e1e1e; color: #888; text-align: left; padding: 6px 10px; font-weight: normal; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  td { padding: 6px 10px; border-bottom: 1px solid #1e1e1e; vertical-align: top; }
+  tr:hover td { background: #1a1a1a; }
+  .npc-name { color: #e8c090; font-weight: bold; white-space: nowrap; }
+  .role { color: #a06030; font-size: 11px; }
+  .desc { color: #999; font-size: 11px; line-height: 1.5; }
+  input[type="text"] {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    color: #e8c090;
+    padding: 4px 8px;
+    width: 220px;
+    font-size: 12px;
+    font-family: monospace;
+    border-radius: 3px;
+  }
+  input[type="text"]:focus { outline: none; border-color: #c87832; }
+  input[type="text"].filled { border-color: #4a8; color: #8f8; }
+  .btn-row { margin: 24px 0; display: flex; gap: 12px; }
+  button {
+    background: #c87832;
+    color: #1a0e06;
+    border: none;
+    padding: 8px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    letter-spacing: 0.05em;
+  }
+  button:hover { background: #e8a050; }
+  button.secondary { background: #333; color: #ccc; }
+  button.secondary:hover { background: #444; }
+  #output {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 16px;
+    font-family: monospace;
+    font-size: 12px;
+    color: #8f8;
+    white-space: pre;
+    margin-top: 16px;
+    display: none;
+    border-radius: 3px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  .progress { color: #666; font-size: 11px; margin-top: 6px; }
+  .tag { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 10px; margin-left: 6px; }
+  .tag-roman { background: #3a1808; color: #c87832; }
+  .tag-germanic { background: #0e2018; color: #4a8; }
+  .tag-creature { background: #1a0e28; color: #a070d0; }
+  .tag-villain { background: #280808; color: #c03030; }
+  .tag-ally { background: #081828; color: #4080c0; }
+</style>
+</head>
+<body>
+
+<h1>Token Assignment — Shadow of Mars</h1>
+<p class="subtitle">Open token_gallery.html alongside this. Type the filename (e.g. <code>CityGuardsFace_08.png</code>) into each row. Click Export when done.</p>
+
+<div class="btn-row">
+  <button onclick="exportJSON()">Export Mapping JSON</button>
+  <button class="secondary" onclick="clearAll()">Clear All</button>
+  <button class="secondary" onclick="loadSaved()">Load Saved</button>
+</div>
+<div class="progress" id="progress">0 / 0 assigned</div>
+<div id="output"></div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Major NPCs — Named Characters</h2>
+<table>
+<thead><tr><th>Name</th><th>Role / Tags</th><th>Description</th><th>Token filename</th></tr></thead>
+<tbody>
+<tr>
+  <td><div class="npc-name">Legate Corvinus</div></td>
+  <td><div class="role">Roman Legate</div><span class="tag tag-roman">Roman</span><span class="tag tag-villain">Villain</span></td>
+  <td class="desc">Commanding officer of the fort. Tall, scarred, iron-grey hair. Armored in lorica segmentata with red cloak. Ruthless, politically connected to Senator Brutus. Pursues the spear at any cost.</td>
+  <td><input type="text" data-key="Legate_Corvinus" placeholder="e.g. CityGuardsFace_02.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Augur Cassia</div></td>
+  <td><div class="role">Priestess / Augur</div><span class="tag tag-roman">Roman</span><span class="tag tag-ally">Ally</span></td>
+  <td class="desc">Fort augur, young for her rank. Dark eyes, white robes with red sash. Sees visions she does not share. Quietly opposes Corvinus. Will help the party if they prove trustworthy.</td>
+  <td><input type="text" data-key="Augur_Cassia" placeholder="e.g. lady_06.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Centurion Varro</div></td>
+  <td><div class="role">Centurion</div><span class="tag tag-roman">Roman</span><span class="tag tag-ally">Ally</span></td>
+  <td class="desc">Veteran of fifteen years. Stocky, broken nose, vine staff always in hand. Loyal to Rome above the Legate. Pragmatic and foul-mouthed. Will back the party if they follow the rules.</td>
+  <td><input type="text" data-key="Centurion_Varro" placeholder="e.g. castleguard_08.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Tribune Lucius</div></td>
+  <td><div class="role">Tribune / Senate Agent</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Young, ambitious, carrying sealed Senate orders. Clean-shaven, fine tunic under riding cloak. Appears legitimate but works for Brutus. His loyalties shift based on party pressure.</td>
+  <td><input type="text" data-key="Tribune_Lucius" placeholder="e.g. CityGuardsFace_04.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Vercingetorix the Red</div></td>
+  <td><div class="role">Gaulish Chieftain</div><span class="tag tag-germanic">Barbarian</span><span class="tag tag-ally">Ally</span></td>
+  <td class="desc">Red-bearded Gaulish warrior, enormous and loud. Nominal foederatus, real independence. Controls the roads south of the fort. Respects strength, despises politics. Potential powerful ally.</td>
+  <td><input type="text" data-key="Vercingetorix_the_Red" placeholder="e.g. Char_05.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Senator Brutus</div></td>
+  <td><div class="role">Roman Senator</div><span class="tag tag-roman">Roman</span><span class="tag tag-villain">Villain</span></td>
+  <td class="desc">Never physically present until Session 5. Older man, toga, calculating grey eyes. Orchestrates the Tribune and the cult from Rome. Wants the spear destroyed before it exposes his conspiracy.</td>
+  <td><input type="text" data-key="Senator_Brutus" placeholder="e.g. lord_02.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Mars</div></td>
+  <td><div class="role">God of War</div><span class="tag tag-villain">Divine</span></td>
+  <td class="desc">Manifests as a massive armored figure wreathed in blood-red light. Ancient, indifferent to mortal politics, offended by the broken oath. His presence causes corruption and structural damage.</td>
+  <td><input type="text" data-key="Mars" placeholder="e.g. DwellerN_08.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Thusnelda</div></td>
+  <td><div class="role">Germanic Völva</div><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">Tall, grey-streaked braids, staff hung with bones and feathers. Speaks in riddles. Knows the forest and the sacred grove better than anyone. Neutral — will help if the party respects the old ways.</td>
+  <td><input type="text" data-key="Thusnelda" placeholder="e.g. witch_07.png" oninput="onInput(this)"></td>
+</tr>
+</tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Supporting NPCs — Fort and Vicus</h2>
+<table>
+<thead><tr><th>Name</th><th>Role / Tags</th><th>Description</th><th>Token filename</th></tr></thead>
+<tbody>
+<tr>
+  <td><div class="npc-name">Paterculus</div></td>
+  <td><div class="role">Haruspex Assistant</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Thin, nervous, ink-stained fingers. Keeps the omen records. Terrified of what the entrails have been showing. Will share his logs if the party earns his trust.</td>
+  <td><input type="text" data-key="Paterculus" placeholder="e.g. alchemist_10.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Valeria the Medicus</div></td>
+  <td><div class="role">Fort Doctor</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Practical, unflappable. Blood on her apron is always someone else's. Knows which soldiers have been "not themselves." Keeps quiet until she sees a reason to speak.</td>
+  <td><input type="text" data-key="Valeria_the_Medicus" placeholder="e.g. lady_11.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Quartus</div></td>
+  <td><div class="role">Quartermaster</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Round, balding, perpetually harassed. Knows every supply shortfall and who caused it. Runs the processing desk. First contact for new arrivals at the fort.</td>
+  <td><input type="text" data-key="Quartus" placeholder="e.g. townsfolk_08.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Rufus the Smith</div></td>
+  <td><div class="role">Blacksmith / Ex-Gladiator</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Massive forearms, arena scars on his neck. Retired to the fabrica. Knows every weapon in the fort and who's been requesting unusual materials. Loyal to whoever feeds him well.</td>
+  <td><input type="text" data-key="Rufus_the_Smith" placeholder="e.g. castleguard_13.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Brennus</div></td>
+  <td><div class="role">Tavern Keeper — Vicus</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Half-Gaulish, cheerful, never forgets a face. Runs the vicus taberna. Hears everything soldiers say after the third cup. Neutral information broker — will sell to anyone.</td>
+  <td><input type="text" data-key="Brennus" placeholder="e.g. townsfolk_12.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Lucilla the Postwoman</div></td>
+  <td><div class="role">Courier / Spy</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Slim, quick, always moving. Carries the official mail between forts but reads everything. Reporting to Brutus without knowing his full plan. Will flip allegiance if shown the raven order.</td>
+  <td><input type="text" data-key="Lucilla_the_Postwoman" placeholder="e.g. townsfolk_19.png" oninput="onInput(this)"></td>
+</tr>
+</tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Supporting NPCs — Germanic Contacts</h2>
+<table>
+<thead><tr><th>Name</th><th>Role / Tags</th><th>Description</th><th>Token filename</th></tr></thead>
+<tbody>
+<tr>
+  <td><div class="npc-name">Aldric the Gaul</div></td>
+  <td><div class="role">Germanic Observer</div><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">Quiet, watchful, speaks Latin with deliberate care. Monitors Roman movements for his tribe. Not hostile — curious. Can open doors with Vercingetorix's people.</td>
+  <td><input type="text" data-key="Aldric_the_Gaul" placeholder="e.g. Char_18.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Titus Half-Germanic</div></td>
+  <td><div class="role">Scout / Interpreter</div><span class="tag tag-roman">Roman</span><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">One Roman parent, one Germanic. Speaks both languages, trusted by neither side fully. Best guide into the forest. Torn between identities — party attitude determines whose side he picks.</td>
+  <td><input type="text" data-key="Titus_Half-Germanic" placeholder="e.g. Char_22.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Sigrun the Trader</div></td>
+  <td><div class="role">Germanic Trader</div><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">Travels the frontier markets with amber and furs. Practical, direct, not interested in politics. Has connections deep in the forest. Knows which paths are watched and which are safe.</td>
+  <td><input type="text" data-key="Sigrun_the_Trader" placeholder="e.g. townsfolk_23.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Arnulf the Firekeeper</div></td>
+  <td><div class="role">Germanic Firekeeper</div><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">Old, scarred hands, eyes always on the fire. Keeper of the village hearth and its stories. Knows the old songs about the grove and what lives there. Will not speak to Romans without Thusnelda's blessing.</td>
+  <td><input type="text" data-key="Arnulf_the_Firekeeper" placeholder="e.g. tp9camp_09.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Edda the Spear-Mother</div></td>
+  <td><div class="role">Germanic Warrior</div><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">Leader of the village's shield-women. Taller than most men, speaks in commands. Respects fighters. Will challenge the party to prove themselves before she shares anything useful.</td>
+  <td><input type="text" data-key="Edda_the_Spear-Mother" placeholder="e.g. Char_36.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Skadi the Healer</div></td>
+  <td><div class="role">Germanic Healer</div><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">Young, calm, herb-stained hands. Studies under Thusnelda. Speaks to plants the way soldiers speak to horses. Will heal party members who show respect for the forest.</td>
+  <td><input type="text" data-key="Skadi_the_Healer" placeholder="e.g. townsfolk_26.png" oninput="onInput(this)"></td>
+</tr>
+</tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Named Troop NPCs</h2>
+<table>
+<thead><tr><th>Name</th><th>Role</th><th>Description</th><th>Token filename</th></tr></thead>
+<tbody>
+<tr>
+  <td><div class="npc-name">Flavius Martis</div></td>
+  <td><div class="role">Flamen Martialis — Mars Priest</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Cult priest who has gone too far. Red-rimmed eyes, ritual scarring on forearms. Works secretly with the cultists in Scene 4 of Session 1.</td>
+  <td><input type="text" data-key="Flavius_Martis" placeholder="e.g. witch_08.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Aemilia Secunda</div></td>
+  <td><div class="role">Frumentarius — Military Intelligence</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Travels as a merchant. Reports to Rome, not the Legate. Watching events independently. Neither friend nor enemy until the party's actions reveal which she should be.</td>
+  <td><input type="text" data-key="Aemilia_Secunda" placeholder="e.g. townsfolk_15.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Lucius Calvus</div></td>
+  <td><div class="role">Signifer — Standard Bearer</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Bear-skin headdress, carries the century's standard. Pride of the unit. Will not abandon the standard under any circumstances — useful leverage.</td>
+  <td><input type="text" data-key="Lucius_Calvus" placeholder="e.g. CityGuardsFace_03.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Marcus Sextius</div></td>
+  <td><div class="role">Tesserarius — Watch Officer</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Gives out the watchword each night. Saw something in the east corridor that he will not describe clearly. Drinks more than he should.</td>
+  <td><input type="text" data-key="Marcus_Sextius" placeholder="e.g. CityGuardsFace_07.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Publius Arma</div></td>
+  <td><div class="role">Custos Armorum — Armory Keeper</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Tracks every weapon in and out of the armory. Knows something was taken two weeks ago and not logged. Will not say who took it without pressure.</td>
+  <td><input type="text" data-key="Publius_Arma" placeholder="e.g. castleguard_05.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Quintus Caelius</div></td>
+  <td><div class="role">Librarius — Clerk</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Keeps the records. Nervous, efficient, has accidentally seen orders he was not meant to see. Party's best source for paper trails if they can get him alone.</td>
+  <td><input type="text" data-key="Quintus_Caelius" placeholder="e.g. townsfolk_04.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Titus Vindex</div></td>
+  <td><div class="role">Capsarius — Combat Medic</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Young field medic. Has treated corruption wounds that he cannot explain medically. Detailed notes. Will share them if the party convinces him they can actually fix the problem.</td>
+  <td><input type="text" data-key="Titus_Vindex" placeholder="e.g. CityGuardsFace_05.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Grunwald (Foederatus)</div></td>
+  <td><div class="role">Germanic Auxiliary</div><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">Germanic warrior serving Rome for coin. Homesick. Knows the forest paths and will share them for the right price — usually information about his home village.</td>
+  <td><input type="text" data-key="Grunwald" placeholder="e.g. Char_14.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Aquilifer (Vacant)</div></td>
+  <td><div class="role">Eagle Bearer — Post Vacant</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Metellus, the previous aquilifer, died in the vault. The eagle standard sits unattended in the principia. Recovering it or replacing Metellus is a party objective in Session 1.</td>
+  <td><input type="text" data-key="Aquilifer_Vacant" placeholder="e.g. castleguard_02.png" oninput="onInput(this)"></td>
+</tr>
+</tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Creatures — Roman Mythology</h2>
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th><th>Token filename</th></tr></thead>
+<tbody>
+<tr>
+  <td><div class="npc-name">Strix</div></td>
+  <td><div class="role">Undead / Demon-Bird</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Roman vampire-owl demon. Attacks sleeping victims, drains blood. Feathers like knives. Appears near corrupted soldiers at night. CR 3.</td>
+  <td><input type="text" data-key="Strix" placeholder="e.g. DdwellerN_06.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Lemur</div></td>
+  <td><div class="role">Spirit — Hungry Ghost</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Restless spirit of the dishonored dead. Translucent, wailing, interferes with spells and rest. Cluster in the vault near the altar. CR 1.</td>
+  <td><input type="text" data-key="Larvae" placeholder="e.g. basicundead_10.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Genius Loci</div></td>
+  <td><div class="role">Spirit — Place Guardian</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Ancient spirit bound to the fort's ground. Has watched everything for two centuries. Can be bargained with. Attacks only those who defile its place. CR 4.</td>
+  <td><input type="text" data-key="Genius_Loci" placeholder="e.g. DMessentialsDJ2_07.png" oninput="onInput(this)"></td>
+</tr>
+</tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Creatures — Germanic / Norse</h2>
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th><th>Token filename</th></tr></thead>
+<tbody>
+<tr>
+  <td><div class="npc-name">Alp</div></td>
+  <td><div class="role">Nightmare Demon</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Shapeless, heavy, sits on chests of sleeping victims. Causes paralysis and terror visions. Drawn to corruption. Daylight-vulnerable. CR 2.</td>
+  <td><input type="text" data-key="Alp" placeholder="e.g. DwellerN_14.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Draugar</div></td>
+  <td><div class="role">Walking Dead — Norse</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Bloated, stinking, supernaturally strong dead warrior. Rises from graves disturbed by oath-breaking. Guards the vault's deeper chambers. CR 5.</td>
+  <td><input type="text" data-key="Draugar" placeholder="e.g. basicundead_18.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Lindworm</div></td>
+  <td><div class="role">Norse Serpent</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Massive legless dragon-serpent. Ancient, solitary, lives in the deep forest lake. Not evil — territorial. Will destroy anything that threatens its water. CR 8.</td>
+  <td><input type="text" data-key="Lindworm" placeholder="e.g. DwellerN_22.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Nix</div></td>
+  <td><div class="role">Water Spirit</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Beautiful, cold, lures victims into rivers. Shapeshifter — can appear as a drowning child, a pale stranger, a horse. Bargainable if approached with music or silver. CR 3.</td>
+  <td><input type="text" data-key="Nix" placeholder="e.g. DwellerN_05.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Haugbui</div></td>
+  <td><div class="role">Barrow Wight — Norse</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Spirit of the dead bound to its burial mound. Cannot leave the vault. Intelligent, speaks old Germanic. Remembers what happened here long ago. CR 3.</td>
+  <td><input type="text" data-key="Haugbui" placeholder="e.g. basicundead_06.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Myling</div></td>
+  <td><div class="role">Child Ghost — Norse</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Ghost of an unbaptized/unburied child. Clings to living targets and increases in weight. Wants proper burial. Harmless if spoken to gently — deadly if ignored. CR 2.</td>
+  <td><input type="text" data-key="Myling" placeholder="e.g. basicundead_04.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Vaettir</div></td>
+  <td><div class="role">Nature Spirit</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Small, flickering forest spirit. Swarm creature — individually harmless, hundreds together dangerous. React to disrespect of the forest. CR 1/4 (swarm CR 4).</td>
+  <td><input type="text" data-key="Vaettir" placeholder="e.g. DMessentialsDJ2_01.png" oninput="onInput(this)"></td>
+</tr>
+</tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Generic Troops and Standard Monsters</h2>
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Description</th><th>Token filename</th></tr></thead>
+<tbody>
+<tr>
+  <td><div class="npc-name">Legionary (Milites)</div></td>
+  <td><div class="role">Roman Foot Soldier</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Standard legionary in lorica segmentata, scutum, gladius. Used for fort patrols and garrison encounters.</td>
+  <td><input type="text" data-key="Legionary_Milites" placeholder="e.g. castleguard_15.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Praetorian Guard</div></td>
+  <td><div class="role">Elite Roman Soldier</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Tribune's personal escort. Heavier armor, more expensive equipment. Obedient to the Tribune, not the Legate.</td>
+  <td><input type="text" data-key="Praetorian_Guard" placeholder="e.g. castleguard_16.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Guard</div></td>
+  <td><div class="role">Generic Guard</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Gate guard, wall sentry. Lower equipment standard than legionaries. Used as generic encounter filler.</td>
+  <td><input type="text" data-key="Guard" placeholder="e.g. cityguardsHelm_09.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Scout</div></td>
+  <td><div class="role">Roman Scout / Ranger</div><span class="tag tag-roman">Roman</span></td>
+  <td class="desc">Light armor, no shield. Used for wilderness and forest encounters with Roman pursuers.</td>
+  <td><input type="text" data-key="Scout" placeholder="e.g. CityGuardsFace_11.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Tribal Warrior</div></td>
+  <td><div class="role">Germanic Warrior</div><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">Generic Germanic warrior. Framea, shield, no armor. Used for forest encounters and siege combat.</td>
+  <td><input type="text" data-key="Tribal_Warrior" placeholder="e.g. Char_27.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Berserker</div></td>
+  <td><div class="role">Germanic Berserker</div><span class="tag tag-germanic">Germanic</span></td>
+  <td class="desc">Shirtless, scarred, eyes wide. Reckless attacker. Used in Session 1 Scene 4 and Germanic warband encounters.</td>
+  <td><input type="text" data-key="Berserker" placeholder="e.g. DwellerN_01.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Cultist of Mars</div></td>
+  <td><div class="role">Cult Member</div><span class="tag tag-villain">Villain</span></td>
+  <td class="desc">Roman soldier corrupted by the spear's influence. Red-smeared face, erratic behavior. Used in Session 1 Scene 4 and Session 5.</td>
+  <td><input type="text" data-key="Cultist_of_Mars" placeholder="e.g. DwellerN_09.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Bandit</div></td>
+  <td><div class="role">Road Bandit</div></td>
+  <td class="desc">Generic road encounter. Used in Session 2 wilderness travel.</td>
+  <td><input type="text" data-key="Bandit" placeholder="e.g. Char_08.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Bandit Captain</div></td>
+  <td><div class="role">Bandit Leader</div></td>
+  <td class="desc">Optional encounter in Session 2. Better equipped, gives orders.</td>
+  <td><input type="text" data-key="Bandit_Captain" placeholder="e.g. Char_15.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Skeleton</div></td>
+  <td><div class="role">Undead</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Animated bones of slain warriors. Session 1 vault encounter.</td>
+  <td><input type="text" data-key="Skeleton" placeholder="e.g. basicundead_01.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Ghoul</div></td>
+  <td><div class="role">Undead</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Paralysis claws. Session 1 Bone Chamber encounter (2 Ghouls + 1 Ghast).</td>
+  <td><input type="text" data-key="Ghoul" placeholder="e.g. basicundead_08.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Ghast</div></td>
+  <td><div class="role">Undead — Elite Ghoul</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Stronger ghoul with stench aura. Session 1 Bone Chamber leader.</td>
+  <td><input type="text" data-key="Ghast" placeholder="e.g. basicundead_14.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Shadow</div></td>
+  <td><div class="role">Undead</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Drains Strength. Session 1 Flooded Gallery. Appears in multiple sessions.</td>
+  <td><input type="text" data-key="Shadow" placeholder="e.g. basicundead_20.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Wight</div></td>
+  <td><div class="role">Undead — Intelligent</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Speaks. Guards the Altar Chamber in Session 1. Can negotiate if presented with the contract scroll. Also appears in Sessions 4 and 5.</td>
+  <td><input type="text" data-key="Wight" placeholder="e.g. basicundead_17.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Wraith</div></td>
+  <td><div class="role">Undead</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Session 5 final vault. Drains max HP. Incorporeal.</td>
+  <td><input type="text" data-key="Wraith" placeholder="e.g. basicundead_24.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Specter</div></td>
+  <td><div class="role">Undead</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Session 5. Created from recently slain soldiers. Fast and aggressive.</td>
+  <td><input type="text" data-key="Specter" placeholder="e.g. basicundead_22.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Zombie</div></td>
+  <td><div class="role">Undead</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Session 5. Reanimated fort defenders. Slow but numerous.</td>
+  <td><input type="text" data-key="Zombie" placeholder="e.g. basicundead_03.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Will-o-Wisp</div></td>
+  <td><div class="role">Spirit</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Session 4 sacred grove. Lures party into traps. Immune to most damage types.</td>
+  <td><input type="text" data-key="Will-o-Wisp" placeholder="e.g. DMessentialsDJ2_09.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Wolf</div></td>
+  <td><div class="role">Animal</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Sessions 2 and 3. Forest encounter. Pack tactics.</td>
+  <td><input type="text" data-key="Wolf" placeholder="e.g. DdwellerN_04.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Dire Wolf</div></td>
+  <td><div class="role">Animal — Large</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Session 3 forest. Knock prone on hit. Often accompanied by regular wolves.</td>
+  <td><input type="text" data-key="Dire_Wolf" placeholder="e.g. DdwellerN_08.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Brown Bear</div></td>
+  <td><div class="role">Animal — Large</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Session 3 forest. Optional encounter. Can be driven off without killing.</td>
+  <td><input type="text" data-key="Brown_Bear" placeholder="e.g. DdwellerN_09.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Giant Spider</div></td>
+  <td><div class="role">Beast</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Session 3. Web attack, poison. Nests in the dead forest zone near the grove.</td>
+  <td><input type="text" data-key="Giant_Spider" placeholder="e.g. DwellerN_25.png" oninput="onInput(this)"></td>
+</tr>
+<tr>
+  <td><div class="npc-name">Boar</div></td>
+  <td><div class="role">Animal</div><span class="tag tag-creature">Creature</span></td>
+  <td class="desc">Session 2. Road encounter. Relentless attack on 0 HP — stays up once per fight.</td>
+  <td><input type="text" data-key="Boar" placeholder="e.g. DdwellerN_05.png" oninput="onInput(this)"></td>
+</tr>
+</tbody>
+</table>
+
+<div class="btn-row">
+  <button onclick="exportJSON()">Export Mapping JSON</button>
+  <button class="secondary" onclick="clearAll()">Clear All</button>
+</div>
+<div class="progress" id="progress2"></div>
+<div id="output"></div>
+
+<script>
+const SAVE_KEY = "token_mapping_v1";
+
+function onInput(el) {
+  el.classList.toggle("filled", el.value.trim().length > 0);
+  updateProgress();
+  autoSave();
+}
+
+function updateProgress() {
+  const all = document.querySelectorAll("input[data-key]");
+  const filled = [...all].filter(e => e.value.trim()).length;
+  const txt = `${filled} / ${all.length} assigned`;
+  document.getElementById("progress").textContent = txt;
+  const p2 = document.getElementById("progress2");
+  if (p2) p2.textContent = txt;
+}
+
+function autoSave() {
+  const mapping = {};
+  document.querySelectorAll("input[data-key]").forEach(el => {
+    if (el.value.trim()) mapping[el.dataset.key] = el.value.trim();
+  });
+  localStorage.setItem(SAVE_KEY, JSON.stringify(mapping));
+}
+
+function loadSaved() {
+  const saved = localStorage.getItem(SAVE_KEY);
+  if (!saved) return;
+  const mapping = JSON.parse(saved);
+  document.querySelectorAll("input[data-key]").forEach(el => {
+    if (mapping[el.dataset.key]) {
+      el.value = mapping[el.dataset.key];
+      el.classList.add("filled");
+    }
+  });
+  updateProgress();
+}
+
+function exportJSON() {
+  const mapping = {};
+  document.querySelectorAll("input[data-key]").forEach(el => {
+    if (el.value.trim()) mapping[el.dataset.key] = el.value.trim();
+  });
+  const json = JSON.stringify(mapping, null, 2);
+  const out = document.getElementById("output");
+  out.textContent = json;
+  out.style.display = "block";
+  navigator.clipboard.writeText(json).catch(() => {});
+}
+
+function clearAll() {
+  if (!confirm("Clear all assignments?")) return;
+  document.querySelectorAll("input[data-key]").forEach(el => {
+    el.value = "";
+    el.classList.remove("filled");
+  });
+  localStorage.removeItem(SAVE_KEY);
+  updateProgress();
+}
+
+// Init
+window.onload = () => { loadSaved(); updateProgress(); };
+</script>
+</body>
+</html>
