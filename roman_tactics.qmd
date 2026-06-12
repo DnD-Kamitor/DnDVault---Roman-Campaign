@@ -236,7 +236,7 @@ Bodkin arrow: Standard range. On a hit against a target wearing non-metal armor 
 
 Broadhead arrow: Standard range. On a critical hit, the target takes an additional 1d4 piercing damage at the start of its next turn as the wound continues to open. Cost: 6 sp per 20. Weight: 2 lb per 20.
 
-Fire arrow: Standard range, but requires a bonus action to light from a torch or tinder before firing. Adds 1d4 fire damage, but only against flammable targets: wooden structures, oil-soaked surfaces, dry vegetation, or siege equipment. Against armored targets or in rain, the fire damage does not apply (the flame extinguishes on impact). Cost: 1 sp per 10 (includes pitch-soaked wrapping). Weight: 1 lb per 10.
+Fire arrow: Standard range, but requires a bonus action to light from a torch or tinder before firing. Adds 1d4 fire damage, but only against flammable targets: wooden structures, oil-soaked surfaces, dry vegetation, or siege equipment. Against armored targets or in rain, the fire damage does not apply (the flame extinguishes on impact). Fear effect: a creature that is physically set alight by a fire arrow (unarmored, wearing flammable clothing, or oiled -- DM discretion) must succeed on a DC 12 Wisdom saving throw at the start of its next turn or be Frightened of the nearest fire source until the end of that turn. This is a momentary shock response, not a sustained condition; it does not stack, does not carry between rounds, and does not apply to creatures immune to the Frightened condition. Cost: 1 sp per 10 (includes pitch-soaked wrapping). Weight: 1 lb per 10.
 
 Trilobate arrow (three-bladed head): Standard range. Against targets wearing non-plate armor (leather, hide, scale, or chainmail), the attack ignores the armor's Dexterity modifier contribution to AC: the three blades cut around the articulation points that flexible armor relies on. On a critical hit, the target makes a DC 13 Constitution saving throw; on a failure, it suffers one level of exhaustion from blood loss (three wound channels simultaneously). Cost: 8 sp per 20. Weight: 2 lb per 20.
 
@@ -266,6 +266,24 @@ The crossbow deployed on fort walls and in siege positions: mounted on a stock, 
 *Arcuballista*: Martial weapon. Range 90/360 ft (10 ft reduced from standard; the heavier bolt trades range for penetration). 1d10 piercing. Ammunition: *arcuballista* bolts (see ammunition section; standard crossbow bolts may substitute at -1 damage). Loading: 1 action to load; cannot fire again until reloaded. Heavy, two-handed. Against shield-bearing targets: on a hit, the bolt ignores the AC bonus from any shield that is not a siege pavise (the bolt weight defeats the bracing). Cost: 50 gp. Weight: 18 lb.
 
 **Vindolanda stock:** Two wall-mounted units operational at Camp Level 1; a third assembled from workshop parts at Camp Level 2. Hand-carried variants are not standard issue: a PC who wants one as personal equipment has sourced it deliberately, and its presence attracts professional interest from anyone who knows what it costs to transport.
+
+
+#### *Arcus Magnus* (Longbow)
+
+The standard infantry longbow, carried by Welsh, Caledonian, and eastern auxiliaries with their own archery tradition. Uncommon among Vindolanda's legionary complement: Roman doctrine assigns the composite bow to cavalry and the crossbow to wall positions. A longbow on a Vindolanda soldier marks non-legionary training. It outranges everything else a single soldier can carry and fires without the loading pause the crossbow requires.
+
+*Arcus Magnus*: Martial weapon. Range 150/600 ft. 1d8 piercing, heavy, two-handed. Standard longbow proficiency applies. Compatible with all arrow variants in the ammunition section above. Cost: 50 gp. Weight: 2 lb.
+
+**Vindolanda stock:** Not standard issue. Available from eastern auxiliary traders through the *vicus* on DC 15 Investigation, or through Sigrun's network at Camp Level 2 or higher.
+
+
+#### *Arcuballista Brevis* (Hand Crossbow)
+
+A compact one-handed crossbow carried by scouts and cavalry skirmishers. Less powerful than the wall-mounted *arcuballista* and with a fraction of its range, but operable with one hand: the other holds a shield or controls a mount. Loading is a deliberate act that cannot be hurried.
+
+*Arcuballista Brevis*: Martial weapon. Range 30/120 ft. 1d6 piercing, light, loading. Can be used while holding a shield in the other hand (load with the shield arm between shots as an action). Requires a free hand to load; a character holding a one-handed weapon in both hands cannot reload without sheathing one. Hand crossbow proficiency applies. Cost: 25 gp. Weight: 3 lb.
+
+**Vindolanda stock:** Not standard issue. Available through the *vicus* black market or from traders with eastern auxiliary connections. Presence in a soldier's kit is unusual enough to generate questions.
 
 
 ### Thrown Weapons
@@ -301,6 +319,20 @@ A short, light throwing spear used by auxiliary infantry when pilum supply is re
 Longer than a *verutum*, shorter than a *contus*, designed for use from horseback. The rider's height and the horse's momentum carry the throw further than a dismounted soldier can manage. On foot, the length creates liability in close quarters, but it still outranges a *verutum* and hits harder. Cavalry auxiliaries typically carry two: one for the throw, one for the follow-up if the charge does not resolve the engagement.
 
 *Lancea*: Martial weapon. Thrown (25/50 ft mounted; 20/40 ft on foot). 1d8 piercing. When thrown from horseback after moving at least 20 feet this turn: +1d4 piercing damage (mounted momentum carries through). When used as a melee weapon while mounted: reach 10 ft. Disadvantage on attack rolls against targets within 5 ft when on foot (the length prevents effective close-in use). Cost: 3 gp. Weight: 4 lb.
+
+
+#### *Telum* (Dart)
+
+A heavy needle-dart with a stabilizing flight tip, used by skirmishers and scouts when silence and speed matter more than stopping power. Thrown at close range; the narrow profile makes it difficult to spot in flight.
+
+*Telum*: Simple weapon. Thrown (20/60 ft). 1d4 piercing, finesse. Retrievable after combat without a check (the narrow tip does not embed deeply). Can be thrown while holding a one-handed weapon in the other hand. Cost: 5 cp each. Weight: 1/4 lb each.
+
+
+#### *Iaculum* (Javelin)
+
+A lighter, shorter throwing spear for general use, carried by civilians pressed into service and auxiliary soldiers when *pilum* supply is depleted. The head does not bend on impact, which means it can be recovered -- and that the enemy can pick it up and return the favor.
+
+*Iaculum*: Simple weapon. Thrown (30/120 ft). 1d6 piercing. Retrievable after combat (the straight head pulls free cleanly). Not standard legionary issue: a character carrying one sourced it independently or is filling a gap in supply. Cost: 5 sp. Weight: 2 lb.
 
 
 ### Melee Weapons
@@ -365,7 +397,9 @@ A length of vine wood, gnarled and dense, traditionally cut from a single vine i
 
 *Vitis*: Simple weapon. 1d6 bludgeoning. Light. Authority property: when a character carrying the *vitis* issues a verbal order to a Roman soldier within 30 feet (bonus action), that soldier must comply or make a DC 13 Wisdom saving throw; on a failure, they comply automatically; on a success, they freeze for one round and will not advance or attack (they may still defend themselves). The authority property does not function against non-Roman soldiers or anyone who has identified the bearer as not a centurion. Carrying a *vitis* without centurion rank is a disciplinary offense: any soldier who identifies the bearer as a non-centurion is legally required to report it; a DC 14 Persuasion check can delay the report for one scene, not prevent it. Cost: 2 sp. Weight: 2 lb.
 
-**Note on the Optio:** The Optio's *hastile optioni* (knobbed staff) functions identically mechanically but is visually distinct. An Optio seen carrying a *vitis* will be asked directly who gave it to them.
+**The Optio's staff:** The Optio carries the *hastile optioni* (knobbed staff) rather than a vine-wood *vitis*. The two weapons are distinct: the *hastile optioni* is a shod pole with a metal knob, heavier and more utilitarian than the vine staff but carrying the same social meaning below centurion level. An Optio seen carrying a *vitis* will be asked directly who gave it to them.
+
+*Hastile Optioni*: Simple weapon. 1d4 bludgeoning, light. Authority property (optio rank): a character carrying the *hastile optioni* and bearing visibly the rank marks of an optio can issue orders to any legionary soldier within 30 feet as a bonus action; soldiers comply automatically or make a DC 12 Wisdom saving throw (on a success they freeze for one round). The authority property does not extend to centurion-level commands or civilians, and does not function if the bearer is not recognized as optio rank. Issued to the optio role only; carrying one without the rank is treated as impersonation of an officer. Weight: 3 lb.
 
 
 #### *Fustis* (Wooden Club)
@@ -373,6 +407,29 @@ A length of vine wood, gnarled and dense, traditionally cut from a single vine i
 A length of hardwood without shaping, edge, or ceremony. Carried by engineers, supply workers, and soldiers who have had their main weapons confiscated as a disciplinary measure. Used to break things that need breaking, to brace structures under load, and occasionally to settle a question before a more precise instrument can be drawn. No one trains specifically with the *fustis*; anyone who has been in the field for more than a week has improvised one from whatever was nearby.
 
 *Fustis*: Simple weapon. 1d4 bludgeoning. Versatile (1d6 two-handed). Against prone targets: 1d6 bludgeoning (1d8 two-handed) regardless of weapon proficiency (hitting a prone opponent with a stick requires no special training). Improvised: a character with access to timber or forest material can produce a functional *fustis* in one minute. Cost: 1 cp. Weight: 3 lb.
+
+
+### Field-Substituted and Non-Roman Weapons
+
+Characters whose class training includes standard adventuring weapons carry these under their Latin designations. They are recognized for what they are: a Bard carrying a longsword is not a legionary, and no Roman soldier will mistake them for one. The weapons function as standard D&D 5e entries with no special Roman properties; the Latin names are the army's accommodation to a non-standard unit.
+
+#### Standard Field Weapons
+
+*Gladius Brevis* (Shortsword): Martial weapon. 1d6 piercing, finesse, light. The shorter variant of the *gladius*, used by scouts and light infantry. No formation bonus (the blade geometry does not support the close-press technique). Cost: 10 gp. Weight: 2 lb.
+
+*Clava* (Mace): Simple weapon. 1d6 bludgeoning. No special properties. The straight iron-headed mace of the general infantry kit, useful and unglamorous. Cost: 5 gp. Weight: 4 lb.
+
+*Baculum* (Quarterstaff): Simple weapon. 1d6 bludgeoning, versatile (1d8 two-handed). Standard wood staff carried by priests, engineers, and characters whose training does not include edged weapons. Cost: 2 sp. Weight: 4 lb.
+
+*Securis* (Handaxe): Simple weapon. 1d6 slashing, light, thrown (20/60 ft). A general camp axe adapted to combat use. Cost: 5 gp. Weight: 2 lb.
+
+*Spatha Longa* (Longsword): Martial weapon. 1d8 slashing, versatile (1d10 two-handed). The full-length sword available in limited supply through the *vicus* or eastern auxiliary traders. No *spatha* mounted reach property or formation penalty applies -- this is the standard D&D longsword, renamed. Cost: 15 gp. Weight: 3 lb.
+
+#### Captured and Non-Roman Weapons
+
+*Sarissa* (Macedonian/Caledonian Pike): Martial weapon. 1d10 piercing, heavy, reach, two-handed. Used by Caledonian warriors north of the Wall and by Macedonian descendants in eastern units. A soldier carrying one without an explanation will be questioned by any officer who sees it. Available only through combat capture or black market contacts. Weight: 18 lb.
+
+*Akinakes* (Sarmatian Short Sword): Martial weapon. 1d6 piercing, finesse, light. A short straight stabbing sword of Sarmatian and Parthian heavy cavalry. Used by eastern auxiliary riders and available through Sigrun's trade network. No *seax* momentum property -- the blade is designed for the thrust, not the cut. Cost: 8 gp. Weight: 2 lb.
 
 
 ### Ammunition Weight and Supply at Vindolanda
@@ -748,17 +805,25 @@ Every Roman soldier wears one. It is not optional; it is the mark of service its
 
 | Weapon | Class | Damage | Properties | Weight | Cost |
 |---|---|---|---|---|---|
+| *Akinakes* | Martial | 1d6 piercing | Finesse, light | 2 lb | 8 gp |
+| *Baculum* (Quarterstaff) | Simple | 1d6 bludgeoning | Versatile (1d8) | 4 lb | 2 sp |
+| *Clava* (Mace) | Simple | 1d6 bludgeoning | -- | 4 lb | 5 gp |
 | *Contus/Kontos* | Martial | 1d12 piercing | Two-handed, mounted only, charge strike (double damage) | 15 lb | 25 gp |
 | *Dolabra* | Martial | 1d8 piercing | Two-handed, double vs. structures | 5 lb | 3 gp |
 | *Falx* | Martial | 1d10 slashing | Two-handed, bypasses shields, legal risk | 7 lb | 15 gp |
 | *Framea* | Martial | 1d6/1d8 piercing | Versatile, thrown (20/60 ft), charge bonus | 4 lb | 2 gp |
 | *Fustis* | Simple | 1d4 bludgeoning | Versatile (1d6), improvised | 3 lb | 1 cp |
 | *Gladius* | Martial | 1d6 piercing/slashing | Finesse, formation bonus (+1 attack with ally in 5 ft) | 3 lb | 10 gp |
+| *Gladius Brevis* (Shortsword) | Martial | 1d6 piercing | Finesse, light | 2 lb | 10 gp |
 | *Hasta* | Martial | 1d8 piercing | Reach, two-handed, brace (double damage on charge OA) | 6 lb | 2 gp |
+| *Hastile Optioni* | Simple | 1d4 bludgeoning | Light, authority property (optio rank only) | 3 lb | -- |
 | *Pugio* | Simple | 1d4 piercing | Finesse, light, thrown (20/60 ft), adv. while grappling | 1 lb | 5 gp |
+| *Sarissa* (Pike) | Martial | 1d10 piercing | Heavy, reach, two-handed | 18 lb | captured |
 | *Seax* | Martial | 1d6 slashing | Finesse, light, momentum cut (+1d4 after moving 10 ft) | 2 lb | 5 gp |
+| *Securis* (Handaxe) | Simple | 1d6 slashing | Light, thrown (20/60 ft) | 2 lb | 5 gp |
 | *Spatha* | Martial | 1d8 slashing | Reach 10 ft (mounted only); disadv. in tight formation | 4 lb | 15 gp |
-| *Vitis* | Simple | 1d6 bludgeoning | Light, authority property (Roman soldiers only) | 2 lb | 2 sp |
+| *Spatha Longa* (Longsword) | Martial | 1d8 slashing | Versatile (1d10) | 3 lb | 15 gp |
+| *Vitis* | Simple | 1d6 bludgeoning | Light, authority property (centurion rank only) | 2 lb | 2 sp |
 
 **Thrown**
 
@@ -767,10 +832,12 @@ Every Roman soldier wears one. It is not optional; it is the mark of service its
 | *Angon* | Martial | 1d8 piercing | 20/40 ft | Barbed: catch on shield or body | 5 lb | 8 gp |
 | *Francisca* | Martial | 1d6 slashing | 15/30 ft | Near-miss Wisdom save DC 12 | 3 lb | 6 gp |
 | Heavy *Pilum* | Martial | 1d8 piercing | 30/60 ft | Shield destroyed on hit; does not bend back | 4 lb | 5 sp |
+| *Iaculum* (Javelin) | Simple | 1d6 piercing | 30/120 ft | Retrievable; not standard issue | 2 lb | 5 sp |
 | *Lancea* | Martial | 1d8 piercing | 20/40 ft (25/50 mounted) | +1d4 from horseback after 20 ft move | 4 lb | 3 gp |
 | Light *Pilum* | Martial | 1d6 piercing | 20/40 ft | +1d4 vs. unshielded; returnable by target | 2 lb | 3 sp |
 | Net (*Rete*) | Simple | -- | 5/15 ft | Restrained on hit; escape DC 10 + Str mod | 3 lb | 1 gp |
 | *Plumbata* | Simple | 1d4 piercing | 30/60 ft | Ignores half cover; clips to *scutum* | 0.5 lb | 1 sp/5 |
+| *Telum* (Dart) | Simple | 1d4 piercing | 20/60 ft | Finesse, retrievable | 0.25 lb | 5 cp ea. |
 | *Verutum* | Simple | 1d6 piercing | 20/40 ft | Retrievable; fails vs. testudo front | 1 lb | 1 sp |
 
 **Ranged**
@@ -778,7 +845,9 @@ Every Roman soldier wears one. It is not optional; it is the mark of service its
 | Weapon | Class | Damage | Range | Properties | Weight | Cost |
 |---|---|---|---|---|---|---|
 | *Arcuballista* | Martial | 1d10 piercing | 90/360 ft | Heavy, two-handed, loading; ignores non-pavise shields | 18 lb | 50 gp |
+| *Arcuballista Brevis* (Hand Crossbow) | Martial | 1d6 piercing | 30/120 ft | Light, loading; one-handed | 3 lb | 25 gp |
 | *Arcus Compositus* | Martial | 1d8 piercing | 80/320 ft | Two-handed; no mounted penalty | 2 lb | 35 gp |
+| *Arcus Magnus* (Longbow) | Martial | 1d8 piercing | 150/600 ft | Heavy, two-handed | 2 lb | 50 gp |
 | Sling (*Funda*) | Simple | by ammo | by ammo | See ammunition table for ammo-specific stats | 0.25 lb | 2 gp |
 
 **Shields**
@@ -789,6 +858,15 @@ Every Roman soldier wears one. It is not optional; it is the mark of service its
 | *Parma* (Germanic) | +2 | 1d4 bludgeoning | DC 12 Str save or push 5 ft | 6 lb | 7 gp |
 | *Scutum* | +2 | 1d6 bludgeoning | DC 13 Str save or push 5 ft + prone | 10 lb | 10 gp |
 | Siege Pavise | +5 (3/4 cover, static) | -- | -- | 30 lb | 5 gp |
+
+**Siege (Crew Weapons)**
+
+| Weapon | Crew | Damage | Range | Special | Weight |
+|---|---|---|---|---|---|
+| Ballista | 2 | 4d8 piercing | 120/480 ft | DC 14 Str save or knocked prone; 6d8 vs. vehicles/structures | 1,500 lb |
+| *Onager* | 4 | 5d8 bludgeoning | 200/800 ft | 10 ft radius; DC 14 Dex save half; full damage vs. structures | 1,800 lb |
+| *Polybolos* | 2 | 4d8 piercing | 120/480 ft | Fires twice/round (second at disadv.); jams on roll 1-5 | 600 lb |
+| *Scorpio* | 2 | 2d8 piercing | 120/480 ft | DC 12 Str save or pushed 10 ft; trained crew: fire+reload same round | 400 lb |
 
 
 ## Carrying Loads
