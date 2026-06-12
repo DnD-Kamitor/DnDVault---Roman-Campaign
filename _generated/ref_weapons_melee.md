@@ -15,3 +15,11 @@
 | Bipennis | Double-headed battle axe | 1d12 | slashing | 7 | 0 | heavy/two-handed | Germanic | personal_property |
 | Tridens | Gladiatorial trident | 1d6 | piercing | 4 | 15 | versatile 1d8/thrown 20/60 | Roman | arena |
 | Sica | Thraex curved blade | 1d6 | slashing | 3 | 10 | finesse/light | Roman | arena |
+| Hastile Optioni | Optio's knobbed staff | 1d4 | bludgeoning | 3 |  | light | Roman | restricted |
+| Gladius Brevis | Shortsword | 1d6 | piercing | 2 | 10 | finesse/light | Universal | standard |
+| Clava | Mace | 1d6 | bludgeoning | 4 | 5 |  | Universal | standard |
+| Baculum | Quarterstaff | 1d6 | bludgeoning | 4 | 0.2 | versatile 1d8 | Universal | standard |
+| Securis | Handaxe | 1d6 | slashing | 2 | 5 | light/thrown 20/60 | Universal | standard |
+| Spatha Longa | Longsword | 1d8 | slashing | 3 | 15 | versatile 1d10 | Universal | limited |
+| Sarissa | Pike | 1d10 | piercing | 18 |  | reach/two-handed | Germanic | black_market |
+| Akinakes | Akinakes (Sarmatian short sword) | 1d6 | piercing | 2 | 8 | finesse/light | Germanic | order |

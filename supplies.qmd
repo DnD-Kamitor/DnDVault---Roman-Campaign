@@ -146,6 +146,22 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 **Seax** (*seax*)
 
 *Action:* Attack action. *Effect:* 1d6 slashing, finesse, light. When you reduce a creature to 0 HP with a seax, you may make a free Intimidation check against one creature that can see you (DC 10 + creature CR). *When:* Sessions 3-5 (Germanic context; the seax reads differently than the pugio to Germanic NPCs, granting +2 to Charisma checks with Germanic characters who see it).
+
+**Hastile Optioni** (*hastile optioni*, Optio's knobbed staff)
+
+*Action:* Attack action. *Effect:* 1d4 bludgeoning, light. Carried instead of a *pilum* in formation. Authority property: when used to prod a Roman soldier within 5 ft back into position (bonus action), that soldier makes DC 11 Wisdom save or must comply immediately. The knobbed staff is a rank signal: every Roman soldier recognizes it. Carrying one without optio rank draws an immediate question from any sergeant or officer who sees it. *When:* Sessions 1-5 (if you hold the Optio role).
+
+**Class substitution melee weapons** (shortsword, mace, quarterstaff, handaxe, longsword)
+
+*Effect:* Standard D&D statistics apply. These weapons have no campaign-specific properties and do not benefit from Roman formation bonuses. They are included in the equipment table for players whose class substitutions (Monk, Cleric, Druid, Paladin, Rogue, Bard) specify them. Shortsword and longsword are available from the vicus smith or armory. Mace, quarterstaff, and handaxe are personal-purchase items; the armory does not issue them.
+
+**Akinakes** (*akinakes*)
+
+*Action:* Attack action. *Effect:* 1d6 piercing, finesse, light. Short stabbing sword of Sarmatian and Parthian cavalry; drawn when the kontos is spent. Proficiency transfers automatically from shortsword. Not available in the fort; personal property brought from home or obtained in Germanic territory. *When:* Available to cavalry-background characters from Session 1.
+
+**Pike** (*sarissa*)
+
+*Action:* Attack action. *Effect:* 1d10 piercing, reach (10 ft), heavy, two-handed. Cannot be used in spaces under 10 ft wide without disadvantage. Cannot be used in any Roman formation. Not issued; encountered on Germanic ambushers in Session 3 and available as a battlefield pickup. *When:* Session 3 forest ambush (enemy weapon); battlefield pickup only.
 :::
 
 #### Thrown Weapons
@@ -159,6 +175,8 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 | *Lancea* (cavalry javelin) | 5 | Limited (40) | Cavalry issue; armory sign-out |
 | *Francisca* (throwing axe) × 3 | 10 | Black market | Captured Germanic stock; irregular supply |
 | *Angon* (barbed spear) | 12 | Black market | Scarce; usually field-captured |
+| Dart (*telum*) × 10 | 1 | Standard | Vicus; class substitution for Monk |
+| Javelin (*iaculum*) | 1 | Standard | Fort quartermaster; class substitution weapon |
 
 ::: {.callout-note appearance="minimal" collapse="true"}
 ## Thrown weapon mechanics
@@ -190,6 +208,14 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 **Angon** (*angon*)
 
 *Action:* Attack action (thrown, 20/40 ft). *Effect:* 1d8 piercing. If the angon hits, it embeds like the heavy pilum but with a barbed head: the target is also grappled by the shaft until it uses an action to make DC 14 Strength check (the barb resists removal). You may use your Bonus Action to yank the embedded shaft: the grappled creature is pulled 5 feet toward you. Scarce; field-capture only. *When:* Sessions 3-5.
+
+**Dart** (*telum* × 10)
+
+*Action:* Attack action (thrown, 20/60 ft). *Effect:* 1d4 piercing, finesse. A weighted throwing spike; functionally close to the *plumbata* at short range but without the arc advantage. Carry up to 10 without encumbrance. Available from the vicus. Class substitution weapon for Monk characters. *When:* Sessions 1-5 as class substitution.
+
+**Javelin** (*iaculum*)
+
+*Action:* Attack action (thrown, 30/120 ft). *Effect:* 1d6 piercing. Standard thrown simple weapon; mechanically identical to the light pilum but without the shield-crippling property or sign-out requirement. Available from the fort quartermaster without requisition. Class substitution weapon for Cleric, Druid, and Paladin. *When:* Sessions 1-5 as class substitution.
 :::
 
 #### Ranged Weapons
@@ -198,9 +224,12 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 |---|---|---|---|
 | Sling (*Funda*) | 3 | In stock (10) | Simple braided leather; soldiers improvise their own |
 | Shortbow | 25 | Order | Not common on this frontier; any bowyer on convoy route |
+| Longbow (*Arcus Magnus*) | 80 | Order | Batavian or Germanic auxiliary source; Camp Level 2 |
+| Hand crossbow (*Arcuballista Brevis*) | 40 | Order | Personal purchase; not armory issue |
 | *Arcus Compositus* (composite bow) | 60 | Black market | Eastern auxiliary surplus; Sigrun can source at Camp Level 2 |
 | *Arcuballista*, wall-mounted | Fort asset | In stock (2) | Operational on the walls; not personal equipment |
 | *Arcuballista*, hand-carried | Materials + 10 d | Crafted (Camp L2) | Rufus assembles from ordered parts; takes 3 days |
+| Ballista | Fort asset | In stock (1) | Wall-mounted; second awaiting torsion cable repair |
 
 ::: {.callout-note appearance="minimal" collapse="true"}
 ## Ranged weapon mechanics
@@ -216,6 +245,18 @@ Camp Level upgrades shift some Order and Limited items. See `camp_economy.qmd` f
 **Arcus Compositus** (*arcus compositus*, composite bow)
 
 *Action:* Attack action (ranged, 100/400 ft). *Effect:* 1d8 piercing, two-handed. You may add your Strength modifier to the damage roll if positive (the Eastern composite stave is drawn with more power than a simple bow). A creature at short range (within 30 ft) takes +2 damage from the composite bow's superior draw weight. Black market or Camp Level 2 only. *When:* Sessions 2, 5 (open engagement range; this is the sniper's weapon at Vindolanda).
+
+**Longbow** (*arcus magnus*)
+
+*Action:* Attack action (ranged, 150/600 ft). *Effect:* 1d8 piercing, heavy, two-handed. Not standard Roman army issue; used by Batavian and Germanic auxiliary archers. Requires STR 11+ for a full draw: characters with STR 10 or lower have disadvantage on attack rolls. Class substitution option for Ranger, Fighter, and similar martial classes. Outranges everything else in the personal weapons category. *When:* Available from Camp Level 2 (Sigrun sources). Sessions 2-5.
+
+**Hand Crossbow** (*arcuballista brevis*)
+
+*Action:* Attack action (ranged, 30/120 ft). *Effect:* 1d6 piercing, light, loading (bonus action to reload). Not armory issue; personal purchase. Can be used in one hand alongside a shortsword or other one-handed weapon. The short range is the tradeoff for the compact size. Class substitution weapon for Bard and Rogue. *When:* Sessions 1-5 as class substitution; available from Camp Level 1 via order.
+
+**Ballista** (*ballista*)
+
+*Action:* Crew 2; one full action (both crew members act together to load and fire in the same round). *Effect:* 2d10 piercing, range 120/480 ft. On hit, target makes DC 14 Strength saving throw or is knocked prone. Aerial targets: a crew that has observed the creature's flight for at least 1 full round may attack without disadvantage (damage 1d10+4 piercing; the reduced die reflects the difficulty of leading a moving target). Fort asset; wall-mounted, cannot be repositioned during combat. *Skill synergy:* Engineer role reduces crew to 1 and action to a single Attack action. *Status at campaign start:* One ballista operational on the north wall. A second is non-functional (frayed torsion cable; Rufus can repair it at Camp Level 2 with appropriate materials). *When:* Session 4 siege defense.
 
 **Arcuballista, wall-mounted** (*arcuballista*)
 
