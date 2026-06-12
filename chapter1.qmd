@@ -333,6 +333,30 @@ The arrangement is too systematic for Germanic tribal practice. Tribes do not ca
 
 The shields are hung in a specific order by tribe symbol. A character who notes this arrangement and succeeds on DC 13 Intelligence can use it later in the Runic Corridor.
 
+**One of the Lost Men:**
+
+In the shadow to the left, half-covered by a stone bench that has partially tipped inward, lies a legionary in a bare tunic. His lorica is missing -- traded or removed to cover a wound at the shoulder, now dark and dried. His breathing is slow. This is Sicus, one of the four men Corvinus mentioned.
+
+- Perception DC 11 (passive): disturbed floor dust shows a drag trail from the entrance arch. Someone pulled him here and covered him. Not an ambush: concealment.
+- Medicine DC 9 (passive): he is stable, not dying. Two days without water is the problem.
+- A healing potion or healing spell brings him to 1 HP and consciousness within one round. Without one: a DC 12 Medicine check and water (the canteen in Corvinus's aide's satchel) revives him in two minutes. Either way he can speak.
+
+When he wakes, he speaks in short bursts, eyes tracking the vault entrance:
+
+> *"They came down before you. Three of them. Red cloaks, oil lamps. Didn't see me -- I had already hidden. I heard them go deeper. Then one came back alone. Short man, shaved head. He pulled something on the wall near the last chamber -- a lever. Heard it grind. He left by the passage on the left."*
+
+He was the first work crew member sent down three days ago. He entered the Shield Hall and ran immediately -- not a supernatural reaction, he says: just a soldier reading a room that wanted him dead. He hid when the cultists came down. He has been here since.
+
+What he gives the party:
+
+- The cultists arrived before the party did: someone with advance knowledge sent trained people into the vault before Corvinus's group.
+- There is a lever in the final chamber; the short cultist used it before leaving.
+- As he speaks he presses a carved bone token into the nearest character's hand -- OTHALAN, thumb-sized, found on the floor near the first arch. The cultists dropped it. This is the second contract token and confirms someone else has been moving through this vault with clear purpose.
+
+This token grants advantage on the Wight communication attempt (DC 14 Persuasion or Insight) in the Altar Chamber, stacking with the contract scroll if both are found.
+
+**DM: Sicus and the three-clue rule.** Sicus's intel covers Clue 1 of a subsidiary puzzle: the cultists were here before the party, meaning this mission was anticipated. He cannot fight. He stays at the back of any marching order and will not enter the Runic Corridor if combat sounds come from ahead. If the party leaves him to recover in the Shield Hall, he survives the session and can be found at the surface on return.
+
 **DM: the rune mapping encoded in the shield order.** The arrangement runs from the entrance to the archway, with Mars's wolf at the highest point above the far arch. The hierarchy reads: Marcomanni/boar is TIWAZ; Cherusci/three-fingered hand is HAGALAZ; Suebi/serpent is ISA; the mixed offerings are NAUDHIZ; Mars/wolf at the apex is OTHALAN. The hierarchy tells you which rune is most significant: OTHALAN, Mars's own symbol, sits highest. In the Runic Corridor, the safe step in every row is the OTHALAN rune — the one that belongs to Mars. The shield order explains *why* OTHALAN is always safe: it is the dominant symbol, the one all offerings ultimately answer to. A character who succeeds on DC 13 Intelligence and describes noting the arrangement carries this forward. Tell them: "The shields are arranged by significance, with Mars's wolf above all of them." They will recognise OTHALAN in the corridor and understand it immediately.
 
 No combat here. The shields don't move. They watch.
@@ -701,7 +725,29 @@ The spear faces toward Rome, toward the vault entrance, toward whoever enters. T
 
 </details>
 
-**Combat Encounter: 1 Wight (CR 3) + 2 Shadows (CR 1/2 each)**
+**The Lever:**
+
+A stone lever is set into the wall 5 feet right of the Runic Corridor entrance (visible as soon as the party enters the Altar Chamber). Sicus heard the cultist pull it. In its current position it holds a sliding stone slab partially filling the corridor exit: any creature attempting to leave through the Runic Corridor entrance must spend double movement for that 5-foot section (Difficult Terrain). Pulling the lever as an action reverses the slab and clears the passage. The Wight will not use the lever; it is not part of his role. The Cult Fanatic already pulled it.
+
+**Combat Encounter: 1 Wight (CR 3) + 1 Cult of Mars Fanatic (CR 2) + 2 Shadows (CR 1/2 each)**
+
+The Cult Fanatic descended hours before the party. He pulled the lever when he heard movement in the Runic Corridor. He was at the altar's far side conducting a ward-breaking ritual when the party enters. He acts on Initiative 10. On his first turn he draws a *gladius* and moves to flank whoever is nearest the spear. His goal is not to defeat the party: it is to ensure the spear leaves the altar and reaches Corvinus. He is willing to die for this and will act accordingly.
+
+**Cult Fanatic (adapted stat block):** AC 13 (leather armor + shield of faith cast on entry), HP 33 (6d8+6), Speed 30 ft. STR 10, DEX 12, CON 12, INT 10, WIS 13 (+3), CHA 14 (+4). Skills: Deception +4, Religion +2. Saving Throws: Wis +5. Spellcasting (Wisdom, DC 13, +5 attack): Cantrips — *sacred flame*, *thaumaturgy*. 1st level (3 slots) — *bane*, *inflict wounds*, *shield of faith*. 2nd level (2 slots) — *hold person*, *spiritual weapon*. Dark Devotion: advantage on saving throws vs. Charmed and Frightened. Multiattack: one *gladius* and one cantrip or spell. *Gladius*: +4 to hit, 1d6+2 piercing.
+
+**The OTHALAN Token (tactical mechanic):**
+
+The Wight carries the primary OTHALAN contract token on his person: an iron pin at the sternum holds a thumb-sized carved bone tile with the rune facing outward. The Shadows' binding runs through it; this is visible to any character with Religion proficiency (passive, no check required) once they can see the Wight clearly.
+
+A character who grapples the Wight (standard grapple rules) and then succeeds on a DC 13 Strength (Athletics) check as a separate action can wrench the token free. Alternatively, any attack specifically targeting the token (declared before rolling) targets AC 13; the token has 5 HP and shatters on a single hit.
+
+If the token leaves the Wight's possession or is destroyed: the Shadows lose their binding. For 1 round they cannot use Strength Drain and have −2 to attack rolls. After that round they act independently, targeting the nearest living creature rather than following the Wight's positioning. They remain in the chamber and still need to be dealt with.
+
+If taken intact: the token is a campaign item. It grants advantage on the Wight communication check (DC 14), stacking with the contract scroll.
+
+**Wight trait — Dark Resolve:**
+
+As long as any creature within 30 feet of the Wight is Frightened (from any source, including Shadow Strength Drain, a failed saving throw against the spear's presence, or a spell), the Wight regains 2 (1d4) hit points at the start of his turn. This is not a healing power: it is three centuries of obligation drawing sustenance from the thing it was always meant to protect against. He cannot choose to suppress it.
 
 **4-player adjustment:** This encounter is Deadly for 4 depleted players. If running with 4 players: start with only 1 Shadow visible; the second emerges from the wall only if the party ignores the exit condition and presses the attack. The exit condition (back away from the spear — Wight holds, Shadows stop) is the intended resolution for a depleted party. Do not force combat.
 

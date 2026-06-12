@@ -126,6 +126,22 @@ The morning BEFORE the Tribune arrives. Dawn watch. One of the fort's gate sentr
 **DM Direction:** Don't let them investigate the sentry's death now. The world has immediately moved on. They're holding an unsolved murder in their hands while an entirely new crisis walks through the gate.
 
 
+## Road Encounters (d8)
+
+The journey from Vindolanda north toward the chieftain's territory takes the better part of a day on the frontier road. Run 2–3 of these encounters, choosing or rolling randomly. Each is a 5–10 minute scene. They seed the session's themes, give scouts and naturalists something to do, and accumulate evidence the party can connect later.
+
+| d8 | Encounter |
+|---|---|
+| 1 | **Abandoned Shrine** — A roadside Lararium, three dead travelers around it, hands pressed to the stone as if they died praying. Freshly killed within 24 hours. No wounds. Investigation DC 13: faint scorch-marks on the stone, matching the vault's corruption signature. Someone is using sacred sites for something other than worship. |
+| 2 | **Shadow Stalkers** — Two Shadows from the vault have followed the spear (or whoever touched it last). They do not attack in daylight. At the first dusk camp they manifest. Perception DC 14 to notice them watching from the treeline before they commit. Placing the spear on the ground and covering it for the night makes them retreat. |
+| 3 | **Watching Eyes** — A Germanic warrior sits in a tree twenty feet off the road, making no effort to hide. If acknowledged by gesture — Insight DC 11 to read this as a test, not a threat — he drops down, walks past without speaking, and disappears into the forest. Vercingetorix's scouts are assessing the party's temperament. How the party responds here is noted. |
+| 4 | **Deserters** — Three Roman soldiers on the road moving fast, cloaks over their armor. They halt when they see the party. Not aggressive: frightened. They fled during the Session 2 raid. Persuasion DC 13 calms them; Intimidation DC 14 gets specific intel: they overheard the Tribune arguing with someone in Latin after the raid — *"This isn't what we agreed."* They can be sent back to the fort, released, or used as extra hands. |
+| 5 | **Ambushed Rider** — A military courier's horse stands alone on the road, rider missing. Saddlebags torn and scattered. Investigation DC 13: the rider's footprints lead into the forest, but the ambushers left no tracks — Survival DC 15 confirms this is impossible for any group. Survival DC 11: the rider was dragged backward, not chased. Scattered papers include a supply request sealed with a wax mark matching Handout 5's Senate correspondence. Someone is intercepting dispatches before they reach the fort. |
+| 6 | **Roadside Cultists** — Four Cult of Mars Initiates performing a ritual at a stone milestone, burning offerings and chanting. They scatter on sight. Investigation DC 12 at the ritual site: fresh blood, a carved OTHALAN rune burned into the stone, a clay soldier-figure with a pin through the head. Haruspex/Religion DC 13: this is an active curse rite targeting a specific person. The figure's crude armor marks it as optio-rank — potentially someone in the party's unit. |
+| 7 | **Swarm of Ravens** — Three hundred ravens fill the sky for one full round, all silent, in a column formation, then wheel north and vanish. Haruspex/Religion DC 12: a flock that moves like a marching column is directed attention, not natural behavior. The direction they turned is the direction the party is heading. Nature DC 13: there are at least three corvid species in that formation. Ravens do not flock with other species. Something is driving them. |
+| 8 | **Waylaid Convoy** — Two *vicus* traders from Vindolanda are on the road, cart blocked by a fallen tree. They are relieved to see the party. The older trader mentions that Aldric — *"the quiet scholar above the taberna, buys strange plants"* — paid him to carry a sealed message north last week. He doesn't know who received it. He just knows he felt wrong about it afterward and wished he hadn't taken the coin. He doesn't know what was in the message. He is just an ordinary man who made 3 *denarii* and has been uncomfortable since. |
+
+
 ## The Sextus Murder: A Three Clue Rule Mystery
 
 The dead sentry is not a dropped thread. It's the first evidence of Brutus' reach -- he has a sleeper agent inside the fort. The agent (Decanus Quintus Flavius, a 12-year veteran who owes his family's debts to a man connected to Brutus) killed Sextus when Sextus caught him tampering with the spear's storage chains the night before. He then carved "ROMA CADIT" as misdirection -- making it look like a Germanic or dissident act -- and left the fort with the Tribune's entourage, hiding in plain sight.
@@ -228,6 +244,31 @@ Cassia is in the shrine, surrounded by omen tablets, looking exhausted.
 She reveals the spear's true history if the party hasn't already learned it: it was used by a mortal hero to kill a minor divine being — one of Mars' demigod sons. Mars cursed it: whoever wields it with ambition will be consumed by war.
 
 *"The Tribune knows this. He isn't taking it to Rome — he's making sure it never arrives. Someone in Rome fears what it can do in the right hands. Or the wrong ones."*
+
+If the party stays to talk further, Cassia mentions a practical problem, almost as an afterthought:
+
+> *"Titus kept a supply of bog valerian. Valeriana palustris — grows in Germanic wetlands, standing water in forest clearings. I use it in the ward ritual. His supply is gone and I haven't been able to source more through the fort's traders. I have enough for one more full rite. After that the protective blessings on the standards and the principia run at half strength."*
+
+She can sketch the plant. She knows it grows in the forest clearings north of the road the party is taking in Session 3. Finding one bunch — five stalks — requires a DC 13 Nature check in any wetland clearing. Without it, her protective rites in Session 4 provide only the base ward effects, not the full resistance against supernatural fear. With it, full capacity.
+
+*She does not ask formally. She mentions it the way a tired professional mentions a supply problem she has learned to work around. The party can pursue it or not.*
+
+**The Scholar in the Vicus:**
+
+Aldric appears in the vicus as a Germanic-Latin translator and herb buyer, always polite, always slightly too interested in logistics. Road encounter 8 (or any inquiry into unusual *vicus* residents) can seed this conversation.
+
+If the party watches him closely during a conversation:
+
+- Insight DC 18 (active: watching him during a sustained exchange): He asks slightly too-precise questions about the party's departure direction, the spear's current location, and whether the Tribune is still in the fort. His framing is academic curiosity. The DC 18 reads the precision beneath the phrasing: these are intelligence questions structured to sound like small talk.
+- Investigation DC 14 (active: searching his quarters above the taberna, with or without permission): A folded note in cipher matching Handout 5's letter-shift format, addressed to a contact in a southern city: *"Artifact remains at Vindolanda. Party departed north. Tribune unsuccessful."* Signed with a raven-claw symbol, not initials.
+
+Confronted with evidence, Aldric does not fight. He is a professional who anticipated capture:
+
+> *"I was paid to observe. I observed. I sent reports. I did not harm anyone in this fort."*
+
+He will trade his entire contact chain — the raven-mark cipher key, the name of a secondary operative the party may encounter, the city where Brutus's people receive these reports — in exchange for his life and a two-hour head start. He delivers exactly what he promises and nothing more.
+
+**If the party ignores him:** He sends one more report north before they leave. In Session 3, the chieftain's people will have received advance notice of the party's approach. Whether this is advantageous, disadvantageous, or neutral depends entirely on how the party handled the Session 2 raid and Vercingetorix specifically.
 
 **Talking to Centurion Varro:**
 > *"Twenty years. I've served twenty years. You know what I've learned? The men who sail into a fort from Rome and relieve the commanding officer — they're not solving problems. They're managing them. For someone else."*
