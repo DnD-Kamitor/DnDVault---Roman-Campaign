@@ -2,559 +2,468 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Session 1 Vault — Vindolanda</title>
+<title>S1 Vault — Overview</title>
 <style>
-  body { margin: 0; background: #0d0b08; display: flex; justify-content: center; padding: 20px; }
-  svg { display: block; }
-  @media print {
-    body { background: white; padding: 0; }
-    svg { width: 100%; height: auto; }
-  }
+  body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 20px; }
+  svg { display: block; margin: 0 auto; }
+  .guide { max-width: 1200px; margin: 30px auto 0; }
+  .guide h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 6px; letter-spacing: 2px; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 12px; }
+  td, th { padding: 6px 10px; border: 1px solid #2a2018; vertical-align: top; }
+  th { background: #1a1510; color: #c8a850; text-align: left; }
+  tr:nth-child(even) td { background: #141210; }
+  tr:nth-child(odd) td { background: #0d0b08; }
+  .room-num { font-weight: bold; color: #c8a850; white-space: nowrap; }
+  .draw { color: #90c880; }
+  .enc { color: #c84040; }
+  .note { color: #8090b0; font-style: italic; }
+  @media print { body { background: white; color: black; } .guide h2, .room-num { color: #333; } }
 </style>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2260" viewBox="0 0 1200 2260">
 
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2200" viewBox="0 0 1200 2200">
 <defs>
-  <!-- Stone floor tile -->
   <pattern id="stone" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
     <rect width="40" height="40" fill="#7a6c58"/>
-    <rect x="1" y="1" width="17" height="17" fill="#8a7c68" opacity="0.5"/>
-    <rect x="22" y="22" width="16" height="16" fill="#6e6050" opacity="0.5"/>
-    <rect x="21" y="1" width="18" height="18" fill="#847668" opacity="0.4"/>
-    <rect x="1" y="21" width="19" height="17" fill="#7c6e5c" opacity="0.4"/>
+    <rect x="1" y="1" width="17" height="17" fill="#8a7c68" opacity="0.45"/>
+    <rect x="22" y="22" width="16" height="16" fill="#6e6050" opacity="0.45"/>
+    <rect x="21" y="1" width="18" height="18" fill="#847668" opacity="0.35"/>
+    <rect x="1" y="21" width="19" height="17" fill="#7c6e5c" opacity="0.35"/>
     <line x1="0" y1="0" x2="40" y2="0" stroke="#5a4e3e" stroke-width="0.8"/>
     <line x1="0" y1="0" x2="0" y2="40" stroke="#5a4e3e" stroke-width="0.8"/>
   </pattern>
-
-  <!-- Dark stone (lower passages) -->
   <pattern id="stone_dark" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
     <rect width="40" height="40" fill="#5e5448"/>
-    <rect x="1" y="1" width="17" height="17" fill="#68604e" opacity="0.5"/>
-    <rect x="22" y="22" width="16" height="16" fill="#524840" opacity="0.5"/>
+    <rect x="1" y="1" width="17" height="17" fill="#68604e" opacity="0.45"/>
+    <rect x="22" y="22" width="16" height="16" fill="#524840" opacity="0.45"/>
     <line x1="0" y1="0" x2="40" y2="0" stroke="#3a3028" stroke-width="0.8"/>
     <line x1="0" y1="0" x2="0" y2="40" stroke="#3a3028" stroke-width="0.8"/>
   </pattern>
-
-  <!-- Rune floor (Runic Corridor) -->
   <pattern id="runefloor" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
     <rect width="40" height="40" fill="#3e3428"/>
-    <rect x="0" y="0" width="40" height="40" fill="none" stroke="#2a2018" stroke-width="0.8"/>
-    <text x="20" y="26" text-anchor="middle" font-size="18" fill="rgba(120,200,255,0.55)" font-family="serif">ᚦ</text>
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#2a2018" stroke-width="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#2a2018" stroke-width="0.8"/>
+    <text x="20" y="27" text-anchor="middle" font-size="17" fill="rgba(110,190,255,0.5)" font-family="serif">ᚦ</text>
   </pattern>
-
-  <!-- Altar chamber floor -->
   <pattern id="stone_altar" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
     <rect width="40" height="40" fill="#6a5e4c"/>
-    <rect x="1" y="1" width="38" height="38" fill="none" stroke="#4a4030" stroke-width="0.6"/>
-    <circle cx="20" cy="20" r="3" fill="#584c3c" opacity="0.4"/>
     <line x1="0" y1="0" x2="40" y2="0" stroke="#4a4030" stroke-width="0.8"/>
     <line x1="0" y1="0" x2="0" y2="40" stroke="#4a4030" stroke-width="0.8"/>
   </pattern>
-
-  <!-- Water -->
   <pattern id="water" x="0" y="0" width="80" height="20" patternUnits="userSpaceOnUse">
     <rect width="80" height="20" fill="#162a42"/>
     <path d="M0,10 Q20,4 40,10 Q60,16 80,10" stroke="#1e3a58" stroke-width="1.5" fill="none"/>
-    <path d="M0,16 Q20,10 40,16 Q60,22 80,16" stroke="#1a3450" stroke-width="1" fill="none" opacity="0.5"/>
   </pattern>
-
-  <!-- Grid overlay -->
   <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
     <path d="M40 0 L0 0 0 40" fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="0.6"/>
   </pattern>
-
-  <!-- Clip for Altar Chamber circle -->
-  <clipPath id="altarCircle">
-    <circle cx="600" cy="2040" r="185"/>
-  </clipPath>
-
-  <!-- Glow filter for runes -->
-  <filter id="runeGlow" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="3" result="blur"/>
-    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feComposite in="SourceGraphic" in2="b" operator="over"/>
   </filter>
 </defs>
 
-<!-- ============================================================ -->
 <!-- BACKGROUND -->
-<!-- ============================================================ -->
-<rect width="1200" height="2260" fill="#0d0b08"/>
+<rect width="1200" height="2200" fill="#0d0b08"/>
 
-<!-- ============================================================ -->
 <!-- TITLE -->
-<!-- ============================================================ -->
-<text x="600" y="35" text-anchor="middle" font-size="20" font-family="Georgia, serif"
-      fill="#c8a85a" letter-spacing="3">VAULT BENEATH FORT VINDOLANDA</text>
-<text x="600" y="54" text-anchor="middle" font-size="11" font-family="Georgia, serif"
-      fill="#7a6840">Session 1 · Blood and Omens · Each square = 5 ft</text>
-<line x1="80" y1="62" x2="1120" y2="62" stroke="#3a3020" stroke-width="1"/>
+<text x="600" y="34" text-anchor="middle" font-size="18" font-family="Georgia,serif" fill="#c8a85a" letter-spacing="3">VAULT BENEATH FORT VINDOLANDA</text>
+<text x="600" y="52" text-anchor="middle" font-size="10" font-family="Georgia,serif" fill="#7a6840">Session 1 · Each square = 5 ft</text>
+<line x1="80" y1="60" x2="1120" y2="60" stroke="#3a3020" stroke-width="1"/>
 
-<!-- ============================================================ -->
-<!-- FLOOR AREAS — all stone fills first -->
-<!-- ============================================================ -->
-
-<!-- SHAFT (3sq × 2sq) -->
-<rect x="540" y="75" width="120" height="80" fill="url(#stone)"/>
-
-<!-- ENTRY PASSAGE (2sq × 7sq) -->
-<rect x="560" y="155" width="80" height="280" fill="url(#stone)"/>
-
-<!-- T-JUNCTION HORIZONTAL CORRIDOR (spans left to right) -->
-<rect x="80" y="435" width="790" height="80" fill="url(#stone)"/>
-
-<!-- SHIELD HALL — LEFT BRANCH (10sq × 12sq) -->
-<rect x="80" y="515" width="400" height="480" fill="url(#stone)"/>
-
-<!-- FLOODED GALLERY — RIGHT BRANCH (6sq × 10sq) -->
-<rect x="820" y="515" width="240" height="400" fill="url(#stone)"/>
-
-<!-- BONE CHAMBER (8sq × 8sq) -->
-<rect x="800" y="915" width="320" height="320" fill="url(#stone_dark)"/>
-
-<!-- WATER OVERLAY in Flooded Gallery -->
-<rect x="820" y="615" width="240" height="200" fill="url(#water)" opacity="0.9"/>
-
-<!-- LEFT MERGE CORRIDOR (2sq × 9sq, Shield Hall south → Binding Chamber) -->
-<rect x="360" y="995" width="80" height="345" fill="url(#stone_dark)"/>
-
-<!-- RIGHT MERGE vertical (2sq × 2.5sq, Bone Chamber south) -->
-<rect x="820" y="1235" width="80" height="105" fill="url(#stone_dark)"/>
-
-<!-- RIGHT MERGE horizontal connector (joining right vert. to left vert.) -->
-<rect x="440" y="1275" width="380" height="65" fill="url(#stone_dark)"/>
-
-<!-- BINDING CHAMBER (12sq × 5sq) -->
+<!-- ═══ FLOORS ═══ -->
+<rect x="540" y="72" width="120" height="80" fill="url(#stone)"/>
+<rect x="560" y="152" width="80" height="280" fill="url(#stone)"/>
+<rect x="80" y="432" width="790" height="80" fill="url(#stone)"/>
+<rect x="80" y="512" width="400" height="480" fill="url(#stone)"/>
+<rect x="820" y="512" width="240" height="400" fill="url(#stone)"/>
+<rect x="800" y="912" width="320" height="320" fill="url(#stone_dark)"/>
+<!-- water overlay -->
+<rect x="820" y="612" width="240" height="200" fill="url(#water)" opacity="0.9"/>
+<rect x="360" y="992" width="80" height="348" fill="url(#stone_dark)"/>
+<rect x="820" y="1232" width="80" height="108" fill="url(#stone_dark)"/>
+<rect x="440" y="1272" width="380" height="68" fill="url(#stone_dark)"/>
 <rect x="360" y="1340" width="480" height="200" fill="url(#stone_dark)"/>
-
-<!-- RUNIC CORRIDOR (4sq × 7sq) -->
 <rect x="520" y="1540" width="160" height="280" fill="url(#runefloor)"/>
+<rect x="380" y="1820" width="440" height="420" fill="url(#stone_altar)"/>
+<circle cx="600" cy="2030" r="185" fill="url(#stone_altar)"/>
 
-<!-- ALTAR CHAMBER (circular room, rect backing then clipped circle) -->
-<rect x="380" y="1820" width="440" height="440" fill="url(#stone_altar)"/>
-<circle cx="600" cy="2040" r="185" fill="url(#stone_altar)"/>
+<!-- ═══ GRID ═══ -->
+<rect x="0" y="0" width="1200" height="2200" fill="url(#grid)"/>
 
-<!-- ============================================================ -->
-<!-- GRID OVERLAY (applied over all floors) -->
-<!-- ============================================================ -->
-<rect x="0" y="0" width="1200" height="2260" fill="url(#grid)" opacity="1"/>
-
-<!-- ============================================================ -->
-<!-- WALL OUTLINES — thick dark borders around rooms -->
-<!-- ============================================================ -->
+<!-- ═══ WALLS ═══ -->
 <g fill="none" stroke="#1a1410" stroke-width="5" stroke-linejoin="round">
-  <!-- Shaft outline -->
-  <rect x="540" y="75" width="120" height="80"/>
-  <!-- Entry passage -->
-  <rect x="560" y="155" width="80" height="280"/>
-  <!-- T-junction bar -->
-  <rect x="80" y="435" width="790" height="80"/>
-  <!-- Shield Hall -->
-  <rect x="80" y="515" width="400" height="480"/>
-  <!-- Flooded Gallery -->
-  <rect x="820" y="515" width="240" height="400"/>
-  <!-- Bone Chamber -->
-  <rect x="800" y="915" width="320" height="320"/>
-  <!-- Left merge corridor -->
-  <rect x="360" y="995" width="80" height="345"/>
-  <!-- Right merge vertical -->
-  <rect x="820" y="1235" width="80" height="105"/>
-  <!-- Right merge horizontal -->
-  <rect x="440" y="1275" width="380" height="65"/>
-  <!-- Binding Chamber -->
+  <rect x="540" y="72" width="120" height="80"/>
+  <rect x="560" y="152" width="80" height="280"/>
+  <rect x="80" y="432" width="790" height="80"/>
+  <rect x="80" y="512" width="400" height="480"/>
+  <rect x="820" y="512" width="240" height="400"/>
+  <rect x="800" y="912" width="320" height="320"/>
+  <rect x="360" y="992" width="80" height="348"/>
+  <rect x="820" y="1232" width="80" height="108"/>
+  <rect x="440" y="1272" width="380" height="68"/>
   <rect x="360" y="1340" width="480" height="200"/>
-  <!-- Runic Corridor -->
   <rect x="520" y="1540" width="160" height="280"/>
-  <!-- Altar Chamber rect -->
-  <rect x="380" y="1820" width="440" height="440"/>
-  <!-- Altar Chamber circle -->
-  <circle cx="600" cy="2040" r="185"/>
+  <rect x="380" y="1820" width="440" height="420"/>
+  <circle cx="600" cy="2030" r="185"/>
 </g>
 
-<!-- ============================================================ -->
-<!-- OPEN ARCHWAYS — erase wall segments where passages connect -->
-<!-- (white rectangle gaps in walls = open archway/passage) -->
-<!-- ============================================================ -->
+<!-- ═══ ARCHWAY GAPS (erase wall at openings) ═══ -->
 <g fill="#0d0b08">
-  <!-- Shaft → Entry Passage (bottom of shaft / top of passage) -->
-  <rect x="565" y="150" width="70" height="10"/>
-  <!-- Entry Passage → T-junction (bottom of passage / top of T-junction) -->
-  <rect x="565" y="430" width="70" height="10"/>
-  <!-- T-junction → Shield Hall (left connector, bottom of T-junction) -->
-  <rect x="85" y="510" width="70" height="10"/>
-  <!-- T-junction → Shield Hall (wider left opening) -->
-  <rect x="255" y="510" width="70" height="10"/>
-  <!-- T-junction → Flooded Gallery (right side bottom) -->
-  <rect x="825" y="510" width="70" height="10"/>
-  <!-- Flooded Gallery → Bone Chamber -->
-  <rect x="825" y="910" width="70" height="10"/>
-  <!-- Shield Hall → Left Merge Corridor (south wall of Shield Hall) -->
-  <rect x="365" y="990" width="70" height="10"/>
-  <!-- Bone Chamber → Right Merge (south wall) -->
-  <rect x="825" y="1230" width="70" height="10"/>
-  <!-- Left Merge Corridor → Binding Chamber -->
-  <rect x="365" y="1335" width="70" height="10"/>
-  <!-- Right Merge → Binding Chamber (right side of binding chamber) -->
-  <rect x="795" y="1335" width="70" height="10"/>
-  <!-- Binding Chamber → Runic Corridor -->
-  <rect x="525" y="1535" width="70" height="10"/>
-  <!-- Runic Corridor → Altar Chamber -->
-  <rect x="525" y="1815" width="70" height="10"/>
+  <rect x="564" y="148" width="72" height="8"/>
+  <rect x="564" y="428" width="72" height="8"/>
+  <rect x="84"  y="508" width="72" height="8"/>
+  <rect x="244" y="508" width="72" height="8"/>
+  <rect x="824" y="508" width="72" height="8"/>
+  <rect x="824" y="908" width="72" height="8"/>
+  <rect x="364" y="988" width="72" height="8"/>
+  <rect x="824" y="1228" width="72" height="8"/>
+  <rect x="364" y="1336" width="72" height="8"/>
+  <rect x="796" y="1336" width="72" height="8"/>
+  <rect x="524" y="1536" width="72" height="8"/>
+  <rect x="524" y="1816" width="72" height="8"/>
+  <!-- shared wall erasures -->
+  <rect x="84"  y="510" width="372" height="5"/>
+  <rect x="824" y="510" width="232" height="5"/>
+  <rect x="364" y="1337" width="72" height="5"/>
+  <rect x="796" y="1337" width="48" height="5"/>
+  <rect x="524" y="1537" width="152" height="5"/>
+  <rect x="524" y="1817" width="152" height="5"/>
+  <rect x="824" y="1270" width="72" height="5"/>
 </g>
 
-<!-- ============================================================ -->
-<!-- INTERNAL WALL REMOVAL (where rooms share a wall) -->
-<!-- ============================================================ -->
-<g fill="#0d0b08">
-  <!-- T-junction/Shield Hall shared top wall (erasure so Shield Hall opens into T) -->
-  <rect x="85" y="512" width="370" height="6"/>
-  <!-- T-junction/Flooded Gallery shared top wall -->
-  <rect x="825" y="512" width="230" height="6"/>
-  <!-- Left merge / Binding Chamber shared wall -->
-  <rect x="365" y="1337" width="70" height="6"/>
-  <!-- Right merge vertical / Right merge horizontal connection -->
-  <rect x="825" y="1272" width="70" height="8"/>
-  <!-- Right merge horizontal / Binding Chamber -->
-  <rect x="795" y="1337" width="45" height="6"/>
-  <!-- Runic Corridor / Binding Chamber -->
-  <rect x="525" y="1537" width="150" height="6"/>
-  <!-- Runic Corridor / Altar Chamber -->
-  <rect x="525" y="1817" width="150" height="6"/>
+<!-- ═══ GRAPHICAL FEATURES (no text) ═══ -->
+
+<!-- Rope ladder in shaft -->
+<g stroke="#8a7050" stroke-width="1.5" opacity="0.6">
+  <line x1="564" y1="78" x2="564" y2="148"/>
+  <line x1="576" y1="78" x2="576" y2="148"/>
+  <line x1="564" y1="95"  x2="576" y2="95"/>
+  <line x1="564" y1="112" x2="576" y2="112"/>
+  <line x1="564" y1="129" x2="576" y2="129"/>
 </g>
 
-<!-- ============================================================ -->
-<!-- SPECIAL FEATURES -->
-<!-- ============================================================ -->
+<!-- NOLITE scratches on passage wall -->
+<text x="546" y="310" font-size="7" font-family="monospace" fill="#6a5a40" opacity="0.65"
+      transform="rotate(-90,546,310)">NOLITE</text>
 
-<!-- SICUS (wounded soldier) in Shield Hall — marker -->
-<circle cx="170" cy="640" r="10" fill="#c87040" opacity="0.85"/>
-<text x="170" y="645" text-anchor="middle" font-size="9" font-family="monospace" fill="white">S</text>
+<!-- Shields on Shield Hall walls (visual only) -->
+<g fill="none" stroke="#8a7858" stroke-width="1.2" opacity="0.55">
+  <!-- W wall row -->
+  <rect x="86" y="524" width="16" height="20" rx="2"/>
+  <rect x="86" y="548" width="16" height="20" rx="2"/>
+  <rect x="86" y="572" width="16" height="20" rx="2"/>
+  <rect x="86" y="596" width="16" height="20" rx="2"/>
+  <rect x="86" y="620" width="16" height="20" rx="2"/>
+  <rect x="86" y="644" width="16" height="20" rx="2"/>
+  <rect x="86" y="668" width="16" height="20" rx="2"/>
+  <rect x="86" y="692" width="16" height="20" rx="2"/>
+  <rect x="86" y="716" width="16" height="20" rx="2"/>
+  <rect x="86" y="740" width="16" height="20" rx="2"/>
+  <rect x="86" y="764" width="16" height="20" rx="2"/>
+  <rect x="86" y="788" width="16" height="20" rx="2"/>
+  <rect x="86" y="812" width="16" height="20" rx="2"/>
+  <rect x="86" y="836" width="16" height="20" rx="2"/>
+  <rect x="86" y="860" width="16" height="20" rx="2"/>
+  <rect x="86" y="884" width="16" height="20" rx="2"/>
+  <!-- N wall row -->
+  <rect x="112" y="518" width="20" height="16" rx="2"/>
+  <rect x="140" y="518" width="20" height="16" rx="2"/>
+  <rect x="168" y="518" width="20" height="16" rx="2"/>
+  <rect x="196" y="518" width="20" height="16" rx="2"/>
+  <rect x="224" y="518" width="20" height="16" rx="2"/>
+  <rect x="252" y="518" width="20" height="16" rx="2"/>
+  <rect x="280" y="518" width="20" height="16" rx="2"/>
+  <rect x="308" y="518" width="20" height="16" rx="2"/>
+  <rect x="336" y="518" width="20" height="16" rx="2"/>
+  <rect x="364" y="518" width="20" height="16" rx="2"/>
+  <rect x="392" y="518" width="20" height="16" rx="2"/>
+  <rect x="420" y="518" width="20" height="16" rx="2"/>
+  <rect x="448" y="518" width="20" height="16" rx="2"/>
+</g>
 
-<!-- HIDDEN ALCOVE — dotted outline on west wall of Shield Hall -->
-<rect x="82" y="710" width="100" height="110" fill="none"
-      stroke="#b89040" stroke-width="2" stroke-dasharray="6,4" opacity="0.7"/>
-<text x="132" y="752" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c8a850">HIDDEN</text>
-<text x="132" y="764" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c8a850">ALCOVE</text>
-<text x="132" y="776" text-anchor="middle" font-size="7" font-family="Georgia, serif"
-      fill="#9a8040">Inv DC 15</text>
+<!-- Sicus — wounded soldier (orange dot) -->
+<circle cx="160" cy="640" r="11" fill="#c87040" opacity="0.85"/>
+<text x="160" y="645" text-anchor="middle" font-size="9" font-family="monospace" fill="white" font-weight="bold">S</text>
 
-<!-- PRESERVED WARRIOR in Flooded Gallery -->
-<rect x="868" y="790" width="40" height="40" fill="#1a3550" stroke="#3a6080" stroke-width="2"/>
-<text x="888" y="810" text-anchor="middle" font-size="10" font-family="serif" fill="#7ab0d8">⚔</text>
-<text x="888" y="822" text-anchor="middle" font-size="7" font-family="Georgia, serif" fill="#7ab0d8">WARRIOR</text>
+<!-- Hidden alcove — dotted outline -->
+<rect x="84" y="710" width="100" height="110" fill="none" stroke="#c8a040" stroke-width="2"
+      stroke-dasharray="6,4" opacity="0.65"/>
 
-<!-- BONE CHAMBER — collapsed section (rubble) -->
-<polygon points="1000,940 1100,940 1110,990 990,985" fill="#4a4038" stroke="#3a3028" stroke-width="1"/>
-<text x="1050" y="968" text-anchor="middle" font-size="8" fill="#8a7858">RUBBLE</text>
+<!-- Shadow icons in Flooded Gallery water -->
+<g opacity="0.55">
+  <circle cx="845" cy="670" r="9" fill="#303848"/>
+  <circle cx="895" cy="700" r="9" fill="#303848"/>
+  <circle cx="985" cy="680" r="9" fill="#303848"/>
+  <circle cx="1025" cy="730" r="9" fill="#303848"/>
+</g>
 
-<!-- BONE CHAMBER — stone benches -->
-<rect x="808" y="1020" width="80" height="16" fill="#5a5040" stroke="#3a3028" stroke-width="1"/>
-<rect x="808" y="1065" width="80" height="16" fill="#5a5040" stroke="#3a3028" stroke-width="1"/>
-<rect x="808" y="1110" width="80" height="16" fill="#5a5040" stroke="#3a3028" stroke-width="1"/>
+<!-- Preserved warrior (Flooded Gallery, below waterline) -->
+<rect x="864" y="795" width="38" height="38" rx="3" fill="#1a3550" stroke="#3a5870" stroke-width="1.5"/>
+<text x="883" y="819" text-anchor="middle" font-size="14" font-family="serif" fill="#6aA0c8">⚔</text>
 
-<!-- BINDING CHAMBER — hanging chains -->
-<g stroke="#8a9ab0" stroke-width="1.5" opacity="0.7">
+<!-- Bone Chamber features -->
+<polygon points="1000,920 1110,920 1118,985 990,980" fill="#4a4038" stroke="#3a3028" stroke-width="1.2"/>
+<rect x="808" y="1020" width="80" height="14" rx="2" fill="#5a5040" stroke="#3a3028" stroke-width="1"/>
+<rect x="808" y="1060" width="80" height="14" rx="2" fill="#5a5040" stroke="#3a3028" stroke-width="1"/>
+<rect x="808" y="1100" width="80" height="14" rx="2" fill="#5a5040" stroke="#3a3028" stroke-width="1"/>
+<!-- encounter marker -->
+<circle cx="955" cy="1080" r="14" fill="none" stroke="#c84040" stroke-width="2" stroke-dasharray="4,3"/>
+<text x="955" y="1085" text-anchor="middle" font-size="11" fill="#c84040">!</text>
+
+<!-- Binding Chamber — chains -->
+<g stroke="#8a9ab0" stroke-width="1.5" opacity="0.65">
   <line x1="440" y1="1345" x2="440" y2="1535"/>
   <line x1="500" y1="1345" x2="500" y2="1535"/>
   <line x1="560" y1="1345" x2="560" y2="1535"/>
   <line x1="620" y1="1345" x2="620" y2="1535"/>
   <line x1="680" y1="1345" x2="680" y2="1535"/>
   <line x1="740" y1="1345" x2="740" y2="1535"/>
-  <!-- Chain collars (horizontal connectors) -->
-  <rect x="425" y="1400" width="30" height="8" fill="none" stroke="#8a9ab0" stroke-width="1.5"/>
-  <rect x="485" y="1440" width="30" height="8" fill="none"/>
-  <rect x="545" y="1420" width="30" height="8" fill="none"/>
-  <rect x="605" y="1460" width="30" height="8" fill="none"/>
+  <line x1="800" y1="1345" x2="800" y2="1535"/>
+  <rect x="425" y="1398" width="30" height="7" fill="none" stroke="#8a9ab0" stroke-width="1.5"/>
+  <rect x="545" y="1418" width="30" height="7" fill="none" stroke="#8a9ab0" stroke-width="1.5"/>
+  <rect x="665" y="1438" width="30" height="7" fill="none" stroke="#8a9ab0" stroke-width="1.5"/>
 </g>
-<!-- TIWAZ rune carved on wall -->
-<text x="820" y="1445" font-size="20" font-family="serif" fill="#6a7a90" opacity="0.8">ᛏ</text>
+<!-- TIWAZ on wall -->
+<text x="818" y="1445" font-size="22" font-family="serif" fill="#6a7a90" opacity="0.75">ᛏ</text>
 
-<!-- RUNIC CORRIDOR — glowing rune labels in the floor -->
-<g filter="url(#runeGlow)">
-  <text x="525" y="1570" font-size="11" font-family="serif" fill="rgba(100,180,255,0.8)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
-  <text x="525" y="1615" font-size="11" font-family="serif" fill="rgba(100,180,255,0.75)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
-  <text x="525" y="1660" font-size="11" font-family="serif" fill="rgba(100,180,255,0.7)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
-  <text x="525" y="1705" font-size="11" font-family="serif" fill="rgba(100,180,255,0.7)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
-  <text x="525" y="1750" font-size="11" font-family="serif" fill="rgba(100,180,255,0.65)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
-  <text x="525" y="1795" font-size="11" font-family="serif" fill="rgba(100,180,255,0.65)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
+<!-- Runic Corridor — glowing rune rows -->
+<g filter="url(#glow)" opacity="0.8">
+  <text x="524" y="1568" font-size="10" font-family="serif" fill="rgba(100,180,255,0.75)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
+  <text x="524" y="1610" font-size="10" font-family="serif" fill="rgba(100,180,255,0.72)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
+  <text x="524" y="1652" font-size="10" font-family="serif" fill="rgba(100,180,255,0.68)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
+  <text x="524" y="1694" font-size="10" font-family="serif" fill="rgba(100,180,255,0.65)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
+  <text x="524" y="1736" font-size="10" font-family="serif" fill="rgba(100,180,255,0.62)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
+  <text x="524" y="1778" font-size="10" font-family="serif" fill="rgba(100,180,255,0.60)">ᛏ ᚺ ᚾ ᛁ ᛟ</text>
 </g>
 
-<!-- ALTAR CHAMBER — altar stone -->
-<rect x="565" y="1875" width="70" height="40" rx="4" fill="#4a4038" stroke="#8a7858" stroke-width="2"/>
-<text x="600" y="1900" text-anchor="middle" font-size="8" fill="#b89850">ALTAR</text>
-
-<!-- ALTAR CHAMBER — spear on altar (glowing) -->
-<line x1="598" y1="1875" x2="602" y2="1917" stroke="#c84020" stroke-width="3" opacity="0.9"/>
-<ellipse cx="600" cy="1875" rx="6" ry="4" fill="#c84020" opacity="0.7"/>
-<circle cx="600" cy="1875" r="12" fill="none" stroke="#c84020" stroke-width="1"
-        stroke-dasharray="4,3" opacity="0.5"/>
-
-<!-- ALTAR CHAMBER — 7 standing stones in circle -->
+<!-- Altar Chamber — 7 standing stones -->
 <g fill="#5a5040" stroke="#3a3028" stroke-width="1.5">
-  <rect x="594" y="1870" width="12" height="30" rx="2"/>  <!-- N -->
-  <rect x="548" y="1883" width="12" height="30" rx="2" transform="rotate(-50,554,898)"/>  <!-- NW approx -->
-  <rect x="636" y="1883" width="12" height="30" rx="2" transform="rotate(50,642,898)"/>  <!-- NE approx -->
-  <rect x="420" y="2030" width="12" height="30" rx="2"/>  <!-- W -->
-  <rect x="768" y="2030" width="12" height="30" rx="2"/>  <!-- E -->
-  <rect x="455" y="2160" width="12" height="30" rx="2"/>  <!-- SW approx -->
-  <rect x="733" y="2160" width="12" height="30" rx="2"/>  <!-- SE approx -->
+  <rect x="592" y="1860" width="16" height="32" rx="3"/>
+  <rect x="688" y="1895" width="16" height="32" rx="3"/>
+  <rect x="738" y="1998" width="16" height="32" rx="3"/>
+  <rect x="680" y="2146" width="16" height="32" rx="3"/>
+  <rect x="504" y="2146" width="16" height="32" rx="3"/>
+  <rect x="444" y="1998" width="16" height="32" rx="3"/>
+  <rect x="494" y="1895" width="16" height="32" rx="3"/>
 </g>
-
-<!-- ALTAR CHAMBER — wight position marker -->
-<circle cx="600" cy="1960" r="10" fill="#602050" opacity="0.8"/>
-<text x="600" y="1965" text-anchor="middle" font-size="9" font-family="monospace" fill="white">W</text>
-
-<!-- LEVER marker (right of Runic Corridor entrance) -->
-<rect x="672" y="1545" width="12" height="20" rx="2" fill="#8a7040" stroke="#6a5030" stroke-width="1"/>
-<text x="678" y="1540" text-anchor="middle" font-size="7" font-family="Georgia, serif" fill="#b89850">LEVER</text>
-
-<!-- SHAFT — rope ladder hint -->
-<g stroke="#8a7050" stroke-width="1.5" opacity="0.6">
-  <line x1="565" y1="80" x2="565" y2="150"/>
-  <line x1="575" y1="80" x2="575" y2="150"/>
-  <line x1="565" y1="95" x2="575" y2="95"/>
-  <line x1="565" y1="115" x2="575" y2="115"/>
-  <line x1="565" y1="135" x2="575" y2="135"/>
-</g>
-
-<!-- NOLITE warning scratched in passage wall -->
-<text x="543" y="300" font-size="8" font-family="monospace" fill="#7a6a50" opacity="0.7"
-      transform="rotate(-90, 543, 300)">NOLITE</text>
-
-<!-- ============================================================ -->
-<!-- ENCOUNTER ICONS -->
-<!-- ============================================================ -->
-
-<!-- Bone Chamber encounter mark -->
-<circle cx="960" cy="1080" r="14" fill="none" stroke="#c84040" stroke-width="2" stroke-dasharray="4,3"/>
-<text x="960" y="1085" text-anchor="middle" font-size="10" font-family="monospace" fill="#c84040">!</text>
-
-<!-- Altar Chamber encounter mark -->
+<!-- Altar stone -->
+<rect x="568" y="1892" width="64" height="36" rx="4" fill="#4a4038" stroke="#8a7858" stroke-width="2"/>
+<!-- Spear (glowing) -->
+<line x1="600" y1="1890" x2="600" y2="1928" stroke="#c04020" stroke-width="3" opacity="0.9"/>
+<ellipse cx="600" cy="1888" rx="6" ry="4" fill="#c04020" opacity="0.75"/>
+<circle cx="600" cy="1888" r="12" fill="none" stroke="#c04020" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+<!-- Wight marker -->
+<circle cx="600" cy="1965" r="11" fill="#602050" opacity="0.8"/>
+<text x="600" y="1969" text-anchor="middle" font-size="9" fill="white" font-weight="bold">W</text>
+<!-- Encounter marker -->
 <circle cx="600" cy="2090" r="14" fill="none" stroke="#c84040" stroke-width="2" stroke-dasharray="4,3"/>
-<text x="600" y="2095" text-anchor="middle" font-size="10" font-family="monospace" fill="#c84040">!</text>
+<text x="600" y="2095" text-anchor="middle" font-size="11" fill="#c84040">!</text>
+<!-- Lever -->
+<rect x="672" y="1826" width="12" height="20" rx="2" fill="#8a7040" stroke="#6a5030" stroke-width="1"/>
 
-<!-- Flooded Gallery shadow indicators -->
-<g opacity="0.5">
-  <circle cx="845" cy="680" r="8" fill="#303848"/>
-  <circle cx="885" cy="720" r="8" fill="#303848"/>
-  <circle cx="985" cy="700" r="8" fill="#303848"/>
-  <circle cx="1025" cy="750" r="8" fill="#303848"/>
+<!-- ═══ ROOM NUMBER CIRCLES ═══ -->
+<g font-family="Georgia,serif" font-weight="bold">
+  <!-- 1: Shaft -->
+  <circle cx="600" cy="112" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+  <text x="600" y="117" text-anchor="middle" font-size="11" fill="#c8a850">1</text>
+  <!-- 2: Entry Passage -->
+  <circle cx="536" cy="290" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+  <text x="536" y="295" text-anchor="middle" font-size="11" fill="#c8a850">2</text>
+  <!-- 3: T-Junction -->
+  <circle cx="600" cy="472" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+  <text x="600" y="477" text-anchor="middle" font-size="11" fill="#c8a850">3</text>
+  <!-- 4: Shield Hall -->
+  <circle cx="280" cy="752" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+  <text x="280" y="757" text-anchor="middle" font-size="11" fill="#c8a850">4</text>
+  <!-- 5: Flooded Gallery -->
+  <circle cx="940" cy="715" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+  <text x="940" y="720" text-anchor="middle" font-size="11" fill="#c8a850">5</text>
+  <!-- 6: Bone Chamber -->
+  <circle cx="960" cy="1072" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+  <text x="960" y="1077" text-anchor="middle" font-size="11" fill="#c8a850">6</text>
+  <!-- 7: Binding Chamber -->
+  <circle cx="600" cy="1440" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+  <text x="600" y="1445" text-anchor="middle" font-size="11" fill="#c8a850">7</text>
+  <!-- 8: Runic Corridor -->
+  <circle cx="664" cy="1680" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+  <text x="664" y="1685" text-anchor="middle" font-size="11" fill="#c8a850">8</text>
+  <!-- 9: Altar Chamber -->
+  <circle cx="420" cy="2030" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+  <text x="420" y="2035" text-anchor="middle" font-size="11" fill="#c8a850">9</text>
 </g>
 
-<!-- ============================================================ -->
-<!-- ROOM LABELS -->
-<!-- ============================================================ -->
-<g font-family="Georgia, serif" fill="#e8d8a8">
-  <!-- SHAFT -->
-  <text x="600" y="105" text-anchor="middle" font-size="10" font-weight="bold">SHAFT</text>
-  <text x="600" y="118" text-anchor="middle" font-size="8" fill="#a09070">40 ft descent</text>
+<!-- ★ hidden alcove marker -->
+<text x="134" y="755" text-anchor="middle" font-size="13" fill="#c8a040" opacity="0.8">★</text>
 
-  <!-- T-JUNCTION -->
-  <text x="600" y="453" text-anchor="middle" font-size="9" fill="#c0a870">← SHIELD HALL</text>
-  <text x="600" y="465" text-anchor="middle" font-size="9" fill="#c0a870">T-JUNCTION</text>
-  <text x="600" y="477" text-anchor="middle" font-size="9" fill="#c0a870">FLOODED GALLERY →</text>
+<!-- ═══ BRANCH LABELS (outside rooms) ═══ -->
+<text x="46" y="456" font-size="10" font-family="Georgia,serif" fill="#9a8850">← A</text>
+<text x="900" y="456" font-size="10" font-family="Georgia,serif" fill="#9a8850">B →</text>
+
+<!-- ═══ FLOW ARROWS ═══ -->
+<g fill="#6a5a38" opacity="0.45">
+  <polygon points="600,424 594,412 606,412"/>
+  <polygon points="400,986 394,974 406,974"/>
+  <polygon points="860,1226 854,1214 866,1214"/>
+  <polygon points="600,1534 594,1522 606,1522"/>
+  <polygon points="600,1814 594,1802 606,1802"/>
 </g>
 
-<!-- SHIELD HALL label -->
-<text x="280" y="545" text-anchor="middle" font-size="14" font-family="Georgia, serif"
-      fill="#e8d8a8" font-weight="bold">SHIELD HALL</text>
-<text x="280" y="562" text-anchor="middle" font-size="9" font-family="Georgia, serif"
-      fill="#a09070">Left Branch · No combat</text>
-<text x="280" y="580" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#807060">~100 shields hung on walls</text>
-<text x="280" y="596" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c8a040">History DC 13 · Religion DC 14</text>
-<text x="280" y="640" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c87040" font-style="italic">Sicus (wounded soldier)</text>
-<text x="280" y="652" text-anchor="middle" font-size="7" font-family="Georgia, serif"
-      fill="#a09070">Med DC 9 · drop OTHALAN token</text>
-
-<!-- FLOODED GALLERY label -->
-<text x="940" y="545" text-anchor="middle" font-size="12" font-family="Georgia, serif"
-      fill="#e8d8a8" font-weight="bold">FLOODED GALLERY</text>
-<text x="940" y="560" text-anchor="middle" font-size="9" font-family="Georgia, serif"
-      fill="#a09070">Right Branch</text>
-<text x="940" y="578" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#6090c0">Water: chest-deep (3 sq)</text>
-<text x="940" y="593" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c8a040">Stealth DC 14 (group) to pass</text>
-<text x="940" y="608" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#5080a0">4 × Shadows lurk in water</text>
-
-<!-- Preserved Warrior note -->
-<text x="940" y="840" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#7ab0d8">Preserved warrior (3 cents.)</text>
-<text x="940" y="852" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#7ab0d8">Framea + OTHALAN token</text>
-<text x="940" y="864" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c8a040">Religion DC 14 · Inv DC 12</text>
-
-<!-- BONE CHAMBER label -->
-<text x="960" y="940" text-anchor="middle" font-size="12" font-family="Georgia, serif"
-      fill="#e8d8a8" font-weight="bold">BONE CHAMBER</text>
-<text x="960" y="956" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c84040">2 Ghouls (CR1) + 1 Ghast (CR2)</text>
-<text x="960" y="970" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c84040" font-style="italic">DEADLY for 4 players at L3</text>
-<text x="960" y="985" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#a09070">Ritual offering clay vessel</text>
-<text x="960" y="999" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c8a040">Inv DC 12 (under benches)</text>
-
-<!-- BINDING CHAMBER label -->
-<text x="600" y="1362" text-anchor="middle" font-size="13" font-family="Georgia, serif"
-      fill="#e8d8a8" font-weight="bold">BINDING CHAMBER</text>
-<text x="600" y="1378" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#8090a0">Low ceiling · chains hang from above</text>
-<text x="600" y="1393" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c8a040">Chain sequence puzzle (Inv DC 14)</text>
-<text x="600" y="1408" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#a09070">Contract scroll in hidden alcove</text>
-<text x="600" y="1423" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#8090a0">TIWAZ carved on far wall</text>
-
-<!-- RUNIC CORRIDOR label (to the side) -->
-<text x="490" y="1590" text-anchor="end" font-size="12" font-family="Georgia, serif"
-      fill="#e8d8a8" font-weight="bold">RUNIC</text>
-<text x="490" y="1606" text-anchor="end" font-size="12" font-family="Georgia, serif"
-      fill="#e8d8a8" font-weight="bold">CORRIDOR</text>
-<text x="490" y="1625" text-anchor="end" font-size="8" font-family="Georgia, serif"
-      fill="#6090c0">Each row: step OTHALAN</text>
-<text x="490" y="1639" text-anchor="end" font-size="8" font-family="Georgia, serif"
-      fill="#6090c0">Wrong rune: 1d8 lightning</text>
-<text x="490" y="1653" text-anchor="end" font-size="8" font-family="Georgia, serif"
-      fill="#c8a040">Rel DC 14 · Shield Hall clue</text>
-
-<!-- ALTAR CHAMBER label -->
-<text x="600" y="1850" text-anchor="middle" font-size="13" font-family="Georgia, serif"
-      fill="#e8d8a8" font-weight="bold">ALTAR CHAMBER</text>
-<text x="600" y="1867" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c84040">1 Wight (CR3) + 1 Cult Fanatic (CR2) + 2 Shadows</text>
-<text x="600" y="1882" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#a09070">7 standing stones · circular domed ceiling</text>
-<text x="600" y="1897" text-anchor="middle" font-size="8" font-family="Georgia, serif"
-      fill="#c8a040">Persuasion DC 14 (with scroll: advantage)</text>
-
-<!-- SPEAR label -->
-<text x="640" y="1895" font-size="8" font-family="Georgia, serif"
-      fill="#e84020">← SPEAR OF MARS</text>
-<text x="640" y="1907" font-size="7" font-family="Georgia, serif"
-      fill="#c84020">Wis save DC 14 on touch</text>
-
-<!-- ============================================================ -->
-<!-- BRANCH LABELS (at the T-junction) -->
-<!-- ============================================================ -->
-<text x="230" y="520" text-anchor="middle" font-size="11" font-family="Georgia, serif"
-      fill="#c8a040" font-style="italic">BRANCH A</text>
-<text x="940" y="520" text-anchor="middle" font-size="11" font-family="Georgia, serif"
-      fill="#c8a040" font-style="italic">BRANCH B</text>
-
-<!-- ============================================================ -->
-<!-- LEGEND -->
-<!-- ============================================================ -->
-<rect x="870" y="1360" width="300" height="170" rx="4" fill="#0d0b08" stroke="#3a3020"
-      stroke-width="1" opacity="0.9"/>
-<text x="1020" y="1382" text-anchor="middle" font-size="11" font-family="Georgia, serif"
-      fill="#c8a850">LEGEND</text>
-<line x1="880" y1="1387" x2="1160" y2="1387" stroke="#3a3020" stroke-width="1"/>
-
-<circle cx="893" cy="1403" r="8" fill="#c87040" opacity="0.85"/>
-<text x="893" y="1407" text-anchor="middle" font-size="7" fill="white">S</text>
-<text x="910" y="1407" font-size="9" font-family="Georgia, serif" fill="#c0b090">Sicus (NPC, wounded soldier)</text>
-
-<circle cx="893" cy="1423" r="8" fill="#602050" opacity="0.8"/>
-<text x="893" y="1427" text-anchor="middle" font-size="7" fill="white">W</text>
-<text x="910" y="1427" font-size="9" font-family="Georgia, serif" fill="#c0b090">Wight (guardian)</text>
-
-<circle cx="893" cy="1443" r="12" fill="none" stroke="#c84040" stroke-width="2" stroke-dasharray="4,3"/>
-<text x="893" y="1447" text-anchor="middle" font-size="9" fill="#c84040">!</text>
-<text x="910" y="1447" font-size="9" font-family="Georgia, serif" fill="#c0b090">Combat encounter</text>
-
-<rect x="884" y="1456" width="18" height="18" fill="none"
-      stroke="#b89040" stroke-width="2" stroke-dasharray="6,4"/>
-<text x="910" y="1469" font-size="9" font-family="Georgia, serif" fill="#c0b090">Secret door / hidden area</text>
-
-<circle cx="893" cy="1490" r="8" fill="#303848" opacity="0.7"/>
-<text x="910" y="1494" font-size="9" font-family="Georgia, serif" fill="#c0b090">Shadow (lurking, in water)</text>
-
-<line x1="884" y1="1510" x2="902" y2="1510" stroke="#8a9ab0" stroke-width="2"/>
-<text x="910" y="1514" font-size="9" font-family="Georgia, serif" fill="#c0b090">Chains</text>
-
-<!-- ============================================================ -->
-<!-- COMPASS ROSE (bottom right) -->
-<!-- ============================================================ -->
-<g transform="translate(1080, 2180)">
-  <circle cx="0" cy="0" r="30" fill="#0d0b08" stroke="#3a3020" stroke-width="1.5"/>
-  <polygon points="0,-26 5,-8 0,-12 -5,-8" fill="#e8d8a8"/>
-  <polygon points="0,26 5,8 0,12 -5,8" fill="#7a6a5a"/>
-  <polygon points="-26,0 -8,5 -12,0 -8,-5" fill="#7a6a5a"/>
-  <polygon points="26,0 8,5 12,0 8,-5" fill="#7a6a5a"/>
-  <text x="0" y="-17" text-anchor="middle" font-size="10" font-family="Georgia, serif" fill="#e8d8a8">N</text>
+<!-- ═══ COMPASS + SCALE ═══ -->
+<g transform="translate(1100,2140)">
+  <circle cx="0" cy="0" r="28" fill="#0d0b08" stroke="#3a3020" stroke-width="1.5"/>
+  <polygon points="0,-24 5,-7 0,-11 -5,-7" fill="#e8d8a8"/>
+  <polygon points="0,24 5,7 0,11 -5,7" fill="#6a5a48"/>
+  <polygon points="-24,0 -7,5 -11,0 -7,-5" fill="#6a5a48"/>
+  <polygon points="24,0 7,5 11,0 7,-5" fill="#6a5a48"/>
+  <text x="0" y="-14" text-anchor="middle" font-size="9" font-family="Georgia,serif" fill="#e8d8a8">N</text>
 </g>
-
-<!-- ============================================================ -->
-<!-- SCALE BAR -->
-<!-- ============================================================ -->
-<g transform="translate(870, 2200)">
-  <rect x="0" y="0" width="40" height="10" fill="#e8d8a8" stroke="none"/>
-  <rect x="40" y="0" width="40" height="10" fill="#3a3028" stroke="none"/>
-  <rect x="80" y="0" width="40" height="10" fill="#e8d8a8" stroke="none"/>
-  <rect x="120" y="0" width="40" height="10" fill="#3a3028" stroke="none"/>
+<g transform="translate(60,2160)">
+  <rect x="0" y="0" width="40" height="8" fill="#e8d8a8"/>
+  <rect x="40" y="0" width="40" height="8" fill="#3a3028"/>
+  <rect x="80" y="0" width="40" height="8" fill="#e8d8a8"/>
+  <rect x="120" y="0" width="40" height="8" fill="#3a3028"/>
   <line x1="0" y1="0" x2="160" y2="0" stroke="#c8a850" stroke-width="1"/>
-  <line x1="0" y1="10" x2="160" y2="10" stroke="#c8a850" stroke-width="1"/>
-  <line x1="0" y1="0" x2="0" y2="10" stroke="#c8a850" stroke-width="1"/>
-  <line x1="160" y1="0" x2="160" y2="10" stroke="#c8a850" stroke-width="1"/>
-  <text x="0" y="25" font-size="9" font-family="Georgia, serif" fill="#a09070">0</text>
-  <text x="38" y="25" font-size="9" font-family="Georgia, serif" fill="#a09070">5 ft</text>
-  <text x="78" y="25" font-size="9" font-family="Georgia, serif" fill="#a09070">10 ft</text>
-  <text x="118" y="25" font-size="9" font-family="Georgia, serif" fill="#a09070">15 ft</text>
-  <text x="155" y="25" font-size="9" font-family="Georgia, serif" fill="#a09070">20 ft</text>
+  <line x1="0" y1="8" x2="160" y2="8" stroke="#c8a850" stroke-width="1"/>
+  <line x1="0" y1="0" x2="0" y2="8" stroke="#c8a850" stroke-width="1"/>
+  <line x1="160" y1="0" x2="160" y2="8" stroke="#c8a850" stroke-width="1"/>
+  <text x="0" y="20" font-size="8" font-family="Georgia,serif" fill="#a09070">0</text>
+  <text x="76" y="20" font-size="8" font-family="Georgia,serif" fill="#a09070">10 ft</text>
+  <text x="152" y="20" font-size="8" font-family="Georgia,serif" fill="#a09070">20 ft</text>
 </g>
 
-<!-- ============================================================ -->
-<!-- FLOW ARROWS (showing party movement direction) -->
-<!-- ============================================================ -->
-<g fill="#8a7858" opacity="0.5">
-  <!-- Down entry passage -->
-  <polygon points="600,400 594,388 606,388"/>
-  <!-- Both branches converge down -->
-  <polygon points="400,985 394,973 406,973"/>
-  <polygon points="860,1225 854,1213 866,1213"/>
-  <!-- Down to altar -->
-  <polygon points="600,1530 594,1518 606,1518"/>
-  <polygon points="600,1810 594,1798 606,1798"/>
-</g>
-
-<!-- ============================================================ -->
-<!-- ENCOUNTER NOTES CALLOUT (right column) -->
-<!-- ============================================================ -->
-<text x="1100" y="690" text-anchor="middle" font-size="10" font-family="Georgia, serif"
-      fill="#c8a850" font-weight="bold">ENCOUNTER</text>
-<text x="1100" y="703" text-anchor="middle" font-size="10" font-family="Georgia, serif"
-      fill="#c8a850" font-weight="bold">SUMMARY</text>
-<line x1="1050" y1="708" x2="1150" y2="708" stroke="#3a3020" stroke-width="1"/>
-<text x="1100" y="722" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c0b090">Flooded Gallery:</text>
-<text x="1100" y="734" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c84040">4 × Shadow CR½</text>
-<text x="1100" y="746" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#a09070">(avoid w/ stealth)</text>
-<line x1="1060" y1="752" x2="1140" y2="752" stroke="#2a2018" stroke-width="0.5"/>
-<text x="1100" y="765" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c0b090">Bone Chamber:</text>
-<text x="1100" y="777" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c84040">2× Ghoul + 1 Ghast</text>
-<text x="1100" y="789" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c84040">850 XP · DEADLY</text>
-<line x1="1060" y1="795" x2="1140" y2="795" stroke="#2a2018" stroke-width="0.5"/>
-<text x="1100" y="808" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c0b090">Altar Chamber:</text>
-<text x="1100" y="820" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c84040">Wight + Fanatic + 2× Shadow</text>
-<text x="1100" y="832" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c84040">1800 XP · DEADLY</text>
-<text x="1100" y="844" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#a09070">(exit condition exists)</text>
-<line x1="1060" y1="850" x2="1140" y2="850" stroke="#2a2018" stroke-width="0.5"/>
-<text x="1100" y="863" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c0b090">Scene 4 (surface):</text>
-<text x="1100" y="875" text-anchor="middle" font-size="8" font-family="Georgia, serif" fill="#c84040">Berserker + 2× Cultist</text>
-
-<!-- Border frame -->
-<rect x="5" y="5" width="1190" height="2250" fill="none" stroke="#3a3020" stroke-width="2" rx="4"/>
-<rect x="10" y="10" width="1180" height="2240" fill="none" stroke="#2a2015" stroke-width="1" rx="3"/>
-
+<!-- BORDER -->
+<rect x="5" y="5" width="1190" height="2190" fill="none" stroke="#3a3020" stroke-width="2" rx="4"/>
 </svg>
+
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!-- DM DRAWING GUIDE (outside the map — players don't see this)  -->
+<!-- ══════════════════════════════════════════════════════════════ -->
+<div class="guide">
+
+<h2>ROOM GUIDE — WHAT TO DRAW</h2>
+<table>
+  <tr><th>№</th><th>Room</th><th class="draw">Draw / Add</th><th class="note">Notes</th></tr>
+  <tr>
+    <td class="room-num">1</td>
+    <td>Shaft</td>
+    <td class="draw">Rope ladder descending center. Clay walls with pick tool marks (more careful deeper = workers felt something wrong)</td>
+    <td class="note">40 ft deep. Torch flame leans downward in draft</td>
+  </tr>
+  <tr>
+    <td class="room-num">2</td>
+    <td>Entry Passage</td>
+    <td class="draw">Roman pick lying on floor pointing back toward shaft. NOLITE scratched on left wall at knee height with tally marks (VII + diagonal)</td>
+    <td class="note">Passage narrows. Air smell: old metal + cedar. Two construction eras visible in wall (Roman stone on top, Germanic stone below)</td>
+  </tr>
+  <tr>
+    <td class="room-num">3</td>
+    <td>T-Junction</td>
+    <td class="draw">Fork marker. Left: warmer air (arrow). Right: colder air, sound of water (arrow). Torch flame drifts right</td>
+    <td class="note">Branch A = Shield Hall (dry). Branch B = Flooded Gallery (water)</td>
+  </tr>
+  <tr>
+    <td class="room-num">4</td>
+    <td>Shield Hall</td>
+    <td class="draw">Shields covering every wall edge-to-edge, floor to ceiling. Dozens. Mix of shapes and tribal symbols (wolf, boar, serpent, three-fingered hand). One shield on W wall hung BACKWARDS (marks hidden alcove). Stone bench near entrance, left side — NPC lying behind it</td>
+    <td class="note">No combat. <span class="enc">★ = Hidden Alcove</span> behind backwards shield. Sicus (wounded soldier, orange S marker) hides behind bench</td>
+  </tr>
+  <tr>
+    <td class="room-num">★</td>
+    <td>Hidden Alcove</td>
+    <td class="draw">Narrow crack in stone behind backwards shield. Inside: wax tablet (cracked, old), carved bone tile (OTHALAN rune), bronze stylus</td>
+    <td class="note"><span class="enc">Inv DC 15</span> to find. Tablet is the first piece of the contract clue chain</td>
+  </tr>
+  <tr>
+    <td class="room-num">5</td>
+    <td>Flooded Gallery</td>
+    <td class="draw">Water fills the middle 60% of room (chest-deep). Stone ledge on E wall (stays at shoulder depth if hugged). Germanic warrior sitting against far S wall, submerged to chest — arms crossed, spear across lap, bone token at throat. Small framea visible above waterline</td>
+    <td class="note"><span class="enc">4 × Shadows</span> in water. Stealth DC 14 group check to pass. Warrior is 3 centuries preserved, not undead — do not make him look monstrous</td>
+  </tr>
+  <tr>
+    <td class="room-num">6</td>
+    <td>Bone Chamber</td>
+    <td class="draw">Collapsed ceiling rubble fills NE corner (jagged pile, not smooth). Three stone benches along W wall (two creatures hiding behind). Clay vessel under middle bench. Wall impact marks (cluster of weapon strikes) on S wall at waist height</td>
+    <td class="note"><span class="enc">2 Ghouls + 1 Ghast. DEADLY at L3.</span> Ghouls emerge from rubble. Ghast behind stone benches. Creatures dormant until party fully in room</td>
+  </tr>
+  <tr>
+    <td class="room-num">7</td>
+    <td>Binding Chamber</td>
+    <td class="draw">Ceiling very low (draw ceiling lines close to head height). Chains hanging from ceiling in rows — thick and thin mixed, hooks and collars at ends. TIWAZ rune carved deep in E wall. One chain (center) runs through a floor ring with iron grip handle. Small hidden alcove (right wall, stone-plug door)</td>
+    <td class="note">Puzzle room. Chain sequence = oldest to newest then center. Alcove contains scroll (contract). <span class="enc">No combat</span></td>
+  </tr>
+  <tr>
+    <td class="room-num">8</td>
+    <td>Runic Corridor</td>
+    <td class="draw">Entire floor covered in carved runes — edge to edge, wall to wall. 8 rows × 5 columns of individual rune symbols, each glowing cold blue-white. The OTHALAN rune (ᛟ) is in every row. No bare floor visible anywhere</td>
+    <td class="note">Wrong rune = 1d8 lightning. Safe rune = OTHALAN (rightmost in each row). <span class="enc">No combat</span></td>
+  </tr>
+  <tr>
+    <td class="room-num">9</td>
+    <td>Altar Chamber</td>
+    <td class="draw">7 standing stones in a ring (twice head-height, carved spiraling runes that seem to shift). Granite altar at center, older than Roman stonework. Iron spear on altar (8 ft long, black iron, ember-red runes). Chains at altar base, lying slack. Lever set into wall right of the archway entrance. Floor slopes gently toward altar</td>
+    <td class="note"><span class="enc">1 Wight + 1 Cult Fanatic + 2 Shadows. DEADLY.</span> Wight (W marker) starts behind altar. Fanatic already in room when party arrives. Lever seals corridor exit as difficult terrain</td>
+  </tr>
+</table>
+
+<h2>ENCOUNTER SUMMARY</h2>
+<table>
+  <tr><th>Room</th><th>Enemies</th><th>CR</th><th>Adjusted XP</th><th>Difficulty (L3)</th></tr>
+  <tr>
+    <td>5 — Flooded Gallery</td>
+    <td class="enc">4 × Shadow</td>
+    <td>½ each</td>
+    <td>800 XP</td>
+    <td>Hard — <span class="note">avoidable with Stealth DC 14 group check</span></td>
+  </tr>
+  <tr>
+    <td>6 — Bone Chamber</td>
+    <td class="enc">2 Ghouls + 1 Ghast</td>
+    <td>1 / 1 / 2</td>
+    <td>1,700 XP</td>
+    <td class="enc">DEADLY — remove Ghast for Hard (4 players)</td>
+  </tr>
+  <tr>
+    <td>9 — Altar Chamber</td>
+    <td class="enc">Wight + Cult Fanatic + 2 Shadows</td>
+    <td>3 / 2 / ½</td>
+    <td>1,800 XP</td>
+    <td class="enc">DEADLY — exit condition: back away from spear</td>
+  </tr>
+  <tr>
+    <td>Surface — Scene 4</td>
+    <td class="enc">Berserker + 2 Cultists</td>
+    <td>2 / ⅛</td>
+    <td>600 XP</td>
+    <td>Medium — surprise condition possible</td>
+  </tr>
+</table>
+
+<h2>SPECIAL MARKERS</h2>
+<table>
+  <tr>
+    <td><strong style="color:#c87040">S</strong> (orange)</td>
+    <td>Sicus — wounded soldier hiding in Shield Hall. Medicine DC 9 to stabilise. Gives intel on cultists + OTHALAN token.</td>
+  </tr>
+  <tr>
+    <td><strong style="color:#602050">W</strong> (purple)</td>
+    <td>Wight — guardian of the altar. Does not attack immediately. Persuasion DC 14 (advantage with contract scroll) for communication.</td>
+  </tr>
+  <tr>
+    <td><strong style="color:#303848">●</strong> (dark blue)</td>
+    <td>Shadows — lurking in Flooded Gallery water. Drawn to light.</td>
+  </tr>
+  <tr>
+    <td><strong style="color:#c84040">!</strong> (red circle)</td>
+    <td>Combat encounter trigger zone.</td>
+  </tr>
+  <tr>
+    <td><strong style="color:#c8a040">★</strong> (gold)</td>
+    <td>Hidden alcove — requires Inv DC 15.</td>
+  </tr>
+</table>
+
+</div>
 </body>
 </html>

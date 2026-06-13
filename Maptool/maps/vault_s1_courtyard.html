@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S1 Scene 4 — Fort Courtyard Battle Map</title>
+<style>
+  body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
+  svg { display: block; margin: 0 auto; }
+  .notes { max-width: 1200px; margin: 20px auto 0; }
+  h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+  td, th { padding: 5px 10px; border: 1px solid #2a2018; vertical-align: top; }
+  th { background: #1a1510; color: #c8a850; text-align: left; }
+  tr:nth-child(even) td { background: #141210; }
+  tr:nth-child(odd) td { background: #0d0b08; }
+  .enc { color: #c84040; }
+  .mech { color: #90c880; }
+  .draw { color: #8ab0c8; }
+  .warn { background: #2a1008 !important; color: #e06040; }
+</style>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820">
+<defs>
+  <!-- Flagstone (above ground, lighter) -->
+  <pattern id="flag" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <rect width="60" height="60" fill="#8a8070"/>
+    <rect x="2" y="2"  width="26" height="26" fill="#928a78" opacity="0.55"/>
+    <rect x="32" y="32" width="26" height="26" fill="#867e6e" opacity="0.55"/>
+    <rect x="32" y="2"  width="26" height="26" fill="#8e867a" opacity="0.5"/>
+    <rect x="2"  y="32" width="26" height="26" fill="#847c6c" opacity="0.5"/>
+    <line x1="0"  y1="0"  x2="60" y2="0"  stroke="#6a6050" stroke-width="1.2"/>
+    <line x1="0"  y1="0"  x2="0"  y2="60" stroke="#6a6050" stroke-width="1.2"/>
+    <line x1="30" y1="0"  x2="30" y2="30" stroke="#7a7060" stroke-width="0.5"/>
+    <line x1="0"  y1="30" x2="30" y2="30" stroke="#7a7060" stroke-width="0.5"/>
+  </pattern>
+  <!-- Dirt strip near walls -->
+  <pattern id="dirt" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <rect width="60" height="60" fill="#6e6050"/>
+    <rect x="5"  y="8"  width="18" height="12" fill="#7a6e58" opacity="0.4" rx="2"/>
+    <rect x="35" y="35" width="20" height="14" fill="#686050" opacity="0.4" rx="2"/>
+  </pattern>
+  <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.2)" stroke-width="0.7"/>
+  </pattern>
+  <!-- Torch glow gradients -->
+  <radialGradient id="torch1" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#c89050" stop-opacity="0.5"/>
+    <stop offset="60%"  stop-color="#c89050" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="torch2" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#c89050" stop-opacity="0.45"/>
+    <stop offset="60%"  stop-color="#c89050" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+  <!-- Night sky darkness at edges -->
+  <radialGradient id="nightedge" cx="50%" cy="50%" r="50%">
+    <stop offset="50%" stop-color="#0d0b08" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#0d0b08" stop-opacity="0.6"/>
+  </radialGradient>
+</defs>
+
+<rect width="1200" height="820" fill="#06080a"/>
+
+<!-- TITLE -->
+<text x="600" y="24" text-anchor="middle" font-size="16" fill="#c8a850" letter-spacing="3">FORT COURTYARD — SCENE 4</text>
+<text x="600" y="40" text-anchor="middle" font-size="9" fill="#7a8090">Night · Surface encounter · 1 sq = 5 ft</text>
+<line x1="40" y1="50" x2="1160" y2="50" stroke="#3a3020" stroke-width="1"/>
+
+<!-- COURTYARD FLOOR: 14×11 squares (840×660px) at 60px/sq -->
+<!-- Position: x=120, y=80 → x=960, y=740 -->
+<rect x="120" y="80" width="840" height="660" fill="url(#flag)"/>
+<!-- Dirt strip along walls -->
+<rect x="120" y="80"  width="840" height="30"  fill="url(#dirt)" opacity="0.5"/>
+<rect x="120" y="710" width="840" height="30"  fill="url(#dirt)" opacity="0.5"/>
+<rect x="120" y="80"  width="30"  height="660" fill="url(#dirt)" opacity="0.5"/>
+<rect x="930" y="80"  width="30"  height="660" fill="url(#dirt)" opacity="0.5"/>
+
+<!-- GRID -->
+<rect x="120" y="80" width="840" height="660" fill="url(#grid)"/>
+
+<!-- TORCH GLOW (4 braziers) -->
+<ellipse cx="200" cy="140" rx="120" ry="100" fill="url(#torch1)" opacity="0.9"/>
+<ellipse cx="880" cy="140" rx="120" ry="100" fill="url(#torch2)" opacity="0.9"/>
+<ellipse cx="200" cy="680" rx="120" ry="100" fill="url(#torch1)" opacity="0.8"/>
+<ellipse cx="880" cy="680" rx="120" ry="100" fill="url(#torch2)" opacity="0.8"/>
+
+<!-- Night-darkness vignette -->
+<rect x="120" y="80" width="840" height="660" fill="url(#nightedge)"/>
+
+<!-- WALLS (fort perimeter) -->
+<rect x="120" y="80" width="840" height="660" fill="none" stroke="#5a5040" stroke-width="8"/>
+
+<!-- PRINCIPIA BUILDING (N wall, 2sq = 120px deep) -->
+<rect x="120" y="80" width="840" height="120" fill="#4a4230" stroke="#5a5040" stroke-width="3"/>
+<!-- Principia facade texture -->
+<g stroke="#6a6050" stroke-width="0.8" opacity="0.4">
+  <line x1="120" y1="110" x2="960" y2="110"/>
+  <line x1="180" y1="80" x2="180" y2="200"/>
+  <line x1="300" y1="80" x2="300" y2="200"/>
+  <line x1="420" y1="80" x2="420" y2="200"/>
+  <line x1="540" y1="80" x2="540" y2="200"/>
+  <line x1="660" y1="80" x2="660" y2="200"/>
+  <line x1="780" y1="80" x2="780" y2="200"/>
+  <line x1="900" y1="80" x2="900" y2="200"/>
+</g>
+<!-- Principia step/base -->
+<rect x="120" y="192" width="840" height="8" fill="#6a6050"/>
+<!-- Principia doors (2 doors, 2sq each = 120px) -->
+<rect x="310" y="165" width="120" height="35" fill="#2a2018" stroke="#7a6840" stroke-width="2"/>
+<rect x="570" y="165" width="120" height="35" fill="#2a2018" stroke="#7a6840" stroke-width="2"/>
+<!-- Door details -->
+<line x1="370" y1="165" x2="370" y2="200" stroke="#6a5830" stroke-width="1.5"/>
+<line x1="630" y1="165" x2="630" y2="200" stroke="#6a5830" stroke-width="1.5"/>
+<rect x="362" y="180" width="16" height="6" rx="2" fill="#9a8040"/>
+<rect x="622" y="180" width="16" height="6" rx="2" fill="#9a8040"/>
+<!-- Building label area -->
+<text x="540" y="135" text-anchor="middle" font-size="11" fill="#c8a060" opacity="0.75" letter-spacing="2">PRINCIPIA</text>
+
+<!-- BARRACKS WALLS (E + W sides, partial) -->
+<!-- W side interior wall -->
+<rect x="120" y="200" width="60" height="540" fill="#4a4230" stroke="#5a5040" stroke-width="2"/>
+<text x="150" y="480" text-anchor="middle" font-size="9" fill="#7a6840" transform="rotate(-90,150,480)" opacity="0.6">BARRACKS</text>
+<!-- E side interior wall -->
+<rect x="900" y="200" width="60" height="540" fill="#4a4230" stroke="#5a5040" stroke-width="2"/>
+<text x="930" y="480" text-anchor="middle" font-size="9" fill="#7a6840" transform="rotate(90,930,480)" opacity="0.6">BARRACKS</text>
+
+<!-- SHAFT OPENING (SW area — where party emerges) -->
+<circle cx="230" cy="690" r="30" fill="#0a0806" stroke="#6a5a38" stroke-width="3"/>
+<!-- Shaft detail ring -->
+<circle cx="230" cy="690" r="24" fill="#0a0806" stroke="#4a3a22" stroke-width="2"/>
+<!-- Rope coming up -->
+<line x1="226" y1="666" x2="226" y2="690" stroke="#8a7050" stroke-width="2" opacity="0.6"/>
+<line x1="234" y1="666" x2="234" y2="690" stroke="#8a7050" stroke-width="2" opacity="0.6"/>
+<!-- Shaft label -->
+<text x="230" y="740" text-anchor="middle" font-size="9" fill="#8ab0c8">shaft</text>
+<text x="230" y="751" text-anchor="middle" font-size="8" fill="#8ab0c8">party emerges</text>
+
+<!-- BRAZIERS (4 corners of active area) -->
+<!-- Each brazier: tripod post + flame -->
+<g fill="#8a6020" stroke="#5a4010" stroke-width="1">
+  <!-- NW -->
+  <polygon points="195,120 200,145 190,145"/>
+  <ellipse cx="195" cy="118" rx="8" ry="5" fill="#c88030"/>
+  <ellipse cx="195" cy="115" rx="5" ry="8" fill="#e06020" opacity="0.8"/>
+  <!-- NE -->
+  <polygon points="875,120 880,145 870,145"/>
+  <ellipse cx="875" cy="118" rx="8" ry="5" fill="#c88030"/>
+  <ellipse cx="875" cy="115" rx="5" ry="8" fill="#e06020" opacity="0.8"/>
+  <!-- SW -->
+  <polygon points="195,690 200,715 190,715"/>
+  <ellipse cx="195" cy="688" rx="8" ry="5" fill="#c88030"/>
+  <ellipse cx="195" cy="685" rx="5" ry="8" fill="#e06020" opacity="0.8"/>
+  <!-- SE -->
+  <polygon points="875,690 880,715 870,715"/>
+  <ellipse cx="875" cy="688" rx="8" ry="5" fill="#c88030"/>
+  <ellipse cx="875" cy="685" rx="5" ry="8" fill="#e06020" opacity="0.8"/>
+</g>
+
+<!-- COVER ELEMENTS -->
+<!-- Barrels cluster (NE quadrant) -->
+<g fill="#6a5030" stroke="#4a3820" stroke-width="1.5">
+  <circle cx="820" cy="260" r="18"/>
+  <circle cx="855" cy="260" r="18"/>
+  <circle cx="838" cy="290" r="18"/>
+</g>
+<text x="838" y="265" text-anchor="middle" font-size="9" fill="#8a7040">≡</text>
+
+<!-- Cart/wagon (center, abandoned) -->
+<rect x="450" y="390" width="120" height="60" rx="4" fill="#5a4a28" stroke="#4a3820" stroke-width="2"/>
+<!-- Wheels -->
+<circle cx="470" cy="450" r="16" fill="none" stroke="#4a3820" stroke-width="3"/>
+<circle cx="550" cy="450" r="16" fill="none" stroke="#4a3820" stroke-width="3"/>
+<!-- Axle -->
+<line x1="454" y1="450" x2="566" y2="450" stroke="#4a3820" stroke-width="3"/>
+<!-- Cart tarp -->
+<rect x="455" y="393" width="110" height="50" fill="#6a5830" opacity="0.7" rx="2"/>
+
+<!-- Overturned table/boards (W center, hasty cover) -->
+<rect x="195" y="440" width="12" height="90" rx="2" fill="#7a6840" stroke="#5a4820" stroke-width="1.5" transform="rotate(-15,195,480)"/>
+<rect x="205" y="435" width="60" height="12" rx="2" fill="#7a6840" stroke="#5a4820" stroke-width="1.5" transform="rotate(-15,195,480)"/>
+
+<!-- FALLEN LEGIONARIES (3 bodies) -->
+<!-- Body 1 — near shaft -->
+<ellipse cx="290" cy="670" rx="20" ry="9" fill="#3a2818" opacity="0.8"/>
+<rect x="280" y="665" width="20" height="8" rx="2" fill="#5a4838" transform="rotate(-20,290,669)"/>
+<ellipse cx="307" cy="663" rx="9" ry="7" fill="#5a4838" opacity="0.7"/>
+<!-- Body 2 — near cart -->
+<ellipse cx="420" cy="420" rx="20" ry="9" fill="#3a2818" opacity="0.8"/>
+<rect x="410" y="415" width="20" height="8" rx="2" fill="#5a4838" transform="rotate(35,420,419)"/>
+<!-- Body 3 — E side, mid -->
+<ellipse cx="860" cy="440" rx="20" ry="9" fill="#3a2818" opacity="0.8"/>
+<rect x="850" y="435" width="20" height="8" rx="2" fill="#5a4838" transform="rotate(-50,860,439)"/>
+
+<!-- BLOOD POOLS (near bodies) -->
+<ellipse cx="290" cy="672" rx="14" ry="8" fill="#380808" opacity="0.5"/>
+<ellipse cx="860" cy="442" rx="12" ry="7" fill="#380808" opacity="0.5"/>
+
+<!-- ENCOUNTER MARKERS -->
+<!-- Berserker — center-N, near principia doors -->
+<circle cx="540" cy="340" r="20" fill="#2a0808" stroke="#e05030" stroke-width="3"/>
+<text x="540" y="336" text-anchor="middle" font-size="10" fill="#e05030" font-weight="bold">BR</text>
+<text x="540" y="349" text-anchor="middle" font-size="8" fill="#e05030">berserker</text>
+
+<!-- Cultist 1 — NW -->
+<circle cx="340" cy="310" r="16" fill="#2a0810" stroke="#c84040" stroke-width="2"/>
+<text x="340" y="306" text-anchor="middle" font-size="9" fill="#c84040" font-weight="bold">C1</text>
+<text x="340" y="317" text-anchor="middle" font-size="8" fill="#c84040">cultist</text>
+
+<!-- Cultist 2 — NE -->
+<circle cx="720" cy="310" r="16" fill="#2a0810" stroke="#c84040" stroke-width="2"/>
+<text x="720" y="306" text-anchor="middle" font-size="9" fill="#c84040" font-weight="bold">C2</text>
+<text x="720" y="317" text-anchor="middle" font-size="8" fill="#c84040">cultist</text>
+
+<!-- Marius Coda (unhinged NPC) -->
+<circle cx="540" cy="480" r="16" fill="#0a1a2a" stroke="#a0a0e0" stroke-width="2"/>
+<text x="540" y="476" text-anchor="middle" font-size="9" fill="#a0a0e0" font-weight="bold">MC</text>
+<text x="540" y="487" text-anchor="middle" font-size="8" fill="#a0a0e0">Marius</text>
+
+<!-- PARTY ENTRY ZONE (shaft, SW) -->
+<rect x="180" y="640" width="100" height="80" fill="rgba(80,160,80,0.08)" stroke="#60a860" stroke-width="1" stroke-dasharray="5,3"/>
+<text x="230" y="776" text-anchor="middle" font-size="8" fill="#60a860">party entry</text>
+
+<!-- COVER CALLOUT LABELS (outside yard, in margin) -->
+<text x="70" y="450" text-anchor="end" font-size="9" fill="#8ab0c8">makeshift</text>
+<text x="70" y="461" text-anchor="end" font-size="9" fill="#8ab0c8">cover</text>
+<line x1="72" y1="455" x2="200" y2="455" stroke="#8ab0c8" stroke-width="0.7" opacity="0.5"/>
+
+<text x="1000" y="265" font-size="9" fill="#8ab0c8">barrels</text>
+<text x="1000" y="276" font-size="9" fill="#8ab0c8">(half cover)</text>
+<line x1="998" y1="270" x2="870" y2="268" stroke="#8ab0c8" stroke-width="0.7" opacity="0.5"/>
+
+<text x="1000" y="410" font-size="9" fill="#8ab0c8">abandoned cart</text>
+<text x="1000" y="421" font-size="9" fill="#8ab0c8">(three-quarter cover)</text>
+<line x1="998" y1="416" x2="572" y2="418" stroke="#8ab0c8" stroke-width="0.7" opacity="0.5"/>
+
+<text x="1000" y="450" font-size="9" fill="#7a4040">fallen legionary</text>
+<line x1="998" y1="447" x2="874" y2="442" stroke="#7a4040" stroke-width="0.7" opacity="0.5"/>
+
+<text x="70" y="700" text-anchor="end" font-size="9" fill="#8ab0c8">shaft opening</text>
+<text x="70" y="711" text-anchor="end" font-size="9" fill="#8ab0c8">(rope ladder)</text>
+<line x1="72" y1="706" x2="200" y2="693" stroke="#8ab0c8" stroke-width="0.7" opacity="0.5"/>
+
+<text x="70" y="680" text-anchor="end" font-size="9" fill="#7a4040">fallen legionary</text>
+<line x1="72" y1="677" x2="274" y2="670" stroke="#7a4040" stroke-width="0.7" opacity="0.5"/>
+
+<!-- Directional labels -->
+<text x="540" y="72" text-anchor="middle" font-size="9" fill="#6a6050">PRINCIPIA (fort headquarters) — doors to interior</text>
+<text x="540" y="790" text-anchor="middle" font-size="9" fill="#6a6050">S GATE (200 ft, via principalis road)</text>
+
+<!-- COMPASS -->
+<g transform="translate(1120,760)">
+  <circle cx="0" cy="0" r="26" fill="#06080a" stroke="#3a3020" stroke-width="1.5"/>
+  <polygon points="0,-21 4,-7 0,-10 -4,-7" fill="#e8d8a8"/>
+  <polygon points="0,21 4,7 0,10 -4,7" fill="#5a4a3a"/>
+  <polygon points="-21,0 -7,4 -10,0 -7,-4" fill="#5a4a3a"/>
+  <polygon points="21,0 7,4 10,0 7,-4" fill="#5a4a3a"/>
+  <text x="0" y="-12" text-anchor="middle" font-size="8" fill="#e8d8a8">N</text>
+</g>
+
+<!-- SCALE -->
+<g transform="translate(40,775)">
+  <rect x="0" y="0" width="60" height="7" fill="#e8d8a8"/>
+  <rect x="60" y="0" width="60" height="7" fill="#3a3028"/>
+  <rect x="120" y="0" width="60" height="7" fill="#e8d8a8"/>
+  <rect x="180" y="0" width="60" height="7" fill="#3a3028"/>
+  <line x1="0" y1="0" x2="240" y2="0" stroke="#c8a850" stroke-width="1"/>
+  <line x1="0" y1="7" x2="240" y2="7" stroke="#c8a850" stroke-width="1"/>
+  <line x1="0"   y1="0" x2="0"   y2="7" stroke="#c8a850" stroke-width="1"/>
+  <line x1="240" y1="0" x2="240" y2="7" stroke="#c8a850" stroke-width="1"/>
+  <text x="0"   y="18" font-size="8" fill="#a09070">0</text>
+  <text x="55"  y="18" font-size="8" fill="#a09070">5 ft</text>
+  <text x="112" y="18" font-size="8" fill="#a09070">10 ft</text>
+  <text x="168" y="18" font-size="8" fill="#a09070">15 ft</text>
+  <text x="218" y="18" font-size="8" fill="#a09070">20 ft</text>
+</g>
+
+<!-- KEY box -->
+<g transform="translate(40,58)">
+  <rect x="0" y="0" width="340" height="110" rx="4" fill="#06080a" stroke="#3a3020" stroke-width="1"/>
+  <text x="170" y="15" text-anchor="middle" font-size="9" fill="#c8a850" letter-spacing="1">MAP KEY</text>
+  <circle cx="18" cy="35" r="12" fill="#2a0808" stroke="#e05030" stroke-width="2"/>
+  <text x="18" y="39" text-anchor="middle" font-size="8" fill="#e05030">BR</text>
+  <text x="38" y="39" font-size="9" fill="#c0c0b0">Berserker (centre-N, raging)</text>
+  <circle cx="18" cy="57" r="12" fill="#2a0810" stroke="#c84040" stroke-width="1.5"/>
+  <text x="18" y="61" text-anchor="middle" font-size="8" fill="#c84040">C1</text>
+  <text x="38" y="61" font-size="9" fill="#c0c0b0">Cultist ×2 (flanking)</text>
+  <circle cx="18" cy="79" r="12" fill="#0a1a2a" stroke="#a0a0e0" stroke-width="1.5"/>
+  <text x="18" y="83" text-anchor="middle" font-size="8" fill="#a0a0e0">MC</text>
+  <text x="38" y="83" font-size="9" fill="#c0c0b0">Marius Coda (disturbed NPC)</text>
+  <rect x="6" y="96" width="24" height="8" fill="rgba(80,160,80,0.15)" stroke="#60a860" stroke-width="1"/>
+  <text x="38" y="105" font-size="9" fill="#c0c0b0">Party entry zone (shaft)</text>
+</g>
+
+<rect x="5" y="5" width="1190" height="810" fill="none" stroke="#3a3020" stroke-width="1.5" rx="3"/>
+</svg>
+
+<!-- DM NOTES -->
+<div class="notes">
+
+<h2>ENCOUNTER: COURTYARD — SCENE 4</h2>
+<table>
+  <tr><th>Enemy</th><th>HP / AC</th><th>Start position</th><th>State when party arrives</th></tr>
+  <tr>
+    <td class="enc">Berserker (Marius Coda's killer)</td>
+    <td>67 / AC 13</td>
+    <td>Centre-N, between principia doors. Currently attacking a wooden door.</td>
+    <td>Already in Reckless Attack mode from previous fighting. Not yet aware of party. Perception disadvantage (frenzied).</td>
+  </tr>
+  <tr>
+    <td class="enc">Cultist × 2</td>
+    <td>9 / AC 12</td>
+    <td>NW and NE, spread wide. Watching the Berserker with the disturbed reverence of believers witnessing a rite.</td>
+    <td>Aware of party immediately when they emerge from shaft. May call out: <em>"Witnesses! Mars receives his due!"</em></td>
+  </tr>
+</table>
+
+<h2>MARIUS CODA (NPC)</h2>
+<table>
+  <tr>
+    <td><strong>Who he is</strong></td>
+    <td>Legionary, 3rd contubernium, 6th Legion. Was on watch duty when the Berserker appeared. Has been in combat for ~10 minutes and is dissociating.</td>
+  </tr>
+  <tr>
+    <td><strong>State</strong></td>
+    <td>Standing in the middle of the courtyard, sword in hand, staring at the Berserker. Not fighting, not fleeing. Wisdom save DC 10 failed — he is <em>Frightened</em>. He will snap out of it if a party member reaches him and spends a Bonus Action to steady him (Persuasion DC 8 or Medicine DC 8).</td>
+  </tr>
+  <tr>
+    <td class="mech"><strong>Recovered Marius</strong></td>
+    <td>Acts as an ally (Guard stat block). Knows: the cultists appeared from the vault shaft ~20 minutes before the party entered, so something in the vault communicated with them. This is a corruption clue — the Wight or the spear can influence minds above ground.</td>
+  </tr>
+</table>
+
+<h2>COVER TABLE</h2>
+<table>
+  <tr><th>Object</th><th>Cover type</th><th>Notes</th></tr>
+  <tr>
+    <td>Barrels (NE)</td>
+    <td>Half cover (+2 AC/Dex saves)</td>
+    <td>Can be toppled as a free Shove action — become difficult terrain</td>
+  </tr>
+  <tr>
+    <td>Cart (centre)</td>
+    <td>Three-quarter cover (+5 AC/Dex saves)</td>
+    <td>The Berserker can smash it as an action: Strength 19, HP 20</td>
+  </tr>
+  <tr>
+    <td>Makeshift boards (W)</td>
+    <td>Half cover</td>
+    <td>Flimsy — destroyed by one melee hit dealing 5+ damage</td>
+  </tr>
+  <tr>
+    <td>Brazier tripods</td>
+    <td>Quarter cover only</td>
+    <td>Can be kicked over (bonus action): 2d6 fire damage in 5ft radius, DC 12 Dex save</td>
+  </tr>
+  <tr>
+    <td>Barracks doorways (E/W walls)</td>
+    <td>Three-quarter cover when hugging frame</td>
+    <td>Open — PCs can duck inside (exits the map)</td>
+  </tr>
+</table>
+
+<h2>SURPRISE CONDITIONS</h2>
+<table>
+  <tr>
+    <td class="mech">Stealth exit from shaft</td>
+    <td>DC 12 group Stealth check before emerging. Success: party gets a surprise round. The Berserker is focused on the door and Cultists are watching it.</td>
+  </tr>
+  <tr>
+    <td>Failure</td>
+    <td>Cultists raise alarm immediately. Berserker turns. Roll initiative normally.</td>
+  </tr>
+</table>
+
+<h2>LIGHTING</h2>
+<table>
+  <tr>
+    <td><strong>Night (2nd hour after sunset)</strong></td>
+    <td>Four braziers at corners: bright light 20ft radius, dim light 40ft. The courtyard centre (cart area) is in dim light. The shaft area (SW) is at the edge of dim light from the SW brazier — not fully dark but close. Cultists have no special darkvision.</td>
+  </tr>
+</table>
+
+<h2>WHAT TO DRAW</h2>
+<table>
+  <tr>
+    <td class="draw">Principia façade</td>
+    <td>Roman stonework, 8ft high ground floor wall visible. Two iron-banded wooden doors (one partly splintered by the Berserker). Inscription over central bay: "LEG VI VIC AVG" cut into lintel stone.</td>
+  </tr>
+  <tr>
+    <td class="draw">Blood trail</td>
+    <td>Leading from near the shaft opening westward to the barracks door — a legionary dragged themselves that far before collapsing. The body is not there (carried inside). Just the trail.</td>
+  </tr>
+  <tr>
+    <td class="draw">Fallen legionaries</td>
+    <td>Three bodies in armour. Lorica segmentata, standard kit. One has a broken pilum beside him. They fought and lost quickly — no defensive formation, which means they were caught completely off-guard (Berserker came out of the shaft, not through the gate).</td>
+  </tr>
+  <tr>
+    <td class="draw">Shaft surrounds</td>
+    <td>Stone ring, knee-height, with iron rungs driven into the sides. Rope still attached from when the original excavation crew tied off. The shaft is obviously recent work — mortar dust, fresh-cut edges.</td>
+  </tr>
+  <tr>
+    <td class="draw">Night sky</td>
+    <td>Clear autumn sky, full of stars. The constellation Aries (sacred to Mars) is directly overhead if any PC thinks to look up. This is not coincidence.</td>
+  </tr>
+</table>
+
+<h2>AFTERMATH</h2>
+<table>
+  <tr>
+    <td><strong>Berserker search</strong></td>
+    <td>Has no pouch, no rations, no personal effects. No legion tattoo. Carries a hand-axe with <em>MARTI</em> scratched into the head in fresh cuts — the cult's mark. He is not from Vindolanda.</td>
+  </tr>
+  <tr>
+    <td><strong>Cultists (alive)</strong></td>
+    <td>Frightened. Will bargain for their lives. Know: they were sent here two nights ago to wait near the shaft and "welcome the faithful when they return." They don't know what that means. They were told the vault would open at the correct hour. It did.</td>
+  </tr>
+  <tr>
+    <td><strong>Level advancement</strong></td>
+    <td>Party reaches <strong>Level 4</strong> after this encounter and a short rest. Mark milestone here — before entering the fort interior and triggering the Legate's inquiry.</td>
+  </tr>
+</table>
+
+</div>
+</body>
+</html>
