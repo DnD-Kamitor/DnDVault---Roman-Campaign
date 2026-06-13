@@ -2,287 +2,163 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>S1 — Bone Chamber Battle Map</title>
+<title>S1 Bone Chamber — Battle Map</title>
 <style>
-  body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
+  body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 20px; }
   svg { display: block; margin: 0 auto; }
-  .notes { max-width: 1000px; margin: 20px auto 0; }
-  h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
-  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
-  td, th { padding: 5px 10px; border: 1px solid #2a2018; vertical-align: top; }
+  .guide { max-width: 900px; margin: 24px auto 0; font-size: 12px; }
+  .guide h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+  td, th { padding: 5px 9px; border: 1px solid #2a2018; vertical-align: top; }
   th { background: #1a1510; color: #c8a850; text-align: left; }
   tr:nth-child(even) td { background: #141210; }
-  tr:nth-child(odd) td { background: #0d0b08; }
-  .enc { color: #c84040; }
-  .mech { color: #90c880; }
-  .draw { color: #8ab0c8; }
-  .warn { background: #2a1008 !important; color: #e06040; }
+  tr:nth-child(odd)  td { background: #0d0b08; }
+  .note { color: #8090b0; font-style: italic; }
 </style>
 </head>
 <body>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660">
+<!--
+  GRID: 60px = 1 sq = 5 ft
+  Room:     x=120  y=60   w=480  h=480   (8×8 sq) — all multiples of 60 ✓
+  Entry:    x=300  y=60   w=120  h=60    (2sq wide at N wall) ✓
+  Canvas:   900×660
+  Entry passage connects from top (y=60 = N wall of room).
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="660" viewBox="0 0 900 660">
 <defs>
-  <pattern id="stone" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-    <rect width="60" height="60" fill="#6e6254"/>
-    <rect x="1" y="1" width="27" height="27" fill="#7a7060" opacity="0.5"/>
-    <rect x="32" y="32" width="26" height="26" fill="#665c4c" opacity="0.5"/>
-    <rect x="32" y="1"  width="26" height="27" fill="#726a58" opacity="0.4"/>
-    <rect x="1"  y="32" width="27" height="26" fill="#68604e" opacity="0.4"/>
-    <line x1="0" y1="0" x2="60" y2="0" stroke="#4a4030" stroke-width="1"/>
-    <line x1="0" y1="0" x2="0" y2="60" stroke="#4a4030" stroke-width="1"/>
-  </pattern>
-  <pattern id="rubble" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-    <rect width="60" height="60" fill="#4a4038"/>
-    <polygon points="5,55 18,35 30,52 42,28 55,48 60,60 0,60" fill="#3a3028" opacity="0.7"/>
-    <circle cx="22" cy="42" r="4" fill="#6a5e4c" opacity="0.6"/>
-    <circle cx="44" cy="35" r="3" fill="#5a504a" opacity="0.6"/>
-    <line x1="0" y1="0" x2="60" y2="0" stroke="#3a3028" stroke-width="1"/>
-    <line x1="0" y1="0" x2="0" y2="60" stroke="#3a3028" stroke-width="1"/>
+  <pattern id="sdark" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <rect width="60" height="60" fill="#5e5448"/>
+    <rect x="2"  y="2"  width="26" height="26" fill="#68604e" opacity="0.45"/>
+    <rect x="32" y="32" width="24" height="24" fill="#524840" opacity="0.45"/>
+    <rect x="32" y="2"  width="26" height="26" fill="#5c5244" opacity="0.3"/>
+    <rect x="2"  y="32" width="26" height="24" fill="#625848" opacity="0.3"/>
   </pattern>
   <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.25)" stroke-width="0.7"/>
+    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.30)" stroke-width="0.8"/>
   </pattern>
-  <filter id="glow">
-    <feGaussianBlur stdDeviation="4" result="b"/>
-    <feComposite in="SourceGraphic" in2="b" operator="over"/>
-  </filter>
+  <radialGradient id="tglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#c89050" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
 </defs>
 
-<rect width="1000" height="660" fill="#0a0906"/>
-
-<!-- TITLE -->
-<text x="500" y="28" text-anchor="middle" font-size="16" fill="#c8a850" letter-spacing="3">BONE CHAMBER</text>
-<text x="500" y="44" text-anchor="middle" font-size="9" fill="#7a6840">Session 1 · Scale: 1 square = 5 ft</text>
-<line x1="40" y1="54" x2="960" y2="54" stroke="#3a3020" stroke-width="1"/>
+<!-- VOID -->
+<rect width="900" height="660" fill="#141210"/>
 
 <!-- FLOOR -->
-<rect x="260" y="70" width="480" height="480" fill="url(#stone)"/>
-
-<!-- RUBBLE — NE corner (2×2sq, 120×120px) -->
-<rect x="620" y="70" width="120" height="120" fill="url(#rubble)"/>
-<polygon points="620,70 740,70 740,190 620,190" fill="url(#rubble)" opacity="0.6"/>
-<!-- rubble spill -->
-<polygon points="620,190 660,135 740,120 740,190" fill="#4a4038" opacity="0.7"/>
-
-<!-- STONE BENCHES — W wall (3 benches) -->
-<rect x="264" y="200" width="70" height="20" rx="3" fill="#5a5040" stroke="#3a3028" stroke-width="1.5"/>
-<rect x="264" y="290" width="70" height="20" rx="3" fill="#5a5040" stroke="#3a3028" stroke-width="1.5"/>
-<rect x="264" y="380" width="70" height="20" rx="3" fill="#5a5040" stroke="#3a3028" stroke-width="1.5"/>
-<!-- clay vessel under middle bench -->
-<ellipse cx="295" cy="318" rx="10" ry="7" fill="#8a6e50" opacity="0.65"/>
-<text x="295" y="321" text-anchor="middle" font-size="7" fill="#c8a060" opacity="0.6">≈</text>
-
-<!-- WEAPON STRIKE MARKS on S wall -->
-<g stroke="#3a3028" stroke-width="1.5" opacity="0.5">
-  <line x1="340" y1="543" x2="352" y2="555"/>
-  <line x1="360" y1="543" x2="348" y2="555"/>
-  <line x1="380" y1="541" x2="390" y2="553"/>
-  <line x1="400" y1="542" x2="390" y2="554"/>
-  <line x1="420" y1="543" x2="432" y2="555"/>
-</g>
+<!-- Entry corridor: x=300,y=0,w=120,h=60  (2sq × 1sq) -->
+<rect x="300" y="0"  width="120" height="60"  fill="url(#sdark)"/>
+<!-- Main room: x=120,y=60,w=480,h=480  (8×8 sq) -->
+<rect x="120" y="60" width="480" height="480" fill="url(#sdark)"/>
 
 <!-- GRID -->
-<rect x="260" y="70" width="480" height="480" fill="url(#grid)"/>
+<rect x="0" y="0" width="900" height="660" fill="url(#grid)"/>
 
 <!-- WALLS -->
-<rect x="260" y="70" width="480" height="480" fill="none" stroke="#1a1410" stroke-width="6"/>
+<g fill="none" stroke="#141210" stroke-width="6" stroke-linejoin="round">
+  <rect x="300" y="0"  width="120" height="60"/>
+  <rect x="120" y="60" width="480" height="480"/>
+</g>
 
-<!-- ARCHWAY GAPS -->
-<!-- N opening (2sq = 120px, centered on x=500): x=440-560, y=70 -->
-<rect x="440" y="66" width="120" height="9" fill="#0a0906"/>
-<!-- S corridor exit (2sq centered): x=440-560, y=545 -->
-<rect x="440" y="545" width="120" height="9" fill="#0a0906"/>
-<!-- Corridor walls extending from S opening -->
-<rect x="440" y="550" width="3" height="70" fill="#1a1410"/>
-<rect x="557" y="550" width="3" height="70" fill="#1a1410"/>
-<rect x="443" y="550" width="114" height="60" fill="url(#stone)"/>
-<rect x="443" y="550" width="114" height="60" fill="url(#grid)"/>
+<!-- ARCHWAY GAP: entry → room (y=60, x=300–420) -->
+<rect x="303" y="56" width="114" height="9" fill="#141210"/>
 
-<!-- ARCHWAY ENTRY marks -->
-<path d="M440,74 Q500,60 560,74" fill="none" stroke="#6a5a40" stroke-width="2" opacity="0.5"/>
-<path d="M440,549 Q500,564 560,549" fill="none" stroke="#6a5a40" stroke-width="2" opacity="0.5"/>
+<!-- ARCHITECTURAL FEATURES -->
 
-<!-- ENCOUNTER MARKERS -->
-<!-- Ghoul 1 (from rubble NE) -->
-<circle cx="680" cy="110" r="16" fill="#2a1818" stroke="#c84040" stroke-width="2"/>
-<text x="680" y="106" text-anchor="middle" font-size="9" fill="#c84040" font-weight="bold">G1</text>
-<text x="680" y="118" text-anchor="middle" font-size="8" fill="#c84040">ghoul</text>
-<!-- Ghoul 2 (from rubble NE) -->
-<circle cx="720" cy="170" r="16" fill="#2a1818" stroke="#c84040" stroke-width="2"/>
-<text x="720" y="166" text-anchor="middle" font-size="9" fill="#c84040" font-weight="bold">G2</text>
-<text x="720" y="178" text-anchor="middle" font-size="8" fill="#c84040">ghoul</text>
-<!-- Ghast (behind W benches) -->
-<circle cx="305" cy="300" r="18" fill="#2a1228" stroke="#c840c0" stroke-width="2.5"/>
-<text x="305" y="296" text-anchor="middle" font-size="10" fill="#c840c0" font-weight="bold">GH</text>
-<text x="305" y="309" text-anchor="middle" font-size="8" fill="#c840c0">ghast</text>
+<!-- 3 stone benches W wall (x=120, each 2sq long = 120px) -->
+<rect x="124" y="120" width="20"  height="120" rx="3" fill="#5a5040" stroke="#3a3028" stroke-width="1.5"/>
+<rect x="124" y="280" width="20"  height="120" rx="3" fill="#5a5040" stroke="#3a3028" stroke-width="1.5"/>
+<rect x="124" y="440" width="20"  height="80"  rx="3" fill="#5a5040" stroke="#3a3028" stroke-width="1.5"/>
 
-<!-- PARTY ENTRY ZONE (hatched N end) -->
-<rect x="440" y="70" width="120" height="60" fill="rgba(80,160,80,0.1)" stroke="#60a860" stroke-width="1" stroke-dasharray="4,3"/>
-<text x="500" y="98" text-anchor="middle" font-size="8" fill="#60a860" opacity="0.7">party enters</text>
+<!-- Rubble pile NE corner (x=480–600, y=60–180) -->
+<polygon points="480,64 596,64 600,90 590,145 540,155 485,130 480,90"
+         fill="#4a4038" stroke="#3a3028" stroke-width="1.5"/>
+<polygon points="490,64 596,64 596,88 545,102 490,85"
+         fill="#5a5040" opacity="0.5"/>
+<g fill="#686050" opacity="0.65">
+  <ellipse cx="518" cy="86"  rx="16" ry="10"/>
+  <ellipse cx="558" cy="76"  rx="13" ry="8"/>
+  <ellipse cx="585" cy="92"  rx="11" ry="7"/>
+  <ellipse cx="502" cy="106" rx="9"  ry="6"/>
+  <ellipse cx="546" cy="110" rx="10" ry="7"/>
+</g>
 
-<!-- COVER POSITIONS (dashed circles) -->
-<!-- Behind rubble -->
-<circle cx="605" cy="210" r="22" fill="none" stroke="#a0a030" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
-<!-- Behind N bench -->
-<circle cx="355" cy="210" r="22" fill="none" stroke="#a0a030" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
-<!-- Behind S bench -->
-<circle cx="355" cy="390" r="22" fill="none" stroke="#a0a030" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+<!-- Ceiling crack lines -->
+<g stroke="#3a3028" stroke-width="1.5" fill="none" opacity="0.5">
+  <path d="M480,70 L510,120 L525,105"/>
+  <path d="M535,70 L520,108 L548,125"/>
+  <path d="M570,70 L552,110"/>
+  <path d="M300,70 L280,130"/>
+</g>
 
-<!-- LABELS (all outside room, in margins) -->
-<!-- W side labels -->
-<text x="240" y="215" text-anchor="end" font-size="9" fill="#8ab0c8">bench 1</text>
-<line x1="242" y1="212" x2="258" y2="210" stroke="#8ab0c8" stroke-width="0.8" opacity="0.6"/>
-<text x="240" y="305" text-anchor="end" font-size="9" fill="#8ab0c8">bench 2</text>
-<line x1="242" y1="302" x2="258" y2="300" stroke="#8ab0c8" stroke-width="0.8" opacity="0.6"/>
-<text x="240" y="395" text-anchor="end" font-size="9" fill="#8ab0c8">bench 3</text>
-<line x1="242" y1="392" x2="258" y2="390" stroke="#8ab0c8" stroke-width="0.8" opacity="0.6"/>
-<text x="240" y="322" text-anchor="end" font-size="8" fill="#8a7040" font-style="italic">clay vessel</text>
-<line x1="242" y1="320" x2="258" y2="318" stroke="#8a7040" stroke-width="0.7" opacity="0.5"/>
+<!-- Dim torch W wall (one working, one broken bracket) -->
+<g opacity="0.6">
+  <rect x="122" y="92"  width="9" height="14" rx="1" fill="#7a6030"/>
+  <ellipse cx="127" cy="89" rx="6" ry="8"  fill="#e06020" opacity="0.8"/>
+  <ellipse cx="127" cy="85" rx="4" ry="6"  fill="#ffa040" opacity="0.7"/>
+</g>
+<!-- Broken bracket (N wall left) -->
+<g opacity="0.35">
+  <rect x="154" y="62" width="9" height="10" rx="1" fill="#5a4020"/>
+  <line x1="158" y1="62" x2="158" y2="54" stroke="#5a4020" stroke-width="2"/>
+</g>
+<!-- Torch glow W-NW -->
+<ellipse cx="145" cy="120" rx="80" ry="75" fill="url(#tglow)" opacity="0.38"/>
 
-<!-- E side labels -->
-<text x="760" y="132" font-size="9" fill="#c84040">collapsed</text>
-<text x="760" y="144" font-size="9" fill="#c84040">ceiling / rubble</text>
-<line x1="758" y1="130" x2="745" y2="115" stroke="#c84040" stroke-width="0.8" opacity="0.5"/>
+<!-- Fallen column fragment S wall (decorative rubble) -->
+<rect x="320" y="514" width="100" height="22" rx="4" fill="#5a5040" stroke="#3a3028" stroke-width="1.5"/>
+<rect x="325" y="517" width="90"  height="16" rx="2" fill="#686050" opacity="0.4"/>
 
-<text x="760" y="555" font-size="8" fill="#8ab0c8">weapon strikes</text>
-<line x1="758" y1="551" x2="745" y2="547" stroke="#8ab0c8" stroke-width="0.7" opacity="0.5"/>
+<!-- Stone drain channel centre-floor (faint carved groove) -->
+<line x1="360" y1="64" x2="360" y2="536" stroke="rgba(40,35,25,0.5)" stroke-width="3"/>
+<line x1="120" y1="300" x2="600" y2="300" stroke="rgba(40,35,25,0.5)" stroke-width="3"/>
 
-<!-- N label -->
-<text x="500" y="63" text-anchor="middle" font-size="9" fill="#7a8870">↑ to Flooded Gallery</text>
-<!-- S label -->
-<text x="500" y="632" text-anchor="middle" font-size="9" fill="#7a8870">↓ to Binding Chamber</text>
+<!-- Room number -->
+<circle cx="240" cy="300" r="15" fill="#0d0b08" stroke="#c8a850" stroke-width="1.5"/>
+<text x="240" y="305" text-anchor="middle" font-size="11" font-family="Georgia,serif" font-weight="bold" fill="#c8a850">6</text>
 
 <!-- COMPASS -->
-<g transform="translate(920,590)">
-  <circle cx="0" cy="0" r="25" fill="#0a0906" stroke="#3a3020" stroke-width="1.5"/>
-  <polygon points="0,-20 4,-6 0,-9 -4,-6" fill="#e8d8a8"/>
-  <polygon points="0,20 4,6 0,9 -4,6" fill="#5a4a3a"/>
-  <polygon points="-20,0 -6,4 -9,0 -6,-4" fill="#5a4a3a"/>
-  <polygon points="20,0 6,4 9,0 6,-4" fill="#5a4a3a"/>
-  <text x="0" y="-12" text-anchor="middle" font-size="8" fill="#e8d8a8">N</text>
+<g transform="translate(854,26)">
+  <circle cx="0" cy="0" r="22" fill="#141210" stroke="#3a3020" stroke-width="1.5"/>
+  <polygon points="0,-18 4,-6 0,-9 -4,-6"  fill="#e8d8a8"/>
+  <polygon points="0,18  4,6  0,9  -4,6"   fill="#6a5a48"/>
+  <polygon points="-18,0 -6,4 -9,0 -6,-4" fill="#6a5a48"/>
+  <polygon points="18,0  6,4  9,0  6,-4"   fill="#6a5a48"/>
+  <text x="0" y="-9" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#e8d8a8">N</text>
 </g>
 
-<!-- SCALE -->
-<g transform="translate(40,620)">
-  <rect x="0" y="0" width="60" height="7" fill="#e8d8a8"/>
-  <rect x="60" y="0" width="60" height="7" fill="#3a3028"/>
-  <rect x="120" y="0" width="60" height="7" fill="#e8d8a8"/>
-  <line x1="0" y1="0" x2="240" y2="0" stroke="#c8a850" stroke-width="1"/>
-  <line x1="0" y1="7" x2="240" y2="7" stroke="#c8a850" stroke-width="1"/>
-  <line x1="0"   y1="0" x2="0"   y2="7" stroke="#c8a850" stroke-width="1"/>
-  <line x1="180" y1="0" x2="180" y2="7" stroke="#c8a850" stroke-width="1"/>
-  <text x="0"   y="18" font-size="8" fill="#a09070">0</text>
-  <text x="55"  y="18" font-size="8" fill="#a09070">5 ft</text>
-  <text x="110" y="18" font-size="8" fill="#a09070">10 ft</text>
-  <text x="166" y="18" font-size="8" fill="#a09070">15 ft</text>
+<!-- SCALE BAR -->
+<g transform="translate(640,628)">
+  <rect x="0"   y="0" width="60"  height="6" fill="#e8d8a8"/>
+  <rect x="60"  y="0" width="60"  height="6" fill="#3a3028"/>
+  <rect x="120" y="0" width="60"  height="6" fill="#e8d8a8"/>
+  <rect x="0"   y="0" width="180" height="6" fill="none" stroke="#c8a850" stroke-width="1"/>
 </g>
 
-<!-- KEY (inline, top-right margin) -->
-<g transform="translate(780,80)">
-  <rect x="0" y="0" width="180" height="120" rx="4" fill="#0d0b08" stroke="#3a3020" stroke-width="1"/>
-  <text x="90" y="16" text-anchor="middle" font-size="9" fill="#c8a850" letter-spacing="1">MAP KEY</text>
-  <circle cx="20" cy="35" r="10" fill="#2a1818" stroke="#c84040" stroke-width="1.5"/>
-  <text x="20" y="39" text-anchor="middle" font-size="7" fill="#c84040">G1</text>
-  <text x="38" y="39" font-size="9" fill="#c0c0b0">Ghoul (dormant)</text>
-  <circle cx="20" cy="58" r="10" fill="#2a1228" stroke="#c840c0" stroke-width="1.5"/>
-  <text x="20" y="62" text-anchor="middle" font-size="7" fill="#c840c0">GH</text>
-  <text x="38" y="62" font-size="9" fill="#c0c0b0">Ghast (behind bench)</text>
-  <circle cx="20" cy="81" r="10" fill="none" stroke="#a0a030" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="38" y="85" font-size="9" fill="#c0c0b0">Cover position</text>
-  <rect x="10" y="95" width="20" height="8" fill="rgba(80,160,80,0.15)" stroke="#60a860" stroke-width="1"/>
-  <text x="38" y="104" font-size="9" fill="#c0c0b0">Party entry zone</text>
-</g>
-
-<rect x="5" y="5" width="990" height="650" fill="none" stroke="#3a3020" stroke-width="1.5" rx="3"/>
+<rect x="3" y="3" width="894" height="654" fill="none" stroke="#3a3020" stroke-width="2" rx="3"/>
 </svg>
 
-<!-- DM NOTES -->
-<div class="notes">
-
-<h2>ENCOUNTER: BONE CHAMBER</h2>
+<!-- DM REFERENCE -->
+<div class="guide">
+<h2>BONE CHAMBER — DM NOTES</h2>
 <table>
-  <tr><th>Enemy</th><th>HP / AC</th><th>Start Position</th><th>Initiative Trigger</th></tr>
-  <tr>
-    <td class="enc">Ghoul × 2</td>
-    <td>22 / AC 12</td>
-    <td>Inside rubble pile NE. Completely buried — no roll to spot them before combat.</td>
-    <td>First PC reaches the room's midpoint (x-line) OR combat begins for any reason.</td>
-  </tr>
-  <tr class="warn">
-    <td class="enc">Ghast × 1</td>
-    <td>36 / AC 13</td>
-    <td>Behind the southernmost stone bench (W wall). Crouched, motionless — Perception DC 14 to notice.</td>
-    <td>Same as Ghouls — simultaneous ambush. The stench is detectable 1 round before they surface (Con save DC 10 or disadvantage on all rolls until end of next turn).</td>
-  </tr>
+  <tr><th>Element</th><th class="note">Detail</th></tr>
+  <tr><td>3 benches W wall</td><td class="note">Drawn. Ghast hides behind southernmost bench. Players cannot see it until they enter 20 ft.</td></tr>
+  <tr><td>Rubble NE</td><td class="note">Drawn. 2 Ghouls emerge from rubble on round 1 (initiative 20 triggers them). Area = difficult terrain.</td></tr>
+  <tr><td>Ceiling cracks</td><td class="note">Drawn. On natural 1 attack, loose stone falls: DC 12 Dex or 1d6 bludgeoning.</td></tr>
+  <tr><td>Clay vessel</td><td class="note">Token under centre bench (Perception DC 13). Contains Potion of Healing.</td></tr>
+  <tr><td>Drain channel</td><td class="note">Drawn (faint lines). Old sewer cut. Difficult terrain on those squares.</td></tr>
 </table>
-
-<h2>TACTICS</h2>
+<h2>ENCOUNTER</h2>
 <table>
-  <tr><th>Round</th><th>What happens</th></tr>
-  <tr>
-    <td>1</td>
-    <td>Ghouls erupt from rubble (difficult terrain in NE corner until cleared). Ghast stands from behind bench. All three move toward nearest warm-blooded PC. Stench already active.</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Ghouls claw-claw-bite. Ghast uses Claws only (saving Bite for paralysed PC). Ghast targets spellcasters — it smells arcane residue.</td>
-  </tr>
-  <tr>
-    <td>3+</td>
-    <td>If a PC is paralysed: Ghast uses Bite on them exclusively. Ghouls mob the same target. This can be lethal at L3 — watch the table's engagement level.</td>
-  </tr>
+  <tr><th>Creature</th><th>Start position</th><th class="note">Tactic</th></tr>
+  <tr><td>Ghoul ×2</td><td>Emerge from rubble NE (sq 7-8, row 1)</td><td class="note">Move to nearest non-paralysed target. Prefer Claws.</td></tr>
+  <tr><td>Ghast ×1</td><td>Behind S bench (sq 1-2, row 7)</td><td class="note">Hold until players advance past midline, then emerge. Targets armoured PCs (Strength check).</td></tr>
 </table>
-
-<h2>DIFFICULTY DIAL</h2>
-<table>
-  <tr><th>Adjustment</th><th>Effect</th></tr>
-  <tr>
-    <td class="mech">Remove the Ghast</td>
-    <td>Drops from Deadly to Hard. Do this for 3-player parties or if S1 vault has already cost significant HP/spell slots.</td>
-  </tr>
-  <tr>
-    <td class="mech">Reduce Ghouls to 1</td>
-    <td>Drops to Medium. Keep Ghast for tension but lose one Ghoul entirely.</td>
-  </tr>
-  <tr>
-    <td class="mech">Bonus: clay vessel</td>
-    <td>Under the middle bench: <em>unguentum vitale</em> (potion of healing, 2d4+2). A fighter-type PC who specifically looks under the benches finds it with no check.</td>
-  </tr>
-</table>
-
-<h2>WHAT TO DRAW</h2>
-<table>
-  <tr>
-    <td class="draw">Rubble pile (NE)</td>
-    <td>Broken ceiling slabs, sharp-edged, angled outward from corner. Faint claw marks on the wall above it — they came OUT this way, but long ago. <strong>Difficult terrain</strong> for the 2×2sq NE block.</td>
-  </tr>
-  <tr>
-    <td class="draw">Stone benches (W)</td>
-    <td>Heavy Roman military-style benches, identical to those in barracks — someone brought furniture down here. Worn flat on top. Under middle bench: clay vessel with stopper, almost invisible.</td>
-  </tr>
-  <tr>
-    <td class="draw">Ceiling</td>
-    <td>Draw ceiling lines close — low headroom. One large crack running NW–SE near the NE corner (the collapse source). Dust and loose pebbles fall if anything large hits the E wall.</td>
-  </tr>
-  <tr>
-    <td class="draw">Strike marks (S wall)</td>
-    <td>Cluster of impact marks at waist height, near the S exit. Mixed — some Roman (pilum tip oval) and some claw. Someone died holding this doorway.</td>
-  </tr>
-</table>
-
-<h2>POST-COMBAT</h2>
-<table>
-  <tr>
-    <td><strong>Investigation DC 12</strong></td>
-    <td>The Ghouls' clothing is Roman military issue — linen tunic, iron fibula with "LEG VI VIC" stamp. They were Legionaries. Recently.</td>
-  </tr>
-  <tr>
-    <td><strong>Religion DC 13</strong></td>
-    <td>The clay vessel under the bench is a funerary deposit (lekythos) — but placed there by someone alive, recently. Someone was tending these dead. Upward: Sextus or a Cultist.</td>
-  </tr>
-</table>
-
+<h2>GRID</h2>
+<table><tr><td>60 px/sq. Room origin (120,60). Import at 60 px/sq in MapTool. Set grid origin to (0,0).</td></tr></table>
 </div>
 </body>
 </html>
