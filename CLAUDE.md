@@ -208,6 +208,7 @@ All content below is live in the book. No further action required.
 | 75 | Role Progression Trees and Class Substitutions — Full branching advancement system added to all 15 roles in roles.qmd. Three tiers: Standard (0 comm), Veteranus (3 comm, Branch A/B choice, Perk 1), Specialis (7 comm, Perk 2). 60 campaign-specific perks total. Citizenship gates (Latinus+ or Civis) on restricted perks. Race/background/class locks with diegetic explanations. Class equipment substitution toggles added to every role (Wizard/Sorcerer/Warlock/Cleric/Druid/Bard/Rogue/Monk — no substitution for Fighter/Barbarian/Paladin/Ranger). Spec in AGENT_TASK_roles_progression.md. |
 | 76 | Session 0 Prologue + Session 1 Vault Redesign — (1) gm_session0.qmd: added 5-scene in-world "Day of Arrival" prologue (road approach, processing in with Quartus, fort walk with Varro + 5 locations, vicus/Brennus tavern, shared first-night dream seeding Ch1 cold open). session0.qmd: added sensory "A Day at the Fort" orientation section. (2) chapter1.qmd: vault rebuilt from linear to branching. Left branch: Shield Hall (preserved) + hidden alcove (wax tablet warning, OTHALAN contract token, three-clue rule). Right branch: Flooded Gallery (3 Shadows, preserved Germanic warrior, framea, second contract token) + Bone Chamber (2 Ghouls + 1 Ghast, Hard encounter). Both merge: Binding Chamber (chain puzzle lock, contract scroll). Runic Corridor (floor puzzle, shield-order/rune/Religion clues, lightning damage fallback). Altar Chamber: 1 Wight + 2 Shadows replacing 2 Animated Armors; Wight speaks, exit condition exists, Persuasion DC 14 with contract scroll advantage. Scene 4 upgraded: Berserker + 2 Cultists of Mars (proximity corruption evidence). Specs in AGENT_TASK_session0_prologue.md and AGENT_TASK_session1_deep.md. |
 | 73 | Full NPC Token Coverage — 13 missing named NPCs added to build_campaign_maps.sh: Lucius_Tribune (Assassin), Paterculus_AugurAssist (Acolyte), Valeria_Medicus (Mage), Quartus_Quartermaster (Thug), Rufus_Smith (Gladiator), Brennus_Taberna (Commoner), Lucilla_Postwoman (Spy), Aldric_Observer (Mage), Titus_HalfGermanic (Scout), Sigrun_Trader (Tribal Warrior), Arnulf_Firekeeper (Tribal Warrior), Edda_SpearMother (Tribal Warrior), Skadi_Healer (Acolyte). Fort_Vindolanda now holds 23 named .rptok tokens. Session folders get only session-relevant tokens (S1: fort staff 15 tokens; S2: fort+road cast 15; S3: Germanic 11; S4: ritual/siege 13; S5: full resolution cast 14). Summary counter fixed to report .rptok counts. |
+| 80 | SVG Dungeon Maps — Inline SVG HTML files for all campaign sessions. S1 vault overview complete (9 rooms, grid-aligned). Design rules: solid floor fills, one grid layer drawn LAST, all coords multiples of 40px (overview) or 60px (battle). Render pipeline: Firefox headless → PNG → ImageMagick JPG. See Map Design Rules section below. |
 | 79 | Source Book Integration — Learnings from HR5 Glory of Rome and Lex Arcana: Britannia applied to three files. knowledge.qmd: Coronae military crowns (Grass/Civic/Gold, DC 13/17), Lemures Roman hungry dead (Lemuria festival, appeasement rite, DC 13/15), Belatucadrus Mars of the Frontier (conceals Celtic sun god Belenus, DC 15/17). germanic_tribes.qmd: "Peoples Near the Vallum" section (Brigantes, Selgovi, Votadini, Novanti with political profiles), Alaisiagae Goddesses (four war goddesses at Vercovicium, raven omen, Valkyrie parallel, name/title/symbol table), GM collapsible for Agrona (Caledonian massacre goddess, kill-signature guide). vindolanda_guide.qmd: Agricola/Antonine Wall decline narrative, vicus supply detail, bath complex comparison, DC 13 understaffed garrison gate, Belatucadrus shrine with DC 15 Belenus gate. Reference document BOOK_LEARNINGS_AND_TASKS.md created with full source learnings and remaining Tasks A-G. |
 
 ---
@@ -274,6 +275,43 @@ These are scoped and tested items ready to build out fully. Each has a proof-of-
 
 ### Session Chapter Structure
 See the Session Structure Template in the Sclanders checklist above. Chapter 1 is the reference implementation -- match its format.
+
+### SVG Map Design Rules
+
+All campaign maps live in `Maptool/maps/` as self-contained HTML files (`session_name.html`) with a DM reference table below the SVG. A JPG export (`session_name.jpg`) is committed alongside for MapTool import.
+
+**Grid rule (critical for VTT):** One `<pattern id="grid">` drawn as the LAST element before room numbers. Floor fills are solid flat colours — no tiled stone/texture patterns. If texture tiles are 40px and the grid is also 40px they create a competing double-grid that shifts visually in MapTool.
+
+**Coordinate rule:** All room `x, y, w, h` must be exact multiples of the grid cell size: 40px for overview maps (1 sq = 40px = 5ft), 60px for battle maps (1 sq = 60px = 5ft). Verify every room before rendering.
+
+**Render pipeline:**
+```bash
+# 1. Extract SVG and wrap in minimal HTML
+python3 -c "import re; ..."   # writes /tmp/export.html
+
+# 2. Firefox headless screenshot (kill any running Firefox first if needed)
+pkill -f librewolf; sleep 2
+firefox --headless --screenshot /tmp/out.png --window-size=WxH "file:///tmp/export.html"
+
+# 3. Convert to JPG
+convert /tmp/out.png -quality 92 Maptool/maps/name.jpg
+```
+Do NOT use Chromium headless — it produces an all-white PNG on this system. Do NOT use ImageMagick direct SVG render — it renders darker than Firefox.
+
+**Map files per session:**
+- S1: `vault_s1_overview.html` + JPG (overview 1200×2500, 40px/sq), plus battle maps for bone chamber, altar chamber, courtyard
+- S2: `s2_fort_overview.html` + JPG, `s2_west_gate.html` + JPG
+- S3: forest path, Farbog crossing, Germanic village
+- S4: sacred grove, fort siege
+- S5: final vault, Mars confrontation
+
+**What goes on the map (background layer only):**
+- Solid floor fills, walls, archway gaps
+- Architectural features: torches (sconce + flame ellipses), columns (3D shadow effect), benches (3D shadow effect), rubble (layered irregular polygons), water (wave pattern), rope ladders, chains (with link ovals), stone plinths
+- Shield shapes: use proper SVG paths — heater shield `M-9,-14 Q0,-16 9,-14 L8,4 Q0,16 -8,4 Z`, oval Germanic `<ellipse>` with center boss circle and rib line, Roman scutum tall rounded rect
+- Room number circles (gold border, dark fill, number only)
+- Compass rose and scale bar
+- NO text labels, NO encounter markers, NO DM secrets in the SVG
 
 ### Commit Conventions
 One milestone or major feature per commit. Commit message format:

@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>S1 — Altar Chamber Battle Map</title>
+<title>S1 Altar Chamber — Battle Map</title>
 <style>
   body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
   svg { display: block; margin: 0 auto; }
-  .notes { max-width: 1060px; margin: 20px auto 0; }
+  .notes { max-width: 960px; margin: 20px auto 0; }
   h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
   table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
   td, th { padding: 5px 10px; border: 1px solid #2a2018; vertical-align: top; }
@@ -22,334 +22,172 @@
 </head>
 <body>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="720">
+<!--
+  GRID: 60px = 1 sq = 5 ft
+  Canvas: 960×960
+  Entry passage: x=420, y=0, w=120, h=80 (2sq wide)
+  Altar room: large rect clipped to circle cx=480 cy=480 r=360
+  All room coords multiples of 60
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="960" viewBox="0 0 960 960">
 <defs>
-  <pattern id="altarstone" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-    <rect width="60" height="60" fill="#5e5448"/>
-    <rect x="1" y="1" width="27" height="27" fill="#666054" opacity="0.5"/>
-    <rect x="32" y="32" width="26" height="26" fill="#58504a" opacity="0.5"/>
-    <line x1="0" y1="0" x2="60" y2="0" stroke="#3e382e" stroke-width="1"/>
-    <line x1="0" y1="0" x2="0" y2="60" stroke="#3e382e" stroke-width="1"/>
-  </pattern>
-  <pattern id="stone_pass" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-    <rect width="60" height="60" fill="#6e6254"/>
-    <line x1="0" y1="0" x2="60" y2="0" stroke="#4a4030" stroke-width="1"/>
-    <line x1="0" y1="0" x2="0" y2="60" stroke="#4a4030" stroke-width="1"/>
-  </pattern>
-  <pattern id="runefloor" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-    <rect width="60" height="60" fill="#3e3428"/>
-    <line x1="0" y1="0" x2="60" y2="0" stroke="#2a2018" stroke-width="1"/>
-    <line x1="0" y1="0" x2="0" y2="60" stroke="#2a2018" stroke-width="1"/>
-    <text x="30" y="40" text-anchor="middle" font-size="22" fill="rgba(100,170,255,0.45)" font-family="serif">ᛟ</text>
-  </pattern>
+  <clipPath id="circleClip">
+    <circle cx="480" cy="480" r="360"/>
+  </clipPath>
   <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.25)" stroke-width="0.7"/>
+    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.30)" stroke-width="0.8"/>
   </pattern>
-  <radialGradient id="marsglow" cx="50%" cy="60%" r="50%">
-    <stop offset="0%"   stop-color="#c04020" stop-opacity="0.35"/>
-    <stop offset="60%"  stop-color="#c04020" stop-opacity="0.10"/>
-    <stop offset="100%" stop-color="#c04020" stop-opacity="0"/>
+  <radialGradient id="marsglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#c03020" stop-opacity="0.45"/>
+    <stop offset="50%"  stop-color="#c03020" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#c03020" stop-opacity="0"/>
   </radialGradient>
-  <radialGradient id="shadowglow" cx="50%" cy="50%" r="50%">
-    <stop offset="0%"   stop-color="#203050" stop-opacity="0.6"/>
-    <stop offset="100%" stop-color="#203050" stop-opacity="0"/>
+  <radialGradient id="tglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#c89050" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
   </radialGradient>
-  <filter id="runeGlow">
-    <feGaussianBlur stdDeviation="3" result="b"/>
-    <feComposite in="SourceGraphic" in2="b" operator="over"/>
-  </filter>
-  <clipPath id="roomCircle">
-    <circle cx="500" cy="440" r="245"/>
-  </clipPath>
-  <clipPath id="entryPass">
-    <rect x="440" y="80" width="120" height="155"/>
-  </clipPath>
 </defs>
 
-<rect width="1060" height="720" fill="#08070a"/>
+<!-- VOID -->
+<rect width="960" height="960" fill="#1a1612"/>
 
-<!-- TITLE -->
-<text x="530" y="26" text-anchor="middle" font-size="16" fill="#c84040" letter-spacing="3">ALTAR CHAMBER</text>
-<text x="530" y="42" text-anchor="middle" font-size="9"  fill="#7a5840">Session 1 · Boss Room · 1 sq = 5 ft</text>
-<line x1="40" y1="52" x2="1020" y2="52" stroke="#2a1a10" stroke-width="1"/>
+<!-- Entry corridor — solid flat colour -->
+<rect x="420" y="0" width="120" height="80" fill="#8a7c64"/>
 
-<!-- ENTRY PASSAGE (runic corridor continues) — clip to passage bounds -->
-<rect x="440" y="80" width="120" height="155" fill="url(#runefloor)" clip-path="url(#entryPass)"/>
-<rect x="440" y="80" width="120" height="155" fill="url(#grid)"      clip-path="url(#entryPass)"/>
+<!-- Circular altar room — base floor -->
+<rect x="80" y="80" width="800" height="800" fill="#6a5e4c" clip-path="url(#circleClip)"/>
 
-<!-- CIRCULAR ROOM FLOOR -->
-<circle cx="500" cy="440" r="245" fill="url(#altarstone)"/>
-<circle cx="500" cy="440" r="245" fill="url(#grid)"/>
+<!-- Concentric floor rings (decorative carved stone) -->
+<circle cx="480" cy="480" r="300" fill="none" stroke="#5a5040" stroke-width="3" clip-path="url(#circleClip)"/>
+<circle cx="480" cy="480" r="240" fill="none" stroke="#5a5040" stroke-width="2" clip-path="url(#circleClip)"/>
+<circle cx="480" cy="480" r="180" fill="none" stroke="#4a4030" stroke-width="2" clip-path="url(#circleClip)"/>
+<circle cx="480" cy="480" r="120" fill="none" stroke="#4a4030" stroke-width="2" clip-path="url(#circleClip)"/>
 
-<!-- MARS GLOW (dim light from spear/altar) -->
-<circle cx="500" cy="380" r="245" fill="url(#marsglow)"/>
+<!-- Mars glow (red radial from centre) -->
+<circle cx="480" cy="480" r="360" fill="url(#marsglow)" clip-path="url(#circleClip)"/>
 
-<!-- SHADOW GLOW (darkness around outer stones) -->
-<circle cx="500" cy="440" r="245" fill="url(#shadowglow)"/>
-
-<!-- PASSAGE WALLS (entry from Runic Corridor) -->
-<rect x="440" y="78" width="4"   height="155" fill="#1a1010"/>
-<rect x="556" y="78" width="4"   height="155" fill="#1a1010"/>
-<!-- Wall of circle — only the arc is the boundary -->
-<circle cx="500" cy="440" r="245" fill="none" stroke="#1a1010" stroke-width="6"/>
-<!-- Erase wall at passage opening (N top) -->
-<rect x="442" y="192" width="116" height="8" fill="#08070a"/>
-<!-- Archway marks at entry -->
-<path d="M440,198 Q500,185 560,198" fill="none" stroke="#5a4a38" stroke-width="2" opacity="0.5"/>
-
-<!-- 7 STANDING STONES (radius 175 from center) -->
-<!-- Positions calculated: center=(500,440), r=175, start top, clockwise -->
-<!-- S1(500,265) S2(636,331) S3(670,479) S4(576,598) S5(424,598) S6(330,479) S7(364,331) -->
-<g fill="#4a4236" stroke="#2a2218" stroke-width="2">
-  <!-- Stone 1 top/N — nearest to entry -->
-  <rect x="488" y="248" width="24" height="42" rx="4"/>
-  <!-- Stone 2 upper-R -->
-  <rect x="624" y="314" width="24" height="42" rx="4"/>
-  <!-- Stone 3 R -->
-  <rect x="658" y="462" width="24" height="42" rx="4"/>
-  <!-- Stone 4 lower-R -->
-  <rect x="564" y="580" width="24" height="42" rx="4"/>
-  <!-- Stone 5 lower-L -->
-  <rect x="412" y="580" width="24" height="42" rx="4"/>
-  <!-- Stone 6 L -->
-  <rect x="318" y="462" width="24" height="42" rx="4"/>
-  <!-- Stone 7 upper-L -->
-  <rect x="352" y="314" width="24" height="42" rx="4"/>
-</g>
-<!-- Rune carvings on stones (tiny) -->
-<g filter="url(#runeGlow)" opacity="0.7">
-  <text x="500" y="278" text-anchor="middle" font-size="12" fill="rgba(100,170,255,0.8)" font-family="serif">ᛏ</text>
-  <text x="636" y="344" text-anchor="middle" font-size="12" fill="rgba(100,170,255,0.8)" font-family="serif">ᚺ</text>
-  <text x="670" y="492" text-anchor="middle" font-size="12" fill="rgba(100,170,255,0.8)" font-family="serif">ᚾ</text>
-  <text x="576" y="610" text-anchor="middle" font-size="12" fill="rgba(100,170,255,0.8)" font-family="serif">ᛁ</text>
-  <text x="424" y="610" text-anchor="middle" font-size="12" fill="rgba(100,170,255,0.8)" font-family="serif">ᛟ</text>
-  <text x="330" y="492" text-anchor="middle" font-size="12" fill="rgba(100,170,255,0.8)" font-family="serif">ᚠ</text>
-  <text x="364" y="344" text-anchor="middle" font-size="12" fill="rgba(100,170,255,0.8)" font-family="serif">ᚢ</text>
+<!-- 7 standing stone plinths in heptagon at r=240 from centre -->
+<!-- Angles: 0, 51.4, 102.8, 154.2, 205.7, 257.1, 308.5 degrees -->
+<!-- Plinth at 270° (top/north): cx=480, cy=240 -->
+<g>
+  <!-- Plinth 1: top (270°) -->
+  <ellipse cx="480" cy="260" rx="18" ry="5"  fill="#2a2018" opacity="0.5"/>
+  <circle  cx="480" cy="256" r="16" fill="#4a4030" stroke="#3a3020" stroke-width="2"/>
+  <circle  cx="480" cy="256" r="10" fill="none" stroke="#5a4a38" stroke-width="1.5"/>
+  <!-- Plinth 2: ~321° from top = 51° from N clockwise: cx=480+240*sin(51°), cy=480-240*cos(51°) -->
+  <ellipse cx="667" cy="329" rx="18" ry="5"  fill="#2a2018" opacity="0.5"/>
+  <circle  cx="667" cy="325" r="16" fill="#4a4030" stroke="#3a3020" stroke-width="2"/>
+  <circle  cx="667" cy="325" r="10" fill="none" stroke="#5a4a38" stroke-width="1.5"/>
+  <!-- Plinth 3: ~103° from N clockwise: cx=480+240*sin(103°)=480+234, cy=480-240*cos(103°)=480+54 -->
+  <ellipse cx="714" cy="538" rx="18" ry="5"  fill="#2a2018" opacity="0.5"/>
+  <circle  cx="714" cy="534" r="16" fill="#4a4030" stroke="#3a3020" stroke-width="2"/>
+  <circle  cx="714" cy="534" r="10" fill="none" stroke="#5a4a38" stroke-width="1.5"/>
+  <!-- Plinth 4: ~154° from N: cx=480+240*sin(154°)=480+105, cy=480-240*cos(154°)=480+216 -->
+  <ellipse cx="585" cy="700" rx="18" ry="5"  fill="#2a2018" opacity="0.5"/>
+  <circle  cx="585" cy="696" r="16" fill="#4a4030" stroke="#3a3020" stroke-width="2"/>
+  <circle  cx="585" cy="696" r="10" fill="none" stroke="#5a4a38" stroke-width="1.5"/>
+  <!-- Plinth 5: ~206° from N: cx=480+240*sin(206°)=480-105, cy=480-240*cos(206°)=480+216 -->
+  <ellipse cx="375" cy="700" rx="18" ry="5"  fill="#2a2018" opacity="0.5"/>
+  <circle  cx="375" cy="696" r="16" fill="#4a4030" stroke="#3a3020" stroke-width="2"/>
+  <circle  cx="375" cy="696" r="10" fill="none" stroke="#5a4a38" stroke-width="1.5"/>
+  <!-- Plinth 6: ~257° from N: cx=480+240*sin(257°)=480-234, cy=480-240*cos(257°)=480+54 -->
+  <ellipse cx="246" cy="538" rx="18" ry="5"  fill="#2a2018" opacity="0.5"/>
+  <circle  cx="246" cy="534" r="16" fill="#4a4030" stroke="#3a3020" stroke-width="2"/>
+  <circle  cx="246" cy="534" r="10" fill="none" stroke="#5a4a38" stroke-width="1.5"/>
+  <!-- Plinth 7: ~309° from N: cx=480+240*sin(309°)=480-187, cy=480-240*cos(309°)=480-151 -->
+  <ellipse cx="293" cy="333" rx="18" ry="5"  fill="#2a2018" opacity="0.5"/>
+  <circle  cx="293" cy="329" r="16" fill="#4a4030" stroke="#3a3020" stroke-width="2"/>
+  <circle  cx="293" cy="329" r="10" fill="none" stroke="#5a4a38" stroke-width="1.5"/>
 </g>
 
-<!-- ALTAR STONE (center, slightly N of room center) -->
-<rect x="468" y="370" width="64" height="42" rx="5" fill="#3a3228" stroke="#9a8050" stroke-width="2.5"/>
-<!-- Altar top surface (raised) -->
-<rect x="472" y="372" width="56" height="36" rx="3" fill="#42382e"/>
-<!-- Iron spear on altar -->
-<line x1="500" y1="368" x2="500" y2="412" stroke="#8a6040" stroke-width="4"/>
-<polygon points="500,364 494,378 506,378" fill="#c04020"/>
-<!-- Spear glow -->
-<ellipse cx="500" cy="370" rx="18" ry="12" fill="#c04020" opacity="0.3" filter="url(#runeGlow)"/>
-<text x="500" y="372" text-anchor="middle" font-size="18" fill="rgba(200,60,30,0.6)" filter="url(#runeGlow)">☩</text>
+<!-- Central altar -->
+<rect x="438" y="454" width="84" height="52" fill="#3a3020" stroke="#2a2018" stroke-width="3"/>
+<rect x="438" y="500" width="84" height="6"  fill="#282015"/>
+<rect x="518" y="454" width="6"  height="52" fill="#2a2015"/>
+<!-- Altar inset decoration -->
+<rect x="445" y="461" width="70" height="38" fill="none" stroke="#5a4a30" stroke-width="1.5"/>
+<!-- Mars symbol carving (abstract) -->
+<line x1="480" y1="464" x2="480" y2="498" stroke="#6a3020" stroke-width="2" opacity="0.7"/>
+<line x1="463" y1="478" x2="497" y2="478" stroke="#6a3020" stroke-width="2" opacity="0.7"/>
+<circle cx="480" cy="475" r="8" fill="none" stroke="#6a3020" stroke-width="1.5" opacity="0.7"/>
 
-<!-- Floor slopes toward altar (concentric faint circles) -->
-<circle cx="500" cy="440" r="80"  fill="none" stroke="rgba(150,80,30,0.12)" stroke-width="1"/>
-<circle cx="500" cy="440" r="120" fill="none" stroke="rgba(150,80,30,0.10)" stroke-width="1"/>
-<circle cx="500" cy="440" r="160" fill="none" stroke="rgba(150,80,30,0.08)" stroke-width="1"/>
-<circle cx="500" cy="440" r="200" fill="none" stroke="rgba(150,80,30,0.06)" stroke-width="1"/>
+<!-- Torch sconces around the ring (6 torches) -->
+<!-- Top torch -->
+<rect x="476" y="283" width="8" height="12" rx="1" fill="#7a6030"/>
+<ellipse cx="480" cy="280" rx="5" ry="7" fill="#e06020"/>
+<ellipse cx="480" cy="276" rx="3" ry="5" fill="#ffc060"/>
+<ellipse cx="480" cy="295" rx="40" ry="35" fill="url(#tglow)" opacity="0.5"/>
+<!-- Bottom-right torch -->
+<rect x="692" y="520" width="8" height="12" rx="1" fill="#7a6030"/>
+<ellipse cx="696" cy="517" rx="5" ry="7" fill="#e06020"/>
+<ellipse cx="696" cy="513" rx="3" ry="5" fill="#ffc060"/>
+<ellipse cx="696" cy="532" rx="40" ry="35" fill="url(#tglow)" opacity="0.5"/>
+<!-- Bottom-left torch -->
+<rect x="264" y="520" width="8" height="12" rx="1" fill="#7a6030"/>
+<ellipse cx="268" cy="517" rx="5" ry="7" fill="#e06020"/>
+<ellipse cx="268" cy="513" rx="3" ry="5" fill="#ffc060"/>
+<ellipse cx="268" cy="532" rx="40" ry="35" fill="url(#tglow)" opacity="0.5"/>
 
-<!-- LEVER (right wall, near entry) -->
-<rect x="558" y="208" width="16" height="28" rx="3" fill="#7a6030" stroke="#5a4020" stroke-width="1.5"/>
-<line x1="566" y1="208" x2="554" y2="194" stroke="#7a6030" stroke-width="3"/>
-<circle cx="554" cy="192" r="4" fill="#a08040"/>
+<!-- GRID drawn last before room numbers -->
+<rect x="0" y="0" width="960" height="960" fill="url(#grid)"/>
 
-<!-- ENCOUNTER MARKERS -->
-<!-- Wight — behind altar -->
-<circle cx="500" cy="450" r="18" fill="#280a38" stroke="#a040d0" stroke-width="2.5"/>
-<text x="500" y="446" text-anchor="middle" font-size="10" fill="#a040d0" font-weight="bold">W</text>
-<text x="500" y="458" text-anchor="middle" font-size="8" fill="#a040d0">wight</text>
-
-<!-- Cult Fanatic — near entry passage, already in room -->
-<circle cx="500" cy="320" r="16" fill="#2a0810" stroke="#c84040" stroke-width="2"/>
-<text x="500" y="316" text-anchor="middle" font-size="9" fill="#c84040" font-weight="bold">CF</text>
-<text x="500" y="328" text-anchor="middle" font-size="8" fill="#c84040">fanatic</text>
-
-<!-- Shadow 1 (between stones, NW side) -->
-<circle cx="395" cy="375" r="14" fill="#151828" stroke="#6070c0" stroke-width="1.5" opacity="0.85"/>
-<text x="395" y="371" text-anchor="middle" font-size="9" fill="#6070c0" font-weight="bold">Sh</text>
-<text x="395" y="382" text-anchor="middle" font-size="8" fill="#6070c0">shadow</text>
-
-<!-- Shadow 2 (between stones, SE side) -->
-<circle cx="610" cy="510" r="14" fill="#151828" stroke="#6070c0" stroke-width="1.5" opacity="0.85"/>
-<text x="610" y="506" text-anchor="middle" font-size="9" fill="#6070c0" font-weight="bold">Sh</text>
-<text x="610" y="517" text-anchor="middle" font-size="8" fill="#6070c0">shadow</text>
-
-<!-- COVER POSITIONS — behind stones -->
-<circle cx="500" cy="310" r="18" fill="none" stroke="#a0a030" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5"/>
-<circle cx="695" cy="440" r="18" fill="none" stroke="#a0a030" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5"/>
-<circle cx="500" cy="570" r="18" fill="none" stroke="#a0a030" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5"/>
-<circle cx="305" cy="440" r="18" fill="none" stroke="#a0a030" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5"/>
-
-<!-- CHAINS (floor, slack around altar base) -->
-<g stroke="#7080a0" stroke-width="1.5" opacity="0.4" fill="none">
-  <path d="M480,413 Q470,430 460,445 Q455,460 465,465"/>
-  <path d="M520,413 Q530,430 540,445 Q545,460 535,465"/>
-  <path d="M468,390 Q450,395 440,410"/>
-  <path d="M532,390 Q550,395 560,410"/>
+<!-- Walls: entry corridor -->
+<g fill="none" stroke="#1a1612" stroke-width="5" stroke-linejoin="round">
+  <rect x="420" y="0" width="120" height="80"/>
 </g>
+<!-- Archway gap entry to circular room -->
+<rect x="422" y="76" width="116" height="9" fill="#1a1612"/>
 
-<!-- PARTY ENTRY ZONE -->
-<rect x="442" y="198" width="116" height="60" fill="rgba(80,160,80,0.08)" stroke="#60a860" stroke-width="1" stroke-dasharray="4,3"/>
-<text x="500" y="224" text-anchor="middle" font-size="8" fill="#60a860" opacity="0.6">party enters</text>
+<!-- Circular wall outline -->
+<circle cx="480" cy="480" r="360" fill="none" stroke="#1a1612" stroke-width="5"/>
 
-<!-- CALLOUT ARROWS (pointing outside the circle) -->
-<!-- Lever label -->
-<text x="580" y="200" font-size="9" fill="#8ab0c8">lever</text>
-<text x="580" y="211" font-size="8" fill="#8ab0c8" font-style="italic">(seals exit)</text>
-<line x1="578" y1="205" x2="572" y2="210" stroke="#8ab0c8" stroke-width="0.8" opacity="0.6"/>
-
-<!-- Stone labels (outside circle) -->
-<text x="760" y="340" font-size="8" fill="#6a7090" opacity="0.8">standing stone ×7</text>
-<line x1="758" y1="338" x2="696" y2="340" stroke="#6a7090" stroke-width="0.7" opacity="0.5"/>
-
-<text x="760" y="380" font-size="8" fill="#6a7090" opacity="0.8">altar stone</text>
-<line x1="758" y1="380" x2="535" y2="385" stroke="#6a7090" stroke-width="0.7" opacity="0.5"/>
-
-<text x="760" y="420" font-size="8" fill="#c04020" opacity="0.8">iron spear (cursed)</text>
-<line x1="758" y1="418" x2="520" y2="387" stroke="#c04020" stroke-width="0.7" opacity="0.5"/>
-
-<text x="760" y="460" font-size="8" fill="#7080a0" opacity="0.8">slack chains at base</text>
-<line x1="758" y1="458" x2="538" y2="442" stroke="#7080a0" stroke-width="0.7" opacity="0.5"/>
-
-<!-- N direction (entry) -->
-<text x="500" y="68" text-anchor="middle" font-size="9" fill="#5a6870">↑ Runic Corridor</text>
-<!-- Floor slope note -->
-<text x="730" y="590" font-size="8" fill="#7a5a30" font-style="italic">floor slopes → altar</text>
+<!-- Room number 9 -->
+<circle cx="360" cy="480" r="14" fill="#0d0b08" stroke="#c8a850" stroke-width="1.5"/>
+<text x="360" y="485" text-anchor="middle" font-size="12" font-family="Georgia,serif" font-weight="bold" fill="#c8a850">9</text>
 
 <!-- COMPASS -->
-<g transform="translate(970,660)">
-  <circle cx="0" cy="0" r="24" fill="#08070a" stroke="#2a1a10" stroke-width="1.5"/>
-  <polygon points="0,-19 4,-6 0,-9 -4,-6" fill="#e8d8a8"/>
-  <polygon points="0,19 4,6 0,9 -4,6" fill="#5a4a3a"/>
-  <polygon points="-19,0 -6,4 -9,0 -6,-4" fill="#5a4a3a"/>
-  <polygon points="19,0 6,4 9,0 6,-4" fill="#5a4a3a"/>
-  <text x="0" y="-11" text-anchor="middle" font-size="8" fill="#e8d8a8">N</text>
+<g transform="translate(926,30)">
+  <circle cx="0" cy="0" r="22" fill="#141210" stroke="#3a3020" stroke-width="1.5"/>
+  <polygon points="0,-18 4,-6 0,-9 -4,-6"  fill="#e8d8a8"/>
+  <polygon points="0,18  4,6  0,9  -4,6"   fill="#6a5a48"/>
+  <polygon points="-18,0 -6,4 -9,0 -6,-4" fill="#6a5a48"/>
+  <polygon points="18,0  6,4  9,0  6,-4"   fill="#6a5a48"/>
+  <text x="0" y="-9" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#e8d8a8">N</text>
 </g>
 
-<!-- SCALE -->
-<g transform="translate(40,680)">
-  <rect x="0" y="0" width="60" height="7" fill="#e8d8a8"/>
-  <rect x="60" y="0" width="60" height="7" fill="#3a3028"/>
-  <rect x="120" y="0" width="60" height="7" fill="#e8d8a8"/>
-  <line x1="0" y1="0" x2="180" y2="0" stroke="#c8a850" stroke-width="1"/>
-  <line x1="0" y1="7" x2="180" y2="7" stroke="#c8a850" stroke-width="1"/>
-  <line x1="0"   y1="0" x2="0"   y2="7" stroke="#c8a850" stroke-width="1"/>
-  <line x1="180" y1="0" x2="180" y2="7" stroke="#c8a850" stroke-width="1"/>
-  <text x="0"   y="17" font-size="8" fill="#a09070">0</text>
-  <text x="55"  y="17" font-size="8" fill="#a09070">5 ft</text>
-  <text x="110" y="17" font-size="8" fill="#a09070">10 ft</text>
-  <text x="160" y="17" font-size="8" fill="#a09070">15 ft</text>
+<!-- SCALE BAR -->
+<g transform="translate(700,928)">
+  <rect x="0"   y="0" width="60"  height="6" fill="#e8d8a8"/>
+  <rect x="60"  y="0" width="60"  height="6" fill="#3a3028"/>
+  <rect x="120" y="0" width="60"  height="6" fill="#e8d8a8"/>
+  <rect x="0"   y="0" width="180" height="6" fill="none" stroke="#c8a850" stroke-width="1"/>
 </g>
 
-<!-- KEY box -->
-<g transform="translate(760,80)">
-  <rect x="0" y="0" width="225" height="155" rx="4" fill="#08070a" stroke="#2a1a10" stroke-width="1"/>
-  <text x="112" y="16" text-anchor="middle" font-size="9" fill="#c84040" letter-spacing="1">MAP KEY</text>
-  <circle cx="18" cy="35" r="12" fill="#280a38" stroke="#a040d0" stroke-width="1.5"/>
-  <text x="18" y="39" text-anchor="middle" font-size="8" fill="#a040d0">W</text>
-  <text x="40" y="39" font-size="9" fill="#c0c0b0">Wight (behind altar)</text>
-  <circle cx="18" cy="58" r="12" fill="#2a0810" stroke="#c84040" stroke-width="1.5"/>
-  <text x="18" y="62" text-anchor="middle" font-size="8" fill="#c84040">CF</text>
-  <text x="40" y="62" font-size="9" fill="#c0c0b0">Cult Fanatic (entry end)</text>
-  <circle cx="18" cy="81" r="11" fill="#151828" stroke="#6070c0" stroke-width="1.5"/>
-  <text x="18" y="85" text-anchor="middle" font-size="8" fill="#6070c0">Sh</text>
-  <text x="40" y="85" font-size="9" fill="#c0c0b0">Shadow ×2 (between stones)</text>
-  <circle cx="18" cy="104" r="11" fill="none" stroke="#a0a030" stroke-width="1.2" stroke-dasharray="3,2"/>
-  <text x="40" y="108" font-size="9" fill="#c0c0b0">Cover (behind stone)</text>
-  <rect x="6" y="122" width="24" height="8" fill="rgba(80,160,80,0.15)" stroke="#60a860" stroke-width="1"/>
-  <text x="40" y="131" font-size="9" fill="#c0c0b0">Party entry zone</text>
-  <rect x="8" y="140" width="20" height="7" rx="2" fill="#7a6030"/>
-  <text x="40" y="150" font-size="9" fill="#c0c0b0">Lever (seals exit)</text>
-</g>
-
-<rect x="5" y="5" width="1050" height="710" fill="none" stroke="#2a1a10" stroke-width="1.5" rx="3"/>
+<!-- Border -->
+<rect x="2" y="2" width="956" height="956" fill="none" stroke="#3a3020" stroke-width="2" rx="3"/>
 </svg>
 
-<!-- DM NOTES -->
 <div class="notes">
-
-<h2>ENCOUNTER: ALTAR CHAMBER</h2>
+<h2>ALTAR CHAMBER — DM NOTES</h2>
 <table>
-  <tr><th>Enemy</th><th>HP / AC</th><th>Start</th><th>Behaviour</th></tr>
-  <tr>
-    <td class="enc">Cult Fanatic</td>
-    <td>33 / AC 13</td>
-    <td>N end of room, near entry. Waiting. Already in prayer.</td>
-    <td>Does not attack immediately. Speaks: <em>"You should not be here. Leave the spear. Leave now."</em> — buys the Wight one free round to emerge.</td>
-  </tr>
-  <tr class="warn">
-    <td class="enc">Wight</td>
-    <td>45 / AC 14</td>
-    <td>Behind altar, crouched. Rises on round 1.</td>
-    <td>Speaks in accented Latin: <em>"The spear does not belong to your century."</em> Persuasion DC 14 to negotiate — advantage if party holds the contract scroll. If combat: targets whoever touched/approaches the spear first.</td>
-  </tr>
-  <tr>
-    <td class="enc">Shadow ×2</td>
-    <td>16 / AC 12</td>
-    <td>Between stones NW and SE (light cannot reach them there).</td>
-    <td>Do not act until Wight takes damage OR Fanatic drops. Then move through the stones toward party's rear (Stealth +4, Darkness if within 5ft of a stone).</td>
-  </tr>
+  <tr><th>Element</th><th class="draw">Detail</th></tr>
+  <tr><td>7 standing plinths</td><td class="draw">Heptagon at radius 240. Heptagram pattern on floor between them. Each is difficult terrain (base 16px radius).</td></tr>
+  <tr><td>Central altar</td><td class="draw">3D altar drawn centre. Wight stands here at combat start. Persuasion DC 14 with contract scroll = exit condition.</td></tr>
+  <tr><td>Mars glow</td><td class="draw">Red radial gradient fills inner circle. Corruption aura: any non-Cultist within 60 ft at end of turn makes DC 12 Wis save or gains 1 corruption point.</td></tr>
+  <tr><td>Concentric rings</td><td class="draw">Carved channels, 3 rings. No mechanical effect — flavour only. Characters who examine them (Investigation DC 13) find blood residue.</td></tr>
+  <tr><td>3 torches</td><td class="draw">Sconces on plinths at N, SE, SW. Dim light in mid ring, darkness beyond. Darkvision advantage in middle band.</td></tr>
 </table>
-
-<h2>EXIT CONDITIONS (non-lethal resolution)</h2>
+<h2>ENCOUNTER</h2>
 <table>
-  <tr>
-    <td class="mech">Back away from spear</td>
-    <td>If the party retreats 20ft from the altar and shows no hostile intent: Wight holds. Fanatic collapses in relief. Party can leave. The Wight will not pursue out of the chamber.</td>
-  </tr>
-  <tr>
-    <td class="mech">Persuasion DC 14</td>
-    <td>With contract scroll: Wight explains the spear is bound to the land, not to Mars. Will stand aside and seal the chamber behind the party. Gives them the bone token (second OTHALAN piece).</td>
-  </tr>
-  <tr>
-    <td class="mech">Lever (right of entry)</td>
-    <td>Seals the Runic Corridor behind the party as Difficult Terrain — chain-link gate. Activates only from inside the chamber. Reversible. Wight uses it on round 3 if combat is going badly for it.</td>
-  </tr>
+  <tr><th>Creature</th><th>Start</th><th class="enc">Tactic</th></tr>
+  <tr><td>Wight x1</td><td>Central altar (cx 480,480)</td><td class="enc">Holds until players reach inner ring. Speaks: "Leave or join the Pact." Attacks if players advance past ring 2.</td></tr>
+  <tr><td>Shadow x2</td><td>Emerge from darkest arc (outer ring, W side)</td><td class="enc">Flank. Target lowest Str PC. Use dim-light movement.</td></tr>
 </table>
-
-<h2>SPEAR MECHANICS</h2>
-<table>
-  <tr>
-    <td><strong>Touch (no attuned)</strong></td>
-    <td>Corruption +1. Wisdom save DC 13 or stunned until end of next turn (visions of a battlefield).</td>
-  </tr>
-  <tr>
-    <td><strong>Pick up</strong></td>
-    <td>Corruption +2. Immediately pulls out of grasp (as if pulled by unseen force) unless Strength check DC 15 succeeds.</td>
-  </tr>
-  <tr>
-    <td><strong>Remove from vault</strong></td>
-    <td>All undead in vault become permanently hostile. Wight rises again in 24h. This is the BAD ending for Session 1.</td>
-  </tr>
-</table>
-
-<h2>WHAT TO DRAW</h2>
-<table>
-  <tr>
-    <td class="draw">Standing stones</td>
-    <td>Twice head-height. Ancient, pre-Roman. Carved rune spirals that seem to shift when you look away. Stone is darker than the floor — brought from elsewhere. No mortar; just set in the floor's stone. <strong>Half-cover</strong> if crouching behind one.</td>
-  </tr>
-  <tr>
-    <td class="draw">Altar stone</td>
-    <td>Grey-black granite, older than everything else in the vault. Roman letters have been carved into its base at some point: "MARTI INVICTO" — but under that, far older Germanic runes. The spear sits in a groove cut into the top surface exactly sized for it.</td>
-  </tr>
-  <tr>
-    <td class="draw">Floor slope</td>
-    <td>Subtle but real — concentric rings worn into the stone show generations of something flowing toward the altar. Old blood channels. Not currently active.</td>
-  </tr>
-  <tr>
-    <td class="draw">Chains at altar base</td>
-    <td>Six heavy iron chains, lying slack on the floor in a rough ring around the altar base. Hooks but nothing attached. They were used to bind something (or someone) here. Recently enough that the iron still smells of oil.</td>
-  </tr>
-  <tr>
-    <td class="draw">Ceiling</td>
-    <td>High — almost out of torchlight range. At the center apex, directly above the altar, a hole the size of a fist: a chimney shaft going up through bedrock. Cold air descends from it continuously.</td>
-  </tr>
-</table>
-
-<h2>LIGHTING</h2>
-<table>
-  <tr>
-    <td>The spear on the altar is the only light source — <strong>dim red glow, 10ft radius</strong>. The standing stones block light (treat as walls for Shadows). Without the spear's light: complete darkness past 10ft. Darkvision still works but appears red-tinted. Shadows have advantage in darkness.</td>
-  </tr>
-</table>
-
+<h2>EXIT CONDITION</h2>
+<table><tr><td class="mech">Present contract scroll + Persuasion DC 14: Wight stands aside, does not attack. Players may collect the pact token from the altar base.</td></tr></table>
+<h2>GRID</h2>
+<table><tr><td>60 px/sq. Room centre (480,480). Import at 60 px/sq. Grid origin (0,0).</td></tr></table>
 </div>
 </body>
 </html>
