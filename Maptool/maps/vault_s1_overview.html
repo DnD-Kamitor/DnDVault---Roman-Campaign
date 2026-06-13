@@ -34,9 +34,9 @@
     Left Corridor:   x=280  y=1080 w=80   h=320
     Right Corridor:  x=960  y=1240 w=80   h=160
     Binding Chamber: x=280  y=1400 w=760  h=240
-    Runic Corridor:  x=600  y=1640 w=160  h=280   ← 4 sq wide
-    Altar rect:      x=400  y=1920 w=480  h=480
-    Altar circle:    cx=640 cy=2160 r=200
+    Runic Corridor:  x=600  y=1640 w=200  h=320   ← 5 sq wide × 8 rows (matches chapter1 puzzle: 5 runes across, 8 rows)
+    Altar rect:      x=400  y=1960 w=480  h=480
+    Altar circle:    cx=640 cy=2200 r=200
   Canvas: 1200 × 2500
 -->
 
@@ -79,9 +79,9 @@
 <rect x="280" y="1080" width="80"   height="320" fill="#6e6250"/>
 <rect x="960" y="1240" width="80"   height="160" fill="#6e6250"/>
 <rect x="280" y="1400" width="760"  height="240" fill="#6a5e4c"/>
-<rect x="600" y="1640" width="160"  height="280" fill="#3e3830"/>
-<rect x="400" y="1920" width="480"  height="480" fill="#7a6e58"/>
-<circle cx="640" cy="2160" r="200"              fill="#7a6e58"/>
+<rect x="600" y="1640" width="200"  height="320" fill="#3e3830"/>
+<rect x="400" y="1960" width="480"  height="480" fill="#7a6e58"/>
+<circle cx="640" cy="2200" r="200"              fill="#7a6e58"/>
 
 <!-- WALLS -->
 <g fill="none" stroke="#1a1612" stroke-width="5" stroke-linejoin="round">
@@ -94,9 +94,9 @@
   <rect x="280" y="1080" width="80"   height="320"/>
   <rect x="960" y="1240" width="80"   height="160"/>
   <rect x="280" y="1400" width="760"  height="240"/>
-  <rect x="600" y="1640" width="160"  height="280"/>
-  <rect x="400" y="1920" width="480"  height="480"/>
-  <circle cx="640" cy="2160" r="200"/>
+  <rect x="600" y="1640" width="200"  height="320"/>
+  <rect x="400" y="1960" width="480"  height="480"/>
+  <circle cx="640" cy="2200" r="200"/>
 </g>
 
 <!-- ARCHWAY GAPS -->
@@ -110,8 +110,8 @@
   <rect x="963" y="1236" width="74"  height="9"/>
   <rect x="283" y="1396" width="74"  height="9"/>
   <rect x="963" y="1396" width="74"  height="9"/>
-  <rect x="603" y="1636" width="154" height="9"/>
-  <rect x="603" y="1916" width="154" height="9"/>
+  <rect x="603" y="1636" width="194" height="9"/>   <!-- binding → runic: 5sq=200px gap -->
+  <rect x="603" y="1956" width="194" height="9"/>   <!-- runic → altar: corridor ends y=1960 -->
 </g>
 
 <!-- ════════════════════════════════
@@ -474,127 +474,120 @@
 <circle cx="1032" cy="1500" r="8"  fill="none" stroke="#8090b0" stroke-width="1.5" opacity="0.5"/>
 <line x1="1016" y1="1500" x2="924" y2="1500" stroke="#8090b0" stroke-width="1.5" opacity="0.45"/>
 
-<!-- RUNIC CORRIDOR (4 sq wide = 160px): blue glow + abstract carved marks -->
-<rect x="600" y="1640" width="160" height="280" fill="rgba(40,70,160,0.12)"/>
-<!-- 4 columns of abstract carved marks, at x=618, 652, 708, 742 -->
+<!-- RUNIC CORRIDOR (5 sq wide = 200px, 8 rows = 320px): blue glow + 5×8 carved rune marks -->
+<!-- Matches chapter1 puzzle: 5 runes across, 8 rows deep, floor rune = correct order triggers exit -->
+<rect x="600" y="1640" width="200" height="320" fill="rgba(40,70,160,0.12)"/>
+<!-- 5 columns at x=620,660,700,740,780 × 8 rows at y=1660,1700,1740,1780,1820,1860,1900,1940 -->
+<!-- Col A(620)=Hagalaz  Col B(660)=Nauthiz  Col C(700)=Tiwaz  Col D(740)=Fehu  Col E(780)=Raidho -->
 <g stroke="rgba(90,160,255,0.50)" stroke-width="1.8" fill="none">
-  <!-- Column 1 (x~618) -->
-  <line x1="618" y1="1658" x2="618" y2="1678"/>
-  <line x1="618" y1="1664" x2="626" y2="1659"/>
-  <line x1="618" y1="1698" x2="618" y2="1718"/>
-  <line x1="618" y1="1704" x2="626" y2="1700"/>
-  <line x1="618" y1="1710" x2="626" y2="1714"/>
-  <line x1="618" y1="1738" x2="618" y2="1758"/>
-  <line x1="618" y1="1778" x2="618" y2="1798"/>
-  <line x1="618" y1="1784" x2="626" y2="1788"/>
-  <line x1="618" y1="1818" x2="618" y2="1838"/>
-  <line x1="618" y1="1824" x2="626" y2="1820"/>
-  <line x1="618" y1="1858" x2="618" y2="1878"/>
-  <line x1="618" y1="1864" x2="626" y2="1860"/>
-  <line x1="618" y1="1898" x2="618" y2="1918"/>
-  <!-- Column 2 (x~648) -->
-  <line x1="648" y1="1658" x2="648" y2="1678"/>
-  <line x1="648" y1="1664" x2="654" y2="1660"/>
-  <line x1="648" y1="1670" x2="654" y2="1674"/>
-  <line x1="648" y1="1698" x2="648" y2="1718"/>
-  <line x1="648" y1="1738" x2="648" y2="1758"/>
-  <line x1="648" y1="1744" x2="656" y2="1740"/>
-  <line x1="648" y1="1778" x2="648" y2="1798"/>
-  <line x1="648" y1="1818" x2="648" y2="1838"/>
-  <line x1="648" y1="1826" x2="654" y2="1830"/>
-  <line x1="648" y1="1858" x2="648" y2="1878"/>
-  <line x1="648" y1="1898" x2="648" y2="1918"/>
-  <line x1="648" y1="1904" x2="656" y2="1900"/>
-  <!-- Column 3 (x~712) -->
-  <line x1="712" y1="1658" x2="712" y2="1678"/>
-  <line x1="712" y1="1665" x2="704" y2="1660"/>
-  <line x1="712" y1="1698" x2="712" y2="1718"/>
-  <line x1="712" y1="1704" x2="704" y2="1700"/>
-  <line x1="712" y1="1710" x2="704" y2="1714"/>
-  <line x1="712" y1="1738" x2="712" y2="1758"/>
-  <line x1="712" y1="1744" x2="704" y2="1740"/>
-  <line x1="712" y1="1778" x2="712" y2="1798"/>
-  <line x1="712" y1="1818" x2="712" y2="1838"/>
-  <line x1="712" y1="1824" x2="704" y2="1820"/>
-  <line x1="712" y1="1858" x2="712" y2="1878"/>
-  <line x1="712" y1="1864" x2="704" y2="1860"/>
-  <line x1="712" y1="1898" x2="712" y2="1918"/>
-  <!-- Column 4 (x~742) -->
-  <line x1="742" y1="1658" x2="742" y2="1678"/>
-  <line x1="742" y1="1698" x2="742" y2="1718"/>
-  <line x1="742" y1="1704" x2="748" y2="1700"/>
-  <line x1="742" y1="1738" x2="742" y2="1758"/>
-  <line x1="742" y1="1746" x2="748" y2="1750"/>
-  <line x1="742" y1="1778" x2="742" y2="1798"/>
-  <line x1="742" y1="1784" x2="748" y2="1780"/>
-  <line x1="742" y1="1818" x2="742" y2="1838"/>
-  <line x1="742" y1="1858" x2="742" y2="1878"/>
-  <line x1="742" y1="1864" x2="748" y2="1860"/>
-  <line x1="742" y1="1898" x2="742" y2="1918"/>
-  <line x1="742" y1="1906" x2="748" y2="1902"/>
+  <!-- Col A: Hagalaz (vertical + cross branches) -->
+  <line x1="620" y1="1650" x2="620" y2="1670"/><line x1="614" y1="1654" x2="626" y2="1666"/><line x1="614" y1="1666" x2="626" y2="1654"/>
+  <line x1="620" y1="1690" x2="620" y2="1710"/><line x1="614" y1="1694" x2="626" y2="1706"/>
+  <line x1="620" y1="1730" x2="620" y2="1750"/><line x1="614" y1="1734" x2="626" y2="1746"/><line x1="614" y1="1746" x2="626" y2="1734"/>
+  <line x1="620" y1="1770" x2="620" y2="1790"/><line x1="614" y1="1774" x2="626" y2="1786"/>
+  <line x1="620" y1="1810" x2="620" y2="1830"/><line x1="614" y1="1814" x2="626" y2="1826"/><line x1="614" y1="1826" x2="626" y2="1814"/>
+  <line x1="620" y1="1850" x2="620" y2="1870"/><line x1="614" y1="1854" x2="626" y2="1866"/>
+  <line x1="620" y1="1890" x2="620" y2="1910"/><line x1="614" y1="1894" x2="626" y2="1906"/><line x1="614" y1="1906" x2="626" y2="1894"/>
+  <line x1="620" y1="1930" x2="620" y2="1950"/><line x1="614" y1="1934" x2="626" y2="1946"/>
+  <!-- Col B: Nauthiz (vertical + diagonal crossing right-to-left) -->
+  <line x1="660" y1="1650" x2="660" y2="1670"/><line x1="653" y1="1663" x2="667" y2="1657"/>
+  <line x1="660" y1="1690" x2="660" y2="1710"/><line x1="653" y1="1700" x2="667" y2="1694"/><line x1="660" y1="1696" x2="653" y2="1706"/>
+  <line x1="660" y1="1730" x2="660" y2="1750"/><line x1="653" y1="1743" x2="667" y2="1737"/>
+  <line x1="660" y1="1770" x2="660" y2="1790"/><line x1="653" y1="1780" x2="667" y2="1774"/><line x1="660" y1="1776" x2="653" y2="1786"/>
+  <line x1="660" y1="1810" x2="660" y2="1830"/><line x1="653" y1="1823" x2="667" y2="1817"/>
+  <line x1="660" y1="1850" x2="660" y2="1870"/><line x1="653" y1="1860" x2="667" y2="1854"/><line x1="660" y1="1856" x2="653" y2="1866"/>
+  <line x1="660" y1="1890" x2="660" y2="1910"/><line x1="653" y1="1903" x2="667" y2="1897"/>
+  <line x1="660" y1="1930" x2="660" y2="1950"/><line x1="653" y1="1940" x2="667" y2="1934"/><line x1="660" y1="1936" x2="653" y2="1946"/>
+  <!-- Col C: Tiwaz (vertical + two symmetric upward branches = arrow pointing up) -->
+  <line x1="700" y1="1650" x2="700" y2="1670"/><line x1="700" y1="1656" x2="694" y2="1650"/><line x1="700" y1="1656" x2="706" y2="1650"/>
+  <line x1="700" y1="1690" x2="700" y2="1710"/><line x1="694" y1="1700" x2="706" y2="1700"/>
+  <line x1="700" y1="1730" x2="700" y2="1750"/><line x1="700" y1="1736" x2="694" y2="1730"/><line x1="700" y1="1736" x2="706" y2="1730"/>
+  <line x1="700" y1="1770" x2="700" y2="1790"/><line x1="694" y1="1780" x2="706" y2="1780"/>
+  <line x1="700" y1="1810" x2="700" y2="1830"/><line x1="700" y1="1816" x2="694" y2="1810"/><line x1="700" y1="1816" x2="706" y2="1810"/>
+  <line x1="700" y1="1850" x2="700" y2="1870"/><line x1="694" y1="1860" x2="706" y2="1860"/>
+  <line x1="700" y1="1890" x2="700" y2="1910"/><line x1="700" y1="1896" x2="694" y2="1890"/><line x1="700" y1="1896" x2="706" y2="1890"/>
+  <line x1="700" y1="1930" x2="700" y2="1950"/><line x1="694" y1="1940" x2="706" y2="1940"/>
+  <!-- Col D: Fehu (vertical + two right upward branches) -->
+  <line x1="740" y1="1650" x2="740" y2="1670"/><line x1="740" y1="1654" x2="748" y2="1650"/><line x1="740" y1="1660" x2="748" y2="1656"/>
+  <line x1="740" y1="1690" x2="740" y2="1710"/><line x1="740" y1="1696" x2="748" y2="1700"/>
+  <line x1="740" y1="1730" x2="740" y2="1750"/><line x1="740" y1="1734" x2="748" y2="1730"/><line x1="740" y1="1740" x2="748" y2="1736"/>
+  <line x1="740" y1="1770" x2="740" y2="1790"/><line x1="740" y1="1776" x2="748" y2="1780"/>
+  <line x1="740" y1="1810" x2="740" y2="1830"/><line x1="740" y1="1814" x2="748" y2="1810"/><line x1="740" y1="1820" x2="748" y2="1816"/>
+  <line x1="740" y1="1850" x2="740" y2="1870"/><line x1="740" y1="1856" x2="748" y2="1860"/>
+  <line x1="740" y1="1890" x2="740" y2="1910"/><line x1="740" y1="1894" x2="748" y2="1890"/><line x1="740" y1="1900" x2="748" y2="1896"/>
+  <line x1="740" y1="1930" x2="740" y2="1950"/><line x1="740" y1="1936" x2="748" y2="1940"/>
+  <!-- Col E: Raidho (vertical + bent knee right) -->
+  <line x1="780" y1="1650" x2="780" y2="1670"/><line x1="780" y1="1655" x2="787" y2="1660"/><line x1="787" y1="1660" x2="780" y2="1665"/>
+  <line x1="780" y1="1690" x2="780" y2="1710"/><line x1="780" y1="1700" x2="787" y2="1695"/><line x1="780" y1="1700" x2="787" y2="1705"/>
+  <line x1="780" y1="1730" x2="780" y2="1750"/><line x1="780" y1="1735" x2="787" y2="1740"/><line x1="787" y1="1740" x2="780" y2="1745"/>
+  <line x1="780" y1="1770" x2="780" y2="1790"/><line x1="780" y1="1780" x2="787" y2="1775"/><line x1="780" y1="1780" x2="787" y2="1785"/>
+  <line x1="780" y1="1810" x2="780" y2="1830"/><line x1="780" y1="1815" x2="787" y2="1820"/><line x1="787" y1="1820" x2="780" y2="1825"/>
+  <line x1="780" y1="1850" x2="780" y2="1870"/><line x1="780" y1="1860" x2="787" y2="1855"/><line x1="780" y1="1860" x2="787" y2="1865"/>
+  <line x1="780" y1="1890" x2="780" y2="1910"/><line x1="780" y1="1895" x2="787" y2="1900"/><line x1="787" y1="1900" x2="780" y2="1905"/>
+  <line x1="780" y1="1930" x2="780" y2="1950"/><line x1="780" y1="1940" x2="787" y2="1935"/><line x1="780" y1="1940" x2="787" y2="1945"/>
 </g>
 
 <!-- ALTAR CHAMBER: concentric rings + 7 plinths + altar + glow -->
 <g fill="none" stroke="rgba(140,70,30,0.22)" stroke-width="1.8">
-  <circle cx="640" cy="2160" r="60"/>
-  <circle cx="640" cy="2160" r="105"/>
-  <circle cx="640" cy="2160" r="148"/>
-  <circle cx="640" cy="2160" r="188"/>
+  <circle cx="640" cy="2200" r="60"/>
+  <circle cx="640" cy="2200" r="105"/>
+  <circle cx="640" cy="2200" r="148"/>
+  <circle cx="640" cy="2200" r="188"/>
 </g>
 
 <!-- 7 standing stone plinths (3D top-view: circular top + ellipse shadow) -->
 <g>
   <!-- Plinth shadow (south/east ellipse) -->
-  <ellipse cx="642"  cy="2006" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
-  <ellipse cx="768"  cy="2068" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
-  <ellipse cx="799"  cy="2204" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
-  <ellipse cx="713"  cy="2310" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
-  <ellipse cx="575"  cy="2310" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
-  <ellipse cx="489"  cy="2204" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
-  <ellipse cx="520"  cy="2068" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
+  <ellipse cx="642"  cy="2046" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
+  <ellipse cx="768"  cy="2108" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
+  <ellipse cx="799"  cy="2244" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
+  <ellipse cx="713"  cy="2350" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
+  <ellipse cx="575"  cy="2350" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
+  <ellipse cx="489"  cy="2244" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
+  <ellipse cx="520"  cy="2108" rx="18" ry="6" fill="#3a3020" opacity="0.6"/>
   <!-- Plinth top face -->
-  <circle cx="640"  cy="2000" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
-  <circle cx="764"  cy="2062" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
-  <circle cx="795"  cy="2198" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
-  <circle cx="709"  cy="2304" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
-  <circle cx="571"  cy="2304" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
-  <circle cx="485"  cy="2198" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
-  <circle cx="516"  cy="2062" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
+  <circle cx="640"  cy="2040" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
+  <circle cx="764"  cy="2102" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
+  <circle cx="795"  cy="2238" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
+  <circle cx="709"  cy="2344" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
+  <circle cx="571"  cy="2344" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
+  <circle cx="485"  cy="2238" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
+  <circle cx="516"  cy="2102" r="18" fill="#8a7a60" stroke="#4a3c28" stroke-width="2"/>
   <!-- Plinth inner ring (carving detail) -->
-  <circle cx="640"  cy="2000" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
-  <circle cx="764"  cy="2062" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
-  <circle cx="795"  cy="2198" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
-  <circle cx="709"  cy="2304" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
-  <circle cx="571"  cy="2304" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
-  <circle cx="485"  cy="2198" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
-  <circle cx="516"  cy="2062" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="640"  cy="2040" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="764"  cy="2102" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="795"  cy="2238" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="709"  cy="2344" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="571"  cy="2344" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="485"  cy="2238" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="516"  cy="2102" r="11" fill="none" stroke="#4a3c28" stroke-width="1.2" opacity="0.65"/>
 </g>
 
 <!-- Altar platform (3D): top face + front shadow + side shadow -->
-<rect x="582" y="2122" width="116" height="76" rx="4" fill="#5c5040" stroke="#a08840" stroke-width="2.5"/>
-<rect x="582" y="2194" width="116" height="8"  rx="2" fill="#3a3020"/>
-<rect x="694" y="2122" width="8"   height="76" rx="2" fill="#4a4030"/>
-<rect x="586" y="2126" width="108" height="68" rx="3" fill="#6a5c44"/>
-<rect x="598" y="2138" width="84"  height="44" rx="2" fill="none" stroke="#a08840" stroke-width="1" opacity="0.7"/>
+<rect x="582" y="2162" width="116" height="76" rx="4" fill="#5c5040" stroke="#a08840" stroke-width="2.5"/>
+<rect x="582" y="2234" width="116" height="8"  rx="2" fill="#3a3020"/>
+<rect x="694" y="2162" width="8"   height="76" rx="2" fill="#4a4030"/>
+<rect x="586" y="2166" width="108" height="68" rx="3" fill="#6a5c44"/>
+<rect x="598" y="2178" width="84"  height="44" rx="2" fill="none" stroke="#a08840" stroke-width="1" opacity="0.7"/>
 <!-- Mars glow -->
-<ellipse cx="640" cy="2160" rx="210" ry="170" fill="url(#altarglow)" opacity="0.75"/>
+<ellipse cx="640" cy="2200" rx="210" ry="170" fill="url(#altarglow)" opacity="0.75"/>
 <!-- Abstract carved marks on altar -->
 <g stroke="rgba(200,50,20,0.45)" stroke-width="1.8" fill="none">
-  <line x1="620" y1="2143" x2="620" y2="2187"/>
-  <line x1="620" y1="2152" x2="628" y2="2147"/>
-  <line x1="620" y1="2166" x2="628" y2="2171"/>
-  <line x1="640" y1="2143" x2="640" y2="2187"/>
-  <line x1="640" y1="2156" x2="648" y2="2151"/>
-  <line x1="660" y1="2143" x2="660" y2="2187"/>
-  <line x1="660" y1="2150" x2="652" y2="2145"/>
-  <line x1="660" y1="2172" x2="652" y2="2177"/>
+  <line x1="620" y1="2183" x2="620" y2="2227"/>
+  <line x1="620" y1="2192" x2="628" y2="2187"/>
+  <line x1="620" y1="2206" x2="628" y2="2211"/>
+  <line x1="640" y1="2183" x2="640" y2="2227"/>
+  <line x1="640" y1="2196" x2="648" y2="2191"/>
+  <line x1="660" y1="2183" x2="660" y2="2227"/>
+  <line x1="660" y1="2190" x2="652" y2="2185"/>
+  <line x1="660" y1="2212" x2="652" y2="2217"/>
 </g>
 <!-- Slack chain remnants at altar base -->
 <g stroke="#8090b0" stroke-width="1.8" opacity="0.45" fill="none">
-  <path d="M596,2200 Q584,2214 578,2200"/>
-  <path d="M684,2200 Q696,2214 702,2200"/>
-  <path d="M578,2156 Q569,2170 565,2156"/>
-  <path d="M702,2156 Q711,2170 715,2156"/>
+  <path d="M596,2240 Q584,2254 578,2240"/>
+  <path d="M684,2240 Q696,2254 702,2240"/>
+  <path d="M578,2196 Q569,2210 565,2196"/>
+  <path d="M702,2196 Q711,2210 715,2196"/>
 </g>
 
 <!-- ════════════════════════════════
@@ -618,10 +611,10 @@
   <text   x="980" y="1085"  text-anchor="middle" font-size="12" fill="#c8a850">6</text>
   <circle cx="660" cy="1520" r="14" fill="#0d0b08" stroke="#c8a850" stroke-width="1.5"/>
   <text   x="660" y="1525"  text-anchor="middle" font-size="12" fill="#c8a850">7</text>
-  <circle cx="700" cy="1780" r="14" fill="#0d0b08" stroke="#c8a850" stroke-width="1.5"/>
-  <text   x="700" y="1785"  text-anchor="middle" font-size="12" fill="#c8a850">8</text>
-  <circle cx="450" cy="2160" r="14" fill="#0d0b08" stroke="#c8a850" stroke-width="1.5"/>
-  <text   x="450" y="2165"  text-anchor="middle" font-size="12" fill="#c8a850">9</text>
+  <circle cx="700" cy="1800" r="14" fill="#0d0b08" stroke="#c8a850" stroke-width="1.5"/>
+  <text   x="700" y="1805"  text-anchor="middle" font-size="12" fill="#c8a850">8</text>
+  <circle cx="450" cy="2200" r="14" fill="#0d0b08" stroke="#c8a850" stroke-width="1.5"/>
+  <text   x="450" y="2205"  text-anchor="middle" font-size="12" fill="#c8a850">9</text>
 </g>
 
 <!-- COMPASS -->
@@ -671,7 +664,7 @@
   <tr><td class="room-num">7</td><td>Binding Chamber</td><td>19×6 sq</td>
     <td class="draw">Chains + columns drawn. Scroll token in E niche.</td>
     <td class="note">Chain sequence unlocks niche. Contract scroll = advantage at altar. No combat.</td></tr>
-  <tr><td class="room-num">8</td><td>Runic Corridor</td><td>4×7 sq</td>
+  <tr><td class="room-num">8</td><td>Runic Corridor</td><td>5×8 sq</td>
     <td class="draw">Glowing carved floor drawn. Use fog-of-war. No pre-placed tokens.</td>
     <td class="note">Wrong tile = 1d8 lightning DC 13 Dex half. Safe = OTHALAN tiles. No combat.</td></tr>
   <tr><td class="room-num">9</td><td>Altar Chamber</td><td>circle r=5 sq</td>
