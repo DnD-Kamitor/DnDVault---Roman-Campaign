@@ -65,6 +65,39 @@ I did not want to do this.
 - Keep a second set of character sheets with corruption levels updated
 - Prepare a folded note to pass to the "influenced NPC" player privately at the start of Scene 1 (see DM Notes)
 
+### Handout Deployment Timeline
+
+Every handout trigger for this session in a single reference. No handout should be given before its trigger — the information is only valuable once the scene makes it tangible.
+
+| # | Handout | Scene | Trigger | How to present |
+|---|---|---|---|---|
+| 7 | Bloody Message | Scene 0 (cold open) | Party examines the carved tree; or as the first physical prop before the session opens | Strip of rough paper; deep carved cuts for MARS VIDET OMNIA, scratched nail-thin second line; tear one edge |
+| 6 | Thusnelda's Map | Scene 2 | Thusnelda agrees to guide the party (Persuasion DC 14 success, or Vercingetorix vouches) | Hand-drawn on torn parchment; wavering river lines; smudge the fourth river with thumbprint; crossed spears over the grove; never use a ruler |
+
+*Sessions 1-2 handouts (1-5) are already in the party's possession. Handouts 8-11 deploy in Sessions 4-5. No new handouts are generated in Session 3 — the session's information is delivered through events, not documents.*
+
+::: {.dm-note}
+**If the party earned Handout 6 early (Vercingetorix vouched for them before the Thusnelda meeting):** Still hold it until Thusnelda herself is present and has spoken at least once. The map means more after the players have a voice in their head to attach it to.
+:::
+
+### Map Selection Guide
+
+The session folder has 27 maps. Load these five before play, in this order, and switch at the cued moments. You will not need more than six in a session unless an encounter runs unusually long.
+
+| Load order | Map file | Scene | Switch cue |
+|---|---|---|---|
+| 1 | `ForestPath3` or `WindingForestPath` | Travel Day 1-2 (d10 events) | Load at session start; keep up through the first travel day |
+| 2 | `ForestBanditFort` or `ForestGate` | Scene 2: Thusnelda's outer perimeter | Switch when the Germanic scouts make contact |
+| 3 | `RiverCrossing` or `RiverCrossingVol2` | Scene 3: contested ford | Switch the moment the party reaches the bank |
+| 4 | `Swamp2` or `SwampPath` | Scene 3b: the Farbog | Switch when the ground turns soft and the grass disappears |
+| 5 | `SacredGrove` or `NatureGoddessTemplePublic.jpg` | Scene 4: standing stones | Switch when the stones come into view at the bog's far edge |
+
+**Reserve (swap in if an encounter needs more room):** `ForestEncounter`, `HGForest`, `ForestRuins`
+
+::: {.dm-note}
+`NatureGoddessTemplePublic.jpg` is already in `Fort_Vindolanda/` from the Session 4 prep. It works for the grove because it is a cross-shaped stone hall surrounded by open ground — close enough for the standing-stone ring if you narrate the geometry. `SacredGrove` (from `download_maps.sh`) is the purpose-built option if the script ran successfully.
+:::
+
 ### Reactive World Setup
 
 | NPC | Status This Session | What They're Doing |
@@ -80,9 +113,9 @@ I did not want to do this.
 
 The journey from the fort to Thusnelda's scouts takes two full days. This is not empty time. The forest is not neutral territory.
 
-At the start of each travel day (or whenever pacing demands it), roll a d8 or choose from this table. Each event should take 10-15 minutes of table time -- no more.
+At the start of each travel day (or whenever pacing demands it), roll a d10 or choose from this table. Each event should take 10-15 minutes of table time -- no more.
 
-| d8 | Event |
+| d10 | Event |
 |---|---|
 | 1 | **The Spear Pulls North.** The cart carrying the spear slowly angles itself northward on flat ground. No one is steering it that way. DC 12 Arcana or Religion to understand it's tracking toward the sacred grove -- an instinct, not consciousness. |
 | 2 | **A Roman Scout.** A lone legionary from the fort spots the party from a ridge. He's young, clearly terrified, clearly under orders to follow. The party must decide: capture him, send him back with a warning, or ignore him and know he'll report their heading. |
@@ -92,6 +125,8 @@ At the start of each travel day (or whenever pacing demands it), roll a d8 or ch
 | 6 | **Varro's Choice** *(if Varro is still with the party).* He stops at the treeline of a particular valley and looks across it for a long time. *"My grandfather's cohort marched through here. Forty years ago. None of them came back."* He doesn't explain. He keeps walking. |
 | 7 | **The Spear Goes Quiet.** For several hours, the spear's runes stop glowing and the pull disappears. The forest feels almost normal. Then, suddenly, it resumes -- stronger than before, as if it drew a breath. Characters with corruption 2+ must make a DC 11 Wisdom save or feel the urge to unwrap it and hold it, "just to check it's still there." |
 | 8 | **Rain.** A cold Germanic rain turns the paths to mud. Movement is halved. The Legate's tracking becomes easier (his dogs can still smell the spear; rain doesn't help with that). Any character without a cloak takes 1 level of exhaustion if the party doesn't shelter for 2 hours. |
+| 9 | **The Abandoned Camp.** *(Adapted from Adventures in the Night)* A drover's camp, recently abandoned — fire ash still warm, two bedrolls cut open, a Germanic spear snapped in two. Investigation DC 11 (active: reading the camp's story): three people were here, left in haste south-southeast; one was dragged. Survival DC 12 (active: following the drag-marks): they end 40 feet from the fire, where a patch of earth is soft and dark. Something came from the bog. The only item left: a sealed leather pouch with six days of hardtack and a bronze Brigantes ring. This is not a threat. It is information: the bog does not tolerate uninvited guests. |
+| 10 | **The Boundary Stone.** *(Adapted from Adventures in the Night)* A knee-high granite slab, older than Rome, covered in spiraling Germanic script and worn animal-headed carvings. Religion DC 12 (passive: recognizing a liminal boundary marker): the carvings indicate the threshold between the world of the living and Vættir land. The party crossed it without knowing. Thusnelda, if present, stops and leaves something at the stone's base without explaining -- a pinch of her own hair wound around a small pebble. *"We are guests here. Act like it."* If the party has damaged any offering sites or shrines in previous events, note this: two transgressions mean the Vættir are watching by the time the party reaches the bog. |
 
 ### Maps for This Session
 
@@ -268,6 +303,124 @@ The legionaries are just following orders. They've committed no crime. They have
 - Deception DC 15 (active: claiming the mission is sanctioned and the Legate's pursuit is unauthorized): This requires something tangible -- a document, a seal, or a name the centurion would recognize. Without it, the DC rises to 18. With it, he wavers -- and Varro, if present, can speak one sentence that makes it land or fall apart.
 
 *Varro (if present) will not fight his own men. He'll stand at the bank and let the party cross, then step aside. The legionary centurion will recognize him, hesitate, and that hesitation might be all the time needed.*
+
+
+## Scene 3b: The Farbog
+
+*(Army of the Damned Part 4 — Into the Farbog, adapted)*
+
+The sacred grove sits on a rise of dry land half a mile past the river. The only path leads through a bog. There is no other route. Thusnelda has been quiet since the crossing.
+
+**Map:** Load `Swamp2` or `SwampPath` the moment the ground turns soft. Switch to `SwampBridges` when the party reaches the plank crossing near the sacrifice site. Switch to `SacredGrove` when the standing stones come into view at the bog's far edge.
+
+**Read aloud:**
+
+> *The ground changes under your feet before you see it. The grass shortens, then disappears. Water appears between the roots. The trees grow thin and angular, their trunks bone-pale, dead branches reaching sideways rather than up.*
+>
+> *The smell is iron and rot and something sweet underneath. Not pleasant-sweet. The smell of things left here a long time.*
+>
+> *Thusnelda stops walking. She raises one hand. Silence.*
+>
+> *"There are old ones here," she says, barely above a whisper. "Do not touch the water. Do not take anything. Do not run. If something approaches — stop and let me speak first."*
+>
+> *Far ahead, deeper in, a light pulses once. Blue-white. Then dark.*
+
+### Running the Farbog
+
+Run one, two, or all three of the encounters below, depending on pacing. Each takes 10-15 minutes. The Myling is the emotional anchor. The Sacrifice Site is the investigation hook. The Hostile Vættir only triggers if the party earns it.
+
+**The trigger tracker:** Keep a mental count of disrespectful acts in the bog (disturbing offerings, attacking the Myling, taking items from the sacrifice site without acknowledgment, ignoring the boundary stone). One: absorbed. Two or more: run the Hostile Vættir encounter.
+
+---
+
+### Encounter A: The Myling
+
+::: {.dm-note}
+The Myling is the spirit of an unbaptized or abandoned child, from Germanic/Norse tradition -- doomed to wander until someone carries its remains to consecrated ground. It is not evil. It is unfinished.
+
+**If combat is forced:** Use the Specter stat block (CR 1), but it does not attack until the second round and only if the party moves away from it. It deals psychic damage. It wails.
+:::
+
+A small figure -- child-shaped, translucent, wrong -- stands on a hummock 30 feet off the path. It holds its hands out. It does not approach.
+
+**The party's options:**
+
+- **Ignore it:** It follows, always 20 feet back, never closer. After 10 minutes it begins to weep. DC 13 Wisdom save for anyone who can hear it or gain the Frightened condition (source: the bog itself, not the spirit) for 1 hour. This counts as one disrespect.
+- **Acknowledge it (Religion DC 12, active):** Speak the rite of recognition: *"Unnamed one, we see you"* and drop any item of value into the water beside the hummock. The spirit brightens, nods, and stills. It does not follow. Thusnelda exhales quietly.
+- **Ask Thusnelda:** She knows the rite. She will recite it if no one else does, but it depletes her: one of her ritual preparation actions in Scene 4 takes an additional round.
+- **Attack it:** The spirit dissipates. Two more appear at the next hummock.
+
+**If the party performs the rite correctly and Cassia is present:**
+
+> *Cassia watches the spirit brighten and still. Then quietly: "The Romans burn our dead. The Germans bury theirs with grave goods. We both know the same thing, don't we? That the dead need witness." She does not say this to anyone in particular.*
+
+Let it breathe. This is a character moment, not a mechanics moment.
+
+---
+
+### Encounter B: The Bog Sacrifice Site
+
+Twenty meters off the path: an offering pole, three meters tall, carved with running knotwork. At its base, offerings wrapped in birch bark. Suspended from the top, partially submerged in the dark water: a preserved human figure, visible only as a shape beneath the surface.
+
+**Investigation DC 13 (active: examining the pole and offerings closely):** This site has been maintained recently. New bark wrappings are visible. The offerings include grain from this season's harvest, bronze pins, and a military sandal buckle -- Roman-made.
+
+::: {.dm-note}
+The military sandal buckle is from one of the four soldiers lost in Session 1. The Cult of Mars has been leaving offerings at Germanic holy sites -- not to the Vættir, but to Mars, in the Germanic style, appropriating local sacred ground to extend his territorial claim. This is investigable but not volunteered. Religion DC 15 (active: spending one minute in contact with the pole and reading its spiritual resonance): two religious traditions are active here. One old, rooted, comfortable. One new, hot, angry. They are not in harmony.
+:::
+
+**Thusnelda's reaction if the party investigates:** *"Someone has been using our holy sites. For something else. I did not know." A long pause. "Mars has been here. Not recently. But he has been here."*
+
+**Cassia's herb quest completes here:** Bog valerian -- pale purple blooms, grows only in permanent bogwater -- is visible along the far bank of the water channel beside the pole. This is what she has been watching for since they crossed into the forest.
+
+- Nature DC 13 (active: identifying the plant): A character with Nature proficiency spots it first and can point it out.
+- Gathering it requires leaving the path. The channel is knee-deep and the far bank is soft ground. Perception DC 11 (passive): the soft ground is visible before stepping. Without noticing it: DC 11 Dexterity save or sink to waist-depth and need help out.
+- **Mechanical payoff in Session 4:** Cassia prepares a ward compound during one overnight rest after the ritual. In Session 4, this becomes one Siege Ward -- a prepared healing station in the fort that restores 2d8 HP and removes one level of exhaustion per use (three uses before supplies are spent). Note this in your Session 4 handoff.
+
+---
+
+### Encounter C: Hostile Vættir *(conditional)*
+
+::: {.dm-note}
+**Run this only if the party accumulated two or more disrespect triggers:** damaged a shrine, attacked the Myling, took items from the sacrifice site without acknowledgment, or ignored the boundary stone.
+
+Vættir are not mindless undead. They are the accumulated will of the bog's dead -- protective, territorial, patient. They do not pursue outside the bog. They do not negotiate. They make the passage cost something.
+:::
+
+The path ahead narrows between two water channels. The blue-white lights in the distance multiply -- five, seven, more -- and begin moving toward the path. Not fast. Purposefully.
+
+**Use Will-o'-Wisp stat blocks (CR 2) with these modifications:**
+- They do not flee when damaged
+- They cannot be turned by divine class abilities (they are spirits of place, not undead in the theological sense)
+- Their damage type is cold, not lightning -- the flavor is "the cold that was in the water before it froze"
+- They are dispersed (not destroyed) by Group Acknowledgment: every party member simultaneously drops one item of value into the water channels to either side of the path. One action per character, DC 10 Religion as a group to coordinate before the Vættir reach the path.
+
+**Thusnelda if the party hesitates:** *"Into the water. Now. All of you. Into the water or we do not reach the grove."*
+
+If the acknowledgment succeeds: the lights halt. Pause five seconds. Then they drift back into the fog one by one. The path is clear.
+
+If the acknowledgment fails: each round, one additional Vættir joins. The party cannot outrun them through the bog. Thusnelda will perform the rite alone if the party is incapacitated -- she will succeed, but she arrives at the grove visibly exhausted and gives shorter answers for the rest of the session.
+
+---
+
+### Optional Location: The Old Watching Post
+
+*(Adapted from Adventures in the Night — the mysterious interior location)*
+
+Fifty meters off the path, visible from the high ground before the bog: four standing stones forming a small roofless chamber. Older than any Roman fortification -- pre-Celtic, possibly Neolithic. The floor is packed earth with a faint circular depression at the center: an old fire pit. Ash from within the last week.
+
+Investigation DC 12 (active: examining the north stone): A fitted stone plug conceals a small compartment. Inside: a sealed clay flask (one dose of oil of slipperiness), a folded strip of leather with a crude hand-drawn map showing the river crossing and the grove location, and a wax tablet with a single sentence in Latin:
+
+*IF YOU ARE READING THIS, YOU ARE LOOKING FOR THE SAME THING WE WERE. WE FAILED. DO NOT STOP.*
+
+No signature. The wax is old but legible.
+
+::: {.dm-note}
+This was left by one of Vercingetorix's grandfather's warband -- the party that attempted the ritual fifty years ago, Thusnelda's failed first attempt. The map means they found the grove. The flask and tablet together tell the current party that the path is known, others have tried, and the cost was real.
+
+If Thusnelda is present and the party shows her the tablet: *"They got further than I thought. I did not know they reached the ruins."* She does not elaborate. Her expression does.
+:::
+
+---
 
 
 ## Scene 4: The Sacred Grove

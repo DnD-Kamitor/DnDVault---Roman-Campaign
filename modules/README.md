@@ -13,12 +13,12 @@ Use these for room descriptions, encounter structure, and map extraction — not
 
 **Structure (5 parts, mirrors Shadow of Mars):**
 
-| Module part | Shadow of Mars parallel |
-|---|---|
-| Part 2: Shadowgrange — village investigation, cult infiltration | Session 2: road intrigue, missing soldiers, Brutus network |
-| Part 3: Night of the Dead — undead siege of a settlement | Session 4: siege of Fort Vindolanda, Cult of Mars |
-| Part 4: Into the Farbog — bog/swamp wilderness, ancient spirits | Session 3: Germanic forest, bog sacrifice sites, Vættir |
-| Part 5: The Perfect Storm — climactic divine/undead confrontation | Session 5: vault, Mars manifest, undead horde |
+| Module part | Shadow of Mars parallel | Status |
+|---|---|---|
+| Part 2: Shadowgrange — village investigation, cult infiltration | Session 2: road intrigue, missing soldiers, Brutus network | **Integrated** (commit dd70457) |
+| Part 3: Night of the Dead — undead siege of a settlement | Session 4: siege of Fort Vindolanda, Cult of Mars | Pending |
+| Part 4: Into the Farbog — bog/swamp wilderness, ancient spirits | Session 3: Scene 3b (The Farbog), Myling, Vættir, bog sacrifice site | **Integrated** (Scene 3b) |
+| Part 5: The Perfect Storm — climactic divine/undead confrontation | Session 5: vault, Mars manifest, undead horde | Pending |
 
 **What to steal:** The undead-siege encounter design (Part 3) and bog-spirits tension (Part 4).
 The NPC structure in Shadowgrange maps reasonably to Vindolanda's vicus cast.
@@ -45,6 +45,42 @@ for the Altar Chamber where the Wight holds court.
 
 **What to steal:** The ritual hall read-aloud, the lever/sliding-door mechanic for the exit,
 and the cult-leader-with-minions encounter structure. Replace goblins with Cult of Mars initiates.
+
+---
+
+## haunt_of_hightower.pdf
+
+**License:** CC0 Public Domain — no restrictions.
+**Setting:** Gothic undead dungeon one-shot. Four rooms, beginner-level.
+**Status: Partially integrated into Session 1** (commit dd70457)
+
+Adapted elements:
+- Sicus, the wounded soldier in the Shield Hall: pre-fight intel source, drops second OTHALAN token
+- Stone lever mechanic in the Altar Chamber: seals the Runic Corridor as Difficult Terrain, reversible
+- OTHALAN contract token as tactical lever during the Wight fight
+
+---
+
+## adventures_in_the_night.pdf
+
+**License:** CC0 Public Domain — no restrictions.
+**Setting:** Wilderness/forest one-shot, Level 1.
+**Status: Integrated into Session 3**
+
+Adapted elements:
+- d10 entry 9 (Abandoned Camp): recently-vacated drover's camp, bog warning, supply cache
+- d10 entry 10 (Boundary Stone): pre-Roman liminal stone, Vættir territory threshold
+- Optional Location: The Old Watching Post (roofless stone chamber, sealed compartment with flask + Latin wax tablet from Vercingetorix's grandfather's failed warband)
+
+---
+
+## wild_sheep_chase.pdf
+
+**License:** CC BY-NC 4.0 — free for personal/non-commercial use with attribution.
+**Setting:** Single-session magic comedy adventure.
+**Status: Not integrated — wrong tone**
+
+This module is a lighthearted magical farce. Nothing in it maps to Shadow of Mars' register. Keep as reference only.
 
 ---
 
