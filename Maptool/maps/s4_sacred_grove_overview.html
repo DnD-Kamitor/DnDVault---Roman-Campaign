@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S4 — Sacred Grove and Siege Overview</title>
+<style>
+  body { margin: 0; background: #0d0a08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
+  svg { display: block; margin: 0 auto; }
+  .notes { max-width: 1200px; margin: 20px auto 0; }
+  h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+  td, th { padding: 5px 10px; border: 1px solid #2a2018; vertical-align: top; }
+  th { background: #1a1510; color: #c8a850; text-align: left; }
+  tr:nth-child(even) td { background: #141210; }
+  tr:nth-child(odd) td { background: #0d0a08; }
+  .enc { color: #c84040; }
+  .mech { color: #90c880; }
+  .draw { color: #8ab0c8; }
+</style>
+</head>
+<body>
+
+<!--
+  GRID: 40 px/sq = 5 ft. Grid drawn LAST over solid fills.
+  Canvas: 1200 × 960
+
+  Zones (all coords multiples of 40):
+    Fort Vindolanda (siege, top left):
+      Fort outer:    x=0    y=0   w=480  h=400
+      Fort interior: x=20   y=20  w=440  h=360
+      Breach (north wall): x=160 y=0 w=120 h=20
+    Forest/Ditch between (no-mans land): x=480 y=0 w=80 h=400
+    Germanic Siege Lines (top right):    x=560 y=0 w=640 h=400
+    Forest transition:                   x=0   y=400 w=1200 h=120
+    Sacred Grove Area (bottom half):     x=0   y=520 w=1200 h=440
+      Grove clearing: x=360 y=560 w=480 h=360
+      Stone circle: cx=600 cy=740 r=160
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960">
+<defs>
+  <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0 L0 0 0 40" fill="none" stroke="rgba(0,0,0,0.32)" stroke-width="0.7"/>
+  </pattern>
+  <radialGradient id="groveGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#60a040" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#60a040" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#e06020" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#e06020" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="marsGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#c03020" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#c03020" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="torchGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#c89050" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<!-- VOID -->
+<rect width="1200" height="960" fill="#0d0a08"/>
+
+<!-- ═══════════════════════════════════════
+     TOP HALF: SIEGE CONTEXT
+     ═══════════════════════════════════════ -->
+
+<!-- Dark forest surrounding the fort -->
+<rect x="0" y="0" width="1200" height="440" fill="#111a0c"/>
+
+<!-- ── FORT VINDOLANDA (upper left) ── -->
+<!-- Fort stone floor -->
+<rect x="20" y="20" width="440" height="360" fill="#7a6e58"/>
+<!-- Fort palisade walls -->
+<rect x="20" y="20"  width="440" height="10" fill="#3a2818"/>
+<rect x="20" y="370" width="440" height="10" fill="#3a2818"/>
+<rect x="20" y="20"  width="10"  height="360" fill="#3a2818"/>
+<rect x="450" y="20" width="10"  height="360" fill="#3a2818"/>
+<!-- Corner towers -->
+<rect x="20"  y="20"  width="36" height="36" fill="#5a4e3c"/>
+<rect x="424" y="20"  width="36" height="36" fill="#5a4e3c"/>
+<rect x="20"  y="344" width="36" height="36" fill="#5a4e3c"/>
+<rect x="424" y="344" width="36" height="36" fill="#5a4e3c"/>
+<!-- North wall breach (fire glow at top) -->
+<rect x="172" y="20" width="116" height="10" fill="#7a6e58"/>
+<ellipse cx="230" cy="10" rx="60" ry="30" fill="url(#fireGlow)" opacity="0.8"/>
+<!-- Granary fire (NW corner, Brutus sabotage) -->
+<rect x="56" y="60" width="100" height="80" fill="#6a5e4c" stroke="#3a3020" stroke-width="1.5"/>
+<ellipse cx="106" cy="80" rx="48" ry="36" fill="url(#fireGlow)" opacity="0.65"/>
+<rect x="65" y="68" width="4" height="30" fill="#e08020" opacity="0.6"/>
+<rect x="82" y="62" width="4" height="36" fill="#ffa020" opacity="0.5"/>
+<rect x="100" y="66" width="4" height="32" fill="#e06010" opacity="0.55"/>
+<!-- Principia -->
+<rect x="196" y="160" width="120" height="80" fill="#6a5e4c" stroke="#3a3020" stroke-width="2"/>
+<rect x="224" y="160" width="64"  height="36" fill="#5a5038"/>
+<!-- Praetorium -->
+<rect x="196" y="260" width="120" height="80" fill="#6a5e4c" stroke="#3a3020" stroke-width="2"/>
+<!-- Barracks (E side) -->
+<rect x="340" y="60"  width="100" height="80"  fill="#6a5e4c" stroke="#3a3020" stroke-width="1.5"/>
+<rect x="340" y="180" width="100" height="80"  fill="#6a5e4c" stroke="#3a3020" stroke-width="1.5"/>
+<rect x="340" y="300" width="100" height="60"  fill="#6a5e4c" stroke="#3a3020" stroke-width="1.5"/>
+<!-- Via principalis (road E-W) -->
+<rect x="20" y="244" width="440" height="28" fill="#8a8060"/>
+<!-- Via praetoria (N-S road) -->
+<rect x="222" y="20" width="16"  height="360" fill="#8a8060"/>
+<!-- Torch glows at corners -->
+<ellipse cx="24"  cy="24"  rx="30" ry="28" fill="url(#torchGlow)" opacity="0.28"/>
+<ellipse cx="456" cy="24"  rx="30" ry="28" fill="url(#torchGlow)" opacity="0.28"/>
+<!-- Tunnel entrance (trapdoor in praetorium — route to vault) -->
+<circle cx="256" cy="300" r="10" fill="#1a1510" stroke="#a09040" stroke-width="2"/>
+<circle cx="256" cy="300" r="5"  fill="#1a1510" stroke="#6a5030" stroke-width="1"/>
+
+<!-- Fort zone number -->
+<circle cx="410" cy="200" r="16" fill="#0d0a08" stroke="#c84040" stroke-width="2"/>
+<text x="410" y="206" text-anchor="middle" font-size="13" font-family="Georgia,serif" font-weight="bold" fill="#c84040">1</text>
+
+<!-- ── DITCH / NO-MANS LAND ── -->
+<rect x="460" y="0" width="100" height="400" fill="#0e1208"/>
+<rect x="464" y="0" width="92"  height="400" fill="#141a0e"/>
+
+<!-- ── GERMANIC SIEGE LINES (upper right) ── -->
+<!-- Forest base -->
+<rect x="560" y="0" width="640" height="400" fill="#141c10"/>
+<!-- Dense tree clusters (Germanic forest camp) -->
+<g fill="#1a2810">
+  <circle cx="640" cy="60"  r="40"/>
+  <circle cx="720" cy="40"  r="36"/>
+  <circle cx="800" cy="70"  r="44"/>
+  <circle cx="880" cy="50"  r="38"/>
+  <circle cx="960" cy="65"  r="40"/>
+  <circle cx="1050" cy="45" r="36"/>
+  <circle cx="1140" cy="60" r="40"/>
+  <circle cx="660"  cy="160" r="38"/>
+  <circle cx="760"  cy="180" r="42"/>
+  <circle cx="880"  cy="170" r="36"/>
+  <circle cx="980"  cy="190" r="40"/>
+  <circle cx="1100" cy="160" r="38"/>
+  <circle cx="620"  cy="280" r="36"/>
+  <circle cx="720"  cy="300" r="40"/>
+  <circle cx="840"  cy="290" r="38"/>
+  <circle cx="960"  cy="310" r="42"/>
+  <circle cx="1060" cy="280" r="36"/>
+  <circle cx="1150" cy="300" r="38"/>
+</g>
+<!-- Canopy highlights -->
+<g fill="#253018" opacity="0.55">
+  <circle cx="643"  cy="68"  r="20"/>
+  <circle cx="803"  cy="78"  r="22"/>
+  <circle cx="963"  cy="73"  r="20"/>
+  <circle cx="763"  cy="188" r="21"/>
+  <circle cx="963"  cy="198" r="20"/>
+</g>
+<!-- Germanic camp fires (visible through trees) -->
+<ellipse cx="700"  cy="220" rx="30" ry="20" fill="url(#fireGlow)" opacity="0.4"/>
+<ellipse cx="900"  cy="200" rx="28" ry="18" fill="url(#fireGlow)" opacity="0.35"/>
+<ellipse cx="1080" cy="220" rx="26" ry="16" fill="url(#fireGlow)" opacity="0.38"/>
+<!-- Vercingetorix camp marker (south edge of Germanic zone, parley zone) -->
+<rect x="576" y="340" width="200" height="60" fill="#1e2816" stroke="#384820" stroke-width="1.5" rx="4"/>
+<ellipse cx="676" cy="370" rx="36" ry="20" fill="url(#torchGlow)" opacity="0.45"/>
+<!-- Banner/standard pole at Vercingetorix camp -->
+<line x1="676" y1="344" x2="676" y2="316" stroke="#4a3c28" stroke-width="3"/>
+<rect x="676" y="316" width="24" height="14" fill="#384828" stroke="#2a3018" stroke-width="1"/>
+<!-- Germanic warband arrows pointing at fort (implied threat) -->
+<g stroke="#6a4020" stroke-width="1.5" opacity="0.4" fill="none">
+  <line x1="560" y1="100" x2="480" y2="140"/>
+  <polygon points="480,140 492,130 492,143" fill="#6a4020"/>
+  <line x1="560" y1="200" x2="480" y2="200"/>
+  <polygon points="480,200 492,193 492,207" fill="#6a4020"/>
+  <line x1="560" y1="300" x2="480" y2="260"/>
+  <polygon points="480,260 492,256 492,270" fill="#6a4020"/>
+</g>
+
+<!-- Germanic siege zone number -->
+<circle cx="1140" cy="380" r="16" fill="#0d0a08" stroke="#c8a850" stroke-width="1.5"/>
+<text x="1140" y="386" text-anchor="middle" font-size="13" font-family="Georgia,serif" font-weight="bold" fill="#c8a850">2</text>
+
+<!-- ── FOREST TRANSITION BAND ── -->
+<rect x="0" y="400" width="1200" height="120" fill="#141c10"/>
+<g fill="#1a2810">
+  <circle cx="80"  cy="460" r="36"/>
+  <circle cx="200" cy="440" r="32"/>
+  <circle cx="320" cy="465" r="38"/>
+  <circle cx="460" cy="450" r="30"/>
+  <circle cx="640" cy="455" r="34"/>
+  <circle cx="800" cy="445" r="36"/>
+  <circle cx="940" cy="460" r="32"/>
+  <circle cx="1080" cy="448" r="34"/>
+  <circle cx="1160" cy="462" r="30"/>
+</g>
+
+<!-- ═══════════════════════════════════════
+     BOTTOM HALF: SACRED GROVE + APPROACH
+     ═══════════════════════════════════════ -->
+
+<!-- Grove forest floor -->
+<rect x="0" y="520" width="1200" height="440" fill="#141c10"/>
+
+<!-- Open clearing around grove -->
+<ellipse cx="600" cy="740" rx="360" ry="220" fill="#1e2e14"/>
+
+<!-- Sacred grove standing stone ring -->
+<circle cx="600" cy="740" r="160" fill="#192814" stroke="#384820" stroke-width="2"/>
+<!-- Inner sacred ground -->
+<circle cx="600" cy="740" r="120" fill="#1e2c12"/>
+<!-- Concentric marking rings (spiritual resonance) -->
+<g fill="none" stroke="rgba(80,120,40,0.2)" stroke-width="1.5">
+  <circle cx="600" cy="740" r="60"/>
+  <circle cx="600" cy="740" r="90"/>
+  <circle cx="600" cy="740" r="110"/>
+</g>
+
+<!-- 8 standing stones (outer ring) -->
+<g fill="#5a5040" stroke="#3a3028" stroke-width="1.5">
+  <ellipse cx="600" cy="586" rx="16" ry="22"/>
+  <ellipse cx="713" cy="627" rx="16" ry="22"/>
+  <ellipse cx="753" cy="740" rx="22" ry="16"/>
+  <ellipse cx="713" cy="853" rx="16" ry="22"/>
+  <ellipse cx="600" cy="894" rx="16" ry="22"/>
+  <ellipse cx="487" cy="853" rx="16" ry="22"/>
+  <ellipse cx="447" cy="740" rx="22" ry="16"/>
+  <ellipse cx="487" cy="627" rx="16" ry="22"/>
+</g>
+<!-- Stone shadow offsets -->
+<g fill="#0a0d08" opacity="0.45">
+  <ellipse cx="602" cy="596" rx="16" ry="6"/>
+  <ellipse cx="715" cy="637" rx="16" ry="6"/>
+  <ellipse cx="759" cy="749" rx="6"  ry="16"/>
+  <ellipse cx="715" cy="863" rx="16" ry="6"/>
+  <ellipse cx="602" cy="904" rx="16" ry="6"/>
+  <ellipse cx="489" cy="863" rx="16" ry="6"/>
+  <ellipse cx="453" cy="749" rx="6"  ry="16"/>
+  <ellipse cx="489" cy="637" rx="16" ry="6"/>
+</g>
+<!-- Cover positions marked (N and S stones — two natural positions noted in chapter text) -->
+<circle cx="600" cy="590" r="28" fill="none" stroke="rgba(90,160,80,0.3)" stroke-width="1.5" stroke-dasharray="4,4"/>
+<circle cx="600" cy="890" r="28" fill="none" stroke="rgba(90,160,80,0.3)" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+<!-- Altar (centre) — same design as Session 1 altar -->
+<rect x="566" y="714" width="68" height="52" rx="4" fill="#5c5040" stroke="#a08840" stroke-width="2.5"/>
+<rect x="566" y="762" width="68" height="6"  rx="2" fill="#3a3020"/>
+<rect x="630" y="714" width="6"  height="52" rx="2" fill="#4a4030"/>
+<rect x="570" y="718" width="60" height="44" rx="3" fill="#6a5c44"/>
+<rect x="580" y="726" width="40" height="28" rx="2" fill="none" stroke="#a08840" stroke-width="1" opacity="0.7"/>
+<!-- Mars glow at altar (the spear rests here) -->
+<ellipse cx="600" cy="740" rx="240" ry="160" fill="url(#marsGlow)" opacity="0.7"/>
+<ellipse cx="600" cy="740" rx="100" ry="70"  fill="url(#groveGlow)" opacity="0.55"/>
+<!-- Abstract carved marks on altar -->
+<g stroke="rgba(200,50,20,0.45)" stroke-width="1.8" fill="none">
+  <line x1="588" y1="726" x2="588" y2="756"/>
+  <line x1="588" y1="734" x2="594" y2="730"/>
+  <line x1="600" y1="726" x2="600" y2="756"/>
+  <line x1="612" y1="726" x2="612" y2="756"/>
+  <line x1="612" y1="740" x2="606" y2="736"/>
+</g>
+
+<!-- Underground tunnel entrance (leads to antechamber — same as Session 1 vault) -->
+<ellipse cx="600" cy="820" rx="20" ry="14" fill="#1a1510" stroke="#a09040" stroke-width="2"/>
+<ellipse cx="600" cy="820" rx="12" ry="8"  fill="#0a0d08" stroke="#6a5030" stroke-width="1"/>
+<!-- Arrow indicating tunnel goes down -->
+<line x1="600" y1="834" x2="600" y2="852" stroke="#a09040" stroke-width="1.5" opacity="0.7"/>
+<polygon points="600,856 595,848 605,848" fill="#a09040" opacity="0.7"/>
+
+<!-- Procession path from fort (across map, arriving from NW) -->
+<path d="M230,396 Q 300,480 400,540 Q 480,580 520,680 Q 560,740 600,740"
+      fill="none" stroke="#7a6a50" stroke-width="6" stroke-dasharray="12,8" opacity="0.55"/>
+<!-- Procession path arrow -->
+<polygon points="600,740 590,728 605,730" fill="#7a6a50" opacity="0.55"/>
+
+<!-- Druid circle (outer grove) marker -->
+<circle cx="600" cy="740" r="195" fill="none" stroke="rgba(80,120,40,0.25)" stroke-width="2" stroke-dasharray="8,6"/>
+
+<!-- Grove zone number -->
+<circle cx="440" cy="600" r="16" fill="#0d0a08" stroke="#60a040" stroke-width="2"/>
+<text x="440" y="606" text-anchor="middle" font-size="13" font-family="Georgia,serif" font-weight="bold" fill="#60a040">3</text>
+
+<!-- Tunnel approach zone number -->
+<circle cx="750" cy="848" r="16" fill="#0d0a08" stroke="#c8a850" stroke-width="1.5"/>
+<text x="750" y="854" text-anchor="middle" font-size="13" font-family="Georgia,serif" font-weight="bold" fill="#c8a850">4</text>
+
+<!-- ═══════════════════════════════════════
+     GRID — drawn LAST
+     ═══════════════════════════════════════ -->
+<rect x="0" y="0" width="1200" height="960" fill="url(#grid)"/>
+
+<!-- Zone separator line (fort / grove split) -->
+<line x1="0" y1="400" x2="1200" y2="400" stroke="#2a3020" stroke-width="2" stroke-dasharray="16,8" opacity="0.7"/>
+<line x1="0" y1="520" x2="1200" y2="520" stroke="#2a3020" stroke-width="2" stroke-dasharray="16,8" opacity="0.5"/>
+
+<!-- ZONE LABELS -->
+<g font-family="Georgia,serif" font-size="10">
+  <text x="60" y="14" fill="#c84040" font-weight="bold">FORT VINDOLANDA — SIEGE (DAY 6)</text>
+  <text x="600" y="14" text-anchor="middle" fill="#c8a850">DITCH / NO-MANS LAND</text>
+  <text x="900" y="14" fill="#b8c890">GERMANIC SIEGE LINES</text>
+  <text x="600" y="534" text-anchor="middle" fill="#60a040">SACRED GROVE — STANDING STONE RING</text>
+</g>
+
+<!-- COMPASS -->
+<g transform="translate(1166,940)">
+  <circle cx="0" cy="0" r="22" fill="#141210" stroke="#3a3020" stroke-width="1.5"/>
+  <polygon points="0,-18 4,-6 0,-9 -4,-6" fill="#e8d8a8"/>
+  <polygon points="0,18 4,6 0,9 -4,6"   fill="#6a5a48"/>
+  <polygon points="-18,0 -6,4 -9,0 -6,-4" fill="#6a5a48"/>
+  <polygon points="18,0 6,4 9,0 6,-4"   fill="#6a5a48"/>
+  <text x="0" y="-9" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#e8d8a8">N</text>
+</g>
+
+<!-- SCALE BAR -->
+<g transform="translate(880,930)">
+  <rect x="0"   y="0" width="80"  height="6" fill="#e8d8a8"/>
+  <rect x="80"  y="0" width="80"  height="6" fill="#3a3028"/>
+  <rect x="160" y="0" width="80"  height="6" fill="#e8d8a8"/>
+  <rect x="0"   y="0" width="240" height="6" fill="none" stroke="#c8a850" stroke-width="1"/>
+</g>
+
+<!-- Border -->
+<rect x="2" y="2" width="1196" height="956" fill="none" stroke="#3a3020" stroke-width="2" rx="3"/>
+</svg>
+
+<div class="notes">
+<h2>SACRED GROVE AND SIEGE OVERVIEW (Session 4)</h2>
+<table>
+  <tr><th>Zone</th><th>Location</th><th class="draw">Token placement / DM notes</th></tr>
+  <tr><td class="enc">1</td><td class="enc">Fort Vindolanda (under siege)</td><td class="enc">Day 6 of siege. NW granary burning (Brutus sleeper agent). Trapdoor in praetorium leads to tunnel. North wall breach active. Council in principia Scene 1.</td></tr>
+  <tr><td>2</td><td>Germanic Siege Lines</td><td class="draw">Vercingetorix camp at south edge (parley zone). Warband holds east and north lines. Arrows frozen = divine stasis moment at end of session.</td></tr>
+  <tr><td>3</td><td>Sacred Grove — Standing Stone Ring</td><td class="draw">8 standing stones. Druid circle (outer ring). Natural cover at N and S stones (dashed circles). Altar centre. Mars glow once spear placed.</td></tr>
+  <tr><td>4</td><td>Tunnel Entrance — Antechamber of Mars</td><td class="draw">Underground access same granite altar chamber as Session 1. Arrival from different direction. Chain anchors in floor. Scene 3: Sunken Armory → Choking Hall → Elder Stair → Antechamber.</td></tr>
+</table>
+<h2>SESSION NOTE</h2>
+<table>
+  <tr><td>Dashed line = procession route from fort to grove. 40 px/sq. Import at 40 px/sq in MapTool. The grove and fort are not to-scale relative each other — this is a schematic overview.</td></tr>
+</table>
+</div>
+</body>
+</html>

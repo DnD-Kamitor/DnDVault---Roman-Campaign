@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S3 — Forest Journey Overview</title>
+<style>
+  body { margin: 0; background: #0a0d08; font-family: Georgia, serif; color: #b8c890; padding: 16px; }
+  svg { display: block; margin: 0 auto; }
+  .notes { max-width: 1200px; margin: 20px auto 0; }
+  h2 { color: #b8c890; border-bottom: 1px solid #2a3820; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+  td, th { padding: 5px 10px; border: 1px solid #1a2818; vertical-align: top; }
+  th { background: #111a0e; color: #b8c890; text-align: left; }
+  tr:nth-child(even) td { background: #0e1410; }
+  tr:nth-child(odd) td { background: #0a0d08; }
+  .enc { color: #c84040; }
+  .mech { color: #90c880; }
+  .draw { color: #8ab0c8; }
+</style>
+</head>
+<body>
+
+<!--
+  GRID: 40 px/sq = 5 ft. Grid drawn LAST over solid fills.
+  Canvas: 1200 × 1600 (north=top, travel direction S→N)
+
+  Zones (all coords multiples of 40):
+    South Road Entry:     x=480  y=1480 w=240  h=120   (road entering from south)
+    Forest Road (S):      x=520  y=1080 w=160  h=400   (packed earth road)
+    Thusnelda Scout Meet: x=320  y=880  w=560  h=200   (forest clearing, scout contact)
+    Forest Road (mid):    x=520  y=680  w=160  h=200   (road continues)
+    River Vitulans:       x=0    y=560  w=1200 h=120   (river band)
+    River Ford:           x=480  y=560  w=240  h=120   (ford crossing)
+    Farbog:               x=120  y=240  w=960  h=320   (bog zone)
+    Farbog Path:          x=520  y=240  w=160  h=320   (path through bog)
+    Sacred Grove Hill:    x=400  y=40   w=400  h=200   (elevated dry ground)
+    Sacred Grove Circle:  cx=600 cy=140 r=120          (standing stone ring)
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<defs>
+  <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0 L0 0 0 40" fill="none" stroke="rgba(0,0,0,0.35)" stroke-width="0.7"/>
+  </pattern>
+  <radialGradient id="groveGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#60a040" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#60a040" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="bogGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#304820" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#304820" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#c89050" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="bogPattern" x="0" y="0" width="60" height="20" patternUnits="userSpaceOnUse">
+    <rect width="60" height="20" fill="#1e3018"/>
+    <path d="M0,10 Q15,5 30,10 Q45,15 60,10" stroke="#253820" stroke-width="1.2" fill="none"/>
+    <path d="M0,6  Q10,3 20,6 Q30,9 40,6" stroke="#1e2e14" stroke-width="0.8" fill="none" opacity="0.6"/>
+  </pattern>
+  <pattern id="riverPattern" x="0" y="0" width="80" height="20" patternUnits="userSpaceOnUse">
+    <rect width="80" height="20" fill="#162a42"/>
+    <path d="M0,10 Q20,3 40,10 Q60,17 80,10" stroke="#1e3a58" stroke-width="1.5" fill="none"/>
+    <path d="M0,5 Q15,1 30,5 Q45,9 60,5" stroke="#1a3450" stroke-width="0.8" fill="none" opacity="0.6"/>
+  </pattern>
+</defs>
+
+<!-- VOID background -->
+<rect width="1200" height="1600" fill="#0a0d08"/>
+
+<!-- ═══════════════════════════════════════
+     DEEP FOREST — background fill
+     ═══════════════════════════════════════ -->
+<rect width="1200" height="1600" fill="#111a0c"/>
+
+<!-- ═══════════════════════════════════════
+     ZONE 4: SACRED GROVE HILL (north top)
+     ═══════════════════════════════════════ -->
+<!-- Elevated dry ground — lighter green-grey -->
+<rect x="320" y="0" width="560" height="280" fill="#2a3820"/>
+<!-- Grove hill fill -->
+<ellipse cx="600" cy="140" rx="240" ry="130" fill="#223018"/>
+<!-- Standing stone circle -->
+<circle cx="600" cy="140" r="120" fill="#1e2c14" stroke="#384820" stroke-width="2"/>
+<!-- Outer ring of stones (12 stones) -->
+<g fill="#5a5040" stroke="#3a3028" stroke-width="1.5">
+  <ellipse cx="600" cy="26"  rx="14" ry="20"/>
+  <ellipse cx="683" cy="57"  rx="14" ry="20"/>
+  <ellipse cx="714" cy="140" rx="20" ry="14"/>
+  <ellipse cx="683" cy="223" rx="14" ry="20"/>
+  <ellipse cx="600" cy="254" rx="14" ry="20"/>
+  <ellipse cx="517" cy="223" rx="14" ry="20"/>
+  <ellipse cx="486" cy="140" rx="20" ry="14"/>
+  <ellipse cx="517" cy="57"  rx="14" ry="20"/>
+</g>
+<!-- Stone shadow (south/east offset) -->
+<g fill="#1a1812" opacity="0.5">
+  <ellipse cx="602" cy="34"  rx="14" ry="6"/>
+  <ellipse cx="685" cy="65"  rx="14" ry="6"/>
+  <ellipse cx="718" cy="148" rx="6" ry="14"/>
+  <ellipse cx="685" cy="231" rx="14" ry="6"/>
+  <ellipse cx="602" cy="262" rx="14" ry="6"/>
+  <ellipse cx="519" cy="231" rx="14" ry="6"/>
+  <ellipse cx="490" cy="148" rx="6" ry="14"/>
+  <ellipse cx="519" cy="65"  rx="14" ry="6"/>
+</g>
+<!-- Central altar stone -->
+<rect x="578" y="120" width="44" height="40" rx="4" fill="#6a6050" stroke="#a09040" stroke-width="2"/>
+<rect x="578" y="156" width="44" height="6" rx="2" fill="#3a3020"/>
+<rect x="618" y="120" width="6" height="40" rx="2" fill="#4a4030"/>
+<!-- Grove glow -->
+<ellipse cx="600" cy="140" rx="180" ry="120" fill="url(#groveGlow)" opacity="0.8"/>
+
+<!-- Zone number 4 -->
+<circle cx="600" cy="100" r="16" fill="#0a0d08" stroke="#60a040" stroke-width="2"/>
+<text x="600" y="106" text-anchor="middle" font-size="13" font-family="Georgia,serif" font-weight="bold" fill="#60a040">4</text>
+
+<!-- ═══════════════════════════════════════
+     ZONE 3b: FARBOG
+     ═══════════════════════════════════════ -->
+<!-- Bog fill -->
+<rect x="0" y="280" width="1200" height="280" fill="url(#bogPattern)"/>
+<!-- Bog path (narrow safe route) -->
+<rect x="520" y="280" width="160" height="280" fill="#283820"/>
+<!-- Tussocks / bog grass clusters scattered -->
+<g fill="#2e4018" opacity="0.8">
+  <ellipse cx="160" cy="320" rx="30" ry="14"/>
+  <ellipse cx="80"  cy="390" rx="22" ry="10"/>
+  <ellipse cx="240" cy="460" rx="28" ry="12"/>
+  <ellipse cx="360" cy="310" rx="26" ry="11"/>
+  <ellipse cx="440" cy="430" rx="20" ry="9"/>
+  <ellipse cx="760" cy="330" rx="28" ry="12"/>
+  <ellipse cx="850" cy="410" rx="24" ry="10"/>
+  <ellipse cx="960" cy="360" rx="30" ry="13"/>
+  <ellipse cx="1040" cy="480" rx="26" ry="11"/>
+  <ellipse cx="1120" cy="320" rx="22" ry="9"/>
+  <ellipse cx="300" cy="510" rx="24" ry="10"/>
+  <ellipse cx="900" cy="500" rx="22" ry="9"/>
+</g>
+<!-- Vaettir pole marker -->
+<line x1="460" y1="340" x2="460" y2="400" stroke="#4a3c28" stroke-width="3"/>
+<line x1="452" y1="352" x2="468" y2="352" stroke="#4a3c28" stroke-width="2"/>
+<circle cx="460" cy="340" r="8" fill="#3a2c18" stroke="#6a5030" stroke-width="1.5"/>
+<!-- Vaettir pole on east side too -->
+<line x1="740" y1="370" x2="740" y2="430" stroke="#4a3c28" stroke-width="3"/>
+<line x1="732" y1="382" x2="748" y2="382" stroke="#4a3c28" stroke-width="2"/>
+<circle cx="740" cy="370" r="8" fill="#3a2c18" stroke="#6a5030" stroke-width="1.5"/>
+<!-- Bog glow / mist -->
+<ellipse cx="600" cy="420" rx="400" ry="100" fill="url(#bogGlow)" opacity="0.55"/>
+<!-- Faint lights (will-o-wisps optional) -->
+<circle cx="200" cy="400" r="6" fill="#8fbd6a" opacity="0.5"/>
+<circle cx="950" cy="350" r="5" fill="#8fbd6a" opacity="0.45"/>
+<circle cx="380" cy="470" r="4" fill="#a0d880" opacity="0.4"/>
+
+<!-- Zone number 3b -->
+<circle cx="140" cy="420" r="16" fill="#0a0d08" stroke="#b8c890" stroke-width="1.5"/>
+<text x="140" y="426" text-anchor="middle" font-size="11" font-family="Georgia,serif" font-weight="bold" fill="#b8c890">3b</text>
+
+<!-- ═══════════════════════════════════════
+     ZONE 3a: RIVER VITULANS
+     ═══════════════════════════════════════ -->
+<!-- River fill -->
+<rect x="0" y="560" width="1200" height="120" fill="url(#riverPattern)"/>
+<!-- River banks (darker) -->
+<rect x="0" y="555" width="1200" height="10" fill="#1a2818"/>
+<rect x="0" y="670" width="1200" height="10" fill="#1a2818"/>
+<!-- Ford — lighter water, stones -->
+<rect x="480" y="560" width="240" height="120" fill="#1e3850"/>
+<!-- Ford stepping stones -->
+<g fill="#5a5040" stroke="#3a3028" stroke-width="1">
+  <ellipse cx="510" cy="600" rx="16" ry="10"/>
+  <ellipse cx="550" cy="630" rx="14" ry="9"/>
+  <ellipse cx="590" cy="605" rx="15" ry="10"/>
+  <ellipse cx="630" cy="625" rx="13" ry="8"/>
+  <ellipse cx="670" cy="600" rx="16" ry="10"/>
+  <ellipse cx="700" cy="630" rx="12" ry="8"/>
+</g>
+<!-- Current lines in main river -->
+<g stroke="#1a3a58" stroke-width="1.5" fill="none" opacity="0.6">
+  <path d="M0,600 Q120,590 240,600 Q360,610 480,600"/>
+  <path d="M720,610 Q840,600 960,610 Q1080,620 1200,610"/>
+  <path d="M0,640 Q100,630 200,640 Q300,650 400,640"/>
+  <path d="M800,645 Q900,635 1000,645 Q1100,655 1200,645"/>
+</g>
+
+<!-- Zone number 3a -->
+<circle cx="200" cy="620" r="16" fill="#0a0d08" stroke="#b8c890" stroke-width="1.5"/>
+<text x="200" y="626" text-anchor="middle" font-size="11" font-family="Georgia,serif" font-weight="bold" fill="#b8c890">3a</text>
+
+<!-- ═══════════════════════════════════════
+     ZONE 2: FOREST MEETING — THUSNELDA'S SCOUTS
+     ═══════════════════════════════════════ -->
+<!-- Forest floor clearing -->
+<rect x="240" y="680" width="720" height="280" fill="#182212"/>
+<!-- Clear ground in centre (scout meeting point) -->
+<ellipse cx="600" cy="800" rx="200" ry="100" fill="#1e2e16"/>
+<!-- Thusnelda's fire (small) -->
+<ellipse cx="600" cy="800" rx="40" ry="24" fill="url(#fireGlow)" opacity="0.7"/>
+<circle cx="600" cy="800" r="10" fill="#c84010" opacity="0.85"/>
+<circle cx="600" cy="796" r="7" fill="#e08020" opacity="0.8"/>
+<!-- Log ring around fire -->
+<g fill="#3a2c18" stroke="#2a1c10" stroke-width="1">
+  <rect x="577" y="812" width="46" height="10" rx="3"/>
+  <rect x="557" y="804" width="10" height="20" rx="3" transform="rotate(-30,562,814)"/>
+  <rect x="633" y="804" width="10" height="20" rx="3" transform="rotate(30,638,814)"/>
+</g>
+<!-- Scattered tree line (forest edge markers) -->
+<g fill="#1a2810">
+  <circle cx="260" cy="730" r="32"/>
+  <circle cx="300" cy="760" r="24"/>
+  <circle cx="260" cy="900" r="28"/>
+  <circle cx="280" cy="840" r="20"/>
+  <circle cx="940" cy="720" r="30"/>
+  <circle cx="960" cy="800" r="26"/>
+  <circle cx="940" cy="880" r="28"/>
+  <circle cx="400" cy="690" r="22"/>
+  <circle cx="800" cy="700" r="20"/>
+</g>
+<g fill="#243018" opacity="0.6">
+  <circle cx="265" cy="738" r="16"/>
+  <circle cx="266" cy="908" r="14"/>
+  <circle cx="942" cy="728" r="15"/>
+  <circle cx="942" cy="888" r="14"/>
+</g>
+
+<!-- Zone number 2 -->
+<circle cx="500" cy="760" r="16" fill="#0a0d08" stroke="#b8c890" stroke-width="1.5"/>
+<text x="500" y="766" text-anchor="middle" font-size="13" font-family="Georgia,serif" font-weight="bold" fill="#b8c890">2</text>
+
+<!-- ═══════════════════════════════════════
+     ZONE 1: FOREST ROAD — SOUTH APPROACH
+     ═══════════════════════════════════════ -->
+<!-- Packed earth road, snaking -->
+<rect x="520" y="960" width="160" height="640" fill="#3a3020"/>
+<!-- Road ruts -->
+<line x1="548" y1="960" x2="548" y2="1600" stroke="#2a2218" stroke-width="2" opacity="0.5"/>
+<line x1="632" y1="960" x2="632" y2="1600" stroke="#2a2218" stroke-width="2" opacity="0.5"/>
+<!-- Road surface texture (scattered pebbles) -->
+<g fill="#4a4030" opacity="0.4">
+  <circle cx="555" cy="1020" r="4"/>
+  <circle cx="590" cy="1060" r="3"/>
+  <circle cx="615" cy="1100" r="4"/>
+  <circle cx="560" cy="1140" r="3"/>
+  <circle cx="600" cy="1180" r="5"/>
+  <circle cx="575" cy="1250" r="3"/>
+  <circle cx="610" cy="1320" r="4"/>
+  <circle cx="558" cy="1400" r="3"/>
+  <circle cx="622" cy="1460" r="4"/>
+</g>
+<!-- Dense forest W side of road -->
+<g fill="#1a2810">
+  <circle cx="420" cy="1000" r="40"/>
+  <circle cx="360" cy="1080" r="36"/>
+  <circle cx="400" cy="1160" r="42"/>
+  <circle cx="340" cy="1240" r="38"/>
+  <circle cx="380" cy="1340" r="40"/>
+  <circle cx="420" cy="1440" r="36"/>
+  <circle cx="360" cy="1540" r="38"/>
+  <circle cx="440" cy="1040" r="28"/>
+  <circle cx="460" cy="1200" r="30"/>
+  <circle cx="440" cy="1380" r="28"/>
+  <circle cx="460" cy="1500" r="32"/>
+</g>
+<!-- Dense forest E side of road -->
+<g fill="#1a2810">
+  <circle cx="780" cy="1000" r="40"/>
+  <circle cx="840" cy="1080" r="36"/>
+  <circle cx="800" cy="1160" r="42"/>
+  <circle cx="860" cy="1240" r="38"/>
+  <circle cx="820" cy="1340" r="40"/>
+  <circle cx="780" cy="1440" r="36"/>
+  <circle cx="840" cy="1540" r="38"/>
+  <circle cx="760" cy="1040" r="28"/>
+  <circle cx="740" cy="1200" r="30"/>
+  <circle cx="760" cy="1380" r="28"/>
+  <circle cx="740" cy="1500" r="32"/>
+</g>
+<!-- Canopy highlights -->
+<g fill="#243018" opacity="0.55">
+  <circle cx="423" cy="1008" r="20"/>
+  <circle cx="363" cy="1088" r="18"/>
+  <circle cx="403" cy="1168" r="21"/>
+  <circle cx="783" cy="1008" r="20"/>
+  <circle cx="843" cy="1088" r="18"/>
+  <circle cx="803" cy="1168" r="21"/>
+</g>
+<!-- Milestone markers on road -->
+<rect x="512" y="1080" width="8" height="16" fill="#6a6050" stroke="#4a4030" stroke-width="1"/>
+<rect x="512" y="1240" width="8" height="16" fill="#6a6050" stroke="#4a4030" stroke-width="1"/>
+<rect x="512" y="1440" width="8" height="16" fill="#6a6050" stroke="#4a4030" stroke-width="1"/>
+
+<!-- Zone number 1 -->
+<circle cx="600" cy="1240" r="16" fill="#0a0d08" stroke="#b8c890" stroke-width="1.5"/>
+<text x="600" y="1246" text-anchor="middle" font-size="13" font-family="Georgia,serif" font-weight="bold" fill="#b8c890">1</text>
+
+<!-- ═══════════════════════════════════════
+     TRAVEL DIRECTION ARROWS
+     ═══════════════════════════════════════ -->
+<g fill="#b8c890" opacity="0.45">
+  <!-- Arrow pointing north on road -->
+  <polygon points="600,1530 594,1548 600,1543 606,1548" transform="rotate(180,600,1540)"/>
+  <polygon points="600,1350 594,1368 600,1363 606,1368" transform="rotate(180,600,1360)"/>
+  <polygon points="600,1150 594,1168 600,1163 606,1168" transform="rotate(180,600,1160)"/>
+</g>
+
+<!-- ═══════════════════════════════════════
+     GRID — drawn LAST
+     ═══════════════════════════════════════ -->
+<rect x="0" y="0" width="1200" height="1600" fill="url(#grid)"/>
+
+<!-- ═══════════════════════════════════════
+     ZONE LABELS (above grid)
+     ═══════════════════════════════════════ -->
+<!-- Zone 4 label band -->
+<rect x="0" y="0" width="120" height="280" fill="rgba(10,13,8,0.7)"/>
+<text x="60" y="80" text-anchor="middle" font-size="10" font-family="Georgia,serif" fill="#60a040" transform="rotate(-90,60,80)">SACRED GROVE</text>
+
+<!-- Zone 3b label -->
+<rect x="0" y="280" width="120" height="280" fill="rgba(10,13,8,0.65)"/>
+<text x="60" y="360" text-anchor="middle" font-size="10" font-family="Georgia,serif" fill="#b8c890" transform="rotate(-90,60,360)">THE FARBOG</text>
+
+<!-- Zone 3a label -->
+<rect x="0" y="555" width="120" height="130" fill="rgba(10,13,8,0.65)"/>
+<text x="60" y="610" text-anchor="middle" font-size="10" font-family="Georgia,serif" fill="#8ab0c8" transform="rotate(-90,60,610)">VITULANS FORD</text>
+
+<!-- Zone 2 label -->
+<rect x="0" y="680" width="120" height="280" fill="rgba(10,13,8,0.6)"/>
+<text x="60" y="770" text-anchor="middle" font-size="10" font-family="Georgia,serif" fill="#b8c890" transform="rotate(-90,60,770)">SCOUT MEET</text>
+
+<!-- Zone 1 label -->
+<rect x="0" y="960" width="120" height="640" fill="rgba(10,13,8,0.6)"/>
+<text x="60" y="1200" text-anchor="middle" font-size="10" font-family="Georgia,serif" fill="#b8c890" transform="rotate(-90,60,1200)">FOREST ROAD</text>
+
+<!-- COMPASS -->
+<g transform="translate(1160,1560)">
+  <circle cx="0" cy="0" r="24" fill="#111a0c" stroke="#2a3820" stroke-width="1.5"/>
+  <polygon points="0,-20 4,-7 0,-10 -4,-7" fill="#e8d8a8"/>
+  <polygon points="0,20 4,7 0,10 -4,7"  fill="#6a5a48"/>
+  <polygon points="-20,0 -7,4 -10,0 -7,-4" fill="#6a5a48"/>
+  <polygon points="20,0 7,4 10,0 7,-4"   fill="#6a5a48"/>
+  <text x="0" y="-10" text-anchor="middle" font-size="9" font-family="Georgia,serif" fill="#e8d8a8">N</text>
+</g>
+
+<!-- SCALE BAR -->
+<g transform="translate(880,1570)">
+  <rect x="0"   y="0" width="40"  height="6" fill="#e8d8a8"/>
+  <rect x="40"  y="0" width="40"  height="6" fill="#3a3028"/>
+  <rect x="80"  y="0" width="40"  height="6" fill="#e8d8a8"/>
+  <rect x="120" y="0" width="40"  height="6" fill="#3a3028"/>
+  <rect x="0"   y="0" width="160" height="6" fill="none" stroke="#b8c890" stroke-width="1"/>
+</g>
+
+<!-- Border -->
+<rect x="2" y="2" width="1196" height="1596" fill="none" stroke="#2a3820" stroke-width="2" rx="3"/>
+</svg>
+
+<div class="notes">
+<h2>FOREST JOURNEY — OVERVIEW MAP (Session 3)</h2>
+<table>
+  <tr><th>Zone</th><th>Location</th><th class="draw">Token placement / DM notes</th></tr>
+  <tr><td>1</td><td>Forest Road — South Approach</td><td class="draw">Party enters from south. Random forest events d8 table (chapter3.qmd). Spear cart tracks northwest.</td></tr>
+  <tr><td>2</td><td>Thusnelda's Scout Meeting</td><td class="draw">2 Germanic scouts intercept. Fire for parley. Persuasion DC 14 or Vercingetorix vouches. Thusnelda agrees to guide.</td></tr>
+  <tr><td class="draw">3a</td><td class="draw">Vitulans Ford</td><td class="draw">River swollen with spring melt. Athletics DC 14 to cross. Strength DC 12 or Swept Down complication. Pursuers arrive rear.</td></tr>
+  <tr><td class="enc">3b</td><td class="enc">The Farbog</td><td class="enc">DANGER. Vaettir poles mark the route. DC 14 passive Perception or step off path. Acknowledgment rite: Thusnelda leads. Failure = each round 1 additional Vaettir joins.</td></tr>
+  <tr><td>4</td><td>Sacred Grove — Standing Stone Ring</td><td class="draw">Altar at centre. 8 standing stones. Clear ground in perfect circle. Two natural cover positions (N and S stones). Scene 4 ritual begins here.</td></tr>
+</table>
+<h2>TRAVEL DIRECTION</h2>
+<table><tr><td>Party moves north (bottom to top). Scale: 40 px/sq = 5 ft. Import at 40 px/sq in MapTool.</td></tr></table>
+</div>
+</body>
+</html>
