@@ -613,6 +613,33 @@ HANDOUTS = [
 </div>
 """),
 
+    ("19_S1_letter_from_father.pdf", PAPYRUS, """
+<div class="heading">Epistula Privata</div>
+<div class="body-text" style="font-size:9pt; text-align:center; font-style:italic; margin-bottom:14px;">
+  Ad Iuliam Ianam, filiam Senatoris Gaii Cornelii Iani,<br>
+  apud Vindolandam in Britannia
+</div>
+<div class="rule"></div>
+<div class="body-text">
+  Julia Jana, daughter of Senator Gaius Cornelius Janus, at Fort Vindolanda in Britannia.<br><br>
+  Your posting has been confirmed through the appropriate channels.
+  The servants I have assigned will ensure your material needs are met.
+  They answer to you in all things.<br><br>
+  The posting is not arbitrary. There are matters in that region
+  of interest to the Gens Jana &mdash; older than the current garrison,
+  older than the frontier itself. You will know them when you encounter
+  them. In such matters, trust your divine inheritance over your
+  military training.<br><br>
+  Come home with a commendation and a story worth telling.<br><br>
+  The Jana name does not end in Britannia.
+</div>
+<div class="rule"></div>
+<div class="sig">
+  Senator Gaius Cornelius Janus<br>
+  <em>Gens Jana &mdash; Roma</em>
+</div>
+"""),
+
 ]
 
 # ---------------------------------------------------------------------------
