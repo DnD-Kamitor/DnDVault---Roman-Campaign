@@ -519,92 +519,98 @@ HANDOUTS = [
 """),
 
     ("15_S1_marcomanni_vision.pdf", STONE, """
-<div class="heading">The Boar's Last Field</div>
-<div class="rune-gloss">Vision — the warrior who hung this shield. You see through his eyes.</div>
+<div class="heading">Widukind</div>
 <div class="rule"></div>
 <div class="body-text">
-  I carried the boar through eleven winters. My sons learned to hold
-  a spear before they could hold a plough. The Romans said we would
-  be partners. Then the borders moved. Then the tribute doubled.
-  Then the army came.<br><br>
-  They burned the village behind us so we would know what surrendering
-  meant. My eldest is in a Roman arena now. I do not know if he is alive.<br><br>
-  I hung this shield here so Mars would remember our name when Rome
-  has finished forgetting it.<br><br>
-  My name is Widukind. My sons are named Adalbert and Gerlach.
-  I want someone to know that.<br><br>
-  Rome calls this the Marcomannic War.<br>
-  We call it what happens when you trust a treaty.
+  My youngest asked me once why we fight Rome instead of joining them.<br><br>
+  I did not have a good answer then. I said: because the border will
+  move again. Because the next tribute will be larger. Because they
+  will take everything and call it mercy.<br><br>
+  He is twelve now. Or he was, in the autumn.<br><br>
+  They took him in the autumn.<br><br>
+  I am Widukind. I carried the boar for eleven years. I hung my shield
+  here because I needed somewhere to put it. I could not bury it.
+  I could not burn it. I needed Mars to see it and know I still exist.<br><br>
+  If you are holding this shield, Rome sent you here.<br>
+  Or you came despite Rome.<br><br>
+  I want to believe it is the second one.<br><br>
+  For Adalbert. For Gerlach.<br>
+  For my youngest, whose name I will not write<br>
+  in case they find him and use it.
 </div>
-<div class="rule"></div>
-<div class="warning">Vision ends. The shield is heavier than it was.</div>
 """),
 
     ("16_S1_cherusci_vision.pdf", STONE, """
-<div class="heading">Three Fingers</div>
-<div class="rune-gloss">Vision. You stand in the forest. The year is 9 AD. You are someone else.</div>
+<div class="heading">My Grandfather Was At Teutoburg</div>
 <div class="rule"></div>
 <div class="body-text">
-  Three fingers. Three Roman legions. We buried them in the Teutoburg
-  forest the year Romans call nine. We thought that was the end of it.<br><br>
-  Germanicus came back seven years later with fire. He burned every
-  longhouse between the Rhine and the Weser. He called us pacified.<br><br>
-  My grandfather hung this shield here after Arminius died.
-  Murdered by his own family &mdash; Rome does not always need soldiers.
-  They offered gold to his brother. Let us do the rest.<br><br>
-  The three fingers mean: we remember the legions we destroyed.
-  We also remember what it cost us.<br><br>
-  The Cherusci do not exist anymore. Not as a people. There are men
-  with Cherusci blood, scattered, calling themselves Roman names.<br><br>
-  That is what three fingers cost us.
+  He was eight years old. Hiding in a tree. He watched Varus's men
+  march into the forest.<br><br>
+  He told me: they sang. They sang the whole way in.<br><br>
+  Three legions. That was us. We did the thing Rome said could not
+  be done. We thought that was the end of it.<br><br>
+  Then Germanicus came back. He did not come to fight. He came to
+  make sure we understood what victory costs. He burned the longhouses.
+  The grain stores. The grandfathers who had hidden in trees.<br>
+  He left. Said we were pacified.<br><br>
+  Arminius died in a ditch with his brother&apos;s knife in him.
+  Rome paid for that knife. Gold is how they fight when legions fail.<br><br>
+  My grandfather lived long enough to hang this shield.<br>
+  He did not live long enough to see what came after.<br><br>
+  The Cherusci are gone now. There are men with our blood out there,
+  somewhere, with Roman names.<br><br>
+  I held up three fingers for the legions we buried.<br>
+  I should have held up more for what it cost us.
 </div>
-<div class="rule"></div>
-<div class="warning">Vision ends. Somewhere in the dark, the torchlight dims.</div>
 """),
 
     ("17_S1_suebi_vision.pdf", STONE, """
-<div class="heading">The Serpent Does Not Stop</div>
-<div class="rune-gloss">Vision. The warrior is older than the others. She has been here before.</div>
+<div class="heading">I Have Been Here Three Times</div>
 <div class="rule"></div>
 <div class="body-text">
-  The serpent never stops moving. That is why we chose it.
-  You cannot hold a serpent still.<br><br>
-  Rome built walls. We went around. Rome made treaties. We signed them
-  and kept moving. Rome sent legions. We dispersed and came back.
-  We are not a tribe: we are a current of people who refuse to be still.<br><br>
-  We brought this shield here because even a moving people need somewhere
-  to remember. The serpent coils here while the people move. When you need
-  to find us, look for the place where we left something standing still.<br><br>
-  Some of our children signed their names as Romans. That is fine.
-  They are still moving. The name does not matter. The motion does.<br><br>
-  We will still be here when the walls fall.
+  First when I was young and angry. I left my father&apos;s shield.
+  I asked Mars for victory.<br><br>
+  Second time I was less young. I left my husband&apos;s shield.
+  I asked Mars to keep what was left.<br><br>
+  This is the third time. I brought my son&apos;s shield.
+  He has a Roman name now. He works the roads. He sends money home.
+  It is a good life, he says.<br><br>
+  I do not blame him.<br><br>
+  I left his shield here anyway. Let Mars decide what that means.<br><br>
+  We are Suebi. We do not stop. That is not a boast &mdash; it is
+  just true. We have been here longer than Rome&apos;s name for us.
+  We will be here when they have run out of things to call us.<br><br>
+  The serpent coils here while the people move.<br><br>
+  I will not come back a fourth time.<br>
+  But someone will.
 </div>
-<div class="rule"></div>
-<div class="warning">Vision ends. The torchflame leans toward the far archway.</div>
 """),
 
     ("18_S1_the_nine_unnamed.pdf", STONE, """
-<div class="heading">Naudhiz &mdash; We Needed</div>
-<div class="rune-gloss">No vision. Only words, scratched into the stone behind these shields.</div>
+<div class="heading">ᚾ</div>
+<div class="rune-gloss">naudhiz &nbsp;&mdash;&nbsp; need</div>
 <div class="rule"></div>
 <div class="body-text">
-  Nine of us came. One family. We had no tribe anymore; Rome had taken
-  the name from us before we understood what that meant.<br><br>
-  We brought nine shields. One each. We asked Mars to remember us
-  since no one else would. We did not ask for victory. We did not
-  ask for justice. We asked to be remembered.<br><br>
-  There is no record of us in Roman archives. We checked, later,
-  when some of us learned Latin. The Romans erased us so completely
-  that even the account of our erasure is gone.<br><br>
-  NAUDHIZ. Need. We were in need.<br><br>
-  We came here once. We left nine shields. We did not come back.<br><br>
-  If you are reading this, Mars kept his word. We exist here,
-  in this stone, on these shields, and now in your memory.<br><br>
-  That is enough.<br><br>
-  That will have to be enough.
+  We do not have a name anymore.<br><br>
+  That is not a figure of speech. We had one. Rome removed it from
+  the records. We found this out later, when one of us learned Latin
+  and looked. There is a gap in the census where we used to be.
+  A note: <em>region pacified</em>. No tribe name. No count of people.
+  Just: pacified.<br><br>
+  We are nine people. One family. We walked here from wherever
+  that region used to be. We brought these shields. We asked Mars
+  to remember us.<br><br>
+  We did not ask for revenge. We did not ask for justice.
+  We asked to have existed.<br><br>
+  That is all.<br><br>
+  If you are standing here, that means something.<br><br>
+  We do not know what.<br>
+  But it means something.
 </div>
 <div class="rule"></div>
-<div class="warning">Behind the nine shields, the wall is bare stone. No runes. No names.</div>
+<div class="warning" style="font-size:9.5pt; font-weight:normal; font-style:italic; color:#4a3a28;">
+  Behind the nine shields, the wall is bare stone. No runes. No names. Nothing else.
+</div>
 """),
 
 ]
