@@ -518,6 +518,95 @@ HANDOUTS = [
 </div>
 """),
 
+    ("15_S1_marcomanni_vision.pdf", STONE, """
+<div class="heading">The Boar's Last Field</div>
+<div class="rune-gloss">Vision — the warrior who hung this shield. You see through his eyes.</div>
+<div class="rule"></div>
+<div class="body-text">
+  I carried the boar through eleven winters. My sons learned to hold
+  a spear before they could hold a plough. The Romans said we would
+  be partners. Then the borders moved. Then the tribute doubled.
+  Then the army came.<br><br>
+  They burned the village behind us so we would know what surrendering
+  meant. My eldest is in a Roman arena now. I do not know if he is alive.<br><br>
+  I hung this shield here so Mars would remember our name when Rome
+  has finished forgetting it.<br><br>
+  My name is Widukind. My sons are named Adalbert and Gerlach.
+  I want someone to know that.<br><br>
+  Rome calls this the Marcomannic War.<br>
+  We call it what happens when you trust a treaty.
+</div>
+<div class="rule"></div>
+<div class="warning">Vision ends. The shield is heavier than it was.</div>
+"""),
+
+    ("16_S1_cherusci_vision.pdf", STONE, """
+<div class="heading">Three Fingers</div>
+<div class="rune-gloss">Vision. You stand in the forest. The year is 9 AD. You are someone else.</div>
+<div class="rule"></div>
+<div class="body-text">
+  Three fingers. Three Roman legions. We buried them in the Teutoburg
+  forest the year Romans call nine. We thought that was the end of it.<br><br>
+  Germanicus came back seven years later with fire. He burned every
+  longhouse between the Rhine and the Weser. He called us pacified.<br><br>
+  My grandfather hung this shield here after Arminius died.
+  Murdered by his own family &mdash; Rome does not always need soldiers.
+  They offered gold to his brother. Let us do the rest.<br><br>
+  The three fingers mean: we remember the legions we destroyed.
+  We also remember what it cost us.<br><br>
+  The Cherusci do not exist anymore. Not as a people. There are men
+  with Cherusci blood, scattered, calling themselves Roman names.<br><br>
+  That is what three fingers cost us.
+</div>
+<div class="rule"></div>
+<div class="warning">Vision ends. Somewhere in the dark, the torchlight dims.</div>
+"""),
+
+    ("17_S1_suebi_vision.pdf", STONE, """
+<div class="heading">The Serpent Does Not Stop</div>
+<div class="rune-gloss">Vision. The warrior is older than the others. She has been here before.</div>
+<div class="rule"></div>
+<div class="body-text">
+  The serpent never stops moving. That is why we chose it.
+  You cannot hold a serpent still.<br><br>
+  Rome built walls. We went around. Rome made treaties. We signed them
+  and kept moving. Rome sent legions. We dispersed and came back.
+  We are not a tribe: we are a current of people who refuse to be still.<br><br>
+  We brought this shield here because even a moving people need somewhere
+  to remember. The serpent coils here while the people move. When you need
+  to find us, look for the place where we left something standing still.<br><br>
+  Some of our children signed their names as Romans. That is fine.
+  They are still moving. The name does not matter. The motion does.<br><br>
+  We will still be here when the walls fall.
+</div>
+<div class="rule"></div>
+<div class="warning">Vision ends. The torchflame leans toward the far archway.</div>
+"""),
+
+    ("18_S1_the_nine_unnamed.pdf", STONE, """
+<div class="heading">Naudhiz &mdash; We Needed</div>
+<div class="rune-gloss">No vision. Only words, scratched into the stone behind these shields.</div>
+<div class="rule"></div>
+<div class="body-text">
+  Nine of us came. One family. We had no tribe anymore; Rome had taken
+  the name from us before we understood what that meant.<br><br>
+  We brought nine shields. One each. We asked Mars to remember us
+  since no one else would. We did not ask for victory. We did not
+  ask for justice. We asked to be remembered.<br><br>
+  There is no record of us in Roman archives. We checked, later,
+  when some of us learned Latin. The Romans erased us so completely
+  that even the account of our erasure is gone.<br><br>
+  NAUDHIZ. Need. We were in need.<br><br>
+  We came here once. We left nine shields. We did not come back.<br><br>
+  If you are reading this, Mars kept his word. We exist here,
+  in this stone, on these shields, and now in your memory.<br><br>
+  That is enough.<br><br>
+  That will have to be enough.
+</div>
+<div class="rule"></div>
+<div class="warning">Behind the nine shields, the wall is bare stone. No runes. No names.</div>
+"""),
+
 ]
 
 # ---------------------------------------------------------------------------
@@ -531,13 +620,13 @@ def main():
         html_str = page(theme, body)
         try:
             HTML(string=html_str, base_url=OUT).write_pdf(out_path)
-            # Convert PDF → PNG (150 DPI, single page)
-            png_base = out_path.replace(".pdf", "")
+            # Convert PDF → JPG (150 DPI, single page)
+            jpg_base = out_path.replace(".pdf", "")
             subprocess.run(
-                ["pdftoppm", "-r", "150", "-png", "-singlefile", out_path, png_base],
+                ["pdftoppm", "-r", "150", "-jpeg", "-singlefile", out_path, jpg_base],
                 check=True, capture_output=True,
             )
-            print(f"  OK  {filename}  →  {os.path.basename(png_base)}.png")
+            print(f"  OK  {filename}  →  {os.path.basename(jpg_base)}.jpg")
             ok += 1
         except Exception as exc:
             print(f"  ERR {filename}: {exc}", file=sys.stderr)

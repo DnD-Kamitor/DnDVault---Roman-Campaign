@@ -87,6 +87,10 @@ Give no handout before its trigger. Each one lands harder when the scene earns i
 | 1 | Legate's Orders | Scene 1 | Corvinus formally assigns the mission and sets the wax tablet down without picking it up again | Slide across the table without comment; let them read it aloud to each other |
 | 12 | OTHALAN Bone Token | Scene 2 | Party finds the hidden alcove in Entry Passage (Investigation DC 15) and examines the bone tile | Hand the card to whoever made the check; do not read it aloud — let them share it at the table |
 | 2 | Vault Inscription | Scene 3 | Party crosses the Altar Chamber threshold and torchlight reaches the altar stone face | Read the rune names aloud in order, then slide the paper across; pause after each translation |
+| 15 | Marcomanni Vision | Scene 2 | First character touches a boar-shield in the Shield Hall | Hand it face-down; let the player flip it themselves. Say nothing. |
+| 16 | Cherusci Vision | Scene 2 | First character touches a three-fingered-hand shield | As above — silence. Let the player read it first, then share if they choose. |
+| 17 | Suebi Vision | Scene 2 | First character touches a serpent-shield | As above. |
+| 18 | The Nine — Unnamed | Scene 2 | Character specifically examines the nine smallest, unmarked shields | Slide it to whoever looked. Pause. If anyone asks who these people were, say: "Nobody knows. Not even Rome." |
 
 ### Maps for This Session
 
@@ -368,6 +372,25 @@ This token grants advantage on the Wight communication attempt (DC 14 Persuasion
 
 **DM: the rune mapping encoded in the shield order.** The arrangement runs from the entrance to the archway, with Mars's wolf at the highest point above the far arch. The hierarchy reads: Marcomanni/boar is TIWAZ; Cherusci/three-fingered hand is HAGALAZ; Suebi/serpent is ISA; the mixed offerings are NAUDHIZ; Mars/wolf at the apex is OTHALAN. The hierarchy tells you which rune is most significant: OTHALAN, Mars's own symbol, sits highest. In the Runic Corridor, the safe step in every row is the OTHALAN rune — the one that belongs to Mars. The shield order explains *why* OTHALAN is always safe: it is the dominant symbol, the one all offerings ultimately answer to. A character who succeeds on DC 13 Intelligence and describes noting the arrangement carries this forward. Tell them: "The shields are arranged by significance, with Mars's wolf above all of them." They will recognise OTHALAN in the corridor and understand it immediately.
 
+**DM: the anti-Rome framing.** This room is evidence. Rome did not build this vault: it inherited it, violated the bargain that governed it, and is now sending soldiers to retrieve a weapon it was never permitted to have. Every shield on this wall belongs to a people Rome has since destroyed, displaced, or erased. The party is standing inside a crime that started before any of them were born and is still being committed right now. A player who asks whose side they should be on has been paying attention.
+
+**Ursula Gunther (Barbarian) — special note:** She reads Elder Futhark without a check. She recognises the tribal symbols on sight: boar is Marcomanni, three-fingered hand is Cherusci, serpent is Suebi. She does not need History or Religion checks to identify the tribes. In the vision mechanic below she automatically receives the emotional layer — not just what happened, but the grief behind it. She knows these stories, or pieces of them. She may have been told them as a child.
+
+Ask Ursula's player privately: "What does Ursula feel, standing in a vault full of Germanic war-gear, sent here by a Roman legate to retrieve a Germanic war-god's spear?" Do not require an answer. Plant the question.
+
+**Touching a shield — tribal vision mechanic:**
+
+Any character who removes a shield from the wall or places both hands on it (declared action, no check required) experiences a brief involuntary vision: three to five seconds of the offering warrior's memory, seen through their eyes. Give the corresponding handout. Do not explain it. Let the player read it and decide what their character does next.
+
+| Shield symbol | Tribe | Handout | Trigger |
+|---------------|-------|---------|---------|
+| Boar boss (iron, heavy) | Marcomanni | 15 | First character touches any boar-shield |
+| Three-fingered hand (bronze, damaged) | Cherusci | 16 | First character touches any three-fingered-hand shield |
+| Coiled serpent (old leather boss) | Suebi | 17 | First character touches any serpent-shield |
+| Plain rim, no boss symbol (smallest group) | The Nine — unnamed | 18 | Character specifically examines the nine smallest shields |
+
+The visions are not supernatural in a spooky sense: they are the residue of strong emotion left in sacred objects that have been here for a century or more. A character with Religion proficiency recognises this as *lectio obiectorum* — Germanic object-memory, the belief that a thing offered with enough intent carries the offerer's last feeling.
+
 No combat here. The shields don't move. They watch.
 
 #### The Hidden Alcove
@@ -641,21 +664,36 @@ A 30-foot corridor connecting the Binding Chamber to the Altar Chamber.
 
 **The puzzle:**
 
-The corridor is 30 feet long. The floor is divided into eight rows, each approximately 3-4 feet wide running wall to wall. Each row contains five runes arranged side by side across the full width of the corridor -- a character stepping through must choose which of the five runes in each row to place their foot on. The glowing runes are carved deep enough to be distinct underfoot; there is no ambiguity about which rune a step lands on. Characters moving single file through the corridor make their choices independently: a safe step for one person is safe for all.
+The corridor is 30 feet long, divided into eight rows of carved floor tiles. Each row is approximately 4 feet wide wall to wall and contains five rune tiles arranged side by side. A character moving through must choose which of the five tiles in each row to step on. The tiles are carved deep enough to feel distinct underfoot. Characters moving single file make choices independently: a safe step for one is safe for all who follow in the same column.
 
-The floor is a runic sequence lock. The safe path through exists and is consistent: only specific runes in a specific order do not trigger. Wrong runes deal 1d8 lightning damage and make a sound that carries to the altar chamber, giving the altar guardians one round of preparation.
+**DM: WRONG TILE PUNISHMENT — 1d8 lightning damage, no save.** Applied the instant the wrong tile takes weight. A crack of displaced divine energy rings through the stone. On the first wrong tile in the corridor, advance the Altar Chamber guardians one free preparation round: the Wight draws his weapon, the Cult Fanatic moves to flanking position, one Shadow coalesces behind the altar. Further wrong steps do not add preparation rounds but do drain resources going into the climax. Track cumulative damage — a party that fails four rows arrives at the Altar Chamber with 18 average damage already taken.
 
-**Finding the safe path (three independent routes):**
+**The puzzle:** The safe rune in every row is **OTHALAN** — but its column position shifts row by row. The five tiles always contain the same five runes (TIWAZ, HAGALAZ, NAUDHIZ, ISA, OTHALAN), scrambled left to right differently in each row. Players must identify which of the five columns holds OTHALAN before stepping. OTHALAN is visually distinct: a diagonal cross with upward-slanting arms and a horizontal bar connecting the tops — the ancestral-land symbol. Any player who asks what the runes look like: describe OTHALAN last, by that description. A player holding the bone token already has the answer in hand.
 
-- The shield arrangement in the Shield Hall (left branch): the shields are hung in a specific order by tribe symbol. This order maps to the rune sequence. A character who noted the shield arrangement and succeeds on DC 13 Intelligence can trace the safe path.
-- The bone token (from either the hidden alcove or the preserved warrior's throat): OTHALAN is the last rune in every row. If the party ends each row on an OTHALAN rune, they take no damage. This works even without the shield-order clue.
-- Religion DC 14 (passive, while looking at the floor): The pattern has a liturgical logic: it reads like a prayer sequence. The safe path is the path of the ritual, not the path of least resistance. Characters with Religion +4 or higher automatically know which runes complete each row correctly. Give this to the player directly.
+**DM: exact OTHALAN column positions (column 1 = left wall, column 5 = right wall):**
 
-**DM: the explicit safe path answer.** The safe rune in every row is OTHALAN. This is the contract rune, the rune the bone token shows, and the rune Mars's presence occupies in Germanic liturgical practice. Two independent confirmations: (1) the bone token (from either the hidden alcove or the preserved warrior's throat) shows OTHALAN directly; (2) the shield order from the Shield Hall maps each tribe to a rune, and the last position in every sequence is Mars/OTHALAN: Marcomanni carries TIWAZ, Cherusci carries HAGALAZ, Suebi carries ISA, and the final shield in every row bears OTHALAN. A character who noted the shield order and one who found the bone token have arrived at the same answer by different routes. If neither route was used, the Explorator role passive reveals the connection on request.
+| Row | Position from Binding Chamber | OTHALAN column |
+|-----|-------------------------------|----------------|
+| 1   | 0 to 4 ft                     | 3 (centre)     |
+| 2   | 4 to 8 ft                     | 1 (far left)   |
+| 3   | 8 to 12 ft                    | 5 (far right)  |
+| 4   | 12 to 16 ft                   | 2              |
+| 5   | 16 to 20 ft                   | 4              |
+| 6   | 20 to 24 ft                   | 1 (far left)   |
+| 7   | 24 to 28 ft                   | 3 (centre)     |
+| 8   | 28 to 32 ft (threshold)       | 4              |
 
-**For parties who ignore the puzzle or fail all checks:**
+**Finding OTHALAN each row (three independent routes):**
 
-They can walk through and take 1d8 lightning damage per wrong rune. There are approximately 8 rows. A failed attempt on each deals an average of 4.5 damage per row, for 36 total if every row is failed. Survivable but costly. The puzzle is not a wall; it is a cost.
+- **Shield Hall arrangement** (left branch): the shields group by tribe symbol, and the OTHALAN-marked shield's position within each group of five maps directly to the safe column for that row. A character who noted the arrangement and succeeds on DC 13 Intelligence (History) can reconstruct the full column sequence from memory. Give them the table above on success.
+- **Bone token** (hidden alcove or preserved warrior's throat): shows the OTHALAN rune directly. Any character who can read Elder Futhark — History proficiency, Religion proficiency, or a Germanic background (this includes Ursula) — identifies the matching carving in each row by sight. No check required: just attention. They can lead the party one step at a time.
+- **Religion DC 14 (passive, examining the floor):** The pattern reads as a liturgical prayer sequence. Characters with Religion +4 or higher recognise OTHALAN in every row automatically. Give the full column table to that player directly.
+
+**DM reminder:** OTHALAN is the contract rune — the rune on the bone token, the final rune of the altar inscription, the rune the Wight carries on his sternum. Every thread in this vault converges on the same symbol. If a player says "which rune do we step on?" they already have the answer somewhere in their hands.
+
+**For parties who ignore all clues:**
+
+They walk through and take 1d8 lightning per wrong tile. Eight rows, average 4.5 per failure, up to 36 total if every row fails. Survivable but costly. The puzzle is not a wall; it is a cost that compounds.
 
 
 ### Room 9: The Altar Chamber
@@ -771,6 +809,20 @@ As long as any creature within 30 feet of the Wight is Frightened (from any sour
 **Communication attempt (DC 14 Persuasion or Wisdom (Insight), player's choice):** If the party explains (in any language, or by gestures) that they did not break the bargain voluntarily and that their Legate ordered this, the Wight pauses on this check. Showing the contract scroll from the Binding Chamber grants advantage on either approach. On success: he does not let them take the spear, but he gives them one more piece of information before combat resumes:
 
 > *"The one who ordered this. His debt is greater than yours. But you carry it now."*
+
+**Wight Dialogue Reference (at a glance):**
+
+- *Opening, when party enters fully:* "The bargain was broken. Not by you. But by your kind. I am still bound. You are not."
+- *DC 14 success:* "The one who ordered this. His debt is greater than yours. But you carry it now." (Combat does not end. But the debt transfer is now on the record. This matters in Session 2 when the corruption activates and the party must explain why they are carrying it.)
+- *On defeat:* "Carry it carefully. What is inside it is older than Rome." He sits cross-legged at the base of the altar and goes still. The Shadows dissipate.
+
+**Spear Outcome: Win and Lose Conditions**
+
+| Outcome | How it happens | What follows |
+|---------|----------------|--------------|
+| Party takes the spear | Wight and both Shadows defeated | Spear sits unguarded on the altar. First character who touches it: DC 14 Wisdom save. Fail: 1 corruption + Shaken until their next turn start (cannot willingly release the spear). Pass: spear taken, no immediate effect, but the pull is real. |
+| Party retreats without the spear | Any character backs beyond 15 ft of the altar; the rest follow | Wight holds position. Combat ends. Party may exit through the Runic Corridor. Mission failure for Corvinus. The party survives intact. This is a valid outcome. |
+| Party is wiped out | All party members at 0 HP | If the Cult Fanatic is still standing, he takes the spear to Corvinus. If he also fell, the spear remains on the altar and an unconscious party member may stabilise and wake to find it untouched: the Wight's oath does not permit theft. Offer as a brutal discovery moment. |
 
 **On defeating the Wight:**
 
