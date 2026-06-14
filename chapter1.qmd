@@ -77,6 +77,16 @@ done in haste: "DO NOT WAKE WHAT SLEEPS HERE."
 
 *Trigger: Give Handout 3 during Scene 0, after the dream sequence and before the principia scene — when Corvinus mentions "we lost four men and the dogs are dead." It is a physical prop the players keep; they can add their own observations to it during the session.*
 
+### Handout Deployment Timeline
+
+Give no handout before its trigger. Each one lands harder when the scene earns it.
+
+| # | Handout | Scene | Trigger | How to present |
+|---|---|---|---|---|
+| 3 | Omens Observed | Scene 0 | Corvinus says "we lost four men and the dogs are dead" | Index card; players keep it and can add their own observations during the session |
+| 1 | Legate's Orders | Scene 1 | Corvinus formally assigns the mission and sets the wax tablet down without picking it up again | Slide across the table without comment; let them read it aloud to each other |
+| 12 | OTHALAN Bone Token | Scene 2 | Party finds the hidden alcove in Entry Passage (Investigation DC 15) and examines the bone tile | Hand the card to whoever made the check; do not read it aloud — let them share it at the table |
+| 2 | Vault Inscription | Scene 3 | Party crosses the Altar Chamber threshold and torchlight reaches the altar stone face | Read the rune names aloud in order, then slide the paper across; pause after each translation |
 
 ### Maps for This Session
 
@@ -187,7 +197,7 @@ The excavation site is a crude shaft dug through Roman stonework into older Germ
 
 Corvinus's aide meets the party at the excavation shaft before they descend. He hands over a canvas satchel without comment: four torches, a tinderbox, and a coil of twine knotted at ten-foot intervals for measuring passage length. He does not wish them luck.
 
-### The Shaft
+### Room 1: The Shaft
 
 > *The hole is perhaps six feet wide -- big enough for two men abreast if they don't mind touching. The Romans who dug it used short-handled picks; you can see the tool marks in the clay, getting more careful as they got deeper, as if the workers began to feel something wrong. A rope ladder, poorly anchored. Below: darkness, and a smell like old metal and earth that has been wet for a very long time.*
 
@@ -203,7 +213,7 @@ At the bottom of the ladder, before the passage begins, scratched into the clay 
 This was left by a previous work crew member. It is not a puzzle. It is a warning the players are free to interpret however they like.
 
 
-### The Entrance Passage
+### Room 2: The Entrance Passage
 
 > *The passage runs straight for forty feet. Narrow, low, cut through earth reinforced with stone slabs that look Roman at the top and Germanic at the bottom: two construction eras meeting unevenly in the walls. The air has no direction; it simply sits, heavy and cold, with a mineral smell underneath something organic that you cannot place.*
 >
@@ -248,33 +258,32 @@ The number seven is the number of the Fates. One line through all seven means al
 At the far end the passage opens into a T-junction. Left passage: warmer air, dry stone. Right passage: colder air, the sound of slow water somewhere below the floor.
 
 
-### The Vault: Two Paths
+### Room 3: The T-Junction — Two Paths
 
 The T-junction is clearly visible. Neither passage is blocked. Players choose which branch to take first. Both branches eventually merge before the altar.
 
 ```
-SHAFT (40 ft descent)
-   |
-ENTRANCE PASSAGE
-   |
-T-JUNCTION
-  /          \
-LEFT BRANCH   RIGHT BRANCH
-(Shield Hall  (Flooded Gallery
- + Hidden      + Bone Chamber)
- Alcove)
-   |               |
-   +----- BINDING CHAMBER -----+
-                |
-         RUNIC CORRIDOR
-                |
-         ALTAR CHAMBER
+[1] SHAFT (40 ft descent)
+        |
+[2] ENTRANCE PASSAGE
+        |
+[3] T-JUNCTION
+      /              \
+  LEFT BRANCH      RIGHT BRANCH
+[4] Shield Hall    [5] Flooded Gallery
+    + Hidden Alcove [6] Bone Chamber
+        |               |
+        +---[7] BINDING CHAMBER---+
+                    |
+              [8] RUNIC CORRIDOR
+                    |
+              [9] ALTAR CHAMBER
 ```
 
 
-### LEFT BRANCH: The Shield Hall and Hidden Alcove
+### LEFT BRANCH: Rooms 4 — The Shield Hall and Hidden Alcove
 
-#### The Shield Hall
+#### Room 4: The Shield Hall
 
 > *The ladder deposits you on damp earth that exhales cold air with every breath you take. Your torchlight rolls down the length of the chamber and vanishes into a dark archway thirty feet away.*
 >
@@ -420,9 +429,9 @@ Binding oaths in Germanic tradition are made for specific periods: one lifetime,
 No combat in this branch until the Binding Chamber.
 
 
-### RIGHT BRANCH: The Flooded Gallery and Bone Chamber
+### RIGHT BRANCH: Rooms 5–6 — The Flooded Gallery and Bone Chamber
 
-#### The Flooded Gallery
+#### Room 5: The Flooded Gallery
 
 > *The right passage descends on a shallow grade. Within twenty feet the floor becomes wet, then ankle-deep water, then -- at the low point -- chest-deep water that stretches for thirty feet before rising again on the far side. The water is black and cold and does not move. The ceiling is three feet above the waterline at the deepest point. You can wade upright, but you will be chest-deep in ancient standing water that smells of peat and something faintly sweet that you do not want to identify.*
 
@@ -487,7 +496,7 @@ The *framea* is three centuries old, give or take fifty years. The bone token is
 </details>
 
 
-#### The Bone Chamber
+#### Room 6: The Bone Chamber
 
 Beyond the flooded gallery the passage opens into a wider chamber with a collapsed section of ceiling on the east wall.
 
@@ -497,7 +506,7 @@ Beyond the flooded gallery the passage opens into a wider chamber with a collaps
 
 **Encounter: 2 Ghouls (CR 1 each) + 1 Ghast (CR 2)**
 
-**4-player adjustment:** This encounter is Deadly for 4 players at Level 3 with depleted resources. If running with 4 players: either remove the Ghast (2 Ghouls only, Hard difficulty) or keep the Ghast but activate only 1 Ghoul until the party bloodied (staggered entry). The exit condition is always available: retreating through the flooded gallery is a legitimate play; the Shadows do not re-engage fleeing characters.
+**5-player adjustment:** Run the full encounter as written (2 Ghouls + 1 Ghast). Five players have enough actions to handle it. Use all new tactics: one Ghoul starts on the ceiling (Wall Crawl Drop), the other engages from the floor — the party cannot shield-wall both at once. Trigger Death Scream when the Ghast drops. If the party burns resources heavily here, that is intentional — the Altar Chamber is still ahead.
 
 The ghouls are beneath the rubble, dormant. They activate when the party is fully in the chamber, not when they first enter the archway. Give the party one round of looking around before the rubble shifts. The Ghast emerges last, from behind the stone benches where it has been pressed against the wall for centuries.
 
@@ -538,7 +547,7 @@ The regularity of the offerings suggests someone keeping a schedule. A human hab
 
 **DM: who has been feeding this place.** The offering cycle (fresh grain, recent coins, maintained bodies) stopped approximately two years ago. The person responsible was Titus Sempronius Caecilius, Cassia's predecessor as fort augur. He died of a fever in AD 173 and his death broke a generational chain: someone in the augur's role has maintained this vault since at least the early Antonine period, likely longer. Titus knew the full terms of the bargain sealed here. Cassia inherited his papers but not his understanding of why the offering cycle mattered. His death is why the offering cycle is disrupted and why the vault's contained state has degraded. Cassia knows more than she has said. This is a Session 2 thread: what exactly did Titus's papers contain, and why hasn't Cassia mentioned them?
 
-### The Binding Chamber
+### Room 7: The Binding Chamber
 
 Both branches converge here. This is the old Chamber of Chains, kept exactly as written below, with one addition: a functional lock mechanism.
 
@@ -605,7 +614,7 @@ A trained translator can compare the Latin and Germanic versions of the contract
 </details>
 
 
-### The Runic Corridor
+### Room 8: The Runic Corridor
 
 A 30-foot corridor connecting the Binding Chamber to the Altar Chamber.
 
@@ -649,7 +658,7 @@ The floor is a runic sequence lock. The safe path through exists and is consiste
 They can walk through and take 1d8 lightning damage per wrong rune. There are approximately 8 rows. A failed attempt on each deals an average of 4.5 damage per row, for 36 total if every row is failed. Survivable but costly. The puzzle is not a wall; it is a cost.
 
 
-### The Altar Chamber
+### Room 9: The Altar Chamber
 
 > *The final chamber opens into a perfect circle. The domed ceiling catches every breath and rolls it back, so even your heartbeat sounds like it belongs to someone else. Moisture beads on the walls like cold sweat.*
 >
@@ -749,7 +758,7 @@ If taken intact: the token is a campaign item. It grants advantage on the Wight 
 
 As long as any creature within 30 feet of the Wight is Frightened (from any source, including Shadow Strength Drain, a failed saving throw against the spear's presence, or a spell), the Wight regains 2 (1d4) hit points at the start of his turn. This is not a healing power: it is three centuries of obligation drawing sustenance from the thing it was always meant to protect against. He cannot choose to suppress it.
 
-**4-player adjustment:** This encounter is Deadly for 4 depleted players. If running with 4 players: start with only 1 Shadow visible; the second emerges from the wall only if the party ignores the exit condition and presses the attack. The exit condition (back away from the spear — Wight holds, Shadows stop) is the intended resolution for a depleted party. Do not force combat.
+**5-player adjustment:** Run both Shadows visible from the start. The Cult Fanatic executes his full priority sequence (Bane round 1, Hold Person round 2, Spiritual Weapon round 3). With five players this is Hard, not Deadly — but they will be depleted from the Bone Chamber. The exit condition (back away from the spear — Wight holds, Shadows stop) remains available and is the right call for a party near the wire. Do not force combat.
 
 **XP:** 700 + 100 + 100 = 900, multiplied by 2 for three creatures = 1,800 adjusted XP for a five-player party. This exceeds the Hard threshold and approaches Deadly (2,000 XP). At Level 3, with depleted resources from the vault, this is the designed climax.
 

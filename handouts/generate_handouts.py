@@ -454,6 +454,70 @@ HANDOUTS = [
 </div>
 """),
 
+    ("12_S1_entry_passage_othalan_token.pdf", STONE, """
+<div class="heading">Object Found — Entry Passage</div>
+<div class="rule"></div>
+<div class="body-text">
+  A thumb-sized tile carved from pale bone. One face is smooth.
+  The other bears a single rune, cut deep and deliberate:
+</div>
+<div class="rune-row" style="font-size:28pt; margin: 18px 0; letter-spacing:0.4em;">&#x16DF;</div>
+<div class="rune-gloss">The carving is old. The edges are worn from handling.</div>
+<div class="rule"></div>
+<div class="body-text">
+  An iron pin runs through a hole bored at the top, as if it was meant
+  to be worn or carried close. The pin is cold despite the ambient heat
+  of the torches.
+</div>
+"""),
+
+    ("13_S1_shield_hall_rune_sketch.pdf", PAPYRUS, """
+<div class="heading">Field Sketch — Shield Hall</div>
+<div class="rule"></div>
+<div class="body-text">
+  The shields on the racks are old. Legion issue, or close to it.
+  Most carry damage marks and old repairs. But on the iron boss
+  of each shield, someone has cut a symbol.
+</div>
+<div class="rule"></div>
+<div class="body-text">Five symbols repeat across all fifteen shields:</div>
+<div class="map-box" style="text-align:center; font-size:18pt; letter-spacing:0.5em; padding:16px;">
+  &#x16CF; &nbsp; &#x16BA; &nbsp; &#x16BE; &nbsp; &#x16C1; &nbsp; &#x16DF;
+</div>
+<div class="body-text">
+  Three shields show the first symbol.<br>
+  Three show the second. Three the third.<br>
+  Three the fourth. Three the last.<br><br>
+  The symbols are not Latin.
+</div>
+<div class="note">
+  [Field note, charcoal on scrap leather. Not a formal document.]
+</div>
+"""),
+
+    ("14_S1_shield_hall_reversed_shield.pdf", PAPYRUS, """
+<div class="heading">Discovery — Shield Hall, Far Archway</div>
+<div class="rule"></div>
+<div class="body-text">
+  There is a slight wrongness in the wall to the left of the archway.
+</div>
+<div class="rule"></div>
+<div class="body-text">
+  Not a gap. The stones are continuous. But one shield has been hung
+  with its face to the wall rather than facing the room.<br><br>
+  Every other shield in the Shield Hall faces outward. This one faces
+  in, its boss pressed against the stone. It has been placed that way
+  deliberately. The leather grip is still intact. Someone put it here
+  and left it.<br><br>
+  <em>Reaching behind the shield: the stone gives slightly.
+  It is not load-bearing. It is a panel.</em>
+</div>
+<div class="rule"></div>
+<div class="note">
+  What is inside the alcove is described when the panel is opened.
+</div>
+"""),
+
 ]
 
 # ---------------------------------------------------------------------------
