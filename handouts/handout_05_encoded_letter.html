@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handout 5: Encoded Letter</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #120a04;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .page {
+    width: 480px;
+    min-height: 580px;
+    /* darker, more worn parchment — found stuffed in a dead man's boot */
+    background: #b89048;
+    background-image:
+      radial-gradient(ellipse at 30% 20%, rgba(80,40,0,0.4) 0%, transparent 45%),
+      radial-gradient(ellipse at 70% 80%, rgba(60,30,0,0.35) 0%, transparent 40%),
+      radial-gradient(ellipse at 10% 90%, rgba(100,50,0,0.3) 0%, transparent 35%),
+      radial-gradient(ellipse at 55% 45%, rgba(200,160,60,0.2) 0%, transparent 60%),
+      /* paper grain lines */
+      repeating-linear-gradient(88deg, transparent, transparent 22px, rgba(0,0,0,0.025) 22px, rgba(0,0,0,0.025) 23px),
+      repeating-linear-gradient(1deg, transparent, transparent 18px, rgba(0,0,0,0.018) 18px, rgba(0,0,0,0.018) 19px);
+    padding: 50px 52px 60px;
+    position: relative;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.75), inset 0 0 50px rgba(80,40,0,0.25);
+    border-radius: 1px;
+    /* slight rotation — hastily folded letter */
+    transform: rotate(-0.4deg);
+  }
+
+  /* heavy top stain — blood? water? */
+  .page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 18px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.32), rgba(0,0,0,0.08), transparent);
+    border-radius: 1px 1px 0 0;
+    pointer-events: none;
+  }
+
+  /* ink blot centre-left */
+  .ink-blot {
+    position: absolute;
+    top: 118px; left: 44px;
+    width: 38px; height: 22px;
+    background: radial-gradient(ellipse, rgba(10,4,0,0.65) 0%, rgba(10,4,0,0.3) 50%, transparent 80%);
+    border-radius: 50%;
+    transform: rotate(-12deg);
+    pointer-events: none;
+  }
+
+  /* ink smear lower right */
+  .ink-smear {
+    position: absolute;
+    bottom: 140px; right: 36px;
+    width: 55px; height: 10px;
+    background: linear-gradient(to right, transparent, rgba(10,4,0,0.45), rgba(10,4,0,0.2), transparent);
+    border-radius: 50%;
+    transform: rotate(8deg);
+    pointer-events: none;
+  }
+
+  /* crease line */
+  .page-crease {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent 5%, rgba(0,0,0,0.12) 20%, rgba(0,0,0,0.18) 50%, rgba(0,0,0,0.12) 80%, transparent 95%);
+    pointer-events: none;
+  }
+
+  /* tear at top right corner */
+  .tear {
+    position: absolute;
+    top: 0; right: 0;
+    width: 0; height: 0;
+    border-top: 28px solid #120a04;
+    border-left: 22px solid transparent;
+  }
+
+  /* ---- CONTENT ---- */
+
+  .address-line {
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e0c00;
+    margin-bottom: 24px;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+  }
+
+  .cipher-body {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    color: #100800;
+    line-height: 1.75;
+    letter-spacing: 0.06em;
+    /* slight slant for handwriting feel */
+    transform: rotate(-0.6deg);
+    transform-origin: top left;
+    word-break: break-word;
+    hyphens: none;
+  }
+
+  /* first line slightly darker — pen was freshly dipped */
+  .cipher-body .line-1 { opacity: 0.95; }
+  .cipher-body .line-2 { opacity: 0.90; }
+  .cipher-body .line-3 { opacity: 0.88; }
+  .cipher-body .line-4 { opacity: 0.85; }
+
+  /* deliberately smudged letter at position */
+  .smudge {
+    display: inline-block;
+    background: linear-gradient(to right, rgba(10,4,0,0.4), transparent);
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+
+  .sig-line {
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    font-weight: 600;
+    color: #100800;
+    text-align: right;
+    margin-top: 32px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(30,12,0,0.35);
+    letter-spacing: 0.08em;
+    opacity: 0.9;
+    /* signature slants more */
+    transform: rotate(-1.2deg);
+    transform-origin: right center;
+  }
+
+  .found-note {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 10px;
+    font-style: italic;
+    color: #7a4010;
+    text-align: center;
+    margin-top: 24px;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+
+  /* print button */
+  .print-btn {
+    display: block;
+    margin: 32px auto 0;
+    padding: 9px 24px;
+    background: #3a0c00;
+    color: #c8900a;
+    border: 1px solid #6a2808;
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+
+  .print-btn:hover { background: #5a1400; }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .page {
+      box-shadow: none;
+      border: 1px solid #8a6020;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      transform: none;
+    }
+    .tear { border-top-color: white; }
+    .print-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="ink-blot"></div>
+  <div class="ink-smear"></div>
+  <div class="page-crease"></div>
+  <div class="tear"></div>
+
+  <div class="address-line">[ no salutation ]</div>
+
+  <div class="cipher-body">
+    <div class="line-1">WKH <span class="smudge">D</span>UWLIDFW PXVW QRW</div>
+    <div class="line-2">UHDFK URPH. EB DQB</div>
+    <div class="line-3">PHDQV QHFHVVDUB. RXU</div>
+    <div class="line-3">PXWXDO IULHQG&rsquo;V</div>
+    <div class="line-3">DPELWLRQV GHSHQG</div>
+    <div class="line-4">RQ LWV SHUPDQHQW</div>
+    <div class="line-4">UHPRYDO. BRX NQRZ</div>
+    <div class="line-4">ZKDW WR GR.</div>
+  </div>
+
+  <div class="sig-line">&mdash; JFE</div>
+
+  <div class="found-note">
+    Found among the personal effects of the deceased.<br>
+    No seal. No address. Delivered by hand.
+  </div>
+</div>
+
+<button class="print-btn" onclick="window.print()">Print &mdash; Save as PDF</button>
+
+</body>
+</html>

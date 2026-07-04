@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Session 2 — Maps</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0b08;
+    color: #c8a850;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    padding: 24px 20px 48px;
+  }
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #c8a850;
+    text-align: center;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #806830;
+    letter-spacing: 0.1em;
+    margin-bottom: 28px;
+  }
+
+  /* ---- SCENE TABLE ---- */
+  .scene-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 36px;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+
+  .scene-table th {
+    background: #1a1510;
+    color: #c8a850;
+    padding: 6px 10px;
+    text-align: left;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #3a3020;
+  }
+
+  .scene-table td {
+    padding: 6px 10px;
+    border: 1px solid #2a2018;
+    vertical-align: top;
+    line-height: 1.6;
+  }
+
+  .scene-table tr:nth-child(even) td { background: #141210; }
+  .scene-table tr:nth-child(odd) td { background: #0d0b08; }
+
+  .scene-num { color: #c8a850; font-family: 'Cinzel', serif; font-weight: 700; }
+  .map-link a {
+    color: #8ab0d8;
+    text-decoration: none;
+    font-size: 10.5px;
+  }
+  .map-link a:hover { color: #c8e0ff; text-decoration: underline; }
+  .tag-exists { color: #70c870; font-size: 10px; }
+  .tag-missing { color: #c84040; font-size: 10px; }
+  .tag-improvise { color: #d09030; font-size: 10px; }
+
+  /* ---- MAP CARDS ---- */
+  .maps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto 36px;
+  }
+
+  .map-card {
+    background: #111008;
+    border: 1px solid #3a3020;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .map-card-header {
+    background: #1a1510;
+    padding: 10px 14px;
+    border-bottom: 1px solid #3a3020;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .map-card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #c8a850;
+    letter-spacing: 0.06em;
+  }
+
+  .map-card-scene {
+    font-size: 10px;
+    color: #706030;
+    font-style: italic;
+  }
+
+  .map-frame-wrap {
+    width: 100%;
+    height: 420px;
+    position: relative;
+    background: #080706;
+    overflow: hidden;
+  }
+
+  .map-frame-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform-origin: top left;
+  }
+
+  .map-card-footer {
+    padding: 10px 14px;
+    border-top: 1px solid #2a2018;
+    background: #0d0b08;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .map-card-footer p { color: #906828; font-size: 11px; line-height: 1.5; }
+
+  .open-link {
+    flex-shrink: 0;
+    padding: 5px 12px;
+    background: #1a1510;
+    color: #8ab0d8;
+    border: 1px solid #3a5070;
+    font-size: 10.5px;
+    text-decoration: none;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  .open-link:hover { background: #242018; color: #c8e0ff; }
+
+  /* ---- MISSING MAPS ---- */
+  .missing-section {
+    max-width: 900px;
+    margin: 0 auto 36px;
+  }
+
+  .section-head {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #c8a850;
+    text-transform: uppercase;
+    border-bottom: 1px solid #3a3020;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+  }
+
+  .missing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .missing-card {
+    background: #100e0a;
+    border: 1px solid #2a2018;
+    border-left: 3px solid #c84040;
+    padding: 12px 14px;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .missing-card.warn {
+    border-left-color: #d09030;
+  }
+
+  .missing-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    color: #c8a850;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  .missing-card p {
+    font-size: 10.5px;
+    color: #706028;
+    line-height: 1.6;
+  }
+
+  /* ---- MAPTOOL INSTRUCTIONS ---- */
+  .instructions {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #100e0a;
+    border: 1px solid #2a2018;
+    padding: 16px 20px;
+    border-radius: 2px;
+  }
+
+  .instructions h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    color: #c8a850;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #2a2018;
+    padding-bottom: 6px;
+  }
+
+  .instructions ol {
+    padding-left: 18px;
+    color: #906828;
+    font-size: 11px;
+    line-height: 2;
+  }
+
+  .instructions ol li { margin-bottom: 2px; }
+  .instructions code {
+    background: #1a1510;
+    padding: 1px 5px;
+    border-radius: 2px;
+    font-size: 10.5px;
+    color: #c8e0a0;
+    font-family: monospace;
+  }
+
+  @media print {
+    body { background: white; color: black; }
+    .map-frame-wrap { display: none; }
+    .print-note { display: block; color: #666; font-style: italic; padding: 20px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Session 2 &mdash; The Chieftain's Price</h1>
+<div class="subtitle">Map Reference &mdash; All scenes &mdash; Open in browser</div>
+
+<!-- SCENE-TO-MAP TABLE -->
+<table class="scene-table">
+  <thead>
+    <tr>
+      <th>Scene</th>
+      <th>Location</th>
+      <th>Map</th>
+      <th>Status</th>
+      <th>Notes for DM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="scene-num">Lead-In</td>
+      <td>Fort Vindolanda &mdash; Praetorium courtyard</td>
+      <td class="map-link"><a href="s2_fort_overview.html" target="_blank">s2_fort_overview.html</a></td>
+      <td class="tag-exists">Rendered</td>
+      <td>Use for Dawn arrival of Tribune's mounted messenger. Players are summoned from barracks. Show full fort layout.</td>
+    </tr>
+    <tr>
+      <td class="scene-num">Scene 1</td>
+      <td>Praetorium &mdash; Corvinus's office</td>
+      <td class="map-link"><a href="s2_fort_overview.html" target="_blank">s2_fort_overview.html</a></td>
+      <td class="tag-improvise">Use overview</td>
+      <td>Zoom to Praetorium building. No dedicated battle map needed &mdash; social encounter. Mark Tribune position in centre, Corvinus behind desk, Praetorian Guards at door.</td>
+    </tr>
+    <tr>
+      <td class="scene-num">Scene 2</td>
+      <td>Fort interior &mdash; Sextus's quarters / vicus taberna</td>
+      <td class="map-link"><a href="s2_fort_overview.html" target="_blank">s2_fort_overview.html</a></td>
+      <td class="tag-improvise">Use overview</td>
+      <td>Investigation scene. Players move between barracks, storerooms, and vicus. Use fort overview for spatial reference. Vicus = SW corner. No battle map required unless combat breaks out.</td>
+    </tr>
+    <tr>
+      <td class="scene-num">Scene 3</td>
+      <td>West Gate &mdash; Tribune's men seize Artifact</td>
+      <td class="map-link"><a href="s2_west_gate.html" target="_blank">s2_west_gate.html</a></td>
+      <td class="tag-exists">Rendered</td>
+      <td>Main combat map. Left tower = defenders, Right tower = Tribune's Praetorians. Gate passage = chokepoint. Place Tribune's wagon at exterior north. Mounted scouts at road edge.</td>
+    </tr>
+    <tr>
+      <td class="scene-num">Scene 4</td>
+      <td>Praetorium &mdash; The Accusation</td>
+      <td class="map-link"><a href="s2_fort_overview.html" target="_blank">s2_fort_overview.html</a></td>
+      <td class="tag-improvise">Use overview</td>
+      <td>Political climax. No map needed for pure roleplay. If it goes loud: use the Praetorium room on the overview map. Tribune has 4 Praetorian Guards in the room.</td>
+    </tr>
+    <tr>
+      <td class="scene-num">Close</td>
+      <td>Fort Vindolanda &mdash; East road junction</td>
+      <td class="map-link"><a href="s2_fort_overview.html" target="_blank">s2_fort_overview.html</a></td>
+      <td class="tag-improvise">Use overview</td>
+      <td>Tribune departs with Artifact (or is stopped). Party watches. Seed for Session 3: Vercingetorix's rider appears at the treeline.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- MAP CARDS with embedded iframes -->
+<div class="maps-grid">
+
+  <div class="map-card">
+    <div class="map-card-header">
+      <div class="map-card-title">Fort Vindolanda &mdash; Tactical Overview</div>
+      <div class="map-card-scene">Lead-In / Scene 1 / Scene 2 / Scene 4 / Close</div>
+    </div>
+    <div class="map-frame-wrap">
+      <iframe src="../Maptool/maps/s2_fort_overview.html" title="Fort Vindolanda Overview" loading="lazy"></iframe>
+    </div>
+    <div class="map-card-footer">
+      <p>
+        40px grid (1 sq = 5ft). Full fort with gate towers, Praetorium, barracks, vicus.
+        Use for all social scenes. DM notes table below SVG in file.
+      </p>
+      <a class="open-link" href="../Maptool/maps/s2_fort_overview.html" target="_blank">Open Full Map</a>
+    </div>
+  </div>
+
+  <div class="map-card">
+    <div class="map-card-header">
+      <div class="map-card-title">West Gate &mdash; Battle Map</div>
+      <div class="map-card-scene">Scene 3: The Raid</div>
+    </div>
+    <div class="map-frame-wrap">
+      <iframe src="../Maptool/maps/s2_west_gate.html" title="West Gate Battle Map" loading="lazy"></iframe>
+    </div>
+    <div class="map-card-footer">
+      <p>
+        60px grid (1 sq = 5ft). Left tower / Gate passage / Right tower.
+        Exterior = Tribune's men approaching. Interior = defenders.
+      </p>
+      <a class="open-link" href="../Maptool/maps/s2_west_gate.html" target="_blank">Open Full Map</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- MISSING MAPS -->
+<div class="missing-section">
+  <div class="section-head">Maps Not Yet Rendered &mdash; Improvise or Use Theatre of Mind</div>
+  <div class="missing-grid">
+
+    <div class="missing-card warn">
+      <h3>Sextus's Quarters (Barracks Room)</h3>
+      <p>
+        Scene 2: Investigation. Small room, 4 bunks, personal chest, writing desk.
+        Theatre of mind works well. If players want exact layout: 6&times;4 squares,
+        door south, window east, chest under bunk 3.
+      </p>
+    </div>
+
+    <div class="missing-card warn">
+      <h3>Brennus's Taberna (Vicus Tavern)</h3>
+      <p>
+        Scene 2: Information gathering. Long room, bar along north wall, 6 tables,
+        back room. Use fort overview for location reference. Draw rough sketch on
+        paper if players split up.
+      </p>
+    </div>
+
+    <div class="missing-card">
+      <h3>Tribune's Tent (Exterior, south of fort)</h3>
+      <p>
+        Optional. Tribune camps outside the walls by protocol. If players attempt
+        a night infiltration: 20&times;20 tent, guard rotation every 30 min,
+        Tribune's chest in NE corner.
+      </p>
+    </div>
+
+    <div class="missing-card">
+      <h3>East Road &mdash; Treeline Ambush (Close)</h3>
+      <p>
+        Seed for Session 3. Vercingetorix's rider watches from the treeline.
+        Not a combat map for S2. If pursuit happens: use S3 forest path map
+        (s3_forest_path.html).
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- MAPTOOL LOADING INSTRUCTIONS -->
+<div class="instructions">
+  <h2>Loading These Maps in MapTool</h2>
+  <ol>
+    <li>Launch MapTool: <code>Maptool/maptool.sh</code></li>
+    <li>Open campaign: <code>File &gt; Open Campaign &gt; Maptool/campaigns/5e/RomanCampaign.cmpgn</code></li>
+    <li>Import map image: <code>File &gt; Add Resource to Library &gt; Local Directory</code></li>
+    <li>Navigate to <code>Maptool/maps/</code> and select the campaign folder</li>
+    <li>Drag the JPG from the resource library onto the map canvas</li>
+    <li>Set grid: <code>Edit &gt; Map Properties &gt; Grid Size = 40px</code> (overview) or <code>60px</code> (battle)</li>
+    <li>Place tokens from <code>Maptool/tokens/</code> on the background layer</li>
+    <li>Add token light sources via <code>Edit &gt; Campaign Properties &gt; Light Sources</code></li>
+  </ol>
+  <br>
+  <p style="color:#706028; font-size:10.5px;">
+    Note: JPG exports are in <code>Maptool/maps/*.jpg</code> &mdash; use these for MapTool import.
+    The HTML files are for DM browser preview only (they render in higher quality than the JPG exports).
+  </p>
+</div>
+
+</body>
+</html>
