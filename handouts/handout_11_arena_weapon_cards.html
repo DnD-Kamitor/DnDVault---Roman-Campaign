@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handout 11: Arena Weapon Cards</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0806;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .label {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: #6a5020;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .cards-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .weapon-card {
+    width: 220px;
+    background: #1c1608;
+    background-image:
+      radial-gradient(ellipse at 30% 20%, rgba(120,90,20,0.3) 0%, transparent 55%),
+      radial-gradient(ellipse at 70% 80%, rgba(80,60,10,0.25) 0%, transparent 50%);
+    border: 2px solid #6a5010;
+    border-radius: 6px;
+    padding: 22px 20px 18px;
+    position: relative;
+    box-shadow:
+      0 0 0 1px rgba(180,140,40,0.08),
+      0 6px 24px rgba(0,0,0,0.7);
+  }
+
+  /* gold corner accent */
+  .weapon-card::before {
+    content: '';
+    position: absolute;
+    top: 6px; left: 6px;
+    width: 14px; height: 14px;
+    border-top: 2px solid rgba(180,140,40,0.5);
+    border-left: 2px solid rgba(180,140,40,0.5);
+  }
+  .weapon-card::after {
+    content: '';
+    position: absolute;
+    bottom: 6px; right: 6px;
+    width: 14px; height: 14px;
+    border-bottom: 2px solid rgba(180,140,40,0.5);
+    border-right: 2px solid rgba(180,140,40,0.5);
+  }
+
+  .weapon-icon {
+    text-align: center;
+    margin-bottom: 10px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .weapon-name {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #c8a040;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4px;
+    text-shadow: 0 0 10px rgba(180,140,20,0.3);
+  }
+
+  .weapon-flavor {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 10.5px;
+    font-style: italic;
+    color: #8a7040;
+    text-align: center;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #8a6020, transparent);
+    margin: 10px 0;
+  }
+
+  .stat-block {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .stat-label {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    color: #8a6020;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 6px;
+  }
+
+  .benefit {
+    color: #c0b080;
+  }
+
+  .cost {
+    color: #c08060;
+    font-style: italic;
+  }
+
+  .instruction {
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    color: #6a5020;
+    text-align: center;
+    padding: 6px 8px;
+    border: 1px solid rgba(120,90,20,0.3);
+    border-radius: 3px;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  .print-btn {
+    display: block;
+    margin: 12px auto 0;
+    padding: 9px 24px;
+    background: #1a1408;
+    color: #c8a040;
+    border: 1px solid #5a4010;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .print-btn:hover { background: #242010; }
+
+  @media print {
+    body { background: white; padding: 10px; gap: 10px; }
+    .weapon-card { box-shadow: none; border: 2px solid #8a6020; }
+    .print-btn, .label { display: none; }
+    .cards-row { gap: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="label">Place face-down &mdash; flip when party can examine &mdash; claim as bonus action</div>
+
+<div class="cards-row">
+
+  <!-- Card 1: Gladius of Achilles -->
+  <div class="weapon-card">
+    <div class="weapon-icon">
+      <svg width="32" height="50" viewBox="0 0 32 50" xmlns="http://www.w3.org/2000/svg">
+        <!-- gladius blade -->
+        <polygon points="16,2 20,36 16,44 12,36" fill="#c0b080" opacity="0.8"/>
+        <!-- guard -->
+        <rect x="8" y="35" width="16" height="4" rx="1" fill="#a08030"/>
+        <!-- grip -->
+        <rect x="13" y="39" width="6" height="10" rx="2" fill="#6a4010"/>
+        <line x1="16" y1="2" x2="16" y2="35" stroke="#e0d090" stroke-width="0.8" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="weapon-name">Gladius of Achilles</div>
+    <div class="weapon-flavor">Taken from a hero who chose glory over survival.</div>
+    <div class="rule"></div>
+    <div class="stat-block">
+      <span class="stat-label">Benefit</span>
+      <span class="benefit">+2 weapon. Advantage on attack rolls.</span>
+      <span class="stat-label">Cost</span>
+      <span class="cost">Vulnerability to piercing damage — the price of arrogance.</span>
+    </div>
+    <div class="instruction">Claim as bonus action</div>
+  </div>
+
+  <!-- Card 2: Shield of Horatius -->
+  <div class="weapon-card">
+    <div class="weapon-icon">
+      <svg width="44" height="50" viewBox="0 0 44 50" xmlns="http://www.w3.org/2000/svg">
+        <!-- roman scutum shape -->
+        <path d="M4,8 Q4,2 22,2 Q40,2 40,8 L40,40 Q40,48 22,48 Q4,48 4,40 Z"
+              fill="#8a6020" stroke="#c0a040" stroke-width="1.5"/>
+        <!-- boss -->
+        <circle cx="22" cy="25" r="8" fill="#a08030" stroke="#d4b040" stroke-width="1"/>
+        <circle cx="22" cy="25" r="4" fill="#c0a040"/>
+        <!-- SPQR -->
+        <text x="22" y="13" text-anchor="middle" fill="#d4b040" font-family="Cinzel,serif" font-size="5" letter-spacing="0.1em">SPQR</text>
+      </svg>
+    </div>
+    <div class="weapon-name">Shield of Horatius</div>
+    <div class="weapon-flavor">Carried at the Tiber bridge by a man who held alone.</div>
+    <div class="rule"></div>
+    <div class="stat-block">
+      <span class="stat-label">Benefit</span>
+      <span class="benefit">+3 AC. Reaction: impose disadvantage on one attack per round.</span>
+      <span class="stat-label">Cost</span>
+      <span class="cost">Cannot be used with a two-handed weapon.</span>
+    </div>
+    <div class="instruction">Claim as bonus action</div>
+  </div>
+
+  <!-- Card 3: Spear of Leonidas -->
+  <div class="weapon-card">
+    <div class="weapon-icon">
+      <svg width="14" height="52" viewBox="0 0 14 52" xmlns="http://www.w3.org/2000/svg">
+        <!-- spear head -->
+        <polygon points="7,2 11,16 7,20 3,16" fill="#c0b080" opacity="0.85"/>
+        <!-- binding -->
+        <rect x="5" y="20" width="4" height="6" rx="0" fill="#8a6020"/>
+        <!-- shaft -->
+        <rect x="6" y="26" width="2" height="24" rx="1" fill="#6a4010"/>
+        <!-- butt -->
+        <polygon points="7,50 9,44 5,44" fill="#c0b080" opacity="0.7"/>
+      </svg>
+    </div>
+    <div class="weapon-name">Spear of Leonidas</div>
+    <div class="weapon-flavor">Three hundred held. None survived. The spear remembers.</div>
+    <div class="rule"></div>
+    <div class="stat-block">
+      <span class="stat-label">Benefit</span>
+      <span class="benefit">Reach 10 ft. +1d10 damage if you have not moved this turn.</span>
+      <span class="stat-label">Cost</span>
+      <span class="cost">At 0 HP, stabilize automatically once per combat. Mars notices — and tests you.</span>
+    </div>
+    <div class="instruction">Claim as bonus action</div>
+  </div>
+
+</div>
+
+<button class="print-btn" onclick="window.print()">Print &mdash; Save as PDF</button>
+
+</body>
+</html>

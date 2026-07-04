@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handout 10: The Mark of Mars</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #060102;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .label {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: #6a3020;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* one card — print four copies for four players */
+  .card {
+    width: 340px;
+    background: #1a0a06;
+    background-image:
+      radial-gradient(ellipse at 30% 30%, rgba(80,10,0,0.4) 0%, transparent 55%),
+      radial-gradient(ellipse at 70% 70%, rgba(60,0,0,0.5) 0%, transparent 50%),
+      repeating-linear-gradient(87deg,
+        rgba(255,255,255,0.01) 0px,
+        rgba(255,255,255,0.01) 1px,
+        transparent 1px, transparent 4px
+      );
+    border: 2px solid #6a1a0a;
+    border-radius: 4px;
+    padding: 28px 32px;
+    position: relative;
+    box-shadow:
+      0 0 0 1px rgba(200,60,20,0.1),
+      0 0 20px rgba(150,20,0,0.3),
+      0 8px 32px rgba(0,0,0,0.8);
+  }
+
+  /* blood-red edge highlight */
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 3px;
+    background: linear-gradient(
+      135deg,
+      rgba(200,40,0,0.12) 0%,
+      transparent 40%,
+      transparent 60%,
+      rgba(180,20,0,0.1) 100%
+    );
+    pointer-events: none;
+  }
+
+  /* Mars symbol — spear + shield as SVG in corner */
+  .mars-symbol {
+    position: absolute;
+    top: 14px; right: 16px;
+    opacity: 0.35;
+  }
+
+  .card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #c84020;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4px;
+    text-shadow: 0 0 12px rgba(200,40,0,0.4);
+  }
+
+  .card-sub {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    color: #8a4030;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #7a1a08, transparent);
+    margin: 12px 0;
+  }
+
+  .benefit-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .benefit-list li {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 12px;
+    color: #d4a090;
+    line-height: 1.8;
+    padding: 4px 0 4px 18px;
+    border-bottom: 1px solid rgba(120,30,10,0.2);
+    position: relative;
+  }
+
+  .benefit-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 2px;
+    color: #a03020;
+    font-size: 10px;
+    top: 6px;
+  }
+
+  .cost-block {
+    margin-top: 14px;
+    padding: 10px 12px;
+    background: rgba(120,0,0,0.15);
+    border-left: 3px solid rgba(180,40,0,0.6);
+  }
+
+  .cost-block p {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11.5px;
+    font-style: italic;
+    color: #c88070;
+    line-height: 1.7;
+  }
+
+  .print-note {
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    color: #4a2015;
+    text-align: center;
+    margin-top: 24px;
+    text-transform: uppercase;
+  }
+
+  .print-btn {
+    display: block;
+    margin: 28px auto 0;
+    padding: 9px 24px;
+    background: #2a0800;
+    color: #c84020;
+    border: 1px solid #6a1a08;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .print-btn:hover { background: #3e1000; }
+
+  @media print {
+    body { background: white; padding: 10px; gap: 12px; }
+    .card { box-shadow: none; border: 2px solid #6a1a0a; }
+    .print-btn, .print-note { display: none; }
+    .label { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="label">Print four copies &mdash; one per player &mdash; give at campaign end</div>
+
+<!-- Card (print 4x) -->
+<div class="card">
+  <svg class="mars-symbol" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="20" r="10" fill="none" stroke="#c04020" stroke-width="2.5"/>
+    <line x1="16" y1="10" x2="24" y2="2" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="20" y1="2" x2="24" y2="2" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="24" y1="2" x2="24" y2="6" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+
+  <div class="card-title">The Mark of Mars</div>
+  <div class="card-sub">This character has stood before a god of war and lived.</div>
+
+  <div class="rule"></div>
+
+  <ul class="benefit-list">
+    <li>Advantage on all Intimidation checks. Other soldiers see something in you they cannot name.</li>
+    <li>Once per long rest: ask the DM <em>"What does Mars want from this situation?"</em> and receive an honest answer.</li>
+  </ul>
+
+  <div class="cost-block">
+    <p>In exchange: Mars may call on you. Once. At his choosing. You will know when it comes.</p>
+  </div>
+
+  <div class="rule"></div>
+</div>
+
+<div class="card">
+  <svg class="mars-symbol" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="20" r="10" fill="none" stroke="#c04020" stroke-width="2.5"/>
+    <line x1="16" y1="10" x2="24" y2="2" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="20" y1="2" x2="24" y2="2" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="24" y1="2" x2="24" y2="6" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+
+  <div class="card-title">The Mark of Mars</div>
+  <div class="card-sub">This character has stood before a god of war and lived.</div>
+
+  <div class="rule"></div>
+
+  <ul class="benefit-list">
+    <li>Advantage on all Intimidation checks. Other soldiers see something in you they cannot name.</li>
+    <li>Once per long rest: ask the DM <em>"What does Mars want from this situation?"</em> and receive an honest answer.</li>
+  </ul>
+
+  <div class="cost-block">
+    <p>In exchange: Mars may call on you. Once. At his choosing. You will know when it comes.</p>
+  </div>
+
+  <div class="rule"></div>
+</div>
+
+<div class="card">
+  <svg class="mars-symbol" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="20" r="10" fill="none" stroke="#c04020" stroke-width="2.5"/>
+    <line x1="16" y1="10" x2="24" y2="2" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="20" y1="2" x2="24" y2="2" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="24" y1="2" x2="24" y2="6" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+
+  <div class="card-title">The Mark of Mars</div>
+  <div class="card-sub">This character has stood before a god of war and lived.</div>
+
+  <div class="rule"></div>
+
+  <ul class="benefit-list">
+    <li>Advantage on all Intimidation checks. Other soldiers see something in you they cannot name.</li>
+    <li>Once per long rest: ask the DM <em>"What does Mars want from this situation?"</em> and receive an honest answer.</li>
+  </ul>
+
+  <div class="cost-block">
+    <p>In exchange: Mars may call on you. Once. At his choosing. You will know when it comes.</p>
+  </div>
+
+  <div class="rule"></div>
+</div>
+
+<div class="card">
+  <svg class="mars-symbol" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="20" r="10" fill="none" stroke="#c04020" stroke-width="2.5"/>
+    <line x1="16" y1="10" x2="24" y2="2" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="20" y1="2" x2="24" y2="2" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="24" y1="2" x2="24" y2="6" stroke="#c04020" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+
+  <div class="card-title">The Mark of Mars</div>
+  <div class="card-sub">This character has stood before a god of war and lived.</div>
+
+  <div class="rule"></div>
+
+  <ul class="benefit-list">
+    <li>Advantage on all Intimidation checks. Other soldiers see something in you they cannot name.</li>
+    <li>Once per long rest: ask the DM <em>"What does Mars want from this situation?"</em> and receive an honest answer.</li>
+  </ul>
+
+  <div class="cost-block">
+    <p>In exchange: Mars may call on you. Once. At his choosing. You will know when it comes.</p>
+  </div>
+
+  <div class="rule"></div>
+</div>
+
+<button class="print-btn" onclick="window.print()">Print &mdash; Save as PDF (4 cards)</button>
+
+</body>
+</html>

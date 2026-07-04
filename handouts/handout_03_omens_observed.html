@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handout 3: Omens Observed</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1e0e04;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .page {
+    width: 500px;
+    background: #c8a860;
+    background-image:
+      radial-gradient(ellipse at 20% 15%, rgba(120,80,10,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 85%, rgba(100,60,0,0.25) 0%, transparent 45%),
+      radial-gradient(ellipse at 60% 40%, rgba(180,140,50,0.15) 0%, transparent 60%),
+      repeating-linear-gradient(90deg, transparent, transparent 36px, rgba(0,0,0,0.02) 36px, rgba(0,0,0,0.02) 37px),
+      repeating-linear-gradient(0deg, transparent, transparent 26px, rgba(0,0,0,0.015) 26px, rgba(0,0,0,0.015) 27px);
+    padding: 44px 50px 52px;
+    position: relative;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.65), inset 0 0 50px rgba(100,60,0,0.15);
+    border-radius: 1px;
+  }
+
+  /* ink stamp smear top center */
+  .page::before {
+    content: '';
+    position: absolute;
+    top: 14px; left: 50%; transform: translateX(-50%);
+    width: 70px; height: 20px;
+    background: radial-gradient(ellipse, rgba(80,20,0,0.5) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  /* bottom right stain */
+  .page::after {
+    content: '';
+    position: absolute;
+    bottom: 20px; right: 20px;
+    width: 60px; height: 40px;
+    background: radial-gradient(ellipse, rgba(80,40,0,0.2) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .doc-title {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2c1000;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .doc-sub {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    color: #6a3a10;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #7a4010, transparent);
+    margin: 16px 0;
+  }
+
+  .preamble {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #3a1800;
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+
+  .omen-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .omen-list li {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 12px;
+    color: #2a1000;
+    line-height: 1.75;
+    padding: 5px 0 5px 18px;
+    border-bottom: 1px dashed rgba(100,50,0,0.2);
+    position: relative;
+  }
+
+  .omen-list li::before {
+    content: 'I';
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    color: #8a4010;
+    position: absolute;
+    left: 0;
+    top: 7px;
+  }
+
+  .omen-list li:nth-child(2)::before { content: 'II'; left: -2px; }
+  .omen-list li:nth-child(3)::before { content: 'III'; left: -5px; }
+  .omen-list li:nth-child(4)::before { content: 'IV'; left: -2px; }
+  .omen-list li:nth-child(5)::before { content: 'V'; left: 1px; }
+  .omen-list li:nth-child(6)::before { content: 'VI'; left: -2px; }
+
+  .conclusion {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #4a1a00;
+    line-height: 1.8;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-left: 3px solid rgba(100,40,0,0.4);
+    background: rgba(0,0,0,0.06);
+  }
+
+  .sig {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    color: #2c1000;
+    text-align: right;
+    margin-top: 18px;
+    line-height: 1.7;
+  }
+
+  .print-btn {
+    display: block;
+    margin: 28px auto 0;
+    padding: 9px 24px;
+    background: #5a1200;
+    color: #d4a050;
+    border: 1px solid #8a3010;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .print-btn:hover { background: #7a1a00; }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .page { box-shadow: none; border: 1px solid #8a6030; width: 100%; max-width: 500px; margin: 0 auto; }
+    .print-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="doc-title">Auspicia Adversa</div>
+  <div class="doc-sub">Cohortis XIV Legio &mdash; Officium Haruspicis</div>
+  <div class="rule"></div>
+
+  <div class="preamble">
+    The following signs have been observed and formally recorded in the seven days
+    preceding this report. Each is witnessed by at least two men. I append my
+    interpretation as required by my office.
+  </div>
+
+  <ul class="omen-list">
+    <li>All camp dogs died at midnight on the third day. No visible cause. No disease, no poison. The bodies were cold before dawn.</li>
+    <li>Sacrificial sheep presented black livers at both morning observations. The second animal was sourced from separate stock. The result was identical.</li>
+    <li>Ravens observed flying reversed pattern over the <em>principia</em> on two separate occasions. Not one bird. A group. In formation.</li>
+    <li>Springs in the northeast sector run discoloured. Iron contamination suspected. The source has not been located despite three inspections.</li>
+    <li>Night sentries on the east wall report shadows without bodies. Six independent reports across five nights. No two men knew the others had seen it.</li>
+    <li>Legionaries on north patrol report distant war-horns after midnight. No enemy force has been located. The horn was heard on three separate nights.</li>
+  </ul>
+
+  <div class="conclusion">
+    The augury is not favorable. I advise against major operations and all descent
+    into subterranean areas until a full expiation is performed and the omens
+    are re-examined. This report has been filed. What is done with it is the
+    Legate's decision, not mine.
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="sig">
+    Gaius Paterculus, <em>Haruspex</em><br>
+    In the consulship of Rufus and Quintillus<br>
+    Anno DCCCCXXVIII AUC
+  </div>
+</div>
+
+<button class="print-btn" onclick="window.print()">Print &mdash; Save as PDF</button>
+
+</body>
+</html>

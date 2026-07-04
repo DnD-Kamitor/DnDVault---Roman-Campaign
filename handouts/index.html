@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handouts &mdash; The Shadow of Mars</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0b08;
+    color: #c8a850;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    padding: 32px 20px 60px;
+  }
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: #c8a850;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #706030;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+
+  .tip {
+    text-align: center;
+    font-size: 10.5px;
+    color: #504820;
+    margin-bottom: 36px;
+    padding: 8px 20px;
+    border: 1px solid #2a2010;
+    background: #100e08;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    line-height: 1.6;
+  }
+
+  .tip strong { color: #a08030; }
+
+  /* session group */
+  .session-block {
+    max-width: 860px;
+    margin: 0 auto 40px;
+  }
+
+  .session-head {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #c8a850;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 8px 0 8px 0;
+    border-bottom: 1px solid #3a3020;
+    margin-bottom: 16px;
+  }
+
+  .session-num {
+    display: inline-block;
+    background: #1a1510;
+    color: #c8a850;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-right: 8px;
+  }
+
+  /* grid of cards */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+  }
+
+  .hcard {
+    background: #100e0a;
+    border: 1px solid #2a2018;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.15s;
+  }
+
+  .hcard:hover { border-color: #5a4820; }
+
+  .hcard-header {
+    padding: 10px 14px 8px;
+    border-bottom: 1px solid #201c14;
+  }
+
+  .hcard-num {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    color: #6a5020;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .hcard-title {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #c8a850;
+    letter-spacing: 0.04em;
+  }
+
+  .hcard-body {
+    padding: 10px 14px;
+    flex: 1;
+  }
+
+  .hcard-when {
+    font-size: 10.5px;
+    color: #706030;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+
+  .hcard-style {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+  }
+
+  .style-wax { background: #3a1408; color: #c08050; border: 1px solid #6a2810; }
+  .style-stone { background: #1a1a18; color: #a0a090; border: 1px solid #3a3a38; }
+  .style-papyrus { background: #2a1e08; color: #c0a050; border: 1px solid #5a4010; }
+  .style-parchment { background: #2a1a08; color: #b09040; border: 1px solid #5a4010; }
+  .style-bark { background: #160c06; color: #a06030; border: 1px solid #4a2010; }
+  .style-strip { background: #221808; color: #b09040; border: 1px solid #5a3808; }
+  .style-blood { background: #1a0604; color: #c04020; border: 1px solid #6a1808; }
+  .style-gold { background: #1a1408; color: #c0a020; border: 1px solid #6a5010; }
+  .style-map { background: #0e1408; color: #80a040; border: 1px solid #3a5018; }
+
+  .hcard-footer {
+    padding: 8px 14px 10px;
+    border-top: 1px solid #201c14;
+    display: flex;
+    gap: 8px;
+  }
+
+  .btn-open {
+    flex: 1;
+    padding: 5px 10px;
+    background: #1a1510;
+    color: #8ab0d8;
+    border: 1px solid #2a3a50;
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+  }
+
+  .btn-open:hover { background: #242018; color: #c8e0ff; }
+
+  .btn-print {
+    flex: 1;
+    padding: 5px 10px;
+    background: #180c04;
+    color: #a07030;
+    border: 1px solid #3a2010;
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+  }
+
+  .btn-print:hover { background: #241408; color: #c09050; }
+
+  @media print {
+    body { background: white; color: black; }
+    .btn-open, .btn-print { display: none; }
+    .hcard { border: 1px solid #ccc; }
+    .hcard-title, .session-head, h1 { color: black; }
+    .hcard-when { color: #666; }
+  }
+</style>
+</head>
+<body>
+
+<h1>The Shadow of Mars &mdash; Handouts</h1>
+<div class="subtitle">All 11 player-facing props &mdash; one per page when printed</div>
+<div class="tip">
+  <strong>How to print:</strong> Click "Open" to view a handout in a new tab, then use your browser's
+  <strong>Print</strong> menu (or Ctrl+P / Cmd+P) and select <strong>"Save as PDF"</strong>.
+  Each handout is one page. Print double-sided if you want a blank back.
+</div>
+
+<!-- SESSION 0 / PRE-SESSION -->
+<div class="session-block">
+  <div class="session-head"><span class="session-num">Pre-Session</span> Setup &amp; Omens</div>
+  <div class="cards-grid">
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 3</div>
+        <div class="hcard-title">Omens Observed</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-papyrus">Papyrus &mdash; Official Report</span>
+        <div class="hcard-when">Give at session start or Session 0. The haruspex's formal record of seven days of bad omens — gives players an immediate sense of the world's wrongness before they descend.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_03_omens_observed.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_03_omens_observed.html" target="_blank" onclick="return openPrint(this)">Print</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SESSION 1 -->
+<div class="session-block">
+  <div class="session-head"><span class="session-num">Session 1</span> Blood and Omens</div>
+  <div class="cards-grid">
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 1</div>
+        <div class="hcard-title">Legate's Orders</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-wax">Wax Tablet &mdash; Military Order</span>
+        <div class="hcard-when">Scene 1. Corvinus summons the party and hands them their orders. Latin and English together — the immediacy of a real command.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_01_legates_orders.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_01_legates_orders.html" target="_blank">Print</a>
+      </div>
+    </div>
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 2</div>
+        <div class="hcard-title">The Vault Inscription</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-stone">Stone Carving &mdash; Elder Futhark</span>
+        <div class="hcard-when">Scene 2. Party reaches the altar stone at the base of the shaft. Five runes with meanings, then the inscription, then the scratched warning at the bottom.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_02_vault_inscription.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_02_vault_inscription.html" target="_blank">Print</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SESSION 2 -->
+<div class="session-block">
+  <div class="session-head"><span class="session-num">Session 2</span> The Chieftain's Price</div>
+  <div class="cards-grid">
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 4</div>
+        <div class="hcard-title">Tribune's Sealed Orders</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-papyrus">Papyrus &mdash; Senate Document</span>
+        <div class="hcard-when">Scene 1. Tribune Lucius produces his credentials. SPQR eagle, Senate authority, wax seal. Legally binding — suspends Corvinus's command.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_04_tribunes_orders.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_04_tribunes_orders.html" target="_blank">Print</a>
+      </div>
+    </div>
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 5</div>
+        <div class="hcard-title">The Encoded Letter</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-parchment">Parchment &mdash; Cipher Text</span>
+        <div class="hcard-when">Scene 2. Found in Sextus's effects (DC 14 Investigation). Caesar cipher shift +3. Signed JFE. Players must crack the code themselves. No hints on the prop.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_05_encoded_letter.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_05_encoded_letter.html" target="_blank">Print</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SESSION 3 -->
+<div class="session-block">
+  <div class="session-head"><span class="session-num">Session 3</span> Through the Dark Forest</div>
+  <div class="cards-grid">
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 6</div>
+        <div class="hcard-title">Thusnelda's Map</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-map">Rough Parchment &mdash; Hand-Drawn Map</span>
+        <div class="hcard-when">Thusnelda agrees to guide the party. Three rivers, ford marked, standing stones with runes, crossed spears over the grove. River 4 is smudged — deliberately.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_06_thuseldas_map.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_06_thuseldas_map.html" target="_blank">Print</a>
+      </div>
+    </div>
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 7</div>
+        <div class="hcard-title">The Bloody Message</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-bark">Bark / Blood &mdash; Carved Warning</span>
+        <div class="hcard-when">Party finds it carved into a tree at camp's edge. The Latin is deliberate. The second line was barely controlled. Someone carved it against their will.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_07_bloody_message.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_07_bloody_message.html" target="_blank">Print</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SESSION 4 -->
+<div class="session-block">
+  <div class="session-head"><span class="session-num">Session 4</span> The God's Demand</div>
+  <div class="cards-grid">
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 8</div>
+        <div class="hcard-title">Raven Order to the Saboteurs</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-strip">Narrow Strip &mdash; Raven Message</span>
+        <div class="hcard-when">Party intercepts a raven (DC 14 Perception). Narrow strip of parchment, black thread. Four orders from G.C.B. — burn granary, kill augur, collapse the stair, no witnesses.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_08_raven_order.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_08_raven_order.html" target="_blank">Print</a>
+      </div>
+    </div>
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 9</div>
+        <div class="hcard-title">Siege Day Order of Battle</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-papyrus">Papyrus &mdash; Military Briefing</span>
+        <div class="hcard-when">Scene 2. Planning the spear procession. Trumpet codes, watch rotations, escort route, resource status. The party's tactical board for the siege.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_09_siege_orders.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_09_siege_orders.html" target="_blank">Print</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SESSION 5 -->
+<div class="session-block">
+  <div class="session-head"><span class="session-num">Session 5</span> The Wrath of Mars</div>
+  <div class="cards-grid">
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 10</div>
+        <div class="hcard-title">The Mark of Mars</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-blood">Blood on Stone &mdash; Calling Card</span>
+        <div class="hcard-when">Campaign end. Give one to each player. Print 4 copies from one page. Advantage on Intimidation. Ask Mars what he wants once per long rest. He will call on them. Once.</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_10_mark_of_mars.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_10_mark_of_mars.html" target="_blank">Print (4 cards)</a>
+      </div>
+    </div>
+
+    <div class="hcard">
+      <div class="hcard-header">
+        <div class="hcard-num">Handout 11</div>
+        <div class="hcard-title">Arena Weapon Cards</div>
+      </div>
+      <div class="hcard-body">
+        <span class="hcard-style style-gold">Index Cards &mdash; Legendary Weapons</span>
+        <div class="hcard-when">Scene 2. Place face-down. Flip each when party can examine it. Gladius of Achilles (+2, adv atk, vuln piercing), Shield of Horatius (+3 AC), Spear of Leonidas (reach + auto-stabilize).</div>
+      </div>
+      <div class="hcard-footer">
+        <a class="btn-open" href="handout_11_arena_weapon_cards.html" target="_blank">Open</a>
+        <a class="btn-print" href="handout_11_arena_weapon_cards.html" target="_blank">Print</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openPrint(el) {
+  var w = window.open(el.href, '_blank');
+  w.addEventListener('load', function() { w.print(); });
+  return false;
+}
+</script>
+
+</body>
+</html>

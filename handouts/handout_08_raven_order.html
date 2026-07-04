@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handout 8: Raven Order to the Saboteurs</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Caveat:wght@400;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #060402;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  /* narrow strip of parchment — message capsule from raven */
+  .strip {
+    width: 340px;
+    background: #c4a258;
+    background-image:
+      radial-gradient(ellipse at 20% 20%, rgba(100,60,0,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(80,40,0,0.35) 0%, transparent 45%),
+      /* soot smear at top */
+      radial-gradient(ellipse at 50% 5%, rgba(20,10,0,0.55) 0%, transparent 40%),
+      repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(0,0,0,0.018) 30px, rgba(0,0,0,0.018) 31px);
+    padding: 24px 28px 28px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7), inset 0 0 30px rgba(80,40,0,0.15);
+    /* narrow strip proportions */
+    border-radius: 1px;
+  }
+
+  /* top edge — thread was tied here */
+  .strip::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%; transform: translateX(-50%);
+    width: 2px; height: 8px;
+    background: rgba(60,30,0,0.6);
+  }
+
+  .strip-header {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #1e0c00;
+    text-align: center;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .strip-sub {
+    font-family: 'Caveat', cursive;
+    font-size: 13px;
+    color: #4a2800;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 14px;
+  }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #7a4010, transparent);
+    margin: 10px 0 12px;
+  }
+
+  .order-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .order-list li {
+    font-family: 'Caveat', cursive;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a0800;
+    line-height: 1.6;
+    padding: 4px 0 4px 22px;
+    position: relative;
+    border-bottom: 1px dashed rgba(80,40,0,0.2);
+  }
+
+  .order-list li::before {
+    content: '—';
+    position: absolute;
+    left: 4px;
+    color: #8a4010;
+    font-size: 14px;
+  }
+
+  .sig-line {
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a0800;
+    text-align: right;
+    margin-top: 14px;
+    letter-spacing: 0.06em;
+  }
+
+  .print-btn {
+    display: block;
+    margin: 28px auto 0;
+    padding: 9px 24px;
+    background: #3a1200;
+    color: #c8900a;
+    border: 1px solid #6a3008;
+    font-family: 'Caveat', cursive;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .print-btn:hover { background: #5a2000; }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .strip { box-shadow: none; border: 1px solid #8a6030; width: 100%; max-width: 340px; margin: 0 auto; }
+    .print-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="strip">
+  <div class="strip-header">Orders of G. Cassius Brutus</div>
+  <div class="strip-sub">To our friends within Vindolanda:</div>
+  <div class="rule"></div>
+
+  <ul class="order-list">
+    <li>Burn the granary before dusk.</li>
+    <li>Kill the augur if opportunity presents.</li>
+    <li>If the spear moves, collapse the stair.</li>
+    <li>Leave no witnesses. The frontier must fall quiet.</li>
+  </ul>
+
+  <div class="sig-line">G.C.B.</div>
+</div>
+
+<button class="print-btn" onclick="window.print()">Print &mdash; Save as PDF</button>
+
+</body>
+</html>

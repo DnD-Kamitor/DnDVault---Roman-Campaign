@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handout 9: Siege Day Order of Battle</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1e0e04;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .page {
+    width: 540px;
+    background: #caa860;
+    background-image:
+      radial-gradient(ellipse at 15% 20%, rgba(120,80,10,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 85% 80%, rgba(100,60,0,0.25) 0%, transparent 45%),
+      repeating-linear-gradient(90deg, transparent, transparent 38px, rgba(0,0,0,0.018) 38px, rgba(0,0,0,0.018) 39px),
+      repeating-linear-gradient(0deg, transparent, transparent 28px, rgba(0,0,0,0.012) 28px, rgba(0,0,0,0.012) 29px);
+    padding: 44px 50px 52px;
+    position: relative;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.65), inset 0 0 50px rgba(100,60,0,0.15);
+    border-radius: 1px;
+  }
+
+  .page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 8px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), transparent);
+    border-radius: 1px 1px 0 0;
+  }
+
+  .doc-title {
+    font-family: 'Cinzel', serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #2c1000;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .doc-sub {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    color: #6a3a10;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #7a4010, transparent);
+    margin: 12px 0;
+  }
+
+  .rule-bold {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #5a2a08, #2a1000, #5a2a08, transparent);
+    margin: 14px 0;
+  }
+
+  .section-head {
+    font-family: 'Cinzel', serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #2c1000;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 28px;
+  }
+
+  .col-block { margin-bottom: 14px; }
+
+  table.codes {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  table.codes td {
+    padding: 4px 6px;
+    color: #2a1000;
+    font-family: 'IM Fell English', Georgia, serif;
+    border-bottom: 1px solid rgba(80,40,0,0.15);
+    line-height: 1.5;
+  }
+
+  table.codes td:first-child {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #7a3a00;
+    white-space: nowrap;
+    width: 36%;
+  }
+
+  .route-list {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11.5px;
+    font-style: italic;
+    color: #2a1000;
+    line-height: 1.9;
+    letter-spacing: 0.02em;
+  }
+
+  .route-arrow {
+    color: #7a4010;
+    font-style: normal;
+  }
+
+  .status-list { list-style: none; padding: 0; }
+
+  .status-list li {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    color: #2a1000;
+    padding: 3px 0 3px 14px;
+    border-bottom: 1px dotted rgba(80,40,0,0.2);
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .status-list li::before {
+    content: '·';
+    position: absolute;
+    left: 2px;
+    color: #8a4010;
+    font-size: 18px;
+    line-height: 1;
+    top: 2px;
+  }
+
+  .note-box {
+    background: rgba(0,0,0,0.07);
+    border-left: 3px solid rgba(100,40,0,0.5);
+    padding: 10px 12px;
+    margin-top: 12px;
+  }
+
+  .note-box p {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    color: #2a1000;
+    line-height: 1.8;
+  }
+
+  .note-box p + p { margin-top: 5px; }
+
+  .sig {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    color: #2c1000;
+    text-align: right;
+    margin-top: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+  }
+
+  .print-btn {
+    display: block;
+    margin: 28px auto 0;
+    padding: 9px 24px;
+    background: #5a1200;
+    color: #d4a050;
+    border: 1px solid #8a3010;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .print-btn:hover { background: #7a1a00; }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .page { box-shadow: none; border: 1px solid #8a6030; width: 100%; max-width: 540px; margin: 0 auto; }
+    .print-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="doc-title">Fort Vindolanda &mdash; Siege Day Orders</div>
+  <div class="doc-sub">Issued by Centurion Varro &mdash; Verified by Cassia Liviana</div>
+
+  <div class="rule-bold"></div>
+
+  <div class="two-col">
+    <div class="col-block">
+      <div class="section-head">Trumpet Codes</div>
+      <table class="codes">
+        <tr><td>Two short</td><td>Fire in the vicus</td></tr>
+        <tr><td>Long + short</td><td>Gate breach</td></tr>
+        <tr><td>Six rapid</td><td>Shrine summons (Mars' demand)</td></tr>
+      </table>
+    </div>
+    <div class="col-block">
+      <div class="section-head">Resource Status</div>
+      <ul class="status-list">
+        <li>Grain: 9 days if rations hold, 6 if granary burns</li>
+        <li>Water: contaminated at north gate well — boil before use</li>
+        <li>Civilians sheltered in vicus shrine (Mercury)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="section-head">Watch Rotations</div>
+  <table class="codes" style="margin-bottom:14px">
+    <tr><td>North wall</td><td>Contubernia I–III (veterans)</td></tr>
+    <tr><td>South gate</td><td>Auxiliaries under Optio Felicitus</td></tr>
+    <tr><td>Workshop cordon</td><td>Faber squad — on alert for saboteurs</td></tr>
+  </table>
+
+  <div class="rule"></div>
+
+  <div class="section-head">Escort Route (Sealed)</div>
+  <div class="route-list">
+    Principia
+    <span class="route-arrow"> &rsaquo; </span>
+    Hidden stair
+    <span class="route-arrow"> &rsaquo; </span>
+    Sunken armory
+    <span class="route-arrow"> &rsaquo; </span>
+    Choking hall
+    <span class="route-arrow"> &rsaquo; </span>
+    Elder stair
+  </div>
+
+  <div class="note-box" style="margin-top:14px">
+    <p><strong>Notes from Cassia:</strong></p>
+    <p>Three volunteers must kneel when the stair opens. I require witnesses.</p>
+    <p>Vercingetorix's runners have offered diversion at the south ditch at dusk. Do not refuse it.</p>
+    <p>Tribune Lucius requests to accompany the escort. His motive is unclear. Decision deferred to the party.</p>
+  </div>
+
+  <div class="rule"></div>
+  <div class="sig">
+    Centurio Gaius Varro &mdash; Cohors XIV<br>
+    Confirmed: Cassia Liviana, <em>Auguri Assistens</em>
+  </div>
+</div>
+
+<button class="print-btn" onclick="window.print()">Print &mdash; Save as PDF</button>
+
+</body>
+</html>

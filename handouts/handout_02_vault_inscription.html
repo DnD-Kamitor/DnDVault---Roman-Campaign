@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handout 2: The Vault Inscription</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .stone {
+    width: 520px;
+    background: #2a2a28;
+    background-image:
+      radial-gradient(ellipse at 25% 20%, rgba(80,80,70,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 75% 80%, rgba(40,40,35,0.5) 0%, transparent 45%),
+      /* stone texture */
+      repeating-linear-gradient(87deg, transparent, transparent 14px, rgba(0,0,0,0.06) 14px, rgba(0,0,0,0.06) 15px),
+      repeating-linear-gradient(3deg, transparent, transparent 20px, rgba(255,255,255,0.02) 20px, rgba(255,255,255,0.02) 21px);
+    border: 3px solid #1a1a18;
+    border-radius: 4px;
+    padding: 48px 52px;
+    box-shadow:
+      0 10px 40px rgba(0,0,0,0.9),
+      inset 0 2px 8px rgba(0,0,0,0.6),
+      inset 0 -1px 4px rgba(255,255,255,0.03);
+    position: relative;
+  }
+
+  /* chip at top-right corner */
+  .stone::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 0; height: 0;
+    border-top: 18px solid #0a0a0a;
+    border-left: 24px solid transparent;
+  }
+
+  /* weathering crack */
+  .crack {
+    position: absolute;
+    top: 80px; left: 30px;
+    width: 1px; height: 120px;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.6) 60%, transparent);
+    transform: rotate(3deg);
+  }
+
+  .rune-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+
+  .rune-cell {
+    text-align: center;
+    flex: 1;
+    min-width: 60px;
+  }
+
+  .rune-glyph {
+    font-size: 38px;
+    color: #d4c8a0;
+    line-height: 1;
+    display: block;
+    /* carved/chiselled look */
+    text-shadow:
+      1px 1px 0 rgba(0,0,0,0.8),
+      -1px -1px 0 rgba(255,255,255,0.06);
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.7));
+  }
+
+  .rune-name {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: #8a8070;
+    text-transform: uppercase;
+    margin-top: 6px;
+    display: block;
+  }
+
+  .rune-meaning {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 10px;
+    font-style: italic;
+    color: #6a6058;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #4a4a42, transparent);
+    margin: 22px 0;
+  }
+
+  .inscription {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    color: #c8bc98;
+    line-height: 1.95;
+    text-align: center;
+    letter-spacing: 0.04em;
+    /* carved into stone */
+    text-shadow:
+      1px 1px 0 rgba(0,0,0,0.8),
+      -1px -1px 0 rgba(255,255,255,0.04);
+  }
+
+  .inscription em {
+    font-style: italic;
+    color: #a09880;
+  }
+
+  .scratched {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #c84040;
+    text-align: center;
+    margin-top: 24px;
+    padding: 14px 0;
+    border-top: 1px solid rgba(200,64,64,0.3);
+    letter-spacing: 0.06em;
+    /* looks scratched in haste */
+    text-shadow: 0 0 8px rgba(200,64,64,0.3);
+  }
+
+  .print-btn {
+    display: block;
+    margin: 28px auto 0;
+    padding: 9px 24px;
+    background: #1a1a18;
+    color: #8a8070;
+    border: 1px solid #3a3a32;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+
+  .print-btn:hover { background: #242420; color: #c8bc98; }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .stone {
+      box-shadow: none;
+      border: 2px solid #666;
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .stone::after { display: none; }
+    .print-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stone">
+  <div class="crack"></div>
+
+  <div class="rune-row">
+    <div class="rune-cell">
+      <span class="rune-glyph">&#x16CF;</span>
+      <span class="rune-name">Tiwaz</span>
+      <span class="rune-meaning">War</span>
+    </div>
+    <div class="rune-cell">
+      <span class="rune-glyph">&#x16BA;</span>
+      <span class="rune-name">Hagalaz</span>
+      <span class="rune-meaning">Disruption</span>
+    </div>
+    <div class="rune-cell">
+      <span class="rune-glyph">&#x16BE;</span>
+      <span class="rune-name">Naudhiz</span>
+      <span class="rune-meaning">Need</span>
+    </div>
+    <div class="rune-cell">
+      <span class="rune-glyph">&#x16C1;</span>
+      <span class="rune-name">Isa</span>
+      <span class="rune-meaning">Stillness</span>
+    </div>
+    <div class="rune-cell">
+      <span class="rune-glyph">&#x16DF;</span>
+      <span class="rune-name">Othalan</span>
+      <span class="rune-meaning">Ancestral Land</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="inscription">
+    Here lies the God-Killer,<br>
+    the Spear of Broken Oaths,<br>
+    sealed by the blood of heroes.<br>
+    <em>May it never taste sunlight again.</em>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="inscription">
+    Forged in vengeance.<br>
+    Quenched in divine blood.<br>
+    The son of Mars fell here.<br>
+    <em>His father's wrath lingers still.</em>
+  </div>
+
+  <div class="scratched">DO NOT WAKE WHAT SLEEPS HERE.</div>
+</div>
+
+<button class="print-btn" onclick="window.print()">Print &mdash; Save as PDF</button>
+
+</body>
+</html>
