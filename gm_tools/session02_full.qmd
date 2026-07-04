@@ -1,0 +1,588 @@
+---
+title: "Session 02: The Tribune's Gambit"
+subtitle: "Full session builder — GM eyes only"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: darkly
+---
+
+# Quick Reference Card
+
+## NPCs This Session
+
+| Name | Location | Wants | Fears | Lying About |
+|---|---|---|---|---|
+| **Legate Corvinus** | Principia / fort HQ | The spear in his hands before Rome arrives | His debt to Brutus; the Tribune owns him | How much control he actually has |
+| **Augur Cassia** | Fort shrine | The spear destroyed before anyone claims it | What she is — Mars's daughter | Her certainty; she's more afraid than she shows |
+| **Centurion Varro** | Walls / spear storage | His soldiers alive, his retirement intact | Burying more men because of political games | What he knows about Corvinus |
+| **Tribune Lucius** | Principia (arrives Scene 1) | Mission complete: spear destroyed, no fingerprints | Being discovered as ordinary; his father's contempt | Everything — including which parts he half-believes |
+| **Vercingetorix** | 2 miles north (arrives Scene 3) | The God-Killer recovered or destroyed | His tribe watching him die without closing the wound | That he is dying |
+
+## Handout Delivery Order
+
+| # | Handout | When | How |
+|---|---|---|---|
+| 4 | Tribune's Sealed Orders (official) | Scene 1 — Tribune formally presents credentials | Folded in thirds, sealed edge down. Let a player break the seal. |
+| 5 | Encoded Letter | Scene 2 — Investigation DC 14 in Tribune's quarters | Hand it folded. Different paper and handwriting. Never read aloud. |
+
+*Handouts 1–3 (and 12 if found in Session 1) already in party possession. Handouts 6–11 deploy Sessions 3–5.*
+
+---
+
+# Before the Session
+
+## Story So Far
+
+Session 1 ended in the vault beneath Fort Vindolanda. The party retrieved the Spear of Mars from ruins that should not have existed. They fought things that should not still be walking. Someone may have touched the spear. Corruption may have taken hold — even if no one is admitting it.
+
+They came up out of the mine into the cold night air.
+
+And Corvinus was waiting.
+
+## Why Corvinus Was Angry
+
+He was not angry at what they did. He was angry at what the spear's existence now means.
+
+Three days ago, a fast rider came through from the south. Senate authorization. Tribune Lucius Valerius Maximus, arriving with Praetorian escort to claim whatever was found at Vindolanda. Corvinus received this letter the same morning the party descended into the vault.
+
+He has been waiting at the mine entrance for hours. He has had three hours to understand exactly how badly his timeline has collapsed.
+
+He wanted the spear secured, documented in his after-action report, and en route to Rome under his seal before anyone in the Senate knew it existed. That plan is dead. The Tribune arrives in three days. Everything the party just brought up has to be hidden, moved, or explained — and Corvinus does not know yet which.
+
+He is not angry at the party. He is angry at the situation, and the party is the nearest object.
+
+**What he said to them, the moment they emerged:**
+
+> *"Inside. Now. All of you. Not a word to anyone until I say otherwise."*
+
+He did not look at the spear. He looked at whoever was holding it, and then he looked away.
+
+## Current Player State (Confirm Before Running)
+
+- [ ] Who (if anyone) touched or attuned to the spear in Session 1?
+- [ ] Current corruption levels per player (note who rolled highest)
+- [ ] Did anyone establish a relationship with Aelius Rufus (the stabilized soldier)?
+- [ ] What did the party do with the OTHALAN contract token found in the vault?
+- [ ] Did anyone die, or take a significant wound that affects this session?
+
+## Truth Behind This Session
+
+**The Tribune is Brutus's instrument, not the Senate's.** His sealed orders are real. His mission is not what they say. He was sent to ensure the spear never reaches Rome — specifically to destroy it in the field, quietly, in a way that gives Brutus plausible deniability and removes the one artifact that could legitimize a divine military mandate outside the Senate's control.
+
+**Vercingetorix knows this is happening.** Not Brutus specifically — but he felt the spear wake up when it was retrieved. His scouts have been watching the fort. The Tribune's arrival is an opportunity, not a coincidence: Roman authority is about to fracture, and Vercingetorix needs that gap.
+
+**The Sextus murder is the first thread.** Decanus Quintus Flavius — a 12-year veteran, bribed into Brutus's network before this campaign began — killed Sextus when Sextus caught him tampering with the spear's storage chains at midnight. He carved ROMA CADIT to misdirect. He is leaving with the Tribune's entourage. The party may not solve this tonight. The clues are here.
+
+**Corvinus and the Tribune are both Brutus's creatures who do not know about each other.** Corvinus owes Brutus money — the kind that means Brutus owns him. The Tribune is Brutus's illegitimate son, performing confidence his entire life to earn approval he cannot inherit. Both men are trying to manage Brutus's agenda. Neither is willing to admit it. This makes every interaction between them a performance of authority neither fully holds.
+
+## Session Map
+
+Scenes run in the fort and on the fort's walls. No travel this session.
+
+| Scene | Location | Primary map |
+|---|---|---|
+| 0: Cold Open | North gate, dawn | `CastleWall` |
+| 1: Tribune Arrives | Principia / main gate | `BridgeCheckpoint` / principia interior |
+| 2: Investigation Window | Tribune's quarters, shrine, vicus | Indoor / vicus layout |
+| 3: The Raid | Walls, west gate, courtyard | Full fort perimeter |
+| 4: The Accusation | Principia courtyard | Principia exterior |
+
+---
+
+# Scene 1: The Morning After
+
+## Scene Purpose
+
+Bridge from Session 1's vault exit to Session 2's main conflict. Three things happen fast, before the Tribune arrives: the party debriefs Corvinus, Sextus is found dead, and the Tribune's horn sounds from the south road. No breathing room. The pressure cooker starts now.
+
+## Player Objective
+
+Understand what Corvinus wants, find out what happened to Sextus, and have some kind of plan before the Tribune walks through the gate.
+
+## Key Reveal
+
+Sextus was killed by someone inside the walls. The carving was staged. The murderer is still here — and leaves with the Tribune.
+
+## Key Mechanic
+
+**Investigation window with a closing door.** The party has roughly 90 minutes of game time (one morning) to investigate Sextus's death before the Tribune's arrival locks down the fort and changes who has authority over everything. Every scene they run before the Tribune arrives is time they did not spend investigating. Make this felt.
+
+---
+
+## Beat 1: Debrief at Dawn
+
+*Corvinus receives them in the principia. No witnesses. The spear is on the table between them.*
+
+He does not ask if they're hurt. He asks:
+
+> *"Who touched it? Who spoke to it? What did it say?"*
+
+If they answer honestly: he nods, makes no comment. He is filing information.
+If they deflect: *"I am not asking for your comfort. I am asking because I need to know what we are managing."*
+
+He tells them two things:
+
+1. **The Tribune arrives today.** Three long notes from the south gate horn. Possibly within the hour.
+2. **The spear goes into sealed storage.** Not his quarters. Not the shrine. The old grain vault, behind the armory. He wants it locked and the only key on Varro's person, not his.
+
+**Intention:** He is moving the spear somewhere the Tribune won't immediately find it. This is not legal. He knows that.
+
+**DM note:** If the party challenges this — "You can't just hide it from Senate authority" — Corvinus looks at them for a long moment.
+
+> *"The Tribune's orders say to secure the artifact. It will be secured. The order does not specify where."*
+
+He is not wrong, technically. He is absolutely wrong in spirit.
+
+---
+
+## Beat 2 — THE MOMENT: Sextus Is Dead
+
+*Before the debrief concludes, the door opens. A soldier — young, first posting, shaking — reports: Sextus is down at the north gate. Throat open. No tracks. No struggle. And something carved in the wood.*
+
+This is the moment the session's real shape becomes visible. There is a murderer inside the fort. The Tribune is horn-calls away. And nobody has slept.
+
+**Read Aloud:**
+
+> *Dawn. The cold comes through the principia door with the soldier who opens it.*
+>
+> *"Centurion Varro sends his respects, sir. Sextus at the north gate — his throat is — he's dead, sir. Nobody saw anything. And there's writing. In the wood. ROMA CADIT."*
+>
+> *Silence.*
+>
+> *Outside, beyond the south palisade — three long notes of a trumpet. The signal for visitors on the road.*
+>
+> *Corvinus looks at the table. Then at the door. Then at you.*
+>
+> *"Go look at the body. Tell me what you find. Do it fast."*
+
+**Direction for DM:** Corvinus does not go to the body himself. He stays in the principia. He is managing the Tribune's arrival, which means he needs to be there when the riders come through the south gate. He is trusting the party with the investigation because he has no one else he can trust right now. Do not undersell this: this may be the only time in the campaign that Corvinus genuinely needs something from them rather than commanding it.
+
+---
+
+## Beat 3: The Tribune Walks In
+
+*The party has however long it takes them to examine the body and ask two or three questions. Then the south gate opens.*
+
+Six Praetorians on horses. Behind them: Tribune Lucius Valerius Maximus, purple-trimmed cloak, rings on every finger, surveying Fort Vindolanda the way a merchant surveys damaged goods.
+
+> *"Fort Vindolanda." He says the name as if tasting something mildly unpleasant. "Smaller than I expected. And considerably less tidy."*
+>
+> *He looks at the party. He looks at the north gate cluster. He looks at whoever is holding the spear, if anyone is.*
+>
+> *"I'll need the artifact secured in my quarters by the second hour. I'll need the Legate removed from command by the third. And I'll need whoever is responsible for" — he gestures at the fort in general — "this, to explain to me why it took three days for Rome to hear about a divine weapon on my frontier."*
+>
+> *He stops and looks at the party directly for the first time.*
+>
+> *"You must be the ones who retrieved it. Good. You're promoted. You work for me now."*
+
+Scene ends. Investigation window opens.
+
+---
+
+## Environment
+
+**Five Senses:**
+
+| Sense | Details |
+|---|---|
+| Sight | Grey pre-dawn; torch smoke horizontal in wind; Sextus's body positioned facing the wall he was watching |
+| Sound | Dripping water from the gate overhang; a soldier crying quietly behind a barrel; trumpet notes from the south road |
+| Smell | Cold mud, blood, the particular smell of a fort at night (oil, leather, unwashed wool) |
+| Touch | Frost on the palisade wood; the carved letters are rough under fingertips, fresh — no weathering |
+| Taste | Every character with a corruption level ≥1: faint metal taste in the mouth since the vault. Mention this quietly to those players only. |
+
+**Hidden Details (reward active investigation):**
+
+- Sextus's blade is drawn. He had time to react. He chose not to.
+- The boot print in the mud beneath the carving shows inside-heel wear — a specific gait.
+- The carving tool strokes are angular, not Roman cursive — Germanic inscriptional technique.
+- The birds near the north treeline have been silent since before the dawn watch. The silence started two hours before the body was found.
+
+---
+
+## Character-Specific Knowledge
+
+| Role / Background | What they notice without a check |
+|---|---|
+| Explorator / Scout | The boot print approach path: came from inside the fort, left toward the stables. Not from the gate. |
+| Medicus / Medicine proficiency | Sextus had no defensive wounds. One stroke, left-to-right, from behind. Trained work. |
+| Haruspex / Religion proficiency | The ROMA CADIT carving uses runic stroke technique. Someone taught a Roman to carve like a Germanic. |
+| Frumentarius | This has the shape of an intelligence operation, not a Germanic attack. The ROMA CADIT is misdirection. |
+| Any character on night watch | DC 11 Nature (passive): the birds near the treeline went silent two hours ago. Something large was moving into position. |
+
+---
+
+## NPC Appearance
+
+**Centurion Varro** crouches beside the body. He has already read the scene. He doesn't tell the party what he sees — he waits to see if they find it.
+
+> *"Sextus had the north gate rotation memorized to the hour. Anyone who wanted to know when he'd be alone had to know the schedule or ask someone who did."*
+
+He will share what he knows (40 men know the rotation; one man asked for transfer papers this morning, fast — "Quintus something, twelve-year man") if the party treats him as a peer and asks directly. He will not volunteer it.
+
+**Augur Cassia** is not at the body. She is in the shrine, running auguries she started at midnight. If the party goes to her: she is surrounded by omen tablets, barely sleeping. She has had three new visions since the spear was retrieved.
+
+> *"I know about the carving. The letters are right but the hand is wrong. Someone who learned Germanic inscription did that. Not a tribesman."*
+
+She will tell them about the spear's true history if asked. She will also mention, almost as an afterthought, that Cassia needs bog valerian — five stalks, grows in wetland forest clearings north of the road they'll take in Session 3. She does not ask formally. She mentions it like a supply problem she has learned to work around.
+
+---
+
+## Three Clues: The Sextus Murder
+
+*The party does not need to solve this in Session 2. The clues are here.*
+
+**Clue 1 — The Wound (Medicine DC 13, active):**
+Precise. One stroke. Left-to-right, from behind. No defensive wounds. Sextus was facing forward — he let the attacker close because he did not read them as a threat. He knew the person who killed him.
+*5 above the DC:* The blade angle indicates someone shorter than Sextus, right-handed. The wound was practiced, not panicked.
+
+**Clue 2 — The Boot Print (Survival DC 12 or Investigation DC 14, active):**
+Survival: The approach came from inside the fort, left toward the stables. The boot print is confirmation.
+Investigation: Hobnail, size small, inside-heel heavily worn — the wearer turns their foot slightly when they walk. This is a specific gait.
+*If the party watches the Tribune's entourage depart later:* Perception DC 15 (active, watching specifically) to notice Decanus Quintus walking exactly like this.
+
+**Clue 3 — Varro Knows Something (no check, ask directly):**
+> *"One man asked for transfer papers this morning. Fast. I've been trying to remember his name. Quintus something. Twelve-year man. Quiet."*
+
+Varro has no proof. He has a feeling. That is as far as he goes unprompted.
+
+---
+
+## If They Skip This Scene
+
+If the party ignores the body entirely and goes straight to the Tribune: the investigation window closes when the Tribune locks down the fort at the second hour. The murder becomes a cold case. Quintus Flavius leaves with the Tribune's entourage undetected.
+
+The murder is not required for the session to function. But the *Frumentarius* advancement trigger (exposing Quintus before he escapes) is only available here, and the ROMA CADIT clue feeds into the Arcana passive that seeds Tribune doubt in Scene 4.
+
+---
+
+## Pre-Scene Checklist
+
+- [ ] Confirmed which players had corruption after Session 1
+- [ ] Corruption dream queued: player with highest corruption level describes their dream at some point before Scene 3 (the spear shows them the fort burning, their comrades dead, themselves standing over the ruins holding it)
+- [ ] Aelius Rufus available in medicus quarters — he recognized whoever was in the vault; he will talk, no check required
+- [ ] Transfer papers: Quintus Flavius's paperwork is in the principia log. Any character who checks the morning departure log (Investigation DC 11) finds it.
+- [ ] Tribune's Praetorian formation: their hands are on weapon hilts, not reins. This is an arrest formation, not ceremonial escort. Perception DC 12 (passive or active) to notice.
+
+---
+
+# Scene 2: Investigation Window
+
+## Scene Purpose
+
+Free exploration. The fort is tense. The Tribune is establishing authority. The party can talk to anyone, investigate anything, and prepare for what is coming. This is the session's information phase.
+
+## Player Objective
+
+Learn who the Tribune really serves before night falls.
+
+## Key Reveal
+
+The Tribune is working for someone in Rome who wants the spear gone — not taken to Rome, but permanently destroyed.
+
+## Key Mechanic
+
+**Three independent paths to the same truth.** The party only needs one. The session advances regardless of which clue they find.
+
+---
+
+## Beat 1: The Tribune's Quarters
+
+**Access:** Stealth DC 13 (slip past the Praetorian) or Deception DC 14 (claim security inventory authorization, buys 10 minutes unattended).
+
+**Inside — Investigation DC 16 or Thieves' Tools DC 14 (dispatch box):**
+Handout 5 — the encoded letter. Caesar cipher, shift 3 back. DC 14 Intelligence to decode, or Cipher proficiency gives advantage.
+
+Plaintext: *"The artifact must not reach Rome. By any means necessary. Our mutual friend's ambitions depend on its permanent removal. You know what to do. — G.C.B."*
+
+Cassia can identify the cipher pattern if shown it.
+
+---
+
+## Beat 2: The Augur
+
+Cassia is in the shrine. She has been awake since midnight.
+
+> *"Three days ago I dreamed of the spear in Rome. The Capitoline ran with blood. There were cheering crowds."*
+
+She reveals the spear's true history (used by a mortal hero to kill one of Mars's demigod sons; Mars cursed it: whoever wields it with ambition will be consumed by war). She tells them the Tribune knows this:
+
+> *"He isn't taking it to Rome. He's making sure it never arrives. Someone in Rome fears what it can do in the right hands. Or the wrong ones."*
+
+**After this information, mentioned almost as an afterthought:**
+
+> *"Titus kept a supply of bog valerian. I use it in the ward ritual. His supply is gone. I have enough for one more full rite. After that, the protective blessings run at half strength. It grows in forest clearings north of the road. I'm not asking. I'm just mentioning the supply problem."*
+
+She can sketch the plant. DC 13 Nature check in any wetland clearing in Session 3 to find five stalks.
+
+---
+
+## Beat 3: Centurion Varro
+
+> *"Twenty years. You know what I've learned? The men who sail into a fort from Rome and relieve the commanding officer — they're not solving problems. They're managing them. For someone else."*
+
+He has six veterans positioned near the spear's storage room.
+
+> *"Because if that Tribune tries to move it tonight without telling anyone, I want to know about it immediately."*
+
+If asked about the Tribune directly (no check):
+> *"I did some asking around. That Tribune was posted to the financial investigation commission six months ago — investigating military supply embezzlement. Guess who was embezzling? Start with which Senators have frontier contracts."*
+
+History DC 13 (passive): G.C.B. = Gaius Cassius Brutus. Known for Republican rhetoric and enormous frontier contract wealth.
+
+---
+
+## Beat 4: The Scholar in the Vicus (Optional)
+
+Aldric — Germanic-Latin translator, herb buyer, always slightly too interested in logistics.
+
+- **Insight DC 18 (active, sustained conversation):** His questions about departure direction, spear location, and the Tribune's schedule are intelligence questions structured to sound like small talk.
+- **Investigation DC 14 (searching his quarters):** A folded note in the same cipher as Handout 5, signed with a raven-claw symbol: *"Artifact remains at Vindolanda. Party departed north. Tribune unsuccessful."*
+
+Confronted with evidence, he does not fight:
+> *"I was paid to observe. I observed. I sent reports. I did not harm anyone in this fort."*
+
+He will trade his full contact chain — cipher key, secondary operative name, Brutus's receiving city — for his life and a two-hour head start. He delivers exactly what he promises. Nothing more.
+
+*If ignored:* He sends one more report north. In Session 3, the chieftain's people have advance notice of the party's approach.
+
+---
+
+## Beat 5: Confronting the Tribune
+
+He deflects with practiced skill. Insight DC 16 (active, sustained conversation) to sense the performance covering something real.
+
+If pushed with evidence (Persuasion DC 17, or evidence in hand):
+> *"Let's say, hypothetically, that some artifacts are more dangerous in Rome than outside it. Let's say someone with the ear of half the Senate has a plan for this particular artifact that does not end well for anyone living. Let's say I was sent here to prevent that, not to enable it."*
+
+He will not name Brutus unless the party produces the decoded letter.
+
+**Religion DC 13 (passive, during his formal invocations):** He skips the traditional ward gesture. The oath is technically unsworn. He either doesn't know the form, or chose not to bind himself.
+
+---
+
+## Pre-Scene Checklist
+
+- [ ] Note which of the three clues the party found — it affects how Scene 4 plays
+- [ ] Aelius Rufus: if party visits medicus quarters, he recognizes them. No check. He tells them Marius said *"Give it to me and I will keep you safe"* while looking directly at whoever held the spear
+- [ ] Quintus Flavius: still in the fort until the Tribune departs. DC 15 Perception (actively watching the entourage) to notice his gait matches the boot print
+
+---
+
+# Scene 3: The Raid
+
+## Scene Purpose
+
+Crisis that removes all thinking time. The decision in Scene 4 must be made under pressure, not after careful planning.
+
+## Player Objective
+
+Survive the raid. Notice that the Praetorians are not defending the fort.
+
+## Key Reveal
+
+The Tribune and his guards secured the spear room, not the walls. This raid was timed. Someone coordinated it.
+
+## Key Mechanic
+
+**Secondary combat objectives.** The fight itself is not the point. What the party does while fighting — who they save, what they notice, how they lead — determines what options exist in Scene 4.
+
+---
+
+## Beat 1: The Alarm
+
+*That night. The timing is not a coincidence.*
+
+**Read Aloud:**
+
+> *The first arrow takes a sentry off the wall before the alarm horn sounds.*
+>
+> *Then the drums start — Germanic war drums, deep and rhythmic, surrounding the fort on three sides. Torchlight beyond the palisade: dozens of torches, maybe hundreds.*
+>
+> *Centurion Varro's voice cuts through the confusion: "WALLS! ALL SOLDIERS TO THE WALLS! Where in Pluto's name are those Praetorians?"*
+>
+> *The Praetorians are nowhere near the walls. Through the principia window, you can see torchlight — they're inside, around the spear.*
+
+**Survival DC 12 (active, before committing to the walls):** The drums are synchronized from three fixed positions, not echoing from one source. Torches are spaced too evenly for a mob. This advance was staged for hours and moved on a signal. This is not a raid. It is a demonstration.
+
+**Nature DC 11 (passive, if anyone was on night watch):** The night birds near the treeline went silent two hours before the alarm. A coordinated force moving through undergrowth silences birds consistently. Someone who was on watch during those hours knew something was wrong before the horn sounded.
+
+---
+
+## Beat 2 — THE MOMENT: The Wall Holds or Breaks
+
+**Phase 1: The Walls (2 rounds)**
+12 Tribal Warriors in waves, 2 Berserkers on the ladders.
+
+- **Athletics DC 12 (active, pushing back a ladder):** Two characters pushing the same ladder halve effective resistance. Miss by 3 or less: the ladder holds for one more round.
+- **Persuasion / Intimidation / Performance DC 13 (active, rallying soldiers):** Soldiers hold. DC 17: they hold AND a specific soldier is named — Flavus, 19 years old, first posting. He remembers who held the wall for him. He appears in Session 4 as a volunteer without being recruited.
+- **Acrobatics DC 11 (active, non-standard route to the ballista):** Reach ballista one round faster. Fail: reach it but spend a bonus action recovering.
+- **Ballista:** 2d10 piercing, requires 2 people, Dexterity DC 12 to aim under pressure.
+
+**Phase 2: The Breach (3 rounds)**
+Battering ram on the west gate. Wood holds 3 rounds.
+
+Options: defend the chokepoint directly; find another way to stop the ram (fire, dropping stones, cutting rope); rally a counter-charge with Varro's veterans.
+
+*Centurion Varro fights with the party — use Veteran stat block. Worth three normal soldiers.*
+
+---
+
+## Beat 3: Vercingetorix
+
+When the gate falls, a giant of a man steps through — red-haired, iron-armed, chieftain's torc, war spear. He does not charge. He walks.
+
+**Read Aloud:**
+
+> *He looks at the principia. Then he looks at you.*
+>
+> *In accented but clear Latin: "The God-Killer is here. I can feel it from here. I came for the God-Killer. I did not come for you."*
+
+**Vercingetorix (Gladiator stat block, CR 5)** — does not attack unless attacked first. He wants the spear. His agenda: the spear killed his grandfather three generations ago.
+
+**Decision Point:**
+- **Fight him** — Hard at current level, winnable, costly
+- **Let him reach the spear** — Cassia is horrified; the Legate uses this as evidence of treason in Scene 4
+- **Talk to him** — Persuasion DC 15: *"Tell me why it matters to your people and I'll listen."* He stops fighting. Opens Session 3 alliance.
+
+**If the party talks to him:** He speaks like this:
+
+> *"Romans name everything they find. That is how they believe they own it. You can name a river. The river doesn't care."*
+
+> *"I have been dying from a sickness for two years. I fight anyway. Your spear will not frighten me."*
+
+> *"Your fort smells of fear. My camp smells of wood smoke. Fear is the worse smell."*
+
+**Trust track — what he shares based on how they treat him:**
+
+| Trust | What he shares |
+|---|---|
+| None (fought, ignored) | Nothing |
+| Low (stopped fighting) | *"The spear has a name in my language. It means 'the thing that should not exist.' My grandfather helped seal it."* |
+| Medium (acknowledged his people's claim) | Above + *"It cannot be destroyed by Roman hands alone. There is a grove. One day's march into the Teutoburg Forest, past the Vitulans river."* |
+| High (treated as equal) | Above + *"The grove requires a willing sacrifice. Not blood. Something real. The ritual fails if the sacrifice is something the person doesn't actually care about. The grove knows."* |
+| Complete trust (proved by action) | *"I am dying. I have perhaps a year. This is my last campaign. If your party destroys the spear, my people's three-generation wound closes. That is enough for me."* Unlocks Vercingetorix as full ally for Sessions 3–4. |
+
+---
+
+## Pre-Scene Checklist
+
+- [ ] Corruption dream: if not done in Scene 1, do it here, before the raid begins. The player with highest corruption level describes the dream to the table.
+- [ ] Varro contingency: if Varro is killed, add +3 to all Persuasion DCs in Scene 4. Three of his veterans step forward to defend the party (standing orders).
+- [ ] Track which secondary objectives the party achieved during the raid — these feed directly into Scene 4 options.
+
+---
+
+# Scene 4: The Accusation
+
+## Scene Purpose
+
+The session's decision point. Every choice has weight and no clean answer.
+
+## Player Objective
+
+Get out of this without becoming enemies of Rome — or accept that they are.
+
+## Key Mechanic
+
+**The window of doubt.** During the Tribune's accusation, watch his face. There is one moment — before "enemies of Rome" — where he hesitates. Catching it drops the negotiation DC from 17 to 14.
+
+---
+
+## Beat 1: The Tribune's Move
+
+After the raid. Soldiers tend wounds. Gates being repaired. Three raiders captured.
+
+The Tribune appears. Immaculate. Praetorians behind him.
+
+**Read Aloud:**
+
+> *"Well," he says, looking at the carnage. "That was unfortunate."*
+>
+> *He turns to the Praetorians: "Arrest them."*
+>
+> *"These soldiers conspired with the raiders. They signaled the attack timing from the walls. I have witnesses."*
+>
+> *From across the courtyard, the Legate steps forward. His expression is unreadable.*
+>
+> *"I concur with the Tribune's assessment," he says.*
+>
+> *Centurion Varro takes a slow step to stand beside the party. His hand moves to his gladius.*
+>
+> *"Do you," he says.*
+
+---
+
+## Beat 2 — THE MOMENT: The Hesitation
+
+**Temporal gate — one round, one check per player:**
+
+**Insight DC 14 (active, watching his face during the accusation):** Before "enemies of Rome" — he hesitates. Half a second. His eyes move to Varro (or to where Varro was, if Varro is dead). He has been given lines and is not fully committed to them.
+
+*Window closes when he finishes the accusation and commits. Once he says "enemies of Rome" and steps forward, the moment is gone. The doubt sealed over.*
+
+If caught: negotiation DC drops from 17 to 14. The player can invoke it directly: *"You paused. You know this isn't true."*
+
+---
+
+## Beat 3: The Decision
+
+| Option | How | Consequence |
+|---|---|---|
+| **Expose the Tribune** | Produce the decoded letter or Clue 2/3 evidence | Praetorians hesitate; Varro intervenes; Tribune trapped. Session 3 is politically complicated. |
+| **Negotiate** | DC 16 Persuasion with at least one clue in hand (DC 14 if hesitation caught) | Tribune offers private deal: *"Help me destroy the spear my way and I'll make this go away."* |
+| **Intimidate** | DC 15 Intimidation (controlled demonstration — not a threat, a statement of fact about what the party has survived: vault undead, raid, the spear's active corruption) | Same as Negotiate outcome, but Tribune is more cautious. On 5 above DC: Praetorians disengage without a direct order. |
+| **Fight** | Combat: Tribune + 6 Praetorians (CR 2 each) | Extremely dangerous. Victory = fugitives from Rome. |
+| **Flee with Vercingetorix** | If he's still present or just outside, and they treated him respectfully | He offers forest refuge: *"My enemy's enemy."* Fugitives with a powerful ally. |
+| **Surrender** | Give the spear to the Tribune | He thanks them politely. Confined to quarters. Session 3 opens as prisoners en route to Rome. |
+
+**If the Tribune is confronted with the decoded letter (Handout 5), he drops the accusation and negotiates immediately:**
+
+> *"I know you don't trust me. I don't blame you. I'm not sure I trust me either, at this point. But I'm telling you the truth right now. For whatever that's worth from someone like me."*
+
+---
+
+## Session Close & Consequences
+
+### Advance to Level 5
+
+### Session 2 → Session 3 Transition
+
+| Session 2 ending | Session 3 opening |
+|---|---|
+| Tribune exposed, arrested | Free but politically exposed. Legate temporarily back in command — not grateful. Party leaves the fort on their own terms but Rome knows their names. |
+| Party fought the Praetorians | Fugitives. 12 hours later, in the forest. They left fast with what they could carry. Vercingetorix found them at the treeline. |
+| Negotiated a deal | Uneasy alliance. Tribune travels with the party — unwillingly, cooperating. He's useful and knows it and hates it. |
+| Fled with Vercingetorix | His camp, two miles north. Roman soldiers in a Germanic war camp, safe only because he said so. |
+| Surrendered | Prisoners. Praetorian escort. The spear is in a sealed crate on a wagon ahead of them. Six days to Rome. |
+
+### Commendationes Available
+
+**1.** Defending the fort during the raid with demonstrable leadership (rallied soldiers, held a sector about to break, saved a specific position): one *commendatio* from Corvinus, given grudgingly.
+
+**2.** Exposing the Tribune's false accusation through physical evidence, not personal appeal: one *commendatio* to the character who produces the decisive piece of evidence. No award if the party argued their way out instead.
+
+**3.** If the party reaches Complete Trust with Vercingetorix: he sends a runner to Corvinus the following morning with a single purposeless message. Its purpose is establishing that the party's word is good with his people. Not a *commendatio* — a different kind of record.
+
+### Corruption Tracking
+
+Characters who touched or attuned to the spear in Session 1 get dreams again before Scene 3. The player with the highest corruption level describes their dream to the table: the fort burning, comrades dead, themselves standing over the ruins holding it. Don't make it mechanical yet. Make it felt.
+
+---
+
+# Random Encounters (Road d8)
+
+*The journey north toward chieftain territory in Session 3 takes most of a day. Run 2–3 of these.*
+
+| d8 | Encounter |
+|---|---|
+| 1 | **Abandoned Shrine** — Three dead travelers, hands pressed to the stone as if they died praying. Investigation DC 13: faint scorch-marks matching the vault's corruption signature. |
+| 2 | **Shadow Stalkers** — Two Shadows from the vault followed the spear. They don't attack in daylight. At first dusk camp they manifest. Placing the spear on the ground and covering it makes them retreat. |
+| 3 | **Watching Eyes** — A Germanic warrior in a tree, making no effort to hide. Insight DC 11: this is a test, not a threat. Acknowledge him; he drops down, walks past, disappears. Vercingetorix's scouts are assessing. |
+| 4 | **Deserters** — Three Roman soldiers moving fast. Frightened, not aggressive. They overheard the Tribune arguing after the raid: *"This isn't what we agreed."* Persuasion DC 13 calms them. |
+| 5 | **Ambushed Rider** — A courier's horse stands alone on the road, rider missing. Survival DC 15: the rider was dragged backward, not chased. Scattered papers include a supply request sealed with a wax mark matching Handout 5's Senate correspondence. |
+| 6 | **Roadside Cultists** — Four Cult of Mars Initiates performing a ritual, scatter on sight. Investigation DC 12: clay soldier-figure with a pin through the head, crude armor marks it optio-rank — possibly someone in the party's unit. |
+| 7 | **Swarm of Ravens** — Three hundred ravens in a column formation, then wheel north and vanish. Religion DC 12: directed attention, not natural behavior. They moved in the direction the party is heading. |
+| 8 | **Waylaid Convoy** — Two vicus traders, cart blocked by a fallen tree. The older trader carried a sealed message north for Aldric last week. He felt wrong about it afterward. He does not know what was in it. He just knows he made 3 denarii and has been uncomfortable since. |
