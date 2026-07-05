@@ -4,359 +4,564 @@
 <meta charset="UTF-8">
 <title>Session 4: The God's Demand — GM Reference</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 11px;
-    background: #f4f0e8;
-    color: #1a1208;
-    padding: 16px;
-  }
-  h1 {
-    font-size: 15px; font-weight: 800; letter-spacing: 0.05em;
-    color: #7a1a00; border-bottom: 2px solid #7a1a00;
-    padding-bottom: 4px; margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  h2 {
-    font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
-    color: #7a1a00; text-transform: uppercase;
-    border-bottom: 1px solid #c8a060; margin: 10px 0 5px;
-  }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .col {}
-  .box {
-    background: white; border: 1px solid #c8a060;
-    border-left: 3px solid #7a1a00;
-    padding: 8px; margin-bottom: 8px; border-radius: 2px;
-  }
-  .box.warn { border-left-color: #c05000; background: #fff8f0; }
-  .box.secret { border-left-color: #404040; background: #f8f8f0; }
-  table { width: 100%; border-collapse: collapse; }
-  th { background: #7a1a00; color: white; padding: 3px 6px; font-size: 9.5px; text-align: left; }
-  td { padding: 2px 6px; border-bottom: 1px solid #e8d8b0; vertical-align: top; }
-  tr:nth-child(even) td { background: #fdf8ee; }
-  .dc { font-weight: 700; color: #7a1a00; white-space: nowrap; }
-  .npc-name { font-weight: 700; }
-  .secret-text { font-style: italic; color: #404040; }
-  .scene-list { list-style: none; counter-reset: scenes; }
-  .scene-list li { counter-increment: scenes; padding: 2px 0 2px 20px; position: relative; }
-  .scene-list li::before {
-    content: counter(scenes);
-    position: absolute; left: 0;
-    background: #7a1a00; color: white;
-    width: 14px; height: 14px; border-radius: 50%;
-    font-size: 9px; font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .tag {
-    display: inline-block; padding: 1px 5px; border-radius: 2px;
-    font-size: 9px; font-weight: 700; margin-right: 2px;
-  }
-  .tag-passive { background: #d0e8d0; color: #1a4a1a; }
-  .tag-active { background: #d0d8e8; color: #1a1a4a; }
-  .tag-key { background: #ffe0c0; color: #7a3000; }
-  @media print {
-    body { padding: 8px; font-size: 10px; }
-    .box { break-inside: avoid; }
-  }
+  body { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; background: #1a120a; color: #d4c090; padding: 0; }
+  .header { background: #0e0a04; border-bottom: 2px solid #6a4010; padding: 12px 20px; }
+  .header h1 { font-family: 'Cinzel', serif; font-size: 16px; font-weight: 700; color: #c8a040; letter-spacing: 0.1em; text-transform: uppercase; }
+  .session-meta { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; font-style: italic; color: #8a6030; margin-top: 2px; }
+  .tab-nav { display: flex; gap: 2px; background: #0e0a04; padding: 8px 12px 0; border-bottom: 2px solid #6a4010; flex-wrap: wrap; }
+  .tab-btn { font-family: 'Cinzel', serif; font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; background: #1a120a; color: #8a6030; border: 1px solid #4a2a08; border-bottom: none; padding: 6px 14px; cursor: pointer; border-radius: 2px 2px 0 0; }
+  .tab-btn:hover { background: #241808; color: #c8a040; }
+  .tab-btn.active { background: #2c1a0a; color: #c8a040; border-color: #6a4010; }
+  .tab-panel { display: none; padding: 16px 20px; }
+  .tab-panel.active { display: block; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+  .box { background: #2c1a0a; border: 1px solid #4a2a08; border-left: 3px solid #8a6020; padding: 10px 12px; margin-bottom: 10px; border-radius: 1px; }
+  .box.warn { border-left-color: #c05010; background: #2a1208; }
+  .box.secret { border-left-color: #606060; background: #1e1e1a; }
+  .box.green { border-left-color: #407020; background: #1a2410; }
+  .box.moment { border: 2px solid #6a4010; border-left: 4px solid #c8a040; background: #241a06; }
+  h2 { font-family: 'Cinzel', serif; font-size: 11px; font-weight: 700; color: #c8a040; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 1px solid #4a2a08; padding-bottom: 4px; margin: 14px 0 8px; }
+  h2:first-child { margin-top: 0; }
+  .beat-header { font-family: 'Cinzel', serif; font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #8a6020; border-left: 3px solid #4a2a08; padding: 4px 8px; margin-bottom: 8px; background: #241608; }
+  .beat-header.beat-2 { color: #c84020; border-left-color: #c84020; background: #2a0e06; font-size: 11px; letter-spacing: 0.2em; padding: 6px 10px; }
+  p { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; color: #c4a870; line-height: 1.7; margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+  th { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; background: #4a2a08; color: #c8a040; padding: 4px 6px; text-align: left; }
+  td { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; padding: 4px 6px; border-bottom: 1px solid #3a2008; vertical-align: top; line-height: 1.5; }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .dc { font-weight: 700; color: #c8a040; white-space: nowrap; font-family: 'Cinzel', serif; font-size: 10px; }
+  .tag { display: inline-block; padding: 1px 5px; border-radius: 2px; font-size: 9px; font-weight: 700; font-family: 'Cinzel', serif; letter-spacing: 0.05em; }
+  .tag-passive { background: #1a3020; color: #60c070; border: 1px solid #2a4a30; }
+  .tag-active { background: #1a2030; color: #6090c0; border: 1px solid #2a3050; }
+  .tag-key { background: #301808; color: #c08040; border: 1px solid #4a2810; }
+  .sense-block { margin-bottom: 8px; }
+  .sense-row { display: grid; grid-template-columns: 58px 1fr; gap: 6px; padding: 3px 0; border-bottom: 1px solid #3a2008; }
+  .sense-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #8a6020; padding-top: 2px; }
+  .sense-text { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.5; font-style: italic; }
+  .npc-desc-table td:first-child { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: #8a6020; white-space: nowrap; width: 90px; }
+  .trust-row { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; border-bottom: 1px solid #3a2008; }
+  .trust-dc { font-family: 'Cinzel', serif; font-size: 10px; font-weight: 700; color: #c8a040; min-width: 36px; }
+  .trust-text { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.5; }
+  .player-q { padding: 6px 0; border-bottom: 1px solid #3a2008; }
+  .player-name { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #c8a040; margin-bottom: 2px; }
+  .player-q-text { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.5; font-style: italic; }
+  .clock-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px solid #3a2008; }
+  .clock-name { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #c8a040; min-width: 80px; }
+  .clock-pips { font-family: 'Cinzel', serif; font-size: 14px; color: #c84020; letter-spacing: 4px; }
+  .clock-effect { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.4; }
+  .stakes-badge { display: inline-block; padding: 2px 8px; border-radius: 2px; font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; font-weight: 700; text-transform: uppercase; }
+  .stakes-personal { background: #241a06; color: #a08030; border: 1px solid #3a2a08; }
+  .stakes-fort { background: #201408; color: #c09040; border: 1px solid #3a2408; }
+  .stakes-regional { background: #1a3020; color: #60c080; border: 1px solid #2a4a30; }
+  .stakes-imperial { background: #1a1a30; color: #6070d0; border: 1px solid #2a2a50; }
+  .stakes-divine { background: #30100a; color: #d06040; border: 1px solid #4a1a0a; }
+  b { font-weight: 700; color: #c8a040; }
+  ul { padding-left: 16px; margin-bottom: 6px; }
+  li { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.7; }
+  em { font-style: italic; color: #d4b880; }
 </style>
+<script>
+  function showTab(id) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
 </head>
 <body>
-<h1>Session 4: The God's Demand — GM Reference</h1>
 
-<div class="grid">
-<div class="col">
-
-  <h2>Scene Flow</h2>
-  <div class="box">
-    <ol class="scene-list">
-      <li><b>Cold Open</b> — Three simultaneous crises: gate breach (battering ram), granary fire (Brutus agent), shrine desecration attempt (steal spear case). Party must triage. The north gate attack is the feint — the insider shrine theft is the primary objective.</li>
-      <li><b>Council in the Principia (Scene 1)</b> — Survivors convene: Corvinus, Lucius, Varro, Cassia, party, Vercingetorix's envoy. Decide escort composition, oath terms, and sacrifice type. Three faction paths (Roman Authority, Shared Custody, Secret Transfer).</li>
-      <li><b>Preparing the Procession (Scene 2)</b> — Scout the stair, secure the vicus, call in favors, receive blessings. Handout 9 distributed. Up to three preparations allowed.</li>
-      <li><b>The Procession Below (Scene 3)</b> — Three tunnel scenes: Sunken Armory (Animated Armor), Choking Hall (gas, Con saves), Elder Stair (Brutus' agent triggers rockfall). Who leads, guards civilians, carries the spear.</li>
-      <li><b>Antechamber of Mars (Scene 4)</b> — Mars demands three figures kneel in submission. One Roman, one Germanic, one spear-touched. Party declares the sacrifice type. Spear levitates. Siege pauses. Germanic horns go silent.</li>
-    </ol>
-  </div>
-
-  <h2>OGAS</h2>
-  <table>
-    <tr><th>NPC</th><th>Session Goal</th><th>Secret</th></tr>
-    <tr>
-      <td class="npc-name">Legate Corvinus</td>
-      <td>Control the escort to claim credit for the resolution</td>
-      <td class="secret-text">His report to Rome blamed the party; fears exposure if they talk.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Tribune Lucius</td>
-      <td>Destroy or sabotage the spear without dying</td>
-      <td class="secret-text">Still receives ravens from Brutus ordering Cassia's death.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Centurion Varro</td>
-      <td>Put the right soldiers in the escort; keep people alive</td>
-      <td class="secret-text">Morale is near collapse; only the party can steady it.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Augur Cassia</td>
-      <td>Deliver the spear and interpret the omens correctly</td>
-      <td class="secret-text">Knows that if no one kneels she will do it alone and die.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Vercingetorix</td>
-      <td>Secure a promise to return the spear to the grove through the chaos</td>
-      <td class="secret-text">Dying faster. This is his last chance to protect his tribe.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Senator Brutus (off-screen)</td>
-      <td>Burn the fort or kill Cassia before the ritual</td>
-      <td class="secret-text">Has already arranged a Plan B ritual in Session 5 if this fails.</td>
-    </tr>
-  </table>
-
-  <h2>Three Clue Rule: Mars' Demand</h2>
-  <div class="box">
-    <b>Clue 1 — Shrine Conflagration:</b> Witness Cassia performing augury during the opening bell. Mars shows the spear on the hidden altar. Three figures kneeling. Someone must volunteer to kneel.<br><br>
-    <b>Clue 2 — Tunnel Map:</b> Investigation DC 14 (active: Varro's office) or receive from Vercingetorix's envoy. Sealed stair connects to collapsed Roman water tunnel exiting near the south ditch. A rune symbol marks where Thusnelda first sealed the spear.<br><br>
-    <b>Clue 3 — Saboteur Confession:</b> Intimidation DC 15 (active: interrogating a captured Brutus sleeper agent from Scene 0). He reveals Brutus ordered the fort burned to prevent Mars being appeased — confirming the god can be bargained with if the spear reaches the ritual site.
-  </div>
-
-  <h2>Council Decision: Escort Path</h2>
-  <div class="box warn">
-    <b>Roman Authority (Corvinus):</b> Extra legionaries but Disadvantage on Persuasion with Vercingetorix later.<br>
-    <b>Shared Custody (Varro + Cassia):</b> Three kneeling witnesses chosen (can include PCs). Advantage on future dealings with Mars but fewer escort numbers.<br>
-    <b>Secret Transfer (Lucius):</b> Attempt to fake the ritual and destroy the spear. Betrayal path — prepare separate complications for Session 5.<br><br>
-    <b>Council reading checks:</b><br>
-    — Insight DC 13 (Corvinus while Cassia speaks): assembling arguments, not listening. 5 above: he's already hand-signaling his bodyguard captain with a contingency plan.<br>
-    — Deception DC 14 (convince Corvinus' captain that escort route is already secured by Varro's orders): buys time. Fail = captain reports immediately.<br>
-    — Intimidation DC 14 (address captain directly about party's track record): success = captain recommends deferring to party; Corvinus overrules more slowly, accepts Shared Custody instead of Roman Authority.
-  </div>
-
-  <h2>Three Kneeling Figures (Scene 4)</h2>
-  <div class="box">
-    Mars demands one Roman, one Germanic, one spear-touched. Party fills these roles.<br><br>
-    <b>One volunteer:</b> Mars allows it, started disappointed. Session 5 begins with one extra consequence already in effect.<br>
-    <b>Two volunteers:</b> He accepts with reservations. Session 5 begins normally.<br>
-    <b>Three correct volunteers:</b> Mars is satisfied. One Session 5 trial drops one difficulty tier (GM's choice — pick the one that makes S5 most interesting).<br><br>
-    <b>Sacrifice type in the antechamber:</b><br>
-    — Blood: 10 HP per volunteer. Mars removes one corruption stage.<br>
-    — Glory: Swear to bear the blame. Advantage on Persuasion vs. legionaries; become scapegoat if things go poorly.<br>
-    — Obedience: Promise to carry out Mars' Call to War (Session 5). Guarantees favorable start to final trial.
-  </div>
-
+<div class="header">
+  <h1>Session 4: The God's Demand</h1>
+  <div class="session-meta">GM Reference Card &mdash; All content DM-only unless marked &mdash; Imperial Stakes &mdash; Level 5 &rarr; 6 &mdash; Siege Day</div>
 </div>
-<div class="col">
 
-  <h2>DC Reference</h2>
-  <table>
-    <tr><th>Scene / Location</th><th>DC</th><th>Skill</th><th>Type</th><th>What they learn / what happens</th></tr>
-    <tr>
-      <td>Cold Open — reading the assault pattern</td>
-      <td class="dc">12</td>
-      <td>Perception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>North gate attack is the feint. West fire set from inside — smoke plume wrong direction for prevailing wind. Real threat is the shrine insider.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — gate breach</td>
-      <td class="dc">14</td>
-      <td>Athletics</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Hold the battering ram for three rounds while engineers wedge beams. 5 above: see amber TIWAZ war-charm on the ram-crew commander — a specific chieftain's people, not the united warband.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — gate breach secondary</td>
-      <td class="dc">14</td>
-      <td>Perception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Watch the ram-crew commander specifically. Combined with Athletics 5-above: confirm the amber charm detail even on a standard Athletics success.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — granary fire</td>
-      <td class="dc">15</td>
-      <td>Survival</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Fight the fire. Fail by 5: rations lose 1d6, fire controlled. Exact: fire stopped, full stock. 5 above: find the slow-burn candle setup — physical evidence of arson method.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — shrine desecration</td>
-      <td class="dc">14</td>
-      <td>Insight</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Watch the shrine during chaos. 5 above: he avoids the threshold rune Paterculus placed deliberately — someone inside the fort briefed him.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — saboteur interrogation</td>
-      <td class="dc">15</td>
-      <td>Intimidation</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Extract confession cleanly. 5 above: he names a second contact inside the fort before catching himself. Write that name — it surfaces in the epilogue.</td>
-    </tr>
-    <tr>
-      <td>Scene 1 — Varro's office</td>
-      <td class="dc">14</td>
-      <td>Investigation</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Find the tunnel map. Varro's filing is by date, not subject. Fail = takes twice as long (a complication during the siege).</td>
-    </tr>
-    <tr>
-      <td>Scene 1 — Council: Corvinus</td>
-      <td class="dc">13</td>
-      <td>Insight</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>He's assembling arguments, not listening. 5 above: hand-signaling bodyguard captain with contingency plan that doesn't include the party.</td>
-    </tr>
-    <tr>
-      <td>Scene 1 — Council: captain misdirect</td>
-      <td class="dc">14</td>
-      <td>Deception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Claim escort tunnel route secured by Varro's standing orders. Requires plausible cover. Fail = captain reports attempt immediately.</td>
-    </tr>
-    <tr>
-      <td>Scene 1 — Council: bypass Corvinus</td>
-      <td class="dc">14</td>
-      <td>Intimidation</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Address captain with party's track record (vault, raid, three sessions). Success: captain recommends deferring to party; Corvinus accepts Shared Custody instead of Roman Authority.</td>
-    </tr>
-    <tr>
-      <td>Scene 2 — Scout the stair</td>
-      <td class="dc">14</td>
-      <td>Perception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Reveals pressure-plate trap (left by Romans). Disarm with Thieves' Tools DC 13.</td>
-    </tr>
-    <tr>
-      <td>Scene 2 — History of the trap</td>
-      <td class="dc">14</td>
-      <td>History</td>
-      <td><span class="tag tag-passive">passive</span></td>
-      <td>Pre-Hadrianic Roman military engineering. The fort was built over an older installation. They're not in Vindolanda's basement — they're in what Vindolanda replaced.</td>
-    </tr>
-    <tr>
-      <td>Scene 2 — Secure the vicus</td>
-      <td class="dc">15 / 14</td>
-      <td>Persuasion / Deception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Persuasion: calm civilians before procession. Deception: tell them it's a standard supply transfer — works faster but creates confusion when Mars' arrival is obvious.</td>
-    </tr>
-    <tr>
-      <td>Scene 2 — Blessings</td>
-      <td class="dc">14</td>
-      <td>Religion / Performance</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Cassia or PC leads a rite. +1d4 temp HP to the escort. Performance works for a character who leads it as ceremony rather than prayer.</td>
-    </tr>
-    <tr>
-      <td>Scene 2 — Calm the horses</td>
-      <td class="dc">11</td>
-      <td>Animal Handling</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Draft horses react to the spear's proximity. Fail = 10-minute delay. Corvinus notes it.</td>
-    </tr>
-    <tr>
-      <td>Scene 2 — Map the tunnel gas</td>
-      <td class="dc">13</td>
-      <td>Nature</td>
-      <td><span class="tag tag-passive">passive</span></td>
-      <td>Marsh gas, not volcanic. Source is underground water — denser near the floor, not ceiling. Halves effective Con saves required in Choking Hall.</td>
-    </tr>
-    <tr>
-      <td>Sunken Armory — formation read</td>
-      <td class="dc">11</td>
-      <td>Perception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Armor pieces in combat formation, not scattered. Call it out to Varro = party meets activation in formation; first defender gets Advantage on first attack roll.</td>
-    </tr>
-    <tr>
-      <td>Sunken Armory — armor age</td>
-      <td class="dc">14</td>
-      <td>History</td>
-      <td><span class="tag tag-passive">passive</span></td>
-      <td>Pre-Hadrianic, 80-100 years older than current fort. The chamber was sealed deliberately when Vindolanda was built over it.</td>
-    </tr>
-    <tr>
-      <td>Sunken Armory — animation type</td>
-      <td class="dc">14</td>
-      <td>Arcana</td>
-      <td><span class="tag tag-passive">passive</span></td>
-      <td>Divine resonance, not undead animation. No undead-specific vulnerabilities. Constructs in Mars' service. Hesitation draws their attention; decisive movement does not.</td>
-    </tr>
-    <tr>
-      <td>Choking Hall — each round</td>
-      <td class="dc">14</td>
-      <td>Constitution save</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Gas vents. Fail = incapacitated. Use rune map to find air pockets. Knowledge of gas type from Scene 2 prep halves required saves.</td>
-    </tr>
-    <tr>
-      <td>Choking Hall — treat downed ally</td>
-      <td class="dc">13</td>
-      <td>Medicine</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Stabilize without spell slot (Healer's Kit or Medicine proficiency). Patient continues after one round treatment. Without Medicine: downed character takes 1d4 per round in gas.</td>
-    </tr>
-    <tr>
-      <td>Choking Hall — find air pockets</td>
-      <td class="dc">13</td>
-      <td>Stealth</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Move slowly, locate air pockets by temperature differential. Success: two air pocket positions found without the rune map.</td>
-    </tr>
-    <tr>
-      <td>Elder Stair — rockfall (reflex)</td>
-      <td class="dc">15</td>
-      <td>Dexterity save</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Brutus' agent triggers rockfall. Fail: 2d8 bludgeoning, spear drops (contested Strength to keep it from falling into the shaft).</td>
-    </tr>
-    <tr>
-      <td>Elder Stair — rockfall (trained)</td>
-      <td class="dc">13</td>
-      <td>Acrobatics</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Alternative to Dex save. Explicitly bracing/catching a handhold. Same outcome on success. Use if player describes it specifically.</td>
-    </tr>
-    <tr>
-      <td>Elder Stair — spear direction</td>
-      <td class="dc">13</td>
-      <td>Insight</td>
-      <td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td>
-      <td>Spear's weight shifts toward the altar chamber before it can be seen. Direction is specific, consistent. Window closes entering the antechamber — then it no longer needs to pull. Use this in the antechamber for Persuasion advantage with Mars.</td>
-    </tr>
-  </table>
+<nav class="tab-nav">
+  <button class="tab-btn active" onclick="showTab('cold-open')">Cold Open</button>
+  <button class="tab-btn" onclick="showTab('scene1')">Scene 1: Council</button>
+  <button class="tab-btn" onclick="showTab('scene2')">Scene 2: Preparation</button>
+  <button class="tab-btn" onclick="showTab('scene3')">Scene 3: Tunnels</button>
+  <button class="tab-btn" onclick="showTab('scene4')">Scene 4: Antechamber</button>
+  <button class="tab-btn" onclick="showTab('quick-ref')">Quick Ref</button>
+</nav>
 
-  <h2>Siege Resources (Running Clocks)</h2>
-  <div class="box warn">
-    <b>Food Clock:</b> Starts at 3. Loses 1 per failed granary fire roll. At 0: civilians riot, escort suffers Disadvantage on initiative inside the tunnels.<br>
-    <b>Morale Clock:</b> Starts at 2. Loses 1 if Corvinus bullies or civilians panic. At 0: same as Food Clock result.<br><br>
-    Keep pressure visible during talking scenes: smoke in the audience chamber, tremors as battering rams strike, civilians chanting prayers.
+<!-- ═══════════════════════════════════════════════════════ COLD OPEN -->
+<div class="tab-panel active" id="cold-open">
+
+  <div class="beat-header">Beat 1 — Three Simultaneous Crises</div>
+  <p>Alarm horns at the north gate. At the same moment: smoke rising from the granary district. At the same moment: a shout from the direction of the shrine. Three things. One party. No time to split evenly.</p>
+  <p><em>"You hear the horn first. Then the smoke catches the corner of your eye. Then someone is running from the shrine direction, shouting your name."</em></p>
+
+  <div class="beat-header beat-2">THE MOMENT — Triage</div>
+  <div class="box moment">
+    <p><b>Commit immediately.</b> The players must decide in the first thirty seconds of play which threat each character addresses. Do not let them deliberate at length — the siege doesn't pause.</p>
+    <p><b>The signal to read (Perception DC 12, active):</b> The smoke plume from the granary runs wrong — northwest, against the prevailing east wind. Set from inside, not from a fire outside the wall. The north gate assault is the feint. The granary fire is misdirection. The shrine theft is the primary objective.</p>
+    <p><b>Shrine insider:</b> A figure at the shrine avoids the threshold rune Paterculus placed deliberately. Insight DC 14 (active, watching the shrine specifically) — someone inside the fort briefed him. This is Brutus's agent. If caught alive, he's an interrogation asset for Scene 1.</p>
   </div>
 
-  <h2>State at Session Start / Contingency Checks</h2>
-  <div class="box secret">
-    Confirm: Who holds the spear? (That character becomes focus of all NPC interaction; Mars speaks through them in Scene 3.) Is Tribune Lucius alive? Did Varro survive Session 3? (If not: all soldiers take -1 to Wisdom saves this session; party must appoint another Centurion.) Is Cassia alive? (Without her: harsher omens, fewer answers.) Is Vercingetorix allied? (Tunnels and diversion; or hostile = threatens to take spear once it leaves the vault.)<br><br>
-    <b>If Corvinus felt sidelined:</b> He arrests Cassia at session end, forcing a rescue in Session 5's opening.<br>
-    <b>If Lucius' sabotage succeeded:</b> Spear damaged; Mars has Disadvantage on initial checks but is enraged.<br>
-    <b>If Vercingetorix was honored:</b> His warriors guard the fort through the night; party gets a long rest.
+  <div class="beat-header">Beat 3 — The Dust Settles</div>
+  <p>Gate held or breached (clocks affected). Granary saved or partially burned (Food Clock). Shrine intruder caught, fled, or subdued. What the party controlled and what slipped past them shapes every subsequent scene. Note what each clock is at before Scene 1.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Cold Open</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Dawn smoke from the granary — pale grey, running the wrong direction. The north gate ram crew visible from the wall. The shrine figure moving with purpose, not panic.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">Alarm horn, once. Then the rhythmic thud of a battering ram — slower than expected, methodical. Civilians screaming in the vicus. The shrine: a crash of overturned votive stands.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Smoke — grain smoke has a sweet, heavy quality distinct from wood. Iron, dust, the smell of a fort that hasn't slept in two days.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The vibration of the ram through the stone underfoot. The gate trembles. Not breached yet — but the rhythm tells a trained soldier that the crew knows what they're doing.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Grain smoke at the back of the throat, sweet and choking. The taste of a fort under siege: everything rationed, including air.</div></div>
+    </div>
+
+    <h2>Interactive Objects — Cold Open</h2>
+    <table>
+      <tr><th>Object</th><th>DC</th><th>Skill</th><th>Payoff</th></tr>
+      <tr><td>Smoke plume direction</td><td class="dc">12</td><td>Perception</td><td>Northwest — against prevailing east wind. Set from inside. The granary fire is an insider job.</td></tr>
+      <tr><td>Ram crew commander</td><td class="dc">14 / 14</td><td>Athletics + Perception</td><td>Amber TIWAZ charm on the commander — a specific chieftain's people, not the united warband. 5 above on Athletics OR Perception: notice this independently.</td></tr>
+      <tr><td>Shrine threshold rune</td><td class="dc">14</td><td>Insight</td><td>Intruder avoids the rune — someone briefed him. Insider knowledge = Brutus has a contact inside the fort.</td></tr>
+      <tr><td>Granary arson setup</td><td class="dc">15</td><td>Survival</td><td>Slow-burn candle rig behind the grain sacks. Find it = extinguish before it catches, Food Clock fully preserved. Miss by 5 or less: fire contained, -1 Food Clock.</td></tr>
+    </table>
+
+    <h2>Siege Clocks — Initial State</h2>
+    <div class="box warn">
+      <div class="clock-row"><div class="clock-name">Food</div><div class="clock-pips">●●●</div><div class="clock-effect">Starts at 3. Lose 1 if granary fire not fully stopped. At 0: civilians riot, escort suffers Disadvantage on initiative in tunnels.</div></div>
+      <div class="clock-row"><div class="clock-name">Morale</div><div class="clock-pips">●●</div><div class="clock-effect">Starts at 2. Lose 1 if Corvinus bullies the council or civilians panic visibly. At 0: same as Food 0.</div></div>
+      <p style="margin-top:8px">Keep both visible during talking scenes. During Scene 1: smoke still drifting through the audience chamber window. During Scene 2: a tremor as the ram strikes again.</p>
+    </div>
   </div>
 
-  <h2>Commendationes This Session</h2>
-  <div class="box">
-    <b>1:</b> Holding the wall during the gate breach — the character whose action determines whether the gate holds or falls. Varro files without being asked.<br>
-    <b>2:</b> Abandoning a tactically superior position to protect <em>vicus</em> civilians. Corvinus resents it and files the paperwork anyway.<br>
-    <b>3:</b> Holding the alliance with Vercingetorix against Corvinus/Lucius pressure. No <em>commendatio</em> from Corvinus. Reward is different: Vercingetorix names the party in a specific way at session end.
-    <br><br>
-    <b>Citizenship window (Session 4):</b> Tribune Lucius offers a personal attestation in his dispatch to Rome — available to any character with <em>Latini</em> standing and 3+ commendationes. Approach must be party-initiated. Offer not made twice; closes if session ends without follow-up.
+  <div>
+    <h2>DC Reference — Cold Open</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Read assault pattern (feint)</td><td class="dc">12</td><td>Perception</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Hold the gate ram (3 rounds)</td><td class="dc">14</td><td>Athletics</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Shrine intruder — briefed insider</td><td class="dc">14</td><td>Insight</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Granary — stop the fire</td><td class="dc">15</td><td>Survival</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Saboteur interrogation</td><td class="dc">15</td><td>Intimidation</td><td><span class="tag tag-active">active</span></td></tr>
+    </table>
+
+    <h2>Saboteur (if captured)</h2>
+    <div class="box secret">
+      Intimidation DC 15 in Scene 1 (not Cold Open — needs time). DC 15: confirms Brutus ordered the fort burned to prevent Mars being appeased. 5 above: he names a second contact inside the fort before catching himself. Write that name — it surfaces in Session 5's epilogue.<br><br>
+      <b>If not captured:</b> Three Clue Rule preserved — Clue 3 (saboteur confession) becomes the augury residue in Scene 1 instead: Cassia saw a branded man in her vision, same brand as the shrine intruder.
+    </div>
+
+    <h2>Pre-Session State Check</h2>
+    <div class="box secret">
+      <ul>
+        <li>Who holds the spear? That character becomes the focus of all NPC interaction; Mars speaks through them in Scene 4.</li>
+        <li>Is Tribune Lucius alive? Still receiving ravens from Brutus ordering Cassia's death.</li>
+        <li>Did Varro survive Session 3? No: all soldiers take -1 Wisdom saves this session; party must appoint a replacement centurion.</li>
+        <li>Is Cassia alive? No: harsher omens, fewer answers at the antechamber.</li>
+        <li>Is Vercingetorix allied? Yes: diversion at south ditch, his warriors guard the fort through the night (long rest). No: threatens to take the spear once it leaves the vault.</li>
+      </ul>
+    </div>
+  </div>
   </div>
 
-  <h2>Three Clue Rule Check</h2>
-  <div class="box">
-    <b>Mars' demand (the spear below):</b> Cassia's augury vision (three kneeling figures) · Tunnel map from Varro's office or Vercingetorix's envoy · Saboteur confession (burning fort to prevent appeasement confirms god can be bargained with)
+</div><!-- end cold-open -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 1 -->
+<div class="tab-panel" id="scene1">
+
+  <div class="beat-header">Beat 1 — The Survivors Convene</div>
+  <p>The principia audience chamber. Corvinus is already seated at the head of the table — he arrived first, by design. Lucius stands near the door. Varro is against the wall, not seated. Cassia is in the augur's corner. The room holds every surviving leader and mutual suspicion between each of them.</p>
+  <p><b>The pressure:</b> The ram is still working at the north gate. Smoke is visible through the slit window. This council has maybe thirty minutes before the siege demands physical decisions, not verbal ones.</p>
+
+  <div class="beat-header beat-2">THE MOMENT — Cassia's Augury</div>
+  <div class="box moment">
+    <p>Cassia speaks before anyone else can control the agenda. She slept after the augury. She was waiting for this moment.</p>
+    <p><em>"I saw three figures kneeling before an altar. A spear, levitating. I heard the ram. Then I heard nothing — the ram, the horns, the shouts. All of it stopped. Not because the siege ended. Because something larger than the siege had spoken."</em></p>
+    <p>Long silence. Then Corvinus: "What does that mean, augur?" — He's asking because he needs to know, not because he believes. That distinction matters.</p>
+    <p><b>This is when the council's decision tree opens.</b> Three paths emerge from this moment. The party's next actions — who they address first, what they reveal, whether they use Insight on Corvinus — determine which path becomes viable.</p>
   </div>
 
-</div>
-</div>
+  <div class="beat-header">Beat 3 — The Path Is Chosen</div>
+  <p>One of three escort paths is committed to before Scene 2. Note which — it determines escort composition, tunnel dynamics, and Session 5 opening conditions. All three paths reach the antechamber. The difference is who's in the room when they get there.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 1</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Corvinus reorganizing objects on the table as Cassia speaks — a cup moved two inches. Lucius: completely still. Varro: eyes on the party, not the speaker. The slit window shows smoke still drifting.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">The distant, rhythmic thud of the ram — always in the background. Voices in the principia measured against it. When Cassia finishes, the ram hits three times in the silence.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Smoke from the granary district. Candle wax — the principia's working candles burning low after a siege night. Varro: sweat and iron.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The vibration of the ram reaches even here. The table trembles slightly on each strike. Everyone feels it. Nobody comments on it.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Nothing. The room has been breathing the same recycled smoke air since the siege began. It coats everything.</div></div>
+    </div>
+
+    <h2>NPC — Legate Corvinus (council mode)</h2>
+    <table class="npc-desc-table">
+      <tr><td>Look</td><td>In full legate's regalia — sash back on, spotless. He changed clothes between the pursuit and this council. That tells you something.</td></tr>
+      <tr><td>Wearing</td><td>Formal armor, the legate's sash, polished fittings. He dressed for the record, not for the siege.</td></tr>
+      <tr><td>Posture</td><td>Already seated when others arrive. Possession of position. Hands flat on the table — controls his tell, but not perfectly.</td></tr>
+      <tr><td>Memorable</td><td>Reorganizes objects on the table when he doesn't like what he's hearing. Small adjustments. A cup moved two inches.</td></tr>
+      <tr><td>First impression</td><td>He has already decided the outcome of this council. He is performing it for the record.</td></tr>
+    </table>
+
+    <h2>NPC — Tribune Lucius (council — dangerous)</h2>
+    <table class="npc-desc-table">
+      <tr><td>Look</td><td>Young and too controlled. The face of someone who practiced this expression.</td></tr>
+      <tr><td>Wearing</td><td>Tribunus laticlavius stripe on his tunic, gleaming. He dressed carefully for this council.</td></tr>
+      <tr><td>Posture</td><td>Slightly back from the table — never leans in. Observing, assessing. Always has a wall exit available.</td></tr>
+      <tr><td>Memorable</td><td>He never disagrees directly. He asks questions. The questions contain the disagreement.</td></tr>
+      <tr><td>First impression</td><td>He knows more than he has said in any session. What he does with that today is the session's real question.</td></tr>
+    </table>
+  </div>
+
+  <div>
+    <h2>NPC — Centurion Varro (siege-worn)</h2>
+    <table class="npc-desc-table">
+      <tr><td>Look</td><td>Two days of siege beard. No sleep visible. Still in working armor — he hasn't changed since the gate breach.</td></tr>
+      <tr><td>Wearing</td><td>Standard centurion kit, battered. The vine staff is cracked — he was at the gate when the ram first hit.</td></tr>
+      <tr><td>Posture</td><td>Against the wall, not seated. He doesn't trust chairs right now. Weight on the balls of his feet.</td></tr>
+      <tr><td>Memorable</td><td>He counts the party members when they enter the room. He has been doing this since Session 1. He noticed when they were all there.</td></tr>
+      <tr><td>First impression</td><td>He is the reason this fort exists today. He knows it. He is not proud — just tired, and still moving.</td></tr>
+    </table>
+
+    <h2>NPC — Cassia Liviana (augur, decided)</h2>
+    <table class="npc-desc-table">
+      <tr><td>Look</td><td>Rested, despite everything. She slept after the augury. What she saw steadied her.</td></tr>
+      <tr><td>Wearing</td><td>Augur's robes — white with a dark border. She dressed for the ritual, not for war.</td></tr>
+      <tr><td>Posture</td><td>Still, hands folded, not fidgeting. She has already processed what is coming.</td></tr>
+      <tr><td>Memorable</td><td>When she speaks, she pauses before each sentence. Not uncertainty — consideration. She is choosing words precisely.</td></tr>
+      <tr><td>First impression</td><td>She knows something the rest of the room doesn't. She is deciding whether to say it now or later.</td></tr>
+    </table>
+
+    <h2>Council Paths</h2>
+    <div class="box">
+      <p><b>Roman Authority (Corvinus):</b> Extra legionaries. Disadvantage on Persuasion with Vercingetorix later. Corvinus claims credit for the resolution.</p>
+      <p><b>Shared Custody (Varro + Cassia):</b> Three kneeling witnesses named now (can include PCs). Advantage on future dealings with Mars. Fewer escort numbers.</p>
+      <p><b>Secret Transfer (Lucius):</b> Fake the ritual, destroy the spear. Betrayal path — prepare Session 5 complications.</p>
+    </div>
+
+    <h2>DC Reference — Scene 1</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Corvinus — reading his tell</td><td class="dc">13</td><td>Insight</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Corvinus — hand-signaling bodyguard (5 above)</td><td class="dc">18</td><td>Insight</td><td><span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Captain misdirect (tunnel secured)</td><td class="dc">14</td><td>Deception</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Bypass Corvinus via captain</td><td class="dc">14</td><td>Intimidation</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Varro's office — tunnel map</td><td class="dc">14</td><td>Investigation</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Saboteur interrogation (if captured)</td><td class="dc">15</td><td>Intimidation</td><td><span class="tag tag-active">active</span></td></tr>
+    </table>
+
+    <h2>Pre-Session Private Questions</h2>
+    <div class="box secret">
+      <div class="player-q">
+        <div class="player-name">Julia / Jana</div>
+        <div class="player-q-text">The council is deciding the escort. A reinforcing unit from the Rhine may arrive in time for Session 5 — possibly your father's. The spear's outcome affects whether he is ordered into that position. What does Julia do with that information if she discovers it?</div>
+      </div>
+      <div class="player-q">
+        <div class="player-name">Tanit</div>
+        <div class="player-q-text">The Tribune is alive and knows what you saw him do in Session 2. He has leverage. Does Tanit approach him before this session's council, or wait to be approached?</div>
+      </div>
+      <div class="player-q">
+        <div class="player-name">Iris</div>
+        <div class="player-q-text">You are magic-sensitive. The antechamber of Mars will be overwhelming — you will feel it before anyone else does. When that happens, do you speak immediately, or hold it until you're certain? What does Iris do with information that arrives before the evidence?</div>
+      </div>
+      <div class="player-q">
+        <div class="player-name">Rivia</div>
+        <div class="player-q-text">Vercingetorix is dying and you know it. Corvinus does not. You have information that changes the political calculus of this council — his alliance ends when he does. Does Rivia use it, and if so, for what?</div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene1 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 2 -->
+<div class="tab-panel" id="scene2">
+
+  <div class="beat-header">Beat 1 — The Preparation Window</div>
+  <p>Three preparation actions available before the procession must move. Time is not infinite — the ram is still working. Each preparation changes what the tunnels cost or what the antechamber offers. Choose wisely.</p>
+  <p><b>Handout 9 distributed here</b> — the sealed siege orders with the escort route. Players can cross-reference with the tunnel map from Varro's office.</p>
+
+  <div class="beat-header beat-2">THE MOMENT — The Stair Opens</div>
+  <div class="box moment">
+    <p>The hidden stair in the principia, exactly where the tunnel map said it would be. It opens downward. The air that comes up is cold and old — not the cold of a cellar, the cold of something that has been sealed for a long time.</p>
+    <p>History DC 14 (passive): pre-Hadrianic Roman military engineering. This is not Vindolanda's basement. This is what Vindolanda was built on top of. They are going somewhere older than this fort.</p>
+    <p><em>"Cassia lights a lamp. The flame bends toward the stairwell, not away. Something below is pulling the air. Something is breathing."</em></p>
+  </div>
+
+  <div class="beat-header">Beat 3 — Into the Tunnel</div>
+  <p>Preparations locked in. Escort assembled by the chosen council path. The clocks are where they are. The stair is open. Down.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 2</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">The hidden stair: stone, dry, old — each step worn in the center, not by the current fort's traffic but by something before. Cassia's lamp flame bending toward it.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">Above: the ram, always. From below: silence — the total silence of sealed spaces, more complete than any natural silence. It absorbs sound from the stairwell edge.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Old stone. Mineral. The faint smell of marsh gas — faint here, concentrated below. Cassia's incense from the blessing rite, still clinging to the group.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">Cold air rising from below, notably colder than the siege-warm fort above. The transition is sharp — five degrees in three steps. The stair stones are bone dry despite the cold.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">The beginning of the mineral taste that will intensify in the Choking Hall. Barely perceptible here. The body is already registering.</div></div>
+    </div>
+
+    <h2>Available Preparations (choose up to 3)</h2>
+    <div class="box">
+      <div class="trust-row"><div class="trust-dc">Prep 1</div><div class="trust-text"><b>Scout the stair</b> — Perception DC 14. Finds pressure-plate trap (left by the original Romans). Disarm: Thieves' Tools DC 13. Skip this: trap triggers on the escort, 1d6 per character at front.</div></div>
+      <div class="trust-row"><div class="trust-dc">Prep 2</div><div class="trust-text"><b>Map the tunnel gas</b> — Nature DC 13 passive. Marsh gas — denser near the floor, not ceiling. Halves Con saves required in the Choking Hall.</div></div>
+      <div class="trust-row"><div class="trust-dc">Prep 3</div><div class="trust-text"><b>Secure the vicus</b> — Persuasion DC 15 or Deception DC 14. Calm civilians before procession. Deception works faster but creates confusion when Mars's arrival is obvious.</div></div>
+      <div class="trust-row"><div class="trust-dc">Prep 4</div><div class="trust-text"><b>Blessing rite</b> — Religion or Performance DC 14. +1d4 temp HP to the escort. Performance works for a character leading it as ceremony rather than prayer.</div></div>
+      <div class="trust-row"><div class="trust-dc">Prep 5</div><div class="trust-text"><b>Calm the horses</b> — Animal Handling DC 11. Draft horses react to the spear's proximity. Fail: 10-minute delay. Corvinus notes it.</div></div>
+    </div>
+  </div>
+
+  <div>
+    <h2>DC Reference — Scene 2</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Scout the stair — pressure plate</td><td class="dc">14</td><td>Perception</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Disarm the plate</td><td class="dc">13</td><td>Thieves' Tools</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>History of the installation</td><td class="dc">14</td><td>History</td><td><span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Map the tunnel gas</td><td class="dc">13</td><td>Nature</td><td><span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Secure the vicus — persuasion</td><td class="dc">15</td><td>Persuasion</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Secure the vicus — deception</td><td class="dc">14</td><td>Deception</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Blessing rite</td><td class="dc">14</td><td>Religion / Performance</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Calm the horses</td><td class="dc">11</td><td>Animal Handling</td><td><span class="tag tag-active">active</span></td></tr>
+    </table>
+
+    <h2>If No Preparations Made</h2>
+    <div class="box warn">
+      Party enters unprepared. Pressure plate triggers on the first escort member (1d6 each at the front). Gas halves are not known — full Con DCs in Choking Hall. Horses cause a 10-minute delay that Corvinus reports. Escort enters in worse condition with a suspicious senior officer.<br><br>
+      This is valid. The pressure of the siege is the entire point. Not every party prepares perfectly. Adjust Tunnel difficulty accordingly.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene2 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 3 -->
+<div class="tab-panel" id="scene3">
+
+  <div class="beat-header">Beat 1 — Sunken Armory</div>
+  <p>The first tunnel chamber opens into an armory — armor in full combat formation, not scattered. Perception DC 11: they are standing at attention, not fallen. Varro: "Romans don't leave armor like that. They fall in armor. Or they're ordered to stand." — He's right. They were left like this deliberately.</p>
+  <p>Arcana DC 14 (passive): divine resonance, not undead. No undead vulnerabilities. These are constructs in Mars' service. Hesitation draws their attention; decisive movement does not.</p>
+  <p>History DC 14 (passive): pre-Hadrianic armor, 80–100 years older than Vindolanda. The chamber was sealed when the current fort was built on top of it.</p>
+
+  <div class="beat-header beat-2">THE MOMENT — Choking Hall</div>
+  <div class="box moment">
+    <p>The gas vents. One character goes down first — whoever is smallest or has the worst Constitution. They simply stop and sit, unable to coordinate their limbs. Their eyes are open.</p>
+    <p><b>The choice:</b> Continue with a downed character, or stop in a poisoned hall to treat them. Neither answer is obviously correct. The antechamber is ahead. The siege is above.</p>
+    <p>Con saves DC 14 each round. If gas type was mapped in Scene 2 (Nature DC 13 passive): halve the required saves. Air pockets findable with Stealth DC 13 (moving slowly, locating by temperature differential).</p>
+    <p>Medicine DC 13 to stabilize a downed character without spell slot. Patient continues after one round of treatment. Without Medicine: the downed character takes 1d4 per round from the gas.</p>
+  </div>
+
+  <div class="beat-header">Beat 3 — Elder Stair / Brutus's Agent</div>
+  <p>The stair rises toward the antechamber. Midway: rockfall, deliberately triggered. Brutus's agent — one of the escort soldiers, if the party didn't catch the insider before scene start — pulls a support stone.</p>
+  <p>Dexterity save DC 15 (or Acrobatics DC 13 if bracing explicitly). Fail: 2d8 bludgeoning, spear drops. Contested Strength to keep it from falling into the shaft if it drops.</p>
+  <p>Insight DC 13 (active): the spear's weight shifts toward the altar chamber before it can be seen — direction specific, consistent. Window closes entering the antechamber. Noting this: Advantage on the first Persuasion check with Mars.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 3</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Armory: armor at attention in perfect formation, torch shadows wrong for their positions — they move slightly, not from air currents. Choking Hall: visibility limited by gas shimmer. Elder Stair: older stone, better carved — this part of the structure was built with intention.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">Armory: the creak of metal joints when the constructs activate. Choking Hall: a hiss from wall vents — then coughing. Elder Stair: the crack of a support stone pulled, then the cascade of rockfall ahead.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Choking Hall: the gas — sweet-rot smell, not sharp. Sulfuric would be obvious. This is subtler. Below face level it's denser. The floor is the danger.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">Armory: the air pressure changes when the constructs activate — a slight outward push, like something drawing breath. Elder Stair: the spear's weight shifts forward, toward something ahead. Whoever carries it feels it.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Choking Hall: the gas — sweet in the mouth before it hits the lungs. The body tries to exhale but the gas stays. Metallic undertone that intensifies toward the antechamber.</div></div>
+    </div>
+
+    <h2>Sunken Armory Combat</h2>
+    <div class="box">
+      <p>Use <b>Animated Armor</b> (MM p.19) with +1 AC (old Roman construction, not magical). Two constructs — one per side of the chamber. Formation means they move as a unit.</p>
+      <p>Calling out formation to Varro before activation (Perception DC 11): first defender gets Advantage on first attack roll.</p>
+      <p>Hesitating visibly (spending more than 30 seconds discussing in a 6-second round): first construct activates. Decisive movement through the chamber without attack posture: constructs do not activate — they are guarding, not hunting.</p>
+    </div>
+  </div>
+
+  <div>
+    <h2>DC Reference — Scene 3</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Armory — formation read</td><td class="dc">11</td><td>Perception</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Armory — armor age</td><td class="dc">14</td><td>History</td><td><span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Armory — animation type (divine)</td><td class="dc">14</td><td>Arcana</td><td><span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Choking Hall — Con save each round</td><td class="dc">14</td><td>Constitution</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Choking Hall — treat downed ally</td><td class="dc">13</td><td>Medicine</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Choking Hall — find air pockets</td><td class="dc">13</td><td>Stealth</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Elder Stair — rockfall reflex</td><td class="dc">15</td><td>Dexterity save</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Elder Stair — rockfall (explicit brace)</td><td class="dc">13</td><td>Acrobatics</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Elder Stair — spear direction</td><td class="dc">13</td><td>Insight</td><td><span class="tag tag-key">window closes</span></td></tr>
+      <tr><td>Spear dropped — keep from shaft</td><td class="dc">var.</td><td>Strength (contested)</td><td><span class="tag tag-active">active</span></td></tr>
+    </table>
+
+    <h2>If Escort Members Die in Tunnels</h2>
+    <div class="box warn">
+      The escort losing soldiers changes the antechamber's kneeling options — fewer bodies to fill the three required roles. The party may need to fill positions themselves. Track carefully: who is still functional when Scene 4 begins.
+    </div>
+
+    <h2>Brutus's Agent</h2>
+    <div class="box secret">
+      One of the escort soldiers — present only if the party chose Roman Authority (Corvinus's additional legionaries) or if the Scene 0 insider was not caught.<br><br>
+      If the party identified the insider's contact in Cold Open (Intimidation DC 15, 5 above): they know which soldier to watch. Advantage on Perception to catch the rockfall attempt before it completes. On success: the agent is stopped and becomes another interrogation asset.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene3 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 4 -->
+<div class="tab-panel" id="scene4">
+
+  <div class="beat-header">Beat 1 — The Antechamber</div>
+  <p>Stone walls, no torches — light comes from the altar itself. The space is older than the tunnels; older than Vindolanda; older than Rome at this latitude. The altar is at the far end. The spear, when placed or carried here, levitates two inches above its surface, rotating slowly.</p>
+  <p><em>"The sound of the siege reaches you as if through water — distant, muffled, not urgent. Something in this room is more important than what is happening above."</em></p>
+  <p>Iris (magic-sensitive): she feels it first — the arrival of attention. From above, from below, from the walls. Concentrated here. Has been concentrated here for a very long time.</p>
+
+  <div class="beat-header beat-2">THE MOMENT — Three Figures Must Kneel</div>
+  <div class="box moment">
+    <p>Mars does not appear. He is already here — the room is his attention made architectural. When the demand comes, it does not come as sound.</p>
+    <p><em>Three figures. One Roman. One Germanic. One spear-touched. Kneel. Or we do not continue.</em></p>
+    <p><b>The party decides who kneels:</b></p>
+    <ul>
+      <li><b>One volunteer:</b> Mars allows it. Session 5 begins with one extra consequence already in effect.</li>
+      <li><b>Two volunteers:</b> He accepts with reservations. Session 5 begins normally.</li>
+      <li><b>Three correct volunteers:</b> Mars is satisfied. One Session 5 trial drops one difficulty tier — GM's choice, pick the one that makes S5 most interesting.</li>
+    </ul>
+    <p>Then: <b>Sacrifice type declared</b> (see below). The spear responds to the type — blood rises it, glory steadies it, obedience aligns it with the altar.</p>
+  </div>
+
+  <div class="beat-header">Beat 3 — The Pause in the Siege</div>
+  <p>Whatever sacrifice is accepted: the spear levitates fully. Light from the altar pulses once — felt through the stone, through the floor above, through the boots of every Germanic warrior at the gate. The ram stops. The horns go silent. Not because the siege is over — because something has spoken.</p>
+  <p>The party has a window. What they do with it determines how Session 5 opens.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 4</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Light from the altar — amber-gold, no source. The spear levitating two inches above the stone, rotating slowly. The walls have carvings: some older than Rome, some newer, some that appear to be adding themselves as the party watches.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">The siege muffled, as through water. Then, when the demand comes, not through sound — through understanding, the way you understand you are being watched without hearing footsteps.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Hot iron — the antechamber smells of forges and blood and the clean metal smell of new weapons. Specific, not unpleasant. Martial. This is a war god's space.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The floor is warm. Not from below — from within the stone itself. The warmth is consistent: uniform, ancient, not fading. Whoever carries the spear feels the warmth in their hands first.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Metal — sharp, clean, like a sword just drawn. The taste intensifies when the sacrifice type is declared. On blood: metallic. On glory: nothing. On obedience: the taste of anticipation.</div></div>
+    </div>
+
+    <h2>Sacrifice Types</h2>
+    <div class="box">
+      <p><b>Blood:</b> 10 HP per volunteer. Mars removes one corruption stage from that character. Visible: a cut appears on the volunteer's palm, bleeds into the altar, stops. The spear rises.</p>
+      <p><b>Glory:</b> Swear publicly to bear the blame for everything that follows. Advantage on Persuasion vs. legionaries; become scapegoat in Session 5 political fallout. Visible: the spear glows steady — a soldier's salute.</p>
+      <p><b>Obedience:</b> Promise to carry out Mars' Call to War in Session 5. Guarantees a favorable start to the final trial. Visible: the spear aligns with the altar precisely, hovering at a specific angle — it is pointing somewhere specific.</p>
+    </div>
+
+    <h2>DC Reference — Scene 4</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Spear direction shift (from Elder Stair)</td><td class="dc">—</td><td>—</td><td>Advantage on first Persuasion if noted in Scene 3</td></tr>
+      <tr><td>Antechamber age — older than fort</td><td class="dc">15</td><td>History</td><td><span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Mars's presence — magic-sensitive detection</td><td class="dc">—</td><td>—</td><td>Iris: automatic. Others: Arcana DC 13 passive</td></tr>
+      <tr><td>Wall carvings — adding themselves</td><td class="dc">14</td><td>Arcana / Religion</td><td><span class="tag tag-passive">passive</span></td></tr>
+    </table>
+  </div>
+
+  <div>
+    <h2>Environment — Antechamber</h2>
+    <div class="box">
+      <p><b>Size:</b> 40 ft × 60 ft. High vaulted ceiling, unsupported, pre-Roman construction. No columns.</p>
+      <p><b>The altar:</b> Granite, identical to the grove altar in Session 3. It is the same altar — or the same type, consecrated the same way. Cassia: "This was built by the same hand as the grove. Or built to the same pattern. Or Mars has the same taste in furniture everywhere." She's not joking.</p>
+      <p><b>Exits:</b> The stair they came from. One sealed passage behind the altar, bricked, deliberately. Whatever is behind it is not relevant to this session. Don't open it unless S5 needs a hook.</p>
+    </div>
+
+    <h2>If Kneeling Refused</h2>
+    <div class="box warn">
+      Mars does not force it. He waits. The siege does not pause. The siege above gets louder — the ram's rhythm penetrates even this room, as if Mars is letting the world make the argument for him.<br><br>
+      After two minutes of refusal: "You came this far. You hold the spear. You will kneel, or you will leave with nothing decided and nothing gained. The siege will settle the question for you."<br><br>
+      If still refused: Session 5 begins in a crisis state. No reduction in trial difficulty. One additional consequence from the kneeling refusal.
+    </div>
+
+    <h2>Session End — Seeds for Session 5</h2>
+    <div class="box green">
+      <b>The siege pause:</b> Germanic commanders heard it too. It creates a negotiation window — not peace, but pause. How long the party holds it is Session 5's opening question.<br><br>
+      <b>Corvinus (if he reached the antechamber):</b> He saw what happened. He is not the same man who arrived. He will not say what changed. Something was resolved for him. Something else began.<br><br>
+      <b>Lucius (Secret Transfer path):</b> His ravens from Brutus stop arriving. Either Brutus received word and has moved to Plan B, or the ravens have been intercepted. Neither is good news.<br><br>
+      <b>Vercingetorix:</b> If allied and present, he collapsed during the ritual light pulse. He is alive. He is at the grove by dawn — no explanation given.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene4 -->
+
+<!-- ═══════════════════════════════════════════════════════ QUICK REF -->
+<div class="tab-panel" id="quick-ref">
+
+  <div class="grid">
+  <div>
+    <h2>OGAS — Session 4 NPCs</h2>
+    <table>
+      <tr><th>NPC</th><th>Session Goal</th><th>Secret</th></tr>
+      <tr><td><b>Legate Corvinus</b></td><td>Control the escort to claim credit for the resolution</td><td><em>His report to Rome blamed the party; fears exposure if they talk.</em></td></tr>
+      <tr><td><b>Tribune Lucius</b></td><td>Destroy or sabotage the spear without dying</td><td><em>Still receiving ravens from Brutus ordering Cassia's death.</em></td></tr>
+      <tr><td><b>Centurion Varro</b></td><td>Put the right soldiers in the escort; keep people alive</td><td><em>Morale near collapse; only the party can steady it.</em></td></tr>
+      <tr><td><b>Augur Cassia</b></td><td>Deliver the spear and interpret the omens correctly</td><td><em>Knows that if no one kneels, she will do it alone and die.</em></td></tr>
+      <tr><td><b>Vercingetorix</b></td><td>Secure a promise to return the spear to the grove</td><td><em>Dying faster. This is his last chance.</em></td></tr>
+      <tr><td><b>Senator Brutus</b> (off-screen)</td><td>Burn the fort or kill Cassia before the ritual</td><td><em>Has a Plan B ritual arranged for Session 5 if this fails.</em></td></tr>
+    </table>
+
+    <h2>Three Clue Rule</h2>
+    <div class="box">
+      <b>Mars demands three kneeling figures:</b> Cassia's augury vision (three kneeling, spear levitating, siege pausing) · Tunnel map from Varro's office or Vercingetorix's envoy (rune marks where Thusnelda first sealed the spear — the altar is the endpoint) · Saboteur confession (Brutus burned the fort to prevent Mars being appeased — confirming Mars can be bargained with if the spear reaches the site)
+    </div>
+
+    <h2>Three Kneeling Figures</h2>
+    <div class="box">
+      Mars demands: one Roman, one Germanic, one spear-touched.<br><br>
+      <b>One volunteer:</b> Allowed. S5 begins with one extra consequence.<br>
+      <b>Two volunteers:</b> Accepted with reservations. S5 begins normally.<br>
+      <b>Three correct:</b> Satisfied. One S5 trial drops one difficulty tier (GM picks which makes S5 most interesting).<br><br>
+      <b>Sacrifice types:</b><br>
+      — <b>Blood:</b> 10 HP per volunteer. Mars removes one corruption stage.<br>
+      — <b>Glory:</b> Swear to bear the blame. Advantage on Persuasion vs. legionaries; scapegoat in S5 political fallout.<br>
+      — <b>Obedience:</b> Promise Mars' Call to War in S5. Favorable start to the final trial.
+    </div>
+
+    <h2>Commendationes This Session</h2>
+    <div class="box">
+      <p><b>1:</b> Holding the wall during the gate breach — the character whose action determines whether the gate holds. Varro files without being asked.</p>
+      <p><b>2:</b> Abandoning a tactically superior position to protect vicus civilians. Corvinus resents it and files the paperwork anyway.</p>
+      <p><b>3:</b> Holding the alliance with Vercingetorix against Corvinus/Lucius pressure. No commendatio from Corvinus — the reward is different: Vercingetorix names the party in a specific way at session end.</p>
+      <p style="margin-top:8px"><b>Citizenship window:</b> Tribune Lucius offers a personal attestation in his Rome dispatch — available to any character with Latini standing and 3+ commendationes. Must be party-initiated. Closes if session ends without follow-up.</p>
+    </div>
+  </div>
+
+  <div>
+    <h2>Escalating Stakes</h2>
+    <table>
+      <tr><th>Session</th><th>Stakes</th><th>What changes</th></tr>
+      <tr><td>S1</td><td><span class="stakes-badge stakes-personal">Personal</span></td><td>Individual survival, first duty conflict</td></tr>
+      <tr><td>S2</td><td><span class="stakes-badge stakes-fort">Fort</span></td><td>Vindolanda's loyalty, political exposure</td></tr>
+      <tr><td>S3</td><td><span class="stakes-badge stakes-regional">Regional</span></td><td>Spear's power affects the whole frontier</td></tr>
+      <tr><td><b>S4</b></td><td><span class="stakes-badge stakes-imperial">Imperial</span></td><td>Imperial court, Tribune's true mission, senatorial plot</td></tr>
+      <tr><td>S5</td><td><span class="stakes-badge stakes-divine">Divine</span></td><td>Mark of Mars, divine economy, what gods want from mortals</td></tr>
+    </table>
+
+    <h2>Siege Clocks (running)</h2>
+    <div class="box warn">
+      <div class="clock-row"><div class="clock-name">Food</div><div class="clock-pips">●●●</div><div class="clock-effect">-1 if granary fire not fully stopped. At 0: civilian riot, Disadvantage on initiative in tunnels.</div></div>
+      <div class="clock-row"><div class="clock-name">Morale</div><div class="clock-pips">●●</div><div class="clock-effect">-1 if Corvinus bullies council or civilians panic. At 0: same as Food 0.</div></div>
+      Keep both visible. Smoke through council window. Ram tremor during preparation scene.
+    </div>
+
+    <h2>Reactive World — If Party Is Passive</h2>
+    <div class="box warn">
+      <b>Corvinus:</b> Takes control of the escort. Roman Authority path by default. Brutus's agent inside. Elder Stair rockfall unchecked. Escort arrives at antechamber short three members.<br>
+      <b>Lucius:</b> Moves on Cassia during Scene 2 preparation — not assassination, but isolation. She is removed from the escort. The antechamber has no augur.<br>
+      <b>Food Clock at 0:</b> Civilian riot in Scene 2 prep requires 1 preparation slot to contain. Escort enters tunnels one preparation short.<br>
+      <b>Default:</b> Party's passivity = worse escort, no preparation buffs, Brutus's agent undetected, tunnel complications fully active.
+    </div>
+
+    <h2>Contingency: Corvinus Sidelined</h2>
+    <div class="box warn">
+      If Corvinus felt sidelined during Scene 1 (Shared Custody or Secret Transfer path, he lost the council vote): he arrests Cassia at session end, citing unauthorized augury during active military operations. Rescue scenario opens Session 5.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end quick-ref -->
+
 </body>
 </html>
