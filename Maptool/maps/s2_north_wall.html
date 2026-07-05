@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S2 — North Wall Battle Map</title>
+<style>
+  body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
+  svg { display: block; margin: 0 auto; }
+  .notes { max-width: 1320px; margin: 20px auto 0; }
+  h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+  td, th { padding: 5px 10px; border: 1px solid #2a2018; vertical-align: top; }
+  th { background: #1a1510; color: #c8a850; text-align: left; }
+  tr:nth-child(even) td { background: #141210; }
+  tr:nth-child(odd) td { background: #0d0b08; }
+  .enc { color: #c84040; }
+  .mech { color: #90c880; }
+  .draw { color: #8ab0c8; }
+</style>
+</head>
+<body>
+<!--
+  GRID: 60px = 1 sq = 5ft
+  Canvas: 1320×840
+  NW Tower: x=0, y=0, w=240, h=420
+  NE Tower: x=1080, y=0, w=240, h=420
+  Wall body: x=240–1080, y=120–300 (with gate gap x=540–780)
+  Walkway: x=240–1080, y=180–240
+  Gate: x=540, y=60, w=240, h=240
+  Stairs west: x=240, y=300, w=120, h=120
+  Stairs east: x=960, y=300, w=120, h=120
+  Courtyard: x=0, y=420, w=1320, h=420
+  All multiples of 60
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="840" viewBox="0 0 1320 840">
+<defs>
+  <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.28)" stroke-width="0.7"/>
+  </pattern>
+  <radialGradient id="tglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#c89050" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="moonlight" cx="50%" cy="20%" r="70%">
+    <stop offset="0%" stop-color="#7090b0" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#7090b0" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<!-- ── EXTERIOR GROUND (north of wall, attackers approach) ── -->
+<rect x="0" y="0" width="1320" height="120" fill="#4a3a1e"/>
+<!-- Grass patches on exterior -->
+<rect x="60" y="10" width="80" height="20" fill="#3a4a20" rx="4"/>
+<rect x="220" y="30" width="60" height="15" fill="#384520" rx="3"/>
+<rect x="480" y="8" width="50" height="18" fill="#3a4a20" rx="3"/>
+<rect x="820" y="25" width="70" height="14" fill="#384520" rx="3"/>
+<rect x="1100" y="12" width="55" height="18" fill="#3a4a20" rx="3"/>
+<!-- Moonlight wash exterior -->
+<rect x="0" y="0" width="1320" height="120" fill="url(#moonlight)"/>
+
+<!-- ── NW TOWER solid stone ── -->
+<rect x="0" y="0" width="240" height="420" fill="#6a6258"/>
+<!-- NW Tower interior room -->
+<rect x="30" y="30" width="180" height="360" fill="#8a8070"/>
+<!-- NW Tower door to walkway -->
+<rect x="100" y="295" width="40" height="25" fill="#2a2010"/>
+
+<!-- ── NE TOWER solid stone ── -->
+<rect x="1080" y="0" width="240" height="420" fill="#6a6258"/>
+<!-- NE Tower interior room -->
+<rect x="1110" y="30" width="180" height="360" fill="#8a8070"/>
+<!-- NE Tower door to walkway -->
+<rect x="1180" y="295" width="40" height="25" fill="#2a2010"/>
+
+<!-- ── MAIN WALL BODY west section ── -->
+<rect x="240" y="120" width="300" height="180" fill="#7c7468"/>
+<!-- ── MAIN WALL BODY east section ── -->
+<rect x="780" y="120" width="300" height="180" fill="#7c7468"/>
+
+<!-- ── GATE VOID (dark passage through wall) ── -->
+<rect x="540" y="60" width="240" height="260" fill="#12100a"/>
+<!-- Gate lintel (stone above arch) -->
+<rect x="520" y="55" width="280" height="20" fill="#5a5248"/>
+<!-- Gate side jambs -->
+<rect x="520" y="60" width="20" height="240" fill="#5a5248"/>
+<rect x="780" y="60" width="20" height="240" fill="#5a5248"/>
+<!-- Gate doors (heavy timber, closed) -->
+<rect x="540" y="240" width="110" height="70" fill="#4a3820" rx="2"/>
+<rect x="670" y="240" width="110" height="70" fill="#4a3820" rx="2"/>
+<!-- Door iron banding -->
+<line x1="540" y1="260" x2="650" y2="260" stroke="#2a2010" stroke-width="4"/>
+<line x1="540" y1="285" x2="650" y2="285" stroke="#2a2010" stroke-width="4"/>
+<line x1="670" y1="260" x2="780" y2="260" stroke="#2a2010" stroke-width="4"/>
+<line x1="670" y1="285" x2="780" y2="285" stroke="#2a2010" stroke-width="4"/>
+<!-- Portcullis bars -->
+<line x1="556" y1="60" x2="556" y2="240" stroke="#3a3028" stroke-width="5"/>
+<line x1="588" y1="60" x2="588" y2="240" stroke="#3a3028" stroke-width="5"/>
+<line x1="620" y1="60" x2="620" y2="240" stroke="#3a3028" stroke-width="5"/>
+<line x1="652" y1="60" x2="652" y2="240" stroke="#3a3028" stroke-width="5"/>
+<line x1="684" y1="60" x2="684" y2="240" stroke="#3a3028" stroke-width="5"/>
+<line x1="716" y1="60" x2="716" y2="240" stroke="#3a3028" stroke-width="5"/>
+<line x1="748" y1="60" x2="748" y2="240" stroke="#3a3028" stroke-width="5"/>
+<!-- Portcullis horizontals -->
+<line x1="540" y1="100" x2="780" y2="100" stroke="#3a3028" stroke-width="3"/>
+<line x1="540" y1="150" x2="780" y2="150" stroke="#3a3028" stroke-width="3"/>
+<line x1="540" y1="200" x2="780" y2="200" stroke="#3a3028" stroke-width="3"/>
+
+<!-- ── WALKWAY FLOOR west ── -->
+<rect x="240" y="180" width="300" height="60" fill="#b0a488"/>
+<!-- ── WALKWAY FLOOR east ── -->
+<rect x="780" y="180" width="300" height="60" fill="#b0a488"/>
+
+<!-- ── CRENELLATIONS (merlons) ── -->
+<!-- NW Tower merlons -->
+<rect x="15" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="75" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="135" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="195" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<!-- West wall merlons -->
+<rect x="255" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="315" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="375" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="435" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="495" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<!-- Gate tower battlements -->
+<rect x="515" y="30" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="777" y="30" width="28" height="32" fill="#5a5248" rx="2"/>
+<!-- East wall merlons -->
+<rect x="795" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="855" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="915" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="975" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="1035" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<!-- NE Tower merlons -->
+<rect x="1095" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="1155" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="1215" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+<rect x="1275" y="88" width="28" height="32" fill="#5a5248" rx="2"/>
+
+<!-- ── ARROW LOOPS in towers ── -->
+<rect x="115" y="128" width="10" height="22" fill="#1a1510" rx="1"/>
+<rect x="200" y="170" width="22" height="10" fill="#1a1510" rx="1"/>
+<rect x="1195" y="128" width="10" height="22" fill="#1a1510" rx="1"/>
+<rect x="1098" y="170" width="22" height="10" fill="#1a1510" rx="1"/>
+
+<!-- ── STAIR WEST (walkway to courtyard) ── -->
+<rect x="240" y="300" width="120" height="120" fill="#9a9080"/>
+<!-- stair treads -->
+<line x1="240" y1="315" x2="360" y2="315" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="240" y1="330" x2="360" y2="330" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="240" y1="345" x2="360" y2="345" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="240" y1="360" x2="360" y2="360" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="240" y1="375" x2="360" y2="375" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="240" y1="390" x2="360" y2="390" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="240" y1="405" x2="360" y2="405" stroke="#6a6258" stroke-width="1.5"/>
+<!-- stair arrow (direction) -->
+<line x1="300" y1="310" x2="300" y2="415" stroke="#c8a850" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+<!-- ── STAIR EAST ── -->
+<rect x="960" y="300" width="120" height="120" fill="#9a9080"/>
+<line x1="960" y1="315" x2="1080" y2="315" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="960" y1="330" x2="1080" y2="330" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="960" y1="345" x2="1080" y2="345" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="960" y1="360" x2="1080" y2="360" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="960" y1="375" x2="1080" y2="375" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="960" y1="390" x2="1080" y2="390" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="960" y1="405" x2="1080" y2="405" stroke="#6a6258" stroke-width="1.5"/>
+<line x1="1020" y1="310" x2="1020" y2="415" stroke="#c8a850" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+<!-- ── INTERIOR COURTYARD ── -->
+<rect x="0" y="420" width="1320" height="420" fill="#c0b090"/>
+<!-- Flagstone cracks -->
+<line x1="120" y1="420" x2="120" y2="840" stroke="#a89878" stroke-width="0.5"/>
+<line x1="360" y1="420" x2="360" y2="840" stroke="#a89878" stroke-width="0.5"/>
+<line x1="600" y1="420" x2="600" y2="840" stroke="#a89878" stroke-width="0.5"/>
+<line x1="840" y1="420" x2="840" y2="840" stroke="#a89878" stroke-width="0.5"/>
+<line x1="1080" y1="420" x2="1080" y2="840" stroke="#a89878" stroke-width="0.5"/>
+<line x1="0" y1="540" x2="1320" y2="540" stroke="#a89878" stroke-width="0.5"/>
+<line x1="0" y1="660" x2="1320" y2="660" stroke="#a89878" stroke-width="0.5"/>
+<line x1="0" y1="780" x2="1320" y2="780" stroke="#a89878" stroke-width="0.5"/>
+
+<!-- ── ROPE LADDERS (raider attack vectors, exterior) ── -->
+<!-- Ladder 1: west approach -->
+<line x1="390" y1="120" x2="360" y2="0" stroke="#8a6a30" stroke-width="3"/>
+<line x1="430" y1="120" x2="400" y2="0" stroke="#8a6a30" stroke-width="3"/>
+<line x1="393" y1="100" x2="427" y2="103" stroke="#8a6a30" stroke-width="2"/>
+<line x1="387" y1="78" x2="421" y2="81" stroke="#8a6a30" stroke-width="2"/>
+<line x1="381" y1="55" x2="415" y2="58" stroke="#8a6a30" stroke-width="2"/>
+<line x1="374" y1="32" x2="408" y2="35" stroke="#8a6a30" stroke-width="2"/>
+<!-- Ladder 2: east approach -->
+<line x1="890" y1="120" x2="860" y2="0" stroke="#8a6a30" stroke-width="3"/>
+<line x1="930" y1="120" x2="900" y2="0" stroke="#8a6a30" stroke-width="3"/>
+<line x1="893" y1="100" x2="927" y2="103" stroke="#8a6a30" stroke-width="2"/>
+<line x1="887" y1="78" x2="921" y2="81" stroke="#8a6a30" stroke-width="2"/>
+<line x1="881" y1="55" x2="915" y2="58" stroke="#8a6a30" stroke-width="2"/>
+<line x1="874" y1="32" x2="908" y2="35" stroke="#8a6a30" stroke-width="2"/>
+
+<!-- ── TORCHES on walkway ── -->
+<!-- West torch -->
+<circle cx="390" cy="195" r="6" fill="#7a6040"/>
+<ellipse cx="390" cy="185" rx="5" ry="8" fill="#e08830" opacity="0.85"/>
+<ellipse cx="390" cy="183" rx="3" ry="5" fill="#f0c050" opacity="0.7"/>
+<circle cx="390" cy="195" r="28" fill="url(#tglow)"/>
+<!-- East torch -->
+<circle cx="930" cy="195" r="6" fill="#7a6040"/>
+<ellipse cx="930" cy="185" rx="5" ry="8" fill="#e08830" opacity="0.85"/>
+<ellipse cx="930" cy="183" rx="3" ry="5" fill="#f0c050" opacity="0.7"/>
+<circle cx="930" cy="195" r="28" fill="url(#tglow)"/>
+<!-- Courtyard torches -->
+<circle cx="300" cy="480" r="6" fill="#7a6040"/>
+<ellipse cx="300" cy="470" rx="5" ry="8" fill="#e08830" opacity="0.75"/>
+<circle cx="300" cy="480" r="30" fill="url(#tglow)"/>
+<circle cx="1020" cy="480" r="6" fill="#7a6040"/>
+<ellipse cx="1020" cy="470" rx="5" ry="8" fill="#e08830" opacity="0.75"/>
+<circle cx="1020" cy="480" r="30" fill="url(#tglow)"/>
+
+<!-- ── BALLISTA on walkway ── -->
+<!-- West ballista position -->
+<rect x="430" y="185" width="30" height="22" fill="#5a4830" rx="3"/>
+<line x1="432" y1="196" x2="458" y2="196" stroke="#8a7050" stroke-width="3"/>
+<line x1="445" y1="185" x2="445" y2="207" stroke="#8a7050" stroke-width="2"/>
+
+<!-- ── ROOM NUMBERS ── -->
+<circle cx="120" cy="200" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+<text x="120" y="205" text-anchor="middle" font-size="11" fill="#c8a850" font-family="Georgia">1</text>
+
+<circle cx="1200" cy="200" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+<text x="1200" y="205" text-anchor="middle" font-size="11" fill="#c8a850" font-family="Georgia">2</text>
+
+<circle cx="390" cy="215" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+<text x="390" y="220" text-anchor="middle" font-size="11" fill="#c8a850" font-family="Georgia">3</text>
+
+<circle cx="930" cy="215" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+<text x="930" y="220" text-anchor="middle" font-size="11" fill="#c8a850" font-family="Georgia">4</text>
+
+<circle cx="660" cy="170" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+<text x="660" y="175" text-anchor="middle" font-size="11" fill="#c8a850" font-family="Georgia">5</text>
+
+<circle cx="300" cy="360" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+<text x="300" y="365" text-anchor="middle" font-size="11" fill="#c8a850" font-family="Georgia">6</text>
+
+<circle cx="1020" cy="360" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+<text x="1020" y="365" text-anchor="middle" font-size="11" fill="#c8a850" font-family="Georgia">7</text>
+
+<circle cx="660" cy="630" r="13" fill="#1a1510" stroke="#c8a850" stroke-width="1.5"/>
+<text x="660" y="635" text-anchor="middle" font-size="11" fill="#c8a850" font-family="Georgia">8</text>
+
+<!-- ── COMPASS ROSE ── -->
+<g transform="translate(1250,780)">
+  <circle cx="0" cy="0" r="24" fill="#1a1510" stroke="#c8a850" stroke-width="1"/>
+  <polygon points="0,-20 4,-6 0,-10 -4,-6" fill="#c8a850"/>
+  <polygon points="0,20 4,6 0,10 -4,6" fill="#6a6050"/>
+  <polygon points="-20,0 -6,-4 -10,0 -6,4" fill="#6a6050"/>
+  <polygon points="20,0 6,-4 10,0 6,4" fill="#6a6050"/>
+  <text x="0" y="-25" text-anchor="middle" font-size="9" fill="#c8a850" font-family="Georgia">N</text>
+</g>
+
+<!-- ── SCALE BAR ── -->
+<g transform="translate(60,810)">
+  <rect x="0" y="0" width="60" height="6" fill="#c8a850"/>
+  <rect x="60" y="0" width="60" height="6" fill="#1a1510" stroke="#c8a850" stroke-width="0.5"/>
+  <rect x="120" y="0" width="60" height="6" fill="#c8a850"/>
+  <text x="0" y="-3" font-size="8" fill="#c8a850" font-family="Georgia">0</text>
+  <text x="57" y="-3" font-size="8" fill="#c8a850" font-family="Georgia">5ft</text>
+  <text x="117" y="-3" font-size="8" fill="#c8a850" font-family="Georgia">10ft</text>
+  <text x="177" y="-3" font-size="8" fill="#c8a850" font-family="Georgia">15ft</text>
+</g>
+
+<!-- ── GRID (DRAWN LAST) ── -->
+<rect width="1320" height="840" fill="url(#grid)"/>
+
+</svg>
+
+<div class="notes">
+  <h2>DM REFERENCE — S2 NORTH WALL</h2>
+  <table>
+    <tr><th>#</th><th>Area</th><th>Scene</th><th>Tokens</th><th class="mech">Mechanics</th></tr>
+    <tr><td>1</td><td>NW Tower</td><td>Scene 0, 3</td><td>Guard ×2</td><td class="mech">Arrow loops: ranged cover. Door to walkway costs 5ft movement.</td></tr>
+    <tr><td>2</td><td>NE Tower</td><td>Scene 0, 3</td><td>Guard ×2</td><td class="mech">Same as NW. Ballista in west tower only.</td></tr>
+    <tr><td>3</td><td>West Walkway</td><td>Scene 0, 3</td><td>PCs, Guard ×2</td><td class="mech">Battlements: half cover from exterior attacks. Merlon: 3/4 cover. Ballista here.</td></tr>
+    <tr><td>4</td><td>East Walkway</td><td>Scene 3</td><td>Guard ×2</td><td class="mech">Same as west. Torchlight range 30ft.</td></tr>
+    <tr><td>5</td><td class="enc">Gate Passage</td><td>Scene 0, 3</td><td>—</td><td class="mech enc">Portcullis: AC 20, HP 60. Lower/raise: Action at winch in tower. Sextus found here (Scene 0).</td></tr>
+    <tr><td>6</td><td>West Stairs</td><td>Scene 3</td><td>—</td><td class="mech">Difficult terrain going up. DC 10 Athletics to sprint up without provoking OA.</td></tr>
+    <tr><td>7</td><td>East Stairs</td><td>Scene 3</td><td>—</td><td class="mech">Same as west stairs.</td></tr>
+    <tr><td>8</td><td>Courtyard</td><td>Scene 3 Ph3</td><td>Tribune Lucius, Praetorian ×6</td><td class="mech">Tribune appears here at Phase 3 end — immaculate. Praetorians form ring.</td></tr>
+  </table>
+  <h2>SCENE USAGE</h2>
+  <table>
+    <tr><th>Scene</th><th>Setup</th><th class="enc">Encounter</th><th class="draw">Key Drama</th></tr>
+    <tr><td>Scene 0 — Cold Open</td><td>Sextus dead at gate (#5). No enemies. Players examine.</td><td class="enc">None</td><td class="draw">ROMA CADIT carved on gate jamb. Trumpet sounds — Tribune spotted.</td></tr>
+    <tr><td>Scene 3 Ph1 — Wall Defense</td><td>8× Tribal Warrior + 2× Berserker scaling ladders (exterior, y=0-120).</td><td class="enc">Use ladder positions. Raiders climb = half speed, no dash.</td><td class="draw">Tribune watches from courtyard. Praetorians do not help.</td></tr>
+    <tr><td>Scene 3 Ph3 — Vercingetorix</td><td>Raider leader enters through gate (#5) after Phase 1 resolved.</td><td class="enc">Vercingetorix: no weapon drawn. Persuasion DC 14.</td><td class="draw">"Give us the spear. We leave. You live." Silence follows.</td></tr>
+  </table>
+  <h2>RENDER NOTE</h2>
+  <p style="font-size:10px;color:#6a5a30;">Render to JPG: pkill -f firefox; sleep 2; firefox --headless --screenshot /tmp/s2_north_wall.png --window-size=1320x840 "file:///PATH/s2_north_wall.html" &amp;&amp; convert /tmp/s2_north_wall.png -quality 92 Maptool/maps/s2_north_wall.jpg</p>
+</div>
+</body>
+</html>
