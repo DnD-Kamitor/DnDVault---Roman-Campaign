@@ -4,390 +4,621 @@
 <meta charset="UTF-8">
 <title>Session 3: Through the Dark Forest — GM Reference</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 11px;
-    background: #f4f0e8;
-    color: #1a1208;
-    padding: 16px;
-  }
-  h1 {
-    font-size: 15px; font-weight: 800; letter-spacing: 0.05em;
-    color: #7a1a00; border-bottom: 2px solid #7a1a00;
-    padding-bottom: 4px; margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  h2 {
-    font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
-    color: #7a1a00; text-transform: uppercase;
-    border-bottom: 1px solid #c8a060; margin: 10px 0 5px;
-  }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .col {}
-  .box {
-    background: white; border: 1px solid #c8a060;
-    border-left: 3px solid #7a1a00;
-    padding: 8px; margin-bottom: 8px; border-radius: 2px;
-  }
-  .box.warn { border-left-color: #c05000; background: #fff8f0; }
-  .box.secret { border-left-color: #404040; background: #f8f8f0; }
-  table { width: 100%; border-collapse: collapse; }
-  th { background: #7a1a00; color: white; padding: 3px 6px; font-size: 9.5px; text-align: left; }
-  td { padding: 2px 6px; border-bottom: 1px solid #e8d8b0; vertical-align: top; }
-  tr:nth-child(even) td { background: #fdf8ee; }
-  .dc { font-weight: 700; color: #7a1a00; white-space: nowrap; }
-  .npc-name { font-weight: 700; }
-  .secret-text { font-style: italic; color: #404040; }
-  .scene-list { list-style: none; counter-reset: scenes; }
-  .scene-list li { counter-increment: scenes; padding: 2px 0 2px 20px; position: relative; }
-  .scene-list li::before {
-    content: counter(scenes);
-    position: absolute; left: 0;
-    background: #7a1a00; color: white;
-    width: 14px; height: 14px; border-radius: 50%;
-    font-size: 9px; font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .tag {
-    display: inline-block; padding: 1px 5px; border-radius: 2px;
-    font-size: 9px; font-weight: 700; margin-right: 2px;
-  }
-  .tag-passive { background: #d0e8d0; color: #1a4a1a; }
-  .tag-active { background: #d0d8e8; color: #1a1a4a; }
-  .tag-key { background: #ffe0c0; color: #7a3000; }
-  @media print {
-    body { padding: 8px; font-size: 10px; }
-    .box { break-inside: avoid; }
-  }
+  body { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; background: #1a120a; color: #d4c090; padding: 0; }
+  .header { background: #0e0a04; border-bottom: 2px solid #6a4010; padding: 12px 20px; }
+  .header h1 { font-family: 'Cinzel', serif; font-size: 16px; font-weight: 700; color: #c8a040; letter-spacing: 0.1em; text-transform: uppercase; }
+  .session-meta { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; font-style: italic; color: #8a6030; margin-top: 2px; }
+  .tab-nav { display: flex; gap: 2px; background: #0e0a04; padding: 8px 12px 0; border-bottom: 2px solid #6a4010; flex-wrap: wrap; }
+  .tab-btn { font-family: 'Cinzel', serif; font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; background: #1a120a; color: #8a6030; border: 1px solid #4a2a08; border-bottom: none; padding: 6px 14px; cursor: pointer; border-radius: 2px 2px 0 0; }
+  .tab-btn:hover { background: #241808; color: #c8a040; }
+  .tab-btn.active { background: #2c1a0a; color: #c8a040; border-color: #6a4010; }
+  .tab-panel { display: none; padding: 16px 20px; }
+  .tab-panel.active { display: block; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+  .box { background: #2c1a0a; border: 1px solid #4a2a08; border-left: 3px solid #8a6020; padding: 10px 12px; margin-bottom: 10px; border-radius: 1px; }
+  .box.warn { border-left-color: #c05010; background: #2a1208; }
+  .box.secret { border-left-color: #606060; background: #1e1e1a; }
+  .box.green { border-left-color: #407020; background: #1a2410; }
+  .box.moment { border: 2px solid #6a4010; border-left: 4px solid #c8a040; background: #241a06; }
+  h2 { font-family: 'Cinzel', serif; font-size: 11px; font-weight: 700; color: #c8a040; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 1px solid #4a2a08; padding-bottom: 4px; margin: 14px 0 8px; }
+  h2:first-child { margin-top: 0; }
+  .beat-header { font-family: 'Cinzel', serif; font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #8a6020; border-left: 3px solid #4a2a08; padding: 4px 8px; margin-bottom: 8px; background: #241608; }
+  .beat-header.beat-2 { color: #c84020; border-left-color: #c84020; background: #2a0e06; font-size: 11px; letter-spacing: 0.2em; padding: 6px 10px; }
+  p { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; color: #c4a870; line-height: 1.7; margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+  th { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; background: #4a2a08; color: #c8a040; padding: 4px 6px; text-align: left; }
+  td { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; padding: 4px 6px; border-bottom: 1px solid #3a2008; vertical-align: top; line-height: 1.5; }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .dc { font-weight: 700; color: #c8a040; white-space: nowrap; font-family: 'Cinzel', serif; font-size: 10px; }
+  .tag { display: inline-block; padding: 1px 5px; border-radius: 2px; font-size: 9px; font-weight: 700; font-family: 'Cinzel', serif; letter-spacing: 0.05em; }
+  .tag-passive { background: #1a3020; color: #60c070; border: 1px solid #2a4a30; }
+  .tag-active { background: #1a2030; color: #6090c0; border: 1px solid #2a3050; }
+  .tag-key { background: #301808; color: #c08040; border: 1px solid #4a2810; }
+  .sense-block { margin-bottom: 8px; }
+  .sense-row { display: grid; grid-template-columns: 58px 1fr; gap: 6px; padding: 3px 0; border-bottom: 1px solid #3a2008; }
+  .sense-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #8a6020; padding-top: 2px; }
+  .sense-text { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.5; font-style: italic; }
+  .npc-desc-table td:first-child { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: #8a6020; white-space: nowrap; width: 90px; }
+  .trust-row { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; border-bottom: 1px solid #3a2008; }
+  .trust-dc { font-family: 'Cinzel', serif; font-size: 10px; font-weight: 700; color: #c8a040; min-width: 36px; }
+  .trust-text { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.5; }
+  .player-q { padding: 6px 0; border-bottom: 1px solid #3a2008; }
+  .player-name { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #c8a040; margin-bottom: 2px; }
+  .player-q-text { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.5; font-style: italic; }
+  .stakes-badge { display: inline-block; padding: 2px 8px; border-radius: 2px; font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; font-weight: 700; text-transform: uppercase; }
+  .stakes-personal { background: #241a06; color: #a08030; border: 1px solid #3a2a08; }
+  .stakes-fort { background: #201408; color: #c09040; border: 1px solid #3a2408; }
+  .stakes-regional { background: #1a3020; color: #60c080; border: 1px solid #2a4a30; }
+  .stakes-imperial { background: #1a1a30; color: #6070d0; border: 1px solid #2a2a50; }
+  .stakes-divine { background: #30100a; color: #d06040; border: 1px solid #4a1a0a; }
+  b { font-weight: 700; color: #c8a040; }
+  ul { padding-left: 16px; margin-bottom: 6px; }
+  li { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.7; }
+  em { font-style: italic; color: #d4b880; }
 </style>
+<script>
+  function showTab(id) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
 </head>
 <body>
-<h1>Session 3: Through the Dark Forest — GM Reference</h1>
 
-<div class="grid">
-<div class="col">
+<div class="header">
+  <h1>Session 3: Through the Dark Forest</h1>
+  <div class="session-meta">GM Reference Card &mdash; All content DM-only unless marked otherwise &mdash; Regional Stakes &mdash; Level 4 &rarr; 5</div>
+</div>
 
-  <h2>Scene Flow</h2>
-  <div class="box">
-    <ol class="scene-list">
-      <li><b>Cold Open</b> — Camp is wrong: total silence, spear glowing, an NPC stands motionless beside it. "MARS VIDET OMNIA" carved on a tree. Cut to Scene 1 immediately.</li>
-      <li><b>Something Is Wrong (Scene 1)</b> — Three dead birds near perimeter. Handout 7 found carved in a tree. Private note passed to influenced player. Identify the influenced NPC via three clue paths.</li>
-      <li><b>Thusnelda's Scouts (Scene 2)</b> — Germanic scouts find the party. With Vercingetorix: safe passage offered, toll = Roman troop intelligence. Without: ambush (12 Tribal Warriors, 2 Scouts). Thusnelda arrives. She knows everything. She will guide them.</li>
-      <li><b>River Crossing (Scene 3)</b> — Vitulans river, 90 ft wide, spring melt. The Legate's pursuit arrives mid-crossing. Party splits across banks. Moral choice: legionaries just following orders.</li>
-      <li><b>The Sacred Grove (Scene 4)</b> — Seven standing stones, granite altar. Ritual requirements. Influenced NPC crisis. Sacrifice decision.</li>
-      <li><b>Mars Intervenes (Scene 5)</b> — Divine presence, not physical. Three options: combat golems (Option A), skill challenge 4-before-3 (Option B), bargain before starting (Option C).</li>
-    </ol>
+<nav class="tab-nav">
+  <button class="tab-btn active" onclick="showTab('cold-open')">Cold Open</button>
+  <button class="tab-btn" onclick="showTab('scene1')">Scene 1: Wrong</button>
+  <button class="tab-btn" onclick="showTab('scene2')">Scene 2: Scouts</button>
+  <button class="tab-btn" onclick="showTab('scene3')">Scene 3: River</button>
+  <button class="tab-btn" onclick="showTab('scene4')">Scene 4: Grove</button>
+  <button class="tab-btn" onclick="showTab('scene5')">Scene 5: Mars</button>
+  <button class="tab-btn" onclick="showTab('quick-ref')">Quick Ref</button>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════ COLD OPEN -->
+<div class="tab-panel active" id="cold-open">
+
+  <div class="beat-header">Beat 1 — The Silence</div>
+  <p><em>"You wake before the watch calls it. Not because of sound. Because of its absence. No insects. No wind. The fire has burned to ash with no one feeding it. The camp breathes — the shallow breath of people sleeping — but there is nothing outside that breathing. Nothing at all."</em></p>
+
+  <div class="beat-header beat-2">THE MOMENT — Motionless</div>
+  <div class="box moment">
+    <p><b>Who sees it first matters.</b> The character keeping watch, or the lightest sleeper. They see the influenced party member standing beside the spear — upright, motionless, eyes open. The spear is pulsing: a slow amber-red, like breathing.</p>
+    <p><b>When approached:</b> No response. When touched, they blink once, slowly, and turn their head. "I was just checking the watch." They were not on watch. They don't know how long they've been standing here.</p>
+    <p><b>Do not call it out mechanically.</b> No roll yet. Play the moment — it is eerie, not dangerous. Then cut.</p>
   </div>
 
-  <h2>OGAS</h2>
-  <table>
-    <tr><th>NPC</th><th>Session Goal</th><th>Secret</th></tr>
-    <tr>
-      <td class="npc-name">Vercingetorix</td>
-      <td>Ensure the spear is destroyed — this is his people's three-generation wound</td>
-      <td class="secret-text">He is dying. This is his final campaign. He hasn't told anyone.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Thusnelda</td>
-      <td>Get the party through the ritual correctly</td>
-      <td class="secret-text">She performed this ritual 50 years ago with Vercingetorix's grandfather. It failed because the sacrifice was unwilling. She has carried that failure since.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Mars (presence)</td>
-      <td>Stop the ritual</td>
-      <td class="secret-text">He's been watching since Session 1. He respects what he's seen. He won't admit this.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Legate Corvinus</td>
-      <td>Pursuing with 8 legionaries to recover the spear before his disgrace becomes permanent</td>
-      <td class="secret-text">His advance scouts may be ahead of the party already (see temporal gate).</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Augur Cassia (if present)</td>
-      <td>Ensure the ritual proceeds; increasingly certain the sacrifice must be her</td>
-      <td class="secret-text">Hasn't told anyone she's considering volunteering herself as the sacrifice.</td>
-    </tr>
-  </table>
+  <div class="beat-header">Beat 3 — The Carving</div>
+  <p>Ten paces from the fire's edge, where the trees begin: three words carved into bark. <em>MARS VIDET OMNIA.</em> The cuts are pale, not yet weathered. Done tonight. <b>Cut to Scene 1 immediately.</b></p>
 
-  <h2>Three Clue Rule: Identifying the Influenced NPC</h2>
-  <div class="box">
-    <b>Private note to that player at session start:</b> "You woke last night and stood beside the spear for two hours. You don't remember. The spear feels warm. It has been arguing quietly that the power in this weapon could protect the people you care about."<br><br>
-    <b>Clue 1 — Physical Signs:</b> Perception DC 13 (passive, during travel) or Medicine DC 13 (active examination): eyes have faint red tinge in direct light; rubbing same spot on arm; sleeping face-toward the spear even when it moved. Medicine: elevated heart rate, dilated pupils, slight fever — pre-combat arousal, not illness.<br><br>
-    <b>Clue 2 — Behaviour:</b> Insight DC 14 (active: watching during spear discussion). Advocates keeping it more strongly than before but can't say why. Agitated when others touch it. Micro-pause before "Are you alright?"<br><br>
-    <b>Clue 3 — Spear Reacts:</b> Arcana DC 13 (passive) or Religion DC 14 (passive): spear physically tilts toward the influenced character. Cassia if present: "There's a thread between that person and the spear. I missed it. I'm sorry."
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Cold Open</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Predawn darkness. The spear's amber-red pulse throwing no shadows. The influenced character standing like a post — perfectly still.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">Nothing. No insects, no wind. Sleeping bodies breathing. The silence has weight — the forest is holding its breath.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Cold pine, dead ash from the fire, something metallic that wasn't there at dusk.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">Cold earth under bare feet. Air thick and pressured, like before a storm that hasn't decided whether to arrive.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Nothing. The mouth goes dry. The body understood before the mind caught up.</div></div>
+    </div>
+
+    <h2>Pre-Session: Deliver This First</h2>
+    <div class="box secret">
+      <b>Private note to the influenced player — pass before session starts:</b><br><br>
+      <em>"Last night your character woke, walked to the spear, and stood beside it for nearly two hours. You have no memory of this. Your character feels fine — better than fine: rested, certain, focused. The spear has been very quiet today. Almost polite."</em>
+      <br><br>
+      Don't tell the player who saw them. Let it emerge. If asked how to play it: "Play it as though your character genuinely doesn't remember and isn't lying."
+    </div>
   </div>
 
-  <h2>Main Contingency: Ritual Failure / Interrupted</h2>
-  <div class="box warn">
-    If the ritual fails or is interrupted: spear remains intact. Mars' presence intensifies. Party must flee with a partially-completed ritual, a god's attention, and a cursed weapon. Session 4 begins in a worse position.<br><br>
-    <b>Influenced NPC undetected:</b> At the grove, they attempt to stop the ritual, then try to grab the spear at the climax. Stop with group Wisdom check DC 14 (holding them, calling to them — human contact). Fail: they run. Caught by Athletics grapple DC 12 or calling their name three times. If stopped, they collapse weeping, no memory of the last hour.<br><br>
-    <b>Sacrifice insufficient:</b> Altar stays cold. No drama. The absence of response IS the response. "The grove is not satisfied. Try again. You have time." Second attempt: stones cool, light dims. "Something must be given or we leave here and come back."
+  <div>
+    <h2>Pre-Session Private Questions (send before play)</h2>
+    <div class="box secret">
+      <div class="player-q">
+        <div class="player-name">Julia / Jana</div>
+        <div class="player-q-text">Your father is stationed near the Rhine frontier. The spear knows this. Before the session: what is the one thing your father said to you that your character still measures themselves against? The spear will use it.</div>
+      </div>
+      <div class="player-q">
+        <div class="player-name">Tanit</div>
+        <div class="player-q-text">Your gods are not Roman gods. Mars is not your god. When a foreign deity claims authority over your life today, what does that look like for Tanit — resistance, negotiation, or something more complicated?</div>
+      </div>
+      <div class="player-q">
+        <div class="player-name">Iris</div>
+        <div class="player-q-text">You are magic-sensitive. The spear has been speaking to your character in specific terms since Session 1. What is the thing it could offer that would be hardest to refuse? I won't use this against you — I need to know what "hardest" means for Iris.</div>
+      </div>
+      <div class="player-q">
+        <div class="player-name">Rivia</div>
+        <div class="player-q-text">Your background creates complicated loyalties. The spear knows about Vercingetorix — his plan, his condition, what he intends to sacrifice at the grove. If the spear offered you that information, would Rivia take it? What would she do with it?</div>
+      </div>
+    </div>
+
+    <h2>State Check Before Play</h2>
+    <div class="box secret">
+      <ul>
+        <li>Is Tribune Lucius alive? With the party or separated?</li>
+        <li>Is Cassia Liviana with the party? Changes Scenes 2 and 4.</li>
+        <li>Is Vercingetorix allied? Changes Scene 2 pass/fail and Scene 4 sacrifice moment.</li>
+        <li>Corvinus pursuit status? Actively pursuing = river. Delayed = grove perimeter.</li>
+        <li>Each character's corruption level? Level 2+ triggers Cold Open intensity. Level 5 escalates ritual crisis.</li>
+      </ul>
+      <br>
+      <b>S2 &rarr; S3 transitions:</b> Tribune exposed = volatile company. Fought Praetorians = fugitives. Deal made = Tribune with party. Fled with Vercingetorix = Romans in Germanic war camp. Surrendered = prisoners (skip to S4 opening).
+    </div>
+  </div>
   </div>
 
-  <h2>Ritual: Sacrifice Table</h2>
-  <div class="box">
+</div><!-- end cold-open -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 1 -->
+<div class="tab-panel" id="scene1">
+
+  <div class="beat-header">Beat 1 — Three Dead Birds</div>
+  <p>Morning. Packing camp. Three birds — ravens — dead in a perfect arc forty paces from the perimeter. No marks, no predator signs. Thirty paces from the birds: Handout 7 carved into a pine trunk. Fresh cuts, still pale.</p>
+  <p><b>Vercingetorix if present:</b> He looks at the birds for a long moment. "My grandfather's men found the same sign, three days before the ritual failed." He says nothing else.</p>
+
+  <div class="beat-header beat-2">THE MOMENT — The Investigation Reveals the Influenced Character</div>
+  <div class="box moment">
+    <p>The player has been holding the private note since before the session. This is when others find the thread. Three clue paths — any order, any character:</p>
+    <ul>
+      <li><b>Physical (Perception/Medicine DC 13, passive):</b> Red tinge in the eyes in direct light. Same spot on the left arm rubbed repeatedly. Face oriented toward the spear even when the body is turned away. Medicine: pre-combat arousal — elevated heart rate, dilated pupils. Not illness.</li>
+      <li><b>Behaviour (Insight DC 14, active during spear discussion):</b> Advocates keeping the spear more strongly than before, without being able to say why. Micro-pause before "I'm fine." Agitated when others touch the spear.</li>
+      <li><b>The Spear (Arcana DC 13 / Religion DC 14, passive):</b> The spear tilts toward that person. Not falling — tilting. Cassia if present: "There is a thread between that person and the spear. I should have seen it. I'm sorry."</li>
+    </ul>
+  </div>
+
+  <div class="beat-header">Beat 3 — Moving Out</div>
+  <p>Investigation wraps because staying is dangerous. Corvinus is moving. The influenced character must be handled — or not — by the group as they travel. The spear goes with them regardless.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 1</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Three birds in a perfect arc — not fallen, arranged. Fresh pale carving cuts. The influenced character looks normal. That is the wrongness.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">Forest sounds resume only behind the group as they move — never ahead. The direction of travel stays quiet.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Fresh pine sap from the carvings, iron at the back of the throat, faint sweetness of something cold and dead.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The ground feels slightly different — softer, as if recently turned. Like something is just below the surface.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Metallic at the back of the throat. Consistently. Characters who notice will connect it to the spear if asked.</div></div>
+    </div>
+
+    <h2>Interactive Objects</h2>
+    <table>
+      <tr><th>Object</th><th>DC</th><th>Skill</th><th>Payoff</th></tr>
+      <tr><td>Three dead birds</td><td class="dc">11 / 13</td><td>Perception / Medicine</td><td>No marks, no poison. Medicine: hearts simply stopped. Not natural.</td></tr>
+      <tr><td>Handout 7 carving</td><td class="dc">auto</td><td>—</td><td>MARS VIDET OMNIA. Cuts face the camp — meant to be read from here.</td></tr>
+      <tr><td>Carving tool marks</td><td class="dc">12</td><td>Investigation</td><td>Single-edged blade, controlled — not urgency. Whoever carved this wasn't afraid.</td></tr>
+      <tr><td>Ground at carving base</td><td class="dc">11</td><td>Survival</td><td>Military sandal boot print, size 10, under four hours old, heading back toward camp.</td></tr>
+      <tr><td>Influenced character's bedroll</td><td class="dc">12</td><td>Investigation</td><td>Cold — barely slept in. Consistent with two hours outside.</td></tr>
+      <tr><td>The spear (this moment)</td><td class="dc">13 / 14</td><td>Arcana / Religion</td><td>Passive: tilts toward the influenced character. Active: pulse synchronized with their heartbeat.</td></tr>
+    </table>
+  </div>
+
+  <div>
+    <h2>DC Reference</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Influenced NPC — physical signs</td><td class="dc">13</td><td>Perception / Medicine</td><td><span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Influenced NPC — behaviour</td><td class="dc">14</td><td>Insight</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Spear tilt / synchronized pulse</td><td class="dc">13 / 14</td><td>Arcana / Religion</td><td><span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Boot print (ground)</td><td class="dc">11</td><td>Survival</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Carving tool identification</td><td class="dc">12</td><td>Investigation</td><td><span class="tag tag-active">active</span></td></tr>
+    </table>
+
+    <h2>If Scene 1 Skipped</h2>
+    <div class="box warn">
+      <b>Party leaves without investigating:</b> Clue 1 (Physical) lost. Clue 2 (Behaviour) remains available throughout travel. Clue 3 (Spear) available any time until the ritual.<br><br>
+      <b>At Scene 4 if two clues still unfound:</b> Thusnelda names the influenced character directly. "The one carrying the spear's trust — I see it from here. You should have told each other." Preserves the dramatic moment.
+    </div>
+
+    <h2>d8 Forest Travel Events (Scene 1–2)</h2>
+    <div class="box">
+      <ul>
+        <li><b>1–2:</b> Wind-felled oak across the path — Athletics/Survival/Stealth DC 10–12</li>
+        <li><b>3–4:</b> Germanic boundary charms in trees — Religion DC 11 passive avoids social check</li>
+        <li><b>5:</b> Old Roman standard, failed expedition — History DC 14 passive names it</li>
+        <li><b>6:</b> Watchful raven. One crow call. Then it sits. Insight/Animal Handling DC 10–12</li>
+        <li><b>7:</b> Spear goes completely silent. Then surges — DC 11 Wisdom save or urged to check it. Mars's attention building.</li>
+        <li><b>8:</b> Character sees themselves standing over the party's bodies, spear in hand, smiling. Wisdom DC 13 or disadvantage on next check. The vision is false — the spear is testing, not predicting.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene1 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 2 -->
+<div class="tab-panel" id="scene2">
+
+  <div class="beat-header">Beat 1 — They Were Already There</div>
+  <p>No approach, no warning. The undergrowth on both sides becomes scouts — twelve Tribal Warriors, two Scouts. They were positioned before the group arrived. One crow call from above. Then silence. Then: standing figures.</p>
+  <p><b>Without Vercingetorix:</b> Ambush — pincer. Perception DC 12 identifies flanks as the threat. Persuasion DC 14 (any Germanic phrase, or demonstrating intent to destroy the spear) stops it before weapons engage.</p>
+  <p><b>With Vercingetorix:</b> He walks forward, hand out, empty. The senior scout watches him. Nods. Safe passage. Toll negotiated: Roman patrol intelligence. Vercingetorix looks at the party. "It is their information to give or not."</p>
+
+  <div class="beat-header beat-2">THE MOMENT — Thusnelda Arrives</div>
+  <div class="box moment">
+    <p>From the north, on foot. No hurry. She has been waiting at this point for two hours. She sits on a fallen log as if she owns the forest — because for the purpose of this ritual, she does.</p>
+    <p><em>"I know why you have come."</em> — not a question. — <em>"I know what the spear has done to one of you. I know what it will do at the grove if you are not careful. Sit down. Not you"</em> — she points at the influenced character — <em>"you stand where I can see you."</em></p>
+    <p><b>Do not soften this.</b> She is not hostile. She is a doctor performing triage. She will guide them — but she is not asking permission.</p>
+  </div>
+
+  <div class="beat-header">Beat 3 — Trust Built or Not</div>
+  <p>Thusnelda guides them to the grove. How much she tells them depends on what they offer — a genuine gift, Vercingetorix vouching, or sparing a scout. She does not respond to flattery or rank. She responds to honesty and to things that cost something.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 2</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Shapes coalesce from undergrowth — they don't step out, they become visible. Thusnelda walks from the north, no escort, staff clicking on roots.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">One crow call. Then silence. Then they are simply there. Thusnelda speaks slowly — translated in her head before the words come.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Woodsmoke from somewhere behind the scouts. Pine resin, lanolin. Thusnelda: beeswax, herbs, the earthy warmth of deep forest — a preview of the grove itself.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The pressure of being watched from multiple angles. Not hostile — observational. When Thusnelda arrives, that pressure recedes and focuses on her.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Adrenaline, dry mouth. The body understood the situation before the mind finished the inventory.</div></div>
+    </div>
+
+    <h2>NPC — Thusnelda</h2>
+    <table class="npc-desc-table">
+      <tr><td>Look</td><td>White hair in four thick braids. Face like eroded stone — not hard, just slowly shaped. Iron-grey eyes.</td></tr>
+      <tr><td>Wearing</td><td>Dark wool dress, leather belt, amber beads at the throat each carved with a different mark. Staff with spirals, worn smooth at the grip.</td></tr>
+      <tr><td>Posture</td><td>Completely still at rest — like a tree. When she moves it is deliberate and infrequent. She does not fidget.</td></tr>
+      <tr><td>Memorable</td><td>Does not make eye contact until she has decided something. Then the eye contact is full and unbroken. When she looks at you, you have been assessed.</td></tr>
+      <tr><td>First impression</td><td>She already knew they were coming. She is doing them a favour and she knows it and they should know it too.</td></tr>
+    </table>
+
+    <h2>NPC — Vercingetorix (dying subtext)</h2>
+    <table class="npc-desc-table">
+      <tr><td>Look</td><td>Still broad-shouldered but the skin doesn't fill the face. He moves with intention — each step placed. Economy, not slowness.</td></tr>
+      <tr><td>Wearing</td><td>Germanic trousers and tunic, no Roman touches left. Gallic fibula, gold, at the cloak — the one thing he kept.</td></tr>
+      <tr><td>Posture</td><td>Forward, deliberate — the posture of a man who knows moving too slowly means stopping. Alert at all times.</td></tr>
+      <tr><td>Memorable</td><td>Left hand always occupied: gripping something, touching the fibula. The tremor in it is managed, not absent.</td></tr>
+      <tr><td>First impression</td><td>He made his peace some time ago. This is his last campaign. He is not sad about it. He is focused.</td></tr>
+    </table>
+  </div>
+
+  <div>
+    <h2>DC Reference</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Scouts — pincer detection</td><td class="dc">12</td><td>Perception</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Scouts — stop ambush (Germanic / spear intent)</td><td class="dc">14</td><td>Persuasion</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Thusnelda — basic trust (she guides)</td><td class="dc">14</td><td>Persuasion</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Thusnelda — deep trust (northwest altar lock)</td><td class="dc">18 / 15</td><td>Persuasion / Religion</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Thusnelda — knows Vercingetorix is dying</td><td class="dc">15</td><td>Insight</td><td><span class="tag tag-active">active</span></td></tr>
+    </table>
+
+    <h2>Thusnelda Trust Ladder</h2>
+    <div class="box">
+      <div class="trust-row"><div class="trust-dc">Auto</div><div class="trust-text">She guides them. Non-negotiable — she agreed before they arrived.</div></div>
+      <div class="trust-row"><div class="trust-dc">DC 14</div><div class="trust-text">She answers questions directly. Before this: short answers only.</div></div>
+      <div class="trust-row"><div class="trust-dc">DC 16</div><div class="trust-text">She volunteers what the sacrifice cannot be — disqualifies cheap offers before the altar.</div></div>
+      <div class="trust-row"><div class="trust-dc">DC 18+</div><div class="trust-text">She reveals the northwest stone and what the sealed vessel inside does — a fail-safe she has never used.</div></div>
+    </div>
+
+    <h2>If Toll Refused / Combat</h2>
+    <div class="box warn">
+      Combat: 12 Tribal Warriors + 2 Scouts, ambush conditions. Thusnelda does not intervene. She watches.<br><br>
+      After combat: she is still at the log. "I wondered if they would. Some parties fight their way to the grove." She guides them regardless. Tone: neutral. The toll was a test of what kind of people they are.
+    </div>
+
+    <h2>If Cassia Is Present</h2>
+    <div class="box green">
+      Thusnelda and Cassia look at each other for a long time. Thusnelda: "You're the augur." Not a question. "The grove knows what you intend. If you have decided, do not announce it at the altar. The grove will hold you to it." Cassia does not deny anything.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene2 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 3 -->
+<div class="tab-panel" id="scene3">
+
+  <div class="beat-header">Beat 1 — The River</div>
+  <p>The Vitulans in spring melt: ninety feet wide, brown, fast, cold. No ford. Three options visible: swim, fallen-oak bridge, or string a rope line. Thusnelda says "The crossing is before the grove." She does not help — this is the party's trial.</p>
+  <p>Perception DC 11 (active) at the north bank: a boot print. Military sandal, size 10, made within two hours, heading north. Corvinus has scouts ahead. <b>Window closes when rain starts (scene end).</b></p>
+
+  <div class="beat-header beat-2">THE MOMENT — Split Across the Banks</div>
+  <div class="box moment">
+    <p>Midway through the crossing — some across, some still in the water — ordered movement from the south. Armored men on a forest path. Corvinus's vanguard: 8 soldiers and a centurion. Corvinus himself is behind.</p>
+    <p>The centurion does not want to arrest Romans. He has orders. He can see the party is half in a spring-melt river. He shouts across: <em>"In the name of Legate Corvinus, halt. Return to the southern bank."</em> He sounds tired.</p>
+    <p><b>The moral question:</b> These soldiers are doing the same job the party used to do. They are not villains. They are the bureaucracy of empire in motion. The centurion is waiting to see what kind of people are on the other bank.</p>
+  </div>
+
+  <div class="beat-header">Beat 3 — No Clean Resolution</div>
+  <p>Crossed: fugitives confirmed. Stayed: prisoners. Struck a deal: watch it hold. The centurion either enters the river or stands on the bank and watches them go.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 3</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Brown water, fast, far bank barely visible through spray. Fallen oak slick with moss. The boot print at the bank edge, the rain already darkening the sky.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">River drowns speech — must shout. From the south: rhythmic armored movement on a forest path. Getting louder.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Cold water, churned earth, wet wool, the metallic smell of river stones exposed by the high water.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The current pulls immediately — insistent, cold shock. Wet armor becomes weight. The oak gives slightly under the moss.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">River spray — cold, mineral. If knocked in: brown water, leaves, cold.</div></div>
+    </div>
+
+    <h2>NPC — Legate Corvinus (pursuit)</h2>
+    <table class="npc-desc-table">
+      <tr><td>Look</td><td>Travel armor, dust-covered. Face composed, eyes tight — three days without sleep.</td></tr>
+      <tr><td>Wearing</td><td>Legionary armor without the legate's sash. He didn't plan to be seen like this.</td></tr>
+      <tr><td>Posture</td><td>Parade-ground straight, weight forward — pursuit posture, not arrival.</td></tr>
+      <tr><td>Memorable</td><td>Commands at the volume of normal speech. His men hear anyway. He has never needed to raise his voice.</td></tr>
+      <tr><td>First impression</td><td>He is going to lose something today and he already knows it. He is making peace with it as he moves.</td></tr>
+    </table>
+
+    <h2>The Centurion (nameless)</h2>
+    <div class="box">
+      <p>No name until the party engages him personally. Give him one then. He is a middle-management soldier doing an unpleasant job. Not a villain. Not a hero. A man in the Roman army, which is a bureaucracy.</p>
+      <p>If addressed personally, he pauses. He is allowed to pause. <em>"My orders are clear. My preference would be otherwise. These are different things."</em></p>
+    </div>
+  </div>
+
+  <div>
+    <h2>DC Reference</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Boot print — scout ahead</td><td class="dc">11</td><td>Perception</td><td><span class="tag tag-key">window closes</span></td></tr>
+      <tr><td>Swim 90 ft current</td><td class="dc">13</td><td>Athletics</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Cross fallen oak (slippery)</td><td class="dc">11</td><td>Acrobatics</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Rig rope line (group action)</td><td class="dc">10</td><td>Athletics</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Order legionaries to stand down</td><td class="dc">14</td><td>Intimidation</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Claim sanctioned mission (with seal/doc)</td><td class="dc">15</td><td>Deception</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Claim sanctioned mission (without)</td><td class="dc">18</td><td>Deception</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Appeal to centurion's conscience</td><td class="dc">15</td><td>Persuasion</td><td><span class="tag tag-active">active</span></td></tr>
+    </table>
+
+    <h2>Heavy Armor in Water</h2>
+    <div class="box warn">
+      Strength save DC 14 if knocked off the oak or swept downstream. Fail = 2 exhaustion levels and swept 20 ft per round until Athletics DC 13 grabs something.
+    </div>
+
+    <h2>If Party Surrenders</h2>
+    <div class="box warn">
+      Prisoners. Corvinus arrives in 20 minutes. Session becomes S4's opening — grove unreached, ritual failed by default, spear intact, influenced character's corruption escalates within 24 hours.<br><br>
+      <b>Partial:</b> Some across, some captured — creates a split-party track for early S4.
+    </div>
+
+    <h2>If Centurion Killed</h2>
+    <div class="box warn">
+      The 8 soldiers pursue regardless. Corvinus receives word in 4 hours. Killing Roman soldiers is a capital charge — Session 5 epilogue options narrow significantly.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene3 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 4 -->
+<div class="tab-panel" id="scene4">
+
+  <div class="beat-header">Beat 1 — The Grove</div>
+  <p>Seven standing stones, twice the height of a person, moss-covered granite. No trees inside the ring — the space was cleared before any living person was born. Altar at center: granite, stained dark. Utterly silent.</p>
+  <p><em>"The air inside the stone ring is warmer than outside. Not warm — warmer. And still. The birds do not come here. The spear, for the first time since you found it, is silent."</em></p>
+  <p><b>Thusnelda</b> stands outside the ring. She does not enter. "Stand in the places I show you. The grove accepts your presence or it doesn't. You'll know." This is not her ritual.</p>
+
+  <div class="beat-header beat-2">THE MOMENT — The Influenced Character Acts</div>
+  <div class="box moment">
+    <p>The ritual begins. The spear on the altar strains. <b>This is when the influenced character moves.</b></p>
+    <p>Not grabbing — interposing. "Wait. Wait. This is wrong. We should think about this." Eyes wrong. Voice theirs, certainty the spear's.</p>
+    <p><b>Group Wisdom check DC 14</b> — not to fight them, to call them back. Each character contributes:</p>
+    <ul>
+      <li>Hold them physically: Athletics DC 12</li>
+      <li>Say their name three times: automatic, once only</li>
+      <li>Name the specific thing they care about most: from the pre-session private questions — automatic if used sincerely</li>
+    </ul>
+    <p><b>If reached:</b> They collapse weeping. No memory of the last ten minutes. The grove clears their corruption — it recognizes the effort. They can participate.</p>
+    <p><b>If not reached:</b> They grab the spear. Athletics DC 12 grapple to stop them. Failure = spear leaves the altar, ritual interrupted (see Quick Ref contingency).</p>
+  </div>
+
+  <div class="beat-header">Beat 3 — The Sacrifice</div>
+  <p>The altar requires something. Thusnelda does not specify what. "The grove knows the value of what you offer. You cannot trick it. You cannot give something you do not truly care about." The altar's response is the verdict. See Sacrifice Table in Quick Ref.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 4</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Seven stones twice the height of a person, no trees inside the ring, altar at center with old dark stains. No birds. No movement. The spear is motionless and silent for the first time.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">Absolute stillness. No wind inside the ring. Even footsteps sound muffled. The influenced character goes quiet when they enter the stones.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Green wet moss, old stone, cold granite. Something sweet underneath — not flowers — organic, old, and sweet the way old blood is sweet.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The air inside is warmer — specifically, measurably warmer. A few degrees. Enough to notice. The hairs on the arm rise. The grove is aware of them.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Copper at the back of the tongue. Consistent, not fading. The grove is tasting them as much as they are tasting the air.</div></div>
+    </div>
+
+    <h2>Environment</h2>
+    <div class="box">
+      <p><b>Ring:</b> Approximately 60 ft diameter. Two natural cover positions behind north and south stones — Survival DC 11 before ritual begins. Advantage on first defensive roll if golems animate.</p>
+      <p><b>Altar:</b> Granite, waist-height, 4 ft × 2 ft. Dark stained — multiple offerings over centuries. Thermally neutral despite the warmer air.</p>
+      <p><b>Northwest stone:</b> Thusnelda DC 18 trust reveals a hidden depression behind it. Contains a sealed clay vessel — her fail-safe, never used. Breaks the ritual cleanly but releases a fragment of the spear's power rather than destroying it. Use only if catastrophic failure is otherwise certain.</p>
+    </div>
+  </div>
+
+  <div>
+    <h2>Interactive Objects</h2>
+    <table>
+      <tr><th>Object</th><th>DC</th><th>Skill</th><th>Payoff</th></tr>
+      <tr><td>Grove perimeter</td><td class="dc">11</td><td>Survival</td><td>Two cover positions, north and south — advantage on first defensive roll if golems activate.</td></tr>
+      <tr><td>Altar stains</td><td class="dc">12 / 14</td><td>Medicine / Religion</td><td>Multiple offerings, centuries. Religion: most recent was a goat. The stain before that was not an animal.</td></tr>
+      <tr><td>Stone carvings (weathered)</td><td class="dc">14</td><td>Religion</td><td>Pre-Roman Germanic, ~200 years old. A binding: whoever stands at the altar is witnessed. Cannot lie within the ring.</td></tr>
+      <tr><td>Northwest stone (hidden)</td><td class="dc">—</td><td>—</td><td>Only findable via Thusnelda DC 18 trust. Clay vessel — fail-safe (see Environment).</td></tr>
+    </table>
+
+    <h2>DC Reference</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Influenced NPC crisis — group call-back</td><td class="dc">14</td><td>Wisdom (group)</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Influenced NPC — grapple if grabbed spear</td><td class="dc">12</td><td>Athletics</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Grove approach — cover identification</td><td class="dc">11</td><td>Survival</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Stone carvings — binding rule</td><td class="dc">14</td><td>Religion</td><td><span class="tag tag-passive">passive</span></td></tr>
+    </table>
+
+    <h2>If Ritual Fails Here</h2>
+    <div class="box warn">
+      Spear remains intact. Mars' presence intensifies. Party flees with a partially-completed ritual, a god's full attention, and a cursed weapon. Influenced character's corruption locks at current level — the grove cannot help them now.<br><br>
+      Session 4 opens in degraded position: Corvinus closer, spear still active, Mars already watching.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene4 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 5 -->
+<div class="tab-panel" id="scene5">
+
+  <div class="beat-header">Beat 1 — Divine Attention</div>
+  <p>The ritual is underway. The spear blazes — not burning, radiating. The seven stones respond, glowing at their bases. The air holds one clear tone from no direction. The sky above the grove is simply open in a way that open sky usually is not.</p>
+  <p>The influenced character — recovered or monitored — can feel it arrive. "Something is here. Something has been watching."</p>
+
+  <div class="beat-header beat-2">THE MOMENT — Mars Is Here</div>
+  <div class="box moment">
+    <p>Not a body. Not a voice from a mouth. A presence — the way a fully-armed legionary fills a doorway, except the doorway is every direction and the legionary is whatever Mars is when he pays attention.</p>
+    <p>Every character who ever held the spear feels a hand on their chest. Evaluative. Not aggressive.</p>
+    <p><em>"You have come far. You have not been cowards."</em> The tone is not approval. It is acknowledgment. These are different things for a war god.</p>
+    <p><b>Three options, presented implicitly:</b>
+    <ul style="margin-top:6px">
+      <li><b>Option A — Fight:</b> Two stone golems from north and south stones. Maintain ritual under attack — Concentration DC 14 if ritual holder takes damage.</li>
+      <li><b>Option B — Skill Challenge:</b> Four successes before three failures — Religion DC 14 (speak words), Arcana DC 15 (channel grove), Athletics DC 12 (hold spear), Insight DC 14 (resist promise). Interrupt with Stealth DC 13 (reposition — ritual holder gets advantage that round).</li>
+      <li><b>Option C — Bargain first:</b> Persuasion DC 17 / Religion DC 16 before anything begins. Success: <em>"Continue. I will not make it easy. But I will not stop it."</em> Advantage on all skill challenge rolls from here.</li>
+    </ul></p>
+  </div>
+
+  <div class="beat-header">Beat 3 — The Spear's End</div>
+  <p>Successful ritual: the spear becomes light, then becomes nothing. The grove goes completely quiet. Thusnelda's shoulders drop. "Fifty years." She doesn't say more. Vercingetorix watches it end. He nods once.</p>
+  <p><b>Mars, before leaving:</b> No speech. He marks each person who completed the ritual (Handout 10 — Mark of Mars). Then he is gone. The grove is just a grove again.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 5</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Spear blazing, radiating not burning. Seven stones glowing at bases. Sky above: open, intentionally so. If golems form: slow, angular, made of the same stone as the standing stones — purposeful, not monstrous.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">One clear tone from no direction, held without wavering. Then: a presence that does not speak so much as make language happen in the air.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Hot iron — a smithy, blood on armor after a long fight. On success: rain that hasn't fallen yet. Ozone. Something clean.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">Gravity doubles briefly — everyone pressed down. Not painful. Significant. On success: the warmth inside the ring dissipates slowly over minutes until inside and outside are the same temperature.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Metal — like a sword hilt held too long. On success: gone. Replaced by ordinary air. Notable by its absence.</div></div>
+    </div>
+
+    <h2>Option B — Skill Challenge Tracker</h2>
+    <div class="box">
+      <table>
+        <tr><th>Check</th><th>DC</th><th>Skill</th><th>Notes</th></tr>
+        <tr><td>Speak the words</td><td class="dc">14</td><td>Religion</td><td>Fail by 4 or less: intent received, try differently</td></tr>
+        <tr><td>Channel the grove</td><td class="dc">15</td><td>Arcana</td><td>Adv if took arcane damage from spear this session</td></tr>
+        <tr><td>Hold the spear</td><td class="dc">12</td><td>Athletics</td><td>The spear fights back — brute strength only</td></tr>
+        <tr><td>Resist the promise</td><td class="dc">14</td><td>Insight</td><td>Promise uses pre-session private question material</td></tr>
+        <tr><td>Reposition (interrupt)</td><td class="dc">13</td><td>Stealth</td><td>Ritual holder gets advantage that round</td></tr>
+      </table>
+      <p style="margin-top:6px"><b>4 successes before 3 failures.</b> Failure: stones activate as Option A combat. Can switch mid-challenge.</p>
+    </div>
+  </div>
+
+  <div>
+    <h2>DC Reference</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Option C — bargain with Mars</td><td class="dc">17 / 16</td><td>Persuasion / Religion</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Option A — ritual Concentration (under attack)</td><td class="dc">14</td><td>Concentration</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Option B skill checks</td><td class="dc">12–15</td><td>Various</td><td><span class="tag tag-active">active</span></td></tr>
+    </table>
+
+    <h2>Stone Golems (Option A)</h2>
+    <div class="box">
+      Use Animated Armor (MM p.19) with +2 AC (stone) and Slow instead of Magic Resistance. They target whoever is closest to the altar. They stop if the ritual holder succeeds on three consecutive ritual checks — Mars is testing commitment, not ordering execution.
+    </div>
+
+    <h2>If Ritual Fails at This Stage</h2>
+    <div class="box warn">
+      Spear shatters — not destroyed. Shards. Each carries a fragment of the spear's power. The golems stop. Mars is silent. Then: <em>"Now you have made it worse."</em> Shards must be collected in Session 5. Recoverable, but harder.
+    </div>
+
+    <h2>Session End — Seeds Planted</h2>
+    <div class="box green">
+      <b>Mark of Mars:</b> Each character who completed the ritual. See Handout 10. Mars marks who he marks.<br><br>
+      <b>Vercingetorix:</b> Asks one hour alone at the altar. He rejoins looking exactly the same. He does not discuss it.<br><br>
+      <b>Thusnelda:</b> Gives each character a small carved token from her belt. "These are yours now." She does not explain their age.<br><br>
+      <b>Seed for S4:</b> Corvinus's advance scouts reached the grove's perimeter. They saw enough. They returned south. Corvinus knows where the party went, and what they did, and that it is done.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene5 -->
+
+<!-- ═══════════════════════════════════════════════════════ QUICK REF -->
+<div class="tab-panel" id="quick-ref">
+
+  <div class="grid">
+  <div>
+    <h2>OGAS — Session 3 NPCs</h2>
+    <table>
+      <tr><th>NPC</th><th>Session Goal</th><th>Secret</th></tr>
+      <tr><td><b>Vercingetorix</b></td><td>Ensure the spear is destroyed — his people's three-generation wound</td><td><em>He is dying. This is his last campaign. No one knows.</em></td></tr>
+      <tr><td><b>Thusnelda</b></td><td>Get the party through the ritual correctly</td><td><em>She performed this ritual 50 years ago. It failed because the sacrifice was unwilling. She has carried that since.</em></td></tr>
+      <tr><td><b>Mars (presence)</b></td><td>Stop the ritual — or test whether it deserves to succeed</td><td><em>He's been watching since Session 1. He respects what he's seen. He won't admit this.</em></td></tr>
+      <tr><td><b>Legate Corvinus</b></td><td>Recover the spear before his disgrace becomes permanent</td><td><em>His advance scouts may be ahead. He already suspects he's too late.</em></td></tr>
+      <tr><td><b>Cassia</b> (if present)</td><td>Ensure the ritual proceeds</td><td><em>She believes the sacrifice must be her. She hasn't told anyone.</em></td></tr>
+    </table>
+
+    <h2>Three Clue Rule</h2>
+    <div class="box">
+      <b>Spear is influencing a party member:</b> Physical signs (Perception/Medicine DC 13, passive) · Behaviour (Insight DC 14, active) · Spear tilts toward them (Arcana/Religion DC 13/14, passive)<br><br>
+      <b>Grove requires a real sacrifice:</b> Thusnelda's direct statement · Altar cold on insufficient offer · Vercingetorix: "My grandfather's sacrifice was unwilling. That is why it failed."<br><br>
+      <b>Mars will arrive when the ritual begins:</b> Thusnelda: "He will come. That cannot be avoided." · d8 event 8 (false vision: standing over party's bodies) · d8 event 7 (spear goes silent then surges)
+    </div>
+
+    <h2>Sacrifice Table</h2>
     <table>
       <tr><th>Offer</th><th>Grove's Response</th></tr>
       <tr><td>Valuable magic item</td><td>Acceptable</td></tr>
-      <tr><td>Skill proficiency (permanent loss)</td><td>Acceptable</td></tr>
+      <tr><td>A skill proficiency (permanent)</td><td>Acceptable</td></tr>
       <tr><td>A specific memory (permanently gone)</td><td>Acceptable — grove returns a dream</td></tr>
       <tr><td>A year of life</td><td>Acceptable</td></tr>
-      <tr><td>Cassia volunteers herself (death, willing)</td><td>More than acceptable — Thusnelda tries to stop her</td></tr>
-      <tr><td>Item worth less than the character cares about</td><td>Altar stays cold. Nothing happens.</td></tr>
+      <tr><td>Cassia volunteers herself (willing, conscious)</td><td>More than acceptable — Thusnelda tries to stop her</td></tr>
+      <tr><td>Item worth less than the character cares about</td><td>Altar stays cold. Silence.</td></tr>
       <tr><td>"I sacrifice my life in the future if necessary"</td><td>"That is not a sacrifice. That is a bet." Rejected.</td></tr>
     </table>
   </div>
 
-</div>
-<div class="col">
+  <div>
+    <h2>Escalating Stakes</h2>
+    <table>
+      <tr><th>Session</th><th>Stakes</th><th>What changes</th></tr>
+      <tr><td>S1</td><td><span class="stakes-badge stakes-personal">Personal</span></td><td>Individual survival, first duty conflict</td></tr>
+      <tr><td>S2</td><td><span class="stakes-badge stakes-fort">Fort</span></td><td>Vindolanda's loyalty, political exposure</td></tr>
+      <tr><td><b>S3</b></td><td><span class="stakes-badge stakes-regional">Regional</span></td><td>Spear's power affects the whole frontier — Roman or Germanic</td></tr>
+      <tr><td>S4</td><td><span class="stakes-badge stakes-imperial">Imperial</span></td><td>Imperial court, Tribune's mission, senatorial plot</td></tr>
+      <tr><td>S5</td><td><span class="stakes-badge stakes-divine">Divine</span></td><td>Mark of Mars, divine economy, what gods want from mortals</td></tr>
+    </table>
 
-  <h2>DC Reference</h2>
-  <table>
-    <tr><th>Scene / Location</th><th>DC</th><th>Skill</th><th>Type</th><th>What they learn / what happens</th></tr>
-    <tr>
-      <td>Influenced NPC — detection</td>
-      <td class="dc">13</td>
-      <td>Perception / Medicine</td>
-      <td><span class="tag tag-passive">passive</span></td>
-      <td>Red tinge in eyes, arm-rubbing, sleeps toward spear. Medicine: pre-combat arousal, not illness.</td>
-    </tr>
-    <tr>
-      <td>Influenced NPC — behaviour</td>
-      <td class="dc">14</td>
-      <td>Insight</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Advocates keeping the spear; agitated when others touch it; micro-pause before "I'm fine."</td>
-    </tr>
-    <tr>
-      <td>Spear — aura reading</td>
-      <td class="dc">13 / 14</td>
-      <td>Arcana / Religion</td>
-      <td><span class="tag tag-passive">passive</span></td>
-      <td>Spear physically tilts toward the influenced character. Connection visible to divine-sensitive classes.</td>
-    </tr>
-    <tr>
-      <td>Scene 2 — scouts (no ally)</td>
-      <td class="dc">12</td>
-      <td>Perception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Undergrowth disturbed in semicircle to both sides, not ahead. Pincer, not frontal block. Flanks are the threat.</td>
-    </tr>
-    <tr>
-      <td>Scene 2 — scouts (no ally)</td>
-      <td class="dc">14</td>
-      <td>Persuasion</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Any Germanic phrase from player guide, or demonstrate intent to destroy the spear. Scouts recognize it and stop.</td>
-    </tr>
-    <tr>
-      <td>Thusnelda — trust: first meeting</td>
-      <td class="dc">14</td>
-      <td>Persuasion</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>She leads them. Backed by something genuine (gift, Vercingetorix vouching, sparing a prisoner).</td>
-    </tr>
-    <tr>
-      <td>Thusnelda — trust: first meeting</td>
-      <td class="dc">18 / Religion 15</td>
-      <td>Persuasion / Religion</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>She leads AND volunteers the altar's northwest lock and what it opens (unrevealed without this).</td>
-    </tr>
-    <tr>
-      <td>Forest travel — wind-felled oak</td>
-      <td class="dc">12 / 10 / 12</td>
-      <td>Athletics / Survival / Stealth</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Athletics: clear/climb. Survival: safe path around. Stealth: pass without announcing presence — a felled oak on a travel path is sometimes deliberate.</td>
-    </tr>
-    <tr>
-      <td>Forest travel — hanging charms</td>
-      <td class="dc">13 / 11</td>
-      <td>Persuasion / Religion</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Persuasion: pass without giving offense. Religion (passive): understand the boundary and perform a basic acknowledgment rite — no social check needed.</td>
-    </tr>
-    <tr>
-      <td>Forest travel — silent animal trail</td>
-      <td class="dc">12 / 14</td>
-      <td>Survival / Nature</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Survival: track by sign. Nature: identify the specific predator — wolf signs vs. something else changes the response.</td>
-    </tr>
-    <tr>
-      <td>Forest travel — old Roman standard</td>
-      <td class="dc">12 / 14</td>
-      <td>Investigation / History</td>
-      <td><span class="tag tag-active">active</span> <span class="tag tag-passive">passive</span></td>
-      <td>Investigation: read dates and unit markings. History (passive): name the expedition and what happened — lands harder when they know the story.</td>
-    </tr>
-    <tr>
-      <td>Forest travel — boggy hollow</td>
-      <td class="dc">12 / 10 / 11</td>
-      <td>Acrobatics / Nature / Medicine</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Acrobatics: cross without sinking. Nature: read plants for firm ground — avoids roll entirely. Medicine (passive): recognize bog fever risk; warns against resting here.</td>
-    </tr>
-    <tr>
-      <td>Forest travel — watchful raven</td>
-      <td class="dc">12 / 10</td>
-      <td>Insight / Animal Handling</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Insight: omen, not threat. Animal Handling: acknowledge respectfully — the raven leaves satisfied.</td>
-    </tr>
-    <tr>
-      <td>Forest travel — blood-slick stones</td>
-      <td class="dc">14 / 12</td>
-      <td>Religion / Investigation</td>
-      <td><span class="tag tag-passive">passive</span> <span class="tag tag-active">active</span></td>
-      <td>Religion (passive): read the runes. Investigation: date the sacrifice — within 24 hours changes everything.</td>
-    </tr>
-    <tr>
-      <td>Forest travel — whispering pines</td>
-      <td class="dc">12 / 12 / 13</td>
-      <td>Wisdom save / Performance / Deception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Wisdom save: resist. Performance: give the whispers a response — removes disadvantage. Deception (self): suppress save but prevent any information from the pines.</td>
-    </tr>
-    <tr>
-      <td>Forest travel — Germanic patrol</td>
-      <td class="dc">14 / 13 / 15</td>
-      <td>Persuasion / Intimidation / Deception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Persuasion: any Germanic phrase. Intimidation: show of force before weapons drawn. Deception: claim to be traders — needs something tangible.</td>
-    </tr>
-    <tr>
-      <td>Forest travel — approach stealth</td>
-      <td class="dc">13</td>
-      <td>Stealth</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Group check (weakest roller). Success: observe patrol or shrine before being seen. Critical (5 above): determine intent — searching, resting, or actively tracking.</td>
-    </tr>
-    <tr>
-      <td>River crossing — boot print</td>
-      <td class="dc">11</td>
-      <td>Perception</td>
-      <td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td>
-      <td>Military sandal, size 10, made within 2 hours, heading north. Corvinus has scouts ahead. Rain washes the print — window closes at scene end.</td>
-    </tr>
-    <tr>
-      <td>River crossing — swimming</td>
-      <td class="dc">13</td>
-      <td>Athletics</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Swim 90 ft of fast-moving spring melt. Failure = swept 20 ft downstream.</td>
-    </tr>
-    <tr>
-      <td>River crossing — fallen oak</td>
-      <td class="dc">11</td>
-      <td>Acrobatics</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Cross the slippery fallen oak. Knocked off: DC 13 Athletics or swept 20 ft downstream.</td>
-    </tr>
-    <tr>
-      <td>River crossing — rope line</td>
-      <td class="dc">10</td>
-      <td>Athletics</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Group action to string a rope across. Helps everyone. Heavy armor in water: Str save DC 14 if knocked in.</td>
-    </tr>
-    <tr>
-      <td>River crossing — legionary order</td>
-      <td class="dc">14</td>
-      <td>Intimidation</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Centurion-rank character orders legionaries to stand down. Success: centurion hesitates, party crosses. 5 above: he signals men to hold, does not cross without new orders.</td>
-    </tr>
-    <tr>
-      <td>River crossing — claim sanction</td>
-      <td class="dc">15 / 18</td>
-      <td>Deception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Claim mission is sanctioned and Legate's pursuit is unauthorized. DC 15 with document/seal/name; DC 18 without. Varro's word can make it land or fail.</td>
-    </tr>
-    <tr>
-      <td>Grove approach</td>
-      <td class="dc">11</td>
-      <td>Survival</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Grass absent in a perfect circle but not grazed. Two natural cover positions behind north and south stones. Identify before ritual = advantage on first defensive roll if stones animate.</td>
-    </tr>
-    <tr>
-      <td>Ritual — influenced NPC crisis</td>
-      <td class="dc">14</td>
-      <td>Wisdom (group check)</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Group check to help them resist. Success: they participate, corruption cleared by grove power. Fail: they grab for the spear — stop with Athletics grapple DC 12 or calling name three times.</td>
-    </tr>
-    <tr>
-      <td>Ritual skill challenge (Option B) — speaking words</td>
-      <td class="dc">14</td>
-      <td>Religion</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Speak the words of unmaking with genuine conviction. Fail by 4 or less: intent received, not invocation. Try differently.</td>
-    </tr>
-    <tr>
-      <td>Ritual skill challenge (Option B) — channel grove</td>
-      <td class="dc">15</td>
-      <td>Arcana</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Channel the grove's power, not fight it. Hardest check — requires surrendering control reflex. Advantage if character took arcane damage from the spear this session.</td>
-    </tr>
-    <tr>
-      <td>Ritual skill challenge (Option B) — hold spear</td>
-      <td class="dc">12</td>
-      <td>Athletics</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Keep the spear on the altar as it fights back. It pulls. This is whether you're strong enough.</td>
-    </tr>
-    <tr>
-      <td>Ritual skill challenge (Option B) — resist promise</td>
-      <td class="dc">14</td>
-      <td>Insight</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>"They'll abandon you. Take me and they won't have to." Promise is specific to the character from Session 0 material.</td>
-    </tr>
-    <tr>
-      <td>Ritual skill challenge (Option B) — reposition</td>
-      <td class="dc">13</td>
-      <td>Stealth</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Reposition behind a standing stone before a golem pivots. Success: golem wastes a movement action. Ritual holder gets advantage that round.</td>
-    </tr>
-    <tr>
-      <td>Option C — Bargain with Mars</td>
-      <td class="dc">17 / 16</td>
-      <td>Persuasion / Religion</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>"Great Mars, the spear dishonored what you stand for." Long silence. "Continue. I will not make it easy. But I will not stop it." Advantage on all skill challenge rolls.</td>
-    </tr>
-  </table>
+    <h2>Commendationes This Session</h2>
+    <div class="box">
+      <p><b>1:</b> Contributing to the spear's destruction at the grove. Corvinus's paperwork window — he doesn't know the details.</p>
+      <p><b>2:</b> Rescuing the influenced character during the ritual — physically intervening between a colleague and a divine force. Varro's paperwork or Cassia's attestation.</p>
+      <p><b>3:</b> Defending Vercingetorix in the forest. Not a commendatio yet — becomes his warriors at the gate in Session 4 and an epilogue moment.</p>
+    </div>
 
-  <h2>State at Session Start</h2>
-  <div class="box secret">
-    Confirm before play: Is Tribune Lucius alive and with the party? Is Cassia with the party? Is Vercingetorix allied? What is the Legate's status (pursuing?). What is each character's corruption level (affects Scene 1 cold open intensity).
-    <br><br>
-    <b>Session 2 → 3 transition:</b> Tribune exposed = free but politically exposed. Fought Praetorians = fugitives in the forest. Deal made = Tribune travels with party. Fled with Vercingetorix = Roman soldiers in a Germanic war camp. Surrendered = prisoners en route to Rome.
-    <br><br>
-    <b>Corruption effect:</b> Characters entering with corruption 2+ must make DC 11 Wisdom save when the spear goes quiet (d8 travel event 7) or feel the urge to check it. Characters at level 5 remain at that level even after successful ritual.
+    <h2>Reactive World — If Party Is Passive</h2>
+    <div class="box warn">
+      <b>Vercingetorix:</b> Attempts the ritual alone. Fails. Dies. Spear survives. S4 starts with his body at the grove.<br>
+      <b>Thusnelda:</b> Waits at the grove without a willing party. Still there in S4.<br>
+      <b>Corvinus:</b> Reaches the grove two hours after the ritual window. Takes the spear south.<br>
+      <b>Cassia (if present):</b> Attempts the sacrifice alone. Grove refuses. She survives. Spear survives.<br><br>
+      <em>Default: party's inaction = spear in Corvinus's hands by S4's opening.</em>
+    </div>
+
+    <h2>Ritual Failure Contingency</h2>
+    <div class="box warn">
+      Spear intact. Mars' attention stays. Party flees — partial ritual, god watching, cursed weapon.<br><br>
+      <b>Influenced NPC not reached / runs:</b> Vercingetorix does not pursue. "The spear chose them. You cannot outrun what you have already become. Only they can choose to put it down."<br><br>
+      <b>Insufficient sacrifice:</b> Altar cold. No drama. The absence IS the response. Second attempt: stones cool, light dims. Third: "Something must be given. Or we leave."
+    </div>
+  </div>
   </div>
 
-  <h2>Commendationes This Session</h2>
-  <div class="box">
-    <b>1:</b> Actively contributing to the spear's destruction at the grove. Corvinus awards through paperwork window without being told what happened at the grove.<br>
-    <b>2:</b> Rescuing the influenced character during the ritual — physically intervening between a colleague and a divine force. Varro's paperwork (or Cassia's attestation if Varro absent).<br>
-    <b>3:</b> Defending Vercingetorix in the forest. Not a <em>commendatio</em> yet — becomes his warriors at the gate in Session 4 and a specific epilogue moment.
-  </div>
+</div><!-- end quick-ref -->
 
-  <h2>Three Clue Rule Check</h2>
-  <div class="box">
-    <b>The spear is influencing a party member:</b> Physical signs (Perception/Medicine DC 13) · Behaviour during discussion (Insight DC 14) · Spear tilts toward them (Arcana/Religion DC 13/14)<br>
-    <b>The grove requires a real sacrifice:</b> Thusnelda's direct statement · Altar staying cold on insufficient offer · Vercingetorix: "My grandfather's sacrifice was unwilling. That is why it failed."<br>
-    <b>Mars will arrive when the ritual begins:</b> Thusnelda: "The ritual will alert Mars. He will come. That cannot be avoided." · d8 travel event 4 (character sees themselves standing over the party's bodies) · d8 event 7 (spear goes quiet then surges)
-  </div>
-
-</div>
-</div>
 </body>
 </html>
