@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shadow of Mars — Master Plot Reference</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 12px;
+    background: #1a120a;
+    color: #d4c4a0;
+    padding: 24px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 18px; font-weight: 700;
+    color: #c8a040;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #6a4010;
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+    text-shadow: 0 0 20px rgba(180,130,20,0.3);
+  }
+
+  .subtitle {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    color: #8a7040;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  nav {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid #4a3010;
+    border-radius: 3px;
+  }
+
+  nav a {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: #a08030;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border: 1px solid #4a3010;
+    border-radius: 2px;
+  }
+  nav a:hover { background: #2a1808; color: #c8a040; }
+
+  h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 11px; font-weight: 700;
+    color: #c8a040;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #5a3810;
+    padding-bottom: 4px;
+    margin: 18px 0 8px;
+  }
+
+  h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 10px; font-weight: 700;
+    color: #a08030;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 12px 0 5px;
+  }
+
+  .section { margin-bottom: 28px; }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+
+  .box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid #4a3010;
+    border-left: 3px solid #7a5010;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+  }
+  .box.warn { border-left-color: #a04010; background: rgba(160,60,0,0.08); }
+  .box.secret { border-left-color: #404048; background: rgba(40,40,60,0.15); }
+  .box.gold { border-left-color: #c8a040; background: rgba(200,160,40,0.06); }
+  .box p + p { margin-top: 6px; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 8px; }
+  th {
+    font-family: 'Cinzel', serif;
+    font-size: 9px; font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: #2a1808;
+    color: #a08030;
+    padding: 5px 8px;
+    text-align: left;
+    border-bottom: 1px solid #5a3810;
+  }
+  td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #2a1808;
+    vertical-align: top;
+    line-height: 1.6;
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+  .session-card {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid #4a3010;
+    border-radius: 3px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    position: relative;
+  }
+
+  .session-num {
+    font-family: 'Cinzel', serif;
+    font-size: 28px; font-weight: 700;
+    color: rgba(200,160,40,0.15);
+    position: absolute;
+    top: 8px; right: 14px;
+    line-height: 1;
+  }
+
+  .session-title {
+    font-family: 'Cinzel', serif;
+    font-size: 12px; font-weight: 700;
+    color: #c8a040;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .session-tagline {
+    font-style: italic;
+    color: #8a7040;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .stakes-badge {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .stakes-personal { background: #1a2810; color: #60a060; border: 1px solid #30501a; }
+  .stakes-fort { background: #1a1828; color: #6080c0; border: 1px solid #1a2848; }
+  .stakes-regional { background: #281810; color: #c08040; border: 1px solid #503010; }
+  .stakes-imperial { background: #281018; color: #c04060; border: 1px solid #501020; }
+  .stakes-divine { background: #20101a; color: #c060c0; border: 1px solid #401030; }
+
+  .moment-box {
+    background: rgba(160,40,0,0.12);
+    border: 1px solid rgba(180,60,0,0.4);
+    border-left: 3px solid #c04010;
+    padding: 6px 10px;
+    margin: 6px 0;
+    font-size: 11px;
+  }
+
+  .cascade-row td:first-child { color: #a08030; font-style: italic; }
+  .cascade-row td:last-child { color: #c0a060; }
+
+  .villain-card {
+    background: rgba(60,0,0,0.15);
+    border: 1px solid #5a1010;
+    border-radius: 2px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+  }
+
+  .villain-type {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #a04030;
+    margin-bottom: 2px;
+  }
+
+  .villain-name {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #c8a040;
+    margin-bottom: 4px;
+  }
+
+  details {
+    margin-bottom: 8px;
+    border: 1px solid #3a2008;
+    border-radius: 2px;
+  }
+
+  summary {
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #a08030;
+    padding: 7px 12px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.2);
+    border-radius: 1px;
+    list-style: none;
+  }
+  summary::before { content: '▸ '; color: #6a4010; }
+  details[open] summary::before { content: '▾ '; }
+  summary:hover { color: #c8a040; background: rgba(0,0,0,0.35); }
+
+  .detail-body {
+    padding: 10px 14px;
+    background: rgba(0,0,0,0.15);
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .detail-body table { margin: 6px 0; }
+
+  blockquote {
+    border-left: 2px solid #6a4010;
+    padding: 6px 12px;
+    margin: 6px 0;
+    color: #b09060;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .npc-state-table td:first-child { font-family: 'Cinzel', serif; font-size: 9.5px; color: #c8a040; white-space: nowrap; }
+  .npc-state-table th { font-size: 8.5px; }
+
+  .handout-row td:first-child { font-family: 'Cinzel', serif; font-size: 9px; font-weight: 700; color: #c8a040; white-space: nowrap; }
+
+  .dc { font-weight: 700; color: #c8a040; white-space: nowrap; }
+
+  @media print {
+    body { background: white; color: #1a0a00; padding: 10px; }
+    .session-card { border: 1px solid #8a6030; }
+    .box { border: 1px solid #8a6030; background: white; }
+    nav { display: none; }
+    h1, h2, h3 { color: #3a1800; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Shadow of Mars — Master Plot Reference</h1>
+<div class="subtitle">GM-only. Full five-session arc. Cascades, villain states, NPC trajectories, handout schedule.</div>
+
+<nav>
+  <a href="#arc">Session Arc</a>
+  <a href="#villains">Villain Arc</a>
+  <a href="#npc-states">NPC States</a>
+  <a href="#cascades">Cascades</a>
+  <a href="#handouts">Handouts</a>
+  <a href="#commendationes">Commendationes</a>
+  <a href="#corruption">Corruption</a>
+  <a href="#truth">Truth Behind</a>
+</nav>
+
+<!-- ═══════════════════════════════════════ SESSION ARC -->
+<div class="section" id="arc">
+<h2>Five-Session Arc — Story in Order</h2>
+
+<div class="session-card">
+  <div class="session-num">1</div>
+  <div class="session-title">Blood and Omens</div>
+  <div class="session-tagline">The party descends into a vault beneath Fort Vindolanda and emerges holding a god's weapon.</div>
+  <span class="stakes-badge stakes-personal">Personal Stakes</span>
+  <div class="moment-box"><b>THE MOMENT:</b> The Wight speaks. It knows the spear's name and the party's. It offers them a choice before it dies.</div>
+  <div>
+    <b>Key choice:</b> Who touches the spear? That character becomes the corruption anchor for the campaign.
+    <br><b>Session ends:</b> Corvinus is waiting at the mine entrance in the dark. "Inside. Now. All of you."
+    <br><b>Seeds planted:</b> The OTHALAN contract token. The Wight's knowledge. Cassia's warning before descent.
+  </div>
+</div>
+
+<div class="session-card">
+  <div class="session-num">2</div>
+  <div class="session-title">The Tribune's Gambit</div>
+  <div class="session-tagline">A murder, a Senate envoy, a raid, and an accusation — all before nightfall.</div>
+  <span class="stakes-badge stakes-fort">Fort-Level Stakes</span>
+  <div class="moment-box"><b>THE MOMENT:</b> Tribune accuses the party of treason. Varro takes one step to stand beside them. His hand moves to his gladius.</div>
+  <div>
+    <b>Key choice:</b> Expose / Negotiate / Intimidate / Fight / Flee with Vercingetorix / Surrender.
+    <br><b>Session ends:</b> One of five possible Session 3 openings depending on the choice.
+    <br><b>Seeds planted:</b> Quintus Flavius (sleeper agent). Vercingetorix's trust level. The bog valerian shortage.
+  </div>
+</div>
+
+<div class="session-card">
+  <div class="session-num">3</div>
+  <div class="session-title">Through the Dark Forest</div>
+  <div class="session-tagline">The spear is influencing one of them. The forest is watching. Thusnelda knows everything and will guide them — once.</div>
+  <span class="stakes-badge stakes-regional">Regional Stakes</span>
+  <div class="moment-box"><b>THE MOMENT:</b> The influenced party member tries to stop the ritual at its climax. The party must reach them before the spear does.</div>
+  <div>
+    <b>Key choice:</b> What is sacrificed at the grove altar? The sacrifice must be real. The grove knows.
+    <br><b>Session ends:</b> The spear is destroyed or the ritual fails. Either way, Mars noticed.
+    <br><b>Seeds planted:</b> What was sacrificed. Whether Corvinus's pursuit caught the party's trail. Vercingetorix's dying condition revealed (full trust only).
+  </div>
+</div>
+
+<div class="session-card">
+  <div class="session-num">4</div>
+  <div class="session-title">The God's Demand</div>
+  <div class="session-tagline">The fort is under siege. Mars wants three figures to kneel. A Senator's agent is burning everything that might stop it.</div>
+  <span class="stakes-badge stakes-imperial">Imperial Stakes</span>
+  <div class="moment-box"><b>THE MOMENT:</b> In the antechamber, the spear levitates above the altar. Mars' voice (one word, no body): "KNEEL."</div>
+  <div>
+    <b>Key choice:</b> Who kneels? One volunteer / two / three correct figures (Roman, Germanic, spear-touched). The number determines Session 5's opening parameters.
+    <br><b>Session ends:</b> Siege pauses. Germanic horns go silent. The escort descends. The principal question of the campaign is now with the god.
+    <br><b>Seeds planted:</b> Which three knelt. Whether Corvinus was honored or sidelined. Lucius's dispatch to Rome — sent or not.
+  </div>
+</div>
+
+<div class="session-card">
+  <div class="session-num">5</div>
+  <div class="session-title">The Wrath of Mars</div>
+  <div class="session-tagline">Mars arrives. The rain stops mid-drop. The fort becomes an arena. He has been watching since Session 1. He will not say he is impressed.</div>
+  <span class="stakes-badge stakes-divine">Divine Stakes</span>
+  <div class="moment-box"><b>THE MOMENT:</b> Mars looks at one character first — the one who made the genuine grove sacrifice. Not warmth. Recognition. He has known since it happened.</div>
+  <div>
+    <b>Key choice:</b> Option A (Champion Trial) / Option B (Trial of Blades, default) / Option C (Trial of Voice — argue with a god).
+    <br><b>Session ends:</b> The Mark of Mars. The Debt. The Prophecy. Vindolanda becomes a pilgrimage site. Epilogue: one year later.
+  </div>
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════ VILLAIN ARC -->
+<div class="section" id="villains">
+<h2>Villain Arc — Three Types (Sclanders)</h2>
+<div class="grid">
+<div>
+  <div class="villain-card">
+    <div class="villain-type">Blunt Force Nemesis</div>
+    <div class="villain-name">Legate Corvinus → Tribune Lucius</div>
+    <p>Direct opposition. Takes command of the situation, controls physical access, can arrest the party. Changes hands: Corvinus (S1-2) hands off to Lucius (S2-3) as the primary blunt obstacle. By S4, both have been navigated rather than defeated.</p>
+    <details>
+      <summary>Corvinus arc across sessions</summary>
+      <div class="detail-body">
+        <p><b>S1:</b> Waiting at the mine. Furious. Compliant with orders he hates.</p>
+        <p><b>S2:</b> Loses command to Lucius. Seething privately, cooperating publicly.</p>
+        <p><b>S3:</b> Pursues with 8 legionaries. His scouts may already be ahead.</p>
+        <p><b>S4:</b> Has filed a report blaming the party for the Session 2 events. Fears exposure. Either arrested or sidelined by end of session.</p>
+        <p><b>S5:</b> Frozen witness. His soldiers may arrive hostile mid-arena if Mars is displeased with what happened in S4.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Lucius arc across sessions</summary>
+      <div class="detail-body">
+        <p><b>S2:</b> Arrives confident, performing authority. The hesitation moment exists — one check catches it.</p>
+        <p><b>S3:</b> Travels with party (if negotiated) or is absent. Either way Brutus's ravens still reach him.</p>
+        <p><b>S4:</b> Still receives orders to kill Cassia. Citizenship window (Session 4): can file an attestation if party approaches. Offer not made twice.</p>
+        <p><b>S5:</b> Frozen witness. His future is in Mars's judgment. If he sabotaged the spear: all DCs +2 this session.</p>
+      </div>
+    </details>
+  </div>
+</div>
+<div>
+  <div class="villain-card">
+    <div class="villain-type">Never Present Villain</div>
+    <div class="villain-name">Senator Gaius Cassius Brutus</div>
+    <p>Manipulation from shadows, S1–S4. His agents, ciphered orders, and raven network create all the political pressure. Physical appearance only in the epilogue (if the party's story forced accountability into Rome). The name "G.C.B." is decoded in Session 2. His face is never shown until it is too late for him to be the primary threat.</p>
+    <details>
+      <summary>Brutus's network across sessions</summary>
+      <div class="detail-body">
+        <p><b>S1:</b> OTHALAN contract token in the vault — placed before the party descended. He knew the spear was there.</p>
+        <p><b>S2:</b> Quintus Flavius (sleeper agent, killed Sextus). Scholar Aldric (raven spy). Encoded letter ordering "permanent removal."</p>
+        <p><b>S3:</b> Aldric's final report if not confronted. Corvinus's pursuit may have Brutus's backing.</p>
+        <p><b>S4:</b> Three simultaneous attacks: gate breach, granary fire, shrine desecration. Plan B already arranged for Session 5 if Session 4 fails. Agent inside the fort named in interrogation (surfaces in epilogue).</p>
+        <p><b>S5:</b> Whatever happened to his network determines his exposure in the epilogue.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="villain-card">
+    <div class="villain-type">Divine Antagonist</div>
+    <div class="villain-name">Mars</div>
+    <p>Ultimate challenge beyond mortal scale. Present since Session 1 as a watching presence, explicitly arrives Session 5. His attention is not malevolent — it is demanding. He does not want to destroy the party. He wants to see if they're worth keeping.</p>
+    <details>
+      <summary>Mars across sessions</summary>
+      <div class="detail-body">
+        <p><b>S1:</b> The vault is his. The seal was his. He felt it when the spear moved. He has been watching since the first torch was lit below.</p>
+        <p><b>S2:</b> Cassia's visions intensify since the spear surfaced. She cannot sleep. She does not tell the party how bad it has gotten.</p>
+        <p><b>S3:</b> The ritual at the sacred grove is an attempt to use his domain without his leave. He will stop it — but the grove passes a message through the ritual: "The grove belongs to me. Bring me what remains." He will not make it easy. But he will not stop it.</p>
+        <p><b>S4:</b> "KNEEL." One word. No body. The antechamber knows what it means. Three figures must kneel in submission for him to receive what is brought to him. He is watching who chooses to kneel and who has to be convinced.</p>
+        <p><b>S5:</b> He arrives physically. "MORTALS. I WATCHED. I ARRIVED. NOW YOU ANSWER." He is conducting judgment in the Armilustrium form — the ancient festival of weapons purification. That is a choice. He chose a shape Rome can understand for a reason.</p>
+      </div>
+    </details>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════ NPC STATES -->
+<div class="section" id="npc-states">
+<h2>NPC States Per Session</h2>
+<table class="npc-state-table">
+  <tr>
+    <th>NPC</th>
+    <th>Session 1</th>
+    <th>Session 2</th>
+    <th>Session 3</th>
+    <th>Session 4</th>
+    <th>Session 5</th>
+  </tr>
+  <tr>
+    <td><b>Legate Corvinus</b></td>
+    <td>Waiting at mine. Furious, compliant.</td>
+    <td>Loses command. Seething. Signs the Tribune's arrest order.</td>
+    <td>Pursuing with 8 soldiers. May be ahead.</td>
+    <td>Council seat. Filed blame report. Fears party talking.</td>
+    <td>Frozen witness. Soldiers may arrive hostile.</td>
+  </tr>
+  <tr>
+    <td><b>Tribune Lucius</b></td>
+    <td>—</td>
+    <td>Commands fort. The hesitation exists. Doubting his mission.</td>
+    <td>Traveling with party (if deal) or absent.</td>
+    <td>Still receives kill orders for Cassia. Citizenship window open.</td>
+    <td>Frozen witness. Future in Mars's judgment.</td>
+  </tr>
+  <tr>
+    <td><b>Centurion Varro</b></td>
+    <td>Debriefs party at mine entrance.</td>
+    <td>Posts veterans at spear storage. Steps up at accusation.</td>
+    <td>If survived: not present in forest arc.</td>
+    <td>Council voice. Files commendationes without being asked.</td>
+    <td>Frozen witness. Speaks one sentence at the end if asked directly.</td>
+  </tr>
+  <tr>
+    <td><b>Augur Cassia</b></td>
+    <td>Warned party before descent. Three new visions since.</td>
+    <td>Omens confused around Tribune. Barely sleeping.</td>
+    <td>Optional companion. Considers volunteering as sacrifice.</td>
+    <td>Augury in opening. Knows that if no one kneels, she kneels alone and dies.</td>
+    <td>Frozen witness. Her crow circles the genuine-sacrifice character. Her visions have stopped — she knows the outcome.</td>
+  </tr>
+  <tr>
+    <td><b>Vercingetorix</b></td>
+    <td>—</td>
+    <td>Leads raid. Trust ladder: 0–Complete.</td>
+    <td>Ally (if trusted): guides, knows the grove path, knows the sacrifice must be real.</td>
+    <td>Envoy present at council. Dying faster. Last chance to protect his tribe.</td>
+    <td>Warriors circle arena if allied. Rune message to Mars available: TIWAZ + WUNJO. Dying within a year.</td>
+  </tr>
+  <tr>
+    <td><b>Thusnelda</b></td>
+    <td>—</td>
+    <td>—</td>
+    <td>Appears at Scout encounter. Knows the ritual. Failed it 50 years ago. Will guide once.</td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+  <tr>
+    <td><b>Senator Brutus</b></td>
+    <td>Vault token placed before party descended.</td>
+    <td>Encoded letter: "permanent removal." Quintus + Aldric on site.</td>
+    <td>Aldric's final report if not confronted.</td>
+    <td>Three simultaneous attacks. Plan B arranged. Agent inside fort.</td>
+    <td>Off-screen. Epilogue exposure depends on what the party documented.</td>
+  </tr>
+</table>
+</div>
+
+<!-- ═══════════════════════════════════════ CASCADES -->
+<div class="section" id="cascades">
+<h2>Key Cascade Choices — Choices That Echo</h2>
+<table>
+  <tr><th>Session</th><th>Choice</th><th>Activates</th><th>Effect</th></tr>
+  <tr class="cascade-row">
+    <td>S1</td><td>Who first touched the spear</td><td>S3 Cold Open</td><td>That character receives the corrupting influence in S3. Their private note is specific to their S0 material.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S1</td><td>Who first touched the spear</td><td>S5 Mars Arrives</td><td>Mars's voice is louder in their head during the trial. He looks at them first in the Cold Open.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S1</td><td>Did anyone stabilise Aelius Rufus?</td><td>S2 Scene 2</td><td>He recognises the party. Tells them what Marius said while looking at whoever held the spear: "Give it to me and I will keep you safe."</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S2</td><td>Vercingetorix trust level</td><td>S3 Forest</td><td>High trust: safe passage + grove path. Low/no trust: ambush. Complete trust: his dying condition revealed. Full ally S3–4.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S2</td><td>Vercingetorix allied</td><td>S5 Arena</td><td>Allied: warriors circle arena, Advantage on first roll. Not allied: Germanic warband prepares to strike if Mars displeased.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S2</td><td>Quintus Flavius captured vs. escaped</td><td>S4</td><td>Captured: Senior Frumentarius awarded. Escaped but identified: he surfaces in S4 as potential turn. Unidentified: he is the unnamed S4 saboteur and the interrogation scene plays harder.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S2</td><td>DC 17 rally at north wall (Flavus named)</td><td>S4</td><td>Young soldier Flavus appears as escort volunteer without being recruited.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S2</td><td>Session 2 ending choice</td><td>S3 Opening</td><td>Exposed Tribune: politically free, exposed. Fought: fugitives in forest. Negotiated: Tribune travels with party. Fled with Vercingetorix: Roman soldiers in Germanic war camp. Surrendered: prisoners en route to Rome.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S3</td><td>Sacrifice type and sincerity</td><td>S5</td><td>Genuine sacrifice: Advantage on Option C. Token sacrifice: Disadvantage on Mars's first check.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S3</td><td>Influenced NPC survived the ritual</td><td>S5</td><td>They appear among frozen witnesses and beg the party to speak honestly.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S4</td><td>How many knelt in the antechamber</td><td>S5</td><td>1: extra S5 consequence in effect. 2: normal S5. 3 correct (Roman/Germanic/spear-touched): one S5 trial drops one difficulty tier.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S4</td><td>Who knelt in the antechamber</td><td>S5</td><td>Those three glow faintly. Mars expects them to speak first in Option C.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S4</td><td>Lucius's dispatch to Rome sent?</td><td>S5 Scene 4</td><td>If sent: Imperial epistula arrives during the aftermath with citizenship confirmation for qualifying characters.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S4</td><td>Corvinus tried to seize spear uncontested</td><td>S5</td><td>His soldiers arrive hostile mid-arena if Mars is displeased. Disadvantage on Option C.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>S4</td><td>Lucius sabotaged the spear</td><td>S5</td><td>Mars begins the session angrier. All DCs +2 this session.</td>
+  </tr>
+  <tr class="cascade-row">
+    <td>Any</td><td>Corruption Level 5 character exists</td><td>S5</td><td>Mars uses them as mouthpiece. Option B: targeted preferentially. Option C: truthful self-awareness = no penalty; selfish answer = −5 to Persuasion DC.</td>
+  </tr>
+</table>
+</div>
+
+<!-- ═══════════════════════════════════════ HANDOUTS -->
+<div class="section" id="handouts">
+<h2>Handout Deployment Schedule</h2>
+<table class="handout-row">
+  <tr><th>#</th><th>Name</th><th>Session / When</th><th>How to deliver</th></tr>
+  <tr>
+    <td>01</td>
+    <td>Legate's Orders</td>
+    <td>S1 — Before descent, posted on principia board</td>
+    <td>Slide across table. Military document — official, no drama.</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>Vault Inscription</td>
+    <td>S1 — Runic Corridor, carved in stone</td>
+    <td>Show while party stands at the puzzle. Don't translate.</td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>Omens Observed</td>
+    <td>S1 — Cassia's report after the wight encounter</td>
+    <td>Fold in thirds, sealed. She hands it to whoever touched the spear.</td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td>Tribune's Sealed Orders</td>
+    <td>S2 Scene 1 — Tribune presents credentials</td>
+    <td>Folded, sealed edge down. Let a player break the seal.</td>
+  </tr>
+  <tr>
+    <td>05</td>
+    <td>Encoded Letter (Caesar cipher +3)</td>
+    <td>S2 Scene 2 — Tribune's quarters, dispatch box</td>
+    <td>Hand it folded. Never read aloud. Let them decode it. Intelligence DC 14.</td>
+  </tr>
+  <tr>
+    <td>06</td>
+    <td>Thusnelda's Map</td>
+    <td>S3 — Thusnelda gives it when she agrees to guide</td>
+    <td>Torn edge down, let them touch it. She says nothing about what the rune ring means.</td>
+  </tr>
+  <tr>
+    <td>07</td>
+    <td>Bloody Message (bark)</td>
+    <td>S3 Cold Open — carved in a tree near camp</td>
+    <td>Don't warn them. When they wake, point at the tree. Let them find it.</td>
+  </tr>
+  <tr>
+    <td>08</td>
+    <td>Raven Order (strip)</td>
+    <td>S3 — Found on a dead runner between Germanic lines</td>
+    <td>Tiny. Rolled up. The messenger's body found by the party's scout.</td>
+  </tr>
+  <tr>
+    <td>09</td>
+    <td>Siege Day Orders</td>
+    <td>S4 Scene 2 — Varro distributes before the procession</td>
+    <td>One per player. Different document, same weight. This is real military procedure. Treat it that way.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Mark of Mars</td>
+    <td>S5 Scene 3 — After Mars's judgment, before epilogue</td>
+    <td>Four cards, one per player. Placed face-down. Flip together when Mars has finished speaking. Do not hand out early.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Arena Weapon Cards</td>
+    <td>S5 Scene 2 — Trial combat start</td>
+    <td>Three cards placed face-down on the table. Claim as bonus action. Flip when party can examine. Do not flip before combat begins.</td>
+  </tr>
+</table>
+</div>
+
+<!-- ═══════════════════════════════════════ COMMENDATIONES -->
+<div class="section" id="commendationes">
+<h2>Commendationes — All Opportunities by Session</h2>
+<div class="box gold">
+  <p><b>Track per character.</b> Citizenship thresholds: Peregrinus (0), Latinus eligibility (3+), Civis eligibility (6+). Lucius's S4 attestation accelerates Latinus → Civis for one character with 3+ and direct approach.</p>
+</div>
+<table>
+  <tr><th>Session</th><th>Opportunity</th><th>Who awards</th><th>Requirement</th></tr>
+  <tr>
+    <td>S1</td><td>Stabilising Aelius Rufus (medicus)</td><td>Aelius files, Cassia attests</td><td>Medicine check before combat ends. Not retroactive.</td>
+  </tr>
+  <tr>
+    <td>S1</td><td>Holding the Binding Chamber alone while others solve the puzzle</td><td>Varro's paperwork, indirect</td><td>Demonstrable tactical sacrifice with witnesses.</td>
+  </tr>
+  <tr>
+    <td>S2</td><td>Coordinating fort defense during the raid with demonstrable leadership</td><td>Corvinus — grudgingly</td><td>Rally soldiers, hold a sector, save a position about to break.</td>
+  </tr>
+  <tr>
+    <td>S2</td><td>Exposing the Tribune's false accusation through physical evidence</td><td>Standard paperwork</td><td>Decoded letter, boot print, or transfer papers — not argument alone. One commendatio to the character producing the decisive piece.</td>
+  </tr>
+  <tr>
+    <td>S2</td><td>Reaching Complete Trust with Vercingetorix</td><td>Varro (non-standard)</td><td>Vercingetorix sends a runner to Corvinus establishing the party's word is good with his people. Different kind of record.</td>
+  </tr>
+  <tr>
+    <td>S3</td><td>Actively contributing to the spear's destruction at the grove</td><td>Corvinus's paperwork window</td><td>Direct contribution to the ritual. Corvinus files without knowing what happened at the grove.</td>
+  </tr>
+  <tr>
+    <td>S3</td><td>Rescuing the influenced character during the ritual</td><td>Varro's paperwork / Cassia's attestation</td><td>Physically intervening between a colleague and a divine force.</td>
+  </tr>
+  <tr>
+    <td>S4</td><td>Holding the wall during the gate breach</td><td>Varro files without being asked</td><td>The character whose action determines whether the gate holds or falls.</td>
+  </tr>
+  <tr>
+    <td>S4</td><td>Abandoning a tactically superior position to protect vicus civilians</td><td>Corvinus resents it; files anyway</td><td>Demonstrable sacrifice of advantage for non-combatant protection.</td>
+  </tr>
+  <tr>
+    <td>S4</td><td>Holding the Vercingetorix alliance against Corvinus/Lucius pressure</td><td>Vercingetorix names the party specifically at session end</td><td>Not a standard commendatio — reward is the naming, which has political weight in S5.</td>
+  </tr>
+  <tr>
+    <td>S4</td><td>Lucius's personal attestation (citizenship window)</td><td>Lucius — offer not made twice</td><td>Latinus standing + 3+ commendationes + party must initiate. Closes if session ends without follow-up.</td>
+  </tr>
+  <tr>
+    <td>S5</td><td>Surviving and completing the divine trial</td><td>Cassia as religious witness</td><td>The only commendatio issued by a religious authority in this campaign.</td>
+  </tr>
+  <tr>
+    <td>S5</td><td>Explicit choice not to use lethal force when justifiable, and that choice costs mechanically</td><td>Varro — personally, outside normal paperwork</td><td>During Mars's trial. The cost must be real and witnessed.</td>
+  </tr>
+</table>
+<div class="box">
+  <p><b>Final count:</b> 6+ = exceptional record (Imperial notice possible). 3–5 = expected range. Fewer than 3 = citizenship track closed for this campaign.</p>
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════ CORRUPTION -->
+<div class="section" id="corruption">
+<h2>Corruption Arc — Six Stages Across the Campaign</h2>
+<table>
+  <tr><th>Stage</th><th>Name</th><th>When it arrives</th><th>Mechanical effect</th><th>Recovery path</th></tr>
+  <tr>
+    <td><b>0</b></td><td>Clean</td><td>Session start</td><td>None</td><td>—</td>
+  </tr>
+  <tr>
+    <td><b>1</b></td><td>Touched</td><td>S1: Touching / attuning the spear</td><td>Dreams begin. The spear feels warm.</td><td>None needed yet.</td>
+  </tr>
+  <tr>
+    <td><b>2</b></td><td>Dreaming</td><td>S2: Extended spear contact or voluntary attunement</td><td>DC 11 Wisdom save when spear goes quiet — urge to check it.</td><td>Cassia's ward rite (full bog valerian).</td>
+  </tr>
+  <tr>
+    <td><b>3</b></td><td>Influenced</td><td>S3: Chosen character, private note at session start</td><td>Advocates keeping the spear. Agitated when others touch it. Eyes red-tinged in direct light.</td><td>Group Wisdom DC 14 at ritual climax.</td>
+  </tr>
+  <tr>
+    <td><b>4</b></td><td>Claimed</td><td>S3/S4: Ritual failure or spear destroyed while attuned</td><td>Disadvantage on Wisdom saves. Spear images in peripheral vision.</td><td>Grove ritual (if not completed). Mars removes one stage with blood sacrifice in S4.</td>
+  </tr>
+  <tr>
+    <td><b>5</b></td><td>Vessel</td><td>S4/S5: Sustained failure, voluntary acceptance, or Lucius's sabotage collapses onto the carrier</td><td>DC 16 Wisdom save each round to act freely. Mars uses them as his mouthpiece in Option C.</td><td>Only after S5: selfless deed, unseen by authority, within one year.</td>
+  </tr>
+</table>
+
+<details>
+  <summary>Dream sequence — how to run it (S2 before Scene 3)</summary>
+  <div class="detail-body">
+    <p>Before Session 3 begins, the player with the highest corruption level describes a dream to the table. No dice. No saves. Just narration.</p>
+    <blockquote>Fort burning. Comrades dead. Themselves standing over the ruins, holding the spear. The spear is not burning. Everything else is.</blockquote>
+    <p>Don't make it mechanical. Don't frame it as a warning. Make it felt. Give the player the first line and let them run with it. The table listening to one player describe their own corruption is more powerful than any mechanic.</p>
+  </div>
+</details>
+</div>
+
+<!-- ═══════════════════════════════════════ TRUTH BEHIND -->
+<div class="section" id="truth">
+<h2>The Truth Behind the Campaign</h2>
+<details>
+  <summary>Full DM context — what this campaign is actually about</summary>
+  <div class="detail-body">
+    <h3>The Spear's Real History</h3>
+    <p>The Spear of Mars (the God-Killer) was used three generations ago by a Germanic hero who wounded one of Mars's demigod sons. Mars cursed it: anyone who wields it with ambition will be consumed by war. The Romans sealed it in the vault beneath the future site of Vindolanda, believing they were containing a threat. They were also hiding evidence of a military failure they didn't want in the record.</p>
+
+    <h3>Why Brutus Wants It Destroyed</h3>
+    <p>Brutus's intelligence network identified the spear as the Emperor's potential tool — a divine weapon that could legitimise military action against the Senate's frontier contracts. Brutus is not a cartoon villain. He believes a divine weapon in the Emperor's hands ends the Senate's structural check on military power. He is correct about the danger. He is wrong about who should be making this decision. His methods — sleeper agents, sabotage, murder — are the methods of a man who stopped trusting institutions and started substituting his own judgment for theirs.</p>
+
+    <h3>What Mars Actually Wants</h3>
+    <p>Mars does not want the spear destroyed. He wants the party to earn the right to destroy it in front of him. The difference is everything. If it were destroyed secretly, without his acknowledgment, he would have noticed — he has been watching since Session 1 — and his response would not have been a trial. His response would have been the frontier burning.</p>
+    <p>The trial in Session 5 is Mars conducting the Armilustrium — the ancient Roman festival of weapons purification and martial review. He chose a shape Rome understands. He chose judgment, not punishment. That is the closest thing to mercy that a god of war can offer, and the party should feel the weight of that by the time they understand it.</p>
+
+    <h3>Vercingetorix</h3>
+    <p>His grandfather helped seal the spear. The tribe has guarded that sealing for three generations as a sacred obligation — not because they fear the spear, but because they understood the curse before the Romans did. His dying condition is not tragedy for its own sake: it is the cost the tribe has paid for maintaining that vigil while Rome built a fort on top of it and called it infrastructure.</p>
+
+    <h3>Cassia</h3>
+    <p>She has known the outcome of Session 5 since her third vision after the spear surfaced. Her visions stopped at the moment of Mars's arrival. She will not say what she saw in the silence where a fourth vision should have been. She knows that an augur who reveals a fated outcome before it occurs collapses the possibility space. She is choosing not to speak because the party's genuine choices are more important than the outcome being predicted correctly.</p>
+  </div>
+</details>
+
+<details>
+  <summary>What questions players are most likely to ask — and honest DM answers</summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>Question</th><th>Honest answer (give this)</th></tr>
+      <tr><td>"Is the spear actually sentient?"</td><td>No. But it resonates with the ambitions of whoever holds it, and amplifies them. The influenced NPC is hearing their own desires at higher volume, not a separate voice.</td></tr>
+      <tr><td>"Is Mars evil?"</td><td>No. He is the god of war as Rome understood war — discipline, sacrifice, martial virtue, the right kind of violence at the right kind of moment. He is not cruel. He is demanding. These are not the same thing.</td></tr>
+      <tr><td>"Could we have just left the spear in the vault?"</td><td>No. Once found and touched, it began the process. Once Corvinus moved it, Rome knew. Once the Tribune arrived, the political situation was already in motion. The characters were never going to be able to put it back and walk away. That is the opening hook working correctly.</td></tr>
+      <tr><td>"Does Brutus ever face consequences?"</td><td>That depends entirely on what the party documented, who they told, and whether they had the political leverage to make it stick. The epilogue can include Brutus facing accountability, exile, or nothing. The campaign does not guarantee justice. It guarantees the party's actions mattered.</td></tr>
+      <tr><td>"What happens to Vercingetorix?"</td><td>He dies. Within the year. His tribe remembers the party in a specific way depending on how they treated him. If they reached Complete Trust, there is a specific grave marker the party can visit in the epilogue.</td></tr>
+    </table>
+  </div>
+</details>
+</div>
+
+</body>
+</html>
