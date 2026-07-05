@@ -1,0 +1,75 @@
+---
+title: "Chapter 3 — MapTool Reference"
+---
+
+## Maps and Tokens for Chapter 3
+
+Open these maps in MapTool before the session. Switch maps at each scene transition — do not wait for players to ask.
+
+### Scene → Map → Tokens
+
+| Scene | Map File | Tokens to Place | Notes |
+|---|---|---|---|
+| Scene 0: Cold Open | `s3_forest_path.html` | All PCs, Thusnelda (grey frame — unknown), Influenced NPC with no special marker | Dawn light. Spear props visible. Give Handout 7 now. |
+| Scene 1: Travel | `s3_forest_overview.html` | All PCs, Vercingetorix (if present, grey frame), 3× Wolf, 2× Dire_Wolf | Forest encounters from the d10 travel table. Roll 1 per hour. |
+| Scene 2: Thusnelda's Scouts | `s3_germanic_village.html` | 12× Tribal_Warrior, 2× Scout, Thusnelda, Vercingetorix (if present) | Reveal Thusnelda after ambush ends. Thusnelda frame: grey → gold if alliance secured. |
+| Scene 3: River Crossing | `s3_forest_path.html` | All PCs, 1× Knight (Centurion), 6× Legionary_Milites | Place Romans on far bank. Fallen oak = diagonal line across river. |
+| Scene 3b: The Farbog | `s3_farbog_crossing.html` | All PCs, Thusnelda (if guide), 1× Specter (bog spirit, invisible until revealed), 3× Will-o-Wisp | Specter token: keep off-screen until the party ignores it 10+ min. |
+| Scene 4: Sacred Grove | `s4_sacred_grove.html` | All PCs, Thusnelda, 3× Wight placeholder (Stone Golem avatars — Scene 5 only) | Do NOT place golems until Scene 5 triggers. Cover positions: north + south stones. |
+| Scene 5: Mars Intervenes | `s4_sacred_grove.html` | 3× Stone_Golem (120 HP each), all PCs | Golems start at altar. Cover positions displace movement by 1 round. |
+
+### Player Tokens
+
+| Character | File | Location |
+|---|---|---|
+| Iris | `Maptool/tokens/players/Iris.rptok` | — |
+| Julia Jana | `Maptool/tokens/players/Julia_Jana.rptok` | — |
+| Tanit | `Maptool/tokens/players/Tanit_bint_Abdmelqart.rptok` | — |
+| Rivia | `Maptool/tokens/players/Rivia_Calida_Mendera.rptok` | — |
+| Ursula | `Maptool/tokens/players/Ursula_Günther.rptok` | — |
+
+### NPC Tokens
+
+| Token | File | Scene | Frame Colour |
+|---|---|---|---|
+| Thusnelda | `Maptool/tokens/npcs/Thusnelda.rptok` | S2 onward | Grey → gold if trust earned |
+| Vercingetorix | `Maptool/tokens/npcs/Vercingetorix.rptok` | S2 onward (if alliance) | Gold |
+| Legate Corvinus | `Maptool/tokens/npcs/Corvinus.rptok` | S3 (off-screen — scout evidence only) | Red |
+| Centurion (pursuit) | `Maptool/tokens/npcs/Optio_NCO.rptok` | S3 river far bank | Red |
+
+### Creature Tokens
+
+| Creature | File | Scene | Count |
+|---|---|---|---|
+| Wolf | `Maptool/tokens/npcs/creatures/Wolf.rptok` | S1 travel | up to 3 |
+| Dire Wolf | `Maptool/tokens/npcs/creatures/Dire_Wolf.rptok` | S1 travel | up to 2 |
+| Tribal Warrior | `Maptool/tokens/npcs/creatures/Tribal_Warrior.rptok` | S2 ambush | 12 |
+| Scout | `Maptool/tokens/npcs/creatures/Scout.rptok` | S2 ambush | 2 |
+| Legionary Milites | `Maptool/tokens/npcs/Fort_Tokens/Legionary_Milites.rptok` | S3 river | 6 |
+| Specter (bog spirit) | `Maptool/tokens/npcs/creatures/Specter.rptok` | S3b Farbog | 1 |
+| Will-o-Wisp | `Maptool/tokens/npcs/creatures/Will-o-Wisp.rptok` | S3b Farbog | 3 |
+| Wight (Vættir) | `Maptool/tokens/npcs/creatures/Wight.rptok` | S3b deep bog | up to 2 |
+| Dryad (grove guardian) | `Maptool/tokens/npcs/creatures/Dryad.rptok` | S4 sacred grove | 1 |
+
+### Map Files Location
+
+All SVG maps: `Maptool/maps/`
+
+```
+s3_forest_overview.html    — full forest overview (40px/sq overview scale)
+s3_forest_path.html        — forest trail battle map (60px/sq)
+s3_farbog_crossing.html    — bog crossing battle map (60px/sq)
+s3_germanic_village.html   — Thusnelda's village perimeter (60px/sq)
+s4_sacred_grove.html       — sacred grove battle map (scenes 4+5, 60px/sq)
+```
+
+To load a map in MapTool: **File → Import Map** → select `.html` file → confirm grid size matches (60px = 5ft).
+
+### Session Folder
+
+Campaign-specific tokens and maps copy to:
+```
+Maptool/maps/campaign/S3_Dark_Forest/
+```
+
+Run `bash Maptool/build_campaign_maps.sh` to populate (idempotent).

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 3 — NPC Reference</title>
+<style>
+  body { background: #111; color: #ddd; font-family: Arial, sans-serif; margin: 0; padding: 16px; font-size: 14px; line-height: 1.5; max-width: 900px; }
+  h1 { color: #c8a84b; font-size: 1.2em; margin: 0 0 4px 0; }
+  .subtitle { color: #888; font-size: 0.82em; margin-bottom: 18px; }
+
+  .npc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .npc-card { background: #181818; border: 1px solid #2a2a2a; border-top: 3px solid #a07830; padding: 14px; }
+  .npc-card.ally { border-top-color: #4a8a4a; }
+  .npc-card.enemy { border-top-color: #8a2a2a; }
+  .npc-card.unknown { border-top-color: #666; }
+
+  .npc-header { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 10px; }
+  .portrait { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #a07830; background: #222; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+  .portrait.ally { border-color: #4a8a4a; }
+  .portrait.enemy { border-color: #8a2a2a; }
+  .portrait.unknown { border-color: #666; }
+
+  .npc-name { color: #c8a84b; font-weight: bold; font-size: 1.05em; margin: 0 0 2px 0; }
+  .npc-role { color: #888; font-size: 0.82em; margin: 0 0 4px 0; }
+  .npc-voice { font-style: italic; color: #c8b898; font-size: 0.88em; border-left: 2px solid #a07830; padding-left: 8px; margin: 6px 0; }
+
+  .ogas { margin: 8px 0; }
+  .ogas-row { display: flex; gap: 6px; margin: 3px 0; font-size: 0.85em; }
+  .ogas-label { color: #a07830; font-weight: bold; min-width: 70px; flex-shrink: 0; }
+  .ogas-text { color: #ccc; }
+
+  .secret { background: #1a0a0a; border-left: 3px solid #8a1a1a; padding: 5px 8px; margin: 6px 0; font-size: 0.83em; color: #d8a8a8; }
+  .stat-line { background: #0a0a1a; color: #88aaff; font-size: 0.82em; padding: 4px 8px; margin: 6px 0; }
+
+  .state-table { width: 100%; border-collapse: collapse; font-size: 0.82em; margin: 6px 0; }
+  .state-table th { color: #888; font-weight: normal; border-bottom: 1px solid #333; padding: 2px 6px; text-align: left; }
+  .state-table td { padding: 2px 6px; border-bottom: 1px solid #1e1e1e; color: #bbb; vertical-align: top; }
+  .state-table td:first-child { color: #a07830; white-space: nowrap; }
+
+  details { margin: 6px 0; }
+  summary { cursor: pointer; color: #888; font-size: 0.82em; list-style: none; user-select: none; }
+  summary::before { content: "▶ "; }
+  details[open] summary::before { content: "▼ "; }
+  .inner-detail { padding: 4px 0 0 10px; }
+</style>
+</head>
+<body>
+
+<h1>Chapter 3 — NPC Reference</h1>
+<div class="subtitle">Through the Dark Forest. Primary: Thusnelda, Vercingetorix. Secondary: Hilde, Aldric, Arnulf. Background: Corvinus (pursuit only).</div>
+
+<div class="npc-grid">
+
+<!-- THUSNELDA -->
+<div class="npc-card unknown">
+  <div class="npc-header">
+    <div class="portrait unknown">⚡</div>
+    <div>
+      <div class="npc-name">Thusnelda</div>
+      <div class="npc-role">Völva — Germanic seeress. Primary guide. Cherusci tribe. Frame: grey → gold.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"Your friend there has a thread in them. I see it. Do you?"</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Destroy the spear before its corruption spreads to the forest itself</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Lead the party to the grove and complete the rite — only she knows the full ritual sequence</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Tests the party's respect at every scene. One disrespect: grudging guide. Two: she stops and demands a price. Three: she leaves them in the bog.</span></div>
+  </div>
+  <div class="secret">Secret: She lost a younger sister to the spear's influence two winters ago. The sister walked into the bog and did not come back. She does not volunteer this. If pressed (Insight DC 15), she shows it.</div>
+  <div class="stat-line">Stat: Druid (CR 6). AC 11, HP 65. Spells: Entangle, Speak with Animals, Call Lightning, Conjure Animals. Melee: staff +4, 1d6+2. Will not fight unless the grove is directly threatened.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>Vercingetorix vouches</td><td>Persuasion DC 14 → DC 10. She already expected them.</td></tr>
+      <tr><td>Party disrespects bog</td><td>She goes silent. Costs one ritual prep action per disrespect in Scene 4.</td></tr>
+      <tr><td>Persuasion DC 18 / Religion DC 15</td><td>She reveals the altar lock in the grove's northwest face and what it opens (Ch4 antechamber access).</td></tr>
+      <tr><td>Party earns full trust</td><td>She offers to accompany them to Ch4 as a ritual witness. Will not fight. Will speak.</td></tr>
+    </table>
+  </div>
+  </details>
+</div>
+
+<!-- VERCINGETORIX -->
+<div class="npc-card ally">
+  <div class="npc-header">
+    <div class="portrait ally">⚔</div>
+    <div>
+      <div class="npc-name">Vercingetorix</div>
+      <div class="npc-role">Gaul-Germanic warlord. Returning from Ch2. Frame: gold.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"I gave them my word. I expect you to make me look good."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Keep the alliance alive; ensure Rome does not recover the spear</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Shadow the party until they need him, then appear — never early, never late</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">If the party fails to earn Thusnelda's trust, he steps in — but it costs him standing with her tribe. He will not use this card twice.</span></div>
+  </div>
+  <div class="secret">Secret: He made a promise to the Marcomanni chieftain — if the spear is destroyed, the tribes halt Wall raids for one year. He has not told the party. If they learn this (History DC 14 or Insight DC 13 when he speaks of "obligations"), it reframes his entire involvement.</div>
+  <div class="stat-line">Stat: Gladiator (CR 5). AC 16 (chain + shield), HP 112. Attacks: spear +7 (2d6+4) and shortsword +7 (1d6+4). Parry reaction: +3 AC until next turn.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Scene</th><th>What he does</th></tr>
+      <tr><td>S2 ambush (3+ rounds)</td><td>Arrives, raises fist — scouts stand down immediately. No words needed.</td></tr>
+      <tr><td>S3 river</td><td>Holds the far bank long enough for the party to cross. Then melts back.</td></tr>
+      <tr><td>S4 grove</td><td>Stands outside the stone circle. Does not enter — "That is her territory, not mine."</td></tr>
+      <tr><td>S5 Mars</td><td>Pulls any fleeing party member to cover. Does not fight golems. Will drag an unconscious PC to safety.</td></tr>
+    </table>
+  </div>
+  </details>
+</div>
+
+<!-- HILDE -->
+<div class="npc-card unknown">
+  <div class="npc-header">
+    <div class="portrait unknown">🌿</div>
+    <div>
+      <div class="npc-name">Hilde</div>
+      <div class="npc-role">Thusnelda's apprentice. Cherusci. Scene 2 onward. Frame: grey.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"She said you would come. I did not believe her. I believe her now."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Learn from this — it is her first encounter with the spear's corruption</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Watch the party; report to Thusnelda; ask questions she shouldn't</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Follows the party too closely. Asks about the influenced NPC by name, not by type. She notices first.</span></div>
+  </div>
+  <div class="secret">Secret: She is the first to name the influenced NPC's condition — not to the party, but to Thusnelda, quietly, in Germanic. A character with Germanic language proficiency overhears. This is Clue 2 alternate version.</div>
+  <div class="stat-line">Stat: Acolyte (CR 1/4). AC 10, HP 9. Spells: Guidance, Light, Spare the Dying. Non-combatant. Runs if attacked.</div>
+</div>
+
+<!-- ALDRIC -->
+<div class="npc-card unknown">
+  <div class="npc-header">
+    <div class="portrait unknown">🦅</div>
+    <div>
+      <div class="npc-name">Aldric</div>
+      <div class="npc-role">Germanic observer. Suspected Roman informant. Scene 2. Frame: grey.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"The forest remembers everything. So do I."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Record what he sees and deliver it — to whom the party must determine</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Stay close without drawing attention; learn who in the party carries the spear</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Present at the village. Watches too carefully. Leaves before the grove.</span></div>
+  </div>
+  <div class="secret">Secret: He is reporting to Senator Brutus, not to Corvinus. He has no idea what the spear actually does — he was told it is a Roman military asset. He is not malicious. He is also terrified.</div>
+  <div class="stat-line">Stat: Spy (CR 1). AC 12, HP 27. Dagger +4 (1d4+2). Sneak Attack 2d6. Skills: Deception +6, Insight +4, Perception +6. Investigation DC 14 to identify him as an informant.</div>
+</div>
+
+<!-- ARNULF -->
+<div class="npc-card ally">
+  <div class="npc-header">
+    <div class="portrait ally">🔥</div>
+    <div>
+      <div class="npc-name">Arnulf</div>
+      <div class="npc-role">Cherusci firekeeper. Scene 2–3b. Frame: gold (neutral/helpful).</div>
+    </div>
+  </div>
+  <div class="npc-voice">"The bog does not forgive. It only waits."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Ensure the party does not defile any offering sites in the bog</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Guide them across the Farbog if they earn it; stand aside if they don't</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Quietly explains what the bog requires at each step. Never repeats himself. Never warns twice.</span></div>
+  </div>
+  <div class="secret">Secret: He maintains the offering pole the party finds in the bog — the one with the Roman sandal buckle. He found it two months ago and has been leaving fresh offerings there to keep the Vættir from noticing the Roman intrusion. He does not know who left the original buckle.</div>
+  <div class="stat-line">Stat: Tribal Warrior (CR 1/8). AC 12, HP 11. Non-combatant role in this chapter. Will fight to defend the bog if absolutely necessary.</div>
+</div>
+
+<!-- CORVINUS (background) -->
+<div class="npc-card enemy">
+  <div class="npc-header">
+    <div class="portrait enemy">🦁</div>
+    <div>
+      <div class="npc-name">Legate Corvinus</div>
+      <div class="npc-role">Pursuit — off-screen. Frame: red. Evidence only at Scene 3.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"I gave them a head start. I did not give them a pardon."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Recover the spear before the Senate learns it is gone</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Pursue with a small patrol; cut off the river crossing</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Between sessions: he sends scouts ahead. Evidence at Scene 3 river bank — military sandal, DC 11 Perception.</span></div>
+  </div>
+  <div class="secret">Secret: He does not want the spear for Brutus. He wants it destroyed. He cannot say this openly. He is buying the party time while appearing to pursue them. His scouts are told to report back, not engage.</div>
+  <div class="stat-line">Does not appear in person in Ch3. Centurion (Knight CR 3) commands the pursuit force at the river. Corvinus himself is one day behind.</div>
+</div>
+
+</div><!-- end npc-grid -->
+
+</body>
+</html>

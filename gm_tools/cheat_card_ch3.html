@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 3 — GM Cheat Card</title>
+<style>
+  body { background: #111; color: #ddd; font-family: Arial, sans-serif; margin: 0; padding: 16px; font-size: 15px; line-height: 1.5; max-width: 860px; }
+  h1 { color: #c8a84b; font-size: 1.2em; margin: 0 0 4px 0; }
+  .subtitle { color: #888; font-size: 0.82em; margin-bottom: 14px; }
+
+  details { margin-bottom: 10px; }
+  summary {
+    cursor: pointer;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-left: 4px solid #a07830;
+    padding: 8px 14px;
+    font-weight: bold;
+    color: #c8a84b;
+    font-size: 0.95em;
+    list-style: none;
+    user-select: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▶ "; font-size: 0.7em; color: #a07830; }
+  details[open] summary::before { content: "▼ "; }
+  summary:hover { background: #252525; }
+
+  .inner { background: #181818; border: 1px solid #2a2a2a; border-top: none; padding: 12px 16px; }
+
+  .story-box { background: #1a1400; border-left: 3px solid #c8a84b; padding: 10px 14px; font-style: italic; color: #c8b898; margin-bottom: 4px; }
+  .trigger { color: #8bc88b; font-size: 0.85em; margin-bottom: 6px; }
+  .ends { color: #d4884a; font-size: 0.85em; margin-top: 8px; font-weight: bold; }
+  .stat { color: #88aaff; font-size: 0.85em; background: #0a0a1a; padding: 6px 10px; margin: 6px 0; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 0.87em; margin: 8px 0; }
+  th { text-align: left; color: #c8a84b; border-bottom: 1px solid #333; padding: 4px 8px; font-weight: normal; font-style: italic; }
+  td { padding: 4px 8px; border-bottom: 1px solid #1e1e1e; vertical-align: top; }
+  td:first-child { color: #c8a84b; white-space: nowrap; font-size: 0.88em; }
+  td:nth-child(2) { color: #ccc; }
+  td:nth-child(3) { color: #d44; font-size: 0.82em; font-style: italic; }
+
+  .clue { background: #0f1a0f; border-left: 3px solid #4a8a4a; padding: 6px 10px; margin: 4px 0; font-size: 0.88em; color: #a8c8a8; }
+  .clue strong { color: #8bc88b; }
+
+  .decision { background: #1a0f0f; border-left: 3px solid #8a2a2a; padding: 8px 12px; margin: 6px 0; font-size: 0.88em; }
+  .decision strong { color: #d4884a; }
+
+  .handout-note { background: #1a1428; border-left: 3px solid #7a5aaa; padding: 6px 10px; margin: 4px 0; font-size: 0.88em; color: #c8b8e8; }
+  .secret { background: #1a0a0a; border-left: 3px solid #8a1a1a; padding: 6px 10px; margin: 4px 0; font-size: 0.85em; color: #d8a8a8; }
+
+  ul { margin: 4px 0 4px 18px; padding: 0; }
+  li { margin-bottom: 3px; }
+  strong { color: #e8d8b0; }
+  .warn { color: #d44; }
+  .green { color: #8bc88b; }
+  .blue { color: #88aaff; }
+</style>
+</head>
+<body>
+
+<h1>Chapter 3 — Through the Dark Forest</h1>
+<div class="subtitle">Level 5 → 6 at end. Players carry corrupting spear into enemy territory. One NPC is already influenced.</div>
+
+<details open>
+<summary>The Story (3 sentences)</summary>
+<div class="inner">
+  <div class="story-box">
+    The party crosses into Germanic territory carrying an artifact that is slowly possessing one of their own. A Germanic völva named Thusnelda holds the only knowledge needed to destroy the spear at the sacred grove. At the grove, Mars himself objects — the spear is his weapon, and he does not release it willingly.
+  </div>
+</div>
+</details>
+
+<details open>
+<summary>Before You Start — Check Session 2 Outcomes</summary>
+<div class="inner">
+  <table>
+    <tr><th>Question</th><th>Affects</th></tr>
+    <tr><td>Tribune Lucius alive + with party?</td><td>His role in the grove ritual; if dead, Brutus has no agent in Scene 5</td></tr>
+    <tr><td>Alliance with Vercingetorix?</td><td>Scene 2 ambush auto-ends; Thusnelda DC drops from 14 to 10</td></tr>
+    <tr><td>Augur Cassia with party?</td><td>Scene 4 ritual knowledge; she spots influenced NPC on DC 11 Insight</td></tr>
+    <tr><td>Legate's status?</td><td>Scene 3 river — pursuing legionaries present if Legate is hostile</td></tr>
+    <tr><td>Each PC's corruption level?</td><td>Scene 1 intensity; Scene 4 grove ritual stakes</td></tr>
+  </table>
+  <div class="handout-note">Pass influenced NPC player a private folded note BEFORE Scene 0. See DM Notes below.</div>
+</div>
+</details>
+
+<details open>
+<summary>Scene 0 — Cold Open (5 min)</summary>
+<div class="inner">
+  <div class="trigger">Trigger: Start of session, no preamble. Dawn camp. Someone was standing by the spear at night.</div>
+  <br>
+  <strong>The image:</strong> Torchlight. The spear's wrappings are on the ground, loose. One PC or NPC stands over it, awake, staring. They don't remember getting up.<br><br>
+  <strong>What to say:</strong> "You wake to the sound of the canvas moving. The spear is unwrapped. [Name] is standing over it, eyes open, not blinking."<br><br>
+  <div class="handout-note">Handout 7 (Bloody Message): Give at this moment OR hand it pre-session. "MARS VIDET OMNIA / I did not want to do this." — carved into a tree at the camp's edge.</div>
+  <div class="ends">Ends when: Party reacts to what they see. Cut to Scene 1 immediately. Do not resolve the influence question here.</div>
+</div>
+</details>
+
+<details>
+<summary>Scene 1 — Something is Wrong</summary>
+<div class="inner">
+  <div class="trigger">Trigger: Travel begins. The forest closes in. One member of the party is not quite right.</div>
+  <br>
+  <strong>Three clues the influenced NPC gives themselves away:</strong>
+  <div class="clue"><strong>Clue 1 — Scene 1:</strong> They are first to suggest the sleepwalking was "probably stress." Helpful tone, slightly too fast.</div>
+  <div class="clue"><strong>Clue 2 — Scene 2:</strong> When Thusnelda says "your friend there has a thread in them" and looks at them, they break eye contact first.</div>
+  <div class="clue"><strong>Clue 3 — Scene 3:</strong> During the river crossing's worst moment, they go unnaturally still — listening to something no one else hears.</div>
+  <br>
+  <strong>Active checks to detect:</strong>
+  <table>
+    <tr><th>Check</th><th>DC</th><th>What they learn</th></tr>
+    <tr><td>Perception (passive, during travel)</td><td>13</td><td>The NPC's breathing changes near the spear</td></tr>
+    <tr><td>Medicine (active: physical exam)</td><td>13</td><td>Pupils dilated, skin slightly cooler than ambient temp</td></tr>
+    <tr><td>Insight (active: watching during spear conversation)</td><td>14</td><td>They flinch — not at the topic, at a sound no one else heard</td></tr>
+    <tr><td>Arcana/Religion (passive: reading the spear's aura)</td><td>13/14</td><td>A second thread attached to the spear leads to someone in the party</td></tr>
+  </table>
+  <div class="decision"><strong>If they catch it early:</strong> Group Wisdom check DC 14 at any point to break the connection through human contact. Success: NPC is devastated but free. <strong>If they don't catch it:</strong> Scene 4 — NPC grabs for the spear at ritual climax. Grapple DC 12 or call their name three times to stop them without combat.</div>
+  <div class="ends">Ends when: Party moves on. The forest gets darker. Germanic watchers visible in treeline.</div>
+</div>
+</details>
+
+<details>
+<summary>Scene 2 — Thusnelda's Scouts</summary>
+<div class="inner">
+  <div class="trigger">Trigger: 1–2 hours into forest travel. Movement in the trees. Then silence.</div>
+  <br>
+  <strong>What's happening:</strong> 12 Tribal Warriors + 2 Scouts in a pincer from the flanks. Not blocking the path — surrounding it.<br><br>
+  <div class="stat">Perception DC 12 (active, before initiative): undergrowth disturbed on both flanks, not ahead. Party knows the threat is flanks, not front — advantage on first initiative if a PC covers a flank.</div>
+  <br>
+  <strong>Three ways to end without combat:</strong>
+  <ul>
+    <li>Drop weapons + <strong>Persuasion DC 14</strong> with any Germanic phrase from the player guide</li>
+    <li>Show the spear — scouts recognize it and stop (they know what it is)</li>
+    <li>Vercingetorix is with the party — raises a fist, scouts pull back instantly</li>
+  </ul>
+  <strong>If combat goes 3+ rounds:</strong> Vercingetorix arrives regardless and ends it.<br><br>
+  <strong>Thusnelda:</strong> Appears after the ambush ends, from behind the scouts. She already knows why they're here.
+  <table>
+    <tr><th>Check</th><th>DC</th><th>Result</th></tr>
+    <tr><td>Persuasion (active: backed by something genuine)</td><td>14</td><td>She leads them to the grove</td></tr>
+    <tr><td>Persuasion or Religion (active: speaking ritual language)</td><td>18/15</td><td>She leads AND reveals the altar lock and what it opens</td></tr>
+  </table>
+  <div class="handout-note">Handout 6 (Thusnelda's Map): Give when she agrees to guide. Hand-drawn on rough paper — never geometric. Smudge the fourth river. Cross-spears over grove.</div>
+  <div class="ends">Ends when: Thusnelda agrees (or refuses) to guide. Party moves toward the river.</div>
+</div>
+</details>
+
+<details>
+<summary>Scene 3 — The River Crossing</summary>
+<div class="inner">
+  <div class="trigger">Trigger: Forest opens. The river is ahead — 90 feet wide, fast. And there are Romans on the far bank.</div>
+  <br>
+  <strong>The river:</strong>
+  <table>
+    <tr><th>Method</th><th>DC</th><th>Risk</th></tr>
+    <tr><td>Swim (Athletics, active)</td><td>13</td><td>Metal armor: Strength save DC 14 if you fall in or you sink</td></tr>
+    <tr><td>Fallen oak crossing (Acrobatics, active)</td><td>11</td><td>Knocked off: DC 13 Athletics or swept 20ft downstream</td></tr>
+    <tr><td>Rope across (Athletics group action)</td><td>10</td><td>Takes time — Romans may arrive first</td></tr>
+  </table>
+  <br>
+  <strong>Pursuing Romans:</strong> 1 Centurion (Knight, CR 3) + 6 Legionaries (Veteran, CR 3). They want the spear.
+  <table>
+    <tr><th>Diplomatic option</th><th>DC</th><th>Notes</th></tr>
+    <tr><td>Intimidation: order them to stand down (centurion-rank PC)</td><td>14</td><td>On 5+ over DC: Centurion signals hold. He doesn't want this fight.</td></tr>
+    <tr><td>Deception: mission is sanctioned, pursuit unauthorized</td><td>15 / 18</td><td>15 with a document or seal. 18 without. Varro's presence shifts it.</td></tr>
+  </table>
+  <div class="ends">Ends when: Party crosses. Romans hold or are driven back. Move to Scene 3b.</div>
+</div>
+</details>
+
+<details>
+<summary>Scene 3b — The Farbog</summary>
+<div class="inner">
+  <div class="trigger">Trigger: River behind them. Ground goes soft. Grass disappears. The path narrows to a single hummock trail through dark water.</div>
+  <br>
+  <strong>The bog spirit (unquiet dead, drowned):</strong> Follows 20ft back. Does not attack unless ignored past 10 minutes.<br><br>
+  <strong>Three ways to handle it:</strong>
+  <div class="clue"><strong>Ignore:</strong> After 10 min, it weeps. DC 13 Wisdom save or Frightened 1 hour (source: the bog, not the spirit).</div>
+  <div class="clue"><strong>Acknowledge (Religion DC 12):</strong> Say "Unnamed one, we see you" and drop something of value in the water beside it. Spirit brightens, nods, stills. Thusnelda exhales.</div>
+  <div class="clue"><strong>Ask Thusnelda:</strong> She knows the rite. She'll do it — but costs her one ritual prep action in Scene 4 (one extra round).</div>
+  <br>
+  <strong>Deeper in the bog — Vættir (Will-o'-Wisps, CR 2, modified):</strong>
+  <ul>
+    <li>Do not attack unless the party leaves the hummock path</li>
+    <li>Dispersed by: every party member simultaneously drops one item of value. DC 10 Religion (group) to coordinate in time.</li>
+    <li>A character with 2+ disrespects against the bog: Vættir target them first</li>
+  </ul>
+  <div class="stat">Cult of Mars clue: Offering pole in the bog — new bark wrappings, fresh grain, and a Roman sandal buckle. Religion DC 15 (active): two traditions active here — one old, one hot and angry. The Cult has been claiming Germanic holy ground for Mars.</div>
+  <div class="ends">Ends when: Party reaches the far edge of the bog. Standing stones visible ahead.</div>
+</div>
+</details>
+
+<details>
+<summary>Scene 4 — The Sacred Grove</summary>
+<div class="inner">
+  <div class="trigger">Trigger: Stone circle. Seven standing stones. The spear pulls toward the altar at the center.</div>
+  <br>
+  <div class="stat">Survival DC 11 (active: before entering): Two natural cover positions — north stone and south stone. Using them displaces animated golem movement by one full round if Scene 5 triggers.</div>
+  <br>
+  <strong>The ritual — four checks, any order, any character:</strong>
+  <table>
+    <tr><th>Check</th><th>DC</th><th>Failure by 4 or less</th></tr>
+    <tr><td>Religion: words of unmaking (active, conviction)</td><td>14</td><td>Words land as intent, not invocation. Not wasted — try differently.</td></tr>
+    <tr><td>Arcana: channel the grove's power (active, surrender control)</td><td>15</td><td>If took arcane spear damage this session: advantage on retry.</td></tr>
+    <tr><td>Athletics: hold the spear steady as it fights back (active)</td><td>12</td><td>Spear twists — advantage to next person who tries Athletics this round.</td></tr>
+    <tr><td>Insight: resist the spear's final promise (active)</td><td>14</td><td>"They'll abandon you. Take me and they won't have to."</td></tr>
+  </table>
+  <br>
+  <strong>Influenced NPC — if not caught earlier:</strong> Attempts to stop ritual at climax. Athletics grapple DC 12 or call their name three times. They collapse weeping with no memory of the last hour. Corruption cleared by grove's power.
+  <div class="decision"><strong>If ritual succeeds:</strong> Spear destroyed. Iron fragments remain (Thusnelda seals them in clay for Session 4 return to the vault altar). Mars is not finished — Scene 5 triggers.<br>
+  <strong>If ritual fails:</strong> Party can address Mars directly — Persuasion DC 17 or Religion DC 16. He will not destroy the spear but may accept a binding.</div>
+</div>
+</details>
+
+<details>
+<summary>Scene 5 — Mars Intervenes</summary>
+<div class="inner">
+  <div class="trigger">Trigger: The moment the ritual completes (or fails). The stones move.</div>
+  <br>
+  <strong>What's happening:</strong> 3 Stone Golems (120 HP each, CR 10 stat block — avatars of Mars, not killable at this level). The grove is Mars' contested territory. He did not authorize the destruction.<br><br>
+  <strong>Survival options:</strong>
+  <ul>
+    <li><strong>Cover positions</strong> (north/south stones spotted with Survival DC 11 earlier): displace golem movement by one full round each</li>
+    <li><strong>Stealth DC 13</strong>: reposition behind stones — golem wastes one movement action pivoting. Ritual holder has advantage that round.</li>
+    <li><strong>Address Mars directly</strong> (Persuasion DC 17 or Religion DC 16): name what the spear has done in his name. On success, golems freeze. Mars is angry but listening.</li>
+    <li><strong>Flee:</strong> The grove boundary is 200ft. Golems do not pursue beyond the stones.</li>
+  </ul>
+  <div class="decision"><strong>Mars satisfied:</strong> Spear destroyed, fragments returned to vault altar in Ch4 — Mars accepts this. Session 4 Antechamber ritual uses "remains of the spear."<br>
+  <strong>Mars not satisfied:</strong> One character must make a formal oath at the vault altar before Session 4's final scene. Breaks the oath = corruption stage 4 immediately.</div>
+  <div class="ends">Ends when: Party escapes the grove or Mars is addressed directly and accepts. Level 6. Session ends.</div>
+</div>
+</details>
+
+<details>
+<summary>OGAS This Chapter</summary>
+<div class="inner">
+  <table>
+    <tr><th>NPC</th><th>Objective</th><th>Goal</th><th>Agenda</th><th>Secret</th></tr>
+    <tr>
+      <td>Thusnelda</td>
+      <td>Destroy the spear before it corrupts the forest itself</td>
+      <td>Lead the party to the grove; complete the rite</td>
+      <td>Tests the party's respect for the forest at every scene; a single disrespect and she becomes a grudging guide, not an ally</td>
+      <td>She has already lost one person to the spear's influence — a younger sister who walked into the bog two winters ago</td>
+    </tr>
+    <tr>
+      <td>Vercingetorix</td>
+      <td>Keep the alliance alive; ensure Rome does not take the spear back</td>
+      <td>Shadow the party until they need him, then appear</td>
+      <td>If the party fails to earn Thusnelda's trust, he steps in — but it costs him standing with her</td>
+      <td>He made a promise to the Marcomanni chieftain: if the spear is destroyed, the tribes stop raiding the Wall. He has not told the party this.</td>
+    </tr>
+    <tr>
+      <td>Influenced NPC</td>
+      <td>Unknown to themselves: deliver the spear to Mars' cult</td>
+      <td>Subvert the ritual at Scene 4</td>
+      <td>Explains things away; deflects attention from themselves; goes still at the worst moments</td>
+      <td>They have no memory of the night events. They genuinely believe they are fine.</td>
+    </tr>
+    <tr>
+      <td>Legate Corvinus</td>
+      <td>Recover the spear before the Senate finds out he lost it</td>
+      <td>Pursuing party with a small patrol</td>
+      <td>Sends scouts ahead — evidence at Scene 3 river (sandal DC 11 Perception)</td>
+      <td>He doesn't want the spear for Brutus. He wants it destroyed. He is not sure he can say this.</td>
+    </tr>
+  </table>
+</div>
+</details>
+
+<details>
+<summary>DC Quick Reference</summary>
+<div class="inner">
+  <table>
+    <tr><th>Scene</th><th>Check</th><th>DC</th><th>Type</th></tr>
+    <tr><td>S1</td><td>Perception — NPC breathing changes near spear</td><td>13</td><td>passive</td></tr>
+    <tr><td>S1</td><td>Medicine — physical examination of influenced NPC</td><td>13</td><td>active</td></tr>
+    <tr><td>S1</td><td>Insight — watching NPC during spear conversation</td><td>14</td><td>active</td></tr>
+    <tr><td>S2</td><td>Perception — read the ambush approach pattern</td><td>12</td><td>active</td></tr>
+    <tr><td>S2</td><td>Persuasion — end ambush diplomatically</td><td>14</td><td>active</td></tr>
+    <tr><td>S2</td><td>Persuasion — earn Thusnelda as guide</td><td>14</td><td>active</td></tr>
+    <tr><td>S2</td><td>Persuasion/Religion — earn Thusnelda's full knowledge</td><td>18/15</td><td>active</td></tr>
+    <tr><td>S3</td><td>Athletics — swim the river</td><td>13</td><td>active</td></tr>
+    <tr><td>S3</td><td>Acrobatics — cross the fallen oak</td><td>11</td><td>active</td></tr>
+    <tr><td>S3</td><td>Intimidation — order pursuit to stand down</td><td>14</td><td>active</td></tr>
+    <tr><td>S3b</td><td>Religion — acknowledge the bog spirit</td><td>12</td><td>active</td></tr>
+    <tr><td>S3b</td><td>Wisdom save — spirit weeps (if ignored 10 min)</td><td>13</td><td>save</td></tr>
+    <tr><td>S3b</td><td>Religion — Cult of Mars offering pole resonance</td><td>15</td><td>active</td></tr>
+    <tr><td>S4</td><td>Survival — identify cover positions before entering</td><td>11</td><td>active</td></tr>
+    <tr><td>S4</td><td>Religion — ritual words of unmaking</td><td>14</td><td>active</td></tr>
+    <tr><td>S4</td><td>Arcana — channel grove power</td><td>15</td><td>active</td></tr>
+    <tr><td>S4</td><td>Athletics — hold spear steady</td><td>12</td><td>active</td></tr>
+    <tr><td>S4</td><td>Insight — resist spear's final promise</td><td>14</td><td>active</td></tr>
+    <tr><td>S5</td><td>Stealth — reposition behind cover stones</td><td>13</td><td>active</td></tr>
+    <tr><td>S5</td><td>Persuasion/Religion — address Mars directly</td><td>17/16</td><td>active</td></tr>
+    <tr><td>S5</td><td>Wisdom save — group to break NPC influence</td><td>14</td><td>group save</td></tr>
+  </table>
+</div>
+</details>
+
+<details>
+<summary>Handouts This Chapter</summary>
+<div class="inner">
+  <div class="handout-note"><strong>Handout 7 — Bloody Message:</strong> Scene 0 or pre-session. "MARS VIDET OMNIA / I did not want to do this." Tea-stained paper, torn edge, deep cuts for the Latin, fingernail-thin scratches for the second line.</div>
+  <div class="handout-note"><strong>Handout 6 — Thusnelda's Map:</strong> Scene 2, after she agrees to guide. Hand-drawn only. Wavering river lines. Smudge the fourth river. Crossed spears over grove. Never use a ruler.</div>
+</div>
+</details>
+
+<details>
+<summary>Session Outcomes to Track</summary>
+<div class="inner">
+  <ul>
+    <li>Was the influenced NPC caught before Scene 4? (affects their arc in Ch4)</li>
+    <li>Did the ritual succeed? (affects Ch4 antechamber — whole spear vs. iron fragments)</li>
+    <li>Did Mars accept a direct address? (affects Ch4 oath requirement)</li>
+    <li>Did Cassia gather the bog plant? (one Siege Ward available in Ch4)</li>
+    <li>Did Thusnelda reveal the altar lock? (affects Ch4 antechamber access)</li>
+    <li>Is Vercingetorix's alliance still intact? (affects Ch4 siege support)</li>
+  </ul>
+  <div style="margin-top:10px; color:#888; font-size:0.85em;">Level 6 advance at end of session. Open <strong>cheat_card_ch4.html</strong> for Chapter 4.</div>
+</div>
+</details>
+
+</body>
+</html>
