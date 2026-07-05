@@ -1,0 +1,120 @@
+---
+title: "Session 2 Handouts"
+subtitle: "The Tribune's Gambit — props for players"
+format:
+  html:
+    toc: false
+    css: handouts.css
+---
+
+```{=html}
+<style>
+.handout-block {
+  border: 3px solid #8B7355;
+  background: #F5F0E8;
+  padding: 2em 2.5em;
+  margin: 2em auto;
+  max-width: 600px;
+  font-family: 'Cinzel', 'Georgia', serif;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.25);
+  page-break-inside: avoid;
+}
+.handout-block h2 {
+  font-family: 'Cinzel', 'Georgia', serif;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 0;
+  border-bottom: 1px solid #8B7355;
+  padding-bottom: 0.4em;
+}
+.handout-block p {
+  margin: 0.7em 0;
+  line-height: 1.6;
+}
+.handout-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #6B5B3A;
+  text-align: right;
+  margin-bottom: 0.3em;
+}
+.handout-divider {
+  border: none;
+  border-top: 1px solid #8B7355;
+  margin: 1em 0;
+}
+.cipher-text {
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+  background: #EDE8DC;
+  padding: 0.8em 1em;
+  border: 1px solid #C4A97A;
+  letter-spacing: 0.08em;
+  word-break: break-all;
+}
+.handout-note {
+  font-size: 0.8em;
+  color: #7A6845;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+@media print {
+  .handout-block { break-inside: avoid; margin: 1.5em auto; }
+  body { background: white; }
+}
+</style>
+```
+
+*Print and cut. Give each handout at the trigger moment only — do not show in advance.*
+
+---
+
+## Handout 4 — The Tribune's Sealed Orders {.unnumbered}
+
+*Give when Tribune Lucius presents his credentials to the Legate. Let a player break the seal.*
+
+<div class="handout-block">
+
+<div class="handout-label">Handout 4</div>
+
+## Senatus Populusque Romanus
+
+By authority of the Senate and the consulship of Lucius Fulvius Rufus and Marcus Plautius Quintillus:
+
+Tribune Lucius Valerius Maximus is hereby empowered to act in the Senate's name in all matters pertaining to the artifact recovered at Fort Vindolanda.
+
+All military personnel are ordered to render full assistance. The Legate's command is suspended pending senatorial review.
+
+<hr class="handout-divider">
+
+*In nomine Senatus Populique Romani*
+
+</div>
+
+---
+
+## Handout 5 — A Letter Found in the Tribune's Quarters {.unnumbered}
+
+*Give only when players successfully search the Tribune's quarters. Hand it folded. Do not read it aloud. Let them decode it.*
+
+<div class="handout-block">
+
+<div class="handout-label">Handout 5</div>
+
+*The paper is cheap — cheaper than the Tribune's other correspondence. It has been folded twice and shows signs of having been carried a long way. The handwriting is deliberate, each letter formed with care.*
+
+<hr class="handout-divider">
+
+<div class="cipher-text">Cqn arcrxvpe expde: Aqr xqrjxbqe jcbq. Dkb jcbq xrrno Kbc. Dkb jcbq eba Kbe kbbi ecba kbi. Ebo jcbq. Ebo rea ebo. M.J.E.</div>
+
+<hr class="handout-divider">
+
+<div class="handout-note">On the back, in faint pencil: <em>shift 3</em></div>
+
+</div>
+
+---
+
+*Sessions 3–5 handouts will be distributed when the party reaches the relevant scenes.*
