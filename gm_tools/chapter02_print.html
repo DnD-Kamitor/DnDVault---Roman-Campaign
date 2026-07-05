@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 2: The Tribune's Gambit</title>
+<style>
+/* ── FONTS ── */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── PAGE SETUP ── */
+@page {
+  size: A4;
+  margin: 16mm 14mm 16mm 14mm;
+}
+
+body {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: #1a1000;
+  background: #fff;
+}
+
+/* ── COVER PAGE ── */
+.cover {
+  page-break-after: always;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1a0e04;
+  color: #e8d8b0;
+  padding: 40px;
+  text-align: center;
+}
+.cover-title {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 36pt;
+  color: #c8a84b;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  line-height: 1.15;
+}
+.cover-subtitle {
+  font-size: 14pt;
+  color: #a88838;
+  margin-bottom: 32px;
+  font-style: italic;
+}
+.cover-rule { width: 80%; border: none; border-top: 2px solid #c8a84b; margin: 16px auto; }
+.cover-meta {
+  font-size: 11pt;
+  color: #c8b898;
+  margin-bottom: 8px;
+}
+.cover-teaser {
+  max-width: 480px;
+  font-size: 11pt;
+  font-style: italic;
+  color: #b8a878;
+  line-height: 1.6;
+  margin-top: 24px;
+}
+
+/* ── TWO-COLUMN LAYOUT ── */
+.columns {
+  column-count: 2;
+  column-gap: 6mm;
+  column-rule: 0.5pt solid #c8b090;
+}
+
+/* ── HEADINGS ── */
+h1 {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 18pt;
+  color: #5a1a00;
+  border-bottom: 2pt solid #8B4513;
+  padding-bottom: 3px;
+  margin: 0 0 8px 0;
+  column-span: all;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+h2 {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 13pt;
+  color: #5a1a00;
+  border-bottom: 1pt solid #c8b090;
+  padding-bottom: 2px;
+  margin: 12px 0 5px 0;
+  break-after: avoid;
+  letter-spacing: 0.04em;
+}
+h3 {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #3a0e00;
+  margin: 8px 0 3px 0;
+  break-after: avoid;
+}
+h4 {
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #3a0e00;
+  margin: 6px 0 2px 0;
+  break-after: avoid;
+}
+
+/* ── BODY TEXT ── */
+p { margin-bottom: 5px; text-align: justify; orphans: 3; widows: 3; }
+ul, ol { margin: 4px 0 6px 14px; }
+li { margin-bottom: 2px; }
+strong { color: #2a0800; }
+em { color: #3a1000; }
+
+/* ── READ-ALOUD BOX ── */
+.read-aloud {
+  background: #f0e8d0;
+  border: 1pt solid #8B7355;
+  border-left: 3pt solid #8B4513;
+  padding: 7px 9px;
+  font-style: italic;
+  font-size: 9pt;
+  line-height: 1.5;
+  margin: 6px 0;
+  break-inside: avoid;
+}
+
+/* ── STAT BLOCK ── */
+.stat-block {
+  background: #fdf5e0;
+  border: 1pt solid #8B7355;
+  border-top: 2pt solid #8B4513;
+  border-bottom: 2pt solid #8B4513;
+  padding: 6px 8px;
+  margin: 6px 0;
+  font-size: 8.5pt;
+  break-inside: avoid;
+}
+.stat-block .name {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 11pt;
+  color: #5a1a00;
+  margin-bottom: 1px;
+}
+.stat-block .type {
+  font-style: italic;
+  font-size: 8pt;
+  color: #5a3a10;
+  border-bottom: 0.5pt solid #c8b090;
+  padding-bottom: 3px;
+  margin-bottom: 4px;
+}
+.stat-block .scores {
+  display: flex;
+  gap: 6px;
+  margin: 4px 0;
+  font-size: 8pt;
+}
+.stat-block .score { text-align: center; min-width: 28px; }
+.stat-block .score .label { font-weight: bold; font-size: 7pt; color: #8B4513; display: block; }
+.stat-block .rule { border: none; border-top: 0.5pt solid #c8b090; margin: 3px 0; }
+.stat-block p { margin-bottom: 2px; }
+
+/* ── DECISION TABLE ── */
+.decision-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+  margin: 6px 0;
+  break-inside: avoid;
+}
+.decision-table th {
+  background: #8B4513;
+  color: #f0e8d0;
+  padding: 3px 6px;
+  text-align: left;
+  font-size: 8pt;
+}
+.decision-table td {
+  padding: 3px 6px;
+  border-bottom: 0.5pt solid #d4c090;
+  vertical-align: top;
+}
+.decision-table tr:nth-child(even) td { background: #f8f0de; }
+.decision-table td:first-child { font-weight: bold; color: #5a1a00; white-space: nowrap; }
+
+/* ── CLUE BOX ── */
+.clue-box {
+  background: #eef4e8;
+  border: 0.5pt solid #5a8a4a;
+  border-left: 2pt solid #4a7a3a;
+  padding: 5px 8px;
+  font-size: 8.5pt;
+  margin: 4px 0;
+  break-inside: avoid;
+}
+.clue-box strong { color: #2a5a1a; }
+
+/* ── CALLOUT ── */
+.callout {
+  background: #fff0d0;
+  border: 0.5pt solid #c8a030;
+  border-left: 2pt solid #c87800;
+  padding: 5px 8px;
+  font-size: 8.5pt;
+  margin: 4px 0;
+  break-inside: avoid;
+}
+
+/* ── NPC QUICK REF ── */
+.npc-row {
+  display: flex;
+  gap: 6px;
+  border-bottom: 0.5pt solid #d4c090;
+  padding: 4px 0;
+  break-inside: avoid;
+}
+.npc-name { font-weight: bold; color: #5a1a00; min-width: 110px; font-size: 9pt; }
+.npc-info { font-size: 8.5pt; flex: 1; }
+.npc-secret { font-style: italic; color: #8B1A1A; font-size: 8pt; margin-top: 1px; }
+
+/* ── PAGE BREAK ── */
+.page-break { page-break-before: always; break-before: page; }
+.no-break { break-inside: avoid; }
+
+/* ── SECTION DIVIDER ── */
+.divider {
+  column-span: all;
+  text-align: center;
+  color: #8B4513;
+  font-size: 14pt;
+  margin: 4px 0 2px;
+  letter-spacing: 0.3em;
+}
+
+/* ── FOOTER NOTE ── */
+.footer-note {
+  column-span: all;
+  text-align: center;
+  font-size: 7.5pt;
+  color: #888;
+  font-style: italic;
+  margin-top: 8px;
+  border-top: 0.5pt solid #d4c090;
+  padding-top: 4px;
+}
+
+/* ── PRINT ── */
+@media print {
+  body { background: #fff; }
+  .cover { min-height: 100vh; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ COVER -->
+<div class="cover">
+  <div style="font-size:9pt;letter-spacing:0.3em;color:#888;margin-bottom:20px;">THE SHADOW OF MARS · CHAPTER 2</div>
+  <div class="cover-title">The Tribune's Gambit</div>
+  <div class="cover-subtitle">A Roman Adventure for Five Characters, Level 3–4</div>
+  <hr class="cover-rule">
+  <div class="cover-meta">3–4 hours · Fort Vindolanda · 175 AD</div>
+  <div class="cover-meta">Scenes: 5 · Combat: 1 · Handouts: 2 · Maps: 2</div>
+  <hr class="cover-rule">
+  <div class="cover-teaser">
+    Dawn breaks over Fort Vindolanda with a dead sentry and a sealed letter from Rome. The Tribune who arrives at first light carries legitimate Senate authority — and a hidden master who wants the spear at any cost. The Germanic drums begin at nightfall.
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 2: BACKGROUND -->
+<div class="columns">
+
+<h1>Adventure Background</h1>
+
+<h2>The Story So Far</h2>
+<p>The characters are members of a special vexillatio at Fort Vindolanda on Hadrian's Wall. In Chapter 1, they descended into a vault beneath the fort and recovered an ancient spear — a weapon that whispers, corrupts, and drives men to violence. A possessed stone-hauler named Marius Coda attacked them with it still in hand. Legate Corvinus has seen the aftermath and is watching them carefully.</p>
+
+<h2>What the Players Don't Know</h2>
+<p><strong>The Tribune serves Brutus.</strong> Senator Marcus Julius Brutus controls Rome's financial investigation committee. Six months ago he learned a relic of immense power lay under Vindolanda. He sent Tribune Lucius Valerius Maximus with genuine Senate orders — orders Brutus manipulated into existence — to retrieve it. Lucius may not fully understand what he is retrieving or why it matters.</p>
+<p><strong>Quintus Flavius is the killer.</strong> Brutus pre-positioned a sleeper agent inside the fort six months ago. Quintus killed the sentry Sextus when Sextus caught him trying to steal the spear the night before. He is now hiding inside the Tribune's entourage.</p>
+<p><strong>Vercingetorix wants it destroyed.</strong> The Germanic chieftain leading the raid lost his father to the spear's corruption. He wants the relic returned — and then shattered. He is not an enemy if the players are willing to listen.</p>
+
+<h2>Running This Adventure</h2>
+<p>This chapter has one combat scene (Scene 3). The rest is roleplay, investigation, and one high-stakes decision. <strong>The investigation paths all lead to the same truth</strong> — the Tribune is corrupt. The players do not need to find all three clues, but more clues give them more leverage in Scene 4.</p>
+<p>The chapter ends with an irreversible choice. Do not steer them. Let them make it and commit to the consequence.</p>
+
+<h2>Adventure Synopsis</h2>
+<ol>
+  <li><strong>Scene 0 — Cold Open:</strong> Dead sentry. ROMA CADIT carved on the wall. Tribune's column spotted at dawn.</li>
+  <li><strong>Scene 1 — The Tribune Arrives:</strong> Legitimate authority. Corrupt purpose. Three clues planted.</li>
+  <li><strong>Scene 2 — Investigation Window:</strong> Players have the morning. Three independent paths to the truth.</li>
+  <li><strong>Scene 3 — The Raid:</strong> Germanic attack at nightfall. Vercingetorix enters. A choice mid-combat.</li>
+  <li><strong>Scene 4 — The Tribune's Move:</strong> Accusation. Bluff. Irreversible decision.</li>
+</ol>
+
+<h2>Level &amp; Rewards</h2>
+<p>Characters begin at Level 3. They advance to <strong>Level 4</strong> at the end of this chapter regardless of choices made. Milestone advancement — no XP tracking needed.</p>
+
+</div><!-- end columns -->
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 3: SCENES 0-1 -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h1>The Adventure</h1>
+
+<!-- SCENE 0 -->
+<h2>Scene 0: Cold Open</h2>
+<p><em>Duration: 5 minutes. No choices. Hook only.</em></p>
+<p>The characters are roused before sunrise. A sentry is dead at the north gate.</p>
+
+<div class="read-aloud">
+The body of Sextus — north gate watch, third rotation — lies slumped against the gate timber. His throat has been cut with a single stroke: professional, unhesitating. Beside him, carved into the stone with something sharp and patient: ROMA CADIT. Rome falls. The letters are deep and deliberate. Whoever wrote this had time.
+</div>
+
+<p>No investigation is possible yet — there are no useful tracks and the killer is long gone. Give the players a moment to react, then cut to the trumpet call.</p>
+
+<div class="callout">
+<strong>DM Note:</strong> Do not answer questions about who did this yet. The answer is Quintus Flavius. He killed Sextus last night when Sextus caught him attempting to steal the spear. Quintus is now inside the Tribune's entourage, arriving in minutes.
+</div>
+
+<p><strong>Scene ends:</strong> A trumpet sounds from the south — the Tribune's column has been spotted on the road.</p>
+
+<!-- SCENE 1 -->
+<h2>Scene 1: The Tribune Arrives</h2>
+<p><em>Duration: 30 minutes. Roleplay. All three clues planted here.</em></p>
+<p>Tribune Lucius Valerius Maximus enters through the south gate with six Praetorian Guards in formation. He presents sealed Senate orders to Legate Corvinus at the gate.</p>
+
+<div class="read-aloud">
+He is younger than you expected. Late twenties, clean-shaved, armour polished to a mirror. Six soldiers behind him stand with the stillness of men who have been told to be impressive and have practiced it. The Tribune does not wait for an invitation. He hands the scroll to Corvinus, watches him break the seal, and speaks before Corvinus finishes reading. "Tribune Lucius Valerius Maximus. I am here for the artifact recovered from beneath this fort. Senate authority. Your command is suspended pending review. Full cooperation is required."
+</div>
+
+<p>Corvinus reads. His jaw tightens. He says nothing. He hands the scroll back.</p>
+
+<h3>The Three Clues</h3>
+<p>Plant all three here, passively. Do not draw attention to them.</p>
+
+<div class="clue-box">
+<strong>Clue 1 — No Roll (Handout 4):</strong> Give the players Handout 4 when the Tribune shows his credentials. Let them handle it. The seal date is six weeks before the Senate officially heard about the spear's discovery. How did Brutus know to send someone?
+</div>
+
+<div class="clue-box">
+<strong>Clue 2 — Auto (Cleric/Priest only):</strong> Tribune Lucius skips the ward gesture during the formal arrival oath. Any character with Religion proficiency recognises this as a significant omission — he is not properly consecrated for a military inspection. He either doesn't know the rites or doesn't respect them.
+</div>
+
+<div class="clue-box">
+<strong>Clue 3 — Perception DC 15:</strong> Quintus Flavius stands third row in the entourage, slightly offset, already oriented toward the stables. He knows this fort's layout. He has been here before. Label this token "Soldier" on the map — do not name him yet.
+</div>
+
+<p><strong>If players confront the Tribune directly:</strong> He is polite, immovable, and slightly bored. He wants the spear brought to him by midday. He retires to the praetorium with his escort.</p>
+<p><strong>Corvinus, privately, to the party:</strong> "I cannot say openly what I think of this man. But you are not under his command. You are under mine — for as long as that means anything." He will not explain further.</p>
+
+<p><strong>Scene ends:</strong> Tribune sets a midday deadline and withdraws. Investigation window opens.</p>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 4: SCENES 2-3 -->
+<div class="page-break"></div>
+<div class="columns">
+
+<!-- SCENE 2 -->
+<h2>Scene 2: Investigation Window</h2>
+<p><em>Duration: 45–60 minutes. Exploration. Three parallel paths.</em></p>
+<p>The party has the morning. The Tribune is in the praetorium. They can split up and investigate freely.</p>
+
+<h3>Path A — Tribune's Quarters</h3>
+<p>Stealth to get past the Praetorian at the door (DC 12), then Investigation DC 13 to find the dispatch box. Thieves' Tools DC 14 or Mage Hand to open it without damage.</p>
+<p><strong>Contents:</strong> Give Handout 5 — an encoded letter. Cipher is Caesar shift 3. Decoded: <em>"THE ARTIFACT MUST NOT REACH ROME. BY ANY MEANS NECESSARY. OUR MUTUAL FRIEND'S AMBITIONS DEPEND IT. M.J.E."</em> — M.J.E. is a known alias of Senator Brutus.</p>
+
+<h3>Path B — Cassia Liviana (Augur)</h3>
+<p>Found at the shrine, mixing herbs. She speaks freely if approached respectfully.</p>
+<p>She has been tracking unusual deaths along the road from Rome for two months. All connect to a man who controls the Senate's financial investigation committee — she does not know his name, but she knows his methods. She asks for bog valerian root from north of the wall in exchange for more. She will explain why in Chapter 3.</p>
+
+<h3>Path C — Centurion Varro</h3>
+<p>At the principia, reviewing rosters. He is unsettled and will talk if asked about the Tribune's men.</p>
+<p>Tribune was posted to the financial investigation commission six months ago — the same time Quintus requested a transfer here. A man named Quintus, "twelve-year man, quiet," requested transfer papers this morning — very fast, before the gate opened. Insight DC 11: Varro suspects Quintus is connected to Sextus's death but has nothing solid.</p>
+
+<div class="callout">
+<strong>All paths lead to the same truth:</strong> The Tribune is Brutus's agent. The players don't need all three clues — one is enough. More clues give more leverage in Scene 4.
+</div>
+
+<p><strong>Scene ends:</strong> Drums from the ridge to the north. Torchlight in the dark. The raid has begun.</p>
+
+<!-- SCENE 3 -->
+<h2>Scene 3: The Raid</h2>
+<p><em>Duration: 45–60 minutes. Combat. Three phases.</em></p>
+
+<div class="read-aloud">
+The drums start low — you feel them before you hear them. Then the torches appear on the ridge, moving fast, spreading left and right along the tree line. Thirty? Fifty? Hard to say. The horn on the wall calls stations. Soldiers run. The Tribune's Praetorians do not move from the praetorium door. They form a ring around it. They are protecting one man, and it is not Corvinus.
+</div>
+
+<h3>Phase 1 — North Wall</h3>
+<p><strong>Map:</strong> CastleWallPublicJPG.jpg</p>
+<p>8 Tribal Warriors scale the north wall on ropes. 2 Berserkers follow behind. Corvinus is directing the defense and calls for the players.</p>
+
+<div class="stat-block">
+<div class="name">Tribal Warrior</div>
+<div class="type">Medium humanoid · CR 1/8 · AC 12 (hide) · HP 11</div>
+<div class="scores">
+  <div class="score"><span class="label">STR</span>13 (+1)</div>
+  <div class="score"><span class="label">DEX</span>11 (+0)</div>
+  <div class="score"><span class="label">CON</span>12 (+1)</div>
+  <div class="score"><span class="label">INT</span>8 (−1)</div>
+  <div class="score"><span class="label">WIS</span>11 (+0)</div>
+  <div class="score"><span class="label">CHA</span>8 (−1)</div>
+</div>
+<hr class="rule">
+<p><strong>Spear.</strong> +3 to hit. 1d6+1 piercing, or 1d8+1 two-handed. Thrown 20/60 ft.</p>
+<p><em>Pack Tactics: advantage on attacks if an ally is adjacent to the target.</em></p>
+</div>
+
+<div class="stat-block">
+<div class="name">Berserker</div>
+<div class="type">Medium humanoid · CR 2 · AC 13 (hide) · HP 67</div>
+<div class="scores">
+  <div class="score"><span class="label">STR</span>16 (+3)</div>
+  <div class="score"><span class="label">DEX</span>12 (+1)</div>
+  <div class="score"><span class="label">CON</span>17 (+3)</div>
+  <div class="score"><span class="label">INT</span>9 (−1)</div>
+  <div class="score"><span class="label">WIS</span>11 (+0)</div>
+  <div class="score"><span class="label">CHA</span>9 (−1)</div>
+</div>
+<hr class="rule">
+<p><strong>Multiattack.</strong> Two greataxe attacks.</p>
+<p><strong>Greataxe.</strong> +5 to hit. 1d12+3 slashing.</p>
+<p><em>Reckless: advantage on attacks this turn; enemies have advantage against the Berserker until next turn.</em></p>
+</div>
+
+<h3>Phase 2 — West Gate Breach</h3>
+<p><strong>Map:</strong> City-Gates-Gridded-22x33-MapPublic.jpg</p>
+<p>A second wave forces the west gate. Same token types. Corvinus orders the players to hold the gate while he rallies troops at the north.</p>
+
+<h3>Phase 3 — Vercingetorix Enters</h3>
+<p>When Phase 1 is resolved, Vercingetorix enters through the breach. He does not attack. He speaks.</p>
+
+<div class="read-aloud">
+He is a tall man — taller than most in the courtyard, red-bearded, with a scar from jaw to collarbone that has healed badly. He walks through the gate with no weapon drawn and holds up one hand. His Germanic is heavily accented Latin: "We did not come for blood. We came for what was stolen from our fathers. Give us the spear. We leave. You live."
+</div>
+
+<p><strong>He will parley</strong> if the players engage. He wants the spear returned to his tribe. His real goal is to see it destroyed — the spear killed his father — but he will not say this unless he trusts the party.</p>
+<p><strong>Persuasion DC 14</strong> (advantage if players mention Handout 4 or the Tribune's corruption): He stands down his remaining men and waits outside the wall while the players deal with the Tribune.</p>
+<p><strong>On failure:</strong> He withdraws anyway — he is not suicidal and his raid force is spent. He leaves a carved bone token. Investigation DC 10: it is a meeting marker. He will be one hour north of the wall at dawn.</p>
+
+<p><strong>Scene ends:</strong> Raiders gone. Tribune appears in the courtyard — armour clean, untouched. He watched from a window.</p>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 5: SCENE 4 + DECISIONS -->
+<div class="page-break"></div>
+<div class="columns">
+
+<!-- SCENE 4 -->
+<h2>Scene 4: The Tribune's Move</h2>
+<p><em>Duration: 20–30 minutes. Roleplay. Irreversible decision.</em></p>
+
+<div class="read-aloud">
+He is in the courtyard before the last raider clears the gate. Armour spotless. Six Praetorians at his back. He does not look at the bodies on the ground. He looks at the party. "I witnessed your exchange with the Germanic leader. Praetorian Guard, all six, willing to testify. That is communication with an attacking force during an active raid. Under Senate authority — hand over the artifact. Now. Or I bring charges of collaboration before you reach Rome."
+</div>
+
+<p><strong>The bluff:</strong> Lucius is scared. He knows the party investigated him. He is moving first to control the narrative. Insight DC 14: his hands are too still — he is performing calm.</p>
+
+<h3>Decision — What Do the Players Do?</h3>
+
+<table class="decision-table">
+<tr><th>Choice</th><th>Immediate Result</th><th>Chapter 3 Consequence</th></tr>
+<tr><td>Hand over the spear</td><td>Tribune departs. Corvinus suspended. Order maintained.</td><td>Brutus has the spear. Party has Senate favour. Corvinus is their enemy.</td></tr>
+<tr><td>Refuse, stand with Corvinus</td><td>Tribune leaves empty-handed. Files charges in absentia.</td><td>Party is technically in defiance. Hunted by Senate agents.</td></tr>
+<tr><td>Expose him (with evidence)</td><td>Tribune backs down publicly. Cannot arrest them without a trial he doesn't want.</td><td>Tribune retreats. Brutus sends someone worse. Corvinus owes them.</td></tr>
+<tr><td>Give the spear to Vercingetorix</td><td>Tribune is furious. Corvinus is stunned. Germanic crisis ends.</td><td>Roman political crisis begins. Germanic alliance possible.</td></tr>
+<tr><td>Destroy the spear here</td><td>Both factions lose. Neither forgives it. Corruption clears.</td><td>Most dangerous long-term enemies. Most personal freedom.</td></tr>
+</table>
+
+<div class="callout">
+<strong>DM Note:</strong> Any choice is correct. Do not push. The campaign changes shape around what the players decide here — it does not end regardless. Commit to the consequence cleanly and immediately.
+</div>
+
+<p><strong>Chapter ends.</strong> Level up to 4. Note outcomes below before next session.</p>
+
+<h3>Track These Outcomes</h3>
+<ul>
+  <li>Spear location: ____________________</li>
+  <li>Quintus Flavius: Escaped / Caught / Dead</li>
+  <li>Corvinus: In command / Suspended</li>
+  <li>Vercingetorix: Enemy / Neutral / Ally</li>
+  <li>Cassia's request (bog valerian): Agreed / Refused / Ignored</li>
+</ul>
+
+<!-- ═══════════════════════════════════════════════════════ NPC REFERENCE -->
+<h2>NPC Reference</h2>
+
+<div class="npc-row">
+  <div class="npc-name">Tribune Lucius</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> Spear delivered, no complications, out tonight.<br>
+    <strong>Behaviour:</strong> Polished, cold, controlling. Will not fight personally.<br>
+    <div class="npc-secret">Secret: Serves Brutus, not the Senate. The orders are real but corrupted in purpose. He may not know the spear's full nature.</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">Legate Corvinus</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> His command back. Order. The spear locked away.<br>
+    <strong>Behaviour:</strong> Cold, watchful, military precision. Does not beg.<br>
+    <div class="npc-secret">Secret: Knows the OTHALAN name. Was ordered to burn a document about it years ago. He knows this is bigger than a political dispute.</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">Cassia Liviana</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> Truth about the spear's origin. Party's trust.<br>
+    <strong>Behaviour:</strong> Careful, precise, gives more than she says.<br>
+    <div class="npc-secret">Secret: Has been tracking the cult for months. Knows the spear connects to something older than Mars worship.</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">Centurion Varro</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> To protect his men. Loyalty to Corvinus.<br>
+    <strong>Behaviour:</strong> Blunt, honest, slightly out of his depth.<br>
+    <div class="npc-secret">Secret: Suspects Quintus killed Sextus. Has no proof.</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">Vercingetorix</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> Spear returned, then destroyed. Tribe safe.<br>
+    <strong>Behaviour:</strong> Controlled fury, willing to negotiate, commands respect.<br>
+    <div class="npc-secret">Secret: The spear killed his father. He is terrified of it. He does not want to keep it — he wants it gone.</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">Quintus Flavius</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> To leave with the Tribune's entourage. Undetected.<br>
+    <strong>Behaviour:</strong> Quiet, professional, avoids eye contact with the party.<br>
+    <div class="npc-secret">Secret: Killed Sextus. Brutus's agent, not Lucius's. Expose: Deception +4 vs. Insight.</div>
+  </div>
+</div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 6: APPENDIX -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h1>Appendix</h1>
+
+<h2>Maps &amp; Tokens</h2>
+
+<h3>Map 1 — Castle Wall</h3>
+<p><strong>File:</strong> CastleWallPublicJPG.jpg<br>
+<strong>Path:</strong> maps/dicegrimorium/CastleWall/CastleWallPublic/<br>
+<strong>Scenes:</strong> 0, 3 Phase 1, 3 Phase 3</p>
+<p><strong>Tokens:</strong> Guard ×4, Scout ×1 (Sextus, prone), Tribal Warrior ×8, Berserker ×2, Vercingetorix ×1, Tribune Lucius ×1, Praetorian Guard ×6</p>
+
+<h3>Map 2 — City Gates</h3>
+<p><strong>File:</strong> City-Gates-Gridded-22x33-MapPublic.jpg<br>
+<strong>Path:</strong> maps/dicegrimorium/CityGates/City Gates Public/<br>
+<strong>Scenes:</strong> 1, 3 Phase 2</p>
+<p><strong>Tokens:</strong> Tribune Lucius ×1, Praetorian Guard ×6, Legate Corvinus ×1, Centurion Varro ×1, Quintus Flavius ×1 (label "Soldier"), Guard ×4, Tribal Warrior ×8, Berserker ×2</p>
+
+<h3>Map 3 — Fort Interior (Reference)</h3>
+<p><strong>File:</strong> saalburg_plan.jpg — no battle grid, DM reference only<br>
+<strong>Scenes:</strong> 2 (investigation), 4 (accusation)</p>
+<p><strong>NPC positions:</strong> Cassia → shrine · Varro → principia · Quartus → granary · Valeria → hospital · Lucilla → main road · Brennus → vicus</p>
+
+<h2>Handouts</h2>
+<p><strong>Handout 4 — Tribune's Sealed Orders</strong><br>
+File: handouts/handout_04_tribunes_orders.html<br>
+Give: Scene 1, when Tribune presents credentials. Let a player break the seal.</p>
+<p><strong>Handout 5 — Encoded Letter</strong><br>
+File: handouts/handout_05_encoded_letter.html<br>
+Give: Scene 2, only if players search Tribune's quarters. Hand it folded. Caesar shift 3.</p>
+
+<h2>Praetorian Guard (×6)</h2>
+<div class="stat-block">
+<div class="name">Praetorian Guard</div>
+<div class="type">Medium humanoid · CR 1 · AC 18 (plate + shield) · HP 32</div>
+<div class="scores">
+  <div class="score"><span class="label">STR</span>16 (+3)</div>
+  <div class="score"><span class="label">DEX</span>12 (+1)</div>
+  <div class="score"><span class="label">CON</span>14 (+2)</div>
+  <div class="score"><span class="label">INT</span>10 (+0)</div>
+  <div class="score"><span class="label">WIS</span>12 (+1)</div>
+  <div class="score"><span class="label">CHA</span>11 (+0)</div>
+</div>
+<hr class="rule">
+<p><strong>Skills:</strong> Athletics +5, Intimidation +2, Perception +3</p>
+<p><strong>Gladius.</strong> +5 to hit. 1d6+3 piercing.</p>
+<p><em>They follow Lucius exclusively. If ordered to detain the party, they will attempt it. Six CR 1 opponents vs. a Level 3 party is not survivable — make this clear before initiative.</em></p>
+</div>
+
+<h2>Quintus Flavius</h2>
+<div class="stat-block">
+<div class="name">Quintus Flavius</div>
+<div class="type">Medium humanoid (spy) · CR 1/2 · AC 12 (leather) · HP 27</div>
+<div class="scores">
+  <div class="score"><span class="label">STR</span>12 (+1)</div>
+  <div class="score"><span class="label">DEX</span>14 (+2)</div>
+  <div class="score"><span class="label">CON</span>10 (+0)</div>
+  <div class="score"><span class="label">INT</span>13 (+1)</div>
+  <div class="score"><span class="label">WIS</span>12 (+1)</div>
+  <div class="score"><span class="label">CHA</span>14 (+2)</div>
+</div>
+<hr class="rule">
+<p><strong>Skills:</strong> Deception +4, Insight +3, Perception +3, Stealth +4</p>
+<p><strong>Dagger.</strong> +4 to hit. 1d4+2 piercing.</p>
+<p><strong>Cunning Action.</strong> Bonus action: Dash, Disengage, or Hide.</p>
+<p><strong>Sneak Attack 1d6</strong> — once per turn with advantage or when ally is adjacent.</p>
+<p><em>If cornered: tries Deception first (vs. Insight). Flees if bluff fails.</em></p>
+</div>
+
+<h2>If Things Go Wrong</h2>
+<table class="decision-table">
+<tr><th>Situation</th><th>Response</th></tr>
+<tr><td>Party attacks Lucius</td><td>6 Praetorians respond instantly. Lucius watches. Warn of the numbers before initiative.</td></tr>
+<tr><td>No investigation done</td><td>Tribune's bluff succeeds. Spear goes with him. Valid — consequences in Chapter 3.</td></tr>
+<tr><td>Party tries to ally mid-raid</td><td>Persuasion DC 14. With Handout 4 as leverage: advantage. Failure = he withdraws anyway, leaves meeting token.</td></tr>
+<tr><td>Party flees the fort</td><td>Vercingetorix doesn't chase. Tribune reports desertion. Chapter 3 opens outside the walls.</td></tr>
+<tr><td>Quintus exposed early</td><td>He implicates the Tribune, tries to flee. Major Scene 4 advantage for the party.</td></tr>
+</table>
+
+<div class="footer-note">
+The Shadow of Mars · Chapter 2: The Tribune's Gambit · Level 3–4 · Fort Vindolanda, 175 AD
+</div>
+
+</div>
+
+</body>
+</html>
