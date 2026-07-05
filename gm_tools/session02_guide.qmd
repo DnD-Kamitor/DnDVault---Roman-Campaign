@@ -156,6 +156,20 @@ Roman legal authority (real orders, genuine Senate power) vs. the truth of what 
 | 3 | Combat | The Raid | Defend the fort; face Vercingetorix | Test the party under pressure; force the Vercingetorix decision; expose Tribune's non-action | Raid ends; Tribune appears immaculate in the courtyard |
 | 4 | RP/Decision | The Tribune's Move | Survive the accusation and choose a path | Force an irreversible decision; close on a charged image | Party acts; session closes on consequence |
 
+**Maps — load these in MapTool before the session:**
+
+| Scene | Map file | Location in MapTool |
+|---|---|---|
+| Scene 0: Cold Open (north gate, body) | `CastleWallPublicJPG.jpg` | `maps/dicegrimorium/CastleWall/CastleWallPublic/` |
+| Scene 1: Tribune Arrives (south gate) | `City-Gates-Gridded-22x33-MapPublic.jpg` | `maps/dicegrimorium/CityGates/City Gates Public/` |
+| Scene 2: Investigation (fort interior reference) | `saalburg_plan.jpg` | `maps/campaign/S2_Chieftains_Price/` — orientation only, no grid |
+| Scene 3 Phase 1: Wall Defense | `CastleWallPublicJPG.jpg` | same as Scene 0 — keep loaded |
+| Scene 3 Phase 2: West Gate Breach | `City-Gates-Gridded-22x33-MapPublic.jpg` | same as Scene 1 — keep loaded |
+| Scene 3 Phase 3: Vercingetorix enters | `CastleWallPublicJPG.jpg` | same — courtyard entry through breach |
+| Scene 4: Accusation (courtyard) | `saalburg_plan.jpg` | reference for positioning only |
+
+*Note: no playable fort-interior battle map exists in the pack. `saalburg_plan.jpg` is an archaeological floor plan — use it as DM reference only, not player-facing.*
+
 **Pacing:** Cold Open 10 min · Scene 1 30 min · Scene 2 45–60 min (investigative heart, the session breathes here) · Scene 3 45–60 min (kinetic peak) · Scene 4 20–30 min (emotional peak). Never let Scene 2 run longer than Scene 3.
 
 **The through-line:** "The law says one thing. The truth says another. Which do you follow, and what does that make you?"
