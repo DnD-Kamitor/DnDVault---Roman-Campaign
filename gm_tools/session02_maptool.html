@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Session 2 — MapTool Setup</title>
+<style>
+  body { background: #111; color: #e8dcc8; font-family: Georgia, serif; margin: 0; padding: 20px; }
+  h1 { color: #c8a84b; font-size: 1.4em; border-bottom: 2px solid #c8a84b; padding-bottom: 8px; margin-bottom: 20px; letter-spacing: 0.1em; }
+  h2 { color: #a07830; font-size: 1.05em; margin: 0 0 6px 0; letter-spacing: 0.08em; text-transform: uppercase; }
+  .map-block { background: #1c1608; border: 1px solid #4a3a1a; border-left: 4px solid #c8a84b; padding: 16px 20px; margin-bottom: 18px; }
+  .map-file { font-family: monospace; font-size: 0.9em; color: #88c888; background: #0a1a0a; padding: 4px 8px; display: inline-block; margin-bottom: 10px; border: 1px solid #2a4a2a; }
+  .map-path { font-family: monospace; font-size: 0.75em; color: #668866; display: block; margin-bottom: 10px; }
+  .scene-tag { font-size: 0.75em; color: #888; background: #222; padding: 2px 6px; margin-bottom: 12px; display: inline-block; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.88em; }
+  th { text-align: left; color: #c8a84b; border-bottom: 1px solid #4a3a1a; padding: 4px 8px; font-weight: normal; font-style: italic; }
+  td { padding: 4px 8px; border-bottom: 1px solid #2a1a00; vertical-align: top; }
+  td:first-child { font-family: monospace; font-size: 0.85em; color: #a8d8a8; white-space: nowrap; }
+  td:nth-child(2) { color: #c8b898; }
+  td:nth-child(3) { color: #888; font-size: 0.82em; }
+  .qty { color: #d4884a; font-weight: bold; }
+  .warn { color: #d44; font-size: 0.8em; font-style: italic; }
+  .player-block { background: #080c18; border: 1px solid #2a3a6a; border-left: 4px solid #4a6aaa; padding: 14px 20px; margin-bottom: 18px; }
+  .player-block h2 { color: #6a9ad4; }
+  .player-block td:first-child { color: #8ab8e8; }
+  .note { color: #888; font-size: 0.82em; font-style: italic; margin-top: 8px; }
+  .section-label { color: #c8a84b; font-size: 0.7em; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Session 2 — MapTool Setup Reference</h1>
+
+<div class="player-block">
+  <h2>Player Tokens — Every Map</h2>
+  <div class="section-label">Folder: Maptool/tokens/players/</div>
+  <table>
+    <tr><th>File</th><th>Character</th><th>Class</th></tr>
+    <tr><td>Iris.rptok</td><td>Iris</td><td>Druid (Circle of Stars)</td></tr>
+    <tr><td>Julia_Jana.rptok</td><td>Julia Jana</td><td>Cleric (Twilight)</td></tr>
+    <tr><td>Tanit_bint_Abdmelqart.rptok</td><td>Tanit bint Abdmelqart</td><td>Bard (Eloquence)</td></tr>
+    <tr><td>Rivia_Calida_Mendera.rptok</td><td>Rivia Calida Mendera</td><td>Artificer (Armorer)</td></tr>
+    <tr><td>Ursula_Günther.rptok</td><td>Ursula Günther</td><td>Barbarian (Berserker)</td></tr>
+  </table>
+</div>
+
+<!-- MAP 1 -->
+<div class="map-block">
+  <h2>Map 1 — Castle Wall</h2>
+  <div class="map-file">CastleWallPublicJPG.jpg</div>
+  <div class="map-path">maps/dicegrimorium/CastleWall/CastleWallPublic/</div>
+  <div class="scene-tag">Scene 0: Cold Open &nbsp;|&nbsp; Scene 3 Phase 1: Wall Defense &nbsp;|&nbsp; Scene 3 Phase 3: Vercingetorix Entry</div>
+  <table>
+    <tr><th>Token file</th><th>Who</th><th>Count / Note</th></tr>
+    <tr><td>Guard.rptok</td><td>Fort legionaries</td><td><span class="qty">x4</span> on wall</td></tr>
+    <tr><td>Scout.rptok</td><td>Sextus (dead sentry)</td><td><span class="qty">x1</span> — place prone, Scene 0 only</td></tr>
+    <tr><td>Tribal_Warrior.rptok</td><td>Germanic raiders</td><td><span class="qty">x8</span> — add Scene 3</td></tr>
+    <tr><td>Berserker.rptok</td><td>Germanic berserker</td><td><span class="qty">x2</span> — add Scene 3</td></tr>
+    <tr><td>Vercingetorix_the_Red.rptok</td><td>Vercingetorix</td><td><span class="qty">x1</span> — Phase 3 only, enters through breach</td></tr>
+    <tr><td>Tribune_Lucius.rptok</td><td>Tribune Lucius</td><td><span class="qty">x1</span> — Phase 3 only, appears immaculate in courtyard</td></tr>
+    <tr><td>Praetorian_Guard.rptok</td><td>Tribune's escort</td><td><span class="qty">x6</span> — Phase 3 only, flanking Lucius</td></tr>
+  </table>
+  <div class="note">Scene 3 folder: Maptool/tokens/npcs/creatures/ for Tribal_Warrior, Berserker</div>
+</div>
+
+<!-- MAP 2 -->
+<div class="map-block">
+  <h2>Map 2 — City Gates</h2>
+  <div class="map-file">City-Gates-Gridded-22x33-MapPublic.jpg</div>
+  <div class="map-path">maps/dicegrimorium/CityGates/City Gates Public/</div>
+  <div class="scene-tag">Scene 1: Tribune Arrives &nbsp;|&nbsp; Scene 3 Phase 2: West Gate Breach</div>
+  <table>
+    <tr><th>Token file</th><th>Who</th><th>Count / Note</th></tr>
+    <tr><td>Tribune_Lucius.rptok</td><td>Tribune Lucius</td><td><span class="qty">x1</span> — center of formation</td></tr>
+    <tr><td>Praetorian_Guard.rptok</td><td>Tribune's escort</td><td><span class="qty">x6</span> — surrounding Lucius</td></tr>
+    <tr><td>Legate_Corvinus.rptok</td><td>Legate Corvinus</td><td><span class="qty">x1</span> — at gate to receive</td></tr>
+    <tr><td>Centurion_Varro.rptok</td><td>Centurion Varro</td><td><span class="qty">x1</span> — beside Corvinus</td></tr>
+    <tr><td>Quintus_Flavius.rptok</td><td>Quintus Flavius</td><td><span class="qty">x1</span> — <span class="warn">do NOT label — show as "Soldier" until exposed (Perception DC 15)</span></td></tr>
+    <tr><td>Guard.rptok</td><td>Gate guards</td><td><span class="qty">x4</span></td></tr>
+    <tr><td>Tribal_Warrior.rptok</td><td>Germanic raiders</td><td><span class="qty">x8</span> — add Phase 2 only</td></tr>
+    <tr><td>Berserker.rptok</td><td>Germanic berserker</td><td><span class="qty">x2</span> — add Phase 2 only</td></tr>
+  </table>
+</div>
+
+<!-- MAP 3 -->
+<div class="map-block">
+  <h2>Map 3 — Fort Interior (Reference Only)</h2>
+  <div class="map-file">saalburg_plan.jpg</div>
+  <div class="map-path">Maptool/maps/campaign/S2_Chieftains_Price/ &nbsp;— orientation only, no battle grid</div>
+  <div class="scene-tag">Scene 2: Investigation Window &nbsp;|&nbsp; Scene 4: The Tribune's Move</div>
+  <table>
+    <tr><th>Token file</th><th>Who</th><th>Where in fort</th></tr>
+    <tr><td>Augur_Cassia.rptok</td><td>Cassia Liviana</td><td>Shrine / augur quarters</td></tr>
+    <tr><td>Centurion_Varro.rptok</td><td>Centurion Varro</td><td>Principia (HQ building)</td></tr>
+    <tr><td>Quartus.rptok</td><td>Quartermaster Quartus</td><td>Horrea (granary)</td></tr>
+    <tr><td>Valeria_the_Medicus.rptok</td><td>Valeria</td><td>Valetudinarium (hospital)</td></tr>
+    <tr><td>Lucilla_the_Postwoman.rptok</td><td>Lucilla</td><td>Via praetoria (main road)</td></tr>
+    <tr><td>Titus_Half-Germanic.rptok</td><td>Titus</td><td>Stables / east wall</td></tr>
+    <tr><td>Aemilia_Secunda_(Frumentarius).rptok</td><td>Aemilia (intelligence)</td><td>Vicus / outside east gate</td></tr>
+    <tr><td>Brennus.rptok</td><td>Brennus (tavern)</td><td>Vicus</td></tr>
+    <tr><td>Tribune_Lucius.rptok</td><td>Tribune Lucius</td><td>Praetorium (commander's house) — Scene 4</td></tr>
+    <tr><td>Legate_Corvinus.rptok</td><td>Legate Corvinus</td><td>Praetorium — Scene 4</td></tr>
+    <tr><td>Praetorian_Guard.rptok</td><td>Tribune's escort</td><td><span class="qty">x6</span> blocking Praetorium doors — Scene 4</td></tr>
+  </table>
+  <div class="note">This map has no battle grid. Use for NPC positioning / player orientation only. No combat here.</div>
+</div>
+
+<!-- HANDOUTS -->
+<div class="map-block" style="border-left-color:#8a4a8a;">
+  <h2 style="color:#b878b8;">Handouts — Print Before Session</h2>
+  <table>
+    <tr><th>File</th><th>Give when</th><th>Who breaks seal / reads</th></tr>
+    <tr><td>handouts/handout_04_tribunes_orders.html</td><td>Scene 1 — Tribune presents credentials</td><td>Let a player break the wax seal aloud</td></tr>
+    <tr><td>handouts/handout_05_encoded_letter.html</td><td>Scene 2 — players search Tribune's quarters</td><td>Hand it folded. Say nothing. Let them decode. Shift 3.</td></tr>
+  </table>
+  <div class="note">Open each HTML file in browser → Ctrl+P → print. Both are standalone, no internet required after fonts load.</div>
+</div>
+
+</body>
+</html>

@@ -53,6 +53,7 @@ book:
         - appendix.qmd
         - gm_tools/session_template.qmd
         - gm_tools/session02_guide.qmd
+        - gm_tools/session02_maptool.qmd
         - handouts/session02_handouts.qmd
 
 format:

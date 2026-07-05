@@ -1,0 +1,96 @@
+---
+title: "Session 2 — MapTool Setup"
+subtitle: "Maps, tokens, and handouts per scene"
+---
+
+## Player Tokens — Every Map
+
+All in `Maptool/tokens/players/`
+
+| File | Character | Class |
+|---|---|---|
+| `Iris.rptok` | Iris | Druid (Circle of Stars) |
+| `Julia_Jana.rptok` | Julia Jana | Cleric (Twilight) |
+| `Tanit_bint_Abdmelqart.rptok` | Tanit bint Abdmelqart | Bard (Eloquence) |
+| `Rivia_Calida_Mendera.rptok` | Rivia Calida Mendera | Artificer (Armorer) |
+| `Ursula_Günther.rptok` | Ursula Günther | Barbarian (Berserker) |
+
+---
+
+## Map 1 — Castle Wall {.unnumbered}
+
+**File:** `CastleWallPublicJPG.jpg`
+
+**Path:** `maps/dicegrimorium/CastleWall/CastleWallPublic/`
+
+**Scenes:** Scene 0 (Cold Open) · Scene 3 Phase 1 (Wall Defense) · Scene 3 Phase 3 (Vercingetorix Entry)
+
+| Token file | Who | Count / Note |
+|---|---|---|
+| `Guard.rptok` | Fort legionaries | x4 on wall |
+| `Scout.rptok` | Sextus (dead sentry) | x1 — place prone, Scene 0 only |
+| `Tribal_Warrior.rptok` | Germanic raiders | x8 — add Scene 3 |
+| `Berserker.rptok` | Germanic berserker | x2 — add Scene 3 |
+| `Vercingetorix_the_Red.rptok` | Vercingetorix | x1 — Phase 3 only, enters through breach |
+| `Tribune_Lucius.rptok` | Tribune Lucius | x1 — Phase 3 only, appears immaculate in courtyard |
+| `Praetorian_Guard.rptok` | Tribune's escort | x6 — Phase 3 only, flanking Lucius |
+
+Creature tokens in `Maptool/tokens/npcs/creatures/`
+
+---
+
+## Map 2 — City Gates {.unnumbered}
+
+**File:** `City-Gates-Gridded-22x33-MapPublic.jpg`
+
+**Path:** `maps/dicegrimorium/CityGates/City Gates Public/`
+
+**Scenes:** Scene 1 (Tribune Arrives) · Scene 3 Phase 2 (West Gate Breach)
+
+| Token file | Who | Count / Note |
+|---|---|---|
+| `Tribune_Lucius.rptok` | Tribune Lucius | x1 — center of formation |
+| `Praetorian_Guard.rptok` | Tribune's escort | x6 — surrounding Lucius |
+| `Legate_Corvinus.rptok` | Legate Corvinus | x1 — at gate to receive |
+| `Centurion_Varro.rptok` | Centurion Varro | x1 — beside Corvinus |
+| `Quintus_Flavius.rptok` | Quintus Flavius | x1 — **label as "Soldier" until exposed** (Perception DC 15) |
+| `Guard.rptok` | Gate guards | x4 |
+| `Tribal_Warrior.rptok` | Germanic raiders | x8 — Phase 2 only |
+| `Berserker.rptok` | Germanic berserker | x2 — Phase 2 only |
+
+---
+
+## Map 3 — Fort Interior (Reference Only) {.unnumbered}
+
+**File:** `saalburg_plan.jpg`
+
+**Path:** `Maptool/maps/campaign/S2_Chieftains_Price/`
+
+**Scenes:** Scene 2 (Investigation) · Scene 4 (Tribune's Move)
+
+No battle grid. Use for NPC positioning and player orientation only — no combat here.
+
+| Token file | Who | Where in fort |
+|---|---|---|
+| `Augur_Cassia.rptok` | Cassia Liviana | Shrine / augur quarters |
+| `Centurion_Varro.rptok` | Centurion Varro | Principia (HQ building) |
+| `Quartus.rptok` | Quartermaster Quartus | Horrea (granary) |
+| `Valeria_the_Medicus.rptok` | Valeria | Valetudinarium (hospital) |
+| `Lucilla_the_Postwoman.rptok` | Lucilla | Via praetoria (main road) |
+| `Titus_Half-Germanic.rptok` | Titus | Stables / east wall |
+| `Aemilia_Secunda_(Frumentarius).rptok` | Aemilia (intelligence) | Vicus / outside east gate |
+| `Brennus.rptok` | Brennus (tavern) | Vicus |
+| `Tribune_Lucius.rptok` | Tribune Lucius | Praetorium — Scene 4 |
+| `Legate_Corvinus.rptok` | Legate Corvinus | Praetorium — Scene 4 |
+| `Praetorian_Guard.rptok` | Tribune's escort | x6 blocking Praetorium doors — Scene 4 |
+
+---
+
+## Handouts — Print Before Session {.unnumbered}
+
+| File | Give when | Notes |
+|---|---|---|
+| `handouts/handout_04_tribunes_orders.html` | Scene 1 — Tribune presents credentials | Let a player break the wax seal aloud |
+| `handouts/handout_05_encoded_letter.html` | Scene 2 — players search Tribune's quarters | Hand it folded. Say nothing. Shift 3. |
+
+Open each HTML file in browser, Ctrl+P to print. Standalone — no internet needed after fonts load.
