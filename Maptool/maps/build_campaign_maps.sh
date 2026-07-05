@@ -212,7 +212,7 @@ for slug in Tribune_Lucius Augur_Cassia Centurion_Varro Vercingetorix_the_Red \
 done
 
 for slug in Guard Legionary Berserker Cultist_of_Mars Tribal_Warrior \
-            Wight Will-o-Wisp; do
+            Wight Will-o-Wisp Dryad; do
   copy_npc "$slug" "$S"
 done
 
