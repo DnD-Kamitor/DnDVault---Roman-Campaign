@@ -4,338 +4,519 @@
 <meta charset="UTF-8">
 <title>Session 5: The Wrath of Mars — GM Reference</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 11px;
-    background: #f4f0e8;
-    color: #1a1208;
-    padding: 16px;
-  }
-  h1 {
-    font-size: 15px; font-weight: 800; letter-spacing: 0.05em;
-    color: #7a1a00; border-bottom: 2px solid #7a1a00;
-    padding-bottom: 4px; margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  h2 {
-    font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
-    color: #7a1a00; text-transform: uppercase;
-    border-bottom: 1px solid #c8a060; margin: 10px 0 5px;
-  }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .col {}
-  .box {
-    background: white; border: 1px solid #c8a060;
-    border-left: 3px solid #7a1a00;
-    padding: 8px; margin-bottom: 8px; border-radius: 2px;
-  }
-  .box.warn { border-left-color: #c05000; background: #fff8f0; }
-  .box.secret { border-left-color: #404040; background: #f8f8f0; }
-  table { width: 100%; border-collapse: collapse; }
-  th { background: #7a1a00; color: white; padding: 3px 6px; font-size: 9.5px; text-align: left; }
-  td { padding: 2px 6px; border-bottom: 1px solid #e8d8b0; vertical-align: top; }
-  tr:nth-child(even) td { background: #fdf8ee; }
-  .dc { font-weight: 700; color: #7a1a00; white-space: nowrap; }
-  .npc-name { font-weight: 700; }
-  .secret-text { font-style: italic; color: #404040; }
-  .scene-list { list-style: none; counter-reset: scenes; }
-  .scene-list li { counter-increment: scenes; padding: 2px 0 2px 20px; position: relative; }
-  .scene-list li::before {
-    content: counter(scenes);
-    position: absolute; left: 0;
-    background: #7a1a00; color: white;
-    width: 14px; height: 14px; border-radius: 50%;
-    font-size: 9px; font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .tag {
-    display: inline-block; padding: 1px 5px; border-radius: 2px;
-    font-size: 9px; font-weight: 700; margin-right: 2px;
-  }
-  .tag-passive { background: #d0e8d0; color: #1a4a1a; }
-  .tag-active { background: #d0d8e8; color: #1a1a4a; }
-  .tag-key { background: #ffe0c0; color: #7a3000; }
-  @media print {
-    body { padding: 8px; font-size: 10px; }
-    .box { break-inside: avoid; }
-  }
+  body { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; background: #1a120a; color: #d4c090; padding: 0; }
+  .header { background: #0e0a04; border-bottom: 2px solid #6a4010; padding: 12px 20px; }
+  .header h1 { font-family: 'Cinzel', serif; font-size: 16px; font-weight: 700; color: #c8a040; letter-spacing: 0.1em; text-transform: uppercase; }
+  .session-meta { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; font-style: italic; color: #8a6030; margin-top: 2px; }
+  .tab-nav { display: flex; gap: 2px; background: #0e0a04; padding: 8px 12px 0; border-bottom: 2px solid #6a4010; flex-wrap: wrap; }
+  .tab-btn { font-family: 'Cinzel', serif; font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; background: #1a120a; color: #8a6030; border: 1px solid #4a2a08; border-bottom: none; padding: 6px 14px; cursor: pointer; border-radius: 2px 2px 0 0; }
+  .tab-btn:hover { background: #241808; color: #c8a040; }
+  .tab-btn.active { background: #2c1a0a; color: #c8a040; border-color: #6a4010; }
+  .tab-panel { display: none; padding: 16px 20px; }
+  .tab-panel.active { display: block; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+  .box { background: #2c1a0a; border: 1px solid #4a2a08; border-left: 3px solid #8a6020; padding: 10px 12px; margin-bottom: 10px; border-radius: 1px; }
+  .box.warn { border-left-color: #c05010; background: #2a1208; }
+  .box.secret { border-left-color: #606060; background: #1e1e1a; }
+  .box.green { border-left-color: #407020; background: #1a2410; }
+  .box.moment { border: 2px solid #6a4010; border-left: 4px solid #c8a040; background: #241a06; }
+  .box.divine { border: 2px solid #c84020; border-left: 4px solid #c84020; background: #2a0e06; }
+  h2 { font-family: 'Cinzel', serif; font-size: 11px; font-weight: 700; color: #c8a040; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 1px solid #4a2a08; padding-bottom: 4px; margin: 14px 0 8px; }
+  h2:first-child { margin-top: 0; }
+  .beat-header { font-family: 'Cinzel', serif; font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #8a6020; border-left: 3px solid #4a2a08; padding: 4px 8px; margin-bottom: 8px; background: #241608; }
+  .beat-header.beat-2 { color: #c84020; border-left-color: #c84020; background: #2a0e06; font-size: 11px; letter-spacing: 0.2em; padding: 6px 10px; }
+  p { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; color: #c4a870; line-height: 1.7; margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+  th { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; background: #4a2a08; color: #c8a040; padding: 4px 6px; text-align: left; }
+  td { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; padding: 4px 6px; border-bottom: 1px solid #3a2008; vertical-align: top; line-height: 1.5; }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .dc { font-weight: 700; color: #c8a040; white-space: nowrap; font-family: 'Cinzel', serif; font-size: 10px; }
+  .tag { display: inline-block; padding: 1px 5px; border-radius: 2px; font-size: 9px; font-weight: 700; font-family: 'Cinzel', serif; letter-spacing: 0.05em; }
+  .tag-passive { background: #1a3020; color: #60c070; border: 1px solid #2a4a30; }
+  .tag-active { background: #1a2030; color: #6090c0; border: 1px solid #2a3050; }
+  .tag-key { background: #301808; color: #c08040; border: 1px solid #4a2810; }
+  .sense-block { margin-bottom: 8px; }
+  .sense-row { display: grid; grid-template-columns: 58px 1fr; gap: 6px; padding: 3px 0; border-bottom: 1px solid #3a2008; }
+  .sense-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #8a6020; padding-top: 2px; }
+  .sense-text { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.5; font-style: italic; }
+  .npc-desc-table td:first-child { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: #8a6020; white-space: nowrap; width: 90px; }
+  .trust-row { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; border-bottom: 1px solid #3a2008; }
+  .trust-dc { font-family: 'Cinzel', serif; font-size: 10px; font-weight: 700; color: #c8a040; min-width: 36px; }
+  .trust-text { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.5; }
+  .stakes-badge { display: inline-block; padding: 2px 8px; border-radius: 2px; font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; font-weight: 700; text-transform: uppercase; }
+  .stakes-personal { background: #241a06; color: #a08030; border: 1px solid #3a2a08; }
+  .stakes-fort { background: #201408; color: #c09040; border: 1px solid #3a2408; }
+  .stakes-regional { background: #1a3020; color: #60c080; border: 1px solid #2a4a30; }
+  .stakes-imperial { background: #1a1a30; color: #6070d0; border: 1px solid #2a2a50; }
+  .stakes-divine { background: #30100a; color: #d06040; border: 1px solid #4a1a0a; }
+  b { font-weight: 700; color: #c8a040; }
+  ul { padding-left: 16px; margin-bottom: 6px; }
+  li { font-family: 'IM Fell English', Georgia, serif; font-size: 10.5px; color: #c4a870; line-height: 1.7; }
+  em { font-style: italic; color: #d4b880; }
 </style>
+<script>
+  function showTab(id) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
 </head>
 <body>
-<h1>Session 5: The Wrath of Mars — GM Reference</h1>
 
-<div class="grid">
-<div class="col">
+<div class="header">
+  <h1>Session 5: The Wrath of Mars</h1>
+  <div class="session-meta">GM Reference Card &mdash; All content DM-only &mdash; Divine Stakes &mdash; Final Session &mdash; No level advance (already at cap for arc)</div>
+</div>
 
-  <h2>Scene Flow</h2>
-  <div class="box">
-    <ol class="scene-list">
-      <li><b>Cold Open</b> — Dawn. Rain stops mid-drop. Germanic arrows freeze in air. Parade ground becomes black sand. Fort-height armored figure on a throne of weapons. "MORTALS. I WATCHED. I ARRIVED. NOW YOU ANSWER." All checks close when Mars addresses the party.</li>
-      <li><b>Mars Specifies the Trial (Scene 1)</b> — He offers three paths simultaneously: Option A (Champion Trial), Option B (Trial of Blades), Option C (Trial of Voice). No preference stated. If party hesitates more than one minute of table time, he chooses Option B.</li>
-      <li><b>The Trial (Scene 2)</b> — Run the chosen option. Arena weapon cards (Handout 11) placed face-down, flipped at combat start. Environmental phases in for Option B (barracks buildings materialize each round).</li>
-      <li><b>The Price (Scene 3)</b> — Mars approaches regardless of outcome. Consequences menu: Mark of Mars, the Chosen, the Debt, the Transformation, Prophecy. He is satisfied, not appeased.</li>
-      <li><b>Return to Vindolanda (Scene 4)</b> — Black sand recedes. Witnesses rush forward. Player epilogue speeches. Citizenship document arrives. NPC final states.</li>
-      <li><b>Epilogue: One Year Later (Scene 5)</b> — Each player: Where are you? How often does the mark glow? What rumors follow you? NPC updates. Close narration.</li>
-    </ol>
+<nav class="tab-nav">
+  <button class="tab-btn active" onclick="showTab('cold-open')">Cold Open</button>
+  <button class="tab-btn" onclick="showTab('scene1')">Scene 1: The Choice</button>
+  <button class="tab-btn" onclick="showTab('scene2')">Scene 2: The Trial</button>
+  <button class="tab-btn" onclick="showTab('scene3')">Scene 3: The Price</button>
+  <button class="tab-btn" onclick="showTab('scene4')">Scene 4: Return</button>
+  <button class="tab-btn" onclick="showTab('quick-ref')">Quick Ref</button>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════ COLD OPEN -->
+<div class="tab-panel active" id="cold-open">
+
+  <div class="beat-header">Beat 1 — The World Stops</div>
+  <p>Dawn at Vindolanda. The rain stops mid-drop. Not gradually — arrested in air. Germanic arrows frozen at the apex of their arc. A soldier's shout stops between vowels.</p>
+  <p><em>"The world holds. Not peace — suspension. As if someone put their hand up and said: wait."</em></p>
+
+  <div class="beat-header beat-2">THE MOMENT — Mars Arrives</div>
+  <div class="box divine">
+    <p>The parade ground is black sand. Not transformed — replaced. The fort's stones are still there at the edges but the center is something else.</p>
+    <p>A figure on a throne of weapons — fort-height, armored in what armor means rather than what armor is. The helmet's crest is red and does not move in wind that does not exist.</p>
+    <p>He does not raise his voice. He does not need to.</p>
+    <p><em>"MORTALS. I WATCHED. I ARRIVED. NOW YOU ANSWER."</em></p>
+    <p><b>All prep checks close at this moment.</b> The window before he addresses the party directly is brief — approximately one round of real-time. Run the checks fast or call time.</p>
   </div>
 
-  <h2>OGAS</h2>
-  <table>
-    <tr><th>NPC</th><th>Status This Session</th><th>Secret</th></tr>
-    <tr>
-      <td class="npc-name">Mars</td>
-      <td>Deliver judgment on those who brought his spear home without his leave</td>
-      <td class="secret-text">He has been watching since Session 1. He respects this party. He will not say this.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Augur Cassia</td>
-      <td>Frozen witness; observes everything; no interference</td>
-      <td class="secret-text">Her visions have stopped — she knows the outcome already and will say nothing. Her crow circles the genuine-sacrifice character.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Centurion Varro</td>
-      <td>Frozen witness; the last NCO check on the party's character</td>
-      <td class="secret-text">His final opinion of the party formed over five sessions. He says it only if asked directly.</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Vercingetorix (if allied)</td>
-      <td>Warriors circle the arena; lend morale (Advantage on first roll)</td>
-      <td class="secret-text">Dying within a year. Rune message to Mars can invoke TIWAZ + WUNJO = honorable war brings joy (+3 to Option C).</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Tribune Lucius (if alive)</td>
-      <td>Frozen witness; his future depends on what Mars decides</td>
-      <td class="secret-text">If Lucius sabotaged the spear: Mars begins angrier (all DCs +2 this session).</td>
-    </tr>
-    <tr>
-      <td class="npc-name">Legate Corvinus (if hostile)</td>
-      <td>His soldiers may arrive hostile mid-arena if Mars is displeased</td>
-      <td class="secret-text">If Corvinus tried to seize the spear and was not rebuked: Disadvantage on Option C.</td>
-    </tr>
-  </table>
+  <div class="beat-header">Beat 3 — The Window Closes</div>
+  <p>Every environmental check must be made before he speaks to them. Once addressed, the party is in Scene 1. Do not let players re-open the window. Mars is patient. He is not slow.</p>
 
-  <h2>Option C — Arguments That Work / Fail</h2>
-  <div class="box">
-    <b>Arguments that move Mars:</b><br>
-    1. <b>Honor argument:</b> The spear dishonored him by sowing madness (corrupted worker, Cassia's visions, Varro's men).<br>
-    2. <b>Discipline argument:</b> Destroying it preserved the disciplined war Mars demands (reference sacrifices, escort kneeling).<br>
-    3. <b>War vs. murder:</b> They chose war's harsh honor over easy cruelty (sparing Vercingetorix, saving civilians, capturing traitors).<br><br>
-    <b>Arguments that anger him:</b> "It was too dangerous." "We had no choice." "Rome needed this."<br><br>
-    <b>Failure recovery — Virtus demonstration:</b> Step into the fighting circle without a weapon and wait. Wisdom save DC 14 (holding still without flinching). Success: "That. That is what I asked for." Trial resets to neutral; Option C available again. Failure: they flinch. Trial continues at normal parameters. Do not punish the attempt.
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Cold Open</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Rain drops suspended mid-air — hundreds of them, each perfectly still. Arrows frozen at their apex. The parade ground: black sand with no horizon — it extends to the fort walls and stops exactly there. The throne: assembled from every weapon Mars has been given over a thousand years.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">Nothing. Then: his voice, which is not a voice — it arrives in the mind at the volume he intends, regardless of distance. The frozen arrows are audible as a hum — metal at the frequency of tension.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Blood and iron and the clean smell of new weapons drawn, multiplied. The arena smells of every battlefield that ever petitioned Mars. Also: the smell of rain that stopped — ozone, petrichor, arrested.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The black sand gives underfoot like real sand — each step sinks slightly. It is warm. Whatever it is, it is not cold. Gravity is unchanged. The world is otherwise normal, physically, which is deeply wrong.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Iron — as if a sword hilt were pressed against the back of the tongue. Consistent from the moment the sand appears. Does not fade. This is the taste of his attention.</div></div>
+    </div>
+
+    <h2>NPC — Mars (form)</h2>
+    <table class="npc-desc-table">
+      <tr><td>Look</td><td>Fort-height. The armor is what armor means — not Roman, not Germanic, not any specific tradition. Every army's idea of war given shape.</td></tr>
+      <tr><td>Wearing</td><td>The weapons-throne is built of everything ever offered to him. Some recognizable. Some impossible. The spear from Session 1 is at the throne's center — he has always had it.</td></tr>
+      <tr><td>Posture</td><td>Seated at first. When he stands, there is no visible transition — seated, then standing, without the movement between.</td></tr>
+      <tr><td>Memorable</td><td>He looks at one character first: the one who made the genuine grove sacrifice. Not warmth — recognition. He has known since it happened.</td></tr>
+      <tr><td>First impression</td><td>He is satisfied, not angry. Not pleased — satisfied. There is a difference. The trial is a formality he is performing because it is correct to perform.</td></tr>
+    </table>
+
+    <h2>Frozen Witnesses</h2>
+    <div class="box secret">
+      <p><b>Cassia:</b> Frozen, but her crow is not. It circles the genuine-sacrifice character. Her expression: confirming details she has already seen in a vision.</p>
+      <p><b>Varro:</b> Frozen mid-salute — right hand raised, not quite reaching his helmet. He chose to salute when he realized what was happening. He had approximately one second of warning.</p>
+      <p><b>Vercingetorix (if allied):</b> His warriors circle the arena's edge but cannot enter. He is not frozen — he is standing outside the sand. He knows what this is. He waits.</p>
+      <p><b>Lucius (if alive):</b> Frozen where he stood. His fate depends entirely on what Mars decides.</p>
+    </div>
   </div>
 
-  <h2>Continuity Tracker (Update Before Play)</h2>
-  <div class="box secret">
+  <div>
+    <h2>Pre-Trial Window Checks (all close when Mars speaks)</h2>
     <table>
-      <tr><th>Session</th><th>Choice</th><th>Session 5 Effect</th></tr>
-      <tr><td>S1</td><td>Who touched the spear first</td><td>That character hears Mars' voice louder during trial</td></tr>
-      <tr><td>S2</td><td>Vercingetorix allied</td><td>Allied: warriors circle, Advantage on first roll. Not allied: Germanic warband prepares to strike if Mars is displeased.</td></tr>
-      <tr><td>S3</td><td>Sacrifice sincerity</td><td>Genuine: Advantage on Option C. Token: Disadvantage on Mars' first check.</td></tr>
-      <tr><td>S3</td><td>Influenced NPC survived</td><td>They appear among witnesses and beg the party to speak honestly.</td></tr>
-      <tr><td>S4</td><td>Who knelt in antechamber</td><td>Those three glow faintly; Mars expects them to speak first in Option C.</td></tr>
-      <tr><td>S4</td><td>Corvinus tried to seize spear</td><td>His soldiers arrive hostile, may interrupt if Mars is displeased.</td></tr>
-      <tr><td>S4</td><td>Lucius sabotaged</td><td>Mars begins angrier. All DCs +2.</td></tr>
-      <tr><td>Any</td><td>Corruption Level 5 PC exists</td><td>Mars uses them as mouthpiece. Option B: he targets them preferentially. Option C: honest answer modifies DC.</td></tr>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th><th>Payoff</th></tr>
+      <tr><td>Scan arena weapons</td><td class="dc">13</td><td>Perception</td><td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td><td>Spots arena weapons before they're announced. One round of planning.</td></tr>
+      <tr><td>Terrain read</td><td class="dc">12</td><td>Survival</td><td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td><td>Cover positions, phasing buildings materialize solid. Advantage on first positioning in any combat option.</td></tr>
+      <tr><td>Arena form — Armilustrium</td><td class="dc">13</td><td>Religion</td><td><span class="tag tag-passive">passive</span> <span class="tag tag-key">window closes</span></td><td>Mars conducting judgment in a form Rome understands. Deliberate choice. +2 to first Option C Persuasion if paired with History DC 14.</td></tr>
+      <tr><td>Black sand — no natural origin</td><td class="dc">12</td><td>Nature</td><td><span class="tag tag-passive">passive</span> <span class="tag tag-key">window closes</span></td><td>No heat, no mineral signature. Came with the god. The arena will not respond to environmental manipulation — only to Mars's decision.</td></tr>
+      <tr><td>Time-freeze — divine stasis</td><td class="dc">14</td><td>Arcana</td><td><span class="tag tag-passive">passive</span> <span class="tag tag-key">window closes</span></td><td>Witnesses frozen because they are witnesses — Mars wants this on record. In Option C: invoking them as reason to argue honestly is structurally correct to him.</td></tr>
+      <tr><td>Conceal a weapon</td><td class="dc">14</td><td>Sleight of Hand</td><td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td><td>Carry one hidden weapon into the trial. Mars may notice. He will comment.</td></tr>
+      <tr><td>Mars's first look</td><td class="dc">13</td><td>Insight</td><td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td><td>He looks first at the genuine grove sacrifice character. Opens Advantage on first Option C argument if they open with the grove sacrifice moment.</td></tr>
+    </table>
+
+    <h2>Continuity Modifiers (confirm before play)</h2>
+    <div class="box secret">
+      <table>
+        <tr><th>When</th><th>Choice</th><th>S5 Effect</th></tr>
+        <tr><td>S1</td><td>Who touched spear first</td><td>Mars speaks to that character louder during trial</td></tr>
+        <tr><td>S2</td><td>Vercingetorix allied</td><td>Warriors circle arena; Advantage on first roll. Not allied: warband ready to strike if Mars displeased.</td></tr>
+        <tr><td>S3</td><td>Sacrifice sincerity</td><td>Genuine: Advantage on Option C. Token: Disadvantage on Mars' first check.</td></tr>
+        <tr><td>S3</td><td>Influenced NPC survived</td><td>They appear among witnesses and beg the party to speak honestly.</td></tr>
+        <tr><td>S4</td><td>Who knelt in antechamber</td><td>Those three glow faintly; Mars expects them to speak first in Option C.</td></tr>
+        <tr><td>S4</td><td>Corvinus tried to seize spear</td><td>Soldiers may arrive hostile mid-arena if Mars is displeased.</td></tr>
+        <tr><td>S4</td><td>Lucius sabotaged</td><td>Mars begins angrier. All DCs +2 this session.</td></tr>
+        <tr><td>Any</td><td>Corruption Level 5 PC</td><td>Mars uses them as mouthpiece. See Quick Ref: Corruption.</td></tr>
+      </table>
+    </div>
+  </div>
+  </div>
+
+</div><!-- end cold-open -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 1 -->
+<div class="tab-panel" id="scene1">
+
+  <div class="beat-header">Beat 1 — Three Paths Visible</div>
+  <p>Mars presents the options without preamble. Not as a menu — as a fact. The arena weapons are there (Option A). He himself is there, fully present, not a proxy (Option B). And he is listening, which means words are possible (Option C).</p>
+  <p>He states no preference. The choice reveals character. He is watching that, too.</p>
+
+  <div class="beat-header beat-2">THE MOMENT — Choose or Be Chosen</div>
+  <div class="box moment">
+    <p><b>If the party hesitates for more than one minute of real table time:</b> Mars chooses for them. He chooses Option B — the trial of direct combat. Not as punishment. As the default when intent is unclear. He respects hesitation less than he respects a wrong choice made with conviction.</p>
+    <p>One character — the one he looked at in the Cold Open — will feel the weight of the decision most directly. If they speak for the group, Mars responds. He does not address committees.</p>
+    <p><b>Option A:</b> Champion Trial — Fausta Luperci, arena weapons, physical contest.<br>
+    <b>Option B:</b> Trial of Blades — Mars himself, buildings phasing in, 300 HP / AC 20 / four attacks. The party fights a god.<br>
+    <b>Option C:</b> Trial of Voice — make the argument. Persuasion DC 19. He listens. He pushes back.</p>
+  </div>
+
+  <div class="beat-header">Beat 3 — The Trial Begins</div>
+  <p>No further preamble once the choice is declared. Cut directly to Scene 2. The arena is already configured for whichever option. It was always configured for this one.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 1</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">The arena weapons visible between the frozen witnesses. Handout 11 cards face-down on the sand. For Option B: no phasing buildings yet — they arrive each round. For Option C: Mars sits back slightly, which is the only physical indication he is listening.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">The frozen arrow hum. Mars's voice arriving without traveling. When the choice is made, a single tone — the same tone that announced him in Session 3. Then silence of a different quality: expectation, not suspension.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">The iron smell intensifies when the trial path is committed. Each option has a slight variation: Option A — hot metal of arena combat. Option B — the specific smell of blood on cooling armor. Option C — nothing. He clears the air, which is more alarming than filling it.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The sand temperature matches the option chosen. Option A: warm, arena-floor warmth. Option B: cool — the battle-field cold. Option C: neutral, which means he has removed his own preference from the environment. That is the most unsettling.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">The iron taste sharpens to the edge of unpleasant when the choice is locked. Then normalizes. The anticipation is over. Something is beginning.</div></div>
+    </div>
+
+    <h2>Arguments That Move Mars (Option C)</h2>
+    <div class="box green">
+      <p><b>1. Honor argument:</b> The spear dishonored him — it sowed madness, corrupted a worker, infected Cassia's visions, degraded Varro's men. A weapon in his name that spreads chaos is an insult to what war is supposed to be.</p>
+      <p><b>2. Discipline argument:</b> Destroying it preserved the disciplined war Mars demands. Reference the sacrifices, the kneeling, the escort, the escort's deaths. The discipline was demonstrated, not claimed.</p>
+      <p><b>3. War vs. murder:</b> They chose war's harsh honor over easy cruelty — sparing Vercingetorix when they could have killed him, saving civilians when it cost them tactically, capturing traitors instead of killing them. They fought as Mars would want soldiers to fight.</p>
+    </div>
+
+    <h2>Arguments That Anger Mars</h2>
+    <div class="box warn">
+      "It was too dangerous." — He is a war god. He approves of dangerous.<br>
+      "We had no choice." — He spent five sessions giving them choices. He noticed.<br>
+      "Rome needed this." — He is not Rome's bureaucracy. He is older than Rome.<br>
+      "We completed the ritual for you." — He did not ask. He watched. These are different things.<br><br>
+      <b>On any of these:</b> DC rises by 2. If three consecutive failures on arguments that anger him — go to Virtus fallback.
+    </div>
+  </div>
+
+  <div>
+    <h2>DC Reference — Scene 1</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Type</th></tr>
+      <tr><td>Option C — read Mars' reactions</td><td class="dc">15</td><td>Insight</td><td><span class="tag tag-active">active</span></td></tr>
+      <tr><td>Armilustrium recognition</td><td class="dc">13 / 14</td><td>Religion / History</td><td><span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Vercingetorix TIWAZ + WUNJO rune message</td><td class="dc">—</td><td>—</td><td>Automatic if Vercingetorix allied and player invokes it. +3 to Option C Persuasion.</td></tr>
+    </table>
+
+    <h2>If Vercingetorix Is Dying</h2>
+    <div class="box secret">
+      He knows the rune combination that opens a specific channel with Mars — TIWAZ (honor in war) + WUNJO (joy, fulfillment). It is a message: "honorable war brings joy." He can relay it through a character if they ask him. No skill check required. Mars receives it. His posture shifts slightly.<br><br>
+      Vercingetorix dies within a year regardless. If the party succeeds, he dies peacefully. If the party fails catastrophically, he dies in the aftermath of what happens to the fort.
+    </div>
+
+    <h2>Hesitation Mechanics</h2>
+    <div class="box warn">
+      One minute of real table time before a committed choice = Option B selected by Mars. Track this. It is not cruel — it is his character. He chose to be here. He expects the party to choose too.<br><br>
+      <b>If the party immediately commits to Option C without the opening checks:</b> They begin without the Armilustrium bonus, without having read his first look. DC 19, no initial advantage. Achievable. Harder.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene1 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 2 -->
+<div class="tab-panel" id="scene2">
+
+  <div class="beat-header">Beat 1 — The Trial Begins</div>
+  <p><b>Option A:</b> Handout 11 cards flipped. Fausta Luperci materializes — she was a real soldier at the Battle of the Frozen Rhine. She respects endurance and discipline. Feints have no effect on her.</p>
+  <p><b>Option B:</b> Mars stands. The phasing buildings begin materializing: each round, one barracks building phases in solid, blocking movement and line-of-sight. He has four attacks. HP 300. AC 20. He does not retreat.</p>
+  <p><b>Option C:</b> The first argument is stated. Mars listens. Then: "Say it plainly. Without decoration."</p>
+
+  <div class="beat-header beat-2">THE MOMENT — The Pivot</div>
+  <div class="box moment">
+    <p><b>Option A — Frozen Advance:</b> Fausta uses her Frozen Advance ability — she closes distance impossibly fast, Constitution save DC 14. This is the moment she becomes a real threat, not an exhibition.</p>
+    <p><b>Option B — The Look:</b> Midway through the combat, Mars focuses on one specific character — whoever has the highest corruption, or the one who made the genuine sacrifice. Everything else stops for one round. He is asking something without words. A character who understands what he's asking can respond with the Virtus demonstration: unarmed, in the open, holding still.</p>
+    <p><b>Option C — The Argument Lands or Fails:</b> DC 19 Persuasion or Performance. On 14–18 (fail by 5 or less): "Say it again, differently." DC drops to 17. On 19+: he adjusts one trial term. On 24+: he concedes and cites something specific from that character's Session 0 material.</p>
+  </div>
+
+  <div class="beat-header">Beat 3 — Resolution</div>
+  <p>The trial ends. Not with death — with completion. Mars does not kill the party. He tests them. What they showed during the test is what carries into Scene 3.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 2 (all options)</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Option A: Fausta in full Roman combat posture, helmet crest catching no light, sand pluming from each step. Option B: each phasing building arrives with a visual compression of the arena — the sand rearranges around it. Option C: Mars's armor shifts subtly when an argument lands — a slight relaxation at the shoulders.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">Option A: the specific sound of parade-ground training, not battlefield chaos — controlled, metered. Option B: his footsteps on black sand, which sound like a drum. Option C: his voice arrives at different volumes depending on his reaction — louder when skeptical, quieter when engaged.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Option A: hot blood on sand — the arena smell. Option B: the cold smell of a battlefield three days after — what remains. Option C: nothing. He maintains the neutral air throughout. This is a discipline. He is choosing it.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">Option A: arena sand under boots — warm, giving, not destabilizing. Option B: each of his attacks arrives with a pressure wave — the concussive feel of something that doesn't need to hit you to affect you. Option C: when an argument lands, a warmth through the floor — the antechamber's warmth, hundreds of feet up. He is the same presence as below.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">All options: the iron taste calibrates to the trial's progress. Intensifying: he is more engaged, more present, more pleased or more displeased. Stable: he is watching. Fading: the trial is concluding, one way or another.</div></div>
+    </div>
+
+    <h2>Option A — Arena Weapons (Handout 11)</h2>
+    <div class="box">
+      <p>Three cards face-down on the sand. Flipped at trial start (or after Perception DC 13 in Cold Open). Each has a benefit and a cost — the benefit is significant, the cost is real.</p>
+      <p>Investigation DC 14 during the trial: identify which weapon suits which character's build, or which cost is most dangerous for their specific situation.</p>
+      <p>History DC 14 (passive): Fausta Luperci was real. She survived the Frozen Rhine by outlasting, not outfighting. She respects endurance. Tricks do not affect her. Hold your ground for three rounds and her attacks stop escalating.</p>
+    </div>
+
+    <h2>Option B — Mars's Stats</h2>
+    <div class="box warn">
+      <b>HP:</b> 300 &mdash; <b>AC:</b> 20 &mdash; <b>Attacks:</b> Four per round<br><br>
+      He does not drop below 1 HP — that is not what this is. At 50 HP remaining, he pauses. "Enough. You have proven the point." Combat ends.<br><br>
+      <b>Phasing buildings:</b> One per round materializes, solid, 30 ft × 30 ft. Choose placement to create tactical complexity — not to trap, to challenge. Reposition with Stealth DC 15. Show of fearlessness (unarmed in the open): Intimidation DC 15. On success: "...Interesting." Advantage on next roll.<br><br>
+      <b>Corruption Level 5 PC:</b> Mars targets them preferentially until the party calls their name three times (echoing Session 3's mechanic). On third call: he pauses, looks at the party, then at the character. "You chose them. That tells me something too."
+    </div>
+  </div>
+
+  <div>
+    <h2>DC Reference — Scene 2</h2>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Skill</th><th>Option</th></tr>
+      <tr><td>Read arena weapons</td><td class="dc">14</td><td>Investigation</td><td>A</td></tr>
+      <tr><td>Fausta history</td><td class="dc">14</td><td>History</td><td>A <span class="tag tag-passive">passive</span></td></tr>
+      <tr><td>Dodge Frozen Advance</td><td class="dc">13</td><td>Acrobatics</td><td>A</td></tr>
+      <tr><td>Grapple Fausta</td><td class="dc">13</td><td>Athletics</td><td>A (contested +5)</td></tr>
+      <tr><td>Battle triage</td><td class="dc">12</td><td>Medicine</td><td>A &amp; B</td></tr>
+      <tr><td>Reposition behind building</td><td class="dc">15</td><td>Stealth</td><td>B</td></tr>
+      <tr><td>Show of fearlessness</td><td class="dc">15</td><td>Intimidation</td><td>B</td></tr>
+      <tr><td>Combat maneuvering</td><td class="dc">13</td><td>Athletics</td><td>B (contested)</td></tr>
+      <tr><td>Option C — the argument</td><td class="dc">19 / 17</td><td>Persuasion / Performance</td><td>C (first / retry)</td></tr>
+      <tr><td>Option C — read Mars' reactions</td><td class="dc">15</td><td>Insight</td><td>C</td></tr>
+      <tr><td>Option C — Armilustrium pairing</td><td class="dc">14</td><td>History</td><td>C (pairs with Religion DC 13 from Cold Open; +2 Persuasion)</td></tr>
+      <tr><td>Option C — presenting partial truth</td><td class="dc">16</td><td>Deception</td><td>C (fail = DC +2, must maintain on success)</td></tr>
+      <tr><td>Virtus fallback — hold still unarmed</td><td class="dc">14</td><td>Wisdom save</td><td>Any (resets trial on success)</td></tr>
+      <tr><td>Fausta Con save (Frozen Advance)</td><td class="dc">14</td><td>Constitution</td><td>A</td></tr>
+    </table>
+
+    <h2>Virtus Fallback (any option)</h2>
+    <div class="box green">
+      <b>When:</b> Option C has failed three times, or Option B is going catastrophically, or Option A has left the party broken.<br><br>
+      <b>What:</b> One character steps into the fighting circle without a weapon and holds still. Wisdom save DC 14 (not flinching under divine scrutiny, alone, unarmed).<br><br>
+      <b>Success:</b> Mars stops. "That. That is what I asked for." Trial resets to neutral. Option C becomes available regardless of which option was chosen.<br><br>
+      <b>Fail:</b> They flinch. Trial continues at normal parameters. Do not punish the attempt — it counts as an action and a courage point. Mars notices.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene2 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 3 -->
+<div class="tab-panel" id="scene3">
+
+  <div class="beat-header">Beat 1 — Mars Approaches</div>
+  <p>The trial is done. He approaches on foot — not throne-height now, but still larger than a man. Still armored. Still present. The arena does not shrink; he does not diminish. He chooses to be at a scale that allows conversation.</p>
+  <p>He addresses each character directly — one sentence each. Not judgment. Assessment. He has five sessions of observation. He uses it.</p>
+
+  <div class="beat-header beat-2">THE MOMENT — The Mark</div>
+  <div class="box moment">
+    <p>He marks them. Not a ceremony — a fact. The mark appears, character by character, in the order he assessed them. See Handout 10.</p>
+    <p><em>"You stood before a god of war and lived. That is not a small thing. I have seen many try."</em></p>
+    <p>Then, for each one specifically — one thing about what they did in the five sessions that he noticed. This should come from the campaign log: what they did that cost them something, what they chose that wasn't easy. He noticed all of it. He cites one thing per character, specific, accurate.</p>
+    <p><b>This is your preparation homework for Session 5.</b> Before play, write one sentence per character from the log. Use it here.</p>
+  </div>
+
+  <div class="beat-header">Beat 3 — The Consequence Choice</div>
+  <p>For characters who distinguished themselves (genuine sacrifice, Virtus demonstration, saving a specific ally at cost): he offers a consequence from the menu. Not all five — at most two or three, depending on the trial path. He does not press for a decision immediately. "You have time. The mark will remind you that I am waiting."</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 3</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">Mars at conversational scale — still armored, still present, but no longer fort-height. The black sand is receding at the arena's edges. The frozen rain drops have not fallen yet. They are still waiting.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">His voice, this close, arrives at normal volume — which is more intimate than the divine volume was. He chose this too. When the mark appears on a character, a single clear tone — the same tone as Session 3, Session 4. He has been here since then.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">The iron smell fading — slowly, over this entire scene. By the time he leaves, it will be gone. Replaced, at the edges, by the petrichor of rain about to fall.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The mark when it appears: warmth, specific and localized, like a brand that doesn't burn. It fades to normal skin temperature within a minute. What remains is not heat — it is the knowledge that something has changed permanently.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">The iron taste is gone before the mark finishes appearing. What replaces it: nothing unusual. The ordinary taste of dawn air, and rain about to fall. Ordinary is notable after five sessions of not-ordinary.</div></div>
+    </div>
+
+    <h2>Consequence Menu</h2>
+    <div class="box">
+      <p><b>Mark of Mars:</b> Handout 10. Advantage on Intimidation checks. Once per long rest: ask "What does Mars want from this situation?" and receive an honest answer. In exchange: he may call once. At his choosing.</p>
+      <p><b>The Chosen (1–2 characters, crit success):</b> The Mark plus a Call to War obligation. When he calls, they come. Refuse = mark sears, lose benefits until the quest is completed.</p>
+      <p><b>The Debt:</b> If they bargained at any point, one favor owed. "When I call, you will come." Simple. Exact.</p>
+      <p><b>The Transformation:</b> Offered to any player wanting a noble exit — become a guardian spirit of the arena. The fort earns permanent Advantage on morale checks. That character's story ends here, at their choice.</p>
+      <p><b>Prophecy:</b> Vindolanda becomes a pilgrimage site for a century. Rome will fall from within in three generations. He says it simply, as a fact, not a warning. "I have seen it before."</p>
+    </div>
+  </div>
+
+  <div>
+    <h2>Mars Departs</h2>
+    <div class="box divine">
+      <p>He does not leave dramatically. He becomes less present — the way the temperature of a room changes when someone who was in it leaves. The arena sand remains for approximately one minute after he is gone. Then it is gone too.</p>
+      <p>The rain drops fall.</p>
+      <p>The frozen arrows fall into the sand and vanish. There is no physical evidence they were ever there.</p>
+      <p>The fort reasserts. The north gate is exactly as it was before the siege paused — whatever state the party left it in. The Germanic forces outside have heard it too. They are discussing what to do next. That window is Scene 4.</p>
+    </div>
+
+    <h2>If Mars Leaves Dissatisfied</h2>
+    <div class="box warn">
+      He does not destroy the fort. He is a god of war, not of punishment. But he leaves without the Mark. The spear is gone regardless — it was his to begin with. What remains: a cold wind off the sand for a moment, and then: nothing. No mark. No blessing. No consequence menu. The party carries the absence.<br><br>
+      The siege resumes in full. The Germanic forces outside heard nothing — no pause, no divine intervention, no reason to hesitate. The campaign ends without resolution of the divine thread. That is a valid ending. Not every campaign concludes with divine approval.
+    </div>
+
+    <h2>Corruption Level 5 — After Trial</h2>
+    <div class="box secret">
+      The corruption does not automatically clear with the trial. If Mars offered the Mark, the Mark's presence burns against Level 5 corruption — the character must choose: accept the Mark and let the corruption fight it (d4 levels reduced per long rest until gone, with Wisdom DC 13 each time), or refuse the Mark and keep the corruption as it is.<br><br>
+      "Cannot shed corruption without a selfless deed unseen by any authority, within one year." The deed must be real. Mars will know if it happened. He will not say anything. The corruption will simply be gone one morning.
+    </div>
+  </div>
+  </div>
+
+</div><!-- end scene3 -->
+
+<!-- ═══════════════════════════════════════════════════════ SCENE 4 -->
+<div class="tab-panel" id="scene4">
+
+  <div class="beat-header">Beat 1 — The World Reasserts</div>
+  <p>The rain falls. The arrows have already vanished. Frozen soldiers complete their movements — mid-salute, mid-shout, mid-step — with no gap in their memory. From their perspective, nothing happened between one moment and the next.</p>
+  <p>Varro finishes his salute. He holds it for a long moment. Then lowers his arm. He says nothing immediately.</p>
+  <p>Outside the north gate: the Germanic forces are conferring. Whatever they heard/felt through the divine pause — they need time to decide. The party has approximately one hour before the siege resumes or concludes by other means.</p>
+
+  <div class="beat-header beat-2">THE MOMENT — Witnesses Come Forward</div>
+  <div class="box moment">
+    <p>Cassia first. Her crow lands on her shoulder and is still. She does not say "I saw." She says: "I told you." — past tense, referencing augury sessions 1 and 2. She was always right. She needs someone to acknowledge that.</p>
+    <p>Varro second. He waits until Cassia is done. One sentence. He has had five sessions to decide what it is. You wrote it before this session — based on what actually happened in your campaign. It references something specific. Give it to the player who paid the most attention to him.</p>
+    <p><b>Then the citizenship document.</b> If Lucius sent the dispatch in Session 4, a rider has been waiting at the gate since dawn. Imperial epistula, sealed. One sentence in a different hand: "Distinguished service on the Germanic frontier, confirmed by two independent sponsors. The Emperor's office takes note."</p>
+  </div>
+
+  <div class="beat-header">Beat 3 — Epilogue Questions Begin</div>
+  <p>The siege outside resolves (however it resolves — leave this to the established fiction of who is leading it and what they decide when the divine pause ends). The party gathers. The epilogue opens.</p>
+  <p>Ask each player: <em>"Where are you, one year later?"</em> Wait for the answer before asking the next. Do not rush this.</p>
+
+  <div class="grid">
+  <div>
+    <h2>Five Senses — Scene 4</h2>
+    <div class="sense-block">
+      <div class="sense-row"><div class="sense-label">Sight</div><div class="sense-text">The rain falling — ordinary, northwest British frontier rain. The parade ground: normal stone, worn smooth by boots. The sand is simply gone. No trace, no residue. Varro standing with his salute arm coming down slowly. Cassia with the crow on her shoulder.</div></div>
+      <div class="sense-row"><div class="sense-label">Sound</div><div class="sense-text">Rain on stone. The confused voices of soldiers who completed movements they can't account for. From outside: Germanic voices in conference — not battle sounds, deliberation sounds. The fort is quiet in the specific way that comes after something that was not quite violence.</div></div>
+      <div class="sense-row"><div class="sense-label">Smell</div><div class="sense-text">Rain on dry stone — petrichor, specific and real. The iron smell is completely gone. The smoke from the granary fire (if it was set) has cleared. The air smells ordinary. After five sessions of not-ordinary, ordinary is striking.</div></div>
+      <div class="sense-row"><div class="sense-label">Feel</div><div class="sense-text">The mark on each character: settled now, room temperature. Permanent but quiet. Like a scar that doesn't hurt — you know it's there without looking. The black sand left the parade ground warm; the rain is cooling it slowly.</div></div>
+      <div class="sense-row"><div class="sense-label">Taste</div><div class="sense-text">Rain. Food, suddenly — appetite returns with the normalization of the world. After five sessions of divine interference in the body's chemistry, the body wants something simple. Someone is hungry.</div></div>
+    </div>
+
+    <h2>NPC Final States</h2>
+    <table class="npc-desc-table" style="width:100%">
+      <tr><td>Cassia</td><td>Her visions have stopped — she knows the outcome and will say nothing about what it was. Her crow is settled. She will enter the priesthood formally within a year.</td></tr>
+      <tr><td>Varro</td><td>He will file one final commendatio, worded unusually, that Corvinus will try to suppress. It goes through anyway. He dies at Vindolanda, his choice, in twenty years.</td></tr>
+      <tr><td>Corvinus</td><td>Saw what happened. Is not the same man. Files a report that is technically accurate and omits everything important. Retires to his estate within two years. Dies quietly.</td></tr>
+      <tr><td>Lucius</td><td>If alive: the ravens from Brutus stopped. He does not know why. He spends the rest of his career watching for the consequence of what he did. It arrives in Session 5's epilogue or it doesn't — player choice.</td></tr>
+      <tr><td>Vercingetorix</td><td>Dead within a year — he knew. He left something at the grove. The party will find it if they return there. They don't have to return.</td></tr>
+      <tr><td>Brutus</td><td>Off-screen, Plan B failed or was never executed. He continues. The campaign has ended. What Rome does with a senator who tried to burn a frontier fort is a different story.</td></tr>
     </table>
   </div>
 
-</div>
-<div class="col">
+  <div>
+    <h2>One Year Later — Epilogue Questions</h2>
+    <div class="box green">
+      <p>Ask each player, in order, with space for real answers:</p>
+      <ul>
+        <li>"Where are you, one year later?"</li>
+        <li>"How often does the mark glow? What does it feel like when it does?"</li>
+        <li>"What rumors follow you? Do you correct them?"</li>
+        <li>"Has he called yet? Do you think he will?"</li>
+        <li>"What do you wish had gone differently?"</li>
+      </ul>
+      <p>Do not answer for them. Do not offer contingencies. Listen.</p>
+    </div>
 
-  <h2>DC Reference</h2>
-  <table>
-    <tr><th>Scene / Option</th><th>DC</th><th>Skill</th><th>Type</th><th>What they learn / what happens</th></tr>
-    <tr>
-      <td>Cold Open — arena scan</td>
-      <td class="dc">13</td>
-      <td>Perception</td>
-      <td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td>
-      <td>Spots arena weapons before Mars announces them. One round of planning.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — terrain read</td>
-      <td class="dc">12</td>
-      <td>Survival</td>
-      <td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td>
-      <td>Cover positions, phasing buildings materialize solid (block movement/LoS), safest approach to throne. Advantage on first positioning decision in any combat.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — arena form</td>
-      <td class="dc">13</td>
-      <td>Religion</td>
-      <td><span class="tag tag-passive">passive</span> <span class="tag tag-key">window closes</span></td>
-      <td>Recognizes Armilustrium form. Mars is conducting judgment in a shape Rome understands. That is a choice. Opens +2 bonus on first Option C Persuasion roll if also pass History DC 14.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — black sand</td>
-      <td class="dc">12</td>
-      <td>Nature</td>
-      <td><span class="tag tag-passive">passive</span> <span class="tag tag-key">window closes</span></td>
-      <td>No natural origin. No heat, no mineral signature. It came with the god. The arena will not respond to environmental manipulation — only to what Mars decides.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — time-freeze</td>
-      <td class="dc">14</td>
-      <td>Arcana</td>
-      <td><span class="tag tag-passive">passive</span> <span class="tag tag-key">window closes</span></td>
-      <td>Divine stasis, not a spell. Witnesses frozen because they are witnesses — Mars intends this on record. In Option C: invoking the witnesses as reason the argument must be made honestly is structurally correct to Mars.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — conceal a weapon</td>
-      <td class="dc">14</td>
-      <td>Sleight of Hand</td>
-      <td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td>
-      <td>On success, carry one hidden weapon into the trial. Mars may notice. He will comment either way.</td>
-    </tr>
-    <tr>
-      <td>Cold Open — Mars' first look</td>
-      <td class="dc">13</td>
-      <td>Insight</td>
-      <td><span class="tag tag-active">active</span> <span class="tag tag-key">window closes</span></td>
-      <td>He looks at one character first — the one who made the genuine grove sacrifice. Not warmth: recognition. He has known since it happened. Opens Advantage on first Option C argument if they open with the grove sacrifice.</td>
-    </tr>
-    <tr>
-      <td>Option A — read the arena weapons</td>
-      <td class="dc">14</td>
-      <td>Investigation</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Find the weapon best suited to your approach, or identify the most dangerous cost for your build. One round of assessment before combat or as an action once started.</td>
-    </tr>
-    <tr>
-      <td>Option A — Fausta Luperci history</td>
-      <td class="dc">14</td>
-      <td>History</td>
-      <td><span class="tag tag-passive">passive</span></td>
-      <td>The Battle of the Frozen Rhine was real. She was real. She respects endurance and discipline, not tricks. Feints have no effect on her.</td>
-    </tr>
-    <tr>
-      <td>Option A — dodge Frozen Advance</td>
-      <td class="dc">13</td>
-      <td>Acrobatics</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Use terrain before she closes. Advantage on the Constitution save that round. Fail: save proceeds normally; attempt did not make things worse.</td>
-    </tr>
-    <tr>
-      <td>Option A — grapple Fausta</td>
-      <td class="dc">13</td>
-      <td>Athletics</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Contested vs. her Strength (+5). Success: speed drops to 0 until start of your next turn. Her Frozen Advance cannot trigger if she cannot move.</td>
-    </tr>
-    <tr>
-      <td>Option A — battle triage</td>
-      <td class="dc">12</td>
-      <td>Medicine</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Bonus action with Healer's Kit or proficiency. Stabilize a downed ally without a spell slot. Mars does not intervene in medicine.</td>
-    </tr>
-    <tr>
-      <td>Option B — reposition behind building</td>
-      <td class="dc">15</td>
-      <td>Stealth</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>While Mars focuses on another character. Success: he wastes a movement action pivoting to your new position. Fail: he pivots immediately; you become his priority.</td>
-    </tr>
-    <tr>
-      <td>Option B — show of fearlessness</td>
-      <td class="dc">15</td>
-      <td>Intimidation</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Replace one attack action with a demonstration of <em>virtus</em>. Success: Mars pauses, says "...Interesting"; Advantage on next attack or saving throw. Fail: round costs an attack, no worse.</td>
-    </tr>
-    <tr>
-      <td>Option B — Cassia's crow</td>
-      <td class="dc">12</td>
-      <td>Animal Handling</td>
-      <td><span class="tag tag-passive">passive</span></td>
-      <td>Crow circling one witness is attention behavior, not fear. It points at the person Mars first looked at — the genuine grove sacrifice. He has been watching since Session 3.</td>
-    </tr>
-    <tr>
-      <td>Option B — combat maneuvering</td>
-      <td class="dc">13</td>
-      <td>Athletics</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Grapple, terrain use, combat positioning. Mars' stat block: HP 300, AC 20, four attacks. Contest his Strength where applicable.</td>
-    </tr>
-    <tr>
-      <td>Option C — read Mars' reactions</td>
-      <td class="dc">15</td>
-      <td>Insight</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>His posture shifts — leans toward arguments that interest him, away from those that don't. Identify which of the three valid arguments is landing before committing fully.</td>
-    </tr>
-    <tr>
-      <td>Option C — the argument</td>
-      <td class="dc">19</td>
-      <td>Persuasion / Performance</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>5 below: "Say it again, differently." DC drops to 17 for second attempt. Exact: He adjusts one trial term. DC 24: He concedes and explains why — references something specific about that character from Session 0 material.</td>
-    </tr>
-    <tr>
-      <td>Option C — Armilustrium pairing</td>
-      <td class="dc">14</td>
-      <td>History</td>
-      <td><span class="tag tag-passive">passive</span></td>
-      <td>Pairs with Religion DC 13 from the opening. If both checks made: structured argument Mars recognizes as formally correct. +2 to the Persuasion roll.</td>
-    </tr>
-    <tr>
-      <td>Option C — presenting partial truth</td>
-      <td class="dc">16</td>
-      <td>Deception</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>On fail: "That is not what you believe. Say what you believe." DC rises by 2. On success: he accepts the framing — must maintain it. Changing it mid-argument cancels the success.</td>
-    </tr>
-    <tr>
-      <td>Option C failure recovery — Virtus</td>
-      <td class="dc">14</td>
-      <td>Wisdom save</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Step into the fighting circle without a weapon and hold still. Success: Mars stops. "That. That is what I asked for." Trial resets. Fail: they flinch; trial continues normally.</td>
-    </tr>
-    <tr>
-      <td>Epilogue — Varro's last word</td>
-      <td class="dc">12</td>
-      <td>Insight</td>
-      <td><span class="tag tag-active">active</span></td>
-      <td>Know he is holding something back. If asked directly, he says it — one sentence written before Session 5 based on what actually happened. Give this to the player who paid attention to Varro across five sessions.</td>
-    </tr>
-  </table>
+    <h2>NPC Epilogue Updates (for those still living)</h2>
+    <div class="box">
+      <p>Cassia: Vindolanda becomes a pilgrimage site. She is the site's first formal custodian. She is eventually sainted in a faith Rome hasn't invented yet.</p>
+      <p>Varro: He trains the next cohort. Some of them will be at the fort for forty years. They will remember a centurion who told them something about a specific session of events on the frontier. They won't quite get it right. The story will be better for the inaccuracies.</p>
+      <p>The grove: Thusnelda's tokens will matter to someone, somewhere, within twenty years. She knew this when she gave them out.</p>
+    </div>
 
-  <h2>Corruption Level 5 Guidance</h2>
-  <div class="box secret">
-    <b>Option A:</b> DC 16 Wisdom save each round to act freely. Three successes reduce to Level 4.<br>
-    <b>Option B:</b> Mars targets them preferentially until party calls them back by name three times (recreating Session 3 mechanic).<br>
-    <b>Option C:</b> Mars uses them as his mouthpiece — "What do you want?" Truthful self-awareness = no penalty. Selfish answer = -5 to Persuasion DC.<br>
-    <b>After the session:</b> Cannot shed corruption without performing a selfless deed unseen by any authority within one year.
+    <h2>Commendationes Final Tally</h2>
+    <div class="box">
+      <p><b>No catch-up mechanic in S5.</b> Paperwork was filed or it was not.</p>
+      <p><b>S5 Opp. 1:</b> Surviving and completing the divine trial. Filed by Cassia as religious witness — the only commendatio issued by religious authority in this campaign.</p>
+      <p><b>S5 Opp. 2:</b> Explicit choice not to use lethal force when justifiable, and it costs something mechanically. Varro awards personally, outside normal paperwork.</p>
+      <p><b>Final count:</b> 6+ = exceptional record. 3–5 = expected range. Under 3 = closes the citizenship track for this campaign.</p>
+    </div>
+  </div>
   </div>
 
-  <h2>Consequence Menu</h2>
-  <div class="box">
-    <b>Mark of Mars:</b> Handout 10, as written.<br>
-    <b>The Chosen (1 or 2 on crit success):</b> Benefits + Call to War obligation. When he calls, they come. Refuse = mark sears, lose benefits until quest completed.<br>
-    <b>The Debt:</b> If they bargained, one future favor owed. "When I call, you will come."<br>
-    <b>The Transformation:</b> Offer to any player wanting a noble exit — become a guardian spirit of the arena. Fort earns permanent Advantage on morale checks.<br>
-    <b>Prophecy:</b> Vindolanda becomes a pilgrimage site for a century. Rome will fall from within in three generations.<br><br>
-    <b>Citizenship resolution (Scene 4):</b> If Lucius sent the dispatch in Session 4, a response arrives during the aftermath — carried by a rider who has been waiting at the gate since dawn. Imperial <em>epistula</em>: sealed with the Emperor's office stamp. Lucius reads it first and hands it to the relevant character. One sentence in a different hand: "Distinguished service on the Germanic frontier, confirmed by two independent sponsors. The Emperor's office takes note."
+</div><!-- end scene4 -->
+
+<!-- ═══════════════════════════════════════════════════════ QUICK REF -->
+<div class="tab-panel" id="quick-ref">
+
+  <div class="grid">
+  <div>
+    <h2>OGAS — Session 5 NPCs</h2>
+    <table>
+      <tr><th>NPC</th><th>Status This Session</th><th>Secret</th></tr>
+      <tr><td><b>Mars</b></td><td>Deliver judgment on those who brought his spear home without leave</td><td><em>He has been watching since S1. He respects this party. He will not say this.</em></td></tr>
+      <tr><td><b>Augur Cassia</b></td><td>Frozen witness; observes everything; no interference</td><td><em>Her visions have stopped — she knows the outcome already. Her crow circles the genuine-sacrifice character.</em></td></tr>
+      <tr><td><b>Centurion Varro</b></td><td>Frozen witness; the last NCO check on the party's character</td><td><em>His final opinion formed over five sessions. He says it only if asked directly.</em></td></tr>
+      <tr><td><b>Vercingetorix</b> (if allied)</td><td>Warriors circle the arena; cannot enter; lends Advantage on first roll</td><td><em>Dying within a year. TIWAZ + WUNJO rune message grants +3 to Option C if invoked.</em></td></tr>
+      <tr><td><b>Tribune Lucius</b> (if alive)</td><td>Frozen witness; his future depends on Mars's decision</td><td><em>If Lucius sabotaged the spear: all DCs +2 this session.</em></td></tr>
+      <tr><td><b>Legate Corvinus</b> (if hostile)</td><td>Soldiers may arrive hostile mid-arena if Mars is displeased</td><td><em>If Corvinus tried to seize the spear and wasn't rebuked: Disadvantage on Option C.</em></td></tr>
+    </table>
+
+    <h2>Trial Options Summary</h2>
+    <div class="box">
+      <p><b>Option A — Champion Trial:</b> Fausta Luperci. Arena weapons (Handout 11). Feints useless. Endurance rewarded — hold three rounds = attacks stop escalating.</p>
+      <p><b>Option B — Trial of Blades:</b> Mars himself. HP 300, AC 20, four attacks. Stops at 50 HP. Buildings phase in each round. Virtus demonstration available.</p>
+      <p><b>Option C — Trial of Voice:</b> Persuasion/Performance DC 19 (retry at DC 17). Three valid arguments: Honor, Discipline, War vs. Murder. Three fatal framings: danger, no-choice, Rome's needs.</p>
+    </div>
+
+    <h2>Three Clue Rule — Resolved</h2>
+    <div class="box green">
+      All clues planted in S3–S4. This session pays off.<br><br>
+      <b>What Mars wanted:</b> Kneeling witnesses (S4) · Honest sacrifices (S3 grove) · Spear reaching his altar (S4 antechamber)<br><br>
+      <b>How to reach him through argument:</b> Armilustrium recognition (Religion DC 13, Cold Open) · Historical precedent (History DC 14) · Any "we had no choice" framing angers him
+    </div>
   </div>
 
-  <h2>Commendationes Final Tally</h2>
-  <div class="box warn">
-    <b>No citizenship catch-up mechanic in Session 5.</b> The paperwork was either filed or it was not.<br>
-    <b>Opp. 1:</b> Surviving and completing the divine trial. Filed by Cassia as religious witness — the only <em>commendatio</em> issued by a religious authority in this campaign.<br>
-    <b>Opp. 2:</b> Explicit choice not to use lethal force when justifiable (Option A or during Mars' judgment call on a specific character), and that choice costs them mechanically. Varro awards personally outside normal paperwork.<br><br>
-    <b>Final count:</b> 6+ = exceptional record; 3–5 = expected range; fewer than 3 = closes the citizenship track for this campaign.
+  <div>
+    <h2>Escalating Stakes — Complete Arc</h2>
+    <table>
+      <tr><th>Session</th><th>Stakes</th><th>Resolution</th></tr>
+      <tr><td>S1</td><td><span class="stakes-badge stakes-personal">Personal</span></td><td>Who are these people? Can they be trusted?</td></tr>
+      <tr><td>S2</td><td><span class="stakes-badge stakes-fort">Fort</span></td><td>What does the fort owe them? What do they owe the fort?</td></tr>
+      <tr><td>S3</td><td><span class="stakes-badge stakes-regional">Regional</span></td><td>Is the frontier worth protecting at personal cost?</td></tr>
+      <tr><td>S4</td><td><span class="stakes-badge stakes-imperial">Imperial</span></td><td>What does Rome mean when a senator tries to burn a frontier fort?</td></tr>
+      <tr><td><b>S5</b></td><td><span class="stakes-badge stakes-divine">Divine</span></td><td>What do gods want from mortals who act honestly under pressure?</td></tr>
+    </table>
+
+    <h2>Corruption Guidance — Level 5</h2>
+    <div class="box warn">
+      <p><b>Option A:</b> DC 16 Wisdom save each round to act freely. Three successes in a row: reduce to Level 4.</p>
+      <p><b>Option B:</b> Mars targets them preferentially. Three calls of their name by other party members (S3 mechanic echoed): he pauses and acknowledges. "You chose them. That tells me something."</p>
+      <p><b>Option C:</b> Mars uses them as mouthpiece — "What do you want?" Truthful self-awareness = no penalty. Selfish answer = -5 to Persuasion DC.</p>
+      <p><b>After the session:</b> Cannot shed corruption without a selfless deed unseen by any authority, within one year. Mars will know when it happens.</p>
+    </div>
+
+    <h2>Consequence Menu (Quick Reference)</h2>
+    <div class="box">
+      <p><b>Mark of Mars:</b> Handout 10 — Intimidation advantage, once/long rest divine question. In exchange: one call, at his choosing.</p>
+      <p><b>The Chosen (crit success):</b> Mark + Call to War obligation. Refuse = mark sears until fulfilled.</p>
+      <p><b>The Debt:</b> One favor owed. "When I call, you will come."</p>
+      <p><b>The Transformation:</b> Become arena guardian spirit. Noble exit. Fort gains permanent Advantage on morale checks.</p>
+      <p><b>Prophecy:</b> Vindolanda, pilgrimage for a century. Rome falls from within in three generations. Stated as fact.</p>
+    </div>
+
+    <h2>Citizenship Resolution</h2>
+    <div class="box green">
+      If Lucius sent the dispatch in S4: a rider has been waiting at the gate since dawn. Imperial epistula, sealed. Lucius reads it first and hands it to the relevant character without comment.<br><br>
+      "Distinguished service on the Germanic frontier, confirmed by two independent sponsors. The Emperor's office takes note."<br><br>
+      One sentence in a different hand. The Emperor did not write it. Someone in his office wrote it. Someone in his office noticed. That is enough.
+    </div>
+  </div>
   </div>
 
-  <h2>Three Clue Rule Check</h2>
-  <div class="box">
-    The three clue rule has resolved — all clues were planted in Sessions 3–4. This session pays them off. Confirm before play that players understand:<br>
-    <b>What Mars wants:</b> Kneeling witnesses (S4) · Honest sacrifices (S3 grove) · Spear reaching his altar (S4 antechamber)<br>
-    <b>How to reach him through argument:</b> Armilustrium recognition (Religion DC 13) · Historical precedent (History DC 14) · What angers him (any "we had no choice" framing)
-  </div>
+</div><!-- end quick-ref -->
 
-</div>
-</div>
 </body>
 </html>
