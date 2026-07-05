@@ -1,5 +1,19 @@
 # CLAUDE.md — The Shadow of Mars Campaign Workbook
 
+## Campaign Goal
+
+**One sentence:** When the GM sits down at the table, every chapter has zero-prep materials ready to run.
+
+**What "ready" means — four tabs open during play:**
+1. **Cheat card** (`gm_tools/cheat_card_chN.html`) — one dark-themed browser tab: story spine (3 sentences), scene flow with DCs, OGAS table, contingencies. Fits one viewport. No scrolling.
+2. **Print module** (`gm_tools/chapterNN_print.html`) — A4 two-column printout: read-aloud boxes, inline stat blocks, decision tables, NPC secrets. Can be handed to a substitute GM cold.
+3. **MapTool reference** (`gm_tools/chapterNN_maptool.qmd`) — scene-by-scene table: which SVG map to load, which tokens to place, encounter notes. No guessing.
+4. **NPC cards** (`gm_tools/chapterNN_npcs.html`) — one card per major NPC: portrait silhouette, OGAS (Objective/Goal/Agenda/Secret), voice line, stat block, session-by-session state.
+
+**Plus:** handouts printed before session (HTML files in `handouts/`). SVG maps loaded in MapTool from `Maptool/maps/`.
+
+---
+
 ## Project Overview
 
 A Quarto book structured as a two-part D&D 5e campaign module:
@@ -222,46 +236,112 @@ All content below is live in the book. No further action required.
 
 ---
 
-## Active Work Tracks
+## Chapter Deliverable Status
 
-These are scoped and tested items ready to build out fully. Each has a proof-of-concept file already created.
+Every chapter needs exactly these files. Build them in order. Do not skip to the next chapter until the current one has all five.
 
-### Track A: Rendered Handouts
-**What:** Convert all 11 handouts from appendix.qmd into standalone HTML files with period-appropriate visual styling. Printable and shareable via MapTool's image handout feature.
-**POC:** `handouts/handout_01_legates_orders.html` — wax tablet CSS, Cinzel font, Latin + translation, print-ready. Verify it renders before extending to all 11.
-**To build:** One file per handout. Naming: `handout_NN_slug.html`. Style guide: wax tablet (dark red) for military orders; stone inscription (grey/off-white) for the Vault inscription (Handout 2); aged papyrus (warm tan) for letters and scrolls (Handouts 5, 7, 8); blood-on-stone for Handout 10 (Mark of Mars). Each file self-contained (no external dependencies except Google Fonts CDN, with fallbacks).
-**Source:** appendix.qmd — all 11 handouts with `{.handout-card}` divs. When-to-give and how-to-present metadata is in `{.handout-meta}` divs; do not include that in the printed output.
+| File | Purpose | Ch1 | Ch2 | Ch3 | Ch4 | Ch5 |
+|------|---------|-----|-----|-----|-----|-----|
+| `cheat_card_chN.html` | At-table browser tab | partial | done | TODO | TODO | TODO |
+| `chapterNN_print.html` | A4 printable module | missing | done | TODO | TODO | TODO |
+| `chapterNN_guide.qmd` | Full Quarto session guide | missing | done | TODO | TODO | TODO |
+| `chapterNN_maptool.qmd` | Scene→map→token reference | missing | done | TODO | TODO | TODO |
+| `chapterNN_npcs.html` | NPC OGAS + stat cards | missing | missing | TODO | TODO | TODO |
 
-### Track B: GM Session Reference Cards
-**What:** One condensed HTML reference card per session (5 total). Designed to be open in a browser tab during play: OGAS table, scene flow, DC cheat sheet, contingency tables, three-clue status.
-**POC:** `gm_tools/session01_reference.html` — two-column layout, colour-coded by check type (passive/active/key), full OGAS and refusal contingency for Session 1. Verify formatting before extending.
-**To build:** Sessions 2-5. Source: chapter2.qmd through chapter5.qmd, specifically the `## DM Notes`, `### OGAS This Session`, `### Skill Audit` sections, and the `## Pre-Session Preparation` props list. Each card should fit one browser viewport without scrolling (print at 80% zoom for single A4 page).
-**Key sections per card:** Scene flow (numbered), OGAS table (NPC/goal/secret), DC reference table (room/DC/skill/type/what they learn), contingency boxes (warn-coloured), corruption/vacancy/commendationes state at session start.
+**Ch1 partial** = `cheat_card_ch1_finish.html` covers Scenes 4-5 only. Full Ch1 cheat card still missing.
 
-### Track C: MapTool Corruption + Mechanics Macros
-**What:** MTScript macros for the campaign's custom mechanics, importable into MapTool via the Campaign macro panel.
-**POC:** `Maptool/macros/corruption_tracker.mts` — full MTScript for a token-attached corruption tracker. Frame dialog with pip display, stage name, mechanical effect text, increase/decrease/reset buttons. Uses token property `CorruptionLevel` (Number, default 0). Requires companion macros `corruption_increase`, `corruption_decrease`, `corruption_reset` on the Campaign panel (each is 2-3 lines: get property, modify, set property).
-**To build next:**
-- `corruption_increase.mts` / `corruption_decrease.mts` / `corruption_reset.mts` — the button targets
-- `commendationes_tracker.mts` — same pattern, tracks commendationes count per token (property: CommendationesCount), shows current count and citizenship tier (Peregrinus/Latinus/Civis) thresholds
-- `role_display.mts` — campaign-level frame showing the 15 vexillatio roles, who holds each (by token name), and vacancy state (red if unfilled)
-- `roman_calendar.mts` — frame showing current campaign date in Roman format (Kalends/Nones/Ides + month + year AUC), advance-day button
-**MapTool property setup (add to Campaign Properties > Token Properties):** `CorruptionLevel` (Number, default 0), `CommendationesCount` (Number, default 0), `UnitRole` (String, default ""), `CitizenshipStatus` (String, default "Peregrinus").
+**SVG maps committed:**
+- Ch1: `vault_s1_overview.html` (overview only; battle maps missing)
+- Ch2: `s2_fort_overview.html`, `s2_west_gate.html`, `s2_north_wall.html` (uncommitted)
+- Ch3: `s3_forest_path.html`, `s3_germanic_village.html`, `s3_farbog_crossing.html`, `s3_forest_overview.html`
+- Ch4: `s4_fort_siege.html`, `s4_sacred_grove.html`, `s4_sacred_grove_overview.html`
+- Ch5: `s5_mars_confrontation.html`
 
-### Track D: NPC Token Pack
-**What:** Visual token portraits for the campaign's named NPCs, formatted for MapTool import (200×200 PNG with circular frame).
-**POC:** `Maptool/tokens/npcs/corvinus_token.html` — CSS-only portrait (helmet silhouette, gold/red token frame), NPC stat block overlay, small 50×50 map-scale preview. Screenshot the `.token` div at 200×200 to get the import-ready PNG.
-**To build:** One HTML file per major NPC, plus a batch export method. Named NPCs needing tokens: Corvinus (Sessions 1-2), Cassia Liviana (1-5), Centurion Varro (1-4), Senator Brutus (shadow presence 1-4, physical 4-5), Vercingetorix (2-5), Thusnelda (3), the Legate's rider/messenger (background), Germanic chieftain contacts. Token frame colours: gold = ally/neutral, red = antagonist, grey = unknown allegiance. Stat block data lives in gm_intro.qmd and the chapter DM Notes sections.
-**Longer-term:** Script a Python/bash export using `chromium --headless --screenshot` to render the HTML tokens to PNG automatically.
+**Handouts:** All 11 HTML files done (`handouts/handout_01` through `handout_11`). Print-ready.
 
-### Track E: Ambient Audio Page
-**What:** Single HTML page (`audio/index.html`) open in a browser tab during play. Collapsible per-session sections with track suggestions, YouTube search links, and scene-cue annotations.
-**POC:** `audio/index.html` — all 5 sessions covered with track name, artist, scene use annotation, and YouTube search link buttons. Session 1 open by default; others collapsed. Dark Roman styling.
-**To build:** The POC is feature-complete for the base use case. Enhancement options: (1) add actual embedded YouTube iframes once the GM identifies preferred uploads (search links are intentionally generic so they degrade gracefully if a specific upload disappears); (2) add a "Now Playing" indicator with JS localStorage so the tab remembers which session is active across browser restarts; (3) add non-YouTube fallback links (Spotify, Bandcamp) for Wardruna and Heilung who have official presences there.
+**NPC tokens:** 23 named NPC HTML portraits in `Maptool/tokens/npcs/`. Player tokens: 5 in `Maptool/tokens/players/` (Iris, Julia Jana, Tanit, Rivia, Ursula).
+
+**Audio:** `audio/index.html` done — 5-session ambient guide with YouTube search links.
+
+---
+
+## How to Deliver
+
+### Quality rules (learned from failures)
+
+**Maps must match the scene.** Never assign a generic downloaded map to a scene without knowing what happens there. If the scene is a wall assault, build a wall SVG. If it's a forest ambush, use `s3_forest_path.html`. Read the scene first, then pick/build the map.
+
+**Story = 3 sentences max on the cheat card.** The Quarto book chapter is the deep reference. The cheat card is what the GM reads at the table in 10 seconds. Story box on the cheat card: who are the players, what is the threat, what is at stake. Nothing else.
+
+**Cheat card fits one viewport.** If it requires scrolling to see all scenes, it is too long. Cut to essentials. Contingencies can be collapsed `<details>` elements.
+
+**NPC cards need OGAS + one voice line.** Do not write paragraphs. Per NPC: Objective (what they want this chapter), Goal (how they pursue it), Agenda (what they do whether or not the party engages), Secret (what the party can discover). Plus one sentence of dialogue that captures their voice.
+
+**Print module = standalone.** A substitute GM picking it up cold should be able to run the chapter. Include: read-aloud for every scene, stat block for every combat, decision table for every major branch, NPC secrets in sidebar boxes.
+
+**MapTool reference = no ambiguity.** Each row: Scene name | SVG file to load | Tokens to place (exact names from `Maptool/tokens/`) | Encounter notes. No "see chapter2.qmd for details" — the reference is the reference.
+
+**Always commit and push after completing a chapter's files.** Never leave uncommitted files.
+
+### File naming
+- Cheat cards: `gm_tools/cheat_card_chN.html` (N = 1-5)
+- Print modules: `gm_tools/chapterNN_print.html` (NN = 01-05)
+- Quarto guides: `gm_tools/chapterNN_guide.qmd`
+- MapTool refs: `gm_tools/chapterNN_maptool.qmd`
+- NPC cards: `gm_tools/chapterNN_npcs.html`
+- Handouts: `handouts/handout_NN_slug.html`
+- SVG maps: `Maptool/maps/sN_slug.html` + exported `sN_slug.jpg`
+
+### What NOT to do
+- Do not write session guides that require reading the whole Quarto book to understand. The GM tools are self-contained.
+- Do not pick Dice Grimorium maps by filename. Read the scene, then decide if an existing map fits or if a new SVG is needed.
+- Do not leave `<!-- TODO -->` in cheat cards without also adding the chapter to Pending Work in this file.
+- Do not add files to `_quarto.yml` that do not exist yet.
 
 ---
 
 ## Conventions
+
+### Quarto Patterns Used in This Project
+
+**Read-aloud text** (block quote, GM reads aloud at table):
+```markdown
+> The smell of torch-smoke and something older fills the corridor.
+> Ahead, the passage narrows.
+```
+
+**DM-only collapsible** (secrets, contingencies, OGAS):
+```markdown
+::: {.callout-note collapse="true"}
+## DM: Corvinus knows the OTHALAN name
+He was ordered to burn a document about it three years ago. He will not volunteer this. History DC 17 or direct confrontation needed.
+:::
+```
+
+**Knowledge barrier (three-tier system):**
+```html
+<details>
+<summary>DC 13 Intelligence (History) — Recalling the OTHALAN rune</summary>
+DM content here.
+</details>
+```
+Do NOT put DC-gated facts in open prose. Always put them inside a collapsible.
+
+**Chapter YAML front matter:**
+```yaml
+---
+title: "Chapter 2: The Chieftain's Price"
+---
+```
+No `author`, no `date` — those come from `_quarto.yml`.
+
+**Adding a chapter to `_quarto.yml`:** Every new `.qmd` file needs an entry under the correct `part:` block. Never add `.html` files to `_quarto.yml` — only `.qmd`.
+
+**Figure embed:**
+```markdown
+![Vindolanda aerial view.](images/vindolanda_aerial.jpg){width=90% fig-align="center" fig-alt="Aerial photograph of Vindolanda excavation site."}
+*Image: Vindolanda Trust, Wikimedia Commons, CC BY-SA 2.0.*
+```
 
 ### Writing Tone
 - **Player sections:** Present tense, "you" voice, no spoilers. Treat the reader as a capable adult who wants enough information to make interesting characters.
@@ -321,6 +401,56 @@ Do NOT use Chromium headless — it produces an all-white PNG on this system. Do
 - Room number circles (gold border, dark fill, number only)
 - Compass rose and scale bar
 - NO text labels, NO encounter markers, NO DM secrets in the SVG
+
+---
+
+## Pending Work (Next Sessions)
+
+### Priority 1: Commit Pending Files
+Files created but NOT yet committed:
+- `Maptool/maps/s2_north_wall.html` — S2 north wall SVG battle map (22×14sq, 60px/sq). Commit with s2 SVG maps.
+- `Maptool/campaigns/5e/5juliromans.cmpgn` — new campaign file. Confirm keep or discard before committing.
+
+### Priority 2: Chapter 3-5 Skeleton Documents
+Create one complete skeleton per chapter. Each skeleton = 4 files. Use Ch2 files as templates.
+
+**Chapter 3 — Through the Dark Forest**
+- [ ] `gm_tools/cheat_card_ch3.html` — collapsible cheatsheet (copy ch2 structure, fill known scenes, mark TODO)
+- [ ] `handouts/chapter03_handouts.qmd` — handout list with WHAT/WHEN/HOW for handouts 06 (Thusnelda map) + 07 (bloody message)
+- [ ] `gm_tools/chapter03_maptool.qmd` — maps+tokens table (maps: s3_forest_path.html, s3_germanic_village.html, s3_farbog_crossing.html, s3_forest_overview.html)
+- [ ] `gm_tools/chapter03_npcs.html` — NPC reference (primary: Thusnelda, Vercingetorix; secondary: Hilde, Aldric, Arnulf)
+
+**Chapter 4 — The God's Demand**
+- [ ] `gm_tools/cheat_card_ch4.html`
+- [ ] `handouts/chapter04_handouts.qmd` — handouts 08 (raven order) + 09 (siege orders)
+- [ ] `gm_tools/chapter04_maptool.qmd` — maps: s4_fort_siege.html, s4_sacred_grove.html, s4_sacred_grove_overview.html
+- [ ] `gm_tools/chapter04_npcs.html` — primary: Senator Brutus (first physical appearance), Legate Corvinus; secondary: Tribune Lucius
+
+**Chapter 5 — The Wrath of Mars**
+- [ ] `gm_tools/cheat_card_ch5.html`
+- [ ] `handouts/chapter05_handouts.qmd` — handout 10 (mark of mars) + epilogue outcome cards
+- [ ] `gm_tools/chapter05_maptool.qmd` — map: s5_mars_confrontation.html
+- [ ] `gm_tools/chapter05_npcs.html` — primary: Mars (divine), all returning NPCs with final fate notes
+
+**After all 12 files created:**
+- [ ] Update `_quarto.yml` to include all 6 new `.qmd` files (3 handouts + 3 maptool refs)
+- [ ] Commit and push everything
+
+### Priority 3: Print Module for Chapter 3-5
+- [ ] `gm_tools/chapter03_print.html` — traditional A4 two-column module (copy chapter02_print.html format)
+- [ ] `gm_tools/chapter04_print.html`
+- [ ] `gm_tools/chapter05_print.html`
+
+### Priority 4: S2 Missing Combat Tokens
+- [ ] `npcs/quintus_flavius.json` already exists → verify token in `Maptool/tokens/npcs/creatures/`
+- [ ] Add `npcs/praetorian_guard.json` (×6 template token) — CR 1, AC 16 (lorica), HP 16, spear + shield
+- [ ] Run `python3 scripts/generate_npc_tokens.py` after adding
+
+### Priority 5: NPC Portrait Images
+User requested pictures on all NPCs. Options:
+- CSS silhouette tokens already exist for 23 named NPCs in `Maptool/tokens/npcs/`
+- For the print module: embed base64 small portrait or reference `Maptool/tokens/npcs/[name]_token.html` screenshot
+- For chapter_npcs.html files: add portrait `<img>` slot with fallback CSS silhouette
 
 ### Commit Conventions
 One milestone or major feature per commit. Commit message format:
