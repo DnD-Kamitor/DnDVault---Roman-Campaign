@@ -158,17 +158,49 @@ Roman legal authority (real orders, genuine Senate power) vs. the truth of what 
 
 **Maps — load these in MapTool before the session:**
 
-| Scene | Map file | Location in MapTool |
+| Scene | Map file | Path |
 |---|---|---|
-| Scene 0: Cold Open (north gate, body) | `CastleWallPublicJPG.jpg` | `maps/dicegrimorium/CastleWall/CastleWallPublic/` |
+| Scene 0: Cold Open (north gate) | `CastleWallPublicJPG.jpg` | `maps/dicegrimorium/CastleWall/CastleWallPublic/` |
 | Scene 1: Tribune Arrives (south gate) | `City-Gates-Gridded-22x33-MapPublic.jpg` | `maps/dicegrimorium/CityGates/City Gates Public/` |
-| Scene 2: Investigation (fort interior reference) | `saalburg_plan.jpg` | `maps/campaign/S2_Chieftains_Price/` — orientation only, no grid |
-| Scene 3 Phase 1: Wall Defense | `CastleWallPublicJPG.jpg` | same as Scene 0 — keep loaded |
-| Scene 3 Phase 2: West Gate Breach | `City-Gates-Gridded-22x33-MapPublic.jpg` | same as Scene 1 — keep loaded |
+| Scene 2: Investigation (reference only) | `saalburg_plan.jpg` | `Maptool/maps/campaign/S2_Chieftains_Price/` |
+| Scene 3 Phase 1: Wall Defense | `CastleWallPublicJPG.jpg` | same as Scene 0 |
+| Scene 3 Phase 2: West Gate Breach | `City-Gates-Gridded-22x33-MapPublic.jpg` | same as Scene 1 |
 | Scene 3 Phase 3: Vercingetorix enters | `CastleWallPublicJPG.jpg` | same — courtyard entry through breach |
 | Scene 4: Accusation (courtyard) | `saalburg_plan.jpg` | reference for positioning only |
 
-*Note: no playable fort-interior battle map exists in the pack. `saalburg_plan.jpg` is an archaeological floor plan — use it as DM reference only, not player-facing.*
+*No playable fort-interior battle map exists. `saalburg_plan.jpg` is an archaeological floor plan — DM reference only.*
+
+**Player tokens — `Maptool/tokens/players/`:**
+
+| File | Character | Class |
+|---|---|---|
+| `Iris.rptok` | Iris | Druid (Circle of Stars) |
+| `Julia_Jana.rptok` | Julia Jana | Cleric (Twilight) |
+| `Tanit_bint_Abdmelqart.rptok` | Tanit bint Abdmelqart | Bard (Eloquence) |
+| `Rivia_Calida_Mendera.rptok` | Rivia Calida Mendera | Artificer (Armorer) |
+| `Ursula_Günther.rptok` | Ursula Günther | Barbarian (Berserker) |
+
+**NPC/creature tokens — `Maptool/tokens/npcs/named/` and `creatures/`:**
+
+| File | Scene | Who |
+|---|---|---|
+| `Tribune_Lucius.rptok` | 1, 4 | Tribune Lucius |
+| `Legate_Corvinus.rptok` | 1, 4 | Legate Corvinus |
+| `Augur_Cassia.rptok` | 2, 4 | Cassia Liviana |
+| `Centurion_Varro.rptok` | 1, 2 | Centurion Varro |
+| `Vercingetorix_the_Red.rptok` | 3 | Vercingetorix |
+| `Quintus_Flavius.rptok` | 1, 2 | Quintus Flavius — sleeper agent, do NOT name on map until exposed |
+| `Praetorian_Guard.rptok` | 1, 4 | Tribune's escort (x6) |
+| `Tribal_Warrior.rptok` | 3 | Germanic raiders (x8) |
+| `Berserker.rptok` | 3 | Germanic berserker (x2) |
+| `Guard.rptok` | 0, 3 | Fort legionaries |
+| `Scout.rptok` | 2 | Sentry/patrol |
+| `Brennus.rptok` | 2 | Brennus (vicus tavern) |
+| `Aemilia_Secunda_(Frumentarius).rptok` | 2 | Intelligence contact |
+| `Quartus.rptok` | 2 | Quartermaster |
+| `Valeria_the_Medicus.rptok` | 2 | Camp medicus |
+| `Lucilla_the_Postwoman.rptok` | 2 | Information source |
+| `Titus_Half-Germanic.rptok` | 2 | Germanic liaison |
 
 **Pacing:** Cold Open 10 min · Scene 1 30 min · Scene 2 45–60 min (investigative heart, the session breathes here) · Scene 3 45–60 min (kinetic peak) · Scene 4 20–30 min (emotional peak). Never let Scene 2 run longer than Scene 3.
 
