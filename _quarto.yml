@@ -51,6 +51,7 @@ book:
         - chapter4.qmd
         - chapter5.qmd
         - appendix.qmd
+        - gm_tools/session_template.qmd
 
 format:
   html:

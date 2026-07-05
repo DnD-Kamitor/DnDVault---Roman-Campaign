@@ -133,6 +133,15 @@ Sessions must escalate:
 
 ---
 
+## Session Template
+
+The canonical session template lives at:
+`https://github.com/DnD-Kamitor/The-Price-of-Dawn/blob/master/session-template.md`
+
+A copy is maintained at `gm_tools/session_template.qmd` and is live in the GM's Workbook section of the book. When building or rebuilding any session guide, use this template as the base. Fill every section; delete only the Encounter Details block for RP-only scenes. Session-specific guides go in `gm_tools/sessionNN_guide.qmd`.
+
+---
+
 ## Completed Milestones
 
 All content below is live in the book. No further action required.
