@@ -2176,5 +2176,107 @@
       "Spy. Cunning Action: Dash, Disengage, or Hide as bonus action.",
       "Imperial courier; knows every road, garrison, and shortcut between Vindolanda and Eboracum."
     ]
+  },
+  "Druid": {
+    "hp": 27,
+    "ac": 11,
+    "speed": "30 ft.",
+    "str": 10,
+    "dex": 12,
+    "con": 13,
+    "int": 12,
+    "wis": 15,
+    "cha": 11,
+    "saves": {},
+    "skills": {
+      "Medicine": 4,
+      "Nature": 3,
+      "Perception": 4
+    },
+    "cr": "2",
+    "attacks": [
+      {
+        "label": "Quarterstaff",
+        "atk": 2,
+        "reach": "5 ft.",
+        "dice": "1d6",
+        "type": "bludgeoning",
+        "note": "Or +4 / 1d6+2 with Shillelagh (bonus action)."
+      }
+    ],
+    "traits": [
+      "Spellcasting (WIS DC 12, +4 to hit). Slots: 1st x4, 2nd x2.",
+      "Key spells \u2014 1st: Fog Cloud (blind 20-ft radius), Entangle (DC 12 STR or restrained), Thunderwave (DC 12 CON, 2d8 thunder, pushed 10 ft). 2nd: Spike Growth (2d4/5-ft move), Hold Person (DC 12 WIS).",
+      "Treeline: does not advance into melee. Retreats if attacked."
+    ],
+    "notes": "CR 2. Priority target \u2014 silence him to end spell disruption."
+  },
+  "Ogre": {
+    "hp": 59,
+    "ac": 11,
+    "speed": "40 ft.",
+    "str": 19,
+    "dex": 8,
+    "con": 16,
+    "int": 5,
+    "wis": 7,
+    "cha": 7,
+    "saves": {},
+    "skills": {},
+    "cr": "2",
+    "attacks": [
+      {
+        "label": "Greatclub",
+        "atk": 6,
+        "reach": "5 ft.",
+        "dice": "2d8+4",
+        "type": "bludgeoning",
+        "note": "Large weapon, 10 ft reach vs. Medium targets."
+      },
+      {
+        "label": "Javelin",
+        "atk": 6,
+        "reach": "30/120 ft.",
+        "dice": "2d6+4",
+        "type": "piercing",
+        "note": "Ranged. Can throw while ramming gate."
+      }
+    ],
+    "traits": [
+      "Gate Ram: each round not stopped, gate takes 3d6+4 damage (gate HP 60, ~3 rounds to breach).",
+      "Large: occupies 10x10 ft. Blocks the gate corridor entirely."
+    ],
+    "notes": "CR 2. 59 HP. Living battering ram. Prioritize stopping him in Phase 2."
+  },
+  "Worg": {
+    "hp": 26,
+    "ac": 13,
+    "speed": "50 ft.",
+    "str": 16,
+    "dex": 13,
+    "con": 13,
+    "int": 7,
+    "wis": 11,
+    "cha": 8,
+    "saves": {},
+    "skills": {
+      "Perception": 4
+    },
+    "cr": "1/2",
+    "attacks": [
+      {
+        "label": "Bite",
+        "atk": 5,
+        "reach": "5 ft.",
+        "dice": "2d6+3",
+        "type": "piercing",
+        "note": "DC 13 STR save or target is knocked Prone."
+      }
+    ],
+    "traits": [
+      "Keen Hearing and Smell: advantage on Perception checks using hearing or smell.",
+      "Large: blocks corridors. Knock prone on bite (DC 13 STR)."
+    ],
+    "notes": "CR 1/2. 26 HP. Faster than a horse. Prone on bite. Large size."
   }
 }

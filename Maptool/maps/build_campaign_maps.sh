@@ -113,10 +113,15 @@ done
 
 # ---------------------------------------------------------------------------
 echo ""
-echo "=== Session 2: The Chieftain's Price ==="
+echo "=== Session 2: The Tribune's Gambit ==="
 S="$DEST/S2_Chieftains_Price"
 mkdir -p "$S"
 
+# Battle maps — fort siege (Scenes 0-4 all at Fort Vindolanda)
+copy_map CastleWall           "$S"
+copy_map CityGates            "$S"
+
+# Road encounter maps (d8 optional table)
 copy_map ForestPath           "$S"
 copy_map ForestPathVol2       "$S"
 copy_map RockyRoad            "$S"
@@ -129,20 +134,29 @@ copy_map RiversideVillage     "$S"
 copy_map SmallFarm            "$S"
 copy_map ForestBanditCamp     "$S"
 
+# SVG battle maps (committed to repo)
+cp "$SCRIPT_DIR/s2_north_wall.html" "$S/" 2>/dev/null && echo "   + s2_north_wall.html" || true
+cp "$SCRIPT_DIR/s2_north_wall.jpg"  "$S/" 2>/dev/null && echo "   + s2_north_wall.jpg"  || true
+cp "$SCRIPT_DIR/s2_west_gate.html"  "$S/" 2>/dev/null && echo "   + s2_west_gate.html"  || true
+cp "$SCRIPT_DIR/s2_west_gate.jpg"   "$S/" 2>/dev/null && echo "   + s2_west_gate.jpg"   || true
+
 cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/" 2>/dev/null || true
 cp "$FORT_IMGS/saalburg_fort.jpg"     "$S/" 2>/dev/null || true
 cp "$FORT_IMGS/castra_layout.svg"     "$S/" 2>/dev/null || true
 cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/" 2>/dev/null || true
 echo "   + fort reference images"
 
+# Named NPCs
 for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro \
             Vercingetorix_the_Red Valeria_the_Medicus Quartus Rufus_the_Smith \
-            Brennus Lucilla_the_Postwoman Aemilia_Secunda \
-            Titus_Half-Germanic; do
+            Brennus Lucilla_the_Postwoman Aemilia_Secunda Titus_Half-Germanic \
+            Quintus_Flavius Aelius_Rufus; do
   copy_npc "$slug" "$S"
 done
 
-for slug in Guard Scout Bandit Bandit_Captain Wolf Boar; do
+# Raid creatures (Ph1 wall + Ph2 gate + Ph3 Vercingetorix)
+for slug in Tribal_Warrior Berserker Praetorian_Guard Guard Scout \
+            Dire_Wolf Druid Ogre Worg Brown_Bear Wolf Boar Bandit Bandit_Captain; do
   copy_npc "$slug" "$S"
 done
 
