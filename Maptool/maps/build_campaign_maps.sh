@@ -239,18 +239,20 @@ echo "=== Session 5: The Wrath of Mars ==="
 S="$DEST/S5_The_Wrath_of_Mars"
 mkdir -p "$S"
 
-copy_map DarkTempleEntrance   "$S"
-copy_map DarkTempleInterior   "$S"
+copy_map CityStreets          "$S"
+copy_map BridgeCheckpoint     "$S"
+copy_map AncientAltar         "$S"
 copy_map AncientTombs         "$S"
 copy_map CathedralCatacombs   "$S"
+copy_map DarkTempleInterior   "$S"
 copy_map ForestLabyrinthRuins "$S"
-copy_map AncientAltar         "$S"
 copy_map NatureGoddessTemple  "$S"
+copy_map IslandRuins          "$S"
 
 for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro \
             Vercingetorix_the_Red Thusnelda Senator_Brutus Valeria_the_Medicus \
             Sigrun_the_Trader Arnulf_the_Firekeeper Edda_the_Spear-Mother \
-            Skadi_the_Healer Aldric_the_Gaul; do
+            Skadi_the_Healer Aldric_the_Gaul Mars Fausta_Luperci; do
   copy_npc "$slug" "$S"
 done
 
