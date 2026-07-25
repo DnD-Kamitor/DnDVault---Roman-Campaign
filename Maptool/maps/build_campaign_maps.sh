@@ -220,15 +220,16 @@ cp "$FORT_IMGS/castra_layout.svg"     "$S/" 2>/dev/null || true
 cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/" 2>/dev/null || true
 echo "   + fort reference images"
 
-for slug in Tribune_Lucius Augur_Cassia Centurion_Varro Vercingetorix_the_Red \
+for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro Vercingetorix_the_Red \
             Thusnelda Senator_Brutus Valeria_the_Medicus \
             Sigrun_the_Trader Arnulf_the_Firekeeper Edda_the_Spear-Mother \
             Skadi_the_Healer Aldric_the_Gaul; do
   copy_npc "$slug" "$S"
 done
 
+# Creatures: siege forces, tunnel constructs, grove spirits
 for slug in Guard Legionary Berserker Cultist_of_Mars Tribal_Warrior \
-            Wight Will-o-Wisp Dryad; do
+            Wight Will-o-Wisp Dryad Animated_Armor Knight; do
   copy_npc "$slug" "$S"
 done
 
