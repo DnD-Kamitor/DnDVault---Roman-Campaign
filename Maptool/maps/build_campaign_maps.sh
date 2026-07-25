@@ -188,13 +188,15 @@ copy_map SwampBridges         "$S"
 copy_map SwampPath            "$S"
 copy_map HighGroundForest     "$S"
 
-for slug in Tribune_Lucius Centurion_Varro Vercingetorix_the_Red Thusnelda \
+for slug in Legate_Corvinus Tribune_Lucius Centurion_Varro Vercingetorix_the_Red Thusnelda \
             Titus_Half-Germanic Sigrun_the_Trader Arnulf_the_Firekeeper \
             Edda_the_Spear-Mother Skadi_the_Healer Aldric_the_Gaul; do
   copy_npc "$slug" "$S"
 done
 
-for slug in Wolf Dire_Wolf Brown_Bear Giant_Spider Haugbui Myling Vaettir; do
+# Creatures: forest wildlife, bog spirits, pursuit force
+for slug in Wolf Dire_Wolf Brown_Bear Giant_Spider Haugbui Myling Vaettir \
+            Tribal_Warrior Scout Will-o-Wisp Specter Guard Knight; do
   copy_npc "$slug" "$S"
 done
 
