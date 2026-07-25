@@ -155,7 +155,8 @@ for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro \
 done
 
 # Raid creatures (Ph1 wall + Ph2 gate + Ph3 Vercingetorix)
-for slug in Tribal_Warrior Berserker Praetorian_Guard Guard Scout \
+# Road encounters: Shadow (enc 2), Cultist_of_Mars (enc 6)
+for slug in Tribal_Warrior Berserker Praetorian_Guard Guard Scout Shadow Cultist_of_Mars \
             Dire_Wolf Druid Ogre Worg Brown_Bear Wolf Boar Bandit Bandit_Captain; do
   copy_npc "$slug" "$S"
 done
@@ -195,8 +196,9 @@ for slug in Legate_Corvinus Tribune_Lucius Centurion_Varro Vercingetorix_the_Red
 done
 
 # Creatures: forest wildlife, bog spirits, pursuit force
+# Scene 5: Stone_Golem (avatars of Mars' anger at the grove ritual — not killable at L5)
 for slug in Wolf Dire_Wolf Brown_Bear Giant_Spider Haugbui Myling Vaettir \
-            Tribal_Warrior Scout Will-o-Wisp Specter Guard Knight; do
+            Tribal_Warrior Scout Will-o-Wisp Specter Guard Knight Stone_Golem; do
   copy_npc "$slug" "$S"
 done
 
