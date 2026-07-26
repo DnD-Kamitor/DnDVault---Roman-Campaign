@@ -2,7 +2,8 @@
 
 **Applying Guy Sclanders' Methodology**
 
-## Session Overview
+<details>
+<summary><strong>Session Overview</strong></summary>
 
 The party travels through the Teutoburg Forest toward the sacred grove where the spear can be destroyed. The forest is ancient, hostile, and alive with old power. The spear whispers louder here. Someone in their group is no longer entirely themselves.
 
@@ -11,7 +12,8 @@ The party travels through the Teutoburg Forest toward the sacred grove where the
 **Key Goal:** Reach the sacred grove; navigate the spear's growing influence on the party
 **Theme:** Fate vs. Free Will (the spear's pull vs. the choice to destroy it)
 
-### Guy Sclanders' Principles Applied
+<details>
+<summary><strong>Guy Sclanders' Principles Applied</strong></summary>
 
 **Pressure Cooker:** The party is hunted (by Rome, or at least by the Legate), carrying a corrupting artifact, in enemy territory, and someone among them may be under the spear's influence. Every hour counts.
 
@@ -19,10 +21,16 @@ The party travels through the Teutoburg Forest toward the sacred grove where the
 
 **Three Clue Rule:** Three ways to identify which NPC is being influenced by the spear before they act.
 
+</details>
 
-## Pre-Session Preparation
+</details>
 
-### Tracking Session 2 Outcomes
+
+<details>
+<summary><strong>Pre-Session Preparation</strong></summary>
+
+<details>
+<summary><strong>Tracking Session 2 Outcomes</strong></summary>
 
 Before writing any prep notes, confirm:
 
@@ -34,7 +42,10 @@ Before writing any prep notes, confirm:
 | What is the Legate's status? | Whether they're being actively pursued |
 | What is each character's corruption level? | Scene 1 intensity, grove ritual stakes |
 
-### Props & Handouts
+</details>
+
+<details>
+<summary><strong>Props &amp; Handouts</strong></summary>
 
 **Handout 6: The Forest Trail (Thusnelda's Map)**
 *Draw this by hand on rough paper — never use clean geometric shapes*
@@ -65,7 +76,10 @@ I did not want to do this.
 - Keep a second set of character sheets with corruption levels updated
 - Prepare a folded note to pass to the "influenced NPC" player privately at the start of Scene 1 (see DM Notes)
 
-### Handout Deployment Timeline
+</details>
+
+<details>
+<summary><strong>Handout Deployment Timeline</strong></summary>
 
 Every handout trigger for this session in a single reference. No handout should be given before its trigger — the information is only valuable once the scene makes it tangible.
 
@@ -80,7 +94,10 @@ Every handout trigger for this session in a single reference. No handout should 
 **If the party earned Handout 6 early (Vercingetorix vouched for them before the Thusnelda meeting):** Still hold it until Thusnelda herself is present and has spoken at least once. The map means more after the players have a voice in their head to attach it to.
 :::
 
-### Map Selection Guide
+</details>
+
+<details>
+<summary><strong>Map Selection Guide</strong></summary>
 
 The session folder has 27 maps. Load these five before play, in this order, and switch at the cued moments. You will not need more than six in a session unless an encounter runs unusually long.
 
@@ -98,7 +115,10 @@ The session folder has 27 maps. Load these five before play, in this order, and 
 `NatureGoddessTemplePublic.jpg` is already in `Fort_Vindolanda/` from the Session 4 prep. It works for the grove because it is a cross-shaped stone hall surrounded by open ground — close enough for the standing-stone ring if you narrate the geometry. `SacredGrove` (from `download_maps.sh`) is the purpose-built option if the script ran successfully.
 :::
 
-### Reactive World Setup
+</details>
+
+<details>
+<summary><strong>Reactive World Setup</strong></summary>
 
 | NPC | Status This Session | What They're Doing |
 |---|---|---|
@@ -108,8 +128,13 @@ The session folder has 27 maps. Load these five before play, in this order, and 
 | Vercingetorix *(if allied)* | Navigating them through his people's territory | Keeping a war-band of six warriors nearby as protection; not mentioning it |
 | Thusnelda (new NPC) | Waiting at her grove, expecting them | She performed an augury three days ago. She knew they were coming. |
 
+</details>
 
-## The Forest Journey: Two Days of Travel
+</details>
+
+
+<details>
+<summary><strong>The Forest Journey: Two Days of Travel</strong></summary>
 
 The journey from the fort to Thusnelda's scouts takes two full days. This is not empty time. The forest is not neutral territory.
 
@@ -128,7 +153,8 @@ At the start of each travel day (or whenever pacing demands it), roll a d10 or c
 | 9 | **The Abandoned Camp.** *(Adapted from Adventures in the Night)* A drover's camp, recently abandoned — fire ash still warm, two bedrolls cut open, a Germanic spear snapped in two. Investigation DC 11 (active: reading the camp's story): three people were here, left in haste south-southeast; one was dragged. Survival DC 12 (active: following the drag-marks): they end 40 feet from the fire, where a patch of earth is soft and dark. Something came from the bog. The only item left: a sealed leather pouch with six days of hardtack and a bronze Brigantes ring. This is not a threat. It is information: the bog does not tolerate uninvited guests. |
 | 10 | **The Boundary Stone.** *(Adapted from Adventures in the Night)* A knee-high granite slab, older than Rome, covered in spiraling Germanic script and worn animal-headed carvings. Religion DC 12 (passive: recognizing a liminal boundary marker): the carvings indicate the threshold between the world of the living and Vættir land. The party crossed it without knowing. Thusnelda, if present, stops and leaves something at the stone's base without explaining -- a pinch of her own hair wound around a small pebble. *"We are guests here. Act like it."* If the party has damaged any offering sites or shrines in previous events, note this: two transgressions mean the Vættir are watching by the time the party reaches the bog. |
 
-### Maps for This Session
+<details>
+<summary><strong>Maps for This Session</strong></summary>
 
 Maps are in `Maptool/maps/campaign/S3_Through_the_Dark_Forest/`. This is the largest pack (27 maps). Session 3 is mostly travel and encounter — you will not use every map. Select 5–7 before play based on which encounters you intend to run.
 
@@ -147,8 +173,13 @@ Maps are in `Maptool/maps/campaign/S3_Through_the_Dark_Forest/`. This is the lar
 | Cave entrance (optional) | `ForestCaveEntrance` | Shelter scene; underground shortcut |
 | Bandit fortification / Germanic camp | `ForestBanditFort`, `ForestGate` | Thusnelda's outer perimeter; the gate test |
 
+</details>
 
-## Scene 0: Cold Open (5 minutes)
+</details>
+
+
+<details>
+<summary><strong>Scene 0: Cold Open</strong> (5 minutes)</summary>
 
 **Start in media res — the camp is wrong.**
 
@@ -174,12 +205,16 @@ They've been traveling for two days. They're camped in a clearing that should fe
 
 Don't resolve this. Just put it in the air. Cut to Scene 1 immediately.
 
+</details>
 
-## Scene 1: Something is Wrong
+
+<details>
+<summary><strong>Scene 1: Something is Wrong</strong></summary>
 
 Three dead birds lie near the camp perimeter. Then the party finds the handout — Handout 7, carved into a tree. One of their NPCs made it. They don't know they did.
 
-### Identifying the Influenced Character
+<details>
+<summary><strong>Identifying the Influenced Character</strong></summary>
 
 The spear's influence is gradual. One NPC in the party is being slowly possessed — not controlled, but *pulled*. The DM should pass a folded note to that player at session start (see DM Notes for the note's contents). The player knows; the other characters don't.
 
@@ -204,12 +239,20 @@ If the party examines the spear's wrappings or attempts to read its aura: Arcana
 - Anyone sensitive to divine energy (Clerics, Paladins) can feel the connection
 - Cassia, if present, sees the influence immediately: *"There's a thread between that person and the spear. I missed it. I'm sorry, I missed it."*
 
-### What the Influenced NPC Does if Undetected
+</details>
+
+<details>
+<summary><strong>What the Influenced NPC Does if Undetected</strong></summary>
 
 At Scene 4 (the grove), the influenced NPC attempts to stop the ritual — not violently at first, but with increasingly urgent arguments. If not caught, they attempt to take the spear and run at the ritual's climax. They can be brought back with a successful DC 15 Wisdom saving throw from the party (as a group action — holding them, calling to them, breaking the connection through sheer human contact). If the party succeeds, the NPC is devastated by what they nearly did.
 
+</details>
 
-## Scene 2: Thusnelda's Scouts
+</details>
+
+
+<details>
+<summary><strong>Scene 2: Thusnelda's Scouts</strong></summary>
 
 Germanic scouts find the party. What happens next depends on Session 2.
 
@@ -274,8 +317,11 @@ When someone tries to thank her: *"Do not thank me. Finish it. That is thanks en
 | That someone in the party is influenced | Who it is -- she knows, but sees this as the party's work to discover |
 | What the stakes of failure are | Whether she believes the party will succeed |
 
+</details>
 
-## Scene 3: The River Crossing
+
+<details>
+<summary><strong>Scene 3: The River Crossing</strong></summary>
 
 The sacred grove is on the far side of the Vitulans river — currently swollen with spring melt. The crossing is hard under normal circumstances. It's harder with pursuers.
 
@@ -304,8 +350,11 @@ The legionaries are just following orders. They've committed no crime. They have
 
 *Varro (if present) will not fight his own men. He'll stand at the bank and let the party cross, then step aside. The legionary centurion will recognize him, hesitate, and that hesitation might be all the time needed.*
 
+</details>
 
-## Scene 3b: The Farbog
+
+<details>
+<summary><strong>Scene 3b: The Farbog</strong></summary>
 
 *(Army of the Damned Part 4 — Into the Farbog, adapted)*
 
@@ -325,15 +374,17 @@ The sacred grove sits on a rise of dry land half a mile past the river. The only
 >
 > *Far ahead, deeper in, a light pulses once. Blue-white. Then dark.*
 
-### Running the Farbog
+<details>
+<summary><strong>Running the Farbog</strong></summary>
 
 Run one, two, or all three of the encounters below, depending on pacing. Each takes 10-15 minutes. The Myling is the emotional anchor. The Sacrifice Site is the investigation hook. The Hostile Vættir only triggers if the party earns it.
 
 **The trigger tracker:** Keep a mental count of disrespectful acts in the bog (disturbing offerings, attacking the Myling, taking items from the sacrifice site without acknowledgment, ignoring the boundary stone). One: absorbed. Two or more: run the Hostile Vættir encounter.
 
----
+</details>
 
-### Encounter A: The Myling
+<details>
+<summary><strong>Encounter A: The Myling</strong></summary>
 
 ::: {.dm-note}
 The Myling is the spirit of an unbaptized or abandoned child, from Germanic/Norse tradition -- doomed to wander until someone carries its remains to consecrated ground. It is not evil. It is unfinished.
@@ -356,9 +407,10 @@ A small figure -- child-shaped, translucent, wrong -- stands on a hummock 30 fee
 
 Let it breathe. This is a character moment, not a mechanics moment.
 
----
+</details>
 
-### Encounter B: The Bog Sacrifice Site
+<details>
+<summary><strong>Encounter B: The Bog Sacrifice Site</strong></summary>
 
 Twenty meters off the path: an offering pole, three meters tall, carved with running knotwork. At its base, offerings wrapped in birch bark. Suspended from the top, partially submerged in the dark water: a preserved human figure, visible only as a shape beneath the surface.
 
@@ -376,9 +428,10 @@ The military sandal buckle is from one of the four soldiers lost in Session 1. T
 - Gathering it requires leaving the path. The channel is knee-deep and the far bank is soft ground. Perception DC 11 (passive): the soft ground is visible before stepping. Without noticing it: DC 11 Dexterity save or sink to waist-depth and need help out.
 - **Mechanical payoff in Session 4:** Cassia prepares a ward compound during one overnight rest after the ritual. In Session 4, this becomes one Siege Ward -- a prepared healing station in the fort that restores 2d8 HP and removes one level of exhaustion per use (three uses before supplies are spent). Note this in your Session 4 handoff.
 
----
+</details>
 
-### Encounter C: Hostile Vættir *(conditional)*
+<details>
+<summary><strong>Encounter C: Hostile Vættir</strong> (conditional)</summary>
 
 ::: {.dm-note}
 **Run this only if the party accumulated two or more disrespect triggers:** damaged a shrine, attacked the Myling, took items from the sacrifice site without acknowledgment, or ignored the boundary stone.
@@ -400,9 +453,10 @@ If the acknowledgment succeeds: the lights halt. Pause five seconds. Then they d
 
 If the acknowledgment fails: each round, one additional Vættir joins. The party cannot outrun them through the bog. Thusnelda will perform the rite alone if the party is incapacitated -- she will succeed, but she arrives at the grove visibly exhausted and gives shorter answers for the rest of the session.
 
----
+</details>
 
-### Optional Location: The Old Watching Post
+<details>
+<summary><strong>Optional Location: The Old Watching Post</strong></summary>
 
 *(Adapted from Adventures in the Night — the mysterious interior location)*
 
@@ -420,10 +474,13 @@ This was left by one of Vercingetorix's grandfather's warband -- the party that 
 If Thusnelda is present and the party shows her the tablet: *"They got further than I thought. I did not know they reached the ruins."* She does not elaborate. Her expression does.
 :::
 
----
+</details>
+
+</details>
 
 
-## Scene 4: The Sacred Grove
+<details>
+<summary><strong>Scene 4: The Sacred Grove</strong></summary>
 
 A day past the river. The forest thins. Then it opens.
 
@@ -439,7 +496,8 @@ Survival DC 11 (active: reading the grove's physical approach before stepping in
 >
 > *"Leave nothing at the door. What you carry in, you carry to the altar. All of it. The weapon, the doubts, and whatever part of you this journey has taken."*
 
-### The Ritual Requirements
+<details>
+<summary><strong>The Ritual Requirements</strong></summary>
 
 Thusnelda lays out what is needed:
 
@@ -465,8 +523,13 @@ As the ritual begins, the influenced NPC feels the connection intensify. This is
 
 If detected and supported: the party can help them resist with a group Wisdom check (DC 14). Success means they participate in the ritual and their corruption is cleared by the grove's power. Failure means they physically grab for the spear mid-ritual — not maliciously, but driven. They can be stopped without combat (Athletics grapple DC 12, or someone calling their name three times). If stopped this way, they collapse, weeping, with no memory of the last hour.
 
+</details>
 
-## Scene 5: Mars Intervenes
+</details>
+
+
+<details>
+<summary><strong>Scene 5: Mars Intervenes</strong></summary>
 
 The ritual begins. The spear lights up. And Mars arrives.
 
@@ -486,7 +549,8 @@ Not physically. As a presence — a pressure in the air that makes the stones vi
 >
 > *"Finish the ritual. Do not look up. Whatever you see, do not look up."*
 
-### Three Ways to Complete the Ritual
+<details>
+<summary><strong>Three Ways to Complete the Ritual</strong></summary>
 
 **Option A: Defensive Hold (not a winnable fight at Level 5)**
 
@@ -522,8 +586,13 @@ A long silence. Then:
 
 This gives advantage on all Skill Challenge rolls.
 
+</details>
 
-## Conclusion
+</details>
+
+
+<details>
+<summary><strong>Conclusion</strong></summary>
 
 **If the spear is destroyed:**
 
@@ -557,8 +626,8 @@ Add this to the Session 4 opening tracking table:
 | Was the Session 3 ritual successful? | Yes: party carries spear fragments in Thusnelda's clay jar. No: party carries the whole spear. The antechamber scenes work the same either way. |
 :::
 
-
-### Citizenship Elevation: Session 3 Window
+<details>
+<summary><strong>Citizenship Elevation: Session 3 Window</strong></summary>
 
 After the spear is destroyed and the party returns to Corvinus' reach (whether at the fort, in the field, or through a messenger he sends), Corvinus does something unexpected. He files papers.
 
@@ -580,11 +649,16 @@ This window closes at Session 4 if the papers are not signed and returned. Corvi
 **If the ritual failed:** Corvinus cannot file citizenship papers while the party is still in the field with a cursed spear and a siege beginning. The Session 3 citizenship window defers to the end of Session 4. The papers arrive during Session 4's conclusion scene rather than as a separate inter-session moment. The eligibility criteria are unchanged; only the timing shifts.
 :::
 
+</details>
+
+</details>
 
 
-## DM Notes
+<details>
+<summary><strong>DM Notes</strong></summary>
 
-### OGAS This Session
+<details>
+<summary><strong>OGAS This Session</strong></summary>
 
 **Vercingetorix the Red** *(if present)*
 - **Objective:** Protect his people
@@ -610,14 +684,20 @@ This window closes at Session 4 if the papers are not signed and returned. Corvi
 - **Agenda:** Two specific chieftains in the warband confederation owe Brutus money and old favors. They are the siege's actual organizers. Vercingetorix does not know this -- if he did, it would reframe his whole understanding of the siege. Sigrun (the Germanic trader in the vicus) knows one name if the party reaches her before leaving for the forest.
 - **Secret:** Does not know about the grove ritual. His intelligence ends at the treeline. He is acting on incomplete information -- if he knew the party was attempting to destroy the spear entirely, he would not have launched the siege; he would have waited for a more controllable outcome.
 
-### The Influenced NPC — Private Note
+</details>
+
+<details>
+<summary><strong>The Influenced NPC — Private Note</strong></summary>
 
 At session start, pass the influenced player this folded note:
 *"You woke last night and stood beside the spear for two hours. You don't remember doing this. The spear feels warm when you're near it. It has been making an argument, quietly, that makes a certain kind of sense: the power in this weapon could protect the people you care about. You haven't told anyone. You're not sure you're wrong."*
 
 This player should roleplay subtle changes — nothing dramatic until the ritual. The revelation should feel earned, not shocking.
 
-### The Sacrifice — What Works
+</details>
+
+<details>
+<summary><strong>The Sacrifice — What Works</strong></summary>
 
 The grove is a mirror. It reflects what a character actually values versus what they claim to value. If a player tries to sacrifice something they don't care about, Thusnelda will know immediately:
 
@@ -627,7 +707,10 @@ The DM should know each character's central motivation (from Session 0) and gent
 
 The sacrifice is permanent. Honor it.
 
-### DM Guidance: Reading the Grove's Response
+</details>
+
+<details>
+<summary><strong>DM Guidance: Reading the Grove's Response</strong></summary>
 
 The grove does not communicate clearly. It communicates correctly. Here is how to signal acceptance or rejection:
 
@@ -639,7 +722,10 @@ The grove does not communicate clearly. It communicates correctly. Here is how t
 
 **The thing she will not accept:** "I sacrifice my life in the future, if necessary." The grove is not interested in conditional sacrifice. The sacrifice must be now, irrevocable, freely given. If a player offers this: Thusnelda looks at them for a moment, then: *"That is not a sacrifice. That is a bet. The grove is not a wager."*
 
-### Commendationes This Session
+</details>
+
+<details>
+<summary><strong>Commendationes This Session</strong></summary>
 
 **Opportunity 1: completing the ritual and destroying the spear.**
 Any character actively present at the grove ritual who contributed to the spear's destruction earns one *commendatio*. Corvinus awards these through the paperwork window described above, without being told exactly what happened at the grove. He knows the spear is gone. He knows the party came back. That is sufficient.
@@ -650,7 +736,10 @@ If one character was drawn to the spear and another character physically interve
 **Opportunity 3: protecting Vercingetorix in the forest.**
 If the party defended Vercingetorix against any forest encounter (Germanic ambush, wild creature, or any threat during travel) rather than leaving him to manage his own problems, note this for Session 4. It does not become a *commendatio* yet: the reward is Vercingetorix's warriors at the gate in Session 4, and a specific moment in the epilogue.
 
-### Post-Ritual NPC States
+</details>
+
+<details>
+<summary><strong>Post-Ritual NPC States</strong></summary>
 
 After the spear is destroyed (or after a failed ritual), each NPC's position shifts. Use this for Session 4 handoff.
 
@@ -662,7 +751,10 @@ After the spear is destroyed (or after a failed ritual), each NPC's position shi
 | **Tribune Lucius** *(if present)* | Looks at the iron fragments for a long time. Then: *"My father was wrong about what this was. He thought it was a political tool. He didn't know what it was."* First honest thing he's said out loud. | Practical and brisk -- this is how he handles fear. *"We need to move. The Legate is still out there. Being stopped here with a failed ritual and a still-active cursed weapon is a poor position."* |
 | **The influenced NPC** | Whether they broke free or were pulled back during the ritual, they are quiet after. The thread is cut. They feel its absence like a missing tooth -- noticeable even when nothing is wrong. Let them narrate what the absence feels like. | If the ritual failed because of them: they are the most useful person in the group for finding a way to try again. They felt the spear's logic from the inside. They know how it thinks. |
 
-### The Influenced NPC: Roleplay Guidance for That Player
+</details>
+
+<details>
+<summary><strong>The Influenced NPC: Roleplay Guidance for That Player</strong></summary>
 
 At session start, when you pass the private note, also tell the player these three things to do during Scenes 1-3 -- nothing dramatic, nothing that breaks immersion, but things that will be recognisable in hindsight:
 
@@ -676,9 +768,10 @@ These three moments should not be pointed out by the DM. They are for the player
 
 This session should feel like the pressure never fully releases. The investigation of the cold open mystery, the river crossing, the grove itself — there's no safe moment until after the spear is destroyed. Push toward the grove. The forest is hostile to lingering.
 
+</details>
 
-
-### Skill Audit: Session 3
+<details>
+<summary><strong>Skill Audit: Session 3</strong></summary>
 
 **Forest travel: spread skill demands across the table.**
 
@@ -740,7 +833,7 @@ Annotated for ease of reference:
 - *Insight DC 14 (active: resisting the spear's final promise):* The promise is specific to the character holding the spear. The DM should know what it will offer each character from Session 0 material. The promise is not generic fear -- it is the thing the character most wants, offered at the worst possible moment.
 
 <details>
-<summary>**Cascade unlock: Vercingetorix's dying admission** *(DM only)*</summary>
+<summary><strong>Cascade unlock: Vercingetorix's dying admission</strong> (DM only)</summary>
 
 This only becomes available after the ritual, when the party has shown what they are made of. A genuine sacrifice opens it; a token sacrifice does not. That is not a punishment: it is Vercingetorix applying the same standard he applies to everyone.
 
@@ -748,5 +841,9 @@ This only becomes available after the ritual, when the party has shown what they
 - If a player asks directly: he tells them.
 - The admission: he knew three months ago that Brutus's agents were in contact with two of the warband chieftains surrounding Vindolanda. He did not say anything because he was not sure the party was worth trusting with information that would get them killed. Now he is sure.
 - What it opens in Session 4: the party can split the siege by targeting those specific chieftains. Sigrun knows more if they can reach her. Write this in your Session 4 notes now.
+
+</details>
+
+</details>
 
 </details>
