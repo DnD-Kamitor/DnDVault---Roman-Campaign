@@ -191,8 +191,10 @@ Roman legal authority (real orders, genuine Senate power) vs. the truth of what 
 | `Vercingetorix_the_Red.rptok` | 3 | Vercingetorix |
 | `Quintus_Flavius.rptok` | 1, 2 | Quintus Flavius — sleeper agent, do NOT name on map until exposed |
 | `Praetorian_Guard.rptok` | 1, 4 | Tribune's escort (x6) |
-| `Tribal_Warrior.rptok` | 3 | Germanic raiders (x8) |
-| `Berserker.rptok` | 3 | Germanic berserker (x2) |
+| `Germanic_Archer.rptok` | 3 | Germanic archer (×4) — zone 9, behind boulders, suppression |
+| `Germanic_Spearman.rptok` | 3 | Germanic spearman (×6) — ladder assault, framea throw first |
+| `Germanic_Berserker.rptok` | 3 | Germanic berserker (×2) — leads ladders, francisca → reckless greataxe |
+| `Ogre.rptok` | 3 | Ogre (×1) — living battering ram vs. west gate, 3d6+4/round |
 | `Guard.rptok` | 0, 3 | Fort legionaries |
 | `Scout.rptok` | 2 | Sentry/patrol |
 | `Brennus.rptok` | 2 | Brennus (vicus tavern) |
@@ -622,7 +624,7 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 | **Beat 1** | Three-directional drums. Torchlight. Varro shouting for walls. Praetorians conspicuously absent. |
 | **Beat 2 — THE MOMENT** | Vercingetorix walks through the breach, calm, through chaos, and looks at the party. *"I came for the God-Killer. I did not come for you."* |
 | **Beat 3** | How the party handles Vercingetorix determines their diplomatic position for Sessions 3–5. The drums stop. Tribune appears. |
-| **XP / reward** | Phase 1–2 enemies: 100 XP per Tribal Warrior, 450 XP per Berserker. Vercingetorix: 1800 XP killed / 800 XP talked down or neutral end. |
+| **XP / reward** | Archer ×4: 50 XP each (200 total). Spearman ×6: 100 XP each (600 total). Berserker ×2: 450 XP each (900 total). Ogre ×1: 450 XP. Vercingetorix: 1800 XP killed / 800 XP talked down. Phase 1–2 total: 2150 XP. |
 | **If they skip** | Cannot be skipped — raid happens regardless |
 | **Three clues** | ① Tribune moves to principia immediately (Perception DC 14) · ② Drums synchronized from three directions — staged (Survival DC 12) · ③ Varro after raid: "They defended the artifact. Ask yourself why." |
 | **Handouts** | None |
@@ -688,21 +690,37 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 <details>
 <summary>📄 Encounter Details</summary>
 
-**Tribal Warrior** ×12 (waves across Phase 1–2) — CR 1/2 · 100 XP each
+**Germanic Archer** ×4 (zone 9, behind boulders — Phases 1–2) — CR 1/4 · 50 XP each
 
-> **AC** 12 · **HP** 11 (2d8+2) · **Speed** 30 ft
+> **AC** 11 (13 with half cover) · **HP** 11 · **Speed** 30 ft · STR 11 DEX 14 CON 12 INT 8 WIS 11 CHA 8
 >
-> | STR | DEX | CON | INT | WIS | CHA |
-> |---|---|---|---|---|---|
-> | 16 (+3) | 12 (+1) | 13 (+1) | 9 (−1) | 11 (+0) | 9 (−1) |
->
-> **Greataxe.** +5 to hit, reach 5 ft. *Hit:* 9 (1d12+3) slashing.
+> **Shortbow** +4 to hit, 80/320 ft. *Hit:* 5 (1d6+2) piercing. Half cover from boulders: attacker needs AC 13. Pack Tactics (advantage when ally within 5 ft of target). Retreats if engaged in melee — they are harassers. Macro: `germanic_archer_attacks.mts`
 
-**Berserker** ×2 (on ladders, Phase 1) — CR 2 · 450 XP each
+**Germanic Spearman** ×6 (ladder climbers — Phase 1, reaching wall Phase 2) — CR 1/2 · 100 XP each
 
-> **AC** 13 · **HP** 67 (9d8+27) · **Speed** 30 ft
+> **AC** 13 (hide + shield) · **HP** 16 · **Speed** 30 ft · STR 15 DEX 12 CON 13 INT 8 WIS 11 CHA 8
 >
-> **Greataxe.** +5 to hit. *Hit:* 9 (1d12+3). Reckless Attack. Danger Sense.
+> **Framea (thrown)** +4 to hit, 30/120 ft. *Hit:* 5 (1d6+2) piercing — throw before ladder.  
+> **Framea (melee)** +4 to hit, reach 5 ft. *Hit:* 5 (1d6+2) or 6 (1d8+2) two-handed.  
+> **Seax** +4 to hit. *Hit:* 4 (1d4+2) piercing (light, backup).  
+> Pack Tactics. On ladder: half speed (15 ft/round), no Dash, no reaction, shield slung (AC 12). Macro: `germanic_spearman_attacks.mts`
+
+**Germanic Berserker** ×2 (leads ladders — turn 1 francisca throw, then reckless greataxe at parapet) — CR 2 · 450 XP each
+
+> **AC** 13 (hide) · **HP** 67 (9d8+27) · **Speed** 30 ft · STR 16 DEX 12 CON 17 INT 9 WIS 11 CHA 9
+>
+> **Francisca (thrown)** +5 to hit, 20/60 ft. *Hit:* 6 (1d6+3) slashing — throw before mounting ladder. On hit: DC 12 Acrobatics or target loses shield bonus until bonus action to reseat.  
+> **Greataxe (normal)** +5 to hit. *Hit:* 10 (1d12+3) slashing.  
+> **Greataxe (Reckless)** roll 2d20 take higher. Same damage. All attacks against berserker have advantage until his next turn.  
+> Danger Sense: advantage on Dex saves vs. effects he can see (ballista, oil flasks). Macro: `germanic_berserker_attacks.mts`
+
+**Ogre** ×1 (living battering ram — west gate, automatic each round) — CR 2 · 450 XP
+
+> **AC** 11 (hide) · **HP** 59 (7d10+21) · **Speed** 40 ft · Large · STR 19 DEX 8 CON 16 INT 5 WIS 7 CHA 7
+>
+> **Battering Ram (automatic, each round).** Gate takes 3d6+4 bludgeoning (avg 14). Gate HP 60 — breaches in ~3 rounds if uncontested. Portcullis HP 60 (AC 20). Can be targeted through arrow slits: 3/4 cover (AC 15, +5 Dex saves).  
+> **Greatclub** +6 to hit, reach 5 ft. *Hit:* 13 (2d8+4) bludgeoning. **Javelin** +6 to hit, 30/120 ft. *Hit:* 11 (2d6+4) piercing (carries 3).  
+> INT 5: cannot be tricked or deceived. Does not pursue. Gate. Gate. Gate. Macro: `ogre_attacks.mts`
 
 **Vercingetorix the Red** ×1 — CR 5 (Gladiator) · 1800 XP killed / 800 XP talked down
 
@@ -717,11 +735,13 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 >
 > *He does not attack first. He walks toward the principia. If the party blocks him without violence, he stops and talks.*
 
-**Initiative (pre-roll):**
-1. Vercingetorix — 14
-2. Berserker A — 12 / Berserker B — 10
+**Initiative (pre-roll — Phase 1 start):**
+1. Vercingetorix — 14 (Phase 3 only, enters when gate falls)
+2. Germanic Berserker A — 12 / Berserker B — 10
 3. Players
-4. Tribal Warriors — 8 (new wave each round Phase 1)
+4. Ogre — 9 (acts automatically each round on gate)
+5. Germanic Spearmen — 8 (new wave mounts ladder each round Phase 1)
+6. Germanic Archers — 6 (shoot from zone 9, stationary)
 
 **Round-by-round guide (Phase 3):**
 - **Round 1:** Vercingetorix enters breach. Speaks his line. Does not attack.
@@ -729,8 +749,10 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 - **Round 3+:** Resolution based on party decision.
 
 **Tactical AI:**
-- Tribal Warriors → outnumbered (fewer than 2 per warrior): fall back to regroup
-- Berserkers → below half HP: Reckless Attack every round
+- Archers → engaged in melee by anyone: fall back immediately, shoot from maximum range
+- Spearmen → ally within 5 ft of target: use Pack Tactics (advantage on attacks). Fall back if outnumbered 2:1
+- Berserkers → below half HP: Reckless Attack every round without fail. They do not retreat
+- Ogre → gate breached: turns and attacks anyone blocking his entry with greatclub. Can be lured away from gate with ranged fire (INT 5 — distracted if hurt repeatedly from a different direction)
 - Vercingetorix → party offers to "let him reach the spear": he stops and genuinely considers; this was not expected
 
 **Terrain:**
@@ -775,7 +797,7 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 □ Varro's Veteran stat block tabbed
 □ Vercingetorix: Gladiator stat block + "does not attack first" committed
 □ Trust track internalized — know what each level unlocks
-□ Initiative pre-rolled: Vercingetorix 14, Berserker A 12, Berserker B 10
+□ Initiative pre-rolled: Vercingetorix 14, Berserker A 12/B 10, Ogre 9, Spearmen 8, Archers 6
 □ Round 2 peak moment committed: he speaks, then the choice
 □ Tribune's movement during alarm: note which direction he goes — this is Clue ②
 □ Transition: "The drums stop. The courtyard is full of wounded soldiers. The Tribune walks through it like it's a corridor."
