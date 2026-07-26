@@ -48,18 +48,12 @@
     "cr": "1",
     "attacks": [
       {
-        "label": "Bite",
-        "atk": 5,
-        "reach": "5 ft.",
-        "dice": "2d6+3",
-        "type": "piercing",
-        "note": "DC 13 STR save or knocked prone."
+        "label": "Bite (Pack Tactics + Prone)",
+        "raw_cmd": "[h: atk=1d20][h: d1=1d6][h: d2=1d6][h: proneroll=1d20]/me <b>CHARGES</b> with bone-crushing force! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL \u2014 tears through armour!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"bites!\"]<br>ATK: [e: atk+5] | DMG: [e: d1+d2+3] piercing (2d6+3)<br>Target STR save: [e: proneroll] vs DC 13 \u2014 [r, if(proneroll>=13): \"<b style='color:green'>stays upright</b>\"; \"<b style='color:#e74c3c'>KNOCKED PRONE \u2014 prone target: all attacks have advantage, dire wolf bonus action to savage (re-roll damage, take higher)</b>\"]<br><i style='color:#8a6030'>Pack Tactics: advantage when any ally within 5ft of target. These are not pets \u2014 the warband released them at the gate when the drums started. They attack the most injured target first (lowest visible HP).</i>"
       }
     ],
-    "traits": [
-      "Pack Tactics: advantage on attacks when an ally is adjacent to target."
-    ],
-    "notes": "CR 1. Pack Tactics. Knock prone on hit (DC 13 STR)."
+    "traits": [],
+    "notes": "CR 1. Pack Tactics. Knock prone DC 13. Released as gate attack vanguard."
   },
   "Boar": {
     "hp": 11,
@@ -2266,19 +2260,12 @@
     "cr": "1/2",
     "attacks": [
       {
-        "label": "Bite",
-        "atk": 5,
-        "reach": "5 ft.",
-        "dice": "2d6+3",
-        "type": "piercing",
-        "note": "DC 13 STR save or target is knocked Prone."
+        "label": "Bite (+ Knock Prone)",
+        "raw_cmd": "[h: atk=1d20][h: d1=1d6][h: d2=1d6][h: proneroll=1d20]/me <b>LUNGES</b> with snapping jaws! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL \u2014 jaw locks on!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 slips on rubble!</b>\"; \"bites!\"]<br>ATK: [e: atk+5] | DMG: [e: d1+d2+3] piercing (2d6+3)<br>Target STR save: [e: proneroll] vs DC 13 \u2014 [r, if(proneroll>=13): \"<b style='color:green'>holds footing</b>\"; \"<b style='color:#e74c3c'>KNOCKED PRONE \u2014 prone = adv on all attacks vs target</b>\"]<br><i style='color:#8a6030'>Worg INT 7 \u2014 understands Norse, sometimes speaks. Speed 50ft \u2014 chases fleeing soldiers. Large: blocks doorways and ladders. Used by the warband as scouts and terror weapons.</i>"
       }
     ],
-    "traits": [
-      "Keen Hearing and Smell: advantage on Perception checks using hearing or smell.",
-      "Large: blocks corridors. Knock prone on bite (DC 13 STR)."
-    ],
-    "notes": "CR 1/2. 26 HP. Faster than a horse. Prone on bite. Large size."
+    "traits": [],
+    "notes": "CR 1/2. Knock prone on bite DC 13 STR. Speed 50ft."
   },
   "Germanic_Archer": {
     "hp": 11,

@@ -196,6 +196,8 @@ Roman legal authority (real orders, genuine Senate power) vs. the truth of what 
 | `Germanic_Berserker.rptok` | 3 | Germanic berserker (×2) — leads ladders, francisca → reckless greataxe |
 | `Ogre.rptok` | 3 | Ogre (×1) — living battering ram vs. west gate, 3d6+4/round |
 | `Druid.rptok` | 3 | Germanic Druid (×2) — chanting, Fog Cloud + Entangle, kill priority |
+| `Worg.rptok` | 3 | Worg (×2) — released at gate Phase 1; bite + knock prone DC 13 STR; INT 7 sometimes speaks Norse |
+| `Dire_Wolf.rptok` | 3 | Dire Wolf (×2) — released Phase 1; Pack Tactics + knock prone; attacks most injured target |
 | `S2_Equipment_Cache.rptok` | 3 | Equipment Cache — place centre courtyard; right-click for supply macro |
 | `Guard.rptok` | 0, 3 | Fort legionaries |
 | `Scout.rptok` | 2 | Sentry/patrol |
@@ -610,6 +612,24 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 ---
 
 <details>
+
+<details>
+<summary>📄 Introducing Brian (new player) — during Scene 3 Phase 1</summary>
+
+**Brian arrives at the wall when the drums start:**
+
+> *A half-orc shoulder-charges through the barracks door and takes the stairs three at a time. No helmet. A very large axe. He plants himself on the parapet next to the party like he has been doing this all his life.*
+>
+> *"Varro sent me," he says. "I was eating."*
+
+He was posted two days ago as a Foederatus. He speaks Latin with a hard accent. He does not explain himself. He acts.
+
+**Mechanics:** Brian enters at full HP, already Raging (started on the stairs). Initiative count 9 first round. Same stats as Ursula — separate Rage and Relentless Endurance counters. His player joins the initiative immediately.
+
+**If asked why he joined:** He doesn't say. Perception DC 13: right forearm has a slave brand, old, scarred over deliberately. He earned his freedom. The legions don't ask questions.
+
+</details>
+
 <summary>📁 Scene 3 — The Raid (Combat)</summary>
 
 *You are eating dinner — or trying to — when the first arrow takes a sentry off the wall.*
@@ -626,7 +646,7 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 | **Beat 1** | Three-directional drums. Torchlight. Varro shouting for walls. Praetorians conspicuously absent. |
 | **Beat 2 — THE MOMENT** | Vercingetorix walks through the breach, calm, through chaos, and looks at the party. *"I came for the God-Killer. I did not come for you."* |
 | **Beat 3** | How the party handles Vercingetorix determines their diplomatic position for Sessions 3–5. The drums stop. Tribune appears. |
-| **XP / reward** | Archer ×4: 50 XP each (200). Spearman ×6: 100 XP each (600). Berserker ×2: 450 XP each (900). Ogre ×1: 450 XP. Druid ×2: 450 XP each (900). Vercingetorix: 1800 XP killed / 800 XP talked down. Phase 1–2 total: 3050 XP. |
+| **XP / reward** | Archer ×4: 50 XP (200). Spearman ×6: 100 XP (600). Berserker ×2: 450 XP (900). Ogre ×1: 450 XP. Druid ×2: 450 XP (900). Worg ×2: 100 XP (200). Dire Wolf ×2: 200 XP (400). Vercingetorix: 1800/800 XP. Phase 1–2 total: 3650 XP. |
 | **If they skip** | Cannot be skipped — raid happens regardless |
 | **Three clues** | ① Tribune moves to principia immediately (Perception DC 14) · ② Drums synchronized from three directions — staged (Survival DC 12) · ③ Varro after raid: "They defended the artifact. Ask yourself why." |
 | **Handouts** | None |
@@ -735,6 +755,18 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 > **Hold Person (2nd level):** WIS save DC 12 or Paralyzed (auto-crit on all hits). Use on party's most dangerous melee fighter.  
 > **Produce Flame (cantrip):** +4 to hit, 30 ft. Hit: 1d8+4 fire. **Thunderwave (1st, emergency):** CON save DC 12 or 2d8 thunder + pushed 10 ft.  
 > Never advance past boulders. Flee if below 10 HP — Germanic morale drops visibly when chanting stops. Macro: `germanic_druid_attacks.mts`
+
+**Worg** ×2 (released at gate Phase 1, run alongside spearmen) — CR 1/2 · 100 XP each
+
+> **AC** 13 · **HP** 26 · **Speed** 50 ft · STR 16 DEX 13 CON 13 INT 7 WIS 11 CHA 8
+>
+> **Bite** +5 to hit. *Hit:* 2d6+3 piercing. DC 13 STR save or knocked Prone (prone = advantage on all attacks vs target). Speed 50ft — runs down anyone who flees. INT 7: understands Norse, sometimes growls words. Large: blocks doorways. Macro: `Worg.rptok`
+
+**Dire Wolf** ×2 (released Phase 1, attack most-injured target) — CR 1 · 200 XP each
+
+> **AC** 14 · **HP** 37 · **Speed** 50 ft · STR 17 DEX 15 CON 15 INT 3 WIS 12 CHA 7
+>
+> **Bite** +5 to hit. *Hit:* 2d6+3 piercing. DC 13 STR save or knocked Prone. Pack Tactics (advantage when ally within 5ft). Bonus action savage on prone target (reroll damage, take higher). These were not pets — released from cages when the drums started. They target the most visibly wounded soldier. Macro: `Dire_Wolf.rptok`
 
 **Vercingetorix the Red** ×1 — CR 5 (Gladiator) · 1800 XP killed / 800 XP talked down
 
