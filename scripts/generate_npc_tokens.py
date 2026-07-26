@@ -288,7 +288,10 @@ CREATURE_STATS = _load_creature_stats()
 
 
 def _npc_attack_cmd(atk, ac, hp, traits):
-    """Generate /me [e:] attack macro — works in untrusted token context."""
+    """Generate /me [e:] attack macro — works in untrusted token context.
+    If attack has 'raw_cmd', use it directly (full custom MTScript)."""
+    if atk.get("raw_cmd"):
+        return atk["raw_cmd"]
     label    = atk.get("label", "Attack")
     bonus    = atk.get("atk", 2)
     dice     = atk.get("dice", "1d6")
