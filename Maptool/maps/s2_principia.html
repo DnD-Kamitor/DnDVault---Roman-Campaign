@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S2 — Principia HQ (Last Stand)</title>
+<style>
+  body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
+  svg { display: block; margin: 0 auto; }
+  .notes { max-width: 1200px; margin: 20px auto 0; }
+  h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+  td, th { padding: 5px 10px; border: 1px solid #2a2018; vertical-align: top; }
+  th { background: #1a1510; color: #c8a850; text-align: left; }
+  tr:nth-child(even) td { background: #141210; }
+  tr:nth-child(odd) td { background: #0d0b08; }
+  .enc { color: #c84040; }
+  .mech { color: #90c880; }
+  .draw { color: #8ab0c8; }
+</style>
+</head>
+<body>
+<!--
+  PRINCIPIA HQ — Last stand if raiders push through via principalis
+  GRID: 60px = 1 sq = 5 ft
+  Canvas: 1200×960  (20 sq wide × 16 sq tall)
+  Orientation: S = top (entrance from via principalis), N = bottom (sacellum rear)
+  Layout:
+    Forecourt (gravel yard):      y=0-240   (sq 0-4)
+    Cross-hall (basilica):        y=240-480  (sq 4-8)
+    Sacellum (standards + pay):   y=480-660  (sq 8-11)
+    Lateral offices:              y=660-960  (sq 11-16)
+  Building wall (outer):          x=0, x=1200 continuous
+  Main doors (S face):            x=540-660, y=0 (entrance, can be barred)
+  All coords multiples of 60.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960">
+<defs>
+  <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.3)" stroke-width="0.8"/>
+  </pattern>
+  <radialGradient id="tglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#c89050" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="sacred" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#e8d870" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#e8d870" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<!-- OUTER WALLS (thick timber, no exterior) -->
+<rect width="1200" height="960" fill="#4a2e10"/>
+
+<!-- FORECOURT (gravel yard, S entry) -->
+<rect x="60" y="60" width="1080" height="180" fill="#b89850"/>
+<!-- Gravel texture suggestion -->
+<line x1="60" y1="100" x2="1140" y2="100" stroke="#a08840" stroke-width="0.5" opacity="0.4"/>
+<line x1="60" y1="140" x2="1140" y2="140" stroke="#a08840" stroke-width="0.5" opacity="0.4"/>
+<line x1="60" y1="180" x2="1140" y2="180" stroke="#a08840" stroke-width="0.5" opacity="0.4"/>
+<!-- Portico columns (timber posts, N side of forecourt) -->
+<rect x="120" y="228" width="20" height="52" fill="#5a3818"/>
+<rect x="240" y="228" width="20" height="52" fill="#5a3818"/>
+<rect x="360" y="228" width="20" height="52" fill="#5a3818"/>
+<rect x="480" y="228" width="20" height="52" fill="#5a3818"/>
+<!-- Door gap -->
+<rect x="660" y="228" width="20" height="52" fill="#5a3818"/>
+<rect x="780" y="228" width="20" height="52" fill="#5a3818"/>
+<rect x="900" y="228" width="20" height="52" fill="#5a3818"/>
+<rect x="1020" y="228" width="20" height="52" fill="#5a3818"/>
+<!-- Column shadow bases -->
+<ellipse cx="130" cy="276" rx="14" ry="5" fill="#3a2008" opacity="0.5"/>
+<ellipse cx="250" cy="276" rx="14" ry="5" fill="#3a2008" opacity="0.5"/>
+<ellipse cx="370" cy="276" rx="14" ry="5" fill="#3a2008" opacity="0.5"/>
+<ellipse cx="490" cy="276" rx="14" ry="5" fill="#3a2008" opacity="0.5"/>
+<ellipse cx="670" cy="276" rx="14" ry="5" fill="#3a2008" opacity="0.5"/>
+<ellipse cx="790" cy="276" rx="14" ry="5" fill="#3a2008" opacity="0.5"/>
+<ellipse cx="910" cy="276" rx="14" ry="5" fill="#3a2008" opacity="0.5"/>
+<ellipse cx="1030" cy="276" rx="14" ry="5" fill="#3a2008" opacity="0.5"/>
+
+<!-- MAIN ENTRANCE DOORS (S face) — heavy timber, can be barred -->
+<rect x="540" y="0" width="120" height="60" fill="#6a4020" stroke="#4a2e10" stroke-width="3"/>
+<line x1="600" y1="0" x2="600" y2="60" stroke="#4a2e10" stroke-width="2.5"/>
+<circle cx="576" cy="30" r="5" fill="#9a8040"/>
+<circle cx="624" cy="30" r="5" fill="#9a8040"/>
+
+<!-- CROSS-HALL / BASILICA (y=240-480) -->
+<rect x="60" y="240" width="1080" height="240" fill="#9a7848"/>
+<!-- Floor planks (E-W running boards) -->
+<line x1="60" y1="280" x2="1140" y2="280" stroke="#7a5828" stroke-width="1" opacity="0.6"/>
+<line x1="60" y1="320" x2="1140" y2="320" stroke="#7a5828" stroke-width="1" opacity="0.6"/>
+<line x1="60" y1="360" x2="1140" y2="360" stroke="#7a5828" stroke-width="1" opacity="0.6"/>
+<line x1="60" y1="400" x2="1140" y2="400" stroke="#7a5828" stroke-width="1" opacity="0.6"/>
+<line x1="60" y1="440" x2="1140" y2="440" stroke="#7a5828" stroke-width="1" opacity="0.6"/>
+<!-- Cross-hall interior wall (N face) -->
+<rect x="60" y="468" width="1080" height="18" fill="#7a5028"/>
+<!-- Passage to sacellum (centre) -->
+<rect x="540" y="468" width="120" height="18" fill="#9a7848"/>
+
+<!-- SACELLUM — Standards Room (y=480-660) -->
+<rect x="300" y="480" width="600" height="180" fill="#8a6838"/>
+<!-- Sacred glow (unit standards / aquila stored here) -->
+<ellipse cx="600" cy="570" rx="80" ry="60" fill="url(#sacred)" opacity="0.8"/>
+<!-- Eagle standard (aquila) -->
+<line x1="600" y1="500" x2="600" y2="640" stroke="#9a8040" stroke-width="3"/>
+<polygon points="600,500 580,530 600,520 620,530" fill="#e8c840" opacity="0.9"/>
+<circle cx="600" cy="500" r="8" fill="#e8d840"/>
+<!-- Flanking standards (signa) -->
+<line x1="540" y1="510" x2="540" y2="640" stroke="#8a7030" stroke-width="2"/>
+<rect x="528" y="510" width="24" height="16" fill="#9a8040"/>
+<line x1="660" y1="510" x2="660" y2="640" stroke="#8a7030" stroke-width="2"/>
+<rect x="648" y="510" width="24" height="16" fill="#9a8040"/>
+<!-- Strongbox (pay chest) beneath standards -->
+<rect x="570" y="620" width="60" height="28" fill="#4a3010" stroke="#9a8040" stroke-width="2" rx="2"/>
+<rect x="590" y="624" width="20" height="8"  fill="#9a8040"/>
+<!-- Sacellum walls -->
+<rect x="300" y="480" width="600" height="8"  fill="#7a5028"/>
+<rect x="300" y="652" width="600" height="8"  fill="#7a5028"/>
+<rect x="300" y="480" width="8"   height="180" fill="#7a5028"/>
+<rect x="892" y="480" width="8"   height="180" fill="#7a5028"/>
+
+<!-- LATERAL OFFICES (y=660-960, flanking sacellum) -->
+<!-- W office -->
+<rect x="60"  y="660" width="240" height="300" fill="#8a6838"/>
+<line x1="60"  y1="720" x2="300" y2="720" stroke="#7a5828" stroke-width="1" opacity="0.5"/>
+<line x1="60"  y1="780" x2="300" y2="780" stroke="#7a5828" stroke-width="1" opacity="0.5"/>
+<line x1="60"  y1="840" x2="300" y2="840" stroke="#7a5828" stroke-width="1" opacity="0.5"/>
+<line x1="60"  y1="900" x2="300" y2="900" stroke="#7a5828" stroke-width="1" opacity="0.5"/>
+<!-- Writing desk -->
+<rect x="100" y="700" width="80" height="50" fill="#6a4820" stroke="#4a2e10" stroke-width="1.5" rx="2"/>
+<rect x="110" y="710" width="60" height="30" fill="#c8b870" stroke="#9a8040" stroke-width="0.5"/>
+<!-- Centre rear (corridor behind sacellum) -->
+<rect x="300" y="660" width="600" height="300" fill="#9a7848"/>
+<!-- N supply room (behind sacellum) -->
+<rect x="300" y="840" width="600" height="60"  fill="#8a6838"/>
+<line x1="300" y1="840" x2="900" y2="840" stroke="#7a5028" stroke-width="2"/>
+<!-- Supply boxes -->
+<rect x="360" y="852" width="40" height="36" fill="#6a4820" stroke="#4a2e10" stroke-width="1"/>
+<rect x="420" y="856" width="50" height="32" fill="#c8b870" stroke="#9a8040" stroke-width="1" rx="1"/>
+<rect x="490" y="852" width="40" height="36" fill="#6a4820" stroke="#4a2e10" stroke-width="1"/>
+<!-- E office -->
+<rect x="900" y="660" width="240" height="300" fill="#8a6838"/>
+<line x1="900" y1="720" x2="1140" y2="720" stroke="#7a5828" stroke-width="1" opacity="0.5"/>
+<line x1="900" y1="780" x2="1140" y2="780" stroke="#7a5828" stroke-width="1" opacity="0.5"/>
+<line x1="900" y1="840" x2="1140" y2="840" stroke="#7a5828" stroke-width="1" opacity="0.5"/>
+<line x1="900" y1="900" x2="1140" y2="900" stroke="#7a5828" stroke-width="1" opacity="0.5"/>
+<!-- Document chest -->
+<rect x="960" y="700" width="70" height="50" fill="#4a3010" stroke="#9a8040" stroke-width="1.5" rx="2"/>
+<rect x="975" y="710" width="40" height="10" fill="#9a8040"/>
+
+<!-- Interior wall lines -->
+<rect x="60"  y="660" width="1080" height="8"  fill="#6a4020"/>
+<rect x="60"  y="660" width="240"  height="8"  fill="#6a4020"/>
+<rect x="900" y="660" width="240"  height="8"  fill="#6a4020"/>
+<rect x="292" y="660" width="16"   height="300" fill="#6a4020"/>
+<rect x="892" y="660" width="16"   height="300" fill="#6a4020"/>
+
+<!-- Torch glows in corners -->
+<ellipse cx="90"  cy="270" rx="32" ry="28" fill="url(#tglow)" opacity="0.5"/>
+<rect x="82" y="256" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="86" cy="254" rx="4" ry="5" fill="#e06020" opacity="0.85"/>
+<ellipse cx="1110" cy="270" rx="32" ry="28" fill="url(#tglow)" opacity="0.5"/>
+<rect x="1102" y="256" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="1106" cy="254" rx="4" ry="5" fill="#e06020" opacity="0.85"/>
+<ellipse cx="90"  cy="700" rx="32" ry="28" fill="url(#tglow)" opacity="0.5"/>
+<rect x="82" y="686" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="86" cy="684" rx="4" ry="5" fill="#e06020" opacity="0.85"/>
+<ellipse cx="1110" cy="700" rx="32" ry="28" fill="url(#tglow)" opacity="0.5"/>
+<rect x="1102" y="686" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="1106" cy="684" rx="4" ry="5" fill="#e06020" opacity="0.85"/>
+
+<!-- GRID (last) -->
+<rect x="0" y="0" width="1200" height="960" fill="url(#grid)"/>
+<!-- Outer building wall frame -->
+<rect x="60" y="60" width="1080" height="900" fill="none" stroke="#4a2e10" stroke-width="4"/>
+<!-- Map border -->
+<rect x="2" y="2" width="1196" height="956" fill="none" stroke="#3a3020" stroke-width="2" rx="3"/>
+
+<!-- COMPASS -->
+<g transform="translate(1166,38)">
+  <circle cx="0" cy="0" r="22" fill="#141210" stroke="#3a3020" stroke-width="1.5"/>
+  <polygon points="0,-18 4,-6 0,-9 -4,-6" fill="#e8d8a8"/>
+  <polygon points="0,18 4,6 0,9 -4,6"    fill="#6a5a48"/>
+  <polygon points="-18,0 -6,4 -9,0 -6,-4" fill="#6a5a48"/>
+  <polygon points="18,0 6,4 9,0 6,-4"    fill="#6a5a48"/>
+  <text x="0" y="-9" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#e8d8a8">N</text>
+</g>
+<!-- Scale -->
+<g transform="translate(856,928)">
+  <rect x="0"   y="0" width="120" height="6" fill="#e8d8a8"/>
+  <rect x="120" y="0" width="120" height="6" fill="#3a3028"/>
+  <rect x="0"   y="0" width="240" height="6" fill="none" stroke="#c8a850" stroke-width="1"/>
+  <text x="0"   y="18" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#8a7858">0</text>
+  <text x="120" y="18" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#8a7858">60ft</text>
+  <text x="240" y="18" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#8a7858">120ft</text>
+</g>
+</svg>
+
+<div class="notes">
+<h2>PRINCIPIA HQ (Section 7) — LAST STAND</h2>
+<p style="font-size:11px;color:#8a7858;">Map oriented: S at top (entrance), N at bottom (sacellum rear). Entrance from via principalis at top.</p>
+<table>
+  <tr><th>Zone</th><th class="enc">Encounter</th><th class="mech">Mechanic</th><th class="draw">Notes</th></tr>
+  <tr><td>Main doors (top centre)</td><td class="enc">Bottleneck — 2 creatures max pass per round</td><td class="mech">Barred from inside: AC 15, HP 30. Open: DC 14 Athletics per attempt (barred) or action (unbarred).</td><td class="draw">Hobgoblins form a rank outside — Martial Advantage fires the moment 2 of them enter.</td></tr>
+  <tr><td>Portico columns</td><td class="enc">3/4 cover positions</td><td class="mech">+5 AC/DEX saves vs ranged. Column: AC 13, HP 20. Each column blocks a 5-ft square.</td><td class="draw">Goblins Nimble Escape behind columns — 10ft dash away after attack, no opportunity attack.</td></tr>
+  <tr><td>Cross-hall (basilica)</td><td class="enc">Main engagement zone</td><td class="mech">Open floor, no cover. Torch light = bright. Wooden floor allows Shove + 10ft slide (DC 13 STR).</td><td class="draw">RALLY here: Cha DC 12, 3 NPCs get 8 temp HP + advantage on next attack (1 round).</td></tr>
+  <tr><td>Sacellum (standards room)</td><td class="enc">Primary raider objective — capture standards</td><td class="mech">Standards = Roman morale. If taken: all Roman NPCs WIS DC 13 or Frightened 1 round. Can be recovered.</td><td class="draw">Aquila eagle standard radiates sacred light: 10ft bright, 20ft dim. Holy ground.</td></tr>
+  <tr><td>Strongbox (pay chest)</td><td class="enc">Orc secondary objective (loot)</td><td class="mech">DC 14 STR or Thieves Tools DC 15 to open. Contains 400gp / commendationes records.</td><td class="draw">Orcs with Aggressive stop here instead of chasing party — 30% chance if no orders.</td></tr>
+  <tr><td>Lateral offices</td><td class="enc">Flanking route through side doors</td><td class="mech">Side doors: unlocked. Bugbears use to flank cross-hall from N. Surprise Attack if unseen.</td><td class="draw">Investigation DC 13: finds cult correspondence implicating Corvinus. Three-clue rule: clue 3 of 3.</td></tr>
+</table>
+<h2>GRID</h2>
+<table><tr><td>60 px/sq · 20×16 sq · S at top = entrance · Load after raider push through via principalis</td></tr></table>
+</div>
+</body>
+</html>

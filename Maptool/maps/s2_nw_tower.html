@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S2 — NW Corner Tower (Archer Platform)</title>
+<style>
+  body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
+  svg { display: block; margin: 0 auto; }
+  .notes { max-width: 1200px; margin: 20px auto 0; }
+  h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+  td, th { padding: 5px 10px; border: 1px solid #2a2018; vertical-align: top; }
+  th { background: #1a1510; color: #c8a850; text-align: left; }
+  tr:nth-child(even) td { background: #141210; }
+  tr:nth-child(odd) td { background: #0d0b08; }
+  .enc { color: #c84040; }
+  .mech { color: #90c880; }
+  .draw { color: #8ab0c8; }
+</style>
+</head>
+<body>
+<!--
+  NW CORNER TOWER — Phase 1 archery platform + wall defence (Section 1)
+  GRID: 60px = 1 sq = 5 ft
+  Canvas: 1200×960  (20 sq wide × 16 sq tall)
+  Layout:
+    Exterior (forest/approach): top-left quarter (y=0-480, x=0-360)
+    N palisade wall (E-W): y=420-480, x=360-1200
+    W palisade wall (N-S): x=360-420, y=0-420 + y=480-960
+    NW Tower (corner block): x=300-480, y=360-540 (3sq × 3sq footprint)
+    Wall walkway (interior side): 1 sq wide behind wall
+    Interior barracks area: x=420-1200, y=540-960
+  All coords multiples of 60.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960">
+<defs>
+  <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.28)" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="ph" x="360" y="420" width="28" height="60" patternUnits="userSpaceOnUse">
+    <rect x="0" y="0" width="27" height="60" fill="#4a2e10"/>
+    <rect x="27" y="0" width="1"  height="60" fill="#6a4820"/>
+  </pattern>
+  <pattern id="pv" x="360" y="0" width="60" height="28" patternUnits="userSpaceOnUse">
+    <rect x="0" y="0" width="60" height="27" fill="#4a2e10"/>
+    <rect x="0" y="27" width="60" height="1"  fill="#6a4820"/>
+  </pattern>
+  <radialGradient id="tglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#c89050" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="fire" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#e08020" stop-opacity="0.9"/>
+    <stop offset="70%" stop-color="#e06010" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#e06010" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<!-- EXTERIOR — forest / approach zone (NW quadrant) -->
+<rect width="1200" height="960" fill="#1d1a10"/>
+<!-- Forest ground (exterior of fort) -->
+<rect x="0" y="0" width="420" height="420" fill="#1d1a10"/>
+<!-- Forest trees (exterior NW) -->
+<circle cx="60"  cy="60"  r="34" fill="#243018"/><circle cx="60"  cy="60"  r="20" fill="#1a2410"/>
+<circle cx="180" cy="40"  r="28" fill="#1e2a12"/>
+<circle cx="40"  cy="200" r="30" fill="#243018"/>
+<circle cx="200" cy="220" r="26" fill="#1e2a12"/>
+<circle cx="80"  cy="350" r="28" fill="#243018"/>
+<circle cx="260" cy="340" r="22" fill="#1e2a12"/>
+<circle cx="330" cy="100" r="24" fill="#243018"/>
+<!-- Raider approach tracks (dirt paths in forest) -->
+<line x1="0"   y1="300" x2="300" y2="420" stroke="#3a3018" stroke-width="8" opacity="0.4"/>
+<line x1="80"  y1="0"   x2="360" y2="360" stroke="#3a3018" stroke-width="6" opacity="0.3"/>
+
+<!-- FORT INTERIOR GROUND (SE quadrant + E strip + S strip) -->
+<rect x="420" y="480" width="780" height="480" fill="#c0a860"/>
+<rect x="420" y="0"   width="780" height="420" fill="#1d1a10"/>
+
+<!-- WALL WALKWAY — interior rampart surface (1 sq wide inside palisade) -->
+<!-- N wall walkway: y=480-540, x=420-1200 -->
+<rect x="420" y="480" width="780" height="60" fill="#b8a050"/>
+<!-- W wall walkway: x=420-480, y=540-960 -->
+<rect x="420" y="540" width="60"  height="420" fill="#b8a050"/>
+
+<!-- INTERIOR BARRACKS (canvas tents, SE area) -->
+<rect x="540" y="600" width="240" height="140" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="660" y1="600" x2="660" y2="740" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="540" y1="670" x2="780" y2="670" stroke="#9a8840" stroke-width="1"/>
+<rect x="840" y="600" width="240" height="140" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="960" y1="600" x2="960" y2="740" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="840" y1="670" x2="1080" y2="670" stroke="#9a8840" stroke-width="1"/>
+<rect x="540" y="780" width="540" height="120" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="810" y1="780" x2="810" y2="900" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="540" y1="840" x2="1080" y2="840" stroke="#9a8840" stroke-width="1"/>
+<!-- Valetudinarium / bath house (S-E area near tower) -->
+<rect x="540" y="540" width="160" height="60" fill="#8a7060" stroke="#4a3830" stroke-width="1.5"/>
+<line x1="620" y1="540" x2="620" y2="600" stroke="#4a3830" stroke-width="1.5"/>
+
+<!-- PALISADE WALLS — timber plank pattern -->
+<!-- N wall (y=420-480, x=420-1200) -->
+<rect x="420" y="420" width="780" height="60" fill="url(#ph)"/>
+<!-- W wall (x=360-420, y=0-420 + y=480-960) -->
+<rect x="360" y="0"   width="60"  height="420" fill="url(#pv)"/>
+<rect x="360" y="480" width="60"  height="480" fill="url(#pv)"/>
+
+<!-- NW CORNER TOWER — dark oak timber block -->
+<rect x="300" y="360" width="180" height="180" fill="#3a2008"/>
+<!-- Tower floor platform (raised, fighting platform) -->
+<rect x="316" y="376" width="148" height="148" fill="#4a2e10"/>
+<!-- Tower inner structure (support beams) -->
+<line x1="390" y1="376" x2="390" y2="524" stroke="#5a3818" stroke-width="3"/>
+<line x1="316" y1="450" x2="464" y2="450" stroke="#5a3818" stroke-width="3"/>
+<!-- Ballista / scorpio emplacement on tower top -->
+<rect x="346" y="392" width="80" height="40" fill="#6a4020" stroke="#4a2e10" stroke-width="2" rx="3"/>
+<!-- Ballista arms -->
+<line x1="346" y1="412" x2="286" y2="392" stroke="#5a3818" stroke-width="4"/>
+<line x1="346" y1="412" x2="286" y2="432" stroke="#5a3818" stroke-width="4"/>
+<!-- Ballista bolt (loaded) -->
+<line x1="346" y1="412" x2="286" y2="412" stroke="#9a7838" stroke-width="2.5"/>
+<polygon points="286,406 280,412 286,418" fill="#7a5828"/>
+<!-- Bolt quiver (3 bolts) -->
+<rect x="428" y="394" width="24" height="36" fill="#5a3818" stroke="#4a2e10" stroke-width="1" rx="2"/>
+<line x1="434" y1="394" x2="434" y2="430" stroke="#8a6030" stroke-width="1.5"/>
+<line x1="440" y1="394" x2="440" y2="430" stroke="#8a6030" stroke-width="1.5"/>
+<line x1="446" y1="394" x2="446" y2="430" stroke="#8a6030" stroke-width="1.5"/>
+<!-- Tower access ladder (from interior ground level) -->
+<rect x="458" y="460" width="8"  height="64" fill="#6a4820" stroke="#4a2e10" stroke-width="1"/>
+<line x1="462" y1="468" x2="476" y2="468" stroke="#6a4820" stroke-width="3"/>
+<line x1="462" y1="480" x2="476" y2="480" stroke="#6a4820" stroke-width="3"/>
+<line x1="462" y1="492" x2="476" y2="492" stroke="#6a4820" stroke-width="3"/>
+<line x1="462" y1="504" x2="476" y2="504" stroke="#6a4820" stroke-width="3"/>
+<rect x="468" y="460" width="8"  height="64" fill="#6a4820" stroke="#4a2e10" stroke-width="1"/>
+
+<!-- ARROW SLITS on N wall (exterior view, outside-facing) -->
+<!-- These appear as narrow gaps in the palisade pattern, simulated with darker marks -->
+<rect x="480" y="424" width="6" height="44" fill="#1d1a10"/>
+<rect x="600" y="424" width="6" height="44" fill="#1d1a10"/>
+<rect x="720" y="424" width="6" height="44" fill="#1d1a10"/>
+<rect x="840" y="424" width="6" height="44" fill="#1d1a10"/>
+<rect x="960" y="424" width="6" height="44" fill="#1d1a10"/>
+<rect x="1080" y="424" width="6" height="44" fill="#1d1a10"/>
+<!-- Arrow slits on W wall -->
+<rect x="364" y="60"  width="44" height="6" fill="#1d1a10"/>
+<rect x="364" y="180" width="44" height="6" fill="#1d1a10"/>
+<rect x="364" y="300" width="44" height="6" fill="#1d1a10"/>
+<rect x="364" y="540" width="44" height="6" fill="#1d1a10"/>
+<rect x="364" y="660" width="44" height="6" fill="#1d1a10"/>
+<rect x="364" y="780" width="44" height="6" fill="#1d1a10"/>
+<rect x="364" y="900" width="44" height="6" fill="#1d1a10"/>
+
+<!-- Ladder to N wall walkway (interior side) -->
+<rect x="490" y="480" width="8"  height="60" fill="#6a4820" stroke="#4a2e10" stroke-width="1"/>
+<line x1="494" y1="488" x2="510" y2="488" stroke="#6a4820" stroke-width="3"/>
+<line x1="494" y1="500" x2="510" y2="500" stroke="#6a4820" stroke-width="3"/>
+<line x1="494" y1="512" x2="510" y2="512" stroke="#6a4820" stroke-width="3"/>
+<line x1="494" y1="524" x2="510" y2="524" stroke="#6a4820" stroke-width="3"/>
+<rect x="502" y="480" width="8"  height="60" fill="#6a4820" stroke="#4a2e10" stroke-width="1"/>
+<!-- Ladder to W wall walkway -->
+<rect x="420" y="600" width="60" height="8"  fill="#6a4820" stroke="#4a2e10" stroke-width="1"/>
+<line x1="430" y1="604" x2="430" y2="618" stroke="#6a4820" stroke-width="3"/>
+<line x1="450" y1="604" x2="450" y2="618" stroke="#6a4820" stroke-width="3"/>
+<line x1="470" y1="604" x2="470" y2="618" stroke="#6a4820" stroke-width="3"/>
+<rect x="420" y="616" width="60" height="8"  fill="#6a4820" stroke="#4a2e10" stroke-width="1"/>
+
+<!-- Torch glows — tower corner + wall positions -->
+<ellipse cx="390" cy="360" rx="50" ry="42" fill="url(#tglow)" opacity="0.6"/>
+<rect x="382" y="344" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="386" cy="342" rx="4" ry="5" fill="#e06020" opacity="0.9"/>
+<ellipse cx="720" cy="420" rx="35" ry="28" fill="url(#tglow)" opacity="0.5"/>
+<rect x="713" y="406" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="717" cy="404" rx="4" ry="5" fill="#e06020" opacity="0.8"/>
+<ellipse cx="1080" cy="420" rx="35" ry="28" fill="url(#tglow)" opacity="0.5"/>
+<rect x="1073" y="406" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="1077" cy="404" rx="4" ry="5" fill="#e06020" opacity="0.8"/>
+<!-- Fire bucket (W wall walkway) -->
+<rect x="423" y="562" width="22" height="20" fill="#5a3818" stroke="#4a2e10" stroke-width="1" rx="1"/>
+
+<!-- W GATE breach marker (bottom of W wall) -->
+<rect x="360" y="660" width="60" height="60" fill="#c0a860"/>
+<ellipse cx="390" cy="690" rx="36" ry="28" fill="#e04020" opacity="0.3"/>
+<text x="390" y="694" text-anchor="middle" font-size="9" font-family="Georgia,serif" fill="#e06030" opacity="0.7">GATE</text>
+
+<!-- GRID (last) -->
+<rect x="0" y="0" width="1200" height="960" fill="url(#grid)"/>
+<!-- Palisade outlines over grid -->
+<rect x="360" y="420" width="840" height="60"  fill="none" stroke="#4a2e10" stroke-width="3"/>
+<rect x="360" y="0"   width="60"  height="420" fill="none" stroke="#4a2e10" stroke-width="3"/>
+<rect x="360" y="480" width="60"  height="480" fill="none" stroke="#4a2e10" stroke-width="3"/>
+<!-- Tower frame -->
+<rect x="300" y="360" width="180" height="180" fill="none" stroke="#3a2008" stroke-width="4"/>
+<!-- Map border -->
+<rect x="2" y="2" width="1196" height="956" fill="none" stroke="#3a3020" stroke-width="2" rx="3"/>
+
+<!-- COMPASS -->
+<g transform="translate(1166,38)">
+  <circle cx="0" cy="0" r="22" fill="#141210" stroke="#3a3020" stroke-width="1.5"/>
+  <polygon points="0,-18 4,-6 0,-9 -4,-6" fill="#e8d8a8"/>
+  <polygon points="0,18 4,6 0,9 -4,6"    fill="#6a5a48"/>
+  <polygon points="-18,0 -6,4 -9,0 -6,-4" fill="#6a5a48"/>
+  <polygon points="18,0 6,4 9,0 6,-4"    fill="#6a5a48"/>
+  <text x="0" y="-9" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#e8d8a8">N</text>
+</g>
+<!-- Scale -->
+<g transform="translate(856,928)">
+  <rect x="0"   y="0" width="120" height="6" fill="#e8d8a8"/>
+  <rect x="120" y="0" width="120" height="6" fill="#3a3028"/>
+  <rect x="0"   y="0" width="240" height="6" fill="none" stroke="#c8a850" stroke-width="1"/>
+  <text x="0"   y="18" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#8a7858">0</text>
+  <text x="120" y="18" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#8a7858">60ft</text>
+  <text x="240" y="18" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#8a7858">120ft</text>
+</g>
+</svg>
+
+<div class="notes">
+<h2>NW CORNER TOWER (Section 1) — PHASE 1 ARCHER PLATFORM</h2>
+<p style="font-size:11px;color:#8a7858;">NW = upper-left. Exterior (forest) occupies top-left. Palisade wall = E-W (top strip) + N-S (left strip). Tower at junction. Interior to right and below.</p>
+<table>
+  <tr><th>Feature</th><th class="enc">Encounter</th><th class="mech">Mechanic</th><th class="draw">Notes</th></tr>
+  <tr><td>Ballista / scorpio (tower top)</td><td class="enc">Heavy weapon, 1 operator + 1 loader</td><td class="mech">Bolt: +8 ATK, 3d10 piercing, range 120/480ft, reload requires action. Load = action. Can fire through arrow slits at W gate.</td><td class="draw">Syrian archer operates. Player can redirect fire with TACTICAL COMMAND. Priority target: Ogre at gate.</td></tr>
+  <tr><td>Tower climbing (exterior attack)</td><td class="enc">Raider assault on tower</td><td class="mech">DC 14 Athletics to climb exterior. 3 sq height = 15ft. Shove from top = 1d6 fall damage + prone.</td><td class="draw">Hobgoblins coordinate (Martial Advantage on climber + ally on ground adjacent). Watch for this.</td></tr>
+  <tr><td>Arrow slits (palisade wall)</td><td class="enc">Defender ranged position</td><td class="mech">3/4 cover (+5 AC/DEX). Opponent on ground has cover but can target slit: AC 16 vs attacks.</td><td class="draw">SUPPRESSION FIRE from slit: raider must CON DC 12 or use Dash action to advance (no attack).</td></tr>
+  <tr><td>Tower ladder (interior)</td><td class="enc">Choke point if tower falls</td><td class="mech">Ladder: DC 12 Athletics, counts as difficult terrain (half speed). One creature/sq. Push off: STR contested.</td><td class="draw">If tower is taken, raiders get Elevation Advantage on the wall walkway — can fire into interior freely.</td></tr>
+  <tr><td>Wall walkway (rampart)</td><td class="enc">Defender movement highway</td><td class="mech">1 sq wide. Speed not reduced on walkway. Free attack if enemy climbs over palisade: +2 ATK (high ground).</td><td class="draw">LEADER can call COVER! as reaction: up to 3 defenders on walkway drop to prone (AC+5 vs ranged) at cost of attacks.</td></tr>
+  <tr><td>W gate breach marker (bottom)</td><td class="enc">Secondary angle on gate</td><td class="mech">Tower ballista: clear LOS to gate from 90° angle. Bolts ignore gate HP (direct hit on ogre not gate timber).</td><td class="draw">Elevation Advantage: advantage on all ranged attacks vs targets at ground level outside fort.</td></tr>
+</table>
+<h2>CROSSFIRE TABLE (from NW tower)</h2>
+<table>
+  <tr><th>Target</th><th>Range</th><th class="mech">Notes</th></tr>
+  <tr><td>Ogre (W gate, ground)</td><td>~60ft</td><td class="mech">Elevation Advantage. Ballista: 3d10+8. Arrow: 1d8+5. Priority call from leader = FOCUS FIRE shout.</td></tr>
+  <tr><td>Goblin skirmishers (N approach)</td><td>30-100ft</td><td class="mech">Fast-moving. SUPPRESSION FIRE vs crowd DC 12 CON — hit 1d4 goblins in same sq with area denial.</td></tr>
+  <tr><td>Worg (circling N wall)</td><td>40-80ft</td><td class="mech">Size Large, no cover from outside. Called shot: attack rear legs — DC 15 to hit, Speed -20ft if hit.</td></tr>
+</table>
+<h2>GRID</h2>
+<table><tr><td>60 px/sq · 20×16 sq · NW = exterior · Tower footprint 3×3 sq · Walkway 1 sq wide · Exterior = forest ground</td></tr></table>
+</div>
+</body>
+</html>

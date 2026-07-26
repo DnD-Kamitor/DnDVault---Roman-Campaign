@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S2 — Via Principalis Interior (Post-Breach)</title>
+<style>
+  body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
+  svg { display: block; margin: 0 auto; }
+  .notes { max-width: 1200px; margin: 20px auto 0; }
+  h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+  td, th { padding: 5px 10px; border: 1px solid #2a2018; vertical-align: top; }
+  th { background: #1a1510; color: #c8a850; text-align: left; }
+  tr:nth-child(even) td { background: #141210; }
+  tr:nth-child(odd) td { background: #0d0b08; }
+  .enc { color: #c84040; }
+  .mech { color: #90c880; }
+  .draw { color: #8ab0c8; }
+</style>
+</head>
+<body>
+<!--
+  VIA PRINCIPALIS INTERIOR — Phase 2 combat (after W gate falls)
+  GRID: 60px = 1 sq = 5 ft
+  Canvas: 1200×960  (20 sq wide × 16 sq tall)
+  Orientation: W = left (breach entry), E = right, N = top, S = bottom
+  Via principalis road: y=420-540  (sq 7-9, centre y=480)
+  N barracks tents: y=0-420       (sq 0-7)
+  S principia/praetorium: y=540-960 (sq 9-16)
+  W entry (breach): x=0 open gap
+  Barricade (overturned cart): x=60-240, y=420-540
+  All coords multiples of 60.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960">
+<defs>
+  <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.28)" stroke-width="0.8"/>
+  </pattern>
+  <radialGradient id="fire" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#e08020" stop-opacity="0.9"/>
+    <stop offset="70%" stop-color="#e06010" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#e06010" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="tglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#c89050" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<!-- GROUND — compacted earth road -->
+<rect width="1200" height="960" fill="#b89850"/>
+
+<!-- N BARRACKS ZONE (tent rows, y=0-420) -->
+<rect x="0" y="0" width="1200" height="420" fill="#c0a860"/>
+<!-- Tent block W (3 contubernia) -->
+<rect x="0"   y="0" width="180" height="200" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="90"  y1="0" x2="90"  y2="200" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="0"   y1="100" x2="180" y2="100" stroke="#9a8840" stroke-width="1"/>
+<rect x="0"   y="220" width="180" height="180" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="90"  y1="220" x2="90"  y2="400" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="0"   y1="310" x2="180" y2="310" stroke="#9a8840" stroke-width="1"/>
+<!-- Tent alley N (gap between blocks): implied by spacing, no fill needed -->
+<!-- Tent block C (equipment racks visible between) -->
+<rect x="240" y="0"   width="240" height="200" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="360" y1="0"   x2="360" y2="200" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="240" y1="100" x2="480" y2="100" stroke="#9a8840" stroke-width="1"/>
+<rect x="240" y="220" width="240" height="180" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="360" y1="220" x2="360" y2="400" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="240" y1="310" x2="480" y2="310" stroke="#9a8840" stroke-width="1"/>
+<!-- Weapon rack between tent blocks -->
+<rect x="190" y="10" width="40" height="100" fill="#7a5028" stroke="#4a2e10" stroke-width="1" rx="2"/>
+<rect x="200" y="14" width="4"  height="90"  fill="#9a6840"/>
+<rect x="208" y="14" width="4"  height="90"  fill="#9a6840"/>
+<rect x="216" y="14" width="4"  height="90"  fill="#9a6840"/>
+<!-- Tent block E -->
+<rect x="540" y="0"   width="240" height="200" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="660" y1="0"   x2="660" y2="200" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="540" y1="100" x2="780" y2="100" stroke="#9a8840" stroke-width="1"/>
+<rect x="540" y="220" width="240" height="180" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="660" y1="220" x2="660" y2="400" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="540" y1="310" x2="780" y2="310" stroke="#9a8840" stroke-width="1"/>
+<!-- Tent block NE -->
+<rect x="840" y="0"   width="360" height="200" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="1020" y1="0" x2="1020" y2="200" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="840"  y1="100" x2="1200" y2="100" stroke="#9a8840" stroke-width="1"/>
+<rect x="840" y="220" width="360" height="180" fill="#c8b870" stroke="#9a8840" stroke-width="1.5"/>
+<line x1="1020" y1="220" x2="1020" y2="400" stroke="#9a8840" stroke-width="2.5"/>
+<line x1="840"  y1="310" x2="1200" y2="310" stroke="#9a8840" stroke-width="1"/>
+<!-- Guy ropes (hazardous terrain) — diagonal lines from tent corners -->
+<line x1="180" y1="200" x2="230" y2="220" stroke="#9a8840" stroke-width="0.8" opacity="0.6"/>
+<line x1="480" y1="200" x2="530" y2="220" stroke="#9a8840" stroke-width="0.8" opacity="0.6"/>
+<line x1="780" y1="200" x2="830" y2="220" stroke="#9a8840" stroke-width="0.8" opacity="0.6"/>
+
+<!-- VIA PRINCIPALIS ROAD (y=420-540) -->
+<rect x="0" y="420" width="1200" height="120" fill="#d4ba70"/>
+<!-- Road paving stones — light cross-hatch -->
+<line x1="0" y1="450" x2="1200" y2="450" stroke="#c0a858" stroke-width="0.6" opacity="0.5"/>
+<line x1="0" y1="480" x2="1200" y2="480" stroke="#c0a858" stroke-width="0.6" opacity="0.5"/>
+<line x1="0" y1="510" x2="1200" y2="510" stroke="#c0a858" stroke-width="0.6" opacity="0.5"/>
+
+<!-- BARRICADE — overturned cart (W entry, provides total cover half-sq) -->
+<rect x="60"  y="420" width="180" height="120" fill="#6a4820" stroke="#4a2e10" stroke-width="2.5" rx="4"/>
+<!-- Cart wheel left -->
+<circle cx="90"  cy="480" r="28" fill="none" stroke="#4a2e10" stroke-width="4"/>
+<circle cx="90"  cy="480" r="8"  fill="#5a3818"/>
+<line x1="90" y1="452" x2="90" y2="508" stroke="#4a2e10" stroke-width="3"/>
+<line x1="62" y1="480" x2="118" y2="480" stroke="#4a2e10" stroke-width="3"/>
+<!-- Cart wheel right -->
+<circle cx="210" cy="480" r="28" fill="none" stroke="#4a2e10" stroke-width="4"/>
+<circle cx="210" cy="480" r="8"  fill="#5a3818"/>
+<line x1="210" y1="452" x2="210" y2="508" stroke="#4a2e10" stroke-width="3"/>
+<line x1="182" y1="480" x2="238" y2="480" stroke="#4a2e10" stroke-width="3"/>
+<!-- Spilled grain sacks next to cart -->
+<ellipse cx="270" cy="440" rx="20" ry="10" fill="#c8a858" stroke="#9a8040" stroke-width="1"/>
+<ellipse cx="258" cy="520" rx="18" ry="9"  fill="#c8a858" stroke="#9a8040" stroke-width="1"/>
+
+<!-- FIRE PIT (centre road) -->
+<circle cx="600" cy="480" r="24" fill="#2a1a08"/>
+<ellipse cx="600" cy="480" rx="18" ry="18" fill="url(#fire)" opacity="0.85"/>
+<ellipse cx="600" cy="484" rx="8"  ry="8"  fill="#e08020" opacity="0.7"/>
+
+<!-- SHIELD WALL POSITION (Roman formation marker — ghost outlines) -->
+<rect x="300" y="432" width="60" height="56" fill="none" stroke="#c8a850" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+<rect x="360" y="432" width="60" height="56" fill="none" stroke="#c8a850" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+<rect x="420" y="432" width="60" height="56" fill="none" stroke="#c8a850" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+<!-- Stacked grain sacks (3/4 cover) E side -->
+<rect x="1080" y="432" width="60" height="56" fill="#c8a858" stroke="#9a8040" stroke-width="1.5" rx="3"/>
+<line x1="1080" y1="460" x2="1140" y2="460" stroke="#9a8040" stroke-width="1"/>
+
+<!-- S PRINCIPIA/PRAETORIUM ZONE (y=540-960) -->
+<rect x="0" y="540" width="1200" height="420" fill="#c0a860"/>
+<!-- Principia front wall (N face, heavy timber) -->
+<rect x="0"  y="540" width="1200" height="20" fill="#7a5028" stroke="#4a2e10" stroke-width="2"/>
+<!-- Principia portico columns (timber posts) -->
+<rect x="180" y="540" width="16" height="40" fill="#5a3818"/>
+<rect x="300" y="540" width="16" height="40" fill="#5a3818"/>
+<rect x="420" y="540" width="16" height="40" fill="#5a3818"/>
+<rect x="540" y="540" width="16" height="40" fill="#5a3818"/>
+<!-- Main door (heavy timber, can be barred) -->
+<rect x="564" y="540" width="72" height="60" fill="#6a4020" stroke="#4a2e10" stroke-width="3"/>
+<line x1="600" y1="540" x2="600" y2="600" stroke="#4a2e10" stroke-width="2"/>
+<circle cx="582" cy="570" r="4" fill="#9a8040"/>
+<circle cx="618" cy="570" r="4" fill="#9a8040"/>
+<!-- Principia interior yard (gravel) -->
+<rect x="0" y="600" width="780" height="360" fill="#b89850"/>
+<rect x="0" y="600" width="780" height="360" fill="none" stroke="#8a7040" stroke-width="1" stroke-dasharray="6,4" opacity="0.5"/>
+<!-- Open ground E of via praetoria -->
+<rect x="780" y="540" width="420" height="420" fill="#c0a860"/>
+<!-- Praetorium entrance E side -->
+<rect x="780" y="540" width="420" height="18" fill="#7a5028" stroke="#4a2e10" stroke-width="1.5"/>
+<!-- Stacked timber barricade material (players can use to build) -->
+<rect x="810" y="570" width="100" height="40" fill="#6a4820" stroke="#4a2e10" stroke-width="1" rx="2"/>
+<line x1="810" y1="582" x2="910" y2="582" stroke="#4a2e10" stroke-width="1"/>
+<line x1="810" y1="595" x2="910" y2="595" stroke="#4a2e10" stroke-width="1"/>
+
+<!-- Torch sconces on N road edge -->
+<ellipse cx="60"  cy="420" rx="30" ry="20" fill="url(#tglow)" opacity="0.5"/>
+<rect x="54"  y="408" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="58" cy="406" rx="4" ry="5" fill="#e06020" opacity="0.8"/>
+<ellipse cx="360" cy="420" rx="30" ry="20" fill="url(#tglow)" opacity="0.5"/>
+<rect x="354" y="408" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="358" cy="406" rx="4" ry="5" fill="#e06020" opacity="0.8"/>
+<ellipse cx="780" cy="420" rx="30" ry="20" fill="url(#tglow)" opacity="0.5"/>
+<rect x="774" y="408" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="778" cy="406" rx="4" ry="5" fill="#e06020" opacity="0.8"/>
+<ellipse cx="1080" cy="420" rx="30" ry="20" fill="url(#tglow)" opacity="0.5"/>
+<rect x="1074" y="408" width="8" height="12" rx="1" fill="#7a5028"/>
+<ellipse cx="1078" cy="406" rx="4" ry="5" fill="#e06020" opacity="0.8"/>
+
+<!-- BREACH ENTRY (W edge) — arrow showing raider direction -->
+<polygon points="0,480 50,450 50,510" fill="#e04020" opacity="0.7"/>
+<text x="8" y="480" dominant-baseline="middle" font-size="10" font-family="Georgia,serif" fill="#e04020" opacity="0.8">BREACH</text>
+
+<!-- GRID (last) -->
+<rect x="0" y="0" width="1200" height="960" fill="url(#grid)"/>
+<!-- Map border -->
+<rect x="2" y="2" width="1196" height="956" fill="none" stroke="#3a3020" stroke-width="2" rx="3"/>
+
+<!-- COMPASS -->
+<g transform="translate(1166,38)">
+  <circle cx="0" cy="0" r="22" fill="#141210" stroke="#3a3020" stroke-width="1.5"/>
+  <polygon points="0,-18 4,-6 0,-9 -4,-6" fill="#e8d8a8"/>
+  <polygon points="0,18 4,6 0,9 -4,6"    fill="#6a5a48"/>
+  <polygon points="-18,0 -6,4 -9,0 -6,-4" fill="#6a5a48"/>
+  <polygon points="18,0 6,4 9,0 6,-4"    fill="#6a5a48"/>
+  <text x="0" y="-9" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#e8d8a8">N</text>
+</g>
+<!-- Scale -->
+<g transform="translate(856,928)">
+  <rect x="0"   y="0" width="120" height="6" fill="#e8d8a8"/>
+  <rect x="120" y="0" width="120" height="6" fill="#3a3028"/>
+  <rect x="0"   y="0" width="240" height="6" fill="none" stroke="#c8a850" stroke-width="1"/>
+  <text x="0"   y="18" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#8a7858">0</text>
+  <text x="120" y="18" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#8a7858">60ft</text>
+  <text x="240" y="18" text-anchor="middle" font-size="8" font-family="Georgia,serif" fill="#8a7858">120ft</text>
+</g>
+</svg>
+
+<div class="notes">
+<h2>VIA PRINCIPALIS — POST-BREACH INTERIOR (Sections 10-11)</h2>
+<table>
+  <tr><th>Feature</th><th class="enc">Encounter</th><th class="mech">Mechanic</th><th class="draw">Notes</th></tr>
+  <tr><td>Overturned cart (W)</td><td class="enc">Raiders use it as a launch platform</td><td class="mech">Total cover half-sq. Climb DC 10 to mount. Difficult terrain adjacent.</td><td class="draw">Falls in round 4 if nobody holds it. Goblins nimble-escape behind it.</td></tr>
+  <tr><td>Fire pit (centre road)</td><td class="enc">Hazard or chokepoint</td><td class="mech">5-ft-radius bright light. Enter = DC 12 DEX or 1d6 fire. Extinguish: action, bucket of water.</td><td class="draw">Orcs with Aggressive charge through, taking the damage.</td></tr>
+  <tr><td>Shield wall markers</td><td class="enc">Roman formation position</td><td class="mech">LEADER ACTION: TACTICAL COMMAND — direct 2 NPCs to form rank. AC 15 vs melee from front.</td><td class="draw">Hobgoblin Martial Advantage activates when 2 within 5ft of same target.</td></tr>
+  <tr><td>Stacked sacks (E)</td><td class="enc">3/4 cover position</td><td class="mech">+5 AC/DEX vs ranged. Can be toppled (STR DC 14, action) to reveal archers behind.</td><td class="draw">Syrian archer from tower can fire over sacks at raiders in road.</td></tr>
+  <tr><td>Principia main door</td><td class="enc">Last defensive barrier</td><td class="mech">AC 15, HP 30, immune psychic/poison. STR DC 18 to force open (barred). Keys with Corvinus.</td><td class="draw">If door falls, proceed to s2_principia.html for the final stand.</td></tr>
+  <tr><td>Timber barricade material (E)</td><td class="draw">Build option (free action next to it)</td><td class="mech">1 round action: improvised barricade 10ft wide, half cover (AC 12 vs ranged).</td><td class="draw">Bonus: LEADER can call COVER! (reaction) — 3 NPCs drop behind barricade.</td></tr>
+</table>
+<h2>PHASE 2 SPAWN GUIDE</h2>
+<table>
+  <tr><th>Round</th><th>Creatures enter from W (BREACH)</th><th>Tactic</th></tr>
+  <tr><td>1 (gate falls)</td><td>Goblin ×4 + Orc ×2</td><td>Goblins sprint to cart, Orcs Aggressive-charge. Hobgoblin Sergeant holds back 1 rd.</td></tr>
+  <tr><td>2</td><td>Hobgoblin ×3</td><td>Martial Advantage — flank same target as Orcs. Push toward principia door.</td></tr>
+  <tr><td>3</td><td>Orc ×3 + Bugbear ×1</td><td>Orc Relentless Endurance trigger expected. Bugbear Surprise Attack if ally adjacent.</td></tr>
+  <tr><td>4+</td><td>Worg ×1 (if surviving)</td><td>Worg enters at run, knocks prone on first hit (DC 13 STR). Disrupts shield wall.</td></tr>
+</table>
+<h2>GRID</h2>
+<table><tr><td>60 px/sq · 20×16 sq · 5 ft/sq · W = breach entry · Load after s2_west_gate.html gate falls</td></tr></table>
+</div>
+</body>
+</html>
