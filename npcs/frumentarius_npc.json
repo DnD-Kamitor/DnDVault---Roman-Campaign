@@ -9,10 +9,32 @@
   "ac": 12,
   "ac_note": "civilian clothes",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 10, "DEX": 15, "CON": 10, "INT": 14, "WIS": 14, "CHA": 16},
-  "saving_throw_proficiencies": ["DEX", "WIS"],
-  "skill_proficiencies": ["Deception", "Insight", "Investigation", "Perception", "Stealth"],
-  "skill_overrides": {"Deception": 5, "Insight": 4, "Investigation": 5, "Perception": 6, "Stealth": 4},
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 15,
+    "CON": 10,
+    "INT": 14,
+    "WIS": 14,
+    "CHA": 16
+  },
+  "saving_throw_proficiencies": [
+    "DEX",
+    "WIS"
+  ],
+  "skill_proficiencies": [
+    "Deception",
+    "Insight",
+    "Investigation",
+    "Perception",
+    "Stealth"
+  ],
+  "skill_overrides": {
+    "Deception": 5,
+    "Insight": 4,
+    "Investigation": 5,
+    "Perception": 6,
+    "Stealth": 4
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +42,7 @@
   "languages": "Latin, Greek, Germanic (functional)",
   "macro_file": "",
   "token_color": "#4a4a4a",
-  "portrait_file": "",
+  "portrait_file": "portraits/benoist_marie-guillemine1.png",
   "notes": "Imperial intelligence operative. In the unit under cover. Reports to a handler in Carnuntum who reports to Rome.",
   "gm_notes": "ONLY USE IF NO PLAYER TOOK THE FRUMENTARIUS ROLE. Imperial frumentarius embedded in the vexillatio. Has been observing and filing since the summons went out. Her handler in Carnuntum reports to Rome. Corvinus thinks his documentation control covers him. It does not. She knows about the debt to Brutus. She knows about Metellus's death. She has not yet decided whether the party is an asset or a complication. If a player took Frumentarius: this NPC does not exist. If no player took it: she exists and is working a parallel operation the party will eventually collide with.",
   "session": 1
