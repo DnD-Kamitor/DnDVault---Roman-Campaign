@@ -1,0 +1,175 @@
+---
+title: "Chapter 1 — MapTool Setup"
+subtitle: "Maps, tokens, and handouts per scene — Chapter 1"
+---
+
+## Player Tokens — Every Map
+
+All in `Maptool/tokens/players/`
+
+| File | Character | Class |
+|---|---|---|
+| `Iris.rptok` | Iris | Druid (Circle of Stars) |
+| `Julia_Jana.rptok` | Julia Jana | Cleric (Twilight) |
+| `Tanit_bint_Abdmelqart.rptok` | Tanit bint Abdmelqart | Bard (Eloquence) |
+| `Rivia_Calida_Mendera.rptok` | Rivia Calida Mendera | Artificer (Armorer) |
+| `Ursula_Günther.rptok` | Ursula Günther | Barbarian (Berserker) |
+
+---
+
+## Map 1 — Vault Overview (Reference) {.unnumbered}
+
+**File:** `vault_s1_overview.html` (+ `vault_s1_overview.jpg` for MapTool import)
+
+**Path:** `Maptool/maps/campaign/S1_Blood_and_Omens/`
+
+**Scenes:** DM reference — show players at start of Scene 2 to orient them. Do not reveal room labels.
+
+Full vault layout: Entry Passage → T-junction → Shield Hall (left) / Flooded Gallery (right) → Bone Chamber → Binding Chamber → Runic Corridor → Altar Chamber.
+
+| Token file | Who | Note |
+|---|---|---|
+| — | — | No combat tokens. Reference map only. |
+
+---
+
+## Map 2 — Fort Exterior / Principia (Reference) {.unnumbered}
+
+**File:** `saalburg_plan.jpg`
+
+**Path:** `Maptool/maps/campaign/S1_Blood_and_Omens/`
+
+**Scenes:** Scene 0 (dream flash + principia exterior) · Scene 1 (Legate's meeting) · Scene 4 (surface cult encounter — use courtyard map instead if available)
+
+No battle grid. Use for NPC positioning and player orientation only.
+
+| Token file | Who | Where |
+|---|---|---|
+| `Legate_Corvinus.rptok` | Legate Corvinus | Principia (HQ) |
+| `Tribune_Lucius.rptok` | Tribune Lucius | Praetorium — Scene 1 only, enters partway through |
+| `Augur_Cassia.rptok` | Augur Cassia Liviana | Shrine / augur quarters |
+| `Centurion_Varro.rptok` | Centurion Varro | Principia door |
+| `Paterculus.rptok` | Paterculus | Beside Cassia |
+| `Valeria_the_Medicus.rptok` | Valeria | Valetudinarium |
+| `Quartus.rptok` | Quartermaster Quartus | Horrea |
+| `Rufus_the_Smith.rptok` | Rufus the Smith | Fabrica (workshop) |
+| `Brennus.rptok` | Brennus | Vicus |
+| `Lucilla_the_Postwoman.rptok` | Lucilla | Via praetoria |
+| `Aemilia_Secunda_(Frumentarius).rptok` | Aemilia Secunda | Vicus / east gate |
+| `Guard.rptok` | Gate legionaries | x2 at main gate |
+
+---
+
+## Map 3 — Vault Entry / Sealed Shaft {.unnumbered}
+
+**File:** `DarkTempleEntrancePublic.jpg`
+
+**Path:** `Maptool/maps/campaign/S1_Blood_and_Omens/`
+
+**Scenes:** Scene 2 opening — the sealed hatch beneath the principia flagstones, moment of descent.
+
+Use briefly as players are lowered by rope. Transition to Map 4 once they reach the bottom.
+
+| Token file | Who | Note |
+|---|---|---|
+| `Legate_Corvinus.rptok` | Corvinus | Remains above — do not place below |
+| `Guard.rptok` | Guard on rope | x1 — holds the rope, stays topside |
+| — | Party | Place at shaft entrance |
+
+---
+
+## Map 4 — Vault Interior (All Rooms) {.unnumbered}
+
+**File:** `DungeonVol2Public.jpg`
+
+**Path:** `Maptool/maps/campaign/S1_Blood_and_Omens/`
+
+**Scenes:** Scene 2 — Entry Passage · Shield Hall · Flooded Gallery · Binding Chamber · Runic Corridor. Reuse this map for all connecting corridors. Reposition tokens between rooms. Describe architecture verbally; sketch the T-junction on paper for players.
+
+**Vault branching:** At the T-junction sketch which branch the party takes. Left = Shield Hall (RP, no combat). Right = Flooded Gallery + Bone Chamber (combat). Both merge at the Binding Chamber.
+
+| Token file | Who | Note |
+|---|---|---|
+| `Skeleton.rptok` | Animated bones | x2 — optional wandering hazard in Entry Passage |
+| `Guard.rptok` | Sicus (trapped legionary) | x1 — placed in Shield Hall, label "Soldier" |
+
+For Bone Chamber and Altar Chamber use the dedicated SVG battle maps (Maps 5 and 6).
+
+---
+
+## Map 5 — Bone Chamber (Battle Map) {.unnumbered}
+
+**File:** `vault_s1_bone_chamber.html` (+ `vault_s1_bone_chamber.jpg`)
+
+**Path:** `Maptool/maps/campaign/S1_Blood_and_Omens/`
+
+**Scenes:** Scene 2 — right branch, Bone Chamber encounter
+
+**Encounter:** 2 Ghouls + 1 Ghast (Hard for 5 players at Level 3)
+
+Ghoul tactics: one drops from ceiling via Wall Crawl Drop (advantage on attack), one engages from floor. Party cannot shield-wall both at once. Ghast triggers Death Scream at 0 HP — DC 13 Wisdom or frightened until end of next turn.
+
+| Token file | Who | Count / Note |
+|---|---|---|
+| `Ghoul.rptok` | Ceiling Ghoul | x1 — place on ceiling wall edge at start |
+| `Ghoul.rptok` | Floor Ghoul | x1 — place at south entrance |
+| `Ghast.rptok` | Ghast | x1 — lurking behind bone pile (center) |
+
+---
+
+## Map 6 — Altar Chamber (Battle Map) {.unnumbered}
+
+**File:** `vault_s1_altar_chamber.html` (+ `vault_s1_altar_chamber.jpg`)
+
+**Path:** `Maptool/maps/campaign/S1_Blood_and_Omens/`
+
+**Scenes:** Scene 3 — Runic Corridor exit into the Altar Chamber
+
+**Encounter:** 1 Wight + 2 Shadows (Deadly for 5 players at Level 3)
+
+Wight speaks when party enters — do not start combat immediately. DC 14 Persuasion (advantage if party holds OTHALAN bone token + contract scroll) lets them exit non-lethally. On first wrong tile in Runic Corridor: Wight draws weapon, Cult Fanatic flanks, one Shadow coalesces behind altar — give the Altar Chamber guardians one free preparation round.
+
+| Token file | Who | Count / Note |
+|---|---|---|
+| `Wight.rptok` | Wight guardian | x1 — at altar base, facing door |
+| `Shadow.rptok` | Shadows | x2 — one each side of altar |
+
+**On success (Persuasion DC 14):** Wight steps aside. Party retrieves the spear. Exit is the shaft at the north wall.
+
+---
+
+## Map 7 — Courtyard (Scene 4 Cult Encounter) {.unnumbered}
+
+**File:** `vault_s1_courtyard.html` (+ `vault_s1_courtyard.jpg`)
+
+**Path:** `Maptool/maps/campaign/S1_Blood_and_Omens/`
+
+**Scenes:** Scene 4 — Return to the Surface. Party emerges from the hatch into the principia courtyard. Cult members have moved in above them.
+
+**Encounter:** 1 Berserker + 2 Cultists of Mars (Easy for 5 players, depleted resources)
+
+Cultists are not here to kill the party — they want the spear. Berserker fights; cultists attempt to grab and run. Marius Coda (the ringleader) is not present — only his men.
+
+| Token file | Who | Count / Note |
+|---|---|---|
+| `Berserker.rptok` | Berserker cultist | x1 — blocks the shaft hatch |
+| `Cultist_of_Mars.rptok` | Cultists of Mars | x2 — flanking positions |
+| `Legionary_(Milites).rptok` | Alarmed legionaries | x4 — arrive round 3 from barracks |
+| `Guard.rptok` | Gate guard | x2 — alerted; arrive round 5 |
+
+---
+
+## Handouts — Print Before Session {.unnumbered}
+
+| File | Give when | Notes |
+|---|---|---|
+| `handouts/handout_01_legates_orders.html` | Scene 1 — Corvinus sets wax tablet down | Slide across table without comment |
+| `handouts/handout_03_omens_observed.html` | Scene 0 — Corvinus says "we lost four men" | Physical prop; players keep and annotate |
+| `handouts/handout_02_vault_inscription.html` | Scene 3 — torchlight reaches altar stone | Read rune names aloud, then slide across |
+| `handouts/handout_12_othalan_bone_token.html` | Scene 2 — Investigation DC 15 in hidden alcove | Hand to player who made the check; they share it |
+| `handouts/handout_15_marcomanni_vision.html` | Scene 2 — first touch of boar shield | Hand face-down; say nothing |
+| `handouts/handout_16_cherusci_vision.html` | Scene 2 — first touch of three-fingered-hand shield | Hand face-down; say nothing |
+| `handouts/handout_17_suebi_vision.html` | Scene 2 — first touch of serpent shield | Hand face-down; say nothing |
+| `handouts/handout_18_nine_unnamed.html` | Scene 2 — examine the nine smallest unmarked shields | Pause. "Nobody knows. Not even Rome." |
+
+Open each HTML file in browser, Ctrl+P to print. Standalone — no internet needed after fonts load.

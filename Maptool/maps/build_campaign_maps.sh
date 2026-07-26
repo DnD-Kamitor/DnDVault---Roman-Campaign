@@ -25,6 +25,26 @@ copy_map() {
 }
 
 # ---------------------------------------------------------------------------
+# Copy a custom SVG/HTML battle map from Maptool/maps/
+# Also copies the companion .jpg if it exists.
+# ---------------------------------------------------------------------------
+copy_svg() {
+  local slug="$1" dest_dir="$2"
+  local html="$SCRIPT_DIR/${slug}.html"
+  local jpg="$SCRIPT_DIR/${slug}.jpg"
+  if [[ -f "$html" ]]; then
+    cp "$html" "$dest_dir/${slug}.html"
+    echo "   + SVG: ${slug}.html"
+  else
+    echo " [miss] SVG: ${slug}.html"
+  fi
+  if [[ -f "$jpg" ]]; then
+    cp "$jpg" "$dest_dir/${slug}.jpg"
+    echo "   + JPG: ${slug}.jpg"
+  fi
+}
+
+# ---------------------------------------------------------------------------
 # Copy a token by slug — searches named/ then creatures/
 # Handles parenthetical suffixes: "Aemilia_Secunda" matches
 # "Aemilia_Secunda_(Frumentarius).rptok"
@@ -88,10 +108,18 @@ echo "=== Session 1: Blood and Omens ==="
 S="$DEST/S1_Blood_and_Omens"
 mkdir -p "$S"
 
-copy_map DarkTempleEntrance   "$S"
-copy_map DungeonVol2          "$S"
-copy_map DarkTempleInterior   "$S"
+# Dice Grimorium reference maps
+copy_map DarkTempleEntrance   "$S"   # Scene 0 cold open: temple gate
+copy_map DungeonVol2          "$S"   # Scenes 1-3: vault corridors
+copy_map DarkTempleInterior   "$S"   # Scene 3: altar area backup
 
+# Custom SVG battle maps (built from chapter1 scenes)
+copy_svg vault_s1_overview    "$S"   # Full vault layout reference
+copy_svg vault_s1_bone_chamber "$S"  # Scene 2b: 2 Ghouls + 1 Ghast
+copy_svg vault_s1_altar_chamber "$S" # Scene 3: Wight + 2 Shadows
+copy_svg vault_s1_courtyard   "$S"   # Scene 0: outdoor cold open
+
+# Fort reference images (orientation, not battle maps)
 cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/" 2>/dev/null || true
 cp "$FORT_IMGS/saalburg_fort.jpg"     "$S/" 2>/dev/null || true
 cp "$FORT_IMGS/castra_layout.svg"     "$S/" 2>/dev/null || true
@@ -134,11 +162,11 @@ copy_map RiversideVillage     "$S"
 copy_map SmallFarm            "$S"
 copy_map ForestBanditCamp     "$S"
 
-# SVG battle maps (committed to repo)
-cp "$SCRIPT_DIR/s2_north_wall.html" "$S/" 2>/dev/null && echo "   + s2_north_wall.html" || true
-cp "$SCRIPT_DIR/s2_north_wall.jpg"  "$S/" 2>/dev/null && echo "   + s2_north_wall.jpg"  || true
-cp "$SCRIPT_DIR/s2_west_gate.html"  "$S/" 2>/dev/null && echo "   + s2_west_gate.html"  || true
-cp "$SCRIPT_DIR/s2_west_gate.jpg"   "$S/" 2>/dev/null && echo "   + s2_west_gate.jpg"   || true
+# Custom SVG battle maps
+copy_svg s2_fort_overview     "$S"   # Full fort overview reference
+copy_svg s2_approach_north    "$S"   # Scene 1: north approach (pre-raid)
+copy_svg s2_north_wall        "$S"   # Scene 2: Phase 1 wall defense
+copy_svg s2_west_gate         "$S"   # Scene 3: Phase 2 gate assault
 
 cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/" 2>/dev/null || true
 cp "$FORT_IMGS/saalburg_fort.jpg"     "$S/" 2>/dev/null || true
@@ -167,6 +195,7 @@ echo "=== Session 3: Through the Dark Forest ==="
 S="$DEST/S3_Through_the_Dark_Forest"
 mkdir -p "$S"
 
+# Dice Grimorium forest/wilderness maps (road encounters + general forest)
 copy_map ForestPath           "$S"
 copy_map ForestPathVol2       "$S"
 copy_map ForestPathVol3       "$S"
@@ -189,6 +218,12 @@ copy_map SwampBridges         "$S"
 copy_map SwampPath            "$S"
 copy_map HighGroundForest     "$S"
 
+# Custom SVG battle maps
+copy_svg s3_forest_overview    "$S"  # Chapter 3 region overview
+copy_svg s3_forest_path        "$S"  # Scene 1: ambush on the road
+copy_svg s3_germanic_village   "$S"  # Scene 4: Thusnelda's village
+copy_svg s3_farbog_crossing    "$S"  # Scene 3b: Farbog encounter
+
 for slug in Legate_Corvinus Tribune_Lucius Centurion_Varro Vercingetorix_the_Red Thusnelda \
             Titus_Half-Germanic Sigrun_the_Trader Arnulf_the_Firekeeper \
             Edda_the_Spear-Mother Skadi_the_Healer Aldric_the_Gaul; do
@@ -208,6 +243,7 @@ echo "=== Session 4: The God's Demand ==="
 S="$DEST/S4_The_Gods_Demand"
 mkdir -p "$S"
 
+# Dice Grimorium maps
 copy_map CastleWall           "$S"
 copy_map BridgeCheckpoint     "$S"
 copy_map CaveTunnelsVol3      "$S"
@@ -215,6 +251,11 @@ copy_map DungeonVol2          "$S"
 copy_map ForestRuins          "$S"
 copy_map ForestLabyrinthRuins "$S"
 copy_map NatureGoddessTemple  "$S"
+
+# Custom SVG battle maps
+copy_svg s4_fort_siege         "$S"  # Scenes 1-2: siege of Fort Vindolanda
+copy_svg s4_sacred_grove       "$S"  # Scene 3: ritual + stone golems (battle)
+copy_svg s4_sacred_grove_overview "$S" # Scene 3: sacred grove region overview
 
 cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/" 2>/dev/null || true
 cp "$FORT_IMGS/saalburg_fort.jpg"     "$S/" 2>/dev/null || true
@@ -241,6 +282,7 @@ echo "=== Session 5: The Wrath of Mars ==="
 S="$DEST/S5_The_Wrath_of_Mars"
 mkdir -p "$S"
 
+# Dice Grimorium maps
 copy_map CityStreets          "$S"
 copy_map BridgeCheckpoint     "$S"
 copy_map AncientAltar         "$S"
@@ -250,6 +292,11 @@ copy_map DarkTempleInterior   "$S"
 copy_map ForestLabyrinthRuins "$S"
 copy_map NatureGoddessTemple  "$S"
 copy_map IslandRuins          "$S"
+
+# Custom SVG battle maps
+copy_svg s5_mars_vault_overview "$S" # Full vault/temple overview
+copy_svg s5_mars_vault         "$S"  # Scene 1-2: vault descent
+copy_svg s5_mars_confrontation "$S"  # Scene 3: Mars divine confrontation
 
 for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro \
             Vercingetorix_the_Red Thusnelda Senator_Brutus Valeria_the_Medicus \
@@ -267,7 +314,7 @@ done
 echo ""
 echo "=== Summary ==="
 for d in "$DEST"/S*; do
-  maps=$(find "$d" \( -name "*.jpg" -o -name "*.png" -o -name "*.webp" -o -name "*.svg" \) 2>/dev/null | wc -l)
+  maps=$(find "$d" \( -name "*.jpg" -o -name "*.png" -o -name "*.webp" -o -name "*.svg" -o -name "*.html" \) 2>/dev/null | wc -l)
   tokens=$(find "$d" -name "*.rptok" 2>/dev/null | wc -l)
   printf "  %-42s %2d maps  %2d tokens\n" "$(basename "$d")" "$maps" "$tokens"
 done

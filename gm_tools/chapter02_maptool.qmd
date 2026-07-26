@@ -17,35 +17,82 @@ All in `Maptool/tokens/players/`
 
 ---
 
-## Map 1 — Castle Wall {.unnumbered}
+## Scene → Map Quick Reference {.unnumbered}
 
-**File:** `CastleWallPublicJPG.jpg`
-
-**Path:** `maps/dicegrimorium/CastleWall/CastleWallPublic/`
-
-**Scenes:** Scene 0 (Cold Open) · Scene 3 Phase 1 (Wall Defense) · Scene 3 Phase 3 (Vercingetorix Entry)
-
-| Token file | Who | Count / Note |
+| Scene | Map file | Purpose |
 |---|---|---|
-| `Guard.rptok` | Fort legionaries | x4 on wall |
-| `Scout.rptok` | Sextus (dead sentry) | x1 — place prone, Scene 0 only |
-| `Tribal_Warrior.rptok` | Germanic raiders | x8 — add Scene 3 |
-| `Berserker.rptok` | Germanic berserker | x2 — add Scene 3 |
-| `Vercingetorix_the_Red.rptok` | Vercingetorix | x1 — Phase 3 only, enters through breach |
-| `Tribune_Lucius.rptok` | Tribune Lucius | x1 — Phase 3 only, appears immaculate in courtyard |
-| `Praetorian_Guard.rptok` | Tribune's escort | x6 — Phase 3 only, flanking Lucius |
-
-Creature tokens in `Maptool/tokens/npcs/creatures/`
+| Scene 0: Cold Open | `s2_approach_north.html` | Outside north wall — Sextus dead, alarm fires |
+| Scene 1: Tribune Arrives | `City-Gates-Gridded-22x33-MapPublic.jpg` | Gate ceremony — Tribune enters |
+| Scene 2: Investigation | `saalburg_plan.jpg` (ref only) | Fort interior — NPC locations |
+| Scene 3 Phase 1: Wall Defense | `s2_north_wall.html` | Battle grid — wall fighting |
+| Scene 3 Phase 2: Gate Assault | `s2_west_gate.html` | Battle grid — gate breach |
+| Scene 3 Phase 3: Vercingetorix | `CastleWallPublicJPG.jpg` | Vercingetorix enters breach |
+| Scene 4: Tribune's Move | `saalburg_plan.jpg` (ref only) | Praetorium confrontation |
+| Road Encounters (optional) | d8 table below | Frontier road south |
 
 ---
 
-## Map 2 — City Gates {.unnumbered}
+## Map 1 — Fort Overview (Reference) {.unnumbered}
+
+**File:** `s2_fort_overview.html` (+ `s2_fort_overview.jpg`)
+
+**Path:** `Maptool/maps/campaign/S2_Chieftains_Price/`
+
+**Scenes:** Pre-session orientation — show to players before Scene 0. Do not reveal tactical details.
+
+Full fort layout at overview scale: walls, gates, towers, interior buildings. Good for establishing where the north wall and west gate are before combat begins.
+
+| Token file | Who | Note |
+|---|---|---|
+| — | — | Reference only. No combat tokens. |
+
+---
+
+## Map 2 — North Approach (Reference) {.unnumbered}
+
+**File:** `s2_approach_north.html` (+ `s2_approach_north.jpg`)
+
+**Path:** `Maptool/maps/campaign/S2_Chieftains_Price/`
+
+**Scene:** Scene 0 (Cold Open) — outside the north wall, alarm fires on the horizon
+
+Sextus is dead here. Place his token prone on the rampart walk. Alarm fires glow on the hill. Use briefly — transition to north wall battle map when combat begins.
+
+| Token file | Who | Note |
+|---|---|---|
+| `Scout.rptok` | Sextus (dead sentry) | x1 — place prone on wall walk, Scene 0 only |
+| `Guard.rptok` | Wall guards (alarmed) | x2 |
+
+---
+
+## Map 3 — North Wall (Battle Map) {.unnumbered}
+
+**File:** `s2_north_wall.html` (+ `s2_north_wall.jpg`)
+
+**Path:** `Maptool/maps/campaign/S2_Chieftains_Price/`
+
+**Scene:** Scene 3 Phase 1 — Germanic raid, wall defense
+
+22×14 square battle grid (60px/sq = 5 ft.). Towers at each end, crenelated parapet. Raiders attack from outside using ladders; defenders hold the rampart walk.
+
+| Token file | Who | Count / Note |
+|---|---|---|
+| `Guard.rptok` | Fort legionaries | x4 — on wall walk |
+| `Tribal_Warrior.rptok` | Germanic raiders | x8 — outside at ladder base, arriving turn 2 |
+| `Berserker.rptok` | Germanic berserker | x2 — lead climbers |
+| `Centurion_Varro.rptok` | Centurion Varro | x1 — commanding east tower |
+
+---
+
+## Map 4 — City Gates (Photo Reference) {.unnumbered}
 
 **File:** `City-Gates-Gridded-22x33-MapPublic.jpg`
 
-**Path:** `maps/dicegrimorium/CityGates/City Gates Public/`
+**Path:** `Maptool/maps/campaign/S2_Chieftains_Price/`
 
-**Scenes:** Scene 1 (Tribune Arrives) · Scene 3 Phase 2 (West Gate Breach)
+**Scenes:** Scene 1 (Tribune Arrives) · Scene 3 Phase 2 (if using photo instead of west gate SVG)
+
+Use for Scene 1 ceremony (Tribune arrives with escort). For Phase 2 gate combat, prefer `s2_west_gate.html` (built battle grid).
 
 | Token file | Who | Count / Note |
 |---|---|---|
@@ -53,14 +100,38 @@ Creature tokens in `Maptool/tokens/npcs/creatures/`
 | `Praetorian_Guard.rptok` | Tribune's escort | x6 — surrounding Lucius |
 | `Legate_Corvinus.rptok` | Legate Corvinus | x1 — at gate to receive |
 | `Centurion_Varro.rptok` | Centurion Varro | x1 — beside Corvinus |
-| `Quintus_Flavius.rptok` | Quintus Flavius | x1 — **label as "Soldier" until exposed** (Perception DC 15) |
+| `Quintus_Flavius.rptok` | Quintus Flavius | x1 — **label "Soldier" until exposed** (Perception DC 15) |
 | `Guard.rptok` | Gate guards | x4 |
-| `Tribal_Warrior.rptok` | Germanic raiders | x8 — Phase 2 only |
-| `Berserker.rptok` | Germanic berserker | x2 — Phase 2 only |
 
 ---
 
-## Map 3 — Fort Interior (Reference Only) {.unnumbered}
+## Map 5 — West Gate (Battle Map) {.unnumbered}
+
+**File:** `s2_west_gate.html` (+ `s2_west_gate.jpg`)
+
+**Path:** `Maptool/maps/campaign/S2_Chieftains_Price/`
+
+**Scene:** Scene 3 Phase 2 — West Gate Breach
+
+Switch from north wall map when the alarm horn sounds from the west. Vercingetorix's main force hits the gate while the wall party is still occupied.
+
+| Token file | Who | Count / Note |
+|---|---|---|
+| `Tribal_Warrior.rptok` | Germanic raiders | x8 — battering at gate exterior |
+| `Berserker.rptok` | Germanic berserker | x2 — lead assault |
+| `Guard.rptok` | Gate defenders | x4 — inside, holding barricade |
+
+Then Phase 3: Vercingetorix enters through the breach. Switch to `CastleWallPublicJPG.jpg` for the wider courtyard view.
+
+| Token file | Who | Count / Note |
+|---|---|---|
+| `Vercingetorix_the_Red.rptok` | Vercingetorix | x1 — enters through breach |
+| `Tribune_Lucius.rptok` | Tribune Lucius | x1 — appears immaculate in courtyard |
+| `Praetorian_Guard.rptok` | Tribune's escort | x6 — flanking Lucius |
+
+---
+
+## Map 6 — Fort Interior (Reference Only) {.unnumbered}
 
 **File:** `saalburg_plan.jpg`
 
@@ -68,7 +139,7 @@ Creature tokens in `Maptool/tokens/npcs/creatures/`
 
 **Scenes:** Scene 2 (Investigation) · Scene 4 (Tribune's Move)
 
-No battle grid. Use for NPC positioning and player orientation only — no combat here.
+No battle grid. Use for NPC positioning and player orientation only.
 
 | Token file | Who | Where in fort |
 |---|---|---|
@@ -83,6 +154,33 @@ No battle grid. Use for NPC positioning and player orientation only — no comba
 | `Tribune_Lucius.rptok` | Tribune Lucius | Praetorium — Scene 4 |
 | `Legate_Corvinus.rptok` | Legate Corvinus | Praetorium — Scene 4 |
 | `Praetorian_Guard.rptok` | Tribune's escort | x6 blocking Praetorium doors — Scene 4 |
+
+---
+
+## Road Encounters (d8) — Optional {.unnumbered}
+
+After Scene 4, if the party leaves the fort heading south. Roll d8 once per 4 hours of travel.
+
+| d8 | Encounter | Map file |
+|---|---|---|
+| 1 | Abandoned shrine — 3 dead travelers, no wounds, scorch marks (vault corruption) | `RoadAltar.jpg` |
+| 2 | Shadow in the ditch — DC 13 Perception; 1 Shadow attacks at dusk | `RockyRoad-Public.jpg` |
+| 3 | Tribune's outriders — 4 cavalry checking travel papers | `CrossroadsPublic.jpg` |
+| 4 | Gallic merchant caravan — info broker opportunity | `RiversideVillagePublic.jpg` |
+| 5 | Ambushed by bandits (3 + captain) | `ForestBanditCampPublic.jpg` |
+| 6 | Cultist of Mars patrol (1 Berserker + 2 Cultists) | `ForestPathPublic.jpg` |
+| 7 | Small farm — shelter, fresh food, rumor of Germanic movements | `SmallFarmPublic.jpg` |
+| 8 | Mountain pass — nothing happens; add atmosphere only | `MountainPassPublic.jpg` |
+
+All road map files are in `Maptool/maps/campaign/S2_Chieftains_Price/`.
+
+| Token file | Scene | Note |
+|---|---|---|
+| `Shadow.rptok` | Enc 2 | 1× shadow — keep invisible until dusk triggers |
+| `Cultist_of_Mars.rptok` | Enc 6 | x2 flanking |
+| `Berserker.rptok` | Enc 6 | x1 lead attacker |
+| `Bandit.rptok` | Enc 5 | x3 |
+| `Bandit_Captain.rptok` | Enc 5 | x1 |
 
 ---
 
