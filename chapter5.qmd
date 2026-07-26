@@ -2,26 +2,34 @@
 
 **Applying Guy Sclanders' Methodology**
 
-## Session Overview
+<details>
+<summary><strong>Session Overview</strong></summary>
 
 At dawn the day after the spear descended, Vindolanda stops breathing. The rain halts mid fall, the Germanic siege lines freeze, and the parade ground transforms into black sand under a sky the color of wet iron. Mars steps through the veil above the fort and demands judgment. The final session resolves every promise, betrayal, corruption roll, and sacrifice made across the campaign. The fort is the stage. The god is the audience. The players determine whether Rome earns another sunrise.
 
-**Level:** 7 (final level)  
-**Duration:** 3–4 hours  
-**Key Goal:** Survive Mars' judgment and define the future of Vindolanda (and Rome by extension)  
+**Level:** 7 (final level)
+**Duration:** 3–4 hours
+**Key Goal:** Survive Mars' judgment and define the future of Vindolanda (and Rome by extension)
 **Theme:** Duty, ambition, fate, loyalty, and divine intervention converge in one arena.
 
-### Guy Sclanders' Principles Applied
+<details>
+<summary><strong>Guy Sclanders' Principles Applied</strong></summary>
 
 - **Strong Opening:** The fort itself becomes the divine arena before anyone can act. Everyone witnesses the arrival.
 - **Pressure Cooker:** Mars offers three trials, each with consequences for NPCs watching above the sand. The cohort, the vicus, and Vercingetorix's warriors all hold their breath while a god questions their champions.
 - **Meaningful Choices:** Fight, debate, or sacrifice. No option is safe. Each choice keys off previous player actions.
 - **Three Clue Rule:** Clues from Session 4's procession have already foreshadowed what Mars wants: kneeling witnesses, honest sacrifices, and the spear reaching his altar.
 
+</details>
 
-## Pre-Session Preparation
+</details>
 
-### Continuity Tracker (Update before play)
+
+<details>
+<summary><strong>Pre-Session Preparation</strong></summary>
+
+<details>
+<summary><strong>Continuity Tracker</strong> (Update before play)</summary>
 
 | Session | Choice | Session 5 effect |
 |---|---|---|
@@ -34,13 +42,19 @@ At dawn the day after the spear descended, Vindolanda stops breathing. The rain 
 | S4 | Corvinus or Lucius betrayals | If Corvinus tried to seize the spear, his soldiers arrive hostile and may interrupt the arena if Mars is displeased. If Lucius sabotaged, Mars begins angrier (DCs +2). |
 | Any | Corruption level 5 PC exists | Mars uses them as his mouthpiece unless redeemed. See DM Notes. |
 
-### Props & Handouts
+</details>
+
+<details>
+<summary><strong>Props &amp; Handouts</strong></summary>
 
 - **Handout 10: The Mark of Mars** — unchanged, distributed at session end.
 - **Handout 11: Arena Weapon cards** — place face down on the table when Scene 2 begins.
 - **Physical detail:** Dust blackened from charcoal to sprinkle on the map or battlemat to show the parade ground turning to sand.
 
-### Handout Deployment Timeline
+</details>
+
+<details>
+<summary><strong>Handout Deployment Timeline</strong></summary>
 
 | # | Handout | Scene | Trigger | How to present |
 |---|---|---|---|---|
@@ -49,13 +63,19 @@ At dawn the day after the spear descended, Vindolanda stops breathing. The rain 
 
 *All prior handouts (1-9, 12) should be in the party's possession by this session. If any were missed, summarise their contents verbally — do not give the physical handout mid-session-5 without context.*
 
-### Fort Snapshot at Dawn
+</details>
+
+<details>
+<summary><strong>Fort Snapshot at Dawn</strong></summary>
 
 > *Dawn breaks silver. Then the clouds split. The rain stops mid-drop. Every man on the wall blinks and lowers his bow because the arrows of the Germanic archers have frozen in the air. Cassia gasps. The parade ground ripples like water. Sand, black as coal, pushes up through the flagstones, covering everything. The cohort murmurs a single word: "Mars."*
 
 Freeze time for every NPC except the party and whichever allies they designated to witness the ritual (Cassia, Varro, Vercingetorix, Lucius, Corvinus, civilians). These figures stand at the edge of the sand like statues, able to observe but not interfere.
 
-### Maps for This Session
+</details>
+
+<details>
+<summary><strong>Maps for This Session</strong></summary>
 
 Maps are in `Maptool/maps/campaign/S5_The_Wrath_of_Mars/`. Session 5 is the divine confrontation — maps should feel isolated and vast.
 
@@ -69,8 +89,13 @@ Maps are in `Maptool/maps/campaign/S5_The_Wrath_of_Mars/`. Session 5 is the divi
 | Sacred grove epilogue | `NatureGoddessTemple`, `IslandRuins` | Epilogue scenes only, not trial scenes |
 | Labyrinth ruins | `LabyrinthRuins` | If the party attempts to destroy the spear in the ruins |
 
+</details>
 
-## Scene 0: Cold Open — The Silence Before Judgment
+</details>
+
+
+<details>
+<summary><strong>Scene 0: Cold Open — The Silence Before Judgment</strong></summary>
 
 **Read aloud:**
 
@@ -88,8 +113,11 @@ The party appears at the center of the sand, unarmed except for whatever they ca
 - Arcana DC 14 (passive): The time-freeze around witnesses is not a spell. It is divine stasis -- the god stepping slightly outside the flow of time to conduct judgment within it. The witnesses are not frozen because they are unimportant. They are frozen because they are witnesses. Mars intends this to be on record.
 - Sleight of Hand DC 14 (active: concealing a small weapon on your person before entering the arena): On success, you carry one hidden weapon into the trial. Mars may or may not notice; if used in Option B, narrate it honestly. He will comment either way.
 
+</details>
 
-## Scene 1: Mars Specifies the Trial
+
+<details>
+<summary><strong>Scene 1: Mars Specifies the Trial</strong></summary>
 
 Mars does not monologue. He assesses.
 
@@ -105,10 +133,14 @@ He offers three paths mid-sentence:
 
 Mars states all three without preference. He will accept any. He expects a quick decision. If the party hesitates longer than a minute of table time he chooses Option B.
 
+</details>
 
-## Scene 2: The Trials
 
-### Option A — Champion of the Arena
+<details>
+<summary><strong>Scene 2: The Trials</strong></summary>
+
+<details>
+<summary><strong>Option A — Champion of the Arena</strong></summary>
 
 Mars gestures to the sand. A warrior forms from ashes: armor older than Rome, scars that radiate light, eyes closed until he inhales for the first time in centuries.
 
@@ -149,7 +181,10 @@ Five weapons are arrayed along the sand's edge. Each has a visible cost etched o
 
 > *Fausta kneels, presses her spear butt to the sand, and nods at the party. Mars inclines his head a fraction. The sand drinks her form. The arena falls quiet enough to hear your own pulse.*
 
-### Option B — Trial of Blades (Full Party vs. Mars)
+</details>
+
+<details>
+<summary><strong>Option B — Trial of Blades</strong> (Full Party vs. Mars)</summary>
 
 If chosen, Mars rises. The sky above Vindolanda fractures into burning lines. The Germanic warbands clutch their heads on the frozen walls.
 
@@ -195,7 +230,10 @@ Mars draws a weapon forged from every Roman *pilum* he ever blessed.
 
 > *Mars halts mid swing. He does not pant. He simply stops, looks at the weapon in his hand, looks at you, and nods as if to himself. "Enough." The weapon dissolves. He stands helmetless, and for a moment he resembles an exhausted general after campaign season.*
 
-### Option C — Trial of Voice (Argument)
+</details>
+
+<details>
+<summary><strong>Option C — Trial of Voice</strong> (Argument)</summary>
 
 The party steps forward. Mars sits. The witnesses remain frozen but every heartbeat in the fort listens.
 
@@ -228,8 +266,13 @@ Arguments that anger him: "it was too dangerous," "we had no choice," "Rome need
 
 **Critical success:** Two PCs may accept the title of Chosen later (see Consequences).
 
+</details>
 
-## Scene 3: The Price of Standing Before a God
+</details>
+
+
+<details>
+<summary><strong>Scene 3: The Price of Standing Before a God</strong></summary>
 
 Regardless of option, Mars approaches. Describe him up close with the updated read-aloud (use text from previous version, but now mention fort background).
 
@@ -237,7 +280,8 @@ Regardless of option, Mars approaches. Describe him up close with the updated re
 
 He then lays out the consequences.
 
-### Consequence Menu (choose those that fit)
+<details>
+<summary><strong>Consequence Menu</strong> (choose those that fit)</summary>
 
 - **Mark of Mars:** Handout 10, as written.
 - **The Chosen:** One (or two on crit success) PCs become Chosen. Detail benefits and obligations. Mention Call to War (see DM notes).
@@ -247,8 +291,13 @@ He then lays out the consequences.
 
 Afterwards the black sand recedes. Time resumes. The cohorts collapse to their knees as reality snaps back.
 
+</details>
 
-## Scene 4: Return to Vindolanda
+</details>
+
+
+<details>
+<summary><strong>Scene 4: Return to Vindolanda</strong></summary>
 
 The party never left. They wake or stand where they were on the parade ground. Witness NPCs rush forward. Describe:
 
@@ -256,7 +305,8 @@ The party never left. They wake or stand where they were on the parade ground. W
 
 Allow each player a short epilogue speech describing the next hour: speeches to the cohort, promises to the vicus, treatment of prisoners.
 
-### Citizenship Resolution
+<details>
+<summary><strong>Citizenship Resolution</strong></summary>
 
 If Lucius sent the dispatch in Session 4, a response arrives during Scene 4's aftermath. Not immediately: it arrives while the party is in the middle of something else, carried by a rider who has been waiting at the gate since dawn. The timing is deliberate: it lands when the crisis is over but before the epilogue, in the quiet after the extraordinary thing.
 
@@ -273,8 +323,13 @@ What this means in practice:
 
 This moment belongs to the player. Do not narrate what their character feels. Ask them.
 
+</details>
 
-## Scene 5: Epilogue — One Year Later
+</details>
+
+
+<details>
+<summary><strong>Scene 5: Epilogue — One Year Later</strong></summary>
 
 Run the epilogue similar to the previous version but grounded at the fort. Prompt each player: Where are you a year later? How often does the mark glow? What rumors follow you? Then provide NPC updates with the new context:
 
@@ -292,10 +347,14 @@ Close with final narration similar to previous version but referencing the fort:
 
 > *Vindolanda breathes. Stories of the god who descended upon its parade ground travel faster than any courier. Some soldiers sign up just to see the scar in the sand. Some never speak of it at all. Mars calls you interesting. History calls you necessary.*
 
+</details>
 
-## DM Notes
 
-### Commendationes Final Tally
+<details>
+<summary><strong>DM Notes</strong></summary>
+
+<details>
+<summary><strong>Commendationes Final Tally</strong></summary>
 
 Before running Session 5, confirm each character's commendatio count. This session has two final opportunities, but the citizenship resolution in Scene 4 depends on what was accumulated and acted on in Sessions 3 and 4. There is no citizenship catch-up mechanic in Session 5: the paperwork was either filed or it was not.
 
@@ -308,14 +367,20 @@ If any character explicitly chooses not to use lethal force when it would have b
 **What to do with the final count:**
 Record each character's total commendationes across all five sessions. If any character ends the campaign with six or more, note it: that is an exceptional service record that supports extraordinary outcomes in any continuation play. Three to five is the expected range for an active, engaged character. Fewer than three suggests either bad fortune or deliberate restraint: both are valid, but they close the citizenship track for this campaign.
 
-### Corruption Level 5 Guidance
+</details>
+
+<details>
+<summary><strong>Corruption Level 5 Guidance</strong></summary>
 
 - **In combat options:** As before, corruption 5 characters struggle. During Option A they must succeed on DC 16 Wisdom saves each round to act freely. Three successes reduce corruption to 4.
 - **During Option B:** Mars targets them preferentially until the party calls them back by name three times, recreating the Session 3 mechanic.
 - **During Option C:** Mars uses them as his mouthpiece, asking "What do you want?" Their honest answer modifies the Persuasion DC (truthful self-awareness = no penalty; selfish answer = -5 penalty).
 - **After the session:** They cannot shed corruption without performing a selfless deed unseen by any authority within one year.
 
-### Call to War Mechanic
+</details>
+
+<details>
+<summary><strong>Call to War Mechanic</strong></summary>
 
 For any Chosen character:
 
@@ -325,7 +390,10 @@ For any Chosen character:
 | 3–4 years later | Hearing distant trumpets during storms | Lead civilians through hostile territory | A plague of nightmares afflicts the Chosen's allies |
 | 5+ years later | Seeing wolves with ember eyes | Avenge a dishonored legionary standard | Mars withdraws his favor permanently |
 
-### Epilogue NPC Prompts
+</details>
+
+<details>
+<summary><strong>Epilogue NPC Prompts</strong></summary>
 
 When players ask about NPCs, answer in character. Example answers:
 
@@ -336,8 +404,10 @@ When players ask about NPCs, answer in character. Example answers:
 
 Record all promises for future campaigns. Mars remembers. So does the fort.
 
+</details>
 
-### Skill Audit: Session 5
+<details>
+<summary><strong>Skill Audit: Session 5</strong></summary>
 
 **Opening scene checks (window closes when Mars speaks):**
 
@@ -404,3 +474,7 @@ If Varro is alive and present at the epilogue, and the party asks him directly w
 - *Insight DC 12 (active: reading Varro during the epilogue):* Know he is holding something back.
 - If asked: he says it. One sentence. Write it before Session 5 based on what actually happened in the campaign. The structure is: "I didn't expect you to [specific action]. That surprised me. I'm hard to surprise."
 - This is not a mechanical reward. It is the last character moment of the campaign. Give it to the player who paid attention to Varro across five sessions. They earned it.
+
+</details>
+
+</details>
