@@ -2188,28 +2188,41 @@
     "wis": 15,
     "cha": 11,
     "saves": {},
-    "skills": {
-      "Medicine": 4,
-      "Nature": 3,
-      "Perception": 4
-    },
+    "skills": {},
     "cr": "2",
     "attacks": [
       {
-        "label": "Quarterstaff",
-        "atk": 2,
+        "label": "Produce Flame (cantrip 30 ft)",
+        "atk": 4,
+        "reach": "30 ft.",
+        "dice": "1d8+4",
+        "type": "fire",
+        "note": "Chanting buff while alive: all Germanic raiders +1 ATK, adv vs fear."
+      },
+      {
+        "label": "Shillelagh (melee emergency)",
+        "atk": 4,
         "reach": "5 ft.",
-        "dice": "1d6",
+        "dice": "1d8+2",
         "type": "bludgeoning",
-        "note": "Or +4 / 1d6+2 with Shillelagh (bonus action)."
+        "note": "Retreats if melee closes. Never advance past boulders."
+      },
+      {
+        "label": "Thunderwave (CON DC 12 \u2014 emergency)",
+        "atk": 0,
+        "reach": "15 ft. cube",
+        "dice": "2d8",
+        "type": "thunder",
+        "note": "Push 10ft on fail. Half dmg on save. Last resort only."
       }
     ],
     "traits": [
-      "Spellcasting (WIS DC 12, +4 to hit). Slots: 1st x4, 2nd x2.",
-      "Key spells \u2014 1st: Fog Cloud (blind 20-ft radius), Entangle (DC 12 STR or restrained), Thunderwave (DC 12 CON, 2d8 thunder, pushed 10 ft). 2nd: Spike Growth (2d4/5-ft move), Hold Person (DC 12 WIS).",
-      "Treeline: does not advance into melee. Retreats if attacked."
+      "Fog Cloud R1: 20ft radius, BLINDS all inside, Concentration.",
+      "Entangle R1: STR DC 12 Restrained, 20ft sq, Concentration.",
+      "Spike Growth P2: 2d4 piercing per 5ft moved, 20ft radius.",
+      "Hold Person: WIS DC 12 Paralyzed \u2014 auto-crit all hits."
     ],
-    "notes": "CR 2. Priority target \u2014 silence him to end spell disruption."
+    "notes": "CR 2. Two druids. Chanting buff to all raiders while conscious. Kill priority."
   },
   "Ogre": {
     "hp": 59,
@@ -2226,27 +2239,34 @@
     "cr": "2",
     "attacks": [
       {
-        "label": "Greatclub",
+        "label": "Gate Battering Ram (AUTOMATIC each round)",
+        "atk": 99,
+        "reach": "gate",
+        "dice": "3d6+4",
+        "type": "bludgeoning",
+        "note": "Gate HP 60. Breaches in ~3 rounds. Arrow slit shots: 3/4 cover AC 15."
+      },
+      {
+        "label": "Greatclub (melee)",
         "atk": 6,
         "reach": "5 ft.",
         "dice": "2d8+4",
         "type": "bludgeoning",
-        "note": "Large weapon, 10 ft reach vs. Medium targets."
+        "note": ""
       },
       {
-        "label": "Javelin",
+        "label": "Javelin (30/120 ft)",
         "atk": 6,
         "reach": "30/120 ft.",
         "dice": "2d6+4",
         "type": "piercing",
-        "note": "Ranged. Can throw while ramming gate."
+        "note": "Carries 3."
       }
     ],
     "traits": [
-      "Gate Ram: each round not stopped, gate takes 3d6+4 damage (gate HP 60, ~3 rounds to breach).",
-      "Large: occupies 10x10 ft. Blocks the gate corridor entirely."
+      "INT 5: cannot be tricked. Does not pursue. Gate. Gate. Gate. Large: occupies 2x2 squares."
     ],
-    "notes": "CR 2. 59 HP. Living battering ram. Prioritize stopping him in Phase 2."
+    "notes": "CR 2. Living battering ram. Flanking via east postern = disadvantage on his attacks."
   },
   "Worg": {
     "hp": 26,
@@ -2278,5 +2298,130 @@
       "Large: blocks corridors. Knock prone on bite (DC 13 STR)."
     ],
     "notes": "CR 1/2. 26 HP. Faster than a horse. Prone on bite. Large size."
+  },
+  "Germanic_Archer": {
+    "hp": 11,
+    "ac": 13,
+    "speed": "30 ft.",
+    "str": 11,
+    "dex": 14,
+    "con": 12,
+    "int": 8,
+    "wis": 11,
+    "cha": 8,
+    "saves": {},
+    "skills": {},
+    "cr": "1/4",
+    "attacks": [
+      {
+        "label": "Shortbow",
+        "atk": 4,
+        "reach": "80/320 ft.",
+        "dice": "1d6+2",
+        "type": "piercing",
+        "note": "Half cover behind boulders zone 9 \u2014 attackers need AC 13."
+      },
+      {
+        "label": "Seax (emergency melee)",
+        "atk": 2,
+        "reach": "5 ft.",
+        "dice": "1d4+1",
+        "type": "piercing",
+        "note": "Retreats if engaged. Harasser, not a fighter."
+      }
+    ],
+    "traits": [
+      "Pack Tactics: advantage on attack when ally within 5 ft of target."
+    ],
+    "notes": "CR 1/4. Suppression fire from zone 9. Does not advance."
+  },
+  "Germanic_Spearman": {
+    "hp": 16,
+    "ac": 13,
+    "speed": "30 ft.",
+    "str": 15,
+    "dex": 12,
+    "con": 13,
+    "int": 8,
+    "wis": 11,
+    "cha": 8,
+    "saves": {},
+    "skills": {},
+    "cr": "1/2",
+    "attacks": [
+      {
+        "label": "Framea (thrown 30/120 ft)",
+        "atk": 4,
+        "reach": "30/120 ft.",
+        "dice": "1d6+2",
+        "type": "piercing",
+        "note": "Throw BEFORE mounting ladder."
+      },
+      {
+        "label": "Framea (melee)",
+        "atk": 4,
+        "reach": "5 ft.",
+        "dice": "1d6+2",
+        "type": "piercing",
+        "note": "Two-handed: 1d8+2."
+      },
+      {
+        "label": "Seax (backup)",
+        "atk": 4,
+        "reach": "5 ft.",
+        "dice": "1d4+2",
+        "type": "piercing",
+        "note": "Light weapon."
+      }
+    ],
+    "traits": [
+      "Pack Tactics: advantage when ally within 5ft of target. On ladder: half speed 15ft, no Dash, no reaction, shield slung (-1 AC)."
+    ],
+    "notes": "CR 1/2. Ladder assault. Framea throw first."
+  },
+  "Germanic_Berserker": {
+    "hp": 67,
+    "ac": 13,
+    "speed": "30 ft.",
+    "str": 16,
+    "dex": 12,
+    "con": 17,
+    "int": 9,
+    "wis": 11,
+    "cha": 9,
+    "saves": {},
+    "skills": {},
+    "cr": "2",
+    "attacks": [
+      {
+        "label": "Francisca (thrown 20/60 ft)",
+        "atk": 5,
+        "reach": "20/60 ft.",
+        "dice": "1d6+3",
+        "type": "slashing",
+        "note": "Throw ROUND 1 before ladder. DC 12 Acrobatics or lose shield bonus."
+      },
+      {
+        "label": "Greataxe",
+        "atk": 5,
+        "reach": "5 ft.",
+        "dice": "1d12+3",
+        "type": "slashing",
+        "note": ""
+      },
+      {
+        "label": "Greataxe (RECKLESS \u2014 roll twice take higher)",
+        "atk": 5,
+        "reach": "5 ft.",
+        "dice": "1d12+3",
+        "type": "slashing",
+        "note": "Advantage this turn. All attacks vs this berserker also have advantage until his next turn."
+      }
+    ],
+    "traits": [
+      "Reckless Attack available every turn.",
+      "Danger Sense: advantage on Dex saves vs visible effects (ballista, oil flasks)."
+    ],
+    "notes": "CR 2. Vercingetorix's champion. NOT the cult berserker."
   }
 }
