@@ -4,7 +4,7 @@
   "race": "Half-orc",
   "class": "Barbarian",
   "subclass": "Path of the Berserker",
-  "level": 3,
+  "level": 4,
   "background": "Folk Hero",
   "role": "Foederatus",
   "ability_scores": {
@@ -15,7 +15,7 @@
     "WIS": 10,
     "CHA": 8
   },
-  "hp_max": 35,
+  "hp_max": 45,
   "skill_proficiencies": [
     "Animal Handling",
     "Athletics",
@@ -119,5 +119,5 @@
   "portrait_color": "#5a3a8a",
   "ac_override": 17,
   "background_story": "",
-  "notes": "Barbarian L3 Path of Berserker. AC 17 (Lorica Squamata 14 + DEX +2 + Galea Coolus +1). Speed 30 (40 unarmored/light). Darkvision 60ft. RAGE (3/LR): +2 dmg on STR melee/thrown, resistance B/P/S, can't cast/concentrate, lasts 1 min or until KO/no attack or damage in round. FRENZY: while Frenzied Raging, bonus action melee attack each turn; 1 Exhaustion when rage ends. RECKLESS ATTACK: first melee turn: advantage on all STR ATK rolls; enemies have advantage on you until next turn. DANGER SENSE: advantage on DEX saves vs visible effects. UNARMORED DEFENSE: 10+STR+DEX when no armor (not active \u2014 using Lorica). HALF-ORC: Menacing (Intimidation prof), Relentless Endurance (1/LR drop to 1 HP instead of 0), Savage Attacks (extra weapon die on crit with melee). Saves: STR+5, CON+5. Skills: Animal Handling+2, Athletics+6, Intimidation+5, Perception+2, Survival+3. ROLEPLAY: Speaks broken simple Latin (max 2-syllable words) around Romans. Understands everything. Has infiltrated the legions to sabotage Rome from within. Mother: Ursula G\u00fcnther Sr., Marcomanni clan leader \u2014 killed in the Colosseum after being tricked into capture."
+  "notes": "Barbarian L3 Path of Berserker. AC 17 (Lorica Squamata 14 + DEX +2 + Galea Coolus +1). Speed 30 (40 unarmored/light). Darkvision 60ft. RAGE (3/LR): +2 dmg on STR melee/thrown, resistance B/P/S, can't cast/concentrate, lasts 1 min or until KO/no attack or damage in round. FRENZY: while Frenzied Raging, bonus action melee attack each turn; 1 Exhaustion when rage ends. RECKLESS ATTACK: first melee turn: advantage on all STR ATK rolls; enemies have advantage on you until next turn. DANGER SENSE: advantage on DEX saves vs visible effects. UNARMORED DEFENSE: 10+STR+DEX when no armor (not active — using Lorica). HALF-ORC: Menacing (Intimidation prof), Relentless Endurance (1/LR drop to 1 HP instead of 0), Savage Attacks (extra weapon die on crit with melee). Saves: STR+5, CON+5. Skills: Animal Handling+2, Athletics+6, Intimidation+5, Perception+2, Survival+3. ROLEPLAY: Speaks broken simple Latin (max 2-syllable words) around Romans. Understands everything. Has infiltrated the legions to sabotage Rome from within. Mother: Ursula Günther Sr., Marcomanni clan leader — killed in the Colosseum after being tricked into capture. L4: ASI taken. Rage uses stay at 3/LR until L12."
 }

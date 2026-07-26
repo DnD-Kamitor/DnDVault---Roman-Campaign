@@ -4,7 +4,7 @@
   "race": "Shadar-kai",
   "class": "Druid",
   "subclass": "Circle of Stars",
-  "level": 3,
+  "level": 4,
   "background": "Haunted One",
   "role": "Explorator",
   "ability_scores": {
@@ -15,7 +15,7 @@
     "WIS": 16,
     "CHA": 8
   },
-  "hp_max": 24,
+  "hp_max": 31,
   "skill_proficiencies": [
     "Insight",
     "Perception",
@@ -207,5 +207,5 @@
   "portrait_color": "#7a3a9e",
   "ac_override": 17,
   "background_story": "Spartan heritage with Carthaginian origin. Adopted family is Carthaginian. Carries two worlds: Spartan discipline and austerity from upbringing, Carthaginian mercantile culture from adopted kin. Shadar-kai shadow-marking is a third inheritance she did not choose.",
-  "notes": "Alignment unknown. Shadar-kai: Darkvision 60ft, Necrotic Resistance, Immunity magical sleep, Fey Ancestry (adv saves vs charmed / adv to avoid+end charmed), Keen Senses (Perception prof), Trance (long rest in 4h). Blessing of Raven Queen: BA teleport 30ft to unoccupied space seen 2x/LR; on teleport gain resistance all damage until next turn start. Creature type Humanoid+Elf. Druid: Wild Shape 2/SR (2nd CR 1/4 no fly/swim; 4th CR 1/2; 8th CR 1). Spellcasting WIS DC13 Atk+5. Star Map: Guiding Bolt always prepared+free cast (2/LR). Starry Form (BA Wild Shape use): Archer (BA ranged +5 1d8+3 radiant 60ft), Chalice (cast healing spell \u2192 creature 30ft regains 1d8+3), Dragon (INT/WIS check or concentration save roll 9or lower treat as 10). Resistances: Necrotic. Immunities: magical sleep. Equipment: Galea Attica, Lorica Squamata, Dagger+Longbow, Druidic Focus. Passive Perception 15, Passive Insight 15."
+  "notes": "Alignment unknown. Shadar-kai: Darkvision 60ft, Necrotic Resistance, Immunity magical sleep, Fey Ancestry (adv saves vs charmed / adv to avoid+end charmed), Keen Senses (Perception prof), Trance (long rest in 4h). Blessing of Raven Queen: BA teleport 30ft to unoccupied space seen 2x/LR; on teleport gain resistance all damage until next turn start. Creature type Humanoid+Elf. Druid: Wild Shape 2/SR (2nd CR 1/4 no fly/swim; 4th CR 1/2; 8th CR 1). Spellcasting WIS DC13 Atk+5. Star Map: Guiding Bolt always prepared+free cast (2/LR). Starry Form (BA Wild Shape use): Archer (BA ranged +5 1d8+3 radiant 60ft), Chalice (cast healing spell → creature 30ft regains 1d8+3), Dragon (INT/WIS check or concentration save roll 9or lower treat as 10). Resistances: Necrotic. Immunities: magical sleep. Equipment: Galea Attica, Lorica Squamata, Dagger+Longbow, Druidic Focus. Passive Perception 15, Passive Insight 15. L4: Wild Shape now CR 1/2 (swim speed, no fly). ASI taken (ability scores unchanged in token — update manually in MapTool if needed)."
 }

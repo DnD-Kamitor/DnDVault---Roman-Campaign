@@ -4,7 +4,7 @@
   "race": "Halfling (Phoenician-Nabataean)",
   "class": "Bard",
   "subclass": "College of Eloquence",
-  "level": 3,
+  "level": 4,
   "background": "Charlatan",
   "role": "Cornicen",
   "ability_scores": {
@@ -15,7 +15,7 @@
     "WIS": 14,
     "CHA": 16
   },
-  "hp_max": 23,
+  "hp_max": 29,
   "skill_proficiencies": [
     "Sleight of Hand",
     "History",
@@ -151,6 +151,6 @@
   "portrait_file": "Tanit Bint Abdmelquart.jpeg",
   "portrait_color": "#c47a1e",
   "ac_override": 15,
-  "background_story": "Carthaginian heritage. Family is in the Tyrian purple dye trade \u2014 the most valuable commodity in the ancient world, a Phoenician monopoly. Carries the memory of a civilization Rome destroyed. Her name is Carthaginian. Her family still profits from the Roman empire that erased her people's history. Survival vs identity is her engine.",
-  "notes": "Alignment True Neutral. Charlatan background: proficiency Disguise kit, Forgery kit. Bard: Bardic Inspiration d8 (3/LR), Jack of All Trades, Song of Rest. College of Eloquence: Silver Tongue (Persuasion+Deception treat d20 roll 9 or lower as 10), Unsettling Words (BA: expend Bardic Inspiration die, target subtracts roll from next save before your next turn). Weapons: Dagger (Pugio) +5 / 1d4+3, Vicious Mockery (cantrip) 1d4 psychic DC 14. Personality: listens more than speaks; Knowledge is the only authority that cannot be revoked; carries a history Rome tried to erase. Passive Perception 14."
+  "background_story": "Carthaginian heritage. Family is in the Tyrian purple dye trade — the most valuable commodity in the ancient world, a Phoenician monopoly. Carries the memory of a civilization Rome destroyed. Her name is Carthaginian. Her family still profits from the Roman empire that erased her people's history. Survival vs identity is her engine.",
+  "notes": "Alignment True Neutral. Charlatan background: proficiency Disguise kit, Forgery kit. Bard: Bardic Inspiration d8 (3/LR), Jack of All Trades, Song of Rest. College of Eloquence: Silver Tongue (Persuasion+Deception treat d20 roll 9 or lower as 10), Unsettling Words (BA: expend Bardic Inspiration die, target subtracts roll from next save before your next turn). Weapons: Dagger (Pugio) +5 / 1d4+3, Vicious Mockery (cantrip) 1d4 psychic DC 14. Personality: listens more than speaks; Knowledge is the only authority that cannot be revoked; carries a history Rome tried to erase. Passive Perception 14. L4: ASI taken. Spells known = 6. +1 second-level spell slot (now 4/3)."
 }

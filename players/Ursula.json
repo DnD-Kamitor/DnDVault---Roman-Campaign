@@ -4,7 +4,7 @@
   "race": "Half-orc",
   "class": "Barbarian",
   "subclass": "Path of the Berserker",
-  "level": 3,
+  "level": 4,
   "background": "Folk Hero",
   "role": "Foederatus",
   "ability_scores": {
@@ -15,7 +15,7 @@
     "WIS": 10,
     "CHA": 8
   },
-  "hp_max": 35,
+  "hp_max": 45,
   "skill_proficiencies": [
     "Animal Handling",
     "Athletics",
@@ -28,9 +28,15 @@
     "Athletics": 6,
     "Intimidation": 5
   },
-  "saving_throw_proficiencies": ["STR", "CON"],
+  "saving_throw_proficiencies": [
+    "STR",
+    "CON"
+  ],
   "spellcasting_ability": "",
-  "languages": ["German", "Latin"],
+  "languages": [
+    "German",
+    "Latin"
+  ],
   "citizenship": "Peregrinus",
   "corruption_level": 0,
   "commendationes": 0,
@@ -40,7 +46,10 @@
       "label": "Bipennis ATK",
       "type": "melee",
       "weapon": "Bipennis (Double Axe)",
-      "atk_props": ["StrMod", "Proficiency"],
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
       "damage_dice": "1d12",
       "damage_mod": "StrMod",
       "damage_type": "slashing",
@@ -51,7 +60,10 @@
       "label": "Francisca ATK",
       "type": "melee",
       "weapon": "Francisca (Throwing Axe)",
-      "atk_props": ["StrMod", "Proficiency"],
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
       "damage_dice": "1d6",
       "damage_mod": "StrMod",
       "damage_type": "slashing",
@@ -62,7 +74,10 @@
       "label": "Reckless ATK",
       "type": "melee",
       "weapon": "Bipennis (Reckless)",
-      "atk_props": ["StrMod", "Proficiency"],
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
       "damage_dice": "1d12",
       "damage_mod": "StrMod",
       "damage_type": "slashing",
@@ -73,7 +88,10 @@
       "label": "Frenzy Bonus ATK",
       "type": "melee",
       "weapon": "Bipennis (Frenzy BA)",
-      "atk_props": ["StrMod", "Proficiency"],
+      "atk_props": [
+        "StrMod",
+        "Proficiency"
+      ],
       "damage_dice": "1d12",
       "damage_mod": "StrMod",
       "damage_type": "slashing",
@@ -101,5 +119,5 @@
   "portrait_color": "#8b3a00",
   "ac_override": 17,
   "background_story": "Daughter of the legendary Marcomanni clan leader, also named Ursula Günther. Her mother led the tribe through hundreds of raids into Roman territory — never defeated in open battle. The Romans, unable to beat her in the field, tricked her and took her captive. She was shipped to Rome and sentenced to die in the Colosseum: sent in with a blunted sword, no armor. She killed a lion, a tiger, five gladiators, a pack of wolves, and an elephant before a rhinoceros finally ended her. The crowd cheered. Rome called it justice. Ursula calls it what it was.\n\nShe joined the Roman legions deliberately — to destroy them from within. Her goal is simple: Rome leaves her homeland, or she dies making sure it costs them more than it cost her mother. She has no interest in Rome's politics or the empire's other wars. The frontier is her only concern.\n\nAround Romans she performs stupidity. She speaks Latin with only one- and two-syllable words, smiles at orders, and never lets on that she understands everything. Romans talk freely in front of her. She listens to all of it.\n\nIn the legions she has come to genuinely respect — and possibly like — some of her fellow soldiers. This creates real internal conflict. She resolves it by separating the institution from the individual: her war is with Rome as a structure, not with the people inside it. She would not forgive herself if her actions got her friends killed.",
-  "notes": "Barbarian L3 Path of Berserker. AC 17 (Lorica Squamata 14 + DEX +2 + Galea Coolus +1). Speed 30 (40 unarmored/light). Darkvision 60ft. RAGE (3/LR): +2 dmg on STR melee/thrown, resistance B/P/S, can't cast/concentrate, lasts 1 min or until KO/no attack or damage in round. FRENZY: while Frenzied Raging, bonus action melee attack each turn; 1 Exhaustion when rage ends. RECKLESS ATTACK: first melee turn: advantage on all STR ATK rolls; enemies have advantage on you until next turn. DANGER SENSE: advantage on DEX saves vs visible effects. UNARMORED DEFENSE: 10+STR+DEX when no armor (not active — using Lorica). HALF-ORC: Menacing (Intimidation prof), Relentless Endurance (1/LR drop to 1 HP instead of 0), Savage Attacks (extra weapon die on crit with melee). Saves: STR+5, CON+5. Skills: Animal Handling+2, Athletics+6, Intimidation+5, Perception+2, Survival+3. ROLEPLAY: Speaks broken simple Latin (max 2-syllable words) around Romans. Understands everything. Has infiltrated the legions to sabotage Rome from within. Mother: Ursula Günther Sr., Marcomanni clan leader — killed in the Colosseum after being tricked into capture."
+  "notes": "Barbarian L3 Path of Berserker. AC 17 (Lorica Squamata 14 + DEX +2 + Galea Coolus +1). Speed 30 (40 unarmored/light). Darkvision 60ft. RAGE (3/LR): +2 dmg on STR melee/thrown, resistance B/P/S, can't cast/concentrate, lasts 1 min or until KO/no attack or damage in round. FRENZY: while Frenzied Raging, bonus action melee attack each turn; 1 Exhaustion when rage ends. RECKLESS ATTACK: first melee turn: advantage on all STR ATK rolls; enemies have advantage on you until next turn. DANGER SENSE: advantage on DEX saves vs visible effects. UNARMORED DEFENSE: 10+STR+DEX when no armor (not active — using Lorica). HALF-ORC: Menacing (Intimidation prof), Relentless Endurance (1/LR drop to 1 HP instead of 0), Savage Attacks (extra weapon die on crit with melee). Saves: STR+5, CON+5. Skills: Animal Handling+2, Athletics+6, Intimidation+5, Perception+2, Survival+3. ROLEPLAY: Speaks broken simple Latin (max 2-syllable words) around Romans. Understands everything. Has infiltrated the legions to sabotage Rome from within. Mother: Ursula Günther Sr., Marcomanni clan leader — killed in the Colosseum after being tricked into capture. L4: ASI taken. Rage uses stay at 3/LR until L12."
 }

@@ -4,7 +4,7 @@
   "race": "Aasimar (Radiant Soul)",
   "class": "Cleric",
   "subclass": "Twilight",
-  "level": 3,
+  "level": 4,
   "background": "Noble",
   "role": "Optio",
   "ability_scores": {
@@ -15,7 +15,7 @@
     "WIS": 16,
     "CHA": 10
   },
-  "hp_max": 24,
+  "hp_max": 31,
   "skill_proficiencies": [
     "History",
     "Insight",
@@ -281,6 +281,6 @@
   "portrait_file": "Juliana.jpeg",
   "portrait_color": "#4a3a9e",
   "ac_override": 21,
-  "background_story": "Roman noble, Gens Jana, lineage to god Janus. Father is Senator Gaius Janus. Last of the Jana name. One campaign then back to Rome for political career \u2014 first female quaestor, then senator. Twilight domain chosen because Janus governs transitions and thresholds; twilight is a threshold. Three servants (Primus, Secondus, Tertius) hired by father.",
-  "notes": "Alignment LN. Gens Jana \u2014 lineage to god Janus. Aasimar: resistance radiant+necrotic, healing hands (1x LR 2d4), light bearer, 3 extra radiant dmg + fly 1 min (BA). Spellcasting WIS, Spell DC 13, Spell Atk +5. Cantrips: guidance, light, spare the dying, toll the dead. L1: bless, faerie fire (always prep), guiding bolt, healing word, sleep (always prep). L2: aid, moonbeam (always prep), see invisibility (always prep), silence. Feats: Adv WIS Insight vs deception/loyalty (10+ min interrogation, DM lies shown as NPC lies). Once/session reroll INT. BA move ally 60ft without reaction. Adv visual stealth in dim/dark. 3 servants: Primus, Secondus, Tertius."
+  "background_story": "Roman noble, Gens Jana, lineage to god Janus. Father is Senator Gaius Janus. Last of the Jana name. One campaign then back to Rome for political career — first female quaestor, then senator. Twilight domain chosen because Janus governs transitions and thresholds; twilight is a threshold. Three servants (Primus, Secondus, Tertius) hired by father.",
+  "notes": "Alignment LN. Gens Jana — lineage to god Janus. Aasimar: resistance radiant+necrotic, healing hands (1x LR 2d4), light bearer, 3 extra radiant dmg + fly 1 min (BA). Spellcasting WIS, Spell DC 13, Spell Atk +5. Cantrips: guidance, light, spare the dying, toll the dead. L1: bless, faerie fire (always prep), guiding bolt, healing word, sleep (always prep). L2: aid, moonbeam (always prep), see invisibility (always prep), silence. Feats: Adv WIS Insight vs deception/loyalty (10+ min interrogation, DM lies shown as NPC lies). Once/session reroll INT. BA move ally 60ft without reaction. Adv visual stealth in dim/dark. 3 servants: Primus, Secondus, Tertius. L4: ASI taken. +1 second-level spell slot (now 4/3)."
 }

@@ -97,17 +97,17 @@ CLASS_HD = {
 SLOT_NAMES = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth",
               "Seventh", "Eighth", "Ninth"]
 
-# Spell slots by class at level 3 (full casters)
+# Spell slots by class at level 4 (full casters gain +1 second-level slot at L4)
 SPELL_SLOTS_L3 = {
-    "Bard":      [4, 2, 0, 0, 0, 0, 0, 0, 0],
-    "Cleric":    [4, 2, 0, 0, 0, 0, 0, 0, 0],
-    "Druid":     [4, 2, 0, 0, 0, 0, 0, 0, 0],
-    "Sorcerer":  [4, 2, 0, 0, 0, 0, 0, 0, 0],
-    "Wizard":    [4, 2, 0, 0, 0, 0, 0, 0, 0],
-    "Warlock":   [0, 2, 0, 0, 0, 0, 0, 0, 0],  # pact slots
-    "Paladin":   [3, 0, 0, 0, 0, 0, 0, 0, 0],  # half-caster
+    "Bard":      [4, 3, 0, 0, 0, 0, 0, 0, 0],
+    "Cleric":    [4, 3, 0, 0, 0, 0, 0, 0, 0],
+    "Druid":     [4, 3, 0, 0, 0, 0, 0, 0, 0],
+    "Sorcerer":  [4, 3, 0, 0, 0, 0, 0, 0, 0],
+    "Wizard":    [4, 3, 0, 0, 0, 0, 0, 0, 0],
+    "Warlock":   [0, 2, 0, 0, 0, 0, 0, 0, 0],  # pact slots (no change L4)
+    "Paladin":   [3, 0, 0, 0, 0, 0, 0, 0, 0],  # half-caster (no change L4)
     "Ranger":    [3, 0, 0, 0, 0, 0, 0, 0, 0],
-    "Artificer": [3, 0, 0, 0, 0, 0, 0, 0, 0],
+    "Artificer": [3, 0, 0, 0, 0, 0, 0, 0, 0],  # half-caster (no change L4)
 }
 
 
