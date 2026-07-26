@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S2 Handout: The Ordered Death — Quintus Flavius Cipher Letter</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0e0804;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 60px;
+    gap: 28px;
+  }
+
+  /* ── THE PROP (printable) ─────────────────────── */
+  .letter {
+    position: relative;
+    width: 480px;
+    background: #b89048;
+    background-image:
+      radial-gradient(ellipse at 30% 20%, rgba(80,40,0,0.38) 0%, transparent 45%),
+      radial-gradient(ellipse at 72% 78%, rgba(60,30,0,0.32) 0%, transparent 40%),
+      radial-gradient(ellipse at 10% 92%, rgba(100,50,0,0.28) 0%, transparent 35%),
+      repeating-linear-gradient(88deg, transparent 0, transparent 22px, rgba(0,0,0,0.022) 22px, rgba(0,0,0,0.022) 23px),
+      repeating-linear-gradient(1deg, transparent 0, transparent 18px, rgba(0,0,0,0.016) 18px, rgba(0,0,0,0.016) 19px);
+    padding: 50px 52px 58px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.82), inset 0 0 50px rgba(80,40,0,0.22);
+    transform: rotate(-0.3deg);
+  }
+
+  .letter::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent);
+    pointer-events: none;
+  }
+
+  .tear {
+    position: absolute;
+    top: 0; right: 0;
+    width: 0; height: 0;
+    border-top: 34px solid #0e0804;
+    border-left: 26px solid transparent;
+  }
+
+  .ink-blot {
+    position: absolute;
+    top: 116px; left: 44px;
+    width: 34px; height: 19px;
+    background: radial-gradient(ellipse, rgba(10,4,0,0.62) 0%, transparent 80%);
+    border-radius: 50%;
+    transform: rotate(-12deg);
+    pointer-events: none;
+  }
+
+  .ink-smear {
+    position: absolute;
+    bottom: 128px; right: 38px;
+    width: 48px; height: 8px;
+    background: linear-gradient(to right, transparent, rgba(10,4,0,0.38), transparent);
+    border-radius: 50%;
+    transform: rotate(7deg);
+    pointer-events: none;
+  }
+
+  .crease {
+    position: absolute;
+    top: 0; bottom: 0; left: 50%;
+    width: 1px;
+    background: linear-gradient(to bottom,
+      transparent 4%, rgba(0,0,0,0.09) 20%,
+      rgba(0,0,0,0.14) 50%, rgba(0,0,0,0.09) 80%, transparent 96%);
+    pointer-events: none;
+  }
+
+  /* Broken wax seal impression — the key clue */
+  .wax-seal {
+    position: absolute;
+    bottom: 44px; left: 44px;
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(90,18,18,0.38);
+    border-top-color: transparent;
+    border-right-color: rgba(90,18,18,0.18);
+    background: radial-gradient(circle, rgba(80,14,14,0.22) 0%, transparent 72%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-20deg);
+  }
+
+  .wax-numeral {
+    font-family: 'IM Fell English', serif;
+    font-size: 15px;
+    color: rgba(80,20,20,0.42);
+    transform: rotate(20deg);
+    letter-spacing: 0.04em;
+  }
+
+  .found-label {
+    font-family: 'IM Fell English', serif;
+    font-size: 11px;
+    color: #4a2008;
+    margin-bottom: 22px;
+    font-style: italic;
+    opacity: 0.75;
+  }
+
+  .cipher-text {
+    font-family: 'Caveat', cursive;
+    font-size: 19px;
+    font-weight: 600;
+    color: #100800;
+    line-height: 1.82;
+    letter-spacing: 0.055em;
+    transform: rotate(-0.5deg);
+    transform-origin: top left;
+    word-break: break-word;
+  }
+
+  .cipher-text .l1 { opacity: 0.96; }
+  .cipher-text .l2 { opacity: 0.91; }
+  .cipher-text .l3 { opacity: 0.87; }
+  .cipher-text .l4 { opacity: 0.84; }
+  .cipher-text .l5 { opacity: 0.86; }
+
+  .smudge {
+    display: inline-block;
+    background: linear-gradient(to right, rgba(10,4,0,0.38), transparent);
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+
+  .sig {
+    font-family: 'Caveat', cursive;
+    font-size: 21px;
+    font-weight: 600;
+    color: #100800;
+    text-align: right;
+    margin-top: 28px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(30,12,0,0.28);
+    letter-spacing: 0.07em;
+    transform: rotate(-1.1deg);
+    transform-origin: right center;
+  }
+
+  .found-note {
+    font-family: 'IM Fell English', serif;
+    font-size: 10px;
+    font-style: italic;
+    color: #6a3a10;
+    text-align: center;
+    margin-top: 28px;
+    line-height: 1.65;
+    opacity: 0.72;
+  }
+
+  /* ── DECODER PANEL (screen only) ─────────────── */
+  .decoder {
+    width: 480px;
+    background: #14100a;
+    border: 1px solid #3a2010;
+    border-radius: 3px;
+    padding: 22px 26px 24px;
+  }
+
+  .decoder-title {
+    font-family: 'IM Fell English', serif;
+    color: #c8900a;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    opacity: 0.88;
+  }
+
+  .alpha-wrap {
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .alpha-row {
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    gap: 0;
+    white-space: nowrap;
+  }
+
+  .alpha-row .row-lbl {
+    display: inline-block;
+    width: 48px;
+    font-family: 'IM Fell English', serif;
+    font-size: 9.5px;
+    font-style: italic;
+    color: #6a4020;
+    flex-shrink: 0;
+  }
+
+  .alpha-row .letters {
+    display: flex;
+    gap: 0;
+  }
+
+  .alpha-row .letters span {
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+  }
+
+  #cipher-row .letters span { color: #c8900a; }
+  #plain-row  .letters span { color: #7ab860; }
+
+  .shift-controls {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 16px 0;
+  }
+
+  .shift-btn {
+    background: #2a1408;
+    border: 1px solid #5a2808;
+    color: #c8900a;
+    font-size: 18px;
+    width: 34px; height: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    line-height: 1;
+    transition: background 0.12s;
+  }
+  .shift-btn:hover { background: #3c1c08; }
+
+  .shift-label {
+    font-family: 'IM Fell English', serif;
+    color: #c8900a;
+    font-size: 17px;
+    min-width: 72px;
+    text-align: center;
+  }
+
+  .shift-hint {
+    font-family: 'IM Fell English', serif;
+    font-size: 11px;
+    font-style: italic;
+    color: #604020;
+    flex: 1;
+  }
+
+  .preview-box {
+    background: #0c0800;
+    border: 1px solid #2a1408;
+    border-radius: 2px;
+    padding: 14px 16px;
+    min-height: 76px;
+    transition: border-color 0.4s;
+    margin-top: 2px;
+  }
+  .preview-box.solved { border-color: #c8900a; }
+
+  .preview-lbl {
+    font-family: 'IM Fell English', serif;
+    font-size: 9.5px;
+    color: #5a3010;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    margin-bottom: 8px;
+  }
+
+  #preview-text {
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    color: #5a4030;
+    line-height: 1.72;
+    transition: color 0.4s;
+    word-break: break-word;
+  }
+  #preview-text.solved { color: #e8c060; }
+
+  .cracked-banner {
+    display: none;
+    font-family: 'IM Fell English', serif;
+    font-size: 11px;
+    color: #60c840;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .cracked-banner.show { display: block; }
+
+  /* ── GM PANEL ─────────────────────────────────── */
+  .gm-panel {
+    width: 480px;
+    border: 1px solid #480808;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .gm-btn {
+    width: 100%;
+    background: #220606;
+    border: none;
+    color: #d04040;
+    font-family: 'IM Fell English', serif;
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .gm-btn:hover { background: #2e0808; }
+
+  #gm-body {
+    background: #180404;
+    padding: 18px 20px 20px;
+  }
+
+  .gm-block { margin-bottom: 16px; }
+  .gm-block:last-child { margin-bottom: 0; }
+
+  .gm-block h4 {
+    font-family: 'IM Fell English', serif;
+    font-size: 10px;
+    color: #d04040;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 6px;
+  }
+
+  .gm-block p, .gm-block li {
+    font-family: 'IM Fell English', serif;
+    font-size: 12px;
+    color: #a06050;
+    line-height: 1.65;
+  }
+
+  .gm-block ul { padding-left: 18px; }
+  .gm-block li { margin-bottom: 4px; }
+
+  .solution-box {
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    color: #e8c060;
+    line-height: 1.72;
+    background: #100800;
+    border: 1px solid #3a2010;
+    border-radius: 2px;
+    padding: 10px 14px;
+    margin-top: 6px;
+    word-break: break-word;
+  }
+
+  /* ── PRINT ────────────────────────────────────── */
+  .print-btn {
+    background: #3a0c00;
+    color: #c8900a;
+    border: 1px solid #6a2808;
+    font-family: 'IM Fell English', serif;
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    padding: 9px 24px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .print-btn:hover { background: #5a1400; }
+
+  @media print {
+    body { background: white; padding: 0; gap: 0; }
+    .letter {
+      box-shadow: none;
+      border: 1px solid #8a6020;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      transform: none;
+    }
+    .tear { border-top-color: white; }
+    .decoder, .gm-panel, .print-btn { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     THE PROP — physical letter (printable)
+═══════════════════════════════════════════════ -->
+<div class="letter">
+  <div class="tear"></div>
+  <div class="ink-blot"></div>
+  <div class="ink-smear"></div>
+  <div class="crease"></div>
+
+  <!-- Broken wax seal — the cipher key. Investigation DC 12 to notice "III". -->
+  <div class="wax-seal">
+    <div class="wax-numeral">III</div>
+  </div>
+
+  <div class="found-label">[ no salutation &mdash; no seal ]</div>
+
+  <div class="cipher-text">
+    <div class="l1">VHAWXV KDV VHHQ WKH PDUN.</div>
+    <div class="l2">KH VSRNH ZLWK WKH <span class="smudge">O</span>HJDWH.</div>
+    <div class="l3">BRX KDYH XQWLO WKH NDOHQGV</div>
+    <div class="l3">RI PDUV. GR QRW IDLO BRXU</div>
+    <div class="l4">SDWURQ. WKH DUWLIDFW VWDBV</div>
+    <div class="l4">EXULHG. OHDYH QR ZLWQHVV.</div>
+    <div class="l5">BRXU GHEW LV SDLG LQ IXOO</div>
+    <div class="l5">XSRQ FRPSOHWLRQ.</div>
+    <div class="l4">WHOO QR RQH. EXUQ WKLV.</div>
+  </div>
+
+  <div class="sig">&mdash; WKH SDWURQ</div>
+
+  <div class="found-note">
+    Found inside a false-bottomed compartment of Quintus Flavius's personal trunk.<br>
+    Discovered after the raid. No seal. No date. Written in an unknown hand.
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     DECODER — screen only
+═══════════════════════════════════════════════ -->
+<div class="decoder">
+  <div class="decoder-title">Caesar Cipher Wheel &mdash; Adjust shift until message makes sense</div>
+
+  <div class="alpha-wrap">
+    <div class="alpha-row" id="cipher-row">
+      <span class="row-lbl">Cipher:</span>
+      <div class="letters" id="cipher-letters"></div>
+    </div>
+    <div class="alpha-row" id="plain-row">
+      <span class="row-lbl">Plain:</span>
+      <div class="letters" id="plain-letters"></div>
+    </div>
+  </div>
+
+  <div class="shift-controls">
+    <button class="shift-btn" onclick="adj(-1)">&#8592;</button>
+    <span class="shift-label" id="shift-lbl">Shift: 0</span>
+    <button class="shift-btn" onclick="adj(1)">&#8594;</button>
+    <span class="shift-hint">Find the numeral hidden on the letter&hellip;</span>
+  </div>
+
+  <div class="preview-box" id="preview-box">
+    <div class="preview-lbl">Deciphered preview</div>
+    <div id="preview-text"></div>
+  </div>
+  <div class="cracked-banner" id="cracked">&#10003; Deciphered &mdash; Shift III (Caesar +3)</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     GM PANEL
+═══════════════════════════════════════════════ -->
+<div class="gm-panel">
+  <button class="gm-btn" onclick="toggleGM()">
+    <span>DM Only &mdash; Solution &amp; Session Notes</span>
+    <span id="gm-arrow">&#9660;</span>
+  </button>
+  <div id="gm-body" style="display:none">
+
+    <div class="gm-block">
+      <h4>Decoded Message</h4>
+      <div class="solution-box">
+        SEXTUS HAS SEEN THE MARK. HE SPOKE WITH THE LEGATE. YOU HAVE UNTIL THE KALENDS OF MARS. DO NOT FAIL YOUR PATRON. THE ARTIFACT STAYS BURIED. LEAVE NO WITNESS. YOUR DEBT IS PAID IN FULL UPON COMPLETION. TELL NO ONE. BURN THIS. &mdash; THE PATRON
+      </div>
+    </div>
+
+    <div class="gm-block">
+      <h4>Cipher Key</h4>
+      <p>Caesar cipher, shift +3. The broken wax seal impression on the letter shows the Roman numeral <b>III</b> — this is the shift key. <b>Investigation DC 12</b> to notice the seal fragment is a deliberate marking, not decoration.</p>
+    </div>
+
+    <div class="gm-block">
+      <h4>What This Reveals</h4>
+      <ul>
+        <li><b>Quintus Flavius</b> (Quartermaster) is a sleeper agent for "The Patron" — Senator Brutus's network.</li>
+        <li><b>Sextus</b> (the dead man from Scene 0) discovered "the mark" — the OTHALAN contract rune — and reported it to the Legate. Quintus received orders to silence him.</li>
+        <li><b>"The artifact stays buried"</b> confirms someone knows about the vault under the fort (Chapter 1). The Patron knew about it before the party descended.</li>
+        <li><b>"The Patron"</b> = Senator Brutus. First concrete written link between the senator and the fort. The party cannot prove it yet (no name, only title).</li>
+        <li>The timing: <i>Kalends of Mars</i> has passed, meaning Quintus completed his mission — but he was never meant to survive the raid to explain it.</li>
+      </ul>
+    </div>
+
+    <div class="gm-block">
+      <h4>When to Give This Handout</h4>
+      <p>After the party searches Quintus's personal trunk. Trunk: <b>Investigation DC 14</b> to find (or automatic if they arrested and searched him). The false-bottomed compartment inside: <b>Perception DC 15</b> to notice. If the compartment is simply forced open without noticing it, the letter is crushed and partially destroyed — lose the last two lines.</p>
+    </div>
+
+    <div class="gm-block">
+      <h4>Quintus's Reaction if Confronted</h4>
+      <p>He denies authorship, claims he found it, claims it was planted. <b>Insight DC 14</b> reveals genuine fear — he is more afraid of "The Patron" than of the party. He will not name Brutus under interrogation unless the party can credibly guarantee protection from Rome — <b>Persuasion DC 18</b> (or DC 12 if they can prove they already know Brutus is involved).</p>
+    </div>
+
+    <div class="gm-block">
+      <h4>Follow-on Thread</h4>
+      <p>If the party keeps Quintus alive and protected, he becomes a reluctant informant for Chapter 3. If executed or if they fail to protect him, the thread goes cold until Chapter 4 (Senator Brutus's first physical appearance).</p>
+    </div>
+
+  </div>
+</div>
+
+<button class="print-btn" onclick="printLetter()">Print Letter Only</button>
+
+<script>
+// Encoded text (Caesar +3 applied to plaintext)
+const ENCODED = "VHAWXV KDV VHHQ WKH PDUN. " +
+  "KH VSRNH ZLWK WKH OHJDWH. " +
+  "BRX KDYH XQWLO WKH NDOHQGV RI PDUV. " +
+  "GR QRW IDLO BRXU SDWURQ. " +
+  "WKH DUWLIDFW VWDBV EXULHG. " +
+  "OHDYH QR ZLWQHVV. " +
+  "BRXU GHEW LV SDLG LQ IXOO XSRQ FRPSOHWLRQ. " +
+  "WHOO QR RQH. EXUQ WKLV. \u2014 WKH SDWURQ";
+
+let shift = 0;
+
+function decode(text, s) {
+  return text.split('').map(c => {
+    if (c >= 'A' && c <= 'Z') {
+      return String.fromCharCode((c.charCodeAt(0) - 65 - s + 26) % 26 + 65);
+    }
+    return c;
+  }).join('');
+}
+
+function render() {
+  // Cipher row: always A-Z
+  const cipherEl = document.getElementById('cipher-letters');
+  cipherEl.innerHTML = '';
+  for (let i = 0; i < 26; i++) {
+    const sp = document.createElement('span');
+    sp.textContent = String.fromCharCode(65 + i);
+    cipherEl.appendChild(sp);
+  }
+
+  // Plain row: shifted
+  const plainEl = document.getElementById('plain-letters');
+  plainEl.innerHTML = '';
+  for (let i = 0; i < 26; i++) {
+    const sp = document.createElement('span');
+    sp.textContent = String.fromCharCode((i - shift + 26) % 26 + 65);
+    plainEl.appendChild(sp);
+  }
+
+  document.getElementById('shift-lbl').textContent = 'Shift: ' + shift;
+
+  const decoded = decode(ENCODED, shift);
+  const previewEl = document.getElementById('preview-text');
+  previewEl.textContent = decoded;
+
+  const box = document.getElementById('preview-box');
+  const banner = document.getElementById('cracked');
+
+  if (shift === 3) {
+    previewEl.classList.add('solved');
+    box.classList.add('solved');
+    banner.classList.add('show');
+  } else {
+    previewEl.classList.remove('solved');
+    box.classList.remove('solved');
+    banner.classList.remove('show');
+  }
+}
+
+function adj(delta) {
+  shift = (shift + delta + 26) % 26;
+  render();
+}
+
+function toggleGM() {
+  const body = document.getElementById('gm-body');
+  const arrow = document.getElementById('gm-arrow');
+  const open = body.style.display !== 'none';
+  body.style.display = open ? 'none' : 'block';
+  arrow.innerHTML = open ? '&#9660;' : '&#9650;';
+}
+
+function printLetter() {
+  const hide = [
+    document.querySelector('.decoder'),
+    document.querySelector('.gm-panel'),
+    document.querySelector('.print-btn')
+  ];
+  hide.forEach(el => { if (el) el.style.display = 'none'; });
+  window.print();
+  setTimeout(() => hide.forEach(el => { if (el) el.style.display = ''; }), 600);
+}
+
+// Init
+render();
+</script>
+</body>
+</html>

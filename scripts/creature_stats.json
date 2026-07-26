@@ -2288,10 +2288,14 @@
       {
         "label": "Seax (melee \u2014 last resort)",
         "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me draws his seax in desperation! [r, if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"slashes!\"]<br>ATK: [e: atk+2] | DMG: [e: dmg+1] piercing<br><i style='color:#e74c3c'>Archer is fleeing \u2014 this attack means he is cornered. He will break and run next turn if alive.</i>"
+      },
+      {
+        "label": "Morale Check (GM \u2014 use when below 6 HP or ally drops nearby)",
+        "raw_cmd": "[h: wis=1d20]/me loses nerve! Morale WIS check: [e: wis] vs DC 10 \u2014 [r, if(wis >= 10): \"<b style='color:#6aaa50'>HOLDS</b> \u2014 stays in position this round.\"; \"<b style='color:#e74c3c'>BREAKS</b> \u2014 drops bow, flees treeline at full speed. Does not return unless druids still chanting.\"]<br><i style='color:#6aaa50'>Trigger: below 6 HP, or 2+ allies dropped within 30ft this round, or druid killed (chanting buff ends).</i>"
       }
     ],
     "traits": [],
-    "notes": "CR 1/4. Zone 9 suppression. Pack Tactics."
+    "notes": "CR 1/4. Zone 9 suppression. Pack Tactics. Morale breaks when below 6 HP or druids die."
   },
   "Germanic_Spearman": {
     "hp": 16,
@@ -2318,10 +2322,14 @@
       {
         "label": "Seax \u2014 Backup Blade",
         "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me draws the seax! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; \"slashes!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (light weapon)<br><i style='color:#c8a040'>Light \u2014 can dual wield with framea as bonus action attack.</i>"
+      },
+      {
+        "label": "Morale Check (GM \u2014 use when below 8 HP or 3+ allies fall in 30ft)",
+        "raw_cmd": "[h: wis=1d20]/me falters! Morale WIS check: [e: wis] vs DC 10 \u2014 [r, if(wis >= 10): \"<b style='color:#6aaa50'>HOLDS</b> \u2014 grits teeth, keeps fighting.\"; \"<b style='color:#e74c3c'>BREAKS</b> \u2014 shoves ally aside, leaps off ladder or sprints for treeline. Pack Tactics lost (no ally within 5ft of his target).\"]<br><i style='color:#c8a040'>Trigger: below 8 HP, or 3+ spearmen/archers fell this round within 30ft, or gate is breached (panic spreads). Druid chanting (while alive): this check is at DC 8 instead of DC 10.</i>"
       }
     ],
     "traits": [],
-    "notes": "CR 1/2. Ladder assault. Framea throw first, melee at parapet."
+    "notes": "CR 1/2. Ladder assault. Morale check below 8 HP or mass casualties."
   },
   "Germanic_Berserker": {
     "hp": 67,
