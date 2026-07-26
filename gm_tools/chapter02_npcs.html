@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ch2 — NPC Reference Cards</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0d0b08; color: #c8b898; font-family: Georgia, serif; font-size: 13px; line-height: 1.45; min-height: 100vh; }
+
+  #header { background: #120f08; border-bottom: 2px solid #c8a850; padding: 10px 16px; }
+  #header h1 { color: #c8a850; font-size: 1.1em; }
+  #header .sub { color: #786858; font-size: 0.8em; margin-top: 2px; }
+
+  #tabs { display: flex; background: #100e08; border-bottom: 1px solid #2a2018; overflow-x: auto; }
+  .tab-btn { background: none; border: none; padding: 8px 14px; cursor: pointer; font-family: Georgia, serif; font-size: 0.78em; color: #786858; white-space: nowrap; border-bottom: 2px solid transparent; }
+  .tab-btn:hover { color: #c8b898; background: #181410; }
+  .tab-btn.active { color: #c8a850; border-bottom-color: #c8a850; background: #181208; }
+  .tab-btn.ant { color: #a04040; }
+  .tab-btn.ant.active { color: #d06060; border-bottom-color: #d06060; }
+  .tab-btn.ally { color: #508850; }
+  .tab-btn.ally.active { color: #70c060; border-bottom-color: #70c060; }
+
+  #content { max-width: 900px; margin: 0 auto; padding: 16px; }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+
+  .card { background: #120f08; border: 1px solid #2a2018; padding: 14px; display: grid; grid-template-columns: 130px 1fr; gap: 14px; margin-bottom: 14px; }
+  .card.ant  { border-color: #5a1a1a; }
+  .card.ally { border-color: #1a3a1a; }
+  .card.grey { border-color: #2a2828; }
+
+  .portrait-col { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .portrait { width: 100px; height: 100px; border-radius: 50%; overflow: hidden; border: 3px solid #c8a850; flex-shrink: 0; }
+  .portrait.ant  { border-color: #c84040; }
+  .portrait.grey { border-color: #7a7868; }
+  .portrait.ag   { border-color: #70b050; }
+  .badge { font-size: 0.7em; color: #786858; text-align: center; line-height: 1.4; }
+  .badge.ant  { color: #c84040; }
+  .badge.ally { color: #70b050; }
+
+  .npc-name { font-size: 1.12em; color: #c8a850; font-weight: bold; margin-bottom: 2px; }
+  .npc-name.ant  { color: #d06060; }
+  .npc-name.ally { color: #80c870; }
+  .npc-role { color: #786858; font-size: 0.8em; margin-bottom: 8px; font-style: italic; }
+  .look { color: #c8b898; font-size: 0.82em; font-style: italic; border-left: 2px solid #3a3020; padding-left: 8px; margin-bottom: 10px; }
+
+  .section-hdr { color: #786858; font-size: 0.7em; text-transform: uppercase; letter-spacing: 0.08em; margin: 10px 0 4px; font-weight: bold; }
+
+  table.ogas { width: 100%; border-collapse: collapse; font-size: 0.81em; margin-bottom: 6px; }
+  table.ogas td { padding: 3px 6px; border-bottom: 1px solid #1a1810; vertical-align: top; }
+  table.ogas td.lbl { color: #c8a850; font-weight: bold; white-space: nowrap; width: 75px; }
+  table.ogas td.lbl.ant { color: #d06060; }
+  table.ogas td.lbl.sec { color: #9a70d0; }
+  table.ogas td.val { color: #c8b898; }
+
+  .voice { background: #0a0808; border-left: 3px solid #3a3020; padding: 5px 9px; margin-bottom: 8px; font-size: 0.82em; color: #b8a888; line-height: 1.6; }
+  .vl::before { content: '"'; color: #786858; }
+  .vl::after  { content: '"'; color: #786858; }
+  .vc { font-style: normal; color: #6a5a48; font-size: 0.85em; display: block; margin-top: 1px; margin-bottom: 4px; }
+
+  .stat-block { background: #0a0908; border: 1px solid #2a2018; padding: 8px 10px; font-size: 0.8em; margin-bottom: 8px; }
+  .stat-name { color: #c8a850; font-weight: bold; margin-bottom: 3px; }
+  .stat-name.ant  { color: #d06060; }
+  .stat-name.ally { color: #80c870; }
+  .sl { color: #c8b898; margin-bottom: 2px; }
+  .sl span { color: #a09080; }
+  .sl.note { color: #607860; font-style: italic; }
+  .abilities { display: flex; gap: 10px; flex-wrap: wrap; margin: 4px 0; }
+  .ab { text-align: center; min-width: 36px; }
+  .ab .sc { color: #c8a850; font-weight: bold; font-size: 0.95em; }
+  .ab .md { color: #786858; font-size: 0.78em; }
+  .ab .lb { color: #6a5a48; font-size: 0.68em; text-transform: uppercase; }
+
+  .timeline { width: 100%; border-collapse: collapse; font-size: 0.79em; }
+  .timeline th { color: #786858; text-align: left; padding: 2px 6px; border-bottom: 1px solid #2a2018; font-weight: normal; font-style: italic; }
+  .timeline td { padding: 3px 6px; border-bottom: 1px solid #1a1810; vertical-align: top; color: #c8b898; }
+  .timeline td.sc { color: #c8a850; white-space: nowrap; }
+  .timeline td.sc.ant { color: #d06060; }
+  .timeline td.sc.ag  { color: #80c870; }
+
+  .trust-table { width: 100%; border-collapse: collapse; font-size: 0.79em; margin-bottom: 8px; }
+  .trust-table th { color: #786858; text-align: left; padding: 2px 6px; border-bottom: 1px solid #2a2018; font-weight: normal; }
+  .trust-table td { padding: 3px 6px; border-bottom: 1px solid #1a1810; vertical-align: top; color: #c8b898; }
+  .trust-table td.lvl { font-weight: bold; white-space: nowrap; }
+
+  .trigger { background: #0f0a0a; border-left: 3px solid #8a4040; padding: 4px 8px; font-size: 0.8em; color: #b89898; margin-bottom: 4px; }
+  .trigger.ag { border-left-color: #4a8a4a; background: #0a0f0a; color: #98b898; }
+  .trigger strong { color: #d08080; }
+  .trigger.ag strong { color: #80c080; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Chapter 2 — NPC Reference Cards</h1>
+  <div class="sub">The Tribune's Gambit &nbsp;·&nbsp; 6 major NPCs &nbsp;·&nbsp; Session 2 (L4) &nbsp;·&nbsp; Gold frame = ally &nbsp;·&nbsp; Red frame = antagonist &nbsp;·&nbsp; Grey = complex</div>
+</div>
+
+<div id="tabs">
+  <button class="tab-btn ant active" onclick="show('lucius',this)">Lucius (Ant)</button>
+  <button class="tab-btn"           onclick="show('corvinus',this)">Corvinus</button>
+  <button class="tab-btn ally"      onclick="show('cassia',this)">Cassia (Ally)</button>
+  <button class="tab-btn ally"      onclick="show('varro',this)">Varro (Ally)</button>
+  <button class="tab-btn"           onclick="show('vercin',this)">Vercingetorix</button>
+  <button class="tab-btn ant"       onclick="show('quintus',this)">Quintus (Hidden)</button>
+</div>
+
+<div id="content">
+
+<!-- TRIBUNE LUCIUS -->
+<div id="lucius" class="tab-pane active">
+<div class="card ant">
+  <div class="portrait-col">
+    <div class="portrait ant">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#1a0808"/>
+        <rect x="32" y="62" width="36" height="38" rx="3" fill="#6a1010"/>
+        <rect x="28" y="58" width="44" height="8" rx="2" fill="#7a1880"/>
+        <rect x="44" y="50" width="12" height="12" fill="#c09070"/>
+        <ellipse cx="50" cy="40" rx="18" ry="20" fill="#c09070"/>
+        <ellipse cx="50" cy="24" rx="17" ry="10" fill="#2a1808"/>
+        <circle cx="30" cy="72" r="3" fill="#c8a850"/>
+        <circle cx="70" cy="72" r="3" fill="#c8a850"/>
+        <circle cx="30" cy="79" r="2" fill="#c8a850"/>
+      </svg>
+    </div>
+    <div class="badge ant">ANTAGONIST<br>Scenes 1 · 4</div>
+  </div>
+  <div>
+    <div class="npc-name ant">Tribune Lucius Valerius Maximus</div>
+    <div class="npc-role">Senate Tribune — Brutus' agent — real legal authority, corrupted purpose</div>
+    <div class="look">Late twenties. Lean, deliberate build. Purple-trim cloak; rings on every finger — one plain iron band, tarnished, too small for him (wears it to remember something). Walks like the space belongs to him. Never looks back.<br><em>"He looks at the fort the way a merchant looks at damaged goods."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl ant">Objective</td><td class="val">Prevent the spear reaching Rome. Destroy it on Brutus' instructions.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Strip Corvinus of command. Secure the spear in his quarters. Depart within 36 hours.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Issues orders immediately on arrival. Praetorians guard spear room during raid — not the fort. Accelerates departure after raid, citing "raider intelligence."</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">Not fully convinced destroying the spear is right. Cassia's arguments reach him. The iron ring belonged to someone he failed. He hesitates before "enemies of Rome" in Scene 4.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">You must be the ones who retrieved it. Good. You work for me now.</div>
+      <span class="vc">Scene 1 — first direct address to party</span>
+      <div class="vl">These soldiers conspired with the raiders. I have witnesses.</div>
+      <span class="vc">Scene 4 — the accusation (prepared speech, written before the raid)</span>
+    </div>
+
+    <div class="section-hdr">STAT BLOCK (if combat breaks out, Scene 4)</div>
+    <div class="stat-block">
+      <div class="stat-name ant">Tribune Lucius — CR 1 (non-combatant by preference)</div>
+      <div class="sl"><span>AC</span> 12 &nbsp;·&nbsp; <span>HP</span> 27 (6d8) &nbsp;·&nbsp; <span>Speed</span> 30 ft</div>
+      <div class="sl"><span>Skills</span> Deception +5, Insight +3, Persuasion +5</div>
+      <div class="sl"><span>Dagger:</span> +4 to hit, 1d4+2 piercing.</div>
+      <div class="sl note">Praetorians disengage if he orders retreat or is knocked unconscious. Capture = Session 3 leverage. Kill = permanent Roman enemies.</div>
+    </div>
+
+    <div class="section-hdr">SESSION STATE</div>
+    <table class="timeline">
+      <tr><th>Scene</th><th>Location / Action</th></tr>
+      <tr><td class="sc ant">S0</td><td>En route — 1 hour away. Has been told the raid is tonight.</td></tr>
+      <tr><td class="sc ant">S1</td><td>Arrives south gate. Surveys fort dismissively. Demands spear by hour 2, Corvinus removed by hour 3. "You work for me now."</td></tr>
+      <tr><td class="sc ant">S2</td><td>In principia, writing orders. Seal date clue on Handout 4 accessible; encoded letter in locked dispatch box.</td></tr>
+      <tr><td class="sc ant">S3</td><td>Moves to principia immediately when alarm sounds — not the walls. Praetorians follow without orders. After raid: appears immaculate in the blood-soaked courtyard.</td></tr>
+      <tr><td class="sc ant">S4</td><td>Accuses party. Corvinus concurs. Varro does not. Insight DC 14 window: he hesitates before "enemies of Rome" — closes when he finishes speaking.</td></tr>
+    </table>
+
+    <div class="section-hdr">TRIGGER RESPONSES</div>
+    <div class="trigger">Party mentions "the seal date" on Handout 4 → <strong>no answer.</strong></div>
+    <div class="trigger">Party says "Brutus" by name → <strong>goes very still.</strong></div>
+    <div class="trigger">Party invokes Cassia's proper ritual argument → <strong>one round of genuine doubt before reasserting authority.</strong></div>
+  </div>
+</div>
+</div>
+
+<!-- CORVINUS -->
+<div id="corvinus" class="tab-pane">
+<div class="card grey">
+  <div class="portrait-col">
+    <div class="portrait grey">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#0f0e0c"/>
+        <rect x="30" y="60" width="40" height="40" rx="2" fill="#4a4038"/>
+        <rect x="28" y="56" width="44" height="12" rx="2" fill="#5a5040"/>
+        <line x1="28" y1="60" x2="72" y2="60" stroke="#6a6050" stroke-width="1.5"/>
+        <line x1="28" y1="64" x2="72" y2="64" stroke="#6a6050" stroke-width="1.5"/>
+        <rect x="44" y="50" width="12" height="10" fill="#b08860"/>
+        <ellipse cx="50" cy="40" rx="16" ry="18" fill="#b08860"/>
+        <rect x="20" y="28" width="60" height="6" rx="2" fill="#8a1010"/>
+        <rect x="34" y="18" width="32" height="18" rx="3" fill="#6a6058"/>
+        <rect x="36" y="30" width="28" height="14" rx="1" fill="#504840"/>
+      </svg>
+    </div>
+    <div class="badge">COMPLEX<br>Scenes 1 · 4</div>
+  </div>
+  <div>
+    <div class="npc-name">Legate Corvinus</div>
+    <div class="npc-role">Fort Commander — authority stripped, political calculation, controlled fury</div>
+    <div class="look">Fifties. Commanding frame going to grey. Always in lorica segmentata, even in quarters. Eyes that inventory a room for threats before reading the room. Stillness that looks like patience but is not.<br><em>"He's angry. He's not showing it. Both things are visible."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl">Objective</td><td class="val">Recover command. Keep the spear under his control before Brutus can destroy it.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Use the Tribune's mission against him. Document everything. Find leverage.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Formally accepts the Tribune's suspension order with total stillness. Watches both Tribune and party. Positions himself as irreplaceable.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">Has a counter-plan to recover the spear after the Tribune departs. His Scene 4 concurrence is political calculation — he waited to see what the Tribune said first. Passive Insight DC 15 catches this.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">I concur with the Tribune's assessment.</div>
+      <span class="vc">Scene 4 — measured, not immediate; timed pause after Tribune finishes</span>
+      <div class="vl">You retrieved it. That earns something. I haven't decided what.</div>
+      <span class="vc">If party confronts him privately after Scene 1</span>
+    </div>
+
+    <div class="section-hdr">STAT BLOCK (Veteran)</div>
+    <div class="stat-block">
+      <div class="stat-name">Legate Corvinus — CR 3 (Veteran)</div>
+      <div class="sl"><span>AC</span> 17 (lorica + shield) &nbsp;·&nbsp; <span>HP</span> 58 (9d8+18) &nbsp;·&nbsp; <span>Speed</span> 30 ft</div>
+      <div class="sl"><span>Multiattack:</span> 2. <span>Gladius:</span> +5 to hit, 1d6+3. <span>Scutum bash:</span> +5, 1d4+3.</div>
+      <div class="sl"><span>Skills</span> Athletics +5, Intimidation +3, Perception +3</div>
+    </div>
+
+    <div class="section-hdr">SESSION STATE</div>
+    <table class="timeline">
+      <tr><th>Scene</th><th>Location / Action</th></tr>
+      <tr><td class="sc">S0</td><td>Commander's quarters — controlled fury about Sextus' murder and what it signals.</td></tr>
+      <tr><td class="sc">S1</td><td>Formally receives Tribune. Accepts suspension with total stillness. Does not speak to party publicly.</td></tr>
+      <tr><td class="sc">S2</td><td>Watching. Will not volunteer information about the Tribune unless party presses him directly.</td></tr>
+      <tr><td class="sc ag">S3</td><td>Commands fort defence — walls, not principia. Does his duty here. Earns some respect.</td></tr>
+      <tr><td class="sc ant">S4</td><td>"I concur." Passive Insight DC 15: waited to see what Tribune said first. Political, not honest agreement.</td></tr>
+    </table>
+  </div>
+</div>
+</div>
+
+<!-- CASSIA -->
+<div id="cassia" class="tab-pane">
+<div class="card ally">
+  <div class="portrait-col">
+    <div class="portrait ag">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#080f08"/>
+        <rect x="28" y="58" width="44" height="42" rx="3" fill="#2a3a2a"/>
+        <path d="M30,55 Q50,40 70,55 L66,70 Q50,62 34,70 Z" fill="#1a2a1a"/>
+        <ellipse cx="50" cy="48" rx="14" ry="16" fill="#c0a080"/>
+        <path d="M42,20 Q44,10 46,14 Q48,5 50,12 Q52,4 54,10 Q56,16 58,8" stroke="#7a9a7a" stroke-width="1.5" fill="none" opacity="0.6"/>
+        <rect x="36" y="70" width="28" height="18" rx="2" fill="#4a3a18" opacity="0.7"/>
+      </svg>
+    </div>
+    <div class="badge ally">ALLY<br>Scenes 2 · 4</div>
+  </div>
+  <div>
+    <div class="npc-name ally">Augur Cassia Liviana</div>
+    <div class="npc-role">Fort Augur — knows the spear's true history — barely sleeping — already sent a warning</div>
+    <div class="look">Forties. Augur's hood. Eyes that have been awake too long processing something large. Cross-legged on shrine floor, surrounded by wax tablets covered in cramped notation — not prayer notes: logs of the Tribune's movements, timed.<br><em>"She looks like someone who has been right about something terrible and cannot yet say so."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl">Objective</td><td class="val">Warn the party. Prevent the spear being destroyed without the proper ritual.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Share the spear's true history. Plant the bog valerian detail for Session 3.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Cross-legged in shrine, documenting Tribune's movements. Says nothing publicly until after the raid. Then comes to the party.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">Already sent a private warning to a contact (Session 4 thread). Tribune's aura is "confused, not corrupt" — something under the mission. Short on bog valerian: one more full rite, then half-strength Session 4 wards.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">It cannot be destroyed anywhere except a specific grove. One day's march north. My people know the way.</div>
+      <span class="vc">If party asks about the spear directly (plants the Session 3 destination)</span>
+      <div class="vl">It grows in forest clearings near standing water. North of the road you'll be taking. I have enough for one more full rite.</div>
+      <span class="vc">The bog valerian detail — mentioned almost as an afterthought; DC 13 Nature in any wetland clearing in Session 3 finds five stalks</span>
+    </div>
+
+    <div class="section-hdr">WHAT SHE SHARES (no roll required if asked directly)</div>
+    <div class="stat-block">
+      <div class="stat-name ally">Information Cassia holds</div>
+      <div class="sl">Spear's true history: killed a demigod son of Mars, three generations ago.</div>
+      <div class="sl">The curse: wielded with ambition = consumed by war. No exceptions on record.</div>
+      <div class="sl">Tribune's aura: "confused, not corrupt." Something real underneath his mission.</div>
+      <div class="sl">Bog valerian supply: one full rite remaining. After that, Session 4 wards at base level only.</div>
+      <div class="sl note">Can identify cipher format on Handout 5 — she has seen similar Senate correspondence before.</div>
+    </div>
+
+    <div class="section-hdr">SESSION STATE</div>
+    <table class="timeline">
+      <tr><th>Scene</th><th>Location / Action</th></tr>
+      <tr><td class="sc">S0</td><td>Fort shrine, barely sleeping since midnight. Wax tablets everywhere.</td></tr>
+      <tr><td class="sc">S1</td><td>Shrine doorway, watching. Whispers to party if they pass: "Come find me when you can breathe."</td></tr>
+      <tr><td class="sc ag">S2</td><td>In shrine, welcomes conversation. Volunteers spear history. Plants valerian detail almost as afterthought. Does not ask formally.</td></tr>
+      <tr><td class="sc">S3</td><td>Shrine, silent, documenting. Does not fight.</td></tr>
+      <tr><td class="sc ag">S4</td><td>Comes to party after raid if they haven't come to her. "The Tribune hesitated. Did you see that?"</td></tr>
+    </table>
+  </div>
+</div>
+</div>
+
+<!-- VARRO -->
+<div id="varro" class="tab-pane">
+<div class="card ally">
+  <div class="portrait-col">
+    <div class="portrait ag">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#080a08"/>
+        <rect x="30" y="58" width="40" height="42" rx="2" fill="#3a4030"/>
+        <rect x="28" y="54" width="44" height="10" rx="1" fill="#4a5038"/>
+        <line x1="28" y1="57" x2="72" y2="57" stroke="#5a6048" stroke-width="1"/>
+        <line x1="28" y1="61" x2="72" y2="61" stroke="#5a6048" stroke-width="1"/>
+        <rect x="22" y="40" width="4" height="58" rx="1" fill="#7a5a20" opacity="0.5"/>
+        <rect x="44" y="48" width="12" height="12" fill="#b08050"/>
+        <ellipse cx="50" cy="38" rx="16" ry="17" fill="#b08050"/>
+        <rect x="30" y="24" width="40" height="5" rx="2" fill="#a02020"/>
+        <rect x="36" y="18" width="28" height="14" rx="2" fill="#5a5848"/>
+        <rect x="38" y="28" width="24" height="12" fill="#4a4838"/>
+        <rect x="68" y="58" width="5" height="22" rx="1" fill="#8a8060"/>
+        <rect x="66" y="56" width="9" height="4" rx="1" fill="#6a6040"/>
+      </svg>
+    </div>
+    <div class="badge ally">ALLY<br>Scenes 0 · 2 · 3 · 4</div>
+  </div>
+  <div>
+    <div class="npc-name ally">Centurion Varro</div>
+    <div class="npc-role">Senior Centurion — party's true ally — already positioned — will not blink in Scene 4</div>
+    <div class="look">Fifties. Battle-worn build. Always in armour. Hand moves to gladius before his face changes. Six veterans already placed near spear storage. The party's safety is a priority before they know it.<br><em>"He looks like a man who has already planned for this to go wrong."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl">Objective</td><td class="val">Protect the party and the fort.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Position trusted veterans near spear storage. Keep the party alive through Scene 4.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Reviews patrol assignments that keep him adjacent to the principia. Six veterans in position at session start. Finds the party before Scene 3 if they haven't found him.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">Exact number of men positioned and where. Also: suspects Quintus Flavius specifically — won't name him without evidence.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">This was done by someone who knew his patrol route. Someone inside the walls.</div>
+      <span class="vc">Scene 0 — crouching beside Sextus; opens the session</span>
+      <div class="vl">That Tribune was posted to the financial investigation commission six months ago. Guess who was embezzling? Start with which senators have frontier contracts.</div>
+      <span class="vc">Scene 2 — if party asks about Tribune (no roll required, he volunteers this)</span>
+      <div class="vl">Do you.</div>
+      <span class="vc">Scene 4 — hand on gladius, one slow step beside the party — two words, let them land</span>
+    </div>
+
+    <div class="section-hdr">STAT BLOCK (Veteran)</div>
+    <div class="stat-block">
+      <div class="stat-name ally">Centurion Varro — CR 3 (Veteran)</div>
+      <div class="sl"><span>AC</span> 17 &nbsp;·&nbsp; <span>HP</span> 58 (9d8+18) &nbsp;·&nbsp; <span>Speed</span> 30 ft</div>
+      <div class="sl"><span>Multiattack:</span> 2. <span>Gladius:</span> +5 to hit, 1d6+3 slashing. <span>Pilum:</span> +5, range 60/240, 1d6+3 piercing.</div>
+      <div class="sl"><span>Scene 4 allies:</span> 6 veterans (same stat block) fight beside party if combat starts.</div>
+      <div class="sl note">If Varro is killed in Scene 3: Scene 4 Persuasion/Intimidation DCs +3. Cassia covers some of his role.</div>
+    </div>
+
+    <div class="section-hdr">SESSION STATE</div>
+    <table class="timeline">
+      <tr><th>Scene</th><th>Location / Action</th></tr>
+      <tr><td class="sc ag">S0</td><td>Crouches beside Sextus. Delivers opening line. Leads initial investigation.</td></tr>
+      <tr><td class="sc">S1</td><td>Quiet, alarmed. "Afraid men do stupid things." Not explaining his veteran placements.</td></tr>
+      <tr><td class="sc ag">S2</td><td>In barracks. Ask him about the Tribune — no roll required, volunteers the financial commission posting.</td></tr>
+      <tr><td class="sc ag">S3</td><td>Commands wall defence. Fights alongside party. Stays on walls, not the principia — honest duty.</td></tr>
+      <tr><td class="sc ag">S4</td><td>One slow step beside the party. Hand on gladius. "Do you." Two words.</td></tr>
+    </table>
+  </div>
+</div>
+</div>
+
+<!-- VERCINGETORIX -->
+<div id="vercin" class="tab-pane">
+<div class="card grey">
+  <div class="portrait-col">
+    <div class="portrait grey">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#100c08"/>
+        <rect x="22" y="55" width="56" height="45" rx="2" fill="#4a4838"/>
+        <path d="M34,56 Q50,46 66,56" stroke="#c8a030" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <rect x="76" y="10" width="5" height="90" rx="1" fill="#7a6040"/>
+        <polygon points="76,10 81,10 78.5,0" fill="#9a9080"/>
+        <rect x="43" y="44" width="14" height="13" fill="#b07850"/>
+        <ellipse cx="50" cy="34" rx="18" ry="20" fill="#b07850"/>
+        <ellipse cx="50" cy="18" rx="19" ry="12" fill="#a03010"/>
+        <path d="M34,40 Q50,60 66,40 Q58,52 50,54 Q42,52 34,40Z" fill="#7a4820" opacity="0.8"/>
+        <path d="M42,44 Q46,50 50,50 Q54,50 58,44" stroke="#9a9080" stroke-width="1.5" fill="none" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="badge">POTENTIAL ALLY<br>Scenes 3 · 4</div>
+  </div>
+  <div>
+    <div class="npc-name">Vercingetorix the Red</div>
+    <div class="npc-role">Germanic chieftain — leads the raid — does NOT attack first — is dying — trust track determines Sessions 3-5</div>
+    <div class="look">Early fifties. Massive frame, still dense with muscle. Red hair remarkable at his age. Iron-flecked beard. Chieftain's torc thick as your wrist. No helmet. He walks through the breach without hurrying.<br><em>"He is the calmest person in the fort right now. That is the most frightening thing about him."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl">Objective</td><td class="val">Reach the spear. Acknowledge his people's three-generation claim to its proper destruction.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Walk through the breach and take the God-Killer — or negotiate with whoever shows him respect.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Raid begins at nightfall regardless. He leads personally because the spear's reawakening was felt by spirit-sensitive warriors across three tribes.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">He is dying. A sickness, two years slow. He chose this campaign because of the spear — if it is destroyed properly, his people's three-generation wound closes. That is enough for him.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">The God-Killer is here. I can feel it from here. I came for the God-Killer. I did not come for you.</div>
+      <span class="vc">Scene 3 — walks through the breach, accented but clear Latin, looks at the party</span>
+      <div class="vl">Romans name everything they find. That is how they believe they own it.</div>
+      <div class="vl">I have been dying from a sickness for two years. I fight anyway. Your spear will not frighten me.</div>
+      <div class="vl">Your fort smells of fear. My camp smells of wood smoke. Fear is the worse smell.</div>
+    </div>
+
+    <div class="section-hdr">STAT BLOCK (Gladiator, CR 5)</div>
+    <div class="stat-block">
+      <div class="stat-name">Vercingetorix the Red — CR 5 (Gladiator) &nbsp;·&nbsp; 1800 XP killed / 800 XP talked down</div>
+      <div class="sl"><span>AC</span> 16 (mail + shield) &nbsp;·&nbsp; <span>HP</span> 112 (15d8+45) &nbsp;·&nbsp; <span>Speed</span> 30 ft</div>
+      <div class="abilities">
+        <div class="ab"><div class="sc">20</div><div class="md">(+5)</div><div class="lb">STR</div></div>
+        <div class="ab"><div class="sc">15</div><div class="md">(+2)</div><div class="lb">DEX</div></div>
+        <div class="ab"><div class="sc">16</div><div class="md">(+3)</div><div class="lb">CON</div></div>
+        <div class="ab"><div class="sc">12</div><div class="md">(+1)</div><div class="lb">INT</div></div>
+        <div class="ab"><div class="sc">12</div><div class="md">(+1)</div><div class="lb">WIS</div></div>
+        <div class="ab"><div class="sc">15</div><div class="md">(+2)</div><div class="lb">CHA</div></div>
+      </div>
+      <div class="sl"><span>Multiattack:</span> 3. <span>Spear (2H):</span> +7 to hit, 11 (2d6+4) piercing.</div>
+      <div class="sl"><span>Parry (reaction):</span> +3 AC against one attack.</div>
+      <div class="sl note">Does NOT attack first. Walks toward principia. Party blocks without violence = he stops and talks. Round 2: Persuasion DC 15 or Insight DC 13 to hold dialogue. Attack first = he fights.</div>
+    </div>
+
+    <div class="section-hdr">TRUST TRACK — set in Scene 3, pays out Sessions 3-5</div>
+    <table class="trust-table">
+      <tr><th>Level</th><th>How earned</th><th>What he shares in Session 3</th></tr>
+      <tr><td class="lvl" style="color:#8a4040">None</td><td>Killed or ignored</td><td>Nothing. Use lieutenant Arnulf — same stats, one extra exchange to reach Complete Trust.</td></tr>
+      <tr><td class="lvl" style="color:#8a7040">Low</td><td>Talked down, treated as enemy</td><td>"The spear has a name in my language. It means 'the thing that should not exist.' My grandfather helped seal it."</td></tr>
+      <tr><td class="lvl" style="color:#a09040">Medium</td><td>Acknowledged his people's claim (Persuasion DC 14)</td><td>Above + "It cannot be destroyed anywhere except a specific grove. One day's march north. My people know the way."</td></tr>
+      <tr><td class="lvl" style="color:#70a870">High</td><td>Openly respected, treated as equal</td><td>Above + "The ritual requires a willing sacrifice. Not blood. Something real. The grove knows the difference."</td></tr>
+      <tr><td class="lvl" style="color:#50c050">Complete</td><td>Proved by action — let him reach spear or showed genuine <em>audacia</em></td><td>Above + reveals he is dying. Full ally Sessions 3-4.</td></tr>
+    </table>
+
+    <div class="section-hdr">SOCIAL PATHS — SCENE 3</div>
+    <div class="trigger ag"><strong>Persuasion DC 14</strong> — acknowledge his people's legitimate claim. Standard path.</div>
+    <div class="trigger ag"><strong>Intimidation DC 14</strong> — controlled display of martial competence, not a threat. <em>Audacia</em>, not aggression. Success: "You fight well for a Roman." Immediate Medium trust.</div>
+    <div class="trigger ag"><strong>Insight DC 13</strong> — read that he is assessing, not negotiating, and respond to the assessment. Jump +1 trust level on first success.</div>
+  </div>
+</div>
+</div>
+
+<!-- QUINTUS FLAVIUS -->
+<div id="quintus" class="tab-pane">
+<div class="card ant">
+  <div class="portrait-col">
+    <div class="portrait ant">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#100808"/>
+        <rect x="30" y="58" width="40" height="42" rx="2" fill="#3a3828"/>
+        <rect x="28" y="54" width="44" height="8" rx="1" fill="#4a4838"/>
+        <rect x="36" y="22" width="28" height="18" rx="2" fill="#4a4840"/>
+        <rect x="38" y="36" width="24" height="12" fill="#3a3830"/>
+        <rect x="44" y="48" width="12" height="10" fill="#a08868"/>
+        <ellipse cx="50" cy="38" rx="15" ry="16" fill="#a08868"/>
+        <ellipse cx="50" cy="25" rx="14" ry="8" fill="#8a8878"/>
+        <rect x="0" y="0" width="100" height="100" fill="#8a1010" opacity="0.05"/>
+      </svg>
+    </div>
+    <div class="badge ant">ANTAGONIST (hidden)<br>Scenes 1 · 2</div>
+  </div>
+  <div>
+    <div class="npc-name ant">Quintus Flavius</div>
+    <div class="npc-role">Sleeper agent — Sextus' killer — embedded 6 months — Brutus' tool, not Lucius'</div>
+    <div class="look">Forties. Mid-height, legionary-standard build. Close-cropped greying hair. Unremarkable. Clean frontier soldier's traveling gear. Walks like a legionary who already knows the layout. Never asks for directions.<br><em>"He holds his shoulders wrong for a servant. You've seen that posture on gate sentries."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl ant">Objective</td><td class="val">Depart unsuspected before the investigation reaches him.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Blend into the Tribune's entourage. Assess party capability. Exit with the escort at dawn.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Moving through entourage, checking stable exits, assessing party from a distance. Submitted transfer papers this morning — fast. Race against the party investigation window.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">He killed Sextus. He works for Senator Brutus directly — not Tribune Lucius. The Tribune may not know him personally. He was embedded for six months.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">I was paid to observe. I observed. I sent reports. I did not harm anyone in this fort.</div>
+      <span class="vc">If confronted with evidence — he denies the murder; this line is partly false</span>
+      <div class="vl">[Silence. Assessment. Measured withdrawal.]</div>
+      <span class="vc">Default when party is near — does not engage, does not react overtly</span>
+    </div>
+
+    <div class="section-hdr">STAT BLOCK (Spy)</div>
+    <div class="stat-block">
+      <div class="stat-name ant">Quintus Flavius — CR 1 (Spy, military-trained)</div>
+      <div class="sl"><span>AC</span> 12 &nbsp;·&nbsp; <span>HP</span> 27 (6d8) &nbsp;·&nbsp; <span>Speed</span> 30 ft</div>
+      <div class="sl"><span>Skills</span> Deception +5, Insight +4, Perception +6 (advantage on surprise), Stealth +4</div>
+      <div class="sl"><span>Shortsword:</span> +4 to hit, 1d6+2. <span>Sneak Attack (1d6)</span> if advantage or ally adjacent.</div>
+      <div class="sl note">Flees before fighting. If cornered: hostage threat first, violence second. Does not fight party head-on.</div>
+    </div>
+
+    <div class="section-hdr">DETECTION TRACK</div>
+    <div class="trigger"><strong>Perception DC 15 (active, watching entourage):</strong> Sees him orient toward stables, not barracks. He knows the fort layout.</div>
+    <div class="trigger"><strong>Scene 0 clues connect:</strong> Boot print = legionary-issue, small size, inside heel heavily worn, left toward stables. Shorter than Sextus. Right-handed. Professional.</div>
+    <div class="trigger"><strong>d6 Random Encounter 5 (Scene 2):</strong> Two soldiers mention "Decanus Quintus Flavius, who left with the Tribune this morning" before settling a debt of three denarii. Name logged.</div>
+    <div class="trigger"><strong>If identified and arrested:</strong> Session 3 Brutus thread unlocked early. Full contact chain available in exchange for his life + two-hour head start.</div>
+
+    <div class="section-hdr">SESSION STATE</div>
+    <table class="timeline">
+      <tr><th>Scene</th><th>Location / Action</th></tr>
+      <tr><td class="sc ant">S0</td><td>Already fled north gate after killing Sextus. Merged into Tribune's arriving entourage at south gate — hidden in plain sight.</td></tr>
+      <tr><td class="sc ant">S1</td><td>Third row of entourage. Perception DC 15: already oriented toward stables. Varro suspects — won't name him yet.</td></tr>
+      <tr><td class="sc ant">S2</td><td>Race: attempting to depart with Tribune's escort. Submitted transfer papers. Investigation window closing.</td></tr>
+      <tr><td class="sc">S3-4</td><td>Gone if not identified. Does not participate in raid.</td></tr>
+      <tr><td class="sc">S4+</td><td>Not identified: surfaces Session 4 as potential Frumentarius intelligence contact. Identified+arrested: Brutus thread opens early.</td></tr>
+    </table>
+  </div>
+</div>
+</div>
+
+</div><!-- #content -->
+
+<script>
+function show(id, btn) {
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
