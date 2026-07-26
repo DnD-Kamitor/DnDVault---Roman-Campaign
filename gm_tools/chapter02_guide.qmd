@@ -195,6 +195,8 @@ Roman legal authority (real orders, genuine Senate power) vs. the truth of what 
 | `Germanic_Spearman.rptok` | 3 | Germanic spearman (×6) — ladder assault, framea throw first |
 | `Germanic_Berserker.rptok` | 3 | Germanic berserker (×2) — leads ladders, francisca → reckless greataxe |
 | `Ogre.rptok` | 3 | Ogre (×1) — living battering ram vs. west gate, 3d6+4/round |
+| `Druid.rptok` | 3 | Germanic Druid (×2) — chanting, Fog Cloud + Entangle, kill priority |
+| `S2_Equipment_Cache.rptok` | 3 | Equipment Cache — place centre courtyard; right-click for supply macro |
 | `Guard.rptok` | 0, 3 | Fort legionaries |
 | `Scout.rptok` | 2 | Sentry/patrol |
 | `Brennus.rptok` | 2 | Brennus (vicus tavern) |
@@ -624,7 +626,7 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 | **Beat 1** | Three-directional drums. Torchlight. Varro shouting for walls. Praetorians conspicuously absent. |
 | **Beat 2 — THE MOMENT** | Vercingetorix walks through the breach, calm, through chaos, and looks at the party. *"I came for the God-Killer. I did not come for you."* |
 | **Beat 3** | How the party handles Vercingetorix determines their diplomatic position for Sessions 3–5. The drums stop. Tribune appears. |
-| **XP / reward** | Archer ×4: 50 XP each (200 total). Spearman ×6: 100 XP each (600 total). Berserker ×2: 450 XP each (900 total). Ogre ×1: 450 XP. Vercingetorix: 1800 XP killed / 800 XP talked down. Phase 1–2 total: 2150 XP. |
+| **XP / reward** | Archer ×4: 50 XP each (200). Spearman ×6: 100 XP each (600). Berserker ×2: 450 XP each (900). Ogre ×1: 450 XP. Druid ×2: 450 XP each (900). Vercingetorix: 1800 XP killed / 800 XP talked down. Phase 1–2 total: 3050 XP. |
 | **If they skip** | Cannot be skipped — raid happens regardless |
 | **Three clues** | ① Tribune moves to principia immediately (Perception DC 14) · ② Drums synchronized from three directions — staged (Survival DC 12) · ③ Varro after raid: "They defended the artifact. Ask yourself why." |
 | **Handouts** | None |
@@ -722,6 +724,18 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 > **Greatclub** +6 to hit, reach 5 ft. *Hit:* 13 (2d8+4) bludgeoning. **Javelin** +6 to hit, 30/120 ft. *Hit:* 11 (2d6+4) piercing (carries 3).  
 > INT 5: cannot be tricked or deceived. Does not pursue. Gate. Gate. Gate. Macro: `ogre_attacks.mts`
 
+**Germanic Druid** ×2 (zone 9, behind boulders — Phases 1–2, CHANTING) — CR 2 · 450 XP each
+
+> **AC** 11 (16 w/ Barkskin) · **HP** 27 (5d8+5) · **Speed** 30 ft · STR 10 DEX 12 CON 13 INT 12 WIS 15 CHA 11
+>
+> **Chanting Buff (passive, both alive):** All Germanic fighters +1 to attack rolls and advantage on fear saves. Audible from wall (Perception DC 14). Arcana DC 13 to identify as magical.  
+> **Fog Cloud (Druid A, Round 1):** 20-ft radius sphere, 120 ft range, Concentration. All inside heavily obscured = blind. Wall defenders lose aimed ranged attacks into fog.  
+> **Entangle (Druid B, Round 1):** STR save DC 12 or Restrained (speed 0), 90 ft range, Concentration. 20-ft square. Restrained on ladder = falls (1d6 per 10 ft).  
+> **Spike Growth (2nd level, Phase 2):** 2d4 piercing per 5 ft moved through, 150 ft range. Looks like natural terrain (Perception DC 15).  
+> **Hold Person (2nd level):** WIS save DC 12 or Paralyzed (auto-crit on all hits). Use on party's most dangerous melee fighter.  
+> **Produce Flame (cantrip):** +4 to hit, 30 ft. Hit: 1d8+4 fire. **Thunderwave (1st, emergency):** CON save DC 12 or 2d8 thunder + pushed 10 ft.  
+> Never advance past boulders. Flee if below 10 HP — Germanic morale drops visibly when chanting stops. Macro: `germanic_druid_attacks.mts`
+
 **Vercingetorix the Red** ×1 — CR 5 (Gladiator) · 1800 XP killed / 800 XP talked down
 
 > **AC** 16 · **HP** 112 (15d8+45) · **Speed** 30 ft
@@ -742,6 +756,7 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 4. Ogre — 9 (acts automatically each round on gate)
 5. Germanic Spearmen — 8 (new wave mounts ladder each round Phase 1)
 6. Germanic Archers — 6 (shoot from zone 9, stationary)
+7. Druid A / Druid B — 7 (cast from zone 9; Druid A: Fog Cloud R1, Druid B: Entangle R1)
 
 **Round-by-round guide (Phase 3):**
 - **Round 1:** Vercingetorix enters breach. Speaks his line. Does not attack.
@@ -754,6 +769,7 @@ Ask Varro about the Tribune. No roll required — he volunteers: *"That Tribune 
 - Berserkers → below half HP: Reckless Attack every round without fail. They do not retreat
 - Ogre → gate breached: turns and attacks anyone blocking his entry with greatclub. Can be lured away from gate with ranged fire (INT 5 — distracted if hurt repeatedly from a different direction)
 - Vercingetorix → party offers to "let him reach the spear": he stops and genuinely considers; this was not expected
+- Druids → lose concentration: immediately recast Entangle &gt; Fog Cloud. Below 10 HP → flee treeline. Kill priority for party: silencing one druid costs the raid its buff AND its control spell
 
 **Terrain:**
 - Wall palisade: Half cover vs. arrows from below

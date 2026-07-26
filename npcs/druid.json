@@ -33,7 +33,7 @@
   "condition_immunities": "",
   "senses": "Passive Perception 14",
   "languages": "Druidic, Germanic",
-  "macro_file": "",
+  "macro_file": "germanic_druid_attacks.mts",
   "token_color": "#1a3a1a",
   "portrait_file": "portraits/svetoslav_roerich1.png",
   "notes": "CR 2. Spellcasting WIS DC 12. Key spells: Fog Cloud, Entangle, Spike Growth. Weak in melee.",

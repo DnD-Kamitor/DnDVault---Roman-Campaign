@@ -18,8 +18,12 @@
     "CHA": 8
   },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Athletics"],
-  "skill_overrides": {"Athletics": 4},
+  "skill_proficiencies": [
+    "Athletics"
+  ],
+  "skill_overrides": {
+    "Athletics": 4
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -27,7 +31,7 @@
   "languages": "Germanic",
   "macro_file": "germanic_spearman_attacks.mts",
   "token_color": "#4a3a20",
-  "portrait_file": "",
+  "portrait_file": "portraits/franz_von_defregger2.png",
   "notes": "CR 1/2. Framea (thrown or melee) + seax backup. Pack Tactics. Wall assault -- ladders. Half speed on ladder, no Dash.",
   "gm_notes": "Session 2 raid, Phase 1-2, ladder climbers. Eight spearmen advance in two groups of four. Turn 1: throw framea at wall defenders before reaching the ladders (range 30/120). Turn 2-3: climbing (half speed, no Dash, no reaction while on ladder). Turn 3-4: reach parapet -- Pack Tactics immediately if another spearman is adjacent. Pack Tactics: advantage on attack rolls when an ally is within 5 ft of the target. Drops shield when climbing ladder (loses +1 AC until they grab it off their back -- DM discretion).",
   "session": 2

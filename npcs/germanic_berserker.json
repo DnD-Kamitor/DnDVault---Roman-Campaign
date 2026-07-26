@@ -18,8 +18,14 @@
     "CHA": 9
   },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Athletics", "Intimidation"],
-  "skill_overrides": {"Athletics": 5, "Intimidation": 3},
+  "skill_proficiencies": [
+    "Athletics",
+    "Intimidation"
+  ],
+  "skill_overrides": {
+    "Athletics": 5,
+    "Intimidation": 3
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -27,7 +33,7 @@
   "languages": "Germanic",
   "macro_file": "germanic_berserker_attacks.mts",
   "token_color": "#6a2a10",
-  "portrait_file": "",
+  "portrait_file": "portraits/delacroix_eugene_ferdinand_victor1.png",
   "notes": "CR 2. Francisca throw THEN greataxe. Reckless Attack. Danger Sense. Leads the ladder charge for Vercingetorix.",
   "gm_notes": "Session 2 raid, Phase 1-2, leads ladder assault. Two berserkers, one per western ladder. Turn 1: throw francisca at the nearest wall defender before closing (range 20/60, 1d6+3 slashing). Then charge ladder. Half speed on ladder. Reckless Attack the moment they reach the parapet -- this is the wall's most dangerous moment. Danger Sense: advantage on Dex saves against effects they can see (e.g. ballista fire, oil flasks). These are Vercingetorix's champions, not cult-maddened soldiers. They are angry, disciplined, and here for the spear.",
   "session": 2
