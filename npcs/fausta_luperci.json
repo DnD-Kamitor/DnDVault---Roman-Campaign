@@ -9,10 +9,27 @@
   "ac": 18,
   "ac_note": "divine armor",
   "speed": "35 ft.",
-  "ability_scores": {"STR": 20, "DEX": 16, "CON": 18, "INT": 14, "WIS": 16, "CHA": 18},
-  "saving_throw_proficiencies": ["STR", "CON", "WIS"],
-  "skill_proficiencies": ["Athletics", "Perception"],
-  "skill_overrides": {"Athletics": 9, "Perception": 7},
+  "ability_scores": {
+    "STR": 20,
+    "DEX": 16,
+    "CON": 18,
+    "INT": 14,
+    "WIS": 16,
+    "CHA": 18
+  },
+  "saving_throw_proficiencies": [
+    "STR",
+    "CON",
+    "WIS"
+  ],
+  "skill_proficiencies": [
+    "Athletics",
+    "Perception"
+  ],
+  "skill_overrides": {
+    "Athletics": 9,
+    "Perception": 7
+  },
   "resistances": "Bludgeoning, Piercing, Slashing from non-magical weapons",
   "immunities": "Poison, Radiant",
   "condition_immunities": "Charmed, Exhaustion, Frightened",
@@ -20,8 +37,8 @@
   "languages": "Latin, Common, understands all languages",
   "macro_file": "",
   "token_color": "#b08040",
-  "portrait_file": "",
+  "portrait_file": "portraits/gaston_bussiere1.png",
   "notes": "CR 10 divine champion. AC 18. HP 145. Multiattack: 3 spear attacks. Spear +9 (1d8+5 piercing + 1d6 radiant). Frozen Advance: difficult terrain does not slow her; DC 15 Con save when she enters within 5ft or reduce speed by 10. Legendary Defiance 1/round: on drop below 50HP gain 20 temp HP and auto-succeed one save. Mars calls Enough after 10 rounds or 0 HP.",
-  "gm_notes": "Session 5 divine champion. She held the line at the Frozen Rhine. She died alone. She serves Mars. History DC 14 passive: player knows the battle was real, she was real. She respects endurance and discipline — not tricks. Feints have no effect. She rotates targets after 2 rounds vs. same character. Fausta kneels on defeat; Mars inclines his head. Sand drinks her form.",
+  "gm_notes": "Session 5 divine champion. She held the line at the Frozen Rhine. She died alone. She serves Mars. History DC 14 passive: player knows the battle was real, she was real. She respects endurance and discipline \u2014 not tricks. Feints have no effect. She rotates targets after 2 rounds vs. same character. Fausta kneels on defeat; Mars inclines his head. Sand drinks her form.",
   "session": 5
 }

@@ -9,10 +9,27 @@
   "ac": 15,
   "ac_note": "studded leather",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 15, "DEX": 16, "CON": 14, "INT": 14, "WIS": 11, "CHA": 14},
-  "saving_throw_proficiencies": ["STR", "DEX", "WIS"],
-  "skill_proficiencies": ["Athletics", "Deception"],
-  "skill_overrides": {"Athletics": 4, "Deception": 4},
+  "ability_scores": {
+    "STR": 15,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 14,
+    "WIS": 11,
+    "CHA": 14
+  },
+  "saving_throw_proficiencies": [
+    "STR",
+    "DEX",
+    "WIS"
+  ],
+  "skill_proficiencies": [
+    "Athletics",
+    "Deception"
+  ],
+  "skill_overrides": {
+    "Athletics": 4,
+    "Deception": 4
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +37,7 @@
   "languages": "Common",
   "macro_file": "bandit_captain_attacks.mts",
   "token_color": "#5c3a1a",
-  "portrait_file": "",
+  "portrait_file": "portraits/domenikos_theotokopoulos1.png",
   "notes": "CR 2. Multiattack. Reaction parry. Commands bandit group.",
   "gm_notes": "Session 2 road ambush leader. Multiattack: one bonus attack with dagger alongside main attacks. Parry reaction: +3 AC against one melee attack per round. Has information about the road and who has been using it -- a Persuasion DC 14 or Intimidation DC 16 after capture can extract it.",
   "session": 2

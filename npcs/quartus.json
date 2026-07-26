@@ -9,10 +9,21 @@
   "ac": 11,
   "ac_note": "natural",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 15, "DEX": 11, "CON": 14, "INT": 10, "WIS": 10, "CHA": 11},
+  "ability_scores": {
+    "STR": 15,
+    "DEX": 11,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 10,
+    "CHA": 11
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Intimidation"],
-  "skill_overrides": {"Intimidation": 2},
+  "skill_proficiencies": [
+    "Intimidation"
+  ],
+  "skill_overrides": {
+    "Intimidation": 2
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +31,7 @@
   "languages": "Common, Latin",
   "macro_file": "",
   "token_color": "#4a4a4a",
-  "portrait_file": "",
+  "portrait_file": "portraits/jean-baptiste-camille_corot1.png",
   "notes": "Quartermaster. Runs supply office. Processes new arrivals. Does his job.",
   "gm_notes": "Runs the quartermaster office. Processes new arrivals. Manages supplies. Neutral -- does his job. Fort walk guide in Session 0 prologue alongside Varro.",
   "session": 0

@@ -9,10 +9,34 @@
   "ac": 12,
   "ac_note": "leather armor",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 10, "DEX": 15, "CON": 10, "INT": 14, "WIS": 14, "CHA": 16},
-  "saving_throw_proficiencies": ["DEX", "WIS"],
-  "skill_proficiencies": ["Deception", "Insight", "Investigation", "Perception", "Persuasion", "Stealth"],
-  "skill_overrides": {"Deception": 5, "Insight": 4, "Investigation": 5, "Perception": 6, "Persuasion": 5, "Stealth": 4},
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 15,
+    "CON": 10,
+    "INT": 14,
+    "WIS": 14,
+    "CHA": 16
+  },
+  "saving_throw_proficiencies": [
+    "DEX",
+    "WIS"
+  ],
+  "skill_proficiencies": [
+    "Deception",
+    "Insight",
+    "Investigation",
+    "Perception",
+    "Persuasion",
+    "Stealth"
+  ],
+  "skill_overrides": {
+    "Deception": 5,
+    "Insight": 4,
+    "Investigation": 5,
+    "Perception": 6,
+    "Persuasion": 5,
+    "Stealth": 4
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,9 +44,9 @@
   "languages": "Latin, Germanic (basic), Greek (basic)",
   "macro_file": "",
   "token_color": "#4a4a4a",
-  "portrait_file": "",
+  "portrait_file": "portraits/john_william_godward3.png",
   "notes": "Runs the vicus mail relay. Delivers messages faster than the military courier, no questions asked. 2 asses per letter.",
-  "gm_notes": "Objective: keep her relay network operational. Goal: stay neutral in the political conflict while holding information as her only protection. Agenda: record everything that passes through her house; she has 15 years of correspondence logs. Secret: she knows the name of the soldier who used military papyrus to send a letter to Brutus's household in Rome. She will disclose this at DC 18 Persuasion + Trusted relationship only. Her DC 15 Persuasion secure route bypasses all official checkpoints. She does not perform warmth — when she has information the party has earned, she gives it in one precise sentence and waits. Contact network reaches Carnuntum, Eboracum, three civilian settlements between here and the Danube. She has not lost a letter in fifteen years.",
+  "gm_notes": "Objective: keep her relay network operational. Goal: stay neutral in the political conflict while holding information as her only protection. Agenda: record everything that passes through her house; she has 15 years of correspondence logs. Secret: she knows the name of the soldier who used military papyrus to send a letter to Brutus's household in Rome. She will disclose this at DC 18 Persuasion + Trusted relationship only. Her DC 15 Persuasion secure route bypasses all official checkpoints. She does not perform warmth \u2014 when she has information the party has earned, she gives it in one precise sentence and waits. Contact network reaches Carnuntum, Eboracum, three civilian settlements between here and the Danube. She has not lost a letter in fifteen years.",
   "objective": "Keep her relay operating. Information is the only protection a civilian widow has here.",
   "goal": "Identify who is using her network for dangerous messages before it gets her killed.",
   "agenda": "Remain visibly neutral while being the best-informed civilian on the frontier.",

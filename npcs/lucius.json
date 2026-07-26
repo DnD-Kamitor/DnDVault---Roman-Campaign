@@ -9,10 +9,30 @@
   "ac": 15,
   "ac_note": "studded leather",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 11, "DEX": 16, "CON": 14, "INT": 13, "WIS": 11, "CHA": 10},
-  "saving_throw_proficiencies": ["DEX", "INT"],
-  "skill_proficiencies": ["Athletics", "Deception", "Perception", "Stealth"],
-  "skill_overrides": {"Athletics": 3, "Deception": 6, "Perception": 3, "Stealth": 9},
+  "ability_scores": {
+    "STR": 11,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 13,
+    "WIS": 11,
+    "CHA": 10
+  },
+  "saving_throw_proficiencies": [
+    "DEX",
+    "INT"
+  ],
+  "skill_proficiencies": [
+    "Athletics",
+    "Deception",
+    "Perception",
+    "Stealth"
+  ],
+  "skill_overrides": {
+    "Athletics": 3,
+    "Deception": 6,
+    "Perception": 3,
+    "Stealth": 9
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +40,7 @@
   "languages": "Common, Latin",
   "macro_file": "",
   "token_color": "#8B1A1A",
-  "portrait_file": "",
+  "portrait_file": "portraits/byron1.png",
   "notes": "AC 15 (studded leather). Tribune. Arrives Session 1. Performing confidence as protection.",
   "gm_notes": "Brutus's illegitimate son. Mission: destroy the spear in a way that gives Brutus what he needs without anyone knowing Lucius was involved. Performing confidence -- it is his protection against being discovered as ordinary. Arrives Session 1 via the gate; Corvinus glances at the staircase twice before he arrives.",
   "objective": "Destroy the spear and give Brutus what he needs with zero evidence of involvement.",

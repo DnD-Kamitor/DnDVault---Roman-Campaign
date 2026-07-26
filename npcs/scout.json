@@ -9,10 +9,27 @@
   "ac": 13,
   "ac_note": "leather",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 11, "DEX": 14, "CON": 12, "INT": 11, "WIS": 13, "CHA": 11},
+  "ability_scores": {
+    "STR": 11,
+    "DEX": 14,
+    "CON": 12,
+    "INT": 11,
+    "WIS": 13,
+    "CHA": 11
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Nature", "Perception", "Stealth", "Survival"],
-  "skill_overrides": {"Nature": 4, "Perception": 5, "Stealth": 6, "Survival": 5},
+  "skill_proficiencies": [
+    "Nature",
+    "Perception",
+    "Stealth",
+    "Survival"
+  ],
+  "skill_overrides": {
+    "Nature": 4,
+    "Perception": 5,
+    "Stealth": 6,
+    "Survival": 5
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +37,7 @@
   "languages": "Common",
   "macro_file": "scout_attacks.mts",
   "token_color": "#3a4a2a",
-  "portrait_file": "",
+  "portrait_file": "portraits/nathaniel_jocelyn1.png",
   "notes": "CR 1/2. Multiattack. Keen Hearing and Sight.",
   "gm_notes": "Sessions 2-3. Keen Hearing and Sight: advantage on Wisdom (Perception) checks. Used as outriders and advance elements for both Roman and Germanic forces.",
   "session": 2

@@ -9,10 +9,26 @@
   "ac": 17,
   "ac_note": "splint",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 16, "DEX": 13, "CON": 14, "INT": 10, "WIS": 11, "CHA": 10},
-  "saving_throw_proficiencies": ["STR", "CON"],
-  "skill_proficiencies": ["Athletics", "Perception"],
-  "skill_overrides": {"Athletics": 5, "Perception": 2},
+  "ability_scores": {
+    "STR": 16,
+    "DEX": 13,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 11,
+    "CHA": 10
+  },
+  "saving_throw_proficiencies": [
+    "STR",
+    "CON"
+  ],
+  "skill_proficiencies": [
+    "Athletics",
+    "Perception"
+  ],
+  "skill_overrides": {
+    "Athletics": 5,
+    "Perception": 2
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +36,7 @@
   "languages": "Common, Latin",
   "macro_file": "veteran_attacks.mts",
   "token_color": "#8B6914",
-  "portrait_file": "",
+  "portrait_file": "portraits/alexey_petrovich_antropov1.png",
   "notes": "AC 17 (splint). Centurion. Solid, steady, protective of his men. Fort walk guide in Session 0 prologue.",
   "gm_notes": "Objective: retire safely to his farm. Goal: protect his men. Agenda: stay out of political games. Secret: knows Corvinus is compromised and has stayed quiet for 20 years. Will act if given a reason -- not a good argument, an actual reason. Key question: 'What do you know about Corvinus that you haven't reported?'",
   "objective": "Retire safely to his farm in Campania.",

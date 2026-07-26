@@ -9,10 +9,28 @@
   "ac": 15,
   "ac_note": "breastplate",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 11, "DEX": 12, "CON": 12, "INT": 16, "WIS": 14, "CHA": 18},
-  "saving_throw_proficiencies": ["WIS", "CHA"],
-  "skill_proficiencies": ["Deception", "Insight", "Persuasion"],
-  "skill_overrides": {"Deception": 8, "Insight": 6, "Persuasion": 8},
+  "ability_scores": {
+    "STR": 11,
+    "DEX": 12,
+    "CON": 12,
+    "INT": 16,
+    "WIS": 14,
+    "CHA": 18
+  },
+  "saving_throw_proficiencies": [
+    "WIS",
+    "CHA"
+  ],
+  "skill_proficiencies": [
+    "Deception",
+    "Insight",
+    "Persuasion"
+  ],
+  "skill_overrides": {
+    "Deception": 8,
+    "Insight": 6,
+    "Persuasion": 8
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +38,7 @@
   "languages": "Common, Latin, Elvish",
   "macro_file": "",
   "token_color": "#8B1A1A",
-  "portrait_file": "",
+  "portrait_file": "portraits/velazquez_diego1.png",
   "notes": "AC 15 (breastplate). Senator. Never present villain. Operates entirely through proxies.",
   "gm_notes": "Objective: destroy the spear before it destabilizes Rome -- he genuinely believes he is saving Rome. Goal: use the party as proxies without them knowing he directed them. Agenda: maintain deniability at every level. Secret: his illegitimate son is Lucius the Tribune, who is his field agent. Owes nothing -- Corvinus owes him. The arguments are good. The conclusion is wrong.",
   "objective": "Destroy the spear before it destabilizes Rome -- genuinely believes he is saving Rome.",

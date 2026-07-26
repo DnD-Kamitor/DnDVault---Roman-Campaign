@@ -9,9 +9,19 @@
   "ac": 12,
   "ac_note": "hide armor",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 13, "DEX": 11, "CON": 12, "INT": 8, "WIS": 11, "CHA": 13},
+  "ability_scores": {
+    "STR": 13,
+    "DEX": 11,
+    "CON": 12,
+    "INT": 8,
+    "WIS": 11,
+    "CHA": 13
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Athletics", "Survival"],
+  "skill_proficiencies": [
+    "Athletics",
+    "Survival"
+  ],
   "skill_overrides": {},
   "resistances": "",
   "immunities": "",
@@ -20,7 +30,7 @@
   "languages": "Germanic",
   "macro_file": "tribal_warrior_attacks.mts",
   "token_color": "#5c3a2a",
-  "portrait_file": "",
+  "portrait_file": "portraits/franz_von_defregger2.png",
   "notes": "Germanic village firekeeper. Laughs with his whole body. Resents Corvinus, likes Varro.",
   "gm_notes": "Keeps the village fires and the fire-related rituals. His laughter is genuine and frequent; he finds Romans consistently baffling and endearing. His resentment of Corvinus is personal -- Roman soldiers damaged a sacred fire site during a previous patrol, and Corvinus's response was to blame the tribe. His warmth toward Varro stems from a specific incident (Varro stopped three soldiers from desecrating the same site later; Arnulf saw it). Offers news from the Limes to party members who treat him as a peer. Entry point: bringing trade goods, sharing a meal, working alongside him physically. Voice line: 'Romans eat like wolves: fast, suspicious, grateful afterward.'",
   "objective": "Keep the village fires and the tribal memory they carry.",

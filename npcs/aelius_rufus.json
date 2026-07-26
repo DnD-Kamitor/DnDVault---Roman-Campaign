@@ -9,10 +9,21 @@
   "ac": 10,
   "ac_note": "no armor (bandaged, recovering in medicus)",
   "speed": "20 ft.",
-  "ability_scores": {"STR": 13, "DEX": 10, "CON": 12, "INT": 11, "WIS": 12, "CHA": 10},
+  "ability_scores": {
+    "STR": 13,
+    "DEX": 10,
+    "CON": 12,
+    "INT": 11,
+    "WIS": 12,
+    "CHA": 10
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Perception"],
-  "skill_overrides": {"Perception": 3},
+  "skill_proficiencies": [
+    "Perception"
+  ],
+  "skill_overrides": {
+    "Perception": 3
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,9 +31,9 @@
   "languages": "Common, Latin",
   "macro_file": "",
   "token_color": "#2a2a4a",
-  "portrait_file": "",
+  "portrait_file": "portraits/carl_fredric_breda1.png",
   "objective": "Tell whoever saved him what he witnessed in Session 1",
   "notes": "Wounded survivor from Session 1. Non-combatant. Key witness.",
-  "gm_notes": "Recovering in the medicus. Bandaged, mobile but slow. If party visits: no check — he recognises them and talks freely. Key intel: he heard Marius say 'Give it to me and I will keep you safe' while looking directly at whoever held the spear. He does not know why the spear spoke to that specific person — only that it did. Pass this detail to Cassia for her to react. He is not dangerous and will not fight under any circumstances. He is simply a scared soldier who saw something he cannot explain.",
+  "gm_notes": "Recovering in the medicus. Bandaged, mobile but slow. If party visits: no check \u2014 he recognises them and talks freely. Key intel: he heard Marius say 'Give it to me and I will keep you safe' while looking directly at whoever held the spear. He does not know why the spear spoke to that specific person \u2014 only that it did. Pass this detail to Cassia for her to react. He is not dangerous and will not fight under any circumstances. He is simply a scared soldier who saw something he cannot explain.",
   "session": 2
 }

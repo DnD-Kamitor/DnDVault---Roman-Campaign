@@ -9,7 +9,14 @@
   "ac": 12,
   "ac_note": "leather",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 11, "DEX": 12, "CON": 12, "INT": 10, "WIS": 10, "CHA": 10},
+  "ability_scores": {
+    "STR": 11,
+    "DEX": 12,
+    "CON": 12,
+    "INT": 10,
+    "WIS": 10,
+    "CHA": 10
+  },
   "saving_throw_proficiencies": [],
   "skill_proficiencies": [],
   "skill_overrides": {},
@@ -20,7 +27,7 @@
   "languages": "Common",
   "macro_file": "bandit_attacks.mts",
   "token_color": "#5c3a1a",
-  "portrait_file": "",
+  "portrait_file": "portraits/francisco_goya_lucientes2.png",
   "notes": "CR 1/8. Road bandit. Session 2.",
   "gm_notes": "Session 2 road ambush. Standard roadside brigands -- opportunistic, not fanatical. Will flee when bloodied unless cornered or under orders.",
   "session": 2

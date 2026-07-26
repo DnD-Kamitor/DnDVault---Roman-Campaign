@@ -9,7 +9,14 @@
   "ac": 10,
   "ac_note": "natural",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 10, "DEX": 10, "CON": 10, "INT": 10, "WIS": 10, "CHA": 10},
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 10,
+    "CON": 10,
+    "INT": 10,
+    "WIS": 10,
+    "CHA": 10
+  },
   "saving_throw_proficiencies": [],
   "skill_proficiencies": [],
   "skill_overrides": {},
@@ -20,7 +27,7 @@
   "languages": "Common",
   "macro_file": "",
   "token_color": "#4a4a4a",
-  "portrait_file": "",
+  "portrait_file": "portraits/franz_von_defregger3.png",
   "notes": "Runs the vicus tavern. Information broker. Neutral but observant.",
   "gm_notes": "Runs the vicus tavern. Information broker -- everything that passes through the vicus passes through Brennus eventually. Neutral but observant. Knows the locals, the soldiers, the rumors.",
   "session": 0

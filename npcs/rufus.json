@@ -9,10 +9,21 @@
   "ac": 14,
   "ac_note": "hide",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 18, "DEX": 12, "CON": 17, "INT": 10, "WIS": 10, "CHA": 10},
+  "ability_scores": {
+    "STR": 18,
+    "DEX": 12,
+    "CON": 17,
+    "INT": 10,
+    "WIS": 10,
+    "CHA": 10
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Athletics"],
-  "skill_overrides": {"Athletics": 6},
+  "skill_proficiencies": [
+    "Athletics"
+  ],
+  "skill_overrides": {
+    "Athletics": 6
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +31,7 @@
   "languages": "Common, Latin",
   "macro_file": "",
   "token_color": "#4a4a4a",
-  "portrait_file": "",
+  "portrait_file": "portraits/jean-baptiste-camille_corot2.png",
   "notes": "Fort smith. Knows every weapon in the armory. Will repair equipment for commendationes.",
   "gm_notes": "Fort smith. Knows every weapon in the armory. Will repair equipment for commendationes. Camp Level upgrade trigger.",
   "session": 1

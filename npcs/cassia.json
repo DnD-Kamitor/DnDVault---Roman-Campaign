@@ -9,10 +9,26 @@
   "ac": 12,
   "ac_note": "15 with mage armor",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 9, "DEX": 14, "CON": 11, "INT": 17, "WIS": 12, "CHA": 11},
-  "saving_throw_proficiencies": ["INT", "WIS"],
-  "skill_proficiencies": ["Arcana", "History"],
-  "skill_overrides": {"Arcana": 6, "History": 6},
+  "ability_scores": {
+    "STR": 9,
+    "DEX": 14,
+    "CON": 11,
+    "INT": 17,
+    "WIS": 12,
+    "CHA": 11
+  },
+  "saving_throw_proficiencies": [
+    "INT",
+    "WIS"
+  ],
+  "skill_proficiencies": [
+    "Arcana",
+    "History"
+  ],
+  "skill_overrides": {
+    "Arcana": 6,
+    "History": 6
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +36,7 @@
   "languages": "Common, Latin, Elvish",
   "macro_file": "",
   "token_color": "#8B6914",
-  "portrait_file": "",
+  "portrait_file": "portraits/john_william_godward1.png",
   "notes": "AC 12 (15 with mage armor). Augur assigned to the fort. Knows far more than she reveals. Troubled.",
   "gm_notes": "Objective: prevent the spear from leaving the vault. Goal: make the party understand what it is before it's too late. Agenda: appear to cooperate with Corvinus while sabotaging his plan. Secret: she is partially shadow-touched herself from years of augury near the spear. Knows what the spear is. Knows what it wants. Knows what she is.",
   "objective": "Prevent the spear from leaving the vault under any circumstances.",

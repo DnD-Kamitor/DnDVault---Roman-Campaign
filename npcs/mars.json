@@ -9,8 +9,22 @@
   "ac": 22,
   "ac_note": "divine armor",
   "speed": "40 ft.",
-  "ability_scores": {"STR": 28, "DEX": 16, "CON": 24, "INT": 18, "WIS": 20, "CHA": 22},
-  "saving_throw_proficiencies": ["STR", "DEX", "CON", "INT", "WIS", "CHA"],
+  "ability_scores": {
+    "STR": 28,
+    "DEX": 16,
+    "CON": 24,
+    "INT": 18,
+    "WIS": 20,
+    "CHA": 22
+  },
+  "saving_throw_proficiencies": [
+    "STR",
+    "DEX",
+    "CON",
+    "INT",
+    "WIS",
+    "CHA"
+  ],
   "skill_proficiencies": [],
   "skill_overrides": {},
   "resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
@@ -20,7 +34,7 @@
   "languages": "All",
   "macro_file": "mars_attacks.mts",
   "token_color": "#8B0000",
-  "portrait_file": "",
+  "portrait_file": "portraits/jean-leon_gerome1.png",
   "notes": "CR 20+. Divine antagonist. Legendary actions x3. Legendary resistances (3). Session 5 only.",
   "gm_notes": "Session 5 final encounter. Legendary Resistances (3/day): auto-succeed on failed saves. Legendary Actions (3/round, end of others' turns): Strike, Divine Presence (DC 18 WIS or frightened), or Summon Undead. Three possible outcomes: destroy the spear (Brutus wins), bind the spear again (status quo), or redirect Mars's attention (players win). The encounter has multiple possible resolutions -- divine + political + personal threads all resolve here. See chapter5.qmd for full mechanics.",
   "objective": "Reclaim the spear that was bound against his will three generations ago.",

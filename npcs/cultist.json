@@ -9,10 +9,23 @@
   "ac": 12,
   "ac_note": "leather",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 11, "DEX": 12, "CON": 10, "INT": 10, "WIS": 11, "CHA": 10},
+  "ability_scores": {
+    "STR": 11,
+    "DEX": 12,
+    "CON": 10,
+    "INT": 10,
+    "WIS": 11,
+    "CHA": 10
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Deception", "Religion"],
-  "skill_overrides": {"Deception": 2, "Religion": 2},
+  "skill_proficiencies": [
+    "Deception",
+    "Religion"
+  ],
+  "skill_overrides": {
+    "Deception": 2,
+    "Religion": 2
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +33,7 @@
   "languages": "Common, Latin",
   "macro_file": "cultist_attacks.mts",
   "token_color": "#8B1A1A",
-  "portrait_file": "",
+  "portrait_file": "portraits/francisco_goya_lucientes1.png",
   "notes": "CR 1/8. Fanatic trait. Cult of Mars. Sessions 1-4.",
   "gm_notes": "Sessions 1-4. Dark devotion: advantage on saves vs charm and fright. Appears alongside berserkers and in the vault approach. Corruption evidence: players who examine cultist equipment find Mars sigils with an additional mark -- a brand that is NOT standard legionary iconography.",
   "session": 1

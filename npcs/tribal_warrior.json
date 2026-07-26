@@ -9,7 +9,14 @@
   "ac": 12,
   "ac_note": "hide",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 13, "DEX": 11, "CON": 12, "INT": 8, "WIS": 11, "CHA": 8},
+  "ability_scores": {
+    "STR": 13,
+    "DEX": 11,
+    "CON": 12,
+    "INT": 8,
+    "WIS": 11,
+    "CHA": 8
+  },
   "saving_throw_proficiencies": [],
   "skill_proficiencies": [],
   "skill_overrides": {},
@@ -20,7 +27,7 @@
   "languages": "Germanic",
   "macro_file": "tribal_warrior_attacks.mts",
   "token_color": "#5c3a2a",
-  "portrait_file": "",
+  "portrait_file": "portraits/francisco_zurbaran1.png",
   "notes": "CR 1/8. Pack tactics. Germanic warrior.",
   "gm_notes": "Sessions 2-3. Pack Tactics: advantage on attacks if ally is adjacent to target. Armed with framea (spear) and seax. Not inherently hostile -- attitude depends on player choices in Session 2.",
   "session": 2

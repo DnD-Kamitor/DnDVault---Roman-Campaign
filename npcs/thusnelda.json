@@ -9,10 +9,34 @@
   "ac": 12,
   "ac_note": "natural",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 10, "DEX": 15, "CON": 10, "INT": 12, "WIS": 14, "CHA": 16},
-  "saving_throw_proficiencies": ["DEX", "WIS"],
-  "skill_proficiencies": ["Deception", "Insight", "Investigation", "Perception", "Persuasion", "Stealth"],
-  "skill_overrides": {"Deception": 6, "Insight": 4, "Investigation": 5, "Perception": 6, "Persuasion": 6, "Stealth": 4},
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 15,
+    "CON": 10,
+    "INT": 12,
+    "WIS": 14,
+    "CHA": 16
+  },
+  "saving_throw_proficiencies": [
+    "DEX",
+    "WIS"
+  ],
+  "skill_proficiencies": [
+    "Deception",
+    "Insight",
+    "Investigation",
+    "Perception",
+    "Persuasion",
+    "Stealth"
+  ],
+  "skill_overrides": {
+    "Deception": 6,
+    "Insight": 4,
+    "Investigation": 5,
+    "Perception": 6,
+    "Persuasion": 6,
+    "Stealth": 4
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +44,7 @@
   "languages": "Common, Germanic",
   "macro_file": "",
   "token_color": "#4a4a4a",
-  "portrait_file": "",
+  "portrait_file": "portraits/nils_johan_olsson_blommer1.png",
   "notes": "AC 12. Vercingetorix's contact in the vicus. Knows more than she shows.",
   "gm_notes": "Vercingetorix's contact inside the vicus. Knows more than she shows. Session 3 expanded role.",
   "objective": "Relay information between Vercingetorix and the vicus network.",

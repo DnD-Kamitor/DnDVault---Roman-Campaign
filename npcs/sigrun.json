@@ -9,10 +9,25 @@
   "ac": 12,
   "ac_note": "hide armor",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 13, "DEX": 11, "CON": 12, "INT": 13, "WIS": 12, "CHA": 14},
+  "ability_scores": {
+    "STR": 13,
+    "DEX": 11,
+    "CON": 12,
+    "INT": 13,
+    "WIS": 12,
+    "CHA": 14
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Deception", "Insight", "Persuasion"],
-  "skill_overrides": {"Deception": 4, "Insight": 3, "Persuasion": 4},
+  "skill_proficiencies": [
+    "Deception",
+    "Insight",
+    "Persuasion"
+  ],
+  "skill_overrides": {
+    "Deception": 4,
+    "Insight": 3,
+    "Persuasion": 4
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +35,7 @@
   "languages": "Germanic, Latin (functional)",
   "macro_file": "",
   "token_color": "#4a4a4a",
-  "portrait_file": "",
+  "portrait_file": "portraits/hayez_francesco1.png",
   "notes": "Germanic trader in the vicus market. Contact for Vercingetorix. Information flows in both directions through her.",
   "gm_notes": "Vercingetorix contact. She passes information to the tribal network and receives it. Currently knows which two chieftains Brutus's agents contacted before the siege -- this is the most valuable piece of intelligence available in Session 3. She will not give it freely. She trades. DC 13 Persuasion: she will trade goods. DC 15 Persuasion + something she actually wants (tribal herbs, a favour to her family, proof of good faith toward the Germanic people): she names the chieftains. DC 17: she identifies which of the two is wavering and can be turned. Her stall in the vicus market sells items not on the military supply list. Brennus owes her a substantial favour -- he will confirm this at DC 15.",
   "objective": "Protect the information network. Information is the tribal side's only advantage against Roman logistics.",

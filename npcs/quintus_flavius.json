@@ -9,10 +9,30 @@
   "ac": 12,
   "ac_note": "leather",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 12, "DEX": 14, "CON": 10, "INT": 13, "WIS": 12, "CHA": 14},
-  "saving_throw_proficiencies": ["DEX", "INT"],
-  "skill_proficiencies": ["Deception", "Insight", "Perception", "Stealth"],
-  "skill_overrides": {"Deception": 4, "Insight": 3, "Perception": 3, "Stealth": 4},
+  "ability_scores": {
+    "STR": 12,
+    "DEX": 14,
+    "CON": 10,
+    "INT": 13,
+    "WIS": 12,
+    "CHA": 14
+  },
+  "saving_throw_proficiencies": [
+    "DEX",
+    "INT"
+  ],
+  "skill_proficiencies": [
+    "Deception",
+    "Insight",
+    "Perception",
+    "Stealth"
+  ],
+  "skill_overrides": {
+    "Deception": 4,
+    "Insight": 3,
+    "Perception": 3,
+    "Stealth": 4
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,8 +40,8 @@
   "languages": "Latin, Germanic",
   "macro_file": "guard_attacks.mts",
   "token_color": "#2a3a5c",
-  "portrait_file": "",
+  "portrait_file": "portraits/carl_fredric_breda2.png",
   "notes": "Sleeper agent embedded in Fort Vindolanda for 6 months. Works for Senator Brutus, not Tribune Lucius. Killed Sextus to protect the mission.",
-  "gm_notes": "SLEEPER AGENT. Does not appear hostile — veteran soldier, quiet, twelve-year man. He is in the Tribune's entourage and oriented toward the stables. Clue: Perception DC 15 to notice his stable-orientation in Scene 1. He departs with the Tribune's escort unless identified. If the party calls him out directly (Investigation/Insight DC 14), he tries to bluff first (Deception +4 vs Insight), then flees if cornered. Combat: Dagger +4, 1d4+2 piercing. Cunning Action: Bonus action Dash/Disengage/Hide. Sneak Attack 1d6. Clue surface: Random encounter table entry 5 names him if he escaped. Surfaces again Session 4 as frumentarius advancement trigger.",
+  "gm_notes": "SLEEPER AGENT. Does not appear hostile \u2014 veteran soldier, quiet, twelve-year man. He is in the Tribune's entourage and oriented toward the stables. Clue: Perception DC 15 to notice his stable-orientation in Scene 1. He departs with the Tribune's escort unless identified. If the party calls him out directly (Investigation/Insight DC 14), he tries to bluff first (Deception +4 vs Insight), then flees if cornered. Combat: Dagger +4, 1d4+2 piercing. Cunning Action: Bonus action Dash/Disengage/Hide. Sneak Attack 1d6. Clue surface: Random encounter table entry 5 names him if he escaped. Surfaces again Session 4 as frumentarius advancement trigger.",
   "session": 2
 }

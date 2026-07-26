@@ -9,10 +9,23 @@
   "ac": 11,
   "ac_note": "natural armor",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 10, "DEX": 12, "CON": 11, "INT": 14, "WIS": 15, "CHA": 18},
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 12,
+    "CON": 11,
+    "INT": 14,
+    "WIS": 15,
+    "CHA": 18
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Perception", "Stealth"],
-  "skill_overrides": {"Perception": 4, "Stealth": 5},
+  "skill_proficiencies": [
+    "Perception",
+    "Stealth"
+  ],
+  "skill_overrides": {
+    "Perception": 4,
+    "Stealth": 5
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +33,7 @@
   "languages": "Elvish, Sylvan",
   "macro_file": "",
   "token_color": "#3D6B35",
-  "portrait_file": "",
+  "portrait_file": "portraits/john_william_godward1.png",
   "notes": "CR 1. Fey Charm (DC 14 WIS). Innate spellcasting CHA. Tree Stride.",
   "gm_notes": "Session 4. Sacred grove spirit; optional combat if the party disrespects the grove or attacks first. Fey Charm can neutralize a threat without bloodshed if the DM wants to de-escalate. Tree Stride lets it withdraw and reposition between trees.",
   "session": 4

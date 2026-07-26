@@ -8,10 +8,25 @@
   "hp_formula": "2d8",
   "ac": 10,
   "speed": "30 ft.",
-  "ability_scores": {"STR": 10, "DEX": 10, "CON": 10, "INT": 12, "WIS": 16, "CHA": 11},
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 10,
+    "CON": 10,
+    "INT": 12,
+    "WIS": 16,
+    "CHA": 11
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Medicine", "Nature", "Insight"],
-  "skill_overrides": {"Medicine": 5, "Nature": 3, "Insight": 5},
+  "skill_proficiencies": [
+    "Medicine",
+    "Nature",
+    "Insight"
+  ],
+  "skill_overrides": {
+    "Medicine": 5,
+    "Nature": 3,
+    "Insight": 5
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -19,7 +34,7 @@
   "languages": "Germanic",
   "macro_file": "",
   "token_color": "#1a5c1a",
-  "portrait_file": "",
+  "portrait_file": "portraits/sichel_nathanael1.png",
   "notes": "Thusnelda's apprentice healer. Does not speak Latin but observes like a scholar.",
   "gm_notes": "Thusnelda's apprentice. She does not speak Latin but her eyes follow every conversation. Trades knowledge for medical supplies -- specifically Roman medicinal herbs unavailable in the Germanic north. Understands more Latin than she lets on; she learned it by observation over several garrison rotations and has never corrected anyone who assumed she did not. Her assessment of the party: she watches posture, not words. Voice line: 'You carry yourselves like men waiting to be told what to feel.' She has knowledge of the grove that Thusnelda has not taught her yet -- she pieced it together from observation. The grove has been active longer than the tribe admits. DC 12 Medicine (treating her or her patients): she opens up. DC 14 with medicinal trade goods: she shares what she has observed about the grove's recent activity (it is increasing in Session 3). DC 16: she tells them something Thusnelda has not said, and she says it looking at the grove rather than the party.",
   "objective": "Learn everything Thusnelda knows before something happens to Thusnelda.",
