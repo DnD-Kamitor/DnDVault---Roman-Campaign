@@ -710,105 +710,192 @@ He was posted two days ago as a Foederatus. He speaks Latin with a hard accent. 
 </details>
 
 <details>
-<summary>📄 Encounter Details</summary>
+<summary>📄 Encounter Details — The Great Raid</summary>
 
-**Germanic Archer** ×4 (zone 9, behind boulders — Phases 1–2) — CR 1/4 · 50 XP each
+## Scale
 
-> **AC** 11 (13 with half cover) · **HP** 11 · **Speed** 30 ft · STR 11 DEX 14 CON 12 INT 8 WIS 11 CHA 8
+Total raiding force: ~120 warriors. The party covers their assigned wall section (~25 enemies reach them). Three other sections run on NPC background rolls. The fort is outnumbered — the question is whether you hold long enough.
+
+**Garrison (realistic, 40% strength of 480):** ~190 defenders total spread across the full perimeter. The party's section: ~15 NPC soldiers plus the party. Every round without a breakthrough is a win.
+
+## Raiding Force — Racial Composition
+
+**Phase 1 — First Wave (rounds 1–4):**
+
+| Token | Count | Role |
+|---|---|---|
+| `Goblin_Skirmisher.rptok` | 12 | Zone 9 suppression fire; Nimble Escape each round, never same position |
+| `Orc_Raider.rptok` | 8 | Frontline shock — Aggressive closes 60ft/turn, cannot be kited |
+| `Hobgoblin_Warrior.rptok` | 8 | Ladder assault; hold wall for formation, then Martial Advantage |
+| `Druid.rptok` | 2 | Zone 9 chanting buff (+1 ATK all raiders) + Fog Cloud / Entangle |
+| `Ogre.rptok` | 1 | West gate ram — 3d6+4/round automatic; gate falls round 4 if untouched |
+| `Worg.rptok` | 2 | Released alongside orcs; bite + knock prone DC 13 STR |
+
+**Phase 2 — Second Wave (rounds 5–8, if Phase 1 held):**
+
+| Token | Count | Role |
+|---|---|---|
+| `Hobgoblin_Warrior.rptok` | 8 | Fresh ladder teams from north approach |
+| `Orc_Raider.rptok` | 4 | Reinforce east wall, follow through any breach |
+| `Bugbear_Ambusher.rptok` | 4 | Appear mid-combat from east drainage ditch; Surprise Attack opener |
+| `Dire_Wolf.rptok` | 2 | Released with bugbears; Pack Tactics + knock prone |
+
+**Phase 3 — The Chief (gate falls or round 9+):**
+
+| Token | Count | Role |
+|---|---|---|
+| `Germanic_Berserker.rptok` | 1 | Leads final charge through breach, francisca first |
+| `Vercingetorix_the_Red.rptok` | 1 | Walks through, calm, toward principia. Does not attack first |
+
+## Stat Blocks
+
+**Goblin Skirmisher** ×12 (zone 9 + flanks — Phases 1–2) — CR 1/4 · 50 XP each
+
+> **AC** 15 (leather + shield) · **HP** 7 · **Speed** 30 ft · DEX 14 · Stealth +6
 >
-> **Shortbow** +4 to hit, 80/320 ft. *Hit:* 5 (1d6+2) piercing. Half cover from boulders: attacker needs AC 13. Pack Tactics (advantage when ally within 5 ft of target). Retreats if engaged in melee — they are harassers. Macro: `germanic_archer_attacks.mts`
+> **Shortbow** +4 to hit, 80/320 ft. *Hit:* 1d6+2 piercing.
+> **Nimble Escape (bonus action every round):** Hides (Stealth +6) or Disengages — zero opportunity attacks. New cover position each round.
+> **Advantage shot (from concealment):** Roll 2d20 take higher + 4.
+> **Auto-flee at 4 HP** — no check, they just run. Token: `Goblin_Skirmisher.rptok`
 
-**Germanic Spearman** ×6 (ladder climbers — Phase 1, reaching wall Phase 2) — CR 1/2 · 100 XP each
+**Hobgoblin Warrior** ×16 total, 8 per wave — CR 1/2 · 100 XP each
 
-> **AC** 13 (hide + shield) · **HP** 16 · **Speed** 30 ft · STR 15 DEX 12 CON 13 INT 8 WIS 11 CHA 8
+> **AC** 18 (chain mail + shield) · **HP** 11 · **Speed** 30 ft · STR 13
 >
-> **Framea (thrown)** +4 to hit, 30/120 ft. *Hit:* 5 (1d6+2) piercing — throw before ladder.  
-> **Framea (melee)** +4 to hit, reach 5 ft. *Hit:* 5 (1d6+2) or 6 (1d8+2) two-handed.  
-> **Seax** +4 to hit. *Hit:* 4 (1d4+2) piercing (light, backup).  
-> Pack Tactics. On ladder: half speed (15 ft/round), no Dash, no reaction, shield slung (AC 12). Macro: `germanic_spearman_attacks.mts`
+> **Spear** +3 to hit. *Hit:* 1d8+1 piercing.
+> **Martial Advantage (once/turn):** Extra 2d6 damage when any ally is within 5ft of the TARGET. First hobgoblin on wall holds position; second up = both trigger Martial Advantage.
+> **Longsword (two-hand, on wall):** +3 to hit. *Hit:* 1d10+1. Shield dropped (AC 16). Token: `Hobgoblin_Warrior.rptok`
 
-**Germanic Berserker** ×2 (leads ladders — turn 1 francisca throw, then reckless greataxe at parapet) — CR 2 · 450 XP each
+**Orc Raider** ×12 total, 8 Phase 1 — CR 1/2 · 100 XP each
 
-> **AC** 13 (hide) · **HP** 67 (9d8+27) · **Speed** 30 ft · STR 16 DEX 12 CON 17 INT 9 WIS 11 CHA 9
+> **AC** 13 (hide) · **HP** 15 · **Speed** 30 ft · STR 16 CON 16
 >
-> **Francisca (thrown)** +5 to hit, 20/60 ft. *Hit:* 6 (1d6+3) slashing — throw before mounting ladder. On hit: DC 12 Acrobatics or target loses shield bonus until bonus action to reseat.  
-> **Greataxe (normal)** +5 to hit. *Hit:* 10 (1d12+3) slashing.  
-> **Greataxe (Reckless)** roll 2d20 take higher. Same damage. All attacks against berserker have advantage until his next turn.  
-> Danger Sense: advantage on Dex saves vs. effects he can see (ballista, oil flasks). Macro: `germanic_berserker_attacks.mts`
+> **Greataxe** +5 to hit. *Hit:* 1d12+3 slashing.
+> **Javelin** +5 to hit, 30/120 ft. *Hit:* 1d6+3 piercing. Carries 3.
+> **Aggressive (bonus action every round):** Move up to 30ft toward enemy — total 60ft/turn. Cannot be kited.
+> **Relentless Endurance (1/combat):** When dropped to 0 HP, drops to 1 HP instead. Gains advantage on next attack (now enraged). Token: `Orc_Raider.rptok`
 
-**Ogre** ×1 (living battering ram — west gate, automatic each round) — CR 2 · 450 XP
+**Bugbear Ambusher** ×4 (east drainage ditch — Phase 2, mid-combat reveal) — CR 1 · 200 XP each
 
-> **AC** 11 (hide) · **HP** 59 (7d10+21) · **Speed** 40 ft · Large · STR 19 DEX 8 CON 16 INT 5 WIS 7 CHA 7
+> **AC** 14 (hide) · **HP** 27 · **Speed** 30 ft · STR 15 DEX 14 · Stealth +6
 >
-> **Battering Ram (automatic, each round).** Gate takes 3d6+4 bludgeoning (avg 14). Gate HP 60 — breaches in ~3 rounds if uncontested. Portcullis HP 60 (AC 20). Can be targeted through arrow slits: 3/4 cover (AC 15, +5 Dex saves).  
-> **Greatclub** +6 to hit, reach 5 ft. *Hit:* 13 (2d8+4) bludgeoning. **Javelin** +6 to hit, 30/120 ft. *Hit:* 11 (2d6+4) piercing (carries 3).  
-> INT 5: cannot be tricked or deceived. Does not pursue. Gate. Gate. Gate. Macro: `ogre_attacks.mts`
+> **Morningstar (Brute — 2d8)** +4 to hit, 10ft reach. *Hit:* 2d8+2 piercing every hit.
+> **Surprise Attack:** +2d6 damage on first hit when target hasn't acted (avg 21 total — can down most L4 characters).
+> **Long-Limbed:** 10ft melee reach. Can strike parapet defenders from below.
+> **Grapple (bonus action on hit):** STR +4 contested. On success: drag target 10ft — if on wall/ladder, target falls (1d6, prone). Removes a defender from wall position. Token: `Bugbear_Ambusher.rptok`
 
-**Germanic Druid** ×2 (zone 9, behind boulders — Phases 1–2, CHANTING) — CR 2 · 450 XP each
+**Ogre** ×1 (west gate, automatic ram) — CR 2 · 450 XP
 
-> **AC** 11 (16 w/ Barkskin) · **HP** 27 (5d8+5) · **Speed** 30 ft · STR 10 DEX 12 CON 13 INT 12 WIS 15 CHA 11
+> **AC** 11 (hide) · **HP** 59 · **Speed** 40 ft · Large · STR 19
 >
-> **Chanting Buff (passive, both alive):** All Germanic fighters +1 to attack rolls and advantage on fear saves. Audible from wall (Perception DC 14). Arcana DC 13 to identify as magical.  
-> **Fog Cloud (Druid A, Round 1):** 20-ft radius sphere, 120 ft range, Concentration. All inside heavily obscured = blind. Wall defenders lose aimed ranged attacks into fog.  
-> **Entangle (Druid B, Round 1):** STR save DC 12 or Restrained (speed 0), 90 ft range, Concentration. 20-ft square. Restrained on ladder = falls (1d6 per 10 ft).  
-> **Spike Growth (2nd level, Phase 2):** 2d4 piercing per 5 ft moved through, 150 ft range. Looks like natural terrain (Perception DC 15).  
-> **Hold Person (2nd level):** WIS save DC 12 or Paralyzed (auto-crit on all hits). Use on party's most dangerous melee fighter.  
-> **Produce Flame (cantrip):** +4 to hit, 30 ft. Hit: 1d8+4 fire. **Thunderwave (1st, emergency):** CON save DC 12 or 2d8 thunder + pushed 10 ft.  
-> Never advance past boulders. Flee if below 10 HP — Germanic morale drops visibly when chanting stops. Macro: `germanic_druid_attacks.mts`
+> **Battering Ram (automatic each round):** Gate takes 3d6+4 bludgeoning (avg 14). Gate HP 60 — falls round 4 if untouched. Track with `S2_Gate_Tracker.rptok`.
+> **Greatclub** +6 to hit, reach 5ft. *Hit:* 2d8+4. **Javelin** +6 to hit, 30/120ft. *Hit:* 2d6+4 (carries 3).
+> INT 5: gate only. Does not pursue. Can be redirected by sustained ranged from a new direction (2-3 hits = turns to look, 1 round lost). Token: `Ogre.rptok`
 
-**Worg** ×2 (released at gate Phase 1, run alongside spearmen) — CR 1/2 · 100 XP each
+**Germanic Druid** ×2 (zone 9 — Phases 1–2, CHANTING) — CR 2 · 450 XP each
 
-> **AC** 13 · **HP** 26 · **Speed** 50 ft · STR 16 DEX 13 CON 13 INT 7 WIS 11 CHA 8
+> **AC** 11 (16 w/ Barkskin) · **HP** 27 · WIS 15
 >
-> **Bite** +5 to hit. *Hit:* 2d6+3 piercing. DC 13 STR save or knocked Prone (prone = advantage on all attacks vs target). Speed 50ft — runs down anyone who flees. INT 7: understands Norse, sometimes growls words. Large: blocks doorways. Macro: `Worg.rptok`
+> **Chanting Buff (passive, both alive):** All raiders +1 ATK and advantage vs fear. Kill one: buff drops, goblin flee threshold rises.
+> **Fog Cloud (A, R1):** 20ft sphere, 120ft, Concentration. Blind. **Entangle (B, R1):** STR DC 12 or Restrained, 90ft.
+> **Spike Growth (2nd, Phase 2):** 2d4 per 5ft moved. **Hold Person (2nd):** WIS DC 12 or Paralyzed (auto-crit). Token: `Druid.rptok`
 
-**Dire Wolf** ×2 (released Phase 1, attack most-injured target) — CR 1 · 200 XP each
+**Worg** ×2 (released Phase 1, east approach) — CR 1/2 · 100 XP each | **Dire Wolf** ×2 (Phase 2) — CR 1 · 200 XP each
 
-> **AC** 14 · **HP** 37 · **Speed** 50 ft · STR 17 DEX 15 CON 15 INT 3 WIS 12 CHA 7
+> Worgs: **AC** 13 · **HP** 26 · Speed 50ft · Bite +5, 2d6+3, DC 13 STR or Prone. INT 7 — may growl words.
+> Dire Wolves: **AC** 14 · **HP** 37 · Speed 50ft · Bite +5, 2d6+3, DC 13 STR or Prone. Pack Tactics. Bonus: re-roll damage vs Prone target, take higher.
+
+**Germanic Berserker** ×1 (Phase 3 final charge) — CR 2 · 450 XP
+
+> **AC** 13 · **HP** 67 · STR 16 CON 17 | Francisca (throw, round 1): +5, 1d6+3, DC 12 Acrobatics or lose shield. Greataxe: +5, 1d12+3. Reckless: 2d20 take higher, everyone has advantage vs him. Token: `Germanic_Berserker.rptok`
+
+**Vercingetorix the Red** ×1 (Phase 3) — CR 5 · 1800 XP killed / 800 XP talked down
+
+> **AC** 16 · **HP** 112 (15d8+45) · STR 20(+5) DEX 15(+2) CON 16(+3)
 >
-> **Bite** +5 to hit. *Hit:* 2d6+3 piercing. DC 13 STR save or knocked Prone. Pack Tactics (advantage when ally within 5ft). Bonus action savage on prone target (reroll damage, take higher). These were not pets — released from cages when the drums started. They target the most visibly wounded soldier. Macro: `Dire_Wolf.rptok`
-
-**Vercingetorix the Red** ×1 — CR 5 (Gladiator) · 1800 XP killed / 800 XP talked down
-
-> **AC** 16 · **HP** 112 (15d8+45) · **Speed** 30 ft
+> **Spear** +7 to hit, three attacks. *Hit:* 2d6+4. **Parry:** +3 AC as reaction.
 >
-> | STR | DEX | CON | INT | WIS | CHA |
-> |---|---|---|---|---|---|
-> | 20 (+5) | 15 (+2) | 16 (+3) | 12 (+1) | 12 (+1) | 15 (+2) |
->
-> **Spear** (two-handed) +7 to hit, reach 5 ft. *Hit:* 11 (2d6+4). Three attacks.
-> **Parry.** +3 AC as reaction.
->
-> *He does not attack first. He walks toward the principia. If the party blocks him without violence, he stops and talks.*
+> *He does not attack first. He walks toward the principia. If blocked without violence: he stops and talks.*
 
-**Initiative (pre-roll — Phase 1 start):**
-1. Vercingetorix — 14 (Phase 3 only, enters when gate falls)
-2. Germanic Berserker A — 12 / Berserker B — 10
-3. Players
-4. Ogre — 9 (acts automatically each round on gate)
-5. Germanic Spearmen — 8 (new wave mounts ladder each round Phase 1)
-6. Germanic Archers — 6 (shoot from zone 9, stationary)
-7. Druid A / Druid B — 7 (cast from zone 9; Druid A: Fog Cloud R1, Druid B: Entangle R1)
+## Background Battle — NPC Sections
 
-**Round-by-round guide (Phase 3):**
-- **Round 1:** Vercingetorix enters breach. Speaks his line. Does not attack.
-- **Round 2:** Talk → Persuasion DC 15 or Insight DC 13 (reading that he's assessing, not threatening) → he stops. Attack first → he fights; priority on party, calls warriors in.
-- **Round 3+:** Resolution based on party decision.
+Roll each round. GM narrates what players can hear.
 
-**Tactical AI:**
-- Archers → engaged in melee by anyone: fall back immediately, shoot from maximum range
-- Spearmen → ally within 5 ft of target: use Pack Tactics (advantage on attacks). Fall back if outnumbered 2:1
-- Berserkers → below half HP: Reckless Attack every round without fail. They do not retreat
-- Ogre → gate breached: turns and attacks anyone blocking his entry with greatclub. Can be lured away from gate with ranged fire (INT 5 — distracted if hurt repeatedly from a different direction)
-- Vercingetorix → party offers to "let him reach the spear": he stops and genuinely considers; this was not expected
-- Druids → lose concentration: immediately recast Entangle &gt; Fog Cloud. Below 10 HP → flee treeline. Kill priority for party: silencing one druid costs the raid its buff AND its control spell
+| Section | Roll | DC | Narrative on failure |
+|---|---|---|---|
+| North wall (east half) | d20+4 | 13 | Horn signal, shouting in Germanic — goblins on the north parapet |
+| East wall | d20+3 | 13 | Fire arrow lands in the barrack roof. Someone screaming |
+| South approach | d20+5 | 13 | Held — no news from there |
 
-**Terrain:**
-- Wall palisade: Half cover vs. arrows from below
-- Gate area: Difficult terrain (debris, ram splinters)
-- Ballista (south tower): 2d10 piercing, 2 operators, Dex DC 12 to aim under pressure; Acrobatics DC 11 to reach via non-standard route
+**Two consecutive failures = section breached.** Torchlight moves inside the fort from that direction. Hard choice: hold your position or reinforce. NPC section defenders will hold their ground regardless — only the party can choose to abandon their post.
 
-**Secondary objective:** Keep Vercingetorix alive and talking. Every round in conversation instead of combat is a diplomatic win. His knowledge of the sacred grove (Session 3) is irreplaceable.
+## Archer / Ranged PC Spotlight
+
+Ranged characters are **essential** in a siege. This is their session.
+
+**Elevation Advantage:** Any ranged attack from the wall or rampart against targets at or below wall height = **ADVANTAGE**. Open field, targets clearly visible. This is the single biggest siege bonus — ranged PCs have advantage on most attacks in Phases 1–2.
+
+**Suppression Fire (action):** Choose a 10ft zone. Enemies entering or moving through it this round make CON save DC 12 or must use Dash as their action. Stops ladder climbers and orc charges for one round. Goblin archers in zone 9 can be suppressed (they can't hide AND advance).
+
+**Called Shots (specific target, declare before rolling):**
+- **Ogre's hands:** Hit → Ogre has disadvantage on gate damage roll this round (advantage against gate tracker HP).
+- **Druid Concentration:** Hit → Druid makes Concentration check DC 10 + damage dealt. This is the most important action available to a ranged PC in Phases 1–2.
+- **Goblin signal-caller:** Perception DC 13 to spot one goblin giving arm signals. Kill it → WIS DC 10 for all goblins in 30ft radius or they auto-flee.
+
+**Crossfire:** Two ranged PCs fire at the same target in the same round → both roll at **ADVANTAGE**.
+
+## Leader / Charisma PC Spotlight
+
+**RALLY (action) — Tanit, Julia Jana:** Charisma DC 12. On success: 3 adjacent NPC soldiers gain 8 temp HP and advantage on their next attack. Druid chanting actively suppresses this (DC 14 Religion to recognise counter-chanting — then killing a druid restores the rally bonus).
+
+**TACTICAL COMMAND (action, any PC):** Intelligence (History) or Insight DC 10. Direct 2 NPC soldiers this round as your bonus action — they act on your target.
+
+**COVER! (reaction, Perception DC 12):** Warn an adjacent ally of an unseen attack. That ally may use their reaction to halve damage from that hit.
+
+**INSPIRE (Bard bonus action):** Bardic Inspiration die applied to any NPC section's background roll this round. On a high roll, that section holds even without it.
+
+**FOCUS FIRE (free shout, once/round):** No action cost. Point out a high-value target. All allies who attack that target this round roll at advantage.
+
+## Tactical AI
+
+- **Goblin Skirmishers:** After every shot, hide (Stealth +6). New cover position. If 3+ killed same round: remaining goblins within 30ft make WIS DC 10 or flee. Never engage melee.
+- **Hobgoblin Warriors:** Wait for two to be on the wall before attacking. Formation matters more than speed. Longsword (two-hand) once established, re-equip shield as bonus action next round.
+- **Orc Raiders:** Aggressive every turn. If Relentless Endurance triggers: visible moment — show the party the orc stand back up. Next attack with advantage (enraged). Then any hit drops it.
+- **Bugbear Ambushers:** Stay hidden until round 3-4. Reveal from east (party facing west). Surprise Attack opener. Target: PC who looks most dangerous. Then grapple-drag if morningstar hits. Primary goal: wall attrition, not kills.
+- **Ogre:** Gate only. 2-3 sustained ranged hits from east = looks east for 1 round (gate not rammed). Otherwise: Gate. Gate. Gate.
+- **Druids:** Concentration priority. If Fog Cloud broken: Entangle. If Entangle broken: Hold Person on party's best melee. Below 10 HP: flee treeline immediately.
+- **Vercingetorix:** Does not attack first. Walks toward principia. Body-blocked (grapple or just standing in way): stops and talks. Words without steel: walks through. He respects demonstrations of capability, not threats.
+
+## Initiative (pre-rolled)
+
+1. Vercingetorix — 14 (Phase 3 only)
+2. Bugbear Ambushers — 13 (Phase 2 only, appear round 3-4)
+3. Orc Raiders — 11
+4. Players
+5. Hobgoblin Warriors — 9
+6. Ogre — 8 (gate automatic each round)
+7. Goblin Skirmishers — 7 (fire then hide)
+8. Druids — 6 (Druid A: Fog Cloud R1; Druid B: Entangle R1)
+9. Worgs / Dire Wolves — 5
+
+## XP
+
+| Creature | Party section count | XP each | Subtotal |
+|---|---|---|---|
+| Goblin Skirmisher | 4 of 12 | 50 | 200 |
+| Orc Raider | 3 of 12 | 100 | 300 |
+| Hobgoblin Warrior | 4 of 16 | 100 | 400 |
+| Bugbear Ambusher | 4 | 200 | 800 |
+| Germanic Berserker | 1 | 450 | 450 |
+| Ogre | 1 | 450 | 450 |
+| Germanic Druid | 2 | 450 | 900 |
+| Worg | 2 | 100 | 200 |
+| Dire Wolf | 2 | 200 | 400 |
+| Vercingetorix | 1 | 1800 / 800 | var |
+| **Party section total (kill)** | | | **~4100 XP** |
+| **Party section total (talk down Vercingetorix)** | | | **~3100 XP** |
+
+**Secondary objective:** Vercingetorix alive and talking. Every round of dialogue = diplomatic capital for Sessions 3–4. His knowledge of the sacred grove (Session 3) is irreplaceable and cannot be recovered if he dies.
 
 </details>
 
