@@ -242,11 +242,11 @@ Every chapter needs exactly these files. Build them in order. Do not skip to the
 
 | File | Purpose | Ch1 | Ch2 | Ch3 | Ch4 | Ch5 |
 |------|---------|-----|-----|-----|-----|-----|
-| `cheat_card_chN.html` | At-table browser tab | partial | done | done | done | TODO |
-| `chapterNN_print.html` | A4 printable module | missing | done | done | done | TODO |
-| `chapterNN_guide.qmd` | Full Quarto session guide | missing | done | done | done | TODO |
-| `chapterNN_maptool.qmd` | Scene→map→token reference | missing | done | done | done | TODO |
-| `chapterNN_npcs.html` | NPC OGAS + stat cards | missing | missing | done | done | TODO |
+| `cheat_card_chN.html` | At-table browser tab | partial | done | done | done | done |
+| `chapterNN_print.html` | A4 printable module | missing | done | done | done | done |
+| `chapterNN_guide.qmd` | Full Quarto session guide | missing | done | done | done | done |
+| `chapterNN_maptool.qmd` | Scene→map→token reference | missing | done | done | done | done |
+| `chapterNN_npcs.html` | NPC OGAS + stat cards | missing | missing | done | done | done |
 
 **Ch1 partial** = `cheat_card_ch1_finish.html` covers Scenes 4-5 only. Full Ch1 cheat card still missing.
 
@@ -428,6 +428,14 @@ Files created but NOT yet committed:
 - [x] `gm_tools/chapter04_npcs.html` — done (Corvinus, Lucius, Varro, Cassia, Vercingetorix, Brutus)
 - [x] `gm_tools/chapter04_guide.qmd` — done
 - [x] `gm_tools/chapter04_print.html` — done
+
+**Chapter 5 — The Wrath of Mars (COMPLETE)**
+- [x] `gm_tools/cheat_card_ch5.html` — done (existed)
+- [x] `handouts/chapter05_handouts.qmd` — done (Handout 10 Mark of Mars + Handout 11 Arena Weapon Cards × 5)
+- [x] `gm_tools/chapter05_maptool.qmd` — done (CityStreets/AncientAltar/DarkTempleInterior/NatureGoddessTemple/LabyrinthRuins)
+- [x] `gm_tools/chapter05_npcs.html` — done (Mars divine, Fausta Luperci, Cassia, Varro, Corvinus, Lucius, Vercingetorix, Brutus, Thusnelda)
+- [x] `gm_tools/chapter05_guide.qmd` — done (continuity tracker, 3 trial options with full mechanics, consequence menu, commendationes tally)
+- [x] `gm_tools/chapter05_print.html` — done (Mars full stat block, Fausta stat block, arena weapon reference, consequence table)
 
 **Chapter 5 — The Wrath of Mars**
 - [ ] `gm_tools/cheat_card_ch5.html`

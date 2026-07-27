@@ -1,0 +1,282 @@
+---
+title: "Chapter 5 Handouts"
+subtitle: "The Wrath of Mars — props for players"
+format:
+  html:
+    toc: false
+    css: handouts.css
+---
+
+```{=html}
+<style>
+.handout-block {
+  border: 3px solid #8B7355;
+  background: #F5F0E8;
+  padding: 2em 2.5em;
+  margin: 2em auto;
+  max-width: 600px;
+  font-family: 'Cinzel', 'Georgia', serif;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.25);
+  page-break-inside: avoid;
+}
+.handout-block h2 {
+  font-family: 'Cinzel', 'Georgia', serif;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 0;
+  border-bottom: 1px solid #8B7355;
+  padding-bottom: 0.4em;
+}
+.handout-block p {
+  margin: 0.7em 0;
+  line-height: 1.6;
+}
+.handout-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #6B5B3A;
+  text-align: right;
+  margin-bottom: 0.3em;
+}
+.handout-divider {
+  border: none;
+  border-top: 1px solid #8B7355;
+  margin: 1em 0;
+}
+
+/* Handout 10: Mark of Mars */
+.mark-block {
+  border: 3px solid #8B1A1A;
+  background: #1a0e04;
+  color: #e8d8b0;
+  padding: 2em 2.5em;
+  margin: 2em auto;
+  max-width: 520px;
+  font-family: 'Cinzel', 'Georgia', serif;
+  box-shadow: 6px 6px 18px rgba(0,0,0,0.6);
+  page-break-inside: avoid;
+  text-align: center;
+}
+.mark-symbol {
+  font-size: 4em;
+  color: #c8a84b;
+  line-height: 1.1;
+  margin: 0.3em 0;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 20px rgba(200,168,75,0.5);
+}
+.mark-latin {
+  font-size: 1.4em;
+  color: #c8a84b;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin: 0.5em 0 0.2em;
+  font-style: italic;
+}
+.mark-translation {
+  font-size: 0.85em;
+  color: #a89060;
+  letter-spacing: 0.08em;
+  margin-bottom: 1em;
+}
+.mark-text {
+  font-size: 0.9em;
+  color: #d0c0a0;
+  line-height: 1.7;
+  margin-top: 1em;
+  font-style: italic;
+  border-top: 1px solid #5a3a10;
+  padding-top: 1em;
+}
+.mark-footer {
+  font-size: 0.7em;
+  color: #7a6040;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+/* Handout 11: Arena Weapon Cards */
+.weapons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em;
+  max-width: 700px;
+  margin: 2em auto;
+}
+.weapon-card {
+  border: 2px solid #8B4513;
+  background: #fdf5e0;
+  padding: 1em 1.2em;
+  font-family: 'Cinzel', 'Georgia', serif;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+  page-break-inside: avoid;
+}
+.weapon-card .card-num {
+  font-size: 0.65em;
+  color: #8B4513;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.2em;
+}
+.weapon-card .card-name {
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #5a1a00;
+  border-bottom: 1px solid #c8b090;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.05em;
+}
+.weapon-card .card-stats {
+  font-size: 0.78em;
+  color: #3a1000;
+  line-height: 1.8;
+  margin-bottom: 0.5em;
+}
+.weapon-card .card-property {
+  font-size: 0.78em;
+  color: #2a5a1a;
+  font-style: italic;
+  line-height: 1.6;
+  border-left: 2px solid #5a8a4a;
+  padding-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+.weapon-card .card-cost {
+  font-size: 0.76em;
+  color: #8B1A1A;
+  background: #fff0d0;
+  border: 1px solid #c8a030;
+  border-left: 2px solid #c87800;
+  padding: 0.3em 0.5em;
+  font-style: italic;
+  line-height: 1.5;
+}
+.weapon-card .card-cost::before {
+  content: "COST: ";
+  font-weight: bold;
+  font-style: normal;
+  color: #8B4513;
+}
+.weapon-card-wide {
+  grid-column: 1 / -1;
+}
+.weapon-dm-note {
+  max-width: 700px;
+  margin: 1em auto;
+  font-size: 0.8em;
+  color: #6B5B3A;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid #8B7355;
+  padding-top: 0.8em;
+}
+</style>
+
+---
+
+## Handout 10 — The Mark of Mars
+
+<div class="handout-label">Distribute at session end, after final resolution. Place face-up without comment. Let silence sit.</div>
+
+<div class="mark-block">
+  <div class="mark-symbol">⚔ ♂ ⚔</div>
+  <div class="mark-latin">MILES PROBATUS EST</div>
+  <div class="mark-translation">"The soldier has been tested."</div>
+  <div class="handout-divider"></div>
+  <div class="mark-text">
+    You stood before him. He did not look away.<br>
+    The mark does not wash off.<br>
+    It does not hurt, except in the presence of cowardice.<br>
+    Mars gives no gifts without weight.<br>
+    This is both.
+  </div>
+  <div class="handout-divider"></div>
+  <div class="mark-text">
+    <strong style="color:#c8a84b;">Mechanical effect (if using):</strong><br>
+    Once per long rest, when you fail a saving throw, you may re-roll. You must use the new result. The god is watching.
+  </div>
+  <div class="mark-footer">Vindolanda · Year 2 of the Reign · By Divine Witness</div>
+</div>
+
+---
+
+## Handout 11 — Arena Weapon Cards
+
+<div class="handout-label">Place face-down at session start. Flip ALL cards at once when the black sand appears. Each card = one weapon available at the arena's edge. Bonus action to grab one.</div>
+
+<div class="weapons-grid">
+
+<div class="weapon-card">
+  <div class="card-num">Card I</div>
+  <div class="card-name">Gladius of Distinction</div>
+  <div class="card-stats">
+    +2 to attack and damage rolls<br>
+    Damage: as normal gladius
+  </div>
+  <div class="card-property">
+    <strong>Sacred Edge:</strong> Add 2d6 radiant damage on each hit.
+  </div>
+  <div class="card-cost">Each attack also deals 1d6 radiant to the wielder. The god's attention burns the unworthy.</div>
+</div>
+
+<div class="weapon-card">
+  <div class="card-num">Card II</div>
+  <div class="card-name">Pilum of the Unbroken Line</div>
+  <div class="card-stats">
+    Range: 60/120 ft<br>
+    Damage: 2d8+4 piercing
+  </div>
+  <div class="card-property">
+    <strong>Formation Throw:</strong> On a hit, DC 15 Str save or target is Restrained until end of their next turn.
+  </div>
+  <div class="card-cost">The thrower cannot move on the round they use this weapon.</div>
+</div>
+
+<div class="weapon-card">
+  <div class="card-num">Card III</div>
+  <div class="card-name">Scutum of Endurance</div>
+  <div class="card-stats">
+    +3 AC while held<br>
+    (held, not worn — occupies one hand)
+  </div>
+  <div class="card-property">
+    <strong>Last Stand:</strong> Once per fight, reduce to 1 HP instead of 0.
+  </div>
+  <div class="card-cost">Disadvantage on all attack rolls while carrying it.</div>
+</div>
+
+<div class="weapon-card">
+  <div class="card-num">Card IV</div>
+  <div class="card-name">Spear of the Veteran</div>
+  <div class="card-stats">
+    Versatile (1d6 / 1d8), reach 10 ft<br>
+    Damage: as listed
+  </div>
+  <div class="card-property">
+    <strong>Disciplined Strike:</strong> If the wielder did not move this turn, add +2d6 damage.
+  </div>
+  <div class="card-cost">If the bonus damage is used, the wielder must end their turn where they started it.</div>
+</div>
+
+<div class="weapon-card weapon-card-wide">
+  <div class="card-num">Card V</div>
+  <div class="card-name">War-God's Seax</div>
+  <div class="card-stats">
+    Finesse, 1d6+3 piercing
+  </div>
+  <div class="card-property">
+    <strong>Precision:</strong> Ignore the target's AC bonus from armor (not shields).
+  </div>
+  <div class="card-cost">On a miss, the seax deals 1d4 piercing damage to the wielder's hand.</div>
+</div>
+
+</div>
+
+<div class="weapon-dm-note">
+DM: These weapons return to the arena perimeter when dropped. A character who has grabbed one cannot swap to a different card mid-combat — the weapon chooses its wielder as much as the wielder chooses the weapon. Mars is watching the choices, not just the rolls.
+</div>
+```

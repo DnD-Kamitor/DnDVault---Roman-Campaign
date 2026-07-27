@@ -61,6 +61,9 @@ book:
         - gm_tools/chapter04_maptool.qmd
         - gm_tools/chapter04_guide.qmd
         - handouts/chapter04_handouts.qmd
+        - gm_tools/chapter05_maptool.qmd
+        - gm_tools/chapter05_guide.qmd
+        - handouts/chapter05_handouts.qmd
 
 format:
   html:

@@ -1,0 +1,113 @@
+---
+title: "Chapter 5 — MapTool Reference"
+subtitle: "The Wrath of Mars — maps, tokens, and scene transitions"
+---
+
+## Maps and Tokens for Chapter 5
+
+Session 5 is divine confrontation on the parade ground of Vindolanda. The fort is the arena. All maps must feel isolated, vast, and wrong. Load all maps before players join — transition happens at exactly the moment the sand appears.
+
+### Scene → Map → Tokens
+
+| Scene | Map File | Tokens to Place | Notes |
+|---|---|---|---|
+| Scene 0: Arrival (cold open) | `CityStreets` or `BridgeCheckpoint` | All PCs, Augur_Cassia, Centurion_Varro, Legate_Corvinus, Tribune_Lucius, Vercingetorix | Fort parade ground. Freeze time at opening. Witnesses stand at edge — do not move their tokens. Mars: no token, narrate only. |
+| Scene 1: Mars Specifies Trial | Same map | Same | No new tokens. Mars speaks from the throne position. Players declare their option. |
+| Scene 2A: Champion Trial | `AncientAltar` | All PCs + Fausta_Luperci | Fausta forms from ash at start. Arena weapons along perimeter: place 5 prop tokens as markers. |
+| Scene 2B: Trial of Blades | `AncientAltar` | All PCs + Mars (if using token) | Phasing buildings appear each round — use Wight/Shadow tokens as rubble/hazard markers. Summon fallen: Wight ×1 or Shadow ×1 per Legendary Action. Max 3. |
+| Scene 2C: Trial of Voice | `AncientAltar` | All PCs | No combat tokens. Mars seated on throne. Players move tokens forward to the center as they argue. |
+| Scene 3: Price of Standing | `AncientAltar` | Same + Augur_Cassia (approaches) | Mars steps off throne. Cassia and Varro unfreeze and approach. |
+| Scene 4: Return to Vindolanda | `CityStreets` or original fort map | All PCs, all witness NPCs | Time resumes. Cohort collapses to knees. Messenger arrives with citizenship document. |
+| Scene 4 (underground retreat) | `DarkTempleInterior` | All PCs | If party retreats below the fort during Option B — same vault as Sessions 1 and 4. |
+| Scene 5: Epilogue | `NatureGoddessTemple`, `IslandRuins` | Relevant PCs + Thusnelda (grove scenes) | One year later. Not the same session; epilogue is narrated, not mapped unless players want it. |
+
+**Special: Labyrinth Ruins**
+
+If the party attempts to destroy the spear's remains in the ruins rather than return them to the grove:
+
+| Map | `LabyrinthRuins` |
+|---|---|
+| Tokens | All PCs; Senator_Brutus agents if Brutus sent operatives |
+| Notes | Contested — Brutus' men may arrive to seize the ashes. This is an improvised scene if it happens. |
+
+---
+
+### Scene 0 Arena Setup
+
+The parade ground transforms before combat. Use these positional notes:
+
+| Position | Element | Token/Marker |
+|---|---|---|
+| Center | Mars' throne of weapons | Large object token or no token (narrate) |
+| North edge | Gate witnesses (Varro, legionaries) | Centurion_Varro + Guard ×4 |
+| East edge | Religious witnesses (Cassia, Paterculus) | Augur_Cassia + Paterculus_AugurAssist |
+| South edge | Political witnesses (Corvinus, Lucius) | Legate_Corvinus + Tribune_Lucius |
+| West edge | Germanic witnesses (Vercingetorix) | Vercingetorix + Edda_SpearMother |
+| Perimeter (5 points) | Arena weapon markers | Use prop/marker tokens, label Card I–V |
+
+---
+
+### Player Tokens
+
+| Character | File | Notes |
+|---|---|---|
+| Iris | `Maptool/tokens/players/Iris.rptok` | |
+| Julia Jana | `Maptool/tokens/players/Julia_Jana.rptok` | |
+| Tanit | `Maptool/tokens/players/Tanit_bint_Abdmelqart.rptok` | |
+| Rivia | `Maptool/tokens/players/Rivia_Calida_Mendera.rptok` | |
+| Ursula | `Maptool/tokens/players/Ursula_Günther.rptok` | |
+| Brian | `Maptool/tokens/players/Brian.rptok` | |
+
+---
+
+### NPC Tokens
+
+| Token | File | Scene | Frame Colour | Notes |
+|---|---|---|---|---|
+| Augur Cassia | `Maptool/tokens/npcs/Augur_Cassia.rptok` | S0–S4 | Gold | Witness and ally. Speaks after trial. |
+| Centurion Varro | `Maptool/tokens/npcs/Varro.rptok` | S0–S4 | Gold | Witness. Delivers final Varro check if alive. |
+| Legate Corvinus | `Maptool/tokens/npcs/Corvinus.rptok` | S0, S4 | Red | Witness, not participant. Hostile if unsidelined. |
+| Tribune Lucius | `Maptool/tokens/npcs/Lucius_Tribune.rptok` | S0, S4 | Red/Grey | Witness. Hands citizenship document in S4 if dispatched. |
+| Vercingetorix | `Maptool/tokens/npcs/Vercingetorix.rptok` | S0 (frozen), S4 | Gold | Dying; gives one-sentence benediction in S4 if alive. |
+| Senator Brutus | `Maptool/tokens/npcs/Senator_Brutus.rptok` | Off-screen all session — agents only if Labyrinth scene | Red | Never in the arena. Consequences arrive through others. |
+| Thusnelda | `Maptool/tokens/npcs/Thusnelda.rptok` | Epilogue (grove) | Gold | Not in the fort during the divine trial. |
+| Paterculus | `Maptool/tokens/npcs/Paterculus_AugurAssist.rptok` | S0 witness edge | Gold | Minor witness. No lines. |
+
+---
+
+### Creature Tokens
+
+| Creature | File | Scene | Count | Notes |
+|---|---|---|---|---|
+| Fausta Luperci | No `.rptok` — use custom or reskin | S2 Option A | ×1 | Build from Gladiator or Champion stat block, override HP/AC. Form from ash: place at arena center. |
+| Wight (Fallen) | `Maptool/tokens/npcs/creatures/Wight.rptok` | S2 Option B (Legendary) | Up to ×3 | Summoned by Mars' Legendary Action. Remove when Mars calls Enough. |
+| Shadow (Fallen) | `Maptool/tokens/npcs/creatures/Shadow.rptok` | S2 Option B (Legendary) | Up to ×3 | Alt summon. Max 3 total across Wight+Shadow. |
+| Brutus Agent (Quintus) | `Maptool/tokens/npcs/Quintus_Flavius.rptok` | Labyrinth only | ×1 | If Brutus' operative arrives to take the spear ashes. |
+
+---
+
+### Map Files Location
+
+Campaign session folder: `Maptool/maps/campaign/S5_The_Wrath_of_Mars/`
+
+```
+CityStreets             — fort exterior, parade ground (Scene 0 + Scene 4)
+BridgeCheckpoint        — alternate fort exterior if CityStreets unavailable
+AncientAltar            — divine arena, black sand circle (Scenes 2–3)
+DarkTempleInterior      — vault beneath fort (retreat + Option B underground)
+CathedralCatacombs      — extended underground retreat if needed
+AncientTombs            — deeper underground; optional
+NatureGoddessTemple     — sacred grove (epilogue); same map as Ch1 altar chamber
+IslandRuins             — grove perimeter or labyrinth approach
+LabyrinthRuins          — spear destruction site (improvised scene)
+```
+
+Run `bash Maptool/build_campaign_maps.sh` to copy session tokens into this folder (idempotent).
+
+### The Arena as Callback
+
+Scene 2 uses `AncientAltar`. Scene 4's citizenship moment returns to the fort exterior. Scene 3 (underground retreat option) uses `DarkTempleInterior` — the same vault used in Sessions 1 and 4.
+
+If the party descends: *"The altar. The chains. Fausta's ghost, if she appeared, has not remained. But the chain anchors in the floor are new marks — scored by a god's weight. Mars sat here. You can feel where."*
+
+The campaign began in this stone chamber. It can end there.
