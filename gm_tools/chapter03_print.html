@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 3: Through the Dark Forest</title>
+<style>
+/* ── FONTS ── */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── PAGE SETUP ── */
+@page {
+  size: A4;
+  margin: 16mm 14mm 16mm 14mm;
+}
+
+body {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: #1a1000;
+  background: #fff;
+}
+
+/* ── COVER PAGE ── */
+.cover {
+  page-break-after: always;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1a0e04;
+  color: #e8d8b0;
+  padding: 40px;
+  text-align: center;
+}
+.cover-title {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 36pt;
+  color: #c8a84b;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  line-height: 1.15;
+}
+.cover-subtitle {
+  font-size: 14pt;
+  color: #a88838;
+  margin-bottom: 32px;
+  font-style: italic;
+}
+.cover-rule { width: 80%; border: none; border-top: 2px solid #c8a84b; margin: 16px auto; }
+.cover-meta {
+  font-size: 11pt;
+  color: #c8b898;
+  margin-bottom: 8px;
+}
+.cover-teaser {
+  max-width: 480px;
+  font-size: 11pt;
+  font-style: italic;
+  color: #b8a878;
+  line-height: 1.6;
+  margin-top: 24px;
+}
+
+/* ── TWO-COLUMN LAYOUT ── */
+.columns {
+  column-count: 2;
+  column-gap: 6mm;
+  column-rule: 0.5pt solid #c8b090;
+}
+
+/* ── HEADINGS ── */
+h1 {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 18pt;
+  color: #5a1a00;
+  border-bottom: 2pt solid #8B4513;
+  padding-bottom: 3px;
+  margin: 0 0 8px 0;
+  column-span: all;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+h2 {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 13pt;
+  color: #5a1a00;
+  border-bottom: 1pt solid #c8b090;
+  padding-bottom: 2px;
+  margin: 12px 0 5px 0;
+  break-after: avoid;
+  letter-spacing: 0.04em;
+}
+h3 {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #3a0e00;
+  margin: 8px 0 3px 0;
+  break-after: avoid;
+}
+h4 {
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #3a0e00;
+  margin: 6px 0 2px 0;
+  break-after: avoid;
+}
+
+/* ── BODY TEXT ── */
+p { margin-bottom: 5px; text-align: justify; orphans: 3; widows: 3; }
+ul, ol { margin: 4px 0 6px 14px; }
+li { margin-bottom: 2px; }
+strong { color: #2a0800; }
+em { color: #3a1000; }
+
+/* ── READ-ALOUD BOX ── */
+.read-aloud {
+  background: #f0e8d0;
+  border: 1pt solid #8B7355;
+  border-left: 3pt solid #8B4513;
+  padding: 7px 9px;
+  font-style: italic;
+  font-size: 9pt;
+  line-height: 1.5;
+  margin: 6px 0;
+  break-inside: avoid;
+}
+
+/* ── STAT BLOCK ── */
+.stat-block {
+  background: #fdf5e0;
+  border: 1pt solid #8B7355;
+  border-top: 2pt solid #8B4513;
+  border-bottom: 2pt solid #8B4513;
+  padding: 6px 8px;
+  margin: 6px 0;
+  font-size: 8.5pt;
+  break-inside: avoid;
+}
+.stat-block .name {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 11pt;
+  color: #5a1a00;
+  margin-bottom: 1px;
+}
+.stat-block .type {
+  font-style: italic;
+  font-size: 8pt;
+  color: #5a3a10;
+  border-bottom: 0.5pt solid #c8b090;
+  padding-bottom: 3px;
+  margin-bottom: 4px;
+}
+.stat-block .scores {
+  display: flex;
+  gap: 6px;
+  margin: 4px 0;
+  font-size: 8pt;
+}
+.stat-block .score { text-align: center; min-width: 28px; }
+.stat-block .score .label { font-weight: bold; font-size: 7pt; color: #8B4513; display: block; }
+.stat-block .rule { border: none; border-top: 0.5pt solid #c8b090; margin: 3px 0; }
+.stat-block p { margin-bottom: 2px; }
+
+/* ── DECISION TABLE ── */
+.decision-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+  margin: 6px 0;
+  break-inside: avoid;
+}
+.decision-table th {
+  background: #8B4513;
+  color: #f0e8d0;
+  padding: 3px 6px;
+  text-align: left;
+  font-size: 8pt;
+}
+.decision-table td {
+  padding: 3px 6px;
+  border-bottom: 0.5pt solid #d4c090;
+  vertical-align: top;
+}
+.decision-table tr:nth-child(even) td { background: #f8f0de; }
+.decision-table td:first-child { font-weight: bold; color: #5a1a00; white-space: nowrap; }
+
+/* ── CLUE BOX ── */
+.clue-box {
+  background: #eef4e8;
+  border: 0.5pt solid #5a8a4a;
+  border-left: 2pt solid #4a7a3a;
+  padding: 5px 8px;
+  font-size: 8.5pt;
+  margin: 4px 0;
+  break-inside: avoid;
+}
+.clue-box strong { color: #2a5a1a; }
+
+/* ── CALLOUT ── */
+.callout {
+  background: #fff0d0;
+  border: 0.5pt solid #c8a030;
+  border-left: 2pt solid #c87800;
+  padding: 5px 8px;
+  font-size: 8.5pt;
+  margin: 4px 0;
+  break-inside: avoid;
+}
+
+/* ── SECRET BOX ── */
+.secret-box {
+  background: #1a0e04;
+  color: #e8d8b0;
+  border: 1pt solid #8B4513;
+  padding: 5px 8px;
+  font-size: 8.5pt;
+  margin: 4px 0;
+  break-inside: avoid;
+}
+.secret-box strong { color: #c8a84b; }
+
+/* ── PRINT ── */
+@media print {
+  .cover { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .stat-block, .read-aloud, .decision-table, .clue-box, .callout, .secret-box { break-inside: avoid; }
+  .secret-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════ COVER -->
+<div class="cover">
+  <div class="cover-title">Chapter 3<br>Through the Dark Forest</div>
+  <div class="cover-subtitle">Shadow of Mars Campaign — Session 3 of 5</div>
+  <hr class="cover-rule">
+  <div class="cover-meta">Level 5 → 6 &nbsp;|&nbsp; 3–4 Hours &nbsp;|&nbsp; 6 Players</div>
+  <div class="cover-meta">Travel + Investigation + Sacred Grove Ritual</div>
+  <div class="cover-teaser">
+    The party carries a corrupting divine weapon through the Teutoburg Forest toward the only place it can be destroyed.
+    The forest is old, hostile, and watching.
+    Someone in the group is no longer entirely themselves.
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════ BODY -->
+<div class="columns">
+
+<h1>Scene 0: Cold Open</h1>
+
+<p>Start in media res. Five seconds of silence. Then:</p>
+
+<div class="read-aloud">
+  You wake before dawn. The forest is completely silent.<br><br>
+  Not quiet. <em>Silent.</em> No birds. No insects. No wind in the branches. The kind of silence that has weight.<br><br>
+  The spear is glowing.<br><br>
+  A faint red light pulses from its wrappings like a heartbeat. Around the cart — everything within five feet of it is still. A leaf is frozen mid-fall between the spear and the ground.<br><br>
+  One of your companions is standing beside it. They've been there for some time. They aren't moving.<br><br>
+  On a nearby tree, carved deep into the bark:<br><br>
+  <strong>MARS VIDET OMNIA</strong>
+</div>
+
+<p><strong>Give Handout 7 now.</strong> Do not explain who carved it. Do not resolve the sleepwalking. Cut to Scene 1 immediately.</p>
+
+<!-- ── -->
+<h1>Scene 1: Something Is Wrong</h1>
+
+<p>The party must discover which companion the spear has compromised. Three independent clues are available — they don't need all three, but the revelation should feel earned.</p>
+
+<div class="clue-box">
+  <strong>Clue 1 — Physical Signs</strong><br>
+  Perception DC 13 (passive, during travel) or Medicine DC 13 (active examination).<br>
+  Eyes faintly red in direct light. Rubbing the same spot on their arm. Sleeping with their face turned toward where the spear is stored — even when it moved.
+</div>
+
+<div class="clue-box">
+  <strong>Clue 2 — Behaviour</strong><br>
+  Insight DC 14 (active: watching them during any conversation about the spear).<br>
+  Advocates keeping it more strongly than before, but can't articulate why. Visibly agitated when someone else touches the spear. Micro-pause before "I'm fine."
+</div>
+
+<div class="clue-box">
+  <strong>Clue 3 — The Spear Reacts</strong><br>
+  Arcana DC 13 (passive) or Religion DC 14 (passive: examining the wrappings).<br>
+  The spear physically tilts toward that person. Cassia, if present: <em>"There's a thread between that person and the spear. I missed it. I'm sorry, I missed it."</em>
+</div>
+
+<div class="callout">
+  <strong>Private Note (pass folded to influenced player at session start):</strong><br>
+  <em>"You woke last night and stood beside the spear for two hours. You don't remember doing it. The spear feels warm when you're near it. It has been making a quiet argument: the power in this weapon could protect the people you care about. You haven't told anyone. You're not sure you're wrong."</em>
+</div>
+
+<!-- ── -->
+<h1>Travel Events (d10)</h1>
+
+<table class="decision-table">
+  <tr><th>d10</th><th>Event</th></tr>
+  <tr><td>1</td><td>Spear angles north on flat ground. DC 12 Arcana/Religion: tracking toward the grove instinctively, not consciously.</td></tr>
+  <tr><td>2</td><td>Lone Roman scout on a ridge, clearly under orders to follow. Capture, warn, or ignore — he reports either way.</td></tr>
+  <tr><td>3</td><td>Germanic watchers in the treeline. Vercingetorix ends it with a raised fist. Without him: Persuasion DC 14 with any Germanic phrase.</td></tr>
+  <tr><td>4</td><td>The influenced character wakes screaming mid-march: vision of themselves over the party's bodies, holding the spear, smiling. They describe it to the table.</td></tr>
+  <tr><td>5</td><td>Germanic offering-post at a path fork. Disturbing it: Legate's trackers gain advantage (wildlife avoids camp).</td></tr>
+  <tr><td>6</td><td>Varro (if present) at a valley's edge: <em>"My grandfather's cohort marched through here. Forty years ago. None of them came back."</em> Walks on.</td></tr>
+  <tr><td>7</td><td>Spear goes quiet hours, resumes stronger. Corruption 2+: DC 11 Wisdom save or urge to unwrap it "just to check."</td></tr>
+  <tr><td>8</td><td>Cold rain. Movement halved. Legate's dogs unaffected. No cloak = 1 exhaustion without 2 hrs shelter.</td></tr>
+  <tr><td>9</td><td>Abandoned camp, fire ash warm. Investigation DC 11: three people fled south; one was dragged 40 ft to soft dark earth. One item left: hardtack pouch and a Brigantes bronze ring.</td></tr>
+  <tr><td>10</td><td>Boundary stone, pre-Roman granite. Religion DC 12: threshold between living world and Vættir land. Thusnelda leaves hair wound on a pebble without explaining.</td></tr>
+</table>
+
+<!-- ── -->
+<h1>Scene 2: Thusnelda's Scouts</h1>
+
+<h3>If Allied with Vercingetorix</h3>
+<div class="read-aloud">
+  Four figures appear in the trees. Forest-dark clothes, no armor. One raises a hand — not a weapon.<br><br>
+  Vercingetorix says quietly: "My people. We are safe here."
+</div>
+<p>The scouts take the party to <strong>Thusnelda</strong>. <em>Toll:</em> information about Roman troop movements. Technical treason. Practically necessary.</p>
+
+<h3>If Not Allied</h3>
+<p>Ambush — 12 Tribal Warriors + 2 Scouts (CR 1/2). Perception DC 12 (active): semi-circle of disturbance to both flanks, none ahead — any character who covers a flank before initiative has advantage on their first roll. Ends diplomatically on Persuasion DC 14 with any Germanic phrase, or by demonstrating they're destroying the spear. Vercingetorix arrives after 3+ rounds regardless.</p>
+
+<h3>Thusnelda — First Words</h3>
+<div class="read-aloud">
+  A small, ancient-looking Germanic woman. Oak staff carved with spiraling runes. She smells of pine smoke and something metallic. She looks at the spear. Then at the party — with the calm gaze of someone who has spent decades looking at hard things.<br><br>
+  "God-Killer. Still breathing. I had hoped you would destroy it by now. I see you have not."
+</div>
+
+<p><strong>Give Handout 6 now</strong> (DC 14 Persuasion success or Vercingetorix vouches).</p>
+
+<div class="secret-box">
+  <strong>DM: Thusnelda's truth</strong><br>
+  She performed this ritual once before, fifty years ago, with Vercingetorix's grandfather. It failed because the sacrifice was insufficient. She has carried that failure since. She will not let it happen again — that is why she tells the party everything now, in the forest, before they stand at the altar making panicked decisions.
+</div>
+
+<table class="decision-table">
+  <tr><th>She will say</th><th>She will not say</th></tr>
+  <tr><td>Exactly what the ritual requires</td><td>What the "right" sacrifice is for any specific character</td></tr>
+  <tr><td>That the grove rejects insufficient sacrifices</td><td>Whether a sacrifice is "good enough" before it is offered</td></tr>
+  <tr><td>That someone in the party is influenced</td><td>Who — she knows, but it is the party's work to discover</td></tr>
+</table>
+
+<p><em>Sample lines:</em> On how she knows: <em>"My teacher's teacher sealed it. I have been waiting since I was eleven years old. I am seventy-three. You are late."</em> On alternatives: <em>"There is not. I have thought about this for sixty years. This is not an opinion."</em> On the influenced NPC: <em>"Your friend there has a thread in them. Cut it soon. The forest is not kind to loose threads."</em></p>
+
+<!-- ── -->
+<h1>Scene 3: The River Crossing</h1>
+
+<p>The sacred grove is on the far bank of the Vitulans river — swollen with spring melt. 90 feet wide, fast-moving.</p>
+
+<table class="decision-table">
+  <tr><th>Method</th><th>DC</th><th>Notes</th></tr>
+  <tr><td>Swim across</td><td>Athletics 13</td><td>Heavy armor = Strength save DC 14 if you fall in</td></tr>
+  <tr><td>Cross the fallen oak</td><td>Acrobatics 11</td><td>Knocked off: Athletics DC 13 or swept 20 ft downstream</td></tr>
+  <tr><td>String a rope (group)</td><td>Athletics 10</td><td>All subsequent crossings have advantage</td></tr>
+</table>
+
+<p>The Legate's advance force arrives exactly mid-crossing: 8 Legionaries (Guard blocks) + 1 Centurion (Knight, CR 3) + Legate if still present (Veteran block).</p>
+
+<h3>The Moral Choice</h3>
+<p>These soldiers are following orders. They've committed no crime. They have families.</p>
+
+<table class="decision-table">
+  <tr><th>Option</th><th>Check</th><th>Outcome</th></tr>
+  <tr><td>Order them to stand down</td><td>Intimidation DC 14 (centurion-rank PC)</td><td>Centurion hesitates long enough to cross. 5+ above: he signals hold. Failure: he specifically targets the speaker.</td></tr>
+  <tr><td>Claim mission is sanctioned</td><td>Deception DC 15 (needs evidence)</td><td>Without a document or seal: DC 18. With one: centurion wavers. Varro's single sentence lands it or kills it.</td></tr>
+  <tr><td>Destroy the log</td><td>—</td><td>Severs pursuit. Anyone still crossing is cut off.</td></tr>
+</table>
+
+<p><em>Varro, if present, will not fight his own men. He steps aside. The opposing centurion recognizes him. That hesitation may be enough.</em></p>
+
+<!-- ── -->
+<h1>Scene 3b: The Farbog</h1>
+
+<div class="read-aloud">
+  The ground changes before you see it. The grass shortens, then disappears. Water appears between the roots. The trees grow thin and angular — bone-pale trunks, dead branches reaching sideways.<br><br>
+  The smell is iron and rot and something sweet underneath. Not pleasant-sweet. The smell of things left here a long time.<br><br>
+  Thusnelda raises one hand. "There are old ones here. Do not touch the water. Do not take anything. Do not run. If something approaches — stop and let me speak first."<br><br>
+  Far ahead, a light pulses once. Blue-white. Then dark.
+</div>
+
+<div class="callout">
+  <strong>Disrespect tracker:</strong> Mentally count transgressions — damaged shrine (Event 5), attacked the Myling, took from the sacrifice site without acknowledgment, ignored the boundary stone. Two or more triggers Encounter C (Hostile Vættir).
+</div>
+
+<h3>Encounter A — The Myling</h3>
+<p>Child-shaped, translucent, wrong. Stands on a hummock 30 feet off-path. Hands extended. Does not approach.</p>
+<ul>
+  <li><strong>Ignore:</strong> Follows at 20 feet, weeps after 10 minutes. DC 13 Wisdom save or Frightened 1 hour. One disrespect.</li>
+  <li><strong>Acknowledge (Religion DC 12):</strong> Say <em>"Unnamed one, we see you"</em> and drop any item of value into the water. The spirit brightens, nods, stills.</li>
+  <li><strong>Ask Thusnelda:</strong> She performs the rite but loses one ritual prep action in Scene 4 (takes an extra round).</li>
+  <li><strong>Attack:</strong> It dissipates. Two more appear at the next hummock.</li>
+</ul>
+<div class="read-aloud">
+  Cassia (if present, after the rite): "The Romans burn our dead. The Germans bury theirs with grave goods. We both know the same thing, don't we? That the dead need witness."<br><br>
+  She doesn't say this to anyone in particular. Let it breathe.
+</div>
+
+<h3>Encounter B — The Bog Sacrifice Site</h3>
+<p>Twenty meters off-path: offering pole, three meters tall, knotwork carvings. At its base, birch bark offerings. Beneath the water, barely visible: a preserved human figure.</p>
+<ul>
+  <li><strong>Investigation DC 13:</strong> Maintained recently. New bark. A Roman military sandal buckle.</li>
+  <li><strong>Religion DC 15 (one minute contact with pole):</strong> Two religious traditions active. One old, rooted, comfortable. One new, hot, angry. Not in harmony.</li>
+  <li><strong>Thusnelda's reaction:</strong> <em>"Someone has been using our holy sites. For something else. Mars has been here. Not recently. But he has been here."</em></li>
+  <li><strong>Bog valerian (Cassia's herb):</strong> Nature DC 13 to identify. Gathering requires leaving the path (Perception DC 11 to spot soft ground). Payoff in Session 4: <em>Siege Ward</em> — 3 uses, each restores 2d8 HP and removes 1 exhaustion level.</li>
+</ul>
+
+<h3>Encounter C — Hostile Vættir (conditional)</h3>
+<p><em>Run only on two or more disrespect triggers.</em></p>
+<p>Five, seven, more blue-white lights move toward the path. Purposefully. Use Will-o'-Wisp stat blocks (CR 2): cannot flee, cannot be Turned, deal cold damage.</p>
+<p><strong>Dispersed by Group Acknowledgment:</strong> Every party member simultaneously drops one item of value into the water channels. DC 10 Religion (group, one action each) to coordinate.</p>
+<ul>
+  <li><strong>Success:</strong> Lights halt, pause, drift back one by one.</li>
+  <li><strong>Failure:</strong> One additional Vættir per round. Cannot be outrun.</li>
+</ul>
+
+<!-- ── -->
+<h1>Scene 4: The Sacred Grove</h1>
+
+<p><strong>Approach:</strong> Survival DC 11 (active, before stepping into the stone ring): the grass inside is simply absent — not grazed. Two natural cover positions (north and south standing stones) displace animated golem movement by one full round each in Scene 5.</p>
+
+<div class="read-aloud">
+  Seven standing stones ring a granite altar. Each stone is twice your height, carved with spiraling runes that don't hold still — they shift as if the stone itself is thinking.<br><br>
+  The air is different here. Heavier. Older. The spear pulses in long, slow throbs now, like a heart slowing toward sleep.<br><br>
+  Thusnelda kneels at the altar. She doesn't speak immediately. Then: "Leave nothing at the door. What you carry in, you carry to the altar. All of it. The weapon, the doubts, and whatever part of you this journey has taken."
+</div>
+
+<h3>The Four Ritual Requirements</h3>
+<ol>
+  <li>Spear on the altar, unwrapped — bare iron on stone</li>
+  <li>Blood from a warrior: voluntary, 1d6 damage, cannot be healed until after the ritual</li>
+  <li>Group speaks in unison: <em>"We unmake what was made in darkness."</em> (Latin or Germanic — both work)</li>
+  <li>A sacrifice — willingly given, of genuine value</li>
+</ol>
+
+<table class="decision-table">
+  <tr><th>Offer</th><th>What it costs</th><th>Grove's response</th></tr>
+  <tr><td>A magic item</td><td>Loss of power</td><td>Acceptable</td></tr>
+  <tr><td>A proficiency</td><td>Permanently lose one skill</td><td>Acceptable</td></tr>
+  <tr><td>A memory</td><td>One important memory, gone</td><td>Acceptable; grove returns a dream</td></tr>
+  <tr><td>A year of life</td><td>Lifespan shortened</td><td>Acceptable</td></tr>
+  <tr><td>Cassia volunteers herself</td><td>Her death, willingly</td><td>More than acceptable; Thusnelda tries to stop her</td></tr>
+  <tr><td>Something cheap</td><td>Nothing real</td><td>Altar goes cold. The grove knows.</td></tr>
+</table>
+
+<p>If the sacrifice is insufficient, Thusnelda says: <em>"That is not a sacrifice. That is a fee. The grove is not a toll booth."</em></p>
+
+<div class="secret-box">
+  <strong>DM: The influenced NPC's crisis</strong><br>
+  As the ritual begins, the connection intensifies. If detected and supported: group Wisdom check DC 14 to help them resist. Success: they participate, corruption cleared. Failure: they physically reach for the spear. Stop them with Athletics grapple DC 12 or by calling their name three times — if stopped, they collapse, weeping, with no memory of the last hour.<br><br>
+  If undetected: at the ritual's climax they attempt to take the spear and run.
+</div>
+
+<!-- ── -->
+<h1>Scene 5: Mars Intervenes</h1>
+
+<div class="read-aloud">
+  "MORTALS."<br><br>
+  The word is not a sound. It moves through you like a wave — like a bell struck inside your chest.<br><br>
+  "YOU DARE UNMAKE WHAT A GOD FORGED."<br><br>
+  The standing stones crack. Not shattering — cracking, like old bones, like the grove itself bracing for something.<br><br>
+  Thusnelda doesn't move. Her voice is steady: "Finish the ritual. Do not look up. Whatever you see, do not look up."
+</div>
+
+<h3>Option A: Defensive Hold</h3>
+<p>Mars manifests through the standing stones: 3 animated Stone Golems (120 HP each — avatars, not killable at Level 5). Each party member actively fighting a golem keeps it occupied for 2 rounds. Golems fade when the ritual completes. Cover positions (spotted with Survival DC 11 before the ritual) displace each golem one full round.</p>
+
+<h3>Option B: Skill Challenge (4 successes before 3 failures)</h3>
+
+<div class="stat-block">
+  <div class="name">Ritual Skill Challenge</div>
+  <div class="type">4 successes before 3 failures — one roll per round, one person holds the ritual while others defend</div>
+  <hr class="rule">
+  <p><strong>Religion DC 14</strong> — Speaking the words of unmaking with genuine conviction</p>
+  <p><strong>Arcana DC 15</strong> — Channeling the grove's ancient power, not fighting it</p>
+  <p><strong>Athletics DC 12</strong> — Holding the spear steady as it fights back</p>
+  <p><strong>Insight DC 14</strong> — Resisting the spear's final promise: <em>"They'll abandon you. Take me and they won't have to."</em></p>
+  <p><strong>Stealth DC 13</strong> — Defense, not ritual: reposition behind a standing stone; golem wastes one movement; ritual holder has advantage this round</p>
+  <hr class="rule">
+  <p>Each failure: one additional animated stone joins.</p>
+</div>
+
+<h3>Option C: Bargain (before ritual begins)</h3>
+<p>Persuasion DC 17 or Religion DC 16 — address Mars directly, name what the spear did in his name:</p>
+<div class="read-aloud">
+  "Great Mars, the spear was being used to corrupt and destroy men in your name. We destroy it not to defy you, but because what it was doing dishonored what you stand for."
+</div>
+<p>A long silence. Then: <em>"...CONTINUE. I WILL NOT MAKE IT EASY. BUT I WILL NOT STOP IT."</em></p>
+<p>Grants advantage on all Skill Challenge rolls.</p>
+
+<!-- ── -->
+<h1>Conclusion</h1>
+
+<div class="read-aloud">
+  The iron shatters — not with a bang, but with a sound like an exhalation. Like something finally resting.<br><br>
+  The runes on the standing stones go dark. The air clears. Somewhere far away, in a direction that isn't quite north, you hear a sound that might be a god, furious, far off.<br><br>
+  The influenced NPC's eyes clear. They look at their hands. They say nothing for a long time.<br><br>
+  Thusnelda sweeps iron fragments into a clay pot and seals it with beeswax. "I will bury these in seven places. It will take time. Go before he finds his voice again."
+</div>
+
+<p>Any corruption below level 5 is reduced by 1. Level 5 characters remain affected.</p>
+<p><strong>Advance to Level 6.</strong></p>
+
+<div class="callout">
+  <strong>If the ritual fails:</strong> The spear remains intact. The party must flee into the forest with a god's attention and a cursed weapon they came to destroy. Session 4 begins in a significantly worse position. Corruption is not cleared.
+</div>
+
+<!-- ── STAT BLOCKS ── -->
+<h1>Key Stat Blocks</h1>
+
+<div class="stat-block">
+  <div class="name">Tribal Warrior</div>
+  <div class="type">Medium humanoid, any alignment</div>
+  <div class="scores">
+    <div class="score"><span class="label">HP</span>11</div>
+    <div class="score"><span class="label">AC</span>13</div>
+    <div class="score"><span class="label">CR</span>1/8</div>
+    <div class="score"><span class="label">SPD</span>30</div>
+    <div class="score"><span class="label">STR</span>13</div>
+    <div class="score"><span class="label">DEX</span>11</div>
+    <div class="score"><span class="label">CON</span>12</div>
+  </div>
+  <hr class="rule">
+  <p><strong>Spear.</strong> Melee or Ranged. +3 to hit. 1d6+1 piercing (melee) or 1d6+1 (ranged, 20/60 ft).</p>
+</div>
+
+<div class="stat-block">
+  <div class="name">Myling (Specter stat block)</div>
+  <div class="type">Undead spirit of an unbaptized child — not evil, unfinished</div>
+  <div class="scores">
+    <div class="score"><span class="label">HP</span>22</div>
+    <div class="score"><span class="label">AC</span>12</div>
+    <div class="score"><span class="label">CR</span>1</div>
+    <div class="score"><span class="label">SPD</span>50 fly</div>
+    <div class="score"><span class="label">STR</span>1</div>
+    <div class="score"><span class="label">DEX</span>14</div>
+    <div class="score"><span class="label">WIS</span>11</div>
+  </div>
+  <hr class="rule">
+  <p><strong>Incorporeal Movement.</strong> Can move through creatures and objects.</p>
+  <p><strong>Life Drain.</strong> +4 to hit. 3d6 psychic damage. Con DC 10 or HP max reduced by damage amount until long rest.</p>
+  <p><em>Does not attack until second round and only if party moves away. Does not pursue outside the bog.</em></p>
+</div>
+
+<div class="stat-block">
+  <div class="name">Vættir (Will-o'-Wisp, modified)</div>
+  <div class="type">Spirits of the bog — territorial, not undead in the theological sense</div>
+  <div class="scores">
+    <div class="score"><span class="label">HP</span>22</div>
+    <div class="score"><span class="label">AC</span>19</div>
+    <div class="score"><span class="label">CR</span>2</div>
+    <div class="score"><span class="label">SPD</span>50 fly</div>
+    <div class="score"><span class="label">DEX</span>28</div>
+    <div class="score"><span class="label">INT</span>13</div>
+    <div class="score"><span class="label">WIS</span>14</div>
+  </div>
+  <hr class="rule">
+  <p><strong>Modifications:</strong> Damage type is cold (not lightning). Do not flee when damaged. Cannot be Turned by divine abilities.</p>
+  <p><strong>Shock.</strong> +4 to hit. 2d8 cold damage.</p>
+  <p><strong>Dispersed</strong> (not destroyed) by Group Acknowledgment: all party members drop one item of value simultaneously into the water. DC 10 Religion (group) to coordinate.</p>
+</div>
+
+<div class="stat-block">
+  <div class="name">Centurion (Pursuit Force)</div>
+  <div class="type">Use Knight stat block, CR 3</div>
+  <div class="scores">
+    <div class="score"><span class="label">HP</span>52</div>
+    <div class="score"><span class="label">AC</span>18</div>
+    <div class="score"><span class="label">CR</span>3</div>
+    <div class="score"><span class="label">SPD</span>30</div>
+    <div class="score"><span class="label">STR</span>16</div>
+    <div class="score"><span class="label">CON</span>14</div>
+    <div class="score"><span class="label">CHA</span>15</div>
+  </div>
+  <hr class="rule">
+  <p><strong>Leadership (recharge 5–6).</strong> Allies within 30 ft add 1d4 to attack rolls and saves for 1 minute.</p>
+  <p><strong>Multiattack.</strong> Two greatsword attacks. +5 to hit, 2d6+3 slashing each.</p>
+</div>
+
+<!-- ── NPC QUICK REF ── -->
+<h1>NPC Quick Reference</h1>
+
+<table class="decision-table">
+  <tr><th>NPC</th><th>Wants</th><th>Secret</th><th>Voice</th></tr>
+  <tr><td>Thusnelda</td><td>Complete the ritual correctly</td><td>She ran this ritual once before. It failed. She has carried that for fifty years.</td><td><em>"I have been waiting since I was eleven. I am seventy-three. You are late."</em></td></tr>
+  <tr><td>Vercingetorix</td><td>His people's three-generation wound closed</td><td>He is dying. This is his final campaign. He doesn't want them to change how they treat him.</td><td><em>"My people. We are safe here."</em></td></tr>
+  <tr><td>Augur Cassia</td><td>Find bog valerian; help the party through</td><td>She has already decided what she will offer at the altar. She hasn't told anyone.</td><td><em>"That the dead need witness."</em></td></tr>
+  <tr><td>Mars</td><td>His weapon back; his dignity reclaimed</td><td>He respects what this party has done. He won't admit it.</td><td><em>"YOU DARE UNMAKE WHAT A GOD FORGED."</em></td></tr>
+</table>
+
+</div><!-- end columns -->
+
+</body>
+</html>

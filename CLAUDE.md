@@ -242,11 +242,11 @@ Every chapter needs exactly these files. Build them in order. Do not skip to the
 
 | File | Purpose | Ch1 | Ch2 | Ch3 | Ch4 | Ch5 |
 |------|---------|-----|-----|-----|-----|-----|
-| `cheat_card_chN.html` | At-table browser tab | partial | done | TODO | TODO | TODO |
-| `chapterNN_print.html` | A4 printable module | missing | done | TODO | TODO | TODO |
-| `chapterNN_guide.qmd` | Full Quarto session guide | missing | done | TODO | TODO | TODO |
-| `chapterNN_maptool.qmd` | Scene→map→token reference | missing | done | TODO | TODO | TODO |
-| `chapterNN_npcs.html` | NPC OGAS + stat cards | missing | missing | TODO | TODO | TODO |
+| `cheat_card_chN.html` | At-table browser tab | partial | done | done | TODO | TODO |
+| `chapterNN_print.html` | A4 printable module | missing | done | done | TODO | TODO |
+| `chapterNN_guide.qmd` | Full Quarto session guide | missing | done | done | TODO | TODO |
+| `chapterNN_maptool.qmd` | Scene→map→token reference | missing | done | done | TODO | TODO |
+| `chapterNN_npcs.html` | NPC OGAS + stat cards | missing | missing | done | TODO | TODO |
 
 **Ch1 partial** = `cheat_card_ch1_finish.html` covers Scenes 4-5 only. Full Ch1 cheat card still missing.
 
@@ -412,13 +412,14 @@ Files created but NOT yet committed:
 - `Maptool/campaigns/5e/5juliromans.cmpgn` — new campaign file. Confirm keep or discard before committing.
 
 ### Priority 2: Chapter 3-5 Skeleton Documents
-Create one complete skeleton per chapter. Each skeleton = 4 files. Use Ch2 files as templates.
 
-**Chapter 3 — Through the Dark Forest**
-- [ ] `gm_tools/cheat_card_ch3.html` — collapsible cheatsheet (copy ch2 structure, fill known scenes, mark TODO)
-- [ ] `handouts/chapter03_handouts.qmd` — handout list with WHAT/WHEN/HOW for handouts 06 (Thusnelda map) + 07 (bloody message)
-- [ ] `gm_tools/chapter03_maptool.qmd` — maps+tokens table (maps: s3_forest_path.html, s3_germanic_village.html, s3_farbog_crossing.html, s3_forest_overview.html)
-- [ ] `gm_tools/chapter03_npcs.html` — NPC reference (primary: Thusnelda, Vercingetorix; secondary: Hilde, Aldric, Arnulf)
+**Chapter 3 — Through the Dark Forest (COMPLETE)**
+- [x] `gm_tools/cheat_card_ch3.html` — done
+- [x] `handouts/chapter03_handouts.qmd` — done (Handout 6 + Handout 7)
+- [x] `gm_tools/chapter03_maptool.qmd` — done (Brian.rptok added)
+- [x] `gm_tools/chapter03_npcs.html` — done
+- [x] `gm_tools/chapter03_guide.qmd` — done
+- [x] `gm_tools/chapter03_print.html` — done
 
 **Chapter 4 — The God's Demand**
 - [ ] `gm_tools/cheat_card_ch4.html`
@@ -432,12 +433,7 @@ Create one complete skeleton per chapter. Each skeleton = 4 files. Use Ch2 files
 - [ ] `gm_tools/chapter05_maptool.qmd` — map: s5_mars_confrontation.html
 - [ ] `gm_tools/chapter05_npcs.html` — primary: Mars (divine), all returning NPCs with final fate notes
 
-**After all 12 files created:**
-- [ ] Update `_quarto.yml` to include all 6 new `.qmd` files (3 handouts + 3 maptool refs)
-- [ ] Commit and push everything
-
-### Priority 3: Print Module for Chapter 3-5
-- [ ] `gm_tools/chapter03_print.html` — traditional A4 two-column module (copy chapter02_print.html format)
+### Priority 3: Print Module for Chapter 4-5
 - [ ] `gm_tools/chapter04_print.html`
 - [ ] `gm_tools/chapter05_print.html`
 

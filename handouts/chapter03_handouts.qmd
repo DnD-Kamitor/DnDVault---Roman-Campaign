@@ -1,0 +1,166 @@
+---
+title: "Chapter 3 Handouts"
+subtitle: "Through the Dark Forest — props for players"
+format:
+  html:
+    toc: false
+    css: handouts.css
+---
+
+```{=html}
+<style>
+.handout-block {
+  border: 3px solid #8B7355;
+  background: #F5F0E8;
+  padding: 2em 2.5em;
+  margin: 2em auto;
+  max-width: 600px;
+  font-family: 'Cinzel', 'Georgia', serif;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.25);
+  page-break-inside: avoid;
+}
+.handout-block h2 {
+  font-family: 'Cinzel', 'Georgia', serif;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 0;
+  border-bottom: 1px solid #8B7355;
+  padding-bottom: 0.4em;
+}
+.handout-block p {
+  margin: 0.7em 0;
+  line-height: 1.6;
+}
+.handout-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #6B5B3A;
+  text-align: right;
+  margin-bottom: 0.3em;
+}
+.handout-divider {
+  border: none;
+  border-top: 1px solid #8B7355;
+  margin: 1em 0;
+}
+.carved-text {
+  font-family: 'Courier New', monospace;
+  font-size: 1.6em;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: #2a1000;
+  padding: 0.6em 0;
+  display: block;
+}
+.scratched-text {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+  color: #5a3a20;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-top: 0.2em;
+  display: block;
+}
+.handout-note {
+  font-size: 0.8em;
+  color: #7A6845;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+.map-area {
+  background: #ede5cc;
+  border: 1px solid #9a7a4a;
+  padding: 1.2em;
+  margin: 0.8em 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.82em;
+  line-height: 1.7;
+  white-space: pre;
+  color: #2a1800;
+}
+.germanic-inscription {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #4a3010;
+  text-align: center;
+  margin-top: 0.6em;
+  letter-spacing: 0.08em;
+}
+@media print {
+  .handout-block { break-inside: avoid; margin: 1.5em auto; }
+  body { background: white; }
+}
+</style>
+```
+
+*Print and cut. Give each handout at the trigger moment only — do not show in advance.*
+
+---
+
+## Handout 7 — The Bloody Message {.unnumbered}
+
+*Give at Scene 0 (cold open) as players examine the carved tree — or as the first physical prop before the session opens. Write on paper soaked in tea then dried. Tear one edge. The carved line is deep, deliberate. The line below it looks like it was made with a fingernail.*
+
+<div class="handout-block">
+
+<div class="handout-label">Handout 7</div>
+
+*The bark was cut through in the night. Deep, deliberate strokes — not a blade slip, not an animal. Someone with a purpose stood here in the dark and carved this while you slept.*
+
+<hr class="handout-divider">
+
+<span class="carved-text">MARS VIDET OMNIA</span>
+
+<span class="scratched-text">I did not want to do this.</span>
+
+<hr class="handout-divider">
+
+<div class="handout-note">The second line is thin — scratched, not carved. As if made with something smaller than a knife. A nail. A finger.</div>
+
+</div>
+
+---
+
+## Handout 6 — Thusnelda's Forest Trail Map {.unnumbered}
+
+*Give at Scene 2 when Thusnelda agrees to guide the party (Persuasion DC 14 success, or Vercingetorix vouches). Draw wavering river lines — never use a ruler. Smudge the fourth river area with a thumbprint. The map is hand-drawn on torn parchment.*
+
+<div class="handout-block">
+
+<div class="handout-label">Handout 6</div>
+
+*She tears a strip of birch bark from the nearest tree. She does not look at it while she draws — the lines come from memory, from sixty years of walking this forest.*
+
+<hr class="handout-divider">
+
+<div class="map-area">
+  ~~ river ~~         ~~ river ~~
+                (cross here)
+              ~~~ river ~~~
+
+    [O O O O O O O]     ← seven stones
+       ᚠ  ᚢ  ᚦ  ᚨ       (runes on each)
+       ᚱ  ᚲ  ᚷ
+
+   [smudge — a fourth river?]
+         [unclear]
+
+              ⚔ ⚔
+           GROVE HEART
+</div>
+
+<hr class="handout-divider">
+
+<div class="germanic-inscription">ᛗᚨᚾᚾᚨᛉ · ᚱᚨᛁᛞᚺᛟ · ᚹᚢᚾᛃᛟ</div>
+
+<p class="handout-note"><em>Mannaz raidho wunjo.</em> Man. Journey. Joy. Or: the man who makes this journey finds what he seeks.</p>
+
+</div>
+
+---
+
+*Sessions 1–2 handouts (1–5) are already in the party's possession. Handouts 8–11 deploy in Sessions 4–5.*
