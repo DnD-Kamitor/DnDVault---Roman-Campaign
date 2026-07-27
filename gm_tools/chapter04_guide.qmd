@@ -1,0 +1,288 @@
+---
+title: "Chapter 4 — The God's Demand"
+subtitle: "GM guide — Chapter 4"
+---
+
+*Vindolanda has endured six days of siege. Three simultaneous crises force triage while Mars demands the spear be carried below by nightfall. The party must survive the siege, navigate Roman politics, escort the spear through haunted tunnels, and kneel before a god.*
+
+**Level:** 6 → Advance to 7 at session end · **Players:** 6 (Iris, Julia Jana, Tanit, Rivia, Ursula, Brian) · **Time:** 3–4 hrs · **Type:** Siege + Politics + Dungeon Escort
+
+---
+
+<div class="session-tree">
+
+<details open>
+<summary>📋 Session Quick-Reference — The Whole Session in One Page</summary>
+
+| | |
+|---|---|
+| **Central question** | When Rome cannot help you, whose orders matter? |
+| **What must happen** | (1) Three simultaneous crises force triage. (2) The spear reaches the antechamber by nightfall. Both happen regardless. |
+| **Player goal** | Survive the siege, organize the escort, navigate the tunnel, and satisfy Mars. |
+| **Real stakes** | Who knelt (determines Ch5 starting faction). Cassia arrested or free. Corvinus' power intact or broken. Vercingetorix's alliance held or lost. |
+| **Session peak moment** | The flagstones of the *principia* grind apart. Cold air rises. The spear pulses once. Mars has opened the way. |
+| **Closing image** | Night falls. Rain stops. Wolves howl, then silence themselves one by one. *"Tomorrow a god arrives."* |
+
+**NPCs active this session:**
+
+| NPC | Location at session start | Wants | Fears | Lying about |
+|---|---|---|---|---|
+| Legate Corvinus | Commander's quarters | Control the escort and claim credit | Party exposing his report blaming them | He already filed that report |
+| Tribune Lucius | Tribune's quarters, cornered | Destroy the spear en route | Being exposed as Brutus' agent before he can pivot | Still receiving ravens ordering Cassia's death |
+| Centurion Varro | At the walls, exhausted | Keep everyone alive | Morale collapse becoming visible | How close to collapse it already is |
+| Augur Cassia | Shrine, blood at her nose | Deliver the spear and interpret Mars' demand correctly | No one volunteering to kneel | She has already decided she will kneel alone if necessary |
+| Vercingetorix | South ditch, under truce | Secure a sworn promise to return the spear to the grove | Alliance being broken under Roman pressure | He is dying. This is his last campaign. |
+| Senator Brutus | Rome — off-screen | Stop Mars from being appeased | His incomplete intelligence about the party's actual plan | Does not know they intend permanent destruction |
+
+**Resource Clocks (track during session):**
+
+| Clock | Starts at | Loses 1 when | Hits 0: |
+|---|---|---|---|
+| Food | 3 | Each failed granary firefighting roll | Civilians riot; escort has disadvantage on initiative in tunnels |
+| Morale | 2 | Corvinus bullies unchallenged; civilian panic | All soldiers –1 Wisdom saves for the rest of session |
+
+**Handout delivery order:**
+
+| # | Prop name | What it is | Trigger moment | Scene |
+|---|---|---|---|---|
+| 8 | Brutus' Raven Message | 4 torn papyrus pieces — assemble at table | Party searches watchtower hearth ash (Investigation DC 12 or active search) | 1 or 2 |
+| 9 | Order of Battle | Military format, folded once | Party asks "what do we have?" during planning window | 2 |
+
+</details>
+
+---
+
+<details>
+<summary>📁 The Story So Far</summary>
+
+**Campaign position:** Session 4 of 5. Regional stakes (Session 3: spear destroyed or in a clay jar, grove ritual, Mars acknowledged) escalate to divine-and-political intersection. The party is either returning heroes or fugitives-with-a-jar, depending on how Session 3 ended.
+
+**What happened last session:**
+
+- The grove ritual either succeeded (spear in Thusnelda's sealed clay jar) or failed (whole spear in hand)
+- Vercingetorix is either an ally with a truce line or a neutral threat
+- Cassia either gathered bog valerian (Siege Ward available) or didn't
+- Corruption below Level 5 was reduced by 1 if the ritual succeeded
+- They advance to Level 6 at the start of this session
+
+**What players currently believe:**
+
+- The fort is under siege (they knew this was coming from Session 3's transition note)
+- Mars was acknowledged but not fully satisfied
+- They may not know Brutus launched the siege specifically to stop them
+
+**What they don't know yet:**
+
+- Corvinus already filed a report blaming them
+- Lucius is still receiving ravens ordering Cassia's death
+- Cassia will volunteer to kneel alone if no one else does
+- Brutus does not know the ritual succeeded in Session 3 (his intelligence ends at the treeline)
+
+**Open threads coming in:**
+
+- What does "Mars demands witnesses" actually mean in practice?
+- Can Corvinus be neutralized without violence?
+- Is Vercingetorix's alliance still solid?
+
+</details>
+
+---
+
+<details>
+<summary>📁 The Truth Behind the Session</summary>
+
+**What is actually going on:**
+
+Senator Brutus launched the siege when his agents reported the party had left the fort with the spear. He does not know about the grove ritual. He believes the spear can still be retrieved. Two Germanic chieftains in the warband owe him money and old favors — they organized the siege. Vercingetorix does not know this; if he did, it would reframe his alliance entirely.
+
+Mars has given until nightfall. He will not destroy the fort if the spear reaches the antechamber on time. He is angry, not irrational. The party has done things he respects. He has been watching.
+
+Corvinus is scared. He blames the party in his official report because having them as a controllable scapegoat is safer than admitting he doesn't understand what happened at this fort over the last month.
+
+**NPC schedules — what happens if players do nothing:**
+
+- Three crises play out: gate holds (barely), granary takes partial damage, shrine agent succeeds and steals the spear case (adding +2 to all Mars DCs later)
+- Varro organizes triage without the party — effective, but slow
+- Cassia emerges, speaks, waits for the party to lead
+- Corvinus calls a council in the *principia* at midday whether or not anyone asks
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 0: Cold Open — The Bell and the Breach</summary>
+
+**Read aloud immediately — no preamble:**
+
+> *You are already running when the bell rings. Smoke pours from the west workshops. The north gate creaks, splinters, and finally gives. A Germanic battering ram lurches through the gap. Varro shouts for shields to form. Cassia staggers out of the shrine with fresh blood down her chin.*
+>
+> *"He demands the spear," she says. "If we do not take it below by nightfall he will feed the fort to his wolves."*
+
+**Three simultaneous crises — party must triage. They engage two. The third resolves by NPC competence.**
+
+| Crisis | Mechanics | Stakes if unengaged |
+|---|---|---|
+| Gate breach | Athletics DC 14 (active: holding the ram 3 rounds while engineers wedge beams). Failure: 1d4 soldiers lost, constant harassment during escort. | Off-screen: Varro holds it for 2 rounds. Engineers arrive late. 2 soldiers lost. |
+| Granary fire | Survival DC 15 (active: firefighting each round) or Create Water. Each failed round: –1d6 rations. | Off-screen: Auxiliaries slow it. Rations –3 from stock. Food clock at 2. |
+| Shrine desecration | Insight DC 14 (active: watching the shrine during chaos) to spot agent; contested Dex vs. +4 to intercept. If he escapes: Mars adds +2 to all DCs during Scenes 3–4. | Off-screen: succeeds. Handout 8 evidence still findable in the watchtower. |
+
+**Reading the assault pattern:**
+
+Perception DC 12 (active: from the wall before engaging any crisis): the north gate attack is the feint. The fire plume goes the wrong direction for an external fire. The real threat is the shrine. A character who calls this out gives the party advance warning — they can cover all three crises optimally.
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 1: Council in the Principia</summary>
+
+**Participants:** Corvinus, Lucius, Varro, Cassia, the party, Vercingetorix by runner.
+
+**What each faction wants:**
+
+| Faction | Position | What they'll trade |
+|---|---|---|
+| Corvinus | Roman Authority: his bodyguard escorts the spear. He arrests anyone refusing. | Extra legionaries ×4 — but he controls the route and the report. |
+| Lucius | Secret Transfer: destroy the spear in the tunnels. "Controlled detonation." | He does not say what he's actually planning. Deception DC 14 to notice he's lying about the reason. |
+| Varro | Shared Custody: three witnesses kneel with Cassia. Civilians in the procession. | Advantage on Mars interactions; weakens escort numbers. |
+| Cassia | Three volunteers must kneel: one Roman, one Germanic, one tied to the spear. | She will not negotiate this requirement — Mars stated it. |
+| Vercingetorix (runner) | Party swears to return the spear to the grove after the ritual. | His warriors stage the diversion, guard the fort overnight (long rest before Ch5). |
+
+**The meaningful decision:** Choose or craft a hybrid:
+
+1. **Roman Authority (Corvinus):** +4 legionaries; disadvantage on Persuasion with Vercingetorix.
+2. **Shared Custody (Varro + Cassia):** Three kneeling witnesses chosen. Advantage on Mars checks; fewer escort soldiers.
+3. **Secret Transfer (Lucius):** Betrayal path. The ritual fails. Mars is not deceived. See Ch5 complications.
+
+**Reading the room:**
+
+- Insight DC 13 (active: watching Corvinus while Cassia speaks): He is assembling arguments, not listening. His hand signs to his bodyguard captain are visible. On 5 above: he already has a contingency that does not include the party.
+- Intimidation DC 14 (active: addressing Corvinus' bodyguard captain directly, invoking the party's four-session track record): On success, captain privately recommends deference. Corvinus accepts Shared Custody instead of pushing Roman Authority — but he does not thank anyone for it.
+- Deception DC 14 (active: telling the bodyguard captain the tunnel route is already secured by Varro's standing orders): Buys time. Requires a document or a high-ranking speaker. Failure: captain reports the attempt immediately.
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 2: Preparing the Procession</summary>
+
+**Give Handout 9 here.** Players plan the escort on the Order of Battle sheet.
+
+Allow up to three preparation actions:
+
+| Preparation | Check | Effect |
+|---|---|---|
+| Scout the hidden stair | Perception DC 14 (active: slow sweep of *principia* basement) | Finds pressure-plate trap (Thieves' Tools DC 13 to disarm). History DC 14 (passive): pre-Hadrianic design — fort built over an older installation. |
+| Secure the vicus | Persuasion DC 15 (calming civilians) or Deception DC 14 (claiming routine supply transfer) | Prevents civilian panic during escort. Deception creates confusion when Mars' arrival becomes obvious. |
+| Blessings | Religion DC 14 or Performance DC 14 (Cassia leads, or a PC leads as ceremony) | +1d4 temp HP to escort. |
+| Calm the horses | Animal Handling DC 11 (before procession — horses react to spear proximity) | Failure: procession starts 10 minutes late; Corvinus notes it. |
+| Map the tunnel gas | Nature DC 13 (passive, if entering tunnel entrance during scouting) | Air smells of marsh gas, not volcanic. Actionable in the Choking Hall: gas is denser near the floor, not the ceiling. Search for air pockets near ceiling. |
+
+Each failed preparation check introduces one tunnel complication (collapsed passage, frightened auxiliary, etc.).
+
+**Shadow-cursed PC moment (if present):** During preparation, if they step away from the group or look toward the south:
+
+> *Your shadow stretches. Not with the torchlight — against it. It extends southward, toward the trees, like a hand reaching for something it recognizes. It stops at full extension and waits.*
+
+Player choice: follow (toward Vercingetorix's camp), resist (Wisdom DC 12 or the shadow takes a full round to retract), or watch. The shadow retracts before anyone else notices. Trigger the Shadar-kai fading mechanic reset now.
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 3: The Procession Below</summary>
+
+**Read aloud when the stair opens:**
+
+> *The flagstones of the principia grind apart. Cold damp air rises carrying the smell of old blood and iron. Torches gutter sideways even though there is no wind. The spear pulses once with a deep red glow. Mars has opened the way.*
+
+Three consecutive tunnel rooms. At each: who leads, who guards civilians, who carries the spear? Those choices affect Session 5 corruption checks.
+
+**Room 1 — The Sunken Armory:**
+
+Fallen Roman armor pieces animate when touched by spear-light. 4 Animated Armors (constructs — no Turn Undead, no undead vulnerabilities).
+
+- Perception DC 11 (active, before spear-light reaches the room): pieces are in formation — two files, advance rank, reserve rank behind a pillar. A soldier who calls this out: first defender following the layout has advantage on their first attack.
+- History DC 14 (passive): pre-Hadrianic armor, 80–100 years older than the fort. Sealed when Vindolanda was built over it.
+- Arcana DC 14 (passive): divine resonance — consecrated legionary armor responding to the spear's light.
+- Clue under a corroded shield: Latin inscription *"The god hears the loudest heart."*
+
+**Room 2 — The Choking Hall:**
+
+Poisonous gas vents. Constitution DC 14 (active: each round in the hall) unless using the rune map to find air pockets, or Cassia spends a spell slot to clear it.
+
+- If gas mapped during preparation (Nature DC 13): gas is denser near the floor. Air pockets are near the ceiling. Stealth DC 13 (active: moving slow and high to locate pockets by feel) gives advantage on Con saves.
+- Medicine DC 13 (active: treating an unconscious party member): stabilizes without spending a spell slot.
+
+**Room 3 — The Elder Stair:**
+
+Narrow steps around a dry well. Brutus' agent triggers a rockfall attempting to bury the spear.
+
+- Dexterity save DC 15 (active: reacting) or Acrobatics DC 13 (active: bracing against the wall) — use whichever the player declares first.
+- Failure: 2d8 bludgeoning and the spear slides toward the shaft. Contested Strength check to keep it.
+- Agent is caught here or escapes into the tunnels. Either way: Ch5 opening reflects the outcome.
+
+**Three Kneeling Figures:**
+
+At the final door, Mars demands three mortals kneel in submission. Cassia insists: one Roman, one Germanic, one tied to the spear.
+
+If the party refuses: Mars adds an extra trial in Session 5 (one additional animated stone golem in the confrontation).
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 4: The Antechamber of Mars</summary>
+
+**Read aloud:**
+
+> *The chamber beyond is circular, carved before Rome existed. The air hums like taut bowstrings. In the center stands the same granite altar where the spear once rested. Above it hangs a vision of Vindolanda seen from the clouds: burning, flooded, broken. Mars' voice vibrates in your bones rather than your ears.*
+>
+> *"Bring me what is mine and speak your price."*
+
+**The callback:** This is the same chamber as Session 1. The same altar, the same chain anchors, the Wight's remains if the party left them. The campaign begins and ends in the same circle of stone. Narrate the recognition explicitly.
+
+**The sacrifice declaration:**
+
+| Offer | Effect |
+|---|---|
+| Blood: 10 HP per kneeling volunteer | Mars accepts. One corruption stage removed per chosen character. |
+| Glory: swear to bear the blame for what follows | Advantage on Persuasion vs. legionaries in Ch5; they become the scapegoat if things go poorly. |
+| Obedience: promise to answer Mars' Call to War (Ch5 mechanic) | Favorable Ch5 start. Obligates them. Mars tracks promises. |
+
+After the offering, the spear levitates to the altar. Mars speaks: *"Tomorrow you stand before me."*
+
+Cut immediately to the fort above. The siege pauses. Germanic horns fall silent. Every NPC knows something profound just occurred.
+
+</details>
+
+---
+
+<details>
+<summary>📁 Conclusion + Session Handoff</summary>
+
+**Read aloud:**
+
+> *Night falls. The rain stops. In the distance wolves begin to howl and then silence themselves, one by one, as if someone stronger demanded their quiet. Vindolanda breathes for the first time in a week. Tomorrow a god arrives.*
+
+**Advance to Level 7.**
+
+**Record for Session 5:**
+
+| Question | Session 5 implication |
+|---|---|
+| Who knelt? | Those characters are eligible to accompany the party into the divine arena. Whoever betrayed is judged. |
+| Who carried the spear? | That character leads Session 5's opening confrontation. |
+| Corvinus sidelined? | He arrests Cassia before dawn. Ch5 opens with a rescue. |
+| Lucius' sabotage succeeded? | Spear damaged. Mars has disadvantage on initial checks — but is enraging, not appeased. |
+| Vercingetorix honored? | His warriors guard the fort overnight. Party gets a long rest. |
+| Citizenship dispatch offered? | If Lucius approached a PC: their petition is in active review. Ch5 epilogue resolves it. |
+
+</details>
+
+</div>

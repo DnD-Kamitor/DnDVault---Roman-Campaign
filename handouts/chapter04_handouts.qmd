@@ -1,0 +1,177 @@
+---
+title: "Chapter 4 Handouts"
+subtitle: "The God's Demand — props for players"
+format:
+  html:
+    toc: false
+    css: handouts.css
+---
+
+```{=html}
+<style>
+.handout-block {
+  border: 3px solid #8B7355;
+  background: #F5F0E8;
+  padding: 2em 2.5em;
+  margin: 2em auto;
+  max-width: 600px;
+  font-family: 'Cinzel', 'Georgia', serif;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.25);
+  page-break-inside: avoid;
+}
+.handout-block h2 {
+  font-family: 'Cinzel', 'Georgia', serif;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 0;
+  border-bottom: 1px solid #8B7355;
+  padding-bottom: 0.4em;
+}
+.handout-block p {
+  margin: 0.7em 0;
+  line-height: 1.6;
+}
+.handout-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #6B5B3A;
+  text-align: right;
+  margin-bottom: 0.3em;
+}
+.handout-divider {
+  border: none;
+  border-top: 1px solid #8B7355;
+  margin: 1em 0;
+}
+.fragment-text {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  background: #EDE8DC;
+  padding: 0.8em 1.2em;
+  border: 1px solid #C4A97A;
+  line-height: 1.8;
+  color: #2a1000;
+  white-space: pre-wrap;
+}
+.torn-note {
+  font-size: 0.78em;
+  color: #7A6845;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+.military-block {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+  background: #EDE8DC;
+  padding: 1em 1.2em;
+  border: 1px solid #C4A97A;
+  line-height: 1.9;
+  color: #2a1000;
+}
+.military-block .heading {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.12em;
+  border-bottom: 1px solid #8B7355;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.6em;
+  font-size: 0.95em;
+}
+.military-block .section { margin-top: 0.7em; }
+.military-block .section-title { font-weight: bold; text-decoration: underline; }
+.military-block .restricted {
+  background: #d4c090;
+  padding: 0.2em 0.6em;
+  font-weight: bold;
+  font-size: 0.82em;
+}
+.handout-note { font-size: 0.8em; color: #7A6845; font-style: italic; margin-top: 0.5em; }
+@media print {
+  .handout-block { break-inside: avoid; margin: 1.5em auto; }
+  body { background: white; }
+}
+</style>
+```
+
+*Print and cut. Give each handout at the trigger moment only — do not show in advance.*
+
+---
+
+## Handout 8 — Brutus' Intercepted Raven Message {.unnumbered}
+
+*Give when the party searches the watchtower hearth ash (Investigation DC 12, or active search of the tower). Tear the paper into 4 pieces beforehand. Hand them over separately — let players assemble the text themselves.*
+
+<div class="handout-block">
+
+<div class="handout-label">Handout 8</div>
+
+*Fragments of papyrus, half-burned. They were thrown into the hearth before anyone could read them. Someone was in a hurry.*
+
+<hr class="handout-divider">
+
+<div class="fragment-text">...granary before dawn. Leave nothing they can use.
+Cassia must not reach the vault. She knows the form.
+Complete this before the god wakes and our window closes.
+If the fort falls, burn what you cannot carry.
+Rome will not mourn a frontier garrison. It will thank you.
+
+                                         — G.C.B.</div>
+
+<hr class="handout-divider">
+
+<div class="torn-note">Three pieces are legible. The fourth is ash. The initials are intact.</div>
+
+</div>
+
+---
+
+## Handout 9 — Fort Vindolanda Order of Battle {.unnumbered}
+
+*Give during Scene 2 (planning window) when the party asks "what do we have?" Fold once. Hand it to whoever holds the highest rank in the vexillatio.*
+
+<div class="handout-block">
+
+<div class="handout-label">Handout 9</div>
+
+<div class="military-block">
+
+<div class="heading">FORT VINDOLANDA — DAY 6 OF SIEGE
+Order of Battle and Duty Roster</div>
+
+<div class="section">
+<div class="section-title">Wall Assignments</div>
+North Wall: Optio Gaius Felix + 8 men
+South Gate: Centurion Varro + 4 veterans
+West Wall (breached section): Auxiliary detail, 6 men
+Principia: Legate's bodyguard, 4 Praetorians
+Shrine and adjacent: Augur Cassia — do not reassign
+</div>
+
+<div class="section">
+<div class="section-title">Supply Status</div>
+Rations: 3 days at full / 5 days at half distribution
+Water: Cistern at 60% — do not use south well (contaminated)
+</div>
+
+<div class="section">
+<div class="section-title">Signal Code</div>
+1 long  = fire
+2 short = breach
+3 long  = all to walls
+</div>
+
+<div class="section">
+<div class="restricted">— DO NOT DISTRIBUTE —</div>
+Supply tunnel exit: south ditch, third post east
+of the water gate. Varro only.
+</div>
+
+</div>
+
+</div>
+
+---
+
+*Handouts 1–7 are already in the party's possession. Handouts 10–11 deploy in Session 5.*

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 4 — NPC Reference</title>
+<style>
+  body { background: #111; color: #ddd; font-family: Arial, sans-serif; margin: 0; padding: 16px; font-size: 14px; line-height: 1.5; max-width: 900px; }
+  h1 { color: #c8a84b; font-size: 1.2em; margin: 0 0 4px 0; }
+  .subtitle { color: #888; font-size: 0.82em; margin-bottom: 18px; }
+
+  .npc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .npc-card { background: #181818; border: 1px solid #2a2a2a; border-top: 3px solid #a07830; padding: 14px; }
+  .npc-card.ally { border-top-color: #4a8a4a; }
+  .npc-card.enemy { border-top-color: #8a2a2a; }
+  .npc-card.unknown { border-top-color: #666; }
+  .npc-card.full { grid-column: span 2; }
+
+  .npc-header { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 10px; }
+  .portrait { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #a07830; background: #222; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+  .portrait.ally { border-color: #4a8a4a; }
+  .portrait.enemy { border-color: #8a2a2a; }
+  .portrait.unknown { border-color: #666; }
+
+  .npc-name { color: #c8a84b; font-weight: bold; font-size: 1.05em; margin: 0 0 2px 0; }
+  .npc-role { color: #888; font-size: 0.82em; margin: 0 0 4px 0; }
+  .npc-voice { font-style: italic; color: #c8b898; font-size: 0.88em; border-left: 2px solid #a07830; padding-left: 8px; margin: 6px 0; }
+
+  .ogas { margin: 8px 0; }
+  .ogas-row { display: flex; gap: 6px; margin: 3px 0; font-size: 0.85em; }
+  .ogas-label { color: #a07830; font-weight: bold; min-width: 70px; flex-shrink: 0; }
+  .ogas-text { color: #ccc; }
+
+  .secret { background: #1a0a0a; border-left: 3px solid #8a1a1a; padding: 5px 8px; margin: 6px 0; font-size: 0.83em; color: #d8a8a8; }
+  .stat-line { background: #0a0a1a; color: #88aaff; font-size: 0.82em; padding: 4px 8px; margin: 6px 0; }
+
+  .state-table { width: 100%; border-collapse: collapse; font-size: 0.82em; margin: 6px 0; }
+  .state-table th { color: #888; font-weight: normal; border-bottom: 1px solid #333; padding: 2px 6px; text-align: left; }
+  .state-table td { padding: 2px 6px; border-bottom: 1px solid #1e1e1e; color: #bbb; vertical-align: top; }
+  .state-table td:first-child { color: #a07830; white-space: nowrap; }
+
+  details { margin: 6px 0; }
+  summary { cursor: pointer; color: #888; font-size: 0.82em; list-style: none; user-select: none; }
+  summary::before { content: "▶ "; }
+  details[open] summary::before { content: "▼ "; }
+  .inner-detail { padding: 4px 0 0 10px; }
+</style>
+</head>
+<body>
+
+<h1>Chapter 4 — NPC Reference</h1>
+<div class="subtitle">The God's Demand. Primary: Senator Brutus (first felt), Legate Corvinus. Allies: Cassia, Varro, Vercingetorix. Wildcard: Tribune Lucius.</div>
+
+<div class="npc-grid">
+
+<!-- LEGATE CORVINUS -->
+<div class="npc-card enemy">
+  <div class="npc-header">
+    <div class="portrait enemy">⚖</div>
+    <div>
+      <div class="npc-name">Legate Corvinus</div>
+      <div class="npc-role">Fort commander. Blunt Force Nemesis. Frame: red.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"This fort answers to Rome. That means it answers to me."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Secure his legacy and the spear before Rome discovers what happened here</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Control the escort composition and claim credit for the ritual</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Uses military law to threaten anyone opposing him. Signs side-orders to his bodyguard captain during the council. Arranges to arrest Cassia at session end if he feels sidelined.</span></div>
+  </div>
+  <div class="secret">Secret: He already sent a report to Rome that blames the party for the siege. He fears they will return and expose this. He is not wrong to fear this.</div>
+  <div class="stat-line">Stat: Veteran (CR 3). AC 17 (half plate), HP 58. Multiattack: 2 longsword (+5, 1d8+3). Parry reaction. Will not enter tunnels.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>Escort wins — Roman Authority</td><td>Escorts the procession with bodyguard ×4. Party gains soldier backup, loses Vercingetorix.</td></tr>
+      <tr><td>Escort — Shared Custody</td><td>Accepts grudgingly after Intimidation DC 14 or bodyguard captain's recommendation. Reduced control.</td></tr>
+      <tr><td>Party bypasses him entirely</td><td>He arrests Cassia at session end. Scene 5 opens with a rescue.</td></tr>
+      <tr><td>5-above Intimidation DC 14</td><td>Bodyguard captain privately recommends deference. Corvinus accepts Shared Custody instead of fighting it.</td></tr>
+    </table>
+  </div>
+  </details>
+</div>
+
+<!-- AUGUR CASSIA -->
+<div class="npc-card ally">
+  <div class="npc-header">
+    <div class="portrait ally">☽</div>
+    <div>
+      <div class="npc-name">Augur Cassia Liviana</div>
+      <div class="npc-role">Fort augur, Aasimar heritage. Primary ritual support. Frame: gold.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"He wants witnesses, not soldiers. Let me speak plainly about what that costs."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Prevent Mars from razing the fort; interpret every omen correctly</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Deliver the spear to the antechamber and speak the ritual form Mars requires</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Demands oaths before the procession begins. Shares visions without softening them. If Brutus' agent reaches her, she defends herself — she will not be a passive target.</span></div>
+  </div>
+  <div class="secret">Secret: If no one volunteers to kneel at the Three Kneeling Figures moment, she will kneel alone. She has already decided this. She has not told anyone because she knows the party will try to stop her, and she does not want that conversation before it has to happen.</div>
+  <div class="stat-line">Stat: Priest (CR 2). AC 13, HP 27. Spells (4/3/2): Guiding Bolt, Healing Word, Spiritual Weapon, Dispel Magic, Greater Restoration. Will use her last spell slot on the ritual if needed.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>In the procession</td><td>Can clear the Choking Hall with one spell slot. Ritual DC 14 = DC 11 with her present.</td></tr>
+      <tr><td>Brutus' agent reaches her</td><td>She defends herself: Guiding Bolt first, Spiritual Weapon second. She will not flee.</td></tr>
+      <tr><td>Arrested by Corvinus (if he feels sidelined)</td><td>Opens Session 5 as a rescue. Mars adds +2 to all DCs without her in the antechamber.</td></tr>
+      <tr><td>Session 3 bog valerian gathered</td><td>She deploys the Siege Ward (3 uses, 2d8 HP + clear 1 exhaustion) during Scene 2 preparation.</td></tr>
+    </table>
+  </div>
+  </details>
+</div>
+
+<!-- CENTURION VARRO -->
+<div class="npc-card ally">
+  <div class="npc-header">
+    <div class="portrait ally">🗡</div>
+    <div>
+      <div class="npc-name">Centurion Varro</div>
+      <div class="npc-role">Fort centurion. Reliable ally. Frame: gold.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"Tell me who needs to be where. I will handle the rest."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Keep every soldier and civilian alive through tonight</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Put the right people in the escort and keep the walls manned</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Appeals directly to the party's track record — he has watched them operate for four sessions. Refuses to abandon civilians even for tactically superior positions. Coordinates triage teams whether or not the party asks him to.</span></div>
+  </div>
+  <div class="secret">Secret: Morale is near collapse. Varro is the only thing holding it together — with his presence, not with words. Without him (if dead from Session 3 injury or transferred), morale collapses: all soldiers take –1 to Wisdom saves this session.</div>
+  <div class="stat-line">Stat: Knight (CR 3). AC 18 (plate), HP 52. Leadership recharge 5–6: allies +1d4 attack/saves for 1 min. Multiattack: 2 greatsword (+5, 2d6+3). Will not fight civilians or party members.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>Assigned to escort</td><td>His presence: soldiers follow without morale check. Centurion in tunnel = +2 to all Athletics checks.</td></tr>
+      <tr><td>Stays at the walls</td><td>Wall defenses hold without player management. He will not be in the tunnel scenes.</td></tr>
+      <tr><td>Confronts river centurion (S3 callback)</td><td>If the same centurion who let the party cross is in the escort, Varro acknowledges him by name. That soldier has advantage on his first save.</td></tr>
+    </table>
+  </div>
+  </details>
+</div>
+
+<!-- TRIBUNE LUCIUS -->
+<div class="npc-card unknown">
+  <div class="npc-header">
+    <div class="portrait unknown">⚜</div>
+    <div>
+      <div class="npc-name">Tribune Lucius Valerius Maximus</div>
+      <div class="npc-role">Senate liaison. Morally complicated. Frame: red or grey.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"I am not who you think I am. Neither is Brutus."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Survive the falling star of Brutus' agenda without being destroyed by it</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Destroy or sabotage the spear en route — "controlled detonation" in the tunnels is his current plan</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Offers cooperation and plants traps simultaneously. Will approach one character privately before session end to offer a dispatch recommendation (citizenship). The offer is genuine — he has room on the dispatch for real names.</span></div>
+  </div>
+  <div class="secret">Secret: Still receiving ravens from Brutus ordering Cassia's death. He has not acted on this order. He is deciding whether he will. A high Insight check (DC 16) during the council catches him re-reading a small folded note under the table — he destroys it when he notices he's been seen.</div>
+  <div class="stat-line">Stat: Spy (CR 1). AC 12, HP 27. Rapier +4, 1d8+2 piercing. Sneak Attack 3d6. Cunning Action. Will not fight the party directly — has no reason to.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>Party treated him with respect (Ch2)</td><td>He approaches with citizenship dispatch offer before session end. Private, no witnesses.</td></tr>
+      <tr><td>Party exposed him (Ch2)</td><td>He is cooperative but wary. Will not plant traps in the tunnel. Will not make the citizenship offer.</td></tr>
+      <tr><td>Sabotage succeeds (spear damaged)</td><td>Mars is enraged: disadvantage on initial checks in Ch5. Lucius vanishes from the fort before dawn.</td></tr>
+      <tr><td>Sabotage prevented</td><td>Lucius accepts the outcome. Approaches with dispatch offer as apology and exit strategy.</td></tr>
+    </table>
+  </div>
+  </details>
+</div>
+
+<!-- VERCINGETORIX -->
+<div class="npc-card ally">
+  <div class="npc-header">
+    <div class="portrait ally">⚔</div>
+    <div>
+      <div class="npc-name">Vercingetorix the Red</div>
+      <div class="npc-role">Warlord. Outside the south ditch under truce. Frame: gold.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"I kept my word. Now I need yours."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Ensure the spear is sealed forever and his people are protected from the god's anger</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Use the chaos to secure a sworn promise to return the spear to the grove after the ritual</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Negotiates through runners. Offers his warriors to guard the fort overnight (allowing a long rest) if honored. Names the party in a specific way that only his warriors remember, if the alliance is kept under pressure.</span></div>
+  </div>
+  <div class="secret">Secret: He is dying faster than he admits. This is his final campaign. If the party honored his alliance in Session 3, he reveals this now — quietly, without theatre. If they learn this before the session ends, it reframes his urgency and his unwillingness to negotiate on any secondary term.</div>
+  <div class="stat-line">Stat: Gladiator (CR 5). AC 16, HP 112. Multiattack: 3 (spear). Brave, Shield. Will not enter the fort or tunnels — his role is the diversion and the long-rest grant.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>Alliance honored under pressure</td><td>Warriors guard the fort overnight. Party gets full long rest before Ch5. He reveals his dying to one trusted PC.</td></tr>
+      <tr><td>Alliance broken or ignored</td><td>Warriors withdraw. No long rest. He threatens to take the spear fragments after the ritual. Follows through in Ch5 prologue.</td></tr>
+      <tr><td>Corvinus opposes the alliance</td><td>Vercingetorix sends a runner: "Choose. He cannot protect you. I can. One night is all I ask."</td></tr>
+    </table>
+  </div>
+  </details>
+</div>
+
+<!-- SENATOR BRUTUS -->
+<div class="npc-card enemy full">
+  <div class="npc-header">
+    <div class="portrait enemy">🏛</div>
+    <div>
+      <div class="npc-name">Senator Gaius Cassius Brutus</div>
+      <div class="npc-role">Never Present Villain. Off-screen all session. First "felt" not seen. Frame: red.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"Rome will not mourn a frontier garrison. It will thank you."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Prevent Mars from being appeased — keep the spear exploitable for political leverage</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Burn the fort or kill Cassia before the ritual can be completed</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Commands sleeper agents inside the fort (the granary fire, the shrine desecration, the rockfall in the tunnels). Sends ravens through watchtower relays. Has already arranged a Plan B ritual in Session 5 if this session fails. Does not know the party is attempting to destroy the spear entirely — his intelligence ends at the treeline.</span></div>
+  </div>
+  <div class="secret">Secret: He does not know about the grove ritual. He believes the spear can still be retrieved and used. If he knew the party was attempting permanent destruction rather than relocation, he would have launched the siege earlier with more force. He is acting on incomplete information — this is his one exploitable weakness. A character who reaches him directly in Session 5 and reveals this will break his composure.</div>
+  <div class="stat-line">Stat: Noble (CR 1/8) with Assassin lieutenant escort (CR 8). Off-screen all Ch4. Token available if players demand a messenger — the messenger is not Brutus. Do not let Brutus be physically present or vulnerable this session.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>Shrine agent captured + Intimidation DC 15</td><td>Agent reveals: Brutus ordered the granary fire AND Cassia's death. G.C.B. initials confirmed.</td></tr>
+      <tr><td>DC 5 above on interrogation</td><td>Agent names a second contact inside the fort before catching himself. That name surfaces in Ch5 epilogue.</td></tr>
+      <tr><td>Rockfall in tunnels triggered</td><td>Brutus' agent escapes or is captured. Either way: Ch5 opens with Brutus knowing the ritual failed or succeeded.</td></tr>
+      <tr><td>Raven message found (Handout 8)</td><td>First direct evidence linking Brutus to the arson and the siege. "G.C.B." is verifiable with History DC 13.</td></tr>
+    </table>
+  </div>
+  </details>
+</div>
+
+</div><!-- end npc-grid -->
+
+</body>
+</html>

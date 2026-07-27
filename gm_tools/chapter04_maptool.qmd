@@ -1,0 +1,90 @@
+---
+title: "Chapter 4 — MapTool Reference"
+subtitle: "The God's Demand — maps, tokens, and scene transitions"
+---
+
+## Maps and Tokens for Chapter 4
+
+Session 4 splits between the fort under siege and the hidden tunnels beneath the *principia*. Load all four maps before players join — transition at the exact cued moments.
+
+### Scene → Map → Tokens
+
+| Scene | Map File | Tokens to Place | Notes |
+|---|---|---|---|
+| Scene 0: Gate breach | `CastleWall` or `BridgeCheckpoint` | All PCs, Centurion_Varro, Guard ×8, Berserker ×4, Tribal_Warrior ×8 | Three simultaneous crises — split party likely. Brutus' agent (Quintus_Flavius renamed "Soldier") starts near shrine. |
+| Scene 1: Council | `saalburg_plan.jpg` (reference only) | Legate_Corvinus, Tribune_Lucius, Centurion_Varro, Augur_Cassia, all PCs | No combat. Use fort floor plan for NPC positioning only. Vercingetorix's envoy: off-screen runner. |
+| Scene 2: Preparation | `saalburg_plan.jpg` (reference only) | Same as Scene 1 | No new tokens. Players plan escort route on the floor plan. |
+| Scene 3: Tunnels — Armory | `CaveTunnelsVol3` | All PCs, Animated_Armor ×4 | Animated Armor = constructs (divine resonance), not undead. No Turn Undead vulnerability. |
+| Scene 3: Tunnels — Choking Hall | `DungeonVol2` | All PCs, Cassia (if escort) | No combat tokens. Gas is environmental. Medicine DC 13 or Cassia spell to clear. |
+| Scene 3: Tunnels — Elder Stair | `DungeonVol2` | All PCs, Quintus_Flavius (Brutus' agent) | Rockfall trap: Dex save DC 15 or 2d8 bludgeoning. |
+| Scene 4: Antechamber | `NatureGoddessTemple` | All PCs, Augur_Cassia, Centurion_Varro, Legate_Corvinus | Same map as Ch1 altar chamber — intentional callback. No combat. Mars as voice only. |
+
+**Scene 0 sub-maps (optional — run on same CastleWall map, adjust narrative):**
+
+| Crisis | Focus area | Notes |
+|---|---|---|
+| Gate breach | North gate section | 3 rounds of Athletics DC 14 before engineers arrive |
+| Granary fire | West workshops area | Survival DC 15 each round; each failure = 1d6 rations lost |
+| Shrine desecration | Shrine doorway | Insight DC 14 to spot agent; contested Dex to intercept |
+
+---
+
+### Player Tokens
+
+| Character | File | Notes |
+|---|---|---|
+| Iris | `Maptool/tokens/players/Iris.rptok` | |
+| Julia Jana | `Maptool/tokens/players/Julia_Jana.rptok` | |
+| Tanit | `Maptool/tokens/players/Tanit_bint_Abdmelqart.rptok` | |
+| Rivia | `Maptool/tokens/players/Rivia_Calida_Mendera.rptok` | |
+| Ursula | `Maptool/tokens/players/Ursula_Günther.rptok` | |
+| Brian | `Maptool/tokens/players/Brian.rptok` | |
+
+---
+
+### NPC Tokens
+
+| Token | File | Scene | Frame Colour |
+|---|---|---|---|
+| Legate Corvinus | `Maptool/tokens/npcs/Corvinus.rptok` | S0–S4 | Red |
+| Tribune Lucius | `Maptool/tokens/npcs/Lucius_Tribune.rptok` | S1–S4 | Red (grey if players trust him) |
+| Centurion Varro | `Maptool/tokens/npcs/Varro.rptok` | S0–S4 | Gold |
+| Augur Cassia | `Maptool/tokens/npcs/Augur_Cassia.rptok` | S0–S4 | Gold |
+| Vercingetorix | `Maptool/tokens/npcs/Vercingetorix.rptok` | S0 (off-screen envoy), S4 (if invited) | Gold |
+| Senator Brutus | `Maptool/tokens/npcs/Senator_Brutus.rptok` | Off-screen all session — have token ready | Red |
+| Brutus' Agent | `Maptool/tokens/npcs/Quintus_Flavius.rptok` | S0 shrine, S3 Elder Stair | Red — rename to "Soldier" if Quintus unknown to party |
+
+---
+
+### Creature Tokens
+
+| Creature | File | Scene | Count | Notes |
+|---|---|---|---|---|
+| Berserker | `Maptool/tokens/npcs/creatures/Berserker.rptok` | S0 gate breach | ×4 | Germanic lead assault |
+| Tribal Warrior | `Maptool/tokens/npcs/creatures/Tribal_Warrior.rptok` | S0 gate | ×8 | |
+| Guard (Legionary) | `Maptool/tokens/npcs/Fort_Tokens/Legionary_Milites.rptok` | S0 all crises | ×8 | Fort defenders |
+| Animated Armor | `Maptool/tokens/npcs/creatures/Animated_Armor.rptok` | S3 Sunken Armory | ×4 | Constructs — no Turn Undead |
+| Cultist of Mars | `Maptool/tokens/npcs/Fort_Tokens/Cult_Mars_Initiate.rptok` | S3 tunnels optional | ×3 | If sleeper agents enter tunnels |
+
+---
+
+### Map Files Location
+
+Campaign session folder: `Maptool/maps/campaign/S4_The_Gods_Demand/`
+
+```
+CastleWall             — fort wall battle map (Scene 0)
+BridgeCheckpoint       — alternate gate map
+saalburg_plan.jpg      — fort interior reference (Scenes 1–2, no battle grid)
+CaveTunnelsVol3        — tunnel system (Scene 3 Armory + Choking Hall)
+DungeonVol2            — stair and deeper tunnel (Scene 3 Elder Stair)
+NatureGoddessTemple    — circular stone chamber (Scene 4 antechamber)
+```
+
+Run `bash Maptool/build_campaign_maps.sh` to copy session tokens into this folder (idempotent).
+
+### The Tunnel Callback
+
+Scene 4's `NatureGoddessTemple` map is the same map used for the Ch1 altar chamber. This is intentional: the party arrives from a different direction (the old Roman water tunnel, not the excavation shaft), but the granite altar, the chain anchors in the floor, and the Wight's remains from Session 1 are all present. The session begins and ends in the same circle of stone.
+
+Narrate the recognition: *"The altar. The chains. You've been here before."*

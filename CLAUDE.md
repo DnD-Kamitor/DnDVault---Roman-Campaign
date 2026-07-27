@@ -242,11 +242,11 @@ Every chapter needs exactly these files. Build them in order. Do not skip to the
 
 | File | Purpose | Ch1 | Ch2 | Ch3 | Ch4 | Ch5 |
 |------|---------|-----|-----|-----|-----|-----|
-| `cheat_card_chN.html` | At-table browser tab | partial | done | done | TODO | TODO |
-| `chapterNN_print.html` | A4 printable module | missing | done | done | TODO | TODO |
-| `chapterNN_guide.qmd` | Full Quarto session guide | missing | done | done | TODO | TODO |
-| `chapterNN_maptool.qmd` | Scene→map→token reference | missing | done | done | TODO | TODO |
-| `chapterNN_npcs.html` | NPC OGAS + stat cards | missing | missing | done | TODO | TODO |
+| `cheat_card_chN.html` | At-table browser tab | partial | done | done | done | TODO |
+| `chapterNN_print.html` | A4 printable module | missing | done | done | done | TODO |
+| `chapterNN_guide.qmd` | Full Quarto session guide | missing | done | done | done | TODO |
+| `chapterNN_maptool.qmd` | Scene→map→token reference | missing | done | done | done | TODO |
+| `chapterNN_npcs.html` | NPC OGAS + stat cards | missing | missing | done | done | TODO |
 
 **Ch1 partial** = `cheat_card_ch1_finish.html` covers Scenes 4-5 only. Full Ch1 cheat card still missing.
 
@@ -421,11 +421,13 @@ Files created but NOT yet committed:
 - [x] `gm_tools/chapter03_guide.qmd` — done
 - [x] `gm_tools/chapter03_print.html` — done
 
-**Chapter 4 — The God's Demand**
-- [ ] `gm_tools/cheat_card_ch4.html`
-- [ ] `handouts/chapter04_handouts.qmd` — handouts 08 (raven order) + 09 (siege orders)
-- [ ] `gm_tools/chapter04_maptool.qmd` — maps: s4_fort_siege.html, s4_sacred_grove.html, s4_sacred_grove_overview.html
-- [ ] `gm_tools/chapter04_npcs.html` — primary: Senator Brutus (first physical appearance), Legate Corvinus; secondary: Tribune Lucius
+**Chapter 4 — The God's Demand (COMPLETE)**
+- [x] `gm_tools/cheat_card_ch4.html` — done (existed)
+- [x] `handouts/chapter04_handouts.qmd` — done (Handout 8 raven message + Handout 9 order of battle)
+- [x] `gm_tools/chapter04_maptool.qmd` — done
+- [x] `gm_tools/chapter04_npcs.html` — done (Corvinus, Lucius, Varro, Cassia, Vercingetorix, Brutus)
+- [x] `gm_tools/chapter04_guide.qmd` — done
+- [x] `gm_tools/chapter04_print.html` — done
 
 **Chapter 5 — The Wrath of Mars**
 - [ ] `gm_tools/cheat_card_ch5.html`
