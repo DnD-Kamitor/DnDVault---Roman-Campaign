@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S4 — Elder Stair — Battle Map</title>
+<style>
+  body { margin: 0; background: #0d0b08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
+  svg { display: block; margin: 0 auto; }
+  .notes { max-width: 960px; margin: 20px auto 0; }
+  h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+  td, th { padding: 5px 10px; border: 1px solid #2a2018; vertical-align: top; }
+  th { background: #1a1510; color: #c8a850; text-align: left; }
+  tr:nth-child(even) td { background: #141210; }
+  tr:nth-child(odd) td { background: #0d0b08; }
+  .enc { color: #c84040; }
+  .mech { color: #90c880; }
+  .draw { color: #8ab0c8; }
+  .trap { color: #e08040; }
+</style>
+</head>
+<body>
+
+<!--
+  GRID: 60px = 1 sq = 5 ft
+  Canvas: 960x960
+  Floor: x=60, y=60, w=840, h=840  (14x14 sq)
+  Well centre: (480,480)  outer rim r=180  shaft r=120
+  North arch: x=420-540 (2 sq centred, cols 7-8)
+  South arch exit: x=420-540  (stairs descend to antechamber)
+  Rockfall area: NE quadrant approx (660-840, 60-240)
+  All room coords multiples of 60
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="960" viewBox="0 0 960 960">
+<defs>
+  <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.30)" stroke-width="0.8"/>
+  </pattern>
+  <radialGradient id="tglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"  stop-color="#c89050" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="welldepth" cx="50%" cy="55%" r="50%">
+    <stop offset="0%"  stop-color="#0a0808" stop-opacity="1"/>
+    <stop offset="70%" stop-color="#1a1010" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#2a1818" stop-opacity="1"/>
+  </radialGradient>
+  <radialGradient id="wellrim" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"  stop-color="#4a4030" stop-opacity="0.0"/>
+    <stop offset="75%" stop-color="#3a3020" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#1a1208" stop-opacity="0.8"/>
+  </radialGradient>
+</defs>
+
+<!-- VOID (walls) -->
+<rect width="960" height="960" fill="#1a1612"/>
+
+<!-- Floor -->
+<rect x="60" y="60" width="840" height="840" fill="#6a5e4c"/>
+
+<!-- Floor age variation — darker worn patches -->
+<rect x="120" y="120" width="720" height="720" fill="#5a5040" opacity="0.18"/>
+
+<!-- Arch openings -->
+<!-- North: from Choking Hall (dark passage) -->
+<rect x="420" y="0"   width="120" height="60" fill="#3a3020"/>
+<!-- South: exit — stairs descend to antechamber (very dark — deeper unknown) -->
+<rect x="420" y="900" width="120" height="60" fill="#1e1610"/>
+
+<!-- DRY WELL — outer stone rim ring -->
+<circle cx="480" cy="480" r="180" fill="#3e3428"/>
+<!-- Rim top surface (lighter) -->
+<circle cx="480" cy="480" r="180" fill="none" stroke="#5a5040" stroke-width="6"/>
+<!-- Rim inner edge shadow -->
+<circle cx="480" cy="480" r="120" fill="none" stroke="#1a1208" stroke-width="8"/>
+<!-- Well shaft (the void) -->
+<circle cx="480" cy="480" r="120" fill="url(#welldepth)"/>
+<!-- Moisture shimmer at shaft bottom -->
+<ellipse cx="484" cy="498" rx="32" ry="9" fill="#182028" opacity="0.35"/>
+<ellipse cx="476" cy="492" rx="18" ry="5" fill="#203040" opacity="0.25"/>
+
+<!-- Rim highlight (top-left — suggests light source from north) -->
+<path d="M 320,420 A 180,180 0 0,1 420,300" fill="none" stroke="#6a5e4c" stroke-width="3" opacity="0.5"/>
+
+<!-- STAIR TREADS (concentric arcs — SE quadrant, party descends clockwise) -->
+<!-- Stairs are between the well rim and the SE wall -->
+<path d="M 480,672 A 192,192 0 0,0 672,480" fill="none" stroke="#4a4030" stroke-width="3.5"/>
+<path d="M 480,686 A 206,206 0 0,0 686,480" fill="none" stroke="#443a2a" stroke-width="3"/>
+<path d="M 480,700 A 220,220 0 0,0 700,480" fill="none" stroke="#3e3428" stroke-width="2.5"/>
+<path d="M 480,714 A 234,234 0 0,0 714,480" fill="none" stroke="#383020" stroke-width="2"/>
+<path d="M 480,728 A 248,248 0 0,0 728,480" fill="none" stroke="#302818" stroke-width="1.5"/>
+
+<!-- Stair edge markers along south wall (short vertical lines suggesting step heights) -->
+<line x1="480" y1="672" x2="480" y2="728" stroke="#3a3020" stroke-width="2" opacity="0.7"/>
+<!-- Stair edge markers along east wall -->
+<line x1="672" y1="480" x2="728" y2="480" stroke="#3a3020" stroke-width="2" opacity="0.7"/>
+
+<!-- Stair direction arrow (on floor, SE quadrant) -->
+<g transform="translate(620,620) rotate(45)">
+  <line x1="0" y1="-24" x2="0" y2="24" stroke="#4a4030" stroke-width="2.5"/>
+  <polygon points="0,28 -5,18 5,18" fill="#5a5040"/>
+</g>
+
+<!-- CHAIN ANCHORS (ceiling chains, 2 in NE area — suggestion of old construction) -->
+<!-- Chain 1: from ceiling above (x=660,y=120 area) — shown as hanging links -->
+<line x1="660" y1="60"  x2="660" y2="108" stroke="#3a3020" stroke-width="3"/>
+<ellipse cx="660" cy="110" rx="5" ry="3" fill="none" stroke="#4a4030" stroke-width="2"/>
+<ellipse cx="660" cy="116" rx="5" ry="3" fill="none" stroke="#4a4030" stroke-width="2"/>
+<ellipse cx="660" cy="122" rx="5" ry="3" fill="none" stroke="#4a4030" stroke-width="2"/>
+<ellipse cx="660" cy="128" rx="4" ry="3" fill="none" stroke="#4a4030" stroke-width="2"/>
+<!-- Chain 2 -->
+<line x1="720" y1="60"  x2="720" y2="90"  stroke="#3a3020" stroke-width="3"/>
+<ellipse cx="720" cy="92"  rx="5" ry="3" fill="none" stroke="#4a4030" stroke-width="2"/>
+<ellipse cx="720" cy="98"  rx="5" ry="3" fill="none" stroke="#4a4030" stroke-width="2"/>
+<ellipse cx="720" cy="104" rx="4" ry="3" fill="none" stroke="#4a4030" stroke-width="2"/>
+
+<!-- ROCKFALL AREA — NE quadrant (Brutus' agent's trap) -->
+<!-- Large rocks -->
+<polygon points="690,78 748,72 768,92 762,118 706,124 684,100" fill="#3a3020"/>
+<polygon points="742,84 790,78 808,96 802,118 750,124 733,102" fill="#4a3e2e"/>
+<polygon points="724,102 768,96 782,114 776,136 730,142 715,120" fill="#383028"/>
+<!-- Mid rocks -->
+<polygon points="700,118 730,114 740,126 736,142 706,146 694,132" fill="#4a3e2e"/>
+<polygon points="750,120 782,115 792,128 788,144 756,148 745,133" fill="#3a3020"/>
+<!-- Small rubble scatter -->
+<circle cx="715" cy="136" r="7" fill="#3a3020"/>
+<circle cx="738" cy="148" r="5" fill="#2e2818"/>
+<circle cx="762" cy="138" r="6" fill="#3a3020"/>
+<circle cx="776" cy="156" r="4" fill="#2e2818"/>
+<circle cx="726" cy="160" r="5" fill="#3a3020"/>
+<!-- Dust cloud suggestion -->
+<ellipse cx="740" cy="170" rx="55" ry="16" fill="#5a4e3c" opacity="0.18"/>
+
+<!-- TORCHES (4, on walls) -->
+<!-- North torch glow halos -->
+<circle cx="160" cy="80"  r="38" fill="url(#tglow)" opacity="0.5"/>
+<circle cx="800" cy="80"  r="38" fill="url(#tglow)" opacity="0.5"/>
+<circle cx="80"  cy="600" r="38" fill="url(#tglow)" opacity="0.5"/>
+<circle cx="880" cy="360" r="38" fill="url(#tglow)" opacity="0.5"/>
+
+<!-- Torch N-W -->
+<rect x="60" y="76" width="22" height="5" fill="#5a4030" rx="1"/>
+<rect x="64" y="64" width="9"  height="14" fill="#5a4030" rx="2"/>
+<ellipse cx="68" cy="62"  rx="6" ry="10" fill="#c07010" opacity="0.9"/>
+<ellipse cx="68" cy="66"  rx="3" ry="6"  fill="#f0d030"/>
+
+<!-- Torch N-E -->
+<rect x="898" y="76" width="22" height="5" fill="#5a4030" rx="1"/>  <!-- position error? canvas=960 so east wall at x=900 -->
+<!-- Let me redo: east wall is x=900-960. Sconce from x=900 leftward. -->
+<rect x="878" y="76" width="22" height="5" fill="#5a4030" rx="1"/>
+<rect x="882" y="64" width="9"  height="14" fill="#5a4030" rx="2"/>
+<ellipse cx="886" cy="62" rx="6" ry="10" fill="#c07010" opacity="0.9"/>
+<ellipse cx="886" cy="66" rx="3" ry="6"  fill="#f0d030"/>
+
+<!-- Torch W-S -->
+<rect x="60" y="596" width="22" height="5" fill="#5a4030" rx="1"/>
+<rect x="64" y="584" width="9"  height="14" fill="#5a4030" rx="2"/>
+<ellipse cx="68" cy="582" rx="6" ry="10" fill="#c07010" opacity="0.9"/>
+<ellipse cx="68" cy="586" rx="3" ry="6"  fill="#f0d030"/>
+
+<!-- Torch E-mid -->
+<rect x="878" y="356" width="22" height="5" fill="#5a4030" rx="1"/>
+<rect x="882" y="344" width="9"  height="14" fill="#5a4030" rx="2"/>
+<ellipse cx="886" cy="342" rx="6" ry="10" fill="#c07010" opacity="0.9"/>
+<ellipse cx="886" cy="346" rx="3" ry="6"  fill="#f0d030"/>
+
+<!-- GRID (drawn LAST) -->
+<rect x="60" y="60" width="840" height="840" fill="url(#grid)"/>
+
+<!-- Compass rose — bottom-left margin -->
+<g transform="translate(30,934)">
+  <circle r="14" fill="#0d0b08" stroke="#5a4a30" stroke-width="1"/>
+  <line x1="0"   y1="0"  x2="0"   y2="-11" stroke="#5a4a30" stroke-width="1.5"/>
+  <polygon points="0,-14 -3,-7 3,-7" fill="#c8a84b"/>
+  <line x1="0"   y1="0"  x2="11"  y2="0"  stroke="#5a4a30" stroke-width="1"/>
+  <line x1="0"   y1="0"  x2="0"   y2="11" stroke="#5a4a30" stroke-width="1"/>
+  <line x1="0"   y1="0"  x2="-11" y2="0"  stroke="#5a4a30" stroke-width="1"/>
+</g>
+<!-- Scale bar -->
+<rect x="810" y="930" width="120" height="5" fill="none" stroke="#5a4a30" stroke-width="0.8"/>
+<rect x="810" y="930" width="60"  height="5" fill="#5a4a30" opacity="0.7"/>
+<line x1="810" y1="927" x2="810" y2="937" stroke="#5a4a30" stroke-width="0.8"/>
+<line x1="870" y1="927" x2="870" y2="937" stroke="#5a4a30" stroke-width="0.8"/>
+<line x1="930" y1="927" x2="930" y2="937" stroke="#5a4a30" stroke-width="0.8"/>
+
+</svg>
+
+<div class="notes">
+<h2>DM REFERENCE — THE ELDER STAIR (S4 Scene 3, Room 3)</h2>
+<table>
+  <tr><th>Feature</th><th>Rule</th><th>Notes</th></tr>
+  <tr>
+    <td class="draw">Arch — north</td>
+    <td>From Choking Hall</td>
+    <td>Party enters here. 2 sq wide. Gas does not extend past this arch — clean air in this room.</td>
+  </tr>
+  <tr>
+    <td class="draw">Arch — south (very dark)</td>
+    <td>Exit — stairs descend to antechamber</td>
+    <td>This is where the party must reach. 14×14 room — the stair spiral occupies SE quadrant. The arch exit is at the base of the descent, south wall.</td>
+  </tr>
+  <tr>
+    <td class="draw">Dry Well (centre)</td>
+    <td>Void — falls 40 ft (4d6 bludgeoning)</td>
+    <td>Stone rim: DC 14 Acrobatics to avoid falling if pushed onto it. The well shaft drops to a sealed cistern — no exit at bottom. Contested Strength to pull back from rim. Visibility: 10 ft into shaft with light source, then darkness.</td>
+  </tr>
+  <tr>
+    <td class="draw">Stair treads (SE quadrant)</td>
+    <td>Narrow stairs — single-file movement only</td>
+    <td>Two creatures cannot pass each other on the stair arc. Movement rate halved on stairs (difficult terrain). Creatures pushed off the inner edge fall into the well. Stair direction: clockwise descent (NE to S).</td>
+  </tr>
+  <tr>
+    <td class="trap">Rockfall area (NE quadrant)</td>
+    <td>Brutus' agent triggers rockfall</td>
+    <td>Agent is hiding in NE area. Perception DC 14 (active, scanning before entering) to spot disturbed stone. Agent action: pulls a support pin — Dex save DC 15 or 2d8 bludgeoning. Spear slides toward well shaft on a failure: contested Strength check to hold it. Stone debris = difficult terrain in NE quadrant for remainder of scene.</td>
+  </tr>
+  <tr>
+    <td class="draw">Hanging chains (NE, near ceiling)</td>
+    <td>Climbable — Str (Athletics) DC 12</td>
+    <td>Pre-Roman construction chains — rusted but load-bearing. Can be used for traversal across the well shaft (Acrobatics DC 14 to swing). If cut (Str DC 16 or slashing weapon): fall into the rockfall area below attachment point.</td>
+  </tr>
+  <tr>
+    <td class="mech">Spear near well shaft</td>
+    <td>Contested Strength if sliding</td>
+    <td>On rockfall failure: spear slides 1d4 × 5 ft toward well. Multiple characters can contest — combine their Str modifiers against DC 16. If spear falls into well: Mars DCs +4 in Scene 4. Recoverable with rope and 1 hour.</td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>

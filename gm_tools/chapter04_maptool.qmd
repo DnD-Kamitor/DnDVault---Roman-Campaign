@@ -14,9 +14,9 @@ Session 4 splits between the fort under siege and the hidden tunnels beneath the
 | Scene 0: Gate breach | `CastleWall` or `BridgeCheckpoint` | All PCs, Centurion_Varro, Guard ×8, Berserker ×4, Tribal_Warrior ×8 | Three simultaneous crises — split party likely. Brutus' agent (Quintus_Flavius renamed "Soldier") starts near shrine. |
 | Scene 1: Council | `saalburg_plan.jpg` (reference only) | Legate_Corvinus, Tribune_Lucius, Centurion_Varro, Augur_Cassia, all PCs | No combat. Use fort floor plan for NPC positioning only. Vercingetorix's envoy: off-screen runner. |
 | Scene 2: Preparation | `saalburg_plan.jpg` (reference only) | Same as Scene 1 | No new tokens. Players plan escort route on the floor plan. |
-| Scene 3: Tunnels — Armory | `CaveTunnelsVol3` | All PCs, Animated_Armor ×4 | Animated Armor = constructs (divine resonance), not undead. No Turn Undead vulnerability. |
-| Scene 3: Tunnels — Choking Hall | `DungeonVol2` | All PCs, Cassia (if escort) | No combat tokens. Gas is environmental. Medicine DC 13 or Cassia spell to clear. |
-| Scene 3: Tunnels — Elder Stair | `DungeonVol2` | All PCs, Quintus_Flavius (Brutus' agent) | Rockfall trap: Dex save DC 15 or 2d8 bludgeoning. |
+| Scene 3: Tunnels — Armory | `Maptool/maps/s4_tunnel_armory.html` | All PCs, Animated_Armor ×4 | Animated Armor = constructs (divine resonance), not undead. No Turn Undead vulnerability. |
+| Scene 3: Tunnels — Choking Hall | `Maptool/maps/s4_tunnel_choking_hall.html` | All PCs, Cassia (if escort) | No combat tokens. Gas is environmental. Medicine DC 13 or Cassia spell to clear. |
+| Scene 3: Tunnels — Elder Stair | `Maptool/maps/s4_tunnel_elder_stair.html` | All PCs, Quintus_Flavius (Brutus' agent) | Rockfall trap: Dex save DC 15 or 2d8 bludgeoning. |
 | Scene 4: Antechamber | `NatureGoddessTemple` | All PCs, Augur_Cassia, Centurion_Varro, Legate_Corvinus | Same map as Ch1 altar chamber — intentional callback. No combat. Mars as voice only. |
 
 **Scene 0 sub-maps (optional — run on same CastleWall map, adjust narrative):**
@@ -76,8 +76,9 @@ Campaign session folder: `Maptool/maps/campaign/S4_The_Gods_Demand/`
 CastleWall             — fort wall battle map (Scene 0)
 BridgeCheckpoint       — alternate gate map
 saalburg_plan.jpg      — fort interior reference (Scenes 1–2, no battle grid)
-CaveTunnelsVol3        — tunnel system (Scene 3 Armory + Choking Hall)
-DungeonVol2            — stair and deeper tunnel (Scene 3 Elder Stair)
+s4_tunnel_armory.html      — Sunken Armory SVG battle map (Scene 3, 12×10 sq)
+s4_tunnel_choking_hall.html — Choking Hall SVG battle map (Scene 3, 6×12 sq)
+s4_tunnel_elder_stair.html  — Elder Stair SVG battle map (Scene 3, 14×14 sq, dry well)
 NatureGoddessTemple    — circular stone chamber (Scene 4 antechamber)
 ```
 

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>S4 — Choking Hall — Battle Map</title>
+<style>
+  body { margin: 0; background: #0a0c08; font-family: Georgia, serif; color: #c8a850; padding: 16px; }
+  svg { display: block; margin: 0 auto; }
+  .notes { max-width: 480px; margin: 20px auto 0; }
+  h2 { color: #c8a850; border-bottom: 1px solid #3a3020; padding-bottom: 4px; font-size: 13px; letter-spacing: 2px; margin-top: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 16px; }
+  td, th { padding: 5px 10px; border: 1px solid #2a2818; vertical-align: top; }
+  th { background: #141810; color: #c8a850; text-align: left; }
+  tr:nth-child(even) td { background: #10120c; }
+  tr:nth-child(odd) td { background: #0a0c08; }
+  .enc { color: #c84040; }
+  .mech { color: #90c880; }
+  .draw { color: #8ab0c8; }
+  .gas  { color: #80c050; }
+</style>
+</head>
+<body>
+
+<!--
+  GRID: 60px = 1 sq = 5 ft
+  Canvas: 480x840
+  Main corridor floor: x=60, y=60, w=360, h=720  (6x12 sq)
+  Left alcoves:  x=0-60  at y=180-240 and y=480-540
+  Right alcoves: x=420-480 at y=300-360 and y=600-660
+  North arch: x=180-300 (2 sq, centred on 6-wide corridor)
+  South arch: x=180-300
+  Gas vents at: (240,180) (180,360) (300,540) (240,720)
+  All room coords multiples of 60
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="840" viewBox="0 0 480 840">
+<defs>
+  <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M60 0 L0 0 0 60" fill="none" stroke="rgba(0,0,0,0.28)" stroke-width="0.8"/>
+  </pattern>
+  <radialGradient id="tglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"  stop-color="#c89050" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#c89050" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="gasglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"  stop-color="#50802a" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#50802a" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<!-- VOID (walls) — slightly greenish tint -->
+<rect width="480" height="840" fill="#181a14"/>
+
+<!-- Main corridor floor (greenish-grey stone, gas-stained) -->
+<rect x="60" y="60" width="360" height="720" fill="#585e4a"/>
+
+<!-- Left alcoves -->
+<rect x="0"  y="180" width="60" height="60" fill="#585e4a"/>
+<rect x="0"  y="480" width="60" height="60" fill="#585e4a"/>
+<!-- Right alcoves -->
+<rect x="420" y="300" width="60" height="60" fill="#585e4a"/>
+<rect x="420" y="600" width="60" height="60" fill="#585e4a"/>
+
+<!-- Arch openings -->
+<!-- North: from Sunken Armory (already lit) -->
+<rect x="180" y="0"   width="120" height="60" fill="#6a7058"/>
+<!-- South: to Elder Stair (dark) -->
+<rect x="180" y="780" width="120" height="60" fill="#2a2c20"/>
+
+<!-- GAS VENT GLOWS (behind vent holes) -->
+<circle cx="240" cy="180" r="40" fill="url(#gasglow)" opacity="0.9"/>
+<circle cx="180" cy="360" r="40" fill="url(#gasglow)" opacity="0.9"/>
+<circle cx="300" cy="540" r="40" fill="url(#gasglow)" opacity="0.9"/>
+<circle cx="240" cy="720" r="40" fill="url(#gasglow)" opacity="0.9"/>
+
+<!-- GAS VENT HOLES (dark stone openings, greenish rim) -->
+<!-- Vent 1 -->
+<circle cx="240" cy="180" r="22" fill="#1a1c14" opacity="0.9"/>
+<circle cx="240" cy="180" r="14" fill="#0a0c08"/>
+<circle cx="240" cy="180" r="26" fill="none" stroke="#4a6028" stroke-width="1.5" opacity="0.6"/>
+<!-- Vent 2 -->
+<circle cx="180" cy="360" r="22" fill="#1a1c14" opacity="0.9"/>
+<circle cx="180" cy="360" r="14" fill="#0a0c08"/>
+<circle cx="180" cy="360" r="26" fill="none" stroke="#4a6028" stroke-width="1.5" opacity="0.6"/>
+<!-- Vent 3 -->
+<circle cx="300" cy="540" r="22" fill="#1a1c14" opacity="0.9"/>
+<circle cx="300" cy="540" r="14" fill="#0a0c08"/>
+<circle cx="300" cy="540" r="26" fill="none" stroke="#4a6028" stroke-width="1.5" opacity="0.6"/>
+<!-- Vent 4 -->
+<circle cx="240" cy="720" r="22" fill="#1a1c14" opacity="0.9"/>
+<circle cx="240" cy="720" r="14" fill="#0a0c08"/>
+<circle cx="240" cy="720" r="26" fill="none" stroke="#4a6028" stroke-width="1.5" opacity="0.6"/>
+
+<!-- Gas staining on floor (subtle greenish patches near vents) -->
+<ellipse cx="240" cy="200" rx="40" ry="20" fill="#404a2a" opacity="0.25"/>
+<ellipse cx="180" cy="380" rx="40" ry="20" fill="#404a2a" opacity="0.25"/>
+<ellipse cx="300" cy="560" rx="40" ry="20" fill="#404a2a" opacity="0.25"/>
+<ellipse cx="240" cy="700" rx="40" ry="20" fill="#404a2a" opacity="0.25"/>
+
+<!-- TORCH GLOW (dim — only 2, near centre of corridor) -->
+<circle cx="70"  cy="300" r="36" fill="url(#tglow)" opacity="0.4"/>
+<circle cx="410" cy="540" r="36" fill="url(#tglow)" opacity="0.4"/>
+
+<!-- TORCHES — dim, gas-stained sconces -->
+<!-- Left wall torch at y~300 -->
+<rect x="60" y="297" width="18" height="5" fill="#4a3828" rx="1"/>
+<rect x="64" y="286" width="8"  height="12" fill="#4a3828" rx="2"/>
+<ellipse cx="68" cy="284" rx="5"  ry="8"  fill="#904808" opacity="0.8"/>
+<ellipse cx="68" cy="287" rx="2.5" ry="4" fill="#d0a020" opacity="0.7"/>
+
+<!-- Right wall torch at y~540 -->
+<rect x="402" y="537" width="18" height="5" fill="#4a3828" rx="1"/>
+<rect x="408" y="526" width="8"  height="12" fill="#4a3828" rx="2"/>
+<ellipse cx="412" cy="524" rx="5"  ry="8"  fill="#904808" opacity="0.8"/>
+<ellipse cx="412" cy="527" rx="2.5" ry="4" fill="#d0a020" opacity="0.7"/>
+
+<!-- CEILING HEIGHT INDICATORS (darker bands near walls suggesting low ceiling / gas collection) -->
+<rect x="60"  y="60"  width="18" height="720" fill="#404830" opacity="0.20"/>
+<rect x="402" y="60"  width="18" height="720" fill="#404830" opacity="0.20"/>
+
+<!-- Alcove details — slight deeper shadow in back of alcoves -->
+<rect x="0"  y="180" width="14" height="60" fill="#101408" opacity="0.5"/>
+<rect x="0"  y="480" width="14" height="60" fill="#101408" opacity="0.5"/>
+<rect x="466" y="300" width="14" height="60" fill="#101408" opacity="0.5"/>
+<rect x="466" y="600" width="14" height="60" fill="#101408" opacity="0.5"/>
+
+<!-- RUBBLE at corridor south (partial collapse from ceiling) -->
+<polygon points="170,728 205,722 218,735 212,752 175,757 162,742" fill="#3a3c2a"/>
+<polygon points="174,730 202,724 214,737 209,750 177,754 165,741" fill="#484a36"/>
+<circle cx="188" cy="740" r="5" fill="#3a3c2a"/>
+<circle cx="200" cy="746" r="3" fill="#2e3020"/>
+
+<!-- GRID (drawn LAST) -->
+<rect x="60" y="60" width="360" height="720" fill="url(#grid)"/>
+<!-- Grid also on alcoves -->
+<rect x="0"   y="180" width="60" height="60" fill="url(#grid)"/>
+<rect x="0"   y="480" width="60" height="60" fill="url(#grid)"/>
+<rect x="420" y="300" width="60" height="60" fill="url(#grid)"/>
+<rect x="420" y="600" width="60" height="60" fill="url(#grid)"/>
+
+<!-- Compass rose — bottom-left margin -->
+<g transform="translate(26,818)">
+  <circle r="14" fill="#0a0c08" stroke="#4a4a30" stroke-width="1"/>
+  <line x1="0"  y1="0"   x2="0"   y2="-11" stroke="#4a4a30" stroke-width="1.5"/>
+  <polygon points="0,-14 -3,-7 3,-7" fill="#c8a84b"/>
+  <line x1="0"  y1="0"  x2="11"  y2="0"  stroke="#4a4a30" stroke-width="1"/>
+  <line x1="0"  y1="0"  x2="0"   y2="11" stroke="#4a4a30" stroke-width="1"/>
+  <line x1="0"  y1="0"  x2="-11" y2="0"  stroke="#4a4a30" stroke-width="1"/>
+</g>
+<!-- Scale bar (120px = 2 sq = 10 ft) -->
+<rect x="300" y="814" width="120" height="5" fill="none" stroke="#4a4a30" stroke-width="0.8"/>
+<rect x="300" y="814" width="60"  height="5" fill="#4a4a30" opacity="0.7"/>
+<line x1="300" y1="811" x2="300" y2="821" stroke="#4a4a30" stroke-width="0.8"/>
+<line x1="360" y1="811" x2="360" y2="821" stroke="#4a4a30" stroke-width="0.8"/>
+<line x1="420" y1="811" x2="420" y2="821" stroke="#4a4a30" stroke-width="0.8"/>
+
+</svg>
+
+<div class="notes">
+<h2>DM REFERENCE — THE CHOKING HALL (S4 Scene 3, Room 2)</h2>
+<table>
+  <tr><th>Feature</th><th>Rule</th><th>Notes</th></tr>
+  <tr>
+    <td class="gas">4 Gas Vents</td>
+    <td>Con DC 14 each round in room</td>
+    <td>Gas denser near floor (Nature DC 13 from prep reveals this). Air pockets near ceiling: Stealth DC 13 (moving slow + high) gives advantage on Con saves. Cassia can clear with one spell slot (any abjuration/evocation).</td>
+  </tr>
+  <tr>
+    <td class="draw">4 Alcoves</td>
+    <td>Shallow cover (half cover vs. ranged)</td>
+    <td>Not safer from gas — same altitude as corridor floor. Useful for positioning only. Left alcoves at rows 3 and 8; right alcoves at rows 5 and 10.</td>
+  </tr>
+  <tr>
+    <td class="mech">Ceiling bands (darker wall edges)</td>
+    <td>Visual reminder — gas collects low</td>
+    <td>No mechanical effect on its own. Characters who duck/crawl (prone): disadvantage on Con saves but +1 to all movement saves from gas. DM discretion.</td>
+  </tr>
+  <tr>
+    <td class="mech">Medicine DC 13 (bonus action)</td>
+    <td>Stabilise downed ally without spell slot</td>
+    <td>Standard field triage. Works even in gas (the medic takes the Con save themselves).</td>
+  </tr>
+  <tr>
+    <td class="draw">Rubble at south end</td>
+    <td>Difficult terrain (2 sq width)</td>
+    <td>Partial ceiling collapse — suggests instability above. Partial cover. Does not block the arch to Elder Stair.</td>
+  </tr>
+  <tr>
+    <td class="draw">Arch — north (lit)</td>
+    <td>From Sunken Armory</td>
+    <td>Party enters here. Gas already present — start Con saves from round 1 unless prepped.</td>
+  </tr>
+  <tr>
+    <td class="draw">Arch — south (dark)</td>
+    <td>To Elder Stair</td>
+    <td>Visible as darker opening. Gas thins past the arch — first sq beyond is safe. Incentive to keep moving.</td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>

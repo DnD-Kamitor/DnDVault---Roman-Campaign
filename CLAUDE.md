@@ -254,7 +254,7 @@ Every chapter needs exactly these files. Build them in order. Do not skip to the
 - Ch1: `vault_s1_overview.html` (overview only; battle maps missing)
 - Ch2: `s2_fort_overview.html`, `s2_west_gate.html`, `s2_north_wall.html` (uncommitted)
 - Ch3: `s3_forest_path.html`, `s3_germanic_village.html`, `s3_farbog_crossing.html`, `s3_forest_overview.html`
-- Ch4: `s4_fort_siege.html`, `s4_sacred_grove.html`, `s4_sacred_grove_overview.html`
+- Ch4: `s4_fort_siege.html`, `s4_sacred_grove.html`, `s4_sacred_grove_overview.html`, `s4_tunnel_armory.html`, `s4_tunnel_choking_hall.html`, `s4_tunnel_elder_stair.html`
 - Ch5: `s5_mars_confrontation.html`
 
 **Handouts:** All 11 HTML files done (`handouts/handout_01` through `handout_11`). Print-ready.
