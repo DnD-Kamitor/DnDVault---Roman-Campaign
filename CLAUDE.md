@@ -251,11 +251,11 @@ Every chapter needs exactly these files. Build them in order. Do not skip to the
 **Ch1 partial** = `cheat_card_ch1_finish.html` covers Scenes 4-5 only. Full Ch1 cheat card still missing.
 
 **SVG maps committed:**
-- Ch1: `vault_s1_overview.html` (overview only; battle maps missing)
-- Ch2: `s2_fort_overview.html`, `s2_west_gate.html`, `s2_north_wall.html` (uncommitted)
+- Ch1: `vault_s1_overview.html`, `vault_s1_bone_chamber.html`, `vault_s1_altar_chamber.html`, `vault_s1_courtyard.html`
+- Ch2: `s2_fort_overview.html`, `s2_west_gate.html`, `s2_north_wall.html`, `s2_fort_timber_overview.html`, `s2_barracks_alley.html`, `s2_via_principalis.html`, `s2_principia.html`, `s2_nw_tower.html`, `s2_approach_north.html`
 - Ch3: `s3_forest_path.html`, `s3_germanic_village.html`, `s3_farbog_crossing.html`, `s3_forest_overview.html`
 - Ch4: `s4_fort_siege.html`, `s4_sacred_grove.html`, `s4_sacred_grove_overview.html`, `s4_tunnel_armory.html`, `s4_tunnel_choking_hall.html`, `s4_tunnel_elder_stair.html`
-- Ch5: `s5_mars_confrontation.html`
+- Ch5: `s5_mars_confrontation.html`, `s5_mars_vault.html`, `s5_mars_vault_overview.html`
 
 **Handouts:** All 11 HTML files done (`handouts/handout_01` through `handout_11`). Print-ready.
 

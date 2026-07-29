@@ -109,16 +109,16 @@
     {
       "label": "Bardic Inspiration",
       "type": "utility",
-      "weapon": "Bardic Inspiration (d8)",
-      "damage_dice": "1d8",
+      "weapon": "Bardic Inspiration (d6)",
+      "damage_dice": "1d6",
       "color": "#ffd080",
-      "note": "BA. Target within 60ft adds this roll to one attack, check, or save within 10min."
+      "note": "BA. Target within 60ft adds this roll to one attack, check, or save within 10min. (d6 at L4; becomes d8 at L5)"
     },
     {
       "label": "Unsettling Words",
       "type": "utility",
       "weapon": "Unsettling Words",
-      "damage_dice": "1d8",
+      "damage_dice": "1d6",
       "color": "#ffd080",
       "note": "BA. Expend BI die. Target subtracts this roll from next saving throw before your next turn."
     },
