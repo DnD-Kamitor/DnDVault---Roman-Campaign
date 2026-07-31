@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chapter 1: Blood and Omens</title>
+<style>
+/* ── FONTS ── */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── PAGE SETUP ── */
+@page {
+  size: A4;
+  margin: 16mm 14mm 16mm 14mm;
+}
+
+body {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: #1a1000;
+  background: #fff;
+}
+
+/* ── COVER PAGE ── */
+.cover {
+  page-break-after: always;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1a0e04;
+  color: #e8d8b0;
+  padding: 40px;
+  text-align: center;
+}
+.cover-title {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 36pt;
+  color: #c8a84b;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  line-height: 1.15;
+}
+.cover-subtitle {
+  font-size: 14pt;
+  color: #a88838;
+  margin-bottom: 32px;
+  font-style: italic;
+}
+.cover-rule { width: 80%; border: none; border-top: 2px solid #c8a84b; margin: 16px auto; }
+.cover-meta {
+  font-size: 11pt;
+  color: #c8b898;
+  margin-bottom: 8px;
+}
+.cover-teaser {
+  max-width: 480px;
+  font-size: 11pt;
+  font-style: italic;
+  color: #b8a878;
+  line-height: 1.6;
+  margin-top: 24px;
+}
+
+/* ── TWO-COLUMN LAYOUT ── */
+.columns {
+  column-count: 2;
+  column-gap: 6mm;
+  column-rule: 0.5pt solid #c8b090;
+}
+
+/* ── HEADINGS ── */
+h1 {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 18pt;
+  color: #5a1a00;
+  border-bottom: 2pt solid #8B4513;
+  padding-bottom: 3px;
+  margin: 0 0 8px 0;
+  column-span: all;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+h2 {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 13pt;
+  color: #5a1a00;
+  border-bottom: 1pt solid #c8b090;
+  padding-bottom: 2px;
+  margin: 12px 0 5px 0;
+  break-after: avoid;
+  letter-spacing: 0.04em;
+}
+h3 {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #3a0e00;
+  margin: 8px 0 3px 0;
+  break-after: avoid;
+}
+h4 {
+  font-size: 9pt;
+  font-weight: bold;
+  font-style: italic;
+  color: #3a0e00;
+  margin: 6px 0 2px 0;
+  break-after: avoid;
+}
+
+/* ── BODY TEXT ── */
+p { margin-bottom: 5px; text-align: justify; orphans: 3; widows: 3; }
+ul, ol { margin: 4px 0 6px 14px; }
+li { margin-bottom: 2px; }
+strong { color: #2a0800; }
+em { color: #3a1000; }
+
+/* ── READ-ALOUD BOX ── */
+.read-aloud {
+  background: #f0e8d0;
+  border: 1pt solid #8B7355;
+  border-left: 3pt solid #8B4513;
+  padding: 7px 9px;
+  font-style: italic;
+  font-size: 9pt;
+  line-height: 1.5;
+  margin: 6px 0;
+  break-inside: avoid;
+}
+
+/* ── STAT BLOCK ── */
+.stat-block {
+  background: #fdf5e0;
+  border: 1pt solid #8B7355;
+  border-top: 2pt solid #8B4513;
+  border-bottom: 2pt solid #8B4513;
+  padding: 6px 8px;
+  margin: 6px 0;
+  font-size: 8.5pt;
+  break-inside: avoid;
+}
+.stat-block .name {
+  font-family: 'IM Fell English SC', Georgia, serif;
+  font-size: 11pt;
+  color: #5a1a00;
+  margin-bottom: 1px;
+}
+.stat-block .type {
+  font-style: italic;
+  font-size: 8pt;
+  color: #5a3a10;
+  border-bottom: 0.5pt solid #c8b090;
+  padding-bottom: 3px;
+  margin-bottom: 4px;
+}
+.stat-block .scores {
+  display: flex;
+  gap: 6px;
+  margin: 4px 0;
+  font-size: 8pt;
+}
+.stat-block .score { text-align: center; min-width: 28px; }
+.stat-block .score .label { font-weight: bold; font-size: 7pt; color: #8B4513; display: block; }
+.stat-block .rule { border: none; border-top: 0.5pt solid #c8b090; margin: 3px 0; }
+.stat-block p { margin-bottom: 2px; }
+
+/* ── DECISION TABLE ── */
+.decision-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+  margin: 6px 0;
+  break-inside: avoid;
+}
+.decision-table th {
+  background: #8B4513;
+  color: #f0e8d0;
+  padding: 3px 6px;
+  text-align: left;
+  font-size: 8pt;
+}
+.decision-table td {
+  padding: 3px 6px;
+  border-bottom: 0.5pt solid #d4c090;
+  vertical-align: top;
+}
+.decision-table tr:nth-child(even) td { background: #f8f0de; }
+.decision-table td:first-child { font-weight: bold; color: #5a1a00; white-space: nowrap; }
+
+/* ── CLUE BOX ── */
+.clue-box {
+  background: #eef4e8;
+  border: 0.5pt solid #5a8a4a;
+  border-left: 2pt solid #4a7a3a;
+  padding: 5px 8px;
+  font-size: 8.5pt;
+  margin: 4px 0;
+  break-inside: avoid;
+}
+.clue-box strong { color: #2a5a1a; }
+
+/* ── CALLOUT ── */
+.callout {
+  background: #fff0d0;
+  border: 0.5pt solid #c8a030;
+  border-left: 2pt solid #c87800;
+  padding: 5px 8px;
+  font-size: 8.5pt;
+  margin: 4px 0;
+  break-inside: avoid;
+}
+
+/* ── NPC QUICK REF ── */
+.npc-row {
+  display: flex;
+  gap: 6px;
+  border-bottom: 0.5pt solid #d4c090;
+  padding: 4px 0;
+  break-inside: avoid;
+}
+.npc-name { font-weight: bold; color: #5a1a00; min-width: 110px; font-size: 9pt; }
+.npc-info { font-size: 8.5pt; flex: 1; }
+.npc-secret { font-style: italic; color: #8B1A1A; font-size: 8pt; margin-top: 1px; }
+
+/* ── PAGE BREAK ── */
+.page-break { page-break-before: always; break-before: page; }
+.no-break { break-inside: avoid; }
+
+/* ── SECTION DIVIDER ── */
+.divider {
+  column-span: all;
+  text-align: center;
+  color: #8B4513;
+  font-size: 14pt;
+  margin: 4px 0 2px;
+  letter-spacing: 0.3em;
+}
+
+/* ── FOOTER NOTE ── */
+.footer-note {
+  column-span: all;
+  text-align: center;
+  font-size: 7.5pt;
+  color: #888;
+  font-style: italic;
+  margin-top: 8px;
+  border-top: 0.5pt solid #d4c090;
+  padding-top: 4px;
+}
+
+/* ── VAULT MAP ASCII ── */
+.vault-map {
+  font-family: monospace;
+  font-size: 7.5pt;
+  white-space: pre;
+  background: #f8f0de;
+  border: 0.5pt solid #c8b090;
+  padding: 6px 8px;
+  margin: 6px 0;
+  line-height: 1.25;
+  break-inside: avoid;
+}
+
+/* ── PRINT ── */
+@media print {
+  body { background: #fff; }
+  .cover { min-height: 100vh; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ COVER -->
+<div class="cover">
+  <div style="font-size:9pt;letter-spacing:0.3em;color:#888;margin-bottom:20px;">THE SHADOW OF MARS · CHAPTER 1</div>
+  <div class="cover-title">Blood and Omens</div>
+  <div class="cover-subtitle">A Roman Adventure for Five to Six Characters, Level 3</div>
+  <hr class="cover-rule">
+  <div class="cover-meta">3–4 hours · Fort Vindolanda &amp; the vault beneath it · 175 AD</div>
+  <div class="cover-meta">Scenes: 5 · Combat: 3 · Handouts: 7 · Maps: 6</div>
+  <hr class="cover-rule">
+  <div class="cover-teaser">
+    Something ancient was unearthed beneath Fort Vindolanda, and the omens since have been uniformly bad. The Legate wants it retrieved and asks no questions. A three-century guardian is still keeping the oath he swore, and he is not the enemy: he is the last functional part of a bargain Rome just broke.
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 2: BACKGROUND -->
+<div class="columns">
+
+<h1>Adventure Background</h1>
+
+<h2>The Premise</h2>
+<p>The characters are members of a special <em>vexillatio extraordinaria</em> newly assembled at Fort Vindolanda on the Germanic frontier. Three days ago, a work crew digging a well broke into ancient ruins beneath the fort and unearthed an iron spear covered in runes. That night every camp dog died. The augurs found black livers and reversed bird flights. One worker touched the spear and killed two companions before being subdued. Legate Corvinus wants the artifact retrieved, and he does not want to know how it happened.</p>
+
+<h2>What the Players Don't Know</h2>
+<p><strong>The vault was sealed by treaty, not by accident.</strong> Three Roman generations ago, Rome and four Germanic tribes negotiated a genuine binding: the tribes sealed a divine weapon and its guardian below the ground; Rome agreed never to dig within fifty feet of the principia's eastern wall. Corvinus's excavation broke that agreement the moment the first shovel hit the ground.</p>
+<p><strong>The guardian is not a monster.</strong> The Wight at the altar was the High Priest of the binding ceremony. He chose, three centuries ago, to remain as guardian rather than pass on. He is tired, resolute, and honest. He is not the party's enemy: he is the last part of the bargain still holding.</p>
+<p><strong>Corvinus has done this before.</strong> The party is not the first team sent down. Four men are already dead. He has also quietly sent a private rider to his patron in Rome: he intends to keep this discovery, and its retrieval, entirely under his own control.</p>
+<p><strong>Someone is already inside the vault.</strong> A small cult cell reached the altar chamber before the party did. One member, a Cult Fanatic, is still down there when the party arrives, mid-ritual.</p>
+
+<h2>Running This Adventure</h2>
+<p>This is a branching dungeon crawl. At the T-junction (Room 3) the party chooses left (Shield Hall, no combat, rich lore) or right (Flooded Gallery + Bone Chamber, one hard fight). Both branches converge at the Binding Chamber before the Runic Corridor and the Altar Chamber climax. <strong>Neither branch is required content</strong>: the OTHALAN rune needed for the corridor puzzle can be found through the Shield Hall memory, the bone token (either branch), or a passive Religion check. Never force a return trip.</p>
+<p>The Wight fight has a built-in exit: if the party backs away from the spear, he holds position and lets them leave. This is not a failure state. It is the correctly-designed outcome for a party that listens.</p>
+
+<h2>Adventure Synopsis</h2>
+<ol>
+  <li><strong>Scene 0-1: Cold Open &amp; The Legate's Briefing:</strong> A shared dream, dead dogs, and a mission with no room for questions. Tribune Lucius arrives unannounced.</li>
+  <li><strong>Scene 2: Descent into the Ruins:</strong> Shaft, Entrance Passage, T-junction. Left branch (Shield Hall) or right branch (Flooded Gallery, Bone Chamber). Both merge at the Binding Chamber, then the Runic Corridor.</li>
+  <li><strong>Scene 3: The Altar Chamber:</strong> The spear. The Wight. A choice between taking it and leaving it.</li>
+  <li><strong>Scene 4: Return to the Surface:</strong> A possessed stone-hauler and two cultists in the courtyard.</li>
+  <li><strong>Scene 5: The Reckoning:</strong> Corvinus wants the spear. The party decides who holds it going into Chapter 2.</li>
+</ol>
+
+<h2>Level &amp; Rewards</h2>
+<p>Characters begin at Level 3. They advance to <strong>Level 4</strong> at the end of this chapter regardless of choices made. Milestone advancement: no XP tracking needed, though adjusted encounter XP is provided per fight for reference.</p>
+
+</div><!-- end columns -->
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 3: SCENES 0-1 -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h1>The Adventure</h1>
+
+<!-- SCENE 0 -->
+<h2>Scene 0: Cold Open</h2>
+<p><em>Duration: 30 seconds. No choices. Visceral hook only: do not run as a separate scene from Scene 1.</em></p>
+
+<div class="read-aloud">
+Three nights ago. You dream. All of you, the same dream. You stand in darkness, ankle-deep in blood that doesn't ripple. In the distance, a spear stands upright in the earth, glowing like a dying star. When you try to look away, you can't. When you try to wake, you can't. A voice, old, vast, furious, speaks a single word in a language you shouldn't understand, but do: <strong>"MEUM."</strong> (MINE.) You wake. Your tent reeks of copper and smoke. Outside, the camp dogs are howling. By dawn, every dog in Fort Vindolanda is dead.
+</div>
+
+<p>Cut to black. Do not answer questions yet. Move directly into Scene 1.</p>
+
+<!-- SCENE 1 -->
+<h2>Scene 1: Meeting the Legate</h2>
+<p><em>Duration: 20–30 minutes. Roleplay. Handout 1 given here.</em></p>
+
+<div class="read-aloud">
+The principia is lit with more oil lamps than it needs. The air is thick with incense, but under it something else: organic and wrong, like the smell that comes up from a well when the water has gone bad. Legate Corvinus stands at the head of the table, both hands flat on the map, eyes bloodshot and specific. Augur Cassia Liviana sits to his left, a bloodstained cloth held loosely in her hands. Centurion Varro stands near the door, one hand resting on his gladius grip.
+</div>
+
+<p><strong>The briefing:</strong> Three days ago a work crew found ancient ruins beneath the fort. They unearthed an iron spear covered in runes. That night, all camp dogs died. The augurs found corrupted omens. One worker touched the spear and went mad, killing two companions. Corvinus wants the party to descend, secure the artifact, and bring it to him. When he formally assigns the mission, he sets a wax tablet on the table's edge without picking it up again: <strong>give Handout 1 now.</strong></p>
+
+<div class="clue-box"><strong>Cassia's one line:</strong> She does not oppose Corvinus directly. Quietly, to the party rather than to him: <em>"The augury was clear. What is sealed below is sealed for a reason. If you go down, go knowing that."</em> Then she stops.</div>
+
+<div class="clue-box"><strong>Varro's one objection:</strong> <em>"We don't know what sealed it or who is on the other side of that seal. Sending men down without understanding what they're walking into is how we lose the men."</em> Corvinus: "Noted. Dismissed." Varro does not leave.</div>
+
+<p><strong>Tribune Lucius Valerius Maximus arrives mid-briefing</strong>, without knocking, carrying a sealed dispatch satchel with an imperial crest. Late twenties, composed. Hands Corvinus a sealed letter, waits while he reads it, takes a chair at the edge of the room uninvited. Does not introduce himself. If asked who he is, Corvinus answers flatly: "Tribune Lucius Valerius Maximus, attached to the Legate's office by order of Rome." His arrival visibly tightens Corvinus's posture. Cassia's expression when he enters: she has seen him before and is not surprised.</p>
+
+<div class="callout"><strong>DM Note:</strong> Lucius remains in the fort during the descent and is present at Scene 5. Do not foreshadow his allegiance to Brutus this session: that reveal belongs to Chapter 2.</div>
+
+<h3>Refusal Contingency</h3>
+<table class="decision-table">
+<tr><th>Party action</th><th>Legate's response</th></tr>
+<tr><td>Polite refusal</td><td>Doubles pay. If still refused, sends another unit: it doesn't come back. Party re-ordered once stakes are visible.</td></tr>
+<tr><td>Citing the augur's warning</td><td>Has Cassia removed from the room. Gives the party one hour to reconsider: she finds them privately during it.</td></tr>
+<tr><td>Outright defiance</td><td>DC 18 Persuasion. Below: sends a Centurion escort (Varro: privately supportive). At/above: backs down, 24 hours. 5 above: assigns them as lead unit, unspoken respect.</td></tr>
+</table>
+
+<p><strong>Scene ends:</strong> Party descends the shaft beneath the principia.</p>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 4: SCENE 2 DESCENT -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h2>Scene 2: Descent into the Ruins</h2>
+<p><em>Duration: full session core. Branching dungeon crawl. Corvinus's aide hands over torches, tinderbox, and knotted twine at the shaft head without a word of luck.</em></p>
+
+<h3>Room 1: The Shaft</h3>
+<div class="read-aloud">
+The hole is perhaps six feet wide. The Romans who dug it used short-handled picks: tool marks in the clay get more careful as they got deeper. A rope ladder, poorly anchored. Below: darkness, and a smell like old metal and earth wet for a very long time.
+</div>
+<p>40-foot descent. Torch flames lean downward in an unnatural draft: no mechanical effect, simply wrong. <strong>Survival DC 11</strong> (active, reading the draft before descending): the pulse means two chambers with different pressure; a cedar smell beneath the cold mineral note means deliberate sealed storage, not collapse.</p>
+<p>At the bottom, scratched into the clay at knee height: seven scratches in a vertical line, one diagonal line through all seven, and the word <strong>NOLITE</strong> (Do not). Left by a previous work crew member. Not a puzzle: a warning.</p>
+
+<h3>Room 2: The Entrance Passage</h3>
+<div class="read-aloud">
+The passage runs straight for forty feet, cut through earth reinforced with stone slabs, Roman at the top, Germanic at the bottom. Fifteen feet in, a Roman pick lies abandoned. Not rusted: the handle is broken, not decayed. The head points back toward the shaft.
+</div>
+<p><strong>Perception DC 10 (passive):</strong> the pick points back toward the shaft; whoever dropped it was retreating. <strong>Investigation DC 12 (active):</strong> the same pick made the warning scratches, deliberate, not panicked. History DC 14 (Librarius) and Religion DC 15 (Haruspex) unlock deeper reads on the countdown's meaning (see <em>chapter1.qmd</em> for full knowledge-barrier text).</p>
+<p>The passage ends at a T-junction. Left: warmer air, dry stone. Right: colder air, the sound of slow water below the floor.</p>
+
+<div class="vault-map">[1] SHAFT (40ft descent)
+        |
+[2] ENTRANCE PASSAGE
+        |
+[3] T-JUNCTION
+      /              \
+  LEFT BRANCH      RIGHT BRANCH
+[4] Shield Hall    [5] Flooded Gallery
+  + Hidden Alcove  [6] Bone Chamber
+        |               |
+        +---[7] BINDING CHAMBER---+
+                    |
+              [8] RUNIC CORRIDOR
+                    |
+              [9] ALTAR CHAMBER</div>
+
+<div class="callout"><strong>DM Note:</strong> Sketch this on scrap paper at the table and let the party choose which branch first. Both merge before the Runic Corridor: neither is a dead end.</div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 5: LEFT BRANCH -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h2>Left Branch: The Shield Hall and Hidden Alcove</h2>
+<p><em>No combat in this branch until the Binding Chamber.</em></p>
+
+<h3>Room 4: The Shield Hall</h3>
+<div class="read-aloud">
+Dozens, maybe a hundred, shields hung edge to edge so the walls resemble a silent legion. Wolf heads in iron, boars in bronze, a hand with three fingers raised, a serpent coiled to strike. None are Roman. All angled as if waiting to be seized. At the far end, an arch gapes, swallowing light.
+</div>
+<p>History DC 13/15, Religion DC 14, Perception DC 11, Nature DC 12, and Athletics DC 12 (lifting a shield: grip cut from the inside, deliberately decommissioned) all yield passive or active reads on this room. See <em>chapter1.qmd</em> for the full knowledge-barrier text per proficiency and role.</p>
+
+<div class="clue-box"><strong>The rune-mapping payoff:</strong> The shields are arranged by tribal hierarchy with Mars's wolf highest. DC 13 Intelligence (History) to note the arrangement carries forward: the safe rune in the Runic Corridor is always OTHALAN, and this room explains why it is always safe: it is the dominant symbol all offerings answer to.</div>
+
+<h4>Touching a Shield: Vision Mechanic</h4>
+<table class="decision-table">
+<tr><th>Symbol</th><th>Tribe</th><th>Handout</th></tr>
+<tr><td>Boar boss</td><td>Marcomanni</td><td>15</td></tr>
+<tr><td>Three-fingered hand</td><td>Cherusci</td><td>16</td></tr>
+<tr><td>Coiled serpent</td><td>Suebi</td><td>17</td></tr>
+<tr><td>Plain rim (nine smallest)</td><td>The Nine: unnamed</td><td>18</td></tr>
+</table>
+<p>Any character who touches a shield gets a 3–5 second involuntary vision. Hand the corresponding handout face-down; say nothing; let the player decide what their character does.</p>
+
+<div class="npc-row">
+  <div class="npc-name">Sicus</div>
+  <div class="npc-info">
+    Half-covered by a tipped stone bench: one of the four lost men. Missing lorica, shoulder wound, stable but dehydrated. Perception DC 11 finds his drag trail; Medicine DC 9 confirms stable. Wakes with water/healing in a round, or DC 12 Medicine + two minutes.
+    <div class="npc-secret">He speaks: the cultists were here first, red cloaks, oil lamps. A lever exists in the final chamber, one already used it. He presses an OTHALAN bone token into a character's hand: advantage on the Wight communication check, stacking with the contract scroll. Cannot fight; won't follow into combat.</div>
+  </div>
+</div>
+
+<h3>The Hidden Alcove</h3>
+<p><strong>Investigation DC 15</strong> (a shield hung backwards): reveals a hand-widened crack in the stone. Inside, wrapped in degraded cloth: a wax tablet, a bone token, a bronze stylus.</p>
+<div class="read-aloud">
+"Third watch. If you are reading this, the garrison has not come back. The chains held for three hundred years. They held because we honored the bargain. Corvinus knows nothing of the bargain. That is why the dogs are dead. Warn the..." <em>[obliterated]</em>
+</div>
+<p>The bone token carries OTHALAN: one half of a contract pair. <strong>Give Handout 12</strong> to whoever made the check; let them share it at the table.</p>
+
+<div class="callout"><strong>Three-clue rule:</strong> A bargain existed. Corvinus's excavation broke it. The violation caused the deaths. Cassia knows something about this. The party has evidence before they reach the altar.</div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 6: RIGHT BRANCH -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h2>Right Branch: The Flooded Gallery and Bone Chamber</h2>
+
+<h3>Room 5: The Flooded Gallery</h3>
+<div class="read-aloud">
+The right passage descends on a shallow grade. Within twenty feet the floor becomes wet, then chest-deep, thirty feet across. The water is black and cold and does not move. The ceiling is three feet above the waterline at the deepest point.
+</div>
+<p><strong>Survival DC 12</strong> (reading the waterline): the eastern wall is shallower: advantage on the <strong>Athletics DC 11</strong> stealth wade. Four Shadows lurk, drawn to light and sound. A group <strong>Stealth DC 14</strong> check (torches extinguished) passes for free; failure triggers combat, but give the party one round of seeing the Shadows approach before initiative.</p>
+
+<div class="stat-block">
+<div class="name">Shadow</div>
+<div class="type">Medium undead · CR 1/2 · AC 12 · HP 16</div>
+<hr class="rule">
+<p><strong>Strength Drain.</strong> +4 to hit, 2d6+2 necrotic; target's Strength score reduces by 1d4 (min 1). If reduced to 0, becomes a Shadow itself.</p>
+<p><em>Advantage on attack rolls in dim light. Amorphous: can move through a space as narrow as 1 inch without squeezing.</em></p>
+</div>
+
+<p>At the far wall, a preserved Germanic warrior sits with equipment intact: a <em>framea</em> across his lap, a bone token at his throat. He died in <em>seiðr</em> position: deliberate, voluntary, not from violence. Disturbing the body disrespectfully wakes one Shadow with no warning.</p>
+
+<h3>Room 6: The Bone Chamber</h3>
+<div class="read-aloud">
+The chamber is wide and low: a natural cave the builders worked into without fully finishing. Loose stone fills one wall. Three stone benches line the far wall, bearing corroded, unidentifiable equipment. The chamber smells strongly of organic decay.
+</div>
+
+<div class="callout"><strong>Encounter: 2 Ghouls (CR 1) + 1 Ghast (CR 2), 1,700 adjusted XP for five players, exceeds the Hard threshold.</strong> Ghouls are dormant beneath the rubble; give the party one round of looking around before they activate. The Ghast emerges last, from behind the stone benches.</div>
+
+<div class="stat-block">
+<div class="name">Ghoul</div>
+<div class="type">Medium undead · CR 1 · AC 12 · HP 22</div>
+<hr class="rule">
+<p><strong>Bite.</strong> +2 to hit, 2d6+0 piercing. <strong>Claws.</strong> +4 to hit, 2d4+2 slashing; target (non-Elf, non-construct) DC 10 Con save or Paralyzed 1 minute (repeat save each turn).</p>
+</div>
+
+<div class="stat-block">
+<div class="name">Ghast</div>
+<div class="type">Medium undead · CR 2 · AC 13 · HP 36</div>
+<hr class="rule">
+<p><strong>Stench.</strong> Creatures within 5 ft, DC 10 Con save or Poisoned until start of their next turn (immune once saved). <strong>Bite.</strong> +3 to hit, 2d6+2 piercing. <strong>Claws.</strong> +3 to hit, 2d4+2 slashing; DC 10 Con save or Paralyzed 1 minute.</p>
+<p><em>If a Ghoul-paralyzed target is attacked by the Ghast: advantage plus automatic critical. Intentional design.</em></p>
+</div>
+
+<p>Escape route: the Flooded Gallery is always available; Shadows do not reactivate for a loud retreat. After combat: a clay vessel with carbonized grain and a pre-Roman Mars coin: someone has been feeding this place until recently. That someone was Titus Sempronius Caecilius, Cassia's predecessor as fort augur, who died of fever in AD 173. His death broke a generational chain. Session 2 thread.</p>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 7: BINDING CHAMBER + RUNIC CORRIDOR -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h2>Room 7: The Binding Chamber: Both Branches Converge</h2>
+
+<div class="read-aloud">
+The passage squeezes you into a chamber whose ceiling hovers just above a legionary's helm. Chains hang from the stone in ranks: thin ones for wrists, thick ones for something with a neck wider than a man's chest. None of the collars are human-sized. Across the far wall, TIWAZ is carved deep. Below it, scratched Latin: "We turned back here."
+</div>
+
+<p>Investigation DC 12, Arcana DC 14 (passive divine aura), Athletics DC 12 (one chain resists with steady tension: something is pulling against it right now), Religion DC 16, and Acrobatics DC 11 all yield reads here. If the party lingers 5+ minutes, one chain sways once with no air movement to explain it.</p>
+
+<h3>The Lock Mechanism</h3>
+<p>One chain runs from ceiling through a floor ring with a shaped iron grip. <strong>Investigation DC 14</strong> reveals the sequence from oxidation patterns: <strong>oldest chain first (left wall), newest chain last (right wall), then the centre chain.</strong> Pulling the centre chain out of sequence: <strong>DC 13 Strength save</strong> or restrained 1 minute (no damage: wasted time and noise). Correct sequence opens a hidden alcove with an oil lamp and an oilskin scroll.</p>
+
+<div class="clue-box"><strong>The contract scroll (DC 15 Intelligence to read):</strong> the tribes agreed to seal the vault for three Roman generations; Rome agreed never to dig within fifty feet of the principia's eastern wall. The binding was void the moment the first shovel hit that ground. Combined with the wax tablet from the Hidden Alcove, the party can now reconstruct exactly what happened and why the vault is waking up.</div>
+
+<h2>Room 8: The Runic Corridor</h2>
+
+<div class="read-aloud">
+The floor changes from earth to cut stone, covered in a mosaic of interlocking rune shapes from wall to wall, row after row. The runes glow faintly: not with fire, but something cold, steady as a held breath. There is no safe path around them. There is only through.
+</div>
+
+<p>Thirty feet, eight rows of five rune tiles each. <strong>Wrong tile: 1d8 lightning damage, no save</strong>, applied instantly. On the <em>first</em> wrong tile, advance the Altar Chamber guardians one free preparation round: the Wight draws his weapon, the Cult Fanatic flanks, one Shadow coalesces behind the altar.</p>
+
+<p>The safe rune is always <strong>OTHALAN</strong>, but its column shifts every row.</p>
+
+<table class="decision-table">
+<tr><th>Row</th><th>OTHALAN column</th><th>Row</th><th>OTHALAN column</th></tr>
+<tr><td>1</td><td>3 (centre)</td><td>5</td><td>4</td></tr>
+<tr><td>2</td><td>1 (far left)</td><td>6</td><td>1 (far left)</td></tr>
+<tr><td>3</td><td>5 (far right)</td><td>7</td><td>3 (centre)</td></tr>
+<tr><td>4</td><td>2</td><td>8</td><td>4 (threshold)</td></tr>
+</table>
+
+<div class="clue-box"><strong>Three independent routes to the answer:</strong> (1) DC 13 Intelligence (History) if the Shield Hall arrangement was noted: hand over the table above. (2) Anyone who can read Elder Futhark (History/Religion proficiency, Germanic background, or Ursula) sees OTHALAN directly, no check. (3) Religion +4 or higher auto-recognises the liturgical pattern.</div>
+
+<p>Parties who ignore all clues take an average of 4.5 lightning damage per failed row: up to 36 across all eight. Survivable, but costly. This is a cost that compounds, not a wall.</p>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 8: ALTAR CHAMBER -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h2>Room 9: The Altar Chamber</h2>
+<p><em>Give Handout 2 (Vault Inscription) as the party crosses the threshold.</em></p>
+
+<div class="read-aloud">
+The final chamber opens into a perfect circle. At the center stands a granite altar carved from a single block older than the Roman stones around it. Upon it rests a spear eight feet long, forged of iron so black it seems to swallow light. Runes coil along its haft, glowing ember-red. Within five feet of the altar, the air stops moving.
+</div>
+
+<div class="read-aloud">
+The moment your lead foot breaks the circle around the altar, the torchlight gutters sideways and the temperature drops to winter. Every rune flares once, illuminating the chamber like a heartbeat. You understand, without being told, that this weapon is awake. It has been waiting. And now it knows your name.
+</div>
+
+<p>The Wight rises as the party enters fully. He does not attack immediately.</p>
+
+<div class="read-aloud">
+He has been here for three hundred years. Not the restless hunger of the walking dead: the settled weight of something that made a choice and is still keeping it. When he speaks, in a language three of you do not understand: <strong>"The bargain was broken. Not by you. But by your kind. I am still bound. You are not."</strong>
+</div>
+
+<p><em>(The character with the highest Wisdom understands without knowing why. Ursula understands regardless: she grew up hearing this dialect at her mother's knee, and may choose not to share it immediately.)</em></p>
+
+<div class="callout"><strong>Encounter: 1 Wight (CR 3) + 1 Cult of Mars Fanatic (CR 2) + 2 Shadows (CR 1/2), 1,800 adjusted XP for five players. Exceeds Hard, approaches Deadly at Level 3 with depleted resources: the designed climax.</strong></div>
+
+<div class="stat-block">
+<div class="name">Wight</div>
+<div class="type">Medium undead · CR 3 · AC 14 · HP 45</div>
+<hr class="rule">
+<p><strong>Life Drain.</strong> +4 to hit, 1d6+2 necrotic; target max HP reduces by that amount; Wight heals equal amount. Non-undead reduced to 0 max HP dies and rises as a Zombie under the Wight's control.</p>
+<p><strong>Longsword.</strong> +3 to hit, 1d10+1. <strong>Longbow.</strong> +3 to hit, 1d8+1.</p>
+<p><strong>Dark Resolve (unique trait).</strong> Regains 2 (1d4) HP at the start of his turn while any creature within 30 ft is Frightened, from any source. Cannot suppress this.</p>
+</div>
+
+<div class="stat-block">
+<div class="name">Cult of Mars Fanatic (adapted)</div>
+<div class="type">Medium humanoid · CR 2 · AC 13 (leather + shield of faith) · HP 33</div>
+<hr class="rule">
+<p><strong>Gladius.</strong> +4 to hit, 1d6+2 piercing, plus one cantrip/spell as multiattack. Spells (DC 13, +5 to hit): cantrips: sacred flame, thaumaturgy; 1st (3 slots): bane, inflict wounds, shield of faith; 2nd (2 slots): hold person, spiritual weapon.</p>
+<p><em>Dark Devotion: advantage on saves vs. Charmed and Frightened. Acts on Initiative 10; already pulled the lever creating difficult terrain at the corridor exit before the party arrived.</em></p>
+</div>
+
+<div class="clue-box"><strong>The OTHALAN token (tactical target):</strong> pinned at the Wight's sternum, AC 13, 5 HP. If destroyed or removed, the Shadows lose their binding for one round (-2 attack, no Strength Drain), then act independently.</div>
+
+<h3>Communication Attempt</h3>
+<p><strong>DC 14 Persuasion or Wisdom (Insight)</strong> (player's choice), one attempt, before or during combat. Showing the contract scroll from the Binding Chamber grants advantage. On success, the Wight pauses: <em>"The one who ordered this. His debt is greater than yours. But you carry it now."</em> This is a transfer of responsibility, not forgiveness: combat may still resume.</p>
+
+<table class="decision-table">
+<tr><th>Outcome</th><th>What follows</th></tr>
+<tr><td>Party takes the spear</td><td>First touch: DC 14 Wisdom save. Fail: 1 corruption + Shaken (cannot willingly release it). Pass: taken, no immediate effect, but the pull is real.</td></tr>
+<tr><td>Party retreats (beyond 15 ft)</td><td>Wight holds. Combat ends. Mission failure for Corvinus. Party survives intact: a valid outcome.</td></tr>
+<tr><td>Party is wiped out</td><td>If the Cult Fanatic still stands, he takes the spear to Corvinus. If not, an unconscious party member wakes to find it untouched.</td></tr>
+</table>
+
+<div class="npc-secret" style="margin-top:6px">On defeat, the Wight folds: sits cross-legged at the altar base, goes still: <em>"Carry it carefully. What is inside it is older than Rome."</em> The Shadows dissipate.</div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 9: COURTYARD + RECKONING -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h2>Scene 4: Return to the Surface</h2>
+
+<div class="read-aloud">
+You hear him before you see him. A rising chant that rides the wind like sparks from a brazier. When you crest the shaft: a Gallic stone-hauler, shoulders like pillars, standing over three fallen legionaries. Marius Coda: a reliable man until today. Each fist grips a gladius slick with fresh blood. "The spear calls, the spear drinks, the spear wants a champion." His head turns as though a wire hauls it, toward whoever holds the spear.
+</div>
+
+<div class="callout"><strong>Encounter: Berserker (Marius Coda, CR 2) + 2 Cultists of Mars (CR 1/8).</strong> The Cultists (Titus Flavinus, Gnaeus Peregrinus) are not combatants unless directly threatened: they stand near Marius, muttering "Mars aversus est," the first proof the spear's corruption spreads through proximity.</div>
+
+<div class="stat-block">
+<div class="name">Marius Coda (Berserker)</div>
+<div class="type">Medium humanoid · CR 2 · AC 13 (hide) · HP 67</div>
+<hr class="rule">
+<p><strong>Multiattack.</strong> Two greataxe/gladii attacks, +5 to hit, 1d12+3 slashing each (or 1d6+3 per gladius, two-weapon).</p>
+<p><em>Fully committed stance: weight on front foot, no guard on his left side. Perception DC 11 to read and call it: advantage on the first attack against that side.</em></p>
+</div>
+
+<div class="stat-block">
+<div class="name">Cultist of Mars</div>
+<div class="type">Medium humanoid · CR 1/8 · AC 10 · HP 9</div>
+<hr class="rule">
+<p><strong>Dagger.</strong> +1 to hit, 1d4 piercing.</p>
+<p><em>Not combatants unless directly threatened. Standing near Marius, muttering "Mars aversus est." First proof the corruption spreads through proximity.</em></p>
+</div>
+
+<p><strong>Aelius Rufus</strong>, a young signifer, lies face-down with a shallow gash: DC 12 Medicine stabilizes him (or a second check next round on failure). If saved, he owes the party his life and remembers what Marius said before the killing started, appearing in Chapter 2.</p>
+
+<table class="decision-table">
+<tr><th>Party choice</th><th>Mechanics</th><th>Consequence</th></tr>
+<tr><td>Kill him</td><td>Standard combat, prioritises spear-bearer</td><td>Dies mid-charge, whispers "Mars." Camp morale drops.</td></tr>
+<tr><td>Subdue him</td><td>Opposed Athletics DC 13 (two legionaries assisting), then Medicine/Sleight of Hand DC 12 to bind</td><td>Collapses weeping, no memory. Cassia can question him later.</td></tr>
+<tr><td>Deny line of sight</td><td>Move spear 60 ft or magical darkness</td><td>Freezes, sobs: becomes a terrified witness.</td></tr>
+<tr><td>He breaks free</td><td>DC 14 Athletics to catch</td><td>Found dead of exposure two days later, both gladii snapped. Corvinus blames the party.</td></tr>
+</table>
+
+<h2>Scene 5: The Reckoning</h2>
+
+<div class="read-aloud">
+Corvinus does not run. A Legate does not run. He walks, Tribune Lucius two steps behind. His eyes stay on the spear a moment too long. "You found it. Good. Give it to me and your bonus pay is doubled. Tonight."
+</div>
+
+<p>Cassia approaches at a near-run from the east side entrance. If she reaches the party first: <em>"Do not give it to him. He will use it. I have seen what that means."</em> If Corvinus sees her, he tells her flatly to return to the shrine. She does not move.</p>
+
+<table class="decision-table">
+<tr><th>Party choice</th><th>Corvinus's response</th><th>Consequence</th></tr>
+<tr><td>Give the spear to Corvinus</td><td>Takes it in a leather satchel, thanks them without warmth, leaves</td><td>Worst outcome for divine stakes, but valid. Cassia is in tears.</td></tr>
+<tr><td>Refuse, offer to hold it</td><td>DC 16 Persuasion or DC 15 Intimidation (show him the evidence of what it did to Marius)</td><td>Party retains custody, explicitly responsible for what happens next.</td></tr>
+<tr><td>Refuse outright</td><td>DC 18 Persuasion or DC 17 Intimidation (sustained defiance backed by combat evidence)</td><td>Confined to barracks; Varro releases them within the hour, says nothing.</td></tr>
+<tr><td>Destroy or hide the spear</td><td>Corvinus sends soldiers to verify: they find the altar, the Wight's remains, no spear</td><td>Physical form gone; the divine presence follows anyway. Pays off in Session 4.</td></tr>
+</table>
+
+<div class="read-aloud">
+Centurion Varro finds the party privately, after Corvinus is out of earshot: "I'm going to need your account of what happened down there. The real one, not the version Corvinus gets. Take tonight. Write nothing down. Come find me in the morning." <br><br>
+Then: "Whatever you saw down there: you're still here. That's the thing that matters tonight."
+</div>
+
+<p><strong>Chapter ends.</strong> Level up to 4.</p>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 10: NPC REFERENCE -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h2>NPC Reference</h2>
+
+<div class="npc-row">
+  <div class="npc-name">Legate Corvinus</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> Control of the spear before Rome or the Senate learns of it.<br>
+    <strong>Behaviour:</strong> Iron-scraping-stone voice, bloodshot eyes, appetite before relief.<br>
+    <div class="npc-secret">Secret: Already sent a private rider to his patron in Rome. The party is not the first team he sent down: four men are already dead.</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">Augur Cassia Liviana</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> Keep the spear below ground, or out of Corvinus's hands.<br>
+    <strong>Behaviour:</strong> Publicly cooperative, privately planting doubt. Breaks cover entirely in Scene 5.<br>
+    <div class="npc-secret">Secret: Performed an augury about the party: she knows they decide whether Rome burns, but not how.</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">Centurion Varro</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> Keep his cohort alive and functional as command unravels.<br>
+    <strong>Behaviour:</strong> Skeptical of the timeline, not the mission. Listens to every faction.<br>
+    <div class="npc-secret">Secret: Heard a legionary whisper "I understand him" during the Scene 4 frenzy. Reassigned him quietly, told no one.</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">Tribune Lucius</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> Observe and report to Rome: not to facilitate the retrieval.<br>
+    <strong>Behaviour:</strong> Silent, watchful, present at the margins of every major scene.<br>
+    <div class="npc-secret">Secret: Cassia has seen him before. (Chapter 2 reveals his true allegiance: do not surface this session.)</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">The Wight</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> Honor the three-century oath; keep the spear contained.<br>
+    <strong>Behaviour:</strong> Resolute, tired, honest. Speaks before fighting. Holds if the party retreats.<br>
+    <div class="npc-secret">Secret: Chose to remain as guardian after death: a willing sacrifice, not a curse or a monster.</div>
+  </div>
+</div>
+
+<div class="npc-row">
+  <div class="npc-name">Marius Coda</div>
+  <div class="npc-info">
+    <strong>Wants:</strong> The spear's compulsion, not his own desire: reach the bearer.<br>
+    <strong>Behaviour:</strong> Fully possessed, fully committed stance, no guard on his left.<br>
+    <div class="npc-secret">Secret: Not responsible. He was nearest the excavation shaft for three days: the longest exposure of any worker.</div>
+  </div>
+</div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ PAGE 11: APPENDIX -->
+<div class="page-break"></div>
+<div class="columns">
+
+<h1>Appendix</h1>
+
+<h2>Maps &amp; Tokens</h2>
+
+<h3>Map 1: Shaft Head / Vault Entrance</h3>
+<p><strong>File:</strong> DarkTempleEntrancePublic.jpg<br>
+<strong>Path:</strong> Maptool/maps/campaign/S1_Blood_and_Omens/<br>
+<strong>Scenes:</strong> Scene 2 opening: the sealed stair beneath the principia</p>
+
+<h3>Map 2: All Vault Rooms (Reference)</h3>
+<p><strong>File:</strong> DungeonVol2Public.jpg: reuse for every vault room, reposition tokens between scenes<br>
+<strong>Scenes:</strong> Entrance Passage, T-junction, Shield Hall, Flooded Gallery, Binding Chamber, Runic Corridor (theater of the mind between the two dedicated battle maps below)</p>
+
+<h3>Map 3: Bone Chamber (Battle Map)</h3>
+<p><strong>File:</strong> vault_s1_bone_chamber.html (+ .jpg)<br>
+<strong>Tokens:</strong> Ghoul ×2 (one ceiling, one floor), Ghast ×1 (behind bone pile)</p>
+
+<h3>Map 4: Altar Chamber (Battle Map)</h3>
+<p><strong>File:</strong> vault_s1_altar_chamber.html (+ .jpg)<br>
+<strong>Tokens:</strong> Wight ×1 (altar base), Shadow ×2 (flanking): Cult Fanatic uses the adapted stat block, no dedicated token required</p>
+
+<h3>Map 5: Courtyard (Battle Map)</h3>
+<p><strong>File:</strong> vault_s1_courtyard.html (+ .jpg)<br>
+<strong>Tokens:</strong> Berserker ×1, Cultist of Mars ×2, Legionary (Milites) ×4 (round 3), Guard ×2 (round 5)</p>
+
+<h3>Map 6: Principia / Fort Exterior (Reference)</h3>
+<p><strong>File:</strong> saalburg_plan.jpg: no battle grid, DM reference only<br>
+<strong>Scenes:</strong> Scene 0–1 (dream flash, briefing), Scene 5 (Reckoning)</p>
+
+<h2>Handouts</h2>
+<p><strong>Handout 1: Legate's Orders</strong>: Scene 1, when Corvinus sets the wax tablet down.<br>
+<strong>Handout 3: Omens Observed</strong>: Scene 0, when Corvinus mentions "four men and the dogs are dead." Players keep and annotate.<br>
+<strong>Handout 2: Vault Inscription</strong>: Scene 3, as the party crosses the Altar Chamber threshold.<br>
+<strong>Handout 12: OTHALAN Bone Token</strong>: Scene 2, Investigation DC 15 in the Hidden Alcove.<br>
+<strong>Handouts 15–18: Tribal Shield Visions</strong>: Scene 2, first touch of each shield type. Hand face-down, say nothing.</p>
+
+<h2>Corruption Mechanic</h2>
+<p>Track corruption levels (0–5) for any character who touches or attunes to the spear: <strong>1</strong> disturbing dreams of conquest; <strong>2</strong> disadvantage on Wisdom saves; <strong>3</strong> DC 12 Wisdom save to retreat from combat; <strong>4</strong> DC 14 Wisdom save to avoid attacking allies when bloodied; <strong>5</strong> fully corrupted, becomes an NPC under DM control.</p>
+
+<h2>Spear of Mars: Attunement</h2>
+<p>The spear is an artifact. Attunement requires only a short rest holding it; it will not refuse, which is the danger. While attuned: +2 to attack and damage rolls, +1d8 necrotic on a hit, disadvantage on all Wisdom saves, and increasing aggression/paranoia following the corruption track. The spear whispers once per scene the attuned carrier is stressed, matched to that character's private ambitions, never generic.</p>
+
+<h2>If Things Go Wrong</h2>
+<table class="decision-table">
+<tr><th>Situation</th><th>Response</th></tr>
+<tr><td>Party refuses the mission</td><td>See Refusal Contingency, page 3. Varro escorting them is the softest landing.</td></tr>
+<tr><td>Party charges the Flooded Gallery loudly</td><td>Group Stealth 14 fails → 4 Shadows engage. One round of visible approach before initiative.</td></tr>
+<tr><td>Party skips the Shield Hall entirely</td><td>No memory-clue for the corridor, but the bone token and passive Religion route remain. Never a hard wall.</td></tr>
+<tr><td>Party ignores all Runic Corridor clues</td><td>Up to 36 lightning damage across 8 rows. Costly but survivable; first miss grants the guardians a free prep round.</td></tr>
+<tr><td>Party attacks the Wight without listening</td><td>Combat proceeds at 1,800 XP. The 15-ft retreat exit remains available mid-fight.</td></tr>
+<tr><td>Party is wiped in the Altar Chamber</td><td>Surviving Cult Fanatic takes the spear to Corvinus. Otherwise an unconscious PC wakes with it untouched.</td></tr>
+</table>
+
+<div class="footer-note">
+The Shadow of Mars · Chapter 1: Blood and Omens · Level 3–4 · Fort Vindolanda, 175 AD
+</div>
+
+</div>
+
+</body>
+</html>

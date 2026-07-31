@@ -52,6 +52,8 @@ book:
         - chapter5.qmd
         - appendix.qmd
         - gm_tools/session_template.qmd
+        - gm_tools/chapter01_maptool.qmd
+        - gm_tools/chapter01_guide.qmd
         - gm_tools/chapter02_guide.qmd
         - gm_tools/chapter02_maptool.qmd
         - handouts/chapter02_handouts.qmd

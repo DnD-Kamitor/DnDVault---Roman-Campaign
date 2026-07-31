@@ -233,6 +233,7 @@ All content below is live in the book. No further action required.
 | 73 | Full NPC Token Coverage — 13 missing named NPCs added to build_campaign_maps.sh: Lucius_Tribune (Assassin), Paterculus_AugurAssist (Acolyte), Valeria_Medicus (Mage), Quartus_Quartermaster (Thug), Rufus_Smith (Gladiator), Brennus_Taberna (Commoner), Lucilla_Postwoman (Spy), Aldric_Observer (Mage), Titus_HalfGermanic (Scout), Sigrun_Trader (Tribal Warrior), Arnulf_Firekeeper (Tribal Warrior), Edda_SpearMother (Tribal Warrior), Skadi_Healer (Acolyte). Fort_Vindolanda now holds 23 named .rptok tokens. Session folders get only session-relevant tokens (S1: fort staff 15 tokens; S2: fort+road cast 15; S3: Germanic 11; S4: ritual/siege 13; S5: full resolution cast 14). Summary counter fixed to report .rptok counts. |
 | 80 | SVG Dungeon Maps — Inline SVG HTML files for all campaign sessions. S1 vault overview complete (9 rooms, grid-aligned). Design rules: solid floor fills, one grid layer drawn LAST, all coords multiples of 40px (overview) or 60px (battle). Render pipeline: Firefox headless → PNG → ImageMagick JPG. See Map Design Rules section below. |
 | 79 | Source Book Integration — Learnings from HR5 Glory of Rome and Lex Arcana: Britannia applied to three files. knowledge.qmd: Coronae military crowns (Grass/Civic/Gold, DC 13/17), Lemures Roman hungry dead (Lemuria festival, appeasement rite, DC 13/15), Belatucadrus Mars of the Frontier (conceals Celtic sun god Belenus, DC 15/17). germanic_tribes.qmd: "Peoples Near the Vallum" section (Brigantes, Selgovi, Votadini, Novanti with political profiles), Alaisiagae Goddesses (four war goddesses at Vercovicium, raven omen, Valkyrie parallel, name/title/symbol table), GM collapsible for Agrona (Caledonian massacre goddess, kill-signature guide). vindolanda_guide.qmd: Agricola/Antonine Wall decline narrative, vicus supply detail, bath complex comparison, DC 13 understaffed garrison gate, Belatucadrus shrine with DC 15 Belenus gate. Reference document BOOK_LEARNINGS_AND_TASKS.md created with full source learnings and remaining Tasks A-G. |
+| 81 | Table-Readiness Audit and Ch1 Completion — Full audit found: token/map naming mismatches across chapter03-05_maptool.qmd (bare/wrong paths, a nonexistent Fort_Tokens/ subfolder, two dead token references), dangling Ch1 handout references, an orphan siege map, and a two-tier bestiary (12 classic creatures — Skeleton, Zombie, Ghast, Ghoul, Wight, Shadow, Guard, Legionary_(Milites), Tribal_Warrior, Berserker, Vaettir, Haugbui — using flat stat-only macros instead of the rich crit/fumble/conditional-tactics tier). Fixed all naming/reference issues; upgraded all 12 creatures to rich `raw_cmd` tactics (Undead Fortitude, paralysis saves, Life Drain, Strength Drain, Pack Tactics, Reckless Attack, Grave Mist recharge) and fixed a generator bug in `generate_npc_tokens.py` that silently dropped traits from the Stats info button. Built the four missing Ch1 GM deliverables (`chapter01_guide.qmd`, `chapter01_npcs.html`, `chapter01_print.html`, full `cheat_card_ch1.html`) to match Ch2-5 quality; folded the old Scenes 4-5-only `cheat_card_ch1_finish.html` into the new full card. Added `chapter01_maptool.qmd` and `chapter01_guide.qmd` to `_quarto.yml` (neither had ever been wired into the book, despite the maptool file predating this milestone). Corrected a chronology error: Brian (6th player) joins in Chapter 2 Scene 3, not Chapter 1 — removed him from Ch1's player token lists. All five chapters now have the complete 5-file deliverable set. |
 
 ---
 
@@ -242,13 +243,13 @@ Every chapter needs exactly these files. Build them in order. Do not skip to the
 
 | File | Purpose | Ch1 | Ch2 | Ch3 | Ch4 | Ch5 |
 |------|---------|-----|-----|-----|-----|-----|
-| `cheat_card_chN.html` | At-table browser tab | partial | done | done | done | done |
-| `chapterNN_print.html` | A4 printable module | missing | done | done | done | done |
-| `chapterNN_guide.qmd` | Full Quarto session guide | missing | done | done | done | done |
-| `chapterNN_maptool.qmd` | Scene→map→token reference | missing | done | done | done | done |
-| `chapterNN_npcs.html` | NPC OGAS + stat cards | missing | missing | done | done | done |
+| `cheat_card_chN.html` | At-table browser tab | done | done | done | done | done |
+| `chapterNN_print.html` | A4 printable module | done | done | done | done | done |
+| `chapterNN_guide.qmd` | Full Quarto session guide | done | done | done | done | done |
+| `chapterNN_maptool.qmd` | Scene→map→token reference | done | done | done | done | done |
+| `chapterNN_npcs.html` | NPC OGAS + stat cards | done | done | done | done | done |
 
-**Ch1 partial** = `cheat_card_ch1_finish.html` covers Scenes 4-5 only. Full Ch1 cheat card still missing.
+All five chapters now have the full deliverable set. `cheat_card_ch1_finish.html` (Scenes 4-5 only, an earlier partial pass) is superseded by the full `cheat_card_ch1.html` but left on disk, unreferenced.
 
 **SVG maps committed:**
 - Ch1: `vault_s1_overview.html`, `vault_s1_bone_chamber.html`, `vault_s1_altar_chamber.html`, `vault_s1_courtyard.html`
@@ -406,57 +407,9 @@ Do NOT use Chromium headless — it produces an all-white PNG on this system. Do
 
 ## Pending Work (Next Sessions)
 
-### Priority 1: Commit Pending Files
-Files created but NOT yet committed:
-- `Maptool/maps/s2_north_wall.html` — S2 north wall SVG battle map (22×14sq, 60px/sq). Commit with s2 SVG maps.
-- `Maptool/campaigns/5e/5juliromans.cmpgn` — new campaign file. Confirm keep or discard before committing.
+All five chapters now have their complete 5-file GM deliverable set (see Chapter Deliverable Status above). The historical priority list that used to live here (commit pending SVG/campaign files, Ch3-5 skeleton documents, Ch4-5 print modules, S2 combat tokens, NPC portraits) is fully resolved as of Milestone 81 — 37 named NPCs have real portrait art assigned via `portrait_file` in their `npcs/*.json` sheet (`scripts/assign_portraits.py`); creature tokens intentionally use CSS-generated silhouettes instead of hunting down art for every monster.
 
-### Priority 2: Chapter 3-5 Skeleton Documents
-
-**Chapter 3 — Through the Dark Forest (COMPLETE)**
-- [x] `gm_tools/cheat_card_ch3.html` — done
-- [x] `handouts/chapter03_handouts.qmd` — done (Handout 6 + Handout 7)
-- [x] `gm_tools/chapter03_maptool.qmd` — done (Brian.rptok added)
-- [x] `gm_tools/chapter03_npcs.html` — done
-- [x] `gm_tools/chapter03_guide.qmd` — done
-- [x] `gm_tools/chapter03_print.html` — done
-
-**Chapter 4 — The God's Demand (COMPLETE)**
-- [x] `gm_tools/cheat_card_ch4.html` — done (existed)
-- [x] `handouts/chapter04_handouts.qmd` — done (Handout 8 raven message + Handout 9 order of battle)
-- [x] `gm_tools/chapter04_maptool.qmd` — done
-- [x] `gm_tools/chapter04_npcs.html` — done (Corvinus, Lucius, Varro, Cassia, Vercingetorix, Brutus)
-- [x] `gm_tools/chapter04_guide.qmd` — done
-- [x] `gm_tools/chapter04_print.html` — done
-
-**Chapter 5 — The Wrath of Mars (COMPLETE)**
-- [x] `gm_tools/cheat_card_ch5.html` — done (existed)
-- [x] `handouts/chapter05_handouts.qmd` — done (Handout 10 Mark of Mars + Handout 11 Arena Weapon Cards × 5)
-- [x] `gm_tools/chapter05_maptool.qmd` — done (CityStreets/AncientAltar/DarkTempleInterior/NatureGoddessTemple/LabyrinthRuins)
-- [x] `gm_tools/chapter05_npcs.html` — done (Mars divine, Fausta Luperci, Cassia, Varro, Corvinus, Lucius, Vercingetorix, Brutus, Thusnelda)
-- [x] `gm_tools/chapter05_guide.qmd` — done (continuity tracker, 3 trial options with full mechanics, consequence menu, commendationes tally)
-- [x] `gm_tools/chapter05_print.html` — done (Mars full stat block, Fausta stat block, arena weapon reference, consequence table)
-
-**Chapter 5 — The Wrath of Mars**
-- [ ] `gm_tools/cheat_card_ch5.html`
-- [ ] `handouts/chapter05_handouts.qmd` — handout 10 (mark of mars) + epilogue outcome cards
-- [ ] `gm_tools/chapter05_maptool.qmd` — map: s5_mars_confrontation.html
-- [ ] `gm_tools/chapter05_npcs.html` — primary: Mars (divine), all returning NPCs with final fate notes
-
-### Priority 3: Print Module for Chapter 4-5
-- [ ] `gm_tools/chapter04_print.html`
-- [ ] `gm_tools/chapter05_print.html`
-
-### Priority 4: S2 Missing Combat Tokens
-- [ ] `npcs/quintus_flavius.json` already exists → verify token in `Maptool/tokens/npcs/creatures/`
-- [ ] Add `npcs/praetorian_guard.json` (×6 template token) — CR 1, AC 16 (lorica), HP 16, spear + shield
-- [ ] Run `python3 scripts/generate_npc_tokens.py` after adding
-
-### Priority 5: NPC Portrait Images
-User requested pictures on all NPCs. Options:
-- CSS silhouette tokens already exist for 23 named NPCs in `Maptool/tokens/npcs/`
-- For the print module: embed base64 small portrait or reference `Maptool/tokens/npcs/[name]_token.html` screenshot
-- For chapter_npcs.html files: add portrait `<img>` slot with fallback CSS silhouette
+Nothing is currently queued here. Add new priorities as they come up.
 
 ### Commit Conventions
 One milestone or major feature per commit. Commit message format:

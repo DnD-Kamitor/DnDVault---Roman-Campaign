@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ch1: GM Cheat Card</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0e0e0e; color: #ccc; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.4; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+  #header { background: #1a1400; border-bottom: 2px solid #c8a84b; padding: 7px 14px; flex-shrink: 0; }
+  #header h1 { color: #c8a84b; font-size: 1.05em; display: inline; }
+  #header .sub { color: #888; font-size: 0.78em; margin-left: 10px; }
+  #story { color: #c8b898; font-style: italic; font-size: 0.82em; margin-top: 3px; border-left: 3px solid #c8a84b; padding-left: 8px; }
+
+  #tabs { display: flex; background: #161616; border-bottom: 1px solid #333; flex-shrink: 0; overflow-x: auto; }
+  .tab-btn { background: none; border: none; color: #777; padding: 7px 11px; cursor: pointer; font-size: 0.8em; white-space: nowrap; border-bottom: 2px solid transparent; }
+  .tab-btn:hover { color: #bbb; background: #1c1c1c; }
+  .tab-btn.active { color: #c8a84b; border-bottom-color: #c8a84b; background: #1a1600; }
+
+  #content { flex: 1; overflow-y: auto; padding: 10px 12px; }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  .block { background: #181818; border: 1px solid #252525; padding: 7px 10px; margin-bottom: 7px; }
+  .block-title { color: #c8a84b; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 5px; font-weight: bold; }
+
+  .now { color: #e8d8b0; font-size: 0.88em; border-left: 3px solid #c8a84b; padding-left: 8px; }
+  .ends { color: #d4884a; font-size: 0.83em; margin-top: 4px; }
+  .ends::before { content: "ENDS: "; font-weight: bold; }
+  .warn { color: #d44; }
+
+  .file { color: #8bc88b; font-weight: bold; }
+  .tok { color: #aac8ff; }
+  .setup-line { font-size: 0.84em; margin-bottom: 3px; }
+  .lbl { color: #777; }
+
+  .phase-hdr { background: #0a0a1a; color: #88aaff; font-size: 0.78em; padding: 2px 8px; margin: 5px 0 4px; display: inline-block; letter-spacing: 0.04em; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.81em; }
+  th { color: #777; text-align: left; padding: 2px 6px; border-bottom: 1px solid #252525; font-weight: normal; font-style: italic; }
+  td { padding: 3px 6px; border-bottom: 1px solid #1a1a1a; vertical-align: top; }
+  td.k { color: #88aaff; white-space: nowrap; font-size: 0.9em; }
+  td.v { color: #bbb; }
+  td.s { color: #8a6aaa; font-size: 0.8em; font-style: italic; }
+  td.q { color: #777; font-style: italic; font-size: 0.79em; }
+  td.bad { color: #884444; font-size: 0.82em; font-style: italic; }
+
+  .clue { background: #0f1a0f; border-left: 3px solid #4a8a4a; padding: 4px 8px; margin: 3px 0; font-size: 0.81em; color: #a8c8a8; }
+  .clue strong { color: #8bc88b; }
+
+  .dec { border-left: 3px solid #8a2a2a; background: #1a0f0f; padding: 5px 9px; margin-bottom: 5px; font-size: 0.83em; }
+  .dec strong { color: #d4884a; }
+
+  .ho { background: #1a1428; border-left: 3px solid #7a5aaa; padding: 4px 8px; font-size: 0.8em; color: #c8b8e8; margin: 3px 0; }
+
+  .ra { font-style: italic; color: #c8b898; font-size: 0.83em; line-height: 1.5; border-left: 2px solid #555; padding-left: 8px; margin: 4px 0; }
+
+  .cmd { background: #0a0a0a; border: 1px solid #2a2a2a; padding: 4px 8px; font-family: monospace; font-size: 0.82em; color: #8bc88b; margin: 3px 0; }
+
+  ul { padding-left: 15px; }
+  li { margin-bottom: 2px; font-size: 0.83em; }
+  strong { color: #e8d8b0; }
+
+  details.sub { margin: 4px 0; }
+  details.sub summary { cursor: pointer; color: #999; font-size: 0.8em; padding: 2px 0; }
+  details.sub summary:hover { color: #ccc; }
+  .branch-hdr { color: #d4a84b; font-size: 0.82em; font-weight: bold; margin: 6px 0 3px; text-transform: uppercase; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Ch1: Blood and Omens</h1>
+  <span class="sub">L3 → 4 at end &nbsp;·&nbsp; 3–4 hrs &nbsp;·&nbsp; Fort Vindolanda, the vault beneath the principia</span>
+  <div id="story">
+    The players are Roman soldiers ordered into a sealed vault beneath their own fort to retrieve an ancient spear that killed a god's son. Something has been guarding it for three centuries, and it does not want to let go. What they bring back up will decide who they answer to for the rest of the campaign.
+  </div>
+</div>
+
+<div id="tabs">
+  <button class="tab-btn active" onclick="showTab('pre', this)">⚙ Pre-Session</button>
+  <button class="tab-btn" onclick="showTab('s01', this)">0-1 · Briefing</button>
+  <button class="tab-btn" onclick="showTab('s2a', this)">2a · Descent</button>
+  <button class="tab-btn" onclick="showTab('s2b', this)">2b · Left Branch</button>
+  <button class="tab-btn" onclick="showTab('s2c', this)">2c · Right Branch</button>
+  <button class="tab-btn" onclick="showTab('s2d', this)">2d · Chains + Runes</button>
+  <button class="tab-btn" onclick="showTab('s3', this)">3 · Altar Chamber</button>
+  <button class="tab-btn" onclick="showTab('s4', this)">4-5 · Surface</button>
+  <button class="tab-btn" onclick="showTab('npcs', this)">NPCs</button>
+  <button class="tab-btn" onclick="showTab('wrong', this)">If Wrong</button>
+  <button class="tab-btn" onclick="showTab('server', this)">MapTool</button>
+</div>
+
+<div id="content">
+
+<!-- ═══ PRE-SESSION ═══ -->
+<div id="tab-pre" class="tab-pane active">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Maps: pre-load all before players join</div>
+    <div class="setup-line"><span class="lbl">S0-1 (principia):</span> <span class="file">saalburg_plan.jpg</span> (reference only)</div>
+    <div class="setup-line"><span class="lbl">S2 shaft head:</span> <span class="file">DarkTempleEntrancePublic.jpg</span></div>
+    <div class="setup-line"><span class="lbl">S2 all vault rooms:</span> <span class="file">DungeonVol2Public.jpg</span> <em>(reuse, reposition tokens)</em></div>
+    <div class="setup-line"><span class="lbl">Bone Chamber (battle):</span> <span class="file">vault_s1_bone_chamber.html</span></div>
+    <div class="setup-line"><span class="lbl">Altar Chamber (battle):</span> <span class="file">vault_s1_altar_chamber.html</span></div>
+    <div class="setup-line"><span class="lbl">S4 courtyard (battle):</span> <span class="file">vault_s1_courtyard.html</span></div>
+    <div class="setup-line" style="color:#555;font-size:0.78em;margin-top:4px">All in: Maptool/maps/campaign/S1_Blood_and_Omens/</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Tokens: drag to sidebar before session</div>
+    <div class="setup-line"><span class="tok">Legate_Corvinus &nbsp;·&nbsp; Augur_Cassia &nbsp;·&nbsp; Centurion_Varro &nbsp;·&nbsp; Tribune_Lucius</span></div>
+    <div class="setup-line"><span class="tok">Guard ×1</span> <em style="color:#777">(Sicus, label "Soldier", Shield Hall)</em></div>
+    <div class="setup-line"><span class="tok">Skeleton ×2</span> <em style="color:#777">(optional wandering hazard, Entrance Passage)</em></div>
+    <div class="setup-line"><span class="tok">Ghoul ×2 &nbsp;·&nbsp; Ghast ×1</span> <em style="color:#777">(Bone Chamber)</em></div>
+    <div class="setup-line"><span class="tok">Wight ×1 &nbsp;·&nbsp; Shadow ×2</span> <em style="color:#777">(Altar Chamber; Cult Fanatic uses adapted stat block)</em></div>
+    <div class="setup-line"><span class="tok">Berserker ×1 &nbsp;·&nbsp; Cultist_of_Mars ×2 &nbsp;·&nbsp; Legionary_(Milites) ×4 &nbsp;·&nbsp; Guard ×2</span> <em style="color:#777">(Courtyard)</em></div>
+    <div class="setup-line"><span class="tok">All 6 player tokens</span></div>
+  </div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Print before session</div>
+    <div class="setup-line"><strong>Handout 3</strong>: Omens Observed (index card, Scene 0)</div>
+    <div class="setup-line"><strong>Handout 1</strong>: Legate's Orders (Latin/English, Scene 1)</div>
+    <div class="setup-line"><strong>Handout 12</strong>: OTHALAN bone token (Scene 2, hidden alcove)</div>
+    <div class="setup-line"><strong>Handout 2</strong>: Vault Inscription (Scene 3, altar threshold)</div>
+    <div class="setup-line"><strong>Handouts 15-18</strong>: tribal shield visions (Scene 2, hand face-down, say nothing)</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Props to have on the table</div>
+    <ul>
+      <li>Wax tablet (Legate's orders, physical)</li>
+      <li>Red dice for corruption tracking</li>
+      <li>Black-painted dowel for the spear</li>
+      <li>Scrap paper: sketch the T-junction live at Scene 2</li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">This session is a branching dungeon crawl</div>
+    <div style="font-size:0.82em;color:#aaa">The T-junction (left = Shield Hall, right = Flooded Gallery/Bone Chamber) plays best as theater of the mind. Keep DungeonVol2 loaded throughout; switch to the dedicated SVG battle maps only for the two fights (Bone Chamber, Altar Chamber). Both branches converge at the Binding Chamber before Scene 3.</div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ SCENE 0-1 ═══ -->
+<div id="tab-s01" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Setup</div>
+    <div class="setup-line"><span class="lbl">Map:</span> none needed for Scene 0 (dream flash): <span class="file">saalburg_plan.jpg</span> reference for the principia</div>
+    <div class="setup-line"><span class="lbl">Tokens:</span> <span class="tok">Legate_Corvinus, Augur_Cassia, Centurion_Varro</span> at the table; <span class="tok">Tribune_Lucius</span> enters partway through</div>
+    <div class="setup-line"><span class="lbl">Duration:</span> Scene 0 is a 30-second visceral hook. Do not run it as a separate scene: cut straight into Scene 1's briefing.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Now</div>
+    <div class="now">Three nights ago, everyone had the same dream: blood underfoot, a glowing spear, a voice that says "MEUM." (MINE.) By dawn every dog in the fort is dead. Now: the principia, thick with incense and rot, Corvinus assigning the mission.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Read aloud: the dream (speak slowly, with dread)</div>
+    <div class="ra">"Three nights ago. You dream. All of you, the same dream. You stand in darkness, ankle-deep in blood that doesn't ripple. In the distance, a spear stands upright in the earth, glowing like a dying star... A voice, old, vast, furious, speaks a single word: 'MEUM.' (MINE.) You wake. Your tent reeks of copper and smoke. By dawn, every dog in Fort Vindolanda is dead."</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Read aloud: the principia</div>
+    <div class="ra">"The Legate speaks. His voice is iron scraping stone: 'You've been chosen. Not for honor. For survival... We've lost four men already: two to madness, two to each other's blades.' He unrolls a rough sketch of underground ruins. 'You're going down there. You're bringing it up. You're not asking questions.' Across the table, the Augur whispers: 'Mars aversus est.'"</div>
+  </div>
+  <div class="ends">Lucius arrives mid-briefing, unannounced, hands Corvinus a sealed dispatch. Give Handout 1 when Corvinus sets the wax tablet down. → Scene 2.</div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Briefing facts (from Corvinus)</div>
+    <ul>
+      <li>Three days ago a work crew found ancient ruins beneath the fort while digging a well</li>
+      <li>They unearthed an iron spear covered in runes</li>
+      <li>That night all camp dogs died</li>
+      <li>Augurs found black livers, reversed bird flights</li>
+      <li>One worker touched the spear, went mad, killed two companions</li>
+      <li>Corvinus wants the artifact secured and brought to him</li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">How to run Cassia here</div>
+    <div style="font-size:0.83em;color:#aaa">She does not oppose Corvinus directly: she cannot win that fight. One line, addressed to the party, not him: <em>"The augury was clear. What is sealed below is sealed for a reason. If you go down, go knowing that."</em> Then she stops. Her face is not fear; it's someone who has already decided, watching the party decide.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">How to run Varro here</div>
+    <div style="font-size:0.83em;color:#aaa">Skepticism about the timeline, not about destroying the spear (he doesn't know what it is yet): <em>"We don't know what sealed it or who is on the other side of that seal."</em> Corvinus: "Noted. Dismissed." Varro stays near the door. Corvinus doesn't press it.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Lucius arrives: no introduction</div>
+    <div style="font-size:0.83em;color:#aaa">Enters without knocking, sealed dispatch satchel, imperial crest. Hands Corvinus the letter, waits, sits uninvited. Says nothing to the party. If asked who he is: Corvinus answers flatly. Cassia's face when he enters: she's seen him before, isn't surprised.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Insight DC 14: temporal gate (Corvinus' fear, Scene 1 only)</div>
+    <div style="font-size:0.82em;color:#aaa">Window closes when Lucius arrives. On success: Corvinus is afraid of something specific, not just ambitious: he looks at the staircase twice in two minutes. On 5-above: it's not about the spear's power. It's what the spear represents to a man with a debt.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Refusal contingency (quick reference)</div>
+    <div style="font-size:0.82em;color:#aaa">Polite refusal → doubles pay, then sends another unit (doesn't come back). Citing the augury → removes Cassia, gives an hour (she finds them privately). Outright defiance → DC 18 Persuasion; below: Centurion escort (Varro); at/above: he backs down, gives 24 hrs; 5-above: respects them, assigns as lead unit.</div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ SCENE 2a: DESCENT ═══ -->
+<div id="tab-s2a" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Setup</div>
+    <div class="setup-line"><span class="lbl">Map:</span> <span class="file">DarkTempleEntrancePublic.jpg</span> → switch to <span class="file">DungeonVol2Public.jpg</span> at the bottom of the shaft</div>
+    <div class="setup-line"><span class="lbl">Tokens:</span> Corvinus's aide hands over torches/tinderbox/twine at the shaft head, no farewell</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Room 1: The Shaft (40 ft descent)</div>
+    <div class="now">Rope ladder, poorly anchored. Torch flames lean downward in an unnatural draft (no mechanical effect, just wrong). Survival DC 11 (active, reading the draft): the pulse means two chambers with different pressure; cedar smell means deliberate sealed storage, not collapse.</div>
+    <div style="font-size:0.82em;color:#aaa;margin-top:4px">At the bottom, scratched at knee height: seven scratches, one diagonal line through all seven, and <strong>NOLITE</strong> (Do not). Left by a previous crew member. Not a puzzle: just a warning.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Room 2: The Entrance Passage (40 ft)</div>
+    <div style="font-size:0.83em;color:#aaa">Roman-over-Germanic construction. 15 ft in: an abandoned pick, not rusted, handle broken not decayed, pointed back toward the shaft (Perception DC 10 passive). DC 12 Investigation connects the warning's maker to the pick. Librarius/Haruspex/Explorator/Soldier all get a flavor read (see book for full text).</div>
+    <div style="font-size:0.82em;color:#888;margin-top:3px">Ends at a T-junction: left = warmer air, dry stone (Shield Hall); right = colder air, slow water (Flooded Gallery).</div>
+  </div>
+  <div class="ends">Sketch the T-junction on scrap paper. Ask which branch first. Both merge at the Binding Chamber. → 2b or 2c.</div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Vault map (reference: do not show room labels)</div>
+    <div style="font-family:monospace;font-size:0.75em;color:#8bc88b;white-space:pre;line-height:1.3">
+[1] SHAFT (40ft)
+      |
+[2] ENTRANCE PASSAGE
+      |
+[3] T-JUNCTION
+    /        \
+ LEFT       RIGHT
+[4] Shield  [5] Flooded
+ Hall+      Gallery
+ Alcove     [6] Bone Chamber
+    \          /
+   [7] BINDING CHAMBER
+         |
+   [8] RUNIC CORRIDOR
+         |
+   [9] ALTAR CHAMBER</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Skill audit quick reference</div>
+    <table>
+      <tr><th>Check</th><th>What it gives</th></tr>
+      <tr><td class="k">Survival 11</td><td class="v">Draft pulse = two chambers; cedar = sealed storage</td></tr>
+      <tr><td class="k">Perception 10 (passive)</td><td class="v">Pick points back toward shaft: someone was retreating</td></tr>
+      <tr><td class="k">Investigation 12</td><td class="v">Same pick made the warning scratches: deliberate, not panicked</td></tr>
+      <tr><td class="k">History 14 (Librarius)</td><td class="v">NOLITE = formal deadline violation, not graffiti</td></tr>
+      <tr><td class="k">Religion 15 (Haruspex)</td><td class="v">Seven-fold oath broken: all threads severed</td></tr>
+    </table>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ SCENE 2b: LEFT BRANCH ═══ -->
+<div id="tab-s2b" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Setup</div>
+    <div class="setup-line"><span class="lbl">Map:</span> <span class="file">DungeonVol2Public.jpg</span> (theater of the mind: no combat here)</div>
+    <div class="setup-line"><span class="lbl">Tokens:</span> <span class="tok">Guard.rptok</span> labeled "Soldier" = Sicus, half-covered by a tipped bench</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Room 4: The Shield Hall</div>
+    <div class="now">Dozens to a hundred Germanic shields hung edge to edge: four tribes that never coexisted in the same region, arranged in a deliberate hierarchy with Mars's wolf highest. History 13/15, Religion 14, Perception 11, Nature 12, and Athletics 12 (grip cut from inside, decommissioned, not spoils) all give passive/active reads. No combat: the shields don't move, they watch.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Touching a shield: vision mechanic</div>
+    <table>
+      <tr><th>Symbol</th><th>Tribe</th><th>Handout</th></tr>
+      <tr><td class="k">Boar boss</td><td class="v">Marcomanni</td><td class="v">15</td></tr>
+      <tr><td class="k">Three-finger hand</td><td class="v">Cherusci</td><td class="v">16</td></tr>
+      <tr><td class="k">Coiled serpent</td><td class="v">Suebi</td><td class="v">17</td></tr>
+      <tr><td class="k">Plain rim (nine smallest)</td><td class="v">The Nine: unnamed</td><td class="v">18</td></tr>
+    </table>
+    <div style="font-size:0.8em;color:#888">Any character who removes/touches a shield gets a 3-5 second vision: hand the handout, say nothing, let them read.</div>
+  </div>
+  <div class="ho"><strong>Ursula Günther note:</strong> the boar is her mother's tribe. She reads Elder Futhark without a check and needs no rolls for tribal symbols. Give her Handout 15 privately and wait: do not tell her how to react.</div>
+  <div class="ends">Shield arrangement (DC 13 Intelligence to note) tells the OTHALAN column pattern used later in the Runic Corridor.</div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Sicus: one of the lost men</div>
+    <div style="font-size:0.83em;color:#aaa">Missing lorica, wound at shoulder, stable but dehydrated. Perception 11 finds the drag trail; Medicine 9 confirms stable. Water/healing → conscious in a round; else DC 12 Medicine + 2 min.</div>
+    <div class="ra" style="margin-top:5px">"They came down before you. Three of them. Red cloaks, oil lamps... Short man, shaved head. He pulled something on the wall near the last chamber: a lever. Heard it grind. He left by the passage on the left."</div>
+    <div style="font-size:0.8em;color:#888;margin-top:3px">Gives: cultists were here first (advance knowledge); a lever exists ahead; presses the second OTHALAN bone token into a character's hand (advantage on Wight communication check later, stacking with the contract scroll). He cannot fight and won't follow into combat.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">The Hidden Alcove</div>
+    <div style="font-size:0.83em;color:#aaa">Investigation DC 15 (backwards-facing shield) reveals a narrow gap: wax tablet ("Corvinus knows nothing of the bargain... Warn the..." obliterated), an OTHALAN bone token (one half of a contract pair), and a bronze stylus. <strong>Give Handout 12</strong> to whoever made the check: let them share it, don't read aloud.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Anti-Rome framing (DM voice, use if it lands)</div>
+    <div style="font-size:0.82em;color:#888">Rome didn't build this vault: it inherited it, violated the bargain, and is sending soldiers to retrieve a weapon it was never permitted to have. Every shield belongs to a people Rome has since destroyed, displaced, or erased.</div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ SCENE 2c: RIGHT BRANCH ═══ -->
+<div id="tab-s2c" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Setup</div>
+    <div class="setup-line"><span class="lbl">Map:</span> <span class="file">DungeonVol2Public.jpg</span> → <span class="file">vault_s1_bone_chamber.html</span> for the fight</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Room 5: The Flooded Gallery</div>
+    <div class="now">Chest-deep black standing water, 30 ft. Survival 12 (read the waterline): east wall is shallower, advantage on the Athletics 11 stealth wade. Four <strong>Shadows</strong> lurk, drawn to light/sound: group Stealth 14 (extinguish torches) passes for free.</div>
+    <div style="font-size:0.82em;color:#aaa;margin-top:4px">Far wall: a preserved Germanic warrior, seated, <em>seiðr</em> death (voluntary, not violence). Carries a <em>framea</em> and a second OTHALAN bone token. Disturbing the body disrespectfully wakes one Shadow with no warning.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Room 6: The Bone Chamber</div>
+    <div class="phase-hdr">ENCOUNTER: 2 Ghouls + 1 Ghast: Hard/1,700 XP for 5 players</div>
+    <div style="font-size:0.83em;color:#aaa;margin-top:4px">Ghouls dormant under rubble, activate once party is fully inside (give one free round of looking around). Ghast emerges last from behind stone benches. Ghast Stench (DC 10 Con or poisoned) on emergence. Paralyzed target + Ghast attack = advantage + auto-crit: intentional.</div>
+    <div style="font-size:0.8em;color:#888;margin-top:3px">Escape route: back through the Flooded Gallery always available; Shadows don't reactivate for a loud retreat.</div>
+  </div>
+  <div class="ends">After combat: clay vessel offering (grain + pre-Roman Mars coin): someone has been feeding this place until recently. → merges at Binding Chamber.</div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Stat blocks (Bone Chamber)</div>
+    <table>
+      <tr><th>Creature</th><th>CR</th><th>Notes</th></tr>
+      <tr><td class="k">Ghoul ×2</td><td class="v">1</td><td class="v">Claws attempt Paralyze first</td></tr>
+      <tr><td class="k">Ghast ×1</td><td class="v">2</td><td class="v">Stench DC 10 Con on emergence</td></tr>
+    </table>
+    <div style="font-size:0.8em;color:#888;margin-top:3px">5-player note: run full encounter as written: one Ghoul on ceiling (Wall Crawl Drop), one from floor, party can't shield-wall both. Death Scream when Ghast drops.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">DM: who has been feeding this place</div>
+    <div style="font-size:0.82em;color:#aaa">Titus Sempronius Caecilius, Cassia's predecessor as augur, maintained this offering cycle for decades. Died of fever in AD 173: his death broke the chain. Cassia inherited his papers but not his understanding. Session 2 thread.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">The preserved warrior</div>
+    <div style="font-size:0.82em;color:#aaa">Investigation 12: died deliberately, sat down, crossed arms, no violence. Perception 12: re-tempering marks and controlled-retreat foot posture show a veteran, not a sacrifice. If a character takes the <em>framea</em>: real Germanic craftsmanship, Cassia will want to see it in Session 2.</div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ SCENE 2d: BINDING + RUNIC ═══ -->
+<div id="tab-s2d" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Room 7: The Binding Chamber (both branches merge)</div>
+    <div class="now">Chains in ranks, none collar-sized for a human. TIWAZ carved on the far wall; below it, scratched Latin: "We turned back here." One chain carries steady tension from below the floor ring right now (Athletics 12).</div>
+  </div>
+  <div class="block">
+    <div class="block-title">The chain sequence puzzle</div>
+    <div style="font-size:0.83em;color:#aaa">Investigation DC 14 reveals the oxidation-pattern order: <strong>oldest chain first (left wall), newest last (right wall), then the centre.</strong> Wrong pull without the sequence: DC 13 Str save or restrained 1 min (no damage). Correct sequence opens a hidden alcove: oil lamp + oilskin scroll.</div>
+    <div class="ho" style="margin-top:4px">Scroll (DC 15 Intelligence): the binding terms: tribes sealed the vault for 3 Roman generations, Rome agreed never to dig within 50 ft of the principia's east wall. <strong>The excavation broke it the moment the first shovel hit.</strong></div>
+  </div>
+  <div class="block">
+    <div class="block-title">Room 8: The Runic Corridor</div>
+    <div class="now">30 ft, 8 rows of 5 rune tiles each. Wrong tile = 1d8 lightning, no save, PLUS on the FIRST wrong step: advance the Altar Chamber guardians one free prep round (Wight draws weapon, Fanatic flanks, one Shadow coalesces).</div>
+  </div>
+  <div class="ends">Safe rune is always OTHALAN: column shifts every row. Three independent ways to know it. → Altar Chamber.</div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">OTHALAN column key (1=left wall, 5=right wall)</div>
+    <table>
+      <tr><th>Row</th><th>Col</th><th>Row</th><th>Col</th></tr>
+      <tr><td class="k">1</td><td class="v">3 (centre)</td><td class="k">5</td><td class="v">4</td></tr>
+      <tr><td class="k">2</td><td class="v">1 (far left)</td><td class="k">6</td><td class="v">1 (far left)</td></tr>
+      <tr><td class="k">3</td><td class="v">5 (far right)</td><td class="k">7</td><td class="v">3 (centre)</td></tr>
+      <tr><td class="k">4</td><td class="v">2</td><td class="k">8</td><td class="v">4 (threshold)</td></tr>
+    </table>
+  </div>
+  <div class="block">
+    <div class="block-title">Three independent routes to OTHALAN</div>
+    <div class="clue"><strong>Shield Hall memory:</strong> DC 13 Intelligence (History) if they noted the arrangement in Room 4: hand them the table above.</div>
+    <div class="clue"><strong>Bone token:</strong> anyone who can read Elder Futhark (History/Religion proficiency, Germanic background, or Ursula) sees it directly. No check.</div>
+    <div class="clue"><strong>Religion DC 14 passive:</strong> Religion +4 or higher auto-recognises the liturgical pattern: give them the full table.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">If they ignore all clues</div>
+    <div style="font-size:0.82em;color:#888">Average 4.5 lightning damage per failed row, up to 36 across all 8. Survivable but costly: a cost that compounds, not a wall.</div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ SCENE 3: ALTAR CHAMBER ═══ -->
+<div id="tab-s3" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Setup</div>
+    <div class="setup-line"><span class="lbl">Map:</span> <span class="file">vault_s1_altar_chamber.html</span></div>
+    <div class="setup-line"><span class="lbl">Tokens:</span> <span class="tok">Wight ×1</span> at altar base, <span class="tok">Shadow ×2</span> flanking</div>
+    <div class="ho">Give Handout 2 (Vault Inscription) as party crosses the threshold: read rune names aloud, then slide it across.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Now</div>
+    <div class="now">Perfect circular chamber. Granite altar, spear resting on stone pegs, chains slack around the base "as though they gave up trying to hold it." Within 5 ft of the altar, air stops moving.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">The Wight speaks first: do not start combat immediately</div>
+    <div class="ra">"The bargain was broken. Not by you. But by your kind. I am still bound. You are not."</div>
+    <div style="font-size:0.8em;color:#888">Highest-Wisdom character understands the dialect without knowing why. Ursula understands regardless: grew up hearing it. She may choose not to share immediately.</div>
+  </div>
+  <div class="phase-hdr">ENCOUNTER: 1 Wight (CR3) + 1 Cult Fanatic (CR2, adapted) + 2 Shadows (CR1/2): 1,800 XP, near-Deadly at L3 depleted</div>
+  <div class="ends">Exit condition: back beyond 15 ft of the altar → Wight holds, Shadows stop. Communication check DC 14 Persuasion/Insight (advantage w/ contract scroll) → Wight pauses, gives one more line, combat still resumes after.</div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Cult Fanatic (adapted)</div>
+    <div style="font-size:0.82em;color:#aaa">AC 13, HP 33. <em>Gladius</em> +4/1d6+2. Spells: sacred flame, thaumaturgy, bane, inflict wounds, shield of faith, hold person, spiritual weapon. Acts Initiative 10, flanks the spear-holder round 1. Already pulled the lever (difficult terrain at the corridor exit) before the party arrived.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">OTHALAN token (tactical target)</div>
+    <div style="font-size:0.82em;color:#aaa">Pinned at the Wight's sternum, AC 13, 5 HP, shatters on one hit. If destroyed/removed: Shadows lose binding for 1 round (-2 attack, no Strength Drain), then act independently.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Wight trait: Dark Resolve</div>
+    <div style="font-size:0.82em;color:#aaa">Regains 2 (1d4) HP/turn while any creature within 30 ft is Frightened (Shadow drain, failed spear save, spell: any source). He cannot suppress it.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Spear outcomes (quick table)</div>
+    <table>
+      <tr><th>Outcome</th><th>Result</th></tr>
+      <tr><td class="k">Take it</td><td class="v">DC 14 Wisdom save on first touch; fail = 1 corruption + Shaken</td></tr>
+      <tr><td class="k">Retreat</td><td class="v">Wight holds. Mission fails for Corvinus. Party survives: valid outcome.</td></tr>
+      <tr><td class="k">Wipeout</td><td class="v">If Fanatic survives, he takes it to Corvinus. Else it sits untouched.</td></tr>
+    </table>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ SCENE 4-5: SURFACE ═══ -->
+<div id="tab-s4" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Setup</div>
+    <div class="setup-line"><span class="lbl">Map:</span> <span class="file">vault_s1_courtyard.html</span></div>
+    <div class="setup-line"><span class="lbl">Tokens:</span> <span class="tok">Berserker ×1</span> (Marius Coda), <span class="tok">Cultist_of_Mars ×2</span>, <span class="tok">Legionary_(Milites) ×4</span> (round 3), <span class="tok">Guard ×2</span> (round 5)</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Scene 4: Marius Coda (right now)</div>
+    <div class="now">Marius stands over 3 fallen legionaries with two bloody gladii. Fully possessed by proximity, not evil. Focuses exclusively on whoever carries the spear.</div>
+    <div class="ra">"The spear calls, the spear drinks, the spear wants a champion."</div>
+    <div style="font-size:0.82em;color:#aaa;margin-top:4px">Perception 11 (his stance): front-heavy, no left guard: advantage on the first attack against that side. Two Cultists watch, don't attack unless threatened.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Resolution paths</div>
+    <table>
+      <tr><th>Choice</th><th>Result</th></tr>
+      <tr><td class="k">Kill</td><td class="v">Dies mid-charge, last word "Mars." Camp whispers spread.</td></tr>
+      <tr><td class="k">Subdue</td><td class="v">Athletics 13 w/ 2 helpers → collapses weeping, no memory</td></tr>
+      <tr><td class="k">Deny sight</td><td class="v">Move spear 60 ft / darkness → freezes, sobs, becomes witness</td></tr>
+      <tr><td class="k">He escapes</td><td class="v">DC 14 Athletics to catch; else found dead of exposure, 2 days later</td></tr>
+    </table>
+  </div>
+  <div class="ends">Aelius Rufus (face-down, alive): DC 12 Medicine stabilizes → owes the party his life, appears Session 2.</div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Scene 5: The Reckoning (immediately after)</div>
+    <div class="now">Principia door opens. Corvinus walks (never runs). Lucius two steps behind. Cassia arrives at a near-run from the east side: if she reaches the party first: "Do not give it to him."</div>
+    <div class="ra">"You found it. Good. Give it to me and your bonus pay is doubled. Tonight."</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Resolution branches</div>
+    <table>
+      <tr><th>Choice</th><th>DC</th><th>Result</th></tr>
+      <tr><td class="k">Give it up</td><td class="v">no check</td><td class="v">Worst outcome for divine stakes; Cassia in tears; valid</td></tr>
+      <tr><td class="k">Party keeps it</td><td class="v">Persuasion 16 / Intim 15</td><td class="v">Accepted, no warmth, party responsible for consequences</td></tr>
+      <tr><td class="k">Refuse outright</td><td class="v">Persuasion 18 / Intim 17</td><td class="v">Confined to barracks; Varro releases in an hour</td></tr>
+      <tr><td class="k">Destroy/hide it</td><td class="v">no check</td><td class="v">Physical form gone; divine presence follows anyway → Session 4</td></tr>
+    </table>
+  </div>
+  <div class="block">
+    <div class="block-title">Closing: Varro (always, regardless of outcome)</div>
+    <div class="ra">"I'm going to need your account of what happened down there. The real one, not the version Corvinus gets. Take tonight. Write nothing down. Come find me in the morning."</div>
+  </div>
+  <div class="ends">Level 4. Varro: "Whatever you saw down there: you're still here. That's the thing that matters tonight."</div>
+</div>
+</div>
+</div>
+
+<!-- ═══ NPCS ═══ -->
+<div id="tab-npcs" class="tab-pane">
+<div class="block">
+  <div class="block-title">NPC Quick Reference: full cards in chapter01_npcs.html</div>
+  <table>
+    <tr><th>Name</th><th>Wants this chapter</th><th>Secret</th><th>Voice</th></tr>
+    <tr>
+      <td class="k">Legate Corvinus</td>
+      <td class="v">Control the spear; secure it before Rome learns of it</td>
+      <td class="s">Already sent a private rider to Rome. The party is not the first team he sent down.</td>
+      <td class="q">"You've been chosen. Not for honor. For survival."</td>
+    </tr>
+    <tr>
+      <td class="k">Augur Cassia</td>
+      <td class="v">Prevent the divine catastrophe from her dreams</td>
+      <td class="s">Performed an augury: the party decides whether Rome burns, but not how.</td>
+      <td class="q">"Mars aversus est."</td>
+    </tr>
+    <tr>
+      <td class="k">Centurion Varro</td>
+      <td class="v">Keep his cohort alive as command unravels</td>
+      <td class="s">Heard a legionary whisper "I understand him" in Scene 4. Reassigned him, told no one.</td>
+      <td class="q">"I'm going to need your account. The real one."</td>
+    </tr>
+    <tr>
+      <td class="k">Tribune Lucius</td>
+      <td class="v">Observe and report to Rome; not to facilitate</td>
+      <td class="s">Cassia has seen him before. Chapter 2 reveals he answers to Brutus.</td>
+      <td class="q">[Silence. Watching.]</td>
+    </tr>
+    <tr>
+      <td class="k">The Wight</td>
+      <td class="v">Honor the 300-year oath; keep the spear contained</td>
+      <td class="s">Chose to remain as guardian after death: a willing sacrifice, not a curse.</td>
+      <td class="q">"I am still bound. You are not."</td>
+    </tr>
+    <tr>
+      <td class="k">Marius Coda</td>
+      <td class="v">The spear's compulsion: reach the spear-bearer</td>
+      <td class="s">Not responsible. Nearest the shaft for 3 days: longest exposure of any worker.</td>
+      <td class="q">"The spear calls, the spear drinks, the spear wants a champion."</td>
+    </tr>
+  </table>
+</div>
+</div>
+
+<!-- ═══ IF WRONG ═══ -->
+<div id="tab-wrong" class="tab-pane">
+<div class="block">
+  <div class="block-title">Contingencies</div>
+  <table>
+    <tr><th>Situation</th><th>What to do</th></tr>
+    <tr><td class="k">Party refuses the mission</td><td class="v">See Refusal Contingency (Pre-Session tab). Varro escorting them is the softest landing: he tells them privately he'd go too.</td></tr>
+    <tr><td class="k">Party charges through the Flooded Gallery loudly</td><td class="v">Group Stealth 14 vs. passive Perception 10 fails → 4 Shadows engage. Give one round of seeing them approach before initiative.</td></tr>
+    <tr><td class="k">Party skips the Shield Hall entirely</td><td class="v">No OTHALAN memory clue for the Runic Corridor: they still have the bone token route and the Religion DC 14 passive route. Never a hard wall.</td></tr>
+    <tr><td class="k">Party pulls the central chain without the sequence</td><td class="v">DC 13 Str save or restrained 1 min. No damage: wasted time and noise only. Try again.</td></tr>
+    <tr><td class="k">Party ignores all Runic Corridor clues</td><td class="v">1d8 lightning per wrong tile, up to 36 total across 8 rows. Survivable but costly, and the first miss gives the Altar Chamber a free prep round.</td></tr>
+    <tr><td class="k">Party attacks the Wight without listening</td><td class="v">Combat proceeds at 1,800 XP (near-Deadly). Exit condition (back off 15 ft) is always available mid-fight if it goes badly.</td></tr>
+    <tr><td class="k">Party is wiped in the Altar Chamber</td><td class="v">If Cult Fanatic survives, he takes the spear to Corvinus. If not, an unconscious PC wakes with the spear untouched: the Wight's oath doesn't permit theft.</td></tr>
+    <tr><td class="k">Marius Coda breaks free in Scene 4</td><td class="v">DC 14 Athletics to catch. Escapes → found dead of exposure in 2 days, both gladii snapped. Corvinus blames the party for letting the madness spread.</td></tr>
+    <tr><td class="k">Party destroys the spear in the vault (claims to)</td><td class="v">Corvinus sends soldiers to check, finds the altar and the Wight's remains, no spear. He is cold and furious. The divine presence follows the party regardless: pays off in Session 4.</td></tr>
+  </table>
+</div>
+</div>
+
+<!-- ═══ MAPTOOL ═══ -->
+<div id="tab-server" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Start MapTool: GM</div>
+    <div class="cmd">./Maptool/maptool.sh</div>
+    <ul>
+      <li>Open campaign: <code>Maptool/campaigns/5e/5juliromans.cmpgn</code></li>
+      <li>File → <strong>Start Server</strong></li>
+      <li>Port: <strong>51234</strong> (default)</li>
+      <li>Set a password: share it with players</li>
+      <li>Role: <strong>GM</strong></li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">Players connect</div>
+    <ul>
+      <li>They launch MapTool, File → <strong>Connect to Server</strong></li>
+      <li>Your local IP: run <span style="font-family:monospace;color:#8bc88b">ip a</span> → look for <code>192.168.x.x</code></li>
+      <li>Port: <strong>51234</strong>, enter password, Role: <strong>Player</strong></li>
+      <li>Same WiFi → local IP works. Remote → need Tailscale or port-forward.</li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">Common issues</div>
+    <table>
+      <tr><td class="k">Can't connect</td><td class="v">Firewall blocking 51234. Allow it or disable firewall for session.</td></tr>
+      <tr><td class="k">Player sees nothing</td><td class="v">Right-click map → Reveal All (for testing). Or use Vision tool to expose areas.</td></tr>
+      <tr><td class="k">Token not moving</td><td class="v">Edit token → Ownership tab → add player's login name exactly.</td></tr>
+      <tr><td class="k">Library tab broken</td><td class="v">Known 1.18.6 bug. Use File → Add Resource to Library → Local Directory instead.</td></tr>
+    </table>
+  </div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Pre-session MapTool checklist</div>
+    <ul>
+      <li>Open campaign file and verify all macros load</li>
+      <li>Add maps: File → Add Resource to Library → Local Directory → <code>S1_Blood_and_Omens/</code></li>
+      <li>Create separate map tabs: shaft head, vault interior, Bone Chamber (SVG), Altar Chamber (SVG), Courtyard (SVG)</li>
+      <li>Drag all player .rptok tokens from <code>Maptool/tokens/players/</code> onto the starting map</li>
+      <li>Right-click each player token → Edit → Ownership → assign to their username</li>
+      <li>Set Fog of War on each map</li>
+      <li>Test: can you see all player tokens? Can they see theirs?</li>
+      <li><strong>Do this 15 min before players join: not while they wait</strong></li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">Player tokens</div>
+    <div style="font-size:0.82em;color:#aaa">
+      <span class="tok">Iris.rptok &nbsp;·&nbsp; Julia_Jana.rptok &nbsp;·&nbsp; Rivia_Calida_Mendera.rptok</span><br>
+      <span class="tok">Tanit_bint_Abdmelqart.rptok &nbsp;·&nbsp; Ursula_Günther.rptok</span><br>
+      All in <code>Maptool/tokens/players/</code> (Brian joins in Chapter 2, Scene 3, not this session)
+    </div>
+  </div>
+  <div class="block">
+    <div class="block-title">Scene 2 token workflow</div>
+    <ul>
+      <li><strong>Descent/T-junction:</strong> theater of the mind: no tokens needed until a fight</li>
+      <li><strong>Bone Chamber:</strong> switch to SVG battle map, drop 2 Ghoul + 1 Ghast</li>
+      <li><strong>Altar Chamber:</strong> switch to SVG battle map, drop Wight + 2 Shadows; add Cult Fanatic via adapted stat block</li>
+      <li><strong>Courtyard:</strong> switch to SVG battle map, drop Berserker + 2 Cultists; add Legionaries round 3, Guards round 5</li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+</div><!-- #content -->
+
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>

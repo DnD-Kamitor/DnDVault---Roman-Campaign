@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ch1: NPC Reference Cards</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0d0b08; color: #c8b898; font-family: Georgia, serif; font-size: 13px; line-height: 1.45; min-height: 100vh; }
+
+  #header { background: #120f08; border-bottom: 2px solid #c8a850; padding: 10px 16px; }
+  #header h1 { color: #c8a850; font-size: 1.1em; }
+  #header .sub { color: #786858; font-size: 0.8em; margin-top: 2px; }
+
+  #tabs { display: flex; background: #100e08; border-bottom: 1px solid #2a2018; overflow-x: auto; }
+  .tab-btn { background: none; border: none; padding: 8px 14px; cursor: pointer; font-family: Georgia, serif; font-size: 0.78em; color: #786858; white-space: nowrap; border-bottom: 2px solid transparent; }
+  .tab-btn:hover { color: #c8b898; background: #181410; }
+  .tab-btn.active { color: #c8a850; border-bottom-color: #c8a850; background: #181208; }
+  .tab-btn.ant { color: #a04040; }
+  .tab-btn.ant.active { color: #d06060; border-bottom-color: #d06060; }
+  .tab-btn.ally { color: #508850; }
+  .tab-btn.ally.active { color: #70c060; border-bottom-color: #70c060; }
+
+  #content { max-width: 900px; margin: 0 auto; padding: 16px; }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+
+  .card { background: #120f08; border: 1px solid #2a2018; padding: 14px; display: grid; grid-template-columns: 130px 1fr; gap: 14px; margin-bottom: 14px; }
+  .card.ant  { border-color: #5a1a1a; }
+  .card.ally { border-color: #1a3a1a; }
+  .card.grey { border-color: #2a2828; }
+
+  .portrait-col { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .portrait { width: 100px; height: 100px; border-radius: 50%; overflow: hidden; border: 3px solid #c8a850; flex-shrink: 0; }
+  .portrait.ant  { border-color: #c84040; }
+  .portrait.grey { border-color: #7a7868; }
+  .portrait.ag   { border-color: #70b050; }
+  .badge { font-size: 0.7em; color: #786858; text-align: center; line-height: 1.4; }
+  .badge.ant  { color: #c84040; }
+  .badge.ally { color: #70b050; }
+
+  .npc-name { font-size: 1.12em; color: #c8a850; font-weight: bold; margin-bottom: 2px; }
+  .npc-name.ant  { color: #d06060; }
+  .npc-name.ally { color: #80c870; }
+  .npc-role { color: #786858; font-size: 0.8em; margin-bottom: 8px; font-style: italic; }
+  .look { color: #c8b898; font-size: 0.82em; font-style: italic; border-left: 2px solid #3a3020; padding-left: 8px; margin-bottom: 10px; }
+
+  .section-hdr { color: #786858; font-size: 0.7em; text-transform: uppercase; letter-spacing: 0.08em; margin: 10px 0 4px; font-weight: bold; }
+
+  table.ogas { width: 100%; border-collapse: collapse; font-size: 0.81em; margin-bottom: 6px; }
+  table.ogas td { padding: 3px 6px; border-bottom: 1px solid #1a1810; vertical-align: top; }
+  table.ogas td.lbl { color: #c8a850; font-weight: bold; white-space: nowrap; width: 75px; }
+  table.ogas td.lbl.ant { color: #d06060; }
+  table.ogas td.lbl.sec { color: #9a70d0; }
+  table.ogas td.val { color: #c8b898; }
+
+  .voice { background: #0a0808; border-left: 3px solid #3a3020; padding: 5px 9px; margin-bottom: 8px; font-size: 0.82em; color: #b8a888; line-height: 1.6; }
+  .vl::before { content: '"'; color: #786858; }
+  .vl::after  { content: '"'; color: #786858; }
+  .vc { font-style: normal; color: #6a5a48; font-size: 0.85em; display: block; margin-top: 1px; margin-bottom: 4px; }
+
+  .stat-block { background: #0a0908; border: 1px solid #2a2018; padding: 8px 10px; font-size: 0.8em; margin-bottom: 8px; }
+  .stat-name { color: #c8a850; font-weight: bold; margin-bottom: 3px; }
+  .stat-name.ant  { color: #d06060; }
+  .stat-name.ally { color: #80c870; }
+  .sl { color: #c8b898; margin-bottom: 2px; }
+  .sl span { color: #a09080; }
+  .sl.note { color: #607860; font-style: italic; }
+  .abilities { display: flex; gap: 10px; flex-wrap: wrap; margin: 4px 0; }
+  .ab { text-align: center; min-width: 36px; }
+  .ab .sc { color: #c8a850; font-weight: bold; font-size: 0.95em; }
+  .ab .md { color: #786858; font-size: 0.78em; }
+  .ab .lb { color: #6a5a48; font-size: 0.68em; text-transform: uppercase; }
+
+  .timeline { width: 100%; border-collapse: collapse; font-size: 0.79em; }
+  .timeline th { color: #786858; text-align: left; padding: 2px 6px; border-bottom: 1px solid #2a2018; font-weight: normal; font-style: italic; }
+  .timeline td { padding: 3px 6px; border-bottom: 1px solid #1a1810; vertical-align: top; color: #c8b898; }
+  .timeline td.sc { color: #c8a850; white-space: nowrap; }
+  .timeline td.sc.ant { color: #d06060; }
+  .timeline td.sc.ag  { color: #80c870; }
+
+  .trust-table { width: 100%; border-collapse: collapse; font-size: 0.79em; margin-bottom: 8px; }
+  .trust-table th { color: #786858; text-align: left; padding: 2px 6px; border-bottom: 1px solid #2a2018; font-weight: normal; }
+  .trust-table td { padding: 3px 6px; border-bottom: 1px solid #1a1810; vertical-align: top; color: #c8b898; }
+  .trust-table td.lvl { font-weight: bold; white-space: nowrap; }
+
+  .trigger { background: #0f0a0a; border-left: 3px solid #8a4040; padding: 4px 8px; font-size: 0.8em; color: #b89898; margin-bottom: 4px; }
+  .trigger.ag { border-left-color: #4a8a4a; background: #0a0f0a; color: #98b898; }
+  .trigger strong { color: #d08080; }
+  .trigger.ag strong { color: #80c080; }
+
+  .minor-card { background: #100e0a; border: 1px solid #2a2018; padding: 10px 12px; margin-bottom: 10px; }
+  .minor-name { color: #c8a850; font-weight: bold; font-size: 0.95em; }
+  .minor-role { color: #786858; font-size: 0.78em; font-style: italic; margin-bottom: 4px; }
+  .minor-body { font-size: 0.83em; color: #c8b898; }
+  .minor-body strong { color: #e8d8b0; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Chapter 1: NPC Reference Cards</h1>
+  <div class="sub">Blood and Omens &nbsp;·&nbsp; 6 major cards + minor NPCs &nbsp;·&nbsp; Session 1 (L3) &nbsp;·&nbsp; Gold frame = ally &nbsp;·&nbsp; Red frame = antagonist &nbsp;·&nbsp; Grey = complex</div>
+</div>
+
+<div id="tabs">
+  <button class="tab-btn active" onclick="show('corvinus',this)">Corvinus</button>
+  <button class="tab-btn ally"   onclick="show('cassia',this)">Cassia (Ally)</button>
+  <button class="tab-btn ally"   onclick="show('varro',this)">Varro (Ally)</button>
+  <button class="tab-btn"        onclick="show('lucius',this)">Lucius (Watcher)</button>
+  <button class="tab-btn"        onclick="show('wight',this)">The Wight (Guardian)</button>
+  <button class="tab-btn ant"    onclick="show('marius',this)">Marius Coda (Possessed)</button>
+  <button class="tab-btn"        onclick="show('minor',this)">Minor NPCs</button>
+</div>
+
+<div id="content">
+
+<!-- CORVINUS -->
+<div id="corvinus" class="tab-pane active">
+<div class="card grey">
+  <div class="portrait-col">
+    <div class="portrait grey">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#0f0e0c"/>
+        <rect x="30" y="60" width="40" height="40" rx="2" fill="#4a4038"/>
+        <rect x="28" y="56" width="44" height="12" rx="2" fill="#5a5040"/>
+        <line x1="28" y1="60" x2="72" y2="60" stroke="#6a6050" stroke-width="1.5"/>
+        <line x1="28" y1="64" x2="72" y2="64" stroke="#6a6050" stroke-width="1.5"/>
+        <rect x="44" y="50" width="12" height="10" fill="#b08860"/>
+        <ellipse cx="50" cy="40" rx="16" ry="18" fill="#b08860"/>
+        <rect x="20" y="28" width="60" height="6" rx="2" fill="#8a1010"/>
+        <rect x="34" y="18" width="32" height="18" rx="3" fill="#6a6058"/>
+        <rect x="36" y="30" width="28" height="14" rx="1" fill="#504840"/>
+      </svg>
+    </div>
+    <div class="badge">COMPLEX<br>Scenes 1 · 5</div>
+  </div>
+  <div>
+    <div class="npc-name">Legate Marcus Aurelius Corvinus</div>
+    <div class="npc-role">Fort Commander, issues the mission, wants the spear, not the truth about it</div>
+    <div class="look">Fifties. Commanding frame, iron-grey. Eyes bloodshot and specific: the look of a man who has not slept and has decided that does not matter. Voice like iron scraping stone. Counts the party like tools before a job.<br><em>"He looks at each of you in turn, the way a man counts his tools before a job."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl">Objective</td><td class="val">Control the most powerful military artifact unearthed in a generation.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Secure the spear in his personal custody before Rome or the Senate learns of it.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Uses the party as deniable retrievers. Silences the augur in front of the party without acknowledging her. Crafts a "routine excavation" cover story for anyone who asks.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">Already dispatched a private rider to his patron in Rome. The party is not the first team he sent down: four men were lost before them.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">You've been chosen. Not for honor. For survival.</div>
+      <span class="vc">Scene 1: opening the briefing</span>
+      <div class="vl">You're going down there. You're bringing it up. You're not asking questions.</div>
+      <span class="vc">Scene 1: assigning the mission</span>
+      <div class="vl">You found it. Good. Give it to me and your bonus pay is doubled. Tonight.</div>
+      <span class="vc">Scene 5: the moment the party surfaces with the spear</span>
+    </div>
+
+    <div class="section-hdr">STAT BLOCK (if it comes to that)</div>
+    <div class="stat-block">
+      <div class="stat-name">Legate Corvinus: CR 3 (Veteran)</div>
+      <div class="sl"><span>AC</span> 17 (lorica + shield) &nbsp;·&nbsp; <span>HP</span> 58 (9d8+18) &nbsp;·&nbsp; <span>Speed</span> 30 ft</div>
+      <div class="sl"><span>Multiattack:</span> 2. <span>Gladius:</span> +5 to hit, 1d6+3. <span>Scutum bash:</span> +5, 1d4+3.</div>
+      <div class="sl note">He does not draw on the party in Chapter 1 under any circumstance. This block exists for completeness only: Scene 5 is a standoff, never a fight.</div>
+    </div>
+
+    <div class="section-hdr">SESSION STATE</div>
+    <table class="timeline">
+      <tr><th>Scene</th><th>Location / Action</th></tr>
+      <tr><td class="sc">S1</td><td>Principia, hands flat on the map. Assigns the mission, sets the wax tablet down without picking it up again (Handout 1). Overrules Varro without anger. Does not respond to Cassia's private warning because it was not addressed to him.</td></tr>
+      <tr><td class="sc">S2–3</td><td>Above ground. Not present. Waiting.</td></tr>
+      <tr><td class="sc">S4</td><td>Still inside the principia when the Berserker breaks. Emerges only after the courtyard settles.</td></tr>
+      <tr><td class="sc ant">S5</td><td>Walks out (does not run: "a Legate does not run"). Eyes stay on the spear a moment too long. Appetite before relief. Offers doubled bonus pay for the spear, immediately, with no acknowledgment of the bodies.</td></tr>
+    </table>
+
+    <div class="section-hdr">TRIGGER RESPONSES</div>
+    <div class="trigger">Party cites the augury or Cassia's warning directly → <strong>"Noted. Dismissed."</strong> No anger, no reconsideration.</div>
+    <div class="trigger">Party shows him the contract scroll (Binding Chamber) → he goes quiet. He recognises the OTHALAN name. Says nothing more and walks away. Let the silence breathe: this is a big moment.</div>
+    <div class="trigger">Insight DC 14 during Scene 1 (window closes when Lucius arrives): he looks at the staircase twice in two minutes. He is managing the party while managing the arrival of someone he owes.</div>
+  </div>
+</div>
+</div>
+
+<!-- CASSIA -->
+<div id="cassia" class="tab-pane">
+<div class="card ally">
+  <div class="portrait-col">
+    <div class="portrait ag">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#080f08"/>
+        <rect x="28" y="58" width="44" height="42" rx="3" fill="#2a3a2a"/>
+        <path d="M30,55 Q50,40 70,55 L66,70 Q50,62 34,70 Z" fill="#1a2a1a"/>
+        <ellipse cx="50" cy="48" rx="14" ry="16" fill="#c0a080"/>
+        <path d="M42,20 Q44,10 46,14 Q48,5 50,12 Q52,4 54,10 Q56,16 58,8" stroke="#7a9a7a" stroke-width="1.5" fill="none" opacity="0.6"/>
+        <rect x="36" y="70" width="28" height="18" rx="2" fill="#4a3a18" opacity="0.7"/>
+      </svg>
+    </div>
+    <div class="badge ally">ALLY<br>Scenes 1 · 5</div>
+  </div>
+  <div>
+    <div class="npc-name ally">Augur Cassia Liviana</div>
+    <div class="npc-role">Fort Augur, plants doubt she cannot act on openly, breaks cover in Scene 5</div>
+    <div class="look">Pale as death, clutching a bloodstained cloth. Speaks once, quietly, toward the party rather than toward Corvinus. Her expression is not fear: it is the face of someone who has already made their own decision and is watching the party make theirs.<br><em>"She looks like someone who has been right about something terrible and cannot yet say so."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl">Objective</td><td class="val">Prevent the divine catastrophe that has haunted her dreams.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Keep the spear below ground or, failing that, keep it out of Corvinus' hands.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Cooperates publicly with Corvinus in the principia; plants private doubt in the party whenever he cannot see her. In Scene 5, when she has run out of options, she drops the performance entirely and acts openly. She has accepted the risk.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">Performed an augury about the party and knows they decide whether Rome burns, but not how.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">Mars aversus est. The god of war has turned his face from us.</div>
+      <span class="vc">Scene 1: opening, across the table</span>
+      <div class="vl">The augury was clear. What is sealed below is sealed for a reason. If you go down, go knowing that.</div>
+      <span class="vc">Scene 1: her one line, addressed to the party, not to Corvinus</span>
+      <div class="vl">Do not give it to him. He will use it. I have seen what that means.</div>
+      <span class="vc">Scene 5: arrives at a near-run, breaks cover completely</span>
+      <div class="vl">The bargain was broken the moment your Legate put a shovel in that ground. You didn't break it. You walked into the middle of someone else's debt.</div>
+      <span class="vc">Private word, if the party makes any opportunity to speak with her alone before session end</span>
+    </div>
+
+    <div class="section-hdr">SESSION STATE</div>
+    <table class="timeline">
+      <tr><th>Scene</th><th>Location / Action</th></tr>
+      <tr><td class="sc ag">S1</td><td>Seated left of Corvinus, cloth dark at the center. Speaks once, quietly, addressed to the party. Does not oppose Corvinus directly: she knows she cannot win that fight.</td></tr>
+      <tr><td class="sc">S1 (Lucius arrival)</td><td>Her expression when Lucius enters is worth noting: she has seen him before, and she does not look surprised.</td></tr>
+      <tr><td class="sc">S2–4</td><td>Not present. Above ground, waiting.</td></tr>
+      <tr><td class="sc ag">S5</td><td>Approaches from the east side entrance at a near-run, out of breath. If she reaches the party before Corvinus gets the spear, she speaks openly. If Corvinus sees her, he tells her flatly to return to the shrine. She does not move.</td></tr>
+    </table>
+  </div>
+</div>
+</div>
+
+<!-- VARRO -->
+<div id="varro" class="tab-pane">
+<div class="card ally">
+  <div class="portrait-col">
+    <div class="portrait ag">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#080a08"/>
+        <rect x="30" y="58" width="40" height="42" rx="2" fill="#3a4030"/>
+        <rect x="28" y="54" width="44" height="10" rx="1" fill="#4a5038"/>
+        <line x1="28" y1="57" x2="72" y2="57" stroke="#5a6048" stroke-width="1"/>
+        <line x1="28" y1="61" x2="72" y2="61" stroke="#5a6048" stroke-width="1"/>
+        <rect x="22" y="40" width="4" height="58" rx="1" fill="#7a5a20" opacity="0.5"/>
+        <rect x="44" y="48" width="12" height="12" fill="#b08050"/>
+        <ellipse cx="50" cy="38" rx="16" ry="17" fill="#b08050"/>
+        <rect x="30" y="24" width="40" height="5" rx="2" fill="#a02020"/>
+        <rect x="36" y="18" width="28" height="14" rx="2" fill="#5a5848"/>
+        <rect x="38" y="28" width="24" height="12" fill="#4a4838"/>
+        <rect x="68" y="58" width="5" height="22" rx="1" fill="#8a8060"/>
+        <rect x="66" y="56" width="9" height="4" rx="1" fill="#6a6040"/>
+      </svg>
+    </div>
+    <div class="badge ally">ALLY<br>Scenes 1 · 5</div>
+  </div>
+  <div>
+    <div class="npc-name ally">Centurion Titus Varro</div>
+    <div class="npc-role">Senior Centurion, skeptical of the timeline, not of the mission, the party's future confidant</div>
+    <div class="look">One hand on his gladius grip, looking like a man who is waiting for something to go wrong and has been waiting for several hours. Stands near the door throughout Scene 1. Corvinus does not press him to leave.<br><em>"A man who has already planned for this to go wrong."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl">Objective</td><td class="val">Keep his cohort alive and functional as command unravels.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Learn what the spear truly is before the Legate deploys it disastrously.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Places loyal soldiers between Corvinus and the party where he can. Stalls for time. Listens to every faction without committing to one.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">Heard a young legionary whisper "I understand him" during the worker's frenzy in Scene 4. Reassigned him quietly and told no one.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">We don't know what sealed it or who is on the other side of that seal. Sending men down without understanding what they're walking into is how we lose the men.</div>
+      <span class="vc">Scene 1: his one objection, overruled without anger</span>
+      <div class="vl">I'm going to need your account of what happened down there. The real one, not the version Corvinus gets. Take tonight. Write nothing down. Come find me in the morning.</div>
+      <span class="vc">Scene 5: his closing, delivered privately after Corvinus is out of earshot</span>
+      <div class="vl">Whatever you saw down there: you're still here. That's the thing that matters tonight.</div>
+      <span class="vc">Marking the level-up, after Corvinus and Lucius are gone</span>
+    </div>
+
+    <div class="section-hdr">SESSION STATE</div>
+    <table class="timeline">
+      <tr><th>Scene</th><th>Location / Action</th></tr>
+      <tr><td class="sc ag">S1</td><td>Standing near the principia door for the whole scene. Objects once to the timeline, is overruled, does not leave.</td></tr>
+      <tr><td class="sc">S2–4</td><td>Not present below ground. Aide meets the party at the shaft with torches and twine on his behalf.</td></tr>
+      <tr><td class="sc ag">S5</td><td>Finds the party privately after Corvinus is out of earshot. Holds a blank wax tablet as if it says something important. Does not say what he suspects or what he'll do with the information: the look he gives the spear (or the empty space where it was) says he's been thinking about this longer than tonight.</td></tr>
+    </table>
+  </div>
+</div>
+</div>
+
+<!-- LUCIUS -->
+<div id="lucius" class="tab-pane">
+<div class="card grey">
+  <div class="portrait-col">
+    <div class="portrait grey">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#1a0808"/>
+        <rect x="32" y="62" width="36" height="38" rx="3" fill="#6a1010"/>
+        <rect x="28" y="58" width="44" height="8" rx="2" fill="#7a1880"/>
+        <rect x="44" y="50" width="12" height="12" fill="#c09070"/>
+        <ellipse cx="50" cy="40" rx="18" ry="20" fill="#c09070"/>
+        <ellipse cx="50" cy="24" rx="17" ry="10" fill="#2a1808"/>
+        <circle cx="30" cy="72" r="3" fill="#c8a850"/>
+        <circle cx="70" cy="72" r="3" fill="#c8a850"/>
+        <circle cx="30" cy="79" r="2" fill="#c8a850"/>
+      </svg>
+    </div>
+    <div class="badge">WATCHER<br>Scene 1 · 5</div>
+  </div>
+  <div>
+    <div class="npc-name">Tribune Lucius Valerius Maximus</div>
+    <div class="npc-role">New arrival this session, observes, does not facilitate, the first sign someone in Rome is watching</div>
+    <div class="look">Late twenties, composed. Enters the principia without knocking, mid-briefing, carrying a sealed dispatch satchel with an imperial crest. Takes a chair at the edge of the room without being invited to sit. Does not introduce himself to the party. He watches.<br><em>"His presence visibly tightens Corvinus's posture."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl">Objective</td><td class="val">Observe the retrieval and report to Rome: not to facilitate it.</td></tr>
+      <tr><td class="lbl">Goal (this session)</td><td class="val">Determine whether Corvinus can be trusted with what's under the fort.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Arrives mid-briefing with a sealed dispatch. Hands it to Corvinus, waits while he reads, sits uninvited. Says nothing to the party. Remains in the fort through the party's descent and is present at Scene 5.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">Cassia has seen him before and does not look surprised when he enters. (Chapter 2 reveals he answers to Brutus, not the Senate honestly: do not surface this in Chapter 1.)</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">[Says nothing on arrival. Hands over the letter. Watches.]</div>
+      <span class="vc">Scene 1: his entrance</span>
+      <div class="vl">This is the Legate's command to give.</div>
+      <span class="vc">Scene 5: if asked directly for his opinion on the spear's disposition</span>
+      <div class="vl">[Silence. Watching the party's faces, then the spear, then the party again. Noting everything for a report that will reach Rome before the week is out.]</div>
+      <span class="vc">Default posture throughout Scene 5</span>
+    </div>
+
+    <div class="section-hdr">SESSION STATE</div>
+    <table class="timeline">
+      <tr><th>Scene</th><th>Location / Action</th></tr>
+      <tr><td class="sc">S1</td><td>Enters mid-briefing without knocking. Corvinus introduces him flatly if asked: "attached to the Legate's office by order of Rome." Nods, says nothing further. His arrival visibly tightens Corvinus.</td></tr>
+      <tr><td class="sc">S2–4</td><td>Remains in the fort during the descent. Not seen.</td></tr>
+      <tr><td class="sc">S5</td><td>Walks two steps behind Corvinus, hands clasped behind his back, expression attentive. Does not speak first. If forced to intervene in the refuse-outright branch: "Legate. Not tonight.": the one moment he acts, purely to prevent an embarrassing report.</td></tr>
+    </table>
+
+    <div class="section-hdr">TRIGGER RESPONSES</div>
+    <div class="trigger">Party asks who he is → Corvinus answers for him. Lucius nods, says nothing.</div>
+    <div class="trigger">Party refuses outright and Corvinus escalates to force → Lucius is the one who stops it, quietly.</div>
+    <div class="trigger">Any resolution branch in Scene 5 → he takes a note. He is filing something. Do not explain what.</div>
+  </div>
+</div>
+</div>
+
+<!-- THE WIGHT -->
+<div id="wight" class="tab-pane">
+<div class="card grey">
+  <div class="portrait-col">
+    <div class="portrait grey">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#0a0c10"/>
+        <rect x="28" y="55" width="44" height="45" rx="2" fill="#3a4a4a"/>
+        <path d="M30,52 Q50,38 70,52 L66,66 Q50,58 34,66 Z" fill="#2a3838"/>
+        <ellipse cx="50" cy="42" rx="15" ry="17" fill="#8a9890" opacity="0.85"/>
+        <circle cx="43" cy="40" r="2.5" fill="#a8e8e8"/>
+        <circle cx="57" cy="40" r="2.5" fill="#a8e8e8"/>
+        <rect x="46" y="68" width="8" height="10" fill="#c8a850" opacity="0.9"/>
+        <line x1="20" y1="20" x2="40" y2="45" stroke="#6a7a7a" stroke-width="1" opacity="0.4"/>
+        <line x1="80" y1="20" x2="60" y2="45" stroke="#6a7a7a" stroke-width="1" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="badge">GUARDIAN<br>Scene 3 (Altar Chamber)</div>
+  </div>
+  <div>
+    <div class="npc-name">The Wight: High Priest of the Binding</div>
+    <div class="npc-role">Three-century guardian, was human, chose to remain, not the enemy, the last functional part of the bargain</div>
+    <div class="look">Armored in Germanic plate that has not rusted. Eyes the color of old ice. Not the restless hunger of the walking dead: the settled weight of something that made a choice and is still keeping it. The OTHALAN contract token is pinned at his sternum.<br><em>"He does not rage. He does not hunger. He is resolute and tired, the way a soldier is after a very long watch."</em></div>
+
+    <div class="section-hdr">OGAS</div>
+    <table class="ogas">
+      <tr><td class="lbl">Objective</td><td class="val">Honor the three-century oath he chose. Keep the spear contained as long as he draws breath (or its equivalent).</td></tr>
+      <tr><td class="lbl">Goal (this scene)</td><td class="val">Prevent the spear leaving the altar: or, failing that, extract acknowledgment of whose debt it is.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Rises when the party is fully in the chamber. Speaks once before any violence. Fights only if the party insists on taking the spear; holds position and stops if they back away.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">He is not standard undead: he chose to remain after death as guardian (the same voluntary <em>seiðr</em> death as the preserved warrior in the Flooded Gallery). If he falls, the vault's containment weakens permanently.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE (Wight Dialogue Reference)</div>
+    <div class="voice">
+      <div class="vl">The bargain was broken. Not by you. But by your kind. I am still bound. You are not.</div>
+      <span class="vc">Opening, when the party enters fully: Ursula understands without a check; highest Wisdom character understands without knowing why</span>
+      <div class="vl">The one who ordered this. His debt is greater than yours. But you carry it now.</div>
+      <span class="vc">DC 14 Persuasion or Insight success: a transfer of responsibility, not forgiveness</span>
+      <div class="vl">Carry it carefully. What is inside it is older than Rome.</div>
+      <span class="vc">On defeat: he folds, sits cross-legged at the altar base, goes still. Shadows dissipate.</span>
+    </div>
+
+    <div class="section-hdr">STAT BLOCK (with escort)</div>
+    <div class="stat-block">
+      <div class="stat-name">Wight: CR 3, +1 Cult Fanatic (CR 2), +2 Shadows (CR 1/2 each)</div>
+      <div class="sl"><span>Adjusted XP:</span> 1,800 for 5 players: Hard, approaching Deadly at Level 3 with depleted resources.</div>
+      <div class="sl"><span>Dark Resolve:</span> regains 2 (1d4) HP/turn while any creature within 30 ft is Frightened. Cannot suppress this.</div>
+      <div class="sl"><span>Life Drain:</span> targets the spear-bearer preferentially. He is not trying to kill the party: he is trying to stop the spear leaving.</div>
+      <div class="sl note">Exit condition: party backs beyond 15 ft of the altar → he holds position, Shadows stop. This is always available and is the right call for a depleted party.</div>
+    </div>
+
+    <div class="section-hdr">TRIGGER RESPONSES</div>
+    <div class="trigger ag">Party backs away from the spear → he holds. Combat ends. Mission failure for Corvinus, but the party survives intact: a valid outcome.</div>
+    <div class="trigger">Party shows the contract scroll or OTHALAN token from earlier rooms → advantage on the DC 14 communication check.</div>
+    <div class="trigger">Wight defeated, party wiped: if the Cult Fanatic is still standing, he takes the spear to Corvinus himself.</div>
+  </div>
+</div>
+</div>
+
+<!-- MARIUS CODA -->
+<div id="marius" class="tab-pane">
+<div class="card ant">
+  <div class="portrait-col">
+    <div class="portrait ant">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#100808"/>
+        <rect x="28" y="56" width="44" height="44" rx="2" fill="#5a4030"/>
+        <ellipse cx="50" cy="38" rx="18" ry="19" fill="#9a7050"/>
+        <ellipse cx="50" cy="24" rx="12" ry="8" fill="#3a2818"/>
+        <ellipse cx="42" cy="36" rx="4" ry="3" fill="#e8e8e8"/>
+        <ellipse cx="58" cy="36" rx="4" ry="3" fill="#e8e8e8"/>
+        <rect x="0" y="0" width="100" height="100" fill="#8a1010" opacity="0.12"/>
+        <line x1="20" y1="70" x2="35" y2="58" stroke="#c0c0c0" stroke-width="3"/>
+        <line x1="80" y1="70" x2="65" y2="58" stroke="#c0c0c0" stroke-width="3"/>
+      </svg>
+    </div>
+    <div class="badge ant">POSSESSED<br>Scene 4 (Courtyard)</div>
+  </div>
+  <div>
+    <div class="npc-name ant">Marius Coda</div>
+    <div class="npc-role">Gallic stone-hauler, a reliable man until today, possessed, not evil, by proximity to the open shaft</div>
+    <div class="look">Shoulders like pillars, barefoot on the flagstones, eyes rolled back until only the whites show. Breath pours out of him in clouds despite the summer night. Each fist grips a gladius slick with fresh blood.<br><em>"He does not shout the words. He lets them fall like lit coals."</em></div>
+
+    <div class="section-hdr">OGAS (possession-driven, not personal)</div>
+    <table class="ogas">
+      <tr><td class="lbl ant">Objective</td><td class="val">The spear's compulsion, not his own: reach whoever carries the weapon.</td></tr>
+      <tr><td class="lbl">Goal</td><td class="val">Take the spear from the party or die trying.</td></tr>
+      <tr><td class="lbl">Agenda</td><td class="val">Attacks with two gladii, prioritising the spear-bearer above all else. If no one carries it, attacks the closest party member while screaming for it.</td></tr>
+      <tr><td class="lbl sec">Secret</td><td class="val">Not responsible for this. He was stationed nearest the excavation shaft for three days, the longest exposure of any worker, and the spear's aura simply won.</td></tr>
+    </table>
+
+    <div class="section-hdr">VOICE</div>
+    <div class="voice">
+      <div class="vl">The spear calls, the spear drinks, the spear wants a champion.</div>
+      <span class="vc">Opening line, courtyard</span>
+      <div class="vl">Do you feel it laughing? / Mars does not wait for cowards. / Give it to me and I will keep you safe. / We were promised rest if we bled enough.</div>
+      <span class="vc">Between attacks</span>
+      <div class="vl">Mars.</div>
+      <span class="vc">Last word, if killed: whispered like a confession</span>
+    </div>
+
+    <div class="section-hdr">STAT BLOCK</div>
+    <div class="stat-block">
+      <div class="stat-name ant">Marius Coda: Berserker, CR 2</div>
+      <div class="sl"><span>AC</span> 13 &nbsp;·&nbsp; <span>HP</span> 67 &nbsp;·&nbsp; <span>Speed</span> 30 ft</div>
+      <div class="sl">Two gladii attacks. Fully committed stance: weight on front foot, no guard on his left side (Perception DC 11 to read and call it: advantage on the first attack against that side).</div>
+      <div class="sl note">Two Cultists of Mars (CR 1/8) stand near him, not yet attacking, muttering "Mars aversus est." Do not have them attack unless directly threatened.</div>
+    </div>
+
+    <div class="section-hdr">RESOLUTION PATHS</div>
+    <div class="trigger">Kill him → standard combat. Morale in camp drops afterward; whispers about the party spread.</div>
+    <div class="trigger ag">Subdue him (Athletics DC 13 with two legionaries assisting) → collapses weeping, vomits dark bile, remembers nothing. Cassia can question him for visions later.</div>
+    <div class="trigger ag">Deny line of sight (move the spear 60 ft away or magical darkness) → he freezes, confused, then sobs: becomes a terrified witness.</div>
+    <div class="trigger">He breaks free (fails a grapple, sprints for the gate) → found dead of exposure two days later, both gladii snapped. Corvinus blames the party.</div>
+  </div>
+</div>
+</div>
+
+<!-- MINOR NPCS -->
+<div id="minor" class="tab-pane">
+<div class="section-hdr" style="margin-top:0">Minor NPCs: short entries, no full OGAS</div>
+
+<div class="minor-card">
+  <div class="minor-name">Sicus</div>
+  <div class="minor-role">First work crew member sent down three days ago: found alive in the Shield Hall</div>
+  <div class="minor-body">
+    Missing lorica, wound at the shoulder, stable but two days without water. Perception DC 11 finds his drag trail (someone concealed him, not an ambush); Medicine DC 9 confirms he's stable. Wakes with water or a healing effect within a round; otherwise DC 12 Medicine and two minutes.<br><br>
+    <strong>What he gives the party:</strong> the cultists arrived before the party did (advance knowledge of the mission); a lever exists in the final chamber and one already used it; presses the second OTHALAN bone token into a character's hand: grants advantage on the Wight communication check, stacking with the contract scroll.<br><br>
+    He cannot fight and will not enter the Runic Corridor if combat sounds come from ahead. If left to recover, he survives and can be found at the surface on return.
+  </div>
+</div>
+
+<div class="minor-card">
+  <div class="minor-name">Aelius Rufus</div>
+  <div class="minor-role">Young signifer, third contubernium: one of the three fallen legionaries in the courtyard</div>
+  <div class="minor-body">
+    Face-down, shallow gash across the back. DC 12 Medicine (action or bonus action) stabilizes him; failure means a second check next round or he dies. If saved, he survives and appears in Chapter 2 owing the party his life, and remembering what Marius said just before the killing started ("Give it to me and I will keep you safe," spoken directly to whoever held the spear).
+  </div>
+</div>
+
+<div class="minor-card">
+  <div class="minor-name">Titus Flavinus &amp; Gnaeus Peregrinus</div>
+  <div class="minor-role">Cultists of Mars: legionaries stationed near the excavation, exposed through the open shaft</div>
+  <div class="minor-body">
+    Titus stands near the shaft, blade drawn but not raised. Gnaeus stands at the courtyard's edge, hands clasped, eyes fixed on the shaft opening. Neither is a combatant unless directly threatened: they are the first evidence that the spear's corruption spreads through proximity, not just touch. If Marius dies, they gain advantage on saves against the spear's aura for 24 hours. If he's subdued, they snap out of their trance and become terrified witnesses. Both appear in Session 2 as witnesses with fragmented memories.
+  </div>
+</div>
+
+<div class="minor-card">
+  <div class="minor-name">Gaius Pullus &amp; Marcus Dexter</div>
+  <div class="minor-role">The two dead legionaries in the courtyard</div>
+  <div class="minor-body">
+    Gaius: throat wound. Marcus: blunt trauma to the skull. Both dead before the party surfaces. Purely atmospheric: no mechanics attached, but naming them grounds the cost of Scene 4 in something specific rather than abstract.
+  </div>
+</div>
+
+</div>
+
+</div><!-- #content -->
+
+<script>
+function show(id, btn) {
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>

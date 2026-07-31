@@ -1,0 +1,1035 @@
+---
+title: "Chapter 1: Blood and Omens"
+subtitle: "GM guide: Chapter 1"
+---
+
+*The campaign opens with a shared nightmare, a dead pack of camp dogs, and a Legate who wants an artifact retrieved and no questions asked. Beneath Fort Vindolanda a genuine treaty was broken the moment the first shovel hit the ground, and the guardian who has kept the peace for three centuries is not the monster the party expects.*
+
+**Level:** 3 → Advance to 4 at session end · **Players:** 5 (Iris, Julia Jana, Tanit, Rivia, Ursula) · **Time:** 3–4 hrs · **Type:** Branching dungeon crawl + RP
+
+---
+
+<div class="session-tree">
+
+<details open>
+<summary>📋 Session Quick-Reference: The Whole Session in One Page</summary>
+
+| | |
+|---|---|
+| **Central question** | Will you follow an order you don't understand, into a place that was sealed on purpose? |
+| **What must happen** | (1) The party has the shared dream and receives the mission from Corvinus. (2) The vault contains a guardian who speaks before he fights. Both happen regardless of what the party does. |
+| **Player goal** | Retrieve the spear, or decide it should stay where it is, and survive either choice. |
+| **Real stakes** | Who holds the spear entering Chapter 2: Corvinus, the party, or no one. Whether Marius Coda lives, dies, or vanishes. Whether the Wight's oath is honored or broken by force. |
+| **Session peak moment** | The Wight rises from behind the altar and speaks before any dice are rolled: *"The bargain was broken. Not by you. But by your kind. I am still bound. You are not."* |
+| **Closing image** | Corvinus's eyes on the spear a moment too long. Cassia in tears or in triumph. Varro's blank wax tablet, held like it says something important. Let it sit two seconds before cutting. |
+
+**NPCs active this session:**
+
+| NPC | Location at session start | Wants | Fears | Lying about |
+|---|---|---|---|---|
+| Legate Corvinus | Principia, hands flat on the map | Control the spear before Rome or the Senate learns of it | Losing the discovery to a rival or superior before he can claim it | Already sent a private rider to Rome; the party is not the first team he sent down |
+| Augur Cassia Liviana | Principia, seated left of Corvinus | Keep the spear below ground, or out of Corvinus's hands | The catastrophe her augury foretold | She has already seen the party's role and knows they decide whether Rome burns: not how |
+| Centurion Varro | Principia, near the door | Keep his cohort alive and functional | Losing men to something he doesn't understand | Suspects a legionary understood the spear's voice during Scene 4; reassigned him quietly |
+| Tribune Lucius Valerius Maximus | En route, arrives mid-briefing | Observe and report to Rome, not facilitate | Being seen to have a stake in the outcome | (Do not surface this session) He answers to Senator Brutus, not the Senate honestly |
+| The Wight | Altar Chamber, behind the altar | Honor the 300-year oath; keep the spear contained | Failing the oath after three centuries of keeping it | Nothing: he is entirely honest once he speaks |
+| Marius Coda | Off-screen until Scene 4 (excavation site, above ground) | The spear's compulsion, not his own: reach the bearer | Nothing; he has no agency left | He believes he is protecting the party |
+
+**Handout delivery order:**
+
+| # | Prop name | What it is | Trigger moment | Scene |
+|---|---|---|---|---|
+| 3 | Omens Observed | Index card, six bad omens | Corvinus says "we lost four men and the dogs are dead" | 0 |
+| 1 | Legate's Orders | Latin/English wax tablet order | Corvinus sets the wax tablet down without picking it up again | 1 |
+| 12 | OTHALAN Bone Token | Carved bone tile | Investigation DC 15 in the Hidden Alcove | 2 (left branch) |
+| 15–18 | Tribal Shield Visions (×4) | 3–5 second involuntary memory | First touch of each shield type in the Shield Hall | 2 (left branch) |
+| 2 | Vault Inscription | Rune translation, altar stone | Party crosses the Altar Chamber threshold | 3 |
+
+</details>
+
+---
+
+<details>
+<summary>📁 The Premise: Where the Campaign Begins</summary>
+
+**Campaign position:** Session 1 of 5. This is the hook. Personal stakes only: the escalation to Fort-level, Regional, Imperial, and Divine stakes begins in Sessions 2 through 5. Everything here is designed to feel contained and survivable, while planting threads that pay off across the whole campaign.
+
+**What the party knows walking in:** They are newly assembled into a special *vexillatio extraordinaria* at Fort Vindolanda. Three nights ago, everyone had the same dream. By dawn, every dog in the fort was dead. That's it: that's all they know before Scene 1.
+
+**What they don't know yet:**
+
+- The vault was sealed by a genuine treaty between Rome and four Germanic tribes, not by accident or superstition
+- Corvinus has already sent other men down; four are dead
+- A cult cell reached the altar chamber before the party did and is still down there
+- The guardian at the altar is not a monster: he is the last living part of a bargain Rome just broke
+- Tribune Lucius, arriving mid-session, answers to a hidden master (do not reveal this: it belongs to Chapter 2)
+
+**Open threads seeded this session:**
+
+- Who is the OTHALAN name, and why does Corvinus recognize it if shown the contract scroll?
+- What does Cassia's augury actually say about the party's role?
+- Why did Titus Sempronius Caecilius's death two years ago matter to this vault?
+- Who is Tribune Lucius really working for?
+
+</details>
+
+---
+
+<details>
+<summary>📁 Current Player State</summary>
+
+**Physical location:** Fort Vindolanda, pre-dawn to full night. Session runs from the shared dream through the courtyard confrontation the same night.
+
+**Party condition:** Full resources: this is the campaign's opening session. No prior injuries, no corruption, no reputation with any NPC yet. Everything here is a first impression.
+
+**What they want right now:** To understand why they were chosen, and what exactly they're being sent to retrieve.
+
+**Pressure on them:** A Legate who wants results, not questions. A vault that has been sealed for three centuries for a documented reason. A guardian who is honest about the fact that the party's own side broke the rules first.
+
+**Relationships under tension (day one):**
+
+- Corvinus: unknown authority figure, immediately demanding and specific
+- Cassia: the first person to suggest the mission itself might be the mistake
+- Varro: quietly skeptical, protective, waiting to see what kind of soldiers the party are
+- Lucius: an unexplained watcher whose presence visibly unsettles Corvinus
+
+</details>
+
+---
+
+<details>
+<summary>📁 The Truth Behind the Session</summary>
+
+**What is actually going on:**
+
+Three Roman generations ago, Rome and a coalition of four Germanic tribes (Marcomanni, Cherusci, Suebi, and a ninth unnamed group) negotiated a genuine, equally-authored treaty: the tribes would seal a captured divine weapon (the spear that killed a son of Mars), along with a willing guardian, beneath what would become Fort Vindolanda. In exchange, Rome agreed never to dig within fifty feet of the site. The treaty was renewed every three-hundred-year cycle through a ceremony performed by a rotating chain of augurs who understood the bargain, most recently Titus Sempronius Caecilius, Cassia's predecessor. He died of fever in AD 173 without passing on his full understanding to Cassia, and the renewal cycle lapsed. When Corvinus's excavation crew broke ground, the treaty was already in a vulnerable, unrenewed state; the shovel finished what neglect started. The dogs died. The omens turned. The vault began waking up.
+
+A small cult cell (one Fanatic and support) learned of the excavation independently and descended ahead of the party, reaching the altar chamber first. The Fanatic is still there, mid-ritual, when the party arrives.
+
+Corvinus knows none of this history. He knows only that something valuable was found and that he wants it under his personal control before anyone in Rome outranks his claim to it. He has already sent a rider to his patron and already lost four men retrieving nothing. Tribune Lucius's unannounced arrival this session is the first sign that someone in Rome is watching closely enough to send a representative, though his true allegiance (Senator Brutus, not the Senate honestly) does not surface until Chapter 2.
+
+**NPC schedules: what happens if players do nothing:**
+
+- Corvinus: Assigns the mission regardless of hesitation. Escalates pressure (see Refusal Contingency) if refused outright.
+- The Wight: Remains at his post. Does not seek out the party. Speaks only when they reach him.
+- The Cult Fanatic: Continues his ward-breaking ritual at the altar until interrupted by noise from the Runic Corridor.
+- Marius Coda: Spends the whole session exposed to the open shaft above ground. By the time the party surfaces, the exposure has done its work regardless of anything they did below.
+
+**What changes if players do nothing:**
+
+If the party refuses the mission outright and it holds, Corvinus sends another unit: it does not return, and the stakes become undeniable before the party is re-ordered down anyway. The vault's core content, the Wight, and Marius Coda's Scene 4 encounter cannot be skipped: they are baked into the world's timeline, not contingent on party action.
+
+**The session's central tension:**
+
+Roman military obedience versus a debt that predates Rome's presence at all. The party is being sent to finish breaking something their own commander already broke by accident. Every choice in the vault, which branch, whether to fight the Wight, whether to hand over the spear, is a chance to notice this and choose differently than blind obedience.
+
+**Escalating stakes (within this session):**
+
+- **Personal:** Whoever touches or attunes to the spear begins the corruption track immediately.
+- **Fort-level:** Marius Coda's frenzy in the courtyard is the first visible sign the spear's corruption spreads through proximity, not just touch: two more legionaries are affected without ever touching it.
+- **Institutional:** Corvinus's demand for the spear in Scene 5 previews the whole campaign's central conflict: who is allowed to hold power this dangerous.
+
+**Pre-session secrets: ask privately before play:**
+
+- *For Ursula Günther (Barbarian):* "Ursula is standing in a vault full of her people's war-gear, sent here by a Roman legate to retrieve a Germanic war-god's spear. Her mother's tribe is on these walls. Does she know what this vault is? And if she does: what is she not saying?"
+- *For whoever the DM expects to hold the spear longest:* No secret note needed yet: the corruption track begins visibly this session and private notes about it begin next session.
+
+</details>
+
+---
+
+<details>
+<summary>📁 Session Map: All Scenes</summary>
+
+| # | Type | Scene name | Player objective | GM purpose | Transition out |
+|---|---|---|---|---|---|
+| 0–1 | RP | Cold Open & The Legate's Briefing | Understand the mission and who's in the room | Establish stakes, plant Cassia's and Varro's doubts, introduce Lucius as an unexplained watcher | Party descends the shaft |
+| 2a | Exploration | The Descent | Navigate the Shaft, Entrance Passage, and choose a branch at the T-junction | Establish the vault's texture and the warning left by a previous crew member | Party commits to left or right branch |
+| 2b | Exploration/RP | Left Branch: Shield Hall & Hidden Alcove | Learn the vault's true history through the shields and Sicus | Deliver three of the four independent clues to the Runic Corridor's OTHALAN puzzle; find Sicus and the second contract token | Party proceeds to the Binding Chamber |
+| 2c | Combat/Exploration | Right Branch: Flooded Gallery & Bone Chamber | Cross the water without waking the Shadows; survive the Bone Chamber | Deliver the *seiðr* death lore and the ritual-offering evidence; test the party at Hard difficulty before the climax | Party proceeds to the Binding Chamber |
+| 2d | Puzzle | Binding Chamber & Runic Corridor | Solve the chain sequence; cross the rune floor | Deliver the contract scroll (binding proof); apply the compounding lightning cost for ignored clues | Party reaches the Altar Chamber |
+| 3 | Combat/RP | The Altar Chamber | Decide whether to take the spear, and how | Force the corruption mechanic into play; give the Wight his one chance to speak before violence | Party surfaces with or without the spear |
+| 4 | Combat | Return to the Surface | Resolve Marius Coda without unnecessary killing | Show the spear's corruption spreading through proximity, not just touch | Courtyard settles; principia door opens |
+| 5 | RP/Decision | The Reckoning | Decide who holds the spear entering Chapter 2 | Force an irreversible choice; close on Varro's private word | Session ends; Level 4 |
+
+**Maps: load these in MapTool before the session:**
+
+| Scene | Map file | Path |
+|---|---|---|
+| Scene 0–1 (principia) | `saalburg_plan.jpg` | reference only, no battle grid |
+| Scene 2 (shaft head) | `DarkTempleEntrancePublic.jpg` | `Maptool/maps/campaign/S1_Blood_and_Omens/` |
+| Scene 2 (all vault rooms) | `DungeonVol2Public.jpg` | same: reuse and reposition tokens; describe the T-junction verbally, sketch it on paper |
+| Scene 2c (Bone Chamber) | `vault_s1_bone_chamber.html` (+ .jpg) | same |
+| Scene 3 (Altar Chamber) | `vault_s1_altar_chamber.html` (+ .jpg) | same |
+| Scene 4 (Courtyard) | `vault_s1_courtyard.html` (+ .jpg) | same |
+
+*No playable fort-interior battlemap exists for the principia. `saalburg_plan.jpg` is an archaeological floor plan: DM reference only.*
+
+**Player tokens: `Maptool/tokens/players/`:**
+
+| File | Character | Class |
+|---|---|---|
+| `Iris.rptok` | Iris | Druid (Circle of Stars) |
+| `Julia_Jana.rptok` | Julia Jana | Cleric (Twilight) |
+| `Tanit_bint_Abdmelqart.rptok` | Tanit bint Abdmelqart | Bard (Eloquence) |
+| `Rivia_Calida_Mendera.rptok` | Rivia Calida Mendera | Artificer (Armorer) |
+| `Ursula_Günther.rptok` | Ursula Günther | Barbarian (Berserker) |
+
+**NPC/creature tokens: `Maptool/tokens/npcs/`:**
+
+| File | Scene | Who |
+|---|---|---|
+| `Legate_Corvinus.rptok` | 1, 5 | Legate Corvinus |
+| `Augur_Cassia.rptok` | 1, 5 | Cassia Liviana |
+| `Centurion_Varro.rptok` | 1, 5 | Centurion Varro |
+| `Tribune_Lucius.rptok` | 1, 5 | Tribune Lucius: enters partway through Scene 1 |
+| `Guard.rptok` | 2b (Shield Hall) | Sicus, labeled "Soldier" |
+| `Skeleton.rptok` | 2a (Entrance Passage) | Optional wandering hazard, ×2 |
+| `Ghoul.rptok` | 2c (Bone Chamber) | ×2: one ceiling, one floor |
+| `Ghast.rptok` | 2c (Bone Chamber) | ×1: behind the stone benches |
+| `Wight.rptok` | 3 (Altar Chamber) | The guardian |
+| `Shadow.rptok` | 2c and 3 | Flooded Gallery (×4, optional) and Altar Chamber (×2) |
+| `Berserker.rptok` | 4 (Courtyard) | Marius Coda |
+| `Cultist_of_Mars.rptok` | 4 (Courtyard) | Titus Flavinus, Gnaeus Peregrinus |
+| `Legionary_(Milites).rptok` | 4 (Courtyard) | Alarmed legionaries, arrive round 3, ×4 |
+| `Guard.rptok` | 4 (Courtyard) | Gate guards, arrive round 5, ×2 |
+
+**Pacing:** Scene 0–1 20–30 min · Scene 2a 15–20 min · Scene 2b/2c 45–60 min (choose one first, the other only if time allows or the party backtracks) · Scene 2d 20–30 min · Scene 3 30–45 min (kinetic peak) · Scene 4 20 min · Scene 5 20–30 min (emotional peak). If time is short, the left branch (Shield Hall) can be compressed to Sicus and the Hidden Alcove only: the vision handouts are optional texture, not required content.
+
+**The through-line:** "You were ordered to finish breaking something your own side broke first. What do you do when you understand that, and the guardian in front of you is telling the truth?"
+
+**Guy Sclanders structure check:**
+- Scene 0 hooks immediately (shared nightmare, dead dogs, no preamble)
+- Scene 2 escalates through genuine danger (Shadows, Ghouls, Ghast) while feeding the mystery in parallel
+- Scene 3 is the pressure-cooker peak: the guardian who is right, a spear that is already working on whoever touches it, a fight that has a built-in mercy exit
+- Scene 4–5 resolve the session's central tension and open Chapter 2's political question
+
+**Convergence:** Both Scene 2 branches (left and right) lead to the same Binding Chamber regardless of order or completeness. What the party carries into the Runic Corridor and Altar Chamber determines their leverage: not whether they can proceed. Never force a return trip for a missed clue; three independent routes exist to every mechanically important discovery.
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 0–1: Cold Open &amp; The Legate's Briefing (RP)</summary>
+
+*Three nights ago, everyone had the same dream. Now: the principia, thick with incense and something worse underneath it.*
+
+**Players know:** Nothing yet: this is the opening of the campaign · **Players don't know:** The vault was sealed by treaty; Corvinus has already lost men; Lucius's true allegiance
+
+| | |
+|---|---|
+| **Purpose** | Hook immediately with visceral horror; establish the mission's moral ambiguity before any dice are rolled |
+| **Player objective** | Understand what's being asked of them and who in the room can be trusted |
+| **Key reveal** | The mission has no clean answer: Cassia doubts it, Varro doubts the timeline, Corvinus wants results regardless |
+| **Key mechanic** | None mechanical this scene: pure roleplay and tone-setting. Insight DC 14 (temporal, see below) is the only check. |
+| **Beat 1** | The shared dream: blood underfoot, a glowing spear, the word "MEUM." Camp dogs dead by dawn. |
+| **Beat 2: THE MOMENT** | Corvinus: *"You're going down there. You're bringing it up. You're not asking questions."* The party has been assigned a mission with no room to negotiate its terms, only whether to accept it. |
+| **Beat 3** | Lucius arrives unannounced mid-briefing. His presence visibly tightens Corvinus. Cassia is not surprised to see him. |
+| **XP / reward** | Not applicable: this is pure narrative setup. |
+| **If they skip** | Cannot be skipped: this is the campaign's opening scene. |
+| **Three clues** | Not applicable this scene: the mystery proper begins in Scene 2. |
+| **Handouts** | Handout 3 (Omens Observed), when Corvinus says "we lost four men and the dogs are dead." Handout 1 (Legate's Orders), when he sets the wax tablet down. |
+
+<details>
+<summary>📄 Read Aloud</summary>
+
+> *Three nights ago. You dream. All of you, the same dream. You stand in darkness, ankle-deep in blood that doesn't ripple. In the distance, a spear stands upright in the earth, glowing like a dying star. When you try to look away, you can't. When you try to wake, you can't.*
+>
+> *A voice, old, vast, furious, speaks a single word in a language you shouldn't understand, but do:*
+>
+> **"MEUM." (MINE.)**
+>
+> *You wake. Your tent reeks of copper and smoke. Outside, the camp dogs are howling. By dawn, every dog in Fort Vindolanda is dead.*
+>
+> *Now. The principia. The Legate's headquarters. The air is thick with incense, but underneath it, you smell rot. Around the table: Legate Corvinus, eyes bloodshot and intense. Augur Cassia, pale as death, clutching a bloodstained cloth. Centurion Varro, one hand on his gladius, looking like he hasn't slept.*
+>
+> *The Legate speaks. His voice is iron scraping stone:*
+>
+> *"You've been chosen. Not for honor. For survival. Something is beneath this fort. Something that killed sixty dogs in one night. Something that made the augurs vomit blood during morning sacrifice. We've lost four men already: two to madness, two to each other's blades."*
+>
+> *He unrolls a rough sketch of underground ruins.*
+>
+> *"You're going down there. You're bringing it up. You're not asking questions."*
+>
+> *Across the table, the Augur whispers: "Mars aversus est. The god of war has turned his face from us."*
+
+*(DM: do not answer questions after the dream sequence. Cut directly into the principia scene: do not run the dream flash and the briefing as two separate scenes.)*
+
+</details>
+
+<details>
+<summary>📄 Character-Specific Knowledge</summary>
+
+| Trigger | Threshold | What they notice / know / feel |
+|---|---|---|
+| **Insight** | DC 14 active, window closes when Lucius arrives | Corvinus is afraid of something specific, not just ambitious. He looks at the staircase twice in two minutes, managing the party while managing the expected arrival of someone he owes. 5-above: this is not about the spear's power, it's about what the spear represents to a man with a debt. |
+| **Passive Perception** | ≥ 11 | Cassia's cloth is dark at the center: old blood, kept deliberately, not cleaned. |
+| **Class: Barbarian (Ursula)** | automatic | Nothing yet: her recognition of the vault's contents begins in Scene 2, not here. |
+
+</details>
+
+<details>
+<summary>📄 NPC Appearance &amp; Presence</summary>
+
+**Legate Corvinus**
+- **Look:** Fifties. Commanding frame, iron-grey. Eyes bloodshot and specific.
+- **Posture:** Both hands flat on the map. Counts the party like tools before a job.
+- **First impression line:** *"He looks at each of you in turn, the way a man counts his tools before a job."*
+
+**Augur Cassia Liviana**
+- **Look:** Pale as death. A bloodstained cloth held loosely in her hands.
+- **Posture:** Seated left of Corvinus. Speaks once, quietly, toward the party rather than toward him.
+- **First impression line:** *"Her expression is not fear: it's the face of someone who has already made their own decision and is watching the party make theirs."*
+
+**Centurion Varro**
+- **Look:** One hand resting on his gladius grip. Looks like a man who has been waiting for something to go wrong for several hours.
+- **First impression line:** *"A man who has already planned for this to go wrong."*
+
+**Tribune Lucius Valerius Maximus**
+- **Look:** Late twenties, composed. Enters without knocking, carrying a sealed dispatch satchel with an imperial crest.
+- **Posture:** Hands the letter to Corvinus, waits, takes a chair uninvited. Does not introduce himself.
+- **First impression line:** *"His presence visibly tightens Corvinus's posture."*
+
+</details>
+
+<details>
+<summary>📄 The Briefing: What Corvinus Says</summary>
+
+- Three days ago a work crew found ancient ruins beneath the fort while digging a well
+- They unearthed an iron spear covered in strange runes
+- That night, all the camp dogs died
+- The next day, the augurs found corrupted omens: black livers, reversed bird flights
+- One worker touched the spear and went mad, killing two companions before being subdued
+- Corvinus wants the party to descend, secure the artifact, and bring it to him
+
+**How to run Cassia:** She does not interrupt Corvinus or oppose him directly: she cannot win that fight and knows it. One line, addressed to the party rather than him: *"The augury was clear. What is sealed below is sealed for a reason. If you go down, go knowing that."* Then she stops. Corvinus does not respond because it was not addressed to him.
+
+**How to run Varro:** He does not suggest destroying the spear: that would require knowing what it is. His contribution is skepticism about the timeline: *"We don't know what sealed it or who is on the other side of that seal. Sending men down without understanding what they're walking into is how we lose the men."* Corvinus: "Noted. Dismissed." Varro does not leave; Corvinus does not press it.
+
+**How to run Lucius:** He watches. If asked who he is, Corvinus answers flatly: "Tribune Lucius Valerius Maximus, attached to the Legate's office by order of Rome." Lucius nods, says nothing. He remains in the fort during the descent and is present at Scene 5.
+
+</details>
+
+<details>
+<summary>📄 Refusal Contingency</summary>
+
+| Party action | Legate's response | Consequence |
+|---|---|---|
+| **Polite refusal** | Doubles the pay offer. If still refused, assigns another unit: the party is confined to quarters while it goes down. The unit doesn't come back. | The party is re-ordered to complete the mission once the stakes are undeniable. |
+| **Citing the augur's warnings** | Has Cassia removed from the room. He's heard enough about omens. Gives the party one hour to reconsider. | Cassia finds them during that hour and pleads for the spear to be destroyed once found. |
+| **Outright defiance** | Invokes military discipline, orders are orders. DC 18 Persuasion to make a compelling case, which requires evidence they don't have yet. | Below DC 18: sends them with a Centurion escort (Varro) "as motivation"; he privately tells them he'd go too. At DC 18: backs down, gives 24 hours. 5-above: assigns them as lead investigative unit, unspoken respect. |
+
+</details>
+
+<details>
+<summary>✅ Check on Basics</summary>
+
+```
+□ Dream sequence delivered slowly, with dread: do not rush "MEUM."
+□ Cut directly from dream to principia: no separate Scene 0 pacing
+□ Cassia's one line memorized, addressed to the party not Corvinus
+□ Varro's objection memorized, overruled without anger
+□ Handout 3 trigger: "we lost four men and the dogs are dead"
+□ Handout 1 trigger: wax tablet set down, not picked back up
+□ Lucius's entrance: no introduction, watches, sits uninvited
+□ Insight DC 14 window: fires only before Lucius arrives
+□ Transition: party descends the shaft
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 2a: The Descent (Exploration)</summary>
+
+*Corvinus's aide meets the party at the shaft with a canvas satchel (torches, tinderbox, knotted twine) and no farewell.*
+
+**Players know:** They are retrieving something dangerous · **Players don't know:** The vault's true history; that a previous crew member left a deliberate warning
+
+| | |
+|---|---|
+| **Purpose** | Establish the vault's texture and the sense that something deliberate, not accidental, sealed this place |
+| **Player objective** | Descend safely, read the environment, choose a branch at the T-junction |
+| **Key reveal** | A previous work crew member left a warning and walked away rather than continue |
+| **Key mechanic** | Survival DC 11 (shaft draft); Perception DC 10 passive / Investigation DC 12 active (Entrance Passage warning) |
+| **Beat 1** | The Shaft: unnatural downward draft, a rope ladder, the smell of old metal and long-standing water |
+| **Beat 2, THE MOMENT** | The NOLITE scratch-mark at the shaft's base: a warning, not a puzzle, left by someone who chose to stop |
+| **Beat 3** | The T-junction: sketch it on paper, ask which branch the party takes first |
+| **XP / reward** | Not tracked: milestone advancement |
+| **If they skip** | Cannot be skipped: this is the only way into the vault |
+| **Three clues** | ① Survival DC 11 (shaft draft = two chambers, deliberate sealed storage) · ② Perception DC 10 passive (pick points back toward the shaft) · ③ Investigation DC 12 active (same pick made the warning scratches) |
+| **Handouts** | None |
+
+<details>
+<summary>📄 Read Aloud</summary>
+
+> *The hole is perhaps six feet wide: big enough for two men abreast if they don't mind touching. The Romans who dug it used short-handled picks; you can see the tool marks in the clay, getting more careful as they got deeper, as if the workers began to feel something wrong. A rope ladder, poorly anchored. Below: darkness, and a smell like old metal and earth that has been wet for a very long time.*
+>
+> *At the bottom of the ladder, scratched into the clay wall at knee height: seven scratches in a vertical line. Then one diagonal line through all seven. Beside it, a single word in Latin: NOLITE. (Do not.)*
+>
+> *The passage runs straight for forty feet, cut through earth reinforced with stone slabs: Roman at the top, Germanic at the bottom. Fifteen feet in, a Roman pick lies abandoned on the floor. It is not rusted. The handle is broken, not decayed. The head is pointed in the direction you came from.*
+
+*(Passive Perception ≥ 10: the pick points back toward the shaft: whoever dropped it was retreating, not working.)*
+
+</details>
+
+<details>
+<summary>📄 Character-Specific Knowledge</summary>
+
+| Trigger | Threshold | What they notice / know / feel |
+|---|---|---|
+| **Survival** | DC 11 active (reading the draft before descending) | The draft pulses slowly: a space below with more than one chamber. A cedar smell beneath the cold mineral note means deliberate sealed storage, not collapse. |
+| **Investigation** | DC 12 active | The abandoned pick's wear pattern matches the warning scratches: the same person carved the message deliberately, then left the tool as evidence they'd been there and chosen this. |
+| **History: Librarius** | DC 14 active | NOLITE is the archaic imperative, a formal order, not a personal plea. The countdown uses Roman numerical record form: a deadline was violated. |
+| **Religion: Haruspex** | DC 15 active | Seven is the number of the Fates. One line through all seven means all threads severed simultaneously, a seven-fold oath broken. |
+| **Background: Soldier** | automatic | This is a rotation countdown, kept by someone who was supposed to be here and stopped counting. He didn't complete his duty. He also didn't report it. He simply left. |
+
+</details>
+
+<details>
+<summary>✅ Check on Basics</summary>
+
+```
+□ Torch-lean detail delivered as atmosphere, not mechanics: no effect, just wrong
+□ NOLITE warning is not a puzzle: resist the urge to make players "solve" it
+□ T-junction sketched on paper at the table before asking for a branch choice
+□ Both branches converge later: don't let party feel a "wrong" choice exists
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 2b: Left Branch: The Shield Hall &amp; Hidden Alcove (Exploration/RP)</summary>
+
+*Dozens, maybe a hundred, shields hung edge to edge so the walls resemble a silent legion.*
+
+**Players know:** Something ancient is down here · **Players don't know:** The shields prove a coalition of four tribes offered to Mars at this exact site; the vault's true binding terms
+
+| | |
+|---|---|
+| **Purpose** | Deliver the vault's deep history through environment, not exposition. No combat: the shields watch. |
+| **Player objective** | Learn what this place was, find Sicus, decide whether to search the alcove |
+| **Key reveal** | This is Rome's crime as much as it is a Germanic sacred site: the shields belong to peoples Rome has since destroyed |
+| **Key mechanic** | History DC 13/15, Religion DC 14, Athletics DC 12 (shield lift), Investigation DC 15 (hidden alcove) |
+| **Beat 1** | The shields, arranged in tribal hierarchy with Mars's wolf highest |
+| **Beat 2: THE MOMENT** | Sicus wakes and speaks: cultists came down before the party, and a lever exists ahead |
+| **Beat 3** | The Hidden Alcove: the wax tablet's obliterated warning, and half of the OTHALAN contract pair |
+| **XP / reward** | Not tracked: milestone advancement |
+| **If they skip** | Party still has two other independent routes to the Runic Corridor's answer (bone token, passive Religion) |
+| **Three clues** | ① History DC 13 (shield arrangement = coalition hierarchy) · ② Athletics DC 12 (shields decommissioned, not spoils) · ③ Investigation DC 15 (hidden alcove reveals the contract token and wax tablet) |
+| **Handouts** | Handout 12 (OTHALAN token), Investigation DC 15 success. Handouts 15–18 (tribal visions), first touch of each shield type. |
+
+<details>
+<summary>📄 Read Aloud</summary>
+
+> *The ladder deposits you on damp earth that exhales cold air with every breath you take. Your torchlight rolls down the length of the chamber and vanishes into a dark archway thirty feet away.*
+>
+> *Between you and that archway stand shields: dozens, maybe a hundred, hung edge to edge so that the walls resemble a silent legion. Wolf heads worked in iron, boars in bronze, a hand with three fingers raised, a serpent coiled to strike. None are Roman. All are angled as if waiting to be seized.*
+>
+> *The air smells of leather and rain that never dries. At the far end of the hall the arch gapes, swallowing light, inviting you onward whether you wish it or not.*
+
+*(Passive History ≥ 13: at least four distinct Germanic tribes, none of which coexisted in the same region: these shields were collected here, not stored by one people.)*
+
+*(Passive Religion ≥ 14: this is a trophy hall, but not a Roman kind. Weapons left in a sacred place belong to the war-god. This room is an offering.)*
+
+</details>
+
+<details>
+<summary>📄 Character-Specific Knowledge</summary>
+
+| Trigger | Threshold | What they notice / know / feel |
+|---|---|---|
+| **History** | DC 13 passive / DC 15 passive (higher bar) | Four tribes, none coexisting in the same region (13). Named specifically: Marcomanni, Cherusci (15): these were not small regional groups. |
+| **Religion** | DC 14 passive | Germanic trophy tradition: an active offering site, not historical. Someone has been here recently. |
+| **Perception** | DC 11 passive | The torch flame leans consistently toward the far archway: directional, not random. |
+| **Nature** | DC 12 passive | The underground smell is wrong for dry stone: bog water seeping through limestone. This floor has not been dry for a long time. (Pays off in Session 4: marsh gas, not volcanic fumes.) |
+| **Athletics** | DC 12 active (lifting a shield to test combat state) | The grip has been cut from the inside: deliberately decommissioned, not battle damage. At least a quarter of the shields share this. |
+| **Investigation** | DC 13 active (noting the arrangement as a systematic record) | The shields read as a parade order: most experienced warriors first, secondary allies next. A coalition existed, centered here, under one shared authority. |
+| **Role: Explorator** | automatic | Boar = Marcomanni, three-fingered hand = pre-Roman Cherusci, serpent = Suebi. The wolf at the highest point is Mars's own symbol; the tribes offered to Mars, not to any chief. |
+| **Role: Librarius** | automatic | The arrangement is catalogued in descending order by contribution (37/22/19/9), a clerical record, not trophies. The shields were registered offerings. |
+| **Class: Barbarian (Ursula)** | automatic, no check | She reads Elder Futhark without a check and identifies every tribal symbol on sight. The boar is her tribe, the Marcomanni, her mother's people. See her private note below. |
+
+</details>
+
+<details>
+<summary>📄 NPC: Sicus (one of the lost men)</summary>
+
+**Look:** Half-covered by a tipped stone bench. Missing lorica: traded or removed to cover a shoulder wound, now dark and dried. Breathing slow.
+
+**Finding him:** Perception DC 11 (passive) finds his drag trail, someone concealed him, not an ambush. Medicine DC 9 (passive) confirms he's stable, not dying; two days without water is the problem. A healing potion/spell brings him to 1 HP and consciousness within a round; otherwise DC 12 Medicine plus water revives him in two minutes.
+
+**What he says:**
+
+> *"They came down before you. Three of them. Red cloaks, oil lamps. Didn't see me: I had already hidden. I heard them go deeper. Then one came back alone. Short man, shaved head. He pulled something on the wall near the last chamber, a lever. Heard it grind. He left by the passage on the left."*
+
+**What he gives the party:** confirmation that the cultists arrived before the party (advance knowledge of this mission existed); a lever exists in the final chamber and has already been pulled; presses the second OTHALAN bone token into a character's hand: grants advantage on the Wight communication check in the Altar Chamber, stacking with the contract scroll.
+
+**DM note:** He cannot fight and will not enter the Runic Corridor if combat sounds come from ahead. If left to recover in the Shield Hall, he survives the session and can be found at the surface on return.
+
+</details>
+
+<details>
+<summary>📄 NPC Sidebar: Ursula Günther (read before the session)</summary>
+
+She reads Elder Futhark without a check. She identifies every tribal symbol on sight: no History or Religion rolls needed.
+
+The boar is her tribe. The Marcomanni. Her mother led them. Her mother's name was also Ursula Günther. Rome could not beat her in the field, so they tricked her, shipped her to Rome, and made her die in the Colosseum for a crowd. Ursula found out from a trader months later.
+
+She joined the legions to destroy them from within. Everyone in this vault believes she is a not-very-bright Germanic auxiliary who does what she is told. Around Romans she speaks broken Latin: wide eyes, helpful smile. She understands everything. She has been listening for years.
+
+When she touches the boar-shield and receives Handout 15, she is getting a vision from a Marcomanni warrior who watched his sons taken to a Roman arena. She has lived this story from the other side.
+
+**Do not tell her how to react. Give her the handout. Wait.** Ask her player privately before play: *"Ursula is standing in a vault full of her people's war-gear, sent here by a Roman legate to retrieve a Germanic war-god's spear. Her mother's tribe is on these walls. Does she know what this vault is? And if she does: what is she not saying?"*
+
+</details>
+
+<details>
+<summary>📄 The Hidden Alcove</summary>
+
+Investigation DC 15 (a shield hung backwards) reveals a hand-widened crack in the stone. Inside, wrapped in degraded cloth: a wax tablet, a bone token, a bronze stylus.
+
+> *"Third watch. If you are reading this, the garrison has not come back. The chains held for three hundred years. They held because we honored the bargain. Corvinus knows nothing of the bargain. That is why the dogs are dead. Warn the..."* [obliterated]
+
+The bone token carries OTHALAN (ancestral land): one half of a contract pair. Religion DC 13 (passive) or History DC 13 (passive) recognizes it as a formal marker: two parties held tokens like this to seal a bargain.
+
+**Give Handout 12** to whoever made the check; let them share it, don't read it aloud.
+
+**Three-clue rule note:** A bargain existed between whoever sealed the vault and whoever guards it. Corvinus's excavation broke it. The violation caused the deaths. Cassia knows something about this. The party has evidence before they reach the altar.
+
+</details>
+
+<details>
+<summary>📄 Handouts: Scene 2b</summary>
+
+**Handout 12: OTHALAN Bone Token**
+- **Physical:** Thumb-sized carved bone tile, the OTHALAN rune facing outward.
+- **Trigger:** Investigation DC 15 success in the Hidden Alcove.
+- **Connects forward:** Grants advantage on the Wight communication check (DC 14) in the Altar Chamber, stacking with the contract scroll if both are found.
+
+**Handouts 15–18: Tribal Shield Visions**
+- **Trigger:** First character to touch each shield type (boar, three-fingered hand, serpent, the Nine).
+- **Delivery:** Hand face-down; say nothing. Let the player read it and decide what their character does.
+- **DM note for Handout 18 (The Nine):** if anyone asks who these people were, say only: *"Nobody knows. Not even Rome."*
+
+</details>
+
+<details>
+<summary>✅ Check on Basics</summary>
+
+```
+□ Ursula's private pre-session question asked before this scene
+□ Sicus found via Perception 11 / Medicine 9: have his three lines ready
+□ Handout 12 trigger: Investigation DC 15 in the alcove
+□ Handouts 15-18: hand face-down, say nothing, let the player choose
+□ Handout 18 line ready: "Nobody knows. Not even Rome."
+□ Anti-Rome framing available if it lands: Rome inherited this vault, violated the bargain, is retrieving a weapon it was never permitted to have
+□ Transition: party proceeds to the Binding Chamber
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 2c: Right Branch: The Flooded Gallery &amp; Bone Chamber (Combat/Exploration)</summary>
+
+*The right passage descends into chest-deep black water that does not move.*
+
+**Players know:** Something ancient is down here · **Players don't know:** A preserved Germanic warrior died voluntarily to seal this vault; ghouls have been feeding on a disrupted ritual cycle
+
+| | |
+|---|---|
+| **Purpose** | Test the party at Hard difficulty before the Altar Chamber climax; deliver the *seiðr* death lore |
+| **Player objective** | Cross the flooded gallery without waking the Shadows; survive the Bone Chamber |
+| **Key reveal** | The preserved warrior is the Germanic party to the same bargain the wax tablet references: he died to seal it, not to be defeated |
+| **Key mechanic** | Survival DC 12 (waterline), Stealth DC 14 group (extinguished torches), Investigation DC 12 (the body) |
+| **Beat 1** | The flooded gallery: four Shadows, drawn to light and sound, avoidable with care |
+| **Beat 2: THE MOMENT** | The preserved warrior: a *seiðr* death, deliberate and voluntary, equipment intact for three centuries |
+| **Beat 3: COMBAT** | The Bone Chamber: 2 Ghouls + 1 Ghast, Hard/near-Deadly for five players |
+| **XP / reward** | 1,700 adjusted XP (2 Ghouls + 1 Ghast): exceeds the Hard threshold (1,125) for Level 3 |
+| **If they skip** | Party still has two other independent routes to the Runic Corridor's answer (Shield Hall memory, passive Religion) |
+| **Three clues** | ① Investigation DC 12 (the body died voluntarily) · ② Religion DC 14 (*seiðr* death confirms the guardian bargain) · ③ Investigation DC 12 post-combat (the ritual offering has been actively maintained) |
+| **Handouts** | None |
+
+<details>
+<summary>📄 Read Aloud</summary>
+
+> *The right passage descends on a shallow grade. Within twenty feet the floor becomes wet, then ankle-deep water, then, at the low point, chest-deep water that stretches for thirty feet before rising again on the far side. The water is black and cold and does not move. The ceiling is three feet above the waterline at the deepest point.*
+>
+> *At the far wall, propped against the stone half-submerged, is a Germanic warrior's body: preserved in the peat water for centuries. He is armored. He is not undead. He is simply preserved.*
+>
+> *Beyond the flooded gallery the passage opens into a wider chamber. Loose stone fills one wall where the ceiling has given way. Three stone benches line the far wall, each bearing the remains of what was once equipment. The chamber smells more strongly of organic decay than anywhere else in the vault.*
+
+*(Passive Survival ≥ 12: the water shows a faint directional drift: the shallow path follows the eastern wall, dropping the maximum depth from chest to shoulder.)*
+
+</details>
+
+<details>
+<summary>📄 Character-Specific Knowledge</summary>
+
+| Trigger | Threshold | What they notice / know / feel |
+|---|---|---|
+| **Survival** | DC 12 active (reading the waterline) | The eastern wall is shallower: advantage on the Athletics DC 11 stealth wade. |
+| **Investigation** | DC 12 active (examining the body) | He was not killed by violence. He sat down, crossed his arms, and died deliberately. Equipment intact: a *framea* lies across his lap, a bone token at his throat matching the alcove token. |
+| **Perception** | DC 12 active (reading combat wear before touching anything) | The *framea*'s edge shows re-tempering marks; his foot posture shows controlled retreat and counter, not aggression. A veteran, not a sacrifice. |
+| **Religion** | DC 13/14 active | *Seiðr* death: voluntary, directed, purposeful: completing a duty, not defeat. (DC 14, Haruspex): if disrupted, the oath is void; the guardian died peacefully but the renewal ceremony never occurred, leaving the vault in an intermediate state. |
+| **History: Librarius** | DC 15 active | Artifact style dates the death to the Germanicus aftermath, a statement of permanence, not defeat. |
+| **Medicus role** | automatic | No trauma, no drowning evidence: voluntary cessation, the body ceasing when the will decided. |
+
+</details>
+
+<details>
+<summary>📄 Encounter: The Bone Chamber</summary>
+
+<div class="callout-note">
+**2 Ghouls (CR 1 each) + 1 Ghast (CR 2): 1,700 adjusted XP for five players.** Ghouls are dormant beneath the rubble; give one round of looking around before they activate. The Ghast emerges last, from behind the stone benches.
+</div>
+
+**Tactics:** Ghouls use Claws to try to Paralyze before the Ghast closes. The Ghast's Stench aura applies as soon as it emerges (DC 10 Con or poisoned). Low ceiling and stone benches create three-quarter cover for both sides. A Paralyzed target attacked by the Ghast gets advantage plus automatic critical: intentional design.
+
+**Escape route:** the Flooded Gallery is always available; Shadows don't reactivate for a loud retreat: they already assessed the party as not-prey when they passed.
+
+**After combat:** a clay vessel with carbonized grain and a pre-Roman Mars coin: an actively maintained ritual offering, not a historical relic. Perception DC 11: impact-damage strike marks predating the current expedition show something already fought here, badly, and won only by staying central.
+
+**DM: who fed this place.** Titus Sempronius Caecilius, Cassia's predecessor as fort augur, maintained the offering cycle for decades until his death by fever in AD 173 broke the chain. Cassia inherited his papers but not his understanding of why the cycle mattered. This is a Session 2 thread.
+
+</details>
+
+<details>
+<summary>✅ Check on Basics</summary>
+
+```
+□ Survival DC 12 waterline read delivered without hesitation if a player states the action
+□ Group Stealth 14 called correctly: extinguished torches = free pass, lit = trigger
+□ One round of visible Shadow approach given before initiative on failure
+□ Bone Chamber ghouls stay dormant until party is fully inside: one free look-around round
+□ Ghast Stench applied the instant it emerges, no warning telegraphed beyond narration
+□ 5-player adjustment: run the full encounter as written, it's designed for this size
+□ Transition: party proceeds to the Binding Chamber
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 2d: The Binding Chamber &amp; Runic Corridor (Puzzle)</summary>
+
+*Both branches converge here. Chains hang in ranks; none of the collars are human-sized.*
+
+**Players know:** Whatever they found in their chosen branch · **Players don't know:** The exact terms of the treaty; the safe path through the runes
+
+| | |
+|---|---|
+| **Purpose** | Deliver the binding proof (the contract scroll) and apply a compounding, non-blocking cost to a puzzle the party can solve three independent ways |
+| **Player objective** | Solve the chain sequence; cross the rune floor without triggering the guardians early |
+| **Key reveal** | The treaty terms, three-generation seal in exchange for a fifty-foot no-dig boundary, were broken the instant Corvinus's crew broke ground |
+| **Key mechanic** | Investigation DC 14 (chain sequence); Intelligence DC 15 (contract scroll); rune floor: safe tile always OTHALAN, column shifts row to row |
+| **Beat 1** | The chains: one carries live tension right now, something is pulling against it |
+| **Beat 2: THE MOMENT** | The contract scroll: the exact terms, and confirmation the binding was void the moment the first shovel hit the ground |
+| **Beat 3** | The Runic Corridor: eight rows, the safe rune always OTHALAN, three independent ways to know it |
+| **XP / reward** | Not tracked: milestone advancement |
+| **If they skip** | The rune floor cannot be skipped structurally, but the party can walk it blind (compounding but survivable lightning cost) if no clue was found |
+| **Three clues** | ① Investigation DC 14 (chain oxidation reveals the sequence) · ② Intelligence DC 15 (contract scroll terms) · ③ Three independent OTHALAN routes (see below) |
+| **Handouts** | None: the contract scroll is described, not a physical handout prop |
+
+<details>
+<summary>📄 Read Aloud</summary>
+
+> *The passage squeezes you into a chamber whose ceiling hovers just above a legionary's helm. Chains hang from the stone in ranks. Thin chains that could encircle wrists, thick ones meant for something with a neck wider than a man's chest, all swaying a fraction despite the still air.*
+>
+> *None of the collars are human sized. Whatever stood here did so willingly or with the weight of a god keeping it still.*
+>
+> *Across the far wall a single rune has been carved deep enough to chip the stone. TIWAZ, the war-rune. Below it, a Roman hand scratched a line of Latin: "We turned back here."*
+>
+> *The passage narrows. The floor changes from earth to cut stone, covered in a mosaic of interlocking rune shapes. The runes glow faintly: not with fire, but something cold, steady as a held breath. There is no safe path around them. There is only through.*
+
+*(Passive Arcana ≥ 14: a faint divine aura clings to the chains: whatever they held required divine binding to contain.)*
+
+</details>
+
+<details>
+<summary>📄 The Chain Sequence</summary>
+
+Investigation DC 14 (active, studying the chains as a system) reveals the oxidation-pattern order: **oldest chain first (left wall), newest chain last (right wall), then the centre chain.** Pulling the centre chain out of sequence: DC 13 Strength save or restrained 1 minute (no damage: wasted time and noise, cut free with a bladed weapon for 10 slashing damage to the chain, or DC 16 Athletics).
+
+Correct sequence: the alcove opens with an oil lamp (recently tended: within the past two years, by Titus Sempronius Caecilius before his death) and an oilskin scroll.
+
+**The contract scroll (DC 15 Intelligence to read):** the tribes agreed to seal the vault for three Roman generations; Rome agreed never to dig within fifty feet of the principia's eastern wall. The binding was void the moment the first shovel hit that ground. Combined with the wax tablet from the Hidden Alcove (if found), the party can now reconstruct exactly what happened and why the vault is waking up.
+
+</details>
+
+<details>
+<summary>📄 The Runic Corridor Puzzle</summary>
+
+Thirty feet, eight rows of five rune tiles each. **Wrong tile: 1d8 lightning damage, no save**, applied instantly. On the *first* wrong tile in the corridor, advance the Altar Chamber guardians one free preparation round: the Wight draws his weapon, the Cult Fanatic moves to flank, one Shadow coalesces behind the altar. Further wrong steps don't add rounds but do drain resources.
+
+The safe rune is always **OTHALAN**, but its column shifts row to row.
+
+| Row | OTHALAN column | Row | OTHALAN column |
+|---|---|---|---|
+| 1 | 3 (centre) | 5 | 4 |
+| 2 | 1 (far left) | 6 | 1 (far left) |
+| 3 | 5 (far right) | 7 | 3 (centre) |
+| 4 | 2 | 8 | 4 (threshold) |
+
+**Three independent routes to the answer:**
+- **Shield Hall memory:** DC 13 Intelligence (History), if the arrangement was noted in Room 4: hand over the table above directly.
+- **Bone token:** anyone who can read Elder Futhark (History/Religion proficiency, Germanic background, or Ursula) sees OTHALAN directly in each row. No check.
+- **Religion DC 14 passive:** Religion +4 or higher automatically recognises the liturgical pattern: give the full table to that player.
+
+**For parties who ignore all clues:** average 4.5 lightning damage per failed row, up to 36 total across eight rows. Survivable but costly: a compounding cost, not a wall.
+
+</details>
+
+<details>
+<summary>✅ Check on Basics</summary>
+
+```
+□ Chain sequence mnemonic ready: oldest first, newest last, then centre
+□ DC 13 Strength save (not damage) if pulled out of order: restraint only
+□ Contract scroll's exact terms memorized: 3 generations sealed, 50ft no-dig boundary
+□ OTHALAN column table memorized or visible at the table
+□ First wrong tile = free Altar Chamber prep round: apply this exactly once
+□ All three OTHALAN routes available regardless of which Scene 2 branch was taken
+□ Transition: party reaches the Altar Chamber threshold
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 3: The Altar Chamber (Combat/RP)</summary>
+
+*The final chamber opens into a perfect circle. Within five feet of the altar, the air stops moving.*
+
+**Players know:** Whatever they've assembled from both branches and the Binding Chamber · **Players don't know:** The Wight will speak before he fights; the exit condition is real
+
+| | |
+|---|---|
+| **Purpose** | Force the corruption mechanic into play; give the Wight his one chance to speak before violence; deliver the session's peak moment |
+| **Player objective** | Decide whether to take the spear, and how |
+| **Key reveal** | The guardian is honest: Rome broke the bargain, not the party, but the party now carries the debt regardless |
+| **Key mechanic** | DC 14 Wisdom save (first touch); DC 14 Persuasion/Insight (communication attempt); combat at 1,800 adjusted XP if it comes to that |
+| **Beat 1** | The spear's presence: every character with Wisdom 14+ feels a directional pull before anyone touches it |
+| **Beat 2: THE MOMENT** | The Wight rises and speaks first: *"The bargain was broken. Not by you. But by your kind. I am still bound. You are not."* |
+| **Beat 3: COMBAT (if triggered)** | 1 Wight + 1 Cult Fanatic + 2 Shadows. Exit condition: back beyond 15 ft of the altar, the Wight holds and the Shadows stop. |
+| **XP / reward** | 1,800 adjusted XP for five players: exceeds Hard, approaches Deadly at Level 3 with depleted resources; the designed climax |
+| **If they skip** | Cannot be skipped: the Altar Chamber is the vault's terminus |
+| **Three clues** | Not applicable: this scene resolves prior clues rather than delivering new ones, except the token-destruction tactic below |
+| **Handouts** | Handout 2 (Vault Inscription): given as the party crosses the threshold |
+
+<details>
+<summary>📄 Read Aloud</summary>
+
+> *The final chamber opens into a perfect circle. The domed ceiling catches every breath and rolls it back, so even your heartbeat sounds like it belongs to someone else. Moisture beads on the walls like cold sweat.*
+>
+> *At the center stands a granite altar carved from a single block that predates the Roman stones around it. Upon it rests a spear eight feet long, forged of iron so black it seems to swallow light. Runes coil along its haft, glowing a slow ember-red.*
+>
+> *Within five feet of the altar the air stops moving. Sweat does not fall. Dust does not drift. The silence looks back at you.*
+
+*(Give Handout 2 now.)*
+
+> *The moment your lead foot breaks the invisible circle around the altar, the torchlight gutters sideways and the temperature drops to winter. The spear lifts the hairs on your arms without moving. Every rune flares once, illuminating the chamber like a heartbeat.*
+>
+> *You understand, without being told, that this weapon is awake. It has been waiting. And now it knows your name.*
+>
+> *The guardian rises from behind the altar. He has been here for three hundred years. Not the restless hunger of the walking dead: the settled weight of something that made a choice and is still keeping it.*
+>
+> *When he speaks, it is in a language three of you do not understand, and one of you, the one with the highest Wisdom, does, though you have never learned it:*
+>
+> **"The bargain was broken. Not by you. But by your kind. I am still bound. You are not."**
+
+*(If multiple characters are tied for highest Wisdom, all understand. Ursula understands regardless of her Wisdom score: she may choose not to share it immediately.)*
+
+</details>
+
+<details>
+<summary>📄 Character-Specific Knowledge</summary>
+
+| Trigger | Threshold | What they notice / know / feel |
+|---|---|---|
+| **Wisdom** | 14+ | You feel the spear's attention: awake, aware, waiting for something specific. |
+| **Religion** | automatic (proficiency) | The Wight is in *seiðr* position: the same voluntary guardian-death as the Flooded Gallery warrior. His presence is a kept commitment, not a curse. |
+| **Insight** | automatic (proficiency) | The Wight does not rage or hunger. He is resolute and tired, the way a soldier is after a very long watch. |
+| **Role: Haruspex** | automatic | He is *remained*, not standard undead: a living consciousness who chose to stay as guardian. If he falls, containment weakens. |
+| **Role: Aquilifer** | automatic | The spear faces toward the vault entrance, toward Rome. A positioned weapon in Germanic tradition is a weapon ready for deployment against a boundary violator. |
+| **Role: Flamen Martialis** | automatic | This is not a weapon storage chamber. He guards a god's seat of power. The spear is Mars's material anchor here. |
+
+</details>
+
+<details>
+<summary>📄 Encounter: The Guardian and Escort</summary>
+
+<div class="callout-note">
+**1 Wight (CR 3) + 1 Cult of Mars Fanatic (CR 2, adapted) + 2 Shadows (CR 1/2 each): 1,800 adjusted XP for five players.**
+</div>
+
+**Cult Fanatic (adapted stat block):** AC 13, HP 33 (6d8+6). *Gladius* +4 to hit, 1d6+2. Spells (DC 13, +5 to hit): sacred flame, thaumaturgy, bane, inflict wounds, shield of faith, hold person, spiritual weapon. Dark Devotion (advantage vs. Charmed/Frightened). Acts on Initiative 10; already pulled the lever creating difficult terrain at the corridor exit before the party arrived.
+
+**Wight trait: Dark Resolve:** regains 2 (1d4) HP at the start of his turn while any creature within 30 ft is Frightened, from any source. He cannot suppress this.
+
+**The OTHALAN token (tactical target):** pinned at the Wight's sternum, AC 13, 5 HP, shatters on one hit. If destroyed or removed, the Shadows lose their binding for 1 round (-2 attack, no Strength Drain), then act independently.
+
+**Communication attempt:** DC 14 Persuasion or Wisdom (Insight), player's choice, one attempt, before or during combat. Showing the contract scroll or OTHALAN token grants advantage. On success: *"The one who ordered this. His debt is greater than yours. But you carry it now."* A transfer of responsibility, not forgiveness: combat may still resume.
+
+**Combat notes:** the Wight's Life Drain targets the spear-bearer preferentially: he is trying to prevent removal, not kill the party. If the party backs away from the spear and stays beyond 15 ft of the altar, he holds position and the Shadows stop attacking. This exit is always available and is the right call for a depleted party.
+
+**On defeat:** he folds, sits cross-legged at the altar base, goes still: *"Carry it carefully. What is inside it is older than Rome."* The Shadows dissipate.
+
+</details>
+
+<details>
+<summary>📄 Spear Outcomes: First Touch</summary>
+
+| Outcome | How it happens | What follows |
+|---|---|---|
+| Party takes the spear | Wight and both Shadows defeated | First touch: DC 14 Wisdom save. Fail: 1 corruption + Shaken until start of next turn (cannot willingly release it). Pass: taken, no immediate effect, but the pull is real. |
+| Party retreats without it | Any character backs beyond 15 ft, others follow | Wight holds position. Combat ends. Mission failure for Corvinus. Party survives intact: a valid outcome. |
+| Party is wiped out | All at 0 HP | If the Cult Fanatic still stands, he takes the spear to Corvinus. If he also fell, the spear remains untouched: the Wight's oath does not permit theft. |
+
+**Attunement note:** touching the spear is not attunement. Attunement requires a short rest holding it: the spear will not resist, which is the danger. See the Appendix's "Spear of Mars: Attunement Properties."
+
+</details>
+
+<details>
+<summary>✅ Check on Basics</summary>
+
+```
+□ Handout 2 given at the threshold: read rune names aloud, then slide it across
+□ Wight speaks BEFORE combat: do not skip straight to initiative
+□ Highest-Wisdom character(s) understand the dialect; Ursula understands regardless
+□ Cult Fanatic already pulled the lever: corridor exit is difficult terrain from the start
+□ Dark Resolve triggers on ANY Frightened creature within 30ft, not just party-caused
+□ 15-ft retreat exit condition is real: hold the Wight to it if players test it
+□ First-touch DC 14 Wisdom save and corruption tracked immediately, not deferred
+□ Transition: party surfaces via the shaft
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 4: Return to the Surface (Combat)</summary>
+
+*As the party climbs out of the shaft, the night air hits them and then the shouting.*
+
+**Players know:** Whatever happened in the Altar Chamber · **Players don't know:** The spear's corruption spreads through proximity, not just touch
+
+| | |
+|---|---|
+| **Purpose** | Show the spear's corruption spreading beyond the carrier: the first fort-level consequence of what's now above ground |
+| **Player objective** | Resolve Marius Coda without unnecessary killing, if possible |
+| **Key reveal** | Two legionaries who never touched the spear are already affected by proximity to the open shaft |
+| **Key mechanic** | Perception DC 11 (his stance); Athletics DC 13 (subdue); Medicine DC 12 (stabilize Aelius Rufus) |
+| **Beat 1** | Marius Coda stands over three fallen legionaries, fully possessed, focused entirely on the spear-bearer |
+| **Beat 2: THE MOMENT** | *"The spear calls, the spear drinks, the spear wants a champion."* |
+| **Beat 3** | Resolution (kill/subdue/deny sight/he escapes): any is valid, each has a distinct consequence |
+| **XP / reward** | Berserker (CR 2) + 2 Cultists (CR 1/8): Easy for five players with depleted resources |
+| **If they skip** | Cannot be skipped: Marius is already exposed regardless of what happened below |
+| **Three clues** | ① Perception DC 11 (his weak side) · ② Medicine DC 12 (Aelius Rufus stabilization) · ③ Intimidation DC 13 (commanding voice interrupts him for one free round) |
+| **Handouts** | None |
+
+<details>
+<summary>📄 Read Aloud</summary>
+
+> *You hear him before you see him. Not a scream, not a song. A rising chant that rides the wind like sparks from a brazier. When you crest the shaft you see him framed by the principia's torchlight: a Gallic stone-hauler, shoulders like pillars, standing over three fallen legionaries. You know his name from the work gangs: Marius Coda, a reliable man until today.*
+>
+> *Each fist grips a gladius slick with fresh blood. He is barefoot on the flagstones, eyes rolled back until only the whites show.*
+>
+> *"The spear calls, the spear drinks, the spear wants a champion." He does not shout the words. He lets them fall like lit coals.*
+>
+> *His head turns as though a wire hauls it. He looks to the party member holding the spear. His smile is wide enough to hurt.*
+
+</details>
+
+<details>
+<summary>📄 Character-Specific Knowledge</summary>
+
+| Trigger | Threshold | What they notice / know / feel |
+|---|---|---|
+| **Perception** | DC 11 active (reading his stance before initiative) | Weight on his front foot, both gladii held too tight for controlled fighting: no guard on his left side. Calling it out grants advantage on the first attack against that side. |
+| **Medicine** | DC 12 active | Aelius Rufus is breathing, stabilizable. Failure means a second check next round or he dies. |
+
+</details>
+
+<details>
+<summary>📄 The Two Cultists: Titus Flavinus &amp; Gnaeus Peregrinus</summary>
+
+Legionaries stationed near the excavation, exposed through the open shaft. Not as far gone as Marius: not attacking yet, just watching and muttering *"Mars aversus est."* This is the first evidence the spear's corruption spreads through proximity, not just touch. If Marius dies, they gain advantage on saves vs. the aura for 24 hours. If subdued, they snap out of their trance and become terrified witnesses. Both appear in Session 2 as witnesses with fragmented memories.
+
+</details>
+
+<details>
+<summary>📄 Resolution Options</summary>
+
+| Party choice | Mechanics | Consequence |
+|---|---|---|
+| **Kill him** | Standard combat, prioritizes the spear-bearer | Dies mid-charge, whispering "Mars" like a confession. Camp morale drops; whispers about the party spread. |
+| **Subdue him** | Opposed Athletics DC 13 (two legionaries assisting), then DC 12 Medicine/Sleight of Hand to bind | Collapses weeping, vomits dark bile, no memory. Cassia can question him for visions in Chapter 2. |
+| **Deny line of sight** | Move the spear 60 ft or magical darkness | Freezes, confused, then sobs: becomes a terrified witness who can describe the spear's whispers. |
+| **He breaks free** | If the grapple slips (roll each round), DC 14 Athletics to catch him | Vanishes into the night. Found dead of exposure two days later, both gladii snapped. Corvinus blames the party. |
+
+**Commanding voice (Intimidation DC 13, before initiative):** a character with military rank can interrupt him for one free round: speed 0, no actions. Not calm; interrupted. After one round, full violence resumes, but the party gains a free positioning round.
+
+</details>
+
+<details>
+<summary>✅ Check on Basics</summary>
+
+```
+□ Marius's four muttered lines available for flavor between attacks
+□ Two Cultists do NOT attack unless directly threatened
+□ Aelius Rufus stabilization ties directly into a Chapter 2 payoff
+□ Perception DC 11 stance-read rewards attentive play with a real mechanical bonus
+□ All four resolution paths are valid: do not steer toward "kill"
+□ Transition: courtyard settles, principia door opens
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 5: The Reckoning (RP/Decision)</summary>
+
+*The courtyard settles. Then the principia door opens.*
+
+**Players know:** Everything from the whole session · **Players don't know:** Whether Corvinus already suspects what they're carrying
+
+| | |
+|---|---|
+| **Purpose** | Force an irreversible choice: who holds the spear entering Chapter 2 |
+| **Player objective** | Decide whether to hand over, keep, or destroy the spear |
+| **Key reveal** | Corvinus's appetite outweighs his caution; Cassia breaks cover entirely once she runs out of quiet options |
+| **Key mechanic** | DC 16 Persuasion / DC 15 Intimidation (retain custody); DC 18 Persuasion / DC 17 Intimidation (refuse outright) |
+| **Beat 1** | Corvinus walks (never runs), eyes on the spear a moment too long |
+| **Beat 2: THE MOMENT** | *"You found it. Good. Give it to me and your bonus pay is doubled. Tonight."* |
+| **Beat 3: CLOSING IMAGE** | Varro's blank wax tablet, held like it says something important. Let it sit two seconds before cutting to Level 4. |
+| **XP / reward** | Milestone: Level 4 regardless of choice |
+| **If they skip** | Cannot be skipped |
+| **Three clues** | Not applicable: this scene resolves the session, it does not deliver new clues |
+| **Handouts** | None |
+
+<details>
+<summary>📄 Read Aloud</summary>
+
+> *Corvinus does not run. A Legate does not run. He walks, and Tribune Lucius walks two steps behind him, hands clasped behind his back, expression attentive.*
+>
+> *Corvinus looks at the spear. His eyes stay there for a moment too long. Then he looks at you.*
+>
+> *"You found it. Good. Give it to me and your bonus pay is doubled. Tonight."*
+
+**Cassia's arrival:** approaches from the principia's east side entrance at a near-run, out of breath. If she reaches the party before Corvinus gets the spear: *"Do not give it to him. He will use it. I have seen what that means."* If Corvinus sees her, he tells her flatly to return to the shrine. She does not move.
+
+</details>
+
+<details>
+<summary>📄 Resolution Branches</summary>
+
+| Party choice | Corvinus's response | Tribune Lucius's note | Consequence |
+|---|---|---|---|
+| **Give the spear to Corvinus** | Takes it in a leather satchel without bare-handed contact. Thanks them correctly, no warmth. Leaves. | Watches Corvinus leave, looks at the party once more, says nothing. | Spear in the Legate's custody entering Chapter 2. Cassia is in tears. Worst outcome for divine stakes, but valid. |
+| **Refuse, offer to hold it themselves** | Escalates: "You are soldiers under my command. This is a direct order." DC 16 Persuasion or DC 15 Intimidation (show him what the spear did to Marius). | Takes a note. Filing something. | Party retains custody, explicitly responsible for what happens next. Cassia cautiously hopeful. Varro backs them privately. |
+| **Refuse outright** | Invokes military discipline. DC 18 Persuasion, no Charisma substitute, or DC 17 Intimidation (sustained display of controlled defiance backed by combat evidence). | If it comes to force: "Legate. Not tonight.": his one moment of action, purely to prevent an embarrassing report. | Confined to barracks pending review. Varro releases them within the hour and says nothing about it. |
+| **Destroy or hide the spear** | Doesn't believe them. Sends soldiers down to verify: finds the altar, the Wight's remains, no spear. Cold and furious. | Still watching. | The physical form may be gone. The divine presence isn't. Something follows the party out that's harder to track than an iron shaft. Pays off in Session 4. |
+
+</details>
+
+<details>
+<summary>📄 Closing: Varro &amp; Level Advancement</summary>
+
+He finds the party privately after Corvinus is out of earshot, holding a blank wax tablet as if it says something important.
+
+> *"I'm going to need your account of what happened down there. The real one, not the version Corvinus gets. Take tonight. Write nothing down. Come find me in the morning."*
+
+He does not say what he suspects or what he'll do with the information. But the way he looks at the spear (or the space where it was) makes clear he's been thinking about this longer than tonight.
+
+**Level 4.** The characters are not the same people who walked into that shaft. They survived contact with a god's anchor point, ran two encounters at Hard and near-Deadly while depleted, and made a consequential choice under direct pressure from a superior officer. The level is not a reward: it is what that cost, and what it leaves behind.
+
+> *"Whatever you saw down there: you're still here. That's the thing that matters tonight."*
+
+</details>
+
+<details>
+<summary>✅ Check on Basics</summary>
+
+```
+□ Corvinus's opening line delivered with appetite before relief
+□ Cassia's arrival timed to compete with Corvinus if the party is slow to decide
+□ All four resolution branches held in memory: do not telegraph which is "right"
+□ Contract scroll / evidence, if found, changes Corvinus's reaction (goes quiet, recognises OTHALAN)
+□ Varro's closing line delivered privately, after Corvinus is out of earshot
+□ Level 4 framed as cost, not reward
+□ Debrief question ready (see Session Close below)
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>📁 Session Close &amp; Consequences</summary>
+
+**How the session ends (by path):**
+
+| Chapter 1 ending | Closing image | Chapter 2 opening |
+|---|---|---|
+| Spear given to Corvinus | Cassia in tears; Corvinus's satchel closed | Corvinus holds the spear when Tribune Lucius returns to claim it formally |
+| Party retains custody | Cassia cautiously hopeful; Varro backs them privately | Party must decide how to protect what they're carrying when the Tribune arrives |
+| Refused outright | Confined to barracks; released quietly within the hour | Party enters Chapter 2 already flagged as "unreliable instruments" by Corvinus |
+| Destroyed/hidden | Corvinus furious, unconvinced | Something follows the party regardless: the divine presence thread opens early |
+
+**Consequences to track:**
+
+- Who holds the spear entering Chapter 2: Corvinus / party / destroyed (in appearance only)
+- Corruption tracking: any character who touched or attuned to the spear begins the corruption track at 0 or 1
+- Marius Coda: killed / subdued / witness / escaped and later found dead
+- Aelius Rufus: stabilized or not: a Chapter 2 witness thread either way
+- Titus Flavinus and Gnaeus Peregrinus: witnesses either way, fragmented memories either way
+- Aquilifer role: filled or vacant: the vacancy consequence table in *roles.qmd* applies if empty
+- Commendationes: check both opportunities (leading the descent, restraining Marius nonlethally) against what actually happened at the table
+
+**Transition hook:** Whoever holds the spear tonight: what happens when Rome finds out, and who exactly is Tribune Lucius reporting to?
+
+**Debrief question:** "Your character followed a direct order into a place someone else had deliberately sealed. Do they think that was the right call, and would they do it again?"
+
+</details>
+
+---
+
+<details>
+<summary>📁 Optional Encounters</summary>
+
+*Use if the session is running short, or to fill time between the fort return and the next session.*
+
+| Encounter | Use |
+|---|---|
+| **Scouts' Report** | Germanic tribe activity increased in the forest: plants Session 3's escalation without resolving anything now |
+| **Camp Tensions** | Legionaries are terrified after the dogs' deaths; some talk of desertion: atmospheric, no mechanics |
+| **The Augur's Warning** | Private conversation with Cassia revealing the spear belongs to Mars and was used in a divine war: can be run before or after Scene 5 if the party seeks her out privately |
+
+</details>
+
+</div>
