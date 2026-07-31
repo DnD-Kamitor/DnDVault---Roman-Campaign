@@ -11,7 +11,7 @@ Session 4 splits between the fort under siege and the hidden tunnels beneath the
 
 | Scene | Map File | Tokens to Place | Notes |
 |---|---|---|---|
-| Scene 0: Gate breach | `CastleWall` or `BridgeCheckpoint` | All PCs, Centurion_Varro, Guard ×8, Berserker ×4, Tribal_Warrior ×8 | Three simultaneous crises — split party likely. Brutus' agent (Quintus_Flavius renamed "Soldier") starts near shrine. |
+| Scene 0: Gate breach | `Maptool/maps/s4_fort_siege.html` (custom Vindolanda siege SVG), or `CastleWall`/`BridgeCheckpoint` as fallback | All PCs, Centurion_Varro, Guard ×8, Berserker ×4, Tribal_Warrior ×8 | Three simultaneous crises — split party likely. Brutus' agent (Quintus_Flavius renamed "Soldier") starts near shrine. |
 | Scene 1: Council | `saalburg_plan.jpg` (reference only) | Legate_Corvinus, Tribune_Lucius, Centurion_Varro, Augur_Cassia, all PCs | No combat. Use fort floor plan for NPC positioning only. Vercingetorix's envoy: off-screen runner. |
 | Scene 2: Preparation | `saalburg_plan.jpg` (reference only) | Same as Scene 1 | No new tokens. Players plan escort route on the floor plan. |
 | Scene 3: Tunnels — Armory | `Maptool/maps/s4_tunnel_armory.html` | All PCs, Animated_Armor ×4 | Animated Armor = constructs (divine resonance), not undead. No Turn Undead vulnerability. |
@@ -46,13 +46,13 @@ Session 4 splits between the fort under siege and the hidden tunnels beneath the
 
 | Token | File | Scene | Frame Colour |
 |---|---|---|---|
-| Legate Corvinus | `Maptool/tokens/npcs/Corvinus.rptok` | S0–S4 | Red |
-| Tribune Lucius | `Maptool/tokens/npcs/Lucius_Tribune.rptok` | S1–S4 | Red (grey if players trust him) |
-| Centurion Varro | `Maptool/tokens/npcs/Varro.rptok` | S0–S4 | Gold |
-| Augur Cassia | `Maptool/tokens/npcs/Augur_Cassia.rptok` | S0–S4 | Gold |
-| Vercingetorix | `Maptool/tokens/npcs/Vercingetorix.rptok` | S0 (off-screen envoy), S4 (if invited) | Gold |
-| Senator Brutus | `Maptool/tokens/npcs/Senator_Brutus.rptok` | Off-screen all session — have token ready | Red |
-| Brutus' Agent | `Maptool/tokens/npcs/Quintus_Flavius.rptok` | S0 shrine, S3 Elder Stair | Red — rename to "Soldier" if Quintus unknown to party |
+| Legate Corvinus | `Maptool/tokens/npcs/named/Legate_Corvinus.rptok` | S0–S4 | Red |
+| Tribune Lucius | `Maptool/tokens/npcs/named/Tribune_Lucius.rptok` | S1–S4 | Red (grey if players trust him) |
+| Centurion Varro | `Maptool/tokens/npcs/named/Centurion_Varro.rptok` | S0–S4 | Gold |
+| Augur Cassia | `Maptool/tokens/npcs/named/Augur_Cassia.rptok` | S0–S4 | Gold |
+| Vercingetorix | `Maptool/tokens/npcs/named/Vercingetorix_the_Red.rptok` | S0 (off-screen envoy), S4 (if invited) | Gold |
+| Senator Brutus | `Maptool/tokens/npcs/named/Senator_Brutus.rptok` | Off-screen all session — have token ready | Red |
+| Brutus' Agent | `Maptool/tokens/npcs/creatures/Quintus_Flavius.rptok` | S0 shrine, S3 Elder Stair | Red — rename to "Soldier" if Quintus unknown to party |
 
 ---
 
@@ -62,9 +62,9 @@ Session 4 splits between the fort under siege and the hidden tunnels beneath the
 |---|---|---|---|---|
 | Berserker | `Maptool/tokens/npcs/creatures/Berserker.rptok` | S0 gate breach | ×4 | Germanic lead assault |
 | Tribal Warrior | `Maptool/tokens/npcs/creatures/Tribal_Warrior.rptok` | S0 gate | ×8 | |
-| Guard (Legionary) | `Maptool/tokens/npcs/Fort_Tokens/Legionary_Milites.rptok` | S0 all crises | ×8 | Fort defenders |
+| Guard (Legionary) | `Maptool/tokens/npcs/creatures/Legionary_(Milites).rptok` | S0 all crises | ×8 | Fort defenders |
 | Animated Armor | `Maptool/tokens/npcs/creatures/Animated_Armor.rptok` | S3 Sunken Armory | ×4 | Constructs — no Turn Undead |
-| Cultist of Mars | `Maptool/tokens/npcs/Fort_Tokens/Cult_Mars_Initiate.rptok` | S3 tunnels optional | ×3 | If sleeper agents enter tunnels |
+| Cultist of Mars | `Maptool/tokens/npcs/creatures/Cultist_of_Mars.rptok` | S3 tunnels optional | ×3 | If sleeper agents enter tunnels |
 
 ---
 
@@ -73,7 +73,8 @@ Session 4 splits between the fort under siege and the hidden tunnels beneath the
 Campaign session folder: `Maptool/maps/campaign/S4_The_Gods_Demand/`
 
 ```
-CastleWall             — fort wall battle map (Scene 0)
+s4_fort_siege.html     — custom Vindolanda siege overview SVG (Scene 0, preferred)
+CastleWall             — fort wall battle map (Scene 0 fallback)
 BridgeCheckpoint       — alternate gate map
 saalburg_plan.jpg      — fort interior reference (Scenes 1–2, no battle grid)
 s4_tunnel_armory.html      — Sunken Armory SVG battle map (Scene 3, 12×10 sq)

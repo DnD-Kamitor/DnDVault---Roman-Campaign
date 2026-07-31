@@ -167,10 +167,10 @@ Cultists are not here to kill the party — they want the spear. Berserker fight
 | `handouts/handout_01_legates_orders.html` | Scene 1 — Corvinus sets wax tablet down | Slide across table without comment |
 | `handouts/handout_03_omens_observed.html` | Scene 0 — Corvinus says "we lost four men" | Physical prop; players keep and annotate |
 | `handouts/handout_02_vault_inscription.html` | Scene 3 — torchlight reaches altar stone | Read rune names aloud, then slide across |
-| `handouts/handout_12_othalan_bone_token.html` | Scene 2 — Investigation DC 15 in hidden alcove | Hand to player who made the check; they share it |
-| `handouts/handout_15_marcomanni_vision.html` | Scene 2 — first touch of boar shield | Hand face-down; say nothing |
-| `handouts/handout_16_cherusci_vision.html` | Scene 2 — first touch of three-fingered-hand shield | Hand face-down; say nothing |
-| `handouts/handout_17_suebi_vision.html` | Scene 2 — first touch of serpent shield | Hand face-down; say nothing |
-| `handouts/handout_18_nine_unnamed.html` | Scene 2 — examine the nine smallest unmarked shields | Pause. "Nobody knows. Not even Rome." |
+| `handouts/12_S1_entry_passage_othalan_token.pdf` | Scene 2 — Investigation DC 15 in hidden alcove | Hand to player who made the check; they share it |
+| `handouts/15_S1_marcomanni_vision.pdf` | Scene 2 — first touch of boar shield | Hand face-down; say nothing |
+| `handouts/16_S1_cherusci_vision.pdf` | Scene 2 — first touch of three-fingered-hand shield | Hand face-down; say nothing |
+| `handouts/17_S1_suebi_vision.pdf` | Scene 2 — first touch of serpent shield | Hand face-down; say nothing |
+| `handouts/18_S1_the_nine_unnamed.pdf` | Scene 2 — examine the nine smallest unmarked shields | Pause. "Nobody knows. Not even Rome." |
 
-Open each HTML file in browser, Ctrl+P to print. Standalone — no internet needed after fonts load.
+Handouts 01–03 are HTML (open in browser, Ctrl+P to print). Handouts 12 and 15–18 are print-ready PDFs (matching JPGs also sit alongside them in `handouts/` for on-screen display) — open directly, no browser needed.

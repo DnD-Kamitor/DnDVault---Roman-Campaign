@@ -64,14 +64,14 @@ The parade ground transforms before combat. Use these positional notes:
 
 | Token | File | Scene | Frame Colour | Notes |
 |---|---|---|---|---|
-| Augur Cassia | `Maptool/tokens/npcs/Augur_Cassia.rptok` | S0–S4 | Gold | Witness and ally. Speaks after trial. |
-| Centurion Varro | `Maptool/tokens/npcs/Varro.rptok` | S0–S4 | Gold | Witness. Delivers final Varro check if alive. |
-| Legate Corvinus | `Maptool/tokens/npcs/Corvinus.rptok` | S0, S4 | Red | Witness, not participant. Hostile if unsidelined. |
-| Tribune Lucius | `Maptool/tokens/npcs/Lucius_Tribune.rptok` | S0, S4 | Red/Grey | Witness. Hands citizenship document in S4 if dispatched. |
-| Vercingetorix | `Maptool/tokens/npcs/Vercingetorix.rptok` | S0 (frozen), S4 | Gold | Dying; gives one-sentence benediction in S4 if alive. |
-| Senator Brutus | `Maptool/tokens/npcs/Senator_Brutus.rptok` | Off-screen all session — agents only if Labyrinth scene | Red | Never in the arena. Consequences arrive through others. |
-| Thusnelda | `Maptool/tokens/npcs/Thusnelda.rptok` | Epilogue (grove) | Gold | Not in the fort during the divine trial. |
-| Paterculus | `Maptool/tokens/npcs/Paterculus_AugurAssist.rptok` | S0 witness edge | Gold | Minor witness. No lines. |
+| Augur Cassia | `Maptool/tokens/npcs/named/Augur_Cassia.rptok` | S0–S4 | Gold | Witness and ally. Speaks after trial. |
+| Centurion Varro | `Maptool/tokens/npcs/named/Centurion_Varro.rptok` | S0–S4 | Gold | Witness. Delivers final Varro check if alive. |
+| Legate Corvinus | `Maptool/tokens/npcs/named/Legate_Corvinus.rptok` | S0, S4 | Red | Witness, not participant. Hostile if unsidelined. |
+| Tribune Lucius | `Maptool/tokens/npcs/named/Tribune_Lucius.rptok` | S0, S4 | Red/Grey | Witness. Hands citizenship document in S4 if dispatched. |
+| Vercingetorix | `Maptool/tokens/npcs/named/Vercingetorix_the_Red.rptok` | S0 (frozen), S4 | Gold | Dying; gives one-sentence benediction in S4 if alive. |
+| Senator Brutus | `Maptool/tokens/npcs/named/Senator_Brutus.rptok` | Off-screen all session — agents only if Labyrinth scene | Red | Never in the arena. Consequences arrive through others. |
+| Thusnelda | `Maptool/tokens/npcs/named/Thusnelda.rptok` | Epilogue (grove) | Gold | Not in the fort during the divine trial. |
+| Paterculus | `Maptool/tokens/npcs/creatures/Paterculus.rptok` | S0 witness edge | Gold | Minor witness. No lines. |
 
 ---
 
@@ -79,10 +79,10 @@ The parade ground transforms before combat. Use these positional notes:
 
 | Creature | File | Scene | Count | Notes |
 |---|---|---|---|---|
-| Fausta Luperci | No `.rptok` — use custom or reskin | S2 Option A | ×1 | Build from Gladiator or Champion stat block, override HP/AC. Form from ash: place at arena center. |
+| Fausta Luperci | `Maptool/tokens/npcs/creatures/Fausta_Luperci.rptok` | S2 Option A | ×1 | Form from ash: place at arena center. |
 | Wight (Fallen) | `Maptool/tokens/npcs/creatures/Wight.rptok` | S2 Option B (Legendary) | Up to ×3 | Summoned by Mars' Legendary Action. Remove when Mars calls Enough. |
 | Shadow (Fallen) | `Maptool/tokens/npcs/creatures/Shadow.rptok` | S2 Option B (Legendary) | Up to ×3 | Alt summon. Max 3 total across Wight+Shadow. |
-| Brutus Agent (Quintus) | `Maptool/tokens/npcs/Quintus_Flavius.rptok` | Labyrinth only | ×1 | If Brutus' operative arrives to take the spear ashes. |
+| Brutus Agent (Quintus) | `Maptool/tokens/npcs/creatures/Quintus_Flavius.rptok` | Labyrinth only | ×1 | If Brutus' operative arrives to take the spear ashes. |
 
 ---
 

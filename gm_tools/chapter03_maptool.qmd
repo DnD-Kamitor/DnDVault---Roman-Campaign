@@ -15,7 +15,7 @@ Open these maps in MapTool before the session. Switch maps at each scene transit
 | Scene 2: Thusnelda's Scouts | `s3_germanic_village.html` | 12× Tribal_Warrior, 2× Scout, Thusnelda, Vercingetorix (if present) | Reveal Thusnelda after ambush ends. Thusnelda frame: grey → gold if alliance secured. |
 | Scene 3: River Crossing | `s3_forest_path.html` | All PCs, 1× Knight (Centurion), 6× Legionary_Milites | Place Romans on far bank. Fallen oak = diagonal line across river. |
 | Scene 3b: The Farbog | `s3_farbog_crossing.html` | All PCs, Thusnelda (if guide), 1× Specter (bog spirit, invisible until revealed), 3× Will-o-Wisp | Specter token: keep off-screen until the party ignores it 10+ min. |
-| Scene 4: Sacred Grove | `s4_sacred_grove.html` | All PCs, Thusnelda, 3× Wight placeholder (Stone Golem avatars — Scene 5 only) | Do NOT place golems until Scene 5 triggers. Cover positions: north + south stones. |
+| Scene 4: Sacred Grove | `s4_sacred_grove_overview.html` for arrival orientation, then `s4_sacred_grove.html` for the battle map | All PCs, Thusnelda, 3× Wight placeholder (Stone Golem avatars — Scene 5 only) | Do NOT place golems until Scene 5 triggers. Cover positions: north + south stones. |
 | Scene 5: Mars Intervenes | `s4_sacred_grove.html` | 3× Stone_Golem (120 HP each), all PCs | Golems start at altar. Cover positions displace movement by 1 round. |
 
 ### Player Tokens
@@ -33,10 +33,9 @@ Open these maps in MapTool before the session. Switch maps at each scene transit
 
 | Token | File | Scene | Frame Colour |
 |---|---|---|---|
-| Thusnelda | `Maptool/tokens/npcs/Thusnelda.rptok` | S2 onward | Grey → gold if trust earned |
-| Vercingetorix | `Maptool/tokens/npcs/Vercingetorix.rptok` | S2 onward (if alliance) | Gold |
-| Legate Corvinus | `Maptool/tokens/npcs/Corvinus.rptok` | S3 (off-screen — scout evidence only) | Red |
-| Centurion (pursuit) | `Maptool/tokens/npcs/Optio_NCO.rptok` | S3 river far bank | Red |
+| Thusnelda | `Maptool/tokens/npcs/named/Thusnelda.rptok` | S2 onward | Grey → gold if trust earned |
+| Vercingetorix | `Maptool/tokens/npcs/named/Vercingetorix_the_Red.rptok` | S2 onward (if alliance) | Gold |
+| Legate Corvinus | `Maptool/tokens/npcs/named/Legate_Corvinus.rptok` | S3 (off-screen — scout evidence only) | Red |
 
 ### Creature Tokens
 
@@ -46,7 +45,8 @@ Open these maps in MapTool before the session. Switch maps at each scene transit
 | Dire Wolf | `Maptool/tokens/npcs/creatures/Dire_Wolf.rptok` | S1 travel | up to 2 |
 | Tribal Warrior | `Maptool/tokens/npcs/creatures/Tribal_Warrior.rptok` | S2 ambush | 12 |
 | Scout | `Maptool/tokens/npcs/creatures/Scout.rptok` | S2 ambush | 2 |
-| Legionary Milites | `Maptool/tokens/npcs/Fort_Tokens/Legionary_Milites.rptok` | S3 river | 6 |
+| Knight (Centurion, pursuit) | `Maptool/tokens/npcs/creatures/Knight.rptok` | S3 river far bank | 1 |
+| Legionary Milites | `Maptool/tokens/npcs/creatures/Legionary_(Milites).rptok` | S3 river | 6 |
 | Specter (bog spirit) | `Maptool/tokens/npcs/creatures/Specter.rptok` | S3b Farbog | 1 |
 | Will-o-Wisp | `Maptool/tokens/npcs/creatures/Will-o-Wisp.rptok` | S3b Farbog | 3 |
 | Wight (Vættir) | `Maptool/tokens/npcs/creatures/Wight.rptok` | S3b deep bog | up to 2 |
@@ -61,6 +61,7 @@ s3_forest_overview.html    — full forest overview (40px/sq overview scale)
 s3_forest_path.html        — forest trail battle map (60px/sq)
 s3_farbog_crossing.html    — bog crossing battle map (60px/sq)
 s3_germanic_village.html   — Thusnelda's village perimeter (60px/sq)
+s4_sacred_grove_overview.html — sacred grove wide orientation shot (arrival, 40px/sq)
 s4_sacred_grove.html       — sacred grove battle map (scenes 4+5, 60px/sq)
 ```
 
