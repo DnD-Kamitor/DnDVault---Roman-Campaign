@@ -414,7 +414,7 @@ def build_npc_macros_xml(npc):
     gm_notes = npc.get("gm_notes", "")
     if gm_notes:
         info_lines.append(f"GM: {gm_notes[:120]}")
-    info_cmd = "/me [r: \"" + " | ".join(info_lines[:3]) + "\"]"
+    info_cmd = "/me [r: \"" + " | ".join(info_lines) + "\"]"
     attack_entries.append(_macro_entry(idx, "Stats", "Info", "blue", info_cmd))
 
     parts = [standard_entries] + attack_entries
