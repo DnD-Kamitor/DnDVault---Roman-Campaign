@@ -54,7 +54,7 @@ germanic_tribes.qmd ← Germanic tribes, society, runes, seiðr, and magic (GM)
 locations.qmd       ← Detailed location descriptions, skill check menus, vicus, living world
 camp_economy.qmd    ← Six traders, Camp Level 1-3 system, role-gated upgrades (GM)
 chapter1.qmd        ← Session 1: Blood and Omens
-chapter2.qmd        ← Session 2: The Chieftain's Price
+chapter2.qmd        ← Session 2: The Tribune's Gambit
 chapter3.qmd        ← Session 3: Through the Dark Forest
 chapter4.qmd        ← Session 4: The God's Demand
 chapter5.qmd        ← Session 5: The Wrath of Mars
@@ -331,7 +331,7 @@ Do NOT put DC-gated facts in open prose. Always put them inside a collapsible.
 **Chapter YAML front matter:**
 ```yaml
 ---
-title: "Chapter 2: The Chieftain's Price"
+title: "Chapter 2: The Tribune's Gambit"
 ---
 ```
 No `author`, no `date` — those come from `_quarto.yml`.

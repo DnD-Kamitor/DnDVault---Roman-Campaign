@@ -108,19 +108,18 @@ Before the session begins, confirm what happened in Session 1 and update NPC pos
 
 Maps are in `Maptool/maps/campaign/S2_Chieftains_Price/` after running `build_campaign_maps.sh`.
 
-| Scene | Map file(s) | Use |
+| Scene | Map file | Use |
 |---|---|---|
-| Fort departure | `CastleWall`, `BridgeCheckpoint` | Re-use from Session 1; the gate the party exits |
-| Road travel / ambush sites | `RockyRoad`, `MountainPass` | Frontier road encounters; rocky terrain fights |
-| Crossroads choice point | `Crossroads` | The scene where the party chooses which route to take |
-| Roadside Germanic altar | `AltarByTheRoad` | Vercingetorix's offering site; treaty or first contact |
-| Abandoned Germanic village | `AbandonedVillage`, `AbandonedVillageVol2` | Scouting territory; signs of recent evacuation |
-| Chieftain's riverside settlement | `RiversideVillage` | The *Thing* negotiation; the chieftain's seat |
-| Farm encounter | `SmallFarm` | Civilian contact; supply acquisition or ambush |
-| Forest path / scout contact | `ForestPath`, `ForestPath2` | Vercingetorix's test; patrol ambush |
-| Bandit camp | `ForestBanditCamp` | Optional combat; Vercingetorix demonstrating power |
+| Scene 0 — Cold Open | `s2_approach_north.html` + `.jpg` | North wall exterior; Sextus dead at gate post |
+| Scene 1 — Tribune Arrives | `City-Gates-Gridded-22x33-MapPublic.jpg` | Gate arrival ceremony; no battle grid |
+| Scene 2 — Investigation | `saalburg_plan.jpg` (reference only) | Fort NPC positions; orient players to building layout |
+| Scene 3 Ph1 — Wall Defense | `s2_north_wall.html` + `.jpg` | Battle grid 22×14; wall fight, ladders, Druid at treeline |
+| Scene 3 Ph2 — Gate Assault | `s2_west_gate.html` + `.jpg` | Battle grid; Ogre as ram, gate HP 60 |
+| Scene 3 Ph3 — Vercingetorix | `s2_west_gate.html` (same map, after breach) | Vercingetorix walks in; keep Phase 2 map loaded |
+| Scene 4 — Tribune's Move | `saalburg_plan.jpg` (reference only) | Praetorium confrontation; no combat grid needed |
+| Road encounters (optional) | Dice Grimorium JPGs in `S2_Chieftains_Price/` | Road south after session end; see d8 table below |
 
-Fort reference images are also copied here for any fort scenes if the party returns mid-session.
+All SVG maps in `Maptool/maps/` (`.html` + `.jpg` pairs). Downloaded JPGs in `Maptool/maps/campaign/S2_Chieftains_Price/`.
 
 </details>
 
