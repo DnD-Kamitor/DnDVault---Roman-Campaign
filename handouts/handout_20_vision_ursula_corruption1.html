@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vision — Ursula Günther · Corruption I</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'IM Fell English', Georgia, serif;
+  }
+
+  .card {
+    width: 520px;
+    background: #0f0b09;
+    border: 1px solid #2a1a12;
+    padding: 48px 52px 44px;
+    position: relative;
+    box-shadow:
+      0 0 0 1px #1a0d08,
+      0 0 0 4px #0f0b09,
+      0 0 0 5px #2a1208,
+      0 12px 60px rgba(0,0,0,0.9),
+      inset 0 0 80px rgba(180,20,20,0.04);
+  }
+
+  /* Red bleed top */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #8b1a1a 30%, #c0281a 50%, #8b1a1a 70%, transparent);
+  }
+
+  /* Corner marks */
+  .card::after {
+    content: '✦';
+    position: absolute;
+    top: 14px; right: 18px;
+    color: #3a1a12;
+    font-size: 0.7em;
+    letter-spacing: 8px;
+  }
+
+  .label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+
+  .corruption-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6em;
+    letter-spacing: 0.22em;
+    color: #5a2a20;
+    text-transform: uppercase;
+  }
+
+  .session-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 0.55em;
+    letter-spacing: 0.15em;
+    color: #3a2820;
+  }
+
+  .character-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1.55em;
+    font-weight: 700;
+    color: #c8a88a;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+    margin-bottom: 3px;
+  }
+
+  .stage-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75em;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    color: #8b1a1a;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #2a1208;
+    margin: 0 0 24px;
+    position: relative;
+  }
+  .divider::after {
+    content: '⸻ ᛗ ⸻';
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0f0b09;
+    padding: 0 10px;
+    color: #4a2818;
+    font-size: 0.72em;
+    letter-spacing: 0.2em;
+  }
+
+  .vision {
+    color: #c0a898;
+    font-size: 0.98em;
+    line-height: 1.82;
+    font-style: italic;
+    margin-bottom: 22px;
+  }
+
+  .vision p { margin-bottom: 14px; }
+  .vision p:last-child { margin-bottom: 0; }
+
+  .curse-note {
+    border-left: 3px solid #5a1a10;
+    padding: 10px 14px;
+    background: rgba(90,26,16,0.1);
+    margin-bottom: 22px;
+    font-size: 0.84em;
+    color: #9a6860;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  .curse-note strong {
+    color: #c04030;
+    font-style: normal;
+    font-family: 'Cinzel', serif;
+    font-size: 0.82em;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .divider2 {
+    border: none;
+    border-top: 1px solid #1a1008;
+    margin: 0 0 18px;
+  }
+
+  .mechanic-box {
+    background: rgba(20,10,8,0.8);
+    border: 1px solid #2a1810;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+  }
+
+  .mechanic-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58em;
+    letter-spacing: 0.2em;
+    color: #5a3020;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .mechanic-text {
+    font-size: 0.84em;
+    color: #a08070;
+    line-height: 1.5;
+  }
+
+  .mechanic-text strong { color: #d04030; }
+
+  .journal-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58em;
+    letter-spacing: 0.2em;
+    color: #5a3020;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .journal-text {
+    font-size: 0.88em;
+    color: #907870;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .card {
+      border: 1px solid #ccc;
+      box-shadow: none;
+      width: 100%;
+      padding: 36px 40px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="label-row">
+    <div class="corruption-tag">Corruption · Level I · The Noticed</div>
+    <div class="session-tag">Chapter II</div>
+  </div>
+
+  <div class="character-name">Ursula Günther</div>
+  <div class="stage-name">The Noticed</div>
+
+  <hr class="divider">
+
+  <div class="vision">
+    <p>
+      Something has shifted in your dreams. You stand in the arena. The crowd is roaring but the sound
+      is wrong — too close, too many voices, all saying your mother's name in Latin. The axe is in your
+      hands. The floor is wet. You do not look down.
+    </p>
+    <p>
+      From the imperial box, something watches. It is wearing your mother's face. It does not look
+      grieved, or satisfied, or triumphant. It looks <em>interested</em>. You are an animal that has
+      done something unexpected, and it would like to see what you do next.
+    </p>
+    <p>
+      You wake with iron on your tongue. The feeling takes an hour of daylight to clear. Sometimes it
+      does not clear entirely.
+    </p>
+  </div>
+
+  <div class="curse-note">
+    <strong>The Axe</strong>
+    Last night the handle of the greataxe was warm before the rest of you was awake. That has not
+    happened before. You did not mention it to anyone.
+  </div>
+
+  <hr class="divider2">
+
+  <div class="mechanic-box">
+    <div class="mechanic-label">Mechanical Effect</div>
+    <div class="mechanic-text">
+      Disturbing visions of conquest visit you in sleep. Make a <strong>DC 10 Wisdom saving throw</strong>
+      to remember the dream clearly — on a failure, you wake with only a sense of unease and iron, but
+      no images you can describe. Your GM will tell you when to roll.
+    </div>
+  </div>
+
+  <div class="journal-label">Journal Prompt</div>
+  <div class="journal-text">
+    What did I dream about, and what does it say about what I am afraid I already want?
+  </div>
+
+</div>
+
+</body>
+</html>

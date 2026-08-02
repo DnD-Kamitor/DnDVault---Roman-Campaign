@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vision — Julia Jana · Corruption II</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'IM Fell English', Georgia, serif;
+  }
+
+  .card {
+    width: 520px;
+    background: #090b0f;
+    border: 1px solid #12181f;
+    padding: 48px 52px 44px;
+    position: relative;
+    box-shadow:
+      0 0 0 1px #080c12,
+      0 0 0 4px #090b0f,
+      0 0 0 5px #0e1420,
+      0 12px 60px rgba(0,0,0,0.9),
+      inset 0 0 80px rgba(20,40,100,0.04);
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #1a2a6a 30%, #2a3a9a 50%, #1a2a6a 70%, transparent);
+  }
+
+  .card::after {
+    content: '✦';
+    position: absolute;
+    top: 14px; right: 18px;
+    color: #1a2040;
+    font-size: 0.7em;
+    letter-spacing: 8px;
+  }
+
+  .label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+
+  .corruption-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6em;
+    letter-spacing: 0.22em;
+    color: #2a3a6a;
+    text-transform: uppercase;
+  }
+
+  .session-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 0.55em;
+    letter-spacing: 0.15em;
+    color: #1a2040;
+  }
+
+  .character-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1.55em;
+    font-weight: 700;
+    color: #b8b8d8;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+    margin-bottom: 3px;
+  }
+
+  .stage-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75em;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    color: #2a3a8a;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #121824;
+    margin: 0 0 24px;
+    position: relative;
+  }
+  .divider::after {
+    content: '⸻ ᛁ ⸻';
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #090b0f;
+    padding: 0 10px;
+    color: #1e2840;
+    font-size: 0.72em;
+    letter-spacing: 0.2em;
+  }
+
+  .vision {
+    color: #a8a8c8;
+    font-size: 0.98em;
+    line-height: 1.82;
+    font-style: italic;
+    margin-bottom: 22px;
+  }
+
+  .vision p { margin-bottom: 14px; }
+  .vision p:last-child { margin-bottom: 0; }
+
+  .what-you-notice {
+    border-left: 3px solid #1a2a5a;
+    padding: 10px 14px;
+    background: rgba(20,30,80,0.12);
+    margin-bottom: 22px;
+    font-size: 0.84em;
+    color: #6878a8;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  .what-you-notice strong {
+    color: #4060c0;
+    font-style: normal;
+    font-family: 'Cinzel', serif;
+    font-size: 0.82em;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .divider2 {
+    border: none;
+    border-top: 1px solid #101520;
+    margin: 0 0 18px;
+  }
+
+  .mechanic-box {
+    background: rgba(8,10,18,0.8);
+    border: 1px solid #141c2a;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+  }
+
+  .mechanic-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58em;
+    letter-spacing: 0.2em;
+    color: #2a3858;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .mechanic-text {
+    font-size: 0.84em;
+    color: #8898b8;
+    line-height: 1.5;
+  }
+
+  .mechanic-text strong { color: #4060c8; }
+
+  .journal-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58em;
+    letter-spacing: 0.2em;
+    color: #2a3858;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .journal-text {
+    font-size: 0.88em;
+    color: #7888a8;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .card {
+      border: 1px solid #ccc;
+      box-shadow: none;
+      width: 100%;
+      padding: 36px 40px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="label-row">
+    <div class="corruption-tag">Corruption · Level II · The Pulled</div>
+    <div class="session-tag">Chapter II</div>
+  </div>
+
+  <div class="character-name">Julia Jana</div>
+  <div class="stage-name">The Pulled</div>
+
+  <hr class="divider">
+
+  <div class="vision">
+    <p>
+      You are standing in the Forum. The senators are arguing — about grain, about the frontier,
+      about something you cannot quite hear. You watch them and notice, with a clarity that should
+      trouble you, which ones could be removed without disrupting the vote count. You notice this
+      before you notice their faces. You notice it before you notice whether you know them.
+    </p>
+    <p>
+      Your father is there. You notice that he is an obstacle before you notice that he is your father.
+      The recognition comes a moment later, and then the shame — but the shame comes <em>second</em>.
+      It came second. That is the thing you carry when you wake.
+    </p>
+    <p>
+      Janus governs thresholds. You have always known what lies on either side of a door.
+      What is new is which side is starting to feel like home.
+    </p>
+  </div>
+
+  <div class="what-you-notice">
+    <strong>What Others Notice</strong>
+    Your patience has shortened. Not dramatically — you are still functional, still composed. But people
+    who know you well can see it: the margin between frustration and action is narrower than it used to
+    be. You speak about difficult solutions casually, in conversations where you would not have before.
+  </div>
+
+  <hr class="divider2">
+
+  <div class="mechanic-box">
+    <div class="mechanic-label">Mechanical Effect</div>
+    <div class="mechanic-text">
+      You have <strong>disadvantage on Wisdom saving throws</strong>. This persists until your corruption
+      level changes. Your GM knows this. You may not have disclosed it to your companions.
+    </div>
+  </div>
+
+  <div class="journal-label">Journal Prompt</div>
+  <div class="journal-text">
+    When did I stop thinking of an enemy as a person — and can I remember the last time I thought of them as one?
+  </div>
+
+</div>
+
+</body>
+</html>
