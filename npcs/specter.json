@@ -9,7 +9,14 @@
   "ac": 12,
   "ac_note": "natural armor",
   "speed": "fly 50 ft. (hover)",
-  "ability_scores": {"STR": 1, "DEX": 14, "CON": 11, "INT": 10, "WIS": 10, "CHA": 11},
+  "ability_scores": {
+    "STR": 1,
+    "DEX": 14,
+    "CON": 11,
+    "INT": 10,
+    "WIS": 10,
+    "CHA": 11
+  },
   "saving_throw_proficiencies": [],
   "skill_proficiencies": [],
   "skill_overrides": {},
@@ -20,7 +27,7 @@
   "languages": "",
   "macro_file": "specter_attacks.mts",
   "token_color": "#1a1a2e",
-  "portrait_file": "",
+  "portrait_file": "../images/lemures_fresco.jpg",
   "notes": "CR 1. Incorporeal. Life Drain reduces HP max.",
   "gm_notes": "Session 5 final vault. Life Drain: DC 10 CON save or HP max reduced by damage amount. Incorporeal Movement: passes through nonmagical objects. Sunlight Sensitivity: disadvantage on attacks and Perception in sunlight.",
   "session": 5

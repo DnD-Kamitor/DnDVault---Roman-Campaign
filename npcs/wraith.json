@@ -9,7 +9,14 @@
   "ac": 13,
   "ac_note": "natural armor",
   "speed": "fly 60 ft. (hover)",
-  "ability_scores": {"STR": 6, "DEX": 16, "CON": 16, "INT": 12, "WIS": 14, "CHA": 15},
+  "ability_scores": {
+    "STR": 6,
+    "DEX": 16,
+    "CON": 16,
+    "INT": 12,
+    "WIS": 14,
+    "CHA": 15
+  },
   "saving_throw_proficiencies": [],
   "skill_proficiencies": [],
   "skill_overrides": {},
@@ -20,7 +27,7 @@
   "languages": "The languages it knew in life",
   "macro_file": "wraith_attacks.mts",
   "token_color": "#1a1a2e",
-  "portrait_file": "",
+  "portrait_file": "../images/lemures_fresco.jpg",
   "notes": "CR 5. Life drain reduces HP max. Creates specter thralls.",
   "gm_notes": "Session 5 final vault. Life Drain: DC 14 CON save or HP max reduced by damage amount. HP max reduction lasts until long rest. Humanoid killed by Life Drain rises as specter (not under wraith's control). Incorporeal Movement: passes through nonmagical objects.",
   "session": 5

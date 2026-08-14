@@ -9,10 +9,21 @@
   "ac": 12,
   "ac_note": "natural armor",
   "speed": "40 ft.",
-  "ability_scores": {"STR": 6, "DEX": 14, "CON": 13, "INT": 6, "WIS": 10, "CHA": 8},
+  "ability_scores": {
+    "STR": 6,
+    "DEX": 14,
+    "CON": 13,
+    "INT": 6,
+    "WIS": 10,
+    "CHA": 8
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Stealth"],
-  "skill_overrides": {"Stealth": 4},
+  "skill_proficiencies": [
+    "Stealth"
+  ],
+  "skill_overrides": {
+    "Stealth": 4
+  },
   "resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
   "immunities": "necrotic, poison",
   "condition_immunities": "exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
@@ -20,7 +31,7 @@
   "languages": "",
   "macro_file": "shadow_attacks.mts",
   "token_color": "#1a1a2e",
-  "portrait_file": "",
+  "portrait_file": "../images/genius_loci.jpg",
   "notes": "CR 1/2. Stealth +4. Vulnerable to radiant damage. Undead.",
   "gm_notes": "Session 1 Flooded Gallery (x4), Altar Chamber (x2). Life Drain: on hit, STR reduced by 1d4. Creature dies and rises as Shadow if STR drops to 0. Advantage in dim light or darkness.",
   "session": 1
