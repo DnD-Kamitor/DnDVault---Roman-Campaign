@@ -185,6 +185,51 @@ Five seconds of silence before you speak. Then:
 ---
 
 <details>
+<summary>📁 Scene 1b: The Boundary Stone — Riddle</summary>
+
+**Run this as a dedicated scene — not a d10 roll.** Place it on Day 2 of travel, one hour before the Farbog. Travel event 10 is the trigger; give it the full treatment below.
+
+**Read aloud:**
+
+> *The path narrows between two moss-covered oaks. At the gap's center, a granite slab rises knee-high from the earth — older than any Roman stonework in this region. The carvings on it spiral inward, holding traces of ochre and red pigment.*
+>
+> *Thusnelda stops. She does not step forward.*
+>
+> *"The old ones ask a question before they let you pass," she says quietly. "I will translate. The answer must come from you. I will not give it."*
+
+She reads the stone for a moment, then speaks:
+
+> *"I travel between enemies without walking. I am forged in darkness and tested in flame. Armies fail without me. Gods demand me. I take years to build and a heartbeat to destroy. Without me, the ritual at the grove will not hold."*
+
+**Answering the riddle:**
+
+| Answer | Response |
+|---|---|
+| Trust / *fides* / loyalty | Accepted. Stone glows faintly gold. Easier Farbog navigation: Perception DC 9 instead of DC 11. |
+| Courage / *virtus* / honor | Also accepted. Thusnelda: *"The old tongue has one word for all of these."* Same effect. |
+| The spear / power / strength | Thusnelda: *"You are thinking like soldiers. Think like the land."* One more attempt allowed. |
+| Wrong on second attempt | Stone dims. A cold shadow detaches from its base: one automatic Disrespect trigger in the Farbog. |
+| Any thematically valid answer | DM's call. Peace, patience, faith — all work. The stone rewards intent. |
+
+**Religion DC 12 (passive):** The carvings mark the threshold between the living world and Vættir land. The stone is not a monument. It is a gate. The question is the toll.
+
+Thusnelda will not re-read or interpret the riddle after she has spoken it. "The stone heard. We can discuss it after we have crossed."
+
+**Why it matters:** The party's answer shapes Thusnelda's language at the grove ritual. If they answered with trust: she frames the required sacrifice as an act of faith. If courage: she frames it as a test of worth. She will use their own words back at them, quietly, at the worst possible moment.
+
+::: {.dm-note}
+**If debate runs more than 5 real-world minutes:** *"The stone has no patience."* She waits. She does not cross. This is not a threat — but it is felt as one.
+
+**If no one has Religion proficiency:** The stone is still translatable by Thusnelda regardless. The Religion DC only reveals the gate nature of the stone — additional context, not required to proceed.
+
+**If the party ignores the stone and walks past:** The shadow follows anyway. They insulted the gate without answering. Two Disrespect triggers for the Farbog — guaranteed Vættir encounter.
+:::
+
+</details>
+
+---
+
+<details>
 <summary>📁 Scene 2: Thusnelda's Scouts</summary>
 
 **If allied with Vercingetorix:** Four forest-dark figures appear. He raises a fist. They stop. The scouts lead the party to Thusnelda. *Toll: information about Roman troop movements. Technical treason. Practically necessary.*
@@ -298,6 +343,58 @@ Dispersed by Group Acknowledgment: every party member simultaneously drops one i
 
 - Success: lights halt, pause, drift back one by one.
 - Failure: one additional Vættir per round. Cannot be outrun. Thusnelda performs the rite alone if party falls — she succeeds but arrives at the grove visibly exhausted and answers in shorter sentences for the rest of the session.
+
+</details>
+
+---
+
+<details>
+<summary>📁 Scene 3c: The Watching Post — Rune Lock (Puzzle)</summary>
+
+**Location:** Fifty metres off the main path, visible from the rise before the bog proper. Run after Encounter A (Myling) and Encounter B (Sacrifice Site), before reaching the standing stones.
+
+**Read aloud:**
+
+> *Four standing stones form a small roofless chamber. The floor is packed earth with a circular depression at its centre — an old fire pit. The ash inside is recent. Someone has been here within the week.*
+>
+> *On the north stone, a fitted plug seals a natural cavity. Set into the plug's face in a ring: five flat rune tiles, each carved from a different type of stone. One socket is slightly recessed, a finger's width deeper than the rest. The others sit flush, waiting.*
+
+**The five tiles:**
+
+| Rune | Name | Meaning |
+|---|---|---|
+| ᛗ | MANNAZ | Man / Humanity |
+| ᚱ | RAIDHO | Journey / Ride |
+| ᚹ | WUNJO | Joy / Pleasure |
+| ᚦ | THURISAZ | Danger / Giant / Thorn — **decoy** |
+| ᛖ | EHWAZ | Horse / Movement — **decoy** |
+
+**Correct sequence:** ᛗ → ᚱ → ᚹ (MANNAZ, then RAIDHO, then WUNJO.)
+
+**The clue:** Thusnelda's Map (Handout 6) has three small runes written in the bottom margin: *ᛗ ᚱ ᚹ* with the inscription *mannaz raidho wunjo* — "The man who makes this journey finds what he seeks."
+
+| Check | DC | What they learn |
+|---|---|---|
+| Arcana (active: comparing tiles to the map) | 12 | "Three of these tiles match the runes on the map. The map's order is the sequence." |
+| Religion (active: same comparison) | 11 | Same result. The runes form a ritual sentence — a statement of intent. |
+| Trial and error (no check) | — | Works. Each wrong sequence triggers the warding seal before tiles reset. |
+
+**Warding seal (wrong sequence):** 1d6 cold damage to whoever is touching the lock. Tiles reset. Pressing THURISAZ or EHWAZ as first or second: seal triggers immediately — they are decoys placed to punish impatience.
+
+**Contents on success:**
+- Sealed clay flask: *oil of slipperiness* (1 dose) — immediately useful for bog mud (Athletics DC 13 becomes DC 9)
+- Folded leather strip: crude map confirming the grove's exact location
+- Wax tablet: *IF YOU ARE READING THIS, YOU ARE LOOKING FOR THE SAME THING WE WERE. WE FAILED. DO NOT STOP.*
+
+**If Thusnelda sees the tablet:** *"They got further than I thought. I did not know they reached the ruins."* She does not elaborate. Her expression does.
+
+::: {.dm-note}
+The tablet was left by Vercingetorix's grandfather's warband — the party that failed the ritual fifty years ago, the failure Thusnelda has carried since she was twenty-three. She will not share this unless the party earns that trust at the grove.
+
+The puzzle rewards players who kept Handout 6 and actually read it. Do not hint at the handout connection unless the party has been stuck for 10+ real-world minutes — the moment of recognition is the payoff.
+
+If someone presses THURISAZ first: appropriate, honestly. The rune means danger. The seal knows.
+:::
 
 </details>
 

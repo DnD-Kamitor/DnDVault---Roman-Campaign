@@ -20,7 +20,7 @@
   "languages": "Common, Goblin",
   "macro_file": "goblin_skirmisher.mts",
   "token_color": "#1a5a08",
-  "portrait_file": "",
+  "portrait_file": "portraits/goblin_skirmisher.png",
   "notes": "Nimble Escape: Hide or Disengage as bonus action every round. Never provokes opportunity attacks. Auto-flees at 4 HP or below — no morale check, they just run. Use in groups of 8-12 for suppression fire.",
   "gm_notes": "Role: harass, suppress, deny sight lines. Not here to fight in melee. 12 goblins firing creates constant pressure without being lethal — defenders must keep heads down (disadvantage on ranged if suppressed). Goblin culture: they flee competently, not stupidly. They WILL come back next round from a new position.",
   "session": 2

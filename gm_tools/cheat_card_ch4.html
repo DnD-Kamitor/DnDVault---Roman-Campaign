@@ -82,8 +82,10 @@
   <button class="tab-btn" onclick="showTab('s0', this)">0 · The Bell</button>
   <button class="tab-btn" onclick="showTab('s1', this)">1 · Council</button>
   <button class="tab-btn" onclick="showTab('s2', this)">2 · Preparation</button>
+  <button class="tab-btn" onclick="showTab('puzzle', this)">&#128274; Puzzle</button>
   <button class="tab-btn" onclick="showTab('s3', this)">3 · Tunnels</button>
   <button class="tab-btn" onclick="showTab('s4', this)">4 · Antechamber</button>
+  <button class="tab-btn" onclick="showTab('riddle', this)">&#128273; Riddle</button>
   <button class="tab-btn" onclick="showTab('npcs', this)">NPCs</button>
   <button class="tab-btn" onclick="showTab('wrong', this)">If Wrong</button>
   <button class="tab-btn" onclick="showTab('server', this)">MapTool</button>
@@ -281,6 +283,51 @@
 </div>
 </div>
 
+<!-- ═══ PUZZLE ═══ -->
+<div id="tab-puzzle" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Scene 2b: The Testudo Tile Lock</div>
+    <div class="setup-line"><span class="lbl">When:</span> Party descends the hidden stair — only if scouted during Scene 2 (Perception 14). Side passage used if not scouted: no puzzle, no risk.</div>
+    <div class="setup-line"><span class="lbl">Setup:</span> Nine flagstones, 3×3 grid, base of stair. Each carved with a Roman soldier figure in different posture.</div>
+    <div class="note">Wrong stone = retractable spike (2d4 pierce) + creak loud enough to alert Animated Armors in Room 1.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Safe path — Testudo front rank</div>
+    <div style="font-size:0.85em;text-align:center;padding:8px;border:1px solid #333;background:#111;margin:4px 0;font-family:monospace;line-height:2.2">
+      [ &nbsp; ] [&#10003;] [ &nbsp; ]<br>
+      [ &nbsp; ] [ &nbsp; ] [&#10003;]<br>
+      [&#10003;] [ &nbsp; ] [ &nbsp; ]
+    </div>
+    <div style="font-size:0.82em;color:#888">Front-left → front-center → shield-right corner. L-shape across bottom and right edge.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Three Clues</div>
+    <div class="clue"><strong>Perception 12 (hold torch low, crouch):</strong> Faint chalk marks on the three safe stones — someone used this before.</div>
+    <div class="clue"><strong>History 14 (studying carvings):</strong> Figures are testudo front rank positions — military formation puzzle.</div>
+    <div class="clue"><strong>H9 margin diagram:</strong> Small formation diagram in Handout 9 margin shows shield-bearer foot positions — matches the three safe stones exactly.</div>
+  </div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Mechanics</div>
+    <table>
+      <tr><th>Action</th><th>Check</th><th>Result</th></tr>
+      <tr><td class="k">Step on wrong stone</td><td class="v">Automatic</td><td class="v">2d4 pierce + creak (Perception DC 12 in Room 1)</td></tr>
+      <tr><td class="k">Disarm triggered tile</td><td class="v">Thieves' Tools 13 (active, crouching)</td><td class="v">Resets tile. Two adjacent to path unstable if not reset.</td></tr>
+      <tr><td class="k">Carry spear through</td><td class="v">Athletics 11 (balance)</td><td class="v">Fail: stumble into adjacent tile</td></tr>
+      <tr><td class="k">Keystone bypass</td><td class="v">Arcana 16 (active, full minute)</td><td class="v">Wall keystone resets all 9 tiles. Takes 1 round. Free hand required.</td></tr>
+    </table>
+  </div>
+  <div class="block">
+    <div class="block-title">Hidden world detail</div>
+    <div style="font-size:0.82em;color:#aaa">Chalk marks — same handwriting as S1 vault wax tablet. <strong>History 14 passive</strong> (if player saw that tablet): someone used this route before the fort was built. Do not explain. Leave it.</div>
+  </div>
+</div>
+</div>
+</div>
+
 <!-- ═══ SCENE 3 ═══ -->
 <div id="tab-s3" class="tab-pane">
 <div class="grid2">
@@ -401,6 +448,49 @@
     </ul>
   </div>
   <div class="ends">Spear on altar. Siege pauses. Long rest (if Vercingetorix allied). Level 7. → Ch5.</div>
+</div>
+</div>
+</div>
+
+<!-- ═══ RIDDLE ═══ -->
+<div id="tab-riddle" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Scene 4: The Riddle of the Loudest Heart</div>
+    <div class="setup-line"><span class="lbl">When:</span> Three kneeling mortals reach the antechamber door. It is sealed.</div>
+    <div class="setup-line"><span class="lbl">Connection:</span> Same words as Room 1 clue — if party found it, make the link explicit.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">The inscription (read aloud)</div>
+    <div class="ra">"Above the lintel: AUDIT DEUS COR — 'The god hears the heart.' Below, in Elder Futhark: ANSUZ (ᚨ), THURISAZ (ᚦ), WUNJO (ᚹ). Cassia translates: 'He is asking for something true.'"</div>
+  </div>
+  <div class="block">
+    <div class="block-title">The question (unstated — implied by the inscription)</div>
+    <div class="now" style="font-size:0.9em;font-style:italic">"What have you given for this mission that you cannot take back?"</div>
+    <div style="margin-top:5px;font-size:0.82em;color:#aaa">Each of the three kneeling mortals must answer aloud, in character. Door does not open until all three have spoken. Truth matters. Eloquence does not.</div>
+  </div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Response mechanics</div>
+    <table>
+      <tr><th>Answer type</th><th>What happens</th></tr>
+      <tr><td class="k">Genuine cost, stated in character</td><td class="v">Inscription dims. Waits for remaining speakers.</td></tr>
+      <tr><td class="k">Deflected / hollow / strategic</td><td class="v">Red glow once. May try again. Second deflection: 1d6 psychic.</td></tr>
+      <tr><td class="k">Silent refusal</td><td class="v">1d4 psychic per round of silence. Inscription waits. Does not repeat.</td></tr>
+      <tr><td class="k">One answers for all three</td><td class="v">Red glow. Latin returns: COR — heart. Singular. Each must speak.</td></tr>
+    </table>
+    <div class="note">Insight 12 passive (any witness): detects a hollow answer before the inscription reacts — lets party redirect privately.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">After all three speak</div>
+    <div style="font-size:0.83em">Carving darkens. Lintel drops inward. Chamber opens with cold air. No roll required.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Payoff at the altar</div>
+    <div style="font-size:0.83em;color:#a8c8a8">Any kneeling character who gave a genuine answer here: HP cost at the sacrifice altar reduced by 5 HP (minimum 5 HP). Mars heard them before they knelt.</div>
+  </div>
 </div>
 </div>
 </div>

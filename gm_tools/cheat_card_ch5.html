@@ -49,7 +49,9 @@
 <div class="tabs">
   <button class="active" onclick="showTab('pre')">Pre-Session</button>
   <button onclick="showTab('s0')">0·Silence</button>
+  <button onclick="showTab('puzzle')">&#128274; Puzzle</button>
   <button onclick="showTab('s1')">1·Trial Choice</button>
+  <button onclick="showTab('riddle')">&#128273; Riddle</button>
   <button onclick="showTab('s2a')">2A·Champion</button>
   <button onclick="showTab('s2b')">2B·Blades</button>
   <button onclick="showTab('s2c')">2C·Voice</button>
@@ -140,6 +142,44 @@
   </div>
 </div>
 
+<!-- PUZZLE: ARIES CONSTELLATION -->
+<div id="puzzle" class="tab-content">
+  <h1>Puzzle: The Stars of Aries (Scene 0)</h1>
+  <div class="grid2">
+    <div>
+      <div class="block">
+        <div class="block-title">When</div>
+        Scene 0 only — before Mars speaks his first sentence. Window closes the instant he addresses the party.
+      </div>
+      <div class="block">
+        <div class="block-title">What to See</div>
+        The twelve arena weapons embedded in the air around the perimeter are not random. They form <strong>Aries the Ram</strong> — twelve stars, twelve weapons. The <strong>Ram's Eye</strong> (center of the horns arc) is a plain unadorned spear at the eastern arc, set slightly higher than the others.
+      </div>
+      <div class="block">
+        <div class="block-title">Recognition Checks</div>
+        <table>
+          <tr><th>Check</th><th>DC</th><th>Benefit</th></tr>
+          <tr><td>Religion (active — map weapons to sky)</td><td class="dc">13</td><td>Recognizes Aries. +1 to all checks and saves for the entire trial. Party is oriented inside Mars' symbolic space.</td></tr>
+          <tr><td>Arcana (passive — placement logic)</td><td class="dc">14</td><td>Same recognition + Ram's Eye identified. Option A: Fausta reaches for it first (intercept = adv 1st atk). Option B: Mars uses it round 3 legendary strike (advance warning). Option C: naming it = +2 to Persuasion DC 19.</td></tr>
+          <tr><td>History (active — Aries as Mars' constellation)</td><td class="dc">12</td><td>After Religion 13 success. Confirms Ram's Eye. +1 stacks.</td></tr>
+        </table>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-title">Notes</div>
+        <div class="clue">No roll required to benefit — only to recognize. Benefit is passive once recognized.</div>
+        <div class="clue">If no one succeeds: "the weapons seem to follow some pattern" — invite active investigation without giving the answer.</div>
+        <div class="warn">Window closes when Mars speaks. Do not hold the moment open once he addresses the party.</div>
+      </div>
+      <div class="block">
+        <div class="block-title">In Option C</div>
+        <div style="font-size:0.83em">Invoking the Ram's Eye verbally during Option C — "we understood your language before you spoke" — grants +2 to the DC 19 Persuasion roll. One-time use only.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- SCENE 1: TRIAL CHOICE -->
 <div id="s1" class="tab-content">
   <h1>Scene 1: Mars Specifies the Trial</h1>
@@ -177,6 +217,43 @@
         <div class="clue">S4 Antechamber: the spear completed the procession — the act itself was correct. The motivation is what he is judging.</div>
       </div>
       <div class="ends">Party names their choice → go to appropriate Scene 2 tab.</div>
+    </div>
+  </div>
+</div>
+
+<!-- RIDDLE: MARS' QUESTION -->
+<div id="riddle" class="tab-content">
+  <h1>Riddle: The Soldier's Oath (Scene 1)</h1>
+  <div class="grid2">
+    <div>
+      <div class="block">
+        <div class="block-title">When</div>
+        Scene 1 — Mars speaks this before announcing the three trial options. No skill roll. Character moment only.
+      </div>
+      <div class="block">
+        <div class="block-title">Mars asks (read aloud)</div>
+        <div class="ra">"A soldier swears an oath at induction. He swears it again at each promotion. He swears it to no one present at either swearing. Name what he has actually sworn."</div>
+        He does not call it a question. He asks it as a man asks something he already knows the answer to. He waits for as long as characters speak, then states the three options.
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-title">Answers and Their Effects</div>
+        <table>
+          <tr><th>Answer</th><th>Effect in Scene 2</th></tr>
+          <tr><td>"To Rome / to the Emperor"</td><td>Nods once. Standard conditions.</td></tr>
+          <tr><td>"To the men beside me / to the dead"</td><td>Mars looks at that PC for one breath. Option C: their opening gains +2 if they invoke this loyalty.</td></tr>
+          <tr><td>"To something that doesn't need me to name it"</td><td>Head tilt. Silence. Option B: he targets that PC last. Finds it interesting.</td></tr>
+          <tr><td>Invokes what the party did (grove, spear, kneeling)</td><td>He listens without moving. Option C: adv on first Insight DC 15 mid-argument.</td></tr>
+          <tr><td>"To Mars" (direct flattery)</td><td>"That is what the priest says. Not the soldier." Standard conditions.</td></tr>
+          <tr><td>Silence</td><td>Selects Option B without naming the other choices.</td></tr>
+        </table>
+      </div>
+      <div class="block">
+        <div class="block-title">DM Notes</div>
+        <div class="warn">No wrong answer except silence. Allow everyone who wants to speak to speak. Mars acknowledges each speaker with his eyes. He does not repeat the question.</div>
+        <div style="font-size:0.82em;color:#aaa;margin-top:4px">This is the last quiet moment before the trial. Give each player one beat as their character before the arena begins.</div>
+      </div>
     </div>
   </div>
 </div>

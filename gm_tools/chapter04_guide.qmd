@@ -194,6 +194,38 @@ Player choice: follow (toward Vercingetorix's camp), resist (Wisdom DC 12 or the
 ---
 
 <details>
+<summary>📁 Scene 2b: The Testudo Floor Lock (Puzzle)</summary>
+
+Found only if the party scouted the hidden stair (Perception DC 14 during Scene 2 preparation). If not scouted, the party enters Room 1 via a side passage — no puzzle, no risk, no chalk-mark connection.
+
+**Setup:** Nine flagstones in a 3×3 grid block the base of the stair. Each stone is carved with a Roman soldier figure in a different posture: kneeling shield-bearer, standing pilum-thrower, crouching spear-braced, and six others. Stepping on a wrong stone triggers a retractable floor spike (2d4 piercing) and a creak loud enough to draw the Animated Armors in Room 1 toward the noise.
+
+**The safe path:** Three stones only, matching the testudo formation's front rank foot positions: front-left then front-center then shield-right corner. An L-shape across the bottom and right edge of the grid.
+
+**Clues available:**
+
+| Clue | Source | What it reveals |
+|---|---|---|
+| Chalk marks on safe stones | Perception DC 12 (active: hold torch low, crouch to floor level) | Three faint chalk marks on the correct stones — someone used this route before |
+| Formation pattern | History DC 14 (active: studying the carvings) | Soldier figures depict testudo front rank positions — a military formation puzzle |
+| Handout 9 margin diagram | Active: party reads H9 carefully and studies the formation diagram | Small diagram in the margin shows shield-bearer foot positions — matches the three safe stones exactly |
+
+**Mechanics:**
+
+| Action | Check | Result |
+|---|---|---|
+| Step on wrong stone | None — automatic | 2d4 piercing + loud creak (Perception DC 12 for anyone in Room 1 above) |
+| Disarm triggered tile | Thieves' Tools DC 13 (active: crouching, exposed) | Resets one tile. Two tiles adjacent to correct path are unstable if not reset. |
+| Carry the spear through | Athletics DC 11 (active: managing weight and balance on the three specific tiles) | Failure: stumble into an adjacent tile |
+| Find the keystone bypass | Arcana DC 16 (active: studying the mechanism for one full minute) | A carved keystone in the wall resets all nine stones to safe. Takes one full round. Requires a free hand. |
+
+**Hidden reward:** The chalk marks use the same handwriting as the wax tablet from the Session 1 vault. A character who saw that tablet and succeeds on History DC 14 (passive) makes the connection — someone used this route before the fort was built. Do not explain it. Leave it as a world detail.
+
+</details>
+
+---
+
+<details>
 <summary>📁 Scene 3: The Procession Below</summary>
 
 **Read aloud when the stair opens:**
@@ -246,6 +278,25 @@ If the party refuses: Mars adds an extra trial in Session 5 (one additional anim
 > *"Bring me what is mine and speak your price."*
 
 **The callback:** This is the same chamber as Session 1. The same altar, the same chain anchors, the Wight's remains if the party left them. The campaign begins and ends in the same circle of stone. Narrate the recognition explicitly.
+
+**The door does not open immediately.** Three Latin words are carved above the lintel: *AUDIT DEUS COR* — "The god hears the heart." Below them, in Elder Futhark: ANSUZ (ᚨ), THURISAZ (ᚦ), WUNJO (ᚹ). Cassia translates quietly: *"He is asking for something true."* This is the answer to the Room 1 clue ("The god hears the loudest heart"). If the party found it, make the connection explicit.
+
+**The Riddle of the Loudest Heart:**
+
+Each of the three kneeling mortals must answer aloud, in their own words: *"What have you given for this mission that you cannot take back?"*
+
+Mars will not open the chamber until all three have spoken. The honesty of the answer matters. The eloquence does not. Insight DC 12 (passive, any witness): detects a hollow or deflected answer before the inscription reacts — lets other party members redirect the speaker privately.
+
+| Answer type | What happens |
+|---|---|
+| True cost stated in character | Inscription dims. Waits for remaining speakers. |
+| Deflected or hollow answer | Inscription glows red once. Speaker may try again. Second deflection: 1d6 psychic damage. |
+| Silent refusal | 1d4 psychic damage per round of silence. The inscription does not repeat the question. It waits. |
+| One character answers for all three | Inscription glows red. The word *COR* — heart — returns alone. Each must speak. |
+
+After all three have spoken: the carving darkens, the lintel drops inward, the chamber opens with a breath of cold air. No roll required. Only truth.
+
+**Payoff:** Any kneeling character who gave a genuine answer at the door has their HP cost at the sacrifice altar reduced by 5 HP (minimum 5 HP). Mars heard them before they knelt.
 
 **The sacrifice declaration:**
 

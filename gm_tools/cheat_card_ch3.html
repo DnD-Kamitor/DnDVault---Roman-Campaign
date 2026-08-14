@@ -81,8 +81,10 @@
   <button class="tab-btn active" onclick="showTab('pre', this)">⚙ Pre-Session</button>
   <button class="tab-btn" onclick="showTab('s0', this)">0 · Cold Open</button>
   <button class="tab-btn" onclick="showTab('s1', this)">1 · Forest Travel</button>
+  <button class="tab-btn" onclick="showTab('riddle', this)">&#128292; Riddle</button>
   <button class="tab-btn" onclick="showTab('s2', this)">2 · Thusnelda</button>
   <button class="tab-btn" onclick="showTab('s3', this)">3 · River + Farbog</button>
+  <button class="tab-btn" onclick="showTab('puzzle', this)">&#128274; Puzzle</button>
   <button class="tab-btn" onclick="showTab('s4', this)">4 · Sacred Grove</button>
   <button class="tab-btn" onclick="showTab('npcs', this)">NPCs</button>
   <button class="tab-btn" onclick="showTab('wrong', this)">If Wrong</button>
@@ -118,6 +120,19 @@
   </div>
 </div>
 <div>
+  <div class="block">
+    <div class="block-title">Session structure — 2 combats + puzzle + riddle + RP</div>
+    <table>
+      <tr><th>Scene</th><th>Type</th><th>Notes</th></tr>
+      <tr><td class="k">S0 Cold Open</td><td class="v">RP</td><td class="v">Spear glows, influenced NPC found sleepwalking. Seed only.</td></tr>
+      <tr><td class="k">S1 Forest Travel</td><td class="v">RP / skill</td><td class="v">d10 events, 3 influence clues to plant.</td></tr>
+      <tr><td class="k">S1b Boundary Stone</td><td class="v"><strong>RIDDLE</strong></td><td class="v">Party answers before crossing into Vaettir land.</td></tr>
+      <tr><td class="k">S2 Thusnelda</td><td class="v">RP</td><td class="v">Always diplomatic. Give H6 on Persuasion 14.</td></tr>
+      <tr><td class="k">S3 River Crossing</td><td class="v"><strong>COMBAT 1</strong></td><td class="v">Pursuit force arrives mid-crossing. Diplomatic out: Intimidation 14.</td></tr>
+      <tr><td class="k">S3b Farbog</td><td class="v"><strong>COMBAT 2</strong> + <strong>PUZZLE</strong></td><td class="v">Vaettir always triggered. Puzzle at Watching Post (50m off path).</td></tr>
+      <tr><td class="k">S4 Sacred Grove</td><td class="v">RP + skill challenge</td><td class="v">Sacrifice, influenced NPC crisis, Mars arrives.</td></tr>
+    </table>
+  </div>
   <div class="block">
     <div class="block-title">BEFORE session — decide influenced PC/NPC</div>
     <div style="color:#d44;font-weight:bold;font-size:0.85em;margin-bottom:4px">Critical: pick now. Write and pass the private note before Scene 0.</div>
@@ -309,10 +324,11 @@
 <div class="grid2">
 <div>
   <div class="block">
-    <div class="block-title">Setup — River</div>
+    <div class="block-title">Setup — River <span style="color:#d44;font-size:0.85em">[COMBAT 1 — always triggers]</span></div>
     <div class="setup-line"><span class="lbl">Map:</span> <span class="file">RiverCrossing</span> or <span class="file">RiverCrossingVol2</span></div>
     <div class="setup-line"><span class="lbl">Pursuit tokens:</span> <span class="tok">Guard ×8, Knight ×1</span> (+ <span class="tok">Legate_Corvinus</span> if present)</div>
     <div class="note">Varro will NOT fight his own men. He steps aside. The centurion recognizes him. That hesitation may be all the time needed.</div>
+    <div class="note" style="border-color:#5a5aaa">Diplomatic out: Intimidation 14 (centurion-rank PC) = 5+ holds the line. No doc = DC 18 Deception. Both options valid but hard.</div>
   </div>
   <div class="block">
     <div class="block-title">The River — 90 ft wide, spring melt</div>
@@ -356,9 +372,10 @@
     <strong>Religion 15 (active, 1 min):</strong> Two traditions active — one old/rooted, one hot/angry. Mars has been here.<br>
     <strong>Bog valerian here</strong> (pale purple, beside water channel). Nature 13 to identify. Gathering: leave path, DEX 11 or sink to waist. <strong>S4 payoff:</strong> Cassia's ward compound (2d8 HP + remove 1 exhaustion, 3 uses).</div>
 
-    <div class="phase-hdr">C: HOSTILE VÆTTIR (conditional — 2+ disrespect triggers)</div>
+    <div class="phase-hdr">C: HOSTILE VÆTTIR <span style="color:#d44">[COMBAT 2 — always runs]</span></div>
     <div style="font-size:0.83em">Will-o-Wisp stat blocks (CR 2), modified: don't flee when damaged, can't be Turned, cold damage not lightning.<br>
-    <strong>Dispersal:</strong> Every party member drops one item of value into water channels simultaneously. DC 10 Religion (group) to coordinate before they reach the path.<br>
+    <strong>When:</strong> Always triggered — the party has crossed into Vættir land. Disrespect count determines <em>how many</em> lights appear (2+ triggers = full encounter; fewer = warning group of 3 that can still be appeased).<br>
+    <strong>Dispersal (diplomatic out):</strong> Every party member drops one item of value into water channels simultaneously. DC 10 Religion (group) to coordinate before they reach the path.<br>
     <strong>Thusnelda:</strong> "Into the water. Now. All of you."<br>
     <span class="warn">Fail: +1 Vættir per round. Can't outrun them in the bog.</span></div>
   </div>
@@ -438,6 +455,103 @@
     <strong>Failure:</strong> Spear intact. Mars' presence intensifies — does not leave until ritual completes or spear leaves grove. Flee into forest. Session 4 harder.<br><br>
     <strong>Corvinus aftermath:</strong> Within a week, sends a clerk to party with commendationes paperwork and no explanation.</div>
     <div class="ends">Ritual done. Level 6. Record handoff notes (see NPCs tab). → Ch4.</div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ RIDDLE ═══ -->
+<div id="tab-riddle" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">The Boundary Stone — Scene 1b</div>
+    <div class="setup-line"><span class="lbl">When:</span> Day 2 of travel, 1 hour before the Farbog. Expand travel event 10 into this full scene.</div>
+    <div class="setup-line"><span class="lbl">Who speaks:</span> Thusnelda translates. The party answers. She gives no hints.</div>
+    <div class="note">The party's answer here shapes Thusnelda's language at the grove ritual. She remembers.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Read aloud</div>
+    <div class="ra">"The path narrows between two moss-covered oaks. At the gap's center, a granite slab rises knee-high from the earth. The carvings on it spiral inward, holding traces of ochre and red pigment."<br><br>"Thusnelda stops. She does not step forward. 'The old ones ask a question before they let you pass. I will translate. The answer must come from you. I will not give it.'"<br><br>"She reads the stone. Then:"<br><br><em>"I travel between enemies without walking. I am forged in darkness and tested in flame. Armies fail without me. Gods demand me. I take years to build and a heartbeat to destroy. Without me, the ritual at the grove will not hold."</em></div>
+  </div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Accepting answers</div>
+    <table>
+      <tr><th>Answer</th><th>Response</th></tr>
+      <tr><td class="k">Trust / fides / loyalty</td><td class="v">Accepted. Stone glows gold. Farbog: Perception DC 9 not 11.</td></tr>
+      <tr><td class="k">Courage / virtus / honor</td><td class="v">Also accepted. "The old tongue has one word for all of these."</td></tr>
+      <tr><td class="k">The spear / power / strength</td><td class="v">"Think like the land, not like soldiers." One more attempt.</td></tr>
+      <tr><td class="k">Any thematically valid answer</td><td class="v">DM's call. Peace, faith, patience — all work. Stone rewards intent.</td></tr>
+      <tr><td class="k">Wrong on second attempt</td><td class="bad">Stone dims. Cold shadow follows = automatic Disrespect trigger in Farbog.</td></tr>
+      <tr><td class="k">Walk past without answering</td><td class="bad">Two Disrespect triggers. Guaranteed Vaettir encounter, full strength.</td></tr>
+    </table>
+  </div>
+  <div class="block">
+    <div class="block-title">DM notes</div>
+    <ul>
+      <li>Religion 12 passive: carvings mark the threshold between living world and Vaettir land. It is a gate.</li>
+      <li>Thusnelda will NOT re-read or interpret after speaking. "The stone heard."</li>
+      <li>If debate &gt; 5 min real-time: "The stone has no patience." She waits. Does not cross.</li>
+      <li>Trust answer → grove: sacrifice framed as faith. Courage → test of worth. Her words at altar will echo theirs here.</li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ PUZZLE ═══ -->
+<div id="tab-puzzle" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">The Watching Post — Scene 3c</div>
+    <div class="setup-line"><span class="lbl">When:</span> After Myling + Bog Sacrifice Site (Scene 3b), before standing stones.</div>
+    <div class="setup-line"><span class="lbl">What:</span> Stone plug with 5 rune tiles. Press 3 in correct order to open compartment.</div>
+    <div class="note">Rewards players who read <strong>Handout 6</strong>. The answer is in the map's bottom margin. Do not hint unless stuck 10+ min.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Read aloud</div>
+    <div class="ra">"Four standing stones form a small roofless chamber. The floor is packed earth with a circular fire pit. The ash inside is fresh — someone has been here this week."<br><br>"On the north stone, a fitted plug seals a natural cavity. In a ring on its face: five flat rune tiles, each from a different stone. One socket is slightly recessed. The others sit flush, waiting."</div>
+  </div>
+  <div class="block">
+    <div class="block-title">The five tiles</div>
+    <table>
+      <tr><th>Rune</th><th>Name</th><th>Meaning</th></tr>
+      <tr><td class="k">&#x16D7;</td><td class="v">MANNAZ</td><td class="v">Man / Humanity</td></tr>
+      <tr><td class="k">&#x16B1;</td><td class="v">RAIDHO</td><td class="v">Journey / Ride</td></tr>
+      <tr><td class="k">&#x16B9;</td><td class="v">WUNJO</td><td class="v">Joy / Pleasure</td></tr>
+      <tr><td class="k" style="color:#884444">&#x16A6;</td><td class="bad">THURISAZ</td><td class="bad">Danger / Thorn — DECOY</td></tr>
+      <tr><td class="k" style="color:#884444">&#x16C6;</td><td class="bad">EHWAZ</td><td class="bad">Horse / Movement — DECOY</td></tr>
+    </table>
+  </div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Correct sequence</div>
+    <div style="font-size:1.4em;text-align:center;color:#c8a84b;padding:10px 0;letter-spacing:0.2em">&#x16D7; &#x2192; &#x16B1; &#x2192; &#x16B9;</div>
+    <div style="text-align:center;font-size:0.82em;color:#888;margin-bottom:8px">MANNAZ &rarr; RAIDHO &rarr; WUNJO</div>
+    <div class="note">Clue on <strong>Handout 6</strong> bottom margin: <em>ᛗ ᚱ ᚹ — "mannaz raidho wunjo — The man who makes this journey finds what he seeks."</em></div>
+  </div>
+  <div class="block">
+    <div class="block-title">Checks + warding seal</div>
+    <table>
+      <tr><th>Check</th><th>DC</th><th>Result</th></tr>
+      <tr><td class="k">Arcana (compare to map)</td><td class="v">12</td><td class="v">Identifies matching tiles + order from the map.</td></tr>
+      <tr><td class="k">Religion (compare to map)</td><td class="v">11</td><td class="v">Same. Runes form a ritual statement of intent.</td></tr>
+      <tr><td class="k">Trial and error</td><td class="v">—</td><td class="v">Works but costs HP per wrong attempt.</td></tr>
+    </table>
+    <div style="margin-top:5px;font-size:0.83em"><strong>Wrong sequence:</strong> 1d6 cold damage, tiles reset. Pressing THURISAZ or EHWAZ first or second = immediate trigger.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Contents on success</div>
+    <ul>
+      <li><em>Oil of slipperiness</em> (1 dose) — bog mud: Athletics 13 → 9</li>
+      <li>Leather map — confirms grove location, removes navigation doubt</li>
+      <li>Wax tablet: <em>"IF YOU ARE READING THIS, YOU ARE LOOKING FOR THE SAME THING WE WERE. WE FAILED. DO NOT STOP."</em></li>
+    </ul>
+    <div class="ra" style="margin-top:5px">Thusnelda, if she sees the tablet: "They got further than I thought. I did not know they reached the ruins."</div>
   </div>
 </div>
 </div>
