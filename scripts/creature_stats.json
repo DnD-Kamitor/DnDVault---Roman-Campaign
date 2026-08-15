@@ -2557,5 +2557,35 @@
     ],
     "traits": [],
     "notes": "CR 1. Roman Syrian auxiliary. Composite bow — ignores half/3-quarter cover, 600ft range. Assign to druid suppression and ogre. 2-4 present at most forts. Racial diversity: typically Semitic/Arab stock in D&D terms."
+  },
+  "Stone_Golem": {
+    "hp": 120,
+    "ac": 17,
+    "speed": "30 ft.",
+    "str": 22,
+    "dex": 9,
+    "con": 20,
+    "int": 3,
+    "wis": 11,
+    "cha": 1,
+    "cr": "10",
+    "immunities": "Poison, Psychic; non-magical B/P/S",
+    "attacks": [
+      {
+        "label": "Slam",
+        "raw_cmd": "[h: atk=1d20][h: dmg=3d8][h: modDmg=dmg+6]/me slams with divine weight! [r, if(atk+10>=20): \"<b style='color:#e74c3c'>SLAM HITS AC \"+(atk+10)+\"</b> \u2014 <b>\"+modDmg+\" bludgeoning</b>\"; \"<b>MISSES</b> (rolled \"+(atk+10)+\")\"] <br><i style='color:gray'>Multiattack: 2 Slam attacks per turn. Immutable Form: immune to polymorph. Magic Resistance: advantage on spell saves.</i>"
+      },
+      {
+        "label": "Slow (Recharge 5-6)",
+        "raw_cmd": "[h: recharge=1d6][h: dc17=1d20]/me channels divine stillness \u2014 SLOW! [r, if(recharge>=5): \"<b style='color:#c0392b'>SLOW ACTIVATES</b> \u2014 all creatures within 10 ft. make DC 17 CON save or speed halved, no reactions, only one attack per Attack action.\"; \"<b style='color:gray'>Slow not ready (rolled \"+recharge+\"/6)</b>\"] <br><i style='color:gray'>On failed save: lasts 1 min (CON save each turn to end). Does NOT fade when ritual completes \u2014 GM removes golems manually.</i>"
+      }
+    ],
+    "traits": [
+      "Immutable Form: immune to any spell or effect that would alter its form.",
+      "Magic Resistance: advantage on saving throws against spells and magical effects.",
+      "Multiattack: two Slam attacks per turn.",
+      "GM NOTE: these are Mars-avatars, NOT combat wins. Goal = hold them 4 rounds while ritual completes."
+    ],
+    "notes": "CR 10. Sacred Grove Sessions 3-4. Avatars of Mars manifesting through standing stones. Fade when ritual completes."
   }
 }
