@@ -361,19 +361,11 @@
     "attacks": [
       {
         "label": "Life Drain",
-        "atk": 6,
-        "reach": "5 ft.",
-        "dice": "4d8+3",
-        "type": "necrotic",
-        "note": "DC 14 CON save or max HP reduced by damage dealt. Reduction lasts until long rest. Dies if max HP reaches 0."
+        "raw_cmd": "[h: atk=1d20][h: dmg=4d8][h: save=1d20]/me surges through the air — LIFE DRAIN! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the wraith plunges into the soul itself!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the touch passes through harmlessly!</b>\"; \"reaches!\"]<br>ATK: [e: atk+6] | DMG: [e: dmg+3] necrotic<br>Target CON save: [e: save] vs DC 14 — [r, if(save>=14): \"<b style='color:green'>resists — takes damage and nothing more.</b>\"; \"<b style='color:#e74c3c'>MAX HP REDUCED</b> by the necrotic damage taken (until long rest). If this reduces max HP to 0, target <b>dies</b>.\"]<br><i style='color:#c88020'>Incorporeal Movement: passes through walls/objects (5 force damage if ending turn inside). Resistances: acid, cold, fire, lightning, thunder; nonmagical non-silvered weapons. Immune: necrotic, poison.</i>"
       },
       {
         "label": "Create Specter",
-        "atk": 0,
-        "reach": "touch",
-        "dice": "0",
-        "type": "utility",
-        "note": "Raises a slain humanoid (within last minute) as a specter. Max 7 specters under control."
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>CREATE SPECTER</b> — the Wraith targets a humanoid killed within the last minute that it can see within 10 ft. That corpse rises immediately as a <b>Specter</b> under the Wraith's control. Maximum 7 specters at once.\"]<br><i style='color:#c88020'>Not a weapon attack — no roll needed. The Specter acts on the Wraith's initiative. Use a Specter token at the corpse's location.</i>"
       }
     ],
     "traits": [
@@ -401,11 +393,7 @@
     "attacks": [
       {
         "label": "Life Drain",
-        "atk": 4,
-        "reach": "5 ft.",
-        "dice": "3d6",
-        "type": "necrotic",
-        "note": "DC 10 CON save or max HP reduced by damage dealt. Reduction lasts until long rest."
+        "raw_cmd": "[h: atk=1d20][h: dmg=3d6][h: save=1d20]/me reaches with cold, translucent hands — LIFE DRAIN! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — vital warmth floods into the specter!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the touch finds nothing!</b>\"; \"grasps!\"]<br>ATK: [e: atk+4] (spell attack) | DMG: [e: dmg] necrotic<br>Target CON save: [e: save] vs DC 10 — [r, if(save>=10): \"<b style='color:green'>resists — takes damage and no reduction.</b>\"; \"<b style='color:#e74c3c'>MAX HP REDUCED</b> by the necrotic damage taken (until long rest). Dying if max HP hits 0.\"]<br><i style='color:#c88020'>Incorporeal Movement: passes through walls (5 force damage if ending turn inside). Resistances: acid, cold, fire, lightning, thunder; nonmagical non-silvered weapons. Immune: necrotic, poison.</i>"
       }
     ],
     "traits": [
@@ -485,11 +473,11 @@
     "attacks": [
       {
         "label": "Shock",
-        "atk": 4,
-        "reach": "5 ft.",
-        "dice": "2d8",
-        "type": "lightning",
-        "note": ""
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d8]/me pulses with crackling light — SHOCK! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — lightning arcs through the body!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the light winks out for a moment!</b>\"; \"crackles!\"]<br>ATK: [e: atk+4] (spell attack, 5 ft.) | DMG: [e: dmg] lightning<br><i style='color:#c88020'>Resistances: acid, cold, fire, necrotic, thunder; nonmagical weapons. Immune: lightning, poison. AC 19 (very hard to hit physically).</i>"
+      },
+      {
+        "label": "Consume Life (Bonus Action)",
+        "raw_cmd": "[h: save=1d20]/me hovers over the dying victim — CONSUME LIFE! Target at 0 HP within 5 ft must make CON save: [e: save] vs DC 10 — [r, if(save>=10): \"<b style='color:green'>survives — stable at 0 HP.</b>\"; \"<b style='color:#e74c3c'>DIES INSTANTLY.</b> The will-o-wisp regains <b>10 (3d6) HP</b>.\"]<br><i style='color:#c88020'>Bonus action only. Target must be at 0 HP and still alive. Wisp can use Invisibility (bonus action) to vanish after feeding.</i>"
       }
     ],
     "traits": [
@@ -519,20 +507,12 @@
     "cr": "1",
     "attacks": [
       {
-        "label": "Club",
-        "atk": 2,
-        "reach": "5 ft.",
-        "dice": "1d4",
-        "type": "bludgeoning",
-        "note": ""
+        "label": "Club (with Shillelagh)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me swings a gnarled oak branch with druidic force — SHILLELAGH! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — bark and bone crack together!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the branch snags on roots!</b>\"; \"strikes!\"]<br>ATK: [e: atk+6] | DMG: [e: dmg+4] bludgeoning (magical)<br><i style='color:#c88020'>Requires Shillelagh spell active (1/day). Without it: +2 to hit, 1d4 bludgeoning. Magic Resistance: advantage on saves vs spells. Tree Stride: step into large tree, emerge from another within 60 ft (10 ft of movement).</i>"
       },
       {
         "label": "Fey Charm",
-        "atk": 0,
-        "reach": "30 ft.",
-        "dice": "0",
-        "type": "utility",
-        "note": "DC 14 WIS save or charmed for 24 hrs. Repeats save if harmed. Counts as friendly to the dryad."
+        "raw_cmd": "[h: save=1d20]/me fixes the target with ancient, verdant eyes — FEY CHARM! Target (humanoid or beast within 30 ft) WIS save: [e: save] vs DC 14 — [r, if(save>=14): \"<b style='color:green'>resists — unsettled but free.</b>\"; \"<b style='color:#8e44ad'>CHARMED</b> for 24 hours. The target regards the Dryad as a trusted friend. The Dryad can have 1 humanoid + 3 beasts charmed at once. Charm ends if the Dryad or its allies harm the target.\"]<br><i style='color:#c88020'>No attack roll — saving throw only. Innate spells: entangle, goodberry (3/day each); barkskin, pass without trace (1/day each).</i>"
       }
     ],
     "traits": [
@@ -735,19 +715,11 @@
     "attacks": [
       {
         "label": "Shortsword",
-        "atk": 4,
-        "reach": "5 ft.",
-        "dice": "1d6+2",
-        "type": "piercing",
-        "note": ""
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me darts in with the shortsword! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — found the gap in the armour!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — footing lost on the uneven ground!</b>\"; \"strikes!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing<br><i style='color:#c88020'>Multiattack: two Shortsword attacks OR one Shortsword + one Longbow. Keen Hearing and Sight: advantage on Perception. Natural Explorer: difficult terrain in forests doesn't slow movement.</i>"
       },
       {
         "label": "Longbow",
-        "atk": 4,
-        "reach": "150/600 ft.",
-        "dice": "1d8+2",
-        "type": "piercing",
-        "note": ""
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me draws and looses in a fluid motion! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the arrow finds its mark perfectly!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the shaft flies wide!</b>\"; \"fires!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (range 150/600 ft.)<br><i style='color:#c88020'>Multiattack applies. Prefer ranged — uses cover and movement to stay out of melee.</i>"
       }
     ],
     "traits": [
@@ -842,19 +814,11 @@
     "attacks": [
       {
         "label": "Gladius",
-        "atk": 5,
-        "reach": "5 ft.",
-        "dice": "1d8+3",
-        "type": "slashing",
-        "note": ""
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me drives the short blade in a precise thrust! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the gladius finds a vital point!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the shield deflects the thrust!</b>\"; \"strikes!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#c88020'>Multiattack: two Gladius attacks per turn, OR one Gladius + one Pilum (thrown first). Shield of the Empire: if adjacent to an ally, both gain +1 AC (shield wall formation).</i>"
       },
       {
         "label": "Pilum",
-        "atk": 5,
-        "reach": "30/120 ft.",
-        "dice": "1d6+3",
-        "type": "piercing",
-        "note": ""
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me hurls the weighted javelin with legionary precision! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the pilum pierces shield and flesh!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the shaft bends on impact, useless!</b>\"; \"throws!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing (range 30/120 ft.)<br><i style='color:#c88020'>On hit: shield is fouled — target's shield bonus to AC reduced by 1 until they spend a bonus action to pull the pilum free. One pilum per guard (not replenishing mid-combat).</i>"
       }
     ],
     "traits": [
@@ -1095,19 +1059,11 @@
     "attacks": [
       {
         "label": "Bone Chill Touch",
-        "atk": 3,
-        "reach": "5 ft.",
-        "dice": "1d8",
-        "type": "cold",
-        "note": "DC 11 CON save or speed reduced by 10 ft. until end of next turn."
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8][h: save=1d20]/me surges forward with frost-burned hands! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the chill sinks to the marrow!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — fingers pass through harmlessly!</b>\"; \"claws!\"]<br>ATK: [e: atk+3] | DMG: [e: dmg] cold<br>Target CON save: [e: save] vs DC 11 — [r, if(save>=11): \"<b style='color:green'>resists the cold — no additional effect.</b>\"; \"<b style='color:#3498db'>SLOWED</b> — speed reduced by 10 ft until end of its next turn.\"]"
       },
       {
         "label": "Wail of the Lost (Recharge 5-6)",
-        "atk": 0,
-        "reach": "30 ft. radius",
-        "dice": "3d6",
-        "type": "psychic",
-        "note": "DC 12 WIS save for half. On fail: frightened until end of next turn."
+        "raw_cmd": "[h: recharge=1d6]/me opens its hollow mouth in a keening shriek! Recharge roll: [e: recharge] — [r, if(recharge>=5): \"<b style='color:#c0392b'>WAIL ACTIVATES</b> — all creatures within 30 ft make WIS save DC 12 or take 10 (3d6) psychic damage and are FRIGHTENED until end of their next turn. Half damage on success, no Frightened.\"; \"<b style='color:gray'>Wail not ready yet (rolled \"+recharge+\"/6).</b>\"]<br><i style='color:#c88020'>Area: 30 ft radius. The Myling shrieks the name it never received. Creatures who fail feel an irrational guilt.</i>"
       }
     ],
     "traits": [
@@ -2573,11 +2529,11 @@
     "attacks": [
       {
         "label": "Slam",
-        "raw_cmd": "[h: atk=1d20][h: dmg=3d8][h: modDmg=dmg+6]/me slams with divine weight! [r, if(atk+10>=20): \"<b style='color:#e74c3c'>SLAM HITS AC \"+(atk+10)+\"</b> \u2014 <b>\"+modDmg+\" bludgeoning</b>\"; \"<b>MISSES</b> (rolled \"+(atk+10)+\")\"] <br><i style='color:gray'>Multiattack: 2 Slam attacks per turn. Immutable Form: immune to polymorph. Magic Resistance: advantage on spell saves.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=3d8][h: modDmg=dmg+6]/me slams with divine weight! [r, if(atk+10>=20): \"<b style='color:#e74c3c'>SLAM HITS AC \"+(atk+10)+\"</b> — <b>\"+modDmg+\" bludgeoning</b>\"; \"<b>MISSES</b> (rolled \"+(atk+10)+\")\"] <br><i style='color:gray'>Multiattack: 2 Slam attacks per turn. Immutable Form: immune to polymorph. Magic Resistance: advantage on spell saves.</i>"
       },
       {
         "label": "Slow (Recharge 5-6)",
-        "raw_cmd": "[h: recharge=1d6][h: dc17=1d20]/me channels divine stillness \u2014 SLOW! [r, if(recharge>=5): \"<b style='color:#c0392b'>SLOW ACTIVATES</b> \u2014 all creatures within 10 ft. make DC 17 CON save or speed halved, no reactions, only one attack per Attack action.\"; \"<b style='color:gray'>Slow not ready (rolled \"+recharge+\"/6)</b>\"] <br><i style='color:gray'>On failed save: lasts 1 min (CON save each turn to end). Does NOT fade when ritual completes \u2014 GM removes golems manually.</i>"
+        "raw_cmd": "[h: recharge=1d6][h: dc17=1d20]/me channels divine stillness — SLOW! [r, if(recharge>=5): \"<b style='color:#c0392b'>SLOW ACTIVATES</b> — all creatures within 10 ft. make DC 17 CON save or speed halved, no reactions, only one attack per Attack action.\"; \"<b style='color:gray'>Slow not ready (rolled \"+recharge+\"/6)</b>\"] <br><i style='color:gray'>On failed save: lasts 1 min (CON save each turn to end). Does NOT fade when ritual completes — GM removes golems manually.</i>"
       }
     ],
     "traits": [
@@ -2587,5 +2543,65 @@
       "GM NOTE: these are Mars-avatars, NOT combat wins. Goal = hold them 4 rounds while ritual completes."
     ],
     "notes": "CR 10. Sacred Grove Sessions 3-4. Avatars of Mars manifesting through standing stones. Fade when ritual completes."
+  },
+  "Animated_Armor": {
+    "hp": 33,
+    "ac": 18,
+    "speed": "25 ft.",
+    "cr": "1",
+    "attacks": [
+      {
+        "label": "Slam",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me animates with terrible purpose — SLAM! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the gauntlet crushes bone!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the armour lurches wide!</b>\"; \"strikes!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] bludgeoning<br><i style='color:#c88020'>Multiattack: two Slam attacks per turn. Antimagic Susceptibility: incapacitated inside an antimagic field. False Appearance: indistinguishable from ordinary armour while still.</i>"
+      }
+    ]
+  },
+  "Knight": {
+    "hp": 52,
+    "ac": 18,
+    "speed": "30 ft.",
+    "cr": "3",
+    "attacks": [
+      {
+        "label": "Greatsword",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me swings the greatsword in a two-handed arc! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the blade cleaves deep!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the stroke goes wide!</b>\"; \"attacks!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#c88020'>Multiattack: two Greatsword attacks per turn. Brave: advantage on saves vs Frightened. Parry (Reaction): +2 AC against one melee attack the Knight can see.</i>"
+      },
+      {
+        "label": "Heavy Crossbow",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d10]/me levels the crossbow and fires! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the bolt punches through!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the bolt skips off stone!</b>\"; \"fires!\"]<br>ATK: [e: atk+2] | DMG: [e: dmg] piercing (range 100/400 ft.)<br><i style='color:#c88020'>Used at range. Only one crossbow attack (no Multiattack with ranged). Parry reaction still available.</i>"
+      },
+      {
+        "label": "Leadership (Recharge: Short/Long Rest)",
+        "raw_cmd": "[r: \"<b style='color:#3498db'>LEADERSHIP ACTIVE</b> — for the next minute, one ally within 30 ft who can hear and understand the Knight may add <b>1d4</b> to an attack roll or saving throw once per turn (before the roll). The Knight must not be incapacitated.\"]<br><i style='color:#c88020'>Declare at start of the Knight's turn. Lasts 1 minute (10 rounds). Recharges after short or long rest.</i>"
+      }
+    ]
+  },
+  "Fausta_Luperci": {
+    "hp": 145,
+    "ac": 18,
+    "speed": "30 ft.",
+    "cr": "10",
+    "attacks": [
+      {
+        "label": "Spear of Mars",
+        "raw_cmd": "[h: atk=1d20][h: base=1d8][h: fire=1d6]/me drives the burning spear forward with divine fury! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the spear blazes white with Mars's wrath!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the divine flame sputters!</b>\"; \"thrusts!\"]<br>ATK: [e: atk+9] | DMG: [e: base+5] piercing + <b style='color:orange'>[e: fire] radiant (divine)</b><br><i style='color:#c88020'>Multiattack: three attacks per turn. One attack may be substituted for a Net throw. Two-handed versatile: 1d8+5.</i>"
+      },
+      {
+        "label": "Shield Bash",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: save=1d20]/me crashes the iron shield into the target! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the bash sends them sprawling!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"slams!\"]<br>ATK: [e: atk+9] | DMG: [e: dmg+5] bludgeoning<br>Target STR save: [e: save] vs DC 16 — [r, if(save>=16): \"<b style='color:green'>holds footing</b>\"; \"<b style='color:#e74c3c'>KNOCKED PRONE</b>\"]<br><i style='color:#c88020'>Counts as one of her three Multiattack strikes.</i>"
+      },
+      {
+        "label": "Net",
+        "raw_cmd": "[h: atk=1d20]/me hurls the weighted net! [r, if(atk==20): \"<b style='color:#e74c3c'>PERFECT THROW — the net wraps tight!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — net tangles wide!</b>\"; \"throws!\"]<br>ATK: [e: atk+6] (range 5/10 ft.) — on hit: <b>RESTRAINED</b> (Large or smaller). DC 10 STR check (action) to break free. Speed 0 while restrained.<br><i style='color:#c88020'>Replaces one of her three Multiattack strikes. Net has AC 10, 5 HP, immunity to bludgeoning + poison + psychic.</i>"
+      },
+      {
+        "label": "Legendary Defiance (1/round when below 50 HP)",
+        "raw_cmd": "[r: \"<b style='color:#f39c12'>LEGENDARY DEFIANCE</b> — Fausta's first drop below 50 HP triggers this automatically (1/combat). She gains <b>20 temporary HP</b> and auto-succeeds on one saving throw this round.\"]<br><i style='color:#c88020'>Frozen Advance: difficult terrain does not slow her. Mars calls Enough after 10 rounds or when she reaches 0 HP a second time.</i>"
+      },
+      {
+        "label": "Ash Form (at 0 HP)",
+        "raw_cmd": "[r: \"<b style='color:#c0392b'>FAUSTA COLLAPSES</b> — her body crumbles to hot grey ash. Mars may spend a Legendary Action to reform her at <b>20 HP</b> (once per combat). If Mars does not act, she is defeated and the trial ends.\"]<br><i style='color:#c88020'>She does not make death saving throws. The ash is not a creature and cannot be targeted. If Mars reforms her, place the token at the arena center at 20 HP.</i>"
+      }
+    ]
   }
 }
