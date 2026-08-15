@@ -71,7 +71,7 @@ To load a map in MapTool: **File → Import Map** → select `.html` file → co
 
 Campaign-specific tokens and maps copy to:
 ```
-Maptool/maps/campaign/S3_Dark_Forest/
+Maptool/maps/campaign/S3_Through_the_Dark_Forest/
 ```
 
 Run `bash Maptool/build_campaign_maps.sh` to populate (idempotent).

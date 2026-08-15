@@ -231,9 +231,11 @@ for slug in Legate_Corvinus Tribune_Lucius Centurion_Varro Vercingetorix_the_Red
 done
 
 # Creatures: forest wildlife, bog spirits, pursuit force
+# Scene 3b Farbog: Wight (Vaettir deep bog), Specter, Will-o-Wisp
+# Scene 4 Sacred Grove: Dryad guardian
 # Scene 5: Stone_Golem (avatars of Mars' anger at the grove ritual — not killable at L5)
 for slug in Wolf Dire_Wolf Brown_Bear Giant_Spider Haugbui Myling Vaettir \
-            Tribal_Warrior Scout Will-o-Wisp Specter Guard Knight Stone_Golem; do
+            Wight Dryad Tribal_Warrior Scout Will-o-Wisp Specter Guard Knight Stone_Golem; do
   copy_npc "$slug" "$S"
 done
 
@@ -253,9 +255,12 @@ copy_map ForestLabyrinthRuins "$S"
 copy_map NatureGoddessTemple  "$S"
 
 # Custom SVG battle maps
-copy_svg s4_fort_siege         "$S"  # Scenes 1-2: siege of Fort Vindolanda
-copy_svg s4_sacred_grove       "$S"  # Scene 3: ritual + stone golems (battle)
-copy_svg s4_sacred_grove_overview "$S" # Scene 3: sacred grove region overview
+copy_svg s4_fort_siege             "$S"  # Scene 0: siege of Fort Vindolanda
+copy_svg s4_sacred_grove           "$S"  # Scene 3: ritual + stone golems (battle)
+copy_svg s4_sacred_grove_overview  "$S"  # Scene 3: sacred grove region overview
+copy_svg s4_tunnel_armory          "$S"  # Scene 3: Sunken Armory (Animated Armor ×4)
+copy_svg s4_tunnel_choking_hall    "$S"  # Scene 3: Choking Hall (gas hazard)
+copy_svg s4_tunnel_elder_stair     "$S"  # Scene 3: Elder Stair (rockfall + Quintus)
 
 cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/" 2>/dev/null || true
 cp "$FORT_IMGS/saalburg_fort.jpg"     "$S/" 2>/dev/null || true
@@ -271,8 +276,9 @@ for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro Vercinge
 done
 
 # Creatures: siege forces, tunnel constructs, grove spirits
+# Quintus_Flavius: Brutus' agent — shrine (S0) + Elder Stair (S3 tunnel)
 for slug in Guard Legionary Berserker Cultist_of_Mars Tribal_Warrior \
-            Wight Will-o-Wisp Dryad Animated_Armor Knight; do
+            Wight Will-o-Wisp Dryad Animated_Armor Knight Quintus_Flavius; do
   copy_npc "$slug" "$S"
 done
 
@@ -305,8 +311,10 @@ for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro \
   copy_npc "$slug" "$S"
 done
 
+# Paterculus: minor witness at east edge (S0 arena setup)
+# Quintus_Flavius: Brutus' operative if Labyrinth scene plays out
 for slug in Guard Legionary Berserker Cultist_of_Mars Tribal_Warrior \
-            Wraith Wight Shadow Specter Zombie; do
+            Wraith Wight Shadow Specter Zombie Paterculus Quintus_Flavius; do
   copy_npc "$slug" "$S"
 done
 

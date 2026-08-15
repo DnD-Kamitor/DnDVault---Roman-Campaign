@@ -9,10 +9,21 @@
   "ac": 11,
   "ac_note": "natural armor",
   "speed": "40 ft. (climb 30 ft.)",
-  "ability_scores": {"STR": 19, "DEX": 10, "CON": 16, "INT": 2, "WIS": 13, "CHA": 7},
+  "ability_scores": {
+    "STR": 19,
+    "DEX": 10,
+    "CON": 16,
+    "INT": 2,
+    "WIS": 13,
+    "CHA": 7
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Perception"],
-  "skill_overrides": {"Perception": 3},
+  "skill_proficiencies": [
+    "Perception"
+  ],
+  "skill_overrides": {
+    "Perception": 3
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,7 +31,7 @@
   "languages": "",
   "macro_file": "brown_bear_attacks.mts",
   "token_color": "#5c3a1a",
-  "portrait_file": "",
+  "portrait_file": "portraits/brown_bear_smit.jpg",
   "notes": "CR 1. Multiattack: claws and bite. Large.",
   "gm_notes": "Session 3 Germanic forest. Large size. Multiattack: one bite and one claws. Players who fail the Perception/Nature check on forest approach may stumble into this territory.",
   "session": 3
