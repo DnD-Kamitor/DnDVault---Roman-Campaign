@@ -14,139 +14,138 @@ reconstructed from scratch, in conversation, the night before a session.
 
 ## THE REAL STORY (locked 2026-08-22 — supersedes any conflicting chapter text)
 
-### The origin, 200 years ago — a Ring of Power, not a sword
+### The origin, 200 years ago
 
-**It started with Vercingetorix, not with Caesar.** In 52 BC, to do something no one
-had managed before him — unite genuinely rival Gallic clans into a single revolt against
-Rome — he struck a pact with a war-god his people knew under their own name (Rome would
-later call it Mars, the way Rome renamed every god it met). The spear was the answer:
-not just personal power, but the kind of unifying, unrelenting will that could hold
-feuding tribes together. It worked. That is real history, not invention.
+Long before Caesar held it, the spear belonged to Vercingetorix. In 52 BC he did a thing
+no one before him had managed: he bound the quarrelling Gallic clans into a single
+army against Rome. He made a pact for it, with a war-god his people called by their own
+name. Rome would later call the same god Mars, the way Rome renamed every god it found
+abroad. The spear was the pact's answer, and for a season it held the clans together as
+nothing else could have.
 
-The spear does not serve a wielder. It serves whichever side keeps a war *going*. At
-Alesia, encircled by Caesar's double fortifications, relief army broken, Vercingetorix's
-revolt stopped being an escalating war and became a losing, ending one — and the spear
-left him for the side that wasn't finished yet. Caesar took it, as a spoil of the
-surrender or simply because it was no longer his to keep. Vercingetorix spent years in
-captivity and was ritually executed at Caesar's triumph in 46 BC — a real, documented,
-brutal end for a man who had, for one brief moment, actually beaten Rome at its own
-game. That is the origin of his curse: not an anonymous coalition's nameless war-leader,
-but this specific defeat, this specific betrayal by his own weapon, this specific
-public humiliation, still unfinished two hundred years later.
+The spear keeps no oaths of its own. It goes wherever a war is still being fought, and
+leaves wherever one is ending. At Alesia, walled in by Caesar's siege-works and his
+relief army broken, Vercingetorix's war stopped growing and started dying — and the
+spear went to Caesar, the man whose war was not yet finished. Some say Vercingetorix
+threw it down himself, along with his other arms, when he rode out to surrender. He had
+carried it long enough to know what it was, and by every account he tried to warn
+Caesar what he was taking up. Caesar heard a beaten man making excuses, and did not
+listen.
 
-The weapon that failed to save Vercingetorix's people finished the job on them instead.
-Caesar kept it as a private trophy through the rest of the Gallic Wars, and what
-followed is one of the deadliest campaigns in the ancient world by any ancient
-historian's count -- a slaughter and enslavement of Gallic peoples on a scale even
-Rome's own writers found staggering, the same peoples the spear had first been raised
-to protect. That is the irony sitting underneath everything: the instrument of one
-people's brief liberation became the instrument of their near-annihilation, in the same
-two years, in the same hands.
+Vercingetorix was kept in chains for six years, walked in Caesar's triumph through
+Rome, and strangled at the end of it in 46 BC. That is the true shape of his curse:
+not an old wound worn thin by retelling, but this one defeat, this one betrayal by his
+own weapon, this one public humiliation, still open two hundred years later.
 
-The spear works like the One Ring, not like a magic sword: it doesn't make anyone evil,
-it takes what's already real in someone and pushes it past the point of return. **It did
-this to Caesar too.** Over the years that followed it curdled his genuine ambition and
-genuine popularity into something he tried to hide even as he couldn't stop becoming it
-— the diadem at the Lupercalia, *Dictator Perpetuo*, the rumors of kingship that were
-politically fatal in a Republic founded on throwing a king out. It didn't stop at
-ambition: it fed him toward the civil war that followed the Rubicon, the war that ended
-the Republic's division of power for good and made the Empire permanent. Mars himself is
-diminished, working through whispers and corruption rather than open confrontation,
-exactly the way Sauron is a rumor and a shadow until the
-Ring comes close to the fire again — that's why he can't simply take the spear back
-himself until Sessions 4-5.
+Caesar carried the spear through the rest of the Gallic war. What followed was one of
+the worst slaughters the old historians ever put a number to — a whole people, the same
+people the spear had first been raised to protect, cut down and sold into slavery by
+the hundreds of thousands. The weapon that had briefly saved them finished the work of
+destroying them, in the same two years, in the same hand.
 
-**Pompey did not lose a fair war.** Once the civil war came, his defeat at Pharsalus
-reads less like two Roman armies meeting on even terms and more like one side
-competing against something that had stopped being explicable since Alesia. He fled to
-Egypt afterward and was murdered by men currying favor with the winner, his head
-delivered to Caesar as a trophy Caesar was reportedly horrified by. He is one more body
-this war produced, indifferent to which side he was on -- Mars does not care who wins.
+A ring does not make a man evil. It takes hold of what is already in him and will not
+let go until it has all of it. So it was with Caesar. Year on year the spear fed his
+ambition until he could no longer tell his own wanting from its answer — the crown
+offered at the Lupercalia, the title *Dictator Perpetuo*, the whispers of kingship he
+never troubled to deny. Rome had thrown out its last king by force, and built the whole
+Republic on the memory of it. Caesar knew this as well as any man alive, and still could
+not stop. Afterward it carried him past the Rubicon into war with his own people, the
+war that ended the Republic for good. Mars, like the thing he answers to, is diminished
+now, and works through whispers rather than through open war — the way Sauron is only a
+rumour and a shadow until the Ring nears the fire again. That is why he cannot simply
+reach out and take the spear back before Sessions 4 and 5.
 
-**Caesar later entrusted it to a legate**, facing annihilation against a Germanic
-coalition on the frontier while Rome's attention was elsewhere. The legate's unbroken
-campaign of slaughter fed directly into the momentum that let Caesar's faction end the
-Republic. The legate himself did not remain a man. Bound by his own weapon's hunger, he
-became what the party found guarding the vault in Session 1 — **the Wight is the
-general.**
+Pompey did not lose a fair war. His defeat at Pharsalus was not two Roman armies meeting
+on level ground; it was one side set against something that had stopped answering to
+ordinary strength since Alesia. He fled to Egypt afterward and was murdered there by men
+hoping to please the victor. His head was sent to Caesar as a gift, and by most
+accounts Caesar wept at the sight of it. He was one more man this war spent, and the
+spear did not care which side he had chosen.
 
-**Caesar's assassins are who buried it, not the Roman state, and their motive was never
-abstract philosophy.** Marcus Junius Brutus and Gaius Cassius Longinus both fought for
-Pompey at Pharsalus. They picked the Republic's side, watched it lose a war that
-shouldn't have been losable, were pardoned and forced to serve the man who did it. In
-the chaos after the Ides of March, they recovered the spear from his estate and
-understood, from what they'd watched happen to him over the years they'd served him,
-that they hadn't just killed an ambitious man — they'd killed a man being consumed by
-something that had already destroyed their first cause and would do the same to
-whoever held it next. This was not only tyrannicide. It was the closest thing to
-justice for Pompey they were ever going to get. They couldn't destroy it and couldn't
-tell anyone what it was without unraveling their own justification for the murder. So they
-sent it back to where it started: Germania, into the hands of the same people who
-already had every reason to want it gone. Roman assassins and Germanic guardians,
-quietly agreeing on the one thing they could agree on. It was **Thusnelda's and
-Vercingetorix's lineage** — the actual victims of the legate's original campaign, and
-in Vercingetorix's case, quite possibly the very man himself, still bound and unable to
-die since 46 BC — who did the real work of sealing it afterward, and have carried that
-duty for six
-generations since. *OTHALAN* (ancestral inheritance) marks the seal for a reason.
+Later, Caesar gave the spear to a legate, hard-pressed against a Germanic host on the
+frontier while Rome's eyes were turned elsewhere. That legate's slaughter fed the same
+momentum that carried Caesar's faction to power. The legate did not remain a man
+afterward. Bound to the hunger of his own weapon, he became what the party found
+standing guard in the vault — **the Wight is the general.**
 
-**Senator Gaius Cassius Brutus's name is not a coincidence.** He is the literal
-descendant of the two men who killed the first Roman this weapon ever ruined, carrying
-that inheritance forward whether he wants it or not — which is why his methods are
-secrecy, misdirection, and sleeper agents, never a Corvinus-style direct confrontation.
-It's the family trade. Rome at large has chased the legend of "Caesar's lost weapon" for
-two centuries — some factions hungry for what it promises, Brutus's line dreading its
-return. **Lucius carries this from two directions at once:** his father's inherited
-assassin's duty, and his own Germanic fostering. Two independent reasons never to let it
-reach Rome, in one divided young man who won't even touch the thing.
+Marcus Junius Brutus and Gaius Cassius Longinus had both fought for Pompey at
+Pharsalus. They chose the Republic's side, watched it lose a war it should never have
+lost, and were pardoned into serving the man who had beaten them. When they killed
+Caesar and took the spear from his house afterward, they understood, from years spent
+close to him, that they had not killed an ambitious man alone — they had killed a man
+eaten from within by something that would do the same to the next hand that held it.
+For them it was more than tyrannicide. It was the only justice Pompey was ever going to
+get. They dared not destroy the thing, and dared not speak of what it was, since the
+truth would have undone their own reasons for the murder. So they sent it far away, to
+the one place in the world that already wanted it gone.
+
+They never spoke to anyone about where it went, and no one met them there. Word simply
+reached the frontier, in time, that the god-spear had vanished from Rome — and it was
+Thusnelda's and Vercingetorix's own people, still burying their dead from the legate's
+war, who found it and finished what the assassins had only begun. There was no pact
+between Roman and German. Only two peoples who wanted the same end for two entirely
+different reasons, acting an ocean apart, neither one owing the other anything. It was
+Thusnelda's and Vercingetorix's lineage — the actual victims of the legate's war, and in
+Vercingetorix's case, perhaps the very man himself, unable to die since 46 BC — who did
+the true work of sealing it, and have kept that duty for six generations since.
+*OTHALAN*, the rune of inheritance, marks the seal for good reason.
+
+Senator Gaius Cassius Brutus carries his name honestly: he is the direct descendant of
+the two men who killed the first Roman this weapon ever ruined, and he carries their
+old burden whether he wills it or not. That is why his methods are secrecy, informants,
+and proxies, and never a soldier's straight fight — it is the family trade, two hundred
+years deep. Rome at large has hunted the legend of Caesar's lost weapon ever since;
+some hunger for what it promises, and the house of Brutus has dreaded its return above
+all things. His son Lucius carries the same dread from a second, unrelated direction:
+fostered as a boy among an allied Germanic tribe, he came home Roman in name and never
+wholly Roman underneath. He will not touch the spear because he already knows, from
+people his father never met, what it costs. His orders from Rome say bring it back. His
+own heart, shaped somewhere his father never saw, says it must never leave — and he
+guards a locked box that belongs to neither of those things.
 
 ### What Mars actually wants
 
-Mars is not pro-German or anti-Rome. **He is pro-war, full stop.** The spear is a direct
-personal tribute line — every death it causes feeds him specifically, not "Rome's
-glory" in the abstract. He is completely indifferent to who wins. Roman conquest feeds
-him. A burning fort feeds him. A terrified centurion's massacre feeds him. His only real
-enemy is destruction — the one outcome that cuts off his supply permanently. He works
-through whoever's fear or love or ambition the situation hands him; he doesn't need
-allies, only unresolved bloodshed.
+Mars serves no side. He wants war itself, wherever it can be found. The spear is a
+direct line of tribute to him alone — every death it causes is paid to him, not to
+Rome's glory or anyone's cause. Roman conquest feeds him. A burning fort feeds him. A
+frightened officer's massacre feeds him just as well. Only one thing starves him:
+destruction. He works through whatever fear or love or ambition a person offers him,
+and needs no allies at all, only blood that keeps moving.
 
-**Why now, specifically:** the Pax Romana has starved him for nearly two centuries.
-Since Augustus, Rome has consolidated instead of conquered. Marcus Aurelius — 175 AD,
-the campaign's setting — is a famously reluctant soldier-emperor presiding over almost
-the only real war left in the empire (the Marcomannic Wars on this exact frontier). This
-buried spear is close to the last direct tribute-line Mars has. The party dug up the one
-thing keeping a starving war god alive, at the historical moment he had the least other
-war left to draw on.
+He is starving now, and has been for a long while. Since Augustus, Rome has held what
+it has rather than reaching for more, nearly two hundred years of peace by the standards
+of the old Republic. Marcus Aurelius, the emperor the party serves in 175 AD, would
+rather be writing than campaigning, and presides over almost the only real war left to
+the empire, here on this frontier. This buried spear is close to the last tribute Mars
+has left in the world. The party dug it up at the one moment he had the least war left
+to feed him.
 
-**Undeath is not a kill-count. It's what happens when the war doesn't end.** Every soul
-the spear or its wielder claimed during the original campaign is still down there, in the
-vault, unable to rest — not because the spear personally murdered each of them centuries
-ago and that's a permanent tax, but because the war they died in was never actually
-*finished*. Peace is what lets the dead lie down. Two hundred years of an unresolved
-war, at this one site, is two hundred years of nothing settling. That's why Session 1's
-vault is a mass grave that never stopped being a battlefield, and it's the mechanism
-Mars can threaten with directly: stop feeding him, and the dead don't get to rest either.
+The dead in the vault are not a fixed account. They are what happens when a war is
+never allowed to end. Every soul the legate's campaign claimed is down there still,
+unable to lie down, not because the spear taxes each death forever, but because peace
+never came to close the account. Two hundred years without an ending is two hundred
+years where nothing settles. That is why Session 1's vault is still a battlefield and
+not merely a grave, and it is the one lever Mars can pull without lifting a hand: let
+the war stop, and the dead stay standing.
 
-**Not all the Germans want it gone — this is a faction fight on both sides, not
-Rome-vs-Germania.** The two chieftains who organized the Session 2 raid (already
-established: bribed by Brutus, in debt to him) are not simply mercenary opportunists.
-They serve something that presents itself as Mars, or that Mars is using through them —
-a cult faction distinct from and opposed to Thusnelda's and Vercingetorix's actual
-guardianship lineage. **Thusnelda and Vercingetorix's people are still the victims and
-the guardians, unambiguously** — this does not change. But they are not the only
-Germans with a stake in this spear, and the cult faction actively wants it unearthed,
-bloodied, and kept in play, for exactly the opposite reason the guardians want it
-destroyed. Rome has the same split (Corvinus/Varro/Lucius wanting it gone vs. whatever
-faction in Rome still wants "Caesar's lost weapon" recovered) — now Germania does too.
-Whether the cult faction consciously knows they serve Mars, or believe they serve
-something else entirely that Mars is simply wearing, is a live and deliberately
-unresolved question — same as the open question of whether Brutus knows his own goals
-align with Mars's.
+Not every German wants the spear gone, and this is not a war of Rome against Germania —
+it is a fight inside both peoples at once. The two chieftains who led the raid in
+Session 2, already bribed and indebted to Brutus, serve something wearing Mars's face,
+or serve Mars directly without knowing it. They are not simple mercenaries. This cult is
+no kin to Thusnelda's and Vercingetorix's guardianship, and stands against it — the
+guardians remain exactly what they have always been, the victims of this weapon and its
+sworn enemies. But they are not the only Germans with a claim on the spear, and the cult
+wants it found, bloodied, and kept in the world, for the opposite reason the guardians
+want it ended. Rome carries the same division within itself — Corvinus, Varro, and
+Lucius against whatever faction still dreams of recovering Caesar's lost weapon — and
+now Germania carries it too. Whether the cult knows it serves Mars, or believes it
+serves something else that Mars merely wears, is not yet answered, any more than the
+question of whether Brutus knows his own goal serves the same god he'd never worship.
 
-### The three people who independently reached the same terrified conclusion
+### Three people at the fort, three reasons, the same fear
 
-By the fort, three people arrived — for three completely different reasons — at "this
-must not go to Rome":
+Three people arrived, each by their own road, at the same conclusion: this must not go
+to Rome.
 
 - **Legate Corvinus** — cold political calculation. Already established in his OGAS.
 - **Centurion Varro** — his family carries the shame of Varus's three lost legions, in
@@ -166,38 +165,33 @@ must not go to Rome":
   political** — proof of who fostered him, not sealed orders. Contents deliberately left
   undecided; reveal in play.
 
-**Senator Brutus** wants the same outcome (spear not reaching Rome) for a fourth, purely
-human, political reason — fear of what an Emperor with this weapon means for the
-Senate's power. Whether he knows his goal happens to align with Mars's own preference,
-or is being used by the same force he thinks he's manipulating, is a deliberately open
-question. Not resolved. Don't resolve it prematurely.
+Senator Brutus wants the same outcome, for a fourth reason of his own: plain political
+fear of what an Emperor armed with this weapon does to the Senate's power. Whether he
+knows his goal serves Mars as well as it serves him, or is simply a tool in a hand he
+cannot see, remains unanswered. Leave it unanswered.
 
-### Vercingetorix is bound, not simply dying
+### Vercingetorix is bound
 
-He is not an aging warlord with a terminal illness. Two hundred years ago, at Alesia, he
-didn't die when the spear abandoned him and his revolt collapsed — and he didn't die at
-his execution in Caesar's triumph either. Something in him refused to stop fighting a war
-that was already lost, the mirror image of what happened to the legate two generations
-after him. Where the legate became a Wight chained to *guarding* the spear, this man
-became something chained to *opposing* Rome, generation after generation, under
-different names — possibly the same names, possibly this one, reclaimed now that he's
-close to the thing that betrayed him — unable to actually die until the war is over.
-**The
-attack on the fort in Session 2 was not a betrayal of an alliance — it was the latest
-iteration of a war that has never ended for him.** Something about the party — mercy
-shown, how they handled the spear, a moment of respect — broke through enough that he
-stopped, seeding the alliance already written from Session 2 onward. "He is dying. This
-is his final campaign. He hasn't told anyone" now means: he is hoping, for the first
-time in longer than any living person would believe, that this is finally the campaign
-where it ends — one way or another. Destruction might be the first time he's actually
-allowed to die.
+His years are not the reason he has not died. Two hundred years ago, at Alesia, the
+spear left him and his revolt fell — and he did not die there, nor at his execution in
+Caesar's triumph afterward. Something in him went on fighting a war that was already
+lost, the same way the legate went on guarding what he'd been given two generations
+later. The legate is chained to the spear. Vercingetorix is chained to the war against
+Rome itself, carried forward under one name after another across the centuries,
+perhaps this name, reclaimed now that he stands close to the thing that betrayed him.
+The attack on the fort in Session 2 was the newest round of a war that has never
+stopped for him, not a broken alliance. Something in how the party carried themselves
+broke through it, mid-raid, long enough for him to stop. "He is dying. This is his
+final campaign. He hasn't told anyone" carries more weight now: for the first time in
+longer than any living person could reckon, he believes this campaign might actually
+end. Destruction may be the first chance he has had to die since 46 BC.
 
-**Three mirrors, one war, two hundred years:** the general (Wight, bound to guard),
-Vercingetorix (bound to oppose), and now Varro (the newest casualty) are all still
-fighting the same war the spear started. The party is walking into the middle of it,
-not starting something new.
+The general and Vercingetorix are the same war wearing two faces, one bound to guard
+what was made and one bound to oppose what made it. Varro is the newest name added to
+that list. The party has walked into the middle of a fight two hundred years old, not
+the beginning of a new one.
 
-### The ending: three horrible options, not one good one
+### The ending
 
 By Session 5, the real choice is:
 1. **Destroy it completely** — ends the cycle, but the unmaking ritual takes what the
@@ -208,6 +202,21 @@ By Session 5, the real choice is:
    and the god who started this walks away vindicated, free to do it again.
 
 No option saves everyone. That is the point.
+
+### What Mars can send, as he grows stronger — Sessions 4-5, not urgent for tomorrow
+
+Mars is close kin, in spirit, to a Chaos god like Khorne: a power that needs hatred and
+slaughter the way a fire needs air, and grows in strength exactly as much as the
+bloodshed around him grows. As the siege in Session 4 escalates and his hunger is fed
+faster than it has been fed in a lifetime, he should be able to reach further into the
+world than mere whispers and corrupted men. Fiends — proper D&D fiends, demons and
+devils out of the Monster Manual's own Fiend type, not borrowed Warhammer iconography —
+can begin to answer the worst violence directly: a bearded devil or a pair of quasits
+bleeding into being where the fighting is thickest, a stronger fiend called forth
+deliberately by the cult faction as an offering. Treat their appearance as a gauge of
+how much blood has already been spent this session, not a fixed encounter — the worse
+the fighting gets, the more of Mars slips through. Save the design work for the Session
+4 pass; noted here so it isn't lost before then.
 
 ---
 
