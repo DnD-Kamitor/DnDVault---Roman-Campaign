@@ -34,14 +34,25 @@ game. That is the origin of his curse: not an anonymous coalition's nameless war
 but this specific defeat, this specific betrayal by his own weapon, this specific
 public humiliation, still unfinished two hundred years later.
 
+The weapon that failed to save Vercingetorix's people finished the job on them instead.
+Caesar kept it as a private trophy through the rest of the Gallic Wars, and what
+followed is one of the deadliest campaigns in the ancient world by any ancient
+historian's count -- a slaughter and enslavement of Gallic peoples on a scale even
+Rome's own writers found staggering, the same peoples the spear had first been raised
+to protect. That is the irony sitting underneath everything: the instrument of one
+people's brief liberation became the instrument of their near-annihilation, in the same
+two years, in the same hands.
+
 The spear works like the One Ring, not like a magic sword: it doesn't make anyone evil,
 it takes what's already real in someone and pushes it past the point of return. **It did
-this to Caesar next.** He kept it as a private trophy, and over the years that followed
-it curdled his genuine ambition and genuine popularity into something he tried to hide
-even as he couldn't stop becoming it — the diadem at the Lupercalia, *Dictator
-Perpetuo*, the rumors of kingship that were politically fatal in a Republic founded on
-throwing a king out. Mars himself is diminished, working through whispers and corruption
-rather than open confrontation, exactly the way Sauron is a rumor and a shadow until the
+this to Caesar too.** Over the years that followed it curdled his genuine ambition and
+genuine popularity into something he tried to hide even as he couldn't stop becoming it
+— the diadem at the Lupercalia, *Dictator Perpetuo*, the rumors of kingship that were
+politically fatal in a Republic founded on throwing a king out. It didn't stop at
+ambition: it fed him toward the civil war that followed the Rubicon, the war that ended
+the Republic's division of power for good and made the Empire permanent. Mars himself is
+diminished, working through whispers and corruption rather than open confrontation,
+exactly the way Sauron is a rumor and a shadow until the
 Ring comes close to the fire again — that's why he can't simply take the spear back
 himself until Sessions 4-5.
 
