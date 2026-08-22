@@ -414,7 +414,19 @@ specific to that room, and a clear hand-off to the next room.
 - **Status:** DONE (2026-08-22) -- chapter04_maptool.qmd rewritten with the scene table,
   build_campaign_maps.sh's S4 block replaced (old siege-era assets removed), Glabrezu built
   from scratch (npcs/glabrezu.json + creature_stats.json entry + token generated), script
-  run end-to-end and confirmed all 3 maps + 7 tokens copy cleanly
+  run end-to-end and confirmed all 3 maps + 7 tokens copy cleanly. **Follow-up (2026-08-23):**
+  the previously-flagged gap -- chapter04_print.html, cheat_card_ch4.html, and
+  chapter04_guide.qmd still describing the old six-day fort siege -- is now fixed. All three
+  rewritten to match the Blood Cult Dungeon content, same CSS/structure shells as their
+  Chapter 5 counterparts. Also fixed a stale embedded DM-notes table in the actual MapTool
+  asset `Maptool/maps/s5_mars_vault_overview.html` (Zone 1/5 rows still described the retired
+  fort-arena/Fausta Luperci premise) -- this file is genuinely loaded at the table, so it
+  isn't just a documentation gap. Not fixed, flagged as a pre-existing orphan (same class as
+  `cheat_card_ch1_finish.html`, already documented in CLAUDE.md): `gm_tools/session05_reference.html`
+  (522 lines, committed under "[Track B] GM reference cards Sessions 2-5" well before the
+  current gm_tools naming convention settled, not referenced anywhere in `_quarto.yml` or any
+  `.qmd` file, and still describes the old premise). Superseded by `cheat_card_ch5.html`;
+  left on disk, unreferenced, consistent with existing project precedent.
 
 ## Epic 9: Session 5 — The Final Dungeon and the Three Horrible Options
 
