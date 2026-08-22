@@ -16,24 +16,41 @@ reconstructed from scratch, in conversation, the night before a session.
 
 ### The origin, 200 years ago — a Ring of Power, not a sword
 
-During Caesar's campaigns, a legate facing annihilation against a Germanic coalition
-made a pact with Mars in the field. Mars answered: a spear granting unstoppable martial
-power. The price was never spoken aloud — every man that legate killed with it stopped
-being dead in any way that let him rest. His unbroken campaign of slaughter fed directly
-into the momentum that let Caesar's faction end the Republic. The legate himself did not
-remain a man. Bound by his own weapon's hunger, he became what the party found guarding
-the vault in Session 1 — **the Wight is the general.**
+**It started with Vercingetorix, not with Caesar.** In 52 BC, to do something no one
+had managed before him — unite genuinely rival Gallic clans into a single revolt against
+Rome — he struck a pact with a war-god his people knew under their own name (Rome would
+later call it Mars, the way Rome renamed every god it met). The spear was the answer:
+not just personal power, but the kind of unifying, unrelenting will that could hold
+feuding tribes together. It worked. That is real history, not invention.
+
+The spear does not serve a wielder. It serves whichever side keeps a war *going*. At
+Alesia, encircled by Caesar's double fortifications, relief army broken, Vercingetorix's
+revolt stopped being an escalating war and became a losing, ending one — and the spear
+left him for the side that wasn't finished yet. Caesar took it, as a spoil of the
+surrender or simply because it was no longer his to keep. Vercingetorix spent years in
+captivity and was ritually executed at Caesar's triumph in 46 BC — a real, documented,
+brutal end for a man who had, for one brief moment, actually beaten Rome at its own
+game. That is the origin of his curse: not an anonymous coalition's nameless war-leader,
+but this specific defeat, this specific betrayal by his own weapon, this specific
+public humiliation, still unfinished two hundred years later.
 
 The spear works like the One Ring, not like a magic sword: it doesn't make anyone evil,
-it takes what's already real in them and pushes it past the point of return. **It did
-this to Caesar himself.** He took it from his legate quietly, a private trophy, and over
-the following years it curdled his genuine ambition and genuine popularity into
-something he tried to hide even as he couldn't stop becoming it — the diadem at the
-Lupercalia, *Dictator Perpetuo*, the rumors of kingship that were politically fatal in a
-Republic founded on throwing a king out. Mars himself is diminished, working through
-whispers and corruption rather than open confrontation, exactly the way Sauron is a
-rumor and a shadow until the Ring comes close to the fire again — that's why he can't
-simply take the spear back himself until Sessions 4-5.
+it takes what's already real in someone and pushes it past the point of return. **It did
+this to Caesar next.** He kept it as a private trophy, and over the years that followed
+it curdled his genuine ambition and genuine popularity into something he tried to hide
+even as he couldn't stop becoming it — the diadem at the Lupercalia, *Dictator
+Perpetuo*, the rumors of kingship that were politically fatal in a Republic founded on
+throwing a king out. Mars himself is diminished, working through whispers and corruption
+rather than open confrontation, exactly the way Sauron is a rumor and a shadow until the
+Ring comes close to the fire again — that's why he can't simply take the spear back
+himself until Sessions 4-5.
+
+**Caesar later entrusted it to a legate**, facing annihilation against a Germanic
+coalition on the frontier while Rome's attention was elsewhere. The legate's unbroken
+campaign of slaughter fed directly into the momentum that let Caesar's faction end the
+Republic. The legate himself did not remain a man. Bound by his own weapon's hunger, he
+became what the party found guarding the vault in Session 1 — **the Wight is the
+general.**
 
 **Caesar's assassins are who buried it, not the Roman state.** In the chaos after the
 Ides of March, Marcus Junius Brutus and Gaius Cassius Longinus recovered the spear from
@@ -44,8 +61,10 @@ anyone what it was without unraveling their own justification for the murder. So
 sent it back to where it started: Germania, into the hands of the same people who
 already had every reason to want it gone. Roman assassins and Germanic guardians,
 quietly agreeing on the one thing they could agree on. It was **Thusnelda's and
-Vercingetorix's lineage** — the actual victims of the legate's original campaign — who
-did the real work of sealing it afterward, and have carried that duty for six
+Vercingetorix's lineage** — the actual victims of the legate's original campaign, and
+in Vercingetorix's case, quite possibly the very man himself, still bound and unable to
+die since 46 BC — who did the real work of sealing it afterward, and have carried that
+duty for six
 generations since. *OTHALAN* (ancestral inheritance) marks the seal for a reason.
 
 **Senator Gaius Cassius Brutus's name is not a coincidence.** He is the literal
@@ -132,12 +151,15 @@ question. Not resolved. Don't resolve it prematurely.
 
 ### Vercingetorix is bound, not simply dying
 
-He is not an aging warlord with a terminal illness. Two hundred years ago, the Germanic
-coalition's war-leader didn't die when his side lost to the cursed legate — something in
-him refused to stop fighting a war that was already lost, the mirror image of what
-happened to the Roman general. Where the legate became a Wight chained to *guarding* the
-spear, this man became something chained to *opposing* Rome, generation after
-generation, under different names, unable to actually die until the war is over. **The
+He is not an aging warlord with a terminal illness. Two hundred years ago, at Alesia, he
+didn't die when the spear abandoned him and his revolt collapsed — and he didn't die at
+his execution in Caesar's triumph either. Something in him refused to stop fighting a war
+that was already lost, the mirror image of what happened to the legate two generations
+after him. Where the legate became a Wight chained to *guarding* the spear, this man
+became something chained to *opposing* Rome, generation after generation, under
+different names — possibly the same names, possibly this one, reclaimed now that he's
+close to the thing that betrayed him — unable to actually die until the war is over.
+**The
 attack on the fort in Session 2 was not a betrayal of an alliance — it was the latest
 iteration of a war that has never ended for him.** Something about the party — mercy
 shown, how they handled the spear, a moment of respect — broke through enough that he
