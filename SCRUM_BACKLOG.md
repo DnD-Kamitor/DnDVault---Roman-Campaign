@@ -321,7 +321,7 @@ specific to that room, and a clear hand-off to the next room.
   - Hazard rule for leaving the causeway (marsh terrain effect)
   - Loot/evidence at the two supply caches (cult sentry posts) — a clue confirming this
     is the right place
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter4.qmd
 
 ### Story 8.2 — The Ossuary (west, skull-shaped chamber)
 - **Independent:** one room
@@ -333,7 +333,7 @@ specific to that room, and a clear hand-off to the next room.
   - Read-aloud for the circular skull-shaped room
   - Trigger for the 2 Bone Nagas (guarding something specific, not just standing around)
   - A discoverable detail tying these bones to the cult's earlier victims/workers
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter4.qmd
 
 ### Story 8.3 — The Blood-Growth Rooms (east)
 - **Independent:** two connected rooms
@@ -345,7 +345,7 @@ specific to that room, and a clear hand-off to the next room.
   - Read-aloud describing the growths (what they are, what happens if touched/disturbed)
   - Yochlol's ambush behavior (shapechange into spider, ceiling/wall approach)
   - Dretch placement and Fetid Cloud usage
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter4.qmd
 
 ### Story 8.4 — The Minor Altar (center)
 - **Independent:** one room
@@ -358,7 +358,7 @@ specific to that room, and a clear hand-off to the next room.
   - Shadow Demon ambush behavior (Shadow Stealth between pillars, not a stand-and-fight)
   - What examining the altar reveals (a clue pointing toward the Core Room / the
     chieftains)
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter4.qmd
 
 ### Story 8.5 — The Rune Puzzle Room
 - **Independent:** one room, no combat by default
@@ -371,7 +371,7 @@ specific to that room, and a clear hand-off to the next room.
   - Define success (what it unlocks/reveals) and failure (cost, not a hard stop)
   - Decide whether this room ever has combat (an interrupted-puzzle ambush) or stays a
     pure breather beat before the gathering hall
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter4.qmd
 
 ### Story 8.6 — The Gathering Hall (the transformed chieftains)
 - **Independent:** one room, the emotional pivot of the dungeon
@@ -387,7 +387,7 @@ specific to that room, and a clear hand-off to the next room.
   - Fight escalation rules (when/how Create Specter triggers, how many specters is too
     many for the table to handle)
   - What (if anything) can be learned from them if the party tries to talk first
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter4.qmd
 
 ### Story 8.7 — The Core Room (final ritual chamber)
 - **Independent:** the dungeon's capstone
@@ -401,7 +401,7 @@ specific to that room, and a clear hand-off to the next room.
   - Glabrezu's role: guardian of the focus, not just a random strong monster in a room
   - The session's actual payoff: what the party learns/gains here that sets up Session
     5's dungeon and the destruction ritual
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter4.qmd
 
 ### Story 8.8 — Wire maps and tokens
 - **Independent:** mechanical wiring, depends on 8.1-8.7 existing first
