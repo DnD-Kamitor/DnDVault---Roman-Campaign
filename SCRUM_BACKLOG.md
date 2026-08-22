@@ -451,7 +451,11 @@ confrontation itself. Party is level 7 for this entire session.
   destruction) should be his first real chance to die since 46 BC
 - **Testable:** a concrete encounter exists, distinct from Session 4's chieftain-Wraiths,
   with a resolution beat that lands emotionally, not just mechanically
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter5.qmd Scene 3, "Vercingetorix's Last
+  Stand," positioned blocking the passage into the Sanctum. Uses the CR11 Vercingetorix Bound
+  stat block (Story 9.3). His Final Death trait is the emotional and narrative payoff: one
+  minute of lucidity to answer up to three questions truthfully before dissolving to ash --
+  the first true confirmation of the Alesia/Caesar/Mars backstory the players receive
 
 ### Story 9.3 — Session 5 monster roster
 - **Independent:** depends on 9.1's room layout
@@ -482,7 +486,15 @@ confrontation itself. Party is level 7 for this entire session.
 - **Estimable:** large, the biggest single story in this backlog
 - **Testable:** each option has a distinct mechanical cost and resolution, playable
   without the GM improvising major gaps
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter5.qmd's Decision Point. The old,
+  unrelated map-note Option A/B/C (contract-destroy fight / consecrated-strike fight /
+  corruption-embrace) is retired. The three canonical endings from CAMPAIGN_LOG.md now each
+  carry a distinct mechanical shape: **Destroy** (guaranteed full Mars manifestation fight,
+  fought to the end, plus a permanent cost -- a willing guardian, PC or Lucius, must take the
+  vault's binding); **Give to Rome** (a shorter, angrier fight ending at a DM-judged threshold,
+  no permanent cost paid now, the cost deferred to "someone else's grandchildren"); **Give to
+  Mars** (no fight, he departs vindicated). Corruption-5 PCs are addressed directly by Mars
+  during the choice
 
 ### Story 9.5 — Mars's direct confrontation
 - **Independent:** the arena scene itself, using s5_mars_confrontation
@@ -491,7 +503,13 @@ confrontation itself. Party is level 7 for this entire session.
   before it, not less
 - **Testable:** read-aloud, stat block or mechanical presence for Mars, and a clear
   trigger for how Story 9.4's three options actually get offered/resolved in this scene
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- written into chapter5.qmd Scene 4, "The Antechamber of
+  Mars," using s5_mars_confrontation.html. Staged manifestation: presence-only rounds 1-2
+  (Legendary Actions only -- Strike, Summon Fallen), full CR20 stat block from round 3 if
+  the party hasn't yet resolved the ending (Multiattack x4 Divine Pilum, Legendary Resistance
+  3/day, War Cry, Divine Smite, Legendary Actions). Reused the existing npcs/mars.json numbers
+  rather than the older, retired map-note figures. The Decision Point (Story 9.4) triggers
+  directly out of this scene
 
 ### Story 9.6 — Decide the Wight-general's connection to the finale
 - **Independent:** a design decision plus whatever content follows from it
@@ -516,7 +534,10 @@ confrontation itself. Party is level 7 for this entire session.
   should imply the campaign is building toward that reveal
 - **Testable:** a read-through of Session 5 content finds no dangling "is this really
   Mars" thread presented as a mystery to solve
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- chapter5.qmd's DM Notes carries an explicit "Consistency
+  Guard" callout: Mars is genuinely Mars, diminished and starved, not an impostor. Any NPC
+  suspicion (Cassia is the natural voice for it) stays unconfirmed suspicion, never resolves
+  into a reveal. Read through the full rewrite for any dangling thread -- none found
 
 ### Story 9.8 — Wire maps and tokens
 - **Independent:** mechanical wiring, depends on 9.1-9.5 existing first
