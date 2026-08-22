@@ -154,9 +154,63 @@ standalone-ness all checked out clean with no work needed.
 
 ---
 
+## Epic 4: Session 5 Improvement Pass
+
+**Why:** Fresh audit of all 6 Session 5 (finale) deliverables. Close to Session 4's
+level of polish going in -- core scene/map/DC structure sound, epilogue does real work
+closing out all three OGAS villain threads (Corvinus, Brutus, Mars) plus the
+citizenship and corruption tracks.
+
+**Status: DONE** (2026-08-22).
+
+### Story 4.1 — Fix broken script path in chapter05_maptool.qmd
+- Same copy-pasted bug as Ch3/Ch4
+- **Status: DONE**
+
+### Story 4.2 — Fix wrong Dice Grimorium folder slug
+- **Independent:** one string, two occurrences (S3 and S5 blocks of
+  build_campaign_maps.sh)
+- **Valuable:** `ForestLabyrinthRuins` doesn't exist as a folder; the real one is
+  `LabyrinthRuins`. Silently broke the Labyrinth Ruins scene's map copy in S5 (an
+  explicit named scene in both chapter5.qmd and chapter05_maptool.qmd) and one
+  unreferenced S3 copy.
+- **Testable:** script no longer reports `[miss] LabyrinthRuins`
+- **Status: DONE** — verified via script re-run
+
+### Story 4.3 — Wire the custom Mars-vault SVGs into the scene table
+- **Independent:** one file, one table + one file list
+- **Valuable:** `s5_mars_confrontation.html` (the purpose-built arena/final-boss battle
+  map) and `s5_mars_vault*.html` (Option B underground retreat maps) exist on disk and
+  are already copied into the S5 folder by the build script, but chapter05_maptool.qmd
+  routed Scenes 2-4-underground to the generic Dice Grimorium `AncientAltar`/
+  `DarkTempleInterior` instead and never listed the custom SVGs at all
+- **Testable:** scene table cites the custom SVGs as preferred, generic maps as fallback
+  (matching the pattern already used in Ch1-4)
+- **Status: DONE**
+
+### Story 4.4 — Fix Brutus's name in chapter05_npcs.html
+- **Independent:** one line
+- **Valuable:** "Gaius Cornelius Brutus" there vs. "Gaius Cassius Brutus" everywhere
+  else in the campaign (chapter2/3.qmd, chapter02_guide.qmd, chapter04_npcs.html, etc.)
+- **Status: DONE**
+
+### Story 4.5 — Remove duplicated Mars "Victory Condition" paragraph
+- **Independent:** chapter5.qmd, one deletion
+- **Valuable:** two slightly different copies of the same victory-condition text
+  back to back, a copy-paste artifact from two drafting passes
+- **Status: DONE**
+
+### Story 4.6 — Add OGAS-summary cross-reference to DM Notes (low priority)
+- **Independent:** additive block
+- **Valuable:** every other chapter's DM Notes has an "OGAS This Session" block; Ch5's
+  full OGAS content existed only in chapter05_npcs.html with no cross-reference
+- **Status: DONE** — added a short resolution-focused summary (this is the finale, so
+  framed as "how each villain thread resolves" rather than a full OGAS repeat)
+
+---
+
 ## Backlog (not yet started)
 
-- **Epic 4: Session 5 Improvement Pass** — fresh audit pending
 - **Epic 5: Sessions 1-2 Improvement Pass** — fresh audit pending (lower priority; both
   already had a dedicated improvement milestone)
 - **Epic 6: Skill Barrier Format Audit** — `AGENT_TASK_skill_barrier_audit.md` already

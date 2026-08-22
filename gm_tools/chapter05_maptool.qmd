@@ -13,12 +13,12 @@ Session 5 is divine confrontation on the parade ground of Vindolanda. The fort i
 |---|---|---|---|
 | Scene 0: Arrival (cold open) | `CityStreets` or `BridgeCheckpoint` | All PCs, Augur_Cassia, Centurion_Varro, Legate_Corvinus, Tribune_Lucius, Vercingetorix | Fort parade ground. Freeze time at opening. Witnesses stand at edge — do not move their tokens. Mars: no token, narrate only. |
 | Scene 1: Mars Specifies Trial | Same map | Same | No new tokens. Mars speaks from the throne position. Players declare their option. |
-| Scene 2A: Champion Trial | `AncientAltar` | All PCs + Fausta_Luperci | Fausta forms from ash at start. Arena weapons along perimeter: place 5 prop tokens as markers. |
-| Scene 2B: Trial of Blades | `AncientAltar` | All PCs + Mars (if using token) | Phasing buildings appear each round — use Wight/Shadow tokens as rubble/hazard markers. Summon fallen: Wight ×1 or Shadow ×1 per Legendary Action. Max 3. |
-| Scene 2C: Trial of Voice | `AncientAltar` | All PCs | No combat tokens. Mars seated on throne. Players move tokens forward to the center as they argue. |
-| Scene 3: Price of Standing | `AncientAltar` | Same + Augur_Cassia (approaches) | Mars steps off throne. Cassia and Varro unfreeze and approach. |
+| Scene 2A: Champion Trial | `s5_mars_confrontation.html` (custom SVG, preferred), or `AncientAltar` as fallback | All PCs + Fausta_Luperci | Fausta forms from ash at start. Arena weapons along perimeter: place 5 prop tokens as markers. |
+| Scene 2B: Trial of Blades | `s5_mars_confrontation.html` (preferred), or `AncientAltar` as fallback | All PCs + Mars (if using token) | Phasing buildings appear each round — use Wight/Shadow tokens as rubble/hazard markers. Summon fallen: Wight ×1 or Shadow ×1 per Legendary Action. Max 3. |
+| Scene 2C: Trial of Voice | `s5_mars_confrontation.html` (preferred), or `AncientAltar` as fallback | All PCs | No combat tokens. Mars seated on throne. Players move tokens forward to the center as they argue. |
+| Scene 3: Price of Standing | Same as Scene 2 | Same + Augur_Cassia (approaches) | Mars steps off throne. Cassia and Varro unfreeze and approach. |
 | Scene 4: Return to Vindolanda | `CityStreets` or original fort map | All PCs, all witness NPCs | Time resumes. Cohort collapses to knees. Messenger arrives with citizenship document. |
-| Scene 4 (underground retreat) | `DarkTempleInterior` | All PCs | If party retreats below the fort during Option B — same vault as Sessions 1 and 4. |
+| Scene 4 (underground retreat) | `s5_mars_vault_overview.html` for orientation, then `s5_mars_vault.html` (custom SVGs, preferred), or `DarkTempleInterior` as fallback | All PCs | If party retreats below the fort during Option B — same vault as Sessions 1 and 4. |
 | Scene 5: Epilogue | `NatureGoddessTemple`, `IslandRuins` | Relevant PCs + Thusnelda (grove scenes) | One year later. Not the same session; epilogue is narrated, not mapped unless players want it. |
 
 **Special: Labyrinth Ruins**
@@ -91,10 +91,13 @@ The parade ground transforms before combat. Use these positional notes:
 Campaign session folder: `Maptool/maps/campaign/S5_The_Wrath_of_Mars/`
 
 ```
+s5_mars_confrontation.html   — custom SVG, the arena/final boss room (Scenes 2-3, preferred)
+s5_mars_vault_overview.html  — custom SVG, vault/temple overview (Option B underground orientation)
+s5_mars_vault.html           — custom SVG, vault battle map (Option B underground retreat, preferred)
 CityStreets             — fort exterior, parade ground (Scene 0 + Scene 4)
 BridgeCheckpoint        — alternate fort exterior if CityStreets unavailable
-AncientAltar            — divine arena, black sand circle (Scenes 2–3)
-DarkTempleInterior      — vault beneath fort (retreat + Option B underground)
+AncientAltar            — divine arena, black sand circle (Scenes 2-3 fallback)
+DarkTempleInterior      — vault beneath fort (Option B underground fallback)
 CathedralCatacombs      — extended underground retreat if needed
 AncientTombs            — deeper underground; optional
 NatureGoddessTemple     — sacred grove (epilogue); same map as Ch1 altar chamber
@@ -102,7 +105,7 @@ IslandRuins             — grove perimeter or labyrinth approach
 LabyrinthRuins          — spear destruction site (improvised scene)
 ```
 
-Run `bash Maptool/build_campaign_maps.sh` to copy session tokens into this folder (idempotent).
+Run `bash Maptool/maps/build_campaign_maps.sh` to copy session tokens into this folder (idempotent).
 
 ### The Arena as Callback
 
