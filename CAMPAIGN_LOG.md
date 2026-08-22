@@ -103,31 +103,14 @@ people his father never met, what it costs. His orders from Rome say bring it ba
 own heart, shaped somewhere his father never saw, says it must never leave — and he
 guards a locked box that belongs to neither of those things.
 
-### What is actually behind the mask
+### What Mars actually wants
 
-It is not truly Mars. The real Mars, the one Rome has honored for centuries, is a god
-of disciplined war — sanctioned battle, the defense of the state, virtue under arms. He
-is even, in his older aspect, a guardian of the harvest. What answered the pact at
-Alesia, what has ridden inside this spear ever since, wants none of that. It wants
-hatred for its own sake, fear, and tyranny over anything that might otherwise stand free.
-That is not Mars's portfolio. It is Bane's.
-
-Bane has no natural foothold on Roman soil, and no worshippers here who would call him
-by his true name. The spear gave him one: a Roman weapon, given by an unwitting Roman
-god's name, feeding on Roman and Germanic blood alike without either side ever
-suspecting whose hunger they were satisfying. He serves no side. He wants only war,
-wherever it can be found, and the mask of a legitimate god to hide behind while he takes
-it. The spear is a direct line of tribute to him alone — every death it causes is paid
-to him, not to Rome's glory or anyone's cause. Roman conquest feeds him. A burning fort
-feeds him. A frightened officer's massacre feeds him just as well. Only one thing
-starves him: destruction. He works through whatever fear or love or ambition a person
-offers him, and needs no allies at all, only blood that keeps moving.
-
-This is the campaign's true reveal, not table knowledge from the start. Cultists,
-chieftains, even Corvinus and Varro, all believe they are dealing with Mars, because
-that is the only name the spear has ever given them. Let it surface in Session 5, at the
-latest possible moment — the god behind the mask naming himself, or refusing to, while
-the party decides what to do with what he's built.
+Mars serves no side. He wants war itself, wherever it can be found. The spear is a
+direct line of tribute to him alone — every death it causes is paid to him, not to
+Rome's glory or anyone's cause. Roman conquest feeds him. A burning fort feeds him. A
+frightened officer's massacre feeds him just as well. Only one thing starves him:
+destruction. He works through whatever fear or love or ambition a person offers him,
+and needs no allies at all, only blood that keeps moving.
 
 He is starving now, and has been for a long while. Since Augustus, Rome has held what
 it has rather than reaching for more, nearly two hundred years of peace by the standards
@@ -147,16 +130,17 @@ the war stop, and the dead stay standing.
 
 Not every German wants the spear gone, and this is not a war of Rome against Germania —
 it is a fight inside both peoples at once. The two chieftains who led the raid in
-Session 2, already bribed and indebted to Brutus, serve the same masked god, believing
-him to be Mars, as any Roman would. They are not simple mercenaries. This cult is no kin
-to Thusnelda's and Vercingetorix's guardianship, and stands against it — the guardians
-remain exactly what they have always been, the victims of this weapon and its sworn
-enemies. But they are not the only Germans with a claim on the spear, and the cult wants
-it found, bloodied, and kept in the world, for the opposite reason the guardians want it
-ended. Rome carries the same division within itself — Corvinus, Varro, and Lucius
-against whatever faction still dreams of recovering Caesar's lost weapon — and
-now Germania carries it too. None of them — not the cult, not Brutus, not even most of
-the party until the truth is earned — know they are serving Bane and calling him Mars.
+Session 2, already bribed and indebted to Brutus, serve something wearing Mars's face,
+or serve Mars directly without knowing it. They are not simple mercenaries. This cult is
+no kin to Thusnelda's and Vercingetorix's guardianship, and stands against it — the
+guardians remain exactly what they have always been, the victims of this weapon and its
+sworn enemies. But they are not the only Germans with a claim on the spear, and the cult
+wants it found, bloodied, and kept in the world, for the opposite reason the guardians
+want it ended. Rome carries the same division within itself — Corvinus, Varro, and
+Lucius against whatever faction still dreams of recovering Caesar's lost weapon — and
+now Germania carries it too. Whether the cult knows it serves Mars, or believes it
+serves something else that Mars merely wears, is not yet answered, any more than the
+question of whether Brutus knows his own goal serves the same god he'd never worship.
 
 ### Three people at the fort, three reasons, the same fear
 
