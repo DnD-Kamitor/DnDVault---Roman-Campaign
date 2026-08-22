@@ -413,38 +413,78 @@ specific to that room, and a clear hand-off to the next room.
   wired into build_campaign_maps.sh's S4 block
 - **Status:** not started — do this last, once room content is locked
 
-## Epic 9: Session 5 — Three Options With Real Teeth
+## Epic 9: Session 5 — The Final Dungeon and the Three Horrible Options
 
-**Why:** The ending currently exists as narrative framing (destroy / give to Rome / give
-to Mars) without the same mechanical structure the existing Option A/B/C trial has.
+**Why:** Session 4 ended with the party knowing the crystal focus can't be destroyed at
+the cult's shrine -- Session 5 is where they actually go to do it, and where Mars stops
+working through corruption and shows up in person. Reuses the campaign's existing custom
+Session 5 maps rather than scouting new Dice Grimorium packs: `s5_mars_vault_overview`
+and `s5_mars_vault` for the dungeon crawl, `s5_mars_confrontation` for the arena
+confrontation itself. Party is level 7 for this entire session.
 
-### Story 9.1 — Build mechanical structure for the three horrible options
-- **Independent:** chapter5.qmd's finale, largest story in this backlog
-- **Valuable:** this is the campaign's actual thesis; it needs to play as three
-  distinct, weighted costs, not the same fight reskinned three times
-- **Estimable:** large -- likely needs its own dedicated design pass, not a quick edit
+### Story 9.1 — Confirm and re-scout the existing Session 5 maps
+- **Independent/Small:** no new downloads, just re-examine what's already built
+- **Valuable:** these maps were built before today's story work locked in what actually
+  happens here -- confirm the room layout still fits a "clear a dungeon, then confront
+  Mars in an arena" structure before writing scene content against it
+- **Testable:** a room-by-room read of s5_mars_vault_overview + s5_mars_vault exists,
+  same way Epic 8's maps were read before Session 4 was written
+- **Status:** not started
+
+### Story 9.2 — Vercingetorix's final return
+- **Independent:** one encounter, likely mid-dungeon before the arena
+- **Valuable:** he was put down in Session 3 but confirmed to recur -- this needs to be
+  his actual, final appearance, and destruction here (or alongside the spear's
+  destruction) should be his first real chance to die since 46 BC
+- **Testable:** a concrete encounter exists, distinct from Session 4's chieftain-Wraiths,
+  with a resolution beat that lands emotionally, not just mechanically
+- **Status:** not started
+
+### Story 9.3 — Session 5 monster roster
+- **Independent:** depends on 9.1's room layout
+- **Valuable:** needs to escalate past Session 4's Glabrezu without repeating it --
+  this is the campaign's last dungeon before the god himself
+- **Testable:** real Monster Manual stat blocks selected and added to
+  scripts/creature_stats.json + npcs/*.json + generated tokens, same pipeline as Epic 8
+- **Status:** not started
+
+### Story 9.4 — Build the three horrible options with real mechanical teeth
+- **Independent:** the campaign's actual thesis scene
+- **Valuable:** currently narrative framing only (destroy / give to Rome / give to
+  Mars) -- needs the same concrete structure the existing Option A/B/C ritual trial has,
+  three distinct costs, not one fight reskinned three times
+- **Estimable:** large, the biggest single story in this backlog
 - **Testable:** each option has a distinct mechanical cost and resolution, playable
-  without DM improvisation filling major gaps
+  without the GM improvising major gaps
 - **Status:** not started
 
-### Story 9.2 — Vercingetorix's resolution
-- **Independent:** conditional on his survival to Session 5
-- **Valuable:** destruction as his first chance to die since 46 BC is a real emotional
-  payoff per CAMPAIGN_LOG.md; needs to be reachable in play, not just implied
-- **Testable:** a concrete beat exists for this if he's present
+### Story 9.5 — Mars's direct confrontation
+- **Independent:** the arena scene itself, using s5_mars_confrontation
+- **Valuable:** this is where corruption/whispers stop being his only tool -- he's
+  cornered and desperate, and that needs to read as more dangerous than anything
+  before it, not less
+- **Testable:** read-aloud, stat block or mechanical presence for Mars, and a clear
+  trigger for how Story 9.4's three options actually get offered/resolved in this scene
 - **Status:** not started
 
-### Story 9.3 — Decide the Wight-general's connection to the finale
+### Story 9.6 — Decide the Wight-general's connection to the finale
 - **Independent:** a design decision plus whatever content follows from it
 - **Valuable:** he's the same figure whose weapon this is; leaving the connection
   entirely unaddressed wastes a strong callback
 - **Testable:** a decision is made and documented, whichever way it goes
 - **Status:** not started -- decision not yet made
 
-### Story 9.4 — Guard against reopening "who is really behind Mars"
+### Story 9.7 — Guard against reopening "who is really behind Mars"
 - **Independent:** a consistency check, not new content
 - **Valuable:** the impostor-god idea was explicitly rejected; nothing in Session 5
   should imply the campaign is building toward that reveal
 - **Testable:** a read-through of Session 5 content finds no dangling "is this really
   Mars" thread presented as a mystery to solve
 - **Status:** not started
+
+### Story 9.8 — Wire maps and tokens
+- **Independent:** mechanical wiring, depends on 9.1-9.5 existing first
+- **Valuable:** same reasoning as Epic 8's Story 8.8 -- unusable at the table without it
+- **Testable:** chapter05_maptool.qmd and build_campaign_maps.sh's S5 block reflect the
+  actual final content
+- **Status:** not started — do this last
