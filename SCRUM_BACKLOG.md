@@ -292,47 +292,126 @@ reflected yet.
   players (this stays a GM-only note, not read-aloud text)
 - **Status:** not started
 
-## Epic 8: Session 4 — The Cult Faction and Escalation
+## Epic 8: Session 4 — The Blood Cult Dungeon
 
-**Why:** The siege as currently written is generic Germanic warbands plus Brutus's
-sleeper agents. The cult faction (the two bribed chieftains) and the
-violence-scales-corruption mechanic exist in the story now but not in the chapter.
+**Why:** Session 4 is now confirmed as its own dungeon crawl (the forest journey leads
+the party to the cult's hideout), built on 3 real maps already scouted room-by-room
+(Skeleton Fortress Entrance → Blood Cult Dungeon → Castle Core Room) with a locked
+monster roster (all real Monster Manual demons/undead, no generic filler, escalated via
+numbers not oversized solo CR). This replaces the vaguer "cult faction in the siege"
+framing Epic 8 started with. Party is level 5 crossing the marsh, level 6 for the rest
+of the dungeon.
 
-### Story 8.1 — Wire the two cult chieftains in as distinct antagonists
-- **Independent:** touches chapter4.qmd's siege scenes and NPC roster
-- **Valuable:** currently interchangeable with the rest of the raiders; the story now
-  gives them a real, distinct identity and motive (serving what they believe is Mars)
-- **Estimable:** a scene or two, plus an OGAS entry each
-- **Testable:** they appear as named, distinguishable threats in at least one Session 4
-  scene, with their own OGAS in chapter04_npcs.html
+Each story below is one physical room or beat, matching the map layout. Every story
+needs: a read-aloud, the monster placement + trigger condition, any RP/puzzle content
+specific to that room, and a clear hand-off to the next room.
+
+### Story 8.1 — The Marsh (entrance approach)
+- **Independent:** one scene, self-contained map (part of Skeleton Fortress Entrance)
+- **Valuable:** first impression of the dungeon; sets tone before the skull-mouth
+  entrance
+- **Small:** one encounter, one hazard terrain feature (the causeway across the toxic
+  marsh)
+- **Testable:** read-aloud written, 2 Banshees placed with a trigger, causeway/marsh
+  hazard rules defined (what happens if a PC steps off the bone path)
+- **Subtasks:**
+  - Read-aloud for the approach (giant skull entrance, glowing marsh, bone causeway)
+  - Trigger condition for the 2 Banshees (do they rise as the party crosses, or ambush
+    from the two flanking supply caches?)
+  - Hazard rule for leaving the causeway (marsh terrain effect)
+  - Loot/evidence at the two supply caches (cult sentry posts) — a clue confirming this
+    is the right place
 - **Status:** not started
 
-### Story 8.2 — Design the violence-scaled fiend manifestation
-- **Independent:** a new mechanic, additive to existing siege scenes
-- **Valuable:** gives Mars's escalating hunger a visible, table-facing signal as the
-  siege gets worse, per CAMPAIGN_LOG.md's design note
-- **Estimable:** needs concrete triggers/stat blocks, not just a narrative idea
-- **Testable:** a GM can run it without inventing the trigger condition on the spot
-- **Status:** not started -- design only, no encounters written yet
-
-### Story 8.3 — Give Corvinus's real position a testable scene
-- **Independent:** one scene, likely tied to the siege's command structure
-- **Valuable:** his secret (wants it destroyed, can't say so) needs somewhere to
-  actually matter in play, not just live in his OGAS
-- **Testable:** a concrete DC/choice point exists where the party can act on trusting
-  him or not
+### Story 8.2 — The Ossuary (west, skull-shaped chamber)
+- **Independent:** one room
+- **Valuable:** first interior room, establishes the "bone" motif carried from the
+  entrance
+- **Testable:** read-aloud written, 2 Bone Nagas placed with a trigger, at least one
+  piece of environmental storytelling (whose bones are these?)
+- **Subtasks:**
+  - Read-aloud for the circular skull-shaped room
+  - Trigger for the 2 Bone Nagas (guarding something specific, not just standing around)
+  - A discoverable detail tying these bones to the cult's earlier victims/workers
 - **Status:** not started
 
-### Story 8.4 — Select and wire in new temple/fortress maps
-- **Independent:** map selection + build_campaign_maps.sh wiring
-- **Valuable:** 8 new maps (Blood Cult Dungeon, Cultist Cave, Fire Sacrificial Chamber,
-  Castle Core Room, Skeleton Fortress Entrance, Cave Fortress, Snowy Ruined Fortress,
-  Ruined Swamp Fortress) are downloaded and sitting unused in
-  `Maptool/maps/dicegrimorium/`
-- **Testable:** at least one is wired into chapter04_maptool.qmd and
-  build_campaign_maps.sh's S4 block, tied to a specific new scene (the cult shrine)
-- **Status:** not started -- explicitly deferred until this epic's other stories give
-  the shrine scene something to happen in it
+### Story 8.3 — The Blood-Growth Rooms (east)
+- **Independent:** two connected rooms
+- **Valuable:** the most visually "blood cult" horror rooms on the map — needs to read
+  as such in prose, not just in the monster stat block
+- **Testable:** read-aloud written, Yochlol + 2 Dretches placed with a trigger,
+  insect plague or the fleshy growths themselves defined as a battlefield hazard
+- **Subtasks:**
+  - Read-aloud describing the growths (what they are, what happens if touched/disturbed)
+  - Yochlol's ambush behavior (shapechange into spider, ceiling/wall approach)
+  - Dretch placement and Fetid Cloud usage
+- **Status:** not started
+
+### Story 8.4 — The Minor Altar (center)
+- **Independent:** one room
+- **Valuable:** first real ritual space the party sees — foreshadows the Core Room
+  without being the main event
+- **Testable:** read-aloud written, 2 Shadow Demons placed, the altar itself described
+  (what it's for, what it shows about the cult's practice)
+- **Subtasks:**
+  - Read-aloud for the glowing dais + 4 pillars
+  - Shadow Demon ambush behavior (Shadow Stealth between pillars, not a stand-and-fight)
+  - What examining the altar reveals (a clue pointing toward the Core Room / the
+    chieftains)
+- **Status:** not started
+
+### Story 8.5 — The Rune Puzzle Room
+- **Independent:** one room, no combat by default
+- **Valuable:** the map has a literal 4-tile rune puzzle built in; matches the
+  established puzzle convention from Ch1/Ch3
+- **Testable:** puzzle solution defined, a wrong-answer consequence exists, a
+  fail-forward option exists (matches "no dead ends" campaign convention)
+- **Subtasks:**
+  - Assign meaning/order to the 4 glowing sigils
+  - Define success (what it unlocks/reveals) and failure (cost, not a hard stop)
+  - Decide whether this room ever has combat (an interrupted-puzzle ambush) or stays a
+    pure breather beat before the gathering hall
+- **Status:** not started
+
+### Story 8.6 — The Gathering Hall (the transformed chieftains)
+- **Independent:** one room, the emotional pivot of the dungeon
+- **Valuable:** this is where the two cult chieftains are found — not as living
+  cultists, but as 3 Wraiths (the chieftains plus what their "success" cost them). Needs
+  real RP/horror writing, not just a stat block.
+- **Testable:** read-aloud written, the reveal that the ritual already consumed its own
+  leaders is explicit, 3 Wraiths placed with Create Specter escalation rules spelled out
+- **Subtasks:**
+  - Read-aloud for the hall itself (what a gathering place for a cult that's now gone
+    looks like)
+  - The reveal beat: evidence identifying these Wraiths as the chieftains specifically
+  - Fight escalation rules (when/how Create Specter triggers, how many specters is too
+    many for the table to handle)
+  - What (if anything) can be learned from them if the party tries to talk first
+- **Status:** not started
+
+### Story 8.7 — The Core Room (final ritual chamber)
+- **Independent:** the dungeon's capstone
+- **Valuable:** this is the actual point of Session 4 — confirming what the cult was
+  doing and ending it (or not)
+- **Testable:** read-aloud written, Glabrezu placed as the guardian, the ritual/focus
+  (the glowing crystal-star) explained mechanically, a clear hand-off to Session 5
+- **Subtasks:**
+  - Read-aloud for the circular sanctum, the four gargoyle reliefs, the dais and stair
+  - What the crystal-star focus actually is/does (tie to "feeding Mars" mechanically)
+  - Glabrezu's role: guardian of the focus, not just a random strong monster in a room
+  - The session's actual payoff: what the party learns/gains here that sets up Session
+    5's dungeon and the destruction ritual
+- **Status:** not started
+
+### Story 8.8 — Wire maps and tokens
+- **Independent:** mechanical wiring, depends on 8.1-8.7 existing first
+- **Valuable:** none of the above is usable at the table without the MapTool reference
+  and build script actually pointing at it
+- **Testable:** chapter04_maptool.qmd has a scene table for this dungeon; the three maps
+  (Skeleton Fortress Entrance, Blood Cult Dungeon, Castle Core Room) and all new monster
+  tokens (Banshee, Bone_Naga, Yochlol, Shadow_Demon, Dretch, existing Wraith/Glabrezu) are
+  wired into build_campaign_maps.sh's S4 block
+- **Status:** not started — do this last, once room content is locked
 
 ## Epic 9: Session 5 — Three Options With Real Teeth
 
