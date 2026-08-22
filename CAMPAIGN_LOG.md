@@ -56,6 +56,13 @@ exactly the way Sauron is a rumor and a shadow until the
 Ring comes close to the fire again — that's why he can't simply take the spear back
 himself until Sessions 4-5.
 
+**Pompey did not lose a fair war.** Once the civil war came, his defeat at Pharsalus
+reads less like two Roman armies meeting on even terms and more like one side
+competing against something that had stopped being explicable since Alesia. He fled to
+Egypt afterward and was murdered by men currying favor with the winner, his head
+delivered to Caesar as a trophy Caesar was reportedly horrified by. He is one more body
+this war produced, indifferent to which side he was on -- Mars does not care who wins.
+
 **Caesar later entrusted it to a legate**, facing annihilation against a Germanic
 coalition on the frontier while Rome's attention was elsewhere. The legate's unbroken
 campaign of slaughter fed directly into the momentum that let Caesar's faction end the
@@ -63,12 +70,17 @@ Republic. The legate himself did not remain a man. Bound by his own weapon's hun
 became what the party found guarding the vault in Session 1 — **the Wight is the
 general.**
 
-**Caesar's assassins are who buried it, not the Roman state.** In the chaos after the
-Ides of March, Marcus Junius Brutus and Gaius Cassius Longinus recovered the spear from
-his estate and understood, from what they'd watched happen to him, that they hadn't
-just killed an ambitious man — they'd killed a man being consumed by something that
-would do the same to whoever held it next. They couldn't destroy it and couldn't tell
-anyone what it was without unraveling their own justification for the murder. So they
+**Caesar's assassins are who buried it, not the Roman state, and their motive was never
+abstract philosophy.** Marcus Junius Brutus and Gaius Cassius Longinus both fought for
+Pompey at Pharsalus. They picked the Republic's side, watched it lose a war that
+shouldn't have been losable, were pardoned and forced to serve the man who did it. In
+the chaos after the Ides of March, they recovered the spear from his estate and
+understood, from what they'd watched happen to him over the years they'd served him,
+that they hadn't just killed an ambitious man — they'd killed a man being consumed by
+something that had already destroyed their first cause and would do the same to
+whoever held it next. This was not only tyrannicide. It was the closest thing to
+justice for Pompey they were ever going to get. They couldn't destroy it and couldn't
+tell anyone what it was without unraveling their own justification for the murder. So they
 sent it back to where it started: Germania, into the hands of the same people who
 already had every reason to want it gone. Roman assassins and Germanic guardians,
 quietly agreeing on the one thing they could agree on. It was **Thusnelda's and
