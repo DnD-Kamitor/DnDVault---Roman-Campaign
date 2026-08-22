@@ -255,3 +255,117 @@ chapter2.qmd, ~39 in chapter5.qmd, ~20 in roles.qmd, ~19 in roman_tactics.qmd. V
 by hand: `<details>`/`<summary>` tag balance unchanged in all files, sample diffs
 correct, remaining `DC \d+ \w+` matches are false positives (degree-of-success prose,
 tool-proficiency checks, grapple DCs) rather than real gate-format violations.
+
+---
+
+# Second Backlog Pass: Sessions 3-5 Story Alignment (2026-08-22, later)
+
+A live table session surfaced a major continuity gap (Varro's betrayal, Lucius's
+takeover) that led to a full session working out the campaign's real throughline —
+see `CAMPAIGN_LOG.md`'s "THE REAL STORY" and "What Sessions 3, 4, and 5 need to
+reflect" sections before working any story below. This backlog implements that design
+pass. Read the story sections first; these epics assume that context.
+
+## Epic 7: Session 3 Story Alignment
+
+**Why:** Session 3 already carries the Prologue, the corrected river crossing, and
+updated OGAS for Varro/Lucius/Corvinus from today's earlier pass. Two threads from the
+newer, deeper story (Alesia, the assassins, the six-generation guardianship) aren't
+reflected yet.
+
+### Story 7.1 — Deepen Thusnelda's seal-history dialogue
+- **Independent/Small:** a few lines in chapter3.qmd's Scene 2
+- **Valuable:** she currently says only "my teacher's teacher sealed it" -- thin, given
+  the seal's real history (Alesia, the assassins, six generations of guardianship) is
+  now settled. Should land with more weight for a GM who knows what she's guarding,
+  without lecturing the players or revealing Vercingetorix's true nature early.
+- **Testable:** her dialogue reads as informed by the deeper history without stating it
+  outright
+- **Status:** not started
+
+### Story 7.2 — Update Vercingetorix's chapter3.qmd OGAS
+- **Independent/Small:** one DM Notes entry
+- **Valuable:** his current entry ("he is dying, this is his final campaign") predates
+  the fuller truth (bound since 46 BC, possibly the historical man himself). The GM
+  running the table needs this in the chapter, not only in CAMPAIGN_LOG.md.
+- **Testable:** entry matches CAMPAIGN_LOG.md's telling; does not spill the reveal to
+  players (this stays a GM-only note, not read-aloud text)
+- **Status:** not started
+
+## Epic 8: Session 4 — The Cult Faction and Escalation
+
+**Why:** The siege as currently written is generic Germanic warbands plus Brutus's
+sleeper agents. The cult faction (the two bribed chieftains) and the
+violence-scales-corruption mechanic exist in the story now but not in the chapter.
+
+### Story 8.1 — Wire the two cult chieftains in as distinct antagonists
+- **Independent:** touches chapter4.qmd's siege scenes and NPC roster
+- **Valuable:** currently interchangeable with the rest of the raiders; the story now
+  gives them a real, distinct identity and motive (serving what they believe is Mars)
+- **Estimable:** a scene or two, plus an OGAS entry each
+- **Testable:** they appear as named, distinguishable threats in at least one Session 4
+  scene, with their own OGAS in chapter04_npcs.html
+- **Status:** not started
+
+### Story 8.2 — Design the violence-scaled fiend manifestation
+- **Independent:** a new mechanic, additive to existing siege scenes
+- **Valuable:** gives Mars's escalating hunger a visible, table-facing signal as the
+  siege gets worse, per CAMPAIGN_LOG.md's design note
+- **Estimable:** needs concrete triggers/stat blocks, not just a narrative idea
+- **Testable:** a GM can run it without inventing the trigger condition on the spot
+- **Status:** not started -- design only, no encounters written yet
+
+### Story 8.3 — Give Corvinus's real position a testable scene
+- **Independent:** one scene, likely tied to the siege's command structure
+- **Valuable:** his secret (wants it destroyed, can't say so) needs somewhere to
+  actually matter in play, not just live in his OGAS
+- **Testable:** a concrete DC/choice point exists where the party can act on trusting
+  him or not
+- **Status:** not started
+
+### Story 8.4 — Select and wire in new temple/fortress maps
+- **Independent:** map selection + build_campaign_maps.sh wiring
+- **Valuable:** 8 new maps (Blood Cult Dungeon, Cultist Cave, Fire Sacrificial Chamber,
+  Castle Core Room, Skeleton Fortress Entrance, Cave Fortress, Snowy Ruined Fortress,
+  Ruined Swamp Fortress) are downloaded and sitting unused in
+  `Maptool/maps/dicegrimorium/`
+- **Testable:** at least one is wired into chapter04_maptool.qmd and
+  build_campaign_maps.sh's S4 block, tied to a specific new scene (the cult shrine)
+- **Status:** not started -- explicitly deferred until this epic's other stories give
+  the shrine scene something to happen in it
+
+## Epic 9: Session 5 — Three Options With Real Teeth
+
+**Why:** The ending currently exists as narrative framing (destroy / give to Rome / give
+to Mars) without the same mechanical structure the existing Option A/B/C trial has.
+
+### Story 9.1 — Build mechanical structure for the three horrible options
+- **Independent:** chapter5.qmd's finale, largest story in this backlog
+- **Valuable:** this is the campaign's actual thesis; it needs to play as three
+  distinct, weighted costs, not the same fight reskinned three times
+- **Estimable:** large -- likely needs its own dedicated design pass, not a quick edit
+- **Testable:** each option has a distinct mechanical cost and resolution, playable
+  without DM improvisation filling major gaps
+- **Status:** not started
+
+### Story 9.2 — Vercingetorix's resolution
+- **Independent:** conditional on his survival to Session 5
+- **Valuable:** destruction as his first chance to die since 46 BC is a real emotional
+  payoff per CAMPAIGN_LOG.md; needs to be reachable in play, not just implied
+- **Testable:** a concrete beat exists for this if he's present
+- **Status:** not started
+
+### Story 9.3 — Decide the Wight-general's connection to the finale
+- **Independent:** a design decision plus whatever content follows from it
+- **Valuable:** he's the same figure whose weapon this is; leaving the connection
+  entirely unaddressed wastes a strong callback
+- **Testable:** a decision is made and documented, whichever way it goes
+- **Status:** not started -- decision not yet made
+
+### Story 9.4 — Guard against reopening "who is really behind Mars"
+- **Independent:** a consistency check, not new content
+- **Valuable:** the impostor-god idea was explicitly rejected; nothing in Session 5
+  should imply the campaign is building toward that reveal
+- **Testable:** a read-through of Session 5 content finds no dangling "is this really
+  Mars" thread presented as a mystery to solve
+- **Status:** not started
