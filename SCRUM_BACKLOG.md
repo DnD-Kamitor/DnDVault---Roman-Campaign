@@ -213,6 +213,15 @@ citizenship and corruption tracks.
 
 - **Epic 5: Sessions 1-2 Improvement Pass** — fresh audit pending (lower priority; both
   already had a dedicated improvement milestone)
-- **Epic 6: Skill Barrier Format Audit** — `AGENT_TASK_skill_barrier_audit.md` already
-  specs this; covers chapter1/2/4/5.qmd, roles.qmd, roman_tactics.qmd (knowledge.qmd and
-  chapter3.qmd are done)
+## Epic 6: Skill Barrier Format Audit
+
+**Why:** `AGENT_TASK_skill_barrier_audit.md` specs a mechanical DC-header format fix
+(bare `DC 13` -> `DC 13 Ability (Skill) — trigger phrase`) across the campaign.
+`knowledge.qmd` and `chapter3.qmd` (via the Session 3 pass) were already fixed.
+
+**Status: DONE** (2026-08-22). chapter5.qmd's DC fixes landed inside the Epic 4 commit
+(a concurrent process shared the same working tree). ~90 fixes in chapter1.qmd, ~61 in
+chapter2.qmd, ~39 in chapter5.qmd, ~20 in roles.qmd, ~19 in roman_tactics.qmd. Verified
+by hand: `<details>`/`<summary>` tag balance unchanged in all files, sample diffs
+correct, remaining `DC \d+ \w+` matches are false positives (degree-of-success prose,
+tool-proficiency checks, grapple DCs) rather than real gate-format violations.

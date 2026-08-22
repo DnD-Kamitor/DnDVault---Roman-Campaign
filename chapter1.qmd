@@ -58,7 +58,7 @@ In nomine Senatus Populique Romani.
 **Handout 2: The Vault Inscription**
 ```
 ELDER FUTHARK RUNES carved into the altar stone:
-(A DC 15 History or Religion check, or asking Thusnelda
+(A DC 15 Intelligence (History) or Intelligence (Religion) check, or asking Thusnelda
 in Session 3, reveals the full meaning.)
 
 Runes visible: TIWAZ  HAGALAZ  NAUDHIZ  ISA  OTHALAN
@@ -96,7 +96,7 @@ Give no handout before its trigger. Each one lands harder when the scene earns i
 |---|---|---|---|---|
 | 3 | Omens Observed | Scene 0 | Corvinus says "we lost four men and the dogs are dead" | Index card; players keep it and can add their own observations during the session |
 | 1 | Legate's Orders | Scene 1 | Corvinus formally assigns the mission and sets the wax tablet down without picking it up again | Slide across the table without comment; let them read it aloud to each other |
-| 12 | OTHALAN Bone Token | Scene 2 | Party finds the hidden alcove in Entry Passage (Investigation DC 15) and examines the bone tile | Hand the card to whoever made the check; do not read it aloud — let them share it at the table |
+| 12 | OTHALAN Bone Token | Scene 2 | Party finds the hidden alcove in Entry Passage (DC 15 Intelligence (Investigation)) and examines the bone tile | Hand the card to whoever made the check; do not read it aloud — let them share it at the table |
 | 2 | Vault Inscription | Scene 3 | Party crosses the Altar Chamber threshold and torchlight reaches the altar stone face | Read the rune names aloud in order, then slide the paper across; pause after each translation |
 | 15 | Marcomanni Vision | Scene 2 | First character touches a boar-shield in the Shield Hall | Hand it face-down; let the player flip it themselves. Say nothing. |
 | 16 | Cherusci Vision | Scene 2 | First character touches a three-fingered-hand shield | As above — silence. Let the player read it first, then share if they choose. |
@@ -233,7 +233,7 @@ Corvinus's aide meets the party at the excavation shaft before they descend. He 
 
 The descent is 40 feet. Anyone carrying a torch will notice the flame leans downward in an unnatural draft. This is worth remarking on but has no mechanical effect: it simply feels wrong.
 
-Survival DC 11 (active: pausing at the shaft head and reading the rising air before descending): The draft is not random. It pulses slowly in and out, the way air moves through a space with more than one chamber. A frontier soldier or tracker who has entered collapsed structures or defensive tunnel works recognizes the pattern: the space below has at least two rooms with different pressure, and the seal on the deeper chamber was recently broken. The air carries a single smell that deepens below the cold mineral note: cedar. Dry storage. Something sealed deliberately, not collapsed.
+DC 11 Wisdom (Survival) (active: pausing at the shaft head and reading the rising air before descending): The draft is not random. It pulses slowly in and out, the way air moves through a space with more than one chamber. A frontier soldier or tracker who has entered collapsed structures or defensive tunnel works recognizes the pattern: the space below has at least two rooms with different pressure, and the seal on the deeper chamber was recently broken. The air carries a single smell that deepens below the cold mineral note: cedar. Dry storage. Something sealed deliberately, not collapsed.
 
 At the bottom of the ladder, before the passage begins, scratched into the clay wall at knee height where a man crouching would see it:
 
@@ -251,7 +251,7 @@ This was left by a previous work crew member. It is not a puzzle. It is a warnin
 >
 > *Fifteen feet in, a Roman pick lies abandoned on the floor. It is not rusted. The handle is broken, not decayed. Someone dropped this recently and left without it. The head is pointed in the direction you came from.*
 
-Perception DC 10 (passive): The pick points back toward the shaft. Whoever dropped it was retreating, not working.
+DC 10 Wisdom (Perception) (passive): The pick points back toward the shaft. Whoever dropped it was retreating, not working.
 
 <details>
 <summary><strong>What you know about this warning</strong></summary>
@@ -267,21 +267,21 @@ Perception DC 10 (passive): The pick points back toward the shaft. Whoever dropp
 </details>
 
 <details>
-<summary><strong>DC 12 Investigation (active: examining the scratches and the abandoned pick) — Connecting the warning to its maker</strong></summary>
+<summary><strong>DC 12 Intelligence (Investigation) (active: examining the scratches and the abandoned pick) — Connecting the warning to its maker</strong></summary>
 
 The scratches were made with the same iron pick lying in the passage. The wear pattern on the pick head matches the depth of the scratches. This person used their own work tool to carve this warning, then left the tool behind as evidence that they had been here and made this choice deliberately. They were not fleeing in panic. They took the time to carve seven strokes and a word in Latin, then set the pick down pointing toward the exit, and walked out.
 
 </details>
 
 <details>
-<summary><strong>DC 14 History (Librarius only — active: reading the countdown marker as a formal military record) — The deadline violation</strong></summary>
+<summary><strong>DC 14 Intelligence (History) (Librarius only — active: reading the countdown marker as a formal military record) — The deadline violation</strong></summary>
 
 Military records use this countdown form to mark the remaining days of a campaign, a garrison rotation, or a siege operation. A countdown to zero marks the end-date of something official. This person was recording that an excavation had a specific end-date and the date had passed without the work being completed. The NOLITE is the signal that the deadline has been violated. Either this person knew something the current dig team does not, or they were operating under a different set of orders. Both possibilities have implications.
 
 </details>
 
 <details>
-<summary><strong>DC 15 Religion (Haruspex only — active: reading the omen in the countdown structure) — The seven-fold oath</strong></summary>
+<summary><strong>DC 15 Intelligence (Religion) (Haruspex only — active: reading the omen in the countdown structure) — The seven-fold oath</strong></summary>
 
 The number seven is the number of the Fates. One line through all seven means all threads severed at once: the total cessation of a seven-fold obligation. A Haruspex who reads numerologically understands this as a specific message: "The seven-fold oath has been broken. All threads are cut." Someone with Haruspex training left this, whether they carved it with divine confirmation or from personal interpretation. The message is the same either way: proceeding after the oath is voided is not just dangerous. It is *already happening*.
 
@@ -332,12 +332,12 @@ The T-junction is clearly visible. Neither passage is blocked. Players choose wh
 
 **Exploration:**
 
-- History DC 13 (passive): The symbols belong to at least four distinct Germanic tribes, none of which coexisted in the same region. These shields were collected here, not stored by one people.
-- History DC 15 (passive): The boar symbol is Marcomanni. The three-fingered hand is pre-Roman Cherusci. These tribes have been rivals for centuries. Someone gathered their war-gear in one place.
-- Religion DC 14 (passive): This is a trophy hall, but not a Roman kind. In Germanic tradition, weapons and shields left in a sacred place belong to the war-god. This room is an offering.
-- Perception DC 11 (passive): The torch flame leans consistently toward the far archway. A draft from below pulls it -- directional, not random, and stronger as you move deeper.
-- Nature DC 12 (passive): The underground smell is wrong for dry stone. Cold, organic, faintly mineral. Bog water seeping through limestone. This floor has not been reliably dry for a long time.
-- Athletics DC 12 (active: lifting one shield from the wall to assess its combat state): The shield is lighter than it should be. The rim has been cut and the grip broken deliberately -- from the inside, through the straps. Not battle damage: a deliberate act with a blade, performed before the shield was hung. At least a quarter of the shields share this: intact faces, ruined grips. These were not spoils of war. A warrior who disables their own shield before offering it is not surrendering a trophy. They are ensuring these weapons cannot be turned against anyone.
+- DC 13 Intelligence (History) (passive): The symbols belong to at least four distinct Germanic tribes, none of which coexisted in the same region. These shields were collected here, not stored by one people.
+- DC 15 Intelligence (History) (passive): The boar symbol is Marcomanni. The three-fingered hand is pre-Roman Cherusci. These tribes have been rivals for centuries. Someone gathered their war-gear in one place.
+- DC 14 Intelligence (Religion) (passive): This is a trophy hall, but not a Roman kind. In Germanic tradition, weapons and shields left in a sacred place belong to the war-god. This room is an offering.
+- DC 11 Wisdom (Perception) (passive): The torch flame leans consistently toward the far archway. A draft from below pulls it -- directional, not random, and stronger as you move deeper.
+- DC 12 Intelligence (Nature) (passive): The underground smell is wrong for dry stone. Cold, organic, faintly mineral. Bog water seeping through limestone. This floor has not been reliably dry for a long time.
+- DC 12 Strength (Athletics) (active: lifting one shield from the wall to assess its combat state): The shield is lighter than it should be. The rim has been cut and the grip broken deliberately -- from the inside, through the straps. Not battle damage: a deliberate act with a blade, performed before the shield was hung. At least a quarter of the shields share this: intact faces, ruined grips. These were not spoils of war. A warrior who disables their own shield before offering it is not surrendering a trophy. They are ensuring these weapons cannot be turned against anyone.
 
 <details>
 <summary><strong>What you know about the shields</strong></summary>
@@ -357,21 +357,21 @@ The T-junction is clearly visible. Neither passage is blocked. Players choose wh
 </details>
 
 <details>
-<summary><strong>DC 13 History (active: noting the arrangement as a systematic record) — The war-council hierarchy</strong></summary>
+<summary><strong>DC 13 Intelligence (History) (active: noting the arrangement as a systematic record) — The war-council hierarchy</strong></summary>
 
 The shields read as a parade order. Most experienced warriors first (Marcomanni, the largest contributor), then secondary allies (Cherusci and Suebi), then minor contributions. This is the order of a war-council where one tribe led and others followed. Someone arranged this hall as a visual record of a specific coalition. The arrangement answers a question the party should be asking: who had authority over all four tribes simultaneously? The shields tell you a coalition of this scale existed, centered on this site, and that Mars was the shared authority they all answered to.
 
 </details>
 
 <details>
-<summary><strong>DC 15 Insight (Explorator only — active: reading the raid history from the shield styles and wear patterns) — The timeline of offerings</strong></summary>
+<summary><strong>DC 15 Wisdom (Insight) (Explorator only — active: reading the raid history from the shield styles and wear patterns) — The timeline of offerings</strong></summary>
 
 You know these tribes and you know when they were active on the frontier. The Marcomanni's heavy presence corresponds to the period immediately after the Germanicus punitive expedition: they were offering heavily to Mars during that era. The Cherusci contribution is smaller but present, which means they were active in this area after 24 AD. The Suebi contribution is smallest, meaning they were least committed to this specific site. The shield hall is a record of a specific era: the 50 to 70 years after Germanicus's campaign, when the tribes were offering to Mars at this location.
 
 </details>
 
 <details>
-<summary><strong>DC 16 History (Librarius only — active: reading the catalogue structure as evidence of long-term Roman knowledge) — Someone documented this</strong></summary>
+<summary><strong>DC 16 Intelligence (History) (Librarius only — active: reading the catalogue structure as evidence of long-term Roman knowledge) — Someone documented this</strong></summary>
 
 The arrangement is too systematic for Germanic tribal practice. Tribes do not catalogue offerings in Roman record-keeping order. But a Roman scribe living among Germanic peoples might, especially if they were creating an official record of what had been offered and when. Someone fluent in both Roman and Germanic record-keeping systems catalogued these shields over years. This was not a one-time offering. This was an ongoing site where multiple tribes brought offerings, and a literate person with access to both worlds documented the deposits. That person is a bridge figure: Roman enough to use Roman cataloguing, Germanic enough to be trusted with access to this site.
 
@@ -383,9 +383,9 @@ The shields are hung in a specific order by tribe symbol. A character who notes 
 
 In the shadow to the left, half-covered by a stone bench that has partially tipped inward, lies a legionary in a bare tunic. His lorica is missing -- traded or removed to cover a wound at the shoulder, now dark and dried. His breathing is slow. This is Sicus, one of the four men Corvinus mentioned.
 
-- Perception DC 11 (passive): disturbed floor dust shows a drag trail from the entrance arch. Someone pulled him here and covered him. Not an ambush: concealment.
-- Medicine DC 9 (passive): he is stable, not dying. Two days without water is the problem.
-- A healing potion or healing spell brings him to 1 HP and consciousness within one round. Without one: a DC 12 Medicine check and water (the canteen in Corvinus's aide's satchel) revives him in two minutes. Either way he can speak.
+- DC 11 Wisdom (Perception) (passive): disturbed floor dust shows a drag trail from the entrance arch. Someone pulled him here and covered him. Not an ambush: concealment.
+- DC 9 Wisdom (Medicine) (passive): he is stable, not dying. Two days without water is the problem.
+- A healing potion or healing spell brings him to 1 HP and consciousness within one round. Without one: a DC 12 Wisdom (Medicine) check and water (the canteen in Corvinus's aide's satchel) revives him in two minutes. Either way he can speak.
 
 When he wakes, he speaks in short bursts, eyes tracking the vault entrance:
 
@@ -398,7 +398,7 @@ What he gives the party:
 - There is a lever in the final chamber; the short cultist used it before leaving.
 - As he speaks he presses a carved bone token into the nearest character's hand -- OTHALAN, thumb-sized, found on the floor near the first arch. The cultists dropped it. This is the second contract token and confirms someone else has been moving through this vault with clear purpose.
 
-This token grants advantage on the Wight communication attempt (DC 14 Persuasion or Insight) in the Altar Chamber, stacking with the contract scroll if both are found.
+This token grants advantage on the Wight communication attempt (DC 14 Charisma (Persuasion) or Wisdom (Insight)) in the Altar Chamber, stacking with the contract scroll if both are found.
 
 **DM: Sicus and the three-clue rule.** Sicus's intel covers Clue 1 of a subsidiary puzzle: the cultists were here before the party, meaning this mission was anticipated. He cannot fight. He stays at the back of any marching order and will not enter the Runic Corridor if combat sounds come from ahead. If the party leaves him to recover in the Shield Hall, he survives the session and can be found at the surface on return.
 
@@ -446,7 +446,7 @@ At the far end of the Shield Hall, where the archway leads onward:
 
 > *There is a slight wrongness in the wall to the left. Not a gap -- the stones are continuous. But one shield has been hung with its face to the wall rather than facing the room.*
 
-Investigation DC 15 (active: examining the backwards shield): On success, the shield conceals a narrow gap -- not a door, but a deliberate crack in the stone, widened by hand tools. Inside, wrapped in badly degraded cloth, three objects: a Roman wax tablet, a Germanic carved bone token, and a bronze stylus.
+DC 15 Intelligence (Investigation) (active: examining the backwards shield): On success, the shield conceals a narrow gap -- not a door, but a deliberate crack in the stone, widened by hand tools. Inside, wrapped in badly degraded cloth, three objects: a Roman wax tablet, a Germanic carved bone token, and a bronze stylus.
 
 The wax tablet is partially legible (DC 12 Intelligence to read the damaged Latin):
 
@@ -454,7 +454,7 @@ The wax tablet is partially legible (DC 12 Intelligence to read the damaged Lati
 
 The rest is obliterated. The last word before obliteration may have been *augur* or *augurem*.
 
-The bone token is carved with a Germanic rune: OTHALAN (ancestral land). This is the same rune from the altar inscription. Religion DC 13 (passive) or History DC 13 (passive) recognizes it as a formal contract marker. Two parties held tokens like this to seal a bargain. This is one half. The other half is presumably still at the altar.
+The bone token is carved with a Germanic rune: OTHALAN (ancestral land). This is the same rune from the altar inscription. DC 13 Intelligence (Religion) (passive) or DC 13 Intelligence (History) (passive) recognizes it as a formal contract marker. Two parties held tokens like this to seal a bargain. This is one half. The other half is presumably still at the altar.
 
 <details>
 <summary><strong>What you know about the wax tablet and bone token</strong></summary>
@@ -474,21 +474,21 @@ The bone token is carved with a Germanic rune: OTHALAN (ancestral land). This is
 </details>
 
 <details>
-<summary><strong>DC 14 Religion (active: examining the OTHALAN bone token as a contract object) — One half of a binding pair</strong></summary>
+<summary><strong>DC 14 Intelligence (Religion) (active: examining the OTHALAN bone token as a contract object) — One half of a binding pair</strong></summary>
 
 OTHALAN is the rune of ancestral land and binding oath. This bone is carved with ritual precision. The carving was done by the same hand that carved its matching token: two tokens made simultaneously as proof of a formal agreement. In Germanic contract tradition, each party holds one token; when both tokens are present together, the contract can be renewed or formally ended. The token in the alcove is one half of the pair. If you find the matching token, you have evidence of a binding oath that was made and witnessed by both parties. The question is: who holds the other half, and what were the terms?
 
 </details>
 
 <details>
-<summary><strong>DC 15 Investigation (Librarius only — active: examining the deliberate erasure on the tablet) — Who they were about to name</strong></summary>
+<summary><strong>DC 15 Intelligence (Investigation) (Librarius only — active: examining the deliberate erasure on the tablet) — Who they were about to name</strong></summary>
 
 The scraping at the end is recent: weeks, not months. The writer came back to this tablet after the initial writing, read what they had written, and deliberately removed the name they had started to carve. This means the writer returned to this hidden location specifically to erase a name. The person they were about to name is important enough that they came back to hide the identification. Either they wanted to protect the person they were naming, or they realized that naming that person would identify the conspiracy to too many people who might find the tablet before the right person did. The erasure tells you the writer understood the stakes precisely.
 
 </details>
 
 <details>
-<summary><strong>DC 15 Religion (Haruspex only — active: interpreting the three-hundred-year cycle as a theological timeline) — The renewal window</strong></summary>
+<summary><strong>DC 15 Intelligence (Religion) (Haruspex only — active: interpreting the three-hundred-year cycle as a theological timeline) — The renewal window</strong></summary>
 
 Binding oaths in Germanic tradition are made for specific periods: one lifetime, seven years, one generation, one hundred years. Three hundred years is three generations of the longest cycle. This oath was made to hold for as long as the fort might stand above it. When the three-hundred-year mark approaches, renewal becomes possible through ceremony. When the mark passes without renewal, the oath dies. The chain did not break because Corvinus excavated. The chain died because the renewal ceremony did not occur when the three-hundred-year cycle completed. Corvinus's excavation happened during the vulnerability window: the period after the oath died but before anyone performed the closing ceremony that would have properly ended the binding.
 
@@ -512,9 +512,9 @@ No combat in this branch until the Binding Chamber.
 
 **Navigating the flooded section:**
 
-- Survival DC 12 (active: reading the waterline before entering): The water's surface shows a faint directional drift, a slow circulation driven by a seep from the eastern wall. The shallow path follows the eastern side: hugging the right wall drops the maximum depth from chest to shoulder. Characters who follow this route have advantage on the Athletics DC 11 stealth check.
-- Athletics DC 11 (active: wading through carefully without making noise): success means silent passage; failure means splashing that echoes.
-- Four **Shadows** lurk in the water. They are not aggressive by default: they are drawn to light and sound. Characters carrying torches draw them. Characters who extinguish light sources and move quietly (Stealth DC 14 group check) can pass without triggering combat.
+- DC 12 Wisdom (Survival) (active: reading the waterline before entering): The water's surface shows a faint directional drift, a slow circulation driven by a seep from the eastern wall. The shallow path follows the eastern side: hugging the right wall drops the maximum depth from chest to shoulder. Characters who follow this route have advantage on the DC 11 Strength (Athletics) stealth check.
+- DC 11 Strength (Athletics) (active: wading through carefully without making noise): success means silent passage; failure means splashing that echoes.
+- Four **Shadows** lurk in the water. They are not aggressive by default: they are drawn to light and sound. Characters carrying torches draw them. Characters who extinguish light sources and move quietly (DC 14 Dexterity (Stealth) group check) can pass without triggering combat.
 - If combat is triggered: Shadows (CR 1/2, 4 of them). They have advantage on attack rolls in dim light. The flooded gallery is dim light at best with torches. This fight is genuinely dangerous at Level 3: wading through knee-to-chest-deep water costs half movement, and Shadows drain Strength on a hit.
 - DM note: A party who extinguishes torches and moves quietly passes for free. A party who charges through with full light triggers four Shadows in difficult terrain. Give them one beat to assess the dark water before calling for initiative.
 
@@ -522,15 +522,15 @@ No combat in this branch until the Binding Chamber.
 
 At the far wall, propped against the stone half-submerged, is a Germanic warrior's body: preserved in the peat water for centuries. He is armored. He is not undead. He is simply preserved.
 
-Investigation DC 12 (active: examining the body): He was not killed by violence. He sat down, crossed his arms, and died deliberately. His equipment is intact. A *framea* (Germanic spear, full stats in roman_tactics.qmd) lies across his lap. A bone token hangs at his throat -- carved with OTHALAN, the same rune as the one in the hidden alcove.
+DC 12 Intelligence (Investigation) (active: examining the body): He was not killed by violence. He sat down, crossed his arms, and died deliberately. His equipment is intact. A *framea* (Germanic spear, full stats in roman_tactics.qmd) lies across his lap. A bone token hangs at his throat -- carved with OTHALAN, the same rune as the one in the hidden alcove.
 
-Perception DC 12 (active: reading the combat wear on the warrior's equipment before touching anything): The *framea* blade shows re-tempering marks: the edge was resharpened at least twice. His forearm wrappings carry impact-absorption wear from repeated heavy parrying. His foot posture -- preserved in death -- is weight on the back foot: controlled retreat and counter, not aggressive advance. This warrior fought, repeatedly, at close range. He came to this posting at the height of his capability, not the end of it. Whatever brought him here was a choice, not a retreat.
+DC 12 Wisdom (Perception) (active: reading the combat wear on the warrior's equipment before touching anything): The *framea* blade shows re-tempering marks: the edge was resharpened at least twice. His forearm wrappings carry impact-absorption wear from repeated heavy parrying. His foot posture -- preserved in death -- is weight on the back foot: controlled retreat and counter, not aggressive advance. This warrior fought, repeatedly, at close range. He came to this posting at the height of his capability, not the end of it. Whatever brought him here was a choice, not a retreat.
 
-If a character takes the *framea*: it functions as a normal spear, but it is clearly Germanic craftsmanship. History DC 13 identifies it as pre-Roman Germanic work. Cassia will want to see it in Session 2.
+If a character takes the *framea*: it functions as a normal spear, but it is clearly Germanic craftsmanship. DC 13 Intelligence (History) identifies it as pre-Roman Germanic work. Cassia will want to see it in Session 2.
 
 If a character disturbs the body disrespectfully (taking the bone token, moving the body without ceremony): one Shadow reactivates in the water behind them. No warning. It simply appears.
 
-Religion DC 14 (active: observing the body in context): This man is in the position of a *seiðr* death -- voluntary, directed, purposeful. He did not die defending this place. He died completing a duty to it. The bone token confirms it: he is the Germanic party to the same bargain referenced in the wax tablet.
+DC 14 Intelligence (Religion) (active: observing the body in context): This man is in the position of a *seiðr* death -- voluntary, directed, purposeful. He did not die defending this place. He died completing a duty to it. The bone token confirms it: he is the Germanic party to the same bargain referenced in the wax tablet.
 
 <details>
 <summary><strong>What you know about the preserved warrior</strong></summary>
@@ -550,21 +550,21 @@ Religion DC 14 (active: observing the body in context): This man is in the posit
 </details>
 
 <details>
-<summary><strong>DC 13 Religion (active: observing the body and its position in context) — Seiðr death as a sworn duty</strong></summary>
+<summary><strong>DC 13 Intelligence (Religion) (active: observing the body and its position in context) — Seiðr death as a sworn duty</strong></summary>
 
 *Seiðr* death in Germanic tradition is most commonly a priestess's option, but the tradition acknowledges that other specialists can perform it: a guardian oath-taker can *seiðr*-die to mark the completion of a binding oath cycle. This man took an oath to guard something for a specific term. The term completed. He died to mark the seal, not because he was defeated or expelled from his post but because his duty was fully discharged. The difference matters: a guardian who dies in defeat leaves the binding weakened. A guardian who dies in completion leaves the binding whole.
 
 </details>
 
 <details>
-<summary><strong>DC 14 Religion (Haruspex only — active: reading the seiðr death as part of the vault's binding structure) — The contract's living seal</strong></summary>
+<summary><strong>DC 14 Intelligence (Religion) (Haruspex only — active: reading the seiðr death as part of the vault's binding structure) — The contract's living seal</strong></summary>
 
 The binding oath involved someone dying to seal it: not a sacrifice to the gods, but a person choosing to remain as guardian and then choosing to end guardianship by death. This is a specific Germanic contract form: one party dies to ensure the other party keeps their side of the agreement. If the guardian dies peacefully at the end of the term, the oath holds until formally renewed. If the guardian's death is disrupted, the oath is void. The guardian in the flooded gallery died peacefully. But the renewal ceremony did not occur when it was scheduled. The vault is in an intermediate state: the guardian's term is complete, the renewal did not happen, and the binding is in technical violation without anyone having acted in bad faith.
 
 </details>
 
 <details>
-<summary><strong>DC 15 History (Librarius only — active: reading the artifact style as a dating marker) — Placing this death in historical context</strong></summary>
+<summary><strong>DC 15 Intelligence (History) (Librarius only — active: reading the artifact style as a dating marker) — Placing this death in historical context</strong></summary>
 
 The *framea* is three centuries old, give or take fifty years. The bone token is contemporaneous. The clothing, what remains of it, shows Germanic styles from the same era. This body was placed here during the first-century consolidation of Germanic sacred sites, in the period when tribes were moving holy objects away from areas where Romans had destroyed them. This man died as part of the Germanicus aftermath, in the years when tribes were responding to Roman aggression by intensifying their spiritual infrastructure. His death was not a defeat. It was a statement of permanence: we are placing our guardian here, and he will remain until the oath is completed.
 
@@ -598,9 +598,9 @@ The ghouls are beneath the rubble, dormant. They activate when the party is full
 
 **After the combat:**
 
-Investigation DC 12 (active: searching beneath the stone benches): a clay vessel intact, containing carbonized grain and a small iron coin struck with a face that is clearly Mars but pre-Roman in style -- older than the empire. This is a ritual offering. The offering was being maintained actively until very recently. Someone has been feeding this place.
+DC 12 Intelligence (Investigation) (active: searching beneath the stone benches): a clay vessel intact, containing carbonized grain and a small iron coin struck with a face that is clearly Mars but pre-Roman in style -- older than the empire. This is a ritual offering. The offering was being maintained actively until very recently. Someone has been feeding this place.
 
-Perception DC 11 (active: examining the chamber walls after combat): Three sections of the far wall show impact damage distinct from the cave-in rubble on the east side: deliberate strike marks at the height of a swinging weapon, clustered at the center, made by something fighting backward while retreating. The marks predate the current expedition by decades. Something already fought here, badly, and won only by staying in the middle.
+DC 11 Wisdom (Perception) (active: examining the chamber walls after combat): Three sections of the far wall show impact damage distinct from the cave-in rubble on the east side: deliberate strike marks at the height of a swinging weapon, clustered at the center, made by something fighting backward while retreating. The marks predate the current expedition by decades. Something already fought here, badly, and won only by staying in the middle.
 
 <details>
 <summary><strong>What you know about the ritual offering</strong></summary>
@@ -616,7 +616,7 @@ Perception DC 11 (active: examining the chamber walls after combat): Three secti
 </details>
 
 <details>
-<summary><strong>DC 15 History (Librarius only — active: reading the offering pattern as evidence of maintained vow) — Who has been coming here</strong></summary>
+<summary><strong>DC 15 Intelligence (History) (Librarius only — active: reading the offering pattern as evidence of maintained vow) — Who has been coming here</strong></summary>
 
 The regularity of the offerings suggests someone keeping a schedule. A human habit of ritual maintenance, performed over a span of years by someone who understood both Germanic and Roman offering traditions (coins are Roman, grain-offerings are Germanic). Someone literate in both traditions has been maintaining this site, possibly rotating responsibility across generations. The coin style spans three different minting periods: someone has been coming here for at least sixty years. This is not a one-person vow. This is an institutional obligation being passed down.
 
@@ -643,11 +643,11 @@ Both branches converge here.
 
 **Exploration:**
 
-- Investigation DC 12 (active: examining the chains or collars closely): The chains are old -- centuries old -- but the iron hasn't rusted. Something in the air down here preserves them.
-- Arcana DC 14 (passive): A faint divine aura clings to the chains. Whatever they held was something that required divine binding to contain.
-- Athletics DC 12 (active: physically testing chain tension by applying steady load): One chain at the center resists differently from the others. It carries steady tension from below the floor ring. The force is not mechanical -- no counterweight produces this pattern -- but it is real and it is straining. This chain is restraining something that is, right now, pulling against it.
-- Religion DC 16 (passive): The TIWAZ rune above a binding site has one meaning in Germanic tradition: this was a sacrifice of restraint. Not a prison. A gift to the war-god. Whatever was chained here was given willingly.
-- Acrobatics DC 11 (active: threading between the hanging chains without touching any): The chains hang in two ranks through the center of the passage. Brushing one sets it ringing -- a sound that carries far longer in this chamber than physics should allow.
+- DC 12 Intelligence (Investigation) (active: examining the chains or collars closely): The chains are old -- centuries old -- but the iron hasn't rusted. Something in the air down here preserves them.
+- DC 14 Intelligence (Arcana) (passive): A faint divine aura clings to the chains. Whatever they held was something that required divine binding to contain.
+- DC 12 Strength (Athletics) (active: physically testing chain tension by applying steady load): One chain at the center resists differently from the others. It carries steady tension from below the floor ring. The force is not mechanical -- no counterweight produces this pattern -- but it is real and it is straining. This chain is restraining something that is, right now, pulling against it.
+- DC 16 Intelligence (Religion) (passive): The TIWAZ rune above a binding site has one meaning in Germanic tradition: this was a sacrifice of restraint. Not a prison. A gift to the war-god. Whatever was chained here was given willingly.
+- DC 11 Dexterity (Acrobatics) (active: threading between the hanging chains without touching any): The chains hang in two ranks through the center of the passage. Brushing one sets it ringing -- a sound that carries far longer in this chamber than physics should allow.
 
 The chains are still. No sound. No movement. If the party lingers more than 5 minutes, one chain at the far end sways once, slightly, with no air movement to explain it.
 
@@ -655,11 +655,11 @@ The chains are still. No sound. No movement. If the party lingers more than 5 mi
 
 One chain is visually different: it runs from the ceiling through a ring sunk into the floor, and has a shaped iron grip at waist height instead of a bare link.
 
-Investigation DC 14 (active: studying the chain arrangement as a system rather than as individual chains): On success, the chains are arranged in a deliberate pattern radiating from the central floor ring. They read as a mechanism. The central chain is the key. The order in which the outer chains were last touched (visible in the oxidation patterns on the links) tells you the sequence: three outer chains, handled in a specific order, then the central chain pulled.
+DC 14 Intelligence (Investigation) (active: studying the chain arrangement as a system rather than as individual chains): On success, the chains are arranged in a deliberate pattern radiating from the central floor ring. They read as a mechanism. The central chain is the key. The order in which the outer chains were last touched (visible in the oxidation patterns on the links) tells you the sequence: three outer chains, handled in a specific order, then the central chain pulled.
 
 **DM: the correct chain sequence.** Three outer chains radiate from the central ring. Orient the room as the party enters from either branch: the left wall (as you face toward the Runic Corridor) holds the chain with the lightest oxidation, handled longest ago. The far wall holds the chain with medium oxidation. The right wall holds the most corroded chain, handled most recently. The oxidation pattern is a time record, read in reverse: whoever last operated this pulled the left chain first (oldest), the far chain second, the right chain last, then the master chain. The mnemonic: *oldest chain first, newest chain last, then the centre.* If a character succeeds on the Investigation check, tell them which chain is most weathered and which is least. The order follows naturally from there.
 
-If a character pulls the central chain without the sequence: DC 13 Strength saving throw or be restrained for 1 minute. The restrained character can break free with DC 16 Athletics or be cut free with a bladed weapon (10 slashing damage to the chain). No damage -- just restraint, wasted time, and noise.
+If a character pulls the central chain without the sequence: DC 13 Strength saving throw or be restrained for 1 minute. The restrained character can break free with DC 16 Strength (Athletics) or be cut free with a bladed weapon (10 slashing damage to the chain). No damage -- just restraint, wasted time, and noise.
 
 If a character follows the sequence and pulls the central chain:
 
@@ -689,7 +689,7 @@ This document is evidence. It answers the wax tablet's incomplete warning. A cha
 </details>
 
 <details>
-<summary><strong>DC 16 History (Librarius only — active: comparing both language versions of the contract scroll) — The equal negotiation proof</strong></summary>
+<summary><strong>DC 16 Intelligence (History) (Librarius only — active: comparing both language versions of the contract scroll) — The equal negotiation proof</strong></summary>
 
 A trained translator can compare the Latin and Germanic versions of the contract. They are identical in every substantive term. This is the highest formality in a binding treaty: both parties verified the language together before committing. A treaty imposed by force typically has one authoritative version, with the other as a translation. This has two authoritative versions of equal standing. Whoever negotiated this for Rome had authority to make binding commitments on Rome's behalf, and whoever negotiated for the tribes had equivalent authority on theirs. The agreement was not made under duress. It was made between equals, with both parties understanding exactly what they were committing to.
 
@@ -748,7 +748,7 @@ The corridor is 30 feet long, divided into eight rows of carved floor tiles. Eac
 
 - **Shield Hall arrangement** (left branch): the shields group by tribe symbol, and the OTHALAN-marked shield's position within each group of five maps directly to the safe column for that row. A character who noted the arrangement and succeeds on DC 13 Intelligence (History) can reconstruct the full column sequence from memory. Give them the table above on success.
 - **Bone token** (hidden alcove or preserved warrior's throat): shows the OTHALAN rune directly. Any character who can read Elder Futhark — History proficiency, Religion proficiency, or a Germanic background (this includes Ursula) — identifies the matching carving in each row by sight. No check required: just attention. They can lead the party one step at a time.
-- **Religion DC 14 (passive, examining the floor):** The pattern reads as a liturgical prayer sequence. Characters with Religion +4 or higher recognise OTHALAN in every row automatically. Give the full column table to that player directly.
+- **DC 14 Intelligence (Religion) (passive, examining the floor):** The pattern reads as a liturgical prayer sequence. Characters with Religion +4 or higher recognise OTHALAN in every row automatically. Give the full column table to that player directly.
 
 **DM reminder:** OTHALAN is the contract rune — the rune on the bone token, the final rune of the altar inscription, the rune the Wight carries on his sternum. Every thread in this vault converges on the same symbol.
 
@@ -815,7 +815,7 @@ As the party enters fully, the guardian rises from behind the altar:
 </details>
 
 <details>
-<summary><strong>DC 14 Persuasion or Wisdom (Insight) (active: attempting to communicate with the Wight before or during combat) — What the Wight will accept</strong></summary>
+<summary><strong>DC 14 Charisma (Persuasion) or Wisdom (Insight) (active: attempting to communicate with the Wight before or during combat) — What the Wight will accept</strong></summary>
 
 One attempt, before or during combat. The player chooses their approach: Persuasion (explaining the situation verbally, in any language) or Wisdom (Insight) (reading what the Wight needs to hear and conveying it by gesture or action). Both cover the same action at the same DC. Showing the contract scroll from the Binding Chamber grants advantage on either check. On success: the Wight pauses. He does not release the party or lower his weapon. But he speaks: "The one who ordered this. His debt is greater than yours. But you carry it now." This is not forgiveness. It is a transfer of responsibility. The party is carrying the Legate's debt to the war-god. That debt will come due, and it will come due to whoever holds the spear when Mars decides to collect it.
 
@@ -853,7 +853,7 @@ A character who grapples the Wight (standard grapple rules) and then succeeds on
 
 If the token leaves the Wight's possession or is destroyed: the Shadows lose their binding. For 1 round they cannot use Strength Drain and have -2 to attack rolls. After that round they act independently, targeting the nearest living creature rather than following the Wight's positioning.
 
-If taken intact: the token is a campaign item. It grants advantage on the Wight communication check (DC 14), stacking with the contract scroll.
+If taken intact: the token is a campaign item. It grants advantage on the Wight communication check (DC 14 Charisma (Persuasion) or Wisdom (Insight)), stacking with the contract scroll.
 
 **Wight trait — Dark Resolve:**
 
@@ -869,7 +869,7 @@ As long as any creature within 30 feet of the Wight is Frightened (from any sour
 - The Shadows (CR 1/2) flank and harass, using Pass Through to avoid opportunity attacks and cycling their Strength Drain. They follow the Wight's tactical positioning.
 - **Exit condition:** If the party is willing to leave the spear and back out, the Wight allows it. The combat is not obligatory: it is the result of insisting on taking the spear.
 
-**Communication attempt (DC 14 Persuasion or Wisdom (Insight), player's choice):** If the party explains (in any language, or by gestures) that they did not break the bargain voluntarily and that their Legate ordered this, the Wight pauses on this check. Showing the contract scroll from the Binding Chamber grants advantage on either approach. On success: he does not let them take the spear, but he gives them one more piece of information before combat resumes:
+**Communication attempt (DC 14 Charisma (Persuasion) or Wisdom (Insight), player's choice):** If the party explains (in any language, or by gestures) that they did not break the bargain voluntarily and that their Legate ordered this, the Wight pauses on this check. Showing the contract scroll from the Binding Chamber grants advantage on either approach. On success: he does not let them take the spear, but he gives them one more piece of information before combat resumes:
 
 > *"The one who ordered this. His debt is greater than yours. But you carry it now."*
 
@@ -932,7 +932,7 @@ As the party climbs out of the shaft, the night air hits them and then the shout
 >
 > *His head turns as though a wire hauls it. He looks to the party member holding the spear. His smile is wide enough to hurt.*
 
-**The three fallen legionaries:** Two are dead (Gaius Pullus, throat wound; Marcus Dexter, blunt trauma to the skull). One is alive: Aelius Rufus, a young signifer from the third contubernium, lying face-down with a shallow gash across his back. DC 12 Medicine (active: checking him before or during combat, costs an action or bonus action): he is breathing and can be stabilized. On a failure he is dying and needs a second check at the start of the next round. If stabilized, Aelius Rufus survives and appears in Session 2 as someone who owes the party his life and remembers what Marius said just before the killing started.
+**The three fallen legionaries:** Two are dead (Gaius Pullus, throat wound; Marcus Dexter, blunt trauma to the skull). One is alive: Aelius Rufus, a young signifer from the third contubernium, lying face-down with a shallow gash across his back. DC 12 Wisdom (Medicine) (active: checking him before or during combat, costs an action or bonus action): he is breathing and can be stabilized. On a failure he is dying and needs a second check at the start of the next round. If stabilized, Aelius Rufus survives and appears in Session 2 as someone who owes the party his life and remembers what Marius said just before the killing started.
 
 **What he mutters between attacks:**
 - *"Do you feel it laughing?"*
@@ -946,7 +946,7 @@ The two Cultists are legionaries stationed near the excavation. They were expose
 
 The phrase: *"Mars aversus est. Mars aversus est."*
 
-Perception DC 11 (active: reading his fighting stance before initiative is called): The worker's weight is on his front foot and both gladii are held at mid-height with grips too tight for controlled fighting. He is fully committed to attack with no guard on his left side. A character who reads this and calls it out grants advantage on the first attack roll made against his left side.
+DC 11 Wisdom (Perception) (active: reading his fighting stance before initiative is called): The worker's weight is on his front foot and both gladii are held at mid-height with grips too tight for controlled fighting. He is fully committed to attack with no guard on his left side. A character who reads this and calls it out grants advantage on the first attack roll made against his left side.
 
 The Berserker focuses exclusively on whoever carries the spear. If no one carries it, he attacks the closest party member and screams "WHERE IS IT -- GIVE IT TO ME -- IT'S MINE--"
 
@@ -961,11 +961,11 @@ The Berserker focuses exclusively on whoever carries the spear. If no one carrie
 | Party choice | Mechanics | Consequence |
 |---|---|---|
 | **Kill him** | Standard combat. He fights to the death, prioritising the spear-bearer. | He dies mid charge. His last word is *"Mars"* whispered like a confession. Morale in camp drops; whispers about the party spread. |
-| **Subdue him** | Opposed Athletics (DC 13 if two legionaries assist) to grapple, then DC 12 Medicine or Sleight of Hand to bind him without killing. | He collapses weeping, vomits dark bile, and remembers nothing when he wakes. Cassia can question him for visions that linger. |
+| **Subdue him** | Opposed Athletics (DC 13 if two legionaries assist) to grapple, then DC 12 Wisdom (Medicine) or Sleight of Hand to bind him without killing. | He collapses weeping, vomits dark bile, and remembers nothing when he wakes. Cassia can question him for visions that linger. |
 | **Deny line of sight** | Hide or move the spear 60 feet away, or cast magical darkness between him and the weapon. | He freezes mid step, confused, then sobs as he realises his hands are covered in blood. He becomes a terrified witness who can describe the spear's whispers. |
-| **He breaks free** | If the party stalls or he slips a grapple (roll each round), he sprints toward the gate with DC 14 Athletics to catch him. | He vanishes into the night. Two days later the scouts find him dead of exposure with both gladii snapped. The Legate blames the party for letting the madness spread. |
+| **He breaks free** | If the party stalls or he slips a grapple (roll each round), he sprints toward the gate with DC 14 Strength (Athletics) to catch him. | He vanishes into the night. Two days later the scouts find him dead of exposure with both gladii snapped. The Legate blames the party for letting the madness spread. |
 
-**Commanding voice (Intimidation DC 13, active: before initiative):** A character with military rank can shout a direct order at the worker before grappling. On success, he freezes for one round (speed 0, no actions). This does not calm him -- it interrupts him. After one round he resumes at full violence. But one free round of control, without spending an action, gives the party a positioning advantage they would not otherwise have.
+**Commanding voice (DC 13 Charisma (Intimidation), active: before initiative):** A character with military rank can shout a direct order at the worker before grappling. On success, he freezes for one round (speed 0, no actions). This does not calm him -- it interrupts him. After one round he resumes at full violence. But one free round of control, without spending an action, gives the party a positioning advantage they would not otherwise have.
 
 Whatever happens, the fort's legionaries have seen enough. Quiet spreads through the courtyard as the crisis ends. Men look at the party, then at the wrapped spear, then look away.
 
@@ -993,8 +993,8 @@ The courtyard settles. The body of Marius Coda is on the flagstones or bound in 
 | Party choice | Corvinus's response | Tribune Lucius's note | Consequence |
 |---|---|---|---|
 | **Give the spear to Corvinus** | He takes it without touching it with his bare hands (he has a leather satchel ready). He thanks the party correctly, no warmth. He leaves. | Lucius watches Corvinus leave with the spear, then looks at the party one more time. Says nothing. Leaves. | The spear is in the Legate's custody entering Session 2. Cassia is in tears. This is the worst outcome for the campaign's divine stakes but a perfectly valid choice. |
-| **Refuse, offer to hold it themselves** | He escalates: "You are soldiers under my command. This is a direct order." DC 16 Persuasion (argument) or DC 15 Intimidation (demonstration of what just happened underground: show him the Wight's marks, describe what the spear did to the worker, make clear that he is asking for something that has already killed four people who touched it carelessly). On success: Corvinus accepts the arrangement with no warmth and the explicit condition that the party is responsible for whatever happens next. | Lucius takes a note. He is filing something. | The party retains custody. Cassia is cautiously hopeful. Varro will back the party privately; he cannot oppose Corvinus openly. |
-| **Refuse outright** | He invokes military discipline. DC 18 Persuasion, no Charisma substitute -- or DC 17 Intimidation (sustained display of controlled defiance from a character with combat evidence: scars from the vault, spear marks, two encounters' worth of visible damage). On success: he backs down. Corvinus notes that these soldiers are not reliable instruments. That changes how he uses them in Session 2. | If it comes to force: Lucius steps in and says, quietly, "Legate. Not tonight." This is the one moment where Lucius acts. It is not sympathy for the party. It is the Senate's agent preventing a scene that would require an embarrassing report. | The standoff ends inconclusively. Corvinus orders the party confined to barracks pending review. Varro lets them out in an hour and says nothing about it. |
+| **Refuse, offer to hold it themselves** | He escalates: "You are soldiers under my command. This is a direct order." DC 16 Charisma (Persuasion) (argument) or DC 15 Charisma (Intimidation) (demonstration of what just happened underground: show him the Wight's marks, describe what the spear did to the worker, make clear that he is asking for something that has already killed four people who touched it carelessly). On success: Corvinus accepts the arrangement with no warmth and the explicit condition that the party is responsible for whatever happens next. | Lucius takes a note. He is filing something. | The party retains custody. Cassia is cautiously hopeful. Varro will back the party privately; he cannot oppose Corvinus openly. |
+| **Refuse outright** | He invokes military discipline. DC 18 Charisma (Persuasion), no Charisma substitute -- or DC 17 Charisma (Intimidation) (sustained display of controlled defiance from a character with combat evidence: scars from the vault, spear marks, two encounters' worth of visible damage). On success: he backs down. Corvinus notes that these soldiers are not reliable instruments. That changes how he uses them in Session 2. | If it comes to force: Lucius steps in and says, quietly, "Legate. Not tonight." This is the one moment where Lucius acts. It is not sympathy for the party. It is the Senate's agent preventing a scene that would require an embarrassing report. | The standoff ends inconclusively. Corvinus orders the party confined to barracks pending review. Varro lets them out in an hour and says nothing about it. |
 | **Destroy or hide the spear** | If they destroyed it in the vault: Corvinus does not believe them. He sends soldiers down to check. They find the altar, the Wight's remains, and no spear. Corvinus is cold and furious. | Lucius is still watching. | The spear's physical form may be destroyed. Its divine presence is not. Something follows the party out of the vault that is harder to track than an iron shaft. This pays off in Session 4. |
 
 **Cassia's private word (if the party created any opportunity to speak with her alone before session end):**
@@ -1040,7 +1040,7 @@ If the party refuses the Legate's mission:
 |---|---|---|
 | **Polite refusal** | He doubles the pay offer. If still refused, he assigns another unit and the party is confined to quarters while that unit goes down. The unit doesn't come back. | The party is then re-ordered to complete the mission. The stakes are now visible. |
 | **Citing the augur's warnings** | He has Cassia removed from the room. He's heard enough about omens. The party is given one hour to reconsider. | Cassia finds the party during that hour and pleads with them to go down and destroy the spear before anyone takes it. |
-| **Outright defiance** | He invokes military discipline. They're legionaries. Orders are orders. DC 18 Persuasion to make a case compelling enough that he backs down -- which requires evidence he doesn't have yet. | If they hold out: he sends them with a Centurion escort as "motivation." The Centurion is Varro, who privately tells the party: *"I'd go too if I were you. Better you go knowing what you're walking into than someone else go not knowing."* |
+| **Outright defiance** | He invokes military discipline. They're legionaries. Orders are orders. DC 18 Charisma (Persuasion) to make a case compelling enough that he backs down -- which requires evidence he doesn't have yet. | If they hold out: he sends them with a Centurion escort as "motivation." The Centurion is Varro, who privately tells the party: *"I'd go too if I were you. Better you go knowing what you're walking into than someone else go not knowing."* |
 
 </details>
 
@@ -1085,7 +1085,7 @@ Gaius Metellus is dead before the session opens. His role is the first thing Cor
 - The unit's morale checks during Scene 4 (worker frenzy) are made at disadvantage: soldiers fight without a standard to rally to.
 - Any legionary NPC who fails a morale check in Scene 4 will not regroup. They flee and do not return that scene.
 
-If a player takes the Aquilifer role at Session 0, they have the key. They decide whether to bring the eagle below ground in Scene 3. That choice is consequential: the eagle's presence in the Chamber of Chains triggers one additional knowledge check (DC 14 Religion: the eagle's shadow falls across the TIWAZ rune and moves against the torchlight, once, toward the spear).
+If a player takes the Aquilifer role at Session 0, they have the key. They decide whether to bring the eagle below ground in Scene 3. That choice is consequential: the eagle's presence in the Chamber of Chains triggers one additional knowledge check (DC 14 Intelligence (Religion): the eagle's shadow falls across the TIWAZ rune and moves against the torchlight, once, toward the spear).
 
 Record whether the Aquilifer role is filled entering Session 1. The vacancy consequence table in the *Unit Roles* chapter applies for any session it remains empty.
 
@@ -1120,106 +1120,106 @@ Record each *commendatio* earned. Three total earns a character eligibility for 
 
 **How to run these checks at the table:**
 
-*Survival DC 11 (active: reading the air draft at the shaft head):*
+*DC 11 Wisdom (Survival) (active: reading the air draft at the shaft head):*
 
 A tracker or soldier who has entered defensive tunnels or collapsed structures reads this without being asked. Pulse pattern means two chambers with different pressure. Cedar smell means deliberate sealed storage, not collapse. If a player states this before descending: reward them with exactly that read. Do not ask for the roll first -- let them describe the action, then confirm success.
 
-*Athletics DC 12 (active: Shield Hall -- lifting a shield to test its combat state):*
+*DC 12 Strength (Athletics) (active: Shield Hall -- lifting a shield to test its combat state):*
 
 The player picks up a shield and handles it. On success: the grip has been cut from the inside. At least a quarter of the shields share this. Do not explain why. Let the player sit with the observation: these were decommissioned before they were offered.
 
-*Survival DC 12 (active: Flooded Gallery -- reading the waterline before entering):*
+*DC 12 Wisdom (Survival) (active: Flooded Gallery -- reading the waterline before entering):*
 
 State the result directly: eastern wall is shallower. Characters who follow that path have advantage on the stealth Athletics check. Don't make this a mystery. A player who says "I check the water before wading" has done the smart thing. Reward it.
 
-*Perception DC 12 (active: preserved warrior -- reading combat wear before touching the body):*
+*DC 12 Wisdom (Perception) (active: preserved warrior -- reading combat wear before touching the body):*
 
 Let this run alongside Investigation. A player who says "I examine his equipment" should get both if they succeed on either: Investigation gives cause of death; Perception gives fighting history. The re-tempering marks and the foot posture are details that change how a soldier reads the room. He was not a sacrifice. He was a veteran who made a choice.
 
-*Athletics DC 12 (active: Binding Chamber -- testing chain tension by applying steady load):*
+*DC 12 Strength (Athletics) (active: Binding Chamber -- testing chain tension by applying steady load):*
 
 This one only triggers if a player physically pushes or pulls on a chain. On success: one chain resists differently. Steady tension from below. The force is not mechanical. The chain is actively restraining something right now. Do not tell them what. Tell them the force is real and it is pulling downward and slightly toward the far passage.
 
-*Perception DC 11 (active: reading the Bone Chamber walls after combat):*
+*DC 11 Wisdom (Perception) (active: reading the Bone Chamber walls after combat):*
 
 A player who looks at the walls (not the benches) after the fight finds the impact marks. High on the far wall, weapon-strike height, clustered at center. Something defensive fought here long ago. Did not lose. Did not leave. This is ambient texture, but it lands differently on a fighter than on a historian. Let the martial characters have the room.
 
-*Perception DC 11 (active: reading the Berserker's stance before initiative):*
+*DC 11 Wisdom (Perception) (active: reading the Berserker's stance before initiative):*
 
 A player who says they watch him before engaging. On success: front-heavy, no left guard. Call it out at the table: any character who targets his left side this round has advantage on the first attack. This rewards paying attention over just rolling initiative. The advantage is one round only -- he adapts.
 
-*Perception DC 11 (passive -- character with +1 or better Perception notices without rolling):*
+*DC 11 Wisdom (Perception) (passive -- character with +1 or better Perception notices without rolling):*
 
 The torch leans toward the far archway. Every character who could notice this does notice it. You don't need to ask. The question is whether anyone comments on it before the shields occupy their attention.
 
-*Nature DC 12 (passive -- character with +2 or better Nature):*
+*DC 12 Intelligence (Nature) (passive -- character with +2 or better Nature):*
 
 The smell. Underground stone smells mineral and cold. This does not: it is organic, faintly watery. Bog water seeping through limestone. Give this player the information directly -- no preamble. The floor has not been dry for a long time. There is water below them somewhere. This pays off in Session 4 when the tunnel gas is identified as marsh gas rather than volcanic fumes.
 
-*History DC 13 (passive -- character with +3 or better History simply knows this):*
+*DC 13 Intelligence (History) (passive -- character with +3 or better History simply knows this):*
 - Land 5 below: They notice four distinct styles. Give them the observation: the work is different on each wall. Nothing more yet.
 - Exact: Four tribes, none of which coexisted in the same region. Let that sit. The interesting question is now in the air: why are they together?
 - 5 above: Four tribes plus the geographic arrangement tells the story: someone had authority over all of them. Plant that question now; Session 3 answers it.
 
-*History DC 15 (passive -- character with +5 or better History):*
+*DC 15 Intelligence (History) (passive -- character with +5 or better History):*
 
 This is the same check at a higher bar. A character who gets this without rolling names the tribes (Marcomanni, Cherusci). These were not small regional groups. Someone who commanded offerings from both was operating at a scale that would have alarmed Rome.
 
-*Religion DC 14 (passive -- character with +4 or better Religion):*
+*DC 14 Intelligence (Religion) (passive -- character with +4 or better Religion):*
 - Land 5 below: This room feels sacred. The character cannot say why. That is enough.
 - Exact: Germanic trophy tradition -- this room is an offering to the war-god. The shields were brought here deliberately.
 - 5 above: Offering rooms in this tradition are actively maintained. Someone has been here recently. This is not a historical site. It is a working one. Let that breathe before you move on.
 
-*Investigation DC 12 (active: examining the chains or collars closely in the Chamber of Chains):*
+*DC 12 Intelligence (Investigation) (active: examining the chains or collars closely in the Chamber of Chains):*
 
 This requires stopping and looking deliberately. The player states they're inspecting the chains. On success: centuries old, no rust. Something in the air here preserves metal that should have corroded. On 5 above: the collar sizes are wrong for any animal they know. These held something upright and considerably larger than a horse.
 
-*Arcana DC 14 (passive -- character with +4 or better Arcana):*
+*DC 14 Intelligence (Arcana) (passive -- character with +4 or better Arcana):*
 
 Divine residue does not fade like spell energy -- it settles into stone. A character who passes this without rolling understands immediately that the chains were not the real binding. The chains were a material expression of something older. Whatever held the entity here was not mechanical.
 
-*Acrobatics DC 11 (active: threading between the hanging chains without touching any):*
+*DC 11 Dexterity (Acrobatics) (active: threading between the hanging chains without touching any):*
 
 The player states they want to pass without contact. On success: silent passage. On failure: one chain rings, and the sound carries further than the chamber's size should allow.
 
-*Religion DC 16 (passive -- character with +6 or better Religion):*
+*DC 16 Intelligence (Religion) (passive -- character with +6 or better Religion):*
 - Land 5 below: TIWAZ connects to war and sacrifice. That is the surface.
 - Exact: Sacrifice of restraint -- the chained entity gave itself willingly. The chains are not a prison.
 - 5 above: The chains are still active. Whatever was bound here is not fully gone. And the party just brought the spear into the room. Do not announce this mechanically. Describe it: one chain swings, just slightly, toward the wrapped spear.
 
-*Stealth DC 13 (active: group descent through the shaft as quietly as possible):*
+*DC 13 Dexterity (Stealth) (active: group descent through the shaft as quietly as possible):*
 
 If the party chooses to descend carefully and quietly, run a group Stealth check. Success means the Wight in the Altar Chamber does not detect the party until they cross the altar threshold: the two Shadows hold position, and the party has one round to observe the guardian's stance before it moves. Failure means sound carries through the Runic Corridor and the Wight is already standing when they arrive, with the Shadows flanking the entrance archway.
 
 *Read the Fight (action — see roman_tactics.qmd):*
 
-The Wight is DC 17 (elite adversary). On success, the most useful choice is "Will to fight": he will stop fighting if the party retreats from the spear. The Berserker (Marius Coda) is DC 13. Most useful choice: "Weak point" (his left side, same as the Perception DC 11 check above) or "Will to fight" (he fights to reach the spear; removing the spear from his line of sight ends the compulsion on a successful action).
+The Wight is DC 17 (elite adversary). On success, the most useful choice is "Will to fight": he will stop fighting if the party retreats from the spear. The Berserker (Marius Coda) is DC 13. Most useful choice: "Weak point" (his left side, same as the DC 11 Wisdom (Perception) check above) or "Will to fight" (he fights to reach the spear; removing the spear from his line of sight ends the compulsion on a successful action).
 
-*Intimidation DC 13 (active: centurion-voice command at the frenzied worker, before initiative):*
+*DC 13 Charisma (Intimidation) (active: centurion-voice command at the frenzied worker, before initiative):*
 
 A character with military rank shouts a direct order. On success: the worker freezes for one round (speed 0, no actions). Not calm -- interrupted. After one round he resumes with full violence. On failure: he advances regardless.
 
-*Athletics DC 13 (active: grappling the frenzied worker with legionary assistance):*
+*DC 13 Strength (Athletics) (active: grappling the frenzied worker with legionary assistance):*
 
 Contested roll: Athletics vs. his Strength (+3). Two legionaries assisting reduces the effective DC to 13. A miss by 4 or less means the grapple holds but one helper took a hit in the process.
 
-*Medicine DC 12 / Sleight of Hand DC 12 (active: binding the subdued worker):*
+*DC 12 Wisdom (Medicine) / DC 12 Dexterity (Sleight of Hand) (active: binding the subdued worker):*
 
 After a successful grapple, one character must secure him while others hold. Medicine: bind a wound point that serves as restraint; this lets Cassia question him about visions when he wakes. Sleight of Hand: tie the knots efficiently while he is still fighting; he escapes only on DC 16 Strength, not DC 12. Either works. The difference is what you get afterward.
 
-*Athletics DC 14 (active: catching the worker if he slips free and runs):*
+*DC 14 Strength (Athletics) (active: catching the worker if he slips free and runs):*
 
-If the grapple fails or he breaks loose, he sprints for the gate. DC 14 Athletics to catch him, or a ranged attack at disadvantage -- he is moving fast. Failure means he reaches the gate.
+If the grapple fails or he breaks loose, he sprints for the gate. DC 14 Strength (Athletics) to catch him, or a ranged attack at disadvantage -- he is moving fast. Failure means he reaches the gate.
 
 **Temporal gate: worker behavior (Scene 2 only, before Scene 4):**
 
-- *Insight DC 13 (active: watching the workers during Scene 2, window closes when Scene 4 begins):* The Gallic stone-hauler has been showing pre-attack signs for an hour. Unusually focused, muttering, hands on his tools between hauls.
+- *DC 13 Wisdom (Insight) (active: watching the workers during Scene 2, window closes when Scene 4 begins):* The Gallic stone-hauler has been showing pre-attack signs for an hour. Unusually focused, muttering, hands on his tools between hauls.
 - *On success:* The party has a full action before initiative when he breaks. They were paying attention. Reward that.
 - *Miss the check or miss the window:* Scene 4 is a surprise. Standard rules. Do not feel bad about it.
 
 **Corvinus refusal: partial success structure:**
 
-- *Persuasion DC 18 (active: arguing directly with Corvinus to refuse the mission):*
+- *DC 18 Charisma (Persuasion) (active: arguing directly with Corvinus to refuse the mission):*
 - 5 below DC 18: He sends a Centurion escort as "motivation." The Centurion is Varro, who quietly tells the party: "I'd go if I were you. Better you go knowing what you're walking into."
 - DC 18 exact: He backs down. Gives them 24 hours. They have the night.
 - 5 above DC 18: He backs down and, unexpectedly, respects them for it. Assigns them as lead investigative unit with Varro as their direct liaison, not their guard. Corvinus does not show this respect openly, but the assignment shows it.
@@ -1228,7 +1228,7 @@ If the grapple fails or he breaks loose, he sprints for the gate. DC 14 Athletic
 
 Any time during Scene 1, before the party agrees to the mission. One attempt.
 
-- *Insight DC 14 (active: watching Corvinus during Scene 1, window closes when Tribune Lucius arrives):* Corvinus is afraid of something specific, not just ambitious. The signs of ambition are there -- forward posture, controlled voice -- but underneath them he looks at the staircase twice in two minutes. He is managing the party while managing the expected arrival of someone he owes. On 5-above: the player understands this is not about the spear's power. It is about what the spear represents to a man with a debt.
+- *DC 14 Wisdom (Insight) (active: watching Corvinus during Scene 1, window closes when Tribune Lucius arrives):* Corvinus is afraid of something specific, not just ambitious. The signs of ambition are there -- forward posture, controlled voice -- but underneath them he looks at the staircase twice in two minutes. He is managing the party while managing the expected arrival of someone he owes. On 5-above: the player understands this is not about the spear's power. It is about what the spear represents to a man with a debt.
 - Why the window closes: once Tribune Lucius arrives, Corvinus goes into full political mode. His body language changes. The fear goes underground where it does not show. The tell disappears. The party has Session 1 only.
 
 </details>
@@ -1236,19 +1236,19 @@ Any time during Scene 1, before the party agrees to the mission. One attempt.
 <details>
 <summary><strong>New Skill Checks: Flooded Gallery, Bone Chamber, Binding Chamber, Runic Corridor</strong></summary>
 
-*Stealth DC 14 (active group check: extinguishing torches and moving through the flooded gallery silently):*
+*DC 14 Dexterity (Stealth) (active group check: extinguishing torches and moving through the flooded gallery silently):*
 
 The players must state they are doing this. Run a group Stealth check against the Shadows' passive Perception (10). On success: they pass without triggering combat. On failure: the Shadows notice light or sound and investigate. Combat does not start immediately -- give the party one round where they can see the Shadows approaching through the water before initiative. That round matters.
 
-*Investigation DC 12 (active: examining the preserved warrior's body in the flooded gallery):*
+*DC 12 Intelligence (Investigation) (active: examining the preserved warrior's body in the flooded gallery):*
 
 He died voluntarily. Everything about the body's posture confirms this. Give the player this fact plainly: the position, the crossed arms, the intact equipment. Then: the bone token at his throat matches the one in the Shield Hall hidden alcove, if the party found it. If they did not find it, they have the rune but not the context.
 
-*Investigation DC 14 (active: studying the chain arrangement in the Binding Chamber as a system):*
+*DC 14 Intelligence (Investigation) (active: studying the chain arrangement in the Binding Chamber as a system):*
 
 On 5 above DC: the character can see the sequence without any additional check. They simply know the order. On exact DC: they know it is a mechanism and have a strong guess at the sequence; one attempt before the restraint snap occurs. On failure: they see chains. They do not see the system.
 
-*Religion DC 14 (passive: reading the runic corridor as a liturgical sequence):*
+*DC 14 Intelligence (Religion) (passive: reading the runic corridor as a liturgical sequence):*
 
 Any character with Religion +4 or higher automatically perceives the prayer structure in the rune layout. They know the safe path. Give this to the player directly without preamble: "The layout is a prayer. You know which runes complete each row correctly." They walk the corridor without damage. Do not make them roll -- the modifier is the check.
 

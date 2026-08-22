@@ -156,7 +156,7 @@ Ladders allow attackers to reach walls quickly but leave them extremely vulnerab
 - Costs full movement for that round
 - The climber is **restrained** (AC drops by 2, Dex save disadvantage) while on the ladder
 - Any hit while climbing forces a DC 12 Dexterity save or the climber falls (half the wall's height in damage, usually 2d6)
-- A ladder can be pushed back by 1 person making a DC 13 Athletics check as an action
+- A ladder can be pushed back by 1 person making a DC 13 Strength (Athletics) check as an action
 
 **Holding the walls:** For every defender actively pushing ladders, they can keep one ladder section clear for the round. If more ladders than defenders: overflow sections are breached.
 
@@ -174,7 +174,7 @@ The Germanic tribes had been fighting Romans for two centuries by 175 AD. They k
 - Defenders cannot use formation benefits (Testudo, Acies) in dense forest without a successful DC 14 Dexterity check to find enough space
 - If ambushed while marching in column: roll initiative normally, but defenders have disadvantage on initiative rolls for the first round
 
-**Countering:** Scouts moving 100 feet ahead reduce the ambush success chance. DC 15 Perception to detect the ambush before it springs.
+**Countering:** Scouts moving 100 feet ahead reduce the ambush success chance. DC 15 Wisdom (Perception) to detect the ambush before it springs.
 
 ### Shield Wall (Schildwall)
 
@@ -183,7 +183,7 @@ Germanic shield walls are different from Roman formations; looser, more aggressi
 **Schildwall:**
 - Minimum 4 warriors in a line, shields overlapping
 - Front fighters gain half cover (+2 AC) and **advantage on Strength saving throws** vs. being pushed or knocked prone
-- **Shieldbreaker Rule:** A Schildwall can be broken by a character who succeeds on a DC 15 Athletics check to wedge a weapon between shields; this costs an action but removes the shield benefit from two adjacent defenders for one round
+- **Shieldbreaker Rule:** A Schildwall can be broken by a character who succeeds on a DC 15 Strength (Athletics) check to wedge a weapon between shields; this costs an action but removes the shield benefit from two adjacent defenders for one round
 
 **Against a Roman Wedge:** A Schildwall meeting a Cuneus; the Schildwall fighters make DC 13 Strength saves against the charge, but the Schildwall counts as a solid object for the purpose of stopping the wedge's momentum (the wedge does not knock them prone on a successful save, only on a failed one).
 
@@ -195,7 +195,7 @@ Germanic chieftains sometimes divided their forces to circle a Roman unit; sendi
 - Requires the Germanic force to outnumber the Roman unit 2:1
 - Takes 3 rounds to complete the circle (during which the flanking forces are visible but not yet in position)
 - Once complete: the Roman unit is surrounded; testudo becomes orbis territory
-- The Kesselschlacht is broken if the party can eliminate the encircling forces' leader (Perception DC 14 to identify them in the confusion)
+- The Kesselschlacht is broken if the party can eliminate the encircling forces' leader (DC 14 Wisdom (Perception) to identify them in the confusion)
 
 
 ## Roman Weapons and Ammunition
@@ -223,7 +223,7 @@ Clay incendiary: Range 20/40 ft. 1d4 bludgeoning + 1d4 fire. Sets flammable obje
 
 *Glandes cum foramine* (whistling glandes): Range 30/60 ft. 1d6 bludgeoning. Clay and lead shot with 4-5mm holes that produce a sustained shriek in flight -- Burnswark Hill excavations confirmed these were in use in the 2nd century AD. On a miss by 4 or fewer (the shot passes close without connecting), the target must succeed on a DC 12 Wisdom saving throw or have disadvantage on its next attack roll. Against mounts and animals: the DC rises to 14 (animal nerves respond more sharply to the pitch). Cost: 8 cp per 20. Weight: 3 lb per 20.
 
-*Glandes inscriptae* (inscribed lead): Range 30/60 ft. 1d6 bludgeoning. Shot cast with messages: *FVLGVR* (lightning), the recipient's name, or cruder Roman commentary. Same stats as standard *glandes* on a hit. Before combat, if the enemy can see these being prepared and loaded (Perception DC 12), they make a DC 10 Wisdom saving throw; on a failure, they begin with disadvantage on their first attack roll (the psychological weight of seeing your name on the incoming shot). One-time morale effect per engagement. Cost: 6 cp per 20. Weight: 3 lb per 20.
+*Glandes inscriptae* (inscribed lead): Range 30/60 ft. 1d6 bludgeoning. Shot cast with messages: *FVLGVR* (lightning), the recipient's name, or cruder Roman commentary. Same stats as standard *glandes* on a hit. Before combat, if the enemy can see these being prepared and loaded (DC 12 Wisdom (Perception)), they make a DC 10 Wisdom saving throw; on a failure, they begin with disadvantage on their first attack roll (the psychological weight of seeing your name on the incoming shot). One-time morale effect per engagement. Cost: 6 cp per 20. Weight: 3 lb per 20.
 
 Terracotta shot (unfired clay): Range 35/70 ft. 1d4 bludgeoning. Lighter than lead and carries slightly further; less dense on impact. Can be made in the field: 1 hour of work with available clay and a simple mold produces 20 shot. Purchased stock is inconsistent because soldiers requisition the molds for other purposes. Cost: 3 cp per 20 when purchased; free to craft. Weight: 2 lb per 20.
 
@@ -240,9 +240,9 @@ Fire arrow: Standard range, but requires a bonus action to light from a torch or
 
 Trilobate arrow (three-bladed head): Standard range. Against targets wearing non-plate armor (leather, hide, scale, or chainmail), the attack ignores the armor's Dexterity modifier contribution to AC: the three blades cut around the articulation points that flexible armor relies on. On a critical hit, the target makes a DC 13 Constitution saving throw; on a failure, it suffers one level of exhaustion from blood loss (three wound channels simultaneously). Cost: 8 sp per 20. Weight: 2 lb per 20.
 
-Barbed arrow: Standard range. Standard damage on a hit. When the arrow is removed without medical attention, the barbs tear the wound open: removal deals an additional 1d4 piercing damage unless the remover succeeds on a DC 15 Medicine check or magical healing is applied to the wound first. A target who leaves a barbed arrow embedded takes 1 piercing damage at the start of each of their turns until it is removed. Cost: 7 sp per 20. Weight: 2 lb per 20.
+Barbed arrow: Standard range. Standard damage on a hit. When the arrow is removed without medical attention, the barbs tear the wound open: removal deals an additional 1d4 piercing damage unless the remover succeeds on a DC 15 Wisdom (Medicine) check or magical healing is applied to the wound first. A target who leaves a barbed arrow embedded takes 1 piercing damage at the start of each of their turns until it is removed. Cost: 7 sp per 20. Weight: 2 lb per 20.
 
-*Scythicon* (poison arrow, Scythian-style composite toxin): Standard range. On a hit, the target takes normal piercing damage and must succeed on a DC 14 Constitution saving throw. On a failed save: 2d6 poison damage immediately and 1d6 poison damage at the start of their next turn. On a success: half the immediate poison damage only, no ongoing effect. Rarity: not standard Vindolanda stock. Available through Sigrun's network, black market sources in the *vicus*, or captured tribal stores. A *medicus* who handles the arrows can identify the specific compound and antidote window with a DC 16 Medicine check. Cost: 1 gp per arrow when available. Weight: 1 lb per 10.
+*Scythicon* (poison arrow, Scythian-style composite toxin): Standard range. On a hit, the target takes normal piercing damage and must succeed on a DC 14 Constitution saving throw. On a failed save: 2d6 poison damage immediately and 1d6 poison damage at the start of their next turn. On a success: half the immediate poison damage only, no ongoing effect. Rarity: not standard Vindolanda stock. Available through Sigrun's network, black market sources in the *vicus*, or captured tribal stores. A *medicus* who handles the arrows can identify the specific compound and antidote window with a DC 16 Wisdom (Medicine) check. Cost: 1 gp per arrow when available. Weight: 1 lb per 10.
 
 
 #### *Arcuballista* Bolt (Heavy Crossbow Bolt, Reinforced)
@@ -256,7 +256,7 @@ The auxiliary cavalry bow: shorter than any infantry longbow, built from laminat
 
 *Arcus Compositus*: Martial weapon. Range 80/320 ft. 1d8 piercing. Ammunition (standard or variant arrows). Two-handed. Mounted: no disadvantage on attack rolls while mounted and moving (the short draw arc accommodates horseback use). Proficiency: characters proficient with the shortbow or longbow transfer that proficiency with one hour of practice (the draw technique differs but the principles align). Cost: 35 gp. Weight: 2 lb.
 
-**Vindolanda stock:** None standard. Available through eastern auxiliary units passing through, from traders in the *vicus* on DC 15 Investigation, or through Sigrun's network at Camp Level 2 or higher.
+**Vindolanda stock:** None standard. Available through eastern auxiliary units passing through, from traders in the *vicus* on DC 15 Intelligence (Investigation), or through Sigrun's network at Camp Level 2 or higher.
 
 
 #### *Arcuballista* (Heavy Crossbow, Military Variant)
@@ -274,7 +274,7 @@ The standard infantry longbow, carried by Welsh, Caledonian, and eastern auxilia
 
 *Arcus Magnus*: Martial weapon. Range 150/600 ft. 1d8 piercing, heavy, two-handed. Standard longbow proficiency applies. Compatible with all arrow variants in the ammunition section above. Cost: 50 gp. Weight: 2 lb.
 
-**Vindolanda stock:** Not standard issue. Available from eastern auxiliary traders through the *vicus* on DC 15 Investigation, or through Sigrun's network at Camp Level 2 or higher.
+**Vindolanda stock:** Not standard issue. Available from eastern auxiliary traders through the *vicus* on DC 15 Intelligence (Investigation), or through Sigrun's network at Camp Level 2 or higher.
 
 
 #### *Arcuballista Brevis* (Hand Crossbow)
@@ -292,7 +292,7 @@ A compact one-handed crossbow carried by scouts and cavalry skirmishers. Less po
 
 The heavy *pilum* hitting a shield makes a specific sound: a flat crack, then a grinding drag as the soft iron shank bends under its own weight. Then silence while the man holding the shield realizes it is now pulling his arm toward the ground. The Romans designed for that silence -- the moment between the volley and the charge where the enemy line is disordered and cannot raise shields to meet what is coming. The tradeoff is that a heavy pilum usually dies on the first throw: most bent shanks cannot be recovered.
 
-Heavy *pilum*: Martial weapon. Thrown (30/60 ft). 1d8 piercing. On a hit, the target's shield is unusable until repaired (1 hour of work with appropriate tools). The pilum cannot be thrown back by the target. Retrieving a heavy pilum after combat requires a DC 14 Athletics check as a bonus action; on a failure, the shank is bent beyond use. Cost: 5 sp. Weight: 4 lb.
+Heavy *pilum*: Martial weapon. Thrown (30/60 ft). 1d8 piercing. On a hit, the target's shield is unusable until repaired (1 hour of work with appropriate tools). The pilum cannot be thrown back by the target. Retrieving a heavy pilum after combat requires a DC 14 Strength (Athletics) check as a bonus action; on a failure, the shank is bent beyond use. Cost: 5 sp. Weight: 4 lb.
 
 #### Light *Pilum*
 
@@ -379,7 +379,7 @@ The heavy lance of Roman cataphract cavalry and Parthian-style heavy horse. Two 
 
 Captured from Dacian enemies or found in tribal mercenary stores. A single-edged sickle-sword designed to hook over and around shields, reaching the arm or neck behind whatever defense the opponent has raised. The Romans formally banned its use in gladiatorial combat after it caused too many incapacitating injuries in the early empire's arena shows. Finding one in Roman-controlled territory raises immediate questions about where it came from.
 
-*Falx*: Martial weapon. Two-handed. 1d10 slashing. Bypasses shields: the blade ignores the AC bonus granted by any shield (the curve goes around it; interposing the shield is not effective against the angle of the cut). Formation disadvantage: disadvantage on attack rolls while in any Roman formation -- the wide arc requires space that formations are designed to deny. Legal risk: carrying a *falx* without an officer's written authorization in Roman military territory is a summary offense. Any soldier or officer who sees one is legally required to report it; a DC 14 Persuasion check is needed to convince them otherwise. Cost: 15 gp (black market); 0 gp (captured). Weight: 7 lb.
+*Falx*: Martial weapon. Two-handed. 1d10 slashing. Bypasses shields: the blade ignores the AC bonus granted by any shield (the curve goes around it; interposing the shield is not effective against the angle of the cut). Formation disadvantage: disadvantage on attack rolls while in any Roman formation -- the wide arc requires space that formations are designed to deny. Legal risk: carrying a *falx* without an officer's written authorization in Roman military territory is a summary offense. Any soldier or officer who sees one is legally required to report it; a DC 14 Charisma (Persuasion) check is needed to convince them otherwise. Cost: 15 gp (black market); 0 gp (captured). Weight: 7 lb.
 
 
 #### Net (*Rete*)
@@ -395,7 +395,7 @@ Used by auxiliary soldiers with gladiatorial training and by anyone whose orders
 
 A length of vine wood, gnarled and dense, traditionally cut from a single vine in the Italian manner. Every centurion carries one. It corrects soldiers who are late, slow, loud, or otherwise in need of adjustment. It points at positions on a map. It blocks a sword when there is no better option. It is not a weapon the way a *gladius* is a weapon: it is authority made physical, and every soldier who has served a day in the Roman army recognizes what it means when the person holding it raises it.
 
-*Vitis*: Simple weapon. 1d6 bludgeoning. Light. Authority property: when a character carrying the *vitis* issues a verbal order to a Roman soldier within 30 feet (bonus action), that soldier must comply or make a DC 13 Wisdom saving throw; on a failure, they comply automatically; on a success, they freeze for one round and will not advance or attack (they may still defend themselves). The authority property does not function against non-Roman soldiers or anyone who has identified the bearer as not a centurion. Carrying a *vitis* without centurion rank is a disciplinary offense: any soldier who identifies the bearer as a non-centurion is legally required to report it; a DC 14 Persuasion check can delay the report for one scene, not prevent it. Cost: 2 sp. Weight: 2 lb.
+*Vitis*: Simple weapon. 1d6 bludgeoning. Light. Authority property: when a character carrying the *vitis* issues a verbal order to a Roman soldier within 30 feet (bonus action), that soldier must comply or make a DC 13 Wisdom saving throw; on a failure, they comply automatically; on a success, they freeze for one round and will not advance or attack (they may still defend themselves). The authority property does not function against non-Roman soldiers or anyone who has identified the bearer as not a centurion. Carrying a *vitis* without centurion rank is a disciplinary offense: any soldier who identifies the bearer as a non-centurion is legally required to report it; a DC 14 Charisma (Persuasion) check can delay the report for one scene, not prevent it. Cost: 2 sp. Weight: 2 lb.
 
 **The Optio's staff:** The Optio carries the *hastile optioni* (knobbed staff) rather than a vine-wood *vitis*. The two weapons are distinct: the *hastile optioni* is a shod pole with a metal knob, heavier and more utilitarian than the vine staff but carrying the same social meaning below centurion level. An Optio seen carrying a *vitis* will be asked directly who gave it to them.
 
@@ -472,7 +472,7 @@ These weapons do not exist in isolation. They slot into the formations above and
 
 **Clay incendiaries in the tunnel:** The tunnel scenes in Session 4 are narrow enclosed spaces. Clay incendiaries cannot be used in the tunnel without endangering the party (the fire damage applies to all flammable materials in a 5-foot radius, including the wooden support beams). Outside the tunnel, in the antechamber, they work normally.
 
-**Dolabra and the collapsed passage:** The blocked section in the Session 4 tunnel is a constructed stone collapse, not a natural fall. A character with the *dolabra* can clear enough of the passage to squeeze through with a DC 15 Athletics check (2 rounds of work). Without the *dolabra*, the check is DC 18 and takes 5 rounds. The *dolabra's* structure-damage double damage rule applies to each working round: the DM can frame partial success as clearing enough to pass at the cost of time.
+**Dolabra and the collapsed passage:** The blocked section in the Session 4 tunnel is a constructed stone collapse, not a natural fall. A character with the *dolabra* can clear enough of the passage to squeeze through with a DC 15 Strength (Athletics) check (2 rounds of work). Without the *dolabra*, the check is DC 18 and takes 5 rounds. The *dolabra's* structure-damage double damage rule applies to each working round: the DM can frame partial success as clearing enough to pass at the cost of time.
 
 
 ### Siege Weapons
@@ -538,7 +538,7 @@ Not standard issue for every warrior, but carried by specialists in the second r
 
 Frankish and Rhenish warriors carry this alongside the *framea*, but it serves a different purpose. Where the *framea* is a clean throw-or-thrust choice, the *angon* is a harassment weapon: the barbed head is designed to catch in a shield or a body and stay there, and the heavy shaft makes it impossible to ignore. A shield with an *angon* through it becomes a liability rather than a defense. Warriors sometimes step on the embedded shaft to drag the shield down while closing to *seax* range -- the exact movement that the Roman testudo training teaches soldiers to resist, and that individual fighters in open ground usually do not.
 
-*Angon*: Martial weapon. Thrown (20/40 ft). 1d8 piercing. On a hit against a shield-bearing target: the target makes a DC 14 Strength saving throw. On a failure, the *angon* catches on the shield; the shield's AC bonus is halved (rounded down) until the shaft is removed as an action. On a hit against a target without a shield: the barbs catch in body or armor; removing the *angon* deals 1d6 additional piercing damage unless a DC 13 Medicine check is made or magical healing is applied first. Cost: 8 gp. Weight: 5 lb.
+*Angon*: Martial weapon. Thrown (20/40 ft). 1d8 piercing. On a hit against a shield-bearing target: the target makes a DC 14 Strength saving throw. On a failure, the *angon* catches on the shield; the shield's AC bonus is halved (rounded down) until the shaft is removed as an action. On a hit against a target without a shield: the barbs catch in body or armor; removing the *angon* deals 1d6 additional piercing damage unless a DC 13 Wisdom (Medicine) check is made or magical healing is applied first. Cost: 8 gp. Weight: 5 lb.
 
 
 ### Germanic Round Shield (*Parma*)
@@ -766,9 +766,9 @@ Standard military boots: Boots slot. In cold weather (near or below freezing): a
 
 Every Roman soldier wears one. It is not optional; it is the mark of service itself. A soldier stripped of their belt in front of their unit has been formally shamed -- the act is called *degradatio* and follows the person through Roman military records. Surrendering the belt voluntarily is the formal act of discharge or surrender.
 
-*Cingulum Militare*: Belt slot. Carries up to 3 one-handed weapons or 5 utility items (rope, rations, vials, torch, signal tokens) attached to its loops and tabs without counting toward encumbrance. The apron of leather strips (*pteruges*) usually attached can conceal a *pugio* from casual inspection (DC 13 Perception to notice the weight).
+*Cingulum Militare*: Belt slot. Carries up to 3 one-handed weapons or 5 utility items (rope, rations, vials, torch, signal tokens) attached to its loops and tabs without counting toward encumbrance. The apron of leather strips (*pteruges*) usually attached can conceal a *pugio* from casual inspection (DC 13 Wisdom (Perception) to notice the weight).
 
-**Social mechanic:** Any soldier who can see another's *cingulum* can read the campaign ribbons, unit markers, and wear on it. A DC 12 History check lets a character deduce the approximate unit, years of service, and one major campaign of the belt's owner from the decorations and damage. Most Roman soldiers read this automatically; it is visible information in plain sight. Cost: 5 gp. Weight: 2 lb.
+**Social mechanic:** Any soldier who can see another's *cingulum* can read the campaign ribbons, unit markers, and wear on it. A DC 12 Intelligence (History) check lets a character deduce the approximate unit, years of service, and one major campaign of the belt's owner from the decorations and damage. Most Roman soldiers read this automatically; it is visible information in plain sight. Cost: 5 gp. Weight: 2 lb.
 
 
 ### Equipment Summary
@@ -1030,7 +1030,7 @@ Every cohort on active campaign is assigned a *haruspex* (entrails-reader), who 
 | Ability | Mechanic |
 |---|---|
 | **Entrails reading (Augury)** | 1/day, before a major decision; DM gives a two-word response (weal/woe/both/neither). This cannot be a bluff: the *haruspex* is officially bound to report accurately. |
-| **Creature identification** | Bonus action + DC 13 History check to identify a creature from the Bestiary and recall its official classification and doctrine response |
+| **Creature identification** | Bonus action + DC 13 Intelligence (History) check to identify a creature from the Bestiary and recall its official classification and doctrine response |
 | **Blessed Standard** | Once per short rest, the *haruspex* can invoke the cohort's standard to grant all soldiers within 30 feet advantage on their next saving throw against a fear effect or spell |
 | **Death consequence** | If the *haruspex* dies in the field, every soldier in the unit must make a DC 12 Wisdom saving throw or be Frightened for one round; the unit cannot benefit from Blessed Standard for the remainder of the session |
 
@@ -1107,7 +1107,7 @@ This section gives the DM and players a concrete system for recruiting legionari
 
 **Generic soldiers:** Available for deployment in groups of up to 3 per party member. Varro approves deployment by session, not by mission. If the party misused soldiers in the previous session, he will want an explanation before approving the next deployment.
 
-**Requesting deployment (in-play):** Find Varro before the session's main action begins. He will ask one question: "Where are you going and what for?" Answer honestly or at disadvantage for social checks with him for the rest of the session. A DC 13 Persuasion check is required unless the party has Allied-tier relationship with him, in which case he approves without a roll.
+**Requesting deployment (in-play):** Find Varro before the session's main action begins. He will ask one question: "Where are you going and what for?" Answer honestly or at disadvantage for social checks with him for the rest of the session. A DC 13 Charisma (Persuasion) check is required unless the party has Allied-tier relationship with him, in which case he approves without a roll.
 
 
 ### Flavus
@@ -1169,7 +1169,7 @@ This section gives the DM and players a concrete system for recruiting legionari
 
 **Initiative:** Companions roll their own initiative and act on their own turn. They are not player-controlled; the DM runs them with the goal of supporting the party's stated plan, not substituting for it. If the party has not stated a plan, companions hold their position until ordered.
 
-**Legal limits:** Companions will not violate Roman military law regardless of orders. Specifically: they will not attack civilians who have not attacked first; they will not abandon the unit's standard in the field; they will not follow orders given by a character under obvious supernatural compulsion (corruption level 4 or higher creates visible signs; a soldier with 5+ years of frontier service can recognize them). A party member who attempts to order a violation may attempt DC 16 Persuasion; failure locks out that soldier's cooperation for the session.
+**Legal limits:** Companions will not violate Roman military law regardless of orders. Specifically: they will not attack civilians who have not attacked first; they will not abandon the unit's standard in the field; they will not follow orders given by a character under obvious supernatural compulsion (corruption level 4 or higher creates visible signs; a soldier with 5+ years of frontier service can recognize them). A party member who attempts to order a violation may attempt DC 16 Charisma (Persuasion); failure locks out that soldier's cooperation for the session.
 
 **Upkeep:** Each companion consumes 1 ration per day from the fort's supply. Quartus tracks this. If the party deploys soldiers without arranging rations through him, he notes the discrepancy; the third undocumented deployment costs the party 1 relationship step with him permanently.
 

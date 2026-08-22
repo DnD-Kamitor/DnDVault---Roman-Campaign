@@ -314,7 +314,7 @@ If you spend a session paying attention to which soldiers have private conversat
 
 **Duties between sessions:** Assign night watch rotations, deliver the *tessera* each morning, record who was on which post, note any irregularities in the watch log.
 
-**Mechanic:** You always know the current day's password and the complete patrol schedule. You can create a false password (DC 14 Deception, detected on DC 15 Investigation by anyone who has seen the real one). You know which posts are currently manned and by whom.
+**Mechanic:** You always know the current day's password and the complete patrol schedule. You can create a false password (DC 14 Charisma (Deception), detected on DC 15 Intelligence (Investigation) by anyone who has seen the real one). You know which posts are currently manned and by whom.
 
 <details>
 <summary><strong>Starting Equipment</strong></summary>
@@ -342,7 +342,7 @@ The tesserarius moves through the fort at night: checking posts, delivering the 
 
 **Advancement**
 
-**Standard** (0 commendationes): Know the current day's password and full patrol schedule. Create a false password (DC 14 Deception). Know which posts are manned and by whom at all times.
+**Standard** (0 commendationes): Know the current day's password and full patrol schedule. Create a false password (DC 14 Charisma (Deception)). Know which posts are manned and by whom at all times.
 
 **Veteranus** (3 commendationes): Choose one branch.
 
@@ -605,7 +605,7 @@ You know the text. You know why Metellus was found dead without it having been s
 
 **Duties between sessions:** Carry the *signum* in formation. Maintain the death benefits ledger. Record savings deposits and withdrawals. File the monthly financial return to the legate's office.
 
-**Mechanic:** Access to the unit savings fund (currently 100 gp at campaign start). Drawing on the fund requires DC 14 Persuasion (a majority of the unit votes to authorize it) or DC 18 Deception (forging the ledger, detected on DC 16 Investigation by anyone who checks). The fund grows when the party completes supply missions or recovers assets.
+**Mechanic:** Access to the unit savings fund (currently 100 gp at campaign start). Drawing on the fund requires DC 14 Charisma (Persuasion) (a majority of the unit votes to authorize it) or DC 18 Charisma (Deception) (forging the ledger, detected on DC 16 Intelligence (Investigation) by anyone who checks). The fund grows when the party completes supply missions or recovers assets.
 
 <details>
 <summary><strong>Starting Equipment</strong></summary>
@@ -635,7 +635,7 @@ The signifer carries the *signum* in one arm in the field: a pole standard toppe
 
 **Advancement**
 
-**Standard** (0 commendationes): Access to the unit savings fund (100 gp at campaign start). Authorize withdrawals via DC 14 Persuasion or detect forgery via DC 16 Investigation.
+**Standard** (0 commendationes): Access to the unit savings fund (100 gp at campaign start). Authorize withdrawals via DC 14 Charisma (Persuasion) or detect forgery via DC 16 Intelligence (Investigation).
 
 **Veteranus** (3 commendationes): Choose one branch.
 
@@ -748,7 +748,7 @@ The soldier in question does not know who owns his debt.
 
 **Duties between sessions:** Sound the morning *classicum* (reveille), signal the watch changes, maintain the horn in working condition, drill the signals vocabulary with the unit monthly.
 
-**Mechanic:** As a bonus action in combat, signal a formation change: all allies within 60 feet who can hear you shift into or out of formation without expending movement or their reaction. Once per session, signal a false retreat (DC 15 Performance, opposed by enemy commander's Insight) to draw enemies out of position; on success, the enemy unit moves toward the apparent retreat for one round.
+**Mechanic:** As a bonus action in combat, signal a formation change: all allies within 60 feet who can hear you shift into or out of formation without expending movement or their reaction. Once per session, signal a false retreat (DC 15 Charisma (Performance), opposed by enemy commander's Insight) to draw enemies out of position; on success, the enemy unit moves toward the apparent retreat for one round.
 
 <details>
 <summary><strong>Starting Equipment</strong></summary>
@@ -777,7 +777,7 @@ The cornicen's job requires breath, volume, and sustained physical output. The k
 
 **Advancement**
 
-**Standard** (0 commendationes): As a bonus action, signal a formation change for all allies within 60 feet. Once per session, sound a false retreat (DC 15 Performance vs. enemy Insight).
+**Standard** (0 commendationes): As a bonus action, signal a formation change for all allies within 60 feet. Once per session, sound a false retreat (DC 15 Charisma (Performance) vs. enemy Insight).
 
 **Veteranus** (3 commendationes): Choose one branch.
 
@@ -897,7 +897,7 @@ Soldiers designated *immunes* are exempt from the fatigue duties that fill most 
 
 **Duties between sessions:** Morning sick parade (examine all soldiers reporting ill), wound dressing after any combat, epidemic monitoring, quarantine decisions.
 
-**Mechanic:** You can stabilize a dying creature using Medicine (no action cost, just the check, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + WIS modifier HP. You can identify poison, disease, or unusual wound cause with DC 13 Medicine and no additional resources.
+**Mechanic:** You can stabilize a dying creature using Medicine (no action cost, just DC 10 Wisdom (Medicine)). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + WIS modifier HP. You can identify poison, disease, or unusual wound cause with DC 13 Wisdom (Medicine) and no additional resources.
 
 <details>
 <summary><strong>Starting Equipment</strong></summary>
@@ -925,7 +925,7 @@ The medicus does not fight if a better option exists, but they are fully authori
 
 **Advancement**
 
-**Standard** (0 commendationes): Stabilize a dying creature with Medicine (no action cost, DC 10). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + Wisdom modifier HP. Identify poison, disease, or wound cause at DC 13.
+**Standard** (0 commendationes): Stabilize a dying creature with Medicine (no action cost, DC 10 Wisdom (Medicine)). Once per day, spend 10 minutes and a healer's kit use to heal 2d6 + Wisdom modifier HP. Identify poison, disease, or wound cause at DC 13 Wisdom (Medicine).
 
 **Veteranus** (3 commendationes): Choose one branch.
 
@@ -1012,7 +1012,7 @@ You can tell the difference between a blade wound and a wound made to look like 
 <details>
 <summary><strong>Medicine +5 — Poison identification, antidotes, and plague differential</strong></summary>
 
-The Antonine Plague presents with fever, skin eruptions, and diarrhea in a specific sequence. Ordinary camp fever presents similarly but the sequence differs. You can distinguish them with Medicine DC 15 and three days of observation. The plague is fatal in roughly one-third of cases in civilian populations and somewhat lower in military ones, possibly due to better nutrition.
+The Antonine Plague presents with fever, skin eruptions, and diarrhea in a specific sequence. Ordinary camp fever presents similarly but the sequence differs. You can distinguish them with DC 15 Wisdom (Medicine) and three days of observation. The plague is fatal in roughly one-third of cases in civilian populations and somewhat lower in military ones, possibly due to better nutrition.
 
 You know seven poisons that can be prepared from plants available within a two-day journey of this fort. You know their symptoms, their timing, and their antidotes where antidotes exist. You know which of them would be undetectable in a wine-and-water mixture at standard dilution ratios. This knowledge is kept in a locked document for obvious reasons.
 
@@ -1034,7 +1034,7 @@ There is a treatment that slows the physical symptoms. It does not reverse the u
 
 **Pay:** *Duplicarius*, 600 denarii/year (take-home approximately 400); plus temple stipend from the fort shrine, 100 denarii/year
 
-**Prerequisites:** Roman citizen preferred; other statuses require additional endorsement. WIS 14. Proficiency in Religion. Must be approved by the *collegium haruspicum*, the professional divination guild based in Rome: a character with this role has already passed their guild examination (DC 16 Religion, treated as a past event in the character's history). Appointed by the legate.
+**Prerequisites:** Roman citizen preferred; other statuses require additional endorsement. WIS 14. Proficiency in Religion. Must be approved by the *collegium haruspicum*, the professional divination guild based in Rome: a character with this role has already passed their guild examination (DC 16 Intelligence (Religion), treated as a past event in the character's history). Appointed by the legate.
 
 **Why this role exists:** Before any significant Roman military action, the omens must be read. This is not superstition: it is law. A commander who launches an engagement against the advice of his *haruspex* and then loses has committed a legal offense as well as a military one. The *haruspex* is the unit's legal protection against being blamed for what the gods already knew was going to go wrong.
 
@@ -1186,7 +1186,7 @@ Paterculus, this fort's *haruspex*, has been filing them as ordinary bad omens. 
 
 **Duties between sessions:** Weapons maintenance inspections, fort structural repair as needed, siege equipment maintenance, supervision of working parties on construction assignments.
 
-**Mechanic:** Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses: DC 13 Investigation reveals a weak point in a wall, door, or structure. Once per session, improvise a piece of equipment (battering ram, caltrop field, burning pitch container) from available materials with a DC 14 Smith's Tools or Mason's Tools check.
+**Mechanic:** Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses: DC 13 Intelligence (Investigation) reveals a weak point in a wall, door, or structure. Once per session, improvise a piece of equipment (battering ram, caltrop field, burning pitch container) from available materials with a DC 14 Smith's Tools or Mason's Tools check.
 
 <details>
 <summary><strong>Starting Equipment</strong></summary>
@@ -1215,7 +1215,7 @@ The faber works with their hands: hammering, cutting, lifting, and assembling. T
 
 **Advancement**
 
-**Standard** (0 commendationes): Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses at DC 13 Investigation. Once per session, improvise a piece of equipment from available materials (DC 14 Smith's or Mason's Tools).
+**Standard** (0 commendationes): Craft or repair mundane weapons and armor at half cost with forge access. Assess structural weaknesses at DC 13 Intelligence (Investigation). Once per session, improvise a piece of equipment from available materials (DC 14 Smith's or Mason's Tools).
 
 **Veteranus** (3 commendationes): Choose one branch.
 
@@ -1328,7 +1328,7 @@ Under siege conditions, with the vibration of artillery and the weight of reinfo
 
 **Duties between sessions:** Draft unit dispatches, maintain the official roster, copy and file incoming orders, maintain the pay ledger, submit the monthly return to the legate's office.
 
-**Mechanic:** Forge military documents (DC 14 Forgery, detected on DC 15 Investigation by anyone who examines them). Access incoming dispatch copies as a matter of routine: you know what Rome officially knows about this fort, including what has and has not been reported. Produce legally binding Latin documents on request.
+**Mechanic:** Forge military documents (DC 14 Forgery, detected on DC 15 Intelligence (Investigation) by anyone who examines them). Access incoming dispatch copies as a matter of routine: you know what Rome officially knows about this fort, including what has and has not been reported. Produce legally binding Latin documents on request.
 
 <details>
 <summary><strong>Starting Equipment</strong></summary>
@@ -1356,7 +1356,7 @@ The librarius spends most of their working time at a desk, but they are still a 
 
 **Advancement**
 
-**Standard** (0 commendationes): Forge military documents (DC 14, detected on DC 15). Routine access to incoming dispatch copies. Produce legally binding Latin documents on request.
+**Standard** (0 commendationes): Forge military documents (DC 14 Forgery, detected on DC 15 Intelligence (Investigation)). Routine access to incoming dispatch copies. Produce legally binding Latin documents on request.
 
 **Veteranus** (3 commendationes): Choose one branch.
 
@@ -1477,7 +1477,7 @@ A dispatch from Brutus arriving before the excavation yielded its primary findin
 
 **Duties between sessions:** Reconnaissance patrols beyond the perimeter, track reporting on Germanic movement, informant contact maintenance.
 
-**Mechanic:** Move at full speed without penalty in forest or wilderness terrain. Advantage on Perception checks in wilderness. Identify tracks and determine creature count, approximate size, and timing (DC 12 Survival, no tools required). Once per session, call on a border informant for one piece of local intelligence (DM provides, 1d4 hours wait time).
+**Mechanic:** Move at full speed without penalty in forest or wilderness terrain. Advantage on Perception checks in wilderness. Identify tracks and determine creature count, approximate size, and timing (DC 12 Wisdom (Survival), no tools required). Once per session, call on a border informant for one piece of local intelligence (DM provides, 1d4 hours wait time).
 
 <details>
 <summary><strong>Starting Equipment</strong></summary>
@@ -1505,7 +1505,7 @@ The explorator operates beyond the fort perimeter, often alone or in pairs, for 
 
 **Advancement**
 
-**Standard** (0 commendationes): Move at full speed without penalty in forest or wilderness. Advantage on Perception in wilderness. Track creatures (DC 12 Survival). Once per session, call on a border informant for local intelligence (1d4 hour wait).
+**Standard** (0 commendationes): Move at full speed without penalty in forest or wilderness. Advantage on Perception in wilderness. Track creatures (DC 12 Wisdom (Survival)). Once per session, call on a border informant for local intelligence (1d4 hour wait).
 
 **Veteranus** (3 commendationes): Choose one branch.
 
@@ -1622,7 +1622,7 @@ For the past month, Thusnelda's scouts have maintained a position with line-of-s
 
 **Duties between sessions (actual):** Monitor the unit and fort for loyalty issues. File encrypted reports to Rome via the intelligence courier network, separate from the standard dispatch system.
 
-**Mechanic:** Request information from the *frumentarii* network across the empire (DM provides after 1d4 days, encrypted courier round-trip). Use a coded communication system that cannot be traced to the unit by normal Investigation. Once per session, make a DC 13 Insight check against any named NPC to determine whether they are filing independent reports to Rome outside the official dispatch system.
+**Mechanic:** Request information from the *frumentarii* network across the empire (DM provides after 1d4 days, encrypted courier round-trip). Use a coded communication system that cannot be traced to the unit by normal Investigation. Once per session, make a DC 13 Wisdom (Insight) check against any named NPC to determine whether they are filing independent reports to Rome outside the official dispatch system.
 
 <details>
 <summary><strong>Starting Equipment</strong></summary>
@@ -1651,7 +1651,7 @@ The frumentarius's cover is a supply officer. The kit must look like a supply of
 
 **Advancement**
 
-**Standard** (0 commendationes): Request information from the *frumentarii* network (1d4 day delay). Coded communication untraceable by normal Investigation. Once per session, DC 13 Insight to detect NPCs filing independent reports to Rome.
+**Standard** (0 commendationes): Request information from the *frumentarii* network (1d4 day delay). Coded communication untraceable by normal Investigation. Once per session, DC 13 Wisdom (Insight) to detect NPCs filing independent reports to Rome.
 
 **Veteranus** (3 commendationes): Choose one branch.
 
@@ -1801,7 +1801,7 @@ The sacerdos is both a shrine keeper and a soldier. The kit is split between cer
 - **Helmet:** *Galea Coolus* (AC +1, 5 lb). Standard issue; not worn during active ceremony (the head must be uncovered for most Roman rites) but available for combat conditions.
 - **Cloak (ceremony):** *Paludamentum*, white or undyed (3 lb). Worn during official observances only: the visually distinct cloak marks the officiating priest and is specified by the formal rite.
 - **Cloak (routine):** *Sagum* (4 lb). Daily wear; the *paludamentum* is reserved for ceremony. Both are in the sacerdos's kit.
-- **Arms:** White linen ritual gloves (0.5 lb). Roman rite specifies that offerings, sacred vessels, and the shrine's consecrated objects must not be touched with bare skin by the officiating priest. Without them, a ceremony is technically invalid and must be repeated: this is not theological pedantry, it is the legal basis on which the rite produces its effect. Worn during morning observance and formal sacrifice; stored in the priestly kit otherwise. When officiating a Roman military rite correctly (Religion DC 12), you have advantage on the check.
+- **Arms:** White linen ritual gloves (0.5 lb). Roman rite specifies that offerings, sacred vessels, and the shrine's consecrated objects must not be touched with bare skin by the officiating priest. Without them, a ceremony is technically invalid and must be repeated: this is not theological pedantry, it is the legal basis on which the rite produces its effect. Worn during morning observance and formal sacrifice; stored in the priestly kit otherwise. When officiating a Roman military rite correctly (DC 12 Intelligence (Religion)), you have advantage on the check.
 - **Boots:** Standard military boots (3 lb). The shrine floor is swept stone; *caligae* leave marks and their click is inappropriate during the quiet portions of the morning rite.
 - **Belt:** *Cingulum Militare* (2 lb) with priestly kit attached (2 lb): incense pouch (5 sticks), small bronze sacrificial knife, two small clay offering vessels, and a wax tablet for recording the daily omen log.
 - **Weapon:** *Pugio* (1 lb). The sacrificial knife and the defensive blade are the same instrument, kept clean and dedicated. Carried at the right hip.
@@ -2864,7 +2864,7 @@ When a player character fills a role, they gain the access, contacts, and mechan
 
 | Role | Immediate consequence (vacancy starts) | After 3 vacancy sessions |
 |---|---|---|
-| Optio | Orders require explanation; unit will not follow commands automatically without a DC 12 Persuasion check by whoever is leading | Morale saves at disadvantage for the entire unit |
+| Optio | Orders require explanation; unit will not follow commands automatically without a DC 12 Charisma (Persuasion) check by whoever is leading | Morale saves at disadvantage for the entire unit |
 | Tesserarius | DM secretly rolls 1d6 at session start; on 1-3, an infiltration attempt is in progress during the session | Patrol pattern completely compromised; enemy units gain surprise on the next engagement |
 | Aquilifer | Eagle secured in *principia*; no field use, no fear-immunity aura, no eagle invocation | Unit morale collapses at the first death: all allies make DC 14 Wisdom saving throws or become frightened |
 | Signifer | Unit fund frozen; no withdrawals; no new deposits; death benefits unprocessed | One soldier with a pending beneficiary dies: the beneficiary receives nothing, producing an unresolved grievance |
