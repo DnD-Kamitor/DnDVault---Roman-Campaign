@@ -12,6 +12,11 @@
 
 **Plus:** handouts printed before session (HTML files in `handouts/`). SVG maps loaded in MapTool from `Maptool/maps/`.
 
+**Before prepping any session, read `CAMPAIGN_LOG.md` first.** It tracks what actually
+happened at the table, which is not always what the chapter files say. If they
+conflict, `CAMPAIGN_LOG.md` wins — update it after every real session, before touching
+next session's prep.
+
 ---
 
 ## Project Overview
@@ -45,7 +50,8 @@ roman_tactics.qmd   ← Roman military formations, expanded weapons/ammunition
 bestiary.qmd        ← D&D 5e stat blocks with full tactical identities
 corruption.qmd      ← Expanded corruption system (player-facing)
 reputation.qmd      ← Reputation and relationship system
-journal.qmd         ← Campaign journal and decision tracker
+journal.qmd         ← Campaign journal and decision tracker (blank, player-facing)
+CAMPAIGN_LOG.md      ← GM record of what ACTUALLY happened at the table (read first)
 atmosphere.qmd      ← Music and sound per session
 gm_intro.qmd        ← OGAS framework, central mystery, master plot, NPC skill DCs
 gm_session0.qmd     ← GM facilitation guide for Session 0
