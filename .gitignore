@@ -11,6 +11,10 @@ Books/
 Maptool/campaigns/5e/Simple_5e_LMOP_v2.1.0.cmpgn
 Maptool/campaigns/5e/demo5e.cmpgn
 Maptool/campaigns/5e/Automated.5e.-.SRD.Only.cmpgn
+Maptool/campaigns/5e/*backup*.cmpgn
 __pycache__/
 graphify-out/
 handouts/.Rhistory
+
+# Downloaded map pack, not referenced by any script/qmd — local only
+Maptool/maps/Public/
