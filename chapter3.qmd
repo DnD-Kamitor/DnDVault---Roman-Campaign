@@ -36,11 +36,14 @@ Before writing any prep notes, confirm:
 
 | Question | Answer affects |
 |---|---|
-| Is Tribune Lucius alive and with the party? | His role in the journey and the grove ritual |
-| Did the party make an alliance with Vercingetorix? | Navigation, tribal encounters, Thusnelda access |
+| How did the Varro fight resolve (see Prologue below)? | Whether Varro travels with the party at all (he does not), the tone of the send-off, whether the influenced-NPC mechanic in Scene 1 lands as prophecy or repetition |
+| Is Tribune Lucius alive and now in command of the fort? | His role shifts from observer to the authority the party answers to before departing; the citizenship-elevation window later in this chapter |
+| Did the party make an alliance with Vercingetorix? | Navigation, tribal encounters, Thusnelda access -- note his attack on the fort in Session 2 was not a betrayal of this alliance, see CAMPAIGN_LOG.md |
 | Is Augur Cassia with the party? | Ritual knowledge, the sacrifice choice |
-| What is the Legate's status? | Whether they're being actively pursued |
+| What is the Legate's status? | Whether they're being actively pursued; Corvinus's authority is now damaged by the security failure |
 | What is each character's corruption level? | Scene 1 intensity, grove ritual stakes |
+
+**Read `CAMPAIGN_LOG.md` before running this session.** The real throughline (Mars's true motive, Varro's corruption, Lucius's divided loyalty, Vercingetorix's binding) lives there, not in this file's older draft framing. Where they conflict, `CAMPAIGN_LOG.md` wins.
 
 </details>
 
@@ -147,7 +150,7 @@ At the start of each travel day (or whenever pacing demands it), roll a d10 or c
 | 3 | **Germanic Watchers.** They've been visible in the treeline for an hour. Not hostile -- yet. If Vercingetorix is with the party, he raises a fist and they pull back. If not: DC 14 Persuasion using any Germanic phrase from the player guide, or they shadow the party all night. |
 | 4 | **The Spear Dreams.** The character carrying the highest corruption wakes screaming from a brief vision mid-march: they saw themselves standing over the entire party's bodies, holding the spear, and they were smiling. The character describes this to the table. Thusnelda, if present, listens. She says nothing. |
 | 5 | **A Shrine in the Trees.** A small Germanic offering-post -- carved wooden figures, dried herbs, a deer skull -- stands at a fork in the path. The left path goes into deep forest. The right path is the route. If the party disturbs the shrine: the deer skull's eye sockets glow briefly, and wildlife avoids the camp that night (advantage for the Legate's trackers). |
-| 6 | **Varro's Choice** *(if Varro is still with the party).* He stops at the treeline of a particular valley and looks across it for a long time. *"My grandfather's cohort marched through here. Forty years ago. None of them came back."* He doesn't explain. He keeps walking. |
+| 6 | **Old Bones.** The party crosses a shallow valley where the ground is wrong underfoot -- too many small, hard shapes beneath the leaf litter. Investigation DC 12 (active: digging one up): a corroded *pilum* head, a legionary's belt buckle, bone. This is where a Roman column died, generations ago, and never got a monument. No one in the party has to know Varro's family history for this to land -- but if anyone does, it lands harder. |
 | 7 | **The Spear Goes Quiet.** For several hours, the spear's runes stop glowing and the pull disappears. The forest feels almost normal. Then, suddenly, it resumes -- stronger than before, as if it drew a breath. Characters with corruption 2+ must make a DC 11 Wisdom save or feel the urge to unwrap it and hold it, "just to check it's still there." |
 | 8 | **Rain.** A cold Germanic rain turns the paths to mud. Movement is halved. The Legate's tracking becomes easier (his dogs can still smell the spear; rain doesn't help with that). Any character without a cloak takes 1 level of exhaustion if the party doesn't shelter for 2 hours. |
 | 9 | **The Abandoned Camp.** *(Adapted from Adventures in the Night)* A drover's camp, recently abandoned — fire ash still warm, two bedrolls cut open, a Germanic spear snapped in two. Investigation DC 11 (active: reading the camp's story): three people were here, left in haste south-southeast; one was dragged. Survival DC 12 (active: following the drag-marks): they end 40 feet from the fire, where a patch of earth is soft and dark. Something came from the bog. The only item left: a sealed leather pouch with six days of hardtack and a bronze Brigantes ring. This is not a threat. It is information: the bog does not tolerate uninvited guests. |
@@ -174,6 +177,100 @@ Maps are in `Maptool/maps/campaign/S3_Through_the_Dark_Forest/`. This is the lar
 | Bandit fortification / Germanic camp | `ForestBanditFort`, `ForestGate` | Thusnelda's outer perimeter; the gate test |
 
 </details>
+
+</details>
+
+
+<details>
+<summary><strong>Prologue: The Gate</strong> (picks up mid-scene from Session 2)</summary>
+
+::: {.dm-note}
+**What this scene actually is.** Varro is not a villain who turned on the party. His
+family has carried the shame of Varus's three lost legions in this exact forest for six
+generations -- he was already primed to see a second Teutoburg coming before the spear
+ever touched him. Its corruption didn't invent his fear, it just agreed with the one he
+already carried, until it justified opening a gate and killing a scout. He believes,
+right now, that he is saving Rome. Play him as a good man losing a fight he never told
+anyone he was having, not as an enemy. Full detail in `CAMPAIGN_LOG.md`.
+
+This scene resumes an in-progress fight -- Ursula engaged Varro at the gate he opened.
+Pick it up from there; don't re-stage the whole raid.
+:::
+
+**Recap, read or paraphrase:** *"The gate stands open. Varro stands in it, gladius drawn,
+blood on his hands that isn't his own -- the scout he killed lies past him, half in the
+mud. Ursula is already on him. Whatever the rest of the party was doing when the raid
+began, this is what's in front of them now."*
+
+**Varro, corrupted (use his existing stats: AC 17, HP 58):**
+- **Gladius** +5 to hit, 1d8+3 slashing
+- **Pilum (thrown)**, as per his standard stat block
+- **The god's hand steadies him:** once per round, Varro may reroll one failed attack
+  roll or saving throw. This is Mars's influence lending him just enough to keep fighting
+  -- not a fair fight, but not an unbeatable one either.
+- He is not trying to escape or to win a war. He is trying to hold the gate shut against
+  Rome's own future mistake. He will not flee. He will not surrender to a threat of
+  force. He will only stop for the third option below.
+
+**Three ways this ends (any one of them):**
+
+1. **He is killed or dropped to 0 HP.** He does not beg. His last words, quiet, almost
+   relieved: *"Tell them I did this for Rome."* He believes it to the end.
+2. **He is captured -- subdued, restrained, or surrenders after being clearly beaten.**
+   He goes without further violence once it's clear the fight is lost, but says nothing
+   useful under guard. He is not lying when he refuses to explain himself. He does not
+   have the words for what happened to him.
+3. **Someone breaks through to him.** DC 16 Wisdom (Insight) or Charisma (Persuasion)
+   (active: naming what he actually is afraid of -- Varus, the lost legions, this exact
+   forest -- rather than accusing him of treason), as a group action any character can
+   contribute to once per round. On success, Varro staggers, drops the gladius, and says,
+   *"I can still hear it. Get it away from me. Get it away from all of us."* He survives,
+   devastated by what he nearly did, and is in no state to travel with the party into the
+   forest -- he stays behind, relieved of duty, watched. This is the option that costs the
+   party nothing but gives them no clean resolution either: Varro lives, but he is not
+   coming with them, and the fort has lost its most trusted officer regardless.
+
+**Whichever ending occurs: Varro does not travel with the party into the forest.** Any
+later reference to him in this chapter or its GM tools assumes his absence -- update
+those on sight if you find one that still assumes he's present.
+
+**Lucius takes command.** In the wreckage of the gate, before the party has finished
+processing what just happened, Tribune Lucius arrives -- composed, already giving
+orders to the fort's soldiers as though he expected exactly this. He does not ask what
+happened. He already knows, or has decided he doesn't need the details.
+
+> *"Centurion Varro's command is suspended, effective now. I am assuming authority over
+> this fort's garrison until the Legate's standing is reviewed. My orders from Rome are
+> unambiguous: the weapon is recovered property of the Imperial military authority, and
+> it will be returned. I am not interested in your opinion of that order. I am informing
+> you of it."*
+
+He carries a small locked box he does not set down and does not explain. If anyone asks
+about it directly: *"That is not fort business."* One sentence, no room given to push
+further today.
+
+::: {.dm-note}
+Play Lucius arrogant and controlled here, not cruel. He is performing certainty he does
+not fully have -- his real orders say bring it back, his real conviction (formed
+somewhere his father never knew about) says it must never leave. The lockbox is
+personal, not political; do not pre-decide its contents. This is the same suspicious,
+observing Lucius from Session 1, now with real authority and something to lose.
+:::
+
+**Lucius comes with them.** He does not trust "Imperial property" of this significance to
+anyone else's hands after what just happened, and delegates the fort's day-to-day
+command to a subordinate for the duration. This is not generosity -- it's the same
+control instinct that made him take command in the first place, and it's the only way
+his own real orders from Rome ("recover the weapon") get satisfied in person rather than
+by report. Every existing reference to Lucius traveling with the party through the rest
+of this chapter (the river crossing, the grove, the citizenship co-sponsor mechanic)
+still holds -- this is the reason why.
+
+**Transition:** the party is given leave to depart for the forest -- whether Lucius
+frames this as a mission he's ordering them on, or something he's letting them do
+because stopping them would cost him more than he can currently afford, is a live
+choice for the table. Either way, they leave with a fresh, unresolved wound instead of a
+clean goodbye. Proceed to Scene 0 below; the two-day travel montage picks up from here.
 
 </details>
 
@@ -329,32 +426,40 @@ When someone tries to thank her: *"Do not thank me. Finish it. That is thanks en
 <details>
 <summary><strong>Scene 3: The River Crossing</strong></summary>
 
-The sacred grove is on the far side of the Vitulans river — currently swollen with spring melt. The crossing is hard under normal circumstances. It's harder with pursuers.
+::: {.dm-note}
+**Who is actually driving this scene, and why it should not be a big fight.** Corvinus is not trying to stop the party. Per his secret (see chapter03_npcs.html): he wants the spear destroyed and cannot say so. He also cannot be seen letting armed deserters walk off with contraband -- Brutus has eyes in the fort, and a Legate who visibly lets this go is a Legate who has handed Brutus leverage. So he sends a pursuit that *has* to exist, and quietly makes sure it does not have to succeed: a small escort, vague orders ("prevent the crossing," not "kill them"), and no personal presence. He is not the antagonist of this scene. He is a man threading a needle, and the party's job is to notice that, not to win a battle.
 
-**The river:** 90 feet wide. Fast-moving (Athletics DC 13, active: swimming across). A fallen oak spans the narrowest point, slippery (Acrobatics DC 11, active: crossing without falling). Rope can be strung across (Athletics DC 10, active: group action) to help everyone.
+Play this as a small, tense reading of the situation, not a set-piece battle. The "combat," if it happens at all, should resolve in one or two rounds against a handful of unmotivated men -- not a war.
+:::
+
+The sacred grove is on the far side of the Vitulans river — currently swollen with spring melt. The crossing is hard under normal circumstances. It's harder with someone behind you, even if that someone doesn't want to catch you.
+
+**The river:** 90 feet wide. Fast-moving (DC 13 Strength (Athletics), active: swimming across). A fallen oak spans the narrowest point, slippery (DC 11 Dexterity (Acrobatics), active: crossing without falling). Rope can be strung across (DC 10 Strength (Athletics), active: group action) to help everyone.
 
 **The pursuers arrive:**
 
-If the Legate is pursuing: his advance force catches up exactly when the party is mid-crossing.
-- 8 **Legionaries** (use Guard stat blocks)
+If the Legate is pursuing, a small escort catches up exactly when the party is mid-crossing -- not the full weight of the cohort:
+- 3 **Legionaries** (use Guard stat blocks)
 - 1 **Centurion** (use Knight stat block, CR 3)
-- The Legate himself if he's still in the picture: use Veteran stat block
+- Corvinus himself is never here. He is "one day behind" for the entire session, and stays that way.
 
-**The split-party set piece:**
-- Half the party is on the far bank, half still crossing or on the near bank
-- Ranged combat across the water (half cover for anyone behind the banks)
-- Melee on the fallen log (anyone knocked off: DC 13 Athletics to avoid being swept 20 feet downstream)
-- The river is impassable to heavy armor (Strength save DC 14 for anyone in metal armor who falls in)
+**Three tells, for a party paying attention (no roll required to notice all three; DC 11 Wisdom (Insight), passive, to understand what they add up to):**
+- The escort is small for a Legate's "advance force" -- four men, not a column.
+- They made no effort to approach quietly. The party heard them coming from well up the trail.
+- The Centurion's shouted order is "Halt and surrender the item," not "Kill them if they resist" -- a demand for compliance, not a kill order.
 
-**The moral choice:**
-The legionaries are just following orders. They've committed no crime. They have families and years of service ahead of them.
-- Killing them is technically murder by Roman law
-- Letting them cross means a fight the party might not win
-- Destroying the log severs pursuit but means whoever's still on the near bank is cut off
-- Intimidation DC 14 (active: a centurion-rank character ordering the legionaries to stand down across the water before combat begins): Not guaranteed, but worth the attempt. On success, the centurion opposite hesitates -- long enough for the party to cross and deny the ford. On failure, the order is refused and combat begins with that centurion specifically targeting the character who gave it. On 5-above the DC, the centurion signals his men to hold. He will not cross without new orders. He does not want this fight either.
-- Deception DC 15 (active: claiming the mission is sanctioned and the Legate's pursuit is unauthorized): This requires something tangible -- a document, a seal, or a name the centurion would recognize. Without it, the DC rises to 18. With it, he wavers -- and Varro, if present, can speak one sentence that makes it land or fall apart.
+**The scene:**
+- Half the party is on the far bank, half still crossing or on the near bank when the escort arrives
+- If it comes to blows: ranged exchange across the water (half cover for anyone behind the banks), melee on the fallen log (anyone knocked off: DC 13 Strength (Athletics) to avoid being swept 20 feet downstream). This should be short -- four unmotivated men break off fast once the Centurion is given a reason to.
+- The river is impassable to heavy armor (DC 14 Strength save for anyone in metal armor who falls in)
 
-*Varro (if present) will not fight his own men. He'll stand at the bank and let the party cross, then step aside. The legionary centurion will recognize him, hesitate, and that hesitation might be all the time needed.*
+**Ways this resolves without a fight (any one of these ends it):**
+- DC 14 Charisma (Intimidation) (active: a centurion-rank character ordering the legionaries to stand down across the water before combat begins): the centurion opposite hesitates -- long enough for the party to cross and deny the ford. He will not cross without new orders. He does not want this fight either.
+- DC 12 Charisma (Persuasion) (active: appealing directly to what the escort's orders actually are, not what they imply): pointing out that "prevent the crossing" was never "kill you for it" gives the Centurion the out he's quietly hoping for. He calls it a "tactical withdrawal" to save face.
+- If a character with real Roman political standing is present (the Aasimar Cleric's family name, or any character who has built visible standing with Corvinus) and states it plainly: the Centurion recognizes the name or the authority behind it and treats this as a matter above his pay grade -- he reports the crossing as "unavoidable" rather than a failure, and lets them go.
+- Deception DC 15 (active: claiming the mission is sanctioned and the pursuit is unauthorized): requires something tangible -- a document, a seal, or a name the centurion would recognize. Without it, DC 18.
+
+**If the party fights anyway:** it's over in a round or two -- these four men are here to be seen trying, not to die for it. After the first legionary drops or the Centurion takes a solid hit, he calls it: *"Enough. Let them go. I did not sign on to die for a Senator's argument with the gods."* This is not a retreat under pressure so much as a man who was looking for permission to stop.
 
 </details>
 
@@ -698,6 +803,12 @@ This window closes at Session 4 if the papers are not signed and returned. Corvi
 - **Agenda:** Reads every omen honestly, even the ones that point at herself. Completes her bog valerian herb quest at the sacrifice site (Encounter B) without announcing why she needs it. Watches the influenced NPC before anyone tells her who it is -- see Clue 3.
 - **Secret:** She has become increasingly certain the "genuine" sacrifice the grove wants is her own death, and she has not told anyone. Whether she acts on that belief depends entirely on how Scene 5 plays out.
 
+**Legate Marcus Aurelius Corvinus** *(off-screen, drives Scene 3 without appearing)*
+- **Objective:** Same as always: control the outcome without being the one who visibly caused it.
+- **Goal (this session):** Be seen pursuing the spear without actually stopping it. He wants it destroyed as much as the party does; he cannot say so.
+- **Agenda:** Sends a small, weakly-motivated escort to the river with orders soft enough to lose gracefully ("prevent the crossing," not "kill them"). Stays "one day behind" the entire session, deliberately.
+- **Secret:** If the party reads the situation correctly and lets the Centurion stand down without bloodshed, Corvinus hears about it and privately considers it well handled -- this quietly helps the citizenship-elevation window at the end of the session. If the party kills his men anyway, he still can't say anything -- but it is one more loss on top of Varro's, and it shows.
+
 **Senator Gaius Cassius Brutus (off-screen, never present this session)**
 - **Objective:** Same as Session 2 -- prevent the spear from reaching Rome or being publicly resolved
 - **Goal this session:** Launch Vindolanda's siege through allied chieftains while the party is in the forest; let the fort fall before the party returns
@@ -751,7 +862,7 @@ The grove does not communicate clearly. It communicates correctly. Here is how t
 Any character actively present at the grove ritual who contributed to the spear's destruction earns one *commendatio*. Corvinus awards these through the paperwork window described above, without being told exactly what happened at the grove. He knows the spear is gone. He knows the party came back. That is sufficient.
 
 **Opportunity 2: rescuing the influenced character during the ritual.**
-If one character was drawn to the spear and another character physically intervened (pulled them back, broke the connection, held them when the grove's power spiked), that act of putting themselves between a colleague and a divine force qualifies. One *commendatio* to the rescuing character. This is not Corvinus' paperwork: it is Varro's, if he is alive and present, or Cassia's formal attestation if Varro is not available.
+If one character was drawn to the spear and another character physically intervened (pulled them back, broke the connection, held them when the grove's power spiked), that act of putting themselves between a colleague and a divine force qualifies. One *commendatio* to the rescuing character. This is not Corvinus' paperwork: it is Cassia's formal attestation, as the ranking officer present and the party's usual channel for this now that Varro is gone.
 
 **Opportunity 3: protecting Vercingetorix in the forest.**
 If the party defended Vercingetorix against any forest encounter (Germanic ambush, wild creature, or any threat during travel) rather than leaving him to manage his own problems, note this for Session 4. It does not become a *commendatio* yet: the reward is Vercingetorix's warriors at the gate in Session 4, and a specific moment in the epilogue.

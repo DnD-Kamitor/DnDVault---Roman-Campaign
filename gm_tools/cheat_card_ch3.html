@@ -79,6 +79,7 @@
 
 <div id="tabs">
   <button class="tab-btn active" onclick="showTab('pre', this)">⚙ Pre-Session</button>
+  <button class="tab-btn" onclick="showTab('prologue', this)" style="color:#d4884a">⚔ Prologue: The Gate</button>
   <button class="tab-btn" onclick="showTab('s0', this)">0 · Cold Open</button>
   <button class="tab-btn" onclick="showTab('s1', this)">1 · Forest Travel</button>
   <button class="tab-btn" onclick="showTab('riddle', this)">&#128292; Riddle</button>
@@ -114,23 +115,23 @@
     <div class="setup-line"><span class="tok">Wolf &nbsp;·&nbsp; Dire_Wolf &nbsp;·&nbsp; Brown_Bear &nbsp;·&nbsp; Giant_Spider</span></div>
     <div class="setup-line"><span class="tok">Haugbui &nbsp;·&nbsp; Myling &nbsp;·&nbsp; Vaettir</span> <em style="color:#777">(Will-o-Wisp stats, cold dmg)</em></div>
     <div class="setup-line"><span class="tok">Specter</span> <em style="color:#777">(Myling combat fallback)</em></div>
-    <div class="setup-line"><span class="tok">Legate_Corvinus &nbsp;·&nbsp; Guard ×8 &nbsp;·&nbsp; Knight ×1</span> <em style="color:#777">(pursuit, if hostile)</em></div>
-    <div class="setup-line"><span class="tok">Tribune_Lucius &nbsp;·&nbsp; Augur_Cassia &nbsp;·&nbsp; Centurion_Varro</span> <em style="color:#777">(if with party)</em></div>
+    <div class="setup-line"><span class="tok">Guard ×3 &nbsp;·&nbsp; Knight ×1</span> <em style="color:#777">(river escort -- small, unmotivated, Corvinus never present)</em></div>
+    <div class="setup-line"><span class="tok">Tribune_Lucius &nbsp;·&nbsp; Augur_Cassia</span> <em style="color:#777">(with party -- Varro is NOT, see Prologue tab)</em></div>
     <div class="setup-line"><span class="tok">All 5 player tokens</span></div>
   </div>
 </div>
 <div>
   <div class="block">
-    <div class="block-title">Session structure — 2 combats + puzzle + riddle + RP</div>
+    <div class="block-title">Session structure — small tense scenes + puzzle + riddle + RP; one real fight</div>
     <table>
       <tr><th>Scene</th><th>Type</th><th>Notes</th></tr>
       <tr><td class="k">S0 Cold Open</td><td class="v">RP</td><td class="v">Spear glows, influenced NPC found sleepwalking. Seed only.</td></tr>
       <tr><td class="k">S1 Forest Travel</td><td class="v">RP / skill</td><td class="v">d10 events, 3 influence clues to plant.</td></tr>
       <tr><td class="k">S1b Boundary Stone</td><td class="v"><strong>RIDDLE</strong></td><td class="v">Party answers before crossing into Vaettir land.</td></tr>
       <tr><td class="k">S2 Thusnelda</td><td class="v">RP</td><td class="v">Always diplomatic. Give H6 on Persuasion 14.</td></tr>
-      <tr><td class="k">S3 River Crossing</td><td class="v"><strong>COMBAT 1</strong></td><td class="v">Pursuit force arrives mid-crossing. Diplomatic out: Intimidation 14.</td></tr>
-      <tr><td class="k">S3b Farbog</td><td class="v"><strong>COMBAT 2</strong> + <strong>PUZZLE</strong></td><td class="v">Vaettir always triggered. Puzzle at Watching Post (50m off path).</td></tr>
-      <tr><td class="k">S4 Sacred Grove</td><td class="v">RP + skill challenge</td><td class="v">Sacrifice, influenced NPC crisis, Mars arrives.</td></tr>
+      <tr><td class="k">S3 River Crossing</td><td class="v">Small skirmish, likely talked down</td><td class="v">4-man escort, soft orders, not really trying. Read the tells — see tab.</td></tr>
+      <tr><td class="k">S3b Farbog</td><td class="v">RP/skill + <strong>PUZZLE</strong> + conditional fight</td><td class="v">Vaettir fight only at 2+ disrespect. Puzzle at Watching Post (50m off path).</td></tr>
+      <tr><td class="k">S4 Sacred Grove</td><td class="v"><strong>THE session's one real fight</strong></td><td class="v">Sacrifice, influenced NPC crisis, Mars arrives.</td></tr>
     </table>
   </div>
   <div class="block">
@@ -155,6 +156,50 @@
     <div class="setup-line"><strong>H7 — MARS VIDET OMNIA:</strong> Give at Scene 0 cold open. Rough tea-stained paper, deep cuts for Latin, fingernail-thin second line. Tear one edge.</div>
     <div class="setup-line"><strong>H6 — Thusnelda's Map:</strong> Hold for Scene 2 success. Hand-drawn, wavering rivers, smudged 4th river, crossed spears over grove. Never use a ruler.</div>
   </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ PROLOGUE: THE GATE ═══ -->
+<div id="tab-prologue" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title" style="color:#d4884a">This resumes an IN-PROGRESS fight -- don't re-stage the raid</div>
+    <div class="note" style="border-color:#d4884a">Varro is not a villain who turned. His family has carried the shame of Varus's three lost legions in this exact forest for six generations -- he was already primed to see a second Teutoburg coming before the spear ever touched him. Its corruption agreed with a fear he already had. Play him as a good man losing a fight he never told anyone he was having. Full lore: CAMPAIGN_LOG.md.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Recap (read or paraphrase)</div>
+    <div class="ra">"The gate stands open. Varro stands in it, gladius drawn, blood on his hands that isn't his own -- the scout he killed lies past him, half in the mud. Ursula is already on him. Whatever the rest of the party was doing when the raid began, this is what's in front of them now."</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Varro, corrupted -- AC 17, HP 58</div>
+    <table>
+      <tr><th>Attack</th><th>To hit / dmg</th></tr>
+      <tr><td class="k">Gladius</td><td class="v">+5, 1d8+3 slashing</td></tr>
+      <tr><td class="k">Pilum (thrown)</td><td class="v">standard stat block</td></tr>
+    </table>
+    <div class="note">"The god's hand steadies him": 1/round, reroll one failed attack or save. He will not flee or surrender to force alone -- only to option 3 below.</div>
+  </div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Three ways this ends</div>
+    <table>
+      <tr><th>Outcome</th><th>What happens</th></tr>
+      <tr><td class="k">Killed / dropped to 0</td><td class="v">No begging. Last words, quiet: "Tell them I did this for Rome." Believes it to the end.</td></tr>
+      <tr><td class="k">Captured / surrenders</td><td class="v">Goes without further violence once clearly beaten. Says nothing useful under guard -- not lying, just doesn't have the words.</td></tr>
+      <tr><td class="k">DC 16 Insight/Persuasion (group, 1/round)</td><td class="v">Name what he's actually afraid of (Varus, the lost legions, this forest) not "treason." Success: he drops the gladius -- "I can still hear it. Get it away from all of us." Survives, stays behind, relieved of duty.</td></tr>
+    </table>
+    <div class="warn" style="font-size:0.82em">Whichever ending: Varro does NOT travel with the party into the forest. Any later scene assuming his presence has already been patched -- flag it if you spot one that wasn't.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Lucius takes command</div>
+    <div class="ra">"Centurion Varro's command is suspended, effective now. I am assuming authority over this fort's garrison until the Legate's standing is reviewed. My orders from Rome are unambiguous: the weapon is recovered property of the Imperial military authority, and it will be returned. I am not interested in your opinion of that order. I am informing you of it."</div>
+    <div class="note">He carries a small locked box, does not set it down, does not explain it. Asked directly: "That is not fort business." Play him arrogant and controlled, not cruel -- he's performing certainty he doesn't fully have.</div>
+    <div class="note" style="border-color:#5a5aaa">He travels WITH the party from here on (delegates the fort to a subordinate) -- doesn't trust the spear to anyone else. This is why every later Lucius scene in this chapter still holds.</div>
+  </div>
+  <div class="ends">Party departs for the forest with a fresh, unresolved wound. → Scene 0.</div>
 </div>
 </div>
 </div>
@@ -325,31 +370,38 @@
 <div class="grid2">
 <div>
   <div class="block">
-    <div class="block-title">Setup — River <span style="color:#d44;font-size:0.85em">[COMBAT 1 — always triggers]</span></div>
+    <div class="block-title">Setup — River <span style="color:#c8a84b;font-size:0.85em">[small tense scene, not a battle]</span></div>
     <div class="setup-line"><span class="lbl">Map:</span> <span class="file">RiverCrossing</span> or <span class="file">RiverCrossingVol2</span></div>
-    <div class="setup-line"><span class="lbl">Pursuit tokens:</span> <span class="tok">Guard ×8, Knight ×1</span> (+ <span class="tok">Legate_Corvinus</span> if present)</div>
-    <div class="note">Varro will NOT fight his own men. He steps aside. The centurion recognizes him. That hesitation may be all the time needed.</div>
-    <div class="note" style="border-color:#5a5aaa">Diplomatic out: Intimidation 14 (centurion-rank PC) = 5+ holds the line. No doc = DC 18 Deception. Both options valid but hard.</div>
+    <div class="setup-line"><span class="lbl">Pursuit tokens:</span> <span class="tok">Guard ×3, Knight ×1</span> — a small escort, not Corvinus's main force. He is never here in person.</div>
+    <div class="note" style="border-color:#5a5aaa">Corvinus wants the spear destroyed too and can't say so (see NPCs tab). This escort exists so he's <em>seen</em> pursuing — vague orders, no real motivation. Play it as a read, not a fight.</div>
   </div>
   <div class="block">
     <div class="block-title">The River — 90 ft wide, spring melt</div>
     <table>
       <tr><th>Method</th><th>DC</th><th>Risk</th></tr>
-      <tr><td class="k">Swim (Athletics)</td><td class="v">13</td><td class="v">Metal armor + fall: STR 14 or swept 20 ft downstream</td></tr>
-      <tr><td class="k">Fallen log (Acrobatics)</td><td class="v">11</td><td class="v">Knocked off: Athletics 13 or swept</td></tr>
-      <tr><td class="k">Rope (group Athletics)</td><td class="v">10</td><td class="v">Takes time — Romans may arrive mid-crossing</td></tr>
+      <tr><td class="k">Swim (Str/Athletics)</td><td class="v">13</td><td class="v">Metal armor + fall: STR save 14 or swept 20 ft downstream</td></tr>
+      <tr><td class="k">Fallen log (Dex/Acrobatics)</td><td class="v">11</td><td class="v">Knocked off: Athletics 13 or swept</td></tr>
+      <tr><td class="k">Rope (group Str/Athletics)</td><td class="v">10</td><td class="v">Takes time — escort may arrive mid-crossing</td></tr>
     </table>
   </div>
   <div class="block">
-    <div class="block-title">Pursuit — arrives mid-crossing</div>
-    <div style="font-size:0.83em">Split-party set piece: half on far bank, half still crossing. Ranged combat across water (half cover for anyone behind banks).</div>
+    <div class="block-title">Three tells (no roll needed to notice; Insight 11 passive to read what they add up to)</div>
+    <ul style="font-size:0.82em">
+      <li>Four men total, not a column — small for a "Legate's advance force"</li>
+      <li>They made no effort to approach quietly — heard coming well up the trail</li>
+      <li>Shouted order is "Halt and surrender the item" — not a kill order</li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">Pursuit — arrives mid-crossing, resolves fast either way</div>
     <table>
       <tr><th>Option</th><th>DC</th><th>Result</th></tr>
-      <tr><td class="k">Order stand-down (centurion-rank PC, Intimidation)</td><td class="v">14</td><td class="v">Knight hesitates. On 5+: signals men to hold. Varro one sentence seals or breaks it.</td></tr>
-      <tr><td class="k">Claim sanction (Deception + document)</td><td class="v">15</td><td class="v">18 without document. Varro's presence shifts outcome.</td></tr>
-      <tr><td class="k">Destroy the log</td><td class="v">Action</td><td class="v">Severs pursuit — anyone near-bank is cut off from the party.</td></tr>
+      <tr><td class="k">Order stand-down (centurion-rank PC, Cha/Intimidation)</td><td class="v">14</td><td class="v">Centurion hesitates, holds his men. Doesn't want this fight either.</td></tr>
+      <tr><td class="k">Point out the orders were never a kill order (Cha/Persuasion)</td><td class="v">12</td><td class="v">He takes the out gladly — calls it a "tactical withdrawal."</td></tr>
+      <tr><td class="k">Political standing (Aasimar Cleric's name, or built standing with Corvinus)</td><td class="v">—</td><td class="v">Centurion treats it as above his pay grade, reports crossing as "unavoidable."</td></tr>
+      <tr><td class="k">Claim sanction (Deception + document)</td><td class="v">15</td><td class="v">18 without document.</td></tr>
     </table>
-    <div class="note">The legionaries are following orders. They've committed no crime. They have families. Let this be felt.</div>
+    <div class="note">If it comes to blows: 1-2 rounds, not a grind. After the first drop or solid hit, the Centurion calls it: "Enough. Let them go." He was looking for permission to stop.</div>
   </div>
   <div class="block">
     <div class="block-title">Farbog — switch maps when ground turns soft</div>
@@ -373,9 +425,9 @@
     <strong>Religion 15 (active, 1 min):</strong> Two traditions active — one old/rooted, one hot/angry. Mars has been here.<br>
     <strong>Bog valerian here</strong> (pale purple, beside water channel). Nature 13 to identify. Gathering: leave path, DEX 11 or sink to waist. <strong>S4 payoff:</strong> Cassia's ward compound (2d8 HP + remove 1 exhaustion, 3 uses).</div>
 
-    <div class="phase-hdr">C: HOSTILE VÆTTIR <span style="color:#d44">[COMBAT 2 — always runs]</span></div>
+    <div class="phase-hdr">C: HOSTILE VÆTTIR <span style="color:#c8a84b">[conditional — only if 2+ disrespect]</span></div>
     <div style="font-size:0.83em">Will-o-Wisp stat blocks (CR 2), modified: don't flee when damaged, can't be Turned, cold damage not lightning.<br>
-    <strong>When:</strong> Always triggered — the party has crossed into Vættir land. Disrespect count determines <em>how many</em> lights appear (2+ triggers = full encounter; fewer = warning group of 3 that can still be appeased).<br>
+    <strong>When:</strong> Only runs at 2+ disrespect triggers (see tracker below). At 0-1 triggers, skip this entirely — the bog lets them pass.<br>
     <strong>Dispersal (diplomatic out):</strong> Every party member drops one item of value into water channels simultaneously. DC 10 Religion (group) to coordinate before they reach the path.<br>
     <strong>Thusnelda:</strong> "Into the water. Now. All of you."<br>
     <span class="warn">Fail: +1 Vættir per round. Can't outrun them in the bog.</span></div>
