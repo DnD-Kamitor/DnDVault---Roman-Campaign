@@ -285,6 +285,65 @@ content. Update this entry with what actually happens once played.
 
 ---
 
+## What Sessions 3, 4, and 5 need to reflect
+
+The story work done this session (Vercingetorix at Alesia, Caesar's corruption, Pompey,
+Corvinus's real arc, the cult faction, Lucius's real position) changes what each
+remaining session needs to carry. This is the design pass before the SCRUM breakdown —
+read this before writing any story or epic content for these three sessions.
+
+**Session 3 (Through the Dark Forest) — mostly built, needs alignment, not a rewrite.**
+The Prologue, river crossing, and OGAS updates from today already carry Varro's real
+motive, Lucius's settled command, and Corvinus's real arc. Still open:
+- Thusnelda's dialogue about the seal ("my teacher's teacher sealed it") can carry more
+  weight now that the seal's actual history (Alesia, the assassins, six generations of
+  guardianship) is settled — she doesn't need to explain all of it, but a line or two
+  should land differently to a GM who knows what she's actually guarding.
+- Vercingetorix's OGAS in chapter3.qmd's DM Notes still says "he is dying" without the
+  fuller weight of what dying would mean for him now. Update it to match
+  CAMPAIGN_LOG.md's telling once the Session 3 epic starts.
+- Do not reveal Vercingetorix's true nature (bound since 46 BC, possibly the man
+  himself) to the players this session. It is not yet earned. Session 3 is about a
+  party member's near-fall, not a history lesson.
+
+**Session 4 (The God's Demand) — needs the cult faction to actually show up.**
+Right now the siege is generic Germanic warbands plus Brutus's sleeper agents. It needs:
+- The two chieftains (already established as bribed by Brutus) present as active,
+  distinct antagonists during the siege, serving what they believe is Mars -- not
+  interchangeable with the rest of the raiders.
+- Some visible sign, scaled to how much blood the session has already spent, that
+  something worse than ordinary warfare is being fed by this violence -- real D&D
+  fiends, not a full monster-manual dump, appearing only as the fighting gets worse.
+  This should read as an escalation the table notices, not a fixed encounter slot.
+- Corvinus's real position (wants it destroyed, can't say so) needs at least one scene
+  where it's testable -- a moment where the party can act on trusting him or not,
+  informed by what they may have pieced together in Session 3.
+- The new temple/fortress maps downloaded this session (Blood Cult Dungeon, Cultist
+  Cave, Fire Sacrificial Chamber, Castle Core Room, Skeleton Fortress Entrance, Cave
+  Fortress, Snowy Ruined Fortress, Ruined Swamp Fortress -- all in
+  `Maptool/maps/dicegrimorium/`, not yet wired into any build script) are candidates for
+  a cult shrine hidden somewhere in or near the fort. Not wired in yet -- that's Session
+  4 epic work, once this design pass is confirmed.
+
+**Session 5 (The Wrath of Mars) — the three horrible options need mechanical teeth.**
+- The ending (destroy / give to Rome / give back to Mars) currently exists as narrative
+  framing, not a built mechanical choice. It needs the same kind of concrete structure
+  the existing Option A/B/C trial already has, reworked to actually deliver three
+  distinct, weighted costs rather than reskinning the same fight three ways.
+- Vercingetorix's resolution belongs here, if he survives this far: the possibility that
+  destruction is the first time he can actually die since 46 BC is a real emotional
+  payoff and should be reachable in play, not just implied.
+- The Wight-general in the Session 1 vault is the same figure whose weapon this is.
+  Whether that connection surfaces here (a version of him bound into the finale, or a
+  simple line acknowledging the vault and the throne room are the same war) is a design
+  decision for the Session 5 epic, not decided yet.
+- Mars is genuinely Mars -- diminished, corrupted, starved, not an impostor wearing his
+  face. Do not reopen the "something wearing Mars's face" question as a reveal. It can
+  stay a live, unanswered suspicion some NPCs voice, but the campaign does not resolve it
+  into "actually it was someone else."
+
+---
+
 ## How to keep this file updated
 
 1. After every real session, add or update its entry above with what *actually*
