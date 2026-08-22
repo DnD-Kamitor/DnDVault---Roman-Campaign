@@ -76,6 +76,31 @@ buried spear is close to the last direct tribute-line Mars has. The party dug up
 thing keeping a starving war god alive, at the historical moment he had the least other
 war left to draw on.
 
+**Undeath is not a kill-count. It's what happens when the war doesn't end.** Every soul
+the spear or its wielder claimed during the original campaign is still down there, in the
+vault, unable to rest — not because the spear personally murdered each of them centuries
+ago and that's a permanent tax, but because the war they died in was never actually
+*finished*. Peace is what lets the dead lie down. Two hundred years of an unresolved
+war, at this one site, is two hundred years of nothing settling. That's why Session 1's
+vault is a mass grave that never stopped being a battlefield, and it's the mechanism
+Mars can threaten with directly: stop feeding him, and the dead don't get to rest either.
+
+**Not all the Germans want it gone — this is a faction fight on both sides, not
+Rome-vs-Germania.** The two chieftains who organized the Session 2 raid (already
+established: bribed by Brutus, in debt to him) are not simply mercenary opportunists.
+They serve something that presents itself as Mars, or that Mars is using through them —
+a cult faction distinct from and opposed to Thusnelda's and Vercingetorix's actual
+guardianship lineage. **Thusnelda and Vercingetorix's people are still the victims and
+the guardians, unambiguously** — this does not change. But they are not the only
+Germans with a stake in this spear, and the cult faction actively wants it unearthed,
+bloodied, and kept in play, for exactly the opposite reason the guardians want it
+destroyed. Rome has the same split (Corvinus/Varro/Lucius wanting it gone vs. whatever
+faction in Rome still wants "Caesar's lost weapon" recovered) — now Germania does too.
+Whether the cult faction consciously knows they serve Mars, or believe they serve
+something else entirely that Mars is simply wearing, is a live and deliberately
+unresolved question — same as the open question of whether Brutus knows his own goals
+align with Mars's.
+
 ### The three people who independently reached the same terrified conclusion
 
 By the fort, three people arrived — for three completely different reasons — at "this
@@ -167,6 +192,8 @@ of the Varro fight. About to depart for the forest (Session 3) once that resolve
 - Whether Brutus knows his goals align with Mars's, or is being used
 - Whether Vercingetorix's binding can actually be ended by the spear's destruction
 - Varro's ultimate fate (dies / captured / broken free) — resolves at the start of Session 3
+- Whether the two chieftains' cult faction knows it serves Mars, or believes it serves
+  something else Mars is simply wearing
 
 ---
 
