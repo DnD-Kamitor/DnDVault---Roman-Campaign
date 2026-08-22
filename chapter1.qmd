@@ -112,9 +112,11 @@ Maps are in `Maptool/maps/campaign/S1_Blood_and_Omens/` after running `Maptool/m
 
 | Scene | Map file | Use |
 |---|---|---|
-| Descent / shaft head (Scene 2 opening) | `DarkTempleEntrancePublic.jpg` | Sealed stair beneath the principia; the moment before the party descends |
-| All underground rooms (Shield Hall, Flooded Gallery, Bone Chamber, Binding Chamber, Runic Corridor, Altar Chamber) | `DungeonVol2Public.jpg` | Reuse for every vault room — reposition tokens between scenes. The central altar circle works for the Altar Chamber climax. |
-| Scene 4 exterior (above shaft) | Use Fort_Vindolanda folder | Marius Coda and cultists are above ground; use whichever fort exterior map fits |
+| Descent / shaft head (Scene 2 opening) | `DarkTempleEntrancePublic.jpg`, or `vault_s1_overview.html` (custom SVG, DM reference) | Sealed stair beneath the principia; the moment before the party descends |
+| All underground rooms (Shield Hall, Flooded Gallery, Binding Chamber, Runic Corridor) | `DungeonVol2Public.jpg` | Reuse for every vault room without a dedicated battle map — reposition tokens between scenes |
+| Bone Chamber (Scene 2, right branch) | `vault_s1_bone_chamber.html` (custom SVG battle map, preferred) | 2 Ghouls + 1 Ghast encounter |
+| Altar Chamber (Scene 3 climax) | `vault_s1_altar_chamber.html` (custom SVG battle map, preferred) | Wight + 2 Shadows encounter |
+| Scene 4 exterior (above shaft) | `vault_s1_courtyard.html` (custom SVG battle map, preferred), or Fort_Vindolanda folder | Marius Coda and cultists are above ground |
 
 **Vault branching note:** The T-junction and two branches (Shield Hall vs. Flooded Gallery) play best as theater of the mind. Keep DungeonVol2 loaded throughout. Use it on grid for the two fights (Bone Chamber, Altar Chamber) and describe the connecting corridors verbally. Sketch the T-junction on a scrap of paper at the start of Scene 2 and ask players which branch they take first.
 
@@ -1028,6 +1030,8 @@ Varro marks it. He finds the party after Corvinus and Lucius are gone. He looks 
 | **Legate Marcus Aurelius Corvinus** | Control the most powerful military artifact unearthed in a generation. | Secure the spear in his personal custody before Rome or the Senate learns of it. | Use the party as deniable retrievers, silence the augur, craft a "routine excavation" cover story. | Already dispatched a private rider to his patron in Rome; the party is not the first team he sent down. |
 | **Augur Cassia Liviana** | Prevent the divine catastrophe that has haunted her dreams. | Keep the spear below ground or, failing that, keep it out of Corvinus' hands. | Cooperate publicly with Corvinus in the principia; create private doubt in the party whenever Corvinus cannot see her. In Scene 5, when she has run out of options, she drops the cooperative performance entirely and acts openly. She has accepted the risk. | Performed an augury about the party and knows they decide whether Rome burns, but not how. |
 | **Centurion Titus Varro** | Keep his cohort alive and functional as command unravels. | Learn what the spear truly is before the Legate deploys it disastrously. | Place loyal soldiers between Corvinus and the party, stall for time, listen to every faction. | Heard a young legionary whisper "I understand him" during the worker's frenzy; reassigned him and told no one. |
+| **Tribune Lucius Valerius Maximus** | Observe the retrieval and report to Rome -- not to facilitate it. | Determine whether Corvinus can be trusted with what's under the fort. | Arrives mid-briefing with a sealed dispatch, sits uninvited, says nothing to the party, remains through Scene 5. | Cassia has seen him before and isn't surprised. (He answers to Brutus, not the Senate honestly -- do not surface this in Chapter 1; Chapter 2 reveals it.) |
+| **Marius Coda** *(Scene 4, possession-driven rather than personal)* | The spear's compulsion, not his own: reach whoever carries it. | Take the spear from the party or die trying. | Attacks with two gladii, prioritizing the spear-bearer above all else. | Not responsible for this -- stationed nearest the excavation shaft for three days, the longest exposure of any worker, and the spear's aura simply won. |
 
 </details>
 

@@ -209,10 +209,40 @@ citizenship and corruption tracks.
 
 ---
 
-## Backlog (not yet started)
+## Epic 5: Sessions 1-2 Improvement Pass
 
-- **Epic 5: Sessions 1-2 Improvement Pass** — fresh audit pending (lower priority; both
-  already had a dedicated improvement milestone)
+**Why:** Fresh audit of Session 1 and Session 2's deliverables, closing out the backlog.
+Both sessions already had dedicated improvement milestones (21, 22) and Ch1 got a full
+table-readiness audit at Milestone 81 -- expected (and confirmed) to be the lightest
+pass of the whole backlog.
+
+**Status: DONE** (2026-08-22). Two real, minor findings; one optional judgment call
+taken; one cosmetic item consciously deferred.
+
+### Story 5.1 — Add missing custom SVGs to chapter1.qmd's own map table
+- **Independent / small:** chapter1.qmd's "Maps for This Session" table only cited
+  generic Dice Grimorium JPGs, never the four purpose-built SVGs
+  (`vault_s1_overview/bone_chamber/altar_chamber/courtyard.html`) that
+  `gm_tools/chapter01_maptool.qmd` already correctly names as the preferred maps for
+  their scenes -- a milder version of the Ch4/Ch5 stale-table pattern (incomplete, not
+  actively wrong)
+- **Status: DONE**
+
+### Story 5.2 — Add Tribune Lucius and Marius Coda to chapter1.qmd's OGAS table
+- **Independent:** Lucius has a full card in `chapter01_npcs.html` and appears
+  throughout Ch1 (Scene 1 arrival, Scene 5 reactions) with no OGAS cross-reference in
+  the chapter itself -- same pattern already fixed in Ch3. Marius Coda (Scene 4's
+  corrupted antagonist) is a judgment call, not a clear gap -- he's chapter-local, not a
+  recurring campaign NPC -- but he has real narrative weight and an existing
+  `chapter01_npcs.html` card, so added for consistency.
+- **Status: DONE** — condensed both into chapter1.qmd's existing OGAS table format
+
+### Deferred — S2 folder variable name mismatch
+`Maptool/maps/build_campaign_maps.sh`'s S2 folder variable is still
+`S2_Chieftains_Price` even though the chapter title was corrected campaign-wide to "The
+Tribune's Gambit" earlier in this pass. Purely an internal path/variable name invisible
+to a GM at the table -- consciously left alone rather than risk an incomplete rename
+across the 4 files that reference it for a cosmetic-only fix.
 ## Epic 6: Skill Barrier Format Audit
 
 **Why:** `AGENT_TASK_skill_barrier_audit.md` specs a mechanical DC-header format fix
