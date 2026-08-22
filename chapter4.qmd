@@ -137,18 +137,16 @@ Give during Scene 2 planning. Players use this to decide who is where and where 
 <details>
 <summary><strong>Maps for This Session</strong></summary>
 
-Maps are in `Maptool/maps/campaign/S4_The_Gods_Demand/`. Session 4 splits between the fort under siege and the sacred grove.
+Maps are in `Maptool/maps/campaign/S4_The_Gods_Demand/`. Session 4 splits between the fort under siege and the hidden tunnels beneath the *principia* -- there is no grove scene this session (that was Session 3). See `gm_tools/chapter04_maptool.qmd` for the full scene-by-scene token reference.
 
 | Scene | Map file(s) | Use |
 |---|---|---|
-| Fort siege fighting | `CastleWall`, `BridgeCheckpoint` | Re-use from Session 1; wall fighting, gate breach |
-| Underground escape tunnels | `CaveTunnelsVol3`, `DungeonVol2` | The route out beneath the fort |
-| Forest ritual site approach | `ForestRitualSite`, `ForestWorshippingSite` | Approach to the grove; Germanic sacred ground |
-| Druid circle (outer grove) | `DruidCircle` | The outer ring; the first test |
-| Sacred tree (heart of grove) | `SacredTree` | The grove's center; the sacrifice decision |
-| Grove spirit manifestation | `DryadGrove` | If the grove spirit becomes active; optional combat |
-| Inner shrine | `NatureGoddessTemple` | The choice point — where Mars speaks (same map as the Principia in Fort_Vindolanda; the DM is not looking for two different files here — stone, vaulted, still, it works for both) |
-| Island approach (alternate) | `IslandRuins` | Alternative ritual site if the party takes the water route |
+| Scene 0: Gate breach | `s4_fort_siege.html` (custom SVG, preferred), or `CastleWall`/`BridgeCheckpoint` as fallback | Wall fighting, gate breach, three simultaneous crises |
+| Scenes 1-2: Council and preparation | `saalburg_plan.jpg` (reference only) | No combat; NPC positioning and route planning on the fort floor plan |
+| Scene 3: Tunnels — Sunken Armory | `s4_tunnel_armory.html` | Animated Armor ×4 |
+| Scene 3: Tunnels — Choking Hall | `s4_tunnel_choking_hall.html` | Environmental gas hazard, no combat tokens |
+| Scene 3: Tunnels — Elder Stair | `s4_tunnel_elder_stair.html` | Rockfall trap, Quintus Flavius |
+| Scene 4: Antechamber | `NatureGoddessTemple` | Same map as the Ch1 altar chamber -- intentional callback. No combat; Mars as voice only. |
 
 Fort reference images are in this session folder for any fort scenes.
 

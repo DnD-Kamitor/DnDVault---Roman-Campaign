@@ -248,16 +248,10 @@ mkdir -p "$S"
 # Dice Grimorium maps
 copy_map CastleWall           "$S"
 copy_map BridgeCheckpoint     "$S"
-copy_map CaveTunnelsVol3      "$S"
-copy_map DungeonVol2          "$S"
-copy_map ForestRuins          "$S"
-copy_map ForestLabyrinthRuins "$S"
 copy_map NatureGoddessTemple  "$S"
 
 # Custom SVG battle maps
 copy_svg s4_fort_siege             "$S"  # Scene 0: siege of Fort Vindolanda
-copy_svg s4_sacred_grove           "$S"  # Scene 3: ritual + stone golems (battle)
-copy_svg s4_sacred_grove_overview  "$S"  # Scene 3: sacred grove region overview
 copy_svg s4_tunnel_armory          "$S"  # Scene 3: Sunken Armory (Animated Armor ×4)
 copy_svg s4_tunnel_choking_hall    "$S"  # Scene 3: Choking Hall (gas hazard)
 copy_svg s4_tunnel_elder_stair     "$S"  # Scene 3: Elder Stair (rockfall + Quintus)

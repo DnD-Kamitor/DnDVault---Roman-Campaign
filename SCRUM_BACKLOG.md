@@ -120,13 +120,45 @@ to match, and the cheat card's token lists were synced to match.
 
 ---
 
+## Epic 3: Session 4 Improvement Pass
+
+**Why:** Fresh audit of all 6 Session 4 deliverables. Much cleaner starting point than
+Session 3 -- NPC roster, DC format, cheat card structure, and print-module
+standalone-ness all checked out clean with no work needed.
+
+**Status: DONE** (2026-08-22).
+
+### Story 3.1 — Fix broken script path in chapter04_maptool.qmd
+- Same copy-pasted bug as Ch3's Story 2.1 (`Maptool/build_campaign_maps.sh` instead of
+  `Maptool/maps/build_campaign_maps.sh`)
+- **Status: DONE**
+
+### Story 3.2 — Replace stale "Maps for This Session" table in chapter4.qmd
+- **Independent:** one table, one file
+- **Valuable:** highest-value finding of this epic. chapter4.qmd's own prep section
+  described a forest/grove ritual scene (`ForestRitualSite`, `DruidCircle`, `SacredTree`,
+  `DryadGrove`, `IslandRuins`...) that doesn't exist anywhere in the actual chapter --
+  leftover from an earlier draft before the tunnel sequence (Sunken Armory / Choking Hall
+  / Elder Stair) was built. A GM trusting chapter4.qmd's own table over the correct
+  `gm_tools/chapter04_maptool.qmd` would load entirely the wrong maps for Scene 3.
+- **Testable:** table matches chapter04_maptool.qmd's scene list
+- **Status: DONE** — replaced with the siege / council / 3 tunnel SVGs / antechamber list
+
+### Story 3.3 — Drop dead-weight map copies from build_campaign_maps.sh's S4 block
+- **Independent:** same root cause as 3.2 -- `CaveTunnelsVol3`, `DungeonVol2`,
+  `ForestRuins`, `ForestLabyrinthRuins`, `s4_sacred_grove`, `s4_sacred_grove_overview`
+  (the last two are actually Ch3 grove assets per CLAUDE.md's own map list) were being
+  copied into `S4_The_Gods_Demand/` despite no Session 4 scene using them
+- **Testable:** script still runs clean, S4 folder map count drops accordingly
+- **Status: DONE** — S4 folder went from 22 maps to 15; script verified to still run clean
+
+---
+
 ## Backlog (not yet started)
 
-Future epics, one per remaining session, to be scoped the same way once Session 3 lands:
-
-- **Epic 3: Session 4 Improvement Pass** — fresh audit pending
 - **Epic 4: Session 5 Improvement Pass** — fresh audit pending
 - **Epic 5: Sessions 1-2 Improvement Pass** — fresh audit pending (lower priority; both
   already had a dedicated improvement milestone)
 - **Epic 6: Skill Barrier Format Audit** — `AGENT_TASK_skill_barrier_audit.md` already
-  specs this; covers chapter1-5.qmd, roles.qmd, roman_tactics.qmd (knowledge.qmd is done)
+  specs this; covers chapter1/2/4/5.qmd, roles.qmd, roman_tactics.qmd (knowledge.qmd and
+  chapter3.qmd are done)

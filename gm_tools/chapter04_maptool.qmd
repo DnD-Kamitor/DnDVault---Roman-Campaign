@@ -83,7 +83,7 @@ s4_tunnel_elder_stair.html  — Elder Stair SVG battle map (Scene 3, 14×14 sq, 
 NatureGoddessTemple    — circular stone chamber (Scene 4 antechamber)
 ```
 
-Run `bash Maptool/build_campaign_maps.sh` to copy session tokens into this folder (idempotent).
+Run `bash Maptool/maps/build_campaign_maps.sh` to copy session tokens into this folder (idempotent).
 
 ### The Tunnel Callback
 
