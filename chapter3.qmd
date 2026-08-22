@@ -233,6 +233,8 @@ Insight DC 14 (active: watching them during a specific conversation about the sp
 - They become visibly agitated when someone else touches or moves the spear
 - When asked directly *"Are you alright?"*, there's a micro-pause before they answer
 
+**Clue 2, alternate path:** Hilde, Thusnelda's apprentice (see Scene 2), names the influenced NPC's condition out loud to Thusnelda in Germanic -- quietly, not meant for the party. A character with Germanic language proficiency overhears this exchange and gets the same information Insight DC 14 would have given, no roll required.
+
 **Clue 3: The Spear Reacts**
 If the party examines the spear's wrappings or attempts to read its aura: Arcana DC 13 (passive) or Religion DC 14 (passive):
 - The spear "leans" -- physically tilts -- in the influenced NPC's direction
@@ -274,9 +276,13 @@ Ambush — 12 **Tribal Warriors**, 2 **Scouts** (CR 1/2 each) in the tree line. 
 
 Can be ended diplomatically — drop weapons, use Persuasion DC 14 with any Germanic phrase from the player guide, or demonstrate they're trying to destroy the spear (the scouts recognize it and stop). Vercingetorix appears if combat goes 3+ rounds regardless — he's been following.
 
-**Thusnelda** — arriving with the scouts or separately:
+**Thusnelda** — arriving with the scouts or separately, with two people from the village in tow:
 
 A small, ancient-looking Germanic woman. She carries an oak staff carved with spiraling runes. She smells of pine smoke and something metallic. She looks at the spear and then at the party with the calm gaze of someone who has spent decades looking at hard things.
+
+**Hilde**, her apprentice, a young Cherusci woman, hangs back and watches everything -- this is her first encounter with the spear's corruption and she is not hiding her fascination. She will shadow the party for the rest of Scene 2, asking quiet questions in Germanic to Thusnelda about the influenced NPC by name, not by type. A character with Germanic language proficiency who is paying attention gets Clue 2 for free this way (see Identifying the Influenced Character, above) -- Hilde notices before anyone else does.
+
+**Aldric**, a Germanic man introduced as "one of the village," lingers at the edge of the group and watches too carefully. He is reporting to Senator Brutus, not to Corvinus, and has no idea what the spear actually does -- he was told it is a Roman military asset. Investigation DC 14 (active: noticing how he positions himself to see without being seen) identifies him as something other than a curious local. He leaves before the party departs for the grove -- his information stops here, which is exactly why Brutus's intelligence on this session "ends at the treeline."
 
 > *"God-Killer. Still breathing. I had hoped you would destroy it by now. I see you have not."*
 
@@ -420,7 +426,9 @@ Twenty meters off the path: an offering pole, three meters tall, carved with run
 The military sandal buckle is from one of the four soldiers lost in Session 1. The Cult of Mars has been leaving offerings at Germanic holy sites -- not to the Vættir, but to Mars, in the Germanic style, appropriating local sacred ground to extend his territorial claim. This is investigable but not volunteered. Religion DC 15 (active: spending one minute in contact with the pole and reading its spiritual resonance): two religious traditions are active here. One old, rooted, comfortable. One new, hot, angry. They are not in harmony.
 :::
 
-**Thusnelda's reaction if the party investigates:** *"Someone has been using our holy sites. For something else. I did not know." A long pause. "Mars has been here. Not recently. But he has been here."*
+**Arnulf**, a solitary Cherusci firekeeper who lives at the bog's margin, is here tending the pole when the party arrives -- or arrives shortly after, drawn by their presence. He has been leaving fresh offerings at this site for two months, ever since he found the Roman buckle, specifically to keep the Vættir from noticing the intrusion. He did not tell Thusnelda or anyone else in the village; this has been his private vigil. He will explain this plainly if asked, without shame -- *"The bog does not forgive. It only waits. I was not going to let it wake for a stranger's mistake."*
+
+**Thusnelda's reaction if the party investigates:** *"Someone has been using our holy sites. For something else. I did not know." A long pause -- she looks at Arnulf, who says nothing. "Mars has been here. Not recently. But he has been here."*
 
 **Cassia's herb quest completes here:** Bog valerian -- pale purple blooms, grows only in permanent bogwater -- is visible along the far bank of the water channel beside the pole. This is what she has been watching for since they crossed into the forest.
 
@@ -677,6 +685,18 @@ This window closes at Session 4 if the papers are not signed and returned. Corvi
 - **Goal (this session):** Stop the ritual
 - **Agenda:** Apply pressure through the influenced NPC, through the grove itself, through the confrontation at the end
 - **Secret:** He's been watching this party since Session 1. He respects what he's seen. He won't admit this.
+
+**Tribune Lucius** *(if alive, with the party)*
+- **Objective:** Still, underneath everything, to earn his father Brutus' respect
+- **Goal (this session):** Watch the ritual to the end and decide, privately, whether Cassia and the party are right that the spear has to go
+- **Agenda:** Keeps up a competent, brisk front the whole journey -- gives sound tactical advice, defers to Vercingetorix on terrain, never voices doubt aloud. He does not warn the party that his father sent him, and he does nothing to sabotage the ritual.
+- **Secret:** He already suspects his father was wrong about what the spear is. Watching it destroyed (or fail to be destroyed) at the grove is the moment that suspicion becomes conviction -- see his line at the ritual's end. He has not decided what, if anything, he will do with that conviction once he returns to his father.
+
+**Augur Cassia** *(if present)*
+- **Objective:** Understand what the spear has been doing to the omens, and to her
+- **Goal (this session):** Identify the sacrifice the grove will actually accept -- and privately, decide whether that sacrifice has to be her
+- **Agenda:** Reads every omen honestly, even the ones that point at herself. Completes her bog valerian herb quest at the sacrifice site (Encounter B) without announcing why she needs it. Watches the influenced NPC before anyone tells her who it is -- see Clue 3.
+- **Secret:** She has become increasingly certain the "genuine" sacrifice the grove wants is her own death, and she has not told anyone. Whether she acts on that belief depends entirely on how Scene 5 plays out.
 
 **Senator Gaius Cassius Brutus (off-screen, never present this session)**
 - **Objective:** Same as Session 2 -- prevent the spear from reaching Rome or being publicly resolved

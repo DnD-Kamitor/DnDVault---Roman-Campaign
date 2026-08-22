@@ -11,11 +11,11 @@ Open these maps in MapTool before the session. Switch maps at each scene transit
 | Scene | Map File | Tokens to Place | Notes |
 |---|---|---|---|
 | Scene 0: Cold Open | `s3_forest_path.html` | All PCs, Thusnelda (grey frame — unknown), Influenced NPC with no special marker | Dawn light. Spear props visible. Give Handout 7 now. |
-| Scene 1: Travel | `s3_forest_overview.html` | All PCs, Vercingetorix (if present, grey frame), 3× Wolf, 2× Dire_Wolf | Forest encounters from the d10 travel table. Roll 1 per hour. |
-| Scene 2: Thusnelda's Scouts | `s3_germanic_village.html` | 12× Tribal_Warrior, 2× Scout, Thusnelda, Vercingetorix (if present) | Reveal Thusnelda after ambush ends. Thusnelda frame: grey → gold if alliance secured. |
+| Scene 1: Travel | `s3_forest_overview.html` | All PCs, Vercingetorix (if present, grey frame), Cassia (if present), 3× Wolf, 2× Dire_Wolf | Forest encounters from the d10 travel table. Roll 1 per hour. |
+| Scene 2: Thusnelda's Scouts | `s3_germanic_village.html` | 12× Tribal_Warrior, 2× Scout, Thusnelda, Hilde, Aldric, Vercingetorix (if present), Cassia (if present) | Reveal Thusnelda after ambush ends. Thusnelda frame: grey → gold if alliance secured. Aldric leaves before the party departs for the grove. |
 | Scene 3: River Crossing | `s3_forest_path.html` | All PCs, 1× Knight (Centurion), 6× Legionary_Milites | Place Romans on far bank. Fallen oak = diagonal line across river. |
-| Scene 3b: The Farbog | `s3_farbog_crossing.html` | All PCs, Thusnelda (if guide), 1× Specter (bog spirit, invisible until revealed), 3× Will-o-Wisp | Specter token: keep off-screen until the party ignores it 10+ min. |
-| Scene 4: Sacred Grove | `s4_sacred_grove_overview.html` for arrival orientation, then `s4_sacred_grove.html` for the battle map | All PCs, Thusnelda, 3× Wight placeholder (Stone Golem avatars — Scene 5 only) | Do NOT place golems until Scene 5 triggers. Cover positions: north + south stones. |
+| Scene 3b: The Farbog | `s3_farbog_crossing.html` | All PCs, Thusnelda (if guide), Arnulf (at the sacrifice site), 1× Specter (bog spirit, invisible until revealed), 3× Will-o-Wisp | Specter token: keep off-screen until the party ignores it 10+ min. |
+| Scene 4: Sacred Grove | `s4_sacred_grove_overview.html` for arrival orientation, then `s4_sacred_grove.html` for the battle map | All PCs, Thusnelda | Do NOT place the Scene 5 Stone_Golem tokens yet. Cover positions: north + south stones. |
 | Scene 5: Mars Intervenes | `s4_sacred_grove.html` | 3× Stone_Golem (120 HP each), all PCs | Golems start at altar. Cover positions displace movement by 1 round. |
 
 ### Player Tokens
@@ -35,6 +35,10 @@ Open these maps in MapTool before the session. Switch maps at each scene transit
 |---|---|---|---|
 | Thusnelda | `Maptool/tokens/npcs/named/Thusnelda.rptok` | S2 onward | Grey → gold if trust earned |
 | Vercingetorix | `Maptool/tokens/npcs/named/Vercingetorix_the_Red.rptok` | S2 onward (if alliance) | Gold |
+| Cassia | `Maptool/tokens/npcs/named/Augur_Cassia.rptok` | Throughout, if present | Gold |
+| Aldric | `Maptool/tokens/npcs/named/Aldric_the_Gaul.rptok` | S2 only | Grey |
+| Arnulf | `Maptool/tokens/npcs/named/Arnulf_the_Firekeeper.rptok` | S3b | Gold |
+| Hilde | *(no dedicated token — reuse a generic Acolyte token)* | S2 | Grey |
 | Legate Corvinus | `Maptool/tokens/npcs/named/Legate_Corvinus.rptok` | S3 (off-screen — scout evidence only) | Red |
 
 ### Creature Tokens
@@ -74,4 +78,4 @@ Campaign-specific tokens and maps copy to:
 Maptool/maps/campaign/S3_Through_the_Dark_Forest/
 ```
 
-Run `bash Maptool/build_campaign_maps.sh` to populate (idempotent).
+Run `bash Maptool/maps/build_campaign_maps.sh` to populate (idempotent).

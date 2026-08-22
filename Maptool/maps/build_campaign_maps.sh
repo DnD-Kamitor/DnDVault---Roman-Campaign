@@ -224,7 +224,7 @@ copy_svg s3_forest_path        "$S"  # Scene 1: ambush on the road
 copy_svg s3_germanic_village   "$S"  # Scene 4: Thusnelda's village
 copy_svg s3_farbog_crossing    "$S"  # Scene 3b: Farbog encounter
 
-for slug in Legate_Corvinus Tribune_Lucius Centurion_Varro Vercingetorix_the_Red Thusnelda \
+for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro Vercingetorix_the_Red Thusnelda \
             Titus_Half-Germanic Sigrun_the_Trader Arnulf_the_Firekeeper \
             Edda_the_Spear-Mother Skadi_the_Healer Aldric_the_Gaul; do
   copy_npc "$slug" "$S"

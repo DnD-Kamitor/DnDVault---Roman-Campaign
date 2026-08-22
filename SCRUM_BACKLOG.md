@@ -61,6 +61,11 @@ story holes from `GM_UPGRADE_PLAN.md` (S3→S4 transition, sacrifice tiers, infl
 note) are already implemented — not in scope here. This pass is reconciliation and
 polish, not a rewrite.
 
+**Status: DONE** (2026-08-22). Hilde, Aldric, and Arnulf now appear in `chapter3.qmd`
+Scene 2/3b text (not just as unused `chapter03_npcs.html` cards), Cassia has a full OGAS
+entry + npcs.html card, `chapter03_maptool.qmd` and `build_campaign_maps.sh` were updated
+to match, and the cheat card's token lists were synced to match.
+
 ### Story 2.1 — Fix broken script path in MapTool reference
 - **Independent / Small:** one-line fix
 - **Valuable:** a GM following the reference cold hits a dead path
@@ -105,7 +110,13 @@ polish, not a rewrite.
 - **Estimable:** ~1 hour
 - **Testable:** structural parity with Ch1/Ch2 cheat cards (collapsed contingencies,
   3-sentence story box, scene flow visible without expanding anything)
-- **Status: DONE**
+- **Status: NO CHANGE NEEDED.** Checked Ch1/Ch2/Ch4 for comparison first: all of them
+  use the identical tabbed-SPA pattern (~15 tab buttons, one `.tab-pane.active` visible
+  at a time, zero `<details>` elements, 550-730 lines). This *is* the project's actual
+  one-viewport convention -- each tab is its own scrollable pane, so "no scrolling to see
+  all scenes" already holds structurally. The original audit finding assumed the literal
+  `<details>` wording in CLAUDE.md without cross-checking sibling chapters; rewriting Ch3
+  alone would have made it inconsistent with every other chapter for no real gain.
 
 ---
 
