@@ -432,7 +432,17 @@ confrontation itself. Party is level 7 for this entire session.
   Mars in an arena" structure before writing scene content against it
 - **Testable:** a room-by-room read of s5_mars_vault_overview + s5_mars_vault exists,
   same way Epic 8's maps were read before Session 4 was written
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- both maps and s5_mars_confrontation re-scouted. Findings:
+  the overview shows 5 zones (Divine Arena -> Sunken Armory -> Choking Hall -> Elder Stair
+  -> Antechamber of Mars/Granite Altar); the battle map shows entry corridor -> antechamber
+  -> convergence hall (3-passage choice already baked in: trapped west passage, zombie
+  center, specter east) -> circular sanctum; the confrontation map shows Mars's manifestation
+  staged over 3 rounds (presence-only -> full manifestation on the dais). All three maps'
+  baked-in DM notes are reused, but re-themed: geography now continues DOWN from Chapter 4's
+  Blood Cult Dungeon Core Room (not a fort-ruin entry as the old notes assumed, since Ch4 was
+  fully rewritten this session), and the old "Option A/B/C ritual trial" (contract-destroy /
+  consecrated-strike / corruption-embrace) is retired in favor of the three canonical endings
+  from CAMPAIGN_LOG.md (destroy / give to Rome / give to Mars) -- see Story 9.4
 
 ### Story 9.2 — Vercingetorix's final return
 - **Independent:** one encounter, likely mid-dungeon before the arena
@@ -449,7 +459,20 @@ confrontation itself. Party is level 7 for this entire session.
   this is the campaign's last dungeon before the god himself
 - **Testable:** real Monster Manual stat blocks selected and added to
   scripts/creature_stats.json + npcs/*.json + generated tokens, same pipeline as Epic 8
-- **Status:** not started
+- **Status:** DONE (2026-08-22) -- audited what already exists first: Wight, Shadow, Zombie,
+  Wraith, and Specter (all used by the vault's 3-passage choice and Choking Hall) are already
+  built and tokenized from earlier sessions, no new work needed there. Mars himself already
+  has a full CR20 stat block in creature_stats.json (HP300, AC22, Multiattack x4 Divine Pilum,
+  Legendary Resistance 3/day, Legendary Actions incl. Summon Fallen) -- reused as-is rather
+  than reconciled against the older, now-retired map-note numbers (HP260/Maul of Mars).
+  Built new: **Vercingetorix Bound** (CR11 adapted Death Knight, HP150 AC18) -- his true final
+  form, in npcs/vercingetorix_bound.json + creature_stats.json + generated token. Distinct
+  from the existing npcs/vercingetorix.json (his living-appearing CR5 gladiator sheet used in
+  Sessions 2-3, intentionally left untouched -- the party isn't meant to know yet). Key traits:
+  Relentless (only radiant damage or a Belatucadrus-consecrated weapon prevents him dropping
+  to 1 HP instead of 0), and Final Death (his spirit stays lucid for 1 minute after a real
+  killing blow and will answer 3 questions truthfully -- this is the "kill him and speak with
+  the dead" beat)
 
 ### Story 9.4 — Build the three horrible options with real mechanical teeth
 - **Independent:** the campaign's actual thesis scene
@@ -475,7 +498,17 @@ confrontation itself. Party is level 7 for this entire session.
 - **Valuable:** he's the same figure whose weapon this is; leaving the connection
   entirely unaddressed wastes a strong callback
 - **Testable:** a decision is made and documented, whichever way it goes
-- **Status:** not started -- decision not yet made
+- **Status:** DONE (2026-08-22) -- decision: the Session 1 Wight (the general who bound
+  himself to guard the vault, per CAMPAIGN_LOG.md) does not physically relocate to Session
+  5's separate vault. Instead his fate branches on what actually happened at the table in
+  Session 1: if the party spared him (the communication check succeeded and they backed off,
+  or otherwise left him intact), his spirit answers one last time when the spear's fate is
+  finally decided in the Antechamber of Mars -- a brief spectral appearance that offers one
+  piece of guidance on the three endings and is finally released from his three-century oath
+  the moment the spear is destroyed or given away. If he was destroyed in Session 1, this
+  beat is simply absent -- a real consequence of that choice, not a gap to paper over. Written
+  as a GM-facing branch table in chapter5.qmd, keyed to the actual Session 1 outcome rather
+  than assumed
 
 ### Story 9.7 — Guard against reopening "who is really behind Mars"
 - **Independent:** a consistency check, not new content

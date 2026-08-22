@@ -1,0 +1,49 @@
+{
+  "name": "Vercingetorix Bound",
+  "creature_type": "Undead",
+  "cr": "11",
+  "size": "Medium",
+  "alignment": "Neutral Evil (unwilling)",
+  "hp": 150,
+  "hp_formula": "20d8+60",
+  "ac": 18,
+  "ac_note": "ancient corroded plate, divine-reinforced",
+  "speed": "30 ft.",
+  "ability_scores": {
+    "STR": 20,
+    "DEX": 12,
+    "CON": 18,
+    "INT": 13,
+    "WIS": 15,
+    "CHA": 18
+  },
+  "saving_throw_proficiencies": [
+    "STR",
+    "CON",
+    "WIS",
+    "CHA"
+  ],
+  "skill_proficiencies": [
+    "Perception",
+    "Intimidation"
+  ],
+  "skill_overrides": {
+    "Perception": 6,
+    "Intimidation": 8
+  },
+  "resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "immunities": "poison",
+  "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
+  "senses": "Darkvision 120 ft., Passive Perception 16",
+  "languages": "Gaulish, Latin, understands Germanic but rarely speaks it",
+  "macro_file": "",
+  "token_color": "#6b1414",
+  "portrait_file": "portraits/viktor_vasnetsov1.png",
+  "notes": "This is his true and final form -- reveal only once the party has earned it. CR 11, adapted Death Knight chassis. His full history (Alesia, Caesar, the spear) only comes out through the Final Death trait, not before.",
+  "gm_notes": "Session 5 -- his last stand, positioned at the Convergence Hall or just before the Antechamber of Mars. He was put down at the fort in Session 3 but the spear would not let him stay down. This time it can be permanent, if the killing blow is radiant or from a Belatucadrus-consecrated weapon. Do not let the fight end on a whimper: if Relentless triggers, say so out loud and let the party feel it. When he finally goes down for real, give the Final Death trait its full weight -- this is the emotional peak the whole Vercingetorix thread has been building toward.",
+  "objective": "End the war he has been fighting since 52 BC.",
+  "goal": "Fall in a way that finally counts.",
+  "agenda": "Whatever Mars commands, until commanded to stop.",
+  "secret": "He is Vercingetorix. He has known it the entire time. He has simply had no one to tell.",
+  "session": 5
+}
