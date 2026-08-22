@@ -67,6 +67,7 @@ chapter5.qmd        ← Session 5: The Wrath of Mars
 appendix.qmd        ← Quick reference, stat blocks, handouts 1-11
 images/             ← All local image assets (downloaded from Wikimedia Commons)
 handouts/           ← Rendered HTML handouts (one per appendix handout, print-ready)
+handouts/pdf/       ← Auto-generated PDFs, one per handout (do not hand-edit, see below)
 gm_tools/           ← GM session reference cards (one per session, browser-tab format)
 audio/              ← Ambient audio guide HTML page (audio/index.html)
 Maptool/            ← MapTool VTT standalone install (see Milestone 67)
@@ -409,6 +410,25 @@ Do NOT use Chromium headless — it produces an all-white PNG on this system. Do
 - Room number circles (gold border, dark fill, number only)
 - Compass rose and scale bar
 - NO text labels, NO encounter markers, NO DM secrets in the SVG
+
+---
+
+## Handout PDF Generation
+
+`scripts/generate_handout_pdfs.py` renders every `handouts/handout_*.html` and
+`handouts/s2_*.html` file to a PDF in `handouts/pdf/`, using Playwright/Chromium. Each
+handout is a physical prop at its own intentional width (a torn note, a small card, a
+scroll) — the script measures each handout's actual rendered content (under `print`
+media, not `screen` media — several handouts reflow under `@media print`) and sizes the
+PDF page to match exactly, so the printed page is never a narrow strip on an otherwise
+blank A4 sheet. Do not use `wkhtmltopdf` for this — its CSS support is too dated for
+these handouts' layouts and was the original source of the strip bug.
+
+This runs automatically via `.github/workflows/handout-pdfs.yml` on every push that
+touches a handout file, committing the regenerated PDFs back to `handouts/pdf/`. Do not
+hand-edit files in `handouts/pdf/` — they will be overwritten on the next handout
+change. To run it locally: `pip install playwright && playwright install chromium &&
+python3 scripts/generate_handout_pdfs.py`.
 
 ---
 

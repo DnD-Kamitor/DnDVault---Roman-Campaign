@@ -1,0 +1,42 @@
+on:
+  push:
+    branches: main
+    paths:
+      - "handouts/handout_*.html"
+      - "handouts/s2_*.html"
+      - "scripts/generate_handout_pdfs.py"
+  workflow_dispatch:
+
+name: Generate Handout PDFs
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Generate PDFs
+        run: python3 scripts/generate_handout_pdfs.py
+
+      - name: Commit regenerated PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add handouts/pdf/
+          git diff --cached --quiet && echo "No PDF changes" && exit 0
+          git commit -m "[Auto] Regenerate handout PDFs"
+          git push
