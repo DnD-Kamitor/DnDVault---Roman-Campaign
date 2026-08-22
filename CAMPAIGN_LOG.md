@@ -8,71 +8,163 @@ the script, **this file is the source of truth going forward**, not the chapter 
 Update this after every real session, before prepping the next one. This file existing
 is the fix for what happened on 2026-08-22: a major table-level plot development
 (Varro's betrayal, Lucius's takeover) had no written record anywhere, and had to be
-reconstructed from memory under time pressure the night before a session.
+reconstructed from scratch, in conversation, the night before a session.
+
+---
+
+## THE REAL STORY (locked 2026-08-22 — supersedes any conflicting chapter text)
+
+### The origin, 200 years ago
+
+During Caesar's campaigns, a legate facing annihilation against a Germanic coalition
+made a pact with Mars in the field. Mars answered: a spear granting unstoppable martial
+power. The price was never spoken aloud — every man that legate killed with it stopped
+being dead in any way that let him rest. His unbroken campaign of slaughter fed directly
+into the momentum that let Caesar's faction end the Republic and found the Empire. The
+legate himself did not remain a man. Bound by his own weapon's hunger, he became what
+the party found guarding the vault in Session 1 — **the Wight is the general.**
+
+Rome buried the whole affair, literally, under what's now Vindolanda, because an empire
+doesn't commemorate its own atrocities. It was the ancestors of the people that campaign
+was committed against — Thusnelda's and Vercingetorix's lineage, the actual victims —
+who did the work of sealing it, and have carried that duty for six generations since.
+*OTHALAN* (ancestral inheritance) is the rune on the seal for a reason.
+
+### What Mars actually wants
+
+Mars is not pro-German or anti-Rome. **He is pro-war, full stop.** The spear is a direct
+personal tribute line — every death it causes feeds him specifically, not "Rome's
+glory" in the abstract. He is completely indifferent to who wins. Roman conquest feeds
+him. A burning fort feeds him. A terrified centurion's massacre feeds him. His only real
+enemy is destruction — the one outcome that cuts off his supply permanently. He works
+through whoever's fear or love or ambition the situation hands him; he doesn't need
+allies, only unresolved bloodshed.
+
+**Why now, specifically:** the Pax Romana has starved him for nearly two centuries.
+Since Augustus, Rome has consolidated instead of conquered. Marcus Aurelius — 175 AD,
+the campaign's setting — is a famously reluctant soldier-emperor presiding over almost
+the only real war left in the empire (the Marcomannic Wars on this exact frontier). This
+buried spear is close to the last direct tribute-line Mars has. The party dug up the one
+thing keeping a starving war god alive, at the historical moment he had the least other
+war left to draw on.
+
+### The three people who independently reached the same terrified conclusion
+
+By the fort, three people arrived — for three completely different reasons — at "this
+must not go to Rome":
+
+- **Legate Corvinus** — cold political calculation. Already established in his OGAS.
+- **Centurion Varro** — his family carries the shame of Varus's three lost legions, in
+  this exact forest, six generations back. He was already primed to see a second
+  Teutoburg coming before the spear ever touched him. Its corruption didn't have to
+  invent a fear — it just had to agree with the one he already carried, until it
+  justified opening a gate and killing a scout. He believed, genuinely, that this was
+  for Rome. Ursula fought him at the gate; the outcome is Session 3's first order of
+  business.
+- **Tribune Lucius** — as a boy, fostered for a time among an allied Germanic tribe (a
+  real Roman hostage-exchange practice) — the Arminius shape, not his father's agent.
+  He returned Roman on the outside, never fully on the inside. He won't touch the spear
+  because he already knows, from that childhood, what it is. His real orders from Rome
+  say bring it back (Rome has wanted this since Session 1 — Corvinus's rider, the
+  "weapon has been found" report). His real conviction, formed somewhere his father
+  Brutus never knew about, says it must never leave. **The lockbox is personal, not
+  political** — proof of who fostered him, not sealed orders. Contents deliberately left
+  undecided; reveal in play.
+
+**Senator Brutus** wants the same outcome (spear not reaching Rome) for a fourth, purely
+human, political reason — fear of what an Emperor with this weapon means for the
+Senate's power. Whether he knows his goal happens to align with Mars's own preference,
+or is being used by the same force he thinks he's manipulating, is a deliberately open
+question. Not resolved. Don't resolve it prematurely.
+
+### Vercingetorix is bound, not simply dying
+
+He is not an aging warlord with a terminal illness. Two hundred years ago, the Germanic
+coalition's war-leader didn't die when his side lost to the cursed legate — something in
+him refused to stop fighting a war that was already lost, the mirror image of what
+happened to the Roman general. Where the legate became a Wight chained to *guarding* the
+spear, this man became something chained to *opposing* Rome, generation after
+generation, under different names, unable to actually die until the war is over. **The
+attack on the fort in Session 2 was not a betrayal of an alliance — it was the latest
+iteration of a war that has never ended for him.** Something about the party — mercy
+shown, how they handled the spear, a moment of respect — broke through enough that he
+stopped, seeding the alliance already written from Session 2 onward. "He is dying. This
+is his final campaign. He hasn't told anyone" now means: he is hoping, for the first
+time in longer than any living person would believe, that this is finally the campaign
+where it ends — one way or another. Destruction might be the first time he's actually
+allowed to die.
+
+**Three mirrors, one war, two hundred years:** the general (Wight, bound to guard),
+Vercingetorix (bound to oppose), and now Varro (the newest casualty) are all still
+fighting the same war the spear started. The party is walking into the middle of it,
+not starting something new.
+
+### The ending: three horrible options, not one good one
+
+By Session 5, the real choice is:
+1. **Destroy it completely** — ends the cycle, but the unmaking ritual takes what the
+   original binding took: someone gives up their rest, permanently.
+2. **Let Rome have it** — the crisis ends today, people the party cares about live, and
+   someday this happens again to somebody else's ancestors.
+3. **Give it back to Mars** — no more sacrifice demanded of anyone at this table today,
+   and the god who started this walks away vindicated, free to do it again.
+
+No option saves everyone. That is the point.
 
 ---
 
 ## Current State (read this first, before prepping any session)
 
-**Party:** Level 5-6 (per chapter escalation arc), five core PCs (Artificer, Druid,
-Bard, Cleric, and a Barbarian among the original five — check [[project_player_characters]]
-memory for full builds) plus Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3).
+**Party:** Level 5-6, five core PCs (Artificer, Druid, Bard, Cleric, and a Barbarian
+among the original five) plus Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3).
 
-**Where they are:** At Fort Vindolanda, immediately after Session 2's raid. About to
-depart for the forest (Session 3) once the Session 2 cliffhanger resolves.
+**Where they are:** Fort Vindolanda, immediately after Session 2's raid, mid-resolution
+of the Varro fight. About to depart for the forest (Session 3) once that resolves.
 
-**Key NPC status (as of end of Session 2 / start of Session 3):**
+**Key NPC status:**
 
 | NPC | Status | Notes |
 |---|---|---|
-| Legate Corvinus | Alive, authority damaged | Blamed/discredited by the security failure that let Varro open the gate. Exact fate/standing TBD at the table. |
-| Centurion Varro | **Corrupted — mid-fight with Ursula** | Opened a fort gate during the raid. Was the party's most trusted ally throughout Sessions 1-2 and in the written Ch3-5 script. Working theory (not yet confirmed at the table): corrupted via a spear fragment smuggled in by Brutus's agent, not a willing traitor. **Outcome of the fight is the first thing Session 3 needs to resolve.** |
-| Tribune Lucius | **Took command of the fort** | Arrived suspicious/arrogant/secretive (consistent with his established Ch1 introduction). Now in an authority role following Varro's fall and Corvinus's damaged standing. Carries a locked box — contents unknown, currently theorized to be a spear fragment tied to Brutus's Session-5 "Plan B" ritual, seeded three sessions early. |
-| Augur Cassia | Per script, alive/present | No deviation reported yet. |
-| Vercingetorix | Per script | No deviation reported yet. |
-| Senator Brutus | Off-screen, never appears | Working theory: escalated from "one embedded sleeper agent" (Quintus Flavius, burned in S2) to actively corrupting fort command via Varro, to install his son Lucius. Not yet confirmed to the players. |
-| Quintus Flavius | Per script (fled, hiding, possible Session 4 contact) | Possible connection to Varro's corruption (carried a spear splinter after S2) — theory, not yet confirmed at the table. |
+| Legate Corvinus | Alive, authority damaged | Discredited by the security failure. Already secretly wants the spear destroyed (established in his existing OGAS) — separate, human, political reasoning from Mars's or Varro's. |
+| Centurion Varro | **Corrupted — mid-fight with Ursula at the gate** | Opened the gate, killed a scout, declared "I did this for Rome." Corruption source: his own inherited Teutoburg-legacy terror, amplified by the spear, not an external Brutus mechanism. **Resolving this fight is Session 3's first scene.** |
+| Tribune Lucius | Took command of the fort | Arminius-shaped: fostered among a Germanic tribe as a boy, divided loyalty, won't touch the spear. Real orders from Rome (bring it back) conflict with his real private conviction (it must never leave). Guards a personal locked box — contents undecided, reveal in play. Not his father's agent; possibly not even aware of his own full position yet. |
+| Augur Cassia | Per script, alive/present | No deviation reported. |
+| Vercingetorix | Ally (post-raid) | **Led the Session 2 attack on the fort** — not a betrayal of a prior alliance; this was the latest iteration of a war he's been bound to fight for two centuries, mirroring the Wight. Something in the party's conduct broke through and stopped him mid-raid, seeding the current alliance. "He is dying, this is his final campaign" now carries the weight of finally being allowed to end, not simple illness. |
+| Senator Brutus | Off-screen, never appears | Wants the spear kept from Rome for political reasons that happen to align with Mars's preference — whether by coincidence or manipulation is deliberately unresolved. |
+| The Wight (Session 1, Altar Chamber) | Encountered, resolved per however that scene played out | **Is the original legate**, bound by his own weapon's hunger 200 years ago. Retroactive depth, does not contradict what already happened at the table. |
+| Mars | Building toward direct confrontation (S4-S5) | Not anti-Rome — pro-war, indifferent to who wins, starved by ~200 years of the Pax Romana, cornered onto this one remaining tribute-line. His only real enemy is destruction. |
 
-**Villain arc as currently understood** (Guy Sclanders framing, see 2026-08-22 discussion):
-Brutus wants control over the spear's outcome without exposing himself; his problem is
-he has no legitimate way to act directly, so he escalates through proxies. Session 2's
-failure (Quintus burned) pushed him to a harder method: using the spear's corrupting
-influence directly on someone unimpeachable (Varro) to engineer a command vacuum his
-son could fill. Still strictly a Never-Present Villain — but his instrument is now
-visible and in command, and his method is starting to entangle with Mars's corruption
-arc, which is a live open question for the party going forward: is Brutus using divine
-power deliberately, or has he grabbed something he doesn't understand?
-
-**Open threads / mysteries to pay off later:**
-- What's actually in Lucius's lockbox (deliberately not pre-decided — reveal in play)
-- Varro's ultimate fate (dies / captured / redeemed) — resolves at the start of Session 3
-- Whether the party ever learns Brutus's role in Varro's corruption
-- Corvinus's standing after the security failure
+**Open threads / mysteries — deliberately not pre-decided:**
+- Contents of Lucius's lockbox (personal, not political — reveal in play)
+- Whether Brutus knows his goals align with Mars's, or is being used
+- Whether Vercingetorix's binding can actually be ended by the spear's destruction
+- Varro's ultimate fate (dies / captured / broken free) — resolves at the start of Session 3
 
 ---
 
 ## Session 1: Blood and Omens
 
-Played per script as far as known — no deviations reported. If this is wrong, correct
-this entry before it's relied on.
+Played per script as far as known, with retroactive depth: the Altar Chamber Wight is
+the cursed legate from 200 years ago, not a generic guardian. Rome received word the
+"weapon" had been found and wants it returned — established from this session onward.
 
 ## Session 2: The Tribune's Gambit
 
-**Major deviation from the written chapter2.qmd:** During the fort raid, Centurion
-Varro opened a gate for the attackers and killed a scout. Ursula engaged him in combat
-at the gate. In the aftermath, Tribune Lucius moved to take command of the fort;
-arrived carrying a locked box he guards closely. This was not in any prior draft of the
-script and was developed live at the table (or in a session/conversation not captured
-anywhere else) — see "Current State" above for the working theory on how it fits the
-existing Brutus/Quintus Flavius/spear-corruption material.
+**Major deviation from the written chapter2.qmd:** The fort was attacked by
+Vercingetorix's forces (the latest iteration of his 200-year-bound war, not a betrayal
+of an existing alliance — see throughline above). During the raid, Centurion Varro
+opened a gate for the attackers and killed a scout, declaring he did it "for Rome."
+Ursula engaged him in combat at the gate — outcome to resolve at the start of Session 3.
+In the aftermath, Tribune Lucius moved to take command of the fort, carrying a locked
+box he guards closely.
 
 Everything else: per script, unless corrected here later.
 
 ## Session 3: Through the Dark Forest — UPCOMING
 
 **Plan:** Cold open resolves the Varro fight and Lucius's takeover as a new prologue
-scene (see chapter3.qmd), then the party departs for the forest per the existing
-(revised) session content. Update this entry with what actually happens once played.
+scene, then the party departs for the forest per the existing (revised) session
+content. Update this entry with what actually happens once played.
 
 ---
 
@@ -80,7 +172,7 @@ scene (see chapter3.qmd), then the party departs for the forest per the existing
 
 1. After every real session, add or update its entry above with what *actually*
    happened — especially anything that deviated from the written chapter.
-2. Update "Current State" at the top so it always reflects the latest status, not
-   session 1's status forever.
+2. Update "Current State" at the top so it always reflects the latest status, not an
+   old session's status forever.
 3. Before prepping the next session, read this file first, then the relevant
    chapter*.qmd — if they conflict, this file wins.
