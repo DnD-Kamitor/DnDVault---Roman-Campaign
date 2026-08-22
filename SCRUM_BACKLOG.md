@@ -44,6 +44,12 @@ GitHub's 100MB hard file limit.
   paths from every commit; force-pushed to `origin/main`. **Any other clone of this repo
   (other machines, other sessions) must delete and re-clone — a `git pull` will not work
   cleanly against rewritten history.**
+- **Result:** `.git` went from 2.3GB to 370MB (also caught `Books/` — 171MB of dead PDF
+  history not in the original Story 1.1 scope, added to the purge). A full pre-rewrite
+  bundle backup was taken before touching history. Still-tracked, still-live campaign
+  files (`5juliromans.cmpgn`, `RomanCampaign.cmpgn`, the `Meleks`/`JMR` variants) were
+  left untouched — ambiguous ownership, real risk of losing live game state, out of
+  scope for an automated pass. Worth a manual look if further shrinkage is wanted.
 
 ---
 
