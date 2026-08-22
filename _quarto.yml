@@ -39,6 +39,7 @@ book:
         - atmosphere.qmd
     - part: "GM's Workbook"
       chapters:
+        - CAMPAIGN_LOG.md
         - gm_intro.qmd
         - gm_session0.qmd
         - skill_framework.qmd
