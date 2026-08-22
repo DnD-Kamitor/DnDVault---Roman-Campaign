@@ -14,21 +14,49 @@ reconstructed from scratch, in conversation, the night before a session.
 
 ## THE REAL STORY (locked 2026-08-22 — supersedes any conflicting chapter text)
 
-### The origin, 200 years ago
+### The origin, 200 years ago — a Ring of Power, not a sword
 
 During Caesar's campaigns, a legate facing annihilation against a Germanic coalition
 made a pact with Mars in the field. Mars answered: a spear granting unstoppable martial
 power. The price was never spoken aloud — every man that legate killed with it stopped
 being dead in any way that let him rest. His unbroken campaign of slaughter fed directly
-into the momentum that let Caesar's faction end the Republic and found the Empire. The
-legate himself did not remain a man. Bound by his own weapon's hunger, he became what
-the party found guarding the vault in Session 1 — **the Wight is the general.**
+into the momentum that let Caesar's faction end the Republic. The legate himself did not
+remain a man. Bound by his own weapon's hunger, he became what the party found guarding
+the vault in Session 1 — **the Wight is the general.**
 
-Rome buried the whole affair, literally, under what's now Vindolanda, because an empire
-doesn't commemorate its own atrocities. It was the ancestors of the people that campaign
-was committed against — Thusnelda's and Vercingetorix's lineage, the actual victims —
-who did the work of sealing it, and have carried that duty for six generations since.
-*OTHALAN* (ancestral inheritance) is the rune on the seal for a reason.
+The spear works like the One Ring, not like a magic sword: it doesn't make anyone evil,
+it takes what's already real in them and pushes it past the point of return. **It did
+this to Caesar himself.** He took it from his legate quietly, a private trophy, and over
+the following years it curdled his genuine ambition and genuine popularity into
+something he tried to hide even as he couldn't stop becoming it — the diadem at the
+Lupercalia, *Dictator Perpetuo*, the rumors of kingship that were politically fatal in a
+Republic founded on throwing a king out. Mars himself is diminished, working through
+whispers and corruption rather than open confrontation, exactly the way Sauron is a
+rumor and a shadow until the Ring comes close to the fire again — that's why he can't
+simply take the spear back himself until Sessions 4-5.
+
+**Caesar's assassins are who buried it, not the Roman state.** In the chaos after the
+Ides of March, Marcus Junius Brutus and Gaius Cassius Longinus recovered the spear from
+his estate and understood, from what they'd watched happen to him, that they hadn't
+just killed an ambitious man — they'd killed a man being consumed by something that
+would do the same to whoever held it next. They couldn't destroy it and couldn't tell
+anyone what it was without unraveling their own justification for the murder. So they
+sent it back to where it started: Germania, into the hands of the same people who
+already had every reason to want it gone. Roman assassins and Germanic guardians,
+quietly agreeing on the one thing they could agree on. It was **Thusnelda's and
+Vercingetorix's lineage** — the actual victims of the legate's original campaign — who
+did the real work of sealing it afterward, and have carried that duty for six
+generations since. *OTHALAN* (ancestral inheritance) marks the seal for a reason.
+
+**Senator Gaius Cassius Brutus's name is not a coincidence.** He is the literal
+descendant of the two men who killed the first Roman this weapon ever ruined, carrying
+that inheritance forward whether he wants it or not — which is why his methods are
+secrecy, misdirection, and sleeper agents, never a Corvinus-style direct confrontation.
+It's the family trade. Rome at large has chased the legend of "Caesar's lost weapon" for
+two centuries — some factions hungry for what it promises, Brutus's line dreading its
+return. **Lucius carries this from two directions at once:** his father's inherited
+assassin's duty, and his own Germanic fostering. Two independent reasons never to let it
+reach Rome, in one divided young man who won't even touch the thing.
 
 ### What Mars actually wants
 
