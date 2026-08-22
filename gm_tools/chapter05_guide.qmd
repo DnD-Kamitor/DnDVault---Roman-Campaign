@@ -3,9 +3,9 @@ title: "GM Session Guide: Chapter 5 (The Wrath of Mars)"
 subtitle: "GM guide — Chapter 5"
 ---
 
-*Dawn breaks silver. Rain halts mid-fall. Every Germanic arrow freezes in the air. The parade ground becomes black sand. A god descends. The campaign ends in one arena.*
+*The crystal-star focus is failing. The party descends past a dead king who has been fighting since 52 BC to a granite altar where a starving god waits. No option at the end saves everyone. That is the point.*
 
-**Level:** 7 (final) · **Players:** 6 (Iris, Julia Jana, Tanit, Rivia, Ursula, Brian) · **Time:** 3–4 hrs · **Type:** Divine Confrontation — Champion/Combat/Debate
+**Level:** 7 (final, no further advancement) · **Players:** 6 (Iris, Julia Jana, Tanit, Rivia, Ursula, Brian) · **Time:** 3-4 hrs · **Type:** Final dungeon crawl + divine confrontation
 
 ---
 
@@ -16,387 +16,134 @@ subtitle: "GM guide — Chapter 5"
 
 | | |
 |---|---|
-| **Central question** | Did what you did honor him — or dishonor Rome? |
-| **What must happen** | (1) Mars arrives and offers three trial options. (2) One option is completed. (3) Mars delivers consequences and departs. All three happen regardless of player choices. |
-| **Player goal** | Survive judgment. Define what the campaign was worth. |
-| **Real stakes** | Who earns the Mark of Mars. Who becomes Chosen. Whether Cassia is free. Whether Corvinus' command survives. What Vercingetorix says last. |
-| **Session peak moment** | Mars says "...You are not wrong." — or lowers his weapon — or nods at a kneeling champion. One moment of divine acknowledgment. |
-| **Closing image** | The sand recedes. Vindolanda breathes. Someone reads a document with an imperial seal. Wolves howl from the north road, then stop. |
+| **Central question** | What do you do with a weapon a god will not stop wanting back? |
+| **What must happen** | (1) The party descends from Chapter 4's Core Room, through Vercingetorix's true final stand, to the Antechamber of Mars. (2) The party decides the spear's fate: destroy it, give it to Rome, or give it back to Mars. All three are real endings. |
+| **Player goal** | Survive the dungeon, learn the true story from Vercingetorix's Final Death, and choose. |
+| **Real stakes** | Whether anyone volunteers to become the vault's new guardian (Destroy). Whether Lucius is trusted enough to take custody (Give to Rome). Whether the party can live with Mars walking away vindicated (Give to Mars). |
+| **Session peak moment** | Vercingetorix's Final Death: for one minute, the man behind two centuries of undeath is lucid, and answers three questions truthfully before dissolving to ash. |
+| **Closing image** | The crystal-star's light drains out behind the party as they climb. By the time they reach the surface, the marsh is just a marsh again. |
 
 **NPCs active this session:**
 
-| NPC | Location at session start | Wants | Fears | Lying about |
-|---|---|---|---|---|
-| Mars | On the throne of weapons | Complete divine judgment via correct ritual form | Nothing | He is not as angry as he appears |
-| Fausta Luperci | Ash (Option A only) | Honor the trial. Be faced with endurance and discipline. | Nothing. She is already dead. | Nothing |
-| Augur Cassia | Witness edge (frozen) | Witness and survive. File the religious commendatio. | That no one will survive the trial | She has already chosen her successor |
-| Centurion Varro | Witness edge (frozen, north) | The party succeeds. He retires after this. | Dying before he makes it to the farm | He filed forty-seven days somewhere important |
-| Legate Corvinus | Witness edge (frozen, south) | Survive with dignity intact | Being seen as irrelevant by a god | He filed a second report this morning — one that doesn't blame the party |
-| Tribune Lucius | Witness edge (frozen, south) | Not be directly addressed by Mars | His silence from Brutus means something is very wrong | He has not received a raven in four days |
-| Vercingetorix | Witness edge (frozen, west) | Understand whether the party's god is worth respecting | That his last act was wasted on Romans | He is dying. He has accepted it. |
-| Senator Brutus | Rome — off-screen | Stop the appeasement. Still does not know the ritual happened. | The party becoming uncountable | He has already drafted the congratulatory letter |
-
-**Continuity Check (update before session):**
-
-| Session | Choice | S5 effect |
-|---|---|---|
-| S1 | Who touched the spear first | That character hears Mars' voice louder. |
-| S2 | Vercingetorix allied or not | Allied: warriors circle arena, advantage on first roll. Not allied: warband ready to strike if Mars displeased. |
-| S3 | Sacrifice sincerity | Genuine: advantage on Option C. Token: disadvantage on Mars' first check. |
-| S3 | Influenced NPC survived | Stands with party on sand. Mars looks at them. Says nothing. |
-| S4 | Who knelt | Those three glow faintly on the sand. Mars expects them to speak first in Option C. |
-| S4 | Corvinus/Lucius betrayals | Corvinus seizure: soldiers arrive hostile if Mars displeased. Lucius sabotage: DCs +2 all session. |
-| Any | Corruption Level 5 PC | Mars uses them as mouthpiece. See DM Notes. |
-
-**Handout delivery:**
-
-| # | Prop name | When | How |
+| NPC | Location at session start | Wants | Role this session |
 |---|---|---|---|
-| 11 | Arena Weapon Cards | Scene 2 start | Place face-down at session start. Flip ALL cards at once when the sand appears. |
-| 10 | Mark of Mars | Scene 4 / end | Place face-up without comment after final resolution. Let silence sit. |
+| Tribune Lucius | Travels with the party (only fort NPC who does) | See the spear's fate decided by the party, not by him | Possible guardian in the Destroy ending; takes custody in the Give-to-Rome ending |
+| Vercingetorix Bound | Waiting at the Convergence Hall | Fall in a way that finally counts | His true final appearance -- Scene 3, resolved permanently |
+| The Session 1 Wight-general | Branch-dependent, Antechamber only | See his three-century oath discharged | One-line cameo, only if spared in Session 1 -- see Scene 4 |
+| Mars | Antechamber, staged manifestation | Reclaim the spear, keep this last tribute-line open | The Divine Antagonist -- his objective and goal collapse into the Decision Point itself |
+| Legate Corvinus / Centurion Varro / Augur Cassia | Fort Vindolanda (stayed behind per Chapter 4) | -- | Epilogue only, no MapTool scene needed |
+
+**What is NOT in this session:** the old fort-arena "divine trial" (Mars descending onto Vindolanda's parade ground, three witness-frozen champion trials, Fausta Luperci, Thusnelda). None of that survives in the campaign's actual ending -- see `CAMPAIGN_LOG.md` for why.
 
 </details>
 
----
-
 <details>
-<summary>📁 The Story So Far</summary>
+<summary>🎬 Scene 0: The Crystal Is Failing</summary>
 
-**Campaign position:** Final session. Five sessions of personal stakes → fort stakes → regional stakes → imperial stakes → divine stakes. Everything resolves here.
+**Read aloud:**
 
-**What happened last session:**
+> *The crystal-star's light does not fade when the demon guarding it falls. It gets worse. Cracks spread across its faces like frost across a window, and each one lets out a note too low to be a sound, felt in the teeth more than heard. The floor of the Core Room is warm. Somewhere below, something that has been sleeping under all this weight is starting to notice you.*
 
-- The spear reached the antechamber of Mars by nightfall
-- Three mortals knelt: one Roman, one Germanic, one tied to the spear
-- Mars said "Tomorrow you stand before me"
-- The siege paused. Germanic horns went silent. Wolves howled then stopped.
-- The party advanced to Level 7
+> *Tribune Lucius says it before anyone else does. "It's not stopping. Whatever this feeds, it just fed it more than it wanted." He is already moving toward the passage that leads down.*
 
-**What players currently believe:**
+The crystal cannot be destroyed at the Core Room -- Chapter 4 already established this. Assume the party goes down toward whatever it feeds, rather than leave it burning above a fort full of people.
 
-- Mars is coming at dawn
-- The trial involves the spear and the ritual from Session 4
-- They may not fully understand the three trial options
-
-**What they don't know yet:**
-
-- Fausta Luperci is a specific person from Roman military history, not a construct
-- Mars has been watching them since Session 1, not just since the grove
-- The witnesses being frozen is intentional — they are the record
-- Corvinus filed a second, exculpatory report this morning
-
-**Open threads coming in:**
-
-- What did each character sacrifice, and did Mars register it as genuine?
-- Is Vercingetorix dying, and did the party know?
-- What happens to Lucius now that Brutus has gone silent?
+**Checks:**
+- DC 13 Intelligence (Arcana) (passive): the cracking pattern matches the shape of divine attention, not structural failure.
+- DC 12 Wisdom (Survival) (active, gauging descent time): the warmth increases at a readable rate. Answer honestly if asked: 3-4 scenes remain before it matters mechanically.
 
 </details>
 
----
-
 <details>
-<summary>📁 The Truth Behind the Session</summary>
+<summary>🎬 Scene 1: The Sunken Armory and the Choking Hall</summary>
 
-**What is actually going on:**
+Load `s5_mars_vault_overview.html`/`.jpg`, zones 2-4.
 
-Mars is not destroying the fort. He never was, not if the ritual was completed sincerely. The threat was real but it was calibrated — he would have called a trial regardless of what happened. The siege was Brutus' operation. Mars merely used the timing.
+> *The passage narrows fast. Old weapon racks line a room that has not seen a living hand in longer than the fort has stood. Half the blades have rusted to lace. The other half are untouched, as if the room itself decided which ones still mattered. Beyond it, a hall barely three men wide, walls scored with symbols the torchlight will not sit still on.*
 
-He has been watching since Session 1. The Wight that spoke. The grove sacrifice. The kneeling in Session 4. He has a full record. The trial is formal confirmation, not discovery. He already knows what he thinks of them.
+- DC 13 Intelligence (Investigation) (active): the untouched weapons carry a small ram's-eye stamp -- Mars's own mark. One can be taken; counts as a Belatucadrus-grade consecrated weapon for this session only if no other was brought earlier. Using a god's own gift against him is a detail Mars notices and mentions in Scene 4.
+- DC 12 Constitution (active, pushing through the Choking Hall): failure deals 1d4 poison damage from the strain. This is a mood beat, not a puzzle.
 
-The three trial options are real choices with real consequences, but all three can succeed. Mars is not trying to destroy the party. He is giving them the opportunity to prove they deserve what they have already become.
-
-**NPC schedules — what happens if players do nothing:**
-
-- Mars waits exactly one minute of table time for a decision, then selects Option B
-- Fausta appears if Option A was chosen; Mars rises if Option B was chosen; witnesses wait for Option C
-- Varro and Cassia unfreeze the moment the trial resolves regardless of how it ends
-- Corvinus remains frozen the longest — processing
+**Optional encounter:** 2 Shadows or 1 Wraith, reused from earlier sessions, only if the table has burned few resources so far. Read the table, don't force it.
 
 </details>
 
----
-
 <details>
-<summary>📁 Scene 0: Cold Open — The Silence Before Judgment</summary>
+<summary>🎬 Scene 2: The Convergence Hall — Three Passages</summary>
 
-**Read aloud immediately — no preamble:**
+Load `s5_mars_vault.html`/`.jpg`, zone 3.
 
-> *The air tastes of brass. Wind grazes your face without moving your cloak. Every sound in the fort muffles except your heartbeat. In the center of the parade ground the sand funnels upward into a throne carved from weapons that have never touched rust. Upon it sits a figure the height of the fort wall, armored in plates that drink light. His eyes resemble cooling lava. He speaks your name without sound and the syllables shake loose dust from the barracks beams.*
->
-> *"MORTALS. I WATCHED. I ARRIVED. NOW YOU ANSWER."*
+> *The hall opens into three throats of stone, all leading the same direction by different roads. Something about the air says only one of these was meant to be walked.*
 
-The party appears at the center of the sand. Arena weapons hang along the perimeter, embedded in air.
-
-**Opening checks — window closes when Mars addresses the party:**
-
-| Check | DC | Active/Passive | Result |
-|---|---|---|---|
-| Perception | 13 | Active: scan perimeter specifically | Spots arena weapons before Mars announces them. One round of planning. |
-| Survival | 12 | Active: reading terrain | Cover positions, building behavior (solid, not ethereal), approach routes. Advantage on first positioning decision in any combat. |
-| Religion | 13 | Passive | Recognizes Armilustrium form. Mars is performing a judgment ritual in a shape Rome understands. Opens +2 to first Persuasion roll in Option C if paired with History DC 14. |
-| Nature | 12 | Passive | Black sand has no natural origin. No heat, no mineral signature. It came with the god. Environmental manipulation will not work here. |
-| Arcana | 14 | Passive | Time-freeze is divine stasis, not a spell. Witnesses are frozen because they are witnesses. Mars intends a record. Invoking this in Option C — "the witnesses are the reason this argument must be made honestly" — is structurally correct. |
-| Sleight of Hand | 14 | Active: conceal small weapon before entering | One hidden weapon carried in. Mars may notice. If used in Option B, narrate honestly. He will comment. |
-| Insight | 13 | Active: watch his eyes before he speaks | Mars looks at one specific character first — the one who made the genuine grove sacrifice. Recognition, not warmth. Advantage on first Option C argument if they open with the grove sacrifice. Window closes when he addresses the party. |
-
-**The Puzzle of Aries (window open until Mars first addresses the party):**
-
-The twelve weapons embedded in the air around the arena perimeter are not randomly placed. They form a constellation: Aries, the Ram. Twelve stars, twelve weapons. The Ram's Eye — the center of the horns arc — is a plain unadorned spear at the eastern arc, set slightly higher than the others.
-
-| Check | DC | Benefit |
-|---|---|---|
-| Religion (active: mapping weapons to sky positions) | 13 | Recognizes Aries. Party is standing inside Mars' sacred symbolic space. +1 to all checks and saves for the entire trial. |
-| Arcana (passive: studying the placement logic) | 14 | Same recognition, plus identifies the Ram's Eye spear. In Option A: Fausta reaches for it first — intercepting her approach to it gives advantage on first attack. In Option B: Mars uses it for a legendary strike in round 3 — player is aware in advance. In Option C: naming it and its position gives +2 to the Persuasion DC 19 roll ("we understood your language before you spoke"). |
-| History (active: recalling Aries as Mars' sacred constellation) | 12 | Available after Religion 13. Confirms Ram's Eye identification. +1 stacks with Religion benefit. |
-
-</details>
-
----
-
-<details>
-<summary>📁 Scene 1: Mars Specifies the Trial</summary>
-
-Mars does not monologue. He assesses.
-
-**Mars' opening:**
-
-> *"You broke a covenant and mended another. You brought my spear home without my leave. Tell me why I should not salt this fort with your bones."*
-
-**Before stating the three trial options, Mars asks one question.** He does not announce it as a riddle. He asks it the way a man asks something he already knows the answer to, and waits.
-
-> *"A soldier swears an oath at induction. He swears it again at each promotion. He swears it to no one present at either swearing. Name what he has actually sworn."*
-
-There is no skill roll. Mars listens to each character who speaks. He does not respond to any answer. After all who wish to speak have spoken, he states the three trial options. But what is said here shapes the trial:
-
-| Answer | Effect in Scene 2 |
+| Passage | Contents |
 |---|---|
-| "To Rome / to the Emperor" | Mars nods once. Standard trial conditions. |
-| "To the men beside me / to the dead already fallen" | Mars looks at that character for a full breath. In Option C: that character's opening argument gains +2 if they reference this loyalty explicitly. |
-| "To something that doesn't need me to name it" | Mars tilts his head. Does not speak. In Option B: he targets that character last — longest possible time before he engages them directly. He finds it interesting. |
-| An answer invoking what the party did (the grove, the spear, the kneeling) | He listens without moving. In Option C: advantage on first Insight DC 15 check to read his posture mid-argument. |
-| "To Mars" (direct flattery) | He shakes his head once. "That is what the priest says. Not the soldier." Standard trial conditions. |
-| Silence | Mars selects Option B without announcing the other two choices. |
+| Left (west) | Pressure-plate rune, DC 14 Perception to spot. Trigger: 3d6 necrotic, 30-ft burst, DC 15 Dexterity half. A dead cultist's journal confirms the two chieftains knew exactly what they served, and did it anyway. |
+| Center | 3 Zombies, slow and unsubtle. No trap. The honest road. |
+| Right (east) | 1 Specter per party member minus one. No trap, hardest fight of the three. |
 
-**Three options, stated mid-sentence:**
-
-| Option | Description | Best for |
-|---|---|---|
-| **A — Champion Trial** | One mortal stands as representative against divine champion Fausta Luperci | Party wants to minimize risk; has one strong martial character |
-| **B — Trial of Blades** | Full party faces Mars himself (victory at 150 HP) | Party trusts their combat strength; wants the dramatic option |
-| **C — Trial of Voice** | Persuasion DC 19 — argue that destroying/sealing the spear honored him | Party made the genuine grove sacrifice; has strong social characters; used the correct ritual frames |
-
-Mars states all three without preference. He will accept any. He expects a decision within one minute of table time. If the party hesitates longer: he chooses Option B without comment.
-
-**Decision assistance (don't offer unless asked):**
-
-- Religion DC 13 from Scene 0 gives the Armilustrium frame: Mars is conducting a formal ritual. He will accept all three because all three are valid ritual responses.
-- Option C advantage conditions: genuine grove sacrifice, kneeling volunteers speaking first, Vercingetorix allied with rune message invoked.
-- Option C disadvantage conditions: Lucius sabotaged, Corvinus tried to seize credit and was not rebuked.
+No wrong answer, no answer that avoids a cost. Let the party choose based on what they can afford right now, not on which one seems "correct."
 
 </details>
 
----
-
 <details>
-<summary>📁 Scene 2: The Trials</summary>
+<summary>🎬 Scene 3: Vercingetorix's Last Stand</summary>
 
-### Option A — Champion Trial
+> *He stands where the three passages become one, and for the first time since the fort's gate, you see him clearly. The wounds from that night never closed. They never will. His armor is Gallic work two centuries out of fashion, rusted through in places where a living man would already be dead of infection ten times over. He is not breathing. He was never going to stop being here.*
 
-Mars gestures. A warrior forms from ash: armor older than Rome, scars that radiate light, eyes closed until she inhales.
+> *"Again," he says, in Latin thick with an accent that predates the Empire itself. "Always again. Tell me this time is the one that ends it."*
 
-> *"This is Fausta Luperci," Mars says. "She held the line at the Frozen Rhine when your Empire would not. She died alone. She serves today."*
+This is his true and final appearance. Use **Vercingetorix Bound** (`npcs/vercingetorix_bound.json`, CR 11): AC 18, HP 150, Multiattack (2, Sword of the Last Charge, 2d6+5 slashing plus 2d8 necrotic), Fear Aura (recharge 5-6, DC 15 Wisdom or Frightened 1 minute), Aura of the Unfinished War (undead allies within 30 ft gain +4 melee damage), Command the Fallen (1/day, raises 1d4 Zombies/Skeletons -- use once, below half HP, not as an opener), Relentless (1/day, drops to 1 HP instead of 0 unless the damage is radiant or from a Belatucadrus-consecrated weapon), Legendary Resistance (1/day), Parry (reaction, +4 AC).
 
-**Flip Handout 11 face-up now.**
+If Relentless triggers, say so plainly: "He should be dead. He isn't. Not yet." This has never been a clean fight for him either.
 
-**Fausta Luperci (Divine Champion):**
+**Final Death.** When a killing blow lands that Relentless does not prevent:
 
-| Stat | Value |
-|---|---|
-| HP | 145 |
-| AC | 18 |
-| Speed | 35 ft |
-| Multiattack | 3 spear attacks (+9 / 1d8+5 piercing + 1d6 radiant) |
-| Frozen Advance | Difficult terrain does not slow her. On move within 5 ft: DC 15 Con or speed –10 until end of next turn. |
-| Legendary Defiance | At 50 HP: +20 temp HP, auto-succeed one save (1/round) |
+> *He drops to one knee, not to the ground. For the first time, his eyes focus on something that is actually in front of him instead of some other, older battlefield. "...Ended," he says, like the word is unfamiliar in his own mouth.*
 
-**Combat checks:**
-
-| Check | DC | Result |
-|---|---|---|
-| History (passive) | 14 | Fausta was real. The Frozen Rhine. She died alone. She respects endurance and discipline. Feints have no effect. She has seen them all. |
-| Investigation (active, examining weapons) | 14 | Find the weapon best suited to your build, or identify which weapon has the most dangerous cost for you. One round before or during combat. |
-| Acrobatics (active, dodging Frozen Advance) | 13 | Advantage on Con save that round. |
-| Athletics (active, grapple to reduce movement) | 13 | Contested vs. her Str (+5). Success: speed 0 until start of your next turn. Frozen Advance cannot trigger. |
-| Medicine (active, bonus action triage) | 12 | Stabilize downed ally without spell slot. Mars does not intervene in medicine. |
-
-**Victory:** Reduce to 0 HP or survive 10 rounds. After: she kneels, presses spear butt to sand, nods. Mars inclines his head. Sand drinks her form.
-
----
-
-### Option B — Trial of Blades
-
-Mars rises. The sky above Vindolanda fractures into burning lines.
-
-**Mars (Option B):**
-
-| Stat | Value |
-|---|---|
-| AC | 20 |
-| HP | 300 (victory at 150 HP) |
-| Speed | 40 ft / fly 60 ft |
-| STR/DEX/CON/INT/WIS/CHA | 26+8 / 16+3 / 24+7 / 18+4 / 22+6 / 22+6 |
-| Saves | Str +14, Dex +9, Con +13, Wis +12 |
-| Skills | Athletics +14, Perception +12 |
-| Immunities | Poison, psychic; B/P/S from non-magical weapons; charmed, exhaustion, frightened, paralyzed |
-| **Multiattack (4)** | God's Pilum: +12 / 4d8+8+3d6 fire (range 120 ft). War Blade: +14 / 3d10+8+2d6 radiant (reach 10 ft). |
-| Divine Smite (1/round) | On hit: +6d8 radiant. DC 18 Con or Stunned until end of next turn. |
-| War Cry (Recharge 5–6) | DC 18 Wis or Frightened 1 min (save end of each turn). |
-| **Legendary Actions (3/round)** | Strike (1 action). Summon Fallen (2): Wight or Shadow within 60 ft, max 3 total. God's Eye (3): reads one creature's deepest intent, states it aloud, target Frightened 1 round (no save). |
-
-**Environmental effect:** Each round a random barracks building phases solid into the arena. Clever terrain use grants advantage for one round — Mars appreciates the tactic.
-
-**Combat checks:**
-
-| Check | DC | Result |
-|---|---|---|
-| Stealth (active, reposition behind phasing building) | 15 | Mars wastes movement action pivoting. On fail: he pivots immediately, you become priority target. |
-| Intimidation (active, replace one attack action with fearless display) | 15 | Success: Mars pauses, says "...Interesting," you gain advantage on next attack or save. He respects *virtus*. On fail: the round costs an attack. |
-| Animal Handling (passive, if Cassia's crow present) | 12 | Crow circling one witness = attention behavior, not fear. The crow points at the person Mars first looked at — the genuine sacrifice. Tell that player. |
-
-**Victory:** Reduce to 150 HP or demonstrate a tactic that forces concession (pinned weapon, blinding with furnace ash). Mars says "Enough" and lowers his blade. Does not pant. Simply stops.
-
-**Post-combat read-aloud (Option B):**
-
-> *Mars halts mid swing. He does not pant. He simply stops, looks at the weapon in his hand, looks at you, and nods as if to himself. "Enough." The weapon dissolves. He stands helmetless, and for a moment he resembles an exhausted general after campaign season.*
-
----
-
-### Option C — Trial of Voice
-
-Mars sits. The witnesses remain frozen. Every heartbeat in the fort listens.
-
-**Three valid arguments:**
-
-| Argument | Grounds | Supporting evidence from campaign |
-|---|---|---|
-| Honor | The spear dishonored him by sowing madness | Corrupted worker (S1), Cassia's visions, Varro's men |
-| Discipline | Destroying/sealing it preserved the disciplined war Mars demands | Sacrifices, escort kneeling (S4), ritual completion |
-| War vs. Murder | They chose war's harsh honor over easy cruelty | Sparing Vercingetorix, saving civilians during siege, capturing traitors instead of executing |
-
-**Arguments that anger him:** "it was too dangerous" / "we had no choice" / "Rome needed this."
-
-**Mechanics:**
-
-| Check | DC | Modifier | Result |
-|---|---|---|---|
-| Persuasion or Performance | 19 | Base | Core argument roll |
-| | | +advantage | Genuine grove sacrifice, kneeling volunteers speak first |
-| | | +3 bonus | Vercingetorix allied, rune message invoked (TIWAZ + WUNJO) |
-| | | +2 bonus | Religion DC 13 (opening) + History DC 14 (during argument) both made |
-| | | –disadvantage | Lucius sabotaged, Corvinus tried to seize credit and wasn't rebuked |
-| Insight | 15 | Active: read Mars between argument points | His posture shifts — toward arguments that interest him, away from those that don't. Identify which of the three is landing before committing. |
-| Deception | 16 | Active: present partial truth as full truth | Fail: Mars names it. "That is not what you believe. Say what you believe." DC +2. Success: he accepts the framing — must maintain it. Changing it mid-argument cancels the success. |
-| History | 14 | Passive, during honor argument | If Religion DC 13 also made: structured argument Mars recognizes as formally correct. +2 to Persuasion roll. |
-
-**Failure states:**
-
-| Roll | Result |
-|---|---|
-| 1–5 | Mars laughs and forces Option B. Party has disadvantage in round 1. |
-| 6–16 | Demands proof in blood or scar. Each PC must reveal a scar and narrate the cost. Success: DC drops to 14. Failure: combat. |
-| "Virtus" recovery | Any character with the Virtus virtue can step into the fighting circle without a weapon and wait. Wisdom save DC 14: success resets trial to neutral, Option C available again. Fail: they flinch. Mars says nothing. Trial continues normally. |
-
-**Success read-aloud:**
-
-> *Mars is silent long enough to hear the rain begin to fall again outside time. When he finally speaks, the single syllable feels like pausing the world. "...You are not wrong."*
-
-Critical success: two PCs may accept the title of Chosen.
+For one minute, his spirit remains, lucid, and answers up to three questions truthfully before dissolving to ash. Hand this over as a gift, not a quiz: Alesia and Caesar's true corruption, why Mars wants the spear (starvation, not conquest), what Vercingetorix actually is (a soldier who was never allowed to stop). He does not know about Corvinus, Brutus, or Pompey -- only his own war. This is the party's first real confirmation of the whole story.
 
 </details>
 
----
-
 <details>
-<summary>📁 Scene 3: The Price of Standing Before a God</summary>
+<summary>🎬 Scene 4: The Antechamber of Mars</summary>
 
-Regardless of option, Mars approaches.
+Load `s5_mars_confrontation.html`/`.jpg`.
 
-> *He steps off the throne. Up close he smells of hot iron and cedar smoke. Behind him the fort flickers like a painting held in uncertain hands. Every soldier on the walls stands frozen mid cheer or mid prayer. Mars' gaze passes over them and returns to you. "You have proven yourselves. I am not appeased, but I am satisfied."*
+> *The passage opens into a circle wide enough to lose an army in. Twelve stones stand at its edge like an audience that arrived centuries early. At the center, a granite altar, chained to the floor by links thick as a man's arm, all of them scored and stretched as if something enormous has strained against them for a very long time. The air itself is red at the edges of your vision, and it is getting redder.*
 
-**Consequence menu (choose those that fit the session):**
+**Rounds 1-2, presence only.** Radiating cracks pulse (DC 12 Dexterity or 1d6 necrotic crossing one). Legendary Actions still available: Strike (one attack at full bonus), Summon Fallen (a Wraith or Wight, twice at most here).
 
-| Consequence | Effect | Trigger |
-|---|---|---|
-| **Mark of Mars** | Handout 10. Once per long rest: re-roll a failed save, must use new result. | All characters who completed the trial. |
-| **The Chosen** | One PC (two on Option C crit success). Benefits and obligations. Call to War applies. | PC who most embodied *virtus* during the trial. |
-| **The Debt** | Mars announces one future favor owed. "When I call, you will come. Refuse and the mark burns." | If the party bargained during the trial. |
-| **The Transformation** | Any player wanting a noble exit: they become a guardian spirit of the arena beneath Vindolanda. The fort gains permanent advantage on morale checks. | Optional. Only offer if player has signaled this kind of ending. |
-| **Prophecy** | Mars informs them: Vindolanda will be a pilgrimage site for a century. Rome will fall from within in three generations. | If Option C succeeded — he is most forthcoming after a voice trial. |
+**The Session 1 Wight-general's cameo (branch on what actually happened):** if he was spared in Session 1, his spirit rises from a plinth, once: *"I held this three hundred years so it would not have to end like this. I am glad I do not have to decide."* Released the moment the spear's fate is settled. If he was destroyed in Session 1, this beat does not happen -- do not manufacture a substitute.
 
-The black sand recedes. Time resumes. Every cohort member collapses to their knees simultaneously as reality snaps back.
+**Round 3+, full manifestation.** Use the existing **Mars** stat block (`npcs/mars.json`, CR 20): AC 22, HP 300, Multiattack (4 Divine Pilum, +12 to hit, range 60 ft, 2d8+7 piercing plus divine), Legendary Resistance (3/day), War Cry (recharge 5-6, DC 18 Wisdom or Frightened 1 minute), Divine Smite (1/round, +4d8 radiant), Legendary Actions (3/round: Strike, God's Eye, Summon Fallen -- max 3 total).
+
+> *"MORTALS," he says, and the word is not loud, only total. "You have carried my anchor through two ghosts and a king who would not die. Now choose, and choose knowing I will remember which one you make."*
 
 </details>
 
----
-
 <details>
-<summary>📁 Scene 4: Return to Vindolanda</summary>
+<summary>⚖️ Decision Point: The Three Horrible Options</summary>
 
-They never left. The parade ground is empty flagstones again except for the sand scar — a perfect circle of blackened stone where the arena was.
+The campaign's actual thesis. Present all three plainly -- none is secretly correct.
 
-> *Cassia touches the glowing mark on her arm and whispers, "He listened." Varro exhales for the first time in hours. The Germanic horns outside the ditch sound a single long note and then go silent. Vindolanda still stands.*
+| Option | Requires | Cost |
+|---|---|---|
+| **1. Destroy it completely** | Unmaking ritual at the granite altar. Mars opposes with everything he has -- guaranteed full manifestation, fought to the end. | Someone becomes the vault's new guardian, permanently: a PC (ask the player, don't narrate their feelings for them) or Tribune Lucius, if trusted. No volunteer = the ritual fails partway; choose one of the other two. |
+| **2. Give it to Rome** | Tribune Lucius takes the spear into official custody, per his orders since Chapter 2. Mars considers this theft -- a shorter, angrier fight (roughly HP 150 or a demonstrated costly tactic). | The crisis ends today. Someday, in a province nobody at this table will ever see, this happens again to somebody else's ancestors. |
+| **3. Give it back to Mars** | Return the spear to the altar and step back. No unmaking, no theft, no fight beyond whatever's already been survived. | No one bleeds today. A god who has been right about the nature of war his entire existence walks away vindicated, free to do this again. |
 
-Allow each player a short epilogue speech: speeches to the cohort, promises to the vicus, treatment of prisoners.
-
-**Citizenship resolution (if Lucius dispatched in S4):**
-
-A rider has been waiting at the gate since dawn. A document arrives while the party is in the middle of something else — in the quiet after the extraordinary thing, before the epilogue fully lands.
-
-The document is an imperial *epistula*, sealed with the Emperor's office stamp. Short. Confirms *civis Romanus* (or *Latini*) status, effective the date of arrival. Lists prior status, new status, unit, and Lucius' attestation.
-
-Final sentence, different hand: *"Distinguished service on the Germanic frontier, confirmed by two independent sponsors. The Emperor's office takes note."*
-
-Do not narrate what the character feels. Ask the player.
-
-**Final Varro check:**
-
-If Varro is alive and the party asks him directly what he thought of the trial: Insight DC 12 shows he is holding something back. If pressed, he says one sentence. Write it before the session based on the actual campaign:
-
-*"I didn't expect you to [specific action from the campaign]. That surprised me. I'm hard to surprise."*
-
-This is not a mechanical reward. It is the last character moment of the campaign. Give it to the player who paid attention to Varro across five sessions.
+Ask each player what their character actually wants. Let the disagreement between characters be part of the scene. If a corruption-level-5 PC exists, Mars addresses them directly, by name, before anyone else answers -- their honest answer should carry real weight in how the scene closes.
 
 </details>
 
----
-
 <details>
-<summary>📁 Conclusion + Session Handoff</summary>
+<summary>🏛️ Epilogue and DM Notes</summary>
 
-**Close with:**
+Return to Fort Vindolanda. Corvinus, Cassia, and Varro (who stayed behind per Chapter 4) greet the party, along with Lucius if he didn't stay behind as the Destroy ending's guardian. See `chapter5.qmd` for the full per-ending NPC epilogue table and the citizenship resolution.
 
-> *Vindolanda breathes. Stories of the god who descended upon its parade ground travel faster than any courier. Some soldiers sign up just to see the scar in the sand. Some never speak of it at all. Mars called you interesting. History called you necessary.*
+**Consistency guard:** Mars is genuinely Mars -- diminished, corrupted, starved by two centuries of the Pax Romana, not an impostor wearing his face. If a player asks "is this really him," any NPC suspicion (Cassia is the natural one) stays suspicion, never confirmation. Do not resolve into "it was someone else all along" -- that idea was considered and explicitly rejected during this campaign's design.
 
-**Advance to Level 7 confirmed — campaign complete.**
-
-**NPC one-year-later states:**
-
-| NPC | One-year state | DM prompt |
-|---|---|---|
-| Corvinus | Stripped of command or promoted to provincial desk. Letter to party: "Rome thanks you. I hope you believe it more than I do." | Does he ever visit Vindolanda again? |
-| Cassia | Oversees new shrine. Draws pilgrims. Trains a successor from the vicus. | Does she still dream of Mars, or is the fort quiet? |
-| Varro | Retired to his farm outside Eboracum. Returns every Armilustrium to stand at the gates with his old unit. | Does he carry Mars' scar openly? |
-| Lucius | Imprisoned, reassigned, or Senate liaison. Subdued and maybe useful. | Does he still receive letters from Brutus? |
-| Vercingetorix | Dead within the year. Tribe maintains truce. Rune stone on north road honoring the party. | What message does Thusnelda send? |
-| Brutus | If alive: still plotting. If dead: cult splinters, sends agents after spear ashes. | What rumor reaches the fort? |
-| Thusnelda | Guards the grove. Sends gifts (amber, runes). Invited the party back once. | Does she invite them again? |
-
-**Commendationes final tally:**
-
-- Completing the trial: +1 commendatio (filed by Cassia, religious authority — unusual, noted)
-- Explicit mercy/restraint during the trial at mechanical cost: +1 commendatio (filed by Varro personally)
-- Total range: 3–5 expected. 6+ = exceptional service record for continuation play.
+**Commendationes:** one final opportunity -- any character who endures the full dungeon and is present for the ending earns one, filed by Cassia as religious witness. See `chapter5.qmd`'s DM Notes for the full tally guidance.
 
 </details>
 

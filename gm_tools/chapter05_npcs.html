@@ -2,411 +2,169 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Chapter 5 NPC Cards — The Wrath of Mars</title>
+<title>Chapter 5 — NPC Reference</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: 'IM Fell English', Georgia, serif;
-  font-size: 10pt;
-  background: #1a1208;
-  color: #e8d8b0;
-  padding: 20px;
-}
-h1 {
-  font-family: 'Cinzel', Georgia, serif;
-  font-size: 20pt;
-  color: #c8a84b;
-  text-align: center;
-  border-bottom: 2px solid #8B4513;
-  padding-bottom: 10px;
-  margin-bottom: 6px;
-  letter-spacing: 0.08em;
-}
-.session-label {
-  text-align: center;
-  font-size: 9pt;
-  color: #a89060;
-  font-style: italic;
-  margin-bottom: 20px;
-  letter-spacing: 0.1em;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  max-width: 1060px;
-  margin: 0 auto;
-}
-.card {
-  background: #261a08;
-  border: 1.5px solid #5a3a10;
-  padding: 14px 16px;
-  page-break-inside: avoid;
-  break-inside: avoid;
-}
-.card.full {
-  grid-column: 1 / -1;
-}
-.card.divine {
-  border: 2px solid #c8a84b;
-  background: #1a0e04;
-}
-.card-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #5a3a10;
-  padding-bottom: 8px;
-}
-.portrait {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6em;
-  flex-shrink: 0;
-  border: 2px solid #8B7355;
-}
-.portrait.gold { background: #3a2800; border-color: #c8a84b; }
-.portrait.red { background: #3a0e00; border-color: #8B1A1A; }
-.portrait.divine-frame { background: #1a0e00; border-color: #c8a84b; border-width: 3px; font-size: 2em; width: 64px; height: 64px; }
-.card-title { flex: 1; }
-.card-title h2 {
-  font-family: 'Cinzel', Georgia, serif;
-  font-size: 11pt;
-  color: #c8a84b;
-  margin-bottom: 2px;
-  letter-spacing: 0.05em;
-}
-.card-title .role {
-  font-size: 8.5pt;
-  color: #a89060;
-  font-style: italic;
-  margin-bottom: 4px;
-}
-.faction-enemy { color: #c85050; }
-.faction-ally { color: #50c878; }
-.faction-divine { color: #c8a84b; }
-.faction-unknown { color: #a0a0a0; }
+  body { background: #111; color: #ddd; font-family: Arial, sans-serif; margin: 0; padding: 16px; font-size: 14px; line-height: 1.5; max-width: 900px; }
+  h1 { color: #c8a84b; font-size: 1.2em; margin: 0 0 4px 0; }
+  .subtitle { color: #888; font-size: 0.82em; margin-bottom: 18px; }
 
-.ogas-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 8.5pt;
-  margin-bottom: 8px;
-}
-.ogas-table tr { border-bottom: 0.5px solid #3a2810; }
-.ogas-table td:first-child {
-  font-family: 'Cinzel', Georgia, serif;
-  color: #c8a84b;
-  font-weight: bold;
-  font-size: 7.5pt;
-  letter-spacing: 0.1em;
-  width: 72px;
-  vertical-align: top;
-  padding: 3px 6px 3px 0;
-}
-.ogas-table td:last-child {
-  color: #d8c898;
-  padding: 3px 0;
-  line-height: 1.5;
-  vertical-align: top;
-}
+  .npc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .npc-card { background: #181818; border: 1px solid #2a2a2a; border-top: 3px solid #a07830; padding: 14px; }
+  .npc-card.ally { border-top-color: #4a8a4a; }
+  .npc-card.enemy { border-top-color: #8a2a2a; }
+  .npc-card.unknown { border-top-color: #666; }
+  .npc-card.divine { border-top-color: #b8283c; }
+  .npc-card.full { grid-column: span 2; }
 
-.secret {
-  background: #0e0804;
-  border: 1px solid #8B1A1A;
-  border-left: 2.5px solid #c83030;
-  padding: 5px 8px;
-  font-size: 8pt;
-  color: #d0a0a0;
-  font-style: italic;
-  margin: 6px 0;
-  line-height: 1.5;
-}
-.secret::before {
-  content: "SECRET: ";
-  color: #c85050;
-  font-style: normal;
-  font-family: 'Cinzel', Georgia, serif;
-  font-size: 7.5pt;
-  letter-spacing: 0.1em;
-}
-.voice {
-  font-style: italic;
-  color: #b0c8d0;
-  border-left: 2px solid #4060a0;
-  padding: 4px 8px;
-  font-size: 8.5pt;
-  margin: 6px 0;
-  line-height: 1.5;
-}
-.voice::before {
-  content: "VOICE — ";
-  font-style: normal;
-  color: #6080b0;
-  font-family: 'Cinzel', Georgia, serif;
-  font-size: 7pt;
-  letter-spacing: 0.1em;
-}
-.stat-line {
-  font-size: 7.5pt;
-  color: #a89060;
-  background: #1a0e04;
-  padding: 3px 6px;
-  margin: 4px 0;
-  border-top: 0.5px solid #5a3a10;
-  line-height: 1.7;
-}
-.note {
-  font-size: 8pt;
-  color: #9a8060;
-  font-style: italic;
-  margin-top: 6px;
-  line-height: 1.5;
-  border-top: 0.5px dashed #3a2810;
-  padding-top: 4px;
-}
-.fate-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 8pt;
-  margin-top: 8px;
-}
-.fate-table th {
-  background: #3a2810;
-  color: #c8a84b;
-  padding: 3px 6px;
-  font-family: 'Cinzel', Georgia, serif;
-  font-size: 7.5pt;
-  letter-spacing: 0.08em;
-  text-align: left;
-}
-.fate-table td {
-  padding: 3px 6px;
-  border-bottom: 0.5px solid #3a2810;
-  color: #d8c898;
-  line-height: 1.4;
-}
-.fate-table tr:nth-child(even) td { background: #1e1408; }
+  .npc-header { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 10px; }
+  .portrait { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #a07830; background: #222; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+  .portrait.ally { border-color: #4a8a4a; }
+  .portrait.enemy { border-color: #8a2a2a; }
+  .portrait.unknown { border-color: #666; }
+  .portrait.divine { border-color: #b8283c; }
+
+  .npc-name { color: #c8a84b; font-weight: bold; font-size: 1.05em; margin: 0 0 2px 0; }
+  .npc-role { color: #888; font-size: 0.82em; margin: 0 0 4px 0; }
+  .npc-voice { font-style: italic; color: #c8b898; font-size: 0.88em; border-left: 2px solid #a07830; padding-left: 8px; margin: 6px 0; }
+
+  .ogas { margin: 8px 0; }
+  .ogas-row { display: flex; gap: 6px; margin: 3px 0; font-size: 0.85em; }
+  .ogas-label { color: #a07830; font-weight: bold; min-width: 70px; flex-shrink: 0; }
+  .ogas-text { color: #ccc; }
+
+  .secret { background: #1a0a0a; border-left: 3px solid #8a1a1a; padding: 5px 8px; margin: 6px 0; font-size: 0.83em; color: #d8a8a8; }
+  .stat-line { background: #0a0a1a; color: #88aaff; font-size: 0.82em; padding: 4px 8px; margin: 6px 0; }
+
+  .state-table { width: 100%; border-collapse: collapse; font-size: 0.82em; margin: 6px 0; }
+  .state-table th { color: #888; font-weight: normal; border-bottom: 1px solid #333; padding: 2px 6px; text-align: left; }
+  .state-table td { padding: 2px 6px; border-bottom: 1px solid #1e1e1e; color: #bbb; vertical-align: top; }
+  .state-table td:first-child { color: #a07830; white-space: nowrap; }
+
+  details { margin: 6px 0; }
+  summary { cursor: pointer; color: #888; font-size: 0.82em; list-style: none; user-select: none; }
+  summary::before { content: "▶ "; }
+  details[open] summary::before { content: "▼ "; }
+  .inner-detail { padding: 4px 0 0 10px; }
 </style>
 </head>
 <body>
 
-<h1>Chapter 5 — NPC Cards</h1>
-<div class="session-label">The Wrath of Mars · Session 5 · Level 7 · Final Confrontation</div>
+<h1>Chapter 5 — NPC Reference</h1>
+<div class="subtitle">The Wrath of Mars. Divine Antagonist: Mars. Tragic thread, resolves this session: Vercingetorix Bound. Branch-dependent cameo: the Session 1 Wight-general. Wildcard whose arc closes here: Tribune Lucius.</div>
 
-<div class="grid">
+<div class="npc-grid">
 
-<!-- MARS (Divine) -->
-<div class="card divine full">
-  <div class="card-header">
-    <div class="portrait divine-frame">⚔</div>
-    <div class="card-title">
-      <h2>Mars — God of War</h2>
-      <div class="role"><span class="faction-divine">Divine Antagonist</span> — The Final Arbiter. Present and physical for the first time.</div>
+<!-- MARS -->
+<div class="npc-card divine full">
+  <div class="npc-header">
+    <div class="portrait divine">⚔</div>
+    <div>
+      <div class="npc-name">Mars</div>
+      <div class="npc-role">Divine Antagonist. Genuinely Mars -- diminished, corrupted, starved. Not an impostor. Frame: divine red.</div>
     </div>
   </div>
-  <table class="ogas-table">
-    <tr><td>OBJECTIVE</td><td>Conduct divine judgment over the mortals who took his spear without leave — and determine whether Rome deserves his continued favor.</td></tr>
-    <tr><td>GOAL</td><td>Complete the Armilustrium judgment ritual in one of three sanctioned forms: champion trial, trial of blades, or trial of voice.</td></tr>
-    <tr><td>AGENDA</td><td>Mars has been watching since Session 1. He references specific moments. He names the person who made the genuine sacrifice. He is not improvising — this is procedure.</td></tr>
-    <tr><td>SECRET</td><td>He is not angry at the party for moving the spear. He is angry it was moved without protocol. The distinction matters: protocol can be satisfied retroactively. Anger at them personally cannot. If the party figures this out, they can argue on his terms.</td></tr>
-  </table>
-  <div class="secret">He respects what they did in the grove. He will not say this. An Insight DC 18 character who watches him carefully can see it in the one moment his posture softens — exactly when the grove sacrifice is mentioned.</div>
-  <div class="voice">"You broke a covenant and mended another. You brought my spear home without my leave. Tell me why I should not salt this fort with your bones."</div>
-  <div class="stat-line">
-    <strong>Mars (Option B stat block):</strong> AC 20 · HP 300 (victory at 150) · STR 26 (+8) · DEX 16 (+3) · CON 24 (+7) · INT 18 (+4) · WIS 22 (+6) · CHA 22 (+6)<br>
-    Saves: Str +14, Dex +9, Con +13, Wis +12 · Skills: Athletics +14, Perception +12<br>
-    Immunities: poison, psychic; non-magical B/P/S · Condition immunities: charmed, exhaustion, frightened, paralyzed<br>
-    <strong>Multiattack (4):</strong> God's Pilum +12/4d8+8+3d6 fire (range 120 ft) · War Blade +14/3d10+8+2d6 radiant (reach 10 ft)<br>
-    <strong>Divine Smite (1/round):</strong> +6d8 radiant, DC 18 Con or Stunned until end of next turn<br>
-    <strong>War Cry (Recharge 5-6):</strong> DC 18 Wis or Frightened 1 minute (save each turn)<br>
-    <strong>Legendary Actions (3/round):</strong> Strike (1) · Summon Fallen — Wight or Shadow within 60 ft, max 3 total (2) · God's Eye — reads one creature's deepest intent, states it aloud, Frightened 1 round (3)
+  <div class="npc-voice">"You have carried my anchor through two ghosts and a king who would not die. Now choose, and choose knowing I will remember which one you make."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Reclaim the spear that was bound against his will and starve no longer</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Keep this last open tribute-line however the party's decision leaves it</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Manifests in stages (presence-only rounds 1-2, full body round 3+), summons Wraiths or Wights to test the party before committing fully. Addresses a corruption-5 character directly, by name, before anyone else can answer for them.</span></div>
   </div>
-  <div class="note">Mars as voice only until Option B or C invites him to step down. He rises from the throne exactly once: when combat begins (Option B) or when the argument is accepted (Option C). Until then, he watches from above.</div>
-</div>
-
-<!-- FAUSTA LUPERCI (Divine Champion) -->
-<div class="card divine">
-  <div class="card-header">
-    <div class="portrait divine-frame">🛡</div>
-    <div class="card-title">
-      <h2>Fausta Luperci</h2>
-      <div class="role"><span class="faction-divine">Divine Champion</span> — Option A only. Honored dead, not construct.</div>
-    </div>
-  </div>
-  <table class="ogas-table">
-    <tr><td>OBJECTIVE</td><td>Represent Mars in the champion trial. Assess whether the party's champion has the endurance and discipline Mars respects.</td></tr>
-    <tr><td>GOAL</td><td>Fight until defeated (0 HP), 10 rounds complete, or Mars calls Enough — whichever comes first.</td></tr>
-    <tr><td>AGENDA</td><td>She attacks whoever has shown the most discipline. She rotates attention every two rounds. She does not react to taunts or feints — she has seen all of them.</td></tr>
-    <tr><td>SECRET</td><td>She was real. The Battle of the Frozen Rhine. She held the line alone. Mars honors that by giving her this role. A character with History DC 14 knows this and knows that she respects endurance above all. Feints and tricks do nothing. Standing and taking it earns her respect.</td></tr>
-  </table>
-  <div class="voice">[No words. She inhales for the first time in centuries when she forms. She nods. She waits for the party to act first.]</div>
-  <div class="stat-line">
-    <strong>Fausta Luperci (Divine Champion):</strong> AC 18 · HP 145 · Speed 35 ft<br>
-    <strong>Multiattack (3):</strong> Spear +9 / 1d8+5 piercing + 1d6 radiant<br>
-    <strong>Frozen Advance:</strong> Difficult terrain does not slow her. On move within 5 ft: DC 15 Con or speed –10 until end of next turn<br>
-    <strong>Legendary Defiance (1/round):</strong> Below 50 HP: +20 temp HP, auto-succeed one save
-  </div>
-  <div class="note">After defeat or 10 rounds: kneels, presses spear butt to sand, nods. Mars inclines his head. Sand drinks her form. She is gone without drama.</div>
-</div>
-
-<!-- AUGUR CASSIA -->
-<div class="card">
-  <div class="card-header">
-    <div class="portrait gold">🔮</div>
-    <div class="card-title">
-      <h2>Augur Cassia</h2>
-      <div class="role"><span class="faction-ally">Ally</span> — Witness. Religious authority. Final sponsor.</div>
-    </div>
-  </div>
-  <table class="ogas-table">
-    <tr><td>OBJECTIVE</td><td>Witness the divine trial and file a valid religious *commendatio* on behalf of every character who completes it.</td></tr>
-    <tr><td>GOAL</td><td>Keep the trial within protocol. If the party is struggling, spend a spell slot without being asked.</td></tr>
-    <tr><td>AGENDA</td><td>Stands frozen at the witness edge. Unfreezes the moment Mars says "Enough" or the trial resolves. Touches her mark first.</td></tr>
-    <tr><td>SECRET</td><td>She has already chosen her successor. The vicus girl who brought bread during the siege. She will not announce this until the epilogue if asked.</td></tr>
-  </table>
-  <div class="voice">"He listened. The omens are still loud. I am better at telling which ones are mine and which belong to gods."</div>
-  <div class="stat-line">Priest CR 2 · AC 13 · HP 27 · Spellcasting (Wis) · Guidance, Sacred Flame, Spare the Dying, Cure Wounds, Guiding Bolt, Healing Word, Spiritual Weapon</div>
-</div>
-
-<!-- CENTURION VARRO -->
-<div class="card">
-  <div class="card-header">
-    <div class="portrait gold">🗡</div>
-    <div class="card-title">
-      <h2>Centurion Varro</h2>
-      <div class="role"><span class="faction-ally">Ally</span> — Witness. Senior NCO. Last Varro check.</div>
-    </div>
-  </div>
-  <table class="ogas-table">
-    <tr><td>OBJECTIVE</td><td>Stand witness and ensure the cohort does not break ranks during the divine manifestation.</td></tr>
-    <tr><td>GOAL</td><td>Survive. Keep the fort stable. Award the second merit *commendatio* personally if a character shows restraint during the trial.</td></tr>
-    <tr><td>AGENDA</td><td>Stands frozen at the north edge with the cohort. Unfreezes with relief, not awe. He expected this would work. He does not say that.</td></tr>
-    <tr><td>SECRET</td><td>He is retiring after this. Farm outside Eboracum. He has been counting the days since the siege began. If asked, he says "forty-seven." Nobody asks what forty-seven means. He doesn't explain.</td></tr>
-  </table>
-  <div class="voice">"I water the vines myself. Keeps my hands busy. Keeps memories quiet."</div>
-  <div class="stat-line">Knight CR 3 · AC 18 · HP 52 · Multiattack (2): Greatsword +5/2d6+3 · Leadership (bonus action, recharge after short rest): ally within 30 ft adds 1d4 to one attack or save for 1 minute</div>
-  <div class="note">Last Varro check: if the party asks him what he thought of the trial, Insight DC 12 reveals he is holding something back. If pressed, one sentence — write it before session based on the actual campaign. "I didn't expect you to [specific thing]. That surprised me. I'm hard to surprise."</div>
-</div>
-
-<!-- LEGATE CORVINUS -->
-<div class="card">
-  <div class="card-header">
-    <div class="portrait red">🦅</div>
-    <div class="card-title">
-      <h2>Legate Corvinus</h2>
-      <div class="role"><span class="faction-enemy">Antagonist (reduced)</span> — Witness. His authority is already over. He knows it.</div>
-    </div>
-  </div>
-  <table class="ogas-table">
-    <tr><td>OBJECTIVE</td><td>Survive the session without further humiliation. Keep his soldiers in line while a god judges the fort.</td></tr>
-    <tr><td>GOAL</td><td>If Cassia is still free: stay quiet. If he arrested Cassia before dawn: his men may try to interfere if Mars is displeased — Corvinus cannot stop this even if he wants to.</td></tr>
-    <tr><td>AGENDA</td><td>Stands frozen at the south witness edge. Unfreezes with the expression of a man recalculating his entire career. He does not speak in Scene 3 unless addressed.</td></tr>
-    <tr><td>SECRET</td><td>He already wrote a second report. This one does not blame the party. He filed it before dawn without telling them. He does not know why he did that. He will not admit it happened.</td></tr>
-  </table>
-  <div class="voice">"Rome thanks you. I hope you believe it more than I do."</div>
-  <div class="stat-line">Veteran CR 3 · AC 17 · HP 58 · Multiattack (2): Longsword +5/1d8+3 or Shortsword +5/1d6+3 · Parry (reaction): +2 AC vs. one melee attack</div>
-  <div class="fate-table">
-    <table>
-      <tr><th>If Sidelined in Ch4</th><th>If Not Sidelined</th></tr>
-      <tr><td>Promoted to provincial desk job. Off active frontier. He does not return.</td><td>Stripped of command after the trial. A god judged without him. That is the end of it.</td></tr>
+  <div class="secret">Secret: he has genuinely respected this party since Session 1. That respect surfaces explicitly here, in the fact that he lets them choose the ending at all rather than simply taking the spear back by force.</div>
+  <div class="stat-line">Stat: CR 20 (`npcs/mars.json`). AC 22, HP 300. Multiattack: 4 Divine Pilum (+12, 2d8+7 piercing+divine). Legendary Resistance 3/day. War Cry (recharge 5-6, DC 18 Wis or Frightened). Divine Smite 1/round (+4d8 radiant). Legendary Actions ×3/round: Strike, God's Eye, Summon Fallen.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>Party chooses Destroy</td><td>Full manifestation guaranteed, fought to the end -- his hardest fight this session.</td></tr>
+      <tr><td>Party chooses Give to Rome</td><td>Shorter, angrier fight (he considers it theft); ends around HP 150 or a demonstrated costly tactic.</td></tr>
+      <tr><td>Party chooses Give to Mars</td><td>No fight required. He accepts, vindicated, and departs satisfied.</td></tr>
+      <tr><td>Corruption-5 PC present</td><td>He addresses them by name and by their worst private moment before the decision is finalized.</td></tr>
     </table>
   </div>
+  </details>
+</div>
+
+<!-- VERCINGETORIX BOUND -->
+<div class="npc-card enemy">
+  <div class="npc-header">
+    <div class="portrait enemy">☠</div>
+    <div>
+      <div class="npc-name">Vercingetorix, Bound</div>
+      <div class="npc-role">His true final form. Not a villain thread -- a victim's thread. Frame: deep red.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"Again. Always again. Tell me this time is the one that ends it."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">End the war he has been fighting since 52 BC</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Fall in a way that finally counts</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Whatever Mars commands, until commanded to stop. He does not negotiate, does not hesitate, does not hate the party for what they're about to do to him.</span></div>
+  </div>
+  <div class="secret">Secret: he is Vercingetorix. He has known it the entire time. He has simply had no one to tell -- until his Final Death gives him the chance.</div>
+  <div class="stat-line">Stat: CR 11 (`npcs/vercingetorix_bound.json`). AC 18, HP 150. Multiattack (2, Sword of the Last Charge, 2d6+5 slashing + 2d8 necrotic). Fear Aura. Aura of the Unfinished War. Command the Fallen (1/day). Relentless (1/day -- only radiant damage or a Belatucadrus-consecrated weapon prevents it). Legendary Resistance (1/day). Parry (reaction).</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>Killing blow prevented by Relentless</td><td>Say so plainly -- he should be dead and isn't. He has never gotten a clean ending before either.</td></tr>
+      <tr><td>Killing blow lands for real</td><td>Final Death triggers: 1 minute of lucidity, answers up to 3 questions truthfully, then dissolves to ash. First true death since 46 BC.</td></tr>
+      <tr><td>Consecrated weapon used (Belatucadrus shrine)</td><td>Bypasses Relentless entirely on the killing blow. A quiet, earned payoff for players who engaged that shrine earlier in the campaign.</td></tr>
+    </table>
+  </div>
+  </details>
+</div>
+
+<!-- THE SESSION 1 WIGHT-GENERAL -->
+<div class="npc-card unknown">
+  <div class="npc-header">
+    <div class="portrait unknown">🕯</div>
+    <div>
+      <div class="npc-name">The Altar Chamber Wight (Session 1)</div>
+      <div class="npc-role">Branch-dependent cameo. The general who bound himself to guard the vault. Frame: grey.</div>
+    </div>
+  </div>
+  <div class="npc-voice">"I held this three hundred years so it would not have to end like this. I am glad I do not have to decide."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">(when alive at the table) See his three-century oath finally discharged</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">Witness the spear's fate decided, whatever it is</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Says his one line, unprompted, then is released the moment the spear's fate is settled. Does not return again in any form after this.</span></div>
+  </div>
+  <div class="secret">Secret: this beat only exists if he was spared in Session 1. If he was destroyed there, do not manufacture a substitute -- some choices close doors permanently, and this is one of them.</div>
+  <div class="stat-line">No combat stat needed here -- he is a silent presence, not a fight. His Session 1 stat block (CR 3 Wight) is not reused.</div>
 </div>
 
 <!-- TRIBUNE LUCIUS -->
-<div class="card">
-  <div class="card-header">
-    <div class="portrait red">📜</div>
-    <div class="card-title">
-      <h2>Tribune Lucius</h2>
-      <div class="role"><span class="faction-unknown">Unknown → Subdued</span> — Witness. Citizenship document carrier. Humbled.</div>
+<div class="npc-card unknown">
+  <div class="npc-header">
+    <div class="portrait unknown">⚜</div>
+    <div>
+      <div class="npc-name">Tribune Lucius Valerius Maximus</div>
+      <div class="npc-role">The only fort NPC who travels with the party this session. His arc closes here. Frame: grey.</div>
     </div>
   </div>
-  <table class="ogas-table">
-    <tr><td>OBJECTIVE</td><td>Deliver the citizenship document in Scene 4 if he sent the dispatch in Ch4. Otherwise: survive and recalibrate.</td></tr>
-    <tr><td>GOAL</td><td>Not be judged himself. He is in the arena as a witness. He is uncomfortably aware that Mars could have addressed him.</td></tr>
-    <tr><td>AGENDA</td><td>Frozen at the south edge with Corvinus. Unfreezes quieter than anyone expected. Hands the document wordlessly. Says nothing for a moment.</td></tr>
-    <tr><td>SECRET</td><td>He has not received a raven from Brutus since the spear went below. The silence frightens him more than the letters did.</td></tr>
-  </table>
-  <div class="voice">"My father is silent. I am learning what that means."</div>
-  <div class="stat-line">Assassin CR 8 (if combat) · AC 15 · HP 78 · Multiattack (2): Shortsword +6/1d6+3+3d6 poison (DC 15 Con half) · Evasion · Uncanny Dodge · Sneak Attack 4d6</div>
-  <div class="note">If Lucius sabotaged in Ch4: Mars' DCs started +2 this session. Lucius knows Mars may have noticed him. He does not move from the witness edge for the entire trial.</div>
-</div>
-
-<!-- VERCINGETORIX -->
-<div class="card">
-  <div class="card-header">
-    <div class="portrait gold">🌿</div>
-    <div class="card-title">
-      <h2>Vercingetorix</h2>
-      <div class="role"><span class="faction-ally">Ally (dying)</span> — Witness. Last words. Rune stone gift.</div>
-    </div>
+  <div class="npc-voice">"It's not stopping. Whatever this feeds, it just fed it more than it wanted."</div>
+  <div class="ogas">
+    <div class="ogas-row"><span class="ogas-label">Objective:</span><span class="ogas-text">Reconcile Rome's orders (bring the spear back) with his own conviction (it must never leave)</span></div>
+    <div class="ogas-row"><span class="ogas-label">Goal:</span><span class="ogas-text">See this decided one way or the other, by the party, not by him alone</span></div>
+    <div class="ogas-row"><span class="ogas-label">Agenda:</span><span class="ogas-text">Advocates for whichever ending the party leans toward without pushing his own preference until directly asked. If asked, he is honest: he does not want to be the one who decides this.</span></div>
   </div>
-  <table class="ogas-table">
-    <tr><td>OBJECTIVE</td><td>Witness the trial. Understand whether the party's god is worth respecting.</td></tr>
-    <tr><td>GOAL</td><td>Say one true thing before he dies. If the party honored the grove oath, his warriors will already be gone by the epilogue, having left the rune stone.</td></tr>
-    <tr><td>AGENDA</td><td>Stands frozen at the west edge. Unfreezes last of all the witnesses, slower than the others. He has been in worse situations. He is counting them.</td></tr>
-    <tr><td>SECRET</td><td>He is dying. Has been since the Farbog. The party may know this by now. If not, Thusnelda sends the message in the epilogue.</td></tr>
-  </table>
-  <div class="voice">[If asked whether Mars is real]: "I watched a god descend on a Roman fort. That answers your question better than mine."</div>
-  <div class="stat-line">Tribal Warrior Chief (reskin) · AC 14 · HP reduced to 15 at session start (dying but upright) · Handaxe +4/1d6+2</div>
-  <div class="note">If allied (Option C bonus): his warriors circle the arena perimeter (off-map). After trial: one-sentence benediction if asked. Within the year, dead. His tribe carves a rune stone on the north road.</div>
-</div>
-
-<!-- SENATOR BRUTUS -->
-<div class="card full">
-  <div class="card-header">
-    <div class="portrait red">🐦</div>
-    <div class="card-title">
-      <h2>Senator Gaius Cassius Brutus</h2>
-      <div class="role"><span class="faction-enemy">Never Present Villain — Off-screen all session. Consequences arrive through others.</span></div>
-    </div>
-  </div>
-  <table class="ogas-table">
-    <tr><td>OBJECTIVE</td><td>Stop Mars from being appeased. His intelligence ends at the treeline — he does not know the trial is happening until it is over.</td></tr>
-    <tr><td>GOAL</td><td>If the trial succeeds: pivot. Find another angle. He is already drafting a letter congratulating the party on "their service." He is not done with Vindolanda.</td></tr>
-    <tr><td>AGENDA</td><td>Off-screen. If the party killed or arrested him in Ch4 resolution: his cult splinters and sends agents after the spear's ashes (Labyrinth scene trigger). If alive: he hears about the trial from a courier within a week and goes silent for a month.</td></tr>
-    <tr><td>SECRET</td><td>He funded the siege with two chieftains who owed him favors. Vercingetorix did not know this. If Vercingetorix learns it before he dies, it changes his last words to the party. DM discretion whether to deploy this.</td></tr>
-  </table>
-  <div class="secret">Brutus does not fear the party. He fears what they represent: soldiers who answered to something higher than the Senate. That is not controllable. He has been trying to find the right price to name for three months.</div>
-  <div class="voice">[Letter, arriving one month after the trial]: "Congratulations on your distinguished service. I trust the frontier is quieter. I have always found quiet to be the most productive condition. — G.C.B."</div>
-  <div class="fate-table">
-    <table>
-      <tr><th>Outcome</th><th>One Year Later</th></tr>
-      <tr><td>Brutus alive, not arrested</td><td>Still plotting. Agents near the fort. Looking for a new lever.</td></tr>
-      <tr><td>Brutus arrested in Ch4</td><td>In Rome's legal system. Slow. He has friends. He is not convicted yet.</td></tr>
-      <tr><td>Brutus dead</td><td>His cult splinters. Spear-ash seekers arrive at Vindolanda within 6 months. That is a different campaign.</td></tr>
+  <div class="secret">Secret: he will not touch the spear himself under any circumstance -- except one. If the party chooses Destroy and needs a guardian, and the party trusts him enough to let him take it, he accepts without hesitation. It is the only clean resolution his divided loyalty ever had available to it.</div>
+  <div class="stat-line">Stat: reused CR 1 Spy block from Chapter 4, unchanged. Will not fight the party or Vercingetorix directly -- has no reason to and no combat role this session beyond staying alive.</div>
+  <details>
+  <summary>Session state</summary>
+  <div class="inner-detail">
+    <table class="state-table">
+      <tr><th>Condition</th><th>Effect</th></tr>
+      <tr><td>Party chooses Destroy, Lucius volunteers as guardian</td><td>He stays behind, permanently, at the granite altar. The fort tells a kinder story about him every year that follows.</td></tr>
+      <tr><td>Party chooses Give to Rome</td><td>He personally takes the spear into custody -- the orders he's carried since Chapter 2, finally discharged. Commended by Rome, never fully at peace with it.</td></tr>
+      <tr><td>Party chooses Give to Mars</td><td>Relieved his orders technically don't matter anymore, quietly troubled that it was this easy.</td></tr>
     </table>
   </div>
+  </details>
 </div>
 
-<!-- THUSNELDA -->
-<div class="card">
-  <div class="card-header">
-    <div class="portrait gold">🦋</div>
-    <div class="card-title">
-      <h2>Thusnelda</h2>
-      <div class="role"><span class="faction-ally">Ally (distant)</span> — Not in the fort. Grove guardian. Epilogue contact.</div>
-    </div>
-  </div>
-  <table class="ogas-table">
-    <tr><td>OBJECTIVE</td><td>Guard the grove. Send word when the trial is resolved.</td></tr>
-    <tr><td>GOAL</td><td>Receive the spear back, or receive confirmation it is in safe hands. Either is acceptable.</td></tr>
-    <tr><td>AGENDA</td><td>Not present during the trial. Thusnelda feels the moment Mars steps through the veil — she is in the grove when it happens and goes very still. She knows.</td></tr>
-    <tr><td>SECRET</td><td>She chose not to come. She could have. She decided the fort was Roman business. That distinction matters to her in a way she would not explain to Romans.</td></tr>
-  </table>
-  <div class="voice">"The grove is quiet. Quiet is what you get when a wound has closed."</div>
-  <div class="note">Epilogue gift: amber, runes, occasional letter carved on bark. If invited back to the fort, she comes once. She looks at the sand scar where the parade ground was and says nothing for a long time. Then: "Good."</div>
-</div>
-
-</div><!-- end grid -->
+</div><!-- end npc-grid -->
 
 </body>
 </html>

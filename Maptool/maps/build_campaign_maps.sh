@@ -268,33 +268,19 @@ echo "=== Session 5: The Wrath of Mars ==="
 S="$DEST/S5_The_Wrath_of_Mars"
 mkdir -p "$S"
 
-# Dice Grimorium maps
-copy_map CityStreets          "$S"
-copy_map BridgeCheckpoint     "$S"
-copy_map AncientAltar         "$S"
-copy_map AncientTombs         "$S"
-copy_map CathedralCatacombs   "$S"
-copy_map DarkTempleInterior   "$S"
-copy_map LabyrinthRuins "$S"
-copy_map NatureGoddessTemple  "$S"
-copy_map IslandRuins          "$S"
+# Custom SVG battle maps -- the dungeon continues down from Chapter 4's Core Room
+copy_svg s5_mars_vault_overview "$S" # Full vault overview: Sunken Armory -> Choking Hall -> Elder Stair -> Antechamber
+copy_svg s5_mars_vault          "$S" # Scene 1-2: entry corridor, antechamber, Convergence Hall 3-passage choice
+copy_svg s5_mars_confrontation  "$S" # Scene 4: the Sanctum, Mars's staged manifestation
 
-# Custom SVG battle maps
-copy_svg s5_mars_vault_overview "$S" # Full vault/temple overview
-copy_svg s5_mars_vault         "$S"  # Scene 1-2: vault descent
-copy_svg s5_mars_confrontation "$S"  # Scene 3: Mars divine confrontation
+# NPCs: only Lucius travels with the party this session (Corvinus/Varro/Cassia
+# stay at the fort per Chapter 4, reappear only in the epilogue back at the fort)
+copy_npc "Tribune_Lucius" "$S"
+copy_npc "Vercingetorix_Bound" "$S"
+copy_npc "Mars" "$S"
 
-for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro \
-            Vercingetorix_the_Red Thusnelda Senator_Brutus Valeria_the_Medicus \
-            Sigrun_the_Trader Arnulf_the_Firekeeper Edda_the_Spear-Mother \
-            Skadi_the_Healer Aldric_the_Gaul Mars Fausta_Luperci; do
-  copy_npc "$slug" "$S"
-done
-
-# Paterculus: minor witness at east edge (S0 arena setup)
-# Quintus_Flavius: Brutus' operative if Labyrinth scene plays out
-for slug in Guard Legionary Berserker Cultist_of_Mars Tribal_Warrior \
-            Wraith Wight Shadow Specter Zombie Paterculus Quintus_Flavius; do
+# Creatures: reused corridor undead from earlier sessions, no new pipeline work needed
+for slug in Wraith Wight Shadow Specter Zombie; do
   copy_npc "$slug" "$S"
 done
 

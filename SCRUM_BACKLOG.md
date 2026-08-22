@@ -523,4 +523,20 @@ confrontation itself. Party is level 7 for this entire session.
 - **Valuable:** same reasoning as Epic 8's Story 8.8 -- unusable at the table without it
 - **Testable:** chapter05_maptool.qmd and build_campaign_maps.sh's S5 block reflect the
   actual final content
-- **Status:** not started — do this last
+- **Status:** DONE (2026-08-22) -- scope expanded beyond the original story text (which only
+  named chapter05_maptool.qmd + build_campaign_maps.sh) to cover full Chapter Deliverable
+  Status consistency across all five GM deliverable files, matching how Epic 8's Story 8.8
+  was scoped for Chapter 4. Rewrote: chapter05_maptool.qmd (scene-by-scene map/token table
+  for the new dungeon structure), build_campaign_maps.sh's S5 block (removed stale
+  Fausta_Luperci/Thusnelda/Senator_Brutus/fort-crowd copy_npc calls and unused Dice
+  Grimorium copy_map lines; kept the 3 existing copy_svg calls; added Vercingetorix_Bound
+  and Mars; kept the already-correct Wraith/Wight/Shadow/Specter/Zombie reuse -- verified
+  end-to-end, all 3 maps + 8 tokens copy cleanly with no [miss] lines), chapter05_npcs.html
+  (Mars/Vercingetorix Bound/Session 1 Wight-cameo/Tribune Lucius OGAS cards, Fausta and
+  Thusnelda removed), chapter05_print.html (full A4 module, same CSS shell as chapter04's),
+  cheat_card_ch5.html (same tabbed dark-theme shell as chapter04's), and
+  chapter05_guide.qmd (full GM session guide rewrite). Note for a future pass: unlike
+  chapter5.qmd + chapter05_maptool.qmd, the chapter04_print.html, cheat_card_ch4.html, and
+  chapter04_guide.qmd files were found still describing the OLD siege-era Chapter 4 premise
+  -- Epic 8 only updated chapter4.qmd + chapter04_maptool.qmd, not the other three Ch4
+  deliverables. Flagged here, not fixed (out of Epic 9's scope).
