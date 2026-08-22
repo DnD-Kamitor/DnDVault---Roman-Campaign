@@ -2603,5 +2603,177 @@
         "raw_cmd": "[r: \"<b style='color:#c0392b'>FAUSTA COLLAPSES</b> — her body crumbles to hot grey ash. Mars may spend a Legendary Action to reform her at <b>20 HP</b> (once per combat). If Mars does not act, she is defeated and the trial ends.\"]<br><i style='color:#c88020'>She does not make death saving throws. The ash is not a creature and cannot be targeted. If Mars reforms her, place the token at the arena center at 20 HP.</i>"
       }
     ]
+  },
+  "Banshee": {
+    "hp": 58,
+    "ac": 12,
+    "speed": "0 ft., fly 40 ft. (hover)",
+    "str": 1,
+    "dex": 14,
+    "con": 10,
+    "int": 12,
+    "wis": 11,
+    "cha": 17,
+    "saves": {},
+    "skills": {
+      "Perception": 2,
+      "Stealth": 5
+    },
+    "cr": "4",
+    "resistances": "Acid, fire, lightning, thunder; bludgeoning/piercing/slashing from nonmagical attacks",
+    "immunities": "Cold, necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+    "attacks": [
+      {
+        "label": "Corrupting Touch",
+        "raw_cmd": "[h: atk=1d20][h: dmg=3d6]/me reaches out with a hand of freezing grief — CORRUPTING TOUCH! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the cold passes straight through the heart!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — her hand passes through empty air!</b>\"; \"connects!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg] necrotic<br><i style='color:#c88020'>Incorporeal Movement: passes through walls/objects (5 force damage if ending turn inside). Resistances: acid, fire, lightning, thunder; nonmagical weapons. Immune: cold, necrotic, poison.</i>"
+      },
+      {
+        "label": "Horrifying Visage",
+        "raw_cmd": "[h: save=1d20]/me turns her true, ruined face toward the room — HORRIFYING VISAGE! Each living creature within 60 ft that can see her: WIS save [e: save] vs DC 13 — [r, if(save>=13): \"<b style='color:green'>resists — immune to this banshee's Horrifying Visage for 24 hours.</b>\"; \"<b style='color:#e74c3c'>FRIGHTENED</b> for 1 minute (repeat save each turn). If the save failed by 5+, also ages 1d4×10 years, right now, visibly.\"]<br><i style='color:#c88020'>Does not affect undead. Free action, no attack roll.</i>"
+      },
+      {
+        "label": "Wail (1/day)",
+        "raw_cmd": "[h: save=1d20][h: dmg=10d8]/me opens her mouth and every grief she ever carried comes out at once — WAIL! Every living creature within 30 ft that can hear it: CON save [e: save] vs DC 13 — [r, if(save>=13): \"<b style='color:green'>resists — takes half damage only.</b>\"; \"<b style='color:#e74c3c'>TAKES FULL DAMAGE.</b> If this reduces the target to 0 HP, it dies outright.\"]<br>DMG: [e, if(save>=13): floor(dmg/2); dmg] psychic<br><i style='color:#c88020'>Once per day. Does not affect constructs or undead. This is the banshee's single scariest moment — use it when the fight needs a spike, not on round 1.</i>"
+      }
+    ],
+    "traits": [
+      "Detect Life: can magically sense the presence of living creatures up to 5 miles away; knows their general direction but not exact location.",
+      "Incorporeal Movement: can move through creatures and objects (takes 5 force damage if ends turn inside)."
+    ]
+  },
+  "Bone_Naga": {
+    "hp": 58,
+    "ac": 15,
+    "speed": "30 ft.",
+    "str": 17,
+    "dex": 14,
+    "con": 13,
+    "int": 12,
+    "wis": 14,
+    "cha": 16,
+    "saves": {},
+    "skills": {},
+    "cr": "4",
+    "immunities": "Poison; charmed, poisoned",
+    "attacks": [
+      {
+        "label": "Bite",
+        "raw_cmd": "[h: atk=1d20][h: dmg=4d6]/me strikes with a skeletal, fang-bare jaw — BITE! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — bone locks through bone!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the jaw snaps shut on nothing!</b>\"; \"connects!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing"
+      },
+      {
+        "label": "Hold Person (spell)",
+        "raw_cmd": "[h: save=1d20]/me hisses a word that isn't breath — HOLD PERSON! One humanoid it can see within 60 ft: WIS save [e: save] vs DC 12 — [r, if(save>=12): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#8e44ad'>PARALYZED</b> for the spell's duration. Target may repeat the save at the end of each of its turns.\"]<br><i style='color:#c88020'>Spellcasting (8th level, DC 12, +4 to hit): at will — mage hand, minor illusion. 1/day each — hold person, ray of enfeeblement, detect thoughts, suggestion, dispel magic.</i>"
+      },
+      {
+        "label": "Ray of Enfeeblement (spell)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d8]/me traces a withering ray from an eye socket — RAY OF ENFEEBLEMENT! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT.</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the ray goes wide.</b>\"; \"connects!\"]<br>ATK: [e: atk+4] (spell attack) | DMG: [e: dmg] necrotic, and while the spell lasts the target's Strength-based weapon attacks deal only half damage.<br><i style='color:#c88020'>Save-ends-early: target or an ally can spend an action to attempt to end it (no save needed on the naga's part).</i>"
+      }
+    ],
+    "traits": [
+      "Rejuvenation: if destroyed, a bone naga returns to life in 1d6 days and regains all HP, reforming near its old bones, unless the remains are sprinkled with holy water or a Remove Curse / Dispel Evil and Good is cast on them first."
+    ]
+  },
+  "Yochlol": {
+    "hp": 136,
+    "ac": 15,
+    "speed": "30 ft.",
+    "str": 15,
+    "dex": 11,
+    "con": 18,
+    "int": 13,
+    "wis": 15,
+    "cha": 16,
+    "saves": {},
+    "skills": {
+      "Deception": 7,
+      "Insight": 6,
+      "Perception": 6
+    },
+    "cr": "6",
+    "resistances": "Cold, fire, lightning; bludgeoning/piercing/slashing from nonmagical weapons",
+    "immunities": "Poison; poisoned",
+    "attacks": [
+      {
+        "label": "Poisonous Tentacle",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: save=1d20]/me lashes out with a tentacle that shouldn't exist on anything shaped like a person — POISONOUS TENTACLE! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — it wraps twice before the target can react!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — the tentacle misjudges the reach!</b>\"; \"connects!\"]<br>ATK: [e: atk+5] reach 15 ft | DMG: [e: dmg+2] poison, and target is grappled (escape DC 14).<br>While grappled, target repeats CON save [e: save] vs DC 15 each of its turns — [r, if(save>=15): \"resists further poison this turn.\"; \"<b style='color:#e74c3c'>takes 2d6 poison again.</b>\"]"
+      },
+      {
+        "label": "Innate Spellcasting",
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>INNATE SPELLCASTING</b> (CHA, DC 14) — at will: charm person, dancing lights, minor illusion. 3/day: fog cloud. 1/day: insect plague.\"]<br><i style='color:#c88020'>Use insect plague to control the battlefield in the blood-growth rooms — it thematically doubles as the fleshy growths swarming.</i>"
+      },
+      {
+        "label": "Change Shape",
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>CHANGE SHAPE</b> — the yochlol polymorphs into a Large or smaller spider, or back into its true ooze-and-limbs form, as an action. Stats are the same except speed (spider form gains climb 30 ft).\"]<br><i style='color:#c88020'>No attack roll. Use to escape a bad position or to ambush from a ceiling/wall in spider form.</i>"
+      }
+    ],
+    "traits": [
+      "Magic Resistance: advantage on saving throws against spells and other magical effects.",
+      "Shapechanger: true form is neither wholly humanoid nor wholly ooze — unsettling to look at even at rest."
+    ]
+  },
+  "Shadow_Demon": {
+    "hp": 66,
+    "ac": 12,
+    "speed": "30 ft., fly 50 ft.",
+    "str": 1,
+    "dex": 15,
+    "con": 12,
+    "int": 12,
+    "wis": 13,
+    "cha": 14,
+    "saves": {},
+    "skills": {
+      "Stealth": 8
+    },
+    "cr": "4",
+    "resistances": "Cold, fire, lightning, thunder; acid, bludgeoning/piercing/slashing from nonmagical weapons",
+    "immunities": "Necrotic, poison; grappled, paralyzed, petrified, poisoned, prone, restrained",
+    "attacks": [
+      {
+        "label": "Claw",
+        "raw_cmd": "[h: atk=1d20][h: dmg=3d6]/me tears free of the dark between the pillars — CLAW! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the claw passes through flesh like it isn't there!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — it overreaches into the light and flinches back!</b>\"; \"connects!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg] necrotic, and the target's <b>hit point maximum is reduced</b> by the damage taken until it finishes a long rest. Target dies if this reduces its maximum to 0.<br><i style='color:#c88020'>Incorporeal Movement. Immune: necrotic, poison. Resistant to nonmagical weapons.</i>"
+      },
+      {
+        "label": "Shadow Stealth (bonus action)",
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>SHADOW STEALTH</b> — while in dim light or darkness, the shadow demon takes the Hide action as a bonus action.\"]<br><i style='color:#c88020'>It will keep breaking line of sight and re-hiding between the altar's pillars every round it can — do not let it stand still and trade blows.</i>"
+      }
+    ],
+    "traits": [
+      "Illumination Weakness: disadvantage on attack rolls and ability checks while in bright light.",
+      "Sunlight Weakness: takes damage and has disadvantage on attack rolls, ability checks, and saves while in direct sunlight (not relevant underground, but matters if the fight is dragged outside)."
+    ]
+  },
+  "Dretch": {
+    "hp": 18,
+    "ac": 11,
+    "speed": "20 ft.",
+    "str": 11,
+    "dex": 11,
+    "con": 12,
+    "int": 5,
+    "wis": 8,
+    "cha": 3,
+    "saves": {},
+    "skills": {},
+    "cr": "1/4",
+    "resistances": "Cold, fire, lightning",
+    "immunities": "Poison; poisoned",
+    "attacks": [
+      {
+        "label": "Bite",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me snaps forward, more hunger than plan — BITE! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE — it bites itself as much as anything!</b>\"; \"connects!\"]<br>ATK: [e: atk+2] | DMG: [e: dmg] piercing"
+      },
+      {
+        "label": "Claws",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me scrabbles with both filth-crusted hands — CLAWS! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"connects!\"]<br>ATK: [e: atk+2] | DMG: [e: dmg] slashing"
+      },
+      {
+        "label": "Fetid Cloud (recharge 6)",
+        "raw_cmd": "[h: save=1d20]/me releases a cloud of noxious gas — FETID CLOUD! Each creature within 10 ft: CON save [e: save] vs DC 11 — [r, if(save>=11): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>POISONED</b> for 1 minute (repeat save at end of each turn).\"]<br><i style='color:#c88020'>Use to punish the party for clumping up — dretches are weak alone but a swarm with this recharging is genuinely nasty.</i>"
+      }
+    ],
+    "traits": [
+      "Chaff, not a threat alone: dretches exist to fill rooms and force the party to split attention while the real threat (a stronger demon or the room's undead) does the actual damage."
+    ]
   }
 }
