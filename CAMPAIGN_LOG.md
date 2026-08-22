@@ -147,7 +147,15 @@ question of whether Brutus knows his own goal serves the same god he'd never wor
 Three people arrived, each by their own road, at the same conclusion: this must not go
 to Rome.
 
-- **Legate Corvinus** — cold political calculation. Already established in his OGAS.
+- **Legate Corvinus** — began Session 1 wanting the spear for himself, a weapon worth a
+  legate's whole career if he could master it. Every educated Roman knows the shape of
+  Caesar's fall, even without knowing the spear's part in it: a man of real virtue,
+  slowly and then suddenly not himself, until the Republic itself had no room left for
+  him. Corvinus watched the same shape happen to Varro, a man he trusted with his own
+  command, in the space of two sessions. He did not need horror or conscience to change
+  his mind. He needed one clear look at what this weapon does to a man who thinks he can
+  hold it and put it down again. He wants it destroyed now for the same reason he wanted
+  it before: cold calculation, aimed at a different conclusion. He cannot say so openly.
 - **Centurion Varro** — his family carries the shame of Varus's three lost legions, in
   this exact forest, six generations back. He was already primed to see a second
   Teutoburg coming before the spear ever touched him. Its corruption didn't have to
