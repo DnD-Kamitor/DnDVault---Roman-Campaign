@@ -573,3 +573,63 @@ confrontation itself. Party is level 7 for this entire session.
   chapter04_guide.qmd files were found still describing the OLD siege-era Chapter 4 premise
   -- Epic 8 only updated chapter4.qmd + chapter04_maptool.qmd, not the other three Ch4
   deliverables. Flagged here, not fixed (out of Epic 9's scope).
+
+---
+
+## Epic 10: Chapters 1-3 Stale Deliverable Audit
+
+**Why:** After finding that Chapter 4's rewrite left three sibling deliverable files
+(print/cheat_card/guide) describing the retired premise, the user asked for the same
+check across Chapters 1-3. **Status: DONE** (2026-08-23).
+
+### Chapter 1 (Blood and Omens) -- confirmed clean
+No content-level rewrite has touched Chapter 1 this session (last major work was
+Milestone 81/82). Checked: no broken `Maptool/build_campaign_maps.sh` path bug, no
+Fausta Luperci references, one legitimate forward-pointer to Thusnelda ("asking Thusnelda
+in Session 3" -- correct, she's still active there). `<details>` tag count in
+`chapter01_guide.qmd` is 52 open / 53 close -- a pre-existing off-by-one, not introduced
+by any session-3/4/5 work; renders fine regardless, flagged but not chased down (same
+pattern found in chapter02_guide.qmd and chapter03_guide.qmd -- looks systemic to the
+`_guide.qmd` template, not a per-file regression).
+
+### Chapter 2 (The Tribune's Gambit) -- confirmed clean, by design
+`chapter2.qmd` still describes the *original scripted* Session 2 (Vercingetorix
+negotiable at the breach, Varro loyally arming the party's defense) rather than what
+CAMPAIGN_LOG.md records actually happened at the table (Vercingetorix's forces attacked
+in force, Varro was corrupted and opened a gate for them). **This is correct, not a
+bug.** Session 2 was already played before this session's design work began --
+CAMPAIGN_LOG.md exists specifically so already-played chapters never need retroactive
+rewrites to match improvised deviations; only CAMPAIGN_LOG.md needs to carry the true
+account for future prep. CLAUDE.md itself states this priority explicitly ("if they
+conflict, CAMPAIGN_LOG.md wins"). Do not "fix" chapter2.qmd to match actual play --
+that would defeat the reason CAMPAIGN_LOG.md exists. Same off-by-one `<details>` count
+noted in `chapter02_guide.qmd` (38/39) as Chapter 1's.
+
+### Chapter 3 (Through the Dark Forest) -- real staleness found and fixed
+Chapter 3 has NOT been fully played yet, so unlike Chapter 2, its files must stay
+internally consistent -- this is where the Chapter-4-style bug actually reproduced.
+`chapter3.qmd` got its "Prologue: The Gate" rewrite (Varro's fight resolution, Lucius's
+already-settled command, escort shrunk from 8+1 to 3+1) earlier this session, and Epic 2's
+audit pass fixed `chapter03_maptool.qmd`/`chapter03_npcs.html`, but `chapter03_guide.qmd`
+and `chapter03_print.html` were never brought current. Found and fixed:
+- **chapter03_guide.qmd:** Quick-Reference table had no mention of the Prologue at all, a
+  stale 8-legionary river escort (should be 3+1), and three "Varro (if present)" lines
+  treating his absence as conditional when it's now settled fact. Added a Prologue
+  opener line, fixed the escort size and moral framing, rewrote the Old Bones travel event
+  and the river-crossing resolution text to not assume Varro is there, and swapped the
+  Session-4-handoff table's dead "Varro's relationship to his legionaries" row for the
+  Prologue outcome + escort-standdown outcome instead.
+- **chapter03_print.html:** Had zero mentions of the Prologue or Lucius at all -- a
+  substitute GM using this print module cold would open the session with the wrong scene
+  entirely. Added a full Prologue section (matching the file's existing read-aloud/
+  clue-box/secret-box CSS classes) before Scene 0, and applied the same escort-size and
+  Varro-absence fixes as the guide.
+- **Both files' Vercingetorix OGAS/NPC-table entries** still said "He is dying. This is
+  his final campaign" -- the pre-CAMPAIGN_LOG framing CAMPAIGN_LOG.md itself flagged as
+  needing an update once the Session 3 epic started (it wasn't, in Epic 2's pass). Updated
+  in `chapter3.qmd` proper, `chapter03_guide.qmd`, `chapter03_print.html`, and
+  `cheat_card_ch3.html` to the fuller "fighting since 46 BC, first real chance to die since
+  Alesia" framing that Session 5 now pays off.
+- Verified: `chapter3.qmd` renders, `<details>` balanced (39/39). `chapter03_guide.qmd`
+  renders (pre-existing 13/14 off-by-one, same systemic pattern as Ch1/Ch2, not
+  introduced here). `chapter03_print.html` `<div>` tags balanced (75/75).

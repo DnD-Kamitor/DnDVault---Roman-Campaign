@@ -17,6 +17,7 @@ subtitle: "GM guide — Chapter 3"
 | | |
 |---|---|
 | **Central question** | What are you willing to give up — not just spend, but actually lose? |
+| **Opens with** | The Prologue: resolving the Varro-vs-Ursula fight from Session 2's raid, and confirming Tribune Lucius is already in command (settled in Session 2, not a new scene). Varro does **not** travel with the party into the forest, whichever way the fight resolves. Lucius does — see Prologue tab below. |
 | **What must happen** | (1) The party travels two days through the Teutoburg Forest. (2) The sacred grove demands a real sacrifice. Both happen regardless. |
 | **Player goal** | Reach the grove, identify the influenced party member, complete the ritual. |
 | **Real stakes** | Spear destroyed or not. Influenced NPC recovered or broken. Corvinus' citizenship papers arrive after (or defer to Session 4 if ritual fails). |
@@ -28,9 +29,10 @@ subtitle: "GM guide — Chapter 3"
 | NPC | Location at session start | Wants | Fears | Lying about |
 |---|---|---|---|---|
 | Thusnelda | Waiting at her outer perimeter, expected them | Complete the ritual correctly | Repeating her teacher's failure | She performed this ritual once before. It failed. |
-| Vercingetorix *(if allied)* | Guiding the party, 50 metres ahead | Ensure his people's three-generation wound is closed | The party learning he is dying | He has six warriors nearby. He hasn't mentioned them. |
+| Vercingetorix *(if allied)* | Guiding the party, 50 metres ahead | Ensure his people's three-generation wound is closed | The party learning what he actually is | He has been fighting this war since 46 BC. Destroying the spear may be his first real chance to die since Alesia. He does not say this. |
 | Augur Cassia *(if present)* | Barely sleeping, watching everything | Warn the party; find bog valerian | That the sacrifice must be her | She has already decided what she will offer. |
-| Legate Corvinus *(pursuit)* | 6–8 hours behind, 8 legionaries | Recover the spear before Rome loses it | Permanent disgrace | His counter-plan: recover the spear and present it himself |
+| Tribune Lucius | Travels with the party (see Prologue) | Recover the spear per his orders, without fully believing it should go to Rome | His father Brutus finding out where his real conviction lies | He already suspects his father was wrong about what the spear is. |
+| Legate Corvinus *(pursuit, does not travel with the party)* | A small, weakly-motivated escort at the river (3 Legionaries + 1 Centurion) — Corvinus himself stays "one day behind" all session | Be seen pursuing without actually stopping the party | Brutus finding out he wants the spear destroyed too | His orders are deliberately soft ("prevent the crossing," not "kill them") |
 | Mars *(divine presence)* | Off-screen until Scene 5 | Reclaim his weapon | Being appeased | He has been watching since Session 1. He respects what he's seen. |
 
 **Handout delivery order:**
@@ -174,7 +176,7 @@ Five seconds of silence before you speak. Then:
 | 3 | Germanic watchers in the treeline. Vercingetorix can end it. Without him: Persuasion DC 14 with any Germanic phrase |
 | 4 | The influenced character wakes screaming mid-march: vision of themselves standing over the party's bodies, holding the spear, smiling |
 | 5 | Germanic offering-post at a path fork. Leave it alone. Disturbing it: wildlife avoids camp (Legate's trackers gain advantage) |
-| 6 | Varro (if present) stops at a valley's edge: *"My grandfather's cohort marched through here. Forty years ago. None of them came back."* Walks on. |
+| 6 | Old Bones: a shallow valley, ground wrong underfoot. Investigation DC 12: a corroded pilum head, a belt buckle, bone -- a Roman column died here generations ago. This is Varro's family history (his shame is six generations of Teutoburg, in this exact forest); if any character knows that, it lands harder. Varro is not present to react to it himself. |
 | 7 | Spear goes quiet for hours, then resumes stronger. Corruption 2+: DC 11 Wisdom save or urge to unwrap it "just to check" |
 | 8 | Cold rain. Movement halved. Legate's trackers unaffected. No cloak = 1 level exhaustion without 2 hours shelter |
 | 9 | Abandoned camp, fire ash still warm. Investigation DC 11: three people fled south-southeast; one was dragged. Drag marks end 40 ft from fire at soft dark earth. One item left: sealed pouch, 6 days hardtack, a Brigantes bronze ring |
@@ -274,23 +276,23 @@ A small, ancient-looking Germanic woman. Oak staff carved with spiraling runes. 
 | Cross the fallen oak | Acrobatics DC 11 (active) | Knocked off: DC 13 Athletics or swept 20 ft downstream |
 | String a rope | Athletics DC 10 (active, group) | All subsequent crossings have advantage |
 
-**The Legate's advance force arrives exactly mid-crossing:**
-- 8 Legionaries (Guard stat blocks)
+**A small escort catches up exactly mid-crossing — not the full weight of the cohort:**
+- 3 Legionaries (Guard stat blocks)
 - 1 Centurion (Knight stat block, CR 3)
-- The Legate himself if still in the picture (Veteran stat block)
+- Corvinus himself is never here. He is "one day behind" all session, deliberately -- he wants the spear destroyed and cannot be seen letting it happen.
 
-**The split-party set piece:** Half on the far bank, half crossing. Ranged combat across the water (half cover). Melee on the fallen log.
+**The split-party set piece:** Half on the far bank, half crossing. Ranged combat across the water (half cover). Melee on the fallen log. This should resolve in a round or two against a handful of unmotivated men -- not a war.
 
-**Moral weight:** These soldiers are following orders. They've committed no crime. They have families.
+**Moral weight:** These soldiers are following soft orders ("prevent the crossing," not "kill them"). They don't want this fight either.
 
 | Option | Check | Outcome |
 |---|---|---|
 | Order them to stand down | Intimidation DC 14 (active, centurion-rank character) | Centurion hesitates, long enough to cross and deny the ford. 5 above: he signals hold. |
-| Claim mission is sanctioned | Deception DC 15 (needs tangible document or seal) | Without evidence: DC 18. With it: centurion wavers. Varro's one sentence lands it or kills it. |
+| Claim mission is sanctioned | Deception DC 15 (needs tangible document or seal) | Without evidence: DC 18. With it: centurion wavers. |
 | Destroy the log | No check | Severs pursuit. Anyone still on the near bank is cut off. |
-| Let them cross | — | Full fight. A fight the party may not win. |
+| Let them cross | — | Full fight, but a short one -- these four men are here to be seen trying, not to die for it. |
 
-*Varro (if present) will not fight his own men. He steps aside. The opposing centurion recognizes him. That hesitation may be all the time needed.*
+*Varro does not travel with the party this session (see the Prologue) -- he is not present at the river. If the fight happens anyway, the Centurion calls it off after the first solid hit: "Enough. Let them go. I did not sign on to die for a Senator's argument with the gods."*
 
 </details>
 
@@ -513,7 +515,8 @@ Any corruption below level 5 is reduced by 1. Level 5 characters remain affected
 | Was the ritual successful? | Yes: party carries Thusnelda's sealed clay jar (spear fragments). No: party carries the whole spear. |
 | Citizenship papers | Yes: Corvinus sends a clerk with draft commendationes forms. No: papers defer to Session 4 conclusion. |
 | Cassia's bog valerian | Gathered: Siege Ward available in Session 4 (3 uses, 2d8 HP + clear 1 exhaustion). Not gathered: no ward. |
-| Varro's relationship to his legionaries | River crossing: did he stay or step aside? Inform Session 4 loyalty dynamics. |
+| How did the Prologue's Varro fight resolve? | Killed, captured, or broken free -- affects the fort's mood and who's available to Session 4's cast. He does not travel with the party regardless. |
+| Did the party let the river-crossing escort stand down cleanly? | Informs whether Corvinus privately considers it well handled -- helps the citizenship-elevation window. |
 
 </details>
 
