@@ -411,7 +411,10 @@ specific to that room, and a clear hand-off to the next room.
   (Skeleton Fortress Entrance, Blood Cult Dungeon, Castle Core Room) and all new monster
   tokens (Banshee, Bone_Naga, Yochlol, Shadow_Demon, Dretch, existing Wraith/Glabrezu) are
   wired into build_campaign_maps.sh's S4 block
-- **Status:** not started — do this last, once room content is locked
+- **Status:** DONE (2026-08-22) -- chapter04_maptool.qmd rewritten with the scene table,
+  build_campaign_maps.sh's S4 block replaced (old siege-era assets removed), Glabrezu built
+  from scratch (npcs/glabrezu.json + creature_stats.json entry + token generated), script
+  run end-to-end and confirmed all 3 maps + 7 tokens copy cleanly
 
 ## Epic 9: Session 5 — The Final Dungeon and the Three Horrible Options
 

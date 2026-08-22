@@ -1,31 +1,25 @@
 ---
-title: "Chapter 4 — MapTool Reference"
-subtitle: "The God's Demand — maps, tokens, and scene transitions"
+title: "GM Session Guide: Chapter 4 (MapTool Reference)"
+subtitle: "The Blood Cult Dungeon — maps, tokens, and scene transitions"
 ---
 
 ## Maps and Tokens for Chapter 4
 
-Session 4 splits between the fort under siege and the hidden tunnels beneath the *principia*. Load all four maps before players join — transition at the exact cued moments.
+Session 4 is a single continuous dungeon crawl across three maps. Load all three before
+players join; reposition tokens room-by-room on the middle map rather than reloading it
+between scenes.
 
 ### Scene → Map → Tokens
 
 | Scene | Map File | Tokens to Place | Notes |
 |---|---|---|---|
-| Scene 0: Gate breach | `Maptool/maps/s4_fort_siege.html` (custom Vindolanda siege SVG), or `CastleWall`/`BridgeCheckpoint` as fallback | All PCs, Centurion_Varro, Guard ×8, Berserker ×4, Tribal_Warrior ×8 | Three simultaneous crises — split party likely. Brutus' agent (Quintus_Flavius renamed "Soldier") starts near shrine. |
-| Scene 1: Council | `saalburg_plan.jpg` (reference only) | Legate_Corvinus, Tribune_Lucius, Centurion_Varro, Augur_Cassia, all PCs | No combat. Use fort floor plan for NPC positioning only. Vercingetorix's envoy: off-screen runner. |
-| Scene 2: Preparation | `saalburg_plan.jpg` (reference only) | Same as Scene 1 | No new tokens. Players plan escort route on the floor plan. |
-| Scene 3: Tunnels — Armory | `Maptool/maps/s4_tunnel_armory.html` | All PCs, Animated_Armor ×4 | Animated Armor = constructs (divine resonance), not undead. No Turn Undead vulnerability. |
-| Scene 3: Tunnels — Choking Hall | `Maptool/maps/s4_tunnel_choking_hall.html` | All PCs, Cassia (if escort) | No combat tokens. Gas is environmental. Medicine DC 13 or Cassia spell to clear. |
-| Scene 3: Tunnels — Elder Stair | `Maptool/maps/s4_tunnel_elder_stair.html` | All PCs, Quintus_Flavius (Brutus' agent) | Rockfall trap: Dex save DC 15 or 2d8 bludgeoning. |
-| Scene 4: Antechamber | `NatureGoddessTemple` | All PCs, Augur_Cassia, Centurion_Varro, Legate_Corvinus | Same map as Ch1 altar chamber — intentional callback. No combat. Mars as voice only. |
-
-**Scene 0 sub-maps (optional — run on same CastleWall map, adjust narrative):**
-
-| Crisis | Focus area | Notes |
-|---|---|---|
-| Gate breach | North gate section | 3 rounds of Athletics DC 14 before engineers arrive |
-| Granary fire | West workshops area | Survival DC 15 each round; each failure = 1d6 rations lost |
-| Shrine desecration | Shrine doorway | Insight DC 14 to spot agent; contested Dex to intercept |
+| Scene 0: The Marsh | `Maptool/maps/dicegrimorium/SkeletonFortressEntrance/Skeleton Fortress Entrance Public/SkeletonFortressEntrancePublic.jpg` | All PCs, Tribune_Lucius, Banshee ×2 | Banshees rise when the party is mid-causeway, not on arrival. Stagger their Wails. |
+| Scene 1: The Ossuary | `Maptool/maps/dicegrimorium/BloodCultDungeon/Blood Cult Dungeon Public/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg` (west skull room) | All PCs, Bone_Naga ×2 | Position in the circular skull-shaped room, west side of the map. |
+| Scene 2: The Blood-Growth Rooms | Same map, east rooms | All PCs, Yochlol ×1, Dretch ×2 | The two rooms thick with fleshy growths, east side of the map. |
+| Scene 3: The Minor Altar | Same map, center room | All PCs, Shadow_Demon ×2 | The glowing dais + 4 pillars room at the map's center. |
+| Scene 4: The Rune Lock | Same map, south of center | All PCs (no combat tokens by default) | The room with the 4 glowing sigil tiles. Optional Dretch ambush if pacing needs it. |
+| Scene 5: The Gathering Hall | Same map, south end | All PCs, Wraith ×3 | The two chieftains + a devoted follower, all three Wraiths. Stagger Create Specter. |
+| Scene 6: The Core Room | `Maptool/maps/dicegrimorium/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg` | All PCs, Glabrezu ×1 | The circular sanctum with the crystal-star focus on the dais. |
 
 ---
 
@@ -46,13 +40,10 @@ Session 4 splits between the fort under siege and the hidden tunnels beneath the
 
 | Token | File | Scene | Frame Colour |
 |---|---|---|---|
-| Legate Corvinus | `Maptool/tokens/npcs/named/Legate_Corvinus.rptok` | S0–S4 | Red |
-| Tribune Lucius | `Maptool/tokens/npcs/named/Tribune_Lucius.rptok` | S1–S4 | Red (grey if players trust him) |
-| Centurion Varro | `Maptool/tokens/npcs/named/Centurion_Varro.rptok` | S0–S4 | Gold |
-| Augur Cassia | `Maptool/tokens/npcs/named/Augur_Cassia.rptok` | S0–S4 | Gold |
-| Vercingetorix | `Maptool/tokens/npcs/named/Vercingetorix_the_Red.rptok` | S0 (off-screen envoy), S4 (if invited) | Gold |
-| Senator Brutus | `Maptool/tokens/npcs/named/Senator_Brutus.rptok` | Off-screen all session — have token ready | Red |
-| Brutus' Agent | `Maptool/tokens/npcs/creatures/Quintus_Flavius.rptok` | S0 shrine, S3 Elder Stair | Red — rename to "Soldier" if Quintus unknown to party |
+| Tribune Lucius | `Maptool/tokens/npcs/named/Tribune_Lucius.rptok` | All scenes -- travels with the party per Session 3 | Grey (divided loyalty, not yet trusted or distrusted) |
+
+Legate Corvinus, Centurion Varro, and Augur Cassia do **not** appear this session -- they
+stayed at the fort. Do not place their tokens.
 
 ---
 
@@ -60,33 +51,58 @@ Session 4 splits between the fort under siege and the hidden tunnels beneath the
 
 | Creature | File | Scene | Count | Notes |
 |---|---|---|---|---|
-| Berserker | `Maptool/tokens/npcs/creatures/Berserker.rptok` | S0 gate breach | ×4 | Germanic lead assault |
-| Tribal Warrior | `Maptool/tokens/npcs/creatures/Tribal_Warrior.rptok` | S0 gate | ×8 | |
-| Guard (Legionary) | `Maptool/tokens/npcs/creatures/Legionary_(Milites).rptok` | S0 all crises | ×8 | Fort defenders |
-| Animated Armor | `Maptool/tokens/npcs/creatures/Animated_Armor.rptok` | S3 Sunken Armory | ×4 | Constructs — no Turn Undead |
-| Cultist of Mars | `Maptool/tokens/npcs/creatures/Cultist_of_Mars.rptok` | S3 tunnels optional | ×3 | If sleeper agents enter tunnels |
+| Banshee | `Maptool/tokens/npcs/creatures/Banshee.rptok` | Scene 0, the Marsh | ×2 | Rise mid-causeway, not on sight |
+| Bone Naga | `Maptool/tokens/npcs/creatures/Bone_Naga.rptok` | Scene 1, the Ossuary | ×2 | Trigger on disturbing the bone floor |
+| Yochlol | `Maptool/tokens/npcs/creatures/Yochlol.rptok` | Scene 2, Blood-Growth Rooms | ×1 | Starts hidden in spider form |
+| Dretch | `Maptool/tokens/npcs/creatures/Dretch.rptok` | Scene 2 (support), Scene 4 (optional) | ×2 (+1 optional) | Demon chaff; Fetid Cloud on recharge |
+| Shadow Demon | `Maptool/tokens/npcs/creatures/Shadow_Demon.rptok` | Scene 3, Minor Altar | ×2 | Shadow Stealth between the 4 pillars |
+| Wraith | `Maptool/tokens/npcs/creatures/Wraith.rptok` | Scene 5, Gathering Hall | ×3 | The two chieftains + one follower. Cap specters at 3 total. |
+| Glabrezu | `Maptool/tokens/npcs/creatures/Glabrezu.rptok` (generate if not yet present -- see note below) | Scene 6, Core Room | ×1 | Guards the crystal focus; Darkness/Confusion/Power Word Stun |
+
+::: {.dm-note}
+If `Glabrezu.rptok` doesn't exist yet in `Maptool/tokens/npcs/creatures/`, it needs a
+`npcs/glabrezu.json` sheet and a `creature_stats.json` entry generated the same way the
+other 5 Session 4 monsters were (see SCRUM_BACKLOG.md Epic 8's commit history) before
+this session can be run in MapTool.
+:::
 
 ---
 
 ### Map Files Location
 
-Campaign session folder: `Maptool/maps/campaign/S4_The_Gods_Demand/`
+These three maps are not yet copied into a campaign session folder --
+`build_campaign_maps.sh` needs a new S4 block matching this session's actual content
+(see below). Source files:
 
 ```
-s4_fort_siege.html     — custom Vindolanda siege overview SVG (Scene 0, preferred)
-CastleWall             — fort wall battle map (Scene 0 fallback)
-BridgeCheckpoint       — alternate gate map
-saalburg_plan.jpg      — fort interior reference (Scenes 1–2, no battle grid)
-s4_tunnel_armory.html      — Sunken Armory SVG battle map (Scene 3, 12×10 sq)
-s4_tunnel_choking_hall.html — Choking Hall SVG battle map (Scene 3, 6×12 sq)
-s4_tunnel_elder_stair.html  — Elder Stair SVG battle map (Scene 3, 14×14 sq, dry well)
-NatureGoddessTemple    — circular stone chamber (Scene 4 antechamber)
+Maptool/maps/dicegrimorium/SkeletonFortressEntrance/Skeleton Fortress Entrance Public/SkeletonFortressEntrancePublic.jpg
+Maptool/maps/dicegrimorium/BloodCultDungeon/Blood Cult Dungeon Public/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg
+Maptool/maps/dicegrimorium/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg
 ```
 
-Run `bash Maptool/maps/build_campaign_maps.sh` to copy session tokens into this folder (idempotent).
+Run `bash Maptool/maps/build_campaign_maps.sh` to copy session tokens into the campaign
+folder (idempotent) once the S4 block below is added.
 
-### The Tunnel Callback
+### Required build_campaign_maps.sh changes (S4 block)
 
-Scene 4's `NatureGoddessTemple` map is the same map used for the Ch1 altar chamber. This is intentional: the party arrives from a different direction (the old Roman water tunnel, not the excavation shaft), but the granite altar, the chain anchors in the floor, and the Wight's remains from Session 1 are all present. The session begins and ends in the same circle of stone.
+The current S4 block still copies old siege-era assets (`s4_fort_siege.html`, the tunnel
+SVGs, `NatureGoddessTemple`, Berserker/Tribal_Warrior/Legionary crowds, Quintus_Flavius,
+Cultist_of_Mars). All of that is obsolete for this session's actual content. Replace with:
 
-Narrate the recognition: *"The altar. The chains. You've been here before."*
+```bash
+# Dice Grimorium / custom maps for the Blood Cult Dungeon
+cp "$DG/SkeletonFortressEntrance/Skeleton Fortress Entrance Public/SkeletonFortressEntrancePublic.jpg" "$S/"
+cp "$DG/BloodCultDungeon/Blood Cult Dungeon Public/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg" "$S/"
+cp "$DG/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg" "$S/"
+
+# NPCs
+copy_npc "Tribune_Lucius" "$S"
+
+# Creatures
+for slug in Banshee Bone_Naga Yochlol Dretch Shadow_Demon Wraith Glabrezu; do
+  copy_npc "$slug" "$S"
+done
+```
+
+This is deliberate design work for Story 8.8, not yet applied to the actual script --
+apply it as its own commit once confirmed.

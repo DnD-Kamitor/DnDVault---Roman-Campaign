@@ -241,38 +241,24 @@ done
 
 # ---------------------------------------------------------------------------
 echo ""
-echo "=== Session 4: The God's Demand ==="
+echo "=== Session 4: The Blood Cult Dungeon ==="
 S="$DEST/S4_The_Gods_Demand"
 mkdir -p "$S"
 
-# Dice Grimorium maps
-copy_map CastleWall           "$S"
-copy_map BridgeCheckpoint     "$S"
-copy_map NatureGoddessTemple  "$S"
+# Dice Grimorium maps -- the marsh entrance, the main dungeon, the Core Room
+cp "$DG/SkeletonFortressEntrance/Skeleton Fortress Entrance Public/SkeletonFortressEntrancePublic.jpg" "$S/" 2>/dev/null \
+  && echo "   + SkeletonFortressEntrance" || echo " [miss] SkeletonFortressEntrance"
+cp "$DG/BloodCultDungeon/Blood Cult Dungeon Public/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg" "$S/" 2>/dev/null \
+  && echo "   + BloodCultDungeon" || echo " [miss] BloodCultDungeon"
+cp "$DG/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg" "$S/" 2>/dev/null \
+  && echo "   + CastleCoreRoom" || echo " [miss] CastleCoreRoom"
 
-# Custom SVG battle maps
-copy_svg s4_fort_siege             "$S"  # Scene 0: siege of Fort Vindolanda
-copy_svg s4_tunnel_armory          "$S"  # Scene 3: Sunken Armory (Animated Armor ×4)
-copy_svg s4_tunnel_choking_hall    "$S"  # Scene 3: Choking Hall (gas hazard)
-copy_svg s4_tunnel_elder_stair     "$S"  # Scene 3: Elder Stair (rockfall + Quintus)
+# NPCs: only Lucius travels with the party this session (Corvinus/Varro/Cassia stay at the fort)
+copy_npc "Tribune_Lucius" "$S"
 
-cp "$FORT_IMGS/saalburg_plan.jpg"     "$S/" 2>/dev/null || true
-cp "$FORT_IMGS/saalburg_fort.jpg"     "$S/" 2>/dev/null || true
-cp "$FORT_IMGS/castra_layout.svg"     "$S/" 2>/dev/null || true
-cp "$FORT_IMGS/vindolanda_aerial.jpg" "$S/" 2>/dev/null || true
-echo "   + fort reference images"
-
-for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro Vercingetorix_the_Red \
-            Thusnelda Senator_Brutus Valeria_the_Medicus \
-            Sigrun_the_Trader Arnulf_the_Firekeeper Edda_the_Spear-Mother \
-            Skadi_the_Healer Aldric_the_Gaul; do
-  copy_npc "$slug" "$S"
-done
-
-# Creatures: siege forces, tunnel constructs, grove spirits
-# Quintus_Flavius: Brutus' agent — shrine (S0) + Elder Stair (S3 tunnel)
-for slug in Guard Legionary Berserker Cultist_of_Mars Tribal_Warrior \
-            Wight Will-o-Wisp Dryad Animated_Armor Knight Quintus_Flavius; do
+# Creatures: the Blood Cult Dungeon's monster roster (all real Monster Manual
+# demons/undead, no generic filler -- see SCRUM_BACKLOG.md Epic 8)
+for slug in Banshee Bone_Naga Yochlol Dretch Shadow_Demon Wraith Glabrezu; do
   copy_npc "$slug" "$S"
 done
 

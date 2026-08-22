@@ -2775,5 +2775,44 @@
     "traits": [
       "Chaff, not a threat alone: dretches exist to fill rooms and force the party to split attention while the real threat (a stronger demon or the room's undead) does the actual damage."
     ]
+  },
+  "Glabrezu": {
+    "hp": 157,
+    "ac": 17,
+    "speed": "40 ft.",
+    "str": 20,
+    "dex": 15,
+    "con": 21,
+    "int": 19,
+    "wis": 17,
+    "cha": 16,
+    "saves": {
+      "STR": 9,
+      "CON": 9,
+      "WIS": 7,
+      "CHA": 7
+    },
+    "skills": {},
+    "cr": "9",
+    "resistances": "cold, fire, lightning",
+    "immunities": "poison; poisoned",
+    "attacks": [
+      {
+        "label": "Pincer (part of Multiattack)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d10]/me lunges with a massive crab-like claw — PINCER! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — the pincer closes with a sound like a door slamming!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"connects!\"]<br>ATK: [e: atk+9] reach 10 ft | DMG: [e: dmg+5] bludgeoning, and if the target is Medium or smaller it is <b>grappled</b> (escape DC 15). The glabrezu has two pincers and can grapple two different creatures at once."
+      },
+      {
+        "label": "Fist (part of Multiattack, only vs. a creature grappled by a pincer)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d4]/me drives a fist into whatever its pincer is already holding — FIST! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"connects!\"]<br>ATK: [e: atk+9] reach 5 ft | DMG: [e: dmg+3] bludgeoning<br><i style='color:#c88020'>Multiattack: two pincers, then two fists (only against targets already grappled by a pincer) -- or it forgoes some/all of its attacks to cast a spell instead.</i>"
+      },
+      {
+        "label": "Innate Spellcasting",
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>INNATE SPELLCASTING</b> (CHA, DC 16) — at will: darkness, dispel magic, detect magic. 1/day each: confusion, fly (self only), power word stun.\"]<br><i style='color:#c88020'>Open the fight with Darkness centered on whatever it is guarding, then Power Word Stun on whoever gets closest. Magic Resistance: advantage on saves vs spells/magical effects.</i>"
+      }
+    ],
+    "traits": [
+      "Magic Resistance: advantage on saving throws against spells and other magical effects.",
+      "Truesight 120 ft: sees through darkness, illusions, and shapechanged forms without being fooled."
+    ]
   }
 }
