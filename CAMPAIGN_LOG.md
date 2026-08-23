@@ -233,16 +233,17 @@ the fighting gets, the more of Mars slips through. Save the design work for the 
 **Party:** Level 5-6, five core PCs (Artificer, Druid, Bard, Cleric, and a Barbarian
 among the original five) plus Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3).
 
-**Where they are:** Fort Vindolanda, immediately after Session 2's raid, mid-resolution
-of the Varro fight. About to depart for the forest (Session 3) once that resolves.
+**Where they are:** Fort Vindolanda. The Varro/Ursula gate fight has concluded (Varro
+is dead) and the party has since prayed to the gods and received a direct divine
+response — see Session 3 entry below. About to depart for the forest.
 
 **Key NPC status:**
 
 | NPC | Status | Notes |
 |---|---|---|
 | Legate Corvinus | Alive, authority damaged | Discredited by the security failure. Already secretly wants the spear destroyed (established in his existing OGAS) — separate, human, political reasoning from Mars's or Varro's. |
-| Centurion Varro | **Corrupted — mid-fight with Ursula at the gate** | Opened the gate, killed a scout, declared "I did this for Rome." Corruption source: his own inherited Teutoburg-legacy terror, amplified by the spear, not an external Brutus mechanism. **Resolving this fight is Session 3's first scene.** |
-| Tribune Lucius | Took command of the fort | Arminius-shaped: fostered among a Germanic tribe as a boy, divided loyalty, won't touch the spear. Real orders from Rome (bring it back) conflict with his real private conviction (it must never leave). Guards a personal locked box — contents undecided, reveal in play. Not his father's agent; possibly not even aware of his own full position yet. |
+| Centurion Varro | **Dead** | Killed when the gate fight with Ursula concluded. Opened the gate, killed a scout, declared "I did this for Rome" before falling. Corruption source: his own inherited Teutoburg-legacy terror, amplified by the spear, not an external Brutus mechanism. |
+| Tribune Lucius | Took command of the fort | Arminius-shaped: fostered among a Germanic tribe as a boy, divided loyalty, won't touch the spear. Real orders from Rome (bring it back) conflict with his real private conviction (it must never leave). **The party now knows his Germanic-fostering heritage** — how exactly they learned it (lockbox contents, his own admission, or otherwise) not yet detailed here; fill in once confirmed. |
 | Augur Cassia | Per script, alive/present | No deviation reported. |
 | Vercingetorix | Ally (post-raid) | **Led the Session 2 attack on the fort** — not a betrayal of a prior alliance; this was the latest iteration of a war he's been bound to fight for two centuries, mirroring the Wight. Something in the party's conduct broke through and stopped him mid-raid, seeding the current alliance. "He is dying, this is his final campaign" now carries the weight of finally being allowed to end, not simple illness. |
 | Senator Brutus | Off-screen, never appears | Wants the spear kept from Rome for political reasons that happen to align with Mars's preference — whether by coincidence or manipulation is deliberately unresolved. |
@@ -277,11 +278,30 @@ box he guards closely.
 
 Everything else: per script, unless corrected here later.
 
-## Session 3: Through the Dark Forest — UPCOMING
+## Session 3: Through the Dark Forest — IN PROGRESS
 
-**Plan:** Cold open resolves the Varro fight and Lucius's takeover as a new prologue
-scene, then the party departs for the forest per the existing (revised) session
-content. Update this entry with what actually happens once played.
+**Cold open, as played:** The Varro/Ursula gate fight resolved with Varro's death.
+Afterward, the party prayed to the gods at the fort. Mars answered directly, speaking
+of his hunger and of the history between Vercingetorix and Caesar (the Alesia betrayal,
+the spear passing hands, the two-hundred-year unfinished war — see "THE REAL STORY"
+above). Janus also spoke, and told the party that Mars is neither simply good nor
+simply evil. A message was carved into the ground: **"Mars sees everything."** The party
+also learned Tribune Lucius's Germanic-fostering heritage.
+
+**Major deviation from plan — flag for Session 4-5 prep:** The Vercingetorix/Caesar
+backstory was written to surface gradually through play (knowledge checks, Thusnelda's
+hints) and land as a full first confirmation in Vercingetorix's Final Death monologue
+in Session 5. The party now already has this history directly from Mars, two sessions
+early. When prepping Sessions 4-5: do not write scenes as if this is new information to
+the party; Vercingetorix's Final Death in Session 5 should read as *confirmation and
+emotional weight from him personally*, not as the first reveal of facts they already
+have. Also note: **Janus has now appeared as an active divine figure**, unestablished
+anywhere else in the campaign's written material (only Mars was designed as the Divine
+Antagonist). Decide his role — one-time messenger, recurring presence, or otherwise —
+before Session 4 prep, and give him an OGAS if he's going to recur.
+
+Everything else this session: not yet played / not yet reported. Update this entry
+further as the rest of Session 3 unfolds.
 
 ---
 
