@@ -15,9 +15,10 @@ Open these maps in MapTool before the session. Switch maps at each scene transit
 | Scene 2: Thusnelda's Scouts | `s3_germanic_village.html` | 12× Tribal_Warrior, 2× Scout, Thusnelda, Hilde, Aldric, Vercingetorix (if present), Cassia (if present) | Reveal Thusnelda after ambush ends. Thusnelda frame: grey → gold if alliance secured. Aldric leaves before the party departs for the grove. |
 | Scene 3: The Bridge Crossing | `ForestBridgeCrossingPublic.jpg` | All PCs, Thusnelda, Hilde, 1× Knight (Centurion), 6× Legionary_Milites | RP beat first (no tokens needed) — let the table talk before placing the Roman escort. Place Romans on far bank when they arrive. |
 | Scene 3b: The Farbog | `s3_farbog_crossing.html` | All PCs, Thusnelda (if guide), Arnulf (at the sacrifice site), 1× Specter (bog spirit, invisible until revealed), 3× Will-o-Wisp | Specter token: keep off-screen until the party ignores it 10+ min. |
-| Scene 4: Abandoned Village | `AbandonedVillagePublic.jpg` or `AbandonedVillageVol2Public.jpg` | All PCs, Thusnelda, Hilde | Village discovery beats (longhouse, ritual circle, grave-marker). Optional: 2× Vaettir or 1× Haugbui if the table lingers at the circle. |
-| Scene 4 cont'd: The Ritual Site | `s4_sacred_grove_overview.html` for arrival orientation, then `s4_sacred_grove.html` for the battle map | All PCs, Thusnelda | Do NOT place the Scene 5 Stone_Golem tokens yet. Cover positions: north + south stones. |
-| Scene 5: Mars Intervenes | `s4_sacred_grove.html` | 3× Stone_Golem (120 HP each), all PCs | Golems start at altar. Cover positions displace movement by 1 round. The spear does NOT break here — see chapter3.qmd Conclusion. |
+| Scene 4: Abandoned Village | `AbandonedVillagePublic.jpg` or `AbandonedVillageVol2Public.jpg` | All PCs, Thusnelda, Hilde | Village discovery beats (longhouse, ritual circle, grave-marker). Hub scene — party chooses North (optional) or South (required) from here. |
+| Scene 4, North Path: The Living Grove (optional) | `NatureGoddessTemplePublic.jpg` | All PCs, Thusnelda, 1× Dryad, 1× Brown_Bear (only if disrespected) | RP-first encounter, no plot requirement. Reward: Nature's Blessing (advantage on next Survival/Insight check) if left in good standing. |
+| Scene 4, South Path: The Ritual Site | `s4_sacred_grove_overview.html` for arrival orientation, then `s4_sacred_grove.html` for the battle map | All PCs, Thusnelda | Required path. Do NOT place the Scene 5 Stone_Golem tokens yet. Cover positions: north + south stones. |
+| Scene 5: Mars Intervenes | `s4_sacred_grove.html` | 3× Stone_Golem (120 HP each), all PCs | Golems start at altar. Cover positions displace movement by 1 round. The spear does NOT break here — see chapter3.qmd Conclusion. The Skull Entrance is visible from this same map, 20 ft past the seventh stone — no separate travel scene, cut straight into Chapter 4 Scene 0. |
 
 ### Player Tokens
 
@@ -55,7 +56,8 @@ Open these maps in MapTool before the session. Switch maps at each scene transit
 | Specter (bog spirit) | `Maptool/tokens/npcs/creatures/Specter.rptok` | S3b Farbog | 1 |
 | Will-o-Wisp | `Maptool/tokens/npcs/creatures/Will-o-Wisp.rptok` | S3b Farbog | 3 |
 | Wight (Vættir) | `Maptool/tokens/npcs/creatures/Wight.rptok` | S3b deep bog | up to 2 |
-| Dryad (grove guardian) | `Maptool/tokens/npcs/creatures/Dryad.rptok` | S4 sacred grove | 1 |
+| Dryad (living grove guardian) | `Maptool/tokens/npcs/creatures/Dryad.rptok` | S4 North Path (optional) | 1 |
+| Brown Bear (grove defense, if disrespected) | `Maptool/tokens/npcs/creatures/Brown_Bear.rptok` | S4 North Path (optional) | 1 |
 
 ### Map Files Location
 

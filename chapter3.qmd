@@ -626,9 +626,49 @@ expects.
 
 3. **The elder's grave-marker (History DC 15, or ask Thusnelda directly -- she will answer if asked plainly, not volunteer it).** A single standing stone apart from the others, carved with a name in a script older than the runic contract tokens from the Session 1 vault. Thusnelda: *"She was the first of us. She thought the binding could be finished here, with fire and iron, blood and stone. She was certain. I have spent sixty years believing she was simply unlucky."*
 
-**Optional beat, if the table needs momentum here (not required):** 2 **Vættir** or a single **Haugbui**, drawn to the old scar at the circle's center, territorial rather than hostile at first -- they attack only if the party lingers there past a clear warning. A chance to remind the table the land itself remembers what happened here, not a mandatory fight.
-
 **Handout opportunity:** a fragment of the shattered clay mold, or a rubbing of the elder's grave-marker script -- DM's choice which becomes a physical prop.
+
+<details>
+<summary><strong>Two Paths from the Village</strong></summary>
+
+Past the stockade, the treeline splits around a shoulder of high ground. Thusnelda points out both without being asked:
+
+> *"North, the old grove -- alive, still tended, once. South, the stones where my teacher's teacher tried and failed." A pause. "The stones are why we came. The grove is not required. But it is there, if any of you want to see something in this forest that isn't a wound."*
+
+**North -- the Living Grove (optional).** A genuinely peaceful detour: green, quiet, tended in a way the ritual circle is not. Good ground for a character moment or a fight that isn't about the spear at all. See below.
+
+**South -- the Ritual Stones (required).** The scorched circle from Clue 2. This is where the ritual happens, and where the path continues underground afterward -- see "The South Path," below.
+
+</details>
+
+<details>
+<summary><strong>North Path: The Living Grove</strong> (optional)</summary>
+
+**Read aloud:**
+
+> *The trees here are older, and someone has kept the undergrowth clear for longer than living memory would explain. Sunlight actually reaches the ground. Birdsong, real birdsong, for the first time since the forest swallowed the road behind you. A ring of younger oaks, maybe eighty years old, grows in a rough circle around a spring-fed pool. The water is perfectly still.*
+
+This grove belongs to no one in particular -- older than Thusnelda's order, tended out of habit and respect rather than doctrine. A **Dryad** lives here, and has for longer than anyone in the party's lifetime.
+
+**How she reacts:** Not hostile by default. She manifests from one of the younger oaks once the party is inside the ring, and studies them before speaking -- Thusnelda she recognizes and nods to; the rest are strangers.
+
+> *"You carry something that doesn't belong to this forest." Her eyes go to whoever is closest to the spear, or to the influenced NPC specifically if their condition shows at all. "It has been making noise for three days. I felt it before I saw you."*
+
+**RP path.** She asks questions, not favors -- she is curious about Rome, about the spear's origin, about why the party is really here, in that order. A character who answers honestly (no check needed, just genuine roleplay) can ask one question back and get a straight answer. Good candidates for the table to ask her:
+- Whether she knows anything about the elder buried to the south (she does -- *"I told her not to. She did not listen. Grief rarely does."*)
+- Whether the grove can help the influenced character (she can't cure them, but she can name it aloud without flinching, which is its own small relief -- *"Whatever it is, it isn't all of you yet. Whoever wins that argument, win it before the stones."*)
+- Whether Mars can reach this place (*"Not yet. This is not his war. But wars borrow ground from wherever's closest, sooner or later."*)
+
+**Combat path, if the party is disrespectful** (drinking from or fouling the pool without asking, cutting a living tree, drawing weapons on her without provocation): she does not warn twice. She fights to drive the party out, not to kill -- Entangle, then retreat into the canopy, using **1 Dryad** plus, if the party presses the fight, **1 Brown Bear** she calls to her aid. She stops the moment the party disengages or leaves the ring; this is a grove defending itself, not a grudge.
+
+**What the grove offers, if the party leaves it in better standing than they found it** (genuine respect, a real answer given to her honestly, or simply leaving without incident): one **Nature's Blessing** -- advantage on the next Wisdom (Survival) or Wisdom (Insight) check any one character makes before the party reaches the Skull Entrance. Small, real, not a combat boost. This is not required for anything downstream; it's a reward for engaging with content that has no plot obligation attached.
+
+</details>
+
+<details>
+<summary><strong>South Path: The Ritual Stones</strong> (required)</summary>
+
+**Optional beat, if the table needs momentum here (not required):** 2 **Vættir** or a single **Haugbui**, drawn to the old scar at the circle's center, territorial rather than hostile at first -- they attack only if the party lingers there past a clear warning. A chance to remind the table the land itself remembers what happened here, not a mandatory fight.
 
 Survival DC 11 (active: reading the grove's physical approach before stepping inside the ring): The ground between the standing stones is clear of undergrowth in a perfect circle, but the grass has not been grazed -- it is simply absent. The stones are positioned at angles that create two natural cover positions: behind the north stone and behind the south stone. A character who notes this before the ritual begins identifies where to stand if the standing stones animate -- the cover positions displace animated stone guardian movement by one full round.
 
@@ -663,11 +703,22 @@ Thusnelda lays out what is needed:
 | Cassia volunteers herself | Death, willingly | More than acceptable — Thusnelda tries to stop her |
 | Something with no real cost | Any item worth less than the character cares about | *The altar goes cold. Nothing happens. The grove knows.* |
 
+::: {.dm-note}
+If Cassia offers herself and the party doesn't stop her: let it land as the single
+heaviest option on this table, exactly as heavy as her death should be -- and it still
+doesn't destroy the spear (see Conclusion, below). Nothing on this table does. That is the
+point. Do not soften this by having her sacrifice be the one that "actually works" -- the
+whole scene's weight depends on even the ultimate offer failing for the same reason a
+smaller one would.
+:::
+
 **The influenced NPC's crisis moment:**
 
 As the ritual begins, the influenced NPC feels the connection intensify. This is the moment they either break free or break.
 
 If detected and supported: the party can help them resist with a group Wisdom check (DC 14). Success means they participate in the ritual and their corruption is cleared by the grove's power. Failure means they physically grab for the spear mid-ritual — not maliciously, but driven. They can be stopped without combat (Athletics grapple DC 12, or someone calling their name three times). If stopped this way, they collapse, weeping, with no memory of the last hour.
+
+</details>
 
 </details>
 
@@ -760,24 +811,32 @@ specifically, not as a rules technicality for the table.
 > *"No," she says, very quietly, to no one. "No. We were never doing this in the right place." She looks up, and for the first time since the party met her, she looks lost. "She didn't fail because the sacrifice was wrong. She failed because this was never where it needed to happen. It happened underground. Where it was made. Where it was bound the first time."*
 >
 > *"I have spent my whole life tending the wrong altar."*
+>
+> *She turns, and points past the seventh stone. What you took for another slab of exposed rock at the circle's southern edge is a mouth -- a fissure in the hillside just wide enough to walk into, ringed with what might once have been carved teeth. Something that looks very much like a skull, if a hillside could wear one. It was here the entire time, twenty feet from where the ritual just failed.*
+>
+> *"There," Thusnelda says. "That is where she should have gone. That is where I should have taken you from the start."*
 
 **If the party fully succeeded at the Skill Challenge or struck Mars's bargain:** the spear is meaningfully weakened -- its corruption pressure eases (any corruption below level 5 is reduced by 1; Level 5 characters remain affected, same as before), and Mars's presence withdraws without further violence. This was not wasted effort. It just wasn't the ending.
 
 **If the ritual failed or was interrupted:** the spear remains at full strength, Mars's presence lingers hostile a moment longer before withdrawing, and the party carries a heavier weight into what comes next.
 
-**Either way:** the influenced NPC's crisis moment (see above) still resolves the same way it would have -- caught or not, the corruption thread still matters going forward. The party now knows, with total certainty, where they actually have to go: underground, to the place the spear was first bound, at the Skull Entrance in the marsh Thusnelda's people have always known about and never dared approach.
+**Either way:** the influenced NPC's crisis moment (see above) still resolves the same way it would have -- caught or not, the corruption thread still matters going forward. The Skull Entrance is right there, at the ritual circle's own edge -- no further travel, no montage. Whatever they do next, they do it now, at the mouth of the thing they came looking for.
 
 **Advance to Level 6**
 
 ::: {.dm-note}
 **Transition to the dungeon**
 
-The party always carries the whole spear (weakened or not, per the outcome above) into
-the Blood Cult Dungeon -- there is no fragments-in-a-clay-jar branch anymore, since the
-spear is never destroyed here. Thusnelda comes with them if she has earned enough trust
-(see her OGAS session-state table) -- this is personal for her now, not professional
-courtesy. If she's present in the dungeon, she is a witness, not a guide: she has never
-been past the Skull Entrance herself, and says so plainly.
+The Skull Entrance sits directly off the ritual circle -- the south path from the village
+ends here, not at a separate marsh requiring its own travel day. Cut straight from this
+scene into Chapter 4's Scene 0 with no time skip; the marsh causeway described there is
+simply the ground immediately outside this cave mouth. The party always carries the whole
+spear (weakened or not, per the outcome above) into the Blood Cult Dungeon -- there is no
+fragments-in-a-clay-jar branch anymore, since the spear is never destroyed here. Thusnelda
+comes with them if she has earned enough trust (see her OGAS session-state table) -- this
+is personal for her now, not professional courtesy. If she's present in the dungeon, she
+is a witness, not a guide: she has never been past the Skull Entrance herself, and says so
+plainly.
 
 Add this to the Session 4 opening tracking table:
 
