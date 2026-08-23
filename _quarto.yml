@@ -46,27 +46,27 @@ book:
         - germanic_tribes.qmd
         - locations.qmd
         - camp_economy.qmd
-        - chapter1.qmd
-        - chapter2.qmd
-        - chapter3.qmd
-        - chapter4.qmd
-        - chapter5.qmd
-        - appendix.qmd
         - gm_tools/session_template.qmd
-        - gm_tools/chapter01_maptool.qmd
+        - chapter1.qmd
         - gm_tools/chapter01_guide.qmd
+        - gm_tools/chapter01_maptool.qmd
+        - chapter2.qmd
         - gm_tools/chapter02_guide.qmd
         - gm_tools/chapter02_maptool.qmd
         - handouts/chapter02_handouts.qmd
-        - gm_tools/chapter03_maptool.qmd
+        - chapter3.qmd
         - gm_tools/chapter03_guide.qmd
+        - gm_tools/chapter03_maptool.qmd
         - handouts/chapter03_handouts.qmd
-        - gm_tools/chapter04_maptool.qmd
+        - chapter4.qmd
         - gm_tools/chapter04_guide.qmd
+        - gm_tools/chapter04_maptool.qmd
         - handouts/chapter04_handouts.qmd
-        - gm_tools/chapter05_maptool.qmd
+        - chapter5.qmd
         - gm_tools/chapter05_guide.qmd
+        - gm_tools/chapter05_maptool.qmd
         - handouts/chapter05_handouts.qmd
+        - appendix.qmd
 
 format:
   html:
