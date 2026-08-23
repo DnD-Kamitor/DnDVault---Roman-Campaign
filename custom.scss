@@ -90,7 +90,14 @@ $table-border-color:   $border-warm;
 // ============================================================
 // FONT IMPORT
 // ============================================================
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Courier+Prime&family=Spectral:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Courier+Prime&family=Spectral:wght@400;500;600&family=Noto+Sans+Runic&display=swap');
+
+// Elder Futhark glyphs (U+16A0-16FF) aren't covered by EB Garamond/Cinzel/Spectral --
+// without this they render as blank boxes. Wrap any rune character in
+// <span class="rune-glyph">.
+.rune-glyph {
+  font-family: 'Noto Sans Runic', serif;
+}
 
 
 // ============================================================
