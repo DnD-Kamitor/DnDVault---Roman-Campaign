@@ -9,8 +9,20 @@
   "ac": 17,
   "ac_note": "natural armor",
   "speed": "40 ft.",
-  "ability_scores": {"STR": 20, "DEX": 15, "CON": 21, "INT": 19, "WIS": 17, "CHA": 16},
-  "saving_throw_proficiencies": ["STR", "CON", "WIS", "CHA"],
+  "ability_scores": {
+    "STR": 20,
+    "DEX": 15,
+    "CON": 21,
+    "INT": 19,
+    "WIS": 17,
+    "CHA": 16
+  },
+  "saving_throw_proficiencies": [
+    "STR",
+    "CON",
+    "WIS",
+    "CHA"
+  ],
   "skill_proficiencies": [],
   "skill_overrides": {},
   "resistances": "cold, fire, lightning",
@@ -20,7 +32,7 @@
   "languages": "Abyssal, telepathy 120 ft.",
   "macro_file": "",
   "token_color": "#3a1a1a",
-  "portrait_file": "",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Glabrezu/Glabrezu (1).webp",
   "notes": "CR 9. Magic Resistance. Innate spellcasting: darkness, dispel magic, detect magic at will; confusion, fly, power word stun 1/day. Multiattack: 2 pincers (grapple) + 2 fists vs grappled targets.",
   "gm_notes": "Session 4 -- Blood Cult Dungeon, Core Room final guardian. Bound to the crystal-star focus, not just placed near it. Opens with Darkness over the dais, then isolates whoever gets closest with Power Word Stun.",
   "session": 4

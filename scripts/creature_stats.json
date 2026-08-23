@@ -49,7 +49,7 @@
     "attacks": [
       {
         "label": "Bite (Pack Tactics + Prone)",
-        "raw_cmd": "[h: atk=1d20][h: d1=1d6][h: d2=1d6][h: proneroll=1d20]/me <b>CHARGES</b> with bone-crushing force! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL \u2014 tears through armour!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"bites!\"]<br>ATK: [e: atk+5] | DMG: [e: d1+d2+3] piercing (2d6+3)<br>Target STR save: [e: proneroll] vs DC 13 \u2014 [r, if(proneroll>=13): \"<b style='color:green'>stays upright</b>\"; \"<b style='color:#e74c3c'>KNOCKED PRONE \u2014 prone target: all attacks have advantage, dire wolf bonus action to savage (re-roll damage, take higher)</b>\"]<br><i style='color:#8a6030'>Pack Tactics: advantage when any ally within 5ft of target. These are not pets \u2014 the warband released them at the gate when the drums started. They attack the most injured target first (lowest visible HP).</i>"
+        "raw_cmd": "[h: atk=1d20][h: d1=1d6][h: d2=1d6][h: proneroll=1d20]/me <b>CHARGES</b> with bone-crushing force! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL — tears through armour!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"bites!\"))]<br>ATK: [e: atk+5] | DMG: [e: d1+d2+3] piercing (2d6+3)<br>Target STR save: [e: proneroll] vs DC 13 — [r, if(proneroll>=13): \"<b style='color:green'>stays upright</b>\"; \"<b style='color:#e74c3c'>KNOCKED PRONE — prone target: all attacks have advantage, dire wolf bonus action to savage (re-roll damage, take higher)</b>\"]<br><i style='color:#8a6030'>Pack Tactics: advantage when any ally within 5ft of target. These are not pets — the warband released them at the gate when the drums started. They attack the most injured target first (lowest visible HP).</i>"
       }
     ],
     "traits": [],
@@ -178,7 +178,7 @@
         "dice": "1d6+2",
         "type": "piercing",
         "note": "",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me creaks forward and stabs with a corroded shortsword! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the point punches clean between the ribs!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 brittle finger-bones lose their grip on the hilt!</b>\"; \"thrusts!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing<br><i style='color:#8a6030'>No breath, no hesitation, no fear of the wound it's about to take. Whatever gave it its orders isn't in the room.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me creaks forward and stabs with a corroded shortsword! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the point punches clean between the ribs!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — brittle finger-bones lose their grip on the hilt!</b>\", \"thrusts!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing<br><i style='color:#8a6030'>No breath, no hesitation, no fear of the wound it's about to take. Whatever gave it its orders isn't in the room.</i>"
       },
       {
         "label": "Shortbow",
@@ -187,7 +187,7 @@
         "dice": "1d6+2",
         "type": "piercing",
         "note": "",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me draws a warped shortbow with a dry rattle of finger-bones! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the arrow finds the eye socket's twin!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the bowstring snaps against brittle bone!</b>\"; \"looses an arrow!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (80/320 ft.)<br><i style='color:#8a6030'>It doesn't blink, because it can't. It just keeps drawing.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me draws a warped shortbow with a dry rattle of finger-bones! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the arrow finds the eye socket's twin!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the bowstring snaps against brittle bone!</b>\", \"looses an arrow!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (80/320 ft.)<br><i style='color:#8a6030'>It doesn't blink, because it can't. It just keeps drawing.</i>"
       }
     ],
     "traits": [],
@@ -217,7 +217,7 @@
         "dice": "1d6+1",
         "type": "bludgeoning",
         "note": "",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me lurches forward and slams with a rotting fist! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 bone cracks under the blow!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the swing overbalances the rotten frame entirely!</b>\"; \"slams!\"]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] bludgeoning<br><i style='color:#8a6030'>Slow. Relentless. It does not register the wounds you give it \u2014 not until something asks its body to actually stop.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me lurches forward and slams with a rotting fist! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — bone cracks under the blow!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the swing overbalances the rotten frame entirely!</b>\", \"slams!\"))]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] bludgeoning<br><i style='color:#8a6030'>Slow. Relentless. It does not register the wounds you give it — not until something asks its body to actually stop.</i>"
       },
       {
         "label": "Undead Fortitude (0 HP save)",
@@ -226,7 +226,7 @@
         "dice": "0",
         "type": "utility",
         "note": "DC 5 + damage taken CON save (Zombie CON 16, +3) to drop to 1 HP instead of 0. Fails automatically against radiant damage or a critical hit.",
-        "raw_cmd": "[h: dmg = input(\"dmg|Damage that reduced the Zombie to 0 HP|0|NUMBER\")][h: save=1d20+3][h: dc=5+dmg]/me refuses to fall \u2014 <b>UNDEAD FORTITUDE!</b><br>CON save: [e: save] vs DC [e: dc] (5 + damage taken) \u2014 [r, if(save>=dc): \"<b style='color:green'>SUCCEEDS \u2014 drops to 1 HP instead of 0. It is still standing.</b>\"; \"<b style='color:red'>FAILS \u2014 the body finally stops moving.</b>\"]<br><i style='color:#8a6030'>Does not trigger against radiant damage or a critical hit \u2014 the corpse falls the normal way in either case.</i>"
+        "raw_cmd": "[h: dmg = input(\"dmg|Damage that reduced the Zombie to 0 HP|0|NUMBER\")][h: save=1d20+3][h: dc=5+dmg]/me refuses to fall — <b>UNDEAD FORTITUDE!</b><br>CON save: [e: save] vs DC [e: dc] (5 + damage taken) — [r, if(save>=dc): \"<b style='color:green'>SUCCEEDS — drops to 1 HP instead of 0. It is still standing.</b>\"; \"<b style='color:red'>FAILS — the body finally stops moving.</b>\"]<br><i style='color:#8a6030'>Does not trigger against radiant damage or a critical hit — the corpse falls the normal way in either case.</i>"
       }
     ],
     "traits": [
@@ -256,7 +256,7 @@
         "dice": "2d6+2 / 2d4+2",
         "type": "piercing/slashing",
         "note": "Bite 2d6+2 piercing (atk +2, no effect). Claws 2d4+2 slashing (atk +4, DC 10 CON save or paralysed until end of next turn; elves immune).",
-        "raw_cmd": "[h: atk1=1d20][h: dmg1=2d6][h: atk2=1d20][h: dmg2=2d4][h: save=1d20]/me lunges in with rot-black claws and needle teeth!<br>Bite: [r, if(atk1==20): \"<b style='color:#e74c3c'>CRITICAL</b>\"; if(atk1==1): \"<b style='color:red'>FUMBLE</b>\"; \"hits\"] \u2014 ATK [e: atk1+2] | DMG [e: dmg1+2] piercing<br>Claws: [r, if(atk2==20): \"<b style='color:#e74c3c'>CRITICAL</b>\"; if(atk2==1): \"<b style='color:red'>FUMBLE</b>\"; \"hits\"] \u2014 ATK [e: atk2+4] | DMG [e: dmg2+2] slashing<br>On a Claws hit \u2014 target CON save: [e: save] vs DC 10 \u2014 [r, if(save>=10): \"<b style='color:green'>resists \u2014 stays clear-headed.</b>\"; \"<b style='color:#e74c3c'>PARALYSED until the end of its next turn.</b> (Elves are immune to this paralysis.)\"]<br><i style='color:#c88020'>Multiattack: one Bite and one Claws, every turn it can reach a target.</i>"
+        "raw_cmd": "[h: atk1=1d20][h: dmg1=2d6][h: atk2=1d20][h: dmg2=2d4][h: save=1d20]/me lunges in with rot-black claws and needle teeth!<br>Bite: [r: if(atk1==20, \"<b style='color:#e74c3c'>CRITICAL</b>\", if(atk1==1, \"<b style='color:red'>FUMBLE</b>\", \"hits\"))] — ATK [e: atk1+2] | DMG [e: dmg1+2] piercing<br>Claws: [r: if(atk2==20, \"<b style='color:#e74c3c'>CRITICAL</b>\", if(atk2==1, \"<b style='color:red'>FUMBLE</b>\", \"hits\"))] — ATK [e: atk2+4] | DMG [e: dmg2+2] slashing<br>On a Claws hit — target CON save: [e: save] vs DC 10 — [r, if(save>=10): \"<b style='color:green'>resists — stays clear-headed.</b>\"; \"<b style='color:#e74c3c'>PARALYSED until the end of its next turn.</b> (Elves are immune to this paralysis.)\"]<br><i style='color:#c88020'>Multiattack: one Bite and one Claws, every turn it can reach a target.</i>"
       }
     ],
     "traits": [
@@ -287,7 +287,7 @@
         "dice": "2d8+3 / 2d6+3",
         "type": "piercing/slashing",
         "note": "Bite 2d8+3 piercing (atk +5). Claws 2d6+3 slashing (atk +5, DC 10 CON save or paralysed until end of next turn). Stench aura DC 10 CON or poisoned. Turning Defiance within 30 ft. of a ghoul.",
-        "raw_cmd": "[h: atk1=1d20][h: dmg1=2d8][h: atk2=1d20][h: dmg2=2d6][h: save=1d20]/me lunges with a corpse-stink bite and raking claws!<br>Bite: [r, if(atk1==20): \"<b style='color:#e74c3c'>CRITICAL</b>\"; if(atk1==1): \"<b style='color:red'>FUMBLE</b>\"; \"hits\"] \u2014 ATK [e: atk1+5] | DMG [e: dmg1+3] piercing<br>Claws: [r, if(atk2==20): \"<b style='color:#e74c3c'>CRITICAL</b>\"; if(atk2==1): \"<b style='color:red'>FUMBLE</b>\"; \"hits\"] \u2014 ATK [e: atk2+5] | DMG [e: dmg2+3] slashing<br>On a Claws hit \u2014 target CON save: [e: save] vs DC 10 \u2014 [r, if(save>=10): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>PARALYSED until the end of its next turn.</b>\"]<br><i style='color:#c88020'>STENCH: any creature that starts its turn within 5 ft. of the Ghast must make a DC 10 CON save or be poisoned until the start of its next turn. Creatures immune to the poisoned condition need not roll.</i><br><i style='color:#c88020'>TURNING DEFIANCE: while within 30 ft. of a ghoul, this Ghast has advantage on saving throws against effects that turn undead.</i>"
+        "raw_cmd": "[h: atk1=1d20][h: dmg1=2d8][h: atk2=1d20][h: dmg2=2d6][h: save=1d20]/me lunges with a corpse-stink bite and raking claws!<br>Bite: [r: if(atk1==20, \"<b style='color:#e74c3c'>CRITICAL</b>\", if(atk1==1, \"<b style='color:red'>FUMBLE</b>\", \"hits\"))] — ATK [e: atk1+5] | DMG [e: dmg1+3] piercing<br>Claws: [r: if(atk2==20, \"<b style='color:#e74c3c'>CRITICAL</b>\", if(atk2==1, \"<b style='color:red'>FUMBLE</b>\", \"hits\"))] — ATK [e: atk2+5] | DMG [e: dmg2+3] slashing<br>On a Claws hit — target CON save: [e: save] vs DC 10 — [r, if(save>=10): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>PARALYSED until the end of its next turn.</b>\"]<br><i style='color:#c88020'>STENCH: any creature that starts its turn within 5 ft. of the Ghast must make a DC 10 CON save or be poisoned until the start of its next turn. Creatures immune to the poisoned condition need not roll.</i><br><i style='color:#c88020'>TURNING DEFIANCE: while within 30 ft. of a ghoul, this Ghast has advantage on saving throws against effects that turn undead.</i>"
       }
     ],
     "traits": [
@@ -322,7 +322,7 @@
         "dice": "2d6+2",
         "type": "necrotic",
         "note": "Target's STR score reduced by the damage dealt. If STR reaches 0, target dies. Reduction lasts until short/long rest.",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me claws at your vitality \u2014 STRENGTH DRAIN! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the cold pours in all at once!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 its grip finds nothing but air!</b>\"; \"claws!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] necrotic<br><i style='color:#8a6030'>Target's STR score is reduced by the damage dealt. If STR reaches 0, the target dies. The reduction lasts until the target finishes a short or long rest.</i><br><i style='color:#8a6030'>AMORPHOUS: it can move through a gap as narrow as 1 inch without squeezing.</i><br><i style='color:#8a6030'>SUNLIGHT WEAKNESS: if this fight is happening in direct sunlight, the Shadow has disadvantage on this attack roll, and on all ability checks and saving throws.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me claws at your vitality — STRENGTH DRAIN! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the cold pours in all at once!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — its grip finds nothing but air!</b>\", \"claws!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] necrotic<br><i style='color:#8a6030'>Target's STR score is reduced by the damage dealt. If STR reaches 0, the target dies. The reduction lasts until the target finishes a short or long rest.</i><br><i style='color:#8a6030'>AMORPHOUS: it can move through a gap as narrow as 1 inch without squeezing.</i><br><i style='color:#8a6030'>SUNLIGHT WEAKNESS: if this fight is happening in direct sunlight, the Shadow has disadvantage on this attack roll, and on all ability checks and saving throws.</i>"
       },
       {
         "label": "Create Shadow (on a slain humanoid)",
@@ -340,7 +340,7 @@
       "Sunlight Weakness: disadvantage on attacks, checks, and saves in sunlight.",
       "Create Shadow: a humanoid slain by this shadow's Strength Drain rises as a new shadow in 1d4 hours."
     ],
-    "notes": "CR 1/2. Strength Drain \u2014 kills at STR 0. Sunlight weakness."
+    "notes": "CR 1/2. Strength Drain — kills at STR 0. Sunlight weakness."
   },
   "Wraith": {
     "hp": 67,
@@ -361,11 +361,11 @@
     "attacks": [
       {
         "label": "Life Drain",
-        "raw_cmd": "[h: atk=1d20][h: dmg=4d8][h: save=1d20]/me surges through the air \u2014 LIFE DRAIN! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the wraith plunges into the soul itself!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the touch passes through harmlessly!</b>\"; \"reaches!\"]<br>ATK: [e: atk+6] | DMG: [e: dmg+3] necrotic<br>Target CON save: [e: save] vs DC 14 \u2014 [r, if(save>=14): \"<b style='color:green'>resists \u2014 takes damage and nothing more.</b>\"; \"<b style='color:#e74c3c'>MAX HP REDUCED</b> by the necrotic damage taken (until long rest). If this reduces max HP to 0, target <b>dies</b>.\"]<br><i style='color:#c88020'>Incorporeal Movement: passes through walls/objects (5 force damage if ending turn inside). Resistances: acid, cold, fire, lightning, thunder; nonmagical non-silvered weapons. Immune: necrotic, poison.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=4d8][h: save=1d20]/me surges through the air — LIFE DRAIN! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the wraith plunges into the soul itself!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the touch passes through harmlessly!</b>\", \"reaches!\"))]<br>ATK: [e: atk+6] | DMG: [e: dmg+3] necrotic<br>Target CON save: [e: save] vs DC 14 — [r, if(save>=14): \"<b style='color:green'>resists — takes damage and nothing more.</b>\"; \"<b style='color:#e74c3c'>MAX HP REDUCED</b> by the necrotic damage taken (until long rest). If this reduces max HP to 0, target <b>dies</b>.\"]<br><i style='color:#c88020'>Incorporeal Movement: passes through walls/objects (5 force damage if ending turn inside). Resistances: acid, cold, fire, lightning, thunder; nonmagical non-silvered weapons. Immune: necrotic, poison.</i>"
       },
       {
         "label": "Create Specter",
-        "raw_cmd": "[r: \"<b style='color:#8e44ad'>CREATE SPECTER</b> \u2014 the Wraith targets a humanoid killed within the last minute that it can see within 10 ft. That corpse rises immediately as a <b>Specter</b> under the Wraith's control. Maximum 7 specters at once.\"]<br><i style='color:#c88020'>Not a weapon attack \u2014 no roll needed. The Specter acts on the Wraith's initiative. Use a Specter token at the corpse's location.</i>"
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>CREATE SPECTER</b> — the Wraith targets a humanoid killed within the last minute that it can see within 10 ft. That corpse rises immediately as a <b>Specter</b> under the Wraith's control. Maximum 7 specters at once.\"]<br><i style='color:#c88020'>Not a weapon attack — no roll needed. The Specter acts on the Wraith's initiative. Use a Specter token at the corpse's location.</i>"
       }
     ],
     "traits": [
@@ -393,7 +393,7 @@
     "attacks": [
       {
         "label": "Life Drain",
-        "raw_cmd": "[h: atk=1d20][h: dmg=3d6][h: save=1d20]/me reaches with cold, translucent hands \u2014 LIFE DRAIN! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 vital warmth floods into the specter!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the touch finds nothing!</b>\"; \"grasps!\"]<br>ATK: [e: atk+4] (spell attack) | DMG: [e: dmg] necrotic<br>Target CON save: [e: save] vs DC 10 \u2014 [r, if(save>=10): \"<b style='color:green'>resists \u2014 takes damage and no reduction.</b>\"; \"<b style='color:#e74c3c'>MAX HP REDUCED</b> by the necrotic damage taken (until long rest). Dying if max HP hits 0.\"]<br><i style='color:#c88020'>Incorporeal Movement: passes through walls (5 force damage if ending turn inside). Resistances: acid, cold, fire, lightning, thunder; nonmagical non-silvered weapons. Immune: necrotic, poison.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=3d6][h: save=1d20]/me reaches with cold, translucent hands — LIFE DRAIN! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — vital warmth floods into the specter!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the touch finds nothing!</b>\", \"grasps!\"))]<br>ATK: [e: atk+4] (spell attack) | DMG: [e: dmg] necrotic<br>Target CON save: [e: save] vs DC 10 — [r, if(save>=10): \"<b style='color:green'>resists — takes damage and no reduction.</b>\"; \"<b style='color:#e74c3c'>MAX HP REDUCED</b> by the necrotic damage taken (until long rest). Dying if max HP hits 0.\"]<br><i style='color:#c88020'>Incorporeal Movement: passes through walls (5 force damage if ending turn inside). Resistances: acid, cold, fire, lightning, thunder; nonmagical non-silvered weapons. Immune: necrotic, poison.</i>"
       }
     ],
     "traits": [
@@ -428,7 +428,7 @@
         "dice": "1d8+2",
         "type": "slashing",
         "note": "(1d10+2 two-handed)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me strikes with a notched longsword, cold and precise! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the blade opens a mortal wound!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the stroke goes wide!</b>\"; \"attacks!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] slashing (one-handed) \u2014 two-handed: [e: (1d10)+2] slashing<br><i style='color:#c88020'>Multiattack: two attacks per turn, chosen from Longsword or Longbow \u2014 but one of those two attacks can be replaced with Life Drain instead.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me strikes with a notched longsword, cold and precise! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the blade opens a mortal wound!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the stroke goes wide!</b>\", \"attacks!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] slashing (one-handed) — two-handed: [e: (1d10)+2] slashing<br><i style='color:#c88020'>Multiattack: two attacks per turn, chosen from Longsword or Longbow — but one of those two attacks can be replaced with Life Drain instead.</i>"
       },
       {
         "label": "Longbow",
@@ -437,7 +437,7 @@
         "dice": "1d8+2",
         "type": "piercing",
         "note": "",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me looses an arrow with cold, practiced ease! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the string snaps taut on nothing!</b>\"; \"fires!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (150/600 ft.)<br><i style='color:#c88020'>Multiattack: two attacks per turn, chosen from Longsword or Longbow \u2014 but one of those two attacks can be replaced with Life Drain instead.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me looses an arrow with cold, practiced ease! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the string snaps taut on nothing!</b>\", \"fires!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (150/600 ft.)<br><i style='color:#c88020'>Multiattack: two attacks per turn, chosen from Longsword or Longbow — but one of those two attacks can be replaced with Life Drain instead.</i>"
       },
       {
         "label": "Life Drain",
@@ -446,7 +446,7 @@
         "dice": "1d6+2",
         "type": "necrotic",
         "note": "DC 13 CON save or max HP reduced by damage dealt (until a long rest); the Wight regains that much HP. A humanoid slain this way rises as a Zombie under the Wight's control in 1d4 hours.",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6][h: save=1d20]/me reaches out with a withering hand \u2014 LIFE DRAIN! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 cold fingers close around the heart!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the grasp closes on empty air!</b>\"; \"grips!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] necrotic<br>Target CON save: [e: save] vs DC 13 \u2014 [r, if(save>=13): \"<b style='color:green'>resists \u2014 takes the damage and nothing more.</b>\"; \"<b style='color:#e74c3c'>max HP reduced by the damage taken</b> (until the target finishes a long rest). The Wight regains HP equal to the damage dealt.\"]<br><i style='color:#c88020'>A humanoid slain by this attack rises in 1d4 hours as a Zombie under the Wight's control. This replaces one of its two weapon attacks this turn \u2014 it cannot use Life Drain twice.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6][h: save=1d20]/me reaches out with a withering hand — LIFE DRAIN! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — cold fingers close around the heart!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the grasp closes on empty air!</b>\", \"grips!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] necrotic<br>Target CON save: [e: save] vs DC 13 — [r, if(save>=13): \"<b style='color:green'>resists — takes the damage and nothing more.</b>\"; \"<b style='color:#e74c3c'>max HP reduced by the damage taken</b> (until the target finishes a long rest). The Wight regains HP equal to the damage dealt.\"]<br><i style='color:#c88020'>A humanoid slain by this attack rises in 1d4 hours as a Zombie under the Wight's control. This replaces one of its two weapon attacks this turn — it cannot use Life Drain twice.</i>"
       }
     ],
     "traits": [
@@ -473,11 +473,11 @@
     "attacks": [
       {
         "label": "Shock",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d8]/me pulses with crackling light \u2014 SHOCK! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 lightning arcs through the body!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the light winks out for a moment!</b>\"; \"crackles!\"]<br>ATK: [e: atk+4] (spell attack, 5 ft.) | DMG: [e: dmg] lightning<br><i style='color:#c88020'>Resistances: acid, cold, fire, necrotic, thunder; nonmagical weapons. Immune: lightning, poison. AC 19 (very hard to hit physically).</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d8]/me pulses with crackling light — SHOCK! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — lightning arcs through the body!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the light winks out for a moment!</b>\", \"crackles!\"))]<br>ATK: [e: atk+4] (spell attack, 5 ft.) | DMG: [e: dmg] lightning<br><i style='color:#c88020'>Resistances: acid, cold, fire, necrotic, thunder; nonmagical weapons. Immune: lightning, poison. AC 19 (very hard to hit physically).</i>"
       },
       {
         "label": "Consume Life (Bonus Action)",
-        "raw_cmd": "[h: save=1d20]/me hovers over the dying victim \u2014 CONSUME LIFE! Target at 0 HP within 5 ft must make CON save: [e: save] vs DC 10 \u2014 [r, if(save>=10): \"<b style='color:green'>survives \u2014 stable at 0 HP.</b>\"; \"<b style='color:#e74c3c'>DIES INSTANTLY.</b> The will-o-wisp regains <b>10 (3d6) HP</b>.\"]<br><i style='color:#c88020'>Bonus action only. Target must be at 0 HP and still alive. Wisp can use Invisibility (bonus action) to vanish after feeding.</i>"
+        "raw_cmd": "[h: save=1d20]/me hovers over the dying victim — CONSUME LIFE! Target at 0 HP within 5 ft must make CON save: [e: save] vs DC 10 — [r, if(save>=10): \"<b style='color:green'>survives — stable at 0 HP.</b>\"; \"<b style='color:#e74c3c'>DIES INSTANTLY.</b> The will-o-wisp regains <b>10 (3d6) HP</b>.\"]<br><i style='color:#c88020'>Bonus action only. Target must be at 0 HP and still alive. Wisp can use Invisibility (bonus action) to vanish after feeding.</i>"
       }
     ],
     "traits": [
@@ -508,11 +508,11 @@
     "attacks": [
       {
         "label": "Club (with Shillelagh)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me swings a gnarled oak branch with druidic force \u2014 SHILLELAGH! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 bark and bone crack together!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the branch snags on roots!</b>\"; \"strikes!\"]<br>ATK: [e: atk+6] | DMG: [e: dmg+4] bludgeoning (magical)<br><i style='color:#c88020'>Requires Shillelagh spell active (1/day). Without it: +2 to hit, 1d4 bludgeoning. Magic Resistance: advantage on saves vs spells. Tree Stride: step into large tree, emerge from another within 60 ft (10 ft of movement).</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me swings a gnarled oak branch with druidic force — SHILLELAGH! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — bark and bone crack together!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the branch snags on roots!</b>\", \"strikes!\"))]<br>ATK: [e: atk+6] | DMG: [e: dmg+4] bludgeoning (magical)<br><i style='color:#c88020'>Requires Shillelagh spell active (1/day). Without it: +2 to hit, 1d4 bludgeoning. Magic Resistance: advantage on saves vs spells. Tree Stride: step into large tree, emerge from another within 60 ft (10 ft of movement).</i>"
       },
       {
         "label": "Fey Charm",
-        "raw_cmd": "[h: save=1d20]/me fixes the target with ancient, verdant eyes \u2014 FEY CHARM! Target (humanoid or beast within 30 ft) WIS save: [e: save] vs DC 14 \u2014 [r, if(save>=14): \"<b style='color:green'>resists \u2014 unsettled but free.</b>\"; \"<b style='color:#8e44ad'>CHARMED</b> for 24 hours. The target regards the Dryad as a trusted friend. The Dryad can have 1 humanoid + 3 beasts charmed at once. Charm ends if the Dryad or its allies harm the target.\"]<br><i style='color:#c88020'>No attack roll \u2014 saving throw only. Innate spells: entangle, goodberry (3/day each); barkskin, pass without trace (1/day each).</i>"
+        "raw_cmd": "[h: save=1d20]/me fixes the target with ancient, verdant eyes — FEY CHARM! Target (humanoid or beast within 30 ft) WIS save: [e: save] vs DC 14 — [r, if(save>=14): \"<b style='color:green'>resists — unsettled but free.</b>\"; \"<b style='color:#8e44ad'>CHARMED</b> for 24 hours. The target regards the Dryad as a trusted friend. The Dryad can have 1 humanoid + 3 beasts charmed at once. Charm ends if the Dryad or its allies harm the target.\"]<br><i style='color:#c88020'>No attack roll — saving throw only. Innate spells: entangle, goodberry (3/day each); barkskin, pass without trace (1/day each).</i>"
       }
     ],
     "traits": [
@@ -542,7 +542,7 @@
         "dice": "1d12+3",
         "type": "slashing",
         "note": "",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d12]/me swings the greataxe in a wide, screaming arc! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the axe bites clean through!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the swing overextends!</b>\"; \"attacks!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#e05020'>Choose the RECKLESS button instead for advantage on this attack \u2014 but every attack against the berserker also gets advantage until the start of its next turn.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d12]/me swings the greataxe in a wide, screaming arc! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the axe bites clean through!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the swing overextends!</b>\", \"attacks!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#e05020'>Choose the RECKLESS button instead for advantage on this attack — but every attack against the berserker also gets advantage until the start of its next turn.</i>"
       },
       {
         "label": "Greataxe (Reckless)",
@@ -551,7 +551,7 @@
         "dice": "1d12+3",
         "type": "slashing",
         "note": "Reckless Attack: advantage on this attack roll; all attacks against the berserker have advantage until the start of its next turn.",
-        "raw_cmd": "[h: r1=1d20][h: r2=1d20][h: best=if(r1>=r2,r1,r2)][h: dmg=1d12]/me abandons all defense and swings with RECKLESS fury! (rolled [e: r1] and [e: r2] \u2014 uses [e: best]) [r, if(best==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 a berserk, bone-shattering blow!</b>\"; if(r1==1 && r2==1): \"<b style='color:red'>DOUBLE FUMBLE \u2014 overcommits completely!</b>\"; \"attacks!\"]<br>ATK: [e: best+5] | DMG: [e: dmg+3] slashing<br><i style='color:#e05020'><b>RECKLESS ATTACK: this attack has advantage. In exchange, all attacks against the berserker have advantage until the start of its next turn.</b> Below half HP, it uses this every round without exception.</i>"
+        "raw_cmd": "[h: r1=1d20][h: r2=1d20][h: best=if(r1>=r2,r1,r2)][h: dmg=1d12]/me abandons all defense and swings with RECKLESS fury! (rolled [e: r1] and [e: r2] — uses [e: best]) [r: if(best==20, \"<b style='color:#e74c3c'>CRITICAL HIT — a berserk, bone-shattering blow!</b>\", if(r1==1 && r2==1, \"<b style='color:red'>DOUBLE FUMBLE — overcommits completely!</b>\", \"attacks!\"))]<br>ATK: [e: best+5] | DMG: [e: dmg+3] slashing<br><i style='color:#e05020'><b>RECKLESS ATTACK: this attack has advantage. In exchange, all attacks against the berserker have advantage until the start of its next turn.</b> Below half HP, it uses this every round without exception.</i>"
       }
     ],
     "traits": [
@@ -659,7 +659,7 @@
         "dice": "1d6+1",
         "type": "piercing",
         "note": "(1d8+1 two-handed)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me squares up and thrusts the spear with practiced fort-drill form! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 a clean, disciplined strike!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 overreaches and stumbles a half-step!</b>\"; \"thrusts!\"]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] piercing (one-handed) \u2014 two-handed: [e: (1d8)+1] piercing<br><i style='color:#8a6030'>Just a soldier doing the job. No malice in it, no glory either \u2014 hold the line, keep the watch, go home at the end of the shift.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me squares up and thrusts the spear with practiced fort-drill form! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — a clean, disciplined strike!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — overreaches and stumbles a half-step!</b>\", \"thrusts!\"))]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] piercing (one-handed) — two-handed: [e: (1d8)+1] piercing<br><i style='color:#8a6030'>Just a soldier doing the job. No malice in it, no glory either — hold the line, keep the watch, go home at the end of the shift.</i>"
       }
     ],
     "traits": [],
@@ -686,7 +686,7 @@
         "dice": "1d8+1",
         "type": "bludgeoning",
         "note": "Pack Tactics: advantage on the attack roll if an ally is within 5 ft. of the target.",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8][h: pt1=1d20][h: pt2=1d20][h: ptbest=if(pt1>=pt2,pt1,pt2)]/me swings a heavy greatclub two-handed!<br>Alone: [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"hits\"] \u2014 ATK [e: atk+3] | DMG [e: dmg+1] bludgeoning<br>With an ally within 5 ft. of the target \u2014 <b style='color:#c88020'>PACK TACTICS (advantage)</b>: rolled [e: pt1] / [e: pt2], uses [e: ptbest] \u2014 [r, if(ptbest==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(ptbest==1): \"<b style='color:red'>FUMBLE!</b>\"; \"hits\"] \u2014 ATK [e: ptbest+3] | DMG [e: dmg+1] bludgeoning<br><i style='color:#c88020'>PACK TACTICS: this warrior has advantage on the attack roll if at least one ally is within 5 ft. of the target and that ally isn't incapacitated. GM: read the top line if it's fighting alone, the advantage line otherwise.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8][h: pt1=1d20][h: pt2=1d20][h: ptbest=if(pt1>=pt2,pt1,pt2)]/me swings a heavy greatclub two-handed!<br>Alone: [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"hits\"))] — ATK [e: atk+3] | DMG [e: dmg+1] bludgeoning<br>With an ally within 5 ft. of the target — <b style='color:#c88020'>PACK TACTICS (advantage)</b>: rolled [e: pt1] / [e: pt2], uses [e: ptbest] — [r: if(ptbest==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(ptbest==1, \"<b style='color:red'>FUMBLE!</b>\", \"hits\"))] — ATK [e: ptbest+3] | DMG [e: dmg+1] bludgeoning<br><i style='color:#c88020'>PACK TACTICS: this warrior has advantage on the attack roll if at least one ally is within 5 ft. of the target and that ally isn't incapacitated. GM: read the top line if it's fighting alone, the advantage line otherwise.</i>"
       }
     ],
     "traits": [
@@ -715,11 +715,11 @@
     "attacks": [
       {
         "label": "Shortsword",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me darts in with the shortsword! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 found the gap in the armour!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 footing lost on the uneven ground!</b>\"; \"strikes!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing<br><i style='color:#c88020'>Multiattack: two Shortsword attacks OR one Shortsword + one Longbow. Keen Hearing and Sight: advantage on Perception. Natural Explorer: difficult terrain in forests doesn't slow movement.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me darts in with the shortsword! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — found the gap in the armour!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — footing lost on the uneven ground!</b>\", \"strikes!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing<br><i style='color:#c88020'>Multiattack: two Shortsword attacks OR one Shortsword + one Longbow. Keen Hearing and Sight: advantage on Perception. Natural Explorer: difficult terrain in forests doesn't slow movement.</i>"
       },
       {
         "label": "Longbow",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me draws and looses in a fluid motion! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the arrow finds its mark perfectly!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the shaft flies wide!</b>\"; \"fires!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (range 150/600 ft.)<br><i style='color:#c88020'>Multiattack applies. Prefer ranged \u2014 uses cover and movement to stay out of melee.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me draws and looses in a fluid motion! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the arrow finds its mark perfectly!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the shaft flies wide!</b>\", \"fires!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (range 150/600 ft.)<br><i style='color:#c88020'>Multiattack applies. Prefer ranged — uses cover and movement to stay out of melee.</i>"
       }
     ],
     "traits": [
@@ -814,11 +814,11 @@
     "attacks": [
       {
         "label": "Gladius",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me drives the short blade in a precise thrust! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the gladius finds a vital point!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the shield deflects the thrust!</b>\"; \"strikes!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#c88020'>Multiattack: two Gladius attacks per turn, OR one Gladius + one Pilum (thrown first). Shield of the Empire: if adjacent to an ally, both gain +1 AC (shield wall formation).</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me drives the short blade in a precise thrust! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the gladius finds a vital point!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the shield deflects the thrust!</b>\", \"strikes!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#c88020'>Multiattack: two Gladius attacks per turn, OR one Gladius + one Pilum (thrown first). Shield of the Empire: if adjacent to an ally, both gain +1 AC (shield wall formation).</i>"
       },
       {
         "label": "Pilum",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me hurls the weighted javelin with legionary precision! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the pilum pierces shield and flesh!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the shaft bends on impact, useless!</b>\"; \"throws!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing (range 30/120 ft.)<br><i style='color:#c88020'>On hit: shield is fouled \u2014 target's shield bonus to AC reduced by 1 until they spend a bonus action to pull the pilum free. One pilum per guard (not replenishing mid-combat).</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me hurls the weighted javelin with legionary precision! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the pilum pierces shield and flesh!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the shaft bends on impact, useless!</b>\", \"throws!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing (range 30/120 ft.)<br><i style='color:#c88020'>On hit: shield is fouled — target's shield bonus to AC reduced by 1 until they spend a bonus action to pull the pilum free. One pilum per guard (not replenishing mid-combat).</i>"
       }
     ],
     "traits": [
@@ -850,7 +850,7 @@
         "dice": "1d6+1",
         "type": "slashing",
         "note": "",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me steps in behind the shield and drives the gladius short and low! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 textbook legionary form, straight to the gap!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the thrust goes wide, shield discipline slips!</b>\"; \"stabs!\"]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] slashing<br><i style='color:#8a6030'>Standard drill: short blade, tight formation, no wasted motion. This is what the testudo is built to protect.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me steps in behind the shield and drives the gladius short and low! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — textbook legionary form, straight to the gap!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the thrust goes wide, shield discipline slips!</b>\", \"stabs!\"))]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] slashing<br><i style='color:#8a6030'>Standard drill: short blade, tight formation, no wasted motion. This is what the testudo is built to protect.</i>"
       },
       {
         "label": "Pilum",
@@ -859,7 +859,7 @@
         "dice": "1d4+1",
         "type": "piercing",
         "note": "",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me hurls a pilum in a practiced overhand arc! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 punches through shield and shoulder alike!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the throw sails wide of the mark!</b>\"; \"throws!\"]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] piercing (30/120 ft.)<br><i style='color:#8a6030'>The soft iron shank bends on impact \u2014 a shield struck by a pilum is a shield that has to be dropped. That's the whole point of the weapon.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me hurls a pilum in a practiced overhand arc! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — punches through shield and shoulder alike!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the throw sails wide of the mark!</b>\", \"throws!\"))]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] piercing (30/120 ft.)<br><i style='color:#8a6030'>The soft iron shank bends on impact — a shield struck by a pilum is a shield that has to be dropped. That's the whole point of the weapon.</i>"
       }
     ],
     "traits": [],
@@ -930,7 +930,7 @@
         "dice": "2d6+3",
         "type": "bludgeoning",
         "note": "",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me lumbers forward, grave-dirt sloughing from its shoulders, and slams a rotted fist down! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the blow caves in armour and bone alike!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the mass overbalances, an arm sinking into the earth!</b>\"; \"slams!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] bludgeoning<br><i style='color:#c88020'>MOUND BOUND: this Haugbui can only leave its burial mound at night. At sunrise it is forced back inside, whether the fight is finished or not.</i><br><i style='color:#c88020'>TREASURE SENSE: it always knows the location of any valuables buried within 1 mile \u2014 including its own grave goods, which it will die to protect.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me lumbers forward, grave-dirt sloughing from its shoulders, and slams a rotted fist down! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the blow caves in armour and bone alike!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the mass overbalances, an arm sinking into the earth!</b>\", \"slams!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] bludgeoning<br><i style='color:#c88020'>MOUND BOUND: this Haugbui can only leave its burial mound at night. At sunrise it is forced back inside, whether the fight is finished or not.</i><br><i style='color:#c88020'>TREASURE SENSE: it always knows the location of any valuables buried within 1 mile — including its own grave goods, which it will die to protect.</i>"
       },
       {
         "label": "Grave Mist (Recharge 5-6)",
@@ -939,7 +939,7 @@
         "dice": "3d8",
         "type": "necrotic",
         "note": "DC 12 CON save for half. Living creatures on a failed save also age 1d4 years.",
-        "raw_cmd": "[h: recharge=1d6][h: dmg=3d8][h: save=1d20]/me rears back and a freezing grey mist billows outward in a 20 ft. cone! Recharge: [e: recharge] \u2014 [r, if(recharge>=5): \"<b style='color:green'>AVAILABLE this turn.</b>\"; \"<b style='color:red'>NOT RECHARGED \u2014 only a thin cold vapour escapes, no effect.</b>\"]<br>If available: target CON save [e: save] vs DC 12 \u2014 [r, if(save>=12): \"<b style='color:green'>succeeds \u2014 half damage.</b>\"; \"<b style='color:#e74c3c'>fails \u2014 full damage, and if living, ages 1d4 years.</b>\"] Damage: [e: dmg] necrotic (half on a success).<br><i style='color:#c88020'>Recharges on a roll of 5 or 6 at the start of its turn \u2014 reroll the recharge check every round.</i>"
+        "raw_cmd": "[h: recharge=1d6][h: dmg=3d8][h: save=1d20]/me rears back and a freezing grey mist billows outward in a 20 ft. cone! Recharge: [e: recharge] — [r, if(recharge>=5): \"<b style='color:green'>AVAILABLE this turn.</b>\"; \"<b style='color:red'>NOT RECHARGED — only a thin cold vapour escapes, no effect.</b>\"]<br>If available: target CON save [e: save] vs DC 12 — [r, if(save>=12): \"<b style='color:green'>succeeds — half damage.</b>\"; \"<b style='color:#e74c3c'>fails — full damage, and if living, ages 1d4 years.</b>\"] Damage: [e: dmg] necrotic (half on a success).<br><i style='color:#c88020'>Recharges on a roll of 5 or 6 at the start of its turn — reroll the recharge check every round.</i>"
       }
     ],
     "traits": [
@@ -1059,11 +1059,11 @@
     "attacks": [
       {
         "label": "Bone Chill Touch",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8][h: save=1d20]/me surges forward with frost-burned hands! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the chill sinks to the marrow!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 fingers pass through harmlessly!</b>\"; \"claws!\"]<br>ATK: [e: atk+3] | DMG: [e: dmg] cold<br>Target CON save: [e: save] vs DC 11 \u2014 [r, if(save>=11): \"<b style='color:green'>resists the cold \u2014 no additional effect.</b>\"; \"<b style='color:#3498db'>SLOWED</b> \u2014 speed reduced by 10 ft until end of its next turn.\"]"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8][h: save=1d20]/me surges forward with frost-burned hands! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the chill sinks to the marrow!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — fingers pass through harmlessly!</b>\", \"claws!\"))]<br>ATK: [e: atk+3] | DMG: [e: dmg] cold<br>Target CON save: [e: save] vs DC 11 — [r, if(save>=11): \"<b style='color:green'>resists the cold — no additional effect.</b>\"; \"<b style='color:#3498db'>SLOWED</b> — speed reduced by 10 ft until end of its next turn.\"]"
       },
       {
         "label": "Wail of the Lost (Recharge 5-6)",
-        "raw_cmd": "[h: recharge=1d6]/me opens its hollow mouth in a keening shriek! Recharge roll: [e: recharge] \u2014 [r, if(recharge>=5): \"<b style='color:#c0392b'>WAIL ACTIVATES</b> \u2014 all creatures within 30 ft make WIS save DC 12 or take 10 (3d6) psychic damage and are FRIGHTENED until end of their next turn. Half damage on success, no Frightened.\"; \"<b style='color:gray'>Wail not ready yet (rolled \"+recharge+\"/6).</b>\"]<br><i style='color:#c88020'>Area: 30 ft radius. The Myling shrieks the name it never received. Creatures who fail feel an irrational guilt.</i>"
+        "raw_cmd": "[h: recharge=1d6]/me opens its hollow mouth in a keening shriek! Recharge roll: [e: recharge] — [r, if(recharge>=5): \"<b style='color:#c0392b'>WAIL ACTIVATES</b> — all creatures within 30 ft make WIS save DC 12 or take 10 (3d6) psychic damage and are FRIGHTENED until end of their next turn. Half damage on success, no Frightened.\"; \"<b style='color:gray'>Wail not ready yet (rolled \"+recharge+\"/6).</b>\"]<br><i style='color:#c88020'>Area: 30 ft radius. The Myling shrieks the name it never received. Creatures who fail feel an irrational guilt.</i>"
       }
     ],
     "traits": [
@@ -1097,7 +1097,7 @@
         "dice": "1d6",
         "type": "necrotic",
         "note": "DC 11 WIS save or frightened until end of next turn.",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6][h: save=1d20]/me reaches through the air with a hand of cold mist \u2014 SPIRIT TOUCH! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the cold goes straight to the bone!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the grasping hand passes through empty air!</b>\"; \"touches!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg] necrotic<br>Target WIS save: [e: save] vs DC 11 \u2014 [r, if(save>=11): \"<b style='color:green'>holds steady.</b>\"; \"<b style='color:#e74c3c'>FRIGHTENED until the end of its next turn.</b>\"]<br><i style='color:#8a6030'>THRESHOLD GUARDIAN: if the target is crossing a threshold this Vaettir guards \u2014 a doorway, a bridge, a boundary stone \u2014 this attack is made with advantage.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6][h: save=1d20]/me reaches through the air with a hand of cold mist — SPIRIT TOUCH! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the cold goes straight to the bone!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the grasping hand passes through empty air!</b>\", \"touches!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg] necrotic<br>Target WIS save: [e: save] vs DC 11 — [r, if(save>=11): \"<b style='color:green'>holds steady.</b>\"; \"<b style='color:#e74c3c'>FRIGHTENED until the end of its next turn.</b>\"]<br><i style='color:#8a6030'>THRESHOLD GUARDIAN: if the target is crossing a threshold this Vaettir guards — a doorway, a bridge, a boundary stone — this attack is made with advantage.</i>"
       },
       {
         "label": "Land Bond (on defeat)",
@@ -1106,7 +1106,7 @@
         "dice": "0",
         "type": "utility",
         "note": "If the Vaettir dies here, it reforms in 1d4 days unless the land is consecrated.",
-        "raw_cmd": "/me dissolves into mist and sinks back into the ground it is bound to.<br><i style='color:#8a6030'>LAND BOND: this Vaettir is bound to a specific location. If it dies here, it reforms in 1d4 days unless the land is consecrated. GM: mark the location \u2014 this is not necessarily the last time.</i>"
+        "raw_cmd": "/me dissolves into mist and sinks back into the ground it is bound to.<br><i style='color:#8a6030'>LAND BOND: this Vaettir is bound to a specific location. If it dies here, it reforms in 1d4 days unless the land is consecrated. GM: mark the location — this is not necessarily the last time.</i>"
       }
     ],
     "traits": [
@@ -1746,7 +1746,7 @@
     "attacks": [],
     "traits": [
       "This token represents the vacant Aquilifer role. Metellus, the former bearer, is dead.",
-      "The Aquila (eagle standard) is missing \u2014 whoever finds and returns it gains 2 commendationes.",
+      "The Aquila (eagle standard) is missing — whoever finds and returns it gains 2 commendationes.",
       "Any PC who assumes this role gains: Inspiring Presence (allies within 30 ft. +1 to attack rolls while standard is visible)."
     ],
     "notes": "VACANT. Metellus died in Session 1. The Aquila is missing. Reclaiming it is a campaign objective."
@@ -1758,7 +1758,7 @@
     "cr": "20",
     "attacks": [
       {
-        "label": "Divine Pilum (\u00d74 Multiattack)",
+        "label": "Divine Pilum (×4 Multiattack)",
         "atk": 12,
         "reach": "60 ft.",
         "dice": "2d8+7",
@@ -1947,7 +1947,7 @@
       }
     ],
     "traits": [
-      "V\u00f6lva: can cast Guidance (cantrip), Speak with Animals, and Augury (1/day).",
+      "Völva: can cast Guidance (cantrip), Speak with Animals, and Augury (1/day).",
       "Cunning Action: Dash, Disengage, or Hide as bonus action."
     ]
   },
@@ -1976,7 +1976,7 @@
     ],
     "traits": [
       "Master of Intrigue: Mastermind subclass. Help as bonus action (30 ft range).",
-      "Rarely fights directly \u2014 prefers to use Tribune Lucius or hired killers."
+      "Rarely fights directly — prefers to use Tribune Lucius or hired killers."
     ]
   },
   "Aldric_the_Gaul": {
@@ -2180,32 +2180,32 @@
     "cr": "2",
     "attacks": [
       {
-        "label": "Fog Cloud (Druid A \u2014 Round 1)",
-        "raw_cmd": "/me <b>begins the fog-chant</b> \u2014 mist rises from the earth around the wall!<br>Fog Cloud: 20ft radius sphere, 120ft range, <b>Concentration</b>.<br>All creatures inside: <b style='color:#c04040'>HEAVILY OBSCURED = BLIND</b> (attacks have disadvantage, attackers have advantage vs them).<br><i style='color:#60aa40'>No save. Wall defenders cannot aim ranged weapons down into fog. CON save DC 10+ damage taken each hit to maintain concentration. <b>Kill this druid = fog ends immediately.</b></i>"
+        "label": "Fog Cloud (Druid A — Round 1)",
+        "raw_cmd": "/me <b>begins the fog-chant</b> — mist rises from the earth around the wall!<br>Fog Cloud: 20ft radius sphere, 120ft range, <b>Concentration</b>.<br>All creatures inside: <b style='color:#c04040'>HEAVILY OBSCURED = BLIND</b> (attacks have disadvantage, attackers have advantage vs them).<br><i style='color:#60aa40'>No save. Wall defenders cannot aim ranged weapons down into fog. CON save DC 10+ damage taken each hit to maintain concentration. <b>Kill this druid = fog ends immediately.</b></i>"
       },
       {
-        "label": "Entangle (Druid B \u2014 Round 1)",
-        "raw_cmd": "[h: saveroll=1d20]/me <b>slams her staff into the earth</b> \u2014 roots and vines erupt!<br>Entangle: 20ft square, 90ft range, <b>Concentration</b>. STR save DC 12.<br>Target rolled STR: [e: saveroll] vs DC 12 \u2014 [r, if(saveroll>=12): \"<b style='color:green'>SAVES \u2014 difficult terrain only</b>\"; \"<b style='color:#e74c3c'>RESTRAINED \u2014 speed 0, repeat save each turn</b>\"]<br><i style='color:#60aa40'>Restrained on a ladder = <b>FALLS</b> (1d6 per 10ft). Difficult terrain even on save. <b>Kill this druid = entangle ends.</b></i>"
+        "label": "Entangle (Druid B — Round 1)",
+        "raw_cmd": "[h: saveroll=1d20]/me <b>slams her staff into the earth</b> — roots and vines erupt!<br>Entangle: 20ft square, 90ft range, <b>Concentration</b>. STR save DC 12.<br>Target rolled STR: [e: saveroll] vs DC 12 — [r, if(saveroll>=12): \"<b style='color:green'>SAVES — difficult terrain only</b>\"; \"<b style='color:#e74c3c'>RESTRAINED — speed 0, repeat save each turn</b>\"]<br><i style='color:#60aa40'>Restrained on a ladder = <b>FALLS</b> (1d6 per 10ft). Difficult terrain even on save. <b>Kill this druid = entangle ends.</b></i>"
       },
       {
-        "label": "Spike Growth (Phase 2 \u2014 Conc)",
-        "raw_cmd": "[h: dmg1=1d4][h: dmg2=1d4]/me <b>twists the ground</b> \u2014 invisible razor spikes erupt across the approach!<br>Spike Growth: 20ft radius, 150ft range, <b>Concentration</b>.<br>Moving through: <b>[r: dmg1+dmg2] piercing per 5ft</b> (2d4, this roll). Looks like natural terrain \u2014 Perception DC 15 to spot.<br><i style='color:#60aa40'>A defender sprinting 30ft through it: [e: (dmg1+dmg2)*6] piercing. Cast in courtyard or gate approach. <b>Kill druid = spikes vanish.</b></i>"
+        "label": "Spike Growth (Phase 2 — Conc)",
+        "raw_cmd": "[h: dmg1=1d4][h: dmg2=1d4]/me <b>twists the ground</b> — invisible razor spikes erupt across the approach!<br>Spike Growth: 20ft radius, 150ft range, <b>Concentration</b>.<br>Moving through: <b>[r: dmg1+dmg2] piercing per 5ft</b> (2d4, this roll). Looks like natural terrain — Perception DC 15 to spot.<br><i style='color:#60aa40'>A defender sprinting 30ft through it: [e: (dmg1+dmg2)*6] piercing. Cast in courtyard or gate approach. <b>Kill druid = spikes vanish.</b></i>"
       },
       {
         "label": "Hold Person (use on best melee fighter)",
-        "raw_cmd": "[h: saveroll=1d20]/me <b>points and chants a binding curse</b>!<br>Hold Person: WIS save DC 12. 2nd level, 60ft range, Concentration.<br>Target rolled WIS: [e: saveroll] vs DC 12 \u2014 [r, if(saveroll>=12): \"<b style='color:green'>SAVES \u2014 no effect</b>\"; \"<b style='color:#e74c3c'>PARALYZED \u2014 all attacks are AUTO-CRITS until they save</b>\"]<br><i style='color:#60aa40'>Repeat save each turn. While paralyzed: berserkers walk up and auto-crit with greataxes. Priority target: party's best melee fighter. <b>Kill druid = paralysis ends.</b></i>"
+        "raw_cmd": "[h: saveroll=1d20]/me <b>points and chants a binding curse</b>!<br>Hold Person: WIS save DC 12. 2nd level, 60ft range, Concentration.<br>Target rolled WIS: [e: saveroll] vs DC 12 — [r, if(saveroll>=12): \"<b style='color:green'>SAVES — no effect</b>\"; \"<b style='color:#e74c3c'>PARALYZED — all attacks are AUTO-CRITS until they save</b>\"]<br><i style='color:#60aa40'>Repeat save each turn. While paralyzed: berserkers walk up and auto-crit with greataxes. Priority target: party's best melee fighter. <b>Kill druid = paralysis ends.</b></i>"
       },
       {
         "label": "Produce Flame (cantrip 30ft)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me hurls a ball of flame! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL BURN!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 flame sputters out!</b>\"; \"throws!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+4] fire<br><i style='color:#60aa40'>Visible as floating flame in the druid's hand \u2014 unmistakable kill target for archers. While conscious: <b>all Germanic raiders +1 ATK and advantage vs fear.</b> Kill either druid = chanting buff ends for all raiders.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me hurls a ball of flame! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL BURN!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — flame sputters out!</b>\", \"throws!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+4] fire<br><i style='color:#60aa40'>Visible as floating flame in the druid's hand — unmistakable kill target for archers. While conscious: <b>all Germanic raiders +1 ATK and advantage vs fear.</b> Kill either druid = chanting buff ends for all raiders.</i>"
       },
       {
         "label": "Thunderwave (emergency melee only)",
-        "raw_cmd": "[h: d1=1d8][h: d2=1d8][h: saveroll=1d20]/me <b>SLAMS the staff and unleashes a thunderclap!</b><br>Thunderwave: 15ft cube, CON save DC 12.<br>Target rolled CON: [e: saveroll] vs DC 12 \u2014 [r, if(saveroll>=12): \"half dmg: [e: (d1+d2)/2] thunder, no push\"; \"FULL: [e: d1+d2] thunder + pushed 10ft + <b>knocked prone</b>\"]<br><i style='color:#60aa40'>Audible 300ft. LAST RESORT \u2014 only if melee closes. Immediately flees into treeline after casting. Below 10 HP: unit morale drops visibly when chanting stops.</i>"
+        "raw_cmd": "[h: d1=1d8][h: d2=1d8][h: saveroll=1d20]/me <b>SLAMS the staff and unleashes a thunderclap!</b><br>Thunderwave: 15ft cube, CON save DC 12.<br>Target rolled CON: [e: saveroll] vs DC 12 — [r, if(saveroll>=12): \"half dmg: [e: (d1+d2)/2] thunder, no push\"; \"FULL: [e: d1+d2] thunder + pushed 10ft + <b>knocked prone</b>\"]<br><i style='color:#60aa40'>Audible 300ft. LAST RESORT — only if melee closes. Immediately flees into treeline after casting. Below 10 HP: unit morale drops visibly when chanting stops.</i>"
       }
     ],
     "traits": [],
-    "notes": "CR 2. Two druids. Kill priority \u2014 chanting buff ends when they die."
+    "notes": "CR 2. Two druids. Kill priority — chanting buff ends when they die."
   },
   "Ogre": {
     "hp": 59,
@@ -2222,16 +2222,16 @@
     "cr": "2",
     "attacks": [
       {
-        "label": "GATE \u2014 Battering Ram (automatic)",
-        "raw_cmd": "[h: d1=1d6][h: d2=1d6][h: d3=1d6][h: total=d1+d2+d3+4]/me <b>SLAMS into the gate!</b> Gate takes <b style='color:#e74c3c'>[r: total] bludgeoning</b> ([r: d1]+[r: d2]+[r: d3]+4 | 3d6+4)<br><i style='color:#a08030'>Gate HP: 60. Mark cumulative damage \u2014 breaches in ~3 rounds. Arrow slits: 3/4 cover (AC 15, +5 Dex saves to target him from wall). INT 5: cannot be tricked or lured. He is pointed at the gate. Gate. Gate. Gate.</i>"
+        "label": "GATE — Battering Ram (automatic)",
+        "raw_cmd": "[h: d1=1d6][h: d2=1d6][h: d3=1d6][h: total=d1+d2+d3+4]/me <b>SLAMS into the gate!</b> Gate takes <b style='color:#e74c3c'>[r: total] bludgeoning</b> ([r: d1]+[r: d2]+[r: d3]+4 | 3d6+4)<br><i style='color:#a08030'>Gate HP: 60. Mark cumulative damage — breaches in ~3 rounds. Arrow slits: 3/4 cover (AC 15, +5 Dex saves to target him from wall). INT 5: cannot be tricked or lured. He is pointed at the gate. Gate. Gate. Gate.</i>"
       },
       {
         "label": "Greatclub (if engaged)",
-        "raw_cmd": "[h: atk=1d20][h: d1=1d8][h: d2=1d8]/me swings the greatclub at whoever got in the way! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL SMASH!</b>\"; if(atk==1): \"MISS \u2014 club hits gate instead (gate takes [e: 1d6+4])!\"; \"attacks!\"]<br>ATK: [e: atk+6] | DMG: [e: d1+d2+4] bludgeoning (2d8+4)<br><i style='color:#a08030'>Large creature \u2014 threatens all squares within 5ft. Shove as bonus action vs Medium creatures (STR contest, ogre +4).</i>"
+        "raw_cmd": "[h: atk=1d20][h: d1=1d8][h: d2=1d8]/me swings the greatclub at whoever got in the way! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL SMASH!</b>\", if(atk==1, \"MISS — club hits gate instead (gate takes [e: 1d6+4])!\", \"attacks!\"))]<br>ATK: [e: atk+6] | DMG: [e: d1+d2+4] bludgeoning (2d8+4)<br><i style='color:#a08030'>Large creature — threatens all squares within 5ft. Shove as bonus action vs Medium creatures (STR contest, ogre +4).</i>"
       },
       {
-        "label": "Javelin (30/120 ft \u2014 if ranged)",
-        "raw_cmd": "[h: atk=1d20][h: d1=1d6][h: d2=1d6]/me hurls a javelin at anyone blocking the gate approach! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 javelin clatters off stone!</b>\"; \"throws!\"]<br>ATK: [e: atk+6] | DMG: [e: d1+d2+4] piercing (2d6+4)<br><i style='color:#a08030'>Carries 3. Uses javelins only when he cannot reach the gate \u2014 someone is physically blocking his path. He will try to shove past first.</i>"
+        "label": "Javelin (30/120 ft — if ranged)",
+        "raw_cmd": "[h: atk=1d20][h: d1=1d6][h: d2=1d6]/me hurls a javelin at anyone blocking the gate approach! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — javelin clatters off stone!</b>\", \"throws!\"))]<br>ATK: [e: atk+6] | DMG: [e: d1+d2+4] piercing (2d6+4)<br><i style='color:#a08030'>Carries 3. Uses javelins only when he cannot reach the gate — someone is physically blocking his path. He will try to shove past first.</i>"
       }
     ],
     "traits": [],
@@ -2255,7 +2255,7 @@
     "attacks": [
       {
         "label": "Bite (+ Knock Prone)",
-        "raw_cmd": "[h: atk=1d20][h: d1=1d6][h: d2=1d6][h: proneroll=1d20]/me <b>LUNGES</b> with snapping jaws! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL \u2014 jaw locks on!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 slips on rubble!</b>\"; \"bites!\"]<br>ATK: [e: atk+5] | DMG: [e: d1+d2+3] piercing (2d6+3)<br>Target STR save: [e: proneroll] vs DC 13 \u2014 [r, if(proneroll>=13): \"<b style='color:green'>holds footing</b>\"; \"<b style='color:#e74c3c'>KNOCKED PRONE \u2014 prone = adv on all attacks vs target</b>\"]<br><i style='color:#8a6030'>Worg INT 7 \u2014 understands Norse, sometimes speaks. Speed 50ft \u2014 chases fleeing soldiers. Large: blocks doorways and ladders. Used by the warband as scouts and terror weapons.</i>"
+        "raw_cmd": "[h: atk=1d20][h: d1=1d6][h: d2=1d6][h: proneroll=1d20]/me <b>LUNGES</b> with snapping jaws! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL — jaw locks on!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — slips on rubble!</b>\", \"bites!\"))]<br>ATK: [e: atk+5] | DMG: [e: d1+d2+3] piercing (2d6+3)<br>Target STR save: [e: proneroll] vs DC 13 — [r, if(proneroll>=13): \"<b style='color:green'>holds footing</b>\"; \"<b style='color:#e74c3c'>KNOCKED PRONE — prone = adv on all attacks vs target</b>\"]<br><i style='color:#8a6030'>Worg INT 7 — understands Norse, sometimes speaks. Speed 50ft — chases fleeing soldiers. Large: blocks doorways and ladders. Used by the warband as scouts and terror weapons.</i>"
       }
     ],
     "traits": [],
@@ -2277,15 +2277,15 @@
     "attacks": [
       {
         "label": "Shortbow",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me looses an arrow from the boulders (zone 9)! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 arrow skips off stone!</b>\"; \"fires!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing<br><i style='color:#6aaa50'>Half cover: attackers need AC 13. Pack Tactics: advantage if ally within 5ft of target. Retreats immediately if anyone closes to melee.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me looses an arrow from the boulders (zone 9)! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — arrow skips off stone!</b>\", \"fires!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing<br><i style='color:#6aaa50'>Half cover: attackers need AC 13. Pack Tactics: advantage if ally within 5ft of target. Retreats immediately if anyone closes to melee.</i>"
       },
       {
-        "label": "Seax (melee \u2014 last resort)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me draws his seax in desperation! [r, if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"slashes!\"]<br>ATK: [e: atk+2] | DMG: [e: dmg+1] piercing<br><i style='color:#e74c3c'>Archer is fleeing \u2014 this attack means he is cornered. He will break and run next turn if alive.</i>"
+        "label": "Seax (melee — last resort)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me draws his seax in desperation! [r, if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"slashes!\"]<br>ATK: [e: atk+2] | DMG: [e: dmg+1] piercing<br><i style='color:#e74c3c'>Archer is fleeing — this attack means he is cornered. He will break and run next turn if alive.</i>"
       },
       {
-        "label": "Morale Check (GM \u2014 use when below 6 HP or ally drops nearby)",
-        "raw_cmd": "[h: wis=1d20]/me loses nerve! Morale WIS check: [e: wis] vs DC 10 \u2014 [r, if(wis >= 10): \"<b style='color:#6aaa50'>HOLDS</b> \u2014 stays in position this round.\"; \"<b style='color:#e74c3c'>BREAKS</b> \u2014 drops bow, flees treeline at full speed. Does not return unless druids still chanting.\"]<br><i style='color:#6aaa50'>Trigger: below 6 HP, or 2+ allies dropped within 30ft this round, or druid killed (chanting buff ends).</i>"
+        "label": "Morale Check (GM — use when below 6 HP or ally drops nearby)",
+        "raw_cmd": "[h: wis=1d20]/me loses nerve! Morale WIS check: [e: wis] vs DC 10 — [r, if(wis >= 10): \"<b style='color:#6aaa50'>HOLDS</b> — stays in position this round.\"; \"<b style='color:#e74c3c'>BREAKS</b> — drops bow, flees treeline at full speed. Does not return unless druids still chanting.\"]<br><i style='color:#6aaa50'>Trigger: below 6 HP, or 2+ allies dropped within 30ft this round, or druid killed (chanting buff ends).</i>"
       }
     ],
     "traits": [],
@@ -2306,20 +2306,20 @@
     "cr": "1/2",
     "attacks": [
       {
-        "label": "Framea \u2014 Thrown (before ladder)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me hurls his framea at the wall defenders before charging! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 spear buries in mud!</b>\"; \"throws!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (30/120 ft)<br><i style='color:#c8a040'>Pack Tactics: advantage if ally within 5ft. After throwing, he charges the ladder \u2014 no more ranged attacks.</i>"
+        "label": "Framea — Thrown (before ladder)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me hurls his framea at the wall defenders before charging! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — spear buries in mud!</b>\", \"throws!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (30/120 ft)<br><i style='color:#c8a040'>Pack Tactics: advantage if ally within 5ft. After throwing, he charges the ladder — no more ranged attacks.</i>"
       },
       {
-        "label": "Framea \u2014 Melee (at the parapet)",
-        "raw_cmd": "[h: atk=1d20][h: dmg1h=1d6][h: dmg2h=1d8]/me thrusts the framea at the parapet defender! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"stabs!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg1h+2] piercing (one-hand) or [e: dmg2h+2] two-handed if shield dropped<br><i style='color:#c8a040'>Pack Tactics: adv if ally within 5ft \u2014 devastating once 2+ reach the wall. On ladder he had no shield (+1 AC) \u2014 once on wall he reseats it next round.</i>"
+        "label": "Framea — Melee (at the parapet)",
+        "raw_cmd": "[h: atk=1d20][h: dmg1h=1d6][h: dmg2h=1d8]/me thrusts the framea at the parapet defender! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"stabs!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg1h+2] piercing (one-hand) or [e: dmg2h+2] two-handed if shield dropped<br><i style='color:#c8a040'>Pack Tactics: adv if ally within 5ft — devastating once 2+ reach the wall. On ladder he had no shield (+1 AC) — once on wall he reseats it next round.</i>"
       },
       {
-        "label": "Seax \u2014 Backup Blade",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me draws the seax! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; \"slashes!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (light weapon)<br><i style='color:#c8a040'>Light \u2014 can dual wield with framea as bonus action attack.</i>"
+        "label": "Seax — Backup Blade",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me draws the seax! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; \"slashes!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (light weapon)<br><i style='color:#c8a040'>Light — can dual wield with framea as bonus action attack.</i>"
       },
       {
-        "label": "Morale Check (GM \u2014 use when below 8 HP or 3+ allies fall in 30ft)",
-        "raw_cmd": "[h: wis=1d20]/me falters! Morale WIS check: [e: wis] vs DC 10 \u2014 [r, if(wis >= 10): \"<b style='color:#6aaa50'>HOLDS</b> \u2014 grits teeth, keeps fighting.\"; \"<b style='color:#e74c3c'>BREAKS</b> \u2014 shoves ally aside, leaps off ladder or sprints for treeline. Pack Tactics lost (no ally within 5ft of his target).\"]<br><i style='color:#c8a040'>Trigger: below 8 HP, or 3+ spearmen/archers fell this round within 30ft, or gate is breached (panic spreads). Druid chanting (while alive): this check is at DC 8 instead of DC 10.</i>"
+        "label": "Morale Check (GM — use when below 8 HP or 3+ allies fall in 30ft)",
+        "raw_cmd": "[h: wis=1d20]/me falters! Morale WIS check: [e: wis] vs DC 10 — [r, if(wis >= 10): \"<b style='color:#6aaa50'>HOLDS</b> — grits teeth, keeps fighting.\"; \"<b style='color:#e74c3c'>BREAKS</b> — shoves ally aside, leaps off ladder or sprints for treeline. Pack Tactics lost (no ally within 5ft of his target).\"]<br><i style='color:#c8a040'>Trigger: below 8 HP, or 3+ spearmen/archers fell this round within 30ft, or gate is breached (panic spreads). Druid chanting (while alive): this check is at DC 8 instead of DC 10.</i>"
       }
     ],
     "traits": [],
@@ -2340,16 +2340,16 @@
     "cr": "2",
     "attacks": [
       {
-        "label": "Francisca \u2014 Thrown (Round 1)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6][h: bounce=1d20]/me HURLS the francisca before mounting the ladder! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 axe buries in armour!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 axe skips wide!</b>\"; \"throws!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br>Bounce check \u2014 target rolls Acrobatics: [e: bounce] vs DC 12 or <b>loses shield bonus</b> until bonus action to reseat it.<br><i style='color:#e05020'>Used ONCE in Round 1 before ladder. Danger Sense: advantage on Dex saves vs visible effects (ballista, oil).</i>"
+        "label": "Francisca — Thrown (Round 1)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6][h: bounce=1d20]/me HURLS the francisca before mounting the ladder! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — axe buries in armour!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — axe skips wide!</b>\", \"throws!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br>Bounce check — target rolls Acrobatics: [e: bounce] vs DC 12 or <b>loses shield bonus</b> until bonus action to reseat it.<br><i style='color:#e05020'>Used ONCE in Round 1 before ladder. Danger Sense: advantage on Dex saves vs visible effects (ballista, oil).</i>"
       },
       {
-        "label": "Greataxe \u2014 Normal",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d12]/me swings the greataxe! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 bone-splitting blow!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"attacks!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#e05020'>Choose RECKLESS button instead for advantage \u2014 but attackers get advantage back on him.</i>"
+        "label": "Greataxe — Normal",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d12]/me swings the greataxe! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — bone-splitting blow!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"attacks!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#e05020'>Choose RECKLESS button instead for advantage — but attackers get advantage back on him.</i>"
       },
       {
-        "label": "Greataxe \u2014 RECKLESS (adv both ways)",
-        "raw_cmd": "[h: r1=1d20][h: r2=1d20][h: best=if(r1>=r2,r1,r2)][h: dmg=1d12]/me RECKLESSLY attacks! (rolled [r: r1] and [r: r2] \u2014 uses [r: best]) [r, if(best==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(r1==1 && r2==1): \"<b style='color:red'>DOUBLE FUMBLE!</b>\"; \"charges in!\"]<br>ATK: [e: best+5] | DMG: [e: dmg+3] slashing<br><i style='color:#e74c3c'><b>ALL attacks vs this berserker have ADVANTAGE until his next turn.</b> He does not care. Below half HP he uses this every single round.</i>"
+        "label": "Greataxe — RECKLESS (adv both ways)",
+        "raw_cmd": "[h: r1=1d20][h: r2=1d20][h: best=if(r1>=r2,r1,r2)][h: dmg=1d12]/me RECKLESSLY attacks! (rolled [r: r1] and [r: r2] — uses [r: best]) [r: if(best==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(r1==1 && r2==1, \"<b style='color:red'>DOUBLE FUMBLE!</b>\", \"charges in!\"))]<br>ATK: [e: best+5] | DMG: [e: dmg+3] slashing<br><i style='color:#e74c3c'><b>ALL attacks vs this berserker have ADVANTAGE until his next turn.</b> He does not care. Below half HP he uses this every single round.</i>"
       }
     ],
     "traits": [],
@@ -2372,24 +2372,24 @@
     "cr": "1/4",
     "attacks": [
       {
-        "label": "Shortbow \u2014 Fire + NIMBLE ESCAPE (bonus action)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me pops up from cover and fires! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 arrow through the eyeslot!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 bowstring snaps mid-draw!</b>\"; \"looses!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (80/320 ft)<br><b style='color:#28aa10'>NIMBLE ESCAPE (bonus action):</b> Immediately Hides (Stealth +6) or Disengages after firing. Zero opportunity attacks. Sprints to new cover before next round. <b>Never in same position twice.</b><br><i style='color:#28aa10'>If the goblin was hidden this turn, this attack was at ADVANTAGE \u2014 use the ADV button instead.</i>"
+        "label": "Shortbow — Fire + NIMBLE ESCAPE (bonus action)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me pops up from cover and fires! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — arrow through the eyeslot!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — bowstring snaps mid-draw!</b>\", \"looses!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] piercing (80/320 ft)<br><b style='color:#28aa10'>NIMBLE ESCAPE (bonus action):</b> Immediately Hides (Stealth +6) or Disengages after firing. Zero opportunity attacks. Sprints to new cover before next round. <b>Never in same position twice.</b><br><i style='color:#28aa10'>If the goblin was hidden this turn, this attack was at ADVANTAGE — use the ADV button instead.</i>"
       },
       {
-        "label": "Shortbow \u2014 ADVANTAGE (fired from concealment this turn)",
-        "raw_cmd": "[h: r1=1d20][h: r2=1d20][h: best=if(r1>=r2,r1,r2)][h: dmg=1d6]/me fires from concealment! (rolled [r: r1] / [r: r2] \u2014 uses [r: best]) [r, if(best==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 perfect concealed shot!</b>\"; if(r1==1 && r2==1): \"<b style='color:red'>DOUBLE FUMBLE \u2014 both shots go wide!</b>\"; \"looses from the dark!\"]<br>ATK: [e: best+4] | DMG: [e: dmg+2] piercing<br><i style='color:#28aa10'>Concealment attack \u2014 target couldn't pinpoint the shooter. NIMBLE ESCAPE after: goblin must reach new cover before next round. Stealth +6 vs passive Perception to stay hidden.</i>"
+        "label": "Shortbow — ADVANTAGE (fired from concealment this turn)",
+        "raw_cmd": "[h: r1=1d20][h: r2=1d20][h: best=if(r1>=r2,r1,r2)][h: dmg=1d6]/me fires from concealment! (rolled [r: r1] / [r: r2] — uses [r: best]) [r: if(best==20, \"<b style='color:#e74c3c'>CRITICAL HIT — perfect concealed shot!</b>\", if(r1==1 && r2==1, \"<b style='color:red'>DOUBLE FUMBLE — both shots go wide!</b>\", \"looses from the dark!\"))]<br>ATK: [e: best+4] | DMG: [e: dmg+2] piercing<br><i style='color:#28aa10'>Concealment attack — target couldn't pinpoint the shooter. NIMBLE ESCAPE after: goblin must reach new cover before next round. Stealth +6 vs passive Perception to stay hidden.</i>"
       },
       {
-        "label": "Scimitar \u2014 LAST RESORT (goblin is cornered)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me draws a rusted scimitar in desperation! [r, if(atk==20): \"<b style='color:#e74c3c'>CRIT \u2014 lucky slash!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 drops the blade and shrieks!</b>\"; \"slashes wildly!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] slashing<br><i style='color:#e74c3c'>Goblins NEVER willingly fight in melee. Being in melee means it is cornered or terrified. It will Disengage and flee next turn \u2014 automatically. No morale check.</i>"
+        "label": "Scimitar — LAST RESORT (goblin is cornered)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me draws a rusted scimitar in desperation! [r: if(atk==20, \"<b style='color:#e74c3c'>CRIT — lucky slash!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — drops the blade and shrieks!</b>\", \"slashes wildly!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] slashing<br><i style='color:#e74c3c'>Goblins NEVER willingly fight in melee. Being in melee means it is cornered or terrified. It will Disengage and flee next turn — automatically. No morale check.</i>"
       },
       {
-        "label": "Morale \u2014 AUTO-FLEE (4 HP or below, or allies routed)",
+        "label": "Morale — AUTO-FLEE (4 HP or below, or allies routed)",
         "raw_cmd": "/me turns and RUNS for the treeline at full speed!<br><i style='color:#28aa10'>No morale check required. Goblins auto-flee at 4 HP or below, or when 3+ nearby goblins are killed in the same round. They drop bows and don't come back. Druid chanting (while alive) delays this by 1 round only.</i>"
       }
     ],
     "traits": [],
-    "notes": "CR 1/4. Nimble Escape every round \u2014 immune to OA. Stealth +6. Auto-flee at 4 HP. Best as 8-12 skirmishers. Never in same spot twice."
+    "notes": "CR 1/4. Nimble Escape every round — immune to OA. Stealth +6. Auto-flee at 4 HP. Best as 8-12 skirmishers. Never in same spot twice."
   },
   "Hobgoblin_Warrior": {
     "hp": 11,
@@ -2406,20 +2406,20 @@
     "cr": "1/2",
     "attacks": [
       {
-        "label": "Spear \u2014 Standard",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me advances in disciplined formation and thrusts! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 perfect thrust to the gap!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 overextended!</b>\"; \"thrusts!\"]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] piercing<br><i style='color:#c84040'>TACTIC: Hobgoblins WAIT to attack until a second reaches the parapet. Two on the wall = Martial Advantage triggers. They will sacrifice their first turn to hold position.</i>"
+        "label": "Spear — Standard",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me advances in disciplined formation and thrusts! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — perfect thrust to the gap!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — overextended!</b>\", \"thrusts!\"))]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] piercing<br><i style='color:#c84040'>TACTIC: Hobgoblins WAIT to attack until a second reaches the parapet. Two on the wall = Martial Advantage triggers. They will sacrifice their first turn to hold position.</i>"
       },
       {
         "label": "Spear + MARTIAL ADVANTAGE (ally within 5ft of TARGET)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8][h: ma1=1d6][h: ma2=1d6]/me strikes in perfect coordination with an ally! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 disciplined killing blow!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"attacks in formation!\"]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] + <b style='color:#c84040'>MARTIAL ADVANTAGE +[e: ma1+ma2]</b> ([r: ma1]+[r: ma2]) piercing<br><i style='color:#c84040'>Triggered when ANY ally is within 5ft of the TARGET \u2014 not the hobgoblin. Two hobgoblins attacking the same defender: BOTH get Martial Advantage. Average total damage 13+ per hit from a CR 1/2 creature.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8][h: ma1=1d6][h: ma2=1d6]/me strikes in perfect coordination with an ally! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — disciplined killing blow!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"attacks in formation!\"))]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] + <b style='color:#c84040'>MARTIAL ADVANTAGE +[e: ma1+ma2]</b> ([r: ma1]+[r: ma2]) piercing<br><i style='color:#c84040'>Triggered when ANY ally is within 5ft of the TARGET — not the hobgoblin. Two hobgoblins attacking the same defender: BOTH get Martial Advantage. Average total damage 13+ per hit from a CR 1/2 creature.</i>"
       },
       {
         "label": "Longsword two-hand (on wall, shield dropped for reach)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d10]/me drops the shield and swings two-handed from the parapet! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 sweeping slash!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"swings!\"]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] slashing (two-hand \u2014 shield dropped, AC now 16)<br><i style='color:#c84040'>Used once firmly established on the parapet. Reaches over allies. Will re-equip shield as bonus action next round (AC back to 18). STILL benefits from Martial Advantage on this attack.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d10]/me drops the shield and swings two-handed from the parapet! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — sweeping slash!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"swings!\"))]<br>ATK: [e: atk+3] | DMG: [e: dmg+1] slashing (two-hand — shield dropped, AC now 16)<br><i style='color:#c84040'>Used once firmly established on the parapet. Reaches over allies. Will re-equip shield as bonus action next round (AC back to 18). STILL benefits from Martial Advantage on this attack.</i>"
       }
     ],
     "traits": [],
-    "notes": "CR 1/2. AC 18 is the point \u2014 hard to hit, dies in 2-3 hits. Martial Advantage makes them spike dangerous. Always position 2+ at same target. Formation fighters, not berserkers."
+    "notes": "CR 1/2. AC 18 is the point — hard to hit, dies in 2-3 hits. Martial Advantage makes them spike dangerous. Always position 2+ at same target. Formation fighters, not berserkers."
   },
   "Orc_Raider": {
     "hp": 15,
@@ -2439,15 +2439,15 @@
     "attacks": [
       {
         "label": "Greataxe (after AGGRESSIVE bonus action move)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d12]/me CHARGES in using AGGRESSIVE (bonus action: +30ft) and swings! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 bone-splitting charge!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 overextended the charge!</b>\"; \"attacks!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><b style='color:#e05020'>AGGRESSIVE:</b> This orc moved up to 30ft as a bonus action this turn \u2014 total 60ft possible. Cannot be kited by slow characters. Closed the gap in ONE turn and attacked.<br><i style='color:#e05020'>TACTIC: Orcs always use Aggressive. If the target is on the wall, they will climb a ladder and Aggressive along the parapet toward the nearest defender.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d12]/me CHARGES in using AGGRESSIVE (bonus action: +30ft) and swings! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — bone-splitting charge!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — overextended the charge!</b>\", \"attacks!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><b style='color:#e05020'>AGGRESSIVE:</b> This orc moved up to 30ft as a bonus action this turn — total 60ft possible. Cannot be kited by slow characters. Closed the gap in ONE turn and attacked.<br><i style='color:#e05020'>TACTIC: Orcs always use Aggressive. If the target is on the wall, they will climb a ladder and Aggressive along the parapet toward the nearest defender.</i>"
       },
       {
-        "label": "Javelin \u2014 throw before closing (carries 3)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me hurls a javelin before using AGGRESSIVE to close! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 javelin punches through armour!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 javelin falls short!</b>\"; \"throws!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing (30/120 ft)<br><i style='color:#e05020'>Throw first, then AGGRESSIVE bonus action to close. Carries 3. Not a ranged combatant \u2014 this is the opening. Once out of javelins, pure melee.</i>"
+        "label": "Javelin — throw before closing (carries 3)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me hurls a javelin before using AGGRESSIVE to close! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — javelin punches through armour!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — javelin falls short!</b>\", \"throws!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing (30/120 ft)<br><i style='color:#e05020'>Throw first, then AGGRESSIVE bonus action to close. Carries 3. Not a ranged combatant — this is the opening. Once out of javelins, pure melee.</i>"
       },
       {
-        "label": "RELENTLESS ENDURANCE \u2014 when dropped to 0 HP (once per combat)",
-        "raw_cmd": "/me drops to one knee... then ROARS and surges back up. RELENTLESS ENDURANCE!<br><b style='color:#ff4040'>RELENTLESS ENDURANCE:</b> Orc would drop to 0 HP \u2014 drops to 1 HP instead. Once per combat. GM: mark used.<br><i style='color:#e05020'>NOW BERSERK: The orc knows it is dying. Until it takes further damage, it attacks with absolute ferocity \u2014 gains Advantage on its next attack roll (primal rage response to near-death). Then any further hit drops it to 0.</i>"
+        "label": "RELENTLESS ENDURANCE — when dropped to 0 HP (once per combat)",
+        "raw_cmd": "/me drops to one knee... then ROARS and surges back up. RELENTLESS ENDURANCE!<br><b style='color:#ff4040'>RELENTLESS ENDURANCE:</b> Orc would drop to 0 HP — drops to 1 HP instead. Once per combat. GM: mark used.<br><i style='color:#e05020'>NOW BERSERK: The orc knows it is dying. Until it takes further damage, it attacks with absolute ferocity — gains Advantage on its next attack roll (primal rage response to near-death). Then any further hit drops it to 0.</i>"
       }
     ],
     "traits": [],
@@ -2471,16 +2471,16 @@
     "cr": "1",
     "attacks": [
       {
-        "label": "Morningstar \u2014 BRUTE (2d8 on every hit, 10ft reach)",
-        "raw_cmd": "[h: atk=1d20][h: d1=1d8][h: d2=1d8]/me swings the heavy morningstar with brutal force! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 bone-crushing impact!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 missed badly, overbalanced!</b>\"; \"smashes!\"]<br>ATK: [e: atk+4] | DMG: [e: d1+d2+2] piercing (BRUTE: 2d8+2 every hit)<br><b style='color:#c88020'>LONG-LIMBED:</b> Melee reach is 10 ft \u2014 can hit parapet defenders from below if adjacent to wall. This creature is 7 feet tall with unnaturally long arms.<br><i style='color:#c88020'>TACTIC: Bugbears ambush from the drainage ditch on the east side. They appear mid-combat from an unexpected direction. Primary goal: GRAPPLE defenders off the wall, not kill them on it.</i>"
+        "label": "Morningstar — BRUTE (2d8 on every hit, 10ft reach)",
+        "raw_cmd": "[h: atk=1d20][h: d1=1d8][h: d2=1d8]/me swings the heavy morningstar with brutal force! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — bone-crushing impact!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — missed badly, overbalanced!</b>\", \"smashes!\"))]<br>ATK: [e: atk+4] | DMG: [e: d1+d2+2] piercing (BRUTE: 2d8+2 every hit)<br><b style='color:#c88020'>LONG-LIMBED:</b> Melee reach is 10 ft — can hit parapet defenders from below if adjacent to wall. This creature is 7 feet tall with unnaturally long arms.<br><i style='color:#c88020'>TACTIC: Bugbears ambush from the drainage ditch on the east side. They appear mid-combat from an unexpected direction. Primary goal: GRAPPLE defenders off the wall, not kill them on it.</i>"
       },
       {
         "label": "Morningstar + SURPRISE ATTACK (target hasn't acted this combat or is surprised)",
-        "raw_cmd": "[h: atk=1d20][h: d1=1d8][h: d2=1d8][h: s1=1d6][h: s2=1d6]/me erupts from hiding \u2014 SURPRISE ATTACK! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 devastating ambush strike!</b>\"; \"smashes before target can react!\"]<br>ATK: [e: atk+4] | DMG: [e: d1+d2+s1+s2+2] piercing<br>(BRUTE 2d8+2 + <b style='color:#e05020'>SURPRISE +2d6</b> = avg 21 damage on first hit)<br><i style='color:#e05020'>SURPRISE ATTACK only on the FIRST hit when target hasn't taken a turn yet this combat. This is why bugbears hide until the perfect moment \u2014 they are assassins. 21 average damage on a CR 1 creature is terrifying.</i>"
+        "raw_cmd": "[h: atk=1d20][h: d1=1d8][h: d2=1d8][h: s1=1d6][h: s2=1d6]/me erupts from hiding — SURPRISE ATTACK! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT — devastating ambush strike!</b>\"; \"smashes before target can react!\"]<br>ATK: [e: atk+4] | DMG: [e: d1+d2+s1+s2+2] piercing<br>(BRUTE 2d8+2 + <b style='color:#e05020'>SURPRISE +2d6</b> = avg 21 damage on first hit)<br><i style='color:#e05020'>SURPRISE ATTACK only on the FIRST hit when target hasn't taken a turn yet this combat. This is why bugbears hide until the perfect moment — they are assassins. 21 average damage on a CR 1 creature is terrifying.</i>"
       },
       {
         "label": "GRAPPLE attempt (bonus action when morningstar hit connects)",
-        "raw_cmd": "[h: bg_str=1d20]/me grabs the defender after the hit \u2014 GRAPPLE attempt!<br>Bugbear STR check: [e: bg_str+4]<br><b style='color:#c88020'>GRAPPLE:</b> Target must make STR (Athletics) or DEX (Acrobatics) vs [e: bg_str+4]. On failure: target is GRAPPLED (speed 0).<br><b>PULL OFF WALL:</b> Bugbear uses remaining movement to drag grappled target 10ft. If target was on a wall/ladder: falls to ground (1d6 bludgeoning, PRONE). This removes one defender from the wall entirely \u2014 they must spend a turn standing and climbing back up.<br><i style='color:#c88020'>Primary tactic: not killing ON the wall, but removing defenders FROM it. One successful grapple-and-drag = one combat turn wasted by a PC.</i>"
+        "raw_cmd": "[h: bg_str=1d20]/me grabs the defender after the hit — GRAPPLE attempt!<br>Bugbear STR check: [e: bg_str+4]<br><b style='color:#c88020'>GRAPPLE:</b> Target must make STR (Athletics) or DEX (Acrobatics) vs [e: bg_str+4]. On failure: target is GRAPPLED (speed 0).<br><b>PULL OFF WALL:</b> Bugbear uses remaining movement to drag grappled target 10ft. If target was on a wall/ladder: falls to ground (1d6 bludgeoning, PRONE). This removes one defender from the wall entirely — they must spend a turn standing and climbing back up.<br><i style='color:#c88020'>Primary tactic: not killing ON the wall, but removing defenders FROM it. One successful grapple-and-drag = one combat turn wasted by a PC.</i>"
       }
     ],
     "traits": [],
@@ -2503,16 +2503,16 @@
     "cr": "1",
     "attacks": [
       {
-        "label": "Composite Longbow \u2014 Precision (ignore cover, 150/600ft)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me draws and looses in one smooth motion! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 perfect shot through the gap!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"fires!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing (150/600 ft range)<br><b style='color:#8a6010'>PRECISION SHOT:</b> Syrian composite bow training allows ignoring half and three-quarter cover on ranged attacks within 150ft. The druids behind their boulders (normally 3/4 cover AC+5) take NO cover bonus against this archer.<br><i style='color:#8a6010'>Auxiliary archers from Syria/Judea. Exceptional range and accuracy. Assign to neutralize zone 9 druids and the ogre's eyes.</i>"
+        "label": "Composite Longbow — Precision (ignore cover, 150/600ft)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8]/me draws and looses in one smooth motion! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — perfect shot through the gap!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"fires!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing (150/600 ft range)<br><b style='color:#8a6010'>PRECISION SHOT:</b> Syrian composite bow training allows ignoring half and three-quarter cover on ranged attacks within 150ft. The druids behind their boulders (normally 3/4 cover AC+5) take NO cover bonus against this archer.<br><i style='color:#8a6010'>Auxiliary archers from Syria/Judea. Exceptional range and accuracy. Assign to neutralize zone 9 druids and the ogre's eyes.</i>"
       },
       {
-        "label": "Rapid Fire \u2014 two shots (both at -2 to hit)",
+        "label": "Rapid Fire — two shots (both at -2 to hit)",
         "raw_cmd": "[h: atk1=1d20][h: atk2=1d20][h: dmg1=1d8][h: dmg2=1d8]/me looses two arrows in rapid succession!<br>Arrow 1: ATK [e: atk1+3] | DMG [e: dmg1+3] piercing<br>Arrow 2: ATK [e: atk2+3] | DMG [e: dmg2+3] piercing<br><i style='color:#8a6010'>Rapid Fire: fires twice as action, -2 to hit on both. Best used against the ogre (large target, -2 to hit barely matters) or to apply pressure on multiple enemies.</i>"
       }
     ],
     "traits": [],
-    "notes": "CR 1. Roman Syrian auxiliary. Composite bow \u2014 ignores half/3-quarter cover, 600ft range. Assign to druid suppression and ogre. 2-4 present at most forts. Racial diversity: typically Semitic/Arab stock in D&D terms."
+    "notes": "CR 1. Roman Syrian auxiliary. Composite bow — ignores half/3-quarter cover, 600ft range. Assign to druid suppression and ogre. 2-4 present at most forts. Racial diversity: typically Semitic/Arab stock in D&D terms."
   },
   "Stone_Golem": {
     "hp": 120,
@@ -2529,11 +2529,11 @@
     "attacks": [
       {
         "label": "Slam",
-        "raw_cmd": "[h: atk=1d20][h: dmg=3d8][h: modDmg=dmg+6]/me slams with divine weight! [r, if(atk+10>=20): \"<b style='color:#e74c3c'>SLAM HITS AC \"+(atk+10)+\"</b> \u2014 <b>\"+modDmg+\" bludgeoning</b>\"; \"<b>MISSES</b> (rolled \"+(atk+10)+\")\"] <br><i style='color:gray'>Multiattack: 2 Slam attacks per turn. Immutable Form: immune to polymorph. Magic Resistance: advantage on spell saves.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=3d8][h: modDmg=dmg+6]/me slams with divine weight! [r, if(atk+10>=20): \"<b style='color:#e74c3c'>SLAM HITS AC \"+(atk+10)+\"</b> — <b>\"+modDmg+\" bludgeoning</b>\"; \"<b>MISSES</b> (rolled \"+(atk+10)+\")\"] <br><i style='color:gray'>Multiattack: 2 Slam attacks per turn. Immutable Form: immune to polymorph. Magic Resistance: advantage on spell saves.</i>"
       },
       {
         "label": "Slow (Recharge 5-6)",
-        "raw_cmd": "[h: recharge=1d6][h: dc17=1d20]/me channels divine stillness \u2014 SLOW! [r, if(recharge>=5): \"<b style='color:#c0392b'>SLOW ACTIVATES</b> \u2014 all creatures within 10 ft. make DC 17 CON save or speed halved, no reactions, only one attack per Attack action.\"; \"<b style='color:gray'>Slow not ready (rolled \"+recharge+\"/6)</b>\"] <br><i style='color:gray'>On failed save: lasts 1 min (CON save each turn to end). Does NOT fade when ritual completes \u2014 GM removes golems manually.</i>"
+        "raw_cmd": "[h: recharge=1d6][h: dc17=1d20]/me channels divine stillness — SLOW! [r, if(recharge>=5): \"<b style='color:#c0392b'>SLOW ACTIVATES</b> — all creatures within 10 ft. make DC 17 CON save or speed halved, no reactions, only one attack per Attack action.\"; \"<b style='color:gray'>Slow not ready (rolled \"+recharge+\"/6)</b>\"] <br><i style='color:gray'>On failed save: lasts 1 min (CON save each turn to end). Does NOT fade when ritual completes — GM removes golems manually.</i>"
       }
     ],
     "traits": [
@@ -2552,7 +2552,7 @@
     "attacks": [
       {
         "label": "Slam",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me animates with terrible purpose \u2014 SLAM! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the gauntlet crushes bone!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the armour lurches wide!</b>\"; \"strikes!\"]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] bludgeoning<br><i style='color:#c88020'>Multiattack: two Slam attacks per turn. Antimagic Susceptibility: incapacitated inside an antimagic field. False Appearance: indistinguishable from ordinary armour while still.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me animates with terrible purpose — SLAM! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the gauntlet crushes bone!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the armour lurches wide!</b>\", \"strikes!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] bludgeoning<br><i style='color:#c88020'>Multiattack: two Slam attacks per turn. Antimagic Susceptibility: incapacitated inside an antimagic field. False Appearance: indistinguishable from ordinary armour while still.</i>"
       }
     ]
   },
@@ -2564,15 +2564,15 @@
     "attacks": [
       {
         "label": "Greatsword",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me swings the greatsword in a two-handed arc! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the blade cleaves deep!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the stroke goes wide!</b>\"; \"attacks!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#c88020'>Multiattack: two Greatsword attacks per turn. Brave: advantage on saves vs Frightened. Parry (Reaction): +2 AC against one melee attack the Knight can see.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me swings the greatsword in a two-handed arc! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the blade cleaves deep!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the stroke goes wide!</b>\", \"attacks!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] slashing<br><i style='color:#c88020'>Multiattack: two Greatsword attacks per turn. Brave: advantage on saves vs Frightened. Parry (Reaction): +2 AC against one melee attack the Knight can see.</i>"
       },
       {
         "label": "Heavy Crossbow",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d10]/me levels the crossbow and fires! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the bolt punches through!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the bolt skips off stone!</b>\"; \"fires!\"]<br>ATK: [e: atk+2] | DMG: [e: dmg] piercing (range 100/400 ft.)<br><i style='color:#c88020'>Used at range. Only one crossbow attack (no Multiattack with ranged). Parry reaction still available.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d10]/me levels the crossbow and fires! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the bolt punches through!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the bolt skips off stone!</b>\", \"fires!\"))]<br>ATK: [e: atk+2] | DMG: [e: dmg] piercing (range 100/400 ft.)<br><i style='color:#c88020'>Used at range. Only one crossbow attack (no Multiattack with ranged). Parry reaction still available.</i>"
       },
       {
         "label": "Leadership (Recharge: Short/Long Rest)",
-        "raw_cmd": "[r: \"<b style='color:#3498db'>LEADERSHIP ACTIVE</b> \u2014 for the next minute, one ally within 30 ft who can hear and understand the Knight may add <b>1d4</b> to an attack roll or saving throw once per turn (before the roll). The Knight must not be incapacitated.\"]<br><i style='color:#c88020'>Declare at start of the Knight's turn. Lasts 1 minute (10 rounds). Recharges after short or long rest.</i>"
+        "raw_cmd": "[r: \"<b style='color:#3498db'>LEADERSHIP ACTIVE</b> — for the next minute, one ally within 30 ft who can hear and understand the Knight may add <b>1d4</b> to an attack roll or saving throw once per turn (before the roll). The Knight must not be incapacitated.\"]<br><i style='color:#c88020'>Declare at start of the Knight's turn. Lasts 1 minute (10 rounds). Recharges after short or long rest.</i>"
       }
     ]
   },
@@ -2584,23 +2584,23 @@
     "attacks": [
       {
         "label": "Spear of Mars",
-        "raw_cmd": "[h: atk=1d20][h: base=1d8][h: fire=1d6]/me drives the burning spear forward with divine fury! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the spear blazes white with Mars's wrath!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the divine flame sputters!</b>\"; \"thrusts!\"]<br>ATK: [e: atk+9] | DMG: [e: base+5] piercing + <b style='color:orange'>[e: fire] radiant (divine)</b><br><i style='color:#c88020'>Multiattack: three attacks per turn. One attack may be substituted for a Net throw. Two-handed versatile: 1d8+5.</i>"
+        "raw_cmd": "[h: atk=1d20][h: base=1d8][h: fire=1d6]/me drives the burning spear forward with divine fury! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the spear blazes white with Mars's wrath!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the divine flame sputters!</b>\", \"thrusts!\"))]<br>ATK: [e: atk+9] | DMG: [e: base+5] piercing + <b style='color:orange'>[e: fire] radiant (divine)</b><br><i style='color:#c88020'>Multiattack: three attacks per turn. One attack may be substituted for a Net throw. Two-handed versatile: 1d8+5.</i>"
       },
       {
         "label": "Shield Bash",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: save=1d20]/me crashes the iron shield into the target! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the bash sends them sprawling!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"slams!\"]<br>ATK: [e: atk+9] | DMG: [e: dmg+5] bludgeoning<br>Target STR save: [e: save] vs DC 16 \u2014 [r, if(save>=16): \"<b style='color:green'>holds footing</b>\"; \"<b style='color:#e74c3c'>KNOCKED PRONE</b>\"]<br><i style='color:#c88020'>Counts as one of her three Multiattack strikes.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: save=1d20]/me crashes the iron shield into the target! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the bash sends them sprawling!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"slams!\"))]<br>ATK: [e: atk+9] | DMG: [e: dmg+5] bludgeoning<br>Target STR save: [e: save] vs DC 16 — [r, if(save>=16): \"<b style='color:green'>holds footing</b>\"; \"<b style='color:#e74c3c'>KNOCKED PRONE</b>\"]<br><i style='color:#c88020'>Counts as one of her three Multiattack strikes.</i>"
       },
       {
         "label": "Net",
-        "raw_cmd": "[h: atk=1d20]/me hurls the weighted net! [r, if(atk==20): \"<b style='color:#e74c3c'>PERFECT THROW \u2014 the net wraps tight!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 net tangles wide!</b>\"; \"throws!\"]<br>ATK: [e: atk+6] (range 5/10 ft.) \u2014 on hit: <b>RESTRAINED</b> (Large or smaller). DC 10 STR check (action) to break free. Speed 0 while restrained.<br><i style='color:#c88020'>Replaces one of her three Multiattack strikes. Net has AC 10, 5 HP, immunity to bludgeoning + poison + psychic.</i>"
+        "raw_cmd": "[h: atk=1d20]/me hurls the weighted net! [r: if(atk==20, \"<b style='color:#e74c3c'>PERFECT THROW — the net wraps tight!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — net tangles wide!</b>\", \"throws!\"))]<br>ATK: [e: atk+6] (range 5/10 ft.) — on hit: <b>RESTRAINED</b> (Large or smaller). DC 10 STR check (action) to break free. Speed 0 while restrained.<br><i style='color:#c88020'>Replaces one of her three Multiattack strikes. Net has AC 10, 5 HP, immunity to bludgeoning + poison + psychic.</i>"
       },
       {
         "label": "Legendary Defiance (1/round when below 50 HP)",
-        "raw_cmd": "[r: \"<b style='color:#f39c12'>LEGENDARY DEFIANCE</b> \u2014 Fausta's first drop below 50 HP triggers this automatically (1/combat). She gains <b>20 temporary HP</b> and auto-succeeds on one saving throw this round.\"]<br><i style='color:#c88020'>Frozen Advance: difficult terrain does not slow her. Mars calls Enough after 10 rounds or when she reaches 0 HP a second time.</i>"
+        "raw_cmd": "[r: \"<b style='color:#f39c12'>LEGENDARY DEFIANCE</b> — Fausta's first drop below 50 HP triggers this automatically (1/combat). She gains <b>20 temporary HP</b> and auto-succeeds on one saving throw this round.\"]<br><i style='color:#c88020'>Frozen Advance: difficult terrain does not slow her. Mars calls Enough after 10 rounds or when she reaches 0 HP a second time.</i>"
       },
       {
         "label": "Ash Form (at 0 HP)",
-        "raw_cmd": "[r: \"<b style='color:#c0392b'>FAUSTA COLLAPSES</b> \u2014 her body crumbles to hot grey ash. Mars may spend a Legendary Action to reform her at <b>20 HP</b> (once per combat). If Mars does not act, she is defeated and the trial ends.\"]<br><i style='color:#c88020'>She does not make death saving throws. The ash is not a creature and cannot be targeted. If Mars reforms her, place the token at the arena center at 20 HP.</i>"
+        "raw_cmd": "[r: \"<b style='color:#c0392b'>FAUSTA COLLAPSES</b> — her body crumbles to hot grey ash. Mars may spend a Legendary Action to reform her at <b>20 HP</b> (once per combat). If Mars does not act, she is defeated and the trial ends.\"]<br><i style='color:#c88020'>She does not make death saving throws. The ash is not a creature and cannot be targeted. If Mars reforms her, place the token at the arena center at 20 HP.</i>"
       }
     ]
   },
@@ -2625,15 +2625,15 @@
     "attacks": [
       {
         "label": "Corrupting Touch",
-        "raw_cmd": "[h: atk=1d20][h: dmg=3d6]/me reaches out with a hand of freezing grief \u2014 CORRUPTING TOUCH! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the cold passes straight through the heart!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 her hand passes through empty air!</b>\"; \"connects!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg] necrotic<br><i style='color:#c88020'>Incorporeal Movement: passes through walls/objects (5 force damage if ending turn inside). Resistances: acid, fire, lightning, thunder; nonmagical weapons. Immune: cold, necrotic, poison.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=3d6]/me reaches out with a hand of freezing grief — CORRUPTING TOUCH! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the cold passes straight through the heart!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — her hand passes through empty air!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg] necrotic<br><i style='color:#c88020'>Incorporeal Movement: passes through walls/objects (5 force damage if ending turn inside). Resistances: acid, fire, lightning, thunder; nonmagical weapons. Immune: cold, necrotic, poison.</i>"
       },
       {
         "label": "Horrifying Visage",
-        "raw_cmd": "[h: save=1d20]/me turns her true, ruined face toward the room \u2014 HORRIFYING VISAGE! Each living creature within 60 ft that can see her: WIS save [e: save] vs DC 13 \u2014 [r, if(save>=13): \"<b style='color:green'>resists \u2014 immune to this banshee's Horrifying Visage for 24 hours.</b>\"; \"<b style='color:#e74c3c'>FRIGHTENED</b> for 1 minute (repeat save each turn). If the save failed by 5+, also ages 1d4\u00d710 years, right now, visibly.\"]<br><i style='color:#c88020'>Does not affect undead. Free action, no attack roll.</i>"
+        "raw_cmd": "[h: save=1d20]/me turns her true, ruined face toward the room — HORRIFYING VISAGE! Each living creature within 60 ft that can see her: WIS save [e: save] vs DC 13 — [r, if(save>=13): \"<b style='color:green'>resists — immune to this banshee's Horrifying Visage for 24 hours.</b>\"; \"<b style='color:#e74c3c'>FRIGHTENED</b> for 1 minute (repeat save each turn). If the save failed by 5+, also ages 1d4×10 years, right now, visibly.\"]<br><i style='color:#c88020'>Does not affect undead. Free action, no attack roll.</i>"
       },
       {
         "label": "Wail (1/day)",
-        "raw_cmd": "[h: save=1d20][h: dmg=10d8]/me opens her mouth and every grief she ever carried comes out at once \u2014 WAIL! Every living creature within 30 ft that can hear it: CON save [e: save] vs DC 13 \u2014 [r, if(save>=13): \"<b style='color:green'>resists \u2014 takes half damage only.</b>\"; \"<b style='color:#e74c3c'>TAKES FULL DAMAGE.</b> If this reduces the target to 0 HP, it dies outright.\"]<br>DMG: [e, if(save>=13): floor(dmg/2); dmg] psychic<br><i style='color:#c88020'>Once per day. Does not affect constructs or undead. This is the banshee's single scariest moment \u2014 use it when the fight needs a spike, not on round 1.</i>"
+        "raw_cmd": "[h: save=1d20][h: dmg=10d8]/me opens her mouth and every grief she ever carried comes out at once — WAIL! Every living creature within 30 ft that can hear it: CON save [e: save] vs DC 13 — [r, if(save>=13): \"<b style='color:green'>resists — takes half damage only.</b>\"; \"<b style='color:#e74c3c'>TAKES FULL DAMAGE.</b> If this reduces the target to 0 HP, it dies outright.\"]<br>DMG: [e, if(save>=13): floor(dmg/2); dmg] psychic<br><i style='color:#c88020'>Once per day. Does not affect constructs or undead. This is the banshee's single scariest moment — use it when the fight needs a spike, not on round 1.</i>"
       }
     ],
     "traits": [
@@ -2658,15 +2658,15 @@
     "attacks": [
       {
         "label": "Bite",
-        "raw_cmd": "[h: atk=1d20][h: dmg=4d6]/me strikes with a skeletal, fang-bare jaw \u2014 BITE! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 bone locks through bone!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the jaw snaps shut on nothing!</b>\"; \"connects!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing"
+        "raw_cmd": "[h: atk=1d20][h: dmg=4d6]/me strikes with a skeletal, fang-bare jaw — BITE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — bone locks through bone!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the jaw snaps shut on nothing!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing"
       },
       {
         "label": "Hold Person (spell)",
-        "raw_cmd": "[h: save=1d20]/me hisses a word that isn't breath \u2014 HOLD PERSON! One humanoid it can see within 60 ft: WIS save [e: save] vs DC 12 \u2014 [r, if(save>=12): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#8e44ad'>PARALYZED</b> for the spell's duration. Target may repeat the save at the end of each of its turns.\"]<br><i style='color:#c88020'>Spellcasting (8th level, DC 12, +4 to hit): at will \u2014 mage hand, minor illusion. 1/day each \u2014 hold person, ray of enfeeblement, detect thoughts, suggestion, dispel magic.</i>"
+        "raw_cmd": "[h: save=1d20]/me hisses a word that isn't breath — HOLD PERSON! One humanoid it can see within 60 ft: WIS save [e: save] vs DC 12 — [r, if(save>=12): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#8e44ad'>PARALYZED</b> for the spell's duration. Target may repeat the save at the end of each of its turns.\"]<br><i style='color:#c88020'>Spellcasting (8th level, DC 12, +4 to hit): at will — mage hand, minor illusion. 1/day each — hold person, ray of enfeeblement, detect thoughts, suggestion, dispel magic.</i>"
       },
       {
         "label": "Ray of Enfeeblement (spell)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d8]/me traces a withering ray from an eye socket \u2014 RAY OF ENFEEBLEMENT! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT.</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the ray goes wide.</b>\"; \"connects!\"]<br>ATK: [e: atk+4] (spell attack) | DMG: [e: dmg] necrotic, and while the spell lasts the target's Strength-based weapon attacks deal only half damage.<br><i style='color:#c88020'>Save-ends-early: target or an ally can spend an action to attempt to end it (no save needed on the naga's part).</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d8]/me traces a withering ray from an eye socket — RAY OF ENFEEBLEMENT! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT.</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the ray goes wide.</b>\", \"connects!\"))]<br>ATK: [e: atk+4] (spell attack) | DMG: [e: dmg] necrotic, and while the spell lasts the target's Strength-based weapon attacks deal only half damage.<br><i style='color:#c88020'>Save-ends-early: target or an ally can spend an action to attempt to end it (no save needed on the naga's part).</i>"
       }
     ],
     "traits": [
@@ -2695,20 +2695,20 @@
     "attacks": [
       {
         "label": "Poisonous Tentacle",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: save=1d20]/me lashes out with a tentacle that shouldn't exist on anything shaped like a person \u2014 POISONOUS TENTACLE! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 it wraps twice before the target can react!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 the tentacle misjudges the reach!</b>\"; \"connects!\"]<br>ATK: [e: atk+5] reach 15 ft | DMG: [e: dmg+2] poison, and target is grappled (escape DC 14).<br>While grappled, target repeats CON save [e: save] vs DC 15 each of its turns \u2014 [r, if(save>=15): \"resists further poison this turn.\"; \"<b style='color:#e74c3c'>takes 2d6 poison again.</b>\"]"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: save=1d20]/me lashes out with a tentacle that shouldn't exist on anything shaped like a person — POISONOUS TENTACLE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — it wraps twice before the target can react!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the tentacle misjudges the reach!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] reach 15 ft | DMG: [e: dmg+2] poison, and target is grappled (escape DC 14).<br>While grappled, target repeats CON save [e: save] vs DC 15 each of its turns — [r, if(save>=15): \"resists further poison this turn.\"; \"<b style='color:#e74c3c'>takes 2d6 poison again.</b>\"]"
       },
       {
         "label": "Innate Spellcasting",
-        "raw_cmd": "[r: \"<b style='color:#8e44ad'>INNATE SPELLCASTING</b> (CHA, DC 14) \u2014 at will: charm person, dancing lights, minor illusion. 3/day: fog cloud. 1/day: insect plague.\"]<br><i style='color:#c88020'>Use insect plague to control the battlefield in the blood-growth rooms \u2014 it thematically doubles as the fleshy growths swarming.</i>"
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>INNATE SPELLCASTING</b> (CHA, DC 14) — at will: charm person, dancing lights, minor illusion. 3/day: fog cloud. 1/day: insect plague.\"]<br><i style='color:#c88020'>Use insect plague to control the battlefield in the blood-growth rooms — it thematically doubles as the fleshy growths swarming.</i>"
       },
       {
         "label": "Change Shape",
-        "raw_cmd": "[r: \"<b style='color:#8e44ad'>CHANGE SHAPE</b> \u2014 the yochlol polymorphs into a Large or smaller spider, or back into its true ooze-and-limbs form, as an action. Stats are the same except speed (spider form gains climb 30 ft).\"]<br><i style='color:#c88020'>No attack roll. Use to escape a bad position or to ambush from a ceiling/wall in spider form.</i>"
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>CHANGE SHAPE</b> — the yochlol polymorphs into a Large or smaller spider, or back into its true ooze-and-limbs form, as an action. Stats are the same except speed (spider form gains climb 30 ft).\"]<br><i style='color:#c88020'>No attack roll. Use to escape a bad position or to ambush from a ceiling/wall in spider form.</i>"
       }
     ],
     "traits": [
       "Magic Resistance: advantage on saving throws against spells and other magical effects.",
-      "Shapechanger: true form is neither wholly humanoid nor wholly ooze \u2014 unsettling to look at even at rest."
+      "Shapechanger: true form is neither wholly humanoid nor wholly ooze — unsettling to look at even at rest."
     ]
   },
   "Shadow_Demon": {
@@ -2731,11 +2731,11 @@
     "attacks": [
       {
         "label": "Claw",
-        "raw_cmd": "[h: atk=1d20][h: dmg=3d6]/me tears free of the dark between the pillars \u2014 CLAW! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the claw passes through flesh like it isn't there!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 it overreaches into the light and flinches back!</b>\"; \"connects!\"]<br>ATK: [e: atk+5] | DMG: [e: dmg] necrotic, and the target's <b>hit point maximum is reduced</b> by the damage taken until it finishes a long rest. Target dies if this reduces its maximum to 0.<br><i style='color:#c88020'>Incorporeal Movement. Immune: necrotic, poison. Resistant to nonmagical weapons.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=3d6]/me tears free of the dark between the pillars — CLAW! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the claw passes through flesh like it isn't there!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — it overreaches into the light and flinches back!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg] necrotic, and the target's <b>hit point maximum is reduced</b> by the damage taken until it finishes a long rest. Target dies if this reduces its maximum to 0.<br><i style='color:#c88020'>Incorporeal Movement. Immune: necrotic, poison. Resistant to nonmagical weapons.</i>"
       },
       {
         "label": "Shadow Stealth (bonus action)",
-        "raw_cmd": "[r: \"<b style='color:#8e44ad'>SHADOW STEALTH</b> \u2014 while in dim light or darkness, the shadow demon takes the Hide action as a bonus action.\"]<br><i style='color:#c88020'>It will keep breaking line of sight and re-hiding between the altar's pillars every round it can \u2014 do not let it stand still and trade blows.</i>"
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>SHADOW STEALTH</b> — while in dim light or darkness, the shadow demon takes the Hide action as a bonus action.\"]<br><i style='color:#c88020'>It will keep breaking line of sight and re-hiding between the altar's pillars every round it can — do not let it stand still and trade blows.</i>"
       }
     ],
     "traits": [
@@ -2761,15 +2761,15 @@
     "attacks": [
       {
         "label": "Bite",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me snaps forward, more hunger than plan \u2014 BITE! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE \u2014 it bites itself as much as anything!</b>\"; \"connects!\"]<br>ATK: [e: atk+2] | DMG: [e: dmg] piercing"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me snaps forward, more hunger than plan — BITE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — it bites itself as much as anything!</b>\", \"connects!\"))]<br>ATK: [e: atk+2] | DMG: [e: dmg] piercing"
       },
       {
         "label": "Claws",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me scrabbles with both filth-crusted hands \u2014 CLAWS! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"connects!\"]<br>ATK: [e: atk+2] | DMG: [e: dmg] slashing"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me scrabbles with both filth-crusted hands — CLAWS! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+2] | DMG: [e: dmg] slashing"
       },
       {
         "label": "Fetid Cloud (recharge 6)",
-        "raw_cmd": "[h: save=1d20]/me releases a cloud of noxious gas \u2014 FETID CLOUD! Each creature within 10 ft: CON save [e: save] vs DC 11 \u2014 [r, if(save>=11): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>POISONED</b> for 1 minute (repeat save at end of each turn).\"]<br><i style='color:#c88020'>Use to punish the party for clumping up \u2014 dretches are weak alone but a swarm with this recharging is genuinely nasty.</i>"
+        "raw_cmd": "[h: save=1d20]/me releases a cloud of noxious gas — FETID CLOUD! Each creature within 10 ft: CON save [e: save] vs DC 11 — [r, if(save>=11): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>POISONED</b> for 1 minute (repeat save at end of each turn).\"]<br><i style='color:#c88020'>Use to punish the party for clumping up — dretches are weak alone but a swarm with this recharging is genuinely nasty.</i>"
       }
     ],
     "traits": [
@@ -2799,15 +2799,15 @@
     "attacks": [
       {
         "label": "Pincer (part of Multiattack)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d10]/me lunges with a massive crab-like claw \u2014 PINCER! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT \u2014 the pincer closes with a sound like a door slamming!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"connects!\"]<br>ATK: [e: atk+9] reach 10 ft | DMG: [e: dmg+5] bludgeoning, and if the target is Medium or smaller it is <b>grappled</b> (escape DC 15). The glabrezu has two pincers and can grapple two different creatures at once."
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d10]/me lunges with a massive crab-like claw — PINCER! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the pincer closes with a sound like a door slamming!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+9] reach 10 ft | DMG: [e: dmg+5] bludgeoning, and if the target is Medium or smaller it is <b>grappled</b> (escape DC 15). The glabrezu has two pincers and can grapple two different creatures at once."
       },
       {
         "label": "Fist (part of Multiattack, only vs. a creature grappled by a pincer)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d4]/me drives a fist into whatever its pincer is already holding \u2014 FIST! [r, if(atk==20): \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\"; if(atk==1): \"<b style='color:red'>FUMBLE!</b>\"; \"connects!\"]<br>ATK: [e: atk+9] reach 5 ft | DMG: [e: dmg+3] bludgeoning<br><i style='color:#c88020'>Multiattack: two pincers, then two fists (only against targets already grappled by a pincer) -- or it forgoes some/all of its attacks to cast a spell instead.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d4]/me drives a fist into whatever its pincer is already holding — FIST! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+9] reach 5 ft | DMG: [e: dmg+3] bludgeoning<br><i style='color:#c88020'>Multiattack: two pincers, then two fists (only against targets already grappled by a pincer) -- or it forgoes some/all of its attacks to cast a spell instead.</i>"
       },
       {
         "label": "Innate Spellcasting",
-        "raw_cmd": "[r: \"<b style='color:#8e44ad'>INNATE SPELLCASTING</b> (CHA, DC 16) \u2014 at will: darkness, dispel magic, detect magic. 1/day each: confusion, fly (self only), power word stun.\"]<br><i style='color:#c88020'>Open the fight with Darkness centered on whatever it is guarding, then Power Word Stun on whoever gets closest. Magic Resistance: advantage on saves vs spells/magical effects.</i>"
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>INNATE SPELLCASTING</b> (CHA, DC 16) — at will: darkness, dispel magic, detect magic. 1/day each: confusion, fly (self only), power word stun.\"]<br><i style='color:#c88020'>Open the fight with Darkness centered on whatever it is guarding, then Power Word Stun on whoever gets closest. Magic Resistance: advantage on saves vs spells/magical effects.</i>"
       }
     ],
     "traits": [

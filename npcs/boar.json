@@ -9,7 +9,14 @@
   "ac": 11,
   "ac_note": "natural armor",
   "speed": "40 ft.",
-  "ability_scores": {"STR": 13, "DEX": 11, "CON": 12, "INT": 2, "WIS": 9, "CHA": 5},
+  "ability_scores": {
+    "STR": 13,
+    "DEX": 11,
+    "CON": 12,
+    "INT": 2,
+    "WIS": 9,
+    "CHA": 5
+  },
   "saving_throw_proficiencies": [],
   "skill_proficiencies": [],
   "skill_overrides": {},
@@ -20,7 +27,7 @@
   "languages": "",
   "macro_file": "boar_attacks.mts",
   "token_color": "#5c3a1a",
-  "portrait_file": "",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Boar/BoarField (1).webp",
   "notes": "CR 1/4. Charge. Relentless (1/day).",
   "gm_notes": "Session 2 road encounter. Charge: if moves 20 ft straight then attacks, DC 11 STR save or knocked prone. Relentless (1/day): if reduced to 0 HP by 7 or less damage, drops to 1 HP instead.",
   "session": 2

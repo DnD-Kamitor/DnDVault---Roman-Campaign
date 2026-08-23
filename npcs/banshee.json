@@ -9,9 +9,19 @@
   "ac": 12,
   "ac_note": "",
   "speed": "0 ft., fly 40 ft. (hover)",
-  "ability_scores": {"STR": 1, "DEX": 14, "CON": 10, "INT": 12, "WIS": 11, "CHA": 17},
+  "ability_scores": {
+    "STR": 1,
+    "DEX": 14,
+    "CON": 10,
+    "INT": 12,
+    "WIS": 11,
+    "CHA": 17
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Perception", "Stealth"],
+  "skill_proficiencies": [
+    "Perception",
+    "Stealth"
+  ],
   "skill_overrides": {},
   "resistances": "acid, fire, lightning, thunder; bludgeoning/piercing/slashing from nonmagical attacks",
   "immunities": "cold, necrotic, poison",
@@ -20,7 +30,7 @@
   "languages": "Common, Elvish",
   "macro_file": "",
   "token_color": "#5a3a6a",
-  "portrait_file": "",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Banshee/BansheeCoast (1).webp",
   "notes": "CR 4. Wail (1/day): 10d8 psychic, DC13 CON half. Horrifying Visage: DC13 WIS or frightened + aged. Corrupting Touch: 3d6 necrotic.",
   "gm_notes": "Session 4 -- Blood Cult Dungeon, marsh/entrance encounter. Rises from the bog. Save Wail for a mid-fight spike, not round 1.",
   "session": 4

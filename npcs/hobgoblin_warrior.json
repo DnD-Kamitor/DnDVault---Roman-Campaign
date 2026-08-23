@@ -9,7 +9,14 @@
   "ac": 18,
   "ac_note": "chain mail + shield",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 13, "DEX": 12, "CON": 12, "INT": 10, "WIS": 10, "CHA": 9},
+  "ability_scores": {
+    "STR": 13,
+    "DEX": 12,
+    "CON": 12,
+    "INT": 10,
+    "WIS": 10,
+    "CHA": 9
+  },
   "saving_throw_proficiencies": [],
   "skill_proficiencies": [],
   "skill_overrides": {},
@@ -20,8 +27,8 @@
   "languages": "Common, Goblin",
   "macro_file": "hobgoblin_warrior.mts",
   "token_color": "#8a0808",
-  "portrait_file": "",
-  "notes": "Martial Advantage: extra 2d6 damage once per turn when ally within 5ft of TARGET. AC 18 = hard to hit, dies fast when you do. Formation fighters — always manoeuvre for Martial Advantage. Ladder assault specialists.",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Hobgoblin/HobgoblinArmycampMelee (1).webp",
+  "notes": "Martial Advantage: extra 2d6 damage once per turn when ally within 5ft of TARGET. AC 18 = hard to hit, dies fast when you do. Formation fighters \u2014 always manoeuvre for Martial Advantage. Ladder assault specialists.",
   "gm_notes": "Hobgoblins are disciplined military units. They WAIT to attack until formation is set. First hobgoblin on the wall holds position and protects the ladder for the second. Second up = Martial Advantage for BOTH. Tactically scary because they optimize rather than rush. Mix with orcs: orcs bust open the line, hobgoblins exploit it.",
   "session": 2
 }

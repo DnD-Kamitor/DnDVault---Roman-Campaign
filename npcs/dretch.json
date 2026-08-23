@@ -9,7 +9,14 @@
   "ac": 11,
   "ac_note": "",
   "speed": "20 ft.",
-  "ability_scores": {"STR": 11, "DEX": 11, "CON": 12, "INT": 5, "WIS": 8, "CHA": 3},
+  "ability_scores": {
+    "STR": 11,
+    "DEX": 11,
+    "CON": 12,
+    "INT": 5,
+    "WIS": 8,
+    "CHA": 3
+  },
   "saving_throw_proficiencies": [],
   "skill_proficiencies": [],
   "skill_overrides": {},
@@ -20,7 +27,7 @@
   "languages": "Abyssal, telepathy 60 ft. (doesn't speak)",
   "macro_file": "",
   "token_color": "#4a2a1a",
-  "portrait_file": "",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Dretch/Dretch (1).webp",
   "notes": "CR 1/4. Chaff demon. Fetid Cloud (recharge 6): 10 ft radius poison.",
   "gm_notes": "Session 4 -- Blood Cult Dungeon, demon-chaff/support throughout. Use in pairs alongside stronger demons to fill out deadly-tier encounters.",
   "session": 4

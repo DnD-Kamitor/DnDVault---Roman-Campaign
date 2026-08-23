@@ -9,10 +9,21 @@
   "ac": 13,
   "ac_note": "natural armor",
   "speed": "50 ft.",
-  "ability_scores": {"STR": 16, "DEX": 13, "CON": 13, "INT": 7, "WIS": 11, "CHA": 8},
+  "ability_scores": {
+    "STR": 16,
+    "DEX": 13,
+    "CON": 13,
+    "INT": 7,
+    "WIS": 11,
+    "CHA": 8
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Perception"],
-  "skill_overrides": {"Perception": 4},
+  "skill_proficiencies": [
+    "Perception"
+  ],
+  "skill_overrides": {
+    "Perception": 4
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,8 +31,8 @@
   "languages": "Goblin, Worg",
   "macro_file": "",
   "token_color": "#2a1a00",
-  "portrait_file": "",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Worg/Worg (1).webp",
   "notes": "CR 1/2. Large. Bite +5 (2d6+3 piercing). DC 13 STR save or knocked prone. Keen Hearing and Smell.",
-  "gm_notes": "Session 2 raid, Phase 2. Two Worgs with riders that got around the east wall during Phase 1. Arrive through the postern or over a lower section. Used as heavy cavalry inside the courtyard. Keen Hearing and Smell: advantage on Perception using hearing or smell. Bite knocks prone on failed DC 13 STR save. Frightening in confined spaces — harder to avoid than wolves, and Large size blocks corridors.",
+  "gm_notes": "Session 2 raid, Phase 2. Two Worgs with riders that got around the east wall during Phase 1. Arrive through the postern or over a lower section. Used as heavy cavalry inside the courtyard. Keen Hearing and Smell: advantage on Perception using hearing or smell. Bite knocks prone on failed DC 13 STR save. Frightening in confined spaces \u2014 harder to avoid than wolves, and Large size blocks corridors.",
   "session": 2
 }

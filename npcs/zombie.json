@@ -29,7 +29,7 @@
   "languages": "",
   "macro_file": "zombie_attacks.mts",
   "token_color": "#2d4a1a",
-  "portrait_file": "../images/tollund_man.jpg",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Zombie/ZombieDragonborn (1).webp",
   "notes": "CR 1/4. Undead fortitude. Slow but relentless.",
   "gm_notes": "Session 5 final vault. Undead Fortitude: DC 5+damage dealt CON save when reduced to 0 HP (not vs radiant or crits) -- on success drops to 1 HP. WIS save +0 (it has the save proficiency but terrible WIS). Slow but never tires.",
   "session": 5

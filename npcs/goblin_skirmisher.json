@@ -9,10 +9,21 @@
   "ac": 15,
   "ac_note": "leather armour + shield",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 8, "DEX": 14, "CON": 10, "INT": 10, "WIS": 8, "CHA": 8},
+  "ability_scores": {
+    "STR": 8,
+    "DEX": 14,
+    "CON": 10,
+    "INT": 10,
+    "WIS": 8,
+    "CHA": 8
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Stealth"],
-  "skill_overrides": {"Stealth": 6},
+  "skill_proficiencies": [
+    "Stealth"
+  ],
+  "skill_overrides": {
+    "Stealth": 6
+  },
   "resistances": "",
   "immunities": "",
   "condition_immunities": "",
@@ -20,8 +31,8 @@
   "languages": "Common, Goblin",
   "macro_file": "goblin_skirmisher.mts",
   "token_color": "#1a5a08",
-  "portrait_file": "portraits/goblin_skirmisher.png",
-  "notes": "Nimble Escape: Hide or Disengage as bonus action every round. Never provokes opportunity attacks. Auto-flees at 4 HP or below — no morale check, they just run. Use in groups of 8-12 for suppression fire.",
-  "gm_notes": "Role: harass, suppress, deny sight lines. Not here to fight in melee. 12 goblins firing creates constant pressure without being lethal — defenders must keep heads down (disadvantage on ranged if suppressed). Goblin culture: they flee competently, not stupidly. They WILL come back next round from a new position.",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Goblin/GoblinForestMaleGraygreenMelee (1).webp",
+  "notes": "Nimble Escape: Hide or Disengage as bonus action every round. Never provokes opportunity attacks. Auto-flees at 4 HP or below \u2014 no morale check, they just run. Use in groups of 8-12 for suppression fire.",
+  "gm_notes": "Role: harass, suppress, deny sight lines. Not here to fight in melee. 12 goblins firing creates constant pressure without being lethal \u2014 defenders must keep heads down (disadvantage on ranged if suppressed). Goblin culture: they flee competently, not stupidly. They WILL come back next round from a new position.",
   "session": 2
 }

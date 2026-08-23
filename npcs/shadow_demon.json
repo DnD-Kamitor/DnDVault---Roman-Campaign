@@ -9,10 +9,21 @@
   "ac": 12,
   "ac_note": "",
   "speed": "30 ft., fly 50 ft.",
-  "ability_scores": {"STR": 1, "DEX": 15, "CON": 12, "INT": 12, "WIS": 13, "CHA": 14},
+  "ability_scores": {
+    "STR": 1,
+    "DEX": 15,
+    "CON": 12,
+    "INT": 12,
+    "WIS": 13,
+    "CHA": 14
+  },
   "saving_throw_proficiencies": [],
-  "skill_proficiencies": ["Stealth"],
-  "skill_overrides": {"Stealth": 8},
+  "skill_proficiencies": [
+    "Stealth"
+  ],
+  "skill_overrides": {
+    "Stealth": 8
+  },
   "resistances": "cold, fire, lightning, thunder; acid, bludgeoning/piercing/slashing from nonmagical weapons",
   "immunities": "necrotic, poison",
   "condition_immunities": "grappled, paralyzed, petrified, poisoned, prone, restrained",
@@ -20,7 +31,7 @@
   "languages": "Abyssal, telepathy 120 ft. (doesn't speak)",
   "macro_file": "",
   "token_color": "#1a1a2a",
-  "portrait_file": "",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Shadow Demon/ShadowDemon (1).webp",
   "notes": "CR 4. Incorporeal. Shadow Stealth (bonus action Hide in dim light/darkness). Claw: 3d6 necrotic + max HP reduction.",
   "gm_notes": "Session 4 -- Blood Cult Dungeon, minor altar room. Use x2 for the fight. Keeps breaking line of sight between the altar's pillars.",
   "session": 4

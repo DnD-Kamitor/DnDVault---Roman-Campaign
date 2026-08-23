@@ -37,7 +37,7 @@
   "languages": "Common",
   "macro_file": "bandit_captain_attacks.mts",
   "token_color": "#5c3a1a",
-  "portrait_file": "portraits/domenikos_theotokopoulos1.png",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Bandit Captain/BanditCaptainDragonbornArctic (1).webp",
   "notes": "CR 2. Multiattack. Reaction parry. Commands bandit group.",
   "gm_notes": "Session 2 road ambush leader. Multiattack: one bonus attack with dagger alongside main attacks. Parry reaction: +3 AC against one melee attack per round. Has information about the road and who has been using it -- a Persuasion DC 14 or Intimidation DC 16 after capture can extract it.",
   "session": 2
