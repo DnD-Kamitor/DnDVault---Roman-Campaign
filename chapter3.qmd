@@ -90,8 +90,9 @@ Every handout trigger for this session in a single reference. No handout should 
 |---|---|---|---|---|
 | 7 | Bloody Message | Scene 0 (cold open) | Party examines the carved tree; or as the first physical prop before the session opens | Strip of rough paper; deep carved cuts for MARS VIDET OMNIA, scratched nail-thin second line; tear one edge |
 | 6 | Thusnelda's Map | Scene 2 | Thusnelda agrees to guide the party (Persuasion DC 14 success, or Vercingetorix vouches) | Hand-drawn on torn parchment; wavering river lines; smudge the fourth river with thumbprint; crossed spears over the grove; never use a ruler |
+| 19 | The Elder's Rubbing | Scene 4 (Abandoned Village) | History DC 15 on the elder's grave-marker, or Thusnelda answers directly when asked plainly | Charcoal rubbing on cloth, worn and torn at the edges; deliberately incomplete — two gaps in the text where the stone has weathered away |
 
-*Sessions 1-2 handouts (1-5) are already in the party's possession. Handouts 8-11 deploy in Sessions 4-5. No new handouts are generated in Session 3 — the session's information is delivered through events, not documents.*
+*Sessions 1-2 handouts (1-5) are already in the party's possession. Handouts 8-11 deploy in Sessions 4-5. Handout 19 is new this session — see `handouts/handout_19_elders_rubbing.html`.*
 
 ::: {.dm-note}
 **If the party earned Handout 6 early (Vercingetorix vouched for them before the Thusnelda meeting):** Still hold it until Thusnelda herself is present and has spoken at least once. The map means more after the players have a voice in their head to attach it to.
@@ -624,9 +625,7 @@ expects.
 
 2. **The ritual circle behind the village (Investigation DC 13, active -- searching past the treeline).** Seven standing stones, twice a person's height, carved with spiraling runes that don't hold still when looked at directly. At the circle's center, the ground is fused to glass in a rough spiral, scorched black at the edges. This is the grove Thusnelda has been leading the party to. It has been used before, and it did not go well the last time.
 
-3. **The elder's grave-marker (History DC 15, or ask Thusnelda directly -- she will answer if asked plainly, not volunteer it).** A single standing stone apart from the others, carved with a name in a script older than the runic contract tokens from the Session 1 vault. Thusnelda: *"She was the first of us. She thought the binding could be finished here, with fire and iron, blood and stone. She was certain. I have spent sixty years believing she was simply unlucky."*
-
-**Handout opportunity:** a fragment of the shattered clay mold, or a rubbing of the elder's grave-marker script -- DM's choice which becomes a physical prop.
+3. **The elder's grave-marker (History DC 15, or ask Thusnelda directly -- she will answer if asked plainly, not volunteer it).** A single standing stone apart from the others, carved with a name in a script older than the runic contract tokens from the Session 1 vault. Thusnelda: *"She was the first of us. She thought the binding could be finished here, with fire and iron, blood and stone. She was certain. I have spent sixty years believing she was simply unlucky."* Hand over **Handout 19: The Elder's Rubbing** here -- a charcoal rubbing taken directly from the stone, worn and incomplete.
 
 <details>
 <summary><strong>Two Paths from the Village</strong></summary>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handout 19: The Elder's Rubbing</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Caveat:wght@400;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  /* charcoal-on-cloth rubbing */
+  .cloth {
+    width: 480px;
+    background: #d8cfba;
+    background-image:
+      radial-gradient(ellipse at 20% 15%, rgba(0,0,0,0.10) 0%, transparent 40%),
+      radial-gradient(ellipse at 80% 85%, rgba(0,0,0,0.12) 0%, transparent 45%),
+      repeating-linear-gradient(4deg, transparent, transparent 3px, rgba(0,0,0,0.02) 3px, rgba(0,0,0,0.02) 4px),
+      repeating-linear-gradient(94deg, transparent, transparent 5px, rgba(0,0,0,0.015) 5px, rgba(0,0,0,0.015) 6px);
+    border: none;
+    padding: 50px 46px;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+    clip-path: polygon(2% 4%, 22% 0%, 55% 2%, 79% 0%, 98% 5%, 100% 30%, 97% 58%, 100% 82%, 96% 100%, 60% 98%, 30% 100%, 4% 97%, 6% 70%, 2% 45%);
+  }
+
+  .torn-note {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #6a5f45;
+    text-align: center;
+    margin-bottom: 22px;
+  }
+
+  .rune-row {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 26px;
+    flex-wrap: wrap;
+  }
+
+  .rune-cell { text-align: center; min-width: 54px; }
+
+  .rune-glyph {
+    font-size: 34px;
+    color: #2a2620;
+    line-height: 1;
+    display: block;
+    opacity: 0.82;
+    filter: blur(0.2px);
+  }
+
+  .rune-name {
+    font-family: 'Cinzel', serif;
+    font-size: 8px;
+    letter-spacing: 0.16em;
+    color: #5a5142;
+    text-transform: uppercase;
+    margin-top: 5px;
+    display: block;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #8a7f66, transparent);
+    margin: 20px 0;
+  }
+
+  .worn-line {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    color: #3a3428;
+    line-height: 2.0;
+    text-align: center;
+    letter-spacing: 0.03em;
+    opacity: 0.9;
+  }
+
+  .worn-line .gap {
+    display: inline-block;
+    letter-spacing: 0.3em;
+    color: #8a7f66;
+    opacity: 0.6;
+  }
+
+  .charcoal-smudge {
+    position: absolute;
+    width: 90px; height: 40px;
+    background: radial-gradient(ellipse, rgba(0,0,0,0.14) 0%, transparent 70%);
+    top: 40px; right: 30px;
+    transform: rotate(-8deg);
+  }
+
+  .thusnelda-note {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: #4a2c1a;
+    text-align: center;
+    margin-top: 26px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(74,44,26,0.25);
+    line-height: 1.5;
+  }
+
+  .print-btn {
+    display: block;
+    margin: 28px auto 0;
+    padding: 9px 24px;
+    background: #1a1a18;
+    color: #8a8070;
+    border: 1px solid #3a3a32;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .print-btn:hover { background: #242420; color: #c8bc98; }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .cloth { box-shadow: none; width: 100%; max-width: 480px; margin: 0 auto; }
+    .print-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cloth">
+  <div class="charcoal-smudge"></div>
+  <div class="torn-note">A rubbing, taken in charcoal from stone</div>
+
+  <div class="rune-row">
+    <div class="rune-cell"><span class="rune-glyph">&#x16DF;</span><span class="rune-name">Othalan</span></div>
+    <div class="rune-cell"><span class="rune-glyph">&#x16BE;</span><span class="rune-name">Naudhiz</span></div>
+    <div class="rune-cell"><span class="rune-glyph">&#x16C1;</span><span class="rune-name">Isa</span></div>
+    <div class="rune-cell"><span class="rune-glyph">&#x16A8;</span><span class="rune-name">Ansuz</span></div>
+    <div class="rune-cell"><span class="rune-glyph">&#x16DF;</span><span class="rune-name">Othalan</span></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="worn-line">
+    HERE RESTS <span class="gap">[ &nbsp; &nbsp; &nbsp; ]</span>, WHO BOUND<br>
+    WITH FIRE AND STONE, WHO BELIEVED<br>
+    THE WOUND WOULD CLOSE <span class="gap">[ &nbsp; &nbsp; ]</span> HERE.<br>
+    THE FOREST REMEMBERS HER CERTAINTY.
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="thusnelda-note">"She was the first of us. I did not know her name until today."</div>
+</div>
+
+<button class="print-btn" onclick="window.print()">Print &mdash; Save as PDF</button>
+
+</body>
+</html>

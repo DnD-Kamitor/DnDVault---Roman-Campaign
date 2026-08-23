@@ -18,3 +18,7 @@ handouts/.Rhistory
 
 # Downloaded map pack, not referenced by any script/qmd — local only
 Maptool/maps/Public/
+
+# Per-session print queue (curated copies of handout PDFs) — regenerate
+# from handouts/pdf/ as needed, not campaign source material
+print_this_session/
