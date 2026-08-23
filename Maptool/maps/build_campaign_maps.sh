@@ -211,6 +211,8 @@ copy_map ForestRuins          "$S"
 copy_map LabyrinthRuins "$S"
 copy_map ForestRiverConfluence "$S"
 copy_map RiverCrossing        "$S"
+copy_map AbandonedVillage     "$S"
+copy_map AbandonedVillageVol2 "$S"
 copy_map Swamp                "$S"
 copy_map SwampVol2            "$S"
 copy_map SwampForestVol3      "$S"
@@ -226,7 +228,7 @@ copy_svg s3_farbog_crossing    "$S"  # Scene 3b: Farbog encounter
 
 for slug in Legate_Corvinus Tribune_Lucius Augur_Cassia Centurion_Varro Vercingetorix_the_Red Thusnelda \
             Titus_Half-Germanic Sigrun_the_Trader Arnulf_the_Firekeeper \
-            Edda_the_Spear-Mother Skadi_the_Healer Aldric_the_Gaul; do
+            Edda_the_Spear-Mother Skadi_the_Healer Aldric_the_Gaul Hilde; do
   copy_npc "$slug" "$S"
 done
 

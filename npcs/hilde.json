@@ -1,0 +1,45 @@
+{
+  "name": "Hilde",
+  "creature_type": "Humanoid",
+  "cr": "1/4",
+  "size": "Medium",
+  "alignment": "Neutral",
+  "hp": 9,
+  "hp_formula": "2d8",
+  "ac": 10,
+  "ac_note": "unarmored",
+  "speed": "30 ft.",
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 10,
+    "CON": 10,
+    "INT": 12,
+    "WIS": 14,
+    "CHA": 11
+  },
+  "saving_throw_proficiencies": [],
+  "skill_proficiencies": [
+    "Insight",
+    "Religion",
+    "Survival"
+  ],
+  "skill_overrides": {
+    "Insight": 4,
+    "Religion": 3
+  },
+  "resistances": "",
+  "immunities": "",
+  "condition_immunities": "",
+  "senses": "Passive Perception 12",
+  "languages": "Germanic (Cherusci dialect), Latin (basic)",
+  "macro_file": "",
+  "token_color": "#7a8f6a",
+  "portrait_file": "",
+  "notes": "Thusnelda's apprentice. A young Cherusci woman, Chapter 3 Scene 2 onward. This is her first encounter with the spear's corruption and she does not hide her fascination -- she shadows the party, asking Thusnelda quiet questions in Germanic about the influenced NPC by name, not by type.",
+  "gm_notes": "Objective: learn everything Thusnelda knows before it's too late to learn it. Goal: watch the party, report to Thusnelda, ask the questions Thusnelda is too disciplined to ask. Agenda: shadows the party through Scenes 2-4, quietly fascinated rather than afraid. Secret: she is the first to name the influenced NPC's condition -- not to the party, but to Thusnelda, quietly, in Germanic (a character with Germanic language proficiency who is paying attention gets this for free, see chapter3.qmd Clue 2 alternate path). At the Abandoned Village (Scene 4), she is the one who finds the elder's grave-marker first -- this is personal history for her too, since she'll be exactly what that elder was someday.",
+  "objective": "Learn everything Thusnelda knows before it's too late to learn it.",
+  "goal": "Watch the party; report to Thusnelda; ask questions Thusnelda is too disciplined to ask.",
+  "agenda": "Shadow the party through Scenes 2-4, quietly fascinated rather than afraid.",
+  "secret": "She is the first to name the influenced NPC's condition -- not to the party, but to Thusnelda, quietly, in Germanic. A character with Germanic language proficiency overhears. This is the Clue 2 alternate path.",
+  "session": 3
+}

@@ -383,14 +383,14 @@ A small, ancient-looking Germanic woman. She carries an oak staff carved with sp
 > *"God-Killer. Still breathing. I had hoped you would destroy it by now. I see you have not."*
 
 She knows:
-- Where the grove is (one full day's travel, through the river)
+- Where the grove is (one full day's travel, through the river, past her teacher's abandoned village)
 - That the grove demands a willing sacrifice — not a death, but a loss of something real
 - That the ritual will alert Mars. He will come. That cannot be avoided.
-- That the party will succeed or fail based on what they're willing to give up, not on their fighting ability
+- That her teacher attempted this same rite two generations ago, and failed. She has always believed the sacrifice was wrong. She has never had reason to doubt that — until now, standing this close to the spear herself.
 
 She will guide them. She asks nothing in return — this is her purpose.
 
-**Thusnelda speaks like a woman with no time for anything except the truth:**
+**Thusnelda speaks like a woman with no time for anything except the truth -- or what she has always believed was the truth:**
 
 > *"The spear belongs to no one. Not the god who made it, not the tribe that used it, not the empire that found it. It belongs to the wound it keeps open. You must close the wound."*
 
@@ -402,13 +402,13 @@ She will guide them. She asks nothing in return — this is her purpose.
 
 When a character asks her how she knows about the spear: *"My teacher's teacher sealed it. I have been waiting for it to surface since I was eleven years old. I am seventy-three. You are late."*
 
-When someone suggests there might be another way to destroy it: *"There is not. I have thought about this for sixty years. The grove is the only place where what was made in divine anger can be unmade. This is not an opinion."*
+When someone suggests there might be another way to destroy it: *"There is not, so far as I have ever been taught. The grove is where what was made in divine anger is unmade. I have believed this for sixty years." A pause, small enough most won't catch it. "I have also never actually seen it finished. Only started. And failed."*
 
-When asked what happens to her after the ritual: *"I go back to the grove. I tend it. I wait to see what god pays attention next. I have been doing this my entire life. It is good work."*
+When asked what happens to her after the ritual: *"I go back to the grove. I tend it. I wait to see what god pays attention next." A beat. "That has always been the plan. I do not know anymore if it was ever a good one."*
 
-When pressed on whether the ritual always works: *"No. My teacher failed. I watched her fail. The sacrifice was wrong. I will not let that happen again. That is why I am telling you now, here, in the forest, before you are standing at the altar and making panicked decisions."*
+When pressed on whether the ritual always works: *"No. My teacher tried. I watched her fail. I have spent sixty years certain the fault was the sacrifice -- that whoever stood at that altar gave something too small. I was eleven years old. I did not question her explanation, because she was the only explanation I had."*
 
-When someone tries to thank her: *"Do not thank me. Finish it. That is thanks enough."*
+When someone tries to thank her: *"Do not thank me yet. We have not finished anything."*
 
 **What Thusnelda will and will not say:**
 
@@ -418,12 +418,13 @@ When someone tries to thank her: *"Do not thank me. Finish it. That is thanks en
 | That the grove rejects insufficient sacrifices | Whether a sacrifice is "good enough" before it is offered |
 | That someone in the party is influenced | Who it is -- she knows, but sees this as the party's work to discover |
 | What the stakes of failure are | Whether she believes the party will succeed |
+| That she has never seen the ritual completed | That she has started to doubt it can be, here -- she hasn't fully admitted this to herself yet |
 
 </details>
 
 
 <details>
-<summary><strong>Scene 3: The River Crossing</strong></summary>
+<summary><strong>Scene 3: The Bridge Crossing</strong></summary>
 
 ::: {.dm-note}
 **Who is actually driving this scene, and why it should not be a big fight.** Corvinus is not trying to stop the party. Per his secret (see chapter03_npcs.html): he wants the spear destroyed and cannot say so. He also cannot be seen letting armed deserters walk off with contraband -- Brutus has eyes in the fort, and a Legate who visibly lets this go is a Legate who has handed Brutus leverage. So he sends a pursuit that *has* to exist, and quietly makes sure it does not have to succeed: a small escort, vague orders ("prevent the crossing," not "kill them"), and no personal presence. He is not the antagonist of this scene. He is a man threading a needle, and the party's job is to notice that, not to win a battle.
@@ -431,9 +432,11 @@ When someone tries to thank her: *"Do not thank me. Finish it. That is thanks en
 Play this as a small, tense reading of the situation, not a set-piece battle. The "combat," if it happens at all, should resolve in one or two rounds against a handful of unmotivated men -- not a war.
 :::
 
-The sacred grove is on the far side of the Vitulans river — currently swollen with spring melt. The crossing is hard under normal circumstances. It's harder with someone behind you, even if that someone doesn't want to catch you.
+The abandoned village and its ritual site are on the far side of the Vitulans river — currently swollen with spring melt. An old timber bridge spans it at the narrowest point, built by whoever lived in this stretch of forest before Thusnelda's people did and maintained, badly, ever since. The crossing is hard under normal circumstances. It's harder with someone behind you, even if that someone doesn't want to catch you.
 
-**The river:** 90 feet wide. Fast-moving (DC 13 Strength (Athletics), active: swimming across). A fallen oak spans the narrowest point, slippery (DC 11 Dexterity (Acrobatics), active: crossing without falling). Rope can be strung across (DC 10 Strength (Athletics), active: group action) to help everyone.
+**Before the pursuers arrive, this is a good place to let the table breathe.** The bridge is narrow enough that the party crosses in a loose line, not a clump -- good ground for the kind of conversation that doesn't happen when everyone's shoulder to shoulder. Thusnelda, if asked here rather than at camp, answers more personal questions than she has all journey; the influenced NPC's player has room for a quiet, unwatched moment; Hilde asks someone directly what Rome is actually like, since she's never left the forest. Let this run a few unhurried minutes before the escort catches up.
+
+**The bridge:** roughly 90 feet across, planks worn smooth and missing in two places (DC 11 Dexterity (Acrobatics), active: crossing the gaps without falling). The river beneath is fast-moving (DC 13 Strength (Athletics), active: swimming, if someone goes in). Rope can be strung along the rail for anyone struggling (DC 10 Strength (Athletics), active: group action).
 
 **The pursuers arrive:**
 
@@ -449,11 +452,11 @@ If the Legate is pursuing, a small escort catches up exactly when the party is m
 
 **The scene:**
 - Half the party is on the far bank, half still crossing or on the near bank when the escort arrives
-- If it comes to blows: ranged exchange across the water (half cover for anyone behind the banks), melee on the fallen log (anyone knocked off: DC 13 Strength (Athletics) to avoid being swept 20 feet downstream). This should be short -- four unmotivated men break off fast once the Centurion is given a reason to.
+- If it comes to blows: ranged exchange across the water (half cover for anyone behind the rail), melee on the bridge itself (anyone knocked off: DC 13 Strength (Athletics) to avoid being swept 20 feet downstream). This should be short -- four unmotivated men break off fast once the Centurion is given a reason to.
 - The river is impassable to heavy armor (DC 14 Strength save for anyone in metal armor who falls in)
 
 **Ways this resolves without a fight (any one of these ends it):**
-- DC 14 Charisma (Intimidation) (active: a centurion-rank character ordering the legionaries to stand down across the water before combat begins): the centurion opposite hesitates -- long enough for the party to cross and deny the ford. He will not cross without new orders. He does not want this fight either.
+- DC 14 Charisma (Intimidation) (active: a centurion-rank character ordering the legionaries to stand down across the water before combat begins): the centurion opposite hesitates -- long enough for the party to cross and hold the bridge. He will not cross without new orders. He does not want this fight either.
 - DC 12 Charisma (Persuasion) (active: appealing directly to what the escort's orders actually are, not what they imply): pointing out that "prevent the crossing" was never "kill you for it" gives the Centurion the out he's quietly hoping for. He calls it a "tactical withdrawal" to save face.
 - If a character with real Roman political standing is present (the Aasimar Cleric's family name, or any character who has built visible standing with Corvinus) and states it plainly: the Centurion recognizes the name or the authority behind it and treats this as a matter above his pay grade -- he reports the crossing as "unavoidable" rather than a failure, and lets them go.
 - Deception DC 15 (active: claiming the mission is sanctioned and the pursuit is unauthorized): requires something tangible -- a document, a seal, or a name the centurion would recognize. Without it, DC 18.
@@ -592,13 +595,44 @@ If Thusnelda is present and the party shows her the tablet: *"They got further t
 
 
 <details>
-<summary><strong>Scene 4: The Sacred Grove</strong></summary>
+<summary><strong>Scene 4: The Abandoned Village and the Ritual Site</strong></summary>
 
-A day past the river. The forest thins. Then it opens.
+A day past the river, the forest thins into a stockade wall gone soft with rot.
+
+::: {.dm-note}
+**What this scene actually is.** This is the party's "we understand what we're actually
+facing now" scene -- the moment the journey stops being about reaching the grove and
+starts being about learning that the grove was never going to be enough. Everything below
+still plays out in full: the village, the ritual, the skill challenge, Mars's arrival. None
+of it is wasted. It just doesn't end the way anyone at the table, including Thusnelda,
+expects.
+:::
+
+**Read aloud, on approach:**
+
+> *The trees thin out ahead of a stockade wall gone soft with rot. No smoke. No dogs. A gate hangs open on one hinge, and past it, roofs have folded in on themselves under years of snow.*
+>
+> *Thusnelda stops walking before anyone tells her to.*
+>
+> *"This was my teacher's village," she says. "Before her teacher's teacher. Before the seal." She does not go on. She does not need to.*
+
+**The village itself.** Twelve-odd longhouses, all collapsed or burned, decades of weather over both. No bodies -- whatever happened here, the dead were dealt with properly, not left to rot. This is a place that ended in ceremony, not slaughter.
+
+**Three ways to learn what happened here (three-clue rule):**
+
+1. **The central longhouse (obvious, no check).** Larger than the rest, its roof caved but its walls still standing. Inside: a stone table, and on it, tools -- a broken iron chisel, a shattered clay mold in the shape of a spearhead, corroded bronze pins. Someone here tried to make something to match the spear, or copy it, or unmake it. They didn't finish.
+
+2. **The ritual circle behind the village (Investigation DC 13, active -- searching past the treeline).** Seven standing stones, twice a person's height, carved with spiraling runes that don't hold still when looked at directly. At the circle's center, the ground is fused to glass in a rough spiral, scorched black at the edges. This is the grove Thusnelda has been leading the party to. It has been used before, and it did not go well the last time.
+
+3. **The elder's grave-marker (History DC 15, or ask Thusnelda directly -- she will answer if asked plainly, not volunteer it).** A single standing stone apart from the others, carved with a name in a script older than the runic contract tokens from the Session 1 vault. Thusnelda: *"She was the first of us. She thought the binding could be finished here, with fire and iron, blood and stone. She was certain. I have spent sixty years believing she was simply unlucky."*
+
+**Optional beat, if the table needs momentum here (not required):** 2 **Vættir** or a single **Haugbui**, drawn to the old scar at the circle's center, territorial rather than hostile at first -- they attack only if the party lingers there past a clear warning. A chance to remind the table the land itself remembers what happened here, not a mandatory fight.
+
+**Handout opportunity:** a fragment of the shattered clay mold, or a rubbing of the elder's grave-marker script -- DM's choice which becomes a physical prop.
 
 Survival DC 11 (active: reading the grove's physical approach before stepping inside the ring): The ground between the standing stones is clear of undergrowth in a perfect circle, but the grass has not been grazed -- it is simply absent. The stones are positioned at angles that create two natural cover positions: behind the north stone and behind the south stone. A character who notes this before the ritual begins identifies where to stand if the standing stones animate -- the cover positions displace animated stone guardian movement by one full round.
 
-**Read aloud:**
+**Read aloud, at the stones:**
 
 > *Seven standing stones ring a granite altar. Each stone is twice your height and carved with spiraling runes that don't hold still when you look at them directly — they seem to shift, rearranging themselves, as if the stone itself is thinking.*
 >
@@ -706,42 +740,57 @@ This gives advantage on all Skill Challenge rolls.
 <details>
 <summary><strong>Conclusion</strong></summary>
 
-**If the spear is destroyed:**
+**Whatever happens mechanically here -- full success on the Skill Challenge, a bargain struck with Mars, or a stumbling near-failure -- the spear does not break.**
 
-> *The iron shatters — not with a bang, but with a sound like an exhalation. Like something finally resting.*
+::: {.dm-note}
+This is the twist the whole session has been building toward, not a fizzle. Everything
+above -- the sacrifice, the golems, the skill challenge, Mars's voice -- is real and it
+matters, and the mechanical outcome still has real consequences (below). It just doesn't
+end the threat, because Thusnelda's entire order was wrong about where the binding
+actually has to happen. Play the moment of realization as devastating for her
+specifically, not as a rules technicality for the table.
+:::
+
+**Read aloud, whatever the Skill Challenge's outcome:**
+
+> *The iron doesn't shatter. It dims — the pulsing slows, quiets, goes still, the way a fire banks down to coals instead of going out. Something in it has retreated. Nothing in it has broken.*
 >
-> *The runes on the standing stones go dark. The air clears. Somewhere far away, in a direction that isn't quite north, you hear a sound that might be a god, furious, far off.*
+> *Thusnelda stares at the spear for a long moment. Then at the elder's grave-marker beyond the stones. Then back at the spear.*
 >
-> *The influenced NPC's eyes clear. They look at their hands. They look at the grove. They say nothing for a long time.*
+> *"No," she says, very quietly, to no one. "No. We were never doing this in the right place." She looks up, and for the first time since the party met her, she looks lost. "She didn't fail because the sacrifice was wrong. She failed because this was never where it needed to happen. It happened underground. Where it was made. Where it was bound the first time."*
 >
-> *Thusnelda sweeps iron fragments from the altar into a clay pot and seals it with beeswax. "I will bury these in seven places," she says. "It will take time. Go before he finds his voice again."*
+> *"I have spent my whole life tending the wrong altar."*
 
-Any corruption below level 5 is reduced by 1. Level 5 characters remain affected — the ritual was about the spear, not about them.
+**If the party fully succeeded at the Skill Challenge or struck Mars's bargain:** the spear is meaningfully weakened -- its corruption pressure eases (any corruption below level 5 is reduced by 1; Level 5 characters remain affected, same as before), and Mars's presence withdraws without further violence. This was not wasted effort. It just wasn't the ending.
 
-**If the ritual fails or is interrupted:**
+**If the ritual failed or was interrupted:** the spear remains at full strength, Mars's presence lingers hostile a moment longer before withdrawing, and the party carries a heavier weight into what comes next.
 
-The spear remains intact. Mars' presence intensifies and will not leave until the ritual is completed or the spear leaves the grove. They must flee into the forest with a partially-completed ritual, a god's attention, and a cursed weapon they came to destroy. Session 4 begins in a worse position.
+**Either way:** the influenced NPC's crisis moment (see above) still resolves the same way it would have -- caught or not, the corruption thread still matters going forward. The party now knows, with total certainty, where they actually have to go: underground, to the place the spear was first bound, at the Skull Entrance in the marsh Thusnelda's people have always known about and never dared approach.
 
 **Advance to Level 6**
 
 ::: {.dm-note}
-**Session 3 → Session 4 transition: both outcomes**
+**Transition to the dungeon**
 
-**If the ritual succeeded (spear destroyed):** Session 4 is not about the spear -- it is already gone. It is about Brutus' siege, which he launched in response to intelligence that the party was attempting to destroy his leverage. Mars was satisfied by the grove ritual but is not yet fully appeased -- he still expects formal acknowledgment at the altar where the spear was originally found. Session 4's underground sequence becomes: escort Thusnelda's sealed clay jar (the iron fragments, seven shards) to the vault's altar as a formal return. Mars accepts this. The antechamber ritual in Session 4 Scene 4 uses "the remains of the spear" rather than the whole weapon. All other mechanics hold -- Mars cares that they came, not the form of the offering.
-
-**If the ritual failed (spear intact):** The party carries the whole spear into Session 4. This is the harder path: higher corruption pressure, no goodwill from Mars, Brutus' siege arrives while they are already in a weakened position.
+The party always carries the whole spear (weakened or not, per the outcome above) into
+the Blood Cult Dungeon -- there is no fragments-in-a-clay-jar branch anymore, since the
+spear is never destroyed here. Thusnelda comes with them if she has earned enough trust
+(see her OGAS session-state table) -- this is personal for her now, not professional
+courtesy. If she's present in the dungeon, she is a witness, not a guide: she has never
+been past the Skull Entrance herself, and says so plainly.
 
 Add this to the Session 4 opening tracking table:
 
 | Question | Session 4 implication |
 |---|---|
-| Was the Session 3 ritual successful? | Yes: party carries spear fragments in Thusnelda's clay jar. No: party carries the whole spear. The antechamber scenes work the same either way. |
+| Did the party succeed at the grove's Skill Challenge? | Yes: the spear enters the dungeon weakened, lower corruption pressure throughout. No: full corruption pressure carries forward. Either way, the whole spear is present -- no fragment-jar variant. |
+| Is Thusnelda with the party? | If yes, she is present for the dungeon's revelations as someone whose lifelong certainty just broke, not as an expert guide. |
 :::
 
 <details>
 <summary><strong>Citizenship Elevation: Session 3 Window</strong></summary>
 
-After the spear is destroyed and the party returns to Corvinus' reach (whether at the fort, in the field, or through a messenger he sends), Corvinus does something unexpected. He files papers.
+After the grove's Skill Challenge concludes and the party returns to Corvinus' reach (whether at the fort, in the field, or through a messenger he sends), Corvinus does something unexpected. He files papers.
 
 He does not announce this. He does not explain it. A clerk appears at the party's camp or quarters with a document pouch and a brief verbal message: *"The Legate sends his regards and asks that you review the enclosed. No response is required."*
 
@@ -758,7 +807,7 @@ Corvinus does not do this out of generosity. He does it because the party has pe
 This window closes at Session 4 if the papers are not signed and returned. Corvinus' circumstances change, and the political calculus shifts.
 
 ::: {.dm-note}
-**If the ritual failed:** Corvinus cannot file citizenship papers while the party is still in the field with a cursed spear and a siege beginning. The Session 3 citizenship window defers to the end of Session 4. The papers arrive during Session 4's conclusion scene rather than as a separate inter-session moment. The eligibility criteria are unchanged; only the timing shifts.
+**If the Skill Challenge failed:** Corvinus cannot file citizenship papers while the party is still in the field with a cursed spear at full strength and a siege beginning. The Session 3 citizenship window defers to the end of Session 4. The papers arrive during Session 4's conclusion scene rather than as a separate inter-session moment. The eligibility criteria are unchanged; only the timing shifts.
 :::
 
 </details>
@@ -774,15 +823,15 @@ This window closes at Session 4 if the papers are not signed and returned. Corvi
 
 **Vercingetorix the Red** *(if present)*
 - **Objective:** Protect his people
-- **Goal (this session):** Ensure the spear is destroyed at the grove — this is his people's three-generation wound
+- **Goal (this session):** Ensure the ritual at the grove is attempted properly — this is his people's three-generation wound, and he does not yet know it won't be enough
 - **Agenda:** Guide, protect, and keep the party moving toward the grove even when they want to stop
 - **Secret:** He has been fighting this same war, in one form or another, since 46 BC. He does not say this -- he does not have words for it that would not sound insane -- but destroying the spear may be the first real chance he has had to die since Alesia. He will not tell anyone that either. He does not want it to change how they treat him, and some part of him does not fully believe it will happen even now.
 
 **Thusnelda** *(new NPC)*
-- **Objective:** Maintain the grove's power and fulfill her duty as its keeper
-- **Goal (this session):** Get the party through the ritual correctly
-- **Agenda:** Be completely honest about what the ritual requires, even when that honesty is painful
-- **Secret:** She performed this ritual once before, fifty years ago, with Vercingetorix's grandfather. It failed because the sacrifice was unwilling. She has carried that failure since.
+- **Objective:** Maintain the grove's power and fulfill her duty as its keeper — a duty she is about to discover was built on an incomplete premise
+- **Goal (this session):** Get the party through the ritual correctly, exactly as she's always been taught
+- **Agenda:** Be completely honest about what the ritual requires, even when that honesty is painful. She does not yet know that "correctly" isn't the same as "here."
+- **Secret:** She performed this ritual once before, fifty years ago, with Vercingetorix's grandfather. It failed. She has spent sixty years certain the sacrifice was unwilling — she has never once considered that the location itself might be the problem, because that was never a possibility her teachers gave her room to imagine.
 
 **Mars (divine presence)**
 - **Objective:** Reclaim his dignity and have his weapon back
@@ -857,8 +906,8 @@ The grove does not communicate clearly. It communicates correctly. Here is how t
 <details>
 <summary><strong>Commendationes This Session</strong></summary>
 
-**Opportunity 1: completing the ritual and destroying the spear.**
-Any character actively present at the grove ritual who contributed to the spear's destruction earns one *commendatio*. Corvinus awards these through the paperwork window described above, without being told exactly what happened at the grove. He knows the spear is gone. He knows the party came back. That is sufficient.
+**Opportunity 1: seeing the ritual through to a genuine sacrifice.**
+Any character actively present at the grove ritual who contributed to a successful Skill Challenge (the sacrifice was accepted, the golems held off, or Mars's bargain struck) earns one *commendatio*. Corvinus awards these through the paperwork window described above, without being told exactly what happened at the grove. He knows the party went in with a cursed weapon and came back having faced it down. That is sufficient.
 
 **Opportunity 2: rescuing the influenced character during the ritual.**
 If one character was drawn to the spear and another character physically intervened (pulled them back, broke the connection, held them when the grove's power spiked), that act of putting themselves between a colleague and a divine force qualifies. One *commendatio* to the rescuing character. This is not Corvinus' paperwork: it is Cassia's formal attestation, as the ranking officer present and the party's usual channel for this now that Varro is gone.
@@ -871,15 +920,15 @@ If the party defended Vercingetorix against any forest encounter (Germanic ambus
 <details>
 <summary><strong>Post-Ritual NPC States</strong></summary>
 
-After the spear is destroyed (or after a failed ritual), each NPC's position shifts. Use this for Session 4 handoff.
+The spear is never destroyed at the grove (see Conclusion, above) — but whether the Skill Challenge succeeded still shapes how each NPC leaves this scene, and every one of them now carries the same new knowledge: the real answer is underground. Use this for Session 4 handoff.
 
-| NPC | If ritual succeeded | If ritual failed |
+| NPC | If the Skill Challenge succeeded | If it failed |
 |---|---|---|
-| **Vercingetorix** | At peace, even visibly lighter. Begins planning the journey home. Will embrace the party's leader if they allow it -- a Germanic gesture of warrior-kin. | Devastated. Three generations of his family carried this wound. He will not say it, but his face says it. |
-| **Thusnelda** | Methodical. Begins collecting iron fragments immediately. Gives the party one sealed clay jar each: crushed sacred herbs, for safe passage in the forest. Then goes quiet. | She blames herself. She will say *"I will prepare the grove again. Come back when you are ready. I will be here."* She means it. |
-| **Cassia** *(if present)* | Collapses against a standing stone, weeping -- not from grief but from relief. Her visions stop for the first time in weeks. She asks if she can stay in the grove for one night alone. | More determined than devastated. *"The omens are still bad but the shape has changed. There is still a path. I need to think."* |
-| **Tribune Lucius** *(if present)* | Looks at the iron fragments for a long time. Then: *"My father was wrong about what this was. He thought it was a political tool. He didn't know what it was."* First honest thing he's said out loud. | Practical and brisk -- this is how he handles fear. *"We need to move. The Legate is still out there. Being stopped here with a failed ritual and a still-active cursed weapon is a poor position."* |
-| **The influenced NPC** | Whether they broke free or were pulled back during the ritual, they are quiet after. The thread is cut. They feel its absence like a missing tooth -- noticeable even when nothing is wrong. Let them narrate what the absence feels like. | If the ritual failed because of them: they are the most useful person in the group for finding a way to try again. They felt the spear's logic from the inside. They know how it thinks. |
+| **Vercingetorix** | Grimly settled, not at peace -- the wound isn't closed, but it's smaller, and he finally has somewhere real left to walk toward. | Devastated. Three generations of his family carried this wound and it is still open. He will not say it, but his face says it. |
+| **Thusnelda** | Shaken but functional -- her certainty is gone, but she still knows how to move. She stays close to the party rather than turning back for the grove. | Shaken and barely functional. She sits by the elder's grave-marker for a long moment before she can speak again. Either way, she does not offer to "prepare the grove again" — she now knows there is nothing to prepare. |
+| **Cassia** *(if present)* | Quiet, processing -- her visions shift in tone rather than stopping. She recognizes the underground place from a dream she's had for weeks and hadn't understood until now. | More determined than devastated. *"The omens are still bad but the shape has changed. There is still a path. I need to think."* |
+| **Tribune Lucius** *(if present)* | Looks at the still-warm spear for a long time. Then: *"My father was wrong about what this was. He thought it was a political tool. He didn't know what it was."* First honest thing he's said out loud. | Practical and brisk -- this is how he handles fear. *"We need to move. The Legate is still out there. Standing here with a failed ritual and a still-active cursed weapon is a poor position."* |
+| **The influenced NPC** | Whether they broke free or were pulled back during the ritual, they are quiet after. The thread is cut, or at least thinner. They feel its absence like a missing tooth -- noticeable even when nothing is wrong. Let them narrate what the absence feels like. | The thread holds. They are the most useful person in the group for what comes next, in an uncomfortable way -- they felt the spear's logic from the inside. They know how it thinks. |
 
 </details>
 
@@ -896,7 +945,7 @@ At session start, when you pass the private note, also tell the player these thr
 
 These three moments should not be pointed out by the DM. They are for the player to plant and the other players to notice, or not, until the ritual makes it undeniable.
 
-This session should feel like the pressure never fully releases. The investigation of the cold open mystery, the river crossing, the grove itself — there's no safe moment until after the spear is destroyed. Push toward the grove. The forest is hostile to lingering.
+This session should feel like the pressure never fully releases. The investigation of the cold open mystery, the river crossing, the abandoned village, the grove itself — there's no safe moment, and the grove doesn't end it either. Push toward the grove, then push past the realization that the grove was never enough. The forest is hostile to lingering.
 
 </details>
 
