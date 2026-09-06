@@ -71,6 +71,7 @@ helmets    = [r for r in equip if r["category"] == "helmet"]
 gear       = [r for r in equip if r["category"] == "gear" and r.get("slot") != "helmet"]
 commission = [r for r in equip if r["availability"] == "commission"]
 vicus      = [r for r in equip if r["availability"] == "vicus"]
+aelius     = [r for r in equip if r["availability"] == "aelius"]
 
 MARKET_COLS  = ["name_latin", "name_english", "cost_d", "special"]
 MARKET_HEADS = ["*Latin*", "English", "Cost (d)", "Mechanics"]
@@ -85,5 +86,6 @@ write("ref_helmets.md",         pipe_table(helmets,         HELMET_COLS,  HELMET
 write("ref_gear.md",            pipe_table(gear,            GEAR_COLS,    GEAR_HEADS))
 write("ref_commission.md",      pipe_table(commission,      MARKET_COLS,  MARKET_HEADS))
 write("ref_vicus.md",           pipe_table(vicus,           MARKET_COLS,  MARKET_HEADS))
+write("ref_aelius.md",          pipe_table(aelius,          MARKET_COLS,  MARKET_HEADS))
 
 print(f"Done — {len(list(OUT_DIR.glob('*.md')))} files in _generated/")
