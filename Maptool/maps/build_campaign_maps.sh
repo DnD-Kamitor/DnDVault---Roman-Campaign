@@ -261,9 +261,12 @@ copy_npc "Tribune_Lucius" "$S"
 
 # Creatures: the Blood Cult Dungeon's monster roster (all real Monster Manual
 # demons/undead, no generic filler -- see SCRUM_BACKLOG.md Epic 8)
-for slug in Banshee Bone_Naga Yochlol Dretch Shadow_Demon Wraith Glabrezu; do
+for slug in Banshee Bone_Naga Yochlol Dretch Shadow_Demon Wraith Glabrezu Skeleton; do
   copy_npc "$slug" "$S"
 done
+
+# Player tokens
+cp "$BASE/tokens/players/"*.rptok "$S/" 2>/dev/null && echo "   + player tokens" || echo " [miss] player tokens"
 
 # ---------------------------------------------------------------------------
 echo ""
@@ -286,6 +289,9 @@ copy_npc "Mars" "$S"
 for slug in Wraith Wight Shadow Specter Zombie; do
   copy_npc "$slug" "$S"
 done
+
+# Player tokens
+cp "$BASE/tokens/players/"*.rptok "$S/" 2>/dev/null && echo "   + player tokens" || echo " [miss] player tokens"
 
 # ---------------------------------------------------------------------------
 echo ""

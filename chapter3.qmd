@@ -8,18 +8,35 @@
 The party travels through the Teutoburg Forest toward the sacred grove where the spear can be destroyed. The forest is ancient, hostile, and alive with old power. The spear whispers louder here. Someone in their group is no longer entirely themselves.
 
 **Level:** 5 → Advance to 6 at session end
-**Duration:** 3–4 hours
+**Duration:** 4-5 hours
 **Key Goal:** Reach the sacred grove; navigate the spear's growing influence on the party
-**Theme:** Fate vs. Free Will (the spear's pull vs. the choice to destroy it)
+**Theme:** Fate vs. Free Will — the spear's pull vs. the choice to destroy it
+
+<details>
+<summary><strong>8-Scene Structure at a Glance</strong></summary>
+
+| Scene | Location | Type | Hard? |
+|---|---|---|---|
+| 0 | Camp (Cold Open) | RP hook | No |
+| 1 | Aelius Rufus's Smithy | RP + puzzle | No |
+| 2 | First Forest Crossing | Combat + track puzzle | Yes |
+| 3 | Gunnar's Ambush + Thusnelda | Combat + warrior riddle | Yes |
+| 4 | The Rune Stone Fork | Combat + rune puzzle | Yes |
+| 5 | The Farbog | Exploration + combat | Yes |
+| 6 | The Village | Combat + forge puzzle | Yes |
+| 7 | The Great Tree (North) | RP + 3 riddles | Optional combat |
+| 8 | Sacrifice Circle + Skull Cave | Ritual + divine encounter | Yes |
+
+</details>
 
 <details>
 <summary><strong>Guy Sclanders' Principles Applied</strong></summary>
 
-**Pressure Cooker:** The party is hunted (by Rome, or at least by the Legate), carrying a corrupting artifact, in enemy territory, and someone among them may be under the spear's influence. Every hour counts.
+**Pressure Cooker:** The party is hunted by Rome, carrying a corrupting artifact, in enemy territory, with someone among them pulled toward the spear. Every hour counts.
 
-**Sacrifice Principle:** The grove demands something real. This isn't solved by clever play — it costs something.
+**Sacrifice Principle:** The grove demands something real. Not solved by clever play — it costs something.
 
-**Three Clue Rule:** Three ways to identify which NPC is being influenced by the spear before they act.
+**Three Clue Rule:** Three independent ways to identify the influenced NPC before they act.
 
 </details>
 
@@ -32,92 +49,88 @@ The party travels through the Teutoburg Forest toward the sacred grove where the
 <details>
 <summary><strong>Tracking Session 2 Outcomes</strong></summary>
 
-Before writing any prep notes, confirm:
-
 | Question | Answer affects |
 |---|---|
-| How did the Varro fight resolve (see Prologue below)? | Whether Varro travels with the party at all (he does not), the tone of the send-off, whether the influenced-NPC mechanic in Scene 1 lands as prophecy or repetition |
-| Is Tribune Lucius alive and now in command of the fort? | His role shifts from observer to the authority the party answers to before departing; the citizenship-elevation window later in this chapter |
-| Did the party make an alliance with Vercingetorix? | Navigation, tribal encounters, Thusnelda access -- note his attack on the fort in Session 2 was not a betrayal of this alliance, see CAMPAIGN_LOG.md |
+| How did the Varro fight resolve? | Tone of the send-off; whether the influenced-NPC mechanic lands as prophecy or repetition |
+| Is Tribune Lucius alive and in command? | His role this session; citizenship elevation window |
 | Is Augur Cassia with the party? | Ritual knowledge, the sacrifice choice |
-| What is the Legate's status? | Whether they're being actively pursued; Corvinus's authority is now damaged by the security failure |
-| What is each character's corruption level? | Scene 1 intensity, grove ritual stakes |
+| What is the Legate's status? | Whether they are being actively pursued |
+| What is each character's corruption level? | Scene 0 intensity, grove ritual stakes |
 
-**Read `CAMPAIGN_LOG.md` before running this session.** The real throughline (Mars's true motive, Varro's corruption, Lucius's divided loyalty, Vercingetorix's binding) lives there, not in this file's older draft framing. Where they conflict, `CAMPAIGN_LOG.md` wins.
+**Read `CAMPAIGN_LOG.md` before this session.** Where it conflicts with this file, `CAMPAIGN_LOG.md` wins.
+
+**Vercingetorix the Red is an enemy of the party.** He attacked the fort in Session 2. He is not present in the forest as a guide. Do not use any "if allied with Vercingetorix" framing — that path does not exist in this campaign.
 
 </details>
 
 <details>
-<summary><strong>Props &amp; Handouts</strong></summary>
+<summary><strong>Props and Handouts</strong></summary>
 
 **Handout 6: The Forest Trail (Thusnelda's Map)**
-*Draw this by hand on rough paper — never use clean geometric shapes*
+*Draw by hand on rough paper — never clean geometric shapes*
 ```
-[A crude hand-drawn map showing:]
-- Three rivers (the middle one with a crossing marked)
+[A crude map:]
+- Three rivers (middle one with a crossing marked)
 - A circle of seven stones (labeled in Germanic runes)
 - A smudge where a fourth river would be (deliberately ambiguous)
-- A warning symbol — crossed spears — at the forest's heart
-[At the bottom, in Germanic: "Mannaz raidho wunjo" = Man, Journey, Joy. Or: "The man who makes this journey finds what he seeks."]
+- Crossed spears at the forest's heart
+[Bottom, in Germanic: "Mannaz raidho wunjo" = Man, Journey, Joy.]
 ```
 
 **Handout 7: The Bloody Message**
 *Write on paper soaked in tea then dried, torn at edges*
 ```
-[Found carved into a tree at camp, deep cuts made in darkness]
+[Found carved into a tree at camp]
 
 MARS VIDET OMNIA
 (Mars sees all)
 
-[Below it, scratched as if made with a fingernail rather than a knife]
+[Below, scratched as if made with a fingernail]
 
 I did not want to do this.
 ```
 
+**Handout 19: The Elder's Rubbing**
+Charcoal rubbing from a grave-marker stone in the village (Scene 6). Worn and torn, two gaps where stone has weathered. The elder's name **Helvi** is visible in older runic script, partially obscured.
+
 **Physical Props:**
-- A dark stone (obsidian or black pebble) to represent the spear's pull — pass it to whichever player is carrying the spear
-- Keep a second set of character sheets with corruption levels updated
-- Prepare a folded note to pass to the "influenced NPC" player privately at the start of Scene 1 (see DM Notes)
+- A dark stone (obsidian or black pebble) for the spear's pull — pass it to whichever player carries the spear
+- A second set of character sheets with corruption levels updated
+- A folded note to pass to the influenced NPC player privately at session start (see DM Notes)
 
 </details>
 
 <details>
 <summary><strong>Handout Deployment Timeline</strong></summary>
 
-Every handout trigger for this session in a single reference. No handout should be given before its trigger — the information is only valuable once the scene makes it tangible.
-
 | # | Handout | Scene | Trigger | How to present |
 |---|---|---|---|---|
-| 7 | Bloody Message | Scene 0 (cold open) | Party examines the carved tree; or as the first physical prop before the session opens | Strip of rough paper; deep carved cuts for MARS VIDET OMNIA, scratched nail-thin second line; tear one edge |
-| 6 | Thusnelda's Map | Scene 2 | Thusnelda agrees to guide the party (Persuasion DC 14 success, or Vercingetorix vouches) | Hand-drawn on torn parchment; wavering river lines; smudge the fourth river with thumbprint; crossed spears over the grove; never use a ruler |
-| 19 | The Elder's Rubbing | Scene 4 (Abandoned Village) | History DC 15 on the elder's grave-marker, or Thusnelda answers directly when asked plainly | Charcoal rubbing on cloth, worn and torn at the edges; deliberately incomplete — two gaps in the text where the stone has weathered away |
-
-*Sessions 1-2 handouts (1-5) are already in the party's possession. Handouts 8-11 deploy in Sessions 4-5. Handout 19 is new this session — see `handouts/handout_19_elders_rubbing.html`.*
+| 7 | Bloody Message | Scene 0 | Party examines the carved tree | Strip of rough paper; deep cuts for MARS VIDET OMNIA; tear one edge |
+| 6 | Thusnelda's Map | Scene 3 | Thusnelda agrees to guide them (DC 14 Persuasion success) | Hand-drawn on torn parchment; wavering river lines; crossed spears over the grove |
+| 19 | The Elder's Rubbing | Scene 6 | History DC 15 on the grave-marker, or Thusnelda answers plainly | Charcoal rubbing on cloth, worn at edges, deliberately incomplete |
 
 ::: {.dm-note}
-**If the party earned Handout 6 early (Vercingetorix vouched for them before the Thusnelda meeting):** Still hold it until Thusnelda herself is present and has spoken at least once. The map means more after the players have a voice in their head to attach it to.
+**Handout 6:** Hold it until Thusnelda herself is present and has spoken at least once. The map means more when the players have a voice in their head to attach it to.
 :::
 
 </details>
 
 <details>
-<summary><strong>Map Selection Guide</strong></summary>
+<summary><strong>Maps for This Session</strong></summary>
 
-The session folder has 27 maps. Load these five before play, in this order, and switch at the cued moments. You will not need more than six in a session unless an encounter runs unusually long.
+Maps are in `Maptool/maps/campaign/S3_Through_the_Dark_Forest/`. Load 5-7 before play.
 
-| Load order | Map file | Scene | Switch cue |
-|---|---|---|---|
-| 1 | `ForestPath3` or `WindingForestPath` | Travel Day 1-2 (d10 events) | Load at session start; keep up through the first travel day |
-| 2 | `ForestBanditFort` or `ForestGate` | Scene 2: Thusnelda's outer perimeter | Switch when the Germanic scouts make contact |
-| 3 | `RiverCrossing` or `RiverCrossingVol2` | Scene 3: contested ford | Switch the moment the party reaches the bank |
-| 4 | `Swamp2` or `SwampPath` | Scene 3b: the Farbog | Switch when the ground turns soft and the grass disappears |
-| 5 | `SacredGrove` or `NatureGoddessTemplePublic.jpg` | Scene 4: standing stones | Switch when the stones come into view at the bog's far edge |
+| Scene | Map file(s) | When to switch |
+|---|---|---|
+| Scene 2 (forest crossing) | `ForestPath3`, `ForestPathVol5`, `ForestEncounter` | Session start; keep up through Scene 3 |
+| Scene 3 (ambush) | `ForestBanditFort`, `ForestGate` | When Germanic scouts make contact |
+| Scene 4 (rune stone) | `HighGroundForest`, `ForestRuins` | At the high-ground fork |
+| Scene 5 (Farbog) | `Swamp2`, `SwampPath`, `SwampBridges` | When ground turns soft |
+| Scene 6 (village) | `AbandonedVillage`, `AbandonedVillageVol2` | Stockade wall comes into view |
+| Scene 7 (Great Tree) | `NatureGoddessTemple`, `ForestRiverConfluence` | North path diverges |
+| Scene 8 (ritual) | `LabyrinthRuins`, `DarkTempleEntrance` | Standing stones come into view |
 
-**Reserve (swap in if an encounter needs more room):** `ForestEncounter`, `HGForest`, `ForestRuins`
-
-::: {.dm-note}
-`NatureGoddessTemplePublic.jpg` is already in `Fort_Vindolanda/` from the Session 4 prep. It works for the grove because it is a cross-shaped stone hall surrounded by open ground — close enough for the standing-stone ring if you narrate the geometry. `SacredGrove` (from `download_maps.sh`) is the purpose-built option if the script ran successfully.
-:::
+**Reserve:** `ForestWildernessVol2`, `RiverCrossing`, `ForestBridgeCrossing`
 
 </details>
 
@@ -126,11 +139,10 @@ The session folder has 27 maps. Load these five before play, in this order, and 
 
 | NPC | Status This Session | What They're Doing |
 |---|---|---|
-| Legate Corvinus | Pursuing with 8 legionaries if he survived Session 2 | Motivated by the need to recover the spear before his disgrace becomes permanent |
-| Tribune Lucius *(if alive, with party)* | Covering his uncertainty with competence | Genuinely doesn't know if he's doing the right thing; is watching Cassia |
-| Augur Cassia *(if with party)* | Barely holding it together; the forest's old power speaks to her divine heritage | Increasingly certain the sacrifice must be her; hasn't told anyone |
-| Vercingetorix *(if allied)* | Navigating them through his people's territory | Keeping a war-band of six warriors nearby as protection; not mentioning it |
-| Thusnelda (new NPC) | Waiting at her grove, expecting them | She performed an augury three days ago. She knew they were coming. |
+| Legate Corvinus | Pursuing with 8 legionaries if he survived Session 2 | Needs to recover the spear before his disgrace becomes permanent |
+| Tribune Lucius *(if alive, with party)* | Covering uncertainty with competence | Genuinely doesn't know if he's doing the right thing; watching Cassia |
+| Augur Cassia *(if with party)* | Barely holding it together; the forest's old power speaks to her | Increasingly certain the sacrifice must be her; hasn't told anyone |
+| Thusnelda (new NPC) | Waiting, expecting them | She performed an augury three days ago. She knew they were coming. |
 
 </details>
 
@@ -138,46 +150,35 @@ The session folder has 27 maps. Load these five before play, in this order, and 
 
 
 <details>
-<summary><strong>The Forest Journey: Two Days of Travel</strong></summary>
+<summary><strong>The Forest Journey: Between Scenes</strong></summary>
 
-The journey from the fort to Thusnelda's scouts takes two full days. This is not empty time. The forest is not neutral territory.
+The journey from the smithy to the ritual circle takes two days. Roll a d10 or choose at the start of each travel segment (between scenes). Each event takes 10-15 minutes of table time — no more.
 
-At the start of each travel day (or whenever pacing demands it), roll a d10 or choose from this table. Each event should take 10-15 minutes of table time -- no more.
+**Small riddles are scattered on the road. Any correct answer earns one minor reward from the table below. Wrong answers cost nothing except time.**
+
+**Minor Reward Table (d6):**
+
+| d6 | Reward |
+|---|---|
+| 1 | Advantage on the next Perception or Survival check |
+| 2 | One fire oil flask (found cached nearby, same result as Aelius's stock) |
+| 3 | 2d6 sp worth of tradeable goods in a pouch |
+| 4 | A useful piece of trail information (DM choice: Legate's heading, wildlife avoiding one path, safe water source) |
+| 5 | Advantage on the next Wisdom saving throw before a long rest |
+| 6 | One cold-iron arrowhead |
 
 | d10 | Event |
 |---|---|
-| 1 | **The Spear Pulls North.** The cart carrying the spear slowly angles itself northward on flat ground. No one is steering it that way. DC 12 Arcana or Religion to understand it's tracking toward the sacred grove -- an instinct, not consciousness. |
-| 2 | **A Roman Scout.** A lone legionary from the fort spots the party from a ridge. He's young, clearly terrified, clearly under orders to follow. The party must decide: capture him, send him back with a warning, or ignore him and know he'll report their heading. |
-| 3 | **Germanic Watchers.** They've been visible in the treeline for an hour. Not hostile -- yet. If Vercingetorix is with the party, he raises a fist and they pull back. If not: DC 14 Persuasion using any Germanic phrase from the player guide, or they shadow the party all night. |
-| 4 | **The Spear Dreams.** The character carrying the highest corruption wakes screaming from a brief vision mid-march: they saw themselves standing over the entire party's bodies, holding the spear, and they were smiling. The character describes this to the table. Thusnelda, if present, listens. She says nothing. |
-| 5 | **A Shrine in the Trees.** A small Germanic offering-post -- carved wooden figures, dried herbs, a deer skull -- stands at a fork in the path. The left path goes into deep forest. The right path is the route. If the party disturbs the shrine: the deer skull's eye sockets glow briefly, and wildlife avoids the camp that night (advantage for the Legate's trackers). |
-| 6 | **Old Bones.** The party crosses a shallow valley where the ground is wrong underfoot -- too many small, hard shapes beneath the leaf litter. Investigation DC 12 (active: digging one up): a corroded *pilum* head, a legionary's belt buckle, bone. This is where a Roman column died, generations ago, and never got a monument. No one in the party has to know Varro's family history for this to land -- but if anyone does, it lands harder. |
-| 7 | **The Spear Goes Quiet.** For several hours, the spear's runes stop glowing and the pull disappears. The forest feels almost normal. Then, suddenly, it resumes -- stronger than before, as if it drew a breath. Characters with corruption 2+ must make a DC 11 Wisdom save or feel the urge to unwrap it and hold it, "just to check it's still there." |
-| 8 | **Rain.** A cold Germanic rain turns the paths to mud. Movement is halved. The Legate's tracking becomes easier (his dogs can still smell the spear; rain doesn't help with that). Any character without a cloak takes 1 level of exhaustion if the party doesn't shelter for 2 hours. |
-| 9 | **The Abandoned Camp.** *(Adapted from Adventures in the Night)* A drover's camp, recently abandoned — fire ash still warm, two bedrolls cut open, a Germanic spear snapped in two. Investigation DC 11 (active: reading the camp's story): three people were here, left in haste south-southeast; one was dragged. Survival DC 12 (active: following the drag-marks): they end 40 feet from the fire, where a patch of earth is soft and dark. Something came from the bog. The only item left: a sealed leather pouch with six days of hardtack and a bronze Brigantes ring. This is not a threat. It is information: the bog does not tolerate uninvited guests. |
-| 10 | **The Boundary Stone.** *(Adapted from Adventures in the Night)* A knee-high granite slab, older than Rome, covered in spiraling Germanic script and worn animal-headed carvings. Religion DC 12 (passive: recognizing a liminal boundary marker): the carvings indicate the threshold between the world of the living and Vættir land. The party crossed it without knowing. Thusnelda, if present, stops and leaves something at the stone's base without explaining -- a pinch of her own hair wound around a small pebble. *"We are guests here. Act like it."* If the party has damaged any offering sites or shrines in previous events, note this: two transgressions mean the Vættir are watching by the time the party reaches the bog. |
-
-<details>
-<summary><strong>Maps for This Session</strong></summary>
-
-Maps are in `Maptool/maps/campaign/S3_Through_the_Dark_Forest/`. This is the largest pack (27 maps). Session 3 is mostly travel and encounter — you will not use every map. Select 5–7 before play based on which encounters you intend to run.
-
-| Scene | Map file(s) | Use |
-|---|---|---|
-| Forest path travel | `ForestPath3`, `ForestPath4`, `ForestPathVol5`, `WindingForestPath` | Progress through the forest; patrol avoidance; atmosphere |
-| Forest encounter sites | `ForestEncounter`, `ForestEncounter2`, `ForestEncounter3` | Ambush, animal encounter, Germanic scout contact |
-| High ground / vantage point | `HGForest` | Tactical observation; the party spots pursuit |
-| Dense wilderness | `ForestWildernessVol4`, `ForestWildernessVol8` | Off-trail navigation; creature territory |
-| Terrain hazard | `ForestSinkhole` | Skill challenge; the path collapses |
-| River crossings | `RiverCrossing`, `RiverCrossingVol2`, `RiverCrossing3` | Contested ford; Legate's pursuit cuts off the route |
-| Forest bridge | `ForestBridgeCrossing` | Defensible choke point; last-stand option |
-| Forest rivers and confluence | `ForestRiver`, `ForestRiverConfluence` | Navigation challenge; Thusnelda's territory marker |
-| Swamp approach | `Swamp`, `Swamp2`, `Swamp3`, `SwampBridges`, `SwampPath` | The bog leading to Thusnelda; corruption pressure |
-| Pre-Roman ruins | `ForestRuins`, `LabyrinthRuins` | Rune discovery; the old structure |
-| Cave entrance (optional) | `ForestCaveEntrance` | Shelter scene; underground shortcut |
-| Bandit fortification / Germanic camp | `ForestBanditFort`, `ForestGate` | Thusnelda's outer perimeter; the gate test |
-
-</details>
+| 1 | **The Spear Pulls North.** The cart carrying the spear slowly angles itself northward on flat ground. DC 12 Arcana or Religion: it's tracking toward the sacred grove — an instinct, not consciousness. **Riddle carved on a root:** *"I move forward only by going back. What am I?"* Answer: a bow being drawn. Correct: minor reward. |
+| 2 | **A Roman Scout.** A lone legionary from the fort spots the party from a ridge. Young, terrified, under orders. The party must decide: capture him, send him back with a warning, or ignore him. |
+| 3 | **Germanic Watchers.** Visible in the treeline for an hour. Not hostile — yet. DC 14 Persuasion using any Germanic phrase from the player guide, or they shadow the party all night. |
+| 4 | **The Spear Dreams.** The character with the highest corruption wakes screaming mid-march: they saw themselves standing over the party's bodies, holding the spear, smiling. The character describes this to the table. Thusnelda, if present, listens. She says nothing. |
+| 5 | **A Shrine in the Trees.** A Germanic offering-post — carved figures, dried herbs, a deer skull — stands at a fork. Right path is the route. Disturbing the shrine: the deer skull's eye sockets glow briefly; wildlife avoids camp that night (advantage for the Legate's trackers). **Riddle on a post:** *"I am always ahead of you on the road, but I arrived before you. What am I?"* Answer: your shadow (or the road itself). Minor reward for a correct answer and leaving the shrine undisturbed. |
+| 6 | **Old Bones.** The ground is wrong underfoot — too many small, hard shapes under the leaf litter. Investigation DC 12: a corroded *pilum* head, a legionary's belt buckle, bone. A Roman column died here, generations ago, and never got a monument. |
+| 7 | **The Spear Goes Quiet.** For several hours, the runes stop glowing and the pull disappears. Then it resumes — stronger than before, as if it drew a breath. Characters with corruption 2+ must make DC 11 Wisdom save or feel the urge to unwrap it, "just to check it's still there." |
+| 8 | **Rain.** A cold Germanic rain turns paths to mud. Movement halved. Any character without a cloak takes 1 level of exhaustion if the party doesn't shelter for 2 hours. **Riddle scratched under a fallen log where the party shelters:** *"I am light as a feather, but even the strongest man cannot hold me for five minutes. What am I?"* Answer: breath. Minor reward if found and answered. |
+| 9 | **The Abandoned Camp.** A drover's camp, recently abandoned — fire ash still warm, two bedrolls cut open, a Germanic spear snapped in two. Investigation DC 11: three people, left in haste south-southeast; one was dragged. Survival DC 12: drag-marks end 40 feet from the fire, where earth is soft and dark. Something came from the bog. Sealed leather pouch left behind: six days of hardtack and a bronze Brigantes ring. Not a threat — information: the bog does not tolerate uninvited guests. |
+| 10 | **The Boundary Stone.** A knee-high granite slab, older than Rome, spiraling Germanic script and worn animal-headed carvings. Religion DC 12: the carvings indicate the threshold between the living world and Vættir land. The party crossed it without knowing. Thusnelda, if present, stops and leaves something at the stone's base without explaining — a pinch of her own hair wound around a small pebble. *"We are guests here. Act like it."* Two shrine/offering transgressions: the Vættir are watching by the time the party reaches the bog. |
 
 </details>
 
@@ -186,103 +187,42 @@ Maps are in `Maptool/maps/campaign/S3_Through_the_Dark_Forest/`. This is the lar
 <summary><strong>Prologue: The Gate</strong> (picks up mid-scene from Session 2)</summary>
 
 ::: {.dm-note}
-**What this scene actually is.** Varro is not a villain who turned on the party. His
-family has carried the shame of Varus's three lost legions in this exact forest for six
-generations -- he was already primed to see a second Teutoburg coming before the spear
-ever touched him. Its corruption didn't invent his fear, it just agreed with the one he
-already carried, until it justified opening a gate and killing a scout. He believes,
-right now, that he is saving Rome. Play him as a good man losing a fight he never told
-anyone he was having, not as an enemy. Full detail in `CAMPAIGN_LOG.md`.
+Varro is not a villain who turned on the party. His family has carried the shame of Varus's three lost legions in this exact forest for six generations — he was already primed to see a second Teutoburg coming before the spear ever touched him. Its corruption didn't invent his fear, it just agreed with the one he already carried, until it justified opening a gate and killing a scout. He believes, right now, that he is saving Rome. Play him as a good man losing a fight he never told anyone he was having.
 
-This scene resumes an in-progress fight -- Ursula engaged Varro at the gate he opened.
-Pick it up from there; don't re-stage the whole raid.
+This scene resumes an in-progress fight — Ursula engaged Varro at the gate he opened. Pick it up from there.
 :::
 
-**Recap, read or paraphrase:** *"The gate stands open. Varro stands in it, gladius drawn,
-blood on his hands that isn't his own -- the scout he killed lies past him, half in the
-mud. Ursula is already on him. Whatever the rest of the party was doing when the raid
-began, this is what's in front of them now."*
+**Recap:** *"The gate stands open. Varro stands in it, gladius drawn, blood on his hands that isn't his own — the scout he killed lies past him, half in the mud. Ursula is already on him."*
 
-**Varro, corrupted (use his existing stats: AC 17, HP 58):**
+**Varro, corrupted (AC 17, HP 58):**
 - **Gladius** +5 to hit, 1d8+3 slashing
 - **Pilum (thrown)**, as per his standard stat block
-- **The god's hand steadies him:** once per round, Varro may reroll one failed attack
-  roll or saving throw. This is Mars's influence lending him just enough to keep fighting
-  -- not a fair fight, but not an unbeatable one either.
-- He is not trying to escape or to win a war. He is trying to hold the gate shut against
-  Rome's own future mistake. He will not flee. He will not surrender to a threat of
-  force. He will only stop for the third option below.
+- **The god's hand steadies him:** once per round, reroll one failed attack or save.
+- He will not flee or surrender to force alone.
 
-**Three ways this ends (any one of them):**
+**Three ways this ends:**
 
-1. **He is killed or dropped to 0 HP.** He does not beg. His last words, quiet, almost
-   relieved: *"Tell them I did this for Rome."* He believes it to the end.
-2. **He is captured -- subdued, restrained, or surrenders after being clearly beaten.**
-   He goes without further violence once it's clear the fight is lost, but says nothing
-   useful under guard. He is not lying when he refuses to explain himself. He does not
-   have the words for what happened to him.
-3. **Someone breaks through to him.** DC 16 Wisdom (Insight) or Charisma (Persuasion)
-   (active: naming what he actually is afraid of -- Varus, the lost legions, this exact
-   forest -- rather than accusing him of treason), as a group action any character can
-   contribute to once per round. On success, Varro staggers, drops the gladius, and says,
-   *"I can still hear it. Get it away from me. Get it away from all of us."* He survives,
-   devastated by what he nearly did, and is in no state to travel with the party into the
-   forest -- he stays behind, relieved of duty, watched. This is the option that costs the
-   party nothing but gives them no clean resolution either: Varro lives, but he is not
-   coming with them, and the fort has lost its most trusted officer regardless.
+1. **Killed or dropped to 0 HP.** Last words, quiet: *"Tell them I did this for Rome."*
+2. **Captured.** Goes without further violence. Says nothing useful. He does not have words for what happened to him.
+3. **Broken through to.** DC 16 Wisdom (Insight) or Charisma (Persuasion), active: name what he is actually afraid of (Varus, the lost legions, this exact forest) rather than accusing him of treason. Group action. On success: *"I can still hear it. Get it away from me. Get it away from all of us."* He survives, devastated, stays behind.
 
-**Whichever ending occurs: Varro does not travel with the party into the forest.** Any
-later reference to him in this chapter or its GM tools assumes his absence -- update
-those on sight if you find one that still assumes he's present.
+**Whichever ending: Varro does not travel into the forest.**
 
-**Lucius is already in command.** This is not a new development -- it happened in
-Session 2, already played, and needs no scene to re-establish it here. As Session 3
-opens, Tribune Lucius has been the fort's commanding officer for some time, Varro's
-authority already suspended, Corvinus's standing already under review. He appears at
-the gate in the aftermath of the fight below simply because he commands the fort now
-and this is fort business, not because he is arriving to seize anything.
-
-If it's useful to ground the table in where things stand, a single line covers it: *"Get
-this cleaned up. I want the garrison steady before nightfall."* -- said the way a man
-gives an order he has given a hundred times already, not the way a man announces new
-authority. He carries a small locked box he does not set down and does not explain. If
-anyone asks about it directly: *"That is not fort business."*
+**Lucius is already in command.** He appears at the gate in the aftermath. He carries a small locked box he does not set down and does not explain. If anyone asks: *"That is not fort business."*
 
 ::: {.dm-note}
-Play Lucius arrogant and controlled here, not cruel. He is performing certainty he does
-not fully have -- his real orders say bring it back, his real conviction (formed
-somewhere his father never knew about) says it must never leave. The lockbox is
-personal, not political; do not pre-decide its contents. This is the same suspicious,
-observing Lucius from Session 1, now with real authority and something to lose, and that
-authority is old news to him by now, not a fresh performance.
+Play Lucius arrogant and controlled here, not cruel. He is performing certainty he does not fully have. The lockbox is personal, not political — do not pre-decide its contents.
 :::
 
-**Lucius comes with them.** He does not trust "Imperial property" of this significance to
-anyone else's hands after what just happened, and delegates the fort's day-to-day
-command to a subordinate for the duration. This is not generosity -- it's the same
-control instinct that got him into command in the first place, and it's the only way
-his own real orders from Rome ("recover the weapon") get satisfied in person rather than
-by report. Every existing reference to Lucius traveling with the party through the rest
-of this chapter (the river crossing, the grove, the citizenship co-sponsor mechanic)
-still holds -- this is the reason why.
+**Lucius comes with them.** He does not trust "Imperial property" of this significance to anyone else's hands.
 
-**Transition:** the party is given leave to depart for the forest -- whether Lucius
-frames this as a mission he's ordering them on, or something he's letting them do
-because stopping them would cost him more than he can currently afford, is a live
-choice for the table. Either way, they leave with a fresh, unresolved wound instead of a
-clean goodbye. Proceed to Scene 0 below; the two-day travel montage picks up from here.
+**Transition:** The party departs for the forest. They leave with a fresh, unresolved wound instead of a clean goodbye.
 
 </details>
 
 
 <details>
 <summary><strong>Scene 0: Cold Open</strong> (5 minutes)</summary>
-
-**Start in media res — the camp is wrong.**
-
-They've been traveling for two days. They're camped in a clearing that should feel safe. It doesn't.
-
-**Read aloud:**
 
 > *You wake before dawn. The forest is completely silent.*
 >
@@ -298,116 +238,224 @@ They've been traveling for two days. They're camped in a clearing that should fe
 >
 > **MARS VIDET OMNIA**
 
-**DM Direction:** The companion standing by the spear is the NPC the party trusts most — or whichever party member drew the short straw privately (see DM Notes). They don't remember getting up. When questioned, they're genuinely confused and frightened. They didn't do it consciously. Not yet.
+**DM Direction:** The companion standing by the spear is the influenced NPC (see DM Notes). They don't remember getting up. When questioned, they're genuinely confused and frightened. They didn't do it consciously. Not yet.
 
-Don't resolve this. Just put it in the air. Cut to Scene 1 immediately.
-
-</details>
-
-
-<details>
-<summary><strong>Scene 1: Something is Wrong</strong></summary>
-
-Three dead birds lie near the camp perimeter. Then the party finds the handout — Handout 7, carved into a tree. One of their NPCs made it. They don't know they did.
-
-<details>
-<summary><strong>Identifying the Influenced Character</strong></summary>
-
-The spear's influence is gradual. One NPC in the party is being slowly possessed — not controlled, but *pulled*. The DM should pass a folded note to that player at session start (see DM Notes for the note's contents). The player knows; the other characters don't.
-
-**Three ways to identify the influenced NPC before they act:**
-
-**Clue 1: The Physical Signs**
-Perception DC 13 (passive, during travel) or Medicine DC 13 (active: a deliberate physical examination):
-- Their eyes have a faint red tinge in direct light
-- They've been rubbing the same spot on their arm repeatedly (where they touched the spear in Session 1)
-- They're sleeping with their face turned toward where the spear is stored, even if the spear moved
-- Medicine specifically: a character who asks to check their pulse or temperature finds a slight fever and dilated pupils that do not match the light level. These are not illness signs. They are arousal signs, the same physiological state as pre-combat readiness -- but the person is calm.
-
-**Clue 2: Their Behaviour**
-Insight DC 14 (active: watching them during a specific conversation about the spear or the journey):
-- They advocate for keeping the spear more strongly than before, but can't articulate why
-- They become visibly agitated when someone else touches or moves the spear
-- When asked directly *"Are you alright?"*, there's a micro-pause before they answer
-
-**Clue 2, alternate path:** Hilde, Thusnelda's apprentice (see Scene 2), names the influenced NPC's condition out loud to Thusnelda in Germanic -- quietly, not meant for the party. A character with Germanic language proficiency overhears this exchange and gets the same information Insight DC 14 would have given, no roll required.
-
-**Clue 3: The Spear Reacts**
-If the party examines the spear's wrappings or attempts to read its aura: Arcana DC 13 (passive) or Religion DC 14 (passive):
-- The spear "leans" -- physically tilts -- in the influenced NPC's direction
-- Anyone sensitive to divine energy (Clerics, Paladins) can feel the connection
-- Cassia, if present, sees the influence immediately: *"There's a thread between that person and the spear. I missed it. I'm sorry, I missed it."*
-
-</details>
-
-<details>
-<summary><strong>What the Influenced NPC Does if Undetected</strong></summary>
-
-At Scene 4 (the grove), the influenced NPC attempts to stop the ritual — not violently at first, but with increasingly urgent arguments. If not caught, they attempt to take the spear and run at the ritual's climax. They can be brought back with a successful DC 15 Wisdom saving throw from the party (as a group action — holding them, calling to them, breaking the connection through sheer human contact). If the party succeeds, the NPC is devastated by what they nearly did.
-
-</details>
+Don't resolve this. Pass the influenced player their private note now. Cut to Scene 1.
 
 </details>
 
 
 <details>
-<summary><strong>Scene 2: Thusnelda's Scouts</strong></summary>
+<summary><strong>Scene 1: Aelius Rufus's Smithy</strong> (15-20 minutes)</summary>
 
-Germanic scouts find the party. What happens next depends on Session 2.
+The party passes the smithy on the way out of the vicus — last structure before the forest road. Aelius Rufus has the door wedged open and coals already lit.
 
-**If allied with Vercingetorix:**
-
-> *Four figures appear in the trees. Forest-dark clothes, no armor. One raises a hand — not a weapon.*
+> *The smith's forge fire is the only warm light left in the vicus. He doesn't look up when you approach.*
 >
-> *Vercingetorix says, quietly: "My people. We are safe here."*
+> *"Figured someone would be going in there." He sets a buckle aside. "Forest folk say that spear's been glowing since last week. Even out here, you can hear the trees complaining." He jerks his thumb toward a locked supply room. "Take what you need. Trade if you can spare it. I won't be open for business once the Legate gets back."*
 
-The scouts offer to take the party to **Thusnelda**, a druid who tends the sacred grove. They know what the party is carrying. They've been expecting them.
+**Aelius Rufus — voice:** Practical man, no patience for politics. He doesn't care about the spear's divine significance. He cares that his smithy is still standing.
 
-*Toll: Information about Roman troop movements along the southern Limes. Moral weight: Sharing this is technically treason. It's also practically necessary.*
+**One thing he mentions unprompted:** He saw a Roman courier leave the fort two nights ago heading east, not south. Not toward Rome. East. This is Senator Brutus's intelligence chain — Aelius doesn't know that.
 
-**If not allied:**
+---
 
-Perception DC 12 (active: scanning the treeline before the scouts reveal themselves): The undergrowth has been disturbed in a semi-circle to both sides of the trail, with none disturbed directly ahead. The approach pattern is a pincer closing from the flanks, not a block. A soldier who reads this before initiative tells the party their flanks are the threat, not the front -- any character who covers a flank when initiative is called has advantage on the first initiative check.
+**What Aelius can provide (trade or silver):**
 
-Ambush — 12 **Tribal Warriors**, 2 **Scouts** (CR 1/2 each) in the tree line. The forest negates Roman tactics: no formations, difficult terrain, low visibility.
+| Item | Cost | Mechanical effect |
+|---|---|---|
+| Flask of fire oil | 5sp | Thrown, 10-ft splash, 1d4 fire on impact + 1d4 fire at start of next turn |
+| Iron caltrops (bag of 25) | 2sp | 10-ft square, DC 13 Dex save or speed halved + 1 piercing |
+| Cold-iron arrowheads (6) | 4sp | Bypasses non-magical weapon resistance on spirits and fey |
+| Repaired shield | 3sp | Standard shield |
+| Spare gladius | 6sp | Standard 1d6+Str |
+| Two days' iron rations | 1sp | No exhaustion penalty for two travel days |
 
-Can be ended diplomatically — drop weapons, use Persuasion DC 14 with any Germanic phrase from the player guide, or demonstrate they're trying to destroy the spear (the scouts recognize it and stop). Vercingetorix appears if combat goes 3+ rounds regardless — he's been following.
+---
 
-**Thusnelda** — arriving with the scouts or separately, with two people from the village in tow:
+**The Storeroom Puzzle: The Three-Dial Lock**
 
-A small, ancient-looking Germanic woman. She carries an oak staff carved with spiraling runes. She smells of pine smoke and something metallic. She looks at the spear and then at the party with the calm gaze of someone who has spent decades looking at hard things.
+The storeroom has a three-dial iron lock. Each dial has three symbols. Aelius offers: *"I'll open it free if you can read it. Takes most apprentices a week."*
 
-**Hilde**, her apprentice, a young Cherusci woman, hangs back and watches everything -- this is her first encounter with the spear's corruption and she is not hiding her fascination. She will shadow the party for the rest of Scene 2, asking quiet questions in Germanic to Thusnelda about the influenced NPC by name, not by type. A character with Germanic language proficiency who is paying attention gets Clue 2 for free this way (see Identifying the Influenced Character, above) -- Hilde notices before anyone else does.
+**Dials (left to right):** Hammer / Anvil / Fire — Iron / Copper / Gold — Sword / Shield / Arrow
 
-**Aldric**, a Germanic man introduced as "one of the village," lingers at the edge of the group and watches too carefully. He is reporting to Senator Brutus, not to Corvinus, and has no idea what the spear actually does -- he was told it is a Roman military asset. Investigation DC 14 (active: noticing how he positions himself to see without being seen) identifies him as something other than a curious local. He leaves before the party departs for the grove -- his information stops here, which is exactly why Brutus's intelligence on this session "ends at the treeline."
+**Correct combination:** Anvil — Iron — Sword. The sequence of making a weapon: raw metal on the anvil, heated in iron grade, shaped into a blade.
+
+**How to solve:**
+- **Investigation DC 12 (active: examining wear marks):** The most-used position on each dial is obvious from the finish.
+- **Arcana DC 13 (active: recognizing craft order):** The alchemical/craft sequence identifies it.
+- **Religion DC 11 (passive: Mars as patron of smithcraft):** Mars's liturgical craft sequence is anvil-to-iron-to-blade. Unlocks with a spoken phrase; Aelius nods approvingly.
+- **Brute force (Strength DC 16):** Opens it, but Aelius docks 3sp from everything the party buys, and he does not mention the courier.
+
+**Inside:** Everything on the table above, plus a scratched clay tablet in Germanic. Investigation DC 13 or Germanic language proficiency: a supply list from Vercingetorix's own blacksmith — the list matches Aelius's forge records exactly. Aelius has been supplying the enemy chieftain off the books for two years.
+
+*If the party confronts him about it:* He doesn't deny it. *"He pays in silver and doesn't burn the building. The Legate's never asked me directly. That's always been the arrangement."*
+
+---
+
+**Smithy Riddles (sprinkled on the wall above the forge):**
+
+Three riddles are scratched into the stone above the firebox, left by apprentices across generations. Each correct answer earns a minor reward from the road table.
+
+**Riddle 1:** *"I am born in fire and die in use. I am worthless until broken. What am I?"*
+Answer: A sword (or any tool forged then worn down by work). Accept any formulation about a forge-made object that fulfills its purpose through use.
+
+**Riddle 2:** *"I have a mouth but cannot eat. I have a body but cannot walk. I have a heart but cannot feel. What am I?"*
+Answer: A river (also accept: a bellows, a furnace — any single-function object with anatomical metaphors). Reward: advantage on next Athletics or Acrobatics check.
+
+**Riddle 3:** *"A soldier asks me for courage. A blacksmith asks me for fire. A farmer asks me for rain. I answer all three exactly alike. What am I?"*
+Answer: Prayer (or: Mars, or: a god). Reward: one free cold-iron arrowhead in addition to any purchased.
+
+</details>
+
+
+<details>
+<summary><strong>Scene 2: First Forest Crossing</strong> (30-45 minutes)</summary>
+
+One hour past the vicus the road becomes a track. A half-hour after that it becomes an idea. Old growth — no undergrowth below 20 ft, permanent shadow, roots like half-buried walls.
+
+> *The trees here are ancient enough to have stopped caring about the forest floor. Their canopy is a solid ceiling, and below it the light is blue-grey and directionless, like being underwater. The path ends where three deer trails diverge around a burial mound.*
+>
+> *The mound is man-made. Stone-capped, moss-covered, old enough that surrounding trees have grown into it. Someone placed offerings at its base — recently. The offerings have been disturbed.*
+
+---
+
+**The Track Puzzle: Three Diverging Paths**
+
+The deer trails split into three around the mound. One round of investigation before any combat.
+
+| Path | Signs | What happens if taken |
+|---|---|---|
+| **Left (around the mound)** | Disturbed earth, deep paw-prints heading toward the mound | Passes along the mound's sealed face — Haugbui emerges from the wrong angle; disadvantage on its first attack, party gets one free action |
+| **Center (over the mound)** | Fresh boot-prints over older wolf prints, then nothing | Walks over the mound's sealed top — wakes both Haugbui and wolves one round earlier |
+| **Right (dry streambed)** | Dry leaves, no prints, wolf scent on the bank | Safe passage past the mound — Haugbui emerges but wolves are 2 rounds away |
+
+**Survival DC 13 (active: reading all three paths before choosing):** Identifies all three correctly.
+**Survival DC 10 (passive):** Notes the center path has been disturbed more recently.
+**No check:** Party takes center path by default — worst outcome.
+
+**Riddle carved on the mound's capstone:** *"I am heavier the more you take away. What am I?"*
+Answer: A hole (or: a pit, an empty vessel, the mound itself if the party is clever about it). Correct answer while standing at the mound earns minor reward AND gives the party the right path automatically, as if reading tracks (the stone's position and shadow point toward the streambed).
+
+---
+
+**Encounter: The Burial Mound (Hard — 6×L5)**
+
+A Haugbui rests in the mound — the buried elder of a Cherusci warband who died defending this territory. His wolves still range the surrounding forest.
+
+| Creature | CR | XP | Count | Subtotal |
+|---|---|---|---|---|
+| Haugbui | 3 | 700 | 1 | 700 |
+| Dire Wolf | 1 | 200 | 2 | 400 |
+| Wolf | 1/4 | 50 | 6 | 300 |
+| Giant Spider | 1 | 200 | 1 | 200 |
+| **Raw** | | | 10 | **1,600** |
+| **×2.5 (7-10 creatures)** | | | | **4,000** |
+
+**Difficulty: Hard** (adjusted XP 4,000 + player buffs from sessions 1-2 push effective difficulty into Hard range).
+
+**Round sequence:**
+- **Round 0 (surprise):** Giant Spider drops a Web from the canopy on whoever leads the center path. Haugbui emerges from the mound with a grinding of stone. Characters actively watching the canopy (Perception DC 11) are not surprised.
+- **Round 1:** Initiative. Haugbui uses Corrupted Claw ×2 on the nearest target. Six Wolves rush in using Pack Tactics. Two Dire Wolves hang back 20 ft, circling for a prone target.
+- **Round 2:** Dire Wolves engage whoever the Wolves knocked prone. Haugbui uses Grave Curse (1/day, DC 14 WIS, disadvantage on all saves for 1 hour) — priority: highest save modifier PC.
+- **Round 3+:** If the Haugbui drops below half HP (27), Wolves immediately disengage and retreat. Haugbui uses Relentless Dead (reforms inside the mound in 1d4 rounds) unless the party seals the mound entrance (Strength DC 14 + crowbar or two characters cooperating) or Thusnelda performs a release rite when she arrives.
+
+**Haugbui:** Cannot pursue beyond 60 ft of mound. Relentless Dead requires Religion DC 14, Cassia's ritual, or Thusnelda's blessing to stop permanently.
+
+**Giant Spider:** Web before initiative. Never comes to ground willingly with 2+ melee PCs standing.
+
+**Wolf tactics:** Three charge noisily from the east; two close silently from west and north simultaneously in round 2 (Stealth +4). Perception DC 13 on a player's turn to call out the flanking approach.
+
+**Mound cover:** A character standing behind the south face of the mound (not on top) has three-quarter cover against the Haugbui's attacks (+5 AC and Dex saves).
+
+---
+
+**Post-Combat: Inside the Mound**
+
+Investigation DC 11 (active: examining the disturbed offerings): a **folded Roman document**, recently placed. A supply manifest for a "special cargo" moving east from the fort in three days. No signature. The cargo is listed only as *"the instrument."* This is Brutus's courier chain.
+
+</details>
+
+
+<details>
+<summary><strong>Scene 3: The Ambush and the Meeting</strong> (35-45 minutes)</summary>
+
+Two hours past the mound, the forest opens into a wide game path.
+
+---
+
+**The Warrior Riddle**
+
+Before the ambush begins, Gunnar gives the party one warning — not out of mercy, but because his people consider it dishonorable to kill without it.
+
+> *A figure steps onto the path. Warrior-built, oak-staff held crosswise, face paint. Behind him, the treeline moves.*
+>
+> *"One question," he says in accented Latin. "Answer it and you may pass." He does not raise the staff. "What do a wolf, a shield, and a sleeping man have in common?"*
+
+**Correct answer:** All three protect while at rest. The wolf sleeps with its pack around it; the shield lies flat and covered; a sleeping man's body goes still to preserve itself. Any formulation capturing **protection through stillness or community** satisfies Gunnar. He is testing whether the party understands what the forest values — not combat, but collective defense.
+
+**Resolution:**
+- **Correct answer:** Gunnar nods once. The ambush still happens — some warriors are already moving — but Gunnar does not join the fight. The party faces 6 Javelin throwers, 4 Pushers, and 2 hidden Scouts without the Champion. When combat ends: *"You know the forest better than your armor suggests. Come with me."*
+- **Wrong answer:** Full ambush, Gunnar included.
+- **Persuasion DC 14 with any Germanic phrase (instead of answer):** Gunnar pauses. He asks the riddle a second time. Another chance to answer.
+
+---
+
+**Encounter: Gunnar's Ambush (Hard — 6×L5 with Gunnar; Medium without)**
+
+| Creature | CR | XP | Count | Subtotal |
+|---|---|---|---|---|
+| Gunnar (Champion) | 2 | 450 | 1 | 450 |
+| Javelin Throwers (Tribal Warriors) | 1/4 | 50 | 6 | 300 |
+| Pushers (Tribal Warriors) | 1/4 | 50 | 4 | 200 |
+| Hidden Scouts | 1/4 | 50 | 2 | 100 |
+| Skadi the Healer | 1/4 | 50 | 1 | 50 |
+| **Raw** | | | 14 | **1,100** |
+| **×3.0 (11-14 creatures)** | | | | **3,300** |
+
+With Skadi healing wounded warriors and Edda arriving in round 3, adjusted total climbs into Hard range.
+
+**Gunnar, Cherusci Champion:** AC 13, HP 52. Framea 1d6+3 piercing + DC 12 STR or shoved 10 ft into brush. Multiattack at round 3 (two framea strikes). War Cry recharge 5-6 (30-ft cone DC 13 WIS or frightened until end of next turn). Hangs back until round 3. If Gunnar falls, remaining warriors make DC 10 WIS save or disengage.
+
+**Javelin throwers (6):** Open from hiding, range 30 ft. Switch to melee round 2 when party closes.
+
+**Pushers (4):** Rush from both flanks in round 2, Shove action. Two from east, two from west — same round, party cannot react to both. Shoved targets land in difficult terrain (dense brush, half movement to escape).
+
+**Scouts (2):** Hidden throughout (Stealth +6), attack with advantage from concealment, never reveal themselves unless Gunnar falls.
+
+**Skadi the Healer:** Stays 40 ft back, uses Healing Word (1d4+2) on the nearest downed or bloodied warrior each round. Priority target to eliminate — any warrior she heals is effectively a second threat.
+
+**Edda the Spear-Mother:** Arrives round 3 from the north path. Framea + shortsword. Uses Threatening Presence (free action: a visible character makes DC 11 WIS save or loses their reaction this turn).
+
+**Tactical sequence:**
+- **Round 1:** Javelin volley. No warning beyond prior Perception check (DC 12). The party is reacting.
+- **Round 2:** Pushers rush both flanks. Javelins continue.
+- **Round 3:** Gunnar issues War Cry. Edda arrives.
+- **Round 4+:** If party holds, Gunnar signals retreat to range. Pursuing into forest gives Scouts attack advantage.
+
+**Terrain:** 20-ft radius difficult terrain (dense undergrowth). Heavy armor + failed DC 11 Athletics while moving = prone.
+
+**Diplomatic end:** Drop weapons, use Persuasion DC 14 with Germanic phrase, or demonstrate intent to destroy the spear (scouts recognize it and stop).
+
+---
+
+**After the Ambush: Thusnelda**
+
+A small, ancient-looking Germanic woman. Oak staff carved with spiraling runes. She smells of pine smoke and something metallic. She looks at the spear, then at the party, with the calm gaze of someone who has spent decades looking at hard things.
+
+**Hilde**, her apprentice — young Cherusci woman, first encounter with the spear's corruption. She shadows the party, asking quiet questions in Germanic to Thusnelda about the influenced NPC by name. A character with Germanic language proficiency who is paying attention gets Clue 2 for the influenced NPC free.
+
+**Aldric**, lingering at the edge as "one of the village." He is reporting to Senator Brutus. Investigation DC 14 (active: how he positions himself to see without being seen) identifies him as something other than a curious local. He leaves before the party departs for the grove — his information stops at the treeline.
 
 > *"God-Killer. Still breathing. I had hoped you would destroy it by now. I see you have not."*
 
-She knows:
-- Where the grove is (one full day's travel, through the river, past her teacher's abandoned village)
-- That the grove demands a willing sacrifice — not a death, but a loss of something real
-- That the ritual will alert Mars. He will come. That cannot be avoided.
-- That her teacher attempted this same rite two generations ago, and failed. She has always believed the sacrifice was wrong. She has never had reason to doubt that — until now, standing this close to the spear herself.
+> *"Your friend there"* — she looks at the influenced NPC — *"has a thread in them. Cut it soon. The forest is not kind to loose threads."*
 
-She will guide them. She asks nothing in return — this is her purpose.
+> *"Fear the grove's demand. Most people who come here choose something that hurts a little. That is not enough. The grove will know."*
 
-**Thusnelda speaks like a woman with no time for anything except the truth -- or what she has always believed was the truth:**
+When asked how she knows about the spear: *"My teacher's teacher sealed it. I have been waiting for it to surface since I was eleven years old. I am seventy-three. You are late."*
 
-> *"The spear belongs to no one. Not the god who made it, not the tribe that used it, not the empire that found it. It belongs to the wound it keeps open. You must close the wound."*
-
-> *"Your friend there" -- she looks at the influenced NPC -- "has a thread in them. Cut it soon. The forest is not kind to loose threads."*
-
-> *"Fear the grove's demand. Most people who come here for the ritual choose something that hurts a little. That is not enough. The grove will know."*
-
-**Additional sample dialogue for Thusnelda across the journey:**
-
-When a character asks her how she knows about the spear: *"My teacher's teacher sealed it. I have been waiting for it to surface since I was eleven years old. I am seventy-three. You are late."*
-
-When someone suggests there might be another way to destroy it: *"There is not, so far as I have ever been taught. The grove is where what was made in divine anger is unmade. I have believed this for sixty years." A pause, small enough most won't catch it. "I have also never actually seen it finished. Only started. And failed."*
-
-When asked what happens to her after the ritual: *"I go back to the grove. I tend it. I wait to see what god pays attention next." A beat. "That has always been the plan. I do not know anymore if it was ever a good one."*
-
-When pressed on whether the ritual always works: *"No. My teacher tried. I watched her fail. I have spent sixty years certain the fault was the sacrifice -- that whoever stood at that altar gave something too small. I was eleven years old. I did not question her explanation, because she was the only explanation I had."*
+When pressed on whether the ritual always works: *"No. My teacher tried. I watched her fail. I have spent sixty years certain the fault was the sacrifice — that whoever stood at that altar gave something too small. I was eleven years old. I did not question her explanation, because she was the only explanation I had."*
 
 When someone tries to thank her: *"Do not thank me yet. We have not finished anything."*
 
@@ -417,66 +465,91 @@ When someone tries to thank her: *"Do not thank me yet. We have not finished any
 |---|---|
 | Exactly what the ritual requires | What the "right" sacrifice is for any specific character |
 | That the grove rejects insufficient sacrifices | Whether a sacrifice is "good enough" before it is offered |
-| That someone in the party is influenced | Who it is -- she knows, but sees this as the party's work to discover |
+| That someone in the party is influenced | Who it is — she knows, but sees this as the party's work to discover |
 | What the stakes of failure are | Whether she believes the party will succeed |
-| That she has never seen the ritual completed | That she has started to doubt it can be, here -- she hasn't fully admitted this to herself yet |
+| That she has never seen the ritual completed | That she has started to doubt it can be, here |
+
+**Give Handout 6 (Thusnelda's Map) now** if Persuasion DC 14 succeeded.
+
+**Identify the influenced character — three clues:**
+
+**Clue 1 (Medicine DC 13, active: physical examination):** Elevated heart rate, dilated pupils inconsistent with light level, slight fever. Pre-combat readiness markers in a calm person. The body knows before the mind does.
+
+**Clue 2 (Insight DC 14, active: watching during spear discussion):** Advocates for keeping the spear without articulation. Visibly agitated when someone else moves it. Micro-pause before answering "Are you alright?" Hilde also provides this free if overheard in Germanic.
+
+**Clue 3 (Arcana DC 13 or Religion DC 14, passive):** The spear "leans" physically toward the influenced NPC. Cassia, if present: *"There's a thread between that person and the spear. I missed it. I'm sorry, I missed it."*
 
 </details>
 
 
 <details>
-<summary><strong>Scene 3: The Bridge Crossing</strong></summary>
+<summary><strong>Scene 4: The Rune Stone Fork</strong> (20-30 minutes)</summary>
 
-::: {.dm-note}
-**Who is actually driving this scene, and why it should not be a big fight.** Corvinus is not trying to stop the party. Per his secret (see chapter03_npcs.html): he wants the spear destroyed and cannot say so. He also cannot be seen letting armed deserters walk off with contraband -- Brutus has eyes in the fort, and a Legate who visibly lets this go is a Legate who has handed Brutus leverage. So he sends a pursuit that *has* to exist, and quietly makes sure it does not have to succeed: a small escort, vague orders ("prevent the crossing," not "kill them"), and no personal presence. He is not the antagonist of this scene. He is a man threading a needle, and the party's job is to notice that, not to win a battle.
+Half a day past Thusnelda's camp, the forest road climbs to high ground. A granite megalith stands at the top where the path forks — knee-high, older than Rome, carved with three symbols on its three faces.
 
-Play this as a small, tense reading of the situation, not a set-piece battle. The "combat," if it happens at all, should resolve in one or two rounds against a handful of unmotivated men -- not a war.
-:::
+> *The path forks around a standing stone. Three faces, three carvings: an elk, a hand, a sleeping figure.*
+>
+> *Thusnelda stops. She studies all three without touching the stone.*
+>
+> *"This is a choice marker. The carvings tell a story. Someone who knows the story knows which path leads to the village without cutting through the breeding territory." She looks at the party. "I am curious whether any of you can read it."*
 
-The abandoned village and its ritual site are on the far side of the Vitulans river — currently swollen with spring melt. An old timber bridge spans it at the narrowest point, built by whoever lived in this stretch of forest before Thusnelda's people did and maintained, badly, ever since. The crossing is hard under normal circumstances. It's harder with someone behind you, even if that someone doesn't want to catch you.
+---
 
-**Before the pursuers arrive, this is a good place to let the table breathe.** The bridge is narrow enough that the party crosses in a loose line, not a clump -- good ground for the kind of conversation that doesn't happen when everyone's shoulder to shoulder. Thusnelda, if asked here rather than at camp, answers more personal questions than she has all journey; the influenced NPC's player has room for a quiet, unwatched moment; Hilde asks someone directly what Rome is actually like, since she's never left the forest. Let this run a few unhurried minutes before the escort catches up.
+**The Rune Stone Puzzle**
 
-**The bridge:** roughly 90 feet across, planks worn smooth and missing in two places (DC 11 Dexterity (Acrobatics), active: crossing the gaps without falling). The river beneath is fast-moving (DC 13 Strength (Athletics), active: swimming, if someone goes in). Rope can be strung along the rail for anyone struggling (DC 10 Strength (Athletics), active: group action).
+Three faces, three paths. The story reads left-to-right:
+- **Elk face (left path):** Territory, mating season, do not pass
+- **Hand face (center path):** Open hand — offering, welcome, safe passage
+- **Sleeping figure (right path):** Death-sleep, burial territory, danger
 
-**The pursuers arrive:**
+**Correct path: center.** The hand means welcome passage.
 
-If the Legate is pursuing, a small escort catches up exactly when the party is mid-crossing -- not the full weight of the cohort:
-- 3 **Legionaries** (use Guard stat blocks)
-- 1 **Centurion** (use Knight stat block, CR 3)
-- Corvinus himself is never here. He is "one day behind" for the entire session, and stays that way.
+**How to solve:**
+- **Religion DC 12 (passive: Germanic liminal marker conventions):** The hand symbol on boundary stones universally means welcome passage.
+- **Investigation DC 13 (active: examining all three symbols and their orientation):** The elk and sleeping-figure carvings face *inward* toward their paths — a warning. The hand faces *outward*, welcoming.
+- **Nature DC 14 (active: reading the path surfaces):** Center has fresh foot traffic. Left has large hoof-prints and disturbed bark at shoulder height — an elk's mark. Right has no living sounds at all.
+- **Ask Thusnelda:** She confirms the correct answer only if the party identifies the symbol type first. *"You need to learn to read this forest. I will not always be here."*
 
-**Three tells, for a party paying attention (no roll required to notice all three; DC 11 Wisdom (Insight), passive, to understand what they add up to):**
-- The escort is small for a Legate's "advance force" -- four men, not a column.
-- They made no effort to approach quietly. The party heard them coming from well up the trail.
-- The Centurion's shouted order is "Halt and surrender the item," not "Kill them if they resist" -- a demand for compliance, not a kill order.
+**Wrong path consequences:**
+- **Left (elk territory):** An Elk charges (one character makes DC 12 Athletics or takes 2d6+4 bludgeoning + knocked prone). Noise alerts predators — surprise option removed from the encounter below.
+- **Right (burial territory):** A Haugbui stirs. Thusnelda pacifies it (one minute ritual), but uses one grove-preparation action — Scene 8 Skill Challenge DC increases by 2.
 
-**The scene:**
-- Half the party is on the far bank, half still crossing or on the near bank when the escort arrives
-- If it comes to blows: ranged exchange across the water (half cover for anyone behind the rail), melee on the bridge itself (anyone knocked off: DC 13 Strength (Athletics) to avoid being swept 20 feet downstream). This should be short -- four unmotivated men break off fast once the Centurion is given a reason to.
-- The river is impassable to heavy armor (DC 14 Strength save for anyone in metal armor who falls in)
+**Small riddle etched on the base of the center-path stone (visible after solving):** *"I am the beginning of the end, the end of every place, and the start of eternity. What am I?"*
+Answer: The letter E. Minor reward for this one — it's a lateral thinking riddle, not a lore check.
 
-**Ways this resolves without a fight (any one of these ends it):**
-- DC 14 Charisma (Intimidation) (active: a centurion-rank character ordering the legionaries to stand down across the water before combat begins): the centurion opposite hesitates -- long enough for the party to cross and hold the bridge. He will not cross without new orders. He does not want this fight either.
-- DC 12 Charisma (Persuasion) (active: appealing directly to what the escort's orders actually are, not what they imply): pointing out that "prevent the crossing" was never "kill you for it" gives the Centurion the out he's quietly hoping for. He calls it a "tactical withdrawal" to save face.
-- If a character with real Roman political standing is present (the Aasimar Cleric's family name, or any character who has built visible standing with Corvinus) and states it plainly: the Centurion recognizes the name or the authority behind it and treats this as a matter above his pay grade -- he reports the crossing as "unavoidable" rather than a failure, and lets them go.
-- Deception DC 15 (active: claiming the mission is sanctioned and the pursuit is unauthorized): requires something tangible -- a document, a seal, or a name the centurion would recognize. Without it, DC 18.
+---
 
-**If the party fights anyway:** it's over in a round or two -- these four men are here to be seen trying, not to die for it. After the first legionary drops or the Centurion takes a solid hit, he calls it: *"Enough. Let them go. I did not sign on to die for a Senator's argument with the gods."* This is not a retreat under pressure so much as a man who was looking for permission to stop.
+**Encounter: Territorial Pack (Hard — 6×L5)**
+
+A Brown Bear and her wolves have claimed this ridge as a den site. The encounter triggers at the center-path opening whether or not the rune stone was read correctly. Reading the stone correctly gives the party a surprise round (Thusnelda guides them downwind).
+
+| Creature | CR | XP | Count | Subtotal |
+|---|---|---|---|---|
+| Brown Bear | 1 | 200 | 1 | 200 |
+| Dire Wolf | 1 | 200 | 3 | 600 |
+| Wolf | 1/4 | 50 | 6 | 300 |
+| **Raw** | | | 10 | **1,100** |
+| **×2.5 (7-10 creatures)** | | | | **2,750** |
+
+*Base XP is Medium for 6×L5, but the Bear's grapple-priority mechanics remove a PC from combat for multiple rounds, and player buffs from sessions 1-2 make this Hard in practice.*
+
+**Brown Bear tactics:** Priority target = whoever moved closest to the den first (its territorial logic, not the party's). Claws (2d6+4, DC 13 STR or grappled). Once a target is grappled, Bite vs. Grappled each round (advantage, 2d6+4). Does not pursue beyond 60 ft from the den.
+
+**Dire Wolf tactics:** Alpha targets the heaviest-armored PC. Knocks prone then moves away so the pack gets Pack Tactics advantage.
+
+**Wolf tactics:** Two charge noisily; two close silently from flanks in round 2 (Stealth +4). Perception DC 13 on a player's turn to call out flanking.
+
+**Ending without total defeat:** Bear at half HP (17) + Alpha Dire Wolf dead = she retreats into the cave with her cubs. Remaining wolves break. Thusnelda, if uninjured: *"She is defending her young. Let her go."*
 
 </details>
 
 
 <details>
-<summary><strong>Scene 3b: The Farbog</strong></summary>
+<summary><strong>Scene 5: The Farbog</strong> (35-45 minutes)</summary>
 
-*(Army of the Damned Part 4 — Into the Farbog, adapted)*
+The sacred grove sits on a rise of dry land past the river. The only path leads through a bog. Thusnelda has been quiet since the crossing.
 
-The sacred grove sits on a rise of dry land half a mile past the river. The only path leads through a bog. There is no other route. Thusnelda has been quiet since the crossing.
-
-**Map:** Load `Swamp2` or `SwampPath` the moment the ground turns soft. Switch to `SwampBridges` when the party reaches the plank crossing near the sacrifice site. Switch to `SacredGrove` when the standing stones come into view at the bog's far edge.
-
-**Read aloud:**
+**Map:** Load `Swamp2` or `SwampPath` the moment ground turns soft. Switch to `SwampBridges` at the plank crossing. Switch to `NatureGoddessTemple` when the standing stones come into view.
 
 > *The ground changes under your feet before you see it. The grass shortens, then disappears. Water appears between the roots. The trees grow thin and angular, their trunks bone-pale, dead branches reaching sideways rather than up.*
 >
@@ -488,128 +561,190 @@ The sacred grove sits on a rise of dry land half a mile past the river. The only
 >
 > *Far ahead, deeper in, a light pulses once. Blue-white. Then dark.*
 
-<details>
-<summary><strong>Running the Farbog</strong></summary>
+---
 
-Run one, two, or all three of the encounters below, depending on pacing. Each takes 10-15 minutes. The Myling is the emotional anchor. The Sacrifice Site is the investigation hook. The Hostile Vættir only triggers if the party earns it.
+**Encounter A: The Myling — She Does Not Know**
 
-**The trigger tracker:** Keep a mental count of disrespectful acts in the bog (disturbing offerings, attacking the Myling, taking items from the sacrifice site without acknowledgment, ignoring the boundary stone). One: absorbed. Two or more: run the Hostile Vættir encounter.
+Do not reveal the horror immediately. Play it as a strange comfort, then let the truth arrive.
 
-</details>
+> *Just past the tree-line, where the grass gives out and the dark water begins, a small figure sits on a moss-covered log. A child. She is talking.*
+>
+> *You look at the space beside her. There is no one there. Only a pale shimmer in the fog — the kind your eyes find and lose before you can name it.*
+>
+> *She looks up and sees you. Her face opens with relief.*
+>
+> *"Oh! More travelers! My friends said others might be coming."*
 
-<details>
-<summary><strong>Encounter A: The Myling</strong></summary>
+The girl appears no more than eight or nine. Her edges catch the light wrong — translucent where shadow should be solid. She does not notice. She gestures toward her "friends." Perception DC 14 reveals them: three Vættir hovering six feet off the ground behind her, their hollow sockets fixed on the party. They are not threatening. They drift in response to her gestures. When she looks toward one of them, it tilts its head — as if it heard its name.
 
-::: {.dm-note}
-The Myling is the spirit of an unbaptized or abandoned child, from Germanic/Norse tradition -- doomed to wander until someone carries its remains to consecrated ground. It is not evil. It is unfinished.
+She does not see what the party sees. She sees companions.
 
-**If combat is forced:** Use the Specter stat block (CR 1), but it does not attack until the second round and only if the party moves away from it. It deals psychic damage. It wails.
-:::
+**Let her talk. Do not rush this.**
 
-A small figure -- child-shaped, translucent, wrong -- stands on a hummock 30 feet off the path. It holds its hands out. It does not approach.
+She will say, if given space:
+- *"I got separated from my family on the south road. My friends found me when I was lost. They know the way through."*
+- *"We have been waiting here for a little while. The festival came and went. My friends said there would be more travelers after."* (The festival was three months past. She does not know time has moved.)
+- *"Will you walk with us to the grove? They know the safe path."*
 
-**The party's options:**
+**What the players can discover — let them find it, do not announce it:**
 
-- **Ignore it:** It follows, always 20 feet back, never closer. After 10 minutes it begins to weep. DC 13 Wisdom save for anyone who can hear it or gain the Frightened condition (source: the bog itself, not the spirit) for 1 hour. This counts as one disrespect.
-- **Acknowledge it (Religion DC 12, active):** Speak the rite of recognition: *"Unnamed one, we see you"* and drop any item of value into the water beside the hummock. The spirit brightens, nods, and stills. It does not follow. Thusnelda exhales quietly.
-- **Ask Thusnelda:** She knows the rite. She will recite it if no one else does, but it depletes her: one of her ritual preparation actions in Scene 4 takes an additional round.
-- **Attack it:** The spirit dissipates. Two more appear at the next hummock.
+| Check | DC | What they notice |
+|---|---|---|
+| Investigation (passive) | 11 | Her feet rest on the log. The moss does not compress. No weight. |
+| Perception | 13 | No breath-fog. No heartbeat at the throat. The cold does not bother her. |
+| Religion | 12 | The Vættir are orienting to her, not to the party. They are not protecting the bog. They are accompanying her. |
+| History or Medicine | 14 | She speaks of three-month-old events as if yesterday. No sense of duration. |
+| Thusnelda (automatic, no roll) | — | She goes still. Then, barely above a breath, in Germanic: *"She does not know."* |
 
-**If the party performs the rite correctly and Cassia is present:**
-
-> *Cassia watches the spirit brighten and still. Then quietly: "The Romans burn our dead. The Germans bury theirs with grave goods. We both know the same thing, don't we? That the dead need witness." She does not say this to anyone in particular.*
-
-Let it breathe. This is a character moment, not a mechanics moment.
-
-</details>
-
-<details>
-<summary><strong>Encounter B: The Bog Sacrifice Site</strong></summary>
-
-Twenty meters off the path: an offering pole, three meters tall, carved with running knotwork. At its base, offerings wrapped in birch bark. Suspended from the top, partially submerged in the dark water: a preserved human figure, visible only as a shape beneath the surface.
-
-**Investigation DC 13 (active: examining the pole and offerings closely):** This site has been maintained recently. New bark wrappings are visible. The offerings include grain from this season's harvest, bronze pins, and a military sandal buckle -- Roman-made.
+**The truth (share when Religion 12+ is rolled, or when Thusnelda is asked directly):**
 
 ::: {.dm-note}
-The military sandal buckle is from one of the four soldiers lost in Session 1. The Cult of Mars has been leaving offerings at Germanic holy sites -- not to the Vættir, but to Mars, in the Germanic style, appropriating local sacred ground to extend his territorial claim. This is investigable but not volunteered. Religion DC 15 (active: spending one minute in contact with the pole and reading its spiritual resonance): two religious traditions are active here. One old, rooted, comfortable. One new, hot, angry. They are not in harmony.
+The girl died alone on the south road before the first frost — unnamed in any rite, unburied, unwitnessed. By Roman understanding, her shade never crossed the river. By Germanic, her name was never spoken at a grave. By either doctrine, she is unfinished.
+
+She cannot distinguish the living from the dead. She has been wandering with the Vættir for three months because they were the only ones who stopped for her. She has been talking to them, traveling with them, waiting with them. They have been responding — not because they remember warmth, but because she has been treating them as if they are still people. It may be the most human thing anyone has done to them in a long time.
+
+She is not in pain. She does not know she should be.
+
+The light ahead that the party sees as horror, she sees as her friends' faces.
 :::
 
-**Arnulf**, a solitary Cherusci firekeeper who lives at the bog's margin, is here tending the pole when the party arrives -- or arrives shortly after, drawn by their presence. He has been leaving fresh offerings at this site for two months, ever since he found the Roman buckle, specifically to keep the Vættir from noticing the intrusion. He did not tell Thusnelda or anyone else in the village; this has been his private vigil. He will explain this plainly if asked, without shame -- *"The bog does not forgive. It only waits. I was not going to let it wake for a stranger's mistake."*
+> *One of the Vættir drifts closer to her. Not toward the party — toward her. She does not react. She is used to this.*
+>
+> *Thusnelda does not move for a long moment. Then, quietly: "She has been keeping them company. And they have been keeping hers."*
 
-**Thusnelda's reaction if the party investigates:** *"Someone has been using our holy sites. For something else. I did not know." A long pause -- she looks at Arnulf, who says nothing. "Mars has been here. Not recently. But he has been here."*
+**Resolution:**
 
-**Cassia's herb quest completes here:** Bog valerian -- pale purple blooms, grows only in permanent bogwater -- is visible along the far bank of the water channel beside the pole. This is what she has been watching for since they crossed into the forest.
+**Release her:** Someone says, sincerely: *"Unnamed one. We see you. You are not forgotten. You may go."*
 
-- Nature DC 13 (active: identifying the plant): A character with Nature proficiency spots it first and can point it out.
-- Gathering it requires leaving the path. The channel is knee-deep and the far bank is soft ground. Perception DC 11 (passive): the soft ground is visible before stepping. Without noticing it: DC 11 Dexterity save or sink to waist-depth and need help out.
-- **Mechanical payoff in Session 4:** Cassia prepares a ward compound during one overnight rest after the ritual. In Session 4, this becomes one Siege Ward -- a prepared healing station in the fort that restores 2d8 HP and removes one level of exhaustion per use (three uses before supplies are spent). Note this in your Session 4 handoff.
+Religion DC 12 to perform the words with the right weight. Thusnelda can guide (no check needed if she assists). Cassia can attempt via Arcana DC 14 — she frames it as she would a fever: naming the thing removes its hold. She gets it right.
 
-</details>
+> *The girl looks at the Vættir for a long moment. Something in her face shifts — not grief. Recognition.*
+>
+> *Then she looks back at the party.*
+>
+> *"Oh," she says. Just that word. Quietly, the way you say something when a letter finally makes sense.*
+>
+> *She steps off the log. Her feet touch the water and she is gone. No splash. No ripple. The water does not disturb.*
+>
+> *The three Vættir drift backward, one by one, into the fog. They do not look at the party.*
+>
+> *They follow her.*
 
-<details>
-<summary><strong>Encounter C: Hostile Vættir</strong> (conditional)</summary>
+**Mechanical effect:** The Vættir are gone from this bog for this crossing. Encounter C cannot trigger today. The disrespect tracker resets — the bog recognizes what was given.
+
+*If Cassia is present after the rite:*
+
+> *Cassia is quiet for several seconds. Then: "We have been arguing about method for four hundred years. We were asking the wrong question."*
+
+---
+
+**Walk past her:** She stands and follows 20 feet behind for the entire crossing. When the party reaches dry ground she stops at the water's edge — the threshold she cannot cross. The three Vættir collect around her. She watches until they are out of sight.
+
+No attack. No save. Only the image of a child standing at the waterline with three hollow shapes around her, watching until you are gone.
+
+Disrespect: 1 trigger.
+
+**Attack:** She dissipates. The three Vættir turn. Encounter C triggers immediately, here at the threshold, before the party has navigated the path. Disrespect: 2 triggers. Encounter C uses the +1 Vættir variant.
+
+---
+
+**The Reverse-Path Puzzle** (deeper in the bog, past the Myling's log)
+
+The bog has no marked trail. The safe path uses a system of **willow markers** (bent branches) that read correctly only if followed in reverse order — starting from the far bank and reading back. Someone who studied the pattern from the last safe landmark can trace the path correctly.
+
+| Approach | DC | Result |
+|---|---|---|
+| Survival DC 12, active (reading bent-branch markers) | Standard | Navigate safely in 30 minutes |
+| Investigation DC 10 after Survival DC 12 (realizing the markers reverse) | Easy | Navigate in 20 minutes, no further checks |
+| Fail by 4 or less | — | Wander 10 minutes, end adjacent to Will-o'-Wisp lair |
+| Fail by 5+ | — | Step off load-bearing ground; DC 11 DEX save or sink waist-deep (restrained, action to escape) |
+
+**Thusnelda on the reverse-read:** Only volunteers it if the party has treated the forest respectfully (no shrine disturbances). If asked directly: *"You are reading it forward. Start from where you want to be."*
+
+**Bog riddle, scratched on a willow stake:** *"I have no eyes, but once I weep, I have no sorrow. I have no mouth, but when the ground is cold I speak. What am I?"*
+Answer: Ice (or frost, or a frozen bog). Minor reward. Cassia recognizes the second meaning — Mars's tears when his warrior fell here, now frozen in the bog's memory.
+
+**Bog disrespect trigger tracker:** Count disrespect acts (walking past the Myling, attacking her, disturbing offerings, taking items without acknowledgment, ignoring the boundary stone). Two or more triggers Encounter C. Release rite resets to zero.
+
+---
+
+**Encounter B: The Bog Sacrifice Site (Investigation, no combat)**
+
+Twenty meters off the path: an offering pole, three meters tall, carved with knotwork. At its base, offerings in birch bark. Suspended from the top, partially submerged: a preserved human figure.
+
+**Investigation DC 13 (active: examining the pole and offerings):** Maintained recently. New bark wrappings. Offerings include grain from this season's harvest, bronze pins, and a military sandal buckle — Roman-made.
 
 ::: {.dm-note}
-**Run this only if the party accumulated two or more disrespect triggers:** damaged a shrine, attacked the Myling, took items from the sacrifice site without acknowledgment, or ignored the boundary stone.
-
-Vættir are not mindless undead. They are the accumulated will of the bog's dead -- protective, territorial, patient. They do not pursue outside the bog. They do not negotiate. They make the passage cost something.
+The buckle is from one of the soldiers lost in Session 1. The Cult of Mars has been leaving offerings at Germanic holy sites — appropriating local sacred ground. Religion DC 15 (active: spiritual resonance): two traditions are active here. One old, rooted, comfortable. One new, hot, angry. They are not in harmony.
 :::
 
-The path ahead narrows between two water channels. The blue-white lights in the distance multiply -- five, seven, more -- and begin moving toward the path. Not fast. Purposefully.
+**Arnulf**, the bog's solitary firekeeper, arrives shortly after the party. He has been leaving fresh offerings here for two months since he found the Roman buckle. He did not tell Thusnelda. *"The bog does not forgive. It only waits. I was not going to let it wake for a stranger's mistake."*
 
-**Use Will-o'-Wisp stat blocks (CR 2) with these modifications:**
-- They do not flee when damaged
-- They cannot be turned by divine class abilities (they are spirits of place, not undead in the theological sense)
-- Their damage type is cold, not lightning -- the flavor is "the cold that was in the water before it froze"
-- They are dispersed (not destroyed) by Group Acknowledgment: every party member simultaneously drops one item of value into the water channels to either side of the path. One action per character, DC 10 Religion as a group to coordinate before the Vættir reach the path.
+**Thusnelda's reaction:** *"Someone has been using our holy sites. For something else. I did not know." A pause. "Mars has been here. Not recently. But he has been here."*
+
+**Cassia's herb quest:** Bog valerian — pale purple blooms, only in permanent bogwater — is visible along the far bank. Gathering requires leaving the path (DC 11 DEX save without spotting the soft ground). **Mechanical payoff in Session 4:** Siege Ward (healing station, 2d8 HP + removes 1 exhaustion, three uses).
+
+**Small riddle on the offering pole, carved in Latin beneath the Germanic knotwork:** *"I was placed here by someone who worships a different god. Why would he leave an offering at your shrine?"*
+This one has no mechanical answer — it's a character moment. The player who engages with it in roleplay (asks Arnulf directly, investigates the cultural logic, or makes a declaration about what they believe) earns the minor reward. Any answer that shows the player thought about it.
+
+---
+
+**Encounter C: Hostile Vættir (conditional — 2+ disrespect triggers)**
+
+::: {.dm-note}
+Vættir are not mindless undead. They are the accumulated will of the bog's dead — protective, territorial, patient. They do not pursue outside the bog. They do not negotiate.
+:::
+
+The blue-white lights multiply and begin moving toward the path. Not fast. Purposefully.
+
+**Creature roster:**
+
+| Creature | CR | XP | Count | Subtotal |
+|---|---|---|---|---|
+| Will-o'-Wisp | 2 | 450 | 2 | 900 |
+| Vættir (Specter) | 1 | 200 | 3 | 600 |
+| **Raw** | | | 5 | **1,500** |
+| **×2.0** | | | | **3,000** |
+
+*Will-o'-Wisps at CR 2 with Consume Life (bonus action, DC 10 CON or die at 0 HP) are substantially more dangerous than CR suggests at L5. Effective difficulty: Hard.*
+
+**Will-o'-Wisp tactics:** Appears first as warm light 60 ft ahead (DC 14 WIS to sense wrongness). Leads party off causeway before revealing itself. Pattern: Extinguish (Vanish, bonus) → Shock (2d8 lightning) → Consume Life (bonus, DC 10 CON, heals 10 HP). Never stays visible between turns.
+
+**Vættir (Specter) tactics:** Phase through bog water, attack from different angles. Priority: Cassia. Do not pursue outside the bog.
+
+**Group Acknowledgment rite (ends the encounter):** Every party member simultaneously drops one item of value into the water channels to either side of the path. One action per character, DC 10 Religion as a group to coordinate.
 
 **Thusnelda if the party hesitates:** *"Into the water. Now. All of you. Into the water or we do not reach the grove."*
 
-If the acknowledgment succeeds: the lights halt. Pause five seconds. Then they drift back into the fog one by one. The path is clear.
+If acknowledgment fails: one additional Vættir joins each round. Thusnelda performs the rite alone if the party is incapacitated — she succeeds but arrives at the grove visibly exhausted.
 
-If the acknowledgment fails: each round, one additional Vættir joins. The party cannot outrun them through the bog. Thusnelda will perform the rite alone if the party is incapacitated -- she will succeed, but she arrives at the grove visibly exhausted and gives shorter answers for the rest of the session.
+---
 
-</details>
+**Optional: The Old Watching Post**
 
-<details>
-<summary><strong>Optional Location: The Old Watching Post</strong></summary>
+Fifty meters off the path, visible from high ground before the bog: four standing stones forming a roofless chamber. Floor has a fire pit with ash from within the last week.
 
-*(Adapted from Adventures in the Night — the mysterious interior location)*
-
-Fifty meters off the path, visible from the high ground before the bog: four standing stones forming a small roofless chamber. Older than any Roman fortification -- pre-Celtic, possibly Neolithic. The floor is packed earth with a faint circular depression at the center: an old fire pit. Ash from within the last week.
-
-Investigation DC 12 (active: examining the north stone): A fitted stone plug conceals a small compartment. Inside: a sealed clay flask (one dose of oil of slipperiness), a folded strip of leather with a crude hand-drawn map showing the river crossing and the grove location, and a wax tablet with a single sentence in Latin:
+**Investigation DC 12 (active: examining the north stone):** A stone plug conceals a compartment. Inside: a sealed clay flask (oil of slipperiness), a folded strip of leather with a crude map showing the river crossing and grove location, and a wax tablet:
 
 *IF YOU ARE READING THIS, YOU ARE LOOKING FOR THE SAME THING WE WERE. WE FAILED. DO NOT STOP.*
 
 No signature. The wax is old but legible.
 
 ::: {.dm-note}
-This was left by one of Vercingetorix's grandfather's warband -- the party that attempted the ritual fifty years ago, Thusnelda's failed first attempt. The map means they found the grove. The flask and tablet together tell the current party that the path is known, others have tried, and the cost was real.
-
-If Thusnelda is present and the party shows her the tablet: *"They got further than I thought. I did not know they reached the ruins."* She does not elaborate. Her expression does.
+This was left by the party that attempted the ritual fifty years ago. The map means they found the grove. If Thusnelda sees the tablet: *"They got further than I thought. I did not know they reached the ruins."* She does not elaborate. Her expression does.
 :::
-
-</details>
 
 </details>
 
 
 <details>
-<summary><strong>Scene 4: The Abandoned Village and the Ritual Site</strong></summary>
+<summary><strong>Scene 6: The Village</strong> (45-60 minutes)</summary>
 
 A day past the river, the forest thins into a stockade wall gone soft with rot.
 
 ::: {.dm-note}
-**What this scene actually is.** This is the party's "we understand what we're actually
-facing now" scene -- the moment the journey stops being about reaching the grove and
-starts being about learning that the grove was never going to be enough. Everything below
-still plays out in full: the village, the ritual, the skill challenge, Mars's arrival. None
-of it is wasted. It just doesn't end the way anyone at the table, including Thusnelda,
-expects.
+This is the party's "we understand what we're actually facing now" scene. The village, the ritual, the skill challenge, Mars's arrival — none of it is wasted. It just doesn't end the way anyone at the table, including Thusnelda, expects.
 :::
-
-**Read aloud, on approach:**
 
 > *The trees thin out ahead of a stockade wall gone soft with rot. No smoke. No dogs. A gate hangs open on one hinge, and past it, roofs have folded in on themselves under years of snow.*
 >
@@ -617,61 +752,140 @@ expects.
 >
 > *"This was my teacher's village," she says. "Before her teacher's teacher. Before the seal." She does not go on. She does not need to.*
 
-**The village itself.** Twelve-odd longhouses, all collapsed or burned, decades of weather over both. No bodies -- whatever happened here, the dead were dealt with properly, not left to rot. This is a place that ended in ceremony, not slaughter.
+Twelve-odd longhouses, all collapsed or burned, decades of weather. No bodies — whatever happened here, the dead were dealt with properly. A place that ended in ceremony, not slaughter.
 
-**Three ways to learn what happened here (three-clue rule):**
+---
 
-1. **The central longhouse (obvious, no check).** Larger than the rest, its roof caved but its walls still standing. Inside: a stone table, and on it, tools -- a broken iron chisel, a shattered clay mold in the shape of a spearhead, corroded bronze pins. Someone here tried to make something to match the spear, or copy it, or unmake it. They didn't finish.
+**Three Clues: What Happened Here**
 
-2. **The ritual circle behind the village (Investigation DC 13, active -- searching past the treeline).** Seven standing stones, twice a person's height, carved with spiraling runes that don't hold still when looked at directly. At the circle's center, the ground is fused to glass in a rough spiral, scorched black at the edges. This is the grove Thusnelda has been leading the party to. It has been used before, and it did not go well the last time.
+1. **The central longhouse (no check):** Larger than the rest, roof caved but walls standing. Inside: a stone table with tools — a broken iron chisel, a shattered clay mold in the shape of a spearhead, corroded bronze pins. Someone here tried to copy or unmake the spear. They didn't finish.
 
-3. **The elder's grave-marker (History DC 15, or ask Thusnelda directly -- she will answer if asked plainly, not volunteer it).** A single standing stone apart from the others, carved with a name in a script older than the runic contract tokens from the Session 1 vault. Thusnelda: *"She was the first of us. She thought the binding could be finished here, with fire and iron, blood and stone. She was certain. I have spent sixty years believing she was simply unlucky."* Hand over **Handout 19: The Elder's Rubbing** here -- a charcoal rubbing taken directly from the stone, worn and incomplete.
+2. **The ritual circle behind the village (Investigation DC 13, active):** Seven standing stones, twice a person's height, spiraling runes that don't hold still when looked at directly. At the circle's center, ground fused to glass in a rough spiral, scorched black at the edges. The ritual was attempted here — and it went wrong.
 
-<details>
-<summary><strong>Two Paths from the Village</strong></summary>
+3. **The elder's grave-marker (History DC 15, or ask Thusnelda directly):** A single standing stone apart from the others. Thusnelda: *"She was the first of us. She thought the binding could be finished here, with fire and iron, blood and stone. She was certain. I have spent sixty years believing she was simply unlucky."* Give **Handout 19: The Elder's Rubbing** here.
 
-Past the stockade, the treeline splits around a shoulder of high ground. Thusnelda points out both without being asked:
+---
 
-> *"North, the old grove -- alive, still tended, once. South, the stones where my teacher's teacher tried and failed." A pause. "The stones are why we came. The grove is not required. But it is there, if any of you want to see something in this forest that isn't a wound."*
+**The Forge-Room Artifact Puzzle: Finding Helvi's Name**
 
-**North -- the Living Grove (optional).** A genuinely peaceful detour: green, quiet, tended in a way the ritual circle is not. Good ground for a character moment or a fight that isn't about the spear at all. See below.
+The central longhouse's back room is a sealed forge with a clay ward — a Germanic protective charm in the shape of a hand.
 
-**South -- the Ritual Stones (required).** The scorched circle from Clue 2. This is where the ritual happens, and where the path continues underground afterward -- see "The South Path," below.
+**Forcing the door (Strength DC 15):** Opens it, shatters the ward. All characters in the room take 1d4 psychic damage. A key artifact inside (a clay mold with inscription) is knocked off its shelf and cracks — the name on it is only readable with History DC 18 instead of DC 13.
+
+**Respecting the door (Religion DC 11, active: acknowledgment phrase in Germanic or Latin, or placing an offering at the ward):** The ward dissolves peacefully.
+
+**Inside the forge room (Investigation DC 13, active: systematic search):** On the underside of a clay spearhead mold, scratched in deliberate runic letters: the elder's full name — **HELVI VASTARDOTTIR**. This is the name Thusnelda has never spoken aloud. She does not know it is here.
+
+**Thusnelda's reaction when shown the name:** *"She never told me her family name. She told me only her deed-name." A long pause. "She is still here. She is still waiting."*
+
+**Why this matters:** The Wight in the longhouse IS elder Helvi. Speaking her name aloud during combat causes a one-round hesitation. The name is also required for the Dryad's third riddle in Scene 7.
+
+**Small riddle scratched under the clay mold (visible when the mold is lifted to examine the underside):** *"I am written. I am spoken. I am remembered. But I die if never used. What am I?"*
+Answer: A name. Minor reward — and the party just found the one name that matters most this session.
+
+---
+
+**Encounter: The Elder's Return (Hard — 6×L5)**
+
+> *The air inside is cold. Not forest-cold — a cold that has been here since a fire that went out a long time ago.*
+>
+> *Then, from the far end of the hall, a shape rises. It is wearing a shieldmaiden's grave-goods — iron rings braided into its hair, a framea leaned against the wall behind it. It moves like it remembers what movement felt like.*
+>
+> *It sees you. Then it sees the spear. And something behind its eyes recognizes both.*
+
+**Creature roster:**
+
+| Creature | CR | XP | Count | Subtotal |
+|---|---|---|---|---|
+| Wight (Helvi) | 3 | 700 | 1 | 700 |
+| Specter | 1 | 200 | 3 | 600 |
+| Haugbui | 3 | 700 | 1 | 700 |
+| **Raw** | | | 5 | **2,000** |
+| **×2.0** | | | | **4,000** |
+
+**Difficulty: Hard** (approaching Deadly; Wight's Life Drain + Create Spawn mechanic is lethal if the party is already depleted from Scenes 2-4).
+
+**Wight (Helvi) tactics:**
+- Longsword (1d8+2) + Life Drain (3d6 necrotic, DC 13 CON save; target reduced to 0 HP raises as zombie in 24 hours unless body is burned or blessed).
+- Create Spawn priority: lowest-HP downed PC. The party needs to stabilize fallen characters immediately.
+- **Name hesitation:** Any character who speaks "Helvi Vastardottir" aloud during combat causes the Wight to stop for one full round — does not attack, does not defend, stands still looking at the speaker. A DC 14 Religion check in that round performs the release rite. Success: the Wight collapses to dust, the Specters dissolve without a check. Thusnelda can assist, lowering DC to 10.
+
+**Specter tactics:** Life Drain (3d6 necrotic, DC 10 CON or HP max reduced until long rest — stacks). Phases through longhouse walls, attacks from two directions. Priority: Cassia. Bound to the longhouse structure — do not pursue outside.
+
+**Haugbui:** A second, smaller Haugbui drawn to the village's old wounds (not Helvi's own burial). Same stat block, 56 HP. Cannot pursue beyond 60 ft of the longhouse. Targets characters concentrating on spells.
+
+**Terrain:** Longhouse interior 20×60 ft. Specters phase through walls freely. Wight uses the forge-room doorway as a chokepoint if cornered. Any character within 5 ft of the spear: influenced NPC must make DC 11 WIS save or use their movement toward the spear rather than the nearest enemy.
+
+**After combat:** If the release rite succeeded, Thusnelda stands in the center of the longhouse for a long moment: *"She finally stopped. I did not think I would live to see it."* She does not cry. But she does not speak again for fifteen minutes.
+
+If the release rite failed (name not found): *"Whatever she was waiting for, she is still waiting. We did what we could."*
+
+---
+
+**Two Paths from the Village**
+
+Past the stockade, the treeline splits:
+
+> *"North, the old grove — alive, still tended, once. South, the stones where my teacher's teacher tried and failed." A pause. "The stones are why we came. The grove is not required. But it is there, if any of you want to see something in this forest that isn't a wound."*
+
+**North — the Great Tree (Scene 7, optional):** Three riddles unlock a blessing and Helvi's name. Go here if the party did not find the forge-room inscription.
+
+**South — the Ritual Stones (Scene 8, required):** The scorched circle. This is where the ritual happens and where the Skull Entrance waits.
 
 </details>
 
+
 <details>
-<summary><strong>North Path: The Living Grove</strong> (optional)</summary>
+<summary><strong>Scene 7: The Great Tree (North Path)</strong> (20-30 minutes)</summary>
 
-**Read aloud:**
+> *The trees here are older, and someone has kept the undergrowth clear for longer than living memory would explain. Sunlight actually reaches the ground. Birdsong — real birdsong — for the first time since the forest swallowed the road behind you. A ring of younger oaks, maybe eighty years old, grows in a rough circle around a spring-fed pool. The water is perfectly still.*
 
-> *The trees here are older, and someone has kept the undergrowth clear for longer than living memory would explain. Sunlight actually reaches the ground. Birdsong, real birdsong, for the first time since the forest swallowed the road behind you. A ring of younger oaks, maybe eighty years old, grows in a rough circle around a spring-fed pool. The water is perfectly still.*
+A **Dryad** lives here. She manifests from one of the younger oaks when the party enters the ring. She studies them before speaking — Thusnelda she recognizes and nods to.
 
-This grove belongs to no one in particular -- older than Thusnelda's order, tended out of habit and respect rather than doctrine. A **Dryad** lives here, and has for longer than anyone in the party's lifetime.
+> *"You carry something that doesn't belong to this forest. It has been making noise for three days. I felt it before I saw you."*
 
-**How she reacts:** Not hostile by default. She manifests from one of the younger oaks once the party is inside the ring, and studies them before speaking -- Thusnelda she recognizes and nods to; the rest are strangers.
+She is not hostile by default. She is curious.
 
-> *"You carry something that doesn't belong to this forest." Her eyes go to whoever is closest to the spear, or to the influenced NPC specifically if their condition shows at all. "It has been making noise for three days. I felt it before I saw you."*
+---
 
-**RP path.** She asks questions, not favors -- she is curious about Rome, about the spear's origin, about why the party is really here, in that order. A character who answers honestly (no check needed, just genuine roleplay) can ask one question back and get a straight answer. Good candidates for the table to ask her:
-- Whether she knows anything about the elder buried to the south (she does -- *"I told her not to. She did not listen. Grief rarely does."*)
-- Whether the grove can help the influenced character (she can't cure them, but she can name it aloud without flinching, which is its own small relief -- *"Whatever it is, it isn't all of you yet. Whoever wins that argument, win it before the stones."*)
-- Whether Mars can reach this place (*"Not yet. This is not his war. But wars borrow ground from wherever's closest, sooner or later."*)
+**The Three Riddles**
 
-**Combat path, if the party is disrespectful** (drinking from or fouling the pool without asking, cutting a living tree, drawing weapons on her without provocation): she does not warn twice. She fights to drive the party out, not to kill -- Entangle, then retreat into the canopy, using **1 Dryad** plus, if the party presses the fight, **1 Brown Bear** she calls to her aid. She stops the moment the party disengages or leaves the ring; this is a grove defending itself, not a grudge.
+Each correct answer earns one question answered honestly, plus a cumulative reward.
 
-**What the grove offers, if the party leaves it in better standing than they found it** (genuine respect, a real answer given to her honestly, or simply leaving without incident): one **Nature's Blessing** -- advantage on the next Wisdom (Survival) or Wisdom (Insight) check any one character makes before the party reaches the Skull Entrance. Small, real, not a combat boost. This is not required for anything downstream; it's a reward for engaging with content that has no plot obligation attached.
+**Riddle 1:** *"I have cities, but no houses live there. I have mountains, but no trees grow. I have water, but no fish swim. I have forests, but no animals dwell. What am I?"*
+
+**Answer:** A map. Accept any formulation — "a drawing of a place," "a representation of the land," etc.
+
+**Question 1 reward:** She answers one question honestly and grants Advantage on the next Wisdom (Survival) check. Good questions to ask:
+- Whether the elder buried to the south completed the ritual (*"No. She stopped herself. That is different from failing."*)
+- Whether the influenced character can be cured (*"Whatever it is, it isn't all of you yet. Whoever wins that argument, win it before the stones."*)
+- Whether Mars can reach this grove (*"Not yet. This is not his war. But wars borrow ground from wherever's closest, sooner or later."*)
+
+**Riddle 2:** *"I have no wings but I can fly. I have no mouth but I can speak. I have no body but I come alive where another's voice meets stone. I live exactly as long as what made me. What am I?"*
+
+**Answer:** An echo. Accept: "a rune that carries sound," "a memory that repeats," "what happens when a prayer hits a wall."
+
+**Question 2 reward:** She volunteers something specific without being asked: *"The woman buried in the south did not fail her ritual because she sacrificed too little. She failed because this was not where the thing was made. The place of making is underground. I told her that, once. She did not believe me. I was younger then and I said it unkindly."*
+
+This is the key piece of information Thusnelda needed sixty years ago — and it lands here, now, as a gift.
+
+**Riddle 3:** *"The elder who tried the ritual in the south knew a name she never spoke in life. The name is her own. It is cut into the stone she worked at. What is the name?"*
+
+**Answer:** Helvi Vastardottir (requires the party to have found the forge-room inscription in Scene 6). If they have not visited the village yet: *"I cannot give you that answer. It has to be found where it was left."* This is the only clue she gives.
+
+**Riddle 3 reward:** She gives **Nature's Blessing** — advantage on the next Wisdom (Survival) or Wisdom (Insight) check any one character makes before the Skull Entrance. And: *"Speaking that name at the south stones will stop what is still moving down there. I do not know if it will help. But it will stop it."*
+
+---
+
+**Combat path (disrespect only):** Fouling the pool or cutting a living tree — Dryad + 1 Brown Bear. She stops when the party disengages or leaves the ring.
 
 </details>
 
+
 <details>
-<summary><strong>South Path: The Ritual Stones</strong> (required)</summary>
+<summary><strong>Scene 8: The Sacrifice Circle and the Skull Entrance</strong> (35-45 minutes)</summary>
 
-**Optional beat, if the table needs momentum here (not required):** 2 **Vættir** or a single **Haugbui**, drawn to the old scar at the circle's center, territorial rather than hostile at first -- they attack only if the party lingers there past a clear warning. A chance to remind the table the land itself remembers what happened here, not a mandatory fight.
-
-Survival DC 11 (active: reading the grove's physical approach before stepping inside the ring): The ground between the standing stones is clear of undergrowth in a perfect circle, but the grass has not been grazed -- it is simply absent. The stones are positioned at angles that create two natural cover positions: behind the north stone and behind the south stone. A character who notes this before the ritual begins identifies where to stand if the standing stones animate -- the cover positions displace animated stone guardian movement by one full round.
-
-**Read aloud, at the stones:**
+The south path ends at the scorched circle from Scene 6, Clue 2.
 
 > *Seven standing stones ring a granite altar. Each stone is twice your height and carved with spiraling runes that don't hold still when you look at them directly — they seem to shift, rearranging themselves, as if the stone itself is thinking.*
 >
@@ -681,57 +895,55 @@ Survival DC 11 (active: reading the grove's physical approach before stepping in
 >
 > *"Leave nothing at the door. What you carry in, you carry to the altar. All of it. The weapon, the doubts, and whatever part of you this journey has taken."*
 
-<details>
-<summary><strong>The Ritual Requirements</strong></summary>
+---
 
-Thusnelda lays out what is needed:
+**The Ritual Sequence Puzzle**
 
-1. The spear must be placed on the altar, unwrapped, bare iron on stone
-2. Blood from a warrior must anoint it — voluntary, 1d6 damage, cannot be healed until after the ritual
-3. The group must speak in unison: *"We unmake what was made in darkness."* (in Latin or Germanic — both work)
-4. A sacrifice must be offered willingly — something of genuine value, given without coercion
+The ritual is a sequence puzzle — four steps in the correct order, or it stalls.
 
-**The sacrifice must be real:**
+**Correct order:**
+1. Unwrap the spear (bare iron on stone — no wrappings)
+2. Blood from a warrior (voluntary, 1d6 damage, cannot be healed until after the ritual completes)
+3. Speak in unison (*"We unmake what was made in darkness"* — Latin or Germanic both work)
+4. A sacrifice (one willing character gives something of genuine value)
 
-| Offer | What it means | The grove's response |
+**Wrong order consequences:**
+- Steps 1 and 2 reversed: blood touches the wrappings, not the iron. Altar stays cold. Thusnelda: *"The iron must feel it, not the cloth."*
+- Step 3 before step 2: words land hollow. *"Blood before voice. The body must commit before the mouth."*
+- Step 4 before steps 1-3: the sacrifice is absorbed by the spear, not the altar. Offering character takes 2d8 psychic damage and the offering does not register. *"The altar is not open yet. Start again."*
+
+**Small riddle whispered from the altar stone when a character places a hand on it (passive Perception DC 10 to hear it):** *"What must be broken before you can use it?"*
+Answer: An egg. Minor reward — and Thusnelda nods when she hears someone say it aloud. *"Yes. Exactly like that."*
+
+---
+
+**The Sacrifice Must Be Real**
+
+| Offer | What it means | Grove's response |
 |---|---|---|
 | A valuable magic item | Loss of power | Acceptable |
 | A proficiency | Permanently lose one skill proficiency | Acceptable |
-| A memory | Choose one important memory — it's gone | Acceptable — grove returns a dream in its place |
+| A memory | One important memory — it is gone | Acceptable; grove returns a dream in its place |
 | A year of life | Lifespan shortened | Acceptable |
 | Cassia volunteers herself | Death, willingly | More than acceptable — Thusnelda tries to stop her |
-| Something with no real cost | Any item worth less than the character cares about | *The altar goes cold. Nothing happens. The grove knows.* |
+| Something with no real cost | Any item the character doesn't care about | *The altar goes cold. Nothing happens. The grove knows.* |
 
 ::: {.dm-note}
-If Cassia offers herself and the party doesn't stop her: let it land as the single
-heaviest option on this table, exactly as heavy as her death should be -- and it still
-doesn't destroy the spear (see Conclusion, below). Nothing on this table does. That is the
-point. Do not soften this by having her sacrifice be the one that "actually works" -- the
-whole scene's weight depends on even the ultimate offer failing for the same reason a
-smaller one would.
+If Cassia offers herself and the party doesn't stop her: let it land as the heaviest option on the table — and it still does not destroy the spear. Nothing does. Do not soften this by having her sacrifice "actually work." The whole scene's weight depends on even the ultimate offer failing for the same reason a smaller one would.
 :::
 
-**The influenced NPC's crisis moment:**
+---
 
-As the ritual begins, the influenced NPC feels the connection intensify. This is the moment they either break free or break.
+**The Influenced NPC's Crisis**
 
-If detected and supported: the party can help them resist with a group Wisdom check (DC 14). Success means they participate in the ritual and their corruption is cleared by the grove's power. Failure means they physically grab for the spear mid-ritual — not maliciously, but driven. They can be stopped without combat (Athletics grapple DC 12, or someone calling their name three times). If stopped this way, they collapse, weeping, with no memory of the last hour.
+As the ritual begins, the influenced NPC feels the connection intensify.
 
-</details>
+- **If detected and supported:** Group Wisdom check (DC 14). Success: they participate, corruption cleared. Failure: they physically grab for the spear, driven but not malicious. Stopped with Athletics grapple DC 12, or someone calling their name three times. If stopped: they collapse, weeping, no memory of the last hour.
+- **If undetected:** They attempt to stop the ritual at the climax — not violently at first, then with increasing urgency.
 
-</details>
+---
 
-</details>
-
-
-<details>
-<summary><strong>Scene 5: Mars Intervenes</strong></summary>
-
-The ritual begins. The spear lights up. And Mars arrives.
-
-Not physically. As a presence — a pressure in the air that makes the stones vibrate and causes every shadow to point toward the altar regardless of the light source. Then his voice, from everywhere and nowhere:
-
-**Read aloud:**
+**Mars Intervenes**
 
 > *"MORTALS."*
 >
@@ -745,63 +957,41 @@ Not physically. As a presence — a pressure in the air that makes the stones vi
 >
 > *"Finish the ritual. Do not look up. Whatever you see, do not look up."*
 
-<details>
-<summary><strong>Three Ways to Complete the Ritual</strong></summary>
+**Option A — Defensive Hold**
 
-**Option A: Defensive Hold (not a winnable fight at Level 5)**
+Three animated Standing Stones (Stone Golem stat blocks, CR 10, 120 HP each). Not killable at Level 5 — avatars of Mars's anger. Some party members hold the golems while one completes the Skill Challenge. The golems fade when the ritual completes.
 
-::: {.dm-note}
-The standing stones are avatars of Mars' anger, not killable enemies. The party's goal is to hold them off long enough for the ritual to complete (4 successes on the Option B Skill Challenge below). Options A and B run simultaneously: some party members engage the golems while one holds the ritual. Track golem engagement: each party member actively fighting a golem keeps it occupied for 2 rounds before it pivots to the ritual holder. The golems fade automatically when the ritual completes. Do not run Option A as a combat that needs to be won.
+Cover positions behind the north and south stones (spotted with Survival DC 11 before the ritual began) displace a golem's movement by one full round.
 
-The cover positions behind the north and south stones (spotted with Survival DC 11 before the ritual begins) displace each golem's movement by one full round when used.
-:::
+**Option B — Skill Challenge**
 
-Mars manifests as divine wrath through the stones themselves:
-- Animated Standing Stones: 3 **Stone Golems** (CR 10) but with 120 HP each — avatars of Mars' anger, not killable enemies at this level
-- While some party members hold the golems back, one holds the ritual (see Option B below)
-- The golems fade when the ritual completes; destroying them early buys time but is not required
+4 successes before 3 failures. One person holds the ritual each round:
 
-**Option B: Skill Challenge — complete the ritual under pressure**
-
-4 successes before 3 failures. Each round, one person holds the ritual while others defend:
 - **Religion DC 14 (active: speaking the words of unmaking with genuine conviction)**
-- **Arcana DC 15 (active: channeling the grove's ancient power, not fighting it)**
+- **Arcana DC 15 (active: channeling the grove's ancient power, not fighting it)** — character who took arcane damage from the spear this session has advantage
 - **Athletics DC 12 (active: holding the spear steady as it fights back)**
-- **Insight DC 14 (active: resisting the spear's final promise)** -- *"They'll abandon you. Take me and they won't have to."*
-- **Stealth DC 13 (active: repositioning behind the standing stones before an animated golem pivots)**: Not a ritual contribution -- this is a defense move. On success, the golem wastes a movement action turning to face the new position. That round, the ritual holder has advantage on their check because the pressure source is briefly displaced.
+- **Insight DC 14 (active: resisting the spear's final promise)** — the promise is specific to this character (use Session 0 material for what they most want)
+- **Stealth DC 13 (active: repositioning behind a standing stone before a golem pivots):** defense only — golem wastes a movement action; ritual holder has advantage that round
 
-Failures mean the ritual stumbles, and Mars' pressure increases: each failure adds one animated stone.
+Each failure adds one animated stone.
 
-**Option C: Bargain -- offer Mars something before the ritual begins**
+**Option C — Bargain**
 
-If the party steps back from the altar and speaks to Mars directly (Persuasion DC 17 or Religion DC 16, active: addressing him directly and naming what the spear has done in his name):
+Step back from the altar and address Mars directly (Persuasion DC 17 or Religion DC 16):
+
 > *"Great Mars, the spear was being used to corrupt and destroy men in your name. We destroy it not to defy you, but because what it was doing dishonored what you stand for."*
 
 A long silence. Then:
+
 > *"...CONTINUE. I WILL NOT MAKE IT EASY. BUT I WILL NOT STOP IT."*
 
-This gives advantage on all Skill Challenge rolls.
+Advantage on all Skill Challenge rolls.
 
-</details>
+---
 
-</details>
+**Conclusion: The Spear Does Not Break**
 
-
-<details>
-<summary><strong>Conclusion</strong></summary>
-
-**Whatever happens mechanically here -- full success on the Skill Challenge, a bargain struck with Mars, or a stumbling near-failure -- the spear does not break.**
-
-::: {.dm-note}
-This is the twist the whole session has been building toward, not a fizzle. Everything
-above -- the sacrifice, the golems, the skill challenge, Mars's voice -- is real and it
-matters, and the mechanical outcome still has real consequences (below). It just doesn't
-end the threat, because Thusnelda's entire order was wrong about where the binding
-actually has to happen. Play the moment of realization as devastating for her
-specifically, not as a rules technicality for the table.
-:::
-
-**Read aloud, whatever the Skill Challenge's outcome:**
+**Read aloud:**
 
 > *The iron doesn't shatter. It dims — the pulsing slows, quiets, goes still, the way a fire banks down to coals instead of going out. Something in it has retreated. Nothing in it has broken.*
 >
@@ -811,64 +1001,43 @@ specifically, not as a rules technicality for the table.
 >
 > *"I have spent my whole life tending the wrong altar."*
 >
-> *She turns, and points past the seventh stone. What you took for another slab of exposed rock at the circle's southern edge is a mouth -- a fissure in the hillside just wide enough to walk into, ringed with what might once have been carved teeth. Something that looks very much like a skull, if a hillside could wear one. It was here the entire time, twenty feet from where the ritual just failed.*
+> *She turns, and points past the seventh stone. What you took for another slab of exposed rock at the circle's southern edge is a mouth — a fissure in the hillside just wide enough to walk into, ringed with what might once have been carved teeth. Something that looks very much like a skull, if a hillside could wear one. It was here the entire time, twenty feet from where the ritual just failed.*
 >
 > *"There," Thusnelda says. "That is where she should have gone. That is where I should have taken you from the start."*
 
-**If the party fully succeeded at the Skill Challenge or struck Mars's bargain:** the spear is meaningfully weakened -- its corruption pressure eases (any corruption below level 5 is reduced by 1; Level 5 characters remain affected, same as before), and Mars's presence withdraws without further violence. This was not wasted effort. It just wasn't the ending.
+**If the Skill Challenge fully succeeded or Mars's bargain was struck:** The spear is meaningfully weakened. Corruption pressure eases — any corruption below level 5 is reduced by 1. Mars's presence withdraws without further violence.
 
-**If the ritual failed or was interrupted:** the spear remains at full strength, Mars's presence lingers hostile a moment longer before withdrawing, and the party carries a heavier weight into what comes next.
+**If the ritual failed or was interrupted:** The spear remains at full strength. Mars's presence lingers hostile a moment longer before withdrawing.
 
-**Either way:** the influenced NPC's crisis moment (see above) still resolves the same way it would have -- caught or not, the corruption thread still matters going forward. The Skull Entrance is right there, at the ritual circle's own edge -- no further travel, no montage. Whatever they do next, they do it now, at the mouth of the thing they came looking for.
+**Either way:** The Skull Entrance is 20 ft from the altar. No further travel. Whatever they do next, they do it now.
 
-**Advance to Level 6**
+**Advance to Level 6.**
 
 ::: {.dm-note}
-**Transition to the dungeon**
+**Transition to Chapter 4.** Cut straight into Chapter 4's Scene 0. No time skip. The marsh causeway described there is the ground immediately outside this cave mouth. The party carries the whole spear (weakened or not) into the Blood Cult Dungeon — the spear is never destroyed here. Thusnelda comes with them if she has earned enough trust — she is a witness now, not a guide. She has never been past the Skull Entrance herself, and says so plainly.
 
-The Skull Entrance sits directly off the ritual circle -- the south path from the village
-ends here, not at a separate marsh requiring its own travel day. Cut straight from this
-scene into Chapter 4's Scene 0 with no time skip; the marsh causeway described there is
-simply the ground immediately outside this cave mouth. The party always carries the whole
-spear (weakened or not, per the outcome above) into the Blood Cult Dungeon -- there is no
-fragments-in-a-clay-jar branch anymore, since the spear is never destroyed here. Thusnelda
-comes with them if she has earned enough trust (see her OGAS session-state table) -- this
-is personal for her now, not professional courtesy. If she's present in the dungeon, she
-is a witness, not a guide: she has never been past the Skull Entrance herself, and says so
-plainly.
-
-Add this to the Session 4 opening tracking table:
-
-| Question | Session 4 implication |
-|---|---|
-| Did the party succeed at the grove's Skill Challenge? | Yes: the spear enters the dungeon weakened, lower corruption pressure throughout. No: full corruption pressure carries forward. Either way, the whole spear is present -- no fragment-jar variant. |
-| Is Thusnelda with the party? | If yes, she is present for the dungeon's revelations as someone whose lifelong certainty just broke, not as an expert guide. |
+Add to Session 4 opening tracking table:
+- Did the grove Skill Challenge succeed? (Yes: lower corruption pressure throughout Ch4. No: full pressure.)
+- Is Thusnelda with the party? (If yes: present for dungeon revelations as someone whose lifelong certainty just broke.)
 :::
+
+</details>
+
 
 <details>
 <summary><strong>Citizenship Elevation: Session 3 Window</strong></summary>
 
-After the grove's Skill Challenge concludes and the party returns to Corvinus' reach (whether at the fort, in the field, or through a messenger he sends), Corvinus does something unexpected. He files papers.
+After the grove's Skill Challenge concludes and the party returns to Corvinus's reach, a clerk arrives with a document pouch: *"The Legate sends his regards and asks that you review the enclosed. No response is required."*
 
-He does not announce this. He does not explain it. A clerk appears at the party's camp or quarters with a document pouch and a brief verbal message: *"The Legate sends his regards and asks that you review the enclosed. No response is required."*
+Inside: draft *commendatio* forms, already completed. If a character has three or more commendationes across Sessions 1 and 2, a formal status elevation petition is also enclosed, naming Corvinus as sponsor.
 
-Inside the pouch, for each eligible character: a draft *commendatio* form, already completed. If the character has accumulated three or more commendationes across Sessions 1 and 2, a second document is enclosed: a formal status elevation petition, naming Corvinus as sponsor.
+| Status | With 3 commendationes | Second sponsor available |
+|---|---|---|
+| *Peregrinus* | Eligible for *Latini* standing | Corvinus alone |
+| *Latini* | Eligible for full citizenship petition | Tribune Lucius as co-sponsor (if treated honorably in Session 2) |
+| *Cives Romani* | Distinguished service acknowledgment | — |
 
-What it means by legal status tier:
-
-- A *peregrinus* with three commendationes becomes eligible to petition for *Latini* standing.
-- A *Latini* character with three commendationes becomes eligible for a full citizenship petition (requires a second sponsor: Tribune Lucius can serve as co-sponsor if the party treated him honorably in Session 2).
-- A *cives Romani* character receives acknowledgment of distinguished service that can support a future promotion recommendation.
-
-Corvinus does not do this out of generosity. He does it because the party has performed tasks that would be politically expensive for him to explain if they remained unthanked. He is a pragmatist. The elevation papers are institutional cover for him as much as they are reward for the party.
-
-This window closes at Session 4 if the papers are not signed and returned. Corvinus' circumstances change, and the political calculus shifts.
-
-::: {.dm-note}
-**If the Skill Challenge failed:** Corvinus cannot file citizenship papers while the party is still in the field with a cursed spear at full strength and a siege beginning. The Session 3 citizenship window defers to the end of Session 4. The papers arrive during Session 4's conclusion scene rather than as a separate inter-session moment. The eligibility criteria are unchanged; only the timing shifts.
-:::
-
-</details>
+This window closes at Session 4 if papers are not signed. If the Skill Challenge failed, papers arrive at Session 4's conclusion instead — eligibility unchanged, timing deferred.
 
 </details>
 
@@ -879,207 +1048,154 @@ This window closes at Session 4 if the papers are not signed and returned. Corvi
 <details>
 <summary><strong>OGAS This Session</strong></summary>
 
-**Vercingetorix the Red** *(if present)*
-- **Objective:** Protect his people
-- **Goal (this session):** Ensure the ritual at the grove is attempted properly — this is his people's three-generation wound, and he does not yet know it won't be enough
-- **Agenda:** Guide, protect, and keep the party moving toward the grove even when they want to stop
-- **Secret:** He has been fighting this same war, in one form or another, since 46 BC. He does not say this -- he does not have words for it that would not sound insane -- but destroying the spear may be the first real chance he has had to die since Alesia. He will not tell anyone that either. He does not want it to change how they treat him, and some part of him does not fully believe it will happen even now.
-
-**Thusnelda** *(new NPC)*
+**Thusnelda**
 - **Objective:** Maintain the grove's power and fulfill her duty as its keeper — a duty she is about to discover was built on an incomplete premise
-- **Goal (this session):** Get the party through the ritual correctly, exactly as she's always been taught
-- **Agenda:** Be completely honest about what the ritual requires, even when that honesty is painful. She does not yet know that "correctly" isn't the same as "here."
-- **Secret:** She performed this ritual once before, fifty years ago, with Vercingetorix's grandfather. It failed. She has spent sixty years certain the sacrifice was unwilling — she has never once considered that the location itself might be the problem, because that was never a possibility her teachers gave her room to imagine.
+- **Goal:** Get the party through the ritual correctly, exactly as she has always been taught
+- **Agenda:** Be completely honest about what the ritual requires, even when that honesty is painful. She does not yet know that "correctly" is not the same as "here."
+- **Secret:** She performed this ritual once before, fifty years ago. It failed. She has spent sixty years certain the sacrifice was unwilling — she has never once considered that the location itself might be the problem.
 
 **Mars (divine presence)**
 - **Objective:** Reclaim his dignity and have his weapon back
-- **Goal (this session):** Stop the ritual
-- **Agenda:** Apply pressure through the influenced NPC, through the grove itself, through the confrontation at the end
-- **Secret:** He's been watching this party since Session 1. He respects what he's seen. He won't admit this.
+- **Goal:** Stop the ritual
+- **Agenda:** Apply pressure through the influenced NPC, through the grove itself, through the confrontation at Scene 8
+- **Secret:** He has been watching this party since Session 1. He respects what he has seen. He won't admit this.
 
 **Tribune Lucius** *(if alive, with the party)*
-- **Objective:** Still, underneath everything, to earn his father Brutus' respect
-- **Goal (this session):** Watch the ritual to the end and decide, privately, whether Cassia and the party are right that the spear has to go
-- **Agenda:** Keeps up a competent, brisk front the whole journey -- gives sound tactical advice, defers to Vercingetorix on terrain, never voices doubt aloud. He does not warn the party that his father sent him, and he does nothing to sabotage the ritual.
-- **Secret:** He already suspects his father was wrong about what the spear is. Watching it destroyed (or fail to be destroyed) at the grove is the moment that suspicion becomes conviction -- see his line at the ritual's end. He has not decided what, if anything, he will do with that conviction once he returns to his father.
+- **Objective:** Still, underneath everything, to earn his father Brutus's respect
+- **Goal:** Watch the ritual to the end and decide, privately, whether the spear has to go
+- **Agenda:** Keeps up a competent, brisk front. Gives sound tactical advice. Never voices doubt aloud. Does nothing to sabotage the ritual.
+- **Secret:** He already suspects his father was wrong about what the spear is. The ritual's outcome is the moment that suspicion becomes conviction.
 
 **Augur Cassia** *(if present)*
 - **Objective:** Understand what the spear has been doing to the omens, and to her
-- **Goal (this session):** Identify the sacrifice the grove will actually accept -- and privately, decide whether that sacrifice has to be her
-- **Agenda:** Reads every omen honestly, even the ones that point at herself. Completes her bog valerian herb quest at the sacrifice site (Encounter B) without announcing why she needs it. Watches the influenced NPC before anyone tells her who it is -- see Clue 3.
-- **Secret:** She has become increasingly certain the "genuine" sacrifice the grove wants is her own death, and she has not told anyone. Whether she acts on that belief depends entirely on how Scene 5 plays out.
+- **Goal:** Identify the sacrifice the grove will actually accept — and privately, decide whether that sacrifice has to be her
+- **Agenda:** Reads every omen honestly, even the ones that point at herself. Completes her bog valerian herb quest in Scene 5 without announcing why. Watches the influenced NPC before anyone tells her who it is.
+- **Secret:** She has become increasingly certain the grove wants her own death. She has not told anyone.
 
-**Legate Marcus Aurelius Corvinus** *(off-screen, drives Scene 3 without appearing)*
-- **Objective:** Same as always: control the outcome without being the one who visibly caused it.
-- **Goal (this session):** Be seen pursuing the spear without actually stopping it. He wants it destroyed as much as the party does; he cannot say so.
-- **Agenda:** Sends a small, weakly-motivated escort to the river with orders soft enough to lose gracefully ("prevent the crossing," not "kill them"). Stays "one day behind" the entire session, deliberately.
-- **Secret:** If the party reads the situation correctly and lets the Centurion stand down without bloodshed, Corvinus hears about it and privately considers it well handled -- this quietly helps the citizenship-elevation window at the end of the session. If the party kills his men anyway, he still can't say anything -- but it is one more loss on top of Varro's, and it shows.
+**Legate Marcus Aurelius Corvinus** *(off-screen)*
+- **Objective:** Control the outcome without being the one who visibly caused it
+- **Goal:** Be seen pursuing the spear without actually stopping it
+- **Agenda:** Sends a small, weakly-motivated escort with soft orders. Stays "one day behind" the entire session, deliberately.
+- **Secret:** He wants the spear destroyed as much as the party does. He cannot say so.
 
-**Senator Gaius Cassius Brutus (off-screen, never present this session)**
-- **Objective:** Same as Session 2 -- prevent the spear from reaching Rome or being publicly resolved
-- **Goal this session:** Launch Vindolanda's siege through allied chieftains while the party is in the forest; let the fort fall before the party returns
-- **Agenda:** Two specific chieftains in the warband confederation owe Brutus money and old favors. They are the siege's actual organizers. Vercingetorix does not know this -- if he did, it would reframe his whole understanding of the siege. Sigrun (the Germanic trader in the vicus) knows one name if the party reaches her before leaving for the forest.
-- **Secret:** Does not know about the grove ritual. His intelligence ends at the treeline. He is acting on incomplete information -- if he knew the party was attempting to destroy the spear entirely, he would not have launched the siege; he would have waited for a more controllable outcome.
+**Senator Gaius Cassius Brutus (off-screen)**
+- **Objective:** Prevent the spear from reaching Rome or being publicly resolved
+- **Goal:** Launch Vindolanda's siege through allied chieftains while the party is in the forest
+- **Agenda:** Two specific chieftains in the warband confederation owe Brutus money and old favors. They are the siege's actual organizers.
+- **Secret:** Does not know about the grove ritual. His intelligence ends at the treeline.
 
 </details>
 
 <details>
 <summary><strong>The Influenced NPC — Private Note</strong></summary>
 
-At session start, pass the influenced player this folded note:
+Pass this folded note to the influenced player at session start:
+
 *"You woke last night and stood beside the spear for two hours. You don't remember doing this. The spear feels warm when you're near it. It has been making an argument, quietly, that makes a certain kind of sense: the power in this weapon could protect the people you care about. You haven't told anyone. You're not sure you're wrong."*
 
-This player should roleplay subtle changes — nothing dramatic until the ritual. The revelation should feel earned, not shocking.
+**Three subtle roleplay cues (tell the player at session start, not in the note):**
+
+1. **Scene 0 (cold open):** Be the first to suggest the standing-by-the-spear incident might have been sleepwalking or stress. Genuinely, helpfully. Not defensively.
+2. **Scene 3 (Thusnelda meeting):** When Thusnelda says *"your friend there has a thread in them"* and looks at you — break eye contact first and say *"She means the spear in general, doesn't she?"*
+3. **Scene 5 (Farbog):** During the most stressful moment, be unnaturally calm. Not helpful-calm. Still-calm, the way a person is still when listening to something no one else can hear.
+
+These are for the player to plant and other players to notice, or not, until Scene 8 makes it undeniable.
 
 </details>
 
 <details>
 <summary><strong>The Sacrifice — What Works</strong></summary>
 
-The grove is a mirror. It reflects what a character actually values versus what they claim to value. If a player tries to sacrifice something they don't care about, Thusnelda will know immediately:
+The grove is a mirror. If a player tries to sacrifice something they don't care about, Thusnelda knows immediately:
 
 > *"That is not a sacrifice. That is a fee. The grove is not a toll booth."*
 
-The DM should know each character's central motivation (from Session 0) and gently push toward a sacrifice that actually costs something in that direction. A warrior who lives for glory might lose their greatest battle memory. A soldier who dreams of retirement might lose a year of life. A cleric who values divine connection might lose one prepared spell slot permanently.
+The DM should know each character's central motivation (from Session 0) and push toward a sacrifice that actually costs something in that direction:
+- A warrior who lives for glory: might lose their greatest battle memory
+- A soldier who dreams of retirement: might lose a year of life
+- A cleric who values divine connection: might lose one prepared spell slot permanently
 
 The sacrifice is permanent. Honor it.
+
+**What she will not accept:** "I sacrifice my life in the future, if necessary." The grove is not interested in conditional sacrifice. *"That is not a sacrifice. That is a bet. The grove is not a wager."*
 
 </details>
 
 <details>
-<summary><strong>DM Guidance: Reading the Grove's Response</strong></summary>
+<summary><strong>Grove Response Guide</strong></summary>
 
-The grove does not communicate clearly. It communicates correctly. Here is how to signal acceptance or rejection:
+**Genuine sacrifice:** The altar stone warms perceptibly. Runes on the standing stones shift slightly. Thusnelda closes her eyes and exhales. Opens them looking less frightened.
 
-**If the sacrifice is genuine:** The altar stone warms perceptibly when the object or thing is offered. The runes on the standing stones shift slightly, as if something large turned its attention toward the altar. Thusnelda closes her eyes and exhales. She says nothing, but she opens them again looking less frightened.
+**Insufficient sacrifice:** The altar stays cold. The offered item simply sits there, unreceived. Thusnelda, quietly: *"The grove is not satisfied. Try again. You have time. Use it."*
 
-**If the sacrifice is insufficient:** The altar stays cold. The offered item (or words, for intangible sacrifices) simply sits there, unreceived. Nothing dramatic happens. The absence of response is the response. Thusnelda says, quietly: *"The grove is not satisfied. Try again. You have time. Use it."*
-
-**If the party offers nothing real at all:** After two attempts, the stones begin to cool and the grove's ambient light dims. The ritual is failing. Thusnelda: *"Something must be given or we leave here with the spear and come back when you are ready. There is no shame in it. But Mars will be closer next time."*
-
-**The thing she will not accept:** "I sacrifice my life in the future, if necessary." The grove is not interested in conditional sacrifice. The sacrifice must be now, irrevocable, freely given. If a player offers this: Thusnelda looks at them for a moment, then: *"That is not a sacrifice. That is a bet. The grove is not a wager."*
+**Nothing real offered:** After two attempts, the stones begin to cool and the grove's ambient light dims. Thusnelda: *"Something must be given or we leave here with the spear and come back when you are ready. There is no shame in it. But Mars will be closer next time."*
 
 </details>
 
 <details>
 <summary><strong>Commendationes This Session</strong></summary>
 
-**Opportunity 1: seeing the ritual through to a genuine sacrifice.**
-Any character actively present at the grove ritual who contributed to a successful Skill Challenge (the sacrifice was accepted, the golems held off, or Mars's bargain struck) earns one *commendatio*. Corvinus awards these through the paperwork window described above, without being told exactly what happened at the grove. He knows the party went in with a cursed weapon and came back having faced it down. That is sufficient.
+**Opportunity 1: Seeing the ritual through to a genuine sacrifice.**
+Any character who contributed to a successful Skill Challenge earns one *commendatio*. Corvinus awards these through the paperwork window described above.
 
-**Opportunity 2: rescuing the influenced character during the ritual.**
-If one character was drawn to the spear and another character physically intervened (pulled them back, broke the connection, held them when the grove's power spiked), that act of putting themselves between a colleague and a divine force qualifies. One *commendatio* to the rescuing character. This is not Corvinus' paperwork: it is Cassia's formal attestation, as the ranking officer present and the party's usual channel for this now that Varro is gone.
+**Opportunity 2: Rescuing the influenced character during the ritual.**
+One character intervened physically to break the connection. One *commendatio* to the rescuing character — Cassia's formal attestation, not Corvinus's paperwork.
 
-**Opportunity 3: protecting Vercingetorix in the forest.**
-If the party defended Vercingetorix against any forest encounter (Germanic ambush, wild creature, or any threat during travel) rather than leaving him to manage his own problems, note this for Session 4. It does not become a *commendatio* yet: the reward is Vercingetorix's warriors at the gate in Session 4, and a specific moment in the epilogue.
+**Opportunity 3: Protecting an NPC companion in the forest.**
+If the party defended Thusnelda, Cassia, or Lucius against any forest encounter rather than leaving them to manage their own problems, note this for Session 4.
 
 </details>
 
 <details>
 <summary><strong>Post-Ritual NPC States</strong></summary>
 
-The spear is never destroyed at the grove (see Conclusion, above) — but whether the Skill Challenge succeeded still shapes how each NPC leaves this scene, and every one of them now carries the same new knowledge: the real answer is underground. Use this for Session 4 handoff.
-
 | NPC | If the Skill Challenge succeeded | If it failed |
 |---|---|---|
-| **Vercingetorix** | Grimly settled, not at peace -- the wound isn't closed, but it's smaller, and he finally has somewhere real left to walk toward. | Devastated. Three generations of his family carried this wound and it is still open. He will not say it, but his face says it. |
-| **Thusnelda** | Shaken but functional -- her certainty is gone, but she still knows how to move. She stays close to the party rather than turning back for the grove. | Shaken and barely functional. She sits by the elder's grave-marker for a long moment before she can speak again. Either way, she does not offer to "prepare the grove again" — she now knows there is nothing to prepare. |
-| **Cassia** *(if present)* | Quiet, processing -- her visions shift in tone rather than stopping. She recognizes the underground place from a dream she's had for weeks and hadn't understood until now. | More determined than devastated. *"The omens are still bad but the shape has changed. There is still a path. I need to think."* |
-| **Tribune Lucius** *(if present)* | Looks at the still-warm spear for a long time. Then: *"My father was wrong about what this was. He thought it was a political tool. He didn't know what it was."* First honest thing he's said out loud. | Practical and brisk -- this is how he handles fear. *"We need to move. The Legate is still out there. Standing here with a failed ritual and a still-active cursed weapon is a poor position."* |
-| **The influenced NPC** | Whether they broke free or were pulled back during the ritual, they are quiet after. The thread is cut, or at least thinner. They feel its absence like a missing tooth -- noticeable even when nothing is wrong. Let them narrate what the absence feels like. | The thread holds. They are the most useful person in the group for what comes next, in an uncomfortable way -- they felt the spear's logic from the inside. They know how it thinks. |
+| **Thusnelda** | Shaken but functional — her certainty is gone but she knows how to move. Stays close to the party. Does not offer to "prepare the grove again" — she now knows there is nothing to prepare here. | Shaken and barely functional. Sits by the grave-marker for a long moment. Same conclusion: there is nothing to prepare. |
+| **Cassia** | Quiet, processing — her visions shift in tone. She recognizes the underground place from a dream she's had for weeks. | More determined than devastated. *"The omens are still bad but the shape has changed. There is still a path."* |
+| **Tribune Lucius** | Looks at the still-warm spear for a long time. Then: *"My father was wrong about what this was. He thought it was a political tool. He didn't know what it was."* First honest thing he's said aloud. | Practical and brisk — this is how he handles fear. *"We need to move."* |
+| **The influenced NPC** | The thread is cut, or at least thinner. They feel its absence like a missing tooth. Let them narrate what the absence feels like. | The thread holds. They are the most useful person in the group for what comes next — they felt the spear's logic from the inside. They know how it thinks. |
 
 </details>
 
 <details>
-<summary><strong>The Influenced NPC: Roleplay Guidance for That Player</strong></summary>
+<summary><strong>Cascade Unlock: A Dying Admission</strong> (DM only)</summary>
 
-At session start, when you pass the private note, also tell the player these three things to do during Scenes 1-3 -- nothing dramatic, nothing that breaks immersion, but things that will be recognisable in hindsight:
+Available after the ritual, when the party has shown what they are made of. A genuine sacrifice opens it; a token sacrifice does not.
 
-1. **Scene 1 (cold open):** When the group discovers someone was standing by the spear at night, your character is the first to suggest it might have been a sleepwalking episode or stress response. Not defensively -- genuinely, helpfully. You're trying to explain it away for yourself as much as anyone.
-
-2. **Scene 2 (Thusnelda encounter):** When Thusnelda says *"your friend there has a thread in them"* and looks at you, your character breaks eye contact first and says something like *"She means the spear in general, doesn't she?"* -- redirecting. Again, not consciously, not maliciously. You simply cannot hold her gaze.
-
-3. **Scene 3 (river crossing):** During the most stressful moment of the crossing, your character is unnaturally calm. Not helpful-calm -- still-calm, the way a person is still when they are listening to something no one else can hear. If anyone asks, you have no explanation for it.
-
-These three moments should not be pointed out by the DM. They are for the player to plant and the other players to notice, or not, until the ritual makes it undeniable.
-
-This session should feel like the pressure never fully releases. The investigation of the cold open mystery, the river crossing, the abandoned village, the grove itself — there's no safe moment, and the grove doesn't end it either. Push toward the grove, then push past the realization that the grove was never enough. The forest is hostile to lingering.
+- DC 14 Insight after the ritual to notice Thusnelda is holding something back.
+- If a player asks directly: she tells them.
+- **The admission:** Her teacher attempted this ritual fifty years ago and there was a survivor — one of her teacher's warband lived and went underground, past the Skull Entrance, before dying. Thusnelda never knew this. But the old watching post in the bog (Scene 5) belonged to that survivor. The wax tablet is proof. The party has already found it, if they explored.
+- **What it opens in Session 4:** The party knows they are not the first to descend. Someone left the flask and the tablet. That person got further than anyone knew. Write this in your Session 4 notes now.
 
 </details>
 
 <details>
 <summary><strong>Skill Audit: Session 3</strong></summary>
 
-**Forest travel: spread skill demands across the table.**
+Spread skill demands across the table. Nobody should dominate the forest crossing.
 
-The travel events should each call on a different character's strength. Check this before you run. Nobody should dominate the forest crossing. The table below shows the primary approach, a backup approach (different door, not failed door), and where applicable a third approach using skills that might otherwise have nothing to do in this session.
+**Scene 1 (Smithy):** Investigation DC 12, Arcana DC 13, Religion DC 11 (lock). Any character can contribute.
 
-| Event | Primary skill | Alternative | Third option |
-|---|---|---|---|
-| Wind-felled oak | Athletics DC 12 (active: clearing or climbing the obstacle) | Survival DC 10 (active: finding a safe path around) | Stealth DC 12 (active: if the party wants to pass without announcing themselves to whoever felled it -- a fallen oak on a travel path is sometimes deliberate) |
-| Hanging charms | Persuasion DC 13 (active: passing without giving offense) | Religion DC 11 (passive: understand the boundary and perform a basic acknowledgment rite -- no social check, just knowledge) | -- |
-| Silent animal trail | Survival DC 12 (active: tracking by sign) | Nature DC 14 (active: identifying the specific predator -- wolf signs vs. something else changes the response entirely) | -- |
-| Old Roman standard | Investigation DC 12 (active: reading dates and unit markings) | History DC 14 (passive: naming the expedition and what happened to it; this lands harder when they know the story) | -- |
-| Boggy hollow | Acrobatics DC 12 (active: crossing without sinking) | Nature DC 10 (active: reading the plants and identifying firm ground; avoids the roll entirely) | Medicine DC 11 (passive: recognizing bog fever risk from the water type; warns against resting here, which costs time but prevents the exhaustion check) |
-| Watchful raven | Insight DC 12 (active: reading it correctly -- omen, not threat) | Animal Handling DC 10 (active: acknowledging it respectfully; the raven leaves satisfied) | -- |
-| Blood-slick stones | Religion DC 14 (passive: reading the runes) | Investigation DC 12 (active: dating the sacrifice; within 24 hours changes everything) | Sleight of Hand DC 12 (active: pocketing a rune-carved offering stone without the group noticing -- optional, morally complicated) |
-| Whispering pines | Wisdom save DC 12 | Performance DC 12 (active: giving the whispers a response that satisfies them; costs one round but removes the disadvantage) | Deception DC 13 (active: convincing yourself the whispers are wind, not a real voice; a successful self-deception suppresses the Wisdom save but prevents any meaningful information from the pines) |
-| Germanic patrol (if added) | Persuasion DC 14 (active: speaking any Germanic phrase from the player guide) | Intimidation DC 13 (active: a show of force before weapons are drawn; they don't want this fight either) | Deception DC 15 (active: claiming to be friendly traders; requires something tangible to sell the claim) |
+**Scene 2 (Forest Crossing):** Survival DC 13 (track reading), Perception DC 11 (canopy watch), Strength DC 14 (mound capstone), Religion DC 14 (Haugbui release).
 
-*Note: the Germanic patrol is not on the d8 table above but can be substituted for any roll of 3 if Vercingetorix is not with the party.*
+**Scene 3 (Ambush):** No skill for the riddle — roleplay only. Persuasion DC 14 (diplomatic end), Medicine DC 13 (influenced NPC physical signs), Insight DC 14 (influenced NPC behavior).
+
+**Scene 4 (Rune Stone):** Religion DC 12, Investigation DC 13, Nature DC 14 (path surfaces).
+
+**Scene 5 (Farbog):** Survival DC 12 (marker reading), Religion DC 12 (Myling rite), Investigation DC 13 (sacrifice site), Perception DC 11 (soft-ground warning).
+
+**Scene 6 (Village):** Investigation DC 13 (forge room search), History DC 15 (grave-marker), Religion DC 11 (ward door), Athletics DC 12 (hold Wight during release rite hesitation).
+
+**Scene 7 (Riddles):** Pure roleplay — no skill checks for the riddles themselves.
+
+**Scene 8 (Ritual):** Religion DC 14, Arcana DC 15, Athletics DC 12, Insight DC 14, Stealth DC 13.
 
 **Medicine DC 13 (active: examining the influenced NPC when Clue 1 appears):**
+Elevated heart rate, dilated pupils inconsistent with light level, slight fever. Pre-combat readiness markers in a calm person. The body knows before the mind does.
 
-A character with Medicine proficiency who examines them physically -- checks their pulse, looks at their eyes, feels their skin temperature -- finds elevated heart rate, dilated pupils inconsistent with the light level, and a slight fever. These are not illness markers. They are arousal markers: the body in pre-combat readiness, with the mind still calm. The character examining them knows that combination from battlefield experience. Something is priming them. The body knows before the mind does.
-
-**Stealth DC 13 (active: approaching a Germanic patrol or shrine without being detected):**
-
-Before any social encounter in the forest, the party can choose to observe first. Stealth as a group check (weakest roller determines success) lets them see the patrol or shrine before being seen. Success gives them one round of assessment before engagement. On a critical success (5 above DC), they observe long enough to determine intent -- whether the patrol is searching, resting, or actively tracking.
-
-**Deception DC 14 (active: passing as non-Roman travelers during an unexpected Germanic encounter):**
-
-Requires either non-Roman equipment (no lorica segmentata visible, Germanic cloaks) or a convincing story. A character with a Germanic background or Vercingetorix vouching reduces this to DC 10. A character in full legionary kit attempting this without cover has DC 18 and disadvantage.
-
-**Intimidation DC 14 (active: at the river crossing, ordering the pursuing legionaries to stand down):**
-
-As described in the crossing scene. On 5 above the DC: the opposing centurion signals his men to hold and does not cross.
-
-**Temporal gate: river crossing boot print:**
-
-One round. Only if someone is watching the bank rather than the river.
-
-- *Perception DC 11 (active: watching the near bank specifically while others watch the water):* Military sandal, size 10, made within the last two hours, heading north. Corvinus has scouts ahead of them.
-- *What it opens:* They can send a decoy, move off the main path, or prepare for scouts at the grove. Without this read, Corvinus's scouts are already watching when they arrive. One check, one round. Make it count.
-- *Why the window closes:* Rain washes it. The crossing scene ends, the rain intensifies, the print is gone. That is what rain does to boot prints in mud.
-
-**Thusnelda trust: the first meeting.**
-
-Do not move this entirely through narrative. The key moment is when she decides whether to lead them to the grove. Give it a DC.
-
-- *Persuasion DC 14 (active: backed by something genuine -- sparing a prisoner, a gift, Vercingetorix vouching):* She leads them.
-- *Persuasion DC 18 (active), or Germanic language proficiency, or Religion DC 15 (active: speaking her ritual language):* She leads them AND volunteers the piece of grove knowledge they did not know to ask for: the lock in the altar's northwest face, and what it opens.
-- *Fail:* She says "Tomorrow." That is not a refusal. The party camps in the forest for one night. One additional forest event occurs overnight. The window does not close: it costs time. That is the right consequence.
-
-**Ritual skill challenge (Option B):**
-
-Annotated for ease of reference:
-
-- *Religion DC 14 (active: speaking the words of unmaking with genuine conviction):* Fail by 4 or less -- the words come out but without power. The grove receives them as intent, not invocation. Not a wasted round, but not a success. Try differently next time.
-- *Arcana DC 15 (active: channeling the grove's ancient power rather than overriding it):* The hardest check because it requires surrendering the reflex to control the magic. A character who has taken arcane damage (from the spear) this session has advantage.
-- *Athletics DC 12 (active: holding the spear steady as it fights back):* The spear weighs what it weighs until the ritual begins. After, it pulls. This check is simply whether a character is strong enough to keep it on the altar.
-- *Insight DC 14 (active: resisting the spear's final promise):* The promise is specific to the character holding the spear. The DM should know what it will offer each character from Session 0 material. The promise is not generic fear -- it is the thing the character most wants, offered at the worst possible moment.
-
-<details>
-<summary><strong>Cascade unlock: Vercingetorix's dying admission</strong> (DM only)</summary>
-
-This only becomes available after the ritual, when the party has shown what they are made of. A genuine sacrifice opens it; a token sacrifice does not. That is not a punishment: it is Vercingetorix applying the same standard he applies to everyone.
-
-- DC 14 Insight after the ritual to notice he is holding something back.
-- If a player asks directly: he tells them.
-- The admission: he knew three months ago that Brutus's agents were in contact with two of the warband chieftains surrounding Vindolanda. He did not say anything because he was not sure the party was worth trusting with information that would get them killed. Now he is sure.
-- What it opens in Session 4: the party can split the siege by targeting those specific chieftains. Sigrun knows more if they can reach her. Write this in your Session 4 notes now.
-
-</details>
+**Temporal gate: boot print at the bog edge.**
+One round only. Perception DC 11 (active: watching the near bank). Military sandal, size 10, made within two hours, heading north. Corvinus has scouts ahead of them. Rain washes it within one scene.
 
 </details>
 
