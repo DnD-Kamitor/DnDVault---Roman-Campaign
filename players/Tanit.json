@@ -2,9 +2,10 @@
   "name": "Tanit bint Abdmelqart",
   "player": "Tanit",
   "race": "Halfling (Phoenician-Nabataean)",
-  "class": "Bard",
-  "subclass": "College of Eloquence",
-  "level": 4,
+  "classes": [
+    {"name": "Bard", "level": 4, "subclass": "College of Eloquence"},
+    {"name": "Warlock", "level": 1, "subclass": "Hexblade"}
+  ],
   "background": "Charlatan",
   "role": "Cornicen",
   "ability_scores": {
@@ -13,9 +14,9 @@
     "CON": 12,
     "INT": 10,
     "WIS": 14,
-    "CHA": 16
+    "CHA": 17
   },
-  "hp_max": 29,
+  "hp_max": 30,
   "skill_proficiencies": [
     "Sleight of Hand",
     "History",
@@ -123,6 +124,14 @@
       "note": "BA. Expend BI die. Target subtracts this roll from next saving throw before your next turn."
     },
     {
+      "label": "Hexblade's Curse",
+      "type": "utility",
+      "weapon": "Hexblade's Curse",
+      "damage_dice": "",
+      "color": "#7a2048",
+      "note": "BA, 30ft. Curse one creature: +Proficiency to damage vs it, crit on 19-20 against it, regain HP = Warlock level (1) if it dies while cursed. 1/short or long rest."
+    },
+    {
       "label": "Charm Person",
       "type": "utility",
       "weapon": "Charm Person",
@@ -146,11 +155,25 @@
       "value": 3,
       "max": 3,
       "reset": "Long Rest"
+    },
+    {
+      "name": "Hexblade's Curse",
+      "category": "Warlock",
+      "value": 1,
+      "max": 1,
+      "reset": "Short or Long Rest"
+    },
+    {
+      "name": "Pact Slot (1st level)",
+      "category": "Warlock",
+      "value": 1,
+      "max": 1,
+      "reset": "Short or Long Rest"
     }
   ],
   "portrait_file": "Tanit Bint Abdmelquart.jpeg",
   "portrait_color": "#c47a1e",
   "ac_override": 15,
   "background_story": "Carthaginian heritage. Family is in the Tyrian purple dye trade — the most valuable commodity in the ancient world, a Phoenician monopoly. Carries the memory of a civilization Rome destroyed. Her name is Carthaginian. Her family still profits from the Roman empire that erased her people's history. Survival vs identity is her engine.",
-  "notes": "Alignment True Neutral. Charlatan background: proficiency Disguise kit, Forgery kit. Bard: Bardic Inspiration d8 (3/LR), Jack of All Trades, Song of Rest. College of Eloquence: Silver Tongue (Persuasion+Deception treat d20 roll 9 or lower as 10), Unsettling Words (BA: expend Bardic Inspiration die, target subtracts roll from next save before your next turn). Weapons: Dagger (Pugio) +5 / 1d4+3, Vicious Mockery (cantrip) 1d4 psychic DC 14. Personality: listens more than speaks; Knowledge is the only authority that cannot be revoked; carries a history Rome tried to erase. Passive Perception 14. L4: ASI taken. Spells known = 6. +1 second-level spell slot (now 4/3)."
+  "notes": "Alignment True Neutral. Multiclassed into Warlock (Hexblade patron) at total level 5: Bard 4 / Warlock 1. Charlatan background: proficiency Disguise kit, Forgery kit. Bard: Bardic Inspiration d6 (3/LR; becomes d8 at Bard 5), Jack of All Trades, Song of Rest. College of Eloquence: Silver Tongue (Persuasion+Deception treat d20 roll 9 or lower as 10), Unsettling Words (BA: expend Bardic Inspiration die, target subtracts roll from next save before your next turn). Warlock (Hexblade): Hexblade's Curse (BA, 30ft, +Proficiency damage vs cursed target, crit 19-20, regain HP=Warlock level on kill, 1/short or long rest); Hex Warrior (use CHA for attack/damage with one chosen one-handed weapon -- gladius chosen; proficiency with medium armor and shields gained but she still wears leather). 1 Pact Magic slot (1st level, recharges on short or long rest, tracked separately from Bard slots). Weapons: Dagger (Pugio) +5 / 1d4+3, Vicious Mockery (cantrip) 1d4 psychic DC 14. Equipment: Leather Armor, Dagger (Pugio), Frame drum (spellcasting focus), Augural staff (ceremonial), Chronicle + ink + quill, Disguise kit, Forgery kit, 15gp. Personality: listens more than speaks; Knowledge is the only authority that cannot be revoked; carries a history Rome tried to erase. Passive Perception 15."
 }

@@ -254,9 +254,11 @@ response — see Session 3 entry below. About to depart for the forest.
 - Contents of Lucius's lockbox (personal, not political — reveal in play)
 - Whether Brutus knows his goals align with Mars's, or is being used
 - Whether Vercingetorix's binding can actually be ended by the spear's destruction
-- Varro's ultimate fate (dies / captured / broken free) — resolves at the start of Session 3
 - Whether the two chieftains' cult faction knows it serves Mars, or believes it serves
   something else Mars is simply wearing
+
+**Resolved threads (do not re-open):**
+- **Varro's fate** — dead. Killed by Ursula at the gate. Declared "I did this for Rome" before falling. Confirmed Session 3 cold open.
 
 ---
 
@@ -278,30 +280,33 @@ box he guards closely.
 
 Everything else: per script, unless corrected here later.
 
-## Session 3: Through the Dark Forest — IN PROGRESS
+## Session 3: Through the Dark Forest — COMPLETE
 
-**Cold open, as played:** The Varro/Ursula gate fight resolved with Varro's death.
-Afterward, the party prayed to the gods at the fort. Mars answered directly, speaking
-of his hunger and of the history between Vercingetorix and Caesar (the Alesia betrayal,
-the spear passing hands, the two-hundred-year unfinished war — see "THE REAL STORY"
-above). Janus also spoke, and told the party that Mars is neither simply good nor
-simply evil. A message was carved into the ground: **"Mars sees everything."** The party
-also learned Tribune Lucius's Germanic-fostering heritage.
+**Cold open:** Varro/Ursula gate fight resolved. **Varro is dead.** Declared "I did this
+for Rome" before falling. Ursula survives. This closes the Session 2 cliffhanger.
 
-**Major deviation from plan — flag for Session 4-5 prep:** The Vercingetorix/Caesar
-backstory was written to surface gradually through play (knowledge checks, Thusnelda's
-hints) and land as a full first confirmation in Vercingetorix's Final Death monologue
-in Session 5. The party now already has this history directly from Mars, two sessions
-early. When prepping Sessions 4-5: do not write scenes as if this is new information to
-the party; Vercingetorix's Final Death in Session 5 should read as *confirmation and
-emotional weight from him personally*, not as the first reveal of facts they already
-have. Also note: **Janus has now appeared as an active divine figure**, unestablished
-anywhere else in the campaign's written material (only Mars was designed as the Divine
-Antagonist). Decide his role — one-time messenger, recurring presence, or otherwise —
-before Session 4 prep, and give him an OGAS if he's going to recur.
+**Divine intervention — major deviation from plan:** The party prayed to the gods at the
+fort before departing. Two gods answered directly:
+- **Mars** spoke of his hunger and the history — the Alesia betrayal, the spear passing
+  hands, the two-hundred-year unfinished war (see THE REAL STORY above). Party now has
+  this history in full, two sessions earlier than planned.
+- **Janus** appeared as an active divine figure — told the party Mars is neither simply
+  good nor evil. This is the first time Janus appears anywhere in the campaign material.
+  He needs an OGAS before Session 4 prep if he is going to recur.
+- A message was carved into the ground: **"Mars sees everything."**
 
-Everything else this session: not yet played / not yet reported. Update this entry
-further as the rest of Session 3 unfolds.
+**Lucius's heritage revealed:** Party learned Tribune Lucius was fostered among a Germanic
+tribe as a boy. Exact mechanism of reveal (lockbox contents, his own admission, or
+otherwise) not yet recorded — confirm with table and update here.
+
+**Flag for Session 4-5 prep:** Do not write the Vercingetorix/Caesar backstory as if it
+is news to the party. His Final Death monologue in Session 5 should be *confirmation and
+emotional weight from him personally*, not a first reveal. The party already knows the
+shape of the story from Mars himself.
+
+**Everything else this session (forest journey, bog, village, grove, sacrifice circle):**
+Played or in progress per chapter3.qmd. Record specific deviations here after the next
+table session.
 
 ---
 

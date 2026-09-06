@@ -85,6 +85,24 @@ SKILL_ABILITY = {
 
 ABILITIES = ["STR", "DEX", "CON", "INT", "WIS", "CHA"]
 
+def get_class_levels(cs):
+    """Return [{"name","level","subclass"}, ...]. Reads cs["classes"] if present
+    (multiclass characters), otherwise falls back to the single class/level/subclass
+    fields (backward compatible with every existing single-class sheet)."""
+    if "classes" in cs:
+        return cs["classes"]
+    return [{"name": cs.get("class", ""), "level": cs.get("level", 1),
+             "subclass": cs.get("subclass", "")}]
+
+def class_display_string(classes):
+    parts = []
+    for c in classes:
+        s = f"{c['name']} {c['level']}"
+        if c.get("subclass"):
+            s += f" ({c['subclass']})"
+        parts.append(s)
+    return " / ".join(parts)
+
 ALL_CLASSES = ["Artificer", "Barbarian", "Bard", "Cleric", "Druid", "Fighter",
                "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
 
@@ -136,7 +154,7 @@ def calc_skills(cs):
     1d20 + AbilityMod + (Proficiency * SkillFlag)
     0 = not proficient, 1 = proficient, 2 = expertise.
     skill_overrides supply total bonuses; we back-convert to the closest flag."""
-    pb        = prof_bonus(cs["level"])
+    pb        = prof_bonus(sum(c["level"] for c in get_class_levels(cs)))
     profs     = set(cs.get("skill_proficiencies", []))
     expertise = set(cs.get("expertise", []))
     overrides = cs.get("skill_overrides", {})
@@ -397,13 +415,13 @@ def _prop(key, value):
 
 def build_content_xml(cs, image_md5):
     scores  = cs["ability_scores"]
-    level   = cs["level"]
+    classes = get_class_levels(cs)
+    level   = sum(c["level"] for c in classes)
     pb      = prof_bonus(level)
     skills  = calc_skills(cs)
     saves   = calc_saves(cs)
     ac      = calc_ac(cs)
-    cls     = cs.get("class", "")
-    hd      = CLASS_HD.get(cls, 8)
+    cls     = classes[0]["name"]  # primary class: drives shared spell-slot lookup
     slots   = SPELL_SLOTS_L3.get(cls, [0]*9)
 
     spell_ab  = cs.get("spellcasting_ability", "")
@@ -427,19 +445,22 @@ def build_content_xml(cs, image_md5):
     props["Proficiency"]   = pb
 
     # ── Class & race ─────────────────────────────────────────────────────────
-    props["Class"]         = cls
-    props["TrueClass"]     = cls
+    class_display           = class_display_string(classes)
+    props["Class"]         = class_display
+    props["TrueClass"]     = class_display
     props["Race"]          = cs.get("race", "")
     props["TrueRace"]      = cs.get("race", "")
     props["Creaturetype"]  = "Humanoid"
 
-    # ── Class levels (one field per class, 0 if not that class) ──────────────
+    # ── Class levels (one field per class, 0 if not that class; sums if a
+    #    character has taken the same class twice across a "classes" list) ────
     for c in ALL_CLASSES:
-        props[c] = level if c == cls else 0
+        props[c] = sum(entry["level"] for entry in classes if entry["name"] == c)
 
-    # ── Hit dice ──────────────────────────────────────────────────────────────
+    # ── Hit dice (summed per die size across all classes taken) ───────────────
     for die in [4, 6, 8, 10, 12, 20]:
-        props[f"HD{die}"]     = level if die == hd else 0
+        props[f"HD{die}"]     = sum(entry["level"] for entry in classes
+                                     if CLASS_HD.get(entry["name"], 8) == die)
         props[f"UsedHD{die}"] = 0
 
     # ── Ability scores ────────────────────────────────────────────────────────
@@ -599,7 +620,9 @@ def generate_token(sheet_path, output_dir):
         zf.writestr("thumbnail", thumb)
         zf.writestr("thumbnail_large", png)
 
-    print(f"  {cs['name']:<28} {cs.get('class','?'):<12} L{cs['level']} AC{ac:<4} {role}  [{portrait_src}]")
+    classes = get_class_levels(cs)
+    level   = sum(c["level"] for c in classes)
+    print(f"  {cs['name']:<28} {class_display_string(classes):<24} L{level} AC{ac:<4} {role}  [{portrait_src}]")
 
 
 def main():
