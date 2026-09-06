@@ -312,8 +312,45 @@ He waves a hand at the shelves before you can ask. *"Everything you see, take. E
 |---|---|---|
 | Two days' iron rations | 1sp | No exhaustion penalty for two travel days |
 | Waterskin | 2sp | Holds 4 pints; covers half a day's hydration requirement |
+| Forest expedition crate (per person) | 25gp | Ten days of preserved rations, two waterskins, ten torches, 50 ft of rope, a tinder box, and ten iron spikes, packed and ready today |
 
-**Repair work:** Aelius fixes what you bring him, if you can wait. Minor repair (edge, hilt, a loose rivet): 30 minutes, free if you supply the metal, 1sp if he does. Major repair (bent blade, cracked haft): 2 hours, DC 14 Strength check, 1sp in materials. Armor plate repair: 1 hour, no check, 1sp. *"Bring it back after the forest, if it's still in one piece. I'll still be here. Probably."*
+*Ranged weapons and slings*
+
+| Item | Cost | Mechanical effect |
+|---|---|---|
+| Funda (sling) | 2gp | Simple weapon; damage and range set by ammunition loaded |
+| Shortbow | 25gp | 1d6 piercing, two-handed, range 80/320 ft |
+| Reinforced quiver (40 arrows) | 8gp | Holds 40 arrows or bolts without adding to encumbrance (a standard quiver holds 20) |
+
+*Sling ammunition (per 20)*
+
+| Item | Cost | Mechanical effect |
+|---|---|---|
+| Lead sling bullets | 5cp | Standard sling ammunition |
+| Whistling bullets | 2gp | Near-miss by 4 or less forces a DC 12 Wisdom save (DC 14 vs. mounts) or disadvantage on the target's next attack |
+| Inscribed bullets | 1gp | If the target watches them being loaded (DC 12 Perception), a failed DC 10 Wisdom save gives disadvantage on their first attack |
+| Terracotta shot | 6sp | Longest range of the three; can also be cast in the field with clay and a mold |
+| Clay incendiary shot | 2gp | +1d4 fire on a hit; sets flammable objects and clothing alight |
+
+*Armor and clothing*
+
+| Item | Cost | Mechanical effect |
+|---|---|---|
+| Hide or leather armor | 4gp | Light armor, 11 + Dex modifier |
+| Galea Coolus (iron helmet) | 10gp | +1 AC; advantage on saves vs. sound-based fear, disadvantage on hearing-based Perception |
+| Leather gauntlets | 2gp | +1 AC (hand/wrist); disadvantage on Sleight of Hand |
+| Traveling cloak (birrus) | 3gp | Advantage on Con saves vs. cold and rain |
+| Military boots | 5gp | Advantage on Con saves vs. cold and wet ground |
+
+*Curious wares (open stock, but he doesn't display these)*
+
+| Item | Cost | Mechanical effect |
+|---|---|---|
+| Smith's votive bundle (offering to Mars) | 10gp | Burn before a Religion check reading an omen or battlefield sign: advantage on that check |
+| Sacred Amber Amulet (*Bernstein-Talisman*) | 90gp | *Wondrous item, uncommon, requires attunement.* Advantage on saves vs. fear; add Wisdom modifier to initiative; 1/day reduce psychic damage to 0 (amulet cracks each use, shatters after three) |
+| Ghost-Ash Charm | 120gp | *Wondrous item, uncommon.* Advantage on saves vs. Frightened. 1/long rest, a critical hit that would drop you to 0 HP is treated as a normal hit instead. Crumbles to ash on use; cannot be recharged |
+
+**Repair work:** Aelius fixes what you bring him, if you can wait. Minor repair (edge, hilt, a loose rivet): 30 minutes, free if you supply the metal, 5gp if he does. Major repair (bent blade, cracked haft): 2 hours, DC 14 Strength check, 5gp in materials. Armor or shield repair: 1 hour, no check, 10gp. *"Bring it back after the forest, if it's still in one piece. I'll still be here. Probably."*
 
 ---
 
@@ -341,6 +378,14 @@ The storeroom has a three-dial iron lock. Each dial has three symbols. Aelius of
 | Angon (barbed javelin) | 8gp | Thrown (20/40 ft), 1d8 piercing; catches in a shield (halves its AC bonus) or in flesh (1d6 more, removing it) |
 | Trilobate arrows (20) | 8sp | Ignores the Dexterity contribution to AC from flexible armor; a crit forces a DC 13 Con save or one level of exhaustion |
 | Scythicon poison arrow, each | 1gp | 2d6 poison on a failed DC 14 Con save, half on success |
+
+Wrapped in oilcloth at the back, two items that did not come from Aelius's own forge:
+
+::: {.dm-note}
+**Rune-Carved Weapon** (any weapon, uncommon; see `germanic_tribes.qmd`, Germanic Magic Items). This one still has roughly three weeks left on its carving before it needs to be re-cut by a trained rune-carver -- pick or roll a rune from the table in that chapter for its active effect. Aelius doesn't know what the rune does; he knows it came off a warrior who didn't need it anymore. Price: 40 gp (a used carving, not a fresh one).
+
+**Cursed Bog-Iron Blade** (shortsword or dagger, uncommon, cursed; see `germanic_tribes.qmd`, Germanic Magic Items). Deals +1d4 necrotic to living creatures and counts as magical, but the wielder cannot willingly part with it and must save daily against preferring it to any better option. Aelius does not know it is cursed. He knows it never rusts, that the last three owners stopped talking about it, and that he wants it out of his storeroom. Price: 8 gp -- he is not haggling this one up, and if pressed on why it's so cheap, he shrugs. *"Never took to me. Good blade, though."*
+:::
 
 A scratched clay tablet in Germanic sits under the francisca rack. Investigation DC 13 or Germanic language proficiency: a supply list from Vercingetorix's own blacksmith, matching Aelius's forge records line for line. Aelius has been supplying the enemy chieftain off the books for two years.
 

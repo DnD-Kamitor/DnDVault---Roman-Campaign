@@ -10,7 +10,7 @@
 | Fire arrow | Pitch-wrapped arrow | +1d4 | fire |  | 0.1 | 0.1 | limited |
 | Barbed arrow | Barbed arrow | standard | piercing |  | 0.1 | 0.07 | limited |
 | Arcuballista bolt | Heavy crossbow bolt | +2 | piercing |  | 0.3 | 0.2 | standard |
-| Sagitta ferrea frigida | Cold-iron arrowhead | standard | piercing |  | 0.1 | 0.08 | aelius |
-| Sagitta cuneata | Bodkin arrow | standard | piercing |  | 0.1 | 0.08 | aelius |
-| Sagitta trilobata | Trilobate arrow | standard | piercing |  | 0.1 | 0.15 | aelius |
-| Sagitta scythica | Scythicon poison arrow | standard | piercing |  | 0.1 | 1 | aelius |
+| Sagitta ferrea frigida | Cold-iron arrowhead | standard | piercing |  | 0.1 | 2 | aelius |
+| Sagitta cuneata | Bodkin arrow | standard | piercing |  | 0.1 | 1 | aelius |
+| Sagitta trilobata | Trilobate arrow | standard | piercing |  | 0.1 | 3 | aelius |
+| Sagitta scythica | Scythicon poison arrow | standard | piercing |  | 0.1 | 25 | aelius |

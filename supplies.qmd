@@ -774,11 +774,13 @@ Services (rumours, combat drills, guides) are purchased through conversation, no
 
 ## Aelius Rufus's Forge
 
-The last smithy before the forest road. Aelius sells everything in the Weapons, Ammunition, and Shields catalogs above at the standard price, along with a few things that never make it onto a fort requisition list.
+The last smithy before the forest road. Aelius sells everything in the Weapons, Ammunition, and Shields catalogs above at the standard price, along with a few things that never make it onto a fort requisition list, packed for people who know they will not be resupplied for a while.
 
 {{< include _generated/ref_aelius.md >}}
 
 He does not haggle, and he does not ask what the cold-iron is for.
+
+The last two items are not something a legionary requisitions through normal channels. The *Bernstein-Talisman* is documented Germanic trade goods (see `germanic_tribes.qmd`); the Ghost-Ash Charm is not documented anywhere, and Aelius would rather it stayed that way.
 
 
 ## Exotic Goods as Story Currency

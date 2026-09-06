@@ -13,3 +13,6 @@
 | Instrumenta scalaria | Climbing pitons and hammer | misc | 2 | 20 | Universal | vicus |
 | Ferramenta furum | Thieves' tools | misc | 1 | 25 | Universal | vicus |
 | Instrumenta herbarum | Herbalism kit | misc | 3 | 35 | Universal | vicus |
+| Pharetra ferrata | Reinforced quiver (40 arrows) | misc | 2 | 8 | Universal | aelius |
+| Bernstein-Talisman | Sacred Amber Amulet | neck | 1 | 90 | Germanic | aelius |
+| Talismanum cineris | Ghost-Ash Charm | neck | 0.5 | 120 | Germanic | aelius |
