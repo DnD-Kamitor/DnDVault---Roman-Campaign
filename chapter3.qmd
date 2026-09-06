@@ -260,16 +260,60 @@ The party passes the smithy on the way out of the vicus — last structure befor
 
 ---
 
-**What Aelius can provide (trade or silver):**
+**What Aelius can provide (open stock, trade or silver):**
+
+He waves a hand at the shelves before you can ask. *"Everything you see, take. Everything behind the door, that's a longer conversation."*
+
+*Weapons and blades*
+
+| Item | Cost | Mechanical effect |
+|---|---|---|
+| Spare gladius | 6sp | Standard 1d6+Str |
+| Pugio (military dagger) | 3sp | 1d4 piercing, finesse, light, thrown (20/60 ft); advantage while grappling or grappled |
+| Dolabra (pick-axe) | 4sp | 1d8 piercing, two-handed; double damage against stone, timber, or earthwork barriers |
+| Securis (hand axe) | 3sp | 1d6 slashing, light, thrown (20/60 ft) |
+| Hasta (infantry spear) | 3sp | 1d8 piercing, reach, two-handed; a braced set deals double damage against a charging attacker |
+| Repaired shield | 3sp | Standard shield |
+| Shield boss and rim repair | 1sp | Restores a damaged shield to its full AC bonus |
+
+*Ammunition*
+
+| Item | Cost | Mechanical effect |
+|---|---|---|
+| Cold-iron arrowheads (6) | 4sp | Bypasses non-magical weapon resistance on spirits and fey |
+| Bodkin arrows (20) | 5sp | Ignores the AC bonus of non-metal armor |
+| Broadhead arrows (20) | 6sp | Critical hit deals an additional 1d4 piercing at the start of the target's next turn |
+| Fire arrows (10) | 1sp | +1d4 fire against flammable targets; Frightened save if the target is set alight |
+| Barbed arrows (20) | 7sp | Careless removal deals 1d4 piercing; embedded head bleeds for 1 damage a turn |
+| Lead sling bullets (20) | 5cp | Standard sling ammunition |
+| Iron caltrops (bag of 25) | 2sp | 10-ft square, DC 13 Dex save or speed halved + 1 piercing |
+
+*Fire and field alchemy*
 
 | Item | Cost | Mechanical effect |
 |---|---|---|
 | Flask of fire oil | 5sp | Thrown, 10-ft splash, 1d4 fire on impact + 1d4 fire at start of next turn |
-| Iron caltrops (bag of 25) | 2sp | 10-ft square, DC 13 Dex save or speed halved + 1 piercing |
-| Cold-iron arrowheads (6) | 4sp | Bypasses non-magical weapon resistance on spirits and fey |
-| Repaired shield | 3sp | Standard shield |
-| Spare gladius | 6sp | Standard 1d6+Str |
+| Tinder box | 2sp | Lights a torch or other prepared fuel without penalty |
+| Torches (10) | 1sp | 20-ft bright light, 20-ft dim, 1 hour each |
+
+*Tools and camp gear*
+
+| Item | Cost | Mechanical effect |
+|---|---|---|
+| Rope, hemp (50 ft) | 3sp | Reduces climbing DC by 5 when secured |
+| Grappling hook | 5sp | Thrown 60 ft; DC 12 Dex or Athletics to set |
+| Crowbar | 3sp | Advantage forcing doors, hasps, or fitted stonework |
+| Iron spikes (10) | 1sp | Anchors a rope, or braces a door (+3 to its forced-open DC per spike, stacking) |
+| Whetstone | 5cp | Removes disadvantage from a single notched or dulled blade |
+
+*Provisions*
+
+| Item | Cost | Mechanical effect |
+|---|---|---|
 | Two days' iron rations | 1sp | No exhaustion penalty for two travel days |
+| Waterskin | 2sp | Holds 4 pints; covers half a day's hydration requirement |
+
+**Repair work:** Aelius fixes what you bring him, if you can wait. Minor repair (edge, hilt, a loose rivet): 30 minutes, free if you supply the metal, 1sp if he does. Major repair (bent blade, cracked haft): 2 hours, DC 14 Strength check, 1sp in materials. Armor plate repair: 1 hour, no check, 1sp. *"Bring it back after the forest, if it's still in one piece. I'll still be here. Probably."*
 
 ---
 
@@ -287,7 +331,18 @@ The storeroom has a three-dial iron lock. Each dial has three symbols. Aelius of
 - **Religion DC 11 (passive: Mars as patron of smithcraft):** Mars's liturgical craft sequence is anvil-to-iron-to-blade. Unlocks with a spoken phrase; Aelius nods approvingly.
 - **Brute force (Strength DC 16):** Opens it, but Aelius docks 3sp from everything the party buys, and he does not mention the courier.
 
-**Inside:** Everything on the table above, plus a scratched clay tablet in Germanic. Investigation DC 13 or Germanic language proficiency: a supply list from Vercingetorix's own blacksmith — the list matches Aelius's forge records exactly. Aelius has been supplying the enemy chieftain off the books for two years.
+**Inside:** Everything from the open stock above, at half the listed price now that you're past the lock, plus the stock he doesn't keep on the shelves:
+
+| Item | Cost | Mechanical effect |
+|---|---|---|
+| Framea (Germanic thrusting spear) | 2gp | Versatile 1d6/1d8 piercing, thrown (20/60 ft), retrievable; +1d4 damage if the wielder charged 20 ft before the attack |
+| Seax (single-edged blade) | 5gp | 1d6 slashing, finesse, light; +1d4 slashing on the first attack if the wielder moved 10 ft beforehand |
+| Francisca (throwing axe), each | 6gp | Thrown (15/30 ft), 1d6 slashing; a near-miss (by 4 or less) forces a DC 12 Wisdom save or disadvantage on the target's next attack |
+| Angon (barbed javelin) | 8gp | Thrown (20/40 ft), 1d8 piercing; catches in a shield (halves its AC bonus) or in flesh (1d6 more, removing it) |
+| Trilobate arrows (20) | 8sp | Ignores the Dexterity contribution to AC from flexible armor; a crit forces a DC 13 Con save or one level of exhaustion |
+| Scythicon poison arrow, each | 1gp | 2d6 poison on a failed DC 14 Con save, half on success |
+
+A scratched clay tablet in Germanic sits under the francisca rack. Investigation DC 13 or Germanic language proficiency: a supply list from Vercingetorix's own blacksmith, matching Aelius's forge records line for line. Aelius has been supplying the enemy chieftain off the books for two years.
 
 *If the party confronts him about it:* He doesn't deny it. *"He pays in silver and doesn't burn the building. The Legate's never asked me directly. That's always been the arrangement."*
 
