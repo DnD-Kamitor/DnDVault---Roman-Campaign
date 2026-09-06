@@ -104,7 +104,7 @@ green with the same glow, a tally-marked stick counting days (the cult has been 
 long time), and -- in the second cache -- a torn strip of cloth matching the two
 chieftains' warband colors, the third and final confirmation this is the right place.
 
-**The encounter:** 2 **Banshees** rise from the marsh itself as the party crosses --
+**The encounter:** 3 **Banshees** rise from the marsh itself as the party crosses --
 early followers who didn't survive tending this place, still bound to it.
 
 ::: {.dm-note}
@@ -112,9 +112,9 @@ early followers who didn't survive tending this place, still bound to it.
 investigate the caches and start crossing first -- the Banshees rise when the party is
 mid-causeway, roughly a third of the way across, so the fight happens with the party
 split between solid ground and the narrow bone path (no easy retreat, no easy grouping).
-Stagger their Wails -- do not let both go off in the same round, or the fight ends
-before it starts. One Banshee should hold her Wail in reserve as the "spike" if the
-first one lands early.
+Stagger Wails across all three -- never two in the same round. The third Banshee holds
+her Wail in reserve as the "spike" once the first two have landed; run them as a unit
+with coordinated timing, not three individuals acting independently.
 :::
 
 </details>
@@ -138,16 +138,18 @@ not war dead thrown in a pile. They're sorted -- by size, by age, deliberately. 
 has been curating this room for months, not years. This matches the tally-stick found at
 the marsh.
 
-**The encounter:** 2 **Bone Nagas**, coiled among the bones, indistinguishable from the
-dead until they move.
+**The encounter:** 2 **Bone Nagas** coiled among the bones, indistinguishable from the
+dead until they move -- plus **4 Skeletons** that animate from the bone floor the moment
+the Nagas act, rising from the pile rather than appearing from offscreen.
 
 ::: {.dm-note}
-**Trigger:** they do not attack on sight -- they wait until a character disturbs the
-bone floor (walking across it counts) or casts a spell, then act on the following
-initiative. Use their spellcasting to control rather than just deal damage -- Hold
-Person on whoever looks like the party's main damage dealer, Ray of Enfeeblement on a
-melee striker. Two spellcasting undead stacking control effects is the actual threat
-here, not their bite.
+**Trigger:** the Nagas wait until a character disturbs the bone floor (walking across it
+counts) or casts a spell, then act on the following initiative. The Skeletons rise
+simultaneously on the Nagas' first turn -- same trigger, not a second wave. Run them as
+a screen: they absorb opportunity attacks and force the party to split attention while
+the Nagas stack control. Use Hold Person on the main damage dealer, Ray of Enfeeblement
+on a melee striker. Two controlling undead plus four threatening chaff is the actual
+threat here, not the Nagas' bite.
 :::
 
 </details>
@@ -203,15 +205,16 @@ never completed a working. It's a practice space -- every mark on it is a false 
 ritual begun and abandoned. Whatever the cult was building up to happened somewhere
 else, not here.
 
-**The encounter:** 2 **Shadow Demons**, using the four pillars to break line of sight
+**The encounter:** 3 **Shadow Demons**, using the four pillars to break line of sight
 constantly.
 
 ::: {.dm-note}
 **Trigger:** on sight when the party enters -- but they immediately use Shadow Stealth
 to vanish between the pillars rather than engaging directly. This should feel like being
-stalked around a small room, not a straight fight. They strike from different pillars
-each round. A party that stands still and fights fair loses initiative repeatedly; a
-party that spreads out to cover multiple pillars does much better.
+stalked around a small room, not a straight fight. Three demons means no pillar is ever
+truly safe; the party cannot simply spread out and cover them all. They strike from
+different pillars each round. A party that floods the room with light sources to deny
+dim-light hiding does much better -- reward that creativity directly.
 :::
 
 </details>
@@ -320,11 +323,14 @@ were all one working, and this was always where it was going.
 **The guardian:** a **Glabrezu**, bound to the focus, not merely standing near it.
 
 ::: {.dm-note}
-**This is the dungeon's real boss fight.** The Glabrezu opens with Darkness centered on
-the dais to protect the focus, then uses Confusion and Power Word Stun to isolate
-whoever gets closest to the crystal. If the fight is going very badly for the party,
-the Glabrezu will not chase a fleeing party far from the dais -- its purpose is guarding
-the focus, not hunting the party through the dungeon.
+**This is the dungeon's real boss fight.** The binding to the crystal-star focus grants
+the Glabrezu boss-tier actions -- give it **3 Legendary Actions** per round (Pincer
+Strike: one claw attack; Tear: two claw attacks, costs 2 actions; Planar Pulse:
+recharge 5-6, one target DC 15 CON or stunned until end of its next turn, costs 3
+actions) and **Legendary Resistance 1/day**. The Glabrezu opens with Darkness centered
+on the dais to protect the focus, then uses Confusion and Power Word Stun to isolate
+whoever gets closest to the crystal. It does not chase a fleeing party far from the
+dais -- its purpose is guarding the focus, not hunting.
 
 **The actual payoff of this session:** once the Glabrezu is dealt with (killed, or the
 party otherwise ends the fight), the crystal itself can be examined or interacted with.
