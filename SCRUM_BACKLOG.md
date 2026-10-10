@@ -776,7 +776,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** 15-20 unit tests.
 - **Testable:** Executed via `python3 -m unittest tests/test_audio_integrity.py`.
 - **Acceptance criteria:** Tests existence, header bytes, non-zero duration, and manifest consistency for all S4 & S5 clips.
-- **Status: TODO**
+- **Status: DONE** (2026-10-10) — Built `tests/test_audio_integrity.py` with 18 automated unit tests covering manifest structure, file existence, MP3/ID3 binary headers, minimum sizes, and character voices (18/18 passing).
 
 ### Story 13.3 — GM Cheat Cards & HTML5 Audio Player Tests (15+ tests)
 - **Independent:** Standalone test suite in `tests/test_cheat_cards.py`.
