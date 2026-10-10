@@ -65,6 +65,9 @@
 
   .note { background: #0f0f1a; border-left: 3px solid #5a5aaa; padding: 4px 8px; font-size: 0.8em; color: #9898cc; margin: 3px 0; }
   .clock { background: #1a0a00; border: 1px solid #5a3a00; padding: 5px 8px; font-size: 0.82em; color: #d4884a; margin: 3px 0; }
+  .audio-btn { background: #2a1f0a; border: 1px solid #c8a84b; color: #ffd700; padding: 2px 7px; font-size: 0.76em; cursor: pointer; border-radius: 3px; margin-left: 8px; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; transition: background 0.15s, color 0.15s; }
+  .audio-btn:hover { background: #3d2d10; color: #fff; }
+  .audio-btn.playing { background: #8a2a2a; border-color: #ff6b6b; color: #fff; }
 </style>
 </head>
 <body>
@@ -136,7 +139,7 @@
 <!-- ═══ SCENE 0 ═══ -->
 <div id="tab-s0" class="tab-pane">
 <div class="block">
-  <div class="block-title">Read Aloud</div>
+  <div class="block-title">Read Aloud <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s5_scene0_descent_readaloud.mp3')">▶ Voice</button></div>
   <div class="ra">The crystal-star's light does not fade when the demon guarding it falls. It gets worse. Cracks spread across its faces like frost across a window... In the silence where Tribune Lucius once stood, the stone floor shudders. Whatever this crystal feeds, it just fed it more than it wanted -- and the only stairs lead down.</div>
 </div>
 <div class="block">
@@ -166,7 +169,7 @@
 <!-- ═══ SCENE 3 ═══ -->
 <div id="tab-s3" class="tab-pane">
 <div class="block">
-  <div class="block-title">Vercingetorix, Bound — Duel (CR 11, HP 150, AC 18)</div>
+  <div class="block-title">Vercingetorix, Bound — Duel (CR 11, HP 150, AC 18) <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s5_vercingetorix_entrance.mp3')">▶ Entrance</button></div>
   <table>
     <tr><td class="k">Dread Spatha (x3)</td><td class="v">+9 to hit, 1d8+5 slash + 2d8 necrotic</td></tr>
     <tr><td class="k">Parry (Reaction)</td><td class="v">+4 to AC against one melee attack</td></tr>
@@ -176,7 +179,7 @@
 </div>
 <div class="dec"><strong>If Relentless triggers:</strong> say so plainly. "He should be dead. He isn't."</div>
 <div class="ho">
-  <strong>Final Death (1 min lucid):</strong> Delivers the unmaking secret: <em>"The four iron chain winches at the granite altar... forged by Caesar's engineers to bind a god. Lock the four iron rings... shatter his armor... only then can the spear break!"</em> Dissolves to ash.
+  <strong>Final Death (1 min lucid): <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s5_vercingetorix_final_death.mp3')">▶ Final Death Secret</button></strong> Delivers the unmaking secret: <em>"The four iron chain winches at the granite altar... forged by Caesar's engineers to bind a god. Lock the four iron rings... shatter his armor... only then can the spear break!"</em> Dissolves to ash.
 </div>
 </div>
 
@@ -184,9 +187,9 @@
 <div id="tab-s4" class="tab-pane">
 <div class="block">
   <div class="block-title">The Antechamber & Threshold of Janus</div>
-  <div class="note"><strong>Threshold of Janus:</strong> Dual-faced vision flickers at the archway: <em>"Mars is neither good nor evil. He is war itself. Choose how you cross this threshold."</em></div>
+  <div class="note"><strong>Threshold of Janus: <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s5_janus_threshold.mp3')">▶ Janus Whispers</button></strong> Dual-faced vision flickers at the archway: <em>"Mars is neither good nor evil. He is war itself. Choose how you cross this threshold."</em></div>
   <table>
-    <tr><td class="k">Mars Avatar</td><td class="v">CR 20, AC 22 / 16, HP 300. Multiattack 4 Divine Pilum (+10, 2d8+6+1d8 rad/fire), Smite +3d8 rad, Leg. Resist 3/day, Leg. Actions ×3.</td></tr>
+    <tr><td class="k">Mars Avatar <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s5_mars_challenge.mp3')">▶ Challenge</button></td><td class="v">CR 20, AC 22 / 16, HP 300. Multiattack 4 Divine Pilum (+10, 2d8+6+1d8 rad/fire), Smite +3d8 rad, Leg. Resist 3/day, Leg. Actions ×3.</td></tr>
     <tr><td class="k">Wight Cameo</td><td class="v">If spared in S1: rises once. "I held this three hundred years... glad I do not have to decide." Released upon ending.</td></tr>
   </table>
 </div>
@@ -198,9 +201,9 @@
   <div class="block-title">The Three Horrible Options — Dynamic Ritual</div>
   <table>
     <tr><th>Option</th><th>Cost & Mechanics</th></tr>
-    <tr><td class="k">1. Destroy</td><td class="v"><strong>R1:</strong> Lock chains (DC13 Athl/Tools) -> Mars AC drops to 16, loses Leg. Resist!<br><strong>R2:</strong> Sever bloodline (DC14 Relig/Arcana) -> multiattack drops to 2, smite silenced!<br><strong>R3:</strong> Shatter spear!<br><strong>Cost:</strong> A PC must take the chains permanently. (Lucius is dead).</td></tr>
+    <tr><td class="k">1. Destroy <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s5_mars_destroy_reaction.mp3')">▶ Mars Roar</button></td><td class="v"><strong>R1:</strong> Lock chains (DC13 Athl/Tools) -> Mars AC drops to 16, loses Leg. Resist!<br><strong>R2:</strong> Sever bloodline (DC14 Relig/Arcana) -> multiattack drops to 2, smite silenced!<br><strong>R3:</strong> Shatter spear!<br><strong>Cost:</strong> A PC must take the chains permanently. (Lucius is dead).</td></tr>
     <tr><td class="k">2. Give to Rome</td><td class="v">Party seals spear in iron case. Mars lashes out (30-40 party dmg) and departs. Crisis ends today; happens again to someone else's children.</td></tr>
-    <tr><td class="k">3. Give to Mars</td><td class="v">Return spear to altar. No fight. Mars walks away vindicated.</td></tr>
+    <tr><td class="k">3. Give to Mars <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s5_mars_depart_reaction.mp3')">▶ Mars Departs</button></td><td class="v">Return spear to altar. No fight. Mars walks away vindicated.</td></tr>
   </table>
 </div>
 <div class="dec"><strong>Corruption-5 PC:</strong> Mars addresses them by name before anyone else answers. Their honest answer carries real weight.</div>
@@ -257,6 +260,45 @@ function showTab(id, btn) {
   document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
   document.getElementById('tab-' + id).classList.add('active');
   btn.classList.add('active');
+}
+
+var currentAudio = null;
+var currentBtn = null;
+
+function playAudio(btn, file) {
+  if (currentAudio && !currentAudio.paused) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    if (currentBtn) {
+      currentBtn.classList.remove('playing');
+      currentBtn.innerHTML = currentBtn.getAttribute('data-default-text') || '▶ Voice';
+    }
+    if (currentBtn === btn) {
+      currentAudio = null;
+      currentBtn = null;
+      return;
+    }
+  }
+  if (!btn.hasAttribute('data-default-text')) {
+    btn.setAttribute('data-default-text', btn.innerHTML);
+  }
+  var audio = new Audio(file);
+  currentAudio = audio;
+  currentBtn = btn;
+  btn.classList.add('playing');
+  btn.innerHTML = '⏹ Stop';
+  audio.play().catch(function(err) {
+    console.warn("Audio playback error:", err);
+    btn.classList.remove('playing');
+    btn.innerHTML = btn.getAttribute('data-default-text');
+    alert("Could not play audio clip: " + file);
+  });
+  audio.onended = function() {
+    btn.classList.remove('playing');
+    btn.innerHTML = btn.getAttribute('data-default-text');
+    currentAudio = null;
+    currentBtn = null;
+  };
 }
 </script>
 </body>

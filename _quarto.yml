@@ -5,6 +5,7 @@ project:
   resources:
     - "gm_tools/*.html"
     - "npcs/*.json"
+    - "audio/clips/*.mp3"
 
 book:
   title: "The Shadow of Mars"

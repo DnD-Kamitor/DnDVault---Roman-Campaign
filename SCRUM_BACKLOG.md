@@ -690,6 +690,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** Simple HTML5 `<audio>` tag + lightweight play button CSS.
 - **Testable:** Opening cheat cards in browser shows audio buttons; clicking plays corresponding local clip.
 - **Acceptance criteria:** Audio buttons embedded in Scene tabs in `cheat_card_ch4.html` and `cheat_card_ch5.html`; graceful fallback if audio files are absent.
+- **Status: DONE** (2026-10-10) — Embedded HTML5 audio triggers with `.audio-btn` styling and dynamic `playAudio()` handling across all S4 and S5 scenes in `cheat_card_ch4.html` and `cheat_card_ch5.html`; added `audio/clips/*.mp3` to `_quarto.yml` resources.
 
 ### Story 11.5 — MapTool Macro / Token Audio Linking
 - **Independent:** Touches MapTool token macro files or handout notes for S4/S5 tokens.

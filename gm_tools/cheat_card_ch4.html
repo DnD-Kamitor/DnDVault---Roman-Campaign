@@ -65,6 +65,9 @@
 
   .note { background: #0f0f1a; border-left: 3px solid #5a5aaa; padding: 4px 8px; font-size: 0.8em; color: #9898cc; margin: 3px 0; }
   .clock { background: #1a0a00; border: 1px solid #5a3a00; padding: 5px 8px; font-size: 0.82em; color: #d4884a; margin: 3px 0; }
+  .audio-btn { background: #2a1f0a; border: 1px solid #c8a84b; color: #ffd700; padding: 2px 7px; font-size: 0.76em; cursor: pointer; border-radius: 3px; margin-left: 8px; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; transition: background 0.15s, color 0.15s; }
+  .audio-btn:hover { background: #3d2d10; color: #fff; }
+  .audio-btn.playing { background: #8a2a2a; border-color: #ff6b6b; color: #fff; }
 </style>
 </head>
 <body>
@@ -136,7 +139,7 @@
 <!-- ═══ SCENE 0 ═══ -->
 <div id="tab-s0" class="tab-pane">
 <div class="block">
-  <div class="block-title">Read Aloud</div>
+  <div class="block-title">Read Aloud <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_scene0_marsh_readaloud.mp3')">▶ Voice</button></div>
   <div class="ra">The trees thin out and the ground goes soft underfoot before you see why. Ahead, the hillside opens in a mouth — not a metaphor. A skull carved from the living rock... A causeway of bone and old skulls runs down into a wide, glowing green marsh.</div>
 </div>
 <div class="clock">
@@ -150,7 +153,7 @@
   </ul>
 </div>
 <div class="block">
-  <div class="block-title">3 &times; <a href="https://www.dndbeyond.com/monsters/16799-banshee" target="_blank" style="color:#aac8ff;">Banshee</a> &mdash; CR 4 (HP 58 each, AC 12, <em>MM</em> p. 23)</div>
+  <div class="block-title">3 &times; <a href="https://www.dndbeyond.com/monsters/16799-banshee" target="_blank" style="color:#aac8ff;">Banshee</a> &mdash; CR 4 (HP 58 each, AC 12, <em>MM</em> p. 23) <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_banshee_dread_mother.mp3')">▶ Banshee Wail</button></div>
   <table>
     <tr><td class="k">Corrupting Touch</td><td class="v">+4 to hit, 3d6+2 necrotic</td></tr>
     <tr><td class="k">Horrifying Visage</td><td class="v">DC 13 Wis, fear + aging 1d4×10 yrs</td></tr>
@@ -207,7 +210,7 @@
   <div class="ra">Rows of worn stone mark where dozens once knelt, facing a table still laid with offerings gone black. Something is still standing at that table.</div>
 </div>
 <div class="block">
-  <div class="block-title">3 &times; <a href="https://www.dndbeyond.com/monsters/17064-wraith" target="_blank" style="color:#aac8ff;">Wraith</a> (Chieftains) &mdash; CR 5 (HP 67 each, AC 13, <em>MM</em> p. 302)</div>
+  <div class="block-title">3 &times; <a href="https://www.dndbeyond.com/monsters/17064-wraith" target="_blank" style="color:#aac8ff;">Wraith</a> (Chieftains) &mdash; CR 5 (HP 67 each, AC 13, <em>MM</em> p. 302) <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_wraith_chieftain_confession.mp3')">▶ Chieftain Confession</button></div>
   <table>
     <tr><td class="k">Life Drain</td><td class="v">+6 to hit, 4d6+3 necrotic, DC 14 Con save vs max HP reduction</td></tr>
     <tr><td class="k">Create Specter</td><td class="v">Humanoid slain rises as specter under wraith control</td></tr>
@@ -228,7 +231,7 @@
   <p style="font-size:0.85em">The cult's real altar and the marsh's real source. Every drop of blood below was tribute funneled here. The rooms weren't separate encounters — one working, always heading here.</p>
 </div>
 <div class="block">
-  <div class="block-title"><a href="https://www.dndbeyond.com/monsters/16870-glabrezu" target="_blank" style="color:#aac8ff;">Glabrezu</a> (Core Guardian) &mdash; CR 9 (HP 157, AC 17, <em>MM</em> p. 58)</div>
+  <div class="block-title"><a href="https://www.dndbeyond.com/monsters/16870-glabrezu" target="_blank" style="color:#aac8ff;">Glabrezu</a> (Core Guardian) &mdash; CR 9 (HP 157, AC 17, <em>MM</em> p. 58) <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_glabrezu_core_entrance.mp3')">▶ Fiend Voice</button></div>
   <table>
     <tr><td class="k">HP 157 / AC 17</td><td class="v">Speed 40 ft, Magic Resistance, Resist cold/fire/lightning/nonmagical weapons</td></tr>
     <tr><td class="k">Multiattack</td><td class="v">2 Pincer (+9, 2d10+5, DC 15 grapple) + 2 Fist (+9, 2d4+5) or 2 Pincer + 1 spell</td></tr>
@@ -280,6 +283,45 @@ function showTab(id, btn) {
   document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
   document.getElementById('tab-' + id).classList.add('active');
   btn.classList.add('active');
+}
+
+var currentAudio = null;
+var currentBtn = null;
+
+function playAudio(btn, file) {
+  if (currentAudio && !currentAudio.paused) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    if (currentBtn) {
+      currentBtn.classList.remove('playing');
+      currentBtn.innerHTML = currentBtn.getAttribute('data-default-text') || '▶ Voice';
+    }
+    if (currentBtn === btn) {
+      currentAudio = null;
+      currentBtn = null;
+      return;
+    }
+  }
+  if (!btn.hasAttribute('data-default-text')) {
+    btn.setAttribute('data-default-text', btn.innerHTML);
+  }
+  var audio = new Audio(file);
+  currentAudio = audio;
+  currentBtn = btn;
+  btn.classList.add('playing');
+  btn.innerHTML = '⏹ Stop';
+  audio.play().catch(function(err) {
+    console.warn("Audio playback error:", err);
+    btn.classList.remove('playing');
+    btn.innerHTML = btn.getAttribute('data-default-text');
+    alert("Could not play audio clip: " + file);
+  });
+  audio.onended = function() {
+    btn.classList.remove('playing');
+    btn.innerHTML = btn.getAttribute('data-default-text');
+    currentAudio = null;
+    currentBtn = null;
+  };
 }
 </script>
 </body>
