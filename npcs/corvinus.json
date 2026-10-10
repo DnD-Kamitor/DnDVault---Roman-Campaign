@@ -41,11 +41,11 @@
   "macro_file": "",
   "token_color": "#8B1A1A",
   "portrait_file": "portraits/hans_holbein1.png",
-  "notes": "AC 15 (studded leather). Legate in command of Vindolanda garrison. Commands through intermediaries.",
-  "gm_notes": "Objective: secure the spear for his Triumph. Goal: keep the party deniable. Agenda: manage the debt to Brutus without anyone knowing. Secret: owes Brutus money -- Brutus owns him. Terrified of Lucius's arrival (watch for him glancing at the staircase twice in two minutes before Lucius arrives). Does not know there is a frumentarius in the assembled unit.",
-  "objective": "Secure the spear for his Triumph.",
-  "goal": "Keep the party deniable so blame lands elsewhere.",
-  "agenda": "Manage the debt to Brutus without anyone discovering it.",
-  "secret": "Owes Brutus money -- Brutus owns him completely.",
-  "session": 1
+  "notes": "AC 15 (studded leather). Commander of Vindolanda. Military authority damaged after Varro's treason and Lucius's death. Commands the party as a deniable auxiliary strike unit.",
+  "gm_notes": "Post-Session 3 state: Centurion Varro is dead (killed by Ursula after opening the gate); Tribune Lucius is dead (killed in S3 forest spider ambush). Corvinus is politically cornered. Deep secret: secretly wants the Spear of Mars destroyed so its madness never reaches Rome, but is financially owned by Senator Brutus. Relies on the party to destroy or neutralize the spear under fog of war.",
+  "objective": "Survive the political fallout of Varro's treason and Lucius's death while securing the frontier.",
+  "goal": "Direct the party as an independent, deniable unit to eliminate the blood cult and resolve the Spear of Mars.",
+  "agenda": "Keep imperial scrutiny at bay and manage debts to Brutus while ensuring the cursed weapon is extinguished.",
+  "secret": "Secretly wants the Spear of Mars destroyed. Watched Varro rot from its shadow and dreads what it would do to Rome.",
+  "session": 3
 }
