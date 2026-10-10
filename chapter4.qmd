@@ -49,7 +49,7 @@ touches this ever does.
 | Question | Answer affects |
 |---|---|
 | What did Vercingetorix reveal via Speak with Dead? | How much the party already knows walking in -- adjust the "Three Clue Rule" framing below if they're already certain this is the right place |
-| Who is with the party? | Lucius still travels with them (see Session 3); Corvinus is not present this session -- he stayed at the fort |
+| Who is with the party? | The party travels alone. Tribune Lucius died in Session 3; his personal lockbox and papers are carried by the party. Corvinus stayed at the fort. The party operates as an independent strike unit behind enemy lines. |
 | What is each character's corruption level? | Fetid Cloud, insect plague, and the ritual focus in the Core Room all interact with existing corruption -- higher corruption should mean stronger pulls toward the focus, not just more damage |
 
 **Read `CAMPAIGN_LOG.md` before running this session.** The cult, the "mainly Mars"
@@ -104,17 +104,13 @@ green with the same glow, a tally-marked stick counting days (the cult has been 
 long time), and -- in the second cache -- a torn strip of cloth matching the two
 chieftains' warband colors, the third and final confirmation this is the right place.
 
-**The encounter:** 3 **Banshees** rise from the marsh itself as the party crosses --
-early followers who didn't survive tending this place, still bound to it.
+**The encounter:** 3 × **[Banshee](https://www.dndbeyond.com/monsters/16799-banshee)** (*Monster Manual* p. 23 — CR 4, AC 12, HP 58) rise from the marsh itself as the party crosses — early followers who died tending this place.
 
 ::: {.dm-note}
-**Trigger:** the Banshees do not attack the instant the party arrives. Let the party
-investigate the caches and start crossing first -- the Banshees rise when the party is
-mid-causeway, roughly a third of the way across, so the fight happens with the party
-split between solid ground and the narrow bone path (no easy retreat, no easy grouping).
-Stagger Wails across all three -- never two in the same round. The third Banshee holds
-her Wail in reserve as the "spike" once the first two have landed; run them as a unit
-with coordinated timing, not three individuals acting independently.
+**Combat & Environment:**
+- **The Causeway Hazard:** The bone causeway is 5 ft wide. The Banshees float over the water, using *Corrupting Touch* (+4 to hit, 3d6+2 necrotic) and *Horrifying Visage* (DC 13 Wisdom save or frightened). If a PC falls or steps into the glowing water, they trigger the marsh hazard (DC 12 Con save or 1 level of exhaustion + 1 temp corruption).
+- **The Wail:** Each Banshee has *Wail* (1/day, DC 13 Constitution save: drops to 0 HP on a failure, or takes 3d6 psychic damage on a success). **Stagger the Wails across rounds**—never trigger more than one Wail in a single round. Telegraph the scream: describe the spirit inhaling the glowing marsh mists, giving players a round to stun, silence, or focus fire.
+- **Speed of Play:** With AC 12, the Banshees take heavy damage quickly from a Level 6 party, keeping the combat fast and intense.
 :::
 
 </details>
@@ -138,18 +134,14 @@ not war dead thrown in a pile. They're sorted -- by size, by age, deliberately. 
 has been curating this room for months, not years. This matches the tally-stick found at
 the marsh.
 
-**The encounter:** 2 **Bone Nagas** coiled among the bones, indistinguishable from the
-dead until they move -- plus **4 Skeletons** that animate from the bone floor the moment
-the Nagas act, rising from the pile rather than appearing from offscreen.
+**The encounter:** 2 × **[Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga)** (*Monster Manual* p. 233 — CR 4, AC 15, HP 58) coiled among the bones, plus 4 × **[Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton)** (*Monster Manual* p. 272 — CR 1/4, AC 13, HP 13) that animate from the bone floor on initiative count 20.
 
 ::: {.dm-note}
-**Trigger:** the Nagas wait until a character disturbs the bone floor (walking across it
-counts) or casts a spell, then act on the following initiative. The Skeletons rise
-simultaneously on the Nagas' first turn -- same trigger, not a second wave. Run them as
-a screen: they absorb opportunity attacks and force the party to split attention while
-the Nagas stack control. Use Hold Person on the main damage dealer, Ray of Enfeeblement
-on a melee striker. Two controlling undead plus four threatening chaff is the actual
-threat here, not the Nagas' bite.
+**Combat & Tactics:**
+- **Skeleton Vulnerability:** Skeletons have official Monster Manual **vulnerability to bludgeoning damage** (MM p. 272). A hit from a mace, warhammer, or sling stone deals double damage, shattering them in a single blow.
+- **Bone Naga Spellcasting:** The Nagas rely on spellcasting (DC 12 spell save, +4 spell attack): *hold person*, *ray of sickness* (2d8 poison), and *ray of enfeeblement* to debuff melee fighters.
+- **Bite:** +5 to hit, reach 10 ft., 2d6+3 piercing plus 3d6 poison damage.
+- **Speed of Play:** With Skeletons dropping in 1 hit to bludgeoning and Nagas having 58 HP, this combat resolves cleanly in 2 rounds.
 :::
 
 </details>
@@ -172,17 +164,12 @@ DC 12 Wisdom (Medicine) or Intelligence (Nature) (active: examining the growths 
 this is organic, and it's fed -- on blood, deliberately and repeatedly, over a long
 period. Whatever grows here was grown on purpose.
 
-**The encounter:** a **Yochlol**, hidden in the growths in spider form until it strikes,
-supported by 2 **Dretches**.
+**The encounter:** a **[Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol)** (*Monster Manual* p. 65 — CR 6, AC 15, HP 136) anchored to the pulsating wall-growths, supported by 2 × **[Dretch](https://www.dndbeyond.com/monsters/16847-dretch)** (*Monster Manual* p. 57 — CR 1/4, AC 11, HP 18).
 
 ::: {.dm-note}
-**Trigger:** the Yochlol waits until the party is investigating the growths (i.e.
-someone fails or even succeeds the Medicine/Nature check and gets close) before dropping
-from the ceiling in spider form. The Dretches emerge from the growths themselves a round
-later, framed as the room "reacting" to the fight rather than as reinforcements arriving
-from elsewhere. If the fight runs long, the Yochlol can use Insect Plague inside its own
-room -- the growths are already implied to be a breeding ground, so a swarm boiling out
-of them is earned, not random.
+**Combat & Tactics:**
+- **Yochlol Ambush:** Drops from the ceiling in giant spider form (*Shapechanger*, MM p. 65). Uses *Multiattack* (+6 to hit, 1d6+3 bludgeoning plus 6d6 poison damage) and innate spellcasting (at will *web* DC 14, 1/day *insect plague*). Has Magic Resistance (advantage on saves against spells).
+- **Dretches:** Chaff support. They attempt to tie up frontliners using *Fetid Cloud* (1/day, 10-ft radius, DC 11 Constitution save or retching/poisoned). With AC 11 and 18 HP, they drop in 1-2 hits.
 :::
 
 </details>
@@ -205,16 +192,13 @@ never completed a working. It's a practice space -- every mark on it is a false 
 ritual begun and abandoned. Whatever the cult was building up to happened somewhere
 else, not here.
 
-**The encounter:** 3 **Shadow Demons**, using the four pillars to break line of sight
-constantly.
+**The encounter:** 3 × **[Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon)** (*Monster Manual* p. 64 — CR 4, AC 13, HP 66).
 
 ::: {.dm-note}
-**Trigger:** on sight when the party enters -- but they immediately use Shadow Stealth
-to vanish between the pillars rather than engaging directly. This should feel like being
-stalked around a small room, not a straight fight. Three demons means no pillar is ever
-truly safe; the party cannot simply spread out and cover them all. They strike from
-different pillars each round. A party that floods the room with light sources to deny
-dim-light hiding does much better -- reward that creativity directly.
+**Combat & Environment:**
+- **Deadly in the Shadows:** In dim light or darkness, Shadow Demons strike with *Claws* (+5 to hit, dealing 4d6+3 psychic damage) and use bonus-action *Shadow Stealth* to hide between the 4 pillars.
+- **Official MM Vulnerability & Weakness:** Shadow Demons have official **vulnerability to radiant damage** (MM p. 64) and **Light Sensitivity** (disadvantage on attack rolls and Wisdom (Perception) checks relying on sight in bright light).
+- **The Four Stone Braziers:** At the foot of each pillar rests an unlit iron brazier with dry pitch. A character can ignite a brazier as an object interaction / action. Flooding the room with bright light strips their Shadow Stealth and imposes disadvantage on all their attacks!
 :::
 
 </details>
@@ -274,24 +258,13 @@ of them. DC 13 Wisdom (Insight) or Intelligence (Investigation) (active: examini
 before combat starts, if the party hesitates) identifies torn fragments of the same
 warband colors found at the marsh cache, confirming their identity.
 
-**The encounter:** 3 **Wraiths** -- the two chieftains and whichever of their most
-devoted followers didn't stop when they did.
+**The encounter:** 3 × **[Wraith](https://www.dndbeyond.com/monsters/17064-wraith)** (*Monster Manual* p. 302 — CR 5, AC 13, HP 67) -- the two chieftains and their devoted shield-bearer.
 
 ::: {.dm-note}
-**This room needs to land as tragedy, not just as a fight.** The chieftains got exactly
-what they thought they wanted -- an answered prayer -- and it consumed them entirely.
-Play their first actions as recognition, not aggression: they turn toward the party
-slowly, and for one round do nothing but watch, before the fight actually starts. If any
-character speaks to them directly before combat, they can manage exactly one
-fragmentary sentence each ("we asked -- " / "it heard us") before the hunger takes back
-over.
-
-**Escalation:** each Wraith can Create Specter from any humanoid corpse killed in the
-last minute within 10 ft, including each other's kills and, grimly, any followers killed
-earlier this session whose bodies happen to be nearby. Cap total specters at 3 for
-table sanity regardless of the stat block's stated max. If the party is already
-struggling, do not let all three Wraiths spend actions on Create Specter in the same
-encounter -- stagger it the same way the Banshees' Wails were staggered in Scene 0.
+**Combat & Emotional Beat:**
+- **Tragic Opening (Round 1):** The chieftains got what they prayed for, and it consumed them. For the first round, they watch in silence. If addressed, they speak one broken sentence: *"We asked for victory... it took our blood... it starves still..."*
+- **Wraith Attacks:** *Life Drain* (+6 to hit, 4d6+3 necrotic, DC 14 Constitution save or HP maximum reduced by damage taken until a long rest). *Incorporeal Movement* allows them to glide through the stone markers to surround the party.
+- **Pacing:** To keep combat fast and focused, run this as a straight, brutal clash of blades and necrotic hunger without summoning additional specters.
 :::
 
 </details>
@@ -320,30 +293,20 @@ focus -- not to summon Mars, but to keep something that answers to his name fed 
 present in the world a little longer. The rooms below aren't separate encounters. They
 were all one working, and this was always where it was going.
 
-**The guardian:** a **Glabrezu**, bound to the focus, not merely standing near it.
+**The guardian:** 1 × **[Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu)** (*Monster Manual* p. 58 — CR 9, AC 17, HP 157), bound directly to the crystal-star focus.
 
 ::: {.dm-note}
-**This is the dungeon's real boss fight.** The binding to the crystal-star focus grants
-the Glabrezu boss-tier actions -- give it **3 Legendary Actions** per round (Pincer
-Strike: one claw attack; Tear: two claw attacks, costs 2 actions; Planar Pulse:
-recharge 5-6, one target DC 15 CON or stunned until end of its next turn, costs 3
-actions) and **Legendary Resistance 1/day**. The Glabrezu opens with Darkness centered
-on the dais to protect the focus, then uses Confusion and Power Word Stun to isolate
-whoever gets closest to the crystal. It does not chase a fleeing party far from the
-dais -- its purpose is guarding the focus, not hunting.
+**Boss Combat & Tactics:**
+- **Innate Spellcasting (DC 16):** Opens with *Darkness* centered on the dais, lunging out at the closest warrior. Uses *Power Word Stun* on the primary damage dealer and *Confusion* if surrounded.
+- **Multiattack:** 2 Pincers (+9 to hit, reach 10 ft., 2d10+5 bludgeoning + grapple DC 15) and 2 Fists (+9 to hit, 2d4+5 bludgeoning) or 2 Pincers and casts 1 spell.
+- **Speed of Play:** With 6 Level 6 characters focusing fire with magical weapons, smites, and spells, 157 HP is brought down in 2-3 fast, tense rounds!
 
-**The actual payoff of this session:** once the Glabrezu is dealt with (killed, or the
-party otherwise ends the fight), the crystal itself can be examined or interacted with.
-It cannot be destroyed here -- doing so is what Session 5 is actually for, and trying to
-smash it now should visibly fail (it doesn't crack, doesn't dim, simply absorbs whatever
-is thrown at it). What the party *can* do here is learn, concretely, what it will take:
-see CAMPAIGN_LOG.md and Epic 9 in SCRUM_BACKLOG.md for exactly what that means for
-Session 5. This scene should end with the party knowing the name of the place they need
-to go next and the shape of the cost waiting there -- not with the spear's story
-resolved.
+**The Session's Climax & Rest Transition:**
+Once the Glabrezu falls, the room's demonic pressure collapses into a dull, cold humming. The crystal cannot be shattered here -- trying to smash it visibly fails, absorbing whatever strikes it. But the room is now safe.
+
+- **The Long Rest:** The party takes a **Long Rest** in the secured Core Room (consecrated by Tanit or Julia Jana, barricaded by Ursula or Brian).
+- **Advancement:** The party **advances to Level 7** during this rest, gaining full HP, all spell slots, and their 4th-level spells, fully prepared for the descent into the abyss in Session 5!
 :::
-
-**Advance to Level 7.**
 
 </details>
 
@@ -363,16 +326,11 @@ resolved.
 - **Secret:** they were not lied to about Mars's hunger. They were right about what he
   wanted. They were wrong about what answering it would cost them personally.
 
-**Tribune Lucius** *(present, per Session 3)*
-- **Objective:** unchanged from Session 3 -- his father's duty and his own Germanic
-  fostering both say this must never reach Rome.
-- **Goal (this session):** watch, mostly. This dungeon confirms everything he already
-  suspected about what the spear does to people who get close to it, including
-  ambitious men who think they can control it. Let a line or two land after Scene 5
-  specifically -- he recognizes the shape of the chieftains' failure.
-- **Agenda:** covers the party's retreat if the Core Room fight goes badly; does not
-  touch the crystal himself under any circumstances.
-- **Secret:** unchanged -- the lockbox, still unexplained.
+**The Glabrezu** *(Core Room Guardian, Scene 6)*
+- **Objective:** Maintain the tribute tether and guard the crystal-star focus against any who would disrupt it.
+- **Goal (this session):** Crush intruders in the dais darkness; protect the four gargoyle conduits.
+- **Agenda:** Fights to the death; will not pursue retreating players beyond the antechamber archway.
+- **Secret:** It is not summoned from the Abyss by mortals -- it was pulled through the veil by the sheer density of blood offered here, a living manifestation of Mars's escalating hunger.
 
 </details>
 
@@ -384,7 +342,7 @@ resolved.
 | Did the party learn what the crystal actually requires to be destroyed? | Determines how much Session 5's dungeon is a surprise vs. something they walk in prepared for |
 | Are all three Wraiths in Scene 5 accounted for (destroyed, fled, or otherwise resolved)? | An escaped Wraith is a loose thread worth resolving in Session 5 |
 | What is each character's corruption level after this session? | The Core Room's proximity to the focus should have pushed at least one character's corruption up -- note who |
-| Is Lucius still with the party? | Carries forward into Session 5 unchanged unless something in this session broke that |
+| Did the party take their Long Rest in the Core Room? | Confirms the party enters Session 5 at full Level 7 resources (spells, HP, abilities) |
 
 </details>
 

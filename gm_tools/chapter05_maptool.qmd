@@ -13,11 +13,11 @@ scene by scene on the overview/vault maps rather than reloading between scenes.
 
 | Scene | Map File | Tokens to Place | Notes |
 |---|---|---|---|
-| Scene 0: The Crystal Is Failing | `Maptool/maps/campaign/S5_The_Wrath_of_Mars/s5_mars_vault_overview.jpg` | All PCs, Tribune_Lucius | Narrate the descent; no combat tokens yet. |
-| Scene 1: Sunken Armory / Choking Hall | Same map, zones 2-3 | All PCs, Tribune_Lucius, optional Shadow ×2 or Wraith ×1 | Only place the optional undead if the table has burned few resources so far -- read the table, not the script. |
-| Scene 2: Convergence Hall (three-passage choice) | `s5_mars_vault.jpg`, zone 3 | All PCs, Zombie ×3 (center passage only) or Specter ×(party size − 1) (east passage only) | West passage is a trap + a journal, no combat tokens. Only place tokens for the passage the party actually picks. |
-| Scene 3: Vercingetorix's Last Stand | Same map, at the passage into the Sanctum | All PCs, Vercingetorix_Bound ×1 | Command the Fallen (used once, below half HP) can add Zombie ×1d4 from the same pool. |
-| Scene 4: Antechamber of Mars | `s5_mars_confrontation.jpg` | All PCs, Mars ×1, optional Wight ×1 (Session 1 callback, branch-dependent), optional Wraith ×2 (rounds 1-2 presence-only summons) | Mars starts presence-only (rounds 1-2); place his token only once he fully manifests (round 3+) if the party pushes to combat. |
+| Scene 0: The Crystal Is Failing | `Maptool/maps/campaign/S5_The_Wrath_of_Mars/s5_mars_vault_overview.jpg` | All PCs | Narrate the descent; no combat tokens yet. Party carries Lucius's locked iron box. |
+| Scene 1: Sunken Armory / Choking Hall | Same map, zones 2-3 | All PCs, optional [Wraith](https://www.dndbeyond.com/monsters/17064-wraith) ×2 | Optional choke point guards (*MM* p. 302, CR 5, AC 13, HP 67). Only place if party has surplus resources. |
+| Scene 2: Convergence Hall (three-passage choice) | `s5_mars_vault.jpg`, zone 3 | All PCs, [Zombie](https://www.dndbeyond.com/monsters/17069-zombie) ×6 (center passage only) or [Wight](https://www.dndbeyond.com/monsters/17054-wight) ×1 + [Specter](https://www.dndbeyond.com/monsters/17017-specter) ×2 (east passage only) | West passage is a trap + journal. Center is 6 Zombies (*MM* p. 316, CR 1/4, AC 8, HP 22). East is Wight (*MM* p. 300, CR 3, AC 14, HP 45) + Specters (*MM* p. 289, CR 1, AC 12, HP 22). |
+| Scene 3: Vercingetorix's Last Stand | Same map, at the passage into the Sanctum | All PCs, Vercingetorix_Bound ×1 | [Vercingetorix Bound](../npcs/vercingetorix_bound.json) (CR 11, AC 18, HP 150). Tactical Parry, optional 1-on-1 champion's duel, dying secret. |
+| Scene 4: Antechamber of Mars | `s5_mars_confrontation.jpg` | All PCs, Mars ×1, optional Wight ×1 (Session 1 callback) | [Mars Diminished Avatar](../npcs/mars.json) (CR 20, AC 22/16, HP 300). 3-round unmaking ritual dynamically strips his defenses. |
 
 ---
 
@@ -36,15 +36,15 @@ scene by scene on the overview/vault maps rather than reloading between scenes.
 
 ### NPC Tokens
 
+No allied garrison NPCs travel into the dungeon:
+- **Tribune Lucius is deceased** (fell in Session 3); the contubernium carries his locked iron box alone.
+- **Centurion Varro is deceased** (killed in Session 3 cold open; memorial stone at Fort Vindolanda's north gate).
+- **Legate Corvinus and Augur Cassia** remain at Fort Vindolanda and greet the party in the epilogue.
+
 | Token | File | Scene | Frame Colour |
 |---|---|---|---|
-| Tribune Lucius | `Maptool/tokens/npcs/named/Tribune_Lucius.rptok` | Scenes 0-4 -- the only fort NPC who travels with the party | Grey (divided loyalty; may become the Destroy ending's guardian) |
-| Vercingetorix Bound | `Maptool/tokens/npcs/named/Vercingetorix_Bound.rptok` | Scene 3 only | Deep red (his true and final form -- do not reuse the older living-appearing Vercingetorix_the_Red token here) |
-| Mars | `Maptool/tokens/npcs/creatures/Mars.rptok` | Scene 4, round 3+ (full manifestation) | Divine (do not place until he commits to combat) |
-
-Legate Corvinus, Centurion Varro, and Augur Cassia do **not** appear until the epilogue,
-back at the fort -- no MapTool scene is needed for that portion. Do not place their
-tokens in the dungeon.
+| Vercingetorix Bound | `Maptool/tokens/npcs/named/Vercingetorix_Bound.rptok` | Scene 3 only | Deep red (CR 11, AC 18, HP 150 — his true and final form) |
+| Mars | `Maptool/tokens/npcs/creatures/Mars.rptok` | Scene 4, round 3+ (or unmaking ritual) | Divine (CR 20, AC 22/16, HP 300 — Diminished Avatar) |
 
 ::: {.dm-note}
 Do not place **Fausta_Luperci** or any **Thusnelda** token this session. Both belonged
@@ -58,15 +58,13 @@ token files remain on disk, unreferenced.
 
 | Creature | File | Scene | Count | Notes |
 |---|---|---|---|---|
-| Shadow | `Maptool/tokens/npcs/creatures/Shadow.rptok` | Scene 1 (optional) | ×2 | Reused from earlier sessions |
-| Wraith | `Maptool/tokens/npcs/creatures/Wraith.rptok` | Scene 1 (optional) or Scene 4 rounds 1-2 | ×1-2 | Mars's Summon Fallen legendary action can add more, max 3 total across the fight |
-| Zombie | `Maptool/tokens/npcs/creatures/Zombie.rptok` | Scene 2 (center passage) or Scene 3 (Command the Fallen) | ×3 (+1d4) | |
-| Specter | `Maptool/tokens/npcs/creatures/Specter.rptok` | Scene 2 (east passage only) | × (party size − 1) | Hardest of the three passages |
-| Wight | `Maptool/tokens/npcs/creatures/Wight.rptok` | Scene 4, branch-dependent | ×1 | Only place if the Session 1 Altar Chamber Wight was spared -- see chapter5.qmd's Scene 4 branch note |
+| [Wraith](https://www.dndbeyond.com/monsters/17064-wraith) | `Maptool/tokens/npcs/creatures/Wraith.rptok` | Scene 1 (optional) | ×2 | *MM* p. 302. CR 5, AC 13, HP 67 |
+| [Zombie](https://www.dndbeyond.com/monsters/17069-zombie) | `Maptool/tokens/npcs/creatures/Zombie.rptok` | Scene 2 (center passage) | ×6 | *MM* p. 316. CR 1/4, AC 8, HP 22, Undead Fortitude |
+| [Specter](https://www.dndbeyond.com/monsters/17017-specter) | `Maptool/tokens/npcs/creatures/Specter.rptok` | Scene 2 (east passage) | ×2 | *MM* p. 289. CR 1, AC 12, HP 22 |
+| [Wight](https://www.dndbeyond.com/monsters/17054-wight) | `Maptool/tokens/npcs/creatures/Wight.rptok` | Scene 2 (east passage) or Scene 4 callback | ×1 | *MM* p. 300. CR 3, AC 14, HP 45 |
 
-All five creature tokens already exist from earlier sessions -- no new pipeline work
-was needed for Chapter 5's roster beyond Vercingetorix Bound and Mars (both named NPCs,
-see above).
+All four creature tokens already exist from earlier sessions -- no new pipeline work
+was needed for Chapter 5's roster beyond Vercingetorix Bound and Mars.
 
 ---
 

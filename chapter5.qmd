@@ -76,9 +76,9 @@ Maps are in `Maptool/maps/campaign/S5_The_Wrath_of_Mars/`. All three are custom 
 
 > *The crystal-star's light does not fade when the demon guarding it falls. It gets worse. Cracks spread across its faces like frost across a window, and each one lets out a note too low to be a sound, felt in the teeth more than heard. The floor of the Core Room is warm. Somewhere below, something that has been sleeping under all this weight is starting to notice you.*
 
-> *Tribune Lucius says it before anyone else does. "It's not stopping. Whatever this feeds, it just fed it more than it wanted." He is already moving toward the passage that leads down.*
+> *In the silence where Tribune Lucius once stood, the stone floor shudders. The locked box of his personal effects is still in your pack, but the choice ahead belongs entirely to your contubernium. Whatever this crystal feeds, it just fed it more than it wanted -- and the only stairs lead down.*
 
-The crystal cannot be destroyed here; Chapter 4 already established this. What can happen here is the party choosing to go down toward whatever it is feeding, rather than leave it burning above a fort full of people. This is not optional in the sense of "stay or go" -- the campaign ends if the party goes home now, and that ending exists too, but it is not this document's job to write it. Assume they go down.
+The crystal cannot be destroyed here; Chapter 4 already established this. The party, acting alone without Roman officers, descends toward whatever it feeds, rather than leave it burning above a frontier full of people.
 
 **Reading the descent:**
 - DC 13 Intelligence (Arcana) (passive): The crystal's cracking pattern matches the *shape* of divine attention, not structural failure. Something is looking back through it.
@@ -97,7 +97,7 @@ Load `s5_mars_vault_overview.html`. This is zones 2-4 on that map: an upper vaul
 - DC 13 Intelligence (Investigation) (active: examining the untouched weapons in the Sunken Armory): The preserved blades are all marked with a small ram's-eye stamp -- Mars's own mark, not the cult's. These are weapons he blessed personally, centuries apart, left here as tribute. One can be taken; it counts as a Belatucadrus-grade consecrated weapon for this session only if no other was brought (see Continuity Tracker). Taking it here, this late, costs nothing -- but using a god's own gift against him is a detail Mars notices and mentions in Scene 4.
 - DC 12 Constitution (active: pushing through the Choking Hall without pausing): The air thickens, not with gas this time but with pressure, like descending too fast underwater. Failure: 1d4 poison damage from the strain, no other effect. This hall is not a puzzle. It is a mood, and it should feel like one.
 
-**Encounter:** 2 **Wraiths** haunt the Choking Hall -- not optional at this party level. Place them mid-hall so the party cannot simply run past. If the party is genuinely on fumes after S4, drop to 1 Wraith, but keep at least one; this corridor should cost something before Scene 2.
+**Encounter:** 2 × **[Wraith](https://www.dndbeyond.com/monsters/17064-wraith)** (*Monster Manual* p. 302 — CR 5, AC 13, HP 67) haunt the Choking Hall — ancient shades of legionaries who perished in the vault. They glide through the stone walls with *Incorporeal Movement*, using *Life Drain* (+6 to hit, 4d6+3 necrotic, DC 14 Constitution save or HP maximum reduced).
 
 </details>
 
@@ -112,8 +112,8 @@ Load `s5_mars_vault.html`, zone 3. Three passages merge here before the final ap
 | Passage | Contents |
 |---|---|
 | **Left (west)** | A pressure-plate floor rune. DC 14 Perception to spot before triggering. Trigger: 3d6 necrotic in a 30-ft burst, DC 15 Dexterity half. A dead cultist lies here with a journal -- three pages confirming the two chieftains knew exactly what they served, and knew it was killing them, and did it anyway. This is the clearest, ugliest confirmation of the cult's real nature in the whole campaign. |
-| **Center** | The direct route. 6 Zombies shamble the passage, slow and unsubtle. No trap, no ambush, just attrition. The honest road. |
-| **Right (east)** | 1 Specter per party member minus one ambushes from the walls, plus 2 **Wights** that step out of alcoves once the Specters engage -- no trap, but by far the hardest fight of the three. |
+| **Center** | The direct route. 6 × **[Zombie](https://www.dndbeyond.com/monsters/17069-zombie)** (*Monster Manual* p. 316 — CR 1/4, AC 8, HP 22, *Undead Fortitude* DC 5 + damage taken to survive at 1 HP). Slow, predictable chaff; radiant damage bypasses Undead Fortitude completely. |
+| **Right (east)** | 1 × **[Wight](https://www.dndbeyond.com/monsters/17054-wight)** (*Monster Manual* p. 300 — CR 3, AC 14, HP 45) + 2 × **[Specter](https://www.dndbeyond.com/monsters/17017-specter)** (*Monster Manual* p. 289 — CR 1, AC 12, HP 22) ambushing from dark alcoves. High mobility and ranged longsword/life-drain pressure. |
 
 There is no wrong answer here, and no answer that avoids a cost. Let the party choose based on what they can afford right now, not on which one you think is "correct."
 
@@ -131,30 +131,27 @@ He is waiting at the passage into the Sanctum, and he has been waiting since bef
 
 > *"Again," he says, in Latin thick with an accent that predates the Empire itself. "Always again. Tell me this time is the one that ends it."*
 
-This is his true and final appearance. He does not negotiate, does not ally, does not explain himself before the fight. He fights the way he has fought every time Mars has sent him: without hatred, without hesitation, and without any real hope that this time will be different. Use **Vercingetorix Bound** (`npcs/vercingetorix_bound.json`, CR11): AC 18, HP 150, Multiattack (2 attacks, Sword of the Last Charge, 2d6+5 slashing plus 2d8 necrotic), Fear Aura (recharge 5-6, DC 15 Wisdom or Frightened 1 minute), Aura of the Unfinished War (undead allies within 30 ft gain +4 to melee damage), Command the Fallen (1/day, raises 1d4 Zombies or Skeletons from bones already in the hall), Relentless (1/day, drops to 1 HP instead of 0 unless the damage is radiant or from a Belatucadrus-consecrated weapon), Legendary Resistance (1/day), Parry (reaction, +4 AC against one melee attack).
+This is his true and final appearance. He does not negotiate, does not ally, does not explain himself before the fight. He fights the way he has fought every time Mars has sent him: without hatred, without hesitation, and without any real hope that this time will be different.
 
-**Running the fight:**
-- If **Relentless** triggers, say so plainly. "He should be dead. He isn't. Not yet." Let the table feel that this is not going to be a clean fight, because it has never been one for him either.
-- If a Belatucadrus-consecrated weapon (or the ram's-eye blade taken from the Sunken Armory) lands the killing blow that would otherwise trigger Relentless, it simply does not trigger. Narrate this as the weapon recognizing something the fight itself cannot: that this needs to actually end.
-- **Command the Fallen** should be used once, when he is below half HP, not as an opening move. He is not trying to win with numbers. He has never had numbers. He is trying to make the party understand what it has been like.
+**Stat block: [Vercingetorix Bound](file:///home/chris/Nextcloud/Github/DnDVault---Roman-Campaign/npcs/vercingetorix_bound.json)** (*CR 11 Undead*, AC 18, HP 150):
+- **Parry (Reaction):** Adds +4 to AC against one melee attack that would hit him.
+- **Aura of the Unfinished War:** Melee attacks deal extra necrotic damage (Sword of the Last Charge: +8 to hit, 2d6+5 slashing + 2d8 necrotic).
+- **Fear Aura (Recharge 5-6):** DC 15 Wisdom save or Frightened for 1 minute.
+- **Relentless (1/day):** When reduced to 0 HP, drops to 1 HP instead and roars *"FINISH IT!"* unless the killing blow is radiant damage or from a Belatucadrus-consecrated weapon (or the ram's-eye blade from Scene 1).
+- **Optional Champion's Duel:** If Ursula or Brian challenges him to single combat, he accepts with a warrior's salute.
 
 **Final Death.** When a killing blow lands that Relentless does not prevent, he does not simply fall.
 
 > *He drops to one knee, not to the ground. For the first time, his eyes focus on something that is actually in front of him instead of some other, older battlefield. "...Ended," he says, like the word is unfamiliar in his own mouth.*
 
-For one minute, his spirit remains, lucid, and will answer up to three questions truthfully before dissolving to ash. This is the party's first true confirmation of the whole story, and it should be handed over as exactly that: a gift, not a quiz.
+For one minute, his spirit remains, lucid, and answers up to three questions before dissolving to ash. Because the party already learned the historical backstory from Mars in Session 3, his answers here deliver **deep emotional closure and the tactical secret to unmaking the spear**:
 
 <details>
 <summary><strong>What Vercingetorix tells the party (his Final Death answers)</strong></summary>
 
-He will not volunteer all of this unprompted. Answer what is actually asked, in his voice: tired, plain, unimpressed by his own tragedy.
-
-- **What happened to you:** "Alesia. Caesar broke us there, and I gave up something to keep fighting him afterward that I did not understand the price of. The spear remembers what I don't."
-- **Why does Mars want it:** "He does not want it. He is *starving*. Rome stopped feeding him wars two hundred years ago. This spear is the last door he has left open."
-- **What are you, really:** "What every soldier becomes who is not allowed to stop. Not a monster. Just late. Very, very late."
-- **Can this end:** "You are asking the wrong ghost. Ask the door." (He means the Antechamber. He does not know the answer, only that it is close.)
-
-He does not know about Corvinus, Brutus, or Pompey specifically -- his knowledge is his own war, not the campaign's whole political layer. Do not use him to info-dump everything at once. He confirms the emotional truth: this is a two-hundred-year war that never got to stop, and he was never the villain in it, only the last man standing on the losing side.
+- **How can the spear be destroyed:** *"The granite altar ahead... look to the four massive iron chain winches in the floor. Caesar's siege engineers forged them from captured Gallic steel to bind a god's avatar. Lock the four iron rings... they will drag Mars down and shatter his divine invulnerability. Only then can the spear be broken on the anvil!"*
+- **What is the price of destroying it:** *"The chains keep what they hold. Someone must take the guardian's seat and hold the seal, or the unmaking unravels. That was the legate's burden. It was nearly mine. Someone must willingly choose to watch the dark."*
+- **Did my people survive:** *"Tell me... after two hundred years... does Gaul still stand?"* (Let a player answer this honestly. He smiles faintly, closes his eyes, and dissolves into grey ash that drifts away on the subterranean breeze).
 
 </details>
 
@@ -162,15 +159,19 @@ He does not know about Corvinus, Brutus, or Pompey specifically -- his knowledge
 
 
 <details>
-<summary><strong>Scene 4: The Antechamber of Mars</strong></summary>
+<summary><strong>Scene 4: The Antechamber of Mars & The Threshold of Janus</strong></summary>
 
 Load `s5_mars_confrontation.html`. Granite altar at the center, chain anchors scarred into the floor, twelve stone plinths ringing the sanctum.
+
+**The Threshold of Janus:** As the party steps into the archway, the air splits like a coin turned on its edge. For a split second, a dual-faced vision flickers in the torchlight -- **Janus**, god of thresholds and doorways, looking backward at the dead who bled for this spear and forward into the centuries yet to come. A silent divine reminder of his word in Session 3: *"Mars is neither good nor evil. He is war itself. Choose how you cross this threshold."*
 
 **Read aloud:**
 
 > *The passage opens into a circle wide enough to lose an army in. Twelve stones stand at its edge like an audience that arrived centuries early. At the center, a granite altar, chained to the floor by links thick as a man's arm, all of them scored and stretched as if something enormous has strained against them for a very long time. The air itself is red at the edges of your vision, and it is getting redder.*
 
-**Rounds 1-2: presence only.** Mars has not fully manifested. His voice fills the chamber; radiating cracks pulse across the floor (DC 12 Dexterity or 1d6 necrotic when a character crosses one). If the fight escalates here, he can use **Legendary Actions** even without a full body: Strike (as a spectral force, one attack at his full bonus), and Summon Fallen (a Wraith or Wight rises from the plinths, twice at most).
+> *On the dais stands Mars. He is not a distant sky-god today. He is lean, scarred, starved by two centuries of Roman peace, his bronze armor dented and black with dried gore. His eyes burn like coals.*
+
+> *"MORTALS," he says, and the word is not loud, only total. "You have carried my anchor through two ghosts and a king who would not die. Now choose, and choose knowing I will remember which one you make."*
 
 <details>
 <summary><strong>The Session 1 Wight-general's cameo (branch on what actually happened)</strong></summary>
@@ -181,9 +182,16 @@ Load `s5_mars_confrontation.html`. Granite altar at the center, chain anchors sc
 
 </details>
 
-**Round 3 and beyond: full manifestation, if the party has not yet resolved the ending.** Mars steps fully onto the dais. Use the existing **Mars** stat block (`npcs/mars.json` / `scripts/creature_stats.json`): AC 22, HP 300, Multiattack (4 attacks, Divine Pilum, +12 to hit, range 60 ft, 2d8+7 piercing plus divine), Legendary Resistance (3/day), War Cry (recharge 5-6, DC 18 Wisdom or Frightened 1 minute), Divine Smite (1/round, +4d8 radiant on a hit), Legendary Actions (3/round: Strike, God's Eye [3 actions, advantage vs. one target], Summon Fallen [3 actions, one Wight or Shadow, max 3 total]).
+**Stat block: [Mars](file:///home/chris/Nextcloud/Github/DnDVault---Roman-Campaign/npcs/mars.json)** (*Divine Avatar*, CR 20, AC 22, HP 300):
+- **Divine Pilum:** Multiattack (4 attacks, +12 to hit, range 60 ft, 2d8+7 piercing + 2d8 radiant).
+- **Divine Smite (1/round):** +4d8 radiant on a hit.
+- **War Cry (Recharge 5-6):** DC 18 Wisdom save or Frightened for 1 minute.
+- **Legendary Resistance (3/day).**
+- **Legendary Actions (3/round):** Strike (1 action), God's Eye (3 actions, advantage against one target), Summon Fallen (3 actions, max 3 total).
 
-> *"MORTALS," he says, and the word is not loud, only total. "You have carried my anchor through two ghosts and a king who would not die. Now choose, and choose knowing I will remember which one you make."*
+::: {.dm-note}
+**Interactive Unmaking:** In Option 1 (Destroy It), Mars does not need to be ground down from 300 HP. The 3-round unmaking ritual dynamically strips his AC, resistances, and attacks as the party locks the altar chains and severs his bloodline!
+:::
 
 </details>
 
@@ -194,39 +202,43 @@ Load `s5_mars_confrontation.html`. Granite altar at the center, chain anchors sc
 This is the campaign's actual thesis. Present all three plainly. None of them is secretly correct.
 
 <details>
-<summary><strong>Option 1 — Destroy It Completely</strong></summary>
+<summary><strong>Option 1 — Destroy It Completely (The Dynamic Unmaking Ritual)</strong></summary>
 
-**What it requires:** the unmaking ritual, performed at the granite altar using the chain anchors already in the floor. Mars opposes this with everything he has -- this is the option that guarantees his full manifestation and the entire stat block above, fought to the end, not to "Enough."
+**What it requires:** The party chooses to unmake the spear on the granite altar. Mars roars and attacks with everything he has! Rather than an impossible 300 HP grind, this is a **fast, 3-round interactive ritual combat**:
 
-**The cost:** the unmaking takes what the original binding took. Someone must become the vault's new guardian, permanently, the same as the general who held this seat for three hundred years. This can be a PC (their character's story ends here, on their own terms -- ask the player, do not tell them how their character feels about it) or Tribune Lucius, if the party trusts him enough to let him take it, which closes his divided-loyalty arc the only way that was ever going to be clean. If nobody steps forward, the ritual fails partway and the destroy option is not available this attempt; the party must choose one of the other two.
+- **Round 1 — The Chains of the Republic:** A PC (or two) rushes the massive iron chain winches Vercingetorix warned them about (DC 13 Athletics or Thieves' Tools / Sleight of Hand).
+  - *Success:* Four massive iron links snap onto Mars's limbs! His divine shield fractures: **his AC drops from 20 to 15, and he loses all Legendary Resistance!**
+- **Round 2 — Severing the Bloodline:** A ritualist PC (Cleric, Druid, Bard, or Arcana user) channels radiant energy, holy water, or ancestral rites at the altar (DC 14 Religion, Arcana, or Performance).
+  - *Success:* The crimson tether snaps! Mars screams as **his Multiattack drops from 4 to 2, and his Divine Smite is permanently stripped!**
+- **Round 3 — The Shattering Blow:** Mars is pinned and down to his core. Any melee weapon hit, heavy strike, or spell hitting the altar shatters the spear into inert bronze shards!
 
-**What actually ends:** the two-hundred-year war Vercingetorix fought, Mars's anchor into this specific corner of the world, and the cycle repeating here again. It does not end war generally, or Mars generally. Only this.
+**The Permanent Sacrifice:** The unmaking takes what the original binding took: someone must take the guardian's seat and hold the seal in the dark, forever. With Tribune Lucius dead, **a PC must willingly step forward to take the chains**.
+- If a PC steps forward: their mortal story ends here on their own terms as the eternal warden of the vault. Hand them **Handout 10: The Mark of Mars**.
+- If NO PC is willing to make the sacrifice: the unmaking fails partway. Mars laughs bitterly, breaking free, and forces the party to pick Option 2 or Option 3.
 
 </details>
 
 <details>
 <summary><strong>Option 2 — Give It to Rome</strong></summary>
 
-**What it requires:** Tribune Lucius takes the spear into official custody, per the orders he has carried since Chapter 2. Mars is not defeated here, only defied -- he considers this an insult to his ownership, and the fight (if any) is shorter and angrier than Option 1's, ending when he judges the party has paid enough for the theft (roughly HP 150, or a specific costly tactic the table demonstrates -- use judgment, not a hard number).
+**What it requires:** The party refuses to destroy the spear and refuses to give it to Mars. With Lucius dead, the party takes official custody of the spear, sealing it in an iron-banded case to deliver to Legate Corvinus and imperial couriers.
 
-**The cost:** the crisis ends today. Fort Vindolanda stands, the people the party has spent five sessions protecting live. Someday, in a province neither Rome nor the party will ever see, this happens again to somebody else's ancestors, because Rome does not destroy what it can catalogue.
-
-**What actually ends:** nothing, permanently. This is the option that trades a real, present cost for a deferred one.
+- **The Clash:** Mars is outraged by mortal theft. He unleashes a furious 1-round parting onslaught (dealing 30-40 damage across the party) before dissolving into crimson smoke: *"You carry my curse to your own house. It will eat your Caesars until Rome has no walls left!"*
+- **The Cost:** The crisis ends today. Vindolanda stands. But in a century, the spear will drive another Roman emperor mad with slaughter.
 
 </details>
 
 <details>
 <summary><strong>Option 3 — Give It Back to Mars</strong></summary>
 
-**What it requires:** returning the spear to the granite altar and stepping back. No unmaking, no theft, no fight beyond whatever the party has already survived to get here. Mars accepts this without violence -- he has never wanted a fight for its own sake, only his due.
+**What it requires:** Returning the spear to the granite altar and stepping back with shields lowered.
 
-**The cost:** no one at this table bleeds for it today. And a god who has been right about the nature of war his entire long existence walks away from this vindicated, certain, and free to do exactly this again the next time Rome grows too peaceful for his taste.
-
-**What actually ends:** the party's part in this story. Nothing else.
+- Mars takes the weapon. He does not attack; his eyes glow with satisfaction: *"MORTALS. You know your place in the harvest."* He steps backward into the stone and departs.
+- **The Cost:** No one at the table bleeds today. And a god who believes war is humanity's only truth walks away validated, free to ignite the frontier again whenever he hungers.
 
 </details>
 
-**Running the choice:** do not let the table treat this as a puzzle with a hidden best answer. There isn't one. Ask each player what their character actually wants, and let the disagreement between characters be part of the scene -- five sessions of relationships, corruption, and OGAS threads should all be pulling in slightly different directions right now. If corruption level 5 exists at the table, Mars addresses that character directly here, by name, and asks what *they* want before anyone else answers. Their honest answer should carry real weight in how the scene closes, whichever option the table lands on.
+**Running the choice:** Ask each player what their character actually wants. If a character has corruption level 5, Mars addresses them directly by name, tempting them to seize the spear's glory.
 
 </details>
 
@@ -234,18 +246,21 @@ This is the campaign's actual thesis. Present all three plainly. None of them is
 <details>
 <summary><strong>Consequence Setup and Epilogue</strong></summary>
 
-Whatever the choice, time does not freeze here the way an earlier draft of this session assumed. The party has to walk back out, through the same dungeon, carrying whatever the choice cost them.
+The party walks back out through the quiet, drained dungeon, carrying whatever the choice cost them.
 
-> *Whatever is left of the light drains out of the crystal-star behind you as you climb. By the time you reach the surface, the marsh is just a marsh again. Somewhere behind you, a granite altar is either empty, occupied by someone new, or holding a weapon that will wait for someone else's grandchildren.*
+> *Whatever is left of the red light drains out of the stone as you climb. By the time you reach the surface, the marsh is just still, grey water. Behind you, an ancient vault is either guarded by one of your own, holding a sealed box for Rome, or silent after a god's feast.*
 
-Return to Fort Vindolanda for the epilogue. Corvinus, Cassia, and Varro (who stayed at the fort per Chapter 4) are here to greet the party, along with Lucius if he did not stay behind as the destroy option's guardian.
+**Return to Fort Vindolanda:**
+The garrison watches the contubernium return from the forest road.
+- **Legate Corvinus** meets them in the principia -- broken in authority, privately relieved if the spear was destroyed or returned, formal and careerist if it was secured for Rome.
+- **Augur Cassia** greets them with quiet awe, examining their faces for the mark of the divine.
+- **The Memory of Centurion Varro:** The north gate stands repaired. His quarters remain dark; a small terracotta cup of wine sits outside his door, left by soldiers who still remember his decades of service. For Ursula, standing before that gate brings the quiet, crushing realization of what war and corruption cost.
+- **The Memory of Tribune Lucius:** The party delivers Lucius's locked box. Inside are not treasonous orders, but childhood mementos: a carved wooden horse of Germanic craft, an amber rune token, and official Roman dispatch letters where Lucius had already penned commendations for the party's citizenship before his death.
 
 <details>
 <summary><strong>Citizenship Resolution</strong></summary>
 
-If Lucius sent the dispatch in Chapter 4, a response arrives during this epilogue, carried by a rider who has been waiting at the gate since dawn. It confirms the named character's registration as a *civis Romanus* (or elevation to *Latini* standing), effective the dispatch's arrival, with Lucius's attestation as sponsor. One line at the bottom, in a different hand: *"Distinguished service on the Germanic frontier, confirmed by two independent sponsors. The Emperor's office takes note."*
-
-This moment belongs to the player. Do not narrate what their character feels. Ask them.
+Using the posthumous dispatch letters found in Lucius's effects, Legate Corvinus and Augur Cassia co-sign the imperial seals. A courier departs for Rome with the attestation: *"Distinguished service on the Germanic frontier. Confirmed by the Legate and the Augur."* The named characters achieve their dream of *Civis Romanus* or *Latini* status.
 
 </details>
 
@@ -254,16 +269,16 @@ This moment belongs to the player. Do not narrate what their character feels. As
 
 Prompt each player: where are you a year later? Then offer NPC updates, keyed to the ending chosen.
 
-| NPC | If Destroy | If Give to Rome | If Give to Mars |
+| Figure | If Destroy | If Give to Rome | If Give to Mars |
 |---|---|---|---|
-| **Legate Corvinus** | Quietly relieved; the thing he wanted said aloud never had to be said. | Reports the recovery as a career highlight. Neither confirms nor denies what he actually wanted. | Uneasy for the rest of his posting; he knows exactly what walked away satisfied. |
-| **Augur Cassia** | Tends a new, small shrine to whoever took the guardian's place, if it was a PC. | Watches the road north for years, waiting for the "someday" to arrive. | Stops performing rites to Mars entirely. Does not explain why. |
-| **Centurion Varro** | Says nothing about it, ever, to anyone. Waters his vines. | Relieved the fighting is over. Does not ask what it cost elsewhere. | Uncomfortable every Armilustrium for the rest of his life. |
-| **Tribune Lucius** | If he took the guardian's place: gone, and the fort tells a story about him that gets kinder every year. If not: reassigned, carrying the weight of a choice he didn't have to make. | Commended by Rome. Never fully at peace with it. | Relieved his orders were followed, quietly troubled that it was this easy. |
+| **Legate Corvinus** | Quietly relieved; the nightmare he dreaded never reached Rome. | Promoted to a posting in Gaul, citing the recovery of Caesar's relic. | Uneasy for the rest of his posting; watches the forest lines each twilight. |
+| **Augur Cassia** | Tends a small shrine to the PC who took the guardian's place. | Watches the road south to Rome, dreading when the weapon will be unsheathed. | Stops performing rites to Mars entirely. Tends only Apollo and Minerva. |
+| **Centurion Varro (Deceased)** | Remembered by the 9th Cohort as a fallen veteran who succumbed to the frontier's shadow. | A bronze plaque at Vindolanda notes his name among the dead of the raid. | Mentioned only in whispers during the Armilustrium festival. |
+| **Tribune Lucius (Deceased)** | His family in Rome receives his ashes; his Germanic foster-line sings a quiet song for him. | Commended posthumously in Senate rolls as a loyal son of Rome. | Honored in Rome, though his personal locked box is kept safe by the party. |
 
 Close with final narration:
 
-> *Vindolanda stands. The rain returns to falling the ordinary way. Some soldiers say a god visited the marsh south of the fort and left satisfied. Some say nothing happened at all, and choose to believe it. The dungeon is still down there, granite altar and all, waiting the way it always has -- for someone else, someday, to walk in not knowing yet what they're carrying out.*
+> *Vindolanda stands. The northern rain returns to falling the ordinary way. Some soldiers say a god visited the forest and left hungry; some say nothing happened at all, and choose to believe it. Beneath the earth, the stones are silent -- and on the frontier, for now, there is peace.*
 
 </details>
 

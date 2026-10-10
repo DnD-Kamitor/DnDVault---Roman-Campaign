@@ -233,9 +233,8 @@ the fighting gets, the more of Mars slips through. Save the design work for the 
 **Party:** Level 5-6, five core PCs (Artificer, Druid, Bard, Cleric, and a Barbarian
 among the original five) plus Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3).
 
-**Where they are:** Fort Vindolanda. The Varro/Ursula gate fight has concluded (Varro
-is dead) and the party has since prayed to the gods and received a direct divine
-response — see Session 3 entry below. About to depart for the forest.
+**Where they are:** Session 3 complete. Party is in the forest, Lucius dead. Most of
+chapter3.qmd (bog, village, grove, sacrifice circle) not yet played. Session 4 is next.
 
 **Key NPC status:**
 
@@ -243,7 +242,7 @@ response — see Session 3 entry below. About to depart for the forest.
 |---|---|---|
 | Legate Corvinus | Alive, authority damaged | Discredited by the security failure. Already secretly wants the spear destroyed (established in his existing OGAS) — separate, human, political reasoning from Mars's or Varro's. |
 | Centurion Varro | **Dead** | Killed when the gate fight with Ursula concluded. Opened the gate, killed a scout, declared "I did this for Rome" before falling. Corruption source: his own inherited Teutoburg-legacy terror, amplified by the spear, not an external Brutus mechanism. |
-| Tribune Lucius | Took command of the fort | Arminius-shaped: fostered among a Germanic tribe as a boy, divided loyalty, won't touch the spear. Real orders from Rome (bring it back) conflict with his real private conviction (it must never leave). **The party now knows his Germanic-fostering heritage** — how exactly they learned it (lockbox contents, his own admission, or otherwise) not yet detailed here; fill in once confirmed. |
+| Tribune Lucius | **Dead** | Killed Session 3. Party lured giant spiders into the group; he perished in the assault. Lockbox/papers (Germanic fostering heritage) now carried by party. Cannot appear in Sessions 4-5. |
 | Augur Cassia | Per script, alive/present | No deviation reported. |
 | Vercingetorix | Ally (post-raid) | **Led the Session 2 attack on the fort** — not a betrayal of a prior alliance; this was the latest iteration of a war he's been bound to fight for two centuries, mirroring the Wight. Something in the party's conduct broke through and stopped him mid-raid, seeding the current alliance. "He is dying, this is his final campaign" now carries the weight of finally being allowed to end, not simple illness. |
 | Senator Brutus | Off-screen, never appears | Wants the spear kept from Rome for political reasons that happen to align with Mars's preference — whether by coincidence or manipulation is deliberately unresolved. |
@@ -251,7 +250,7 @@ response — see Session 3 entry below. About to depart for the forest.
 | Mars | Building toward direct confrontation (S4-S5) | Not anti-Rome — pro-war, indifferent to who wins, starved by ~200 years of the Pax Romana, cornered onto this one remaining tribute-line. His only real enemy is destruction. |
 
 **Open threads / mysteries — deliberately not pre-decided:**
-- Contents of Lucius's lockbox (personal, not political — reveal in play)
+- Contents of Lucius's lockbox (personal, not political — reveal in play, carried by party)
 - Whether Brutus knows his goals align with Mars's, or is being used
 - Whether Vercingetorix's binding can actually be ended by the spear's destruction
 - Whether the two chieftains' cult faction knows it serves Mars, or believes it serves
@@ -259,6 +258,12 @@ response — see Session 3 entry below. About to depart for the forest.
 
 **Resolved threads (do not re-open):**
 - **Varro's fate** — dead. Killed by Ursula at the gate. Declared "I did this for Rome" before falling. Confirmed Session 3 cold open.
+- **Lucius's fate** — dead. Killed Session 3 (giant spider lure). Does not appear in Sessions 4-5. Guardianship in Session 5 Destroy ending falls solely upon the PCs.
+
+**Critical gap for Session 4 prep:**
+- Party has **never met Thusnelda**. All forest/bog/village/grove scenes from chapter3.qmd unplayed.
+- Thusnelda was the guide to the Blood Cult Dungeon entrance. Replacement: **Vercingetorix guides them** — he has fought this war 200 years and knows where the cult operates. Fits his arc (wants it ended) and requires zero new content.
+- S4 cheat card continuity check asks about Speak with Dead with Vercingetorix in S3 — this never happened, but is moot: party already has full spear origin from Mars's direct speech.
 
 ---
 
@@ -295,18 +300,20 @@ fort before departing. Two gods answered directly:
   He needs an OGAS before Session 4 prep if he is going to recur.
 - A message was carved into the ground: **"Mars sees everything."**
 
-**Lucius's heritage revealed:** Party learned Tribune Lucius was fostered among a Germanic
-tribe as a boy. Exact mechanism of reveal (lockbox contents, his own admission, or
-otherwise) not yet recorded — confirm with table and update here.
+**Lucius's death & heritage:** Tribune Lucius died during Session 3 in the forest. The
+party lured a pack of giant spiders into the group; Lucius perished in the assault.
+His heritage as a boy fostered among a Germanic tribe was revealed via his lockbox/papers,
+now carried by the party. Party proceeds to Session 4 without Roman leadership.
 
 **Flag for Session 4-5 prep:** Do not write the Vercingetorix/Caesar backstory as if it
 is news to the party. His Final Death monologue in Session 5 should be *confirmation and
 emotional weight from him personally*, not a first reveal. The party already knows the
 shape of the story from Mars himself.
 
-**Everything else this session (forest journey, bog, village, grove, sacrifice circle):**
-Played or in progress per chapter3.qmd. Record specific deviations here after the next
-table session.
+**Session summary:** Session 3 was essentially two beats: departing the fort and killing
+Lucius (via spider lure in the forest). The extended forest journey, bog, village, grove,
+and sacrifice circle from chapter3.qmd did not play out this session. Those scenes are
+unresolved — carry them forward into Session 4 as needed, or treat as skipped.
 
 ---
 

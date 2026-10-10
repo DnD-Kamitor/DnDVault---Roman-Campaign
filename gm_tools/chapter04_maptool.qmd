@@ -13,13 +13,13 @@ between scenes.
 
 | Scene | Map File | Tokens to Place | Notes |
 |---|---|---|---|
-| Scene 0: The Marsh | `Maptool/maps/dicegrimorium/SkeletonFortressEntrance/Skeleton Fortress Entrance Public/SkeletonFortressEntrancePublic.jpg` | All PCs, Tribune_Lucius, Banshee ×2 | Banshees rise when the party is mid-causeway, not on arrival. Stagger their Wails. |
-| Scene 1: The Ossuary | `Maptool/maps/dicegrimorium/BloodCultDungeon/Blood Cult Dungeon Public/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg` (west skull room) | All PCs, Bone_Naga ×2 | Position in the circular skull-shaped room, west side of the map. |
-| Scene 2: The Blood-Growth Rooms | Same map, east rooms | All PCs, Yochlol ×1, Dretch ×2 | The two rooms thick with fleshy growths, east side of the map. |
-| Scene 3: The Minor Altar | Same map, center room | All PCs, Shadow_Demon ×2 | The glowing dais + 4 pillars room at the map's center. |
+| Scene 0: The Marsh | `Maptool/maps/dicegrimorium/SkeletonFortressEntrance/Skeleton Fortress Entrance Public/SkeletonFortressEntrancePublic.jpg` | All PCs, [Banshee](https://www.dndbeyond.com/monsters/16799-banshee) ×3 | Banshees (*MM* p. 23, CR 4, AC 12, HP 58) rise mid-causeway. Staggered Wails across rounds. |
+| Scene 1: The Ossuary | `Maptool/maps/dicegrimorium/BloodCultDungeon/Blood Cult Dungeon Public/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg` (west skull room) | All PCs, [Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga) ×2, [Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton) ×4 | Nagas (*MM* p. 233, CR 4, AC 15, HP 58) + 4 Skeletons (*MM* p. 272, CR 1/4, AC 13, HP 13). Both vulnerable to bludgeoning. |
+| Scene 2: The Blood-Growth Rooms | Same map, east rooms | All PCs, [Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol) ×1, [Dretch](https://www.dndbeyond.com/monsters/16847-dretch) ×2 | Yochlol (*MM* p. 65, CR 6, AC 15, HP 136) + Dretches (*MM* p. 57, CR 1/4, AC 11, HP 18, Fetid Cloud). |
+| Scene 3: The Minor Altar | Same map, center room | All PCs, [Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon) ×3 | Shadow Demons (*MM* p. 64, CR 4, AC 13, HP 66, vuln radiant). 4 Braziers puzzle: lighting them strips stealth and activates Sunlight Weakness. |
 | Scene 4: The Rune Lock | Same map, south of center | All PCs (no combat tokens by default) | The room with the 4 glowing sigil tiles. Optional Dretch ambush if pacing needs it. |
-| Scene 5: The Gathering Hall | Same map, south end | All PCs, Wraith ×3 | The two chieftains + a devoted follower, all three Wraiths. Stagger Create Specter. |
-| Scene 6: The Core Room | `Maptool/maps/dicegrimorium/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg` | All PCs, Glabrezu ×1 | The circular sanctum with the crystal-star focus on the dais. |
+| Scene 5: The Gathering Hall | Same map, south end | All PCs, [Wraith](https://www.dndbeyond.com/monsters/17064-wraith) ×3 | Chieftains (*MM* p. 302, CR 5, AC 13, HP 67). Life Drain, Incorporeal Movement, Sunlight Sensitivity. |
+| Scene 6: The Core Room | `Maptool/maps/dicegrimorium/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg` | All PCs, [Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu) ×1 | Glabrezu (*MM* p. 58, CR 9, AC 17, HP 157). Multiattack, Innate Spellcasting, Magic Resistance. Long Rest into Lvl 7. |
 
 ---
 
@@ -38,12 +38,12 @@ between scenes.
 
 ### NPC Tokens
 
-| Token | File | Scene | Frame Colour |
-|---|---|---|---|
-| Tribune Lucius | `Maptool/tokens/npcs/named/Tribune_Lucius.rptok` | All scenes -- travels with the party per Session 3 | Grey (divided loyalty, not yet trusted or distrusted) |
+No allied NPCs travel with the party this session:
+- **Tribune Lucius is deceased** (fell in Session 3) — the contubernium travels alone, carrying his locked iron box.
+- **Centurion Varro is deceased** (killed in Session 3 cold open).
+- **Legate Corvinus and Augur Cassia** stayed behind to secure Fort Vindolanda.
 
-Legate Corvinus, Centurion Varro, and Augur Cassia do **not** appear this session -- they
-stayed at the fort. Do not place their tokens.
+Do not place any garrison NPC tokens.
 
 ---
 
@@ -51,20 +51,14 @@ stayed at the fort. Do not place their tokens.
 
 | Creature | File | Scene | Count | Notes |
 |---|---|---|---|---|
-| Banshee | `Maptool/tokens/npcs/creatures/Banshee.rptok` | Scene 0, the Marsh | ×2 | Rise mid-causeway, not on sight |
-| Bone Naga | `Maptool/tokens/npcs/creatures/Bone_Naga.rptok` | Scene 1, the Ossuary | ×2 | Trigger on disturbing the bone floor |
-| Yochlol | `Maptool/tokens/npcs/creatures/Yochlol.rptok` | Scene 2, Blood-Growth Rooms | ×1 | Starts hidden in spider form |
-| Dretch | `Maptool/tokens/npcs/creatures/Dretch.rptok` | Scene 2 (support), Scene 4 (optional) | ×2 (+1 optional) | Demon chaff; Fetid Cloud on recharge |
-| Shadow Demon | `Maptool/tokens/npcs/creatures/Shadow_Demon.rptok` | Scene 3, Minor Altar | ×2 | Shadow Stealth between the 4 pillars |
-| Wraith | `Maptool/tokens/npcs/creatures/Wraith.rptok` | Scene 5, Gathering Hall | ×3 | The two chieftains + one follower. Cap specters at 3 total. |
-| Glabrezu | `Maptool/tokens/npcs/creatures/Glabrezu.rptok` (generate if not yet present -- see note below) | Scene 6, Core Room | ×1 | Guards the crystal focus; Darkness/Confusion/Power Word Stun |
-
-::: {.dm-note}
-If `Glabrezu.rptok` doesn't exist yet in `Maptool/tokens/npcs/creatures/`, it needs a
-`npcs/glabrezu.json` sheet and a `creature_stats.json` entry generated the same way the
-other 5 Session 4 monsters were (see SCRUM_BACKLOG.md Epic 8's commit history) before
-this session can be run in MapTool.
-:::
+| [Banshee](https://www.dndbeyond.com/monsters/16799-banshee) | `Maptool/tokens/npcs/creatures/Banshee.rptok` | Scene 0, the Marsh | ×3 | *MM* p. 23. CR 4, AC 12, HP 58. Wail (1/day), Horrifying Visage |
+| [Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga) | `Maptool/tokens/npcs/creatures/Bone_Naga.rptok` | Scene 1, the Ossuary | ×2 | *MM* p. 233. CR 4, AC 15, HP 58. Vulnerable to bludgeoning; Hold Person / Ray of Enfeeblement |
+| [Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton) | `Maptool/tokens/npcs/creatures/Skeleton.rptok` | Scene 1, the Ossuary | ×4 | *MM* p. 272. CR 1/4, AC 13, HP 13. Vulnerable to bludgeoning |
+| [Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol) | `Maptool/tokens/npcs/creatures/Yochlol.rptok` | Scene 2, Blood-Growth Rooms | ×1 | *MM* p. 65. CR 6, AC 15, HP 136. Mist Form, Web, Slam + poison |
+| [Dretch](https://www.dndbeyond.com/monsters/16847-dretch) | `Maptool/tokens/npcs/creatures/Dretch.rptok` | Scene 2 (support), Scene 4 (optional) | ×2 | *MM* p. 57. CR 1/4, AC 11, HP 18. Fetid Cloud |
+| [Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon) | `Maptool/tokens/npcs/creatures/Shadow_Demon.rptok` | Scene 3, Minor Altar | ×3 | *MM* p. 64. CR 4, AC 13, HP 66. Vulnerable to radiant; Sunlight Weakness |
+| [Wraith](https://www.dndbeyond.com/monsters/17064-wraith) | `Maptool/tokens/npcs/creatures/Wraith.rptok` | Scene 5, Gathering Hall | ×3 | *MM* p. 302. CR 5, AC 13, HP 67. Life Drain, Incorporeal Movement, Sunlight Sensitivity |
+| [Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu) | `Maptool/tokens/npcs/creatures/Glabrezu.rptok` | Scene 6, Core Room | ×1 | *MM* p. 58. CR 9, AC 17, HP 157. Pincers, Fists, Innate Spellcasting, Magic Resistance |
 
 ---
 
@@ -95,11 +89,8 @@ cp "$DG/SkeletonFortressEntrance/Skeleton Fortress Entrance Public/SkeletonFortr
 cp "$DG/BloodCultDungeon/Blood Cult Dungeon Public/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg" "$S/"
 cp "$DG/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg" "$S/"
 
-# NPCs
-copy_npc "Tribune_Lucius" "$S"
-
 # Creatures
-for slug in Banshee Bone_Naga Yochlol Dretch Shadow_Demon Wraith Glabrezu; do
+for slug in Banshee Bone_Naga Skeleton Yochlol Dretch Shadow_Demon Wraith Glabrezu; do
   copy_npc "$slug" "$S"
 done
 ```

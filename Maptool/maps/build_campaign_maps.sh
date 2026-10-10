@@ -251,13 +251,13 @@ mkdir -p "$S"
 # Dice Grimorium maps -- the marsh entrance, the main dungeon, the Core Room
 cp "$DG/SkeletonFortressEntrance/Skeleton Fortress Entrance Public/SkeletonFortressEntrancePublic.jpg" "$S/" 2>/dev/null \
   && echo "   + SkeletonFortressEntrance" || echo " [miss] SkeletonFortressEntrance"
-cp "$DG/BloodCultDungeon/Blood Cult Dungeon Public/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg" "$S/" 2>/dev/null \
-  && echo "   + BloodCultDungeon" || echo " [miss] BloodCultDungeon"
+cp "$DG/bloodcult.jpg" "$S/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg" 2>/dev/null \
+  && cp "$DG/bloodcult.jpg" "$S/bloodcult.jpg" 2>/dev/null \
+  && echo "   + BloodCultDungeon (Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg)" || echo " [miss] BloodCultDungeon"
 cp "$DG/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg" "$S/" 2>/dev/null \
   && echo "   + CastleCoreRoom" || echo " [miss] CastleCoreRoom"
 
-# NPCs: only Lucius travels with the party this session (Corvinus/Varro/Cassia stay at the fort)
-copy_npc "Tribune_Lucius" "$S"
+# NPCs: no garrison NPCs travel (Lucius fell in S3; Corvinus/Cassia stay at fort; Varro dead)
 
 # Creatures: the Blood Cult Dungeon's monster roster (all real Monster Manual
 # demons/undead, no generic filler -- see SCRUM_BACKLOG.md Epic 8)
@@ -279,9 +279,7 @@ copy_svg s5_mars_vault_overview "$S" # Full vault overview: Sunken Armory -> Cho
 copy_svg s5_mars_vault          "$S" # Scene 1-2: entry corridor, antechamber, Convergence Hall 3-passage choice
 copy_svg s5_mars_confrontation  "$S" # Scene 4: the Sanctum, Mars's staged manifestation
 
-# NPCs: only Lucius travels with the party this session (Corvinus/Varro/Cassia
-# stay at the fort per Chapter 4, reappear only in the epilogue back at the fort)
-copy_npc "Tribune_Lucius" "$S"
+# NPCs: Vercingetorix Bound and Mars (Lucius fell in S3; garrison at fort)
 copy_npc "Vercingetorix_Bound" "$S"
 copy_npc "Mars" "$S"
 

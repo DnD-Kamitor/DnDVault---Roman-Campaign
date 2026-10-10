@@ -27,11 +27,11 @@ subtitle: "GM guide — Chapter 4"
 
 | NPC | Location at session start | Wants | Role this session |
 |---|---|---|---|
-| Tribune Lucius | Travels with the party (only fort NPC who does) | Confirm what the spear does to ambitious men who think they can control it | Watches, covers retreat if Scene 6 goes badly, never touches the crystal |
+| The contubernium (Party) | Entering the Blood Cult Dungeon alone | Clear the cult's sanctum; learn how the spear can be destroyed | Operating behind enemy lines; carries Lucius's locked box |
 | The two cult chieftains | Gathering Hall, now Wraiths | Nothing anymore — what's left reacts, not plans | Scene 5's tragic reveal |
-| Legate Corvinus / Centurion Varro / Augur Cassia | Fort Vindolanda | -- | Do not appear this session -- stayed at the fort |
+| The Glabrezu | Core Room, bound to focus | Guard the crystal tribute anchor | Scene 6 Boss |
 
-**What is NOT in this session:** the old six-day fort siege (Berserkers, Cultist of Mars fanatics, Tribal Warriors, Animated Armor, Quintus Flavius, a tunnel escort to an antechamber). None of that survives in the campaign's actual structure -- see `CAMPAIGN_LOG.md` and `SCRUM_BACKLOG.md`'s Epic 8 for why.
+**What is NOT in this session:** Legate Corvinus and Augur Cassia stayed at Fort Vindolanda. Centurion Varro and Tribune Lucius are fallen. The old six-day fort siege (Berserkers, Tribal Warriors, Animated Armor, Quintus Flavius) is completely retired.
 
 </details>
 
@@ -46,9 +46,12 @@ The bone causeway is the only dry footing. Leaving it means wading through glowi
 
 **Marsh hazard (each round off the causeway):** DC 12 Constitution save or one level of exhaustion and 1 point of temporary corruption. The causeway itself is always safe.
 
-**Two supply caches** at the marsh's near corners. DC 11 Wisdom (Investigation) turns up rations gone green with the same glow, a tally-marked stick counting days, and -- second cache -- a torn strip of cloth matching the two chieftains' warband colors. Third and final confirmation this is the right place.
+**Two supply caches** at the marsh's near corners. DC 11 Wisdom (Investigation) turns up rations gone green with the same glow, a tally-marked stick counting days, and a torn strip of cloth matching the two chieftains' warband colors.
 
-**Encounter:** 2 **Banshees** rise from the marsh as the party crosses -- early followers who didn't survive tending this place. They rise mid-causeway, roughly a third of the way across, not on arrival. Stagger their Wails; never let both go off in the same round.
+**Encounter:** 3 × **[Banshee](https://www.dndbeyond.com/monsters/16799-banshee)** (*Monster Manual* p. 23 — CR 4, AC 12, HP 58).
+- **Environment:** Flanking banshees fly over the marsh; causeway is only 5 ft wide.
+- **Actions:** *Corrupting Touch* (+4 to hit, 3d6+2 necrotic), *Horrifying Visage* (DC 13 Wis save or frightened).
+- **Wail:** 1/day, DC 13 Con save: drops to 0 HP on failure, or takes 3d6 psychic. Stagger the Wails across rounds; telegraph the scream to create dramatic tension!
 
 </details>
 
@@ -61,7 +64,8 @@ Load `Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg`, west skull room.
 
 DC 13 Intelligence (History) (active): the bones are sorted by size, by age, deliberately -- curated for months, not years. Matches the marsh tally-stick.
 
-**Encounter:** 2 **Bone Nagas**, coiled among the bones. They wait until a character disturbs the bone floor or casts a spell before acting. Use their spellcasting to control -- Hold Person on the party's main damage dealer, Ray of Enfeeblement on a melee striker.
+**Encounter:** 2 × **[Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga)** (*Monster Manual* p. 233 — CR 4, AC 15, HP 58) + 4 × **[Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton)** (*Monster Manual* p. 272 — CR 1/4, AC 13, HP 13).
+- **Tactics:** Skeletons have official MM **vulnerability to bludgeoning damage** (maces/warhammers shatter them in 1 hit). Nagas use spellcasting (*hold person*, *ray of sickness*, *ray of enfeeblement*) and Bite (+5, 2d6+3 piercing + 3d6 poison).
 
 </details>
 
@@ -74,7 +78,9 @@ Same map, east rooms.
 
 DC 12 Wisdom (Medicine) or Intelligence (Nature) (active): organic, fed on blood deliberately and repeatedly, over a long period.
 
-**Encounter:** a **Yochlol**, hidden in the growths in spider form, supported by 2 **Dretches**. The Yochlol drops once the party investigates the growths; the Dretches emerge a round later, framed as the room "reacting." Insect Plague is available if the fight runs long -- the growths are already a breeding ground.
+**Encounter:** 1 × **[Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol)** (*Monster Manual* p. 65 — CR 6, AC 15, HP 136) + 2 × **[Dretch](https://www.dndbeyond.com/monsters/16847-dretch)** (*Monster Manual* p. 57 — CR 1/4, AC 11, HP 18).
+- **Yochlol:** Drops in giant spider form (*Shapechanger*), using *Multiattack* (+6, 1d6+3 bludgeoning plus 6d6 poison) and *web*. Magic Resistance.
+- **Dretches:** Support chaff. *Fetid Cloud* (1/day, DC 11 Con or retching/poisoned).
 
 </details>
 
@@ -87,7 +93,9 @@ Same map, center room.
 
 DC 14 Intelligence (Religion) (active): this altar never completed a working -- every mark is a false start. Whatever the cult built up to happened elsewhere.
 
-**Encounter:** 2 **Shadow Demons**, using the four pillars to break line of sight constantly. On sight, but they immediately vanish between pillars rather than engaging directly -- striking from a different pillar each round. Being stalked, not a fair fight.
+**Encounter:** 3 × **[Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon)** (*Monster Manual* p. 64 — CR 4, AC 13, HP 66).
+- **Official Weaknesses:** Vulnerable to radiant damage; **Light Sensitivity** gives disadvantage on attacks and sight checks in bright light.
+- **The Four Braziers:** Lighting the corner braziers illuminates the room, neutralizing *Shadow Stealth* and granting PCs the tactical upper hand.
 
 </details>
 
@@ -98,11 +106,9 @@ Same map, south of center.
 
 > *Four tiles are set into the floor here, each etched with a different symbol, each lit from beneath in a different color -- cyan, green, magenta, yellow. There's no door ahead. Whatever this room is guarding, it's guarding it by making you choose.*
 
-**Solution:** cyan &rarr; green &rarr; yellow &rarr; magenta ("beginning, growth, harvest, blood" -- the cult's own private liturgy). DC 13 Intelligence (Investigation) or Wisdom (Insight) on wear patterns hints at the order.
+**Solution:** cyan &rarr; green &rarr; yellow &rarr; magenta ("beginning, growth, harvest, blood" -- the cult's seasonal liturgy). DC 13 Intelligence (Investigation) or Wisdom (Insight) on wear patterns hints at the order.
 
-**Failure:** DC 12 Dexterity save or 2d6 force damage, sequence resets. No lockout, ever -- this room should never be a hard stop.
-
-This is the session's breather beat. If pacing needs it, one fled Dretch from Scene 2 can ambush from hiding -- don't force it otherwise.
+**Failure:** DC 12 Dexterity save or 2d6 force damage, sequence resets. No lockout, ever. Breather beat.
 
 </details>
 
@@ -113,13 +119,11 @@ Same map, south end.
 
 > *This room was built to hold people. Rows of worn stone mark where dozens once knelt, facing a long table at the far end, still laid with offerings gone black with age. Whatever congregation gathered here, it hasn't gathered in some time. But something is still standing at that table.*
 
-**The reveal:** what's still standing are the two cult chieftains, or what's left of them. DC 13 Wisdom (Insight) or Intelligence (Investigation) before combat identifies torn fragments matching the marsh cache's warband colors.
+**The reveal:** what's still standing are the two cult chieftains, or what's left of them. DC 13 Wisdom (Insight) before combat identifies torn fragments matching the marsh cache's warband colors.
 
-**Encounter:** 3 **Wraiths** -- the two chieftains and one devoted follower.
-
-**This room needs to land as tragedy, not just a fight.** The chieftains got exactly what they thought they wanted, and it consumed them entirely. Play their first actions as recognition, not aggression: they turn toward the party slowly and, for one round, do nothing but watch. If spoken to directly, one fragmentary sentence each ("we asked --" / "it heard us") before the hunger takes back over.
-
-**Escalation:** Create Specter from any humanoid corpse killed in the last minute within 10 ft. Cap total specters at 3 for table sanity. Stagger it the same way the Banshees' Wails were staggered in Scene 0.
+**Encounter:** 3 × **[Wraith](https://www.dndbeyond.com/monsters/17064-wraith)** (*Monster Manual* p. 302 — CR 5, AC 13, HP 67) -- the two chieftains and their shield-bearer.
+- **Round 1:** Recognition, not aggression -- they watch in silence. If spoken to: *"We asked for victory... it took our blood... it starves still..."*
+- **Combat:** *Life Drain* (+6, 4d6+3 necrotic, DC 14 Con save vs max HP reduction). *Incorporeal Movement* to glide through stone obstacles.
 
 </details>
 
@@ -130,13 +134,13 @@ Load `CastleCoreRoomPublic.jpg`.
 
 > *The stair curves up into a perfectly circular chamber. Four stone faces watch from the walls at the compass points -- not gods, not ancestors, just teeth and eyes carved to be looked at from every angle at once. At the center, on a low dais, a crystal the shape of a broken star burns steady and cold. It is the only thing in this entire dungeon that looks cared for.*
 
-**What the crystal actually is:** DC 15 Intelligence (Arcana) or Intelligence (Religion) (active, or automatic once the party knows what Vercingetorix revealed): this is the cult's real altar and the marsh's real source. Every drop of blood spent in every room below was tribute funneled here -- not to summon Mars, but to keep something that answers to his name fed and present a little longer. The rooms below weren't separate encounters. They were all one working, and this was always where it was going.
+**What the crystal actually is:** DC 15 Intelligence (Arcana) or Intelligence (Religion): the cult's real altar and the marsh's source -- tribute funneled here to feed Mars.
 
-**The guardian:** a **Glabrezu**, bound to the focus, not merely standing near it. It opens with Darkness centered on the dais, then uses Confusion and Power Word Stun to isolate whoever gets closest to the crystal. It will not chase a fleeing party far -- its purpose is guarding the focus, not hunting.
+**The guardian:** 1 × **[Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu)** (*Monster Manual* p. 58 — CR 9, AC 17, HP 157), bound to the focus.
+- **Attacks:** Opens with *Darkness*, uses *Power Word Stun* (DC 16 Con) on the primary damage dealer, and attacks with 2 Pincers (+9, 2d10+5 plus grapple DC 15) and 2 Fists (+9, 2d4+5).
+- **Pacing:** Against a party of 6 Level 6 characters focusing fire, 157 HP is brought down cleanly in 2-3 fast rounds.
 
-**The actual payoff of this session:** once the Glabrezu is dealt with, the crystal can be examined but not destroyed here -- trying visibly fails, absorbing whatever is thrown at it. That's Session 5's job. This scene should end with the party knowing the name of the place they need to go next and the shape of the cost waiting there -- not with the spear's story resolved.
-
-**Advance to Level 7.**
+**The Payoff & Rest:** The crystal cannot be destroyed here (Session 5's job). Demonic pressure collapses. The party takes a **Long Rest** in the cleansed Core Room, **advancing to Level 7** with all spell slots and resources refreshed before descending.
 
 </details>
 
@@ -144,18 +148,12 @@ Load `CastleCoreRoomPublic.jpg`.
 <summary>🏛️ DM Notes</summary>
 
 **OGAS this session:**
+- **The two chieftains (now Wraiths):** Objective: feed the war-god who promised victory. Secret: Mars answered them honestly -- and the cost was everything they were.
+- **The Glabrezu:** Objective: protect the crystal-star focus. Secret: pulled into the world by sheer blood tribute, manifesting Mars's hunger.
 
-- **The two chieftains (now Wraiths):** Objective: feed the war-god who could finally give their people victories that lasted. Goal (this session): none anymore. Agenda: guard the hall they built, unable to leave or stop. Secret: they were not lied to about Mars's hunger -- they were right about what he wanted, and wrong about what answering it would cost them personally.
-- **Tribune Lucius:** unchanged objective from Session 3 -- this must never reach Rome. This dungeon confirms everything he already suspected about the spear. Covers the party's retreat if the Core Room fight goes badly; does not touch the crystal himself.
-
-**Session 4 &rarr; Session 5 handoff -- write these down now:**
-
-| Question | Session 5 implication |
-|---|---|
-| Did the party learn what the crystal requires to be destroyed? | Determines how prepared they are walking into Session 5 |
-| Are all three Wraiths accounted for? | An escaped Wraith is a loose thread worth resolving in Session 5 |
-| What is each character's corruption level after this session? | Proximity to the focus should have pushed at least one up -- note who |
-| Is Lucius still with the party? | Carries forward into Session 5 unchanged unless this session broke that |
+**Session 4 &rarr; Session 5 handoff:**
+- Party enters Session 5 at Level 7 with full HP, spells, and long-rest abilities.
+- Party carries Lucius's locked box containing his Germanic childhood mementos and posthumous citizenship recommendations.
 
 </details>
 
