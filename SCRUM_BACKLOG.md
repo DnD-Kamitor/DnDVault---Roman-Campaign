@@ -728,6 +728,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** One system prompt file + avatar.
 - **Testable:** Asking "What did the sacrificial liver reveal today?" produces an authentic Haruspex response referencing Camp Vindolanda omens.
 - **Acceptance criteria:** Model persona configured in OpenWebUI with knowledge grounding to `shadow-of-mars` collection; speaks with solemn Roman augural authority.
+- **Status: DONE** (2026-10-10) — Created `ai_personas/augur_cassia.json` conforming to OpenWebUI model format with `shadow-of-mars` RAG collection linkage, authentic haruspicina grounding (Clavis Caeli knife, *caput extorum*, *fas/nefas*), and verified completion outputs.
 
 ### Story 12.3 — "Whispers of Mars" Interactive Dream Persona
 - **Independent:** Configured in `ai_personas/whispers_of_mars.json`.
