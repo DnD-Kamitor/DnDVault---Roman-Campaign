@@ -133,7 +133,7 @@ He is waiting at the passage into the Sanctum, and he has been waiting since bef
 
 This is his true and final appearance. He does not negotiate, does not ally, does not explain himself before the fight. He fights the way he has fought every time Mars has sent him: without hatred, without hesitation, and without any real hope that this time will be different.
 
-**Stat block: [Vercingetorix Bound](file:///home/chris/Nextcloud/Github/DnDVault---Roman-Campaign/npcs/vercingetorix_bound.json)** (*CR 11 Undead*, AC 18, HP 150):
+**Stat block: [Vercingetorix Bound](npcs/vercingetorix_bound.json)** (*CR 11 Undead*, AC 18, HP 150):
 - **Parry (Reaction):** Adds +4 to AC against one melee attack that would hit him.
 - **Aura of the Unfinished War:** Melee attacks deal extra necrotic damage (Sword of the Last Charge: +8 to hit, 2d6+5 slashing + 2d8 necrotic).
 - **Fear Aura (Recharge 5-6):** DC 15 Wisdom save or Frightened for 1 minute.
@@ -182,7 +182,7 @@ Load `s5_mars_confrontation.html`. Granite altar at the center, chain anchors sc
 
 </details>
 
-**Stat block: [Mars](file:///home/chris/Nextcloud/Github/DnDVault---Roman-Campaign/npcs/mars.json)** (*Divine Avatar*, CR 20, AC 22, HP 300):
+**Stat block: [Mars](npcs/mars.json)** (*Divine Avatar*, CR 20, AC 22, HP 300):
 - **Divine Pilum:** Multiattack (4 attacks, +12 to hit, range 60 ft, 2d8+7 piercing + 2d8 radiant).
 - **Divine Smite (1/round):** +4d8 radiant on a hit.
 - **War Cry (Recharge 5-6):** DC 18 Wisdom save or Frightened for 1 minute.

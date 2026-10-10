@@ -90,7 +90,7 @@ Load `s5_mars_vault.html`/`.jpg`, zone 3.
 
 > *"Again," he says, in Latin thick with an accent that predates the Empire itself. "Always again. Tell me this time is the one that ends it."*
 
-**[Vercingetorix Bound](file:///home/chris/Nextcloud/Github/DnDVault---Roman-Campaign/npcs/vercingetorix_bound.json)** (*CR 11 Undead*, AC 18, HP 150):
+**[Vercingetorix Bound](../npcs/vercingetorix_bound.json)** (*CR 11 Undead*, AC 18, HP 150):
 - **Parry (Reaction):** +4 AC against one melee attack.
 - **Sword of the Last Charge:** +8 to hit, 2d6+5 slashing + 2d8 necrotic.
 - **Relentless (1/day):** When reduced to 0 HP, drops to 1 HP instead and roars *"FINISH IT!"* unless hit by radiant/Belatucadrus damage.
@@ -114,7 +114,7 @@ Load `s5_mars_confrontation.html`/`.jpg`.
 
 **Cameo of the Wight-general:** If spared in Session 1, his spirit rises once: *"I held this three hundred years so it would not have to end like this. I am glad I do not have to decide."* Released upon decision.
 
-**Stat block: [Mars](file:///home/chris/Nextcloud/Github/DnDVault---Roman-Campaign/npcs/mars.json)** (*Divine Avatar*, CR 20, AC 22, HP 300):
+**Stat block: [Mars](../npcs/mars.json)** (*Divine Avatar*, CR 20, AC 22, HP 300):
 - Multiattack (4 Divine Pilum, +12 to hit, range 60 ft, 2d8+7 piercing + 2d8 radiant).
 - Divine Smite (1/round, +4d8 radiant).
 - War Cry (DC 18 Wis or Frightened). Legendary Resistance 3/day.
