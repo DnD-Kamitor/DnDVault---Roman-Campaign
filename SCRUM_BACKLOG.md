@@ -708,7 +708,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 
 **Why:** The local AI stack has `qdrant` (port 6333), `litellm` (port 4000), and `openwebui` (port 3000) active and healthy. Indexing the campaign's rich documentation (`CAMPAIGN_LOG.md`, `knowledge.qmd`, `npcs/*.json`, `vindolanda_guide.qmd`) creates an authentic Roman oracle and lets the GM or players interactively roleplay divine dreams and dead-king interrogations between sessions.
 
-**Status: READY FOR SPRINT PLANNING**
+**Status: DONE** (2026-10-10)
 
 ### Story 12.1 — Campaign RAG Chunking & Qdrant Ingestion Script
 - **Independent:** Standalone Python script in `scripts/index_campaign_rag.py`.
@@ -748,4 +748,5 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** One system prompt file.
 - **Testable:** Answers up to 3 questions about Alesia, Caesar, and the spear, then replies with "..." and turns to ash.
 - **Acceptance criteria:** System prompt strictly enforces the 3-question limit, his Gallic perspective, his tragic weariness, and the exact chain unmaking secret.
+- **Status: DONE** (2026-10-10) — Built `ai_personas/vercingetorix_sparring.json` with strict 3-question protocol, tragic Gallic persona, and canonical chain winch unmaking mechanics; tested multi-turn sparring rehearsal against local model.
 
