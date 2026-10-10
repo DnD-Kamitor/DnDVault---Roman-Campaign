@@ -766,7 +766,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** 25-30 automated unit tests.
 - **Testable:** Executed via `python3 -m unittest tests/test_npc_integrity.py`.
 - **Acceptance criteria:** Tests all 89 NPC files, specific named bosses (Mars, Vercingetorix Bound), and Monster Manual entries.
-- **Status: TODO**
+- **Status: DONE** (2026-10-10) — Built `tests/test_npc_integrity.py` with 27 automated unit tests covering all 89 NPC files, stat blocks, ability scores, CRs, and Boss traits (27/27 passing).
 
 ### Story 13.2 — Voice Audio Clips & Audio Manifest Integrity Tests (15+ tests)
 - **Independent:** Standalone test suite in `tests/test_audio_integrity.py`.
