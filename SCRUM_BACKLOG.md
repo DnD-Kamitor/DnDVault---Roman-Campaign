@@ -650,6 +650,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** ~80 lines of Python with `requests` or `urllib.request`.
 - **Testable:** Calling script produces valid `.mp3` files in `audio/clips/` playable with any media player.
 - **Acceptance criteria:** Reads `audio/voice_manifest.json` specifying clip ID, target text, voice (`onyx`, `fable`, `shimmer`, `echo`), and outputs `.mp3` files via `http://localhost:8001/v1/audio/speech`.
+- **Status: DONE** (2026-10-10) — Built `scripts/generate_voice_clips.py`, configured `audio/voice_manifest.json` with 11 S4/S5 clips, added unit tests in `tests/test_generate_voice_clips.py` (2/2 passing).
 
 ### Story 11.2 — Session 4 Audio Generation (The Blood Cult Dungeon)
 - **Independent:** Depends on 11.1 script; content independent of S5.

@@ -1,0 +1,94 @@
+{
+  "endpoint": "http://localhost:8001/v1/audio/speech",
+  "default_model": "tts-1",
+  "clips": [
+    {
+      "id": "s4_scene0_marsh_readaloud",
+      "session": 4,
+      "scene": "Scene 0",
+      "character": "Narrator",
+      "voice": "fable",
+      "text": "The trees thin out and the ground goes soft underfoot before you see why. Ahead, the hillside opens in a mouth — not a metaphor. A skull carved from the living rock, easily twenty feet across, its eye sockets black even at midday. A causeway of bone and old skulls runs from between its teeth down into a wide, glowing green marsh that splits around the path like water around a stone."
+    },
+    {
+      "id": "s4_banshee_dread_mother",
+      "session": 4,
+      "scene": "Scene 0",
+      "character": "Banshee Dread Mother",
+      "voice": "shimmer",
+      "text": "Turn back... the water remembers every breath you took..."
+    },
+    {
+      "id": "s4_wraith_chieftain_confession",
+      "session": 4,
+      "scene": "Scene 5",
+      "character": "Wraith Chieftains",
+      "voice": "echo",
+      "text": "We asked for victory... it took our blood... it starves still..."
+    },
+    {
+      "id": "s4_glabrezu_core_entrance",
+      "session": 4,
+      "scene": "Scene 6",
+      "character": "Glabrezu Guardian",
+      "voice": "onyx",
+      "text": "The harvest has already been gathered. You are only here to be measured."
+    },
+    {
+      "id": "s5_scene0_descent_readaloud",
+      "session": 5,
+      "scene": "Scene 0",
+      "character": "Narrator",
+      "voice": "fable",
+      "text": "The crystal-star's light does not fade when the demon guarding it falls. It gets worse. Cracks spread across its faces like frost across a window, and each one lets out a note too low to be a sound, felt in the teeth more than heard. In the silence where Tribune Lucius once stood, the stone floor shudders. Whatever this crystal feeds, it just fed it more than it wanted — and the only stairs lead down."
+    },
+    {
+      "id": "s5_vercingetorix_entrance",
+      "session": 5,
+      "scene": "Scene 3",
+      "character": "Vercingetorix Bound",
+      "voice": "onyx",
+      "text": "Again. Always again. Tell me this time is the one that ends it."
+    },
+    {
+      "id": "s5_vercingetorix_final_death",
+      "session": 5,
+      "scene": "Scene 3",
+      "character": "Vercingetorix Bound",
+      "voice": "fable",
+      "text": "The granite altar ahead... look to the four massive iron chain winches in the floor. Caesar's siege engineers forged them from captured Gallic steel to bind a god's avatar. Lock the four iron rings... they will drag Mars down and shatter his divine invulnerability. Only then can the spear be broken on the anvil! Tell me... after two hundred years... does Gaul still stand?"
+    },
+    {
+      "id": "s5_janus_threshold",
+      "session": 5,
+      "scene": "Scene 4",
+      "character": "Janus Threshold Vision",
+      "voice": "echo",
+      "text": "Mars is neither good nor evil. He is war itself. Choose how you cross this threshold."
+    },
+    {
+      "id": "s5_mars_challenge",
+      "session": 5,
+      "scene": "Scene 4",
+      "character": "Mars (Diminished Avatar)",
+      "voice": "onyx",
+      "text": "MORTALS. You have carried my anchor through two ghosts and a king who would not die. Now choose, and choose knowing I will remember which one you make."
+    },
+    {
+      "id": "s5_mars_destroy_reaction",
+      "session": 5,
+      "scene": "Scene 4",
+      "character": "Mars (Diminished Avatar)",
+      "voice": "onyx",
+      "text": "FOOLS! You bind the god who carved your legions from the mud! The chains will hold you longer than they hold me!"
+    },
+    {
+      "id": "s5_mars_depart_reaction",
+      "session": 5,
+      "scene": "Scene 4",
+      "character": "Mars (Diminished Avatar)",
+      "voice": "onyx",
+      "text": "You leave the blade in the stone. A wise cowardice. We will speak again when Rome bleeds."
+    }
+  ]
+}
