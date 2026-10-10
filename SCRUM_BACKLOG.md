@@ -756,7 +756,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 
 **Why:** To provide bulletproof, automated verification that the entire campaign system works end-to-end without regressions: NPC schemas, audio MP3 file integrity, cheat card players, MapTool token macros and XML archives, AI personas, Qdrant semantic RAG, and Quarto table builders. The table must run smoothly on game day with zero surprises.
 
-**Status: IN PROGRESS**
+**Status: DONE** (2026-10-10) — 119/119 unit tests passing with zero failures across 7 dedicated test suites.
 
 ### Story 13.1 — NPC & Monster Manual Stat Block Integrity Tests (25+ tests)
 - **Independent:** Standalone test suite in `tests/test_npc_integrity.py`.
@@ -816,6 +816,19 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** 15-20 unit tests.
 - **Testable:** Executed via `python3 -m unittest tests/test_campaign_docs_and_build.py`.
 - **Acceptance criteria:** Validates `_generated/` tables, Quarto configuration, and chapter cross-references.
-- **Status: TODO**
+- **Status: DONE** (2026-10-10) — Built `tests/test_campaign_docs_and_build.py` with 19 automated unit tests covering Quarto YAML configuration, chapter file existence, table automation execution, canon continuity, and Monster Manual URLs (19/19 passing).
+
+#### Automated Test Suite Execution Summary
+| Test Suite File | Domain | Test Count | Result |
+|---|---|:---:|:---:|
+| `tests/test_generate_voice_clips.py` | Audio generation dry-run & live API mocks | 2 | **2 / 2 PASS** |
+| `tests/test_npc_integrity.py` | 89 NPC JSONs, stat blocks, CRs, Boss mechanics | 27 | **27 / 27 PASS** |
+| `tests/test_audio_integrity.py` | MP3 / ID3 binary headers, file sizes, manifests | 18 | **18 / 18 PASS** |
+| `tests/test_cheat_cards.py` | HTML5 cheat cards, audio buttons, relative paths | 16 | **16 / 16 PASS** |
+| `tests/test_maptool_tokens.py` | MapTool `.rptok` ZIPs, XML well-formedness, audio macros | 22 | **22 / 22 PASS** |
+| `tests/test_ai_personas_and_rag.py` | OpenWebUI AI personas, RAG chunking, Qdrant vectors | 15 | **15 / 15 PASS** |
+| `tests/test_campaign_docs_and_build.py` | Quarto YAML, table builders, campaign continuity | 19 | **19 / 19 PASS** |
+| **TOTAL** | **Comprehensive Full System Verification** | **119** | **119 / 119 PASS (100%)** |
+
 
 
