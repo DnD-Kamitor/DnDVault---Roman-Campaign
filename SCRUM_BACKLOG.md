@@ -633,3 +633,111 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - Verified: `chapter3.qmd` renders, `<details>` balanced (39/39). `chapter03_guide.qmd`
   renders (pre-existing 13/14 off-by-one, same systemic pattern as Ch1/Ch2, not
   introduced here). `chapter03_print.html` `<div>` tags balanced (75/75).
+
+---
+
+## Epic 11: Local AI Voice & Atmospheric Audio Integration
+
+**Why:** The local `openedai-speech` Docker service (`http://localhost:8001`) from `InstallLocalAiPackage` is already running with OpenAI-compatible `/v1/audio/speech`. Delivering voiced NPC dialogue (Mars, Vercingetorix, Janus) and creepy read-aloud introductions directly through GM Cheat Cards and MapTool significantly raises table immersion during the final two sessions with zero external API cost or latency.
+
+**Status: READY FOR SPRINT PLANNING**
+
+### Story 11.1 — Python Voice Batch Generator Script
+- **Independent:** Standalone script in `scripts/generate_voice_clips.py`, no game file dependencies.
+- **Negotiable:** Model (`tts-1` vs `tts-1-hd`) and voice assignment configurable in JSON manifest.
+- **Valuable:** Automates repeatable generation of all campaign voice clips from a clean text catalog.
+- **Estimable:** ~30 min.
+- **Small:** ~80 lines of Python with `requests` or `urllib.request`.
+- **Testable:** Calling script produces valid `.mp3` files in `audio/clips/` playable with any media player.
+- **Acceptance criteria:** Reads `audio/voice_manifest.json` specifying clip ID, target text, voice (`onyx`, `fable`, `shimmer`, `echo`), and outputs `.mp3` files via `http://localhost:8001/v1/audio/speech`.
+
+### Story 11.2 — Session 4 Audio Generation (The Blood Cult Dungeon)
+- **Independent:** Depends on 11.1 script; content independent of S5.
+- **Negotiable:** Which scene read-alouds get voiced.
+- **Valuable:** Delivers eerie audio cues for the marsh entrance, wraith chieftain tragedy, and demonic core guardian.
+- **Estimable:** ~20 min.
+- **Small:** 4-5 short audio clips.
+- **Testable:** All S4 audio files exist on disk, verified under 30 seconds each for fast table pacing.
+- **Acceptance criteria:** Generates:
+  1. `s4_scene0_marsh_readaloud.mp3` (fable voice)
+  2. `s4_banshee_dread_mother.mp3` (shimmer voice, eerie hiss)
+  3. `s4_wraith_chieftain_confession.mp3` (echo voice, "We asked for victory... it took our blood...")
+  4. `s4_glabrezu_core_entrance.mp3` (onyx voice, deep fiendish mock).
+
+### Story 11.3 — Session 5 Audio Generation (The Wrath of Mars)
+- **Independent:** Uses 11.1 script; content focused strictly on Session 5 climax.
+- **Negotiable:** Choice of endings voiced.
+- **Valuable:** Gives the campaign's two central emotional climaxes (Vercingetorix's Final Death and Mars's judgment) unforgettable table impact.
+- **Estimable:** ~30 min.
+- **Small:** 6 focused audio clips.
+- **Testable:** Files play clearly, dramatic pacing fits the 1-minute lucidity window.
+- **Acceptance criteria:** Generates:
+  1. `s5_vercingetorix_entrance.mp3` ("Again. Always again. Tell me this time is the one that ends it.")
+  2. `s5_vercingetorix_final_death.mp3` (Lucid unmaking secret + "Does Gaul still stand?")
+  3. `s5_janus_threshold.mp3` (Dual-voice whisper on the threshold)
+  4. `s5_mars_challenge.mp3` ("MORTALS. You have carried my anchor...")
+  5. `s5_mars_destroy_reaction.mp3` (Enraged roar as chains lock)
+  6. `s5_mars_depart_reaction.mp3` (Cold departure into stone).
+
+### Story 11.4 — Cheat Card HTML5 Audio Player Integration
+- **Independent:** Touches `gm_tools/cheat_card_ch4.html` and `gm_tools/cheat_card_ch5.html`.
+- **Negotiable:** Visual styling of audio play/stop buttons.
+- **Valuable:** GM clicks one inline icon right beside the read-aloud or NPC stat block during live play without switching windows.
+- **Estimable:** ~30 min.
+- **Small:** Simple HTML5 `<audio>` tag + lightweight play button CSS.
+- **Testable:** Opening cheat cards in browser shows audio buttons; clicking plays corresponding local clip.
+- **Acceptance criteria:** Audio buttons embedded in Scene tabs in `cheat_card_ch4.html` and `cheat_card_ch5.html`; graceful fallback if audio files are absent.
+
+### Story 11.5 — MapTool Macro / Token Audio Linking
+- **Independent:** Touches MapTool token macro files or handout notes for S4/S5 tokens.
+- **Negotiable:** Direct local file link vs MapTool chat broadcast text.
+- **Valuable:** Lets GM trigger NPC speech directly from the MapTool token context menu.
+- **Estimable:** ~30 min.
+- **Small:** Add HTML link or macro button to `Mars.rptok` and `Vercingetorix_Bound.rptok`.
+- **Testable:** Clicking token info/handout displays clickable audio trigger.
+- **Acceptance criteria:** MapTool token handouts for Mars, Vercingetorix, and Banshee reference audio triggers.
+
+---
+
+## Epic 12: Campaign Knowledge & Interactive NPC Oracles
+
+**Why:** The local AI stack has `qdrant` (port 6333), `litellm` (port 4000), and `openwebui` (port 3000) active and healthy. Indexing the campaign's rich documentation (`CAMPAIGN_LOG.md`, `knowledge.qmd`, `npcs/*.json`, `vindolanda_guide.qmd`) creates an authentic Roman oracle and lets the GM or players interactively roleplay divine dreams and dead-king interrogations between sessions.
+
+**Status: READY FOR SPRINT PLANNING**
+
+### Story 12.1 — Campaign RAG Chunking & Qdrant Ingestion Script
+- **Independent:** Standalone Python script in `scripts/index_campaign_rag.py`.
+- **Negotiable:** Chunk size (500 tokens) and embedding model (`nomic-embed-text` via LiteLLM).
+- **Valuable:** Creates the semantic search database powering all in-character personas with 100% campaign-accurate facts.
+- **Estimable:** ~45 min.
+- **Small:** One ingestion script.
+- **Testable:** Script runs, creates collection `shadow-of-mars` in Qdrant, returns top-3 relevant chunks for query "Who forged the chains of Mars?".
+- **Acceptance criteria:** Indexes all markdown and JSON files from `npcs/`, `knowledge.qmd`, `vindolanda_guide.qmd`, and `CAMPAIGN_LOG.md` into Qdrant (`http://localhost:6333`).
+
+### Story 12.2 — Augur Cassia Haruspex Persona in OpenWebUI
+- **Independent:** OpenWebUI system prompt export / configuration (`ai_personas/augur_cassia.json`).
+- **Negotiable:** Strictness of Latin phrasing and omen types.
+- **Valuable:** Players can ask Cassia about omens, sacrificial signs, and divine portents between sessions, enhancing Roman atmosphere.
+- **Estimable:** ~20 min.
+- **Small:** One system prompt file + avatar.
+- **Testable:** Asking "What did the sacrificial liver reveal today?" produces an authentic Haruspex response referencing Camp Vindolanda omens.
+- **Acceptance criteria:** Model persona configured in OpenWebUI with knowledge grounding to `shadow-of-mars` collection; speaks with solemn Roman augural authority.
+
+### Story 12.3 — "Whispers of Mars" Interactive Dream Persona
+- **Independent:** Configured in `ai_personas/whispers_of_mars.json`.
+- **Negotiable:** How corruption tiers (1-5) affect prompt behavior.
+- **Valuable:** High-corruption characters can be handed an interactive terminal/chat session between S4 and S5 where Mars tests their loyalty.
+- **Estimable:** ~30 min.
+- **Small:** One system prompt file with variable corruption inputs.
+- **Testable:** Responds with the voice of the starving war-god, tempting the listener to retain the spear for Rome or claim its power.
+- **Acceptance criteria:** System prompt enforces Mars's OGAS (respects the mortal, hungers for battle, testing whether they are worthy); never breaks character into generic AI disclaimers.
+
+### Story 12.4 — Vercingetorix *Speak with Dead* GM Sparring Bot
+- **Independent:** GM prep tool in `ai_personas/vercingetorix_sparring.json`.
+- **Negotiable:** Model temperature and brevity.
+- **Valuable:** Allows GM to test and rehearse questions players might ask during the 1-minute lucidity window of Scene 3, ensuring smooth and lore-tight GMing at the table.
+- **Estimable:** ~20 min.
+- **Small:** One system prompt file.
+- **Testable:** Answers up to 3 questions about Alesia, Caesar, and the spear, then replies with "..." and turns to ash.
+- **Acceptance criteria:** System prompt strictly enforces the 3-question limit, his Gallic perspective, his tragic weariness, and the exact chain unmaking secret.
+
