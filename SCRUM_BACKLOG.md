@@ -680,6 +680,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
   4. `s5_mars_challenge.mp3` ("MORTALS. You have carried my anchor...")
   5. `s5_mars_destroy_reaction.mp3` (Enraged roar as chains lock)
   6. `s5_mars_depart_reaction.mp3` (Cold departure into stone).
+- **Status: DONE** (2026-10-10) — Generated all 7 S5 audio clips via openedai-speech into `audio/clips/s5_*.mp3`, verified valid MPEG ADTS Layer III audio files.
 
 ### Story 11.4 — Cheat Card HTML5 Audio Player Integration
 - **Independent:** Touches `gm_tools/cheat_card_ch4.html` and `gm_tools/cheat_card_ch5.html`.
