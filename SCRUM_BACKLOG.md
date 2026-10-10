@@ -806,7 +806,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** 15-20 unit tests.
 - **Testable:** Executed via `python3 -m unittest tests/test_ai_personas_and_rag.py`.
 - **Acceptance criteria:** Validates persona JSON schemas, prompt content, RAG chunking logic, and Qdrant collection status.
-- **Status: TODO**
+- **Status: DONE** (2026-10-10) — Built `tests/test_ai_personas_and_rag.py` with 15 automated unit tests validating OpenWebUI personas, Haruspex/Mars/Vercingetorix prompt rules, RAG chunking, and live Qdrant collection vectors (15/15 passing).
 
 ### Story 13.6 — Campaign Documents, Quarto & Table Automation Tests (15+ tests)
 - **Independent:** Standalone test suite in `tests/test_campaign_docs_and_build.py`.
