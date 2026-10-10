@@ -640,7 +640,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 
 **Why:** The local `openedai-speech` Docker service (`http://localhost:8001`) from `InstallLocalAiPackage` is already running with OpenAI-compatible `/v1/audio/speech`. Delivering voiced NPC dialogue (Mars, Vercingetorix, Janus) and creepy read-aloud introductions directly through GM Cheat Cards and MapTool significantly raises table immersion during the final two sessions with zero external API cost or latency.
 
-**Status: READY FOR SPRINT PLANNING**
+**Status: DONE** (2026-10-10)
 
 ### Story 11.1 — Python Voice Batch Generator Script
 - **Independent:** Standalone script in `scripts/generate_voice_clips.py`, no game file dependencies.
@@ -700,6 +700,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** Add HTML link or macro button to `Mars.rptok` and `Vercingetorix_Bound.rptok`.
 - **Testable:** Clicking token info/handout displays clickable audio trigger.
 - **Acceptance criteria:** MapTool token handouts for Mars, Vercingetorix, and Banshee reference audio triggers.
+- **Status: DONE** (2026-10-10) — Built `scripts/link_token_audio.py` and linked voice audio cues and chat macros into `Mars.rptok`, `Vercingetorix_Bound.rptok`, `Banshee.rptok`, `Wraith.rptok`, and `Glabrezu.rptok`; updated token `notes` and `gmNotes` with audio references; rebuilt campaign map packs via `build_campaign_maps.sh`.
 
 ---
 

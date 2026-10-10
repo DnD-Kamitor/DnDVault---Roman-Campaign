@@ -1752,33 +1752,29 @@
     "notes": "VACANT. Metellus died in Session 1. The Aquila is missing. Reclaiming it is a campaign objective."
   },
   "Mars": {
-    "hp": 300,
-    "ac": 22,
+    "hp": 100,
+    "ac": 20,
     "speed": "40 ft.",
     "cr": "20",
     "attacks": [
       {
         "label": "Divine Pilum (×4 Multiattack)",
-        "atk": 12,
-        "reach": "60 ft.",
-        "dice": "2d8+7",
-        "type": "piercing+divine",
-        "note": "Four attacks per round. Victory condition: reduce to 150 HP or force concession."
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d8][h: rad=1d8]/me hurls a pilum wreathed in war-fire — DIVINE PILUM! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the radiant charge doubles!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the throw goes wide!</b>\", \"connects!\"))]<br>ATK: [e: atk+10] range 60 ft | DMG: [e: dmg+5] piercing + [e: rad] radiant<br><i style='color:#c88020'>Four attacks per round (Multiattack). He does not rage — he is cold, methodical, waiting to be impressed. AC drops to 15 once the altar chains are locked.</i>"
       },
       {
-        "label": "Legendary Strike",
-        "atk": 12,
-        "reach": "60 ft.",
-        "dice": "2d8+7",
-        "type": "piercing+divine",
-        "note": "Legendary Action (end of another's turn). 3/round."
+        "label": "War Cry (recharge 5-6)",
+        "raw_cmd": "[h: save=1d20]/me opens his mouth and two hundred years of unfinished war come out — WAR CRY! Every creature within 30 ft that can hear him: WIS save [e: save] vs DC 16 — [r, if(save>=16): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>FRIGHTENED</b> for 1 minute (repeat save at end of each turn).\"]<br><i style='color:#c88020'>Recharge 5-6. No attack roll. Use it when the party starts to look like they might actually win — let them feel the weight of what they're fighting.</i>"
+      },
+      {
+        "label": "Legendary Strike (Legendary Action)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d8][h: rad=1d8]/me strikes at the end of another's turn — LEGENDARY STRIKE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+10] range 60 ft | DMG: [e: dmg+5] piercing + [e: rad] radiant<br><i style='color:#c88020'>Legendary Action (1 action, end of another's turn). 2 total Legendary Actions per round. Other option: Divine Smite (2 actions) — one attack this round adds +3d8 radiant.</i>"
       }
     ],
     "traits": [
-      "Legendary Resistance 3/day: auto-succeed on failed save.",
-      "War Cry (recharge 5-6, 30 ft): DC 18 WIS save or Frightened 1 min.",
-      "Divine Smite 1/round: one hit per round deals extra 4d8 radiant.",
-      "Legendary Actions (3/round): Strike, God's Eye (2 actions: all attacks vs one target have adv), Summon Fallen (3 actions: Skeleton appears)."
+      "Legendary Resistance 2/day: auto-succeed on a failed save. Announce it when it triggers.",
+      "Divine Smite (Legendary Action, 2 actions): one attack this round deals +3d8 radiant damage. No roll — declare before resolving the hit.",
+      "AC 20 base; drops to AC 15 once the four altar chain winches are locked (per the Destroy ritual in the Decision tab).",
+      "Mars is genuinely Mars. Not an impostor. Do not resolve this into a reveal. He could have taken the spear at any time — he has been waiting to be asked."
     ]
   },
   "Legate_Corvinus": {
@@ -2816,35 +2812,29 @@
     ]
   },
   "Vercingetorix_Bound": {
-    "hp": 150,
+    "hp": 75,
     "ac": 18,
     "speed": "30 ft.",
     "cr": "11",
     "attacks": [
       {
-        "label": "Sword of the Last Charge (Multiattack x2)",
-        "atk": 9,
-        "reach": "5 ft.",
-        "dice": "2d6+5",
-        "type": "slashing+2d8 necrotic",
-        "note": "Two attacks per round. Necrotic damage cannot be reduced by resistance gained after this fight began."
+        "label": "Sword of the Last Charge (×2 Multiattack)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: nec=2d8]/me drives forward with a blade that has been swinging since 52 BC — SWORD OF THE LAST CHARGE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the necrotic charge doubles!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the blade finds nothing!</b>\", \"connects!\"))]<br>ATK: [e: atk+8] | DMG: [e: dmg+5] slashing + [e: nec] necrotic<br><i style='color:#c88020'>Two attacks per round. Necrotic damage cannot be resisted by any resistance gained after this fight began. Use second attack to follow through on any Parry target — he does not let go.</i>"
       },
       {
         "label": "Fear Aura (recharge 5-6)",
-        "atk": 0,
-        "reach": "30 ft.",
-        "dice": "0",
-        "type": "fear",
-        "note": "DC 15 Wisdom save or Frightened 1 minute (save again at end of each turn). No attack roll."
+        "raw_cmd": "[h: save=1d20]/me's presence becomes unbearable — FEAR AURA! Every creature within 30 ft that can see him: WIS save [e: save] vs DC 15 — [r, if(save>=15): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>FRIGHTENED</b> for 1 minute (repeat save at end of each turn).\"]<br><i style='color:#c88020'>Recharge 5-6. No attack roll. Parry reaction is available this same round — he can fear the room and still deflect a riposte.</i>"
+      },
+      {
+        "label": "Champion's Duel",
+        "raw_cmd": "[r: \"<b style='color:#8e44ad'>CHAMPION'S DUEL</b> — if Ursula or Brian issues a formal challenge, he will fight them one-on-one and hold his allies back. He will not cheat. This is not mercy; it is the last honor he has left.\"]<br><i style='color:#c88020'>Purely narrative. No roll. Use it if the table wants a one-on-one moment — it makes his Final Death hit harder.</i>"
       }
     ],
     "traits": [
+      "Relentless (1/day): when reduced to 0 HP, drops to 1 HP instead — unless the killing damage is radiant, or dealt by a weapon consecrated at the Belatucadrus shrine. Say it out loud when it triggers: 'He should be dead. He isn't.'",
+      "Parry (reaction): +3 AC against one melee attack that would hit him. Uses his reaction — he cannot Parry and Opportunity Attack in the same round.",
       "Aura of the Unfinished War: undead allies within 30 ft gain +4 to melee damage rolls.",
-      "Command the Fallen (1/day, action): raises 1d4 Zombies or Skeletons from bones already present in the vault.",
-      "Relentless (1/day): when reduced to 0 HP, drops to 1 HP instead -- unless the killing damage is radiant, or dealt by a weapon consecrated at the Belatucadrus shrine (see vindolanda_guide.qmd).",
-      "Legendary Resistance (1/day): auto-succeed on a failed save.",
-      "Parry (reaction): +4 AC against one melee attack that would hit him.",
-      "Final Death: when a killing blow is not prevented by Relentless, his body does not crumble immediately. For one minute his spirit remains lucid and will answer up to three questions truthfully before dissolving to ash -- the first true death since 46 BC."
+      "Final Death: when the killing blow lands and Relentless does not trigger, he does not crumble. For one minute his spirit is lucid. He delivers the unmaking secret: the four iron chain winches at the granite altar, forged by Caesar's engineers, lock the four iron rings and shatter Mars's armor — only then can the spear break. Then he dissolves to ash. This is the first true death since 46 BC."
     ]
   }
 }
