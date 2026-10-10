@@ -786,7 +786,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** 15-20 unit tests.
 - **Testable:** Executed via `python3 -m unittest tests/test_cheat_cards.py`.
 - **Acceptance criteria:** Validates HTML DOM structure, `.audio-btn` click targets, `playAudio` JS definition, relative path resolution, and `_quarto.yml` resource inclusions.
-- **Status: TODO**
+- **Status: DONE** (2026-10-10) — Built `tests/test_cheat_cards.py` with 16 automated unit tests covering HTML validation, DOM tabs, audio player JS, disk file existence, and Quarto resources (16/16 passing).
 
 ### Story 13.4 — MapTool Tokens & Audio Macro Verification Tests (20+ tests)
 - **Independent:** Standalone test suite in `tests/test_maptool_tokens.py`.
