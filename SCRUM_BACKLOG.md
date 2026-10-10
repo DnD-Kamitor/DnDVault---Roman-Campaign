@@ -718,6 +718,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** One ingestion script.
 - **Testable:** Script runs, creates collection `shadow-of-mars` in Qdrant, returns top-3 relevant chunks for query "Who forged the chains of Mars?".
 - **Acceptance criteria:** Indexes all markdown and JSON files from `npcs/`, `knowledge.qmd`, `vindolanda_guide.qmd`, and `CAMPAIGN_LOG.md` into Qdrant (`http://localhost:6333`).
+- **Status: DONE** (2026-10-10) — Built `scripts/index_campaign_rag.py`; created `shadow-of-mars` collection in Qdrant (port 6333); chunked and embedded 460 documents/profiles using `nomic-embed-text`; verified semantic retrieval queries with top-3 rank results.
 
 ### Story 12.2 — Augur Cassia Haruspex Persona in OpenWebUI
 - **Independent:** OpenWebUI system prompt export / configuration (`ai_personas/augur_cassia.json`).
