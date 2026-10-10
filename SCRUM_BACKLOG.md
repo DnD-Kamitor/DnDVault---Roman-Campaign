@@ -664,6 +664,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
   2. `s4_banshee_dread_mother.mp3` (shimmer voice, eerie hiss)
   3. `s4_wraith_chieftain_confession.mp3` (echo voice, "We asked for victory... it took our blood...")
   4. `s4_glabrezu_core_entrance.mp3` (onyx voice, deep fiendish mock).
+- **Status: DONE** (2026-10-10) — Generated all 4 S4 audio clips via openedai-speech into `audio/clips/s4_*.mp3`, verified valid MPEG ADTS Layer III audio files.
 
 ### Story 11.3 — Session 5 Audio Generation (The Wrath of Mars)
 - **Independent:** Uses 11.1 script; content focused strictly on Session 5 climax.
