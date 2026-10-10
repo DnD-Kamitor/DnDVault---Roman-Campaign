@@ -750,3 +750,72 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Acceptance criteria:** System prompt strictly enforces the 3-question limit, his Gallic perspective, his tragic weariness, and the exact chain unmaking secret.
 - **Status: DONE** (2026-10-10) — Built `ai_personas/vercingetorix_sparring.json` with strict 3-question protocol, tragic Gallic persona, and canonical chain winch unmaking mechanics; tested multi-turn sparring rehearsal against local model.
 
+---
+
+## Epic 13: Comprehensive System Testing & Verification Suite (100+ Tests)
+
+**Why:** To provide bulletproof, automated verification that the entire campaign system works end-to-end without regressions: NPC schemas, audio MP3 file integrity, cheat card players, MapTool token macros and XML archives, AI personas, Qdrant semantic RAG, and Quarto table builders. The table must run smoothly on game day with zero surprises.
+
+**Status: IN PROGRESS**
+
+### Story 13.1 — NPC & Monster Manual Stat Block Integrity Tests (25+ tests)
+- **Independent:** Standalone test suite in `tests/test_npc_integrity.py`.
+- **Negotiable:** Schema strictness for optional fields.
+- **Valuable:** Proves all 89 `npcs/*.json` files have valid syntax, required combat attributes (HP, AC, CR, ability scores), and match Session 4 & 5 requirements.
+- **Estimable:** ~20 min.
+- **Small:** 25-30 automated unit tests.
+- **Testable:** Executed via `python3 -m unittest tests/test_npc_integrity.py`.
+- **Acceptance criteria:** Tests all 89 NPC files, specific named bosses (Mars, Vercingetorix Bound), and Monster Manual entries.
+- **Status: TODO**
+
+### Story 13.2 — Voice Audio Clips & Audio Manifest Integrity Tests (15+ tests)
+- **Independent:** Standalone test suite in `tests/test_audio_integrity.py`.
+- **Negotiable:** Allowed audio bitrates and headers.
+- **Valuable:** Proves all 11 generated audio clips exist, are valid MPEG ADTS/ID3 audio files (>5KB), have matching text in `voice_manifest.json`, and are under 60 seconds.
+- **Estimable:** ~15 min.
+- **Small:** 15-20 unit tests.
+- **Testable:** Executed via `python3 -m unittest tests/test_audio_integrity.py`.
+- **Acceptance criteria:** Tests existence, header bytes, non-zero duration, and manifest consistency for all S4 & S5 clips.
+- **Status: TODO**
+
+### Story 13.3 — GM Cheat Cards & HTML5 Audio Player Tests (15+ tests)
+- **Independent:** Standalone test suite in `tests/test_cheat_cards.py`.
+- **Negotiable:** Specific DOM selectors tested.
+- **Valuable:** Guarantees that opening `gm_tools/cheat_card_ch4.html` and `cheat_card_ch5.html` in any browser will play audio without missing file 404s.
+- **Estimable:** ~15 min.
+- **Small:** 15-20 unit tests.
+- **Testable:** Executed via `python3 -m unittest tests/test_cheat_cards.py`.
+- **Acceptance criteria:** Validates HTML DOM structure, `.audio-btn` click targets, `playAudio` JS definition, relative path resolution, and `_quarto.yml` resource inclusions.
+- **Status: TODO**
+
+### Story 13.4 — MapTool Tokens & Audio Macro Verification Tests (20+ tests)
+- **Independent:** Standalone test suite in `tests/test_maptool_tokens.py`.
+- **Negotiable:** Specific macro indexes.
+- **Valuable:** Inspects the internal ZIP archives of `.rptok` files to verify `content.xml` has valid XML, audio macros under the `Audio` group, updated `notes` & `gmNotes`, and valid attack stats.
+- **Estimable:** ~20 min.
+- **Small:** 20-25 unit tests.
+- **Testable:** Executed via `python3 -m unittest tests/test_maptool_tokens.py`.
+- **Acceptance criteria:** Unpacks and verifies Mars, Vercingetorix Bound, Banshee, Wraith, and Glabrezu `.rptok` tokens.
+- **Status: TODO**
+
+### Story 13.5 — AI Personas & Campaign RAG Ingestion Tests (15+ tests)
+- **Independent:** Standalone test suite in `tests/test_ai_personas_and_rag.py`.
+- **Negotiable:** Live Qdrant API test vs mock fallback if service is stopped.
+- **Valuable:** Verifies OpenWebUI persona files, system prompt constraints (Cassia's Haruspex lore, Mars's corruption tiers, Vercingetorix's 3-question limit), and Qdrant collection vector dimensionality.
+- **Estimable:** ~20 min.
+- **Small:** 15-20 unit tests.
+- **Testable:** Executed via `python3 -m unittest tests/test_ai_personas_and_rag.py`.
+- **Acceptance criteria:** Validates persona JSON schemas, prompt content, RAG chunking logic, and Qdrant collection status.
+- **Status: TODO**
+
+### Story 13.6 — Campaign Documents, Quarto & Table Automation Tests (15+ tests)
+- **Independent:** Standalone test suite in `tests/test_campaign_docs_and_build.py`.
+- **Negotiable:** Table markdown format checks.
+- **Valuable:** Verifies that table generation script `build_tables.py` outputs all 11 reference files, campaign continuity (Lucius fallen), and D&D Beyond Monster Manual URLs.
+- **Estimable:** ~15 min.
+- **Small:** 15-20 unit tests.
+- **Testable:** Executed via `python3 -m unittest tests/test_campaign_docs_and_build.py`.
+- **Acceptance criteria:** Validates `_generated/` tables, Quarto configuration, and chapter cross-references.
+- **Status: TODO**
+
+
