@@ -738,6 +738,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** One system prompt file with variable corruption inputs.
 - **Testable:** Responds with the voice of the starving war-god, tempting the listener to retain the spear for Rome or claim its power.
 - **Acceptance criteria:** System prompt enforces Mars's OGAS (respects the mortal, hungers for battle, testing whether they are worthy); never breaks character into generic AI disclaimers.
+- **Status: DONE** (2026-10-10) — Built `ai_personas/whispers_of_mars.json` with dynamic Corruption Tiers (1-5), Roman martial cadence, and tested authentic dream dialogue against local model.
 
 ### Story 12.4 — Vercingetorix *Speak with Dead* GM Sparring Bot
 - **Independent:** GM prep tool in `ai_personas/vercingetorix_sparring.json`.
