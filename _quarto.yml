@@ -4,7 +4,9 @@ project:
   pre-render: python3 scripts/build_tables.py
   resources:
     - "gm_tools/*.html"
+    - "gm_tools/scenarios/*.md"
     - "npcs/*.json"
+    - "ai_personas/*.json"
     - "audio/clips/*.mp3"
 
 book:

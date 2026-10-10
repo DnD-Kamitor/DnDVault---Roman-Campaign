@@ -830,5 +830,87 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 | `tests/test_campaign_docs_and_build.py` | Quarto YAML, table builders, campaign continuity | 19 | **19 / 19 PASS** |
 | **TOTAL** | **Comprehensive Full System Verification** | **119** | **119 / 119 PASS (100%)** |
 
+---
+
+## Epic 14: Interactive NPC Scenarios & AI Simulation Engine (5 Verified Scenarios)
+
+**Why:** Provide the GM with bulletproof, verified, interactive roleplay scenarios for the 5 central NPCs who anchor the pivotal scenes of Acts III, IV, and V, backed by OpenWebUI personas, branching dialogue state machines, skill check mechanics, and automated test proof.
+
+**Status: DONE** (2026-10-10) — 5 complete roleplay scenarios built, tested, and verified across AI personas, GM documentation, state machine engine, and 28 automated unit tests.
+
+### Story 14.1 — OpenWebUI AI Personas for 5 Core Characters
+- **Independent:** Standalone persona files in `ai_personas/*.json`.
+- **Negotiable:** Temperature, presence penalty, and RAG top_k parameters.
+- **Valuable:** Equips the GM with authentic, lore-accurate local AI conversational bots for Augur Cassia, Legate Corvinus, Thusnelda, Vercingetorix, and the Avatar of Mars.
+- **Estimable:** ~20 min.
+- **Small:** 5 persona JSON files.
+- **Testable:** JSON validation, OpenWebUI schema conformance, system prompt guardrails.
+- **Acceptance criteria:** Each persona defines strict character bounds, authentic Latin/Germanic terminology, OGAS motivations, and refusal of AI meta-disclaimers.
+- **Status: DONE** (2026-10-10) — Created `legate_corvinus.json` and `thusnelda_seer.json`; verified `augur_cassia.json`, `vercingetorix_sparring.json`, and `whispers_of_mars.json`.
+
+### Story 14.2 — Detailed GM Scenario Guides & Branching Dialogue Trees
+- **Independent:** Standalone GM guide markdown files in `gm_tools/scenarios/*.md`.
+- **Negotiable:** Specific flavor text and sensory details.
+- **Valuable:** Gives the GM a complete, ready-to-run briefing for each encounter with sensory read-aloud boxes, dramatic questions, and mermaid state diagrams.
+- **Estimable:** ~25 min.
+- **Small:** 5 markdown guides.
+- **Testable:** Validated against file existence, required sections (Read-Aloud, Branching Dialogue, Skill Checks/Mechanics).
+- **Acceptance criteria:** All 5 scenarios documented with clear success/failure branches, DCs, and campaign impact.
+- **Status: DONE** (2026-10-10) — Created comprehensive guides `scenario_01_cassia_augury.md`, `scenario_02_corvinus_principia.md`, `scenario_03_thusnelda_bog.md`, `scenario_04_vercingetorix_lucidity.md`, and `scenario_05_mars_crucible.md`.
+
+### Story 14.3 — Scenario State Machine & Simulation Engine
+- **Independent:** Python simulation framework in `scripts/scenario_engine.py` and `scripts/verify_npc_scenarios.py`.
+- **Negotiable:** Dice rolling algorithm and flag tracking format.
+- **Valuable:** Allows deterministic and headless testing of narrative branching, skill checks, turn limits, and corruption scaling.
+- **Estimable:** ~20 min.
+- **Small:** Two Python scripts.
+- **Testable:** Execution of `scripts/verify_npc_scenarios.py` with exit code 0.
+- **Acceptance criteria:** Successfully models nodes, choices, DC checks, turn counters, and terminal outcomes for all 5 scenarios.
+- **Status: DONE** (2026-10-10) — Implemented `scenario_engine.py` with full state machine and `verify_npc_scenarios.py` verifying all 5 scenarios.
+
+### Story 14.4 — Interactive GM Terminal Player CLI
+- **Independent:** CLI utility in `scripts/play_scenario.py`.
+- **Negotiable:** Color formatting and menu layout.
+- **Valuable:** Allows the GM to interactively play, rehearse, or demonstrate any scenario directly from the terminal with manual dice entry or auto-roll.
+- **Estimable:** ~15 min.
+- **Small:** One standalone script.
+- **Testable:** Execution with `--auto` and manual interactive stdin.
+- **Acceptance criteria:** Terminal UI presents dialogue, numbered options, resolves DC checks, tracks turns, and displays final outcome.
+- **Status: DONE** (2026-10-10) — Implemented `play_scenario.py` with interactive turn runner, dice rolling, corruption selection, and batch auto testing.
+
+### Story 14.5 — Automated Scenario Verification Suite (28 Tests)
+- **Independent:** Standalone test suite in `tests/test_npc_scenarios.py`.
+- **Negotiable:** Number of assertion checkpoints per branch.
+- **Valuable:** Provides absolute proof that all 5 scenarios, personas, and engine transitions execute without error.
+- **Estimable:** ~20 min.
+- **Small:** 28 automated unit tests.
+- **Testable:** Executed via `python3 -m unittest tests/test_npc_scenarios.py`.
+- **Acceptance criteria:** 100% pass rate across persona schemas, graph paths, DC checks, and turn constraints.
+- **Status: DONE** (2026-10-10) — Built `tests/test_npc_scenarios.py` with 28 automated unit tests (28/28 passing).
+
+### Story 14.6 — End-to-End Campaign Stack Verification & Backlog Finalization
+- **Independent:** Full regression pass across all test modules in `tests/`.
+- **Negotiable:** None.
+- **Valuable:** Proves zero regressions across NPCs, audio clips, MapTool tokens, Quarto docs, table generators, AI personas, and scenario engines.
+- **Estimable:** ~10 min.
+- **Small:** Full discovery test run.
+- **Testable:** Executed via `python3 -m unittest discover tests -v`.
+- **Acceptance criteria:** All 147 tests across 8 suites pass with zero failures.
+- **Status: DONE** (2026-10-10) — Complete campaign stack verified with 147/147 passing tests.
+
+#### Final Comprehensive System Test Summary
+| Test Suite Module | Domain / Subsystem Verified | Tests | Result |
+|---|---|:---:|:---:|
+| `tests/test_generate_voice_clips.py` | Audio generation dry-run & live API mocks | 2 | **2 / 2 PASS** |
+| `tests/test_npc_integrity.py` | 89 NPC JSONs, stat blocks, CRs, Boss mechanics | 27 | **27 / 27 PASS** |
+| `tests/test_audio_integrity.py` | MP3 / ID3 binary headers, file sizes, manifests | 18 | **18 / 18 PASS** |
+| `tests/test_cheat_cards.py` | HTML5 cheat cards, audio buttons, relative paths | 16 | **16 / 16 PASS** |
+| `tests/test_maptool_tokens.py` | MapTool `.rptok` ZIPs, XML well-formedness, audio macros | 22 | **22 / 22 PASS** |
+| `tests/test_ai_personas_and_rag.py` | OpenWebUI AI personas, RAG chunking, Qdrant vectors | 15 | **15 / 15 PASS** |
+| `tests/test_campaign_docs_and_build.py` | Quarto YAML, table builders, campaign continuity | 19 | **19 / 19 PASS** |
+| `tests/test_npc_scenarios.py` | 5 NPC roleplay scenarios, graph state machine, DC checks | 28 | **28 / 28 PASS** |
+| **GRAND TOTAL** | **Full End-to-End Campaign Stack Verification** | **147** | **147 / 147 PASS (100%)** |
+
+
 
 
