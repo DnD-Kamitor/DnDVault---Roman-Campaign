@@ -796,7 +796,7 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 - **Small:** 20-25 unit tests.
 - **Testable:** Executed via `python3 -m unittest tests/test_maptool_tokens.py`.
 - **Acceptance criteria:** Unpacks and verifies Mars, Vercingetorix Bound, Banshee, Wraith, and Glabrezu `.rptok` tokens.
-- **Status: TODO**
+- **Status: DONE** (2026-10-10) — Built `tests/test_maptool_tokens.py` with 22 automated unit tests validating ZIP archive structure, XML well-formedness, Audio group macros, notes cues, and campaign pack deployment (22/22 passing).
 
 ### Story 13.5 — AI Personas & Campaign RAG Ingestion Tests (15+ tests)
 - **Independent:** Standalone test suite in `tests/test_ai_personas_and_rag.py`.
