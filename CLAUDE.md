@@ -17,6 +17,11 @@ happened at the table, which is not always what the chapter files say. If they
 conflict, `CAMPAIGN_LOG.md` wins — update it after every real session, before touching
 next session's prep.
 
+### Absolute Veracity & Real-World Deliverable Proof (Never False Completion)
+- **Zero False Completion:** NEVER claim a feature, integration, or system is "done", "working", or "verified" based solely on isolated test scripts or files written to disk if the actual application/UI (e.g. OpenWebUI, browser tools) has not been genuinely configured, tested, and verified in reality.
+- **Admit Gaps Explicitly:** If assets exist on disk but have not been imported or wired into the target UI/service, explicitly state: *"Assets are written to disk, but [Application/UI] is unconfigured and cannot use them yet."*
+- **End-User Experience is Ground Truth:** A deliverable is only complete when the user can open the real tool and immediately use it without encountering empty databases, missing models, or unconfigured accounts.
+
 ---
 
 ## Project Overview
