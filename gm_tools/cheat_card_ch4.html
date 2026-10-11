@@ -74,21 +74,23 @@
 
 <div id="header">
   <h1>Ch4 — The God's Demand</h1>
-  <span class="sub">L6 (advance to 7 at end) &nbsp;·&nbsp; 4&ndash;5 hrs &nbsp;·&nbsp; The Blood Cult Dungeon</span>
+  <span class="sub">L5&rarr;6 &nbsp;·&nbsp; 4&ndash;5 hrs &nbsp;·&nbsp; Farbog &rarr; Village &rarr; Dungeon Entrance &rarr; First Room</span>
   <div id="story">
-    A causeway of bone crosses a glowing marsh into a dungeon two chieftains have spent
-    months curating for something they believe is Mars. This session is that dungeon,
-    start to finish. What's at the bottom is worse than what they expected to find.
+    Cross the Farbog, reach Thusnelda's village, learn where the dungeon lies (south).
+    Enter. Clear one room. The bulk of the dungeon — and Mars — is Session 5.
   </div>
 </div>
 
 <div id="tabs">
   <button class="tab-btn active" onclick="showTab('pre', this)">⚙ Pre-Session</button>
-  <button class="tab-btn" onclick="showTab('s0', this)">0 · Marsh</button>
-  <button class="tab-btn" onclick="showTab('s1s2', this)">1-2 · Ossuary/Growth</button>
-  <button class="tab-btn" onclick="showTab('s3s4', this)">3-4 · Altar/Lock</button>
-  <button class="tab-btn" onclick="showTab('s5', this)">5 · Gathering Hall</button>
-  <button class="tab-btn" onclick="showTab('s6', this)">6 · Core Room</button>
+  <button class="tab-btn" onclick="showTab('bog', this)">1 · Farbog</button>
+  <button class="tab-btn" onclick="showTab('village', this)">2 · Village</button>
+  <button class="tab-btn" onclick="showTab('grove', this)">3 · Grove ↑</button>
+  <button class="tab-btn" onclick="showTab('s0', this)">4 · Dungeon Approach</button>
+  <button class="tab-btn" onclick="showTab('s1s2', this)">5 · Ossuary ★S4 END</button>
+  <button class="tab-btn" style="color:#555;border-left:1px solid #333" onclick="showTab('s3s4', this)">S5› Altar/Lock</button>
+  <button class="tab-btn" style="color:#555" onclick="showTab('s5', this)">S5› Hall</button>
+  <button class="tab-btn" style="color:#555" onclick="showTab('s6', this)">S5› Core Room</button>
   <button class="tab-btn" onclick="showTab('npcs', this)">NPCs</button>
   <button class="tab-btn" onclick="showTab('server', this)">MapTool</button>
 </div>
@@ -100,18 +102,22 @@
 <div class="grid2">
 <div>
   <div class="block">
-    <div class="block-title">Maps — 3 Dice Grimorium, load in sequence</div>
-    <div class="setup-line"><span class="lbl">S0 (the marsh):</span> <span class="file">SkeletonFortressEntrancePublic.jpg</span></div>
-    <div class="setup-line"><span class="lbl">S1-5 (ossuary &rarr; gathering hall):</span> <span class="file">Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg</span></div>
-    <div class="setup-line"><span class="lbl">S6 (core room):</span> <span class="file">CastleCoreRoomPublic.jpg</span></div>
+    <div class="block-title">Maps — load in sequence</div>
+    <div class="setup-line"><span class="lbl">Farbog:</span> <span class="file">s3_farbog_crossing.html</span></div>
+    <div class="setup-line"><span class="lbl">Village:</span> <span class="file">s3_germanic_village.html</span></div>
+    <div class="setup-line"><span class="lbl">Grove (optional):</span> <span class="file">s4_sacred_grove.html</span></div>
+    <div class="setup-line"><span class="lbl">Dungeon approach:</span> <span class="file">SkeletonFortressEntrancePublic.jpg</span></div>
+    <div class="setup-line"><span class="lbl">Ossuary (1st room, S4 ends here):</span> <span class="file">Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg</span></div>
     <div class="setup-line" style="color:#555;font-size:0.78em;margin-top:4px">All in: Maptool/maps/campaign/S4_The_Gods_Demand/</div>
   </div>
   <div class="block">
-    <div class="block-title">Continuity to check before running</div>
+    <div class="block-title">Continuity — confirmed before running</div>
     <ul>
-      <li>What did Vercingetorix reveal via Speak with Dead in Session 3? Adjusts how certain the party already is this is the right place.</li>
-      <li>Tribune Lucius is dead (fell in S3) — party travels alone carrying his locked iron box. Corvinus and Cassia remain at Fort Vindolanda.</li>
-      <li>Each character's corruption level — the Core Room's proximity to the focus should push at least one up.</li>
+      <li>Party has full spear origin from Mars's direct speech — no Speak with Dead needed.</li>
+      <li><span class="warn">Cult name NOT yet revealed.</span> Party enters blind. They learn it from the dungeon itself.</li>
+      <li>Tribune Lucius dead (S3, spider lure) — party carries his locked iron box. Corvinus and Cassia at fort.</li>
+      <li>Party has never met Thusnelda — this session is first contact (Scene 2, village).</li>
+      <li>Vercingetorix is with the party and knows where the dungeon is — 200-year war, he knows.</li>
     </ul>
   </div>
 </div>
@@ -136,10 +142,73 @@
 </div>
 </div>
 
-<!-- ═══ SCENE 0 ═══ -->
+<!-- ═══ BOG ═══ -->
+<div id="tab-bog" class="tab-pane">
+<div class="block">
+  <div class="block-title">Scene 1 — Farbog Crossing &nbsp;<span style="color:#555;font-size:0.85em">map: s3_farbog_crossing.html</span></div>
+  <div class="ra">The forest floor turns to water. Dead trees lean at angles, draped in something grey that used to be moss. Ahead, a path of flat stones vanishes under the surface and reappears on the far bank.</div>
+</div>
+<div class="clock"><strong>Bog hazard:</strong> Off the stone path — DC 12 Str or sink, restrained; DC 14 Athletics to pull free. The stones are always safe but narrow (single file).</div>
+<div class="block">
+  <div class="block-title">Encounter — Bog Spirits</div>
+  <div class="ho"><strong>1 × Wight (Vaettir, HP 45, AC 14) + 1 × Will-o-Wisp (HP 22, AC 19) + 1 × Specter (HP 22, AC 12):</strong> Will-o-Wisp lures one PC off-path first (Insight DC 13 to recognize bait). Vaettir rises mid-crossing. Specter circles. Radiant damage ends the Vaettir permanently.</div>
+  <table>
+    <tr><td class="k">Life Drain (Wight)</td><td class="v">+4 to hit, 1d6+2 necrotic, DC 13 Con vs max HP reduction</td></tr>
+    <tr><td class="k">Life Drain (Specter)</td><td class="v">+4 to hit, 3d6 necrotic, DC 10 Con vs max HP reduction</td></tr>
+    <tr><td class="k">Shock (Will-o-Wisp)</td><td class="v">+4 to hit, 2d8 lightning. Ephemeral: can become incorporeal (resist all except force/radiant)</td></tr>
+  </table>
+</div>
+<div class="clue"><strong>Clue:</strong> Worn rope on far bank — tied recently, not rot-frayed. Someone guides traffic across this bog.</div>
+</div>
+
+<!-- ═══ VILLAGE ═══ -->
+<div id="tab-village" class="tab-pane">
+<div class="block">
+  <div class="block-title">Scene 2 — Germanic Village &nbsp;<span style="color:#555;font-size:0.85em">map: s3_germanic_village.html</span></div>
+  <div class="ra">Longhouses around a central fire pit. Children stop. A woman comes out from the largest building, unhurried. She already knows why you are here.</div>
+</div>
+<div class="block">
+  <div class="block-title">Thusnelda — <em>First Contact</em></div>
+  <table>
+    <tr><td class="k">Objective</td><td class="v">Confirm the party intends to end the spear, not take it</td></tr>
+    <tr><td class="k">Goal</td><td class="v">Give them what they need to reach the dungeon and survive it</td></tr>
+    <tr><td class="k">Secret</td><td class="v">Her bloodline sealed the spear 200 years ago. She is the last who knows the chain-winch mechanism.</td></tr>
+    <tr><td class="k">Voice</td><td class="v">"You have already paid. I want to know if you know what for."</td></tr>
+  </table>
+</div>
+<div class="block">
+  <div class="block-title">Intel she shares (freely, if party is honest)</div>
+  <ul>
+    <li><strong>Geography:</strong> Grove is north — sacred, do not disturb unless you need to. <strong>Dungeon entrance is south</strong>, half a day.</li>
+    <li><strong>The cult:</strong> Two chieftains from the raid. They have been feeding something in that dungeon for months. She does not know its name. Neither does the party — and that is correct.</li>
+    <li><strong>The dungeon:</strong> Vercingetorix knows the layout. She knows the seal mechanism — four iron chain winches at the granite altar, Caesar's engineers built them. That is how the spear was bound.</li>
+    <li><strong>Warning:</strong> Whatever is at the bottom is not Mars. It answers to his name. That is not the same thing.</li>
+  </ul>
+</div>
+<div class="note">Vercingetorix and Thusnelda know each other. They have been on the same side of this for 200 years from opposite directions. Let that land quietly.</div>
+</div>
+
+<!-- ═══ GROVE ═══ -->
+<div id="tab-grove" class="tab-pane">
+<div class="block">
+  <div class="block-title">Scene 3 — Sacred Grove (optional, north of village) &nbsp;<span style="color:#555;font-size:0.85em">map: s4_sacred_grove.html</span></div>
+  <div class="ra">Ancient oaks. Something has been here far longer than the village. A standing stone at the centre carries the same rune Vercingetorix has not spoken aloud since Alesia.</div>
+</div>
+<div class="block">
+  <div class="block-title">What's here</div>
+  <ul>
+    <li><strong>Dryad guardian (HP 22, AC 11):</strong> Does not fight unless the grove is threatened. Speaks to druids or those who approach without weapons drawn. She confirms the dungeon is the wound the grove has been bleeding around for two centuries.</li>
+    <li><strong>Belatucadrus shrine:</strong> A weapon consecrated here deals radiant damage to undead for 1 hour. Relevant for the Vaettir in the bog (if not yet fought) and Vercingetorix Bound in S5.</li>
+    <li><strong>OTHALAN rune on standing stone:</strong> Religion DC 13 — rune of inheritance. Vercingetorix will go very still if he reads it.</li>
+  </ul>
+</div>
+<div class="dec"><strong>Don't force it:</strong> Grove is optional. If party wants to push south immediately, let them. The Belatucadrus weapon blessing is a nice-to-have, not a required unlock.</div>
+</div>
+
+<!-- ═══ DUNGEON APPROACH (was Scene 0) ═══ -->
 <div id="tab-s0" class="tab-pane">
 <div class="block">
-  <div class="block-title">Read Aloud <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_scene0_marsh_readaloud.mp3')">▶ Voice</button></div>
+  <div class="block-title">Scene 4 — Dungeon Approach &nbsp;<span style="color:#555;font-size:0.85em">map: SkeletonFortressEntrancePublic.jpg</span> <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_scene0_marsh_readaloud.mp3')">▶ Voice</button></div>
   <div class="ra">The trees thin out and the ground goes soft underfoot before you see why. Ahead, the hillside opens in a mouth — not a metaphor. A skull carved from the living rock... A causeway of bone and old skulls runs down into a wide, glowing green marsh.</div>
 </div>
 <div class="clock">
@@ -155,7 +224,7 @@
 <div class="block">
   <div class="block-title">3 &times; <a href="https://www.dndbeyond.com/monsters/16799-banshee" target="_blank" style="color:#aac8ff;">Banshee</a> &mdash; CR 4 (HP 58 each, AC 12, <em>MM</em> p. 23) <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_banshee_dread_mother.mp3')">▶ Banshee Wail</button></div>
   <table>
-    <tr><td class="k">Corrupting Touch</td><td class="v">+4 to hit, 3d6+2 necrotic</td></tr>
+    <tr><td class="k">Corrupting Touch</td><td class="v">+2 to hit, 1d6 necrotic</td></tr>
     <tr><td class="k">Horrifying Visage</td><td class="v">DC 13 Wis, fear + aging 1d4×10 yrs</td></tr>
     <tr><td class="k">Wail (1/day)</td><td class="v">DC 13 Con: drops to 0 HP on failure; 3d6 psychic on success.</td></tr>
   </table>
@@ -166,7 +235,7 @@
 <!-- ═══ SCENES 1-2 ═══ -->
 <div id="tab-s1s2" class="tab-pane">
 <div class="block">
-  <div class="block-title">Scene 1 — The Ossuary</div>
+  <div class="block-title">Scene 5 — The Ossuary &nbsp;<span style="color:#d4884a;font-size:0.85em">★ S4 ENDS HERE — advance to L6</span></div>
   <div class="ra">Round room, floor a carpet of femurs and ribs, stacked with care.</div>
   <table>
     <tr><td class="k">History DC13 (act)</td><td class="v">Sorted by size/age — curated for months, not years</td></tr>

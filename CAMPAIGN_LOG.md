@@ -233,8 +233,22 @@ the fighting gets, the more of Mars slips through. Save the design work for the 
 **Party:** Level 5-6, five core PCs (Artificer, Druid, Bard, Cleric, and a Barbarian
 among the original five) plus Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3).
 
-**Where they are:** Session 3 complete. Party is in the forest, Lucius dead. Most of
-chapter3.qmd (bog, village, grove, sacrifice circle) not yet played. Session 4 is next.
+**Where they are:** Session 3 complete. Party is in the forest, Lucius dead, moving toward
+the Farbog. Session 4 is next.
+
+**Session 4 actual scope (corrected from chapter4.qmd):**
+- Cross the Farbog (Farbog encounter)
+- Reach the Germanic village south of the bog — Thusnelda is here (party has not yet met her)
+- North of village: sacred grove (optional detour)
+- South of village: dungeon entrance — the cult's lair
+- Enter dungeon, clear approximately one room
+Party reaches the dungeon in S4 but does not clear it. S4 ends at dungeon threshold or after
+one room. The bulk of the dungeon (deeper levels, Core Room, Mars confrontation) is Session 5.
+
+**Session 5 actual scope:**
+- Continue dungeon from where S4 left off
+- Core Room and deeper vault (Mars's sanctum)
+- Final confrontation: destroy/bind/redirect the spear
 
 **Key NPC status:**
 
@@ -260,10 +274,13 @@ chapter3.qmd (bog, village, grove, sacrifice circle) not yet played. Session 4 i
 - **Varro's fate** — dead. Killed by Ursula at the gate. Declared "I did this for Rome" before falling. Confirmed Session 3 cold open.
 - **Lucius's fate** — dead. Killed Session 3 (giant spider lure). Does not appear in Sessions 4-5. Guardianship in Session 5 Destroy ending falls solely upon the PCs.
 
-**Critical gap for Session 4 prep:**
-- Party has **never met Thusnelda**. All forest/bog/village/grove scenes from chapter3.qmd unplayed.
-- Thusnelda was the guide to the Blood Cult Dungeon entrance. Replacement: **Vercingetorix guides them** — he has fought this war 200 years and knows where the cult operates. Fits his arc (wants it ended) and requires zero new content.
-- S4 cheat card continuity check asks about Speak with Dead with Vercingetorix in S3 — this never happened, but is moot: party already has full spear origin from Mars's direct speech.
+**Session 4 geography (confirmed):**
+- Bog (Farbog) → Germanic village → grove to NORTH / dungeon entrance to SOUTH
+- Party will meet Thusnelda in the village (first encounter with her)
+- Vercingetorix is with the party and knows the dungeon's location — he's been fighting this war 200 years
+- Cult name has NOT been revealed. Party enters the dungeon without knowing what it's called.
+- S4 cheat card continuity check (Speak with Dead, S3) — never happened, moot. Party has spear origin from Mars's direct speech.
+- chapter4.qmd as written starts at dungeon entrance and skips bog/village — run from CAMPAIGN_LOG geography, not chapter4.qmd scene order.
 
 ---
 
