@@ -5,35 +5,33 @@
 <details>
 <summary><strong>Session Overview</strong></summary>
 
-The fort attack is over -- Vercingetorix, defeated but not destroyed, named the cult
-before he was put down (see Session 3's Prologue and the Speak with Dead reveal). The
-party now knows what they're looking for: a hidden dungeon somewhere in the forest where
-two of Vercingetorix's own chieftains have spent months feeding something they believe
-is Mars. This session is that dungeon, start to finish -- a real crawl, not a diplomatic
-detour. What the party finds at the bottom is worse than what they expected to find, and
-it tells them exactly what Session 5 is going to cost.
+Session 3 ended with the party leaving the fort, Lucius dead, moving south through the
+forest. They know from S3 intel that the dungeon lies beyond the Farbog -- a glowing
+green marsh south of a Germanic village. Vercingetorix is an enemy, not a guide; he
+fought them at the fort and is not with the party.
 
-**Level:** 5 (crossing the marsh) → 6 (for the rest of the dungeon) → advance to 7 at session end
-**Duration:** 4–5 hours
-**Key Goal:** Cross the marsh, clear the dungeon, reach the Core Room, and learn what
-the cult's ritual actually did
-**Theme:** What devotion costs -- the cult didn't get what they wanted. Nobody who
-touches this ever does.
+This session is the journey to that dungeon's door, not the dungeon itself. The party
+crosses the Farbog, reaches the Germanic village where Thusnelda leads what remains of
+his people, visits the sacred grove to the north, and then confronts the session's real
+dramatic engine: Thusnelda, standing in the ritual sacrifice circle near the grove,
+preparing to give his own life because he believes that is what will end the bloodshed.
+He is wrong. The party must stop him, or fail to, before they can even reach the dungeon
+entrance. The session ends after the Bone Naga fight at the dungeon entrance, with the
+party stepping into the Ossuary. They advance to Level 6.
+
+**Level:** 5 throughout → advance to 6 at session end (after the Ossuary)
+**Duration:** 4--5 hours
+**Key Goal:** Cross the Farbog, reach the village, stop Thusnelda's sacrifice, enter the dungeon, clear the Ossuary
+**Theme:** Devotion is not the same as truth. Good people do terrible things for honest reasons.
 
 <details>
 <summary><strong>Guy Sclanders' Principles Applied</strong></summary>
 
-- **Never Present Villain, Now Felt:** the cult chieftains were never really working for
-  Brutus or even knowingly for Mars -- they were feeding something wearing his name. The
-  party finds out what devotion to that actually looks like once it's "answered."
-- **Pressure Cooker:** no clock this session, but every room compounds -- the party
-  cannot fully rest between encounters, and the marsh/dungeon design assumes they arrive
-  already worn from Session 3's fight.
-- **Three Clue Rule:** three separate confirmations that this dungeon is the real target
-  -- Vercingetorix's dying words, the sandal buckle/offering evidence from the forest
-  (if found), and the supply caches at the marsh entrance.
-- **Escalation:** Session 3 was personal (one friend's fall). Session 4 is what an entire
-  cult's devotion produces when it succeeds. Session 5 is the god himself.
+- **Strong Opening:** Start mid-movement. The party is already in the bog, not walking toward it.
+- **Never Present Villain, Now Felt:** The cult's corruption is visible before the dungeon door. The sacrifice circle shows what the cult's blood-magic did to ordinary Germanic faith.
+- **Pressure Cooker:** Thusnelda's ritual has a clock. She has been in that circle since dawn. The party doesn't have unlimited time to talk.
+- **Three Clue Rule:** Three independent confirmations this dungeon is the right target -- supply caches at the marsh, cult markings on the sacrifice circle stones, Thusnelda's knowledge of where the chieftains went.
+- **Meaningful Choices:** Do they stop Thusnelda by force, by argument, or not at all? All three paths have real consequences.
 
 </details>
 
@@ -44,31 +42,26 @@ touches this ever does.
 <summary><strong>Pre-Session Preparation</strong></summary>
 
 <details>
-<summary><strong>Tracking Sessions 1-3</strong></summary>
+<summary><strong>Continuity Checks (read CAMPAIGN_LOG.md first)</strong></summary>
 
 | Question | Answer affects |
 |---|---|
-| What did Vercingetorix reveal via Speak with Dead? | How much the party already knows walking in -- adjust the "Three Clue Rule" framing below if they're already certain this is the right place |
-| Who is with the party? | The party travels alone. Tribune Lucius died in Session 3; his personal lockbox and papers are carried by the party. Corvinus stayed at the fort. The party operates as an independent strike unit behind enemy lines. |
-| What is each character's corruption level? | Fetid Cloud, insect plague, and the ritual focus in the Core Room all interact with existing corruption -- higher corruption should mean stronger pulls toward the focus, not just more damage |
-
-**Read `CAMPAIGN_LOG.md` before running this session.** The cult, the "mainly Mars"
-ambiguity, and what's actually supposed to happen in the Core Room are all explained
-there in full. This chapter is the room-by-room GM script; the log is the truth behind it.
+| Has the cult name been revealed to the party? | No. The party does not yet know the cult's name. Do not use it in read-aloud. Refer to "the blood cult" only in DM notes. |
+| What is each PC's corruption level entering this session? | The sacrifice circle has a passive corruption effect on high-corruption characters. Note who is at 3+. |
+| Did anyone pick up the cult symbol in the fort attack (Session 3)? | If yes, Thusnelda recognises it when shown and it grants advantage on the Persuasion check in Scene 3. |
 
 </details>
 
 <details>
 <summary><strong>Maps for This Session</strong></summary>
 
-Three maps, used in sequence. All in `Maptool/maps/dicegrimorium/`, not yet copied into
-a campaign session folder (see Epic 8, Story 8.8 in SCRUM_BACKLOG.md for that wiring).
-
-| Scene | Map | Use |
+| Scene | Map | Notes |
 |---|---|---|
-| The Marsh | `SkeletonFortressEntrance/.../SkeletonFortressEntrancePublic.jpg` | The skull-mouth entrance and the marsh crossing are the same map |
-| Ossuary through Gathering Hall | `BloodCultDungeon/.../Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg` | One large map, multiple rooms -- reposition tokens per room rather than switching maps |
-| Core Room | `CastleCoreRoom/.../CastleCoreRoomPublic.jpg` | The final ritual chamber |
+| Scene 0: Farbog | `s4_sacred_grove.html` repurposed or `SkeletonFortressEntrance` from dicegrimorium | Bog crossing, bone causeway, skull entrance visible in distance |
+| Scene 1: Village | `s3_germanic_village.html` | Use the existing village SVG map |
+| Scene 2: Sacred Grove | `s4_sacred_grove_overview.html` | North of village, Belatucadrus shrine |
+| Scene 3: Sacrifice Circle | Same grove map, move tokens to the standing stone circle | The circle is inside the grove clearing |
+| Scene 4-5: Dungeon | `vault_s1_overview.html` and `vault_s1_bone_chamber.html` | Skull entrance + Ossuary |
 
 </details>
 
@@ -76,236 +69,299 @@ a campaign session folder (see Epic 8, Story 8.8 in SCRUM_BACKLOG.md for that wi
 
 
 <details>
-<summary><strong>Scene 0: The Marsh</strong></summary>
+<summary><strong>Scene 0: The Farbog Crossing</strong></summary>
+
+The party arrives at the Farbog -- a wide marsh that glows cold green even in daylight.
+A bone causeway runs across it. At the far side, the hillside opens in a carved skull
+twenty feet tall.
 
 **Read aloud:**
 
-> *The trees thin out and the ground goes soft underfoot before you see why. Ahead, the
-> hillside opens in a mouth -- not a metaphor. A skull carved from the living rock,
-> easily twenty feet across, its eye sockets black even at midday. A causeway of bone
-> and old skulls runs from between its teeth down into a wide, glowing green marsh that
-> splits around the path like water around a stone. The light doesn't flicker like fire.
-> It breathes, slow, the way something alive breathes.*
+> *The trees end and the ground turns to black water. Ahead, running across the marsh on
+> a spine of old skulls and packed bone, a causeway barely wide enough for two men
+> leads toward the hillside. The hillside has a face. A skull carved from the living
+> rock, easily twenty feet across, its eye sockets dark even in full daylight. The
+> water on either side glows. Not fire. Something slower.*
 
-**The crossing:** the bone causeway is the only dry footing across the marsh. Leaving it
-means wading through the glowing green water.
+**Crossing:** The causeway is safe. Leaving it into the water triggers the marsh hazard.
 
 ::: {.dm-note}
-**Marsh hazard, if a character leaves the causeway:** DC 12 Constitution save (active:
-each round spent in the glowing water) or gain one level of exhaustion and 1 point of
-temporary corruption -- the light isn't fire, it's the same thing that answers to the
-name Mars, faintly present in every inch of this place. This should discourage wading
-without making it lethal; the causeway itself is always safe.
+**Marsh hazard (if a character enters the water):** DC 12 Constitution save or 1 level of exhaustion + 1 temporary corruption point. The glow is the same presence that fills the dungeon -- faint, but already feeding on anyone who touches it. One save per round in the water. The causeway is always safe; there is no ambiguity about this.
 :::
 
-**Two supply caches** sit at the marsh's near corners, low stone walls around crates and
-barrels. DC 11 Wisdom (Investigation) (active: searching a cache) turns up rations gone
-green with the same glow, a tally-marked stick counting days (the cult has been here a
-long time), and -- in the second cache -- a torn strip of cloth matching the two
-chieftains' warband colors, the third and final confirmation this is the right place.
+**Supply caches:** Two low stone walls at the near shore hold crates and barrels. DC 11 Wisdom (Investigation): rations gone green with the same glow, a tally stick (the cult has been here many months), and a torn strip of cloth in the two chieftains' warband colours -- the third confirmation this is the right place.
 
-**The encounter:** 3 × **[Banshee](https://www.dndbeyond.com/monsters/16799-banshee)** (*Monster Manual* p. 23 — CR 4, AC 12, HP 58) rise from the marsh itself as the party crosses — early followers who died tending this place.
+**Encounter: 3 × Banshee** (*Monster Manual* p. 23 -- CR 4, AC 12, HP 58). Early cult followers who died tending the marsh. They rise from the water as the party crosses.
 
 ::: {.dm-note}
-**Combat & Environment:**
-- **The Causeway Hazard:** The bone causeway is 5 ft wide. The Banshees float over the water, using *Corrupting Touch* (+4 to hit, 3d6+2 necrotic) and *Horrifying Visage* (DC 13 Wisdom save or frightened). If a PC falls or steps into the glowing water, they trigger the marsh hazard (DC 12 Con save or 1 level of exhaustion + 1 temp corruption).
-- **The Wail:** Each Banshee has *Wail* (1/day, DC 13 Constitution save: drops to 0 HP on a failure, or takes 3d6 psychic damage on a success). **Stagger the Wails across rounds**—never trigger more than one Wail in a single round. Telegraph the scream: describe the spirit inhaling the glowing marsh mists, giving players a round to stun, silence, or focus fire.
-- **Speed of Play:** With AC 12, the Banshees take heavy damage quickly from a Level 6 party, keeping the combat fast and intense.
+**Banshee stats (official MM):**
+- *Corrupting Touch:* +2 to hit, 1d6 necrotic
+- *Horrifying Visage:* DC 13 Wisdom save or frightened for 1 minute
+- *Wail (1/day each):* DC 13 Constitution save -- fail: drop to 0 HP. Success: 3d6 psychic. **Never trigger more than one Wail per round.** Telegraph it: describe the spirit inhaling before it screams. Players have one round to interrupt.
+
+Stagger the Wails. With 3 Banshees, 3 potential Wails in consecutive rounds is a near-TPK. Space them or only use 2 of the 3.
 :::
 
 </details>
 
 
 <details>
-<summary><strong>Scene 1: The Ossuary</strong></summary>
+<summary><strong>Scene 1: The Germanic Village</strong></summary>
 
-Past the skull entrance, the dungeon proper begins. The first room, to the west of the
-main corridor, is circular and lined with a second skull motif -- smaller, echoing the
-entrance.
+Past the Farbog, the forest opens into a settlement -- longhouses around a central fire
+pit, fewer people than the buildings suggest. Survivors. Thusnelda is not here; she left
+at dawn for the grove.
+
+**Read aloud:**
+
+> *The village is quieter than a village should be. Smoke from two fires, not ten.
+> Children watching from doorways, not running. The longhouses are maintained but half
+> the sleeping rolls inside are empty. Whatever happened to this community, it happened
+> gradually -- the way a wound goes bad, not the way a sword lands.*
+
+**What the villagers know (if approached without threat):**
+
+- The grove is to the north. The dungeon entrance is to the south, past the old
+  offering stones.
+- Their seer -- an older man, name of Thusnelda -- went to the grove alone before dawn.
+  Three people followed and came back frightened. He would not stop or explain himself.
+- The two chieftains "went south" months ago and never returned. The villagers stopped
+  asking about them.
+- DC 13 Charisma (Persuasion): a villager says Thusnelda has spoken of "settling the
+  gods' debt" for two weeks. No one knew what he meant until this morning when he took
+  a blade with him.
+
+::: {.dm-note}
+**Thusnelda's reputation:** DC 13 Intelligence (History) or DC 13 Charisma (Persuasion) while talking to villagers -- a PC learns Thusnelda is of old blood, a trained völva whose family has read the omens in this forest for generations. He is not reckless. He is not suicidal. He has been right about everything for twenty years. That is what makes this dangerous.
+:::
+
+</details>
+
+
+<details>
+<summary><strong>Scene 2: The Sacred Grove</strong></summary>
+
+North of the village, a stand of ancient oaks around a stone shrine. The Belatucadrus
+shrine the party may have heard of in Session 3 is here -- a weathered stone face, not
+quite Roman Mars, not quite Germanic Tiwaz.
+
+**Read aloud:**
+
+> *The oaks here are old enough that their roots have lifted the path. At the grove's
+> center, a stone no taller than a man stands alone, its face carved on the side facing
+> the village -- two faces, really, or one face trying to be two. Roman workmanship on
+> top, older marks underneath. Someone has left fresh holly. Someone else has smeared
+> ash across the Roman features.*
+
+**What the shrine tells them:** DC 13 Intelligence (Religion): this is Belatucadrus --
+the Celtic sun god the Romans renamed Mars on the frontier. The ash over the Roman
+features is recent and deliberate. Someone is angry at the Roman overlay, not the god
+underneath.
+
+**What this means for the session:** a weapon consecrated here by a cleric or druid (10
+minutes of prayer, no spell slot required) gains the *Belatucadrus blessing* for the
+rest of the session -- advantage on damage rolls against creatures marked by the blood
+cult's magic, and the weapon counts as magical for the Ossuary encounter.
+
+::: {.dm-note}
+**The standing stone circle:** Just past the shrine, through a gap in the oaks, is a
+ring of seven standing stones. That is where Thusnelda is. The party can see him from
+here before he sees them. Give them one round of observation before he notices.
+:::
+
+</details>
+
+
+<details>
+<summary><strong>Scene 3: The Ritual Sacrifice Circle</strong></summary>
+
+This is the session's dramatic centrepiece. Thusnelda stands in the centre of the stone
+circle, barefoot, a ritual knife in his right hand and his left wrist already scored.
+He is bleeding, but not yet fatally. He has a clear, calm purpose. He is not being
+coerced. He is not confused. He has thought about this for weeks.
+
+**Read aloud:**
+
+> *He stands in the centre of the ring with the stillness of someone who has made up
+> his mind. His feet are bare on the cold stone. The knife in his hand is old work --
+> older than him, older than the village. His left wrist is scored, blood running down
+> his fingers and dropping into the earth. He is watching it fall.*
+>
+> *He hears you come and does not look up.*
+>
+> *"You are too late to stop the debt. But you can witness. A willing death settles what
+> war begins. The gods will be satisfied. Your soldiers will stop burning our grain."*
+
+**What Thusnelda believes (false, but sincerely):**
+
+The blood cult's months of ritual south of the village have left a divine debt -- a
+hunger in the land. He has interpreted this as a sign that the gods require a willing
+sacrifice to close the wound. He believes his own death will satisfy Mars and reduce
+Roman aggression on the frontier. He is a völva; he has read omens correctly for
+twenty years. This is the one time he is reading them wrong, because the cult
+*poisoned* the local spiritual landscape to feed something else, and he cannot
+distinguish the cult's manufactured hunger from a genuine divine demand.
+
+**What is actually true:** The dungeon to the south is the source. The cult created the
+hunger. His sacrifice will accomplish nothing except his death. Mars will still be
+hungry. The Romans will still burn grain. And the party will lose their best living
+guide to what is happening in this forest.
+
+---
+
+**Running the intervention:** the party has three paths.
+
+<details>
+<summary><strong>Path A: Persuasion (with evidence)</strong></summary>
+
+If the party shows Thusnelda physical evidence that the cult, not the gods, is the
+source of the hunger -- the cult cloth from the marsh cache, the tally stick, a cult
+symbol from the fort attack -- he will listen. DC 14 Charisma (Persuasion).
+
+On success: he lowers the knife. He does not believe them entirely -- he cannot undo
+weeks of his own interpretation in one conversation -- but he stops. *"Show me the
+place you describe. If the hunger ends when you unmake it, then I was wrong. I will
+wait."*
+
+On failure: he finishes the ritual. He does not die immediately -- a sacrificial
+bloodletting of this kind takes time. The party has one more round to act before the
+wound becomes fatal.
+
+**Physical evidence advantage:** showing cult cloth, tally stick, or a cult symbol from the fort attack grants advantage on the roll.
+
+</details>
+
+<details>
+<summary><strong>Path B: Persuasion (without evidence)</strong></summary>
+
+DC 18 Charisma (Persuasion). Very hard. He has been thinking about this longer than
+the party has been in this forest. A character with the Outlander or Hermit background
+may add their proficiency bonus to the check a second time (double proficiency) because
+they understand how this kind of conviction forms.
+
+On failure: same as Path A failure.
+
+</details>
+
+<details>
+<summary><strong>Path C: Physical intervention</strong></summary>
+
+A character can grab his arm or knock the knife away. This requires a successful grapple
+or Disarm (Athletics or Acrobatics DC 13, contested by his Dexterity). He does not
+fight back with the knife -- he will not harm the party -- but he will struggle. If
+grappled, he says:
+
+> *"You do not understand what you are preventing. Let go of me."*
+
+He stops fighting if held long enough to hear the Persuasion argument. Use this as a
+bridge to Path A, not a replacement for it. If the party physically restrains him and
+says nothing, he simply waits -- and the party must eventually decide what to do with
+a tied-up völva who still believes he is right.
+
+</details>
+
+<details>
+<summary><strong>Path D: The party does not intervene</strong></summary>
+
+Thusnelda completes the ritual. He does not die instantly -- a sacrificial bloodletting
+of this type causes death in roughly an hour without magical healing. A PC who casts
+*Cure Wounds* or *Healing Word* in that window can save him.
+
+If he dies: the party loses their best source of local knowledge about what the cult did
+to this land. The grove shrine loses its Belatucadrus blessing. In Session 5, any check
+to understand the dungeon's purpose is made without the context Thusnelda could have
+provided.
+
+His death does not stop the cult. The land's hunger does not ease. Everything he
+sacrificed himself for fails to happen, exactly as the party (if they understood the
+situation) would have predicted.
+
+</details>
+
+---
+
+::: {.dm-note}
+**On playing Thusnelda:** he is not a villain. He is not deluded in a dismissable way.
+He is intelligent, experienced, and has read the spiritual landscape of this forest for
+his entire life. The cult corrupted that landscape so thoroughly that his reading is
+genuinely off, and he has no way to know it. Play him as someone who is completely
+right about everything except the one thing that matters. His calm is not a performance.
+His willingness to die is not a symptom of despair. He believes he is the only person
+brave enough to do what the gods require.
+
+If the party stops him and then succeeds in the dungeon -- if the hunger ends -- he
+will come to the dungeon mouth when they emerge and stand in silence for a long moment.
+He will not apologise. He will say: *"The debt is paid. Not the way I thought."*
+That is enough.
+:::
+
+**After the scene:** whether saved or having chosen to wait, Thusnelda tells the party
+what he knows: the dungeon entrance is south through the standing stones, down the old
+offering path. The chieftains used it. He has not gone himself because he knew what
+the path meant. He gives them one more piece of information freely:
+
+> *"The first room below has been making the dead stay. Do not let the bones on the
+> floor fool you -- someone sorted them. Someone is still proud of that work."*
+
+</details>
+
+
+<details>
+<summary><strong>Scene 4: The Dungeon Entrance  ★ COMBAT</strong></summary>
+
+South of the standing stone circle, past the old offering path, the hillside opens in a
+carved skull twenty feet across. The stairs descend from between its teeth. The Bone
+Nagas are coiled just inside -- guardians placed here precisely because this is the only
+way in.
+
+**Read aloud:**
+
+> *The offering path ends at a hillside that has a face. A skull carved from the living
+> rock, its eye sockets dark even at midday. Inside its mouth, stairs descend into
+> darkness. The air coming up is cold and smells of old blood. And at the base of the
+> stairs, two shapes uncoil from the stone -- serpentine, skeletal, moving with a
+> purpose that bones alone do not explain.*
+
+DC 13 Intelligence (Investigation) (active: checking the entrance archway before
+descending): cult markings cut into the stone around the skull's teeth -- the same
+pattern as the cloth from the marsh cache. This is the right place.
+
+**Encounter:** 2 × **[Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga)** (*Monster Manual* p. 233 -- CR 4, AC 15, HP 58) at the base of the entrance stairs, plus 4 × **[Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton)** (*Monster Manual* p. 272 -- CR 1/4, AC 13, HP 13) that animate from scattered bones on initiative count 20.
+
+::: {.dm-note}
+**Combat:**
+- **Skeletons:** vulnerability to bludgeoning (MM p. 272). One hit from a mace or warhammer destroys them.
+- **Bone Naga spellcasting** (DC 12 save, +4 attack): *hold person*, *ray of sickness* (2d8 poison), *ray of enfeeblement*. Bite: +5 to hit, 2d6+3 piercing + 4d6 poison (DC 11 Con save, half on success).
+- **Terrain:** the entrance stairway is narrow -- only two characters can fight abreast. The Nagas use this, forcing the party to push down one at a time while the Skeletons flank from behind if anyone retreats up the stairs.
+:::
+
+</details>
+
+
+<details>
+<summary><strong>Scene 5: The Ossuary  ★ SESSION 4 ENDS HERE</strong></summary>
+
+Past the skull entrance, beyond the fallen Nagas, the dungeon proper begins. The first
+room is circular. No combat. This is what the party finds when they finally get inside.
 
 **Read aloud:**
 
 > *The room ahead is round, and its far wall is shaped like the thing you just walked
 > through -- another skull, smaller, teeth picked out in inlaid bone. The floor is a
-> carpet of femurs and ribs, stacked with a care that took someone a long time.*
+> carpet of femurs and ribs. Not scattered. Sorted -- by size, by age, stacked with a
+> care that took someone a very long time. Deeper in the dungeon, something breathes.*
 
-DC 13 Intelligence (History) (active: examining how the bones are arranged): these are
-not war dead thrown in a pile. They're sorted -- by size, by age, deliberately. Someone
-has been curating this room for months, not years. This matches the tally-stick found at
-the marsh.
+DC 13 Intelligence (History) (active: examining the arrangement): these are not war
+dead. They are curated -- months of deliberate work. Whoever sorted these bones was
+proud of it. This matches the tally stick from the marsh.
 
-**The encounter:** 2 × **[Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga)** (*Monster Manual* p. 233 — CR 4, AC 15, HP 58) coiled among the bones, plus 4 × **[Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton)** (*Monster Manual* p. 272 — CR 1/4, AC 13, HP 13) that animate from the bone floor on initiative count 20.
-
-::: {.dm-note}
-**Combat & Tactics:**
-- **Skeleton Vulnerability:** Skeletons have official Monster Manual **vulnerability to bludgeoning damage** (MM p. 272). A hit from a mace, warhammer, or sling stone deals double damage, shattering them in a single blow.
-- **Bone Naga Spellcasting:** The Nagas rely on spellcasting (DC 12 spell save, +4 spell attack): *hold person*, *ray of sickness* (2d8 poison), and *ray of enfeeblement* to debuff melee fighters.
-- **Bite:** +5 to hit, reach 10 ft., 2d6+3 piercing plus 3d6 poison damage.
-- **Speed of Play:** With Skeletons dropping in 1 hit to bludgeoning and Nagas having 58 HP, this combat resolves cleanly in 2 rounds.
-:::
-
-</details>
-
-
-<details>
-<summary><strong>Scene 2: The Blood-Growth Rooms</strong></summary>
-
-Two connected rooms to the east, walls and floor overtaken by something that isn't mold
-and isn't quite flesh -- dense red-black clusters climbing every surface, faintly wet,
-faintly warm to the touch.
-
-**Read aloud:**
-
-> *The stone here has stopped being stone. Something has grown over it -- clusters of
-> dark red matter, wet-looking, veined, thick as a fist in places and swollen tight.
-> They shift, very slightly, when you get close. Not with the room's air currents.*
-
-DC 12 Wisdom (Medicine) or Intelligence (Nature) (active: examining the growths closely):
-this is organic, and it's fed -- on blood, deliberately and repeatedly, over a long
-period. Whatever grows here was grown on purpose.
-
-**The encounter:** a **[Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol)** (*Monster Manual* p. 65 — CR 6, AC 15, HP 136) anchored to the pulsating wall-growths, supported by 2 × **[Dretch](https://www.dndbeyond.com/monsters/16847-dretch)** (*Monster Manual* p. 57 — CR 1/4, AC 11, HP 18).
+There is a short passage at the far end leading deeper. The party can see nothing past
+the first bend. Session 4 ends here.
 
 ::: {.dm-note}
-**Combat & Tactics:**
-- **Yochlol Ambush:** Drops from the ceiling in giant spider form (*Shapechanger*, MM p. 65). Uses *Multiattack* (+6 to hit, 1d6+3 bludgeoning plus 6d6 poison damage) and innate spellcasting (at will *web* DC 14, 1/day *insect plague*). Has Magic Resistance (advantage on saves against spells).
-- **Dretches:** Chaff support. They attempt to tie up frontliners using *Fetid Cloud* (1/day, 10-ft radius, DC 11 Constitution save or retching/poisoned). With AC 11 and 18 HP, they drop in 1-2 hits.
-:::
-
-</details>
-
-
-<details>
-<summary><strong>Scene 3: The Minor Altar</strong></summary>
-
-The central room of the complex -- a raised dais glowing dull red, four stone pillars
-around it at the cardinal points.
-
-**Read aloud:**
-
-> *Four pillars ring a low dais at the room's center, and the dais itself pulses -- not
-> light exactly, more like a heartbeat you can see. This isn't the room you came here
-> looking for. It feels like a rehearsal for one.*
-
-DC 14 Intelligence (Religion) (active: examining the dais directly): this altar has
-never completed a working. It's a practice space -- every mark on it is a false start, a
-ritual begun and abandoned. Whatever the cult was building up to happened somewhere
-else, not here.
-
-**The encounter:** 3 × **[Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon)** (*Monster Manual* p. 64 — CR 4, AC 13, HP 66).
-
-::: {.dm-note}
-**Combat & Environment:**
-- **Deadly in the Shadows:** In dim light or darkness, Shadow Demons strike with *Claws* (+5 to hit, dealing 4d6+3 psychic damage) and use bonus-action *Shadow Stealth* to hide between the 4 pillars.
-- **Official MM Vulnerability & Weakness:** Shadow Demons have official **vulnerability to radiant damage** (MM p. 64) and **Light Sensitivity** (disadvantage on attack rolls and Wisdom (Perception) checks relying on sight in bright light).
-- **The Four Stone Braziers:** At the foot of each pillar rests an unlit iron brazier with dry pitch. A character can ignite a brazier as an object interaction / action. Flooding the room with bright light strips their Shadow Stealth and imposes disadvantage on all their attacks!
-:::
-
-</details>
-
-
-<details>
-<summary><strong>Scene 4: The Rune Lock</strong></summary>
-
-South of the altar, a room with four tiles set into the floor, each glowing a different
-color, arranged in a 2×2 grid.
-
-**Read aloud:**
-
-> *Four tiles are set into the floor here, each etched with a different symbol, each
-> lit from beneath in a different color -- cyan, green, magenta, yellow. There's no
-> door ahead. Whatever this room is guarding, it's guarding it by making you choose.*
-
-**The puzzle:** the correct sequence is **cyan → green → yellow → magenta**, read as
-"beginning, growth, harvest, blood" -- the cult's own private liturgy for what this
-dungeon does to whoever spends long enough in it. DC 13 Intelligence (Investigation) or
-Wisdom (Insight) (active: examining the tiles' wear patterns): the cyan and green tiles
-show more foot traffic than the other two, suggesting an order of use rather than a
-single tile being "correct."
-
-**On success:** the tiles dim and a section of wall grinds aside, revealing a short
-passage directly to the Gathering Hall.
-
-**On failure (wrong tile pressed):** DC 12 Dexterity save or 2d6 force damage as the
-tile briefly inverts, and the sequence resets -- no permanent harm, no lockout, just a
-cost in time and HP. This room should never be a hard stop.
-
-::: {.dm-note}
-This is the session's breather beat -- no combat by default. If the table is racing
-through encounters too easily, an option is to have one Dretch (fled from Scene 2, if it
-survived) ambush from hiding while the party is focused on the tiles. Don't force it if
-the pacing doesn't need it.
-:::
-
-</details>
-
-
-<details>
-<summary><strong>Scene 5: The Gathering Hall</strong></summary>
-
-The largest room in the dungeon -- rows of markers on the floor suggest where a crowd
-once knelt, facing a table at the far end still set with rotted offerings.
-
-**Read aloud:**
-
-> *This room was built to hold people. Rows of worn stone mark where dozens once knelt,
-> facing a long table at the far end, still laid with offerings gone black with age.
-> Whatever congregation gathered here, it hasn't gathered in some time. But something is
-> still standing at that table.*
-
-**The reveal:** what's "still standing" are the cult's two chieftains -- or what's left
-of them. DC 13 Wisdom (Insight) or Intelligence (Investigation) (active: examining them
-before combat starts, if the party hesitates) identifies torn fragments of the same
-warband colors found at the marsh cache, confirming their identity.
-
-**The encounter:** 3 × **[Wraith](https://www.dndbeyond.com/monsters/17064-wraith)** (*Monster Manual* p. 302 — CR 5, AC 13, HP 67) -- the two chieftains and their devoted shield-bearer.
-
-::: {.dm-note}
-**Combat & Emotional Beat:**
-- **Tragic Opening (Round 1):** The chieftains got what they prayed for, and it consumed them. For the first round, they watch in silence. If addressed, they speak one broken sentence: *"We asked for victory... it took our blood... it starves still..."*
-- **Wraith Attacks:** *Life Drain* (+6 to hit, 4d6+3 necrotic, DC 14 Constitution save or HP maximum reduced by damage taken until a long rest). *Incorporeal Movement* allows them to glide through the stone markers to surround the party.
-- **Pacing:** To keep combat fast and focused, run this as a straight, brutal clash of blades and necrotic hunger without summoning additional specters.
-:::
-
-</details>
-
-
-<details>
-<summary><strong>Scene 6: The Core Room</strong></summary>
-
-Up a curved stair, through an archway ringed by four carved gargoyle faces, into a
-circular sanctum. At its center, on a raised dais, a crystal shaped like a jagged star
-burns cyan-white.
-
-**Read aloud:**
-
-> *The stair curves up into a perfectly circular chamber. Four stone faces watch from
-> the walls at the compass points -- not gods, not ancestors, just teeth and eyes carved
-> to be looked at from every angle at once. At the center, on a low dais, a crystal the
-> shape of a broken star burns steady and cold. It is the only thing in this entire
-> dungeon that looks cared for.*
-
-**What the crystal actually is:** DC 15 Intelligence (Arcana) or Intelligence (Religion)
-(active: examining the crystal directly, or automatic once the party has learned what
-Vercingetorix revealed): this is the cult's real altar and the marsh's real source. Every
-drop of blood spent in every room below was tribute funneled here, into this single
-focus -- not to summon Mars, but to keep something that answers to his name fed and
-present in the world a little longer. The rooms below aren't separate encounters. They
-were all one working, and this was always where it was going.
-
-**The guardian:** 1 × **[Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu)** (*Monster Manual* p. 58 — CR 9, AC 17, HP 157), bound directly to the crystal-star focus.
-
-::: {.dm-note}
-**Boss Combat & Tactics:**
-- **Innate Spellcasting (DC 16):** Opens with *Darkness* centered on the dais, lunging out at the closest warrior. Uses *Power Word Stun* on the primary damage dealer and *Confusion* if surrounded.
-- **Multiattack:** 2 Pincers (+9 to hit, reach 10 ft., 2d10+5 bludgeoning + grapple DC 15) and 2 Fists (+9 to hit, 2d4+5 bludgeoning) or 2 Pincers and casts 1 spell.
-- **Speed of Play:** With 6 Level 6 characters focusing fire with magical weapons, smites, and spells, 157 HP is brought down in 2-3 fast, tense rounds!
-
-**The Session's Climax & Rest Transition:**
-Once the Glabrezu falls, the room's demonic pressure collapses into a dull, cold humming. The crystal cannot be shattered here -- trying to smash it visibly fails, absorbing whatever strikes it. But the room is now safe.
-
-- **The Long Rest:** The party takes a **Long Rest** in the secured Core Room (consecrated by Tanit or Julia Jana, barricaded by Ursula or Brian).
-- **Advancement:** The party **advances to Level 7** during this rest, gaining full HP, all spell slots, and their 4th-level spells, fully prepared for the descent into the abyss in Session 5!
+**Level advancement:** party advances to **Level 6** after this session. Run it as a
+break, not an in-fiction event -- they are still inside. Session 5 opens at this
+threshold, at the edge of the Blood-Growth Rooms.
 :::
 
 </details>
@@ -317,32 +373,29 @@ Once the Glabrezu falls, the room's demonic pressure collapses into a dull, cold
 <details>
 <summary><strong>OGAS This Session</strong></summary>
 
-**The two chieftains** *(now Wraiths, Scene 5)*
-- **Objective (as they once had one):** feed the war-god who could finally give their
-  people victories that lasted, not just battles.
-- **Goal (this session):** none anymore -- whatever they wanted is gone. What's left
-  reacts, not plans.
-- **Agenda:** guard the hall they built, unable to leave it or stop.
-- **Secret:** they were not lied to about Mars's hunger. They were right about what he
-  wanted. They were wrong about what answering it would cost them personally.
+**Thusnelda** *(Scenes 1, 2, 3)*
+- **Objective:** End the divine hunger he believes is consuming his people's future.
+- **Goal:** Complete the sacrificial rite at the standing stone circle before anyone stops him.
+- **Agenda:** He acts regardless of party interference -- he started at dawn and the party finds him mid-ritual. He will not rush, but he will not stop voluntarily without convincing argument or physical restraint.
+- **Secret:** He has also been trying to find the cult's dungeon for three months. He could not locate it. He assumed that meant the gods wanted a different answer. He was looking for the entrance in the wrong direction.
 
-**The Glabrezu** *(Core Room Guardian, Scene 6)*
-- **Objective:** Maintain the tribute tether and guard the crystal-star focus against any who would disrupt it.
-- **Goal (this session):** Crush intruders in the dais darkness; protect the four gargoyle conduits.
-- **Agenda:** Fights to the death; will not pursue retreating players beyond the antechamber archway.
-- **Secret:** It is not summoned from the Abyss by mortals -- it was pulled through the veil by the sheer density of blood offered here, a living manifestation of Mars's escalating hunger.
+**The Bone Nagas** *(Scene 4)*
+- **Objective:** Guard the Ossuary.
+- **Goal:** Kill intruders.
+- **Agenda:** Coiled, dormant until movement detected. No tactics beyond what the stat block provides.
+- **Secret:** The careful arrangement of the bones was done by the cult chieftains personally, room by room, as their own form of devotion. The Nagas were placed here to ensure it was never disturbed.
 
 </details>
 
 <details>
-<summary><strong>Session 4 → Session 5 handoff — write these down now</strong></summary>
+<summary><strong>Session 4 → Session 5 handoff</strong></summary>
 
 | Question | Session 5 implication |
 |---|---|
-| Did the party learn what the crystal actually requires to be destroyed? | Determines how much Session 5's dungeon is a surprise vs. something they walk in prepared for |
-| Are all three Wraiths in Scene 5 accounted for (destroyed, fled, or otherwise resolved)? | An escaped Wraith is a loose thread worth resolving in Session 5 |
-| What is each character's corruption level after this session? | The Core Room's proximity to the focus should have pushed at least one character's corruption up -- note who |
-| Did the party take their Long Rest in the Core Room? | Confirms the party enters Session 5 at full Level 7 resources (spells, HP, abilities) |
+| Is Thusnelda alive? | If yes: he waits at the dungeon mouth. Possible source of context for S5. If no: party enters S5 without local knowledge of the cult's history in this forest. |
+| Was the Belatucadrus shrine blessed? | If yes: one PC carries a consecrated weapon into S5. Tell them it matters but not how yet. |
+| What is each PC's corruption level? | The sacrifice circle has a minor passive field -- any PC at corruption 3+ who stood inside the circle for more than one round takes 1 temporary corruption point (no save, ambient). |
+| Did the party find all three confirmations (cloth, tally stick, cult markings at entrance)? | If they missed one, leave it findable in the Blood-Growth Rooms at the start of S5. |
 
 </details>
 
