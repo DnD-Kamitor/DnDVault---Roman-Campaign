@@ -6,7 +6,7 @@
   "alignment": "Chaotic Evil",
   "hp": 66,
   "hp_formula": "12d8+12",
-  "ac": 12,
+  "ac": 13,
   "ac_note": "",
   "speed": "30 ft., fly 50 ft.",
   "ability_scores": {
@@ -32,7 +32,7 @@
   "macro_file": "",
   "token_color": "#1a1a2a",
   "portrait_file": "../Maptool/tokens/dnd5e-art/Shadow Demon/ShadowDemon (1).webp",
-  "notes": "CR 4. Incorporeal. Shadow Stealth (bonus action Hide in dim light/darkness). Claw: 3d6 necrotic + max HP reduction.",
+  "notes": "CR 4. Incorporeal. Shadow Stealth (bonus action Hide in dim light/darkness). Claw: 2d6+2 psychic (+2d6+4 if target frightened). Illumination Weakness in bright light.",
   "gm_notes": "Session 4 -- Blood Cult Dungeon, minor altar room. Use x2 for the fight. Keeps breaking line of sight between the altar's pillars.",
   "session": 4
 }

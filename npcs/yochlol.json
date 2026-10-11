@@ -1,7 +1,7 @@
 {
   "name": "Yochlol",
   "creature_type": "Fiend (Demon)",
-  "cr": "6",
+  "cr": "10",
   "size": "Medium",
   "alignment": "Chaotic Evil",
   "hp": 136,
@@ -9,8 +9,8 @@
   "ac": 15,
   "ac_note": "natural armor",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 15, "DEX": 11, "CON": 18, "INT": 13, "WIS": 15, "CHA": 16},
-  "saving_throw_proficiencies": [],
+  "ability_scores": {"STR": 15, "DEX": 11, "CON": 19, "INT": 13, "WIS": 14, "CHA": 16},
+  "saving_throw_proficiencies": ["STR", "CON", "WIS", "CHA"],
   "skill_proficiencies": ["Deception", "Insight", "Perception"],
   "skill_overrides": {},
   "resistances": "cold, fire, lightning; bludgeoning/piercing/slashing from nonmagical weapons",
@@ -21,7 +21,7 @@
   "macro_file": "",
   "token_color": "#5a1a3a",
   "portrait_file": "",
-  "notes": "CR 6. Shapechanger (spider form). Magic Resistance. Innate spells: charm person, dancing lights, minor illusion at will; fog cloud 3/day; insect plague 1/day.",
+  "notes": "CR 10. Shapechanger (spider form). Magic Resistance. Innate spells: charm person, dancing lights, minor illusion at will; fog cloud 3/day; insect plague 1/day.",
   "gm_notes": "Session 4 -- Blood Cult Dungeon, blood-growth rooms. Pair with 2 Dretches. Use insect plague to double as the fleshy growths swarming.",
   "session": 4
 }

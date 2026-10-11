@@ -2621,7 +2621,7 @@
     "attacks": [
       {
         "label": "Corrupting Touch",
-        "raw_cmd": "[h: atk=1d20][h: dmg=3d6]/me reaches out with a hand of freezing grief — CORRUPTING TOUCH! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the cold passes straight through the heart!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — her hand passes through empty air!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg] necrotic<br><i style='color:#c88020'>Incorporeal Movement: passes through walls/objects (5 force damage if ending turn inside). Resistances: acid, fire, lightning, thunder; nonmagical weapons. Immune: cold, necrotic, poison.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6]/me reaches out with a hand of freezing grief — CORRUPTING TOUCH! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the cold passes straight through the heart!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — her hand passes through empty air!</b>\", \"connects!\"))]<br>ATK: [e: atk+2] | DMG: [e: dmg] necrotic<br><i style='color:#c88020'>Incorporeal Movement: passes through walls/objects (5 force damage if ending turn inside). Resistances: acid, fire, lightning, thunder; nonmagical weapons. Immune: cold, necrotic, poison.</i>"
       },
       {
         "label": "Horrifying Visage",
@@ -2629,7 +2629,7 @@
       },
       {
         "label": "Wail (1/day)",
-        "raw_cmd": "[h: save=1d20][h: dmg=10d8]/me opens her mouth and every grief she ever carried comes out at once — WAIL! Every living creature within 30 ft that can hear it: CON save [e: save] vs DC 13 — [r, if(save>=13): \"<b style='color:green'>resists — takes half damage only.</b>\"; \"<b style='color:#e74c3c'>TAKES FULL DAMAGE.</b> If this reduces the target to 0 HP, it dies outright.\"]<br>DMG: [e, if(save>=13): floor(dmg/2); dmg] psychic<br><i style='color:#c88020'>Once per day. Does not affect constructs or undead. This is the banshee's single scariest moment — use it when the fight needs a spike, not on round 1.</i>"
+        "raw_cmd": "[h: save=1d20][h: dmg=3d6]/me opens her mouth and every grief she ever carried comes out at once — WAIL! Every living creature within 30 ft that can hear it: CON save [e: save] vs DC 13 — [r, if(save>=13): \"<b style='color:green'>resists — takes [e: dmg] psychic damage instead.</b>\"; \"<b style='color:#e74c3c'>DROPS TO 0 HP IMMEDIATELY.</b>\"]<br><i style='color:#c88020'>Once per day. Does not affect constructs or undead. On a failed save the creature drops to 0 HP — no roll, no reduction, just 0. On a successful save: 3d6 psychic. Use it when the fight needs a spike, not on round 1.</i>"
       }
     ],
     "traits": [
@@ -2654,7 +2654,7 @@
     "attacks": [
       {
         "label": "Bite",
-        "raw_cmd": "[h: atk=1d20][h: dmg=4d6]/me strikes with a skeletal, fang-bare jaw — BITE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — bone locks through bone!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the jaw snaps shut on nothing!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg+3] piercing"
+        "raw_cmd": "[h: atk=1d20][h: pierce=2d6][h: poison=4d6][h: save=1d20]/me strikes with a skeletal, fang-bare jaw — BITE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — bone locks through bone!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the jaw snaps shut on nothing!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] | Piercing: [e: pierce+3] | Poison: CON save [e: save] vs DC 11 — [r, if(save>=11): \"<b style='color:green'>resists — takes [e: floor(poison/2)] poison.</b>\"; \"<b style='color:#e74c3c'>takes [e: poison] poison damage.</b>\"]"
       },
       {
         "label": "Hold Person (spell)",
@@ -2675,23 +2675,23 @@
     "speed": "30 ft.",
     "str": 15,
     "dex": 11,
-    "con": 18,
+    "con": 19,
     "int": 13,
-    "wis": 15,
+    "wis": 14,
     "cha": 16,
-    "saves": {},
+    "saves": {"STR": 6, "CON": 8, "WIS": 6, "CHA": 7},
     "skills": {
       "Deception": 7,
       "Insight": 6,
       "Perception": 6
     },
-    "cr": "6",
+    "cr": "10",
     "resistances": "Cold, fire, lightning; bludgeoning/piercing/slashing from nonmagical weapons",
     "immunities": "Poison; poisoned",
     "attacks": [
       {
         "label": "Poisonous Tentacle",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: save=1d20]/me lashes out with a tentacle that shouldn't exist on anything shaped like a person — POISONOUS TENTACLE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — it wraps twice before the target can react!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the tentacle misjudges the reach!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] reach 15 ft | DMG: [e: dmg+2] poison, and target is grappled (escape DC 14).<br>While grappled, target repeats CON save [e: save] vs DC 15 each of its turns — [r, if(save>=15): \"resists further poison this turn.\"; \"<b style='color:#e74c3c'>takes 2d6 poison again.</b>\"]"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: save=1d20]/me lashes out with a tentacle that shouldn't exist on anything shaped like a person — POISONOUS TENTACLE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — it wraps twice before the target can react!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the tentacle misjudges the reach!</b>\", \"connects!\"))]<br>ATK: [e: atk+6] reach 10 ft | DMG: [e: dmg+2] poison, and target is grappled (escape DC 14).<br>While grappled, target repeats CON save [e: save] vs DC 15 each of its turns — [r, if(save>=15): \"resists further poison this turn.\"; \"<b style='color:#e74c3c'>takes 2d6 poison again.</b>\"]"
       },
       {
         "label": "Innate Spellcasting",
@@ -2727,7 +2727,7 @@
     "attacks": [
       {
         "label": "Claw",
-        "raw_cmd": "[h: atk=1d20][h: dmg=3d6]/me tears free of the dark between the pillars — CLAW! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the claw passes through flesh like it isn't there!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — it overreaches into the light and flinches back!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] | DMG: [e: dmg] necrotic, and the target's <b>hit point maximum is reduced</b> by the damage taken until it finishes a long rest. Target dies if this reduces its maximum to 0.<br><i style='color:#c88020'>Incorporeal Movement. Immune: necrotic, poison. Resistant to nonmagical weapons.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me tears free of the dark between the pillars — CLAW! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the claw passes through flesh like it isn't there!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — it overreaches into the light and flinches back!</b>\", \"connects!\"))]<br>ATK: [e: atk+4] | DMG: [e: dmg+2] psychic (or [e: dmg+6] psychic if the target is frightened)<br><i style='color:#c88020'>Illumination Weakness: disadvantage on attacks in bright light. Shadow Stealth: Hide as bonus action in dim light/darkness. Immune: necrotic, poison. Resistant to nonmagical weapons.</i>"
       },
       {
         "label": "Shadow Stealth (bonus action)",
@@ -2761,11 +2761,11 @@
       },
       {
         "label": "Claws",
-        "raw_cmd": "[h: atk=1d20][h: dmg=1d4]/me scrabbles with both filth-crusted hands — CLAWS! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+2] | DMG: [e: dmg] slashing"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d4]/me scrabbles with both filth-crusted hands — CLAWS! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+2] | DMG: [e: dmg] slashing"
       },
       {
-        "label": "Fetid Cloud (recharge 6)",
-        "raw_cmd": "[h: save=1d20]/me releases a cloud of noxious gas — FETID CLOUD! Each creature within 10 ft: CON save [e: save] vs DC 11 — [r, if(save>=11): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>POISONED</b> for 1 minute (repeat save at end of each turn).\"]<br><i style='color:#c88020'>Use to punish the party for clumping up — dretches are weak alone but a swarm with this recharging is genuinely nasty.</i>"
+        "label": "Fetid Cloud (1/day)",
+        "raw_cmd": "[h: save=1d20]/me releases a cloud of noxious gas in a 10-ft radius — FETID CLOUD (1/day)! Each creature within 10 ft: CON save [e: save] vs DC 11 — [r, if(save>=11): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>POISONED</b> until the start of its next turn. While poisoned this way, the target can take either an action OR a bonus action on its turn — not both.\"]<br><i style='color:#c88020'>The gas cloud spreads around corners and persists for 1 minute (strong wind clears it). Any creature starting its turn in the cloud must save again. Place a cloud marker — it is lingering terrain, not a once-and-done effect.</i>"
       }
     ],
     "traits": [
@@ -2798,8 +2798,8 @@
         "raw_cmd": "[h: atk=1d20][h: dmg=2d10]/me lunges with a massive crab-like claw — PINCER! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the pincer closes with a sound like a door slamming!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+9] reach 10 ft | DMG: [e: dmg+5] bludgeoning, and if the target is Medium or smaller it is <b>grappled</b> (escape DC 15). The glabrezu has two pincers and can grapple two different creatures at once."
       },
       {
-        "label": "Fist (part of Multiattack, only vs. a creature grappled by a pincer)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d4]/me drives a fist into whatever its pincer is already holding — FIST! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+9] reach 5 ft | DMG: [e: dmg+3] bludgeoning<br><i style='color:#c88020'>Multiattack: two pincers, then two fists (only against targets already grappled by a pincer) -- or it forgoes some/all of its attacks to cast a spell instead.</i>"
+        "label": "Fist (part of Multiattack)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me drives a fist forward — FIST! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+9] reach 5 ft | DMG: [e: dmg+5] bludgeoning<br><i style='color:#c88020'>Multiattack: two Pincers + two Fists, OR two Pincers + one spell. The Fist can target any creature — not restricted to grappled targets.</i>"
       },
       {
         "label": "Innate Spellcasting",
