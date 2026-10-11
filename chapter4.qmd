@@ -71,35 +71,80 @@ party stepping into the Ossuary. They advance to Level 6.
 <details>
 <summary><strong>Scene 0: The Farbog Crossing</strong></summary>
 
-The party arrives at the Farbog -- a wide marsh that glows cold green even in daylight.
-A bone causeway runs across it. At the far side, the hillside opens in a carved skull
-twenty feet tall.
+The party arrives at the Farbog -- a wide marsh glowing cold green in daylight. A bone
+causeway runs across it. At the far side, the hillside opens in a carved skull twenty
+feet tall. Before the causeway begins, a standing stone rises from the bank.
 
 **Read aloud:**
 
-> *The trees end and the ground turns to black water. Ahead, running across the marsh on
-> a spine of old skulls and packed bone, a causeway barely wide enough for two men
-> leads toward the hillside. The hillside has a face. A skull carved from the living
-> rock, easily twenty feet across, its eye sockets dark even in full daylight. The
-> water on either side glows. Not fire. Something slower.*
+> *The trees end and the ground turns to black water. Ahead, a causeway of old skulls
+> and packed bone runs across the marsh toward a hillside that has a face -- a skull
+> carved from the living rock, easily twenty feet across, its eye sockets dark even now.
+> The water on either side glows green. Not fire. Something slower, like a pulse.*
+>
+> *At the bank's edge, a standing stone. Runes cut deep. Old work -- older than the
+> causeway. Someone wanted something remembered here.*
 
-**Crossing:** The causeway is safe. Leaving it into the water triggers the marsh hazard.
+---
+
+**The Standing Stone -- Riddle for Reward**
+
+DC 13 Intelligence (History) to read the Germanic runes. Read aloud to the player who succeeds:
+
+> *"Born from the willing, fed by the blood, I grow in the silence where no god has
+> stood. Worship without truth, devotion without cost -- I am what remains after the
+> believer is lost. Name me."*
+
+The answer is **the hunger** -- or any answer meaning "hollow faith," "false devotion," or "the cult's work." A character who names it correctly (or any answer the DM judges honest and insightful) finds a carved bone token hidden in a notch at the stone's base.
 
 ::: {.dm-note}
-**Marsh hazard (if a character enters the water):** DC 12 Constitution save or 1 level of exhaustion + 1 temporary corruption point. The glow is the same presence that fills the dungeon -- faint, but already feeding on anyone who touches it. One save per round in the water. The causeway is always safe; there is no ambiguity about this.
+**Bone Token reward:** grants one free reroll on any saving throw against an undead ability for the rest of the session. One use, no attunement. The rune on it is OTHALAN -- the same mark from Session 1's vault. A character who recognises it (DC 11 Intelligence (History), or automatic if they handled the Session 1 contract token) knows this symbol has been here longer than the cult. Something pre-dates the chieftains' work.
 :::
 
-**Supply caches:** Two low stone walls at the near shore hold crates and barrels. DC 11 Wisdom (Investigation): rations gone green with the same glow, a tally stick (the cult has been here many months), and a torn strip of cloth in the two chieftains' warband colours -- the third confirmation this is the right place.
+---
 
-**Encounter: 3 × Banshee** (*Monster Manual* p. 23 -- CR 4, AC 12, HP 58). Early cult followers who died tending the marsh. They rise from the water as the party crosses.
+**Avoidance -- the quiet crossing**
+
+The Wights are dormant while the glowing water is undisturbed. They sense warmth and
+movement in the water, not on the bone causeway itself. If the party moves slowly and
+stays on the causeway, they may pass without waking them.
+
+**DC 14 group Dexterity (Stealth) check** -- more than half must succeed. On success: the
+party crosses in silence, Wights never rise, no combat. On failure -- or if anyone
+steps into the water: the Wights rise as the party is mid-crossing.
 
 ::: {.dm-note}
-**Banshee stats (official MM):**
-- *Corrupting Touch:* +2 to hit, 1d6 necrotic
-- *Horrifying Visage:* DC 13 Wisdom save or frightened for 1 minute
-- *Wail (1/day each):* DC 13 Constitution save -- fail: drop to 0 HP. Success: 3d6 psychic. **Never trigger more than one Wail per round.** Telegraph it: describe the spirit inhaling before it screams. Players have one round to interrupt.
+Let the party try the riddle and choose their approach before revealing the avoidance
+option explicitly. A player who asks "can we sneak past?" gets the Stealth check. A
+player who just walks gets the encounter. Reward attention.
+:::
 
-Stagger the Wails. With 3 Banshees, 3 potential Wails in consecutive rounds is a near-TPK. Space them or only use 2 of the 3.
+---
+
+**Why the Wights are here**
+
+The cult's two chieftains demanded a test of devotion before any follower could approach
+the dungeon. Early converts were ordered to stand guard in the bog overnight, in the
+water, alone. The ones who failed -- who left the water, who drowned, who broke --
+never came home. The cult magic that fed on their deaths bound them here. They did not
+choose to stay. They were never given a choice about leaving.
+
+**Supply caches:** Two low stone walls at the near shore hold crates and barrels. DC 11 Wisdom (Investigation): rations gone green with the same glow, a tally stick (the cult has been here many months), and a torn strip of cloth in the two chieftains' warband colours.
+
+---
+
+**Encounter: 3 × Wight** (*Monster Manual* p. 300 -- CR 3, AC 14, HP 45) rise from
+the black water when disturbed.
+
+::: {.dm-note}
+**Wight stats (official MM):**
+- *Longsword:* +4 to hit, 1d8+2 slashing (or 1d10+2 two-handed)
+- *Longbow:* +4 to hit, range 150/600 ft., 1d8+2 piercing
+- *Life Drain:* +4 to hit, 1d6+2 necrotic, DC 13 Constitution save or HP maximum reduced by damage taken until long rest. On a kill, target rises as a Zombie under the Wight's control.
+- **Sunlight Sensitivity:** disadvantage on attack rolls and Perception in sunlight -- it is daytime, this applies. They fight at disadvantage in the open.
+- **Terrain:** Wights rise from the water flanking the causeway. They cannot step onto it easily -- treat the causeway edges as difficult terrain for them. The party has the high ground.
+
+**If a PC dies here:** they rise as a Zombie at the start of the next round unless the Wight is destroyed first or the body is moved off the causeway immediately. Say this plainly before combat starts -- it is not a cheap surprise.
 :::
 
 </details>
@@ -108,16 +153,19 @@ Stagger the Wails. With 3 Banshees, 3 potential Wails in consecutive rounds is a
 <details>
 <summary><strong>Scene 1: The Germanic Village</strong></summary>
 
-Past the Farbog, the forest opens into a settlement -- longhouses around a central fire
-pit, fewer people than the buildings suggest. Survivors. Thusnelda is not here; she left
-at dawn for the grove.
+Past the Farbog, the forest opens into a Germanic settlement -- longhouses around a
+central fire pit, fewer people than the buildings suggest. Thusnelda is not here; he
+left at dawn for the grove.
 
 **Read aloud:**
 
-> *The village is quieter than a village should be. Smoke from two fires, not ten.
-> Children watching from doorways, not running. The longhouses are maintained but half
-> the sleeping rolls inside are empty. Whatever happened to this community, it happened
-> gradually -- the way a wound goes bad, not the way a sword lands.*
+> *The village smells of woodsmoke and old bread. Chickens. A dog that barks once and
+> stops. Two fires burning where ten should be. The longhouses are solid work, well-kept,
+> but half the doors stand open on empty rooms. A woman stops grinding grain and watches
+> you without moving. A child runs inside. An old man at the fire does not look up.*
+>
+> *Whatever took this village apart, it was not a raid. Raiders leave bodies and ash.
+> This place just... thinned.*
 
 **What the villagers know (if approached without threat):**
 
