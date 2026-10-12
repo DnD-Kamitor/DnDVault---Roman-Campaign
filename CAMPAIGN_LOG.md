@@ -233,54 +233,46 @@ the fighting gets, the more of Mars slips through. Save the design work for the 
 **Party:** Level 5-6, five core PCs (Artificer, Druid, Bard, Cleric, and a Barbarian
 among the original five) plus Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3).
 
-**Where they are:** Session 3 complete. Party is in the forest, Lucius dead, moving toward
-the Farbog. Session 4 is next.
+**Where they are:** Session 4 complete (played 2026-10-11). **The party is standing directly in front of the Farbog.**
+The Farbog has NOT been crossed yet. Session 5 is next.
 
-**Session 4 actual scope (corrected from chapter4.qmd):**
-- Cross the Farbog (Farbog encounter)
-- Reach the Germanic village south of the bog — Thusnelda is here (party has not yet met her)
-- North of village: sacred grove (optional detour)
-- South of village: dungeon entrance — the cult's lair
-- Enter dungeon, clear approximately one room
-Party reaches the dungeon in S4 but does not clear it. S4 ends at dungeon threshold or after
-one room. The bulk of the dungeon (deeper levels, Core Room, Mars confrontation) is Session 5.
-
-**Session 5 actual scope:**
-- Continue dungeon from where S4 left off
-- Core Room and deeper vault (Mars's sanctum)
-- Final confrontation: destroy/bind/redirect the spear
+**Upcoming Scope (Session 5):**
+- Step onto the causeway / Cross the Farbog (bone causeway, standing stone OTHALAN riddle, Wights, Myling)
+- Reach the Germanic village south of the bog — Thusnelda (völva seer, he/him) is here (first encounter)
+- North of village: Sacred Grove & false sacrifice circle (Thusnelda attempting suicide ritual to end divine debt)
+- South of village: Dungeon entrance (cult lair, Bone Nagas + Skeletons)
+- Enter dungeon: Ossuary (first room of cult dungeon)
 
 **Key NPC status:**
 
 | NPC | Status | Notes |
 |---|---|---|
-| Legate Corvinus | Alive, authority damaged | Discredited by the security failure. Already secretly wants the spear destroyed (established in his existing OGAS) — separate, human, political reasoning from Mars's or Varro's. |
-| Centurion Varro | **Dead** | Killed when the gate fight with Ursula concluded. Opened the gate, killed a scout, declared "I did this for Rome" before falling. Corruption source: his own inherited Teutoburg-legacy terror, amplified by the spear, not an external Brutus mechanism. |
-| Tribune Lucius | **Dead** | Killed Session 3. Party lured giant spiders into the group; he perished in the assault. Lockbox/papers (Germanic fostering heritage) now carried by party. Cannot appear in Sessions 4-5. |
-| Augur Cassia | Per script, alive/present | No deviation reported. |
-| Vercingetorix | Ally (post-raid) | **Led the Session 2 attack on the fort** — not a betrayal of a prior alliance; this was the latest iteration of a war he's been bound to fight for two centuries, mirroring the Wight. Something in the party's conduct broke through and stopped him mid-raid, seeding the current alliance. "He is dying, this is his final campaign" now carries the weight of finally being allowed to end, not simple illness. |
-| Senator Brutus | Off-screen, never appears | Wants the spear kept from Rome for political reasons that happen to align with Mars's preference — whether by coincidence or manipulation is deliberately unresolved. |
-| The Wight (Session 1, Altar Chamber) | Encountered, resolved per however that scene played out | **Is the original legate**, bound by his own weapon's hunger 200 years ago. Retroactive depth, does not contradict what already happened at the table. |
-| Mars | Building toward direct confrontation (S4-S5) | Not anti-Rome — pro-war, indifferent to who wins, starved by ~200 years of the Pax Romana, cornered onto this one remaining tribute-line. His only real enemy is destruction. |
+| Legate Corvinus | Alive at Vindolanda, authority damaged | Discredited by fort security failure. Secretly ordered Lucius to destroy the spear in the field and keep it from Rome/Senate (revealed in sealed orders). |
+| Centurion Varro | **Dead** | Killed at the fort gate by Ursula. |
+| Tribune Lucius | **Dead** | Perished in the forest ambush. Body fully searched and looted in Session 4. |
+| Lucius's 4 Guards | Stranded without an officer | Currently left in the forest; chain of command answers to Lucius's seal ring or Corvinus. |
+| Augur Cassia | Per script, alive/present | At Vindolanda. No deviation. |
+| Vercingetorix | **Enemy (Ancient / Bound)** | **NOT AN ALLY, NEVER HAS BEEN AN ALLY.** Not present with party. Ancient enemy bound to unending war against Rome. |
+| Thusnelda | Alive, in village/grove ahead | Völva/seer (he/him), not yet met by party. Believes a willing self-sacrifice closes the divine debt. |
+| Senator Brutus | Off-screen, never appears | Wants spear kept from Rome for senatorial politics. |
+| Mars | Building toward confrontation | Not anti-Rome — pro-war, indifferent to who wins, starved by ~200 years of the Pax Romana, cornered onto this one remaining tribute-line. His only real enemy is destruction. |
 
-**Open threads / mysteries — deliberately not pre-decided:**
-- Contents of Lucius's lockbox (personal, not political — reveal in play, carried by party)
-- Whether Brutus knows his goals align with Mars's, or is being used
-- Whether Vercingetorix's binding can actually be ended by the spear's destruction
-- Whether the two chieftains' cult faction knows it serves Mars, or believes it serves
-  something else Mars is simply wearing
+**Key Active Items & Conditions:**
+- **The Box Cataclysm (Spear of Mars + Goliath Berserker Greataxe):**
+  - Artificer's containment box holds both weapons. Placed together during night rest.
+  - Box hummed, containing divine resonance; OTHALAN rune burned permanently into the wood grain.
+  - Radiates Mars's presence: **+2 to Intimidation**, **disadvantage on calm diplomacy**, **undead sense the party from further away**.
+  - Night effects resolved: DC 14 Wis save vs 2 corruption points + 1 exhaustion level (no long rest benefit) for closest sleeper; DC 12 Wis save vs Frightened for carrier.
+- **Lucius's Loot Carried by Party:**
+  - Corvinus's secret sealed orders (proof that Corvinus ordered spear destroyed).
+  - Pre-signed Roman citizenship commendation letters for each PC.
+  - Officer's bronze seal ring (authorises Roman documents/commands).
+  - Amber OTHALAN rune token & carved Germanic wooden horse memento.
+  - 15 gold aurei, military tessera.
 
-**Resolved threads (do not re-open):**
-- **Varro's fate** — dead. Killed by Ursula at the gate. Declared "I did this for Rome" before falling. Confirmed Session 3 cold open.
-- **Lucius's fate** — dead. Killed Session 3 (giant spider lure). Does not appear in Sessions 4-5. Guardianship in Session 5 Destroy ending falls solely upon the PCs.
-
-**Session 4 geography (confirmed):**
-- Bog (Farbog) → Germanic village → grove to NORTH / dungeon entrance to SOUTH
-- Party will meet Thusnelda in the village (first encounter with her)
-- Vercingetorix is with the party and knows the dungeon's location — he's been fighting this war 200 years
-- Cult name has NOT been revealed. Party enters the dungeon without knowing what it's called.
-- S4 cheat card continuity check (Speak with Dead, S3) — never happened, moot. Party has spear origin from Mars's direct speech.
-- chapter4.qmd as written starts at dungeon entrance and skips bog/village — run from CAMPAIGN_LOG geography, not chapter4.qmd scene order.
+**Session 5 geography (confirmed):**
+- In front of Farbog → Causeway/Bog Crossing (Wights + Myling) → Germanic Village → Sacred Grove (North) / Dungeon Entrance (South) → Ossuary.
+- Cult name has NOT been revealed.
 
 ---
 
@@ -331,6 +323,40 @@ shape of the story from Mars himself.
 Lucius (via spider lure in the forest). The extended forest journey, bog, village, grove,
 and sacrifice circle from chapter3.qmd did not play out this session. Those scenes are
 unresolved — carry them forward into Session 4 as needed, or treat as skipped.
+
+---
+
+## Session 4: At the Edge of the Farbog — COMPLETE (Played 2026-10-11)
+
+**Actual play record:**
+
+1. **Lucius's Death & Aftermath:**
+   - The ambush in the forest concluded with Lucius dying.
+   - The party thoroughly searched his body and iron lockbox:
+     - **Corvinus's Sealed Orders:** Broken open. Corvinus explicitly ordered Lucius to destroy the spear in secret and never bring it to Rome or let the Senate learn of it.
+     - **Citizenship Commendations:** Formal letters pre-signed by Lucius recommending full citizenship for each party member.
+     - **Personal Items & Rune:** A small Germanic carved wooden horse memento and an amber token carved with the OTHALAN rune.
+     - **Official Authority & Coin:** Officer's bronze seal ring, military tessera, and 15 gold aurei.
+   - **The 4 Guards:** Lucius's surviving legionary escort was left without a commanding officer in the forest. With no officer, their Roman chain of command defaults to Corvinus or whoever presents Lucius's seal ring/orders.
+   - Resolved the character caught and burning in spider silk.
+
+2. **The Box Cataclysm (Spear of Mars + Goliath Berserker Greataxe):**
+   - The Artificer's containment box already contained the Spear of Mars.
+   - During the night rest, the party placed the **Goliath Berserker Greataxe** inside the box with the spear.
+   - The two weapons of war and divine fury resonated. The box held, but hummed with vibrating force, scorching the **OTHALAN rune** permanently into the wood grain.
+   - Mars's aura now bleeds outward from the box:
+     - **+2 to Intimidation** for the party.
+     - **Disadvantage on calm diplomacy** (Persuasion to calm/reassure).
+     - **Undead sense the party from further away** (no surprise rounds on undead without invisibility/silence).
+   - **Overnight Fallout:**
+     - Closest sleeper: DC 14 Wisdom save vs 2 corruption points + 1 level of exhaustion (lost long rest benefit).
+     - Carrier: DC 12 Wisdom save vs Frightened.
+     - Iris was unable to perceive what was happening during the night.
+
+3. **Journey to the Marshes:**
+   - The party marched from the forest camp to the marshlands.
+   - **Current position:** The party halted directly **in front of the Farbog**.
+   - **The Farbog has NOT been crossed yet.** The causeway, the standing stone riddle, the Wights, and the Myling encounter all await as the opening of Session 5.
 
 ---
 
