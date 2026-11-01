@@ -9,15 +9,15 @@ Session 5 continues directly down from Chapter 4's Core Room -- no new dungeon, 
 teleport to a fort arena. Load all three maps before players join; reposition tokens
 scene by scene on the overview/vault maps rather than reloading between scenes.
 
-### Scene → Map → Tokens
+### Scene &rarr; Map &rarr; Grid Scale &rarr; Coordinates &rarr; VBL/MBL
 
-| Scene | Map File | Tokens to Place | Notes |
-|---|---|---|---|
-| Scene 0: The Crystal Is Failing | `Maptool/maps/campaign/S5_The_Wrath_of_Mars/s5_mars_vault_overview.jpg` | All PCs | Narrate the descent; no combat tokens yet. Party carries Lucius's locked iron box. |
-| Scene 1: Sunken Armory / Choking Hall | Same map, zones 2-3 | All PCs, optional [Wraith](https://www.dndbeyond.com/monsters/17064-wraith) ×2 | Optional choke point guards (*MM* p. 302, CR 5, AC 13, HP 67). Only place if party has surplus resources. |
-| Scene 2: Convergence Hall (three-passage choice) | `s5_mars_vault.jpg`, zone 3 | All PCs, [Zombie](https://www.dndbeyond.com/monsters/17069-zombie) ×6 (center passage only) or [Wight](https://www.dndbeyond.com/monsters/17054-wight) ×1 + [Specter](https://www.dndbeyond.com/monsters/17017-specter) ×2 (east passage only) | West passage is a trap + journal. Center is 6 Zombies (*MM* p. 316, CR 1/4, AC 8, HP 22). East is Wight (*MM* p. 300, CR 3, AC 14, HP 45) + Specters (*MM* p. 289, CR 1, AC 12, HP 22). |
-| Scene 3: Vercingetorix's Last Stand | Same map, at the passage into the Sanctum | All PCs, Vercingetorix_Bound ×1 | [Vercingetorix Bound](../npcs/vercingetorix_bound.json) (CR 11, AC 18, HP 150). Tactical Parry, optional 1-on-1 champion's duel, dying secret. |
-| Scene 4: Antechamber of Mars | `s5_mars_confrontation.jpg` | All PCs, Mars ×1, optional Wight ×1 (Session 1 callback) | [Mars Diminished Avatar](../npcs/mars.json) (CR 20, AC 22/16, HP 300). 3-round unmaking ritual dynamically strips his defenses. |
+| Scene | Map File | Grid Scale | Initial Coordinates | VBL &amp; MBL Notes |
+|---|---|:---:|---|---|
+| **Scene 0: Cold Open** | `Maptool/maps/campaign/S5_The_Wrath_of_Mars/s5_mars_vault_overview.jpg` | 70px (5 ft) | PCs: Upper spiral descent (X: 15, Y: 5)<br>Cracking Crystal: (X: 15, Y: 15) | **VBL:** Solid stone shaft walls; crimson light bleeding from cracks.<br>**MBL:** 40-ft drop down central fissure. Party carries Lucius's locked iron box. |
+| **Scene 1: Sunken Armory &amp; Choking Hall** | Same map, zones 2&ndash;3 | 70px (5 ft) | PCs: North stair (X: 15, Y: 22)<br>Ram's-Eye Blade: (X: 15, Y: 28)<br>[Wraith](https://www.dndbeyond.com/monsters/17064-wraith) &times;2: Choking Hall walls (X: 12, Y: 35; X: 18, Y: 35) | **VBL:** Weapon racks grant half-cover; narrow Choking Hall walls block sight around sharp bends.<br>**MBL:** Rusted iron weapon racks; 15-ft corridor width. |
+| **Scene 2: Convergence Hall (3 Passages)** | `s5_mars_vault.jpg`, zone 3 | 70px (5 ft) | PCs: North vestibule (X: 20, Y: 8)<br>West (trap/journal): (X: 10, Y: 24)<br>Center ([Zombie](https://www.dndbeyond.com/monsters/17069-zombie) &times;6): (X: 19&ndash;21, Y: 25&ndash;28)<br>East ([Wight](https://www.dndbeyond.com/monsters/17054-wight) &times;1 + [Specter](https://www.dndbeyond.com/monsters/17017-specter) &times;2): (X: 28&ndash;32, Y: 26) | **VBL:** Thick bedrock dividing walls completely isolate lines of sight between the 3 diverging passages.<br>**MBL:** Bedrock walls; west rune trap boundary. |
+| **Scene 3: Vercingetorix's Last Stand** | Same map, approach to zone 4 | 70px (5 ft) | PCs: Reconvergence arch (X: 20, Y: 40)<br>[Vercingetorix Bound](../npcs/vercingetorix_bound.json) &times;1: Portal arch (X: 20, Y: 46) | **VBL:** Narrow 10-ft portal frames Vercingetorix; darkness beyond into Sanctum.<br>**MBL:** Portal chokepoint held by Vercingetorix (Parry &amp; Dread Spatha reach). |
+| **Scene 4: Antechamber of Mars** | `s5_mars_confrontation.jpg` | 70px (5 ft) | PCs: Threshold arch (X: 25, Y: 45)<br>[Mars Diminished Avatar](../npcs/mars.json) &times;1: Altar (X: 25, Y: 25)<br>4 Chain Winches: N (25, 15), S (25, 35), E (35, 25), W (15, 25)<br>S1 Wight Cameo (optional): Plinth (X: 10, Y: 25) | **VBL:** 12 stone perimeter plinths cast pillars of shadow; circular outer vault perimeter blocks exterior vision.<br>**MBL:** Granite anvil altar (10&times;10 ft block); 4 iron winch housings. Dynamic unmaking ritual drops AC to 16. |
 
 ---
 
@@ -25,11 +25,11 @@ scene by scene on the overview/vault maps rather than reloading between scenes.
 
 | Character | File | Notes |
 |---|---|---|
-| Iris | `Maptool/tokens/players/Iris.rptok` | |
+| Iris | `Maptool/tokens/players/Iris.rptok` | Carries Lucius's locked dispatch box, signet ring, and citizenship letters |
 | Julia Jana | `Maptool/tokens/players/Julia_Jana.rptok` | |
 | Tanit | `Maptool/tokens/players/Tanit_bint_Abdmelqart.rptok` | |
-| Rivia | `Maptool/tokens/players/Rivia_Calida_Mendera.rptok` | |
-| Ursula | `Maptool/tokens/players/Ursula_Günther.rptok` | |
+| Rivia | `Maptool/tokens/players/Rivia_Calida_Mendera.rptok` | Carries the Artificer's box with Spear + Goliath Greataxe; target of Mars's mockery in Scene 4 |
+| Ursula | `Maptool/tokens/players/Ursula_Günther.rptok` | Executed Varro (S1); recovering from Goliath Greataxe possession; axe sealed in box |
 | Brian | `Maptool/tokens/players/Brian.rptok` | |
 
 ---

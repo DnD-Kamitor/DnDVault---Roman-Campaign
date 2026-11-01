@@ -452,3 +452,34 @@ One milestone or major feature per commit. Commit message format:
 
 - Bullet list of changes
 ```
+
+---
+
+## RuFlo Campaign Swarm & Autopilot Integration
+
+This repository is integrated with **RuFlo V3** and the **Guy Sclanders Campaign Swarm**.
+
+### 1. Active Specialized Agents (`.claude/agents/`)
+- `guy-sclanders` (`.claude/agents/core/guy-sclanders.md`): Master D&D 5e session architect, Guy Sclanders' methodology, OGAS dynamics, dramatic questions, pressure cooker, 4-tab table deliverables.
+- `campaign-coordinator` (`.claude/agents/core/campaign-coordinator.md`): Campaign Scrum Master, milestone decomposition, cross-agent dispatch, backlog management.
+- `roman-historian` (`.claude/agents/campaign/roman-historian.md`): 175 AD Roman Britannia, Fort Vindolanda, Cohors I Tungrorum, Latin terms, Etruscan *haruspicina*, augury, Germanic tribes.
+- `dnd-mechanics` (`.claude/agents/campaign/dnd-mechanics.md`): D&D 5e rules engineer, monster stat blocks, CR curves, 6-stage corruption system, DC 13/15/17 knowledge tiers.
+- `npc-persona-director` (`.claude/agents/campaign/npc-persona-director.md`): NPC characterization, OpenWebUI AI personas (`ai_personas/`), dialogue trees, scenario engine.
+- `maptool-cartographer` (`.claude/agents/campaign/maptool-cartographer.md`): MapTool VTT campaigns, `.rptok` token macros, XML stats, lighting/VBL layers.
+- `quarto-publisher` (`.claude/agents/campaign/quarto-publisher.md`): Quarto book publishing (`_quarto.yml`), custom SCSS styling, two-column A4 print modules.
+- `continuity-qa` (`.claude/agents/campaign/continuity-qa.md`): Automated testing guardian, `pytest` suite execution, `CAMPAIGN_LOG.md` continuity.
+
+### 2. Autopilot Persistent Execution Rules & Good Practices
+- **Table Truth First**: Always read `CAMPAIGN_LOG.md` before altering or creating session prep. Live table history (Varro dead, Lucius dead, Spear chest with party) is immutable truth.
+- **Zero False Completion**: Never mark a task or checklist item complete without explicit verification output (`pytest`, `quarto render`, or visual verification of HTML cheat cards).
+- **Four-Tab Table Standard**: Every chapter must provide:
+  1. Cheat Card (`gm_tools/cheat_card_chN.html` — single dark viewport, zero scroll).
+  2. Print Module (`gm_tools/chapterNN_print.html` — A4 two-column printout).
+  3. MapTool Reference (`gm_tools/chapterNN_maptool.qmd` — scene-by-scene maps, tokens, VBL/MBL).
+  4. NPC Cards (`gm_tools/chapterNN_npcs.html` — silhouette, OGAS, voice lines, session state).
+- **Bounded Autopilot Runs**: Always configure limits before enabling autopilot:
+  ```bash
+  ruflo autopilot config --max-iterations 40 --timeout 180
+  ruflo autopilot enable
+  ```
+- **Task Tracking via Markdown Checklists**: Autopilot monitors `file-checklist` from `SCRUM_BACKLOG.md` and active plan files. Flip `- [ ]` to `- [x]` only upon verified completion.

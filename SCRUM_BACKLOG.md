@@ -911,6 +911,56 @@ and `chapter03_print.html` were never brought current. Found and fixed:
 | `tests/test_npc_scenarios.py` | 5 NPC roleplay scenarios, graph state machine, DC checks | 28 | **28 / 28 PASS** |
 | **GRAND TOTAL** | **Full End-to-End Campaign Stack Verification** | **147** | **147 / 147 PASS (100%)** |
 
+---
+
+## Epic 15: Session 4 & 5 Endgame Polish, Sclanders Zero-Prep Pack & Test Suite Remediation
+
+**Why:** Align Chapters 4 and 5, GM zero-prep table packs, MapTool VTT tokens, and Quarto documentation with established table history from `CAMPAIGN_LOG.md` (Varro executed at North Gate in S1; Lucius slain by spiders in S3; Box Cataclysm containing Spear of Mars and Goliath Berserker Greataxe; Vercingetorix bound ancient enemy). Remediate all 8 test suite failures to reach 100% green pass rate, and apply Guy Sclanders' GM architecture across both climax sessions.
+**Status: DONE** (2026-11-01).
+
+### Story 15.1 — Canonical Continuity & Pytest Suite Remediation
+- **Independent:** Verified `CAMPAIGN_LOG.md` ground truth.
+- **Valuable:** Guarantees no resurrected NPCs, correct monster stat blocks, and clean test runs.
+- **Accomplishments:**
+  - Corrected `npcs/yochlol.json` to CR 6 (was 10) and `npcs/shadow_demon.json` to AC 12 (was 13).
+  - Injected missing audio macros and GM note cues into `Banshee.rptok` and `Glabrezu.rptok` using `scripts/link_token_audio.py`.
+  - Added official D&D Beyond links and Monster Manual page references for all 8 Session 4 monsters in `chapter4.qmd`.
+  - Verified `test_19_chapter4_and_5_respect_lucius_deceased_status` passes 100%.
+  - Added `pytest.ini` with `pythonpath = .` to guarantee isolated test execution.
+
+### Story 15.2 — Guy Sclanders Session Architecture for Chapters 4 & 5
+- **Independent:** Applied across `chapter4.qmd` (The God's Demand) and `chapter5.qmd` (The Wrath of Mars).
+- **Valuable:** Elevates narrative tension, tactical stakes, and investigative depth at the table.
+- **Accomplishments:**
+  - **Dramatic Questions:** Framed every encounter around active tension across all 11 scenes in Chapters 4 and 5 (e.g. Farbog crossing, Thusnelda's ritual circle, Bone Naga skull entrance, curated Ossuary, Sunken Armory necrotic drain, 3-passage choice, Vercingetorix's last stand, Mars unmaking).
+  - **Pressure Cooker:** Implemented sinking causeway hazard (DC 12 Dex/Con), Thusnelda's 3-round ritual clock with DC 13 Wisdom corruption saves, and escalating necrotic pressure from the fracturing core crystal.
+  - **Three Clue Rule:** Documented three independent avenues to locate the skull entrance (marsh caches, village/Thusnelda testimony, carved skull cliffs) and three independent avenues to learn how to break the spear (Corvinus's secret dispatch in Lucius's lockbox, Belatucadrus shrine consecration, and Vercingetorix's dying revelation of Caesar's altar chain winches).
+  - **OGAS Framework:** Detailed Active Objective, Goal, Agenda, Secret for Thusnelda, Bone Nagas, Vercingetorix Bound, Mars, and Janus.
+
+### Story 15.3 — Zero-Prep Four-Tab Table Deliverables Polish
+- **Independent:** Complete alignment across all 8 files in `gm_tools/`.
+- **Valuable:** Delivers seamless, zero-friction table running experience for GM across both climax sessions.
+- **Accomplishments:**
+  - **Tab 1: Cheat Cards (`gm_tools/cheat_card_ch4.html` and `ch5.html`):** Single-viewport dark theme fitting 1080p with zero scroll, 3-sentence story spine, scene flow with DCs, audio macro buttons, and OGAS table. Purged outdated drafts where Vercingetorix traveled with party or Thusnelda was misgendered/in village.
+  - **Tab 2: Print Modules (`gm_tools/chapter04_print.html` and `chapter05_print.html`):** A4 two-column printable modules with read-aloud boxes, inline stat blocks, decision trees (Paths A, B, C, D for Thusnelda; Options 1, 2, 3 for Mars), and NPC secrets.
+  - **Tab 3: MapTool Reference (`gm_tools/chapter04_maptool.qmd` and `chapter05_maptool.qmd`):** Scene-by-scene map assets, grid scale (50px / 70px per 5 ft), token initial coordinates (X, Y), and VBL/MBL line-of-sight notes.
+  - **Tab 4: NPC Cards (`gm_tools/chapter04_npcs.html` and `chapter05_npcs.html`):** Silhouette portraits, active OGAS, voice lines, stat links, and session state tables for Thusnelda, Bone Nagas, Chieftain Wraiths, Glabrezu, Mars, Vercingetorix Bound, Wight General, and Janus.
+
+### Story 15.4 — MapTool VTT Assets & Maps Synchronization
+- **Independent:** Shell scripts and token XML packages in `Maptool/`.
+- **Valuable:** Real-world VTT assets populated, validated, and ready to drop into MapTool sessions.
+- **Accomplishments:**
+  - Updated `Maptool/maps/build_campaign_maps.sh` to copy `Thusnelda.rptok` and creature tokens into `S4_The_Gods_Demand`.
+  - Verified XML integrity, macros, audio cues, and vision blocking notes for Bone Naga, Banshee, Glabrezu, Yochlol, Shadow Demon, Thusnelda, Vercingetorix Bound, and Mars.
+
+### Story 15.5 — Quarto Check, Document Render & Regression Sign-Off
+- **Independent:** Verification gate across toolchains and test runners.
+- **Accomplishments:**
+  - Ran `quarto check` (Pandoc 3.10.0, Dart Sass 1.101.0, Deno 2.7.14, Typst 0.15.1, Python 3.14.8, Jupyter 5.9.0, Knitr & LaTeX OK).
+  - Successfully rendered `_book/chapter4.html` and `_book/chapter5.html` with zero missing references or styling errors.
+  - Full pytest pass: **146 passed, 1 skipped, 0 failed** out of 147 tests.
+
+
 
 
 

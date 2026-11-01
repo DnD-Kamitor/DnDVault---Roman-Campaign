@@ -74,10 +74,9 @@
 
 <div id="header">
   <h1>Ch4 — The God's Demand</h1>
-  <span class="sub">L5&rarr;6 &nbsp;·&nbsp; 4&ndash;5 hrs &nbsp;·&nbsp; Farbog &rarr; Village &rarr; Dungeon Entrance &rarr; First Room</span>
+  <span class="sub">L5&rarr;6 &nbsp;·&nbsp; 4&ndash;5 hrs &nbsp;·&nbsp; Farbog &rarr; Village &rarr; Sacred Grove &rarr; Sacrifice Circle &rarr; Skull Entrance &rarr; Ossuary</span>
   <div id="story">
-    Cross the Farbog, reach Thusnelda's village, learn where the dungeon lies (south).
-    Enter. Clear one room. The bulk of the dungeon — and Mars — is Session 5.
+    The party crosses the Farbog alone carrying Lucius's locked dispatch box and the corrupted Spear. At the Sacred Grove, they must race against the clock to halt Thusnelda's ritual suicide before the blood circle activates. Defeating the Bone Nagas at the skull threshold, they breach the curated Ossuary to advance to Level 6.
   </div>
 </div>
 
@@ -85,7 +84,7 @@
   <button class="tab-btn active" onclick="showTab('pre', this)">⚙ Pre-Session</button>
   <button class="tab-btn" onclick="showTab('bog', this)">1 · Farbog</button>
   <button class="tab-btn" onclick="showTab('village', this)">2 · Village</button>
-  <button class="tab-btn" onclick="showTab('grove', this)">3 · Grove ↑</button>
+  <button class="tab-btn" onclick="showTab('grove', this)">3 · Grove &amp; Circle</button>
   <button class="tab-btn" onclick="showTab('s0', this)">4 · Dungeon Approach</button>
   <button class="tab-btn" onclick="showTab('s1s2', this)">5 · Ossuary ★S4 END</button>
   <button class="tab-btn" style="color:#555;border-left:1px solid #333" onclick="showTab('s3s4', this)">S5› Altar/Lock</button>
@@ -105,7 +104,7 @@
     <div class="block-title">Maps — load in sequence</div>
     <div class="setup-line"><span class="lbl">Farbog:</span> <span class="file">s3_farbog_crossing.html</span></div>
     <div class="setup-line"><span class="lbl">Village:</span> <span class="file">s3_germanic_village.html</span></div>
-    <div class="setup-line"><span class="lbl">Grove (optional):</span> <span class="file">s4_sacred_grove.html</span></div>
+    <div class="setup-line"><span class="lbl">Grove &amp; Circle:</span> <span class="file">s4_sacred_grove.html</span></div>
     <div class="setup-line"><span class="lbl">Dungeon approach:</span> <span class="file">SkeletonFortressEntrancePublic.jpg</span></div>
     <div class="setup-line"><span class="lbl">Ossuary (1st room, S4 ends here):</span> <span class="file">Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg</span></div>
     <div class="setup-line" style="color:#555;font-size:0.78em;margin-top:4px">All in: Maptool/maps/campaign/S4_The_Gods_Demand/</div>
@@ -113,11 +112,12 @@
   <div class="block">
     <div class="block-title">Continuity — confirmed before running</div>
     <ul>
-      <li>Party has full spear origin from Mars's direct speech — no Speak with Dead needed.</li>
-      <li><span class="warn">Cult name NOT yet revealed.</span> Party enters blind. They learn it from the dungeon itself.</li>
-      <li>Tribune Lucius dead (S3, spider lure) — party carries his locked iron box. Corvinus and Cassia at fort.</li>
-      <li>Party has never met Thusnelda — this session is first contact (Scene 2, village).</li>
-      <li>Vercingetorix is with the party and knows where the dungeon is — 200-year war, he knows.</li>
+      <li>Party travels alone. Tribune Lucius dead (S3 spider lure) — party carries his locked iron box, seal ring, and citizenship letters. Corvinus's secret orders: destroy spear in field.</li>
+      <li>Centurion Varro dead (S1 gate execution). Legate Corvinus &amp; Augur Cassia stayed at Fort Vindolanda.</li>
+      <li>Vercingetorix is an ancient enemy bound to eternal war, defeated at fort in S3, waiting in subterranean vault below — <span class="warn">NOT with party!</span></li>
+      <li><span class="warn">Cult name NOT yet revealed.</span> Party enters blind; discovers source in dungeon.</li>
+      <li><span class="warn">Box Cataclysm (Rivia's Fatal Mistake):</span> Rivia placed Spear of Mars into Artificer's box under dark influence; after Ursula's battle possession, Rivia put Ursula's Goliath Greataxe inside thinking it would nullify the magic. Dead wrong — resonated violently, scorched OTHALAN rune into wood. Radiates aura: <strong>+2 Intimidation</strong>, <strong>disadv on calm diplomacy</strong> (calming Thusnelda in Scene 3 unless kept 30+ ft away), <strong>undead sense party from double range</strong>.</li>
+      <li>Party has never met Thusnelda — male völva (he/him), left village at dawn for grove ritual.</li>
     </ul>
   </div>
 </div>
@@ -148,7 +148,7 @@
   <div class="block-title">Scene 1 — Farbog Crossing &nbsp;<span style="color:#555;font-size:0.85em">map: s3_farbog_crossing.html</span></div>
   <div class="ra">The forest floor turns to water. Dead trees lean at angles, draped in something grey that used to be moss. Ahead, a path of flat stones vanishes under the surface and reappears on the far bank.</div>
 </div>
-<div class="clock"><strong>Bog hazard:</strong> Off the stone path — DC 12 Str or sink, restrained; DC 14 Athletics to pull free. The stones are always safe but narrow (single file).</div>
+<div class="clock"><strong>Bog hazard:</strong> Off the stone path — DC 12 Str or sink, restrained; DC 14 Athletics to pull free. The stones are always safe but narrow (single file). <span class="warn">Box Aura:</span> Undead sense the party from double range; group Stealth DC 14 at disadvantage if box carried unshielded.</div>
 <div class="block">
   <div class="block-title">Encounter — Bog Spirits</div>
   <div class="ho"><strong>1 × Wight (Vaettir, HP 45, AC 14) + 1 × Will-o-Wisp (HP 22, AC 19) + 1 × Specter (HP 22, AC 12):</strong> Will-o-Wisp lures one PC off-path first (Insight DC 13 to recognize bait). Vaettir rises mid-crossing. Specter circles. Radiant damage ends the Vaettir permanently.</div>
@@ -164,45 +164,56 @@
 <!-- ═══ VILLAGE ═══ -->
 <div id="tab-village" class="tab-pane">
 <div class="block">
-  <div class="block-title">Scene 2 — Germanic Village &nbsp;<span style="color:#555;font-size:0.85em">map: s3_germanic_village.html</span></div>
-  <div class="ra">Longhouses around a central fire pit. Children stop. A woman comes out from the largest building, unhurried. She already knows why you are here.</div>
+  <div class="block-title">Scene 1 — Germanic Village &nbsp;<span style="color:#555;font-size:0.85em">map: s3_germanic_village.html</span></div>
+  <div class="ra">The village smells of woodsmoke and old bread. Longhouses stand solid, but half the doors stand open on empty rooms. A woman stops grinding grain. A child runs inside. An old man at the fire does not look up. Whatever took this village apart was not a raid; it just thinned.</div>
 </div>
 <div class="block">
-  <div class="block-title">Thusnelda — <em>First Contact</em></div>
-  <table>
-    <tr><td class="k">Objective</td><td class="v">Confirm the party intends to end the spear, not take it</td></tr>
-    <tr><td class="k">Goal</td><td class="v">Give them what they need to reach the dungeon and survive it</td></tr>
-    <tr><td class="k">Secret</td><td class="v">Her bloodline sealed the spear 200 years ago. She is the last who knows the chain-winch mechanism.</td></tr>
-    <tr><td class="k">Voice</td><td class="v">"You have already paid. I want to know if you know what for."</td></tr>
-  </table>
-</div>
-<div class="block">
-  <div class="block-title">Intel she shares (freely, if party is honest)</div>
+  <div class="block-title">Dramatic Question &amp; Villager Intel</div>
+  <p class="now"><strong>Dramatic Question:</strong> Can the party earn the villagers' trust to discover where Thusnelda went before his sacrifice is complete?</p>
   <ul>
-    <li><strong>Geography:</strong> Grove is north — sacred, do not disturb unless you need to. <strong>Dungeon entrance is south</strong>, half a day.</li>
-    <li><strong>The cult:</strong> Two chieftains from the raid. They have been feeding something in that dungeon for months. She does not know its name. Neither does the party — and that is correct.</li>
-    <li><strong>The dungeon:</strong> Vercingetorix knows the layout. She knows the seal mechanism — four iron chain winches at the granite altar, Caesar's engineers built them. That is how the spear was bound.</li>
-    <li><strong>Warning:</strong> Whatever is at the bottom is not Mars. It answers to his name. That is not the same thing.</li>
+    <li><strong>Thusnelda's Departure:</strong> Their venerable völva (he/him) took a ritual blade and walked north to the sacred grove before dawn to "settle the gods' debt". Three villagers followed and returned terrified.</li>
+    <li><strong>The Chieftains:</strong> Two clan chieftains led their warbands south months ago down the old offering path and never returned.</li>
+    <li><strong>DC 13 Persuasion / History:</strong> Thusnelda is of ancient lineage and has read the omens unerringly for twenty years. His conviction is total and deliberate, not madness.</li>
   </ul>
 </div>
-<div class="note">Vercingetorix and Thusnelda know each other. They have been on the same side of this for 200 years from opposite directions. Let that land quietly.</div>
+<div class="note">The party travels alone. Tribune Lucius's locked dispatch box and signet ring in their pack carry Roman citizenship letters and Corvinus's secret mandate to destroy the spear.</div>
 </div>
 
 <!-- ═══ GROVE ═══ -->
 <div id="tab-grove" class="tab-pane">
 <div class="block">
-  <div class="block-title">Scene 3 — Sacred Grove (optional, north of village) &nbsp;<span style="color:#555;font-size:0.85em">map: s4_sacred_grove.html</span></div>
-  <div class="ra">Ancient oaks. Something has been here far longer than the village. A standing stone at the centre carries the same rune Vercingetorix has not spoken aloud since Alesia.</div>
+  <div class="block-title">Scene 2 &amp; 3 — Sacred Grove &amp; Sacrifice Circle &nbsp;<span style="color:#555;font-size:0.85em">map: s4_sacred_grove.html</span></div>
+  <div class="ra">Ancient oaks rise around a weathered stone shrine with two faces carved into one rock — Roman Belatucadrus over older Germanic marks, smeared with fresh ash. Just beyond, seven standing stones ring a blood-soaked clearing.</div>
+</div>
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Scene 2: Belatucadrus Shrine</div>
+    <ul>
+      <li><strong>Religion DC 13:</strong> Celtic/Roman syncretism. Ash obscures Roman features.</li>
+      <li><strong>OTHALAN Rune:</strong> Matches Lucius's amber token and Session 1 vault seal.</li>
+      <li><strong>Consecration:</strong> 10-minute prayer grants <em>Belatucadrus blessing</em>: advantage on damage rolls vs blood cult creatures; weapon counts as magical in the Ossuary.</li>
+    </ul>
+  </div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">Scene 3: The Ritual Sacrifice Circle</div>
+    <p class="now"><strong>Dramatic Question:</strong> Can the party stop Thusnelda's ritual suicide before the blood circle activates?</p>
+    <div class="clock"><strong>Pressure Cooker:</strong> Started at dawn; 3 rounds to fatal cut. DC 13 Wis save vs 1 temp corruption each round inside circle.</div>
+  </div>
+</div>
 </div>
 <div class="block">
-  <div class="block-title">What's here</div>
-  <ul>
-    <li><strong>Dryad guardian (HP 22, AC 11):</strong> Does not fight unless the grove is threatened. Speaks to druids or those who approach without weapons drawn. She confirms the dungeon is the wound the grove has been bleeding around for two centuries.</li>
-    <li><strong>Belatucadrus shrine:</strong> A weapon consecrated here deals radiant damage to undead for 1 hour. Relevant for the Vaettir in the bog (if not yet fought) and Vercingetorix Bound in S5.</li>
-    <li><strong>OTHALAN rune on standing stone:</strong> Religion DC 13 — rune of inheritance. Vercingetorix will go very still if he reads it.</li>
-  </ul>
+  <div class="block-title">Intervention Paths (Thusnelda, Völva Seer) &mdash; <span class="warn">Box Penalty: Disadv on Persuasion if within 30 ft!</span></div>
+  <table>
+    <tr><td class="k">Path A: Evidence (DC 14 Persuasion)</td><td class="v">Show cult cloth, tally stick, or symbol (advantage). Convinces him the hunger is manufactured by cult rites, not gods. Disadv if Artificer's box within 30 ft! He stops and waits at dungeon mouth.</td></tr>
+    <tr><td class="k">Path B: No Evidence (DC 18 Persuasion)</td><td class="v">Very hard. Overcomes 20 years of prophetic conviction through sheer rhetorical force. Disadv if box within 30 ft!</td></tr>
+    <tr><td class="k">Path C: Physical Restraint (DC 13 Ath/Acro)</td><td class="v">Grapple/Disarm knife. He struggles without attacking party; buys time for Path A dialogue.</td></tr>
+    <tr><td class="k">Path D: No Intervention / Failure</td><td class="v">Completes cut. Dies in 1 hour without healing magic. Grove blessing lost; party loses guide.</td></tr>
+  </table>
 </div>
-<div class="dec"><strong>Don't force it:</strong> Grove is optional. If party wants to push south immediately, let them. The Belatucadrus weapon blessing is a nice-to-have, not a required unlock.</div>
+<div class="clue"><strong>Intel Unlocked (if stopped):</strong> Dungeon entrance is south down the old offering path. <em>"The first room below makes the dead stay. Someone sorted the bones... someone is proud of that work."</em></div>
 </div>
 
 <!-- ═══ DUNGEON APPROACH (was Scene 0) ═══ -->
@@ -316,20 +327,34 @@
 <div class="grid2">
 <div>
   <div class="block">
-    <div class="block-title">The Two Chieftains (Wraiths)</div>
-    <div class="setup-line"><strong>O:</strong> Feed the war-god who could give lasting victories</div>
-    <div class="setup-line"><strong>G:</strong> Bound to the altar, tragic remnants reliving their sacrifice</div>
-    <div class="setup-line"><strong>A:</strong> Mournful, enraged by their betrayal</div>
-    <div class="setup-line"><strong>S:</strong> Confesses that Mars demanded endless blood and gave only starvation</div>
+    <div class="block-title">Thusnelda (Völva Seer)</div>
+    <div class="setup-line"><strong>O:</strong> End the divine hunger consuming his clan's future</div>
+    <div class="setup-line"><strong>G:</strong> Complete self-sacrifice at the stone circle</div>
+    <div class="setup-line"><strong>A:</strong> Bleeding since dawn; 3 rounds to fatal cut; yields to evidence</div>
+    <div class="setup-line"><strong>S:</strong> Cult rites poisoned the spirit land; his sacrifice would do nothing</div>
+  </div>
+  <div class="block">
+    <div class="block-title">The Bone Nagas &amp; Skeletons</div>
+    <div class="setup-line"><strong>O:</strong> Guard the skull entrance into the Ossuary</div>
+    <div class="setup-line"><strong>G:</strong> Bottleneck and destroy intruders on the narrow stair</div>
+    <div class="setup-line"><strong>A:</strong> Hold Person / Ray of Enfeeblement; animate 4 Skeletons on init 20</div>
+    <div class="setup-line"><strong>S:</strong> Vulnerable to bludgeoning; placed by chieftains to guard bones</div>
   </div>
 </div>
 <div>
   <div class="block">
-    <div class="block-title">Glabrezu (Sanctum Guardian)</div>
+    <div class="block-title">The Two Chieftains (Wraiths)</div>
+    <div class="setup-line"><strong>O:</strong> Feed the war-god who could give lasting victories</div>
+    <div class="setup-line"><strong>G:</strong> Bound to the altar, tragic remnants reliving their sacrifice</div>
+    <div class="setup-line"><strong>A:</strong> Mournful, enraged by their betrayal; Sunlight Sensitivity</div>
+    <div class="setup-line"><strong>S:</strong> Confesses that Mars demanded endless blood and gave only starvation</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Glabrezu (Core Room Guardian)</div>
     <div class="setup-line"><strong>O:</strong> Safeguard the starvation focus binding the lower vaults</div>
     <div class="setup-line"><strong>G:</strong> Siphon mortal lives into the subterranean conduit</div>
-    <div class="setup-line"><strong>A:</strong> Arrogant, mocking Roman legionary discipline</div>
-    <div class="setup-line"><strong>S:</strong> The focus cannot break from above; the god's anchor lies beneath</div>
+    <div class="setup-line"><strong>A:</strong> Opens with Darkness over dais; grapples front-liners</div>
+    <div class="setup-line"><strong>S:</strong> Focus cannot break from above; Mars's anchor lies beneath</div>
   </div>
 </div>
 </div>

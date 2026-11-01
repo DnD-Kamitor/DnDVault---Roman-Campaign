@@ -29,8 +29,10 @@ party stepping into the Ossuary. They advance to Level 6.
 
 - **Strong Opening:** Start mid-movement. The party is already in the bog, not walking toward it.
 - **Never Present Villain, Now Felt:** The cult's corruption is visible before the dungeon door. The sacrifice circle shows what the cult's blood-magic did to ordinary Germanic faith.
-- **Pressure Cooker:** Thusnelda's ritual has a clock. She has been in that circle since dawn. The party doesn't have unlimited time to talk.
-- **Three Clue Rule:** Three independent confirmations this dungeon is the right target -- supply caches at the marsh, cult markings on the sacrifice circle stones, Thusnelda's knowledge of where the chieftains went.
+- **Pressure Cooker:** Thusnelda's ritual has a clock. He has been in that circle since dawn. The party has exactly 3 rounds to intervene before the bloodletting becomes irreversible. Each round inside the circle forces a DC 13 Wisdom saving throw against ambient corruption.
+- **Three Clue Rule:** 
+  - *Locating the Vault Entrance:* Three independent avenues confirm the target — (1) supply caches and cult tally sticks at the Farbog marsh bank, (2) Thusnelda and village elders pointing south down the ancient offering path, and (3) the giant skull carved into the hillside with cult runes visible on the entrance arch.
+  - *Learning How to Break the Spear:* (1) Corvinus's secret dispatch found in Lucius's lockbox, (2) consecration at the Belatucadrus shrine / OTHALAN rune lore, and (3) Thusnelda's lore on the four chain winches forged by Caesar's engineers at the granite anvil altar.
 - **Meaningful Choices:** Do they stop Thusnelda by force, by argument, or not at all? All three paths have real consequences.
 
 </details>
@@ -46,8 +48,10 @@ party stepping into the Ossuary. They advance to Level 6.
 
 | Question | Answer affects |
 |---|---|
+| Who is with the party? | The party travels alone. Tribune Lucius died in Session 3; his personal lockbox and papers are carried by the party. Corvinus stayed at the fort. The party operates as an independent strike unit behind enemy lines. |
 | What does the party find on Lucius's body? | Iron lockbox (key on cord at his neck). Inside: pre-written citizenship commendation letters for each PC, a carved wooden horse (Germanic craft), one amber rune token. On his person: officer's seal ring, sealed orders from Corvinus (if opened: Lucius was ordered to destroy the spear quietly, never bring it to Rome), 15 gold aurei, military tessera, gladius, vine staff. |
 | Has the cult name been revealed to the party? | No. The party does not yet know the cult's name. Do not use it in read-aloud. Refer to "the blood cult" only in DM notes. |
+| What is the state of the Artificer's box? | **The Box Cataclysm (Rivia's Fatal Mistake):** Rivia placed the Spear of Mars into the box under the subtle influence of its dark energy. After Ursula was possessed by the Goliath Berserker Greataxe in the forest battle, Rivia mistakenly believed placing the greataxe into the containment box would nullify its dark magic. Instead, the two weapons resonated violently, scorching the OTHALAN rune into the wood. The box radiates Mars's aura: **+2 to Intimidation**, **disadvantage on calm diplomacy** (affects calming Thusnelda in Scene 3 unless kept 30+ ft away), and **undead sense the party from double range** (no surprise rounds on undead in Scene 0). |
 | What is each PC's corruption level entering this session? | The sacrifice circle has a passive corruption effect on high-corruption characters. Note who is at 3+. |
 | Did anyone pick up the cult symbol in the fort attack (Session 3)? | If yes, Thusnelda recognises it when shown and it grants advantage on the Persuasion check in Scene 3. |
 
@@ -71,6 +75,10 @@ party stepping into the Ossuary. They advance to Level 6.
 
 <details>
 <summary><strong>Scene 0: The Farbog Crossing</strong></summary>
+
+**Dramatic Question:** Can the party cross the bone causeway without waking the drowned Wights beneath the glowing black water?
+
+**Pressure Cooker (Sinking Causeway):** The bone causeway is unstable and decaying. For every 2 rounds the party lingers or fights upon the causeway, the packed bones sink 6 inches into the corrosive mire. After 4 rounds, the surface becomes difficult terrain (DC 12 Dexterity check to avoid slipping into the water), and glowing vapors force a DC 12 Constitution save against 1 level of temporary exhaustion.
 
 The party arrives at the Farbog -- a wide marsh glowing cold green in daylight. A bone
 causeway runs across it. At the far side, the hillside opens in a carved skull twenty
@@ -109,6 +117,10 @@ The answer is **the hunger** -- or any answer meaning "hollow faith," "false dev
 The Wights are dormant while the glowing water is undisturbed. They sense warmth and
 movement in the water, not on the bone causeway itself. If the party moves slowly and
 stays on the causeway, they may pass without waking them.
+
+::: {.dm-note}
+**Box Cataclysm Detection:** Because of Rivia's blunder combining the Spear of Mars with Ursula's possessed Goliath Greataxe in the containment box, Mars's aura actively pulses outward. Undead sense the party from double normal range. The group DC 14 Stealth check is made at **disadvantage** if the box is carried openly without being wrapped in heavy cloth, lead foil, or submerged in protective dampening.
+:::
 
 **DC 14 group Dexterity (Stealth) check** -- more than half must succeed. On success: the
 party crosses in silence, Wights never rise, no combat. On failure -- or if anyone
@@ -154,6 +166,8 @@ the black water when disturbed.
 <details>
 <summary><strong>Scene 1: The Germanic Village</strong></summary>
 
+**Dramatic Question:** Can the party earn the trust of the abandoned villagers to discover where Thusnelda went before his sacrifice is complete?
+
 Past the Farbog, the forest opens into a Germanic settlement -- longhouses around a
 central fire pit, fewer people than the buildings suggest. Thusnelda is not here; he
 left at dawn for the grove.
@@ -190,6 +204,8 @@ left at dawn for the grove.
 <details>
 <summary><strong>Scene 2: The Sacred Grove</strong></summary>
 
+**Dramatic Question:** Can the party decipher the ancient Belatucadrus shrine and consecrate a weapon before reaching the circle of sacrifice?
+
 North of the village, a stand of ancient oaks around a stone shrine. The Belatucadrus
 shrine the party may have heard of in Session 3 is here -- a weathered stone face, not
 quite Roman Mars, not quite Germanic Tiwaz.
@@ -223,6 +239,10 @@ here before he sees them. Give them one round of observation before he notices.
 
 <details>
 <summary><strong>Scene 3: The Ritual Sacrifice Circle</strong></summary>
+
+**Dramatic Question:** Can the party stop Thusnelda's ritual suicide before the blood circle activates?
+
+**Pressure Cooker (The Ritual Clock):** Thusnelda has been bleeding into the circle since dawn. The party has exactly 3 rounds to intervene before the bloodletting becomes irreversible. Each round spent inside the circle forces a DC 13 Wisdom saving throw against 1 temporary corruption point as the blood-marked stones pulse with necrotic hunger.
 
 This is the session's dramatic centrepiece. Thusnelda stands in the centre of the stone
 circle, barefoot, a ritual knife in his right hand and his left wrist already scored.
@@ -259,6 +279,10 @@ guide to what is happening in this forest.
 ---
 
 **Running the intervention:** the party has three paths.
+
+::: {.dm-note}
+**Box Cataclysm Diplomacy Penalty:** The Artificer's box radiating the resonating fury of the Spear of Mars and Ursula's possessed Goliath Greataxe imposes **disadvantage on calm diplomacy** (Persuasion checks to calm, reassure, or de-escalate). If the box is carried within 30 feet of Thusnelda, he feels the radiating bloodlust of Mars, smells the slaughter trapped in the wood, and recoils with hostility, imposing disadvantage on Path A and Path B rolls! If the party has the foresight to leave the box with a companion outside the 7-stone ring (30+ feet away), this penalty is averted.
+:::
 
 <details>
 <summary><strong>Path A: Persuasion (with evidence)</strong></summary>
@@ -358,6 +382,8 @@ the path meant. He gives them one more piece of information freely:
 <details>
 <summary><strong>Scene 4: The Dungeon Entrance  ★ COMBAT</strong></summary>
 
+**Dramatic Question:** Can the party defeat the Bone Nagas and shatter the skeletal guardians before being trapped on the narrow entrance stairway?
+
 South of the standing stone circle, past the old offering path, the hillside opens in a
 carved skull twenty feet across. The stairs descend from between its teeth. The Bone
 Nagas are coiled just inside -- guardians placed here precisely because this is the only
@@ -389,6 +415,8 @@ pattern as the cloth from the marsh cache. This is the right place.
 
 <details>
 <summary><strong>Scene 5: The Ossuary  ★ SESSION 4 ENDS HERE</strong></summary>
+
+**Dramatic Question:** Can the party interpret the curated ossuary's ritual pattern to discover the safe descent into the lower vault?
 
 Past the skull entrance, beyond the fallen Nagas, the dungeon proper begins. The first
 room is circular. No combat. This is what the party finds when they finally get inside.
@@ -445,6 +473,24 @@ threshold, at the edge of the Blood-Growth Rooms.
 | Was the Belatucadrus shrine blessed? | If yes: one PC carries a consecrated weapon into S5. Tell them it matters but not how yet. |
 | What is each PC's corruption level? | The sacrifice circle has a minor passive field -- any PC at corruption 3+ who stood inside the circle for more than one round takes 1 temporary corruption point (no save, ambient). |
 | Did the party find all three confirmations (cloth, tally stick, cult markings at entrance)? | If they missed one, leave it findable in the Blood-Growth Rooms at the start of S5. |
+
+</details>
+
+<details>
+<summary><strong>Session 4 Official Monster Manual & D&D Beyond Index</strong></summary>
+
+The following creatures are referenced across Session 4 encounters, environmental hazards, and the dungeon threshold:
+
+| Creature | Challenge (CR) | Official Source & D&D Beyond Link | Encounter & Tactical Role |
+|---|:---:|---|---|
+| **Banshee** | CR 4 | *Monster Manual* p. 23 — [Banshee](https://www.dndbeyond.com/monsters/16799-banshee) | Farbog wailing spirit; audio cue `s4_banshee_dread_mother.mp3`. |
+| **Bone Naga** | CR 4 | *Monster Manual* p. 233 — [Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga) | Scene 4 entrance guardians; coiled at the skull threshold. |
+| **Skeleton** | CR 1/4 | *Monster Manual* p. 272 — [Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton) | Scene 4 entrance bone minions; bludgeoning vulnerability. |
+| **Yochlol** | CR 6 | *Monster Manual* p. 65 — [Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol) | Blood-growth rooms; shapechanging spider-demon. |
+| **Dretch** | CR 1/4 | *Monster Manual* p. 57 — [Dretch](https://www.dndbeyond.com/monsters/16847-dretch) | Blood-growth rooms; fetid cloud area hazard. |
+| **Shadow Demon** | CR 4 | *Monster Manual* p. 64 — [Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon) | Minor altar ambusher; shadow stealth in darkness. |
+| **Wraith** | CR 5 | *Monster Manual* p. 302 — [Wraith](https://www.dndbeyond.com/monsters/17064-wraith) | Chieftains' tombs; audio cue `s4_wraith_chieftain_confession.mp3`. |
+| **Glabrezu** | CR 9 | *Monster Manual* p. 60 — [Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu) | Core Room final guardian; audio cue `s4_glabrezu_core_entrance.mp3`. |
 
 </details>
 

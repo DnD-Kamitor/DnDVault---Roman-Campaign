@@ -258,11 +258,16 @@ The Farbog has NOT been crossed yet. Session 5 is next.
 | Mars | Building toward confrontation | Not anti-Rome — pro-war, indifferent to who wins, starved by ~200 years of the Pax Romana, cornered onto this one remaining tribute-line. His only real enemy is destruction. |
 
 **Key Active Items & Conditions:**
-- **The Box Cataclysm (Spear of Mars + Goliath Berserker Greataxe):**
-  - Artificer's containment box holds both weapons. Placed together during night rest.
-  - Box hummed, containing divine resonance; OTHALAN rune burned permanently into the wood grain.
-  - Radiates Mars's presence: **+2 to Intimidation**, **disadvantage on calm diplomacy**, **undead sense the party from further away**.
-  - Night effects resolved: DC 14 Wis save vs 2 corruption points + 1 exhaustion level (no long rest benefit) for closest sleeper; DC 12 Wis save vs Frightened for carrier.
+- **The Box Cataclysm (Spear of Mars + Goliath Berserker Greataxe — Rivia's Fatal Mistake):**
+  - **Origin:** Rivia originally placed the Spear of Mars inside the Artificer's containment box, believing she was safely securing it; in reality, she was already acting under the insidious influence of its dark energy.
+  - **Ursula's Possession & The Greataxe:** During the forest combat, Ursula was overcome and possessed by the dark martial frenzy of the Goliath Berserker Greataxe.
+  - **The Blunder:** Following the battle, Rivia mistakenly deduced that locking the greataxe into the box alongside the spear would "nullify" or contain the dark magic. She was disastrously wrong.
+  - **The Resonance:** Instead of nullification, the two weapons of blood and divine fury catalyzed each other into a violent resonance loop. The box hummed with vibrating force, scorching the **OTHALAN rune** permanently into the wood grain.
+  - **Mars's Radiating Aura:**
+    - **+2 to Intimidation** for the party.
+    - **Disadvantage on calm diplomacy** (Persuasion to calm, reassure, or de-escalate — directly hampers calming Thusnelda unless the box is kept 30+ ft away).
+    - **Undead sense the party from further away** (double normal passive detection radius; undead cannot be surprised).
+  - **Night effects resolved:** DC 14 Wis save vs 2 corruption points + 1 exhaustion level (no long rest benefit) for closest sleeper; DC 12 Wis save vs Frightened for carrier. Iris perceived nothing anomalous during the night.
 - **Lucius's Loot Carried by Party:**
   - Corvinus's secret sealed orders (proof that Corvinus ordered spear destroyed).
   - Pre-signed Roman citizenship commendation letters for each PC.
@@ -340,14 +345,15 @@ unresolved — carry them forward into Session 4 as needed, or treat as skipped.
    - **The 4 Guards:** Lucius's surviving legionary escort was left without a commanding officer in the forest. With no officer, their Roman chain of command defaults to Corvinus or whoever presents Lucius's seal ring/orders.
    - Resolved the character caught and burning in spider silk.
 
-2. **The Box Cataclysm (Spear of Mars + Goliath Berserker Greataxe):**
-   - The Artificer's containment box already contained the Spear of Mars.
-   - During the night rest, the party placed the **Goliath Berserker Greataxe** inside the box with the spear.
-   - The two weapons of war and divine fury resonated. The box held, but hummed with vibrating force, scorching the **OTHALAN rune** permanently into the wood grain.
+2. **The Box Cataclysm (Spear of Mars + Goliath Berserker Greataxe — Rivia's Blunder):**
+   - The Artificer's containment box already contained the Spear of Mars, which Rivia had previously deposited inside believing it was a safe measure, though she was unconsciously compelled by the spear's corrupting psychic presence.
+   - During the forest battle, Ursula was gripped and possessed by the violent battle fury of the Goliath Berserker Greataxe.
+   - In the aftermath, Rivia erroneously believed that placing Ursula's greataxe into the containment box would "nullify" the dark magic and suppress the curse. She was disastrously wrong.
+   - The two artifacts of bloodshed resonated violently within the enclosed wood. The box held, but began vibrating with a deep sub-bass hum, scorching the **OTHALAN rune** permanently into the grain.
    - Mars's aura now bleeds outward from the box:
      - **+2 to Intimidation** for the party.
-     - **Disadvantage on calm diplomacy** (Persuasion to calm/reassure).
-     - **Undead sense the party from further away** (no surprise rounds on undead without invisibility/silence).
+     - **Disadvantage on calm diplomacy** (Persuasion to calm/reassure/negotiate peacefully — critical in Scene 3 with Thusnelda).
+     - **Undead sense the party from further away** (double passive detection range; no surprise rounds on undead without magical concealment).
    - **Overnight Fallout:**
      - Closest sleeper: DC 14 Wisdom save vs 2 corruption points + 1 level of exhaustion (lost long rest benefit).
      - Carrier: DC 12 Wisdom save vs Frightened.

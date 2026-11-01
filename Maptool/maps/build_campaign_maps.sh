@@ -257,8 +257,8 @@ cp "$DG/bloodcult.jpg" "$S/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg" 2>/de
 cp "$DG/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg" "$S/" 2>/dev/null \
   && echo "   + CastleCoreRoom" || echo " [miss] CastleCoreRoom"
 
-# NPCs: Vercingetorix guides party to dungeon entrance (Lucius fell in S3; Corvinus/Cassia stay at fort; Varro dead)
-copy_npc "Vercingetorix_the_Red" "$S"
+# NPCs: Thusnelda at the Sacred Grove sacrifice circle (Lucius fell in S3; Corvinus/Cassia stay at fort; Varro dead)
+copy_npc "Thusnelda" "$S"
 
 # Creatures: the Blood Cult Dungeon's monster roster (all real Monster Manual
 # demons/undead, no generic filler -- see SCRUM_BACKLOG.md Epic 8)

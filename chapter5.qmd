@@ -18,9 +18,9 @@ This session ends the campaign. There is no clean victory available. Destroy the
 <summary><strong>Guy Sclanders' Principles Applied</strong></summary>
 
 - **Strong Opening:** The crystal is failing before anyone has finished catching their breath from Chapter 4. There is no calm scene to open on.
-- **Pressure Cooker:** Every extra round spent fighting through the dungeon is a round Mars spends growing stronger below. The dungeon does not wait for the party to be ready.
+- **Pressure Cooker:** Every extra round spent fighting through the vault is a round Mars spends growing stronger below. The failing core crystal continuously vibrates through the stone; ambient necrotic pressure builds with each scene. After 15 rounds of active dungeon time, ambient corruption pulses require DC 14 Constitution saves to avoid 1 level of exhaustion or 1 temporary corruption point.
 - **Meaningful Choices:** The three-passage approach to the Antechamber, and then the ending itself. No safe answer exists for either.
-- **Three Clue Rule:** Three independent paths lead the party to understand what they are actually deciding: the Belatucadrus shrine consecration (if visited earlier in the campaign), the wax tablet and contract-token history from Chapter 1, and Vercingetorix's own confession when he finally falls.
+- **Three Clue Rule:** Three independent paths reveal how to survive and unmake the spear: (1) Corvinus's secret orders found in Lucius's lockbox ("destroy it in the field upon the ancient altar"), (2) the Belatucadrus shrine consecration or the ram's-eye blade from the Sunken Armory, and (3) Vercingetorix's dying revelation of the four chain winches around the granite anvil altar.
 
 </details>
 
@@ -40,6 +40,7 @@ This session ends the campaign. There is no clean victory available. Destroy the
 | S3 | Vercingetorix put down at the fort | Confirms his return is due here as his true final stand -- see Scene 3. If he was somehow destroyed permanently already (unlikely per the campaign's design, but check), replace Scene 3 with a shorter scene: his empty armor is found in the Convergence Hall, and Mars mentions him bitterly in Scene 4 instead. |
 | S3-S4 | Whether the party visited the Belatucadrus shrine and had a weapon consecrated there | If yes, that weapon deals full damage against Vercingetorix's Relentless trait and grants advantage on damage rolls against Mars in Scene 4. Tell the player who carries it, once, plainly. |
 | S4 | Corvinus's real position tested | If the party trusted him and he proved genuine (he wants the spear destroyed, quietly), his name carries weight if invoked during the "give to Rome" ending -- Rome's couriers honor a Corvinus endorsement. If the party never tested it, this does not come up. |
+| S4 | The Box Cataclysm (Rivia's Blunder) | Rivia locked Ursula's possessed Goliath Greataxe in the containment box with the spear thinking it would nullify the dark magic. Mars smells the resonance immediately in Scene 4; the box vibrates with divine heat. |
 | Any | Corruption level 5 PC exists | Mars addresses them directly and by their worst private moment, unprompted. See DM Notes. |
 
 </details>
@@ -72,6 +73,8 @@ Maps are in `Maptool/maps/campaign/S5_The_Wrath_of_Mars/`. All three are custom 
 <details>
 <summary><strong>Scene 0: Cold Open — The Crystal Is Failing</strong></summary>
 
+**Dramatic Question:** Can the party begin the descent into the subterranean vault before the fracturing crystal collapses the upper shaft?
+
 **Read aloud:**
 
 > *The crystal-star's light does not fade when the demon guarding it falls. It gets worse. Cracks spread across its faces like frost across a window, and each one lets out a note too low to be a sound, felt in the teeth more than heard. The floor of the Core Room is warm. Somewhere below, something that has been sleeping under all this weight is starting to notice you.*
@@ -90,6 +93,8 @@ The crystal cannot be destroyed here; Chapter 4 already established this. The pa
 <details>
 <summary><strong>Scene 1: The Sunken Armory and the Choking Hall</strong></summary>
 
+**Dramatic Question:** Can the party push through the necrotic pressure of the Choking Hall without losing maximum HP to the ancient wraiths?
+
 Load `s5_mars_vault_overview.html`. This is zones 2-4 on that map: an upper vault of weapon racks, a narrow corroded passage, and the stair down.
 
 > *The passage narrows fast. Old weapon racks line a room that has not seen a living hand in longer than the fort has stood. Half the blades have rusted to lace. The other half are untouched, as if the room itself decided which ones still mattered. Beyond it, a hall barely three men wide, walls scored with symbols the torchlight will not sit still on.*
@@ -104,6 +109,8 @@ Load `s5_mars_vault_overview.html`. This is zones 2-4 on that map: an upper vaul
 
 <details>
 <summary><strong>Scene 2: The Convergence Hall — Three Passages</strong></summary>
+
+**Dramatic Question:** Which passage will the party risk — the trapped hall of blades, the zombie throng, or the specter-haunted crypt?
 
 Load `s5_mars_vault.html`, zone 3. Three passages merge here before the final approach. The party chooses one; this is a real choice, not a skill-check gate, and each has a genuinely different cost.
 
@@ -122,6 +129,8 @@ There is no wrong answer here, and no answer that avoids a cost. Let the party c
 
 <details>
 <summary><strong>Scene 3: Vercingetorix's Last Stand</strong></summary>
+
+**Dramatic Question:** Can the party defeat Vercingetorix's 200-year relentless fury and learn the secret of the altar winches before their resources are depleted?
 
 He is waiting at the passage into the Sanctum, and he has been waiting since before the party was born.
 
@@ -161,6 +170,8 @@ For one minute, his spirit remains, lucid, and answers up to three questions bef
 <details>
 <summary><strong>Scene 4: The Antechamber of Mars & The Threshold of Janus</strong></summary>
 
+**Dramatic Question:** Can the party bind Mars with Caesar's iron chains and decide the ultimate fate of the spear?
+
 Load `s5_mars_confrontation.html`. Granite altar at the center, chain anchors scarred into the floor, twelve stone plinths ringing the sanctum.
 
 **The Threshold of Janus:** As the party steps into the archway, the air splits like a coin turned on its edge. For a split second, a dual-faced vision flickers in the torchlight -- **Janus**, god of thresholds and doorways, looking backward at the dead who bled for this spear and forward into the centuries yet to come. A silent divine reminder of his word in Session 3: *"Mars is neither good nor evil. He is war itself. Choose how you cross this threshold."*
@@ -172,6 +183,10 @@ Load `s5_mars_confrontation.html`. Granite altar at the center, chain anchors sc
 > *On the dais stands Mars. He is not a distant sky-god today. He is lean, scarred, starved by two centuries of Roman peace, his bronze armor dented and black with dried gore. His eyes burn like coals.*
 
 > *"MORTALS," he says, and the word is not loud, only total. "You have carried my anchor through two ghosts and a king who would not die. Now choose, and choose knowing I will remember which one you make."*
+
+> *His burning gaze fixes upon the Artificer's containment box in Rivia's hands. His scarred mouth twists into a grim, terrible smile as he senses the dark pulse within.*
+
+> *"And you brought me an offering, mortal," his voice vibrates the teeth in your jaw. "My spear, sleeping beside the blood-greataxe of the barbarian woman. You thought your little wooden cage would choke the flame? You fed it. Every heartbeat they spent together drew my eyes straight to you."*
 
 <details>
 <summary><strong>The Session 1 Wight-general's cameo (branch on what actually happened)</strong></summary>
