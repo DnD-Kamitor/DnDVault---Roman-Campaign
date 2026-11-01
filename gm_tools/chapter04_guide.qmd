@@ -3,9 +3,9 @@ title: "GM Session Guide: Chapter 4 (The God's Demand)"
 subtitle: "GM guide — Chapter 4"
 ---
 
-*Vercingetorix named the cult before he was put down at the fort in Session 3. The party now knows what they're looking for: a hidden dungeon in the forest where two of his own chieftains have spent months feeding something they believe is Mars. This session is that dungeon, start to finish.*
+*Session 3 ended with the party moving south through the forest, Lucius dead, carrying his locked box. Vercingetorix is an ancient enemy bound to unending war, not an ally or guide. This session is the journey to the vault's entrance: crossing the Farbog, reaching the Germanic village, confronting Thusnelda in the sacred sacrifice circle, and fighting through the Bone Naga guardian into the Ossuary.*
 
-**Level:** 5 (marsh) &rarr; 6 (rest of dungeon) &rarr; Advance to 7 at session end · **Players:** 6 (Iris, Julia Jana, Tanit, Rivia, Ursula, Brian) · **Time:** 4-5 hrs · **Type:** Dungeon crawl
+**Level:** 5 throughout &rarr; Advance to 6 at session end (after the Ossuary) · **Players:** 6 (Iris, Julia Jana, Tanit, Rivia, Ursula, Brian) · **Time:** 4-5 hrs · **Type:** Wilderness hazard, moral intervention, and dungeon threshold
 
 ---
 
@@ -16,144 +16,105 @@ subtitle: "GM guide — Chapter 4"
 
 | | |
 |---|---|
-| **Central question** | What does devotion to a starving god actually produce, once it succeeds? |
-| **What must happen** | (1) The party crosses the marsh and clears the Blood Cult Dungeon, room by room. (2) They reach the Core Room and learn what the crystal-star focus actually is and what destroying it will cost. |
-| **Player goal** | Cross the marsh, clear the dungeon, defeat the Glabrezu, and learn the shape of Session 5's cost. |
-| **Real stakes** | Whether the party recognizes the chieftains' fate as tragedy rather than just another fight. Whether they learn enough in the Core Room to walk into Session 5 prepared rather than surprised. |
-| **Session peak moment** | The Gathering Hall: the two chieftains, now Wraiths, turn to face the party in silence for one full round before the fight starts. |
-| **Closing image** | The crystal-star focus, examined but unbroken, absorbing every blow thrown at it. The party now knows the name of the place they need to go next. |
+| **Central question** | Can the party stop Thusnelda's ritual suicide before his blood seals the god's awakening, and breach the Bone Naga's ossuary? |
+| **What must happen** | (1) The party crosses the Farbog bone causeway (dealing with the Box Cataclysm's aura). (2) They navigate the Germanic village and intervene at Thusnelda's sacrifice circle. (3) They defeat the Bone Naga and claim the vault key in the Ossuary. |
+| **Player goal** | Cross the Farbog, intervene in Thusnelda's ritual (Paths A–D), unlock the skull entrance, and clear the Ossuary. |
+| **Real stakes** | If Thusnelda dies, his death empowers the blood wards; if he lives, he provides direct clues to unmaking the Spear of Mars on the Granite Anvil in Chapter 5. |
+| **Session peak moment** | The Sacrifice Circle: the 3-round countdown clock where Thusnelda's flint blade hovers over his wrists while Mars's aura radiates from Rivia's box. |
+| **Closing image** | The calcified teeth of the skull gateway grind shut behind the party as they descend into the deep subterranean vault toward Chapter 5. |
 
-**NPCs active this session:**
-
-| NPC | Location at session start | Wants | Role this session |
-|---|---|---|---|
-| The contubernium (Party) | Entering the Blood Cult Dungeon alone | Clear the cult's sanctum; learn how the spear can be destroyed | Operating behind enemy lines; carries Lucius's locked box |
-| The two cult chieftains | Gathering Hall, now Wraiths | Nothing anymore — what's left reacts, not plans | Scene 5's tragic reveal |
-| The Glabrezu | Core Room, bound to focus | Guard the crystal tribute anchor | Scene 6 Boss |
-
-**What is NOT in this session:** Legate Corvinus and Augur Cassia stayed at Fort Vindolanda. Centurion Varro and Tribune Lucius are fallen. The old six-day fort siege (Berserkers, Tribal Warriors, Animated Armor, Quintus Flavius) is completely retired.
+**Active Continuity & Ground Truth:**
+- Centurion Varro was executed at the North Gate (Session 1); Tribune Lucius died in northern woods ambushed by giant spiders (Session 3). Lucius remains strictly deceased.
+- Party operates alone carrying Lucius's locked dispatch box, signet ring, and Corvinus's secret directive to destroy the spear in the field.
+- **The Box Cataclysm:** Rivia deposited the Spear into the box, then added Ursula's possessed Goliath Greataxe. The weapons resonated, scorching the OTHALAN rune into the wood: **+2 Intimidation**, **disadvantage on calm diplomacy within 30 ft of Thusnelda**, and **double undead detection radius in the Farbog**.
 
 </details>
 
 <details>
-<summary>🎬 Scene 0: The Marsh</summary>
+<summary>🎬 Scene 0: The Farbog Crossing</summary>
 
-Load `SkeletonFortressEntrancePublic.jpg`.
+**Dramatic Question:** Can the party cross the bone causeway without waking the drowned Wights beneath the glowing black water?
 
-> *The trees thin out and the ground goes soft underfoot before you see why. Ahead, the hillside opens in a mouth -- not a metaphor. A skull carved from the living rock, easily twenty feet across, its eye sockets black even at midday. A causeway of bone and old skulls runs from between its teeth down into a wide, glowing green marsh that splits around the path like water around a stone. The light doesn't flicker like fire. It breathes, slow, the way something alive breathes.*
+**Pressure Cooker (Sinking Causeway):**
+For every 2 rounds spent on the bone causeway, the bones sink 6 inches into the mire. After 4 rounds, moving requires DC 12 Dexterity saves to avoid falling into the corrosive marsh (DC 12 Con save against exhaustion).
 
-The bone causeway is the only dry footing. Leaving it means wading through glowing green water.
+**Box Cataclysm Detection:**
+Because of Rivia's blunder combining the Spear of Mars with Ursula's possessed Goliath Greataxe, Mars's aura pulses outward. Undead sense the party from double normal range. Group DC 14 Stealth is at **disadvantage** if the box is carried unshielded.
 
-**Marsh hazard (each round off the causeway):** DC 12 Constitution save or one level of exhaustion and 1 point of temporary corruption. The causeway itself is always safe.
-
-**Two supply caches** at the marsh's near corners. DC 11 Wisdom (Investigation) turns up rations gone green with the same glow, a tally-marked stick counting days, and a torn strip of cloth matching the two chieftains' warband colors.
-
-**Encounter:** 3 × **[Banshee](https://www.dndbeyond.com/monsters/16799-banshee)** (*Monster Manual* p. 23 — CR 4, AC 12, HP 58).
-- **Environment:** Flanking banshees fly over the marsh; causeway is only 5 ft wide.
-- **Actions:** *Corrupting Touch* (+4 to hit, 3d6+2 necrotic), *Horrifying Visage* (DC 13 Wis save or frightened).
-- **Wail:** 1/day, DC 13 Con save: drops to 0 HP on failure, or takes 3d6 psychic. Stagger the Wails across rounds; telegraph the scream to create dramatic tension!
+**Standing Stone Riddle:**
+Standing stone at the water's edge inscribed with OTHALAN runes:
+*"I drink the blood of the conqueror, but spit the bone of the slave. What am I?"*
+- Answer: *The Bog / Earth / Soil*. Solving grants inspiration or passage without waking the bog spirits.
 
 </details>
 
 <details>
-<summary>🎬 Scene 1: The Ossuary</summary>
+<summary>🎬 Scene 1: The Germanic Village</summary>
 
-Load `Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg`, west skull room.
+**Dramatic Question:** Can Roman legionaries convince fearful villagers they bring salvation rather than another massacre?
 
-> *The room ahead is round, and its far wall is shaped like the thing you just walked through -- another skull, smaller, teeth picked out in inlaid bone. The floor is a carpet of femurs and ribs, stacked with a care that took someone a long time.*
+**Atmosphere:**
+Huddled wooden longhouses banked against the mire. Smoke rises from small hearths. Sigrun the Trader and Arnulf the Firekeeper watch with notched arrows.
 
-DC 13 Intelligence (History) (active): the bones are sorted by size, by age, deliberately -- curated for months, not years. Matches the marsh tally-stick.
-
-**Encounter:** 2 × **[Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga)** (*Monster Manual* p. 233 — CR 4, AC 15, HP 58) + 4 × **[Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton)** (*Monster Manual* p. 272 — CR 1/4, AC 13, HP 13).
-- **Tactics:** Skeletons have official MM **vulnerability to bludgeoning damage** (maces/warhammers shatter them in 1 hit). Nagas use spellcasting (*hold person*, *ray of sickness*, *ray of enfeeblement*) and Bite (+5, 2d6+3 piercing + 3d6 poison).
-
-</details>
-
-<details>
-<summary>🎬 Scene 2: The Blood-Growth Rooms</summary>
-
-Same map, east rooms.
-
-> *The stone here has stopped being stone. Something has grown over it -- clusters of dark red matter, wet-looking, veined, thick as a fist in places and swollen tight. They shift, very slightly, when you get close. Not with the room's air currents.*
-
-DC 12 Wisdom (Medicine) or Intelligence (Nature) (active): organic, fed on blood deliberately and repeatedly, over a long period.
-
-**Encounter:** 1 × **[Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol)** (*Monster Manual* p. 65 — CR 6, AC 15, HP 136) + 2 × **[Dretch](https://www.dndbeyond.com/monsters/16847-dretch)** (*Monster Manual* p. 57 — CR 1/4, AC 11, HP 18).
-- **Yochlol:** Drops in giant spider form (*Shapechanger*), using *Multiattack* (+6, 1d6+3 bludgeoning plus 6d6 poison) and *web*. Magic Resistance.
-- **Dretches:** Support chaff. *Fetid Cloud* (1/day, DC 11 Con or retching/poisoned).
+**Three Clue Rule (Vault Entrance Clue 1):**
+Speaking with village elders reveals the offering trail leading south toward the carved skull hill.
 
 </details>
 
 <details>
-<summary>🎬 Scene 3: The Minor Altar</summary>
+<summary>🎬 Scene 2: The Sacred Grove Approach</summary>
 
-Same map, center room.
+**Dramatic Question:** Can the party decipher the omens at the Shrine of Belatucadrus before the blood ritual begins?
 
-> *Four pillars ring a low dais at the room's center, and the dais itself pulses -- not light exactly, more like a heartbeat you can see. This isn't the room you came here looking for. It feels like a rehearsal for one.*
-
-DC 14 Intelligence (Religion) (active): this altar never completed a working -- every mark is a false start. Whatever the cult built up to happened elsewhere.
-
-**Encounter:** 3 × **[Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon)** (*Monster Manual* p. 64 — CR 4, AC 13, HP 66).
-- **Official Weaknesses:** Vulnerable to radiant damage; **Light Sensitivity** gives disadvantage on attacks and sight checks in bright light.
-- **The Four Braziers:** Lighting the corner braziers illuminates the room, neutralizing *Shadow Stealth* and granting PCs the tactical upper hand.
+**Environment:**
+Ancient twisted oaks wrapped in mist and frost. Weathered stone shrine of Belatucadrus stained with ancient copper verdigris.
+- DC 13 Wisdom (Insight/Survival): Identifies fresh blood droplets leading toward the 7-stone ring; a ritual is actively underway.
 
 </details>
 
 <details>
-<summary>🎬 Scene 4: The Rune Lock</summary>
+<summary>🎬 Scene 3: The Sacrifice Circle (Thusnelda's Stand)</summary>
 
-Same map, south of center.
+**Dramatic Question:** Can the party stop Thusnelda's ritual suicide before the blood circle permanently corrupts the grove?
 
-> *Four tiles are set into the floor here, each etched with a different symbol, each lit from beneath in a different color -- cyan, green, magenta, yellow. There's no door ahead. Whatever this room is guarding, it's guarding it by making you choose.*
+**Pressure Cooker (3-Round Clock):**
+- **Round 1:** Thusnelda raises the flint blade and cuts his left wrist. Blood drips into the 7-stone circle.
+- **Round 2:** He chants the ancestral song of Arminius; dark red mist begins spiraling from the soil.
+- **Round 3:** He slashes his right wrist to complete the sacrifice. If not stopped, he dies at the end of this round.
 
-**Solution:** cyan &rarr; green &rarr; yellow &rarr; magenta ("beginning, growth, harvest, blood" -- the cult's seasonal liturgy). DC 13 Intelligence (Investigation) or Wisdom (Insight) on wear patterns hints at the order.
+**Box Cataclysm Diplomacy Penalty:**
+If Rivia's box is within 30 feet of Thusnelda, he smells Mars's bloodlust trapped in the wood and recoils with hostility: **Disadvantage on Persuasion checks (Path A & B)**! Leaving the box 30+ ft away averts this penalty.
 
-**Failure:** DC 12 Dexterity save or 2d6 force damage, sequence resets. No lockout, ever. Breather beat.
-
-</details>
-
-<details>
-<summary>🎬 Scene 5: The Gathering Hall</summary>
-
-Same map, south end.
-
-> *This room was built to hold people. Rows of worn stone mark where dozens once knelt, facing a long table at the far end, still laid with offerings gone black with age. Whatever congregation gathered here, it hasn't gathered in some time. But something is still standing at that table.*
-
-**The reveal:** what's still standing are the two cult chieftains, or what's left of them. DC 13 Wisdom (Insight) before combat identifies torn fragments matching the marsh cache's warband colors.
-
-**Encounter:** 3 × **[Wraith](https://www.dndbeyond.com/monsters/17064-wraith)** (*Monster Manual* p. 302 — CR 5, AC 13, HP 67) -- the two chieftains and their shield-bearer.
-- **Round 1:** Recognition, not aggression -- they watch in silence. If spoken to: *"We asked for victory... it took our blood... it starves still..."*
-- **Combat:** *Life Drain* (+6, 4d6+3 necrotic, DC 14 Con save vs max HP reduction). *Incorporeal Movement* to glide through stone obstacles.
+**Intervention Paths:**
+- **Path A (Diplomacy):** DC 14 Charisma (Persuasion).
+- **Path B (Spiritual Accord):** DC 14 Religion or Insight.
+- **Path C (Physical Restraint):** DC 13 Athletics to grapple + DC 12 Medicine to bind wounds.
+- **Path D (Failure / Suicide):** Ritual completes; Thusnelda perishes, requiring the party to harvest the bone key from his remains.
 
 </details>
 
 <details>
-<summary>🎬 Scene 6: The Core Room</summary>
+<summary>🎬 Scene 4: The Bone Naga Skull Entrance</summary>
 
-Load `CastleCoreRoomPublic.jpg`.
+**Dramatic Question:** Can the party breach the 20-foot skull portal before the Bone Naga paralyzes the vanguard?
 
-> *The stair curves up into a perfectly circular chamber. Four stone faces watch from the walls at the compass points -- not gods, not ancestors, just teeth and eyes carved to be looked at from every angle at once. At the center, on a low dais, a crystal the shape of a broken star burns steady and cold. It is the only thing in this entire dungeon that looks cared for.*
+**Tactical AI:**
+The Bone Naga burrows from the skull's jaw, casting *Hold Person* (DC 12 Wis) on heavily armored fighters, then striking with Bite (3d6 piercing + 3d6 poison). Supported by 4 Skeletons (vulnerable to bludgeoning).
 
-**What the crystal actually is:** DC 15 Intelligence (Arcana) or Intelligence (Religion): the cult's real altar and the marsh's source -- tribute funneled here to feed Mars.
-
-**The guardian:** 1 × **[Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu)** (*Monster Manual* p. 58 — CR 9, AC 17, HP 157), bound to the focus.
-- **Attacks:** Opens with *Darkness*, uses *Power Word Stun* (DC 16 Con) on the primary damage dealer, and attacks with 2 Pincers (+9, 2d10+5 plus grapple DC 15) and 2 Fists (+9, 2d4+5).
-- **Pacing:** Against a party of 6 Level 6 characters focusing fire, 157 HP is brought down cleanly in 2-3 fast rounds.
-
-**The Payoff & Rest:** The crystal cannot be destroyed here (Session 5's job). Demonic pressure collapses. The party takes a **Long Rest** in the cleansed Core Room, **advancing to Level 7** with all spell slots and resources refreshed before descending.
+**Three Clue Rule (Vault Entrance Clue 3):**
+Defeating the Naga exposes the runic skull socket. Inserting the bone key or offering blood unlocks the stone descent into the Ossuary.
 
 </details>
 
 <details>
-<summary>🏛️ DM Notes</summary>
+<summary>🎬 Scene 5: The Ossuary & The Vault Key</summary>
 
-**OGAS this session:**
-- **The two chieftains (now Wraiths):** Objective: feed the war-god who promised victory. Secret: Mars answered them honestly -- and the cost was everything they were.
-- **The Glabrezu:** Objective: protect the crystal-star focus. Secret: pulled into the world by sheer blood tribute, manifesting Mars's hunger.
+**Dramatic Question:** Can the party uncover the secret of the unmaking winches before the subterranean air turns toxic?
 
-**Session 4 &rarr; Session 5 handoff:**
-- Party enters Session 5 at Level 7 with full HP, spells, and long-rest abilities.
-- Party carries Lucius's locked box containing his Germanic childhood mementos and posthumous citizenship recommendations.
+**Environment:**
+Thousands of human and beast skulls stacked like brickwork. Cold necrotic mist gathers at ankle height.
+- Inspecting the carved lintel reveals the final clue for Chapter 5: *"Only the blood of the willing or the curse of the conquered can break the red spear upon the granite anvil."*
+- Party advances to Level 6 and prepares for the final descent into Chapter 5.
 
 </details>
 

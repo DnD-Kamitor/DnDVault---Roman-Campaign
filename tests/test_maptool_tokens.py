@@ -11,6 +11,7 @@ import zipfile
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
+PLAYERS_DIR = BASE / "Maptool/tokens/players"
 NAMED_DIR = BASE / "Maptool/tokens/npcs/named"
 CREATURES_DIR = BASE / "Maptool/tokens/npcs/creatures"
 S4_CAMP_DIR = BASE / "Maptool/maps/campaign/S4_The_Gods_Demand"
@@ -155,6 +156,73 @@ class TestMapToolTokens(unittest.TestCase):
         self.assertTrue(S5_CAMP_DIR.exists())
         for token_name in ["Mars.rptok", "Vercingetorix_Bound.rptok", "Wraith.rptok", "Wight.rptok"]:
             self.assertTrue((S5_CAMP_DIR / token_name).exists(), f"Token {token_name} missing in S5 campaign map pack")
+
+    def test_23_rivia_player_token_has_box_cataclysm_notes(self):
+        p = PLAYERS_DIR / "Rivia_Calida_Mendera.rptok"
+        self.assertTrue(p.exists())
+        xml = get_token_xml(p)
+        self.assertIn("BOX CATACLYSM", xml)
+        self.assertIn("Spear of Mars", xml)
+        self.assertIn("Goliath Berserker Greataxe", xml)
+        self.assertIn("Intimidation", xml)
+
+    def test_24_rivia_player_token_has_box_cataclysm_macro(self):
+        xml = get_token_xml(PLAYERS_DIR / "Rivia_Calida_Mendera.rptok")
+        self.assertIn("Box Cataclysm Aura", xml)
+
+    def test_25_ursula_player_token_has_weapon_sealed_notes(self):
+        p = PLAYERS_DIR / "Ursula_Günther.rptok"
+        self.assertTrue(p.exists())
+        xml = get_token_xml(p)
+        self.assertIn("PRIMARY WEAPON SEALED", xml)
+        self.assertIn("Goliath Berserker Greataxe", xml)
+        self.assertIn("secondary", xml.lower())
+
+    def test_26_ursula_player_token_has_secondary_weapon_macro(self):
+        xml = get_token_xml(PLAYERS_DIR / "Ursula_Günther.rptok")
+        self.assertIn("Secondary Weapons", xml)
+
+    def test_27_all_player_tokens_have_valid_sight_and_layer(self):
+        player_tokens = [
+            "Brian.rptok", "Iris.rptok", "Julia_Jana.rptok",
+            "Rivia_Calida_Mendera.rptok", "Tanit_bint_Abdmelqart.rptok", "Ursula_Günther.rptok"
+        ]
+        for name in player_tokens:
+            p = PLAYERS_DIR / name
+            self.assertTrue(p.exists(), f"Missing player token: {name}")
+            with zipfile.ZipFile(p, "r") as z:
+                root = ET.fromstring(z.read("content.xml").decode("utf-8"))
+                self.assertEqual(root.findtext("hasSight"), "true", f"{name} hasSight not true")
+                self.assertEqual(root.findtext("layer"), "TOKEN", f"{name} layer not TOKEN")
+                self.assertIn(root.findtext("sightType"), ["Darkvision 120", "Darkvision 60", "Normal"], f"{name} invalid sightType")
+
+    def test_28_thusnelda_token_uses_male_pronouns_and_has_ritual_clock(self):
+        p = NAMED_DIR / "Thusnelda.rptok"
+        xml = get_token_xml(p)
+        self.assertIn("MALE VÖLVA SEER", xml)
+        self.assertIn("He/Him", xml)
+        self.assertIn("3-ROUND RITUAL SUICIDE CLOCK", xml)
+        self.assertIn("BOX CATACLYSM PENALTY", xml)
+        self.assertNotIn("she shows", xml.lower())
+
+    def test_29_thusnelda_token_has_ritual_clock_and_audio_macros(self):
+        xml = get_token_xml(NAMED_DIR / "Thusnelda.rptok")
+        self.assertIn("Ritual Clock (Round 1-3)", xml)
+        self.assertIn("Voice: Blood Prophecy", xml)
+
+    def test_30_s4_creatures_have_tactical_ai_notes(self):
+        bone_naga_xml = get_token_xml(CREATURES_DIR / "Bone_Naga.rptok")
+        self.assertIn("SCLANDERS TACTICAL AI", bone_naga_xml)
+        self.assertIn("Three Clue Rule", bone_naga_xml)
+
+        yochlol_xml = get_token_xml(CREATURES_DIR / "Yochlol.rptok")
+        self.assertIn("SCLANDERS TACTICAL AI", yochlol_xml)
+
+        shadow_demon_xml = get_token_xml(CREATURES_DIR / "Shadow_Demon.rptok")
+        self.assertIn("SCLANDERS TACTICAL AI", shadow_demon_xml)
+
+        skeleton_xml = get_token_xml(CREATURES_DIR / "Skeleton.rptok")
+        self.assertIn("BLUDGEONING", skeleton_xml)
 
 
 if __name__ == "__main__":

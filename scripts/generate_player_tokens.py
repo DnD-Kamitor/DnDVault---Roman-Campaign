@@ -394,6 +394,18 @@ def build_macros_xml(cs):
         )
         idx += 1
 
+    # Extra custom macros (e.g. campaign state, auras, secondary armaments)
+    for extra in cs.get("extra_macros", []):
+        color = extra.get("color", "default")
+        label = extra.get("label", f"Macro {idx}")
+        group = extra.get("group", "Campaign")
+        cmd   = extra.get("command", "")
+        fontcolor = extra.get("fontcolor", "white" if color in ("red", "black", "darkgray", "blue") else "black")
+        attack_entries.append(
+            _macro_entry(idx, label, group, color, cmd, fontcolor=fontcolor, sortby="4.0")
+        )
+        idx += 1
+
     parts = [standard_entries] + attack_entries
     body  = "\n".join(p for p in parts if p)
     return f"<macroPropertiesMap>\n{body}\n</macroPropertiesMap>"
@@ -557,6 +569,9 @@ def build_content_xml(cs, image_md5):
   <lightSourceList/>
   <hasSight>true</hasSight>
   <sightType>{sight_type}</sightType>
+  <notes>{_xe(cs.get("notes", ""))}</notes>
+  <gmNotes>{_xe(cs.get("gm_notes", ""))}</gmNotes>
+  <gmNotesType>0</gmNotesType>
   <propertyMapCI>
     <store>
 {entries}
