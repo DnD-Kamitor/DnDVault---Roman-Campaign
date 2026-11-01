@@ -1,0 +1,57 @@
+{
+  "name": "Wight General (Centurion Cameo)",
+  "creature_type": "Undead (Roman Legionary Spirit)",
+  "cr": "3",
+  "size": "Medium",
+  "alignment": "Lawful Neutral",
+  "hp": 45,
+  "hp_formula": "6d8+18",
+  "ac": 14,
+  "ac_note": "Studded Leather",
+  "speed": "30 ft.",
+  "ability_scores": {
+    "STR": 15,
+    "DEX": 14,
+    "CON": 16,
+    "INT": 12,
+    "WIS": 13,
+    "CHA": 15
+  },
+  "saving_throw_proficiencies": [
+    "CON",
+    "WIS"
+  ],
+  "skill_proficiencies": [
+    "Perception",
+    "History",
+    "Athletics"
+  ],
+  "skill_overrides": {
+    "Perception": 3,
+    "History": 3,
+    "Athletics": 4
+  },
+  "resistances": [
+    "necrotic",
+    "bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons"
+  ],
+  "immunities": [
+    "poison"
+  ],
+  "condition_immunities": [
+    "exhaustion",
+    "poisoned"
+  ],
+  "senses": "Darkvision 60 ft., passive Perception 13",
+  "languages": "Latin, Archaic Germanic",
+  "macro_file": "scripts/standard_token_macros.xml",
+  "token_color": "#8b0000",
+  "portrait_file": "Maptool/tokens/dnd5e-art/Wight/WightHumanMale (1).webp",
+  "notes": "The Roman commander who oversaw the initial binding of Mars's spear three centuries ago. Encountered in Session 1's Altar Chamber, and returns as a quiet cameo in Session 5 Scene 4 if spared.",
+  "gm_notes": "Session 5 Scene 4 Cameo (The Antechamber of Mars).\\n\\nIF HE WAS SPARED IN SESSION 1 (party communicated with him or left him intact): His spectral form rises silently from one of the twelve outer plinths. He does not attack. If spoken to, he delivers one solemn line:\\n\\n'I held this three hundred years so it would not have to end like this. I am glad I do not have to decide.'\\n\\nThe moment the spear's fate is settled (Option 1 Unmade, Option 2 Rome, or Option 3 Mars), his oath discharges and his spirit dissolves into golden ash. Do not run combat for him; this is a quiet narrative payoff.\\n\\nIF DESTROYED IN S1: Do not place this token.",
+  "objective": "Discharge his three-century oath of vault guardianship.",
+  "goal": "Witness the final fate of Mars's Spear and find eternal rest.",
+  "agenda": "Stand motionless upon Plinth 4; speak once if addressed by a surviving PC.",
+  "secret": "He buried his own centurion seal under the granite anvil before accepting the guardian curse.",
+  "session": "Session 5 Scene 4 (Cameo)"
+}

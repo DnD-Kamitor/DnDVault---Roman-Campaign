@@ -224,6 +224,16 @@ class TestMapToolTokens(unittest.TestCase):
         skeleton_xml = get_token_xml(CREATURES_DIR / "Skeleton.rptok")
         self.assertIn("BLUDGEONING", skeleton_xml)
 
+    def test_31_janus_threshold_token_and_audio_macro(self):
+        janus_xml = get_token_xml(NAMED_DIR / "Janus_(Threshold_Vision).rptok")
+        self.assertIn("s5_janus_threshold.mp3", janus_xml)
+        self.assertIn("Voice: Threshold of Janus", janus_xml)
+
+    def test_32_wight_general_cameo_token(self):
+        wight_gen_xml = get_token_xml(NAMED_DIR / "Wight_General_(Centurion_Cameo).rptok")
+        self.assertIn("three hundred years", wight_gen_xml)
+        self.assertIn("Voice: Roman Oath Discharged", wight_gen_xml)
+
 
 if __name__ == "__main__":
     unittest.main()

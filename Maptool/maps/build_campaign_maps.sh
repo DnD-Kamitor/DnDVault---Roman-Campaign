@@ -8,6 +8,7 @@ DEST="$BASE/maps/campaign"
 FORT_IMGS="$BASE/../images"
 NAMED="$BASE/tokens/npcs/named"
 CREATURES="$BASE/tokens/npcs/creatures"
+PROPS="$BASE/tokens/props"
 
 # ---------------------------------------------------------------------------
 # Copy one map (find the non-promo image in a dicegrimorium folder)
@@ -51,13 +52,16 @@ copy_svg() {
 # ---------------------------------------------------------------------------
 copy_npc() {
   local slug="$1" dest_dir="$2"
-  for dir in "$NAMED" "$CREATURES"; do
+  # 1. Exact match across all directories first
+  for dir in "$NAMED" "$CREATURES" "$PROPS"; do
     if [[ -f "$dir/$slug.rptok" ]]; then
       cp "$dir/$slug.rptok" "$dest_dir/$slug.rptok"
       echo "   + token: $slug"
       return 0
     fi
-    # prefix match for files with parenthetical suffixes
+  done
+  # 2. Prefix match for parenthetical suffixes
+  for dir in "$NAMED" "$CREATURES" "$PROPS"; do
     for f in "$dir/$slug"*.rptok; do
       [[ -f "$f" ]] || continue
       cp "$f" "$dest_dir/$(basename "$f")"
@@ -257,12 +261,23 @@ cp "$DG/bloodcult.jpg" "$S/Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg" 2>/de
 cp "$DG/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg" "$S/" 2>/dev/null \
   && echo "   + CastleCoreRoom" || echo " [miss] CastleCoreRoom"
 
-# NPCs: Thusnelda at the Sacred Grove sacrifice circle (Lucius fell in S3; Corvinus/Cassia stay at fort; Varro dead)
+# Custom SVG battle maps for Scenes 0-3
+copy_svg s3_farbog_crossing    "$S"  # Scene 0: Farbog marsh causeway
+copy_svg s3_germanic_village   "$S"  # Scene 1: Germanic village
+copy_svg s4_sacred_grove       "$S"  # Scene 2-3: Sacred Grove & sacrifice circle
+
+# NPCs: Thusnelda at the Sacred Grove sacrifice circle; Sigrun & Arnulf at the village
 copy_npc "Thusnelda" "$S"
+copy_npc "Sigrun_the_Trader" "$S"
+copy_npc "Arnulf_the_Firekeeper" "$S"
+
+# Props
+copy_npc "Belatucadrus_Shrine" "$S"
+copy_npc "Bone_Token_OTHALAN" "$S"
 
 # Creatures: the Blood Cult Dungeon's monster roster (all real Monster Manual
 # demons/undead, no generic filler -- see SCRUM_BACKLOG.md Epic 8)
-for slug in Banshee Bone_Naga Yochlol Dretch Shadow_Demon Wraith Glabrezu Skeleton; do
+for slug in Banshee Bone_Naga Yochlol Dretch Shadow_Demon Wraith Glabrezu Skeleton Wight; do
   copy_npc "$slug" "$S"
 done
 
@@ -280,9 +295,12 @@ copy_svg s5_mars_vault_overview "$S" # Full vault overview: Sunken Armory -> Cho
 copy_svg s5_mars_vault          "$S" # Scene 1-2: entry corridor, antechamber, Convergence Hall 3-passage choice
 copy_svg s5_mars_confrontation  "$S" # Scene 4: the Sanctum, Mars's staged manifestation
 
-# NPCs: Vercingetorix Bound and Mars (Lucius fell in S3; garrison at fort)
+# NPCs: Vercingetorix Bound, Mars, Janus Threshold Vision, Wight General Cameo, Caesar Chain Winch
 copy_npc "Vercingetorix_Bound" "$S"
 copy_npc "Mars" "$S"
+copy_npc "Janus" "$S"
+copy_npc "Wight_General" "$S"
+copy_npc "Caesar_Chain_Winch" "$S"
 
 # Creatures: reused corridor undead from earlier sessions, no new pipeline work needed
 for slug in Wraith Wight Shadow Specter Zombie; do

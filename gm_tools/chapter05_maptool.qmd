@@ -9,6 +9,10 @@ Session 5 continues directly down from Chapter 4's Core Room -- no new dungeon, 
 teleport to a fort arena. Load all three maps before players join; reposition tokens
 scene by scene on the overview/vault maps rather than reloading between scenes.
 
+> [!TIP]
+> **Interactive Voice & Audio Soundboard:**
+> All Mars dialogue, Vercingetorix entrance & dying words, and Janus threshold omens can be triggered with one click on the [GM Audio Soundboard & Voice Clips](../audio_soundboard.qmd#session-5-the-wrath-of-mars).
+
 ### Scene &rarr; Map &rarr; Grid Scale &rarr; Coordinates &rarr; VBL/MBL
 
 | Scene | Map File | Grid Scale | Initial Coordinates | VBL &amp; MBL Notes |
@@ -44,7 +48,10 @@ No allied garrison NPCs travel into the dungeon:
 | Token | File | Scene | Frame Colour |
 |---|---|---|---|
 | Vercingetorix Bound | `Maptool/tokens/npcs/named/Vercingetorix_Bound.rptok` | Scene 3 only | Deep red (CR 11, AC 18, HP 150 — his true and final form) |
-| Mars | `Maptool/tokens/npcs/creatures/Mars.rptok` | Scene 4, round 3+ (or unmaking ritual) | Divine (CR 20, AC 22/16, HP 300 — Diminished Avatar) |
+| Mars | `Maptool/tokens/npcs/named/Mars.rptok` | Scene 4, round 3+ (or unmaking ritual) | Divine (CR 20, AC 22/16, HP 300 — Diminished Avatar) |
+| Janus (Threshold Vision) | `Maptool/tokens/npcs/named/Janus_(Threshold_Vision).rptok` | Scene 4 Archway | Gold / Bronze (Threshold divinity; audio: `s5_janus_threshold.mp3`) |
+| Wight General (Centurion Cameo) | `Maptool/tokens/npcs/named/Wight_General_(Centurion_Cameo).rptok` | Scene 4 Plinth | Spectral Roman (Spared S1 cameo; discharges oath upon resolution) |
+| Caesar Chain Winch (×4) | `Maptool/tokens/props/Caesar_Chain_Winch.rptok` | Scene 4 (N, S, E, W of Altar) | Object (DC 14 Athletics to lock each winch during unmaking ritual) |
 
 ::: {.dm-note}
 Do not place **Fausta_Luperci** or any **Thusnelda** token this session. Both belonged

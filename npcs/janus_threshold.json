@@ -1,0 +1,56 @@
+{
+  "name": "Janus (Threshold Vision)",
+  "creature_type": "Celestial (Roman Divinity Omen)",
+  "cr": "0",
+  "size": "Medium",
+  "alignment": "True Neutral",
+  "hp": 100,
+  "hp_formula": "10d8+50",
+  "ac": 20,
+  "ac_note": "Divine Form",
+  "speed": "0 ft., hover 30 ft.",
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 10,
+    "CON": 20,
+    "INT": 20,
+    "WIS": 22,
+    "CHA": 18
+  },
+  "saving_throw_proficiencies": [
+    "WIS",
+    "CHA",
+    "INT"
+  ],
+  "skill_proficiencies": [
+    "Insight",
+    "History",
+    "Religion"
+  ],
+  "skill_overrides": {
+    "Insight": 12,
+    "History": 11,
+    "Religion": 11
+  },
+  "resistances": [
+    "bludgeoning, piercing, and slashing from nonmagical attacks"
+  ],
+  "immunities": [
+    "radiant, necrotic, psychic, poison"
+  ],
+  "condition_immunities": [
+    "charmed, frightened, paralyzed, petrified, poisoned, prone"
+  ],
+  "senses": "Truesight 120 ft., passive Perception 16",
+  "languages": "All, telepathy 120 ft.",
+  "macro_file": "scripts/standard_token_macros.xml",
+  "token_color": "#d4af37",
+  "portrait_file": "images/lar_bronze.jpg",
+  "notes": "Janus, god of thresholds, gates, beginnings, and endings. Appears as a dual-faced vision hovering in the archway of the Antechamber in Session 5 Scene 4.",
+  "gm_notes": "Session 5 Scene 4 (Antechamber of Mars & Threshold of Janus).\\n\\nAs the party steps into the archway, the air splits like a coin turned on its edge. A dual-faced bronze apparition flickers in the torchlight -- one face looking backward at the dead who bled for the spear, one looking forward into smoke and ruin.\\n\\nVOICE LINE: 'Mars is neither good nor evil. He is war itself. Choose how you cross this threshold.'\\n\\nAudio trigger: audio/clips/s5_janus_threshold.mp3\\n\\nJanus cannot be harmed or reasoned with; he is a cosmic threshold observer. Once the party answers or walks through, the vision dissolves into swirling cold air.",
+  "objective": "Bear witness to mortals crossing the threshold of war's resolution.",
+  "goal": "Force the party to recognize that war is neutral and unforgiving before facing Mars.",
+  "agenda": "Demand each character look upon their past deeds before entering the Sanctum.",
+  "secret": "Janus knows the spear cannot be tamed by Rome without burning the Republic down.",
+  "session": "Session 5 Scene 4"
+}

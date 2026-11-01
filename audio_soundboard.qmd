@@ -1,0 +1,195 @@
+---
+title: "GM Audio Soundboard & Voice Clips"
+subtitle: "Playable read-alouds, boss dialogue, and atmospheric audio cues for Sessions 4 & 5"
+---
+
+This interactive soundboard provides one-click audio playback for all voice clips and narrations across **Session 4 (*The God's Demand*)** and **Session 5 (*The Wrath of Mars*)**. You can play them directly on any device (phone, tablet, laptop) during table play.
+
+---
+
+## Session 4: The God's Demand
+
+### Scene 0: The Farbog Crossing
+
+::: {.callout-note}
+## 🔊 Scene 0 Opening Read-Aloud
+
+**Voice:** Fable (Narrator) | **Trigger:** When the contubernium emerges from the northern woods onto the causeway bank.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s4_scene0_marsh_readaloud.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"The trees thin out and the ground goes soft underfoot before you see why. Ahead, the hillside opens in a mouth — not a metaphor. A skull carved from the living rock, easily twenty feet across, its eye sockets black even at midday. A causeway of bone and old skulls runs from between its teeth down into a wide, glowing green marsh that splits around the path like water around a stone."*
+:::
+
+::: {.callout-caution}
+## 🔊 Banshee Dread Mother — Mid-Causeway Ambush
+
+**Voice:** Shimmer (Spectral Banshee) | **Trigger:** When the party reaches mid-causeway or when Rivia's unshielded box triggers detection.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s4_banshee_dread_mother.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"Turn back... the water remembers every breath you took..."*
+:::
+
+---
+
+### Scene 5: The Deep Vault Threshold & Core Room
+
+::: {.callout-important}
+## 🔊 Wraith Chieftains — The Sacrificial Confession
+
+**Voice:** Echo (Ancient Spirits) | **Trigger:** When the party enters the Gathering Hall / chieftains' burial alcoves.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s4_wraith_chieftain_confession.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"We asked for victory... it took our blood... it starves still..."*
+:::
+
+::: {.callout-important}
+## 🔊 Glabrezu Guardian — Core Room Dais
+
+**Voice:** Onyx (Demonic Guardian) | **Trigger:** When the party approaches the crystal-star dais in the Core Room.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s4_glabrezu_core_entrance.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"The harvest has already been gathered. You are only here to be measured."*
+:::
+
+---
+
+## Session 5: The Wrath of Mars
+
+### Scene 0: Cold Open — The Crystal Is Failing
+
+::: {.callout-note}
+## 🔊 Scene 0 Opening Read-Aloud
+
+**Voice:** Fable (Narrator) | **Trigger:** Immediately following the Glabrezu's fall as the crystal focus shudders and cracks.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s5_scene0_descent_readaloud.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"The crystal-star's light does not fade when the demon guarding it falls. It gets worse. Cracks spread across its faces like frost across a window, and each one lets out a note too low to be a sound, felt in the teeth more than heard. In the silence where Tribune Lucius once stood, the stone floor shudders. Whatever this crystal feeds, it just fed it more than it wanted — and the only stairs lead down."*
+:::
+
+---
+
+### Scene 3: Vercingetorix's Last Stand
+
+::: {.callout-caution}
+## 🔊 Vercingetorix Bound — Entrance Challenge
+
+**Voice:** Onyx (Ancient Gallic King) | **Trigger:** When the party reaches the portal chokepoint before the Sanctum.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s5_vercingetorix_entrance.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"Again. Always again. Tell me this time is the one that ends it."*
+:::
+
+::: {.callout-caution}
+## 🔊 Vercingetorix Bound — Final Death & Winch Revelation
+
+**Voice:** Fable (Dying King) | **Trigger:** When reduced to 0 HP by radiant damage or a Belatucadrus-consecrated blade.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s5_vercingetorix_final_death.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"The granite altar ahead... look to the four massive iron chain winches in the floor. Caesar's siege engineers forged them from captured Gallic steel to bind a god's avatar. Lock the four iron rings... they will drag Mars down and shatter his divine invulnerability. Only then can the spear be broken on the anvil! Tell me... after two hundred years... does Gaul still stand?"*
+:::
+
+---
+
+### Scene 4: The Antechamber of Mars & Threshold of Janus
+
+::: {.callout-tip}
+## 🔊 Janus (Threshold Vision) — The Archway Omen
+
+**Voice:** Echo (Cosmic Divinity) | **Trigger:** When the party crosses the threshold archway into the Sanctum of Mars.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s5_janus_threshold.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"Mars is neither good nor evil. He is war itself. Choose how you cross this threshold."*
+:::
+
+::: {.callout-important}
+## 🔊 Mars (Diminished Avatar) — Divine Challenge
+
+**Voice:** Onyx (Roman War God) | **Trigger:** When Mars manifests above the Granite Anvil Altar.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s5_mars_challenge.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"MORTALS. You have carried my anchor through two ghosts and a king who would not die. Now choose, and choose knowing I will remember which one you make."*
+:::
+
+::: {.callout-important}
+## 🔊 Mars (Diminished Avatar) — Option 1: Destroy Reaction
+
+**Voice:** Onyx (Enraged God) | **Trigger:** When the party locks the fourth chain winch and strikes the spear on the anvil.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s5_mars_destroy_reaction.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"FOOLS! You bind the god who carved your legions from the mud! The chains will hold you longer than they hold me!"*
+:::
+
+::: {.callout-important}
+## 🔊 Mars (Diminished Avatar) — Option 2 & 3: Depart Reaction
+
+**Voice:** Onyx (Ominous God) | **Trigger:** If the party returns the spear to Mars or leaves it in the stone for Rome.
+
+```{=html}
+<audio controls preload="none" style="width: 100%; margin: 8px 0;">
+  <source src="audio/clips/s5_mars_depart_reaction.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+> *"You leave the blade in the stone. A wise cowardice. We will speak again when Rome bleeds."*
+:::

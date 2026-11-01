@@ -72,6 +72,7 @@ book:
         - gm_tools/chapter05_guide.qmd
         - gm_tools/chapter05_maptool.qmd
         - handouts/chapter05_handouts.qmd
+        - audio_soundboard.qmd
         - appendix.qmd
 
 format:

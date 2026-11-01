@@ -77,6 +77,11 @@ Maps are in `Maptool/maps/campaign/S5_The_Wrath_of_Mars/`. All three are custom 
 
 **Read aloud:**
 
+<audio controls preload="none" style="width: 100%; margin-bottom: 10px;">
+  <source src="audio/clips/s5_scene0_descent_readaloud.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 > *The crystal-star's light does not fade when the demon guarding it falls. It intensifies,
 > blinding and erratic. Violent fissures fracture across its crystalline faces with razor-sharp snaps,
 > releasing a sub-audible psychic thrum that vibrates inside your molars and rattles the iron greaves on your
@@ -142,6 +147,11 @@ He is waiting at the passage into the Sanctum, and he has been waiting since bef
 
 **Read aloud:**
 
+<audio controls preload="none" style="width: 100%; margin-bottom: 10px;">
+  <source src="audio/clips/s5_vercingetorix_entrance.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 > *He stands where the three passages become one, and for the first time since the fort's gate, you see him clearly. The wounds from that night never closed. They never will. His armor is Gallic work two centuries out of fashion, rusted through in places where a living man would already be dead of infection ten times over. He is not breathing. He was never going to stop being here.*
 
 > *"Again," he says, in Latin thick with an accent that predates the Empire itself. "Always again. Tell me this time is the one that ends it."*
@@ -164,6 +174,11 @@ For one minute, his spirit remains, lucid, and answers up to three questions bef
 <details>
 <summary><strong>What Vercingetorix tells the party (his Final Death answers)</strong></summary>
 
+<audio controls preload="none" style="width: 100%; margin-top: 8px; margin-bottom: 12px;">
+  <source src="audio/clips/s5_vercingetorix_final_death.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 - **How can the spear be destroyed:** *"The granite altar ahead... look to the four massive iron chain winches in the floor. Caesar's siege engineers forged them from captured Gallic steel to bind a god's avatar. Lock the four iron rings... they will drag Mars down and shatter his divine invulnerability. Only then can the spear be broken on the anvil!"*
 - **What is the price of destroying it:** *"The chains keep what they hold. Someone must take the guardian's seat and hold the seal, or the unmaking unravels. That was the legate's burden. It was nearly mine. Someone must willingly choose to watch the dark."*
 - **Did my people survive:** *"Tell me... after two hundred years... does Gaul still stand?"* (Let a player answer this honestly. He smiles faintly, closes his eyes, and dissolves into grey ash that drifts away on the subterranean breeze).
@@ -182,7 +197,17 @@ Load `s5_mars_confrontation.html`. Granite altar at the center, chain anchors sc
 
 **The Threshold of Janus:** As the party steps into the archway, the air splits like a coin turned on its edge. For a split second, a dual-faced vision flickers in the torchlight -- **Janus**, god of thresholds and doorways, looking backward at the dead who bled for this spear and forward into the centuries yet to come. A silent divine reminder of his word in Session 3: *"Mars is neither good nor evil. He is war itself. Choose how you cross this threshold."*
 
+<audio controls preload="none" style="width: 100%; margin-top: 8px; margin-bottom: 12px;">
+  <source src="audio/clips/s5_janus_threshold.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 **Read aloud:**
+
+<audio controls preload="none" style="width: 100%; margin-top: 8px; margin-bottom: 12px;">
+  <source src="audio/clips/s5_mars_challenge.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 > *The passage opens into a colossal circular rotunda wide enough to assemble a Roman legion.
 > Twelve monolithic stone pillars ring the perimeter like silent sentinels waiting in the gloom.
@@ -231,6 +256,11 @@ This is the campaign's actual thesis. Present all three plainly. None of them is
 <details>
 <summary><strong>Option 1 — Destroy It Completely (The Dynamic Unmaking Ritual)</strong></summary>
 
+<audio controls preload="none" style="width: 100%; margin-top: 8px; margin-bottom: 12px;">
+  <source src="audio/clips/s5_mars_destroy_reaction.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 **What it requires:** The party chooses to unmake the spear on the granite altar. Mars roars and attacks with everything he has! Rather than an impossible 300 HP grind, this is a **fast, 3-round interactive ritual combat**:
 
 - **Round 1 — The Chains of the Republic:** A PC (or two) rushes the massive iron chain winches Vercingetorix warned them about (DC 13 Athletics or Thieves' Tools / Sleight of Hand).
@@ -257,6 +287,11 @@ This is the campaign's actual thesis. Present all three plainly. None of them is
 
 <details>
 <summary><strong>Option 3 — Give It Back to Mars</strong></summary>
+
+<audio controls preload="none" style="width: 100%; margin-top: 8px; margin-bottom: 12px;">
+  <source src="audio/clips/s5_mars_depart_reaction.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 **What it requires:** Returning the spear to the granite altar and stepping back with shields lowered.
 
