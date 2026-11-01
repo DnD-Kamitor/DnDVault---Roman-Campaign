@@ -68,6 +68,20 @@
   .audio-btn { background: #2a1f0a; border: 1px solid #c8a84b; color: #ffd700; padding: 2px 7px; font-size: 0.76em; cursor: pointer; border-radius: 3px; margin-left: 8px; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; transition: background 0.15s, color 0.15s; }
   .audio-btn:hover { background: #3d2d10; color: #fff; }
   .audio-btn.playing { background: #8a2a2a; border-color: #ff6b6b; color: #fff; }
+
+  .who { background:#14110a; border:1px solid #3a2f14; border-left:3px solid #c8a84b; padding:7px 10px; margin-bottom:7px; }
+  .who.foe { border-left-color:#a83232; background:#160d0d; border-color:#3a1a1a; }
+  .who.opt { border-left-color:#5a8aaa; background:#0d1216; border-color:#1a2a3a; }
+  .who-name { color:#e8d8b0; font-weight:bold; font-size:0.92em; }
+  .who-tag { color:#888; font-size:0.74em; margin-left:6px; }
+  .who p { font-size:0.82em; margin:3px 0; color:#bbb; }
+  .who p b { color:#c8a84b; font-weight:bold; }
+  .who.foe p b { color:#d47a6a; }
+  .who.opt p b { color:#8ab8d8; }
+  .say { font-style:italic; color:#c8b898; font-size:0.83em; border-left:2px solid #555; padding-left:7px; margin:4px 0; }
+  .statl { font-family:monospace; font-size:0.78em; color:#88aaff; background:#0a0a14; padding:3px 6px; margin:3px 0; }
+  .improv { color:#777; font-size:0.74em; font-style:italic; }
+  details.more summary { cursor:pointer; color:#888; font-size:0.8em; margin:4px 0; }
 </style>
 </head>
 <body>
@@ -85,7 +99,7 @@
   <button class="tab-btn" onclick="showTab('bog', this)">1 · Farbog</button>
   <button class="tab-btn" onclick="showTab('village', this)">2 · Village</button>
   <button class="tab-btn" onclick="showTab('grove', this)">3 · Grove &amp; Circle</button>
-  <button class="tab-btn" onclick="showTab('s0', this)">4 · Dungeon Approach</button>
+  <button class="tab-btn" onclick="showTab('s0', this)">4 · Skull Entrance</button>
   <button class="tab-btn" onclick="showTab('s1s2', this)">5 · Ossuary ★S4 END</button>
   <button class="tab-btn" style="color:#555;border-left:1px solid #333" onclick="showTab('s3s4', this)">S5› Altar/Lock</button>
   <button class="tab-btn" style="color:#555" onclick="showTab('s5', this)">S5› Hall</button>
@@ -124,7 +138,7 @@
 <div>
   <div class="block">
     <div class="block-title">Tokens — drag to sidebar before session</div>
-    <div class="setup-line"><span class="tok">Banshee</span> ×3 (HP 58) &middot; <span class="tok">Bone_Naga</span> ×2 (HP 58) &middot; <span class="tok">Skeleton</span> ×4 (HP 13)</div>
+    <div class="setup-line"><strong>Tonight:</strong> <span class="tok">Wight</span> ×3 (HP 45) &middot; <span class="tok">Specter</span> ×1 (HP 22, Myling if hostile) &middot; <span class="tok">Thusnelda</span> &middot; <span class="tok">Bone_Naga</span> ×2 (HP 58) &middot; <span class="tok">Skeleton</span> ×4 (HP 13)</div><div class="setup-line" style="color:#666">Next session:</div>
     <div class="setup-line"><span class="tok">Yochlol</span> ×1 (HP 136) &middot; <span class="tok">Dretch</span> ×2 (HP 18)</div>
     <div class="setup-line"><span class="tok">Shadow_Demon</span> ×3 (HP 66) &middot; <span class="tok">Wraith</span> ×3 (HP 67)</div>
     <div class="setup-line"><span class="tok">Glabrezu</span> ×1 (HP 157, Core Room guardian)</div>
@@ -144,123 +158,207 @@
 
 <!-- ═══ BOG ═══ -->
 <div id="tab-bog" class="tab-pane">
-<div class="block">
-  <div class="block-title">Scene 1 — Farbog Crossing &nbsp;<span style="color:#555;font-size:0.85em">map: s3_farbog_crossing.html</span></div>
-  <div class="ra">The forest floor turns to water. Dead trees lean at angles, draped in something grey that used to be moss. Ahead, a path of flat stones vanishes under the surface and reappears on the far bank.</div>
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Scene 1 — Farbog Crossing &nbsp;<span style="color:#555;font-size:0.85em">map: s3_farbog_crossing.html</span> <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_scene0_marsh_readaloud.mp3')">▶ Voice</button></div>
+    <div class="ra">The trees end and the ground turns to black, sucking mire. A causeway of bleached skulls and packed ribs spans the marsh toward a limestone bluff carved into a colossal skull. The water on either side glows a sickly, breathing green. From Rivia's pack, the scorched box answers with a deep hum you feel through your boots. At the bank's edge, a standing stone. Runes cut deep. Older than the causeway.</div>
+    <p class="now"><strong>Dramatic Question:</strong> Can they cross without waking what drowned in the water?</p>
+  </div>
+  <div class="block">
+    <div class="block-title">The Standing Stone — riddle (DC 13 History to read)</div>
+    <div class="ra">"Born from the willing, fed by the blood, I grow in the silence where no god has stood. Worship without truth, devotion without cost — I am what remains after the believer is lost. Name me."</div>
+    <ul>
+      <li><strong>Answer:</strong> the hunger / hollow faith / false devotion. Any honest answer counts.</li>
+      <li><strong>Reward:</strong> bone token in a notch at the base: <em>one free reroll on a save vs an undead ability</em> this session. Rune = OTHALAN (DC 11 History, or automatic if they held the S1 contract token: older than the cult).</li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">Supply caches near shore (DC 11 Investigation)</div>
+    <ul>
+      <li>Green-glowing rations + <strong>tally stick</strong> (cult here for months)</li>
+      <li>Torn <strong>cloth in the two chieftains' warband colours</strong></li>
+    </ul>
+    <div class="note">These are Thusnelda's evidence (advantage on Path A in the Circle). Make them findable.</div>
+  </div>
+  <div class="clock"><strong>Quiet crossing:</strong> DC 14 group Stealth, more than half must pass, <span class="warn">at disadvantage if the box is unwrapped</span>. Pass = no fight. Fail, or anyone steps in the water = Wights rise mid-crossing.<br>
+  <strong>Sinking causeway:</strong> every 2 rounds on it, bones sink 6 in. After 4 rounds: difficult terrain, DC 12 Dex or slip in; vapours DC 12 Con or 1 exhaustion.</div>
 </div>
-<div class="clock"><strong>Bog hazard:</strong> Off the stone path — DC 12 Str or sink, restrained; DC 14 Athletics to pull free. The stones are always safe but narrow (single file). <span class="warn">Box Aura:</span> Undead sense the party from double range; group Stealth DC 14 at disadvantage if box carried unshielded.</div>
-<div class="block">
-  <div class="block-title">Encounter — Bog Spirits</div>
-  <div class="ho"><strong>1 × Wight (Vaettir, HP 45, AC 14) + 1 × Will-o-Wisp (HP 22, AC 19) + 1 × Specter (HP 22, AC 12):</strong> Will-o-Wisp lures one PC off-path first (Insight DC 13 to recognize bait). Vaettir rises mid-crossing. Specter circles. Radiant damage ends the Vaettir permanently.</div>
-  <table>
-    <tr><td class="k">Life Drain (Wight)</td><td class="v">+4 to hit, 1d6+2 necrotic, DC 13 Con vs max HP reduction</td></tr>
-    <tr><td class="k">Life Drain (Specter)</td><td class="v">+4 to hit, 3d6 necrotic, DC 10 Con vs max HP reduction</td></tr>
-    <tr><td class="k">Shock (Will-o-Wisp)</td><td class="v">+4 to hit, 2d8 lightning. Ephemeral: can become incorporeal (resist all except force/radiant)</td></tr>
-  </table>
+<div>
+  <div class="who foe">
+    <span class="who-name">The Drowned Wights ×3</span><span class="who-tag">Wight · CR 3 · AC 14 · HP 45 each · tokens: Wight/Vaettir</span>
+    <p><b>Look:</b> Early cult converts in rotted Germanic wool, skin bog-brown and tight over the bone, cold light where the eyes were. They rise out of the green water on both sides of the causeway, dripping.</p>
+    <p><b>What they want:</b> Nothing anymore. The chieftains made each convert stand in the bog overnight as a test of devotion. The ones who broke or drowned never came home; cult magic bound them here. They sense warmth and movement <em>in the water</em>, not on the bone.</p>
+    <p><b>How they fight:</b> Multiattack: <b>2 longsword</b> (+4, 1d8+2 slashing), or swap one swing for <b>Life Drain</b> (+4, 1d6+2 necrotic, DC 13 Con or max HP drops by the damage until long rest). Anyone who backs off gets the <b>longbow</b> (+4, 150/600 ft, 1d8+2). They flank the single-file line and focus whoever is at the back.</p>
+    <p><b>Weak spots:</b> It's daytime: <b>Sunlight Sensitivity</b>, disadvantage on attacks and Perception. Causeway edge is difficult terrain for them, so the party holds high ground.</p>
+    <p><b>Tough spots:</b> Resist necrotic + nonmagical B/P/S (silvered or magic weapons get through). Immune poison. <span class="warn">The box means they cannot be surprised.</span></p>
+    <div class="note"><strong>Say this before initiative:</strong> a PC killed by Life Drain rises as a Zombie next round unless the Wight dies first or the body is dragged off the causeway.</div>
+  </div>
+  <div class="who opt">
+    <span class="who-name">The Myling (optional)</span><span class="who-tag">drowned boy · becomes a Specter if wronged</span>
+    <p><b>Trigger:</b> DC 13 Perception mid-crossing: a child crying with water in his lungs, 30 ft left of the causeway. Ignored: he climbs onto the causeway behind the last PC.</p>
+    <p><b>Look:</b> Twelve or thirteen. Bog-coloured skin, months-rotted work clothes, unfocused eyes. Arms held up the way a small child asks to be carried. One Germanic word, over and over: <em>"home."</em></p>
+    <p><b>What he wants:</b> A cult test victim, too young to refuse. He wants to be carried to holy ground. He means no harm.</p>
+    <p><b>The burden:</b> carrier's speed halved; each round DC 10 + rounds carried Str or speed 0 (he gets heavier away from the bog). Can't be shaken off. Holy ground: <strong>Belatucadrus shrine</strong> (Scene 3), a Cleric/Druid 10-min consecration, or the village burial mound (DC 13 Investigation).</p>
+    <div class="say">At the shrine: "It doesn't hurt here." He sits, closes his eyes, and is gone.</div>
+    <p><b>Reward:</b> carrier gets <em>Myling's Rest</em>: advantage on death saves, immune to Frightened, this session.</p>
+    <p><b>If attacked or abandoned:</b> Specter. AC 12, HP 22, incorporeal, Life Drain +4, 2d6 necrotic (DC 13 Con or max HP drops), sunlight disadvantage. His shriek: DC 13 Wis or Frightened 1 min, and it can wake the Wights.</p>
+  </div>
 </div>
-<div class="clue"><strong>Clue:</strong> Worn rope on far bank — tied recently, not rot-frayed. Someone guides traffic across this bog.</div>
+</div>
 </div>
 
 <!-- ═══ VILLAGE ═══ -->
 <div id="tab-village" class="tab-pane">
-<div class="block">
-  <div class="block-title">Scene 1 — Germanic Village &nbsp;<span style="color:#555;font-size:0.85em">map: s3_germanic_village.html</span></div>
-  <div class="ra">The village smells of woodsmoke and old bread. Longhouses stand solid, but half the doors stand open on empty rooms. A woman stops grinding grain. A child runs inside. An old man at the fire does not look up. Whatever took this village apart was not a raid; it just thinned.</div>
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Scene 2 — Germanic Village &nbsp;<span style="color:#555;font-size:0.85em">map: s3_germanic_village.html</span></div>
+    <div class="ra">The village smells of woodsmoke and old bread. Chickens. A dog that barks once and stops. Two fires burning where ten should be. Half the doors stand open on empty rooms. A woman stops grinding grain and watches you without moving. A child runs inside. An old man at the fire does not look up. Whatever took this village apart, it was not a raid. Raiders leave bodies and ash. This place just... thinned.</div>
+    <p class="now"><strong>Dramatic Question:</strong> Can they earn enough trust, fast, to learn where the seer went and why?</p>
+  </div>
+  <div class="block">
+    <div class="block-title">What the village knows (if approached without threat)</div>
+    <ul>
+      <li><strong>Free:</strong> Grove is <strong>north</strong>. The dungeon entrance is <strong>south</strong>, past the old offering stones.</li>
+      <li><strong>Free:</strong> Their seer, an older man named <strong>Thusnelda</strong>, went to the grove alone before dawn. Three followed and came back frightened. He would not stop or explain.</li>
+      <li><strong>Free:</strong> The two chieftains "went south" months ago and never came back. People stopped asking.</li>
+      <li><strong>DC 13 Persuasion:</strong> for two weeks he's talked of "settling the gods' debt". Nobody understood until this morning, when he took a blade.</li>
+      <li><strong>DC 13 History or Persuasion:</strong> old-blood völva, his family has read omens in this forest for generations. Right about everything for twenty years. Not reckless, not despairing. <em>That's what makes this dangerous.</em></li>
+    </ul>
+  </div>
+  <div class="clock"><strong>Clock:</strong> Thusnelda has been bleeding since dawn. If they linger here long (shopping, resting), he's further along when they arrive: start the Circle with 2 rounds instead of 3.</div>
 </div>
-<div class="block">
-  <div class="block-title">Dramatic Question &amp; Villager Intel</div>
-  <p class="now"><strong>Dramatic Question:</strong> Can the party earn the villagers' trust to discover where Thusnelda went before his sacrifice is complete?</p>
-  <ul>
-    <li><strong>Thusnelda's Departure:</strong> Their venerable völva (he/him) took a ritual blade and walked north to the sacred grove before dawn to "settle the gods' debt". Three villagers followed and returned terrified.</li>
-    <li><strong>The Chieftains:</strong> Two clan chieftains led their warbands south months ago down the old offering path and never returned.</li>
-    <li><strong>DC 13 Persuasion / History:</strong> Thusnelda is of ancient lineage and has read the omens unerringly for twenty years. His conviction is total and deliberate, not madness.</li>
-  </ul>
+<div>
+  <div class="who">
+    <span class="who-name">The woman at the quern</span><span class="who-tag">first to speak</span>
+    <p><b>Look:</b> Flour to the elbows, hands still on the grindstone. Doesn't run, doesn't welcome.</p>
+    <p><b>Wants:</b> The Romans gone without trouble, and her seer back. She'll talk if weapons stay sheathed and nobody looms.</p>
+    <p><b>Gives:</b> directions and the "settling the gods' debt" line.</p>
+    <div class="say">"He went before light. With the old knife. Are you here to stop him, or to watch?"</div>
+  </div>
+  <div class="who">
+    <span class="who-name">The old man at the fire</span><span class="who-tag">silent grief</span>
+    <p><b>Look:</b> Wrapped in a cloak, staring into the coals. Won't look up at Romans.</p>
+    <p><b>Wants:</b> To be left alone. He won't say the chieftains' names. Push him and he says the warbands went south and the south kept them.</p>
+    <div class="say">"Everyone who walks that path comes back thinner, or not at all."</div>
+  </div>
+  <div class="who">
+    <span class="who-name">The three who followed the seer</span><span class="who-tag">the hook</span>
+    <p><b>Look:</b> Young, frightened, still muddy to the knee from the grove path.</p>
+    <p><b>Saw:</b> him barefoot in the ring of seven stones, singing a death-song, cutting his own wrist. He told them to go home.</p>
+    <p><b>Wants:</b> Someone braver to bring him back. They'll point the way but won't go.</p>
+  </div>
+  <div class="note"><strong>Box aura here:</strong> +2 Intimidation works, but doors close and the village goes quiet. Calm talk is at disadvantage while the box is close. Leaving it at the edge of the village helps.</div>
+  <p class="improv">Villager portrayals and voice lines are table improv built on the chapter's read-aloud. They have no names in canon, so name them on the spot if needed.</p>
 </div>
-<div class="note">The party travels alone. Tribune Lucius's locked dispatch box and signet ring in their pack carry Roman citizenship letters and Corvinus's secret mandate to destroy the spear.</div>
+</div>
 </div>
 
 <!-- ═══ GROVE ═══ -->
 <div id="tab-grove" class="tab-pane">
-<div class="block">
-  <div class="block-title">Scene 2 &amp; 3 — Sacred Grove &amp; Sacrifice Circle &nbsp;<span style="color:#555;font-size:0.85em">map: s4_sacred_grove.html</span></div>
-  <div class="ra">Ancient oaks rise around a weathered stone shrine with two faces carved into one rock — Roman Belatucadrus over older Germanic marks, smeared with fresh ash. Just beyond, seven standing stones ring a blood-soaked clearing.</div>
-</div>
 <div class="grid2">
 <div>
   <div class="block">
-    <div class="block-title">Scene 2: Belatucadrus Shrine</div>
+    <div class="block-title">Scene 3a — Belatucadrus Shrine &nbsp;<span style="color:#555;font-size:0.85em">map: s4_sacred_grove.html</span></div>
+    <div class="ra">The oaks here are old enough that their roots have lifted the path. At the grove's center, a stone no taller than a man: two faces, or one face trying to be two. Roman workmanship on top, older marks underneath. Someone has left fresh holly. Someone else has smeared ash across the Roman features.</div>
     <ul>
-      <li><strong>Religion DC 13:</strong> Celtic/Roman syncretism. Ash obscures Roman features.</li>
-      <li><strong>OTHALAN Rune:</strong> Matches Lucius's amber token and Session 1 vault seal.</li>
-      <li><strong>Consecration:</strong> 10-minute prayer grants <em>Belatucadrus blessing</em>: advantage on damage rolls vs blood cult creatures; weapon counts as magical in the Ossuary.</li>
+      <li><strong>DC 13 Religion:</strong> Belatucadrus, the Celtic sun god Rome renamed Mars on the frontier. The ash is recent: anger at the Roman overlay, not the god.</li>
+      <li><strong>Consecration:</strong> Cleric/Druid, 10 min prayer, no slot. One weapon gets the <em>Belatucadrus blessing</em>: advantage on damage vs cult-marked creatures, counts as magical (gets through Wight resistances in S5 too).</li>
+      <li><strong>Holy ground:</strong> carrying the Myling? Set him down here.</li>
+      <li>Through a gap in the oaks: seven standing stones and a man in the middle. <strong>Give them one round to observe</strong> before he notices.</li>
     </ul>
   </div>
+  <div class="block">
+    <div class="block-title">Scene 3b — The Sacrifice Circle</div>
+    <div class="ra">He stands in the exact center of the seven stones with the stillness of a man whose fate is sealed. Bare feet on frost-rimed granite. An archaic flint blade in his right hand. Blood wells from a deep cut across his left wrist, pattering into the frozen moss. A guttural death-song rises from his throat. Thirty paces away, the box rattles its hinges. He hears you come and does not look up.<br>"You are too late to stop the debt. But you can witness. A willing death settles what war begins. The gods will be satisfied. Your soldiers will stop burning our grain."</div>
+    <div class="clock"><strong>3 rounds</strong> until the wound is fatal. Each round a PC stands <em>inside</em> the ring: DC 13 Wis or 1 temp corruption. PCs at corruption 3+ inside for 2+ rounds: +1 temp corruption, no save.</div>
+  </div>
+  <table>
+    <tr><td class="k">A: Evidence</td><td class="v">Show cloth / tally stick / cult symbol. <strong>DC 14 Persuasion with advantage</strong>. Success: lowers the knife. Fail: one more round.</td></tr>
+    <tr><td class="k">B: Words only</td><td class="v"><strong>DC 18 Persuasion</strong>. Outlander/Hermit adds proficiency twice.</td></tr>
+    <tr><td class="k">C: Grab him</td><td class="v">Grapple/Disarm, Athletics or Acrobatics DC 13 vs his Dex. He never fights back, only struggles. Buys time for A or B.</td></tr>
+    <tr><td class="k">D: Too late</td><td class="v">He dies in ~1 hour unless someone casts Cure Wounds or Healing Word. Shrine blessing fades, guide lost, S5 dungeon-purpose checks lose his context.</td></tr>
+  </table>
+  <div class="dec"><strong>Box penalty:</strong> within 30 ft of him, A and B roll at <span class="warn">disadvantage</span> (and it cancels A's advantage). He smells slaughter in the wood and recoils. Someone holding the box outside the ring fixes it.</div>
 </div>
 <div>
-  <div class="block">
-    <div class="block-title">Scene 3: The Ritual Sacrifice Circle</div>
-    <p class="now"><strong>Dramatic Question:</strong> Can the party stop Thusnelda's ritual suicide before the blood circle activates?</p>
-    <div class="clock"><strong>Pressure Cooker:</strong> Started at dawn; 3 rounds to fatal cut. DC 13 Wis save vs 1 temp corruption each round inside circle.</div>
+  <div class="who">
+    <span class="who-name">Thusnelda</span><span class="who-tag">völva / seer · he/him · AC 12 · HP 27 · Dex +2 · Passive Perc 16</span>
+    <p><b>Look:</b> An older man, barefoot, wrist open, a flint knife older than his village. Calm. Chanting. He doesn't look at the party until he has something to say.</p>
+    <p><b>Objective:</b> End the divine hunger he believes is eating his people's future.</p>
+    <p><b>Goal:</b> Finish the rite in the ring of stones before anyone stops him.</p>
+    <p><b>Agenda:</b> Started at dawn. He won't rush and won't stop unless he gets proof (A), a miracle of argument (B), or is held down (C).</p>
+    <p><b>Secret:</b> The cult's blood rites poisoned the spiritual landscape. He can't tell their manufactured hunger from a real demand of Mars, so his death would do nothing. He's also spent <strong>three months hunting the cult's dungeon</strong> and never found it. He was looking in the wrong direction, and took that as a sign the gods wanted a different answer.</p>
+    <p><b>How to play him:</b> Right about everything except the one thing that matters. Not a villain, not despairing, not mad. He believes he's the only one brave enough to pay. His calm is real.</p>
+    <div class="say">If grabbed: "You do not understand what you are preventing. Let go of me."</div>
+    <div class="say">If persuaded: "Show me the place you describe. If the hunger ends when you unmake it, then I was wrong. I will wait."</div>
+    <div class="say">After, freely: "The dungeon entrance is south, down the old offering path. The chieftains used it. The first room below has been making the dead stay. Do not let the bones on the floor fool you. Someone sorted them. Someone is still proud of that work."</div>
+    <p><b>If the party wins below:</b> he's at the dungeon mouth when they come out. No apology. <em>"The debt is paid. Not the way I thought."</em></p>
+    <p><b>Restrained but unconvinced:</b> he just waits. The party has to decide what to do with a tied-up seer who still believes he's right.</p>
   </div>
 </div>
 </div>
-<div class="block">
-  <div class="block-title">Intervention Paths (Thusnelda, Völva Seer) &mdash; <span class="warn">Box Penalty: Disadv on Persuasion if within 30 ft!</span></div>
-  <table>
-    <tr><td class="k">Path A: Evidence (DC 14 Persuasion)</td><td class="v">Show cult cloth, tally stick, or symbol (advantage). Convinces him the hunger is manufactured by cult rites, not gods. Disadv if Artificer's box within 30 ft! He stops and waits at dungeon mouth.</td></tr>
-    <tr><td class="k">Path B: No Evidence (DC 18 Persuasion)</td><td class="v">Very hard. Overcomes 20 years of prophetic conviction through sheer rhetorical force. Disadv if box within 30 ft!</td></tr>
-    <tr><td class="k">Path C: Physical Restraint (DC 13 Ath/Acro)</td><td class="v">Grapple/Disarm knife. He struggles without attacking party; buys time for Path A dialogue.</td></tr>
-    <tr><td class="k">Path D: No Intervention / Failure</td><td class="v">Completes cut. Dies in 1 hour without healing magic. Grove blessing lost; party loses guide.</td></tr>
-  </table>
-</div>
-<div class="clue"><strong>Intel Unlocked (if stopped):</strong> Dungeon entrance is south down the old offering path. <em>"The first room below makes the dead stay. Someone sorted the bones... someone is proud of that work."</em></div>
 </div>
 
-<!-- ═══ DUNGEON APPROACH (was Scene 0) ═══ -->
+<!-- ═══ DUNGEON APPROACH ═══ -->
 <div id="tab-s0" class="tab-pane">
-<div class="block">
-  <div class="block-title">Scene 4 — Dungeon Approach &nbsp;<span style="color:#555;font-size:0.85em">map: SkeletonFortressEntrancePublic.jpg</span> <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_scene0_marsh_readaloud.mp3')">▶ Voice</button></div>
-  <div class="ra">The trees thin out and the ground goes soft underfoot before you see why. Ahead, the hillside opens in a mouth — not a metaphor. A skull carved from the living rock... A causeway of bone and old skulls runs down into a wide, glowing green marsh.</div>
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Scene 4 — The Skull Entrance ★ COMBAT &nbsp;<span style="color:#555;font-size:0.85em">map: SkeletonFortressEntrancePublic.jpg</span></div>
+    <div class="ra">The offering trail ends before the gaping mouth of the colossal skull. Cold air pours out like the breath of a tomb: embalming oil, limestone dust, old blood. A raspy clatter echoes up the stairwell as vertebrae grind on wet basalt. Out of the gloom slide two shapes, serpents built from bleached human spines with fanged skulls, their empty eye sockets lighting green.</div>
+    <p class="now"><strong>Dramatic Question:</strong> Can they force the stair before they're pinned on it?</p>
+  </div>
+  <div class="block">
+    <div class="block-title">Before / around the fight</div>
+    <ul>
+      <li><strong>DC 13 Investigation</strong> at the archway: cult markings around the teeth match the marsh cloth. Third confirmation: right place.</li>
+      <li><strong>Terrain:</strong> stair is <strong>two abreast</strong>. Nagas wait at the base. Retreat up the stair and the Skeletons come in behind.</li>
+      <li>Thusnelda (if saved) won't go in. He waits at the mouth.</li>
+    </ul>
+  </div>
+  <div class="dec"><strong>Danger:</strong> the stair is a perfect line for Lightning Bolt. Use it once, when 3+ PCs bunch up, and let them see it coming (the Naga rears back and the air crackles).</div>
 </div>
-<div class="clock">
-  <strong>Marsh hazard:</strong> DC 12 Con save/round off the causeway, or 1 exhaustion + 1 temp corruption. The causeway itself is always safe.
+<div>
+  <div class="who foe">
+    <span class="who-name">Bone Naga ×2</span><span class="who-tag">CR 4 · AC 15 · HP 58 each · speed 30</span>
+    <p><b>Look:</b> Long serpents of human vertebrae, a fanged serpent skull, green fire in the sockets. They taste of ash when they get close.</p>
+    <p><b>What they want:</b> Keep anyone out of the Ossuary. The chieftains sorted those bones by hand as devotion and put the Nagas here so the order would never be disturbed. Dormant until something moves on the stair.</p>
+    <p><b>How they fight:</b> <b>Bite</b> +5, <b>reach 10 ft</b>, 1d6+3 piercing + 3d6 poison. Spells (DC 12, +4): <em>ray of frost</em> (cantrip, slows 10 ft), <em>sleep</em>, <em>charm person</em>, <b>hold person</b> (2/day), <b>lightning bolt</b> (1/day, 8d6, DC 12 Dex half).</p>
+    <p><b>Tactics:</b> Round 1: Hold Person on whoever leads down the stair, so the line behind is stuck. Bite from 10 ft so they never need to step into the stair. Lightning Bolt up the stair when the party bunches. Second Naga charms or sleeps a healer.</p>
+    <p><b>Tough spots:</b> Immune poison; can't be charmed, paralyzed, poisoned, or exhausted. Darkvision 60 ft. <span class="warn">Not</span> vulnerable to bludgeoning (only the Skeletons are).</p>
+  </div>
+  <div class="who foe">
+    <span class="who-name">Skeleton ×4</span><span class="who-tag">CR 1/4 · AC 13 · HP 13 each</span>
+    <p><b>Look:</b> Scattered bones on the steps snap together on <strong>initiative 20</strong>.</p>
+    <p><b>How they fight:</b> Shortsword +4 (1d6+2) or shortbow +4 (80/320, 1d6+2). Mindless: they go behind the party and cut off the retreat up the stair.</p>
+    <p><b>Weak spot:</b> <b>vulnerable to bludgeoning</b>; one mace or warhammer hit usually drops one. Immune poison.</p>
+  </div>
+  <p class="improv">Bone Naga numbers are the Monster Manual block. chapter4.qmd lists a homebrew version (ray of sickness / ray of enfeeblement, bite 2d6+3 + 4d6 poison, DC 11 Con half). Pick one before the fight.</p>
 </div>
-<div class="block">
-  <div class="block-title">Two supply caches (DC 11 Investigation)</div>
-  <ul>
-    <li>Rations gone green, a tally-marked stick (the cult's been here a long time)</li>
-    <li>Second cache: torn cloth matching the chieftains' warband colors — 3rd confirmation this is the right place</li>
-  </ul>
 </div>
-<div class="block">
-  <div class="block-title">3 &times; <a href="https://www.dndbeyond.com/monsters/16799-banshee" target="_blank" style="color:#aac8ff;">Banshee</a> &mdash; CR 4 (HP 58 each, AC 12, <em>MM</em> p. 23) <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_banshee_dread_mother.mp3')">▶ Banshee Wail</button></div>
-  <table>
-    <tr><td class="k">Corrupting Touch</td><td class="v">+2 to hit, 1d6 necrotic</td></tr>
-    <tr><td class="k">Horrifying Visage</td><td class="v">DC 13 Wis, fear + aging 1d4×10 yrs</td></tr>
-    <tr><td class="k">Wail (1/day)</td><td class="v">DC 13 Con: drops to 0 HP on failure; 3d6 psychic on success.</td></tr>
-  </table>
-</div>
-<div class="dec"><strong>Tactics:</strong> Rise mid-causeway, ~1/3 across. Stagger Wails across rounds (never trigger two in the same round).</div>
 </div>
 
-<!-- ═══ SCENES 1-2 ═══ -->
+<!-- ═══ OSSUARY ═══ -->
 <div id="tab-s1s2" class="tab-pane">
 <div class="block">
-  <div class="block-title">Scene 5 — The Ossuary &nbsp;<span style="color:#d4884a;font-size:0.85em">★ S4 ENDS HERE — advance to L6</span></div>
-  <div class="ra">Round room, floor a carpet of femurs and ribs, stacked with care.</div>
-  <table>
-    <tr><td class="k">History DC13 (act)</td><td class="v">Sorted by size/age — curated for months, not years</td></tr>
-  </table>
-  <div class="ho"><strong>2 &times; <a href="https://www.dndbeyond.com/monsters/16812-bone-naga" target="_blank" style="color:#aac8ff;">Bone Naga</a> (HP 58, AC 15, <em>MM</em> p. 233) + 4 &times; <a href="https://www.dndbeyond.com/monsters/17015-skeleton" target="_blank" style="color:#aac8ff;">Skeleton</a> (HP 13, AC 13, <em>MM</em> p. 272):</strong> Both vulnerable to <em>BLUDGEONING</em>! Nagas cast Hold Person / Ray of Enfeeblement. Blunt weapons (maces, shields, warhammers) crush them in 1-2 fast rounds.</div>
+  <div class="block-title">Scene 5 — The Ossuary &nbsp;<span style="color:#d4884a;font-size:0.85em">★ SESSION ENDS HERE — advance to L6</span></div>
+  <div class="ra">The room ahead is round, and its far wall is shaped like the thing you just walked through: another skull, smaller, teeth picked out in inlaid bone. The floor is a carpet of femurs and ribs. Not scattered. Sorted, by size, by age, stacked with a care that took someone a very long time. Deeper in the dungeon, something breathes.</div>
+  <ul>
+    <li><strong>No combat.</strong> This is the quiet beat after the stair fight.</li>
+    <li><strong>DC 13 History</strong> (examining): not war dead. Curated, months of deliberate work, by someone proud of it. Matches the tally stick.</li>
+    <li>A short passage at the far end bends out of sight. <strong>Stop here.</strong> Level up to 6 at the break; they're still inside when next session opens.</li>
+    <li>Missed one of the three confirmations (cloth, tally stick, archway marks)? Leave it findable at the start of next session.</li>
+  </ul>
 </div>
+<details class="more"><summary>Next session preview (only if the party pushes on): Blood-Growth Rooms</summary>
 <div class="block">
-  <div class="block-title">Scene 2 — Blood-Growth Rooms</div>
   <div class="ra">Dark red matter, wet-looking, veined, fed on blood deliberately over time.</div>
-  <table>
-    <tr><td class="k">Medicine/Nature DC12 (act)</td><td class="v">Organic, fed on purpose</td></tr>
-  </table>
-  <div class="ho"><strong><a href="https://www.dndbeyond.com/monsters/17068-yochlol" target="_blank" style="color:#aac8ff;">Yochlol</a> (HP 136, AC 15, <em>MM</em> p. 65) + 2 &times; <a href="https://www.dndbeyond.com/monsters/16847-dretch" target="_blank" style="color:#aac8ff;">Dretch</a> (HP 18, AC 11, <em>MM</em> p. 57):</strong> Yochlol uses Mist Form, Web (DC 15), and Slam (+6, 1d6+3 + 6d6 poison). Dretches emit Fetid Cloud (10-ft radius, DC 11 Con). Focus fire to drop quickly.</div>
+  <table><tr><td class="k">Medicine/Nature DC 12</td><td class="v">Organic, fed on purpose</td></tr></table>
+  <div class="ho"><strong>Yochlol</strong> (HP 136, AC 15) + 2 <strong>Dretch</strong> (HP 18, AC 11). Yochlol: Mist Form, Web (DC 15), Slam +6 1d6+3 + 6d6 poison. Dretches: Fetid Cloud 10 ft, DC 11 Con.</div>
 </div>
+</details>
 </div>
 
 <!-- ═══ SCENES 3-4 ═══ -->
@@ -337,8 +435,8 @@
     <div class="block-title">The Bone Nagas &amp; Skeletons</div>
     <div class="setup-line"><strong>O:</strong> Guard the skull entrance into the Ossuary</div>
     <div class="setup-line"><strong>G:</strong> Bottleneck and destroy intruders on the narrow stair</div>
-    <div class="setup-line"><strong>A:</strong> Hold Person / Ray of Enfeeblement; animate 4 Skeletons on init 20</div>
-    <div class="setup-line"><strong>S:</strong> Vulnerable to bludgeoning; placed by chieftains to guard bones</div>
+    <div class="setup-line"><strong>A:</strong> Hold Person the stair leader, Lightning Bolt the line; 4 Skeletons rise on init 20</div>
+    <div class="setup-line"><strong>S:</strong> Chieftains sorted the Ossuary bones by hand; Nagas guard that order. Only the Skeletons are vulnerable to bludgeoning.</div>
   </div>
 </div>
 <div>
