@@ -97,6 +97,7 @@
 <div id="tabs">
   <button class="tab-btn active" onclick="showTab('pre', this)">⚙ Pre-Session</button>
   <button class="tab-btn" onclick="showTab('bog', this)">1 · Farbog</button>
+  <button class="tab-btn" onclick="showTab('myling', this)">1b · The Boy</button>
   <button class="tab-btn" onclick="showTab('village', this)">2 · Village</button>
   <button class="tab-btn" onclick="showTab('grove', this)">3 · Grove &amp; Circle</button>
   <button class="tab-btn" onclick="showTab('s0', this)">4 · Skull Entrance</button>
@@ -195,14 +196,70 @@
     <div class="note"><strong>Say this before initiative:</strong> a PC killed by Life Drain rises as a Zombie next round unless the Wight dies first or the body is dragged off the causeway.</div>
   </div>
   <div class="who opt">
-    <span class="who-name">The Myling (optional)</span><span class="who-tag">drowned boy · becomes a Specter if wronged</span>
-    <p><b>Trigger:</b> DC 13 Perception mid-crossing: a child crying with water in his lungs, 30 ft left of the causeway. Ignored: he climbs onto the causeway behind the last PC.</p>
-    <p><b>Look:</b> Twelve or thirteen. Bog-coloured skin, months-rotted work clothes, unfocused eyes. Arms held up the way a small child asks to be carried. One Germanic word, over and over: <em>"home."</em></p>
-    <p><b>What he wants:</b> A cult test victim, too young to refuse. He wants to be carried to holy ground. He means no harm.</p>
-    <p><b>The burden:</b> carrier's speed halved; each round DC 10 + rounds carried Str or speed 0 (he gets heavier away from the bog). Can't be shaken off. Holy ground: <strong>Belatucadrus shrine</strong> (Scene 3), a Cleric/Druid 10-min consecration, or the village burial mound (DC 13 Investigation).</p>
-    <div class="say">At the shrine: "It doesn't hurt here." He sits, closes his eyes, and is gone.</div>
-    <p><b>Reward:</b> carrier gets <em>Myling's Rest</em>: advantage on death saves, immune to Frightened, this session.</p>
-    <p><b>If attacked or abandoned:</b> Specter. AC 12, HP 22, incorporeal, Life Drain +4, 2d6 necrotic (DC 13 Con or max HP drops), sunlight disadvantage. His shriek: DC 13 Wis or Frightened 1 min, and it can wake the Wights.</p>
+    <span class="who-name">The Myling (optional)</span><span class="who-tag">drowned boy · full brief in the <b>1b · The Boy</b> tab</span>
+    <p><b>Trigger:</b> DC 13 Perception mid-crossing: a child crying with water in his lungs, 30 ft left of the causeway. If ignored, he climbs onto the causeway behind the last PC.</p>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══ MYLING ═══ -->
+<div id="tab-myling" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="who opt">
+    <span class="who-name">The Boy in the Bog (Myling)</span><span class="who-tag">optional · tone scene, not a fight</span>
+    <p><b>Who he was:</b> A village boy, twelve or thirteen. When the chieftains demanded devotion, he was ordered to stand in the bog water overnight like the grown converts. He was too young to refuse and too small to survive it. Nobody came for his body, so nobody mourned him properly. He has been calling since the night he drowned.</p>
+    <p><b>Look:</b> Skin the colour of the bog, hair plastered flat, work clothes rotted to threads. Eyes open but not quite focused, as if looking through you at a fire far away. Water runs from his mouth when he speaks.</p>
+    <p><b>Wants:</b> To go home. In his story that means holy ground, where the dead can rest. He doesn't want to hurt anyone and doesn't understand that he's dead.</p>
+    <p class="improv">Improv, not canon yet: he has no name in the files. If they ask, he says <b>"Wulf"</b>. His body is snagged in roots 30 ft off the causeway, one ankle tied to a stake with cord.</p>
+  </div>
+  <div class="block">
+    <div class="block-title">How it starts</div>
+    <div class="ra">A sound under the wind, low and wet: a child crying with water in his lungs. Then it stops, and starts again, closer.</div>
+    <p style="font-size:0.82em"><b style="color:#8ab8d8">Approached:</b></p>
+    <div class="ra">It is a boy. Twelve, maybe thirteen. His skin is the colour of the bog. He holds his arms up the way a small child does when he wants to be carried. He says one word, over and over, in Germanic. <em>"Home."</em></div>
+    <p style="font-size:0.82em"><b style="color:#8ab8d8">Ignored:</b></p>
+    <div class="ra">Something cold and small takes hold of the back of your leg. You look down. A grey hand, a child's hand, and a face rising out of the water behind you on the causeway. "Home," it says. "Please."</div>
+  </div>
+  <div class="block">
+    <div class="block-title">What the party can learn</div>
+    <table>
+      <tr><td class="k">Insight DC 10</td><td class="v">He isn't hostile. He's terrified, and very cold.</td></tr>
+      <tr><td class="k">Religion DC 12</td><td class="v">A <em>myling</em>: the unmourned dead child of northern stories. Carry him to holy ground and he rests. Refuse him and he turns. (Romans would call him one of the <em>lemures</em>, the hungry dead.)</td></tr>
+      <tr><td class="k">Medicine DC 13</td><td class="v"><span class="improv">(improv)</span> If they find the body: drowned, ankle tied to a stake. He wasn't allowed to leave. Counts as <b>evidence</b> for Thusnelda (Path A).</td></tr>
+    </table>
+  </div>
+</div>
+<div>
+  <div class="block">
+    <div class="block-title">His lines (Germanic; he only understands simple words)</div>
+    <div class="say">"Home." (always first, and whenever he's frightened)</div>
+    <div class="say">"It's cold. Why is it always cold?"</div>
+    <div class="say">"They said the god would see me if I stood still all night. I stood still."</div>
+    <div class="say">"Is my mother still at the fire?"</div>
+    <div class="say">Near the box: he presses his face into the carrier's neck. "It's hungry. Like them. Don't let it look at me."</div>
+  </div>
+  <div class="block">
+    <div class="block-title">The burden</div>
+    <ul>
+      <li>He climbs on willingly, or grapples (DC 13 Str contest) if refused but not attacked.</li>
+      <li>Carrier's <b>speed halved</b>. Each round: <b>DC 10 + rounds carried</b> Str check or speed 0. He gets heavier the further from the bog he goes.</li>
+      <li>Can't be shaken off. Hitting him turns him hostile.</li>
+      <li>He can only be set down on <b>holy ground</b>: the <b>Belatucadrus shrine</b> (Grove), a Cleric/Druid 10-min consecration, or the <b>village burial mound</b> (DC 13 Investigation).</li>
+    </ul>
+    <div class="note"><span class="improv">(improv)</span> <b>Carried into the village:</b> the woman at the quern stops grinding. She knows him. Without a word she leads them to the mound. Party gets <b>advantage on village Persuasion</b>: they brought one of theirs home.</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Release</div>
+    <div class="ra">He slides down from your back and stands very still for a moment. Then he looks at whoever carried him, really looks, for the first time. "It doesn't hurt here." He sits down, closes his eyes, and is gone. Not dramatically. Just gone.</div>
+    <p style="font-size:0.82em"><b style="color:#8ab8d8">Reward:</b> carrier gets <em>Myling's Rest</em> for the session: advantage on death saves, immune to Frightened.</p>
+  </div>
+  <div class="who foe">
+    <span class="who-name">If attacked or abandoned: he turns</span><span class="who-tag">Specter · AC 12 · HP 22</span>
+    <div class="ra">His mouth opens wider than a mouth should, and the bog water pours out in a scream.</div>
+    <p><b>Shriek:</b> DC 13 Wis or Frightened 1 min. It can wake the Wights if they're still dormant.</p>
+    <p><b>Fights:</b> Life Drain +4, 2d6 necrotic, DC 13 Con or max HP drops. Incorporeal Movement. Sunlight: disadvantage on attacks.</p>
   </div>
 </div>
 </div>
