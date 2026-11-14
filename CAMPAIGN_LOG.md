@@ -231,7 +231,7 @@ the fighting gets, the more of Mars slips through. Save the design work for the 
 ## Current State (read this first, before prepping any session)
 
 **Party:** Level 5-6, five core PCs (Artificer, Druid, Bard, Cleric, and a Barbarian
-among the original five) Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3) is **no longer actively playing**; do not plan scenes or tokens around him. Active table: Iris, Julia Jana, Tanit, Rivia, Ursula.
+among the original five). Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3) is **no longer actively playing**; do not plan scenes or tokens around him. Active table: Iris, Julia Jana, Tanit, Rivia, Ursula.
 
 **Where they are:** Session 5 played (2026-11-03, inferred from `3nov.cmpgn`). The party
 crossed the Farbog, defeated the Wights, and **has arrived in the Germanic village with the
