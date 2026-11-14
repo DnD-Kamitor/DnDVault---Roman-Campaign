@@ -233,12 +233,13 @@ the fighting gets, the more of Mars slips through. Save the design work for the 
 **Party:** Level 5-6, five core PCs (Artificer, Druid, Bard, Cleric, and a Barbarian
 among the original five) plus Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3).
 
-**Where they are:** Session 4 complete (played 2026-10-11). **The party is standing directly in front of the Farbog.**
-The Farbog has NOT been crossed yet. Session 5 is next.
+**Where they are:** Session 5 played (2026-11-03, inferred from `3nov.cmpgn`). The party
+crossed the Farbog, defeated the Wights, and **has arrived in the Germanic village with the
+Myling (the drowned boy) in tow.** Thusnelda not yet met on-screen (confirm). Session 6 is next.
 
-**Upcoming Scope (Session 5):**
-- Step onto the causeway / Cross the Farbog (bone causeway, standing stone OTHALAN riddle, Wights, Myling)
-- Reach the Germanic village south of the bog — Thusnelda (völva seer, he/him) is here (first encounter)
+**Upcoming Scope (Session 6):**
+- Germanic village: first encounter with Thusnelda (völva seer, he/him). Box aura = disadvantage on calming Persuasion unless box kept 30+ ft away.
+- The Myling: still with the party. Carried to holy ground (Belatucadrus shrine in the grove) he rests and the carrier gets *Myling's Rest*; refused or abandoned, he turns hostile (Specter stats, shriek DC 13 Wis).
 - North of village: Sacred Grove & false sacrifice circle (Thusnelda attempting suicide ritual to end divine debt)
 - South of village: Dungeon entrance (cult lair, Bone Nagas + Skeletons)
 - Enter dungeon: Ossuary (first room of cult dungeon)
@@ -253,7 +254,7 @@ The Farbog has NOT been crossed yet. Session 5 is next.
 | Lucius's 4 Guards | Stranded without an officer | Currently left in the forest; chain of command answers to Lucius's seal ring or Corvinus. |
 | Augur Cassia | Per script, alive/present | At Vindolanda. No deviation. |
 | Vercingetorix | **Enemy (Ancient / Bound)** | **NOT AN ALLY, NEVER HAS BEEN AN ALLY.** Not present with party. Ancient enemy bound to unending war against Rome. |
-| Thusnelda | Alive, in village/grove ahead | Völva/seer (he/him), not yet met by party. Believes a willing self-sacrifice closes the divine debt. |
+| Thusnelda | Alive, in village/grove | Völva/seer (he/him); party now in his village. Believes a willing self-sacrifice closes the divine debt. |
 | Senator Brutus | Off-screen, never appears | Wants spear kept from Rome for senatorial politics. |
 | Mars | Building toward confrontation | Not anti-Rome — pro-war, indifferent to who wins, starved by ~200 years of the Pax Romana, cornered onto this one remaining tribute-line. His only real enemy is destruction. |
 
@@ -363,6 +364,16 @@ unresolved — carry them forward into Session 4 as needed, or treat as skipped.
    - The party marched from the forest camp to the marshlands.
    - **Current position:** The party halted directly **in front of the Farbog**.
    - **The Farbog has NOT been crossed yet.** The causeway, the standing stone riddle, the Wights, and the Myling encounter all await as the opening of Session 5.
+
+---
+
+## Session 5: Across the Farbog — COMPLETE (Played 2026-11-03, date inferred)
+
+**Actual play record (brief, from GM; expand with details):**
+- Party crossed the Farbog causeway.
+- **The Wights were defeated.**
+- The Myling (drowned boy) joined the party; they arrived at the Germanic village carrying/escorting him.
+- Open questions to fill in: OTHALAN standing-stone riddle outcome, any deaths/corruption/exhaustion, whether Thusnelda has been met yet, who carries the Myling.
 
 ---
 

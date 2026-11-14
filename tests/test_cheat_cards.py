@@ -49,10 +49,9 @@ class TestCheatCards(unittest.TestCase):
         self.assertIn(".audio-btn {", self.ch5_html)
         self.assertIn(".audio-btn.playing", self.ch5_html)
 
-    def test_07_ch4_contains_all_4_s4_audio_clips(self):
+    def test_07_ch4_contains_all_s4_audio_clips(self):
         expected_clips = [
             "s4_scene0_marsh_readaloud.mp3",
-            "s4_banshee_dread_mother.mp3",
             "s4_wraith_chieftain_confession.mp3",
             "s4_glabrezu_core_entrance.mp3"
         ]
@@ -75,7 +74,7 @@ class TestCheatCards(unittest.TestCase):
     def test_09_ch4_audio_relative_paths_resolve_to_real_files(self):
         pattern = re.compile(r"playAudio\(this,\s*'([^']+)'\)")
         matches = pattern.findall(self.ch4_html)
-        self.assertEqual(len(matches), 4, f"Expected 4 audio buttons in ch4, found {len(matches)}")
+        self.assertEqual(len(matches), 3, f"Expected 3 audio buttons in ch4 (Banshee cut Nov 10, Farbog now Wights+Myling), found {len(matches)}")
         for rel_path in matches:
             resolved = (CH4_CARD.parent / rel_path).resolve()
             self.assertTrue(resolved.exists(), f"Path '{rel_path}' in ch4 does not exist on disk ({resolved})")
@@ -106,7 +105,6 @@ class TestCheatCards(unittest.TestCase):
         self.assertIn("audio/clips/*.mp3", resources, "_quarto.yml must include 'audio/clips/*.mp3' in resources")
 
     def test_14_ch4_monster_manual_dndbeyond_links(self):
-        self.assertIn("https://www.dndbeyond.com/monsters/16799-banshee", self.ch4_html)
         self.assertIn("https://www.dndbeyond.com/monsters/16812-bone-naga", self.ch4_html)
         self.assertIn("https://www.dndbeyond.com/monsters/17068-yochlol", self.ch4_html)
         self.assertIn("https://www.dndbeyond.com/monsters/16870-glabrezu", self.ch4_html)
