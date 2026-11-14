@@ -277,7 +277,7 @@ copy_npc "Bone_Token_OTHALAN" "$S"
 
 # Creatures: the Blood Cult Dungeon's monster roster (all real Monster Manual
 # demons/undead, no generic filler -- see SCRUM_BACKLOG.md Epic 8)
-for slug in Banshee Bone_Naga Yochlol Dretch Shadow_Demon Wraith Glabrezu Skeleton Wight; do
+for slug in Myling Banshee Bone_Naga Yochlol Dretch Shadow_Demon Wraith Glabrezu Skeleton Wight; do
   copy_npc "$slug" "$S"
 done
 
@@ -301,9 +301,10 @@ copy_npc "Mars" "$S"
 copy_npc "Janus" "$S"
 copy_npc "Wight_General" "$S"
 copy_npc "Caesar_Chain_Winch" "$S"
+copy_npc "Thusnelda" "$S"           # possible guardian volunteer (Destroy ending)
 
 # Creatures: reused corridor undead from earlier sessions, no new pipeline work needed
-for slug in Wraith Wight Shadow Specter Zombie; do
+for slug in Wraith Wight Shadow Specter Zombie Skeleton Shadow_Demon; do
   copy_npc "$slug" "$S"
 done
 

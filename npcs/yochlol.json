@@ -4,14 +4,30 @@
   "cr": "6",
   "size": "Medium",
   "alignment": "Chaotic Evil",
-  "hp": 136,
-  "hp_formula": "16d8+64",
+  "hp": 68,
+  "hp_formula": "8d8+32",
   "ac": 15,
-  "ac_note": "natural armor",
+  "ac_note": "natural armor; gestating variant (full yochlol 136 HP)",
   "speed": "30 ft.",
-  "ability_scores": {"STR": 15, "DEX": 11, "CON": 19, "INT": 13, "WIS": 14, "CHA": 16},
-  "saving_throw_proficiencies": ["STR", "CON", "WIS", "CHA"],
-  "skill_proficiencies": ["Deception", "Insight", "Perception"],
+  "ability_scores": {
+    "STR": 15,
+    "DEX": 11,
+    "CON": 19,
+    "INT": 13,
+    "WIS": 14,
+    "CHA": 16
+  },
+  "saving_throw_proficiencies": [
+    "STR",
+    "CON",
+    "WIS",
+    "CHA"
+  ],
+  "skill_proficiencies": [
+    "Deception",
+    "Insight",
+    "Perception"
+  ],
   "skill_overrides": {},
   "resistances": "cold, fire, lightning; bludgeoning/piercing/slashing from nonmagical weapons",
   "immunities": "poison",

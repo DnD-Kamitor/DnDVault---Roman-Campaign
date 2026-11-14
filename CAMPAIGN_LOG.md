@@ -237,12 +237,30 @@ among the original five). Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3) i
 crossed the Farbog, defeated the Wights, and **has arrived in the Germanic village with the
 Myling (the drowned boy) in tow.** Thusnelda not yet met on-screen (confirm). Session 6 is next.
 
-**Upcoming Scope (Session 6):**
-- Germanic village: first encounter with Thusnelda (völva seer, he/him). Box aura = disadvantage on calming Persuasion unless box kept 30+ ft away.
-- The Myling: still with the party. Table ruling (live, Session 5): a village boy the chieftains **sacrificed in the temple** (supersedes earlier grove/pot rulings); his bones still lie in the temple (DC 12 Investigation). Laying him beside / burying his bones releases him. Refused or abandoned, he turns hostile (Specter stats, shriek DC 13 Wis). Improv name if asked: "Wulf".
-- North of village: Sacred Grove & false sacrifice circle (Thusnelda attempting suicide ritual to end divine debt)
-- South of village: Dungeon entrance (cult lair, Bone Nagas + Skeletons)
-- Enter dungeon: Ossuary (first room of cult dungeon)
+**The campaign ends in two sessions (decided 2026-11-14).**
+
+**Session 6 (Chapter 4 pack, Level 6 &rarr; 7):** Village &rarr; Sacred Grove &rarr; Sacrifice Circle &rarr;
+Skull Entrance &rarr; Ossuary &rarr; Blood-Growth (cuttable) &rarr; Rune Lock &rarr; Minor Altar (cuttable) &rarr;
+Gathering Hall &rarr; Core Room. Ends on the crystal-star cracking and the stair down; long rest; Level 7.
+- The woman at the quern is the Myling's **mother**; she sends the party south for his bones.
+- "The temple" where the Myling was sacrificed = the cult temple under the skull. His bones are the
+  unsorted bundle on the **Ossuary** altar. Laid beside them he rests; carrier gets *Myling's Rest*
+  (adv. death saves, immune Frightened) to the end of Session 7. Holy ground (mound, shrine) only lets
+  the party set him down to wait. (GM call made during prep; change if the table said otherwise.)
+- Puzzles: Ossuary Three Niches (answer OTHALAN), Rune Lock (blue, green, yellow, red), Sun-Path
+  braziers (east, south, west, north; clue on the Belatucadrus shrine).
+- Yochlol runs as a gestating variant (68 HP, rooted, hatches round 4 unless the pillar burns).
+- Two chieftain Wraiths (not three) can confess. Glabrezu offers a bargain: open the box, leave the spear.
+
+**Session 7 (Chapter 5 pack, Level 7, FINAL):** Stair &rarr; Sunken Armory &rarr; Three Passages &rarr;
+Vercingetorix &rarr; Threshold of Janus &rarr; Antechamber of Mars &rarr; the Choice &rarr; Epilogue.
+- Destroy = 3-round Unmaking Ritual (winches, sever bloodline, seat + shatter). Cost: someone takes the
+  guardian's seat forever: a PC, or **Thusnelda** if he was saved and came along.
+- Rome = seal in Lucius's iron lockbox, one round of Mars's fury. Mars = no fight, DC 13 Wis or +1 corruption.
+- Every ending: Lucius's pre-signed letters make every survivor a citizen.
+
+**Canonical stats:** `scripts/build_final_statblocks.py` &rarr; `gm_tools/final_statblocks.html` (also
+injected into both print modules). Mars HP 300, AC 22/16; Vercingetorix HP 150, AC 18. Tokens regenerated to match.
 
 **Key NPC status:**
 

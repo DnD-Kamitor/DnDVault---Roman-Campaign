@@ -128,7 +128,7 @@ class TestAIPersonasAndRAG(unittest.TestCase):
         self.assertIsNotNone(c)
         self.assertEqual(c["npc_name"], "Mars")
         self.assertIn("Challenge Rating: 20", c["text"])
-        self.assertIn("HP: 100", c["text"])
+        self.assertIn("HP: 300", c["text"])
 
     def test_15_live_qdrant_collection_status(self):
         try:

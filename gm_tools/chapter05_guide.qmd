@@ -3,9 +3,15 @@ title: "GM Session Guide: Chapter 5 (The Wrath of Mars)"
 subtitle: "GM guide — Chapter 5"
 ---
 
+::: {.callout-important}
+## Table-truth update (Session 7 of 7, the finale)
+The canonical at-table version of the Unmaking Ritual (round by round), the three endings with mechanics, the per-ending epilogue and every stat block are in `gm_tools/chapter05_print.html`, `gm_tools/cheat_card_ch5.html` and `gm_tools/final_statblocks.html`. Thusnelda (if alive) can volunteer for the guardian's seat. Where this guide disagrees, those win.
+:::
+
+
 *The crystal-star focus is failing. The party descends past a dead king who has been fighting since 52 BC to a granite altar where a starving god waits. No option at the end saves everyone. That is the point.*
 
-**Level:** 7 (final, no further advancement) · **Players:** 6 (Iris, Julia Jana, Tanit, Rivia, Ursula, Brian) · **Time:** 3-4 hrs · **Type:** Final dungeon crawl + divine confrontation
+**Level:** 7 (final, no further advancement) · **Players:** 5 (Iris, Julia Jana, Tanit, Rivia, Ursula) · **Time:** 3-4 hrs · **Type:** Final dungeon crawl + divine confrontation
 
 ---
 
@@ -34,7 +40,7 @@ subtitle: "GM guide — Chapter 5"
 | Janus (Threshold Vision) | Antechamber archway | Remind mortals that war is neither simple good nor evil | Dual-faced omen at Scene 4 entrance |
 
 **Active Continuity & Ground Truth:**
-- Centurion Varro was executed at the North Gate (Session 1); Tribune Lucius died in northern woods ambushed by giant spiders (Session 3). Lucius remains strictly deceased.
+- Centurion Varro opened the gate in the Session 2 raid, fought Ursula, and died in the Session 3 cold open; Tribune Lucius died in northern woods ambushed by giant spiders (Session 3). Lucius remains strictly deceased.
 - Party operates alone carrying Lucius's locked dispatch box, signet ring, and Corvinus's secret directive to destroy the spear in the field.
 - **The Box Cataclysm:** Rivia carries the scorched OTHALAN containment box holding both the Spear of Mars and Ursula's possessed Goliath Greataxe (+2 Intimidation). In Scene 4, Mars immediately smells both weapons and mocks Rivia's mortal naivety.
 
@@ -99,7 +105,7 @@ Load `s5_mars_vault.html`/`.jpg`, zone 3.
 - **Parry (Reaction):** +4 AC against one melee attack.
 - **Sword of the Last Charge:** +8 to hit, 2d6+5 slashing + 2d8 necrotic.
 - **Relentless (1/day):** When reduced to 0 HP, drops to 1 HP instead and roars *"FINISH IT!"* unless hit by radiant/Belatucadrus damage.
-- **Champion's Duel:** If Ursula or Brian steps forward, he accepts a 1-on-1 clash with honor.
+- **Champion's Duel:** If a PC (Ursula is the natural one) formally challenges him, he accepts a 1-on-1 clash with honor.
 
 **Final Death:** 1 minute of lucidity. Delivers the tactical key to Mars's defeat:
 *"The granite altar... four massive iron chain winches in the floor... Caesar's siege engineers forged them from Gallic steel to bind a god's avatar. Lock the four iron rings... they will drag Mars down and shatter his divine invulnerability. Only then can the spear be broken on the anvil!"*

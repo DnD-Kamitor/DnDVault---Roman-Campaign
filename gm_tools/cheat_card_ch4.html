@@ -88,23 +88,23 @@
 
 <div id="header">
   <h1>Ch4 — The God's Demand</h1>
-  <span class="sub">L5&rarr;6 &nbsp;·&nbsp; 4&ndash;5 hrs &nbsp;·&nbsp; Farbog &rarr; Village &rarr; Sacred Grove &rarr; Sacrifice Circle &rarr; Skull Entrance &rarr; Ossuary</span>
+  <span class="sub">SESSION 6 of 7 &nbsp;·&nbsp; L6&rarr;7 &nbsp;·&nbsp; 4&ndash;5 hrs &nbsp;·&nbsp; 5 players &nbsp;·&nbsp; Village &rarr; Grove &rarr; Circle &rarr; Skull Entrance &rarr; Ossuary &rarr; Temple &rarr; Core Room</span>
   <div id="story">
-    The party crosses the Farbog alone carrying Lucius's locked dispatch box and the corrupted Spear. At the Sacred Grove, they must race against the clock to halt Thusnelda's ritual suicide before the blood circle activates. Defeating the Bone Nagas at the skull threshold, they breach the curated Ossuary to advance to Level 6.
+    Five soldiers with no officer carry a drowned boy and a box that hums with a god's hunger. The seer who could guide them is bleeding to death in a ring of stones, and the boy's bones lie in the temple below. The session ends when the crystal-star cracks and the stair goes down.
   </div>
 </div>
 
 <div id="tabs">
   <button class="tab-btn active" onclick="showTab('pre', this)">⚙ Pre-Session</button>
-  <button class="tab-btn" onclick="showTab('bog', this)">1 · Farbog</button>
-  <button class="tab-btn" onclick="showTab('myling', this)">1b · The Boy</button>
-  <button class="tab-btn" onclick="showTab('village', this)">2 · Village</button>
-  <button class="tab-btn" onclick="showTab('grove', this)">3 · Grove &amp; Circle</button>
+  <button class="tab-btn" style="color:#555" onclick="showTab('bog', this)">✓ Farbog</button>
+  <button class="tab-btn" onclick="showTab('myling', this)">The Boy</button>
+  <button class="tab-btn" onclick="showTab('village', this)">1 · Village</button>
+  <button class="tab-btn" onclick="showTab('grove', this)">2-3 · Grove &amp; Circle</button>
   <button class="tab-btn" onclick="showTab('s0', this)">4 · Skull Entrance</button>
-  <button class="tab-btn" onclick="showTab('s1s2', this)">5 · Ossuary ★S4 END</button>
-  <button class="tab-btn" style="color:#555;border-left:1px solid #333" onclick="showTab('s3s4', this)">S5› Altar/Lock</button>
-  <button class="tab-btn" style="color:#555" onclick="showTab('s5', this)">S5› Hall</button>
-  <button class="tab-btn" style="color:#555" onclick="showTab('s6', this)">S5› Core Room</button>
+  <button class="tab-btn" onclick="showTab('s1s2', this)">5 · Ossuary</button>
+  <button class="tab-btn" onclick="showTab('s3s4', this)">6-8 · Growth / Lock / Altar</button>
+  <button class="tab-btn" onclick="showTab('s5', this)">9a · Hall</button>
+  <button class="tab-btn" onclick="showTab('s6', this)">9b · Core ★END</button>
   <button class="tab-btn" onclick="showTab('npcs', this)">NPCs</button>
   <button class="tab-btn" onclick="showTab('server', this)">MapTool</button>
 </div>
@@ -117,40 +117,46 @@
 <div>
   <div class="block">
     <div class="block-title">Maps — load in sequence</div>
-    <div class="setup-line"><span class="lbl">Farbog:</span> <span class="file">s3_farbog_crossing.html</span></div>
     <div class="setup-line"><span class="lbl">Village:</span> <span class="file">s3_germanic_village.html</span></div>
     <div class="setup-line"><span class="lbl">Grove &amp; Circle:</span> <span class="file">s4_sacred_grove.html</span></div>
-    <div class="setup-line"><span class="lbl">Dungeon approach:</span> <span class="file">SkeletonFortressEntrancePublic.jpg</span></div>
-    <div class="setup-line"><span class="lbl">Ossuary (1st room, S4 ends here):</span> <span class="file">Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg</span></div>
-    <div class="setup-line" style="color:#555;font-size:0.78em;margin-top:4px">All in: Maptool/maps/campaign/S4_The_Gods_Demand/</div>
+    <div class="setup-line"><span class="lbl">Skull Entrance:</span> <span class="file">SkeletonFortressEntrancePublic.jpg</span></div>
+    <div class="setup-line"><span class="lbl">Temple (Scenes 5-9a):</span> <span class="file">Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg</span></div>
+    <div class="setup-line"><span class="lbl">Core Room (9b):</span> <span class="file">CastleCoreRoomPublic.jpg</span></div>
+    <div class="setup-line" style="color:#555;font-size:0.78em;margin-top:4px">All in: Maptool/maps/campaign/S4_The_Gods_Demand/ · full stat blocks: <span class="file">final_statblocks.html</span> · standalone module: <span class="file">chapter04_print.html</span></div>
   </div>
   <div class="block">
-    <div class="block-title">Continuity — confirmed before running</div>
+    <div class="block-title">Table truth (CAMPAIGN_LOG)</div>
     <ul>
-      <li>Party travels alone. Tribune Lucius dead (S3 spider lure) — party carries his locked iron box, seal ring, and citizenship letters. Corvinus's secret orders: destroy spear in field.</li>
-      <li>Centurion Varro dead (S1 gate execution). Legate Corvinus &amp; Augur Cassia stayed at Fort Vindolanda.</li>
-      <li>Vercingetorix is an ancient enemy bound to eternal war, defeated at fort in S3, waiting in subterranean vault below — <span class="warn">NOT with party!</span></li>
-      <li><span class="warn">Cult name NOT yet revealed.</span> Party enters blind; discovers source in dungeon.</li>
-      <li><span class="warn">Box Cataclysm (Rivia's Fatal Mistake):</span> Rivia placed Spear of Mars into Artificer's box under dark influence; after Ursula's battle possession, Rivia put Ursula's Goliath Greataxe inside thinking it would nullify the magic. Dead wrong — resonated violently, scorched OTHALAN rune into wood. Radiates aura: <strong>+2 Intimidation</strong>, <strong>disadv on calm diplomacy</strong> (calming Thusnelda in Scene 3 unless kept 30+ ft away), <strong>undead sense party from double range</strong>.</li>
-      <li>Party has never met Thusnelda — male völva (he/him), left village at dawn for grove ritual.</li>
+      <li><strong>Session 5 done:</strong> Farbog crossed, Wights destroyed, the Myling ("Wulf") rides with the party.</li>
+      <li>Varro and Lucius dead. No officer. Party carries Lucius's iron lockbox, seal ring, citizenship letters, Corvinus's sealed orders (destroy the spear).</li>
+      <li>Vercingetorix is an enemy waiting far below: <span class="warn">NOT with the party, never an ally.</span> Cult name still unrevealed.</li>
+      <li><span class="warn">Box Cataclysm:</span> spear + Ursula's greataxe in Rivia's box. <strong>+2 Intimidation</strong>, <strong>disadv on calm Persuasion within 30 ft</strong>, undead sense the party at double range (no surprise on undead).</li>
+      <li>Brian is not playing.</li>
     </ul>
   </div>
 </div>
 <div>
   <div class="block">
-    <div class="block-title">Tokens — drag to sidebar before session</div>
-    <div class="setup-line"><strong>Tonight:</strong> <span class="tok">Wight</span> ×3 (HP 45) &middot; <span class="tok">Specter</span> ×1 (HP 22, Myling if hostile) &middot; <span class="tok">Thusnelda</span> &middot; <span class="tok">Bone_Naga</span> ×2 (HP 58) &middot; <span class="tok">Skeleton</span> ×4 (HP 13)</div><div class="setup-line" style="color:#666">Next session:</div>
-    <div class="setup-line"><span class="tok">Yochlol</span> ×1 (HP 136) &middot; <span class="tok">Dretch</span> ×2 (HP 18)</div>
-    <div class="setup-line"><span class="tok">Shadow_Demon</span> ×3 (HP 66) &middot; <span class="tok">Wraith</span> ×3 (HP 67)</div>
-    <div class="setup-line"><span class="tok">Glabrezu</span> ×1 (HP 157, Core Room guardian)</div>
-    <div class="setup-line"><span class="tok">All 6 player tokens</span></div>
+    <div class="block-title">Tokens — drag to sidebar</div>
+    <div class="setup-line"><span class="tok">Myling</span> (carried) &middot; <span class="tok">Thusnelda</span> &middot; <span class="tok">Belatucadrus_Shrine</span></div>
+    <div class="setup-line"><span class="tok">Bone_Naga</span> ×2 (HP 58) &middot; <span class="tok">Skeleton</span> ×4 (+2 spare, HP 13)</div>
+    <div class="setup-line"><span class="tok">Yochlol</span> ×1 (HP 68 rooted) &middot; <span class="tok">Dretch</span> ×2 (HP 18)</div>
+    <div class="setup-line"><span class="tok">Shadow_Demon</span> ×3 (HP 66, AC 13) &middot; <span class="tok">Wraith</span> ×2 (HP 67, the chieftains)</div>
+    <div class="setup-line"><span class="tok">Glabrezu</span> ×1 (HP 157)</div>
+    <div class="setup-line"><span class="tok">5 player tokens</span> (not Brian)</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Clock &amp; cut points</div>
+    <ul>
+      <li>Village+Grove+Circle ≈ 75 min · Entrance+Ossuary ≈ 60 min · Temple ≈ 90 min.</li>
+      <li>Behind at the Ossuary? <strong>Cut 6 (Growth) and 8 (Altar).</strong> The lock opens onto the Hall.</li>
+      <li><span class="warn">Never cut 9b.</span> The session ends on the crystal cracking. Long rest, Level 7.</li>
+    </ul>
   </div>
   <div class="block">
     <div class="block-title">Do NOT place</div>
     <ul>
-      <li class="bad">Legate Corvinus, Augur Cassia — stayed at the fort</li>
-      <li class="bad">Centurion Varro, Tribune Lucius — deceased (Session 3)</li>
-      <li class="bad">Berserker, Cultist_of_Mars, Tribal_Warrior, Animated_Armor, Quintus_Flavius — retired siege-era premise</li>
+      <li class="bad">Corvinus, Cassia (at the fort) · Varro, Lucius (dead) · Brian · Banshee/Wight (Farbog done)</li>
     </ul>
   </div>
 </div>
@@ -246,12 +252,12 @@
       <li>He climbs on willingly, or grapples (DC 13 Str contest) if refused but not attacked.</li>
       <li>Carrier's <b>speed halved</b>. Each round: <b>DC 10 + rounds carried</b> Str check or speed 0. He gets heavier the further from the bog he goes.</li>
       <li>Can't be shaken off. Hitting him turns him hostile.</li>
-      <li>He can only be set down on <b>holy ground</b>: the <b>Belatucadrus shrine</b> (Grove), a Cleric/Druid 10-min consecration, or the <b>village burial mound</b> (DC 13 Investigation).</li>
+      <li>He can be <b>set down to wait</b> on holy ground: the <b>Belatucadrus shrine</b> (Grove), a Cleric/Druid 10-min consecration, or the <b>village burial mound</b>. He only <b>rests</b> beside his own bones in the temple <b>Ossuary</b> (Scene 5).</li>
     </ul>
-    <div class="note"><span class="improv">(improv)</span> <b>Carried into the village:</b> the woman at the quern stops grinding. She knows him. Without a word she leads them to the mound. Party gets <b>advantage on village Persuasion</b>: they brought one of theirs home.</div>
+    <div class="note"><span class="improv">(improv)</span> <b>Carried into the village:</b> the woman at the quern is his <b>mother</b>. "They told us the bog took you." Then, quietly: "The chieftains took him south, to the temple under the skull. His bones are still there. Bring them home and he can sleep." Party gets <b>advantage on village Persuasion</b>.</div>
   </div>
   <div class="block">
-    <div class="block-title">Release</div>
+    <div class="block-title">Release (in the Ossuary, beside his bones)</div>
     <div class="ra">He slides down from your back and stands very still for a moment. Then he looks at whoever carried him, really looks, for the first time. "It doesn't hurt here." He sits down, closes his eyes, and is gone. Not dramatically. Just gone.</div>
     <p style="font-size:0.82em"><b style="color:#8ab8d8">Reward:</b> carrier gets <em>Myling's Rest</em> for the session: advantage on death saves, immune to Frightened.</p>
   </div>
@@ -400,81 +406,132 @@
 <!-- ═══ OSSUARY ═══ -->
 <div id="tab-s1s2" class="tab-pane">
 <div class="block">
-  <div class="block-title">Scene 5 — The Ossuary &nbsp;<span style="color:#d4884a;font-size:0.85em">★ SESSION ENDS HERE — advance to L6</span></div>
-  <div class="ra">The room ahead is round, and its far wall is shaped like the thing you just walked through: another skull, smaller, teeth picked out in inlaid bone. The floor is a carpet of femurs and ribs. Not scattered. Sorted, by size, by age, stacked with a care that took someone a very long time. Deeper in the dungeon, something breathes.</div>
-  <ul>
-    <li><strong>No combat.</strong> This is the quiet beat after the stair fight.</li>
-    <li><strong>DC 13 History</strong> (examining): not war dead. Curated, months of deliberate work, by someone proud of it. Matches the tally stick.</li>
-    <li>A short passage at the far end bends out of sight. <strong>Stop here.</strong> Level up to 6 at the break; they're still inside when next session opens.</li>
-    <li>Missed one of the three confirmations (cloth, tally stick, archway marks)? Leave it findable at the start of next session.</li>
-  </ul>
+  <div class="block-title">Scene 5 — The Ossuary &nbsp;<span style="color:#888;font-size:0.85em">safe room · short rest after</span></div>
+  <div class="ra">The room is round, its far wall another skull, teeth picked out in inlaid bone. The floor is a carpet of femurs and ribs. Not scattered. Sorted: by size, by age. In the far wall, three niches, each carved with one rune. On the low altar in the middle, one small bundle of bones that nobody bothered to sort.</div>
 </div>
-<details class="more"><summary>Next session preview (only if the party pushes on): Blood-Growth Rooms</summary>
-<div class="block">
-  <div class="ra">Dark red matter, wet-looking, veined, fed on blood deliberately over time.</div>
-  <table><tr><td class="k">Medicine/Nature DC 12</td><td class="v">Organic, fed on purpose</td></tr></table>
-  <div class="ho"><strong><a href="https://www.dndbeyond.com/monsters/17068-yochlol" target="_blank" style="color:#aac8ff;">Yochlol</a></strong> (HP 136, AC 15) + 2 <strong>Dretch</strong> (HP 18, AC 11). Yochlol: Mist Form, Web (DC 15), Slam +6 1d6+3 + 6d6 poison. Dretches: Fetid Cloud 10 ft, DC 11 Con.</div>
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">The boy's bones</div>
+    <p style="font-size:0.85em">DC 12 Investigation: a child, recent, wrapped in the same rotted wool he wears. Lay him beside them:</p>
+    <div class="ra">He slides down and stands very still. Then he looks at you, really looks. "It doesn't hurt here." He sits down beside the bundle, closes his eyes, and is gone. The room is a degree warmer.</div>
+    <p style="font-size:0.85em"><b style="color:#8ab8d8">Reward:</b> carrier gets <em>Myling's Rest</em> to the end of Session 7 (adv. death saves, immune Frightened). Bones carried home = village fully theirs.</p>
+  </div>
 </div>
-</details>
+<div>
+  <div class="block">
+    <div class="block-title">Puzzle: Three Niches (the way down)</div>
+    <table>
+      <tr><td class="k">Runes</td><td class="v">ᚠ FEHU (wealth) · ᛏ TIWAZ (war-god) · ᛟ OTHALAN (home)</td></tr>
+      <tr><td class="k">Answer</td><td class="v"><strong>OTHALAN</strong>: bone offering in it, the skull's jaw grinds open onto the stair. The cult's work is the theft of home.</td></tr>
+      <tr><td class="k">Clue 1</td><td class="v">The boy's only word: "Home."</td></tr>
+      <tr><td class="k">Clue 2</td><td class="v">They already carry OTHALAN: amber token, the scorch on the box, the Farbog bone token.</td></tr>
+      <tr><td class="k">Clue 3</td><td class="v">DC 13 Religion/History: tally sticks have OTHALAN over every name.</td></tr>
+      <tr><td class="k">Wrong</td><td class="v">2 Skeletons assemble, try again. TIWAZ: box hums loud, everything below knows.</td></tr>
+    </table>
+    <div class="clue">Wax tablet in a niche: "<em>sow, grow, reap, bleed</em>" (Rune Lock clue).</div>
+  </div>
+</div>
+</div>
 </div>
 
-<!-- ═══ SCENES 3-4 ═══ -->
+<!-- ═══ SCENES 6-8 ═══ -->
 <div id="tab-s3s4" class="tab-pane">
+<div class="grid2">
+<div>
 <div class="block">
-  <div class="block-title">Scene 3 — The Minor Altar</div>
-  <div class="ra">Four pillars ring a pulsing dais. A rehearsal for the real thing, not the real thing.</div>
+  <div class="block-title">6 — Blood-Growth Room <span style="color:#888;font-size:0.85em">(cuttable)</span></div>
+  <div class="ra">Dark red matter, wet and veined, has grown over the walls. At the centre it rises into a pillar, and inside it something with too many limbs turns over in its sleep. The pillar pulses faster now that you are here.</div>
   <table>
-    <tr><td class="k">Religion DC14 (act)</td><td class="v">Never completed a working. Every mark is a false start.</td></tr>
+    <tr><td class="k">Clock</td><td class="v"><span class="warn">3 rounds.</span> Start of round 4, pillar standing: it tears free, +40 HP, speed 30, Mist Form.</td></tr>
+    <tr><td class="k">Pillar</td><td class="v">AC 10, 30 HP, vuln fire &amp; radiant. Broken = Yochlol HP halved, never hatches. Brazier stands outside the door.</td></tr>
+    <tr><td class="k"><a href="https://www.dndbeyond.com/monsters/17068-yochlol" target="_blank" style="color:#aac8ff;">Yochlol</a> (rooted)</td><td class="v">HP 68, AC 15, reach 10, 2 Slam +6 (1d6+2 + 6d6 poison), Web DC 14, Magic Resist</td></tr>
+    <tr><td class="k">2 Dretch</td><td class="v">HP 18, AC 11, Fetid Cloud DC 11 Con</td></tr>
+    <tr><td class="k">DC 14 Arcana</td><td class="v">"The pillar is the womb. Burn the womb."</td></tr>
   </table>
-  <div class="ho"><strong>3 &times; <a href="https://www.dndbeyond.com/monsters/17010-shadow-demon" target="_blank" style="color:#aac8ff;">Shadow Demon</a> (HP 66, AC 13, <em>MM</em> p. 64):</strong> Vulnerable to <em>RADIANT</em> damage, Sunlight Weakness (disadvantage on attacks and checks in bright light). Lighting the 4 corner braziers (DC 11 Dex / object interaction) floods the room with bright light, shutting down Shadow Stealth and exploiting sunlight weakness for an easy 2-round win.</div>
 </div>
 <div class="block">
-  <div class="block-title">Scene 4 — The Rune Lock</div>
+  <div class="block-title">7 — Rune Lock</div>
   <table>
-    <tr><td class="k">Solution</td><td class="v">Cyan &rarr; Green &rarr; Yellow &rarr; Magenta ("beginning, growth, harvest, blood")</td></tr>
-    <tr><td class="k">Failure</td><td class="v">DC12 Dex save or 2d6 force, sequence resets. No lockout, ever.</td></tr>
+    <tr><td class="k">Solution</td><td class="v">Blue &rarr; Green &rarr; Yellow &rarr; Red ("sow, grow, reap, bleed")</td></tr>
+    <tr><td class="k">Clues</td><td class="v">Finger-wear deepest on blue (Inv DC 12) · Ossuary wax tablet · Nature DC 13: marsh seasons, red = Farbog water</td></tr>
+    <tr><td class="k">Failure</td><td class="v">DC 12 Dex or 2d6 force, resets. No lockout.</td></tr>
   </table>
-  <div class="clue">Breather beat — no combat by default. A fled Dretch can ambush only if pacing needs it.</div>
+</div>
+</div>
+<div>
+<div class="block">
+  <div class="block-title">8 — Minor Altar: the Sun-Path <span style="color:#888;font-size:0.85em">(cuttable)</span></div>
+  <div class="ra">Four square pillars ring a low dais. A cold iron brazier at each point of the compass. The dark between the pillars sits too thick, and it moves when you do not.</div>
+  <table>
+    <tr><td class="k">Solution</td><td class="v">Light braziers <strong>East &rarr; South &rarr; West &rarr; North</strong> (the sun's course). 1 action each.</td></tr>
+    <tr><td class="k">Success</td><td class="v">Gold light floods the room: bright light. Demons disadv. on attacks, no Shadow Stealth.</td></tr>
+    <tr><td class="k">Wrong order</td><td class="v">All gutter out; demons get advantage on next attack. Restart.</td></tr>
+    <tr><td class="k">Clues</td><td class="v">Shrine Sun-Path carving (Scene 2) · Thusnelda's prayer if saved · Inv DC 13: east soot thickest</td></tr>
+    <tr><td class="k">Shortcut</td><td class="v">Belatucadrus-blessed weapon touched to any brazier lights all four.</td></tr>
+    <tr><td class="k">3 Shadow Demon</td><td class="v">HP 66, AC 13, Claws +5 2d6+3 psychic (4d6+3 w/ adv), vuln radiant, incorporeal</td></tr>
+  </table>
+</div>
+</div>
 </div>
 </div>
 
-<!-- ═══ SCENE 5 ═══ -->
+<!-- ═══ SCENE 9a ═══ -->
 <div id="tab-s5" class="tab-pane">
 <div class="block">
-  <div class="block-title">Read Aloud</div>
-  <div class="ra">Rows of worn stone mark where dozens once knelt, facing a table still laid with offerings gone black. Something is still standing at that table.</div>
+  <div class="block-title">9a — The Gathering Hall <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_wraith_chieftain_confession.mp3')">▶ Chieftain Confession</button></div>
+  <div class="ra">Rows of worn stone where dozens once knelt, facing a long table laid with offerings gone black. Two figures at the head of it. Big men once; good Germanic armour hanging on nothing. They turn together. "We asked. It heard us. Why did it hear us?"</div>
 </div>
+<div class="grid2">
 <div class="block">
-  <div class="block-title">3 &times; <a href="https://www.dndbeyond.com/monsters/17064-wraith" target="_blank" style="color:#aac8ff;">Wraith</a> (Chieftains) &mdash; CR 5 (HP 67 each, AC 13, <em>MM</em> p. 302) <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_wraith_chieftain_confession.mp3')">▶ Chieftain Confession</button></div>
+  <div class="block-title">Talk first (round 1 is recognition)</div>
   <table>
-    <tr><td class="k">Life Drain</td><td class="v">+6 to hit, 4d6+3 necrotic, DC 14 Con save vs max HP reduction</td></tr>
-    <tr><td class="k">Create Specter</td><td class="v">Humanoid slain rises as specter under wraith control</td></tr>
-    <tr><td class="k">Traits</td><td class="v">Incorporeal Movement, Sunlight Sensitivity. Resist: acid, cold, fire, lightning, thunder, nonmagical B/P/S</td></tr>
+    <tr><td class="k">DC 14 Religion / Persuasion</td><td class="v">They confess: asked Mars for victory over Rome; got strength; paid with the warband, one man at a time, into the bog. Then themselves.</td></tr>
+    <tr><td class="k">Lucius's wooden horse</td><td class="v">Auto-success: one of them carved it for a fostered Roman boy, long ago.</td></tr>
+    <tr><td class="k">DC 15 Intimidation (+2 box)</td><td class="v">One chieftain fades in shame; only one fights.</td></tr>
+    <tr><td class="k">Either</td><td class="v">"The star that drinks" below, and "a fiend that sells what you want most."</td></tr>
   </table>
 </div>
-<div class="dec"><strong>Land this as tragedy:</strong> First round: recognition, not aggression ("we asked —" / "it heard us"). Focus fire and radiant spells dispatch them cleanly.</div>
+<div class="block">
+  <div class="block-title">2 × <a href="https://www.dndbeyond.com/monsters/17064-wraith" target="_blank" style="color:#aac8ff;">Wraith</a> — CR 5</div>
+  <table>
+    <tr><td class="k">HP 67 / AC 13</td><td class="v">Fly 60 hover, Incorporeal, Sunlight Sens.</td></tr>
+    <tr><td class="k">Life Drain</td><td class="v">+6, 4d8+3 necrotic, DC 14 Con or max HP reduced</td></tr>
+    <tr><td class="k">Create Specter</td><td class="v">Violently slain humanoid within 10 ft rises</td></tr>
+    <tr><td class="k">Resist</td><td class="v">acid, cold, fire, lightning, thunder, nonmagical non-silvered BPS · Immune necrotic, poison</td></tr>
+  </table>
+</div>
+</div>
 </div>
 
-<!-- ═══ SCENE 6 ═══ -->
+<!-- ═══ SCENE 9b ═══ -->
 <div id="tab-s6" class="tab-pane">
 <div class="block">
-  <div class="block-title">Read Aloud</div>
-  <div class="ra">Four stone faces watch from the walls. At the center, a crystal shaped like a broken star burns steady and cold. The only thing in this dungeon that looks cared for.</div>
+  <div class="block-title">9b — The Core Room <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_glabrezu_core_entrance.mp3')">▶ Fiend Voice</button></div>
+  <div class="ra">Four stone faces watch from the walls. On a raised dais, a crystal like a broken star burns steady and cold. Beside it squats something huge, four-armed, dog-headed, pincers folded like a clerk's hands. It smiles and speaks good Latin: "Soldiers. You carry something that belongs to my master. I can give you what you want most. Every one of you wants something."</div>
+</div>
+<div class="grid2">
+<div>
+<div class="block">
+  <div class="block-title">The bargain (play it straight)</div>
+  <p style="font-size:0.85em">Ursula: freedom from the axe. Rivia: her box mistake undone. Anyone: citizenship, rank, a dead friend's voice. <strong>Price every time: open the box, leave the spear on the dais.</strong> Insight DC 15: it means every word. Anyone agrees: box opens, that PC +2 corruption, fight to get the spear back.</p>
 </div>
 <div class="block">
-  <div class="block-title">What the crystal is (Arcana/Religion DC15, or automatic post-Vercingetorix)</div>
-  <p style="font-size:0.85em">The cult's real altar and the marsh's real source. Every drop of blood below was tribute funneled here. The rooms weren't separate encounters — one working, always heading here.</p>
+  <div class="block-title">The crystal (Arcana/Religion DC 15)</div>
+  <p style="font-size:0.85em">The cult's real altar. Every drop of blood in the temple funnelled here, and down. Absorbs all damage. <strong>Cannot be destroyed tonight.</strong></p>
+</div>
 </div>
 <div class="block">
-  <div class="block-title"><a href="https://www.dndbeyond.com/monsters/16870-glabrezu" target="_blank" style="color:#aac8ff;">Glabrezu</a> (Core Guardian) &mdash; CR 9 (HP 157, AC 17, <em>MM</em> p. 58) <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_glabrezu_core_entrance.mp3')">▶ Fiend Voice</button></div>
+  <div class="block-title"><a href="https://www.dndbeyond.com/monsters/16870-glabrezu" target="_blank" style="color:#aac8ff;">Glabrezu</a> — CR 9 (HP 157, AC 17)</div>
   <table>
-    <tr><td class="k">HP 157 / AC 17</td><td class="v">Speed 40 ft, Magic Resistance, Resist cold/fire/lightning/nonmagical weapons</td></tr>
-    <tr><td class="k">Multiattack</td><td class="v">2 Pincer (+9, 2d10+5, DC 15 grapple) + 2 Fist (+9, 2d4+5) or 2 Pincer + 1 spell</td></tr>
-    <tr><td class="k">Innate Spellcasting</td><td class="v">Darkness, Detect Magic, Dispel Magic at will; Confusion, Fly, Power Word Stun 1/day (DC 16)</td></tr>
+    <tr><td class="k">Multiattack</td><td class="v">2 Pincer (+9, reach 10, 2d10+5, grapple DC 15) + 2 Fist (+9, 2d4+2), or 2 Pincer + spell</td></tr>
+    <tr><td class="k">Spells DC 16</td><td class="v">At will: darkness, detect/dispel magic · 1/day: confusion, fly, power word stun</td></tr>
+    <tr><td class="k">Traits</td><td class="v">Magic Resistance · truesight 120 · resist cold/fire/lightning, nonmagical BPS</td></tr>
+    <tr><td class="k">Tactics</td><td class="v">Darkness over the dais, grab the frontliner. <span class="warn">No power word stun round 1.</span></td></tr>
   </table>
 </div>
-<div class="dec">Opens with Darkness over dais, grabs frontliner with Pincers. Focus radiant/magical burst damage to drop it in 2-3 rounds.</div>
-<div class="ho"><strong>The crystal cannot be destroyed here.</strong> Absorbs damage and hums ominously — Session 5's job. Party takes a safe <strong>Long Rest</strong> in secured Core Room and <strong>advances to Level 7</strong> before descending.</div>
+</div>
+<div class="ho"><strong>★ END OF SESSION — read:</strong> <em>The fiend falls, and the crystal does not go dark. It gets brighter. Cracks spread like frost across a window, each one a note too low to hear, felt in the teeth. The floor is warm. Behind the dais a stair you did not see before goes down into red light. In Rivia's arms the box hums in exactly the same rhythm. Whatever is down there has stopped sleeping.</em> &nbsp;Long rest in the sealed room. <strong>Level 7.</strong> Session 7 opens on the stair (Ch5).</div>
 </div>
 
 <!-- ═══ NPCS ═══ -->

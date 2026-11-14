@@ -1752,30 +1752,50 @@
     "notes": "VACANT. Metellus died in Session 1. The Aquila is missing. Reclaiming it is a campaign objective."
   },
   "Mars": {
-    "hp": 100,
-    "ac": 20,
+    "hp": 300,
+    "ac": 22,
     "speed": "40 ft.",
     "cr": "20",
     "attacks": [
       {
-        "label": "Divine Pilum (×4 Multiattack)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d8][h: rad=1d8]/me hurls a pilum wreathed in war-fire — DIVINE PILUM! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the radiant charge doubles!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the throw goes wide!</b>\", \"connects!\"))]<br>ATK: [e: atk+10] range 60 ft | DMG: [e: dmg+5] piercing + [e: rad] radiant<br><i style='color:#c88020'>Four attacks per round (Multiattack). He does not rage — he is cold, methodical, waiting to be impressed. AC drops to 15 once the altar chains are locked.</i>"
+        "label": "Divine Pilum (×4 Multiattack, ×2 once bloodline severed)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: ex=1d6]/me hurls a pilum wreathed in war-fire — DIVINE PILUM! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — double the dice!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+10] | DMG: [e: dmg+5] piercing + [e: ex] radiant<br><i>Reach 10 ft or range 60 ft. Four per turn; two once Ritual Round 2 succeeds. AC 22, drops to 16 when all four winches are locked.</i>"
       },
       {
         "label": "War Cry (recharge 5-6)",
-        "raw_cmd": "[h: save=1d20]/me opens his mouth and two hundred years of unfinished war come out — WAR CRY! Every creature within 30 ft that can hear him: WIS save [e: save] vs DC 16 — [r, if(save>=16): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>FRIGHTENED</b> for 1 minute (repeat save at end of each turn).\"]<br><i style='color:#c88020'>Recharge 5-6. No attack roll. Use it when the party starts to look like they might actually win — let them feel the weight of what they're fighting.</i>"
+        "raw_cmd": "[h: save=1d20]/me roars two hundred years of unfinished war — WAR CRY! Each creature within 30 ft: WIS save [e: save] vs DC 18 — [r, if(save>=18): \"resists.\"; \"FRIGHTENED 1 minute (repeat save each turn end).\"]"
       },
       {
-        "label": "Legendary Strike (Legendary Action)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d8][h: rad=1d8]/me strikes at the end of another's turn — LEGENDARY STRIKE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+10] range 60 ft | DMG: [e: dmg+5] piercing + [e: rad] radiant<br><i style='color:#c88020'>Legendary Action (1 action, end of another's turn). 2 total Legendary Actions per round. Other option: Divine Smite (2 actions) — one attack this round adds +3d8 radiant.</i>"
+        "label": "Legendary: Pilum Strike (1)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: ex=1d6]/me strikes at the end of another's turn — PILUM STRIKE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — double the dice!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+10] | DMG: [e: dmg+5] piercing + [e: ex] radiant<br><i>3 legendary actions/round. Divine Presence (1): DC 18 Wis or frightened. Divine Smite (2): next hit +3d8 radiant (gone after Round 2). Summon the Fallen (2): 1 Shadow Demon, max 2.</i>"
       }
     ],
     "traits": [
-      "Legendary Resistance 2/day: auto-succeed on a failed save. Announce it when it triggers.",
-      "Divine Smite (Legendary Action, 2 actions): one attack this round deals +3d8 radiant damage. No roll — declare before resolving the hit.",
-      "AC 20 base; drops to AC 15 once the four altar chain winches are locked (per the Destroy ritual in the Decision tab).",
-      "Mars is genuinely Mars. Not an impostor. Do not resolve this into a reveal. He could have taken the spear at any time — he has been waiting to be asked."
-    ]
+      "Legendary Resistance 3/day — LOST ENTIRELY once all four altar winches are locked (Ritual Round 1).",
+      "AC 22; AC 16 once the four winches are locked.",
+      "Not to Be Killed: at 0 HP the avatar breaks and Mars cannot act for the rest of the encounter, but he is not destroyed and the spear is untouched.",
+      "Targets whoever works the ritual; never strikes a downed PC (he wants witnesses).",
+      "Mars is genuinely Mars. Not an impostor. Never resolve this into a reveal."
+    ],
+    "str": 28,
+    "dex": 16,
+    "con": 24,
+    "int": 18,
+    "wis": 20,
+    "cha": 22,
+    "saves": {
+      "STR": 16,
+      "CON": 14,
+      "WIS": 12,
+      "CHA": 13
+    },
+    "skills": {
+      "Intimidation": 13,
+      "Perception": 12
+    },
+    "immunities": "Fire, poison; charmed, exhaustion, frightened, paralyzed, poisoned",
+    "resistances": "Bludgeoning/piercing/slashing from non-magical attacks",
+    "notes": "CR 20. Canonical stats: scripts/build_final_statblocks.py / gm_tools/final_statblocks.html."
   },
   "Legate_Corvinus": {
     "hp": 78,
@@ -2654,15 +2674,15 @@
     "attacks": [
       {
         "label": "Bite",
-        "raw_cmd": "[h: atk=1d20][h: pierce=2d6][h: poison=4d6][h: save=1d20]/me strikes with a skeletal, fang-bare jaw — BITE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — bone locks through bone!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the jaw snaps shut on nothing!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] | Piercing: [e: pierce+3] | Poison: CON save [e: save] vs DC 11 — [r, if(save>=11): \"<b style='color:green'>resists — takes [e: floor(poison/2)] poison.</b>\"; \"<b style='color:#e74c3c'>takes [e: poison] poison damage.</b>\"]"
+        "raw_cmd": "[h: atk=1d20][h: pierce=1d6][h: poison=3d6]/me strikes with a skeletal, fang-bare jaw — BITE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — double the dice!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+5] reach 10 ft | DMG: [e: pierce+3] piercing + [e: poison] poison"
       },
       {
         "label": "Hold Person (spell)",
         "raw_cmd": "[h: save=1d20]/me hisses a word that isn't breath — HOLD PERSON! One humanoid it can see within 60 ft: WIS save [e: save] vs DC 12 — [r, if(save>=12): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#8e44ad'>PARALYZED</b> for the spell's duration. Target may repeat the save at the end of each of its turns.\"]<br><i style='color:#c88020'>Spellcasting (8th level, DC 12, +4 to hit): at will — mage hand, minor illusion. 1/day each — hold person, ray of enfeeblement, detect thoughts, suggestion, dispel magic.</i>"
       },
       {
-        "label": "Ray of Enfeeblement (spell)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d8]/me traces a withering ray from an eye socket — RAY OF ENFEEBLEMENT! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT.</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the ray goes wide.</b>\", \"connects!\"))]<br>ATK: [e: atk+4] (spell attack) | DMG: [e: dmg] necrotic, and while the spell lasts the target's Strength-based weapon attacks deal only half damage.<br><i style='color:#c88020'>Save-ends-early: target or an ally can spend an action to attempt to end it (no save needed on the naga's part).</i>"
+        "label": "Lightning Bolt (spell, 1/day)",
+        "raw_cmd": "[h: dmg=8d6]/me rears back and the air crackles — LIGHTNING BOLT! 100-ft line, 5 ft wide. Each creature in the line: DEX save vs DC 12, [e: dmg] lightning on a fail, half on a success.<br><i>Use once, when 3+ PCs bunch on the stair.</i>"
       }
     ],
     "traits": [
@@ -2670,7 +2690,7 @@
     ]
   },
   "Yochlol": {
-    "hp": 136,
+    "hp": 68,
     "ac": 15,
     "speed": "30 ft.",
     "str": 15,
@@ -2679,7 +2699,12 @@
     "int": 13,
     "wis": 14,
     "cha": 16,
-    "saves": {"STR": 6, "CON": 8, "WIS": 6, "CHA": 7},
+    "saves": {
+      "STR": 6,
+      "CON": 8,
+      "WIS": 6,
+      "CHA": 7
+    },
     "skills": {
       "Deception": 7,
       "Insight": 6,
@@ -2690,36 +2715,37 @@
     "immunities": "Poison; poisoned",
     "attacks": [
       {
-        "label": "Poisonous Tentacle",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: save=1d20]/me lashes out with a tentacle that shouldn't exist on anything shaped like a person — POISONOUS TENTACLE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — it wraps twice before the target can react!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the tentacle misjudges the reach!</b>\", \"connects!\"))]<br>ATK: [e: atk+6] reach 10 ft | DMG: [e: dmg+2] poison, and target is grappled (escape DC 14).<br>While grappled, target repeats CON save [e: save] vs DC 15 each of its turns — [r, if(save>=15): \"resists further poison this turn.\"; \"<b style='color:#e74c3c'>takes 2d6 poison again.</b>\"]"
+        "label": "Slam (×2 Multiattack)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d6][h: poison=6d6]/me lashes out from the blood-growth pillar — SLAM! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — double the dice!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+6] reach 10 ft while rooted | DMG: [e: dmg+2] bludgeoning + [e: poison] poison"
       },
       {
         "label": "Innate Spellcasting",
-        "raw_cmd": "[r: \"<b style='color:#8e44ad'>INNATE SPELLCASTING</b> (CHA, DC 14) — at will: charm person, dancing lights, minor illusion. 3/day: fog cloud. 1/day: insect plague.\"]<br><i style='color:#c88020'>Use insect plague to control the battlefield in the blood-growth rooms — it thematically doubles as the fleshy growths swarming.</i>"
+        "raw_cmd": "[r: \"INNATE SPELLCASTING (CHA, DC 14) — at will: detect thoughts, web. 1/day: dominate person.\"]<br><i>Web the doorway on round 1.</i>"
       },
       {
-        "label": "Change Shape",
-        "raw_cmd": "[r: \"<b style='color:#8e44ad'>CHANGE SHAPE</b> — the yochlol polymorphs into a Large or smaller spider, or back into its true ooze-and-limbs form, as an action. Stats are the same except speed (spider form gains climb 30 ft).\"]<br><i style='color:#c88020'>No attack roll. Use to escape a bad position or to ambush from a ceiling/wall in spider form.</i>"
+        "label": "Hatch (start of round 4)",
+        "raw_cmd": "[r: \"GESTATING — rooted, speed 0, HP 68 (token HP set to 68). If the pillar (AC 10, 30 HP, vuln fire/radiant) still stands at the START OF ROUND 4: it tears free, +40 HP, speed 30 ft, climb 30 ft, Mist Form. Pillar destroyed first: halve current HP, it never hatches.\"]"
       }
     ],
     "traits": [
-      "Magic Resistance: advantage on saving throws against spells and other magical effects.",
-      "Shapechanger: true form is neither wholly humanoid nor wholly ooze — unsettling to look at even at rest."
+      "Gestating (campaign variant): HP 68 while rooted; full Yochlol is 136 HP.",
+      "Magic Resistance: advantage on saves vs spells.",
+      "Spider Climb / Web Walker once hatched."
     ]
   },
   "Shadow_Demon": {
     "hp": 66,
-    "ac": 12,
+    "ac": 13,
     "speed": "30 ft., fly 50 ft.",
     "str": 1,
-    "dex": 15,
+    "dex": 17,
     "con": 12,
-    "int": 12,
+    "int": 14,
     "wis": 13,
     "cha": 14,
     "saves": {},
     "skills": {
-      "Stealth": 8
+      "Stealth": 7
     },
     "cr": "4",
     "resistances": "Cold, fire, lightning, thunder; acid, bludgeoning/piercing/slashing from nonmagical weapons",
@@ -2799,11 +2825,11 @@
       },
       {
         "label": "Fist (part of Multiattack)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d6]/me drives a fist forward — FIST! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+9] reach 5 ft | DMG: [e: dmg+5] bludgeoning<br><i style='color:#c88020'>Multiattack: two Pincers + two Fists, OR two Pincers + one spell. The Fist can target any creature — not restricted to grappled targets.</i>"
+        "raw_cmd": "[h: atk=1d20][h: dmg=2d4]/me drives a fist forward — FIST! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — double the dice!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+9] reach 5 ft | DMG: [e: dmg+2] bludgeoning<br><i>Multiattack: two Pincers + two Fists, OR two Pincers + one spell.</i>"
       },
       {
         "label": "Innate Spellcasting",
-        "raw_cmd": "[r: \"<b style='color:#8e44ad'>INNATE SPELLCASTING</b> (CHA, DC 16) — at will: darkness, dispel magic, detect magic. 1/day each: confusion, fly (self only), power word stun.\"]<br><i style='color:#c88020'>Open the fight with Darkness centered on whatever it is guarding, then Power Word Stun on whoever gets closest. Magic Resistance: advantage on saves vs spells/magical effects.</i>"
+        "raw_cmd": "[r: \"INNATE SPELLCASTING (INT, DC 16) — at will: darkness, detect magic, dispel magic. 1/day each: confusion, fly, power word stun.\"]<br><i>Darkness over the dais first. NO power word stun on round 1.</i>"
       }
     ],
     "traits": [
@@ -2812,29 +2838,52 @@
     ]
   },
   "Vercingetorix_Bound": {
-    "hp": 75,
+    "hp": 150,
     "ac": 18,
     "speed": "30 ft.",
     "cr": "11",
     "attacks": [
       {
-        "label": "Sword of the Last Charge (×2 Multiattack)",
-        "raw_cmd": "[h: atk=1d20][h: dmg=2d6][h: nec=2d8]/me drives forward with a blade that has been swinging since 52 BC — SWORD OF THE LAST CHARGE! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — the necrotic charge doubles!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE — the blade finds nothing!</b>\", \"connects!\"))]<br>ATK: [e: atk+8] | DMG: [e: dmg+5] slashing + [e: nec] necrotic<br><i style='color:#c88020'>Two attacks per round. Necrotic damage cannot be resisted by any resistance gained after this fight began. Use second attack to follow through on any Parry target — he does not let go.</i>"
+        "label": "Dread Spatha (×3 Multiattack)",
+        "raw_cmd": "[h: atk=1d20][h: dmg=1d8][h: ex=2d8]/me drives forward with a blade that has swung since 52 BC — DREAD SPATHA! [r: if(atk==20, \"<b style='color:#e74c3c'>CRITICAL HIT — double the dice!</b>\", if(atk==1, \"<b style='color:red'>FUMBLE!</b>\", \"connects!\"))]<br>ATK: [e: atk+9] | DMG: [e: dmg+5] slashing + [e: ex] necrotic<br><i>Three attacks per turn.</i>"
       },
       {
         "label": "Fear Aura (recharge 5-6)",
         "raw_cmd": "[h: save=1d20]/me's presence becomes unbearable — FEAR AURA! Every creature within 30 ft that can see him: WIS save [e: save] vs DC 15 — [r, if(save>=15): \"<b style='color:green'>resists.</b>\"; \"<b style='color:#e74c3c'>FRIGHTENED</b> for 1 minute (repeat save at end of each turn).\"]<br><i style='color:#c88020'>Recharge 5-6. No attack roll. Parry reaction is available this same round — he can fear the room and still deflect a riposte.</i>"
       },
       {
+        "label": "Command the Fallen (1/day)",
+        "raw_cmd": "[h: n=1d4]/me slams his sword into the floor — COMMAND THE FALLEN! [e: n] skeletons claw up from the stone and act on his initiative."
+      },
+      {
         "label": "Champion's Duel",
-        "raw_cmd": "[r: \"<b style='color:#8e44ad'>CHAMPION'S DUEL</b> — if Ursula or Brian issues a formal challenge, he will fight them one-on-one and hold his allies back. He will not cheat. This is not mercy; it is the last honor he has left.\"]<br><i style='color:#c88020'>Purely narrative. No roll. Use it if the table wants a one-on-one moment — it makes his Final Death hit harder.</i>"
+        "raw_cmd": "[r: \"CHAMPION'S DUEL — if a PC (Ursula is the natural one) issues a formal challenge, he fights them one-on-one and holds his skeletons back. Not mercy: the last honour he has left.\"]"
       }
     ],
     "traits": [
       "Relentless (1/day): when reduced to 0 HP, drops to 1 HP instead — unless the killing damage is radiant, or dealt by a weapon consecrated at the Belatucadrus shrine. Say it out loud when it triggers: 'He should be dead. He isn't.'",
-      "Parry (reaction): +3 AC against one melee attack that would hit him. Uses his reaction — he cannot Parry and Opportunity Attack in the same round.",
-      "Aura of the Unfinished War: undead allies within 30 ft gain +4 to melee damage rolls.",
+      "Parry (reaction): +4 AC against one melee attack that would hit him. Uses his reaction — he cannot Parry and Opportunity Attack in the same round.",
+      "Aura of the Unfinished War: undead allies within 30 ft gain +2 to melee damage rolls.",
       "Final Death: when the killing blow lands and Relentless does not trigger, he does not crumble. For one minute his spirit is lucid. He delivers the unmaking secret: the four iron chain winches at the granite altar, forged by Caesar's engineers, lock the four iron rings and shatter Mars's armor — only then can the spear break. Then he dissolves to ash. This is the first true death since 46 BC."
-    ]
+    ],
+    "str": 20,
+    "dex": 12,
+    "con": 16,
+    "int": 14,
+    "wis": 14,
+    "cha": 18,
+    "saves": {
+      "STR": 9,
+      "CON": 7,
+      "WIS": 6
+    },
+    "skills": {
+      "Athletics": 9,
+      "Intimidation": 8,
+      "Perception": 6
+    },
+    "immunities": "Poison; exhaustion, frightened, poisoned",
+    "resistances": "Necrotic; bludgeoning/piercing/slashing from non-magical attacks",
+    "notes": "CR 11. Canonical stats: scripts/build_final_statblocks.py / gm_tools/final_statblocks.html."
   }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Chapter 5: The Wrath of Mars</title>
+<title>Chapter 5: The Wrath of Mars (Session 7, Final)</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -49,6 +49,7 @@ em { color: #3a1000; }
 .callout { background: #fff0d0; border: 0.5pt solid #c8a030; border-left: 2pt solid #c87800; padding: 5px 8px; font-size: 8.5pt; margin: 4px 0; break-inside: avoid; }
 .secret-box { background: #1a0e04; color: #e8d8b0; border: 1pt solid #8B4513; padding: 5px 8px; font-size: 8.5pt; margin: 4px 0; break-inside: avoid; }
 .secret-box strong { color: #c8a84b; }
+.gm-note { background: #fff0d0; border-left: 2pt solid #c87800; padding: 3px 5px; margin-top: 3px; }
 .clock-box { background: #fff8e8; border: 1pt solid #c8a030; padding: 5px 8px; font-size: 8.5pt; margin: 4px 0; break-inside: avoid; }
 
 @media print {
@@ -59,200 +60,378 @@ em { color: #3a1000; }
 </style>
 </head>
 <body>
-
 <div class="cover">
   <div class="cover-title">Chapter 5<br>The Wrath of Mars</div>
-  <div class="cover-subtitle">Shadow of Mars Campaign — Session 5 of 5 (Final)</div>
+  <div class="cover-subtitle">Shadow of Mars Campaign: Session 7 of 7 (the final session)</div>
   <hr class="cover-rule">
-  <div class="cover-meta">Level 7 (final) &nbsp;|&nbsp; 3–4 Hours &nbsp;|&nbsp; 6 Players</div>
-  <div class="cover-meta">The Final Dungeon and the Three Horrible Options</div>
+  <div class="cover-meta">Level 7 (final) &nbsp;|&nbsp; 4 Hours &nbsp;|&nbsp; 5 Players (Iris, Julia Jana, Tanit, Rivia, Ursula)</div>
+  <div class="cover-meta">The Stair &rarr; Sunken Armory &rarr; Three Passages &rarr; Vercingetorix &rarr; Threshold of Janus &rarr; The Antechamber of Mars &rarr; The Choice &rarr; Epilogue</div>
   <div class="cover-teaser">
-    The crystal-star focus is failing. The party goes down, past a dead king who has been
-    fighting since 52 BC, to a granite altar where a starving god waits. No option saves
-    everyone. That is the point.
+    The crystal-star is failing and something below has stopped sleeping. The party goes down,
+    past a dead king who has been fighting since 52 BC, to a granite altar where a starving god
+    waits. No option saves everyone. That is the point.
   </div>
 </div>
 
 <div class="columns">
 
-<h1>Scene 0: The Crystal Is Failing</h1>
+<h1>Before You Start</h1>
+
+<div class="callout"><strong>Table truth:</strong> Varro and Lucius are dead. Brian is not playing. The Spear of Mars and Ursula's Goliath greataxe are both in Rivia's box. The party carries Lucius's loot: Corvinus's sealed orders (destroy the spear, never let Rome have it), pre-signed citizenship letters for every PC, his seal ring, the amber OTHALAN token, the carved wooden horse. Vercingetorix is an enemy and has never been an ally. Mars is genuinely Mars.</div>
+
+<h3>Continuity checklist (fill in from Session 6)</h3>
+<table class="decision-table">
+<tr><th>Question</th><th>Why it matters</th></tr>
+<tr><td>Belatucadrus weapon?</td><td>Defeats Vercingetorix's Relentless; counts as magical vs Mars.</td></tr>
+<tr><td>Thusnelda alive?</td><td>He is the NPC who can volunteer for the guardian's seat (Destroy).</td></tr>
+<tr><td>Myling's Rest holder?</td><td>Advantage on death saves, immune to frightened: matters vs War Cry.</td></tr>
+<tr><td>Session 1 Altar Wight spared?</td><td>His cameo in the Antechamber happens only if he was spared.</td></tr>
+<tr><td>Anyone at corruption 5?</td><td>Mars addresses them by name first at the Choice.</td></tr>
+<tr><td>Anyone took the Glabrezu's bargain?</td><td>That PC carries Mars's attention: he speaks to them second.</td></tr>
+</table>
+
+<table class="decision-table">
+<tr><th>Scene</th><th>Map (MapTool)</th><th>Tokens</th></tr>
+<tr><td>0&ndash;1 Stair, Armory</td><td>s5_mars_vault_overview</td><td>Wraith &times;2 (optional)</td></tr>
+<tr><td>2&ndash;3 Passages, King</td><td>s5_mars_vault</td><td>Zombie &times;6, Wight, Specter &times;2, Vercingetorix_Bound, Skeleton &times;1d4</td></tr>
+<tr><td>4&ndash;5 Threshold, Antechamber</td><td>s5_mars_confrontation</td><td>Janus_(Threshold_Vision), Mars, Caesar_Chain_Winch &times;4, Shadow_Demon (summoned), Wight_General (cameo)</td></tr>
+</table>
+
+<div class="clock-box"><strong>Pacing:</strong> aim to reach the Antechamber by the 2.5-hour mark. Cut Scene 1's wraiths first, then let the party skip a passage in Scene 2. Never cut Vercingetorix's Final Death or the Choice.</div>
+
+<h1>Scene 0: The Stair Down</h1>
 
 <div class="read-aloud">
-  The crystal-star's light does not fade when the demon guarding it falls. It gets worse.
-  Cracks spread across its faces like frost across a window, and each one lets out a note
-  too low to be a sound, felt in the teeth more than heard. The floor of the Core Room is
-  warm. Somewhere below, something that has been sleeping under all this weight is starting
-  to notice you.<br><br>
-  The iron box Lucius carried hums against your pack with the exact same rhythm. It's not
-  stopping. Whatever this feeds, it just fed it more than it wanted.
+  The stair behind the dais is older than the temple above it. The steps are worn into
+  shallow bowls by feet that came down and did not come back up. The red light ahead does
+  not flicker like fire. It breathes. Each breath, the box in Rivia's arms answers with a
+  hum you feel in your back teeth, the spear and the axe inside it singing to each other.
+  Somewhere below, very far down, something enormous shifts its weight.
 </div>
 
-<p>The crystal cannot be destroyed here (established in Chapter 4). Assume the party goes down.</p>
+<div class="clue-box"><strong>Arcana DC 13:</strong> the crystal's cracks are the shape of divine attention, not structural failure: something is looking back up the stair. <strong>Survival DC 12:</strong> the warmth in the stone rises at a readable rate; tell them honestly they have time, but not forever.</div>
 
-<ul>
-  <li><strong>Arcana DC 13 (passive):</strong> The cracking pattern matches the shape of divine attention, not structural failure. Something is looking back through it.</li>
-  <li><strong>Survival DC 12 (active, gauging descent time):</strong> The warmth in the floor increases at a readable rate. Answer honestly: 3-4 scenes remain before it matters mechanically.</li>
-</ul>
-
-<!-- ── -->
-<h1>Scene 1: Sunken Armory / Choking Hall</h1>
+<h1>Scene 1: The Sunken Armory and the Choking Hall</h1>
 
 <div class="read-aloud">
-  The passage narrows fast. Old weapon racks line a room that has not seen a living hand in
-  longer than the fort has stood. Half the blades have rusted to lace. The other half are
-  untouched, as if the room itself decided which ones still mattered. Beyond it, a hall
-  barely three men wide, walls scored with symbols the torchlight will not sit still on.
+  The passage opens into a long room of weapon racks. Half the blades have rusted to lace.
+  The other half are untouched, bright as the day they were forged, as if the room itself
+  decided which ones still mattered. Beyond it, a hall barely three men wide, its walls
+  scored with symbols the torchlight will not sit still on.
 </div>
 
-<ul>
-  <li><strong>Investigation DC 13 (active, examining the untouched weapons):</strong> Ram's-eye stamp — Mars's own mark. One can be taken; counts as Belatucadrus-grade consecrated for this session only if no other was brought. Using a god's own gift against him is a detail Mars notices in Scene 4.</li>
-  <li><strong>Constitution DC 12 (active, pushing through the Choking Hall):</strong> Failure: 1d4 poison damage from the strain. A mood, not a puzzle.</li>
-</ul>
+<div class="clue-box"><strong>Investigation DC 13 (the bright blades):</strong> each carries a ram's-eye stamp, Mars's own mark. One may be taken: it counts as a consecrated weapon for this session. Mars notices, and comments on it in the Antechamber: <em>"You came to unmake me with my own gift."</em></div>
+<p><strong>The Choking Hall:</strong> DC 12 Constitution to push through; failure costs 1d4 poison damage and the PC's next Perception check is at disadvantage. A mood, not a puzzle.</p>
+<p><strong>Optional:</strong> 2 &times; Wraith (the last of the chieftains' warband) guard the hall. Use only if the party arrives rested and the clock is kind.</p>
 
-<div class="callout">
-  <strong>Optional encounter (read the table, don't force it):</strong> 2 &times; <a href="https://www.dndbeyond.com/monsters/17064-wraith" target="_blank" style="color:#5a1a00;text-decoration:none;">Wraith</a> (HP 67 each, AC 13, CR 5, <em>MM</em> p. 302). Reused from earlier sessions, guarding the armory choke point.
+<!-- statblock:Wraith -->
+<div class="stat-block" id="sb-Wraith">
+<div class="name">Wraith (Chieftain Spirit)</div>
+<div class="type">Medium undead, neutral evil</div>
+<p><strong>Armor Class</strong> 13<br><strong>Hit Points</strong> 67 (9d8+27)<br><strong>Speed</strong> 0 ft., fly 60 ft. (hover)</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>6 (-2)</div><div class="score"><span class="label">DEX</span>16 (+3)</div><div class="score"><span class="label">CON</span>16 (+3)</div><div class="score"><span class="label">INT</span>12 (+1)</div><div class="score"><span class="label">WIS</span>14 (+2)</div><div class="score"><span class="label">CHA</span>15 (+2)</div></div>
+<hr class="rule">
+<p><strong>Damage Resistances</strong> acid, cold, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered<br><strong>Damage Immunities</strong> necrotic, poison<br><strong>Condition Immunities</strong> charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained<br><strong>Senses</strong> darkvision 60 ft., passive Perception 12<br><strong>Languages</strong> Germanic<br><strong>Challenge</strong> 5 (1,800 XP)</p>
+<hr class="rule">
+<p><strong><em>Incorporeal Movement.</em></strong> Moves through creatures and objects; 5 (1d10) force if it ends its turn inside an object.</p>
+<p><strong><em>Sunlight Sensitivity.</em></strong> In sunlight: disadvantage on attack rolls and sight-based Perception.</p>
+<h4>Actions</h4>
+<p><strong><em>Life Drain.</em></strong> <em>Melee Weapon Attack:</em> +6 to hit, reach 5 ft. <em>Hit:</em> 21 (4d8+3) necrotic; DC 14 Con or max HP reduced by the damage taken until a long rest. Dies if max HP hits 0.</p>
+<p><strong><em>Create Specter.</em></strong> Targets a humanoid within 10 ft. that died violently in the last minute; it rises as a specter under the wraith's control.</p>
 </div>
+<!-- /statblock -->
 
-<!-- ── -->
-<h1>Scene 2: The Convergence Hall — Three Passages</h1>
+<h1>Scene 2: The Convergence Hall, Three Passages</h1>
 
 <div class="read-aloud">
-  The hall opens into three throats of stone, all leading the same direction by different
-  roads. Something about the air says only one of these was meant to be walked.
+  The hall splits into three throats of stone, all running the same direction by different
+  roads. From the left, silence. From the centre, a slow shuffling, many feet. From the
+  right, a cold you can see on your breath, and a voice reciting Roman ranks.
 </div>
 
 <table class="decision-table">
-  <tr><th>Passage</th><th>Contents</th></tr>
-  <tr><td>Left (west)</td><td>Pressure-plate rune, Perception DC 14 to spot. Trigger: 3d6 necrotic, 30-ft burst, DC 15 Dex half. Dead cultist's journal confirms the chieftains knew exactly what they served.</td></tr>
-  <tr><td>Center</td><td>6 &times; <a href="https://www.dndbeyond.com/monsters/17069-zombie" target="_blank" style="color:#5a1a00;text-decoration:none;">Zombie</a> (HP 22 each, AC 8, CR 1/4, <em>MM</em> p. 316, Undead Fortitude). Slow, blunt-target chaff.</td></tr>
-  <tr><td>Right (east)</td><td>1 &times; <a href="https://www.dndbeyond.com/monsters/17054-wight" target="_blank" style="color:#5a1a00;text-decoration:none;">Wight</a> (HP 45, AC 14, CR 3, <em>MM</em> p. 300) + 2 &times; <a href="https://www.dndbeyond.com/monsters/17017-specter" target="_blank" style="color:#5a1a00;text-decoration:none;">Specter</a> (HP 22 each, AC 12, CR 1, <em>MM</em> p. 289). Fast strike and flankers.</td></tr>
+<tr><th>Passage</th><th>What waits</th><th>Cost</th></tr>
+<tr><td>Left (west)</td><td><strong>The war-rune trap:</strong> a floor plate cut with the TIWAZ rune (an upward arrow). Perception DC 14 spots it. Arcana or Religion DC 14 disarms it by naming the rune aloud ("Tiwaz, the war-god's rune": the one rune that was a trap in the Ossuary is the key here). Triggered: 30-ft. burst, 3d6 necrotic, DC 15 Dex half. A dead cultist's journal lies past it: the chieftains knew exactly what they served.</td><td>HP, or a clever answer</td></tr>
+<tr><td>Centre</td><td>6 &times; Zombie. Slow, blunt, a Turn Undead target.</td><td>Time and spell slots</td></tr>
+<tr><td>Right (east)</td><td>1 &times; Wight + 2 &times; Specter. Fast flankers; the Wight recites the dead legion's ranks.</td><td>Max HP from Life Drain</td></tr>
 </table>
+<p>No wrong answer, and no answer without a cost. Let the party choose by what they can afford.</p>
 
-<p>No wrong answer, no answer that avoids a cost. Let the party choose based on what they can afford, not on which you think is "correct."</p>
+<!-- statblock:Zombie -->
+<div class="stat-block" id="sb-Zombie">
+<div class="name">Zombie</div>
+<div class="type">Medium undead, neutral evil</div>
+<p><strong>Armor Class</strong> 8<br><strong>Hit Points</strong> 22 (3d8+9)<br><strong>Speed</strong> 20 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>13 (+1)</div><div class="score"><span class="label">DEX</span>6 (-2)</div><div class="score"><span class="label">CON</span>16 (+3)</div><div class="score"><span class="label">INT</span>3 (-4)</div><div class="score"><span class="label">WIS</span>6 (-2)</div><div class="score"><span class="label">CHA</span>5 (-3)</div></div>
+<hr class="rule">
+<p><strong>Saving Throws</strong> Wis +0<br><strong>Damage Immunities</strong> poison<br><strong>Condition Immunities</strong> poisoned<br><strong>Senses</strong> darkvision 60 ft., passive Perception 8<br><strong>Languages</strong> understands what it knew in life, can't speak<br><strong>Challenge</strong> 1/4 (50 XP)</p>
+<hr class="rule">
+<p><strong><em>Undead Fortitude.</em></strong> If damage reduces it to 0 HP, Con save DC 5 + damage taken; on a success it drops to 1 HP instead. Not vs radiant damage or critical hits.</p>
+<h4>Actions</h4>
+<p><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> +3 to hit, reach 5 ft. <em>Hit:</em> 4 (1d6+1) bludgeoning.</p>
+</div>
+<!-- /statblock -->
+<!-- statblock:Wight -->
+<div class="stat-block" id="sb-Wight">
+<div class="name">Wight</div>
+<div class="type">Medium undead, neutral evil</div>
+<p><strong>Armor Class</strong> 14 (studded leather)<br><strong>Hit Points</strong> 45 (6d8+18)<br><strong>Speed</strong> 30 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>15 (+2)</div><div class="score"><span class="label">DEX</span>14 (+2)</div><div class="score"><span class="label">CON</span>16 (+3)</div><div class="score"><span class="label">INT</span>10 (+0)</div><div class="score"><span class="label">WIS</span>13 (+1)</div><div class="score"><span class="label">CHA</span>15 (+2)</div></div>
+<hr class="rule">
+<p><strong>Skills</strong> Perception +3, Stealth +4<br><strong>Damage Resistances</strong> necrotic; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered<br><strong>Damage Immunities</strong> poison<br><strong>Condition Immunities</strong> exhaustion, poisoned<br><strong>Senses</strong> darkvision 60 ft., passive Perception 13<br><strong>Languages</strong> Latin, Germanic<br><strong>Challenge</strong> 3 (700 XP)</p>
+<hr class="rule">
+<p><strong><em>Sunlight Sensitivity.</em></strong> In sunlight: disadvantage on attack rolls and sight-based Perception.</p>
+<h4>Actions</h4>
+<p><strong><em>Multiattack.</em></strong> Two Longsword or two Longbow attacks; Life Drain can replace one Longsword.</p>
+<p><strong><em>Life Drain.</em></strong> <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft. <em>Hit:</em> 5 (1d6+2) necrotic; DC 13 Con or max HP reduced by that amount until a long rest.</p>
+<p><strong><em>Longsword.</em></strong> <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft. <em>Hit:</em> 6 (1d8+2) slashing, or 7 (1d10+2) two-handed.</p>
+<p><strong><em>Longbow.</em></strong> <em>Ranged Weapon Attack:</em> +4 to hit, range 150/600 ft. <em>Hit:</em> 6 (1d8+2) piercing.</p>
+</div>
+<!-- /statblock -->
+<!-- statblock:Specter -->
+<div class="stat-block" id="sb-Specter">
+<div class="name">Specter</div>
+<div class="type">Medium undead, chaotic evil</div>
+<p><strong>Armor Class</strong> 12<br><strong>Hit Points</strong> 22 (5d8)<br><strong>Speed</strong> 0 ft., fly 50 ft. (hover)</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>1 (-5)</div><div class="score"><span class="label">DEX</span>14 (+2)</div><div class="score"><span class="label">CON</span>11 (+0)</div><div class="score"><span class="label">INT</span>10 (+0)</div><div class="score"><span class="label">WIS</span>10 (+0)</div><div class="score"><span class="label">CHA</span>11 (+0)</div></div>
+<hr class="rule">
+<p><strong>Damage Resistances</strong> acid, cold, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks<br><strong>Damage Immunities</strong> necrotic, poison<br><strong>Condition Immunities</strong> charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious<br><strong>Senses</strong> darkvision 60 ft., passive Perception 10<br><strong>Languages</strong> understands what it knew in life, can't speak<br><strong>Challenge</strong> 1 (200 XP)</p>
+<hr class="rule">
+<p><strong><em>Incorporeal Movement.</em></strong> Moves through creatures and objects; 5 (1d10) force if it ends its turn inside an object.</p>
+<p><strong><em>Sunlight Sensitivity.</em></strong> In sunlight: disadvantage on attack rolls and sight-based Perception.</p>
+<h4>Actions</h4>
+<p><strong><em>Life Drain.</em></strong> <em>Melee Spell Attack:</em> +4 to hit, reach 5 ft. <em>Hit:</em> 10 (3d6) necrotic; DC 10 Con or max HP reduced by that amount until a long rest.</p>
+</div>
+<!-- /statblock -->
 
-<!-- ── -->
 <h1>Scene 3: Vercingetorix's Last Stand</h1>
 
 <div class="read-aloud">
-  He stands where the three passages become one, and for the first time since the fort's
-  gate, you see him clearly. The wounds from that night never closed. They never will. His
-  armor is Gallic work two centuries out of fashion, rusted through in places where a living
-  man would already be dead of infection ten times over. He is not breathing. He was never
-  going to stop being here.<br><br>
-  "Again," he says, in Latin thick with an accent that predates the Empire itself. "Always
-  again. Tell me this time is the one that ends it."
+  He stands where the three passages become one. His armour is Gallic work two centuries
+  out of fashion, rusted through in places where a living man would have died of the
+  wound ten times over. He is not breathing. He has not breathed since Alesia. He raises
+  his sword, not in threat, but the way a man raises a hand to greet someone he has waited
+  for a very long time.<br><br>
+  "Again," he says, in Latin thick with an accent older than the Empire. "Always again.
+  Tell me this time is the one that ends it."
 </div>
 
-<div class="stat-block">
-  <div class="name">Vercingetorix, Bound</div>
-  <div class="type">Medium Undead, Neutral Evil &mdash; CR 11 (7,200 XP) | Custom Campaign Boss (<a href="../npcs/vercingetorix_bound.json" target="_blank">Sheet</a>)</div>
-  <div class="scores">
-    <div class="score"><span class="label">HP</span>150</div>
-    <div class="score"><span class="label">AC</span>18</div>
-    <div class="score"><span class="label">SPD</span>30</div>
-    <div class="score"><span class="label">STR</span>20</div>
-    <div class="score"><span class="label">DEX</span>12</div>
-    <div class="score"><span class="label">CON</span>18</div>
-  </div>
-  <hr class="rule">
-  <p><strong>Multiattack.</strong> 3 Dread Spatha attacks (+9 to hit, 1d8+5 slashing + 2d8 necrotic).</p>
-  <p><strong>Parry (Reaction).</strong> Adds +4 to AC against one melee attack that would hit him.</p>
-  <p><strong>Champion's Duel (Optional):</strong> If Ursula or Brian challenges him to single combat, he accepts. The others watch or hold off remaining shadows.</p>
-  <p><strong>Command the Fallen (1/day).</strong> Raises 1d4 <a href="https://www.dndbeyond.com/monsters/17015-skeleton" target="_blank" style="color:#5a1a00;text-decoration:none;">Skeletons</a> (HP 13, AC 13, CR 1/4, <em>MM</em> p. 272).</p>
-  <p><strong>Relentless (1/day).</strong> Drops to 1 HP instead of 0 &mdash; unless damage is radiant or from a consecrated weapon.</p>
-</div>
+<p><strong>Dramatic Question:</strong> Can they give a two-hundred-year-old enemy the one thing he wants: an ending?</p>
 
-<div class="callout">
-  <strong>Running the fight:</strong> Parry and high AC force tactical coordination. When Relentless triggers: "He should be dead. He isn't."
-</div>
+<div class="callout"><strong>He is an enemy.</strong> He is bound to fight Rome and he will. He is also a victim, and the party already knows his story from Mars himself (Session 3). Play his death as confirmation and weight, not a first reveal. <strong>Champion's Duel:</strong> if a PC formally challenges him (Ursula is the natural one), he holds his skeletons back and fights one-on-one.</div>
 
-<div class="secret-box">
-  <strong>Final Death &amp; The God's Weakness</strong><br>
-  When a killing blow lands that Relentless does not prevent, he drops to one knee. For 1 minute his spirit remains lucid. He answers up to 3 questions truthfully (Alesia, Caesar's corruption, Mars's hunger), and <em>gives the party the tactical secret to unmaking Mars's chains</em>:
-  <strong>Round 1:</strong> Anchor the altar chains (DC 13 Athletics or Thieves' Tools).
-  <strong>Round 2:</strong> Sever the divine bloodline (DC 14 Religion or Arcana).
-  <strong>Round 3:</strong> Shatter the spear on the granite anvil.
+<!-- statblock:Vercingetorix -->
+<div class="stat-block" id="sb-Vercingetorix">
+<div class="name">Vercingetorix, Bound</div>
+<div class="type">Medium undead, neutral</div>
+<p><strong>Armor Class</strong> 18 (Gallic mail, shield)<br><strong>Hit Points</strong> 150 (20d8+60)<br><strong>Speed</strong> 30 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>20 (+5)</div><div class="score"><span class="label">DEX</span>12 (+1)</div><div class="score"><span class="label">CON</span>16 (+3)</div><div class="score"><span class="label">INT</span>14 (+2)</div><div class="score"><span class="label">WIS</span>14 (+2)</div><div class="score"><span class="label">CHA</span>18 (+4)</div></div>
+<hr class="rule">
+<p><strong>Saving Throws</strong> Str +9, Con +7, Wis +6<br><strong>Skills</strong> Athletics +9, Intimidation +8, Perception +6<br><strong>Damage Resistances</strong> necrotic; bludgeoning, piercing, slashing from nonmagical attacks<br><strong>Damage Immunities</strong> poison<br><strong>Condition Immunities</strong> exhaustion, frightened, poisoned<br><strong>Senses</strong> darkvision 60 ft., passive Perception 16<br><strong>Languages</strong> Gaulish, Latin<br><strong>Challenge</strong> 11 (7,200 XP)</p>
+<hr class="rule">
+<p><strong><em>Relentless (1/day).</em></strong> When reduced to 0 HP, he drops to 1 HP instead, unless the damage was radiant or dealt by a weapon consecrated at the Belatucadrus shrine (or the ram's-eye blade from the Sunken Armory). Say it: <em>"He should be dead. He isn't."</em></p>
+<p><strong><em>Aura of the Unfinished War.</em></strong> Undead allies within 30 ft. deal +2 damage with melee attacks.</p>
+<p><strong><em>Bound.</em></strong> He cannot leave the Convergence Hall. Two hundred years of trying.</p>
+<h4>Actions</h4>
+<p><strong><em>Multiattack.</em></strong> Three Dread Spatha attacks.</p>
+<p><strong><em>Dread Spatha.</em></strong> <em>Melee Weapon Attack:</em> +9 to hit, reach 5 ft. <em>Hit:</em> 9 (1d8+5) slashing plus 9 (2d8) necrotic.</p>
+<p><strong><em>Fear Aura (Recharge 5-6).</em></strong> Each creature within 30 ft. that can see him: DC 15 Wis or frightened for 1 minute (repeat save each turn end).</p>
+<p><strong><em>Command the Fallen (1/day).</em></strong> 1d4 skeletons claw up from the floor and act on his initiative.</p>
+<h4>Reactions</h4>
+<p><strong><em>Parry.</em></strong> +4 AC against one melee attack that would hit him.</p>
+<p class="gm-note"><strong>GM:</strong> <strong>Champion's Duel:</strong> if a PC (Ursula is the natural one) formally challenges him, he holds his skeletons back and fights one-on-one with honour. <strong>Final Death:</strong> 1 lucid minute, three true answers, then the unmaking secret (see Scene 3).</p>
 </div>
+<!-- /statblock -->
+<!-- statblock:Skeleton -->
+<div class="stat-block" id="sb-Skeleton">
+<div class="name">Skeleton</div>
+<div class="type">Medium undead, lawful evil</div>
+<p><strong>Armor Class</strong> 13 (armor scraps)<br><strong>Hit Points</strong> 13 (2d8+4)<br><strong>Speed</strong> 30 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>10 (+0)</div><div class="score"><span class="label">DEX</span>14 (+2)</div><div class="score"><span class="label">CON</span>15 (+2)</div><div class="score"><span class="label">INT</span>6 (-2)</div><div class="score"><span class="label">WIS</span>8 (-1)</div><div class="score"><span class="label">CHA</span>5 (-3)</div></div>
+<hr class="rule">
+<p><strong>Damage Vulnerabilities</strong> bludgeoning<br><strong>Damage Immunities</strong> poison<br><strong>Condition Immunities</strong> exhaustion, poisoned<br><strong>Senses</strong> darkvision 60 ft., passive Perception 9<br><strong>Languages</strong> understands the languages it knew in life but can't speak<br><strong>Challenge</strong> 1/4 (50 XP)</p>
+<hr class="rule">
+<h4>Actions</h4>
+<p><strong><em>Shortsword.</em></strong> <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft. <em>Hit:</em> 5 (1d6+2) piercing.</p>
+<p><strong><em>Shortbow.</em></strong> <em>Ranged Weapon Attack:</em> +4 to hit, range 80/320 ft. <em>Hit:</em> 5 (1d6+2) piercing.</p>
+</div>
+<!-- /statblock -->
 
-<!-- ── -->
-<h1>Scene 4: The Antechamber of Mars</h1>
+<h3>Final Death: the unmaking secret</h3>
+<div class="read-aloud">
+  He goes down on one knee, and this time he does not get up. The red light in his eyes
+  goes out, and for the first time something looks out of them that is only a tired man.
+  "Caesar would not listen either," he says. "Listen to me."
+</div>
+<p>For one minute he is lucid. He answers up to <strong>three questions truthfully</strong> (Alesia, Caesar, what Mars wants). Then he gives the secret, unprompted:</p>
+<div class="read-aloud">
+  "At the altar there are four winches. Caesar's engineers forged them, the same men who
+  built the walls at Alesia. They were made to hold a god still. Lock all four rings and
+  his armour opens. Then cut him from the spear: speak the binding backwards, the way the
+  priests spoke it forwards. Then break it on the anvil. But hear me. Something has to
+  hold the pieces, or they find each other again. Someone has to stay." He looks at each
+  of you in turn. "I would have. They never let me choose."
+</div>
+<p>He dissolves into ash and old iron. Whoever struck the final blow feels, for a moment, a hand on their shoulder.</p>
+
+<h1>Scene 4: The Threshold of Janus</h1>
 
 <div class="read-aloud">
-  The passage opens into a circle wide enough to lose an army in. Twelve stones stand at its
-  edge like an audience that arrived centuries early. At the center, a granite altar, chained
-  to the floor by links thick as a man's arm, all of them scored and stretched as if something
-  enormous has strained against them for a very long time. The air itself is red at the edges
-  of your vision, and it is getting redder.
+  The passage ends at an archway carved with a face on each side: one looking down into
+  the red, one looking back up the way you came. As you pass beneath it, both faces open
+  their eyes. The voice comes from both at once.<br><br>
+  "Mars is neither good nor evil. He is war itself, and war is a door. Every door looks
+  two ways at once. Choose how you cross."
+</div>
+<p>Janus answers <strong>one question</strong> per PC, always as a pair of truths ("If you break it, the frontier is quiet and someone stays below. If you keep it, the frontier is loud and no one stays."). He never recommends. He never fights.</p>
+
+<h1>Scene 5: The Antechamber of Mars</h1>
+
+<div class="read-aloud">
+  The passage opens into a circle wide enough to lose an army in. Twelve stones stand at
+  its edge like an audience that arrived centuries early. At the centre, a granite altar
+  and, set into it, a black anvil. Four great iron winches stand at the compass points,
+  their chains running to rings in the altar, every link scored and stretched as if
+  something enormous has strained against them for a very long time.<br><br>
+  He is sitting on the altar. Larger than a man, armoured in bronze that glows like a
+  forge, a helmet crested in red, a bundle of pilum across his knees. He is thin. Even a
+  god can be thin. He looks at the box, and smiles.
 </div>
 
-<p><strong>Rounds 1-2:</strong> presence only. Radiating cracks (DC 12 Dex or 1d6 necrotic crossing one). Legendary Actions available even without a body: Strike, Summon Fallen (Wraith/Wight, max 2 here).</p>
+<div class="callout"><strong>Mars reacts to the box:</strong> <em>"You brought me an offering. You thought your little wooden cage would choke the flame? You fed it. Every heartbeat those two spent together drew my eyes straight to you, Rivia."</em> To Ursula: <em>"And you. You felt it, in the forest. You liked it."</em></div>
 
-<div class="callout">
-  <strong>The Session 1 Wight-general (branch on what actually happened):</strong> If spared in Session 1, his spirit rises once from a plinth: "I held this three hundred years so it would not have to end like this. I am glad I do not have to decide." Released the moment the spear's fate is settled. If destroyed in Session 1, this beat does not happen — do not manufacture a substitute.
+<div class="callout"><strong>The Session 1 Wight-general (only if spared):</strong> his spirit rises from a plinth. <em>"I held this three hundred years so it would not have to end like this. I am glad I do not have to decide."</em> He is released the moment the spear's fate is settled.</div>
+
+<div class="read-aloud">
+  "MORTALS. You have carried my anchor through two ghosts and a king who would not die.
+  I am not your enemy. I have never been anyone's enemy. I am what you do to each other.
+  Now choose, and choose knowing I will remember which one you made."
 </div>
 
-<div class="callout">
-  <strong>Mars Reacts to the Box Cataclysm:</strong> Mars fixes his gaze upon the vibrating Artificer's box in Rivia's hands. Sensing both his divine spear and Ursula's blood-soaked Goliath greataxe locked within, he laughs with brutal satisfaction: <em>"You brought me an offering, mortal. You thought your little wooden cage would choke the flame? You fed it. Every heartbeat they spent together drew my eyes straight to you."</em>
+<!-- statblock:ShadowDemon -->
+<div class="stat-block" id="sb-ShadowDemon">
+<div class="name">Shadow Demon</div>
+<div class="type">Medium fiend (demon), chaotic evil</div>
+<p><strong>Armor Class</strong> 13<br><strong>Hit Points</strong> 66 (12d8+12)<br><strong>Speed</strong> 30 ft., fly 30 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>1 (-5)</div><div class="score"><span class="label">DEX</span>17 (+3)</div><div class="score"><span class="label">CON</span>12 (+1)</div><div class="score"><span class="label">INT</span>14 (+2)</div><div class="score"><span class="label">WIS</span>13 (+1)</div><div class="score"><span class="label">CHA</span>14 (+2)</div></div>
+<hr class="rule">
+<p><strong>Saving Throws</strong> Dex +5, Cha +4<br><strong>Skills</strong> Stealth +7<br><strong>Damage Vulnerabilities</strong> radiant<br><strong>Damage Resistances</strong> acid, fire, necrotic, thunder; bludgeoning, piercing, slashing from nonmagical attacks<br><strong>Damage Immunities</strong> cold, lightning, poison<br><strong>Condition Immunities</strong> exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained<br><strong>Senses</strong> darkvision 120 ft., passive Perception 11<br><strong>Languages</strong> Abyssal, telepathy 120 ft.<br><strong>Challenge</strong> 4 (1,100 XP)</p>
+<hr class="rule">
+<p><strong><em>Incorporeal Movement.</em></strong> Moves through creatures and objects; 5 (1d10) force if it ends its turn inside an object.</p>
+<p><strong><em>Light Sensitivity.</em></strong> In bright light: disadvantage on attack rolls and on sight-based Perception.</p>
+<p><strong><em>Shadow Stealth.</em></strong> In dim light or darkness, Hide as a bonus action.</p>
+<h4>Actions</h4>
+<p><strong><em>Claws.</em></strong> <em>Melee Weapon Attack:</em> +5 to hit, reach 5 ft. <em>Hit:</em> 10 (2d6+3) psychic, or 17 (4d6+3) psychic if it had advantage.</p>
+<p class="gm-note"><strong>GM:</strong> The Sun-Path brazier puzzle (Scene 8) turns the whole room to bright light: Light Sensitivity on, Shadow Stealth off.</p>
 </div>
-
-<div class="stat-block">
-  <div class="name">Mars (Diminished Avatar)</div>
-  <div class="type">Large Divine, Lawful Neutral &mdash; CR 20 (25,000 XP) | Custom Campaign Boss (<a href="../npcs/mars.json" target="_blank">Sheet</a>)</div>
-  <div class="scores">
-    <div class="score"><span class="label">HP</span>300</div>
-    <div class="score"><span class="label">AC</span>22 / 16</div>
-    <div class="score"><span class="label">SPD</span>40</div>
-    <div class="score"><span class="label">STR</span>28</div>
-    <div class="score"><span class="label">DEX</span>16</div>
-    <div class="score"><span class="label">CON</span>24</div>
-  </div>
-  <hr class="rule">
-  <p><strong>Multiattack.</strong> 4 Divine Pilum (+10, range 60 ft, 2d8+6 piercing + 1d8 fire/radiant). Reduced to 2 attacks if bloodline severed.</p>
-  <p><strong>Divine Smite (1/round).</strong> +3d8 radiant on a hit (silenced if bloodline severed).</p>
-  <p><strong>Legendary Resistance (3/day).</strong> Stripped once altar chains are locked.</p>
-  <p><strong>Legendary Actions (3/round):</strong> Pilum Strike (1) &middot; Divine Presence (DC 18 Wis or frightened 1 round, 1 act) &middot; Summon Undead (2 acts, 1 <a href="https://www.dndbeyond.com/monsters/17010-shadow-demon" target="_blank" style="color:#5a1a00;text-decoration:none;">Shadow Demon</a> HP 66, CR 4, <em>MM</em> p. 64).</p>
+<!-- /statblock -->
+<!-- statblock:Mars -->
+<div class="stat-block" id="sb-Mars">
+<div class="name">Mars, Diminished Avatar</div>
+<div class="type">Large celestial (god of war), lawful neutral</div>
+<p><strong>Armor Class</strong> 22 (divine panoply); 16 once the altar chains are locked<br><strong>Hit Points</strong> 300 (24d10+168)<br><strong>Speed</strong> 40 ft. (cannot leave the Antechamber)</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>28 (+9)</div><div class="score"><span class="label">DEX</span>16 (+3)</div><div class="score"><span class="label">CON</span>24 (+7)</div><div class="score"><span class="label">INT</span>18 (+4)</div><div class="score"><span class="label">WIS</span>20 (+5)</div><div class="score"><span class="label">CHA</span>22 (+6)</div></div>
+<hr class="rule">
+<p><strong>Saving Throws</strong> Str +16, Con +14, Wis +12, Cha +13<br><strong>Skills</strong> Intimidation +13, Perception +12<br><strong>Damage Resistances</strong> bludgeoning, piercing, slashing from nonmagical attacks<br><strong>Damage Immunities</strong> fire, poison<br><strong>Condition Immunities</strong> charmed, exhaustion, frightened, paralyzed, poisoned<br><strong>Senses</strong> truesight 120 ft., passive Perception 22<br><strong>Languages</strong> all<br><strong>Challenge</strong> 20 (25,000 XP)</p>
+<hr class="rule">
+<p><strong><em>Legendary Resistance (3/day).</em></strong> Auto-succeeds on a failed save. <strong>Lost entirely once the altar chains are locked</strong> (Ritual Round 1).</p>
+<p><strong><em>Anchored.</em></strong> While the spear is in the Antechamber, Mars cannot be banished, teleported or moved against his will.</p>
+<p><strong><em>Not to Be Killed.</em></strong> At 0 HP the avatar breaks apart and Mars cannot act for the rest of the encounter, but he is not destroyed and the spear is untouched. The choice still has to be made.</p>
+<h4>Actions</h4>
+<p><strong><em>Multiattack.</em></strong> Four Divine Pilum attacks. <strong>Two</strong> once the bloodline is severed (Ritual Round 2).</p>
+<p><strong><em>Divine Pilum.</em></strong> <em>Melee or Ranged Weapon Attack:</em> +10 to hit, reach 10 ft. or range 60 ft., one target. <em>Hit:</em> 12 (2d6+5) piercing plus 3 (1d6) radiant. The pilum returns to his hand.</p>
+<p><strong><em>War Cry (Recharge 5-6).</em></strong> Each creature within 30 ft. that can hear him: DC 18 Wis or frightened for 1 minute (repeat save each turn end).</p>
+<h4>Legendary Actions</h4>
+<p>Mars can take 3 legendary actions, one at a time, at the end of another creature's turn.</p>
+<p><strong>Pilum Strike.</strong> One Divine Pilum attack.</p>
+<p><strong>Divine Presence.</strong> One creature within 60 ft.: DC 18 Wis or frightened until the end of its next turn.</p>
+<p><strong>Divine Smite (costs 2).</strong> His next Pilum hit this round deals +13 (3d8) radiant. <strong>Unavailable once the bloodline is severed.</strong></p>
+<p><strong>Summon the Fallen (costs 2).</strong> One Shadow Demon steps out of the red light (max 2 at once).</p>
+<p class="gm-note"><strong>GM:</strong> He targets whoever is working the ritual, never a downed PC: he wants witnesses. He is cold and methodical, waiting to be impressed. Mars is genuinely Mars; never resolve him into an impostor.</p>
 </div>
+<!-- /statblock -->
 
-<p><em>"MORTALS. You have carried my anchor through two ghosts and a king who would not die. Now choose, and choose knowing I will remember which one you make."</em></p>
+<h1>The Choice: Three Horrible Options</h1>
 
-<!-- ── -->
-<h1>Decision Point: The Three Horrible Options</h1>
-
-<p>The campaign's actual thesis. Present all three plainly. None is secretly correct.</p>
+<p>Present all three plainly. None is secretly correct. Ask each player what their character actually wants, and let the disagreement between characters be the scene. If a corruption-5 PC exists, Mars speaks to them by name before anyone else answers.</p>
 
 <table class="decision-table">
-  <tr><th>Option</th><th>Requires</th><th>Cost</th></tr>
-  <tr><td>1 — Destroy It</td><td>3-Round Interactive Unmaking Ritual:
-    <br>• R1: DC 13 Athletics/Thieves' Tools locks chains &rarr; Mars AC drops to 15, loses Legendary Resistance.
-    <br>• R2: DC 14 Religion/Arcana &rarr; Multiattack cut from 4 to 2, smite silenced.
-    <br>• R3: Spear shattered on anvil.</td><td>Someone becomes the vault's new guardian, permanently. A PC must step into the seat (Lucius is dead). No volunteer = ritual fails, choose another option.</td></tr>
-  <tr><td>2 — Give to Rome</td><td>Party claims custody in contubernium's name, sealing it in Lucius's iron box. Shorter, furious duel (~50 HP or tactical stand).</td><td>Crisis ends today. Rome gains an imperial weapon of blood. Someday, someone else faces this again.</td></tr>
-  <tr><td>3 — Give to Mars</td><td>Return the spear to the altar, step back. No combat required.</td><td>No one bleeds today. Mars walks away vindicated, free to do this again.</td></tr>
+<tr><th>Option</th><th>What it takes</th><th>What it costs</th></tr>
+<tr><td>1. Destroy it</td><td>The Unmaking Ritual (3 rounds of combat, below)</td><td>Someone stays below forever as the guardian of the pieces. The cycle ends.</td></tr>
+<tr><td>2. Give it to Rome</td><td>Seal the spear in Lucius's iron lockbox and walk out under Mars's fury</td><td>The crisis ends today. Rome owns a weapon of blood; someday this happens to somebody else's children.</td></tr>
+<tr><td>3. Give it back to Mars</td><td>Lay it on the altar and step back</td><td>No one bleeds today. The god walks out vindicated and free to start the next war.</td></tr>
 </table>
 
-<div class="clue-box">
-  <strong>Running the choice:</strong> Ask each player what their character actually wants. Let the disagreement between characters be part of the scene. If a corruption-5 PC exists, Mars addresses them directly, by name, before anyone else answers.
+<h2>Option 1: The Unmaking Ritual</h2>
+
+<p>Roll initiative. Mars fights. He targets whoever is working the ritual and never strikes a downed PC: he wants witnesses. The spear must be on the anvil: <strong>opening the box</strong> releases the greataxe too (Ursula: DC 14 Wis save or she spends her first turn in a battle-frenzy, attacking the nearest creature, friend or foe).</p>
+
+<div class="clock-box"><strong>Round 1: Lock the Chains.</strong> Four winches, one at each compass point, 20 ft. from the altar. Each needs one action: <strong>DC 13 Athletics or thieves'/tinker's/smith's tools</strong> (Rivia's artificer tools count). Locks persist; unfinished winches can be finished next round. <strong>When all four are locked:</strong> Mars's AC drops to 16 and he loses all Legendary Resistance.</div>
+
+<div class="clock-box"><strong>Round 2: Sever the Bloodline.</strong> A PC at the altar speaks the binding backwards: <strong>DC 14 Religion or Arcana</strong> (an action). Advantage if Vercingetorix's secret was heard; +2 if the speaker holds the amber OTHALAN token. Others may use the Help action. <strong>On success:</strong> Multiattack drops to two Pilum, Divine Smite is silenced. On failure, try again next round; Mars's War Cry recharges automatically.</div>
+
+<div class="clock-box"><strong>Round 3: The Guardian, then the Shatter.</strong> First someone must step into the guardian's seat (the stone chair between the winches). Then any PC strikes the spear on the anvil: <strong>any hit with a magical or consecrated weapon</strong>, or <strong>DC 15 Strength</strong> with anything else. If no one takes the seat, the spear will not break: the ritual fails and the party must choose Option 2 or 3 with Mars still standing.</div>
+
+<div class="secret-box"><strong>Who can take the seat:</strong> any PC (the character retires as a legend: they do not die, they stay, awake, forever, and their player narrates their last words). <strong>Thusnelda</strong>, if he is alive and the party brought him down or he followed: <em>"I came to the grove to pay a debt with my death. Let me pay it with my life instead."</em> Nobody else qualifies. Do not let a summoned creature, a stranger or a Roman legionary take it: the binding needs someone who chose to come.</div>
+
+<div class="read-aloud">
+  The spear breaks with a sound like a city wall coming down. The red light goes out all at
+  once. Mars does not scream. He stands up off the altar, and for a moment he is not thin
+  any more, he is enormous, and he looks at each of you with something that might be
+  respect. "Well," says the god of war. "That has never happened before." Then there is only
+  the dark, and the chains, and someone sitting very still in the stone chair, keeping
+  watch.
 </div>
 
-<!-- ── -->
+<h2>Option 2: Give It to Rome</h2>
+<p>The spear goes into Lucius's iron lockbox, sealed with his ring. Mars does not stop them, but he does not let them leave untouched: <strong>one round of fury</strong>. War Cry (DC 18 Wis, frightened 1 minute), then four Divine Pilum at four different PCs. Then he lets them go.</p>
+<div class="read-aloud">
+  "Take it, then. Carry it to Rome. Rome has fed me better than any tribe ever did. I will be
+  patient. Rome always gives me what I need, in the end." He is still smiling when the red
+  light closes behind you.
+</div>
+<p><strong>The greataxe:</strong> separated from the spear, it goes quiet but not dead. Ursula keeps it. On a natural 1 in any future fight, it remembers.</p>
+
+<h2>Option 3: Give It Back to Mars</h2>
+<p>Lay the spear on the altar and step back. No combat. Mars takes it up, and each PC must make a <strong>DC 13 Wisdom save</strong> or gain 1 corruption: they felt how good it would be to follow him.</p>
+<div class="read-aloud">
+  He weighs the spear in his hand like a man greeting an old friend. "No one bleeds today.
+  You have my word, and I keep my word. Today." He walks past you up the stair, and the stone
+  does not stop him. Long after he is gone you can still hear him, far above, laughing like
+  thunder rolling north toward the Danube.
+</div>
+<p><strong>The greataxe:</strong> Mars hands it back to Ursula himself. <em>"Keep it. You will need it."</em> It is now a +1 greataxe that grants advantage on initiative and whispers.</p>
+
 <h1>Epilogue</h1>
 
 <div class="read-aloud">
-  Whatever is left of the light drains out of the crystal-star behind you as you climb. By
-  the time you reach the surface, the marsh is just a marsh again. Somewhere behind you, a
-  granite altar is either empty, occupied by someone new, or holding a weapon that will wait
-  for someone else's grandchildren.
+  By the time you climb out of the skull's mouth the marsh is just a marsh again. The water
+  is black, not green. A dog is barking in the village. Somewhere behind you, a granite altar
+  is either empty, guarded, or waiting.
 </div>
 
-<p>Return to Fort Vindolanda. Legate Corvinus and Augur Cassia greet the surviving legionaries at the praetorium. Centurion Varro's memorial stone stands freshly carved at the north gate. Tribune Lucius's locked iron box and journal are presented to Corvinus. See <code>chapter5.qmd</code> for the full epilogue table (per-ending NPC states) and citizenship awards.</p>
+<table class="decision-table">
+<tr><th>Ending</th><th>Vindolanda</th><th>The frontier</th></tr>
+<tr><td>Destroyed</td><td>Corvinus reads his own sealed orders in the party's hands, says nothing for a long time, then signs every one of Lucius's citizenship letters without a word. Cassia's next augury shows clear sky for the first time in her career.</td><td>The village buries the boy's bones and carves the guardian's name on the grove stone, beside Belatucadrus. The frontier is quiet for a generation.</td></tr>
+<tr><td>Rome</td><td>Corvinus is horrified: his orders were to prevent exactly this. He honours the citizenship letters (Lucius signed them, and the Senate will check) but the box leaves for Rome within the week, under Praetorian escort. Brutus's agents meet it at Londinium.</td><td>Within ten years, a Roman general in the East wins a war nobody thought could be won. The party hears about it in a tavern and goes quiet.</td></tr>
+<tr><td>Mars</td><td>Corvinus never learns the truth. The citizenship letters are honoured. Cassia's birds will not fly north for a month.</td><td>The Marcomannic war on the Danube, which had been ending, flares again that winter. The god of war walked out of a Britannic bog and went to work.</td></tr>
+</table>
 
-<div class="secret-box">
-  <strong>Consistency guard</strong><br>
-  Mars is genuinely Mars — diminished, corrupted, starved. Not an impostor. If a player asks
-  "is this really him," any NPC suspicion (Cassia is the natural one) stays suspicion, never
-  confirmation. Do not resolve into "it was someone else all along."
-</div>
+<div class="callout"><strong>Citizenship:</strong> in every ending, Lucius's pre-signed commendations make every surviving PC a <em>civis Romanus</em>. Read each PC's name aloud when Corvinus seals them. Then ask each player one question: <em>"What does your character do the morning after?"</em> and let that be the last thing anyone says.</div>
 
-</div>
+<div class="secret-box"><strong>Consistency guard:</strong> Mars is genuinely Mars: diminished, corrupted, starved, not an impostor. NPC suspicion (Cassia is the natural voice) stays suspicion. Do not resolve it into "it was someone else all along."</div>
+
+<p style="font-size:8pt;font-style:italic">All stat blocks on this sheet are generated from <code>scripts/build_final_statblocks.py</code>; the combined sheet is <code>gm_tools/final_statblocks.html</code>.</p>
+
+</div><!-- end columns -->
+
 </body>
 </html>

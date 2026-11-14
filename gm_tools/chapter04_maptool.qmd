@@ -18,15 +18,15 @@ Load maps before players join. The session begins with the Farbog and Village ex
 
 | Scene | Map File | Grid Scale | Initial Coordinates | VBL &amp; MBL Notes |
 |---|---|:---:|---|---|
-| **Scene 0: Farbog Crossing** | `s3_farbog_crossing.html` / `SkeletonFortressEntrancePublic.jpg` | 50px (5 ft) | PCs: South bank (X: 12, Y: 45)<br>Stone: (X: 15, Y: 40)<br>[Wight](https://www.dndbeyond.com/monsters/17054-wight) &times;3 / [Banshee](https://www.dndbeyond.com/monsters/16799-banshee) &times;3: Mid-causeway (X: 18&ndash;22, Y: 24&ndash;28) | **VBL:** Fog on marsh flanks; open line of sight along causeway.<br>**MBL:** Deep corrosive water blocks movement for non-swimmers; bone path is clear. |
+| ~~Scene 0: Farbog Crossing~~ | *Played in Session 5 (Wights destroyed, Myling joined). Skip.* | | | |
 | **Scene 1: Germanic Village** | `s3_germanic_village.html` | 50px (5 ft) | PCs: South path (X: 10, Y: 30)<br>Villagers: Central hearth (X: 20, Y: 18) | **VBL:** Longhouse timber walls block vision; open doorways allow sight cones.<br>**MBL:** Longhouse perimeter walls. |
 | **Scene 2&ndash;3: Sacred Grove &amp; Circle** | `s4_sacred_grove.html` | 50px (5 ft) | PCs: South treeline (X: 14, Y: 35)<br>Belatucadrus Shrine: (X: 14, Y: 22)<br>Thusnelda: 7-stone circle center (X: 28, Y: 15) | **VBL:** Circular VBL on ancient oak trunks; cross-VBL on the 7 standing stones.<br>**MBL:** Standing stones and mature tree trunks. |
 | **Scene 4: Skull Entrance** | `SkeletonFortressEntrancePublic.jpg` | 70px (5 ft) | PCs: Offering path base (X: 15, Y: 38)<br>[Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga) &times;2: Stair foot (X: 14, Y: 14; X: 16, Y: 14)<br>[Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton) &times;4: Bone piles (X: 12, Y: 16; X: 18, Y: 16) | **VBL:** Solid cliff face blocks sight outside mouth; interior stairs shrouded in darkness.<br>**MBL:** 20-ft cliff walls; narrow stairs bottleneck (10 ft / 2 squares wide). |
-| **Scene 5: The Ossuary (S4 End)** | `Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg` (west skull chamber) | 70px (5 ft) | PCs: West entry stairs (X: 4, Y: 21)<br>Sorted bone altar: (X: 8, Y: 21)<br>East archway: (X: 12, Y: 21) | **VBL:** Circular skull walls completely block vision outside room.<br>**MBL:** Outer skull stone perimeter. Advance to Level 6. |
-| **S5 Transition: Blood-Growth** | Same map, east chambers | 70px (5 ft) | PCs: Archway (X: 13, Y: 21)<br>[Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol) &times;1: (X: 18, Y: 14)<br>[Dretch](https://www.dndbeyond.com/monsters/16847-dretch) &times;2: (X: 16, Y: 12; X: 20, Y: 16) | **VBL:** Fleshy demonic pillars break line of sight.<br>**MBL:** Organic blood-growth pillars. |
-| **S5 Transition: Minor Altar** | Same map, center chamber | 70px (5 ft) | PCs: Corridor (X: 17, Y: 22)<br>[Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon) &times;3: Behind pillars (X: 15, Y: 28; X: 19, Y: 28) | **VBL:** 4 square pillars block vision; braziers illuminate room when lit.<br>**MBL:** Stone pillars. |
-| **S5 Transition: Gathering Hall** | Same map, south end | 70px (5 ft) | PCs: North arch (X: 15, Y: 33)<br>[Wraith](https://www.dndbeyond.com/monsters/17064-wraith) &times;3: Offering table (X: 15, Y: 38) | **VBL:** Sarcophagi and burial alcoves.<br>**MBL:** Incorporeal Wraiths ignore MBL; party blocked by stone benches. |
-| **S5 Transition: Core Room** | `CastleCoreRoomPublic.jpg` | 70px (5 ft) | PCs: Entry gates (X: 15, Y: 4)<br>[Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu) &times;1: Central dais (X: 15, Y: 15) | **VBL:** Dais perimeter and 4 gargoyle conduits.<br>**MBL:** Outer circular wall; raised dais edges. |
+| **Scene 5: The Ossuary (Three Niches puzzle, Myling's bones)** | `Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg` (west skull chamber) | 70px (5 ft) | PCs: West entry stairs (X: 4, Y: 21)<br>Sorted bone altar: (X: 8, Y: 21)<br>East archway: (X: 12, Y: 21) | **VBL:** Circular skull walls completely block vision outside room.<br>**MBL:** Outer skull stone perimeter. Advance to Level 6. |
+| **Scene 6: Blood-Growth (cuttable)** | Same map, east chambers | 70px (5 ft) | PCs: Archway (X: 13, Y: 21)<br>[Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol) &times;1: (X: 18, Y: 14)<br>[Dretch](https://www.dndbeyond.com/monsters/16847-dretch) &times;2: (X: 16, Y: 12; X: 20, Y: 16) | **VBL:** Fleshy demonic pillars break line of sight.<br>**MBL:** Organic blood-growth pillars. |
+| **Scene 8: Minor Altar, Sun-Path braziers (cuttable)** | Same map, center chamber | 70px (5 ft) | PCs: Corridor (X: 17, Y: 22)<br>[Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon) &times;3: Behind pillars (X: 15, Y: 28; X: 19, Y: 28) | **VBL:** 4 square pillars block vision; braziers illuminate room when lit.<br>**MBL:** Stone pillars. |
+| **Scene 9a: Gathering Hall** | Same map, south end | 70px (5 ft) | PCs: North arch (X: 15, Y: 33)<br>[Wraith](https://www.dndbeyond.com/monsters/17064-wraith) &times;2 (the two chieftains): Offering table (X: 15, Y: 38) | **VBL:** Sarcophagi and burial alcoves.<br>**MBL:** Incorporeal Wraiths ignore MBL; party blocked by stone benches. |
+| **Scene 9b: Core Room (SESSION 6 ENDS)** | `CastleCoreRoomPublic.jpg` | 70px (5 ft) | PCs: Entry gates (X: 15, Y: 4)<br>[Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu) &times;1: Central dais (X: 15, Y: 15) | **VBL:** Dais perimeter and 4 gargoyle conduits.<br>**MBL:** Outer circular wall; raised dais edges. |
 
 ---
 
@@ -38,8 +38,7 @@ Load maps before players join. The session begins with the Farbog and Village ex
 | Julia Jana | `Maptool/tokens/players/Julia_Jana.rptok` | |
 | Tanit | `Maptool/tokens/players/Tanit_bint_Abdmelqart.rptok` | |
 | Rivia | `Maptool/tokens/players/Rivia_Calida_Mendera.rptok` | Carries the Artificer's box; responsible for the Box Cataclysm (deposited Spear, then locked Ursula's Greataxe inside to 'nullify' it) |
-| Ursula | `Maptool/tokens/players/Ursula_Günther.rptok` | Executed Varro at gate (S1); recovering from Goliath Greataxe battle possession; axe locked in box |
-| Brian | `Maptool/tokens/players/Brian.rptok` | |
+| Ursula | `Maptool/tokens/players/Ursula_Günther.rptok` | Fought Varro at the gate (S2); he died in S3; recovering from Goliath Greataxe battle possession; axe locked in box |
 
 ---
 
@@ -47,7 +46,7 @@ Load maps before players join. The session begins with the Farbog and Village ex
 
 No allied military garrison travels with the party:
 - **Tribune Lucius is deceased** (slain in Session 3 spider ambush) — contubernium travels alone.
-- **Centurion Varro is deceased** (executed at North Gate in Session 1).
+- **Centurion Varro is deceased** (killed by Ursula at the gate: Session 2 raid, died in the Session 3 cold open).
 - **Legate Corvinus &amp; Augur Cassia** remain at Fort Vindolanda.
 - **Thusnelda (Völva Seer):** Token at the Sacrifice Circle in Scene 3.
 
@@ -57,18 +56,22 @@ No allied military garrison travels with the party:
 
 ---
 
+### Session Tokens Added for Session 6
+
+| Token | File | Scene | Notes |
+|---|---|---|---|
+| Myling | `Maptool/tokens/npcs/creatures/Myling.rptok` | Village &rarr; Ossuary | Carried by a PC. Rests beside his bones in the Ossuary. Hostile only if abandoned. |
+
 ### Creature Tokens
 
 | Creature | File | Scene | Count | Notes |
 |---|---|---|---|---|
-| [Banshee](https://www.dndbeyond.com/monsters/16799-banshee) | `Maptool/tokens/npcs/creatures/Banshee.rptok` | Scene 0 (Marsh) | &times;3 | *MM* p. 23. CR 4, AC 12, HP 58. Wail (1/day), Horrifying Visage. Audio macro: `s4_banshee_dread_mother.mp3`. |
-| [Wight](https://www.dndbeyond.com/monsters/17054-wight) | `Maptool/tokens/npcs/creatures/Wight.rptok` | Scene 0 (Marsh) | &times;3 | *MM* p. 300. CR 3, AC 14, HP 45. Life Drain, Sunlight Sensitivity. |
 | [Bone Naga](https://www.dndbeyond.com/monsters/16812-bone-naga) | `Maptool/tokens/npcs/creatures/Bone_Naga.rptok` | Scene 4 (Skull Entrance) | &times;2 | *MM* p. 233. CR 4, AC 15, HP 58. Hold Person, Ray of Enfeeblement; vulnerable to bludgeoning. |
 | [Skeleton](https://www.dndbeyond.com/monsters/17015-skeleton) | `Maptool/tokens/npcs/creatures/Skeleton.rptok` | Scene 4 (Skull Entrance) | &times;4 | *MM* p. 272. CR 1/4, AC 13, HP 13. Shortsword, Shortbow; vulnerable to bludgeoning. |
-| [Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol) | `Maptool/tokens/npcs/creatures/Yochlol.rptok` | Blood-Growth Rooms | &times;1 | *MM* p. 65. CR 6, AC 15, HP 136. Mist Form, Web, Slam + poison. |
+| [Yochlol](https://www.dndbeyond.com/monsters/17068-yochlol) | `Maptool/tokens/npcs/creatures/Yochlol.rptok` | Blood-Growth Rooms | &times;1 | *MM* p. 65. CR 10 (gestating variant: HP 68, rooted 3 rounds). Mist Form, Web, Slam + poison. |
 | [Dretch](https://www.dndbeyond.com/monsters/16847-dretch) | `Maptool/tokens/npcs/creatures/Dretch.rptok` | Blood-Growth Rooms | &times;2 | *MM* p. 57. CR 1/4, AC 11, HP 18. Fetid Cloud. |
-| [Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon) | `Maptool/tokens/npcs/creatures/Shadow_Demon.rptok` | Minor Altar | &times;3 | *MM* p. 64. CR 4, AC 12, HP 66. Shadow Stealth; Sunlight Weakness. |
-| [Wraith](https://www.dndbeyond.com/monsters/17064-wraith) | `Maptool/tokens/npcs/creatures/Wraith.rptok` | Gathering Hall | &times;3 | *MM* p. 302. CR 5, AC 13, HP 67. Chieftain spirits; audio macro: `s4_wraith_chieftain_confession.mp3`. |
+| [Shadow Demon](https://www.dndbeyond.com/monsters/17010-shadow-demon) | `Maptool/tokens/npcs/creatures/Shadow_Demon.rptok` | Minor Altar | &times;3 | *MM* p. 64. CR 4, AC 13, HP 66. Shadow Stealth; Sunlight Weakness. |
+| [Wraith](https://www.dndbeyond.com/monsters/17064-wraith) | `Maptool/tokens/npcs/creatures/Wraith.rptok` | Gathering Hall | &times;2 | *MM* p. 302. CR 5, AC 13, HP 67. Chieftain spirits; audio macro: `s4_wraith_chieftain_confession.mp3`. |
 | [Glabrezu](https://www.dndbeyond.com/monsters/16870-glabrezu) | `Maptool/tokens/npcs/creatures/Glabrezu.rptok` | Core Room | &times;1 | *MM* p. 58. CR 9, AC 17, HP 157. Audio macro: `s4_glabrezu_core_entrance.mp3`. |
 
 ---

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Chapter 4: The God's Demand</title>
+<title>Chapter 4: The God's Demand (Session 6)</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -49,6 +49,7 @@ em { color: #3a1000; }
 .callout { background: #fff0d0; border: 0.5pt solid #c8a030; border-left: 2pt solid #c87800; padding: 5px 8px; font-size: 8.5pt; margin: 4px 0; break-inside: avoid; }
 .secret-box { background: #1a0e04; color: #e8d8b0; border: 1pt solid #8B4513; padding: 5px 8px; font-size: 8.5pt; margin: 4px 0; break-inside: avoid; }
 .secret-box strong { color: #c8a84b; }
+.gm-note { background: #fff0d0; border-left: 2pt solid #c87800; padding: 3px 5px; margin-top: 3px; }
 .clock-box { background: #fff8e8; border: 1pt solid #c8a030; padding: 5px 8px; font-size: 8.5pt; margin: 4px 0; break-inside: avoid; }
 
 @media print {
@@ -59,216 +60,433 @@ em { color: #3a1000; }
 </style>
 </head>
 <body>
-
 <div class="cover">
   <div class="cover-title">Chapter 4<br>The God's Demand</div>
-  <div class="cover-subtitle">Shadow of Mars Campaign — Session 4 of 5</div>
+  <div class="cover-subtitle">Shadow of Mars Campaign: Session 6 of 7 (the penultimate session)</div>
   <hr class="cover-rule">
-  <div class="cover-meta">Level 5 &rarr; Advance to 6 &nbsp;|&nbsp; 4&ndash;5 Hours &nbsp;|&nbsp; 6 Players</div>
-  <div class="cover-meta">Farbog &rarr; Germanic Village &rarr; Sacred Grove &rarr; Sacrifice Circle &rarr; Skull Entrance &rarr; Ossuary</div>
+  <div class="cover-meta">Level 6 &rarr; Advance to 7 at the end &nbsp;|&nbsp; 4&ndash;5 Hours &nbsp;|&nbsp; 5 Players (Iris, Julia Jana, Tanit, Rivia, Ursula)</div>
+  <div class="cover-meta">Village &rarr; Sacred Grove &rarr; Sacrifice Circle &rarr; Skull Entrance &rarr; Ossuary &rarr; Blood-Growth &rarr; Rune Lock &rarr; Minor Altar &rarr; Gathering Hall &rarr; Core Room</div>
   <div class="cover-teaser">
-    Cross the Farbog alone with Lucius's locked dispatch box and the corrupted Spear.
-    At the Sacred Grove, halt Thusnelda's sacrificial suicide before the blood circle activates.
-    Defeating the Bone Nagas at the skull threshold, breach the curated Ossuary.
+    The Farbog is behind them. A drowned boy rides on someone's back and asks to go home.
+    Ahead: a village that has thinned, a seer cutting his own wrist in a ring of stones,
+    and a temple under a skull-faced hill where the chieftains fed their warband to a god.
+    The session ends when the crystal-star cracks and the stairs go down.
   </div>
 </div>
 
 <div class="columns">
 
-<h1>Scene 0: The Farbog Crossing</h1>
+<h1>Before You Start</h1>
 
-<div class="read-aloud">
-  The trees end and the ground turns to black water. Ahead, a causeway of old skulls
-  and packed bone runs across the marsh toward a hillside that has a face &mdash; a skull
-  carved from the living rock, easily twenty feet across, its eye sockets dark even now.
-  The water on either side glows green. Not fire. Something slower, like a pulse.
-  At the bank's edge, a standing stone. Runes cut deep. Old work &mdash; older than the
-  causeway. Someone wanted something remembered here.
-</div>
+<div class="callout"><strong>Where we are (table truth, CAMPAIGN_LOG.md):</strong> Session 5 crossed the Farbog and defeated the Wights. The Myling (the drowned boy, "Wulf") is with the party. Varro and Lucius are dead; no Roman officer travels with the party. Brian is not playing. Rivia's box holds the Spear of Mars <em>and</em> Ursula's Goliath greataxe; the resonance gives the party <strong>+2 Intimidation</strong>, <strong>disadvantage on calm Persuasion</strong> within 30 ft. of the box, and undead sense the party at double range.</div>
 
-<p><strong>Dramatic Question:</strong> Can the party cross the bone causeway without waking the drowned Wights beneath the glowing black water?</p>
+<div class="clock-box"><strong>Running time and cut points.</strong> This is a long session. Village + Grove + Circle &asymp; 75 min. Skull Entrance + Ossuary &asymp; 60 min. The lower temple &asymp; 90 min. If you are behind at the Ossuary, cut <strong>Scene 6</strong> (Blood-Growth) and <strong>Scene 8</strong> (Minor Altar): the rune lock opens straight onto the Gathering Hall. Never cut Scene 9: the session must end on the crystal cracking.</div>
 
-<div class="clock-box">
-  <strong>Pressure Cooker (Sinking Causeway):</strong> Leaving the bone causeway or lingering
-  causes the packed bone to sink 6 inches every 2 rounds. After 4 rounds, footing is difficult terrain
-  (DC 12 Dex check to avoid slipping into corrosive mire; DC 12 Con save each round in water or 1 exhaustion + 1 temp corruption).
-</div>
+<table class="decision-table">
+<tr><th>Scene</th><th>Map (MapTool)</th><th>Tokens</th></tr>
+<tr><td>1 Village</td><td>s3_germanic_village</td><td>Myling (carried)</td></tr>
+<tr><td>2&ndash;3 Grove, Circle</td><td>s4_sacred_grove</td><td>Thusnelda, Belatucadrus_Shrine</td></tr>
+<tr><td>4 Skull Entrance</td><td>SkeletonFortressEntrancePublic</td><td>Bone_Naga &times;2, Skeleton &times;4</td></tr>
+<tr><td>5&ndash;9 Temple</td><td>Blood-Cult-Dungeon (29&times;43) / CastleCoreRoomPublic</td><td>Yochlol, Dretch &times;2, Shadow_Demon &times;3, Wraith &times;2, Glabrezu</td></tr>
+</table>
 
-<p><strong>The Standing Stone Riddle:</strong> DC 13 Int (History) translates: <em>"Born from the willing, fed by the blood, I grow in the silence where no god has stood. Worship without truth, devotion without cost &mdash; I am what remains after the believer is lost. Name me."</em></p>
-<p><strong>Answer:</strong> <em>"The hunger"</em>, <em>"false devotion"</em>, or <em>"the cult's work"</em>. Correct naming yields a hidden carved bone token with the OTHALAN rune (one-time reroll on any save vs undead ability).</p>
-
-<div class="clue-box">
-  <strong>Three Clue Rule (Locating Entrance):</strong> Two supply caches on the near bank (DC 11 Investigation) reveal rotting grain, cult tally sticks, and warband cloth matching the two chieftains &mdash; confirming the path south to the skull entrance.
-</div>
-
-<div class="callout">
-  <strong>The Box Cataclysm (Rivia's Blunder):</strong> Rivia placed the Spear of Mars inside the box under dark influence. After Ursula was possessed by the Goliath Berserker Greataxe in the forest fight, Rivia locked the greataxe in the box thinking it would nullify the curse. The two artifacts resonated violently, scorching the OTHALAN rune into the wood and projecting Mars's aura (+2 Intimidation). In the Farbog, undead detect the party from double range: the group Stealth DC 14 check is at <strong>disadvantage</strong> unless the box is heavily wrapped or kept shielded.
-</div>
-
-<p><strong>Avoidance / Stealth:</strong> DC 14 group Dexterity (Stealth) lets the party slip across without disturbing the water. On failure or stepping into water, the Wights rise.</p>
-
-<div class="stat-block">
-  <div class="name"><a href="https://www.dndbeyond.com/monsters/17054-wight" target="_blank" style="color:#5a1a00;text-decoration:none;">3 &times; Wight</a> (or <a href="https://www.dndbeyond.com/monsters/16799-banshee" target="_blank" style="color:#5a1a00;text-decoration:none;">Banshee</a>)</div>
-  <div class="type">Undead, CR 3 / CR 4 (Monster Manual p. 300 / p. 23)</div>
-  <p><strong>Wight (HP 45, AC 14, Speed 30 ft).</strong> Longsword (+4, 1d8+2 slashing). Life Drain (+4, 1d6+2 necrotic, DC 13 Con save or HP max reduced). Sunlight Sensitivity.</p>
-  <p><strong>Banshee (HP 58, AC 12, Fly 40 ft).</strong> Corrupting Touch (+4, 3d6+2 necrotic). Horrifying Visage (DC 13 Wis). Wail (1/day, DC 13 Con: 0 HP on fail, 3d6 psychic on success).</p>
-</div>
-
-<!-- ── -->
 <h1>Scene 1: The Germanic Village</h1>
 
 <div class="read-aloud">
   The village smells of woodsmoke and old bread. Chickens. A dog that barks once and
-  stops. Two fires burning where ten should be. The longhouses are solid work, well-kept,
+  stops. Two fires burning where ten should be. The longhouses are solid work, well kept,
   but half the doors stand open on empty rooms. A woman stops grinding grain and watches
-  you without moving. A child runs inside. An old man at the fire does not look up.
-  Whatever took this village apart, it was not a raid. This place just... thinned.
+  you without moving. A child runs inside. An old man at the fire does not look up.<br><br>
+  Then the woman's eyes go past you, to the small grey shape on your back. The quern stone
+  stops turning. Nobody in the village breathes.
 </div>
 
-<p><strong>Dramatic Question:</strong> Can the party earn the trust of the abandoned villagers to discover where Thusnelda went before his sacrifice is complete?</p>
+<p><strong>Dramatic Question:</strong> Can the party earn the village's trust fast enough to learn where the seer went, and what the boy on their back really is to these people?</p>
 
-<div class="callout">
-  <strong>What the Villagers Know (DC 13 Persuasion):</strong>
-  <ul>
-    <li>Their venerable völva (he/him), Thusnelda, walked north to the sacred grove at dawn with a ritual blade to "settle the gods' debt". Three villagers followed and returned terrified.</li>
-    <li>The clan's two chieftains led their warband south months ago down the old offering path and never returned.</li>
-    <li>DC 13 History/Persuasion: Thusnelda has read omens correctly for twenty years. His people trust him unconditionally &mdash; making his desperate self-sacrifice lethal.</li>
-  </ul>
+<div class="secret-box"><strong>The woman at the quern is the boy's mother.</strong> She knows him on sight. She does not scream. She walks to the party, touches his wet hair, and says: <em>"They told us the bog took you."</em> Then, to the party, very quietly: <em>"The chieftains took him south. To their temple under the skull. His bones are still there. Bring them home and he can sleep."</em> This is the hook that pulls the party into the dungeon for a reason of its own.</div>
+
+<h3>What the village knows</h3>
+<ul>
+  <li><strong>Free:</strong> the grove is north; the temple under the skull is south, down the old offering path.</li>
+  <li><strong>Free:</strong> their seer Thusnelda (an older man, he/him) walked to the grove before dawn with the old knife. Three followed and came back frightened.</li>
+  <li><strong>Free:</strong> the two chieftains led the warband south months ago. People stopped asking.</li>
+  <li><strong>DC 13 Persuasion</strong> (advantage: they brought the boy home): for two weeks Thusnelda spoke of "settling the gods' debt."</li>
+  <li><strong>DC 13 History or Persuasion:</strong> his family has read omens here for generations. Right for twenty years. Not mad. That is what makes this dangerous.</li>
+</ul>
+
+<div class="clock-box"><strong>Clock:</strong> Thusnelda has bled since dawn. If the party lingers (trading, resting), start the Circle with <strong>2 rounds</strong> instead of 3.</div>
+
+<div class="callout"><strong>The Myling's burden:</strong> the carrier's speed is halved; each hour away from the bog, DC 10 Str or 1 exhaustion (swapping carriers resets it). He can be <em>set down</em> on holy ground (the village burial mound, the Belatucadrus shrine, or a 10-minute Cleric/Druid consecration) and will wait there quietly. He only <em>rests</em> when laid beside his own bones in the temple (Scene 5). His mother will sit with him at the mound if the party leaves him.</div>
+
+<!-- statblock:Myling -->
+<div class="stat-block" id="sb-Myling">
+<div class="name">The Myling (&quot;Wulf&quot;)</div>
+<div class="type">Small undead, neutral</div>
+<p><strong>Armor Class</strong> 11<br><strong>Hit Points</strong> 13 (3d6+3)<br><strong>Speed</strong> 0 ft., fly 40 ft. (hover)</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>7 (-2)</div><div class="score"><span class="label">DEX</span>13 (+1)</div><div class="score"><span class="label">CON</span>10 (+0)</div><div class="score"><span class="label">INT</span>7 (-2)</div><div class="score"><span class="label">WIS</span>10 (+0)</div><div class="score"><span class="label">CHA</span>14 (+2)</div></div>
+<hr class="rule">
+<p><strong>Skills</strong> Stealth +3<br><strong>Damage Resistances</strong> bludgeoning, piercing, slashing from nonmagical attacks<br><strong>Damage Immunities</strong> cold, poison<br><strong>Condition Immunities</strong> exhaustion, grappled, poisoned<br><strong>Senses</strong> darkvision 60 ft., passive Perception 10<br><strong>Languages</strong> Germanic (a child's)<br><strong>Challenge</strong> 1/2 (100 XP)</p>
+<hr class="rule">
+<p><strong><em>Incorporeal Movement.</em></strong> Moves through creatures and objects; 1d10 force if it ends its turn inside an object.</p>
+<p><strong><em>Tragic Compulsion.</em></strong> Must be carried. While carried he weighs more each hour (Str DC 10 per hour or 1 exhaustion; carrier changes reset it). Laid beside his own bones in the temple Ossuary, he rests.</p>
+<h4>Actions</h4>
+<p><strong><em>Bone-Chill Touch.</em></strong> <em>Melee Spell Attack:</em> +3 to hit, reach 5 ft. <em>Hit:</em> 4 (1d8) cold; DC 11 Con or speed -10 ft. until end of its next turn.</p>
+<p><strong><em>Wail of the Lost (Recharge 5-6).</em></strong> Each creature within 30 ft.: DC 12 Wis save, 10 (3d6) psychic and frightened until end of its next turn; half and not frightened on a success. Wakes dormant undead within 300 ft.</p>
+<p class="gm-note"><strong>GM:</strong> Only hostile if abandoned or refused. Reward for laying him to rest: <strong>Myling's Rest</strong> for the carrier (advantage on death saves, immune to frightened) until the end of Session 7.</p>
 </div>
+<!-- /statblock -->
 
-<!-- ── -->
+<p><strong>Box aura:</strong> +2 Intimidation works here, but doors close and the village goes silent. Calm talk within 30 ft. of the box is at disadvantage. Leaving the box at the village edge removes the penalty.</p>
+
 <h1>Scene 2: The Sacred Grove</h1>
 
 <div class="read-aloud">
   The oaks here are old enough that their roots have lifted the path. At the grove's
-  center, a stone no taller than a man stands alone, its face carved on the side facing
-  the village &mdash; two faces, really, or one face trying to be two. Roman workmanship on
+  centre, a stone no taller than a man stands alone, its face carved on the side facing
+  the village: two faces, really, or one face trying to be two. Roman workmanship on
   top, older marks underneath. Someone has left fresh holly. Someone else has smeared
-  ash across the Roman features.
+  ash across the Roman features. Through a gap in the oaks: seven standing stones, and a
+  man standing in the middle of them.
 </div>
 
-<p><strong>Dramatic Question:</strong> Can the party decipher the ancient Belatucadrus shrine and consecrate a weapon before reaching the circle of sacrifice?</p>
+<p><strong>Dramatic Question:</strong> Will they stop to understand the shrine before they run to the circle?</p>
 
-<div class="clue-box">
-  <strong>Belatucadrus Consecration:</strong> DC 13 Int (Religion) recognizes the syncretic Celtic sun god / Roman Mars. 10 minutes of prayer consecrates a weapon: advantage on damage rolls against blood cult creatures and counts as magical for the Ossuary.
-</div>
+<div class="clue-box"><strong>Belatucadrus (DC 13 Religion):</strong> the Celtic sun god Rome renamed "Mars" on the frontier. <strong>Consecration:</strong> a Cleric or Druid prays 10 minutes, no slot: one weapon gains the <em>Belatucadrus blessing</em> (counts as magical; advantage on damage rolls against cult-marked creatures; defeats Vercingetorix's Relentless in Session 7).</div>
 
-<!-- ── -->
-<h1>Scene 3: The Ritual Sacrifice Circle</h1>
+<div class="clue-box"><strong>Sun-Path carving (puzzle clue for Scene 8):</strong> around the stone's base, a carved sun is shown four times, rising in the <strong>east</strong>, high in the <strong>south</strong>, setting in the <strong>west</strong>, and dark in the <strong>north</strong>. DC 10 Investigation, or automatic for anyone who walks round the stone. Note who saw it.</div>
+
+<p>Give the party <strong>one round</strong> to look before Thusnelda notices them.</p>
+
+<h1>Scene 3: The Sacrifice Circle</h1>
 
 <div class="read-aloud">
   He stands in the centre of the ring with the stillness of someone who has made up
-  his mind. His feet are bare on the cold stone. The knife in his hand is old work &mdash;
+  his mind. His feet are bare on the cold stone. The knife in his hand is old work,
   older than him, older than the village. His left wrist is scored, blood running down
   his fingers and dropping into the earth. He is watching it fall.
-  He hears you come and does not look up.
+  He hears you come and does not look up.<br><br>
   "You are too late to stop the debt. But you can witness. A willing death settles what
   war begins. The gods will be satisfied. Your soldiers will stop burning our grain."
 </div>
 
-<p><strong>Dramatic Question:</strong> Can the party stop Thusnelda's ritual suicide before the blood circle activates?</p>
+<p><strong>Dramatic Question:</strong> Can they stop him before the cut becomes fatal?</p>
 
-<div class="clock-box">
-  <strong>Pressure Cooker (The Ritual Clock):</strong> Started at dawn; the party has exactly 3 rounds to intervene before the cut is fatal. Each round spent inside the circle forces a DC 13 Wis save vs 1 temporary corruption point.
-</div>
-
-<div class="callout">
-  <strong>Box Diplomacy Penalty:</strong> Mars's violent aura radiating from the box imposes <strong>disadvantage on calm diplomacy</strong>. If carried within 30 ft of Thusnelda, he smells the bloodlust of Mars and recoils &mdash; Path A and Path B Persuasion checks are made at disadvantage unless the box is kept 30+ ft away!
-</div>
+<div class="clock-box"><strong>3 rounds</strong> (2 if they lingered). Each round a PC stands inside the ring: DC 13 Wis save or 1 temporary corruption.</div>
 
 <table class="decision-table">
-  <tr><th>Intervention Path</th><th>Mechanics</th><th>Consequences</th></tr>
-  <tr>
-    <td>Path A: Evidence</td>
-    <td>DC 14 Persuasion (Advantage if showing cult cloth, tally stick, or symbol)</td>
-    <td>Lowers knife. Convinced the hunger is cult-made. Waits at dungeon mouth; guides party south down offering path.</td>
-  </tr>
-  <tr>
-    <td>Path B: Rhetoric Only</td>
-    <td>DC 18 Persuasion (Double prof for Outlander/Hermit)</td>
-    <td>Success stops him shaken. Failure: finishes ritual; 1 round left to heal or bind wounds.</td>
-  </tr>
-  <tr>
-    <td>Path C: Physical Restraint</td>
-    <td>DC 13 Athletics/Acrobatics (Grapple or Disarm)</td>
-    <td>Restrained; does not attack party. Buys time to present Path A evidence.</td>
-  </tr>
-  <tr>
-    <td>Path D: No Action / Fail</td>
-    <td>Party allows cut to finish</td>
-    <td>Dies in 1 hr without healing magic. Grove blessing lost; party loses guide. Mars remains hungry.</td>
-  </tr>
+<tr><th>Path</th><th>Mechanics</th><th>Result</th></tr>
+<tr><td>A: Evidence</td><td>DC 14 Persuasion, advantage if they show cult cloth, the tally stick, a cult symbol, or the boy himself ("they did this to him")</td><td>Lowers the knife. Bind the wrist (DC 10 Medicine or any healing).</td></tr>
+<tr><td>B: Words only</td><td>DC 18 Persuasion (Outlander/Hermit: double proficiency)</td><td>Success: stops, shaken. Fail: one round left.</td></tr>
+<tr><td>C: Restraint</td><td>Grapple/Disarm, Athletics or Acrobatics vs DC 13</td><td>Restrained; never fights back. Buys time for A or B.</td></tr>
+<tr><td>D: Too late</td><td>No action, or all checks fail</td><td>Dies in 1 hour without healing magic. Village turns cold; guide lost.</td></tr>
 </table>
 
-<div class="clue-box">
-  <strong>Thusnelda's Intel (Unlocked if Saved):</strong> <em>"The dungeon entrance is south down the old offering path. The first room below has been making the dead stay. Someone sorted the bones... someone was proud of that work."</em>
-</div>
+<div class="callout"><strong>Box penalty:</strong> within 30 ft. of Thusnelda, Paths A and B roll at <strong>disadvantage</strong> (cancelling A's advantage). He smells slaughter in the wood and recoils. Someone holding the box outside the ring fixes it.</div>
 
-<!-- ── -->
+<p><strong>If saved, he says freely:</strong> <em>"The temple is south, down the old offering path. The first room below has been making the dead stay. Someone sorted the bones. Someone is still proud of that work."</em> He also knows the Sun-Path prayer (east, south, west, north): a second clue for Scene 8. He will wait at the dungeon mouth. <strong>Remember him:</strong> in Session 7 he is the NPC most likely to volunteer for the guardian's seat.</p>
+
+<!-- statblock:Thusnelda -->
+<div class="stat-block" id="sb-Thusnelda">
+<div class="name">Thusnelda, Völva of the Village</div>
+<div class="type">Medium humanoid (Germanic), neutral good</div>
+<p><strong>Armor Class</strong> 12 (hide)<br><strong>Hit Points</strong> 27 (6d8)<br><strong>Speed</strong> 30 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>10 (+0)</div><div class="score"><span class="label">DEX</span>14 (+2)</div><div class="score"><span class="label">CON</span>11 (+0)</div><div class="score"><span class="label">INT</span>13 (+1)</div><div class="score"><span class="label">WIS</span>16 (+3)</div><div class="score"><span class="label">CHA</span>14 (+2)</div></div>
+<hr class="rule">
+<p><strong>Skills</strong> Insight +5, Medicine +5, Perception +5, Religion +3<br><strong>Senses</strong> passive Perception 15<br><strong>Languages</strong> Germanic, broken Latin<br><strong>Challenge</strong> 1 (200 XP)</p>
+<hr class="rule">
+<p><strong><em>Völva.</em></strong> Thusnelda can cast <em>guidance</em> at will, <em>speak with animals</em> and <em>augury</em> 1/day each (Wis, DC 13).</p>
+<p><strong><em>Cunning Action.</em></strong> Dash, Disengage or Hide as a bonus action.</p>
+<h4>Actions</h4>
+<p><strong><em>Ritual Knife.</em></strong> <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6+2) piercing.</p>
+<p><strong><em>Shortbow.</em></strong> <em>Ranged Weapon Attack:</em> +4 to hit, range 80/320 ft. <em>Hit:</em> 5 (1d6+2) piercing.</p>
+<p class="gm-note"><strong>GM:</strong> He will not fight the party unless they threaten the village. If restrained, he does not struggle after round 1.</p>
+</div>
+<!-- /statblock -->
+
 <h1>Scene 4: The Skull Entrance</h1>
 
 <div class="read-aloud">
   The offering path ends at a hillside that has a face. A skull carved from the living
   rock, its eye sockets dark even at midday. Inside its mouth, stairs descend into
   darkness. The air coming up is cold and smells of old blood. And at the base of the
-  stairs, two shapes uncoil from the stone &mdash; serpentine, skeletal, moving with a
+  stairs, two shapes uncoil from the stone: serpentine, skeletal, moving with a
   purpose that bones alone do not explain.
 </div>
 
-<p><strong>Dramatic Question:</strong> Can the party defeat the Bone Nagas and shatter the skeletal guardians before being trapped on the narrow entrance stairway?</p>
+<p><strong>Dramatic Question:</strong> Can they fight down a stair two abreast without being pinned on it?</p>
 
-<p><strong>Chokepoint Tactics:</strong> The stone stair is narrow (two abreast). Nagas cast Hold Person (DC 12) and Ray of Enfeeblement to lock frontliners on the stairs while 4 Skeletons animate from loose bones on initiative count 20.</p>
+<div class="callout"><strong>Tactics:</strong> the stair is 10 ft. wide. The nagas open with <em>hold person</em> on whoever leads, then Bite at reach 10 ft. On initiative 20 of round 1, four skeletons assemble from the bone piles at the stair foot. The box means no surprise: the nagas are waiting. Bludgeoning wrecks the skeletons (the nagas are not vulnerable). Watch for lightning bolt up the stair.</div>
 
-<div class="stat-block">
-  <div class="name"><a href="https://www.dndbeyond.com/monsters/16812-bone-naga" target="_blank" style="color:#5a1a00;text-decoration:none;">2 &times; Bone Naga</a> + <a href="https://www.dndbeyond.com/monsters/17015-skeleton" target="_blank" style="color:#5a1a00;text-decoration:none;">4 &times; Skeleton</a></div>
-  <div class="type">Undead, CR 4 / CR 1/4 (Monster Manual p. 233, p. 272)</div>
-  <p><strong>Bone Naga (HP 58, AC 15).</strong> Bite (+5, 2d6+3 piercing + 4d6 poison, DC 11 Con half). Spellcasting (DC 12): Hold Person, Ray of Sickness, Ray of Enfeeblement. Vulnerable to bludgeoning.</p>
-  <p><strong>Skeleton (HP 13, AC 13).</strong> Shortsword (+4, 1d6+2 piercing). Shortbow (+4, 1d6+2 piercing). Vulnerable to bludgeoning damage.</p>
+<p><strong>Encounter:</strong> 2 &times; Bone Naga + 4 &times; Skeleton. Hard for five Level 6 PCs (adjusted 4,800 XP).</p>
+
+<!-- statblock:BoneNaga -->
+<div class="stat-block" id="sb-BoneNaga">
+<div class="name">Bone Naga</div>
+<div class="type">Large undead, lawful evil</div>
+<p><strong>Armor Class</strong> 15 (natural armor)<br><strong>Hit Points</strong> 58 (9d10+9)<br><strong>Speed</strong> 30 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>15 (+2)</div><div class="score"><span class="label">DEX</span>16 (+3)</div><div class="score"><span class="label">CON</span>12 (+1)</div><div class="score"><span class="label">INT</span>15 (+2)</div><div class="score"><span class="label">WIS</span>15 (+2)</div><div class="score"><span class="label">CHA</span>16 (+3)</div></div>
+<hr class="rule">
+<p><strong>Damage Immunities</strong> poison<br><strong>Condition Immunities</strong> charmed, exhaustion, paralyzed, poisoned<br><strong>Senses</strong> darkvision 60 ft., passive Perception 12<br><strong>Languages</strong> Germanic<br><strong>Challenge</strong> 4 (1,100 XP)</p>
+<hr class="rule">
+<p><strong><em>Spellcasting.</em></strong> Int-based, spell save DC 12, +4 to hit. Cantrips: <em>mage hand, minor illusion, ray of frost</em>. 1st (4 slots): <em>charm person, sleep</em>. 2nd (2 slots): <em>detect thoughts, hold person</em>. 3rd (1 slot): <em>lightning bolt</em> (8d6, DC 12 Dex half).</p>
+<h4>Actions</h4>
+<p><strong><em>Bite.</em></strong> <em>Melee Weapon Attack:</em> +5 to hit, reach 10 ft., one creature. <em>Hit:</em> 6 (1d6+3) piercing plus 10 (3d6) poison.</p>
+<p class="gm-note"><strong>GM:</strong> Monster Manual block. Not vulnerable to bludgeoning (only the skeletons are). No rejuvenation: the chieftains bound them, not a lich. Round 1: <em>hold person</em> on whoever leads down the stair; <em>lightning bolt</em> once when 3+ PCs bunch on it, and let them see it coming.</p>
 </div>
+<!-- /statblock -->
+<!-- statblock:Skeleton -->
+<div class="stat-block" id="sb-Skeleton">
+<div class="name">Skeleton</div>
+<div class="type">Medium undead, lawful evil</div>
+<p><strong>Armor Class</strong> 13 (armor scraps)<br><strong>Hit Points</strong> 13 (2d8+4)<br><strong>Speed</strong> 30 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>10 (+0)</div><div class="score"><span class="label">DEX</span>14 (+2)</div><div class="score"><span class="label">CON</span>15 (+2)</div><div class="score"><span class="label">INT</span>6 (-2)</div><div class="score"><span class="label">WIS</span>8 (-1)</div><div class="score"><span class="label">CHA</span>5 (-3)</div></div>
+<hr class="rule">
+<p><strong>Damage Vulnerabilities</strong> bludgeoning<br><strong>Damage Immunities</strong> poison<br><strong>Condition Immunities</strong> exhaustion, poisoned<br><strong>Senses</strong> darkvision 60 ft., passive Perception 9<br><strong>Languages</strong> understands the languages it knew in life but can't speak<br><strong>Challenge</strong> 1/4 (50 XP)</p>
+<hr class="rule">
+<h4>Actions</h4>
+<p><strong><em>Shortsword.</em></strong> <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft. <em>Hit:</em> 5 (1d6+2) piercing.</p>
+<p><strong><em>Shortbow.</em></strong> <em>Ranged Weapon Attack:</em> +4 to hit, range 80/320 ft. <em>Hit:</em> 5 (1d6+2) piercing.</p>
+</div>
+<!-- /statblock -->
 
-<!-- ── -->
-<h1>Scene 5: The Ossuary ★ S4 ENDS HERE</h1>
+<h1>Scene 5: The Ossuary</h1>
 
 <div class="read-aloud">
   The room ahead is round, and its far wall is shaped like the thing you just walked
-  through &mdash; another skull, smaller, teeth picked out in inlaid bone. The floor is a
-  carpet of femurs and ribs. Not scattered. Sorted &mdash; by size, by age, stacked with a
-  care that took someone a very long time. Deeper in the dungeon, something breathes.
+  through: another skull, smaller, teeth picked out in inlaid bone. The floor is a
+  carpet of femurs and ribs. Not scattered. Sorted: by size, by age, stacked with a
+  care that took someone a very long time.<br><br>
+  In the far wall, three niches, each carved with a single rune. And on the low altar
+  in the middle of the room, one small bundle of bones that nobody bothered to sort.
 </div>
 
-<p><strong>Dramatic Question:</strong> Can the party interpret the curated ossuary's ritual pattern to discover the safe descent into the lower vault?</p>
+<p><strong>Dramatic Question:</strong> Will they understand what this room is for, and give the boy his rest?</p>
 
-<p><strong>History DC 13 (active):</strong> These are not war dead. They are curated &mdash; months of deliberate ritual work matching the marsh tally stick. Session 4 concludes at this threshold. <strong>The party advances to Level 6.</strong></p>
+<h3>The boy's bones</h3>
+<p>The unsorted bundle on the altar is the Myling's (DC 12 Investigation confirms a child, recently, still wrapped in a scrap of the same rotted wool he wears). If the boy is carried in, he goes quiet and reaches for it. Whoever lays him beside his bones:</p>
+<div class="read-aloud">
+  He slides down from your back and stands very still. Then he looks at you, really looks,
+  for the first time. "It doesn't hurt here." He sits down beside the little bundle, closes
+  his eyes, and is gone. Not dramatically. Just gone. The room is a degree warmer.
+</div>
+<p><strong>Reward:</strong> the carrier gains <strong>Myling's Rest</strong> until the end of Session 7 (advantage on death saves, immune to frightened). If the party carries the bones home to his mother afterwards, the village is theirs: food, shelter, and Thusnelda's full trust.</p>
 
-<!-- ── -->
-<h1>Lower Chambers &amp; Session 5 Transition</h1>
+<div class="callout"><strong>If the boy was left at the mound:</strong> the party can carry the bones back up instead. Same reward, but it costs them an hour and a trip back through the Skull Entrance.</div>
 
-<p>Beyond the Ossuary lie the deeper chambers that funnel blood into the lower vault of Mars:</p>
+<h3>Puzzle: the Three Niches (the way down)</h3>
+<p>The far wall has three skull-niches carved with Elder Futhark runes: <strong>FEHU</strong> (cattle, wealth), <strong>TIWAZ</strong> (the war-god, victory), <strong>OTHALAN</strong> (home, inheritance). A bone offering placed in the right niche makes the skull's jaw grind open onto the lower stair.</p>
+<p><strong>Answer: OTHALAN.</strong> The cult's working is the theft of home and inheritance: a village's children, its warband, its future. (The obvious guess, TIWAZ for the war-god, is the trap.)</p>
+<div class="clue-box"><strong>Three clues:</strong> (1) the boy's only word is "Home"; (2) the party already carries the OTHALAN rune: Lucius's amber token, the scorched mark on Rivia's box, the bone token from the Farbog stone; (3) DC 13 Religion or History: the cult tally sticks scratched OTHALAN over every name they took.</div>
+<p><strong>Wrong niche:</strong> the sorted bones stir. 2 skeletons assemble (no lockout; try again). TIWAZ also makes the box hum loudly: every undead below now knows they are coming.</p>
+
+<div class="callout"><strong>Short rest:</strong> the Ossuary is safe once the boy rests. Offer a short rest here.</div>
+
+<h1>Scene 6: The Blood-Growth Room <em>(cuttable)</em></h1>
+
+<div class="read-aloud">
+  The corridor walls stop being stone. Dark red matter, wet-looking and veined, has grown
+  over them like ivy over a ruin, thickening as you go. At the centre of the room it rises
+  into a single pillar, taller than a man, and inside it, pressed against the skin of it,
+  something with too many limbs turns over in its sleep. The pillar pulses. Faster, now
+  that you are here.
+</div>
+
+<p><strong>Dramatic Question:</strong> Can they kill it before it is born?</p>
+
+<div class="clock-box"><strong>Pressure cooker: 3 rounds.</strong> The Gestating Yochlol is rooted (speed 0, reach 10 ft.). At the start of round 4, if the pillar stands, it tears free with +40 HP. <strong>The pillar</strong>: AC 10, 30 HP, vulnerable to fire and radiant. Destroying it halves the yochlol's HP and it can never hatch. Two iron brazier stands sit just outside the door: a torch or oil turns them into fire damage.</div>
+
+<div class="clue-box"><strong>DC 12 Medicine or Nature:</strong> the growth is organic and was fed on purpose. <strong>DC 14 Arcana:</strong> the pillar is the womb; burn the womb.</div>
+
+<p><strong>Encounter:</strong> Gestating Yochlol + 2 Dretch. Hard while rooted; deadly if it hatches.</p>
+
+<!-- statblock:Yochlol -->
+<div class="stat-block" id="sb-Yochlol">
+<div class="name">Yochlol, Gestating (campaign variant)</div>
+<div class="type">Medium fiend (demon, shapechanger), chaotic evil</div>
+<p><strong>Armor Class</strong> 15 (natural armor)<br><strong>Hit Points</strong> 68 while gestating (full 136, 16d8+64)<br><strong>Speed</strong> 0 ft. while rooted; 30 ft., climb 30 ft. once hatched</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>15 (+2)</div><div class="score"><span class="label">DEX</span>14 (+2)</div><div class="score"><span class="label">CON</span>18 (+4)</div><div class="score"><span class="label">INT</span>13 (+1)</div><div class="score"><span class="label">WIS</span>15 (+2)</div><div class="score"><span class="label">CHA</span>15 (+2)</div></div>
+<hr class="rule">
+<p><strong>Saving Throws</strong> Dex +6, Int +5, Wis +6, Cha +6<br><strong>Skills</strong> Deception +10, Insight +6<br><strong>Damage Resistances</strong> cold, fire, lightning; bludgeoning, piercing, slashing from nonmagical attacks<br><strong>Damage Immunities</strong> poison<br><strong>Condition Immunities</strong> poisoned<br><strong>Senses</strong> darkvision 120 ft., passive Perception 12<br><strong>Languages</strong> Abyssal, telepathy 60 ft.<br><strong>Challenge</strong> 10 (5,900 XP) full; treat as CR 6 while rooted</p>
+<hr class="rule">
+<p><strong><em>Gestating.</em></strong> Rooted in the blood-growth pillar: speed 0, reach 10 ft., no Mist Form, no Change Shape. At the start of round 4, if the pillar still stands, it tears free: gains 40 HP, speed 30 ft., Mist Form.</p>
+<p><strong><em>The Pillar.</em></strong> AC 10, 30 HP, vulnerable to fire and radiant. Destroying it before round 4 halves the yochlol's current HP and it can never hatch.</p>
+<p><strong><em>Magic Resistance.</em></strong> Advantage on saves against spells and other magical effects.</p>
+<p><strong><em>Spider Climb / Web Walker.</em></strong> Once hatched, climbs anything and ignores webs.</p>
+<h4>Actions</h4>
+<p><strong><em>Multiattack.</em></strong> Two Slam attacks.</p>
+<p><strong><em>Slam.</em></strong> <em>Melee Weapon Attack:</em> +6 to hit, reach 10 ft. while rooted, one target. <em>Hit:</em> 5 (1d6+2) bludgeoning plus 21 (6d6) poison.</p>
+<p><strong><em>Web (at will, innate, DC 14).</em></strong> As the spell. Fills the room's doorway on round 1.</p>
+<p><strong><em>Mist Form (hatched only).</em></strong> Becomes toxic mist; creatures that enter its space: DC 14 Con or poisoned until end of next turn.</p>
+<p class="gm-note"><strong>GM:</strong> The room is a pressure cooker, not a slugfest: three rounds to burn the pillar. Point at the fire in the brazier stands outside the door.</p>
+</div>
+<!-- /statblock -->
+<!-- statblock:Dretch -->
+<div class="stat-block" id="sb-Dretch">
+<div class="name">Dretch</div>
+<div class="type">Small fiend (demon), chaotic evil</div>
+<p><strong>Armor Class</strong> 11 (natural armor)<br><strong>Hit Points</strong> 18 (4d6+4)<br><strong>Speed</strong> 20 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>11 (+0)</div><div class="score"><span class="label">DEX</span>11 (+0)</div><div class="score"><span class="label">CON</span>12 (+1)</div><div class="score"><span class="label">INT</span>5 (-3)</div><div class="score"><span class="label">WIS</span>8 (-1)</div><div class="score"><span class="label">CHA</span>3 (-4)</div></div>
+<hr class="rule">
+<p><strong>Damage Resistances</strong> cold, fire, lightning<br><strong>Damage Immunities</strong> poison<br><strong>Condition Immunities</strong> poisoned<br><strong>Senses</strong> darkvision 60 ft., passive Perception 9<br><strong>Languages</strong> Abyssal, telepathy 60 ft. (works only with Abyssal speakers)<br><strong>Challenge</strong> 1/4 (50 XP)</p>
+<hr class="rule">
+<h4>Actions</h4>
+<p><strong><em>Multiattack.</em></strong> One Bite and one Claws.</p>
+<p><strong><em>Bite.</em></strong> <em>Melee Weapon Attack:</em> +2 to hit, reach 5 ft. <em>Hit:</em> 3 (1d6) piercing.</p>
+<p><strong><em>Claws.</em></strong> <em>Melee Weapon Attack:</em> +2 to hit, reach 5 ft. <em>Hit:</em> 5 (2d4) slashing.</p>
+<p><strong><em>Fetid Cloud (1/day).</em></strong> 10-ft. radius of disgusting green gas for 1 minute. Each creature starting its turn there: DC 11 Con or poisoned until start of its next turn; while poisoned, action or bonus action (not both), no reactions.</p>
+</div>
+<!-- /statblock -->
+
+<h1>Scene 7: The Rune Lock</h1>
+
+<div class="read-aloud">
+  A round iron door with no handle. Four glass studs are set in it, each a different
+  colour: blue, green, yellow, red. Faint marks of fingers, many fingers, are worn into
+  the iron around them.
+</div>
+
+<p><strong>Solution:</strong> touch the studs <strong>blue &rarr; green &rarr; yellow &rarr; red</strong> ("beginning, growth, harvest, blood": the cult's year, ending in the slaughter).</p>
+<div class="clue-box"><strong>Three clues:</strong> (1) DC 12 Investigation: the finger-wear is deepest on blue and fades in that order; (2) a dead cultist's wax tablet in the Ossuary niches: "<em>sow, grow, reap, bleed</em>"; (3) DC 13 Nature: the colours are the marsh in spring, summer, autumn, and the colour of the Farbog water.</div>
+<p><strong>Failure:</strong> DC 12 Dex save or 2d6 force; the sequence resets. No lockout, ever.</p>
+
+<h1>Scene 8: The Minor Altar <em>(cuttable)</em></h1>
+
+<div class="read-aloud">
+  Four square pillars ring a low dais. An iron brazier stands at each point of the
+  compass, cold, packed with old pitch. The dark between the pillars is wrong: it sits
+  too thick, and it moves when you do not. Something in it is laughing without a mouth.
+</div>
+
+<p><strong>Dramatic Question:</strong> Can they bring the sun underground?</p>
+
+<h3>Puzzle: the Sun-Path</h3>
+<p>Light the braziers in the course of the sun: <strong>east, south, west, north</strong>. Each brazier is an action to light (torch, fire cantrip, or DC 11 Dex with flint while threatened). When the fourth catches in the right order, the room floods with gold light: <strong>bright light everywhere</strong>. The Shadow Demons suffer Light Sensitivity (disadvantage on attacks) and lose Shadow Stealth.</p>
+<div class="clue-box"><strong>Three clues:</strong> (1) the Sun-Path carving on the Belatucadrus shrine (Scene 2); (2) Thusnelda's prayer, if he was saved; (3) DC 13 Investigation: the east brazier's soot is thickest and the north one's is thinnest.</div>
+<p><strong>Wrong order:</strong> all four gutter out and the dark thickens: the demons have advantage on their next attack. Start again. A Belatucadrus-consecrated weapon touched to any brazier lights all four at once.</p>
+
+<p><strong>Encounter:</strong> 3 &times; Shadow Demon. Hard in the dark; easy in the light.</p>
+
+<!-- statblock:ShadowDemon -->
+<div class="stat-block" id="sb-ShadowDemon">
+<div class="name">Shadow Demon</div>
+<div class="type">Medium fiend (demon), chaotic evil</div>
+<p><strong>Armor Class</strong> 13<br><strong>Hit Points</strong> 66 (12d8+12)<br><strong>Speed</strong> 30 ft., fly 30 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>1 (-5)</div><div class="score"><span class="label">DEX</span>17 (+3)</div><div class="score"><span class="label">CON</span>12 (+1)</div><div class="score"><span class="label">INT</span>14 (+2)</div><div class="score"><span class="label">WIS</span>13 (+1)</div><div class="score"><span class="label">CHA</span>14 (+2)</div></div>
+<hr class="rule">
+<p><strong>Saving Throws</strong> Dex +5, Cha +4<br><strong>Skills</strong> Stealth +7<br><strong>Damage Vulnerabilities</strong> radiant<br><strong>Damage Resistances</strong> acid, fire, necrotic, thunder; bludgeoning, piercing, slashing from nonmagical attacks<br><strong>Damage Immunities</strong> cold, lightning, poison<br><strong>Condition Immunities</strong> exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained<br><strong>Senses</strong> darkvision 120 ft., passive Perception 11<br><strong>Languages</strong> Abyssal, telepathy 120 ft.<br><strong>Challenge</strong> 4 (1,100 XP)</p>
+<hr class="rule">
+<p><strong><em>Incorporeal Movement.</em></strong> Moves through creatures and objects; 5 (1d10) force if it ends its turn inside an object.</p>
+<p><strong><em>Light Sensitivity.</em></strong> In bright light: disadvantage on attack rolls and on sight-based Perception.</p>
+<p><strong><em>Shadow Stealth.</em></strong> In dim light or darkness, Hide as a bonus action.</p>
+<h4>Actions</h4>
+<p><strong><em>Claws.</em></strong> <em>Melee Weapon Attack:</em> +5 to hit, reach 5 ft. <em>Hit:</em> 10 (2d6+3) psychic, or 17 (4d6+3) psychic if it had advantage.</p>
+<p class="gm-note"><strong>GM:</strong> The Sun-Path brazier puzzle (Scene 8) turns the whole room to bright light: Light Sensitivity on, Shadow Stealth off.</p>
+</div>
+<!-- /statblock -->
+
+<h1>Scene 9a: The Gathering Hall</h1>
+
+<div class="read-aloud">
+  Rows of worn stone mark where dozens once knelt, facing a long table still laid with
+  offerings gone black. Two figures stand at the head of the table. They were big men
+  once. Their armour is good Germanic work, and it hangs on nothing now. They turn
+  together, and one of them speaks in a voice like wind in an empty longhouse:<br><br>
+  "We asked. It heard us. Why did it hear us?"
+</div>
+
+<p><strong>Dramatic Question:</strong> Do the chieftains get to confess before they are destroyed?</p>
+
+<div class="callout"><strong>Land this as tragedy.</strong> Round 1 is recognition, not aggression. The party can talk:
 <ul>
-  <li><strong>Blood-Growth Rooms:</strong> <a href="https://www.dndbeyond.com/monsters/17068-yochlol" target="_blank" style="color:#5a1a00;">Yochlol</a> (CR 6, AC 15, HP 136) &amp; 2 &times; <a href="https://www.dndbeyond.com/monsters/16847-dretch" target="_blank" style="color:#5a1a00;">Dretch</a> (CR 1/4, Fetid Cloud).</li>
-  <li><strong>Minor Altar:</strong> 3 &times; <a href="https://www.dndbeyond.com/monsters/17010-shadow-demon" target="_blank" style="color:#5a1a00;">Shadow Demon</a> (CR 4, AC 12, HP 66, radiant vuln; braziers trigger Sunlight Weakness).</li>
-  <li><strong>Gathering Hall:</strong> 3 &times; <a href="https://www.dndbeyond.com/monsters/17064-wraith" target="_blank" style="color:#5a1a00;">Wraith</a> (CR 5, AC 13, HP 67, Chieftains' spirits).</li>
-  <li><strong>Core Room:</strong> <a href="https://www.dndbeyond.com/monsters/16870-glabrezu" target="_blank" style="color:#5a1a00;">Glabrezu</a> (CR 9, AC 17, HP 157) guarding the cracking crystal-star focus. Defeating it allows a Long Rest to reach Level 7 before descending into Chapter 5.</li>
-</ul>
+  <li><strong>DC 14 Religion or Persuasion</strong> (or show Lucius's carved wooden horse: one of them carved it for a fostered Roman boy, long ago): they confess. They asked Mars for victory against Rome. He gave them strength, and the price was their whole warband, one man at a time, into the bog. Then them.</li>
+  <li><strong>DC 15 Intimidation</strong> (+2 from the box): one chieftain fades, ashamed; only one fights.</li>
+  <li>Either success: they reveal the Core Room below holds "the star that drinks," and a fiend "that sells what you want most."</li>
+</ul></div>
 
-<!-- ── -->
+<p><strong>Encounter:</strong> 2 &times; Wraith (the two chieftains). Hard (adjusted 5,400 XP); one wraith if Intimidated.</p>
+
+<!-- statblock:Wraith -->
+<div class="stat-block" id="sb-Wraith">
+<div class="name">Wraith (Chieftain Spirit)</div>
+<div class="type">Medium undead, neutral evil</div>
+<p><strong>Armor Class</strong> 13<br><strong>Hit Points</strong> 67 (9d8+27)<br><strong>Speed</strong> 0 ft., fly 60 ft. (hover)</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>6 (-2)</div><div class="score"><span class="label">DEX</span>16 (+3)</div><div class="score"><span class="label">CON</span>16 (+3)</div><div class="score"><span class="label">INT</span>12 (+1)</div><div class="score"><span class="label">WIS</span>14 (+2)</div><div class="score"><span class="label">CHA</span>15 (+2)</div></div>
+<hr class="rule">
+<p><strong>Damage Resistances</strong> acid, cold, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered<br><strong>Damage Immunities</strong> necrotic, poison<br><strong>Condition Immunities</strong> charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained<br><strong>Senses</strong> darkvision 60 ft., passive Perception 12<br><strong>Languages</strong> Germanic<br><strong>Challenge</strong> 5 (1,800 XP)</p>
+<hr class="rule">
+<p><strong><em>Incorporeal Movement.</em></strong> Moves through creatures and objects; 5 (1d10) force if it ends its turn inside an object.</p>
+<p><strong><em>Sunlight Sensitivity.</em></strong> In sunlight: disadvantage on attack rolls and sight-based Perception.</p>
+<h4>Actions</h4>
+<p><strong><em>Life Drain.</em></strong> <em>Melee Weapon Attack:</em> +6 to hit, reach 5 ft. <em>Hit:</em> 21 (4d8+3) necrotic; DC 14 Con or max HP reduced by the damage taken until a long rest. Dies if max HP hits 0.</p>
+<p><strong><em>Create Specter.</em></strong> Targets a humanoid within 10 ft. that died violently in the last minute; it rises as a specter under the wraith's control.</p>
+</div>
+<!-- /statblock -->
+
+<h1>Scene 9b: The Core Room &#9733; Session Ends Here</h1>
+
+<div class="read-aloud">
+  Four stone faces watch from the walls. At the centre of the room, on a raised dais, a
+  crystal shaped like a broken star burns steady and cold: the only thing in this temple
+  that looks cared for. Something huge squats beside it, four-armed, dog-headed, its
+  pincers folded like a clerk's hands. It smiles with too many teeth and speaks in good
+  Latin.<br><br>
+  "Soldiers. You carry something that belongs to my master. Let us not be crude. I can
+  give you what you want most. Every one of you wants something."
+</div>
+
+<p><strong>Dramatic Question:</strong> Will anyone take the bargain?</p>
+
+<div class="secret-box"><strong>The Glabrezu's bargain (play it straight, let it tempt):</strong> it offers Ursula freedom from the greataxe's hunger; Rivia an answer that makes her box mistake "never have happened"; any PC citizenship, rank, a dead friend's voice. The price is always the same: <em>open the box and leave the spear on the dais.</em> Insight DC 15: it means every word, and its master would get the spear either way. If anyone agrees, the box opens, Mars's attention lands on that PC (2 corruption), and the party must fight to get the spear back before the session ends.</div>
+
+<div class="clue-box"><strong>The crystal (Arcana or Religion DC 15):</strong> the cult's real altar. Every drop of blood shed in the temple was funnelled here, and down. It absorbs all damage. It cannot be destroyed in this session.</div>
+
+<p><strong>Encounter:</strong> Glabrezu. Hard for five Level 6 PCs. It opens with <em>darkness</em> over the dais and grabs the frontliner.</p>
+
+<!-- statblock:Glabrezu -->
+<div class="stat-block" id="sb-Glabrezu">
+<div class="name">Glabrezu (Core Guardian)</div>
+<div class="type">Large fiend (demon), chaotic evil</div>
+<p><strong>Armor Class</strong> 17 (natural armor)<br><strong>Hit Points</strong> 157 (15d10+75)<br><strong>Speed</strong> 40 ft.</p>
+<hr class="rule">
+<div class="scores"><div class="score"><span class="label">STR</span>20 (+5)</div><div class="score"><span class="label">DEX</span>15 (+2)</div><div class="score"><span class="label">CON</span>21 (+5)</div><div class="score"><span class="label">INT</span>19 (+4)</div><div class="score"><span class="label">WIS</span>17 (+3)</div><div class="score"><span class="label">CHA</span>16 (+3)</div></div>
+<hr class="rule">
+<p><strong>Saving Throws</strong> Str +9, Con +9, Wis +7, Cha +7<br><strong>Damage Resistances</strong> cold, fire, lightning; bludgeoning, piercing, slashing from nonmagical attacks<br><strong>Damage Immunities</strong> poison<br><strong>Condition Immunities</strong> poisoned<br><strong>Senses</strong> truesight 120 ft., passive Perception 13<br><strong>Languages</strong> Abyssal, Latin (learned for the bargain), telepathy 120 ft.<br><strong>Challenge</strong> 9 (5,000 XP)</p>
+<hr class="rule">
+<p><strong><em>Innate Spellcasting.</em></strong> Int, DC 16. At will: <em>darkness, detect magic, dispel magic</em>. 1/day each: <em>confusion, fly, power word stun</em>.</p>
+<p><strong><em>Magic Resistance.</em></strong> Advantage on saves against spells and other magical effects.</p>
+<h4>Actions</h4>
+<p><strong><em>Multiattack.</em></strong> Two Pincers and two Fists, or two Pincers and one spell.</p>
+<p><strong><em>Pincer.</em></strong> <em>Melee Weapon Attack:</em> +9 to hit, reach 10 ft. <em>Hit:</em> 16 (2d10+5) bludgeoning; Medium or smaller target grappled (escape DC 15). Two pincers, each can hold one target.</p>
+<p><strong><em>Fist.</em></strong> <em>Melee Weapon Attack:</em> +9 to hit, reach 5 ft. <em>Hit:</em> 7 (2d4+2) bludgeoning.</p>
+<p class="gm-note"><strong>GM:</strong> Do not open with <em>power word stun</em>. Save it for the PC who refuses the bargain loudest. It offers the bargain first (see Scene 9).</p>
+</div>
+<!-- /statblock -->
+
+<h3>End of Session: the cliffhanger</h3>
+<div class="read-aloud">
+  The fiend falls, and the crystal-star does not go dark. It gets brighter. Cracks spread
+  across its faces like frost across a window, and each one lets out a note too low to be
+  a sound, felt in the teeth. The floor is warm. Behind the dais, a stair you did not see
+  before goes down into red light. In Rivia's arms, the box is humming in exactly the
+  same rhythm as the crystal. Whatever is down there has stopped sleeping.
+</div>
+<p><strong>Stop here.</strong> The Core Room seals behind them; a long rest is possible. <strong>Advance to Level 7.</strong> Session 7 opens on the stair (Chapter 5).</p>
+
 <h1>NPC Secrets</h1>
+<div class="secret-box"><strong>Thusnelda:</strong> right about everything except the one thing that matters. The cult's rites poisoned the spiritual ground; he cannot tell their manufactured hunger from a real demand of Mars. His death would have done nothing. He spent three months looking for the temple in the wrong direction.</div>
+<div class="secret-box"><strong>The Myling's mother:</strong> she has known for months that the bog story was a lie. She never said so because the chieftains' men were still in the village.</div>
+<div class="secret-box"><strong>The two chieftains:</strong> Mars did not trick them. He gave them exactly what they asked for. The price was the warband.</div>
+<div class="secret-box"><strong>The Glabrezu:</strong> pulled through the rip that months of sacrifice tore in the world. It serves Mars because Mars is winning. It would sell him out for a better offer.</div>
 
-<div class="secret-box">
-  <strong>Thusnelda (Völva Seer):</strong> He is not mad or evil. He has read omens for twenty years correctly, but the cult's blood rites corrupted the forest's spiritual ground. His self-sacrifice would accomplish nothing; Mars's hunger would remain unquenched.
-</div>
-
-<div class="secret-box">
-  <strong>The Bone Nagas:</strong> Placed at the entrance by the cult chieftains to prevent anyone from desecrating the curated bones of their fallen brethren. Both Nagas and Skeletons share vulnerability to bludgeoning damage.
-</div>
-
-<div class="secret-box">
-  <strong>The Two Chieftains (Wraiths):</strong> Mars did not trick them with false words &mdash; he gave them military strength, and the divine price was the slow consumption of their entire warband.
-</div>
-
-<div class="secret-box">
-  <strong>Glabrezu (Core Room):</strong> Manifested from the planar rip torn by months of continuous blood sacrifice. Its defeat stabilizes the upper chambers, opening the descent into the Vault of Mars.
-</div>
+<p style="font-size:8pt;font-style:italic">All stat blocks on this sheet are generated from <code>scripts/build_final_statblocks.py</code>; the combined sheet is <code>gm_tools/final_statblocks.html</code>.</p>
 
 </div><!-- end columns -->
 

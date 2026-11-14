@@ -105,8 +105,8 @@ class TestNPCIntegrity(unittest.TestCase):
         data = json.loads(mars_file.read_text())
         self.assertEqual(data["name"], "Mars")
         self.assertEqual(data["cr"], "20")
-        self.assertEqual(data["hp"], 100)
-        self.assertEqual(data["ac"], 20)
+        self.assertEqual(data["hp"], 300)
+        self.assertEqual(data["ac"], 22)
         self.assertEqual(data["speed"], "40 ft.")
 
     def test_09_vercingetorix_bound_stat_block_session5(self):
@@ -115,7 +115,7 @@ class TestNPCIntegrity(unittest.TestCase):
         data = json.loads(v_file.read_text())
         self.assertEqual(data["name"], "Vercingetorix Bound")
         self.assertEqual(data["cr"], "11")
-        self.assertEqual(data["hp"], 75)
+        self.assertEqual(data["hp"], 150)
         self.assertEqual(data["ac"], 18)
 
     def test_10_banshee_stat_block_session4(self):
@@ -140,7 +140,7 @@ class TestNPCIntegrity(unittest.TestCase):
         self.assertTrue(p.exists())
         data = json.loads(p.read_text())
         self.assertEqual(data["cr"], "6")
-        self.assertEqual(data["hp"], 136)
+        self.assertEqual(data["hp"], 68)  # gestating variant, see build_final_statblocks.py
         self.assertEqual(data["ac"], 15)
 
     def test_13_dretch_stat_block_session4(self):
@@ -157,7 +157,7 @@ class TestNPCIntegrity(unittest.TestCase):
         data = json.loads(p.read_text())
         self.assertEqual(data["cr"], "4")
         self.assertEqual(data["hp"], 66)
-        self.assertEqual(data["ac"], 12)
+        self.assertEqual(data["ac"], 13)
 
     def test_15_wraith_stat_block_session4(self):
         p = NPC_DIR / "wraith.json"
@@ -231,8 +231,8 @@ class TestNPCIntegrity(unittest.TestCase):
 
     def test_24_creature_stats_mars_multiattack_and_traits(self):
         mars = self.stats["Mars"]
-        self.assertEqual(mars["hp"], 100)
-        self.assertEqual(mars["ac"], 20)
+        self.assertEqual(mars["hp"], 300)
+        self.assertEqual(mars["ac"], 22)
         self.assertEqual(mars["cr"], "20")
         labels = [a["label"] for a in mars["attacks"]]
         self.assertTrue(any("Divine Pilum" in l for l in labels))
@@ -240,7 +240,7 @@ class TestNPCIntegrity(unittest.TestCase):
 
     def test_25_creature_stats_vercingetorix_relentless_and_death(self):
         v = self.stats["Vercingetorix_Bound"]
-        self.assertEqual(v["hp"], 75)
+        self.assertEqual(v["hp"], 150)
         self.assertEqual(v["ac"], 18)
         self.assertEqual(v["cr"], "11")
         traits_str = " ".join(v.get("traits", []))
