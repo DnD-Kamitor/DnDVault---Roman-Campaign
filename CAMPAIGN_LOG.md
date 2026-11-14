@@ -239,7 +239,7 @@ Myling (the drowned boy) in tow.** Thusnelda not yet met on-screen (confirm). Se
 
 **Upcoming Scope (Session 6):**
 - Germanic village: first encounter with Thusnelda (völva seer, he/him). Box aura = disadvantage on calming Persuasion unless box kept 30+ ft away.
-- The Myling: still with the party. Carried to holy ground (Belatucadrus shrine in the grove) he rests and the carrier gets *Myling's Rest*; refused or abandoned, he turns hostile (Specter stats, shriek DC 13 Wis).
+- The Myling: still with the party. Table ruling (live, Session 5): a village boy the chieftains boiled alive in a bronze pot in the grove; his bones still lie there (old fire pit, overturned pot, DC 12 Investigation). Laying him beside / burying his bones releases him. Refused or abandoned, he turns hostile (Specter stats, shriek DC 13 Wis). Improv name if asked: "Wulf".
 - North of village: Sacred Grove & false sacrifice circle (Thusnelda attempting suicide ritual to end divine debt)
 - South of village: Dungeon entrance (cult lair, Bone Nagas + Skeletons)
 - Enter dungeon: Ossuary (first room of cult dungeon)
