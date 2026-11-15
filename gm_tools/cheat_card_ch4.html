@@ -106,6 +106,8 @@
   <button class="tab-btn" onclick="showTab('s3s4', this)">6-8 · Growth / Lock / Altar</button>
   <button class="tab-btn" onclick="showTab('s5', this)">9a · Hall</button>
   <button class="tab-btn" onclick="showTab('s6', this)">9b · Core ★END</button>
+  <button class="tab-btn" onclick="showTab('trade', this)">Trade</button>
+  <button class="tab-btn" onclick="showTab('rewards', this)">Rewards</button>
   <button class="tab-btn" onclick="showTab('npcs', this)">NPCs</button>
   <button class="tab-btn" onclick="showTab('server', this)">MapTool</button>
 </div>
@@ -323,7 +325,7 @@
     <tr><td class="k">Skadi the Healer<br><span style="color:#888">Thusnelda's apprentice · herb hut</span></td><td class="v"><b>Does:</b> heals (removes 1 exhaustion from carrying the boy; sells 2 <em>potions of healing</em>, 50 sp each, or for a story of the fort). <b>Talk (Insight/Persuasion DC 12):</b> she has watched the North grove at night twice and never told her master: <em>"The lights gather at the old altar. They hum a child's song."</em> <b>Push (DC 14):</b> <em>"The marks on the south stones are new. Someone cut over the old suns. My master doesn't see it."</em> &rarr; South ritual is wrong. She will come South with them if asked (Medicine +5).</td></tr>
     <tr><td class="k">Edda the Spear-Mother<br><span style="color:#888">old warrior · counts scars</span></td><td class="v"><b>Test:</b> she won't talk to Romans who stand tall. Kneel, or lay a weapon down, or Persuasion DC 13 with humility. <b>Gives:</b> the chieftains' bargain: <em>"They asked the war-god for victory. The stones in the south were his price. Every man who went to them came back less."</em> &rarr; Gathering Hall. Her scar is from a spear "no longer in human hands" (the Spear of Mars; she fought beside it once). If they show the box: she backs away and won't touch it.</td></tr>
     <tr><td class="k">Arnulf the Firekeeper<br><span style="color:#888">keeps the hearth · laughs loud</span></td><td class="v"><b>Does:</b> a meal at the fire = short rest. <b>Songs:</b> he sings the village lullaby; anyone who heard the boy hum it recognises it (the Small One wisp answers to it). <b>Lore (History DC 12):</b> the old sun-marks on the shrine, the Sun-Path prayer (E, S, W, N). Resents Rome but likes soldiers who sing.</td></tr>
-    <tr><td class="k">Sigrun the Trader<br><span style="color:#888">cart by the longhouse · sharp, friendly</span></td><td class="v"><b>Sells</b> (prices in gp; 1 aureus = 1 gp): <b>Potion of healing</b> 50 (has 4) · <b>Holy water</b> flask 25 (has 3; 2d6 radiant to undead/fiends) · <b>Alchemist's fire</b> 50 (has 3; burns the Yochlol pillar) · <b>Oil flask</b> 1 sp (10) · <b>Antitoxin</b> 50 (has 2; adv. vs Bone Naga/Yochlol poison) · <b>Silvering</b> a weapon 100 (gets through Wraith resistance) · <b>Mace / warhammer</b> 5 / 15 (skeletons) · <b>Torches</b> 1 cp, <b>hooded lantern</b> 5 · <b>Rope</b> 50 ft 1 · <b>Healer's kit</b> 5 · <b>Framea / seax</b> 5 / 10 · <b>Bear-fur cloak</b> 10 · <b>Amber OTHALAN charm</b> 15 (she won't say where they come from) · <b>Mead</b> 4 sp. <b>Buys</b> loot at half price. <b>Talk:</b> knows every rumour; for 5 gp: <em>"Your seer went south at dawn. The chieftains' men used to bring things back from those stones. Bad things."</em> <b>Secret:</b> she passes news to Vercingetorix's people. If she sees the box she offers <b>500 gp</b> for it, no questions. If they sell, the spear reaches the finale in enemy hands.</td></tr>
+    <tr><td class="k">Sigrun the Trader<br><span style="color:#888">cart by the longhouse · sharp, friendly</span></td><td class="v">Full stock, prices and barter on the <b>Trade</b> tab. <b>Rumour</b> (5 gp or a drink): <em>"Your seer went south at dawn. The chieftains' men used to bring bad things back from those stones."</em> <b>Secret:</b> passes news to Vercingetorix's people; offers <b>500 gp</b> for the box, no questions. Sold = the spear reaches the finale in enemy hands.</td></tr>
     <tr><td class="k">The boy's mother<br><span style="color:#888">at the quern</span></td><td class="v">Sends them North for his bones. Bring them home after: the village is theirs (food, shelter, Edda's and Skadi's full help).</td></tr>
   </table>
   <div class="clue"><b>Quick village jobs (goodwill = advantage on village Persuasion):</b> mend the palisade gap (Athletics DC 12) · find the lost goat in the reeds (Survival DC 11, finds a cult tally stick) · help Skadi grind herbs (Medicine DC 10, she talks while you work).</div>
@@ -400,11 +402,11 @@
   <div class="block-title">They speak only in riddles (each answer pays off later)</div>
   <table>
     <tr><td class="k">The Small One<br><span style="color:#888">circles the boy</span></td><td class="v"><em>"Where they took me, the oaks stand old. My bones still wait where the knife was cold."</em><br>&rarr; leads to the boy's altar in the North grove. Hums his mother's song.</td></tr>
-    <tr><td class="k">The Old Völva<br><span style="color:#888">Thusnelda's teacher</span></td><td class="v"><em>"Born in the east, high in the south, dying in the west, dark in the north's mouth. Light me that way and the shadows go blind."</em><br>&rarr; <b>Sun-Path braziers</b> (Scene 8): E, S, W, N.<br><em>"Three doors of bone; one says riches, one says war. Ask the boy what he cries for."</em><br>&rarr; <b>Ossuary niches</b> (Scene 5): OTHALAN, "home".</td></tr>
-    <tr><td class="k">The Warrior<br><span style="color:#888">fed to the bog</span></td><td class="v"><em>"Sow it, grow it, reap it, bleed it. The door remembers the year we fed it."</em><br>&rarr; <b>Rune Lock</b> (Scene 7): blue, green, yellow, red.<br><em>"Under the skull a beast will sell you your heart's own wish. The price is always the same dish."</em><br>&rarr; <b>Glabrezu's bargain</b> (Scene 9b): it always wants the spear.</td></tr>
-    <tr><td class="k">All three, together<br><span style="color:#888">as the party leaves</span></td><td class="v"><em>"The king who cannot die fears only the sun's own blade. Four chains hold the god; one must stay where the god once stayed."</em><br>&rarr; finale: a blessed weapon beats Vercingetorix's Relentless; the 4 winches; someone takes the guardian's seat.</td></tr>
+    <tr><td class="k">The Old Völva<br><span style="color:#888">Thusnelda's teacher</span></td><td class="v"><em>"I am born where the boar-tusk points at dawn, I stand tallest where your shadow is shortest, I bleed out where the ravens roost at dusk, and I sleep in the house of the cold star. Wake my fires in the order of my life, and what hides from me goes blind."</em><br>&rarr; <b>Sun-Path braziers</b> (Scene 8): E, S, W, N. (Nature/Survival DC 12 if stuck: noon shadow points north; the cold star is the pole star.)<br><em>"Three skulls, three marks. The first is the herd a rich man counts. The second is the spear a proud man lifts. The third is the hearth a dead child asks for. Feed the hungry door the thing it stole."</em><br>&rarr; <b>Ossuary niches</b> (Scene 5): FEHU = herd, TIWAZ = spear, <b>OTHALAN</b> = hearth/home.</td></tr>
+    <tr><td class="k">The Warrior<br><span style="color:#888">fed to the bog</span></td><td class="v"><em>"First the thaw-water under the ice, then the leaf that drinks it, then the straw that the leaf becomes, then what we poured on the straw when the harvest failed. The iron door counts our year that way and no other."</em><br>&rarr; <b>Rune Lock</b> (Scene 7): blue (thaw), green (leaf), yellow (straw), red (blood).<br><em>"Below, a dog with a clerk's hands keeps a ledger of wishes. Every page has a different wish and the same price written at the bottom. Read the bottom first."</em><br>&rarr; <b>Glabrezu's bargain</b> (Scene 9b): every offer costs the spear.</td></tr>
+    <tr><td class="k">All three, together<br><span style="color:#888">as the party leaves</span></td><td class="v"><em>"The king below has died a thousand times and refused each one; only a blade that has been blessed by the sun can make him accept. The god below sits in four iron arms that wait to close. And the chair beside him is never empty for long: someone always chooses to sit."</em><br>&rarr; finale: blessed weapon beats Relentless; the 4 winches; someone takes the guardian's seat.</td></tr>
   </table>
-  <p style="font-size:0.8em;color:#888">Religion DC 13: "Grove-lights. The north tribes say the sun leaves pieces of itself where the dead are owed something." Repeat a riddle if asked; never explain one.</p>
+  <p style="font-size:0.8em;color:#888">Religion DC 13: "Grove-lights. The north tribes say the sun leaves pieces of itself where the dead are owed something." Repeat a riddle if asked; never explain one. If the table is fully stuck for 10+ minutes, give the bracketed check.</p>
 </div>
 <div>
 <div class="block">
@@ -594,6 +596,90 @@
 </div>
 </div>
 <div class="ho"><strong>★ END OF SESSION — read:</strong> <em>The fiend falls, and the crystal does not go dark. It gets brighter. Cracks spread like frost across a window, each one a note too low to hear, felt in the teeth. The floor is warm. Behind the dais a stair you did not see before goes down into red light. In Rivia's arms the box hums in exactly the same rhythm. Whatever is down there has stopped sleeping.</em> &nbsp;Long rest in the sealed room. <strong>Level 7.</strong> Session 7 opens on the stair (Ch5).</div>
+</div>
+
+<!-- ═══ TRADE ═══ -->
+<div id="tab-trade" class="tab-pane">
+<div class="block">
+  <div class="block-title">Sigrun's Cart &nbsp;<span style="color:#888;font-size:0.85em">prices in gp (1 aureus = 1 gp, 1 denarius = 1 sp) · she haggles: Persuasion DC 13 = 20% off, DC 18 = 40% off · buys at half</span></div>
+</div>
+<div class="grid2">
+<div>
+<div class="block">
+  <div class="block-title">Healing &amp; consumables</div>
+  <table>
+    <tr><td class="k">Potion of healing (×4)</td><td class="v">50 · 2d4+2</td></tr>
+    <tr><td class="k">Potion of greater healing (×1)</td><td class="v">150 · 4d4+4 · "from a dead Roman's pack"</td></tr>
+    <tr><td class="k">Antitoxin (×2)</td><td class="v">50 · adv. vs poison 1 hr (Bone Naga, Yochlol)</td></tr>
+    <tr><td class="k">Holy water (×3)</td><td class="v">25 · 2d6 radiant to undead/fiends</td></tr>
+    <tr><td class="k">Alchemist's fire (×3)</td><td class="v">50 · 1d4 fire/turn · burns the Yochlol pillar</td></tr>
+    <tr><td class="k">Oil flask (×10)</td><td class="v">1 sp · +5 fire when lit</td></tr>
+    <tr><td class="k">Healer's kit</td><td class="v">5 · 10 uses</td></tr>
+    <tr><td class="k">Skadi's herb bundle</td><td class="v">10 · short rest: +1d4 HP per Hit Die spent</td></tr>
+    <tr><td class="k">Mead / smoked fish / bread</td><td class="v">4 sp / 2 sp / 1 cp · rations 5 sp/day</td></tr>
+  </table>
+</div>
+<div class="block">
+  <div class="block-title">Rare things (one each)</div>
+  <table>
+    <tr><td class="k">Spell scroll: <em>Protection from Evil and Good</em></td><td class="v">75 · vs undead, fiends</td></tr>
+    <tr><td class="k">Spell scroll: <em>Lesser Restoration</em></td><td class="v">150 · cures poison, paralysis</td></tr>
+    <tr><td class="k">Potion of heroism</td><td class="v">180 · 10 temp HP, bless, 1 hr</td></tr>
+    <tr><td class="k">Potion of resistance (necrotic)</td><td class="v">300 · halves Wraith/Wight drain damage</td></tr>
+    <tr><td class="k">Spell scroll: <em>Revivify</em></td><td class="v">500 · she won't say where she got it</td></tr>
+    <tr><td class="k">Sun-disc amulet (Belatucadrus)</td><td class="v">40 · cleric/druid focus; +1 to Religion checks at the shrine</td></tr>
+    <tr><td class="k">Amber OTHALAN charm</td><td class="v">15 · counts as the rune for the Rite of Rest</td></tr>
+  </table>
+</div>
+</div>
+<div>
+<div class="block">
+  <div class="block-title">Weapons, armour, gear</div>
+  <table>
+    <tr><td class="k">Mace / warhammer / maul</td><td class="v">5 / 15 / 10 · bludgeoning vs skeletons</td></tr>
+    <tr><td class="k">Framea / seax / francisca</td><td class="v">5 / 10 / 8 · Germanic spear, knife, throwing axe</td></tr>
+    <tr><td class="k">Silvering a weapon</td><td class="v">100 · beats Wraith/Wight resistance · takes 1 hr</td></tr>
+    <tr><td class="k">Silver-tipped arrows / sling bullets (×20)</td><td class="v">20</td></tr>
+    <tr><td class="k">Germanic round shield</td><td class="v">10 · +2 AC</td></tr>
+    <tr><td class="k">Hide armour / chain shirt</td><td class="v">10 / 50</td></tr>
+    <tr><td class="k">Bear-fur cloak</td><td class="v">10 · adv. vs cold exposure</td></tr>
+    <tr><td class="k">Torches (×10) / hooded lantern</td><td class="v">1 cp each / 5</td></tr>
+    <tr><td class="k">Rope 50 ft / grappling hook / crowbar</td><td class="v">1 / 2 / 2</td></tr>
+    <tr><td class="k">Chalk, mirror, iron spikes (×10)</td><td class="v">1 cp / 5 / 1</td></tr>
+  </table>
+</div>
+<div class="block">
+  <div class="block-title">Barter: what Sigrun wants (the party is short on coin)</div>
+  <table>
+    <tr><td class="k">News of the fort</td><td class="v">a true report = 25 gp credit (it goes straight to Vercingetorix's people)</td></tr>
+    <tr><td class="k">Roman legion gear</td><td class="v">gladius, pilum, lorica pieces: full value</td></tr>
+    <tr><td class="k">Lucius's seal ring</td><td class="v">100 gp credit. Selling it means no Roman authority over Lucius's 4 guards.</td></tr>
+    <tr><td class="k">A citizenship letter</td><td class="v">200 gp credit. Lose that PC's citizenship in the epilogue.</td></tr>
+    <tr><td class="k">The box</td><td class="v">500 gp. Don't.</td></tr>
+  </table>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ═══ REWARDS ═══ -->
+<div id="tab-rewards" class="tab-pane">
+<div class="block">
+  <div class="block-title">Rewards by scene &nbsp;<span style="color:#888;font-size:0.85em">story rewards first, then treasure · coin in Roman money, 1 aureus = 1 gp</span></div>
+  <table>
+    <tr><td class="k">Village</td><td class="v">Goodwill (jobs, bringing the boy home): adv. on village Persuasion, free food and beds, Skadi's free healing. Edda, if humbled: gives her old <b>framea +1</b> ("it was my husband's; it has killed better things than you").</td></tr>
+    <tr><td class="k">North: Rite of Rest</td><td class="v">All four in order: <b>every PC loses ALL corruption</b>; carrier gets <b>Myling's Rest</b>. Partial: Myling's Rest only.</td></tr>
+    <tr><td class="k">North: shrine &amp; wisps</td><td class="v"><b>Belatucadrus blessing</b> on one weapon (magical; beats Vercingetorix's Relentless). Helping the wisps: the Völva's light blesses a second weapon.</td></tr>
+    <tr><td class="k">South: Thusnelda saved</td><td class="v">He guides them to the skull; knows the Sun-Path; gives his <b>rune-staff</b> (druid/cleric focus, 1/day <em>augury</em> for its holder). In the finale he can take the guardian's seat. Figuring out the false ritual: <b>inspiration</b> for whoever cracked it.</td></tr>
+    <tr><td class="k">Skull Entrance</td><td class="v">Offerings under the stair: <b>32 denarii</b>, a <b>silver torc</b> (25 gp), a cult tally stick (OTHALAN marks).</td></tr>
+    <tr><td class="k">Ossuary</td><td class="v">Behind the OTHALAN niche: a <b>potion of healing</b> and a cultist's wax tablet ("sow, grow, reap, bleed"). Short rest.</td></tr>
+    <tr><td class="k">Blood-Growth</td><td class="v">Pillar burned before hatching: inside, a <b>blood-amber shard</b> (50 gp; also a component: a caster can use it once for advantage on one save vs necrotic).</td></tr>
+    <tr><td class="k">Rune Lock</td><td class="v">Behind the door, a cultist's satchel: <b>scroll of Lesser Restoration</b>, 12 aurei.</td></tr>
+    <tr><td class="k">Minor Altar</td><td class="v">Solved with the Sun-Path: one brazier holds a still-burning <b>sun-ember</b> (works as a <em>light</em> cantrip that counts as sunlight for 1 hour, once). Demons beaten: <b>2 potions of healing</b> on the altar.</td></tr>
+    <tr><td class="k">Gathering Hall</td><td class="v">Chieftains confessed: their <b>grave goods</b>: a gold arm-ring (100 gp), a war-horn (once, as an action: allies within 30 ft gain 1d6 temp HP), and a <b>+1 seax</b>. Fought instead: half the coin, no horn.</td></tr>
+    <tr><td class="k">Core Room</td><td class="v">The Glabrezu's ledger-chest: <b>180 aurei</b>, a <b>cloak of protection</b>, a <b>potion of greater healing</b>. Refusing every bargain: <b>inspiration</b> for the whole party. Long rest, <b>Level 7</b>.</td></tr>
+  </table>
+</div>
 </div>
 
 <!-- ═══ NPCS ═══ -->
