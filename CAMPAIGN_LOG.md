@@ -239,6 +239,12 @@ ended there. **Next session starts on waking in the grove:** read the "On waking
 `gm_tools/s6_grove_visions.html` (five gifts), then the South Grove (Thusnelda, the stones) and the Entrance
 (bone bridge, Bone Nagas) are still ahead. Full record: "Session 6" below.
 
+**NEXT PREP TASK (GM request, 2026-11-15):** plan the final dungeon and the ritual together. Step one is a
+room-by-room walkthrough of the Blood Omens map (Dice Grimorium "Blood Cult Dungeon", the final map) with the
+GM, so every room's contents, purpose and connections are agreed before any scene notes are rewritten. Only
+then fit the Session 6 rest and the Session 7 finale (dungeon rooms, Vercingetorix, Janus, the ritual and the
+Choice) onto those rooms, using the grove visions as the ritual's clues.
+
 **FIXED GEOGRAPHY around the village (table canon; never reinterpret):**
 - **NORTH = the Sacred Grove.** Belatucadrus shrine, the grove-light wisps (speak in riddles), and the old
   altar where the Myling was sacrificed. His bones lie under it. **Rite of Rest** (hard riddle): give back,
