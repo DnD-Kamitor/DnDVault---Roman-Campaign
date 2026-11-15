@@ -98,6 +98,7 @@
   <button class="tab-btn active" onclick="showTab('village', this)">1 · Village</button>
   <button class="tab-btn" onclick="showTab('north', this)">2 · North Grove</button>
   <button class="tab-btn" onclick="showTab('south', this)">3 · South Grove</button>
+  <button class="tab-btn" onclick="showTab('bridge', this)">E · The Bridge</button>
   <button class="tab-btn" onclick="showTab('entrance', this)">4 · Entrance</button>
   <button class="tab-btn" onclick="showTab('culture', this)">⌂ Village Culture</button>
 </div>
@@ -165,7 +166,7 @@
 
   <div class="block">
     <div class="block-title">The Choice (put it on the table)</div>
-    <div class="dec"><b>North first or South first?</b> Thusnelda wants the box carried south to the stones <b>now</b>. Hild wants her son taken north to his bones <b>now</b>. Going north first gives them the evidence to stop Thusnelda (bones, wisp riddles), but he waits only as long as the village trusts them. Going south first means arguing with him with nothing but words (DC 18).</div>
+    <div class="dec"><b>North first or South first?</b> Thusnelda wants the box carried south to the stones <b>now</b>. Hild wants her son taken north to his bones <b>now</b>. Going north first gives them the evidence to stop Thusnelda (bones, wisp riddles), but he waits only as long as the village trusts them. Going south first means arguing with him with nothing but words (DC 18). <b>East:</b> the log bridge to the island of the dead (optional, see the <b>E · The Bridge</b> tab): a third proof for the South stones, and a nix that wants the boy.</div>
   </div>
 </div>
 
@@ -435,6 +436,77 @@
     </table>
   </div>
   <div class="note"><b>Wants vs Secret, for the GM:</b> he never found the cult's temple and took that as a sign to pay in blood. The real dungeon is south past these stones, under the skull-faced hill. Saving him gives the party a guide; losing him feeds the god.</div>
+</div>
+</div>
+</div>
+
+<!-- ═══════════════════ EAST: THE BRIDGE ═══════════════════ -->
+<div id="tab-bridge" class="tab-pane">
+<div class="setup-line"><span class="lbl">Map:</span> <span class="file">ForestRiverConfluencePublic</span> (east of the village on your MapTool layout) &nbsp; <span class="lbl">Tokens:</span> <span class="tok">Nix</span> (as a woman on the log) · <span class="tok">Myling</span> · 5 PCs &nbsp; <span class="lbl">Optional:</span> not on the main path; it gives a third proof for the South Grove</div>
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Arrival (read aloud)</div>
+    <div class="ra">East of the village two rivers meet, green and fast and loud. One oak trunk, adzed flat on top and worn smooth by feet, spans the near channel to a wooded island. Under the trees on the island: low grassy mounds, each with a stone at its head. A young woman sits at the far end of the log with her feet in the water, combing her wet hair with her fingers. She looks up at the boy on your back, and smiles as if she knows him.</div>
+    <p class="now"><strong>Dramatic Question:</strong> What will they pay to cross to the dead, and who decides the price?</p>
+  </div>
+  <div class="block">
+    <div class="block-title">What this place is</div>
+    <ul>
+      <li><b>The island of the dead.</b> The village's ash-pots lie under those mounds. The living cross only carrying the dead or bringing gifts. The log is the corpse-road.</li>
+      <li><b>The river has an owner.</b> A nix lives where the waters meet. The village paid it every new moon (a loaf, a ring, a cup of mead off the log) to leave the dead in peace. Since the chieftains went mad, nobody has paid. It is <b>hungry</b>.</li>
+      <li>The village knows its name: <b>Grima</b>. Old Gerlind will tell it (Persuasion 13, or free if they were kind to her). Hild knows it too. Hostile village: nobody tells.</li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">Crossing the log</div>
+    <table>
+      <tr><td class="k">Walk it</td><td class="v">Acrobatics DC 12, 30 ft of log. Fail = into the water (River Drag, below).</td></tr>
+      <tr><td class="k">Carrying the boy</td><td class="v">DC 14; he whispers "Don't drop me in. It's cold in there."</td></tr>
+      <tr><td class="k">Carrying the box</td><td class="v">DC 14; the box leans toward the water like a dog on a lead.</td></tr>
+      <tr><td class="k">Rope across first</td><td class="v">Advantage for everyone after (Athletics 12 to swim it over, which means getting into her water).</td></tr>
+      <tr><td class="k">Pay the toll</td><td class="v">A gift worth 25 gp thrown in, or a loaf and a ring off the log the old way: safe crossing for 1 hour. She keeps the bargain exactly once.</td></tr>
+    </table>
+  </div>
+  <div class="block">
+    <div class="block-title">The island (if they reach it)</div>
+    <table>
+      <tr><td class="k">The newest mound</td><td class="v">Small, raised last spring. No ash-pot inside, only a carved wooden horse and a child's sling. <b>Wulf's</b> mound: Hild built it with nothing to burn. Investigation 12.</td></tr>
+      <tr><td class="k">The Völva's mound</td><td class="v">Biggest and oldest, a picture-stone at its head: seven stones under a sun, and over the sun a war-rune, <b>scratched out</b> by a later hand. Old Thusnelda's teacher lies here. <span class="warn">Counts as evidence at the South Grove</span> (Persuasion with advantage). Religion 13 to read it; any PC can copy or rub it.</td></tr>
+      <tr><td class="k">Honour her</td><td class="v">Pour a drink, speak her name (<b>Heidrun</b>, from Gerlind or Thusnelda): a bronze sun-disc is found in the turf. 1/day: advantage on a save against charm or fear.</td></tr>
+      <tr><td class="k">Rob the mounds</td><td class="v">10 gp of rings. +1 corruption each, and the village learns of it: hostility goes to <b>Blood</b>.</td></tr>
+    </table>
+  </div>
+</div>
+
+<div>
+  <div class="who foe">
+    <span class="who-name">Grima, the Nix of the Confluence</span><span class="who-tag">CR 5 · AC 13 · HP 91 · swim 60 · stats: bestiary / Nix token</span>
+    <p><b>Disguise:</b> a pale young woman, wet hair, a girl's voice, feet in the water. <b>Chosen Target:</b> whoever carries the boy (she wants him: unburned dead are hers by old right). Second choice: the box carrier.</p>
+    <p><b>Claw ×2</b> +5, 2d6+2. <b>Unearthly Beauty</b>: start turn within 30 ft, DC 15 Wis or charmed (walk to her). <b>Drowning Song</b> (5-6): Chosen Target DC 16 Wis or walks into the river; others DC 16 or approach. <b>River Drag</b> (reaction): +5 grapple on anyone entering the water; grappled = drowning. <b>River Bound</b>: adv. on checks/saves, regains 10 HP a turn while in water. <b>Horrific Revelation</b> 1/day, DC 15 Wis or frightened.</p>
+    <p class="improv">She retreats into the water if two or more fight her on dry land. Her name spoken aloud: she must answer <b>one</b> question truthfully and cannot use the Song on the speaker that day.</p>
+    <div class="say">(sweetly, to the carrier) "You've carried him so far. Your back must ache. Set him in the water; it's soft here. I'll hold him."</div>
+    <div class="say">"Nobody brings me bread anymore. Nobody sings on the log. The village forgot me, so I forgot the village's rules."</div>
+    <div class="say">(to the box) "Oh, what's that? It's loud. Throw it to me. I'll keep it at the bottom, in the dark, forever, I promise."</div>
+    <div class="say">(if they say her name) "...Who told you that?" (the smile goes) "Ask, then. One. Ask well."</div>
+    <div class="say">(truthful answer, if asked about the boy) "They never brought him to me. If the bog had him, the water would know. The water knows everything that drowns. He was cut, up north, under the oaks, and the singing was loud so no one would hear."</div>
+    <div class="say">(truthful answer, if asked about the stones) "The south stones drink. Everything that bleeds there goes downhill, to the skull, to the thing under it. Not to any god of yours. To one that is always hungry."</div>
+    <div class="say">(revealed, scales and teeth) "Bread was cheaper, soldier."</div>
+    <div class="say">(paid properly) "The old way. Someone taught you manners." (she slides into the water) "One hour. Then you're meat again."</div>
+  </div>
+
+  <div class="block">
+    <div class="block-title">If they throw the box in</div>
+    <div class="dec">It does not sink. It floats <b>upstream</b>, against the current, back to their bank, and bumps against the carrier's boots. Grima screams and goes under and does not come back up this session. Everyone who saw it: DC 12 Wis or +1 corruption. The spear cannot be dumped. It has to be <b>unmade</b> where it was fed.</div>
+  </div>
+
+  <div class="block">
+    <div class="block-title">Lines from the village about the bridge</div>
+    <div class="say">Gerlind: "Bread on the log at new moon. Grima's her name. We stopped. Everyone stopped. Now she sings at night, and the dogs answer."</div>
+    <div class="say">Hild: "I built him a mound with nothing in it. I couldn't bear him having nowhere."</div>
+    <div class="say">Thusnelda: "My teacher sleeps on that island. Heidrun. She would have known what to do with you."</div>
+    <div class="say">Folkmar: "My brother and I used to run that log for a dare. Before the river got hungry."</div>
+  </div>
 </div>
 </div>
 </div>
