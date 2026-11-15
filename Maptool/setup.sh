@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 APP_DIR="$SCRIPT_DIR/app"
 DATA_DIR="$SCRIPT_DIR/data"
 
-MT_DEB="$SCRIPT_DIR/maptool_1.18.6-amd64.deb"
+MT_DEB="$SCRIPT_DIR/maptool_1.18.8-amd64.deb"
 TT_DEB="$SCRIPT_DIR/tokentool_2.3.0_amd64.deb"
 MT_ROOT="$APP_DIR/maptool/opt/maptool"
 TT_ROOT="$APP_DIR/tokentool/opt/tokentool"
@@ -26,7 +26,7 @@ log "=== 1. Extract applications from .deb ==="
 if [ -d "$MT_ROOT" ]; then
     skip "MapTool already extracted."
 else
-    log "Extracting MapTool 1.18.6 (this takes a moment)..."
+    log "Extracting MapTool 1.18.8 (this takes a moment)..."
     mkdir -p "$APP_DIR/maptool"
     dpkg-deb -x "$MT_DEB" "$APP_DIR/maptool"
     log "MapTool extracted."
