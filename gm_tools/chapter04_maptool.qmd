@@ -5,7 +5,7 @@ subtitle: "The God's Demand & Blood Cult Dungeon — maps, tokens, grid scale, c
 
 ::: {.callout-important}
 ## Table setup (final)
-The campaign wraps on the **BloodOmenss** map. Use `Maptool/campaigns/5e/3nov_final.cmpgn`: every Session 6 and 7 token is staged on the GM layer east of the BloodOmenss dungeon image (names prefixed "S6" / "S7"); the 4 entrance skeletons sit at the Skull Entrance on Fort Vindula. The separate Core Room and s5_mars_* maps below are optional and not loaded. Built by `scripts/inject_session_tokens.py`.
+The campaign wraps on the **BloodOmenss** map. Campaign: `Maptool/campaigns/5e/3nov.cmpgn`. Drag tokens in by hand from `Maptool/maps/campaign/FINAL_Sessions_6_7/` (files prefixed S6_ / S7_). The separate Core Room and s5_mars_* maps below are optional and not loaded. 
 :::
 
 
