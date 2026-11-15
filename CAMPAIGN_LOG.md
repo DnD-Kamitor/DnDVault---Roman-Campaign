@@ -261,6 +261,7 @@ Gathering Hall &rarr; Core Room. Ends on the crystal-star cracking and the stair
   braziers (east, south, west, north; clue on the Belatucadrus shrine).
 - Yochlol runs as a gestating variant (68 HP, rooted, hatches round 4 unless the pillar burns).
 - Two chieftain Wraiths (not three) can confess. Glabrezu offers a bargain: open the box, leave the spear.
+- **Table, 2026-11-15:** the party refused to leave the box (spear) at the village edge and kept it with them. **The village turned hostile.** Hostile track, Eburwin (headman), Folkmar (holmgang), Old Gerlind on the Ch4 cheat card Village tab.
 
 **Session 7 (Chapter 5 pack, Level 7, FINAL):** Stair &rarr; Sunken Armory &rarr; Three Passages &rarr;
 Vercingetorix &rarr; Threshold of Janus &rarr; Antechamber of Mars &rarr; the Choice &rarr; Epilogue.
