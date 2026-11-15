@@ -143,9 +143,7 @@ def main(src, dst):
     staging += staged([
         ("Wraith", "S7 Armory Wraith", 2, None), ("Wight", "S7 Wight", 1, None), ("Specter", "S7 Specter", 2, None),
         ("Vercingetorix_Bound", "S7 Vercingetorix, Bound", 1, None), ("Skeleton", "S7 Fallen Skeleton", 4, None),
-        ("Mars", "S7 Mars", 1, 200), ("Janus_(Threshold_Vision)", "S7 Janus", 1, None),
-        ("Caesar_Chain_Winch", "S7 Chain Winch", 4, None), ("Shadow_Demon", "S7 Summoned Shadow Demon", 2, None),
-        ("Wight_General_(Centurion_Cameo)", "S7 Wight-General (if spared S1)", 1, None),
+        ("Shadow_Demon", "S7 Summoned Shadow Demon", 2, None),
         ("Thusnelda", "S7 Thusnelda (if with party)", 1, None),
     ], 4600, 2400)
     blood = append_to_zone(blood, staging)
