@@ -88,714 +88,311 @@
 
 <div id="header">
   <h1>Ch4 — The God's Demand</h1>
-  <span class="sub">SESSION 6 of 7 &nbsp;·&nbsp; L6&rarr;7 &nbsp;·&nbsp; 4&ndash;5 hrs &nbsp;·&nbsp; 5 players &nbsp;·&nbsp; Village &rarr; Grove &rarr; Circle &rarr; Skull Entrance &rarr; Ossuary &rarr; Dungeon &rarr; Core Room</span>
+  <span class="sub">SESSION 6 &nbsp;·&nbsp; L6 &nbsp;·&nbsp; 5 players (not Brian) &nbsp;·&nbsp; Village &rarr; North Grove &rarr; South Grove &rarr; Dungeon Entrance</span>
   <div id="story">
-    Five soldiers with no officer carry a drowned boy and a box that hums with a god's hunger. The seer who could guide them is about to feed the god at the sacrifice stones to the south, and the boy's bones lie under the old altar in the grove to the north. The session ends when the crystal-star cracks and the stair goes down.
+    Five soldiers with no officer carry a drowned boy and a humming box into a village that has quietly emptied. The village seer wants the box carried to the sacrifice stones in the South Grove, and the boy's bones lie under the old altar in the North Grove. The session ends when the bone serpents at the dungeon's real entrance fall and the stair down lies open.
   </div>
 </div>
 
 <div id="tabs">
-  <button class="tab-btn active" onclick="showTab('pre', this)">⚙ Pre-Session</button>
-  <button class="tab-btn" style="color:#555" onclick="showTab('bog', this)">✓ Farbog</button>
-  <button class="tab-btn" onclick="showTab('myling', this)">The Boy</button>
-  <button class="tab-btn" onclick="showTab('village', this)">1 · Village</button>
-  <button class="tab-btn" onclick="showTab('grove', this)">2-3 · North Grove / South Stones</button>
-  <button class="tab-btn" onclick="showTab('wisps', this)">2b · Wisps</button>
-  <button class="tab-btn" onclick="showTab('s0', this)">4 · Skull Entrance</button>
-  <button class="tab-btn" onclick="showTab('s1s2', this)">5 · Ossuary</button>
-  <button class="tab-btn" onclick="showTab('s3s4', this)">6-8 · Growth / Lock / Altar</button>
-  <button class="tab-btn" onclick="showTab('s5', this)">9a · Hall</button>
-  <button class="tab-btn" onclick="showTab('s6', this)">9b · Core ★END</button>
-  <button class="tab-btn" onclick="showTab('cast', this)">Cast</button>
-  <button class="tab-btn" onclick="showTab('trade', this)">Trade</button>
-  <button class="tab-btn" onclick="showTab('rewards', this)">Rewards</button>
-  <button class="tab-btn" onclick="showTab('npcs', this)">NPCs</button>
-  <button class="tab-btn" onclick="showTab('server', this)">MapTool</button>
+  <button class="tab-btn active" onclick="showTab('village', this)">1 · Village</button>
+  <button class="tab-btn" onclick="showTab('north', this)">2 · North Grove</button>
+  <button class="tab-btn" onclick="showTab('south', this)">3 · South Grove</button>
+  <button class="tab-btn" onclick="showTab('entrance', this)">4 · Entrance</button>
 </div>
 
 <div id="content">
 
-<!-- ═══ PRE-SESSION ═══ -->
-<div id="tab-pre" class="tab-pane active">
+<!-- ═══════════════════ VILLAGE ═══════════════════ -->
+<div id="tab-village" class="tab-pane active">
+<div class="setup-line"><span class="lbl">Map:</span> <span class="file">s3_germanic_village.html</span> &nbsp; <span class="lbl">Tokens:</span> <span class="tok">Thusnelda</span> · <span class="tok">Sigrun_the_Trader</span> · Hild (any villager token) · <span class="tok">Myling</span> (on the carrier) · 5 PCs &nbsp; <span class="lbl">Box aura:</span> +2 Intimidation, <span class="warn">disadv. on calm Persuasion within 30 ft</span></div>
 <div class="grid2">
 <div>
   <div class="block">
-    <div class="block-title">Maps — load in sequence</div>
-    <div class="setup-line"><span class="lbl">Village:</span> <span class="file">s3_germanic_village.html</span></div>
-    <div class="setup-line"><span class="lbl">Grove &amp; Circle:</span> <span class="file">s4_sacred_grove.html</span></div>
-    <div class="setup-line"><span class="lbl">Skull Entrance:</span> <span class="file">SkeletonFortressEntrancePublic.jpg</span></div>
-    <div class="setup-line"><span class="lbl">Dungeon (Scenes 5-9a):</span> <span class="file">Blood-Cult-Dungeon-Gridded-29x43-MapPublic.jpg</span></div>
-    <div class="setup-line"><span class="lbl">Core Room (9b):</span> same <span class="file">BloodOmenss</span> map (last chamber)</div>
-    <div class="setup-line" style="color:#555;font-size:0.78em;margin-top:4px">Tokens to drag in: <span class="file">Maptool/maps/campaign/FINAL_Sessions_6_7/</span> (S6_*) · full stat blocks: <span class="file">final_statblocks.html</span> · standalone module: <span class="file">chapter04_print.html</span></div>
+    <div class="block-title">Arrival (read aloud)</div>
+    <div class="ra">The village smells of woodsmoke and old bread. Two fires burn where ten should be. Half the doors stand open on empty rooms. A woman at a quern stops grinding and watches you without moving. Then her eyes find the boy on your back, and her hands go still on the stone. At the far end of the street, a tall old man in a wolf-pelt is sharpening a flint knife on a whetstone, slowly, and singing to it.</div>
+    <p class="now"><strong>Dramatic Question:</strong> Will the village trust them enough to tell the truth, before the seer walks south with their box?</p>
   </div>
-  <div class="block">
-    <div class="block-title">Table truth (CAMPAIGN_LOG)</div>
-    <ul>
-      <li><strong>Session 5 done:</strong> Farbog crossed, Wights destroyed, the Myling ("Wulf") rides with the party.</li>
-      <li>Varro and Lucius dead. No officer. Party carries Lucius's iron lockbox, seal ring, citizenship letters, Corvinus's sealed orders (destroy the spear).</li>
-      <li>Vercingetorix is an enemy waiting far below: <span class="warn">NOT with the party, never an ally.</span> Cult name still unrevealed.</li>
-      <li><span class="warn">Box Cataclysm:</span> spear + Ursula's greataxe in Rivia's box. <strong>+2 Intimidation</strong>, <strong>disadv on calm Persuasion within 30 ft</strong>, undead sense the party at double range (no surprise on undead).</li>
-      <li>Brian is not playing.</li>
-    </ul>
-  </div>
-</div>
-<div>
-  <div class="block">
-    <div class="block-title">Tokens — drag to sidebar</div>
-    <div class="setup-line"><span class="tok">Myling</span> (carried) &middot; <span class="tok">Thusnelda</span> &middot; <span class="tok">Belatucadrus_Shrine</span></div>
-    <div class="setup-line"><span class="tok">Bone_Naga</span> ×2 (HP 58) &middot; <span class="tok">Skeleton</span> ×4 (+2 spare, HP 13)</div>
-    <div class="setup-line"><span class="tok">Yochlol</span> ×1 (HP 68 rooted) &middot; <span class="tok">Dretch</span> ×2 (HP 18)</div>
-    <div class="setup-line"><span class="tok">Shadow_Demon</span> ×3 (HP 66, AC 13) &middot; <span class="tok">Wraith</span> ×2 (HP 67, the chieftains)</div>
-    <div class="setup-line"><span class="tok">Glabrezu</span> ×1 (HP 157)</div>
-    <div class="setup-line"><span class="tok">5 player tokens</span> (not Brian)</div>
-  </div>
-  <div class="block">
-    <div class="block-title">Clock &amp; cut points</div>
-    <ul>
-      <li>Village+Grove+Circle ≈ 75 min · Entrance+Ossuary ≈ 60 min · Lower dungeon ≈ 90 min.</li>
-      <li>Behind at the Ossuary? <strong>Cut 6 (Growth) and 8 (Altar).</strong> The lock opens onto the Hall.</li>
-      <li><span class="warn">Never cut 9b.</span> The session ends on the crystal cracking. Long rest, Level 7.</li>
-    </ul>
-  </div>
-  <div class="block">
-    <div class="block-title">Do NOT place</div>
-    <ul>
-      <li class="bad">Corvinus, Cassia (at the fort) · Varro, Lucius (dead) · Brian · Banshee/Wight (Farbog done)</li>
-    </ul>
-  </div>
-</div>
-</div>
-</div>
 
-<!-- ═══ BOG ═══ -->
-<div id="tab-bog" class="tab-pane">
-<div class="grid2">
-<div>
   <div class="block">
-    <div class="block-title">Scene 1 — Farbog Crossing &nbsp;<span style="color:#555;font-size:0.85em">map: s3_farbog_crossing.html</span> <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_scene0_marsh_readaloud.mp3')">▶ Voice</button></div>
-    <div class="ra">The trees end and the ground turns to black, sucking mire. A causeway of bleached skulls and packed ribs spans the marsh toward a limestone bluff carved into a colossal skull. The water on either side glows a sickly, breathing green. From Rivia's pack, the scorched box answers with a deep hum you feel through your boots. At the bank's edge, a standing stone. Runes cut deep. Older than the causeway.</div>
-    <p class="now"><strong>Dramatic Question:</strong> Can they cross without waking what drowned in the water?</p>
-  </div>
-  <div class="block">
-    <div class="block-title">The Standing Stone — riddle (DC 13 History to read)</div>
-    <div class="ra">"Born from the willing, fed by the blood, I grow in the silence where no god has stood. Worship without truth, devotion without cost — I am what remains after the believer is lost. Name me."</div>
-    <ul>
-      <li><strong>Answer:</strong> the hunger / hollow faith / false devotion. Any honest answer counts.</li>
-      <li><strong>Reward:</strong> bone token in a notch at the base: <em>one free reroll on a save vs an undead ability</em> this session. Rune = OTHALAN (DC 11 History, or automatic if they held the S1 contract token: older than the cult).</li>
-    </ul>
-  </div>
-  <div class="block">
-    <div class="block-title">Supply caches near shore (DC 11 Investigation)</div>
-    <ul>
-      <li>Green-glowing rations + <strong>tally stick</strong> (cult here for months)</li>
-      <li>Torn <strong>cloth in the two chieftains' warband colours</strong></li>
-    </ul>
-    <div class="note">These are Thusnelda's evidence (advantage on Path A in the Circle). Make them findable.</div>
-  </div>
-  <div class="clock"><strong>Quiet crossing:</strong> DC 14 group Stealth, more than half must pass, <span class="warn">at disadvantage if the box is unwrapped</span>. Pass = no fight. Fail, or anyone steps in the water = Wights rise mid-crossing.<br>
-  <strong>Sinking causeway:</strong> every 2 rounds on it, bones sink 6 in. After 4 rounds: difficult terrain, DC 12 Dex or slip in; vapours DC 12 Con or 1 exhaustion.</div>
-</div>
-<div>
-  <div class="who foe">
-    <span class="who-name">The Drowned Wights ×3</span><span class="who-tag">Wight · CR 3 · AC 14 · HP 45 each · tokens: Wight/Vaettir</span>
-    <p><b>Look:</b> Early cult converts in rotted Germanic wool, skin bog-brown and tight over the bone, cold light where the eyes were. They rise out of the green water on both sides of the causeway, dripping.</p>
-    <p><b>What they want:</b> Nothing anymore. The chieftains made each convert stand in the bog overnight as a test of devotion. The ones who broke or drowned never came home; cult magic bound them here. They sense warmth and movement <em>in the water</em>, not on the bone.</p>
-    <p><b>How they fight:</b> Multiattack: <b>2 longsword</b> (+4, 1d8+2 slashing), or swap one swing for <b>Life Drain</b> (+4, 1d6+2 necrotic, DC 13 Con or max HP drops by the damage until long rest). Anyone who backs off gets the <b>longbow</b> (+4, 150/600 ft, 1d8+2). They flank the single-file line and focus whoever is at the back.</p>
-    <p><b>Weak spots:</b> It's daytime: <b>Sunlight Sensitivity</b>, disadvantage on attacks and Perception. Causeway edge is difficult terrain for them, so the party holds high ground.</p>
-    <p><b>Tough spots:</b> Resist necrotic + nonmagical B/P/S (silvered or magic weapons get through). Immune poison. <span class="warn">The box means they cannot be surprised.</span></p>
-    <div class="note"><strong>Say this before initiative:</strong> a PC killed by Life Drain rises as a Zombie next round unless the Wight dies first or the body is dragged off the causeway.</div>
-  </div>
-  <div class="who opt">
-    <span class="who-name">The Myling (optional)</span><span class="who-tag">drowned boy · full brief in the <b>1b · The Boy</b> tab</span>
-    <p><b>Trigger:</b> DC 13 Perception mid-crossing: a child crying with water in his lungs, 30 ft left of the causeway. If ignored, he climbs onto the causeway behind the last PC.</p>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- ═══ MYLING ═══ -->
-<div id="tab-myling" class="tab-pane">
-<div class="grid2">
-<div>
-  <div class="who opt">
-    <span class="who-name">The Boy in the Bog (Myling)</span><span class="who-tag">optional · tone scene, not a fight</span>
-    <p><b>Who he was:</b> A village boy, twelve or thirteen. The chieftains sacrificed him at the old altar in the grove north of the village, singing to cover his cries, and left his body there. His spirit wandered to the bog looking for the way home. Nobody came for his body, so nobody mourned him properly. He has been calling since the night he died.</p>
-    <p><b>Look:</b> Skin the colour of the bog, hair plastered flat, work clothes rotted to threads. Eyes open but not quite focused, as if looking through you at a fire far away. Water runs from his mouth when he speaks.</p>
-    <p><b>Wants:</b> To go home. In his story that means holy ground, where the dead can rest. He doesn't want to hurt anyone and doesn't understand that he's dead.</p>
-    <p class="improv">Improv, not canon yet: he has no name in the files. If they ask, he says <b>"Wulf"</b>. His bones are still under the old altar in the grove's ring of stones (DC 12 Investigation, or automatic if he is carried into the ring). Laying him beside his bones / burying them releases him. Song: see notes.</p>
-  </div>
-  <div class="block">
-    <div class="block-title">How it starts</div>
-    <div class="ra">A sound under the wind, low and wet: a child crying with water in his lungs. Then it stops, and starts again, closer.</div>
-    <p style="font-size:0.82em"><b style="color:#8ab8d8">Approached:</b></p>
-    <div class="ra">It is a boy. Twelve, maybe thirteen. His skin is the colour of the bog. He holds his arms up the way a small child does when he wants to be carried. He says one word, over and over, in Germanic. <em>"Home."</em></div>
-    <p style="font-size:0.82em"><b style="color:#8ab8d8">Ignored:</b></p>
-    <div class="ra">Something cold and small takes hold of the back of your leg. You look down. A grey hand, a child's hand, and a face rising out of the water behind you on the causeway. "Home," it says. "Please."</div>
-  </div>
-  <div class="block">
-    <div class="block-title">What the party can learn</div>
+    <div class="block-title">RP Skill Challenge: How the village takes the Romans</div>
+    <p style="font-size:0.82em">Starting attitude: <b>suspicious</b>. Armed Romans, a dead child, and a box that hums. Goal: <b>5 successes before 3 failures</b>. Each PC must make at least one attempt; no one may use the same skill twice in a row. Ask the player <em>what they do</em>, then pick the skill.</p>
     <table>
-      <tr><td class="k">Insight DC 10</td><td class="v">He isn't hostile. He's terrified, and very cold.</td></tr>
-      <tr><td class="k">Religion DC 12</td><td class="v">A <em>myling</em>: the unmourned dead child of northern stories. Carry him to holy ground and he rests. Refuse him and he turns. (Romans would call him one of the <em>lemures</em>, the hungry dead.)</td></tr>
-      <tr><td class="k">Medicine DC 13</td><td class="v"><span class="improv">(improv)</span> Religion/History DC 13 on the cauldron: old northern offering-cauldron, but fresh cult marks scratched over the old patterns. Song or cauldron counts as <b>evidence</b> for Thusnelda (Path A): "That is not an offering. That is a murder dressed as one."</td></tr>
+      <tr><th>Approach</th><th>Skill / DC</th><th>On a success the village...</th></tr>
+      <tr><td class="k">Give the boy back to his mother</td><td class="v"><b>Automatic success</b></td><td class="v">goes silent; people come out of doors. Hild speaks first.</td></tr>
+      <tr><td class="k">Kneel, lower weapons, greet in Germanic</td><td class="v">Persuasion 13 (Insight to read who to greet: 12)</td><td class="v">sees soldiers who know they are guests</td></tr>
+      <tr><td class="k">Leave the box at the village edge</td><td class="v">Automatic, once (lifts the box penalty)</td><td class="v">breathes again; dogs stop growling</td></tr>
+      <tr><td class="k">Help: mend the palisade gap, fetch water, haul wood</td><td class="v">Athletics 12</td><td class="v">sees hands that work, not take</td></tr>
+      <tr><td class="k">Treat the sick child in the second house</td><td class="v">Medicine 13</td><td class="v">sends for Thusnelda's blessing on the healer</td></tr>
+      <tr><td class="k">Honour the dead: offer at the house-post, name the gods</td><td class="v">Religion 13 (Druid/Cleric: adv.)</td><td class="v">hears that Romans also bury their own</td></tr>
+      <tr><td class="k">Sing, tell a story at the fire</td><td class="v">Performance 12</td><td class="v">laughs once; the first laugh in months</td></tr>
+      <tr><td class="k">Say what they saw at the Farbog (the Wights, the cloth)</td><td class="v">Insight 13 to tell it right / History 13</td><td class="v">learns their missing men are not coming back</td></tr>
+      <tr><td class="k">Threaten, loom, show the box</td><td class="v">Intimidation 12 (+2 box)</td><td class="v">answers, but it <b>counts as a failure</b> anyway. Doors close.</td></tr>
+    </table>
+    <div class="clue"><b>Failure</b> (any roll that misses): a villager spits, a door shuts, or a child is pulled indoors. Narrate it; never block the scene.</div>
+  </div>
+
+  <div class="block">
+    <div class="block-title">Result</div>
+    <table>
+      <tr><td class="k">5 successes, 0-1 failures<br><span style="color:#888">Welcomed</span></td><td class="v">Free beds and food (short rest). Hild teaches the lullaby willingly. Sigrun: 20% off. Thusnelda <b>waits for them</b> before walking south ("I will not go without you"). Advantage on all village social checks for the session.</td></tr>
+      <tr><td class="k">5 successes, 2 failures<br><span style="color:#888">Tolerated</span></td><td class="v">They get answers and the lullaby. Thusnelda gives them until <b>noon</b>, then walks south alone.</td></tr>
+      <tr><td class="k">3 failures<br><span style="color:#888">Shut out</span></td><td class="v">Hild still speaks (for the boy) but nothing more. Sigrun charges full price and sends word to Vercingetorix's people. Thusnelda <b>leaves for the South Grove right away</b>: start the South clock at <span class="warn">2 rounds</span>.</td></tr>
     </table>
   </div>
+
+  <div class="block">
+    <div class="block-title">The Choice (put it on the table)</div>
+    <div class="dec"><b>North first or South first?</b> Thusnelda wants the box carried south to the stones <b>now</b>. Hild wants her son taken north to his bones <b>now</b>. Going north first gives them the evidence to stop Thusnelda (bones, wisp riddles), but he waits only as long as the village trusts them. Going south first means arguing with him with nothing but words (DC 18).</div>
+  </div>
 </div>
+
 <div>
-  <div class="block">
-    <div class="block-title">His lines (Germanic; he only understands simple words)</div>
-    <div class="say">"Home." (always first, and whenever he's frightened)</div>
-    <div class="say">"It's cold. Why is it always cold?"</div>
-    <div class="say">"The water got warm, the way baths do. Then it got too hot."</div>
-    <div class="say">"Is my mother still at the fire?"</div>
-    <div class="say">Near the box: he presses his face into the carrier's neck. "It's hungry. Like them. Don't let it look at me."</div>
+  <div class="who">
+    <span class="who-name">Thusnelda, the Völva</span><span class="who-tag">village seer · he/him · 60s · sharpening a knife by his door</span>
+    <p><b>Look:</b> Tall, stooped, barefoot, grey braids strung with small bones and amber. A wolf-pelt over a linen shift. Pale eyes that settle just past you. A flint knife older than the village.</p>
+    <p><b>Manner:</b> Slow, sing-song, never loud. Careful Latin he hates using. Hums between sentences.</p>
+    <p><b>Wants (this tab):</b> The box, carried by the Romans, to the seven stones in the South Grove. He believes the spear laid on the centre stone, plus his own willing blood, will unmake it and end the war-god's hunger. He wants them to come <em>with</em> him; he cannot carry it himself (it burns him).</p>
+    <p><b>Secret:</b> He searched three months for the cult's temple and never found it. He took that as the gods telling him to pay in blood instead. He does <b>not</b> know the boy died at the North altar.</p>
+    <div class="say">(not looking up from the knife) "You brought it. I heard it humming from the ford. Sit. I have waited twenty years for someone foolish enough to carry it this far."</div>
+    <div class="say">"The war-god eats our sons. There are seven stones in the south grove, older than your Rome. Lay the spear on the centre stone, and give it my blood, and the hunger ends with me."</div>
+    <div class="say">"Not your blood, Roman. Mine. It must be someone who loves this place."</div>
+    <div class="say">(seeing the boy) "Wulf. Hild's boy." (a long breath) "The bog gives back what it was given. Another reason not to wait."</div>
+    <div class="say">(if asked to wait) "When the sun stands highest, I go to the stones. With you or without you."</div>
+    <div class="say">(if told the stones are wrong, no proof) "You are a soldier. You read orders. I read the gods. Bring me something the gods wrote, and I will listen."</div>
+    <p class="improv">Insight DC 14: he is not mad and not despairing. He is calm, certain, and has already said goodbye to everyone. That is what makes him dangerous.</p>
   </div>
+
+  <div class="who">
+    <span class="who-name">Hild, the boy's mother</span><span class="who-tag">at the quern · 30s</span>
+    <p><b>Look:</b> Thin, flour to the elbows, a grey shawl, hands that never stop moving. Red eyes that have not cried in months.</p>
+    <p><b>Manner:</b> Quiet, exact. Talks to the boy as if he were late home for supper.</p>
+    <p><b>Wants:</b> Her son laid with his bones and sung to sleep. <b>Fears:</b> the chieftains' men, who she thinks still watch her.</p>
+    <p><b>Knows:</b> His name (<b>Wulf</b>), the lullaby, and that the chieftains took him <b>north</b>, to the old altar in the grove. <b>Secret:</b> She always knew the bog story was a lie, and kept silent.</p>
+    <div class="say">(to the boy, very softly) "There you are. They told us the bog took you. You're so cold."</div>
+    <div class="say">"Not the bog. The chieftains took him north, to the old altar under the oaks. They sang so we would not hear him. His bones are still there."</div>
+    <div class="say">"He was my Wulf. Say his name to him there. He has forgotten it."</div>
+    <div class="say">"Lay him with his bones and sing him down. I will teach you the song. I cannot go; I could not bear to see the place."</div>
+    <div class="say">(about Thusnelda) "He is a good man, and he has been wrong before. Not often. But the chieftains were not wrong about anything, and look what they did."</div>
+    <div class="ra" style="color:#d8c8a0">The lullaby: <em>"Sleep, little wolf, the sun walks round: up in the east, high in the south, down in the west, and home in the north to sleep."</em></div>
+    <p class="improv">Learning the song: Performance DC 10 with Hild teaching, DC 13 from memory. The song also hides the Sun-Path order (E, S, W, N) for next session.</p>
+  </div>
+
+  <div class="who">
+    <span class="who-name">Sigrun the Trader</span><span class="who-tag">merchant · 30s · hand-cart by the longhouse</span>
+    <p><b>Look:</b> Sharp face, dark braid, fox-fur collar, a ring on every finger from a different people. A small dog that bites.</p>
+    <p><b>Manner:</b> Warm, fast, flattering. Switches Latin, Germanic, Gaulish mid-sentence. Never says no, only "what else have you got?"</p>
+    <p><b>Secret:</b> She sells news to Vercingetorix's people. If she sees the box, she offers 500 gp for it, no questions.</p>
+    <div class="say">"Romans! Alive, even. For you, soldier, a friend's price. What do you need, what do you have?"</div>
+    <div class="say">(rumour, for 5 gp or a drink) "Your seer goes south today. The chieftains' men used to come back from those stones carrying things. Bad things. Then they stopped coming back at all."</div>
+    <div class="say">(the amber charm) "Home-rune. Old work. Don't ask me where they come from and I won't ask what you're carrying."</div>
+    <div class="say">(eyes on the box) "That box. Whatever is in it, I will give you more gold than your legate sees in a year. Five hundred. Tonight."</div>
+    <div class="say">(refused) "Of course. Of course. Offer stands. Offers always stand."</div>
+  </div>
+
   <div class="block">
-    <div class="block-title">The burden</div>
+    <div class="block-title">Sigrun's cart &nbsp;<span style="color:#888;font-size:0.85em">gp · haggle Persuasion DC 13 = 20% off · buys at half</span></div>
+    <table>
+      <tr><td class="k">Potion of healing ×4</td><td class="v">50</td><td class="k">Holy water ×3</td><td class="v">25 · 2d6 radiant</td></tr>
+      <tr><td class="k">Antitoxin ×2</td><td class="v">50 · vs Naga poison</td><td class="k">Alchemist's fire ×3</td><td class="v">50</td></tr>
+      <tr><td class="k">Mace / warhammer</td><td class="v">5 / 15 · vs skeletons</td><td class="k">Silvering a weapon</td><td class="v">100 · 1 hr</td></tr>
+      <tr><td class="k">Amber OTHALAN charm</td><td class="v">15 · counts for the Rite</td><td class="k">Scroll: Prot. from Evil</td><td class="v">75</td></tr>
+      <tr><td class="k">Scroll: Lesser Restoration</td><td class="v">150</td><td class="k">Torches / rope 50 ft</td><td class="v">1 cp / 1</td></tr>
+    </table>
+    <p style="font-size:0.78em;color:#888;margin-top:3px">Barter: a true report of the fort = 25 gp credit (it goes straight to Vercingetorix's people) · Roman gear at full value · Lucius's seal ring 100 · <span class="warn">the box 500. Sold = the spear reaches the finale in enemy hands.</span></p>
+  </div>
+
+  <div class="block">
+    <div class="block-title">The boy on the carrier's back (Myling)</div>
     <ul>
-      <li>He climbs on willingly, or grapples (DC 13 Str contest) if refused but not attacked.</li>
-      <li>Carrier's <b>speed halved</b>. Each round: <b>DC 10 + rounds carried</b> Str check or speed 0. He gets heavier the further from the bog he goes.</li>
-      <li>Can't be shaken off. Hitting him turns him hostile.</li>
-      <li>He can be <b>set down to wait</b> on holy ground: the <b>Belatucadrus shrine</b> (Grove), a Cleric/Druid 10-min consecration, or the <b>village burial mound</b>. He only <b>rests</b> beside his own bones at the <b>old altar in the grove</b> (Scene 3).</li>
+      <li>Carrier's speed halved. Each hour of travel: Con DC 12 or 1 exhaustion (he grows heavier away from his bones).</li>
+      <li>He can be set down to wait on holy ground. He only <b>rests</b> at the North Grove altar.</li>
+      <li>Hit him or abandon him: he turns (Specter, stats on the North tab).</li>
     </ul>
-    <div class="note"><span class="improv">(improv)</span> <b>Carried into the village:</b> the woman at the quern is his <b>mother</b>. "They told us the bog took you." Then, quietly: "The chieftains took him north, to the old altar in the grove. His bones are still there. Lay him with them and he can sleep." Party gets <b>advantage on village Persuasion</b>.</div>
-  </div>
-  <div class="block">
-    <div class="block-title">Release (at the North grove altar: see the Rite of Rest on tab 2-3)</div>
-    <div class="ra">He slides down from your back and stands very still for a moment. Then he looks at whoever carried him, really looks, for the first time. "It doesn't hurt here." He sits down, closes his eyes, and is gone. Not dramatically. Just gone.</div>
-    <p style="font-size:0.82em"><b style="color:#8ab8d8">Reward:</b> carrier gets <em>Myling's Rest</em> for the session: advantage on death saves, immune to Frightened.</p>
-  </div>
-  <div class="who foe">
-    <span class="who-name">If attacked or abandoned: he turns</span><span class="who-tag">Specter · AC 12 · HP 22</span>
-    <div class="ra">His mouth opens wider than a mouth should, and the bog water pours out in a scream.</div>
-    <p><b>Shriek:</b> DC 13 Wis or Frightened 1 min. It can wake the Wights if they're still dormant.</p>
-    <p><b>Fights:</b> Life Drain +4, 2d6 necrotic, DC 13 Con or max HP drops. Incorporeal Movement. Sunlight: disadvantage on attacks.</p>
+    <div class="say">"Home." · "Is my mother still at the fire?" · (seeing Hild) "Mama? I'm cold." · (near the box) "It's hungry. Don't let it look at me."</div>
   </div>
 </div>
 </div>
 </div>
 
-<!-- ═══ VILLAGE ═══ -->
-<div id="tab-village" class="tab-pane">
+<!-- ═══════════════════ NORTH GROVE ═══════════════════ -->
+<div id="tab-north" class="tab-pane">
+<div class="setup-line"><span class="lbl">Map:</span> <span class="file">s4_sacred_grove.html</span> (shrine and altar end) &nbsp; <span class="lbl">Tokens:</span> <span class="tok">Myling</span> · <span class="tok">Belatucadrus_Shrine</span> · Will-o'-Wisp ×4 (lights) · 5 PCs &nbsp; <span class="lbl">Who's here:</span> the boy, the grove-lights. No living NPCs.</div>
 <div class="grid2">
 <div>
   <div class="block">
-    <div class="block-title">Scene 2 — Germanic Village &nbsp;<span style="color:#555;font-size:0.85em">map: s3_germanic_village.html</span></div>
-    <div class="ra">The village smells of woodsmoke and old bread. Chickens. A dog that barks once and stops. Two fires burning where ten should be. Half the doors stand open on empty rooms. A woman stops grinding grain and watches you without moving. A child runs inside. An old man at the fire does not look up. Whatever took this village apart, it was not a raid. Raiders leave bodies and ash. This place just... thinned.</div>
-    <p class="now"><strong>Dramatic Question:</strong> Can they earn enough trust, fast, to learn where the seer went and why?</p>
+    <div class="block-title">Arrival (read aloud)</div>
+    <div class="ra">North of the village the path climbs into oaks so old their roots have lifted the ground. Small gold lights drift between the trunks at head height. When you stop, they stop. At the centre: a stone with two faces, Roman work cut over older marks, fresh holly at its foot. Behind it, a low altar black with old blood, and beside it an iron offering-cauldron on its side. On your back, the boy goes very still. "Here," he whispers. "It was here."</div>
+    <p class="now"><strong>Dramatic Question:</strong> Can they give the boy back what was taken from him, and learn what the stones in the south really do?</p>
   </div>
   <div class="block">
-    <div class="block-title">What the village knows (if approached without threat)</div>
-    <ul>
-      <li><strong>Free:</strong> Grove is <strong>north</strong>. The dungeon entrance is <strong>south</strong>, past the old offering stones.</li>
-      <li><strong>Free:</strong> Their seer, an older man named <strong>Thusnelda</strong>, went <b>south to the sacrifice stones</b> alone before dawn, with the old knife. Three followed and came back frightened. He would not stop or explain.</li>
-      <li><strong>Free:</strong> The two chieftains "went south" months ago and never came back. People stopped asking.</li>
-      <li><strong>DC 13 Persuasion:</strong> for two weeks he's talked of "settling the gods' debt". Nobody understood until this morning, when he took a blade.</li>
-      <li><strong>DC 13 History or Persuasion:</strong> old-blood völva, his family has read omens in this forest for generations. Right about everything for twenty years. Not reckless, not despairing. <em>That's what makes this dangerous.</em></li>
-    </ul>
-  </div>
-  <div class="clock"><strong>Clock:</strong> Thusnelda has been bleeding since dawn. If they linger here long (shopping, resting), he's further along when they arrive: start the Circle with 2 rounds instead of 3.</div>
-</div>
-<div>
-  <div class="who">
-    <span class="who-name">The woman at the quern</span><span class="who-tag">first to speak</span>
-    <p><b>Look:</b> Flour to the elbows, hands still on the grindstone. Doesn't run, doesn't welcome.</p>
-    <p><b>Wants:</b> The Romans gone without trouble, and her seer back. She'll talk if weapons stay sheathed and nobody looms.</p>
-    <p><b>Gives:</b> directions and the "settling the gods' debt" line.</p>
-    <div class="say">"He went before light. With the old knife. Are you here to stop him, or to watch?"</div>
-  </div>
-  <div class="who">
-    <span class="who-name">The old man at the fire</span><span class="who-tag">silent grief</span>
-    <p><b>Look:</b> Wrapped in a cloak, staring into the coals. Won't look up at Romans.</p>
-    <p><b>Wants:</b> To be left alone. He won't say the chieftains' names. Push him and he says the warbands went south and the south kept them.</p>
-    <div class="say">"Everyone who walks that path comes back thinner, or not at all."</div>
-  </div>
-  <div class="who">
-    <span class="who-name">The three who followed the seer</span><span class="who-tag">the hook</span>
-    <p><b>Look:</b> Young, frightened, still muddy to the knee from the grove path.</p>
-    <p><b>Saw:</b> him barefoot in the ring of seven stones, singing a death-song, cutting his own wrist. He told them to go home.</p>
-    <p><b>Wants:</b> Someone braver to bring him back. They'll point the way but won't go.</p>
-  </div>
-  <div class="note"><strong>Box aura here:</strong> +2 Intimidation works, but doors close and the village goes quiet. Calm talk is at disadvantage while the box is close. Leaving it at the edge of the village helps.</div>
-  <p class="improv">Villager portrayals and voice lines are table improv built on the chapter's read-aloud. They have no names in canon, so name them on the spot if needed.</p>
-</div>
-</div>
-<div class="block">
-  <div class="block-title">Village NPCs &amp; things to do &nbsp;<span style="color:#888;font-size:0.85em">each one feeds North, South or the dungeon</span></div>
-  <table>
-    <tr><td class="k">Skadi the Healer<br><span style="color:#888">Thusnelda's apprentice · herb hut</span></td><td class="v"><b>Does:</b> heals (removes 1 exhaustion from carrying the boy; sells 2 <em>potions of healing</em>, 50 sp each, or for a story of the fort). <b>Talk (Insight/Persuasion DC 12):</b> she has watched the North grove at night twice and never told her master: <em>"The lights gather at the old altar. They hum a child's song."</em> <b>Push (DC 14):</b> <em>"The marks on the south stones are new. Someone cut over the old suns. My master doesn't see it."</em> &rarr; South ritual is wrong. She will come South with them if asked (Medicine +5).</td></tr>
-    <tr><td class="k">Edda the Spear-Mother<br><span style="color:#888">old warrior · counts scars</span></td><td class="v"><b>Test:</b> she won't talk to Romans who stand tall. Kneel, or lay a weapon down, or Persuasion DC 13 with humility. <b>Gives:</b> the chieftains' bargain: <em>"They asked the war-god for victory. The stones in the south were his price. Every man who went to them came back less."</em> &rarr; Gathering Hall. Her scar is from a spear "no longer in human hands" (the Spear of Mars; she fought beside it once). If they show the box: she backs away and won't touch it.</td></tr>
-    <tr><td class="k">Arnulf the Firekeeper<br><span style="color:#888">keeps the hearth · laughs loud</span></td><td class="v"><b>Does:</b> a meal at the fire = short rest. <b>Songs:</b> he sings the village lullaby; anyone who heard the boy hum it recognises it (the Small One wisp answers to it). <b>Lore (History DC 12):</b> the old sun-marks on the shrine, the Sun-Path prayer (E, S, W, N). Resents Rome but likes soldiers who sing.</td></tr>
-    <tr><td class="k">Sigrun the Trader<br><span style="color:#888">cart by the longhouse · sharp, friendly</span></td><td class="v">Full stock, prices and barter on the <b>Trade</b> tab. <b>Rumour</b> (5 gp or a drink): <em>"Your seer went south at dawn. The chieftains' men used to bring bad things back from those stones."</em> <b>Secret:</b> passes news to Vercingetorix's people; offers <b>500 gp</b> for the box, no questions. Sold = the spear reaches the finale in enemy hands.</td></tr>
-    <tr><td class="k">The boy's mother<br><span style="color:#888">at the quern</span></td><td class="v">Sends them North for his bones. Bring them home after: the village is theirs (food, shelter, Edda's and Skadi's full help).</td></tr>
-  </table>
-  <div class="clue"><b>Quick village jobs (goodwill = advantage on village Persuasion):</b> mend the palisade gap (Athletics DC 12) · find the lost goat in the reeds (Survival DC 11, finds a cult tally stick) · help Skadi grind herbs (Medicine DC 10, she talks while you work).</div>
-</div>
-</div>
-
-<!-- ═══ GROVE ═══ -->
-<div id="tab-grove" class="tab-pane">
-<div class="grid2">
-<div>
-  <div class="block">
-    <div class="block-title">NORTH — The Sacred Grove &nbsp;<span style="color:#888;font-size:0.85em">where the boy was sacrificed · map: s4_sacred_grove</span></div>
-    <div class="ra">The oaks here are old enough that their roots have lifted the path. Small gold lights drift between them. At the centre, a stone with two faces, Roman work over older marks, fresh holly at its foot. Behind it, a low altar black with old blood.</div>
-    <ul>
-      <li><strong>Shrine (Religion DC 13):</strong> Belatucadrus, the sun god Rome renamed Mars. 10-min prayer (Cleric/Druid) = <em>Belatucadrus blessing</em> on one weapon (magical, beats Vercingetorix's Relentless). The Völva wisp can grant it instantly.</li>
-      <li><strong>Wisps (tab 2b):</strong> speak in riddles. The Völva's line <em>"Blood is what it eats"</em> is the key that the South ritual is wrong.</li>
-      <li><strong>The boy's altar:</strong> his bones under it (Inv DC 12, automatic if carried in). To lay him to rest <em>properly</em>, solve the <b>Rite of Rest</b> below. The bones are <strong>evidence</strong> for the South: the cult murdered here and called it an offering.</li>
-      <li><strong>Leaving south:</strong> the Small One flickers after them: <em>"He thinks the stones will break it. The stones only drink."</em></li>
-    </ul>
+    <div class="block-title">What's here</div>
+    <table>
+      <tr><td class="k">The altar</td><td class="v">The boy's bones lie under it (Investigation DC 12, automatic if he is carried to it). <b>Evidence for Thusnelda:</b> "the chieftains murdered here and called it an offering".</td></tr>
+      <tr><td class="k">The cauldron</td><td class="v">Religion/History DC 13: an old northern offering-cauldron with fresh TIWAZ war-marks scratched over the old sun-patterns. Same marks as the south stones. <b>Evidence.</b></td></tr>
+      <tr><td class="k">The shrine</td><td class="v">Religion DC 13: Belatucadrus, the sun god Rome renamed Mars. A Cleric/Druid 10-min prayer = <b>Belatucadrus blessing</b> on one weapon (counts as magical; beats Vercingetorix's Relentless in the finale). The sun carving runs E, S, W, N.</td></tr>
+    </table>
   </div>
   <div class="block">
-    <div class="block-title">The Rite of Rest (hard riddle) &nbsp;<span style="color:#888;font-size:0.85em">reward: ALL corruption cleared</span></div>
-    <p style="font-size:0.85em">When the boy is set down at the altar, every wisp in the grove gathers and the Small One speaks, for the only time, in the boy's own voice:</p>
+    <div class="block-title">The Rite of Rest &nbsp;<span style="color:#888;font-size:0.85em">the Myling drop-off · hard riddle · reward: ALL corruption cleared</span></div>
+    <p style="font-size:0.82em">When the boy is set down by the altar, every light gathers and the Small One speaks, once, in the boy's own voice:</p>
     <div class="ra">"I had a word that was only mine. The bog drank it.<br>I had a sound that was only hers. The knife cut it.<br>I had a door that was only ours. The war-god shut it.<br>Give them back in the order they were stolen,<br>and lay me down where the day is born."</div>
     <table>
-      <tr><td class="k">1. His word</td><td class="v">His <b>name</b>, spoken aloud: <b>Wulf</b>. Only his <b>mother</b> knows it (she says it if they bring him to her, or Persuasion DC 13 if not). The boy himself has forgotten it.</td></tr>
-      <tr><td class="k">2. Her sound</td><td class="v">His mother's <b>lullaby</b>, sung by a PC. Learned from the mother or <b>Arnulf</b>; anyone who heard the Small One hum it can try (Performance DC 12).</td></tr>
-      <tr><td class="k">3. Their door</td><td class="v">The <b>OTHALAN</b> rune (home, inheritance) laid on his bones. They carry it: Lucius's amber token, the Farbog bone token, or Sigrun's amber charm (15 gp).</td></tr>
-      <tr><td class="k">4. Where day is born</td><td class="v">Lay him on the <b>east</b> side of the altar, facing sunrise. (Same sun-path as the shrine carving.)</td></tr>
-      <tr><td class="k">Wrong / out of order</td><td class="v">The lights dim. The carrier: DC 12 Con or 1 exhaustion; one wisp turns hungry. They may try again. <b>Third failure:</b> he rests anyway, gives only <em>Myling's Rest</em>, no cleansing.</td></tr>
-      <tr><td class="k">All four, in order</td><td class="v">"It doesn't hurt here." Gold light floods the grove. <b>Every PC present loses ALL corruption</b>, and the carrier gains <em>Myling's Rest</em> (adv. death saves, immune Frightened) to the end of Session 7.</td></tr>
+      <tr><td class="k">1. His word</td><td class="v">His <b>name</b>, spoken aloud: <b>Wulf</b>. From Hild (or Persuasion DC 13 with any villager).</td></tr>
+      <tr><td class="k">2. Her sound</td><td class="v">His mother's <b>lullaby</b>, sung by a PC (learned from Hild; Performance DC 12 from memory).</td></tr>
+      <tr><td class="k">3. Their door</td><td class="v">The <b>OTHALAN</b> rune (home) laid on the bones: Lucius's amber token, the Farbog bone token, or Sigrun's amber charm.</td></tr>
+      <tr><td class="k">4. Where day is born</td><td class="v">Lay him on the <b>east</b> side of the altar, facing sunrise.</td></tr>
+      <tr><td class="k">Wrong / out of order</td><td class="v">Lights dim. Carrier: Con DC 12 or 1 exhaustion; one wisp turns hungry. Try again. <b>3rd failure:</b> he rests anyway, Myling's Rest only, no cleansing.</td></tr>
+      <tr><td class="k">All four, in order</td><td class="v">Read the release below. <b>Every PC present loses ALL corruption.</b> Carrier gains <em>Myling's Rest</em> (adv. on death saves, immune to Frightened) to the end of the campaign.</td></tr>
     </table>
-    <div class="clue">Do not hand out answers. Riddle hints in-world: the mother ("he was my Wulf"), Arnulf's song, the scorched rune on Rivia's box, the shrine's sun carving. Insight DC 15 on the riddle: "these are three things a family gives a child."</div>
+    <div class="clue">Never give answers. In-world hints: Hild ("he was my Wulf"), her song, the scorched rune on Rivia's box, the sun carving on the shrine. Insight DC 15 on the riddle: "three things a family gives a child".</div>
+    <div class="ra">He slides down from your back and stands very still. Then he looks at whoever carried him, really looks, for the first time. "It doesn't hurt here." He sits down beside the altar, closes his eyes, and is gone. Not dramatically. Just gone. Gold light rolls out through the oaks like morning.</div>
   </div>
 </div>
+
 <div>
   <div class="block">
-    <div class="block-title">SOUTH — The Sacrifice Stones &nbsp;<span style="color:#888;font-size:0.85em">Thusnelda's false unmaking · on the way to the skull</span></div>
-    <div class="ra">Seven standing stones in a ring, carved with marks that look old until you look closer. In the centre, a flat stone stained dark. He stands on it, barefoot, wrist open, a flint knife in his hand. He looks at the box, not at you. "You brought it. Good. Put the spear on the stone. My blood breaks it, and the war ends with me."</div>
-    <div class="clock"><strong>What he believes:</strong> spear on the centre stone + his willing blood = the spear unmade. <strong>The truth:</strong> the stones are the chieftains' work. Blood on them <em>feeds</em> Mars, and wakes the stones' guardians.</div>
+    <div class="block-title">The Grove Lights speak only in riddles</div>
+    <p style="font-size:0.8em">Sparks of the old sun god, each wearing the voice of someone killed at the altar. Repeat a riddle if asked; never explain one. Religion DC 13: "Grove-lights. The north tribes say the sun leaves pieces of itself where the dead are owed something."</p>
+    <table>
+      <tr><td class="k">The Small One<br><span style="color:#888">circles the boy</span></td><td class="v"><em>"Where they took me, the oaks stand old. My bones still wait where the knife was cold."</em><br>Hums Hild's lullaby, one line at a time, if anyone listens.</td></tr>
+      <tr><td class="k">The Old Völva<br><span style="color:#888">Thusnelda's teacher</span></td><td class="v"><b>&rarr; South Grove (pays off today):</b> <em>"Seven stones stand south and drink. A man who pours himself into a cup does not break the cup; he only fills it. Tell my student the stones were never ours."</em><br><span style="color:#888">Quoted back to Thusnelda = evidence.</span></td></tr>
+      <tr><td class="k">The Warrior<br><span style="color:#888">fed to the bog</span></td><td class="v"><b>&rarr; Entrance (pays off today):</b> <em>"A snake made of a thousand backs waits at the foot of the stair. It bites from two strides off. Walk the stair apart, not in a line, and break the small bones with stone, not steel."</em><br><span style="color:#888">= reach 10 ft · Lightning Bolt hits a line · skeletons hate bludgeoning.</span></td></tr>
+      <tr><td class="k">The Old Völva<br><span style="color:#888">second riddle</span></td><td class="v"><b>&rarr; next session (Sun-Path braziers):</b> <em>"Wake my fires in the order of my life: born, tallest, bleeding, asleep."</em> (E, S, W, N; same as the lullaby.)</td></tr>
+      <tr><td class="k">All of them<br><span style="color:#888">as the party leaves</span></td><td class="v"><em>"The king below has refused to die a thousand times; only a sun-blessed blade can make him accept. The god below sits in four iron arms that wait to close. And the chair beside him is never empty for long."</em> (finale foreshadowing)</td></tr>
+    </table>
   </div>
+  <div class="block">
+    <div class="block-title">How the lights turn</div>
+    <ul>
+      <li><b>Box within 30 ft:</b> the lights shrink back. One goes cold and hungry: Insight DC 13 spots it leading someone off the path into a sinkhole (DC 13 Dex or 2d6 bludgeoning, prone).</li>
+      <li><b>Help them</b> (Rite of Rest, or a prayer at the shrine): the Völva's light settles on a second weapon = Belatucadrus blessing, no prayer needed.</li>
+      <li><b>Attack them or follow the lure:</b> 1-2 hostile wisps.</li>
+    </ul>
+  </div>
+  <div class="who foe">
+    <span class="who-name">Will-o'-Wisp</span><span class="who-tag">CR 2 · AC 19 · HP 22 · fly 50 (hover) · only if they turn</span>
+    <p><b>Shock</b> +4, 2d8 lightning. <b>Consume Life</b> (bonus): creature at 0 HP within 5 ft, DC 10 Con or dies. <b>Invisibility</b> at will. Resist most damage incl. nonmagical B/P/S; immune lightning, poison.</p>
+  </div>
+  <div class="who foe">
+    <span class="who-name">The boy turns (if attacked or abandoned)</span><span class="who-tag">Specter · AC 12 · HP 22</span>
+    <div class="ra">His mouth opens wider than a mouth should, and bog water pours out in a scream.</div>
+    <p><b>Shriek:</b> DC 13 Wis or Frightened 1 min. <b>Life Drain</b> +4, 3d6 necrotic, DC 10 Con or max HP drops. Incorporeal. Sunlight: disadvantage.</p>
+  </div>
+  <div class="block">
+    <div class="block-title">Rewards here</div>
+    <ul>
+      <li>Rite of Rest, all four: <b>ALL corruption cleared</b> for everyone present + Myling's Rest.</li>
+      <li>Shrine prayer: Belatucadrus blessing (1 weapon). Helping the lights: a second weapon.</li>
+      <li>Two riddles and the bones/cauldron = <b>evidence</b> for the South Grove.</li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ═══════════════════ SOUTH GROVE ═══════════════════ -->
+<div id="tab-south" class="tab-pane">
+<div class="setup-line"><span class="lbl">Map:</span> <span class="file">s4_sacred_grove.html</span> (seven-stone ring; no separate South map exists yet) &nbsp; <span class="lbl">Tokens:</span> <span class="tok">Thusnelda</span> · Stone Golem ×2 (only if the clock runs out) · 5 PCs &nbsp; <span class="lbl">Who's here:</span> Thusnelda.</div>
+<div class="grid2">
+<div>
+  <div class="block">
+    <div class="block-title">Arrival (read aloud)</div>
+    <div class="ra">South of the village the oaks give way to birch and then to nothing. Seven standing stones in a ring, carved with marks that look old until you look closer. In the centre, a flat stone stained dark. Thusnelda stands on it barefoot, the flint knife in his hand. He looks at the box, not at you. "Put the spear on the stone. My blood breaks it, and the war ends with me."</div>
+    <p style="font-size:0.8em;color:#888"><b>If he came with them:</b> he walks in first, kneels, and opens his own wrist before anyone can stop him. <b>If he went alone:</b> he has been bleeding a while; his hands shake.</p>
+    <p class="now"><strong>Dramatic Question:</strong> Can they prove to a wise man he is wrong, before the stones wake?</p>
+  </div>
+  <div class="clock"><strong>What he believes:</strong> spear on the centre stone + his willing blood = the spear unmade.<br><strong>The truth:</strong> the chieftains cut these stones. Blood on them <b>feeds</b> Mars and wakes the stones' guardians.</div>
   <div class="block">
     <div class="block-title">The clock: the stones wake</div>
     <table>
-      <tr><td class="k">Start</td><td class="v"><span class="warn">3 rounds</span> from the moment they enter the ring. Each round the stones grind louder; dust falls from two of them.</td></tr>
+      <tr><td class="k">Start</td><td class="v"><span class="warn">3 rounds</span> from entering the ring (<span class="warn">2</span> if the village shut them out or he went alone). Each round the stones grind louder.</td></tr>
       <tr><td class="k">Spear on the stone</td><td class="v">Clock drops to <span class="warn">1 round</span>. The box screams. Mars notices (finale: he starts with War Cry recharged).</td></tr>
-      <tr><td class="k">Figure it out</td><td class="v">Any one: <b>Religion/History DC 14</b> (TIWAZ war-marks cut over old sun-marks: feeding, not unmaking) · <b>Arcana DC 14</b> (power flows <em>into</em> the stone) · the <b>boy's bones</b> or a <b>wisp riddle</b> quoted back to him · Vercingetorix's secret is in the finale, not here.</td></tr>
-      <tr><td class="k">Stop him</td><td class="v">Evidence: <b>Persuasion DC 14, advantage</b> · words only DC 18 · grab him: Athletics DC 13. Box within 30 ft: Persuasion at disadvantage.</td></tr>
-      <tr><td class="k">Clock runs out</td><td class="v">2 <b>Stone Golems</b> tear loose from the ring. They <b>cannot leave the ring</b> (30 ft past the stones): this is a run, not a fight. Drag Thusnelda out or he dies.</td></tr>
+      <tr><td class="k">Figure it out (any one)</td><td class="v">Religion/History DC 14 (TIWAZ war-marks cut over old sun-marks) · Arcana DC 14 (power flows <em>into</em> the stone) · the cauldron marks match.</td></tr>
+      <tr><td class="k">Stop him</td><td class="v">With evidence (boy's bones, cauldron, Völva riddle): <b>Persuasion DC 14, advantage</b> · words only: DC 18 · grab him: Athletics DC 13 contest. Box within 30 ft: Persuasion at disadvantage. Village "Welcomed": +2.</td></tr>
+      <tr><td class="k">Clock runs out</td><td class="v">2 <b>Stone Golems</b> tear loose. They <b>cannot leave the ring</b> (30 ft past the stones). Run, don't fight. Drag Thusnelda out or he dies.</td></tr>
     </table>
   </div>
+  <div class="who foe">
+    <span class="who-name">Stone Golem ×2</span><span class="who-tag">only if the clock runs out · AC 17 · HP 178 · speed 30</span>
+    <p><b>Slam ×2</b> +10, 3d8+6 bludgeoning. <b>Slow</b> (recharge 5-6): 10 ft, DC 17 Wis or no reactions, half speed, one action or bonus action, 1 min. Magic Resistance; immune poison, psychic, nonmagical B/P/S. <span class="warn">Bound to the ring.</span></p>
+  </div>
+</div>
+
+<div>
+  <div class="who">
+    <span class="who-name">Thusnelda at the stones</span><span class="who-tag">his lines, in the order you'll need them</span>
+    <div class="say">(arrival) "I have read the omens in this forest for twenty years. I was right every time. I am right now."</div>
+    <div class="say">(they hesitate) "Every day you carry it, it eats a little more of you. I can see it in your faces. Put it down."</div>
+    <div class="say">(they say it's a trap, no proof) "The gods do not lie to me, Roman. Men do."</div>
+    <div class="say">(shown the bones / told of the altar) "Under the north oaks? No. No, they told us the bog..." (the knife lowers an inch) "They sang over him. I heard singing, that night. I thought it was a wedding."</div>
+    <div class="say">(the Völva's riddle quoted back) "That is her. That is how she spoke." (quietly) "The stones were never ours."</div>
+    <div class="say">(stones start grinding) "Listen. They're... hungry. Why are they hungry?"</div>
+    <div class="say">(convinced) "Then I was feeding it. For twenty years, I fed it." (he lets them take the knife)</div>
+    <div class="say">(dragged out, golems loose) "Leave me! Leave me, I've earned it!" (then, outside the ring, shaking) "...Thank you."</div>
+    <div class="say">(dying, if they fail) "Tell Hild... tell her I was trying."</div>
+  </div>
   <div class="block">
-    <div class="block-title">Stone Golem ×2 (only if the clock runs out)</div>
+    <div class="block-title">Outcomes</div>
     <table>
-      <tr><td class="k">AC 17 · HP 178</td><td class="v">Speed 30, Magic Resistance, Immutable Form, immune poison/psychic &amp; nonmagical BPS</td></tr>
-      <tr><td class="k">Slam ×2</td><td class="v">+10, 3d8+6 bludgeoning</td></tr>
-      <tr><td class="k">Slow (R5-6)</td><td class="v">10 ft, DC 17 Wis: no reactions, half speed, 1 action or bonus action, 1 min</td></tr>
+      <tr><td class="k">Saved, convinced</td><td class="v">He guides them to the dungeon's real entrance ("the skull is the mouth; the cult came and went by it"). Gives his <b>rune-staff</b> (druid/cleric focus, 1/day <em>augury</em>). Knows the Sun-Path prayer. Finale: he can take the guardian's seat. <b>Inspiration</b> to whoever cracked the ritual.</td></tr>
+      <tr><td class="k">Saved, dragged out</td><td class="v">Alive, ashamed, silent. Follows them to the entrance and waits there. No staff until he hears the truth.</td></tr>
+      <tr><td class="k">Dies</td><td class="v">The stones drink. Mars starts the finale with War Cry recharged. The village mourns; Hild will not look at them.</td></tr>
     </table>
   </div>
-  <div class="dec"><b>If saved:</b> "Then I was feeding it. For twenty years, I fed it." He guides them to the skull entrance and knows the Sun-Path prayer. <b>Finale:</b> he is the one who can volunteer for the guardian's seat.</div>
+  <div class="note"><b>Wants vs Secret, for the GM:</b> he never found the cult's temple and took that as a sign to pay in blood. The real dungeon is south past these stones, under the skull-faced hill. Saving him gives the party a guide; losing him feeds the god.</div>
 </div>
 </div>
 </div>
 
-<!-- ═══ WISPS ═══ -->
-<div id="tab-wisps" class="tab-pane">
-<div class="block">
-  <div class="block-title">The Grove Lights (Will-o'-Wisps) &nbsp;<span style="color:#888;font-size:0.85em">North of the village, where the boy was sacrificed · RP first, fight only if provoked</span></div>
-  <div class="ra">Between the oaks, small lights drift at head height. Pale gold, not fire. When you stop, they stop. When you speak, one of them answers in a voice that is almost a person's.</div>
-  <p style="font-size:0.85em"><b>What they are:</b> sparks of Belatucadrus, the old sun god of this grove, each wearing the voice of someone who died at the altar. The cult's blood rites have starved them: they are fading, and the hungry ones are turning into lures. <b>Religion DC 13:</b> "Grove-lights. The northern tribes say the sun leaves pieces of itself where the dead are owed something."</p>
-</div>
-<div class="grid2">
-<div class="block">
-  <div class="block-title">They speak only in riddles (each answer pays off later)</div>
-  <table>
-    <tr><td class="k">The Small One<br><span style="color:#888">circles the boy</span></td><td class="v"><em>"Where they took me, the oaks stand old. My bones still wait where the knife was cold."</em><br>&rarr; leads to the boy's altar in the North grove. Hums his mother's song.</td></tr>
-    <tr><td class="k">The Old Völva<br><span style="color:#888">Thusnelda's teacher</span></td><td class="v"><em>"I am born where the boar-tusk points at dawn, I stand tallest where your shadow is shortest, I bleed out where the ravens roost at dusk, and I sleep in the house of the cold star. Wake my fires in the order of my life, and what hides from me goes blind."</em><br>&rarr; <b>Sun-Path braziers</b> (Scene 8): E, S, W, N. (Nature/Survival DC 12 if stuck: noon shadow points north; the cold star is the pole star.)<br><em>"Three skulls, three marks. The first is the herd a rich man counts. The second is the spear a proud man lifts. The third is the hearth a dead child asks for. Feed the hungry door the thing it stole."</em><br>&rarr; <b>Ossuary niches</b> (Scene 5): FEHU = herd, TIWAZ = spear, <b>OTHALAN</b> = hearth/home.</td></tr>
-    <tr><td class="k">The Warrior<br><span style="color:#888">fed to the bog</span></td><td class="v"><em>"First the thaw-water under the ice, then the leaf that drinks it, then the straw that the leaf becomes, then what we poured on the straw when the harvest failed. The iron door counts our year that way and no other."</em><br>&rarr; <b>Rune Lock</b> (Scene 7): blue (thaw), green (leaf), yellow (straw), red (blood).<br><em>"Below, a dog with a clerk's hands keeps a ledger of wishes. Every page has a different wish and the same price written at the bottom. Read the bottom first."</em><br>&rarr; <b>Glabrezu's bargain</b> (Scene 9b): every offer costs the spear.</td></tr>
-    <tr><td class="k">All three, together<br><span style="color:#888">as the party leaves</span></td><td class="v"><em>"The king below has died a thousand times and refused each one; only a blade that has been blessed by the sun can make him accept. The god below sits in four iron arms that wait to close. And the chair beside him is never empty for long: someone always chooses to sit."</em><br>&rarr; finale: blessed weapon beats Relentless; the 4 winches; someone takes the guardian's seat.</td></tr>
-  </table>
-  <p style="font-size:0.8em;color:#888">Religion DC 13: "Grove-lights. The north tribes say the sun leaves pieces of itself where the dead are owed something." Repeat a riddle if asked; never explain one. If the table is fully stuck for 10+ minutes, give the bracketed check.</p>
-</div>
-<div>
-<div class="block">
-  <div class="block-title">How it turns</div>
-  <ul>
-    <li><b>Box within 30 ft:</b> the lights dim and shrink back. One goes cold and hungry: Insight DC 13 spots it trying to lead someone off the path into the mire.</li>
-    <li><b>Help them</b> (lay the boy to rest, or a Cleric/Druid prays at the shrine): the Völva's light settles on one weapon. It counts as the <b>Belatucadrus blessing</b> without the 10-minute prayer.</li>
-    <li><b>Attack them or ignore the hungry one's lure:</b> 1-2 hostile wisps (below).</li>
-  </ul>
-</div>
-<div class="block">
-  <div class="block-title">Will-o'-Wisp — CR 2 (if it turns)</div>
-  <table>
-    <tr><td class="k">AC 19 · HP 22</td><td class="v">Fly 50 hover, Incorporeal, Ephemeral, Variable Illumination; resist acid, cold, fire, necrotic, thunder, nonmagical BPS; immune lightning, poison</td></tr>
-    <tr><td class="k">Shock</td><td class="v">+4, 2d8 lightning (melee spell)</td></tr>
-    <tr><td class="k">Consume Life (bonus)</td><td class="v">Creature at 0 HP within 5 ft: DC 10 Con or dies; wisp regains 3d6 HP</td></tr>
-    <tr><td class="k">Invisibility</td><td class="v">At will, concentration</td></tr>
-  </table>
-</div>
-</div>
-</div>
-</div>
-
-<div id="tab-s0" class="tab-pane">
+<!-- ═══════════════════ ENTRANCE ═══════════════════ -->
+<div id="tab-entrance" class="tab-pane">
+<div class="setup-line"><span class="lbl">Map:</span> <span class="file">SkeletonFortressEntrancePublic.jpg</span> &nbsp; <span class="lbl">Tokens:</span> <span class="tok">Bone_Naga</span> ×2 · <span class="tok">Skeleton</span> ×4 · <span class="tok">Thusnelda</span> (at the mouth, if saved) · 5 PCs</div>
 <div class="grid2">
 <div>
   <div class="block">
-    <div class="block-title">Scene 4 — The Skull Entrance ★ COMBAT &nbsp;<span style="color:#555;font-size:0.85em">map: SkeletonFortressEntrancePublic.jpg</span></div>
-    <div class="ra">The offering trail ends before the gaping mouth of the colossal skull. Cold air pours out like the breath of a tomb: embalming oil, limestone dust, old blood. A raspy clatter echoes up the stairwell as vertebrae grind on wet basalt. Out of the gloom slide two shapes, serpents built from bleached human spines with fanged skulls, their empty eye sockets lighting green.</div>
+    <div class="block-title">Arrival (read aloud)</div>
+    <div class="ra">Past the stones, the ground rises into a limestone hill carved into a colossal skull. The offering trail ends at its open mouth. Cold air pours out like the breath of a tomb: embalming oil, stone dust, old blood. Somewhere below, vertebrae grind on wet basalt. Out of the dark at the foot of the stair slide two shapes: serpents built from human spines, fanged skulls, green fire where the eyes were.</div>
     <p class="now"><strong>Dramatic Question:</strong> Can they force the stair before they're pinned on it?</p>
   </div>
   <div class="block">
-    <div class="block-title">Before / around the fight</div>
+    <div class="block-title">Before and around the fight</div>
     <ul>
-      <li><strong>DC 13 Investigation</strong> at the archway: cult markings around the teeth match the marsh cloth. Third confirmation: right place.</li>
-      <li><strong>Terrain:</strong> stair is <strong>two abreast</strong>. Nagas wait at the base. Retreat up the stair and the Skeletons come in behind.</li>
-      <li>Thusnelda (if saved) won't go in. He waits at the mouth.</li>
+      <li><b>Investigation DC 13</b> at the teeth: cult marks match the cloth from the Farbog and the cauldron. This is the real way in.</li>
+      <li><b>Terrain:</b> the stair is <b>two abreast</b>. Nagas wait at the foot. Retreat up the stair and the Skeletons close in behind.</li>
+      <li><b>Thusnelda</b> (if saved) won't go in. He sits at the mouth, singing low.</li>
+      <li>The Warrior wisp's riddle (North Grove) tells them all of this. Reward players who remember it.</li>
     </ul>
   </div>
-  <div class="dec"><strong>Danger:</strong> the stair is a perfect line for Lightning Bolt. Use it once, when 3+ PCs bunch up, and let them see it coming (the Naga rears back and the air crackles).</div>
+  <div class="dec"><b>Danger:</b> the stair is a perfect line for Lightning Bolt. Use it once, when 3+ PCs bunch up, and let them see it coming: the Naga rears back and the air crackles.</div>
+  <div class="who">
+    <span class="who-name">Thusnelda at the mouth</span><span class="who-tag">if saved</span>
+    <div class="say">"I searched three months for this door. It was behind the stones the whole time. Behind the thing I was going to die on."</div>
+    <div class="say">"I will not go down. Someone must be here to sing you back up."</div>
+  </div>
+  <div class="block">
+    <div class="block-title">Session ends here</div>
+    <div class="ra">The last bone serpent comes apart on the steps. In the silence you hear it: far below, a slow pulse, like a heart that has been starving for a very long time. The stair goes down into the dark.</div>
+    <p style="font-size:0.82em"><b>Loot under the stair:</b> 32 denarii, a silver torc (25 gp), a cult tally stick with OTHALAN marks. Short rest at the mouth.</p>
+  </div>
 </div>
 <div>
   <div class="who foe">
     <span class="who-name"><a href="https://www.dndbeyond.com/monsters/16812-bone-naga" target="_blank" style="color:#aac8ff;">Bone Naga</a> ×2</span><span class="who-tag">CR 4 · AC 15 · HP 58 each · speed 30</span>
-    <p><b>Look:</b> Long serpents of human vertebrae, a fanged serpent skull, green fire in the sockets. They taste of ash when they get close.</p>
-    <p><b>What they want:</b> Keep anyone out of the Ossuary. The chieftains sorted those bones by hand as devotion and put the Nagas here so the order would never be disturbed. Dormant until something moves on the stair.</p>
-    <p><b>How they fight:</b> <b>Bite</b> +5, <b>reach 10 ft</b>, 1d6+3 piercing + 3d6 poison. Spells (DC 12, +4): <em>ray of frost</em> (cantrip, slows 10 ft), <em>sleep</em>, <em>charm person</em>, <b>hold person</b> (2/day), <b>lightning bolt</b> (1/day, 8d6, DC 12 Dex half).</p>
-    <p><b>Tactics:</b> Round 1: Hold Person on whoever leads down the stair, so the line behind is stuck. Bite from 10 ft so they never need to step into the stair. Lightning Bolt up the stair when the party bunches. Second Naga charms or sleeps a healer.</p>
-    <p><b>Tough spots:</b> Immune poison; can't be charmed, paralyzed, poisoned, or exhausted. Darkvision 60 ft. <span class="warn">Not</span> vulnerable to bludgeoning (only the Skeletons are).</p>
+    <p><b>Look:</b> Long serpents of human vertebrae with a fanged skull, green fire in the sockets. They smell of ash.</p>
+    <p><b>Want:</b> Keep anyone off the stair. The chieftains sorted the bones below by hand as devotion and set the Nagas to guard that order.</p>
+    <p><b>Fight:</b> <b>Bite</b> +5, <b>reach 10 ft</b>, 1d6+3 piercing + 3d6 poison. Spells (DC 12, +4): <em>ray of frost</em>, <em>sleep</em>, <em>charm person</em>, <b>hold person</b> (2/day), <b>lightning bolt</b> (1/day, 8d6, DC 12 Dex half).</p>
+    <p><b>Tactics:</b> Round 1: Hold Person on whoever leads down the stair. Bite from 10 ft so they never step onto it. Lightning Bolt up the line. The second Naga sleeps or charms the healer.</p>
+    <p><b>Tough:</b> Immune poison; can't be charmed, paralyzed, poisoned or exhausted. Darkvision 60 ft. Not vulnerable to bludgeoning.</p>
   </div>
   <div class="who foe">
     <span class="who-name">Skeleton ×4</span><span class="who-tag">CR 1/4 · AC 13 · HP 13 each</span>
-    <p><b>Look:</b> Scattered bones on the steps snap together on <strong>initiative 20</strong>.</p>
-    <p><b>How they fight:</b> Shortsword +4 (1d6+2) or shortbow +4 (80/320, 1d6+2). Mindless: they go behind the party and cut off the retreat up the stair.</p>
-    <p><b>Weak spot:</b> <b>vulnerable to bludgeoning</b>; one mace or warhammer hit usually drops one. Immune poison.</p>
+    <p><b>Look:</b> Scattered bones on the steps snap together on <b>initiative 20</b>.</p>
+    <p><b>Fight:</b> Shortsword +4 (1d6+2) or shortbow +4 (80/320, 1d6+2). They go behind the party and cut off the retreat.</p>
+    <p><b>Weak:</b> <b>vulnerable to bludgeoning</b>; one mace or warhammer hit usually drops one. Immune poison.</p>
   </div>
-  <p class="improv">Bone Naga numbers are the Monster Manual block. chapter4.qmd lists a homebrew version (ray of sickness / ray of enfeeblement, bite 2d6+3 + 4d6 poison, DC 11 Con half). Pick one before the fight.</p>
+  <div class="note"><b>Box:</b> undead sense the party at double range. <span class="warn">No surprise</span> on this fight, whatever the Stealth rolls.</div>
 </div>
-</div>
-</div>
-
-<!-- ═══ OSSUARY ═══ -->
-<div id="tab-s1s2" class="tab-pane">
-<div class="block">
-  <div class="block-title">Scene 5 — The Ossuary &nbsp;<span style="color:#888;font-size:0.85em">safe room · short rest after</span></div>
-  <div class="ra">The room is round, its far wall another skull, teeth picked out in inlaid bone. The floor is a carpet of femurs and ribs. Not scattered. Sorted: by size, by age. In the far wall, three niches, each carved with one rune. On the low altar in the middle, one small bundle of bones that nobody bothered to sort.</div>
-</div>
-<div class="grid2">
-<div>
-  <div class="block">
-    <div class="block-title">The boy</div>
-    <p style="font-size:0.85em">Already laid to rest at the grove altar (Scene 3)? Nothing here for him. Still carrying him? He whimpers at the sorted bones and wants to go back north.</p>
-  </div>
-</div>
-<div>
-  <div class="block">
-    <div class="block-title">Puzzle: Three Niches (the way down)</div>
-    <table>
-      <tr><td class="k">Runes</td><td class="v">ᚠ FEHU (wealth) · ᛏ TIWAZ (war-god) · ᛟ OTHALAN (home)</td></tr>
-      <tr><td class="k">Answer</td><td class="v"><strong>OTHALAN</strong>: bone offering in it, the skull's jaw grinds open onto the stair. The cult's work is the theft of home.</td></tr>
-      <tr><td class="k">Clue 1</td><td class="v">The boy's only word: "Home."</td></tr>
-      <tr><td class="k">Clue 2</td><td class="v">They already carry OTHALAN: amber token, the scorch on the box, the Farbog bone token.</td></tr>
-      <tr><td class="k">Clue 3</td><td class="v">DC 13 Religion/History: tally sticks have OTHALAN over every name.</td></tr>
-      <tr><td class="k">Wrong</td><td class="v">2 Skeletons assemble, try again. TIWAZ: box hums loud, everything below knows.</td></tr>
-    </table>
-    <div class="clue">Wax tablet in a niche: "<em>sow, grow, reap, bleed</em>" (Rune Lock clue).</div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- ═══ SCENES 6-8 ═══ -->
-<div id="tab-s3s4" class="tab-pane">
-<div class="grid2">
-<div>
-<div class="block">
-  <div class="block-title">6 — Blood-Growth Room <span style="color:#888;font-size:0.85em">(cuttable)</span></div>
-  <div class="ra">Dark red matter, wet and veined, has grown over the walls. At the centre it rises into a pillar, and inside it something with too many limbs turns over in its sleep. The pillar pulses faster now that you are here.</div>
-  <table>
-    <tr><td class="k">Clock</td><td class="v"><span class="warn">3 rounds.</span> Start of round 4, pillar standing: it tears free, +40 HP, speed 30, Mist Form.</td></tr>
-    <tr><td class="k">Pillar</td><td class="v">AC 10, 30 HP, vuln fire &amp; radiant. Broken = Yochlol HP halved, never hatches. Brazier stands outside the door.</td></tr>
-    <tr><td class="k"><a href="https://www.dndbeyond.com/monsters/17068-yochlol" target="_blank" style="color:#aac8ff;">Yochlol</a> (rooted)</td><td class="v">HP 68, AC 15, reach 10, 2 Slam +6 (1d6+2 + 6d6 poison), Web DC 14, Magic Resist</td></tr>
-    <tr><td class="k">2 Dretch</td><td class="v">HP 18, AC 11, Fetid Cloud DC 11 Con</td></tr>
-    <tr><td class="k">DC 14 Arcana</td><td class="v">"The pillar is the womb. Burn the womb."</td></tr>
-  </table>
-</div>
-<div class="block">
-  <div class="block-title">7 — Rune Lock</div>
-  <table>
-    <tr><td class="k">Solution</td><td class="v">Blue &rarr; Green &rarr; Yellow &rarr; Red ("sow, grow, reap, bleed")</td></tr>
-    <tr><td class="k">Clues</td><td class="v">Finger-wear deepest on blue (Inv DC 12) · Ossuary wax tablet · Nature DC 13: marsh seasons, red = Farbog water</td></tr>
-    <tr><td class="k">Failure</td><td class="v">DC 12 Dex or 2d6 force, resets. No lockout.</td></tr>
-  </table>
-</div>
-</div>
-<div>
-<div class="block">
-  <div class="block-title">8 — Minor Altar: the Sun-Path <span style="color:#888;font-size:0.85em">(cuttable)</span></div>
-  <div class="ra">Four square pillars ring a low dais. A cold iron brazier at each point of the compass. The dark between the pillars sits too thick, and it moves when you do not.</div>
-  <table>
-    <tr><td class="k">Solution</td><td class="v">Light braziers <strong>East &rarr; South &rarr; West &rarr; North</strong> (the sun's course). 1 action each.</td></tr>
-    <tr><td class="k">Success</td><td class="v">Gold light floods the room: bright light. Demons disadv. on attacks, no Shadow Stealth.</td></tr>
-    <tr><td class="k">Wrong order</td><td class="v">All gutter out; demons get advantage on next attack. Restart.</td></tr>
-    <tr><td class="k">Clues</td><td class="v">Shrine Sun-Path carving (Scene 2) · Thusnelda's prayer if saved · Inv DC 13: east soot thickest</td></tr>
-    <tr><td class="k">Shortcut</td><td class="v">Belatucadrus-blessed weapon touched to any brazier lights all four.</td></tr>
-    <tr><td class="k">3 Shadow Demon</td><td class="v">HP 66, AC 13, Claws +5 2d6+3 psychic (4d6+3 w/ adv), vuln radiant, incorporeal</td></tr>
-  </table>
-</div>
-</div>
-</div>
-</div>
-
-<!-- ═══ SCENE 9a ═══ -->
-<div id="tab-s5" class="tab-pane">
-<div class="block">
-  <div class="block-title">9a — The Gathering Hall <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_wraith_chieftain_confession.mp3')">▶ Chieftain Confession</button></div>
-  <div class="ra">Rows of worn stone where dozens once knelt, facing a long table laid with offerings gone black. Two figures at the head of it. Big men once; good Germanic armour hanging on nothing. They turn together. "We asked. It heard us. Why did it hear us?"</div>
-</div>
-<div class="grid2">
-<div class="block">
-  <div class="block-title">Talk first (round 1 is recognition)</div>
-  <table>
-    <tr><td class="k">DC 14 Religion / Persuasion</td><td class="v">They confess: asked Mars for victory over Rome; got strength; paid with the warband, one man at a time, into the bog. Then themselves.</td></tr>
-    <tr><td class="k">Lucius's wooden horse</td><td class="v">Auto-success: one of them carved it for a fostered Roman boy, long ago.</td></tr>
-    <tr><td class="k">DC 15 Intimidation (+2 box)</td><td class="v">One chieftain fades in shame; only one fights.</td></tr>
-    <tr><td class="k">Either</td><td class="v">"The star that drinks" below, and "a fiend that sells what you want most."</td></tr>
-  </table>
-</div>
-<div class="block">
-  <div class="block-title">2 × <a href="https://www.dndbeyond.com/monsters/17064-wraith" target="_blank" style="color:#aac8ff;">Wraith</a> — CR 5</div>
-  <table>
-    <tr><td class="k">HP 67 / AC 13</td><td class="v">Fly 60 hover, Incorporeal, Sunlight Sens.</td></tr>
-    <tr><td class="k">Life Drain</td><td class="v">+6, 4d8+3 necrotic, DC 14 Con or max HP reduced</td></tr>
-    <tr><td class="k">Create Specter</td><td class="v">Violently slain humanoid within 10 ft rises</td></tr>
-    <tr><td class="k">Resist</td><td class="v">acid, cold, fire, lightning, thunder, nonmagical non-silvered BPS · Immune necrotic, poison</td></tr>
-  </table>
-</div>
-</div>
-</div>
-
-<!-- ═══ SCENE 9b ═══ -->
-<div id="tab-s6" class="tab-pane">
-<div class="block">
-  <div class="block-title">9b — The Core Room <button class="audio-btn" onclick="playAudio(this, '../audio/clips/s4_glabrezu_core_entrance.mp3')">▶ Fiend Voice</button></div>
-  <div class="ra">Four stone faces watch from the walls. On a raised dais, a crystal like a broken star burns steady and cold. Beside it squats something huge, four-armed, dog-headed, pincers folded like a clerk's hands. It smiles and speaks good Latin: "Soldiers. You carry something that belongs to my master. I can give you what you want most. Every one of you wants something."</div>
-</div>
-<div class="grid2">
-<div>
-<div class="block">
-  <div class="block-title">The bargain (play it straight)</div>
-  <p style="font-size:0.85em">Ursula: freedom from the axe. Rivia: her box mistake undone. Anyone: citizenship, rank, a dead friend's voice. <strong>Price every time: open the box, leave the spear on the dais.</strong> Insight DC 15: it means every word. Anyone agrees: box opens, that PC +2 corruption, fight to get the spear back.</p>
-</div>
-<div class="block">
-  <div class="block-title">The crystal (Arcana/Religion DC 15)</div>
-  <p style="font-size:0.85em">The cult's real altar. Every drop of blood in the dungeon funnelled here, and down. Absorbs all damage. <strong>Cannot be destroyed tonight.</strong></p>
-</div>
-</div>
-<div class="block">
-  <div class="block-title"><a href="https://www.dndbeyond.com/monsters/16870-glabrezu" target="_blank" style="color:#aac8ff;">Glabrezu</a> — CR 9 (HP 157, AC 17)</div>
-  <table>
-    <tr><td class="k">Multiattack</td><td class="v">2 Pincer (+9, reach 10, 2d10+5, grapple DC 15) + 2 Fist (+9, 2d4+2), or 2 Pincer + spell</td></tr>
-    <tr><td class="k">Spells DC 16</td><td class="v">At will: darkness, detect/dispel magic · 1/day: confusion, fly, power word stun</td></tr>
-    <tr><td class="k">Traits</td><td class="v">Magic Resistance · truesight 120 · resist cold/fire/lightning, nonmagical BPS</td></tr>
-    <tr><td class="k">Tactics</td><td class="v">Darkness over the dais, grab the frontliner. <span class="warn">No power word stun round 1.</span></td></tr>
-  </table>
-</div>
-</div>
-<div class="ho"><strong>★ END OF SESSION — read:</strong> <em>The fiend falls, and the crystal does not go dark. It gets brighter. Cracks spread like frost across a window, each one a note too low to hear, felt in the teeth. The floor is warm. Behind the dais a stair you did not see before goes down into red light. In Rivia's arms the box hums in exactly the same rhythm. Whatever is down there has stopped sleeping.</em> &nbsp;Long rest in the sealed room. <strong>Level 7.</strong> Session 7 opens on the stair (Ch5).</div>
-</div>
-
-<!-- ═══ CAST ═══ -->
-<div id="tab-cast" class="tab-pane">
-<div class="grid2">
-<div>
-  <div class="who">
-    <span class="who-name">Thusnelda, the Völva</span><span class="who-tag">seer · he/him · 60s · at the South stones</span>
-    <p><b>Look:</b> Tall, stooped, barefoot, grey hair braided with small bones and amber. A wolf-pelt over a linen shift stiff with old blood. Pale blue eyes that never quite settle on you; they settle just past you. A flint knife older than the village.</p>
-    <p><b>Voice &amp; manner:</b> Slow, sing-song, never raises his voice. Speaks to the party in careful Latin he hates using. Hums between sentences. Touches the stones as he talks, like greeting old friends.</p>
-    <p><b>Wants:</b> To end the hunger eating his people's future, and to be the one brave enough to pay. <b>Fears:</b> That he has been wrong for twenty years. (He has.)</p>
-    <p><b>Knows:</b> Every omen in this forest for two decades; the Sun-Path prayer; where the skull entrance is.</p>
-    <p><b>Secret:</b> He searched three months for the cult's temple and never found it. He took that as the gods telling him to pay with blood instead.</p>
-    <p><b>Near the box:</b> He looks at it with hunger he doesn't recognise as hunger. Calm talk at disadvantage within 30 ft.</p>
-    <div class="say">"You brought it. Good. Put it on the stone. My blood breaks it, and the war ends with me."</div><div class="say">If convinced: "Then I was feeding it. For twenty years, I fed it."</div>
-  </div>
-  <div class="who">
-    <span class="who-name">Skadi the Healer</span><span class="who-tag">Thusnelda's apprentice · 20s · herb hut</span>
-    <p><b>Look:</b> Small, freckled, sleeves rolled to the elbow, fingers green from crushed herbs. Wears a bone needle in her hair and three pouches on her belt. Bare feet like her master; a fresh burn on one wrist.</p>
-    <p><b>Voice &amp; manner:</b> Quick, practical, no Latin at all; she gestures and draws in the dirt. Watches you while she works, like a scholar taking notes. Laughs at the wrong moments when nervous.</p>
-    <p><b>Wants:</b> To learn everything Thusnelda knows before something happens to him. <b>Fears:</b> Losing her master, and being the one who could have stopped it.</p>
-    <p><b>Knows:</b> She has watched the North grove at night twice: the lights gather at the old altar and hum a child's song. She noticed the marks on the South stones are new, cut over old suns.</p>
-    <p><b>Secret:</b> She never told Thusnelda what she saw at the grove. She was afraid he would forbid her to go back.</p>
-    <p><b>Near the box:</b> Steps back, covers her nose: "It smells like the stones."</p>
-    <div class="say">(drawing a sun in the dirt, then scratching it out) "New marks. Over old ones. He doesn't see."</div><div class="say">"Bring him back. I'll mend whatever he did to himself."</div>
-  </div>
-  <div class="who">
-    <span class="who-name">Edda the Spear-Mother</span><span class="who-tag">old warrior · 50s · counts scars</span>
-    <p><b>Look:</b> Broad, weathered, grey-blonde braids tied with iron rings. A long scar from collarbone to hip that she never covers. Leans on a framea like a walking staff; the spearhead is polished bright.</p>
-    <p><b>Voice &amp; manner:</b> Low, flat, few words. Stares until people look away. Counts on her fingers when she talks about the dead. Spits at the word "Rome" and then apologises, sometimes.</p>
-    <p><b>Wants:</b> To protect the village and its memory through this. <b>Fears:</b> That there is no one left to remember the warband.</p>
-    <p><b>Knows:</b> The chieftains' bargain: they asked the war-god for victory and the South stones were his price. Every man who went to them came back less.</p>
-    <p><b>Secret:</b> Her scar came from a spear "no longer in human hands": she fought beside the Spear of Mars once, and saw what it did to the man carrying it.</p>
-    <p><b>Near the box:</b> Goes white. Backs away, hand on her spear: "Put that down. I have seen what it does to the one who carries it."</p>
-    <div class="say">"Kneel, Roman. Then we talk."</div><div class="say">"Our men went south to those stones as warriors. They came back as something to bury."</div>
-  </div>
-</div>
-<div>
-  <div class="who">
-    <span class="who-name">Arnulf the Firekeeper</span><span class="who-tag">keeps the hearth · 40s · laughs loud</span>
-    <p><b>Look:</b> Barrel-chested, red beard singed short at the ends, soot to the elbows. A string of fire-blackened knucklebones around his neck. Always has a pot on the coals.</p>
-    <p><b>Voice &amp; manner:</b> Booming laugh, sings while he works, tells stories with his whole body. Mocks Romans to their face, then feeds them anyway.</p>
-    <p><b>Wants:</b> To keep the fires and the songs going, because those are the village's memory. <b>Fears:</b> A winter when no one is left to sing.</p>
-    <p><b>Knows:</b> The village lullaby (the boy's song); the old sun-marks on the shrine; the Sun-Path prayer: east, south, west, north.</p>
-    <p><b>Secret:</b> He knows which Roman officer gave the old desecration order. It wasn't Varro.</p>
-    <p><b>Near the box:</b> Stops laughing for the first time. Moves the pot off the fire, slowly.</p>
-    <div class="say">"Sit, eat, Roman. Hungry men make bad decisions."</div><div class="say">(singing) "Sleep, little wolf, the sun walks east to north..."</div>
-  </div>
-  <div class="who">
-    <span class="who-name">Sigrun the Trader</span><span class="who-tag">merchant · 30s · cart by the longhouse</span>
-    <p><b>Look:</b> Sharp-faced, dark braid, good boots, a fox-fur collar. Rings on every finger, each from a different people. A hand-cart piled with bundles under oiled hides, and a small dog that bites.</p>
-    <p><b>Voice &amp; manner:</b> Warm, fast, flattering; switches between Latin, Germanic and Gaulish mid-sentence. Never says no, only "what else have you got?"</p>
-    <p><b>Wants:</b> Information, and the profit that follows it. <b>Fears:</b> Being caught passing news to the wrong side.</p>
-    <p><b>Knows:</b> Every rumour in the region: where the seer went, what the chieftains' men brought back from the stones.</p>
-    <p><b>Secret:</b> She passes news to Vercingetorix's people. If she sees the box, she offers 500 gp on the spot.</p>
-    <p><b>Near the box:</b> Her eyes go to it and stay there. Her price for everything drops 10%, to keep them talking.</p>
-    <div class="say">"For you, soldier, a friend's price. What else have you got?"</div><div class="say">"That box. Whatever is in it, I will give you more gold than your legate sees in a year."</div>
-  </div>
-  <div class="who">
-    <span class="who-name">Hild, the boy's mother</span><span class="who-tag">at the quern · 30s · name is table improv</span>
-    <p><b>Look:</b> Thin, flour to the elbows, a grey shawl, hands that never stop moving on the grindstone. Hasn't cried in months; her eyes are red anyway.</p>
-    <p><b>Voice &amp; manner:</b> Quiet, careful, says exactly what she means. Speaks to the boy as if he were alive and late home for supper.</p>
-    <p><b>Wants:</b> To bury her son properly. <b>Fears:</b> That the chieftains' men are still watching her.</p>
-    <p><b>Knows:</b> His name (Wulf), his lullaby, and that the chieftains took him north to the old altar in the grove.</p>
-    <p><b>Secret:</b> She always knew the bog story was a lie, and kept silent because the chieftains' men were still in the village.</p>
-    <p><b>Near the box:</b> Puts herself between the box and the boy without a word.</p>
-    <div class="say">"They told us the bog took you." (to the boy)</div><div class="say">"He was my Wulf. Lay him with his bones, and sing him down. I can teach you the song."</div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- ═══ TRADE ═══ -->
-<div id="tab-trade" class="tab-pane">
-<div class="block">
-  <div class="block-title">Sigrun's Cart &nbsp;<span style="color:#888;font-size:0.85em">prices in gp (1 aureus = 1 gp, 1 denarius = 1 sp) · she haggles: Persuasion DC 13 = 20% off, DC 18 = 40% off · buys at half</span></div>
-</div>
-<div class="grid2">
-<div>
-<div class="block">
-  <div class="block-title">Healing &amp; consumables</div>
-  <table>
-    <tr><td class="k">Potion of healing (×4)</td><td class="v">50 · 2d4+2</td></tr>
-    <tr><td class="k">Potion of greater healing (×1)</td><td class="v">150 · 4d4+4 · "from a dead Roman's pack"</td></tr>
-    <tr><td class="k">Antitoxin (×2)</td><td class="v">50 · adv. vs poison 1 hr (Bone Naga, Yochlol)</td></tr>
-    <tr><td class="k">Holy water (×3)</td><td class="v">25 · 2d6 radiant to undead/fiends</td></tr>
-    <tr><td class="k">Alchemist's fire (×3)</td><td class="v">50 · 1d4 fire/turn · burns the Yochlol pillar</td></tr>
-    <tr><td class="k">Oil flask (×10)</td><td class="v">1 sp · +5 fire when lit</td></tr>
-    <tr><td class="k">Healer's kit</td><td class="v">5 · 10 uses</td></tr>
-    <tr><td class="k">Skadi's herb bundle</td><td class="v">10 · short rest: +1d4 HP per Hit Die spent</td></tr>
-    <tr><td class="k">Mead / smoked fish / bread</td><td class="v">4 sp / 2 sp / 1 cp · rations 5 sp/day</td></tr>
-  </table>
-</div>
-<div class="block">
-  <div class="block-title">Rare things (one each)</div>
-  <table>
-    <tr><td class="k">Spell scroll: <em>Protection from Evil and Good</em></td><td class="v">75 · vs undead, fiends</td></tr>
-    <tr><td class="k">Spell scroll: <em>Lesser Restoration</em></td><td class="v">150 · cures poison, paralysis</td></tr>
-    <tr><td class="k">Potion of heroism</td><td class="v">180 · 10 temp HP, bless, 1 hr</td></tr>
-    <tr><td class="k">Potion of resistance (necrotic)</td><td class="v">300 · halves Wraith/Wight drain damage</td></tr>
-    <tr><td class="k">Spell scroll: <em>Revivify</em></td><td class="v">500 · she won't say where she got it</td></tr>
-    <tr><td class="k">Sun-disc amulet (Belatucadrus)</td><td class="v">40 · cleric/druid focus; +1 to Religion checks at the shrine</td></tr>
-    <tr><td class="k">Amber OTHALAN charm</td><td class="v">15 · counts as the rune for the Rite of Rest</td></tr>
-  </table>
-</div>
-</div>
-<div>
-<div class="block">
-  <div class="block-title">Weapons, armour, gear</div>
-  <table>
-    <tr><td class="k">Mace / warhammer / maul</td><td class="v">5 / 15 / 10 · bludgeoning vs skeletons</td></tr>
-    <tr><td class="k">Framea / seax / francisca</td><td class="v">5 / 10 / 8 · Germanic spear, knife, throwing axe</td></tr>
-    <tr><td class="k">Silvering a weapon</td><td class="v">100 · beats Wraith/Wight resistance · takes 1 hr</td></tr>
-    <tr><td class="k">Silver-tipped arrows / sling bullets (×20)</td><td class="v">20</td></tr>
-    <tr><td class="k">Germanic round shield</td><td class="v">10 · +2 AC</td></tr>
-    <tr><td class="k">Hide armour / chain shirt</td><td class="v">10 / 50</td></tr>
-    <tr><td class="k">Bear-fur cloak</td><td class="v">10 · adv. vs cold exposure</td></tr>
-    <tr><td class="k">Torches (×10) / hooded lantern</td><td class="v">1 cp each / 5</td></tr>
-    <tr><td class="k">Rope 50 ft / grappling hook / crowbar</td><td class="v">1 / 2 / 2</td></tr>
-    <tr><td class="k">Chalk, mirror, iron spikes (×10)</td><td class="v">1 cp / 5 / 1</td></tr>
-  </table>
-</div>
-<div class="block">
-  <div class="block-title">Barter: what Sigrun wants (the party is short on coin)</div>
-  <table>
-    <tr><td class="k">News of the fort</td><td class="v">a true report = 25 gp credit (it goes straight to Vercingetorix's people)</td></tr>
-    <tr><td class="k">Roman legion gear</td><td class="v">gladius, pilum, lorica pieces: full value</td></tr>
-    <tr><td class="k">Lucius's seal ring</td><td class="v">100 gp credit. Selling it means no Roman authority over Lucius's 4 guards.</td></tr>
-    <tr><td class="k">A citizenship letter</td><td class="v">200 gp credit. Lose that PC's citizenship in the epilogue.</td></tr>
-    <tr><td class="k">The box</td><td class="v">500 gp. Don't.</td></tr>
-  </table>
-</div>
-</div>
-</div>
-</div>
-
-<!-- ═══ REWARDS ═══ -->
-<div id="tab-rewards" class="tab-pane">
-<div class="block">
-  <div class="block-title">Rewards by scene &nbsp;<span style="color:#888;font-size:0.85em">story rewards first, then treasure · coin in Roman money, 1 aureus = 1 gp</span></div>
-  <table>
-    <tr><td class="k">Village</td><td class="v">Goodwill (jobs, bringing the boy home): adv. on village Persuasion, free food and beds, Skadi's free healing. Edda, if humbled: gives her old <b>framea +1</b> ("it was my husband's; it has killed better things than you").</td></tr>
-    <tr><td class="k">North: Rite of Rest</td><td class="v">All four in order: <b>every PC loses ALL corruption</b>; carrier gets <b>Myling's Rest</b>. Partial: Myling's Rest only.</td></tr>
-    <tr><td class="k">North: shrine &amp; wisps</td><td class="v"><b>Belatucadrus blessing</b> on one weapon (magical; beats Vercingetorix's Relentless). Helping the wisps: the Völva's light blesses a second weapon.</td></tr>
-    <tr><td class="k">South: Thusnelda saved</td><td class="v">He guides them to the skull; knows the Sun-Path; gives his <b>rune-staff</b> (druid/cleric focus, 1/day <em>augury</em> for its holder). In the finale he can take the guardian's seat. Figuring out the false ritual: <b>inspiration</b> for whoever cracked it.</td></tr>
-    <tr><td class="k">Skull Entrance</td><td class="v">Offerings under the stair: <b>32 denarii</b>, a <b>silver torc</b> (25 gp), a cult tally stick (OTHALAN marks).</td></tr>
-    <tr><td class="k">Ossuary</td><td class="v">Behind the OTHALAN niche: a <b>potion of healing</b> and a cultist's wax tablet ("sow, grow, reap, bleed"). Short rest.</td></tr>
-    <tr><td class="k">Blood-Growth</td><td class="v">Pillar burned before hatching: inside, a <b>blood-amber shard</b> (50 gp; also a component: a caster can use it once for advantage on one save vs necrotic).</td></tr>
-    <tr><td class="k">Rune Lock</td><td class="v">Behind the door, a cultist's satchel: <b>scroll of Lesser Restoration</b>, 12 aurei.</td></tr>
-    <tr><td class="k">Minor Altar</td><td class="v">Solved with the Sun-Path: one brazier holds a still-burning <b>sun-ember</b> (works as a <em>light</em> cantrip that counts as sunlight for 1 hour, once). Demons beaten: <b>2 potions of healing</b> on the altar.</td></tr>
-    <tr><td class="k">Gathering Hall</td><td class="v">Chieftains confessed: their <b>grave goods</b>: a gold arm-ring (100 gp), a war-horn (once, as an action: allies within 30 ft gain 1d6 temp HP), and a <b>+1 seax</b>. Fought instead: half the coin, no horn.</td></tr>
-    <tr><td class="k">Core Room</td><td class="v">The Glabrezu's ledger-chest: <b>180 aurei</b>, a <b>cloak of protection</b>, a <b>potion of greater healing</b>. Refusing every bargain: <b>inspiration</b> for the whole party. Long rest, <b>Level 7</b>.</td></tr>
-  </table>
-</div>
-</div>
-
-<!-- ═══ NPCS ═══ -->
-<div id="tab-npcs" class="tab-pane">
-<div class="grid2">
-<div>
-  <div class="block">
-    <div class="block-title">Thusnelda (Völva Seer)</div>
-    <div class="setup-line"><strong>O:</strong> End the divine hunger consuming his clan's future</div>
-    <div class="setup-line"><strong>G:</strong> Complete self-sacrifice at the stone circle</div>
-    <div class="setup-line"><strong>A:</strong> Bleeding since dawn; 3 rounds to fatal cut; yields to evidence</div>
-    <div class="setup-line"><strong>S:</strong> Cult rites poisoned the spirit land; his sacrifice would do nothing</div>
-  </div>
-  <div class="block">
-    <div class="block-title">The Bone Nagas &amp; Skeletons</div>
-    <div class="setup-line"><strong>O:</strong> Guard the skull entrance into the Ossuary</div>
-    <div class="setup-line"><strong>G:</strong> Bottleneck and destroy intruders on the narrow stair</div>
-    <div class="setup-line"><strong>A:</strong> Hold Person the stair leader, Lightning Bolt the line; 4 Skeletons rise on init 20</div>
-    <div class="setup-line"><strong>S:</strong> Chieftains sorted the Ossuary bones by hand; Nagas guard that order. Only the Skeletons are vulnerable to bludgeoning.</div>
-  </div>
-</div>
-<div>
-  <div class="block">
-    <div class="block-title">The Two Chieftains (Wraiths)</div>
-    <div class="setup-line"><strong>O:</strong> Feed the war-god who could give lasting victories</div>
-    <div class="setup-line"><strong>G:</strong> Bound to the altar, tragic remnants reliving their sacrifice</div>
-    <div class="setup-line"><strong>A:</strong> Mournful, enraged by their betrayal; Sunlight Sensitivity</div>
-    <div class="setup-line"><strong>S:</strong> Confesses that Mars demanded endless blood and gave only starvation</div>
-  </div>
-  <div class="block">
-    <div class="block-title">Glabrezu (Core Room Guardian)</div>
-    <div class="setup-line"><strong>O:</strong> Safeguard the starvation focus binding the lower vaults</div>
-    <div class="setup-line"><strong>G:</strong> Siphon mortal lives into the subterranean conduit</div>
-    <div class="setup-line"><strong>A:</strong> Opens with Darkness over dais; grapples front-liners</div>
-    <div class="setup-line"><strong>S:</strong> Focus cannot break from above; Mars's anchor lies beneath</div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- ═══ MAPTOOL ═══ -->
-<div id="tab-server" class="tab-pane">
-<div class="block">
-  <div class="block-title">Build command</div>
-  <div class="cmd">bash Maptool/maps/build_campaign_maps.sh</div>
-  <p style="font-size:0.82em;color:#999;margin-top:4px">Copies all 3 maps and creature tokens into <code>S4_The_Gods_Demand/</code>. See <code>gm_tools/chapter04_maptool.qmd</code> for the full scene-by-scene table.</p>
 </div>
 </div>
 
