@@ -325,25 +325,25 @@
     <div class="ra" style="color:#d8c8a0"><em>"Sleep, little wolf, the sun walks round:<br>up in the east, high in the south,<br>down in the west, and home in the north to sleep."</em></div>
     <div style="font-size:0.8em;margin:4px 0">
       <button class="tune-btn" onclick="playLullaby(this)" style="background:#2a2440;color:#c8b8f0;border:1px solid #8a7ab0;border-radius:4px;padding:2px 10px;cursor:pointer">&#9835; Play the tune</button>
-      <span style="color:#888">slow 6/8 rock, D minor (Dorian), hum it once before singing</span>
+      <span style="color:#888">to the tune of <b>Brahms' Lullaby</b> ("Lullaby and good night" / <em>Guten Abend, gut' Nacht</em>, a German cradle song): same opening, same ending, the middle bent to follow the sun. Slow 3/4, C major.</span>
       <table style="margin-top:4px;font-family:monospace">
-        <tr><td class="k">Sleep, lit-tle wolf,</td><td class="v">A~ G F- E~</td></tr>
-        <tr><td class="k">the sun walks round:</td><td class="v">D F- E D~~</td></tr>
-        <tr><td class="k">up in the east,</td><td class="v">D E F A~ <span style="color:#888">(climbs: sunrise)</span></td></tr>
-        <tr><td class="k">high in the south,</td><td class="v">A B C' D'~ <span style="color:#888">(top note: noon)</span></td></tr>
-        <tr><td class="k">down in the west,</td><td class="v">C' A G F~ <span style="color:#888">(falls: sunset)</span></td></tr>
-        <tr><td class="k">and home in the north to sleep.</td><td class="v">E F- E D C- D D~~~ <span style="color:#888">(lowest: night)</span></td></tr>
+        <tr><td class="k">Sleep, lit-tle wolf, the sun</td><td class="v">E E G~ E E G~ <span style="color:#888">("Lul-la-by and good night")</span></td></tr>
+        <tr><td class="k">walks round:</td><td class="v">C'- B A~</td></tr>
+        <tr><td class="k">up in the east,</td><td class="v">D E F- A~ <span style="color:#888">(climbs: sunrise)</span></td></tr>
+        <tr><td class="k">high in the south,</td><td class="v">G B C'- D'~ <span style="color:#888">(top note: noon)</span></td></tr>
+        <tr><td class="k">down in the west,</td><td class="v">C'- A G F~ <span style="color:#888">(falls: sunset)</span></td></tr>
+        <tr><td class="k">and home in the north to sleep.</td><td class="v">E C- F E D D C~~~ <span style="color:#888">(Brahms' last line, ends lowest: night)</span></td></tr>
       </table>
-      <span style="color:#888">~ = hold · - = a little longer · ' = high octave. The shape of the tune <b>is</b> the clue: up, top, down, bottom = E, S, W, N.</span>
+      <span style="color:#888">~ = hold · - = a little longer · ' = high octave. The shape of the tune <b>is</b> the clue: up, top, down, bottom = E, S, W, N. Hum "Lullaby and good night" to find the start.</span>
     </div>
     <script>
     function playLullaby(btn){
       const AC=window.AudioContext||window.webkitAudioContext; if(!AC) return;
-      const ctx=new AC(); const e=0.34; let t=ctx.currentTime+0.1;
+      const ctx=new AC(); const e=0.3; let t=ctx.currentTime+0.1;
       const F={C4:261.63,D4:293.66,E4:329.63,F4:349.23,G4:392.0,A4:440.0,B4:493.88,C5:523.25,D5:587.33};
-      const tune=[['A4',3],['G4',1],['F4',2],['E4',3],['D4',1],['F4',2],['E4',1],['D4',5],[null,1],
-        ['D4',1],['E4',1],['F4',1],['A4',3],['A4',1],['B4',1],['C5',1],['D5',3],
-        ['C5',1],['A4',1],['G4',1],['F4',3],['E4',1],['F4',2],['E4',1],['D4',1],['C4',2],['D4',1],['D4',6]];
+      const tune=[['E4',1],['E4',1],['G4',4],['E4',1],['E4',1],['G4',4],['C5',2],['B4',1],['A4',3],[null,1],
+        ['D4',1],['E4',1],['F4',2],['A4',4],['G4',1],['B4',1],['C5',2],['D5',4],
+        ['C5',2],['A4',1],['G4',1],['F4',4],['E4',1],['C4',3],['F4',2],['E4',2],['D4',2],['D4',2],['C4',6]];
       btn.disabled=true;
       tune.forEach(([n,d])=>{ if(n){ const o=ctx.createOscillator(), g=ctx.createGain(), o2=ctx.createOscillator(), g2=ctx.createGain();
         o.type='triangle'; o.frequency.value=F[n]; o2.type='sine'; o2.frequency.value=F[n]*2; g2.gain.value=0.15;
