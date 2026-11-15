@@ -55,7 +55,7 @@ add("Myling", name="The Myling (\"Wulf\")", session=6,
            ("Senses", "darkvision 60 ft., passive Perception 10"), ("Languages", "Germanic (a child's)"),
            ("Challenge", "1/2 (100 XP)")],
     traits=[("Incorporeal Movement", "Moves through creatures and objects; 1d10 force if it ends its turn inside an object."),
-            ("Tragic Compulsion", "Must be carried. While carried he weighs more each hour (Str DC 10 per hour or 1 exhaustion; carrier changes reset it). Laid beside his own bones in the temple Ossuary, he rests.")],
+            ("Tragic Compulsion", "Must be carried. While carried he weighs more each hour (Str DC 10 per hour or 1 exhaustion; carrier changes reset it). Laid beside his own bones at the old altar in the Sacred Grove (north of the village), he rests.")],
     actions=[("Bone-Chill Touch", "<em>Melee Spell Attack:</em> +3 to hit, reach 5 ft. <em>Hit:</em> 4 (1d8) cold; DC 11 Con or speed -10 ft. until end of its next turn."),
              ("Wail of the Lost (Recharge 5-6)", "Each creature within 30 ft.: DC 12 Wis save, 10 (3d6) psychic and frightened until end of its next turn; half and not frightened on a success. Wakes dormant undead within 300 ft.")],
     note="Only hostile if abandoned or refused. Reward for laying him to rest: <strong>Myling's Rest</strong> for the carrier (advantage on death saves, immune to frightened) until the end of Session 7.")

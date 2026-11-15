@@ -242,11 +242,11 @@ Myling (the drowned boy) in tow.** Thusnelda not yet met on-screen (confirm). Se
 **Session 6 (Chapter 4 pack, Level 6 &rarr; 7):** Village &rarr; Sacred Grove &rarr; Sacrifice Circle &rarr;
 Skull Entrance &rarr; Ossuary &rarr; Blood-Growth (cuttable) &rarr; Rune Lock &rarr; Minor Altar (cuttable) &rarr;
 Gathering Hall &rarr; Core Room. Ends on the crystal-star cracking and the stair down; long rest; Level 7.
-- The woman at the quern is the Myling's **mother**; she sends the party south for his bones.
-- "The temple" where the Myling was sacrificed = the cult temple under the skull. His bones are the
-  unsorted bundle on the **Ossuary** altar. Laid beside them he rests; carrier gets *Myling's Rest*
-  (adv. death saves, immune Frightened) to the end of Session 7. Holy ground (mound, shrine) only lets
-  the party set him down to wait. (GM call made during prep; change if the table said otherwise.)
+- The woman at the quern is the Myling's **mother**; she sends the party north to the grove.
+- **"The temple" is the old altar north of the village, in the Sacred Grove's ring of stones (table
+  ruling 2026-11-15; NOT the cult dungeon).** The boy's bones lie under it. They count as Path A evidence
+  for Thusnelda. Laid beside them he rests; carrier gets *Myling's Rest* (adv. death saves, immune
+  Frightened) to the end of Session 7. Holy ground elsewhere only lets the party set him down to wait.
 - Puzzles: Ossuary Three Niches (answer OTHALAN), Rune Lock (blue, green, yellow, red), Sun-Path
   braziers (east, south, west, north; clue on the Belatucadrus shrine).
 - Yochlol runs as a gestating variant (68 HP, rooted, hatches round 4 unless the pillar burns).
