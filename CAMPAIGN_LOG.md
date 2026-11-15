@@ -237,9 +237,17 @@ among the original five). Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3) i
 crossed the Farbog, defeated the Wights, and **has arrived in the Germanic village with the
 Myling (the drowned boy) in tow.** Thusnelda not yet met on-screen (confirm). Session 6 is next.
 
+**FIXED GEOGRAPHY around the village (table canon; never reinterpret):**
+- **NORTH = the Sacred Grove.** Belatucadrus shrine, the grove-light wisps (speak in riddles), and the old
+  altar where the Myling was sacrificed. His bones lie under it; he rests when laid with them.
+- **SOUTH = the Sacrifice Stones** (seven-stone ring). Thusnelda's FALSE unmaking: he believes the spear on
+  the centre stone plus his willing blood will destroy it. Truth: the stones feed Mars. The players must work
+  out it is wrong before the clock runs out and two Stone Golems tear loose (bound to the ring: run, don't fight).
+- **Further SOUTH = the skull-faced hill** and the cult dungeon (Blood Omens map in MapTool).
+
 **The campaign ends in two sessions (decided 2026-11-14).**
 
-**Session 6 (Chapter 4 pack, Level 6 &rarr; 7):** Village &rarr; Sacred Grove &rarr; Sacrifice Circle &rarr;
+**Session 6 (Chapter 4 pack, Level 6 &rarr; 7):** Village &rarr; North: Sacred Grove (boy's altar, wisps) &rarr; South: Sacrifice Stones (false unmaking, golem clock) &rarr;
 Skull Entrance &rarr; Ossuary &rarr; Blood-Growth (cuttable) &rarr; Rune Lock &rarr; Minor Altar (cuttable) &rarr;
 Gathering Hall &rarr; Core Room. Ends on the crystal-star cracking and the stair down; long rest; Level 7.
 - The woman at the quern is the Myling's **mother**; she sends the party north to the grove.
