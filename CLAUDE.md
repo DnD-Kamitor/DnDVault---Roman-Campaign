@@ -1,5 +1,13 @@
 # CLAUDE.md — The Shadow of Mars Campaign Workbook
 
+## ALWAYS COMMIT AND PUSH (non-negotiable)
+
+After EVERY change to any file in this repo (docs, tokens, maps, scripts, MapTool .cmpgn saves, token
+folders), immediately `git add` it, commit, and `git push`, then confirm with
+`git status --short` (must be empty apart from the dnd5e-art submodule) and
+`git ls-remote origin refs/heads/main` == `git rev-parse HEAD`. The GM switches machines; anything not
+pushed is missing at the table. Never end a turn with uncommitted or unpushed work, and never wait to be asked.
+
 ## Campaign Goal
 
 **One sentence:** When the GM sits down at the table, every chapter has zero-prep materials ready to run.
