@@ -233,9 +233,11 @@ the fighting gets, the more of Mars slips through. Save the design work for the 
 **Party:** Level 5-6, five core PCs (Artificer, Druid, Bard, Cleric, and a Barbarian
 among the original five). Brian (Half-Orc Barbarian, joined Chapter 2 Scene 3) is **no longer actively playing**; do not plan scenes or tokens around him. Active table: Iris, Julia Jana, Tanit, Rivia, Ursula.
 
-**Where they are:** Session 5 played (2026-11-03, inferred from `3nov.cmpgn`). The party
-crossed the Farbog, defeated the Wights, and **has arrived in the Germanic village with the
-Myling (the drowned boy) in tow.** Thusnelda not yet met on-screen (confirm). Session 6 is next.
+**Where they are:** Session 6 played 2026-11-15 (MapTool save: `Maptool/campaigns/5e/15nov.cmpgn`).
+The party is **in the North Grove (Grove of Grannus)**. They slept there, received visions, and the session
+ended there. **Next session starts on waking in the grove:** read the "On waking" card in
+`gm_tools/s6_grove_visions.html` (five gifts), then the South Grove (Thusnelda, the stones) and the Entrance
+(bone bridge, Bone Nagas) are still ahead. Full record: "Session 6" below.
 
 **FIXED GEOGRAPHY around the village (table canon; never reinterpret):**
 - **NORTH = the Sacred Grove.** Belatucadrus shrine, the grove-light wisps (speak in riddles), and the old
@@ -403,6 +405,44 @@ unresolved — carry them forward into Session 4 as needed, or treat as skipped.
 - **The Wights were defeated.**
 - The Myling (drowned boy) joined the party; they arrived at the Germanic village carrying/escorting him.
 - Open questions to fill in: OTHALAN standing-stone riddle outcome, any deaths/corruption/exhaustion, whether Thusnelda has been met yet, who carries the Myling.
+
+---
+
+## Session 6: The Village and the Grove (Played 2026-11-15)
+
+**Actual play record (from the GM's live requests during play; confirm the gaps marked ?):**
+- **The village turned hostile.** The party was asked to leave the box (Spear of Mars + Ursula's greataxe) at the
+  village edge and **refused; they kept the spear with them.** New villagers introduced for the hostile scene:
+  **Eburwin** (one-handed headman, ex-auxiliary), **Folkmar** (19, holmgang challenger), **Old Gerlind**
+  (lot-caster, Thusnelda's sister). Tokens made. ? How far the hostility went, whether the holmgang happened,
+  whether anyone was hurt.
+- ? Whether Hild got her son back in the village / taught the lullaby (the party had the song by the grove).
+- **North Grove (Grove of Grannus).** The grove's god established as **Grannus** (Apollo Grannus, Celtic sun and
+  healing-spring god; consort Sirona), the same sun Vindolanda knows as Belatucadrus. ? Rite of Rest done for
+  the Myling (Wulf), and how many of the four steps.
+- **Augury: "put the spear in the grove's water" = WOE.** "Not in my water" (Sirona). They did not force it
+  (forcing it would have stopped the visions).
+- **They slept in the grove (incubation).** Each PC got a vision and asked one question. Full text in
+  `gm_tools/s6_grove_visions.html`. Questions and answers:
+  - **Rivia** asked Vulcan how to break the cycle of war without forging another way to destruction:
+    "Do not forge, bind" (Vulcan's net; the Unmaking chains; someone must stay to hold it).
+  - **Tanit** asked who bought what the chieftains sold: a Roman with the senator's **broad purple stripe**
+    paid the silver (Brutus, NOT named); the war-god under the skull took what was sold.
+  - **Julia Jana** asked Janus how to destroy the spear and close his temple's doors: the spear is a door;
+    unhinge it (chains, blood, frame) and someone must hold it shut from the far side forever. Janus now
+    **recognises her** at the Session 7 Threshold (advantage, or one companion passes untested).
+  - **Ursula** asked Vercingetorix how to free their lands from Rome: the spear serves no side; **starve the
+    god**; bring him a sun-blessed blade so he can die.
+  - **Iris** asked Tanit whether the perpetrators will pay: Carthage, the Vandal sack of 455 AD; vengeance comes
+    late and on the wrong heads; carry the truth, not a blade. Optional rule granted: no non-combatant kills +
+    helps destroy the spear = her shadow stops advancing.
+- **Session ended asleep in the grove.** On waking (start of next session): five gifts by the pool (feather,
+  key, nail, bread, chain link; each = one reroll of a save vs Mars/the spear).
+- **Not yet reached:** South Grove (Thusnelda's false unmaking, golem clock), Entrance (bone bridge over the
+  bile, 2 Bone Nagas, 4 Skeletons), the dungeon, the finale. ? Where Thusnelda is (with them, waiting, or gone
+  south: with the village hostile he may already be at the stones).
+- **Scope note:** "the campaign ends in two sessions" was decided before Session 6. Session 6 ended before the
+  South Grove, so the remaining material (South Grove, Entrance, dungeon, Ch5 finale) must now fit the time left.
 
 ---
 
