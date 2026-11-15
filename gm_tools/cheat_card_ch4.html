@@ -106,6 +106,7 @@
   <button class="tab-btn" onclick="showTab('s3s4', this)">6-8 · Growth / Lock / Altar</button>
   <button class="tab-btn" onclick="showTab('s5', this)">9a · Hall</button>
   <button class="tab-btn" onclick="showTab('s6', this)">9b · Core ★END</button>
+  <button class="tab-btn" onclick="showTab('cast', this)">Cast</button>
   <button class="tab-btn" onclick="showTab('trade', this)">Trade</button>
   <button class="tab-btn" onclick="showTab('rewards', this)">Rewards</button>
   <button class="tab-btn" onclick="showTab('npcs', this)">NPCs</button>
@@ -481,7 +482,6 @@
     <p style="font-size:0.85em">Already laid to rest at the grove altar (Scene 3)? Nothing here for him. Still carrying him? He whimpers at the sorted bones and wants to go back north.</p>
   </div>
 </div>
-</div>
 <div>
   <div class="block">
     <div class="block-title">Puzzle: Three Niches (the way down)</div>
@@ -596,6 +596,76 @@
 </div>
 </div>
 <div class="ho"><strong>★ END OF SESSION — read:</strong> <em>The fiend falls, and the crystal does not go dark. It gets brighter. Cracks spread like frost across a window, each one a note too low to hear, felt in the teeth. The floor is warm. Behind the dais a stair you did not see before goes down into red light. In Rivia's arms the box hums in exactly the same rhythm. Whatever is down there has stopped sleeping.</em> &nbsp;Long rest in the sealed room. <strong>Level 7.</strong> Session 7 opens on the stair (Ch5).</div>
+</div>
+
+<!-- ═══ CAST ═══ -->
+<div id="tab-cast" class="tab-pane">
+<div class="grid2">
+<div>
+  <div class="who">
+    <span class="who-name">Thusnelda, the Völva</span><span class="who-tag">seer · he/him · 60s · at the South stones</span>
+    <p><b>Look:</b> Tall, stooped, barefoot, grey hair braided with small bones and amber. A wolf-pelt over a linen shift stiff with old blood. Pale blue eyes that never quite settle on you; they settle just past you. A flint knife older than the village.</p>
+    <p><b>Voice &amp; manner:</b> Slow, sing-song, never raises his voice. Speaks to the party in careful Latin he hates using. Hums between sentences. Touches the stones as he talks, like greeting old friends.</p>
+    <p><b>Wants:</b> To end the hunger eating his people's future, and to be the one brave enough to pay. <b>Fears:</b> That he has been wrong for twenty years. (He has.)</p>
+    <p><b>Knows:</b> Every omen in this forest for two decades; the Sun-Path prayer; where the skull entrance is.</p>
+    <p><b>Secret:</b> He searched three months for the cult's temple and never found it. He took that as the gods telling him to pay with blood instead.</p>
+    <p><b>Near the box:</b> He looks at it with hunger he doesn't recognise as hunger. Calm talk at disadvantage within 30 ft.</p>
+    <div class="say">"You brought it. Good. Put it on the stone. My blood breaks it, and the war ends with me."</div><div class="say">If convinced: "Then I was feeding it. For twenty years, I fed it."</div>
+  </div>
+  <div class="who">
+    <span class="who-name">Skadi the Healer</span><span class="who-tag">Thusnelda's apprentice · 20s · herb hut</span>
+    <p><b>Look:</b> Small, freckled, sleeves rolled to the elbow, fingers green from crushed herbs. Wears a bone needle in her hair and three pouches on her belt. Bare feet like her master; a fresh burn on one wrist.</p>
+    <p><b>Voice &amp; manner:</b> Quick, practical, no Latin at all; she gestures and draws in the dirt. Watches you while she works, like a scholar taking notes. Laughs at the wrong moments when nervous.</p>
+    <p><b>Wants:</b> To learn everything Thusnelda knows before something happens to him. <b>Fears:</b> Losing her master, and being the one who could have stopped it.</p>
+    <p><b>Knows:</b> She has watched the North grove at night twice: the lights gather at the old altar and hum a child's song. She noticed the marks on the South stones are new, cut over old suns.</p>
+    <p><b>Secret:</b> She never told Thusnelda what she saw at the grove. She was afraid he would forbid her to go back.</p>
+    <p><b>Near the box:</b> Steps back, covers her nose: "It smells like the stones."</p>
+    <div class="say">(drawing a sun in the dirt, then scratching it out) "New marks. Over old ones. He doesn't see."</div><div class="say">"Bring him back. I'll mend whatever he did to himself."</div>
+  </div>
+  <div class="who">
+    <span class="who-name">Edda the Spear-Mother</span><span class="who-tag">old warrior · 50s · counts scars</span>
+    <p><b>Look:</b> Broad, weathered, grey-blonde braids tied with iron rings. A long scar from collarbone to hip that she never covers. Leans on a framea like a walking staff; the spearhead is polished bright.</p>
+    <p><b>Voice &amp; manner:</b> Low, flat, few words. Stares until people look away. Counts on her fingers when she talks about the dead. Spits at the word "Rome" and then apologises, sometimes.</p>
+    <p><b>Wants:</b> To protect the village and its memory through this. <b>Fears:</b> That there is no one left to remember the warband.</p>
+    <p><b>Knows:</b> The chieftains' bargain: they asked the war-god for victory and the South stones were his price. Every man who went to them came back less.</p>
+    <p><b>Secret:</b> Her scar came from a spear "no longer in human hands": she fought beside the Spear of Mars once, and saw what it did to the man carrying it.</p>
+    <p><b>Near the box:</b> Goes white. Backs away, hand on her spear: "Put that down. I have seen what it does to the one who carries it."</p>
+    <div class="say">"Kneel, Roman. Then we talk."</div><div class="say">"Our men went south to those stones as warriors. They came back as something to bury."</div>
+  </div>
+</div>
+<div>
+  <div class="who">
+    <span class="who-name">Arnulf the Firekeeper</span><span class="who-tag">keeps the hearth · 40s · laughs loud</span>
+    <p><b>Look:</b> Barrel-chested, red beard singed short at the ends, soot to the elbows. A string of fire-blackened knucklebones around his neck. Always has a pot on the coals.</p>
+    <p><b>Voice &amp; manner:</b> Booming laugh, sings while he works, tells stories with his whole body. Mocks Romans to their face, then feeds them anyway.</p>
+    <p><b>Wants:</b> To keep the fires and the songs going, because those are the village's memory. <b>Fears:</b> A winter when no one is left to sing.</p>
+    <p><b>Knows:</b> The village lullaby (the boy's song); the old sun-marks on the shrine; the Sun-Path prayer: east, south, west, north.</p>
+    <p><b>Secret:</b> He knows which Roman officer gave the old desecration order. It wasn't Varro.</p>
+    <p><b>Near the box:</b> Stops laughing for the first time. Moves the pot off the fire, slowly.</p>
+    <div class="say">"Sit, eat, Roman. Hungry men make bad decisions."</div><div class="say">(singing) "Sleep, little wolf, the sun walks east to north..."</div>
+  </div>
+  <div class="who">
+    <span class="who-name">Sigrun the Trader</span><span class="who-tag">merchant · 30s · cart by the longhouse</span>
+    <p><b>Look:</b> Sharp-faced, dark braid, good boots, a fox-fur collar. Rings on every finger, each from a different people. A hand-cart piled with bundles under oiled hides, and a small dog that bites.</p>
+    <p><b>Voice &amp; manner:</b> Warm, fast, flattering; switches between Latin, Germanic and Gaulish mid-sentence. Never says no, only "what else have you got?"</p>
+    <p><b>Wants:</b> Information, and the profit that follows it. <b>Fears:</b> Being caught passing news to the wrong side.</p>
+    <p><b>Knows:</b> Every rumour in the region: where the seer went, what the chieftains' men brought back from the stones.</p>
+    <p><b>Secret:</b> She passes news to Vercingetorix's people. If she sees the box, she offers 500 gp on the spot.</p>
+    <p><b>Near the box:</b> Her eyes go to it and stay there. Her price for everything drops 10%, to keep them talking.</p>
+    <div class="say">"For you, soldier, a friend's price. What else have you got?"</div><div class="say">"That box. Whatever is in it, I will give you more gold than your legate sees in a year."</div>
+  </div>
+  <div class="who">
+    <span class="who-name">Hild, the boy's mother</span><span class="who-tag">at the quern · 30s · name is table improv</span>
+    <p><b>Look:</b> Thin, flour to the elbows, a grey shawl, hands that never stop moving on the grindstone. Hasn't cried in months; her eyes are red anyway.</p>
+    <p><b>Voice &amp; manner:</b> Quiet, careful, says exactly what she means. Speaks to the boy as if he were alive and late home for supper.</p>
+    <p><b>Wants:</b> To bury her son properly. <b>Fears:</b> That the chieftains' men are still watching her.</p>
+    <p><b>Knows:</b> His name (Wulf), his lullaby, and that the chieftains took him north to the old altar in the grove.</p>
+    <p><b>Secret:</b> She always knew the bog story was a lie, and kept silent because the chieftains' men were still in the village.</p>
+    <p><b>Near the box:</b> Puts herself between the box and the boy without a word.</p>
+    <div class="say">"They told us the bog took you." (to the boy)</div><div class="say">"He was my Wulf. Lay him with his bones, and sing him down. I can teach you the song."</div>
+  </div>
+</div>
+</div>
 </div>
 
 <!-- ═══ TRADE ═══ -->
