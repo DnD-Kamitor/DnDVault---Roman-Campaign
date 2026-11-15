@@ -239,7 +239,9 @@ Myling (the drowned boy) in tow.** Thusnelda not yet met on-screen (confirm). Se
 
 **FIXED GEOGRAPHY around the village (table canon; never reinterpret):**
 - **NORTH = the Sacred Grove.** Belatucadrus shrine, the grove-light wisps (speak in riddles), and the old
-  altar where the Myling was sacrificed. His bones lie under it; he rests when laid with them.
+  altar where the Myling was sacrificed. His bones lie under it. **Rite of Rest** (hard riddle): give back,
+  in order, his name (Wulf, from his mother), his mother's lullaby, the OTHALAN rune, then lay him facing east.
+  All four in order = every PC present loses ALL corruption + Myling's Rest. Three failures = rest only.
 - **SOUTH = the Sacrifice Stones** (seven-stone ring). Thusnelda's FALSE unmaking: he believes the spear on
   the centre stone plus his willing blood will destroy it. Truth: the stones feed Mars. The players must work
   out it is wrong before the clock runs out and two Stone Golems tear loose (bound to the ring: run, don't fight).
