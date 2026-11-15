@@ -1,0 +1,44 @@
+{
+  "creature_type": "Humanoid",
+  "size": "Medium",
+  "speed": "30 ft.",
+  "saving_throw_proficiencies": [],
+  "resistances": "",
+  "immunities": "",
+  "condition_immunities": "",
+  "languages": "Germanic",
+  "macro_file": "",
+  "session": 6,
+  "name": "Old Gerlind",
+  "cr": "0",
+  "alignment": "Neutral",
+  "hp": 6,
+  "hp_formula": "2d8-3",
+  "ac": 10,
+  "ac_note": "",
+  "ability_scores": {
+    "STR": 7,
+    "DEX": 9,
+    "CON": 8,
+    "INT": 12,
+    "WIS": 16,
+    "CHA": 11
+  },
+  "skill_proficiencies": [
+    "Insight",
+    "Religion"
+  ],
+  "skill_overrides": {
+    "Insight": 5,
+    "Religion": 3
+  },
+  "senses": "Passive Perception 13",
+  "token_color": "#3a4a30",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Druid/DruidHumanFemale (1).webp",
+  "notes": "Grandmother, 70s, casts the beech-wood lots. Thusnelda's sister. Speaks to the box, not the people.",
+  "gm_notes": "Saw the spear pass through as a girl ('You ate my father'). Estranged from Thusnelda (11 years without speaking his name). Her words repeated to Thusnelda at the South stones make him waver.",
+  "objective": "Keep her brother from dying for the wrong reason.",
+  "goal": "Make the Romans understand what they carry.",
+  "agenda": "Casts lots at the PCs' feet; talks to the box.",
+  "secret": "She still loves her brother and has never told him."
+}

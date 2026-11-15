@@ -1,0 +1,44 @@
+{
+  "creature_type": "Humanoid",
+  "size": "Medium",
+  "speed": "30 ft.",
+  "saving_throw_proficiencies": [],
+  "resistances": "",
+  "immunities": "",
+  "condition_immunities": "",
+  "languages": "Germanic",
+  "macro_file": "",
+  "session": 6,
+  "name": "Folkmar",
+  "cr": "1/2",
+  "alignment": "Chaotic Neutral",
+  "hp": 22,
+  "hp_formula": "4d8+4",
+  "ac": 13,
+  "ac_note": "hide armor + shield",
+  "ability_scores": {
+    "STR": 15,
+    "DEX": 13,
+    "CON": 12,
+    "INT": 9,
+    "WIS": 10,
+    "CHA": 11
+  },
+  "skill_proficiencies": [
+    "Athletics",
+    "Intimidation"
+  ],
+  "skill_overrides": {
+    "Athletics": 4,
+    "Intimidation": 2
+  },
+  "senses": "Passive Perception 10",
+  "token_color": "#7a4a20",
+  "portrait_file": "../Maptool/tokens/dnd5e-art/Tribal Warrior/TribalWarriorHumanMaleForest (2).webp",
+  "notes": "Young spearman, 19. Brother taken by the Roman levy. Calls holmgang on the biggest PC. Spear +4, 1d8+2.",
+  "gm_notes": "Holmgang: one PC, first blood or yield, inside a pegged cloak. PC wins = village back to Muttering + 1 success; refusing = a failure. Loses well: offers his Roman dagger hilt-first. Taught the Myling (Wulf) to throw.",
+  "objective": "Fight a Roman in front of everyone.",
+  "goal": "Answer for his brother.",
+  "agenda": "Challenges the biggest PC to holmgang.",
+  "secret": "The legionary's dagger on his belt came off a dead man he found, not one he killed."
+}

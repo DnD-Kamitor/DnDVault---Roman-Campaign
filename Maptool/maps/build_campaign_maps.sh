@@ -270,6 +270,10 @@ copy_svg s4_sacred_grove       "$S"  # Scene 2-3: Sacred Grove & sacrifice circl
 copy_npc "Thusnelda" "$S"
 copy_npc "Sigrun_the_Trader" "$S"
 copy_npc "Arnulf_the_Firekeeper" "$S"
+# Village (hostile after the party kept the spear): mother, headman, holmgang, lot-caster, spears
+for slug in Hilde Eburwin_the_Headman Folkmar Old_Gerlind Tribal_Warrior; do
+  copy_npc "$slug" "$S"
+done
 
 # Props
 copy_npc "Belatucadrus_Shrine" "$S"

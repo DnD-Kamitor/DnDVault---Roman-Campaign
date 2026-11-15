@@ -1,0 +1,46 @@
+{
+  "creature_type": "Humanoid",
+  "size": "Medium",
+  "speed": "30 ft.",
+  "saving_throw_proficiencies": [],
+  "resistances": "",
+  "immunities": "",
+  "condition_immunities": "",
+  "languages": "Germanic, Latin (soldier's)",
+  "macro_file": "",
+  "session": 6,
+  "name": "Eburwin the Headman",
+  "cr": "1",
+  "alignment": "Lawful Neutral",
+  "hp": 32,
+  "hp_formula": "5d8+10",
+  "ac": 13,
+  "ac_note": "hide armor + shield (one hand: shield strapped to the stump)",
+  "ability_scores": {
+    "STR": 14,
+    "DEX": 11,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 13,
+    "CHA": 12
+  },
+  "skill_proficiencies": [
+    "Insight",
+    "Intimidation",
+    "Perception"
+  ],
+  "skill_overrides": {
+    "Insight": 3,
+    "Intimidation": 3,
+    "Perception": 3
+  },
+  "senses": "Passive Perception 13",
+  "token_color": "#6a2a20",
+  "portrait_file": "portraits/ilja_jefimowitsch_repin1.png",
+  "notes": "Village headman. 50s, one hand, ex-auxiliary (25 years, no citizenship). Leads the spears when the village turns hostile. Spear +4, 1d8+2.",
+  "gm_notes": "Hostile village (party kept the spear). Wants the box out past the house-posts. Will accept blood-price (20 denarii / weapon / tax relief under Lucius's seal) or a hearth-post oath that the box leaves at noon. Fights to drive off, not kill; with 6 Tribal Warriors, flees at half numbers.",
+  "objective": "Get the box and the Romans out past the house-posts.",
+  "goal": "End it without a Roman dying in his street (Rome would send the levy for every boy left).",
+  "agenda": "Blocks the street with six spears; takes blood-price if offered.",
+  "secret": "He paid the chieftains three cattle to keep the village safe the spring Wulf vanished, and has wondered ever since what they bought."
+}
