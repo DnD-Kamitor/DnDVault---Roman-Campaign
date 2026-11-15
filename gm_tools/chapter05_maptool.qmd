@@ -3,6 +3,12 @@ title: "GM Session Guide: Chapter 5 (MapTool Reference)"
 subtitle: "The final dungeon and the three horrible options -- maps, tokens, and scene transitions"
 ---
 
+::: {.callout-important}
+## Table setup (final)
+The campaign wraps on the **BloodOmenss** map. Use `Maptool/campaigns/5e/3nov_final.cmpgn`: every Session 6 and 7 token is staged on the GM layer east of the BloodOmenss dungeon image (names prefixed "S6" / "S7"); the 4 entrance skeletons sit at the Skull Entrance on Fort Vindula. The separate Core Room and s5_mars_* maps below are optional and not loaded. Built by `scripts/inject_session_tokens.py`.
+:::
+
+
 ## Maps and Tokens for Chapter 5
 
 Session 5 continues directly down from Chapter 4's Core Room -- no new dungeon, no

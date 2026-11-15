@@ -9,27 +9,23 @@ The source campaign is never modified. MapTool must be closed while this runs.
 What it does (all new tokens go on the GM layer, so players cannot see them until
 you move them to the Token layer):
   * Fort Vindula map: 4 Skeletons at the Skull Entrance image.
-  * BloodOmenss map: Core Room map image east of the dungeon, plus a staging block of
-    every Session 6 dungeon creature next to it.
-  * New map "S7 The Wrath of Mars": the three s5_mars_* battle maps scaled to the
-    100 px grid, with every Session 7 token staged beside the map it belongs to.
+  * BloodOmenss map (the final map for Sessions 6 and 7): every Session 6 and Session 7
+    token staged east of the dungeon image, prefixed "S6" / "S7".
 
-XStream stores links as positional paths (tokenMap/entry[3]...), so everything is
-appended after existing entries; nothing existing is reordered.
+Image records are written in MapTool's own Asset format (some token files carry a
+malformed record that makes MapTool stop loading images). XStream stores links as
+positional paths (tokenMap/entry[3]...), so new tokens are appended after existing
+entries; nothing existing is reordered.
 """
 import base64
-import hashlib
 import os
 import re
 import sys
 import zipfile
 from pathlib import Path
 
-from PIL import Image
-
 BASE = Path(__file__).resolve().parent.parent
 TOK = BASE / "Maptool/tokens"
-MAPS = BASE / "Maptool/maps"
 
 new_assets = {}  # md5 -> (descriptor xml, ext, bytes)
 
@@ -54,8 +50,11 @@ def load_rptok(name):
         m = re.match(r"assets/([0-9a-f]{32})(\.\w+)?$", n)
         if m and m.group(2):
             md5, ext = m.group(1), m.group(2)[1:]
-            desc = z.read(f"assets/{md5}").decode("utf-8")
-            new_assets[md5] = (desc, ext, z.read(n))
+            data = z.read(n)
+            label = name.lower()
+            desc = (f"<net.rptools.maptool.model.Asset>\n  <id>\n    <id>{md5}</id>\n  </id>\n  <name>{label}</name>\n"
+                    f"  <extension>{ext}</extension>\n  <type>IMAGE</type>\n</net.rptools.maptool.model.Asset>\n")
+            new_assets[md5] = (desc, ext, data)
     return xml
 
 
@@ -73,25 +72,6 @@ def token_entry(name, display, x, y, layer="GM", size=None):
         xml = re.sub(r"<width>\d+</width>", f"<width>{size}</width>", xml, count=1)
         xml = re.sub(r"<height>\d+</height>", f"<height>{size}</height>", xml, count=1)
     return (f"<entry><net.rptools.maptool.model.GUID><baGUID>{gid}</baGUID></net.rptools.maptool.model.GUID>"
-            f"{xml}</entry>")
-
-
-def background_entry(template_token_xml, img_path, display, x, y, scale):
-    data = Path(img_path).read_bytes()
-    md5 = hashlib.md5(data).hexdigest()
-    ext = Path(img_path).suffix[1:].lower()
-    w, h = Image.open(img_path).size
-    desc = (f"<net.rptools.maptool.model.Asset>\n  <id>\n    <id>{md5}</id>\n  </id>\n  <name>{display}</name>\n"
-            f"  <extension>{ext}</extension>\n  <type>IMAGE</type>\n</net.rptools.maptool.model.Asset>")
-    new_assets[md5] = (desc, ext, data)
-    xml = template_token_xml
-    xml = re.sub(r"(<imageAssetMap>.*?<id>)[0-9a-f]{32}(</id>)", lambda m: m.group(1) + md5 + m.group(2), xml, count=1, flags=re.S)
-    xml = re.sub(r"(<exposedAreaGUID>\s*<baGUID>)[^<]*(</baGUID>)", lambda m: m.group(1) + guid() + m.group(2), xml, count=1)
-    for tag, val in (("x", x), ("y", y), ("width", int(w * scale)), ("height", int(h * scale)),
-                     ("isoWidth", int(w * scale)), ("isoHeight", int(h * scale))):
-        xml = re.sub(rf"<{tag}>-?\d+</{tag}>", f"<{tag}>{val}</{tag}>", xml, count=1)
-    xml = re.sub(r"<name>[^<]*</name>", f"<name>{display}</name>", xml, count=1)
-    return (f"<entry><net.rptools.maptool.model.GUID><baGUID>{guid()}</baGUID></net.rptools.maptool.model.GUID>"
             f"{xml}</entry>")
 
 
@@ -150,63 +130,33 @@ def main(src, dst):
     s = zin.read("content.xml").decode("utf-8")
     existing_assets = {n for n in zin.namelist() if n.startswith("assets/")}
 
-    # background template: the dungeon image token on BloodOmenss
     zs, ze = zone_span(s, "BloodOmenss")
     blood = s[zs:ze]
-    m = re.search(r"(<net.rptools.maptool.model.Token>(?:(?!</net.rptools.maptool.model.Token>).)*?<name>Blood-Cult-Dungeon-Gridded-29x43-MapPublic</name>.*?</net.rptools.maptool.model.Token>)", blood, re.S)
-    bg_template = m.group(1)
-    if "<id reference=" not in bg_template[:200]:
-        raise SystemExit("unexpected background token layout")
 
-    # ── Session 6: BloodOmenss additions ──
-    core = MAPS / "dicegrimorium/CastleCoreRoom/Castle Core Room Public/CastleCoreRoomPublic.jpg"
-    s6 = [background_entry(bg_template, core, "S6 Core Room (Scene 9b)", 4700, 300, 1.0)]
-    s6 += staged([
-        ("Yochlol", "Yochlol (gestating)", 1, None), ("Dretch", "Dretch", 2, None),
-        ("Shadow_Demon", "Shadow Demon", 3, None), ("Wraith", "Chieftain Wraith", 2, None),
-        ("Glabrezu", "Glabrezu", 1, 200), ("Skeleton", "Ossuary Skeleton", 2, None),
-    ], 4700, 2700)
-    blood = append_to_zone(blood, s6)
+    # ── Sessions 6 and 7: everything staged on the BloodOmenss map (GM layer) ──
+    # The dungeon image spans x 291-4351, y 288-6308; staging sits east of it.
+    staging = staged([
+        ("Yochlol", "S6 Yochlol (gestating)", 1, None), ("Dretch", "S6 Dretch", 2, None),
+        ("Shadow_Demon", "S6 Shadow Demon", 3, None), ("Wraith", "S6 Chieftain Wraith", 2, None),
+        ("Glabrezu", "S6 Glabrezu", 1, 200), ("Skeleton", "S6 Ossuary Skeleton", 2, None),
+    ], 4600, 300)
+    staging += staged([
+        ("Wraith", "S7 Armory Wraith", 2, None), ("Wight", "S7 Wight", 1, None), ("Specter", "S7 Specter", 2, None),
+        ("Vercingetorix_Bound", "S7 Vercingetorix, Bound", 1, None), ("Skeleton", "S7 Fallen Skeleton", 4, None),
+        ("Mars", "S7 Mars", 1, 200), ("Janus_(Threshold_Vision)", "S7 Janus", 1, None),
+        ("Caesar_Chain_Winch", "S7 Chain Winch", 4, None), ("Shadow_Demon", "S7 Summoned Shadow Demon", 2, None),
+        ("Wight_General_(Centurion_Cameo)", "S7 Wight-General (if spared S1)", 1, None),
+        ("Thusnelda", "S7 Thusnelda (if with party)", 1, None),
+    ], 4600, 2400)
+    blood = append_to_zone(blood, staging)
     s = s[:zs] + blood + s[ze:]
 
     # ── Session 6: Skull Entrance skeletons on Fort Vindula ──
     zs, ze = zone_span(s, "Fort Vindula")
     fort = s[zs:ze]
-    skel = [token_entry("Skeleton", f"Entrance Skeleton {i + 1}", 23300 + i * 150, 9500) for i in range(4)]
+    skel = [token_entry("Skeleton", f"S6 Entrance Skeleton {i + 1}", 23300 + i * 150, 9500) for i in range(4)]
     fort = append_to_zone(fort, skel)
     s = s[:zs] + fort + s[ze:]
-
-    # ── Session 7: new zone built from the BloodOmenss shell ──
-    zs, ze = zone_span(s, "BloodOmenss")
-    shell = s[zs:ze]
-    shell = shell[:shell.index("<tokenMap>")] + "<tokenMap></tokenMap>" + shell[shell.index("</tokenMap>") + len("</tokenMap>"):]
-    shell = re.sub(r"<exposedAreaMeta>.*?</exposedAreaMeta>", "<exposedAreaMeta/>", shell, count=1, flags=re.S)
-    shell = re.sub(r"<tokenOrderedList class=\"linked-list\">.*?</tokenOrderedList>", '<tokenOrderedList class="linked-list"/>', shell, count=1, flags=re.S)
-    shell = re.sub(r"<exposedArea>.*?</exposedArea>", "<exposedArea>\n<curves/>\n</exposedArea>", shell, count=1, flags=re.S)
-    shell = re.sub(r"<name>BloodOmenss</name>", "<name>S7 The Wrath of Mars</name>", shell, count=1)
-    shell = re.sub(r"<creationTime>\d+</creationTime>", "<creationTime>1794700000000</creationTime>", shell, count=1)
-
-    s7 = [
-        background_entry(bg_template, MAPS / "s5_mars_vault_overview.jpg", "S7 Scenes 0-1 Stair, Armory", 0, 0, 2.5),
-        background_entry(bg_template, MAPS / "s5_mars_vault.jpg", "S7 Scenes 2-3 Passages, Vercingetorix", 3500, 0, 2.5),
-        background_entry(bg_template, MAPS / "s5_mars_confrontation.jpg", "S7 Scenes 4-5 Antechamber of Mars", 7000, 0, 100 / 60),
-    ]
-    s7 += staged([("Wraith", "Armory Wraith", 2, None)], 0, 4700)
-    s7 += staged([("Zombie", "Zombie", 6, None), ("Wight", "Wight", 1, None), ("Specter", "Specter", 2, None),
-                  ("Vercingetorix_Bound", "Vercingetorix, Bound", 1, None), ("Skeleton", "Fallen Skeleton", 4, None)],
-                 3500, 4200)
-    s7 += staged([("Mars", "Mars", 1, 200), ("Janus_(Threshold_Vision)", "Janus", 1, None),
-                  ("Caesar_Chain_Winch", "Chain Winch", 4, None), ("Shadow_Demon", "Summoned Shadow Demon", 2, None),
-                  ("Wight_General_(Centurion_Cameo)", "Wight-General (only if spared S1)", 1, None),
-                  ("Thusnelda", "Thusnelda (only if with party)", 1, None)],
-                 7000, 2200)
-    shell = append_to_zone(shell, s7)
-    zone_entry = (f"<entry><net.rptools.maptool.model.GUID><baGUID>{guid()}</baGUID></net.rptools.maptool.model.GUID>"
-                  f"{shell}</entry>")
-    # insert after the last zone entry, before </m> of the zones map
-    zones_end = s.index("<mutex class=\"java.util.Collections$SynchronizedMap\"")
-    m_close = s.rindex("</m>", 0, zones_end)
-    s = s[:m_close] + zone_entry + s[m_close:]
 
     # ── write the copy ──
     with zipfile.ZipFile(dst, "w", zipfile.ZIP_DEFLATED) as zout:
@@ -221,7 +171,7 @@ def main(src, dst):
                 zout.writestr(f"assets/{md5}", desc)
                 zout.writestr(f"assets/{md5}.{ext}", data)
                 added += 1
-    print(f"Wrote {dst}: +{len(s6)} on BloodOmenss, +4 on Fort Vindula, new map with {len(s7)} items, {added} new assets")
+    print(f"Wrote {dst}: +{len(staging)} on BloodOmenss, +4 on Fort Vindula, {added} new assets")
 
 
 if __name__ == "__main__":
